@@ -68,16 +68,16 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_0}}
-	RadWindow.Alert( new DialogParameters()
+{{region cs-radwindow-features-predefined-dialogs_0}}
+	RadWindow.Alert(new DialogParameters()
 	{
 	    Content = "Hello"
-	} );
+	});
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_1}}
+{{region vb-radwindow-features-predefined-dialogs_1}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Hello"
 	RadWindow.Alert(parameters)
@@ -87,35 +87,35 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_2}}
-	RadWindow.Alert( "Hello" );
+{{region cs-radwindow-features-predefined-dialogs_2}}
+	RadWindow.Alert("Hello");
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_3}}
-	RadWindow.Alert( "Hello" )
+{{region vb-radwindow-features-predefined-dialogs_3}}
+	RadWindow.Alert("Hello")
 {{endregion}}
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object, that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_4}}
+{{region cs-radwindow-features-predefined-dialogs_4}}
 	public void ShowAlert()
 	{
-	    RadWindow.Alert( "Hello", this.OnClosed );
+	    RadWindow.Alert("Hello", this.OnClosed);
 	}
-	private void OnClosed( object sender, WindowClosedEventArgs e )
+	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_5}}
+{{region vb-radwindow-features-predefined-dialogs_5}}
 	Public Sub ShowAlert()
-			RadWindow.Alert("Hello", AddressOf Me.OnClosed)
+	    RadWindow.Alert("Hello", AddressOf Me.OnClosed)
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
 	End Sub
@@ -132,15 +132,15 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_6}}
+{{region cs-radwindow-features-predefined-dialogs_6}}
 	DialogParameters parameters = new DialogParameters();
 	parameters.Content = "Enter your name:";
-	RadWindow.Prompt( parameters );
+	RadWindow.Prompt(parameters);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_7}}
+{{region vb-radwindow-features-predefined-dialogs_7}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Enter your name:"
 	RadWindow.Prompt(parameters)
@@ -151,21 +151,21 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_8}}
+{{region cs-radwindow-features-predefined-dialogs_8}}
 	public void ShowPrompt()
 	{
-	    RadWindow.Prompt( "Enter your name:", this.OnClosed );
+	    RadWindow.Prompt("Enter your name:", this.OnClosed);
 	}
-	private void OnClosed( object sender, WindowClosedEventArgs e )
+	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_9}}
+{{region vb-radwindow-features-predefined-dialogs_9}}
 	Public Sub ShowPrompt()
-			RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed)
+	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed)
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
 	End Sub
@@ -175,21 +175,21 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_10}}
-	public void SHowPrompt()
+{{region cs-radwindow-features-predefined-dialogs_10}}
+	public void ShowPrompt()
 	{
-	    RadWindow.Prompt( "Enter your name:", this.OnClosed, "John Doe" );
+	    RadWindow.Prompt("Enter your name:", this.OnClosed, "John Doe");
 	}
-	private void OnClosed( object sender, WindowClosedEventArgs e )
+	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_11}}
-	Public Sub SHowPrompt()
-			RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed, "John Doe")
+{{region vb-radwindow-features-predefined-dialogs_11}}
+	Public Sub ShowPrompt()
+	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed, "John Doe")
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
 	End Sub
@@ -205,15 +205,15 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_12}}
+{{region cs-radwindow-features-predefined-dialogs_12}}
 	DialogParameters parameters = new DialogParameters();
 	parameters.Content = "Are you sure?";
-	RadWindow.Confirm( parameters );
+	RadWindow.Confirm(parameters);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_13}}
+{{region vb-radwindow-features-predefined-dialogs_13}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Are you sure?"
 	RadWindow.Confirm(parameters)
@@ -223,21 +223,21 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 #### __C#__
 
-{{region radwindow-features-predefined-dialogs_14}}
+{{region cs-radwindow-features-predefined-dialogs_14}}
 	public void ShowConfirm()
 	{
-	    RadWindow.Confirm( "Are you sure?", this.OnClosed );
+	    RadWindow.Confirm("Are you sure?", this.OnClosed);
 	}
-	private void OnClosed( object sender, WindowClosedEventArgs e )
+	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-predefined-dialogs_15}}
+{{region vb-radwindow-features-predefined-dialogs_15}}
 	Public Sub ShowConfirm()
-			RadWindow.Confirm("Are you sure?", AddressOf Me.OnClosed)
+	    RadWindow.Confirm("Are you sure?", AddressOf Me.OnClosed)
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
 	End Sub

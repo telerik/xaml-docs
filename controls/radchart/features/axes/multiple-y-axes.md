@@ -32,65 +32,60 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 #### __XAML__
 
-{{region radchart-features-axes-multiple-y-axes_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping CollectionIndex="0" LegendLabel="North [MW]">
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:BarSeriesDefinition ShowItemLabels="False" />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue"/>
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	        <telerikCharting:SeriesMapping CollectionIndex="1" LegendLabel="South [kW]">
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:BarSeriesDefinition ShowItemLabels="False" AxisName="AxisY_South" />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue"/>
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ....
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea LegendName="chartLegend">
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX AutoRange="True">
-	                        </telerikCharting:AxisX>
-	                    </telerikCharting:ChartArea.AxisX>
-	                    <telerikCharting:ChartArea.AxisY>
-	                        <telerikCharting:AxisY Title="Megawatt [MW]">
-	                        </telerikCharting:AxisY>
-	                    </telerikCharting:ChartArea.AxisY>
-	
-	                    <telerikCharting:ChartArea.AdditionalYAxes>
-	                        <telerikCharting:AxisY Title="Kilowatt [kW]" AxisName="AxisY_South">
-	                        </telerikCharting:AxisY>
-	                    </telerikCharting:ChartArea.AdditionalYAxes>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-multiple-y-axes_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping CollectionIndex="0" LegendLabel="North [MW]">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:BarSeriesDefinition ShowItemLabels="False" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping FieldName="Value" DataPointMember="YValue"/>
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	        <telerik:SeriesMapping CollectionIndex="1" LegendLabel="South [kW]">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:BarSeriesDefinition ShowItemLabels="False" AxisName="AxisY_South" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping FieldName="Value" DataPointMember="YValue"/>
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	        <!--....-->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea LegendName="chartLegend">
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX AutoRange="True" />
+	                    </telerik:ChartArea.AxisX>
+	                    <telerik:ChartArea.AxisY>
+	                        <telerik:AxisY Title="Megawatt [MW]" />
+	                    </telerik:ChartArea.AxisY>
+	                    <telerik:ChartArea.AdditionalYAxes>
+	                        <telerik:AxisY Title="Kilowatt [kW]" AxisName="AxisY_South" />
+	                    </telerik:ChartArea.AdditionalYAxes>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-multiple-y-axes_1}}
+{{region cs-radchart-features-axes-multiple-y-axes_1}}
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
-	....
+	//....
 	radChart.DefaultView.ChartArea.AxisY.Title = "Megawatt [MW]";
 	AxisY axisY = new AxisY();
 	axisY.AxisName = "AxisY_South";
 	axisY.Title = "Kilowatt [kW]";
 	radChart.DefaultView.ChartArea.AdditionalYAxes.Add( axisY );
-	....
+	//....
 	//Series mapping for the collection with index 0
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.CollectionIndex = 0;
@@ -109,22 +104,22 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	radChart.SeriesMappings.Add( seriesMapping );
 	radChart.ItemsSource = this.DataContext;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-multiple-y-axes_2}}
+{{region vb-radchart-features-axes-multiple-y-axes_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
-	....
+	'....'
 	radChart.DefaultView.ChartArea.AxisY.Title = "Megawatt [MW]"
 	Dim axisY As New AxisY()
 	axisY.AxisName = "AxisY_South"
 	axisY.Title = "Kilowatt [kW]"
 	radChart.DefaultView.ChartArea.AdditionalYAxes.Add(axisY)
-	....
-	'Series mapping for the collection with index 0'
+	'....'
+	'Series mapping for the collection with index 0 '
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.CollectionIndex = 0
 	seriesMapping.LegendLabel = "North [MW]"
@@ -132,7 +127,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.SeriesDefinition.ShowItemLabels = False
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(seriesMapping)
-	'Series mapping for the collection with index 1'
+	'Series mapping for the collection with index 1 '
 	seriesMapping = New SeriesMapping()
 	seriesMapping.CollectionIndex = 1
 	seriesMapping.LegendLabel = "South [kW]"
@@ -142,7 +137,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(seriesMapping)
 	radChart.ItemsSource = Me.DataContext
-	{{endregion}}
+{{endregion}}
 
 
 

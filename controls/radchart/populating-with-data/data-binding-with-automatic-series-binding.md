@@ -30,17 +30,17 @@ Take a look at this simple array declaration:
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_0}}
+{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_0}}
 	int[] dataArray = new int[] { 12, 56, 23, 89, 12, 56, 34, 78, 32, 56 };
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_1}}
+{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_1}}
 	Dim dataArray As Integer() = New Integer() {12, 56, 23, 89, 12, 56, 34, 78, 32, 56}
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -50,17 +50,17 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_2}}
+{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_2}}
 	radChart.ItemsSource = dataArray;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_3}}
+{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_3}}
 	radChart.ItemsSource = dataArray
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -70,25 +70,25 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_4}}
+{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_4}}
 	List<Manufacturer> data = new List<Manufacturer>();
-	data.Add( new Manufacturer( "Toyota", 215, 462 ) );
-	data.Add( new Manufacturer( "General Motors", 192, 345 ) );
-	data.Add( new Manufacturer( "Volkswagen", 151, 310 ) );
-	data.Add( new Manufacturer( "Ford", 125, 340 ) );
-	data.Add( new Manufacturer( "Honda", 91, 201 ) );
-	data.Add( new Manufacturer( "Nissan", 79, 145 ) );
-	data.Add( new Manufacturer( "PSA", 79, 175 ) );
-	data.Add( new Manufacturer( "Hyundai", 64, 133 ) );
+	data.Add(new Manufacturer("Toyota", 215, 462));
+	data.Add(new Manufacturer("General Motors", 192, 345));
+	data.Add(new Manufacturer("Volkswagen", 151, 310));
+	data.Add(new Manufacturer("Ford", 125, 340));
+	data.Add(new Manufacturer("Honda", 91, 201));
+	data.Add(new Manufacturer("Nissan", 79, 145));
+	data.Add(new Manufacturer("PSA", 79, 175));
+	data.Add(new Manufacturer("Hyundai", 64, 133));
 	
 	this.telerkChart.ItemsSource = data;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_5}}
+{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_5}}
 	Dim data As New List(Of Manufacturer)()
 	data.Add(New Manufacturer("Toyota", 215, 462))
 	data.Add(New Manufacturer("General Motors", 192, 345))
@@ -100,7 +100,7 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 	data.Add(New Manufacturer("Hyundai", 64, 133))
 	
 	Me.telerkChart.ItemsSource = data
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -108,7 +108,7 @@ Where the structure of the __Manufacturer__ class is:
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_6}}
+{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_6}}
 	public class Manufacturer
 	{
 	    public Manufacturer( string name, int sales, int turnover )
@@ -133,13 +133,13 @@ Where the structure of the __Manufacturer__ class is:
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-with-automatic-series-binding_7}}
+{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_7}}
 	Public Class Manufacturer
 	    Public Sub New(ByVal name As String, ByVal sales As Integer, ByVal turnover As Integer)
 	        Me.Name = name
@@ -147,7 +147,7 @@ Where the structure of the __Manufacturer__ class is:
 	        Me.Turnover = turnover
 	    End Sub
 	
-	Private _Name As String
+	    Private _Name As String
 	    Public Property Name() As String
 	        Get
 	            Return _Name
@@ -157,7 +157,7 @@ Where the structure of the __Manufacturer__ class is:
 	        End Set
 	    End Property
 	
-	Private _Sales As Integer
+	    Private _Sales As Integer
 	    Public Property Sales() As Integer
 	        Get
 	            Return _Sales
@@ -167,7 +167,7 @@ Where the structure of the __Manufacturer__ class is:
 	        End Set
 	    End Property
 	
-	Private _Turnover As Integer
+	    Private _Turnover As Integer
 	    Public Property Turnover() As Integer
 	        Get
 	            Return _Turnover
@@ -177,7 +177,7 @@ Where the structure of the __Manufacturer__ class is:
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 

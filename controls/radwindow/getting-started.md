@@ -36,7 +36,7 @@ Here is an example of declaring a __RadWindow__.
 
 #### __C#__
 
-{{region radwindow-getting-started_0}}
+{{region cs-radwindow-getting-started_0}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
@@ -44,7 +44,7 @@ Here is an example of declaring a __RadWindow__.
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_1}}
+{{region vb-radwindow-getting-started_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
@@ -58,13 +58,13 @@ To open the __RadWindow__ you have to call its __Show()__ method. Here is an exa
 
 #### __C#__
 
-{{region radwindow-getting-started_2}}
+{{region cs-radwindow-getting-started_2}}
 	radWindow.Show();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_3}}
+{{region vb-radwindow-getting-started_3}}
 	radWindow.Show()
 {{endregion}}
 
@@ -82,15 +82,15 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 
 #### __C#__
 
-{{region radwindow-getting-started_4}}
+{{region cs-radwindow-getting-started_4}}
 	Grid grid = new Grid();
-	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
+	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_5}}
+{{region vb-radwindow-getting-started_5}}
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
@@ -108,14 +108,14 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 #### __C#__
 
-{{region radwindow-getting-started_6}}
-	RadWindow.Alert( "Hello!" );
+{{region cs-radwindow-getting-started_6}}
+	RadWindow.Alert("Hello!");
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_7}}
-	RadWindow.Alert( "Hello!" )
+{{region vb-radwindow-getting-started_7}}
+	RadWindow.Alert("Hello!")
 {{endregion}}
 
 ![](images/RadWindow_GettingStarted_03.png)
@@ -124,16 +124,16 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 #### __C#__
 
-{{region radwindow-getting-started_8}}
-	RadWindow.Confirm( new DialogParameters()
+{{region cs-radwindow-getting-started_8}}
+	RadWindow.Confirm(new DialogParameters()
 	{
 	    Content = "Are you sure?"
-	} );
+	});
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_9}}
+{{region vb-radwindow-getting-started_9}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Are you sure?"
 	RadWindow.Confirm(parameters)
@@ -145,16 +145,16 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 #### __C#__
 
-{{region radwindow-getting-started_10}}
-	RadWindow.Prompt( new DialogParameters()
+{{region cs-radwindow-getting-started_10}}
+	RadWindow.Prompt(new DialogParameters()
 	{
 	    Content = "Enter your name:"
-	} );
+	});
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-getting-started_11}}
+{{region vb-radwindow-getting-started_11}}
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Enter your name:"
 	RadWindow.Confirm(parameters)

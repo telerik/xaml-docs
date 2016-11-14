@@ -55,7 +55,7 @@ To localize your controls using the built-in localization mechanism, you first h
 ![Common Localization 050](images/Common_Localization_050.PNG)
 
 {% if site.site_name == 'Silverlight' %}
-Then, you must define your preferred languages in the **<Supported Cultures>** tag of your project file in order to notify the framework about the supported cultures. To do so, open the project file with a text editor and insert the code below into the __&lt;PropertyGroup&gt;__ section.
+Then, you must define your preferred languages in the **&lt;Supported Cultures&gt;** tag of your project file in order to notify the framework about the supported cultures. To do so, open the project file with a text editor and insert the code below into the __&lt;PropertyGroup&gt;__ section.
 
 #### __[XAML] Example 1: Setting supported cultures__
 

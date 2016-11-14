@@ -26,32 +26,32 @@ The next example demonstrates the described approach:
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-1}}
+	{{region cs-raddocking-features-panes-panesource-1}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<RadPane> panes;
+		    private ObservableCollection<RadPane> panes;
 		
-			public ViewModel()
-			{
-					
-			}
+		    public ViewModel()
+		    {
 		
-			public ObservableCollection<RadPane> Panes
-			{
-				get
-				{
-					return this.panes;
-				}
+		    }
 		
-				set
-				{
-					if (this.panes != value)
-					{
-						this.panes = value;
-						this.OnPropertyChanged(() => this.Panes);
-					}
-				}
-			}
+		    public ObservableCollection<RadPane> Panes
+		    {
+		        get
+		        {
+		            return this.panes;
+		        }
+		
+		        set
+		        {
+		            if (this.panes != value)
+		            {
+		                this.panes = value;
+		                this.OnPropertyChanged(() => this.Panes);
+		            }
+		        }
+		    }
 		}
 	{{endregion}}
 
@@ -59,37 +59,37 @@ The next example demonstrates the described approach:
                         
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-2}}
+	{{region cs-raddocking-features-panes-panesource-2}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<RadPane> panes;
+		    private ObservableCollection<RadPane> panes;
 		
-			public ViewModel()
-			{
-				this.Panes = new ObservableCollection<RadPane>()
-				{
-					new RadPane() { Header = "Pane 1" },
-					new RadPane() { Header = "Pane 2" },
-					new RadPane() { Header = "Pane 3" }
-				};
-			}
+		    public ViewModel()
+		    {
+		        this.Panes = new ObservableCollection<RadPane>()
+		        {
+		            new RadPane() { Header = "Pane 1" },
+		            new RadPane() { Header = "Pane 2" },
+		            new RadPane() { Header = "Pane 3" }
+		        };
+		    }
 		
-			public ObservableCollection<RadPane> Panes
-			{
-				get
-				{
-					return this.panes;
-				}
+		    public ObservableCollection<RadPane> Panes
+		    {
+		        get
+		        {
+		            return this.panes;
+		        }
 		
-				set
-				{
-					if (this.panes != value)
-					{
-						this.panes = value;
-						this.OnPropertyChanged(() => this.Panes);
-					}
-				}
-			}
+		        set
+		        {
+		            if (this.panes != value)
+		            {
+		                this.panes = value;
+		                this.OnPropertyChanged(() => this.Panes);
+		            }
+		        }
+		    }
 		}
 	{{endregion}}
 
@@ -97,11 +97,11 @@ The next example demonstrates the described approach:
 
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-1}}
+	{{region xaml-raddocking-features-panes-panesource-1}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
-			<telerik:RadDocking.DockingPanesFactory>
-				<telerik:DockingPanesFactory/>
-			</telerik:RadDocking.DockingPanesFactory>
+		    <telerik:RadDocking.DockingPanesFactory>
+		        <telerik:DockingPanesFactory/>
+		    </telerik:RadDocking.DockingPanesFactory>
 		</telerik:RadDocking>
 	{{endregion}}
 
@@ -135,37 +135,37 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-3}}
+	{{region cs-raddocking-features-panes-panesource-3}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<RadPane> panes;
+		    private ObservableCollection<RadPane> panes;
 		
-			public ViewModel()
-			{
-				this.Panes = new ObservableCollection<RadPane>()
-				{
-					new RadPane() { Header = "Bottom Pane 1", Tag = "Bottom" },
-					new RadPane() { Header = "Bottom Pane 2", Tag = "Bottom" },
-					new RadPane() { Header = "Left Pane", Tag = "Left" }
-				};
-			}
+		    public ViewModel()
+		    {
+		        this.Panes = new ObservableCollection<RadPane>()
+		        {
+		            new RadPane() { Header = "Bottom Pane 1", Tag = "Bottom" },
+		            new RadPane() { Header = "Bottom Pane 2", Tag = "Bottom" },
+		            new RadPane() { Header = "Left Pane", Tag = "Left" }
+		        };
+		    }
 		
-			public ObservableCollection<RadPane> Panes
-			{
-				get
-				{
-					return this.panes;
-				}
+		    public ObservableCollection<RadPane> Panes
+		    {
+		        get
+		        {
+		            return this.panes;
+		        }
 		
-				set
-				{
-					if (this.panes != value)
-					{
-						this.panes = value;
-						this.OnPropertyChanged(() => this.Panes);
-					}
-				}
-			}
+		        set
+		        {
+		            if (this.panes != value)
+		            {
+		                this.panes = value;
+		                this.OnPropertyChanged(() => this.Panes);
+		            }
+		        }
+		    }
 		}
 	{{endregion}}
 
@@ -173,16 +173,16 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-2}}
+	{{region xaml-raddocking-features-panes-panesource-2}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
-			<telerik:RadSplitContainer InitialPosition="DockedLeft">
-				<telerik:RadPaneGroup  x:Name="LeftPaneGroup">
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-			<telerik:RadSplitContainer InitialPosition="DockedBottom">
-				<telerik:RadPaneGroup x:Name="BottomPaneGroup">
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
+		    <telerik:RadSplitContainer InitialPosition="DockedLeft">
+		        <telerik:RadPaneGroup  x:Name="LeftPaneGroup">
+		        </telerik:RadPaneGroup>
+		    </telerik:RadSplitContainer>
+		    <telerik:RadSplitContainer InitialPosition="DockedBottom">
+		        <telerik:RadPaneGroup x:Name="BottomPaneGroup">
+		        </telerik:RadPaneGroup>
+		    </telerik:RadSplitContainer>
 		</telerik:RadDocking>
 	{{endregion}}
 
@@ -190,10 +190,10 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-4}}
+	{{region cs-raddocking-features-panes-panesource-4}}
 		public class CustomDockingPanesFactory : DockingPanesFactory
 		{
-				
+		
 		}
 	{{endregion}}
 
@@ -201,23 +201,23 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 	#### __C#__
 
-	{{region raddocking-features-panes-panesource-5}}
+	{{region cs-raddocking-features-panes-panesource-5}}
 		public class CustomDockingPanesFactory : DockingPanesFactory
 		{
-			protected override void AddPane(Telerik.Windows.Controls.RadDocking radDocking, Telerik.Windows.Controls.RadPane pane)
-			{
-				var tag = pane.Tag.ToString();
-				var paneGroup = radDocking.SplitItems.ToList().FirstOrDefault(i => i.Control.Name.Contains(tag)) as RadPaneGroup;
+		    protected override void AddPane(Telerik.Windows.Controls.RadDocking radDocking, Telerik.Windows.Controls.RadPane pane)
+		    {
+		        var tag = pane.Tag.ToString();
+		        var paneGroup = radDocking.SplitItems.ToList().FirstOrDefault(i => i.Control.Name.Contains(tag)) as RadPaneGroup;
 		
-				if (paneGroup != null)
-				{
-					paneGroup.Items.Add(pane);
-				}
-				else
-				{
-					base.AddPane(radDocking, pane);
-				}
-			}
+		        if (paneGroup != null)
+		        {
+		            paneGroup.Items.Add(pane);
+		        }
+		        else
+		        {
+		            base.AddPane(radDocking, pane);
+		        }
+		    }
 		}
 	{{endregion}}
 
@@ -225,19 +225,19 @@ The next example demonstrates a common scenario when using the PaneSource proper
    
 	#### __XAML__
 
-	{{region raddocking-features-panes-panesource-3}}
+	{{region xaml-raddocking-features-panes-panesource-3}}
 		<telerik:RadDocking PanesSource="{Binding Panes}">
-			<telerik:RadSplitContainer InitialPosition="DockedLeft">
-				<telerik:RadPaneGroup  x:Name="LeftPaneGroup">
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-			<telerik:RadSplitContainer InitialPosition="DockedBottom">
-				<telerik:RadPaneGroup x:Name="BottomPaneGroup">
-				</telerik:RadPaneGroup>
-			</telerik:RadSplitContainer>
-			<telerik:RadDocking.DockingPanesFactory>
-				<local:CustomDockingPanesFactory />
-			</telerik:RadDocking.DockingPanesFactory>
+		    <telerik:RadDocking.DockingPanesFactory>
+		        <local:CustomDockingPanesFactory />
+		    </telerik:RadDocking.DockingPanesFactory>
+		    <telerik:RadSplitContainer InitialPosition="DockedLeft">
+		        <telerik:RadPaneGroup  x:Name="LeftPaneGroup1">
+		        </telerik:RadPaneGroup>
+		    </telerik:RadSplitContainer>
+		    <telerik:RadSplitContainer InitialPosition="DockedBottom">
+		        <telerik:RadPaneGroup x:Name="BottomPaneGroup1">
+		        </telerik:RadPaneGroup>
+		    </telerik:RadSplitContainer>
 		</telerik:RadDocking>
 	{{endregion}}
 

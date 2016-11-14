@@ -18,7 +18,7 @@ Similarly to the other __RadImageEditor__ tools, the __DrawTool__ is located in 
 
 #### __[XAML] Example 1: Define DrawTool__
 
-{{region radimageeditor-howto-drawing_0}}
+{{region xaml-radimageeditor-tools-drawing_0}}
 	<tools:DrawTool />
 {{endregion}}
 
@@ -33,13 +33,13 @@ The __DrawTool__ introduces the following two properties which can be set by dec
 
 #### __[XAML] Example 2: Customize DrawTool__
 
-{{region radimageeditor-howto-drawing_1}}
+{{region xaml-radimageeditor-tools-drawing_1}}
 	<tools:DrawTool DefaultBrushColor="Blue" DefaultBrushSize="5"/>
 {{endregion}}
 
 #### __[C#] Example 2: Customize DrawTool__
 
-{{region radimageeditor-howto-drawing_2}}
+{{region cs-radimageeditor-tools-drawing_2}}
 	DrawTool drawTool = new DrawTool();
 	drawTool.DefaultBrushColor = Colors.Blue;
 	drawTool.DefaultBrushSize = 5;
@@ -47,10 +47,10 @@ The __DrawTool__ introduces the following two properties which can be set by dec
 
 #### __[VB.NET] Example 2: Customize DrawTool__
 
-{{region radimageeditor-howto-drawing_3}}
-    Dim drawTool = New DrawTool()
-    drawTool.DefaultBrushColor = Colors.Blue
-    drawTool.DefaultBrushSize = 5
+{{region vb-radimageeditor-tools-drawing_3}}
+	Dim drawTool = New DrawTool()
+	drawTool.DefaultBrushColor = Colors.Blue
+	drawTool.DefaultBrushSize = 5
 {{endregion}}
 
 
@@ -62,10 +62,8 @@ The __DrawTool__ introduces the following virtual methods which can be overridde
 
 * __CreatePathSegment(Point currentPosition)__: Returns a [PathSegment](https://msdn.microsoft.com/en-us/library/system.windows.media.pathsegment(v=vs.110).aspx) object which is added to the drawn path’s figure during the drawing. A [LineSegment](https://msdn.microsoft.com/en-us/library/system.windows.media.linesegment%28v=vs.110%29.aspx) is inserted by default.
 
-# See Also
+## See Also
 
 * [Cropping]({%slug radimageeditor-tools-crop%})
-
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})
-
 * [Shape Tool]({%slug radimageeditor-tools-shape-tool%})

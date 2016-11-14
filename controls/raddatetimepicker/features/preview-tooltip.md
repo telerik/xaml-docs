@@ -31,12 +31,12 @@ Here is an example of using these properties:
 
 #### __XAML__
 
-{{region raddatetimepicker-features-preview-tooltip_0}}
+{{region xaml-raddatetimepicker-features-preview-tooltip_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" ErrorTooltipContent="Enter a valid date and time!">
 	    <telerik:RadDateTimePicker.TooltipTemplate>
 	        <DataTemplate>
-	             <TextBlock Text="{Binding Path=TooltipContent, ElementName=radDateTimePicker}" FontWeight="Bold" Foreground="Red"/>
-	        </DataTemplate>      
+	            <TextBlock Text="{Binding Path=TooltipContent, ElementName=radDateTimePicker}" FontWeight="Bold" Foreground="Red"/>
+	        </DataTemplate>
 	    </telerik:RadDateTimePicker.TooltipTemplate>
 	</telerik:RadDateTimePicker>
 {{endregion}}

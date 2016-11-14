@@ -16,7 +16,7 @@ In this tutorial a __RadGridView__ will be used, which displays a list of __Empl
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_0}}
+{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_0}}
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" Header="First Name"/>
@@ -33,8 +33,8 @@ In order to add a __RadContextMenu__ to it, you have to just set the __RadContex
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_1}}
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
+{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_1}}
+	<telerik:RadGridView x:Name="radGridView1" AutoGenerateColumns="False">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="GridContextMenu" />
 	    </telerik:RadContextMenu.ContextMenu>
@@ -53,7 +53,7 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_2}}
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_2}}
 	public class MenuItem : INotifyPropertyChanged
 	{
 	    private bool isEnabled = true;
@@ -68,10 +68,10 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	        }
 	        set
 	        {
-	            if ( this.isEnabled != value )
+	            if (this.isEnabled != value)
 	            {
 	                this.isEnabled = value;
-	                this.OnNotifyPropertyChanged( "IsEnabled" );
+	                this.OnNotifyPropertyChanged("IsEnabled");
 	            }
 	        }
 	    }
@@ -83,10 +83,10 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	        }
 	        set
 	        {
-	            if ( this.text != value )
+	            if (this.text != value)
 	            {
 	                this.text = value;
-	                this.OnNotifyPropertyChanged( "Text" );
+	                this.OnNotifyPropertyChanged("Text");
 	            }
 	        }
 	    }
@@ -94,7 +94,7 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	    {
 	        get
 	        {
-	            if ( this.subItems == null )
+	            if (this.subItems == null)
 	            {
 	                this.subItems = new ObservableCollection<MenuItem>();
 	            }
@@ -102,18 +102,18 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	        }
 	        set
 	        {
-	            if ( this.subItems != value )
+	            if (this.subItems != value)
 	            {
 	                this.subItems = value;
-	                this.OnNotifyPropertyChanged( "SubItems" );
+	                this.OnNotifyPropertyChanged("SubItems");
 	            }
 	        }
 	    }
-	    private void OnNotifyPropertyChanged( string ptopertyName )
+	    private void OnNotifyPropertyChanged(string ptopertyName)
 	    {
-	        if ( this.PropertyChanged != null )
+	        if (this.PropertyChanged != null)
 	        {
-	            this.PropertyChanged( this, new PropertyChangedEventArgs( ptopertyName ) );
+	            this.PropertyChanged(this, new PropertyChangedEventArgs(ptopertyName));
 	        }
 	    }
 	}
@@ -121,7 +121,7 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_3}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_3}}
 	Public Class MenuItem
 	    Implements INotifyPropertyChanged
 	
@@ -178,7 +178,7 @@ Here is the __ItemContainerStyle__:
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_4}}
+{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_4}}
 	<Style x:Key="MenuItemContainerStyle" TargetType="telerik:RadMenuItem">
 	    <Setter Property="Header" Value="{Binding Text}"/>
 	    <Setter Property="ItemsSource" Value="{Binding SubItems}"/>
@@ -224,14 +224,14 @@ As you can see, two data sources have to be provided for the __RadContextMenu__ 
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_7}}
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_7}}
 	private ObservableCollection<MenuItem> headerContextMenuItems;
 	private ObservableCollection<MenuItem> rowContextMenuItems;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_8}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_8}}
 	Private headerContextMenuItems As ObservableCollection(Of MenuItem)
 	Private rowContextMenuItems As ObservableCollection(Of MenuItem)
 {{endregion}}
@@ -240,7 +240,7 @@ And initialize their data by using methods like these one.
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_9}}
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_9}}
 	public RadGridViewIntegration()
 	{
 	    InitializeComponent();
@@ -249,18 +249,19 @@ And initialize their data by using methods like these one.
 	    this.InitializeHeaderContextMenuItems();
 	    this.InitializeRowContextMenuItems();
 	}
+	
 	private void InitializeRowContextMenuItems()
 	{
 	    ObservableCollection<MenuItem> items = new ObservableCollection<MenuItem>();
 	    MenuItem addItem = new MenuItem();
 	    addItem.Text = "Add";
-	    items.Add( addItem );
+	    items.Add(addItem);
 	    MenuItem editItem = new MenuItem();
 	    editItem.Text = "Edit";
-	    items.Add( editItem );
+	    items.Add(editItem);
 	    MenuItem deleteItem = new MenuItem();
 	    deleteItem.Text = "Delete";
-	    items.Add( deleteItem );
+	    items.Add(deleteItem);
 	    this.rowContextMenuItems = items;
 	}
 	private void InitializeHeaderContextMenuItems()
@@ -269,30 +270,30 @@ And initialize their data by using methods like these one.
 	    ObservableCollection<MenuItem> sortItems = new ObservableCollection<MenuItem>();
 	    MenuItem sortAscItem = new MenuItem();
 	    sortAscItem.Text = "Ascending";
-	    sortItems.Add( sortAscItem );
+	    sortItems.Add(sortAscItem);
 	    MenuItem sortDescItem = new MenuItem();
 	    sortDescItem.Text = "Descending";
-	    sortItems.Add( sortDescItem );
+	    sortItems.Add(sortDescItem);
 	    MenuItem sortNoneItem = new MenuItem();
 	    sortNoneItem.Text = "None";
-	    sortItems.Add( sortNoneItem );
+	    sortItems.Add(sortNoneItem);
 	    MenuItem sortItem = new MenuItem();
 	    sortItem.Text = "Sort";
 	    sortItem.SubItems = sortItems;
-	    headerItems.Add( sortItem );
+	    headerItems.Add(sortItem);
 	    MenuItem moveLeftItem = new MenuItem();
 	    moveLeftItem.Text = "Move Left";
-	    headerItems.Add( moveLeftItem );
+	    headerItems.Add(moveLeftItem);
 	    MenuItem moveRightItem = new MenuItem();
 	    moveRightItem.Text = "Move Right";
-	    headerItems.Add( moveRightItem );
+	    headerItems.Add(moveRightItem);
 	    this.headerContextMenuItems = headerItems;
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_10}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_10}}
 	Public Sub New()
 	    InitializeComponent()
 	    Me.radGridView.ItemsSource = EmployeeService.GetEmployees()
@@ -342,7 +343,7 @@ Next you will need two properties that will return the clicked row and the click
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_11}}
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_11}}
 	private GridViewHeaderCell ClickedHeader
 	{
 	    get
@@ -361,7 +362,7 @@ Next you will need two properties that will return the clicked row and the click
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_12}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_12}}
 	Private ReadOnly Property ClickedHeader() As GridViewHeaderCell
 	    Get
 	        Return Me.GridContextMenu.GetClickedElement(Of GridViewHeaderCell)()
@@ -378,25 +379,25 @@ The last thing to do is to attach an event handler to the __Opened__ event of th
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_13}}
-	<telerik:RadContextMenu x:Name="GridContextMenu"
-	                                  ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
-	                                  Opened="GridContextMenu_Opened" />
+{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_13}}
+	<telerik:RadContextMenu x:Name="GridContextMenu2"
+	                        ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
+	                        Opened="GridContextMenu_Opened" />
 {{endregion}}
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_14}}
-	private void GridContextMenu_Opened( object sender, RoutedEventArgs e )
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_14}}
+	private void GridContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
-	    if ( this.ClickedHeader != null )
+	    if (this.ClickedHeader != null)
 	    {
 	        this.GridContextMenu.ItemsSource = this.headerContextMenuItems;
 	    }
-	    else if ( this.ClickedRow != null )
+	    else if (this.ClickedRow != null)
 	    {
 	        this.radGridView.SelectedItem = this.ClickedRow.DataContext;
-	        foreach ( var item in this.rowContextMenuItems )
+	        foreach (var item in this.rowContextMenuItems)
 	        {
 	            item.IsEnabled = true;
 	        }
@@ -404,9 +405,9 @@ The last thing to do is to attach an event handler to the __Opened__ event of th
 	    }
 	    else
 	    {
-	        foreach ( var item in this.rowContextMenuItems )
+	        foreach (var item in this.rowContextMenuItems)
 	        {
-	            if ( !item.Text.Equals( "Add" ) )
+	            if (!item.Text.Equals("Add"))
 	            {
 	                item.IsEnabled = false;
 	            }
@@ -418,7 +419,7 @@ The last thing to do is to attach an event handler to the __Opened__ event of th
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_15}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_15}}
 	Private Sub GridContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    If Me.ClickedHeader IsNot Nothing Then
 	        Me.GridContextMenu.ItemsSource = Me.headerContextMenuItems
@@ -449,20 +450,20 @@ The last thing to do in this tutorial is to handle the menu items actions. For t
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_16}}
-	<telerik:RadContextMenu x:Name="GridContextMenu"
-	                                  ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
-	                                  Opened="GridContextMenu_Opened"
-	                                  ItemClick="GridContextMenu_ItemClick" />
+{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_16}}
+	<telerik:RadContextMenu x:Name="GridContextMenu3"
+	                        ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
+	                        Opened="GridContextMenu_Opened"
+	                        ItemClick="GridContextMenu_ItemClick" />
 {{endregion}}
 
 #### __C#__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_17}}
-	private void GridContextMenu_ItemClick( object sender, Telerik.Windows.RadRoutedEventArgs e )
+{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_17}}
+	private void GridContextMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
-	    MenuItem item = ( e.OriginalSource as RadMenuItem ).DataContext as MenuItem;
-	    switch ( item.Text )
+	    MenuItem item = (e.OriginalSource as RadMenuItem).DataContext as MenuItem;
+	    switch (item.Text)
 	    {
 	        case "Add":
 	            this.radGridView.BeginInsert();
@@ -471,33 +472,33 @@ The last thing to do in this tutorial is to handle the menu items actions. For t
 	            this.radGridView.BeginEdit();
 	            break;
 	        case "Delete":
-	            this.radGridView.Items.Remove( this.radGridView.SelectedItem );
+	            this.radGridView.Items.Remove(this.radGridView.SelectedItem);
 	            break;
 	        case "Ascending":
 	            this.radGridView.SortDescriptors.Clear();
-	            this.radGridView.SortDescriptors.Add( new SortDescriptor()
+	            this.radGridView.SortDescriptors.Add(new SortDescriptor()
 	            {
 	                Member = this.ClickedHeader.Column.UniqueName,
 	                SortDirection = ListSortDirection.Ascending
-	            } );
+	            });
 	            break;
 	        case "Descending":
 	            this.radGridView.SortDescriptors.Clear();
-	            this.radGridView.SortDescriptors.Add( new SortDescriptor()
+	            this.radGridView.SortDescriptors.Add(new SortDescriptor()
 	            {
 	                Member = this.ClickedHeader.Column.UniqueName,
 	                SortDirection = ListSortDirection.Descending
-	            } );
+	            });
 	            break;
 	        case "None":
 	            this.radGridView.SortDescriptors.Clear();
 	            break;
 	        case "Move Left":
-	            if ( this.ClickedHeader.Column.DisplayIndex > 0 )
+	            if (this.ClickedHeader.Column.DisplayIndex > 0)
 	                this.ClickedHeader.Column.DisplayIndex -= 1;
 	            break;
 	        case "Move Right":
-	            if ( this.ClickedHeader.Column.DisplayIndex < this.radGridView.Columns.Count - 1 )
+	            if (this.ClickedHeader.Column.DisplayIndex < this.radGridView.Columns.Count - 1)
 	                this.ClickedHeader.Column.DisplayIndex += 1;
 	            break;
 	    }
@@ -506,7 +507,7 @@ The last thing to do in this tutorial is to handle the menu items actions. For t
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-use-radcontextmenu-with-radgridview_18}}
+{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_18}}
 	Private Sub GridContextMenu_ItemClick(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 	    Dim item As MenuItem = TryCast((TryCast(e.OriginalSource, RadMenuItem)).DataContext, MenuItem)
 	    Select Case item.Text

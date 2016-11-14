@@ -35,8 +35,7 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 __Suggest project upgrades for Telerik product version available on my computer__ – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI installed on your system
 
-__Suggest upgrades when an equal Dev release detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
-
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
 
 ## Select a Folder for Downloads
 
@@ -45,6 +44,9 @@ Configures the path where the extensions look for and store distributions.
 
 >Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
 
+All settings under the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} category affect only the respective product.
+
+![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_OptionsDialog.png)
 
 ## Latest Version Retrieval
 

@@ -28,7 +28,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region radchart-features-annotations-custom-gridline_0}}
+{{region xaml-radchart-features-annotations-custom-gridline_0}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -45,31 +45,31 @@ Here is an example:
 	    </telerik:RadChart.DefaultView>
 	
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-annotations-custom-gridline_1}}
+{{region cs-radchart-features-annotations-custom-gridline_1}}
 	CustomGridLine gridline = new CustomGridLine();
 	gridline.YIntercept = 150;
-	gridline.Stroke = new SolidColorBrush( Colors.Red );
+	gridline.Stroke = new SolidColorBrush(Colors.Red);
 	gridline.StrokeThickness = 2;
-	this.radChart.DefaultView.ChartArea.Annotations.Add( gridline );
-	{{endregion}}
+	this.radChart.DefaultView.ChartArea.Annotations.Add(gridline);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-annotations-custom-gridline_2}}
+{{region vb-radchart-features-annotations-custom-gridline_2}}
 	Dim gridline As New CustomGridLine()
 	gridline.YIntercept = 150
 	gridline.Stroke = New SolidColorBrush(Colors.Red)
 	gridline.StrokeThickness = 2
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(gridline)
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_Features_Annotations_CustomGridLine_01.png)
 
@@ -77,33 +77,33 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 #### __XAML__
 
-{{region radchart-features-annotations-custom-gridline_3}}
-	<UserControl.Resources>
+{{region xaml-radchart-features-annotations-custom-gridline_3}}
+	<FrameworkElement.Resources>
 	    <Style x:Key="CustomGridLineStyle"
-	            TargetType="Line">
+	    TargetType="Line">
 	        <Setter Property="StrokeDashArray"
-	                Value="1,1" />
+	        Value="1,1" />
 	    </Style>
-	</UserControl.Resources>
-	...
-	<telerik:RadChart x:Name="radChart">
+	</FrameworkElement.Resources>
+	<!--...-->
+	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartArea>
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.Annotations>
 	                        <telerik:CustomGridLine YIntercept="150"
-	                                                Stroke="Red"
-	                                                StrokeThickness="2"
-	                                                ElementStyle="{StaticResource CustomGridLineStyle}" />
+	                                        Stroke="Red"
+	                                        StrokeThickness="2"
+	                                        ElementStyle="{StaticResource CustomGridLineStyle}" />
 	                    </telerik:ChartArea.Annotations>
 	                </telerik:ChartArea>
 	            </telerik:ChartDefaultView.ChartArea>
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
-	    ...
+	    <!--...-->
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

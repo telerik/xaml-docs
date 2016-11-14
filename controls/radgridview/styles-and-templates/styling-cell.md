@@ -18,6 +18,8 @@ In this article we will discuss the following topics:
 
 * [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
 
+* [Setting a Column's CellStyleSelector](#setting-a-columns-cellstyleselector)
+
 #### __Figure 1: GridViewCell template structure__
 
 ![GridViewCell template structure](images/gridviewcell-template.png)
@@ -61,6 +63,10 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 	                Header="Name"
 	                CellStyle="{StaticResource GridViewCellStyle}" />
 {{endregion}}
+
+## Setting a Column's CellStyleSelector
+
+You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. More details about how this can be achieved can be found in the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
 
 # See Also
 

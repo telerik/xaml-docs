@@ -12,7 +12,7 @@ position: 13
 
 This help article will show you how to insert new row into paged GridView
 
-See this [article](FDBBFA08-24CE-4FE6-AFEE-DAFEC25A9C0D#Paging_RadGridView) for more information about how to page RadGridView.
+See this [article]({%slug radgridview-paging-using-telerik-raddatapager%}) for more information about how to page RadGridView.
         
 
 When you insert new row, it is added to the last page of RadDataPager. If you want to page to the new row when the BeginInsert command is called, you will have to handle GridView's AddingNewDataItem event and execute the following code:

@@ -52,7 +52,7 @@ Here is a list of the __RadProgressBar__ properties that affect the coloring of 
 		Dim myStyle As New Style(GetType(RadProgressBar))
 		myStyle.Setters.Add(New Setter(RadProgressBar.BackgroundProperty, New SolidColorBrush(Colors.Yellow)))
 		myProgressBar.Style = myStyle			
-
+	{{endregion}}
 	Here is how the control looks before and after the change of the __Background__ property:
 	*Before:*
 	![Rad Progress Bar default](images/RadProgressBar_default.png)
@@ -90,7 +90,7 @@ Here is a list of the __RadProgressBar__ properties that affect the coloring of 
 		Dim myStyle2 As New Style(GetType(RadProgressBar))
 		myStyle2.Setters.Add(New Setter(RadProgressBar.ForegroundProperty, New SolidColorBrush(Colors.Yellow)))
 		myProgressBar.Style = myStyle2
-				
+	{{endregion}}			
 	Here is how the control looks before and after the change of the __Foreground__ property:
 	Before:*
 	![Rad Progress Bar default](images/RadProgressBar_default.png)
@@ -128,7 +128,7 @@ Here is a list of the __RadProgressBar__ properties that affect the coloring of 
 		Dim myStyle3 As New Style(GetType(RadProgressBar))
 		myStyle3.Setters.Add(New Setter(RadProgressBar.BorderBrushProperty, New SolidColorBrush(Colors.Red)))
 		myProgressBar.Style = myStyle3
-
+	{{endregion}}
 	Here is how the control looks before and after the change of the __BorderBrush__ property:
 	*Before:*
 	![Rad Progress Bar default](images/RadProgressBar_default.png)

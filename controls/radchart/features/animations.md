@@ -50,75 +50,72 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 
 #### __XAML__
 
-{{region radchart-features-animations_0}}
-	<telerikChart:RadChart>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ....
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea >
-	                    <telerikCharting:ChartArea.AnimationSettings>
-	                        <telerikCharting:AnimationSettings 
-	                            ItemDelay="00:00:00.0" 
-	                            ItemAnimationDuration="00:00:03" />
-	                    </telerikCharting:ChartArea.AnimationSettings>
-	                    <telerikCharting:ChartArea.DataSeries>
-	                        <telerikCharting:DataSeries>
-	                            <telerikCharting:DataSeries.Definition>
-	                                <telerikCharting:BarSeriesDefinition >
-	                                </telerikCharting:BarSeriesDefinition>
-	                            </telerikCharting:DataSeries.Definition>
-	                            <telerikCharting:DataPoint YValue="154" />
-	                            <telerikCharting:DataPoint YValue="138" />
-	                            <telerikCharting:DataPoint YValue="143" />
-	                            <telerikCharting:DataPoint YValue="120" />
-	                            <telerikCharting:DataPoint YValue="135" />
-	                            <telerikCharting:DataPoint YValue="125" />
-	                            <telerikCharting:DataPoint YValue="179" />
-	                            <telerikCharting:DataPoint YValue="170" />
-	                            <telerikCharting:DataPoint YValue="198" />
-	                            <telerikCharting:DataPoint YValue="187" />
-	                            <telerikCharting:DataPoint YValue="193" />
-	                            <telerikCharting:DataPoint YValue="176" />
-	                        </telerikCharting:DataSeries>
-	                        <telerikCharting:DataSeries>
-	                            <telerikCharting:DataSeries.Definition>
-	                                <telerikCharting:BarSeriesDefinition>
-	                                    <telerikCharting:BarSeriesDefinition.AnimationSettings>
-	                                        <telerikCharting:AnimationSettings 
-	                                            ItemAnimationDuration="00:00:00.5" 
-	                                            TotalSeriesAnimationDuration="00:00:03.0"/>
-	                                    </telerikCharting:BarSeriesDefinition.AnimationSettings>
-	                                </telerikCharting:BarSeriesDefinition>
-	                            </telerikCharting:DataSeries.Definition>
-	                            <telerikCharting:DataPoint YValue="45" />
-	                            <telerikCharting:DataPoint YValue="48" />
-	                            <telerikCharting:DataPoint YValue="53" />
-	                            <telerikCharting:DataPoint YValue="41" />
-	                            <telerikCharting:DataPoint YValue="32" />
-	                            <telerikCharting:DataPoint YValue="28" />
-	                            <telerikCharting:DataPoint YValue="63" />
-	                            <telerikCharting:DataPoint YValue="74" />
-	                            <telerikCharting:DataPoint YValue="77" />
-	                            <telerikCharting:DataPoint YValue="85" />
-	                            <telerikCharting:DataPoint YValue="89" />
-	                            <telerikCharting:DataPoint YValue="80" />
-	                        </telerikCharting:DataSeries>
-	                    </telerikCharting:ChartArea.DataSeries>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-animations_0}}
+	<telerik:RadChart>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--....-->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea >
+	                    <telerik:ChartArea.AnimationSettings>
+	                        <telerik:AnimationSettings ItemDelay="00:00:00.0" 
+	                                                   ItemAnimationDuration="00:00:03" />
+	                    </telerik:ChartArea.AnimationSettings>
+	                    <telerik:ChartArea.DataSeries>
+	                        <telerik:DataSeries>
+	                            <telerik:DataSeries.Definition>
+	                                <telerik:BarSeriesDefinition />
+	                            </telerik:DataSeries.Definition>
+	                            <telerik:DataPoint YValue="154" />
+	                            <telerik:DataPoint YValue="138" />
+	                            <telerik:DataPoint YValue="143" />
+	                            <telerik:DataPoint YValue="120" />
+	                            <telerik:DataPoint YValue="135" />
+	                            <telerik:DataPoint YValue="125" />
+	                            <telerik:DataPoint YValue="179" />
+	                            <telerik:DataPoint YValue="170" />
+	                            <telerik:DataPoint YValue="198" />
+	                            <telerik:DataPoint YValue="187" />
+	                            <telerik:DataPoint YValue="193" />
+	                            <telerik:DataPoint YValue="176" />
+	                        </telerik:DataSeries>
+	                        <telerik:DataSeries>
+	                            <telerik:DataSeries.Definition>
+	                                <telerik:BarSeriesDefinition>
+	                                    <telerik:BarSeriesDefinition.AnimationSettings>
+	                                        <telerik:AnimationSettings ItemAnimationDuration="00:00:00.5" 
+	                                                                   TotalSeriesAnimationDuration="00:00:03.0"/>
+	                                    </telerik:BarSeriesDefinition.AnimationSettings>
+	                                </telerik:BarSeriesDefinition>
+	                            </telerik:DataSeries.Definition>
+	                            <telerik:DataPoint YValue="45" />
+	                            <telerik:DataPoint YValue="48" />
+	                            <telerik:DataPoint YValue="53" />
+	                            <telerik:DataPoint YValue="41" />
+	                            <telerik:DataPoint YValue="32" />
+	                            <telerik:DataPoint YValue="28" />
+	                            <telerik:DataPoint YValue="63" />
+	                            <telerik:DataPoint YValue="74" />
+	                            <telerik:DataPoint YValue="77" />
+	                            <telerik:DataPoint YValue="85" />
+	                            <telerik:DataPoint YValue="89" />
+	                            <telerik:DataPoint YValue="80" />
+	                        </telerik:DataSeries>
+	                    </telerik:ChartArea.DataSeries>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-animations_1}}
-	Telerik.Windows.Controls.RadChart radChart= new Telerik.Windows.Controls.RadChart();
-	....
+{{region cs-radchart-features-animations_1}}
+	RadChart radChart= new RadChart();
+	//....
 	radChart.DefaultView.ChartArea.AnimationSettings = new AnimationSettings();
 	radChart.DefaultView.ChartArea.AnimationSettings.ItemDelay = new TimeSpan( 0 );
 	radChart.DefaultView.ChartArea.AnimationSettings.ItemAnimationDuration = new TimeSpan( 0, 0, 3 );
@@ -155,49 +152,49 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	barSeries.Add( new DataPoint(){ YValue = 89 } );
 	barSeries.Add( new DataPoint(){ YValue = 80 } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries );
-	{{endregion}}
+{{endregion}}
     
 #### __VB.NET__
 
-{{region radchart-features-animations_2}}
+{{region vb-radchart-features-animations_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AnimationSettings = New AnimationSettings()
-	radChart.DefaultView.ChartArea.AnimationSettings.ItemDelay = New TimeSpan( 0 )
-	radChart.DefaultView.ChartArea.AnimationSettings.ItemAnimationDuration = New TimeSpan( 0, 0, 3 )
+	radChart.DefaultView.ChartArea.AnimationSettings.ItemDelay = New TimeSpan(0)
+	radChart.DefaultView.ChartArea.AnimationSettings.ItemAnimationDuration = New TimeSpan(0, 0, 3)
 	Dim barSeries As New DataSeries()
 	barSeries.Definition = New BarSeriesDefinition()
-	barSeries.Add( New DataPoint( 154 ) )
-	barSeries.Add( New DataPoint( 138 ) )
-	barSeries.Add( New DataPoint( 143 ) )
-	barSeries.Add( New DataPoint( 120 ) )
-	barSeries.Add( New DataPoint( 135 ) )
-	barSeries.Add( New DataPoint( 125 ) )
-	barSeries.Add( New DataPoint( 179 ) )
-	barSeries.Add( New DataPoint( 170 ) )
-	barSeries.Add( New DataPoint( 198 ) )
-	barSeries.Add( New DataPoint( 187 ) )
-	barSeries.Add( New DataPoint( 193 ) )
-	barSeries.Add( New DataPoint( 176 ) )
+	barSeries.Add(New DataPoint(154))
+	barSeries.Add(New DataPoint(138))
+	barSeries.Add(New DataPoint(143))
+	barSeries.Add(New DataPoint(120))
+	barSeries.Add(New DataPoint(135))
+	barSeries.Add(New DataPoint(125))
+	barSeries.Add(New DataPoint(179))
+	barSeries.Add(New DataPoint(170))
+	barSeries.Add(New DataPoint(198))
+	barSeries.Add(New DataPoint(187))
+	barSeries.Add(New DataPoint(193))
+	barSeries.Add(New DataPoint(176))
 	radChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
 	barSeries = New DataSeries()
 	barSeries.Definition = New BarSeriesDefinition()
 	barSeries.Definition.AnimationSettings = New AnimationSettings()
-	barSeries.Definition.AnimationSettings.ItemAnimationDuration = New TimeSpan( 0, 0, 0, 0, 500 )
-	barSeries.Definition.AnimationSettings.TotalSeriesAnimationDuration = New TimeSpan( 0, 0, 3 )
-	barSeries.Add( New DataPoint( 45 ) )
-	barSeries.Add( New DataPoint( 48 ) )
-	barSeries.Add( New DataPoint( 53 ) ) 
-	barSeries.Add( New DataPoint( 41 ) ) 
-	barSeries.Add( New DataPoint( 32 ) )
-	barSeries.Add( New DataPoint( 28 ) )
-	barSeries.Add( New DataPoint( 63 ) )
-	barSeries.Add( New DataPoint( 74 ) )
-	barSeries.Add( New DataPoint( 77 ) )
-	barSeries.Add( New DataPoint( 85 ) )
-	barSeries.Add( New DataPoint( 89 ) )
-	barSeries.Add( New DataPoint( 80 ) )
-	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries )
-	{{endregion}}
+	barSeries.Definition.AnimationSettings.ItemAnimationDuration = New TimeSpan(0, 0, 0, 0, 500)
+	barSeries.Definition.AnimationSettings.TotalSeriesAnimationDuration = New TimeSpan(0, 0, 3)
+	barSeries.Add(New DataPoint(45))
+	barSeries.Add(New DataPoint(48))
+	barSeries.Add(New DataPoint(53))
+	barSeries.Add(New DataPoint(41))
+	barSeries.Add(New DataPoint(32))
+	barSeries.Add(New DataPoint(28))
+	barSeries.Add(New DataPoint(63))
+	barSeries.Add(New DataPoint(74))
+	barSeries.Add(New DataPoint(77))
+	barSeries.Add(New DataPoint(85))
+	barSeries.Add(New DataPoint(89))
+	barSeries.Add(New DataPoint(80))
+	radChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
+{{endregion}}
     
 __The image below is a snapshot taken in the middle of the animation.__
 ![](images/RadChart_Features_Animations_01.png)
@@ -208,42 +205,40 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 #### __XAML__
 
-{{region radchart-features-animations_3}}
-	<telerikChart:RadChart>
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            ....
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea EnableAnimations="False" EnableStripLinesAnimation="False">
-	                    ....
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-animations_3}}
+	<telerik:RadChart>
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <!--....-->
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea EnableAnimations="False" EnableStripLinesAnimation="False">
+	                    <!--....-->
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-animations_4}}
-	....
+{{region cs-radchart-features-animations_4}}
+	//....
 	radChart.DefaultView.ChartArea.EnableAnimations = false;
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = false;
-	....
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-animations_5}}
-	....
+{{region vb-radchart-features-animations_5}}
 	radChart.DefaultView.ChartArea.EnableAnimations = False
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = False
-	....
-	{{endregion}}
+{{endregion}}
 
 
 

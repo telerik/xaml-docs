@@ -81,6 +81,8 @@ The following code snippet demonstrate the use of the above described Print meth
 When you need to set different print option such as page size, page orientation or when you want to print the spreadsheet grid lines you may set this options using the worksheet's page setup. For more detailed information you may follow [this link](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) to __WorksheetPageSetup__ documentation article.
         
 
+>You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers topic]({%slug radspreadsheet-ui-headers-and-footers%}).
+
 ## Print preview
 
 In order to preview the pages before printing you may use the __PrintPreviewControl__ class and set its __RadSpreadsheet property__ to the __RadSpreadsheet__ instance that you want to be previewed. This control will provide ready to use functionality for previewing print pages and setting different print options.
@@ -98,3 +100,8 @@ The following code snippet shows how to integrate the print preview with RadRibb
 {{endregion}}
 
 ![Rad Spreadsheet UI Printing 08](images/RadSpreadsheet_UI_Printing_08.png)
+
+
+# See Also
+
+* [Headers and Footers]({%slug radspreadsheet-ui-headers-and-footers%})

@@ -12,12 +12,12 @@ position: 0
 
 
 
-__RadPdfViewer__ provides some customization options for the way PDF documents are rendered.
+__RadPdfViewer__ provides customization options for the way PDF documents are rendered.
       
 
 ## Creating a Decoder
 
-When rendering the text, RadPdfViewer uses different decoders. It finds the decoder that it needs to use by its name. These are the decoders that can be plugged:
+When rendering the content, RadPdfViewer uses different decoders. It finds the decoder that it needs to use by its name. These are the decoders that can be plugged:
         
 
 * __ASCIIHexDecode__
@@ -38,8 +38,9 @@ When rendering the text, RadPdfViewer uses different decoders. It finds the deco
 
 * __JPXDecode__
 
-The following table indicates the status of the respective decoders in RadPdfViewer:
+**Table 1** indicates the status of the respective decoders in RadPdfViewer.
         
+#### **Table 1: Decoders support in RadPdfViewer**
 <table><tr><td>
 
 Fully supported</td>
@@ -67,15 +68,16 @@ Fully supported</td>
 <tr>
 <td>JBIG2Decode</td><td></td><td></td></tr></table>
 
+>tip Although **JPXDecode** is not supported out-of-the-box, you can implement a custom decoder and enable RadPdfViewer to read and render the content that uses this filter following the guides in this article. An implementation of this scenario is available in the [Custom Decoder example](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomDecoder) from our SDK repository as well. 
+
 All decoders implement the __IPdfFilter__ interface and if you decide, you can implement your own decoder and set the viewer to use it. RadPdfViewer uses the __Name__ property in order to recognize the filter - it must return one of the values listed above.
         
 
-For example, you can create a custom decoder for Tiff images by implementing the interface and setting the Name of the filter to CCITTFaxDecode. Then, just register the new class by calling FiltersManager.RegisterFilter() method and the viewer will use your implementaion instead of the default one.
+For example, you can create a custom decoder for Tiff images by implementing the interface and setting the Name of the filter to CCITTFaxDecode. Then, just register the new class by calling FiltersManager.RegisterFilter() method and the viewer will use your implementation instead of the default one.
         
+The cod from **Example 1** shows the members that should be implemented when inheriting the IPdfFilter interface.
 
-Inheriting from IPdfFilter will result in the following:
-
-#### __CS__
+#### **[C#] Example 1: Members of IPdfFilter**
 
 {{region radpdfviewer-customize-pdf-rendering_0}}
 	public class CustomFilter : IPdfFilter
@@ -95,9 +97,9 @@ Inheriting from IPdfFilter will result in the following:
 {{endregion}}
 
 
-You should also register the filter as follows:{% if site.site_name == 'Silverlight' %}
+You should also register the filter as demonstrated in **Example 2**:{% if site.site_name == 'Silverlight' %}
 
-#### __CS__
+#### **[C#] Example 2: Register a custom filter**
 
 {{region radpdfviewer-customize-pdf-rendering_1}}
 	private PDFAndTiffFilter _filter;
@@ -112,7 +114,7 @@ You should also register the filter as follows:{% if site.site_name == 'Silverli
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __CS__
+#### **[C#] Example 2: Register a custom filter**
 
 {{region radpdfviewer-customize-pdf-rendering_2}}
 	private PDFAndTiffFilter _filter;
@@ -129,14 +131,18 @@ You should also register the filter as follows:{% if site.site_name == 'Silverli
 
 The result that a custom filter should return depends on the type of the filter. For the binary filters it is enough to decode the byte array into decoded byte array using the respective algorithm. As for the filters listed below, additional transformation is required.
         
+* **CCITTFaxDecode**
+
+* **JBIG2Decode**
+
+* **JPXDecode**
+
+* **DCTDecode**
+	>You can override the DctDecode class and its Decode() method. This will enable you to call the DecodeWithJpegDecode() method in order to achieve backward compatibility by using Telerik's JpegDecoder. In some cases, this approach decodes faster than the BitmapImage class, which is currently used to decode the images.
+
 
 RadPdfViewer expects these filters to return data that depends on the decoded object's colors space and bits per component (there are such properties in the __decodedObject__). The resulting byte array should contain exactly BitsPerComponent bits for each color component in the color space. For example, if you have RGB color space and 8 bits per component, the resulting byte array should contains a single byte value for each Red, Green and Blue value (for each pixel) in the decoded image.
         
+## See Also 
 
-* __CCITTFaxDecode__
-
-* __JBIG2Decode__
-
-* __DCTDecode__
-
-* __JPXDecode__
+* [Custom Document Presenter]({%slug radpdfviewer-customization-and-extensibility-custom-document-presenter%})

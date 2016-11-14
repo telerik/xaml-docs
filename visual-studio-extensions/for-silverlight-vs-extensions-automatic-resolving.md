@@ -15,7 +15,7 @@ site_name: Silverlight
 
 ## 
 
-To improve the experience of your clients and boost your application’s initial load time it is crucial to use only the subset of UI for Silverlight assemblies you really need, as described in the [Installation and Deployment Section](50B1CE13-5FE2-4B7D-ACED-2E61D637EB5A). 
+To improve the experience of your clients and boost your application’s initial load time it is crucial to use only the subset of UI for Silverlight assemblies you really need, as described in the [Installation and Deployment Section]({%slug installation-installing-which-file-do-i-need%}). 
 
 Some controls require multiple assemblies and it mistakes are not unlikely to happen. For example, in the urge to optimize load times, you could remove an assembly the project needs, thus breaking the application compilation.
 

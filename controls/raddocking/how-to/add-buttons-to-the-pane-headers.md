@@ -18,7 +18,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_0}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -42,7 +42,7 @@ Create a new data template in your XAML. For example, see the next declaration:
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_1}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_1}}
 	<DataTemplate x:Key="TitleTemplate">
 	    <Grid>
 	        <Grid.ColumnDefinitions>
@@ -50,9 +50,9 @@ Create a new data template in your XAML. For example, see the next declaration:
 	            <ColumnDefinition />
 	        </Grid.ColumnDefinitions>
 	        <ContentPresenter Content="{Binding}"
-	                          Margin="0,0,75,0" />
+	                  Margin="0,0,75,0" />
 	        <telerik:RadButton Grid.Column="1"
-	                           Content="Float!" />
+	                   Content="Float!" />
 	    </Grid>
 	</DataTemplate>
 {{endregion}}
@@ -61,10 +61,10 @@ Change your XAML declaration and set the __TitleTemplate__ property of the __Rad
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_2}}
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_2}}
 	<telerik:RadDocking.DocumentHost>
 	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup x:Name="radPaneGroup">
+	        <telerik:RadPaneGroup x:Name="radPaneGroup1">
 	            <telerik:RadPane TitleTemplate="{StaticResource TitleTemplate}" Title="Pane 1">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
@@ -83,18 +83,18 @@ In order to add a behavior to the button, you should use the command mechanism. 
 
 #### __XAML__
 
-{{region raddocking-how-to-add-buttons-to-the-pane-headers_3}}
-	<DataTemplate x:Key="TitleTemplate">
+{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_3}}
+	<DataTemplate x:Key="TitleTemplateCommand">
 	    <Grid>
 	        <Grid.ColumnDefinitions>
 	            <ColumnDefinition Width="Auto" />
 	            <ColumnDefinition />
 	        </Grid.ColumnDefinitions>
 	        <ContentPresenter Content="{Binding}"
-	                          Margin="0,0,75,0" />
+	                  Margin="0,0,75,0" />
 	        <telerik:RadButton Grid.Column="1"
-	                           Command="telerik:RadDockingCommands.Floating"
-	                           Content="Float!" />
+	                   Command="telerik:RadDockingCommands.Floating"
+	                   Content="Float!" />
 	    </Grid>
 	</DataTemplate>
 {{endregion}}

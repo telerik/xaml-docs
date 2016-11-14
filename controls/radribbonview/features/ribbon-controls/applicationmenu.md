@@ -32,7 +32,7 @@ The __ApplicationMenu__ is an [ItemsControl](http://msdn.microsoft.com/en-us/lib
 
 * __Footer Content__ - this is the bottom pane of the application menu. Here are usually placed application options and exit buttons. In order to populate this area you need to use the __ApplicationMenu__'s __FooterContent__ property and set the content you like.					
 
-Check out the rest of this topic, which is entirely dedicated to the __ApplicationMenu__.				
+Note that the __ApplicationMenu__ can be used as a stand-alone control, independed from RadRibbonView.
 
 ## Adding Application Menu to a RadRibbonView Control
 

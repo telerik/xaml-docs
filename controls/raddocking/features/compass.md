@@ -26,7 +26,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __C#__
 
-{{region raddocking-features-compass_0}}
+{{region cs-raddocking-features-compass_0}}
 	Compass compass = new Compass();
 	compass.IsBottomIndicatorVisible = false;
 	compass.IsCenterIndicatorVisible = false;
@@ -34,7 +34,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_1}}
+{{region vb-raddocking-features-compass_1}}
 	Dim compass As Compass = New Compass()
 	compass.IsBottomIndicatorVisible = False
 	compass.IsCenterIndicatorVisible = False
@@ -54,7 +54,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __C#__
 
-{{region raddocking-features-compass_2}}
+{{region cs-raddocking-features-compass_2}}
 	RootCompass rootCompass = new RootCompass();
 	rootCompass.IsLeftIndicatorVisible = false;
 	rootCompass.IsRightIndicatorVisible = false;
@@ -62,7 +62,7 @@ The class that represents the Compass element is __Telerik.Windows.Controls.Dock
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_3}}
+{{region vb-raddocking-features-compass_3}}
 	Dim rootCompass As RootCompass = New RootCompass()
 	rootCompass.IsLeftIndicatorVisible = False
 	rootCompass.IsRightIndicatorVisible = False
@@ -76,39 +76,33 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 
 #### __C#__
 
-{{region raddocking-features-compass_4}}
-	public partial class CompassSample : UserControl
+{{region cs-raddocking-features-compass_4}}
+	       
+	public CompassSample()
 	{
-	    public CompassSample()
-	    {
-	        InitializeComponent();
+	    InitializeComponent();
 	
-	        radDocking.PreviewShowCompass += new EventHandler<Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs>( radDocking_PreviewShowCompass );
-	    }
+	    this.radDocking.PreviewShowCompass += new EventHandler<Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs>(radDocking_PreviewShowCompass);
+	}
 	
-	    private void radDocking_PreviewShowCompass( object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e )
-	    {
-	        e.Compass.Background = new SolidColorBrush( Colors.Red );
-	    }
+	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
+	{
+	    e.Compass.Background = new SolidColorBrush(Colors.Red);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-features-compass_5}}
-	Public Partial Class CompassSample
-	    Inherits UserControl
+{{region vb-raddocking-features-compass_5}}
+	Public Sub New()
+		InitializeComponent()
 	
-	    Public Sub New()
-	        InitializeComponent()
+		AddHandler radDocking.PreviewShowCompass, AddressOf radDocking_PreviewShowCompass
+	End Sub
 	
-	        AddHandler radDocking.PreviewShowCompass, AddressOf radDocking_PreviewShowCompass
-	    End Sub
-	
-	    Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-	        e.Compass.Background = New SolidColorBrush(Colors.Red)
-	    End Sub
-	End Class
+	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
+		e.Compass.Background = New SolidColorBrush(Colors.Red)
+	End Sub
 {{endregion}}
 
 And the result:

@@ -44,6 +44,9 @@ All supported commands are defined in the RadGridViewCommands class and are list
 		  
 
 * __Delete__ - removes the selected item from the collection.
+
+
+* __ExtendSelectionToCurrentUnit__ - selects all the selection unit from the anchor upto the chosen unit.
 		  
 
 * __MoveBottom, MoveTop__ - moves the focus to the cell situated in the bottom/top item.
@@ -66,8 +69,9 @@ All supported commands are defined in the RadGridViewCommands class and are list
 
 * __MoveHome__ - moves the focus to the cell situated in the first item.
 
-* __Search__: Executed in order to show the search panel.
+* __Search__- executed in order to show the search panel.
 		  
+* __SearchByText__ - adds search criteria programmatically.
 
 * __SelectCurrentItem__ - selects the current item.
 		  
@@ -75,7 +79,7 @@ All supported commands are defined in the RadGridViewCommands class and are list
 * __SelectCurrentUnit__ - selects the current unit. By default the selection unit is __"FullRow"__, but the __SelectionUnit__ property may also be set to __"Cell"__, thus enabling a cell-based selection.
 		  
 
-* __ExtendSelectionToCurrentUnit__ - selects all the selection unit from the anchor upto the chosen unit.
+
 
 As the commands provided by __RadGridView__ are __ICommands__ at their core, they do provide methods both for checking if they can be invoked - __CanExecute()__ and for invoking it - __Execute()__. 
 		
@@ -83,7 +87,7 @@ As the commands provided by __RadGridView__ are __ICommands__ at their core, the
 Using the __RadGridViewCommands__ class, you can set a consequence of commands to be performed one after another as if simultaneously.  So, for example, you may easily handle the Click event of a button that moves the focus down, selects the current unit and delete it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element.
 		
 
-#### __C#__
+#### __[C#] Example 1: Executing different commands__
 
 {{region cs-GridView-Commands-Overview_0}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
@@ -98,7 +102,7 @@ Using the __RadGridViewCommands__ class, you can set a consequence of commands t
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Executing different commands__
 
 {{region vb-GridView-Commands-Overview_1}}
 	Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)

@@ -21,7 +21,7 @@ The __DrawToolBase__ class represents an abstraction of a tool, which is respons
 * __SetPathProperties (Path path)__: Passes as a parameter the [Path](https://msdn.microsoft.com/en-us/library/system.windows.shapes.path%28v=vs.110%29.aspx) object which shall get the drawn geometry data later. You can set [properties](https://msdn.microsoft.com/en-us/library/system.windows.shapes.path_properties(v=vs.110).aspx) like _Stroke, Fill, StrokeThickness, StrokeLineJoin_ and etc. The method is invoked at the beginning of the drawing.
 
 
-# See also
+## See also
 
 * [Create a Custom Tool]({%slug radimageeditor-howto-custom-tool%})
 * [Implement ToolBase Class]({%slug radimageeditor-howto-implement-toolbase%})

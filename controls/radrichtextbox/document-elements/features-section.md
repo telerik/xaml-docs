@@ -18,7 +18,7 @@ The __Section__ class allows you to separate the content into sections. __Sectio
 A __Section__ can contain only __Paragraph__ and __Table__ elements. You are also able to customize the section layout by setting its properties.
       
 
-This topic will explain you how to:
+This topic explains how to:
 
 * [Create and Add a Section to RadDocument](#create-and-add-a-section-to-raddocument)
 
@@ -50,13 +50,15 @@ Splitting an already measured document into two sections at the current caret po
 {{endregion}}
 
 
-The InsertSectionBreak() method accept a parameter of type **SectionBreakType**. The possible values are:
+The InsertSectionBreak() method accepts a parameter of type **SectionBreakType**. The possible values are:
 
 * **SectionBreakType.NextPage**: The default value. The next section will start on the next page.
 
 * **SectionBreakType.OddPage**: The next section will start on the next odd page.
 
 * **SectionBreakType.EvenPage**: Analogically, the next section will start on the next even page.
+
+* **SectionBreakType.Continuous**: The next section will start on the same page. This type of section break is useful for creating a formatting change, such as a different number of columns, on a page.
 
 >The distribution of the document content in sections is only visible when the document is in Paged layout mode. Furthermore, the sections and section breaks can be persisted in XAML, Docx and Rtf. If you export the document to HTML or plain text, the section breaks will be lost.
           
@@ -175,7 +177,7 @@ Paragraphs can be added to a section in the following ways:
 
 
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 
@@ -188,3 +190,5 @@ Paragraphs can be added to a section in the following ways:
  * [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
 
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
+
+ * [Merge Documents]({%slug radrichtextbox-features-merge-raddocumentmerger%})

@@ -42,6 +42,8 @@ When a user adds a new item, an empty row is created in which the user can input
 
 >If the __IsReadOnly__ property of RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row is added.
 
+>important The underlying object should expose a default constructor for an empty row to be added.
+
 ## Modifying New Entries
 
 The next step in implementing the adding functionality is to attach event handlers to the __AddingNewDataItem__ and the __RowEditEnded__ events.

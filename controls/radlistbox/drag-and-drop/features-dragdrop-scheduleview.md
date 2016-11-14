@@ -22,20 +22,11 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[C#]  Business object creation__
 
-{{region radlistbox-features-dragdrop_2}}
+{{region cs-radlistbox-features-dragdrop-scheduleview-0}}
 	public class Customer
 	{
-		public string Name { get; set; }
-		public int ID { get; set; }
-	
-		public Customer Copy()
-		{
-			return new Customer
-			{
-				Name = this.Name,
-				ID = this.ID
-			};
-		}
+	    public string Name { get; set; }
+	    public int ID { get; set; }
 	}
 {{endregion}}
 
@@ -43,32 +34,28 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[C#]  ViewModel creation__
 
-{{region radlistbox-features-dragdrop_3}}
+{{region cs-radlistbox-features-dragdrop-scheduleview-1}}
 	public ObservableCollection<Customer> CustomersSource { get; private set; }
 	public ObservableCollection<Appointment> AppointmentsSource { get; private set; }
-	
 	public ViewModel()
 	{
-		var monday = new DateTime(DateTime.Today.Year, DateTime.Today.Month, CalendarHelper.GetFirstDayOfWeek(DateTime.Today, DayOfWeek.Sunday).Day);
-	
-		this.CustomersSource = new ObservableCollection<Customer> 
-		{
-			new Customer { ID = 1, Name = "Customer 1" },
-			new Customer { ID = 2, Name = "Customer 2" },
-			new Customer { ID = 3, Name = "Customer 3" },
-			new Customer { ID = 4, Name = "Customer 4" },
-			new Customer { ID = 5, Name = "Customer 5" } 
-		};
-	
-		this.AppointmentsSource = new ObservableCollection<Appointment> 
-		{ 
-			new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 1" },
-			new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 2" },
-			new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 3" },
-			new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 4" },
-			new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 5" } 
-		};
-	
+	    var monday = new DateTime(DateTime.Today.Year, DateTime.Today.Month, CalendarHelper.GetFirstDayOfWeek(DateTime.Today, DayOfWeek.Sunday).Day);
+	    this.CustomersSource = new ObservableCollection<Customer> 
+	 {
+	  new Customer { ID = 1, Name = "Customer 1" },
+	  new Customer { ID = 2, Name = "Customer 2" },
+	  new Customer { ID = 3, Name = "Customer 3" },
+	  new Customer { ID = 4, Name = "Customer 4" },
+	  new Customer { ID = 5, Name = "Customer 5" } 
+	 };
+	    this.AppointmentsSource = new ObservableCollection<Appointment> 
+	 { 
+	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 1" },
+	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 2" },
+	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 3" },
+	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 4" },
+	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 5" } 
+	 };
 	}
 {{endregion}}
 
@@ -76,25 +63,23 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[C#]  AppointmentToCustomerConverter class creation__
 
-{{region radlistbox-features-dragdrop_4}}
+{{region cs-radlistbox-features-dragdrop-scheduleview-2}}
 	public class AppointmentToCustomerConverter : DataConverter
 	{
-		public override string[] GetConvertToFormats()
-		{
-			return new string[] { typeof(ScheduleViewDragDropPayload).FullName, typeof(Customer).FullName };
-		}
-	
-		public override object ConvertTo(object data, string format)
-		{
-	
-			var payload = DataObjectHelper.GetData(data, typeof(ScheduleViewDragDropPayload), false) as ScheduleViewDragDropPayload;
-			if (payload != null)
-			{
-				var customers = payload.DraggedAppointments;
-				return customers.OfType<Appointment>().Select(a => new Customer { Name = a.Subject });
-			}		
-			return null;
-		}
+	    public override string[] GetConvertToFormats()
+	    {
+	        return new string[] { typeof(ScheduleViewDragDropPayload).FullName, typeof(Customer).FullName };
+	    }
+	    public override object ConvertTo(object data, string format)
+	    {
+	        var payload = DataObjectHelper.GetData(data, typeof(ScheduleViewDragDropPayload), false) as ScheduleViewDragDropPayload;
+	        if (payload != null)
+	        {
+	            var customers = payload.DraggedAppointments;
+	            return customers.OfType<Appointment>().Select(a => new Customer { Name = a.Subject });
+	        }
+	        return null;
+	    }
 	}
 {{endregion}}
 
@@ -102,26 +87,23 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[C#]  ScheduleViewDragDropBehavior__
 
-{{region radlistbox-features-dragdrop_5}}
+{{region cs-radlistbox-features-dragdrop-scheduleview-3}}
 	public class ScheduleViewDragDropBehavior : Telerik.Windows.Controls.ScheduleViewDragDropBehavior
 	{
-		public object customers { get; set; }
-	
-		public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
-		{
-	
-			if (DataObjectHelper.GetDataPresent(data, typeof(Customer), false))
-			{
-				var customers = DataObjectHelper.GetData(data, typeof(Customer), true) as IEnumerable;
-				if (customers != null)
-				{
-					var newApp = customers.OfType<Customer>().Select(c => new Appointment { Subject = c.Name });
-					return newApp;
-				}
-			}
-	
-			return base.ConvertDraggedData(data);
-		}
+	    public object customers { get; set; }
+	    public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
+	    {
+	        if (DataObjectHelper.GetDataPresent(data, typeof(Customer), false))
+	        {
+	            var customers = DataObjectHelper.GetData(data, typeof(Customer), true) as IEnumerable;
+	            if (customers != null)
+	            {
+	                var newApp = customers.OfType<Customer>().Select(c => new Appointment { Subject = c.Name });
+	                return newApp;
+	            }
+	        }
+	        return base.ConvertDraggedData(data);
+	    }
 	}
 {{endregion}}
 
@@ -129,9 +111,9 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[XAML]  RadListBoxItem Style__
 
-{{region radlistbox-features-dragdrop_4}}
+{{region xaml-radlistbox-features-dragdrop-scheduleview-0}}
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
-		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
 {{endregion}}
 
@@ -139,7 +121,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 #### __[XAML]  Configuration of RadListBox and RadScheduleView__
 
-{{region radlistbox-features-dragdrop_5}}
+{{region xaml-radlistbox-features-dragdrop-scheduleview-1}}
 	<telerik:RadListBox x:Name="ListBox"
 						ItemsSource="{Binding CustomersSource}" 
 						DisplayMemberPath="Name" 
@@ -154,7 +136,6 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 			<telerik:ListBoxDragDropBehavior />
 		</telerik:RadListBox.DragDropBehavior>
 	</telerik:RadListBox>
-	
 	<telerik:RadScheduleView x:Name="scheduleView" 
 								AppointmentsSource="{Binding AppointmentsSource}">
 		<telerik:RadScheduleView.ViewDefinitions>

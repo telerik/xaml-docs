@@ -34,7 +34,7 @@ Here is an example of a __vertically__ oriented __RadMenu.__
 
 #### __XAML__
 
-{{region radmenu-features-orientation_0}}
+{{region xaml-radmenu-features-orientation_0}}
 	<telerik:RadMenu Orientation="Vertical">
 	    ...
 	</telerik:RadMenu>
@@ -60,7 +60,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region radmenu-features-orientation_1}}
+{{region xaml-radmenu-features-orientation_1}}
 	<telerik:RadMenu>
 	    ...
 	    <telerik:RadMenuItem Header="Edit" DropDownPlacement="Bottom">

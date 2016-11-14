@@ -5,7 +5,6 @@ description: Positioning
 slug: radrichtextbox-features-positioning
 tags: positioning
 published: True
-position: 0
 ---
 
 # Positioning

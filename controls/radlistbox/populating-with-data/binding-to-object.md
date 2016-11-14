@@ -26,7 +26,7 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 #### __[XAML]  Declaring RadListBox__
 
-{{region radlistbox-populating-with-data-binding-to-object_0}}
+{{region xaml-radlistbox-populating-with-data-binding-to-object_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="300" />
 {{endregion}}
 
@@ -34,13 +34,12 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 #### __[C#]  Business object implementation__
 
-{{region radlistbox-populating-with-data-binding-to-object_1}}
+{{region cs-radlistbox-populating-with-data-binding-to-object_1}}
 	public class Customer
 	{
 		public string Name { get; set; }
 		public string City { get; set; }		
 		public string Phone { get; set; }
-	
 		public Customer(string name, string city, string phone)
 		{
 			this.Name = name;
@@ -56,11 +55,10 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 #### __[C#]  ViewModel__
 
-{{region radlistbox-populating-with-data-binding-to-object_2}}
+{{region cs-radlistbox-populating-with-data-binding-to-object_2}}
 	public class CustomerViewModel
 	{
 		public ObservableCollection<Customer> Customers { get; set; }
-	
 		public CustomerViewModel()
 		{
 			this.Customers = new ObservableCollection<Customer>()
@@ -80,18 +78,18 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 #### __[XAML]  Declaring the ViewModel as resource__
 
-{{region radlistbox-populating-with-data-binding-to-object_3}}
-	<UserControl.Resources>
-		<example:CustomerViewModel x:Key="CustomerViewModel" />
-	</UserControl.Resources>
+{{region xaml-radlistbox-populating-with-data-binding-to-object_3}}
+	  <UserControl.Resources>
+	    <example:CustomerViewModel x:Key="CustomerViewModel" />
+	  </UserControl.Resources>
 {{endregion}}
 
 * Update your __RadListBox__ declaration and its __ItemsSource__ property:    		
 
 #### __[XAML]  Setting the ItemsSource__
 
-{{region radlistbox-populating-with-data-binding-to-object_4}}
-	<telerik:RadListBox x:Name="radListBox" Width="300" 
+{{region xaml-radlistbox-populating-with-data-binding-to-object_4}}
+	<telerik:RadListBox x:Name="radListBox1" Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}" />
 {{endregion}}
 
@@ -101,25 +99,25 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 #### __[XAML]  Declaring the ItemTemplate__
 
-{{region radlistbox-populating-with-data-binding-to-object_5}}
+{{region xaml-radlistbox-populating-with-data-binding-to-object_5}}
 	<DataTemplate x:Key="ListBoxCustomTemplate">
-		<Grid Margin="0" Width="300">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition />
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition />
-				<RowDefinition />
-			</Grid.RowDefinitions>
-			<TextBlock FontWeight="Bold" Grid.ColumnSpan="2" Text="{Binding Name}" />
-			<TextBlock Grid.Row="1" Text="City:" />
-			<TextBlock Grid.Row="1" Foreground="Blue" Margin="40,0,0,0"
+	  <Grid Margin="0" Width="300">
+	    <Grid.ColumnDefinitions>
+	      <ColumnDefinition />
+	      <ColumnDefinition />
+	    </Grid.ColumnDefinitions>
+	    <Grid.RowDefinitions>
+	      <RowDefinition />
+	      <RowDefinition />
+	    </Grid.RowDefinitions>
+	    <TextBlock FontWeight="Bold" Grid.ColumnSpan="2" Text="{Binding Name}" />
+	    <TextBlock Grid.Row="1" Text="City:" />
+	    <TextBlock Grid.Row="1" Foreground="Blue" Margin="40,0,0,0"
 	                Text="{Binding City}" />
-			<TextBlock Grid.Row="1" Grid.Column="1" Text="Phone:" />
-			<TextBlock Grid.Row="1" Foreground="Blue" Grid.Column="1" Margin="40,0,0,0"
+	    <TextBlock Grid.Row="1" Grid.Column="1" Text="Phone:" />
+	    <TextBlock Grid.Row="1" Foreground="Blue" Grid.Column="1" Margin="40,0,0,0"
 	                Text="{Binding Phone}" />
-		</Grid>
+	  </Grid>
 	</DataTemplate>
 {{endregion}}
 
@@ -127,8 +125,8 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 #### __[XAML]  Setting the ItemTemplate__
 
-{{region radlistbox-populating-with-data-binding-to-object_6}}
-	<telerik:RadListBox x:Name="radListBox" Width="300" 
+{{region xaml-radlistbox-populating-with-data-binding-to-object_6}}
+	<telerik:RadListBox Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			ItemTemplate="{StaticResource ListBoxCustomTemplate}"/>
 {{endregion}}
@@ -145,8 +143,8 @@ For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s _
 
 #### __[XAML]  Setting the DisplayMemberPath__
 
-{{region radlistbox-populating-with-data-binding-to-object_7}}
-	<telerik:RadListBox x:Name="radListBox" Width="300" 
+{{region xaml-radlistbox-populating-with-data-binding-to-object_7}}
+	<telerik:RadListBox Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			DisplayMemberPath="Name"/>
 {{endregion}}

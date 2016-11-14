@@ -22,6 +22,8 @@ position: 16
 
 * [Change the Label Text of the Search Panel](#change-the-label-text-of-the-search-panel)
 
+* [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
+
 As of __R1 2016 RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
 
@@ -130,7 +132,11 @@ In order to modify the search behavior, you can benefit from the following three
 
 By default, the value of the __TextBlock__ appearing before the __Search TextBox__ in the __SearchPanel__ is "__Full Text Search"__. It can be altered through the __Localization__ mechanism of __RadGridView__. The resource key that needs to be modified is __GridViewSearchPanelTopText__. More information can be found in the [Localization]({%slug gridview-localization2%}) topic.
 
-# See Also
+## Add Search Criteria Programmatically 
+
+__RadGridView's__ search mechanism supports defining a search criteria programmatically. This can be done through the __SearchByText__ Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
+
+## See Also
 
 
 * [Basic Filtering]({%slug gridview-filtering-basic%})

@@ -5,7 +5,7 @@ description: Visual Structure
 slug: radupload-visual-structure
 tags: visual,structure
 published: True
-position: 2
+position: 1
 site_name: Silverlight
 ---
 

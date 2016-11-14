@@ -36,21 +36,21 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-chart-series_0}}
+{{region cs-radchart-styling-and-appearance-styling-chart-series_0}}
 	BarSeriesDefinition barDefinition = new BarSeriesDefinition();
 	barDefinition.Appearance.Fill = new SolidColorBrush( Colors.Orange );
 	this.radChart.DefaultSeriesDefinition = barDefinition;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-chart-series_1}}
+{{region vb-radchart-styling-and-appearance-styling-chart-series_1}}
 	Dim barDefinition As New BarSeriesDefinition()
-	barDefinition.Appearance.Fill = New SolidColorBrush(Colors.Orange )
+	barDefinition.Appearance.Fill = New SolidColorBrush(Colors.Orange)
 	Me.radChart.DefaultSeriesDefinition = barDefinition
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -71,58 +71,51 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_2}}
-	<Style x:Key="SelfDrawingSeriesStyle"
-	       TargetType="telerikCharting:SelfDrawingSeries">
-	</Style>
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_2}}
+	<Style x:Key="SelfDrawingSeriesStyle" TargetType="telerik:SelfDrawingSeries" />
+{{endregion}}
 
 The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyle__. The __BorderLineStyle__ is __obligatory__, as it defines the main chart contour. The __BackgroundStyle must be__ set when your chart represents an area. Here is an example:
 
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_3}}
-	<Style x:Key="SplineAreaStyle"
-	       TargetType="telerikCharting:SelfDrawingSeries">
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_3}}
+	<Style x:Key="SplineAreaStyle" TargetType="telerik:SelfDrawingSeries">
 	    <Setter Property="BorderLineStyle">
 	        <Setter.Value>
 	            <Style TargetType="Shape">
-	                <Setter Property="Stroke"
-	                        Value="Orange" />
-	                <Setter Property="StrokeThickness"
-	                        Value="3" />
+	                <Setter Property="Stroke" Value="Orange" />
+	                <Setter Property="StrokeThickness" Value="3" />
 	            </Style>
 	        </Setter.Value>
 	    </Setter>
 	    <Setter Property="BackgroundStyle">
 	        <Setter.Value>
 	            <Style TargetType="Shape">
-	                <Setter Property="Fill"
-	                        Value="Yellow" />
-	                <Setter Property="Opacity"
-	                        Value="0.5" />
+	                <Setter Property="Fill" Value="Yellow" />
+	                <Setter Property="Opacity" Value="0.5" />
 	            </Style>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-chart-series_4}}
+{{region cs-radchart-styling-and-appearance-styling-chart-series_4}}
 	this.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = this.Resources[ "SplineAreaStyle" ] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-chart-series_5}}
+{{region vb-radchart-styling-and-appearance-styling-chart-series_5}}
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_StylingChartSeries_02.png)
 
@@ -134,26 +127,24 @@ Here is an example:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_6}}
-	<Style x:Key="BarStyle"
-	       TargetType="Shape">
-	    <Setter Property="Fill"
-	            Value="Orange" />
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_6}}
+	<Style x:Key="BarStyle" TargetType="Shape">
+	    <Setter Property="Fill" Value="Orange" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-chart-series_7}}
+{{region cs-radchart-styling-and-appearance-styling-chart-series_7}}
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-chart-series_8}}
+{{region vb-radchart-styling-and-appearance-styling-chart-series_8}}
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_StylingChartSeries_03.png)
 
@@ -178,15 +169,14 @@ The __PaletteBrushes__ is read-only and allows you to specify a set of brushes t
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_9}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       VerticalAlignment="Top">
-	    <telerikChart:RadChart.PaletteBrushes>
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_9}}
+	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
+	    <telerik:RadChart.PaletteBrushes>
 	        <SolidColorBrush Color="Green" />
 	        <SolidColorBrush Color="Orange" />
-	    </telerikChart:RadChart.PaletteBrushes>
-	</telerikChart:RadChart>
-	{{endregion}}
+	    </telerik:RadChart.PaletteBrushes>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -196,23 +186,22 @@ or
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_10}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       VerticalAlignment="Top">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea PaletteBrushesRepeat="False">
-	                    <telerikCharting:ChartArea.PaletteBrushes>
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_10}}
+	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea PaletteBrushesRepeat="False">
+	                    <telerik:ChartArea.PaletteBrushes>
 	                        <SolidColorBrush Color="Green" />
 	                        <SolidColorBrush Color="Orange" />
-	                    </telerikCharting:ChartArea.PaletteBrushes>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+	                    </telerik:ChartArea.PaletteBrushes>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 ![](images/RadChart_StylingChartSeries_04.png)
 
@@ -222,16 +211,16 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_11}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       VerticalAlignment="Top"
-	                       PaletteBrushesRepeat="True">
-	    <telerikChart:RadChart.PaletteBrushes>
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_11}}
+	<telerik:RadChart x:Name="radChart"
+	                  VerticalAlignment="Top"
+	                  PaletteBrushesRepeat="True">
+	    <telerik:RadChart.PaletteBrushes>
 	        <SolidColorBrush Color="Green" />
 	        <SolidColorBrush Color="Orange" />
-	    </telerikChart:RadChart.PaletteBrushes>
-	</telerikChart:RadChart>
-	{{endregion}}
+	    </telerik:RadChart.PaletteBrushes>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -239,24 +228,24 @@ or
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_12}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       VerticalAlignment="Top"
-	                       PaletteBrushesRepeat="True">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea PaletteBrushesRepeat="False">
-	                    <telerikCharting:ChartArea.PaletteBrushes>
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_12}}
+	<telerik:RadChart x:Name="radChart"
+	                  VerticalAlignment="Top"
+	                  PaletteBrushesRepeat="True">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea PaletteBrushesRepeat="False">
+	                    <telerik:ChartArea.PaletteBrushes>
 	                        <SolidColorBrush Color="Green" />
 	                        <SolidColorBrush Color="Orange" />
-	                    </telerikCharting:ChartArea.PaletteBrushes>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+	                    </telerik:ChartArea.PaletteBrushes>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 ![](images/RadChart_StylingChartSeries_05.png)
 
@@ -276,39 +265,37 @@ Here is an example:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-series_13}}
-	<Style
-	    x:Key="MyDoubleLineStyle"
-	    TargetType="telerikCharting:Line">
-	    <Setter Property="Template" >
-	       <Setter.Value>
-	          <ControlTemplate TargetType="telerikCharting:Line">
-	            <Canvas x:Name="PART_MainContainer">
-	              <Line x:Name="PART_LineGeometry"
-	               Fill="Blue"
-	               Stroke="Blue"
-	               StrokeThickness="1"
-	               X1="0"
-	               Y1="{TemplateBinding StartPointY}"
-	               X2="{TemplateBinding EndPointX}"
-	               Y2="{TemplateBinding EndPointY}"
-	               Style="{TemplateBinding ItemStyle}" />
-	             <telerikCharting:PointMark x:Name="PART_PointMark"
-	                   Canvas.Top="{TemplateBinding StartPointY}"
-	                   PointMarkCanvasLeft="{TemplateBinding PointMarkCanvasLeft}"
-	                   PointMarkCanvasTop="{TemplateBinding PointMarkCanvasTop}"
-	                   Visibility="{TemplateBinding PointMarkVisibility}"
-	                   ShapeStyle="{TemplateBinding PointMarkShapeStyle}" 
-	                   Style="{TemplateBinding PointMarkItemStyle}" />
-	              <Canvas.RenderTransform>
-	                 <TranslateTransform Y="-8" X="1" />
-	              </Canvas.RenderTransform>
-	           </Canvas>
-	       </ControlTemplate>
-	    </Setter.Value>
-	  </Setter>
+{{region xaml-radchart-styling-and-appearance-styling-chart-series_13}}
+	<Style x:Key="MyDoubleLineStyle" TargetType="telerik:Line">
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:Line">
+	                <Canvas x:Name="PART_MainContainer">
+	                    <Canvas.RenderTransform>
+	                        <TranslateTransform X="1" Y="-8" />
+	                    </Canvas.RenderTransform>
+	                    <Line x:Name="PART_LineGeometry"
+	                          Fill="Blue"
+	                          Stroke="Blue"
+	                          StrokeThickness="1"
+	                          Style="{TemplateBinding ItemStyle}"
+	                          X1="0"
+	                          X2="{TemplateBinding EndPointX}"
+	                          Y1="{TemplateBinding StartPointY}"
+	                          Y2="{TemplateBinding EndPointY}" />
+	                    <telerik:PointMark x:Name="PART_PointMark"
+	                                       Canvas.Top="{TemplateBinding StartPointY}"
+	                                       PointMarkCanvasLeft="{TemplateBinding PointMarkCanvasLeft}"
+	                                       PointMarkCanvasTop="{TemplateBinding PointMarkCanvasTop}"
+	                                       ShapeStyle="{TemplateBinding PointMarkShapeStyle}"
+	                                       Style="{TemplateBinding PointMarkItemStyle}"
+	                                       Visibility="{TemplateBinding PointMarkVisibility}" />
+	                </Canvas>
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -318,25 +305,25 @@ Here is an example:
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-chart-series_14}}
+{{region cs-radchart-styling-and-appearance-styling-chart-series_14}}
 	RadChart1.DefaultSeriesDefinition = line;
 	line.Appearance.Stroke = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.Fill = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.StrokeThickness = 1;
 	line.ItemStyle = this.Resources["MyDoubleLineStyle"] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-chart-series_15}}
+{{region vb-radchart-styling-and-appearance-styling-chart-series_15}}
 	RadChart1.DefaultSeriesDefinition = line
 	line.Appearance.Stroke = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.Fill = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.StrokeThickness = 1
 	line.ItemStyle = TryCast(Me.Resources("MyDoubleLineStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
     
 ![](images/RadChart_StylingChartSeries_06.PNG)

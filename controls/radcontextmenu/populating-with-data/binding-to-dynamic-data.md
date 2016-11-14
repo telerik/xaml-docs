@@ -19,7 +19,7 @@ For this tutorial the following sample class will be used:
 
 #### __C#__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_0}}
+{{region cs-radcontextmenu-populating-with-data-binding-to-dynamic-data_0}}
 	public class MenuItem
 	{
 	    public MenuItem()
@@ -56,16 +56,16 @@ For this tutorial the following sample class will be used:
 
 #### __VB.NET__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_1}}
+{{region vb-radcontextmenu-populating-with-data-binding-to-dynamic-data_1}}
 	Public Class MenuItem
-		Public Sub New()
-			Me.SubItems = New ObservableCollection(Of MenuItem)()
-		End Sub
-		Public Property Text() As String
-		Public Property IconUrl() As Uri
-		Public Property IsSeparator() As Boolean
-		Public Property Command() As ICommand
-		Public Property SubItems() As ObservableCollection(Of MenuItem)
+	    Public Sub New()
+	        Me.SubItems = New ObservableCollection(Of MenuItem)()
+	    End Sub
+	    Public Property Text() As String
+	    Public Property IconUrl() As Uri
+	    Public Property IsSeparator() As Boolean
+	    Public Property Command() As ICommand
+	    Public Property SubItems() As ObservableCollection(Of MenuItem)
 	End Class
 {{endregion}}
 
@@ -85,7 +85,7 @@ Next, a sample method is needed, which creates the sample data. Here is one:
 
 #### __C#__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_2}}
+{{region cs-radcontextmenu-populating-with-data-binding-to-dynamic-data_2}}
 	public ObservableCollection<MenuItem> GetMenuItems()
 	{
 	    ObservableCollection<MenuItem> items = new ObservableCollection<MenuItem>();
@@ -124,21 +124,21 @@ Next, a sample method is needed, which creates the sample data. Here is one:
 
 #### __VB.NET__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_3}}
+{{region vb-radcontextmenu-populating-with-data-binding-to-dynamic-data_3}}
 	Public Function GetMenuItems() As ObservableCollection(Of MenuItem)
-		Dim items As New ObservableCollection(Of MenuItem)()
-		Dim copyItem As New MenuItem() With {.IconUrl = New Uri("Images/copy.png", UriKind.Relative), .Text = "Copy"}
-		items.Add(copyItem)
-		Dim pasteItem As New MenuItem() With {.IconUrl = New Uri("Images/paste.png", UriKind.Relative), .Text = "Paste"}
-		items.Add(pasteItem)
-		Dim cutItem As New MenuItem() With {.IconUrl = New Uri("Images/cut.png", UriKind.Relative), .Text = "Cut"}
-		items.Add(cutItem)
-		Dim separatorItem As New MenuItem() With {.IsSeparator = True}
-		items.Add(separatorItem)
-		Dim selectAllItem As New MenuItem() With {.Text = "Select All"}
-		items.Add(selectAllItem)
+	    Dim items As New ObservableCollection(Of MenuItem)()
+	    Dim copyItem As New MenuItem() With {.IconUrl = New Uri("Images/copy.png", UriKind.Relative), .Text = "Copy"}
+	    items.Add(copyItem)
+	    Dim pasteItem As New MenuItem() With {.IconUrl = New Uri("Images/paste.png", UriKind.Relative), .Text = "Paste"}
+	    items.Add(pasteItem)
+	    Dim cutItem As New MenuItem() With {.IconUrl = New Uri("Images/cut.png", UriKind.Relative), .Text = "Cut"}
+	    items.Add(cutItem)
+	    Dim separatorItem As New MenuItem() With {.IsSeparator = True}
+	    items.Add(separatorItem)
+	    Dim selectAllItem As New MenuItem() With {.Text = "Select All"}
+	    items.Add(selectAllItem)
 	
-		Return items
+	    Return items
 	End Function
 {{endregion}}
 
@@ -146,8 +146,8 @@ Finally, pass the generated collection to the __DataContext__.
 
 #### __C#__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_4}}
-	public Sample()
+{{region cs-radcontextmenu-populating-with-data-binding-to-dynamic-data_4}}
+	public Default_Cs()
 	{
 	    InitializeComponent();
 	    this.radContextMenu.ItemsSource = this.GetMenuItems();
@@ -156,10 +156,10 @@ Finally, pass the generated collection to the __DataContext__.
 
 #### __VB.NET__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_5}}
+{{region vb-radcontextmenu-populating-with-data-binding-to-dynamic-data_5}}
 	Public Sub New()
-	 InitializeComponent()
-	 Me.radContextMenu.ItemsSource = Me.GetMenuItems()
+	    InitializeComponent()
+	    Me.radContextMenu.ItemsSource = Me.GetMenuItems()
 	End Sub
 {{endregion}}
 
@@ -169,7 +169,7 @@ In order to visualize the data in the __RadContextMenu__ control you have to use
 
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_6}}
+{{region xaml-radcontextmenu-populating-with-data-binding-to-dynamic-data_6}}
 	<Style x:Key="MenuItemContainer" TargetType="telerik:RadMenuItem">
 	    <Setter Property="Icon" Value="{Binding IconUrl}"/>
 	    <Setter Property="IconTemplate">
@@ -192,12 +192,12 @@ In order to use the created style with __RadContextMenu__ control, you have to s
 
 #### __XAML__
 
-{{region radcontextmenu-populating-with-data-binding-to-dynamic-data_8}}
+{{region xaml-radcontextmenu-populating-with-data-binding-to-dynamic-data_8}}
 	<TextBox Width="200" VerticalAlignment="Center" ContextMenu="{x:Null}" >
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="radContextMenu"
-	                                ItemsSource="{Binding}"
-	                                ItemContainerStyle="{StaticResource MenuItemContainer}" />
+	                        ItemsSource="{Binding}"
+	                        ItemContainerStyle="{StaticResource MenuItemContainer}" />
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
 {{endregion}}

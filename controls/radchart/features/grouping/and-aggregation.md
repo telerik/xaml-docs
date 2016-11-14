@@ -87,71 +87,71 @@ The following example, considering the sample data above, demonstrates how to us
 
 #### __XAML__
 
-{{region radchart-features-grouping-and-aggregation_0}}
-	xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	{{endregion}}
+{{region xaml-radchart-features-grouping-and-aggregation_0}}
+	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-features-grouping-and-aggregation_1}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping>
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:BarSeriesDefinition />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.GroupingSettings>
-	                <telerikCharting:GroupingSettings ShouldCreateSeriesForLastGroup="True">
-	                    <telerikCharting:GroupingSettings.GroupDescriptors>
-	                        <telerikCharting:ChartGroupDescriptor Member="Year"/>
-	                        <telerikCharting:ChartGroupDescriptor Member="Region"/>
-	                    </telerikCharting:GroupingSettings.GroupDescriptors>
-	                </telerikCharting:GroupingSettings>
-	            </telerikCharting:SeriesMapping.GroupingSettings>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Value" DataPointMember="YValue" />
-	                <telerikCharting:ItemMapping FieldName="Description" DataPointMember="XCategory" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-grouping-and-aggregation_1}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:BarSeriesDefinition />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.GroupingSettings>
+	                <telerik:GroupingSettings ShouldCreateSeriesForLastGroup="True">
+	                    <telerik:GroupingSettings.GroupDescriptors>
+	                        <telerik:ChartGroupDescriptor Member="Year" />
+	                        <telerik:ChartGroupDescriptor Member="Region" />
+	                    </telerik:GroupingSettings.GroupDescriptors>
+	                </telerik:GroupingSettings>
+	            </telerik:SeriesMapping.GroupingSettings>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Value" />
+	                <telerik:ItemMapping DataPointMember="XCategory" FieldName="Description" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-grouping-and-aggregation_2}}
+{{region cs-radchart-features-grouping-and-aggregation_2}}
 	RadChart radChart = new RadChart();
-	....
+	//....
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new BarSeriesDefinition();
 	seriesMapping.GroupingSettings.GroupDescriptors.Add( new ChartGroupDescriptor( "Year" ) );
 	seriesMapping.GroupingSettings.GroupDescriptors.Add( new ChartGroupDescriptor( "Region" ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Description", DataPointMember.XCategory ) );
-	....
+	//....
 	radChart.SeriesMappings.Add( seriesMapping );
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-grouping-and-aggregation_3}}
+{{region vb-radchart-features-grouping-and-aggregation_3}}
 	Dim radChart As New RadChart()
-	....
+	'....'
 	Dim seriesMapping As New SeriesMapping()
-	seriesMapping.SeriesDefinition = new BarSeriesDefinition()
-	seriesMapping.GroupingSettings.GroupDescriptors.Add( New ChartGroupDescriptor( "Year" ) )
-	seriesMapping.GroupingSettings.GroupDescriptors.Add( New ChartGroupDescriptor( "Region" ) )
-	seriesMapping.ItemMappings.Add( New ItemMapping( "Value", DataPointMember.YValue ) )
-	seriesMapping.ItemMappings.Add( New ItemMapping( "Description", DataPointMember.XCategory ) )
-	....
-	radChart.SeriesMappings.Add( seriesMapping )
-	{{endregion}}
+	seriesMapping.SeriesDefinition = New BarSeriesDefinition()
+	seriesMapping.GroupingSettings.GroupDescriptors.Add(New ChartGroupDescriptor("Year"))
+	seriesMapping.GroupingSettings.GroupDescriptors.Add(New ChartGroupDescriptor("Region"))
+	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
+	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.XCategory))
+	'....'
+	radChart.SeriesMappings.Add(seriesMapping)
+{{endregion}}
 
 
 
@@ -180,66 +180,65 @@ Based on the example above, imagine that you want to create a chart that shows t
 
 #### __XAML__
 
-{{region radchart-features-grouping-and-aggregation_4}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping>
-	            <telerikCharting:SeriesMapping.SeriesDefinition>
-	                <telerikCharting:HorizontalBarSeriesDefinition />
-	            </telerikCharting:SeriesMapping.SeriesDefinition>
-	            <telerikCharting:SeriesMapping.GroupingSettings>
-	                <telerikCharting:GroupingSettings>
-	                    <telerikCharting:GroupingSettings.GroupDescriptors>
-	                        <telerikCharting:ChartGroupDescriptor Member="Year" />
-	                        <telerikCharting:ChartGroupDescriptor Member="Region" />
-	                    </telerikCharting:GroupingSettings.GroupDescriptors>
-	                </telerikCharting:GroupingSettings>
-	            </telerikCharting:SeriesMapping.GroupingSettings>
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="Region"
-	                                             DataPointMember="XCategory" />
-	                <telerikCharting:ItemMapping FieldName="Value"
-	                                             DataPointMember="YValue"
-	                                             AggregateFunction="Sum" />
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-grouping-and-aggregation_4}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:HorizontalBarSeriesDefinition />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.GroupingSettings>
+	                <telerik:GroupingSettings>
+	                    <telerik:GroupingSettings.GroupDescriptors>
+	                        <telerik:ChartGroupDescriptor Member="Year" />
+	                        <telerik:ChartGroupDescriptor Member="Region" />
+	                    </telerik:GroupingSettings.GroupDescriptors>
+	                </telerik:GroupingSettings>
+	            </telerik:SeriesMapping.GroupingSettings>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="XCategory" FieldName="Region" />
+	                <telerik:ItemMapping AggregateFunction="Sum"
+	                                     DataPointMember="YValue"
+	                                     FieldName="Value" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-grouping-and-aggregation_5}}
+{{region cs-radchart-features-grouping-and-aggregation_5}}
 	RadChart radChart = new RadChart();
-	....
+	//....
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new HorizontalBarSeriesDefinition();
 	seriesMapping.GroupingSettings.GroupDescriptors.Add( new ChartGroupDescriptor( "Year" ) );
 	seriesMapping.GroupingSettings.GroupDescriptors.Add( new ChartGroupDescriptor( "Region" ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue, ChartAggregateFunction.Sum ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Region", DataPointMember.XCategory ) );
-	....
+	//....
 	radChart.SeriesMappings.Add( seriesMapping );
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-grouping-and-aggregation_6}}
+{{region vb-radchart-features-grouping-and-aggregation_6}}
 	Dim radChart As New RadChart()
-	....
+	'....'
 	Dim seriesMapping As New SeriesMapping()
-	seriesMapping.SeriesDefinition = new HorizontalBarSeriesDefinition()
-	seriesMapping.GroupingSettings.GroupDescriptors.Add( New ChartGroupDescriptor( "Year" ) )
-	seriesMapping.GroupingSettings.GroupDescriptors.Add( New ChartGroupDescriptor( "Region" ) )
-	seriesMapping.ItemMappings.Add( New ItemMapping( "Value", DataPointMember.YValue, ChartAggregateFunction.Sum ) )
-	seriesMapping.ItemMappings.Add( New ItemMapping( "Region", DataPointMember.XCategory ) )
-	....
-	radChart.SeriesMappings.Add( seriesMapping )
-	{{endregion}}
+	seriesMapping.SeriesDefinition = New HorizontalBarSeriesDefinition()
+	seriesMapping.GroupingSettings.GroupDescriptors.Add(New ChartGroupDescriptor("Year"))
+	seriesMapping.GroupingSettings.GroupDescriptors.Add(New ChartGroupDescriptor("Region"))
+	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue, ChartAggregateFunction.Sum))
+	seriesMapping.ItemMappings.Add(New ItemMapping("Region", DataPointMember.XCategory))
+	'....'
+	radChart.SeriesMappings.Add(seriesMapping)
+{{endregion}}
 
 
 

@@ -72,14 +72,14 @@ Finally remove the __dummy__ instance of the __RadWindow__ form the XAML and set
 
 #### __C#__
 
-{{region radwindow-styles-and-templates-styling-the-radwindow_0}}
+{{region cs-radwindow-styles-and-templates-styling-the-radwindow_0}}
 	RadWindow radWindow = new RadWindow();
-	radWindow.Style = this.Resources[ "RadWindowStyle" ] as Style;
+	radWindow.Style = this.Resources["RadWindowStyle"] as Style;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-styles-and-templates-styling-the-radwindow_1}}
+{{region vb-radwindow-styles-and-templates-styling-the-radwindow_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Style = TryCast(Me.Resources("RadWindowStyle"), Style)
 {{endregion}}

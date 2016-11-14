@@ -5,7 +5,7 @@ description: Hide Row and Column Headers and Gridlines
 slug: radspreadsheet-howto-hide-row-column-headers-and-gridlines
 tags: hide,row,and,column,headers,and,gridlines
 published: True
-position: 2
+position: 3
 ---
 
 # Hide Row and Column Headers and Gridlines

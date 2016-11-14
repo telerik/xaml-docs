@@ -364,6 +364,6 @@ Here is the final result:
 ![](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
 
 # See Also
- * [Templating - Overview](F06A3B44-35DB-4A81-A779-E31690DF9B71)[Templating - Templated Parts](29670722-F6CA-4827-9358-965B276DD358)
+ * [Templating - Overview]({%slug radtreeview-styles-and-templates-tesmplates-structure%})
  * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

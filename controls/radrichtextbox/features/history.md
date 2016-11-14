@@ -5,7 +5,6 @@ description: History
 slug: radrichtextbox-features-history
 tags: history
 published: True
-position: 3
 ---
 
 # History

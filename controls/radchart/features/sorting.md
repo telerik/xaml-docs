@@ -36,44 +36,43 @@ Here is an example of implementing sorting.
 
 #### __XAML__
 
-{{region radchart-features-sorting_0}}
-	xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	{{endregion}}
+{{region xaml-radchart-features-sorting_0}}
+	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-features-sorting_1}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.SortDescriptors>
-	        <telerikCharting:ChartSortDescriptor Member="Quantity"
-	                                             SortDirection="Ascending" />
-	    </telerikChart:RadChart.SortDescriptors>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-sorting_1}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SortDescriptors>
+	        <telerik:ChartSortDescriptor Member="Quantity" SortDirection="Ascending" />
+	    </telerik:RadChart.SortDescriptors>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-sorting_2}}
+{{region cs-radchart-features-sorting_2}}
 	ChartSortDescriptor descriptor = new ChartSortDescriptor();
 	descriptor.Member = "Title";
 	descriptor.SortDirection = ListSortDirection.Ascending;
-	this.radChart.SortDescriptors.Add( descriptor ) );
-	{{endregion}}
+	this.radChart.SortDescriptors.Add(descriptor);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-sorting_3}}
+{{region vb-radchart-features-sorting_3}}
 	Dim descriptor As New ChartSortDescriptor()
 	descriptor.Member = "Title"
 	descriptor.SortDirection = ListSortDirection.Ascending
-	Me.radChart.SortDescriptors.Add( descriptor ) )
-	{{endregion}}
+	Me.radChart.SortDescriptors.Add(descriptor)
+{{endregion}}
 
     
 Here is a snapshot of the result.

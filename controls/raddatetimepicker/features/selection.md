@@ -26,21 +26,21 @@ The following properties hold the information about the selection in the __RadDa
 * 
 #### __XAML__
 
-{{region raddatetimepicker-features-selection_0}}
+{{region xaml-raddatetimepicker-features-selection_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker"
-	                           SelectedDate="11/15/2010"
-	                           SelectedTime="10:00"/>
+	   SelectedDate="11/15/2010"
+	   SelectedTime="10:00"/>
 {{endregion}}
 
 #### __C#__
 
-{{region raddatetimepicker-features-selection_1}}
-	this.radDateTimePicker.SelectedValue = new DateTime( 2010, 1, 5, 10, 0, 0 );
+{{region cs-raddatetimepicker-features-selection_1}}
+	this.radDateTimePicker.SelectedValue = new DateTime(2010, 1, 5, 10, 0, 0);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddatetimepicker-features-selection_2}}
+{{region vb-raddatetimepicker-features-selection_2}}
 	Me.radDateTimePicker.SelectedValue = New DateTime(2010, 1, 5, 10, 0, 0)
 {{endregion}}
 
@@ -54,10 +54,10 @@ In the __RadDateTimePicker's__ calendar you can restrict the selectable items by
 
 #### __XAML__
 
-{{region raddatetimepicker-features-selection_3}}
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
-	                           SelectableDateStart="8/10/2010"
-	                           SelectableDateEnd="10/10/2010"/>
+{{region xaml-raddatetimepicker-features-selection_3}}
+	<telerik:RadDateTimePicker x:Name="radDateTimePicker1" 
+	   SelectableDateStart="8/10/2010"
+	   SelectableDateEnd="10/10/2010"/>
 {{endregion}}
 
 ![](images/dateTimePicker_features_selection_010.png)
@@ -76,11 +76,11 @@ Telerik introduced the __IsInputRestrictedToSelectableDates__ boolean property i
 
 #### __XAML__
 
-{{region raddatetimepicker-features-selection_4}}
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
-	                           SelectableDateStart="8/10/2015"
-	                           SelectableDateEnd="10/11/2015"
-							   IsInputRestrictedToSelectableDates="True"/>
+{{region xaml-raddatetimepicker-features-selection_4}}
+	<telerik:RadDateTimePicker x:Name="radDateTimePicker2" 
+	   SelectableDateStart="8/10/2015"
+	   SelectableDateEnd="10/11/2015"
+	   IsInputRestrictedToSelectableDates="True"/>
 {{endregion}}
 
 # See Also

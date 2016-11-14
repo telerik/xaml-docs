@@ -28,7 +28,37 @@ __RadGridView__ exposes several useful properties and events, which can help you
 * __Delete existing row__ - users can delete (if supported by the grid __ItemsSource__) selected items using __DELETE__ key. This feature can be controlled with __RadGridView__'s __CanUserDeleteRows__ property.
 
 >In case you require to utilize different commands corresponding to the keyboard interaction, you may take advantage of the IKeyboardCommandProvider Interface and implement your custom logic. Please check  [this article]({%slug gridview-commands-keyboardcommandprovider%}) for a further information.
-        
+
+In the following table you can find some of the actions and the respective combination that invokes them:
+
+ Hotkey | Command | Action
+--- | --- | ---
+Enter | RadGridViewCommands.CommitEdit | Commit the changes(edit mode) and select next row 
+Enter | RadGridViewCommands.CommitEdit | Select next row
+F2 | RadGridViewCommands.BeginEdit | Put current cell in edit mode
+Esc | RadGridViewCommands.CancelCellEdit | Cancel the editing of the current cell
+Insert | RadGridViewCommands.BeginInsert | Insert new row
+Delete | RadGridViewCommands.Delete | Delete selected row
+Left key | RadGridViewCommands.MoveLeft | Focus next cell on the left
+Right Key | RadGridViewCommands.MoveRight | Focus next cell on the right
+Down Key | RadGridViewCommands.MoveDown | Focus next cell below
+Up Key | RadGridViewCommands.MoveUp | Focus next cell above
+Page Up | RadGridViewCommands.MoveTop  | Focus first cell 
+Page Down | RadGridViewCommands.MoveBottom | Focuses first cell of last row 
+Home | RadGridViewCommands.MoveHome | Focus first cell of selected row
+End | RadGridViewCommands.MoveEnd | Focus last cell of selected row
+Tab | RadGridViewCommands.MoveNext | Focuses next cell
+Tab + Shift | RadGridViewCommands.MovePrevious | Focuses previous cell
+C + Shift | RadGridViewCommands.Copy | Copy text
+V + Shift | RadGridViewCommands.Paste | Paste text
+F + Ctrl | RadGridViewCommands.Search | Show Search Panel
+Space | RadGridViewCommands.CollapseHierarchyItem | Collapse a particular item in the hierarchy
+Space | RadGridViewCommands.ExpandHierarchyItem | Expand a particular item in the hierarchy
+
+>important The actions might vary depending on the mode of RadGridView and different property combinations. 
+
+>You can find more information regarding __RadGridView`s commands__ in the [Commands Overview]({%slug gridview-commands-overview%}) article.
+		 
 
 ## Properties
 
@@ -50,9 +80,9 @@ Here is a list of the common keyboard events exposed by the __RadGridView__, __G
 
 * __KeyDown__ - occurs when the user presses a keyboard key. The type of the passed event arguments is __KeyEventArgs__.
 
-In the example below you can see how to attach to __KeyDown__ and __KeyUp__ events from your XAML.
+In __Example 1__ you can see how to subscribe to __KeyDown__ and __KeyUp__ events from XAML.
 
-#### __XAML__
+#### __[XAML]Example 1: Subscribe to KeyDown and KeyUp events__
 
 {{region xaml-gridview-overview-keyboard-support_0}}
 	<telerik:RadGridView x:Name="radGridView" KeyDown="radGridView_KeyDown" KeyUp="radGridView_KeyUp"/>
@@ -62,7 +92,7 @@ In the example below you can see how to attach to __KeyDown__ and __KeyUp__ even
 
 The implementation of both event handlers __radGridView_KeyDown__ and __radGridView_KeyUp__ is located in the code-behind file (C# or VB.NET) and looks like this:
 
-#### __C#__
+#### __[C#]Example 2: Implementation of KeyUp and KeyDown events__
 
 {{region cs-gridview-overview-keyboard-support_1}}
 	private void radGridView_KeyDown(object sender, KeyEventArgs e)
@@ -76,7 +106,7 @@ The implementation of both event handlers __radGridView_KeyDown__ and __radGridV
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET]Example 2: Implementation of KeyUp and KeyDown events__
 
 {{region vb-gridview-overview-keyboard-support_2}}
 	Private Sub radGridView_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)

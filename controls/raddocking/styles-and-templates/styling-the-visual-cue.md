@@ -56,9 +56,9 @@ After finishing with your modifications, remove the dummy control and set the st
 
 #### __XAML__
 
-{{region raddocking-styling-the-visual-cue_0}}
+{{region xaml-raddocking-styling-the-visual-cue_0}}
 	<telerik:RadDocking x:Name="radDocking"
-	                         VisualCueStyle="{StaticResource VisualCueStyle}">
+	                 VisualCueStyle="{StaticResource VisualCueStyle}">
 	    ...
 	</telerik:RadDocking>
 {{endregion}}

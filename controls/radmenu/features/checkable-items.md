@@ -20,8 +20,9 @@ Here is an example of a definition of a checkable __RadMenuItem__:
 
 #### __XAML__
 
-{{region radmenu-features-checkable-items_0}}
-	<telerik:RadMenuItem Header="Status Bar" IsCheckable="True" />
+{{region xaml-radmenu-features-checkable-items_0}}
+	<telerik:RadMenuItem Header="Status Bar" 
+	                     IsCheckable="True" />
 {{endregion}}
 
 Upon clicking on the item it will get checked and the tick will appear as an icon for the item.

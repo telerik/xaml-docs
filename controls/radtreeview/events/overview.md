@@ -23,16 +23,6 @@ __RadTreeViewItem__ exposes the following events:
 * __Click__ – raised on __MouseLeftButtonUp__ when the item is clicked with Mouse left button.
 * __DoubleClick__ – raised on __MouseLeftButtonUp__ when the item is double clicked with Mouse left button. The time slot between the two clicks must be less than or equal to 300ms to register these clicks as a double click.
 
-## Click Events sequence. 
-
-Currently a successful __RadTreeViewItem__ double click fires the following events:
-
-* __ItemClick__ event of the __RadTreeView__
-* __DoubleClick__ event of the __RadTreeViewItem__
-* __ItemDoubleClick__ event of the __RadTreeView__
-* __Click__ event of the __RadTreeViewItem__
-* __ItemClick__ event of the __RadTreeView__
-
 ## Edit Events
 
 __RadTreeView__ exposes the following events regarding the data manipulation:
@@ -173,7 +163,7 @@ __RadTreeView__ exposes the following events regarding the checking and unchecki
 
 >The __ItemPrepared__ event is a very important event. It is used to perform binding of __RadTreeViewItem__ properties to the data objects. For more information, take a look at the [Working with ItemPrepared Event]({%slug radtreeview-events-working-with-item-prepared-event%}) topic.
 
-# See Also
+## See Also
  * [Overview]({%slug radtreeview-overview2%})
  * [Visual Structure]({%slug radtreeview-visual-structure%})
  * [Populating with Data]({%slug radtreeview-populating-with-data-overview%})

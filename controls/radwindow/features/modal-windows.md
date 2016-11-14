@@ -16,14 +16,14 @@ In the first case, the UI behind the __RadWindow__ is still active. To open it a
 
 #### __C#__
 
-{{region radwindow-features-modal-windows_0}}
-	RadWindow = new RadWindow();
+{{region cs-radwindow-features-modal-windows_0}}
+	RadWindow radWindow = new RadWindow();
 	radWindow.Show();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-modal-windows_1}}
+{{region vb-radwindow-features-modal-windows_1}}
 	Dim radWindow As New RadWindow()
 	radWindow.Show()
 {{endregion}}
@@ -32,14 +32,14 @@ In the second case the UI behind the __RadWindow__ gets inactive and cannot be u
 
 #### __C#__
 
-{{region radwindow-features-modal-windows_2}}
+{{region cs-radwindow-features-modal-windows_2}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.ShowDialog();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-modal-windows_3}}
+{{region vb-radwindow-features-modal-windows_3}}
 	Dim radWindow As New RadWindow()
 	radWindow.ShowDialog()
 {{endregion}}

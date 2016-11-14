@@ -24,10 +24,9 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_0}}
-	<telerikChart:RadChart x:Name="radChart" Margin="8">            
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-populating-with-data-binding-to-adonet-service_0}}
+	<telerik:RadChart x:Name="radChart" Margin="8" />
+{{endregion}}
 
 
 
@@ -43,17 +42,17 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 #### __XAML__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_1}}
-	<telerikChart:RadChart x:Name="radChart" Margin="8">            
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping LegendLabel="Products UnitPrice">
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="UnitPrice" DataPointMember="YValue"/>
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-populating-with-data-binding-to-adonet-service_1}}
+	<telerik:RadChart x:Name="radChart" Margin="8">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping LegendLabel="Products UnitPrice">
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping FieldName="UnitPrice" DataPointMember="YValue"/>
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -61,7 +60,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_2}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_2}}
 	public class ProductDetail
 	    {
 	        public decimal? UnitPrice { get; set; }
@@ -71,7 +70,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 	            this.UnitPrice = unitPrice;
 	        }
 	    }
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -79,14 +78,14 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_3}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_3}}
 	Public Class ProductDetail
-	Public Property UnitPrice() As Decimal?
-	Public Sub New(ByVal unitPrice? As Decimal)
-	Me.UnitPrice = unitPrice
-	End Sub
+	    Public Property UnitPrice() As Decimal?
+	    Public Sub New(ByVal unitPrice? As Decimal)
+	        Me.UnitPrice = unitPrice
+	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -100,33 +99,33 @@ Add a reference to your ADO.NET Data Service.
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_4}}
-	dbContext = new DataServiceContext  ( new Uri( "SampleAdoNetDataService.svc", UriKind.Relative ) );
-	{{endregion}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_4}}
+	dbContext = new DataServiceContext(new Uri("SampleAdoNetDataService.svc", UriKind.Relative));
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_5}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_5}}
 	Dim dbContext As New DataServiceContext(New Uri("SampleAdoNetDataService.svc", UriKind.Relative))
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_6}}
-	NorthwindEntities dbContext = new NorthwindEntities( new Uri( "Enter your service address here") );
-	{{endregion}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_6}}
+	NorthwindEntities dbContext = new NorthwindEntities(new Uri("Enter your service address here"));
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_7}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_7}}
 	Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -136,62 +135,63 @@ Add the following code which will make the initial load of the objects.
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_8}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_8}}
 	private void BeginRequest()
 	{
 	    DataServiceQuery<Products> query = dbContext.CreateQuery<Products>( "Products" );
-	    query.BeginExecute( RequestCompleted, query );
+	    query.BeginExecute(ProductsRequestCompleted, query);
 	}
 	
 	private void ProductsRequestCompleted(IAsyncResult asyncResult)
 	  {
-	    DataServiceQuery<Product> query = asyncResult.AsyncState as DataServiceQuery<Product>;
+	    DataServiceQuery<Products> query = asyncResult.AsyncState as DataServiceQuery<Products>;
 	    products = query.EndExecute(asyncResult).ToList();
 	    List<ProductDetail> result = new List<ProductDetail>();
-	  foreach (Product p in products.Take(10))
+	  foreach (Products p in products.Take(10))
 	   {
 	    result.Add(new ProductDetail(p.UnitPrice));
 	   }
 	   RadChart1.ItemsSource = result;
 	 }
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_9}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_9}}
 	Private Sub BeginRequest()
 	    Dim query As DataServiceQuery(Of Products) = dbContext.CreateQuery(Of Products)("Products")
-	    query.BeginExecute(RequestCompleted, query)
+	    query.BeginExecute(AddressOf ProductsRequestCompleted, query)
 	End Sub
+	
 	Private Sub ProductsRequestCompleted(ByVal asyncResult As IAsyncResult)
-	    Dim query As DataServiceQuery(Of Product) = TryCast(asyncResult.AsyncState, DataServiceQuery(Of Product))
-	    products = query.EndExecute(asyncResult).ToList()
+	    Dim query As DataServiceQuery(Of Products) = TryCast(asyncResult.AsyncState, DataServiceQuery(Of Products))
+	    Products = query.EndExecute(asyncResult)
 	    Dim result As New List(Of ProductDetail)()
 	
-	   For Each p As Product In products.Take(10)
-	    result.Add(New ProductDetail(p.UnitPrice))
-	      Next p
+	    For Each p As Products In Products.Take(10)
+	        result.Add(New ProductDetail(p.UnitPrice))
+	    Next p
 	    RadChart1.ItemsSource = result
-	  End Sub
-	{{endregion}}
+	End Sub
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_10}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_10}}
 	this.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList();
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_11}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_11}}
 	Me.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList()
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -207,20 +207,20 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_12}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_12}}
 	public class NorthwindDataSource
 	{
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_13}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_13}}
 	Public Class NorthwindDataSource
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -232,7 +232,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_14}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_14}}
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
@@ -247,13 +247,13 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_15}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_15}}
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
@@ -262,7 +262,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	        Me.Products = New ObservableCollection(Of Products)()
 	    End Sub
 	
-	Private _Products As ObservableCollection(Of Products)
+	    Private _Products As ObservableCollection(Of Products)
 	    Public Property Products() As ObservableCollection(Of Products)
 	        Get
 	            Return _Products
@@ -272,7 +272,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -280,59 +280,59 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_16}}
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_16}}
 	var query = ( from p in northwindEntity.Products
 	              select p ).Take( 10 );
 	DataServiceQuery<Products> products = ( DataServiceQuery<Products> )query;
-	products.BeginExecute(
-	   ( IAsyncResult result ) => EntitiesLoaded<Products>( result, this.Products ), products );
+	products.BeginExecute((IAsyncResult result) => EntitiesLoaded<Products>(result, this.Products ), products );
+	         
 	foreach ( Products p in query.ToList() )
 	{
 	    this.Products.Add( p );
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_17}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_17}}
 	Dim query = (From p In northwindEntity.Products _
 	    Select p).Take(10)
 	Dim products As DataServiceQuery(Of Products) = DirectCast(query, DataServiceQuery(Of Products))
-	products.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), products)
+	products.BeginExecute(Sub(result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), products)
 	For Each p As Products In query.ToList()
 	    Me.Products.Add(p)
 	Next
-	{{endregion}}
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}And here is the code for the __EntitiesLoaded__ method: {% endif %}
 
 #### __C#__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_18}}
-	private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
+{{region cs-radchart-populating-with-data-binding-to-adonet-service_18}}
+	private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities)
 	{
 	    DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
-	    foreach ( T entity in query.EndExecute( result ) )
+	    foreach (T entity in query.EndExecute(result))
 	    {
-	        entities.Add( entity );
+	        entities.Add(entity);
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_19}}
+{{region vb-radchart-populating-with-data-binding-to-adonet-service_19}}
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
 	    For Each entity As T In query.EndExecute(result)
 	        entities.Add(entity)
 	    Next
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -340,29 +340,29 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __XAML__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_20}}
+{{region xaml-radchart-populating-with-data-binding-to-adonet-service_20}}
 	<UserControl.Resources>
 	    <example:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
-	{{endregion}}
+{{endregion}}
 
 
 *  Update your chart declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
-{{region radchart-populating-with-data-binding-to-adonet-service_21}}
-	<telerikChart:RadChart x:Name="radChart" Margin="8" 
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}">
-	    <telerikChart:RadChart.SeriesMappings>
-	        <telerikCharting:SeriesMapping LegendLabel="Products UnitPrice">
-	            <telerikCharting:SeriesMapping.ItemMappings>
-	                <telerikCharting:ItemMapping FieldName="UnitPrice" DataPointMember="YValue"/>
-	            </telerikCharting:SeriesMapping.ItemMappings>
-	        </telerikCharting:SeriesMapping>
-	    </telerikChart:RadChart.SeriesMappings>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-populating-with-data-binding-to-adonet-service_21}}
+	<telerik:RadChart x:Name="radChart" Margin="8" 
+	                  ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping LegendLabel="Products UnitPrice">
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping FieldName="UnitPrice" DataPointMember="YValue"/>
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 Here it is shown how the final result should look like: 

@@ -24,7 +24,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 #### __C#__
 
-{{region radchart-features-drill-down-hierarchical-view_0}}
+{{region cs-radchart-features-drill-down-hierarchical-view_0}}
 	public class Company
 	{
 	    public string Name
@@ -38,24 +38,24 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-drill-down-hierarchical-view_1}}
+{{region vb-radchart-features-drill-down-hierarchical-view_1}}
 	Public Class Company
-	 Public Property Name() As String
-	 Public Property Sales() As ModelSalesCollection
+	    Public Property Name() As String
+	    Public Property Sales() As ModelSalesCollection
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-drill-down-hierarchical-view_2}}
+{{region cs-radchart-features-drill-down-hierarchical-view_2}}
 	public class ModelSalesCollection : List<ModelSales>
 	{
 	    public double TotalAmount
@@ -66,22 +66,22 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-drill-down-hierarchical-view_3}}
+{{region vb-radchart-features-drill-down-hierarchical-view_3}}
 	Public Class ModelSalesCollection
-	 Inherits List(Of ModelSales)
-	 Public ReadOnly Property TotalAmount() As Double
-	  Get
-	   Return Me.Sum(Function(modelSales) modelSales.Amount)
-	  End Get
-	 End Property
+	    Inherits List(Of ModelSales)
+	    Public ReadOnly Property TotalAmount() As Double
+	        Get
+	            Return Me.Sum(Function(modelSales) modelSales.Amount)
+	        End Get
+	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -89,7 +89,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 #### __C#__
 
-{{region radchart-features-drill-down-hierarchical-view_4}}
+{{region cs-radchart-features-drill-down-hierarchical-view_4}}
 	public class ModelSales
 	{
 	    public string Model
@@ -108,22 +108,22 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        this.Amount = amount;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-drill-down-hierarchical-view_5}}
+{{region vb-radchart-features-drill-down-hierarchical-view_5}}
 	Public Class ModelSales
-	 Public Property Model() As String
-	 Public Property Amount() As Double
-	 Public Sub New(ByVal model As String, ByVal amount As Double)
-	  Me.Model = model
-	  Me.Amount = amount
-	 End Sub
+	    Public Property Model() As String
+	    Public Property Amount() As Double
+	    Public Sub New(ByVal model As String, ByVal amount As Double)
+	        Me.Model = model
+	        Me.Amount = amount
+	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -131,44 +131,60 @@ Here is a method that generates some sample data for you.
 
 #### __C#__
 
-{{region radchart-features-drill-down-hierarchical-view_6}}
+{{region cs-radchart-features-drill-down-hierarchical-view_6}}
 	private List<Company> GetChartData()
 	{
-        return new List<Company>() { 
-            new Company() { 
-                Name="ToyYoda",
-                Sales = new ModelSalesCollection() { 
-                    new ModelSales("Coolla", 120000),
-                    new ModelSales("Coolla", 115000),
-                    new ModelSales("Veso", 89000),
-                    new ModelSales("Veso", 79000)
-                }
-            },
-            new Company() { 
-                Name="Marda",
-                Sales =new ModelSalesCollection() {
-                    new ModelSales("Tree", 145000),
-                    new ModelSales("Tree", 132000),
-                    new ModelSales("Six", 121000),
-                    new ModelSales("Six", 111000)
-                }
-            }
-        };
+	    return new List<Company>() { 
+	        new Company() { 
+	            Name="ToyYoda",
+	            Sales = new ModelSalesCollection() { 
+	                new ModelSales("Coolla", 120000),
+	                new ModelSales("Coolla", 115000),
+	                new ModelSales("Veso", 89000),
+	                new ModelSales("Veso", 79000)
+	            }
+	        },
+	        new Company() { 
+	            Name="Marda",
+	            Sales =new ModelSalesCollection() {
+	                new ModelSales("Tree", 145000),
+	                new ModelSales("Tree", 132000),
+	                new ModelSales("Six", 121000),
+	                new ModelSales("Six", 111000)
+	            }
+	        }
+	    };
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-drill-down-hierarchical-view_7}}
+{{region vb-radchart-features-drill-down-hierarchical-view_7}}
 	Private Function GetChartData() As List(Of Company)
-	 Return New List(Of Company)() _
-	     From {New Company() With {.Name="ToyYoda", .Sales = New ModelSalesCollection()
-	             From { New ModelSales("Coolla", 120000), New ModelSales("Coolla", 115000), New ModelSales("Veso", 89000), New ModelSales("Veso", 79000) }}, New Company() With {.Name="Marda", .Sales = New ModelSalesCollection()
-	             From { New ModelSales("Tree", 145000), New ModelSales("Tree", 132000), New ModelSales("Six", 121000), New ModelSales("Six", 111000) }}}
+	    Return New List(Of Company)() From { _
+	        New Company() With { _
+	            .Name = "ToyYoda", _
+	            .Sales = New ModelSalesCollection() From { _
+	                New ModelSales("Coolla", 120000), _
+	                New ModelSales("Coolla", 115000), _
+	                New ModelSales("Veso", 89000), _
+	                New ModelSales("Veso", 79000) _
+	            } _
+	        }, _
+	        New Company() With { _
+	            .Name = "Marda", _
+	            .Sales = New ModelSalesCollection() From { _
+	                New ModelSales("Tree", 145000), _
+	                New ModelSales("Tree", 132000), _
+	                New ModelSales("Six", 121000), _
+	                New ModelSales("Six", 111000) _
+	            } _
+	        } _
+	    }
 	End Function
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -176,23 +192,20 @@ At the first level of the hierarchy the __RadChart__ should display the value of
 
 #### __XAML__
 
-{{region radchart-features-drill-down-hierarchical-view_8}}
+{{region xaml-radchart-features-drill-down-hierarchical-view_8}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping>
-	                    <telerik:ItemMapping FieldName="Sales.TotalAmount"
-	                                            DataPointMember="YValue">
-	                    </telerik:ItemMapping>
-	                    <telerik:ItemMapping FieldName="Name"
-	                                            DataPointMember="XCategory"></telerik:ItemMapping>
+	                    <telerik:ItemMapping DataPointMember="YValue" FieldName="Sales.TotalAmount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Name" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -200,16 +213,14 @@ Upon clicking on the respective company, the __RadChart__ should visualize the _
 
 #### __XAML__
 
-{{region radchart-features-drill-down-hierarchical-view_9}}
-	<telerik:RadChart x:Name="radChart">
+{{region xaml-radchart-features-drill-down-hierarchical-view_9}}
+	<telerik:RadChart>
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
 	            <telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	                <telerik:SeriesMapping>
-	                    <telerik:ItemMapping FieldName="Sales.TotalAmount"
-	                                            DataPointMember="YValue" />
-	                    <telerik:ItemMapping FieldName="Name"
-	                                            DataPointMember="XCategory" />
+	                    <telerik:ItemMapping DataPointMember="YValue" FieldName="Sales.TotalAmount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Name" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
 	        </telerik:ChartHierarchicalViewDescriptor>
@@ -221,20 +232,19 @@ Upon clicking on the respective company, the __RadChart__ should visualize the _
 	                <telerik:SeriesMapping>
 	                    <telerik:SeriesMapping.GroupingSettings>
 	                        <telerik:GroupingSettings ShouldFlattenSeries="True">
-	                            <telerik:ChartGroupDescriptor Member="Model"></telerik:ChartGroupDescriptor>
+	                            <telerik:ChartGroupDescriptor Member="Model" />
 	                        </telerik:GroupingSettings>
 	                    </telerik:SeriesMapping.GroupingSettings>
-	                    <telerik:ItemMapping FieldName="Amount"
-	                                            DataPointMember="YValue"
-	                                            AggregateFunction="Sum" />
-	                    <telerik:ItemMapping FieldName="Model"
-	                                            DataPointMember="XCategory" />
+	                    <telerik:ItemMapping AggregateFunction="Sum"
+	                                         DataPointMember="YValue"
+	                                         FieldName="Amount" />
+	                    <telerik:ItemMapping DataPointMember="XCategory" FieldName="Model" />
 	                </telerik:SeriesMapping>
 	            </telerik:ChartHierarchicalViewDescriptor.SeriesMappings>
-	        </telerik:ChartHierarchicalViewDescriptor>                
+	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

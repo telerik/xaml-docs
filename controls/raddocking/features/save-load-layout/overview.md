@@ -24,17 +24,17 @@ Create a new application and add the following initial __RadDocking__ declaratio
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_0}}
+{{region xaml-raddocking-features-save-load-layout_0}}
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	
 	        <telerik:RadSplitContainer>
 	            <telerik:RadPaneGroup x:Name="DocumentGroup">
 	                <telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
-	      telerik:RadDocking.FloatingSize="450, 400">
+	telerik:RadDocking.FloatingSize="450, 400">
 	                    <TextBox TextWrapping="Wrap" x:Name="XmlTextBox"
-	       VerticalScrollBarVisibility="Auto"
-	       Text="{Binding Xml, Mode=TwoWay}" />
+	VerticalScrollBarVisibility="Auto"
+	Text="{Binding Xml, Mode=TwoWay}" />
 	                </telerik:RadPane>
 	                <telerik:RadDocumentPane Header="Document 1" Title="Document 1">
 	                    <TextBox x:Name="DocumentTextBox" Text="Some text" />
@@ -103,32 +103,24 @@ Set the __RadDocking.SerializationTag__ attached property for each one of the pa
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_1}}
-	...
-	<telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
-	                                telerik:RadDocking.SerializationTag="LayoutXml"
-	        telerik:RadDocking.FloatingSize="450, 400">
-	...
+{{region xaml-raddocking-features-save-load-layout_1}}
+	<telerik:RadPane x:Name="LayoutXml1" Header="Layout Xml"
+	                 telerik:RadDocking.SerializationTag="LayoutXml"
+	                 telerik:RadDocking.FloatingSize="450, 400"/>
 	<telerik:RadDocumentPane Header="Document 1" Title="Document 1"
-	                            telerik:RadDocking.SerializationTag="DocumentPane">
-	...
+	                         telerik:RadDocking.SerializationTag="DocumentPane"/>
 	<telerik:RadPane Header="Pane Left 1"
-	                        telerik:RadDocking.SerializationTag="PaneLeft1">
-	...
+	                telerik:RadDocking.SerializationTag="PaneLeft1"/>
 	<telerik:RadPane Header="Pane Left 2"
-	                        telerik:RadDocking.SerializationTag="PaneLeft2">
-	...
+	                telerik:RadDocking.SerializationTag="PaneLeft2"/>
 	<telerik:RadPane Header="Pane Left 3"
-	                        telerik:RadDocking.SerializationTag="PaneLeft3">
-	...
+	                telerik:RadDocking.SerializationTag="PaneLeft3"/>
 	<telerik:RadPane Header="Pane Left 4"
-	                        telerik:RadDocking.SerializationTag="PaneLeft4">
-	...
+	                telerik:RadDocking.SerializationTag="PaneLeft4"/>
 	<telerik:RadPane Header="Pane Right 1"
-	                        telerik:RadDocking.SerializationTag="PaneRight1">
-	...
+	                telerik:RadDocking.SerializationTag="PaneRight1"/>
 	<telerik:RadPane Header="Pane Top 1"
-	                        telerik:RadDocking.SerializationTag="PaneTop1">
+	                telerik:RadDocking.SerializationTag="PaneTop1"/>
 {{endregion}}
 
 Use the __SaveLayout__ method of the __RadDocking__ class. The following example demonstrates how to save the __RadDocking__ layout in the IsolatedStorage. The generated XML is returned as well.
@@ -137,18 +129,18 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 		
 #### __C#__
 
-{{region raddocking-features-save-load-layout_2}}
+{{region cs-raddocking-features-save-load-layout_2}}
 	private string SaveLayout()
 	{
 	    string xml;
 	    // Save your layout for example in the isolated storage.
-	    using ( IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication() )
+	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
 	    {
-	        using ( var isoStream = storage.OpenFile( "RadDocking_Layout.xml", FileMode.Create ) )
+	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create))
 	        {
-	            this.radDocking.SaveLayout( isoStream );
-	            isoStream.Seek( 0, SeekOrigin.Begin );
-	            StreamReader reader = new StreamReader( isoStream );
+	            this.radDocking.SaveLayout(isoStream);
+	            isoStream.Seek(0, SeekOrigin.Begin);
+	            StreamReader reader = new StreamReader(isoStream);
 	            xml = reader.ReadToEnd();
 	        }
 	    }
@@ -159,20 +151,20 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_3}}
+{{region vb-raddocking-features-save-load-layout_3}}
 	Private Function SaveLayout() As String
-	 Dim xml As String
-	 ' Save your layout for example in the isolated storage.
-	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication()
-	  Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
-	   Me.radDocking.SaveLayout(isoStream)
-	   isoStream.Seek(0, SeekOrigin.Begin)
-	   Dim reader As New StreamReader(isoStream)
-	   xml = reader.ReadToEnd()
-	  End Using
-	 End Using
-	 ' Return the generated XML
-	 Return xml
+		Dim xml As String
+		' Save your layout for example in the isolated storage.
+		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
+			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
+				Me.radDocking.SaveLayout(isoStream)
+				isoStream.Seek(0, SeekOrigin.Begin)
+				Dim reader As New StreamReader(isoStream)
+				xml = reader.ReadToEnd()
+			End Using
+		End Using
+		' Return the generated XML
+		Return xml
 	End Function
 {{endregion}}
 
@@ -180,18 +172,18 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_2_1}}
+{{region cs-raddocking-features-save-load-layout_3}}
 	private string SaveLayout()
 	{
 	    string xml;
 	    // Save your layout for example in the isolated storage.
-	    using ( IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly() )
+	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly())
 	    {
-	        using ( var isoStream = storage.OpenFile( "RadDocking_Layout.xml", FileMode.Create ) )
+	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create))
 	        {
-	            this.radDocking.SaveLayout( isoStream );
-	            isoStream.Seek( 0, SeekOrigin.Begin );
-	            StreamReader reader = new StreamReader( isoStream );
+	            this.radDocking.SaveLayout(isoStream);
+	            isoStream.Seek(0, SeekOrigin.Begin);
+	            StreamReader reader = new StreamReader(isoStream);
 	            xml = reader.ReadToEnd();
 	        }
 	    }
@@ -202,20 +194,20 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_3_1}}
+{{region vb-raddocking-features-save-load-layout_3}}
 	Private Function SaveLayout() As String
-	 Dim xml As String
-	 ' Save your layout for example in the isolated storage.
-	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-	  Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
-	   Me.radDocking.SaveLayout(isoStream)
-	   isoStream.Seek(0, SeekOrigin.Begin)
-	   Dim reader As New StreamReader(isoStream)
-	   xml = reader.ReadToEnd()
-	  End Using
-	 End Using
-	 ' Return the generated XML
-	 Return xml
+		Dim xml As String
+		' Save your layout for example in the isolated storage.
+		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
+			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
+				Me.radDocking.SaveLayout(isoStream)
+				isoStream.Seek(0, SeekOrigin.Begin)
+				Dim reader As New StreamReader(isoStream)
+				xml = reader.ReadToEnd()
+			End Using
+		End Using
+		' Return the generated XML
+		Return xml
 	End Function
 {{endregion}}
 
@@ -225,8 +217,7 @@ Here is how the result XML will look like for the above example:
 
 #### __XAML__
 
-{{region raddocking-features-save-load-layout_4}}
-	<?xml version="1.0" encoding="utf-8"?>
+{{region xaml-raddocking-features-save-load-layout_4}}
 	<RadDocking>
 	    <DocumentHost>
 	        <RadSplitContainer Dock="DockedLeft">
@@ -294,15 +285,15 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_5}}
+{{region cs-raddocking-features-save-load-layout_5}}
 	private void LoadLayout()
 	{
 	    // Load your layot from the isolated storage.
-	    using ( IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication() )
+	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
 	    {
-	        using ( var isoStream = storage.OpenFile( "RadDocking_Layout.xml", FileMode.Open ) )
+	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
 	        {
-	            this.radDocking.LoadLayout( isoStream );
+	            this.radDocking.LoadLayout(isoStream);
 	        }
 	    }
 	}
@@ -310,14 +301,14 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_6}}
+{{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
-	 ' Load your layot from the isolated storage.
-	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication()
-	  Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
-	   Me.radDocking.LoadLayout(isoStream)
-	  End Using
-	 End Using
+		' Load your layot from the isolated storage.
+		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
+			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
+				Me.radDocking.LoadLayout(isoStream)
+			End Using
+		End Using
 	End Sub
 {{endregion}}
 
@@ -325,15 +316,15 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_5_1}}
+{{region cs-raddocking-features-save-load-layout_6}}
 	private void LoadLayout()
 	{
 	    // Load your layot from the isolated storage.
-	    using ( IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly() )
+	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly())
 	    {
-	        using ( var isoStream = storage.OpenFile( "RadDocking_Layout.xml", FileMode.Open ) )
+	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
 	        {
-	            this.radDocking.LoadLayout( isoStream );
+	            this.radDocking.LoadLayout(isoStream);
 	        }
 	    }
 	}
@@ -341,14 +332,14 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_6_1}}
+{{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
-	 'Load your layot from the isolated storage.
-	 Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-	  Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
-	   Me.radDocking.LoadLayout(isoStream)
-	  End Using
-	 End Using
+		' Load your layot from the isolated storage.
+		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
+			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
+				Me.radDocking.LoadLayout(isoStream)
+			End Using
+		End Using
 	End Sub
 {{endregion}}
 
@@ -402,13 +393,16 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 #### __C#__
 
-{{region raddocking-features-save-load-layout_7}}
-	public void SaveLayout( Stream destination, bool raiseEventsIfNoSerializationTag );
+{{region cs-raddocking-features-save-load-layout_7}}
+	public void SaveLayout(Stream destination, bool raiseEventsIfNoSerializationTag)
+	{
+	
+	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-features-save-load-layout_8}}
+{{region vb-raddocking-features-save-load-layout_8}}
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
 	End Sub
 {{endregion}}

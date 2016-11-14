@@ -34,19 +34,19 @@ After finishing with the changes it is time to set the style. It can be set only
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-axis-title_0}}
-	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = this.Resources[ "AxisTitleStyle" ] as Style;
-	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TitleStyle = this.Resources[ "AxisTitleStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-axis-title_0}}
+	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = this.Resources["AxisTitleStyle"] as Style;
+	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TitleStyle = this.Resources["AxisTitleStyle"] as Style;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-axis-title_1}}
+{{region vb-radchart-styling-and-appearance-styling-axis-title_1}}
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = TryCast(Me.Resources("AxisTitleStyle"), Style)
 	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TitleStyle = TryCast(Me.Resources("AxisTitleStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -58,64 +58,48 @@ Here is the final XAML for the __Style__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-axis-title_2}}
+{{region xaml-radchart-styling-and-appearance-styling-axis-title_2}}
 	<Thickness x:Key="AxisTitleMargin">10,3,10,3</Thickness>
-	<Style x:Key="AxisTitleBorderStyle"
-	       TargetType="Border">
-	    <Setter Property="Margin"
-	            Value="0,5,0,0" />
-	    <Setter Property="CornerRadius"
-	            Value="2" />
+	<Style x:Key="AxisTitleBorderStyle" TargetType="Border">
+	    <Setter Property="Margin" Value="0,5,0,0" />
+	    <Setter Property="CornerRadius" Value="2" />
 	    <Setter Property="BorderBrush">
 	        <Setter.Value>
-	            <LinearGradientBrush EndPoint="0.5,1"
-	                                 StartPoint="0.5,0">
-	                <GradientStop Color="Transparent"
-	                              Offset="0.3" />
-	                <GradientStop Color="Orange"
-	                              Offset="0.7" />
+	            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+	                <GradientStop Offset="0.3" Color="Transparent" />
+	                <GradientStop Offset="0.7" Color="Orange" />
 	            </LinearGradientBrush>
 	        </Setter.Value>
 	    </Setter>
-	    <Setter Property="BorderThickness"
-	            Value="2,0,2,2" />
+	    <Setter Property="BorderThickness" Value="2,0,2,2" />
 	</Style>
-	<Style x:Key="AxisTitleInnerBorderStyle"
-	       TargetType="Border">
-	    <Setter Property="CornerRadius"
-	            Value="1" />
+	<Style x:Key="AxisTitleInnerBorderStyle" TargetType="Border">
+	    <Setter Property="CornerRadius" Value="1" />
 	</Style>
-	<Style x:Key="AxisTitleStyle"
-	       TargetType="telerikCharting:AxisTitle">
-	    <Setter Property="HorizontalAlignment"
-	            Value="Center" />
-	    <Setter Property="VerticalAlignment"
-	            Value="Center" />
-	    <Setter Property="Margin"
-	            Value="{StaticResource AxisTitleMargin}" />
-	    <Setter Property="BorderStyle"
-	            Value="{StaticResource AxisTitleBorderStyle}" />
-	    <Setter Property="InnerBorderStyle"
-	            Value="{StaticResource AxisTitleInnerBorderStyle}" />
+	<Style x:Key="AxisTitleStyle" TargetType="telerik:AxisTitle">
+	    <Setter Property="HorizontalAlignment" Value="Center" />
+	    <Setter Property="VerticalAlignment" Value="Center" />
+	    <Setter Property="Margin" Value="{StaticResource AxisTitleMargin}" />
+	    <Setter Property="BorderStyle" Value="{StaticResource AxisTitleBorderStyle}" />
+	    <Setter Property="InnerBorderStyle" Value="{StaticResource AxisTitleInnerBorderStyle}" />
 	    <Setter Property="Template">
 	        <Setter.Value>
-	            <ControlTemplate TargetType="telerikCharting:AxisTitle">
+	            <ControlTemplate TargetType="telerik:AxisTitle">
 	                <Border Style="{TemplateBinding BorderStyle}">
 	                    <Border Style="{TemplateBinding InnerBorderStyle}">
 	                        <ContentControl Margin="{TemplateBinding Margin}"
+	                                        Content="{TemplateBinding Content}"
 	                                        FontFamily="{TemplateBinding FontFamily}"
 	                                        FontSize="{TemplateBinding FontSize}"
-	                                        Foreground="{TemplateBinding Foreground}"
-	                                        Content="{TemplateBinding Content}" />
+	                                        Foreground="{TemplateBinding Foreground}" />
 	                    </Border>
 	                </Border>
 	            </ControlTemplate>
 	        </Setter.Value>
 	    </Setter>
-	    <Setter Property="Foreground"
-	            Value="Orange" />
+	    <Setter Property="Foreground" Value="Orange" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

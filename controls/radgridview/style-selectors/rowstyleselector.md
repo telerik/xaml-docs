@@ -1,22 +1,26 @@
 ---
-title: RowStyleSelectors
-page_title: RowStyleSelectors
-description: RowStyleSelectors
+title: RowStyleSelector
+page_title: RowStyleSelector
+description: RowStyleSelector
 slug: gridview-rowstyleselector
-tags: rowstyleselectors
+tags: rowstyleselector
 published: True
 position: 2
 ---
 
-# RowStyleSelectors
+# RowStyleSelector
 
-This article illustrates how to conditionally style rows through applying __RowStyleSelector__.
+This article illustrates how to conditionally style rows through RadGridView's [RowStyleSelector](#rowstyleselector) and [AlternateRowStyleSelector](alternaterowstyleselector) properties.
 		
 >tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
+
+## RowStyleSelector
 		  
 Assume we have RadGridView bound to a collection of Clubs. Each Club has a property StadiumCapacity. What we want to achieve is to set the background color of the rows to __Red if the capacity > 50 000 or Yellow otherwise__:
+
+#### __Figure 1: The expected result__
 		
-![](images/gridview_rowstyleselector.png)
+![The expected result](images/gridview_rowstyleselector.png)
 
 To do so follow these steps:
 
@@ -25,7 +29,7 @@ To do so follow these steps:
 
 2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (row in our case).
 
-#### __C#__
+#### __[C#] Example 1: The StadiumCapacityStyle class__
 
 {{region cs-gridview-rowstyleselector_0}}
 	public class StadiumCapacityStyle : StyleSelector
@@ -51,7 +55,7 @@ To do so follow these steps:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: The StadiumCapacityStyle class__
 
 {{region vb-gridview-rowstyleselector_1}}
 	Public Class StadiumCapacityStyle
@@ -97,7 +101,7 @@ Depending on the underlying data you cab select which style to apply.
 
 3.In the XAML file define the style selector as a resource and set the properties of the __BigStadiumStyle__ and __SmallStadiumStyle__:
 
-#### __XAML__
+#### __[XAML] Example 2: Set the different styles for the style selector__
 
 {{region xaml-gridview-rowstyleselector_2}}
 	<Grid.Resources>
@@ -120,7 +124,7 @@ Depending on the underlying data you cab select which style to apply.
 
 If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
-#### __XAML__
+#### __[XAML] Example 3: Base the style when using implicit styles__
 
 {{region xaml-gridview-rowstyleselector_4}}
 	<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
@@ -130,19 +134,36 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 4.Finally, set the __RowStyleSelector__ property:
 
-#### __XAML__
+#### __[XAML] Example 4: Set RadGridView's RowStyleSelector__
 
 {{region xaml-gridview-rowstyleselector_3}}
 	<telerik:RadGridView RowStyleSelector="{StaticResource StadiumCapacityStyle}" />
 {{endregion}}
 
->tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
-
 >Since the virtualization of the control is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewRow) and their properties. You should not set properties of GridViewRow inside SelectStyle method. [Read mode on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
 		 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/RowStyleSelector__.
 
-# See Also
+## AlternateRowStyleSelector
 
- * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
+If you've set the **AlternationCount** property, you can apply conditional styles only on the [alternating rows]({%slug radgridview-rows-alternating-rows%}) by specifying an **AlternateRowStyleSelector**.
+
+#### __[XAML] Example 5: Set RadGridView's AlternateRowStyleSelector__
+
+{{region gridview-rowstyleselector_5}}
+
+	<telerik:RadGridView AlternateRowStyleSelector="{StaticResource StadiumCapacityStyle}" />
+{{endregion}}
+
+**Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
+
+#### __Figure 2: The alternating rows styled using the AlternateRowStyleSelector property__
+
+![The alternating rows styled using the AlternateRowStyleSelector property](images/gridview_alternaterowstyleselector.png)
+
+## See Also
+
+* [Styling Rows]({%slug gridview-styling-a-row%})
+
+* [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
           

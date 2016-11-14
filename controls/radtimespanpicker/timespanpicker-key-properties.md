@@ -20,14 +20,14 @@ The following example demonstrates how to set the __StringFormat__ property.
 
 #### __[XAML] Example 1: Setting the StringFormat of the RadTimeSpanPicker__
 
-{{region radtimespanpicker-features-key-properties_0}}
+{{region xaml-radtimespanpicker-features-key-properties_0}}
 	<telerik:RadTimeSpanPicker StringFormat="d' Days, 'h' hours and 'mm' minutes'">
-		<telerik:RadTimeSpanPicker.TimeSpanComponents>
-			<telerik:DayTimeSpanComponent/>
-			<telerik:HourTimeSpanComponent/>
-			<telerik:MinuteTimeSpanComponent/>
-		</telerik:RadTimeSpanPicker.TimeSpanComponents>
-    </telerik:RadTimeSpanPicker>
+	    <telerik:RadTimeSpanPicker.TimeSpanComponents>
+	        <telerik:DayTimeSpanComponent/>
+	        <telerik:HourTimeSpanComponent/>
+	        <telerik:MinuteTimeSpanComponent/>
+	    </telerik:RadTimeSpanPicker.TimeSpanComponents>
+	</telerik:RadTimeSpanPicker>
 {{endregion}}
 
 #### __Figure 1: The new StringFormat representation of the TimeSpan__

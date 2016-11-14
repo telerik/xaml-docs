@@ -32,7 +32,7 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 #### __[XAML]  Reference Telerik.Windows.Controls.dll__
 
-{{region radlistbox-features-dragdrop_0}}
+{{region xaml-radlistbox-features-dragdrop_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
@@ -40,9 +40,9 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 #### __[XAML]  RadListBoxItem Style__
 
-{{region radlistbox-features-dragdrop_1}}
+{{region xaml-radlistbox-features-dragdrop_1}}
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
-		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
 {{endregion}}
 
@@ -52,11 +52,11 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 #### __[XAML]  Attaching the ListBoxDragDropBehavior__
 
-{{region radlistbox-features-dragdrop_2}}
+{{region xaml-radlistbox-features-dragdrop_2}}
 	<telerik:RadListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
-		<telerik:RadListBox.DragDropBehavior>
-			<telerik:ListBoxDragDropBehavior />
-		</telerik:RadListBox.DragDropBehavior>
+	    <telerik:RadListBox.DragDropBehavior>
+	        <telerik:ListBoxDragDropBehavior />
+	    </telerik:RadListBox.DragDropBehavior>
 	</telerik:RadListBox>
 {{endregion}}
 
@@ -68,9 +68,9 @@ In order to enable the visual DragCue the provider needs to be attached to the L
 
 #### __[XAML]  Attaching the DragVisualProvider__
 
-{{region radlistbox-features-dragdrop_3}}
+{{region xaml-radlistbox-features-dragdrop_3}}
 	<telerik:RadListBox.DragVisualProvider>
-		<telerik:ScreenshotDragVisualProvider />
+	    <telerik:ScreenshotDragVisualProvider />
 	</telerik:RadListBox.DragVisualProvider>
 {{endregion}}
 
@@ -106,40 +106,30 @@ And when pointing the bottom part of an item, the DragCue indicates that the dra
 
 In scenarios with drag-drop between controls containing different item types the dragged data should be converted using a DataConverter. The following example shows how to create a custom DataConverter when converting data between two RadListBox controls, one of them containing items of type Product and the other - of type Order.
 
-* Create a new class, deriving from DataConverter:
-
-#### __[C#]  A class deriving from DataConverter__
-
-{{region radlistbox-features-dragdrop_0}}
-	public class ProductToOrderConverter: DataConverter
-	{
-	}
-{{endregion}}
-
-* Override the GetConvertToFormats() and ConvertTo(). The following method can convert data from Product to Order:
+* Create a new class, deriving from DataConverter and override the GetConvertToFormats() and ConvertTo(). The following method can convert data from Product to Order:
 
 #### __[C#]  Overriding the GetConvertToFormats and ConvertTo__
 
-{{region radlistbox-features-dragdrop_1}}
+{{region cs-radlistbox-features-dragdrop_0}}
 	public class ProductToOrderConverter : DataConverter
 	{
-		public override string[] GetConvertToFormats()
-		{
-			return new string[] { typeof(Product).FullName, typeof(Order).FullName };
-		}
-	
-		public override object ConvertTo(object data, string format)
-		{
-			var payload = (IEnumerable)DataObjectHelper.GetData(data, typeof(Product), false);
-			if (payload != null)
-			{
-				return payload.OfType<Product>().Select(a => new Order {
-					Name = a.Name,
-					Quantity = 1
-				});
-			}
-			return null;
-		}
+	    public override string[] GetConvertToFormats()
+	    {
+	        return new string[] { typeof(Product).FullName, typeof(Order).FullName };
+	    }
+	    public override object ConvertTo(object data, string format)
+	    {
+	        var payload = (IEnumerable)DataObjectHelper.GetData(data, typeof(Product), false);
+	        if (payload != null)
+	        {
+	            return payload.OfType<Product>().Select(a => new Order
+	            {
+	                Name = a.Name,
+	                Quantity = 1
+	            });
+	        }
+	        return null;
+	    }
 	}
 {{endregion}}
 
@@ -147,19 +137,18 @@ The final configuration of the RadListBox control in XAML should look like:
 
 #### __[XAML]  Final configuration of RadListBox__
 
-{{region radlistbox-features-dragdrop_6}}
+{{region xaml-radlistbox-features-dragdrop_6}}
 	<telerik:RadListBox ItemsSource="{Binding Products}" ItemContainerStyle="{StaticResource DraggableListBoxItem}">
-		<telerik:RadListBox.DragVisualProvider>
-			<telerik:ScreenshotDragVisualProvider />
-		</telerik:RadListBox.DragVisualProvider>
-		<telerik:RadListBox.DragDropBehavior>
-			<telerik:ListBoxDragDropBehavior />
-		</telerik:RadListBox.DragDropBehavior>
-		<telerik:RadListBox.DataConverter>
-			<local:ManagerToCustomerConverter />
-		</telerik:RadListBox.DataConverter>
+	    <telerik:RadListBox.DragVisualProvider>
+	        <telerik:ScreenshotDragVisualProvider />
+	    </telerik:RadListBox.DragVisualProvider>
+	    <telerik:RadListBox.DragDropBehavior>
+	        <telerik:ListBoxDragDropBehavior />
+	    </telerik:RadListBox.DragDropBehavior>
+	    <telerik:RadListBox.DataConverter>
+	        <local:ProductToOrderConverter />
+	    </telerik:RadListBox.DataConverter>
 	</telerik:RadListBox>
-	
 	<telerik:RadListBox ItemsSource="{Binding Orders}" />
 {{endregion}}
 

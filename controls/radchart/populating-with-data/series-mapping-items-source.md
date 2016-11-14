@@ -22,70 +22,59 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __C#__
 
-{{region radchart-populating-with-data-series-mapping-items-source_0}}
-	using System;
-	using System.Collections.ObjectModel;
-	
-	namespace ChartDataSources
+{{region cs-radchart-populating-with-data-series-mapping-items-source_0}}
+	public class MyDateObject
 	{
-	    public class MyDateObject
+	    public double Value { get; set; }
+	    public double Value2 { get; set; }
+	
+	    public MyDateObject(double value, double value2)
 	    {
-	        public double Value { get; set; }
-	        public double Value2 { get; set; }
+	        this.Value = value;
+	        this.Value2 = value2; 
+	    }
 	
-	        public MyDateObject(double value, double value2)
+	    public static ObservableCollection<MyDateObject> GetData(int count)
+	    {
+	        Random r = new Random();
+	        ObservableCollection<MyDateObject> result = new ObservableCollection<MyDateObject>();
+	
+	        for (int i = 0; i < count; i++)
 	        {
-	            this.Value = value;
-	            this.Value2 = value2; 
-	       }
-	
-	        public static ObservableCollection<MyDateObject> GetData(int count)
-	        {
-	            Random r = new Random();
-	            ObservableCollection<MyDateObject> result = new ObservableCollection<MyDateObject>();
-	
-	            for (int i = 0; i < count; i++)
-	            {
-	                result.Add(new MyDateObject(r.Next(0, 100), r.Next(0, 100)));
-	            }
-	
-	            return result;
+	            result.Add(new MyDateObject(r.Next(0, 100), r.Next(0, 100)));
 	        }
+	
+	        return result;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-series-mapping-items-source_1}}
-	Imports System
-	Imports System.Collections.ObjectModel
+{{region vb-radchart-populating-with-data-series-mapping-items-source_1}}
+	Public Class MyDateObject
+	    Public Property Value() As Double
+	    Public Property Value2() As Double
 	
-	Namespace ChartDataSources
-	   Public Class MyDateObject
-	         Public Property Value() As Double
-	         Public Property Value2() As Double
+	    Public Sub New(ByVal value As Double, ByVal value2 As Double)
+	        Me.Value = value
+	        Me.Value2 = value2
+	    End Sub
 	
-	         Public Sub New(ByVal value As Double, ByVal value2 As Double)
-	               Me.Value = value
-	               Me.Value2 = value2
-	         End Sub
+	    Public Shared Function GetData(ByVal count As Integer) As ObservableCollection(Of MyDateObject)
+	        Dim r As New Random()
+	        Dim result As New ObservableCollection(Of MyDateObject)()
 	
-	         Public Shared Function GetData(ByVal count As Integer) As ObservableCollection(Of MyDateObject)
-	               Dim r As New Random()
-	               Dim result As New ObservableCollection(Of MyDateObject)()
+	        For i As Integer = 0 To count - 1
+	            result.Add(New MyDateObject(r.Next(0, 100), r.Next(0, 100)))
+	        Next i
 	
-	               For i As Integer = 0 To count - 1
-	                     result.Add(New MyDateObject(r.Next(0, 100), r.Next(0, 100)))
-	               Next i
-	
-	               Return result
-	         End Function
-	   End Class
-	End Namespace
-	{{endregion}}
+	        Return result
+	    End Function
+	End Class
+{{endregion}}
 
 
 
@@ -93,90 +82,90 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __C#__
 
-{{region radchart-populating-with-data-series-mapping-items-source_2}}
+{{region cs-radchart-populating-with-data-series-mapping-items-source_2}}
 	public class MyViewModel : ViewModelBase
+	{
+	    private ObservableCollection<MyDateObject> _data;
+	    public ObservableCollection<MyDateObject> Data
 	    {
-	        private ObservableCollection<MyDateObject> _data;
-	        public ObservableCollection<MyDateObject> Data
+	        get
 	        {
-	            get
-	            {
-	                return this._data;
-	            }
-	            set
-	            {
-	                if (this._data != value)
-	                {
-	                    this._data = value;
-	                    this.OnPropertyChanged("Data");
-	                }
-	            }
+	            return this._data;
 	        }
-	
-	        private ObservableCollection<MyDateObject> _mappingData;
-	        public ObservableCollection<MyDateObject> MappingData
+	        set
 	        {
-	            get
+	            if (this._data != value)
 	            {
-	                return this._mappingData;
+	                this._data = value;
+	                this.OnPropertyChanged("Data");
 	            }
-	            set
-	            {
-	                if (this._mappingData != value)
-	                {
-	                    this._mappingData = value;
-	                    this.OnPropertyChanged("MappingData");
-	                }
-	            }
-	        }
-	
-	        public MyViewModel()
-	        {
-	            this.Data = MyDateObject.GetData(10);
-	            this.MappingData = MyDateObject.GetData(20);
 	        }
 	    }
-	{{endregion}}
+	
+	    private ObservableCollection<MyDateObject> _mappingData;
+	    public ObservableCollection<MyDateObject> MappingData
+	    {
+	        get
+	        {
+	            return this._mappingData;
+	        }
+	        set
+	        {
+	            if (this._mappingData != value)
+	            {
+	                this._mappingData = value;
+	                this.OnPropertyChanged("MappingData");
+	            }
+	        }
+	    }
+	
+	    public MyViewModel()
+	    {
+	        this.Data = MyDateObject.GetData(10);
+	        this.MappingData = MyDateObject.GetData(20);
+	    }
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-series-mapping-items-source_3}}
+{{region vb-radchart-populating-with-data-series-mapping-items-source_3}}
 	Public Class MyViewModel
-	            Inherits ViewModelBase
-	            Private _data As ObservableCollection(Of MyDateObject)
-	            Public Property Data() As ObservableCollection(Of MyDateObject)
-	                  Get
-	                        Return Me._data
-	                  End Get
-	                  Set(ByVal value As ObservableCollection(Of MyDateObject))
-	                        If Me._data IsNot value Then
-	                              Me._data = value
-	                              Me.OnPropertyChanged("Data")
-	                        End If
-	                  End Set
-	            End Property
+	    Inherits ViewModelBase
+	    Private _data As ObservableCollection(Of MyDateObject)
+	    Public Property Data() As ObservableCollection(Of MyDateObject)
+	        Get
+	            Return Me._data
+	        End Get
+	        Set(ByVal value As ObservableCollection(Of MyDateObject))
+	            If Me._data IsNot value Then
+	                Me._data = value
+	                Me.OnPropertyChanged("Data")
+	            End If
+	        End Set
+	    End Property
 	
-	            Private _mappingData As ObservableCollection(Of MyDateObject)
-	            Public Property MappingData() As ObservableCollection(Of MyDateObject)
-	                  Get
-	                        Return Me._mappingData
-	                  End Get
-	                  Set(ByVal value As ObservableCollection(Of MyDateObject))
-	                        If Me._mappingData IsNot value Then
-	                              Me._mappingData = value
-	                              Me.OnPropertyChanged("MappingData")
-	                        End If
-	                  End Set
-	            End Property
+	    Private _mappingData As ObservableCollection(Of MyDateObject)
+	    Public Property MappingData() As ObservableCollection(Of MyDateObject)
+	        Get
+	            Return Me._mappingData
+	        End Get
+	        Set(ByVal value As ObservableCollection(Of MyDateObject))
+	            If Me._mappingData IsNot value Then
+	                Me._mappingData = value
+	                Me.OnPropertyChanged("MappingData")
+	            End If
+	        End Set
+	    End Property
 	
-	            Public Sub New()
-	                  Me.Data = MyDateObject.GetData(10)
-	                  Me.MappingData = MyDateObject.GetData(20)
-	            End Sub
-	      End Class
-	{{endregion}}
+	    Public Sub New()
+	        Me.Data = MyDateObject.GetData(10)
+	        Me.MappingData = MyDateObject.GetData(20)
+	    End Sub
+	End Class
+{{endregion}}
 
 
 
@@ -184,25 +173,25 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __XAML__
 
-{{region radchart-populating-with-data-series-mapping-items-source_4}}
+{{region xaml-radchart-populating-with-data-series-mapping-items-source_4}}
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" UseDefaultLayout="False">
-	            <charting:ChartArea x:Name="ChartArea1" EnableAnimations="False"></charting:ChartArea>
+	            <telerik:ChartArea x:Name="ChartArea1" EnableAnimations="False"/>
 	            <telerik:RadChart.SeriesMappings>
-	                <charting:SeriesMapping ChartAreaName="ChartArea1" >
-	                    <charting:SeriesMapping.SeriesDefinition>
-	                        <charting:LineSeriesDefinition ></charting:LineSeriesDefinition>
-	                    </charting:SeriesMapping.SeriesDefinition>
-	                    <charting:ItemMapping FieldName="Value" DataPointMember="YValue"></charting:ItemMapping>
-	                </charting:SeriesMapping>
-	                <charting:SeriesMapping ChartAreaName="ChartArea1" ItemsSource="{Binding MappingData}" >
-	                    <charting:SeriesMapping.SeriesDefinition>
-	                        <charting:LineSeriesDefinition></charting:LineSeriesDefinition>
-	                    </charting:SeriesMapping.SeriesDefinition>
-	                    <charting:ItemMapping FieldName="Value2" DataPointMember="YValue"></charting:ItemMapping>
-	                </charting:SeriesMapping>
+	                <telerik:SeriesMapping ChartAreaName="ChartArea1" >
+	                    <telerik:SeriesMapping.SeriesDefinition>
+	                        <telerik:LineSeriesDefinition />
+	                    </telerik:SeriesMapping.SeriesDefinition>
+	                    <telerik:ItemMapping FieldName="Value" DataPointMember="YValue"/>
+	                </telerik:SeriesMapping>
+	                <telerik:SeriesMapping ChartAreaName="ChartArea1" ItemsSource="{Binding MappingData}" >
+	                    <telerik:SeriesMapping.SeriesDefinition>
+	                        <telerik:LineSeriesDefinition/>
+	                    </telerik:SeriesMapping.SeriesDefinition>
+	                    <telerik:ItemMapping FieldName="Value2" DataPointMember="YValue"/>
+	                </telerik:SeriesMapping>
 	            </telerik:RadChart.SeriesMappings>
 	        </telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

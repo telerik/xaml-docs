@@ -16,40 +16,40 @@ First, we need to define new ItemsPanel and set it in the ClockStyle.
 
 #### __XAML__
 
-{{region radtimepicker-layout-support_0}}
+{{region xaml-radtimepicker-layout-support_0}}
 	<!--Layout 1-->
 	<Style x:Key="RadUniformGridStyle1" TargetType="telerik:RadUniformGrid">
-		<Setter Property="Rows" Value="4"/>
-		<Setter Property="ChildrenFlow" Value="Horizontal" />
+	    <Setter Property="Rows" Value="4"/>
+	    <Setter Property="ChildrenFlow" Value="Horizontal" />
 	</Style>
 	
 	<Style TargetType="telerik:RadClock" x:Key="RadClockStyle1">
-		<Setter Property="Header" Value="Clock" />
-
-		<Setter Property="ItemsPanel">
-			<Setter.Value>
-				<ItemsPanelTemplate>
-					<telerik:RadUniformGrid x:Name="uniformGrid" Style="{StaticResource RadUniformGridStyle1}" />
-				</ItemsPanelTemplate>
-			</Setter.Value>
-		</Setter>
+	    <Setter Property="Header" Value="Clock" />
+	
+	    <Setter Property="ItemsPanel">
+	        <Setter.Value>
+	            <ItemsPanelTemplate>
+	                <telerik:RadUniformGrid x:Name="uniformGrid" Style="{StaticResource RadUniformGridStyle1}" />
+	            </ItemsPanelTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
-
+	
 	<!--Layout 1-->
 	<Style x:Key="RadUniformGridStyle2" TargetType="telerik:RadUniformGrid">
-		<Setter Property="Columns" Value="3"/>
-		<Setter Property="ChildrenFlow" Value="Horizontal" />
+	    <Setter Property="Columns" Value="3"/>
+	    <Setter Property="ChildrenFlow" Value="Horizontal" />
 	</Style>
 	
 	<Style TargetType="telerik:RadClock" x:Key="RadClockStyle2">
-		<Setter Property="Header" Value="Clock" />
-		<Setter Property="ItemsPanel">
-			<Setter.Value>
-				<ItemsPanelTemplate>
-					<telerik:RadUniformGrid x:Name="uniformGrid" Style="{StaticResource RadUniformGridStyle2}" />
-				</ItemsPanelTemplate>
-			</Setter.Value>
-		</Setter>
+	    <Setter Property="Header" Value="Clock" />
+	    <Setter Property="ItemsPanel">
+	        <Setter.Value>
+	            <ItemsPanelTemplate>
+	                <telerik:RadUniformGrid x:Name="uniformGrid" Style="{StaticResource RadUniformGridStyle2}" />
+	            </ItemsPanelTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
 {{endregion}}
 
@@ -57,12 +57,12 @@ Then, set the ClockStyle property to the TimePicker.
 
 #### __XAML__
 
-{{region radtimepicker-layout-support_1}}
+{{region xaml-radtimepicker-layout-support_1}}
 	<Grid x:Name="LayoutRoot" Background="White">
-		<telerik:RadDateTimePicker InputMode="TimePicker" Margin="68,0,0,0" ClockStyle="{StaticResource RadClockStyle1}"
+	    <telerik:RadDateTimePicker InputMode="TimePicker" Margin="68,0,0,0" ClockStyle="{StaticResource RadClockStyle1}"
 	VerticalAlignment="Center" HorizontalAlignment="Left" Width="200"/>
-
-		<telerik:RadDateTimePicker InputMode="TimePicker" Margin="0,229,101,229" ClockStyle="{StaticResource RadClockStyle2}" 
+	
+	    <telerik:RadDateTimePicker InputMode="TimePicker" Margin="0,229,101,229" ClockStyle="{StaticResource RadClockStyle2}" 
 	HorizontalAlignment="Right" Width="200" d:LayoutOverrides="Height"/>
 {{endregion}}
 

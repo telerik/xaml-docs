@@ -36,30 +36,26 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 
 #### __[C#] Applying AnimationGroup__
 
-{{region raddesktopalert-how-to-apply-animation-group_1}}
+{{region cs-raddesktopalert-how-to-apply-animation-group_1}}
 	AnimationGroup groupIn = new AnimationGroup();
 	groupIn.Children.Add(new FadeAnimation() { Direction = AnimationDirection.In });
 	groupIn.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.In, MinScale = 0.9 });
-
 	AnimationGroup groupOut = new AnimationGroup();
 	groupOut.Children.Add(new FadeAnimation() { Direction = AnimationDirection.Out });
 	groupOut.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.Out, MinScale = 0.9 });
-
 	this.AnimationGroupManager.ShowAnimation = groupIn;
 	this.AnimationGroupManager.HideAnimation = groupOut;
 {{endregion}}
 
 #### __[VB] Applying AnimationGroup__
 
-{{region raddesktopalert-how-to-apply-animation-group_2}}
-	Dim groupIn As New AnimationGroup() 
-	groupIn.Children.Add(New FadeAnimation() With { Key .Direction = AnimationDirection.[In] })
-	groupIn.Children.Add(New ScaleAnimation() With { Key .Direction = AnimationDirection.[In], Key .MinScale = 0.9 })
-
+{{region vb-raddesktopalert-how-to-apply-animation-group_1}}
+	Dim groupIn As New AnimationGroup()
+	groupIn.Children.Add(New FadeAnimation() With {.Direction = AnimationDirection.[In]})
+	groupIn.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.[In], .MinScale = 0.9})
 	Dim groupOut As New AnimationGroup()
-	groupOut.Children.Add(New FadeAnimation() With { Key .Direction = AnimationDirection.Out })
-	groupOut.Children.Add(New ScaleAnimation() With { Key .Direction = AnimationDirection.Out, Key .MinScale = 0.9 })
-
+	groupOut.Children.Add(New FadeAnimation() With {.Direction = AnimationDirection.Out})
+	groupOut.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.Out, .MinScale = 0.9})
 	Me.AnimationGroupManager.ShowAnimation = groupIn
 	Me.AnimationGroupManager.HideAnimation = groupOut
 {{endregion}}

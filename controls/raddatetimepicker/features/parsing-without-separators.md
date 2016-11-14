@@ -16,15 +16,15 @@ This feature can be enabled by setting __AllowParsingWithoutSeparator__ property
 
 #### __XAML__
 
-{{region raddatetimepicker-features-parsing-without-separators_0}}
+{{region xaml-raddatetimepicker-features-parsing-without-separators_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" AllowParsingWithoutSeparator="True" />
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region raddatetimepicker-features-parsing-without-separators_1}}
+{{region cs-raddatetimepicker-features-parsing-without-separators_1}}
 	this.radDateTimePicker.AllowParsingWithoutSeparator = true;
 {{endregion}}
 

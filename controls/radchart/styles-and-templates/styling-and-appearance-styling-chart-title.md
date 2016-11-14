@@ -28,9 +28,9 @@ This topic will show you how to perform the second one.
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-title_0}}
-	xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-chart-title_0}}
+	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
+{{endregion}}
 
 
 
@@ -70,10 +70,9 @@ To apply the style to the real control, set it to the __TitleStyle__ property of
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-title_1}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       TitleStyle="{StaticResource ChartTitleStyle}" />
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-chart-title_1}}
+	<telerik:RadChart x:Name="radChart" TitleStyle="{StaticResource ChartTitleStyle}" />
+{{endregion}}
 
 
 
@@ -89,76 +88,56 @@ Here is the final XAML for the __Style__ after the modifications:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-title_2}}
-	<LinearGradientBrush x:Key="ChartTitleBackground"
-	                     EndPoint="0.5,1"
-	                     StartPoint="0.5,0">
-	    <GradientStop Color="#FFEDEDED"
-	                  Offset="1" />
+{{region xaml-radchart-styling-and-appearance-styling-chart-title_2}}
+	<LinearGradientBrush x:Key="ChartTitleBackground" StartPoint="0.5,0" EndPoint="0.5,1">
+	    <GradientStop Offset="1" Color="#FFEDEDED" />
 	    <GradientStop Color="White" />
-	    <GradientStop Color="#FFE5E5E5"
-	                  Offset="0.42" />
-	    <GradientStop Color="#FFCACACA"
-	                  Offset="0.43" />
+	    <GradientStop Offset="0.42" Color="#FFE5E5E5" />
+	    <GradientStop Offset="0.43" Color="#FFCACACA" />
 	</LinearGradientBrush>
-	<SolidColorBrush x:Key="ChartTitleBorderBrush"
-	                 Color="#FFB5B5B5" />
-	<SolidColorBrush x:Key="ChartTitleOuterBorderBrush"
-	                 Color="#FF00ADFF" />
+	<SolidColorBrush x:Key="ChartTitleBorderBrush" Color="#FFB5B5B5" />
+	<SolidColorBrush x:Key="ChartTitleOuterBorderBrush" Color="#FF00ADFF" />
 	<Thickness x:Key="ChartTitleBorderThickness">1</Thickness>
 	<Thickness x:Key="ChartTitleOuterBorderThickness">1</Thickness>
 	<Thickness x:Key="ChartTitlePadding">7</Thickness>
-	<SolidColorBrush x:Key="ChartTitleForeground"
-	                 Color="#FF3B3B3B" />
+	<SolidColorBrush x:Key="ChartTitleForeground" Color="#FF3B3B3B" />
 	<System:Double x:Key="ChartTitleFontSize">18</System:Double>
 	<FontWeight x:Key="ChartTitleFontWeight">Bold</FontWeight>
-	<Style x:Key="ChartTitleStyle"
-	       TargetType="telerikCharting:ChartTitle">
-	    <Setter Property="HorizontalContentAlignment"
-	            Value="Center" />
-	    <Setter Property="Background"
-	            Value="{StaticResource ChartTitleBackground}" />
-	    <Setter Property="BorderBrush"
-	            Value="{StaticResource ChartTitleBorderBrush}" />
-	    <Setter Property="OuterBorderBrush"
-	            Value="{StaticResource ChartTitleOuterBorderBrush}" />
-	    <Setter Property="BorderThickness"
-	            Value="{StaticResource ChartTitleBorderThickness}" />
-	    <Setter Property="OuterBorderThickness"
-	            Value="{StaticResource ChartTitleOuterBorderThickness}" />
-	    <Setter Property="Padding"
-	            Value="{StaticResource ChartTitlePadding}" />
-	    <Setter Property="Foreground"
-	            Value="{StaticResource ChartTitleForeground}" />
-	    <Setter Property="FontSize"
-	            Value="{StaticResource ChartTitleFontSize}" />
-	    <Setter Property="FontWeight"
-	            Value="{StaticResource ChartTitleFontWeight}" />
+	<Style x:Key="ChartTitleStyle" TargetType="telerik:ChartTitle">
+	    <Setter Property="HorizontalContentAlignment" Value="Center" />
+	    <Setter Property="Background" Value="{StaticResource ChartTitleBackground}" />
+	    <Setter Property="BorderBrush" Value="{StaticResource ChartTitleBorderBrush}" />
+	    <Setter Property="OuterBorderBrush" Value="{StaticResource ChartTitleOuterBorderBrush}" />
+	    <Setter Property="BorderThickness" Value="{StaticResource ChartTitleBorderThickness}" />
+	    <Setter Property="OuterBorderThickness" Value="{StaticResource ChartTitleOuterBorderThickness}" />
+	    <Setter Property="Padding" Value="{StaticResource ChartTitlePadding}" />
+	    <Setter Property="Foreground" Value="{StaticResource ChartTitleForeground}" />
+	    <Setter Property="FontSize" Value="{StaticResource ChartTitleFontSize}" />
+	    <Setter Property="FontWeight" Value="{StaticResource ChartTitleFontWeight}" />
 	    <Setter Property="Template">
 	        <Setter.Value>
-	            <ControlTemplate TargetType="telerikCharting:ChartTitle">
-	                <Border BorderBrush="{TemplateBinding OuterBorderBrush}"
-	                        BorderThickness="{TemplateBinding OuterBorderThickness}">
+	            <ControlTemplate TargetType="telerik:ChartTitle">
+	                <Border BorderBrush="{TemplateBinding OuterBorderBrush}" BorderThickness="{TemplateBinding OuterBorderThickness}">
 	                    <Border Background="{TemplateBinding Background}"
 	                            BorderBrush="{TemplateBinding BorderBrush}"
 	                            BorderThickness="{TemplateBinding BorderThickness}"
 	                            CornerRadius="{TemplateBinding CornerRadius}">
-	                        <ContentControl FontFamily="{TemplateBinding FontFamily}"
+	                        <ContentControl Margin="{TemplateBinding Padding}"
+	                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+	                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+	                                        Content="{TemplateBinding Content}"
+	                                        FontFamily="{TemplateBinding FontFamily}"
 	                                        FontSize="{TemplateBinding FontSize}"
 	                                        FontStyle="{TemplateBinding FontStyle}"
 	                                        FontWeight="{TemplateBinding FontWeight}"
-	                                        Foreground="{TemplateBinding Foreground}"
-	                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                                        Margin="{TemplateBinding Padding}"
-	                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-	                                        Content="{TemplateBinding Content}" />
+	                                        Foreground="{TemplateBinding Foreground}" />
 	                    </Border>
 	                </Border>
 	            </ControlTemplate>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

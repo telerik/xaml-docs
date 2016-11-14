@@ -28,8 +28,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 
 #### __C#__
 
-{{region radchart-features-annotations-marked-zone_0}}
-	InitializeComponent();
+{{region cs-radchart-features-annotations-marked-zone_0}}
 	DataSeries series1 = new DataSeries()
 	 {
 	   new DataPoint(145),
@@ -49,14 +48,14 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	series1.Definition.Appearance.Fill = new SolidColorBrush(Colors.Black);
 	series1.Definition.Appearance.Stroke = new SolidColorBrush(Colors.Black);
 	series1.Definition.Appearance.PointMark.Stroke = new SolidColorBrush(Colors.Black);
-	RadChart1.DefaultView.ChartArea.DataSeries.Add(series1);
-	{{endregion}}
+	this.radChart.DefaultView.ChartArea.DataSeries.Add(series1);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-annotations-marked-zone_1}}
+{{region vb-radchart-features-annotations-marked-zone_1}}
 	InitializeComponent()
 	Dim series1 As New DataSeries() With
 	{ New DataPoint(145),
@@ -83,14 +82,14 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 
 #### __XAML__
 
-{{region radchart-features-annotations-marked-zone_2}}
+{{region xaml-radchart-features-annotations-marked-zone_2}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartArea>
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.Annotations>
-	                        <telerik:MarkedZone x:Name="RedZone"
+	                        <telerik:MarkedZone Tag="RedZone"
 	                                            Background="#FFF86D5A"
 	                                            StartY="110"
 	                                            EndY="130" />
@@ -98,7 +97,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	                                            Background="#FFEAF451"
 	                                            StartY="130"
 	                                            EndY="170" />
-	                        <telerik:MarkedZone x:Name="GreenZone"
+	                        <telerik:MarkedZone Tag="GreenZone"
 	                                            Background="#FF9AD846"
 	                                            StartY="170"
 	                                            EndY="200" />
@@ -108,13 +107,13 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-annotations-marked-zone_3}}
+{{region cs-radchart-features-annotations-marked-zone_3}}
 	MarkedZone redZone = new MarkedZone();
 	redZone.StartY = 110;
 	redZone.EndY = 130;
@@ -124,19 +123,19 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	yellowZone .EndY = 170;
 	yellowZone .Background = new SolidColorBrush( Color.FromArgb( 255, 234, 244, 81 ) );
 	MarkedZone greenZone = new MarkedZone();
-	greenZone .StartY = 170;
-	greenZone one.EndY = 200;
-	greenZone .Background = new SolidColorBrush( Color.FromArgb( 255, 154, 216, 70 ) );
-	this.radChart.DefaultView.ChartArea.Annotations.Add( redZone );
-	this.radChart.DefaultView.ChartArea.Annotations.Add( yellowZone );
-	this.radChart.DefaultView.ChartArea.Annotations.Add( greenZone );
-	{{endregion}}
+	greenZone.StartY = 170;
+	greenZone.EndY = 200;
+	greenZone.Background = new SolidColorBrush( Color.FromArgb( 255, 154, 216, 70 ) );
+	this.radChart.DefaultView.ChartArea.Annotations.Add(redZone);
+	this.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone);
+	this.radChart.DefaultView.ChartArea.Annotations.Add(greenZone);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-annotations-marked-zone_4}}
+{{region vb-radchart-features-annotations-marked-zone_4}}
 	Dim redZone As New MarkedZone()
 	redZone.StartY = 110
 	redZone.EndY = 130
@@ -159,14 +158,14 @@ Here is an example of a marked zone that is limited in both directions.
 
 #### __XAML__
 
-{{region radchart-features-annotations-marked-zone_5}}
-	<telerik:RadChart x:Name="radChart">
+{{region xaml-radchart-features-annotations-marked-zone_5}}
+	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartArea>
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.Annotations>
-	                        <telerik:MarkedZone x:Name="LimitedZone"
+	                        <telerik:MarkedZone Tag="LimitedZone"
 	                                            Background="#FFF86D5A"
 	                                            StartY="130"
 	                                            EndY="170"
@@ -178,7 +177,7 @@ Here is an example of a marked zone that is limited in both directions.
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -190,14 +189,14 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 
 #### __XAML__
 
-{{region radchart-features-annotations-marked-zone_6}}
-	<telerik:RadChart x:Name="radChart">
+{{region xaml-radchart-features-annotations-marked-zone_6}}
+	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartArea>
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.Annotations>
-	                        <telerik:MarkedZone x:Name="YellowZone"
+	                        <telerik:MarkedZone Tag="YellowZone"
 	                                            Background="#FFEAF451"
 	                                            StartY="110"
 	                                            EndY="160" />
@@ -213,7 +212,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	  </telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -225,35 +224,35 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 #### __XAML__
 
-{{region radchart-features-annotations-marked-zone_7}}
-	<UserControl.Resources>
+{{region xaml-radchart-features-annotations-marked-zone_7}}
+	<FrameworkElement.Resources>
 	    <Style x:Key="MarkedZoneStyle"
-	            TargetType="Rectangle">
+	    TargetType="Rectangle">
 	        <Setter Property="StrokeDashArray"
-	                Value="1,1" />
+	        Value="1,1" />
 	    </Style>
-	</UserControl.Resources>
+	</FrameworkElement.Resources>
 	
-	<telerik:RadChart x:Name="radChart">
+	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartArea>
 	                <telerik:ChartArea>
 	                    <telerik:ChartArea.Annotations>
-	                        <telerik:MarkedZone x:Name="GreenZone"
-	                                            Background="#FF9AD846"
-	                                            StartY="150"
-	                                            EndY="180"
-	                                            Stroke="Black"
-	                                            StrokeThickness="2"
-	                                            ElementStyle="{StaticResource MarkedZoneStyle}" />
+	                        <telerik:MarkedZone Tag="GreenZone"
+	                                    Background="#FF9AD846"
+	                                    StartY="150"
+	                                    EndY="180"
+	                                    Stroke="Black"
+	                                    StrokeThickness="2"
+	                                    ElementStyle="{StaticResource MarkedZoneStyle}" />
 	                    </telerik:ChartArea.Annotations>
 	                </telerik:ChartArea>
 	            </telerik:ChartDefaultView.ChartArea>
 	        </telerik:ChartDefaultView>
-	    </telerik:RadChart.DefaultView>  
+	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

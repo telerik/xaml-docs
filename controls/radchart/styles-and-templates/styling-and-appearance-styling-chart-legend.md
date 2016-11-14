@@ -24,11 +24,7 @@ This topic will show you how to perform the second one.
 
 ## Modifying the Default Styles
 
->The __ChartLegend__ and the __ChartLegendItem__ controls are located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use them you have to declare it in XAML:
-
-
-#### __XAML__
-xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting" XAMLLanguage Filtered SectionASP.NET
+>The __ChartLegend__ and the __ChartLegendItem__ controls are located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use them you have to declare it in XAML: `xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting" XAMLLanguage Filtered SectionASP.NET`
 
 When working in Expression Blend, the namespaces that are needed will be added automatically.
 
@@ -81,15 +77,13 @@ To apply the styles to the real controls, set the __ChartLegendItemStyle__ in th
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-legend_0}}
-	<Style x:Key="ChartLegendStyle"
-	       TargetType="telerikCharting:ChartLegend">
-	    ...
-	    <Setter Property="LegendItemStyle"
-	            Value="{StaticResource ChartLegendItemStyle}" />
-	    ...
+{{region xaml-radchart-styling-and-appearance-styling-chart-legend_0}}
+	<Style x:Key="ChartLegendStyle" TargetType="telerik:ChartLegend">
+	    <!--  ...  -->
+	    <Setter Property="LegendItemStyle" Value="{StaticResource ChartLegendItemStyle}" />
+	    <!--  ...  -->
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -97,10 +91,9 @@ After that set the __ChartLegendStyle__ to the __RadChart__.
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-legend_1}}
-	<telerikChart:RadChart x:Name="radChart"
-	                       LegendStyle="{StaticResource ChartLegendStyle}">
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-chart-legend_1}}
+	<telerik:RadChart x:Name="radChart" LegendStyle="{StaticResource ChartLegendStyle}" />
+{{endregion}}
 
 
 
@@ -110,69 +103,96 @@ Here is the XAML, generated for the __Styles__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-chart-legend_2}}
-	<LinearGradientBrush x:Key="LegendItemMarkerMask"
-	                        EndPoint="0.5,1"
-	                        StartPoint="0.5,0">
-	    <GradientStop Color="#D8FFFFFF"
-	                    Offset="0.009" />
-	    <GradientStop Color="#66FFFFFF"
-	                    Offset="1" />
-	    <GradientStop Color="Transparent"
-	                    Offset="0.43" />
-	    <GradientStop Color="#7FFFFFFF"
-	                    Offset="0.42" />
+{{region xaml-radchart-styling-and-appearance-styling-chart-legend_2}}
+	<SolidColorBrush x:Key="LegendForeground" Color="#FF000000" />
+	<LinearGradientBrush x:Key="LegendItemMarkerMask" StartPoint="0.5,0" EndPoint="0.5,1">
+	    <GradientStop Offset="0.009" Color="#D8FFFFFF" />
+	    <GradientStop Offset="1" Color="#66FFFFFF" />
+	    <GradientStop Offset="0.43" Color="Transparent" />
+	    <GradientStop Offset="0.42" Color="#7FFFFFFF" />
 	</LinearGradientBrush>
-	<SolidColorBrush x:Key="LegendItemMarkerMaskOpacityMask"
-	                    Color="#FF000000" />
-	<SolidColorBrush x:Key="LegendItemMarkerMaskStroke"
-	                    Color="White" />
+	<SolidColorBrush x:Key="LegendItemMarkerMaskOpacityMask" Color="#FF000000" />
+	<SolidColorBrush x:Key="LegendItemMarkerMaskStroke" Color="White" />
 	<System:Double x:Key="LegendItemMarkerMaskStrokeThickness">1</System:Double>
-	<SolidColorBrush x:Key="LegendItemMarkerMask2"
-	                    Color="Transparent" />
-	<Style x:Key="ChartLegendItemStyle"
-	        TargetType="telerik:ChartLegendItem">
-	    <Setter Property="Foreground"
-	            Value="{StaticResource LegendForeground}" />
-	    <Setter Property="Padding"
-	            Value="5,0,5,0" />
-	    <Setter Property="Margin"
-	            Value="0,3,0,2" />
+	<SolidColorBrush x:Key="LegendItemMarkerMask2" Color="Transparent" />
+	<Style x:Key="ChartLegendItemStyle" TargetType="telerik:ChartLegendItem">
+	    <Setter Property="Foreground" Value="{StaticResource LegendForeground}" />
+	    <Setter Property="Padding" Value="5,0,5,0" />
+	    <Setter Property="Margin" Value="0,3,0,2" />
 	    <Setter Property="Template">
 	        <Setter.Value>
 	            <ControlTemplate TargetType="telerik:ChartLegendItem">
 	                <Grid x:Name="PART_MainContainer"
-	                        Background="{TemplateBinding Background}"
-	                        HorizontalAlignment="Stretch"
-	                        VerticalAlignment="Top">
+	                      HorizontalAlignment="Stretch"
+	                      VerticalAlignment="Top"
+	                      Background="{TemplateBinding Background}">
 	                    <Grid.ColumnDefinitions>
 	                        <ColumnDefinition Width="Auto" />
 	                        <ColumnDefinition />
 	                    </Grid.ColumnDefinitions>
+	                    <Path x:Name="PART_LegendItemMarker"
+	                          Width="16"
+	                          Height="16"
+	                          Margin="{TemplateBinding Margin}"
+	                          Stretch="Fill"
+	                          StrokeThickness="{TemplateBinding MarkerStrokeThickness}"
+	                          Style="{TemplateBinding ItemStyle}">
+	                        <Path.Data>
+	                            <PathGeometry x:Name="PART_ItemMarkerGeometry" />
+	                        </Path.Data>
+	                    </Path>
+	                    <Path x:Name="PART_SelectedState"
+	                          Width="14"
+	                          Height="14"
+	                          Margin="{TemplateBinding Margin}"
+	                          Fill="{StaticResource LegendItemMarkerMask}"
+	                          OpacityMask="{StaticResource LegendItemMarkerMaskOpacityMask}"
+	                          Stretch="Fill"
+	                          Stroke="{StaticResource LegendItemMarkerMaskStroke}"
+	                          StrokeThickness="{StaticResource LegendItemMarkerMaskStrokeThickness}">
+	                        <Path.Data>
+	                            <PathGeometry x:Name="PART_ItemMarkerMaskGeometry" />
+	                        </Path.Data>
+	                    </Path>
+	                    <Path Width="14"
+	                          Height="14"
+	                          Margin="{TemplateBinding Margin}"
+	                          Fill="{StaticResource LegendItemMarkerMask2}"
+	                          Stretch="Fill">
+	                        <Path.Data>
+	                            <PathGeometry x:Name="PART_ItemMarkerMaskGeometry2" />
+	                        </Path.Data>
+	                    </Path>
+	                    <TextBlock x:Name="PART_TextBlock"
+	                               Grid.Column="1"
+	                               Margin="{TemplateBinding Margin}"
+	                               Foreground="{TemplateBinding Foreground}"
+	                               Padding="{TemplateBinding Padding}"
+	                               Text="{TemplateBinding Label}" />
 	                    <VisualStateManager.VisualStateGroups>
 	                        <VisualStateGroup x:Name="HoverStates">
 	                            <VisualState x:Name="Normal">
 	                                <Storyboard>
 	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="1.0"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="1.0" />
 	                                </Storyboard>
 	                            </VisualState>
 	                            <VisualState x:Name="Hovered">
 	                                <Storyboard>
 	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="1.0"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="1.0" />
 	                                </Storyboard>
 	                            </VisualState>
 	                            <VisualState x:Name="Hidden">
 	                                <Storyboard>
 	                                    <DoubleAnimation Duration="0.00:00:00.15"
-	                                                        To="0.15"
-	                                                        Storyboard.TargetProperty="Opacity"
-	                                                        Storyboard.TargetName="PART_MainContainer" />
+	                                                     Storyboard.TargetName="PART_MainContainer"
+	                                                     Storyboard.TargetProperty="Opacity"
+	                                                     To="0.15" />
 	                                </Storyboard>
 	                            </VisualState>
 	                        </VisualStateGroup>
@@ -181,8 +201,8 @@ Here is the XAML, generated for the __Styles__:
 	                            <VisualState x:Name="Selected">
 	                                <Storyboard>
 	                                    <ObjectAnimationUsingKeyFrames Duration="0.00:00:00.05"
-	                                                                    Storyboard.TargetProperty="Stroke"
-	                                                                    Storyboard.TargetName="PART_LegendItemMarker">
+	                                                                   Storyboard.TargetName="PART_LegendItemMarker"
+	                                                                   Storyboard.TargetProperty="Stroke">
 	                                        <DiscreteObjectKeyFrame KeyTime="0.00:00:00.0">
 	                                            <DiscreteObjectKeyFrame.Value>
 	                                                <SolidColorBrush Color="#B2000000" />
@@ -190,8 +210,8 @@ Here is the XAML, generated for the __Styles__:
 	                                        </DiscreteObjectKeyFrame>
 	                                    </ObjectAnimationUsingKeyFrames>
 	                                    <ObjectAnimationUsingKeyFrames Duration="0.00:00:00.05"
-	                                                                    Storyboard.TargetProperty="StrokeThickness"
-	                                                                    Storyboard.TargetName="PART_LegendItemMarker">
+	                                                                   Storyboard.TargetName="PART_LegendItemMarker"
+	                                                                   Storyboard.TargetProperty="StrokeThickness">
 	                                        <DiscreteObjectKeyFrame KeyTime="0.00:00:00.0">
 	                                            <DiscreteObjectKeyFrame.Value>
 	                                                <System:Double>2</System:Double>
@@ -199,8 +219,8 @@ Here is the XAML, generated for the __Styles__:
 	                                        </DiscreteObjectKeyFrame>
 	                                    </ObjectAnimationUsingKeyFrames>
 	                                    <ObjectAnimationUsingKeyFrames Duration="0.00:00:00.05"
-	                                                                    Storyboard.TargetProperty="StrokeThickness"
-	                                                                    Storyboard.TargetName="PART_SelectedState">
+	                                                                   Storyboard.TargetName="PART_SelectedState"
+	                                                                   Storyboard.TargetProperty="StrokeThickness">
 	                                        <DiscreteObjectKeyFrame KeyTime="0.00:00:00.0">
 	                                            <DiscreteObjectKeyFrame.Value>
 	                                                <System:Double>0</System:Double>
@@ -211,103 +231,48 @@ Here is the XAML, generated for the __Styles__:
 	                            </VisualState>
 	                        </VisualStateGroup>
 	                    </VisualStateManager.VisualStateGroups>
-	                    <Path x:Name="PART_LegendItemMarker"
-	                            Height="16"
-	                            Margin="{TemplateBinding Margin}"
-	                            Style="{TemplateBinding ItemStyle}"
-	                            Stretch="Fill"
-	                            StrokeThickness="{TemplateBinding MarkerStrokeThickness}"
-	                            Width="16">
-	                            <Path.Data>
-	                                <PathGeometry x:Name="PART_ItemMarkerGeometry" />
-	                            </Path.Data>
-	                     </Path>
-	                    <Path x:Name="PART_SelectedState"
-	                            Fill="{StaticResource LegendItemMarkerMask}"
-	                            Height="14"
-	                            Margin="{TemplateBinding Margin}"
-	                            OpacityMask="{StaticResource LegendItemMarkerMaskOpacityMask}"
-	                            Stretch="Fill"
-	                            Stroke="{StaticResource LegendItemMarkerMaskStroke}"
-	                            StrokeThickness="{StaticResource LegendItemMarkerMaskStrokeThickness}"
-	                            Width="14">
-							<Path.Data>
-								<PathGeometry x:Name="PART_ItemMarkerMaskGeometry" />
-							</Path.Data>
-	                    </Path>
-	                    <Path Fill="{StaticResource LegendItemMarkerMask2}"
-	                            Height="14"
-	                            Margin="{TemplateBinding Margin}"
-	                            Stretch="Fill"
-	                            Width="14">
-						  <Path.Data>
-							<PathGeometry x:Name="PART_ItemMarkerMaskGeometry2" />
-						  </Path.Data>
-					   </Path>
-	                    <TextBlock x:Name="PART_TextBlock"
-	                                Grid.Column="1"
-	                                Foreground="{TemplateBinding Foreground}"
-	                                Margin="{TemplateBinding Margin}"
-	                                Padding="{TemplateBinding Padding}"
-	                                Text="{TemplateBinding Label}" />
 	                </Grid>
 	            </ControlTemplate>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	<SolidColorBrush x:Key="LegendForeground"
-	                    Color="#FF000000" />
-	<LinearGradientBrush x:Key="LegendBackground"
-	                        EndPoint="1.96,0.5"
-	                        StartPoint="-0.96,0.5">
+	
+	<LinearGradientBrush x:Key="LegendBackground" StartPoint="-0.96,0.5" EndPoint="1.96,0.5">
 	    <GradientStop Color="#FFB5B5B5" />
-	    <GradientStop Color="#FFF0F0F0"
-	                    Offset="0.5" />
+	    <GradientStop Offset="0.5" Color="#FFF0F0F0" />
 	</LinearGradientBrush>
-	<SolidColorBrush x:Key="LegendBorderBrush"
-	                    Color="#FF848484" />
+	<SolidColorBrush x:Key="LegendBorderBrush" Color="#FF848484" />
 	<Thickness x:Key="LegendBorderThickness">1</Thickness>
 	<telerik:MarkerShape x:Key="LegendItemMarkerShape">SquareRounded</telerik:MarkerShape>
 	<telerik:TextToVisibilityConverter x:Key="textToVisibilityConverter" />
-	<Style x:Key="ChartLegendStyle"
-	        TargetType="telerik:ChartLegend">
-	    <Setter Property="Foreground"
-	            Value="{StaticResource LegendForeground}" />
-	    <Setter Property="Background"
-	            Value="{StaticResource LegendBackground}" />
-	    <Setter Property="Padding"
-	            Value="10,10,10,5" />
-	    <Setter Property="Margin"
-	            Value="0" />
-	    <Setter Property="BorderBrush"
-	            Value="{StaticResource LegendBorderBrush}" />
-	    <Setter Property="BorderThickness"
-	            Value="{StaticResource LegendBorderThickness}" />
-	    <Setter Property="HeaderFontWeight"
-	            Value="Bold" />
-	    <Setter Property="HorizontalContentAlignment"
-	            Value="Stretch" />
-	    <Setter Property="VerticalContentAlignment"
-	            Value="Stretch" />
-	    <Setter Property="LegendItemMarkerShape"
-	            Value="{StaticResource LegendItemMarkerShape}" />
+	<Style x:Key="ChartLegendStyle" TargetType="telerik:ChartLegend">
+	    <Setter Property="Foreground" Value="{StaticResource LegendForeground}" />
+	    <Setter Property="Background" Value="{StaticResource LegendBackground}" />
+	    <Setter Property="Padding" Value="10,10,10,5" />
+	    <Setter Property="Margin" Value="0" />
+	    <Setter Property="BorderBrush" Value="{StaticResource LegendBorderBrush}" />
+	    <Setter Property="BorderThickness" Value="{StaticResource LegendBorderThickness}" />
+	    <Setter Property="HeaderFontWeight" Value="Bold" />
+	    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+	    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+	    <Setter Property="LegendItemMarkerShape" Value="{StaticResource LegendItemMarkerShape}" />
 	    <Setter Property="Template">
 	        <Setter.Value>
 	            <ControlTemplate TargetType="telerik:ChartLegend">
-	                <Border BorderBrush="{TemplateBinding BorderBrush}"
-	                        BorderThickness="{TemplateBinding BorderThickness}"
-	                        Background="{TemplateBinding Background}">
+	                <Border Background="{TemplateBinding Background}"
+	                        BorderBrush="{TemplateBinding BorderBrush}"
+	                        BorderThickness="{TemplateBinding BorderThickness}">
 	                    <Grid Margin="{TemplateBinding Padding}">
 	                        <Grid.RowDefinitions>
 	                            <RowDefinition Height="Auto" />
 	                            <RowDefinition Height="*" />
 	                        </Grid.RowDefinitions>
-	                        <ContentControl ContentTemplate="{TemplateBinding HeaderTemplate}"
-	                                        Content="{TemplateBinding Header}"
-	                                        Foreground="{TemplateBinding Foreground}"
-	                                        FontWeight="{TemplateBinding HeaderFontWeight}" />
-	                        <ItemsPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                                        Grid.Row="1"
+	                        <ContentControl Content="{TemplateBinding Header}"
+	                                        ContentTemplate="{TemplateBinding HeaderTemplate}"
+	                                        FontWeight="{TemplateBinding HeaderFontWeight}"
+	                                        Foreground="{TemplateBinding Foreground}" />
+	                        <ItemsPresenter Grid.Row="1"
+	                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
 	                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 	                    </Grid>
 	                </Border>
@@ -325,27 +290,25 @@ Here is the XAML, generated for the __Styles__:
 	        <Setter.Value>
 	            <DataTemplate>
 	                <Grid>
-	                    <TextBlock FontSize="12"
-	                                HorizontalAlignment="Left"
-	                                Height="Auto"
-	                                Padding="0,0,0,2"
-	                                TextWrapping="Wrap"
-	                                Text="{Binding}"
-	                                Visibility="{Binding Converter={StaticResource textToVisibilityConverter}}"
-	                                Width="Auto" />
+	                    <TextBlock Width="Auto"
+	                               Height="Auto"
+	                               HorizontalAlignment="Left"
+	                               FontSize="12"
+	                               Padding="0,0,0,2"
+	                               Text="{Binding}"
+	                               TextWrapping="Wrap"
+	                               Visibility="{Binding Converter={StaticResource textToVisibilityConverter}}" />
 	                </Grid>
 	            </DataTemplate>
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
-# See Also
+## See Also
 
  * [Styling the Plot Area]({%slug radchart-styling-and-appearance-styling-plot-area%})
-
  * [Styling the No Data Control]({%slug radchart-styling-and-appearance-styling-no-data-control%})
-
  * [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%})

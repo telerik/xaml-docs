@@ -28,13 +28,13 @@ Here is an example of how to use __RadWindowManager__ to close all active __RadW
 
 #### __C#__
 
-{{region radwindow-features-radiwindowmanager_0}}
+{{region cs-radwindow-features-radiwindowmanager_0}}
 	RadWindowManager.Current.CloseAllWindows();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radwindow-features-radiwindowmanager_1}}
+{{region vb-radwindow-features-radiwindowmanager_1}}
 	RadWindowManager.Current.CloseAllWindows()
 {{endregion}}
 

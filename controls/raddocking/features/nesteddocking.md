@@ -24,7 +24,7 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ
 
 #### __C#__
 
-{{region raddocking-features-nested-docking_0}}
+{{region cs-raddocking-features-nested-docking_0}}
 	<telerik:RadDocking x:Name="OuterDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -41,7 +41,7 @@ Afterwards you will only have to add a new instance of __RadDocking__ inside of 
     
 #### __C#__
 
-{{region raddocking-features-nested-docking_1}}
+{{region cs-raddocking-features-nested-docking_1}}
 	<telerik:RadDocking x:Name="OuterDocking">
 	    ...
 	    <telerik:RadPane Header="Outer Pane 1">
@@ -89,7 +89,8 @@ With the initial release of the nested __RadDockings__ there are a few not suppo
 
 * Deferred DragDropMode is not supported in the nested __RadDockings__.
  
-# See Also[Panes](a97c7e77-5e76-4dfa-9cd5-9f8a382ddfe0)
+# See Also
+ * [Panes]({%slug raddocking-panes-radpane%})
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
 

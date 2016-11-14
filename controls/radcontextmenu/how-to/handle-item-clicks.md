@@ -32,20 +32,20 @@ Here is an example of an event handler attached to the __Click__ event and how t
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-handle-item-clicks_0}}
+{{region xaml-radcontextmenu-how-to-handle-item-clicks_0}}
 	<telerik:RadContextMenu>
 	    <telerik:RadMenuItem Header="Item 1"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	    <telerik:RadMenuItem Header="Item 2"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	    <telerik:RadMenuItem Header="Item 3"
-	                                   Click="RadMenuItem_Click" />
+	                         Click="RadMenuItem_Click" />
 	</telerik:RadContextMenu>
 {{endregion}}
 
 #### __C#__
 
-{{region radcontextmenu-how-to-handle-item-clicks_1}}
+{{region cs-radcontextmenu-how-to-handle-item-clicks_1}}
 	private void RadMenuItem_Click( object sender, RadRoutedEventArgs e )
 	{
 	    RadMenuItem item = sender as RadMenuItem;
@@ -55,10 +55,10 @@ Here is an example of an event handler attached to the __Click__ event and how t
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-handle-item-clicks_2}}
+{{region vb-radcontextmenu-how-to-handle-item-clicks_2}}
 	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
-	 Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
-	 'implement the logic regarding the instance here.
+	    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
+	    'implement the logic regarding the instance here.
 	End Sub
 {{endregion}}
 
@@ -72,7 +72,7 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 #### __XAML__
 
-{{region radcontextmenu-how-to-handle-item-clicks_3}}
+{{region xaml-radcontextmenu-how-to-handle-item-clicks_3}}
 	<telerik:RadContextMenu ItemClick="radContextMenu_ItemClick">
 	    <telerik:RadMenuItem Header="Item 1" />
 	    <telerik:RadMenuItem Header="Item 2" />
@@ -82,8 +82,8 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 #### __C#__
 
-{{region radcontextmenu-how-to-handle-item-clicks_4}}
-	private void radContextMenu_ItemClick( object sender, RadRoutedEventArgs e )
+{{region cs-radcontextmenu-how-to-handle-item-clicks_4}}
+	private void radContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
 	{
 	    RadMenuItem item = e.OriginalSource as RadMenuItem;
 	    //implement the logic regarding the instance here.
@@ -92,10 +92,10 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 #### __VB.NET__
 
-{{region radcontextmenu-how-to-handle-item-clicks_5}}
+{{region vb-radcontextmenu-how-to-handle-item-clicks_5}}
 	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
-	 Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
-	 'implement the logic regarding the instance here.
+	    Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
+	    'implement the logic regarding the instance here.
 	End Sub
 {{endregion}}
 

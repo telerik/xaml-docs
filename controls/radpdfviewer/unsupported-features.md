@@ -24,11 +24,11 @@ The unsupported features include:
 
 * Encrypted documents when a non-standard encryption method is used, or the document is password-protected.
 
-* JPXDecode filter. API allowing to plug-in custom user-defined filters is available, but the filters do not work out of the box.
+* JPXDecode filter: This filter does not work out of the box. However, there is API allowing to plug-in custom user-defined filters. This API is described in the [Customize PDF Rendering]({%slug radpdfviewer-customize-pdf-rendering%}) topic and an [SDK example](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomDecoder) showing the approach is available in our SDK repository on GitHub.
             
-* Annotations - of all annotations, only link is supported.
+* Annotations: Of all annotations, only link is supported.
 
-* Structured content - there are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline, article threads and interactive forms.
+* Structured content: There are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline, article threads and interactive forms.
 
 When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
 

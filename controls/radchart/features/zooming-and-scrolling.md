@@ -48,23 +48,23 @@ Here is an example.
 
 #### __C#__
 
-{{region radchart-features-zooming-and-scrolling_0}}
+{{region cs-radchart-features-zooming-and-scrolling_0}}
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.MinZoomRange = 0.1;
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeEnd = 0.3;
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeStart = 0.2;
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.ScrollMode = ScrollMode.ScrollAndZoom;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-zooming-and-scrolling_1}}
+{{region vb-radchart-features-zooming-and-scrolling_1}}
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.MinZoomRange = 0.1
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeEnd = 0.3
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeStart = 0.2
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.ScrollMode = ScrollMode.ScrollAndZoom
-	{{endregion}}
+{{endregion}}
 
     
 

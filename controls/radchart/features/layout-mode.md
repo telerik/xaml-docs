@@ -34,35 +34,35 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 
 #### __XAML__
 
-{{region radchart-features-layout-mode_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisX>
-	                        <telerikCharting:AxisX LayoutMode="Normal"/>
-	                    </telerikCharting:ChartArea.AxisX>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-layout-mode_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisX>
+	                        <telerik:AxisX LayoutMode="Normal" />
+	                    </telerik:ChartArea.AxisX>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-layout-mode_1}}
+{{region cs-radchart-features-layout-mode_1}}
 	this.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal;
-	{{endregion}}
+{{endregion}}
 
 #### __VB.NET__
 
-{{region radchart-features-layout-mode_2}}
+{{region vb-radchart-features-layout-mode_2}}
 	Me.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal
-	{{endregion}}
+{{endregion}}
 
 On the snapshots below you can see the differences between the available layout modes.
 

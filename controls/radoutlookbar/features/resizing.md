@@ -20,19 +20,19 @@ area. The following properties are related to the size of those two areas:
 * __MinimimizedAreaMinHeight__ - the minimum height of the minimized area.
 
 #### __XAML__
-{{region radoutlookbar-resizing_0}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" MinContentHeight="300">
-		<telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-			<TextBlock Text="Item 1 Content" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Item 2" 
-								   Icon="Letter.png"
-								   IsSelected="True">
-			<TextBlock Text="Item 2 Content" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-			<TextBlock Text="Item 3 Content" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-resizing_0}}
+	<telerik:RadOutlookBar MinContentHeight="300">
+	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
+	        <TextBlock Text="Item 1 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 2" 
+	                               Icon="Letter.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Item 2 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
+	        <TextBlock Text="Item 3 Content" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 
@@ -41,26 +41,25 @@ area. The following properties are related to the size of those two areas:
 To handle the changes in the position of the item you can subscribe to the __ItemPositionChanged__ event in the way showed below:
 
 #### __XAML__
-{{region radoutlookbar-resizing_1}}
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" 
-						   ActiveItemsMaxCount="1"
-						   ItemPositionChanged="RadOutlookBar1_ItemPositionChanged">
-		<telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-			<TextBlock Text="Item 1 Content" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Item 2" 
-								   Icon="Letter.png"
-								   IsSelected="True">
-			<TextBlock Text="Item 2 Content" />
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-			<TextBlock Text="Item 3 Content" />
-		</telerik:RadOutlookBarItem>
+{{region xaml-radoutlookbar-resizing_1}}
+	<telerik:RadOutlookBar ActiveItemsMaxCount="1"
+	                       ItemPositionChanged="RadOutlookBar1_ItemPositionChanged">
+	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
+	        <TextBlock Text="Item 1 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 2" 
+	                               Icon="Letter.png"
+	                               IsSelected="True">
+	        <TextBlock Text="Item 2 Content" />
+	    </telerik:RadOutlookBarItem>
+	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
+	        <TextBlock Text="Item 3 Content" />
+	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
 {{endregion}}
 
 #### __C#__
-{{region radoutlookbar-resizing_0}}
+{{region cs-radoutlookbar-resizing_2}}
 	private void RadOutlookBar1_ItemPositionChanged(object sender, PositionChangedEventArgs e)
 	{
 		RadOutlookBarItem outlookBarItem = e.OriginalSource as RadOutlookBarItem;
@@ -70,11 +69,11 @@ To handle the changes in the position of the item you can subscribe to the __Ite
 {{endregion}}
 
 #### __VB.NET__
-{{region radoutlookbar-resizing_0}}
+{{region vb-radoutlookbar-resizing_3}}
 	Private Sub RadOutlookBar1_ItemPositionChanged(ByVal sender As Object, ByVal e As PositionChangedEventArgs)
-		Dim outlookBarItem As RadOutlookBarItem = TryCast(e.OriginalSource, RadOutlookBarItem)
-		Dim oldPosition As OutlookBarItemPosition = e.OldPosition
-		Dim newPosition As OutlookBarItemPosition = e.NewPosition
+	    Dim outlookBarItem As RadOutlookBarItem = TryCast(e.OriginalSource, RadOutlookBarItem)
+	    Dim oldPosition As OutlookBarItemPosition = e.OldPosition
+	    Dim newPosition As OutlookBarItemPosition = e.NewPosition
 	End Sub
 {{endregion}}
 

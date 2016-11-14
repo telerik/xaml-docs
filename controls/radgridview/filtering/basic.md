@@ -10,13 +10,27 @@ position: 9
 
 # Basic Filtering
 
+This article will go through the following topics:
+
+* [Filter Modes](#filter-modes)
+
+* [FilterMemberPath](#filtermemberpath)
+
+* [OptimizeDistinctFilterQuery](#optimizedistinctfilterquery)
+
 RadGridView provides built-in filtering functionality, which allows the user to easily filter data by one or more columns. Filtering will be enabled out-of-the-box for most .NET primitive types such as strings, numeric types, DateTimes and so on.
 
 > If you want to filter a column which is bound to a custom type, the type will have to meet some requirements which are described [here]({%slug gridview-filtering-howto-filter-a-custom-type%}). 
 
 You can use the [IsFilteringAllowed]({%slug gridview-filtering-howto-disable-filtering-for-the-entire-grid%}) property of RadGridView to disable filtering altogether. To disable the filtering of a specific column you can use the [IsFilterable]({%slug gridview-filtering-disable-filtering-for-a-specific-column%}) property of the column.
 
-There are two built-in filtering modes which you can choose from by setting the FilteringMode property of RadGridView.
+## Filter Modes
+
+There are two built-in filtering modes which you can choose from by setting the __FilteringMode__ property of __RadGridView__.
+
+* [Popup Filtering](#popup-filtering)
+
+* [Filter Row](#filter-row)
 
 ## Popup Filtering
 
@@ -83,7 +97,11 @@ __Example 1__ shows how to specify the **FilterMemberPath** for the column to fi
 	  <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" FilterMemberPath="PropertyToFilterOn"/>
 {{endregion}}
 
-# See Also
+## OptimizeDistinctFilterQuery
+
+By default, a condition of the form __'Member IsEqualTo Value'__ is generated for each distinct value selected. Then, all such conditions are combined with the __OR operator__. When the amount of distinct values checked grows, the query might become very slow. Setting the __OptimizeDistinctFilterQuery__ property of __GridViewColumn__ to __True__ will check the amount of distinct values checked. If this amount is less than or equal to half of all distinct values, the original query will be generated. If, however, the amount of distinct values checked is more than half of all distinct values, an inverted statement like this will be generated: __(Member IsNotEqualTo uncheckedDistinctValue_0) ... AND ... (Member IsNotEqualTo uncheckedDistinctValue_N)__. If absolutely all distinct values are checked, then no statement will be generated at all, because this effectively means that there is no filter applied. Setting this property to __True__ will try to generate the shortest possible __LINQ Where clause__. 
+
+## See Also
 
  * [Visual Structure]({%slug gridview-visual-structure%})
 

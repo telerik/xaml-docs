@@ -38,7 +38,7 @@ First you have to define your __RadDateTimePicker__ control and point out that y
 
 #### __XAML__
 
-{{region raddatetimepicker-how-to-implement-custom-parsing_0}}
+{{region xaml-raddatetimepicker-how-to-implement-custom-parsing_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
 	                           ParseDateTimeValue="radDateTimePicker_ParseDateTimeValue"/>
 {{endregion}}
@@ -47,21 +47,21 @@ Then in the event handler you can provide the parsing logic. For the current exa
 
 #### __C#__
 
-{{region raddatetimepicker-how-to-implement-custom-parsing_1}}
-	private void radDateTimePicker_ParseDateTimeValue( object sender, Telerik.Windows.Controls.ParseDateTimeEventArgs args )
+{{region cs-raddatetimepicker-how-to-implement-custom-parsing_1}}
+	private void radDateTimePicker_ParseDateTimeValue(object sender, Telerik.Windows.Controls.ParseDateTimeEventArgs args)
 	{
 	    string input = args.TextToParse.ToLower();
 	    System.Globalization.DateTimeFormatInfo formatInfo = new System.Globalization.DateTimeFormatInfo();
 	    int monthIndex = 1;
-	    foreach ( string month in formatInfo.MonthNames )
+	    foreach (string month in formatInfo.MonthNames)
 	    {
-	        if ( input.Contains(month.ToLower()) == true )
+	        if (input.Contains(month.ToLower()) == true)
 	            break;
 	        monthIndex++;
 	    }
-	    if ( monthIndex < 12 )
+	    if (monthIndex < 12)
 	    {
-	        args.Result = new DateTime( 2010, monthIndex, 1 );
+	        args.Result = new DateTime(2010, monthIndex, 1);
 	    }
 	    else
 	    {
@@ -72,24 +72,24 @@ Then in the event handler you can provide the parsing logic. For the current exa
 
 #### __VB.NET__
 
-{{region raddatetimepicker-how-to-implement-custom-parsing_2}}
+{{region vb-raddatetimepicker-how-to-implement-custom-parsing_2}}
 	Private Sub radDateTimePicker_ParseDateTimeValue(sender As Object, args As Telerik.Windows.Controls.ParseDateTimeEventArgs)
-	 Dim input As String = args.TextToParse.ToLower()
-	 Dim formatInfo As New System.Globalization.DateTimeFormatInfo()
-	 Dim monthIndex As Integer = 1
-	 For Each month As String In formatInfo.MonthNames
-	  If input.Contains(month.ToLower()) = True Then
-	   Exit For
-	  End If
-	  monthIndex += 1
-	 Next
-	 If monthIndex < 12 Then
-	  args.Result = New DateTime(2010, monthIndex, 1)
-	 Else
-	  args.IsParsingSuccessful = False
-	 End If
+	    Dim input As String = args.TextToParse.ToLower()
+	    Dim formatInfo As New System.Globalization.DateTimeFormatInfo()
+	    Dim monthIndex As Integer = 1
+	    For Each month As String In formatInfo.MonthNames
+	        If input.Contains(month.ToLower()) = True Then
+	            Exit For
+	        End If
+	        monthIndex += 1
+	    Next
+	    If monthIndex < 12 Then
+	        args.Result = New DateTime(2010, monthIndex, 1)
+	    Else
+	        args.IsParsingSuccessful = False
+	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 	
 Here is the result:
 

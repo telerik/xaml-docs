@@ -37,50 +37,48 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 
 #### __[C#]  Preparing the data__
 
-{{region raddesktopalert-menuitemssource_0}}
-	public ObservableCollection<DesktopAlertMenuItem> GetDesktopAlertMenuItems()
+{{region cs-raddesktopalert-menuitemssource_0}}
+	public static ObservableCollection<DesktopAlertMenuItem> GetDesktopAlertMenuItems()
 	{
-		ObservableCollection<DesktopAlertMenuItem> items = new ObservableCollection<DesktopAlertMenuItem>();
-		DesktopAlertMenuItem copyItem = new DesktopAlertMenuItem()
-		{
-			Header = "Copy",
-		};
-		items.Add(copyItem);
-		DesktopAlertMenuItem pasteItem = new DesktopAlertMenuItem()
-		{
-			Header = "Paste",
-		};
-		items.Add(pasteItem);
-		DesktopAlertMenuItem separatorItem = new DesktopAlertMenuItem()
-		{
-			IsSeparator = true
-		};
-		items.Add(separatorItem);
-		DesktopAlertMenuItem cutItem = new DesktopAlertMenuItem()
-		{
-			Header = "Cut",
-		};
-		items.Add(cutItem);
-
-		return items;
+	    ObservableCollection<DesktopAlertMenuItem> items = new ObservableCollection<DesktopAlertMenuItem>();
+	    DesktopAlertMenuItem copyItem = new DesktopAlertMenuItem()
+	    {
+	        Header = "Copy",
+	    };
+	    items.Add(copyItem);
+	    DesktopAlertMenuItem pasteItem = new DesktopAlertMenuItem()
+	    {
+	        Header = "Paste",
+	    };
+	    items.Add(pasteItem);
+	    DesktopAlertMenuItem separatorItem = new DesktopAlertMenuItem()
+	    {
+	        IsSeparator = true
+	    };
+	    items.Add(separatorItem);
+	    DesktopAlertMenuItem cutItem = new DesktopAlertMenuItem()
+	    {
+	        Header = "Cut",
+	    };
+	    items.Add(cutItem);
+	    return items;
 	}
 {{endregion}}
 
 #### __[VB]  Preparing the data__
 
-{{region raddesktopalert-menuitemssource_0}}
+{{region vb-raddesktopalert-menuitemssource_0}}
 	Public Function GetDesktopAlertMenuItems() As ObservableCollection(Of DesktopAlertMenuItem)
-		Dim items As New ObservableCollection(Of DesktopAlertMenuItem)()
-		Dim copyItem As New DesktopAlertMenuItem() With {.Header = "Copy"}
-		items.Add(copyItem)
-		Dim pasteItem As New DesktopAlertMenuItem() With {.Header = "Paste"}
-		items.Add(pasteItem)
-		Dim separatorItem As New DesktopAlertMenuItem() With {.IsSeparator = True}
-		items.Add(separatorItem)
-		Dim cutItem As New DesktopAlertMenuItem() With {.Header = "Cut"}
-		items.Add(cutItem)
-
-		Return items
+	    Dim items As New ObservableCollection(Of DesktopAlertMenuItem)()
+	    Dim copyItem As New DesktopAlertMenuItem() With {.Header = "Copy"}
+	    items.Add(copyItem)
+	    Dim pasteItem As New DesktopAlertMenuItem() With {.Header = "Paste"}
+	    items.Add(pasteItem)
+	    Dim separatorItem As New DesktopAlertMenuItem() With {.IsSeparator = True}
+	    items.Add(separatorItem)
+	    Dim cutItem As New DesktopAlertMenuItem() With {.Header = "Cut"}
+	    items.Add(cutItem)
+	    Return items
 	End Function
 {{endregion}}
 
@@ -88,14 +86,14 @@ Finally, you need to pass the generated collection to the __MenuItemsSource__:
 
 #### __[C#]  Setting MenuItemsSource__
 
-{{region raddesktopalert-menuitemssource_1}}
-	this.Alert.MenuItemsSource = GetDesktopAlertMenuItems();
+{{region cs-raddesktopalert-menuitemssource_1}}
+	alert.MenuItemsSource = GetDesktopAlertMenuItems();
 {{endregion}}
 
 #### __[VB]  Setting MenuItemsSource__
 
-{{region raddesktopalert-menuitemssource_1}}
-	Me.Alert.MenuItemsSource = GetDesktopAlertMenuItems()
+{{region vb-raddesktopalert-menuitemssource_1}}
+	alert.MenuItemsSource = GetDesktopAlertMenuItems()
 {{endregion}}
 
 __Figure 2:__ RadDesktopAlert with set MenuItemsSource
@@ -107,22 +105,22 @@ In order to visualize the data in the menu of __RadDeskotopAlert__ you could als
 
 #### __XAML Setting MenuItemsSource___
 
-{{region raddesktopalert-menuitemssource_0}}
+{{region xaml-raddesktopalert-menuitemssource_0}}
 	<Style x:Key="DesktopAlertMenuItemContainerStyle" TargetType="telerik:RadMenuItem">
-		<Setter Property="Header" Value="{Binding Header}"/>
-		<Setter Property="Command" Value="{Binding Command}" />
-		<Setter Property="CommandParameter" Value="{Binding CommandParameter}" />
-		<Setter Property="IsSeparator" Value="{Binding IsSeparator}" />
-		<Setter Property="IsCheckable" Value="{Binding IsCheckable}" />
-		<Setter Property="IsChecked" Value="{Binding IsChecked}" />
-		<Setter Property="Icon" Value="{Binding IconUrl}" />
-		<Setter Property="IconTemplate">
-			<Setter.Value>
-				<DataTemplate>
-					<Image Source="{Binding}" Stretch="None"/>
-				</DataTemplate>
-			</Setter.Value>
-		</Setter>
+	    <Setter Property="Header" Value="{Binding Header}"/>
+	    <Setter Property="Command" Value="{Binding Command}" />
+	    <Setter Property="CommandParameter" Value="{Binding CommandParameter}" />
+	    <Setter Property="IsSeparator" Value="{Binding IsSeparator}" />
+	    <Setter Property="IsCheckable" Value="{Binding IsCheckable}" />
+	    <Setter Property="IsChecked" Value="{Binding IsChecked}" />
+	    <Setter Property="Icon" Value="{Binding IconUrl}" />
+	    <Setter Property="IconTemplate">
+	        <Setter.Value>
+	            <DataTemplate>
+	                <Image Source="{Binding}" Stretch="None"/>
+	            </DataTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
 {{endregion}}
 
@@ -130,20 +128,20 @@ In order to use the created style with __RadDeskotopAlert__ , you have to set it
 
 #### __[C#]  Setting MenuItemContainerStyle__
 
-{{region raddesktopalert-menuitemssource_2}}
-	RadDesktopAlert Alert = new RadDesktopAlert();
-	this.Alert.ShowMenuButton = true;
-	this.Alert.MenuItemsSource = GetDesktopAlertMenuItems();
-	this.Alert.MenuItemContainerStyle = this.Resources["DesktopAlertMenuItemContainerStyle"] as Style;
+{{region cs-raddesktopalert-menuitemssource_2}}
+	var alert = new RadDesktopAlert();
+	alert.ShowMenuButton = true;
+	alert.MenuItemsSource = GetDesktopAlertMenuItems();
+	alert.MenuItemContainerStyle = this.Resources["DesktopAlertMenuItemContainerStyle"] as Style;
 {{endregion}}
 
 #### __[VB]  Setting MenuItemContainerStyle__
 
-{{region raddesktopalert-menuitemssource_2}}
-	Dim Alert As New RadDesktopAlert()
-	Me.Alert.ShowMenuButton = True
-	Me.Alert.MenuItemsSource = GetDesktopAlertMenuItems()
-	Me.Alert.MenuItemContainerStyle = TryCast(Me.Resources("DesktopAlertMenuItemContainerStyle"), Style)
+{{region vb-raddesktopalert-menuitemssource_2}}
+	Dim alert = New RadDesktopAlert()
+	alert.ShowMenuButton = True
+	alert.MenuItemsSource = GetDesktopAlertMenuItems()
+	alert.MenuItemContainerStyle = TryCast(Me.Resources("DesktopAlertMenuItemContainerStyle"), Style)
 {{endregion}}
 
 # See Also

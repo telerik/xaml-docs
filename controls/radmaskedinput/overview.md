@@ -35,7 +35,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Undo/Redo Support__ - all __RadMaskedInput__ controls support Undo/Redo operations. You can simply press the Ctrl+Z / Ctrl+Y key combination to take advantage of this feature
 
-# See Also
+## See Also
  * [GettingStarted]({%slug radmaskedinput-getting-started%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
  * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})

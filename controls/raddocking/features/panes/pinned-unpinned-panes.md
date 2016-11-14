@@ -20,19 +20,19 @@ You can also change the pin state of a __RadPane__ programmatically using the __
 
 #### __XAML__
 
-{{region raddocking-panes-pinned-unpinned-panes_0}}
+{{region xaml-raddocking-panes-pinned-unpinned-panes_0}}
 	<telerik:RadPane x:Name="radPane" IsPinned="True"/>
 {{endregion}}
 
 #### __C#__
 
-{{region raddocking-panes-pinned-unpinned-panes_1}}
+{{region cs-raddocking-panes-pinned-unpinned-panes_1}}
 	radPane.IsPinned = true;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-panes-pinned-unpinned-panes_2}}
+{{region vb-raddocking-panes-pinned-unpinned-panes_2}}
 	radPane.IsPinned = True
 {{endregion}}
 
@@ -66,19 +66,19 @@ If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ p
 
 #### __XAML__
 
-{{region raddocking-panes-pinned-unpinned-panes_3}}
-	<telerik:RadPane x:Name="radPane" CanUserPin="False"/>
+{{region xaml-raddocking-panes-pinned-unpinned-panes_3}}
+	<telerik:RadPane x:Name="radPane1" CanUserPin="False"/>
 {{endregion}}
 
 #### __C#__
 
-{{region raddocking-panes-pinned-unpinned-panes_4}}
+{{region cs-raddocking-panes-pinned-unpinned-panes_4}}
 	radPane.CanUserPin = false;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region raddocking-panes-pinned-unpinned-panes_5}}
+{{region vb-raddocking-panes-pinned-unpinned-panes_5}}
 	radPane.CanUserPin = False
 {{endregion}}
 

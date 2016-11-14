@@ -24,7 +24,7 @@ __RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-lev
 
 #### __XAML__
 
-{{region radmenu-features-menuitems_0}}
+{{region xaml-radmenu-features-menuitems_0}}
 	<telerik:RadMenu>
 	    <!--1-->
 	    <telerik:RadMenuItem Header="File" />
@@ -58,7 +58,7 @@ __RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as conta
 
 #### __XAML__
 
-{{region radmenu-features-menuitems_1}}
+{{region xaml-radmenu-features-menuitems_1}}
 	<telerik:RadMenu VerticalAlignment="Top">
 	    <telerik:RadMenuItem Header="Shapes" />
 	    <telerik:RadMenuItem Header="Sizes">
@@ -81,7 +81,7 @@ __RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item u
 
 #### __XAML__
 
-{{region radmenu-features-menuitems_2}}
+{{region xaml-radmenu-features-menuitems_2}}
 	<telerik:RadMenu>
 	    ...
 	    <telerik:RadMenuSeparatorItem />

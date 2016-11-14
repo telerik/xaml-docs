@@ -35,17 +35,16 @@ Still, there is a way to set the CurrentCulture and apply the format you would l
 #### __[VB.NET] Example 1: Defining custom formatting__
 
 {{region vb-gridview-how-to-custom-format_0}}
-
-	    Dim cultureInfo As New System.Globalization.CultureInfo("en-US")
-            Dim dateTimeInfo As New System.Globalization.DateTimeFormatInfo()
-            dateTimeInfo.LongDatePattern = "dd--MMM--yyyy"
-            dateTimeInfo.ShortDatePattern = "dd--MMM--yy"
-            cultureInfo.DateTimeFormat = dateTimeInfo
-            cultureInfo.NumberFormat.NumberGroupSeparator = "/"
-            cultureInfo.NumberFormat.NegativeSign = "/"
-
-            Thread.CurrentThread.CurrentCulture = cultureInfo
-            Thread.CurrentThread.CurrentUICulture = cultureInfo
+	Dim cultureInfo As New System.Globalization.CultureInfo("en-US")
+	Dim dateTimeInfo As New System.Globalization.DateTimeFormatInfo()
+	dateTimeInfo.LongDatePattern = "dd--MMM--yyyy"
+	dateTimeInfo.ShortDatePattern = "dd--MMM--yy"
+	cultureInfo.DateTimeFormat = dateTimeInfo
+	cultureInfo.NumberFormat.NumberGroupSeparator = "/"
+	cultureInfo.NumberFormat.NegativeSign = "/"
+	
+	Thread.CurrentThread.CurrentCulture = cultureInfo
+	Thread.CurrentThread.CurrentUICulture = cultureInfo
 {{endregion}}
 
 __Figure 1__: RadGridView displaying data with IsLocalizationLanguageRespected set to True

@@ -119,7 +119,7 @@ The __ContextMenuContentBuilder__ class exposes several method overrides which c
 * __`CreateTextEditCommands`__: This method creates the groups containing menu items with commands related to the text editing.
 * __`CreateTrackChangesCommands`__: This method creates the groups containing menu items with commands related to the track changes.
 
-> If you prefer, instead of deriving from the __ContextMenuContentBuilder__ class the custom builder can implement the __IContextMenuContentBuilder__ interface and construct the groups from scratch.
+> If you prefer, instead of deriving from the __ContextMenuContentBuilder__ class, the custom builder can implement the __IContextMenuContentBuilder__ interface and construct the groups from scratch.
 
 ## See Also
 * [Getting Started]({%slug radrichtextbox-getting-started%})

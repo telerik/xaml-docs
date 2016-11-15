@@ -34,13 +34,13 @@ The RichTextBox default context menu can be fully replaced by an object that imp
 You can customize the default context menu by subscribing for its __Showing__ event. The following example shows how to add menu items.
 
 #### __[C#] Example 2: Subscribing to the Showing event__
-	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.richTextBox.ContextMenu;
+	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
 	contextMenu.Showing += RichTextBox_ContextMenuShowing;
 	
 #### __[C#] Example 3: Adding and removing menu items__
 	private void RichTextBox_ContextMenuShowing(object sender, Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs e)
 	{
-		if (!this.richTextBox.Document.Selection.IsEmpty)
+		if (!this.radRichTextBox.Document.Selection.IsEmpty)
 		{
 			RadMenuItem menuItem = new RadMenuItem()
 			{
@@ -56,7 +56,7 @@ You can customize the default context menu by subscribing for its __Showing__ ev
 
 	private void OnChangeSelectionForeground(object sender, RadRoutedEventArgs e)
 	{
-		this.richTextBox.ChangeTextForeColor(Colors.Red);
+		this.radRichTextBox.ChangeTextForeColor(Colors.Red);
 	}
 	
 The Showing event is not presented in the IContextMenu interface so you will need to cast the ContextMenu property to __Telerik.Windows.Controls.RichTextBoxUI.ContextMenu__.
@@ -98,7 +98,7 @@ You can customize the default context menu by creating a custom content builder 
     }
 	
 #### __[C#] Example 5: Setting the content builder__
-	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.richTextBox.ContextMenu;
+	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
 	contextMenu.ContentBuilder = new CustomContextMenuBuilder();
 			
 __Figure 2__ shows how this modification affects the context menu.

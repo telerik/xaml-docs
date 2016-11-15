@@ -64,7 +64,7 @@ The Showing event is not presented in the IContextMenu interface so you will nee
 #### __Figure 2: Executing the action of the new added item__  
 ![](images/radrichtextbox-features-contextmenu-02.png)
 	
-You can also use this approach also to remove or modify menu groups and items. They can be accessed via the __ContextMenuGroupCollection__ property of the event arguments.
+You can use this approach also to remove or modify menu groups and items. They can be accessed via the __ContextMenuGroupCollection__ property of the event arguments.
 
 ## Creating Custom Content Builder
 

@@ -48,7 +48,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	{% if site.site_name == 'Silverlight' %}The printing feature allows you to choose between HTML printing for better performance and the Silverlight printing.{% endif %}{% if site.site_name == 'WPF' %}The printing feature allows you to use the native printing implementation of WPF{% endif %}. For more information, see the [Guidelines for Printing with RadDocument]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}) article.
 
 * __Multi-level Undo/Redo Support__
-	Telerik __RadRichTextBox__ provides multilevel Undo/Redo support which allows past actions to be reviewed and reversed. Same as in MS Word. For more information, see the [History]({%slug radrichtextbox-features-history%}) article.
+	Telerik __RadRichTextBox__ provides multilevel Undo/Redo support which allows past actions to be reviewed and reversed.For more information, see the [History]({%slug radrichtextbox-features-history%}) article.
 
 * __Three types of layout__
 	There are three layout types supported by the rich text box conrol - Paged, Flow (as text in an HTML page viewed in a browser) and FlowNoWrap. For more information, see the [Layout Modes]({%slug radrichtextbox-features-layout-modes%}) help article.
@@ -60,7 +60,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	{% if site.site_name == 'WPF' %} The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc.{% endif %} For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article.
 
 * __Import/export__
-	Telerik RadRichTextBox allows you to load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats. The control also supports export to PDF. For more information, see the [Import/Export]({%slug radrichtextbox-features-import-export%}) article.
+	Telerik RadRichTextBox allows you to load XAML, HTML, RTF, DOCX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats. The control also supports export to PDF. For more information, see the [Import/Export]({%slug radrichtextbox-features-import-export%}) article.
 
 * __Headers and Footers__ 
 	RadRichTextBox supports headers and footers in its document. For more information, see the [Headers and Footers]({%slug radrichtextbox-features-headers-and-footers%}) article.

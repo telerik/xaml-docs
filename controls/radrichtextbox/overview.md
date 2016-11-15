@@ -33,7 +33,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	For more information, see the [InlineUIContainer]({%slug radrichtextbox-features-document-elements-inlineuicontainer%}) article. You can also see the [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%}) and [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%}) articles.
 
 * __Table support__
-	The control allows you to display and create tables. This feature includes also support for nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width and more. For more information, see the [Table]({%slug radrichtextbox-features-document-elements-tables%}) article.
+	The control allows you to display and create tables. This feature includes also support for nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width, header row repeating on new pages, and more. For more information, see the [Table]({%slug radrichtextbox-features-document-elements-tables%}) article.
 
 * __Context menu__
 	A standard context menu is provided out of the box, but it can be easily customized or replaced with a user-defined menu. For more information, see the [Context Menu]({%slug radrichtextbox-features-context-menu%}) article.

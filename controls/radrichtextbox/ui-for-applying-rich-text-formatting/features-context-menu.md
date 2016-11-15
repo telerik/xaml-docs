@@ -106,18 +106,18 @@ __Figure 2__ shows how this modification affects the context menu.
 The __ContextMenuContentBuilder__ class exposes several method overrides which can be used to customize different groups from the context menu. The following list contains the overrides with short descriptions.
 
 * __`Construct`__: This method creates all groups allowed in the specific context determined by the RadRichTextBox control.
-* __`CreateClipboardCommands`__: This method creates the groups containing menu items with clipboard commands (copy, cut, paste, etc.).
-* __`CreateCodeBlockCommands`__: This method creates the groups containing menu items with code block commands.
-* __`CreateFieldCommands`__: This method creates the groups containing menu items with field commands.
-* __`CreateFloatingBlockCommands`__: This method creates the groups containing menu items with floating block commands.
-* __`CreateHeaderFooterCommands`__: This method creates the groups containing menu items with header/footer commands.
-* __`CreateHyperlinkCommands`__: This method creates the groups containing menu items with hyperlink commands.
-* __`CreateImageCommands`__: This method creates the groups containing menu items with image commands.
-* __`CreateListCommands`__: This method creates the groups containing menu items with list commands.
-* __`CreateSpellCheckingSuggestions`__: This method creates the groups containing menu items with spellchecking suggestions commands.
-* __`CreateTableCommands`__: This method creates the groups containing menu items with table commands.
-* __`CreateTextEditCommands`__: This method creates the groups containing menu items with text edit commands.
-* __`CreateTrackChangesCommands`__: This method creates the groups containing menu items with track changes commands.
+* __`CreateClipboardCommands`__: This method creates the groups containing menu items with commands related to the clipboard (copy, cut, paste, etc.).
+* __`CreateCodeBlockCommands`__: This method creates the groups containing menu items with commands related to the code blocks.
+* __`CreateFieldCommands`__: This method creates the groups containing menu items with commands related to the fields.
+* __`CreateFloatingBlockCommands`__: This method creates the groups containing menu items with commands related to the floating blocks.
+* __`CreateHeaderFooterCommands`__: This method creates the groups containing menu items with commands related to the headers/footers.
+* __`CreateHyperlinkCommands`__: This method creates the groups containing menu items with commands related to the hyperlinks.
+* __`CreateImageCommands`__: This method creates the groups containing menu items with commands related to the images.
+* __`CreateListCommands`__: This method creates the groups containing menu items with commands related to the lists.
+* __`CreateSpellCheckingSuggestions`__: This method creates the groups containing menu items with commands releated to the spellchecking suggestions.
+* __`CreateTableCommands`__: This method creates the groups containing menu items with commands related to the tables.
+* __`CreateTextEditCommands`__: This method creates the groups containing menu items with commands related to the text editing.
+* __`CreateTrackChangesCommands`__: This method creates the groups containing menu items with commands related to the track changes.
 
 > If you prefer, instead of deriving from the __ContextMenuContentBuilder__ class the custom builder can implement the __IContextMenuContentBuilder__ interface and construct the groups from scratch.
 

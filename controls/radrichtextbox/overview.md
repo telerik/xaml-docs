@@ -66,7 +66,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	RadRichTextBox supports headers and footers in its document. For more information, see the [Headers and Footers]({%slug radrichtextbox-features-headers-and-footers%}) article.
 
 * __Track changes__
-	Support for tracking changes as formatting changes, adding and removing text, images, hyperlinks, tables, etc. This features is useful when different people are working on the same document. For more information, see the [Track Changes]({%slug radrichtextbox-features-track-changes%}) article.
+	Support for tracking changes as formatting changes, adding and removing text, images, hyperlinks, tables, etc. This feature is useful when different people are working on the same document. For more information, see the [Track Changes]({%slug radrichtextbox-features-track-changes%}) article.
 
 * __Bookmarks__
 	The control provides easy retrieval of previously marked parts of the document. For more information, see the [Bookmarks]({%slug radrichtextbox-features-document-elements-bookmarks%}) article.
@@ -83,7 +83,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Custom annotations__
 	You can extend the document model in order to serve specific needs. For more information, see the [Annotations Overview]({%slug radrichtextbox-features-document-elements-annotations%}) article.
 
-* __Footnotes and Endnotes__	
+* __Footnotes and Endnotes__
 	This feature is usually used to show the source of a material or add an explanation. For more information, see the [Footnotes and Endnotes]({%slug radrichtextbox-features-footnotes-endnotes%}) article.
 
 * __Bibliographic references__
@@ -98,7 +98,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Document variables__
 	The control provides a mechanism used for storing information in the document. For more information, see the [Document Variables]({%slug radrichtextbox-features-document-variables%}) article.
 
-* __Code blocks__ 
+* __Code blocks__
 	This feature allows you to add source code fragments in a document. For more information, see the [Code Block]({%slug radrichtextbox-features-code-block%}) article.
 
 ## See Also

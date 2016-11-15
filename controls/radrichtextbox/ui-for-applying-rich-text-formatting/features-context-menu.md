@@ -29,7 +29,7 @@ The RichTextBox default context menu can be fully replaced by an object that imp
 * [Using the Showing event](#using-the-showing-event)
 * [Creating custom content builder](#creating-custom-content-builder)
 
-## Using the Showing event
+## Using the Showing Event
 
 You can customize the default context menu by subscribing for its __Showing__ event. The following example shows how to add menu items.
 
@@ -66,7 +66,7 @@ The Showing event is not presented in the IContextMenu interface so you will nee
 	
 You can also use this approach also to remove or modify menu groups and items. They can be accessed via the __ContextMenuGroupCollection__ property of the event arguments.
 
-## Creating custom content builder
+## Creating Custom Content Builder
 
 You can customize the default context menu by creating a custom content builder and assign it to the __ContentBuilder__ property of the __ContextMenu__. 
 

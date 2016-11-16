@@ -14,7 +14,7 @@ RadGridView provides a set of built-in commands that enables you to easily handl
 
 All supported commands are defined in the **RadGridViewCommands** class and are listed below:
 
-* __ActivateRow__: Activates a particular row programmatically and fires RadGridView's __RowActivated__ event.
+* __ActivateRow__: Activates a particular row programmatically and fires RadGridView's __RowActivated__ event as if the user has double-clicked it.
 
 * __BeginEdit__: Invokes editing of the current cell.
 
@@ -64,7 +64,7 @@ All supported commands are defined in the **RadGridViewCommands** class and are 
 
 * __TogglePinnedRowState__: Add/Remove the current row from the collection of pinned rows.
 
-As the commands provided by __RadGridView__ are __ICommands__ at their core, they do provide methods both for checking if they can be invoked - __CanExecute()__ and for invoking it - __Execute()__.
+As the commands provided by __RadGridView__ are __ICommands__ at their core, they do provide methods for  both checking if they can be invoked - __CanExecute()__ and for invoking them - __Execute()__.
 
 Using the __RadGridViewCommands__ class, you can set a sequence of commands to be performed one after another.  So, for example, you may easily handle the **Click** event of a button, move the focus down, select the current unit and then delete it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element as shown in **Exapmle 1**.
 

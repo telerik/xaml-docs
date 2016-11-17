@@ -475,6 +475,8 @@ navigation:
         title: RadTileView
     controls/radtoolbar:
         title: RadToolBar
+    controls/radtoolbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radtooltip:
         title: RadToolTip
     controls/radtimebar:

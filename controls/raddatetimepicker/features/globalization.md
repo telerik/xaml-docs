@@ -1,18 +1,18 @@
 ---
-title: Calendar Support
-page_title: Calendar Support
-description: Calendar Support
-slug: radcalendar-calendar-support
-tags: calendar-support
+title: Globalization
+page_title: Globalization
+description: Globalization
+slug: radcalendar-globalization
+tags: globalization
 published: True
 position: 1
 ---
 
-# Calendar Support
+# Globalization
 
 As of **R1 2017** RadDateTimePicker can display and parse dates from all .NET Framework calendar implementations.
 
->A full list of the supported calendars as well as an example of how to set their culture can be found in [the respective RadCalendar article]({%slug radcalendar-calendar-support%}).
+>A full list of the supported calendars as well as examples of how to set them up can be found in [the respective RadCalendar article]({%slug radcalendar-calendar-support%}).
 
 **Figure 1** demonstrates the parsing of DateTime values for the Hijri calendar.
 

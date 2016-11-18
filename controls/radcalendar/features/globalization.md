@@ -1,14 +1,14 @@
 ---
-title: Calendar Support
-page_title: Calendar Support
-description: Calendar Support
-slug: radcalendar-calendar-support
-tags: calendar-support
+title: Globalization
+page_title: Globalization
+description: Globalization
+slug: radcalendar-globalization
+tags: globalization
 published: True
 position: 1
 ---
 
-# Calendar Support
+# Globalization
 
 As of **R1 2017** RadCalendar supports the following .NET Framework calendar implementations:
 

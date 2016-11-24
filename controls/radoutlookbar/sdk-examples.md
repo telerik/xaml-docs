@@ -5,7 +5,7 @@ description: Developer Focused Examples
 slug: radoutlookbar-sdk-examples
 tags: sdk,examples
 published: True
-position: 1
+position: 3
 ---
 
 # Developer Focused Examples

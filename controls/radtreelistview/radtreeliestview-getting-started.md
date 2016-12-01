@@ -352,7 +352,8 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 
 {{region radtreeliestview-getting-started_10}}
 
-	<telerik:RadTreeListView x:Name="radTreeListView">
+	<telerik:RadTreeListView x:Name="radTreeListView"
+	                            ItemsSource="{Binding WarehouseItems}">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
 	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
 	    </telerik:RadTreeListView.ChildTableDefinitions>
@@ -368,7 +369,8 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 {{region radtreeliestview-getting-started_11}}
 
 	<telerik:RadTreeListView x:Name="radTreeListView"
-	                            AutoGenerateColumns="False">
+	                            AutoGenerateColumns="False"
+				    ItemsSource="{Binding WarehouseItems}">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
 	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
 	    </telerik:RadTreeListView.ChildTableDefinitions>

@@ -131,7 +131,7 @@ When you try to enter an order number that has fewer than five characters, you s
 
 When you set the __e.IsValid__ property to __False__, this will cancel the editing process and will return focus to the invalid __GridViewCell__. After this UI layer validation is successful (__e.IsValid__ is __True__, which is the default value). Then the Data layer validation occurs. This is the validation that is built into the business object implementation.
 
->important If you have set a **CellEditTemplate** for the cell`s column, the **e.NewValue** argument will always be **null**. You can get the new value through the **e.EditingElement** parameter.         
+>important If the edited cell's column has a **CellEditTemplate** set, the **e.NewValue** argument will always be **null**. You can get the new value through the **e.EditingElement** parameter instead.         
 
 ## Validating Data on a Property Level
 

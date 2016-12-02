@@ -145,6 +145,7 @@ DragResizeSummarySlotHighlight	|	DragResizeSummarySlotHighlightContainer
 GanttDragResizeVisualCue	|	GanttDragResizeVisualCue
 GanttPresenterSplitter	|	GanttPresenterSplitter
 ExpandToggleButton	|	ToggleButton
+Deadline		|	DeadlineContainer
 
 ## Examples
 

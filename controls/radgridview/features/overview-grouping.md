@@ -12,12 +12,13 @@ position: 3
 
 __RadGridView__ provides you with a built-in grouping functionality, which allows the user to easily group the data by one or more columns. To do so the user has to just drag the desired column to the __GridViewGroupPanel__, located at the top of the __RadGridView__. If __RadGridView__ is not grouped, the __GridViewGroupPanel__ shows a customizable hint.
 
+#### **Figure 1: Grouped RadGridView**
 
 ![](images/RadGridView_FunctionalOverview_Grouping_1.png)
 
 You can define grouping either in the XAML or in the code-behind.
 
-#### __XAML__
+#### __[XAML] Example 1: Grouping applied through XAML__
 
 {{region xaml-gridview-overview-grouping_0}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -30,10 +31,9 @@ You can define grouping either in the XAML or in the code-behind.
 	</telerik:RadGridView>
 {{endregion}}
 
-
 You can achieve the same result if you define your grouping in the code-behind like this:
 
-#### __C#__
+#### __[C#] Example 1: Grouping applied programmatically__
 
 {{region cs-gridview-overview-grouping_2}}
 	GroupDescriptor descriptor = new GroupDescriptor();
@@ -45,7 +45,7 @@ You can achieve the same result if you define your grouping in the code-behind l
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Grouping applied programmatically__
 
 {{region vb-gridview-overview-grouping_3}}
 	Dim descriptor As New GroupDescriptor()
@@ -57,7 +57,7 @@ You can achieve the same result if you define your grouping in the code-behind l
 {{endregion}}
 
 
->Note that since __GroupDescriptors__ property is a __collection__, you can add more than one __GroupDescriptor__ to a __RadGridView__.
+>Тhe __GroupDescriptors__ property of RadGridView is a __collection__ so you can add more than one __GroupDescriptor__ to a certain __RadGridView__.
 
 >tipConsider using the code-behind approach only when changing the grouping criteria __run-time__.
 

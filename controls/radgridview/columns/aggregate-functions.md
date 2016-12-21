@@ -52,29 +52,26 @@ To display an aggregate function for a certain column, just instantiate the func
 
 #### [XAML] Example 1: Display an aggregate function for a certain column
 
-{{region gridview-columns-aggregate-functions_1}}
-
+{{region xaml-gridview-columns-aggregate-functions_1}}
 	<telerik:GridViewDataColumn Header="ID"
-                                DataMemberBinding="{Binding EmployeeID}"
-                                UniqueName="ID">
-		<telerik:GridViewDataColumn.AggregateFunctions>
-			<telerik:CountFunction Caption="Count: " />
-		</telerik:GridViewDataColumn.AggregateFunctions>
+	                DataMemberBinding="{Binding EmployeeID}"
+	                UniqueName="ID">
+	    <telerik:GridViewDataColumn.AggregateFunctions>
+	        <telerik:CountFunction Caption="Count: " />
+	    </telerik:GridViewDataColumn.AggregateFunctions>
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
 #### [C#] Example 2: Add an aggregate function for a certain column
 
-{{region gridview-columns-aggregate-functions_2}}
-
+{{region cs-gridview-columns-aggregate-functions_2}}
 	CountFunction f = new CountFunction();
 	((GridViewDataColumn)this.radGridView.Columns["ID"]).AggregateFunctions.Add(f);
 {{endregion}}
 
 #### [VB.NET] Example 2: Add an aggregate function for a certain column
 
-{{region gridview-columns-aggregate-functions_3}}
-
+{{region vb-gridview-columns-aggregate-functions_3}}
 	Dim f As New CountFunction()
 	DirectCast(Me.radGridView.Columns("ID"), GridViewDataColumn).AggregateFunctions.Add(f)
 {{endregion}}

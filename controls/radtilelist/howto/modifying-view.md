@@ -27,7 +27,7 @@ __RadTileList__ also suggests an option to further customize the size. For the p
 
 ## VerticalTilesAlignment
 
-RadTileList exposes VerticalTilesAlignment property that controls the position of the tiles independently of the group they belong to. It can be set no matter if being in a grouped state or not. Its type is of type VerticalAlignment and the default value is Center. Modifying it will result in: 
+__RadTileList__ exposes __VerticalTilesAlignment__ property that controls the position of the tiles independently of the group they belong to. It can be set no matter if being in a grouped state or not. Its type is of type __VerticalAlignment__ and the default value is __Center__. Modifying it will result in: 
 
 * Top {% if site.site_name == 'Silverlight' %}
 ![Vertical Tiles Alignment Top SL](images/VerticalTilesAlignment_Top_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
@@ -45,23 +45,27 @@ __RadTileList__ has __GroupTemplate__ property that control the way the header o
 
 For example:        
 
-#### __XAML__
+#### __[XAML] Example 1: Defining the GroupTemplate__
 
-{{region radtilelist-modifying-tilelist-view-0}}
-
+{{region xaml-radtilelist-modifying-tilelist-view-0}}
 			<Grid.Resources>
-				<DataTemplate x:Key="GroupTemplate">
-					<TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF006AC1" FontSize="20"/>
-				</DataTemplate>
+			  <DataTemplate x:Key="ItemTemplate">
+			    <TextBlock Text="{Binding FirstName}"/>
+			  </DataTemplate>
+			  <DataTemplate x:Key="GroupTemplate">
+			    <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF006AC1" FontSize="20"/>
+			  </DataTemplate>
+			  <CollectionViewSource x:Key="GroupedItems" Source="{Binding Employees}">
+			    <CollectionViewSource.GroupDescriptions>
+			      <PropertyGroupDescription PropertyName="Occupation" />
+			    </CollectionViewSource.GroupDescriptions>
+			  </CollectionViewSource>
 			</Grid.Resources>
-	
-			<telerik:RadTileList x:Name="RadTileList" 
-	                      GroupMember="Occupation"
-	                      ItemsSource="{Binding Employees}"
-	                      ItemTemplate="{StaticResource ItemTemplate}"/>
-	
-	
-{{endregion}}
+			<telerik:RadTileList x:Name="RadTileList"
+			              GroupMember="Occupation"
+			              ItemsSource="{Binding Employees}"
+			              ItemTemplate="{StaticResource ItemTemplate}"/>
+	{{endregion}}
 
 
 {% if site.site_name == 'Silverlight' %}
@@ -73,13 +77,12 @@ For example:
 __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether the headers of the groups will be visible or not. Thus, once you set it to collapse, your control will be organized in groups, but will not have any text above:
         
 
-#### __XAML__
+#### __[XAML] Example 2: Setting the GroupHeaderVisibility property__
 
-{{region radtilelist-modifying-tilelist-view-1}}
-
-			<telerik:RadTileList x:Name="RadTileList" 
-	                             GroupHeaderVisibility="Collapsed"/>
-{{endregion}}
+{{region xaml-radtilelist-modifying-tilelist-view-1}}
+			<telerik:RadTileList x:Name="RadTileList1"
+			                     GroupHeaderVisibility="Collapsed"/>
+	{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 ![Group Header Visibility SL](images/GroupHeaderVisibility_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
@@ -90,17 +93,15 @@ __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether t
 __RadTileList__ gives the opportunity to set the height of the headers with a single property __GroupHeaderHeight__.
         
 
-#### __XAML__
+#### __[XAML] Example 3: Setting the GroupHeaderHeight property__
 
-{{region radtilelist-modifying-tilelist-view-2}}
-
-			<telerik:RadTileList x:Name="RadTileList" 
-	                        GroupHeaderHeight="100"
-	                        GroupTemplate="{StaticResource GroupTemplate}"
-	                        ItemsSource="{Binding Source={StaticResource GroupedItems}}"
-	                        ItemTemplate="{StaticResource ItemTemplate}"/>
-	
-{{endregion}}
+{{region xaml-radtilelist-modifying-tilelist-view-2}}
+			<telerik:RadTileList x:Name="RadTileList2"
+			                GroupHeaderHeight="100"
+			                GroupTemplate="{StaticResource GroupTemplate}"
+			                ItemsSource="{Binding Source={StaticResource GroupedItems}}"
+			                ItemTemplate="{StaticResource ItemTemplate}"/>
+	{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 ![Group Header Height SL](images/GroupHeaderHeight_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}

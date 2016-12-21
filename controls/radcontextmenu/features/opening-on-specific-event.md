@@ -16,7 +16,7 @@ Setting the __EventName__ property will make __RadContextMenu__ to listen for a 
 
 #### __XAML__
 
-{{region radcontextmenu-features-opening-on-specific-event_0}}
+{{region xaml-radcontextmenu-features-opening-on-specific-event_0}}
 	<Button Width="100"
 	        Content="Click me!"
 	        VerticalAlignment="Top">

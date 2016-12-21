@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to apply different templates for front and back cover page.
+# How to apply different templates for front and back cover page
 
 Currently __RadBook__ does not expose separate properties for setting templates for the front and back cover pages(first and last pages in RadBook's items collection). In this case, you can use the already available __DataTemplateSelectors__ - __LeftPageTemplateSelector__ and __RightPageTemplateSelector__. Depending on the index of each page, we will decide what template to apply on the page.
 
@@ -28,8 +28,8 @@ For the sake of the example, each template will will have the following structur
 
 This how the four templates look like in XAML code:
 
-#### __XAML__
-{{region radbook-cover-template_0}}
+#### __[XAML] Example 1: Setting up the page templates__  
+{{region xaml-radbook-cover-template_0}}
 	<!--  Front Cover Template  -->
 	<DataTemplate x:Key="FrontCoverTemplate">
 	    <Border BorderBrush="Black" BorderThickness="1">
@@ -133,11 +133,22 @@ This how the four templates look like in XAML code:
 
 The next step is to create two __DataTemplateSelectors__, that will take care of picking the right template out. The first __DataTemplateSelector__ will provide template for the front cover page and every consecutive right page, while the second __DataTemplateSelector__ will provide template for the back cover page and every consecutive left page.
 
-#### __C#__
-{{region radbook-cover-template_1}}
+#### __[C#] Example 2: Defining the template selectors__  
+{{region cs-radbook-cover-template_1}}
+	/// <summary>
+	 /// DataTemplateSelector responsible for picking template for the back cover page and every consecutive left page.
+	 /// </summary>
 	 public class LeftPageTemplateSelector : DataTemplateSelector
 	 {
+	  /// <summary>
+	  /// Gets or sets the back cover template.
+	  /// </summary>
+	  /// <value>The back cover template.</value>
 	  public DataTemplate BackCoverTemplate { get; set; }
+	  /// <summary>
+	  /// Gets or sets template for every left page in the book, except only in the case of a last page.
+	  /// </summary>
+	  /// <value>The left page template.</value>
 	  public DataTemplate LeftPageTemplate { get; set; }
 	  public override DataTemplate SelectTemplate(object item, DependencyObject container)
 	  {
@@ -155,9 +166,20 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 	   }
 	  }
 	 }
+	 /// <summary>
+	 /// DataTemplateSelector responsible for picking template for the fron cover page and every consecutive right page.
+	 /// </summary>
 	 public class RightPageTemplateSelector : DataTemplateSelector
 	 {
+	  /// <summary>
+	  /// Gets or sets the front cover template.
+	  /// </summary>
+	  /// <value>The front cover template.</value>
 	  public DataTemplate FrontCoverTemplate { get; set; }
+	  /// <summary>
+	  /// Gets or sets template for every right page in the book, except only in the case of a first page.
+	  /// </summary>
+	  /// <value>The right page template.</value>
 	  public DataTemplate RightPageTemplate { get; set; }
 	  public override DataTemplate SelectTemplate(object item, DependencyObject container)
 	  {
@@ -175,10 +197,17 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 	 }
 {{endregion}}
 
-#### __VB.NET__
-{{region radbook-cover-template_1}}
+#### __[VB.NET] Example 2: Defining the template selectors__  
+{{region vb-radbook-cover-template_2}}
+	''' <summary> '''
+	''' DataTemplateSelector responsible for picking template for the back cover page and every consecutive left page. '''
+	''' </summary> '''
 	Public Class LeftPageTemplateSelector
 		Inherits DataTemplateSelector
+		''' <summary> '''
+		''' Gets or sets the back cover template. '''
+		''' </summary> '''
+		''' <value>The back cover template.</value> '''
 		Public Property BackCoverTemplate() As DataTemplate
 			Get
 				Return m_BackCoverTemplate
@@ -188,6 +217,10 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			End Set
 		End Property
 		Private m_BackCoverTemplate As DataTemplate
+		''' <summary> '''
+		''' Gets or sets template for every left page in the book, except only in the case of a last page. '''
+		''' </summary> '''
+		''' <value>The left page template.</value> '''
 		Public Property LeftPageTemplate() As DataTemplate
 			Get
 				Return m_LeftPageTemplate
@@ -199,9 +232,9 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 		Private m_LeftPageTemplate As DataTemplate
 		Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 			Dim page As RadBookItem = TryCast(container, RadBookItem)
-			'''we need an instance of the book so that we can determine the whether the current page is the last page.'''
+			' we need an instance of the book so that we can determine the whether the current page is the last page. '
 			Dim book As RadBook = TryCast(System.Windows.Controls.ItemsControl.ItemsControlFromItemContainer(container), RadBook)
-			'''Using the index property, we can determine whether the page is last page or it is one of the inner left pages.'''
+			' Using the index property, we can determine whether the page is last page or it is one of the inner left pages. '
 			If page.Index = book.Items.Count - 1 Then
 				Return Me.BackCoverTemplate
 			Else
@@ -209,8 +242,15 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			End If
 		End Function
 	End Class
+	''' <summary> '''
+	''' DataTemplateSelector responsible for picking template for the fron cover page and every consecutive right page. '''
+	''' </summary> '''
 	Public Class RightPageTemplateSelector
 		Inherits DataTemplateSelector
+		''' <summary> '''
+		''' Gets or sets the front cover template. '''
+		''' </summary> '''
+		''' <value>The front cover template.</value> '''
 		Public Property FrontCoverTemplate() As DataTemplate
 			Get
 				Return m_FrontCoverTemplate
@@ -220,6 +260,10 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			End Set
 		End Property
 		Private m_FrontCoverTemplate As DataTemplate
+		''' <summary> '''
+		''' Gets or sets template for every right page in the book, except only in the case of a first page. '''
+		''' </summary> '''
+		''' <value>The right page template.</value> '''
 		Public Property RightPageTemplate() As DataTemplate
 			Get
 				Return m_RightPageTemplate
@@ -231,7 +275,7 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 		Private m_RightPageTemplate As DataTemplate
 		Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 			Dim page As RadBookItem = TryCast(container, RadBookItem)
-			'''Using the index property, we can determine whether the page is first page or it is one of the inner right pages.'''
+			' Using the index property, we can determine whether the page is first page or it is one of the inner right pages. '
 			If page.Index = 0 Then
 				Return Me.FrontCoverTemplate
 			Else
@@ -243,8 +287,8 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 
 Next, we can instantiate the two template selectors in XAML...
 
-#### __XAML__
-{{region radbook-cover-template_2}}
+#### __[XAML] Example 3: Adding the template selectors in XAML__ 
+{{region xaml-radbook-cover-template_3}}
 	<local:LeftPageTemplateSelector x:Key="LeftPageTemplateSelector"
 			BackCoverTemplate="{StaticResource BackCoverTemplate}" LeftPageTemplate="{StaticResource LeftPageTemplate}" />
 	<local:RightPageTemplateSelector x:Key="RightPageTemplateSelector"
@@ -254,8 +298,8 @@ Next, we can instantiate the two template selectors in XAML...
 
 ... and pass them to the book:
 
-#### __XAML__
-{{region radbook-cover-template_3}}
+#### __[XAML] Example 4: Passing the template selectors to the RadBook control__ 
+{{region xaml-radbook-cover-template_4}}
 	<telerik:RadBook x:Name="book1" 
 					 FirstPagePosition="Right"
 					 LeftPageTemplateSelector="{StaticResource LeftPageTemplateSelector}"
@@ -265,21 +309,20 @@ Next, we can instantiate the two template selectors in XAML...
 
 Finally, all we have to do is populate the book with items. In this example, the book will be bound to an array of numbers.
 
-#### __C#__
-{{region radbook-cover-template_4}}
+#### __[C#] Example 5: Setting the ItemsSource of the RadBook control__ 
+{{region cs-radbook-cover-template_5}}
 	public partial class MainPage : UserControl
 	 {
 	  public MainPage()
 	  {
 	   InitializeComponent();
-	   book1.ItemsSource = Enumerable.Range(0, 10);
+	   this.book1.ItemsSource = Enumerable.Range(0, 10);
 	  }
 	 }
 {{endregion}}
 
-
-#### __VB.NET__
-{{region radbook-cover-template_4}}
+#### __[VB.NET] Example 5: Setting the ItemsSource of the RadBook control__ 
+{{region vb-radbook-cover-template_6}}
 	Partial Public Class MainPage
 		Inherits UserControl
 		Public Sub New()

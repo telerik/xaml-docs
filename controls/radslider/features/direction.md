@@ -21,7 +21,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 
 #### __XAML__
 
-{{region radslider-direction_0}}
+{{region xaml-radslider-direction_0}}
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="False">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
@@ -31,13 +31,13 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_normal_horizontal.png)
 
 #### __XAML__
 
-{{region radslider-direction_1}}
+{{region xaml-radslider-direction_1}}
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="True">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
@@ -47,20 +47,20 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_reversed_horizontal.png)
 
 #### __XAML__
 
-{{region radslider-direction_2}}
+{{region xaml-radslider-direction_2}}
 	<telerik:RadSlider Height="250" 
-	                   Margin="10"
-	                   IsDirectionReversed="False"
-	                   Maximum="10"
-	                   Orientation="Vertical"
-	                   TickFrequency="1"
-	                   TickPlacement="TopLeft">
+	           Margin="10"
+	           IsDirectionReversed="False"
+	           Maximum="10"
+	           Orientation="Vertical"
+	           TickFrequency="1"
+	           TickPlacement="TopLeft">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
 	            <Grid>
@@ -69,20 +69,20 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_normal_vertical.png)
 
 #### __XAML__
 
-{{region radslider-direction_3}}
+{{region xaml-radslider-direction_3}}
 	<telerik:RadSlider Height="250" 
-	                   Margin="10"
-	                   IsDirectionReversed="True"
-	                   Maximum="10"
-	                   Orientation="Vertical"
-	                   TickFrequency="1"
-	                   TickPlacement="TopLeft">
+	           Margin="10"
+	           IsDirectionReversed="True"
+	           Maximum="10"
+	           Orientation="Vertical"
+	           TickFrequency="1"
+	           TickPlacement="TopLeft">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
 	            <Grid>
@@ -91,6 +91,6 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_reversed_vertical.png)

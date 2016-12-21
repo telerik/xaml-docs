@@ -35,7 +35,7 @@ In order to disable the drop operation on a specific treeview item, you need to 
 	End Sub
 {{endregion}}
 
-If you want to read more about the __Drag and Drop__ behavior of the __RadTreeView__, see the main topic about [Drag and Drop](7FC973CF-4B65-4682-99E0-024EE62925C7#DisableDropOnItem).
+If you want to read more about the __Drag and Drop__ behavior of the __RadTreeView__, see the main topic about [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}).
 
 # See Also
 

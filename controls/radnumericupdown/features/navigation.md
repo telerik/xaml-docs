@@ -1,23 +1,37 @@
 ---
-title: Keyboard navigation
-page_title: Keyboard navigation
-description: Keyboard navigation
+title: Keyboard Support
+page_title: Keyboard Support
+description: Keyboard Support
 slug: radnumericupdown-navigation
 tags: keyboard,navigation
 published: True
 position: 2
 ---
 
-# Keyboard navigation
+# Keyboard Support
 
-__RadNumericUpDown__ has keyboard support. In order to change the value without clicking on the repeat buttons of the control, you can also use the following actions:
+This article explains the keyboard shortcuts present in __RadNumericUpDown__ as well as the properties that can be used for keyboard navigation.
 
-* __MouseWheel__ - whenever a RadNumericUpDown is focused you can change its value by using the mouse wheel. The step change will be equal to the value of __SmallChange__.
+## Keyboard Shortcuts
 
-* __PageUp__ - increments the value by one step equal to __LargeChange__.
+In order to change the value without clicking on the repeat buttons of the control, you can also use the following keyboard shortcuts:
 
-* __PageDown__ - decrements the value by one step equal to __LargeChange__.
+* __MouseWheel__: whenever a RadNumericUpDown is focused you can change its value by using the mouse wheel. The step change will be equal to the value of __SmallChange__.
 
-* __Up__ - increments the value by one step equal to __SmallChange__.
+* __PageUp__: increments the value by one step equal to __LargeChange__.
 
-* __Down__ - decrements the value by one step equal to __SmallChange__.
+* __PageDown__: decrements the value by one step equal to __LargeChange__.
+
+* __Up__: increments the value by one step equal to __SmallChange__.
+
+* __Down__: decrements the value by one step equal to __SmallChange__.
+
+## Tab Navigation
+
+__TabNavigationExtensions.IsTabStop__ attached property indicates whether RadNumericUpDown is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.
+
+#### __[XAML] Example 1: RadNumericUpDown with TabNavigationExtensions.IsTabStop__
+
+{{region xaml-radnumericupdown-features-navigation-0}}
+	<telerik:RadNumericUpDown telerik:TabNavigationExtensions.IsTabStop="False" />
+{{endregion}}

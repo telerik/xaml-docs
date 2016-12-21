@@ -14,4 +14,4 @@ XAMLflix is your step-by-step guide to everything RadControls for Silverlight & 
 
 Here in the documentation you will find the written tutorials for each control.  For those who prefer to watch video, there are links to the accompanying video tutorials.	
 
-Check out the [XAMLFlix blog series](http://blogs.telerik.com/home?taxonomy=Tags&propertyName=Tags&taxon=xamlflix) for more!
+Check out the [XAMLFlix blog series](http://www.telerik.com/blogs/tag/xamlflix) for more!

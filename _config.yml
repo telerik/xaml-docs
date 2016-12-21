@@ -5,6 +5,7 @@ site_name: WPF
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 common-routed-events-support.md,
 common-command-support.md,
+upgrade-api-analyzer-sl.md,
 installation-and-deployment/installation-system-requirements.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
@@ -130,6 +131,8 @@ navigation:
         title: RadScheduleView
     controls/radtimepicker:
         title: RadTimePicker
+    controls/radpasswordbox:
+        title: RadPasswordBox
     controls/radtimespanpicker:
         title: RadTimeSpanPicker
     controls/radtransitioncontrol:
@@ -290,25 +293,38 @@ navigation:
         title: Styles and Templates
         position: 12
     controls/radchartview/series/cartesianchart-series:
-        title: CartesianChart Series
-    controls/radchartview/series/cartesianchart-series/bar-series:
-        title: Bar Series		
-    controls/radchartview/series/cartesianchart-series/bubble-series:
-        title: Bubble Series
-    controls/radchartview/series/cartesianchart-series/financial-series:
-        title: Financial Series
-    controls/radchartview/series/cartesianchart-series/scatter-series:
-        title: Scatter Series
+        title: CartesianChart Series            
     controls/radchartview/series/piechart-series:
         title: PieChart Series
     controls/radchartview/series/polarchart-series:
-        title: PolarChart Series
+        title: PolarChart Series    
+    controls/radchartview3d:
+        title: RadChartView3D
+    controls/radchartview3d/features:
+        title: Features
+        position: 6
+    controls/radchartview3d/series:
+        title: Series
+        position: 7
+    controls/radchartview3d/styles-and-templates:
+        title: Styles and Templates
+        position: 8
+    controls/radchartview3d/features/behaviors:
+        title: Behaviors     
     "*area-series":
         title: Area Series
     "*line-series":
         title: Line Series
     "*point-series":
         title: Point Series
+    "*bar-series":
+        title: Bar Series
+    "*bubble-series":
+        title: Bubble Series
+    "*financial-series":
+        title: Financial Series
+    "*scatter-series":
+        title: Scatter Series    
     controls/radcloudupload:
         title: RadCloudUpload
     controls/radcoloreditor:
@@ -394,6 +410,14 @@ navigation:
         title: RadHtmlPlaceHolder
     controls/radlayoutcontrol:
         title: RadLayoutControl
+    controls/radlayoutcontrol/getting-started:
+        title: Getting Started	
+        position: 3
+    controls/radlayoutcontrol/features:
+        title: Features
+        position: 4
+    controls/radlayoutcontrol/features/toolbox:
+        title: ToolBox
     controls/radlayoutcontrol/features/layoutgroups:
         title: Layout Groups
     controls/radlegend:
@@ -435,6 +459,17 @@ navigation:
         title: Ribbon Buttons
     controls/radslider:
         title: RadSlider
+    controls/radslider/features/tick-marks:
+        title: Tick Marks
+    controls/radslider/events:
+        title: Events
+        position: 7			
+    controls/radslider/styling-and-appearance:
+        title: Styling and Appearance
+        position: 8		
+    controls/radslider/howto:
+        title: How To
+        position: 9	
     controls/radsparkline:
         title: RadSparkLine
     controls/radtabcontrol:
@@ -451,6 +486,8 @@ navigation:
         title: RadTileView
     controls/radtoolbar:
         title: RadToolBar
+    controls/radtoolbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radtooltip:
         title: RadToolTip
     controls/radtimebar:
@@ -655,8 +692,12 @@ navigation:
         title: Mail Merge
     controls/radrichtextbox/features/fields-and-document-variables:
         title: Fields and Document Variables
+        position: 18
     controls/radrichtextbox/features/references:
         title: References
+        position: 19	
+    controls/radrichtextbox/features/merge-documents:
+        title: Merge Documents
     "*radspreadstreamprocessing":
         title: RadSpreadStreamProcessing
 ## Centaur Controls End
@@ -903,6 +944,8 @@ navigation:
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
+    "styling-and-appearance/glyphs":
+        title: "Font Glyphs"
 ## Common End
 
 ## Api Reference Start
@@ -3008,6 +3051,9 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
+
+# Define any custom fields that you use in the site here
+framework_name: WPF
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo

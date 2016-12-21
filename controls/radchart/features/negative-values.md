@@ -28,7 +28,7 @@ Here is an example with hiding the y-axis of the plot area.
 
 #### __XAML__
 
-{{region radchart-features-negative-values_0}}
+{{region xaml-radchart-features-negative-values_0}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -42,7 +42,7 @@ Here is an example with hiding the y-axis of the plot area.
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 

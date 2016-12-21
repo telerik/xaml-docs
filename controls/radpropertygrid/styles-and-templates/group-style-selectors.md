@@ -111,7 +111,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 #### __[XAML] Example 3: Basing the style on the default for the control__
 
 	{{region xaml-radpropertygrid-group-style-selector_2}}
-	<Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource ToggleButtonStyle}">
+	<Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource RadToggleButtonStyle}">
 	    <Setter Property="Foreground" Value="Green"/>
 	</Style>
 {{endregion}}

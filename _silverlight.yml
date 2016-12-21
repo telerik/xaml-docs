@@ -7,6 +7,7 @@ exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 coded-ui-support.md,
 common-partial-trust.md,
 licensing/license-file.md,
+upgrade-api-analyzer.md,
 installation-and-deployment/installation-system-requirements-wpf.md,
 installation-and-deployment/installing-wpf-demos.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI-wpf.md,
@@ -25,7 +26,9 @@ installation-and-deployment/adding-telerik-ui-to-an-application/installation-add
 installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf.md,
 installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license-wpf.md,
 installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies-wpf.md,
+styling-and-appearance/glyphs,
 styling-and-appearance/common-styling-appearance-green-theme.md,
+styling-and-appearance/common-styling-appearance-office2016-theme.md,
 styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf.md,
 styling-and-appearance/troubleshooting/common-styles-appearance-metro-theme.md,
 visual-studio-extensions/for-wpf-vs-extensions-overview-wpf.md,
@@ -42,7 +45,9 @@ controls/radcarousel,
 controls/radchart/how-to/howto-integration-radcontextmenu-wpf.md,
 controls/radchart/how-to/use-custom-3d-models.md,
 controls/radchartview/populating-with-data/binding-to-data-table.md,
+controls/radchartview3d,
 controls/radcombobox/howto/set-character-casing.md,
+controls/radcombobox/features/multiple-selection.md,
 controls/radcloudupload,
 controls/raddiagram/howto/raddiagrams-save.md,
 controls/raddocking/how-to/disable-tab-navigation.md,
@@ -56,6 +61,7 @@ controls/radpivotgrid/features/olap-providers/persistence-adomd.md,
 controls/radpivotgrid/features/queryable-overview.md,
 controls/radpivotgrid/features/queryabledataprovider/queryable-group-filtering.md,
 controls/radpivotgrid/features/queryabledataprovider/queryable-sorting.md,
+controls/radpivotgrid/features/selection.md,
 controls/radpivotgrid/populating-with-data/data-adomd.md,
 controls/radpivotgrid/populating-with-data/data-queryable.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-wpf.md,
@@ -77,12 +83,15 @@ controls/radspreadstreamprocessing,
 controls/raddesktopalert,
 controls/radtimespanpicker,
 controls/radlayoutcontrol,
+controls/radpasswordbox,
 controls/radlistbox/how-to,
 visual-studio-templates.md,
 consuming-data/wcf-service.md,
 controls/radziplibrary/features/zip-extensions.md, controls/radgridview/features/search-as-you-type,
 controls/radentityframeworkdatasource,
-controls/radgridview/styles-and-templates/styling-search-panel.md]
+controls/radgridview/styles-and-templates/styling-search-panel.md,
+controls/radgridview/style-selectors/merged-cells-style-selector,
+controls/radmap/features/wraparound]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
@@ -90,6 +99,9 @@ navigation:
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"
+
+# Define any custom fields that you use in the site here
+framework_name: Silverlight
 
 # The google services configuration
 google_analytics: UA-111455-1

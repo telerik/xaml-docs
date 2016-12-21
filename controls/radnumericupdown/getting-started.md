@@ -29,7 +29,7 @@ You can find more info [here]({%slug installation-installing-controls-dependenci
 
 	#### __XAML__
 
-	{{region radnumericupdown-drag-and-drop_0}}
+	{{region xaml-radnumericupdown-drag-and-drop_0}}
 		<telerik:RadNumericUpDown IsEditable="True" Minimum="10" Maximum="50"></telerik:RadNumericUpDown>
 	{{endregion}}
 

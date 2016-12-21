@@ -24,15 +24,15 @@ There are two ways to insert a new row in RadGridView — by pressing the __Inse
 
 #### __[C#] Example 1: Adding new rows with BeginInsert()__
 
-	{{region gridview-managing-data-add-new-entries_0}}
-	this.AddingNewRowsGrid.BeginInsert();
-	{{endregion}}
+	{{region cs-gridview-managing-data-add-new-entries_0}}
+	this.radGridView.BeginInsert();
+{{endregion}}
 
 #### __[VB.NET] Example 1: Adding new rows with BeginInsert()__
 
-	{{region gridview-managing-data-add-new-entries_1}}
-	Me.AddingNewRowsGrid.BeginInsert()
-	{{endregion}}
+	{{region vb-gridview-managing-data-add-new-entries_1}}
+	Me.radGridView.BeginInsert()
+{{endregion}}
 
 When a user adds a new item, an empty row is created in which the user can input data.
 
@@ -50,62 +50,61 @@ The next step in implementing the adding functionality is to attach event handle
 
 #### __[XAML] Example 2: Add handlers for the AddingNewDataItem and RowEditEnded events__
 
-	{{region gridview-managing-data-add-new-entries_5}}
-	<telerik:RadGridView x:Name="radGridView"
-                         AddingNewDataItem="radGridView_AddingNewDataItem"
-                         RowEditEnded="radGridView_RowEditEnded" />
-	{{endregion}}
+	{{region xaml-gridview-managing-data-add-new-entries_5}}
+	<telerik:RadGridView AddingNewDataItem="radGridView_AddingNewDataItem"
+	                 RowEditEnded="radGridView_RowEditEnded" />
+{{endregion}}
 
 The __AddingNewDataItem__ event is raised before a new row is added to RadGridView. A typical use case would be when you have to set initial values for an initialized object. You can do this by passing an object to the __GridViewAddingNewEventArgs__'s **NewObject** property.
 
 #### __[C#] Example 3: The AddingNewDataItem event handler__
 
-	{{region gridview-managing-data-add-new-entries_6}}
-	private void radGridView_AddingNewDataItem( object sender, GridViewAddingNewEventArgs e )
+	{{region cs-gridview-managing-data-add-new-entries_6}}
+	private void radGridView_AddingNewDataItem(object sender, GridViewAddingNewEventArgs e)
 	{
 	    var employee = new Employee();
-		employee.FirstName = "John";
-		employee.LastName = "Doe";
-		e.NewObject = employee;
+	    employee.FirstName = "John";
+	    employee.LastName = "Doe";
+	    e.NewObject = employee;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 3: The AddingNewDataItem event handler__
 
-	{{region gridview-managing-data-add-new-entries_7}}
+	{{region vb-gridview-managing-data-add-new-entries_7}}
 	Private Sub radGridView_AddingNewDataItem(ByVal sender As Object, ByVal e As GridViewAddingNewEventArgs)
 	    Dim employee = New Employee()
-		employee.FirstName = "John"
-		employee.LastName = "Doe"
-		e.NewObject = employee
+	    employee.FirstName = "John"
+	    employee.LastName = "Doe"
+	    e.NewObject = employee
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 If the ItemsSource is a __DataTable.DefaultView__, you can initialize the newly inserted item as shown in **Example 4**:
 
 #### __[C#] Example 4: Adding a new item to a DataTable__
 
-	{{region gridview-managing-data-add-new-entries_12}}
-	radGridView_AddingNewDataItem(object sender, GridViewAddingNewEventArgs e)
+	{{region cs-gridview-managing-data-add-new-entries_12}}
+	private void radGridView_AddingNewDataItem2(object sender, GridViewAddingNewEventArgs e)
 	{
 	    e.Cancel = true;
-        var newRow = (e.OwnerGridViewItemsControl.ItemsSource as DataView).AddNew();
-        newRow["Dosage"] = 100;
-        newRow["Patient"] = "Doe";
-        e.NewObject = newRow;
+	    var newRow = this.dataSource.DefaultView.AddNew();
+	    newRow["FirstName"] = "John";
+	    newRow["LastName"] = "Doe";
+	    e.NewObject = newRow;
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 4: Adding a new item to a DataTable__
 
-	{{region gridview-managing-data-add-new-entries_13}}
-    Private Sub New(sender As Object, e As GridViewAddingNewEventArgs)
-		e.Cancel = True
-		Dim newRow = TryCast(e.OwnerGridViewItemsControl.ItemsSource, DataView).AddNew()
-		newRow("Dosage") = 100
-		newRow("Patient") = "Doe"
-		e.NewObject = newRow
-    End Sub
+	{{region vb-gridview-managing-data-add-new-entries_13}}
+		Private Sub radGridView_AddingNewDataItem2(sender As Object, e As GridViewAddingNewEventArgs)
+		    e.Cancel = True
+		    Dim newRow = Me.dataSource.DefaultView.AddNew()
+		    newRow("FirstName") = "John"
+		    newRow("LastName") = "Doe"
+		    e.NewObject = newRow
+		End Sub
 	{{endregion}}
 
 >tipVia the __OwnerGridViewItemsControl__ property of the __GridViewAddingNewEventArgs__ class you can access the __GridViewItemsControl__ for the __RadGridView__ that raised the event.
@@ -126,34 +125,33 @@ You can access __EditAction__ (__Commit__ or __Cancel__) and __GridViewEditOpera
 
 #### __[C#] Example 5: Handling the RowEditEnded event__
 
-	{{region gridview-managing-data-add-new-entries_10}}
-	private void radGridView_RowEditEnded( object sender, GridViewRowEditEndedEventArgs e )
+	{{region cs-gridview-managing-data-add-new-entries_10}}
+	private void radGridView_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
 	{
 	    if (e.EditAction == GridViewEditAction.Cancel)
 	    {
 	        return;
 	    }
-
 	    if (e.EditOperationType == GridViewEditOperationType.Insert)
 	    {
-	        // Add the new entry to the database.
+	        //Add the new entry to the data base.
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 5: Handling the RowEditEnded event__
 
-	{{region gridview-managing-data-add-new-entries_11}}
+	{{region vb-gridview-managing-data-add-new-entries_11}}
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then
 	        Exit Sub
 	    End If
 	
 	    If e.EditOperationType = GridViewEditOperationType.Insert Then
-	        ' Add the new entry to the database.'
+	        'Add the new entry to the data base.
 	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 When the new item is committed, it is added to RadGridView's __Items__ collection.
 

@@ -54,6 +54,8 @@ RadGridView's **PinnedRowsPosition** property lets you determine where the pinne
 
 If the PinnedRowsPosition property is set to either Top or Bottom, a pin button will appear on hovering over the [row indicator]({%slug gridview-customizing-rows%}).
 
+>importantPinned rows are only supported when [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}) is set to **Flat**.
+
 Pressing the button will pin the respective row. Clicking on it again will remove it from the collection of the pinned rows.
 
 #### __Figure 1: Pinning rows from the row indicator__

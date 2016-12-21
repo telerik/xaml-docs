@@ -26,13 +26,13 @@ In the following example a new __RadChart__ control is declared along with two s
 
 #### __XAML__
 
-{{region radchart-features-interactivity-effects_0}}
+{{region xaml-radchart-features-interactivity-effects_0}}
 	<telerik:RadChart x:Name="RadChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartTitle>
 	                <telerik:ChartTitle Content="Sales Report" />
-	            </telerik:ChartDefaultView.ChartTitle>                    
+	            </telerik:ChartDefaultView.ChartTitle>
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	    <telerik:RadChart.SeriesMappings>
@@ -40,33 +40,29 @@ In the following example a new __RadChart__ control is declared along with two s
 	            <telerik:SeriesMapping.SeriesDefinition>
 	                <telerik:SplineAreaSeriesDefinition>
 	                    <telerik:SplineAreaSeriesDefinition.InteractivitySettings>
-	                        <telerik:InteractivitySettings HoverScope="Series"
-	                                                        SelectionScope="Series" />
+	                        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	                    </telerik:SplineAreaSeriesDefinition.InteractivitySettings>
 	                </telerik:SplineAreaSeriesDefinition>
 	            </telerik:SeriesMapping.SeriesDefinition>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping DataPointMember="YValue"
-	                                        FieldName="Y4" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Y4" />
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	        <telerik:SeriesMapping LegendLabel="Grains/Cereals">
 	            <telerik:SeriesMapping.SeriesDefinition>
 	                <telerik:BarSeriesDefinition>
 	                    <telerik:BarSeriesDefinition.InteractivitySettings>
-	                        <telerik:InteractivitySettings HoverScope="Series"
-	                                                        SelectionScope="Series" />
+	                        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	                    </telerik:BarSeriesDefinition.InteractivitySettings>
 	                </telerik:BarSeriesDefinition>
 	            </telerik:SeriesMapping.SeriesDefinition>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping DataPointMember="YValue"
-	                                        FieldName="Y1" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Y1" />
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -74,14 +70,13 @@ Take a look at the way the __InteractivitySettings__ are declared for a specific
 
 #### __XAML__
 
-{{region radchart-features-interactivity-effects_1}}
+{{region xaml-radchart-features-interactivity-effects_1}}
 	<telerik:BarSeriesDefinition>
 	    <telerik:BarSeriesDefinition.InteractivitySettings>
-	        <telerik:InteractivitySettings HoverScope="Series"
-	                                       SelectionScope="Series" />
+	        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	    </telerik:BarSeriesDefinition.InteractivitySettings>
 	</telerik:BarSeriesDefinition>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -103,13 +98,13 @@ The following code snippets represent the complete source code used in the topic
 
 #### __XAML__
 
-{{region radchart-features-interactivity-effects_2}}
+{{region xaml-radchart-features-interactivity-effects_2}}
 	<telerik:RadChart x:Name="RadChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
 	            <telerik:ChartDefaultView.ChartTitle>
 	                <telerik:ChartTitle Content="Sales Report" />
-	            </telerik:ChartDefaultView.ChartTitle>                    
+	            </telerik:ChartDefaultView.ChartTitle>
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	    <telerik:RadChart.SeriesMappings>
@@ -117,39 +112,35 @@ The following code snippets represent the complete source code used in the topic
 	            <telerik:SeriesMapping.SeriesDefinition>
 	                <telerik:SplineAreaSeriesDefinition>
 	                    <telerik:SplineAreaSeriesDefinition.InteractivitySettings>
-	                        <telerik:InteractivitySettings HoverScope="Series"
-	                                                        SelectionScope="Series" />
+	                        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	                    </telerik:SplineAreaSeriesDefinition.InteractivitySettings>
 	                </telerik:SplineAreaSeriesDefinition>
 	            </telerik:SeriesMapping.SeriesDefinition>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping DataPointMember="YValue"
-	                                        FieldName="Y4" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Y4" />
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	        <telerik:SeriesMapping LegendLabel="Grains/Cereals">
 	            <telerik:SeriesMapping.SeriesDefinition>
 	                <telerik:BarSeriesDefinition>
 	                    <telerik:BarSeriesDefinition.InteractivitySettings>
-	                        <telerik:InteractivitySettings HoverScope="Series"
-	                                                        SelectionScope="Series" />
+	                        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	                    </telerik:BarSeriesDefinition.InteractivitySettings>
 	                </telerik:BarSeriesDefinition>
 	            </telerik:SeriesMapping.SeriesDefinition>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping DataPointMember="YValue"
-	                                        FieldName="Y1" />
+	                <telerik:ItemMapping DataPointMember="YValue" FieldName="Y1" />
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-interactivity-effects_3}}
+{{region cs-radchart-features-interactivity-effects_3}}
 	public class DataObject
 	{
 	    private static Random rand = new Random(Environment.TickCount);
@@ -159,6 +150,7 @@ The following code snippets represent the complete source code used in the topic
 	    private double _y3;
 	    private double _y4;
 	    private double _y5;
+	
 	    public double Y1
 	    {
 	        get
@@ -170,6 +162,7 @@ The following code snippets represent the complete source code used in the topic
 	            _y1 = value;
 	        }
 	    }
+	
 	    public double Y2
 	    {
 	        get
@@ -181,6 +174,7 @@ The following code snippets represent the complete source code used in the topic
 	            _y2 = value;
 	        }
 	    }
+	
 	    public double Y3
 	    {
 	        get
@@ -192,6 +186,7 @@ The following code snippets represent the complete source code used in the topic
 	            _y3 = value;
 	        }
 	    }
+	
 	    public double Y4
 	    {
 	        get
@@ -203,6 +198,7 @@ The following code snippets represent the complete source code used in the topic
 	            _y4 = value;
 	        }
 	    }
+	
 	    public double Y5
 	    {
 	        get
@@ -214,6 +210,7 @@ The following code snippets represent the complete source code used in the topic
 	            _y5 = value;
 	        }
 	    }
+	
 	    public DataObject(double y1, double y2, double y3, double y4, double y5)
 	    {
 	        this.Y1 = y1;
@@ -222,6 +219,7 @@ The following code snippets represent the complete source code used in the topic
 	        this.Y4 = y4;
 	        this.Y5 = y5;
 	    }
+	
 	    public static List<DataObject> GetData()
 	    {
 	        List<DataObject> list = new List<DataObject>();
@@ -234,94 +232,94 @@ The following code snippets represent the complete source code used in the topic
 	        return list;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-interactivity-effects_4}}
+{{region vb-radchart-features-interactivity-effects_4}}
 	Public Class DataObject
-	 Private Shared rand As New Random(Environment.TickCount)
-	 Private Shared adjrand As New Random(Environment.TickCount + rand.[Next]())
-	 Private _y1 As Double
-	 Private _y2 As Double
-	 Private _y3 As Double
-	 Private _y4 As Double
-	 Private _y5 As Double
-	 Public Property Y1() As Double
-	  Get
-	   Return _y1
-	  End Get
-	  Set
-	   _y1 = value
-	  End Set
-	 End Property
-	 Public Property Y2() As Double
-	  Get
-	   Return _y2
-	  End Get
-	  Set
-	   _y2 = value
-	  End Set
-	 End Property
-	 Public Property Y3() As Double
-	  Get
-	   Return _y3
-	  End Get
-	  Set
-	   _y3 = value
-	  End Set
-	 End Property
-	 Public Property Y4() As Double
-	  Get
-	   Return _y4
-	  End Get
-	  Set
-	   _y4 = value
-	  End Set
-	 End Property
-	 Public Property Y5() As Double
-	  Get
-	   Return _y5
-	  End Get
-	  Set
-	   _y5 = value
-	  End Set
-	 End Property
-	 Public Sub New(y1 As Double, y2 As Double, y3 As Double, y4 As Double, y5 As Double)
-	  Me.Y1 = y1
-	  Me.Y2 = y2
-	  Me.Y3 = y3
-	  Me.Y4 = y4
-	  Me.Y5 = y5
-	 End Sub
-	 Public Shared Function GetData() As List(Of DataObject)
-	  Dim list As New List(Of DataObject)()
-	  For i As Integer = 0 To 16
-	   Dim y1 As Double = rand.[Next](10, 100)
-	   list.Add(New DataObject(y1, y1 + adjrand.[Next](-10, 10), y1 + adjrand.[Next](-5, 5), y1 + adjrand.[Next](40, 75), y1 + adjrand.[Next](20, 50)))
-	  Next
-	  Return list
-	 End Function
+	    Private Shared rand As New Random(Environment.TickCount)
+	    Private Shared adjrand As New Random(Environment.TickCount + rand.[Next]())
+	    Private _y1 As Double
+	    Private _y2 As Double
+	    Private _y3 As Double
+	    Private _y4 As Double
+	    Private _y5 As Double
+	    Public Property Y1() As Double
+	        Get
+	            Return _y1
+	        End Get
+	        Set(value As Double)
+	            _y1 = value
+	        End Set
+	    End Property
+	    Public Property Y2() As Double
+	        Get
+	            Return _y2
+	        End Get
+	        Set(value As Double)
+	            _y2 = value
+	        End Set
+	    End Property
+	    Public Property Y3() As Double
+	        Get
+	            Return _y3
+	        End Get
+	        Set(value As Double)
+	            _y3 = value
+	        End Set
+	    End Property
+	    Public Property Y4() As Double
+	        Get
+	            Return _y4
+	        End Get
+	        Set(value As Double)
+	            _y4 = value
+	        End Set
+	    End Property
+	    Public Property Y5() As Double
+	        Get
+	            Return _y5
+	        End Get
+	        Set(value As Double)
+	            _y5 = value
+	        End Set
+	    End Property
+	    Public Sub New(y1 As Double, y2 As Double, y3 As Double, y4 As Double, y5 As Double)
+	        Me.Y1 = y1
+	        Me.Y2 = y2
+	        Me.Y3 = y3
+	        Me.Y4 = y4
+	        Me.Y5 = y5
+	    End Sub
+	    Public Shared Function GetData() As List(Of DataObject)
+	        Dim list As New List(Of DataObject)()
+	        For i As Integer = 0 To 16
+	            Dim y1 As Double = rand.[Next](10, 100)
+	            list.Add(New DataObject(y1, y1 + adjrand.[Next](-10, 10), y1 + adjrand.[Next](-5, 5), y1 + adjrand.[Next](40, 75), y1 + adjrand.[Next](20, 50)))
+	        Next
+	        Return list
+	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-interactivity-effects_5}}
+{{region cs-radchart-features-interactivity-effects_5}}
 	this.RadChart.ItemsSource = DataObject.GetData();
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-interactivity-effects_6}}
+{{region vb-radchart-features-interactivity-effects_6}}
 	Me.RadChart.ItemsSource = DataObject.GetData()
-	{{endregion}}
+{{endregion}}
 
 
 

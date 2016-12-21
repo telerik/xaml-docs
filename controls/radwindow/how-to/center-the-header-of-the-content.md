@@ -17,20 +17,18 @@ In the __ControlTemplate__ for the __RadWindow__, find the __Grid__ with name "H
 #### __XAML__
 
 {{region xaml-radwindow-how-to-center-the-header-of-the-content_0}}
-	<StackPanel Margin="2 0 0 0"
-	            Grid.Column="0"
-	            Orientation="Horizontal">
+	<StackPanel Margin="2 0 0 0" Grid.Column="0" Orientation="Horizontal">
 	    <ContentPresenter x:Name="IconContent"
-	                      HorizontalAlignment="Left"
-	                      Margin="2"
-	                      VerticalAlignment="Center"
-	                      Content="{TemplateBinding Icon}"
-	                      ContentTemplate="{TemplateBinding IconTemplate}" />
+	              HorizontalAlignment="Left"
+	              Margin="2"
+	              VerticalAlignment="Center"
+	              Content="{TemplateBinding Icon}"
+	              ContentTemplate="{TemplateBinding IconTemplate}" />
 	    <ContentPresenter x:Name="HeaderContent"
-	                      HorizontalAlignment="Left"
-	                      VerticalAlignment="Center"
-	                      Content="{TemplateBinding Header}"
-	                      ContentTemplate="{TemplateBinding HeaderTemplate}" />
+	              HorizontalAlignment="Left"
+	              VerticalAlignment="Center"
+	              Content="{TemplateBinding Header}"
+	              ContentTemplate="{TemplateBinding HeaderTemplate}" />
 	</StackPanel>
 {{endregion}}
 
@@ -39,25 +37,24 @@ Replace the __StackPanel__ with a __Grid__, having two columns. Place the __Icon
 #### __XAML__
 
 {{region xaml-radwindow-how-to-center-the-header-of-the-content_1}}
-	<Grid Margin="2 0 0 0"
-	      Grid.Column="0">
+	<Grid Margin="2 0 0 0" Grid.Column="0">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto" />
 	        <ColumnDefinition Width="*" />
 	    </Grid.ColumnDefinitions>
-	    <ContentPresenter x:Name="IconContent"
-	                      Grid.Column="0"
-	                      HorizontalAlignment="Left"
-	                      Margin="2"
-	                      VerticalAlignment="Center"
-	                      Content="{TemplateBinding Icon}"
-	                      ContentTemplate="{TemplateBinding IconTemplate}" />
+	    <ContentPresenter x:Name="IconContent" 
+	              Grid.Column="0"
+	              HorizontalAlignment="Left"
+	              Margin="2"
+	              VerticalAlignment="Center"
+	              Content="{TemplateBinding Icon}"
+	              ContentTemplate="{TemplateBinding IconTemplate}" />
 	    <ContentPresenter x:Name="HeaderContent"
-	                      Grid.Column="1"
-	                      HorizontalAlignment="Stretch"
-	                      VerticalAlignment="Center"
-	                      Content="{TemplateBinding Header}"
-	                      ContentTemplate="{TemplateBinding HeaderTemplate}" />
+	              Grid.Column="1"
+	              HorizontalAlignment="Stretch"
+	              VerticalAlignment="Center"
+	              Content="{TemplateBinding Header}"
+	              ContentTemplate="{TemplateBinding HeaderTemplate}" />
 	</Grid>
 {{endregion}}
 
@@ -72,7 +69,7 @@ With this done, you can easily control the position of the content through the e
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
-	radWindow.Style = this.Resources[ "RadWindowStyle" ] as Style;
+	radWindow.Style = this.Resources["RadWindowStyle"] as Style;
 	radWindow.Header = textBlock;
 {{endregion}}
 

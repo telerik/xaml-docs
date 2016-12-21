@@ -16,17 +16,16 @@ The __DataSource.xml__ file has the following content:
 
 #### __XAML__
 
-{{region radcalendar-xml-binding_0}}
-	<?xml version="1.0" encoding="utf-8" ?>
+{{region xaml-radcalendar-xml-binding_0}}
 	<ChosenDates>
-	  <Date>08/21/2010</Date>
-	  <Date>08/04/2010</Date>
-	  <Date>08/01/2010</Date>
-	  <Date>08/26/2010</Date>
-	  <Date>08/02/2010</Date>
-	  <Date>08/03/2010</Date>
-	  <Date>08/19/2010</Date>
-	  <Date>08/10/2010</Date>
+	    <Date>08/21/2010</Date>
+	    <Date>08/04/2010</Date>
+	    <Date>08/01/2010</Date>
+	    <Date>08/26/2010</Date>
+	    <Date>08/02/2010</Date>
+	    <Date>08/03/2010</Date>
+	    <Date>08/19/2010</Date>
+	    <Date>08/10/2010</Date>
 	</ChosenDates>
 {{endregion}}
 
@@ -34,7 +33,7 @@ The following code snippet loads the file and extracts the Date nodes out of it,
 
 #### __C#__
 
-{{region radcalendar-xml-binding_1}}
+{{region cs-radcalendar-xml-binding_1}}
 	// Make sure that more than one date can be selected:
 	calendar.SelectionMode = SelectionMode.Extended;
 	// Load the xml document and get the culture with wich the dates were serialized:

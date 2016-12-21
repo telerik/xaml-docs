@@ -18,6 +18,8 @@ In this article we will discuss the following topics:
 
 * [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
 
+* [Setting a Column's CellStyleSelector](#setting-a-columns-cellstyleselector)
+
 #### __Figure 1: GridViewCell template structure__
 
 ![GridViewCell template structure](images/gridviewcell-template.png)
@@ -36,13 +38,13 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all cells of an application__
 
-	{{region gridview-cells_1}}
+	{{region xaml-gridview-styling-cell_2}}
 	<Style TargetType="telerik:GridViewCell">
-		<Setter Property="VerticalContentAlignment" Value="Top"/>
-		<Setter Property="HorizontalContentAlignment" Value="Center"/>
-		<Setter Property="Background" Value="#ffcc00"/>
+	    <Setter Property="VerticalContentAlignment" Value="Top"/>
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="Background" Value="#ffcc00"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
@@ -56,11 +58,15 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
-	{{region gridview-styling-cell_1}}
+	{{region xaml-gridview-styling-cell_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                Header="Name"
-                                CellStyle="{StaticResource GridViewCellStyle}" />
-	{{endregion}}
+	                Header="Name"
+	                CellStyle="{StaticResource GridViewCellStyle}" />
+{{endregion}}
+
+## Setting a Column's CellStyleSelector
+
+You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. More details about how this can be achieved can be found in the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
 
 # See Also
 

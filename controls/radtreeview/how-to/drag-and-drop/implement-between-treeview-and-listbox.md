@@ -746,7 +746,7 @@ Then we can implement the __GiveFeedback__ event handler, which is quite straigh
 
 Next, we have to handle the DragOver event and implement a logic that decides if the current drag operation is supported over the current drop destination. In this example, we won't allow a drag operation within the __ListBox__, which means that we have to make sure that the drag operation is allowed only if it originates from the __RadTreeView__ control.
 
->tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop](7FC973CF-4B65-4682-99E0-024EE62925C7#TreeViewDragDropOptions) article.
+>tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}#using-the-treeviewdragdropoptions-object) article.
 
 As the data object passed by a drag operation started in __RadTreeView__ should be of type __TreeViewDragDropOptions__, this means that you can try to extract this object and if the operation is unsuccessful, then the drag doesn't originate from a __RadTreeView__. Furthermore, we'll have to make sure that the dragged data type matches the data type displayed in the __ListBox__ - in our example this means that we'll make sure we're dragging products. So finally, we can create the following __OnDragOver()__ implementation:
 

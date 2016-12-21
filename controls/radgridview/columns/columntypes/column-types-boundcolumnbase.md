@@ -41,17 +41,16 @@ The available options are: __CellClick__, __F2__, __None__, etc.
 
 #### __[C#] Example 2: Iterating over cells in all visible columns and accessing their values.__
 
-{{region radgridview-columns-column-types-boundcolumnbase_0}}
-
+{{region cs-radgridview-columns-column-types-boundcolumnbase_0}}
 	var visibleColumns = RadGridView1.Columns.OfType<GridViewBoundColumnBase>()
 	                     .Where(c => c.IsVisible)
 	                     .OrderBy(c => c.DisplayIndex).ToList();
 	for (var i = 0; i < RadGridView1.Items.Count; i++)
 	{
-	  for (var j = 0; j < visibleColumns.Count; j++)
-	  {
-	     var value = visibleColumns[j].GetValueForItem(RadGridView1.Items[i]);
-	  }
+	    for (var j = 0; j < visibleColumns.Count; j++)
+	    {
+	        var value = visibleColumns[j].GetValueForItem(RadGridView1.Items[i]);
+	    }
 	}
 {{endregion}}
 

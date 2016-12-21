@@ -17,7 +17,7 @@ Watermarks are text or pictures that appear behind document text. They often add
 >tipMore on the specifics of the format providers you can find [here]({%slug radrichtextbox-features-import-export%}).
         
 
-* [Uisng UI](#using-ui)
+* [Using UI](#using-ui)
 
 * [Manipulating Watermarks Programatically](#manipulating-watermarks-programatically)
 

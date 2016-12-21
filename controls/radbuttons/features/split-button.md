@@ -25,27 +25,29 @@ You can instantiate your __RadSplitButton__ in both XAML and code. Here is an ex
 >The __RadSplitButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}  
 >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __XAML__
-{{region radbuttons-features-split-button_0}}
+#### __[XAML] Example 1: Defining a button in XAML__
+{{region xaml-radbuttons-features-split-button_0}}
 	<telerik:RadSplitButton Content="Click Me!" />
 {{endregion}}
 
-#### __C#__
-{{region radbuttons-features-split-button_1}}
-	RadSplitButton radSplitButton = new RadSplitButton(){Content = "Click Me!"};
+#### __[C#] Example 2: Defining a button in code__
+{{region cs-radbuttons-features-split-button_1}}
+	RadSplitButton radSplitButton = new RadSplitButton() { Content = "Click Me!" };
 {{endregion}}
 
-#### __VB.NET__
-{{region radbuttons-features-split-button_2}}
-	Dim radSplitButton As New RadSplitButton()With {.Content = "Click Me!"}
+#### __[VB.NET] Example 2: Defining a button in code__
+{{region vb-radbuttons-features-split-button_2}}
+	Dim radSplitButton As New RadSplitButton() With { _
+	    .Content = "Click Me!" _
+	}
 {{endregion}}
 
 ## Adding DropDown Content
 
 In order to add content to the drop down area of the __RadSplitButton__ you have to use its __DropDownContent__ property. It is of type object so you can add any control as a content of the drop down. Here is an example of a __ListBox__ control placed inside a __RadSplitButton.DropDownContent__.		
 
-#### __XAML__
-{{region radbuttons-features-split-button_3}}
+#### __[XAML] Example 3: Adding content to the drop down of the button__
+{{region xaml-radbuttons-features-split-button_3}}
 	<telerik:RadSplitButton AutoOpenDelay="0:0:0.0"
 	                        Content="Click or Choose an Item">
 	    <telerik:RadSplitButton.DropDownContent>
@@ -64,8 +66,8 @@ In order to add content to the drop down area of the __RadSplitButton__ you have
 
 The functional part of the __RadSplitButton__ is represented by a RadButton. This part handles the click event of the __RadSplitButton__ and it can behave as a toggle button. In order to take advantage of this feature you just have to set the __RadSplitButton.IsToggle__ property to __True__.		
 
-#### __XAML__
-{{region radbuttons-features-split-button_4}}
+#### __[XAML] Example 4: Manually toggling the button__
+{{region xaml-radbuttons-features-split-button_4}}
 	<telerik:RadSplitButton IsToggle="True" />
 {{endregion}}
 
@@ -73,8 +75,8 @@ The functional part of the __RadSplitButton__ is represented by a RadButton. Thi
 
 You can allow the __RadSplitButton__ to automatically display its __DropDownContent__, when the mouse hovers over it. This behaviour is controlled via the __AutoOpenDelay__ property of the __RadSplitButton__, that specifies the time, after which you want to display the __RadSplitButton.DropDownContent__. In order to disable the auto opening feature of the control, you have to set the __AutoOpenDelay__ to __"0"__. Here is an example:		
 
-#### __XAML__
-{{region radbuttons-features-split-button_5}}
+#### __[XAML] Example 5: Setting the AutoOpenDelay property__
+{{region xaml-radbuttons-features-split-button_5}}
 	<telerik:RadSplitButton AutoOpenDelay="0:0:0.5" />
 {{endregion}}
 
@@ -114,7 +116,7 @@ You can easily customize the __RadSplitButton__ by using the following propertie
 
 * __TogglePartStyle__ - gets/sets the style of the __RadToggleButton__ that represents the ButtonPart of the __RadSplitButton__, when it behaves like a __ToggleButton__.
 
-# See Also
+## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Commands]({%slug radbuttons-features-commands%})

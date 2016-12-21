@@ -54,20 +54,21 @@ __After__
 For __ExportFormat.HTML__, the code you should use now is similar to:   
 #### __C#__
 
-{{region gridview-export-async_6}}
-	private void radGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
+{{region cs-gridview-export-async_6}}
+	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
 	    {
 	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
-		    param.Background = Colors.Red;
-		    param.FontFamily = new FontFamily("Verdana");
-		    param.FontSize = 30;
-		    param.FontWeight = FontWeights.Bold;
-		    param.Foreground = Colors.Green;
-		    param.Height = 50;
-		    param.TextAlignment = TextAlignment.Center;
-		    param.VerticalAlignment = VerticalAlignment.Bottom;
+	        param.Background = Colors.Red;
+	        param.FontFamily = new FontFamily("Verdana");
+	        param.FontSize = 30;
+	        param.FontWeight = FontWeights.Bold;
+	        param.Foreground = Colors.Green;
+	        param.Height = 50;
+	        param.TextAlignment = TextAlignment.Center;
+	        param.VerticalAlignment = VerticalAlignment.Bottom;
+	        param.Width = 500;
 	    }
 	}
 {{endregion}}
@@ -78,20 +79,33 @@ Now, it is also possible to define styling for __ExportFormat.ExcelML__
 
 The type of the property for this format is __GridViewExcelMLVisualExportParameters__ and you can set it as follows:
 #### __C#__
-{{region gridview-export-async_2}}
-
-	(e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "0";
+{{region cs-gridview-export-async_2}}
+	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+	{
+	    if (e.Element == ExportElement.Cell)
+	    {
+	        var column = e.Context as GridViewDataColumn;
+	        if (column.Header.ToString() == "Name")
+	        {
+	            (e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "someStyle";
+	        }
+	    }
+	}
 {{endregion}}
 
 You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
           
 #### __C#__
 
-{{region gridview-export-async_4}}
-
-	ExcelMLStyle style = new ExcelMLStyle("0");            
-	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	e.Styles.Add(style);
+{{region cs-gridview-export-async_4}}
+	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
+	{
+	    ExcelMLStyle style = new ExcelMLStyle("someStyle");
+	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
+	    style.Font.Size = 15;
+	    style.Font.Italic = true;
+	    e.Styles.Add(style);
+	}
 {{endregion}}
 
 You can find more details on how to implement styling in the [ExportFormat.ExcelML]({%slug gridview-export-excelml%}) article.
@@ -252,26 +266,24 @@ Now the Culture used is the one specified as a Language for the GridView (or the
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_12}}
-
-    public MainWindow()
-    {
-        InitializeComponent();
-        this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
-    }
+{{region cs-radgridview-backward-compatibility_12}}
+	public MainWindow()
+	{
+	    InitializeComponent();
+	    this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
+	}
 {{endregion}}
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_14}}
-
-    public MainPage()
-    {
-        InitializeComponent();
-        Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
-    }
+{{region cs-radgridview-backward-compatibility_14}}
+	public MainPage()
+	{
+	    InitializeComponent();
+	    Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
+	}
 {{endregion}}
 
 {% endif %}
@@ -339,87 +351,81 @@ Some __code changes__ are needed after the __upgrade__. Find the list with code 
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_0}}
-
-    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
-    ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
-    // ...
-    ageColumnFilter.DistinctFilter.DistinctValues.Add(5);
-    ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-    ageColumnFilter.FieldFilter.Filter1.Value = 10;
-    // ...
-    this.radGridView.FilterDescriptors.Add(ageColumnFilter);
+{{region cs-radgridview-backward-compatibility_0}}
+	GridViewColumn ageColumn = this.radGridView.Columns["Age"];
+	ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);
+	// ...
+	ageColumnFilter.DistinctFilter.DistinctValues.Add(5);
+	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
+	ageColumnFilter.FieldFilter.Filter1.Value = 10;
+	// ...
+	this.radGridView.FilterDescriptors.Add(ageColumnFilter);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_1}}
-
-    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-    Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
-    ' ...
-    ageColumnFilter.DistinctFilter.DistinctValues.Add(5)
-    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-    ageColumnFilter.FieldFilter.Filter1.Value = 10
-    ' ...
-    Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
+{{region vb-radgridview-backward-compatibility_1}}
+	Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
+	Dim ageColumnFilter As New ColumnFilterDescriptor(ageColumn)
+	' ...
+	ageColumnFilter.DistinctFilter.DistinctValues.Add(5)
+	ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
+	ageColumnFilter.FieldFilter.Filter1.Value = 10
+	' ...
+	Me.radGridView.FilterDescriptors.Add(ageColumnFilter)
 {{endregion}}
 
 __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_2}}
-
-	    GridViewColumn ageColumn = this.radGridView.Columns["Age"];
-	    // Getting it from the property will create it and associate it with its column automatically.
-	    IColumnFilterDescriptor ageColumnFilter = ageColumn.ColumnFilterDescriptor;
-	    ageColumnFilter.SuspendNotifications();
-	    // ...
-	    ageColumnFilter.DistinctFilter.AddDistinctValue(5);
-	    ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10;
-	    // ...
-	    // There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-	    // When the column filter is activated/deactivated it is automatically added/removed to this collection.
-	    ageColumnFilter.ResumeNotifications();
+{{region cs-radgridview-backward-compatibility_2}}
+	GridViewColumn ageColumn = this.radGridView.Columns ["Age"];
+	// Getting it from the property will create it and associate it with its column automatically.
+	IColumnFilterDescriptor ageColumnFilter = ageColumn.ColumnFilterDescriptor;
+	ageColumnFilter.SuspendNotifications();
+	// ...
+	ageColumnFilter.DistinctFilter.AddDistinctValue(5);
+	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
+	ageColumnFilter.FieldFilter.Filter1.Value = 10;
+	// ...
+	// There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	// When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	ageColumnFilter.ResumeNotifications();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_3}}
-
-	    Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
-	    ' Getting it from the property will create it and associate it with its column automatically.
-	    Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
-	    ageColumnFilter.SuspendNotifications()
-	    ' ...
-	    ageColumnFilter.DistinctFilter.AddDistinctValue(5)
-	    ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
-	    ageColumnFilter.FieldFilter.Filter1.Value = 10
-	    ' ...
-	    ' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
-	    ' When the column filter is activated/deactivated it is automatically added/removed to this collection.
-	    ageColumnFilter.ResumeNotifications()
+{{region vb-radgridview-backward-compatibility_3}}
+	Dim ageColumn As GridViewColumn = Me.radGridView.Columns("Age")
+	' Getting it from the property will create it and associate it with its column automatically.
+	Dim ageColumnFilter As IColumnFilterDescriptor = ageColumn.ColumnFilterDescriptor
+	ageColumnFilter.SuspendNotifications()
+	' ...
+	ageColumnFilter.DistinctFilter.AddDistinctValue(5)
+	ageColumnFilter.FieldFilter.Filter1.[Operator] = FilterOperator.IsLessThan
+	ageColumnFilter.FieldFilter.Filter1.Value = 10
+	' ...
+	' There is no need to manually add the column filter to this.radGridView.FilterDescriptors
+	' When the column filter is activated/deactivated it is automatically added/removed to this collection.
+	ageColumnFilter.ResumeNotifications()
 {{endregion}}
 
 * __Clearing a Column Filter Before:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_4}}
-
-	    this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
+{{region cs-radgridview-backward-compatibility_4}}
+	this.radGridView.FilterDescriptors.Remove(columnFilterDescriptor);
 {{endregion}}
 
 __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_6}}
-
-	    // Calling ClearFilter will automatically remove filter descriptor from the grid.
-	    myColumn.ClearFilters();
+{{region cs-radgridview-backward-compatibility_6}}
+	// Calling ClearFilter will automatically remove filter descriptor from the grid.
+	myColumn.ClearFilters();
 {{endregion}}
 
 
@@ -427,37 +433,34 @@ __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_8}}
-
-	    this.radGridView.FilterDescriptors.Clear();
+{{region cs-radgridview-backward-compatibility_8}}
+	this.radGridView.FilterDescriptors.Clear();
 {{endregion}}
 
 __After:__
 
 #### __C#__
 
-{{region radgridview-backward-compatibility_10}}
-
-	    this.radGridView.FilterDescriptors.SuspendNotifications();
-	    foreach (var column in this.radGridView.Columns)
-	    {
-		    column.ClearFilters();
-	    }
-	    this.radGridView.FilterDescriptors.ResumeNotifications();
+{{region cs-radgridview-backward-compatibility_10}}
+	this.radGridView.FilterDescriptors.SuspendNotifications();
+	foreach (var column in this.radGridView.Columns)
+	{
+	    column.ClearFilters();
+	}
+	this.radGridView.FilterDescriptors.ResumeNotifications();
 {{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radgridview-backward-compatibility_11}}
-
-	    Me.radGridView.FilterDescriptors.SuspendNotifications()
-	    For Each column As var In Me.radGridView.Columns
-		    column.ClearFilters()
-	    Next
-	    Me.radGridView.FilterDescriptors.ResumeNotifications()
-	    End Class
+{{region vb-radgridview-backward-compatibility_11}}
+	Me.radGridView.FilterDescriptors.SuspendNotifications()
+	For Each column As var In Me.radGridView.Columns
+	 column.ClearFilters()
+	Next
+	Me.radGridView.FilterDescriptors.ResumeNotifications()
+	End Class
 {{endregion}}
 
 

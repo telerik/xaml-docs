@@ -22,47 +22,47 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 
 #### __C#__
 
-{{region radchart-features-axes-labels_0}}
+{{region cs-radchart-features-axes-labels_0}}
 	DataSeries lineSeries = new DataSeries();
-    lineSeries.LegendLabel = "Monthly Sales";
-    lineSeries.Definition = new LineSeriesDefinition();
-    Random r = new Random();
-    for (int i = 0; i < 12; i++)
-    {
-        lineSeries.Add(new DataPoint() { YValue = i + r.Next(0,20) });
-    }
-
-    radChart.DefaultView.ChartArea.DataSeries.Add(lineSeries);
-
-    string[] months = new string[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun" ,"Jul", "Aug", "Sep", "Oct", "Nov", "Dec", };
-
-    for (int i = 0; i < months.Length; i++)
-    {
-       radChart.DefaultView.ChartArea.AxisX.TickPoints[i].Label = months[i];
-    }
-	{{endregion}}
+	lineSeries.LegendLabel = "Monthly Sales";
+	lineSeries.Definition = new LineSeriesDefinition();
+	Random r = new Random();
+	for (int i = 0; i < 12; i++)
+	{
+	    lineSeries.Add(new DataPoint() { YValue = i + r.Next(0, 20) });
+	}
+	
+	this.radChart.DefaultView.ChartArea.DataSeries.Add(lineSeries);
+	
+	string[] months = new string[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", };
+	
+	for (int i = 0; i < months.Length; i++)
+	{
+	    this.radChart.DefaultView.ChartArea.AxisX.TickPoints[i].Label = months[i];
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-labels_1}}
+{{region vb-radchart-features-axes-labels_1}}
 	Dim lineSeries As New DataSeries()
 	lineSeries.LegendLabel = "Monthly Sales"
 	lineSeries.Definition = New LineSeriesDefinition()
 	Dim r As New Random()
 	For i As Integer = 0 To 11
-	 lineSeries.Add(New DataPoint() With { _
-	  .YValue = i + r.[Next](0, 20) _
-	 })
+	    lineSeries.Add(New DataPoint() With { _
+	     .YValue = i + r.[Next](0, 20) _
+	    })
 	Next
 	radChart.DefaultView.ChartArea.DataSeries.Add(lineSeries)
 	Dim months As String() = New String() {"Jan", "Feb", "Mar", "Apr", "May", "Jun", _
 	 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}
 	For i As Integer = 0 To months.Length - 1
-	 radChart.DefaultView.ChartArea.AxisX.TickPoints(i).Label = months(i)
+	    radChart.DefaultView.ChartArea.AxisX.TickPoints(i).Label = months(i)
 	Next
-	{{endregion}}
+{{endregion}}
 
 
 

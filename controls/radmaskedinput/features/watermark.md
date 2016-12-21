@@ -18,8 +18,8 @@ In scenarios, where you want to show custom content, when an empty string is ent
 
 In the following example, the user is asked to enter four digits:
 
-#### __XAML__
-{{region radmaskedinput-features-watermark_0}}
+#### __[XAML] Example 1: Defining the RadMaskedTextInput control__
+{{region xaml-radmaskedinput-features-watermark_0}}
 	<telerik:RadMaskedTextInput Mask="####" />
 {{endregion}}
 
@@ -29,8 +29,8 @@ When an empty string is entered, then the default __Placeholder__(the character 
 
 If the __EmptyContent__ property is set, then it will be displayed when an empty string is entered.				
 
-#### __XAML__
-{{region radmaskedinput-features-watermark_1}}
+#### __[XAML] Example 2: Setting the EmptyContent property__
+{{region xaml-radmaskedinput-features-watermark_1}}
 	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
 {{endregion}}
 
@@ -38,8 +38,8 @@ If the __EmptyContent__ property is set, then it will be displayed when an empty
 
 The __EmptyContent__ property is of type object. Which means that you can set anything you want. For example:				
 
-#### __XAML__
-{{region radmaskedinput-features-watermark_2}}
+#### __[XAML] Example 3: Setting custom RadWatermarkTextBox to the EmptyContent property__
+{{region xaml-radmaskedinput-features-watermark_2}}
 	<telerik:RadMaskedTextInput Mask="####">
 	    <telerik:RadMaskedTextInput.EmptyContent>
 	        <telerik:RadWatermarkTextBox Margin="3,0,0,0" BorderBrush="Transparent">
@@ -62,8 +62,8 @@ The __EmptyContent__ property is of type object. Which means that you can set an
 
 Similarly, you can use the __EmptyContentTemplate__ property for the same sort of scenarios. Note that in this case you should define a new __DataTemplate__ for the __EmptyContentTemplate__ property.				
 
-#### __XAML__
-{{region radmaskedinput-features-watermark_3}}
+#### __[XAML] Example 4: Setting custom template to the EmptyContentTemplate property__
+{{region xaml-radmaskedinput-features-watermark_3}}
 	<telerik:RadMaskedTextInput Mask="####">
 	    <telerik:RadMaskedTextInput.EmptyContentTemplate>
 	        <DataTemplate>
@@ -89,6 +89,6 @@ Similarly, you can use the __EmptyContentTemplate__ property for the same sort o
 
 >tip For more information about the __RadWatermarkTextBox__ control, check out the{% if site.site_name == 'Silverlight' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/silverlight/radwatermarktextbox-overview.html){% endif %}{% if site.site_name == 'WPF' %}[RadWatermarkTextBox Overview](http://www.telerik.com/help/wpf/radwatermarktextbox-overview.html){% endif %} topic.				
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})

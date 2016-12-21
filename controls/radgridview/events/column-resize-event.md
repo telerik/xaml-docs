@@ -28,21 +28,21 @@ You can subscribe to these events declaratively or at runtime. **Example 1** sho
 
 #### __[XAML] Example 1: Subscribing to column events__
 
-	{{region gridview-column-resize-event_0}}
+	{{region xaml-gridview-column-resize-event_0}}
 	<telerik:RadGridView Name="gridView" AutoGeneratingColumn="gridView_AutoGeneratingColumn"/>
-	{{endregion}}
+{{endregion}}
 
 #### __[C#] Example 1: Subscribing to column events__
 
-	{{region gridview-column-resize-event_1}}
-	gridView.AutoGeneratingColumn += new EventHandler<AutoGeneratingColumnEventArgs>(gridView_AutoGeneratingColumn);
-	{{endregion}}
+	{{region cs-gridview-column-resize-event_1}}
+	gridView.AutoGeneratingColumn += gridView_AutoGeneratingColumn;
+{{endregion}}
 
 #### __[VB.NET] Example 1: Subscribing to column events__
 
-	{{region gridview-column-resize-event_2}}
+	{{region vb-gridview-column-resize-event_2}}
 	AddHandler gridView.AutoGeneratingColumn, AddressOf gridView_AutoGeneratingColumn
-	{{endregion}}
+{{endregion}}
 
 ## AutoGeneratingColumn
 
@@ -60,25 +60,25 @@ You can use the following properties of the **GridViewAutoGeneratingColumnEventA
 
 #### __[C#] Example 2: Cancelling the creation of DateTime columns__
 
-	{{region gridview-column-resize-event_3}}
-    private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-    {
-        if (e.ItemPropertyInfo.PropertyType == typeof(DateTime))
-        {
-            e.Cancel = true;
-        }
-    }
-	{{endregion}}
+	{{region cs-gridview-column-resize-event_3}}
+	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
+	{
+	    if (e.ItemPropertyInfo.PropertyType == typeof(DateTime))
+	    {
+	        e.Cancel = true;
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 2: Cancelling the creation of DateTime columns__
 
-	{{region gridview-column-resize-event_4}}
+	{{region vb-gridview-column-resize-event_4}}
 	Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
-		If e.ItemPropertyInfo.PropertyType = GetType(DateTime) Then
-			e.Cancel = True
-		End If
+	    If e.ItemPropertyInfo.PropertyType = GetType(DateTime) Then
+	        e.Cancel = True
+	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 ## ColumnReordering
 
@@ -130,25 +130,25 @@ The following example shows you how to allow the user to widen a column, but not
 
 #### __[C#] Example 3: Disable decreasing the column width__
 
-	{{region gridview-column-resize-event_5}}
+	{{region cs-gridview-column-resize-event_5}}
 	void gridView_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
-	{ 
-	   if (e.HorizontalChangeWidth < 0)
-	   {
-	      e.Cancel = true;
-	   }
+	{
+	    if (e.HorizontalChangeWidth.Value < 0)
+	    {
+	        e.Cancel = true;
+	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Disable decreasing the column width__
 
-	{{region gridview-column-resize-event_6}}
+	{{region vb-gridview-column-resize-event_6}}
 	Private Sub gridView_ColumnWidthChanging(sender As Object, e As ColumnWidthChangingEventArgs)
-		If e.HorizontalChangeWidth < 0 Then
-	  		e.Cancel = True
-	 	End If
+	    If e.HorizontalChangeWidth.Value < 0 Then
+	        e.Cancel = True
+	    End If
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 >When the user __double-clicks__ the header cell gripper and the column is resized according to its content, only the  __ColumnWidthChanged__ event is triggered.
 

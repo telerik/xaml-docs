@@ -18,9 +18,9 @@ RadSlider provides an increase and decrease handles, which provide an alternativ
 
 #### __XAML__
 
-{{region radslider-handles_0}}
+{{region xaml-radslider-handles_0}}
 	<telerik:RadSlider HandlesVisibility="Visible" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_handles.png)
 
@@ -28,15 +28,15 @@ In case you enable the handles when __RadSlider__ is in selection range mode, th
 
 #### __XAML__
 
-{{region radslider-handles_1}}
+{{region xaml-radslider-handles_1}}
 	<telerik:RadSlider x:Name="slider" 
-	                   HandlesVisibility="Visible"
-	                   IsSelectionRangeEnabled="True"
-	                   Maximum="15"
-	                   Minimum="0"
-	                   SelectionEnd="8"
-	                   SelectionStart="5" />
-	{{endregion}}
+	               HandlesVisibility="Visible"
+	               IsSelectionRangeEnabled="True"
+	               Maximum="15"
+	               Minimum="0"
+	               SelectionEnd="8"
+	               SelectionStart="5" />
+{{endregion}}
 
 ![](images/radslider_features_handles_range.png)
 

@@ -10,10 +10,6 @@ position: 2
 
 # Integration with RadGridView
 
-
-
-## 
-
 The Telerik __RadChart__ supports great integration with other controls. This tutorial will show you how to integrate __RadChart__ with __RadGridView__.
 
 The final result should look like the snapshots below: 
@@ -27,27 +23,23 @@ The final result should look like the snapshots below:
 
 #### __XAML__
 
-{{region radchart-how-to-integration-with-rad-grid-view_0}}
+{{region xaml-radchart-how-to-integration-with-rad-grid-view_0}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto"/>
 	        <ColumnDefinition Width="*"/>
 	    </Grid.ColumnDefinitions>
-	
-	    <telerikGrid:RadGridView Margin="8" 
-	        AutoGenerateColumns="False" SelectionMode="Extended"
-	        IsReadOnly="True" ShowGroupPanel="False">
-	        <telerikGrid:RadGridView.Columns>
-	
-	            <telerikGrid:GridViewDataColumn DataMemberBinding="{Binding UnitPrice}"/>
-	            <telerikGrid:GridViewDataColumn DataMemberBinding="{Binding UnitsInStock}"/>
-	
-	        </telerikGrid:RadGridView.Columns>
-	    </telerikGrid:RadGridView>
-	
-	    <telerikChart:RadChart x:Name="radChart" Grid.Column="1" Margin="8"/>
+	    <telerik:RadGridView Margin="8" 
+	                         AutoGenerateColumns="False" SelectionMode="Extended"
+	                         IsReadOnly="True" ShowGroupPanel="False">
+	        <telerik:RadGridView.Columns>
+	           <telerik:GridViewDataColumn DataMemberBinding="{Binding UnitPrice}"/>
+	           <telerik:GridViewDataColumn DataMemberBinding="{Binding UnitsInStock}"/>
+	        </telerik:RadGridView.Columns>
+	    </telerik:RadGridView>
+	    <telerik:RadChart x:Name="radChart" Grid.Column="1" Margin="8"/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 ![](images/RadChart_HowToGridIntegration_010.PNG)
 
@@ -57,46 +49,46 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 #### __C#__
 
-{{region radchart-how-to-integration-with-rad-grid-view_1}}
+{{region cs-radchart-how-to-integration-with-rad-grid-view_1}}
 	public class NorthwindDataSource
 	{
-	    private static NorthwindEntities northwindEntity;
-	    public NorthwindDataSource()
-	    {
-	        northwindEntity = new NorthwindEntities( new Uri( "http://localhost:52981/Services/SampleAdoNetDataService.svc/" ) );
-	        this.Products = new ObservableCollection<Products>();
+		private static NorthwindEntities northwindEntity;
+		public NorthwindDataSource()
+		{
+			northwindEntity = new NorthwindEntities( new Uri( "http://localhost:52981/Services/SampleAdoNetDataService.svc/" ) );
+			this.Products = new ObservableCollection<Products>();
 	
-	        var query = from p in northwindEntity.Products
-	                    select p;
+			var query = from p in northwindEntity.Products
+						select p;
 	
-	        DataServiceQuery<Products> products = ( DataServiceQuery<Products> )query;
+			DataServiceQuery<Products> products = ( DataServiceQuery<Products> )query;
+			
+			products.BeginExecute(
+			   (IAsyncResult result) => EntitiesLoaded<Products>( result, this.Products ), products );
+		}
 	
-	        products.BeginExecute(
-	           ( IAsyncResult result ) => EntitiesLoaded<Products>( result, this.Products ), products );
-	    }
+		public ObservableCollection<Products> Products
+		{
+			get;
+			set;
+		}
 	
-	    public ObservableCollection<Products> Products
-	    {
-	        get;
-	        set;
-	    }
-	
-	    private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
-	    {
-	        DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
-	        foreach ( T entity in query.EndExecute( result ) )
-	        {
-	            entities.Add( entity );
-	        }
-	    }
+		private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities )
+		{
+			DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
+			foreach ( T entity in query.EndExecute( result ) )
+			{
+				entities.Add( entity );
+			}
+		}
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-how-to-integration-with-rad-grid-view_2}}
+{{region cs-radchart-how-to-integration-with-rad-grid-view_2}}
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
@@ -117,13 +109,13 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        set;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-integration-with-rad-grid-view_3}}
+{{region vb-radchart-how-to-integration-with-rad-grid-view_3}}
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
@@ -135,10 +127,10 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	            Select p
 	
 	        Dim products As DataServiceQuery(Of Products) = DirectCast(query, DataServiceQuery(Of Products))
-	        products.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), products)
+	        products.BeginExecute(Sub(result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), products)
 	    End Sub
 	
-	Private _Products As ObservableCollection(Of Products)
+	    Private _Products As ObservableCollection(Of Products)
 	    Public Property Products() As ObservableCollection(Of Products)
 	        Get
 	            Return _Products
@@ -155,25 +147,25 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        Next
 	    End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-integration-with-rad-grid-view_4}}
+{{region vb-radchart-how-to-integration-with-rad-grid-view_4}}
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
 	    Public Sub New()
 	        northwindEntity = New NorthwindEntities(New Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"))
 	        Me.Products = New ObservableCollection(Of Products)()
-	                For Each p As Products In northwindEntity.Products.Execute()
+	        For Each p As Products In northwindEntity.Products.Execute()
 	            Me.Products.Add(p)
 	        Next
 	    End Sub
 	
-	Private _Products As ObservableCollection(Of Products)
+	    Private _Products As ObservableCollection(Of Products)
 	    Public Property Products() As ObservableCollection(Of Products)
 	        Get
 	            Return _Products
@@ -183,7 +175,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -191,22 +183,22 @@ Declare the __NorthwindDataSource__ class as a resource in your application and 
 
 #### __XAML__
 
-{{region radchart-how-to-integration-with-rad-grid-view_5}}
-	<UserControl.Resources>
+{{region xaml-radchart-how-to-integration-with-rad-grid-view_5}}
+	<FrameworkElement.Resources>
 	    <example:NorthwindDataSource x:Key="DataSource"/>
-	</UserControl.Resources>
-	{{endregion}}
+	</FrameworkElement.Resources>
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-how-to-integration-with-rad-grid-view_6}}
-	<telerikGrid:RadGridView Margin="8" 
-	    AutoGenerateColumns="False" MultipleSelect="True"
-	    IsReadOnly="True" ShowGroupPanel="False"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}">
-	{{endregion}}
+{{region xaml-radchart-how-to-integration-with-rad-grid-view_6}}
+	<telerik:RadGridView Margin="8" 
+	AutoGenerateColumns="False" SelectionMode="Multiple"
+	IsReadOnly="True" ShowGroupPanel="False"
+	ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}" />
+{{endregion}}
 
 
 
@@ -220,13 +212,13 @@ Here is the result so far:
 
 #### __XAML__
 
-{{region radchart-how-to-integration-with-rad-grid-view_7}}
-	<telerikGrid:RadGridView x:Name="radGridView" Margin="8" 
-	    AutoGenerateColumns="False" MultipleSelect="True"
-	    IsReadOnly="True" ShowGroupPanel="False"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
-	    SelectionChanged="radGridView_SelectionChanged">
-	{{endregion}}
+{{region xaml-radchart-how-to-integration-with-rad-grid-view_7}}
+	<telerik:RadGridView x:Name="radGridView" Margin="8" 
+	AutoGenerateColumns="False" SelectionMode="Multiple"
+	IsReadOnly="True" ShowGroupPanel="False"
+	ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
+	SelectionChanged="radGridView_SelectionChanged" />
+{{endregion}}
 
 
 
@@ -234,37 +226,39 @@ Here is the result so far:
 
 #### __C#__
 
-{{region radchart-how-to-integration-with-rad-grid-view_8}}
-	private void radGridView_SelectionChanged( object sender, SelectionChangeEventArgs e )
+{{region cs-radchart-how-to-integration-with-rad-grid-view_8}}
+	private void radGridView_SelectionChanged(object sender, SelectionChangeEventArgs e)
 	{
 	    Collection<Products> selectedList = new Collection<Products>();
 	
 	    // Get all selected Items
-	    foreach ( Products product in radGridView.SelectedItems )
-	        selectedList.Add( ( Products )item );
+	    foreach (Products product in radGridView.SelectedItems)
+	    {
+	        selectedList.Add(product);
+	    }
 	
-	    CreateSeriesMappings( selectedList );
-	    SetChartItemsSource( selectedList );
+	    CreateSeriesMappings(selectedList);
+	    SetChartItemsSource(selectedList);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-integration-with-rad-grid-view_9}}
+{{region vb-radchart-how-to-integration-with-rad-grid-view_9}}
 	Private Sub radGridView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
 	    Dim selectedList As New Collection(Of Products)()
-	    ' Get all selected Items
+	    ' Get all selected Items '
 	
 	    For Each product As Products In radGridView.SelectedItems
-	        selectedList.Add(DirectCast(item, Products))
+	        selectedList.Add(product)
 	    Next
 	
 	    CreateSeriesMappings(selectedList)
 	    SetChartItemsSource(selectedList)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -272,7 +266,7 @@ Here is the result so far:
 
 #### __C#__
 
-{{region radchart-how-to-integration-with-rad-grid-view_10}}
+{{region cs-radchart-how-to-integration-with-rad-grid-view_10}}
 	private void CreateSeriesMappings( Collection<Products> invoicesList )
 	{
 	    radChart.SeriesMappings.Clear();
@@ -298,13 +292,13 @@ Here is the result so far:
 	    radChart.SeriesMappings.Add( seriesMapping );
 	    radChart.SeriesMappings.Add( seriesMapping1 );
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-integration-with-rad-grid-view_11}}
+{{region vb-radchart-how-to-integration-with-rad-grid-view_11}}
 	Private Sub CreateSeriesMappings(ByVal invoicesList As Collection(Of Products))
 	    radChart.SeriesMappings.Clear()
 	
@@ -329,7 +323,7 @@ Here is the result so far:
 	    radChart.SeriesMappings.Add(seriesMapping)
 	    radChart.SeriesMappings.Add(seriesMapping1)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -337,22 +331,22 @@ Here is the result so far:
 
 #### __C#__
 
-{{region radchart-how-to-integration-with-rad-grid-view_12}}
+{{region cs-radchart-how-to-integration-with-rad-grid-view_12}}
 	private void SetChartItemsSource( Collection<Products> invoicesList )
 	{
 	    radChart.ItemsSource = invoicesList;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-integration-with-rad-grid-view_13}}
+{{region vb-radchart-how-to-integration-with-rad-grid-view_13}}
 	Private Sub SetChartItemsSource(ByVal invoicesList As Collection(Of Products))
 	    radChart.ItemsSource = invoicesList
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -364,8 +358,7 @@ And when you select multiple rows:
 
 ![](images/RadChart_HowToGridIntegration_040.PNG)
 
-# See Also
+## See Also
 
  * [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%})
-
  * [MVVM Support]({%slug radchart-how-to-mvvm-support%})

@@ -30,25 +30,25 @@ The following code snippets show how these properties can be customized.
 
 #### __[XAML] Example 1: Define the Style properties__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_0}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_0}}
 	<UserControl.Resources>
-		<Style x:Key="CustomContentMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource ContentMenuStyle}">
-	        <Setter Property="Fill" Value="Yellow" />           
+	    <Style x:Key="CustomContentMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource ContentMenuStyle}">
+	        <Setter Property="Fill" Value="Yellow" />
 	    </Style>
-	    
-		<Style x:Key="CustomNavigationMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource NavigationMenuStyle}">
-	        <Setter Property="Fill" Value="Blue"/>            
+	
+	    <Style x:Key="CustomNavigationMenuStyle" TargetType="Rectangle" BasedOn="{StaticResource NavigationMenuStyle}">
+	        <Setter Property="Fill" Value="Blue"/>
 	    </Style>
 	</UserControl.Resources>
 {{endregion}}
 
 #### __[XAML] Example 2: Set the Style properties to the RadialMenu__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_1}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_1}}
 	<telerik:RadRadialMenu ContentMenuBackgroundStyle="{StaticResource CustomContentMenuStyle}"
-	                       NavigationMenuBackgroundStyle="{StaticResource CustomNavigationMenuStyle}">
-	...
-	</telerik:RadRadialMenu>					   
+	               NavigationMenuBackgroundStyle="{StaticResource CustomNavigationMenuStyle}">
+	    <!--...-->
+	</telerik:RadRadialMenu>
 {{endregion}}
 
 Figure 1: Customized RadialMenu
@@ -60,14 +60,14 @@ In order to change the way the navigation buttons look, you will need to create 
 
 #### __[XAML] Example 3: Customize the NavigationButtons__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_2}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_2}}
 	<UserControl.Resources>
-	<Style TargetType="telerik:NavigationItemButton" BasedOn="{StaticResource NavigationItemButtonStyle}">
-	    <Setter Property="Background" Value="Yellow"/>
-	    <Setter Property="BorderBrush" Value="Orange"/>
-	    <Setter Property="Foreground" Value="Orange"/>
-	    <Setter Property="BorderThickness" Value="4"/>       
-	</Style>
+	    <Style TargetType="telerik:NavigationItemButton" BasedOn="{StaticResource NavigationItemButtonStyle}">
+	        <Setter Property="Background" Value="Yellow"/>
+	        <Setter Property="BorderBrush" Value="Orange"/>
+	        <Setter Property="Foreground" Value="Orange"/>
+	        <Setter Property="BorderThickness" Value="4"/>
+	    </Style>
 	</UserControl.Resources>
 {{endregion}}
 
@@ -80,11 +80,11 @@ __VisualStatesItemPresenter__ is the element used to mark the selected and highl
 
 #### __[XAML] Example 4: Customize the VisualStatesItemPresenter__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_3}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_3}}
 	<UserControl.Resources>
-	<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
-	     <Setter Property="Background" Value="Blue"/>
-	</Style>
+	    <Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">
+	        <Setter Property="Background" Value="Blue"/>
+	    </Style>
 	</UserControl.Resources>
 {{endregion}}
 
@@ -101,13 +101,13 @@ __Example 5__ will show how these properties could be set:
 
 #### __[XAML] Example 5: VisualStatesItemPresenter with customize Thickness and ArrowThickness__
 
-{{region radradialmenu-styles-and-templates-styling-radialmenu_4}}
+{{region xaml-radradialmenu-styles-and-templates-styling-radialmenu_4}}
 	<UserControl.Resources>
-	<Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">        
-	    <Setter Property="Background" Value="Blue"/>
-	    <Setter Property="ThicknessFactor" Value="0.4" />
-	    <Setter Property="ArrowThicknessFactor" Value="0.5" />
-	</Style>
+	    <Style TargetType="telerik:VisualStatesItemPresenter" BasedOn="{StaticResource VisualStatesItemPresenterStyle}">
+	        <Setter Property="Background" Value="Blue"/>
+	        <Setter Property="ThicknessFactor" Value="0.4" />
+	        <Setter Property="ArrowThicknessFactor" Value="0.5" />
+	    </Style>
 	</UserControl.Resources>
 {{endregion}}
 

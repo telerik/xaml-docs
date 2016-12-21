@@ -31,7 +31,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 
 #### __XAML__
 
-{{region radchart-how-to-use-custom-3d-models_0}}
+{{region xaml-radchart-how-to-use-custom-3d-models_0}}
 	<Viewport3D>
 	    <Viewport3D.Resources>
 	        <MaterialGroup x:Key="StarFace">
@@ -58,64 +58,64 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 	                    <GeometryModel3D Material="{StaticResource StarFace}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-9.995,0,2.351 -3.085,0,3.406 0.005,0,9.99 3.095,0,3.406 10.005,0,2.351 5.005,0,-2.773 6.186,0,-10.01 0.005,0,-6.594 -6.176,0,-10.01 -4.996,0,-2.773"
-	                                TriangleIndices="0,9,1 1,3,2 3,5,4 5,7,6 7,9,8 1,9,3 3,9,5 5,9,7"/>
+	                        Positions="-9.995,0,2.351 -3.085,0,3.406 0.005,0,9.99 3.095,0,3.406 10.005,0,2.351 5.005,0,-2.773 6.186,0,-10.01 0.005,0,-6.594 -6.176,0,-10.01 -4.996,0,-2.773"
+	                        TriangleIndices="0,9,1 1,3,2 3,5,4 5,7,6 7,9,8 1,9,3 3,9,5 5,9,7"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarFace}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-9.995,3,2.351 -3.085,3,3.406 0.005,3,9.99 3.095,3,3.406 10.005,3,2.351 5.005,3,-2.773 6.186,3,-10.01 0.005,3,-6.594 -6.176,3,-10.01 -4.996,3,-2.773"
-	                                TriangleIndices="0,1,9 1,2,3 3,4,5 5,6,7 7,8,9 1,3,9 3,5,9 5,7,9"/>
+	                        Positions="-9.995,3,2.351 -3.085,3,3.406 0.005,3,9.99 3.095,3,3.406 10.005,3,2.351 5.005,3,-2.773 6.186,3,-10.01 0.005,3,-6.594 -6.176,3,-10.01 -4.996,3,-2.773"
+	                        TriangleIndices="0,1,9 1,2,3 3,4,5 5,6,7 7,8,9 1,3,9 3,5,9 5,7,9"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-9.995,0,2.351 -4.996,0,-2.773 -9.995,3,2.351 -4.996,3,-2.773"
-	                                TriangleIndices="0,3,1 0,2,3"/>
+	                        Positions="-9.995,0,2.351 -4.996,0,-2.773 -9.995,3,2.351 -4.996,3,-2.773"
+	                        TriangleIndices="0,3,1 0,2,3"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-9.995,0,2.351 -3.085,0,3.406 -9.995,3,2.351 -3.085,3,3.406"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="-9.995,0,2.351 -3.085,0,3.406 -9.995,3,2.351 -3.085,3,3.406"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-3.085,0,3.406 0.005,0,9.99 -3.085,3,3.406 0.005,3,9.99"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="-3.085,0,3.406 0.005,0,9.99 -3.085,3,3.406 0.005,3,9.99"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="0.005,0,9.99 3.095,0,3.406 0.005,3,9.99 3.095,3,3.406"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="0.005,0,9.99 3.095,0,3.406 0.005,3,9.99 3.095,3,3.406"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="3.095,0,3.406 10.005,0,2.351 3.095,3,3.406 10.005,3,2.351"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="3.095,0,3.406 10.005,0,2.351 3.095,3,3.406 10.005,3,2.351"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="10.005,0,2.351 5.005,0,-2.773 10.005,3,2.351 5.005,3,-2.773"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="10.005,0,2.351 5.005,0,-2.773 10.005,3,2.351 5.005,3,-2.773"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="5.005,0,-2.773 6.186,0,-10.01 5.005,3,-2.773 6.186,3,-10.01"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="5.005,0,-2.773 6.186,0,-10.01 5.005,3,-2.773 6.186,3,-10.01"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
@@ -126,15 +126,15 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="0.005,0,-6.594 -6.176,0,-10.01 0.005,3,-6.594 -6.176,3,-10.01"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="0.005,0,-6.594 -6.176,0,-10.01 0.005,3,-6.594 -6.176,3,-10.01"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <GeometryModel3D Material="{StaticResource StarSide}">
 	                        <GeometryModel3D.Geometry>
 	                            <MeshGeometry3D
-	                                Positions="-6.176,0,-10.01 -4.996,0,-2.773 -6.176,3,-10.01 -4.996,3,-2.773"
-	                                TriangleIndices="0,1,3 0,3,2"/>
+	                        Positions="-6.176,0,-10.01 -4.996,0,-2.773 -6.176,3,-10.01 -4.996,3,-2.773"
+	                        TriangleIndices="0,1,3 0,3,2"/>
 	                        </GeometryModel3D.Geometry>
 	                    </GeometryModel3D>
 	                    <Model3DGroup.Transform>
@@ -145,7 +145,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 	        </ModelVisual3D>
 	    </Viewport3D.Children>
 	</Viewport3D>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -157,30 +157,28 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 
 #### __C#__
 
-{{region radchart-how-to-use-custom-3d-models_1}}
+{{region cs-radchart-how-to-use-custom-3d-models_1}}
 	private void FillSampleChartData()
 	{
-	 DataSeries barSeries = new DataSeries();
-	 barSeries.Definition = new Bar3DSeriesDefinition();
-	 barSeries.Definition.ItemStyle = (Style) this.FindResource("MyStyle");
-	 barSeries.FillWithSampleData();
-	 this.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries);
+	    DataSeries barSeries = new DataSeries();
+	    barSeries.Definition = new Bar3DSeriesDefinition();
+	    barSeries.Definition.ItemStyle = (Style)this.FindResource("MyStyle");            
+	    this.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries);
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-how-to-use-custom-3d-models_2}}
+{{region vb-radchart-how-to-use-custom-3d-models_2}}
 	Private Sub FillSampleChartData()
-	 Dim barSeries As New DataSeries()
-	 barSeries.Definition = New Bar3DSeriesDefinition()
-	 barSeries.Definition.ItemStyle = DirectCast(Me.FindResource("MyStyle"), Style)
-	 barSeries.FillWithSampleData()
-	 Me.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries)
+	    Dim barSeries As New DataSeries()
+	    barSeries.Definition = New Bar3DSeriesDefinition()
+	    barSeries.Definition.ItemStyle = DirectCast(Me.FindResource("MyStyle"), Style)
+	    Me.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries)
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -209,7 +207,8 @@ Here is the actual template that follows this pattern:
 
 #### __XAML__
 
-{{region radchart-how-to-use-custom-3d-models_3}}
+{{region xaml-radchart-how-to-use-custom-3d-models_3}}
+	       
 	<Style x:Key="MyStyle" TargetType="{x:Type telerik:BarControl3D}">
 	  <Setter Property="Template">
 	   <Setter.Value>
@@ -315,7 +314,7 @@ Here is the actual template that follows this pattern:
 	   </Setter.Value>
 	  </Setter>
 	 </Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -323,9 +322,9 @@ Here is the actual template that follows this pattern:
 
 #### __XAML__
 
-{{region radchart-how-to-use-custom-3d-models_4}}
+{{region xaml-radchart-how-to-use-custom-3d-models_4}}
 	ScaleY="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type telerik:Bar3D}}, Path=Height}"
-	{{endregion}}
+{{endregion}}
 
 
 

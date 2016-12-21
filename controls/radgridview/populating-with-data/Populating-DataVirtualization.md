@@ -33,30 +33,20 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
 
 #### __[C#]Example 1: Wrap a query in a VirtualQueryableCollectionView__
 
-{{region using-data-virtualization_0}}
-	public MainWindow()
-    {
-        InitializeComponent();
-        var context = new NorthwindEntities();
-        var query = context.Order_Details.OrderBy(o => o.OrderID);
-        var view = new VirtualQueryableCollectionView(query) { LoadSize = 10 };
-        DataContext = view;
-    }
+{{region cs-GridView-Populating-DataVirtualization_0}}
+	var context = new NorthwindEntities();
+	var query = context.Order_Details.OrderBy(o => o.OrderID);
+	var view = new VirtualQueryableCollectionView(query) { LoadSize = 10 };
+	DataContext = view;
 {{endregion}}
-
 
 #### __[VB.NET]Example 1: Wrap a query in a VirtualQueryableCollectionView__
 
-{{region using-data-virtualization_1}}
-	Public Sub New()
-	 InitializeComponent()
-	 Dim context = New NorthwindEntities()
-	 Dim query = context.Order_Details.OrderBy(Function(o) o.OrderID)
-	 Dim view = New VirtualQueryableCollectionView(query) With { _
-	  Key .LoadSize = 10 _
-	 }
-	 DataContext = view
-	End Sub
+{{region vb-GridView-Populating-DataVirtualization_1}}
+	Dim context = New NorthwindEntities()
+	Dim query = context.Order_Details.OrderBy(Function(o) o.OrderID)
+	Dim view = New VirtualQueryableCollectionView(query) With {.LoadSize = 10}
+	DataContext = view
 {{endregion}}
 
 In the example above Entity Framework is used. However, you may use Linq to SQL, OpenAccess or any other Linq provider in the same manner.
@@ -69,37 +59,35 @@ In the example above Entity Framework is used. However, you may use Linq to SQL,
 
 In order to utilize the VirtualQueryableCollectionView class, you may take the following approach (the example below demonstrates the case when utilizing WCF RIA Services):
 
+
 #### __[C#]Example 1: Using data virtualization with WCF RIA Services__
 
-{{region using-data-virtualization_3}}
-	public MainPage()
-    {
-        InitializeComponent();
-        var context = new NorthwindDomainContext();
-        var query = context.GetOrder_DetailsQuery().OrderBy(o => o.OrderID);
-        query.IncludeTotalCount = true;
-        var view = new VirtualQueryableCollectionView() { LoadSize = 10, VirtualItemCount = 100 };
-        view.ItemsLoading += (s, e) =>
-        {
-            context.Load<Order_Detail>(query.Skip(e.StartIndex).Take(e.ItemCount)).Completed += (sender, args) =>
-           {
-               var lo = (LoadOperation)sender;
-               if (lo.TotalEntityCount != -1 && lo.TotalEntityCount != view.VirtualItemCount)
-               {
-                   view.VirtualItemCount = lo.TotalEntityCount;
-               }
-               view.Load(e.StartIndex, lo.Entities);
-           };
-        };
-        DataContext = view;
-    }
+{{region cs-GridView-Populating-DataVirtualization_3}}
+	var context = new NorthwindDomainContext();
+	var query = context.GetOrder_DetailsQuery().OrderBy(o => o.OrderID);
+	query.IncludeTotalCount = true;
+	var view = new VirtualQueryableCollectionView() { LoadSize = 10, VirtualItemCount = 100 };
+	view.ItemsLoading += (s, e) =>
+	{
+	    context.Load<Order_Detail>(query.Skip(e.StartIndex).Take(e.ItemCount)).Completed += (sender, args) =>
+	    {
+	        var lo = (LoadOperation)sender;
+	        if (lo.TotalEntityCount != -1 && lo.TotalEntityCount != view.VirtualItemCount)
+	        {
+	            view.VirtualItemCount = lo.TotalEntityCount;
+	        }
+	        view.Load(e.StartIndex, lo.Entities);
+	    };
+	};
+	DataContext = view;
 {{endregion}}
 
 {% endif %}
 
+
 #### __[XAML]Example 2: Binding RadGridView__
 
-{{region using-data-virtualization_5}}
+{{region xaml-GridView-Populating-DataVirtualization_5}}
 	<telerik:RadGridView ItemsSource="{Binding}" />
 {{endregion}}
 

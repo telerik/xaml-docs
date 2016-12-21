@@ -18,20 +18,20 @@ When the __IsMoveToPointEnabled__ property is set to __true__ and you click some
 
 #### __XAML__
 
-{{region radslider-move-to-point_0}}
+{{region xaml-radslider-move-to-point_0}}
 	<telerik:RadSlider Maximum="10" IsMoveToPointEnabled="True"/>
-	{{endregion}}
+{{endregion}}
 
 ![](images/moveToPoint.png)
 
 #### __XAML__
 
-{{region radslider-move-to-point_1}}
+{{region xaml-radslider-move-to-point_1}}
 	<telerik:RadSlider IsMoveToPointEnabled="True" 
-	                   IsSelectionRangeEnabled="True"
-	                   Maximum="10"
-	                   SelectionEnd="5"
-	                   SelectionStart="3" />
-	{{endregion}}
+	           IsSelectionRangeEnabled="True"
+	           Maximum="10"
+	           SelectionEnd="5"
+	           SelectionStart="3" />
+{{endregion}}
 
 ![](images/moveToPoint_selectionRange.png)

@@ -20,9 +20,7 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_0}}
-
-	<?xml version="1.0" encoding="utf-8" ?>
+{{region xaml-gridview-loading-data-from-xml_0}}
 	<Items>
 	    <XmlNodeItem Team="Barcelona" Country="Spain"/>
 	    <XmlNodeItem Team="Juventus" Country="Italy"/>
@@ -35,7 +33,7 @@ The final result should look like the snapshot below:
 	    <XmlNodeItem Team="Porto" Country="Portugal"/>
 	    <XmlNodeItem Team="Liverpool" Country="England"/>
 	    <XmlNodeItem Team="Ajax" Country="Holland"/>
-	    <XmlNodeItem Team="Olimpic M" Country="France"/>    
+	    <XmlNodeItem Team="Olimpic M" Country="France"/>
 	</Items>
 {{endregion}}
 
@@ -43,17 +41,16 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_1}}
-
+{{region cs-gridview-loading-data-from-xml_1}}
 	public class XmlNodeItem
 	{
-	    [XmlAttribute( AttributeName = "Team" )]
+	    [XmlAttribute(AttributeName = "Team")]
 	    public string Team
 	    {
 	        get;
 	        set;
 	    }
-	    [XmlAttribute( AttributeName = "Country" )]
+	    [XmlAttribute(AttributeName = "Country")]
 	    public string Country
 	    {
 	        get;
@@ -64,11 +61,10 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_2}}
-
+{{region vb-gridview-loading-data-from-xml_2}}
 	Public Class XmlNodeItem
-	Private _Team As String
-	    <XmlAttribute(AttributeName = "Team")> _
+	    Private _Team As String
+	    <XmlAttribute(AttributeName := "Team")>
 	    Public Property Team() As String
 	        Get
 	            Return _Team
@@ -78,8 +74,8 @@ The final result should look like the snapshot below:
 	        End Set
 	    End Property
 	
-	Private _Country As String
-	    <XmlAttribute(AttributeName = "Country")> _
+	    Private _Country As String
+	    <XmlAttribute(AttributeName := "Country")>
 	    Public Property Country() As String
 	        Get
 	            Return _Country
@@ -95,16 +91,15 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_3}}
-
-	[XmlRoot( ElementName = "Items" )]
+{{region cs-gridview-loading-data-from-xml_3}}
+	[XmlRoot(ElementName = "Items")]
 	public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
 	{
-	    public void AddRange( IEnumerable<XmlNodeItem> range )
+	    public void AddRange(IEnumerable<XmlNodeItem> range)
 	    {
-	        foreach ( XmlNodeItem node in range )
+	        foreach (XmlNodeItem node in range)
 	        {
-	            this.Add( node );
+	            this.Add(node);
 	        }
 	    }
 	}
@@ -112,9 +107,8 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_4}}
-
-	<XmlRoot(ElementName = "Items")> _
+{{region vb-gridview-loading-data-from-xml_4}}
+	<XmlRoot(ElementName := "Items")>
 	Public Class XmlNodeItemList
 	    Inherits ObservableCollection(Of XmlNodeItem)
 	    Public Sub AddRange(ByVal range As IEnumerable(Of XmlNodeItem))
@@ -129,8 +123,7 @@ The final result should look like the snapshot below:
 
 #### __C#__
 
-{{region gridview-loading-data-from-xml_5}}
-
+{{region cs-gridview-loading-data-from-xml_5}}
 	public class RadGridViewXmlDataSource : XmlNodeItemList
 	{
 	    private string source;
@@ -143,15 +136,15 @@ The final result should look like the snapshot below:
 	        set
 	        {
 	            this.source = value;
-	            AddRange( RetrieveData( Application.GetResourceStream( new Uri( value, UriKind.Relative ) ).Stream ) );
-	            AddRange( RetrieveData( File.Open( value, FileMode.Open ) ) );
+	            AddRange(RetrieveData(Application.GetResourceStream(new Uri(value, UriKind.Relative)).Stream));
+	            AddRange(RetrieveData(File.Open(value, FileMode.Open)));
 	        }
 	    }
-	    private XmlNodeItemList RetrieveData( Stream xmlStream )
+	    private XmlNodeItemList RetrieveData(Stream xmlStream)
 	    {
-	        XmlSerializer serializer = new XmlSerializer( typeof( XmlNodeItemList ) );
-	        StreamReader reader = new StreamReader( xmlStream );
-	        XmlNodeItemList list = ( XmlNodeItemList )serializer.Deserialize( reader );
+	        XmlSerializer serializer = new XmlSerializer(typeof(XmlNodeItemList));
+	        StreamReader reader = new StreamReader(xmlStream);
+	        XmlNodeItemList list = (XmlNodeItemList)serializer.Deserialize(reader);
 	        return list;
 	    }
 	}
@@ -159,8 +152,7 @@ The final result should look like the snapshot below:
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-xml_6}}
-
+{{region vb-gridview-loading-data-from-xml_6}}
 	Public Class RadGridViewXmlDataSource
 	    Inherits XmlNodeItemList
 	    Private m_source As String
@@ -188,22 +180,34 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_7}}
-
+{{region xaml-gridview-loading-data-from-xml_7}}
 	<UserControl.Resources>
-	    <example:RadGridViewXmlDataSource x:Key="DataSource"
-	        Source="RadGridViewBindingToXml.xml"/>
-	</UserControl.Resources>
+	    <local:RadGridViewXmlDataSource x:Key="DataSource" Source="RadGridViewBindingToXml.xml"/>
+	    <XmlDataProvider x:Key="loadingDataFromXml">
+	        <x:XData>
+	            <!-- #region gridview-loading-data-from-xml_0 -->
+	            <Items>
+	                <XmlNodeItem Team="Barcelona" Country="Spain"/>
+	                <XmlNodeItem Team="Juventus" Country="Italy"/>
+	                <XmlNodeItem Team="Inter" Country="Italy"/>
+	                <XmlNodeItem Team="Ac Milan" Country="Italy"/>
+	                <XmlNodeItem Team="Real M" Country="Spain"/>
+	                <XmlNodeItem Team="Arsenal" Country="England"/>
+	                <XmlNodeItem Team="Manchester U" Country="England"/>
+	                <XmlNodeItem Team="Bayern" Country="Germany"/>
+	                <XmlNodeItem Team="Porto" Country="Portugal"/>
+	                <XmlNodeItem Team="Liverpool" Country="England"/>
+	                <XmlNodeItem Team="Ajax" Country="Holland"/>
+	                <XmlNodeItem Team="Olimpic M" Country="France"/>
+	            </Items>
 {{endregion}}
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
-{{region gridview-loading-data-from-xml_8}}
-
-	<telerik:RadGridView x:Name="radGridView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource DataSource}}"/>
+{{region xaml-gridview-loading-data-from-xml_8}}
+	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}}"/>
 {{endregion}}
 
 Run your demo, the result can be seen on the next picture: 

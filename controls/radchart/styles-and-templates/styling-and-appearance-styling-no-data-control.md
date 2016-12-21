@@ -28,9 +28,9 @@ This topic will show you how to perform the second one.
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-no-data-control_0}}
-	xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"
-	{{endregion}}
+{{region xaml-radchart-styling-and-appearance-styling-no-data-control_0}}
+	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
+{{endregion}}
 
 
 
@@ -50,17 +50,17 @@ To apply the style to the real control, set it to the __NoDataControl__ property
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-no-data-control_1}}
-	this.radChart.DefaultView.ChartArea.NoDataControlStyle = this.Resources[ "NoDataControlStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-no-data-control_1}}
+	this.radChart.DefaultView.ChartArea.NoDataControlStyle = this.Resources["NoDataControlStyle"] as Style;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-no-data-control_2}}
+{{region vb-radchart-styling-and-appearance-styling-no-data-control_2}}
 	Me.radChart.DefaultView.ChartArea.NoDataControlStyle = TryCast(Me.Resources("NoDataControlStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -77,87 +77,56 @@ Here is the final XAML for the __Style__after the modifications:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-no-data-control_3}}
+{{region xaml-radchart-styling-and-appearance-styling-no-data-control_3}}
 	<System:Double x:Key="NoDataFontSize">16</System:Double>
 	<FontWeight x:Key="NoDataFontWeight">Normal</FontWeight>
 	<VerticalAlignment x:Key="NoDataVerticalAlignment">Center</VerticalAlignment>
 	<Thickness x:Key="NoDataPadding">0,16,0,18</Thickness>
 	<Thickness x:Key="NoDataMargin">0</Thickness>
-	<SolidColorBrush x:Key="NoDataForeground"
-	                 Color="White" />
-	<LinearGradientBrush x:Key="NoDataControlInnerBorderBackground"
-	                     EndPoint="1,0.5"
-	                     StartPoint="0,0.5">
-	    <GradientStop Color="#FF008CEF"
-	                  Offset="0.5" />
-	    <GradientStop Color="#00B3B3B3"
-	                  Offset="1" />
+	<SolidColorBrush x:Key="NoDataForeground" Color="White" />
+	<LinearGradientBrush x:Key="NoDataControlInnerBorderBackground" StartPoint="0,0.5" EndPoint="1,0.5">
+	    <GradientStop Offset="0.5" Color="#FF008CEF" />
+	    <GradientStop Offset="1" Color="#00B3B3B3" />
 	    <GradientStop Color="#00B3B3B3" />
 	</LinearGradientBrush>
 	<Thickness x:Key="NoDataControlInnerBorderBorderThickness">0</Thickness>
-	<SolidColorBrush x:Key="NoDataControlInnerBorderBorderBrush"
-	                 Color="Transparent" />
-	<SolidColorBrush x:Key="NoDataControlOuterBorderBackground"
-	                 Color="Transparent" />
-	<SolidColorBrush x:Key="NoDataControlOuterBorderBorderBrush"
-	                 Color="Transparent" />
+	<SolidColorBrush x:Key="NoDataControlInnerBorderBorderBrush" Color="Transparent" />
+	<SolidColorBrush x:Key="NoDataControlOuterBorderBackground" Color="Transparent" />
+	<SolidColorBrush x:Key="NoDataControlOuterBorderBorderBrush" Color="Transparent" />
 	<Thickness x:Key="NoDataControlOuterBorderBorderThickness">0</Thickness>
-	<SolidColorBrush x:Key="NoDataControlMiddleBorderBackground"
-	                 Color="Transparent" />
-	<SolidColorBrush x:Key="NoDataControlMiddleBorderBorderBrush"
-	                 Color="Transparent" />
+	<SolidColorBrush x:Key="NoDataControlMiddleBorderBackground" Color="Transparent" />
+	<SolidColorBrush x:Key="NoDataControlMiddleBorderBorderBrush" Color="Transparent" />
 	<Thickness x:Key="NoDataControlMiddleBorderBorderThickness">0</Thickness>
 	<HorizontalAlignment x:Key="NoDataControlInnerHorizontalAlignment">Stretch</HorizontalAlignment>
 	<VerticalAlignment x:Key="NoDataControlInnerVerticalAlignment">Stretch</VerticalAlignment>
-	<LinearGradientBrush x:Key="NoDataControlInnerBorderOpacityMask"
-	                     EndPoint="0.5,1"
-	                     StartPoint="0.5,0">
-	    <GradientStop Color="#4C000000"
-	                  Offset="1" />
+	<LinearGradientBrush x:Key="NoDataControlInnerBorderOpacityMask" StartPoint="0.5,0" EndPoint="0.5,1">
+	    <GradientStop Offset="1" Color="#4C000000" />
 	    <GradientStop Color="#4C000000" />
-	    <GradientStop Color="#00000000"
-	                  Offset="0.33" />
-	    <GradientStop Color="Black"
-	                  Offset="0.331" />
-	    <GradientStop Color="#2F000000"
-	                  Offset="0.66" />
-	    <GradientStop Color="Black"
-	                  Offset="0.659" />
+	    <GradientStop Offset="0.33" Color="#00000000" />
+	    <GradientStop Offset="0.331" Color="Black" />
+	    <GradientStop Offset="0.66" Color="#2F000000" />
+	    <GradientStop Offset="0.659" Color="Black" />
 	</LinearGradientBrush>
 	<CornerRadius x:Key="NoDataControlInnerBorderCornerRadius">0</CornerRadius>
 	<CornerRadius x:Key="NoDataControlMiddleBorderCornerRadius">0</CornerRadius>
 	<CornerRadius x:Key="NoDataControlOuterBorderCornerRadius">0</CornerRadius>
-	<Style x:Key="NoDataControlStyle"
-	       TargetType="telerikCharting:NoDataControl">
-	    <Setter Property="FontSize"
-	            Value="{StaticResource NoDataFontSize}" />
-	    <Setter Property="FontWeight"
-	            Value="{StaticResource NoDataFontWeight}" />
-	    <Setter Property="FontStyle"
-	            Value="Normal" />
-	    <Setter Property="VerticalAlignment"
-	            Value="{StaticResource NoDataVerticalAlignment}" />
-	    <Setter Property="TextVerticalAlignment"
-	            Value="Center" />
-	    <Setter Property="HorizontalAlignment"
-	            Value="Stretch" />
-	    <Setter Property="TextHorizontalAlignment"
-	            Value="Center" />
-	    <Setter Property="Padding"
-	            Value="{StaticResource NoDataPadding}" />
-	    <Setter Property="Margin"
-	            Value="{StaticResource NoDataMargin}" />
-	    <Setter Property="Foreground"
-	            Value="{StaticResource NoDataForeground}" />
-	    <Setter Property="Background"
-	            Value="{StaticResource NoDataControlInnerBorderBackground}" />
-	    <Setter Property="BorderThickness"
-	            Value="{StaticResource NoDataControlInnerBorderBorderThickness}" />
-	    <Setter Property="BorderBrush"
-	            Value="{StaticResource NoDataControlInnerBorderBorderBrush}" />
+	<Style x:Key="NoDataControlStyle" TargetType="telerik:NoDataControl">
+	    <Setter Property="FontSize" Value="{StaticResource NoDataFontSize}" />
+	    <Setter Property="FontWeight" Value="{StaticResource NoDataFontWeight}" />
+	    <Setter Property="FontStyle" Value="Normal" />
+	    <Setter Property="VerticalAlignment" Value="{StaticResource NoDataVerticalAlignment}" />
+	    <Setter Property="TextVerticalAlignment" Value="Center" />
+	    <Setter Property="HorizontalAlignment" Value="Stretch" />
+	    <Setter Property="TextHorizontalAlignment" Value="Center" />
+	    <Setter Property="Padding" Value="{StaticResource NoDataPadding}" />
+	    <Setter Property="Margin" Value="{StaticResource NoDataMargin}" />
+	    <Setter Property="Foreground" Value="{StaticResource NoDataForeground}" />
+	    <Setter Property="Background" Value="{StaticResource NoDataControlInnerBorderBackground}" />
+	    <Setter Property="BorderThickness" Value="{StaticResource NoDataControlInnerBorderBorderThickness}" />
+	    <Setter Property="BorderBrush" Value="{StaticResource NoDataControlInnerBorderBorderBrush}" />
 	    <Setter Property="Template">
 	        <Setter.Value>
-	            <ControlTemplate TargetType="telerikCharting:NoDataControl">
+	            <ControlTemplate TargetType="telerik:NoDataControl">
 	                <Border Background="{StaticResource NoDataControlOuterBorderBackground}"
 	                        BorderBrush="{StaticResource NoDataControlOuterBorderBorderBrush}"
 	                        BorderThickness="{StaticResource NoDataControlOuterBorderBorderThickness}"
@@ -166,14 +135,14 @@ Here is the final XAML for the __Style__after the modifications:
 	                            BorderBrush="{StaticResource NoDataControlMiddleBorderBorderBrush}"
 	                            BorderThickness="{StaticResource NoDataControlMiddleBorderBorderThickness}"
 	                            CornerRadius="{StaticResource NoDataControlMiddleBorderCornerRadius}">
-	                        <Border HorizontalAlignment="{StaticResource NoDataControlInnerHorizontalAlignment}"
-	                                Margin="{TemplateBinding Margin}"
+	                        <Border Margin="{TemplateBinding Margin}"
+	                                HorizontalAlignment="{StaticResource NoDataControlInnerHorizontalAlignment}"
 	                                VerticalAlignment="{StaticResource NoDataControlInnerVerticalAlignment}"
-	                                OpacityMask="{StaticResource NoDataControlInnerBorderOpacityMask}"
 	                                Background="{TemplateBinding Background}"
 	                                BorderBrush="{TemplateBinding BorderBrush}"
 	                                BorderThickness="{TemplateBinding BorderThickness}"
-	                                CornerRadius="{StaticResource NoDataControlInnerBorderCornerRadius}">
+	                                CornerRadius="{StaticResource NoDataControlInnerBorderCornerRadius}"
+	                                OpacityMask="{StaticResource NoDataControlInnerBorderOpacityMask}">
 	                            <TextBlock HorizontalAlignment="{TemplateBinding TextHorizontalAlignment}"
 	                                       VerticalAlignment="{TemplateBinding TextVerticalAlignment}"
 	                                       FontFamily="{TemplateBinding FontFamily}"
@@ -191,7 +160,7 @@ Here is the final XAML for the __Style__after the modifications:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

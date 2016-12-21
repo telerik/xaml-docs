@@ -18,32 +18,28 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_0}}
-	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle" >
-	   <Setter Property="Fill">
-	     <Setter.Value>
-	      <LinearGradientBrush EndPoint="1,0"
-	                  StartPoint="0,1"
-	                  SpreadMethod="Pad">
-	          <GradientStop Color="Black"
-	               Offset="0" />
-	          <GradientStop Color="#FF00B4FF"
-	               Offset="1" />
-	      </LinearGradientBrush>
-	     </Setter.Value>
-	   </Setter>
+{{region xaml-radchart-styling-and-appearance-styling-strip-lines_0}}
+	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle">
+	    <Setter Property="Fill">
+	        <Setter.Value>
+	            <LinearGradientBrush SpreadMethod="Pad" StartPoint="0,1" EndPoint="1,0">
+	                <GradientStop Offset="0" Color="Black" />
+	                <GradientStop Offset="1" Color="#FF00B4FF" />
+	            </LinearGradientBrush>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_1}}
-	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle" >
+{{region xaml-radchart-styling-and-appearance-styling-strip-lines_1}}
+	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle">
 	    <Setter Property="Fill" Value="LightGray" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -51,19 +47,19 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_2}}
+{{region cs-radchart-styling-and-appearance-styling-strip-lines_2}}
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = this.Resources["HorizontalAlternateStripLineStyle"] as Style;
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = this.Resources["HorizontalStripLineStyle"] as Style;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_3}}
+{{region vb-radchart-styling-and-appearance-styling-strip-lines_3}}
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = TryCast(Me.Resources("HorizontalAlternateStripLineStyle"), Style)
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = TryCast(Me.Resources("HorizontalStripLineStyle"), Style)
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -71,17 +67,17 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_4}}
+{{region cs-radchart-styling-and-appearance-styling-strip-lines_4}}
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible;
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-strip-lines_5}}
+{{region vb-radchart-styling-and-appearance-styling-strip-lines_5}}
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible
-	{{endregion}}
+{{endregion}}
 
 
 

@@ -20,363 +20,356 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 
 #### __C#__
 
-{{region radchart-features-tooltips_0}}
-	using System;
-	using System.Collections.ObjectModel;
-	namespace Silverlight.Help.RadChartSamples
+{{region cs-radchart-features-tooltips_0}}
+	public class TradeData
 	{
-	    public class TradeData
+	    public string Emission
 	    {
-	        public string Emission
-	        {
-	            get;
-	            set;
-	        }
-	        public DateTime FromDate
-	        {
-	            get;
-	            set;
-	        }
-	        public DateTime ToDate
-	        {
-	            get;
-	            set;
-	        }
-	        public double Open
-	        {
-	            get;
-	            set;
-	        }
-	        public double High
-	        {
-	            get;
-	            set;
-	        }
-	        public double Low
-	        {
-	            get;
-	            set;
-	        }
-	        public double Close
-	        {
-	            get;
-	            set;
-	        }
-	        public double Volume
-	        {
-	            get;
-	            set;
-	        }
-	        public static ObservableCollection<TradeData> GetWeeklyData( string code )
-	        {
-	            ObservableCollection<TradeData> tradeData;
-	            tradeData = new ObservableCollection<TradeData>() {
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 10 ), Open = 23.4600, High = 23.5500, Low = 23.3000, Close = 23.4200, Volume = 35258950 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 11 ), Open = 23.3200, High = 23.4000, Low = 23.0500, Close = 23.1300, Volume = 33611790 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 12 ), Open = 23.1300, High = 23.9000, Low = 23.0300, Close = 23.5300, Volume = 61936270 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 13 ), Open = 23.6300, High = 23.8500, Low = 23.4000, Close = 23.6200, Volume = 38951990 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 14 ), Open = 23.6200, High = 23.8000, Low = 23.5100, Close = 23.6900, Volume = 46328540 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 17 ), Open = 23.3200, High = 23.6000, Low = 23.2300, Close = 23.2500, Volume = 42462890 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 18 ), Open = 23.2900, High = 23.6520, Low = 23.2700, Close = 23.5800, Volume = 38831620 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 19 ), Open = 23.2500, High = 23.7200, Low = 23.2500, Close = 23.6500, Volume = 41814320 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 20 ), Open = 23.6000, High = 23.8700, Low = 23.5400, Close = 23.6700, Volume = 39502680 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 21 ), Open = 23.9300, High = 24.4200, Low = 23.7700, Close = 24.4100, Volume = 68995700},
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 24 ), Open = 24.4100, High = 24.7326, Low = 24.2800, Close = 24.6400, Volume = 54159300 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 25 ), Open = 24.6000, High = 24.8200, Low = 24.4600, Close = 24.6400, Volume = 43961480 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 26 ), Open = 24.5900, High = 24.7500, Low = 24.4200, Close = 24.5500, Volume = 41060010 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 27 ), Open = 24.4100, High = 24.7800, Low = 24.3000, Close = 24.6900, Volume = 45433940 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 28 ), Open = 25.0700, High = 25.4900, Low = 24.6100, Close = 24.6800, Volume = 55789640 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 31 ), Open = 24.5700, High = 24.8500, Low = 24.2900, Close = 24.6500, Volume = 49582950 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 1 ), Open = 24.3500, High = 24.7400, Low = 23.9000, Close = 24.0000, Volume = 62571800 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 2 ), Open = 23.8200, High = 24.1400, Low = 23.7800, Close = 23.8600, Volume = 40726040 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 3 ), Open = 23.9100, High = 24.1400, Low = 23.7600, Close = 24.1100, Volume = 34110810 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 4 ), Open = 24.0900, High = 24.8001, Low = 24.0800, Close = 24.6200, Volume = 44987570 },
-	                new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 8 ), Open = 24.6200, High = 24.8400, Low = 24.4100, Close = 24.8200, Volume = 52243880 } };
-	            return tradeData;
-	        }
+	        get;
+	        set;
+	    }
+	    public DateTime FromDate
+	    {
+	        get;
+	        set;
+	    }
+	    public DateTime ToDate
+	    {
+	        get;
+	        set;
+	    }
+	    public double Open
+	    {
+	        get;
+	        set;
+	    }
+	    public double High
+	    {
+	        get;
+	        set;
+	    }
+	    public double Low
+	    {
+	        get;
+	        set;
+	    }
+	    public double Close
+	    {
+	        get;
+	        set;
+	    }
+	    public double Volume
+	    {
+	        get;
+	        set;
+	    }
+	
+	    public static ObservableCollection<TradeData> GetWeeklyData( string code )
+	    {
+	        ObservableCollection<TradeData> tradeData;
+	        tradeData = new ObservableCollection<TradeData>() {
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 10 ), Open = 23.4600, High = 23.5500, Low = 23.3000, Close = 23.4200, Volume = 35258950 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 11 ), Open = 23.3200, High = 23.4000, Low = 23.0500, Close = 23.1300, Volume = 33611790 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 12 ), Open = 23.1300, High = 23.9000, Low = 23.0300, Close = 23.5300, Volume = 61936270 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 13 ), Open = 23.6300, High = 23.8500, Low = 23.4000, Close = 23.6200, Volume = 38951990 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 14 ), Open = 23.6200, High = 23.8000, Low = 23.5100, Close = 23.6900, Volume = 46328540 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 17 ), Open = 23.3200, High = 23.6000, Low = 23.2300, Close = 23.2500, Volume = 42462890 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 18 ), Open = 23.2900, High = 23.6520, Low = 23.2700, Close = 23.5800, Volume = 38831620 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 19 ), Open = 23.2500, High = 23.7200, Low = 23.2500, Close = 23.6500, Volume = 41814320 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 20 ), Open = 23.6000, High = 23.8700, Low = 23.5400, Close = 23.6700, Volume = 39502680 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 21 ), Open = 23.9300, High = 24.4200, Low = 23.7700, Close = 24.4100, Volume = 68995700},
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 24 ), Open = 24.4100, High = 24.7326, Low = 24.2800, Close = 24.6400, Volume = 54159300 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 25 ), Open = 24.6000, High = 24.8200, Low = 24.4600, Close = 24.6400, Volume = 43961480 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 26 ), Open = 24.5900, High = 24.7500, Low = 24.4200, Close = 24.5500, Volume = 41060010 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 27 ), Open = 24.4100, High = 24.7800, Low = 24.3000, Close = 24.6900, Volume = 45433940 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 28 ), Open = 25.0700, High = 25.4900, Low = 24.6100, Close = 24.6800, Volume = 55789640 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 8, 31 ), Open = 24.5700, High = 24.8500, Low = 24.2900, Close = 24.6500, Volume = 49582950 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 1 ), Open = 24.3500, High = 24.7400, Low = 23.9000, Close = 24.0000, Volume = 62571800 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 2 ), Open = 23.8200, High = 24.1400, Low = 23.7800, Close = 23.8600, Volume = 40726040 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 3 ), Open = 23.9100, High = 24.1400, Low = 23.7600, Close = 24.1100, Volume = 34110810 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 4 ), Open = 24.0900, High = 24.8001, Low = 24.0800, Close = 24.6200, Volume = 44987570 },
+	            new TradeData() { Emission="MSFT", FromDate = new DateTime( 2009, 9, 8 ), Open = 24.6200, High = 24.8400, Low = 24.4100, Close = 24.8200, Volume = 52243880 } };
+	        return tradeData;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-tooltips_1}}
-	Imports System
-	Imports System.Collections.ObjectModel
-	Namespace Silverlight.Help.RadChartSamples
-	 Public Class TradeData
-	  Public Property Emission() As String
-	   Get
-	    Return m_Emission
-	   End Get
-	   Set
-	    m_Emission = Value
-	   End Set
-	  End Property
-	  Private m_Emission As String
-	  Public Property FromDate() As DateTime
-	   Get
-	    Return m_FromDate
-	   End Get
-	   Set
-	    m_FromDate = Value
-	   End Set
-	  End Property
-	  Private m_FromDate As DateTime
-	  Public Property ToDate() As DateTime
-	   Get
-	    Return m_ToDate
-	   End Get
-	   Set
-	    m_ToDate = Value
-	   End Set
-	  End Property
-	  Private m_ToDate As DateTime
-	  Public Property Open() As Double
-	   Get
-	    Return m_Open
-	   End Get
-	   Set
-	    m_Open = Value
-	   End Set
-	  End Property
-	  Private m_Open As Double
-	  Public Property High() As Double
-	   Get
-	    Return m_High
-	   End Get
-	   Set
-	    m_High = Value
-	   End Set
-	  End Property
-	  Private m_High As Double
-	  Public Property Low() As Double
-	   Get
-	    Return m_Low
-	   End Get
-	   Set
-	    m_Low = Value
-	   End Set
-	  End Property
-	  Private m_Low As Double
-	  Public Property Close() As Double
-	   Get
-	    Return m_Close
-	   End Get
-	   Set
-	    m_Close = Value
-	   End Set
-	  End Property
-	  Private m_Close As Double
-	  Public Property Volume() As Double
-	   Get
-	    Return m_Volume
-	   End Get
-	   Set
-	    m_Volume = Value
-	   End Set
-	  End Property
-	  Private m_Volume As Double
-	  Public Shared Function GetWeeklyData(code As String) As ObservableCollection(Of TradeData)
-	   Dim tradeData As ObservableCollection(Of TradeData)
-	   tradeData = New ObservableCollection(Of TradeData)() With { _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 10), _
-	     .Open = 23.46, _
-	     .High = 23.55, _
-	     .Low = 23.3, _
-	     .Close = 23.42, _
-	     .Volume = 35258950 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 11), _
-	     .Open = 23.32, _
-	     .High = 23.4, _
-	     .Low = 23.05, _
-	     .Close = 23.13, _
-	     .Volume = 33611790 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 12), _
-	     .Open = 23.13, _
-	     .High = 23.9, _
-	     .Low = 23.03, _
-	     .Close = 23.53, _
-	     .Volume = 61936270 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 13), _
-	     .Open = 23.63, _
-	     .High = 23.85, _
-	     .Low = 23.4, _
-	     .Close = 23.62, _
-	     .Volume = 38951990 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 14), _
-	     .Open = 23.62, _
-	     .High = 23.8, _
-	     .Low = 23.51, _
-	     .Close = 23.69, _
-	     .Volume = 46328540 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 17), _
-	     .Open = 23.32, _
-	     .High = 23.6, _
-	     .Low = 23.23, _
-	     .Close = 23.25, _
-	     .Volume = 42462890 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 18), _
-	     .Open = 23.29, _
-	     .High = 23.652, _
-	     .Low = 23.27, _
-	     .Close = 23.58, _
-	     .Volume = 38831620 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 19), _
-	     .Open = 23.25, _
-	     .High = 23.72, _
-	     .Low = 23.25, _
-	     .Close = 23.65, _
-	     .Volume = 41814320 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 20), _
-	     .Open = 23.6, _
-	     .High = 23.87, _
-	     .Low = 23.54, _
-	     .Close = 23.67, _
-	     .Volume = 39502680 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 21), _
-	     .Open = 23.93, _
-	     .High = 24.42, _
-	     .Low = 23.77, _
-	     .Close = 24.41, _
-	     .Volume = 68995700 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 24), _
-	     .Open = 24.41, _
-	     .High = 24.7326, _
-	     .Low = 24.28, _
-	     .Close = 24.64, _
-	     .Volume = 54159300 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 25), _
-	     .Open = 24.6, _
-	     .High = 24.82, _
-	     .Low = 24.46, _
-	     .Close = 24.64, _
-	     .Volume = 43961480 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 26), _
-	     .Open = 24.59, _
-	     .High = 24.75, _
-	     .Low = 24.42, _
-	     .Close = 24.55, _
-	     .Volume = 41060010 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 27), _
-	     .Open = 24.41, _
-	     .High = 24.78, _
-	     .Low = 24.3, _
-	     .Close = 24.69, _
-	     .Volume = 45433940 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 28), _
-	     .Open = 25.07, _
-	     .High = 25.49, _
-	     .Low = 24.61, _
-	     .Close = 24.68, _
-	     .Volume = 55789640 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 8, 31), _
-	     .Open = 24.57, _
-	     .High = 24.85, _
-	     .Low = 24.29, _
-	     .Close = 24.65, _
-	     .Volume = 49582950 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 9, 1), _
-	     .Open = 24.35, _
-	     .High = 24.74, _
-	     .Low = 23.9, _
-	     .Close = 24.0, _
-	     .Volume = 62571800 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 9, 2), _
-	     .Open = 23.82, _
-	     .High = 24.14, _
-	     .Low = 23.78, _
-	     .Close = 23.86, _
-	     .Volume = 40726040 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 9, 3), _
-	     .Open = 23.91, _
-	     .High = 24.14, _
-	     .Low = 23.76, _
-	     .Close = 24.11, _
-	     .Volume = 34110810 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 9, 4), _
-	     .Open = 24.09, _
-	     .High = 24.8001, _
-	     .Low = 24.08, _
-	     .Close = 24.62, _
-	     .Volume = 44987570 _
-	    }, _
-	    New TradeData() With { _
-	     .Emission = "MSFT", _
-	     .FromDate = New DateTime(2009, 9, 8), _
-	     .Open = 24.62, _
-	     .High = 24.84, _
-	     .Low = 24.41, _
-	     .Close = 24.82, _
-	     .Volume = 52243880 _
-	    } _
-	   }
-	   Return tradeData
-	  End Function
-	 End Class
-	End Namespace
-	{{endregion}}
+{{region vb-radchart-features-tooltips_1}}
+	Public Class TradeData
+	    Public Property Emission() As String
+	        Get
+	            Return m_Emission
+	        End Get
+	        Set(value As String)
+	            m_Emission = value
+	        End Set
+	    End Property
+	    Private m_Emission As String
+	    Public Property FromDate() As DateTime
+	        Get
+	            Return m_FromDate
+	        End Get
+	        Set(value As DateTime)
+	            m_FromDate = value
+	        End Set
+	    End Property
+	    Private m_FromDate As DateTime
+	    Public Property ToDate() As DateTime
+	        Get
+	            Return m_ToDate
+	        End Get
+	        Set(value As DateTime)
+	            m_ToDate = value
+	        End Set
+	    End Property
+	    Private m_ToDate As DateTime
+	    Public Property Open() As Double
+	        Get
+	            Return m_Open
+	        End Get
+	        Set(value As Double)
+	            m_Open = value
+	        End Set
+	    End Property
+	    Private m_Open As Double
+	    Public Property High() As Double
+	        Get
+	            Return m_High
+	        End Get
+	        Set(value As Double)
+	            m_High = value
+	        End Set
+	    End Property
+	    Private m_High As Double
+	    Public Property Low() As Double
+	        Get
+	            Return m_Low
+	        End Get
+	        Set(value As Double)
+	            m_Low = value
+	        End Set
+	    End Property
+	    Private m_Low As Double
+	    Public Property Close() As Double
+	        Get
+	            Return m_Close
+	        End Get
+	        Set(value As Double)
+	            m_Close = value
+	        End Set
+	    End Property
+	    Private m_Close As Double
+	    Public Property Volume() As Double
+	        Get
+	            Return m_Volume
+	        End Get
+	        Set(value As Double)
+	            m_Volume = value
+	        End Set
+	    End Property
+	    Private m_Volume As Double
+	
+	    Public Shared Function GetWeeklyData(code As String) As ObservableCollection(Of TradeData)
+	        Dim tradeData As ObservableCollection(Of TradeData)
+	        tradeData = New ObservableCollection(Of TradeData)() From { _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 10), _
+	                .Open = 23.46, _
+	                .High = 23.55, _
+	                .Low = 23.3, _
+	                .Close = 23.42, _
+	                .Volume = 35258950 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 11), _
+	                .Open = 23.32, _
+	                .High = 23.4, _
+	                .Low = 23.05, _
+	                .Close = 23.13, _
+	                .Volume = 33611790 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 12), _
+	                .Open = 23.13, _
+	                .High = 23.9, _
+	                .Low = 23.03, _
+	                .Close = 23.53, _
+	                .Volume = 61936270 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 13), _
+	                .Open = 23.63, _
+	                .High = 23.85, _
+	                .Low = 23.4, _
+	                .Close = 23.62, _
+	                .Volume = 38951990 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 14), _
+	                .Open = 23.62, _
+	                .High = 23.8, _
+	                .Low = 23.51, _
+	                .Close = 23.69, _
+	                .Volume = 46328540 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 17), _
+	                .Open = 23.32, _
+	                .High = 23.6, _
+	                .Low = 23.23, _
+	                .Close = 23.25, _
+	                .Volume = 42462890 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 18), _
+	                .Open = 23.29, _
+	                .High = 23.652, _
+	                .Low = 23.27, _
+	                .Close = 23.58, _
+	                .Volume = 38831620 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 19), _
+	                .Open = 23.25, _
+	                .High = 23.72, _
+	                .Low = 23.25, _
+	                .Close = 23.65, _
+	                .Volume = 41814320 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 20), _
+	                .Open = 23.6, _
+	                .High = 23.87, _
+	                .Low = 23.54, _
+	                .Close = 23.67, _
+	                .Volume = 39502680 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 21), _
+	                .Open = 23.93, _
+	                .High = 24.42, _
+	                .Low = 23.77, _
+	                .Close = 24.41, _
+	                .Volume = 68995700 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 24), _
+	                .Open = 24.41, _
+	                .High = 24.7326, _
+	                .Low = 24.28, _
+	                .Close = 24.64, _
+	                .Volume = 54159300 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 25), _
+	                .Open = 24.6, _
+	                .High = 24.82, _
+	                .Low = 24.46, _
+	                .Close = 24.64, _
+	                .Volume = 43961480 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 26), _
+	                .Open = 24.59, _
+	                .High = 24.75, _
+	                .Low = 24.42, _
+	                .Close = 24.55, _
+	                .Volume = 41060010 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 27), _
+	                .Open = 24.41, _
+	                .High = 24.78, _
+	                .Low = 24.3, _
+	                .Close = 24.69, _
+	                .Volume = 45433940 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 28), _
+	                .Open = 25.07, _
+	                .High = 25.49, _
+	                .Low = 24.61, _
+	                .Close = 24.68, _
+	                .Volume = 55789640 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 8, 31), _
+	                .Open = 24.57, _
+	                .High = 24.85, _
+	                .Low = 24.29, _
+	                .Close = 24.65, _
+	                .Volume = 49582950 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 9, 1), _
+	                .Open = 24.35, _
+	                .High = 24.74, _
+	                .Low = 23.9, _
+	                .Close = 24.0, _
+	                .Volume = 62571800 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 9, 2), _
+	                .Open = 23.82, _
+	                .High = 24.14, _
+	                .Low = 23.78, _
+	                .Close = 23.86, _
+	                .Volume = 40726040 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 9, 3), _
+	                .Open = 23.91, _
+	                .High = 24.14, _
+	                .Low = 23.76, _
+	                .Close = 24.11, _
+	                .Volume = 34110810 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 9, 4), _
+	                .Open = 24.09, _
+	                .High = 24.8001, _
+	                .Low = 24.08, _
+	                .Close = 24.62, _
+	                .Volume = 44987570 _
+	            }, _
+	            New TradeData() With { _
+	                .Emission = "MSFT", _
+	                .FromDate = New DateTime(2009, 9, 8), _
+	                .Open = 24.62, _
+	                .High = 24.84, _
+	                .Low = 24.41, _
+	                .Close = 24.82, _
+	                .Volume = 52243880 _
+	            } _
+	}
+	        Return tradeData
+	    End Function
+	End Class
+{{endregion}}
 
 
 
@@ -386,30 +379,23 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 
 #### __XAML__
 
-{{region radchart-features-tooltips_2}}
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <telerik:RadChart x:Name="radChart">
-	        <telerik:RadChart.SeriesMappings>
-	            <telerik:SeriesMapping>
-	                <telerik:SeriesMapping.SeriesDefinition>
-	                    <telerik:CandleStickSeriesDefinition ShowItemToolTips="True"/>
-	                </telerik:SeriesMapping.SeriesDefinition>
-	                <telerik:SeriesMapping.ItemMappings>
-	                    <telerik:ItemMapping DataPointMember="Open"
-	                                            FieldName="Open" />
-	                    <telerik:ItemMapping DataPointMember="High"
-	                                            FieldName="High" />
-	                    <telerik:ItemMapping DataPointMember="Low"
-	                                            FieldName="Low" />
-	                    <telerik:ItemMapping DataPointMember="Close"
-	                                            FieldName="Close" />
-	                </telerik:SeriesMapping.ItemMappings>
-	            </telerik:SeriesMapping>
-	        </telerik:RadChart.SeriesMappings>
-	    </telerik:RadChart>
-	</Grid>
-	{{endregion}}
+{{region xaml-radchart-features-tooltips_2}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:CandleStickSeriesDefinition ShowItemToolTips="True" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="Open" FieldName="Open" />
+	                <telerik:ItemMapping DataPointMember="High" FieldName="High" />
+	                <telerik:ItemMapping DataPointMember="Low" FieldName="Low" />
+	                <telerik:ItemMapping DataPointMember="Close" FieldName="Close" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -433,33 +419,24 @@ You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMa
 
 #### __XAML__
 
-{{region radchart-features-tooltips_3}}
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <telerik:RadChart x:Name="radChart">
-	        <telerik:RadChart.SeriesMappings>
-	            <telerik:SeriesMapping>
-	                <telerik:SeriesMapping.SeriesDefinition>
-	                    <telerik:CandleStickSeriesDefinition ShowItemToolTips="True"
-	                                                            ItemToolTipFormat="Open: #OPEN{C4}" />
-	                </telerik:SeriesMapping.SeriesDefinition>
-	                <telerik:SeriesMapping.ItemMappings>
-	                    <telerik:ItemMapping DataPointMember="Open"
-	                                            FieldName="Open" />
-	                    <telerik:ItemMapping DataPointMember="High"
-	                                            FieldName="High" />
-	                    <telerik:ItemMapping DataPointMember="Low"
-	                                            FieldName="Low" />
-	                    <telerik:ItemMapping DataPointMember="Close"
-	                                            FieldName="Close" />
-	                    <telerik:ItemMapping DataPointMember="Tooltip"
-	                                            FieldName="Close" />
-	                </telerik:SeriesMapping.ItemMappings>
-	            </telerik:SeriesMapping>
-	        </telerik:RadChart.SeriesMappings>
-	    </telerik:RadChart>
-	</Grid>
-	{{endregion}}
+{{region xaml-radchart-features-tooltips_3}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping>
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:CandleStickSeriesDefinition ItemToolTipFormat="Open: #OPEN{C4}" ShowItemToolTips="True" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="Open" FieldName="Open" />
+	                <telerik:ItemMapping DataPointMember="High" FieldName="High" />
+	                <telerik:ItemMapping DataPointMember="Low" FieldName="Low" />
+	                <telerik:ItemMapping DataPointMember="Close" FieldName="Close" />
+	                <telerik:ItemMapping DataPointMember="Tooltip" FieldName="Close" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -477,36 +454,31 @@ You can construct more complex tooltips combining several tokens, for example: _
 
 #### __XAML__
 
-{{region radchart-features-tooltips_4}}
+{{region xaml-radchart-features-tooltips_4}}
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="MSFT">
 	            <telerik:SeriesMapping.SeriesDefinition>
-	                <telerik:CandleStickSeriesDefinition  ShowItemToolTips="True"
-	                                                ItemToolTipFormat="Open: #OPEN{C4} / Close: #CLOSE{C4}&#x0a;Volume: #DATAITEM.Volume{###,###,##0}" />
+	                <telerik:CandleStickSeriesDefinition ItemToolTipFormat="Open: #OPEN{C4} / Close: #CLOSE{C4}&#x0a;Volume: #DATAITEM.Volume{###,###,##0}" ShowItemToolTips="True" />
 	            </telerik:SeriesMapping.SeriesDefinition>
 	            <telerik:SeriesMapping.ItemMappings>
-	                <telerik:ItemMapping DataPointMember="Open"
-	                                        FieldName="Open" />
-	                <telerik:ItemMapping DataPointMember="High"
-	                                        FieldName="High" />
-	                <telerik:ItemMapping DataPointMember="Low"
-	                                        FieldName="Low" />
-	                <telerik:ItemMapping DataPointMember="Close"
-	                                        FieldName="Close" />
+	                <telerik:ItemMapping DataPointMember="Open" FieldName="Open" />
+	                <telerik:ItemMapping DataPointMember="High" FieldName="High" />
+	                <telerik:ItemMapping DataPointMember="Low" FieldName="Low" />
+	                <telerik:ItemMapping DataPointMember="Close" FieldName="Close" />
 	
 	            </telerik:SeriesMapping.ItemMappings>
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-tooltips_5}}
-	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
+{{region cs-radchart-features-tooltips_5}}
+	RadChart radChart = new RadChart();
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new CandleStickSeriesDefinition();
 	seriesMapping.SeriesDefinition.ShowItemToolTips = true;
@@ -516,13 +488,13 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Low", DataPointMember.Low) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.Close) );
 	radChart.SeriesMappings.Add( seriesMapping );
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-tooltips_6}}
+{{region vb-radchart-features-tooltips_6}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New CandleStickSeriesDefinition()
@@ -531,8 +503,9 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add(New ItemMapping("Open", DataPointMember.Open))
 	seriesMapping.ItemMappings.Add(New ItemMapping("High", DataPointMember.High))
 	seriesMapping.ItemMappings.Add(New ItemMapping("Low", DataPointMember.Low))
-	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.Close))radChart.SeriesMappings.Add(seriesMapping)
-	{{endregion}}
+	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.Close))
+	radChart.SeriesMappings.Add(seriesMapping)
+{{endregion}}
 
 
 
@@ -561,53 +534,94 @@ Now, __StockToolTipControl__ has to be created. It will show additional informat
 
 #### __XAML__
 
-{{region radchart-features-tooltips_7}}
-	<UserControl >
+{{region xaml-radchart-features-tooltips_7}}
+	<UserControl>
 	    <UserControl.Resources>
 	        <Style x:Key="textStyle" TargetType="TextBlock">
 	            <Setter Property="Foreground" Value="White" />
-	            <Setter Property="FontSize" Value="10.667"/>
+	            <Setter Property="FontSize" Value="10.667" />
 	        </Style>
 	    </UserControl.Resources>
 	    <Border BorderThickness="2">
 	        <Grid x:Name="LayoutRoot">
-	           <Grid.ColumnDefinitions>
-	                <ColumnDefinition  />
+	            <Grid.ColumnDefinitions>
+	                <ColumnDefinition />
 	                <ColumnDefinition Width="Auto" />
 	            </Grid.ColumnDefinitions>
 	            <Grid.RowDefinitions>
-	                <RowDefinition Height="Auto"/>
-	                <RowDefinition Height="Auto"/>
-	                <RowDefinition Height="Auto"/>
-	                <RowDefinition Height="Auto"/>
-	                <RowDefinition Height="Auto"/>
+	                <RowDefinition Height="Auto" />
+	                <RowDefinition Height="Auto" />
+	                <RowDefinition Height="Auto" />
+	                <RowDefinition Height="Auto" />
+	                <RowDefinition Height="Auto" />
 	            </Grid.RowDefinitions>
-	            <TextBlock Text="Change [%]: " Grid.Column="0" Grid.Row="0" Style="{StaticResource textStyle}" />
-	            <Path x:Name="arrow" Fill="Red" Grid.Column="0" Grid.Row="0" Stroke="White"
-	  HorizontalAlignment="Right" VerticalAlignment="Center"
-	  Data="M0.000000,0.000000 L20.000000,0.000000 L10.000000,10.000000 z" RenderTransformOrigin="0.5,0.5">
+	            <TextBlock Grid.Row="0"
+	                       Grid.Column="0"
+	                       Style="{StaticResource textStyle}"
+	                       Text="Change [%]: " />
+	            <Path x:Name="arrow"
+	                  Grid.Row="0"
+	                  Grid.Column="0"
+	                  HorizontalAlignment="Right"
+	                  VerticalAlignment="Center"
+	                  Data="M0.000000,0.000000 L20.000000,0.000000 L10.000000,10.000000 z"
+	                  Fill="Red"
+	                  RenderTransformOrigin="0.5,0.5"
+	                  Stroke="White">
 	                <Path.RenderTransform>
 	                    <TransformGroup>
-	                        <ScaleTransform ScaleX="0.65" ScaleY="0.45"/>
-	                        <SkewTransform/>
-	                        <RotateTransform x:Name="rotateTransform"/>
-	                        <TranslateTransform/>
+	                        <ScaleTransform ScaleX="0.65" ScaleY="0.45" />
+	                        <SkewTransform />
+	                        <RotateTransform x:Name="rotateTransform" />
+	                        <TranslateTransform />
 	                    </TransformGroup>
 	                </Path.RenderTransform>
 	            </Path>
-	            <TextBlock Text="N/A" x:Name="changeNetPercent" Grid.Column="1" Grid.Row="0" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="Volume:" Grid.Column="0" Grid.Row="1" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="N/A" x:Name="volume" Grid.Column="1" Grid.Row="1" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="1y Target Est:" Grid.Column="0" Grid.Row="2" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="N/A" x:Name="oneYearTargetEst" Grid.Column="1" Grid.Row="2" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="P/E Ration: " Grid.Column="0" Grid.Row="3" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="N/A" x:Name="peRatio" Grid.Column="1" Grid.Row="3" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="Forwarding P/E (1yr): " Grid.Column="0" Grid.Row="4" Style="{StaticResource textStyle}" />
-	            <TextBlock Text="N/A" x:Name="forwardingPE" Grid.Column="1" Grid.Row="4" Style="{StaticResource textStyle}" />
+	            <TextBlock x:Name="changeNetPercent"
+	                       Grid.Row="0"
+	                       Grid.Column="1"
+	                       Style="{StaticResource textStyle}"
+	                       Text="N/A" />
+	            <TextBlock Grid.Row="1"
+	                       Grid.Column="0"
+	                       Style="{StaticResource textStyle}"
+	                       Text="Volume:" />
+	            <TextBlock x:Name="volume"
+	                       Grid.Row="1"
+	                       Grid.Column="1"
+	                       Style="{StaticResource textStyle}"
+	                       Text="N/A" />
+	            <TextBlock Grid.Row="2"
+	                       Grid.Column="0"
+	                       Style="{StaticResource textStyle}"
+	                       Text="1y Target Est:" />
+	            <TextBlock x:Name="oneYearTargetEst"
+	                       Grid.Row="2"
+	                       Grid.Column="1"
+	                       Style="{StaticResource textStyle}"
+	                       Text="N/A" />
+	            <TextBlock Grid.Row="3"
+	                       Grid.Column="0"
+	                       Style="{StaticResource textStyle}"
+	                       Text="P/E Ration: " />
+	            <TextBlock x:Name="peRatio"
+	                       Grid.Row="3"
+	                       Grid.Column="1"
+	                       Style="{StaticResource textStyle}"
+	                       Text="N/A" />
+	            <TextBlock Grid.Row="4"
+	                       Grid.Column="0"
+	                       Style="{StaticResource textStyle}"
+	                       Text="Forwarding P/E (1yr): " />
+	            <TextBlock x:Name="forwardingPE"
+	                       Grid.Row="4"
+	                       Grid.Column="1"
+	                       Style="{StaticResource textStyle}"
+	                       Text="N/A" />
 	        </Grid>
 	    </Border>
 	</UserControl>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -615,101 +629,93 @@ In the code-behind, there are a few properties - each one is setting the value o
 
 #### __C#__
 
-{{region radchart-features-tooltips_8}}
-	using System.Windows.Controls;
-	using System.Windows.Media;
-	namespace Silverlight.Help.RadChartSamples
+{{region cs-radchart-features-tooltips_8}}
+	public partial class StockToolTipControl : UserControl
 	{
-	    public partial class StockToolTipControl : UserControl
+	    public StockToolTipControl()
 	    {
-	        public StockToolTipControl()
+	        InitializeComponent();
+	    }
+	    public double ChangeNetPercent
+	    {
+	        set
 	        {
-	            InitializeComponent();
+	            this.changeNetPercent.Text = value.ToString( "p" );
+	            this.arrow.Fill = new SolidColorBrush( value < 0.0 ? Colors.Red : Colors.Green );
+	            this.rotateTransform.Angle = value < 0.0 ? 0 : 180;
 	        }
-	        public double ChangeNetPercent
+	    }
+	    public double Volume
+	    {
+	        set
 	        {
-	            set
-	            {
-	                this.changeNetPercent.Text = value.ToString( "p" );
-	                this.arrow.Fill = new SolidColorBrush( value < 0.0 ? Colors.Red : Colors.Green );
-	                this.rotateTransform.Angle = value < 0.0 ? 0 : 180;
-	            }
+	            this.volume.Text = value.ToString( ",##0" );
 	        }
-	        public double Volume
+	    }
+	    public double OneYearTargetEst
+	    {
+	        set
 	        {
-	            set
-	            {
-	                this.volume.Text = value.ToString( ",##0" );
-	            }
+	            this.oneYearTargetEst.Text = value.ToString( "C" );
 	        }
-	        public double OneYearTargetEst
+	    }
+	    public double PERatio
+	    {
+	        set
 	        {
-	            set
-	            {
-	                this.oneYearTargetEst.Text = value.ToString( "C" );
-	            }
+	            this.peRatio.Text = value.ToString( "00.00" );
 	        }
-	        public double PERatio
+	    }
+	    public double ForwardingPE
+	    {
+	        set
 	        {
-	            set
-	            {
-	                this.peRatio.Text = value.ToString( "00.00" );
-	            }
-	        }
-	        public double ForwardingPE
-	        {
-	            set
-	            {
-	                this.forwardingPE.Text = value.ToString( "00.00" );
-	            }
+	            this.forwardingPE.Text = value.ToString( "00.00" );
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-tooltips_9}}
-	Imports System.Windows.Controls
-	Imports System.Windows.Media
-	Namespace Silverlight.Help.RadChartSamples
-	 Public Partial Class StockToolTipControl
-	  Inherits UserControl
-	  Public Sub New()
-	   InitializeComponent()
-	  End Sub
-	  Public WriteOnly Property ChangeNetPercent() As Double
-	   Set
-	    Me.changeNetPercent.Text = value.ToString("p")
-	    Me.arrow.Fill = New SolidColorBrush(If(value < 0.0, Colors.Red, Colors.Green))
-	    Me.rotateTransform.Angle = If(value < 0.0, 0, 180)
-	   End Set
-	  End Property
-	  Public WriteOnly Property Volume() As Double
-	   Set
-	    Me.volume.Text = value.ToString(",##0")
-	   End Set
-	  End Property
-	  Public WriteOnly Property OneYearTargetEst() As Double
-	   Set
-	    Me.oneYearTargetEst.Text = value.ToString("C")
-	   End Set
-	  End Property
-	  Public WriteOnly Property PERatio() As Double
-	   Set
-	    Me.peRatio.Text = value.ToString("00.00")
-	   End Set
-	  End Property
-	  Public WriteOnly Property ForwardingPE() As Double
-	   Set
-	    Me.forwardingPE.Text = value.ToString("00.00")
-	   End Set
-	  End Property
-	 End Class
-	End Namespace
-	{{endregion}}
+{{region vb-radchart-features-tooltips_9}}
+	Partial Public Class StockToolTipControl
+	    Inherits UserControl
+	    Public Sub New()
+	        InitializeComponent()
+	    End Sub
+	
+	    Public WriteOnly Property ChangeNetPercentProp() As Double
+	        Set(value As Double)
+	            Me.changeNetPercent.Text = value.ToString("p")
+	            Me.arrow.Fill = New SolidColorBrush(If(value < 0.0, Colors.Red, Colors.Green))
+	            Me.rotateTransform.Angle = If(value < 0.0, 0, 180)
+	        End Set
+	    End Property
+	    Public WriteOnly Property VolumeProp() As Double
+	        Set(value As Double)
+	            Me.volume.Text = value.ToString(",##0")
+	        End Set
+	    End Property
+	    Public WriteOnly Property OneYearTargetEstProp() As Double
+	        Set(value As Double)
+	            Me.oneYearTargetEst.Text = value.ToString("C")
+	        End Set
+	    End Property
+	    Public WriteOnly Property PERatioProp() As Double
+	        Set(value As Double)
+	            Me.peRatio.Text = value.ToString("00.00")
+	        End Set
+	    End Property
+	    Public WriteOnly Property ForwardingPEProp() As Double
+	        Set(value As Double)
+	            Me.forwardingPE.Text = value.ToString("00.00")
+	        End Set
+	    End Property
+	End Class
+{{endregion}}
 
 
 
@@ -717,38 +723,31 @@ You can play with the colors to give the control a better look and feel.The next
 
 #### __XAML__
 
-{{region radchart-features-tooltips_10}}
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <!--Custom tooltip-->
-	    <telerik:RadChart x:Name="radChart">
-	        <telerik:RadChart.DefaultView>
-	            <telerik:ChartDefaultView>
-	                <telerik:ChartDefaultView.ChartArea>
-	                    <telerik:ChartArea ItemToolTipOpening="ChartArea_ItemToolTipOpening" />
-	                </telerik:ChartDefaultView.ChartArea>
-	            </telerik:ChartDefaultView>
-	        </telerik:RadChart.DefaultView>
-	        <telerik:RadChart.SeriesMappings>
-	            <telerik:SeriesMapping LegendLabel="MSFT">
-	                <telerik:SeriesMapping.SeriesDefinition>
-	                    <telerik:CandleStickSeriesDefinition ShowItemToolTips="True" />
-	                </telerik:SeriesMapping.SeriesDefinition>
-	                <telerik:SeriesMapping.ItemMappings>
-	                    <telerik:ItemMapping DataPointMember="Open"
-	                                            FieldName="Open" />
-	                    <telerik:ItemMapping DataPointMember="High"
-	                                            FieldName="High" />
-	                    <telerik:ItemMapping DataPointMember="Low"
-	                                            FieldName="Low" />
-	                    <telerik:ItemMapping DataPointMember="Close"
-	                                            FieldName="Close" />
-	                </telerik:SeriesMapping.ItemMappings>
-	            </telerik:SeriesMapping>
-	        </telerik:RadChart.SeriesMappings>
-	    </telerik:RadChart>
-	</Grid>
-	{{endregion}}
+{{region xaml-radchart-features-tooltips_10}}
+	<!--  Custom tooltip  -->
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea ItemToolTipOpening="ChartArea_ItemToolTipOpening" />
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	    <telerik:RadChart.SeriesMappings>
+	        <telerik:SeriesMapping LegendLabel="MSFT">
+	            <telerik:SeriesMapping.SeriesDefinition>
+	                <telerik:CandleStickSeriesDefinition ShowItemToolTips="True" />
+	            </telerik:SeriesMapping.SeriesDefinition>
+	            <telerik:SeriesMapping.ItemMappings>
+	                <telerik:ItemMapping DataPointMember="Open" FieldName="Open" />
+	                <telerik:ItemMapping DataPointMember="High" FieldName="High" />
+	                <telerik:ItemMapping DataPointMember="Low" FieldName="Low" />
+	                <telerik:ItemMapping DataPointMember="Close" FieldName="Close" />
+	            </telerik:SeriesMapping.ItemMappings>
+	        </telerik:SeriesMapping>
+	    </telerik:RadChart.SeriesMappings>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
@@ -763,12 +762,12 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 
 #### __C#__
 
-{{region radchart-features-tooltips_11}}
-	private void ChartArea_ItemToolTipOpening( ItemToolTip2D tooltip, ItemToolTipEventArgs e )
+{{region cs-radchart-features-tooltips_11}}
+	private void ChartArea_ItemToolTipOpening(ItemToolTip2D tooltip, ItemToolTipEventArgs e)
 	{
 	    TradeData tradeData = e.DataPoint.DataItem as TradeData;
 	    StockToolTipControl stockToolTip = new StockToolTipControl();
-	    stockToolTip.ChangeNetPercent = 1 - ( tradeData.Close / tradeData.Open );
+	    stockToolTip.ChangeNetPercent = 1 - (tradeData.Close / tradeData.Open);
 	    stockToolTip.Volume = tradeData.Volume;
 	    //The next three properties shows some fictional data to illustrate the idea
 	    stockToolTip.OneYearTargetEst = tradeData.Close * 1.1;
@@ -776,26 +775,26 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    stockToolTip.ForwardingPE = 17.93;
 	    tooltip.Content = stockToolTip;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-tooltips_12}}
+{{region vb-radchart-features-tooltips_12}}
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim tradeData As TradeData = TryCast(e.DataPoint.DataItem, TradeData)
 	    Dim stockToolTip As New StockToolTipControl()
-	    stockToolTip.ChangeNetPercent = 1 - (tradeData.Close / tradeData.Open)
-	    stockToolTip.Volume = tradeData.Volume
-	    'The next three properties shows some fictional data to illustrate the idea'
-	    stockToolTip.OneYearTargetEst = tradeData.Close * 1.1
-	    stockToolTip.PERatio = 16.8R
-	    stockToolTip.ForwardingPE = 17.93
+	    stockToolTip.ChangeNetPercentProp = 1 - (tradeData.Close / tradeData.Open)
+	    stockToolTip.VolumeProp = tradeData.Volume
+	    ' The next three properties shows some fictional data to illustrate the idea' 
+	    stockToolTip.OneYearTargetEstProp = tradeData.Close * 1.1
+	    stockToolTip.PERatioProp = 16.8R
+	    stockToolTip.ForwardingPEProp = 17.93
 	
 	    tooltip.Content = stockToolTip
 	End Sub
-	{{endregion}}
+{{endregion}}
 
 
 

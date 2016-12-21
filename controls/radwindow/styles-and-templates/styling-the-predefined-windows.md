@@ -28,18 +28,17 @@ First, you will need to obtain the default style that targets __RadAlert__. To l
 
 {{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_0}}
 	<Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
-		<Setter Property="IsTabStop" Value="False"/>
-		<Setter Property="MinWidth" Value="275"/>
-		<Setter Property="MaxWidth" Value="500"/>
-		<Setter Property="IconTemplate" Value="{StaticResource AlertIconTemplate}"/>
-		<Setter Property="SnapsToDevicePixels" Value="True"/>
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate TargetType="telerik:RadAlert">
-				...
-				</ControlTemplate>
-			</Setter.Value>    
-		</Setter>
+	    <Setter Property="IsTabStop" Value="False"/>
+	    <Setter Property="MinWidth" Value="275"/>
+	    <Setter Property="MaxWidth" Value="500"/>
+	    <Setter Property="SnapsToDevicePixels" Value="True"/>
+	    <Setter Property="Template">
+	        <Setter.Value>
+	            <ControlTemplate TargetType="telerik:RadAlert">
+	                <!--...-->
+	            </ControlTemplate>
+	        </Setter.Value>
+	    </Setter>
 	</Style>
 {{endregion}}
 
@@ -80,9 +79,9 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 
 #### __[XAML] Example 3: Defining the DataTemplate__
 
-{{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_0}}
+{{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_1}}
 	<DataTemplate x:Key="IconTemplate">
-		<Image Source="telerik.png" Stretch="Fill" Width="22" Height="22"/>
+	    <Image Source="telerik.png" Stretch="Fill" Width="22" Height="22"/>
 	</DataTemplate>
 {{endregion}}
 
@@ -91,8 +90,8 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 {{region cs-radwindow-styles-and-templates-styling-the-predefined-windows_2}}
 	RadWindow.Alert(new DialogParameters()
 	{
-		Content = "Hello",
-		IconTemplate = this.Resources["IconTemplate"] as DataTemplate
+	    Content = "Hello",
+	    IconTemplate = this.Resources["IconTemplate"] as DataTemplate
 	});
 {{endregion}}
 
@@ -101,8 +100,8 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 {{region vb-radwindow-styles-and-templates-styling-the-predefined-windows_3}}
 	RadWindow.Alert(New DialogParameters() With
 	{
-		.Content = "Hello",
-		.IconTemplate = TryCast(Me.Resources("IconTemplate"), DataTemplate
+	    .Content = "Hello",
+	    .IconTemplate = TryCast(Me.Resources("IconTemplate"), DataTemplate
 	)})
 {{endregion}}
 

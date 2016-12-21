@@ -16,12 +16,11 @@ You declare an aggregate SumFunction for a column:
 
 #### __XAML__
 
-{{region gridview-troubleshooting-sum-aggregate_0}}
-
+{{region xaml-gridview-troubleshooting-sum-aggregate_0}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
-	  <telerik:GridViewDataColumn.AggregateFunctions>
-	     <telerik:SumFunction/>
-	  </telerik:GridViewDataColumn.AggregateFunctions>
+	    <telerik:GridViewDataColumn.AggregateFunctions>
+	        <telerik:SumFunction/>
+	    </telerik:GridViewDataColumn.AggregateFunctions>
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
@@ -42,11 +41,10 @@ For example you can define a generic AggregateFunction which calculates the Sum 
 
 #### __C#__
 
-{{region gridview-troubleshooting-sum-aggregate_1}}
-
+{{region cs-gridview-troubleshooting-sum-aggregate_1}}
 	var aggregate = new AggregateFunction<Player, int>()
 	{
-		AggregationExpression = players => players.Select(x => x.Number).Sum()
+	    AggregationExpression = players => players.Select(x => x.Number).Sum()
 	};
 	playersGrid.Columns[0].AggregateFunctions.Add(aggregate);
 {{endregion}}

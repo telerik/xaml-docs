@@ -57,7 +57,7 @@ You can create custom controls deriving from the __RadDiagramShapeBase__ or the 
 
 ## Q: How to create collapsible containers in my diagram
 
-You can define a __RadDiagramContainerShape__ and set its __IsCollapsible__ property to __True__. The collapsible containers provided withing __RadDiagram__ are further discussed in the [ContainerShapes](e790f300-9819-4aba-87bc-5a05fdf8b5fc#q:-how-to-create-collapsible-containers-in-my-diagram) article.	  
+You can define a __RadDiagramContainerShape__ and set its __IsCollapsible__ property to __True__. The collapsible containers provided withing __RadDiagram__ are further discussed in the [ContainerShapes]({%slug raddiagram-features-container-shapes%}) article.	  
 
 ## Q: Can I use a ScrollViewer in RadDiagram
 
@@ -81,7 +81,7 @@ You can implement a custom drag/drop operation between the __RadDiagram__ and an
 
 ## Q: How to enable the connection routing
 
-The Conenction Routing feature can be enabled through the __RadDiagram RouteConnections__ property. When set to __True__, it uses a built-in routing mechanism to route the connections. You can examine the [Connections](5a2d6cbf-4f5c-466c-baec-19360d30803d#Types) tutorial for further information. 	  
+The Connection Routing feature can be enabled through the __RadDiagram RouteConnections__ property. When set to __True__, it uses a built-in routing mechanism to route the connections. You can examine the [Connections]({%slug raddiagrams-features-connections%}) tutorial for further information. 	  
 
 ## Q: How to group and ungroup DiagramItems using the keyboard	
 

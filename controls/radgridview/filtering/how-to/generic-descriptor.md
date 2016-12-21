@@ -21,8 +21,7 @@ __Example 3: Create a generic FilterDescriptor<T>.__
 
 #### __C#__
 
-{{region gridview-howto-use-expression-descriptors_2}}
-
+{{region cs-gridview-howto-use-expression-descriptors_2}}
 	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };
 {{endregion}}
 

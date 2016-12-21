@@ -51,53 +51,55 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 
 #### __XAML__
 
-{{region radchart-features-axes-Y-axis_0}}
-	<telerikChart:RadChart x:Name="radChart">
-	    <telerikChart:RadChart.DefaultView>
-	        <telerikCharting:ChartDefaultView>
-	            <telerikCharting:ChartDefaultView.ChartArea>
-	                <telerikCharting:ChartArea>
-	                    <telerikCharting:ChartArea.AxisY>
-	                        <telerikCharting:AxisY MinorTickPointMultiplier="5" ExtendDirection="Down"
-	                            MinorTicksVisibility="Visible" DefaultLabelFormat="0" Title="Ampere [A]">
-	                        </telerikCharting:AxisY>
-	                    </telerikCharting:ChartArea.AxisY>
-	                </telerikCharting:ChartArea>
-	            </telerikCharting:ChartDefaultView.ChartArea>
-	        </telerikCharting:ChartDefaultView>
-	    </telerikChart:RadChart.DefaultView>
-	</telerikChart:RadChart>
-	{{endregion}}
+{{region xaml-radchart-features-axes-Y-axis_0}}
+	<telerik:RadChart x:Name="radChart">
+	    <telerik:RadChart.DefaultView>
+	        <telerik:ChartDefaultView>
+	            <telerik:ChartDefaultView.ChartArea>
+	                <telerik:ChartArea>
+	                    <telerik:ChartArea.AxisY>
+	                        <telerik:AxisY Title="Ampere [A]"
+	                                       DefaultLabelFormat="0"
+	                                       ExtendDirection="Down"
+	                                       MinorTickPointMultiplier="5"
+	                                       MinorTicksVisibility="Visible" />
+	                    </telerik:ChartArea.AxisY>
+	                </telerik:ChartArea>
+	            </telerik:ChartDefaultView.ChartArea>
+	        </telerik:ChartDefaultView>
+	    </telerik:RadChart.DefaultView>
+	</telerik:RadChart>
+{{endregion}}
 
 
 
 #### __C#__
 
-{{region radchart-features-axes-Y-axis_1}}
+{{region cs-radchart-features-axes-Y-axis_1}}
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
-	....
+	//....
 	radChart.DefaultView.ChartArea.AxisY.MinorTicksVisibility = Visibility.Visible;
 	radChart.DefaultView.ChartArea.AxisY.MinorTickPointMultiplier = 5;
 	radChart.DefaultView.ChartArea.AxisY.ExtendDirection = AxisExtendDirection.Down;
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0";
 	radChart.DefaultView.ChartArea.AxisY.Title="Ampere [A]";
-	....
-	{{endregion}}
+	//....
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-features-axes-Y-axis_2}}
+{{region vb-radchart-features-axes-Y-axis_2}}
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
-	....
+	'....'
 	radChart.DefaultView.ChartArea.AxisY.MinorTicksVisibility = Visibility.Visible
 	radChart.DefaultView.ChartArea.AxisY.MinorTickPointMultiplier = 5
 	radChart.DefaultView.ChartArea.AxisY.ExtendDirection = AxisExtendDirection.Down
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0"
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]"
-	....
-	{{endregion}}
+	'....'
+{{endregion}}
 
 
 

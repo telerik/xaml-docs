@@ -32,10 +32,8 @@ If you don't want your __RadGridView__ to be filterable, you just have to set th
 
 #### __XAML__
 
-{{region gridview-basic-filtering2_0}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     IsFilteringAllowed="True">
+{{region xaml-gridview-basic-filtering2_0}}
+	<telerik:RadGridView IsFilteringAllowed="True">
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -43,8 +41,7 @@ If you want to disable filtering only for a particular column, you can set its _
 
 #### __XAML__
 
-{{region gridview-basic-filtering2_1}}
-
+{{region xaml-gridview-basic-filtering2_1}}
 	<telerik:GridViewDataColumn IsFilterable="False"/>
 {{endregion}}
 
@@ -60,11 +57,8 @@ The third one is the __FieldFilterEditorCreated__ and the forth it the __FilterO
 
 #### __XAML__
 
-{{region gridview-basic-filtering2_2}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     Filtering="radGridView_Filtering"
-	                     Filtered="radGridView_Filtered"/>
+{{region xaml-gridview-basic-filtering2_2}}
+	<telerik:RadGridView Filtering="radGridView_Filtering" Filtered="radGridView_Filtered"/>
 {{endregion}}
 
 You are also able to cancel the filtering operation by setting the __Cancel__ property to __True__.
@@ -72,8 +66,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 #### __C#__
 
-{{region gridview-basic-filtering2_3}}
-
+{{region cs-gridview-basic-filtering2_3}}
 	private void radGridView_Filtering(object sender, GridViewFilteringEventArgs e)
 	{
 	    e.Cancel = true;
@@ -83,8 +76,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 #### __VB.NET__
 
-{{region gridview-basic-filtering2_4}}
-
+{{region vb-gridview-basic-filtering2_4}}
 	Private Sub radGridView_Filtering(ByVal sender As Object, ByVal e As GridViewFilteringEventArgs)
 	    e.Cancel = True
 	End Sub
@@ -100,36 +92,34 @@ In the event handler you can place some code that has to be executed when the da
 
 #### __C#__
 
-{{region gridview-basic-filtering2_5}}
-
+{{region cs-gridview-basic-filtering2_5}}
 	private void radGridView_Filtered(object sender, GridViewFilteredEventArgs e)
 	{
-	    foreach( FilterDescriptor descriptor in e.Added )
+	    foreach (FilterDescriptor descriptor in e.Added)
 	    {
-	        GridViewColumn column = FilteringGrid.Columns[ descriptor.Member ];
-	        column.Background = new SolidColorBrush( Colors.Green );
+	        Telerik.Windows.Controls.GridViewColumn column = FilteringGrid.Columns[descriptor.Member];
+	        column.Background = new SolidColorBrush(Colors.Green);
 	    }
-	    foreach( FilterDescriptor descriptor in e.Removed )
+	    foreach (FilterDescriptor descriptor in e.Removed)
 	    {
-	        GridViewColumn column = FilteringGrid.Columns[ descriptor.Member ];
-	        column.Background = new SolidColorBrush( Colors.Transparent );
+	        Telerik.Windows.Controls.GridViewColumn column = FilteringGrid.Columns[descriptor.Member];
+	        column.Background = new SolidColorBrush(Colors.Transparent);
 	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-basic-filtering2_6}}
-
+{{region vb-gridview-basic-filtering2_6}}
 	Private Sub radGridView_Filtered(ByVal sender As Object, ByVal e As GridViewFilteredEventArgs)
 	    For Each descriptor As FilterDescriptor In e.Added
-	        Dim column As GridViewColumn = FilteringGrid.Columns( descriptor.Member )
-	        column.Background = New SolidColorBrush( Colors.Green )
-	        Next
+	        Dim column As Telerik.Windows.Controls.GridViewColumn = FilteringGrid.Columns(descriptor.Member)
+	        column.Background = New SolidColorBrush(Colors.Green)
+	    Next
 	
 	    For Each descriptor As FilterDescriptor In e.Removed
-	        Dim column As GridViewColumn = FilteringGrid.Columns( descriptor.Member )
-	        column.Background = New SolidColorBrush( Colors.Transparent )
+	        Dim column As Telerik.Windows.Controls.GridViewColumn = FilteringGrid.Columns(descriptor.Member)
+	        column.Background = New SolidColorBrush(Colors.Transparent)
 	    Next
 	End Sub
 {{endregion}}
@@ -144,26 +134,24 @@ Here is a snapshot of the final result.![](images/RadGridView_BasicFiltering_4.p
 
 #### __C#__
 
-{{region gridview-basic-filtering2_7}}
-
+{{region cs-gridview-basic-filtering2_7}}
 	private void clubsGrid_FilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
 	{
 	    if (e.AvailableOperators.Contains(FilterOperator.Contains))
 	    {
-	        e.DefaultOperator = FilterOperator.Contains;
+	        e.DefaultOperator1 = FilterOperator.Contains;
 	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-basic-filtering2_8}}
-
-    Private Sub clubsGrid_FilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
-        If e.AvailableOperators.Contains(FilterOperator.Contains) Then
-            e.DefaultOperator = FilterOperator.Contains
-        End If
-    End Sub
+{{region vb-gridview-basic-filtering2_8}}
+	Private Sub clubsGrid_FilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
+	    If e.AvailableOperators.Contains(FilterOperator.Contains) Then
+	        e.DefaultOperator1 = FilterOperator.Contains
+	    End If
+	End Sub
 {{endregion}}
 
 Here is a snapshot of the changed filter operator:

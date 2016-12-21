@@ -35,7 +35,7 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 * The __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore__ assembly must be installed into the global assembly cache (GAC). You can achieve this following the next steps:
 	1. Open Visual Studio Command Prompt.
-	2. Navigate to path "%CommonProgramFiles(x86)%\Common Files\microsoft shared\VSTT\\__[Version]__\UITestExtensionPackages".
+	2. Navigate to path "%CommonProgramFiles(x86)%\microsoft shared\VSTT\\__[Version]__\UITestExtensionPackages".
 	3. Execute "gacutil /i Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore.dll".
  
 	You can also find more information on the [Global Assembly Cache Tool (Gacutil.exe)](http://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx).          

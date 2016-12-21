@@ -71,6 +71,7 @@ GridViewGroupPanelText | Drag a column header and drop it here to group by that 
 GridViewGroupPanelTopText | Group Header
 GridViewGroupPanelTopTextGrouped | Grouped by:
 GridViewSearchPanelTopText | Full Text Search
+GridViewColumnsSelectionButtonTooltip | Select Columns
 
 # See Also
 

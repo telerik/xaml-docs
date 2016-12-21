@@ -17,7 +17,7 @@ In the first case, the UI behind the __RadWindow__ is still active. To open it a
 #### __C#__
 
 {{region cs-radwindow-features-modal-windows_0}}
-	RadWindow = new RadWindow();
+	RadWindow radWindow = new RadWindow();
 	radWindow.Show();
 {{endregion}}
 

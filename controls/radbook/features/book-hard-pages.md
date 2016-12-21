@@ -24,13 +24,9 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 
 * __Custom__: Only certain pages have the hard paper feature turned on. It is up to the user to define which pages by setting the __IsHardPaper__ property of the __RadBookItem__.
 
-#### __XAML__
-{{region book-hard-pages_0}}
-	<UserControl x:Class="BookHardPaper.MainPage"
-	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	 <UserControl.Resources>
+#### __[XAML] Example 1: Setting the hard pages mode to All__  
+{{region xaml-book-hard-pages_0}}
+	 <FrameworkElement.Resources>
 	  <DataTemplate x:Key="LeftPageTemplate">
 	   <Grid>
 	    <Image Source="page1.jpg" Stretch="None" />
@@ -41,23 +37,23 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	    <Image Source="page2.jpg" Stretch="None" />
 	   </Grid>
 	  </DataTemplate>
-	 </UserControl.Resources>
+	 </FrameworkElement.Resources>
+	 <!-- -->
 	 <Grid x:Name="LayoutRoot" Background="White">
 	  <telerik:RadBook x:Name="book1" Width="544" Height="444"
 	    LeftPageTemplate="{StaticResource LeftPageTemplate}"
 	    RightPageTemplate="{StaticResource RightPageTemplate}" FirstPagePosition="Right"
 	    HardPages="All" />
 	 </Grid>
-	</UserControl>
 {{endregion}}
 
 ![](images/book_hardPaper.png)
 
 ![](images/book_softPaper.png)
 
-#### __XAML__
-{{region book-hard-pages_1}}
-	<telerik:RadBook x:Name="book1" Width="544" Height="444" FirstPagePosition="Right"
+#### __[XAML] Example 2: Setting the hard pages mode to Custom__  
+{{region xaml-book-hard-pages_1}}
+	<telerik:RadBook x:Name="book2" Width="544" Height="444" FirstPagePosition="Right"
 	    RightPageIndex="0" HardPages="Custom">
 	 <telerik:RadBookItem IsHardPaper="True">
 	  <Grid>

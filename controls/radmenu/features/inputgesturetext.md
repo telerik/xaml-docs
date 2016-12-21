@@ -17,7 +17,7 @@ The following example demonstrates the use of the __InputGestureText__ property:
 
 #### __XAML__
 
-{{region radmenu-features-inputgesturetext_01}}
+{{region xaml-radmenu-features-inputgesturetext_01}}
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Edit">

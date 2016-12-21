@@ -26,67 +26,65 @@ To do so follow these steps:
 
 #### __C#__
 
-{{region gridview-cell-template-selector_0}}
-
+{{region cs-gridview-cell-template-selector_0}}
 	public class MyCellTemplateSelector : DataTemplateSelector
 	{
-	 public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-	 {
-	  if (item is Club)
-	  {
-	   Club club = item as Club;
-	   if (club.StadiumCapacity > 50000)
-	   {
-	    return bigStadium;
-	   }
-	   else
-	   {
-	    return smallStadium;
-	   }
-	  }
-	  return null;
-	 }
-	 public DataTemplate bigStadium { get; set; }
-	 public DataTemplate smallStadium { get; set; }
+	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
+	    {
+	        if (item is Club)
+	        {
+	            Club club = item as Club;
+	            if (club.StadiumCapacity > 50000)
+	            {
+	                return bigStadium;
+	            }
+	            else
+	            {
+	                return smallStadium;
+	            }
+	        }
+	        return null;
+	    }
+	    public DataTemplate bigStadium { get; set; }
+	    public DataTemplate smallStadium { get; set; }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-cell-template-selector_1}}
-
-    Public Class MyCellTemplateSelector
-        Inherits DataTemplateSelector
-        Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
-            If TypeOf item Is Club Then
-                Dim club As Club = TryCast(item, Club)
-                If club.StadiumCapacity > 50000 Then
-                    Return bigStadium
-                Else
-                    Return smallStadium
-                End If
-            End If
-            Return Nothing
-        End Function
-        Public Property bigStadium() As DataTemplate
-            Get
-                Return m_bigStadium
-            End Get
-            Set(value As DataTemplate)
-                m_bigStadium = Value
-            End Set
-        End Property
-        Private m_bigStadium As DataTemplate
-        Public Property smallStadium() As DataTemplate
-            Get
-                Return m_smallStadium
-            End Get
-            Set(value As DataTemplate)
-                m_smallStadium = Value
-            End Set
-        End Property
-        Private m_smallStadium As DataTemplate
-    End Class
+{{region vb-gridview-cell-template-selector_1}}
+	Public Class MyCellTemplateSelector
+	    Inherits DataTemplateSelector
+	    Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
+	        If TypeOf item Is Club Then
+	            Dim club As Club = TryCast(item, Club)
+	            If club.StadiumCapacity > 50000 Then
+	                Return bigStadium
+	            Else
+	                Return smallStadium
+	            End If
+	        End If
+	        Return Nothing
+	    End Function
+	    Public Property bigStadium() As DataTemplate
+	        Get
+	            Return m_bigStadium
+	        End Get
+	        Set(value As DataTemplate)
+	            m_bigStadium = value
+	        End Set
+	    End Property
+	    Private m_bigStadium As DataTemplate
+	    Public Property smallStadium() As DataTemplate
+	        Get
+	            Return m_smallStadium
+	        End Get
+	        Set(value As DataTemplate)
+	            m_smallStadium = value
+	        End Set
+	    End Property
+	    Private m_smallStadium As DataTemplate
+	End Class
 {{endregion}}
 
 In this case we have two different DataTemplates that could be applied - bigStadium and smallStadium. Depending on the underlying data we choose / select which template to apply.
@@ -95,23 +93,22 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 #### __XAML__
 
-{{region gridview-cell-template-selector_2}}
-
+{{region xaml-gridview-cell-template-selector_2}}
 	<my:MyCellTemplateSelector x:Key="myCellTemplateSelector">
 	    <my:MyCellTemplateSelector.bigStadium>
 	        <DataTemplate>
 	            <TextBlock Text="{Binding StadiumCapacity}" 
-	                       TextDecorations="underline" 
-	                       Foreground="Red"
-	                       TextAlignment="Right" />
+	            TextDecorations="underline" 
+	            Foreground="Red"
+	            TextAlignment="Right" />
 	        </DataTemplate>
 	    </my:MyCellTemplateSelector.bigStadium>
 	    <my:MyCellTemplateSelector.smallStadium>
 	        <DataTemplate>
 	            <TextBlock Text="{Binding StadiumCapacity}" 
-	                        FontWeight="Bold" 
-	                        Foreground="Green"
-	                        TextAlignment="Left" />
+	            FontWeight="Bold" 
+	            Foreground="Green"
+	            TextAlignment="Left" />
 	        </DataTemplate>
 	    </my:MyCellTemplateSelector.smallStadium>
 	</my:MyCellTemplateSelector>
@@ -121,11 +118,11 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 #### __XAML__
 
-{{region gridview-cell-template-selector_3}}
+{{region xaml-gridview-cell-template-selector_3}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-            Header="Stadium" 
-            CellTemplateSelector="{StaticResource myCellTemplateSelector}"
-            DataFormatString="{}{0:N0}"/>
+	Header="Stadium" 
+	CellTemplateSelector="{StaticResource myCellTemplateSelector}"
+	DataFormatString="{}{0:N0}"/>
 {{endregion}}
 
 >Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectStyle method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.

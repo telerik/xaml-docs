@@ -27,9 +27,9 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __C#__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-1}}
+	{{region cs-radcalendar-styling-and-appearance-daybuttonstyleselector-1}}
 		public class DayButtonStyleSelector : StyleSelector
-		{ 
+		{
 		}
 	{{endregion}}
 
@@ -37,10 +37,10 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __C#__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-2}}
+	{{region cs-radcalendar-styling-and-appearance-daybuttonstyleselector-2}}
 		public class DayButtonStyleSelector : StyleSelector
 		{
-			public Style SpecialStyleMonday { get; set; }
+		    public Style SpecialStyleMonday { get; set; }
 		}
 	{{endregion}}
 
@@ -48,23 +48,23 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __C#__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-3}}
+	{{region cs-radcalendar-styling-and-appearance-daybuttonstyleselector-3}}
 		public class DayButtonStyleSelector : StyleSelector
 		{
-			public Style SpecialStyleMonday { get; set; }
+		    public Style SpecialStyleMonday { get; set; }
 		
-			public override Style SelectStyle(object item, DependencyObject container)
-			{
-				CalendarButtonContent content = item as CalendarButtonContent;
-				if (content != null)
-				{
-					if (content.Date.DayOfWeek == DayOfWeek.Monday && content.ButtonType == CalendarButtonType.Date)
-					{
-						return SpecialStyleMonday;
-					}
-				}
-				return base.SelectStyle(item, container);
-			}
+		    public override Style SelectStyle(object item, DependencyObject container)
+		    {
+		        CalendarButtonContent content = item as CalendarButtonContent;
+		        if (content != null)
+		        {
+		            if (content.Date.DayOfWeek == DayOfWeek.Monday && content.ButtonType == CalendarButtonType.Date)
+		            {
+		                return SpecialStyleMonday;
+		            }
+		        }
+		        return base.SelectStyle(item, container);
+		    }
 		}
 	{{endregion}}
 
@@ -72,12 +72,9 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __XAML__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-1}}
-		<UserControl x:Class="CalendarDayButtonStyle.MainPage"
-					...
-					 xmlns:local="clr-namespace:CalendarDayButtonStyle"
-					 xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input"
-					 ...>
+	{{region xaml-radcalendar-styling-and-appearance-daybuttonstyleselector-1}}
+		<UserControl xmlns:local="clr-namespace:WpfApplication1"
+		             xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input">
 		</UserControl>
 	{{endregion}}
 
@@ -85,17 +82,17 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __XAML__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-2}}
+	{{region xaml-radcalendar-styling-and-appearance-daybuttonstyleselector-2}}
 		<local:DayButtonStyleSelector x:Key="CustomStyleSelector">
-			<local:DayButtonStyleSelector.SpecialStyleMonday>
-				<Style TargetType="calendar:CalendarButton">
-					<Setter Property="Background">
-						<Setter.Value>
-							<SolidColorBrush Color="Orange" Opacity="0.6"/>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</local:DayButtonStyleSelector.SpecialStyleMonday>
+		    <local:DayButtonStyleSelector.SpecialStyleMonday>
+		        <Style TargetType="calendar:CalendarButton">
+		            <Setter Property="Background">
+		                <Setter.Value>
+		                    <SolidColorBrush Color="Orange" Opacity="0.6"/>
+		                </Setter.Value>
+		            </Setter>
+		        </Style>
+		    </local:DayButtonStyleSelector.SpecialStyleMonday>
 		</local:DayButtonStyleSelector>
 	{{endregion}}
 
@@ -103,7 +100,7 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __XAML__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-3}}
+	{{region xaml-radcalendar-styling-and-appearance-daybuttonstyleselector-3}}
 		<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"/>
 	{{endregion}}
 
@@ -111,9 +108,9 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 	#### __XAML__
 
-	{{region radcalendar-styling-and-appearance-daybuttonstyleselector-4}}
+	{{region xaml-radcalendar-styling-and-appearance-daybuttonstyleselector-4}}
 		<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"
-							 DayButtonStyle="{x:Null}"/>
+		             DayButtonStyle="{x:Null}"/>
 	{{endregion}}
 
 The next screenshot shows the final result:

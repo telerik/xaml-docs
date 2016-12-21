@@ -21,20 +21,19 @@ Here is an example for a basic row details template (__Example 1__). You can obs
 
 #### __[XAML] Example 1: Definition of Basic RowDetails Template__
 
-{{region radgridview-row-details-template_0}}
-
+{{region xaml-radgridview-row-details-template_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                         RowDetailsVisibilityMode="VisibleWhenSelected">
+	                 RowDetailsVisibilityMode="VisibleWhenSelected">
 	    <telerik:RadGridView.RowDetailsTemplate>
 	        <DataTemplate>
 	            <StackPanel Orientation="Horizontal"
-	                        Margin="10,10,10,10">
-					<TextBlock Text="Stadium Capacity: " />
-					<TextBlock Text="{Binding StadiumCapacity}" />
-				</StackPanel>
+	                Margin="10,10,10,10">
+	                <TextBlock Text="Stadium Capacity: " />
+	                <TextBlock Text="{Binding StadiumCapacity}" />
+	            </StackPanel>
 	        </DataTemplate>
 	    </telerik:RadGridView.RowDetailsTemplate>
-	    ...
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -48,41 +47,40 @@ Here is an example for a complex row details template (__Example 2__). You can o
 
 #### __[XAML] Example 2: Definition of Complex RowDetails Template__
 
-{{region radgridview-row-details-template_1}}
-
+{{region xaml-radgridview-row-details-template_1}}
 	<Grid>
-		<Grid.Resources>
-			<my:MyViewModel x:Key="MyViewModel"/>
-			<DataTemplate x:Key="RowDetailsTemplate">
-				<telerik:RadGridView Name="playersGrid" 
-	                                ItemsSource="{Binding Players}" 
-	                                AutoGenerateColumns="False">
-					<telerik:RadGridView.Columns>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Number}"/>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Position}"/>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Country}"/>
-					</telerik:RadGridView.Columns>
-				</telerik:RadGridView>
-			</DataTemplate>
-		</Grid.Resources>
-		<telerik:RadGridView Grid.Row="0" 
-	                        Name="clubsGrid" 
-	                        ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"
-	                        AutoGenerateColumns="False"
-	                        RowDetailsTemplate="{StaticResource RowDetailsTemplate}"
-	                        Margin="5">
-			<telerik:RadGridView.Columns>
-				<telerik:GridViewToggleRowDetailsColumn/>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-	                                    Header="Est." 
-	                                    DataFormatString="{}{0:yyyy}"/>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-	                                    Header="Stadium" 
-	                                    DataFormatString="{}{0:N0}"/>
-			</telerik:RadGridView.Columns>
-		</telerik:RadGridView>
+	    <Grid.Resources>
+	        <my:MyViewModel x:Key="MyViewModel"/>
+	        <DataTemplate x:Key="RowDetailsTemplate">
+	            <telerik:RadGridView Name="playersGrid" 
+	                        ItemsSource="{Binding Players}" 
+	                        AutoGenerateColumns="False">
+	                <telerik:RadGridView.Columns>
+	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
+	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}"/>
+	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Position}"/>
+	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}"/>
+	                </telerik:RadGridView.Columns>
+	            </telerik:RadGridView>
+	        </DataTemplate>
+	    </Grid.Resources>
+	    <telerik:RadGridView Grid.Row="0" 
+	                Name="clubsGrid" 
+	                ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"
+	                AutoGenerateColumns="False"
+	                RowDetailsTemplate="{StaticResource RowDetailsTemplate}"
+	                Margin="5">
+	        <telerik:RadGridView.Columns>
+	            <telerik:GridViewToggleRowDetailsColumn/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
+	                            Header="Est." 
+	                            DataFormatString="{}{0:yyyy}"/>
+	            <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
+	                            Header="Stadium" 
+	                            DataFormatString="{}{0:N0}"/>
+	        </telerik:RadGridView.Columns>
+	    </telerik:RadGridView>
 	</Grid>
 {{endregion}}
 

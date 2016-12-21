@@ -40,35 +40,35 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-custom-item-style_0}}
+{{region cs-radchart-styling-and-appearance-custom-item-style_0}}
 	public Sample()
 	{
 	    InitializeComponent();
 	    this.radChart.CreateItemStyleDelegate = this.BuildCustomItemStyle;
 	}
-	public Style BuildCustomItemStyle( Control item, Style style, DataPoint point, DataSeries dataSeries )
+	public Style BuildCustomItemStyle(Control item, Style style, DataPoint point, DataSeries dataSeries )
 	{
 	    Style newStyle = new Style();
 	    newStyle.BasedOn = style;
 	    return newStyle;
 	}
-	{{endregion}}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-custom-item-style_1}}
+{{region vb-radchart-styling-and-appearance-custom-item-style_1}}
 	Public Sub New()
-	 InitializeComponent()
-	 Me.radChart.CreateItemStyleDelegate = Me.BuildCustomItemStyle
+	    InitializeComponent()
+	    Me.radChart.CreateItemStyleDelegate = AddressOf Me.BuildCustomItemStyle
 	End Sub
 	Public Function BuildCustomItemStyle(item As Control, style As Style, point As DataPoint, dataSeries As DataSeries) As Style
-	 Dim newStyle As New Style()
-	 newStyle.BasedOn = style
-	 Return style
+	    Dim newStyle As New Style()
+	    newStyle.BasedOn = Style
+	    Return Style
 	End Function
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -76,142 +76,142 @@ The following sample demonstrates a more complex logic inside the delegate - how
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-custom-item-style_2}}
+{{region cs-radchart-styling-and-appearance-custom-item-style_2}}
 	public partial class MainPage : UserControl
+	{
+	    public MainPage()
 	    {
-	        public MainPage()
+	        InitializeComponent();
+	        int maxItems = 10;
+	        Random r = new Random();
+	
+	        List<Company> sampleData = new List<Company>();
+	
+	        for (int i = 0; i < maxItems; i++)
 	        {
-	            InitializeComponent();
-	            int maxItems = 10;
-	            Random r = new Random();
-	
-	            List<Company> sampleData = new List<Company>();
-	
-	            for (int i = 0; i < maxItems; i++)
-	            {
-	                sampleData.Add(new Company(r.Next(200, 400)));
-	            }
-	
-	            SeriesMapping seriesMapping = new SeriesMapping();
-	            seriesMapping.LegendLabel = "My Custom Bars";
-	            seriesMapping.SeriesDefinition = new BarSeriesDefinition();
-	            seriesMapping.ItemMappings.Add(new ItemMapping("PurchasePrice", DataPointMember.YValue));
-	
-	            RadChart1.ItemsSource = sampleData;
-	            RadChart1.SeriesMappings.Add(seriesMapping);
-	
-	            this.RadChart1.CreateItemStyleDelegate = BuildCustomItemStyle;
-	
+	            sampleData.Add(new Company(r.Next(200, 400)));
 	        }
 	
-	        public class Company
+	        SeriesMapping seriesMapping = new SeriesMapping();
+	        seriesMapping.LegendLabel = "My Custom Bars";
+	        seriesMapping.SeriesDefinition = new BarSeriesDefinition();
+	        seriesMapping.ItemMappings.Add(new ItemMapping("PurchasePrice", DataPointMember.YValue));
+	
+	        this.RadChart1.ItemsSource = sampleData;
+	        this.RadChart1.SeriesMappings.Add(seriesMapping);
+	
+	        this.RadChart1.CreateItemStyleDelegate = BuildCustomItemStyle;
+	
+	    }
+	
+	    public class Company
+	    {
+	        public double PurchasePrice { get; set; }
+	
+	        public Company(double price)
 	        {
-	            public double PurchasePrice { get; set; }
-	
-	            public Company(double price)
-	            {
-	                PurchasePrice = price;
-	            }
-	        }
-	
-	        public Style BuildCustomItemStyle(Control item, Style style, DataPoint point, DataSeries dataSeries)
-	        {
-	            Style newStyle = new Style(style.TargetType);
-	            newStyle.BasedOn = style;
-	            Brush brush;
-	
-	            if (item is BaseChartItem)
-	            {
-	                if (dataSeries[(item as BaseChartItem).CurrentIndex].YValue > 300)
-	                {
-	                    brush = new SolidColorBrush(Colors.Red);
-	                }
-	                else
-	                {
-	                    brush = new SolidColorBrush(Colors.Green);
-	                }
-	                newStyle.Setters.Add(new Setter(Shape.FillProperty, brush));
-	            }
-	
-	            if (item is SeriesItemLabel)
-	            {
-	                if ((item as SeriesItemLabel).DataPoint.YValue > 300)
-	                    brush = new SolidColorBrush(Colors.Red);
-	                else
-	                    brush = new SolidColorBrush(Colors.Green);
-	                newStyle.Setters.Add(new Setter(SeriesItemLabel.FillProperty, brush));
-	                newStyle.Setters.Add(new Setter(SeriesItemLabel.StrokeProperty, brush));
-	            }
-	            if (item is ChartLegendItem)
-	            {
-	                brush = this.Resources["LegendItemStyle"] as Brush;
-	                newStyle.Setters.Add(new Setter(Path.FillProperty, brush));
-	            }
-	
-	            return newStyle;
+	            PurchasePrice = price;
 	        }
 	    }
-	{{endregion}}
+	
+	    public Style BuildCustomItemStyle(Control item, Style style, DataPoint point, DataSeries dataSeries)
+	    {
+	        Style newStyle = new Style(style.TargetType);
+	        newStyle.BasedOn = style;
+	        Brush brush;
+	
+	        if (item is BaseChartItem)
+	        {
+	            if (dataSeries[(item as BaseChartItem).CurrentIndex].YValue > 300)
+	            {
+	                brush = new SolidColorBrush(Colors.Red);
+	            }
+	            else
+	            {
+	                brush = new SolidColorBrush(Colors.Green);
+	            }
+	            newStyle.Setters.Add(new Setter(Shape.FillProperty, brush));
+	        }
+	
+	        if (item is SeriesItemLabel)
+	        {
+	            if ((item as SeriesItemLabel).DataPoint.YValue > 300)
+	                brush = new SolidColorBrush(Colors.Red);
+	            else
+	                brush = new SolidColorBrush(Colors.Green);
+	            newStyle.Setters.Add(new Setter(SeriesItemLabel.FillProperty, brush));
+	            newStyle.Setters.Add(new Setter(SeriesItemLabel.StrokeProperty, brush));
+	        }
+	        if (item is ChartLegendItem)
+	        {
+	            brush = this.Resources["LegendItemStyle"] as Brush;
+	            newStyle.Setters.Add(new Setter(Path.FillProperty, brush));
+	        }
+	
+	        return newStyle;
+	    }
+	}
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-custom-item-style_3}}
+{{region vb-radchart-styling-and-appearance-custom-item-style_3}}
 	Partial Public Class MainPage
-	Inherits UserControl
-	Public Sub New()
-	InitializeComponent()
-	Dim maxItems As Integer = 10
-	Dim r As New Random()
-	Dim sampleData As New List(Of Company)()
-	For i As Integer = 0 To maxItems - 1
-	sampleData.Add(New Company(r.Next(200, 400)))
-	Next i
-	Dim seriesMapping As New SeriesMapping()
-	seriesMapping.LegendLabel = "My Custom Bars"
-	seriesMapping.SeriesDefinition = New BarSeriesDefinition()
-	seriesMapping.ItemMappings.Add(New ItemMapping("PurchasePrice", DataPointMember.YValue))
-	RadChart1.ItemsSource = sampleData
-	RadChart1.SeriesMappings.Add(seriesMapping)
-	Me.RadChart1.CreateItemStyleDelegate = AddressOf BuildCustomItemStyle
-	End Sub
-	Public Class Company
-	Public Property PurchasePrice() As Double
-	Public Sub New(ByVal price As Double)
-	PurchasePrice = price
-	End Sub
-	End Class
-	Public Function BuildCustomItemStyle(ByVal item As Control, ByVal style As Style, ByVal point As DataPoint, ByVal dataSeries As DataSeries) As Style
-	Dim newStyle As New Style(style.TargetType)
-	newStyle.BasedOn = style
-	Dim brush As Brush
-	If TypeOf item Is BaseChartItem Then
-	If dataSeries((TryCast(item, BaseChartItem)).CurrentIndex).YValue > 300 Then
-	brush = New SolidColorBrush(Colors.Red)
-	Else
-	brush = New SolidColorBrush(Colors.Green)
-	End If
-	newStyle.Setters.Add(New Setter(Shape.FillProperty, brush))
-	End If
+	    Inherits UserControl
+	    Public Sub New()
+	        InitializeComponent()
+	        Dim maxItems As Integer = 10
+	        Dim r As New Random()
+	        Dim sampleData As New List(Of Company)()
+	        For i As Integer = 0 To maxItems - 1
+	            sampleData.Add(New Company(r.Next(200, 400)))
+	        Next i
+	        Dim seriesMapping As New SeriesMapping()
+	        seriesMapping.LegendLabel = "My Custom Bars"
+	        seriesMapping.SeriesDefinition = New BarSeriesDefinition()
+	        seriesMapping.ItemMappings.Add(New ItemMapping("PurchasePrice", DataPointMember.YValue))
+	        RadChart1.ItemsSource = sampleData
+	        RadChart1.SeriesMappings.Add(seriesMapping)
+	        Me.RadChart1.CreateItemStyleDelegate = AddressOf BuildCustomItemStyle
+	    End Sub
+	    Public Class Company
+	        Public Property PurchasePrice() As Double
+	        Public Sub New(ByVal price As Double)
+	            PurchasePrice = price
+	        End Sub
+	    End Class
+	    Public Function BuildCustomItemStyle(ByVal item As Control, ByVal style As Style, ByVal point As DataPoint, ByVal dataSeries As DataSeries) As Style
+	        Dim newStyle As New Style(style.TargetType)
+	        newStyle.BasedOn = style
+	        Dim brush As Brush
+	        If TypeOf item Is BaseChartItem Then
+	            If dataSeries((TryCast(item, BaseChartItem)).CurrentIndex).YValue > 300 Then
+	                brush = New SolidColorBrush(Colors.Red)
+	            Else
+	                brush = New SolidColorBrush(Colors.Green)
+	            End If
+	            newStyle.Setters.Add(New Setter(Shape.FillProperty, brush))
+	        End If
 	
-	If TypeOf item Is SeriesItemLabel Then
-	If (TryCast(item, SeriesItemLabel)).DataPoint.YValue > 300 Then
-	brush = New SolidColorBrush(Colors.Red)
-	Else
-	brush = New SolidColorBrush(Colors.Green)
-	End If
-	newStyle.Setters.Add(New Setter(SeriesItemLabel.FillProperty, brush))
-	newStyle.Setters.Add(New Setter(SeriesItemLabel.StrokeProperty, brush))
-	End If
-	If TypeOf item Is ChartLegendItem Then
-	brush = TryCast(Me.Resources("LegendItemStyle"), Brush)
-	newStyle.Setters.Add(New Setter(Path.FillProperty, brush))
-	End If
-	Return newStyle
-	End Function
+	        If TypeOf item Is SeriesItemLabel Then
+	            If (TryCast(item, SeriesItemLabel)).DataPoint.YValue > 300 Then
+	                brush = New SolidColorBrush(Colors.Red)
+	            Else
+	                brush = New SolidColorBrush(Colors.Green)
+	            End If
+	            newStyle.Setters.Add(New Setter(SeriesItemLabel.FillProperty, brush))
+	            newStyle.Setters.Add(New Setter(SeriesItemLabel.StrokeProperty, brush))
+	        End If
+	        If TypeOf item Is ChartLegendItem Then
+	            brush = TryCast(Me.Resources("LegendItemStyle"), Brush)
+	            newStyle.Setters.Add(New Setter(Path.FillProperty, brush))
+	        End If
+	        Return newStyle
+	    End Function
 	End Class
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -219,14 +219,14 @@ The *LegendItemStyle* used :
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-custom-item-style_4}}
+{{region xaml-radchart-styling-and-appearance-custom-item-style_4}}
 	<LinearGradientBrush x:Key="LegendItemStyle" EndPoint="1,1" StartPoint="0,0">
 	<GradientStop Color="Red" Offset="0"/>
 	<GradientStop Color="Red" Offset="0.5"/>
 	<GradientStop Color="Green" Offset="0.51"/>
 	<GradientStop Color="Green" Offset="1"/>
 	</LinearGradientBrush>
-	{{endregion}}
+{{endregion}}
 
 
 

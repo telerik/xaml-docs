@@ -5,7 +5,7 @@ description: Localization
 slug: radupload-localization
 tags: localization
 published: True
-position: 3
+position: 8
 site_name: Silverlight
 ---
 

@@ -26,32 +26,27 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 ## Project Setup
 
-{% if site.site_name == 'Silverlight' %}__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard{% endif %}{% if site.site_name == 'WPF' %}__Add referenced assemblies to solution and source control__ - When enabled, the referenced assemblies will be copied to the solution when using Telerik wizards{% endif %}
+{% if site.site_name == 'Silverlight' %}__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard{% endif %}{% if site.site_name == 'WPF' %}__Copy referenced assemblies to solution and integrate with source control__ - When enabled, the referenced assemblies will be copied to the solution when using Telerik wizards{% endif %}
 
-        
+
 
 ## Project Upgrade Notifications for Detected Local Distributions
 
 
 __Suggest project upgrades for Telerik product version available on my computer__ – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI installed on your system
 
-__Suggest upgrades when an equal Dev release detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
-
-## Other Notifications
-
-__Notify me when a Telerik subscription I have is about to expire__ – When enabled, you will receive reminders if any of your subscriptions expire within the next month.
-        
-
->You can benefit subscription reminders only if you have saved your credentials in the __[Latest Version Acquirer]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})__ tool.
-          
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
 
 ## Select a Folder for Downloads
 
 Configures the path where the extensions look for and store distributions.
-            
+
 
 >Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
-              
+
+All settings under the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} category affect only the respective product.
+
+![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_OptionsDialog.png)
 
 ## Latest Version Retrieval
 

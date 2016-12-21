@@ -16,7 +16,7 @@ In order to add items you need to use the __RadialMenu's Items__ property. The _
 
 #### __[XAML] Example 1: Adding parent items__
 
-{{region radradialmenu-populating-with-data-overview_0}}
+{{region xaml-radradialmenu-populating-with-data-overview_0}}
 	<telerik:RadRadialMenu>
 	    <telerik:RadRadialMenuItem Header="File" />
 	    <telerik:RadRadialMenuItem Header="Upload" />
@@ -32,7 +32,7 @@ Each of the __RadRadialMenuItems__ can have child items that are defined in the 
 
 #### __[XAML] Example 2: Adding child items__
 
-{{region radradialmenu-populating-with-data-overview_1}}
+{{region xaml-radradialmenu-populating-with-data-overview_1}}
 	<telerik:RadRadialMenu Margin="50">
 	    <telerik:RadRadialMenuItem Header="File" />
 	    <telerik:RadRadialMenuItem Header="Upload" />

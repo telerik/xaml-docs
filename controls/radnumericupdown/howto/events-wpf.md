@@ -47,28 +47,29 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 #### __C#__
 
-{{region radnumericupdown-howto-events-wpf_0}}
+{{region cs-radnumericupdown-howto-events-wpf_0}}
 	public void Events()
 	{
-		RadNumericUpDown numeric = new RadNumericUpDown();
-		numeric.ValueChanged += new RoutedPropertyChangedEventHandler<double>(OnNumericValueChanged);
-		numeric.Value = 10;
+	    RadNumericUpDown numeric = new RadNumericUpDown();
+	    numeric.ValueChanged += OnNumericValueChanged;
+	    numeric.Value = 10;
 	}
-	private void OnNumericValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+	
+	private void OnNumericValueChanged(object sender, RadRangeBaseValueChangedEventArgs e)
 	{
-		 //some action here
+	    //some action here
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region radnumericupdown-howto-events-wpf_1}}
+{{region vb-radnumericupdown-howto-events-wpf_1}}
 	Private Sub Events()
-		Dim numeric As RadNumericUpDown = New RadNumericUpDown
-		AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
-		numeric.Value = 10;
+	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
+	    AddHandler numeric.ValueChanged, AddressOf OnNumericValueChanged
+	    numeric.Value = 10
 	End Sub
-	Private Sub OnNumericValueChanged(ByVal sender As Object, ByVal e As RoutedPropertyChangedEventArgs(Of double))
-		//some action here
+	Private Sub OnNumericValueChanged(sender As Object, e As RadRangeBaseValueChangedEventArgs)
+	    'some action here
 	End Sub
 {{endregion}}

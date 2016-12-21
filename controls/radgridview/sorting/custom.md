@@ -42,28 +42,15 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
        
 #### __C#__
 
-{{region gridview-sorting-custom_0}}
-
-	public CustomSorting()
-	{
-	    InitializeComponent();
-	    this.radGridView.Sorting += this.radGridView_Sorting;    
-	}
-	private void radGridView_Sorting( object sender, GridViewSortingEventArgs e )
-	{
-	}
+{{region cs-gridview-sorting-custom_0}}
+	this.radGridView.Sorting += this.radGridView_Sorting;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_1}}
-
-	Public Sub New()
-	    InitializeComponent()       
-	    AddHandler Me.radGridView.Sorting, AddressOf Me.radGridView_Sorting
-	End Sub
-	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	End Sub
+{{region vb-gridview-sorting-custom_1}}
+	  
+	AddHandler Me.radGridView.Sorting, AddressOf Me.radGridView_Sorting
 {{endregion}}
 
 >When performing a custom sorting, you need to set the __IsCustomSortingEnabled__ property of the column to True.
@@ -86,14 +73,13 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 #### __C#__
 
-{{region gridview-sorting-custom_2}}
-
-	private void radGridView_Sorting( object sender, GridViewSortingEventArgs e )
+{{region cs-gridview-sorting-custom_2}}
+	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
 	{
 	    //Gets the value of the ItemsSource property as IEnumerable.
 	    IEnumerable<Employee> employees = e.DataControl.ItemsSource as IEnumerable<Employee>;
 	    //Checks if the value of the collection is null.
-	    if ( employees == null )
+	    if (employees == null)
 	    {
 	        e.Cancel = true;
 	        return;
@@ -103,13 +89,12 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_3}}
-
+{{region vb-gridview-sorting-custom_3}}
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	    'Gets the value of the ItemsSource property as IEnumerable.'
+	    'Gets the value of the ItemsSource property as IEnumerable.
 	    Dim employees As IEnumerable(Of Employee) = TryCast(e.DataControl.ItemsSource, IEnumerable(Of Employee))
 	
-	    'Checks if the value of the collection is null.'
+	    'Checks if the value of the collection is null.
 	    If employees Is Nothing Then
 	        e.Cancel = True
 	        Exit Sub
@@ -121,15 +106,14 @@ Next you have to check the value of the current sorting direction. To do that us
         
 #### __C#__
 
-{{region gridview-sorting-custom_4}}
-
+{{region cs-gridview-sorting-custom_4}}
 	//If the sorting state is none, sort the items ascending.
-	if ( e.OldSortingState == SortingState.None )
+	if (e.OldSortingState == SortingState.None)
 	{
 	    e.NewSortingState = SortingState.Ascending;
 	}
 	//If the sorting state is none, sort the items descending.
-	else if ( e.OldSortingState == SortingState.Ascending )
+	else if (e.OldSortingState == SortingState.Ascending)
 	{
 	    e.NewSortingState = SortingState.Descending;
 	}
@@ -142,15 +126,14 @@ Next you have to check the value of the current sorting direction. To do that us
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_5}}
-
-	'If the sorting state is none, sort the items ascending.'
+{{region vb-gridview-sorting-custom_5}}
+	'If the sorting state is none, sort the items ascending.
 	If e.OldSortingState = SortingState.None Then
 	    e.NewSortingState = SortingState.Ascending
-	'If the sorting state is none, sort the items descending.'
+	    'If the sorting state is none, sort the items descending.
 	ElseIf e.OldSortingState = SortingState.Ascending Then
 	    e.NewSortingState = SortingState.Descending
-	'If the sorting state is descending, apply default sorting to the items.'
+	    'If the sorting state is descending, apply default sorting to the items.
 	Else
 	    e.NewSortingState = SortingState.None
 	End If
@@ -162,40 +145,39 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
         
 #### __C#__
 
-{{region gridview-sorting-custom_6}}
-
+{{region cs-gridview-sorting-custom_6}}
 	//Via the SortPropertyName value get 
 	//the value of the property to sort your data by.
-	employees = employees.OrderBy( employee => employee.GetType()
-	                                                   .GetProperty( (e.Column as GridViewDataColumn).GetDataMemberName() )
-	                                                   .GetValue( employee, null ) );
+	employees = employees.OrderBy(employee => employee.GetType()
+	                                                  .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
+	                                                  .GetValue(employee, null));
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_7}}
-
-	'Via the SortPropertyName value get' 
-	'the value of the property to sort your data by.'
-	employees = employees.OrderBy(Function(employee) employee.[GetType]()
-	                                                         .GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName())
-	                                                         .GetValue(employee, Nothing))
+{{region vb-gridview-sorting-custom_7}}
+	'Via the SortPropertyName value get 
+	'the value of the property to sort your data by.
+	employees = employees.OrderBy(Function(employee) employee.GetType().GetProperty((TryCast(e.Column, GridViewDataColumn)).GetDataMemberName()).GetValue(employee, Nothing))
+	' #endregion
+	
+	'#region gridview-sorting-custom_9
+	e.DataControl.ItemsSource = employees.ToList()
+	e.Cancel = True
 {{endregion}}
 
 Do the same with __OrderByDescending__ extension method. In the end, set __RadGridView.ItemsSource__ to the sorted employees collection and set the __Cancel__ property of the __RadGridViewEventArgs__ to __True__ , so the built-in sorting functionality would be bypassed.
 
 #### __C#__
 
-{{region gridview-sorting-custom_8}}
-
+{{region cs-gridview-sorting-custom_8}}
 	e.DataControl.ItemsSource = employees.ToList();
 	e.Cancel = true;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_9}}
-
+{{region vb-gridview-sorting-custom_9}}
 	e.DataControl.ItemsSource = employees.ToList()
 	e.Cancel = True
 {{endregion}}
@@ -204,39 +186,38 @@ Here is the final code that should represent __Sorting__ event handler.
 
 #### __C#__
 
-{{region gridview-sorting-custom_10}}
-
-	private void CustomSortingGrid_Sorting( object sender, GridViewSortingEventArgs e )
+{{region cs-gridview-sorting-custom_10}}
+	private void CustomSortingGrid_Sorting(object sender, GridViewSortingEventArgs e)
 	{
 	    //Gets the value of the ItemsSource property as IEnumerable.
 	    IEnumerable<Employee> employees = e.DataControl.ItemsSource as IEnumerable<Employee>;
 	    //Checks if the value of the collection is null.
-	    if ( employees == null )
+	    if (employees == null)
 	    {
 	        e.Cancel = true;
 	        return;
 	    }
 	    //If the sorting state is none, sort the items ascending.
-	    if ( e.OldSortingState == SortingState.None )
+	    if (e.OldSortingState == SortingState.None)
 	    {
 	        e.NewSortingState = SortingState.Ascending;
-	        employees = employees.OrderBy( employee => employee.GetType()
-	                                                           .GetProperty( (e.Column as GridViewDataColumn).GetDataMemberName() )
-	                                                           .GetValue( employee, null ) );
+	        employees = employees.OrderBy(employee => employee.GetType()
+	                                                          .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
+	                                                          .GetValue(employee, null));
 	    }
 	    //If the sorting state is none, sort the items descending.
-	    else if ( e.OldSortingState == SortingState.Ascending )
+	    else if (e.OldSortingState == SortingState.Ascending)
 	    {
 	        e.NewSortingState = SortingState.Descending;
-	        employees = employees.OrderByDescending( employee => employee.GetType()
-	                                                            .GetProperty( (e.Column as GridViewDataColumn).GetDataMemberName() )
-	                                                            .GetValue( employee, null ) );
+	        employees = employees.OrderByDescending(employee => employee.GetType()
+	                                                           .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
+	                                                           .GetValue(employee, null));
 	    }
 	    //If the sorting state is descending, apply default sorting to the items.
 	    else
 	    {
 	        e.NewSortingState = SortingState.None;
-	        employees = employees.OrderBy( employee => employee.EmployeeID );
+	        employees = employees.OrderBy(employee => employee.EmployeeID);
 	    }
 	    //Set the sorted collection as source of the RadGridView
 	    e.DataControl.ItemsSource = employees.ToList();
@@ -246,33 +227,32 @@ Here is the final code that should represent __Sorting__ event handler.
 
 #### __VB.NET__
 
-{{region gridview-sorting-custom_11}}
-
-	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	    'Gets the value of the ItemsSource property as IEnumerable.'
+{{region vb-gridview-sorting-custom_11}}
+	Private Sub CustomSortingGrid_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
+	    'Gets the value of the ItemsSource property as IEnumerable.
 	    Dim employees As IEnumerable(Of Employee) = TryCast(e.DataControl.ItemsSource, IEnumerable(Of Employee))
 	
-	    'Checks if the value of the collection is null.'
+	    'Checks if the value of the collection is null.
 	    If employees Is Nothing Then
 	        e.Cancel = True
 	        Exit Sub
 	    End If
 	
-	    'If the sorting state is none, sort the items ascending.'
+	    'If the sorting state is none, sort the items ascending.
 	    If e.OldSortingState = SortingState.None Then
 	        e.NewSortingState = SortingState.Ascending
 	        employees = employees.OrderBy(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))
-	    'If the sorting state is none, sort the items descending.'
+	        'If the sorting state is none, sort the items descending.
 	    ElseIf e.OldSortingState = SortingState.Ascending Then
 	        e.NewSortingState = SortingState.Descending
 	        employees = employees.OrderByDescending(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))
 	    Else
-	        'If the sorting state is descending, apply default sorting to the items.'
+	        'If the sorting state is descending, apply default sorting to the items.
 	        e.NewSortingState = SortingState.None
 	        employees = employees.OrderBy(Function(employee) employee.EmployeeID)
 	    End If
 	
-	    'Set the sorted collection as source of the RadGridView'
+	    'Set the sorted collection as source of the RadGridView
 	    e.DataControl.ItemsSource = employees.ToList()
 	    e.Cancel = True
 	End Sub

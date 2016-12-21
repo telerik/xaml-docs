@@ -24,7 +24,7 @@ If you have a window-specific icon, use the __Icon__ property.
 	RadWindow radWindow = new RadWindow();
 	radWindow.Icon = new Image()
 	{
-	    Source = new BitmapImage(new Uri("../../Images/WindowIcon.png", UriKind.Relative ))
+	    Source = new BitmapImage(new Uri("../../Images/WindowIcon.png", UriKind.Relative))
 	};
 {{endregion}}
 
@@ -48,8 +48,7 @@ If you want to share a common icon layout structure for the content of multiple 
 {{region xaml-radwindow-features-window-icon_2}}
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowIconTemplate">
-	        <Image Source="/Images/WindowIcon.png"
-	               Stretch="None" />
+	        <Image Source="/Images/WindowIcon.png" Stretch="None" />
 	    </DataTemplate>
 	</UserControl.Resources>
 {{endregion}}

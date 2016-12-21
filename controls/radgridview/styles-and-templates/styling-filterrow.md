@@ -45,13 +45,13 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 #### __[XAML] Example 1: Styling the StringFilterEditor__
 
-	{{region gridview-styling-filter-row-1}}
-    <Style TargetType="{x:Type Editors:StringFilterEditor}">
-		<Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
-		<Setter Property="IsTabStop" Value="False"/>
-		<Setter Property="SnapsToDevicePixels" Value="True"/>
+	{{region xaml-gridview-styling-filter-row-1}}
+	<Style TargetType="Editors:StringFilterEditor">
+	    <Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
+	    <Setter Property="IsTabStop" Value="False"/>
+	    <Setter Property="SnapsToDevicePixels" Value="True"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
           
@@ -61,12 +61,12 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 #### __[XAML] Example 2: Styling the FieldFilterControl__
 
-	{{region gridview-styling-filter-row-2}}
-    <Style TargetType="{x:Type telerik:FieldFilterControl}">
-		<Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
-        <Setter Property="Padding" Value="5"/>
-    </Style>
-	{{endregion}}
+	{{region xaml-gridview-styling-filter-row-2}}
+	<Style TargetType="telerik:FieldFilterControl">
+	    <Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
+	    <Setter Property="Padding" Value="5"/>
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
 
@@ -76,32 +76,32 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 #### __[C#] Example 3: Setting a background for the filtering row TextBox__
 
-	{{region gridview-styling-filter-row-3}}
+	{{region cs-gridview-styling-filter-row-3}}
 	private void clubsGrid_FieldFilterEditorCreated(object sender, EditorCreatedEventArgs e)
-    {
-        if (e.Column.UniqueName == "StadiumCapacity")
-        {
-            TextBox txtBox = e.Editor as TextBox;
-            if (txtBox != null)
-            {
-                txtBox.Background = new SolidColorBrush(Colors.Yellow);
-            }
-        }     
-    }
-	{{endregion}}
+	{
+	    if (e.Column.UniqueName == "StadiumCapacity")
+	    {
+	        TextBox txtBox = e.Editor as TextBox;
+	        if (txtBox != null)
+	        {
+	            txtBox.Background = new SolidColorBrush(Colors.Yellow);
+	        }
+	    }
+	}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Setting a background for the filtering row TextBox__
 
-	{{region gridview-styling-filter-row-4}}
-    Private Sub clubsGrid_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-        If e.Column.UniqueName = "StadiumCapacity" Then
-            Dim txtBox As TextBox = TryCast(e.Editor, TextBox)
-            If txtBox IsNot Nothing Then
-                txtBox.Background = New SolidColorBrush(Colors.Yellow)
-            End If
-        End If
-    End Sub
-	{{endregion}}
+	{{region vb-gridview-styling-filter-row-4}}
+	Private Sub clubsGrid_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
+	    If e.Column.UniqueName = "StadiumCapacity" Then
+	        Dim txtBox As TextBox = TryCast(e.Editor, TextBox)
+	        If txtBox IsNot Nothing Then
+	            txtBox.Background = New SolidColorBrush(Colors.Yellow)
+	        End If
+	    End If
+	End Sub
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled filter row__
 

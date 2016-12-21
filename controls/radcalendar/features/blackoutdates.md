@@ -20,7 +20,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 #### __C#__
 
-{{region radcalendar-features-blackoutdates_0}}
+{{region cs-radcalendar-features-blackoutdates_0}}
 	public ObservableCollection<DateTime> BlackoutDates { get; set; }
 {{endregion}}
 
@@ -28,7 +28,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 #### __C#__
 
-{{region radcalendar-features-blackoutdates_1}}
+{{region cs-radcalendar-features-blackoutdates_1}}
 	public MyViewModel()
 	{
 		this.BlackoutDates = new ObservableCollection<DateTime>()
@@ -55,7 +55,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 #### __XAML__
 
-{{region radcalendar-features-blackoutdates_0}}
+{{region xaml-radcalendar-features-blackoutdates_0}}
 	<telerik:RadCalendar BlackoutDates="{Binding BlackoutDates}"/>
 {{endregion}}
 

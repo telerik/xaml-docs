@@ -22,13 +22,13 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __TextBlock
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-axis-item-label_0}}
+{{region xaml-radchart-styling-and-appearance-styling-axis-item-label_0}}
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
-	    ...
+	    <!--...-->
 	    <TextBlock/>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
 
 
@@ -42,19 +42,19 @@ After finishing with the changes it is time to set the style. It can be set only
 
 #### __C#__
 
-{{region radchart-styling-and-appearance-styling-axis-item-label_1}}
-	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = this.Resources[ "ItemLabelStyle" ] as Style;
-	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle= this.Resources[ "ItemLabelStyle" ] as Style;
-	{{endregion}}
+{{region cs-radchart-styling-and-appearance-styling-axis-item-label_1}}
+	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = this.Resources["ItemLabelStyle"] as Style;
+	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle = this.Resources["ItemLabelStyle"] as Style;
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radchart-styling-and-appearance-styling-axis-item-label_2}}
-	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
-	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
-	{{endregion}}
+{{region vb-radchart-styling-and-appearance-styling-axis-item-label_2}}
+	Me.radchart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
+	Me.radchart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
+{{endregion}}
 
 
 
@@ -66,17 +66,13 @@ Here is the final XAML for the __Style__:
 
 #### __XAML__
 
-{{region radchart-styling-and-appearance-styling-axis-item-label_3}}
-	<Style x:Key="ItemLabelStyle"
-	       TargetType="TextBlock">
-	    <Setter Property="Foreground"
-	            Value="Orange" />
-	    <Setter Property="FontSize"
-	            Value="13.333" />
-	    <Setter Property="FontStyle"
-	            Value="Italic" />
+{{region xaml-radchart-styling-and-appearance-styling-axis-item-label_3}}
+	<Style x:Key="ItemLabelStyle" TargetType="TextBlock">
+	    <Setter Property="Foreground" Value="Orange" />
+	    <Setter Property="FontSize" Value="13.333" />
+	    <Setter Property="FontStyle" Value="Italic" />
 	</Style>
-	{{endregion}}
+{{endregion}}
 
 
 

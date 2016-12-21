@@ -84,7 +84,7 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 
 {{region cs-radwindow-getting-started_4}}
 	Grid grid = new Grid();
-	grid.Background = new SolidColorBrush( Color.FromArgb( 255, 240, 255, 255 ) );
+	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
 {{endregion}}
 
@@ -109,13 +109,13 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 #### __C#__
 
 {{region cs-radwindow-getting-started_6}}
-	RadWindow.Alert( "Hello!" );
+	RadWindow.Alert("Hello!");
 {{endregion}}
 
 #### __VB.NET__
 
 {{region vb-radwindow-getting-started_7}}
-	RadWindow.Alert( "Hello!" )
+	RadWindow.Alert("Hello!")
 {{endregion}}
 
 ![](images/RadWindow_GettingStarted_03.png)
@@ -125,10 +125,10 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 #### __C#__
 
 {{region cs-radwindow-getting-started_8}}
-	RadWindow.Confirm( new DialogParameters()
+	RadWindow.Confirm(new DialogParameters()
 	{
 	    Content = "Are you sure?"
-	} );
+	});
 {{endregion}}
 
 #### __VB.NET__
@@ -146,10 +146,10 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 #### __C#__
 
 {{region cs-radwindow-getting-started_10}}
-	RadWindow.Prompt( new DialogParameters()
+	RadWindow.Prompt(new DialogParameters()
 	{
 	    Content = "Enter your name:"
-	} );
+	});
 {{endregion}}
 
 #### __VB.NET__

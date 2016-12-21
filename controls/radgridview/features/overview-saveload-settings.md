@@ -8,18 +8,18 @@ published: True
 position: 10
 ---
 
-## Persisting Settings
+# Save/Load Settings
 
 You can save and load settings of RadGridView using the [PersistenceFramework]({%slug persistence-framework-overview%}) control.
 
 {% if site.site_name == 'Silverlight' %}
 
-For example and a sample code you can check out the "GridView Serialization" online demo [here.](http://demos.telerik.com/silverlight/#PersistenceFramework/GridViewCustomSerialization){% endif %}
+For example and a sample code you can check out the "GridView Serialization" online demo [here](http://demos.telerik.com/silverlight/#PersistenceFramework/GridViewCustomSerialization).{% endif %}
 
 {% if site.site_name == 'WPF' %}
 
-For example and a sample code you can check out the "GridView Serialization" WPF Demo [here.](http://demos.telerik.com/wpf/){% endif %}
+For example and a sample code you can check out the "GridView Serialization" WPF Demo [here](http://demos.telerik.com/wpf/).{% endif %}
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})

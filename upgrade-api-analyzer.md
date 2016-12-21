@@ -10,7 +10,7 @@ position: 20
 
 # How to Use the Upgrade API Analyzer 
 
-With every release of {% if site.site_name == 'WPF' %} UI for WPF {% endif %}{% if site.site_name == 'Silverlight' %}UI for Silverlight{% endif %} we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that such changes could cause issues when upgrading your app to the latest release. Mainly, the purpose of the __Telerik Upgrade API Analyzer__ is to make the upgrade process easier by comparing both versions and determining the problematic areas.
+With every release of UI for WPF we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when upgrading your app to the latest release. The main purpose of the __Telerik Upgrade API Analyzer__ is to make the upgrade process easier by comparing both versions and determining the problematic areas.
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
 
@@ -18,22 +18,21 @@ Currently the supported versions include the releases from Q1 2015 up to Q1 2016
 
 ## Why Do You Need This?
            
-In short, the __Telerik API Analyzer__ tool will help you with the upgrade of {% if site.site_name == 'WPF' %} UI for WPF {% endif %}{% if site.site_name == 'Silverlight' %}UI for Silverlight{% endif %} to a newer version. It thoroughly analyzes the code of your project and provides a list of the changes found between the currently used release and the release you’re planning to upgrade to. Such changes could include obsolete and removed methods and properties as well as modified methods and properties. Additionally, the tool points out the exact piece of code that is affected by a certain change and in cases that involve an obsolete method/property, the tool gives suggestions of how to modify that code.                      
+In short, the __Telerik API Analyzer__ tool will help you with the upgrade of the Telerik controls to a newer version. It thoroughly analyzes the code of your project and provides a list of the changes found between the currently used release and the release you’re planning to upgrade to. Such changes could include obsolete and removed methods and properties as well as modified methods and properties. Additionally, the tool points out the exact piece of code that is affected by a certain change and in cases that involve an obsolete method/property, the tool gives suggestions of how to modify that code.                      
+
+
+>At this stage, Upgrade API Analyzer checks only the C# code of your application. 
+
 
 ## Where Do You Get Telerik Upgrade API Analyzer?
 
-You can download the __Telerik Upgrade API Analyzer__ Installer from our site. The file is called [UpgradeApiAnalyzerSetup.exe](http://demos.telerik.com/upgradeapianalyzer/UpgradeApiAnalyzerSetup.exe).
+**Upgrade API Analyzer** is a **ClickOnce** application and you can download the installation file directly from [our site](http://demos.telerik.com/UpgradeAPIAnalyzer/setup.exe).
 
-## How Do You install It?
- 
-Running the downloaded .exe file will start installing the Telerik Upgrade API Analyzer on your machine.
-
->As the tool relies on [Roslyn](https://github.com/dotnet/roslyn), in case you haven’t got it on your machine yet, you will be prompted to allow the tool to install Roslyn.
+>The tool relies on **.NET Framework 4.5.2** and in case you haven’t got it on your machine yet, the setup of the tool will install it automatically.
 
 ## How Do You Use It?
 
->At this stage, Upgrade API Analyzer checks only the C# code of your application. 
-<Comment: I suggest you add the previous sentence about only checking the C# code before the section about "Why Do You Need This?". When the reader gets to this point, you have already encouraged them to download and install the analyzer. Too late if you have a VB.NET project.>
+
 Running the __Upgrade API Analyzer__ will lead to the screen shown in __Figure 1__.
 
 #### __Figure 1: Initial screen of Upgrade API Analyzer__
@@ -52,25 +51,31 @@ All you need to do is:
 
 4. Open the solution you’re planning to upgrade.  
 
-The tool starts automatically analyzing the code as shown in __Figure 2__ and will list all the changes found between both versions as demonstrated in __Figure 3__. 
+>tipYou can run the Upgrade API Analyzer from the [Project Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}), by clicking the "Compatibility" button (see **Figure 2**). In this case, the tool is started with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the Upgrade Wizard. When Upgrade API Analyzer is started directly through the "Compatibility" button without installing it first, the installation will start automatically. In case .NET Framework 4.5.2 is not present on the machine, the application will prompt you to install it manually at the end of the installation.
 
-#### __Figure 2: The tool starts analyzing as soon as you open a solution__
+#### __Figure 2: Compatibility button in Project Upgrade Wizard__
+
+![](images/upgrade-api-analyzer_5.png)
+
+The tool starts automatically analyzing the code as shown in __Figure 3__ and will list all the changes found between both versions as demonstrated in __Figure 4__. 
+
+#### __Figure 3: The tool starts analyzing as soon as you open a solution__
 
 ![](images/upgrade-api-analyzer_1.png)
 
-#### __Figure 3: Upgrade API Analyzer lists the found differences__
+#### __Figure 4: Upgrade API Analyzer lists the found differences__
 
 ![](images/upgrade-api-analyzer_2.png)
  
-__Upgrade API Analyzer__ provides a detailed list of the found differences between both versions in a convenient way for reviewing.  The tool uses [RadGridView for WPF](http://docs.telerik.com/devtools/wpf/controls/radgridview/overview2.html) to present the results, so you can benefit from its features such as sorting, filtering and resizing. 
+__Upgrade API Analyzer__ provides a detailed list of the found differences between both versions in a convenient way for reviewing.  The tool uses [RadGridView for WPF](http://docs.telerik.com/devtools/wpf/controls/radgridview/overview2.html) to present the results, so you can benefit from its features such as sorting, filtering and resizing columns. 
 
 For each of the changes, you can see the following information:
 
 * __Difference__: It could be Obsolete, Deleted and Modified.
 
-By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 4__.
+By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 5__.
 
-#### __Figure 4: Displaying all the changes found including the Modified ones.__
+#### __Figure 5: Displaying all the changes found including the Modified ones.__
 
 ![](images/upgrade-api-analyzer_3.png)
 
@@ -83,9 +88,9 @@ By default, the Modified changes are not shown as they actually indicate that th
 * __Line__: The exact line in the source file.
 * __Character__: The character in the previously set line.
 
-Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 5__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
+Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 6__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
 
-#### __Figure 5: API Analyzer provides export to a HTML document__
+#### __Figure 6: API Analyzer provides export to a HTML document__
 
 ![](images/upgrade-api-analyzer_4.png)
 

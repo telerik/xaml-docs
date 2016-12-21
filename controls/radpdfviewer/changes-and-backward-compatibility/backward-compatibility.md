@@ -14,6 +14,17 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2016 R3 - 2016.3.0914
+
+### Changed
+
+**Telerik.Windows.Documents.UI.FixedDocumentPresenterBase.VisiblePages** is not abstract anymore.
+
+### What to do now
+
+Ensure you are setting this property through the FixedDocumentPresenterBase class every time the visible pages in the presenter are changed so that the content is updated accordingly.
+
+
 ## What's Different in 2014 Q1 - 2014.1.0226
 
 ### Changed
@@ -47,7 +58,7 @@ There are no breaking changes in this version of the control.
 
 ## What's Different in 2013 Q1 - 2013.1.0220
 
-There are some breaking changes concerning the references you have to add to your project. A reference to __Telerik.Windows.Documents.Core__ is now required. More information on the assemly references can be found [here]({%slug radpdfviewer-getting-started%}).
+There are some breaking changes concerning the references you have to add to your project. A reference to __Telerik.Windows.Documents.Core__ is now required. More information on the assembly references can be found [here]({%slug radpdfviewer-getting-started%}).
         
 
 ## What's Different in 2012 Q1 - 2012.1.0215

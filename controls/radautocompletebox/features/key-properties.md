@@ -20,6 +20,8 @@ The purpose of this help article is to show you the key properties of __RadAutoC
 
 * [Setting the TextBoxStyle, BoxesItemTemplate, DropDownItemTemplate properties](#setting-the-style-and-template-properties)
 
+* [Setting NoResultsContent, NoResultsContentTemplate properties] (#setting-noresultscontent-noresultscontenttemplate-properties)
+
 * [Other properties](#other-properties)
 
 ## Setting the ItemsSource
@@ -37,6 +39,48 @@ The __SelectionMode__ property represents the behavior by which items will be se
 ## Setting the Style and Template properties
 
 It is possible to customize the way items in the DropDown portion of the control, the TextBox and the selected Items appear by customizing the __DropDownItemTemplate__, __TextBoxStyle__ and __BoxesItemTemplate__.
+
+## Setting NoResultsContent, NoResultsContentTemplate properties
+
+With the __NoResultsContent__ and __NoResultsContentTemplate__ properties of __RadAutoCompleteBox__ you could easily add a text or any other content to appear in the drop down whenever the control cannot find any matching items.
+
+>__NoResultsContent__ and __NoResultsContentTemplate__ properties are available with Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version R3 2016 or later.
+
+The following snippet demonstrates how to set __NoResultsContent__ to simple text:
+
+#### __[XAML] Using NoResultsContent__
+
+{{region xaml-radautocompletebox-features-key-properties-0 }}
+	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches" /> 
+{{endregion}}
+
+And this would be the result:
+
+![](images/radautocompletebox-features-key-properties-1.png)
+
+For more complex representation you could use __NoResultsContentTemplate__ in order to apply a DataTemplate containing the desired layout. The following example shows how to display an icon in front of the text:
+
+#### __[XAML] Using NoResultsContentTemplate__
+
+{{region xaml-radautocompletebox-features-key-properties-1 }}
+	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches">
+		<telerik:RadAutoCompleteBox.NoResultsContentTemplate>
+			<DataTemplate>
+				<StackPanel Orientation="Horizontal">
+					<Grid  Width="16" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left">
+						<Ellipse Stroke="Red" StrokeThickness="1" />
+						<Path Data="M0,8 L2,8 2,10 0,10 z M0,0 L2,0 2,7 0,7 z" Fill="Red" Stretch="Fill" Margin="7 3" />
+					</Grid>
+					<TextBlock Text="{Binding}" Margin="3 0" />
+				</StackPanel>
+			</DataTemplate>
+		</telerik:RadAutoCompleteBox.NoResultsContentTemplate>
+	</telerik:RadAutoCompleteBox> 
+{{endregion}}
+
+The result would be the following:
+
+![](images/radautocompletebox-features-key-properties-2.png)
 
 ## Other properties
 

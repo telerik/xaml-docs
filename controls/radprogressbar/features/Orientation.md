@@ -13,41 +13,41 @@ position: 1
 __RadProgressBar__ has an __Orientation__ property which can be set to either *Horizontal* or *Vertical*. The two allowed values specify the direction in which the control is being "filled". Below you can see examples of how to set the __Orientation__ property both in *C#* and *XAML* code:
 
 #### __XAML__
-{{region Orientation_1}}
+{{region xaml-Orientation_0}}
 	<telerik:RadProgressBar Value="35" Height="30" Width="150" Orientation="Horizontal" />
 {{endregion}}
 
 #### __C#__
-{{region Orientation_0}}
+{{region cs-Orientation_1}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal;
 {{endregion}}
 
 #### __VB.NET__
-{{region Orientation_0}}
+{{region vb-Orientation_2}}
 	Dim progressBar As New RadProgressBar()
 	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
-
+{{endregion}}
 
 ![](images/progress_horizontal.jpg)
 
 
 #### __XAML__
-{{region Orientation_3}}
+{{region xaml-Orientation_3}}
 	<telerik:RadProgressBar Value="35" Height="150" Width="30" Orientation="Vertical" />
 {{endregion}}
 
 #### __C#__
-{{region Orientation_2}}
+{{region cs-Orientation_4}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical;
 {{endregion}}
 
 #### __VB.NET__
-{{region Orientation_2}}
+{{region vb-Orientation_5}}
 	Dim progressBar As New RadProgressBar()
 	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
-	
+{{endregion}}	
 
 ![](images/progress_vertical.jpg)
 

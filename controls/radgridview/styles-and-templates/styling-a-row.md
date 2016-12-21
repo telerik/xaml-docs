@@ -18,6 +18,8 @@ In this article we will discuss the following topics:
 
 * [Setting RadGridView's RowStyle and AlternateRowsStyle](#setting-radgridviews-rowstyle-and-alternaterowsstyle)
 
+* [Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector](#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector)
+
 #### __Figure 1: GridViewRow template structure__
 
 ![GridViewRow template structure](images/gridview-row-template.png)
@@ -36,12 +38,12 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all rows of an application__
 
-	{{region gridview-styling-row-1}}
+	{{region xaml-gridview-styling-row-1}}
 	<Style TargetType="telerik:GridViewRow">
-        <Setter Property="Background" Value="Red"/>
-        <Setter Property="Foreground" Value="White"/>
-    </Style>
-	{{endregion}}
+	    <Setter Property="Background" Value="Red"/>
+	    <Setter Property="Foreground" Value="White"/>
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
@@ -53,15 +55,19 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 
-	{{region gridview-styling-row-2}}
+	{{region xaml-gridview-styling-row-2}}
 	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
-						 AlternationCount="2"
-						 AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
-	{{endregion}}
+	AlternationCount="2"
+	AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+{{endregion}}
 
 #### __Figure 2: RadGridView with styled rows__
 
 ![RadGridView with styled cells](images/gridview-styled-row-and-alternaterow.png)
+
+## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
+
+You could also use RadGridView's **RowStyleSelector** and **AlternateRowsStyleSelector** properties to style rows differently based on a specific condition. More details about how this can be achieved can be found in the [RowStyleSelector article]({%slug gridview-rowstyleselector%}).
 
 # See Also
 

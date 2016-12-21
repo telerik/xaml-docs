@@ -12,6 +12,11 @@ position: 9
 
 __RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you work with your __RadDiagram__ and its Items easily and build better MVVM applications.	  
 
+* [RadDiagram Commands](#raddiagram-commands)
+* [ExtensionsCommands](#extensionscommands)
+* [Using Diagram Commands](#using-diagram-commands)
+* [Overriding Commands](#overriding-commands)
+
 ## RadDiagram Commands
 
 The static __DiagramCommands__ class is located in __Telerik.Windows.Controls.Diagrams__ assembly and defines 22 RoutedUICommands:		
@@ -134,7 +139,11 @@ You can customize the functionality of the Delete, Export and Align Commands cur
 
 * __Delete__ - you can pass the item you wish to delete.			  
 
-# See Also
+## Overriding Commands
+
+You can see how to replace the default behavior of a command in the [Override Diagram Command]({%slug raddiagrams-howto-override-command%}) help article.
+
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

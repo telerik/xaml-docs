@@ -20,8 +20,8 @@ There are four __Calendar modes__ that specify what is visible in the Calendar v
 
 #### __XAML__
 
-{{region radcalendar-basics_0}}
-	<telerik:RadCalendar DisplayMode="YearView" />
+{{region xaml-radcalendar-basics_0}}
+	<telerik:RadCalendar DisplayMode="YearView" x:Name="calendar"/>
 {{endregion}}
 
 >The navigation between different __DisplayModes__ depends on the currently set __DisplayDate__. If, for example in the MonthView, the currently shown Month is August, but the SelectedDate is in September, clicking on the header button will navigate to YearView and will highlight August button.
@@ -32,7 +32,7 @@ The __SelectedDate__ property holds the selected date, __null__ means that __no 
 
 #### __C#__
 
-{{region radcalendar-basics_1}}
+{{region cs-radcalendar-basics_1}}
 	calendar.SelectedDate = DateTime.Today.AddDays(1);
 {{endregion}}
 
@@ -44,7 +44,7 @@ The following example selects all the work days (Monday to Friday) of the curren
 
 #### __C#__
 
-{{region radcalendar-basics_2}}
+{{region cs-radcalendar-basics_2}}
 	//Make sure that more than one date can be selected:
 	calendar.SelectionMode = SelectionMode.Extended;
 	//Which month is it today?

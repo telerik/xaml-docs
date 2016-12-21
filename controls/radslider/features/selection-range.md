@@ -19,9 +19,9 @@ __RadSlider__ supports the functionality of having two thumbs, thus enabling ran
 
 #### __XAML__
 
-{{region radslider-selection-range_0}}
+{{region xaml-radslider-selection-range_0}}
 	<telerik:RadSlider x:Name="slider" IsSelectionRangeEnabled="True" />
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_default_range.png)
 
@@ -34,9 +34,9 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 
 #### __XAML__
 
-{{region radslider-selection-range_1}}
-	<telerik:RadSlider x:Name="slider" IsSelectionRangeEnabled="True" SelectionStart="0.2" SelectionEnd="0.4" />
-	{{endregion}}
+{{region xaml-radslider-selection-range_1}}
+	<telerik:RadSlider IsSelectionRangeEnabled="True" SelectionStart="0.2" SelectionEnd="0.4" />
+{{endregion}}
 
 
 
@@ -45,17 +45,17 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 
 #### __C#__
 
-{{region radslider-selection-range_2}}
-	slider.Selection = new SelectionRange<double>(0.2,0.4);
-	{{endregion}}
+{{region cs-radslider-selection-range_2}}
+	slider.Selection = new SelectionRange<double>(0.2, 0.4);
+{{endregion}}
 
 
 
 #### __VB.NET__
 
-{{region radslider-selection-range_3}}
+{{region vb-radslider-selection-range_3}}
 	slider.Selection = New SelectionRange(Of Double)(0.2, 0.4)
-	{{endregion}}
+{{endregion}}
 
 ![](images/radslider_features_custom_range.png)
 

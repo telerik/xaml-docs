@@ -22,10 +22,10 @@ Firstly, you need to create a DayButtonTemplateSelector class that inherits the 
 
 #### __C#__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-1}}
+{{region cs-radcalendarstyling-and-appearance-daytemplateselector-1}}
 	public class DayButtonTemplateSelector : DataTemplateSelector
 	{
-			
+	
 	}
 {{endregion}}
 
@@ -33,91 +33,92 @@ Next we need to define the needed DataTemplates and override the __SelectTemplat
 
 #### __C#__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-2}}
-	public DataTemplate DefaultTemplate { get; set; }
-	public DataTemplate BookedDayTemplate { get; set; }
-	public DataTemplate SpecialHolidayTemplate { get; set; }
-	
-	public List<DateTime> BookedDays { get; set; }
-    public List<DateTime> SpecialHolidays { get; set; }
-	
-	public override DataTemplate SelectTemplate(object item, DependencyObject container)
-	{
-		var calendarButton = item as CalendarButtonContent;
-		var currDate = calendarButton.Date;
-		if (calendarButton.ButtonType == CalendarButtonType.Date)
-		{
-			if (this.BookedDays.Any(a => a.Date.Day == currDate.Day))
-			{
-				return this.BookedDayTemplate;
-			}
-
-			if (this.SpecialHolidays.Any(a => a.Date.Day == currDate.Day))
-			{
-				return this.SpecialHolidayTemplate;
-			}
-		}
-
-		return this.DefaultTemplate;
-	}
-{{endregion}}
+{{region cs-radcalendarstyling-and-appearance-daytemplateselector-2}}
+					
+			public DataTemplate DefaultTemplate { get; set; }
+			public DataTemplate BookedDayTemplate { get; set; }
+			public DataTemplate SpecialHolidayTemplate { get; set; }
+			
+			      public List<DateTime> BookedDays { get; set; }
+			      public List<DateTime> SpecialHolidays { get; set; }
+			
+			      public override DataTemplate SelectTemplate(object item, DependencyObject container)
+			      {
+			          var calendarButton = item as CalendarButtonContent;
+			          var currDate = calendarButton.Date;
+			          if (calendarButton.ButtonType == CalendarButtonType.Date)
+			          {
+			              if (this.BookedDays.Any(a => a.Date.Day == currDate.Day))
+			              {
+			                  return this.BookedDayTemplate;
+			              }
+			
+			              if (this.SpecialHolidays.Any(a => a.Date.Day == currDate.Day))
+			              {
+			                  return this.SpecialHolidayTemplate;
+			              }
+			          }
+			
+			          return this.DefaultTemplate;
+			      }
+	{{endregion}}
 
 As a next step you need to create a StaticResource in XAML for the DayButtonTemplateSelector and the Templates that contains:
 
 #### __XAML__
 
-{{region radcalendarstyling-and-appearance-daytemplateselector-1}}
+{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-1}}
 	<local:DayButtonTemplateSelector x:Key="DayButtonTemplateSelector">
-		<local:DayButtonTemplateSelector.DefaultTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding Text}" />
-			</DataTemplate>
-		</local:DayButtonTemplateSelector.DefaultTemplate>
-		<local:DayButtonTemplateSelector.BookedDayTemplate>
-			<DataTemplate>
-				<Grid>
-					<Path Data="M3.9,1.9 L3.9,4.9 L5.9,4.9 L5.9,1.9 z M4.9,0 C6.5,0 7.9,1.3 7.9,2.9 L7.9,4.9 L10,4.9 L10,12 L0,12 L0,4.9 L1.9,4.9 L1.9,2.9 C1.9,1.3 3.2,0 4.9,0 z" 
-						  Fill="LightSalmon"
-						  Height="28" 
-						  Stretch="Fill" 
-						  UseLayoutRounding="False"
-						  Width="32"
-						  Opacity="0.4"/>
-					<TextBlock Text="{Binding Text}" 
-							   Margin="0 6 0 0"
-							   Foreground="Black" 
-							   FontWeight="Bold" 
-							   HorizontalAlignment="Center" 
-							   VerticalAlignment="Center"/>
-				</Grid>
-			</DataTemplate>
-		</local:DayButtonTemplateSelector.BookedDayTemplate>
-		<local:DayButtonTemplateSelector.SpecialHolidayTemplate>
-			<DataTemplate>
-				<Grid>
-					<Path Data="M11.5,0 L14.2,8.3 L23.0,8.3 L16,13.5 L18.6,22 L11.5,16.7 L4.4,22 L7.1,13.5 L0,8.3 L8.7,8.3 z" 
-						  Fill="#FF25A0DA" 
-						  Height="34"
-						  Stretch="Fill"
-						  UseLayoutRounding="False"
-						  Width="34"
-						  Opacity="0.4"/>
-					<TextBlock Text="{Binding Text}" 
-							   Margin="0 5 0 0"
-							   Foreground="Black"
-							   FontWeight="Bold" 
-							   HorizontalAlignment="Center"
-							   VerticalAlignment="Center"/>
-				</Grid>
-			</DataTemplate>
-		</local:DayButtonTemplateSelector.SpecialHolidayTemplate>
+	    <local:DayButtonTemplateSelector.DefaultTemplate>
+	        <DataTemplate>
+	            <TextBlock Text="{Binding Text}" />
+	        </DataTemplate>
+	    </local:DayButtonTemplateSelector.DefaultTemplate>
+	    <local:DayButtonTemplateSelector.BookedDayTemplate>
+	        <DataTemplate>
+	            <Grid>
+	                <Path Data="M3.9,1.9 L3.9,4.9 L5.9,4.9 L5.9,1.9 z M4.9,0 C6.5,0 7.9,1.3 7.9,2.9 L7.9,4.9 L10,4.9 L10,12 L0,12 L0,4.9 L1.9,4.9 L1.9,2.9 C1.9,1.3 3.2,0 4.9,0 z" 
+	              Fill="LightSalmon"
+	              Height="28" 
+	              Stretch="Fill" 
+	              UseLayoutRounding="False"
+	              Width="32"
+	              Opacity="0.4"/>
+	                <TextBlock Text="{Binding Text}" 
+	                   Margin="0 6 0 0"
+	                   Foreground="Black" 
+	                   FontWeight="Bold" 
+	                   HorizontalAlignment="Center" 
+	                   VerticalAlignment="Center"/>
+	            </Grid>
+	        </DataTemplate>
+	    </local:DayButtonTemplateSelector.BookedDayTemplate>
+	    <local:DayButtonTemplateSelector.SpecialHolidayTemplate>
+	        <DataTemplate>
+	            <Grid>
+	                <Path Data="M11.5,0 L14.2,8.3 L23.0,8.3 L16,13.5 L18.6,22 L11.5,16.7 L4.4,22 L7.1,13.5 L0,8.3 L8.7,8.3 z" 
+	              Fill="#FF25A0DA" 
+	              Height="34"
+	              Stretch="Fill"
+	              UseLayoutRounding="False"
+	              Width="34"
+	              Opacity="0.4"/>
+	                <TextBlock Text="{Binding Text}" 
+	                   Margin="0 5 0 0"
+	                   Foreground="Black"
+	                   FontWeight="Bold" 
+	                   HorizontalAlignment="Center"
+	                   VerticalAlignment="Center"/>
+	            </Grid>
+	        </DataTemplate>
+	    </local:DayButtonTemplateSelector.SpecialHolidayTemplate>
 	</local:DayButtonTemplateSelector>
 {{endregion}}
 
 The last step is to set the __DayTemplateSelector__ property of the control:
 
 #### __XAML__
-{{region radcalendarstyling-and-appearance-daytemplateselector-2}}
+{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-2}}
 	<telerik:RadCalendar DayTemplateSelector="{StaticResource DayButtonTemplateSelector}" />
 {{endregion}}
 

@@ -59,7 +59,6 @@ In the example above Entity Framework is used. However, you may use Linq to SQL,
 
 In order to utilize the VirtualQueryableCollectionView class, you may take the following approach (the example below demonstrates the case when utilizing WCF RIA Services):
 
-
 #### __[C#]Example 1: Using data virtualization with WCF RIA Services__
 
 {{region cs-GridView-Populating-DataVirtualization_3}}
@@ -83,7 +82,6 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 {{endregion}}
 
 {% endif %}
-
 
 #### __[XAML]Example 2: Binding RadGridView__
 

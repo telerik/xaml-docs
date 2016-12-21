@@ -21,13 +21,13 @@ The following topic explains the specifics of the theme's color variations and t
 The following are the supported color variations of the Office2013 theme
 
 * __White__: White color theme palette. This is also the default variation of the theme.
-![Common Styling Appearance Office 2013 Theme 01](images/Common_Styling_Appearance_Office2013_Theme_01.png)
+![Common Styling Appearance Office 2013 Theme 01](../images/Common_Styling_Appearance_Office2013_Theme_01.png)
 
 * __LightGray__: Light gray theme palette.
-![Common Styling Appearance Office 2013 Theme 02](images/Common_Styling_Appearance_Office2013_Theme_02.png)
+![Common Styling Appearance Office 2013 Theme 02](../images/Common_Styling_Appearance_Office2013_Theme_02.png)
 
 * __DarkGray__: Dark gray theme palette.
-![Common Styling Appearance Office 2013 Theme 03](images/Common_Styling_Appearance_Office2013_Theme_03.png)
+![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_03.png)
 
 This is how the __ColorVariation__ looks:        
 
@@ -169,7 +169,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 
 This will be the final result:
 
-![Common Styling Appearance Office 2013 Theme 03](images/Common_Styling_Appearance_Office2013_Theme_04.png)
+![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_04.png)
 
 # See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

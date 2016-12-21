@@ -10,17 +10,17 @@ position: 0
 
 # Setting a Theme
 
-**Setting a theme** is the preferred way of styling the controls that come with the **Telerik UI for WPF** suite. Apart from the default **Office_Black**, you have the option to choose from variety of other themes to achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find useful to familiarize with the [Themes concept](#what-is-a-theme) and their [distribution](#themes-distribution).
+**Setting a theme** is the preferred way of styling the controls that come with the **Telerik UI for WPF** suite. Apart from the default **Office_Black**, you have the option to choose from variety of other themes to achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes concept](#what-is-a-theme) and their [distribution](#where-can-the-theme-be-found).
 
-## What is a theme?
+The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and **Blend** support is improved. 
 
-A theme contains all styles and resources needed for the visualization of the Telerik controls. Each theme consists of multiple **XAML** files. The files names are similar to the binary files that you need to reference in your application. With this in mind, for each binary reference in your application, you need to merge the respective XAML file in the application's resource dictionaries. You can think of a certain theme as a collection of compliant Styles which are implicitly applied to the controls. 
+## What is a Theme?
 
-## Does it affect all WPF Controls?
+A theme contains all the styles and resources needed for the visualization of the **Telerik** controls. Each theme consists of multiple **XAML** files. You can think of each separate file as a collection of compliant styles which are needed for the visualisation of a certain control. As most of the custom controls are quite complex and contain within themselves other custom controls, often you will need the resource of several files. 
 
-Алл Themes are specifically designed to style **Telerik** controls. However, there are some **native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+To apply a theme, you need to merge these files into the Merged Dictionaries of your application. As you most probably will be using just a subset of the available controls, you can merge only several files which are needed for the specific controls. This leads to a smaller assembly size and an easy-to-customize experience.  
 
-## Where can each theme's resources be found?
+## Where can a Theme be found?
 
 After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite, you will find the following structure in the installation folder (usually C://Program Files/Telerik/ UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} [version]/)
     
@@ -31,12 +31,18 @@ After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverligh
 
 * __Themes.Implicit__: The XAML code for all the controls.
 
+As its name suggests, all resources are located in the **Themes.Implicit** folder. Eventually, you will find out that there is a separate folder for each available theme.   
+
+## Does a Theme affect all WPF Controls?
+
+All Themes are specifically designed to style **Telerik** controls. However, there are some **native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+
+
 ## Applying a Theme for Your Application
 
 Now that you have an idea of the concepts behind the theming mechanism, it is time to set up your project so that it is correctly applied. 
 
-There are two main approaches which you can choose:
-
+There are two main approaches from which you can choose:
 
 * [Reference the **theme DLL**](#reference-the-theme-dll) which includes *all XAML files* for the respective theme and merge only the needed **XAML** files in the **MergedDictionaries** of your application.
 
@@ -46,13 +52,13 @@ The approaches are shown in details below:
 
 ### Reference the Theme DLL
 
- All XAML files are included in a separate __Theme DLL__ located in the **Binaries.NoXaml** folder (Telerik.Windows.Themes.Expression_Dark.dll, Telerik.Windows.Themes.Windows8.dll, etc.). So instead of copying all the XAML files in your project(as in Figure 2), you can just merge them directly from the theme assembly. For example, if you are using the **Office_Black** theme, you should add a reference to the **Telerik.Windows.Themes.Office_Black.dll** and then merge the needed .xaml files as shown in **Figure 3** and **Example 3** .
+ All XAML files are included in a separate __Theme DLL__ located in the **Binaries.NoXaml** folder (Telerik.Windows.Themes.Expression_Dark.dll, Telerik.Windows.Themes.Windows8.dll, etc.). So instead of copying all the XAML files in your project(as shown in the second approach), you can just merge them directly from the theme assembly. For example, if you are using the **Office_Black** theme, you should add a reference to the **Telerik.Windows.Themes.Office_Black.dll** and then merge the needed .xaml files as shown in **Figure 1** and **Example 1** .
 
-#### __Figure 3: Add reference to the theme binary file:__
+#### __Figure 1: Add reference to the theme binary file:__
 
-![implicit styles 3](images/implicit-styles-theme-dll.PNG)
+![implicit styles 1](images/implicit-styles-theme-dll.PNG)
 
-#### __[XAML] Example 2: After you add a reference, you should merge the needed .xaml files__
+#### __[XAML] Example 1: After you add a reference, you should merge the needed .xaml files__
 
 	 <Application.Resources>
 			<ResourceDictionary>
@@ -66,22 +72,22 @@ The approaches are shown in details below:
 	    	</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>	
 	 </Application.Resources>
-
+ 
 ### Copy the XAML files in a dedicated folder in your application
 
-The default styles and resources for each theme are shipped in the **Themes.Implicit** folder. In order to apply a certain theme for your application you need to merge all the required **XAML** files from the respective theme's folder(depends on the set of controls you are using) in the application's **MergedDictionaries**. You should merge all **XAML** files corresponding to each assembly reference you have in your project, as shown in **Example 1** and **Figure 1 and 2**. 
+As already advised, the default styles and resources for each theme are shipped in the **Themes.Implicit** folder. In order to apply a certain theme for your application you need to merge all the required **XAML** files from the respective theme's folder(depends on the set of controls you are using) in the application's **MergedDictionaries**. You should merge all **XAML** files corresponding to each assembly reference you have in your project, as shown in **Example 1** and **Figure 1 and 2**. 
 
-#### __Figure 1: The binary references in your application:__
+#### __Figure 2: The binary references in your application:__
 
 ![implicit styles 3](images/implicit-styles-references.png)
 
 >important The references should point to the binary files from the __Binaries.NoXAML__ folder.
 
-#### __Figure 2: Copy the needed XAML files in a separate folder in your application:__
+#### __Figure 3: Copy the needed XAML files in a separate folder in your application:__
 
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
-#### __[XAML] Example 1: The MergedDictionaries in your application resources:__
+#### __[XAML] Example 2: The MergedDictionaries in your application resources:__
 
 	<Application.Resources>
         <ResourceDictionary>
@@ -101,3 +107,10 @@ The default styles and resources for each theme are shipped in the **Themes.Impl
 
 >tip You should not set Application Theme using the __StyleManager__ when using implicit styles. 
 
+## See Also
+
+* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
+
+* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+
+* [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})

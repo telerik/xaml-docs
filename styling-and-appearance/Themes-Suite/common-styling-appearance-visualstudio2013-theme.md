@@ -21,7 +21,7 @@ The following topic explains the specifics of the theme's color variations.
 There are three palettes of colors which can be easily set by choosing one of the three default color variations:
 
 The next screenshot display RadCalendar in the three color variations:
-![Common Styling Appearance VS 2013 Theme 02](images/Common_Styling_Appearance_VS2013_Theme_02.png)
+![Common Styling Appearance VS 2013 Theme 02](../images/Common_Styling_Appearance_VS2013_Theme_02.png)
 
 ## Theme Variation Changing
 
@@ -102,7 +102,7 @@ Additional brush is introduced rarely used for elements in Disabled state:
 * __ComplementaryBrush__
 
 The following screenshot shows the usage of some of the brushes:
-![Common Styling Appearance VS 2013 Theme 01](images/Common_Styling_Appearance_VS2013_Theme_01.png)
+![Common Styling Appearance VS 2013 Theme 01](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
 
 ## Changing Fonts
 
@@ -176,7 +176,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 
 This will be the final result:
 
-![Common Styling Appearance VS 2013 Theme](images/Common_Styling_Appearance_VS2013_Theme_03.png)
+![Common Styling Appearance VS 2013 Theme](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
 # See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

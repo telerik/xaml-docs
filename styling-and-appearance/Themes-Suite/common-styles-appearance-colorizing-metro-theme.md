@@ -54,7 +54,7 @@ The most important brush, __AccentColor__, controls the colors of headers and se
 Since the PaletteInstance is a DependencyObject, you can also animate the colors at runtime.
 
 Figure 1: Some of the possible looks you will be able to easily achieve.
-![Common Metro Theme Colors](images/Common_Metro_Theme_Colors.png)
+![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
 
 You can use the following brushes in your application to style your own interface using colors consistent with the __Windows8__ theme:
         
@@ -149,7 +149,7 @@ __Example 2__ shows how to use the resources to achieve the style of the buttons
 	{{endregion}}
 
 Figure 2 shows the result of styling your own interface (Example 2).
-![Common Windows 8 Colors 01](images/Common_Windows8_Colors_01.png)
+![Common Windows 8 Colors 01](../images/Common_Windows8_Colors_01.png)
 
 ## Changing Fonts
 
@@ -239,7 +239,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 __Figure 3__ shows a comparison of the application before and after the button is clicked.
         
 Figure 3: You can click a button to change FontSize.
-![Common Windows 8 Font Change 01](images/Common_Windows8_FontChange_01.png)
+![Common Windows 8 Font Change 01](../images/Common_Windows8_FontChange_01.png)
 
 # See Also
 

@@ -2,7 +2,7 @@
 title: Styling the Controls 
 page_title: What is a Theme
 description: What is a Theme
-slug: styling-apperance-implicit-styles-overview
+slug: implicit-styles-styling-the-controls
 tags: setting,a,theme,(using,,implicit,styles)
 published: True
 position: 1
@@ -16,9 +16,23 @@ Applying a style **explicitly** means that you have set a **Key** for this style
  
 An implicit style does not have a key attribute. It is applied for all controls of a certain type within a given scope. For example, adding the following style in the **App.xaml** file of your application will set the **Background** property for all **RadGridView** control within your application which do not have an explicit style set:
 
+## Basing a Custom Style on a Theme Default Style
 
+When you create a style that targets a specific control, you should base it on the default style that the theme provides. This way you will make sure that all properties, apart from the changed ones, are inherited from the default style.
 
-## How To Apply Custom Style to Controls  
+We have followed a naming convention where the key for every control`s default style consists of **the name of the control followed by a "Style" suffix**. This would mean that the default style applied for the **RadGridView** control is with **x:Key="RadGridViewStyle"**, the default one for the **RadComboBox** with **x:Key="RadComboBoxStyle"**, etc. **Example 3** shows how to create custom styles based on the default one for the **RadComboBox** control:
+
+#### [XAML] Example 3: Custom styles for RadComboBox
+
+	<Style x:Key="CustomStyle" TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
+    	<Setter Property="Foreground" Value="Green" />
+	</Style>
+
+	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
+    	<Setter Property="Foreground" Value="Red" />
+	</Style>
+
+## How To Apply a Custom Style to Controls  
 
 The following example shows how to apply a custom style to a control in an application that uses the **Windows8** Theme. The control used is **RadComboBox** but the approach is identical for all controls and themes.
         

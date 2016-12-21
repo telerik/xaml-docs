@@ -90,7 +90,7 @@ There are two read-only brushes in the Office2016 palette:
 * __IconBrush__: This brush is black by default and it is used for glyphs and paths.
 
 #### __Figure 1: Theme colors__
-![](images/common-styling-appearance-office2016-theme-0.png)	
+![](../images/common-styling-appearance-office2016-theme-0.png)	
 
 ## Changing Fonts
 
@@ -124,7 +124,7 @@ The __Examples 2 and 3__ shows how to change the default FontFamily from "Segoe 
 	}
 
 #### __Figure 2: Setting FontSize and FontFamily__
-![](images/common-styling-appearance-office2016-theme-1.png)	
+![](../images/common-styling-appearance-office2016-theme-1.png)	
 
 ## Glyphs
 
@@ -152,7 +152,7 @@ Since each glyph’s string value is ambiguous and not related to its shape, we 
 			   FontSize=”16” />
 
 #### __Figure 3: Heart glyph__
-![](images/common-styling-appearance-office2016-theme-2.png)	
+![](../images/common-styling-appearance-office2016-theme-2.png)	
 
 > You can read more about the usage of the new glyph's feature and see the available glyphs in [this article]({%slug common-styling-appearance-glyphs-overview%}).
 
@@ -164,7 +164,7 @@ A new feature of the Office2016 theme’s palette is the __FocusThickness__ prop
 	Office2016Palette.Palette.FocusThickness = new Thickness(1);
 	
 #### __Figure 4: Setting the focus border thickness__
-![](images/common-styling-appearance-office2016-theme-3.png)	
+![](../images/common-styling-appearance-office2016-theme-3.png)	
 
 ## Changing CornerRadius
 
@@ -187,7 +187,7 @@ __Example 8__ shows how to change the default corner radius from 0 to 2.
 	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
 
 #### __Figure 5: Setting the corner radius__
-![](images/common-styling-appearance-office2016-theme-4.png)	
+![](../images/common-styling-appearance-office2016-theme-4.png)	
 
 ## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
 
@@ -205,7 +205,7 @@ If you need to change the opacity of disabled elements, you can easily do it via
 	Office2016Palette.Palette.DisabledOpacity = 0.3;
 
 #### __Figure 6: Setting the disabled opacity__
-![](images/common-styling-appearance-office2016-theme-5.png)	
+![](../images/common-styling-appearance-office2016-theme-5.png)	
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

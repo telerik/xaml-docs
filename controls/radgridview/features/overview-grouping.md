@@ -14,7 +14,7 @@ __RadGridView__ provides you with a built-in grouping functionality, which allow
 
 #### **Figure 1: Grouped RadGridView**
 
-![](images/RadGridView_FunctionalOverview_Grouping_1.png)
+![grouped radgridview](images/RadGridView_FunctionalOverview_Grouping_1.png)
 
 You can define grouping either in the XAML or in the code-behind.
 

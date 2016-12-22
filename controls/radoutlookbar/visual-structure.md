@@ -5,7 +5,7 @@ description: Visual Structure
 slug: radoutlookbar-visual-structure
 tags: visual,structure
 published: True
-position: 0
+position: 2
 ---
 
 # Visual Structure

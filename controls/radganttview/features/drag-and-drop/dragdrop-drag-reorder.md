@@ -61,7 +61,7 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 #### __C#__
 
-{{region radganttview-dragdrop-drag-reorder_0}}
+{{region cs-radganttview-dragdrop-drag-reorder_0}}
 	public class CustomGanttTask : GanttTask
 	{
 	    private bool isDragReorderAllowed;
@@ -89,7 +89,7 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 #### __C#__
 
-{{region radganttview-dragdrop-drag-reorder_1}}
+{{region cs-radganttview-dragdrop-drag-reorder_1}}
 	public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 	{
 	    protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -108,10 +108,10 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 #### __XAML__
 
-{{region radganttview-dragdrop-drag-reorder_0}}
+{{region xaml-radganttview-dragdrop-drag-reorder_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="20"
-					VerticalAlignment="Top" 
-					VisibleRange="{Binding VisibleTime}">
+	VerticalAlignment="Top" 
+	VisibleRange="{Binding VisibleTime}">
 	    <telerik:RadGanttView.DragDropBehavior>
 	        <local:CustomGanttDragDropBehavior/>
 	    </telerik:RadGanttView.DragDropBehavior>

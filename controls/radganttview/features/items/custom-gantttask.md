@@ -22,7 +22,7 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_0}}
+	{{region cs-radganttview-features-items-custom-gantttask_0}}
 		public class MyGanttTask : GanttTask
 		{
 		}
@@ -32,10 +32,10 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_1}}
+	{{region cs-radganttview-features-items-custom-gantttask_1}}
 		public class MyGanttTask : GanttTask
 		{
-			public string CustomDescription { get; set; }
+		    public string CustomDescription { get; set; }
 		}
 	{{endregion}}
 
@@ -43,91 +43,91 @@ The next example will demonstrate how to add an additional description property 
 
 	#### __C#__
 
-	{{region radganttview-features-items-custom-gantttask_2}}
+	{{region cs-radganttview-features-items-custom-gantttask_2}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<MyGanttTask> tasks;
+		    private ObservableCollection<MyGanttTask> tasks;
 		
-			private DateRange visibleTime;
+		    private DateRange visibleTime;
 		
-			public ViewModel()
-			{
-				var date = DateTime.Now;
-				var ganttAPI = new MyGanttTask()
-				{
-					Start = date,
-					End = date.AddDays(2),
-					Title = "Design public API",
-					Description = "Description: Design public API",
-					CustomDescription = "Custom Description: Design public API"
-				};
-				var ganttRendering = new MyGanttTask()
-				{
-					Start = date.AddDays(2).AddHours(8),
-					End = date.AddDays(4),
-					Title = "Gantt Rendering",
-					Description = "Description: Gantt Rendering",
-					CustomDescription = "Custom Description: Gantt Rendering"
-				};
-				var ganttDemos = new MyGanttTask()
-				{
-					Start = date.AddDays(4.5),
-					End = date.AddDays(7),
-					Title = "Gantt Demos",
-					Description = "Description: Gantt Demos",
-					CustomDescription = "Custom Description: Gantt Demos"
-				};
-				var milestone = new MyGanttTask()
-				{
-					Start = date.AddDays(7),
-					End = date.AddDays(7).AddHours(1),
-					Title = "Review",
-					Description = "Description: Review",
-					IsMilestone = true,
-					CustomDescription = "Custom Description: Review"
-				};
+		    public ViewModel()
+		    {
+		        var date = DateTime.Now;
+		        var ganttAPI = new MyGanttTask()
+		        {
+		            Start = date,
+		            End = date.AddDays(2),
+		            Title = "Design public API",
+		            Description = "Description: Design public API",
+		            CustomDescription = "Custom Description: Design public API"
+		        };
+		        var ganttRendering = new MyGanttTask()
+		        {
+		            Start = date.AddDays(2).AddHours(8),
+		            End = date.AddDays(4),
+		            Title = "Gantt Rendering",
+		            Description = "Description: Gantt Rendering",
+		            CustomDescription = "Custom Description: Gantt Rendering"
+		        };
+		        var ganttDemos = new MyGanttTask()
+		        {
+		            Start = date.AddDays(4.5),
+		            End = date.AddDays(7),
+		            Title = "Gantt Demos",
+		            Description = "Description: Gantt Demos",
+		            CustomDescription = "Custom Description: Gantt Demos"
+		        };
+		        var milestone = new MyGanttTask()
+		        {
+		            Start = date.AddDays(7),
+		            End = date.AddDays(7).AddHours(1),
+		            Title = "Review",
+		            Description = "Description: Review",
+		            IsMilestone = true,
+		            CustomDescription = "Custom Description: Review"
+		        };
 		
-				ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
-				ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
+		        ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
+		        ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
 		
-				var iterationTask = new MyGanttTask()
-				{
-					Start = date,
-					End = date.AddDays(7),
-					Title = "Iteration 1",
-					Children = { ganttAPI, ganttRendering, ganttDemos, milestone },
-					CustomDescription = "Custom Description: Iteration 1"
-				};
+		        var iterationTask = new MyGanttTask()
+		        {
+		            Start = date,
+		            End = date.AddDays(7),
+		            Title = "Iteration 1",
+		            Children = { ganttAPI, ganttRendering, ganttDemos, milestone },
+		            CustomDescription = "Custom Description: Iteration 1"
+		        };
 		
-				this.tasks = new ObservableCollection<MyGanttTask>() { iterationTask };
-				this.visibleTime = new DateRange(date.AddDays(-1), date.AddDays(9));
-			}
+		        this.tasks = new ObservableCollection<MyGanttTask>() { iterationTask };
+		        this.visibleTime = new DateRange(date.AddDays(-1), date.AddDays(9));
+		    }
 		
-			public ObservableCollection<MyGanttTask> Tasks
-			{
-				get
-				{
-					return tasks;
-				}
-				set
-				{
-					tasks = value;
-					OnPropertyChanged(() => Tasks);
-				}
-			}
+		    public ObservableCollection<MyGanttTask> Tasks
+		    {
+		        get
+		        {
+		            return tasks;
+		        }
+		        set
+		        {
+		            tasks = value;
+		            OnPropertyChanged(() => Tasks);
+		        }
+		    }
 		
-			public DateRange VisibleTime
-			{
-				get { return this.visibleTime; }
-				set
-				{
-					if (this.visibleTime != value)
-					{
-						this.visibleTime = value;
-						this.OnPropertyChanged(() => this.VisibleTime);
-					}
-				}
-			}
+		    public DateRange VisibleTime
+		    {
+		        get { return this.visibleTime; }
+		        set
+		        {
+		            if (this.visibleTime != value)
+		            {
+		                this.visibleTime = value;
+		                this.OnPropertyChanged(() => this.VisibleTime);
+		            }
+		        }
+		    }
 		}
 	{{endregion}}
 
@@ -135,15 +135,15 @@ The xaml of the GanttView control should look like this:
 
 #### __XAML__
 
-{{region radganttview-features-items-custom-gantttask_0}}
+{{region xaml-radganttview-features-items-custom-gantttask_0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="5"
-					VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding CustomDescription}" Header="Custom Description" Width="AutoHeaderAndContent"/>
-		</telerik:RadGanttView.Columns>
+	VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding CustomDescription}" Header="Custom Description" Width="AutoHeaderAndContent"/>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -161,28 +161,28 @@ The next code snippet shows a sample implementation of __IDependant__ interface:
 
 #### __C#__
 
-{{region radganttview-features-items-custom-gantttask_3}}
+{{region cs-radganttview-features-items-custom-gantttask_3}}
 	IEnumerable IDependant.Dependencies
 	{
-		get { return this.Dependencies; }
+	    get { return this.Dependencies; }
 	}
 	
 	public IDependency AddDependency(IGanttTask fromTask, DependencyType type)
 	{
-		if (fromTask != null)
-		{
-			var dependency = new Dependency { FromTask = fromTask, Type = type };
+	    if (fromTask != null)
+	    {
+	        var dependency = new Dependency { FromTask = fromTask, Type = type };
 	
-			this.Dependencies.Add(dependency);
-			return dependency;
-		}
+	        this.Dependencies.Add(dependency);
+	        return dependency;
+	    }
 	
-		return null;
+	    return null;
 	}
 	
 	public bool RemoveDependency(IDependency dependency)
 	{
-		return false;
+	    return false;
 	}
 {{endregion}}
 

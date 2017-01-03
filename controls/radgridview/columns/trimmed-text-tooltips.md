@@ -40,6 +40,7 @@ Setting the ShowToolTipOnTrimmedText of a column will show tooltips for trimmed 
 >* If you've specified [custom cell templates]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) for your columns, no tooltips will be displayed unless you **explicitly define them**.
 >* Tooltips will be displayed in RadGridView's **footer** row only if the content of the footer is either a **string** or a **TextBlock**.
 >* You should set **IsLightweightModeEnabled** for your [GridViewComboBoxColumns]({%slug radgridview-columns-column-types-combobox-column%}) in order to benefit from the tooltip functionality.
+>* Tooltips for [merged cells]({%slug gridview-merged-cells%}) are not supported.
 
 ## See Also
 

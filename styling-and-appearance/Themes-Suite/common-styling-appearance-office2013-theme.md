@@ -5,7 +5,7 @@ description: Office2013 Theme
 slug: common-styling-appearance-office2013-theme
 tags: office2013,theme,dynamic,fontsize,fontfamily
 published: True
-position: 7
+position: 6
 ---
 
 # Office2013 Theme

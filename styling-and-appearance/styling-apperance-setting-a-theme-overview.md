@@ -35,7 +35,7 @@ As its name suggests, all resources are located in the **Themes.Implicit** folde
 
 ## Does a Theme affect all WPF Controls?
 
-All Themes are specifically designed to style **Telerik** controls. However, there are some **native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
 
 
 ## Applying a Theme for Your Application

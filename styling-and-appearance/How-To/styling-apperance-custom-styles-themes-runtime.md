@@ -5,7 +5,7 @@ description: Switching Custom Styles with Themes at Runtime
 slug: styling-apperance-custom-styles-themes-runtime
 tags: switching,custom,styles,with,themes,at,runtime
 published: True
-position: 3
+position: 10
 ---
 
 # Switching Custom Styles with Themes at Runtime

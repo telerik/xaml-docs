@@ -10,7 +10,9 @@ position: 16
 
 # Search as You Type
 
-* [Showing the Search Panel](#enabling-the-search-panel)
+* [Showing the Search Panel](#showing-the-search-panel)
+
+* [Disabling the 'Search as You Type' functionality](#disable-showing-the-search-panel)
 
 * [Deferred Searching](#deferred-searching)
 
@@ -24,10 +26,11 @@ position: 16
 
 * [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
 
-As of __R1 2016 RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
+## Showing the Search Panel
 
+As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
-#### __[XAML] Example 1: Enabling the Search Panel__
+#### __[XAML] Example 1: Showing the Search Panel__
 
 	<telerik:RadGridView ItemsSource="{Binding Orders}"     
 							 ShowSearchPanel="True"
@@ -39,13 +42,25 @@ __Figure 1__: Showing the Search Panel
 
 ![Showing the Search Panel](images/gridview-textsearch-showsearchpanel.png)
 
+## Disable showing the Search Panel
+
+You can control whether the users can use the **Search Panel** through the **CanUserSearch** boolean property of  **RadGridView**. Its default value is **true**. Setting it to **false** would permanently disable the functionality, meaning that the **Ctrl + F** combination would not show the panel as well.   
+
+#### __[XAML] Example 2: Disabling the Search Panel__
+
+	<telerik:RadGridView ItemsSource="{Binding Orders}"     
+							 CanUserSearch="False"
+                             Name="orderItemsDataGrid" Margin="5" 
+							 AutoGenerateColumns="False" 
+							 ColumnWidth="*"/>
+
 ## Deferred Searching
 
 The deferred searching functionality can be controlled through the __IsSearchingDeferred__ property. Its default value is __False__ and it determines whether the filtering through the search text box will be performed dynamically. 
 
 When __IsSearchingDeferred__ is set to __True__, the filtering will be executed when the value is being committed on __lost focus__ or when the __Enter__ or __Tab__ key is pressed. 
 
-#### __[XAML] Example 2: Setting the IsSearchingDeferred to True__
+#### __[XAML] Example 3: Setting the IsSearchingDeferred to True__
 
 	<telerik:RadGridView ItemsSource="{Binding Orders}"
 					 IsSearchingDeferred="True"
@@ -68,7 +83,7 @@ As of **R2 2016**, the **SearchPanelVisibilityChanged** event will be raised on 
 
 A common scenario where you can use this event is when you want to clear the search criteria on collapsing the panel:
 
-#### __[C#] Example 3: Clearing search criteria on SearchPanelVisibilityChanged__
+#### __[C#] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 
 	public MainWindow()
     {
@@ -85,7 +100,7 @@ A common scenario where you can use this event is when you want to clear the sea
         }
     }
 
-#### __[VB.NET] Example 3: Clearing search criteria on SearchPanelVisibilityChanged__
+#### __[VB.NET] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 
 	Public Sub New()
 		InitializeComponent()

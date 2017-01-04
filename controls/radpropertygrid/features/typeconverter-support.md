@@ -10,10 +10,7 @@ position: 20
 
 # TypeConverter Support
 
-
 In certain cases, __RadPropertyGrid__ is used for displaying and editing properties of custom data type. By default, in such scenarios the control will display the custom type as a string. RadPropertyGrid provides __TypeConverter__ support, meaning that this behavior can be modified by defining a custom __TypeConverter__. The main methods that are usually utilized when implementing a custom __TypeConverter__ are listed below.
-
-
 
 * Override the __CanConvertFrom__ method that specifies which type the converter can convert from.
 
@@ -24,22 +21,21 @@ In certain cases, __RadPropertyGrid__ is used for displaying and editing propert
 * Override the __ConvertTo__ method that implements the conversion.
 
 
-> More information on implementing a TypeConverter can be found in MSDN: [How to: Implement a Type Converter](https://msdn.microsoft.com/en-us/library/ayybcxe5.aspx).
+> More information on implementing a **TypeConverter** can be found in MSDN: [How to: Implement a Type Converter](https://msdn.microsoft.com/en-us/library/ayybcxe5.aspx).
 
+* [Defining the Business Object](#defining-the-business-object)
 
-* [Defining the Business Objects](#defining-the-business-objects)
-
-* [Display a predefined list of values for a property with TypeConverter](#display-a-predefined-list-of-values-for-a-property-with-typeconverter)
+* [Display a Predefined List of Values for a Property with TypeConverter](#display-a-predefined-list-of-values-for-a-property-with-typeconverter)
 
 * [Culture-aware TypeConverter](#culture-aware-typeconverter)
 
-## Defining the business object 
+## Defining the Business Object 
 
 Demonstrating the __TypeConverter__ mechanism in the scope of RadPropertyGrid will require an object which has a property of custom data type. This section will cover the process of defining them.
 
 The example will use a __Club__ object which has a __Captain__ property of type __Player__.
 
-#### __[C#] Example 1: Defining the business objects__
+#### __[C#] Example 1: Defining the business object__
 
 {{region cs-radpropertygrid-typeconverter-support_0}}
 	 public class Club 
@@ -124,7 +120,7 @@ The example will use a __Club__ object which has a __Captain__ property of type 
 	 }
 {{endregion}}
 
-#### __[VB.NET] Example 1: Defining the business objects__
+#### __[VB.NET] Example 1: Defining the business object__
 
 {{region vb-radpropertygrid-typeconverter-support_0}}
 	Public Class Club
@@ -201,7 +197,7 @@ The example will use a __Club__ object which has a __Captain__ property of type 
 {{endregion}}
 
 
-## Display a predefined list of values for a property with TypeConverter
+## Display a Predefined List of Values for a Property with TypeConverter
 
 As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides support for a standard set of values that can be picked from a predefined list. This can be done through overriding the __GetStandardValuesSupported__ method.
 
@@ -255,11 +251,11 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 
 ![](images/RadPropertyGrid_TypeConverter_Predefined_List.png)
 
-## Culture aware TypeConverter
+## Culture-aware TypeConverter
 
 In this section, the definition of a culture aware TypeConverter will be demonstrated. The support for it is added as of __R1 2017__. For this purpose, the __Height__ property of the __Player__ object  will be used.
 
-#### __[C#] Defining a culture aware TypeConverter__
+#### __[C#] Example 3: Defining a culture aware TypeConverter__
 
 {{region cs-radpropertygrid-typeconverter-support_3}}
 	 public class PlayerTypeConverter1 : TypeConverter
@@ -335,7 +331,7 @@ In this section, the definition of a culture aware TypeConverter will be demonst
 {{endregion}}
 
 
-#### __[VB.NET] Example 3: Defining a culture aware TypeConverter__
+#### __[VB.NET] Example 3: Defining a culture-aware TypeConverter__
 
 {{region vb-radpropertygrid-typeconverter-support_3}}
 	Public Class PlayerTypeConverter1
@@ -396,9 +392,9 @@ In this section, the definition of a culture aware TypeConverter will be demonst
 	End Class
 {{endregion}}
 
-#### __Figure 2: Culture aware TypeConverter__
+#### __Figure 2: Culture-aware TypeConverter__
 
-![](images/RadPropertyGrid_TypeConverter_Culture01.png) ![](images/RadPropertyGrid_TypeConverter_Culture02.png)
+![culture-aware typeconverter](images/RadPropertyGrid_TypeConverter_Culture01.png) ![culture-aware typeconverter](images/RadPropertyGrid_TypeConverter_Culture02.png)
 
 ## See also
 

@@ -14,7 +14,7 @@ The __RadMap__ control has a built-in export to image support.
 
 ## Export RadMap to Image
 
-To save the map control as an image you can use its __ExportToImage()__ method. The method has two overloads. One that allows you to export directly to the file system by only passing a file path. And another one for exporting the image to a stream.
+To save the map control as an image you can use its __ExportToImage()__ method. The method has two overloads. One that allows you to export directly to the file system by only passing a file path аnd another one for exporting the image to a stream.
 
 #### __[C#] Example 1: Save the image using a string path__
 {{region cs-radmap-features-export-0}}
@@ -31,7 +31,7 @@ To save the map control as an image you can use its __ExportToImage()__ method. 
 
 >important Only the current viewport of the map will be exported. Also, the navigation controls won't be included in the saved image.
 
-By default the objects defined in the map layers (VisualizatioLayer or InformationLayer) like map objects and FrameworkElements won't be exported. In order to export them you will need to set the first optional parameter (__includeMapObjects__) of the ExportToImage() method to __True__
+By default the objects defined in the map layers (VisualizatioLayer or InformationLayer) like map objects and FrameworkElements won't be exported. In order to export them you will need to set the first optional parameter (__includeMapObjects__) of the ExportToImage() method to __True__.
 
 #### __[C#] Example 3: Save map objects__
 {{region cs-radmap-features-export-2}}

@@ -424,6 +424,15 @@ navigation:
         title: RadLegend
     controls/radmap:
         title: RadMap
+    controls/radmap/features/visualization-layer:
+        title: Visualization Layer
+        position: 100
+    controls/radmap/features/providers:
+        title: Providers
+        position: 101
+    controls/radmap/features/information-layer:
+        title: Information Layer
+        position: 102
     controls/radmaskedinput:
         title: RadMaskedInput
     controls/radmediaplayer:

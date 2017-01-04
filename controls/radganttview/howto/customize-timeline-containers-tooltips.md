@@ -65,7 +65,7 @@ You should then set this template for each of the containers as demonstrated in 
     </Style>
 {{endregion}}
 
->If you're using [implicit styles]({%slug styling-apperance-implicit-styles-overview%}), you should base the styles on **EventContainerStyle**, **SummaryContainerStyle** and **MilestoneContainerStyle** respectively.
+>If you're using [Implicit styles]({%slug styling-apperance-implicit-styles-overview%}), you should base the styles on **EventContainerStyle**, **SummaryContainerStyle** and **MilestoneContainerStyle** respectively.
 
 **Figure 4** shows the appearance of the final custom tooltips.
 

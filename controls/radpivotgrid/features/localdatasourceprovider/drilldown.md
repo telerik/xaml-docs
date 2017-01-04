@@ -10,7 +10,7 @@ position: 10
 
 # Drill Down
 
-As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** method that allows you to drill into your PivotGrid hierarchy to analyze data details on different levels. The GetUnderlyingData method takes two parameters: **Row Group** and **Column Group**.
+As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** method that allows you to extract the records from your ItemsSource that were used for accumulating the result for a particular row and column. The GetUnderlyingData method takes two parameters: **Row Group** and **Column Group**.
 
 #### __[XAML] Example 1: Calling GetUnderlyingData on Cell Double-Click__
 

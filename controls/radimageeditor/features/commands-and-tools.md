@@ -10,10 +10,6 @@ position: 0
 
 # Commands and Tools
 
-
-
-## 
-
 The operations that __RadImageEditor__ can execute on images form two categories – Commands and Tools. With commands, you can only specify the action (e.g. Crop, Rotate) and execute it. The change is applied to the image and gets registered in the Undo/Redo history. As for tools, they offer something more – a live preview of the operation using some parameters before committing it. At the end, when you confirm the action, they create an instance of a command and a context and only then does it get registered in the history stack.
         
 
@@ -44,8 +40,7 @@ Available __Commands__:
 
 * DrawCommand
 
-Available __Tools__:
-        
+Available __Tools__:        
 
 * CropTool
 
@@ -73,6 +68,7 @@ Available __Tools__:
 
 * [ShapeTool]({%slug radimageeditor-tools-shape-tool%})
 
+* [PanTool]({%slug radimageeditor-tools-panning%})
 
 >tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.<br/> __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__
 

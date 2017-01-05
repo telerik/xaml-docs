@@ -10,6 +10,11 @@ position: 0
 
 # Overview
 
+{% if site.site_name == 'Silverlight' %}![](images/radbarcode-overview-sl-0.png){% endif %}
+{% if site.site_name == 'WPF' %}![](images/radbarcode-overview-wpf-0.png){% endif %}
+
+__RadBarcode__ is a set of components that can be used to create, show and read barcodes. You can generate and visualize barcodes in a machine-readable format via the RadBarcode controls by providing numeric or character data. Additionally, you can read barcodes using the RadBarcodeReader component.
+
 ## RadBarcodeSymbology Specifications
 |BarCode	|Description|
 |-----------|-----------|
@@ -23,13 +28,13 @@ position: 0
 |UPC A	    |Used with consumer products in U.S., 12 characters|
 |UPC E	    |Short version of UPC symbol, 6 characters|
 
-Additional information on Code128
+__Additional information on Code128__
 
 1. Code128A, Code128B and Code128C represent the A, B and C subsets of the Code128 symbology. Code128 uses an intelligent algorithm that picks automatically the appropriate subset according to the input value, and might switch between these subsets in the middle of a BarCode in order to produce a shorter generated sequence. For example, if you have the input string “ABCD1234”, the “ABCD” part of the string will be encoded using the A subset, while the “1234” part will be encoded with the C subset, because Code128C uses a double-density code for numerical values, thus producing a shorter BarCode as a result. If you want to disable this behavior you can specify explicitly one of the subsets: Code128A, Code128B or Code128C to the Symbology property of the BarCode report item.
 
-1. Code128 can represent both ASCII characters and non-ASCII control characters. Normally the BarCode report item inserts automatically the appropriate control characters in order to conform to the Code128 specification. However certain applications might require manual insertion of certain control characters, such as the functional characters: FNC1-FNC4. For this purpose the BarCode report item assigns special Unicode values to these control characters outside the normal 0-127 ASCII code range. The following table lists all Code128 control characters and their corresponding Unicode values:
+2. Code128 can represent both ASCII characters and non-ASCII control characters. Normally the BarCode report item inserts automatically the appropriate control characters in order to conform to the Code128 specification. However certain applications might require manual insertion of certain control characters, such as the functional characters: FNC1-FNC4. For this purpose the BarCode report item assigns special Unicode values to these control characters outside the normal 0-127 ASCII code range. The following table lists all Code128 control characters and their corresponding Unicode values:
 
-Code 128 Control Characters
+__Code 128 Control Characters__
 
 |Control Character|Hexadecimal|Decimal|
 |-----------------|-----------|-------|
@@ -46,8 +51,7 @@ Code 128 Control Characters
 |Start C|FE|254|
 |Stop|FF|255|
 
-
-Additional information on EAN128
+__Additional information on EAN128__
 
 EAN128 is a special case of Code128. The only difference between EAN128 and Code 128 is that EAN128 inserts the FNC1 control character at the beginning of the BarCode in order to conform to the EAN128 specification. If you have a multi-part EAN128 BarCode which requires the FNC1 control character as a delimiter between the different parts, you should insert it manually:
 
@@ -56,9 +60,6 @@ EAN128 is a special case of Code128. The only difference between EAN128 and Code
 The QRCode represents a square matrix, filled with black and white modules. There are four modes available in the control, namely:
 
 * __Numeric data__ (digits __0 - 9__)
-
 * __Alphanumeric data__ (digits __0 - 9__; upper case letters __A-Z__; nine other characters: __space, $ % * + - . / :__ )
-
 * __8-bit byte data__ (JIS 8-bit character set (Latin and Kana) in accordance with JIS X 0201)
-
 * __Kanji characters__ (Shift JIS character set in accordance with JIS X 0208 Annex 1 Shift Coded Representation)

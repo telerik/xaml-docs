@@ -92,7 +92,8 @@ controls/radziplibrary/features/zip-extensions.md, controls/radgridview/features
 controls/radentityframeworkdatasource,
 controls/radgridview/styles-and-templates/styling-search-panel.md,
 controls/radgridview/style-selectors/merged-cells-style-selector,
-controls/radmap/features/wraparound]
+controls/radmap/features/wraparound,
+controls/radgridview/columns/trimmed-text-tooltips.md]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

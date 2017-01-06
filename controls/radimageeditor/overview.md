@@ -41,6 +41,7 @@ The operations it can perform on an image are:
 
 * Drawing
 
+* Panning
 
 The image formats it supports are: 
 

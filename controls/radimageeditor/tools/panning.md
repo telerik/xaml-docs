@@ -12,7 +12,7 @@ position: 2
 
 The __PanTool__ is one of the tools that come out-of-the-box with the __RadImageEditor__ and enables you to pan the image using the mouse. 
 
-Similarly to the other __RadImageEditor__ tools, the __DrawTool__ is located in the __Telerik.Windows.Media.Imaging.Tools__ namespace and inherits the [DrawToolBase]({%slug radimageeditor-howto-implement-drawtoolbase%}) class. The tool can be defined in XAML as demonstrated in __Example 1__.
+Similarly to the other __RadImageEditor__ tools, the __PanTool__ is located in the __Telerik.Windows.Media.Imaging.Tools__ namespace and inherits the [DrawToolBase]({%slug radimageeditor-howto-implement-drawtoolbase%}) class. The tool can be defined in XAML as demonstrated in __Example 1__.
 
 #### __[XAML] Example 1: Define PanTool__  
 {{region xaml-radimageeditor-tools-panning_0}}

@@ -10,7 +10,7 @@ position: 7
 
 # Popup Animation
 
-[RadDropDownButton]({%slug radbuttons-features-dropdown-button%}) and [RadSplitButton]({%slug radbuttons-features-split-button%}) support popup animations. The animation is triggered when the drop down content of the button is opened.
+[RadDropDownButton]({%slug radbuttons-features-dropdown-button%}) and [RadSplitButton]({%slug radbuttons-features-split-button%}) support popup animations. The animation is triggered when the drop down content of the button opens.
 
 > By default the animation is not enabled.
 
@@ -27,11 +27,11 @@ The property is an enum of type __System.Windows.Controls.Primitives.PopupAnimat
 
 	![](images/radbuttons-features-popup-animations-0.gif)
 
-* __Slide__: The popup control slides down starting from the lower left corner of the button. If the screen doesn't have enough space for the popup, the sliding will behave differently according to the position of the popup.
+* __Slide__: The popup control slides down starting from the bottom border of the button. If the screen doesn't have enough space for the popup, the sliding behaves differently according to the position of the popup.
 	
 	![](images/radbuttons-features-popup-animations-1.gif)
 
-* __Scroll__: The popup control scrolls from the lower left corner of the button. If the screen doesn't have enought space for the popup, the scrolling will behave differently according to the position of the popup.
+* __Scroll__: The popup control scrolls from the lower left corner of the button. If the screen doesn't have enought space for the popup, the scrolling behaves differently according to the position of the popup.
 	
 	![](images/radbuttons-features-popup-animations-2.gif)
 

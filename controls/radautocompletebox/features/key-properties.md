@@ -22,7 +22,7 @@ The purpose of this help article is to show you the key properties of __RadAutoC
 
 * [Setting NoResultsContent, NoResultsContentTemplate properties](#setting-noresultscontent-noresultscontenttemplate-properties)
 
-* [Setting WatermarkContent](#setting-watermark-content)
+* [Setting WatermarkContent](#setting-watermarkcontent)
 
 * [Other properties](#other-properties)
 

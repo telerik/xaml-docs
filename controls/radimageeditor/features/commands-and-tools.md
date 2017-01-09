@@ -59,19 +59,21 @@ Available __Tools__:
 
 * EffectToolBase – tools, based on pixel shaders:
 
-* SharpenTool
+ * SharpenTool
 
-* SaturationTool
+ * SaturationTool
 
-* HueShiftTool
+ * HueShiftTool
 
-* ContrastTool
+ * ContrastTool
 
 * DrawTextTool
 
 * [DrawTool]({%slug radimageeditor-tools-drawing%})
 
 * [ShapeTool]({%slug radimageeditor-tools-shape-tool%})
+
+* PanTool (not registered in the history stack)
 
 
 >tipAll tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML.<br/> __xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"__

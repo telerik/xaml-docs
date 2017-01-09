@@ -42,7 +42,7 @@ By default, the ToolTip displays the thumb's value with two decimal symbols of p
 #### __Figure 3: Setting custom template to the AutoToolTipContentTemplate property__
 ![RadSlider ToolTip AutoToolTipPlacement BottomRight](images/RadSlider_AutoToolTipPlacement_ContentTemplate_04.png)
 
->The value of the ToolTip might not display the actual Value/SelectionStart/SelectionEnd values of the slider, if the __IsDeferredDraggingEnabled__ property is set to True the value of the slider will be updated only when you finish the drag operation. Regardless this, the Value of the ToolTip will be updated corresponding to the current location of the thumb, indicating the value when you end the dragging.
+>The value of the ToolTip might not display the actual Value/SelectionStart/SelectionEnd values of the slider. When the __IsDeferredDraggingEnabled__ property is set to True, the value of the slider will be updated only when the user finishes the drag operation. Regardless this, the Value of the ToolTip will be updated corresponding to the current location of the thumb, indicating the value when you end the dragging.
 
 ## Range Selection
 

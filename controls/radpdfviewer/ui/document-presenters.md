@@ -13,8 +13,6 @@ position: 6
 
 
 This article will help you get familiar with the concept of a document presenter in __RadPDFViewer__.
-
-In this article the following topics are concerned:
       
 
 * [What Is a Document Presenter](#what-is-a-document-presenter)
@@ -22,6 +20,7 @@ In this article the following topics are concerned:
 * [Using FixedDocumentPagesPresenter](#using-fixeddocumentpagespresenter)
 
 * [Using FixedDocumentSinglePageViewPresenter](#using-fixeddocumentsinglepageviewpresenter)
+
 
 ## What Is a Document Presenter
 
@@ -38,42 +37,44 @@ __RadPdfViewer__ provides two presenters out of the box:
 Both of those presenters inherit the abstract __Telerik.Windows.Documents.UI.FixedDocumentPresenterBase__ class, which implements the __Telerik.Windows.Documents.UI.IFixedDocumentPresenter__ interface.
         
 
-You can access the document presenter in __RadPdfViewer__ by accessing the __FixedDocumentPresenter__ property. 
+>You can access the document presenter in __RadPdfViewer__ by accessing the __FixedDocumentPresenter__ property. 
         
+>tipFixedDocumentPresenterBase exposes the **VisiblePagesCacheOffset property**, which you can use to control the amount of pages that are cached before and after the visible ones. The default value of VisiblePagesCacheOffset is 1. 
 
 ## Using FixedDocumentPagesPresenter
 
-This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each pages is centered horizontally inside the __RadPdfViewer__ viewport. The next snippet shows how to set it as the currently used presenter:
+This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each pages is centered horizontally inside the __RadPdfViewer__ viewport. The code from **Example 1** shows how to set it as the currently used presenter.
         
 
-#### __C#__
+#### __[C#] Example 1: Using FixedDocumentPagesPresenter__
 
 {{region radpdfviewer-ui-document-presenters_0}}
-			this.radPdfViewer.FixedDocumentPresenter = this.viewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentPagesPresenter);
+	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentPagesPresenter);
 {{endregion}}
 
 
 
-And here is the result: 
+#### **Figure 1: FixedDocumentPagesPresenter**
 ![Rad Pdf Viewer Ui Document Presenters 01](images/RadPdfViewer_Ui_Document_Presenters_01.png)
+
 
 ## Using FixedDocumentSinglePageViewPresenter
 
-This document presenter displays a single page inside the viewport. The page is vertically and horizontally centered. The next snippet shows how to set the __FixedDocumentSinglePageViewPresenter__ as the currently used presenter:        
+This document presenter displays a single page inside the viewport. The page is vertically and horizontally centered. **Example 2** shows how to set the __FixedDocumentSinglePageViewPresenter__ as the currently used presenter.      
         
 
-#### __C#__
+#### __[C#] Example 2: Using FixedDocumentSinglePageViewPresenter__
 
 {{region radpdfviewer-ui-document-presenters_1}}
-			this.radPdfViewer.FixedDocumentPresenter = this.viewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentSinglePageViewPresenter);
+	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentSinglePageViewPresenter);
 {{endregion}}
 
 
 
-The result is as follows:    
+#### **Figure 2: FixedDocumentSinglePageViewPresenter**
 ![Rad Pdf Viewer Ui Document Presenters 02](images/RadPdfViewer_Ui_Document_Presenters_02.png)
 
-# See Also
+## See Also
 
  * [Rotation]({%slug radpdfviewer-rotation%})
 

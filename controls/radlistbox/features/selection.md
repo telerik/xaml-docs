@@ -22,6 +22,8 @@ The purpose of this tutorial is to show you the basic properties exposed by the 
 
 * [Using the Text and TextPath/TextBinding](#using-the-text-and-textpath--textbinding)
 
+* [Disabling Caching of Selected Items](#disabling-caching-of-selected-items)
+
 ## Setting SelectionMode
 
 The __RadListBox__ provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the __SelectionMode__ enumeration property which has the following entries:
@@ -105,7 +107,11 @@ Use the __RadListBox__'s __Text__ property whenever you want to get the string r
 
 The __TextPath__ / __TextBinding__ properties specify the path to the property that is used to determine the value of the __Text__ property.
 
-# See Also
+## Disabling Caching of Selected Items
+
+By default, when its **ItemsSource** is reset, RadListBox will try to restore any previously selected items through its **built-in caching mechanism**. As of **R1 2017**, RadListBox allows you to disable this functionality by setting its new **EnableSelectionCaching** property to **False**.
+
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})
  

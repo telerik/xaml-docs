@@ -25,27 +25,16 @@ It is fired once a selection is about to be performed and a change in the Select
 
 #### __C#__
 
-{{region gridview-selection-events_0}}
-
-	public BasicSelection()
+{{region cs-gridview-selection-events_0}}
+	private void SelectionChanging(object sender, SelectionChangingEventArgs e)
 	{
-	    InitializeComponent();
-	    this.radGridView.SelectionChanging += this.SelectionChanging;
-	}
-	private void SelectionChanging(object sender, SelectionChangingEventArgs e )
-	{ 
 	}
 {{endregion}}
 
 
 #### __VB.NET__
 
-{{region gridview-selection-events_1}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 AddHandler Me.radGridView.SelectionChanging, AddressOf Me.SelectionChanging
-	End Sub
+{{region vb-gridview-selection-events_1}}
 	Private Sub SelectionChanging(sender As Object, e As SelectionChangingEventArgs)
 	End Sub
 {{endregion}}
@@ -59,14 +48,8 @@ Fires each time there is a change in the __SelectedItems__ collection (a row has
 
 #### __C#__
 
-{{region gridview-selection-events_2}}
-
-	public BasicSelection()
-	{
-	    InitializeComponent();
-	    this.radGridView.SelectionChanged += this.SelectionChanged;
-	}
-	private void SelectionChanged(object sender, SelectionChangeEventArgs e )
+{{region cs-gridview-selection-events_2}}
+	private void SelectionChanged(object sender, SelectionChangeEventArgs e)
 	{
 	}
 {{endregion}}
@@ -74,12 +57,7 @@ Fires each time there is a change in the __SelectedItems__ collection (a row has
 
 #### __VB.NET__
 
-{{region gridview-selection-events_3}}
-
-	Public Sub New()
-	    InitializeComponent()
-	    AddHandler Me.radGridView.SelectionChanged, AddressOf Me.SelectionChanged
-	End Sub
+{{region vb-gridview-selection-events_3}}
 	Private Sub SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
 	End Sub
 {{endregion}}
@@ -97,14 +75,8 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 #### __C#__
 
-{{region gridview-selection-events_4}}
-
-	public BasicSelection()
-	{
-	    InitializeComponent();
-	    this.radGridView.CurrentCellChanged += this.CurrentCellChanged;
-	}
-	private void CurrentCellChanged( object sender, GridViewCurrentCellChangedEventArgs e )
+{{region cs-gridview-selection-events_4}}
+	private void CurrentCellChanged(object sender, GridViewCurrentCellChangedEventArgs e)
 	{
 	}
 {{endregion}}
@@ -112,12 +84,7 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 #### __VB.NET__
 
-{{region gridview-selection-events_5}}
-
-	Public Sub New()
-	    InitializeComponent()
-	    AddHandler Me.radGridView.CurrentCellChanged, AddressOf Me.CurrentCellChanged
-	End Sub
+{{region vb-gridview-selection-events_5}}
 	Private Sub CurrentCellChanged(ByVal sender As Object, ByVal e As GridViewCurrentCellChangedEventArgs)
 	End Sub
 {{endregion}}
@@ -135,28 +102,17 @@ This event is fired on the time a change in the SelectedCells collection is abou
 
 #### __C#__
 
-{{region gridview-selection-events_6}}
-
-	public BasicSelection()
+{{region cs-gridview-selection-events_6}}
+	private void SelectedCellsChanging(object sender, GridViewSelectedCellsChangingEventArgs e)
 	{
-	  InitializeComponent();
-	  this.radGridView.SelectedCellsChanging += this.SelectedCellsChanging;
-	}
-	private void SelectedCellsChanging(object sender, GridViewSelectedCellsChangingEventArgse )
-	{ 
 	}
 {{endregion}}
 
 
 #### __VB.NET__
 
-{{region gridview-selection-events_7}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 AddHandler Me.radGridView.SelectedCellsChanging, AddressOf Me.SelectedCellsChanging
-	End Sub
-	Private Sub SelectedCellsChanging(sender As Object, e As GridViewSelectedCellsChangingEventArgse 
+{{region vb-gridview-selection-events_7}}
+	Private Sub SelectedCellsChanging(sender As Object, e As GridViewSelectedCellsChangingEventArgs)
 	End Sub
 {{endregion}}
 
@@ -177,13 +133,7 @@ Fires each time there is change in the __SelectedCells__ collection (a cell has 
 
 #### __C#__
 
-{{region gridview-selection-events_8}}
-
-	public MainPage()
-	{
-	 InitializeComponent();
-	 this.gridView.SelectedCellsChanged += new EventHandler<GridViewSelectedCellsChangedEventArgs>(gridView_SelectedCellsChanged);
-	}
+{{region cs-gridview-selection-events_8}}
 	private void gridView_SelectedCellsChanged(object sender, GridViewSelectedCellsChangedEventArgs e)
 	{
 	}
@@ -191,13 +141,7 @@ Fires each time there is change in the __SelectedCells__ collection (a cell has 
 
 #### __VB.NET__
 
-{{region gridview-selection-events_9}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 AddHandler Me.gridView.SelectedCellsChanged, AddressOf gridView_SelectedCellsChanged
-	End Sub 
-	
+{{region vb-gridview-selection-events_9}}
 	Private Sub gridView_SelectedCellsChanged(sender As Object, e As GridViewSelectedCellsChangedEventArgs)
 	End Sub
 {{endregion}}

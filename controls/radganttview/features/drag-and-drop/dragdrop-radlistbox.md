@@ -21,7 +21,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-0}}
+	{{region xaml-radganttview-dragdrop-radlistbox-0}}
 		<telerik:RadListBox ItemsSource="{Binding Projects}" DisplayMemberPath="Name"/>
 	{{endregion}}
 
@@ -29,37 +29,37 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-0}}
+	{{region cs-radganttview-dragdrop-radlistbox-0}}
 		public class ViewModel : ViewModelBase
 		{
-			private ObservableCollection<Project> projects;
+		    private ObservableCollection<Project> projects;
 		
-			public ViewModel()
-			{
-				this.projects = this.GetProjects();
-			}
+		    public ViewModel()
+		    {
+		        this.projects = this.GetProjects();
+		    }
 		
-			public ObservableCollection<Project> Projects
-			{
-				get
-				{
-					return this.projects;
-				}
+		    public ObservableCollection<Project> Projects
+		    {
+		        get
+		        {
+		            return this.projects;
+		        }
 		
-				set
-				{
-					this.projects = value;
-					this.OnPropertyChanged(() => this.Projects);
-				}
-			}
+		        set
+		        {
+		            this.projects = value;
+		            this.OnPropertyChanged(() => this.Projects);
+		        }
+		    }
 		
-			private ObservableCollection<Project> GetProjects()
-			{
-				var projects = new ObservableCollection<Project>();
-				projects.Add(new Project { Name = "Project 1", Start = DateTime.Today, End = DateTime.Today.AddDays(2) });
-				projects.Add(new Project { Name = "Project 2", Start = DateTime.Today.AddDays(2), End = DateTime.Today.AddDays(4) });
-				return projects;
-			}
+		    private ObservableCollection<Project> GetProjects()
+		    {
+		        var projects = new ObservableCollection<Project>();
+		        projects.Add(new Project { Name = "Project 1", Start = DateTime.Today, End = DateTime.Today.AddDays(2) });
+		        projects.Add(new Project { Name = "Project 2", Start = DateTime.Today.AddDays(2), End = DateTime.Today.AddDays(4) });
+		        return projects;
+		    }
 		}
 	{{endregion}}
 
@@ -67,15 +67,15 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-1}}
+	{{region xaml-radganttview-dragdrop-radlistbox-1}}
 		<telerik:RadGanttView x:Name="radGanttView" 
-							  TasksSource="{Binding GanttTasks}" 
-							  VisibleRange="{Binding VisibleRange}">
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-			</telerik:RadGanttView.Columns>
+		TasksSource="{Binding GanttTasks}" 
+		VisibleRange="{Binding VisibleRange}">
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
 	{{endregion}}
 
@@ -83,66 +83,66 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-1}}
+	{{region cs-radganttview-dragdrop-radlistbox-1}}
 		public class ViewModel : ViewModelBase
 		{
-			...
-			private ObservableCollection<GanttTask> tasks;
+		    //...
+		    private ObservableCollection<GanttTask> tasks;
 		
-			private DateRange visibleRange;
+		    private DateRange visibleRange;
 		
-			public ViewModel()
-			{
-				...
-				var date = DateTime.Now;
-				var ganttAPI = new GanttTask() { Start = date, End = date.AddDays(2), Title = "Design public API" };
-				var ganttRendering = new GanttTask() { Start = date.AddDays(2).AddHours(8), End = date.AddDays(4), Title = "Gantt Rendering" };
-				var ganttDemos = new GanttTask() { Start = date.AddDays(5), End = date.AddDays(7), Title = "Gantt Demos" };
-				var milestone = new GanttTask() { Start = date.AddDays(7), End = date.AddDays(7).AddHours(1), Title = "Review", IsMilestone = true };
-				ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
-				ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
-				var iterationTask = new GanttTask(date, date.AddDays(7), "Iteration 1")
-				{
-					Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
-				};
+		    public ViewModel()
+		    {
+		        //...
+		        var date = DateTime.Now;
+		        var ganttAPI = new GanttTask() { Start = date, End = date.AddDays(2), Title = "Design public API" };
+		        var ganttRendering = new GanttTask() { Start = date.AddDays(2).AddHours(8), End = date.AddDays(4), Title = "Gantt Rendering" };
+		        var ganttDemos = new GanttTask() { Start = date.AddDays(5), End = date.AddDays(7), Title = "Gantt Demos" };
+		        var milestone = new GanttTask() { Start = date.AddDays(7), End = date.AddDays(7).AddHours(1), Title = "Review", IsMilestone = true };
+		        ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
+		        ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
+		        var iterationTask = new GanttTask(date, date.AddDays(7), "Iteration 1")
+		        {
+		            Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
+		        };
 		
-				this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
-				var start = this.tasks.Min(t => t.Start).Date;
-				var end = this.tasks.Max(t => t.End).Date;
-				this.visibleRange = new DateRange(start.AddHours(-12), end.AddDays(3));
-			}
-				
-			...
-				
-			public ObservableCollection<GanttTask> GanttTasks
-			{
-				get
-				{
-					return this.tasks;
-				}
+		        this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
+		        var start = this.tasks.Min(t => t.Start).Date;
+		        var end = this.tasks.Max(t => t.End).Date;
+		        this.visibleRange = new DateRange(start.AddHours(-12), end.AddDays(3));
+		    }
 		
-				set
-				{
-					this.tasks = value;
-					this.OnPropertyChanged(() => this.GanttTasks);
-				}
-			}
+		    //...
 		
-			public DateRange VisibleRange
-			{
-				get
-				{
-					return this.visibleRange;
-				}
+		    public ObservableCollection<GanttTask> GanttTasks
+		    {
+		        get
+		        {
+		            return this.tasks;
+		        }
 		
-				set
-				{
-					this.visibleRange = value;
-					this.OnPropertyChanged(() => this.VisibleRange);
-				}
-			}
-				
-			...
+		        set
+		        {
+		            this.tasks = value;
+		            this.OnPropertyChanged(() => this.GanttTasks);
+		        }
+		    }
+		
+		    public DateRange VisibleRange
+		    {
+		        get
+		        {
+		            return this.visibleRange;
+		        }
+		
+		        set
+		        {
+		            this.visibleRange = value;
+		            this.OnPropertyChanged(() => this.VisibleRange);
+		        }
+		    }
+		
+		    //...
 		}
 	{{endregion}}
 
@@ -150,13 +150,13 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-2}}
+	{{region cs-radganttview-dragdrop-radlistbox-2}}
 		public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 		{
-			protected override bool CanStartDrag(SchedulingDragDropState state)
-			{
-				return state.IsReorderOperation;
-			}
+		    protected override bool CanStartDrag(SchedulingDragDropState state)
+		    {
+		        return state.IsReorderOperation;
+		    }
 		}
 	{{endregion}}
 
@@ -164,27 +164,27 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-3}}
+	{{region cs-radganttview-dragdrop-radlistbox-3}}
 		public class CustomGanttConverter : DataConverter
 		{
-			public override object ConvertTo(object data, string format)
-			{
-				if (format == typeof(Project).FullName)
-				{
-					var project = DataObjectHelper.GetData(data, typeof(SchedulingDragOperationPayload), true) as SchedulingDragOperationPayload;
-					if (project != null)
-					{
-						return project.DraggedItems.OfType<IGanttTask>().Select(p => new Project { Name = p.Title, Start = p.Start, End = p.End });
-					}
-				}
+		    public override object ConvertTo(object data, string format)
+		    {
+		        if (format == typeof(Project).FullName)
+		        {
+		            var project = DataObjectHelper.GetData(data, typeof(SchedulingDragOperationPayload), true) as SchedulingDragOperationPayload;
+		            if (project != null)
+		            {
+		                return project.DraggedItems.OfType<IGanttTask>().Select(p => new Project { Name = p.Title, Start = p.Start, End = p.End });
+		            }
+		        }
 		
-				return null;
-			}
+		        return null;
+		    }
 		
-			public override string[] GetConvertToFormats()
-			{
-				return new[] { typeof(Project).FullName };
-			}
+		    public override string[] GetConvertToFormats()
+		    {
+		        return new[] { typeof(Project).FullName };
+		    }
 		}
 	{{endregion}}
 
@@ -192,16 +192,21 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __C#__
 
-	{{region radganttview-dragdrop-radlistbox-4}}
+	{{region cs-radganttview-dragdrop-radlistbox-4}}
 		public class CustomListBoxConverter : DataConverter
 		{
-			public override object ConvertTo(object data)
-			{
-				var draggedProjectItem = (DataObjectHelper.GetData(data, typeof(Project), true) as List<object>).First() as Project;
-				var task = new GanttTask { Title = draggedProjectItem.Name, Start = draggedProjectItem.Start, End = draggedProjectItem.End };
+		    public override object ConvertTo(object data, string format)
+		    {
+		        var draggedProjectItem = (DataObjectHelper.GetData(data, typeof(Project), true) as List<object>).First() as Project;
+		        var task = new GanttTask { Title = draggedProjectItem.Name, Start = draggedProjectItem.Start, End = draggedProjectItem.End };
 		
-				return task;
-			}
+		        return task;
+		    }
+		
+		    public override string[] GetConvertToFormats()
+		    {
+		        return new string[] { typeof(IDateRange).FullName};
+		    }
 		}
 	{{endregion}}
 
@@ -209,36 +214,36 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	#### __XAML__
 
-	{{region radganttview-dragdrop-radlistbox-2}}
+	{{region xaml-radganttview-dragdrop-radlistbox-2}}
 		<telerik:RadListBox ItemsSource="{Binding Projects}" 
-							AllowDrop="True"
-							ItemContainerStyle="{StaticResource DraggableListBoxItem}" 
-							DisplayMemberPath="Name" Width="200" Margin="20">
-			<telerik:RadListBox.DragDropBehavior>
-				<telerik:ListBoxDragDropBehavior/>
-			</telerik:RadListBox.DragDropBehavior>
-			<telerik:RadListBox.DragVisualProvider>
-				<telerik:ScreenshotDragVisualProvider/>
-			</telerik:RadListBox.DragVisualProvider>
-			<telerik:RadListBox.DataConverter>
-				<local:CustomListBoxConverter/>
-			</telerik:RadListBox.DataConverter>
+		AllowDrop="True"
+		ItemContainerStyle="{StaticResource DraggableListBoxItem}" 
+		DisplayMemberPath="Name" Width="200" Margin="20">
+		    <telerik:RadListBox.DragDropBehavior>
+		        <telerik:ListBoxDragDropBehavior/>
+		    </telerik:RadListBox.DragDropBehavior>
+		    <telerik:RadListBox.DragVisualProvider>
+		        <telerik:ScreenshotDragVisualProvider/>
+		    </telerik:RadListBox.DragVisualProvider>
+		    <telerik:RadListBox.DataConverter>
+		        <local:CustomListBoxConverter/>
+		    </telerik:RadListBox.DataConverter>
 		</telerik:RadListBox>
-		<telerik:RadGanttView x:Name="radGanttView" 
-							  TasksSource="{Binding GanttTasks}" 
-							  VisibleRange="{Binding VisibleRange}" 
-							  Grid.Column="1">
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-			</telerik:RadGanttView.Columns>
-			<telerik:RadGanttView.DataConverter>
-				<local:CustomGanttConverter/>
-			</telerik:RadGanttView.DataConverter>
-			<telerik:RadGanttView.DragDropBehavior>
-				<local:CustomGanttDragDropBehavior/>
-			</telerik:RadGanttView.DragDropBehavior>
+		<telerik:RadGanttView x:Name="radGanttView1" 
+		TasksSource="{Binding GanttTasks}" 
+		VisibleRange="{Binding VisibleRange}" 
+		Grid.Column="1">
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+		    </telerik:RadGanttView.Columns>
+		    <telerik:RadGanttView.DataConverter>
+		        <local:CustomGanttConverter/>
+		    </telerik:RadGanttView.DataConverter>
+		    <telerik:RadGanttView.DragDropBehavior>
+		        <local:CustomGanttDragDropBehavior/>
+		    </telerik:RadGanttView.DragDropBehavior>
 		</telerik:RadGanttView>
 	{{endregion}}
 

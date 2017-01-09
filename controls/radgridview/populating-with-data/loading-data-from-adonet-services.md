@@ -22,8 +22,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region gridview-loading-data-from-adonet-services_0}}
-
+{{region xaml-gridview-loading-data-from-adonet-services_0}}
 	<telerik:RadGridView x:Name="radGridView"/>
 {{endregion}}
 
@@ -35,30 +34,26 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_1}}
-
-	NorthwindEntities dbContext = new NorthwindEntities( new Uri( "GridViewDataService.svc", UriKind.Relative ) );
+{{region cs-gridview-loading-data-from-adonet-services_1}}
+	NorthwindEntities dbContext = new NorthwindEntities(new Uri("GridViewDataService.svc", UriKind.Relative));
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_2}}
-
-	NorthwindEntities dbContext = new NorthwindEntities( new Uri( "Enter your service address here") );
+{{region cs-gridview-loading-data-from-adonet-services_2}}
+	NorthwindEntities dbContext2 = new NorthwindEntities(new Uri("Enter your service address here"));
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_3}}
-
-	Dim dbContext As New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
+{{region vb-gridview-loading-data-from-adonet-services_3}}
+	Private dbContext As New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_4}}
-
-	Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
+{{region vb-gridview-loading-data-from-adonet-services_4}}
+	Private dbContext2 As New NorthwindEntities(New Uri("Enter your service address here"))
 {{endregion}}
 
 >tipFor more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the 
@@ -66,33 +61,31 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_5}}
-
+{{region cs-gridview-loading-data-from-adonet-services_5}}
 	private void BeginRequest()
 	{
-	    DataServiceQuery<Customers> query = dbContext.CreateQuery<Customers>( "Customers" );
-	    query.BeginExecute( RequestCompleted, query );
+	    DataServiceQuery<Customer> query = dbContext.CreateQuery<Customer>("Customers");
+	    query.BeginExecute(RequestCompleted, query);
 	}
 	
-	private void RequestCompleted( IAsyncResult asyncResult )
+	private void RequestCompleted(IAsyncResult asyncResult)
 	{
-	    DataServiceQuery<Customers> query = asyncResult.AsyncState as DataServiceQuery<Customers>;
-	    var customers = query.EndExecute( asyncResult ).ToList();
+	    DataServiceQuery<Customer> query = asyncResult.AsyncState as DataServiceQuery<Customer>;
+	    var customers = query.EndExecute(asyncResult).ToList();
 	    this.radGridView.ItemsSource = customers;
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_6}}
-
+{{region vb-gridview-loading-data-from-adonet-services_6}}
 	Private Sub BeginRequest()
-	    Dim query As DataServiceQuery(Of Customers) = dbContext.CreateQuery(Of Customers)("Customers")
-	    query.BeginExecute(RequestCompleted, query)
+	    Dim query As DataServiceQuery(Of Customer) = dbContext.CreateQuery(Of Customer)("Customers")
+	    query.BeginExecute(AddressOf RequestCompleted, query)
 	End Sub
 	
 	Private Sub RequestCompleted(ByVal asyncResult As IAsyncResult)
-	    Dim query As DataServiceQuery(Of Customers) = TryCast(asyncResult.AsyncState, DataServiceQuery(Of Customers))
+	    Dim query As DataServiceQuery(Of Customer) = TryCast(asyncResult.AsyncState, DataServiceQuery(Of Customer))
 	    Dim customers = query.EndExecute(asyncResult).ToList()
 	    Me.radGridView.ItemsSource = customers
 	End Sub
@@ -100,16 +93,15 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_7}}
-
+{{region cs-gridview-loading-data-from-adonet-services_7}}
 	this.radGridView.ItemsSource = dbContext.Customers.Execute().ToList();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_8}}
-
+{{region vb-gridview-loading-data-from-adonet-services_8}}
 	Me.radGridView.ItemsSource = dbContext.Customers.Execute().ToList()
+	'
 {{endregion}}
 
 Run your demo, the result can be seen on the next image:
@@ -124,8 +116,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_9}}
-
+{{region cs-gridview-loading-data-from-adonet-services_9}}
 	public class NorthwindDataSource
 	{
 	}
@@ -133,8 +124,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_10}}
-
+{{region vb-gridview-loading-data-from-adonet-services_10}}
 	Public Class NorthwindDataSource
 	End Class
 {{endregion}}
@@ -147,17 +137,16 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_11}}
-
+{{region cs-gridview-loading-data-from-adonet-services_11}}
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
 	    public NorthwindDataSource()
 	    {
-	        northwindEntity = new NorthwindEntities( new Uri( "GridViewDataService.svc", UriKind.Relative ) );
-	        this.Customers = new ObservableCollection<Customers>();
+	        northwindEntity = new NorthwindEntities(new Uri("GridViewDataService.svc", UriKind.Relative));
+	        this.Customers = new ObservableCollection<Customer>();
 	    }
-	    public ObservableCollection<Customers> Customers
+	    public ObservableCollection<Customer> Customers
 	    {
 	        get;
 	        set;
@@ -167,41 +156,29 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_12}}
-
+{{region vb-gridview-loading-data-from-adonet-services_12}}
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
-	
 	    Public Sub New()
 	        northwindEntity = New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
-	        Me.Customers = New ObservableCollection(Of Customers)()
+	        Me.Customers = New ObservableCollection(Of Customer)()
 	    End Sub
-	
-	Private _Customers As ObservableCollection(Of Customers)
-	    Public Property Customers() As ObservableCollection(Of Customers)
-	        Get
-	            Return _Customers
-	        End Get
-	        Set(ByVal value As ObservableCollection(Of Customers))
-	            _Customers = value
-	        End Set
-	    End Property
+	    Public Property Customers() As ObservableCollection(Of Customer)
 	End Class
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_13}}
-
+{{region cs-gridview-loading-data-from-adonet-services_13}}
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
 	    public NorthwindDataSource()
 	    {
-	        northwindEntity = new NorthwindEntities( new Uri( "Enter your service address here"));
-	        this.Customers = new ObservableCollection<Customers>();
+	        northwindEntity = new NorthwindEntities(new Uri("Enter your service address here"));
+	        this.Customers = new ObservableCollection<Customer>();
 	    }
-	    public ObservableCollection<Customers> Customers
+	    public ObservableCollection<Customer> Customers
 	    {
 	        get;
 	        set;
@@ -211,25 +188,14 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_14}}
-
+{{region vb-gridview-loading-data-from-adonet-services_14}}
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
-	
 	    Public Sub New()
 	        northwindEntity = New NorthwindEntities(New Uri("Enter your service address here"))
-	        Me.Customers = New ObservableCollection(Of Customers)()
+	        Me.Customers = New ObservableCollection(Of Customer)()
 	    End Sub
-	
-	Private _Customers As ObservableCollection(Of Customers)
-	    Public Property Customers() As ObservableCollection(Of Customers)
-	        Get
-	            Return _Customers
-	        End Get
-	        Set(ByVal value As ObservableCollection(Of Customers))
-	            _Customers = value
-	        End Set
-	    End Property
+	    Public Property Customers() As ObservableCollection(Of Customer)
 	End Class
 {{endregion}}
 
@@ -237,37 +203,33 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_15}}
-
+{{region cs-gridview-loading-data-from-adonet-services_15}}
 	northwindEntity.Customers.BeginExecute(
-	    ( IAsyncResult result ) => EntitiesLoaded<Customers>( result, this.Customers ),
-	    northwindEntity.Customers );
+	    (IAsyncResult result) => EntitiesLoaded<Customer>(result, this.Customers),
+	    northwindEntity.Customers);
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_16}}
-
-	foreach ( Customers c in northwindEntity.Customers.Execute() )
+{{region cs-gridview-loading-data-from-adonet-services_16}}
+	foreach (Customer c in northwindEntity.Customers.Execute())
 	{
-	    this.Customers.Add( c );
+	    this.Customers.Add(c);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_17}}
-
-	northwindEntity.Customers.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Customers)(result, Me.Customers), northwindEntity.Customers)
+{{region vb-gridview-loading-data-from-adonet-services_17}}
+	northwindEntity.Customers.BeginExecute(Function(result As IAsyncResult) EntitiesLoaded(Of Customer)(result, Me.Customers), northwindEntity.Customers)
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_18}}
-
-	For Each c As Customers In northwindEntity.Customers.Execute()
+{{region vb-gridview-loading-data-from-adonet-services_18}}
+	For Each c As Customer In northwindEntity.Customers.Execute()
 	    Me.Customers.Add(c)
-	Next
+	Next c
 {{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
@@ -276,27 +238,25 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 #### __C#__
 
-{{region gridview-loading-data-from-adonet-services_19}}
-
-	private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
+{{region cs-gridview-loading-data-from-adonet-services_19}}
+	private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities)
 	{
 	    DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
-	    foreach ( T entity in query.EndExecute( result ) )
+	    foreach (T entity in query.EndExecute(result))
 	    {
-	        entities.Add( entity );
+	        entities.Add(entity);
 	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-adonet-services_20}}
-
+{{region vb-gridview-loading-data-from-adonet-services_20}}
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
 	    For Each entity As T In query.EndExecute(result)
 	        entities.Add(entity)
-	    Next
+	    Next entity
 	End Sub
 {{endregion}}
 
@@ -304,10 +264,9 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-adonet-services_21}}
-
+{{region xaml-gridview-loading-data-from-adonet-services_21}}
 	<UserControl.Resources>
-	   <example:NorthwindDataSource x:Key="DataSource"/>
+	    <my:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
 {{endregion}}
 
@@ -315,10 +274,8 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-adonet-services_22}}
-
-	<telerik:RadGridView x:Name="radGridView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
+{{region xaml-gridview-loading-data-from-adonet-services_22}}
+	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
 {{endregion}}
 
 Run your demo, the result can be seen on the next picture: 

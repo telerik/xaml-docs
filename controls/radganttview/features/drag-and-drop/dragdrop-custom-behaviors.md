@@ -28,7 +28,7 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 #### __C#__
 
-{{region radganttview-dragdrop-custom-behaviors-1}}
+{{region cs-radganttview-dragdrop-custom-behaviors-1}}
 	public class CustomDragDropBehavior : Telerik.Windows.Controls.GanttView.GanttDragDropBehavior
 	{
 	    protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -46,7 +46,7 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 #### __XAML__
 
-{{region radganttview-dragdrop-custom-behaviors-1}}
+{{region xaml-radganttview-dragdrop-custom-behaviors-1}}
 	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.DragDropBehavior>
 	        <local:CustomDragDropBehavior />
@@ -74,7 +74,7 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 #### __C#__
 
-{{region radganttview-dragdrop-custom-behaviors-2}}
+{{region cs-radganttview-dragdrop-custom-behaviors-2}}
 	public class SnappingSchedulingResizeBehavior : SchedulingResizeBehavior
 	{
 	    protected override void Resize(SchedulingResizeState state)
@@ -133,8 +133,8 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 #### __XAML__
 
-{{region radganttview-dragdrop-custom-behaviors-2}}
-	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
+{{region xaml-radganttview-dragdrop-custom-behaviors-2}}
+	<telerik:RadGanttView  x:Name="ganttView1" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.ResizeBehavior>
 	        <local:SnappingSchedulingResizeBehavior />
 	    </telerik:RadGanttView.ResizeBehavior>

@@ -36,11 +36,11 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-0}}
+	{{region cs-radganttview-howto-customize-the-timeline-0}}
 			public class GanttDeadlineTask : GanttTask
 			{
 				private DateTime? ganttDeadLine;
-		
+			
 				public DateTime? GanttDeadLine
 				{
 					get
@@ -63,12 +63,12 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-1}}
+	{{region cs-radganttview-howto-customize-the-timeline-1}}
 			public class MyViewModel : ViewModelBase
 			{
 				private ObservableCollection<GanttTask> _Tasks;
 				private DateRange _VisibleTime;
-		
+			
 				public MyViewModel()
 				{
 					var date = DateTime.Now;
@@ -114,7 +114,7 @@ The example will go through on the following key steps:
 					this._Tasks = new ObservableCollection<GanttTask>() { iterationTask };
 					this._VisibleTime = new DateRange(date.AddDays(-1), date.AddDays(9));
 				}
-		
+			
 				public ObservableCollection<GanttTask> Tasks
 				{
 					get { return this._Tasks; }
@@ -127,7 +127,7 @@ The example will go through on the following key steps:
 						}
 					}
 				}
-		
+			
 				public DateRange VisibleTime
 				{
 					get { return this._VisibleTime; }
@@ -147,23 +147,23 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-2}}
+	{{region cs-radganttview-howto-customize-the-timeline-2}}
 			public class TimeLineDeadlineEventInfo : SlotInfo
 			{
-				public TimeLineDeadlineEventInfo(Range<long> timeRange, int index)
-					: base(timeRange, index, index)
-				{
-				}
-		
-				public override bool Equals(object obj)
-				{
-					return this.Equals(obj as TimeLineDeadlineEventInfo);
-				}
-		
-				public override int GetHashCode()
-				{
-					return base.GetHashCode();
-				}
+			    public TimeLineDeadlineEventInfo(Range<long> timeRange, int index)
+			        : base(timeRange, index, index)
+			    {
+			    }
+			
+			    public override bool Equals(object obj)
+			    {
+			        return this.Equals(obj as TimeLineDeadlineEventInfo);
+			    }
+			
+			    public override int GetHashCode()
+			    {
+			        return base.GetHashCode();
+			    }
 			}
 	{{endregion}}
 
@@ -171,30 +171,30 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-3}}
+	{{region cs-radganttview-howto-customize-the-timeline-3}}
 			public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 			{
-				protected override IEnumerable<IEventInfo> GetEventInfos(TimeLineVisualizationState state, Telerik.Windows.Core.HierarchicalItem hierarchicalItem)
-				{
-					foreach (var eventInfo in base.GetEventInfos(state, hierarchicalItem))
-					{
-						yield return eventInfo;
-					}
-		
-					var task = hierarchicalItem.SourceItem as GanttDeadlineTask;
-					var deadline = task != null ? task.GanttDeadLine : default(DateTime?);
-		
-					if (deadline.HasValue)
-					{
-						var roundedDeadline = state.Rounder.Round(new DateRange(deadline.Value, deadline.Value));
-						var deadlineRange = new Range<long>(roundedDeadline.Start.Ticks, roundedDeadline.End.Ticks);
-		
-						if (deadlineRange.IntersectsWith(state.VisibleTimeRange))
-						{
-							yield return new TimeLineDeadlineEventInfo(deadlineRange, hierarchicalItem.Index);
-						}
-					}
-				}
+			    protected override IEnumerable<IEventInfo> GetEventInfos(TimeLineVisualizationState state, Telerik.Windows.Core.HierarchicalItem hierarchicalItem)
+			    {
+			        foreach (var eventInfo in base.GetEventInfos(state, hierarchicalItem))
+			        {
+			            yield return eventInfo;
+			        }
+			
+			        var task = hierarchicalItem.SourceItem as GanttDeadlineTask;
+			        var deadline = task != null ? task.GanttDeadLine : default(DateTime?);
+			
+			        if (deadline.HasValue)
+			        {
+			            var roundedDeadline = state.Rounder.Round(new DateRange(deadline.Value, deadline.Value));
+			            var deadlineRange = new Range<long>(roundedDeadline.Start.Ticks, roundedDeadline.End.Ticks);
+			
+			            if (deadlineRange.IntersectsWith(state.VisibleTimeRange))
+			            {
+			                yield return new TimeLineDeadlineEventInfo(deadlineRange, hierarchicalItem.Index);
+			            }
+			        }
+			    }
 			}
 	{{endregion}}
 
@@ -204,32 +204,32 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-4}}
+	{{region cs-radganttview-howto-customize-the-timeline-4}}
 			public class MyViewModel : ViewModelBase
 			{
-				...
-				private ITimeLineVisualizationBehavior _TimeLineDeadlineBehavior;
-		
-				public MyViewModel()
-				{
-					...
-					this._TimeLineDeadlineBehavior = new TimeLineDeadlineBehavior();
-				}
-		
-				...
-		
-				public ITimeLineVisualizationBehavior TimeLineDeadlineBehavior
-				{
-					get { return this._TimeLineDeadlineBehavior; }
-					set
-					{
-						if (this._TimeLineDeadlineBehavior != value)
-						{
-							this._TimeLineDeadlineBehavior = value;
-							this.OnPropertyChanged(() => this.TimeLineDeadlineBehavior);
-						}
-					}
-				}
+			    //...
+			    private ITimeLineVisualizationBehavior _TimeLineDeadlineBehavior;
+			
+			    public MyViewModel()
+			    {
+			        //...
+			        this._TimeLineDeadlineBehavior = new TimeLineDeadlineBehavior();
+			    }
+			
+			    //...
+			
+			    public ITimeLineVisualizationBehavior TimeLineDeadlineBehavior
+			    {
+			        get { return this._TimeLineDeadlineBehavior; }
+			        set
+			        {
+			            if (this._TimeLineDeadlineBehavior != value)
+			            {
+			                this._TimeLineDeadlineBehavior = value;
+			                this.OnPropertyChanged(() => this.TimeLineDeadlineBehavior);
+			            }
+			        }
+			    }
 			}
 	{{endregion}}
 
@@ -237,14 +237,14 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-5}}
+	{{region cs-radganttview-howto-customize-the-timeline-5}}
 			public class TimeLineDeadlineContainer : Control, IDataContainer
 			{
 				public TimeLineDeadlineContainer()
 				{
 					this.DefaultStyleKey = typeof(TimeLineDeadlineContainer);
 				}
-		
+			
 				public object DataItem { get; set; }
 			}
 	{{endregion}}
@@ -253,21 +253,21 @@ The example will go through on the following key steps:
 
 	#### __XAML__
 
-	{{region radganttview-howto-customize-the-timeline-0}}
+	{{region xaml-radganttview-howto-customize-the-timeline-0}}
 		<Style TargetType="local:TimeLineDeadlineContainer">
-			<Setter Property="telerik:ZIndexManager.ZIndex" Value="100"/>
-			<Setter Property="BorderBrush" Value="Red" />
-			<Setter Property="BorderThickness" Value="1" />
-			<Setter Property="Margin" Value="0 0 -3 0" />
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate>
-						<Grid>
-							<Rectangle Width="2" Fill="Red" VerticalAlignment="Stretch"/>
-						</Grid>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
+		    <Setter Property="telerik:ZIndexManager.ZIndex" Value="100"/>
+		    <Setter Property="BorderBrush" Value="Red" />
+		    <Setter Property="BorderThickness" Value="1" />
+		    <Setter Property="Margin" Value="0 0 -3 0" />
+		    <Setter Property="Template">
+		        <Setter.Value>
+		            <ControlTemplate>
+		                <Grid>
+		                    <Rectangle Width="2" Fill="Red" VerticalAlignment="Stretch"/>
+		                </Grid>
+		            </ControlTemplate>
+		        </Setter.Value>
+		    </Setter>
 		</Style>
 	{{endregion}}
 
@@ -275,18 +275,18 @@ The example will go through on the following key steps:
 
 	#### __C#__
 
-	{{region radganttview-howto-customize-the-timeline-6}}
+	{{region cs-radganttview-howto-customize-the-timeline-6}}
 			public class TimeLineDeadlineContainerSelector : DefaultTimeLineContainerSelector
 			{
 				private static readonly ContainerTypeIdentifier timelineDeadlineEventInfoContainerType = ContainerTypeIdentifier.FromType<TimeLineDeadlineContainer>();
-		
+			
 				public override ContainerTypeIdentifier GetContainerType(object item)
 				{
 					if (item is TimeLineDeadlineEventInfo)
 					{
 						return timelineDeadlineEventInfoContainerType;
 					}
-		
+			
 					return base.GetContainerType(item);
 				}
 			}
@@ -296,19 +296,19 @@ The example will go through on the following key steps:
 
 	#### __XAML__
 
-	{{region radganttview-howto-customize-the-timeline-1}}
+	{{region xaml-radganttview-howto-customize-the-timeline-1}}
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
-							  TimeLineVisualizationBehavior="{Binding TimeLineDeadlineBehavior}"
-							  VisibleRange="{Binding VisibleTime}"
-							  PixelLength="00:30:00">
-			<telerik:RadGanttView.TimelineContainerSelector>
-				<local:TimeLineDeadlineContainerSelector/>
-			</telerik:RadGanttView.TimelineContainerSelector>
-			<telerik:RadGanttView.Columns>
-				<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-				<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-			</telerik:RadGanttView.Columns>
+		TimeLineVisualizationBehavior="{Binding TimeLineDeadlineBehavior}"
+		VisibleRange="{Binding VisibleTime}"
+		PixelLength="00:30:00">
+		    <telerik:RadGanttView.TimelineContainerSelector>
+		        <local:TimeLineDeadlineContainerSelector/>
+		    </telerik:RadGanttView.TimelineContainerSelector>
+		    <telerik:RadGanttView.Columns>
+		        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
 	{{endregion}}
 
@@ -324,35 +324,35 @@ Repeat the steps from the preview example but on __step 3__ create the __EventIn
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-7}}
+{{region cs-radganttview-howto-customize-the-timeline-7}}
 		public class TimeLineDeadlineEventInfo : TimeSlotInfo
 		{
 			public TimeLineDeadlineEventInfo(Range<long> timeRange)
 				: base(timeRange)
 			{
 			}
-	
+		
 			public override bool Equals(object obj)
 			{
 				return this.Equals(obj as TimeLineDeadlineEventInfo);
 			}
-	
+		
 			public override int GetHashCode()
 			{
 				return base.GetHashCode();
 			}
 		}
-{{endregion}}
+	{{endregion}}
 
 And on __step 4__ create the custom __TimeLineDeadlineBehavior__ as follows:
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-8}}
+{{region cs-radganttview-howto-customize-the-timeline-8}}
 		public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 		{
 			private DateTime projectDeadline;
-	
+		
 			public DateTime ProjectDeadline
 			{
 				get { return this.projectDeadline; }
@@ -365,61 +365,63 @@ And on __step 4__ create the custom __TimeLineDeadlineBehavior__ as follows:
 					}
 				}
 			}
-	
+		
 			protected override System.Collections.IEnumerable GetBackgroundData(TimeLineVisualizationState state)
 			{
 				foreach (var background in base.GetBackgroundData(state))
 				{
 					yield return background;
 				}
-	
+		
 				var visibleRange = state.VisibleTimeRange;
 				var deadline = state.Rounder.Round(new DateRange(this.projectDeadline, this.projectDeadline));
 				var deadlineRange = new Range<long>(deadline.Start.Ticks, deadline.End.Ticks);
-	
+		
 				if (visibleRange.IntersectsWith(deadlineRange))
 				{
 					yield return new TimeLineDeadlineEventInfo(deadlineRange);
 				}
 			}
 		}
-{{endregion}}
+	{{endregion}}
 
 Finally we will need to create a __ProjectDeadline__ property in the ViewModel of type DateTime and initialize it with a sample data:
 
 #### __C#__
 
-{{region radganttview-howto-customize-the-timeline-9}}
+{{region cs-radganttview-howto-customize-the-timeline-9}}
 		public class MyViewModel : ViewModelBase
 		{
-			...
-			private DateTime _ProjectDeadline;
-	
-			public MyViewModel()
-			{
-				...
-				this.ProjectDeadline = date.AddDays(8);
-			}
-	
-			public DateTime ProjectDeadline
-			{
-				get { return this._ProjectDeadline; }
-				set
-				{
-					if (this._ProjectDeadline != value)
-					{
-						this._ProjectDeadline = value;
-						var behavior = this._TimeLineDeadlineBehavior as TimeLineDeadlineBehavior;
-						if (behavior != null)
-						{
-							behavior.ProjectDeadline = value;
-						}
-						this.OnPropertyChanged(() => this.ProjectDeadline);
-					}
-				}
-			}
+		    //...
+		    private DateTime _ProjectDeadline;
+		
+		    public MyViewModel()
+		    {
+		        //...
+		        this.ProjectDeadline = DateTime.Now.AddDays(8);
+		    }
+		
+		    public DateTime ProjectDeadline
+		    {
+		        get { return this._ProjectDeadline; }
+		        set
+		        {
+		            if (this._ProjectDeadline != value)
+		            {
+		                this._ProjectDeadline = value;
+		                var behavior = this._TimeLineDeadlineBehavior as TimeLineDeadlineBehavior;
+		                if (behavior != null)
+		                {
+		                    behavior.ProjectDeadline = value;
+		                }
+		                this.OnPropertyChanged(() => this.ProjectDeadline);
+		            }
+		        }
+		    }
+		
+		    public TimeLineDeadlineBehavior _TimeLineDeadlineBehavior { get; set; }
 		}
-{{endregion}}
+	{{endregion}}
 
 The next screenshot shows the final result (the red line represents the ProjectDeadline):
 

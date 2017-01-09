@@ -23,8 +23,7 @@ The ExportAsync method can be used similar to the Export method:
 
 #### __[C#]Example 1: Save RadGridView`s conteint in a Excel file__
 
-{{region gridview-export-async_0}}
-
+{{region cs-gridview-export-async_0}}
 	string extension = "xls";
 	SaveFileDialog dialog = new SaveFileDialog()
 	{
@@ -43,7 +42,8 @@ The ExportAsync method can be used similar to the Export method:
 	        ShowColumnFooters = true,
 	        ShowGroupFooters = false,
 	    }, true);
-	}            
+	}
+	        }
 {{endregion}}
 
 

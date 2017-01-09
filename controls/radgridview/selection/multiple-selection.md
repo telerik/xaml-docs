@@ -14,25 +14,22 @@ The __RadGridView__ allows the user to select more than one item from the displa
 
 #### __XAML__
 
-{{region gridview-multiple-selection_0}}
-
+{{region xaml-gridview-multiple-selection_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     SelectionMode="Extended">
-	    ...
+	                         SelectionMode="Extended">
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-multiple-selection_1}}
-
+{{region cs-gridview-multiple-selection_1}}
 	this.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-multiple-selection_2}}
-
+{{region vb-gridview-multiple-selection_2}}
 	Me.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended
 {{endregion}}
 
@@ -48,26 +45,23 @@ You can access all selected rows (or data items) through the __SelectedItems__ c
 
 #### __XAML__
 
-{{region gridview-multiple-selection_3}}
-
+{{region xaml-gridview-multiple-selection_3}}
 	<ListBox x:Name="listBoxSelectedItems"
-	         DisplayMemberPath="Name"
-	         ItemsSource="{Binding SelectedItems, ElementName=radGridView}" />
+	 DisplayMemberPath="Name"
+	 ItemsSource="{Binding SelectedItems, ElementName=radGridView}" />
 {{endregion}}
 
 
 
 #### __C#__
 
-{{region gridview-multiple-selection_4}}
-
+{{region cs-gridview-multiple-selection_4}}
 	listBoxSelectedItems.ItemsSource = this.radGridView.SelectedItems;
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-multiple-selection_5}}
-
+{{region vb-gridview-multiple-selection_5}}
 	listBoxSelectedItems.ItemsSource = Me.radGridView.SelectedItems
 {{endregion}}
 

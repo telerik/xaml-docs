@@ -50,12 +50,12 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all group panels of an application__
 
-	{{region gridview-styling-group-panel-1}}
+	{{region xaml-gridview-styling-group-panel-1}}
 	<Style TargetType="{x:Type telerik:GridViewGroupPanel}">
-		<Setter Property="MinHeight" Value="50"/>
-        <Setter Property="BorderThickness" Value="3"/>
-    </Style>
-	{{endregion}}
+	    <Setter Property="MinHeight" Value="50"/>
+	    <Setter Property="BorderThickness" Value="3"/>
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelStyle__.
 
@@ -65,12 +65,12 @@ You could also style all group panel items by creating a style, targeting the __
 
 #### __[XAML] Example 2: Styling all group panel items of an application__
 
-	{{region gridview-styling-group-panel-2}}
+	{{region xaml-gridview-styling-group-panel-2}}
 	<Style TargetType="{x:Type telerik:GridViewGroupPanelItem}">
-        <Setter Property="Padding" Value="10"/>
-        <Setter Property="FontSize" Value="20" />
-    </Style>
-	{{endregion}}
+	    <Setter Property="Padding" Value="10"/>
+	    <Setter Property="FontSize" Value="20" />
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelItemStyle__.
 
@@ -80,13 +80,13 @@ The __GridViewGroupPanelItem__ wraps the __GridViewGroupPanelCell__ control, whi
 
 #### __[XAML] Example 3: Styling the GridViewGroupPanelCell element__
 
-	{{region gridview-styling-group-panel-3}}
+	{{region xaml-gridview-styling-group-panel-3}}
 	<Style TargetType="{x:Type telerik:GridViewGroupPanelCell}">
-        <Setter Property="Background" Value="Red" />
-        <Setter Property="BorderBrush" Value="Yellow" />
-        <Setter Property="BorderThickness" Value="2" />
-    </Style>
-	{{endregion}}
+	    <Setter Property="Background" Value="Red" />
+	    <Setter Property="BorderBrush" Value="Yellow" />
+	    <Setter Property="BorderThickness" Value="2" />
+	</Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupPanelCellStyle__.
 
@@ -96,10 +96,10 @@ __RadGridView__ exposes two properties of type __Style__ - __GroupPanelStyle__ a
 
 #### __[XAML] Example 4: Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle__
 
-	{{region gridview-styling-group-panel-4}}
+	{{region xaml-gridview-styling-group-panel-4}}
 	<telerik:RadGridView GroupPanelStyle="{StaticResource GroupPanelStyle}"
-						 GroupPanelItemStyle="{StaticResource GroupPanelItemStyle}" />
-	{{endregion}}
+	GroupPanelItemStyle="{StaticResource GroupPanelItemStyle}" />
+{{endregion}}
 
 #### __Figure 4: RadGridView with styled group panel__
 
@@ -111,10 +111,10 @@ A simple way to change the group panel's foreground and background is through Ra
 
 #### __[XAML] Example 5: Setting RadGridView's GroupPanelForeground and GroupPanelBackground__
 
-	{{region gridview-styling-group-panel-5}}
+	{{region xaml-gridview-styling-group-panel-5}}
 	<telerik:RadGridView GroupPanelForeground="White"
-						 GroupPanelBackground="Blue" />
-	{{endregion}}
+	GroupPanelBackground="Blue" />
+{{endregion}}
 
 ## See Also
 

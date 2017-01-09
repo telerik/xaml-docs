@@ -10,91 +10,98 @@ position: 0
 
 # Overview
 
-
-
-## 
-
 {% if site.site_name == 'Silverlight' %}![](images/RadRichTextBox_overview_sl_01.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadRichTextBox_overview_wpf_01.png){% endif %}
 
-Thank you for choosing Telerik __RadRichTextBox__!
-        
-
-__RadRichTextBox__ is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
-        
+__RadRichTextBox__ is a control that can display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, images, etc.
 
 ![Rad Rich Text Box Overview 03](images/RadRichTextBox_Overview_03.png)
 
-* __Rich Text Formatting__ - Telerik __RadRichTextBox__ control allows you to edit text and apply rich formatting options, like:
-            
+## Key Features
 
-* Bold, Italic
+* __Rich Text Formatting__
+	Telerik RadRichTextBox control allows you to apply diffent rich formatting options. You can find some of them listed below.	
+	* Bold, Italic
+	* Underline, Strike Through, Superscript and Subscript
+	* {% if site.site_name == 'Silverlight' %}Built-in Silverlight fonts and sizes{% endif %}{% if site.site_name == 'WPF' %}Usage of all available system fonts {% endif %}
+	* Text color and background
+	* Bullet and numbered lists
+	* Paragraph alignment and indentation
+	* Show/Hide formatting symbols
+	* Clear Formatting 
 
-* Underline, Strike Through, Superscript and Subscript
+* __Inserting pictures, symbols, hyperlinks and custom UI elements__
+	For more information, see the [InlineUIContainer]({%slug radrichtextbox-features-document-elements-inlineuicontainer%}) article. You can also see the [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%}) and [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%}) articles.
 
-* {% if site.site_name == 'Silverlight' %}Built-in Silverlight fonts and sizes{% endif %}{% if site.site_name == 'WPF' %}Usage of all available system fonts {% endif %}
+* __Table support__
+	The control allows you to display and create tables. This feature includes also support for nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width, header row repeating on new pages, and more. For more information, see the [Table]({%slug radrichtextbox-features-document-elements-tables%}) article.
 
-* Text color and background
+* __Context menu__
+	A standard context menu is provided out of the box, but it can be easily customized or replaced with a user-defined menu. For more information, see the [Context Menu]({%slug radrichtextbox-features-context-menu%}) article.
 
-* Bullet and numbered lists
+* __SelectionMiniToolbar__
+	The rich text box component supports a floating toolbar that appears next to the selected element in the document. This feature is very similar to the one in MS Word, but can also be replaced with another mini toolbar. For more information, see the [Selection Mini Tool Bar]({%slug radrichtextbox-features-selection-mini-toolbar%}) article.
 
-* Paragraph alignment and indentation
+* __SpellChecker__
+	An extensible spell checking for different languages, using the built-in or custom dictionaries. For more information, see the [Spellcheck]({%slug radrichtextbox-features-spellcheck%}) article.
 
-* Show/Hide formatting symbols
+* __Printing__
+	{% if site.site_name == 'Silverlight' %}The printing feature allows you to choose between HTML printing for better performance and the Silverlight printing.{% endif %}{% if site.site_name == 'WPF' %}The printing feature allows you to use the native printing implementation of WPF{% endif %}. For more information, see the [Guidelines for Printing with RadDocument]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}) article.
 
-* Clear Formatting 
+* __Multi-level Undo/Redo Support__
+	Telerik __RadRichTextBox__ provides multilevel Undo/Redo support which allows past actions to be reviewed and reversed.For more information, see the [History]({%slug radrichtextbox-features-history%}) article.
 
-* __Inserting pictures/symbols/hyperlinks/custom UI elements__ - [Read more]({%slug radrichtextbox-features-document-elements-inlineuicontainer%})
+* __Three types of layout__
+	There are three layout types supported by the rich text box conrol - Paged, Flow (as text in an HTML page viewed in a browser) and FlowNoWrap. For more information, see the [Layout Modes]({%slug radrichtextbox-features-layout-modes%}) help article.
 
-* __Table support__ – including nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width and more. [Read more]({%slug radrichtextbox-features-document-elements-tables%})
+* __Multi-region selection__
+	The built-in multi-region support enables you to perform various operations for more than one selection simultaneously. For more information, see the [Selection]({%slug radrichtextbox-features-selection%}) article.
 
-* __ContextMenu__ - a standard one is provided out of the box, but it can be easily customized or substituted for a user-defined one. [Read more]({%slug radrichtextbox-features-context-menu%})
+* {% if site.site_name == 'Silverlight' %}__Delete, Cut, Copy and Paste in plain text (using Silverlight 4.0 build-in clipboard). Copy/Paste in internal rich-text clipboard.__{% endif %}{% if site.site_name == 'WPF' %}__Rich-text clipboard__{% endif %}
+	{% if site.site_name == 'WPF' %} The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc.{% endif %} For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article.
 
-* __SelectionMiniToolbar__ - very similar to the one in MS Word, but can also be replaced with another. [Read more]({%slug radrichtextbox-features-selection-mini-toolbar%})
+* __Import/export__
+	Telerik RadRichTextBox allows you to load XAML, HTML, RTF, DOCX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats. The control also supports export to PDF. For more information, see the [Import/Export]({%slug radrichtextbox-features-import-export%}) article.
 
-* __SpellChecker__ - extensible spell checking for different languages, using built-in or custom dictionaries. [Read more]({%slug radrichtextbox-features-spellcheck%})
+* __Headers and Footers__ 
+	RadRichTextBox supports headers and footers in its document. For more information, see the [Headers and Footers]({%slug radrichtextbox-features-headers-and-footers%}) article.
 
-* __Printing__{% if site.site_name == 'Silverlight' %} – users can choose between HTML printing for better performance and Silverlight printing. {% endif %}{% if site.site_name == 'WPF' %} – through the native printing implementation of WPF. {% endif %}[Read more]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%})
+* __Track changes__
+	Support for tracking changes as formatting changes, adding and removing text, images, hyperlinks, tables, etc. This feature is useful when different people are working on the same document. For more information, see the [Track Changes]({%slug radrichtextbox-features-track-changes%}) article.
 
-* __Multi-level Undo/Redo Support__ - Telerik __RadRichTextBox__ provides desktop-like usability and control thanks to its multilevel Undo/Redo feature. It allows past actions to be reviewed and reversed, just like in Microsoft Word. [Read more]({%slug radrichtextbox-features-history%})
+* __Bookmarks__
+	The control provides easy retrieval of previously marked parts of the document. For more information, see the [Bookmarks]({%slug radrichtextbox-features-document-elements-bookmarks%}) article.
 
-* __Three types of layout__ – Paged, Flow (as text in an HTML page viewed in a browser) and FlowNoWrap. [Read more]({%slug radrichtextbox-features-layout-modes%})
+* __Comments__ 
+	RadRichTextBox offers the ability to add text to the document which is not inserted directly in the page. For more information, see the [Comments]({%slug radrichtextbox-features-comments%}) article.
 
-* __Multi-region selection__ - the built-in multi-region support enables you to perform various operations for more than one selection simultaneously. [Read more]({%slug radrichtextbox-features-selection%})
+* __Document protection__
+	You can define editing restrictions in the document for a set of users and groups. For more information, see the [Document Protection]({%slug radrichtextbox-features-document-protection%}) article.
 
-* {% if site.site_name == 'Silverlight' %}__Delete, Cut, Copy and Paste in plain text (using Silverlight 4.0 build-in clipboard). Copy/Paste in internal rich-text clipboard.__{% endif %}{% if site.site_name == 'WPF' %}__Rich-text clipboard –__ allows rich text copy/paste from Word, OpenOffice etc.; {% endif %}[Read more]({%slug radrichtextbox-features-clipboard-support%})
+* __Mail merge__ 
+	The control makes populating a template document with data easy. For more information, see the [Mail Merge]({%slug radrichtextbox-features-mail-merge%}) article.
 
-* __Import/export__ - with Telerik __RadRichTextBox__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug radrichtextbox-features-import-export%})
+* __Custom annotations__
+	You can extend the document model in order to serve specific needs. For more information, see the [Annotations Overview]({%slug radrichtextbox-features-document-elements-annotations%}) article.
 
-* __Headers and Footers__ - __RadRichTextBox__ supports headers and footers in its document. [Read more]({%slug radrichtextbox-features-headers-and-footers%})
+* __Footnotes and Endnotes__
+	This feature is usually used to show the source of a material or add an explanation. For more information, see the [Footnotes and Endnotes]({%slug radrichtextbox-features-footnotes-endnotes%}) article.
 
-* __Track changes__ - adding and removing of text, images, hyperlinks, tables, etc. and formatting changes of these elements can be tracked by different users. [Read more]({%slug radrichtextbox-features-track-changes%})
+* __Bibliographic references__
+	This feature can be used for referencing a source in the form of text or pointing the source of a citation. For more information, see the [Bibliographic References]({%slug radrichtextbox-features-bibliographic-references%}) article.
 
-* __Bookmarks__ - provide easy retrieval of previously marked parts of the document. [Read more]({%slug radrichtextbox-features-document-elements-bookmarks%})
+* __Cross-references__
+	References to a Heading, Caption or Bookmark can change along with their source. For more information, see the [Corss-Reference]({%slug radrichtextbox-features-cross-reference%}) article.
 
-* __Comments__ - offer the ability to add text to the document which is not inserted directly in the page. [Read more]({%slug radrichtextbox-features-comments%})
+* __Captions for tables and figures__
+	Images, tables, etc. can now be easily labeled. For more information, see the [Captions for Tables and Figures]({%slug radrichtextbox-features-captions-for-tables-and-figures%}) article.
 
-* __Document protection__ - allows editing restrictions in the document for a set of users and groups. [Read more]({%slug radrichtextbox-features-document-protection%})
+* __Document variables__
+	The control provides a mechanism used for storing information in the document. For more information, see the [Document Variables]({%slug radrichtextbox-features-document-variables%}) article.
 
-* __Mail merge__ - makes populating a template document with data easy. [Read more]({%slug radrichtextbox-features-mail-merge%})
+* __Code blocks__
+	This feature allows you to add source code fragments in a document. For more information, see the [Code Block]({%slug radrichtextbox-features-code-block%}) article.
 
-* __Custom annotations__ - enables you to extend the document model in order to serve specific needs. [Read more]({%slug radrichtextbox-features-document-elements-annotations%})
-
-* __Footnotes and Endnotes__ - usually used to show the source of a material or add an explanation. [Read more]({%slug radrichtextbox-features-footnotes-endnotes%})
-
-* __Bibliographic references__ - can be used for referencing a source in the form of text or pointing the source of a citation. [Read more]({%slug radrichtextbox-features-bibliographic-references%})
-
-* __Cross-references__ - references to a Heading, Caption or Bookmark can now change along with their source. [Read more]({%slug radrichtextbox-features-cross-reference%})
-
-* __Captions for tables and figures__ - images, tables, etc. can now be easily labeled. [Read more]({%slug radrichtextbox-features-captions-for-tables-and-figures%})
-
-* __Document variables__ - a mechanism used for storing information in the document. [Read more]({%slug radrichtextbox-features-document-variables%})
-
-* __Code blocks__ - provide the ability to add source code fragments in a document. [Read more]({%slug radrichtextbox-features-code-block%})
-
-# See Also
-
+## See Also
  * [Getting Started]({%slug radrichtextbox-getting-started%})
-
  * [Events]({%slug radrichtextbox-events-overview%})
-
  * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})

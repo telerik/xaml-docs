@@ -22,9 +22,8 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_0}}
-
-	<telerik:RadGridView x:Name="radGridView"/>
+{{region xaml-gridview-loading-data-from-wcf-services_0}}
+	<telerik:RadGridView />
 {{endregion}}
 
 ## Plain Method Calls
@@ -35,16 +34,14 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_1}}
-
+{{region cs-gridview-loading-data-from-wcf-services_1}}
 	WcfServiceClient serviceClient = new WcfServiceClient();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_2}}
-
-	Dim serviceClient As New WcfServiceClient()
+{{region vb-gridview-loading-data-from-wcf-services_2}}
+	Private serviceClient As New WcfServiceClient()
 {{endregion}}
 
 >tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
@@ -53,15 +50,14 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_3}}
-
+{{region cs-gridview-loading-data-from-wcf-services_3}}
 	private void BeginRequest()
 	{
-	    serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>( serviceClient_LoadCustomersCompleted );
+	    serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
 	    serviceClient.LoadCustomersAsync();
 	}
 	
-	private void serviceClient_LoadCustomersCompleted( object sender, RadGridViewServices.GridViewWcfService.LoadCustomersCompletedEventArgs e )
+	private void serviceClient_LoadCustomersCompleted(object sender, LoadCustomersCompletedEventArgs e)
 	{
 	    var customers = e.Result;
 	    this.radGridView.ItemsSource = customers;
@@ -70,14 +66,13 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_4}}
-
+{{region vb-gridview-loading-data-from-wcf-services_4}}
 	Private Sub BeginRequest()
 	    AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	    serviceClient.LoadCustomersAsync()
 	End Sub
 	
-	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As RadGridViewServices.GridViewWcfService.LoadCustomersCompletedEventArgs)
+	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As LoadCustomersCompletedEventArgs)
 	    Dim customers = e.Result
 	    Me.radGridView.ItemsSource = customers
 	End Sub
@@ -85,17 +80,13 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_5}}
-
-	WcfServiceClient serviceClient = new WcfServiceClient();
+{{region cs-gridview-loading-data-from-wcf-services_5}}
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_6}}
-
-	Dim serviceClient As New WcfServiceClient()
+{{region vb-gridview-loading-data-from-wcf-services_6}}
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
 {{endregion}}
 
@@ -111,8 +102,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_7}}
-
+{{region cs-gridview-loading-data-from-wcf-services_7}}
 	public class NorthwindDataSource
 	{
 	}
@@ -120,8 +110,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_8}}
-
+{{region vb-gridview-loading-data-from-wcf-services_8}}
 	Public Class NorthwindDataSource
 	End Class
 {{endregion}}
@@ -134,17 +123,16 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_9}}
-
+{{region cs-gridview-loading-data-from-wcf-services_9}}
 	public class NorthwindDataSource
 	{
 	    private SampleWcfServiceClient serviceClient;
 	    public NorthwindDataSource()
 	    {
 	        serviceClient = new SampleWcfServiceClient();
-	        this.Customers = new ObservableCollection<Customers>();
+	        this.Customers = new ObservableCollection<Customer>();
 	    }
-	    public ObservableCollection<Customers> Customers
+	    public ObservableCollection<Customer> Customers
 	    {
 	        get;
 	        set;
@@ -154,25 +142,14 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_10}}
-
+{{region vb-gridview-loading-data-from-wcf-services_10}}
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
-	
 	    Public Sub New()
 	        serviceClient = New SampleWcfServiceClient()
-	        Me.Customers = New ObservableCollection(Of Customers)()
+	        Me.Customers = New ObservableCollection(Of Customer)()
 	    End Sub
-	
-	Private _Customers As ObservableCollection(Of Customers)
-	    Public Property Customers() As ObservableCollection(Of Customers)
-	        Get
-	            Return _Customers
-	        End Get
-	        Set(ByVal value As ObservableCollection(Of Customers))
-	            _Customers = value
-	        End Set
-	    End Property
+	    Public Property Customers() As ObservableCollection(Of Customer)
 	End Class
 {{endregion}}
 
@@ -183,38 +160,34 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_11}}
-
-	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>( serviceClient_LoadCustomersCompleted );
+{{region cs-gridview-loading-data-from-wcf-services_11}}
+	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
 	serviceClient.LoadCustomersAsync();
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_12}}
-
-	foreach ( Customers c in serviceClient.LoadCustomers() )
+{{region cs-gridview-loading-data-from-wcf-services_12}}
+	foreach (Customer c in serviceClient.LoadCustomers())
 	{
-	    this.Customers.Add( c );
+	    this.Customers.Add(c);
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_13}}
-
+{{region vb-gridview-loading-data-from-wcf-services_13}}
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_14}}
-
-	For Each c As Customers In serviceClient.LoadCustomers()
+{{region vb-gridview-loading-data-from-wcf-services_14}}
+	For Each c As Customer In serviceClient.LoadCustomers()
 	    Me.Customers.Add(c)
-	Next
-	{{endregion}}
+	Next c
+{{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -222,41 +195,33 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __C#__
 
-{{region gridview-loading-data-from-wcf-services_15}}
-
-	private void serviceClient_LoadCustomersCompleted( object sender, LoadCustomersCompletedEventArgs e )
+{{region cs-gridview-loading-data-from-wcf-services_15}}
+	if (e.Error == null && e.Result != null)
 	{
-	    if ( e.Error == null && e.Result != null )
+	    foreach (Customer c in e.Result)
 	    {
-	        foreach ( Customers c in e.Result )
-	        {
-	            this.Customers.Add( c );
-	        }
+	        this.Customers.Add(c);
 	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-loading-data-from-wcf-services_16}}
-
-	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As LoadCustomersCompletedEventArgs)
-	    If e.[Error] Is Nothing AndAlso e.Result IsNot Nothing Then
-	        For Each c As Customers In e.Result
-	            Me.Customers.Add(c)
-	        Next
-	    End If
-	End Sub
+{{region vb-gridview-loading-data-from-wcf-services_16}}
+	If e.Error Is Nothing AndAlso e.Result IsNot Nothing Then
+	    For Each c As Customer In e.Result
+	        Me.Customers.Add(c)
+	    Next c
+	End If
 {{endregion}}
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_17}}
-
+{{region xaml-gridview-loading-data-from-wcf-services_17}}
 	<UserControl.Resources>
-	   <example:NorthwindDataSource x:Key="DataSource"/>
+	    <local:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
 {{endregion}}
 
@@ -264,10 +229,8 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __XAML__
 
-{{region gridview-loading-data-from-wcf-services_18}}
-
-	<telerik:RadGridView x:Name="radGridView" Margin="8"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
+{{region xaml-gridview-loading-data-from-wcf-services_18}}
+	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
 {{endregion}}
 
 Run your demo, the result can be seen on the next picture: 

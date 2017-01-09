@@ -29,14 +29,12 @@ RadGridView's new **CanUserSelectColumns** property determines whether users can
 #### __[C#] Example 1: Setting RadGridView's CanUserSelectColumns property__
 
 {{region cs-gridview-column-selection_1}}
-
 	this.radGridView.CanUserSelectColumns = true;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Setting RadGridView's CanUserSelectColumns property__
 
-{{region vb-gridview-column-selection_2}}
-
+{{region vb-gridview-column-selection_1}}
 	Me.radGridView.CanUserSelectColumns = True
 {{endregion}}
 
@@ -54,15 +52,13 @@ Columns can also be selected programmatically by setting their **IsSelected** pr
 
 #### __[C#] Example 1: Setting a column's IsSelected property__
 
-{{region cs-gridview-column-selection_3}}
-
+{{region cs-gridview-column-selection_2}}
 	this.radGridView.Columns["Name"].IsSelected = true;
 {{endregion}}
 
 #### __[VB.NET] Example 1: Setting a column's IsSelected property__
 
-{{region vb-gridview-column-selection_4}}
-
+{{region vb-gridview-column-selection_2}}
 	Me.radGridView.Columns("Name").IsSelected = True
 {{endregion}}
 
@@ -72,15 +68,13 @@ Another way to programmatically select columns is by using the [SelectCellRegion
 
 #### __[C#] Example 1: Selecting a column with the SelectCellRegion method__
 
-{{region cs-gridview-column-selection_5}}
-
+{{region cs-gridview-column-selection_3}}
 	this.radGridView.SelectCellRegion(new CellRegion(this.radGridView.Columns["Name"].DisplayIndex, 0, 1, this.radGridView.Items.Count));
 {{endregion}}
 
 #### __[VB.NET] Example 1: Selecting a column with the SelectCellRegion method__
 
-{{region vb-gridview-column-selection_6}}
-
+{{region vb-gridview-column-selection_3}}
 	Me.radGridView.SelectCellRegion(New CellRegion(Me.radGridView.Columns("Name").DisplayIndex, 0, 1, Me.radGridView.Items.Count))
 {{endregion}}
 

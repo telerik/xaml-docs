@@ -18,33 +18,33 @@ The next example demonstrates how to customize the CellTemplate of the Title col
 
 #### __XAML__
 
-{{region radganttview-features-columns-cell-template-0}}
+{{region xaml-radganttview-features-columns-cell-template-0}}
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-						  VerticalAlignment="Top"
-						  VisibleRange="{Binding VisibleTime}">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Red" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellTemplate>
-			</telerik:TreeColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Green" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellTemplate>
-			</telerik:ColumnDefinition>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
-				<telerik:ColumnDefinition.CellTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Blue" VerticalAlignment="Center"/>
-					</DataTemplate>
-				</telerik:ColumnDefinition.CellTemplate>
-			</telerik:ColumnDefinition>
-		</telerik:RadGanttView.Columns>
+	VerticalAlignment="Top"
+	VisibleRange="{Binding VisibleTime}">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Red" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellTemplate>
+	        </telerik:TreeColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Green" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellTemplate>
+	        </telerik:ColumnDefinition>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent">
+	            <telerik:ColumnDefinition.CellTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding FormattedValue}" FontWeight="Bold" Foreground="Blue" VerticalAlignment="Center"/>
+	                </DataTemplate>
+	            </telerik:ColumnDefinition.CellTemplate>
+	        </telerik:ColumnDefinition>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 

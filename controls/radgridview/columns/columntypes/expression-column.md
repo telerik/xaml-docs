@@ -16,16 +16,15 @@ __GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 #### __[XAML] Example 1: Define GridViewExpressionColumn in XAML.__
 
-{{region gridview-expression-column_0}}
-
-	<telerik:RadGridView ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
-	 <telerik:RadGridView.Columns>
-	         <telerik:GridViewDataColumn Header="Product ID" DataMemberBinding="{Binding ProductID}" />
-	         <telerik:GridViewDataColumn Header="Product name" DataMemberBinding="{Binding ProductName}" />
-	         <telerik:GridViewDataColumn Header="Unit price" DataMemberBinding="{Binding UnitPrice}" DataFormatString="{}{0:C}" />
-	         <telerik:GridViewDataColumn Header="Units in stock" DataMemberBinding="{Binding UnitsInStock}" />
-	         <telerik:GridViewExpressionColumn Header="Total value in stock" UniqueName="TotalValue" DataFormatString="{}{0:C}" />
-	 </telerik:RadGridView.Columns>
+{{region xaml-gridview-expression-column_0}}
+	<telerik:RadGridView x:Name="RadGridView1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn Header="Product ID" DataMemberBinding="{Binding ProductID}" />
+	        <telerik:GridViewDataColumn Header="Product name" DataMemberBinding="{Binding ProductName}" />
+	        <telerik:GridViewDataColumn Header="Unit price" DataMemberBinding="{Binding UnitPrice}" DataFormatString="{}{0:C}" />
+	        <telerik:GridViewDataColumn Header="Units in stock" DataMemberBinding="{Binding UnitsInStock}" />
+	        <telerik:GridViewExpressionColumn Header="Total value in stock" UniqueName="TotalValue" DataFormatString="{}{0:C}" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 

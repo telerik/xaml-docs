@@ -17,93 +17,90 @@ Here is an example of how to create a RadDateTimePicker and use it as a custom f
 
 #### __C#__
 
-{{region gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
-
+{{region cs-gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
 	public class MyDateTimeColumn : Telerik.Windows.Controls.GridViewDataColumn
 	{
-		public override FrameworkElement CreateFieldFilterEditor()
-		{
-			Telerik.Windows.Controls.RadDateTimePicker dateTimePicker = new Telerik.Windows.Controls.RadDateTimePicker();
+	    public override FrameworkElement CreateFieldFilterEditor()
+	    {
+	        Telerik.Windows.Controls.RadDateTimePicker dateTimePicker = new Telerik.Windows.Controls.RadDateTimePicker();
 	
-			// This binding will transfer the significant property of your editor to the filtering view model.
-			Binding selectedValueBinding = new Binding("Value");
-			selectedValueBinding.Mode = BindingMode.TwoWay;
-			selectedValueBinding.FallbackValue = null;
-			selectedValueBinding.Converter = new DateTimeFilterEditorConverter();
-			
-			dateTimePicker.SetBinding(Telerik.Windows.Controls.RadDateTimePicker.SelectedValueProperty, selectedValueBinding);
+	        // This binding will transfer the significant property of your editor to the filtering view model.
+	        Binding selectedValueBinding = new Binding("Value");
+	        selectedValueBinding.Mode = BindingMode.TwoWay;
+	        selectedValueBinding.FallbackValue = null;
+	        selectedValueBinding.Converter = new DateTimeFilterEditorConverter();
 	
-			return dateTimePicker;
-		}
+	        dateTimePicker.SetBinding(Telerik.Windows.Controls.RadDateTimePicker.SelectedValueProperty, selectedValueBinding);
 	
-		private class DateTimeFilterEditorConverter : IValueConverter
-		{
-			public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-			{
-				if (Object.Equals(value, Telerik.Windows.Data.FilterDescriptor.UnsetValue))
-				{
-					// When the filter is turned off this is what your editor will get.
-					return null;
-				}
+	        return dateTimePicker;
+	    }
 	
-				return value;
-			}
+	    private class DateTimeFilterEditorConverter : IValueConverter
+	    {
+	        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	        {
+	            if (Object.Equals(value, Telerik.Windows.Data.FilterDescriptor.UnsetValue))
+	            {
+	                // When the filter is turned off this is what your editor will get.
+	                return null;
+	            }
 	
-			public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-			{
-				if (value == null)
-				{
-					// When your editor want to turn off the filter this is what it should return.
-					return Telerik.Windows.Data.FilterDescriptor.UnsetValue;
-				}
+	            return value;
+	        }
 	
-				return value;
-			}
-		}
+	        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	        {
+	            if (value == null)
+	            {
+	                // When your editor want to turn off the filter this is what it should return.
+	                return Telerik.Windows.Data.FilterDescriptor.UnsetValue;
+	            }
+	
+	            return value;
+	        }
+	    }
 	}
 {{endregion}}
 
 
 #### __VB.NET__
 
-{{region gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
-
+{{region vb-gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
 	Public Class MyDateTimeColumn
-		Inherits Telerik.Windows.Controls.GridViewDataColumn
-		Public Overrides Function CreateFieldFilterEditor() As FrameworkElement
-			Dim dateTimePicker As New Telerik.Windows.Controls.RadDateTimePicker()
+	    Inherits Telerik.Windows.Controls.GridViewDataColumn
+	    Public Overrides Function CreateFieldFilterEditor() As FrameworkElement
+	        Dim dateTimePicker As New Telerik.Windows.Controls.RadDateTimePicker()
 	
-			' This binding will transfer the significant property of your editor to the filtering view model.'
-			Dim selectedValueBinding As New Binding("Value")
-			selectedValueBinding.Mode = BindingMode.TwoWay
-			selectedValueBinding.FallbackValue = Nothing
-			selectedValueBinding.Converter = New DateTimeFilterEditorConverter()
+	        ' This binding will transfer the significant property of your editor to the filtering view model.
+	        Dim selectedValueBinding As New Binding("Value")
+	        selectedValueBinding.Mode = BindingMode.TwoWay
+	        selectedValueBinding.FallbackValue = Nothing
+	        selectedValueBinding.Converter = New DateTimeFilterEditorConverter()
 	
-			dateTimePicker.SetBinding(Telerik.Windows.Controls.RadDateTimePicker.SelectedValueProperty, selectedValueBinding)
+	        dateTimePicker.SetBinding(Telerik.Windows.Controls.RadDateTimePicker.SelectedValueProperty, selectedValueBinding)
 	
-			Return dateTimePicker
-		End Function
+	        Return dateTimePicker
+	    End Function
 	
-		Private Class DateTimeFilterEditorConverter
-			Implements IValueConverter
-			Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object Implements IValueConverter.Convert
-				If [Object].Equals(value, Telerik.Windows.Data.FilterDescriptor.UnsetValue) Then
-					' When the filter is turned off this is what your editor will get.'
-					Return Nothing
-				End If
+	    Private Class DateTimeFilterEditorConverter
+	        Implements IValueConverter
+	        Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object Implements IValueConverter.Convert
+	            If [Object].Equals(value, Telerik.Windows.Data.FilterDescriptor.UnsetValue) Then
+	                ' When the filter is turned off this is what your editor will get.
+	                Return Nothing
+	            End If
 	
-				Return value
-			End Function
+	            Return value
+	        End Function
 	
-			Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object Implements IValueConverter.ConvertBack
-				If value Is Nothing Then
-					' When your editor want to turn off the filter this is what it should return.'
-					Return Telerik.Windows.Data.FilterDescriptor.UnsetValue
-				End If
+	        Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object Implements IValueConverter.ConvertBack
+	            If value Is Nothing Then
+	                ' When your editor want to turn off the filter this is what it should return.
+	                Return Telerik.Windows.Data.FilterDescriptor.UnsetValue
+	            End If
 	
-				Return value
-			End Function
-	
-		End Class
+	            Return value
+	        End Function
+	    End Class
 	End Class
 {{endregion}}

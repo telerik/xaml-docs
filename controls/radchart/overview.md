@@ -30,9 +30,9 @@ __RadChart__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{
 
 RadChart key features list:
 
-* __24 2D Chart Types__ - Telerik __RadChart__ supports __24 2D__ charts to help you create rich, visually-appealing presentations, among which are: __Bar__, __Stacked Bar 100__, __Line__, __StackedLine__, __Area__, __Range__, __Spline__, __Bubble__, __Candlestick__, __Pie__, __Doughnut__ and many more. [Read more]({%slug radchart-features-chart-types-2d-charts%})
+* __2D Chart Types__ - Telerik __RadChart__ supports __24 2D__ charts to help you create rich, visually-appealing presentations, among which are: __Bar__, __Stacked Bar 100__, __Line__, __StackedLine__, __Area__, __Range__, __Spline__, __Bubble__, __Candlestick__, __Pie__, __Doughnut__ and many more. [Read more]({%slug radchart-features-chart-types-2d-charts%})
 
-* __10__ - Telerik __RadChart__ is the first commercial control to support 3D charts. The 3D charts gallery includes __10__ types, such as __Line__, __Bar__, __Area__, __Pie__, __Doughnut__ and more. Furthermore the control offers rotation on 360 degrees on the X axis. [Read more]({%slug radchart-features-chart-types-3d-charts%})
+* __3D Chart Types__ - Telerik __RadChart__ is the first commercial control to support 3D charts. The 3D charts gallery includes __10__ types, such as __Line__, __Bar__, __Area__, __Pie__, __Doughnut__ and more. Furthermore the control offers rotation on 360 degrees on the X axis. [Read more]({%slug radchart-features-chart-types-3d-charts%})
 
 * __Rich Data Binding Support__ - leveraging the databinding capabilities, Telerik __RadChart__ can bind to various data services and other sources, such as Data Services, Lists of objects, ArrayList, ObservableCollection (with support for change notification). [Read more]({%slug radchart-populating-with-data-overview%})
 

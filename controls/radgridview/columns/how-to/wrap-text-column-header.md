@@ -19,7 +19,7 @@ We will take advantage of the fact that the __Header__ property of the GridView 
 
 #### __XAML__
 
-{{region gridview-howto-wrap-text-column-header_0}}
+{{region xaml-gridview-howto-wrap-text-column-header_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" 
 	                            DataFormatString="{}{0:yyyy}"

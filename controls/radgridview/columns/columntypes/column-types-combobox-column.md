@@ -40,10 +40,9 @@ The following example assumes that you have data as shown in __Figure 1__:
 
 #### __[XAML] Example 1: Define GridViewComboBoxColumn.__
 
-{{region radgridview-columns-column-types-combobox-column_0}}
-
+{{region xaml-radgridview-columns-column-types-combobox-column_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewComboBoxColumn />
 	    </telerik:RadGridView.Columns>
@@ -52,52 +51,48 @@ The following example assumes that you have data as shown in __Figure 1__:
 
 #### __[XAML] Example 2: Define DataMemberBinding.__
 
-{{region radgridview-columns-column-types-combobox-column_3}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+{{region xaml-radgridview-columns-column-types-combobox-column_3}}
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}" />
+	        <telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
+	                                    UniqueName="Country" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
 #### __[C#] Example 2: Define DataMemberBinding.__
 
-{{region radgridview-columns-column-types-combobox-column_4}}
-
-	column.DataMemberBinding = new Binding( "CountryId" );
+{{region cs-radgridview-columns-column-types-combobox-column_4}}
+	column.DataMemberBinding = new Binding("CountryId");
+	column.UniqueName = "Country";
 {{endregion}}
 
 #### __[C#] Example 3: Setting ItemsSource.__
 
-{{region radgridview-columns-column-types-combobox-column_6}}
-
+{{region cs-radgridview-columns-column-types-combobox-column_6}}
 	((GridViewComboBoxColumn)this.radGridView.Columns["Country"]).ItemsSource = RadGridViewSampleData.GetCountries();
 {{endregion}}
 
 #### __[VB.NET] Example 3: Setting ItemsSource.__
 
-{{region radgridview-columns-column-types-combobox-column_7}}
-
+{{region vb-radgridview-columns-column-types-combobox-column_7}}
 	DirectCast(Me.radGridView.Columns("Country"), GridViewComboBoxColumn).ItemsSource = RadGridViewSampleData.GetCountries()
 {{endregion}}
 
 
 #### __[XAML] Example 4: Configure DisplayMemberPath and SelectedValuePath properties in XAML.__
 
-{{region radgridview-columns-column-types-combobox-column_8}}
-
+{{region xaml-radgridview-columns-column-types-combobox-column_8}}
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
-                                    SelectedValueMemberPath="Id"
-                                    DisplayMemberPath="Name" />
-	{{endregion}}
+	                    UniqueName="Country"
+	                    SelectedValueMemberPath="Id"
+	                    DisplayMemberPath="Name" />
+{{endregion}}
 
 
 #### __[C#] Example 4: Configure DisplayMemberPath and SelectedValuePath properties in code.__
 
-{{region radgridview-columns-column-types-combobox-column_9}}
-
+{{region cs-radgridview-columns-column-types-combobox-column_9}}
 	column.SelectedValueMemberPath = "Id";
 	column.DisplayMemberPath = "Name";
 {{endregion}}
@@ -121,14 +116,13 @@ __RadGridView__ binds to a collection of objects representing the teams. The tea
 
 #### __[XAML] Example 5: Configure GridViewComboBoxColumn with ItemsSourceBinding.__
 
-{{region radgridview-columns-column-types-combobox-column_11}}
-
+{{region xaml-radgridview-columns-column-types-combobox-column_11}}
 	<telerik:GridViewComboBoxColumn Header="Driver"
-                                    DataMemberBinding="{Binding DriverID}"
-                                    ItemsSourceBinding="{Binding CurrentDrivers}"
-                                    SelectedValueMemberPath="ID"
-                                    IsLightweightModeEnabled="True"
-                                    DisplayMemberPath="Name" />
+	                    DataMemberBinding="{Binding DriverID}"
+	                    UniqueName="Driver"
+	                    ItemsSourceBinding="{Binding CurrentDrivers}"
+	                    SelectedValueMemberPath="ID"
+	                    DisplayMemberPath="Name" />
 {{endregion}}
 
 
@@ -165,14 +159,13 @@ Start by defining the GridViewComboBoxColumn and its __ItemTemplate__:
 
 #### __[XAML] Example 6: Configure GridViewComboBoxColumn with ItemTemplate.__
 
-{{region radgridview-columns-column-types-combobox-column_12}}
-
+{{region xaml-radgridview-columns-column-types-combobox-column_12}}
 	<telerik:GridViewComboBoxColumn Header="City"
-	                                DisplayMemberPath="Name"
-	                                SelectedValueMemberPath="ID"
-	                                ItemsSource="{Binding Path=Cities, Source={StaticResource mainPageViewModel}}"
-	                                Width="*"
-	                                DataMemberBinding="{Binding CityID}">
+	                DisplayMemberPath="Name"
+	                SelectedValueMemberPath="ID"
+	                ItemsSource="{Binding Path=Cities, Source={StaticResource MyViewModel}}"
+	                Width="*"
+	                DataMemberBinding="{Binding CityID}">
 	    <telerik:GridViewComboBoxColumn.ItemTemplate>
 	        <DataTemplate>
 	            <Grid>

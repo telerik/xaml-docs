@@ -22,11 +22,11 @@ This article will show how to access and set different properties, in code behin
 
 #### __XAML__
 
-{{region gridview-how-to-access-child-gridview_0}}
-
+{{region xaml-gridview-how-to-access-child-gridview_0}}
 	<telerik:RadGridView Name="employeeRadGridView" 
-	                     ItemsSource="{Binding Employees}" 
-	                     DataLoading="employeeRadGridView_DataLoading">...
+	             ItemsSource="{Binding Employees}" 
+	             DataLoading="employeeRadGridView_DataLoading">
+	    <!-- ... -->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -34,53 +34,51 @@ This article will show how to access and set different properties, in code behin
 
 #### __C#__
 
-{{region gridview-how-to-access-child-gridview_1}}
-
+{{region cs-gridview-how-to-access-child-gridview_1}}
 	private void employeeRadGridView_DataLoading(object sender, GridViewDataLoadingEventArgs e)
 	{
-	     GridViewDataControl dataControl = (GridViewDataControl) sender;
-	     if (dataControl.ParentRow != null)
-	     {
-	            //dataControl is the child gridview
-	            dataControl.ShowGroupPanel = false;
-	            GridViewDataColumn column = new GridViewDataColumn();
-	            column.DataMemberBinding = new Binding("EmployeeID");
-	            dataControl.Columns.Add(column);
-	            column = new GridViewDataColumn();
-	            column.DataMemberBinding = new Binding("FirstName");
-	            dataControl.Columns.Add(column);
-	            column = new GridViewDataColumn();
-	            column.DataMemberBinding = new Binding("LastName");
-	            dataControl.Columns.Add(column);
-	            column = new GridViewDataColumn();
-	            column.DataMemberBinding = new Binding("Title");
-	            dataControl.Columns.Add(column);
-	      }
+	    GridViewDataControl dataControl = (GridViewDataControl)sender;
+	    if (dataControl.ParentRow != null)
+	    {
+	        //dataControl is the child gridview
+	        dataControl.ShowGroupPanel = false;
+	        GridViewDataColumn column = new GridViewDataColumn();
+	        column.DataMemberBinding = new Binding("EmployeeID");
+	        dataControl.Columns.Add(column);
+	        column = new GridViewDataColumn();
+	        column.DataMemberBinding = new Binding("FirstName");
+	        dataControl.Columns.Add(column);
+	        column = new GridViewDataColumn();
+	        column.DataMemberBinding = new Binding("LastName");
+	        dataControl.Columns.Add(column);
+	        column = new GridViewDataColumn();
+	        column.DataMemberBinding = new Binding("Title");
+	        dataControl.Columns.Add(column);
+	    }
 	}
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-how-to-access-child-gridview_2}}
-
+{{region vb-gridview-how-to-access-child-gridview_2}}
 	Private Sub employeeRadGridView_DataLoading(sender As Object, e As GridViewDataLoadingEventArgs)
-	 Dim dataControl As GridViewDataControl = DirectCast(sender, GridViewDataControl)
-	 If dataControl.ParentRow IsNot Nothing Then
-	  'dataControl is the child gridview
-	  dataControl.ShowGroupPanel = False
-	  Dim column As New GridViewDataColumn()
-	  column.DataMemberBinding = New Binding("EmployeeID")
-	  dataControl.Columns.Add(column)
-	  column = New GridViewDataColumn()
-	  column.DataMemberBinding = New Binding("FirstName")
-	  dataControl.Columns.Add(column)
-	  column = New GridViewDataColumn()
-	  column.DataMemberBinding = New Binding("LastName")
-	  dataControl.Columns.Add(column)
-	  column = New GridViewDataColumn()
-	  column.DataMemberBinding = New Binding("Title")
-	  dataControl.Columns.Add(column)
-	 End If
+	    Dim dataControl As GridViewDataControl = DirectCast(sender, GridViewDataControl)
+	    If dataControl.ParentRow IsNot Nothing Then
+	        'dataControl is the child gridview
+	        dataControl.ShowGroupPanel = False
+	        Dim column As New GridViewDataColumn()
+	        column.DataMemberBinding = New Binding("EmployeeID")
+	        dataControl.Columns.Add(column)
+	        column = New GridViewDataColumn()
+	        column.DataMemberBinding = New Binding("FirstName")
+	        dataControl.Columns.Add(column)
+	        column = New GridViewDataColumn()
+	        column.DataMemberBinding = New Binding("LastName")
+	        dataControl.Columns.Add(column)
+	        column = New GridViewDataColumn()
+	        column.DataMemberBinding = New Binding("Title")
+	        dataControl.Columns.Add(column)
+	    End If
 	End Sub
 {{endregion}}
 
@@ -88,11 +86,10 @@ As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridVie
 
 #### __XAML__
 
-{{region gridview-how-to-access-child-gridview_3}}
-
+{{region xaml-gridview-how-to-access-child-gridview_3}}
 	<telerik:RadGridView Name="gridView" ItemsSource="{Binding Person}">
 	    <telerik:RadGridView.ChildTableDefinitions>
-	                <telerik:GridViewTableDefinition />
+	        <telerik:GridViewTableDefinition />
 	    </telerik:RadGridView.ChildTableDefinitions>
 	    <telerik:RadGridView.HierarchyChildTemplate>
 	        <DataTemplate>

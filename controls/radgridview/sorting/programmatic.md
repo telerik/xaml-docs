@@ -20,17 +20,18 @@ Besides the built-in sorting functionality, you are able to programmatically sor
 
 When you add a new descriptor to the collection, the data is automatically sorted according to it. To learn how to create and configure descriptors, look at the following example:
 
-#### __C#__
+#### __[C#]__
 
-{{region gridview-sorting-programmatic_2}}
-
+{{region cs-gridview-sorting-programmatic_2}}
 	ColumnSortDescriptor csd = new ColumnSortDescriptor()
 	{
-	 Column = this.clubsGrid.Columns["Name"],
-	 SortDirection = ListSortDirection.Descending
+	    Column = this.clubsGrid.Columns["Name"],
+	    SortDirection = ListSortDirection.Descending
 	};
 	this.clubsGrid.SortDescriptors.Add(csd);
 {{endregion}}
+
+#### __[VB.NET]
 
 {{region gridview-sorting-programmatic_3}}
 
@@ -51,8 +52,7 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 
 #### __C#__
 
-{{region gridview-sorting-programmatic_0}}
-
+{{region cs-gridview-sorting-programmatic_0}}
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "Title";
 	descriptor.SortDirection = ListSortDirection.Ascending;
@@ -60,8 +60,7 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 
 #### __VB.NET__
 
-{{region gridview-sorting-programmatic_1}}
-
+{{region vb-gridview-sorting-programmatic_1}}
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "Title"
 	descriptor.SortDirection = ListSortDirection.Ascending
@@ -74,16 +73,16 @@ The __SortDirection__ property allows you to define the sorting direction.
       
 You can easily create a sort descriptor in XAML and then add it to the SortDescriptors collection.
 For example:
+
 #### __XAML__
 
-{{region gridview-sorting-programmatic_4}}
-
+{{region xaml-gridview-sorting-programmatic_4}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-	  ...
-	  <telerik:RadGridView.SortDescriptors>
+	             AutoGenerateColumns="False">
+	
+	    <telerik:RadGridView.SortDescriptors>
 	        <telerik:SortDescriptor Member="Title"
-	                                SortDirection="Ascending" />
+	                        SortDirection="Ascending" />
 	    </telerik:RadGridView.SortDescriptors>
 	</telerik:RadGridView>
 {{endregion}}
@@ -93,16 +92,15 @@ As of __Q3 2011__, you can create a ColumnSortDescriptor in XAML and then add it
 For example:
 #### __XAML__
 
-{{region gridview-sorting-programmatic_7}}
-
-	<telerik:RadGridView x:Name="radGridView" 
-	                     AutoGenerateColumns="False">
-	  <telerik:RadGridView.Columns>
-	    ...
-	  </telerik:RadGridView.Columns>
-	  <telerik:RadGridView.SortDescriptors>
-	      <telerik:ColumnSortDescriptor Column="{Binding Columns[\Title\], ElementName=radGridView}" SortDirection="Ascending"/>
-	  </telerik:RadGridView.SortDescriptors>
+{{region xaml-gridview-sorting-programmatic_7}}
+	<telerik:RadGridView x:Name="clubsGrid" 
+	                AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	
+	    </telerik:RadGridView.Columns>
+	    <telerik:RadGridView.SortDescriptors>
+	        <telerik:ColumnSortDescriptor Column="{Binding Columns[\Title\], ElementName=clubsGrid}" SortDirection="Ascending"/>
+	    </telerik:RadGridView.SortDescriptors>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -126,10 +124,25 @@ If you need to apply multiple sorting operations and you would like to reset all
 
 Consider the following scenario. You apply a programmatic sorting for your RadGridView as follows:
 
-	 ColumnSortDescriptor csd = new ColumnSortDescriptor();
-	 csd.Column = MyGrid.Columns["Name"];
-	 csd.SortDirection = ListSortDirection.Descending;
-	 clubsGrid.SortDescriptors.Add(csd);
+#### __[C#]__
+
+{{region cs-gridview-sorting-programmatic_8}}
+	ColumnSortDescriptor csd = new ColumnSortDescriptor();
+	clubsGrid.SortDescriptors.Clear();
+	csd.Column = clubsGrid.Columns["Name"];
+	csd.SortDirection = ListSortDirection.Descending;
+	clubsGrid.SortDescriptors.Add(csd);
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-sorting-programmatic_9}}
+	Dim csd As New ColumnSortDescriptor()
+	clubsGrid.SortDescriptors.Clear()
+	csd.Column = clubsGrid.Columns("Name")
+	csd.SortDirection = ListSortDirection.Descending
+	clubsGrid.SortDescriptors.Add(csd)
+{{endregion}}
 
 At this point, the RadGridView has the following state:
 
@@ -139,11 +152,25 @@ FIGURE 3:
 
 Eventually, you need to sort the grid by another column and would like to remove the previously applied rule. Use the following approach:
 
-     clubsGrid.SortDescriptors.Clear();
-     ColumnSortDescriptor csd = new ColumnSortDescriptor();
-	 csd.Column = clubsGrid.Columns["Established"];
-	 csd.SortDirection = ListSortDirection.Descending;
-	 clubsGrid.SortDescriptors.Add(csd);
+#### __[C#]__
+
+{{region cs-gridview-sorting-programmatic_10}}
+	ColumnSortDescriptor csd = new ColumnSortDescriptor();
+	clubsGrid.SortDescriptors.Clear();
+	csd.Column = clubsGrid.Columns["Established"];
+	csd.SortDirection = ListSortDirection.Descending;
+	clubsGrid.SortDescriptors.Add(csd);
+{{endregion}}
+
+#### __[VB.NET]__
+
+{{region vb-gridview-sorting-programmatic_11}}
+	Dim csd As New ColumnSortDescriptor()
+	clubsGrid.SortDescriptors.Clear()
+	csd.Column = clubsGrid.Columns("Established")
+	csd.SortDirection = ListSortDirection.Descending
+	clubsGrid.SortDescriptors.Add(csd)
+{{endregion}}
 
 The result will be:
 

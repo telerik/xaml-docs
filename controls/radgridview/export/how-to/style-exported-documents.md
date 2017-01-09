@@ -15,46 +15,46 @@ If you need to style the exported RadGridView differently from its default style
 #### __[C#] Example 1: Style exported XLSX/PDF document__
 
 {{region cs-gridview-export-style-exported-xlsx-pdf-documents_0}}
-    private void ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
-    {
-        if (e.Element == ExportElement.HeaderRow)
-        {
-            (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
-            {
-                FontSize = 20,
-                IsBold = true,
-                Fill = new PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
-                ForeColor = new ThemableColor(Colors.White)
-            };
-        }
-        else if (e.Element == ExportElement.Row)
-        {
-            (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
-            {
-                Fill = new PatternFill(PatternType.Solid, Colors.White, Colors.White),
-                ForeColor = new ThemableColor(Colors.Black)
-            };
-        }
-    }
+	private void ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
+	{
+	    if (e.Element == ExportElement.HeaderRow)
+	    {
+	        (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
+	        {
+	            FontSize = 20,
+	            IsBold = true,
+	            Fill = new PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
+	            ForeColor = new ThemableColor(Colors.White)
+	        };
+	    }
+	    else if (e.Element == ExportElement.Row)
+	    {
+	        (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
+	        {
+	            Fill = new PatternFill(PatternType.Solid, Colors.White, Colors.White),
+	            ForeColor = new ThemableColor(Colors.Black)
+	        };
+	    }
+	}
 {{endregion}}
 
 #### __[VB.NET] Example 1: Style exported XLSX/PDF document__
 
 {{region vb-gridview-export-style-exported-xlsx-pdf-documents_0}}
 	Private Sub ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
-		If e.Element = ExportElement.HeaderRow Then
-			TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
-				.FontSize = 20,
-				.IsBold = True,
-				.Fill = New PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
-				.ForeColor = New ThemableColor(Colors.White)
-			}
-		ElseIf e.Element = ExportElement.Row Then
-			TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
-				.Fill = New PatternFill(PatternType.Solid, Colors.White, Colors.White),
-				.ForeColor = New ThemableColor(Colors.Black)
-			}
-		End If
+	    If e.Element = ExportElement.HeaderRow Then
+	        TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
+	            .FontSize = 20,
+	            .IsBold = True,
+	            .Fill = New PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
+	            .ForeColor = New ThemableColor(Colors.White)
+	        }
+	    ElseIf e.Element = ExportElement.Row Then
+	        TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
+	            .Fill = New PatternFill(PatternType.Solid, Colors.White, Colors.White),
+	            .ForeColor = New ThemableColor(Colors.Black)
+	        }
+	    End If
 	End Sub
 {{endregion}}
 

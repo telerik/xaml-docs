@@ -18,10 +18,10 @@ To hide the row indicator set the __RowIndicatorVisibility__ property to __Colla
 
 #### __XAML__
 
-{{region gridview-customizing-rows_0}}
+{{region xaml-gridview-customizing-rows_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     RowIndicatorVisibility="Collapsed">
-	    ...
+	                 RowIndicatorVisibility="Collapsed">
+	    <!-- ... -->
 	</telerik:RadGridView>
 {{endregion}}
 

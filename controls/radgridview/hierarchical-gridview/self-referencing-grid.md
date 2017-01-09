@@ -18,17 +18,16 @@ Here is an ordinary __RadGridView__ declaration, populated with some data:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_0}}
-
+{{region xaml-gridview-self-referencing-grid_0}}
 	<telerik:RadGridView Margin="8" x:Name="radGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                                    Header="ID" />
+	                                Header="ID" />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                    Header="Name" />
+	                                Header="Name" />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-	                                    Header="Title"
-	                                    UniqueName="Title" />
+	                                Header="Title"
+	                                UniqueName="Title" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -36,15 +35,13 @@ Here is an ordinary __RadGridView__ declaration, populated with some data:
 
 #### __C#__
 
-{{region gridview-self-referencing-grid_1}}
-
+{{region cs-gridview-self-referencing-grid_1}}
 	this.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees();
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-self-referencing-grid_2}}
-
+{{region vb-gridview-self-referencing-grid_2}}
 	Me.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees()
 {{endregion}}
 
@@ -58,15 +55,13 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_3}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
+{{region xaml-gridview-self-referencing-grid_3}}
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
 	        <telerik:GridViewTableDefinition>
 	        </telerik:GridViewTableDefinition>
 	    </telerik:RadGridView.ChildTableDefinitions>
-	    ...
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -74,19 +69,17 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_4}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+{{region xaml-gridview-self-referencing-grid_4}}
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
 	        <telerik:GridViewTableDefinition>
 	            <telerik:GridViewTableDefinition.Relation>
-							<telerik:TableRelation IsSelfReference="True">
-							</telerik:TableRelation>
+	                <telerik:TableRelation IsSelfReference="True">
+	                </telerik:TableRelation>
 	            </telerik:GridViewTableDefinition.Relation>
 	        </telerik:GridViewTableDefinition>
 	    </telerik:RadGridView.ChildTableDefinitions>
-	    ...
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -94,24 +87,22 @@ You can build a self-refencing hierarchy by performing the following steps:
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_5}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+{{region xaml-gridview-self-referencing-grid_5}}
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
 	        <telerik:GridViewTableDefinition>
 	            <telerik:GridViewTableDefinition.Relation>
-					<telerik:TableRelation IsSelfReference="True">
-						<telerik:TableRelation.FieldNames>
-							<telerik:FieldDescriptorNamePair
-                        ParentFieldDescriptorName="EmployeeID"
-                        ChildFieldDescriptorName="RelatedTo" />
-						</telerik:TableRelation.FieldNames>
-					</telerik:TableRelation>
+	                <telerik:TableRelation IsSelfReference="True">
+	                    <telerik:TableRelation.FieldNames>
+	                        <telerik:FieldDescriptorNamePair
+	                    ParentFieldDescriptorName="EmployeeID"
+	                    ChildFieldDescriptorName="RelatedTo" />
+	                    </telerik:TableRelation.FieldNames>
+	                </telerik:TableRelation>
 	            </telerik:GridViewTableDefinition.Relation>
 	        </telerik:GridViewTableDefinition>
 	    </telerik:RadGridView.ChildTableDefinitions>
-	    ...
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -131,27 +122,26 @@ You can specify more than one __FiledDescriptorNamePair__. For example, define a
 
 #### __XAML__
 
-{{region gridview-self-referencing-grid_6}}
-
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
+{{region xaml-gridview-self-referencing-grid_6}}
+	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
 	        <telerik:GridViewTableDefinition>
 	            <telerik:GridViewTableDefinition.Relation>
-					<telerik:TableRelation IsSelfReference="True">
-						<telerik:TableRelation.FieldNames>
-							<telerik:FieldDescriptorNamePair
-                         ParentFieldDescriptorName="EmployeeID"
-                         ChildFieldDescriptorName="RelatedTo" />
-							<telerik:FieldDescriptorNamePair
-                        ParentFieldDescriptorName="Country"
-                        ChildFieldDescriptorName="Country" />
-						</telerik:TableRelation.FieldNames>
-					</telerik:TableRelation>
+	                <telerik:TableRelation IsSelfReference="True">
+	                    <telerik:TableRelation.FieldNames>
+	                        <telerik:FieldDescriptorNamePair
+	                     ParentFieldDescriptorName="EmployeeID"
+	                     ChildFieldDescriptorName="RelatedTo" />
+	
+	                        <telerik:FieldDescriptorNamePair
+	                    ParentFieldDescriptorName="Country"
+	                    ChildFieldDescriptorName="Country" />
+	                    </telerik:TableRelation.FieldNames>
+	                </telerik:TableRelation>
 	            </telerik:GridViewTableDefinition.Relation>
 	        </telerik:GridViewTableDefinition>
 	    </telerik:RadGridView.ChildTableDefinitions>
-	    ...
+	    <!--...-->
 	</telerik:RadGridView>
 {{endregion}}
 

@@ -20,13 +20,19 @@ __RadGridView__ provides a built-in grouping functionality, which allows the use
 
 In order to group data the user has to just drag the desired column to __GridViewGroupPanel__ located at the top of __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
 
+
+#### **Figure 1: Dragging a certain column to apply grouping**
 ![](images/RadGridView_BasicGrouping_1.png)
 
 After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data will be properly grouped.
 
+#### **Figure 2: Grouped RadGridView**
 ![](images/RadGridView_BasicGrouping_2.png)
 
-To remove the grouping just click the close button of the rectangle or drag it out of the grouping area.![](images/RadGridView_BasicGrouping_3.png)
+To remove the grouping just click the close button of the rectangle or drag it out of the grouping area.
+
+#### **Figure 3: Button used for removing the grouping**
+![](images/RadGridView_BasicGrouping_3.png)
 
 >tipThe data can be grouped by more than one column. To do that just drag another column into the grouping area and the data will be grouped against these two criteria. To learn more about the multi-column grouping take a look at the [Multi-Column Grouping]({%slug gridview-multiple-column-grouping%}) topic.
         
@@ -35,6 +41,8 @@ To remove the grouping just click the close button of the rectangle or drag it o
 >tip As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. The default GroupRenderMode is Nested, and the new one is __Flat__. When you set the Flat mode, the GridView will render rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
 __RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted __Ascending__. When the sort direction of the rectangle is None the groups are sorted depending on the data they contain. 
+
+#### **Figure 4: Sorting RadGridView when grouping is applied**
 ![](images/RadGridView_BasicGrouping_4.png)
 
 ### Sort Group by Aggregate
@@ -53,12 +61,11 @@ Each GridViewColumn has a property called GroupMemberPath. This property can be 
 
 For example, you can configure the column to be grouped on the Name property although the bound property is Title:
 
-#### __XAML__
+#### __[XAML] Example 1 : Set GroupMemberPath for a certain column__
 
-{{region gridview-grouping-basics_3}}
-
+{{region xaml-gridview-grouping-basics_3}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-	                            GroupMemberPath="Name" />
+	                GroupMemberPath="Name" />
 {{endregion}}
 
 ## Grouping Modes
@@ -75,43 +82,42 @@ __Flat Mode__: This mode simply renders rows one below the other. This leads to 
 
 There are two ways to disable the built-in grouping of __RadGridView__. The first one is at __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
 
-#### __XAML__
+#### __[XAML] Example 2: Disable Grouping__
 
-{{region gridview-grouping-basics_0}}
-
+{{region xaml-gridview-grouping-basics_0}}
 	<telerik:RadGridView x:Name="radGridView" ShowGroupPanel="False"/>
 {{endregion}}
 
-
+#### **Figure 5: RadGridView with disabled grouping**
 ![](images/RadGridView_BasicGrouping_5.png)
 
 The second way is to disable it on column level via __IsGroupable__ property. When set to __False__ the column is not allowed to be dropped in the grouping area.
 
-#### __XAML__
+#### __[XAML] Example 3: Disable grouping for specific column__
 
-{{region gridview-grouping-basics_1}}
-
+{{region xaml-gridview-grouping-basics_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-                                Header="Title"
-                                UniqueName="Title"
-                                IsGroupable="False" />
+	                Header="Title"
+	                UniqueName="Title"
+	                IsGroupable="False" />
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 3: Disable grouping for a specific column__
 
-{{region gridview-grouping-basics_2}}
-
-	this.radGridView.Columns[ "Title" ].IsGroupable = false;
+{{region cs-gridview-grouping-basics_2}}
+	this.radGridView.Columns["Title"].IsGroupable = false;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Disable grouping for a specific column__
 
-{{region gridview-grouping-basics_3}}
-
+{{region vb-gridview-grouping-basics_3}}
 	Me.radGridView.Columns("Title").IsGroupable = False
 {{endregion}}
 
+#### **Figure 6: RadGridView with disabled grouping for a specific column**
 ![](images/RadGridView_BasicGrouping_6.png)
+
+>important If an **IValueConverter** is applied to the **DataMemberBinding** of a certain column, Grouping will respect it and create Group names according to the converted values. Thus, the appearance of duplicated groups will be avoided. In the case of filtering the **RadGridView** control, on the other hand, the converted values would not be respected.  
 
 ## Events
 

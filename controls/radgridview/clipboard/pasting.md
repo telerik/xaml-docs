@@ -39,8 +39,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 
 #### __[C#]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-{{region gridview-pasting_0}}
-	
+{{region cs-gridview-pasting_0}}
 	private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
 	{
 	    e.Cancel = true;
@@ -48,40 +47,39 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 	
 	private void radGridView1_PastingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
 	{
-	   if (e.Cell.Column.UniqueName == "Company")
-	   {
-	      var companyName = e.Value.ToString();
-	      var company = this.EFContext.Companies.Where(c => c.Name == companyName).FirstOrDefault();
-	      if (company != null)
-	      {
-	          e.Value = company;
-	      }
-	      else
-	      {
-	          e.Cancel = true;
-	      }
-	   }
+	    if (e.Cell.Column.UniqueName == "Company")
+	    {
+	        var companyName = e.Value.ToString();
+	        var company = this.EFContext.Companies.Where(c => c.Name == companyName).FirstOrDefault();
+	        if (company != null)
+	        {
+	            e.Value = company;
+	        }
+	        else
+	        {
+	            e.Cancel = true;
+	        }
+	    }
 	}
 {{endregion}}
 
 #### __[VB.NET]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-{{region gridview-pasting_1}}
-
-    Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
-        e.Cancel = True
-    End Sub
-	    
+{{region vb-gridview-pasting_1}}
+	Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
+	    e.Cancel = True
+	End Sub
+	
 	Private Sub radGridView1_PastingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
-	 If e.Cell.Column.UniqueName = "Company" Then
-	  Dim companyName = e.Value.ToString()
-	  Dim company = Me.EFContext.Companies.Where(Function(c) c.Name = companyName).FirstOrDefault()
-	  If company IsNot Nothing Then
-	   e.Value = company
-	  Else
-	   e.Cancel = True
-	  End If
-	 End If
+	    If e.Cell.Column.UniqueName = "Company" Then
+	        Dim companyName = e.Value.ToString()
+	        Dim company = Me.EFContext.Companies.Where(Function(c) c.Name = companyName).FirstOrDefault()
+	        If company IsNot Nothing Then
+	            e.Value = company
+	        Else
+	            e.Cancel = True
+	        End If
+	    End If
 	End Sub
 {{endregion}}
 

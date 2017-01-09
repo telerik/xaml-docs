@@ -1,26 +1,18 @@
 ---
-title: Item level attribute-based validation
-page_title: Item level attribute-based validation
-description: Item level attribute-based validation
+title: Validating Data Through Data Annotations
+page_title: Validating Data Through Data Annotations
+description: Validating Data Through Data Annotations
 slug: raddataform-validation-item-level
 tags: item,level,attribute-based,validation
 published: True
 position: 1
 ---
 
-# Item level attribute-based validation
+# Validating Data Through Data Annotations
 
-By validating the data, you can control what data is entered in the fields of the data form.
-    
-Aside from the __property level__ validation, RadDataForm performs __item level__ validation process, based on property __attributes__. This logic is executed in any occasions when changes are committed (including the execution of navigation or AddNew commands, when AutoCommit is True). This feature is available for both auto-generated and customized fields and all of the **System.ComponentModel.DataAnnotations** validation attributes are supported on equal scale.
+Aside from the __property level__ validation, RadDataForm supports validation through **data annotations**. Validation is performed on any occasion when changes are committed - navigation, insertion of new items or when **AutoCommit** is set to **True**, for example. This feature is available for both auto-generated and customized fields and all of the **System.ComponentModel.DataAnnotations** validation attributes are supported.
 
-#### __Figure 1: 
-
-![raddataform-validation-item-level](images/raddataform-validation-item-level.png)
-
->As seen on the picture, item level validation errors are not respected by separate editor’s validation features (i.e. __no validation tooltip__ on TextBox). Such behavior is expected, as respective bindings never get notified about these errors. 
-
-First we need to include the System.ComponentModel.DataAnnotations namespace:
+In order to enable this kind of validation you first need to include the System.ComponentModel.DataAnnotations namespace:
 
 #### __[C#] Example 1: Including System.ComponentModel.DataAnnotations__
 
@@ -34,7 +26,7 @@ First we need to include the System.ComponentModel.DataAnnotations namespace:
 	Imports System.ComponentModel.DataAnnotations
 {{endregion}}
 
-Now we can define a simple Employee class with validation attributes.
+Now, let's define a simple Employee class with validation attributes.
 
 #### __[C#] Example 2: Creating an Employee class with validation attributes__
 
@@ -97,6 +89,61 @@ Now we can define a simple Employee class with validation attributes.
 	    End Property
 	    Private m_EmployeeID As String
 	End Class
+{{endregion}}
+
+**Figure 1** shows RadDataForm's state after validation has been performed.
+
+#### __Figure 1: RadDataForm after validation has been performed__
+
+![RadDataForm after validation has been performed](images/raddataform-validation-item-level.png)
+
+As seen in the above figure, item level validation errors are not respected by the separate editors' validation features (i.e. __no validation tooltip__ is shown for the **TextBox**). Such behavior is expected, as respective bindings never get notified about these errors.
+
+In order to notify the UI that validation has failed, you will need to throw a **ValidationException**. **Example 3** shows how to do so through the static **ValidateProperty** method of the **Validator** class.
+
+#### __[C#] Example 3: Set validation through data DataAnnotations__
+
+{{region cs-raddataform-validation-item-level_2}}
+	private string firstName;
+
+        [Required]
+        public string FirstName
+        {
+            get { return this.firstName; }
+            set
+            {
+                if (value != this.firstName)
+                {
+                    ValidationContext validationContext = new ValidationContext(this, null, null);
+                    validationContext.MemberName = "FirstName";
+                    Validator.ValidateProperty(value, validationContext);
+                    this.firstName = value;
+                    this.OnPropertyChanged("FirstName");
+                }
+            }
+        }
+{{endregion}}
+
+#### __[VB.NET] Example 3: Set validation through data DataAnnotations__
+
+{{region vb-raddataform-validation-item-level_2}}
+	Private _firstName As String
+
+        <Required>
+        Public Property FirstName() As String
+            Get
+                Return Me._firstName
+            End Get
+            Set(ByVal value As String)
+                If value <> Me._firstName Then
+                    Dim validationContext As New ValidationContext(Me, Nothing, Nothing)
+                    validationContext.MemberName = "FirstName"
+                    Validator.ValidateProperty(value, validationContext)
+                    Me._firstName = value
+                    Me.OnPropertyChanged("FirstName")
+                End If
+            End Set
+        End Property
 {{endregion}}
 
 Please, have in mind that __those errors are removed from the validation summary__ on the next committing operation, __unlike the property level ones__, which are removed on property change. 

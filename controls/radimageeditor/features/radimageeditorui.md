@@ -29,6 +29,10 @@ When it comes to image editing tools which have settings and a live preview, the
 	
 	* Crop
 	
+	* Draw
+	
+	* DrawText
+	
 	* FlipHorizontal
 	
 	* FlipVertical
@@ -36,6 +40,8 @@ When it comes to image editing tools which have settings and a live preview, the
 	* HueShift
 	
 	* Invert
+	
+	* Pan
 	
 	* Resize
 	
@@ -48,6 +54,8 @@ When it comes to image editing tools which have settings and a live preview, the
 	* RoundCorners
 	
 	* Saturation
+	
+	* Shape
 	
 	* Sharpen
 

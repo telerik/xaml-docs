@@ -14,7 +14,7 @@ The data visualization in __RadChartView__ is done by a hierarchy of classes tha
 
 Concrete series types are available for specific charts. For example, there is a set of __CartesianSeries__ applicable in the context of a __RadCartesianChart__. Here are all series available in the __RadChartView__ suite:
         
-|CartesianCart|PolarChart|PieChart|
+|CartesianChart|PolarChart|PieChart|
 |-------------|----------|--------|
 |**Line Series**<br/>[LineSeries]({%slug radchartview-series-lineseries%})<br/>[SplineSeries]({%slug radchartview-series-splineseries%})<br/>[StepLineSeries]({%slug radchartview-series-steplineseries%})<br/>[ScatterLineSeries]({%slug radchartview-series-scatterlineseries%})<br/>[ScatterSplineSeries]({%slug radchartview-series-scattersplineseries%})|**Line Series**<br/>[PolarLineSeries]({%slug radchartview-series-polarlineseries%})<br/>[RadarLineSeries]({%slug radchartview-series-radarlineseries%})|**Pie Series**<br/>[PieSeries]({%slug radchartview-series-pieseries%})|
 |**Area Series**<br/>[AreaSeries]({%slug radchartview-series-areaseries%})<br/>[StepAreaSeries]({%slug radchartview-series-stepareaseries%})<br/>[SplineAreaSeries]({%slug radchartview-series-splineareaseries%})<br/>[ScatterAreaSeries]({%slug radchartview-series-scatterareaseries%})<br/>[ScatterSplineAreaSeries]({%slug radchartview-series-scattersplineareaseries%})|**Area Series**<br/>[PolarAreaSeries]({%slug radchartview-series-polarareaseries%})<br/>[RadarAreaSeries]({%slug radchartview-series-radarareaseries%})|**Doughnut Series**<br/>[DoughtnutSeries]({%slug radchartview-series-doughnutseries%})|

@@ -166,7 +166,7 @@ In code-behind create the collection of business objects and register it as Depe
 	End Class
 {{endregion}}
 
-By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 bars, where each bar repesents a period of 5 days. The result is shown on the image below:
+By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 bars, where each bar represents a period of 5 days. The result is shown on the image below:
 ![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
 
 ## Use custom aggregate function

@@ -33,7 +33,7 @@ After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverligh
 
 ### Themes.Implicit Folder
 
-As its name suggests, all styles and resources for the controls are located in the **Themes.Implicit** folder. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
+As its name suggests, the **Themes.Implicit** folder contains all styles and resources needed for the visualization of the **UI for WPF** controls. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
 
 ### Standard Binaries vs NoXAML Binaries
 

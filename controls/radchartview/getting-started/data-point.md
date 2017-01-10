@@ -10,13 +10,13 @@ position: 2
 
 # Data Point
 
-The chart data points are defined by the __DataPoint__ class and more specifically its inheritors. The different chart series types work with different class that derives from DataPoint. Each class contains commons information about the data point, as its layout slot, the related view model, label, selection state, parent series and more.
+The chart data points are defined by the __DataPoint__ class and more specifically its inheritors. The different chart series types work with different class that derives from DataPoint. Each class contains common information about the data point - its layout slot, the related view model, label, selection state, parent series and more.
 
 The chart series expose a DataPoints collection where the data point objects are placed. For more information on this, see the [Getting Started]({%slug radchartview-introduction%}) and [Create Chart With Static Data]({%slug radchartview-populating-with-data-static-data%}) help articles.
 
-This article contains a brief information about each data point type and also a reference sheet showing what chart series type which DataPoint implementation uses.
+This article contains a brief information about the data point types and a reference sheet showing the DataPoint implementation used by each chart series.
 
-The __DataContext__ of most chart templates and styles, as ToolTipTemplate, DefaultVisualStyle, PointTemplate, etc., is an object of type __DataPoint__ which you can use to access the view model or other information related to the data point.
+The __DataContext__ of most chart templates and styles, as [ToolTipTemplate]({%slug radchartview-features-tooltip%}), [DefaultVisualStyle, PointTemplate]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}), etc., is an object of type __DataPoint__ which you can use to access the view model or other information related to the data point.
 
 * [Series DataPoint Types](#series-datapoint-types)
 * [Sampling and DataItem](#sampling-and-dataitem)
@@ -24,7 +24,7 @@ The __DataContext__ of most chart templates and styles, as ToolTipTemplate, Defa
 
 ## Series DataPoint Types
 
-The following table shows what series which data point type uses.
+The following table shows which data points are being used by the corresponding series.
 
 | Cartesian Chart Data Points | Pie Chart Data Points | Polar Chart Data Points |
 | --- | --- | --- |
@@ -39,19 +39,19 @@ The following table shows what series which data point type uses.
 
 DataPoint is an abstract class used as a base by the concerete data point impelementations. The class contains information related to the element plotted in the chart. There are several classes that derive from DataPoint and they all share some common properties.
 
-* __Presenter__: A property of type __IChartElementPresenter__ that holds the a reference to the parent series where the data point is visualized.
+* __Presenter__: A property of type __IChartElementPresenter__ that holds a reference to the parent series where the data point is visualized.
 
 * __LayoutSlot__: A property of type __RadRect__ that holds the rectangle where the data point is visualized. You can use it to get the size and the screen coordinates of the visual element representing the point.
 
-* __DataItem__: A property of type __object__ that holds a reference to the view model of the data point. This property is valid only in a [data-bound]({%slug radchartview-populating-with-data-chartdatasource%}). In a sampling scenario the property holds an object of type [DataPointSamplingInfo](#sampling-and-dataitem) instead of the view model (the data item).
+* __DataItem__: A property of type __object__ that holds a reference to the view model of the data point. This property is valid only in a [data-bound]({%slug radchartview-populating-with-data-chartdatasource%}) scenario. In a sampling scenario the property holds an object of type [DataPointSamplingInfo](#sampling-and-dataitem) instead of the view model (the data item).
 	
 * __IsSelected__: A property of type __bool__ that indicates if the data point is selected. For more information, see the [Selection]({%slug radchartview-features-selection%}) help article.
 
-* __IsInPlotRange__: A property of type __bool__ that indicates if the data point's visual is in the plot area range. This is the actual range of the axes.
+* __IsInPlotRange__: A property of type __bool__ that indicates whether the data point's visual is in the plot area range. This is the actual range of the axes.
 
-* __Label__: A property of type object that contains the label associated with the data point.
+* __Label__: A property of type __object__ that contains the label associated with the data point.
 
-Each different DataPoint inheritor implement properties that defines the values used to plot it in the chart.
+Each different DataPoint inheritor implements properties that define the values used to plot it in the chart.
 
 * [CategoricalDataPoint](#categoricaldatapoint)
 * [BubbleDataPoint](#bubbledatapoint)
@@ -80,7 +80,7 @@ The __RangeDataPoint__ is a type of categorical data point, so it has a __Catego
 
 The __OhlcDataPoint__ is a type of categorical data point, so it has a __Category__ property. But, instead of a single value it works with few additional values accessed via the following properties: __High__, __Low__, __Open__ and __Close__. This type of data point is used in the financial series of the chart (ohlc and candlestick).
 
-Additionaly, the class exposes two properties that indicates if the data point follows rasising (bullish) or falling (bearish) trend. The properties are __IsRising__ and __IsFalling__.
+Additionaly, the class exposes two properties that indicate whether the data point follows rasising (bullish) or falling (bearish) trend. The properties are __IsRising__ and __IsFalling__.
 
 ## ScatterDataPoint
 

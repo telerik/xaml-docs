@@ -70,9 +70,9 @@ You can see the result after you drop the item on that position in __Figure 2__.
 ##  Maximize Mode
 
 You can control the maximize behavior by using the __MaximizeMode__ property. It is an enumeration that has the following properties:
-* __One__ - there will be always one item maximized. In this mode the items can't go into restored state.
-* __ZeroOrOne__ - this is the default mode. There can be zero or one item maximized
-* __Zero__ - in this mode there can't be a maximized item. Items are always in __Restored__ state.
+* __One__: There will be always one item maximized. In this mode the items can't go into restored state.
+* __ZeroOrOne__: This is the default mode. There can be zero or one item maximized
+* __Zero__: In this mode there can't be a maximized item. Items are always in __Restored__ state.
                         
 
 #### __[XAML] Example 2: Setting maximize mode__  

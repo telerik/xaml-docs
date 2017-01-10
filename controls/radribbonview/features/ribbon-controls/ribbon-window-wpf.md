@@ -14,7 +14,7 @@ site_name: WPF
 The __RadRibbonWindow__ control is used to replace the __Window__ control that represents the root UI of a WPF application. Its purpose is to allow a smoother UI when hosting the __RadRibbonView__ at the root level of the application.
 
 In the trivial case if you place a __RadRibbonView__ in the __MainWindow__ of your WPF application you'll see the following result. 
-![](images/RadRibbonView_Window_WPF.png)
+![](images/radribbonview-features-controls-window-wpf-0.png)
 
 You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.		
 
@@ -53,7 +53,7 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 {{endregion}}
 
 Here is a snapshot of the result.
-![](images/RadRibbonView_RibbonWindow_Wpf.png)
+![](images/radribbonview-features-controls-window-wpf-1.png)
 
 By default when you add a __RadRibbonView__ in a __RadRibbonWindow__, the components are integrated together to create a seamless UI experience. For that purpose the __QuickAccessToolbar__ as well as the __ApplicationName__  and the __Title__ of the __RadRibbonView__ are displayed in the title tray of the __RadRibbonWindow__. In this case the value of the __RadRibbonWindow Title__ is ignored.		
 
@@ -98,7 +98,7 @@ With __Q1 2014__ we introduced a new property, which you can use to control this
 	</telerik:RadRibbonWindow>
 {{endregion}}
 
-![Rad Ribbon View Ribbon Window Visible Title](images/RadRibbonView_RibbonWindow_VisibleTitle.png)
+![Rad Ribbon View Ribbon Window Visible Title](images/radribbonview-features-controls-window-wpf-2.png)
 
 ## Themes
 
@@ -149,15 +149,15 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows7;component/Themes/System.Windows.xaml" />
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows7;component/Themes/Telerik.Windows.Controls.xaml" />
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows7;component/Themes/Telerik.Windows.Controls.Input.xaml" />
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows7;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows7;component/Themes/Telerik.Windows.Controls.RibbonView.xaml" />
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/System.Windows.xaml" />
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.xaml" />
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Input.xaml" />
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
+	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.RibbonView.xaml" />
 	            <ResourceDictionary Source="RibbonWindowStyle.xaml" />
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
 {{endregion}}
 
-![Rad Ribbon View Ribbon WindowWPF Windows 7 Theme](images/RadRibbonView_RibbonWindowWPF_Windows7Theme.png)
+![Rad Ribbon View Ribbon WindowWPF Office2016 Theme](images/radribbonview-features-controls-window-wpf-3.png)

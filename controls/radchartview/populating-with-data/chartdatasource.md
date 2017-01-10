@@ -171,9 +171,9 @@ By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 
 
 ## Use custom aggregate function
 
-By default RadChartView calculates an __average__ of the given values when sampling is used. You can however use different aggregate functions like Sum, Min, Max and etc.                
+By default, RadChartView calculates an __average__ of the given values when sampling is used. You can, however use different aggregate functions like Sum, Min, Max and etc.                
 
-For the purpose you should inherit from the specific ChartSeries class that you are using and override the following protected methods to use different aggregate functions:
+For that purpose you should inherit from the specific ChartSeries class that you are using and override the following protected methods to use different aggregate functions:
                 
 |Series|Methods to override|
 |------|-------------------|
@@ -210,7 +210,7 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __[C#] Example 5: Create custom series and overriding its aggregate function__
+#### __[C#] Example 5: Create custom series and override its aggregate function__
 {{region radchart-chartdatasource_5}}
 	public class MyBarSeries : BarSeries
 	{
@@ -221,7 +221,7 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 5: Create custom series and overriding its aggregate function__
+#### __[VB.NET] Example 5: Create custom series and override its aggregate function__
 {{region radchart-chartdatasource_6}}
 	Public Class MyBarSeries
 		Inherits BarSeries
@@ -238,7 +238,7 @@ The result is below:
 
 The chart's [DataPoint]({%slug radchartview-getting-started-data-point%}) models which are used to plot the data items in the control, expose a __DataItem__ property which holds a reference to view model behind the point. However, when sampling (ChartDataSource) is used, several data point view models (data items) are combined into a single DataPoint. In this case the __DataItem__ property contains an object of type __DataPointSamplingInfo__. This object has information about the data items that are combined and the results returned by the aggregate function. 
 
-__DataPointSamplingInfo__ is IEnumerable and you can get the aggregated data items using its indexer
+__DataPointSamplingInfo__ is IEnumerable and you can get the aggregated data items using its indexer.
 
 #### __[C#] Example 6: Getting data item from the sampling result__
 {{region radchart-chartdatasource_7}}

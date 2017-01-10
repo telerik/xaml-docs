@@ -919,9 +919,6 @@ navigation:
     "styling-and-appearance":
         title: "Styling and Appearance"
         position: 8
-    "styling-and-appearance/themes-suite":
-        title: "Themes Suite!"
-        position: 4   
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 5
@@ -944,12 +941,17 @@ navigation:
         title: "Deploying Telerik UI"
         position: 6
     "styling-and-appearance/stylemanager":
-        title: "StyleManager"
+        title: "Style Manager"
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
     "styling-and-appearance/glyphs":
         title: "Font Glyphs"
         position: 5
+    "styling-and-appearance/Themes-Suite":
+        title: "Themes Suite"
+        position: 4
+    "styling-and-appearance/How-To":
+        title: "How To"
 ## Common End
 
 ## Api Reference Start

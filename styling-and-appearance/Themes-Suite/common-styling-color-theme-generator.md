@@ -9,13 +9,15 @@ position: 1
 ---
 # Color Theme Generator
 
-The **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
+The **VisualStudio2013**, **Office2016**, **Office2013**, **Green**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the **Color Theme Generator**.
      
 ## What is the Color Theme Generator?
 
-The **Color Theme Generator enables** you to tweak theme colors and immediately see the results. It only takes a few simple steps:
+The **Color Theme Generator** enables you to tweak theme colors and immediately see the results. The tool contains a few predefined palettes for each of the themes, making it easier to choose the right colors for your application.
+
+It only takes a few simple steps:
 
 * Change the color settings of brushes on the right
 * Immediately see the effect on the left
@@ -24,4 +26,9 @@ The **Color Theme Generator enables** you to tweak theme colors and immediately 
 
 You can always hit the reset button to start over. 
 
+The source code of the application can be found in the downloads section of your **Telerik** account.
+
 >important You can check the **Color Theme Generator** application on the following page {% if site.site_name == 'Silverlight' %}[Silverlight Color Theme Generator](http://demos.telerik.com/silverlight/Themesgenerator){% endif %}{% if site.site_name == 'WPF' %}[WPF Color Theme Generator](http://demos.telerik.com/wpf/colorthemegenerator){% endif %}
+
+
+

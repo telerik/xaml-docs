@@ -10,33 +10,40 @@ position: 0
 
 # Setting a Theme
 
-**Setting a theme** is the preferred way of styling the controls that come with the **Telerik UI for WPF** suite. Apart from the default **Office_Black**, you have the option to choose from variety of other themes to achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes concept](#what-is-a-theme) and their [distribution](#where-can-the-theme-be-found).
+**Setting a theme** is the preferred way of styling the controls that come with the **Telerik UI for WPF** suite. Apart from the default **Office_Black**, you have the option to choose from variety of other themes to achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
 
-The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and **Blend** support is improved. 
+The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and modifications through **Blend** is supported. 
 
 ## What is a Theme?
 
-A theme contains all the styles and resources needed for the visualization of the **Telerik** controls. Each theme consists of multiple **XAML** files. You can think of each separate file as a collection of compliant styles which are needed for the visualisation of a certain control. As most of the custom controls are quite complex and contain within themselves other custom controls, often you will need the resource of several files. 
+A theme contains all the styles and resources needed for the visualization of the **Telerik** controls. Each theme consists of multiple **XAML** files. You can think of each separate file as a collection of compliant styles which are needed for the visualisation of a certain control. As most of the custom controls are quite complex and contain within themselves other custom controls, often you will need the resources of several files. 
 
-To apply a theme, you need to merge these files into the Merged Dictionaries of your application. As you most probably will be using just a subset of the available controls, you can merge only several files which are needed for the specific controls. This leads to a smaller assembly size and an easy-to-customize experience.  
+To apply a theme, you need to merge these files into the **Merged Dictionaries** of your application. As you most probably will be using just a subset of the available controls, you can merge only several files which are needed for the specific controls. This leads to a smaller assembly size and an easy-to-customize appearance.  
 
-## Where can a Theme be found?
+## Where Can a Theme Be Found?
 
 After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite, you will find the following structure in the installation folder (usually C://Program Files/Telerik/ UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} [version]/)
     
 
-* __Binaries__: The standard binaries including the themes dlls.
+* __[Binaries](#standard-binaries-vs-noxaml-binaries)__: The standard binaries including the themes dlls.
 
-* __Binaries.NoXaml__: Binaries without XAML, even the default **Office_Black** theme is not included.
+* __[Binaries.NoXaml](#standard-binaries-vs-noxaml-binaries)__: Binaries without XAML, even the default **Office_Black** theme is not included.
 
-* __Themes.Implicit__: The XAML code for all the controls.
+* __[Themes.Implicit](#themesimplicit-folder)__: The theme-specific XAML code for all the controls.
 
-As its name suggests, all resources are located in the **Themes.Implicit** folder. Eventually, you will find out that there is a separate folder for each available theme.   
+### Themes.Implicit Folder
 
-## Does a Theme affect all WPF Controls?
+As its name suggests, all styles and resources for the controls are located in the **Themes.Implicit** folder. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
+
+### Standard Binaries vs NoXAML Binaries
+
+The **standard binaries** include the implementation of the different controls as well as the styles and the resources needed for their visualization. As our assemblies contain multiple components, all styles for them are included and the assembly size is larger. 
+
+The **NoXAML binaries** on the other hand *do not include any XAML files* - no styles, no brushes or any other resources. This results in smaller assembly size and would mean that when you use them, you have to provide the resources needed for the visualization of the controls. This happens by merging the needed **XAML files** from the **Themes folder** into the Application's **Merged Dictionaries**.
+
+## Does a Theme Affect All WPF Controls?
 
 All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
-
 
 ## Applying a Theme for Your Application
 

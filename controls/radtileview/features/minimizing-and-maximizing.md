@@ -23,7 +23,7 @@ Minimized area can be placed on any side of the __RadTileView__ by using the __M
 * __Left__
 * __Top__
 * __Bottom__
-* __Right__
+* __Right__ (the default value)
 
 The size of the minimized area is controlled by the __MinimizedColumnWidth__ and __MinimizedRowHeight__ properties of the __TileView__.            
 
@@ -35,8 +35,7 @@ The __RadTileView.MaximizedItem__ property holds a reference to the currently ma
 
 The __RadTileView__ control allows you to drag a __RadTileViewItem__ and dock it thus maximizing it in the desired position. In order to take advantage of the functionality, you need to set the __RadTileView IsDockingEnabled__ property to __True:__
 
-#### __XAML__
-
+#### __[XAML] Example 1: Enabling docking__
 {{region radtileview-minimizing-and-maximizing_0}}
 	<telerik:RadTileView Grid.Row="1" ColumnsCount="2" IsDockingEnabled="True" >
 	    <telerik:RadTileViewItem Header="Item1">
@@ -60,21 +59,23 @@ The __RadTileView__ control allows you to drag a __RadTileViewItem__ and dock it
 	</telerik:RadTileView>
 {{endregion}}
 
+#### __Figure 1: Item docking started__  
 ![](images/radtileview_features_maximized_docking.png)
 
-If you drop the item on that position the result will be:
+You can see the result after you drop the item on that position in __Figure 2__.
+
+#### __Figure 2: Item docking complete__  
 ![](images/radtileview_features_maximized_docked.png)
 
 ##  Maximize Mode
 
 You can control the maximize behavior by using the __MaximizeMode__ property. It is an enumeration that has the following properties:
-* __One__ - there will be always one item maximized. In this mode the items can't go into restored state.
-* __ZeroOrOne__ - this is the default mode. There can be zero or one item maximized
-* __Zero__ - in this mode there can't be a maximized item. Items are always in __Restored__ state.
+* __One__: There will be always one item maximized. In this mode the items can't go into restored state.
+* __ZeroOrOne__: This is the default mode. There can be zero or one item maximized
+* __Zero__: In this mode there can't be a maximized item. Items are always in __Restored__ state.
                         
 
-#### __XAML__
-
+#### __[XAML] Example 2: Setting maximize mode__  
 {{region radtileview-minimizing-and-maximizing_1}}
 	<telerik:RadTileView x:Name="RadTileView1" MaximizeMode="One">
 		<telerik:RadTileViewItem Header="Item1">
@@ -97,6 +98,30 @@ You can control the maximize behavior by using the __MaximizeMode__ property. It
 		</telerik:RadTileViewItem>
 	</telerik:RadTileView>
 {{endregion}}
+
+## Minimized Columns and Rows Count
+
+You can control the number of rows or columns in the minimized area of the tileview by using the __MinimizedColumnsCount__ and __MinimizedRowsCount__ properties of __RadTileView__. 
+
+The __MinimizedColumnsCount__ will affect the columns count only if the __MinimizedItemsPosition__ is set to __Left__ or __Right__.
+
+The __MinimizedRowsCount__ will affect the rows count only if the __MinimizedItemsPosition__ is set to __Top__ or __Bottom__.
+
+#### __[XAML] Example 3: Setting minimized area with 2 columns__  
+{{region radtileview-minimizing-and-maximizing_2}}
+	<telerik:RadTileView MinimizedColumnsCount="2" MinimizedItemsPosition="Right" />
+{{endregion}}
+
+#### __Figure 3: Minimized area with 2 columns__
+![](images/radtileview-features-maximized-3.png)
+
+#### __[XAML] Example 4: Setting minimized area with 2 rows__  
+{{region radtileview-minimizing-and-maximizing_3}}
+	<telerik:RadTileView MinimizedRowsCount="2" MinimizedItemsPosition="Top" />
+{{endregion}}
+
+#### __Figure 4: Minimized area with 2 rows__
+![](images/radtileview-features-maximized-4.png)
 
 ## Preserve MaximizedItem Position
 

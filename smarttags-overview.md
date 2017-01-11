@@ -10,7 +10,7 @@ position: 4
 
 # Smart Tags
 
-In **R3 2016** we introduced the **Smart Tags** feature which provides easy access to the most important documentation articles related to each control. Though the feature is especially useful for users that have recently started using **Telerik** controls, it might come handy for experienced users as it provides easy navigation to the control's documentation and demos.
+In **R1 2017** we introduced the **Smart Tags** feature which provides easy access to the most important documentation articles related to each control. Though the feature is especially useful for users that have recently started using **Telerik** controls, it might come handy for experienced users as it provides easy navigation to the control's documentation and demos.
  
 As shown in **Figure 1**, when you focus a certain Telerik control in the Visual Studio Designer, the **Smart Tag** arrow would appear on the right top corner of the control. 
 

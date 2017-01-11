@@ -25,7 +25,7 @@ To learn more about styling the __RadGridView__ specific elements, read the foll
 
 * [Styling a Cell]({%slug gridview-styling-cell%})
 
-* [Styling a Merged Cell]({%slug gridview-styling-mergedcell%})
+{% if site.site_name == 'WPF' %}* [Styling a Merged Cell]({%slug gridview-styling-mergedcell%}){% endif %}
 
 * [Styling the GridViewEditorPresenter]({%slug gridview-styling-editorpresenter%})
 

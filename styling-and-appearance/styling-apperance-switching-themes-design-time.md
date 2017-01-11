@@ -39,7 +39,7 @@ This will automatically add the new theme dll in the references of the project a
 		</ResourceDictionary>
 	</Application.Resources>
 
-> You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).
+{% if site.site_name == 'WPF' %}> You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).{% endif %}
 	
 ## See Also
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

@@ -22,7 +22,7 @@ Typically, you use a style selector when you have more than one styles defined f
 
 * [RowStyleSelector]({%slug gridview-rowstyleselector%})
 
-* [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%})
+{% if site.site_name == 'WPF' %}* [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%}){% endif %}
 
 * [RowDetailsStyleSelector]({%slug gridview-rowdetails-styleselector%})
 

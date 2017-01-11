@@ -28,7 +28,10 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 	            {
 	                var cellAggregateValue = cellData.Data as CellAggregateValue;
 	                var localProvider = pivotGrid.DataProvider as LocalDataSourceProvider;
-	                localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup);            
+					if (localProvider != null)
+				    {
+        				localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup);
+					}         
 				}
 			}
         }
@@ -46,8 +49,11 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 		    if (cellData != null)
 		    {
 		        var cellAggregateValue = cellData.Data as CellAggregateValue;
-		        var localProvider = this.pivotGrid.DataProvider as LocalDataSourceProvider;
-		        localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup);            
+		        var localProvider = pivotGrid.DataProvider as LocalDataSourceProvider;
+				if (localProvider != null)
+				{
+		        	localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup);
+				}          
 		    }
 		}
 	}
@@ -66,7 +72,9 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 				If cellData IsNot Nothing Then
 					Dim cellAggregateValue = TryCast(cellData.Data, CellAggregateValue)
 					Dim localProvider = TryCast(pivotGrid.DataProvider, LocalDataSourceProvider)
-					localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup)
+					If localProvider IsNot Nothing Then
+						localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup)
+					End If
 				End If
 			End If
 		End If
@@ -81,8 +89,10 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 				Dim cellData = TryCast((TryCast(e.OriginalSource, FrameworkElement)).DataContext, CellData)
 				If cellData IsNot Nothing Then
 					Dim cellAggregateValue = TryCast(cellData.Data, CellAggregateValue)
-					Dim localProvider = TryCast(Me.pivotGrid.DataProvider, LocalDataSourceProvider)
-					localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup)
+					Dim localProvider = TryCast(pivotGrid.DataProvider, LocalDataSourceProvider)
+					If localProvider IsNot Nothing Then
+						localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup)
+					End If
 				End If
 			End If
 	End Sub

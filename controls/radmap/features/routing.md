@@ -12,6 +12,8 @@ position: 15
 
 The __RadMap__ provides unified route search architecture which uses functionality of the different routing services. This allows you to calculate route between different locations on the map.      
 
+>important The __BingRouteProvider__ is marked as __obsolete in R1 2017__ and will be __removed in R2 2017__. It uses Bing SOAP Routing service that will be stopped in June 2017. Please use __BingRestMapProvider__ and its IBingRestRouteProvider implementation based on Bing REST services.
+
 This topic will focus on the following:
 
 * [Routing Providers](#routing-providers)

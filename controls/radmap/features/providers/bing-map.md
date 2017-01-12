@@ -10,6 +10,8 @@ position: 1
 
 # Bing Map Provider
 
+>important The __BingMapProvider__ is marked as __obsolete in R1 2017__ and will be __removed in R2 2017__. It uses Bing SOAP Imagery service that will be stopped in June 2017. Please use __BingRestMapProvider__ instead.
+
 ## Properties
 
 The __RadMap__ supports using of the [Bing Maps](http://www.bing.com/maps/) imagery services for displaying the map. There are 2 types of providers which are used in Bing Maps. The tile images of Bing Maps can be used via the __BingMapProvider__ (SOAP imagery service) or __BingRestMapProvider__ (RESTful imagery service) class. In order to create an instance of the __BingMapProvider__ you have to use the third overload of its constructor. In this way you can easily pass the required parameters - map mode, labels visibility and a __Bing Maps Key__. The most important of them is the __Bing Maps Key__ parameter. Without supplying a valid key you will not be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).        
@@ -102,6 +104,7 @@ Here is a snapshot of the __Birdseye__ mode for __Bing Map Provider__:
 
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
 
+<!--
 ## BingRestMapProvider
 
 The __BingRestMapProvider__ uses other way to connect Bing Maps imagery service (REST), but it can be configured identically the __BingMapProvider__.      
@@ -120,6 +123,6 @@ The __BingRestMapProvider__ uses other way to connect Bing Maps imagery service 
 #### __VB.NET__
 	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
 	Me.radMap.Provider = bingMap
-
+-->
 # See Also
  * [ArcGIS Online Map Provider]({%slug radmap-features-providers-arcgis%})

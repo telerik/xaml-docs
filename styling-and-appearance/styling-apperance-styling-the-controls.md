@@ -10,7 +10,7 @@ position: 1
 
 # Styling the Controls 
 
-Styling the **Telerik** controls is easy and intuitive due to the **Theming** mechanism. An important step to remember is to always [base your custom styles](#basing-a-custom-style-on-a-theme-default-style) on the theme default one when using the **NoXAML** binary files. 
+Customizing the look and feel of the **Telerik** controls is easy and intuitive due to the provided **theming** mechanism. An important step to remember is to always [base your custom styles](#basing-a-custom-style-on-a-theme-default-style) on the theme default one when using the **NoXAML** binary files. 
 
 ## Basing a Custom Style on a Theme Default Style
 

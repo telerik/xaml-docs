@@ -5,7 +5,7 @@ description: Green Theme
 slug: common-styling-appearance-green-theme
 tags: green,theme,dynamic,fontsize,fontfamily
 published: True
-position: 7
+position: 5
 ---
 
 # Green Theme
@@ -48,7 +48,7 @@ There are two palettes of colors which can be easily set by choosing one of the 
 The next screenshot displays RadCalendar in its Light and Dark color variations:  
 
 #### __Figure 1: Light and Dark color variations demonstrated with RadCalendar__
-![Green Theme Image 01](images/Common_Styling_Appearance_Green_Theme_01.png)
+![Green Theme Image 01](../images/Common_Styling_Appearance_Green_Theme_01.png)
 
 ## Theme Variation Changing
 
@@ -132,7 +132,7 @@ There are two brushes usually used as border brush:
 * __LowBrush__: A Brush used as a border brush of controls in their ReadOnly state.
 
 #### __Figure 2: The theme brushes demonstration__
-![Green Theme Image 02](images/Common_Styling_Appearance_Green_Theme_02.png)
+![Green Theme Image 02](../images/Common_Styling_Appearance_Green_Theme_02.png)
 
 ## Changing Fonts 
 
@@ -211,7 +211,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 	End Sub
 
 #### __Figure 3: Change in theme fonts__
-![Green Theme Image 03](images/Common_Styling_Appearance_Green_Theme_03.png)
+![Green Theme Image 03](../images/Common_Styling_Appearance_Green_Theme_03.png)
 	
 ## Changing CornerRadius 
 
@@ -283,7 +283,7 @@ As the following example shows, you can change the default __CornerRadius__ from
 	End Sub
 
 #### __Figure 4: Changes in corner radius__	
-![Green Theme Image 04](images/Common_Styling_Appearance_Green_Theme_04.png)
+![Green Theme Image 04](../images/Common_Styling_Appearance_Green_Theme_04.png)
 
 ## Changing Opacity 
 
@@ -299,7 +299,7 @@ If you need to change the opacity of disabled elements, you can now easily do it
 	GreenPalette.Palette.DisabledOpacity = 0.5
 	
 #### __Figure 5: Changes in the disabled elements opacity__
-![Green Theme Image 05](images/Common_Styling_Appearance_Green_Theme_05.png)
+![Green Theme Image 05](../images/Common_Styling_Appearance_Green_Theme_05.png)
 	
 The same is applicable for the ReadOnly state of controls by using the exposed __ReadOnlyOpacity__ property of GreenPalette. The default values are 0.2 and 1 for the __DisabledOpacity__ and the __ReadOnlyOpacity__ properties. 
 
@@ -319,7 +319,7 @@ The same is applicable for the ReadOnly state of controls by using the exposed _
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
 
 #### __Figure 6: Changes in the readonly elements opacity__
-![Green Theme Image 06](images/Common_Styling_Appearance_Green_Theme_06.png)	
+![Green Theme Image 06](../images/Common_Styling_Appearance_Green_Theme_06.png)	
 
 ## See Also
 * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

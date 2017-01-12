@@ -39,65 +39,54 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 
 #### __[C#] Example 1: Save RadGridView`s content in Excel file__
 
-{{region gridview-export_0}}
-
-	public MainPage()
-	{
-	 InitializeComponent();
-	 btnExport.Click += new RoutedEventHandler(btnExport_Click); 
-	}
+{{region cs-gridview-export_0}}
 	void btnExport_Click(object sender, RoutedEventArgs e)
 	{
-	 string extension = "xls";
-	 SaveFileDialog dialog = new SaveFileDialog()
-	 {
-	  DefaultExt = extension,
-	  Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
-	  FilterIndex = 1
-	 };
-	 if (dialog.ShowDialog() == true)
-	 {
-	  using (Stream stream = dialog.OpenFile())
-	  {
-	   gridViewExport.Export(stream,
-	    new GridViewExportOptions()
+	    string extension = "xls";
+	    SaveFileDialog dialog = new SaveFileDialog()
 	    {
-	     Format = ExportFormat.ExcelML,
-	     ShowColumnHeaders = true,
-	     ShowColumnFooters = true,
-	     ShowGroupFooters = false,
-	    });
-	  }
-	 }
+	        DefaultExt = extension,
+	        Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
+	        FilterIndex = 1
+	    };
+	    if (dialog.ShowDialog() == true)
+	    {
+	        using (Stream stream = dialog.OpenFile())
+	        {
+	            gridViewExport.Export(stream,
+	             new GridViewExportOptions()
+	             {
+	                 Format = ExportFormat.Html,
+	                 ShowColumnHeaders = true,
+	                 ShowColumnFooters = true,
+	                 ShowGroupFooters = false,
+	             });
+	        }
+	    }
 	}
 {{endregion}}
 
 
 #### __[VB.NET] Example 1: Save RadGridView`s content in Excel file__
 
-{{region gridview-export_1}}
-
-	Public Sub New()
-	 InitializeComponent()
-	 AddHandler btnExport.Click, AddressOf btnExport_Click
-	End Sub
+{{region vb-gridview-export_1}}
 	Private Sub btnExport_Click(sender As Object, e As RoutedEventArgs)
-	 Dim extension As String = "xls"
-	 Dim dialog As New SaveFileDialog() With { _
-	  .DefaultExt = extension, _
-	  .Filter = [String].Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"), _
-	  .FilterIndex = 1 _
-	 }
-	If dialog.ShowDialog() = True Then
-	  Using stream As Stream = dialog.OpenFile()
-	   gridViewExport.Export(stream, New GridViewExportOptions() With { _
-	    .Format = ExportFormat.ExcelML, _
-	    .ShowColumnHeaders = True, _
-	    .ShowColumnFooters = True, _
-	    .ShowGroupFooters = False _
-	   })
-	  End Using
-	 End If
+	    Dim extension As String = "xls"
+	    Dim dialog As New SaveFileDialog() With {
+	     .DefaultExt = extension,
+	     .Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
+	     .FilterIndex = 1
+	    }
+	    If dialog.ShowDialog() = True Then
+	        Using stream As Stream = dialog.OpenFile()
+	            gridViewExport.Export(stream, New GridViewExportOptions() With {
+	             .Format = ExportFormat.Html,
+	             .ShowColumnHeaders = True,
+	             .ShowColumnFooters = True,
+	             .ShowGroupFooters = False
+	            })
+	        End Using
+	    End If
 	End Sub
 {{endregion}}
         
@@ -116,21 +105,15 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 
 #### __[C#] Example 2: Save content to String__
 
-{{region gridview-export_2}}
-
-	using Telerik.Windows.Controls;
-	...
-	string htmlExport = this.ExportGrid.ToHtml(true);
+{{region cs-gridview-export_2}}
+	string htmlExport = this.gridViewExport.ToHtml(true);
 {{endregion}}
 
 
 #### __[VB.NET] Example 2: Save content to String__
 
-{{region gridview-export_3}}
-
-	Imports Telerik.Windows.Controls
-	...
-	Dim htmlExport As String = Me.ExportGrid.ToHtml(True)
+{{region vb-gridview-export_3}}
+	Dim htmlExport As String = Me.gridViewExport.ToHtml(True)
 {{endregion}}
 
         

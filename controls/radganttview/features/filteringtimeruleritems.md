@@ -34,11 +34,11 @@ SingleRangeGenerator allows you view the whole TimeRuler specified by the visibl
 
 #### __XAML__
 
-{{region radganttview-filteringtimeruleritems_0}}
+{{region xaml-radganttview-filteringtimeruleritems_0}}
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
-		<telerik:RadGanttView.TimeLineFilteringBehavior>
-			<telerik:SingleRangeGenerator />
-		</telerik:RadGanttView.TimeLineFilteringBehavior>
+	    <telerik:RadGanttView.TimeLineFilteringBehavior>
+	        <telerik:SingleRangeGenerator />
+	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -60,11 +60,11 @@ So it can be used to mark the working days, for example:
 
 #### __XAML__
 
-{{region radganttview-filteringtimeruleritems_1}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
-		<telerik:RadGanttView.TimeLineFilteringBehavior>
-			<telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
-		</telerik:RadGanttView.TimeLineFilteringBehavior>
+{{region xaml-radganttview-filteringtimeruleritems_1}}
+	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}">
+	    <telerik:RadGanttView.TimeLineFilteringBehavior>
+	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
+	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -80,7 +80,7 @@ In RadGanttView it is possible to implement a custom IRangeGenerator. You just n
 
 #### __C#__
 
-{{region radganttview-filteringtimeruleritems_1}}
+{{region cs-radganttview-filteringtimeruleritems_1}}
 	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
 	{
 		public System.Collections.Generic.IEnumerable<IDateRange> GetRanges(IDateRange visibleRange)
@@ -102,11 +102,11 @@ All that's left is to set the newly created class to the TimeLineFilteringBehavi
 
 #### __XAML__
 
-{{region radganttview-filteringtimeruleritems_2}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
-		<telerik:RadGanttView.TimeLineFilteringBehavior>
-			<example:CustomRangeGenerator />
-		</telerik:RadGanttView.TimeLineFilteringBehavior>
+{{region xaml-radganttview-filteringtimeruleritems_2}}
+	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}">
+	    <telerik:RadGanttView.TimeLineFilteringBehavior>
+	        <example:CustomRangeGenerator />
+	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
 {{endregion}}
 

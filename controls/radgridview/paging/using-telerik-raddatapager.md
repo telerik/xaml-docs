@@ -28,16 +28,13 @@ Here is a list of the most important features of the __RadDataPager__:
 
 #### __XAML__
 
-{{region radgridview-paging-using-telerik-raddatapager_0}}
-
-	<telerik:RadDataPager x:Name="radDataPager"
-	                      Source="{Binding MyCollection}" />
+{{region xaml-radgridview-paging-using-telerik-raddatapager_0}}
+	<telerik:RadDataPager Source="{Binding MyCollection}" />
 {{endregion}}
 
 #### __C#__
 
-{{region radgridview-paging-using-telerik-raddatapager_1}}
-
+{{region cs-radgridview-paging-using-telerik-raddatapager_1}}
 	IEnumerable data = new List<int>() { 1, 2, 3 };
 	RadDataPager radDataPager = new RadDataPager();
 	radDataPager.Source = data;
@@ -45,8 +42,7 @@ Here is a list of the most important features of the __RadDataPager__:
 
 #### __VB.NET__
 
-{{region radgridview-paging-using-telerik-raddatapager_2}}
-
+{{region vb-radgridview-paging-using-telerik-raddatapager_2}}
 	Dim data As IEnumerable = New List(Of Integer)()
 	Dim radDataPager As New RadDataPager()
 	radDataPager.Source = data
@@ -102,24 +98,23 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 
 #### __XAML__
 
-{{region radgridview-paging-using-telerik-raddatapager_8}}
-
+{{region xaml-radgridview-paging-using-telerik-raddatapager_8}}
 	<StackPanel>
 	    <riaControls:DomainDataSource x:Name="domainDataSource"
-	                                  AutoLoad="True"
-	                                  QueryName="GetCustomers"
-	                                  PageSize="10">
+	          AutoLoad="True"
+	          QueryName="GetCustomers"
+	          PageSize="10">
 	        <riaControls:DomainDataSource.DomainContext>
-	            <context:NorthwindDomainContext />
+	            <local:NorthwindDomainContext />
 	        </riaControls:DomainDataSource.DomainContext>
 	    </riaControls:DomainDataSource>
 	    <telerik:RadGridView x:Name="radGridView"
-	                         ItemsSource="{Binding Data, ElementName=domainDataSource}"
-	                         IsBusy="{Binding IsBusy, ElementName=DomainDataSource1}" />
+	 ItemsSource="{Binding Data, ElementName=domainDataSource}"
+	 IsBusy="{Binding IsBusy, ElementName=DomainDataSource1}" />
 	    <telerik:RadDataPager x:Name="radDataPager"
-	                          Source="{Binding Data, ElementName=domainDataSource}"
-	                          DisplayMode="FirstLastPreviousNextNumeric, Text"
-	                          IsTotalItemCountFixed="True" />
+	  Source="{Binding Data, ElementName=domainDataSource}"
+	  DisplayMode="FirstLastPreviousNextNumeric, Text"
+	  IsTotalItemCountFixed="True" />
 	</StackPanel>
 {{endregion}}
 

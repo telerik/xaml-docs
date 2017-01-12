@@ -52,7 +52,7 @@ The pan and zoom behavior enables drag-to-zoom and drag-to-pan functionalities. 
 
 You can alter the drag action using the __DragMode__ property of the behavior. Setting it to __Pan__ will start panning, instead of zooming when you drag the mouse over the plot area. To forbid any drag actions you can set the DragMode to __None__.
 
-#### __[XAML] Example 3: Setting minimum drag-to-zoom distance__
+#### __[XAML] Example 3: Setting drag mode__
 {{region radchart-features-panzoom_2}}
 	<telerik:ChartPanAndZoomBehavior DragMode="Pan" />
 {{endregion}}

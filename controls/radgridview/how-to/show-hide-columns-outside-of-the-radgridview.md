@@ -26,25 +26,22 @@ The example will represent a __ListBox and RadGridView__. The ListBox will list 
 Here are the definitions of the controls.
 
 #### __XAML__
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_0}}
-
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_0}}
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
 	        <ColumnDefinition Width="*"/>
 	    </Grid.ColumnDefinitions>
 	    <ListBox />
-	    <telerik:RadGridView x:Name="radGridView"
-	                         Grid.Column="1"
-	                         Margin="10,0,0,0" />
-	 </Grid>
+	    <telerik:RadGridView Grid.Column="1"
+	                 Margin="10,0,0,0" />
+	</Grid>
 {{endregion}}
 
 Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via Element Binding.
 
 #### __XAML__
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_1}}
-
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_1}}
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
@@ -52,8 +49,8 @@ Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via 
 	    </Grid.ColumnDefinitions>
 	    <ListBox ItemsSource="{Binding Columns, ElementName=radGridView}" />
 	    <telerik:RadGridView x:Name="radGridView"
-	                         Grid.Column="1" 
-	                         Margin="10,0,0,0" />
+	                 Grid.Column="1" 
+	                 Margin="10,0,0,0" />
 	</Grid>
 {{endregion}}
 
@@ -61,24 +58,23 @@ After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox.
 
 #### __XAML__
 
-{{region radgridview-how-to-show-hide-columns-outside-of-the-radgridview_2}}
-
+{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_2}}
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
 	        <ColumnDefinition Width="*"/>
 	    </Grid.ColumnDefinitions>
-	    <ListBox ItemsSource="{Binding Columns, ElementName=radGridView}">
+	    <ListBox ItemsSource="{Binding Columns, ElementName=radGridView2}">
 	        <ListBox.ItemTemplate>
 	            <DataTemplate>
 	                <CheckBox Content="{Binding Header}"
-	                          IsChecked="{Binding IsVisible, Mode=TwoWay}" />
+	                  IsChecked="{Binding IsVisible, Mode=TwoWay}" />
 	            </DataTemplate>
 	        </ListBox.ItemTemplate>
 	    </ListBox>
-	    <telerik:RadGridView x:Name="radGridView"
-	                         Grid.Column="1" 
-	                         Margin="10,0,0,0" />
+	    <telerik:RadGridView x:Name="radGridView2"
+	                 Grid.Column="1" 
+	                 Margin="10,0,0,0" />
 	</Grid>
 {{endregion}}
 

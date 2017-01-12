@@ -468,6 +468,17 @@ navigation:
         title: Ribbon Buttons
     controls/radslider:
         title: RadSlider
+    controls/radslider/features/tick-marks:
+        title: Tick Marks
+    controls/radslider/events:
+        title: Events
+        position: 7			
+    controls/radslider/styling-and-appearance:
+        title: Styling and Appearance
+        position: 8		
+    controls/radslider/howto:
+        title: How To
+        position: 9	
     controls/radsparkline:
         title: RadSparkLine
     controls/radtabcontrol:
@@ -484,6 +495,8 @@ navigation:
         title: RadTileView
     controls/radtoolbar:
         title: RadToolBar
+    controls/radtoolbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radtooltip:
         title: RadToolTip
     controls/radtimebar:

@@ -20,7 +20,9 @@ The purpose of this help article is to show you the key properties of __RadAutoC
 
 * [Setting the TextBoxStyle, BoxesItemTemplate, DropDownItemTemplate properties](#setting-the-style-and-template-properties)
 
-* [Setting NoResultsContent, NoResultsContentTemplate properties] (#setting-noresultscontent-noresultscontenttemplate-properties)
+* [Setting NoResultsContent, NoResultsContentTemplate properties](#setting-noresultscontent-noresultscontenttemplate-properties)
+
+* [Setting WatermarkContent](#setting-watermarkcontent)
 
 * [Other properties](#other-properties)
 
@@ -81,6 +83,14 @@ For more complex representation you could use __NoResultsContentTemplate__ in or
 The result would be the following:
 
 ![](images/radautocompletebox-features-key-properties-2.png)
+
+## Setting WatermarkContent
+
+The **WatermarkContent** property specifies the text or any other content to be displayed when RadAutoCompleteBox's **TextBox** is not focused. When in **Single** SelectionMode no item should be selected for the watermark content to be visible.
+
+#### __Figure 1: Custom Watermark Content__
+
+![Custom Watermark Content](images/radautocompletebox-features-watermarkcontent.png)
 
 ## Other properties
 

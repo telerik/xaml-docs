@@ -14,31 +14,28 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 #### __XAML__
 
-{{region gridview-columns-data-formatting_0}}
-
+{{region xaml-gridview-columns-data-formatting_0}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderDate}"
-                                Header="Order Date"
-                                UniqueName="OrderDate"
-                                DataFormatString="{} {0:dd, MMM, yyyy}" />
+	                Header="Order Date"
+	                UniqueName="OrderDate"
+	                DataFormatString="{} {0:dd, MMM, yyyy}" />
 {{endregion}}
 
 >tipDefining format strings in XAML can be done in the following way- {}:{0:__your format string__}.
 
 #### __C#__
 
-{{region gridview-columns-data-formatting_1}}
-
-	((GridViewDataColumn)this.radGridView.Columns["OrderDate"] ).DataFormatString = "{0:dd, MMM, yyyy}";
-	    // or
-	((GridViewDataColumn)this.radGridView.Columns["OrderDate"] ).DataFormatString = "dd, MMM, yyyy";
+{{region cs-gridview-columns-data-formatting_1}}
+	((GridViewDataColumn)this.radGridView.Columns["OrderDate"]).DataFormatString = "{0:dd, MMM, yyyy}";
+	// or
+	((GridViewDataColumn)this.radGridView.Columns["OrderDate"]).DataFormatString = "dd, MMM, yyyy";
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-columns-data-formatting_2}}
-
+{{region vb-gridview-columns-data-formatting_2}}
 	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "{0:dd, MMM, yyyy}"
-	    ' or'
+	' or
 	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "dd, MMM, yyyy"
 {{endregion}}
 

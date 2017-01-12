@@ -30,16 +30,15 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 
 #### __XAML__
 
-{{region gridview-multiple-column-grouping_0}}
-
+{{region xaml-gridview-multiple-column-grouping_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                        AutoGenerateColumns="False">
-	   <telerik:RadGridView.GroupDescriptors>
-	       <telerik:GroupDescriptor Member="Country"
-	                                    SortDirection="Ascending" />
-	       <telerik:GroupDescriptor Member="Title"
-	                                    SortDirection="Ascending" />
-	   </telerik:RadGridView.GroupDescriptors>
+	                AutoGenerateColumns="False">
+	    <telerik:RadGridView.GroupDescriptors>
+	        <telerik:GroupDescriptor Member="Country"
+	                            SortDirection="Ascending" />
+	        <telerik:GroupDescriptor Member="Title"
+	                            SortDirection="Ascending" />
+	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -47,22 +46,20 @@ This can be done at run time via managed code too:
 
 #### __C#__
 
-{{region gridview-multiple-column-grouping_1}}
-
+{{region cs-gridview-multiple-column-grouping_1}}
 	GroupDescriptor countryDescriptor = new GroupDescriptor();
 	countryDescriptor.Member = "Country";
 	countryDescriptor.SortDirection = ListSortDirection.Ascending;
-	this.radGridView.GroupDescriptors.Add( countryDescriptor );
+	this.radGridView.GroupDescriptors.Add(countryDescriptor);
 	GroupDescriptor titleDescriptor = new GroupDescriptor();
 	titleDescriptor.Member = "Title";
 	titleDescriptor.SortDirection = ListSortDirection.Ascending;
-	this.radGridView.GroupDescriptors.Add( titleDescriptor );
+	this.radGridView.GroupDescriptors.Add(titleDescriptor);
 {{endregion}}
 
 #### __VB.NET__
 
-{{region gridview-multiple-column-grouping_2}}
-
+{{region vb-gridview-multiple-column-grouping_2}}
 	Dim countryDescriptor As New GroupDescriptor()
 	countryDescriptor.Member = "Country"
 	countryDescriptor.SortDirection = ListSortDirection.Ascending

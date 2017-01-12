@@ -26,27 +26,13 @@ Here is a small example:
 
 #### __C#__
 
-{{region gridview-not-all-values-shown-filtering_0}}
-
-	public MainPage()
+{{region cs-gridview-not-all-values-shown-filtering_0}}
+	private void radGridView_DistinctValuesLoading(object sender, GridViewDistinctValuesLoadingEventArgs e)
 	{
-	    InitializeComponent();
-	
-	    this.testGrid.ItemsSource = MyData();
-	    this.testGrid.DistinctValuesLoading += newEventHandler<GridViewDistinctValuesLoadingEventArgs>(testGrid_DistinctValuesLoading);            
-	}
-	
-	void testGrid_DistinctValuesLoading(object sender, GridViewDistinctValuesLoadingEventArgs e)
-	{
-	    if((string)e.Column.Header == "Int32")
+	    if ((string)e.Column.Header == "Name")
 	    {
-	        e.ItemsSource = testGrid.GetDistinctValues(e.Column, true, testGrid.Items.Count);;
+	        e.ItemsSource = radGridView.GetDistinctValues(e.Column, true, radGridView.Items.Count);
 	    }
-	}
-	
-	List<int> MyData()
-	{
-	    return Enumerable.Range(0, 2000).ToList();
 	}
 {{endregion}}
 

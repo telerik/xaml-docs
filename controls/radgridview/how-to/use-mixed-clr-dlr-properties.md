@@ -18,16 +18,15 @@ For example if the CLR property is named "IsReadOnly", you should add code simil
 
 #### __C#__
 
-{{region gridview-how-to-use-mixed-clr-dlr-properties_0}}
-
+{{region cs-gridview-how-to-use-mixed-clr-dlr-properties_0}}
 	public override bool TryGetMember(GetMemberBinder binder, out object result)
 	{
 	    if (binder.Name == "IsReadOnly")
 	    {
-	        result = this.IsReadonly;
+	        result = this.IsReadOnly;
 	        return true;
 	    }
-	     
+	
 	    if (this.dynamicFields.ContainsKey(binder.Name))
 	    {
 	        result = dynamicFields[binder.Name];

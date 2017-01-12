@@ -1,24 +1,24 @@
 ---
-title: InlineImage
-page_title: InlineImage
-description: InlineImage
+title: ImageInline
+page_title: ImageInline
+description: ImageInline
 slug: radrichtextbox-features-document-elements-inlineimage
-tags: inlineimage
+tags: Image,Inline
 published: True
 position: 5
 ---
 
-# InlineImage
+# ImageInline
 
 
 
-The __InlineImage__ class allows images to be displayed inside the document. The __InlineImage__ can only be used in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element untill the end of the line. If there is no space left, the element will be wrapped on the next line.
+The __ImageInline__ class allows images to be displayed inside the document. The __ImageInline__ can only be used in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element until the end of the line. If there is no space left, the element will be wrapped on the next line.
 
-This topic will explain you how to use the __InlineImage__ element.
+This topic will explain you how to use the __ImageInline__ element.
 
 ## Add in XAML
 
-Here is an example of an __InlineImage__ element used in XAML at design time.
+Here is an example of an __ImageInline__ element used in XAML at design time.
 
 #### __XAML__
 
@@ -38,7 +38,7 @@ Here is an example of an __InlineImage__ element used in XAML at design time.
 
 ## Add in Code Behind
 
-Here is an example of how to add an __InlineImage__ element in the code behind.
+Here is an example of how to add an __ImageInline__ element in the code behind.
 
 #### __C#__
 
@@ -123,7 +123,7 @@ Here is an example of how to allow the user to select an image and add it to the
 
 
 
-# See Also
+## See Also
 
  * [Editing Images]({%slug radrichtextbox-features-editing-images%})
 

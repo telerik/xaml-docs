@@ -5,7 +5,7 @@ description: Getting Started
 slug: radoutlookbar-getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started

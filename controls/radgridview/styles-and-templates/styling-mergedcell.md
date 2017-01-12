@@ -41,13 +41,13 @@ You can apply a style to the merged cells, similar to:
 
 #### __[XAML] Example 1: Styling all merged cells of an application__
 
-	{{region gridview-styling-merged-cells-1}}
+	{{region xaml-gridview-styling-merged-cells-1}}
 	<Style TargetType="telerik:GridViewMergedCell">
-		<Setter Property="VerticalContentAlignment" Value="Top"/>
-		<Setter Property="HorizontalContentAlignment" Value="Center"/>
-		<Setter Property="Background" Value="#ffcc00"/>
-	</Style>
-	{{endregion}}
+	            <Setter Property="VerticalContentAlignment" Value="Top"/>
+	            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	            <Setter Property="Background" Value="#ffcc00"/>
+	        </Style>
+{{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewMergedCellStyle__.
 
@@ -61,17 +61,17 @@ If instead you would like to set a style only for a specific __RadGridView__, yo
 
 #### __[XAML] Example 2: Styling merged cells of a specific RadGridView__
 
-	{{region gridview-styling-merged-cells-2}}
+	{{region xaml-gridview-styling-merged-cells-2}}
 	<Grid.Resources>
-		<Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
-			<Setter Property="VerticalContentAlignment" Value="Top"/>
-			<Setter Property="HorizontalContentAlignment" Value="Center"/>
-			<Setter Property="Background" Value="#ffcc00"/>
-		</Style>
-	</Grid.Resources>
-
-	<telerik:RadGridView MergedCellsStyle="{StaticResource GridViewMergedCellsStyle}" />
-	{{endregion}}
+	                <Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
+	                    <Setter Property="VerticalContentAlignment" Value="Top"/>
+	                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	                    <Setter Property="Background" Value="#ffcc00"/>
+	                </Style>
+	            </Grid.Resources>
+	
+	            <telerik:RadGridView MergedCellsStyle="{StaticResource GridViewMergedCellsStyle}" />
+{{endregion}}
 
 >tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 

@@ -19,9 +19,8 @@ To enable the popup filtering mode, set RadGridView’s FilteringMode property t
 
 #### __XAML__
 
-{{region gridview-filtering-howto-configure-the-filtering-mode_0}}
-
-	<telerik:RadGridView FilteringMode="Popup">
+{{region xaml-gridview-filtering-howto-configure-the-filtering-mode_0}}
+	<telerik:RadGridView FilteringMode="Popup" />
 {{endregion}}
 
 Popup Filtering Mode
@@ -34,9 +33,8 @@ To enable the custom filter row mode, set RadGridView’s FilteringMode property
 
 #### __XAML__
 
-{{region gridview-filtering-howto-configure-the-filtering-mode_1}}
-
-	<telerik:RadGridView FilteringMode="FilterRow">
+{{region xaml-gridview-filtering-howto-configure-the-filtering-mode_1}}
+	<telerik:RadGridView FilteringMode="FilterRow" />
 {{endregion}}
 
 

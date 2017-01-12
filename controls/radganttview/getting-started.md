@@ -31,14 +31,11 @@ This tutorial will walk you through the creation of a sample application that co
 
 #### __XAML__
 
-{{region radganttview-getting-started_0}}
-	<UserControl
-	   ...
-	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	   ...>
-	      <Grid>
-	         <telerik:RadGanttView x:Name="ganttView" />
-	      </Grid>
+{{region xaml-radganttview-getting-started_0}}
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	    <Grid>
+	        <telerik:RadGanttView x:Name="ganttView" />
+	    </Grid>
 	</UserControl>
 {{endregion}}
 
@@ -52,13 +49,13 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __XAML__
 
-{{region radganttview-getting-started_3}}
-	<telerik:RadGanttView x:Name="ganttView">
-		<telerik:RadGanttView.Columns>
-			<telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-			<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-		</telerik:RadGanttView.Columns>
+{{region xaml-radganttview-getting-started_3}}
+	<telerik:RadGanttView x:Name="ganttView2">
+	    <telerik:RadGanttView.Columns>
+	        <telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
+	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
+	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
 {{endregion}}
 
@@ -70,15 +67,15 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __C#__
 
-{{region radganttview-getting-started_1}}
+{{region cs-radganttview-getting-started_1}}
 	var date = DateTime.Now;
 	
-	var task1 = new GanttTask( date, date.AddDays(1), "task 1");
-	var task2 = new GanttTask( date.AddDays(1), date.AddDays(1).AddHours(15), "task 2");
+	var task1 = new GanttTask(date, date.AddDays(1), "task 1");
+	var task2 = new GanttTask(date.AddDays(1), date.AddDays(1).AddHours(15), "task 2");
 	
 	var mainTask = new GanttTask(date, date.AddDays(2), "my task")
 	{
-		Children = { task1, task2 }
+	    Children = { task1, task2 }
 	};
 	
 	var Tasks = new ObservableCollection<GanttTask>() { mainTask };
@@ -88,11 +85,11 @@ You should manually define the columns of the data grid in order to show additio
 
 #### __XAML__
 
-{{region radganttview-getting-started_2}}
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
-	...
+{{region xaml-radganttview-getting-started_2}}
+	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}">
+	    <!--...-->
 	</telerik:RadGanttView>
-	{{endregion}}
+{{endregion}}
 
 Now run your application and see the result:
 

@@ -38,7 +38,7 @@ Windows Server 2003 (excluding IA-64)
 
 In order to develop applications with Telerik UI for WPF you need to have installed the following development tools:
 
-* __Microsoft Visual Studio 2010/2012/2013/2015__ - download from [here](http://www.microsoft.com/visualstudio/eng/downloads).
+* __Microsoft Visual Studio 2010/2012/2013/2015/2017__ - download from [here](http://www.microsoft.com/visualstudio/eng/downloads).
         
 * __.NET Framework 4.0, .NET 4.5, .NET 4.5.1, .NET 4.5.2 or .NET 4.6__ - download .NET 4.0 from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992&displaylang=en), .NET 4.5 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30653), .NET 4.5.1 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=40779), .NET 4.5.2 from [here](http://www.microsoft.com/en-us/download/details.aspx?id=42642) or .NET 4.6 from [here](https://www.microsoft.com/en-us/download/details.aspx?id=48130).
           

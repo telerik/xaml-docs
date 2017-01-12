@@ -21,7 +21,7 @@ Along with the [RadDocument]({%slug radrichtextbox-features-document-elements-ra
 
 * **InsertLastParagraphMarker**: A Boolean property that determines whether the last paragraph marker is inserted and, subsequently, whether the last paragraph's formatting is preserved. When the value is **True**, a new paragraph with the same formatting is inserted. Otherwise, only the inlines from that paragraph are inserted. *The default value is **True***.
 
-#### **[C#] Example 3: Merge documents with InsertDocumentOptions**
+#### **[C#] Example 1: Merge documents with InsertDocumentOptions**
 
 {{region cs-radrichtextbox-features-raddocumentmerger_1}}
  

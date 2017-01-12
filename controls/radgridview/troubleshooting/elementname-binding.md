@@ -18,22 +18,23 @@ The ElementName binding does not work when used in column Header or CellTemplate
 #### __XAML__
 
 
-{{region gridview-troubleshooting-elementname-binding_0}}
+{{region xaml-gridview-troubleshooting-elementname-binding_0}}
 	<TextBox x:Name="TextBox1" Text="Type something" />
-	    <telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewColumn>
-	                <telerik:GridViewColumn.Header>
+	
+	<telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewColumn>
+	            <telerik:GridViewColumn.Header>
+	                <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
+	            </telerik:GridViewColumn.Header>
+	            <telerik:GridViewColumn.CellTemplate>
+	                <DataTemplate>
 	                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
-	                </telerik:GridViewColumn.Header>
-	                <telerik:GridViewColumn.CellTemplate>
-	                    <DataTemplate>
-	                        <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
-	                    </DataTemplate>
-	                </telerik:GridViewColumn.CellTemplate>
-	            </telerik:GridViewColumn>
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
+	                </DataTemplate>
+	            </telerik:GridViewColumn.CellTemplate>
+	        </telerik:GridViewColumn>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
 {{endregion}}
 
 __CAUSE__
@@ -47,38 +48,37 @@ Use a Style to set the ContentTemplate as below:
 
 #### __XAML__
 
-{{region gridview-troubleshooting-elementname-binding_1}}
-
-	<TextBox x:Name="TextBox1" Text="Type something" />
+{{region xaml-gridview-troubleshooting-elementname-binding_1}}
+	<TextBox x:Name="TextBox2" Text="Type something" />
 	
-	    <telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewColumn>
-	                <telerik:GridViewColumn.HeaderCellStyle>
-	                    <Style TargetType="telerik:GridViewHeaderCell">
-	                        <Setter Property="ContentTemplate">
-	                            <Setter.Value>
-	                                <DataTemplate>
-	                                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
-	                                </DataTemplate>
-	                            </Setter.Value>
-	                        </Setter>
-	                    </Style>
-	                </telerik:GridViewColumn.HeaderCellStyle>
-	                <telerik:GridViewColumn.CellStyle>
-	                    <Style TargetType="telerik:GridViewCell">
-	                        <Setter Property="ContentTemplate">
-	                            <Setter.Value>
-	                                <DataTemplate>
-	                                    <TextBlock Text="{Binding Text, ElementName=TextBox1}" />
-	                                </DataTemplate>
-	                            </Setter.Value>
-	                        </Setter>
-	                    </Style>
-	                </telerik:GridViewColumn.CellStyle>
-	            </telerik:GridViewColumn>
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
+	<telerik:RadGridView ItemsSource="{Binding}" AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewColumn>
+	            <telerik:GridViewColumn.HeaderCellStyle>
+	                <Style TargetType="telerik:GridViewHeaderCell">
+	                    <Setter Property="ContentTemplate">
+	                        <Setter.Value>
+	                            <DataTemplate>
+	                                <TextBlock Text="{Binding Text, ElementName=TextBox2}" />
+	                            </DataTemplate>
+	                        </Setter.Value>
+	                    </Setter>
+	                </Style>
+	            </telerik:GridViewColumn.HeaderCellStyle>
+	            <telerik:GridViewColumn.CellStyle>
+	                <Style TargetType="telerik:GridViewCell">
+	                    <Setter Property="ContentTemplate">
+	                        <Setter.Value>
+	                            <DataTemplate>
+	                                <TextBlock Text="{Binding Text, ElementName=TextBox2}" />
+	                            </DataTemplate>
+	                        </Setter.Value>
+	                    </Setter>
+	                </Style>
+	            </telerik:GridViewColumn.CellStyle>
+	        </telerik:GridViewColumn>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
 {{endregion}}
 
 # See Also

@@ -29,12 +29,11 @@ Here is a small sample code:
         
 #### __[XAML]Example 1: Define a custom header:__
 
-{{region gridview-export-troubleshooting-export-header_0}}
-
+{{region xaml-gridview-export-troubleshooting-export-header_0}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}">
 	    <telerik:GridViewDataColumn.Header>
 	        <TextBlock Text="Stadium capacity (seats)"
-	                   TextWrapping="Wrap"/>
+	        TextWrapping="Wrap"/>
 	    </telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
 {{endregion}}
@@ -43,23 +42,21 @@ Here is a small sample code:
         
 #### __[C#]Example 2: Handle the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-header_1}}
-
-	void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
+{{region cs-gridview-export-troubleshooting-export-header_1}}
+	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.Value != null && e.Value.GetType() == typeof(TextBlock))
-	         e.Value = (e.Value as TextBlock).Text;
+	        e.Value = (e.Value as TextBlock).Text;
 	}
 {{endregion}}
 
 #### __[VB.NET]Example 2:Handle the ElementExporting event:__
 
-{{region gridview-export-troubleshooting-export-header_2}}
-
+{{region vb-gridview-export-troubleshooting-export-header_2}}
 	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
-        If e.Value IsNot Nothing AndAlso e.Value.[GetType]() = GetType(TextBlock) Then
-            e.Value = TryCast(e.Value, TextBlock).Text
-        End If
+	    If e.Value IsNot Nothing AndAlso e.Value.[GetType]() = GetType(TextBlock) Then
+	        e.Value = TryCast(e.Value, TextBlock).Text
+	    End If
 	End Sub
 {{endregion}}
 

@@ -33,23 +33,22 @@ __Example 1: RadGridView__ generates columns automatically.
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_0}}
-
+{{region cs-gridview-columns-defining-columns_0}}
 	public class Employee
 	{
-	    [DisplayAttribute( AutoGenerateField = false )]
+	    [DisplayAttribute(AutoGenerateField = false)]
 	    public int EmployeeId
 	    {
 	        get;
 	        set;
 	    }
-	    [DisplayAttribute( Name = "First Name" )]
+	    [DisplayAttribute(Name = "First Name")]
 	    public string FirstName
 	    {
 	        get;
 	        set;
 	    }
-		[DisplayAttribute( Name = "Last Name" )]
+	    [DisplayAttribute(Name = "Last Name")]
 	    public string LastName
 	    {
 	        get;
@@ -60,39 +59,38 @@ __Example 1: RadGridView__ generates columns automatically.
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_1}}
-
+{{region vb-gridview-columns-defining-columns_1}}
 	Public Class Employee
-		<DisplayAttribute(AutoGenerateField:=False)> _
-		Public Property EmployeeId() As Integer
-			Get
-				Return m_EmployeeId
-			End Get
-			Set(value As Integer)
-				m_EmployeeId = Value
-			End Set
-		End Property
-		Private m_EmployeeId As Integer
-		<DisplayAttribute(Name:="First Name")> _
-		Public Property FirstName() As String
-			Get
-				Return m_FirstName
-			End Get
-			Set(value As String)
-				m_FirstName = Value
-			End Set
-		End Property
-		Private m_FirstName As String
-		<DisplayAttribute(Name:="Last Name")> _
-		Public Property LastName() As String
-			Get
-				Return m_LastName
-			End Get
-			Set(value As String)
-				m_LastName = Value
-			End Set
-		End Property
-		Private m_LastName As String
+	    <DisplayAttribute(AutoGenerateField:=False)>
+	    Public Property EmployeeId() As Integer
+	        Get
+	            Return m_EmployeeId
+	        End Get
+	        Set(value As Integer)
+	            m_EmployeeId = value
+	        End Set
+	    End Property
+	    Private m_EmployeeId As Integer
+	    <DisplayAttribute(Name:="First Name")>
+	    Public Property FirstName() As String
+	        Get
+	            Return m_FirstName
+	        End Get
+	        Set(value As String)
+	            m_FirstName = value
+	        End Set
+	    End Property
+	    Private m_FirstName As String
+	    <DisplayAttribute(Name:="Last Name")>
+	    Public Property LastName() As String
+	        Get
+	            Return m_LastName
+	        End Get
+	        Set(value As String)
+	            m_LastName = value
+	        End Set
+	    End Property
+	    Private m_LastName As String
 	End Class
 {{endregion}}
 
@@ -121,8 +119,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __XAML__
 
-{{region gridview-columns-defining-columns_2}}
-
+{{region xaml-gridview-columns-defining-columns_2}}
 	<telerik:GridViewDataColumn/>
 {{endregion}}
 
@@ -130,15 +127,13 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_3}}
-
+{{region cs-gridview-columns-defining-columns_3}}
 	GridViewDataColumn column = new GridViewDataColumn();
 {{endregion}}
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_4}}
-
+{{region vb-gridview-columns-defining-columns_4}}
 	Dim column As New GridViewDataColumn()
 {{endregion}}
 
@@ -149,33 +144,29 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 			  
 #### __XAML__
 
-{{region gridview-columns-defining-columns_5}}
-
+{{region xaml-gridview-columns-defining-columns_5}}
 	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" 
-              Header="First Name" />
-		</telerik:RadGridView.Columns>
+	                 AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" Header="First Name" UniqueName="FirstName" />
+	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_6}}
-
+{{region cs-gridview-columns-defining-columns_6}}
 	GridViewDataColumn column = new GridViewDataColumn();
-	column.DataMemberBinding = new Binding( "FirstName" );
+	column.DataMemberBinding = new Binding("FirstName");
 	column.Header = "My Column";
 	column.UniqueName = "MyColumn";
 	this.radGridView.AutoGenerateColumns = false;
-	this.radGridView.Columns.Add( column );
+	this.radGridView.Columns.Add(column);
 {{endregion}}
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_7}}
-
+{{region vb-gridview-columns-defining-columns_7}}
 	Dim column As New GridViewDataColumn()
 	column.DataMemberBinding = New Binding("FirstName")
 	column.Header = "My Column"
@@ -189,68 +180,47 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 #### __C#__
 
-{{region gridview-columns-defining-columns_8}}
-
-	GridViewDataColumn myColumn = this.radGridView.Columns[ "FirstColumn" ];
-	myColumn = this.radGridView.Columns[ 0 ];
+{{region cs-gridview-columns-defining-columns_8}}
+	var myColumn = this.radGridView.Columns["MyColumn"];
+	myColumn = this.radGridView.Columns[0];
 {{endregion}}
 
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_9}}
-
-	Dim myColumn As GridViewDataColumn = Me.radGridView.Columns("MyColumn")
+{{region vb-gridview-columns-defining-columns_9}}
+	Dim myColumn = Me.radGridView.Columns("MyColumn")
 	myColumn = Me.radGridView.Columns(0)
 {{endregion}}
 
 * In order to set a __CellTemplate__ of __GridViewDataColumn__ in code-behind you can store a defined __DataTemplate__ within __Resources collection__ as follows:
-	   {% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-{{region gridview-columns-defining-columns_11}}
-
-	<Window.Resources>
+{{region xaml-gridview-columns-defining-columns_10}}
+	<Grid.Resources>
 	    <DataTemplate x:Key="dataTemplate1">
 	        <TextBlock Text="Text"/>
-	     </DataTemplate>
-	</Window.Resources>
+	    </DataTemplate>
+	</Grid.Resources>
 {{endregion}}
 
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-{{region gridview-columns-defining-columns_10}}
-
-	<UserControl.Resources>
-	    <DataTemplate x:Key="dataTemplate1">
-	        <TextBlock Text="Text"/>
-	     </DataTemplate>
-	</UserControl.Resources>
-{{endregion}}
-
-{% endif %}
 Then reference it in code-behind as demonstrated below:
         
 #### __C#__
 
-{{region gridview-columns-defining-columns_12}}
-
+{{region cs-gridview-columns-defining-columns_12}}
 	GridViewDataColumn column = new GridViewDataColumn();
 	column.CellTemplate = (DataTemplate)this.Resources["dataTemplate1"];
-	radGridView.Columns.Add(column );
+	radGridView.Columns.Add(column);
 {{endregion}}
 
 #### __VB__
 
-{{region gridview-columns-defining-columns_13}}
-
+{{region vb-gridview-columns-defining-columns_13}}
 	Dim column As New GridViewDataColumn()
-	column.CellTemplate = DirectCast(Me.Resources("dataTemplate1"), DataTemplate)
-	Me.radGridView.Columns.Add(column)
+	column.CellTemplate = CType(Me.Resources("dataTemplate1"), DataTemplate)
+	radGridView.Columns.Add(column)
 {{endregion}}
 
 

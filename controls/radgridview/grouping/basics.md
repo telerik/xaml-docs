@@ -46,9 +46,9 @@ To remove the grouping just click the close button of the rectangle or drag it o
 
 __RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted __Ascending__. When the sort direction of the rectangle is None the groups are sorted depending on the data they contain. 
 
-#### __Figure 4: Sorting a group__
+#### __Figure 4: Sorting RadGridView when grouping is applied__
 
-![Sorting a group](images/RadGridView_BasicGrouping_4.png)
+![Sorting RadGridView when grouping is applied](images/RadGridView_BasicGrouping_4.png)
 
 ### Sort Group by Aggregate
         
@@ -66,12 +66,11 @@ Each GridViewColumn has a property called GroupMemberPath. This property can be 
 
 For example, you can configure the column to be grouped on the Name property although the bound property is Title:
 
-#### __XAML__
+#### __[XAML] Example 1 : Set GroupMemberPath for a certain column__
 
-{{region gridview-grouping-basics_3}}
-
+{{region xaml-gridview-grouping-basics_3}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-	                            GroupMemberPath="Name" />
+	                GroupMemberPath="Name" />
 {{endregion}}
 
 ## Grouping Modes
@@ -100,46 +99,44 @@ The **ShouldReorderColumnsOnUngrouping** property controls whether the columns' 
 
 There are two ways to disable the built-in grouping of __RadGridView__. The first one is at __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
 
-#### __XAML__
+#### __[XAML] Example 2: Disable Grouping__
 
-{{region gridview-grouping-basics_0}}
-
+{{region xaml-gridview-grouping-basics_0}}
 	<telerik:RadGridView x:Name="radGridView" ShowGroupPanel="False"/>
 {{endregion}}
 
-#### __Figure 7: RadGridView without group panel__
+#### __Figure 7: RadGridView with disabled grouping__
 
-![RadGridView without group panel](images/RadGridView_BasicGrouping_5.png)
+![RadGridView with disabled grouping](images/RadGridView_BasicGrouping_5.png)
 
 The second way is to disable it on column level via __IsGroupable__ property. When set to __False__ the column is not allowed to be dropped in the grouping area.
 
-#### __XAML__
+#### __[XAML] Example 3: Disable grouping for specific column__
 
-{{region gridview-grouping-basics_1}}
-
+{{region xaml-gridview-grouping-basics_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-                                Header="Title"
-                                UniqueName="Title"
-                                IsGroupable="False" />
+	                Header="Title"
+	                UniqueName="Title"
+	                IsGroupable="False" />
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 3: Disable grouping for a specific column__
 
-{{region gridview-grouping-basics_2}}
-
-	this.radGridView.Columns[ "Title" ].IsGroupable = false;
+{{region cs-gridview-grouping-basics_2}}
+	this.radGridView.Columns["Title"].IsGroupable = false;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Disable grouping for a specific column__
 
-{{region gridview-grouping-basics_3}}
-
+{{region vb-gridview-grouping-basics_3}}
 	Me.radGridView.Columns("Title").IsGroupable = False
 {{endregion}}
 
-#### __Figure 8: Disabling grouping on column level__
+#### __Figure 8: RadGridView with disabled grouping for a specific column__
 
-![Disabling grouping on column level](images/RadGridView_BasicGrouping_6.png)
+![RadGridView with disabled grouping for a specific column](images/RadGridView_BasicGrouping_6.png)
+
+>important If an **IValueConverter** is applied to the **DataMemberBinding** of a certain column, Grouping will respect it and create Group names according to the converted values. Thus, the appearance of duplicated groups will be avoided. In the case of filtering the **RadGridView** control, on the other hand, the converted values would not be respected.  
 
 ## Events
 
@@ -159,7 +156,7 @@ To learn more about the group footers take a look at the [Group Footers]({%slug 
 
 To learn how to style them take a look at the [Styling the Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
-# See Also
+## See Also
 
  * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 

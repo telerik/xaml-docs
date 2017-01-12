@@ -20,31 +20,33 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __C#__
 
-{{region radganttview-features-items-highlighting_0}}
+{{region cs-radganttview-features-items-highlighting_0}}
 	public class MyViewModel : PropertyChangedBase
 	{
-		private ObservableCollection<GanttTask> tasks;
+	    private ObservableCollection<GanttTask> tasks;
 	
-		public ObservableCollection<GanttTask> Tasks
-		{
-		...
-		}
+	    public ObservableCollection<GanttTask> Tasks
+	    {
+	        //...
+	        get;
+	        set;
+	    }
 	
-		private ObservableCollection<GanttTask> highlightedTasks;
+	    private ObservableCollection<GanttTask> highlightedTasks;
 	
-		public ObservableCollection<GanttTask> HighlightedTasks
-		{
-			get
-			{
-				return highlightedTasks;
-			}
-			set
-			{
-				highlightedTasks = value;
-				OnPropertyChanged(() => HighlightedTasks);
-			}
-		}
-	...
+	    public ObservableCollection<GanttTask> HighlightedTasks
+	    {
+	        get
+	        {
+	            return highlightedTasks;
+	        }
+	        set
+	        {
+	            highlightedTasks = value;
+	            OnPropertyChanged(() => HighlightedTasks);
+	        }
+	    }
+	    //...
 	}
 {{endregion}}
 
@@ -52,11 +54,11 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __C#__
 
-{{region radganttview-features-items-highlighting_1}}
+{{region cs-radganttview-features-items-highlighting_1}}
 	public MyViewModel()
 	{
-		...
-		this.HighlightedTasks = new ObservableCollection<GanttTask>() { Tasks[0], Tasks[2] };
+	    //...
+	    this.HighlightedTasks = new ObservableCollection<GanttTask>() { Tasks[0], Tasks[2] };
 	}
 {{endregion}}
 
@@ -64,10 +66,10 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 #### __XAML__
 
-{{region radganttview-features-items-highlighting_2}}
+{{region xaml-radganttview-features-items-highlighting_2}}
 	<telerik:RadGanttView x:Name="ganttView" 
-			TasksSource="{Binding Tasks}" 
-			HighlightedItemsSource="{Binding HighlightedTasks}" />
+	                      TasksSource="{Binding Tasks}" 
+	                      HighlightedItemsSource="{Binding HighlightedTasks}" />
 {{endregion}}
 
 The end result should look like this:

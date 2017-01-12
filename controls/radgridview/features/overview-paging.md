@@ -22,8 +22,7 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 
 #### __XAML__
 
-{{region gridview-overview-paging_0}}
-
+{{region xaml-gridview-overview-paging_0}}
 	<telerik:RadGridView x:Name="radGridView"/>
 	<data:DataPager x:Name="dataPager"/>
 {{endregion}}
@@ -32,9 +31,8 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 
 #### __XAML__
 
-{{region gridview-overview-paging_1}}
-
-	xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+{{region xaml-gridview-overview-paging_1}}
+	  xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
 {{endregion}}
 
 
@@ -42,16 +40,14 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 
 #### __C#__
 
-{{region gridview-overview-paging_2}}
-
-	QueryableCollectionView qcv = new QueryableCollectionView( RadGridViewSampleData.GetEmployees() );
+{{region cs-gridview-overview-paging_2}}
+	QueryableCollectionView qcv = new QueryableCollectionView(RadGridViewSampleData.GetEmployees());
 {{endregion}}
 
 
 #### __VB.NET__
 
-{{region gridview-overview-paging_3}}
-
+{{region vb-gridview-overview-paging_3}}
 	Dim qcv As New QueryableCollectionView(RadGridViewSampleData.GetEmployees())
 {{endregion}}
 
@@ -60,9 +56,8 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 
 #### __C#__
 
-{{region gridview-overview-paging_4}}
-
-	QueryableCollectionView qcv = new QueryableCollectionView( RadGridViewSampleData.GetEmployees() );
+{{region cs-gridview-overview-paging_4}}
+	QueryableCollectionView qcv = new QueryableCollectionView(RadGridViewSampleData.GetEmployees());
 	dataPager.Source = qcv;
 	radGridView.ItemsSource = qcv;
 {{endregion}}
@@ -70,8 +65,7 @@ To connect the __RadGridView__ with a __DataPager__ you need to perform a few si
 
 #### __VB.NET__
 
-{{region gridview-overview-paging_5}}
-
+{{region vb-gridview-overview-paging_5}}
 	Dim qcv As New QueryableCollectionView(RadGridViewSampleData.GetEmployees())
 	dataPager.Source = qcv
 	radGridView.ItemsSource = qcv

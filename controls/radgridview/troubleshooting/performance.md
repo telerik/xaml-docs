@@ -51,25 +51,22 @@ __Not Recommended__ (using the RowStyle):
 
 #### __XAML__
 
-{{region gridview-troubleshooting-performance_0}}
-
-	<telerik:RadGridView RowStyle="{StaticResource myRowStyle}"                     
-	                     ItemsSource="{Binding Data}" />
+{{region xaml-gridview-troubleshooting-performance_0}}
+	<telerik:RadGridView RowStyle="{StaticResource myRowStyle}" ItemsSource="{Binding Data}" />
 {{endregion}}
 
 __Recommended__ (using implicit Style):
 
 #### __XAML__
 
-{{region gridview-troubleshooting-performance_1}}
-
-	<UserControl.Resources> 
-	    <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}>
-	  <Setter Property="Background" Value="Blue"/>   
-	    </Style>        
-	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Margin="100">   
-	   <telerik:RadGridView ItemsSource="{Binding Data}" />
+{{region xaml-gridview-troubleshooting-performance_1}}
+	<Grid.Resources>
+	    <Style TargetType="telerik:GridViewRow">
+	        <Setter Property="Background" Value="Blue"/>
+	    </Style>
+	</Grid.Resources>
+	<Grid x:Name="LayoutRoot" Margin="100">
+	    <telerik:RadGridView ItemsSource="{Binding Data}" />
 	</Grid>
 {{endregion}}
 

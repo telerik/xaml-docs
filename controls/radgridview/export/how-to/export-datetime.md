@@ -38,39 +38,37 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 #### __[C#] Example 1: Exporting DateTime Values to Excel__
 
-	{{region gridview-export-how-to-export-datetime-1}}
-	this.gridViewExport.ElementExportingToDocument += (s, e) =>
+	{{region cs-gridview-export-how-to-export-datetime-1}}
+	this.radGridView.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
-        {
-            var cellExportingArgs = e as GridViewCellExportingEventArgs;
-            if ((cellExportingArgs.Column as GridViewDataColumn) == this.clubsGrid.Columns[1])
-            {
-                var parameters = cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters;
-                parameters.Style = new CellSelectionStyle()
-                {
-                    Format = new CellValueFormat("m/d/yyyy")
-                };
-            }
-        }
+	    {
+	        var cellExportingArgs = e as GridViewCellExportingEventArgs;
+	        if ((cellExportingArgs.Column as GridViewDataColumn) == this.radGridView.Columns[1])
+	        {
+	            var parameters = cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters;
+	            parameters.Style = new CellSelectionStyle()
+	            {
+	                Format = new CellValueFormat("m/d/yyyy")
+	            };
+	        }
+	    }
 	};
-	{{endregion}}
+{{endregion}}
 
 #### __[VB.NET] Example 1: Exporting DateTime Values to Excel__
 
-	{{region gridview-export-how-to-export-datetime-2}}
-	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
-		If e.Element = ExportElement.Cell Then
-			Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
-			If TryCast(cellExportingArgs.Column, GridViewDataColumn) = Me.clubsGrid.Columns(1) Then
-				Dim parameters = TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters)
-				parameters.Style = New CellSelectionStyle() With { _
-					Key .Format = New CellValueFormat("m/d/yyyy") _
-				}
-			End If
-		End If
-	End Function
-	{{endregion}}
+	{{region vb-gridview-export-how-to-export-datetime-2}}
+	AddHandler Me.radGridView.ElementExportingToDocument, Sub(s, e)
+	                                                          If e.Element = ExportElement.Cell Then
+	                                                              Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
+	                                                              If (TryCast(cellExportingArgs.Column, GridViewDataColumn)) Is Me.radGridView.Columns(1) Then
+	                                                                  Dim parameters = TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters)
+	                                                                  parameters.Style = New CellSelectionStyle() With {.Format = New CellValueFormat("m/d/yyyy")}
+	                                                              End If
+	                                                          End If
+	                                                      End Sub
+{{endregion}}
 
 **Figure 3** shows the final result in Excel:
 

@@ -10,7 +10,7 @@ position: 5
 
 # CollectionEditors
 
-__CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for IEnumerable type-compatible properties, but they can be successfully used out of this context as standalone editors:
+__CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for **IEnumerable** type-compatible properties, but they can be successfully used out of this context as standalone editors:
 
 #### __[XAML] Example 1: Defining CollectionEditor__
 
@@ -29,44 +29,28 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 ## Dependencies
 
-Both of them are located in the __Telerik.Windows.Controls.Data__ assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following
-{% if site.site_name == 'WPF' %}
- UI for WPF assemblies:
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-UI for Silverlight assemblies:
-{% endif %}
-
+Both of them are located in the __Telerik.Windows.Controls.Data__ assembly (Telerik.Windows.Controls.Data.PropertyGrid namespace) and depend on the following assemblies:
         
 * __Telerik.Windows.Data__
-  
 
 * __Telerik.Windows.Controls__
-  
 
 * __Telerik.Windows.Controls.Data__
-  
 
 * __Telerik.Windows.Control.Input__
 
-
-
 ## Internal Structure
 
-CollectionEditor relies on the IEditableCollectionView interface. In case that the edited collection type implements ICollectionView and IEditableCollectionView, its custom implementation is utilized and if it does not, an instance of QueryableCollectionView is used instead.
+CollectionEditor relies on the **IEditableCollectionView** interface. In case that the edited collection type implements ICollectionView and IEditableCollectionView, its custom implementation is utilized and if it does not, an instance of QueryableCollectionView is used instead.
         
 
 The following listed commands, defined in the CollectionEditorCommands class, invoke their IEditableCollectionView method counterparts, when they are executed:
-        
 
 * __MoveCurrentToNext__
- 
 
 * __MoveCurrentToPrevious__
- 
 
 * __AddNew__
- 
 
 * __Delete__
 
@@ -120,7 +104,7 @@ With the help of those methods you can identify whether a certain command can be
 
 ## Designing a custom CommandProvider
 
-The first step is to create your own class that inherits from CollectionNavigatorBaseCommandProvider:
+The first step is to create your own class that inherits from **CollectionNavigatorBaseCommandProvider**:
 
 #### __[C#] Example 5: Creating a class that provides the custom commands__
 
@@ -212,7 +196,7 @@ The last thing to be done is to set CommandProvider Property of the CollectionEd
 	this.CollectionEditor.CommandProvider = new CustomCommandProvider(this.CollectionEditor);
 {{endregion}}
 
-#### __[VB.NET]Example 8: Assigning the CommandProvider__
+#### __[VB.NET] Example 8: Assigning the CommandProvider__
 
 {{region vb-radpropertygrid-collectioneditor_6}}
 	Me.CollectionEditor.CommandProvider = New CustomCommandProvider(Me.CollectionEditor)
@@ -222,7 +206,21 @@ Modifying the methods will result in the following action when trying to move to
 
 ![customize commands](images/RadPropertyGrid_CollectionEditor_CustomizeCommands.png)
 
-# See Also
+## Add/Remove Items 
+
+**CollectionEditor** allows you to add and remove items to the underlying collection through the **Add** and **Remove** buttons. The availability of this functionality relies on the type of the bound collection and whether it supports such operations. **Figure 1** and **Figure 2** show the state of the buttons when the **CollectionEditor** is bound to an **ObservableCollection** and an **Array** respectively.
+
+>important **The business object should expose a default constructor in order to have the "Add" button enabled.**
+
+#### **Figure 1: CollectionEditor bound to a collection that supports add/remove functionalities**
+
+![CollectionEditor bound to a collection that supports add/remove functionalities](images/CollectionEditor_AddRemove_Enabled.png)
+
+#### **Figure 2: CollectionEditor bound to a collection that does not support add/remove functionalities**
+
+![CollectionEditor bound to a collection that does not support add/remove functionalities](images/CollectionEditor_AddRemove_Disabled.png)
+
+## See Also
 
 * [Nested Properties]({%slug radpropertygrid-nested-properties%})
 

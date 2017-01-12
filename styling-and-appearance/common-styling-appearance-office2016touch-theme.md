@@ -155,7 +155,7 @@ __Example 7__ shows how to change the default corner radius from **0** to **3**:
 
 ## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
 
-In the Office2016Touch theme there are two brushes that define background and border brush for the read-only states of the input controls (RadMaskedInput and TextBox). You can do that via the __ReadOnlyBackgroundBrush__ (default value: #FFFFFFFF) and __ReadOnlyBorderBrush__ (default value: #FFABABAB) properties. They are changed in the same manner as the rest of the palette colors.
+In the Office2016Touch theme there are two brushes that define background and border brush for the read-only states of the input controls (RadMaskedInput and TextBox). You can do that via the __ReadOnlyBackgroundBrush__ (default value: **#FFFFFFFF**) and __ReadOnlyBorderBrush__ (default value: **#FFABABAB**) properties. They are changed in the same manner as the rest of the palette colors.
 
 ## Changing DisbledOpacity
 
@@ -171,4 +171,4 @@ If you need to change the opacity of disabled elements, you can easily do it by 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
  * [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
- {% if site.site_name == 'WPF' %}* [Green Theme]({%slug common-styling-appearance-green-theme%}){% endif %}
+ * [Green Theme]({%slug common-styling-appearance-green-theme%})

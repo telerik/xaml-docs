@@ -12,6 +12,8 @@ position: 14
 
 The __RadMap__ provides unified geocoding architecture, which uses the functionality of the different geocoding services. This allows you to easily convert a location point to an address and the opposite - address to a location point.      
 
+>important The __BingSearchProvider__ is marked as __obsolete in R1 2017__ and will be __removed in R2 2017__. It uses Bing SOAP Geocode service that will be stopped in June 2017. For searching Locations / Addresses (but not POIs) please use __BingRestMapProvider__ and its IBingRestSearchLocationProvider implementation based on Bing REST services.
+
 This topic will focus on the following:
 
 * [Geocode Providers](#geocode-providers)

@@ -10,7 +10,7 @@ position: 0
 
 # Setting a Theme
 
-**Setting a theme** is the preferred way of styling the controls that come with the **Telerik UI for WPF** suite. Apart from the default **Office_Black**, you have the option to choose from variety of other themes to achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
+__UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite provides a variety of themes that will help you achieve visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
 
 The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and modifications through **Blend** is supported. 
 
@@ -72,9 +72,9 @@ The approaches are shown in details below:
 	    		<ResourceDictionary.MergedDictionaries>
 	       	 	    <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>	             
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Data.xaml"/>              
 	    	</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>	
@@ -101,9 +101,9 @@ As already advised, the default styles and resources for each theme are shipped 
 		    <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
                 <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
+		<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
                 <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
+                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.GridView.xaml"/>               
                 <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Data.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

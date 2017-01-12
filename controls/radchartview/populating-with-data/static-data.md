@@ -174,5 +174,5 @@ To enable striplines you should set some brushes. See __Example 7__.
  * [Introduction] ({%slug radchartview-introduction%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
  * [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%})
- * [Binding to a DataTable] ({%slug radchartview-populating-with-data-binding-to-data-table%})
+ {% if site.site_name == 'WPF' %}* [Binding to a DataTable] ({%slug radchartview-populating-with-data-binding-to-data-table%}){% endif %}
  * [Binding the Color of Series Items] ({%slug radchartview-populating-with-data-binding-the-color-of-series-items%})

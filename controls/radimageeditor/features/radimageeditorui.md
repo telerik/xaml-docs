@@ -10,10 +10,6 @@ position: 1
 
 # RadImageEditorUI
 
-
-
-## 
-
 __RadImageEditor__ comes with a predefined UI out of the box – __RadImageEditorUI__. As it uses XAML only, you can easily customize it for your application, by adding or removing tools that can be executed.
 
 The tools and commands that the editor can execute are __ImageToolItems__. They are grouped into sections depending on the modification they perform on the image. In the default template, these __ImageToolSections__ can be minimized and maximized using RadExpander. Moreover, each __ImageToolItem__ specifies:
@@ -28,6 +24,10 @@ When it comes to image editing tools which have settings and a live preview, the
 	* Contrast
 	
 	* Crop
+
+	* Draw
+ 
+	* DrawText
 	
 	* FlipHorizontal
 	
@@ -36,6 +36,8 @@ When it comes to image editing tools which have settings and a live preview, the
 	* HueShift
 	
 	* Invert
+	
+	* Pan
 	
 	* Resize
 	
@@ -48,6 +50,8 @@ When it comes to image editing tools which have settings and a live preview, the
 	* RoundCorners
 	
 	* Saturation
+	
+	* Shape
 	
 	* Sharpen
 
@@ -98,14 +102,9 @@ The image to be used will be chosen depending on the Theme applied to the editor
 	</telerik:ImageToolItem>
 {{endregion}}
 
-
-
 >You can see how the tools and commands can be declared in code-behind and modified on the fly in the CustomizingDefaultUI demo at [http://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](http://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI).
 
-		
-     
 >tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo CustomUI, which can be viewed here: [http://demos.telerik.com/silverlight/#ImageEditor/CustomUI](http://demos.telerik.com/silverlight/#ImageEditor/CustomUI).
-
 
 ## See Also
 

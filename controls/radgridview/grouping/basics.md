@@ -8,10 +8,12 @@ published: True
 position: 0
 ---
 
-__RadGridView__ provides a built-in grouping functionality, which allows the user to easily group the data by one or more columns. 
+__RadGridView__ provides a built-in grouping functionality, which allows the user to easily group the data by one or more columns.
+ 
 * [Basic Grouping](#basic-grouping)
 * [GroupMemberPath](#groupmemberpath)
 * [Grouping Modes](#grouping-modes)
+* [Reorder Columns when Ungrouping](#reorder-columns-when-ungrouping)
 * [Disabling Grouping](#disabling-grouping)
 * [Events](#events)
 * [Styling and Appearance](#styling-and-appearance)
@@ -20,19 +22,21 @@ __RadGridView__ provides a built-in grouping functionality, which allows the use
 
 In order to group data the user has to just drag the desired column to __GridViewGroupPanel__ located at the top of __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
 
+#### __Figure 1: Dragging a column to the GridViewGroupPanel__
 
-#### **Figure 1: Dragging a certain column to apply grouping**
-![](images/RadGridView_BasicGrouping_1.png)
+![Dragging a column to the GridViewGroupPanel](images/RadGridView_BasicGrouping_1.png)
 
 After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data will be properly grouped.
 
-#### **Figure 2: Grouped RadGridView**
-![](images/RadGridView_BasicGrouping_2.png)
+#### __Figure 2: RadGridView after grouping__
+
+![RadGridView after grouping](images/RadGridView_BasicGrouping_2.png)
 
 To remove the grouping just click the close button of the rectangle or drag it out of the grouping area.
 
-#### **Figure 3: Button used for removing the grouping**
-![](images/RadGridView_BasicGrouping_3.png)
+#### __Figure 3: Removing the grouping__
+
+![Removing the grouping](images/RadGridView_BasicGrouping_3.png)
 
 >tipThe data can be grouped by more than one column. To do that just drag another column into the grouping area and the data will be grouped against these two criteria. To learn more about the multi-column grouping take a look at the [Multi-Column Grouping]({%slug gridview-multiple-column-grouping%}) topic.
         
@@ -42,8 +46,9 @@ To remove the grouping just click the close button of the rectangle or drag it o
 
 __RadGridView__ also provides the user with a way to sort the groups of data. To do that the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted __Ascending__. When the sort direction of the rectangle is None the groups are sorted depending on the data they contain. 
 
-#### **Figure 4: Sorting RadGridView when grouping is applied**
-![](images/RadGridView_BasicGrouping_4.png)
+#### __Figure 4: Sorting RadGridView when grouping is applied__
+
+![Sorting RadGridView when grouping is applied](images/RadGridView_BasicGrouping_4.png)
 
 ### Sort Group by Aggregate
         
@@ -77,7 +82,19 @@ __Nested Mode__: It is the default one and it will nest GridViewGroupRows into o
 __Flat Mode__: This mode simply renders rows one below the other. This leads to a very good perfromance when the grid is grouped on several levels and has a lot of data. The visual element representing the grouped row is GroupHeaderRow.
         
 >Please note that when you use the __Flat Mode__, you should work with __GroupHeaderRow, not GridViewGroupRow__.
-          
+   
+## Reorder Columns when Ungrouping
+
+The **ShouldReorderColumnsOnUngrouping** property controls whether the columns' **DisplayIndex** will be changed when the user drags a group cell onto a header cell. The default value is **False** - when the user ungroups, the display indexes of the columns prior to the grouping will not be changed. When set to **True**, if the user drops the group cell onto one of RadGridView's header cells, the columns will be **reordered** based on the drop position.
+
+#### __Figure 5: Dragging the group cell over a header cell__
+
+![Dragging the group cell over a header cell](images/reorderondrop1.png)
+
+#### __Figure 6: The reordered columns when ShouldReorderColumnsOnUngrouping is True__
+
+![The reordered column when ShouldReorderColumnsOnUngrouping is True](images/reorderondrop2.png)
+       
 ## Disabling Grouping
 
 There are two ways to disable the built-in grouping of __RadGridView__. The first one is at __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
@@ -88,8 +105,9 @@ There are two ways to disable the built-in grouping of __RadGridView__. The firs
 	<telerik:RadGridView x:Name="radGridView" ShowGroupPanel="False"/>
 {{endregion}}
 
-#### **Figure 5: RadGridView with disabled grouping**
-![](images/RadGridView_BasicGrouping_5.png)
+#### __Figure 7: RadGridView with disabled grouping__
+
+![RadGridView with disabled grouping](images/RadGridView_BasicGrouping_5.png)
 
 The second way is to disable it on column level via __IsGroupable__ property. When set to __False__ the column is not allowed to be dropped in the grouping area.
 
@@ -114,8 +132,9 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
 	Me.radGridView.Columns("Title").IsGroupable = False
 {{endregion}}
 
-#### **Figure 6: RadGridView with disabled grouping for a specific column**
-![](images/RadGridView_BasicGrouping_6.png)
+#### __Figure 8: RadGridView with disabled grouping for a specific column__
+
+![RadGridView with disabled grouping for a specific column](images/RadGridView_BasicGrouping_6.png)
 
 >important If an **IValueConverter** is applied to the **DataMemberBinding** of a certain column, Grouping will respect it and create Group names according to the converted values. Thus, the appearance of duplicated groups will be avoided. In the case of filtering the **RadGridView** control, on the other hand, the converted values would not be respected.  
 
@@ -137,7 +156,7 @@ To learn more about the group footers take a look at the [Group Footers]({%slug 
 
 To learn how to style them take a look at the [Styling the Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%}) topic.
 
-# See Also
+## See Also
 
  * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
 

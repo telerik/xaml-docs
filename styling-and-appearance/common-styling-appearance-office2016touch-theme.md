@@ -10,7 +10,7 @@ position: 6
 
 # Office2016Touch Theme
 
-The official R3 2016 release of UI for WPF includes a brand new Office2016Touch theme.
+The official **R1 2017** release of UI for WPF includes a brand new **Office2016Touch** theme.
 
 >important The __Office2016Touch__ theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
 
@@ -34,13 +34,13 @@ The following topic explains the specifics of the theme's palette and features.
 The __Office2016Touch__ theme is, as the name suggests, very similar to the __Office2016__ theme but with larger controls and wider spaces for easier interaction. There are several controls that differ significantly and the following figures shows some of them.
 
 #### __Figure 1: RadNumericUpDown__ 
-![](images/common-styling-appearance-office2016touch-theme-0.png)
+![RadNumericUpDown with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-0.png)
 
 #### __Figure 2: RadOutlookBar__ 
-![](images/common-styling-appearance-office2016touch-theme-2.png)
+![RadOutlookBar with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
 
 #### __Figure 3: RadRibbonView__ 
-![](images/common-styling-appearance-office2016touch-theme-3.png)
+![RadRibbonView with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-3.png)
 
 ## Default theme colors
 
@@ -88,9 +88,9 @@ Changing the colors can be achieved in code behind.
 
 ## Changing Fonts
 
-When using the Office2016Touch theme you can dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, and Green themes.
+When using the Office2016Touch theme you can dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, and **Green** themes.
 	
-The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is named FontSize and its default value is 12.
+The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is named FontSize and its default value is **12**.
  
 > For complex scenarios we strongly recommend setting the __FontSize__ property only initially before the application is initialized. Also, we recommend values between __11px__ and __19px__ for it.
  
@@ -100,9 +100,9 @@ __Example 2__ shows the default font sizes and families.
 	Office2016TouchPalette.Palette.FontSizeS = 10;
 	Office2016TouchPalette.Palette.FontSize = 12;
 	Office2016TouchPalette.Palette.FontSizeL = 14;
-	Office2016TouchPalette.Palette.FontFamily = new FontFamily(“Segoe UI”);
+	Office2016TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 
-__Examples 3 and 4__ shows how to change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from 12 to 16 on a click of a button:
+__Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI"** to **"Calibri"** and the FontSize from **12** to **16** on a click of a button:
 
 #### __[XAML] Example 3: Example view definition__
 	<StackPanel>
@@ -118,7 +118,7 @@ __Examples 3 and 4__ shows how to change the default FontFamily from "Segoe UI" 
 	}
 
 #### __Figure 4: Setting FontSize and FontFamily__ 
-![](images/common-styling-appearance-office2016touch-theme-3.png)	
+![Setting FontSize and FontFamily](images/common-styling-appearance-office2016touch-theme-3.png)	
 
 ## Changing FocusThickness
 
@@ -128,7 +128,7 @@ A new feature of the Office2016Touch theme’s palette is the __FocusThickness__
 	Office2016TouchPalette.Palette.FocusThickness = new Thickness(1);
 
 #### __Figure 5: Setting FocusThickness__ 
-![](images/common-styling-appearance-office2016touch-theme-4.png)	
+![Setting FocusThickness](images/common-styling-appearance-office2016touch-theme-4.png)	
 
 ## Changing CornerRadius
 
@@ -141,7 +141,7 @@ The Office2016Touch theme exposes an easy way to modify the corner radius of man
 	Office2016TouchPalette.Palette.CornerRadiusLeft = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
 
-__Example 7__ shows how to change the default corner radius from 0 to 3:
+__Example 7__ shows how to change the default corner radius from **0** to **3**:
 
 #### __[C#] Example 7: Changing the default corner radius__
 	Office2016TouchPalette.Palette.CornerRadius = new CornerRadius(3); 
@@ -151,7 +151,7 @@ __Example 7__ shows how to change the default corner radius from 0 to 3:
 	Office2016TouchPalette.Palette.CornerRadiusTop = new CornerRadius(3, 3, 0, 0);
 
 #### __Figure 6: Setting corner radius__ 
-![](images/common-styling-appearance-office2016touch-theme-5.png)	
+![Setting corner radius](images/common-styling-appearance-office2016touch-theme-5.png)	
 
 ## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
 
@@ -165,10 +165,10 @@ If you need to change the opacity of disabled elements, you can easily do it by 
 	Office2016TouchPalette.Palette.DisabledOpacity = 0.3;
 
 #### __Figure 7: Setting the disabled opacity__ 
-![](images/common-styling-appearance-office2016touch-theme-6.png)	
+![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
  * [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
- * [Green Theme]({%slug common-styling-appearance-green-theme%})
+ {% if site.site_name == 'WPF' %}* [Green Theme]({%slug common-styling-appearance-green-theme%}){% endif %}

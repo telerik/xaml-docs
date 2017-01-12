@@ -5,7 +5,7 @@ description: Switching Themes at Design-time
 slug: styling-apperance-swiching-themes-design-time
 tags: styling,apperance,switch,switching,theme,themes,time,design,design-time,vs
 published: True
-position: 2
+position: 9
 ---
 
 # Switching Themes at Design-time

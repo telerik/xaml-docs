@@ -29,7 +29,7 @@ This topic will demonstrate the customization capabilities provided by __RadSche
 
 ## Custom DateGroupDescription
 
-When a custom ViewDefinition based on __WeekViewDefinition__ or __MonthViewDefinition__ is defined, the need for a custom __GroupLength__ of a __DateGroupDescription__ may arise. In such case the __DateGroupDescription__ property of the ViewDefinition needs to be overriden by returning a  custom object inheriting from __DateGroupDescription__. The custom __DateGroupDescription__ object needs to override the __GroupLength__ property.
+When a custom ViewDefinition based on __WeekViewDefinition__ or __MonthViewDefinition__ is defined, you could customize the grouping of the used __DateGroupDescription__. In this case the __DateGroupDescription__ property of the ViewDefinition needs to be overriden by returning a  custom object inheriting from __DateGroupDescription__. The custom __DateGroupDescription__ object needs to override the __GroupLength__ property.
 
 #### __[C#] Example 1: Defining the custom DateGroupDescription__
 

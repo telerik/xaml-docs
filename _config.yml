@@ -7,6 +7,7 @@ common-routed-events-support.md,
 common-command-support.md,
 upgrade-api-analyzer-sl.md,
 installation-and-deployment/installation-system-requirements.md,
+installation-and-deployment/download-product-files.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
 installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
@@ -468,6 +469,17 @@ navigation:
         title: Ribbon Buttons
     controls/radslider:
         title: RadSlider
+    controls/radslider/features/tick-marks:		
+        title: Tick Marks		
+    controls/radslider/events:		
+        title: Events		
+        position: 7					
+    controls/radslider/styling-and-appearance:		
+        title: Styling and Appearance		
+        position: 8				
+    controls/radslider/howto:		
+        title: How To		
+        position: 9
     controls/radsparkline:
         title: RadSparkLine
     controls/radtabcontrol:
@@ -484,6 +496,8 @@ navigation:
         title: RadTileView
     controls/radtoolbar:
         title: RadToolBar
+    controls/radtoolbar/styling-and-appearance:		
+        title: Styling and Appearance
     controls/radtooltip:
         title: RadToolTip
     controls/radtimebar:
@@ -524,8 +538,6 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
-    controls/radslider/features/tick-marks:
-        title: "Tick Marks"
 ## X2 Controls End
 
 ## Centaur Controls Start

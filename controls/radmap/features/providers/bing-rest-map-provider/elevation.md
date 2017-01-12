@@ -20,7 +20,7 @@ In order to get the elevation data you can create instance of the __BingRestElev
 
 * Set the __ApplicationId__ property of the __BingRestMapProvider__. This property represents a key, which allows you to use the Bing Rest Maps services.
 
->Without supplying a valid key you won't be able to visualize the map inside the RadMap control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
+	>Without supplying a valid key you won't be able to visualize the map inside the RadMap control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
 	
 * Create instance of the __BingRestRouteRequest__ object
 * Handle __CalculateElevationCompleted__ and __CalculateElevationError__ events of the __BingRestMapProvider__

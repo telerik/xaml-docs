@@ -9,7 +9,7 @@ position: 0
 ---
 # Themes Suite
 
-The **Telerik UI for WPF** Suite comes with 14 predefined themes which you can apply to your application. Some of the themes have different color variations so the variety you can choose from is even greater. Below you can find a list of the available themes and a glimpse of their appearance. 
+The __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ Suite comes with 14 predefined themes which you can apply to your application. Some of the themes have different color variations so the variety you can choose from is even greater. Below you can find a list of the available themes and a glimpse of their appearance. 
 
 Theme name | Appearance
 ---|---

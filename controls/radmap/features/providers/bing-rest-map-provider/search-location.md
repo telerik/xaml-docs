@@ -16,11 +16,11 @@ The RadMap control allows the user to implement search functionality, that will 
 
 ## Find a place by given Location or Query
 
-In the following examples, we will demonstrate how to find a specific location by given address or location. To do it you can create an instance of the __BingRestSearchLocationRequest__ object which the __SearchLocationAsync()__ method of the __BingRestMapProvider__ uses as a parameter and set its __Query__ property. Then you can subscribe to the __SearchLocationCompleted__ and __SearchLocationError__ events of the. The __SearchLocationError__ event is the place for handling any kind of errors that occur during the search operation.  You can take a look at the following steps:
+In the following examples, we will demonstrate how to find a specific location by given address or location. To do it you can create an instance of the __BingRestSearchLocationRequest__ object which the __SearchLocationAsync()__ method of the __BingRestMapProvider__ uses as a parameter and set its __Query__ property. Then you can subscribe to the __SearchLocationCompleted__ and __SearchLocationError__ events of the __BingRestMapProvider__. The __SearchLocationError__ event is the place for handling any kind of errors that occur during the search operation.  You can take a look at the following steps:
 
 * Set the __ApplicationId__ property of the __BingRestMapProvider__. This property represents a key, which allows you to use the Bing Rest Maps services.
 	
->Without supplying a valid key you won't be able to visualize the map inside the RadMap control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
+	>Without supplying a valid key you won't be able to visualize the map inside the RadMap control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps](http://msdn.microsoft.com/en-us/library/ee681900.aspx).
 
 * Create instance of the __BingRestSearchLocationRequest__ object
 * Handle __SearchLocationCompleted__ and __SearchLocationError__ events of the __BingRestMapProvider__

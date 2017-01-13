@@ -10,49 +10,32 @@ position: 3
 
 # Visual Structure
 
+__RadCollectionNavigator__ displays two sets of buttons, separated into two groups according to the purpose of their commands: **navigation** and **editing**.
 
-__RadCollectionNavigator__ displays two sets of buttons, separated into two groups according to the purpose of their commands: Navigation and Editing.
-        
-
-The  __navigation buttons__ come as it follows:
-        
+The  __navigation buttons__ are the following:
 
 * Move to first item
-          
 
 * Move to previous item
-          
 
 * Move to next item
-          
 
 * Move to last item
-          
 
-And the __editing buttons__:
-        
+And the __editing buttons__ include:
 
 * Add new item
-          
 
 * Edit current item
-          
 
 * Delete item
-          
 
+#### __Figure 1: RadCollectionNavigator with all navigation and editing buttons__
 
+![RadCollectionNavigator with all navigation and editing buttons](images/collectionnavigator_01.png)
 
-![collectionnavigator 01](images/collectionnavigator_01.png)
+## See Also
 
-The Visibility for the buttons is controlled by the FlaggedEnum CommandButtonsVisibility property, which is by default set to:
+* [Getting Started]({%slug collectionnavigator_getting_started%})
 
-__CommandButtonsVisibility.Add | CommandButtonsVisibility.Delete | CommandButtonsVisibility.Navigation__
-
-
-
-The “Edit” button is initially hidden, as RadCollectionNavigator does not provide interface for editing.
-        
-
->RadCollectionNavigator is independent from any DataVisualization controls that are used in combination with it. However, this button can be used in custom solutions if such editing UI is provided.
-          
+* [Key Properties]({%slug collectionnavigator_key_properties%})

@@ -71,6 +71,7 @@ controls/radribbonview/features/ribbon-controls/ribbon-window-wpf.md,
 controls/radribbonview/styling-and-appearance/styling-contextualtab.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier-wpf.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel-wpf.md,
+controls/radslider/sdk-examples.md
 controls/radspreadsheet/model/import/export/import-export-xlsxformatprovider-wpf.md,
 controls/radspreadsheet/model/import/export/import-export-csvformatprovider-wpf.md,
 controls/radspreadsheet/model/import/export/import-export-txtformatprovider-wpf.md,

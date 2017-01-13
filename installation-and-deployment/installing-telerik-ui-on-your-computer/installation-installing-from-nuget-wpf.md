@@ -25,27 +25,9 @@ We will go through the following sections:
 
 ## Downloading the NuGet packages
 
-In order to download the latest NuGet packages, follow the instructions below:
+* Go to to the UI for WPF download page following the instructions in [Download Product Files]({%slug download-product-files-wpf%}) topic.
 
-* Log into your [Telerik account](http://www.telerik.com/account.aspx).
-          
-* Click __Products & Subscriptions__ and then select UI for WPF from the dropdown (or Trial downloads if you are a trial user).
-![Common Installing FromMSIFiles 005 WPF](images/Common_InstallingFromMSIFiles_005_WPF.png)
-
->If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
->![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
-
-* Click "Download Installer and other resources" button.
-
-![Common Installing Download Button](images/Common_Installing_Download_Button.png)
-
->Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
->Scroll to "UI for WPF" product. Click "Browse all product files" to go to the detailed download page.
->![Common Installing FromMSIFiles 009 WPF](images/Common_InstallingFromMSIFiles_009_WPF.png)
-
-* Click either “NuGet installation” or “NuGet installation – Separate Packages”.![Common Installing From Nu Get 01 wpf](images/Common_InstallingFromNuGet_01_wpf.png)
-
-* Download the .zip file and extract it into the folder where your Telerik NuGet packages are located.
+* Download the needed NuGet .zip file depending on whether you're using Xaml or NoXaml binaries and extract it into the folder where your Telerik NuGet packages are located.
 
 ## Installing WPF Controls Package
       

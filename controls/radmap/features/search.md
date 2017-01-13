@@ -12,6 +12,8 @@ position: 13
 
 The __RadMap__ control allows you to implement search functionality, that will allow the user to search for a specific location on the map. The search is performed by using __Search Providers__, which communicate with the respective __Map Provider's__ services. With this feature available you are able to build an UI that allows the user to input search criteria and execute a search.      
 
+>important The __BingSearchProvider__ is marked as __obsolete in R1 2017__ and will be __removed in R2 2017__. It uses Bing SOAP Search service that will be stopped in June 2017. For searching Locations / Addresses (but not POIs) please use __BingRestMapProvider__ and its IBingRestSearchLocationProvider implementation based on Bing REST services.
+
 This topic will focus on the following:
 
 * [Search Providers](#search-providers)

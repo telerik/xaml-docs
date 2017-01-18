@@ -39,6 +39,8 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
 * __Aggregate functions__ - find out more about the supported [aggregate functions]({%slug gridview-columns-aggregate-functions%})
             
 * __Resizing columns__ - learn how to define the appropriate width, [disable resizing]({%slug gridview-columns-resizing-columns%})
+
+* __Columns Width__ - learn how to control the [columns width]({%slug gridview-setting-columns-width%})
             
 * __Reordering columns__ - everything about [reordering columns]({%slug gridview-columns-reordering-columns%})
             

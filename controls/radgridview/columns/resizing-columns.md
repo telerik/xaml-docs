@@ -14,9 +14,9 @@ Columns inside the __RadGridView__ are resizable by default. The user is able to
 
 ![](images/RadGridView_ResizingColumns_1.png)
 
-To resize the columns programmatically you can use the __Width__ property. For example:
+To resize a column you can use its __Width__ property. For example:
 
-#### __XAML__
+#### __[XAML] Example 1: Setting a column with fixed width__
 
 {{region xaml-gridview-columns-resizing-columns_0}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
@@ -29,7 +29,7 @@ To resize the columns programmatically you can use the __Width__ property. For e
 There are two ways to disable the resizing. 
 1. The first one is by setting the __CanUserResize__ columns to __False__.
 
-#### __XAML__
+#### __[XAML] Example 2: Disable resizing for all columns within a RadGridView__
 
 {{region xaml-gridview-columns-resizing-columns_1}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -42,7 +42,7 @@ This will disable resizing on __RadGridView__ level, which means that all of the
 
 2. If you want to disable resizing only for a particular column use the __IsResizable__ property of the column.
 
-#### __XAML__
+#### __[XAML] Example 3: Disalbe resizing for a specific column__
 
 {{region xaml-gridview-columns-resizing-columns_2}}
 	<telerik:GridViewDataColumn Header="ID"

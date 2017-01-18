@@ -436,6 +436,10 @@ navigation:
         position: 102
     controls/radmaskedinput:
         title: RadMaskedInput
+    controls/radmaskedinput/features/maskedinput-controls:
+        title: MaskedInput Controls
+    controls/radmaskedinput/features/validation:
+        title: Validation
     controls/radmediaplayer:
         title: RadMediaPlayer
     controls/radoutlookbar:

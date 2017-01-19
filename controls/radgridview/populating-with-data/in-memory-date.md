@@ -93,7 +93,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        Cars.Add(new Car("BMW", "A german luxury car."));
 	        Cars.Add(new Car("Porsche", "A german sports car."));
 	        Cars.Add(new Car("Citroen", "A french luxury car."));
-	        Cars.Add(new Car("Reno", "A french family car."));
+	        Cars.Add(new Car("Renault", "A french family car."));
 	    }
 	
 	    public ObservableCollection<Car> Cars
@@ -113,7 +113,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        Cars.Add(New Car("BMW", "A german luxury car."))
 	        Cars.Add(New Car("Porsche", "A german sports car."))
 	        Cars.Add(New Car("Citroen", "A french luxury car."))
-	        Cars.Add(New Car("Reno", "A french family car."))
+	        Cars.Add(New Car("Renault", "A french family car."))
 	    End Sub
 	
 	    Private _Cars As ObservableCollection(Of Car)

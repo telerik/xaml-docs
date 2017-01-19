@@ -17,7 +17,7 @@ This tutorial will walk you through the creation of a sample application that co
 * [Populating with Data](#populating-with-data)
 * [Adding ViewDefinitions](#adding-viewdefinitions)
 * [Resources, Grouping](#resources-grouping)
-
+* [Setting a Theme](#setting-a-theme)
 
 ## Assembly References
 
@@ -192,7 +192,45 @@ __Figure 3: RadScheduleView bound to a collection of Appointments__
 
 Using Resources you can associate additional information with the Appointments. Moreover, you can group the Appointments in __RadScheduleView__ according to the Resources assigned to them. For detailed information on this functionality, see the [Resources]({%slug radscheduleview-features-resources%}) topic.
 
-# See Also
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](http://demos.telerik.com/wpf/) application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadScheduleView__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Input__
+	* __Telerik.Windows.Controls.Navigation__
+	* __Telerik.Windows.Controls.ScheduleView__
+
+__Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 8: Merge the ResourceDictionaries__  
+{{region radtreeview-getting-started_08}}
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.ScheduleView.xaml"/>
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+{{endregion}}
+
+__Figure 4__ shows __RadScheduleView__ with the **Windows8** theme applied.
+	
+#### __Figure 4: RadScheduleView with the Windows8 theme__
+![RadScheduleView with Windows8 theme](images/radscheduleview-windows8.png)
+
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})
   

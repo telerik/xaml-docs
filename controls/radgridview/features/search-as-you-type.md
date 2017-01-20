@@ -30,6 +30,8 @@ position: 16
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
+>important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a __string__ type the operator is set to __Contains__. For all other types the operator is set to __IsEqualTo__.
+
 #### __[XAML] Example 1: Showing the Search Panel__
 
 	<telerik:RadGridView ItemsSource="{Binding Orders}"     
@@ -116,12 +118,6 @@ A common scenario where you can use this event is when you want to clear the sea
 
 
 ## Modifying the Searching Criteria
-
-The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed:
-
-- For a __string__ type the operator is set to __Contains__.
-
-- For all other types the operator is set to __IsEqualTo__.
 
 In order to modify the search behavior, you can benefit from the following three search operators:
 

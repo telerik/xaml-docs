@@ -14,7 +14,7 @@ There are a couple of approaches available for setting the width of the columns 
 
 * [On RadGridView Level](#on-radgridview-level)
 
-* [On a Column level](#on-a-column-level)
+* [On a Column level](#on-column-level)
 
 ## On RadGridView Level
 
@@ -22,9 +22,12 @@ You can set RadGridView's **ColumnWidth** property which will affect all columns
 
 #### **[XAML] Example 1: Setting RadGridView's ColumnWidth**
 
+{{region xaml-gridview-setting-columns-width_0}}
+
 		<telerik:RadGridView Name="clubsGrid" 
                              ItemsSource="{Binding Clubs}"
                              ColumnWidth="*">	
+{{endregion}}
 
 There are several values that you can assign to the property:
 
@@ -39,14 +42,17 @@ There are several values that you can assign to the property:
 * **Fixed Width** - You can set a fixed width for all the columns
 
 
-## On a Column Level
+## On Column Level
 
 Apart from setting the width for all the columns within the **RadGridView**, you can set the width for each individual column through its **Width** property. 
 
 #### **[XAML] Example 2: Setting the width of a specific column**
 
+{{region xaml-gridview-setting-columns-width_1}}
+
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                     Width="Auto" />	
+{{endregion}}
 
 The values that could be assigned to the property are enumerated below:
 

@@ -39,7 +39,7 @@ As its name suggests, the **Themes.Implicit** folder contains all styles and res
 
 The **standard binaries** include the implementation of the different controls as well as the styles and the resources needed for their visualization. As our assemblies contain multiple components, all styles for them are included and the assembly size is larger. 
 
-The **NoXAML binaries** on the other hand *do not include any XAML files* - no styles, no brushes or any other resources. This results in smaller assembly size and would mean that when you use them, you have to provide the resources needed for the visualization of the controls. This happens by merging the needed **XAML files** from the **Themes folder** into the Application's **Merged Dictionaries**.
+The **NoXAML binaries**, on the other hand, *do not include any XAML files* - no styles, no brushes or any other resources. This results in smaller assembly size and would mean that when you use them, you have to provide the resources needed for the visualization of the controls. This happens by merging the needed **XAML files** from the **Themes folder** into the Application's **Merged Dictionaries**.
 
 ## Does a Theme Affect All WPF Controls?
 

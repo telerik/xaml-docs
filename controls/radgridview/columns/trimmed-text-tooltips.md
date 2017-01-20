@@ -5,7 +5,7 @@ description: Trimmed Text Tooltips
 slug: gridview-trimmed-text-tooltips
 tags: trimmed,text,tooltips
 published: True
-position: 13
+position: 14
 ---
 
 # Trimmed Text Tooltips

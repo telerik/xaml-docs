@@ -5,7 +5,7 @@ description: Green Theme
 slug: common-styling-appearance-green-theme
 tags: green,theme,dynamic,fontsize,fontfamily
 published: True
-position: 5
+position: 6
 ---
 
 # Green Theme

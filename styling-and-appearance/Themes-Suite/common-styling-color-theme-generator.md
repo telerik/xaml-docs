@@ -5,7 +5,7 @@ description: Color Theme Generator
 slug: common-styling-color-theme-generator
 tags: theme, color, generator
 published: True
-position: 1
+position: 7
 ---
 # Color Theme Generator
 

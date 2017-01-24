@@ -125,7 +125,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 	DataFormatString="{}{0:N0}"/>
 {{endregion}}
 
->Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectStyle method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
+>Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectTemplate method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
 		  
-# See Also
+## See Also
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

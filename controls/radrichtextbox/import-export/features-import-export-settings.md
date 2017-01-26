@@ -198,7 +198,7 @@ __PdfExportSettings__ include the following options:
 * __ContentsDeflaterCompressionLevel__: An integer between __-1__ and __9__, used to get or set the compression level to be used when deflating the content of the document.  Default Compression is __-1__, No Compression is __0__ and Best Compression is __9__.
           
 
-* __ImagesCompressionMode__: The user can choose between __None__, __Jpeg__ (supported only for images, imported as JPEG), __Deflate__ (the deflate algorithm will be applied to compress the images) or __Automatic__ (the best algorithm will be automatically decided upon for you).
+* __ImagesCompressionMode__: The user can choose between __None__, __Jpeg__, __Deflate__ (the deflate algorithm will be applied to compress the images) or __Automatic__ (the best algorithm will be automatically decided upon for you).
           
 
 * __ImagesDeflaterCompressionLevel__: Same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__.

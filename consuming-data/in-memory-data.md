@@ -76,7 +76,7 @@ Here is a sample code showing how to create in-memory data:
 
 
 
-## Setting In-Memory Data as DataSource In SilverlightWPF Application
+## Setting In-Memory Data as DataSource In {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application
 
 There are numerous ways to set in-memory data as data source:
 
@@ -118,7 +118,7 @@ There are numerous ways to set in-memory data as data source:
 
 
 
-# See Also
+## See Also
 
 {% if site.site_name == 'Silverlight' %}
  * [DomainDataSource Support]({%slug consuming-data-domain-datasource-support%})

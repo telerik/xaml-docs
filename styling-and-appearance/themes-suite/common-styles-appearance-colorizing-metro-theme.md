@@ -5,7 +5,7 @@ description: Windows8 and Windows8Touch Colors and Fonts
 slug: common-styles-appearance-colorizing-metro-theme
 tags: windows8,and,windows8touch,colors,and,fonts
 published: True
-position: 4
+position: 1
 ---
 
 # Windows8 and Windows8Touch Colors and Fonts

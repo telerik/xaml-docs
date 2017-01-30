@@ -5,7 +5,7 @@ description: Office2016 Theme
 slug: common-styling-appearance-office2016-theme
 tags: office2016,theme,dynamic,fontsize,fontfamily
 published: True
-position: 3
+position: 4
 ---
 
 # Office2016 Theme

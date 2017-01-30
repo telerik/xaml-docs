@@ -12,15 +12,21 @@ position: 6
 
 One of the most important features provided by __RadGridView__ is the __data validation__. Data validation features enable you to take complete control of the data entered in your grid's cells.
       
-The purpose of this tutorial is to show you how to validate data using __RadGridView__. The following cases will be discussed:
+The purpose of this tutorial is to show you how to validate data using __RadGridView__.
+
+* [Setting the Mode for the Validation](#setting-the-mode-for-the-validation)
+
+* [Setting the Validation Type](#setting-the-validation-type)
       
-* [Validating data on a cell level](#validating-data-on-a-cell-level)
+* [Validating Data on a Cell Level](#validating-data-on-a-cell-level)
 
-* [Validating data on a property level](#validating-data-on-a-property-level)
+* [Validating Data on a Property Level](#validating-data-on-a-property-level)
 
-* [Validating data on a row level](#validating-data-on-a-row-level)
+* [Validating Data on a Row Level](#validating-data-on-a-row-level)
 
-* [Validating data through data annotations](#validating-data-through-data-annotations)
+* [Validating Data through Data Annotations](#validating-data-through-data-annotations)
+
+* [Examples](#examples)
 
 >The data validation is controllable through events. Be sure you are familiar with all [validation events]({%slug gridview-events-validation%}) exposed by the __RadGridView__.
         
@@ -37,7 +43,7 @@ For the purpose of this tutorial, we will use the __RadGridView__ declaration in
 #### __Figure 1: Standard appearance of RadGridView__
 ![Standard appearance of RadGridView](images/RadGridView_Validation_010.png)
 
-## Setting the mode for the validation 
+## Setting the Mode for the Validation 
 
 RadGridView exposes a property - ValidatesOnDataErrors - that controls the way the data validation, provided by IDataErrorInfo and INotifyDataErrorInfo Interfaces, is performed. It may be set to one of the following values:
 

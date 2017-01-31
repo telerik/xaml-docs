@@ -110,7 +110,7 @@ To access the other templates select *Object -> Edit Additional Templates* from 
 
 After finishing the modifications, set the style to the desired __RadPanes__.{% endif %}
 
-#### __[XAML] Example 1: APplying a style to a specific RadPane__
+#### __[XAML] Example 1: Applying a style to a specific RadPane__
 
 {{region xaml-raddocking-styling-the-radpane_0}}
 	<telerik:RadPane Style="{StaticResource RadPaneStyle}">

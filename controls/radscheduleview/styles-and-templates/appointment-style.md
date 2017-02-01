@@ -248,7 +248,7 @@ Add the custom AppointmentStyleSelector with all the defined Styles:
 
 And assign it to the ScheduleView:			
 
-#### __[XAML] Example 8 Assign the AppointmentStyleSelector to the RadScheduleView control__
+#### __[XAML] Example 8: Assign the AppointmentStyleSelector to the RadScheduleView control__
 
 {{region radscheduleview-styles-and-templates-appointment-style_5}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 

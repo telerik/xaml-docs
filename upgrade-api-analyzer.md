@@ -21,7 +21,7 @@ Telerik Upgrade API Analyzer could be used when upgrading your desktop applicati
 In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgrade of the Telerik controls to a newer version. It thoroughly analyzes the code of your project and provides a list of the changes found between the currently used release and the release you’re planning to upgrade to. Such changes could include obsolete and removed methods and properties as well as modified methods and properties. Additionally, the tool points out the exact piece of code that is affected by a certain change and in cases that involve an obsolete method/property, the tool gives suggestions of how to modify that code.                      
 
 
->At this stage of development, Telerik Upgrade API Analyzer checks only the C# code of your application. 
+>importantAt this stage of development, Telerik Upgrade API Analyzer checks only the **C#** code of your application. 
 
 
 ## Where Do You Get Telerik Upgrade API Analyzer?

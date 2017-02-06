@@ -96,7 +96,7 @@ The following list describes the public properties the EnumMemberViewModel class
 
 ## Setting up a GridViewComboBoxColumn
 
-A typical use case would be to bind the **DisplayMemberPath** of the combo the viewmodel's **DisplayName** and **SelectedValueMemberPath** to be equal to **Value**, as demonstrated in **Example 3**.
+A typical use case would be to bind the **DisplayMemberPath** of the combo to the viewmodel's **DisplayName** and **SelectedValueMemberPath** to be equal to **Value**, as demonstrated in **Example 3**.
 
 #### __[XAML] Example 3: Defining the GridViewComboBoxColumn__
 

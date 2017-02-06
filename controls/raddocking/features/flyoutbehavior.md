@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# FlyoutBehavio
+# FlyoutBehavior
 
 **RadDocking** exposes a **FlyoutBehavior** property which can be used to change the behavior of the flyout of the control's **AutoHideArea**.
 

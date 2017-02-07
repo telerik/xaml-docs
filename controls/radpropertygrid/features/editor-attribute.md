@@ -24,7 +24,7 @@ __RadPropertyGrid now provides support for the new Telerik attribute EditorAttri
 
 __EditorAttribute__ is placed in __Telerik.Windows.Controls.Data binary in Telerik.Windows.Controls.Data.PropertyGrid namespace__. You need to have a reference to the assembly and add a using for the namespace. You can check the [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) article for more basic information.
 
-It has tree properties:
+It has three properties:
 
 * __EditorType__: Specifies the type of the editor used for the property.
 

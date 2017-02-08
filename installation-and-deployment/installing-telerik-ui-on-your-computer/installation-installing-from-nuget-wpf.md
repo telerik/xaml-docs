@@ -11,6 +11,8 @@ site_name: WPF
 
 # Installing UI for WPF from a NuGet package
 
+
+
 The following topic describes what steps you should perform in order to install Telerik UI for WPF from a [NuGet package](http://www.nuget.org/).
       
 We’re providing a common NuGet package containing all the assemblies from the UI for WPF suite as well as separate packages for the different assemblies. It is up to you to decide which one is more suitable to your project. 
@@ -22,6 +24,8 @@ We will go through the following sections:
 * [Downloading the NuGet packages](#downloading-the-nuget-packages)
 
 * [Installing WPF Controls Package](#installing-wpf-controls-package)
+
+* [Add the Telerik NuGet Server](#add-the-telerik-nuget-server)
 
 ## Downloading the NuGet packages
 
@@ -63,8 +67,33 @@ Click the “Install” button and the references will be automatically added to
 You can now use the Telerik WPF controls in your project. 
 
 >tipAdditionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
+
+## Add the Telerik NuGet Server
+
+Through the Telerik NuGet Server users can easily include the Telerik UI for WPF suite and update to latest official version without having to log into their Telerik account. The following steps will demonstrate how this can be done in Visual Studio.
+
+*  Navigate to the Package Manager Settings menu.
+
+![](images/Common_InstallingFromNuGet_05_wpf.png)
+
+* Add new source in the Package Sources section.
+
+![](images/Common_InstallingFromNuGet_06_wpf.png)
+
+* In the Source field fill the address of the Telerik NuGet Server and click Update.
+
+![](images/Common_InstallingFromNuGet_07_wpf.png)
+
+* The Telerik Server is added and ready to use. Click on the Manage NuGet Packages menu.
+
+![](images/Common_InstallingFromNuGet_08_wpf.png)
+
+* Set the Telerik Server as a package source. Enter user credentials when prompted and search for the needed package.
+
+![](images/Common_InstallingFromNuGet_09_wpf.png)
+
           
-# See Also
+## See Also
 
  * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
 

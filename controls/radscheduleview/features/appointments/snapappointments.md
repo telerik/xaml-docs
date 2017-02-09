@@ -24,6 +24,8 @@ This way during drag/resize operation the Start/End times of the appointment wil
 
 ![radscheduleview snapappointments 1](images/radscheduleview_snapappointments_1.png)
 
+>When dragging an appointment, the default snap behavior rounds the appointment's start time to the closest tick.
+
 You could set MinorTickLength property of the ViewDefinition in order to snap the appointments to different duration:     
 
 #### __XAML__

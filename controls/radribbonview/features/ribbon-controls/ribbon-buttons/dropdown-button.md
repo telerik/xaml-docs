@@ -71,7 +71,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 
 * __DropDownOpening__ - fires before the popup area gets opened.					
 
-* __DropDownOpend__ - fires after the popup area has been opened.					
+* __DropDownOpened__ - fires after the popup area has been opened.					
 
 #### __XAML__
 {{region radribbonview-dropdown-button_2}}

@@ -28,7 +28,7 @@ In the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% i
 
 The end result should include the following:				
 
-#### __XAML__
+#### __[XAML] Example 1: The default AppointmentStyleSelector__
 
 {{region radscheduleview-styles-and-templates-appointment-style_0}}
 	<local:OrientedAppointmentItemStyleSelector x:Key="AppointmentItemStyleSelector">
@@ -44,7 +44,8 @@ The end result should include the following:
 		</local:OrientedAppointmentItemStyleSelector.HorizontalStyle>
 		<local:OrientedAppointmentItemStyleSelector.VerticalStyle>
 			<Style TargetType="local:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
-				<Setter Property="Template" Value="{StaticResource AppointmentItemVerticalControlTemplate}" />
+				<Setter Property="Template" Value="{StaticResource AppointmentItemVerticalControlTemplate}"/>
+				<Setter Property="ResizeCursor" Value="SizeNS"></Setter>
 				<Setter Property="Margin" Value="1 0 0 0" />
 			</Style>
 		</local:OrientedAppointmentItemStyleSelector.VerticalStyle>
@@ -53,7 +54,7 @@ The end result should include the following:
 
 where "*local*" is:
 
-#### __XAML__
+#### __[XAML] Example 2: Defining the local namespace__
 
 {{region radscheduleview-styles-and-templates-appointment-style_6}}
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
@@ -67,7 +68,7 @@ Note that you have both __HorizontalStyle__ and __VerticalStyle__. RadScheduleVi
 
 So, let's for example modify the background color and style of the appointments:
 
-#### __XAML__
+#### __[XAML] Example 3: Modified AppointmentStyleSelector__
 
 {{region radscheduleview-styles-and-templates-appointment-style_7}}
 	<local:OrientedAppointmentItemStyleSelector x:Key="AppointmentItemStyleSelector">
@@ -85,7 +86,8 @@ So, let's for example modify the background color and style of the appointments:
 		</local:OrientedAppointmentItemStyleSelector.HorizontalStyle>
 		<local:OrientedAppointmentItemStyleSelector.VerticalStyle>
 			<Style TargetType="local:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
-				<Setter Property="Template" Value="{StaticResource AppointmentItemVerticalControlTemplate}" />
+				<Setter Property="Template" Value="{StaticResource AppointmentItemVerticalControlTemplate}"/>
+				<Setter Property="ResizeCursor" Value="SizeNS"></Setter>
 				<Setter Property="Margin" Value="1 0 0 0" />
 				<Setter Property="Background" Value="Yellow" />
 				<Setter Property="FontStyle" Value="Italic" />
@@ -96,7 +98,7 @@ So, let's for example modify the background color and style of the appointments:
 
 And assign the AppointmentStyleSelector to the ScheduleView:
 
-#### __XAML__
+#### __[XAML] Example 4: Assigning the modified AppointmentStyleSelector__
 
 {{region radscheduleview-styles-and-templates-appointment-style_8}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
@@ -117,7 +119,7 @@ We will use a scenario in which we have an application containing a RadScheduleV
 
 Next ,we are going to use these resources and create the selector. Create a new Class which inherits __OrientedAppointmentItemStyleSelector__. Override its __SelectStyle()__ method and use __activeViewDefinition.GetOrientation()__ to determine whether to apply a horizontal or a vertical Style in your selector.  Then, your AppointmentStyleSelector would look like this:				
 
-#### __C#__
+#### __[C#] Example 5: Custom AppointmentStyleSelector__
 
 {{region radscheduleview-styles-and-templates-appointment-style_1}}
 	public class AppointmentStyleSelector : OrientedAppointmentItemStyleSelector
@@ -169,9 +171,9 @@ Next ,we are going to use these resources and create the selector. Create a new 
 
 >tipNote that you need to ensure that both horizontal and vertical cases have their corresponding styles - __horizontal styles__ are applied when the appointments have horizontal orientation (either by default or when the view they are placed in has been explicitly set a horizontal orientation), __vertical styles__ are applied when the appointments have vertical orientation(either by default or when the view they are placed in has been explicitly set a vertical orientation).					
 
-We add all needed Resources and group our ScheduleView  by the "Room" ResourceType:				
+We add all needed Resources and group our ScheduleView by the "Room" ResourceType:				
 
-#### __XAML__
+#### __[XAML] Example 6: Adding the resources to the RadScheduleView control__
 
 {{region radscheduleview-styles-and-templates-appointment-style_3}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
@@ -203,7 +205,7 @@ We add all needed Resources and group our ScheduleView  by the "Room" ResourceTy
 
 Add the custom AppointmentStyleSelector with all the defined Styles:
 
-#### __XAML__
+#### __[XAML] Example 7: AppointmentStyleSelector with all defined Styles__
 
 {{region radscheduleview-styles-and-templates-appointment-style_4}}
 	<SolidColorBrush x:Key="Room402ABackground_Normal" Color="#FF3366CC" />
@@ -246,7 +248,7 @@ Add the custom AppointmentStyleSelector with all the defined Styles:
 
 And assign it to the ScheduleView:			
 
-#### __XAML__
+#### __[XAML] Example 8: Assign the AppointmentStyleSelector to the RadScheduleView control__
 
 {{region radscheduleview-styles-and-templates-appointment-style_5}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 

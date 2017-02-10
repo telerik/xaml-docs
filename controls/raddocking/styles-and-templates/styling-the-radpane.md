@@ -127,7 +127,7 @@ Here is a snapshot of the final result.{% if site.site_name == 'Silverlight' %}
 
 
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

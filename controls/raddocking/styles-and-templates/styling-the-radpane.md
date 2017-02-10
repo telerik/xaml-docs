@@ -32,6 +32,8 @@ If you go to the 'Resources' pane, you will see the list of all resources genera
 
 For example, select the __Background__ property and modify it. This will change the background of the __RadPane__'s header when it is not selected.{% endif %}{% if site.site_name == 'WPF' %}
 
+>importantThere are four different control templates that are applied to the RadPane according to the position the element occupies: **LeftTemplate, TopTemplate, RightTemplate, BottomTemplate**. In order to make sure that the customizations are applied to every instance of the RadPane, you need to modify each template. 
+
 ![](images/RadDocking_StylingRadPane_04_05_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
 
 You can change the __BorderBrush__ and the __Foreground__ properties the same way.{% endif %}{% if site.site_name == 'Silverlight' %}
@@ -60,19 +62,19 @@ For each of the following states a couple of brushes are available:{% endif %}
 
 * __SelectedHighlighted__ - is active when the mouse id over the selected pane's header. {% if site.site_name == 'Silverlight' %}
 
-The available brushes are:{% endif %}
+The available brushes are:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabInnerBorder__ - is the pane's header tab inner border in the specified state (from the list above).{% endif %}
+ * __PaneTabInnerBorder__ - is the pane's header tab inner border in the specified state (from the list above).{% endif %}{% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabOuterBorder__ - is the brush used for the pane's header tab outer boder in the specified state. {% endif %}
+*  __PaneTabOuterBorder__ - is the brush used for the pane's header tab outer boder in the specified state. {% endif %} {% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabBackground__- is the pane's header tab background brush in the specified state.{% endif %}
+* __PaneTabBackground__- is the pane's header tab background brush in the specified state.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabInnerBorderVertical__ - is the pane's header tab inner border brush used when it is pinned vertically in the specified state.{% endif %}
+*  __PaneTabInnerBorderVertical__ - is the pane's header tab inner border brush used when it is pinned vertically in the specified state.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabOuterBorderVertical__ - is the pane's header tab outer border brush used when it is pinned vertically in the specified state.{% endif %}
+*  __PaneTabOuterBorderVertical__ - is the pane's header tab outer border brush used when it is pinned vertically in the specified state.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-* {% if site.site_name == 'Silverlight' %} __PaneTabBackgroundVertical__ - is the brush used for the pane's header tab background when it is pinned vertically in the specified state. {% endif %}{% if site.site_name == 'Silverlight' %}
+*  __PaneTabBackgroundVertical__ - is the brush used for the pane's header tab background when it is pinned vertically in the specified state. {% endif %}{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
 
@@ -108,7 +110,7 @@ To access the other templates select *Object -> Edit Additional Templates* from 
 
 After finishing the modifications, set the style to the desired __RadPanes__.{% endif %}
 
-#### __XAML__
+#### __[XAML] Example 1: Applying a style to a specific RadPane__
 
 {{region xaml-raddocking-styling-the-radpane_0}}
 	<telerik:RadPane Style="{StaticResource RadPaneStyle}">
@@ -123,7 +125,9 @@ Here is a snapshot of the final result.{% if site.site_name == 'Silverlight' %}
 
 ![](images/RadDocking_StylingRadPane_12_WPF.png){% endif %}
 
-# See Also
+
+
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

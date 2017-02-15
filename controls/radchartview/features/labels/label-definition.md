@@ -10,7 +10,7 @@ position: 0
 
 # Label Definition
 
-The series of the __RadChartView__ control expose mechanisum for customizing the visualized labels. This article will introduce it to you.
+The series of the __RadChartView__ control expose mechanism for customizing the visualized labels. This article will introduce it to you.
 
 If you wish to customize the default labels of the chart series, you could use Label Definition.
 

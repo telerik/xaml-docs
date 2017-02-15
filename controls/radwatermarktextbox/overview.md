@@ -97,3 +97,13 @@ The __SelectionOnFocus__ property of __RadWatermarkTextBox__ allows you to speci
 	                             SelectionOnFocus="SelectAll"
 	                             WatermarkContent="Please Enter Four Digits:" />
 {{endregion}}
+
+## WatermarkBehavior
+
+__WatermarkBehavior__ is an enumeration property which specifies when the watermark content of __RadWatermarkTextBox__ will be hidden.  It could receive the following values:
+
+* __HiddenWhenFocused__ - The watermark will be hidden when the RadWatermarkTextBox receives focus
+* __HideOnClick__ - The watermark will be hidden when the the user clicks on the RadWatermarkTextBox
+* __HideOnTextEntered__ - The watermark will be hidden when the the user writes text into the RadWatermarkTextBox
+
+The default value is __HideOnTextEntered__.

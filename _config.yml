@@ -301,15 +301,18 @@ navigation:
         title: PolarChart Series    
     controls/radchartview3d:
         title: RadChartView3D
+    controls/radchartview3d/populating-data:
+        title: Populating with Data
+        position: 6
     controls/radchartview3d/features:
         title: Features
-        position: 6
+        position: 7
     controls/radchartview3d/series:
         title: Series
-        position: 7
+        position: 8
     controls/radchartview3d/styles-and-templates:
         title: Styles and Templates
-        position: 8
+        position: 9
     controls/radchartview3d/features/behaviors:
         title: Behaviors     
     "*area-series":

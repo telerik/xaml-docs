@@ -12,7 +12,7 @@ position: 3
 
 This article explains how to bind a 3D chart series to a collection of business objects. To data bound the series you can use its __ItemsSource__ property. The property is of type __IEnumerable__ so you can use most collection types. 
 
-The chart will create a __DataPoint3D__ model for each business object in the ItemsSource collection. To map the properties of the business object to the DataPoint3D you can use the series value binding properties.
+The chart creates a __DataPoint3D__ model for each business object in the ItemsSource collection. To map the properties of the business object to the DataPoint3D you can use the series value binding properties.
 
 * __XValueBinding__: The binding that will be used to fill the data point model XValue property.
 * __YValueBinding__: The binding that will be used to fill the data point model YValue property.
@@ -20,7 +20,7 @@ The chart will create a __DataPoint3D__ model for each business object in the It
 
 The properties are of type __DataPointBinding__ which is an abstract class that has two implementations - __PropertyNameDataPointBinding__ and __GenericDataPointBinding__.
 
-The __PropertyNameDataPointBinding__ excepts a path (name) to a property in the business object of the data point. The binding class uses a reflection and the property name to get the corresponding value and assing it to the data point model. This type of binding is used when you set the value binding properties in XAML.
+The __PropertyNameDataPointBinding__ expect a path (name) to a property in the business object of the data point. The binding class  obtains the property using reflection, gets the corresponding value and assigns it to the data point model. This type of binding is used when you set the value binding properties in XAML.
 
 #### __[C#] Example 1: Using PropertyNameDataPointBinding__
 {{region cs-radchartview3d-populating-data-databinding-0}}
@@ -42,7 +42,7 @@ The __GenericDataPointBinding&lt;TElement, TResult&gt;__ expects a function that
 	};
 {{endregion}}
 	
-In summary, to data bound a 3D chart series you will need to set 3 properties - __YValueBinding, XValueBinding, ZValueBinding and ItemsSource__.
+In summary, to bind data to a 3D chart series, you will need to set 4 properties - __YValueBinding, XValueBinding, ZValueBinding and ItemsSource__.
 
 #### __[XAML] Example 4: Setting binding properties in XAML__
 {{region xaml-radchartview3d-populating-data-databinding-3}}

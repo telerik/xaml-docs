@@ -68,15 +68,15 @@ The approaches are shown in details below:
 #### __[XAML] Example 1: After you add a reference, you should merge the needed .xaml files__
 
 	 <Application.Resources>
-			<ResourceDictionary>
-	    		<ResourceDictionary.MergedDictionaries>
-	       	 	    <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>	             
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Data.xaml"/>              
-	    	</ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>	             
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Data.xaml"/>              
+			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>	
 	 </Application.Resources>
  
@@ -97,16 +97,16 @@ As already advised, the default styles and resources for each theme are shipped 
 #### __[XAML] Example 2: The MergedDictionaries in your application resources:__
 
 	<Application.Resources>
-        <ResourceDictionary>
-		    <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
-		<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.GridView.xaml"/>               
-                <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Data.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
+				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.GridView.xaml"/>               
+				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Data.xaml"/>
+	    		</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
 	</Application.Resources>
 
 

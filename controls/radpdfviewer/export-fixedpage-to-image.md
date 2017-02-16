@@ -14,7 +14,7 @@ RadPdfViewer provides an API for exporting a PDF document page to an image. This
 
 #### __[C#] Example 1: Using the ThumbnailFactory's method__  
 {{region radpdfviewer-exporting-fixedpage-to-image-01}}
-    ThumbnailFactory thumbnailFactory = new ThumbnailFactory();
+        ThumbnailFactory thumbnailFactory = new ThumbnailFactory();
 	ImageSource imageSource = thumbnailFactory.CreateThumbnail(radFixedPageInstance, new Size(150, 250));
 {{endregion}}
 

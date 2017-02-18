@@ -694,6 +694,7 @@ We can use this definition to also pass and keep the drag operation details in t
 	    };
 	    e.DragVisualOffset = e.RelativeStartPoint;
 	    e.AllowedEffects = DragDropEffects.All;
+	    e.Handled = true;
 	}
 {{endregion}}
 

@@ -101,7 +101,7 @@ The extracted style will have the following content:
     </Style>
 {{endregion}}
 
-You can now modify the styleselector and set it through RadScheduleView's GroupHeaderStyleSelector property as demonstrated in **Example 4**.
+You can now modify the styleselector and set it through RadScheduleView's GroupHeaderStyleSelector property as demonstrated in **Example 3**.
 
 #### __[XAML] Example 3: Setting RadScheduleView's GroupHeaderStyleSelector__
 

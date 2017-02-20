@@ -148,7 +148,7 @@ Initially, the list doesn’t have any associated list levels. The possible list
 #### __C#__
 
 {{region radrichtextbox-features-lists_4}}
-	for (int i = 0; i < 9; i++)
+	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
 	{
 	    ListLevelStyle listLevel = new ListLevelStyle();
 	    list.Levels.Add(levelIndex);

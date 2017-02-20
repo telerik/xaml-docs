@@ -12,23 +12,23 @@ position: 1
 
 The most important properties of the __RadWatermarkTextBox__ control are:      
 
-* __WatermarkContent__ - gets or sets the content to be shown when the TextBox is empty and not focused.
+* __WatermarkContent:__ Gets or sets the content to be shown when the TextBox is empty and not focused.
 
-* __WatermarkTemplate__ - gets or sets the template for presenting the content, shown when the TextBox is empty and not focused.
+* __WatermarkTemplate:__ Gets or sets the template for presenting the content, shown when the TextBox is empty and not focused.
 
-* __CurrentText__ - gets or sets the text of the TextBox. This property is meant to be used for TwoWay binding in order to be updated on each change of the text and not when the focus is lost.
+* __CurrentText:__ Gets or sets the text of the TextBox. This property is meant to be used for TwoWay binding in order to be updated on each change of the text and not when the focus is lost.
 
-* __IsWatermarkVisible__ - a read-only property indicating whether the Watermark is visible or not.
+* __IsWatermarkVisible:__ A read-only property indicating whether the Watermark is visible or not.
 
-* __SelectionOnFocus__ - specifies the modification over the selection when the control receives focus. The values for this properties are predefined in the __SelectionOnFocus__ enumeration, which exposes the following fields:
+* __SelectionOnFocus:__ Specifies the modification over the selection when the control receives focus. The values for this properties are predefined in the __SelectionOnFocus__ enumeration, which exposes the following fields:
 
-	* __Unchanged__- selection will not be modified.
+	* __Unchanged:__ Selection will not be modified.
 
-	* __SelectAll__- the whole text will be selected.
+	* __SelectAll:__ The whole text will be selected.
 
-	* __CaretToBeginning__- the caret will be moved at the start of the text.
+	* __CaretToBeginning:__ The caret will be moved at the start of the text.
 
-	* __CaretToEnd__- the caret will be moved at the end of the text.
+	* __CaretToEnd:__ The caret will be moved at the end of the text.
 
 >tipThe __RadWatermarkTextBox__ control is part of the __Telerik.Windows.Controls.dll__ assembly.
 

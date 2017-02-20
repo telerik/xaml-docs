@@ -13,7 +13,7 @@ site_name: Silverlight
 
 The following topic describes what steps you should perform in order to install Telerik UI for Silverlight from a [NuGet package](http://www.nuget.org/).
    
-We’re providing a common NuGet package containing all the assemblies from the UI for Silverlight suite as well as separate packages for the different assemblies. It is up to you to decide which one is more suitable to your project. 
+We’re providing a common NuGet package containing all the assemblies from the UI for Silverlight suite as well as separate packages for the different assemblies. It is up to you to decide which one is more suitable for your project. 
 
 >importantThe provided NuGet packages contain either __NoXaml binaries__ or __XAML binaries__. Check the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help topic for more details on the NoXaml binaries and Implicit Styles.
  
@@ -53,23 +53,23 @@ You can now use the Telerik Silverlight controls in your project.
 
 Through the Telerik NuGet Server users can easily include the Telerik UI for Silverlight suite and update to latest official version without having to log into their Telerik account. The following steps will demonstrate how this can be done in Visual Studio.
 
-*  Navigate to the Package Manager Settings menu.
+1.Navigate to the Package Manager Settings menu.
 
 ![](images/Common_InstallingFromNuGet_05.png)
 
-* Add new source in the Package Sources section.
+2.Add new source in the Package Sources section.
 
 ![](images/Common_InstallingFromNuGet_06.png)
 
-* In the Source field fill the address of the Telerik NuGet Server and click Update
+3.In the Source field fill the address of the Telerik NuGet Server and click Update
 
 ![](images/Common_InstallingFromNuGet_07.png)
 
-* The Telerik Server is added and ready to use. Click on the Manage NuGet Packages menu.
+4.The Telerik Server is added and ready to use. Click on the Manage NuGet Packages menu.
 
 ![](images/Common_InstallingFromNuGet_08.png)
 
-* Set the Telerik Server as a package source. Enter user credentials when prompted and search for the needed package.
+5.Set the Telerik Server as a package source. Enter user credentials when prompted and search for the needed package.
 
 ![](images/Common_InstallingFromNuGet_09.png)
 

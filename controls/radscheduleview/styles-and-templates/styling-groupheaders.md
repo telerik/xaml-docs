@@ -10,11 +10,11 @@ position: 3
 
 # Styling the GroupHeaders
 
-It is a common scenario to use resources in RadScheduleView and group the appointments according to the resource they are assigned to. This article discussed how the GroupHeaders can be customized. Also it explains the use of GroupHeaderStyleSelector in order to apply separate styles to the GroupHeaders.      
+It is a common scenario to use resources in **RadScheduleView** and group the appointments according to the resource they are assigned to. This article discusses how you can customize the **GroupHeaders**. It also explains the use of RadScheduleView's **GroupHeaderStyleSelector** property in order to apply separate styles to the GroupHeaders.
 
-Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Room” Resources:
+For the purposes of this article, we will use the following RadScheduleView grouped by **Date**, "**Calendar**" and "**Room**" resources.
 
-#### __XAML__
+#### __[XAML] Example 1: RadScheduleView grouped by  Date, "Calendar" and "Room"__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_0}}
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >         
@@ -46,140 +46,72 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 	</telerik:RadScheduleView>
 {{endregion}}
 
-This article will cover the following topics:
+## The GroupHeaderStyleSelector
 
-* [How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-the-groupheaderstyleselector)
-
-* [How to create a custom GroupHeaderStyleSelector.](#create-a-custom-groupheaderstyleselector)
-
-## Generate and use the GroupHeaderStyleSelector
-
-Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical.        
+Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector class and its containing styles. The selector is oriented, meaning it contains **orientation-dependent styles** – **horizontal** and **vertical**.        
 
 The GroupHeaderStyleSelector contains the following styles:
 
-* HorizontalGroupHeaderStyle, HorizontalBottomLevelGroupHeaderStyle
+* **HorizontalGroupHeaderStyle** and **HorizontalBottomLevelGroupHeaderStyle**
 
-![](images/radscheduleview_horizontalgroupheaderstyle.png)
+![HorizontalGroupHeaderStyle and HorizontalBottomLevelGroupHeaderStyle](images/radscheduleview_horizontalgroupheaderstyle.png)
 
-* HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
+* **HorizontalTodayGroupHeaderStyle** and **HorizontalBottomLevelTodayGroupHeaderStyle**
 
-![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)
+![HorizontalTodayGroupHeaderStyle and HorizontalBottomLevelTodayGroupHeaderStyle](images/radscheduleview_horizontaltodaygroupheaderstyle.png)
 
-* VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
+* **VerticalGroupHeaderStyle** and **VerticalBottomLevelGroupHeaderStyle**
 
-![](images/radscheduleview_verticalgroupheaderstyle.png)
+![VerticalGroupHeaderStyle and VerticalBottomLevelGroupHeaderStyle](images/radscheduleview_verticalgroupheaderstyle.png)
 
-* VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
+* **VerticalTodayGroupHeaderStyle** and **VerticalBottomLevelTodayGroupHeaderStyle**
 
-![](images/radscheduleview_verticaltodaygroupheaderstyle.png)
+![VerticalTodayGroupHeaderStyle and VerticalBottomLevelTodayGroupHeaderStyle](images/radscheduleview_verticaltodaygroupheaderstyle.png)
 
-* MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
+* **MonthViewWeekGroupStyle** and **MonthViewBottomLevelWeekGroupStyle**
 
-![](images/radscheduleview_monthviewweekgroupstyle.png)
+![MonthViewWeekGroupStyle and MonthViewBottomLevelWeekGroupStyle](images/radscheduleview_monthviewweekgroupstyle.png)
 
-Choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:
+You can choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:
 
-* __Generate GroupHeaderStyleSelector from installation folder__
+## Extract GroupHeaderStyleSelector from installation folder
 
-In the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderStyleSelector and any needed resources that it uses. 
+In the **UI for** {% if site.site_name == 'Silverlight' %}**Silverlight**{% endif %}{% if site.site_name == 'WPF' %}**WPF**{% endif %} installation folder on your computer, go to the **Themes.Implicit** folder and select the theme that you use in your application. Drill down to find the **Telerik.Windows.Controls.ScheduleView.xaml** file in that directory. From this resource dictionary you can extract the GroupHeaderStyleSelector and any needed resources that it uses. 
 
-* __Generate GroupHeaderStyleSelector from RadScheduleView template__
+## Generate GroupHeaderStyleSelector from RadScheduleView template
 
-Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
+You can also generate the RadScheduleView template in **Microsoft Blend** by right-clicking on the control (either in the **Design view** or in the **Objects and Timeline** pane) and selecting **Edit Template -> Edit a Copy**. You should then search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
 
-The end result should include the following:
+The extracted style will have the following content:
 
-#### __XAML__
+#### __[XAML] Example 2: The default RadScheduleView style__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_1}}
-	<!-- Brushes -->
-	...
-	<!-- Styles-->
-	<ControlTemplate x:Key="GroupHeaderButtonControlTemplate" TargetType="local:GroupHeaderButton">
-		...
-	</ControlTemplate>
-
-	<Style x:Key="GroupHeaderButtonStyle" TargetType="local:GroupHeaderButton">
-		...
-	</Style>
-
-	<local:NullToBooleanConverter x:Key="NullToBooleanConverter" />
-	<ControlTemplate x:Key="GroupHeaderTemplate"  TargetType="local:GroupHeader">
-		...
-	</ControlTemplate>
-
-	<Style x:Key="GroupHeaderBaseStyle" TargetType="local:GroupHeader">
-		...
-	</Style>
-	<Style TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}" />
-
-	<Style x:Key="HorizontalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="HorizontalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="HorizontalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="VerticalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="VerticalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="VerticalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="VerticalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="MonthViewWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<Style x:Key="MonthViewBottomLevelWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-		...
-	</Style>
-	<!-- GroupHeaderStyleSelector -->
-	<local:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
-		HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
-		HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
-		HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
-		HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
-		
-		VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
-		VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
-		VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
-		VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
-		
-		MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
-		MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
-	</local:OrientedGroupHeaderStyleSelector>
+    <telerikScheduleView:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
+            HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
+            HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
+            HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
+            HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
+            VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
+            VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
+            VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
+            VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
+            MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
+            MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}"/>
+    </Style>
 {{endregion}}
 
-Note the use of the local namespace from the raw source:
+You can now modify the styleselector and set it through RadScheduleView's GroupHeaderStyleSelector property as demonstrated in **Example 3**.
 
-#### __XAML__
-
-{{region radscheduleview-styles-and-templates-styling-groupheaders_2}}
-	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
-{{endregion}}
-
-The selector is applied to our instance of RadScheduleView:
-
-#### __XAML__
+#### __[XAML] Example 3: Setting RadScheduleView's GroupHeaderStyleSelector__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_3}}
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
 {{endregion}}
 
-Now we can apply any customization to the GroupHeaders and watch the change. Let’s for example modify __HorizontalBottomLevelStyle__ – change the color and style of the headers:
+Let's modify the __HorizontalBottomLevelStyle__ and observe the result.
 
-#### __XAML__
+#### __[XAML] Example 4: The modified HorizontalBottomLevelGroupHeaderStyle__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_4}}
 	<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="telerik:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
@@ -191,21 +123,23 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 	</Style>
 {{endregion}}
 
-Here is the result:
+#### __Figure 1: RadScheduleView with the modified HorizontalBottomLevelGroupHeaderStyle__
 
-![](images/radscheduleview_horizontalgroupheaderstyleexample.png)
+![RadScheduleView with the modified HorizontalBottomLevelGroupHeaderStyle](images/radscheduleview_horizontalgroupheaderstyleexample.png)
 
 ## Create a custom GroupHeaderStyleSelector
 
-In order to set different styles to the different Resource GroupHeaders , we should create a custom class which inherits OrientedGroupHeaderStyleSelector class and overrides its SelectStyle method.  Also we need to add Style properties for Date and "Calendar" Resource headers and return the corresponding Style:
+In order to set different styles for the different resource GroupHeaders, you should create a custom class which inherits from the **OrientedGroupHeaderStyleSelector** class and overrides its **SelectStyle** method.  You also need to define **Style** properties for **Date** and "**Calendar**" resource headers and return the corresponding Style.
 
-#### __C#__
+#### __[C#] Example 5: The custom OrientedGroupHeaderStyleSelector__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_5}}
 	public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector 
 	{
 	    public Style CalendarStyle { get; set; }
+
 	    public Style DateStyle { get; set; }
+
 	    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDeifinition)
 	    {
 	        var groupHeader = container as GroupHeader;
@@ -221,16 +155,18 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	                return this.DateStyle;
 	            }
 	        }
+
 	        return base.SelectStyle(item, container, activeViewDeifinition);
 	    }
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: The custom GroupHeaderStyleSelector__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_6}}
 	Public Class CustomGroupHeaderStyleSelector
 	    Inherits OrientedGroupHeaderStyleSelector
+
 	    Public Property CalendarStyle() As Style
 	        Get
 	            Return m_CalendarStyle
@@ -240,6 +176,7 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	        End Set
 	    End Property
 	    Private m_CalendarStyle As Style
+
 	    Public Property DateStyle() As Style
 	        Get
 	            Return m_DateStyle
@@ -249,6 +186,7 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	        End Set
 	    End Property
 	    Private m_DateStyle As Style
+
 	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject, activeViewDeifinition As ViewDefinitionBase) As Style
 	        Dim groupHeader = TryCast(container, GroupHeader)
 	        If groupHeader IsNot Nothing Then
@@ -264,9 +202,9 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 	End Class
 {{endregion}}
 
-Add the Styles to the XAML:
+You then need to define the styles in XAML as demonstrated in **Example 6**.
 
-#### __XAML__
+#### __[XAML] Example 6: Defining the styles in XAML__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_7}}
 	<local:CustomGroupHeaderStyleSelector x:Key="CustomGroupHeaderStyleSelector">
@@ -286,10 +224,12 @@ Add the Styles to the XAML:
 
 And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
-#### __XAML__
+#### __[XAML] Example 7: Setting RadScheduleView's GroupHeaderStyleSelector__
 
 {{region radscheduleview-styles-and-templates-styling-groupheaders_8}}
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
 {{endregion}}
 
-![](images/radscheduleview_customgroupheaderexample.png)
+#### __Figure 2: RadScheduleView with the custom GroupHeaderStyleSelector__
+
+![RadScheduleView with the custom GroupHeaderStyleSelector](images/radscheduleview_customgroupheaderexample.png)

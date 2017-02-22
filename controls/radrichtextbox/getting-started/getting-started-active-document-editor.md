@@ -10,7 +10,10 @@ position: 6
 
 # Active Document Editor
 
-RadRichTextBox displays the different parts of its content using few different document editors. A document editor is a control that implements the IDocumentEditor interface. For example the RadRichTextBox control.
+RadRichTextBox displays the different parts of its content using few different document editors. A document editor is a control that implements the [IDocumentEditor](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_idocumenteditor.htm) interface. For example the RadRichTextBox control.
+
+* [Document Editor Types](#document-editor-types)
+* [Using the Active Document Editor](#using-the-active-document-editor)
 
 ## Document Editor Types
 
@@ -26,18 +29,16 @@ There are few types of document editors.
 
 * __Comment__: This is the document editor that displays a comment in the document. When you start editing a comment, this type of document editor is activated. Read more about comments in the [Comments]({%slug radrichtextbox-features-comments%}) help article.
 
-Currently, all document editors are of type RadRichTextBox. In other words, RadRichTextBox uses child RadRichTextBox controls as IDocumentEditors to edit the different parts of its content.
-
 ## Using the Active Document Editor
 
-The active editor can be get via the __ActiveDocumentEditor__ property of RadRichTextBox.
+You can get the active editor via the __ActiveDocumentEditor__ property of RadRichTextBox.
 
 #### __[C#] Example 1: Getting the active document editor__  
 {{region radrichtextbox-getting-started-activedocumenteditor-0}} 
 	IDocumentEditor activeEditor = radRichTextBox.ActiveDocumentEditor;
 {{endregion}}
 
-You can see when the active editor is changed using the __ActiveDocumentEditorChanged__ event. The event arguments contains the editors type which you can get via the args' __DocumentEditorType__ property. This event is useful when you need to modify the active document editor or subscribe for its events.
+You can see when the active editor is changed using the __ActiveDocumentEditorChanged__ event. The event arguments contain the editor's type which you can get via the args' __DocumentEditorType__ property. This event is useful when you need to modify the active document editor or subscribe for its events.
 
 #### __[C#] Example 2: Using the ActiveDocumentEditorChanged event__  
 {{region radrichtextbox-getting-started-activedocumenteditor-1}} 

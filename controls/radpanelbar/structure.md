@@ -20,6 +20,6 @@ This section defines terms and concepts used in the scope of __RadPanelBar__ you
 
 * __Expand/Collapse Arrow__ - arrow that expands __RadPanelBarItem__
 
-# See Also
+## See Also
  * [Required Parts]({%slug radpanelbar-required-template-parts%})
  * [Getting Started]({%slug radpanelbar-populating%})

@@ -23,7 +23,12 @@ This section defines terms and concepts used in the scope of __RadBook__ you hav
 
 Below you can see a snapshot and explanation of the main visual elements of the __RadBook__ control.
 
-![RadBook Visual structure](images/book_visuals.png)
+{% if site.site_name == 'WPF' %}
+![RadBook Visual structure](images/book_visuals_wpf.png)
+{% endif %}
+{% if site.site_name == 'Silverlight' %}
+![RadBook Visual structure](images/book_visuals_sl.png)
+{% endif %}
 
 The structure of a __RadBook__ consists of the following main elements:
 
@@ -33,5 +38,5 @@ The structure of a __RadBook__ consists of the following main elements:
 
 * __Page Fold__ - This is the part from the page that is dragged when the page is flipping.
 
-# See Also
+## See Also
 * [Getting Started]({%slug radbook-getting-started%})

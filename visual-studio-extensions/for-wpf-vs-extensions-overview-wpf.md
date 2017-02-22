@@ -11,10 +11,6 @@ site_name: WPF
 
 # Overview
 
-
-
-##
-
 __Visual Studio Extensions__ for __UI for WPF__ aim to help developers when creating WPF Application with __Telerik UI for WPF__.
 
 The extensions handle the following major points in the development with __UI for WPF__:

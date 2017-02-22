@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # Overview
 
-
-
-## 
-
 __Visual Studio Extensions__ for __UI for Silverlight__ aim to help developers when creating Silverlight Application with __Telerik UI for Silverlight__.
 
 The extensions handle the following major points in the development with __UI for Silverlight__:

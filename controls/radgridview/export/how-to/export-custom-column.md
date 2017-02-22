@@ -10,7 +10,7 @@ position: 6
 
 # Exporting Custom Column
 
-In order to automatically export a custom column, without handling some of the exporting events, it should implement the **IExportableColumn** interface. The interface exposes  the following methods and properties:
+In order to automatically export a custom column, without handling some of the exporting events, it should implement the **IExportableColumn** interface. The interface exposes the following methods and properties:
 
 * **GetCellContent**: Gets the content of the cell. You can override it to return custom value.
 * **DataFormatString**:  Gets or sets the string format applied to the column.

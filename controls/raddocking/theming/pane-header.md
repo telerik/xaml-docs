@@ -10,7 +10,7 @@ position: 1
 
 # Theming the Pane Header
 
-To modify the appearance of the __PaneHeader__ you have to create a custom theme and place a style that targets the __PaneHeader__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with{% endif %}{% if site.site_name == 'WPF' %}{% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme](#CreatingTheme). The topic also assumes that you have already created the style that will be used for the __PaneHeader__ control. To learn how to style it take a look at the [Styling the Pane Header]({%slug raddocking-styling-the-pane-header%}) topic.
+To modify the appearance of the __PaneHeader__ you have to create a custom theme and place a style that targets the __PaneHeader__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with{% endif %}{% if site.site_name == 'WPF' %}{% endif %} a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme]({%slug raddocking-theming-overview%}#creating-the-theme). The topic also assumes that you have already created the style that will be used for the __PaneHeader__ control. To learn how to style it take a look at the [Styling the Pane Header]({%slug raddocking-styling-the-pane-header%}) topic.
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 

@@ -56,6 +56,8 @@ Simply put, a RadObservableCollection represents an **ObservableCollection** tha
 
 * **ResumeNotifications**: Resumes the notifications. You can use this once you're finished with adding the new items.
 
+>Calling the ResumeNotifications method after adding items to the collection with suspended notifications raises the **CollectionChanged** event with **NotifyCollectionChangedAction.Reset**.
+
 * **Reset**: Raises the **CollectionChanged** event with **NotifyCollectionChangedAction.Reset**.
 
 ## Properties

@@ -10,8 +10,35 @@ position: 2
 
 # Protecting Telerik UI Assemblies
 
-Technical guidelines for protecting Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by Progress binaries when redistributed with other applications.
+Technical guidelines for protecting **Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by Progress** binaries when redistributed with other applications.
      
+There are a couple of approaches that you can take:
+* [Use the Powershell Scripts](#use-the-power-shell-scripts)
+* [Manually edit the Source Code](#building-telerik-assemblies-from-source-code)
+
+## Use the power shell scripts
+
+Telerik UI source code provides two power shell scripts that will allow you to easily apply the modifications  needed to protect the **Telerik** assemblies without the need to open and edit any files. The scrips are located in the **Build\BuildInstructions\AssemblyProtection** folder of the **Telerik UI** source code. 
+
+The available scripts are: 
+
+* **ApplicationNameModifier.ps1**: Uncomments the ValidatePassPhrase() method call and changes the ApplicationName in the Core\Controls\Common\AssemblyProtection.cs file with the provided one. 
+
+* **ApplicationNameModifier - DPL.ps1**: Uncomments the ValidatePassPhrase() method call and changes the ApplicationName in the Documents\Licensing\AssemblyProtection.cs file with the provided one.
+
+### Instructions
+
+**1.** Right click on the needed script and click Run with **PowerShell** menu item
+
+![run script with PowerShell](../images/installation-powershell-image1.png)
+
+**2.** Enter the new ApplicationName when prompted: 
+
+![change the application name](../images/installation-powershell-image2.png)
+
+**3.** Rebuild the Telerik UI assemblies using one of the approaches explained in the source code build instructions (located in the Build\BuildInstructions folder). 
+
+
 ## Building Telerik Assemblies from Source Code 
 
 __Prerequisites__

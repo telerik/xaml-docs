@@ -156,3 +156,8 @@ If you are building the assemblies needed for one of the components depending on
 
 3. Execute steps 3-7 from the previous section.
 
+## See Also
+
+* [Installing Telerik UI on your Computer]({%slug installation-installing-which-file-do-i-need%})
+
+

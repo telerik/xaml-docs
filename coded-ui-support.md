@@ -28,6 +28,8 @@ In order to create a CodedUI test, you need to perform the following steps:
 	* For Microsoft Visual Studio 2013 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__12.0__\UITestExtensionPackages".
 	
 	* For Microsoft Visual Studio 2015 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__14.0__\UITestExtensionPackages" - added with version __2015 Q2 SP__.  	
+	
+	* For Microsoft Visual Studio 2017 - "%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\\__15.0__\UITestExtensionPackages" - added with version __2017 R1__.  	
 
 >For 32-bit operating systems, the path should be "%CommonProgramFiles%\Microsoft Shared\VSTT\\__[Version]__\UITestExtensionPackages".
 

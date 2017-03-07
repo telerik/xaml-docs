@@ -51,14 +51,54 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		}
 	{{endregion}} 
 
-* **WorkbookCommandError**: Notifies that an error occurred while executing a command in RadSpreadsheet. The arguments are of type **CommandErrorEventArgs** and you can use the Exception property to check what exactly the error is.
+	#### **[VB.NET] Example 1: Disable messages related to protection using the MessageShowing event**
+	{{region radspreadsheet-events_3}}
+	    Public Sub AttachToMessageShowingEvent()
+	        AddHandler Me.radSpreadsheet.MessageShowing, AddressOf radSpreadsheet_MessageShowing
+	    End Sub
+	
+	    Private Sub radSpreadsheet_MessageShowing(sender As Object, e As Telerik.Windows.Controls.Spreadsheet.MessageShowingEventArgs)
+	        If e.NotificationType = Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageBoxNotificationType.ProtectedWorksheetError Then
+	            e.IsHandled = True
+	        End If
+	    End Sub
+	{{endregion}} 
 
-* **WorkbookChanging**: Occurs when the workbook is changing.
+* **WorkbookCommandError**: Notifies that an error occurred while executing a command in RadSpreadsheet. The arguments are of type **CommandErrorEventArgs** and you can use the **Exception** property to check what exactly the error is.
+
+* **WorkbookChanging**: Occurs when the workbook starts changing.
 
 * **WorkbookChanged**: Occurs when the workbook is changed.
 
-* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments of the event allow you to cancel the execution of the command.  
+* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_spreadsheet_commands_commandexecutingeventargs.htm) and allow you to cancel the execution of the command.  
 
+	#### **[C#] Example 2: Cancel a command through WorkbookCommandExecuting**
+	
+	{{region radspreadsheet-events_1}}
+	
+		private void radSpreadsheet_WorkbookCommandExecuting(object sender, Telerik.Windows.Documents.Spreadsheet.Commands.CommandExecutingEventArgs e)
+		{
+		    if (e.CommandName == "AddShapeCommand")
+		    {
+		        e.Cancel();
+		    }
+		}
+	{{endregion}}
+
+	#### **[VB.NET] Example 2: Cancel a command through WorkbookCommandExecuting**
+	
+	{{region radspreadsheet-events_4}}
+	
+	    Public Sub AttachToWorkbookCommandExecutingEvent()
+	        AddHandler Me.radSpreadsheet.WorkbookCommandExecuting, AddressOf radSpreadsheet_WorkbookCommandExecuting
+	    End Sub
+	
+	    Private Sub radSpreadsheet_WorkbookCommandExecuting(sender As Object, e As Telerik.Windows.Documents.Spreadsheet.Commands.CommandExecutingEventArgs)
+	        If e.CommandName = "AddShapeCommand" Then
+	            e.Cancel()
+	        End If
+	    End Sub
+	{{endregion}}
 * **WorkbookCommandExecuted**: Occurs when workbook command is executed.
 
 * **WorkbookContentChanged**: Occurs when the content of the workbook is changed.
@@ -115,10 +155,10 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * **CellPropertyChanged**: Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.
 
-	**Example 2** demonstrates how you can use the event to get a notification when the users change the fill of a cell.
+	**Example 3** demonstrates how you can use the event to get a notification when the users change the fill of a cell.
 
-	#### **[C#] Example 2: Using the CellPropertyChangedEvent**
-	{{region radspreadsheet-events_1}}
+	#### **[C#] Example 3: Using the CellPropertyChangedEvent**
+	{{region radspreadsheet-events_2}}
 		
 		public void AttachToCellPropertyChangedEvent()
 		{
@@ -133,6 +173,21 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		    }
 		}
 	{{endregion}}
+
+	#### **[VB.NET] Example 3: Using the CellPropertyChangedEvent**
+	{{region radspreadsheet-events_5}}
+		
+	    Public Sub AttachToCellPropertyChangedEvent()
+	        AddHandler Me.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged, AddressOf Cells_CellPropertyChanged
+	    End Sub
+	
+	    Private Sub Cells_CellPropertyChanged(sender As Object, e As CellPropertyChangedEventArgs)
+	        If e.Property = CellPropertyDefinitions.FillProperty Then
+	            MessageBox.Show("The fill of a cell was changed!")
+	        End If
+	    End Sub
+	{{endregion}}
+
 
 * **CellRangeInsertedOrRemoved**: Occurs when a cell range is inserted or removed. Through the arguments, you can obtain information about the affected ranges, as well as whether the range is removed or not.
 

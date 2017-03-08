@@ -1699,8 +1699,8 @@ div.k-window-content {
 }
 
 #allcontrols-table ul li.control-category {
-	background: #2CB144;
-	color: white;
+	color: #2CB144;
+	text-transform: uppercase;
 	font-weight: bold;
 	margin-top: 15px;
 	margin-bottom: 5px;

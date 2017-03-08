@@ -19,8 +19,7 @@ module Jekyll
 			anchor = anchor.sub("\(", "")
 			anchor = anchor.sub("\)", "")
 		end
-		# Jekyll.logger.warn "TEST: #{anchor}" 
-		
+	    
 		output = "<a href=\"#{anchor}\">#{anchorText}</a>"
     end
   end

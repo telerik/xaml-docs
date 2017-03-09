@@ -59,8 +59,6 @@ If you need further assistance you can post your question in the {% if site.site
 
 * UI for Silverlight demos - [http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)
 
-* Documentation and Help - [http://www.telerik.com/help/silverlight](http://www.telerik.com/help/silverlight)
-
 * Latest news for UI for Silverlight - [http://www.telerik.com/support/whats-new/silverlight](http://www.telerik.com/support/whats-new/silverlight)
 {% endif %}
 {% if site.site_name == 'WPF' %}
@@ -73,7 +71,7 @@ If you need further assistance you can post your question in the {% if site.site
 
 * Essential support - [http://www.telerik.com/support](http://www.telerik.com/support)
 
-* Creative ideas – [http://blogs.telerik.com](http://blogs.telerik.com)
+* Creative ideas – [http://telerik.com/blogs](http://telerik.com/blogs)
 
 ## Help us Improve {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation
 
@@ -91,4 +89,4 @@ __Forums__
 
 You can visit the [UI for {{ site.framework_name }} forums]{% if site.site_name == 'Silverlight' %}(http://www.telerik.com/forums/silverlight){% endif %}{% if site.site_name == 'WPF' %}(http://www.telerik.com/forums/wpf){% endif %} and leave us a feedback.  Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
 
-Thank you for your contribution to the {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation!
+Thank you for your contribution to the {{ site.framework_name }} Documentation!

@@ -36,6 +36,8 @@ The following cases will be examined:
 
 * [Set relative size to the RadPaneGroup](#set-relative-size-to-the-radpanegroup)
 
+* [Set (Min/Max)Width and (Min/Max)Height](#set-minmaxwidth-and-minmaxheight)
+
 * [Other useful properties and methods exposed by the RadPaneGroup class](#other-properties-and-methods-exposed-by-the-radpanegroup-class)
 
 ## Grouping Panes Run-time
@@ -46,7 +48,7 @@ You can group panes during run-time by simply [dragging]({%slug raddocking-featu
 
 In order to group two or more panes, you should add them to the __RadPaneGroup__'s __Items__ collection like in the example below.
 
-#### __XAML__
+#### __[XAML] Example 1: Adding panes to a RadPaneGroup__
 
 {{region xaml-raddocking-features-pane-groups_0}}
 	<telerik:RadDocking x:Name="radDocking">
@@ -63,7 +65,7 @@ In order to group two or more panes, you should add them to the __RadPaneGroup__
 
 The same operation can be done in the code-behind. You can group panes using the __RadPaneGroup__'s __Items__ collection through procedural code:
 
-#### __C#__
+#### __[C#] Example 2: Adding panes to a RadPaneGroup__
 
 {{region cs-raddocking-features-pane-groups_1}}
 	private void GroupPanes()
@@ -74,7 +76,7 @@ The same operation can be done in the code-behind. You can group panes using the
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Adding panes to a RadPaneGroup__
 
 {{region vb-raddocking-features-pane-groups_2}}
 	Private Sub GroupPanes()
@@ -96,7 +98,7 @@ You can remove panes using procedural code in two ways:
 
 * Using the __RadPaneGroup__'s __Items__ collection
 
-#### __C#__
+#### __[C#] Example 3: Removing panes from a RadPaneGroup__
 
 {{region cs-raddocking-features-pane-groups_5}}
 	private void RemovePane(RadPane paneToRemove)
@@ -105,7 +107,7 @@ You can remove panes using procedural code in two ways:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Removing panes from a RadPaneGroup__
 
 {{region vb-raddocking-features-pane-groups_6}}
 	Private Sub RemovePane(ByVal paneToRemove As RadPane)
@@ -115,7 +117,7 @@ You can remove panes using procedural code in two ways:
 
 * Using the __RemoveFromParent__ method of the __RadPane__ class
 
-#### __C#__
+#### __[C#] Example 4: Removing panes from a RadPaneGroup through the RemoveFromParent method__
 
 {{region cs-raddocking-features-pane-groups_7}}
 	private void RemovePane(RadPane paneToRemove)
@@ -124,7 +126,7 @@ You can remove panes using procedural code in two ways:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Removing panes from a RadPaneGroup through the RemoveFromParent method__
 
 {{region vb-raddocking-features-pane-groups_8}}
 	Private Sub RemovePane(ByVal paneToRemove As RadPane)
@@ -136,7 +138,7 @@ You can remove panes using procedural code in two ways:
 
 The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to hide all visible panes belonging to the group.
 
-#### __C#__
+#### __[C#] Example 5: Hiding all group panes__
 
 {{region cs-raddocking-features-pane-groups_9}}
 	private void HideAllPanes()
@@ -145,7 +147,7 @@ The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to 
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Hiding all group panes__
 
 {{region vb-raddocking-features-pane-groups_10}}
 	Private Sub HideAllPanes()
@@ -159,7 +161,7 @@ The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to 
 
 The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to show all hidden panes belonging to the group.
 
-#### __C#__
+#### __[C#] Example 6: Show all group panes__
 
 {{region cs-raddocking-features-pane-groups_11}}
 	private void ShowAllPanes()
@@ -168,7 +170,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to 
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Show group panes__
 
 {{region vb-raddocking-features-pane-groups_12}}
 	Private Sub ShowAllPanes()
@@ -184,7 +186,7 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to 
 
 The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to pin all panes belonging to the group.
 
-#### __C#__
+#### __[C#] Example 7: Pin all group panes__
 
 {{region cs-raddocking-features-pane-groups_13}}
 	private void PinAllPanes()
@@ -193,7 +195,7 @@ The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to p
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Pin all group panes__
 
 {{region vb-raddocking-features-pane-groups_14}}
 	Private Sub PinAllPanes()
@@ -207,7 +209,7 @@ The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to p
 
 The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to unpin all panes belonging to the group.
 
-#### __C#__
+#### __[C#] Example 7: Unpin all group panes__
 
 {{region cs-raddocking-features-pane-groups_15}}
 	private void UnpinAllPanes()
@@ -216,7 +218,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Unpin all group panes__
 
 {{region vb-raddocking-features-pane-groups_16}}
 	Private Sub UnpinAllPanes()
@@ -232,7 +234,7 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 
 The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking__ control, are set relatively. You can set relative size to a __RadPaneGroup__ by setting the __PropertionalStackPanel.RelativeSize__ attached property. By using this property you can proportionally divide the width or the hight occupied by two or more __RadPaneGroups__ docked to the same position. For example, if you have two pane groups docked to the top, the first one should occupy 1/3 of the available width and the second - the remaining 2/3, you have to set this proportion (1:2) in their widths as it is shown in the code snippet below.
 
-#### __XAML__
+#### __[XAML] Example 8: Set relative size__
 
 {{region xaml-raddocking-features-pane-groups_17}}
 	<telerik:RadDocking x:Name="radDocking1">
@@ -247,7 +249,60 @@ The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking
 	</telerik:RadDocking>
 {{endregion}}
 
-Here is the result. As you can see, the first pane group occupies 1/3 of the available width, while the second occupies the rest 2/3. The height specified is ignored because the groups have the same height as the __RadSplitContainer__ in which they are hosted.
+**Figure 1** illustrates the result.
+
+#### __Figure 1: Pane groups with proportional sizes__
+
+![Pane groups with proportional sizes](images/Features_Panes_Tabbed_030.png)
+
+As you can see, the first pane group occupies 1/3 of the available width, while the second occupies the rest 2/3. The height specified is ignored because the groups have the same height as the __RadSplitContainer__ in which they are hosted.
+
+## Set (Min/Max)Width and (Min/Max)Height
+
+Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by setting the following attached properties of the **ProportionalStackPanel**:
+
+* **ChildWidth**
+
+* **ChildMinWidth**
+
+* **ChildMaxWidth**
+
+* **ChildHeight**
+
+* **ChildMinHeight**
+
+* **ChildMaxHeight**
+
+#### __[XAML] Example 9: Setting ProportionalStackPanel.ChildWidth__
+
+{{region xaml-raddocking-features-pane-groups_18}}
+	<telerik:RadSplitContainer>
+		<telerik:RadPaneGroup telerik:ProportionalStackPanel.ChildWidth="300">
+	        <telerik:RadPane Header="Pane Bottom">
+	            <TextBlock Text="Pane Group with RelativeSize" />
+	        </telerik:RadPane>
+	    </telerik:RadPaneGroup>
+		<telerik:RadPaneGroup>
+		    <telerik:RadPane Header="Pane Bottom">
+		        <TextBlock Text="Pane Group with fixed Width (300)" />
+		    </telerik:RadPane>
+		</telerik:RadPaneGroup>
+		<telerik:RadPaneGroup>
+		    <telerik:RadPane Header="Pane Bottom">
+		        <TextBlock Text="Pane Group with RelativeSize" />
+		    </telerik:RadPane>
+		</telerik:RadPaneGroup>
+	</telerik:RadSplitContainer>
+{{endregion}}
+
+As can be seen on **Figure 2**, even when pane groups with fixed sizes are present, the remaining groups with proportional sizes will still resize accordingly.
+
+#### __Figure 2: Pane group with fixed size among groups with proportional sizes__
+
+![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-1.png)
+![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-2.png)
+
+>When both fixed and proportional sizes are set for a given group, the fixed size will take precedence.
 
 ## Other Properties and Methods Exposed by the RadPaneGroup class
 
@@ -265,7 +320,7 @@ Here is the result. As you can see, the first pane group occupies 1/3 of the ava
 
 To learn how to style the __RadPaneGroup__ in your applications take a look at the [Styling the RadPaneGroup]({%slug raddocking-styling-the-radpanegroup%}) topic.
 
-# See Also
+## See Also
 
  * [Split Container]({%slug raddocking-features-split-container%})
 

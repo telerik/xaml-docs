@@ -391,7 +391,7 @@ The default value is 200, 200.
 
 ## Setting the (Min/Max)Width and (Min/Max)Height
 
-Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by setting the following attached properties of the **ProportionalStackPanel**:
+Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by setting the following attached properties of the **ProportionalStackPanel** class:
 
 * **ChildWidth**
 

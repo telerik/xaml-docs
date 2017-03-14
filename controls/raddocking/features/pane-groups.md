@@ -259,7 +259,7 @@ As you can see, the first pane group occupies 1/3 of the available width, while 
 
 ## Set (Min/Max)Width and (Min/Max)Height
 
-Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by setting the following attached properties of the **ProportionalStackPanel**:
+Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by setting the following attached properties of the **ProportionalStackPanel** class:
 
 * **ChildWidth**
 

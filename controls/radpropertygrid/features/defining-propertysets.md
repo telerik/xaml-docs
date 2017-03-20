@@ -16,6 +16,14 @@ With the __“Property sets”__ feature RadPropertyGrid enables its users to pr
 
 In order to benefit from this feature, one should set RadPropertyGrid’s PropertySetMode property an appropriate value and provide an IEnumerable based instance that contains the business objects. 
 
+>You can check the "__Validating Property Sets__" section from the PropertyGrid`s [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
+
+* [Modes](#modes)
+
+* [Customizing PropertyDefinitions](#customizing-propertydefinitions)
+
+* [Disable creating object instance for null value](#disable-creating-object-instance-for-null-value)
+
 ## Modes
 
 * [None](#none)
@@ -141,7 +149,7 @@ The “Intersection” mode works in a similar way to the “Union” mode, with
 
 ![Rad Property Grid Sets Intersection](images/RadPropertyGrid_Sets_Intersection.png)
 
-## Customizing “property set” PropertyDefinitions
+## Customizing PropertyDefinitions
 
 RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the specified set. In order to provide a cross-platform data binding approach, an indexer has been exposed. However, as dynamic properties do not contain any information about their relying type an IValueConverter instance might be needed in certain scenarios:
 
@@ -217,7 +225,21 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 
 ![Rad Property Grid Sets Customized](images/RadPropertyGrid_Sets_Customized.png)
 
-You can check the "__Validating Property Sets__" section from the PropertyGrid`s [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
+
+## Disable creating object instance for null value
+
+By default, __RadPropertyGrid__ will create an object instance for a property of custom data type with null value. This behavior can be altered through the __ShouldAddNullForNonMatchingValues__ boolean property. Its default value is __False__. When set to __True__, the control __will not create a new instance__ for __null property values__. 
+
+#### __[XAML] Example 6: Setting the ShouldAddNullForNonMatchingValues property to True__
+
+	{{region xaml-radpropertygrid-defining-propertysets_5}}
+
+	      <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
+	                                 Item="{Binding Shapes}"
+	                                 PropertySetMode="Union"
+	                                 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
+{{endregion}}
+
 
 # See Also
 

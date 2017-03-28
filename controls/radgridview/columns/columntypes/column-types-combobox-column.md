@@ -186,7 +186,9 @@ The multi-column ComboBoxColumn in this example will have two columns showing th
 
 __Figure 6.__![](images/gridview_multi_column_combo.png)
 
-# See Also
+## See Also
+
+ * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%})
 
  * [Empty Cells in ComboboxColumn]({%slug gridview-troubleshooting-blank-cells%})
 

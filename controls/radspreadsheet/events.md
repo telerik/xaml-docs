@@ -151,6 +151,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * **ActivePresenterChanged**: Occurs when the active presenter is changed.
 
+>The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
+
 ## Cells Events
 
 * **CellPropertyChanged**: Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.

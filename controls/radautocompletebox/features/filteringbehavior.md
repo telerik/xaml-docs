@@ -44,7 +44,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 		}
 	{{endregion}}
 
-1. After that you will need to override its __FindMatchingItems()__ method with a custom logic that will return the entire items collection when no watch is found:
+1. After that you will need to override its __FindMatchingItems()__ method with a custom logic that will return the entire items collection when no match is found:
 
 	#### __[C#] Overriding FindMatchingItems__
 

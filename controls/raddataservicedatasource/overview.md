@@ -47,4 +47,6 @@ __RadDataServiceDataSource__ uses a __DataServiceContext__ and a __DataServiceQu
 
 __RadDataServiceDataSource__ is built on top of the {% if site.site_name == 'Silverlight' %}WCF Data Services Client Library for Silverlight{% endif %}{% if site.site_name == 'WPF' %}WCF Data Services Client Library for WPF{% endif %}. Basic WCF Data Services experience is required for working with __RadDataServiceDataSource__. 
 __RadDataServiceDataSource__ is a client-side technology and does not encompass the server-side branch of __WCF Data Services__.
-If you are using __.NET 3.5__, you will need to install [ADO.NET Data Services Update for .NET Framework 3.5 SP1](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=2343)
+If you are using __.NET 3.5__, you will need to install [ADO.NET Data Services Update for .NET Framework 3.5 SP1](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=2343).
+
+If you are using __.NET 4.0 or higher__, you need to install the [WCF Data Services](http://www.microsoft.com/en-us/download/details.aspx?id=29306).

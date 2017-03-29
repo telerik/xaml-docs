@@ -32,6 +32,8 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 
 Unlike a standard items control, the __RadGridView__'s __ItemsSource__ property is declared to be of type __System.Object__. Of course standard .NET collections that implement the __IEnumerable__ interface are fully supported as well. If you want the insertions or the deletions in the collection to be automatically applied to the UI, the collection to which you bound must also implement the __INotifyCollectionChanged__ interface. Coupling in your code it may be more convenient to manipulate data in the original data source instead of using the __RadGridView__ API. __RadGridView__ listens to data source collection change events and reflects those changes in its visual representation. In {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} there is a built-in implementation of a data collection that exposes the __INotifyCollectionChanged__ interface – the __ObservableCollection<T>__ class.
 
+>important When binding the **ItemsSource** to a **DataTable**, you should use its **DefaultView** property.
+
 >tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
 
 Introduced to the __System.ComponentModel__ namespace collection views are fully supported as well. __RadGridView__ will automatically pick up group descriptions, sort descriptions, or filter settings defined on the collection view and use those to display data.

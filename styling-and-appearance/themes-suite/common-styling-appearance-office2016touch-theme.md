@@ -37,10 +37,10 @@ The __Office2016Touch__ theme is, as the name suggests, very similar to the __Of
 ![RadNumericUpDown with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-0.png)
 
 #### __Figure 2: RadOutlookBar__ 
-![RadOutlookBar with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
+![RadOutlookBar with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-1.png)
 
 #### __Figure 3: RadRibbonView__ 
-![RadRibbonView with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-3.png)
+![RadRibbonView with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
 
 ## Default theme colors
 

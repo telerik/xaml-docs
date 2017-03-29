@@ -1679,3 +1679,33 @@ div.k-window-content {
 }
 /* END Feedback form styles*/
 
+/* START Introduction page all controls table styles */
+#page-article table#allcontrols-table {
+	border: none;
+}
+
+#page-article table#allcontrols-table td {
+	background: none;
+	border: none;
+}
+
+#page-article table#allcontrols-table ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+#allcontrols-table ul li {	
+	padding: 5px 5px;	
+}
+
+#allcontrols-table ul li.control-category {
+	color: #2CB144;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding: 3px 5px;
+}
+/* END Introduction page all controls table styles */
+
+

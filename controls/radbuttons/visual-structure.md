@@ -76,7 +76,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 * __Button Part__ - represents the active part of the control.
 
-# See Also
+## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})
  * [Appearance]({%slug radbuttons-features-appearance%})
  * [Styles and Templates]({%slug radbuttons-styles-and-templates-overview%})

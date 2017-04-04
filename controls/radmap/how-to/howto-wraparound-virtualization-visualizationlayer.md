@@ -10,11 +10,13 @@ position: 10
 
 # Wraparound with Virtualization in VisualizationLayer
 
-When using wraparound functionality, the virtualization of the RadMap control needs to be set in a more advanced way. 
+When using wraparound functionality, the virtualization of the RadMap control needs to be further customized.
 
 ![Wraparound with Virtualization in VisualizationLayer](images/RadMap_Wraparound_Virtualization_Visualizationlayer.PNG)	
 
-In order to enable the UI Virtualization feature, you should configure the ZoomLevelGridList object and you should specify the VirtualizationSource property of the [Visualization Layer]({%slug radmap-features-virtualization-layer%}). The ZoomLevelGridList property allows dividing the map into regions. The data provided to the VisualizationLayer should be wrapped in a class that implements the __IMapItemsVirtualizationSource__ interface. This interface contains a __MapItemsRequest()__ method, which is used by the __VisualizationLayer__ to request new data whenever the ZoomLevel or Center properties of the RadMap control are changed. The event arguments are of type __MapItemsRequestEventArgs__ which give you the currently traversed portion of the map. This method generally serves as an event handler and you have to calculate and decide which objects to be displayed in the given portion. In WrapAround mode, this portion will have Longitude value exceeding the valid geographical boundaries (-180; 180). The RadMap control provides public methods which you can use to normalize such locations. You can take a look a the [Location Conversion]({%slug radmap-features-wraparound%}) section in the WrapAround help article.
+In order to enable the UI Virtualization feature, you should configure the ZoomLevelGridList object and you should set the VirtualizationSource property of the [Visualization Layer]({%slug radmap-features-virtualization-layer%}). The ZoomLevelGridList property allows dividing the map into regions. The data provided to the VisualizationLayer should be wrapped in a class that implements the __IMapItemsVirtualizationSource__ interface. This interface contains a __MapItemsRequest()__ method, which is used by the __VisualizationLayer__ to request new data whenever the ZoomLevel or Center properties of the RadMap control are changed. The event arguments are of type __MapItemsRequestEventArgs__ which give you the currently visible area of the map. This method generally serves as an event handler and you have to calculate and decide which objects to be displayed in the given viewport. 
+
+In WrapAround mode, this portion will have Longitude value exceeding the valid geographical boundaries (-180; 180). The RadMap control provides public methods which you can use to normalize such locations. You can take a look a the [Location Conversion]({%slug radmap-features-wraparound%}) section in the WrapAround help article.
 
 In the next part of this article, we will display points of interest (POIs) over the cities (Berlin, London, Amsterdam, Madrid, Barcelona, Rome) in the map in MVVM scenario and set the virtualization when the wraparound mode of the map is on. In __Example 1__ we will specify the business object which will hold the Longitude, Latitude values, the name of the cities and their location.
 
@@ -86,7 +88,7 @@ In the next part of this article, we will display points of interest (POIs) over
     }
 {{endregion}}
 
-Then you can create custom class which implement the __IMapItemsVirtualizationSource__ interface. In the handler of the __MapItemRequest()__ event you can get the __LocationRect__ region from the arguments and normalize this region by using GetCoercedLocation method of RadMap. Then you need to calculate which cities should be displayed in this normalized region.
+Then you can create custom class which implement the __IMapItemsVirtualizationSource__ interface. In the handler of the __MapItemRequest()__ event you can get the __LocationRect__ region from the arguments and normalize the region by using GetCoercedLocation method of RadMap. Then you need to calculate which cities should be displayed in the normalized region.
 
 #### __[C#] Example 2: Custom class__
 {{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_1}}
@@ -126,12 +128,8 @@ Then you can create custom class which implement the __IMapItemsVirtualizationSo
     }
 {{endregion}}
 
-In the ViewModel we shift the the cities by shifting their longitudes using __SetCities()__ and __TryGetLongitudeMatchInRange()__ methods.
+In the ViewModel we shift the locations by shifting their longitudes using __SetCities()__ and __TryGetLongitudeMatchInRange()__ methods.
 
-<!--
-In the ViewModel you can check if the location(POI) is inside in the shifted region.
-If true, you can display the point on the map by invoking the CompleteItemsRequest() method. To create new shifted location, you can use RadMap GetShiftedLocation() method. 
--->
 #### __[C#] Example 3: Create view model__
 {{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_2}}
 	public class ExampleViewModel : ViewModelBase
@@ -205,7 +203,7 @@ If true, you can display the point on the map by invoking the CompleteItemsReque
 				}
 			}
 		}
-		internal List<CityLocation> GetCities(double upperLeftLat, double upperLeftLong, double lowerRightLat, double lowerRightLong)
+		public List<CityLocation> GetCities(double upperLeftLat, double upperLeftLong, double lowerRightLat, double lowerRightLong)
 		{
 			List<CityLocation> locations = new List<CityLocation>();  
 
@@ -345,39 +343,7 @@ The final step is to set the custom __VirtualizationSource__ class to the __Virt
 
 Similar and more complex example you can find in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/WrapAroundAndVirtualization).
 
-# See Also
+## See Also
  * [Bing Map Rest Provider]({%slug radmap-features-providers-bing-rest-map%})
  * [VisualizationLayer - Introduction]({%slug radmap-visualization-layer-introduction%})
- * [Wraparound] ({%slug radmap-features-wraparound%})
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ * [Wraparound] ({%slug radmap-features-wraparound%}) 

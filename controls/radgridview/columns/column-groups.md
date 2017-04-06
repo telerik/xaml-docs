@@ -89,7 +89,7 @@ You can define a __custom header__ for the __GridViewColumnGroup__ through its H
 	<telerik:GridViewColumnGroup Name="Data">
 	    <telerik:GridViewColumnGroup.HeaderTemplate>
 	        <DataTemplate>
-	            <TextBox Text="Data"/>
+	            <TextBlock Text="Data"/>
 	        </DataTemplate>
 	    </telerik:GridViewColumnGroup.HeaderTemplate>
 	</telerik:GridViewColumnGroup>

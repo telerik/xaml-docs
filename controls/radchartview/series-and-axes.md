@@ -10,7 +10,9 @@ position: 3
 
 # Series and Axes
 
-The purpose of this topic is to make you familiar with the axes supported by each ChartView series. To learn more about series, please refer to Chart Series topic. You may find the supported series alphabetically ordered in the table below:
+>The purpose of this topic is to make you familiar with the axes supported by each ChartView series. To learn more about series, please refer to Chart Series topic. 
+
+You may find the supported series alphabetically ordered in the table below:
 
 | Series               | Horizontal Axis                                                      | Vertical Axis                 |
 |----------------------|----------------------------------------------------------------------|-------------------------------|

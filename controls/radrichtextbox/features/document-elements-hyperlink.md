@@ -157,7 +157,7 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 
 ### __ToolTip__
 
-By default hyperlinks take a fixed string as a tool tip. The default format is:
+By default, hyperlinks take a fixed string as a tool tip. The default format shows the URI of the hyperlink.
 
 You have control over it using the __HyperlinkToolTipFormatString__ of RadRichTextBox, which will set the format for all hyperlinks in the document.
         

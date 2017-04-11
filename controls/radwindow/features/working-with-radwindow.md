@@ -150,6 +150,8 @@ To modify the default appearance of the __RadWindow__ you can use the following 
 
 * __Background__ - changes the background of the content area.
 
+* __CaptionHeight__ - gets or sets the height of the extent of the top of the window threatened as the caption.
+
 {% if site.site_name == 'Silverlight' %}
 * __ModalBackground__ - changes the color of the background behind the __RadWindow__ when it is opened as a modal dialog.
 {% endif %}

@@ -261,23 +261,23 @@ As you can see, the first pane group occupies 1/3 of the available width, while 
 
 Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by setting the following attached properties of the **ProportionalStackPanel** class:
 
-* **ChildWidth**
+* **ElementWidth**
 
-* **ChildMinWidth**
+* **ElementMinWidth**
 
-* **ChildMaxWidth**
+* **ElementMaxWidth**
 
-* **ChildHeight**
+* **ElementHeight**
 
-* **ChildMinHeight**
+* **ElementMinHeight**
 
-* **ChildMaxHeight**
+* **ElementMaxHeight**
 
-#### __[XAML] Example 9: Setting ProportionalStackPanel.ChildWidth__
+#### __[XAML] Example 9: Setting ProportionalStackPanel.ElementWidth__
 
 {{region xaml-raddocking-features-pane-groups_18}}
 	<telerik:RadSplitContainer>
-		<telerik:RadPaneGroup telerik:ProportionalStackPanel.ChildWidth="300">
+		<telerik:RadPaneGroup telerik:ProportionalStackPanel.ElementWidth="300">
 	        <telerik:RadPane Header="Pane Bottom">
 	            <TextBlock Text="Pane Group with RelativeSize" />
 	        </telerik:RadPane>

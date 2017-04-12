@@ -393,19 +393,19 @@ The default value is 200, 200.
 
 Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by setting the following attached properties of the **ProportionalStackPanel** class:
 
-* **ChildWidth**
+* **ElementWidth**
 
-* **ChildMinWidth**
+* **ElementMinWidth**
 
-* **ChildMaxWidth**
+* **ElementMaxWidth**
 
-* **ChildHeight**
+* **ElementHeight**
 
-* **ChildMinHeight**
+* **ElementMinHeight**
 
-* **ChildMaxHeight**
+* **ElementMaxHeight**
 
-#### __[XAML] Example 14: Setting ProportionalStackPanel.ChildWidth__
+#### __[XAML] Example 14: Setting ProportionalStackPanel.ElementWidth__
 
 {{region xaml-raddocking-features-split-container_28}}
 	<telerik:RadDocking>
@@ -415,7 +415,7 @@ Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by
                     <telerik:RadPane Header="Relative Width"  />
                 </telerik:RadPaneGroup>
             </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer telerik:ProportionalStackPanel.ChildMaxWidth="200">
+            <telerik:RadSplitContainer telerik:ProportionalStackPanel.ElementMaxWidth="200">
                 <telerik:RadPaneGroup>
                     <telerik:RadPane Header="MaxHeight: 200"  />
                 </telerik:RadPaneGroup>

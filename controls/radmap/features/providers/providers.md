@@ -22,8 +22,6 @@ The __RadMap__ control doesn't display a map on itself, it needs a map provider 
 
 * [UriImageProvider](#uriimageprovider)
 
-* [BingMapTrafficProvider](#bing-maps-traffic-provider)
-
 >tip It is now possible to specify multiple map providers that will be displayed one over another through the __RadMap.Providers__ property. Note that in multiple providers scenario the first (master) provider should be tiled provider without geographic limits set. Also, providers that have geographic limits and use tiled map sources should be limited with the __MapLayer.ZoomRange__ attached property. Zoom range should be set into the reasonable value, so the size of the “map window” does not get excessive on the maximum allowed zoom level; otherwise loading of the tiles into the window will dramatically decrease performance of the application.        
 
 Here is a list of the most important common properties shared by all map providers:
@@ -96,23 +94,7 @@ Empty provider is a provider which doesn't connect to any real imagery services 
 
 RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingMapProvider and OpenStreetMapProvider. You can either use it with single image for all zoom levels, or you can specify an image for every distinct zoom level.        
 
->tip To learn more about the UriImageProvider [read here]({%slug radmap-features-uriimageprovider%}).        
-
-## Bing Maps Traffic Provider
-
-Since Q2 2011 the well known Bing Maps Traffic implementation that shows the consequences of traffic incidents and construction sites as color-coded overlays for both sides of the street is now supported with RadMap control.
-
-The provider can be used together with __BingMapsProvider__ or __OpenStreetMapProvider__ the way it's shown below:
-
-#### __XAML__
-	<telerik:RadMap x:Name="RadMap1" Center="40.7254808779182,-73.9034722532031" ZoomLevel="11">
-		<telerik:RadMap.Providers>
-			<telerik:OpenStreetMapProvider />
-			<telerik:BingMapTrafficProvider />
-		</telerik:RadMap.Providers>
-	</telerik:RadMap>
-
-![](images/RadMap_Features_Providers_03.PNG)
+>tip To learn more about the UriImageProvider [read here]({%slug radmap-features-uriimageprovider%}).   
 
 ## ArcGIS online services
 

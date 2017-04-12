@@ -302,6 +302,8 @@ As can be seen on **Figure 2**, even when pane groups with fixed sizes are prese
 ![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-1.png)
 ![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-2.png)
 
+>important When the **Orientation** of the parent **RadSplitContainer** is set to **Vertical**, only the **(Min/Max)Height** properties are taken into account. Similarly, when the orientation is **Horizontal**, the container uses only the **(Min/Max)Width** attached properties.
+
 >When both fixed and proportional sizes are set for a given group, the fixed size will take precedence.
 
 ## Other Properties and Methods Exposed by the RadPaneGroup class

@@ -350,8 +350,8 @@ Finally, you have to tell the column to use this custom filtering control like t
 	</telerik:RadGridView>
 {{endregion}}
 
-! In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should __additionally apply a template_. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
+>In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 
-# See Also
+## See Also
 
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

@@ -29,6 +29,10 @@ When it comes to image editing tools which have settings and a live preview, the
  
 	* DrawText
 	
+	* Draw
+	
+	* DrawText
+	
 	* FlipHorizontal
 	
 	* FlipVertical

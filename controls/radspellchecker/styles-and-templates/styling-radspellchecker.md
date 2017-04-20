@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-__RadSpellChecker__ uses pop-up windows to spellcheck the controls it supports. If you want to change some of the settings for these windows like __StartUp__ location, __LeftOffset__, __RightOffset__ or anything else you can use the __WindowSettings__ property of the static __RadSpellChecker__ class. 
+__RadSpellChecker__ uses pop-up windows to spellcheck the controls it supports. If you want to change some of the settings for these windows, like __StartupLocation__, __Top__, __Left__, __TopOffset__, __LeftOffset__, you can use the __WindowSettings__ property of the static __RadSpellChecker__ class. 
 
 The windows in __RadSpellChecker__ derive from __RadWindow__, so if you want to check its properties, do it          {% if site.site_name == 'Silverlight' %}[here](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_RadWindow.htm){% endif %}{% if site.site_name == 'WPF' %}[here](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_RadWindow.htm){% endif %}.
           

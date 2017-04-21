@@ -28,7 +28,7 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 	* __0__: No Compression. 
 	* __9__: Best Compression. 
 * __DocumentInfo__: A property of type __PdfDocumentInfo__. You can use this class to retrieve or change the document information.
-* __DrawPageBodyBackground__: A Boolean property that gets or sets a value indicating whether the exporter will draw a rectangle below the page body contents.
+* __DrawPageBodyBackground__: A property of type __bool__ that gets or sets a value indicating whether the exporter will draw a rectangle below the page body contents.
 * __FloatingUIContainersExportMode:__  A property of type __PdfInlineUIContainersExportMode__ that get or sets the current mode when exporting floating UI containers.
 	* __None__: When set the floating UI containers will not be exported.
 	* __Image__: Default mode.
@@ -37,7 +37,7 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 	* __Deflate__: The deflate algorithm will be applied to compress the images.
 	* __Jpeg__: The jpeg algorithm will be applied to compress the images.
 	* __Automatic__: The best algorithm will be automatically decided upon for you.	
-* __ImagesDeflaterCompressionLevel__:  A property of type __integer__. Same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__.
+* __ImagesDeflaterCompressionLevel__:  A property of type __integer__. Same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__ mode.
 * __InlineUIContainersExportMode__: A property of type __PdfInlineUIContainersExportMode__ that get or sets the current mode when exporting inline UI containers.
 	* __None__: When set the inline UI containers will not be exported.
 	* __Image__: Default mode.

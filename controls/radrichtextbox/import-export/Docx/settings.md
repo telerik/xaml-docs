@@ -10,7 +10,7 @@ position: 0
 
 # Settings
 
-__DocxFormatProvider__ allows for import of docx documents and respectively export of RadDocument to docx. Additionally, the export settings provide modification options. The current article outlines the available settings.
+__DocxFormatProvider__ allows for import of DOCX documents and respectively export of RadDocument to DOCX. Additionally, the export settings provide modification options. The current article outlines the available settings.
 
 ## Export Settings
 

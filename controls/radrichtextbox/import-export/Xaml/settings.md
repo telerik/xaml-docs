@@ -13,11 +13,11 @@ position: 1
 __XamlFormatProvider__ allows for import of XAML documents and respectively export of RadRichTextBox to XAML file. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 
 
-### Export Settings
+## Export Settings
 
 __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control the export of the RadRichTextBox document.
 
-## Export Settings Properties
+### Export Settings Properties
 * __ImageExportMode__: A property of type __ImageExportMode__ that gets or sets how the image should be exported. This property is an enumeration and it allows the following values:
 	* __None__: Images are not exported.
 	* __RawData__: Images are exported using their RawData.
@@ -36,7 +36,7 @@ __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	xamlFormatProvider.ExportSettings = settings;
 {{endregion}}
 
-### Import Settings
+## Import Settings
 
 __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control the import of the XAML file.
 

@@ -16,8 +16,8 @@ __PdfFormatProvider__ makes it easy to import and export __RadDocument__ to PDF 
 All you have to do in order to use __PdfFormatProvider__ is add references to the assemblies listed below:
       
 
-* __Telerik.Windows.Documents.FormatProviders.Pdf__
-* __Telerik.Windows.Zip__
+* __Telerik.Windows.Documents.FormatProviders.Pdf.dll__
+* __Telerik.Windows.Zip.dll__
 
 ## Export
 

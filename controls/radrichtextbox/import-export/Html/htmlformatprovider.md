@@ -12,9 +12,9 @@ position: 0
 
 __HtmlFormatProvider__ makes it easy to import and export __RadDocument__ to/from HTML format, preserving as much as possible of the document structure and formatting.
 
-To use __HtmlFormatProvider__, you should add references to the assembly listed below:
+To use __HtmlFormatProvider__, you should add references to:
 
-* __Telerik.Windows.Documents.FormatProviders.Html__
+* __Telerik.Windows.Documents.FormatProviders.Html.dll__
 
 ## Import
 
@@ -46,7 +46,7 @@ The resulting __RadDocument__ can be used like any code-generated document.
         
 ## Export
 
-In order to export a document to HTML you can use the overloads of the __HtmlFormatProvider.Export()__ method.
+With the overloads of the __Export()__ method you can export the document to an HTML string or a file.
 
 __Example 3__ shows how to use the HtmlFormatProvider to export an instance of RadDocument to a file:
 

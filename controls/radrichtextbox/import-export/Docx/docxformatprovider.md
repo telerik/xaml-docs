@@ -12,7 +12,7 @@ position: 0
 
 __DocxFormatProvider__ makes it easy to import and export RadRichTextBox to/from DOCX format, preserving the entire document structure and formatting.
 
-All you have to do in order to use DocxFormatProvider is add references to the assemblies listed below:
+All you have to do in order to use DocxFormatProvider is to add references to the assemblies listed below:
 
 * __Telerik.Windows.Documents.FormatProviders.OpenXml.dll__
 * __Telerik.Windows.Zip.dll__

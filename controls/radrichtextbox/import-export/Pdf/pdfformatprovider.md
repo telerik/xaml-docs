@@ -24,7 +24,7 @@ All you have to do in order to use __PdfFormatProvider__ is add references to th
 In order to export a document to PDF you need to use the __Export()__ method of __PdfFormatProvider__.
         
 
-The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export __RadDocument__ to a file.
+The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export the document into __.pdf__ format.
         
 >The PdfFormatProvider class of RadRichTextBox is located in the **Telerik.Windows.Documents.Flow.FormatProviders.Pdf namespace**.
 

@@ -29,14 +29,14 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 * __ExportLocalOrStyleValueSource__: A property of type __bool__. Gets or sets whether only properties which have local or style value source will be exported.
 * __ExportStyleMetadata__: A property of type __bool__ that sets whether the additional metadata should be exported when exporting CSS classes.
 * __ImageExportMode__: A property of type __ImageExportMode__ that gets or sets how the image should be exported. This property is an enumeration and it allows the following values:
-	* __None__: Image are not exported.
+	* __None__: Images are not exported.
 	* __AutomaticInline__:  The best mode to export the image is chosen automatically.
-	* __Base64EncodedSplit__: Images are inline Base64 encoded and split into parts layed out in a table.
+	* __Base64EncodedSplit__: Images are inline Base64 encoded and split into parts laid out in a table.
 	* __Base64Encoded__: Images are inline Base64 encoded.
 	* __ImageExportingEvent__: Event is fired on exporting. 
 	* __UriSource__:  The UriSource property is set as src attribute of the img tag.	
-* __PropertiesToIgnore__: A property of type __Dictionary__. Properties added to this dictionary will not be exported. The full collection of properties that can be excluded is demonstrated in __Example 1__.
-* __SpanExportMode__: A property of type __SpanExportMode__ that gets or sets the export mode of the HTML &lt;span&gt; tag. This option will not affect the content of the span only how the span tag is exported. This property is an enumeration and it allows the following values:
+* __PropertiesToIgnore__: A property of type __Dictionary__ that allows you add properties which will not be exported for certain HTML tags. The full collection of properties that can be excluded is demonstrated in __Example 1__.
+* __SpanExportMode__: A property of type __SpanExportMode__ that gets or sets how the spans in the document are exported. This option does not affect the content of the span but only how the span tag is exported. This property is an enumeration and it allows the following values:
 	* __DefaultBehavior__: HTML &lt;span&gt; tags will be exported when they have styling.
 	* __AlwaysExport__: HTML &lt;span&gt; tags will be always exported.
 * __StyleRepositoryExportMode__: A property of type __StyleRepositoryExportMode__ that gets or sets the style repository export mode. This property is an enumeration and it allows the following values:
@@ -92,7 +92,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 ### ExportSettings Events
 * __CssClassExporting__: This event is fired on every attempt to export a CSS class.
 * __FloatingUIContainerExporting__: This event is fired on every attempt to export a __FloatingUIContainer__.
-* __ImageExporting__: This event is fired on every attempt to export an Image.
+* __ImageExporting__: This event is fired only when the respective option of ImageExportMode is applied.
 * __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about InlineUIContainers.
 		
 #### __[C#] Example 2: Setting the ExportSettings of the HtmlFormatProvider__

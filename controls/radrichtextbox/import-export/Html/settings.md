@@ -18,17 +18,16 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 
 ### ExportSettings Properties
 
-* __DocumentExportLevel__: A property of type DocumentExportLevel that gets or sets which ELEMENT tags should be exported.
+* __DocumentExportLevel__: A property of type DocumentExportLevel that gets or sets which element tags should be exported.
 	* __Document__: This is the default value. Includes the HTML declaration, more specifically &lt;HTML&gt;, &lt;TITLE&gt;, &lt;HEAD&gt; and &lt;BODY&gt; tags.
-	* __Fragment__: When set only the HTML &lt;BODY&gt; tag will be export.	
+	* __Fragment__: When this setting is applied, only the HTML &lt;BODY&gt; tag will be exported.	
 * __ExportBoldAsStrong__: A property of type __bool__ that controls whether elements with font-weight bold are exported as <strong> tag.
-* __ExportEmptyDocumentAsEmptyString__: A property of type __bool__ that gets or sets if RadRichTextBox should export empty document as empty string.
-* __ExportFontStylesAsTags__: A property of type __bool__ that gets or sets the export font styles as tag. Specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style.
-* __ExportHeadingsAsTags__:  A property of type __bool__ that gets or sets if RadRichTextBox Heading styles should be export as html heading styles (&lt;h1&gt;, &lt;h2&gt; etc.).
+* __ExportEmptyDocumentAsEmptyString__: A property of type __bool__ that gets or sets whether an empty document should be exported as an empty string.
+* __ExportFontStylesAsTags__: A property of type __bool__ that gets or sets the font styles should be exported as tags. Specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style.
+* __ExportHeadingsAsTags__:  A property of type __bool__ that gets or sets whether Heading styles should be exported as HTML heading tags (&lt;h1&gt;, &lt;h2&gt; etc.).
 * __ExportItalicAsEm__: A property of type __bool__ that controls whether elements with font weight italic are exported as &lt;em&gt; tag.
-* __ExportLocalOrStyleValueSource__: A property of type __bool__ gets or sets if RadRichTextBox should export only properties which has local or style value source.
-* __ExportStyleMetadata__: A property of type __bool__ that set if the additional metadata should be export or not when exporting CSS classes that will be used when importing.
-* __ForbiddentPropertiesForExportCollection__: A property of type __Dictionary__ that gets the collection where you can add properties which won't be exported for certen html tag.
+* __ExportLocalOrStyleValueSource__: A property of type __bool__. Gets or sets whether only properties which have local or style value source will be exported.
+* __ExportStyleMetadata__: A property of type __bool__ that sets whether the additional metadata should be exported when exporting CSS classes.
 * __ImageExportMode__: A property of type __ImageExportMode__ that gets or sets how the image should be exported. This property is an enumeration and it allows the following values:
 	* __None__: Image are not exported.
 	* __AutomaticInline__:  The best mode to export the image is chosen automatically.
@@ -36,10 +35,10 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	* __Base64Encoded__: Images are inline Base64 encoded.
 	* __ImageExportingEvent__: Event is fired on exporting. 
 	* __UriSource__:  The UriSource property is set as src attribute of the img tag.	
-* __PropertiesToIgnore__: A property of type __Dictionary__ that gets a collection where you can add properties which will not be exported for a certain HTML tag. The full collection of properties that can be excluded is demonstrated in __Example 1__.
-* __SpanExportMode__: A property of type __SpanExportMode__ that gets or sets the span export mode. This option will not affect the content of the span only how the span tag is exported. This property is an enumeration and it allows the following values:
-	* __DefaultBehavior__:  Span tags will be exported when they have styling.
-	* __AlwaysExport__:  Span tags will be always exported.
+* __PropertiesToIgnore__: A property of type __Dictionary__. Properties added to this dictionary will not be exported. The full collection of properties that can be excluded is demonstrated in __Example 1__.
+* __SpanExportMode__: A property of type __SpanExportMode__ that gets or sets the export mode of the HTML &lt;span&gt; tag. This option will not affect the content of the span only how the span tag is exported. This property is an enumeration and it allows the following values:
+	* __DefaultBehavior__: HTML &lt;span&gt; tags will be exported when they have styling.
+	* __AlwaysExport__: HTML &lt;span&gt; tags will be always exported.
 * __StyleRepositoryExportMode__: A property of type __StyleRepositoryExportMode__ that gets or sets the style repository export mode. This property is an enumeration and it allows the following values:
 	* __ExportStylesAsCssClasses__:  Export styles from the document styles repository to CSS classes.
 	* __DontExportStyles__:  Don't export styles from the document styles repository.

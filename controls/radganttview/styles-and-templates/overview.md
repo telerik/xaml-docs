@@ -10,7 +10,7 @@ position: 1
 
 # GanttView Styles
 
-__RadGanttView__ supports styling only with Implicit Styles. You can check how to set a theme to the control in [this topic]({%slug radganttview-styles-and-templates-setting-theme%}). Using implicit styles makes it much easier to customize different parts of the control.
+You can check how to set a theme to the control in [this topic]({%slug radganttview-styles-and-templates-setting-theme%}). Using implicit styles makes it much easier to customize different parts of the control.
 
 >Before proceeding, check the {% if site.site_name == 'Silverlight' %}[Implicit Style]({%slug styling-apperance-implicit-styles-overview%}){% endif %}{% if site.site_name == 'WPF' %}[Implicit Style]({%slug styling-apperance-implicit-styles-overview%}){% endif %} article.
 

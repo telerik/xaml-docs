@@ -34,8 +34,6 @@ This topic covers the following features of the __RadSplitContainer__:
 
 * [Setting the RelativeSize of the RadSplitContainer](#setting-the-relativesize-of-the-radsplitcontainer)
 
-* [Setting the (Min/Max)Width and (Min/Max)Height](#setting-the-minmaxwidth-and-minmaxheight)
-
 * [Adding PaneGroups/SplitContainers to the RadSplitContainer programmatically](#adding-panegroups/splitcontainers-to-the-radsplitcontainer-programmatically)
 
 * [Other important properties exposed by the RadSplitContainer](#other-important-properties-exposed-by-the-radsplitcontainer)

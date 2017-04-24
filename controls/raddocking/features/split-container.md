@@ -389,57 +389,6 @@ For this purpose you need to set the __RelativeSize__ attached property of the _
 
 The default value is 200, 200.
 
-## Setting the (Min/Max)Width and (Min/Max)Height
-
-Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by setting the following attached properties of the **ProportionalStackPanel** class:
-
-* **ElementWidth**
-
-* **ElementMinWidth**
-
-* **ElementMaxWidth**
-
-* **ElementHeight**
-
-* **ElementMinHeight**
-
-* **ElementMaxHeight**
-
-#### __[XAML] Example 14: Setting ProportionalStackPanel.ElementWidth__
-
-{{region xaml-raddocking-features-split-container_28}}
-	<telerik:RadDocking>
-        <telerik:RadSplitContainer InitialPosition="DockedBottom" Orientation="Horizontal">
-            <telerik:RadSplitContainer>
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="Relative Width"  />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer telerik:ProportionalStackPanel.ElementMaxWidth="200">
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="MaxHeight: 200"  />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer>
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="Relative Width" />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadSplitContainer>
-    </telerik:RadDocking>
-{{endregion}}
-
-As can be seen on **Figure 2**, even when split containers with fixed sizes are present, the remaining containers with proportional sizes will still resize accordingly.
-
-#### __Figure 4: Split container with fixed size among containers with proportional sizes__
-
-![Split container with fixed size among containers with proportional sizes](images/split-containers-fixed-widths-1.png)
-![Split container with fixed size among containers with proportional sizes](images/split-containers-fixed-widths-2.png)
-
->important When the **Orientation** of the parent **RadSplitContainer** is set to **Vertical**, only the **(Min/Max)Height** properties are taken into account. Similarly, when the orientation is **Horizontal**, the container uses only the **(Min/Max)Width** attached properties.
-
->When both fixed and proportional sizes are set for a given container, the fixed size will take precedence.
-
 ## Adding PaneGroups/SplitContainers to the RadSplitContainer Programmatically
 
 In order to add a pane group or another split container in the code-behind, you need to use the __RadSplitContainer__'s __Items__ collection. 

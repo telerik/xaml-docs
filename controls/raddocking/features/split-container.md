@@ -34,8 +34,6 @@ This topic covers the following features of the __RadSplitContainer__:
 
 * [Setting the RelativeSize of the RadSplitContainer](#setting-the-relativesize-of-the-radsplitcontainer)
 
-* [Setting the (Min/Max)Width and (Min/Max)Height](#setting-the-minmaxwidth-and-minmaxheight)
-
 * [Adding PaneGroups/SplitContainers to the RadSplitContainer programmatically](#adding-panegroups/splitcontainers-to-the-radsplitcontainer-programmatically)
 
 * [Other important properties exposed by the RadSplitContainer](#other-important-properties-exposed-by-the-radsplitcontainer)
@@ -388,57 +386,6 @@ For this purpose you need to set the __RelativeSize__ attached property of the _
 ![Setting RelativeSize](images/Features_Panes_Tabbed_030.png)
 
 The default value is 200, 200.
-
-## Setting the (Min/Max)Width and (Min/Max)Height
-
-Since version **R2 2017**, you can set fixed sizes to a __RadSplitContainer__ by setting the following attached properties of the **ProportionalStackPanel** class:
-
-* **ChildWidth**
-
-* **ChildMinWidth**
-
-* **ChildMaxWidth**
-
-* **ChildHeight**
-
-* **ChildMinHeight**
-
-* **ChildMaxHeight**
-
-#### __[XAML] Example 14: Setting ProportionalStackPanel.ChildWidth__
-
-{{region xaml-raddocking-features-split-container_28}}
-	<telerik:RadDocking>
-        <telerik:RadSplitContainer InitialPosition="DockedBottom" Orientation="Horizontal">
-            <telerik:RadSplitContainer>
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="Relative Width"  />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer telerik:ProportionalStackPanel.ChildMaxWidth="200">
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="MaxHeight: 200"  />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer>
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="Relative Width" />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadSplitContainer>
-    </telerik:RadDocking>
-{{endregion}}
-
-As can be seen on **Figure 2**, even when split containers with fixed sizes are present, the remaining containers with proportional sizes will still resize accordingly.
-
-#### __Figure 4: Split container with fixed size among containers with proportional sizes__
-
-![Split container with fixed size among containers with proportional sizes](images/split-containers-fixed-widths-1.png)
-![Split container with fixed size among containers with proportional sizes](images/split-containers-fixed-widths-2.png)
-
->important When the **Orientation** of the **RadSplitContainer** is set to **Vertical**, only the **(Min/Max)Height** properties are taken into account. Similarly, when the orientation is **Horizontal**, the container uses only the **(Min/Max)Width** attached properties.
-
->When both fixed and proportional sizes are set for a given container, the fixed size will take precedence.
 
 ## Adding PaneGroups/SplitContainers to the RadSplitContainer Programmatically
 

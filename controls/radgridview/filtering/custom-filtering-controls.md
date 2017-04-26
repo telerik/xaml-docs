@@ -85,7 +85,7 @@ Here is an example of a custom filtering control that displays two date time pic
 	    <telerik:RadDatePicker Name="toDatePicker" Grid.Column="1" Grid.Row="1" Margin="2"/>
 	    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
 	      <telerik:RadButton Name="filterButton" Content="Filter" Click="OnFilter" Margin="2" Width="80"/>
-	      <telerik:RadButton Name="clearButton" Content="Clear" Click="OnClick" Margin="2" Width="80"/>
+	      <telerik:RadButton Name="clearButton" Content="Clear" Click="OnClear" Margin="2" Width="80"/>
 	    </StackPanel>
 	  </Grid>
 	</Border>

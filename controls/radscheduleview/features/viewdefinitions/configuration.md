@@ -303,9 +303,9 @@ The __GroupFilter__ property can be used when in a grouped scenario a given grou
          private Func<object, bool> groupFilter;
 
          public MyViewModel()
-        {
-            this.groupFilter = new Func<object, bool>(this.GroupFilterFunc);
-        }
+         {
+             this.groupFilter = new Func<object, bool>(this.GroupFilterFunc);
+         }
 
          public Func<object, bool> GroupFilter
          {

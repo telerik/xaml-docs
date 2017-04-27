@@ -37,7 +37,7 @@ Telerik __WPF controls__ support the following themes:
 
 * __Vista__
 
-* __Windows 7__
+* __Windows7__
 
 * __Transparent__
 
@@ -45,11 +45,13 @@ Telerik __WPF controls__ support the following themes:
 
 * __Windows8Touch__
 
-* __Office 2016__
+* __Office2016__
 
-* __Office 2013__
+* __Office2016Touch__
 
-* __Visual Studio 2013__
+* __Office2013__
+
+* __VisualStudio2013__
 
 * __Green__
 
@@ -217,7 +219,7 @@ Changing the application theme is similar to changing the theme of single contro
 
 
 
-# See Also
+## See Also
 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
 

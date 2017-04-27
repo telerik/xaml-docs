@@ -37,13 +37,25 @@ Telerik __WPF controls__ support the following themes:
 
 * __Vista__
 
-* __Windows 7__
+* __Windows7__
 
 * __Transparent__
 
 * __Windows8__
 
 * __Windows8Touch__
+
+* __Office2016__
+
+* __Office2016Touch__
+
+* __Office2013__
+
+* __VisualStudio2013__
+
+* __Green__
+
+* __Material__
 
 >The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller). The __WPF themes__ are embedded in the control assemblies.
 
@@ -207,7 +219,7 @@ Changing the application theme is similar to changing the theme of single contro
 
 
 
-# See Also
+## See Also
 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
 

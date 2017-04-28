@@ -12,8 +12,6 @@ position: 6
 
 The official Q1 2016 release of __UI for WPF__ brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
 
->important Тhe Green theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add __NoXaml__ binaries to your application.
-
 The following topic explains the specifics of the theme's color variations.
 
 * [Theme Color Variations](#theme-color-variations)

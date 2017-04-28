@@ -12,8 +12,6 @@ position: 5
 
 The official **R1 2017** release of UI for WPF includes a brand new **Office2016Touch** theme.
 
->important The __Office2016Touch__ theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
-
 __Office2016Touch__ is a variation of the [Office2016 theme]({%slug common-styling-appearance-office2016-theme%}), especially created to be suitable for touch interfaces and to provide larger and more easily accessible components. Part of the controls are simply larger, but some of them are redesigned for easier touch manipulation.
 
 The following topic explains the specifics of the theme's palette and features.

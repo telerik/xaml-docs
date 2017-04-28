@@ -120,3 +120,7 @@ The code snippet below illustrates how to attach to the DragDrop events:
 	Private Sub OnElementDragLeave(sender As Object, e As DragEventArgs)
 	    End Sub	
 {{endregion}}
+
+## See Also
+
+* [DragDropManager Migration]({%slug dragdropmanager-migration%})

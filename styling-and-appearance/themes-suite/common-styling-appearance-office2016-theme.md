@@ -12,8 +12,6 @@ position: 4
 
 The official R3 2016 release of UI for WPF includes a brand new __Office2016__ theme. 
 
->important The Office2016 theme can only be applied using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For this purpose you need to add NoXaml binaries to your application.
-
 The following topic explains the specifics of the theme's palette and features.
 
 * [Default theme colors](#default-theme-colors)

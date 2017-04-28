@@ -1086,7 +1086,7 @@ header, nav, section, article, aside, footer {
 	background: #F5F5F5;
 }
 .materialtheme-dividerbrush{
-	background: #000000;
+	background: #E1E1E1;
 }
 .materialtheme-markerbrush{
 	background: #000000;
@@ -1125,7 +1125,7 @@ header, nav, section, article, aside, footer {
 	background: #FFFFFFFF;
 }
 .materialtheme-dividersolidbrush{
-	background: #FFFFFF;
+	background: #E1E1E1;
 }
 /* END Theme Palette Color Styles */
 

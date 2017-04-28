@@ -10,7 +10,7 @@ position: 17
 
 # Wraparound
 
-The wraparound feature provides (infinite) horizontal panning to the __RadMap__ control which gives continuous experience as the user pans the viewport east or west. 
+The WrapAround feature provides infinite horizontal panning to the __RadMap__ control which gives continuous experience as the user pans the viewport east or west. 
 
 The feature is not enabled by default. To turn it on you can set the __WrapAround__ property of the RadMap to __True__.
 
@@ -27,7 +27,7 @@ The feature is not enabled by default. To turn it on you can set the __WrapAroun
 #### __Figure 1: Wraparound functionality enabled__
 ![](images/RadMap_Features_WrapAround_01.png)
 
-When the wraparound is enabled, the longitude of the map's viewport can exceed the valid geographical boundaries (from -180 to 180 degrees in the default Mercator projection) when you pan the viewport. The [Location Conversion](#location-conversion) section of this article explains how to convert shifted locations.
+When the wraparound is enabled, the longitude of the map's viewport can exceed the valid geographical boundaries (from -180 to 180 degrees in the default Mercator projection) when you pan the viewport. The [Location Conversion](#location-conversion) section of this article explains how to convert shifted locations to valid geographical boundaries (-180 to 180).
 
 >Services like __Geocode, Search, Routing__ use Longitude within the valid geographical boundaries.
 
@@ -57,12 +57,12 @@ RadMap exposes two methods which you can use to convert map coordinates.
 
 When the wraparound feature is enabled on the RadMap the built-in MiniMap also has this functionality turned on. But when you are using the MiniMap as a standalone control you have to explicitly set its __WrapAround__ property to __True__ in order to turn the feature on.
 
->The WrapAround property of the RadMap control that is linked to the minimap has a higher priority than the WrapAround property of the minimap.
-	
+>The WrapAround property of the RadMap control that is linked to the MiniMap has a higher priority than the WrapAround property of the MiniMap.
 	
 ## See Also
  * [Getting Started] ({%slug radmap-getting-started%})
  * [MiniMap] ({%slug radmap-features-mini-map%})
+ * [Wraparound with Virtualization in VisualizationLayer] ({%slug radmap-howto-wraparound-virtualization-visualizationlayer%})
  * [Search] ({%slug radmap-features-search%})
  * [Geocode] ({%slug radmap-features-geocode%})
  * [Routing] ({%slug radmap-features-routing%})

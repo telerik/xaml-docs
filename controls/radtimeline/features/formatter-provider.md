@@ -127,3 +127,7 @@ GetFormatters is used (CurrentIntervalSpan = 1), the current format is "HH"
 
 GetFormatters is used, the current format is "H:mm"
 ![timeline-formatter-provider-long-interval-format](images/timeline-formatter-provider-long-interval-format.png)
+
+## See Also
+
+* [Intervals Formatters]({%slug radtimeline-features-intervals-formatters%}) 

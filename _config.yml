@@ -981,6 +981,9 @@ navigation:
         position: 4
     "styling-and-appearance/how-to":
         title: "How To"
+    "mvvm-helpers":
+        title: "MVVM Helpers"
+        position: 23
 ## Common End
 
 ## Api Reference Start

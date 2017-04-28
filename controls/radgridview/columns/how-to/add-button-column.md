@@ -21,6 +21,8 @@ There are several ways to achieve this. Let's look at some of them.
 
 This approach involves inheriting __GridViewColumn__ and overriding __CreateCellElement__ method. In this method we create the button, if not already created, and set its properties:
 
+>important In order to automatically export a custom column, it should implement the **IExportableColumn** interface
+
 #### __C#__
 
 {{region cs-gridview-add-button-column_0}}

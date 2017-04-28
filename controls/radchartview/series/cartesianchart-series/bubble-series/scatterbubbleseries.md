@@ -84,7 +84,7 @@ The series supports all standard features exposed by all other categorical serie
 
 	Setting the PaletteMode to Series will apply different color for each series defined in the chart.
 
-* __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, all other bubbles will fade out. The default value of the property is “None”.
+* __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bubbles from all other series will fade out. The default value of the property is “None”.
 
 	#### __XAML__
 		<telerik:RadCartesianChart HoverMode="FadeOtherSeries">

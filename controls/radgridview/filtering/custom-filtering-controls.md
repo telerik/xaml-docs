@@ -85,7 +85,7 @@ Here is an example of a custom filtering control that displays two date time pic
 	    <telerik:RadDatePicker Name="toDatePicker" Grid.Column="1" Grid.Row="1" Margin="2"/>
 	    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
 	      <telerik:RadButton Name="filterButton" Content="Filter" Click="OnFilter" Margin="2" Width="80"/>
-	      <telerik:RadButton Name="clearButton" Content="Clear" Click="OnClick" Margin="2" Width="80"/>
+	      <telerik:RadButton Name="clearButton" Content="Clear" Click="OnClear" Margin="2" Width="80"/>
 	    </StackPanel>
 	  </Grid>
 	</Border>
@@ -350,8 +350,8 @@ Finally, you have to tell the column to use this custom filtering control like t
 	</telerik:RadGridView>
 {{endregion}}
 
-! In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should __additionally apply a template_. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
+>In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 
-# See Also
+## See Also
 
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

@@ -89,7 +89,7 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 	<telerik:RadGridView ItemsSource="{Binding}" />
 {{endregion}}
 
-**Example 2** suggests using a RadGridView, however the data virtualization is not specifically designed for this control. The controls that currently support data virtualization are __RadGridView__, __RadComboBox__, __RadTreeView__{% if site.site_name == 'WPF' %}, __RadCarousel__{% endif %}, {% if site.site_name == 'Silverlight' %}__RadCoverFlow__{% endif %} and __RadBook__.
+**Example 2** suggests using a RadGridView, however data virtualization can be used with other controls as well. The controls that currently support data virtualization are __RadGridView__, __RadComboBox__, __RadTreeView__{% if site.site_name == 'WPF' %}, __RadCarousel__{% endif %}, {% if site.site_name == 'Silverlight' %}__RadCoverFlow__{% endif %} and __RadBook__.
 
 >**Filtering** is only supported with **IQueryable** data sources.
 

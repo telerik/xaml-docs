@@ -18,7 +18,7 @@ __RadPdfViewer__'s command descriptors are wrappers of its predefined set of com
 The __CommandDescriptor__ class contains 2 public properties:
       
 
-* __IsEnabled__(Bolead): Gets or sets if the command is enabled.
+* __IsEnabled__(Boolean): Gets or sets if the command is enabled.
           
 
 * __Command__(ICommand): The command to be executed.

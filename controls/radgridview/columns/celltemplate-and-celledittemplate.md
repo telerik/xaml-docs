@@ -67,6 +67,8 @@ Although the example above illustrates defining either CellTemplate or CellEditT
 
 If you want to set a CellTemplate in code-behind, you can check [this help article]({%slug gridview-columns-defining-columns%}) for reference.
 
+>important When a CellEditTemplate is defined for a column, the default validation mechanism is bypassed as you're directly binding to the source property. If you need such validation, you should create a custom column editor instead as demonstrated [here]({%slug radgridview-howto-create-custom-editor%}).
+
 >tipHaving DataMemberBinding set to StartingDate, the aggregation, sorting, grouping and filtering operations on this column will be done based on the StartingDate property.
 
 >In case the user do not need to perform any aggregation, sorting, grouping or filtering operations for the column, then you can define [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) instead.

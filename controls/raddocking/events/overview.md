@@ -72,7 +72,7 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 	* __ElementSaving__ - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The passed event argument is of type __LayoutSerializationEventArgs__.
 	
-	* __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts saving. The passed event argument is of type __LayoutSerializationSavingEventArgs_.
+	* __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts saving. The passed event argument is of type __LayoutSerializationSavingEventArgs__.
 
 	* __ElementSaved__ - Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved. The passed event argument is of type __LayoutSerializationEventArgs__.
 

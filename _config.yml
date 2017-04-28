@@ -884,6 +884,10 @@ navigation:
     controls/radgridview/export/export-formats:
         title: Export Formats
         position: 6
+    controls/radvirtualgrid:
+        title: RadVirtualGrid
+    controls/radvirtualgrid/styling-and-appearance:
+        title: Styling and Appearance
 ## X1 Controls End
 
 ## Common Start

@@ -100,7 +100,8 @@ controls/radgridview/styles-and-templates/styling-mergedcell.md,
 controls/radgridview/style-selectors/merged-cells-style-selector,
 controls/radmap/features/wraparound,
 controls/radgridview/columns/trimmed-text-tooltips.md,
-controls/radtreelistview/features/trimmed-text-tooltips.md]
+controls/radtreelistview/features/trimmed-text-tooltips.md
+controls/radvirtualgrid]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

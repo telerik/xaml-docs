@@ -63,7 +63,7 @@ You can add items through the __Items__ collection of RadLayoutControl. The layo
 
 > By default the layout control and its groups are ordering their items with __horizontal orientation__. You can see how to change this in the [Orientation]({%slug radlayoutcontrol-features-orientation%}) help article.
 
-You can nest LayoutControlGroups into one another which allows you to separate the layout into different groups that can be arraned along with their items.
+You can nest LayoutControlGroups into one another which allows you to separate the layout into different groups that can be arranged along with their items.
 
 #### __[XAML] Example 3: Nesting LayoutControlGroups__
 {{region layoutcontrol-getting-started-03}}

@@ -100,6 +100,7 @@ RadTransitionControl	|	Telerik.Windows.Controls
 RadTreeListView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input
 RadTreeMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadTreeView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
+RadVirtualGrid | Telerik.Windows.Controls.VirtualGrid, Telerik.Windows.Controls, Telerik.Windows.Data
 RadWatermarkTextBox	|	Telerik.Windows.Controls
 RadWindow	|	Telerik.Windows.Controls.Navigation
 RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Data, Telerik.Windows.Controls.Navigation 

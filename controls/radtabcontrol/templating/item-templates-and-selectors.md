@@ -210,7 +210,7 @@ Create a __ContentSelector__ class deriving from the __DataTemplateSelector__ cl
 #### __C#__
 
 {{region radtabcontrol-item-templates-and-selectors_5}}
-	public class ContentSelector : Telerik.Windows.Controls.DataTemplateSelector
+	public class ContentSelector : Telerik.Windows.Controls.ConditionalDataTemplateSelector
 	{
 	}
 	{{endregion}}
@@ -233,7 +233,7 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 #### __C#__
 
 {{region radtabcontrol-item-templates-and-selectors_7}}
-	public class ContentSelector : Telerik.Windows.Controls.DataTemplateSelector
+	public class ContentSelector : Telerik.Windows.Controls.ConditionalDataTemplateSelector
 	{
 	    public override DataTemplate SelectTemplate(object item, DependencyObject container)
 	    {

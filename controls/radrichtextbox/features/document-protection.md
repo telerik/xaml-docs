@@ -73,7 +73,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 #### __[C#] Example 3: Create Collection of UserInfo objects__
 
 {{region radrichtextbox-features-document-protection_2}}
-	PermissionInfoCollection CurrentUsers = new List<UserInfo>() 
+	List<UserInfo> CurrentUsers = new List<UserInfo>() 
 	                {
 	                    new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
 	                    new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),

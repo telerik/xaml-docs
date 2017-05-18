@@ -51,11 +51,11 @@ RadGridView exposes a property - ValidatesOnDataErrors - that controls the way t
 
 * __InViewMode__: Denotes that RadGridView will perform validation only in view mode.
 
-* __InEditMode__: Denotes that RadGridView will perform validation only in edit mode, i.e., when the cell is leaving edit mode. If the RadGridView is initially loaded with an incorrect value, no error messages will be displayed.
+* __InEditMode__: Denotes that RadGridView will perform validation only in edit mode. If the RadGridView is initially loaded with an incorrect value, no error messages will be displayed.
 
 * __Default__: This is the default value. It combines the two previous ones - InViewMode | InEditMode. 
 
->Setting the __ValidateOnDataErrors__ property will not affect the UI validation provided by the __CellValidating__ and __RowValidating__ events.
+>Setting the __ValidatesOnDataErrors__ property will not affect the UI validation provided by the __CellValidating__ and __RowValidating__ events.
 
 
 {% if site.site_name == 'WPF' %}

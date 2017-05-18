@@ -14,14 +14,14 @@ __RtfFormatProvider__ allows for import of RTF documents and respectively export
 
 ## Export Settings
 
-__RtfFormatProvider__ exposes __ExportSettings__, which allow customization in how fields are exported.  The __ExportSettings__ property is of type __RtfExportSettings__ which have the following properties and events which you can use to customize the export.
+__RtfFormatProvider__ exposes __ExportSettings__, which allow customization in how fields are exported. The __ExportSetting__s property is of type RtfExportSettings which have the following properties and events:
 
-* __ExportImagesInCompatibilityMode__: A property of type __bool__ that gets or sets the export images in compatibility mode. You can use this options if the document will be used in older readers.
-* __ImageExporting__: This event can be handle in order to change the bytes and the extension of the image that will be exported.
-* __FieldResultMode__: A property of the __RtfExportSettings__. This property is an enumeration and it allows the following values:
-	* __Code__: Shows all fields codes in the current document
-	* __DisplayName__: Show all fields names in the current document
-	* __Result__: Replace the merge fields in your document with actual data from your recipient list
+* __ExportImagesInCompatibilityMode__: A property of type bool that gets or sets whether the images should be exported in compatibility mode. You can use this option when the document will be used in older readers.
+* __ImageExporting__: Handling this event allows you to change the bytes and the extension of the image before exporting it.
+* __FieldResultMode__: This property defines how the fields are exported in the RTF content. This property is an enumeration and it allows the following values:
+	* __Code__: Shows all fields codes in the current document.
+	* __DisplayName__: Show all fields names in the current document.
+	* __Result__: Replace the merge fields in your document with actual data from your recipient list.
 	
 #### __[C#] Example 1: Setting the ExportSettings of the PdfFormatProvider__
 {{region c#-radrichtextbox-import-export-rtf-settings_0}}
@@ -35,7 +35,7 @@ __RtfFormatProvider__ exposes __ExportSettings__, which allow customization in h
 
 ## Import Settings
 
-__RtfFormatProvider__ has __ImportSettings__, which provide an event - __FontSubstituting__, which allows you to handle the cases when the Rtf source specifies a __Font__ that is not available to the __RichTextBox__. This is particularly useful in __Silverlight__ when the __Font__ can be resolved only if it is among the default ones when you do not want to rely on it being installed on the client machine. __Example 4__ shows how you can subscribe to the event and handle it.
+Through the __ImportSettings__ of __RtfFormatProvider__ you can utilize the __FontSubstituting__ event. This event allows you to handle the cases when the Rtf source specifies a __Font__ that is not available to the __RichTextBox__. This is particularly useful in __Silverlight__ when the __Font__ can be resolved only if it is among the default ones when you do not want to rely on it being installed on the client machine. __Example 4__ shows how you can subscribe to the event and handle it.
 
 #### __[C#] Example 2: Setup Default DocxFormatProvider__
 {{region c#-radrichtextbox-import-export-rtf-settings_1}}

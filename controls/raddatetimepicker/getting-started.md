@@ -10,7 +10,7 @@ position: 3
 
 # Getting Started
 
-This tutorial will walk you through the creation of a sample application that contains RadGridView.
+This tutorial will walk you through the creation of a sample application that contains RadDateTimePicker.
 
 * [Assembly References](#assembly-references)
 * [Adding RadDateTimePicker to the Project](#adding-raddatetimepicker-to-the-project)
@@ -67,9 +67,7 @@ You can get the selected value using the following properties:
 
 * __SelectedDate__: The __Date__ part of the currently selected value. 
 
-* __SelectedTime__: The __TimeOfDay__ part of the currently selected value. 
-
-Here is an example of getting these properties:
+* __SelectedTime__: The __TimeOfDay__ part of the currently selected value.
 
 #### __[C#] Example 3: Getting the selected values__
 {{region cs-raddatetimepicke-getting-started_4}}
@@ -123,7 +121,7 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 		</Application.Resources>
 {{endregion}}
 
-__Figure 4__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
+__Figure 2__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
 	
 #### __Figure 2: RadDateTimePicker with the Windows8 theme__
 

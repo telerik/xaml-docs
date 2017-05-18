@@ -10,80 +10,73 @@ position: 3
 
 # Getting Started
 
-__RadDateTimePicker__ is a control that displays date and/or time representation, where the user can select a single value. __RadDateTimePicker__ is an advanced control providing full Expression Blend support. This topic will help you to quickly get started using the control. It will focus on the following:
+This tutorial will walk you through the creation of a sample application that contains RadDateTimePicker.
 
-* [Creating a RadDateTimePicker](#creating-a-raddatetimepicker)
-
-* [Working with the RadDateTimePicker control](#working-with-the-raddatetimepicker-control)
-
-* [Styles and Templates](#styles-and-templates)
+* [Assembly References](#assembly-references)
+* [Adding RadDateTimePicker to the Project](#adding-raddatetimepicker-to-the-project)
+* [Working with Selected Values](#working-with-selected-values)
+* [Setting a Theme](#setting-a-theme)
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug raddatetimepicke-visual-structure%}) of the __RadDateTimePicker__ control.
                  
-<!-- -->   
+## Assembly References
 
->In order to use __RadDateTimePicker__ control in your projects you have to add references to the following assemblies:
-1. __Telerik.Windows.Controls.Input.dll__
-2. __Telerik.Windows.Controls.dll__
+In order to use __RadDateTimePicker__ control in your projects you have to add references to the following assemblies:
 
-## Creating a RadDateTimePicker
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
 
-Open the Asset Library (Window->Assets) in Expression Blend and start writing the name of the __RadDateTimePicker__ in the search box.
-         
-![](images/dateTimePicker_getting_started_010.png)
+## Adding RadDateTimePicker to the Project
 
-Drag a __DateTimePicker__ on the artboard.
-         
-![](images/dateTimePicker_getting_started_020.png)
+You can add RadDateTimePicker to your application manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-The following snippet was generated for you in XAML:
+#### __[XAML] Example 1: Adding RadDateTimePicker in XAML__
 
->In order to create the __RadDateTimePicker__ control you have to include the following reference:
-_xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
-
-#### __XAML__
 {{region xaml-raddatetimepicke-getting-started_1}}
-	<telerik:RadDateTimePicker VerticalAlignment="Top"/>
+	<telerik:RadDateTimePicker />
 {{endregion}}
+
+>In order to create the __RadDateTimePicker__ control you have to include the following namespace declaration:
+	_xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
 
 You can also create the __RadDateTimePicker__ in code-behind:
 
-#### __C#__
+#### __[C#] Example 2: Adding RadDateTimePicker in code-behind__
+
 {{region cs-raddatetimepicke-getting-started_2}}
 	RadDateTimePicker radDateTimePicker = new RadDateTimePicker();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Adding RadDateTimePicker in code-behind__
+
 {{region vb-raddatetimepicke-getting-started_3}}
 	Dim radDateTimePicker As New RadDateTimePicker()
 {{endregion}}
 
-There are two things to pay attention to in the above code snippet. The first is the declaration of the Telerik.Windows.Controls namespace from Telerik.Windows.Controls.Input assembly and the second is the declaration of the __RadDateTimePicker__ control itself.
+If you run the application now you will see the default __RadDateTimePicker__ control with the default watermark content. Clicking on the control's drop down button will display a date and time representations from which you can select a single value.
 
-If you run your application now you will see the default __RadDateTimePicker__ control.  In the control's input box you will see the default watermark content. Clicking on the control's drop down button will display a date and time representations from which you can select a single value.
+#### __Figure 1: The RadDateTimePicker created by the code in Example 1__
 
->tipBy default, text input is enabled for the __RadDateTimePicker__, because you have the option to enter for instance "3 September" and the tooltip will update its value to suggest 9/3/2010.
+![RadDateTimePicker](images/dateTimePicker_getting_started_1.png)
+
+## Working with Selected Values
 
 You can get the selected value using the following properties:
 
-* __SelectedValue__ - gives you a __DateTime?__ representation of the selected date and time or null if no value has been selected.
+* __SelectedValue__: A __DateTime__ representation of the selected date and time or **null** if no value has been selected.
 
-* __SelectedDate__ - is the __DateTime?__ that corresponds to the user selected date or null, if no value has been selected. 
+* __SelectedDate__: The __Date__ part of the currently selected value. 
 
-* __SelectedTime__ - is of type __TimeSpan?__ and correspond to the selected time representation in the clock view of the control or null if no time has been selected. 
+* __SelectedTime__: The __TimeOfDay__ part of the currently selected value.
 
-Here is an example of getting these properties:
-
-#### __C#__
+#### __[C#] Example 3: Getting the selected values__
 {{region cs-raddatetimepicke-getting-started_4}}
 	DateTime? userSelectedValue = radDateTimePicker.SelectedValue;
 	DateTime? userSelectedDate = radDateTimePicker.SelectedDate;
 	TimeSpan? userSelectedTime = radDateTimePicker.SelectedTime;
 {{endregion}}
 
-
-
-#### __VB.NET__
+#### __[VB.NET] Example 3: Getting the selected values__
 
 {{region vb-raddatetimepicke-getting-started_5}}
 	Dim userSelectedValue As System.Nullable(Of DateTime) = radDateTimePicker.SelectedValue
@@ -91,11 +84,50 @@ Here is an example of getting these properties:
 	Dim userSelectedTime As System.Nullable(Of TimeSpan) = radDateTimePicker.SelectedTime
 {{endregion}}
 
->tipIf you want to set a specific value to be loaded to the control's input box you can bind the __SelectedValue__ property to your data.
+Normally you would want to bind the __SelectedValue__ property to your data as demonstrated in **Example 4**.
 
-## Working with the RadDateTimePicker control
+#### __[XAML] Example 4: Binding SelectedValue__
 
-In order to learn how to use the __RadDateTimePicker__ and what capabilities it holds, read the various topics that describe its features.
+{{region xaml-raddatetimepicke-getting-started_6}}
+	<telerik:RadDateTimePicker SelectedValue="{Binding Established}" />
+{{endregion}}
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Silverlight Controls Examples](http://demos.telerik.com/silverlight/){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadDateTimePicker__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Input__
+
+__Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 5: Merge the ResourceDictionaries__  
+{{region xaml-raddatetimepicke-getting-started_7}}
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+{{endregion}}
+
+__Figure 2__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
+	
+#### __Figure 2: RadDateTimePicker with the Windows8 theme__
+
+![RadDateTimePicker with Windows8 theme](images/dateTimePicker_getting_started_2.png)
+
+## See Also
 
 * [Use the control as a date picker or time picker independently]({%slug raddatetimepicker-features-input-modes%})
 
@@ -105,22 +137,4 @@ In order to learn how to use the __RadDateTimePicker__ and what capabilities it 
 
 * [Enhance the parsing mechanism]({%slug raddatetimepicker-events%})
 
-* Customize the [time]({%slug raddatetimepicker-features-clock-items%}) and [date]({%slug raddatetimepicker-features-date-items%}) items 
-
-* For populating the clock with custom clock items through binding read more [here]({%slug raddatetimepicker-features-clock-items%}).
-
-## Styles and Templates
-
-Read the [Styles and Templates]({%slug raddatetimepicker-styling-overview%}) section which is entirely dedicated to styling and templating the __RadDateTimePicker__ control.
-
-# See Also
-
- * [Overview]({%slug raddatetimepicker-overview%})
-
- * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
-
- * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
-
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
- * [Events]({%slug raddatetimepicker-events%})
+* [Populating the clock with custom clock items]({%slug raddatetimepicker-features-clock-items%})

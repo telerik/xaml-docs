@@ -17,7 +17,7 @@ __RtfFormatProvider__ makes it easy to import and export __RadDocument__ to/from
 
 All you have to do in order to use __RtfFormatProvider__ is to add references to:
       
-* __Telerik.Windows.Documents.dll__
+* __Telerik.Windows.Documents.FormatProviders.Rtf.dll__
   
 ## Import
 

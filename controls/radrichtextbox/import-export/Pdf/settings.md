@@ -10,7 +10,7 @@ position: 0
 
 # Settings
 
-__PdfFormatProvider__ allows for import of PDF documents and respectively export of RadRichTextBox to PDF. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
+__PdfFormatProvider__ allows for export of PDF documents and respectively export of RadRichTextBox to PDF. Additionally, the export settings provide modification options. The current article outlines the available settings.
 
 ## Export Settings
 

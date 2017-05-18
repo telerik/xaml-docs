@@ -14,7 +14,7 @@ __TxtFormatProvider__ makes it easy to import and export __RadDocument__ to/from
 
 To use __TxtFormatProvider__, you should add references to:
 	
-* __Telerik.Windows.Documents.FormatProviders.Txt.dll__
+* __Telerik.Windows.Documents.dll__
         
 ## Import
 

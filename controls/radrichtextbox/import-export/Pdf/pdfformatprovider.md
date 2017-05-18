@@ -23,7 +23,7 @@ In order to export a document to PDF you need to use the __Export()__ method of 
 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export the document to PDF.
         
->The PdfFormatProvider class of RadRichTextBox is located in the **Telerik.Windows.Documents.Flow.FormatProviders.Pdf.Export namespace**.
+>The PdfFormatProvider class of RadRichTextBox is located in the **Telerik.Windows.Documents.FormatProviders.Pdf namespace**.
 
 #### __[C#] Example 1: Export to PDF file__
 {{region cs-radrichtextbox-import-export-pdf-pdfformatprovider_0}}

@@ -11,8 +11,8 @@ module Jekyll
             site.pages.each do |page|
                 category = page.data['category']
 
-				includedInNavigation = page.data['navigation_visible']
-				next if includedInNavigation.to_s.empty? == false & !includedInNavigation
+		includedInNavigation = page.data['navigation_visible']
+		next if includedInNavigation.to_s.empty? == false & !includedInNavigation
                 next if page.data['publish'] == false
                 next unless category
 

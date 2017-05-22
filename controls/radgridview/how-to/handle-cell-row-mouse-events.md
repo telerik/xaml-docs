@@ -16,7 +16,7 @@ This article will demonstrate how to handle RadGridView's [CellLoaded](#cellload
 
 ## CellLoaded Event
 
-The **CellLoaded** event fires anytime a cell appears in the view port.
+The **CellLoaded** event fires anytime a cell appears in the viewport.
 
 The **CellLoaded** event handler receives two arguments:
 
@@ -70,7 +70,7 @@ The **CellLoaded** event handler receives two arguments:
 
 ## CellUnloaded event
 
-The **CellUnloaded** event occurs anytime a cell disappears from the view port.
+The **CellUnloaded** event occurs anytime a cell disappears from the viewport.
 
 The **CellUnloaded** event handler receives two arguments:
 
@@ -97,7 +97,7 @@ A common scenario in which the CellUnloaded can be used is to remove the handler
 
 ## RowLoaded Event
 
-The **RowLoaded** event fires anytime a row appears in the view port.
+The **RowLoaded** event fires anytime a row appears in the viewport.
 
 The **RowLoaded** event handler receives two arguments:
 
@@ -146,7 +146,7 @@ The **RowLoaded** event handler receives two arguments:
 
 ## RowUnloaded event
 
-The **RowUnloaded** event occurs anytime a row disappears from the view port.
+The **RowUnloaded** event occurs anytime a row disappears from the viewport.
 
 The **RowUnloaded** event handler receives two arguments:
 

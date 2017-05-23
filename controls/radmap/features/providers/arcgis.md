@@ -59,5 +59,5 @@ Also the __ArcGisMapProvider__ allows the user to change the map mode using the 
 
 ![Rad Map Features Providers ArcGIS Config](images/RadMap_Features_Providers_ArcGIS_Config.png)
 
-# See Also
- * [Bing Map Provider]({%slug radmap-features-providers-bing-map%})
+## See Also
+ * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

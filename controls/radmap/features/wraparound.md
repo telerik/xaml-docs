@@ -63,6 +63,4 @@ When the wraparound feature is enabled on the RadMap the built-in MiniMap also h
  * [Getting Started] ({%slug radmap-getting-started%})
  * [MiniMap] ({%slug radmap-features-mini-map%})
  * [Wraparound with Virtualization in VisualizationLayer] ({%slug radmap-howto-wraparound-virtualization-visualizationlayer%})
- * [Search] ({%slug radmap-features-search%})
- * [Geocode] ({%slug radmap-features-geocode%})
- * [Routing] ({%slug radmap-features-routing%})
+ * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

@@ -18,19 +18,19 @@ To see the fixes and features included in our latest official release please ref
 
 * __BingMapProvider, BingRouteProvider, BingSearchProvider, BingGeocodeProvider are deleted.__
 	
-	The providers use the old BING SOAP services which will be stopped June 2017. Instead use the new [REST map provider]({%slug radmap-features-providers-bing-rest-map%}). 
+	The providers use the old Bing SOAP services which will be stopped in June 2017. Instead, you can use the new [REST map provider]({%slug radmap-features-providers-bing-rest-map%}). 
 	
-	BingMapProvider's can be easility replaced with __BingRestMapProvider__ using the same Bing Key. BingRestMapProvider is REST services based and displays the same image map tiles the BingMapProvider does.
+	The BingMapProvider can be easility replaced with __BingRestMapProvider__ using the same Bing Key. BingRestMapProvider is REST services based and displays the same image map tiles the BingMapProvider does.
 	
 	BingRouteProvider and BingGeocodeProvider can be replaced with __BingRestMapProvider__.
 	
-	BingSearchProvider has no replacement currently in RadMap. This is because BING stop the SOAP Search API in June 30 2017 and they also have no current replacement for search. They might release new REST based search API as stated in [this forum post](https://social.msdn.microsoft.com/Forums/en-US/65650056-822d-463a-b519-b7bf01413f6f/how-to-search-near-by-restaurants-in-bing-maps?forum=bingmapsservices).
+	BingSearchProvider has no replacement currently in RadMap. This is because Bing stops the SOAP Search API in June 30 2017 and they also have no current replacement for search. They might release a new REST based search API as stated in [this forum post](https://social.msdn.microsoft.com/Forums/en-US/65650056-822d-463a-b519-b7bf01413f6f/how-to-search-near-by-restaurants-in-bing-maps?forum=bingmapsservices).
 
 * __BingMapTrafficProvider is deleted.__
 	
-	This is due to limitation in the Bing Maps developer API terms of use. Also the service which stays behind this provider might be stopped at some point, so if you use RadMap with old version (before R2 2017), this provider might also stop work.
+	This is due to a limitation in the Bing Maps developer API terms of use. Also the service which stays behind this provider might be stopped at some point, so if you use RadMap with old version (before R2 2017), this provider might also stop working.
 
-	Currently there is no direct replacement of BingMapTrafficProvider. Instead, you can use BING REST Traffic API and retrieve traffic information. Then you can use the data and display map objects over RadMap. You can check the [Using the REST Services with .NET](https://msdn.microsoft.com/en-us/library/jj819168.aspx) MSDN tutorial.
+	Currently there is no direct replacement of BingMapTrafficProvider. Instead, you can use Bing REST Traffic API and retrieve traffic information. Then you can use the data and display map objects over RadMap. You can check the [Using the REST Services with .NET](https://msdn.microsoft.com/en-us/library/jj819168.aspx) MSDN tutorial.
 
 ## Q1 2014
 

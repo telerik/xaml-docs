@@ -10,7 +10,7 @@ position: 5
 
 # UriImageProvider
 
-RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingMapProvider and OpenStreetMapProvider.
+RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider.
       
 Assuming that images with names osm_10.png, osm_11.png, ..., osm_14.png are embedded as resources within the application assembly, you can initialize the UriImageProvider like this:        
 

@@ -38,23 +38,23 @@ Here is a list of the most important common properties shared by all map provide
 
 ## Bing Maps
 
-The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingMapProvider__ (SOAP imagery service) or __BingRestMapProvider__ (RESTful imagery service) class. In order to create an instance of the __BingMapProvider__ you have to use the third overload of its constructor. In this way you can easily pass the required parameters - map mode, labels visibility and a __Bing Maps Key__. The most important of them is the __Bing Maps Key__. Without supplying a valid key you won't be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [this article](http://msdn.microsoft.com/en-us/library/ee681900.aspx).        
+The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingRestMapProvider__ (RESTful imagery service) class. In order to create an instance of the __BingRestMapProvider__ you can use the third overload of its constructor. This way you can easily pass the required parameters - map mode, labels visibility and __Bing Maps Key__. The most important of them is the __Bing Maps Key__. Without supplying a valid key you won't be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read the [Accessing the Control Using a Bing Maps Key](http://msdn.microsoft.com/en-us/library/ee681900.aspx) MSDN article.
 
 Here is an example of a __BingMapProvider__ definition:        
 
 #### __XAML__
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
-			<telerik:BingMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
+			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
 
 #### __C#__
-	BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
+	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
 	this.radMap.Provider = bingMap;
 
 #### __VB__
-	Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
+	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
 	Me.radMap.Provider = bingMap
 
 Here is a snapshot of the map that appears:
@@ -92,7 +92,7 @@ Empty provider is a provider which doesn't connect to any real imagery services 
 
 ## UriImageProvider
 
-RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingMapProvider and OpenStreetMapProvider. You can either use it with single image for all zoom levels, or you can specify an image for every distinct zoom level.        
+RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider. You can either use it with single image for all zoom levels, or you can specify an image for every distinct zoom level.        
 
 >tip To learn more about the UriImageProvider [read here]({%slug radmap-features-uriimageprovider%}).   
 
@@ -100,17 +100,12 @@ RadMap provides support for single image provider through the __UriImageProvider
 
 The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers) can be used via the __ArcGisMapProvider__ class. Currently the ArcGIS map provider support 6 modes which can be set using Mode property:        
 
-1. Aerial
-
-2. Physical
-
-3. Shaded Relief
-
-4. Street
-
-5. Terrain
-
-6. Topographic
+* Aerial
+* Physical
+* Shaded Relief
+* Street
+* Terrain
+* Topographic
 
 #### __XAML__
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
@@ -133,9 +128,7 @@ Here is a snapshot of the map that appears:
 
 ![Rad Map Features Providers 04](images/RadMap_Features_Providers_04.png)
 
-# See Also
+## See Also
  * [Empty provider]({%slug radmap-features-empty-provider%})
- * [Search]({%slug radmap-features-search%})
- * [Geocode]({%slug radmap-features-geocode%})
- * [Routing]({%slug radmap-features-routing%})
+ * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
  * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

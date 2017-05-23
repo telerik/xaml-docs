@@ -79,10 +79,10 @@ Here is a sample code snippet that demonstrates zoom level customization:
 {{region radmap-howto-custom-zoom-levels_1}}
 	private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
 	private string VEKey;
-	private BingMapProvider provider;
+	private BingRestMapProvider provider;
 	public MainPage()
 	{
-	    this.provider = new BingMapProvider(MapMode.Aerial, true, this.VEKey);
+	    this.provider = new BingRestMapProvider(MapMode.Aerial, true, this.VEKey);
 	    this.RadMap1.Provider = provider;
 	    this.RadMap1.InitializeCompleted += new EventHandler(RadMap1_InitializeCompleted);
 	}
@@ -109,9 +109,9 @@ Here is a sample code snippet that demonstrates zoom level customization:
 {{region radmap-howto-custom-zoom-levels_2}}
 	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
 	Private VEKey As String
-	Private provider As BingMapProvider
+	Private provider As BingRestMapProvider
 	Public Sub New()
-	 Me.provider = New BingMapProvider(MapMode.Aerial, True, Me.VEKey)
+	 Me.provider = New BingRestMapProvider(MapMode.Aerial, True, Me.VEKey)
 	 Me.RadMap1.Provider = provider
 	 Me.RadMap1.InitializeCompleted += New EventHandler(RadMap1_InitializeCompleted)
 	End Sub

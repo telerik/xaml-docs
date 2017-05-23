@@ -166,7 +166,7 @@ You can set the dynamic source to a new instance of the *MapDynamicSource* and c
 	public MainPage()
 	{
 	  InitializeComponent();
-	  this.radMap.Provider = new BingMapProvider(MapMode.Aerial, true, "--Your Key here--"); 
+	  this.radMap.Provider = new BingRestMapProvider(MapMode.Aerial, true, "--Your Key here--"); 
 	  this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	}
 {{endregion}}
@@ -175,7 +175,7 @@ You can set the dynamic source to a new instance of the *MapDynamicSource* and c
 {{region radmap-features-dynamic-layer_4}}
 	Public Sub New()
 		InitializeComponent()
-		Me.radMap.Provider = New BingMapProvider(MapMode.Aerial, True, "--Your Key here--")
+		Me.radMap.Provider = New BingRestMapProvider(MapMode.Aerial, True, "--Your Key here--")
 		Me.dynamicLayer.DynamicSource = New MapDynamicSource()
 	End Sub
 {{endregion}}

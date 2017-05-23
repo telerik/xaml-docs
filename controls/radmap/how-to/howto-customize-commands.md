@@ -85,10 +85,10 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 {{region radmap-howto-customize-commands_1}}
 	private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
 	private string VEKey = "set-your-BingMaps-Key-here";
-	private BingMapProvider provider;
+	private BingRestMapProvider provider;
 	private void SetProvider()
 	{
-	    this.provider = new BingMapProvider(MapMode.Aerial, true, this.VEKey);
+	    this.provider = new BingRestMapProvider(MapMode.Aerial, true, this.VEKey);
 	
 	    this.provider.Commands.Clear();
 	    this.AddCustomCommandAction(this.provider, "Restaurants");
@@ -96,12 +96,12 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 	    this.AddCustomCommandAction(this.provider, "Museums");
 	    this.RadMap1.Provider = provider;
 	}
-	private void AddCustomCommandAction(BingMapProvider provider, string poi)
+	private void AddCustomCommandAction(BingRestMapProvider provider, string poi)
 	{
 	    string commandText = string.Format("Find {0}", poi);
 	    string commandName = string.Format("Find{0}Command", poi);
 	    CommandDescription commandDescription = new CommandDescription();
-	    commandDescription.Command = new RoutedUICommand(commandText, commandName, typeof(BingMapProvider));
+	    commandDescription.Command = new RoutedUICommand(commandText, commandName, typeof(BingRestMapProvider));
 	    commandDescription.CommandParameter = poi;
 	    commandDescription.DataTemplate = this.LayoutRoot.Resources["CustomCommandDataTemplate"] as DataTemplate;
 	    string imagePath = string.Format(ImagePathFormat, poi);
@@ -120,20 +120,20 @@ Here is a sample code snippet that demonstrates custom __RoutedUICommand__ usage
 {{region radmap-howto-customize-commands_2}}
 	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
 	Private VEKey As String = "set-your-BingMaps-Key-here"
-	Private provider As BingMapProvider
+	Private provider As BingRestMapProvider
 	Private Sub SetProvider()
-	 Me.provider = New BingMapProvider(MapMode.Aerial, True, Me.VEKey)
+	 Me.provider = New BingRestMapProvider(MapMode.Aerial, True, Me.VEKey)
 	 Me.provider.Commands.Clear()
 	 Me.AddCustomCommandAction(Me.provider, "Restaurants")
 	 Me.AddCustomCommandAction(Me.provider, "Bars")
 	 Me.AddCustomCommandAction(Me.provider, "Museums")
 	 Me.RadMap1.Provider = provider
 	End Sub
-	Private Sub AddCustomCommandAction(provider As BingMapProvider, poi As String)
+	Private Sub AddCustomCommandAction(provider As BingRestMapProvider, poi As String)
 	 Dim commandText As String = String.Format("Find {0}", poi)
 	 Dim commandName As String = String.Format("Find{0}Command", poi)
 	 Dim commandDescription As New CommandDescription()
-	 commandDescription.Command = New RoutedUICommand(commandText, commandName, GetType(BingMapProvider))
+	 commandDescription.Command = New RoutedUICommand(commandText, commandName, GetType(BingRestMapProvider))
 	 commandDescription.CommandParameter = poi
 	 commandDescription.DataTemplate = TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate)
 	 Dim imagePath As String = String.Format(ImagePathFormat, poi)

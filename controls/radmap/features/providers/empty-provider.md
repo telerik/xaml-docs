@@ -35,8 +35,6 @@ Here is an example of creating an __EmptyProivder__ and setting it to the __RadM
 	Me.radMap.Provider = provider
 {{endregion}}
 
-# See Also
+## See Also
  * [Providers Overview]({%slug radmap-features-providers%})
- * [Search]({%slug radmap-features-search%})
- * [Geocode]({%slug radmap-features-geocode%})
- * [Routing]({%slug radmap-features-routing%})
+ * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

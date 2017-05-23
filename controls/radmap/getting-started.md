@@ -37,7 +37,7 @@ After adding references to the aforementioned dlls, you can declare a new __RadM
 
 The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the __RadMap__ control supports a few providers out of the box:        
 
-* __Bing Maps (with SOAP and Rest)__
+* __Bing Maps__
 
 * __OpenStreet Maps__
 
@@ -55,7 +55,7 @@ This example will use __Bing Maps__ as its provider. In order to do that you hav
 {{region radmap-getting-started_4}}
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:RadMap.Provider>
-	        <telerik:BingMapProvider ApplicationId="Bing_Map_Key"
+	        <telerik:BingRestMapProvider ApplicationId="Bing_Map_Key"
 	                                 Mode="Aerial"
 	                                 IsLabelVisible="True"/>
 	    </telerik:RadMap.Provider>
@@ -64,15 +64,15 @@ This example will use __Bing Maps__ as its provider. In order to do that you hav
 
 #### __C#__
 {{region radmap-getting-started_2}}
-	this.radMap.Provider = new BingMapProvider( MapMode.Aerial, true, "key" );
+	this.radMap.Provider = new BingRestMapProvider( MapMode.Aerial, true, "key" );
 {{endregion}}
 
 #### __VB.NET__
 {{region radmap-getting-started_3}}
-	Me.radMap.Provider = New BingMapProvider(MapMode.Aerial, True, "key")
+	Me.radMap.Provider = New BingRestMapProvider(MapMode.Aerial, True, "key")
 {{endregion}}
 
-Using the third overload of the __BingMapProvider's__ constructor, allows you to pass some starting parameters:        
+Using the third overload of the __BingRestMapProvider's__ constructor, allows you to pass some starting parameters:        
 
 * the starting view mode of the map - aerial.
 

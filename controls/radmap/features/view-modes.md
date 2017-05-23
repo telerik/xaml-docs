@@ -10,10 +10,6 @@ position: 4
 
 # View Modes
 
-
-
-## 
-
 The __RadMap__ allows you to bring the map in several view modes. After setting the desired view mode, the user is also capable of changing the view, depending on his/her needs. He/She can do it via the button with the eye-like icon, which represents the command bar.
         
 
@@ -44,7 +40,7 @@ Here is an example:
 #### __C#__
 
 {{region radmap-features-view-modes_0}}
-	BingMapProvider bingMap = new BingMapProvider( MapMode.Aerial, true, "key" );
+	BingRestMapProvider bingMap = new BingRestMapProvider(MapMode.Aerial, true, "key");
 	//or
 	bingMap.Mode = MapMode.Aerial;
 	bingMap.IsLabelVisible = true;
@@ -55,7 +51,7 @@ Here is an example:
 #### __VB.NET__
 
 {{region radmap-features-view-modes_1}}
-	Dim bingMap As New BingMapProvider(MapMode.Aerial, True, "key")
+	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
 	'or
 	bingMap.Mode = MapMode.Aerial
 	bingMap.IsLabelVisible = True

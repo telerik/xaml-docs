@@ -14,14 +14,14 @@ The purpose of this tutorial is to show you how to implement "Copy Drag".
 
 ## Copy Item When Dragging from One TreeView to Another 
 
-Using the new __DragDrop__ mode, you can control the __DropAction__ of a drop operation. You can do so through the __TreeViewDragDropOptions__ object as described in the [DragDrop](7FC973CF-4B65-4682-99E0-024EE62925C7#TreeViewDragDropOptions) tutorial.		
+Using the new __DragDrop__ mode, you can control the __DropAction__ of a drop operation. You can do so through the __TreeViewDragDropOptions__ object as described in the [DragDrop]({%slug radtreeview-features-drag-and-drop%}) tutorial.		
 
 In this section you will see how to implement copy drag, when dragging items from one data-bound treeview to another. On the next figure you can see the initial staging. 
 ![Rad Tree View-DnDCopy Tree To Tree](images/RadTreeView-DnDCopyTreeToTree.png)
 
 There are two treeviews populated with some hierarchical data. On the left side is the source treeview (the one from which the items will be copied). On the right side is the target treeview (the one in which the items will be dropped).
 
->tipBoth __RadTreeViews__ are data bound to a collection of business objects. For more information, read the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic.		  
+>tip Both __RadTreeViews__ are data bound to a collection of business objects. For more information, read the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic.		  
 
 Here is the initial XAML: 
 

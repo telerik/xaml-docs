@@ -64,10 +64,10 @@ Telerik __WPF controls__ support the following themes:
 In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.
       
 
->You can reed more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.
+>You can read more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.
         
 
-Now you are ready to use the themes either for a single control or for all controls in your application scope.
+You are now ready to use the themes either for a single control or for all controls in your application scope.
 
 >The following examples use the __Vista__ theme.
         

@@ -223,7 +223,9 @@ The __CellEditEnded__ occurs when cell validation is passed successfully and new
 
 * __OldData__ - Gets the old data.
 
->The __EditAction__ property is a __GridViewEditAction__ enumeration, which exposes the following values:
+>important If the edited cell's column has a **CellEditTemplate** set, the **e.NewData** property will always be **null**. You can get the new value through the **e.EditingElement** parameter instead.
+
+The __EditAction__ property is a __GridViewEditAction__ enumeration, which exposes the following values:
 
 * __Cancel__
 

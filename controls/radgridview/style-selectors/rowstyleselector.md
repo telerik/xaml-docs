@@ -10,9 +10,9 @@ position: 2
 
 # RowStyleSelector
 
-This article illustrates how to conditionally style rows through RadGridView's [RowStyleSelector](#rowstyleselector) and [AlternateRowStyleSelector](alternaterowstyleselector) properties.
+This article illustrates how to conditionally style rows through RadGridView's [RowStyleSelector](#rowstyleselector) and [AlternateRowStyleSelector](#alternaterowstyleselector) properties.
 		
->tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
+>tip Learn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 
 ## RowStyleSelector
 		  

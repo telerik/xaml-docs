@@ -69,9 +69,9 @@ It contains the following parts:
 
 	* __ListRootContainer__ 
 
-		* __HorizontalLine__ - is of type __Rectangle__ and is used when creating the line of the __RadTreeView__. See __IsLineEnabled__ property [here](763685D2-AB90-47E5-977F-526A5EA137C4). 
+		* __HorizontalLine__ - is of type __Rectangle__ and is used when creating the line of the __RadTreeView__. See __IsLineEnabled__ property [here]({%slug radtreeview-features-lines-support%}). 
 
-		* __VerticalLine__ - is of type __Rectangle__ and is used when creating the line of the __RadTreeView__. See __IsLineEnabled__ property [here](763685D2-AB90-47E5-977F-526A5EA137C4). 
+		* __VerticalLine__ - is of type __Rectangle__ and is used when creating the line of the __RadTreeView__. See __IsLineEnabled__ property [here]({%slug radtreeview-features-lines-support%}). 
 
 		* __Expander__ - is of type __ToggleButton__ and represents the element used for collapse/expand of the item. You can set the style of the element by using the __ExpanderStyle__ property of the __RadTreeView__, read more [here]({%slug radtreeview-styling-and-appearance-styling-expander%}). 
 

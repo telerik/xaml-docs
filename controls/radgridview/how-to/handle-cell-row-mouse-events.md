@@ -1,14 +1,14 @@
 ---
-title: Handle Cell/Row Mouse Events
-page_title: Handle Cell/Row Mouse Events
-description: Handle Cell/Row Mouse Events
+title: Handle Cell\Row Mouse Events
+page_title: Handle Cell\Row Mouse Events
+description: Handle Cell\Row Mouse Events
 slug: gridview-how-to-handle-cell-row-mouse-events
 tags: handle,cell,row,mouse,events
 published: True
 position: 6
 ---
 
-# Handle Cell/Row Mouse Events
+# Handle Cell\Row Mouse Events
 
 This article will demonstrate how to handle RadGridView's [CellLoaded](#cellloaded-event) & [RowLoaded](#rowloaded-event) events to add handlers for the various mouse events to the control's cell and row elements. The [CellUnloaded](#cellunloaded-event) and [RowUnloaded](#rowunloaded-event) events can in turn be used to remove those handlers in order to avoid memory leaks.
 
@@ -113,7 +113,7 @@ The **RowLoaded** event handler receives two arguments:
 
 **Example 1** uses the RowLoaded event to handle the right-click on a **GridViewRow**.
 
-#### __[C#] Example 3: Handling RowLoaded/RowUnloaded__
+#### __[C#] Example 3: Handling RowLoaded\RowUnloaded__
 
 	private void RadGridView_RowLoaded(object sender, RowLoadedEventArgs e)  
 	{  
@@ -130,7 +130,7 @@ The **RowLoaded** event handler receives two arguments:
 		MessageBox.Show($"Right-clicked {club.Name}!");
 	}
 
-#### __[VB.NET] Example 3: Handling RowLoaded/RowUnloaded__
+#### __[VB.NET] Example 3: Handling RowLoaded\RowUnloaded__
 
 	Private Sub RadGridView_RowLoaded(ByVal sender As Object, ByVal e As RowLoadedEventArgs)
 		If TypeOf e.Row Is GridViewRow AndAlso Not (TypeOf e.Row Is GridViewNewRow) Then

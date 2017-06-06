@@ -380,6 +380,8 @@ The final step is to make our Router the current one of the Diagram. This is don
 Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:
 ![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)
 
+> If you have the gliding connectors of a shape enabled avoid using the StartPoint and EndPoint properties of the corresponding connection to calculate the route in the GetRoutePoints method. This could create a circular dependency between the ConnectionPoints and the Start/EndPoint property, thus leading to an unexpected behavior. Instead, when using gliding connectors and a custom router, use the Bounds property of the Target and Source shapes of the connection - example: `connection.Target.Bounds;`.
+
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Layout]({%slug raddiagram-features-diagram-layout%})

@@ -1,38 +1,33 @@
 ---
-title: RangeSeries
-page_title: RangeSeries
-description: RangeSeries
-slug: radchartview-series-rangeseries
-tags: rangeseries
+title: RangeSplineSeries
+page_title: RangeSplineSeries
+description: RangeSplineSeries
+slug: radchartview-series-areaseries-rangesplineseries
+tags: rangesplineseries
 published: True
-position: 1
+position: 5
 ---
 
-# RangeSeries
+# RangeSplineSeries
 
-The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-areaseries%}) but you can specify a minimum and maximum for each data point. Basically, the series displays a range of data by plotting two numeric values per data point.
-
-* [Declaratively Defined Series](#declaratively-defined-series)
-* [Properties](#properties)
-* [Data Binding](#data-binding)
-* [Styling the Series](#styling-the-series)
+The __RangeSplineSeries__ behaves like an [SplineAreaSeries]({%slug radchartview-series-splineareaseries%}) but you can specify a minimum and maximum for each data point. By default the colors of the line and the area are the same.
 
 ## Declaratively Defined Series
 
-You can use the definition from __Example 1__ to display a RangeSeries:  
+You can use the definition from __Example 1__ to display a RangeSplineSeries:
 
-#### __[XAML] Example 1: Declaring a RangeSeries in XAML__
-{{region radchartview-series-rangeseries_0}}
-	<telerik:RadCartesianChart Palette="Windows8">
+#### __[XAML] Example 1: Declaring a RangeSplineSeries in XAML__
+{{region radchartview-series-areaseries-rangesplineseries_0}}
+	<telerik:RadCartesianChart Palette="Windows8">            
 		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>            
 		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
+			<telerik:LinearAxis/>
 		</telerik:RadCartesianChart.VerticalAxis>
 		<telerik:RadCartesianChart.Series>
-			<telerik:RangeSeries>
-				<telerik:RangeSeries.DataPoints>
+			<telerik:RangeSplineSeries>
+				<telerik:RangeSplineSeries.DataPoints>
 					<telerik:RangeDataPoint Category="January" High="5" Low="0"/>
 					<telerik:RangeDataPoint Category="February" High="7" Low="2"/>
 					<telerik:RangeDataPoint Category="March" High="6" Low="4"/>
@@ -40,25 +35,23 @@ You can use the definition from __Example 1__ to display a RangeSeries:
 					<telerik:RangeDataPoint Category="May" High="4" Low="3"/>
 					<telerik:RangeDataPoint Category="June" High="9" Low="7"/>
 					<telerik:RangeDataPoint Category="July" High="3" Low="1"/>
-				</telerik:RangeSeries.DataPoints>
-			</telerik:RangeSeries>
+				</telerik:RangeSplineSeries.DataPoints>
+			</telerik:RangeSplineSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __Figure 1: RangeSeries visual appearance__  
-![radchartview-series-rangeseries](images/radchartview-series-rangeseries.png)
- 
-## Properties
+#### __Figure 1: RangeSplineSeries visual appearance__  
+![radchartview-series-areaseries-rangesplineseries](images/radchartview-series-rangesplineseries.png)
 
-The following list represents the most important properties of the RangeSeries.
+## Properties
 
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
 * __HighBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the high value of the data point.
 * __LowBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
-* __Fill__: A property of type __Brush__ that gets or sets the color of the RangeSeries area.
+* __Fill__: A property of type __Brush__ that gets or sets the color of the RangeSplineSeries area.
 * __DashArray__: A property of type __DoubleCollection__ that gets or sets the dash pattern applied to the stroke of the area.
-* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the RangeSeries area.
+* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the RangeSplineSeries area.
 * __AreaShapeStyle__: A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
 * __StrokeShapeStyle__: A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property accepts a style that targets an object of type Path.
 * __StrokeMode__: A property of type __RangeSeriesStrokeMode__ that gets or sets the mode that determines what part of the series will be stroked. The stroke mode is an enumeration and it allows the following values:  
@@ -69,11 +62,11 @@ The following list represents the most important properties of the RangeSeries.
 
 ## Data Binding
 
-You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properties of the RangeSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properties of the RangeSplineSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __[C#] Example 2: Defining the view model__
 
-{{region radchartview-series-rangeseries_1}}
+{{region radchartview-series-areaseries-rangesplineseries_1}}
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -87,23 +80,24 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 		new PlotInfo() { Category = "January", HighValue = 5, LowValue = 0},
 		//....
 	};
-{{endregion}}	
+{{endregion}}		
+	
 
-#### __[XAML] Example 3: Specify a RangeSeries in XAML__
-{{region radchartview-series-rangeseries_2}}
-	<telerik:RangeSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
+#### __[XAML] Example 3: Specify a RangeSplineSeries in XAML__
+{{region radchartview-series-areaseries-rangesplineseries_2}}
+	<telerik:RangeSplineSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
 {{endregion}}
-
+	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
 ## Styling the Series
 
-You can see how to style range series using different properties in the [RangeSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
+You can see how to style range series using different properties in the [RangeSplineSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
 
-Additionally, you can use the Palette property of the chart to change the colors of the RangeSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
+Additionally, you can use the Palette property of the chart to change the colors of the RangeSplineSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})
- * [Area Series Overview]({%slug radchartview-series-areaseries%})
+ * [Spline Area Series Overview]({%slug radchartview-series-splineareaseries%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

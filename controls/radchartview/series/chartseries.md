@@ -20,7 +20,7 @@ Concrete series types are available for specific charts. For example, there is a
 |**Area Series**<br/>[AreaSeries]({%slug radchartview-series-areaseries%})<br/>[StepAreaSeries]({%slug radchartview-series-stepareaseries%})<br/>[SplineAreaSeries]({%slug radchartview-series-splineareaseries%})<br/>[ScatterAreaSeries]({%slug radchartview-series-scatterareaseries%})<br/>[ScatterSplineAreaSeries]({%slug radchartview-series-scattersplineareaseries%})|**Area Series**<br/>[PolarAreaSeries]({%slug radchartview-series-polarareaseries%})<br/>[RadarAreaSeries]({%slug radchartview-series-radarareaseries%})|**Doughnut Series**<br/>[DoughtnutSeries]({%slug radchartview-series-doughnutseries%})|
 |**Point Series**<br/>[PointSeries]({%slug radchartview-series-point%})<br/>[ScatterPointSeries]({%slug radchartview-series-scatterpointseries%})|**Point Series**<br/>[PolarPointSeries]({%slug radchartview-series-polarpointseries%})<br/>[RadarPointSeries]({%slug radchartview-series-radarpointseries%})|
 |**Financial Series**<br/>[OhlcSeries]({%slug radchartview-series-ohlcseries%})<br/>[CandlesticSeries]({%slug radchartview-series-candlestickseries%})|
-|**Bar Series**<br/>[BarSeries]({%slug radchartview-series-barseries%})<br/>[RangeBarSeries]({%slug radchartview-series-rangebarseries%})|
+|**Bar Series**<br/>[BarSeries]({%slug radchartview-series-barseries%})<br/>[RangeBarSeries]({%slug radchartview-series-barseries-rangebarseries%})|
 |**Bubble Series**<br/>[BubbleSeries]({%slug radchartview-series-bubbleseries%})<br/>[ScatterBubbleSeries]({%slug radchartview-series-scatterbubbleseries%})|
 
 ## Events

@@ -93,7 +93,7 @@ You can use the ValueBinding and CategoryBinding properties of the SplineAreaSer
 
 #### __[XAML] Example 3: Specify a SplineAreaSeries in XAML__
 {{region radchartview-series-splineareaseries_2}}	
-	 <telerik:SplineAreaSeries ItemsSource="{Binding Data}" CategoryBinding="Category" ValueBinding="Value"/>
+	 <telerik:SplineAreaSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value"/>
 {{endregion}}
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.

@@ -34,29 +34,29 @@ The __DataProvider__ functionality of __RadVirtualGrid__ exposes various mechani
 
 #### __Figure 1: RadVirtualGrid with applied custom DataProvider__
 
-![](images/RadVirtualGrid_Features_CustomDataProvider_01.png)
+![RadVirtualGrid with applied custom DataProvider](images/RadVirtualGrid_Features_CustomDataProvider_01.png)
 
 By inheriting the default __DataProvider__, the following methods and properties are exposed for customization.
 
 ### Properties
 
-* __InitialRowCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__
+* __InitialRowCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
 
-* __InitialColumnCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__
+* __InitialColumnCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
 
 * __ShouldPushEditValueToGrid__: When an editor is provided for the [Editing]({%slug virtualgrid-editing%}) operation, its edited value needs to be manually pushed to underlying source and to the grid through its __PushCellValue__ method. If the __ShouldPushEditValueToGrid__ property is overriden and returns a __True__ value, updating the control with the edited property value will be done automatically.
 
 ### Methods
 
-* __OnCellEditEnded__: The method that is called when the __CellEditEnded__ event is raised
+* __OnCellEditEnded__: The method that is called when the __CellEditEnded__ event is raised.
 
-* __OnCellValueNeeded__: The method that is called when the __CellValueNeeded__ event is raised
+* __OnCellValueNeeded__: The method that is called when the __CellValueNeeded__ event is raised.
 
-* __OnEditorNeeded__: The method that is called when the __EditorNeeded__ event is raised
+* __OnEditorNeeded__: The method that is called when the __EditorNeeded__ event is raised.
 
-* __OnEditorValueChanged__: The method that is called when the __EditorValueChanged__ event is raised
+* __OnEditorValueChanged__: The method that is called when the __EditorValueChanged__ event is raised.
 
-* __OnHeaderValueNeeded__: The method that is called when the __HeaderValueNeeded__ event is raised
+* __OnHeaderValueNeeded__: The method that is called when the __HeaderValueNeeded__ event is raised.
 
 ## See Also
 

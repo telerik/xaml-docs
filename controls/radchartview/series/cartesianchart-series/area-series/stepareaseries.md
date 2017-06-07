@@ -93,7 +93,7 @@ You can use the ValueBinding and CategoryBinding properties of the StepAreaSerie
 
 #### __[XAML] Example 3: Specify a StepAreaSeries in XAML__
 {{region radchartview-series-stepareaseries_2}}	
-	 <telerik:StepAreaSeries ItemsSource="{Binding Data}" CategoryBinding="Category" ValueBinding="Value"/>
+	 <telerik:StepAreaSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value"/>
 {{endregion}}
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.

@@ -10,10 +10,11 @@ position: 3
 
 # Custom DataProvider
 
-The __DataProvider__ mechanism of __RadVirtualGrid__ various mechanisms for extending its default behavior. This can be achieved by inheriting the __DataProvider__ object and overriding its methods or properties.
+The __DataProvider__ functionality of __RadVirtualGrid__ exposes various mechanisms for extending the default behavior. This can be achieved by inheriting the __DataProvider__ object and overriding its methods or properties.
 
 #### __[C#] Example 1: Defining a Custom DataProvider__
 
+{{region radvirtualgrid-features_customdataprovider_0}}
 	public class CustomDataProvider: DataProvider
     {
         public CustomDataProvider(IEnumerable source)
@@ -22,11 +23,18 @@ The __DataProvider__ mechanism of __RadVirtualGrid__ various mechanisms for exte
  
         }
     }
+{{endregion}}
 
 #### __[C#] Example 2: Applying the Custom DataProvider__
 
-	this.VirtualGrid.DataProvider =
-                new CustomDataProvider(this.myCollection);
+{{region radvirtualgrid-features_customdataprovider_1}}
+	this.VirtualGrid.DataProvider = 
+                new CustomDataProvider(Club.GetClubs());
+{{endregion}}
+
+#### __Figure 1: RadVirtualGrid with applied custom DataProvider__
+
+![](images/RadVirtualGrid_Features_CustomDataProvider_01.png)
 
 By inheriting the default __DataProvider__, the following methods and properties are exposed for customization.
 

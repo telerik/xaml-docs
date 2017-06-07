@@ -14,8 +14,8 @@ This tutorial will walk you through the required steps for using __RadVirtualGri
 
 * [Assembly References](#assembly-references)
 * [Adding RadVirtualGrid to the Project](#adding-radvirtualgrid-to-the-project)
-* [Populating with Data](#populating-with-data)
 * [Setting Initial Row and Column Count](#setting-initial-row-and-column-count)
+* [Populating with Data](#populating-with-data)
 * [Resetting the Capacity to the Initial Row and Column Count](#resetting-the-capacity-to-the-initial-row-and-column-count)
 * [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
 
@@ -30,8 +30,24 @@ In order to use __RadVirtualGrid__ in your application, you need to add referenc
 ## Adding RadVirtualGrid to the Project
 
 #### __[XAML] Example 1: Defining RadVirtualGrid Declaratively__
-
+{{region radvirtualgrid-gettingstarted_0}}
 	 <telerik:RadVirtualGrid x:Name="VirtualGrid"/>
+{{endregion}}
+## Setting Initial Row and Column Count
+
+__RadVirtualGrid__ needs to be initially populated with fixed amount of rows and columns. The below listed properties are exposed for achieving this. An important note is that when additional rows or columns are  added at runtime, the values of these properties remain unmodified, but the capacity of the control increases. More information on inserting rows and columns can be found in the [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%}) topic.
+
+* __InitialRowCount__: Gets or sets the amount of initially loaded rows
+
+* __InitialColumnCount__: Gets or sets the amount of initially loaded columns
+
+#### __[XAML] Example 2: Setting the InitialRowCount and InitialColumnCount properties__
+
+{{region radvirtualgrid-gettingstarted_1}}
+	<telerik:RadVirtualGrid x:Name="VirtualGrid" 
+                                InitialColumnCount="5" 
+                                InitialRowCount="5"/>
+{{endregion}}
 
 ## Populating with Data
 
@@ -47,6 +63,19 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 
 * __Value__: Through it the needed value for the respective cell can be set
 
+#### __[C#] Example 3: Populating RadVirtualGrid with data through the CellValueNeeded event__
+
+{{region radvirtualgrid-gettingstarted_2}}
+	private void virtualGrid_CellValueNeeded(object sender, 
+            Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
+        {
+            e.Value = String.Format("{0}.{1}", e.RowIndex, e.ColumnIndex);
+        }
+{{endregion}}
+
+#### __Figure 1: RadVirtualGrid populated with data__
+![](images/RadVirtualGrid_GettingStarted_01.png)
+
 ### HeaderValueNeeded
 
 Through this event the appearance of the row and column headers can be controlled. The event arguments provide the following properties:
@@ -57,13 +86,7 @@ Through this event the appearance of the row and column headers can be controlle
 
 * __Value__: The actual value to be applied to the Header
 
-## Setting Initial Row and Column Count
 
-The control needs to be initially populated with fixed amount of rows and columns. The below listed properties are exposed for achieving this. An important note is that when additional rows or columns are  added at runtime, the values of these properties remain unmodified, but the capacity of the control increases. More information on inserting rows and columns can be found in the [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%}) topic.
-
-* __InitialRowCount__: Gets or sets the amount of initially loaded rows
-
-* __InitialColumnCount__: Gets or sets the amount of initially loaded columns
 
 ## Resetting the Capacity to the Initial Row and Column Count
 
@@ -77,10 +100,12 @@ As inserting rows and columns does not affect the __InitialRowCount__ and __Init
 
 Instead of using the __CellValueNeeded__ event, __RadVirtualGrid__ provides an option to populate its data through the built-in __DataProvider__ mechanism. The __DataProvider__ object accepts an IEnumerable through its constructor and can be applied to __RadVirtualGrid__ through its relevant property.
 
-#### __[C#] Example 2: Applying a DataProvider__
+#### __[C#] Example 4: Applying a DataProvider__
 
+{{region radvirtualgrid-gettingstarted_3}}
 	this.VirtualGrid.DataProvider = 
     	new Telerik.Windows.Controls.VirtualGrid.DataProvider(this.myCollection);
+{{endregion}}
 
 > The __DataProvider__ mechanism is intended to cover basic scenarios for populating the control with data. For extending the default behavior, __RadVirtualGrid__ provides support for [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%})
 

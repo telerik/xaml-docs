@@ -14,11 +14,51 @@ __RadVirtualGrid__ provides pinning mechanism for both its rows and columns. Thr
 
 * __PinRowTop(int index)__: Pins a row at a given index on the top
 
+#### __[C#] Example 1: Calling the PinRowTop method__
+
+{{region radvirtualgrid-features_pinnedrowsandcolumns_0}}
+	virtualGrid.PinRowTop(1);
+{{endregion}}
+
+#### __Figure 1: RadVirtualGrid with pinned row on the top__
+
+![](images/RadVirtualGrid_Features_PinnedRowsColumns_01.png)
+
 * __PinRowBotton(int index)__: Pins a row at a given index to the bottom
+
+#### __[C#] Example 2: Calling the PinRowBottom method__
+
+{{region radvirtualgrid-features_pinnedrowsandcolumns_1}}
+	virtualGrid.PinRowBottom(1);
+{{endregion}}
+
+#### __Figure 2: RadVirtualGrid with pinned row on the bottom__
+
+![](images/RadVirtualGrid_Features_PinnedRowsColumns_02.png)
 
 * __PinColumnLeft(int index)__: Pins a column at a given index to the left
 
+#### __[C#] Example 3: Calling the PinColumnLeft method__
+
+{{region radvirtualgrid-features_pinnedrowsandcolumns_2}}
+	virtualGrid.PinColumnLeft(1);
+{{endregion}}
+
+#### __Figure 3: RadVirtualGrid with pinned column on the left__
+
+![](images/RadVirtualGrid_Features_PinnedRowsColumns_03.png)
+
 * __PinColumnRight(int index)__: Pins a column at a given index to the right
+
+#### __[C#] Example 4: Calling the PinColumnRight method__
+
+{{region radvirtualgrid-features_pinnedrowsandcolumns_3}}
+	virtualGrid.PinColumnRight(1);
+{{endregion}}
+
+#### __Figure 4: RadVirtualGrid with pinned column on the left__
+
+![](images/RadVirtualGrid_Features_PinnedRowsColumns_04.png)
 
 Unpinning an already pinned row or column can be achieved through the __UnpinRow__ and __UnpinColumn__ methods:
 

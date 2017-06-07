@@ -12,9 +12,9 @@ position: 0
 
 __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its performance and overall user experience intact. Thus, the control does not utilize the common templating mechanism provided by WPF and does not add its visual elements to the visual tree. It provides a set of properties for customizing its appearance. 
 
-* __Background__: Sets the Background of the cell
+* __Background__: Sets the Background of the cell.
 
-* __Foreground__: Sets the Foreground of the cell
+* __Foreground__: Sets the Foreground of the cell.
 
 * __ColumnWidth__: Sets the Width of the Columns. The property is of type double.
 
@@ -33,7 +33,7 @@ __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its 
 The styling options of the control support applying __Brushes__ to various of its elements. They are described in the following figure. 
 
 #### __Figure 1: RadVirtualGrid's Visual Elements__ 
-![](images/RadVirtualGrid_Styling_01.png)
+![RadVirtualGrid's Visual Elements](images/RadVirtualGrid_Styling_01.png)
 
 The full set of properties is listed below.
 

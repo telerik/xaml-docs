@@ -19,7 +19,7 @@ The user has control over the visualization of the tooltip information and the p
 
 ## Defining Tooltip Behavior
 
-The __ChartToolTipBehavior__ is should be added in the __Behaviors__ collection of the chart.
+The __ChartToolTipBehavior__ should be added in the __Behaviors__ collection of the chart.
 
 #### __[XAML] Example 1: Defining a tooltip behavior__
 {{region radchart-features-tooltip_8}}

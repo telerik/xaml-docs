@@ -57,11 +57,11 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 
 ### CellValueNeeded
 
-* __CellIndex__: Provides information regarding the index of the currently loaded cell
+* __CellIndex__: Provides information regarding the index of the currently loaded cell.
 
-* __RowIndex__: Provides information regarding the index of the currently loaded row
+* __RowIndex__: Provides information regarding the index of the currently loaded row.
 
-* __Value__: Through it the needed value for the respective cell can be set
+* __Value__: Through it the needed value for the respective cell can be set.
 
 #### __[C#] Example 3: Populating RadVirtualGrid with data through the CellValueNeeded event__
 
@@ -74,17 +74,17 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 {{endregion}}
 
 #### __Figure 1: RadVirtualGrid populated with data__
-![](images/RadVirtualGrid_GettingStarted_01.png)
+![RadVirtualGrid populated with data](images/RadVirtualGrid_GettingStarted_01.png)
 
 ### HeaderValueNeeded
 
 Through this event the appearance of the row and column headers can be controlled. The event arguments provide the following properties:
 
-* __HeaderOrientation__: Enumeration through which has two values: __Horizontal__ and __Vertical__. The first one sets the value to the Row Header, whereas the second one sets the value to the Column Header
+* __HeaderOrientation__: Enumeration through which has two values: __Horizontal__ and __Vertical__. The first one sets the value to the Row Header, whereas the second one sets the value to the Column Header.
 
-* __Index__: Sets the index of the Header
+* __Index__: Sets the index of the Header.
 
-* __Value__: The actual value to be applied to the Header
+* __Value__: The actual value to be applied to the Header.
 
 
 
@@ -92,7 +92,7 @@ Through this event the appearance of the row and column headers can be controlle
 
 As inserting rows and columns does not affect the __InitialRowCount__ and __InitialColumnCount__ properties, __RadVirtualGrid__ supports resetting its capacity to the values that are set to them. This can be done through the following methods:
 
-* __Reset()__: Resets the capacity of the control to the values of the __InitialRowCount__ and __InitialColumnCount__ properties
+* __Reset()__: Resets the capacity of the control to the values of the __InitialRowCount__ and __InitialColumnCount__ properties.
 
 * __Reset(int rowCount, int columnCount)__: Through this overload of the Reset method, the capacity of __RadVirtualGrid__ can be reset to values different from the ones initially set to the __InitialRowCount__ and __InitialColumnCount__ properties. Furthermore, the two properties will be updated accordingly.
 

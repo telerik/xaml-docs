@@ -96,6 +96,8 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 	<telerik:ScatterAreaSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
 {{endregion}}	
 
+>See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
+
 ## Styling the Series
 
 You can see how to style scatter area series using different properties in the [ScatterAreaSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.

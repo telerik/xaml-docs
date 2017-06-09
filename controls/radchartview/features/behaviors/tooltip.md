@@ -51,7 +51,7 @@ The __ChartToolTipBehavior__ should be added in the __Behaviors__ collection of 
 At this point if you hover a data point visual a tooltip with basic information about the data point is displayed.
 
 #### __Figure 1: Default tooltip example__
-![](images/chartview-features-charttooltipbehavior-0.png)
+![Rad Chart View-Chart Tooltip Behavior 0](images/chartview-features-charttooltipbehavior-0.png)
 
 ## Customizing the Tooltip
 
@@ -78,7 +78,7 @@ To customize the apperance of the tooltip you can use the __TooltipTemplate__ pr
 {{endregion}}
 
 #### __Figure 2: Custom tooltip example__
-![](images/chartview-features-charttooltipbehavior-1.png)
+![Rad Chart View-Chart Tooltip Behavior 1](images/chartview-features-charttooltipbehavior-1.png)
 	
 ## Example
 
@@ -391,7 +391,7 @@ The example uses couple of custom binding converters to pretify the visualizatio
 {{endregion}}
 
 #### __Figure 3: Example result__
-![](images/chartview-features-charttooltipbehavior-2.png)
+![Rad Chart View-Chart Tooltip Behavior 2](images/chartview-features-charttooltipbehavior-2.png)
 
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

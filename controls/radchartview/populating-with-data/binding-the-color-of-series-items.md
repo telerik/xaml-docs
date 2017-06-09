@@ -10,28 +10,19 @@ position: 4
 
 # Binding the Color of Series Items
 
+This topic demonstrates how to create charts, where each individual item, has its color bound to a property of the underlying data object.
 
-
-In this topic we will demonstrate how to create charts, where each individual item, has its color bound to a property of the underlying DataObject.
-      
-
-The following chart series will be used for this article:
-      
+There are small differences in the approaches used with the different series types. For the sake of the example the following series will be used. They cover the possible approaches.
 
 * [Bar Series](#bar-series)
-
 * [Scatter Point Series](#scatter-point-series)
-
 * [Pie Series](#pie-series)
 
-## Bar Series
-      
+## Bar Series      
 
-Here is our sample Bar Chart XAML declaration:
-        
+Here is a sample bar chart defined in Xaml.
 
-#### __XAML__
-
+#### __[XAML] Example 1: BarSeries definition__
 {{region radchartview-populating-with-data-binding-the-color-of-series-items_0}}
 	<telerik:RadCartesianChart x:Name="chart" Width="400" Height="300">
 	    <telerik:RadCartesianChart.VerticalAxis>
@@ -41,19 +32,118 @@ Here is our sample Bar Chart XAML declaration:
 	        <telerik:CategoricalAxis/>
 	    </telerik:RadCartesianChart.HorizontalAxis>
 	    <telerik:RadCartesianChart.Series>
-	        <telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">            
-	        </telerik:BarSeries>
+	        <telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}" />            
 	    </telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>	
+{{endregion}}
+
+You can see the data model used for this example in the [Example Data Model Definition](#example-data-model-definition) section.
+
+There are couple approaches which could be used to bind the color from the data object to the fill of the data point visual (the bar).
+	
+* __Use the DefaultVisualStyle property of the series.__ You can use this to target the default visual of the series and bind its properties to the data model object.
+	
+	Using the data model from this article's example you can bind the Color property from the ChartData class.
+
+	#### __[XAML] Example 2: Setting BarSeries DefaultVisualStyle__
+	{{region radchartview-populating-with-data-binding-the-color-of-series-items_5}}
+		<telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:BarSeries.DefaultVisualStyle>
+				<Style TargetType="Border">
+					<Setter Property="Background" Value="{Binding DataItem.Color}" />
+				</Style>
+			</telerik:BarSeries.DefaultVisualStyle>
+		</telerik:BarSeries>
+	{{endregion}}
+	
+* __Use the PointTemplate property of the series.__ In this case you can define a DataTemplate containing a custom visual element for the data points and bind its color property (Background or Fill for example) to the property from the data model. 
+	
+	Using the data model from this article's example you can bind the Color property from the ChartData class.
+
+	#### __[XAML] Example 3: Setting BarSeries PointTemplate__
+	{{region radchartview-populating-with-data-binding-the-color-of-series-items_1}}
+		<telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:BarSeries.PointTemplate>
+				<DataTemplate>
+					<Rectangle Fill="{Binding DataItem.Color}"/>
+				</DataTemplate>
+			</telerik:BarSeries.PointTemplate>
+		</telerik:BarSeries>
+	{{endregion}}
+	
+	The DataItem in the binding's path points to the custom ChartData model.
+
+>tip The __recommended__ approach for binding the color is to use the __DefaultVisualStyle__. This is because the PointTemplate creates an additional ContentPresenter for each data point visual which means a bit more rendering time for the framework. 
+
+You can use those approaches with most series types of the chart.
+
+#### __Figure 1: Different colored bars__
+![Result](images/RadChartView-binding_colors_0.png)
+
+## Scatter Point Series      
+
+The ScatterPointSeries can be customized using the same manner as with the [BarSeries](#bar-series). There are two small differences which could be applied.
+
+* When using __DefaultVisualStyle__ you will need to target a different UI element - a Path in this case. And also you will need to define the size (Width and Height) of the Path.
+
+	#### __[XAML] Example 4: Setting Point Series DefaultVisualStyle__
+	{{region radchartview-populating-with-data-binding-the-color-of-series-items_5}}
+		<telerik:ScatterPointSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:ScatterPointSeries.DefaultVisualStyle>
+				<Style TargetType="Path">
+					<Setter Property="Fill" Value="{Binding DataItem.Color}" />
+					<Setter Property="Width" Value="10" />
+					<Setter Property="Height" Value="10" />
+				</Style>
+			</telerik:ScatterPointSeries.DefaultVisualStyle>
+		</telerik:ScatterPointSeries>
 	{{endregion}}
 
+* When using __PointTemplate__ the most common shape you will use is an ellipse so you can define an Ellipse element in the template. 
+	
+	#### __[XAML] Example 5: Setting Point Series PointTemplate__
+	{{region radchartview-populating-with-data-binding-the-color-of-series-items_2}}
+		<telerik:ScatterPointSeries XValueBinding="Category" YValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:ScatterPointSeries.PointTemplate>
+				<DataTemplate>
+					<Ellipse Width="10" Height="10" Fill="{Binding DataItem.Color}"/>
+				</DataTemplate>
+			</telerik:ScatterPointSeries.PointTemplate>
+		</telerik:ScatterPointSeries>
+	{{endregion}}
 
+You can see the data model used for this example in the [Example Data Model Definition](#example-data-model-definition) section.
+	
+#### __Figure 2: Different colored points__
+![Result](images/RadChartView-binding_colors_1.png)
 
-And here is our example data object:
-        
+## Pie Series      
 
-#### __C#__
+Similar to the [BarSeries](#bar-series) the PieSeries uses a default visual style to customize the appearance of the pie slices. The Style should target a Path element and it is applied to the __DefaultSliceStyle__ property of the series.
 
+#### __[XAML] Example 6: Setting Pie Series default visual style__
+{{region radchartview-populating-with-data-binding-the-color-of-series-items_4}}
+	<telerik:RadPieChart x:Name="chart">
+	    <telerik:PieSeries ValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:PieSeries.DefaultSliceStyle>
+				<Style TargetType="Path">
+					<Setter Property="Fill" Value="{Binding DataItem.Color}" />
+				</Style>
+			</telerik:PieSeries.DefaultSliceStyle>
+		</telerik:PieSeries>
+	</telerik:RadPieChart>
+{{endregion}}
+
+You can see the data model used for this example in the [Example Data Model Definition](#example-data-model-definition) section.
+
+#### __Figure 3: Different colored pie slices__
+![Rad Chart View-binding colors 2](images/RadChartView-binding_colors_2.png)
+
+## Example Data Model Definition
+
+This section contains the data model used for the series examples in this article and also how to set it up.
+
+#### __[C#] Example 7: Defining the data model__
 {{region radchartview-populating-with-data-binding-the-color-of-series-items_0}}
 	public class ChartData : INotifyPropertyChanged
 	{
@@ -87,12 +177,9 @@ And here is our example data object:
 	        }
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __[VB.NET] Example 7: Defining the data model__
 {{region radchartview-populating-with-data-binding-the-color-of-series-items_0}}
 	Public Class ChartData
 		Implements INotifyPropertyChanged
@@ -134,31 +221,11 @@ And here is our example data object:
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End Sub
 	End Class
-	{{endregion}}
+{{endregion}}
 
+Let's create some data so we can test the result.
 
-
-In order to create a binding between the bar series items and a property of the ItemSource items we have to create a PointTemplate. In this point template we need to create a bindingbetween the Fill of the Bar and the fore mentioned property, which in our case is named Color. This is done like this:
-
-#### __XAML__
-
-{{region radchartview-populating-with-data-binding-the-color-of-series-items_1}}
-	<telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
-	    <telerik:BarSeries.PointTemplate>
-	        <DataTemplate>
-	            <Rectangle Fill="{Binding DataItem.Color}"/>
-	        </DataTemplate>
-	    </telerik:BarSeries.PointTemplate>
-	</telerik:BarSeries>
-	{{endregion}}
-
-
-
-Let's create some data so we can test the result:
-        
-
-#### __C#__
-
+#### __[C#] Example 8: Populating the data collection__
 {{region radchartview-populating-with-data-binding-the-color-of-series-items_1}}
 	public MainWindow()
 	{
@@ -184,12 +251,9 @@ Let's create some data so we can test the result:
 	
 	    return result;
 	}
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __[VB.NET] Example 8: Populating the data collection__
 {{region radchartview-populating-with-data-binding-the-color-of-series-items_1}}
 	Public Sub New()
 		InitializeComponent()
@@ -210,74 +274,8 @@ Let's create some data so we can test the result:
 	
 		Return result
 	End Function
-	{{endregion}}
-
-
-
-And here is the final result:
-        ![Result](images/RadChartView-binding_colors_0.png)
-
-## Scatter Point Series
-      
-
-The only difference between color binding the series items of Bar series and Scatter Point series is the PointTemplate.
-        
-
-In the case Scatter Point series we will use an ellipse:
-        
-
-#### __XAML__
-
-{{region radchartview-populating-with-data-binding-the-color-of-series-items_2}}
-	<telerik:ScatterPointSeries XValueBinding="Category" YValueBinding="Value" ItemsSource="{Binding}">
-	    <telerik:ScatterPointSeries.PointTemplate>
-	        <DataTemplate>
-	            <Ellipse Width="10" Height="10" Fill="{Binding DataItem.Color}"/>
-	        </DataTemplate>
-	    </telerik:ScatterPointSeries.PointTemplate>
-	</telerik:ScatterPointSeries>
-	{{endregion}}
-
-
-
-The result:
-        ![Result](images/RadChartView-binding_colors_1.png)
-
-## Pie Series
-      
-
-The approach with Pie Series is slighly different because you have to create a Style that targets the Path
-          of which the different pie slices are made.
-        
-
-#### __XAML__
-
-{{region radchartview-populating-with-data-binding-the-color-of-series-items_3}}
-	<Style x:Key="PieSliceStyle" TargetType="Path">
-	    <Setter Property="Fill" Value="{Binding DataItem.Brush}" />
-	</Style
-	{{endregion}}
-
-
-
-In order to apply the Style you can use the __DefaultSliceStyle__ property of the series.
-        
-
-#### __XAML__
-
-{{region radchartview-populating-with-data-binding-the-color-of-series-items_4}}
-	<telerik:RadPieChart x:Name="chart">
-	    <telerik:PieSeries DefaultSliceStyle="{StaticResource PieSliceStyle}" 
-	                        ValueBinding="Value"
-	                        ItemsSource="{Binding}"/>
-	</telerik:RadPieChart>
-	{{endregion}}
-
-
-
-The result:
-        ![Rad Chart View-binding colors 2](images/RadChartView-binding_colors_2.png)
-
-# See Also
-
+{{endregion}}
+		
+## See Also
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
+ * [Customizing CartesianChart Series]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})

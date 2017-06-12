@@ -11,25 +11,32 @@ position: 0
 # Overview
 
 {% if site.site_name == 'WPF' %}
-![radautocompletebox-overview-WPF](images/radautocompletebox-overview-WPF.png)
+![RadAutoCompleteBox for WPF](images/radautocompletebox-overview-WPF.png)
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-![radautocompletebox-overview-SL](images/radautocompletebox-overview-SL.png)
+![RadAutoCompleteBox for SL](images/radautocompletebox-overview-SL.png)
 {% endif %}
 
-Thank you for choosing Telerik __RadAutoCompleteBox__!
+Thank you for choosing Progress® Telerik® __RadAutoCompleteBox__!
 
-__RadAutoCompleteBox__ is a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control that provides a textbox for the users input and suggests possible matches based on that input. The control has a number of advanced features like autocomplete mode, keyboard navigation, virtualization for working with thousands of items in its ItemsSource, as well as full customization capabilities.
+__RadAutoCompleteBox__ is a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control that provides a textbox for the user's input and suggests possible matches based on that input. The control has a number of advanced features such as support for different autocomplete modes, keyboard navigation, virtualization for working with thousands of items in its ItemsSource, as well as full customization capabilities.
 
-![radautocompletebox-overview_2](images/radautocompletebox-overview_2.png)
+![RadAutoCompleteBox](images/radautocompletebox-overview_2.png)
 
-Key features:
+Here are some of the control's key features:
 
-* __AutoComplete__ – the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox supports different autocomplete modes - Suggest, Append, SuggestAppend. [Read more.]({%slug radautocompletebox-features-autocomplete%})
+* __Different autocomplete modes__: The {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox supports different autocomplete modes - Suggest, Append, SuggestAppend. [Read more]({%slug radautocompletebox-features-autocomplete%})
 
-* __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox shares a single codebase with its Silverlight WPF counterpart. This means that you can achieve close to 100% code reuse for your __RadAutoCompleteBox__ logic if you have parallel Silverlight/WPF development.
+* __Async filtering__: Using the [AsyncFilteringBehavior]({%slug radautocompletebox-features-filteringbehavior%}) makes the filtering of huge amount of items unnoticeable.
 
-* __Expression Blend support__ - all controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite can be easily customized using Expression Blend.
+* __Expression Blend support__: All controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite can be easily customized using Expression Blend.
 
-* __Keyboard Support__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox supports several keyboard shortcuts for performing the most common tasks. [Read more.]({%slug radautocompletebox-features-keyboard-support%})
+* __Keyboard support__: The {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} RadAutoCompleteBox supports several [keyboard shortcuts]({%slug radautocompletebox-features-keyboard-support%}) for performing the most common tasks.
+
+## See Also
+
+* [AutoComplete]({%slug radautocompletebox-features-autocomplete%})
+* [Filtering Behavior]({%slug radautocompletebox-features-filteringbehavior%})
+* [Keyboard Support]({%slug radautocompletebox-features-keyboard-support%})
+* [Key Properties]({%slug radautocompletebox-features-key-properties%})

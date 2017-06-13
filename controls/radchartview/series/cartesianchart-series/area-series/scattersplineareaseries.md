@@ -19,7 +19,7 @@ The __ScatterSplineAreaSeries__ behave like the ScatterSplineSeries but it also 
 
 ## Declaratively defined series
 
-You can use the definition from __Example 1__ to display an ScatterSplineAreaSeries.
+You can use the definition from __Example 1__ to display a ScatterSplineAreaSeries.
 
 #### __[XAML] Example 1: Declaring a ScatterSplineAreaSeries in XAML__
 {{region radchartview-series-scattersplineareaseries_0}}

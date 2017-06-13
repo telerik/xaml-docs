@@ -19,7 +19,7 @@ The __AreaSeries__ behave like the __LineSeries__ but it also allows the area be
 
 ## Declaratively defined series
 
- You can use the following definition to display a simple AreaSeries:        
+ You can use the definition from __Example 1__ to display an AreaSeries.      
 
 #### __[XAML] Example 1: Declaring an AreaSeries in XAML__
 {{region radchartview-areaseries}}

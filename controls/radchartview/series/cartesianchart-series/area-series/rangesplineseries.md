@@ -51,7 +51,7 @@ You can use the definition from __Example 1__ to display a RangeSplineSeries.
 * __LowBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
 * __Fill__: A property of type __Brush__ that gets or sets the color of the RangeSplineSeries area.
 * __DashArray__: A property of type __DoubleCollection__ that gets or sets the dash pattern applied to the stroke of the area.
-* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the RangeSplineSeries area.
+* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the RangeSplineSeries area. You can control the thickness of the line via the __StrokeThickness__ property.
 * __AreaShapeStyle__: A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
 * __StrokeShapeStyle__: A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property accepts a style that targets an object of type Path.
 * __StrokeMode__: A property of type __RangeSeriesStrokeMode__ that gets or sets the mode that determines what part of the series will be stroked. The stroke mode is an enumeration and it allows the following values:  

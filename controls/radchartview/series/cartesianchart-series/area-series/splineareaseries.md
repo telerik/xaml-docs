@@ -19,7 +19,7 @@ The __SplineAreaSeries__ behave like the SplineSeries but it also allows the are
 
 ## Declaratively defined series
 
-You can use the following definition to display a simple SplineAreaSeries:
+You can use the definition from __Example 1__ to display an SplineAreaSeries.
 
 #### __[XAML] Example 1: Declaring a SplineAreaSeries in XAML__
 {{region radchartview-series-splineareaseries_0}}

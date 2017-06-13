@@ -14,7 +14,7 @@ The __RangeSplineSeries__ behaves like an [SplineAreaSeries]({%slug radchartview
 
 ## Declaratively Defined Series
 
-You can use the definition from __Example 1__ to display a RangeSplineSeries:
+You can use the definition from __Example 1__ to display a RangeSplineSeries.
 
 #### __[XAML] Example 1: Declaring a RangeSplineSeries in XAML__
 {{region radchartview-series-areaseries-rangesplineseries_0}}

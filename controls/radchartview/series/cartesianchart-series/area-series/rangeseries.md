@@ -19,7 +19,7 @@ The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-area
 
 ## Declaratively Defined Series
 
-You can use the definition from __Example 1__ to display a RangeSeries:  
+You can use the definition from __Example 1__ to display a RangeSeries.
 
 #### __[XAML] Example 1: Declaring a RangeSeries in XAML__
 {{region radchartview-series-rangeseries_0}}

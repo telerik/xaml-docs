@@ -19,7 +19,7 @@ The __StepAreaSeries__ behave like the StepLineSeries but it also allows the are
 
 ## Declaratively defined series
 
-You can use the following definition to display a simple StepAreaSeries:
+You can use the definition from __Example 1__ to display an StepAreaSeries.
 
 #### __[XAML] Example 1: Declaring a StepAreaSeries in XAML__
 {{region radchartview-series-stepareaseries_0}}

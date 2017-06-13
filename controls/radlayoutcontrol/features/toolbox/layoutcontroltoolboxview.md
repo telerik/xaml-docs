@@ -54,7 +54,7 @@ The proxy object contains information about the elements in the toolbox.
 * __OriginalItemType__: This property holds the type of the associated element.
 * __OriginalItem__: This property holds the associated element.
 
-By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add custom __UIElements__ in the toolbox.
+By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add custom __UIElements__ in the toolbox. Read more about this in the [Add Custom Element in the ToolBox]({%slug radlayoutcontrol-how-to-add-custom-element-in-toolbox%}) article.
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

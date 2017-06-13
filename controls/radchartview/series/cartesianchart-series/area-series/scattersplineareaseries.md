@@ -19,7 +19,7 @@ The __ScatterSplineAreaSeries__ behave like the ScatterSplineSeries but it also 
 
 ## Declaratively defined series
 
-You can use the definition from __Example 1__ to display an ScatterSplineAreaSeries
+You can use the definition from __Example 1__ to display an ScatterSplineAreaSeries.
 
 #### __[XAML] Example 1: Declaring a ScatterSplineAreaSeries in XAML__
 {{region radchartview-series-scattersplineareaseries_0}}
@@ -55,7 +55,7 @@ You can use the definition from __Example 1__ to display an ScatterSplineAreaSer
 * __XValueBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the X value of the data point.
 * __Fill__: A property of type __Brush__ that gets or sets the color of the ScatterSplineAreaSeries area.
 * __DashArray__: A property of type __DoubleCollection__ that gets or sets the dash pattern applied to the stroke of the area.
-* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the ScatterSplineAreaSeries area.
+* __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the ScatterSplineAreaSeries area. You can control the thickness of the line via the __StrokeThickness__ property.
 * __AreaShapeStyle__: A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
 * __StrokeShapeStyle__: A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property accepts a style that targets an object of type Path.
 * __OriginValue__: A property of type double which controls from which Y point value the area series should be start drawing.

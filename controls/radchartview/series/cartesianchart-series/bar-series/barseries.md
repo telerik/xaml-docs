@@ -21,7 +21,7 @@ This series is visualized on the screen as separate rectangles representing each
 
 ## Declaratively defined series
 
-You can use the definition from __Example 1__ to display an BarSeries.
+You can use the definition from __Example 1__ to display a BarSeries.
 
 #### __[XAML] Example 1: Declaring a BarSeries in XAML__
 {{region radchartview-series-barseries_0}}

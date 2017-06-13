@@ -942,6 +942,9 @@ navigation:
     "installation-and-deployment":
         title: "Installation and Deployment"
         position: 6
+    "analytics":
+        title: "Analytics"
+        position: 15
     "consuming-data":
         title: "Consuming Data"
         position: 16

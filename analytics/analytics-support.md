@@ -131,6 +131,8 @@ Sort	|	Sorted
 Group	|	Grouped
 Filter	|	Filtered
 
+{% if site.site_name == 'WPF' %}
 ## See Also
 
 * [Google Analytics Integration]({%slug google-analytics-integration%})
+{% endif %}

@@ -87,6 +87,9 @@ When you need to set different print option such as page size, page orientation 
 
 In order to preview the pages before printing you may use the __PrintPreviewControl__ class and set its __RadSpreadsheet property__ to the __RadSpreadsheet__ instance that you want to be previewed. This control will provide ready to use functionality for previewing print pages and setting different print options.
         
+{% if site.site_name == 'Silverlight' %}
+>Note that in Silverlight, there's no way to access the actual printer settings due to security limitations of the framework and the settings of the PrintDialog take precedence. In other words, to print to A3 paper (or with Landscape orientation), you will need to specify this both for RadSpreadsheet in the print preview control and for the printer in the PrintDialog.
+{% endif %}
 
 The following code snippet shows how to integrate the print preview with RadRibbonView's backstage.
         

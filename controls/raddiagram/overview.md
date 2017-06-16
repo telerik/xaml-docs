@@ -65,7 +65,7 @@ The __RadDiagram__ control and its components allow you to create flexible and i
 
 You can find all the general features of the diagram documented in the [Features]({%slug raddiagram-features-bring-into-view-auto-fit%}) section.  
 
->tip Get started with the control with its [Getting Started]({%slug radtabcontrol-getting-started%}) help article that shows how to use it in a basic scenario.  
+>tip Get started with the control with its [Getting Started]({%slug raddiagram-getting-started%}) help article that shows how to use it in a basic scenario.  
  
 <!-- -->
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}

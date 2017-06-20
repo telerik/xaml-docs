@@ -10,7 +10,7 @@ position: 3
 
 # ScatterSplineAreaSeries
 
-The __ScatterSplineAreaSeries__ behave like the ScatterSplineSeries but it also allows the area between the line and the axis to be colored in an arbitrary way. By default the colors of the line and the area are the same. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis.
+The __ScatterSplineAreaSeries__ is visualized on the screen as a smotth line connecting all DataPoints and the area between the line and the axis is colored in an arbitrary way. By default the colors of the line and the area are the same. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

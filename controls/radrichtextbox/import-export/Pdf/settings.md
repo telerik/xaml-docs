@@ -27,7 +27,7 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 	* __-1__: Default Compression. 
 	* __0__: No Compression. 
 	* __9__: Best Compression. 
-* __DocumentInfo__: A property of type __PdfDocumentInfo__. You can use this class to retrieve or change the document information.
+* __DocumentInfo__: A property of type __PdfDocumentInfo__. You can use this class to retrieve or change the document information. The document information which you can get or change is: Author, Creator, IncludeCreationDate, Keywords, Producer, Subject, Title.
 * __DrawPageBodyBackground__: A property of type __bool__ that gets or sets a value indicating whether the exporter will draw a rectangle below the page body contents.
 * __FloatingUIContainersExportMode:__  A property of type __PdfInlineUIContainersExportMode__ that get or sets the current mode when exporting floating UI containers.
 	* __None__: When set, the floating UI containers will not be exported.

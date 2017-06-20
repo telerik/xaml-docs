@@ -60,7 +60,7 @@ You can also export the document to a byte array and preserve it in a database.
     byte[] output = provider.Export(document);
 {{endregion}}
 
-The resulting documents can be opened in any application that supports docx documents.
+The resulting documents can be opened in any application that supports DOCX documents.
 
 ## See Also
 

@@ -16,7 +16,7 @@ __DocxFormatProvider__ allows for import of DOCX documents and respectively expo
 
 __DocxFormatProvider__ exposes __ExportSettings__, which allow customization in how fields are exported. By default, all fields are exported using their result value in the docx document. If you would like to save the document of the editor as a mail merge template and not include the value of the current item of the __MailMergeDataSource__, a new instance of __DocxExportSettings__ should be created and assigned to the format provider. The value of the __FieldResultMode__ of these settings must be set to __FieldDisplayMode.DisplayName__.
 
-Here is an example how you can get a reference to the format provider used by the OpenDocumentCommand and the SaveCommand and adjust the export, so that the document is saved as a template:
+__Example 1__ shows you how you can get a reference to the format provider used by the OpenDocumentCommand and the SaveCommand and adjust the export, so that the document is saved as a template:
 
 #### __[C#] Example 1: Setup default DocxFormatProvider__
 {{region c#-radrichtextbox-import-export-docx-settings_0}}

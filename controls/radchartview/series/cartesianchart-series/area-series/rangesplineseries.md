@@ -10,7 +10,7 @@ position: 5
 
 # RangeSplineSeries
 
-The __RangeSplineSeries__ behaves like an [SplineAreaSeries]({%slug radchartview-series-splineareaseries%}) but you can specify a minimum and maximum for each data point. By default the colors of the line and the area are the same.
+When using __RangeSplineSeries__ you can specify a minimum and maximum value for each data point. The high data points, as well as the low data points, are connected with smooth line segments and the area enclosed the two lines is colored in an arbitrary way. Basically, the series displays a range of data by plotting two numeric values per data point. By default the colors of the line and the area are the same.
 
 ## Declaratively Defined Series
 

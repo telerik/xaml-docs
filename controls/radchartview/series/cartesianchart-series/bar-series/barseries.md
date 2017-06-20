@@ -10,7 +10,7 @@ position: 0
 
 # BarSeries
 
-This series is visualized on the screen as separate rectangles representing each of the __DataPoints__.      
+This series is visualized on the screen as separate rectangles representing each of the __DataPoints__. The height (width) of the box is the distance between the point’s numerical value and the categorical axis that plots the point.     
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

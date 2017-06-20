@@ -55,7 +55,7 @@ You can use the definition from __Example 1__ to display a BarSeries.
 
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
 * __ValueBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the value of the data point.
-* __OriginValue__: A property of type double which controls from which Y point value the area series should be start drawing.
+* __OriginValue__: A property of type double which controls the origin value from which the series should start drawing on the numeric axis (LinearAxis or LogarithmicAxis).
 * __LegendSettings__: A property of type ChartLegendSettings that gets or sets the legend setting.
 * __PaletteMode__: A property of type __SeriesPaletteMode__ that gets or sets the mode that determines how the pallete should be applied. This property will be applied only if the Palette property of the chart is set. The pallete mode is an enumeration and it allows the following values: 
 	* __Series__: Default value. When set every series will be applied a different color.

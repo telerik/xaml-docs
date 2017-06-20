@@ -10,7 +10,7 @@ position: 1
 
 # RangeSeries
 
-The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-areaseries%}) but you can specify a minimum and maximum for each data point. Basically, the series displays a range of data by plotting two numeric values per data point.
+When using __RangeSeries__ you can specify a minimum and maximum value for each data point. The high data points, as well as the low data points, are connected with straight line segments and the area enclosed the two lines is colored in an arbitrary way. Basically, the series displays a range of data by plotting two numeric values per data point.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

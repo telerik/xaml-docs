@@ -22,8 +22,8 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	* __Document__: This is the default value. Includes the HTML declaration, more specifically &lt;HTML&gt;, &lt;TITLE&gt;, &lt;HEAD&gt; and &lt;BODY&gt; tags.
 	* __Fragment__: When this setting is applied, only the HTML &lt;BODY&gt; tag will be exported.	
 * __ExportBoldAsStrong__: A property of type __bool__ that controls whether elements with font-weight bold are exported as <strong> tag.
-* __ExportEmptyDocumentAsEmptyString__: A property of type __bool__ that gets or sets whether an empty document should be exported as an empty string.
-* __ExportFontStylesAsTags__: A property of type __bool__ that gets or sets the font styles should be exported as tags. Specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style.
+* __ExportEmptyDocumentAsEmptyString__: A property of type __bool__ that gets or sets whether an empty document should be exported as an empty string. The default value of this property is __false__.
+* __ExportFontStylesAsTags__: A property of type __bool__ that gets or sets whether the font styles should be exported as tags. Specifies if &lt;i&gt;, &lt;b&gt; and &lt;u&gt; tags should be used instead of setting properties as elements of a style.
 * __ExportHeadingsAsTags__:  A property of type __bool__ that gets or sets whether Heading styles should be exported as HTML heading tags (&lt;h1&gt;, &lt;h2&gt; etc.).
 * __ExportItalicAsEm__: A property of type __bool__ that controls whether elements with font weight italic are exported as &lt;em&gt; tag.
 * __ExportLocalOrStyleValueSource__: A property of type __bool__. Gets or sets whether only properties which have local or style value source will be exported.
@@ -90,7 +90,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 >* __ExportFontStylesAsTags__: true.
 
 ### ExportSettings Events
-* __CssClassExporting__: This event is fired on every attempt to export a CSS class.
+* __CssClassExporting__: This event is fired on every attempt to export a CSS class. The CssClassExporting event is triggered only when StyleRepositoryExportMode is set to ExportStylesAsCssClasses.
 * __FloatingUIContainerExporting__: This event is fired on every attempt to export a __FloatingUIContainer__.
 * __ImageExporting__: This event is fired only when the respective option of ImageExportMode is applied.
 * __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about InlineUIContainers.

@@ -12,7 +12,7 @@ position: 0
 
 __TxtFormatProvider__ makes it easy to import and export __RadDocument__ to/from plain text format, preserving the document structure. 
 
-To use __TxtFormatProvider__, you should add references to:
+To use __TxtFormatProvider__, you should add references to: 
 	
 * __Telerik.Windows.Documents.dll__
         

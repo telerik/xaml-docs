@@ -10,7 +10,7 @@ position: 0
 
 # AreaSeries
 
-The __AreaSeries__ behave like the __LineSeries__ but it also allows the area between the line and the axis to be colored in an arbitrary way. By default the colors of the line and the area are the same.
+The __AreaSeries__ is visualized on the screen as a straight line connecting all DataPoints and the area between the line and the axis is colored in an arbitrary way. By default the colors of the line and the area are the same.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

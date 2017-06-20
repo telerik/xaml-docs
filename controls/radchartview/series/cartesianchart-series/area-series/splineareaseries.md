@@ -58,7 +58,7 @@ You can use the definition from __Example 1__ to display an SplineAreaSeries.
 * __Stroke__: A property of type __Brush__ that gets or sets the outline stroke of the SplineAreaSeries area. You can control the thickness of the line via the __StrokeThickness__ property.
 * __AreaShapeStyle__: A property of type __Style__ that gets or sets the appearance of the area shape. The property excepts a style that targets an object of type Path.
 * __StrokeShapeStyle__: A property of type __Style__ that gets or sets the style of the stroke of the area shape. The property accepts a style that targets an object of type Path.
-* __OriginValue__: A property of type double which controls from which Y point value the area series should be start drawing.
+* __OriginValue__: A property of type double which controls the origin value from which the series should start drawing on the numeric axis (LinearAxis or LogarithmicAxis).
 * __StrokeMode__: A property of type __AreaSeriesStrokeMode__ that gets or sets the mode that determines what part of the series will be stroked. The stroke mode is an enumeration and it allows the following values:  
 	* __None__: No outlining.
 	* __LeftLine__: The left line (from plotline to the __first point__) is outlined.

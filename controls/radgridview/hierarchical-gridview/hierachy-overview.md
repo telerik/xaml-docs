@@ -17,7 +17,9 @@ In that case you can benefit from the __RowDetails options__. To learn more abou
 
 In the cases when the nested grids should display data of the same type as the master grid, you can build a self-referencing grid. To learn more about the self-referencing approach take a look at the [Self-Referencing GridView]({%slug gridview-self-referencing-grid%}) topic.
 
-# See Also
+>important Please bear in mind that the **DataContext** of the row details presenter and the hierarchy child presenter is the **parent row** and not the context of the RadGridView itself. You can change the DataContext either in the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event when dealing with row details or in the [DataLoding]({%slug gridview-how-to-access-child-gridview%}) event when building a hierarchy with table definitions.
+
+## See Also
 
  * [Basic Hierarchies]({%slug gridview-basic-hierarchies%})
 

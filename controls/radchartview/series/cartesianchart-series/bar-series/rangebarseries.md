@@ -10,7 +10,7 @@ position: 1
 
 # RangeBarSeries
 
-This series is visualized on the screen as separate rectangles representing each of the __DataPoints__. The main difference of the BarSeries is that you are allowed to define range with each data point.      
+This series is visualized on the screen as separate rectangles representing each of the data points. The main difference of the BarSeries is that you are allowed to define range with each data point.      
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

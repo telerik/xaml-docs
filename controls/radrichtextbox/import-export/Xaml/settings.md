@@ -28,6 +28,8 @@ __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 * __ImageExporting__: This event is fired every time before exporting an Image.
 * __InlineUIContainerExporting__: This event is fired every time before exporting an __InlineUIContainer__.
 
+>These events will be called when the __ImageExportMode__ enumeration property is set to __ImageExportingEvent__.
+
 #### __[C#] Example 1: Setting the ExportSettings of the XamlFormatProvider__
 {{region c#-radrichtextbox-import-export-xaml-settings_0}}
 	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();

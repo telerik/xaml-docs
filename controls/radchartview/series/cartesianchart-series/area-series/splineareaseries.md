@@ -10,7 +10,7 @@ position: 4
 
 # SplineAreaSeries
 
-The __SplineAreaSeries__ is visualized on the screen as a smooth line connecting all DataPoints and the area between the line and the axis is colored in an arbitrary way. By default the colors of the line and the area are the same.
+The __SplineAreaSeries__ is visualized on the screen as a smooth line connecting all data points and the area between the line and the axis is colored in an arbitary way. By default the colors of the line and the area are the same.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

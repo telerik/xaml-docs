@@ -10,7 +10,7 @@ position: 6
 
 # StepAreaSeries
 
-The __StepAreaSeries__ is visualized on the screen as a horizontal and vertical line instead of straight line which connects all DataPoints. The area between the line is colored in an arbitrary way. By default the colors of the line and the area are the same.
+The __StepAreaSeries__ is visualized on the screen as a horizontal and vertical line instead of straight line which connects all data points. The area between the line is colored in an arbitrary way. By default the colors of the line and the area are the same.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)

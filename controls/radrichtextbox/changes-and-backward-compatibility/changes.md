@@ -127,7 +127,7 @@ This topic will summarize the new functionality introduced in the editor with he
 
 * Show ImageMiniToolBar when a floating image is selected.
 
-* Export the document in HTML that is compatible with HtmlTextBox from Reporting. [Read more]({%slug radrichtextbox-features-import-export-settings%})
+* Export the document in HTML that is compatible with HtmlTextBox from Reporting. [Read more]({%slug radrichtextbox-import-export-html-htmlformatprovider%})
 
 ## What's New in 2011 Q3 - 2011.3.1116
 

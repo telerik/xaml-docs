@@ -26,3 +26,7 @@ In the cases when the nested grids should display data of the same type as the m
  * [Custom Hierarchies]({%slug gridview-custom-hierarchies%})
 
  * [Self-Referencing GridView]({%slug gridview-self-referencing-grid%})
+
+ * [Row Details Events]({%slug radgridview-row-details-programming%})
+
+ * [Set Properties of the Child RadGridView]({%slug gridview-how-to-access-child-gridview%})

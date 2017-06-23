@@ -26,11 +26,11 @@ These are the currently supported __PrintModes__:
 * __Native__ - uses the default for the system print dialog. The option also allows printing silently in OOB applications with elevated trust to the default printer.
               
 
-* __Html__ - exports the document in RadRichTextBox to HTML format using [HtmlFormatProvider]({%slug radrichtextbox-features-import-export%}) and passes the exported document to the browser printing mechanism.
+* __Html__ - exports the document in RadRichTextBox to HTML format using [HtmlFormatProvider]({%slug radrichtextbox-import-export-html-htmlformatprovider%}) and passes the exported document to the browser printing mechanism.
               
 	>The option does not work in OOB applications.
 
-* __HtmlPreview__ - exports the document in RadRichTextBox to HTML format using [HtmlFormatProvider]({%slug radrichtextbox-features-import-export%}) and passes the exported document to a new browser window which shows a *Print* and a *Close* buttons along with the document. The *Print* button invokes the browser printing mechanism.
+* __HtmlPreview__ - exports the document in RadRichTextBox to HTML format using [HtmlFormatProvider]({%slug radrichtextbox-import-export-html-htmlformatprovider%}) and passes the exported document to a new browser window which shows a *Print* and a *Close* buttons along with the document. The *Print* button invokes the browser printing mechanism.
 
 	>The option does not work in OOB applications.
 
@@ -94,7 +94,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 * __PrintScaling__ - specifies whether the content of the document should shrink to page size if needed. The option is relevant for Native print mode only and by default content is shrunk to page size.
               
 
-* __HtmlPrintExportSettings__ - when using Html or HtmlPreview printing, HtmlFormatProvider is used and it is possible to specify its export settings. More on import/export settings can be found [here]({%slug radrichtextbox-features-import-export-settings%})
+* __HtmlPrintExportSettings__ - when using Html or HtmlPreview printing, HtmlFormatProvider is used and it is possible to specify its export settings. More on import/export settings can be found [here]({%slug radrichtextbox-import-export-html-settings%})
 
 * __UseDefaultPrinter__ - forces silent printing. Can only be used in OOB application with elevated trust and is only relevant for Native printing mode.
               

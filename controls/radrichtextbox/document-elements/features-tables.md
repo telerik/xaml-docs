@@ -263,7 +263,7 @@ __RadRichTextBox__ exposes a API allowing you to use various methods to add, mod
 
 	#### __[VB.NET] Example 4: Change Table Layout Mode__
 	{{region radrichtextbox-features-document-elements-tables_11}}
-		Me.radRichTextBox.ChangeTableCellContentAlignment(RadTextAlignment.Center, RadVerticalAlignment.Center)
+		Me.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed);
 	{{endregion}}  
 * __ChangeTableHorizontalAlignment__: Modifies the horizontal alignment of the currently selected table.
 

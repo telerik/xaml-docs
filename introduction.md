@@ -10,12 +10,12 @@ position: 1
 
 # Introduction
 
-{% if site.site_name == 'Silverlight' %}
+<!--{% if site.site_name == 'Silverlight' %}
 <img src="images/UI_for_SL_logo.png" style="min-width:334px;width: 30%;" alt="UI for Silverlight logo" />
 {% endif %}
 {% if site.site_name == 'WPF' %}
 <img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="UI for WPF logo" />
-{% endif %}
+{% endif %}-->
 
 Thank you for choosing Telerik &reg;  UI for {{ site.framework_name }}.
 

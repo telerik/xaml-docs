@@ -108,7 +108,7 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-	width: 327px;
+	width: 330px;
 }
 
 #logo-bar a,
@@ -119,12 +119,6 @@ a img {
 #logo-bar-sl {
 	width: 395px;
 }
-
-#logo-bar a img,
-#logo-bar-sl a img {
-    height: auto;
-    width: 100%;
-} 
 
 #logo-bar-sl span {
 	display: none;
@@ -520,7 +514,7 @@ a img {
     overflow: hidden;
     margin: 0;
 	clear: both;
-    top: 118px;
+    top: 120px;
 }
 
 #page-inner-content:after {
@@ -740,8 +734,9 @@ a.footer-links:hover {
 }
 
 .logo {
-    font-size: 14px;   
-    height: 30px;
+    font-size: 14px;
+    width: 323px;
+    height: 40px;
     display: inline-block;
     vertical-align: top;
 }

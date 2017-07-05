@@ -28,11 +28,11 @@ The topic contains the following sections:
 
 The Headers and Footers are properties of a Section and each section in the document can have the following types of Headers and Footers:
 
-* __First__: Used only on the first page of the section;
+* __First__: Used only on the first page of the section.
 
 * __Even__: Used on all even numbered pages in the section.
 
-* __Default__: Used on all pages of the section, where First or Even are not applicable or not specified
+* __Default__: Used on all pages of the section, where First or Even are not applicable or not specified.
 
 
 ## Customizing Headers and Footers
@@ -152,7 +152,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 
 
 
-# See Also
+## See Also
 
  * [Section]({%slug radrichtextbox-features-document-elements-section%})
 

@@ -725,6 +725,18 @@ navigation:
         title: Merge Documents
     "*radspreadstreamprocessing":
         title: RadSpreadStreamProcessing
+    controls/radrichtextbox/import-export/docx:
+        title: Docx	
+    controls/radrichtextbox/import-export/html:
+        title: Html	
+    controls/radrichtextbox/import-export/pdf:
+        title: Pdf	
+    controls/radrichtextbox/import-export/plain-text:
+        title: Plain-Text	
+    controls/radrichtextbox/import-export/rtf:
+        title: Rtf	
+    controls/radrichtextbox/import-export/xaml:
+        title: Xaml	 	
 ## Centaur Controls End
 
 ## X1 Controls Start

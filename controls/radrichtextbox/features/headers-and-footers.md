@@ -28,14 +28,12 @@ The topic contains the following sections:
 
 The Headers and Footers are properties of a Section and each section in the document can have the following types of Headers and Footers:
 
-* __Default__: Used all through the section;
-            
+* __First__: Used only on the first page of the section;
 
-* __First__: Used on the first page of the section only;
-            
+* __Even__: Used on all even numbered pages in the section.
 
-* __Even__: To be used on every even page.
-            
+* __Default__: Used on all pages of the section, where First or Even are not applicable or not specified
+
 
 ## Customizing Headers and Footers
 

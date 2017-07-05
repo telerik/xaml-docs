@@ -42,7 +42,6 @@ A complete list with all the key features can be found in the [Key Features]({%s
 
 >tip Get started with the control with its [Getting Started]({%slug radribbonview-gettingstarted%}) help article that shows how to use it in a basic scenario.
 
-<!-- -->
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#RibbonView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also  

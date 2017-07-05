@@ -59,7 +59,7 @@ __Example 1__ shows the use of the two methods that toggle this functionality - 
 
 #### __[VB.NET] Example 1: Turn on and off Invalid Data Circles.__
 
-{{Region radspreadsheet-ui-data-validation_0}}
+{{region radspreadsheet-ui-data-validation_0}}
 	If showCircles Then
 		Me.radSpreadsheet.ActiveWorksheetEditor.CircleInvalidData()
 	Else

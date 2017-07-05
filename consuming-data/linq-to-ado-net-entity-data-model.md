@@ -10,10 +10,9 @@ position: 10
 
 # Using LINQ to ADO.NET Entity Data Model
 
-
-
 The purpose of this article is to show you how to use __LINQ__ against __ADO.NET Entity Data Model__. It will cover how to:
-      
+
+* [Create the ADO.NET Entity Data Model](#create-the-adonet-entity-data-model)
 
 * [Query an entity from the database](#query-an-entity-from-the-database)
 
@@ -25,69 +24,66 @@ The purpose of this article is to show you how to use __LINQ__ against __ADO.NET
 
 * [Retrieve a record with Server Side Paging](#retrieve-a-record-with-server-side-paging)
 
->tipThis tutorial uses the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en). Before trying out any of the examples below you need to create a new ADO.NET Data Model. The topic is described in more details in MSDN [here](http://msdn.microsoft.com/en-us/library/vstudio/cc716703(v=vs.100).aspx).
-        
+>tipThis tutorial uses the __Northwind__ database, which can be downloaded from [here](https://northwinddatabase.codeplex.com/).
 
-Add a new ADO.NET Data Model.
+## Create the ADO.NET Entity Data Model
 
-Figure 1: Add ADO.NET Entity Data Model
-![Common Linq To Ado Net 010](images/Common_LinqToAdoNet_010.png)
+You can take advantage of the **Visual Studio Entity Data Model Wizard** to generate an Entity Data Model from the Northwind database automatically.
 
-Using the ADO.NET Entity Framework wizard you can easily create a representation of the sample Northwind database like the one show in __Figure 2__:
-      
+To do so, follow these steps:
 
-Figure 2: Nortwind in Entity Designer
-![Common Linq To Ado Net 020](images/Common_LinqToAdoNet_020.png)
+1. Right-click on your project in the Solution Explorer window and select the menu option **Add -> New Item**.
+2. In the **Add New Item** dialog, select the **Data** category.
+3. Select the **ADO.NET Entity Data Model** template, give the Entity Data Model the name Northwind.edmx, and click the **Add** button. Clicking the **Add** button launches the **Data Model Wizard**.
+4. In the **Choose Model Contents** step, choose the **EF Designer from Database** option and click the Next button.
+5. In the **Choose Your Data Connection** step, select the Northwind.mdf database connection, enter the entities connection settings name NorthwindEntities, and click the Next button.
+6. In the **Choose Your Database Objects and Settings** step, select the desired database tables, specify the model namespace and click the **Finish** button.
 
 ## Query an Entity from the Database
 
 The code in __Example 1__ shows how to use LINQ query syntax to retrieve an __IEnumerable__ sequence of __Product__ objects.
-        
 
 #### __[C#] Example 1: Query Product by CategoryName__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_0}}
 	NorthwindEntities dbContext = new NorthwindEntities();
-	var query = from p in dbContext.ProductSet
-	            where p.Categories.CategoryName == "Seafood"
-	            select p;
+	var query = from p in dbContext.Products
+				where p.Category.CategoryName == "Seafood"
+				select p;
 	IEnumerable<Product> products = query.ToList();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB] Example 1: Query Product by CategoryName__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_1}}
 	Dim dbContext As New NorthwindEntities()
-	Dim query = From p In dbContext.ProductSet _
-	    Where p.Categories.CategoryName = "Seafood" _
-	    Select p
+	Dim query = From p In dbContext.Products
+		Where p.Category.CategoryName = "Seafood"
+		Select p
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	{{endregion}}
+{{endregion}}
 
 ## Update an Entity in the Database
 
 The code in __Example 2__ demonstrates how to grab a single __Product__ object from the database, update its price, and then save the changes back to the database.
-        
 
 #### __[C#] Example 2: Update UnitPrice of Product__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_2}}
 	NorthwindEntities dbContext = new NorthwindEntities();
-	Product product = dbContext.ProductSet.Single( p => p.ProductName == "Aniseed Syrup" );
+	Product product = dbContext.Products.First(p => p.ProductName == "Aniseed Syrup");
 	product.UnitPrice = 1000;
 	dbContext.SaveChanges();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB] Example 2: Update UnitPrice of Product__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_3}}
 	Dim dbContext As New NorthwindEntities()
-	Dim query = From p In dbContext.ProductSet_
-	            Where p.ProductName = "Aniseed Syrup" _
-	            Select p
+	Dim product As Product = dbContext.Products.First(Function(p) p.ProductName = "Aniseed Syrup")
 	product.UnitPrice = 1000
 	dbContext.SaveChanges()
-	{{endregion}}
+{{endregion}}
 
 ## Insert a New Record(s) in the Database
 
@@ -110,9 +106,9 @@ The code in __Example 3__ shows you how to create a new __Category__ object. The
 	category.Products.Add( firstProduct );
 	category.Products.Add( secondProduct );
 	
-	dbContext.AddToCategorySet( category );
+	dbContext.Categories.Add(category);
 	dbContext.SaveChanges();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB] Example 3: Insert Products with new Category__
 
@@ -131,66 +127,69 @@ The code in __Example 3__ shows you how to create a new __Category__ object. The
 	category.Products.Add(firstProduct)
 	category.Products.Add(secondProduct)
 	
-	dbContext.AddToCategorySet(category)
+	dbContext.Categories.Add(category)
 	dbContext.SaveChanges()
-	{{endregion}}
+{{endregion}}
 
 ## Delete a Record from the Database
 
 __Example 4__ demonstrates you how to delete all 'Test' products from the database.
-        
 
 #### __[C#] Example 4: Delete a record based on a condition__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_6}}
 	NorthwindEntities dbContext = new NorthwindEntities();
-	var query = from p in dbContext.ProductSet
-	            where p.ProductName.Contains( "Test" )
-	            select p;
-	foreach ( Product p in query )
-	    dbContext.DeleteObject( p );
+	var query = from p in dbContext.Products
+				where p.ProductName.Contains("Test")
+				select p;
+	foreach (Product p in query)
+	{
+		dbContext.Products.Remove(p);
+	}
 	dbContext.SaveChanges();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB] Example 4: Delete a record based on a condition__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_7}}
 	Dim dbContext As New NorthwindEntities()
-	Dim query = From p In dbContext.ProductSet _
-	    Where p.ProductName.Contains("Test") _
-	    Select p
+	Dim query = From p In dbContext.Products
+				Where p.ProductName.Contains("Test")
+				Select p
 	For Each p As Product In query
-	    dbContext.DeleteObject(p)
-	Next
+		dbContext.Products.Remove(p)
+	Next p
 	dbContext.SaveChanges()
-	{{endregion}}
+{{endregion}}
 
 ## Retrieve a Record with Server-side Paging
 
 __Example 5__ shows you how to implement efficient server-side database paging. By using the __Skip()__ and __Take()__ methods, you will return 15 rows from the database - starting with row 300.
-        
 
 #### __[C#] Example 5:Server-side Paging__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_8}}
 	NorthwindEntities dbContext = new NorthwindEntities();
-	var query = ( from p in dbContext.ProductSet
-	              where p.Categories.CategoryName == "Aniseed Syrup"
-	              select p ).Skip( 300 ).Take( 15 );
+	var query = (from p in dbContext.Products
+				where p.Category.CategoryName == "Aniseed Syrup"
+				select p).Skip(300).Take(15);
 	IEnumerable<Product> products = query.ToList();
-	{{endregion}}
+{{endregion}}
 
 #### __[VB] Example 5:Server-side Paging__
 
 {{region consuming-data-linq-to-ado-net-entity-data-model_9}}
 	Dim dbContext As New NorthwindEntities()
-	Dim query = (From p In dbContext.ProductSet _
-	    Where p.Categories.CategoryName = "Aniseed Syrup" _
-	    Select p).Skip(300).Take(15)
+	Dim query = (From p In dbContext.Products
+				Where p.Category.CategoryName = "Aniseed Syrup"
+				Select p).Skip(300).Take(15)
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	{{endregion}}
+{{endregion}}
 
-# See Also
+## See Also
+
+ * [Consuming WCF Service]({%slug consuming-data-wcf-service%})
+
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 
 {% if site.site_name == 'Silverlight' %} 

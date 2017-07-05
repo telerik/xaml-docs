@@ -31,7 +31,6 @@ __RadPanelBar__ is a versatile component allowing you to build different navigat
 
 >tip Get started with the control with its [Getting Started]({%slug radpanelbar-populating%}) help article that shows how to use it in a basic scenario.
 
-<!-- -->
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#PanelBar/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also  

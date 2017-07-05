@@ -82,7 +82,7 @@ You can subscribe to the __CellValidating__ event declaratively or in code-behin
 #### __C#__
 
 {{region cs-gridview-events-validation_1}}
-	this.radGridView.RowValidated += radGridView_RowValidated;
+	this.radGridView.CellValidating += radGridView_CellValidating;
 {{endregion}}
 
 

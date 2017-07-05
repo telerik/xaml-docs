@@ -5,12 +5,12 @@ description: RangeSeries
 slug: radchartview-series-rangeseries
 tags: rangeseries
 published: True
-position: 0
+position: 1
 ---
 
 # RangeSeries
 
-The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-areaseries%}) but you can specify a minimum and maximum for each data point. Basically, the series displays a range of data by plotting two numeric values per data point.
+__RangeSeries__ displays a range of data by plotting two numeric values per data point. Additionally, you need to specify a minimum and maximum value for each data point. The high data points, as well as the low data points, are connected with straight line segments and the area enclosed the two lines is colored in an arbitrary way. 
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
@@ -19,10 +19,10 @@ The __RangeSeries__ behaves like an [AreaSeries]({%slug radchartview-series-area
 
 ## Declaratively Defined Series
 
-You can use the definition from __Example 1__ to display a RangeSeries:  
+You can use the definition from __Example 1__ to display a RangeSeries.
 
 #### __[XAML] Example 1: Declaring a RangeSeries in XAML__
-{{region radchartview_rangeseries_0}}
+{{region radchartview-series-rangeseries_0}}
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -47,7 +47,7 @@ You can use the definition from __Example 1__ to display a RangeSeries:
 {{endregion}}
 
 #### __Figure 1: RangeSeries visual appearance__  
-![radchartview-series-areaseries](images/radchartview-series-rangeseries.png)
+![radchartview-series-rangeseries](images/radchartview-series-rangeseries.png)
  
 ## Properties
 
@@ -73,7 +73,7 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 
 #### __[C#] Example 2: Defining the view model__
 
-{{region radchartview-series-areaseries_1}}
+{{region radchartview-series-rangeseries_1}}
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -90,7 +90,7 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 {{endregion}}	
 
 #### __[XAML] Example 3: Specify a RangeSeries in XAML__
-{{region radchartview-series-areaseries_2}}
+{{region radchartview-series-rangeseries_2}}
 	<telerik:RangeSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
 {{endregion}}
 
@@ -102,7 +102,7 @@ You can see how to style range series using different properties in the [RangeSe
 
 Additionally, you can use the Palette property of the chart to change the colors of the RangeSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 
-# See Also
+## See Also
  * [Getting Started]({%slug radchartview-introduction%})
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})
  * [Area Series Overview]({%slug radchartview-series-areaseries%})

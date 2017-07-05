@@ -10,31 +10,32 @@ position: 2
 
 # Editing Control Templates
 
+This article will show you two different approaches on how to extract and edit the default control templates of the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls.
 
+* [Extracting Control Templates Manually from the Theme XAML File](#extracting-control-templates-manually-from-the-theme-xaml-file)
+* [Extracting Control Templates Using Visual Studio](#extracting-control-templates-using-visual-studio)
 
-Using Implicit Styles gives you the ability to easily extract and edit the default ControlTemplates of the controls. This article will show you two different approaches on how to extract the ControlTemplates.        
-      
+## Extracting Control Templates Manually from the Theme XAML File
 
-## Extracting Control Templates Manually from the Theme XAML file
+Inside the installation folder of your version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} you can find a folder named __Themes.Implicit__. It contains the **XAML** files of the different themes for all the controls.
 
-In the installation folder of your version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} you can find a folder named __Themes.Implicit__. It contains the XAML files of the different Themes for all the controls. So you basically have to navigate to the required Theme and open the needed XAML file in Visual Studio. For example if you are using the OfficeBlack Theme and you need the ControlTemplate of RadListBox you should go in the OfficeBlack folder, then into Themes folder and find the __Telerik.Windows.Controls.xaml__ file.
-![styling-apperance-editing-control-templates 1](images/styling-apperance-editing-control-templates_1.png)
+You then have to navigate to the required theme and open the needed XAML file with your favorite editor. For example, if you are using the **Office_Black** theme and you need the control template of the **RadListBox** control, you need to go in the **Themes.Implicit\OfficeBlack\Themes** folder and find the __Telerik.Windows.Controls.xaml__ file which usually corresponds to the name of the assembly the control is located in.
 
->You should extract the desired ControlTemplate from the Theme you are using as there are differences between the Themes. Not having the correct Template may cause the control to misbehave.
-          
+#### __Figure 1: Navigating to the required XAML file__
 
-When you have the file open in Visual Studio you have to find the default style of the control. The default styles are usually named the following way: *name of the control* + Style (for example *RadListBoxStyle*). So after you locate the style you should navigate to the Value of its Template property Setter which will contain the desired ControlTemplate. Once you have copied the Template you can easily modify it and apply it either to a single instance of the Control by using its Template property or globally to all instances of the Control in the App.xaml file.
-        
+![Navigating to the required XAML file](images/styling-apperance-editing-control-templates_1.png)
 
->For the case you want to apply a single ControlTemplate to all instances of the Control in Application you will need to create a Style which targets the Control and it is based on its default Style. 
-          
+>important You need to extract the desired control template from the theme you are using in your application as there are differences between the templates in the different themes. Not using the correct template may lead to errors or cause undesired behavior.
 
-As an example if you need to add a rounded red Border around ItemsPresenter in the ListBox Control you should do the following:
-        
+When you have the file open in an editor you need to find the default style for the given control. The default styles usually follow the convention **name of the control + Style**, for example - **RadListBoxStyle**. 
 
-#### __XAML__
+After you locate the style you have to navigate to the value of its **Template** property setter which will point you to the control template. Once you have copied the template you can easily modify it and apply it either to a single instance of the control or throughout your application by creating the appropriate style and setting its **Template** property.
 
-{{region styling-apperance-editing-control-templates_0}}
+For example, if you want to add a rounded red border around the **RadListBox** control you need to extract the respective control template and modify it as demonstrated in **Example 1**.
+
+#### __[XAML] Example 1: Adding a border around the RadListBox control__
+
+{{region xaml-styling-apperance-editing-control-templates_0}}
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -71,35 +72,42 @@ As an example if you need to add a rounded red Border around ItemsPresenter in t
 	                </Setter.Value>
 	            </Setter>
 	        </Style>
-	        
 	    </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
+{{endregion}}
 
+#### __Figure 2: RadListBox control with red border__
 
-
-And here is the result:
-![styling-apperance-editing-control-templates 2](images/styling-apperance-editing-control-templates_2.png)
+![RadListBox control with red border](images/styling-apperance-editing-control-templates_2.png)
 
 ## Extracting Control Templates Using Visual Studio
 
-The other way to extract a ControlTemplate is through the Visual Studio designer. You have to right click on the desired Control and navigate through the open context menu to the __Edit Template__ option. Afterwards just click on the __Edit a Copy__ option as shown below:
-![styling-apperance-editing-control-templates 3](images/styling-apperance-editing-control-templates_3.png)
+The other way to extract a control template is through the **Visual Studio designer** or **Expression Blend**. You have to right click on the desired control and navigate through the context menu to the __Edit Template__ option. Afterwards just click on the __Edit a Copy__ option as shown in **Figure 3**.
 
-Create Style Resource dialog will appear, providing you with a few choices. You basically could either extract the Style with the default ControlTemplate in the desired document with a resource key (if you need to apply it on a single instance of the control):
+#### __Figure 3: Visual Studio designer context menu__
+
+![Visual Studio designer context menu](images/styling-apperance-editing-control-templates_3.png)
+
+The **Create Style Resource** dialog will appear, providing you with a few choices. 
+
+The first option is to extract the style with the default control template in a specified document with a resource key. You can choose this option if you need to apply it on a single instance of the control.
+
+#### __Figure 4: Generating a style with a resource key__
+
 ![styling-apperance-editing-control-templates 4](images/styling-apperance-editing-control-templates_4.png)
 
-Or you could apply it to all the instances of the Control within the document or the Application by selecting the following:
-![styling-apperance-editing-control-templates 5](images/styling-apperance-editing-control-templates_5.png)
+The second option is to create an implicit style.
 
-Let's assume you just need to style one specific instance of the Control and you have chosen to extract the Style with a Key in this document. The result is shown in the next code snippet:
-        
+#### __Figure 5: Generating an implicit style__
 
-#### __XAML__
+![Generating an implicit style](images/styling-apperance-editing-control-templates_5.png)
+
+Let's assume you just need to style one specific instance of the control and you have chosen to extract the style with a resource key in the current document. **Example 2** shows the generated XAML code.
+
+#### __[XAML] Example 2: The generated XAML code__
 
 {{region styling-apperance-editing-control-templates_1}}
 	<Window>
-	    ...
 	    <Window.Resources>
 	        <Style x:Key="RadListBoxStyle1" TargetType="{x:Type telerik:RadListBox}" BasedOn="{StaticResource RadListBoxStyle}">
 	            <Setter Property="Template">
@@ -116,12 +124,8 @@ Let's assume you just need to style one specific instance of the Control and you
 	        <telerik:RadListBox Style="{StaticResource RadListBoxStyle1}" ItemsSource="{Binding ListBoxItems}" />
 	    </Grid>
 	<Window>
-	{{endregion}}
+{{endregion}}
 
+## See Also
 
-
-
-
-# See Also
-
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

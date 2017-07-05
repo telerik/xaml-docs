@@ -10,19 +10,83 @@ position: 1
 
 # Tooltip
 
-RadChartView provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The tooltip is triggered by setting the __ToolTipTemplate__ property of __ChartToolTipBehavior__ to a valid DataTemplate object during design-time and positioning the mouse cursor down somewhere on the chart during run-time. If the user hovers directly over a data point, the tooltip will display information for this particular data point.      
+RadChartView provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The tooltip is enabled by adding __ChartToolTipBehavior__ in the __Behaviors__ collection of RadCartesianChart. To display it you can position the mouse cursor over a data point visual.
 
 
->By default the tooltips of series are shown for their datapoints only. By default each bar represents a datapoint for Bar series, but for Line, Spline and Area series the datapoints are the points that connect the line segments. You should specify the desired shape, color and size for these points to be visualized using PointTemplate. Without it you won't see practically no point and respectively no tooltip for these series.
+>important By default the tooltips of series are shown for their data points only. Each bar represents a datapoint for Bar series, but for Line, Spline and Area series the datapoints are the points that connect the line segments. You should specify the desired shape, color and size for these points to be visualized using [DefaultVisualStyle or PointTemplate]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}). Without it practically you won't see a point and respectively there won't be a tooltip for these series.
 
-The user has full control over the visualization of the tooltip itself and over the information that the tooltip will display. The visualization is represented by the ToolTipTemplate but where will the tooltip information come from? What will the data template contents be bound to? In order to define the information that will be visualized the user can provide a custom view model object to which the ToolTipTemplate will be bound.
+The user has control over the visualization of the tooltip information and the provided data context. This is done via the __TooltipTemplate__ property which is exposed both by RadCartesianChart and the corresponding series. This allows you to define a custom template on a chart's level for all series and additionally to define different templates for each series. The TooltipTemplate property of the series has a higher priority than the TooltipTemplate of the chart, thus it will override it on a series level.
 
-In this section we will create a custom tool tip that will display the growing or shrinking profits of a fictitious company for each quarter over one year. Even though it will be a bar chart and the bars are more than enough to clearly visualize the relative profits, the example is simple and highlights the usage of RadChartView's tooltip API.
+## Defining Tooltip Behavior
+
+The __ChartToolTipBehavior__ should be added in the __Behaviors__ collection of the chart.
+
+#### __[XAML] Example 1: Defining a tooltip behavior__
+{{region radchart-features-tooltip_8}}
+	<telerik:RadCartesianChart>			
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>            
+
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTooltipBehavior/>
+		</telerik:RadCartesianChart.Behaviors>  
+		
+		<telerik:ScatterPointSeries PointSize="20,20">
+			<telerik:ScatterPointSeries.DataPoints>
+				<telerik:ScatterDataPoint XValue="0.5" YValue="0.5"/>
+				<telerik:ScatterDataPoint XValue="1.0" YValue="1.5"/>
+				<telerik:ScatterDataPoint XValue="2.0" YValue="1.5"/>
+				<telerik:ScatterDataPoint XValue="2.0" YValue="3.0"/>
+				<telerik:ScatterDataPoint XValue="3.0" YValue="2.8"/>
+				<telerik:ScatterDataPoint XValue="3.5" YValue="3.5"/>
+			</telerik:ScatterPointSeries.DataPoints>	
+		</telerik:ScatterPointSeries>
+	</telerik:RadCartesianChart>
+{{endregion}}
+	
+At this point if you hover a data point visual a tooltip with basic information about the data point is displayed.
+
+#### __Figure 1: Default tooltip example__
+![Rad Chart View-Chart Tooltip Behavior 0](images/chartview-features-charttooltipbehavior-0.png)
+
+## Customizing the Tooltip
+
+To customize the apperance of the tooltip you can use the __TooltipTemplate__ property. The property can be found both on the RadCartesianChart and the chart series classes.
+
+#### __[XAML] Example 2: Setting TooltipTemplate of the series__
+{{region radchart-features-tooltip_9}}
+	<telerik:ScatterPointSeries.TooltipTemplate>
+		<DataTemplate>
+			<Border Background="#5A000000" Padding="5" TextElement.Foreground="White">
+				<StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="X=" FontWeight="Bold" />
+						<TextBlock Text="{Binding XValue}"  />
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="Y=" FontWeight="Bold" />
+						<TextBlock Text="{Binding YValue}"  />
+					</StackPanel>
+				</StackPanel>
+			</Border>
+		</DataTemplate>
+	</telerik:ScatterPointSeries.TooltipTemplate>
+{{endregion}}
+
+#### __Figure 2: Custom tooltip example__
+![Rad Chart View-Chart Tooltip Behavior 1](images/chartview-features-charttooltipbehavior-1.png)
+	
+## Example
+
+This section demonstrates how to create a custom tooltip that displays the growth or shrinking profits of a fictitious company for each quarter over one year. Even though it will be a bar chart and the bars are more than enough to clearly visualize the relative profits, the example is simple and highlights the usage of RadChartView's tooltip API.
 
 First we will need a chart, which is bound to a collection of custom objects (refer to [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more details on the binding). The objects in the data source will be used directly as values for the data points as well as content for out tooltips. We create several properties like Quarter, Profit, PreviousQuarter, PreviousDifference, NextQuarter and NextDifference properties for the purpose.
 
-#### __C#__
-
+#### __[C#] Example 3: Defining the Data Model__
 {{region radchart-features-tooltip_5}}
 	public class ProfitDifferenceContext
 	{
@@ -59,10 +123,7 @@ First we will need a chart, which is bound to a collection of custom objects (re
 	}
 {{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __[VB.NET] Example 3: Defining the Data Model__
 {{region radchart-features-tooltip_6}}
 	Public Class ProfitDifferenceContext
 	    Dim _quarter As String
@@ -70,8 +131,7 @@ First we will need a chart, which is bound to a collection of custom objects (re
 	    Dim _previousQuarter As Object
 	    Dim _previousDifference As Double
 	    Dim _nextQuarter As Object
-	    Dim _nextDifference As Double
-	
+	    Dim _nextDifference As Double	
 	
 	    Public Property Quarter() As String
 	        Get
@@ -129,10 +189,9 @@ First we will need a chart, which is bound to a collection of custom objects (re
 	End Class
 {{endregion}}
 
-We should set data to the values so that it will be able to display information about the currently hovered data point via the ToolTipTemplate.
+We should set data to the values so that it will be able to display information about the currently hovered data point via the TooltipTemplate.
 
-#### __C#__
-
+#### __[C#] Example 4: Populating and setting the data__
 {{region radchart-features-tooltip_7}}
 	public MainPage()
 	{
@@ -175,26 +234,22 @@ We should set data to the values so that it will be able to display information 
 	}
 {{endregion}}
 
-#### __XAML__
-
+#### __[XAML] Example 5: Defining the view__
 {{region radchart-features-tooltip_0}}
 	<telerik:RadCartesianChart x:Name="chart">	
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
 		</telerik:RadCartesianChart.HorizontalAxis>
-
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis/>
 		</telerik:RadCartesianChart.VerticalAxis>
-
 		<telerik:BarSeries CategoryBinding="Quarter" ValueBinding="Profit"/>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
 Now we need to define our tooltip behavior and set its tool tip template. It will display the value of the selected data point and also how this value relates to the previous and next quarters.
 
-#### __XAML__
-
+#### __[XAML] Example 6: Defining the tooltip behavior and the tooltip template__
 {{region radchart-features-tooltip_1}}
 	<telerik:RadCartesianChart.Behaviors>
 		<telerik:ChartTooltipBehavior Placement="Top" VerticalOffset="20" />
@@ -243,10 +298,9 @@ Now we need to define our tooltip behavior and set its tool tip template. It wil
 	</telerik:RadCartesianChart.TooltipTemplate>
 {{endregion}}
 
-Here are the binding converters and their implementations:
+The example uses couple of custom binding converters to pretify the visualization. You can find their implementation.
 
-#### __XAML__
-
+#### __[XAML] Example 7: Defining converters in the Resources of the chart__  
 {{region radchart-features-tooltip_2}}
 	<telerik:RadCartesianChart.Resources>
 	       <local:ProfitToBrushConverter x:Key="ProfitToBrushConverter"/>
@@ -254,8 +308,7 @@ Here are the binding converters and their implementations:
 	</telerik:RadCartesianChart.Resources>
 {{endregion}}
 
-#### __C#__
-
+#### __[C#] Example 8: Converters implementation__  
 {{region radchart-features-tooltip_3}}
 	public class QuarterToVisibilityConverter : IValueConverter
 	{
@@ -295,8 +348,7 @@ Here are the binding converters and their implementations:
 	}
 {{endregion}}
 
-#### __VB.NET__
-
+#### __[VB.NET] Example 8: Converters implementation__  
 {{region radchart-features-tooltip_4}}
 	Public Class QuarterToVisibilityConverter
 	    Implements IValueConverter
@@ -338,6 +390,9 @@ Here are the binding converters and their implementations:
 	End Class
 {{endregion}}
 
-The result can be seen below:
+#### __Figure 3: Example result__
+![Rad Chart View-Chart Tooltip Behavior 2](images/chartview-features-charttooltipbehavior-2.png)
 
-![Rad Chart View-chart tooltips](images/RadChartView-chart_tooltips.png)
+## See Also
+* [Getting Started]({%slug radchartview-introduction%})
+* [ScatterPointSeries]({%slug radchartview-series-scatterpointseries%})

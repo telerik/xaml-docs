@@ -26,11 +26,72 @@ a img {
     border-width: 0;
 }
 
+.TK-Hat {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #eff0f1;
+    color: #4d4f52;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 42042;
+}
+.TK-Hat::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.TK-Hat *,
+.TK-Hat:after,
+.TK-Hat:before {
+    box-sizing: border-box;
+}
+.TK-Hat-Brand {
+    float: left;
+    width: 150px;
+    margin: 0;
+}
+.TK-PRGS-Logo {
+    display: block;
+    outline: none!important;
+    text-decoration: none!important;
+    transition: color .1s linear, background .1s linear, opacity .1s linear;
+}
+.TK-PRGS-Logo:focus,
+.TK-PRGS-Logo:hover {
+    opacity: .75;
+}
+.TK-PRGS-Logo svg {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 1100px) and (min-width: 880px) {
+   .TK-Hat-Brand {
+         width: 120px;
+         min-width: 120px;
+     }
+}
+@media only screen and (max-width: 880px) {
+    .TK-Hat-Brand {
+        width: 100px;
+        min-width: 100px;
+    }
+}
+
 /* Header */
 
 #page-header {
     background-color: #2a2d33;
     font-size: 12px;
+    padding: 20px 0 20px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 41px;
+    z-index: 100;
 }
 
 #page-header:after {
@@ -47,10 +108,12 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-    margin-left: 1.833em;
-    margin-top: 1em; 
-	margin-bottom: 1.6em;
 	width: 327px;
+}
+
+#logo-bar a,
+#logo-bar-sl a{
+    display: inline-block;
 }
 
 #logo-bar-sl {
@@ -81,9 +144,9 @@ a img {
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
-    line-height: 0.933em;
-    margin: 1.467em 0.267em;
-    padding: 0.667em 2em;
+    line-height: 1.33334;
+    margin: 1px 4px 0 4px;
+    padding: 6px 30px;
     position: relative;
     text-align: center;
     transition-duration: 0.2s;
@@ -148,14 +211,15 @@ a img {
     background: transparent; 
     display: none; 
     position: relative;
-    margin-left: 1.833em;
     cursor: pointer;
+    vertical-align: top;
+    margin: 8px 0 0 0;
 }
 
 #page-search {
     margin: 0;
     position: absolute;
-    top: 10px;
+    top: 9px;
     background-color: transparent;
     padding: 0;
     right: 514px;
@@ -456,6 +520,7 @@ a img {
     overflow: hidden;
     margin: 0;
 	clear: both;
+    top: 118px;
 }
 
 #page-inner-content:after {
@@ -650,6 +715,7 @@ a.footer-links:hover {
 
 #logo-bar ul,
 #logo-bar-sl ul {
+    float: left;
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -674,8 +740,10 @@ a.footer-links:hover {
 }
 
 .logo {
-    font-size: 14px;
-    margin-left: 29px;
+    font-size: 14px;   
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .logo em {
@@ -798,6 +866,10 @@ header, nav, section, article, aside, footer {
 } 
 
 @media (max-width: 1200px) {
+    #page-edit-link{
+        display: none;
+    }
+
 	#logo-bar,
 	#logo-bar-sl{
         float: none;
@@ -806,7 +878,7 @@ header, nav, section, article, aside, footer {
     }
 
     #page-nav {
-       width: 30%; 
+       min-width: 300px; 
     }
     
     #markdown-toc,
@@ -1122,7 +1194,7 @@ header, nav, section, article, aside, footer {
 	background: #9FA8DA;
 }
 .materialtheme-ripplebrush{
-	background: #FFFFFFFF;
+	background: #FFFFFF;
 }
 .materialtheme-dividersolidbrush{
 	background: #E1E1E1;
@@ -1504,7 +1576,7 @@ header, nav, section, article, aside, footer {
 
 @media (max-width: 450px) {
 	header {
-		height: 85px;
+		height: 77px;
 	}
 
 	#logo-bar, 
@@ -1512,21 +1584,9 @@ header, nav, section, article, aside, footer {
 		position: absolute;
 	}
 	
-	#logo-bar  a img {
-		width: 287px;
-	}
-	
-	#logo-bar-sl a img{
-		width: 334px;
-	}
-	
 	#page-header .show-search {
 		display:none;
-	}
-	
-	.toggle-nav {
-		top: 31px;
-	}
+	}	
 }
 
 

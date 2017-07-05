@@ -65,7 +65,7 @@ Since this string carries no meaning for the glyph it relates to, we are providi
 
 Furthermore that allows inclusions to the __TelerikWebUI__ font as it is extended occasionally, sometimes shifting the numbers of some of the existing glyphs. The resource dictionary is updated and shipped with the font in the assembly with every change, without a need for changes in the already existing projects.
 
-In order to use the glyph references and the font as __StaticResources__ in a project, you need to include the __Telerik.Windoes.Controls.dll__ and merge the required dictionary in the application resources.
+In order to use the glyph references and the font as __StaticResources__ in a project, you need to include the __Telerik.Windows.Controls.dll__ and merge the required dictionary in the application resources.
 
 #### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 

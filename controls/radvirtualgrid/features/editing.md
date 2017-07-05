@@ -26,6 +26,22 @@ Through this event a custom editor for handling the editing operation can be def
 
 * __EditorProperty__: The editor's dependency property that is to be edited
 
+> The property of the editor that is being edited needs to be set manually as well.
+
+#### __[C#] Example 1: Handling the EditorNeeded event__
+
+{{region radvirtualgrid-features_editing_0}}
+	private void VirtualGrid_EditorNeeded(object sender, 
+            Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs e)
+        {
+            TextBox tb = new TextBox();
+
+            e.Editor = tb;
+            tb.Text = String.Format("{0}.{1}", e.RowIndex, e.ColumnIndex);
+            e.EditorProperty = TextBox.TextProperty;
+        }
+{{endregion}}
+
 ## EditorValueChanged
 
 This event is triggered each time the underlying property value that is edited has been changed. Similarly to the previously discussed __EditorNeeded__ event, the __EditorValueChanged__'s event arguments expose the __ColumnIndex__ and __RowIndex__ properties. Furthermore, they provide information regarding the user input through the __Value__ property.
@@ -36,9 +52,19 @@ The event is raised when the user ends editing the cell by setting the focus to 
 
 ## PushCellValue
 
-When an edit is committed, the new property value needs to be manually pushed to the underlying source and to __RadVirtualGrid__ as well. The control exposes the __PushCellValue__ method for updating the UI. It accepts the following parameters.
+When an edit is committed, the new property value needs to be manually pushed to the underlying source and to __RadVirtualGrid__ as well. The control exposes the __PushCellValue__ method for updating the UI. The method can be used in conjunction with the aforementioned __CellEditEnded__ event handler. It accepts the following parameters. 
 
 * __PushCellValue(int columnIndex, int rowIndex, object value)__
+
+#### __[C#] Example 2: Updating RadVirtualGrid with the modified data__
+	
+{{region radvirtualgrid-features_editing_1}}
+	private void VirtualGrid_CellEditEnded(object sender, 
+            Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
+        {
+            this.VirtualGrid.PushCellValue(e.ColumnIndex, e.RowIndex, e.Value);
+        }
+{{endregion}}
 
 ## See Also
 

@@ -5,7 +5,7 @@ description: Data Providers
 slug: radrichtextbox-features-data-providers
 tags: data,providers
 published: True
-position: 3
+position: 1
 ---
 
 # Data Providers

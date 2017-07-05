@@ -309,7 +309,7 @@ If you want to translate your controls to a language different from the default 
 	  Return MyBase.GetStringOverride(key)
 	 End Function
 	End Class
-{{endregion}}
+{{endregion}} 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 

@@ -51,7 +51,6 @@ A complete list with all key features can be found in the [Key Features]({%slug 
 
 >tip Get started with the control with its [Getting Started]({%slug radtabcontrol-getting-started%}) help article that shows how to use it in a basic scenario.
 
-<!-- -->
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#TabControl/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also

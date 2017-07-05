@@ -12,43 +12,40 @@ position: 0
 
 {% if site.site_name == 'Silverlight' %}![Rad Ribbon View sl icon](images/RadRibbonView_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Ribbon View wpf icon](images/RadRibbonView_wpf_icon.png){% endif %}
 
-Thank you for choosing Telerik __RadRibbonView__!				
+Thank you for choosing Telerik __RadRibbonView__!
 
-Telerik {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ is an easy-to-use implementation of the Microsoft Office 2010 “ribbon” UI, which allows you to codelessly organize the navigation functionality of your application into a single compact toolbar control. Its popup engine, dynamic resizing and powerful customization capabilities make the  {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} RibbonView your shortcut to creating powerful navigation systems.
+__RadRibbonView__ is an easy-to-use implementation of the MS Office “ribbon” UI, which allows you to codelessly organize the navigation functionality of your application into a single compact toolbar control. Its popup engine, dynamic resizing and powerful customization capabilities make the RibbonView your shortcut to creating powerful navigation systems.
 
-![](images/RibbonView_overview_office.jpg)
+![](images/ribbonview-overview-0.png)
 
-__RadRibbonView__ key features list:				
+## Key Features	
 
-* __MS Office 2010 Interface at your Fingertips__
+* __MS Office Interface at your Fingertips__: The RibbonView control provides a UI very similar to the one provided by the MS Office ribbon.
 
-* __Automatic Resizing and Minimization__
+* __Automatic Resizing and Minimization__: The ribbon provides built-in mechanisms that allows you to minimize and automatically resize the ribbon content. Read more about this in the [Minimization]({%slug radribbonview-minimization%}) and [Resizing]({%slug radribbonview-resizing%}) articles.
 
-* __Galleries and Pop-ups__
+* __Rich Set of Ribbon Specific Controls__: The ribbon control works with special components (buttons, galleries, tabs, groups, etc.). Read more about this in the [Ribbon Controls]({%slug radribbonview-ribbon-tab%}) section.
 
-* __Application Menu, Recent Documents Menu__
+* __Application Menu, Recent Documents Menu__: The ribbon allows you to open a backstage menu where you can display information related to the content. Read more about this in the [Ribbon Backstage]({%slug radribbonview-ribbon-backstage%}) and [Application Menu]({%slug radribbonview-applicationmenu%}) articles.
 
-* __Quick Access Toolbar__
+* __Quick Access Toolbar__: The quick access toolbar is easily accessible toolbar displayed in the header of the ribbon where you can place buttons for quick actions as print, copy, etc. Read more about this in the [Quick Access Toolbar]({%slug radribbonview-qat%}) article.
 
-* __Nested Controls__
+* __Screen Tips__: The ribbon allows you to display a small window that appears when the mouse cursor is hovered over an icon or a ribbon element (command). The popup window will provide details that explain the command's function. Read more about this in the [Screen Tips]({%slug radribbonview-screentips%}) article.
 
-* __Screen Tips__
+* __Commands Support__: RadRibbonView supports several commands that allow you to execute and override some of the ribbon actions. Read more about this in the [Commands Support]({%slug radribbonview-features-commands-support%}) article.
 
-* __Styling and Appearance__
+* __Keyboard Support__: The control supports two types of keyboard navigation - via key tips and via arrow keys. Read more about this in the [Keyboard Support]({%slug radribbonview-keyboard-support%}) article.
 
-* __Commands Support__
+* __Localization Support__: Localization is the translation of application resources into localized versions for the specific cultures that the application supports. Read more about this in the [ribbon specific]({%slug radribbonview-localization%}) and [common]({%slug common-localization%}) Localization articles.
 
-* __Localization Support__
+A complete list with all the key features can be found in the [Key Features]({%slug radribbonview-key-features%}) article.
 
-* __Enhanced Routed Events Framework__
+>tip Get started with the control with its [Getting Started]({%slug radribbonview-gettingstarted%}) help article that shows how to use it in a basic scenario.
 
-* __All Telerik controls for__
+<!-- -->
+> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#RibbonView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
-* __WPF/Silverlight Code Compatibility__
-
-* __Codeless Test Automation for Scheduler__
-
-A complete list with all the key features can be found [here]({%slug radribbonview-key-features%}).
-{% if site.site_name == 'Silverlight' %}
-Check out the online demo at: [http://demos.telerik.com/silverlight/#RibbonView/Word](http://demos.telerik.com/silverlight/#RibbonView/Word)
-{% endif %}
+## See Also  
+* [Visual Structure]({%slug radribbonview-visual-structure%})
+* [Functional Structure]({%slug radribbonview-functional-structure%})
+* [Contextual Tabs]({%slug radribbonview-contextual-tabs%})

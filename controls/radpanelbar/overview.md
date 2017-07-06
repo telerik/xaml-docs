@@ -10,14 +10,14 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![panelbar wpf icon](images/panelbar_wpf_icon.png){% endif %}
-{% if site.site_name == 'Silverlight' %}![panelbar sl icon](images/panelbar_sl_icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![RadPanelBar for WPF icon](images/panelbar_wpf_icon.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![RadPanelBar for Silverlight icon](images/panelbar_sl_icon.png){% endif %}
 
 Thank you for choosing Telerik __RadPanelBar__!  
 
-__RadPanelBar__ is a versatile component allowing you to build different navigation systems such as left/right side menus and Outlook style panels. The templating mechanism of the control provides the ability to customize the control so that it can represent a site navigation system.
+__RadPanelBar__ is a versatile component allowing you to build different navigation systems such as left/right side menus and Outlook style panels. The templating mechanism of the control provides the ability to customize it so that it can represent a site navigation system.
 
-![](images/panelbar-overview-0.png)
+![RadPanelBar Overview](images/panelbar-overview-0.png)
 
 ## Key Features
 
@@ -33,7 +33,8 @@ __RadPanelBar__ is a versatile component allowing you to build different navigat
 
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#PanelBar/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
-## See Also  
+## See Also
+
 * [Structure]({%slug radpanelbar-structure%})
 * [Bind to object]({%slug radpanelbar-object-data%})
 * [Developer Focused Examples]({%slug radpanelbar-sdk-examples%})

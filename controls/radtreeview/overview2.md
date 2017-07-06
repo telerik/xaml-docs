@@ -58,8 +58,8 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#TreeView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
-## See Also  
-* [Getting Started with RadTreeView - Video Tutorial](http://tv.telerik.com/silverlight/video/introduction-radtreeview-silverlight)
+## See Also
+
 * [Visual Structure]({%slug radtreeview-visual-structure%})
 * [Getting Started]({%slug radtreeview-getting-started%})
 * [Styles and Templates]({%slug radtreeview-styling-and-appearance-overview2%})

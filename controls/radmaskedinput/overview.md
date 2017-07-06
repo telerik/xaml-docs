@@ -10,12 +10,12 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![maskedinput sl icon](images/maskedinput_sl_icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![maskedinput wpf icon](images/maskedinput_wpf_icon.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![RadMaskedInput for Silverlight Icon](images/maskedinput_sl_icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![RadMaskedInput for WPF Icon](images/maskedinput_wpf_icon.png){% endif %}
 
 __RadMaskedInput__ controls allow controlled data input in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. They enhance the functionality of a TextBox by adding input validation and masks, such as date, IP Address, SSN, phone number, digits, currency and decimals.				
 
-![](images/maskedinput-overview-0.png)
+![RadMaskedInput Overview](images/maskedinput-overview-0.png)
 
 ## Key Features
 
@@ -44,6 +44,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 >Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#MaskedInput/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
+
  * [GettingStarted]({%slug radmaskedinput-getting-started%})
  * [MaskedInputExtensions]({%slug radmaskedinput-features-extensions%})
  * [Placeholder]({%slug radmaskedinput-features-placeholder%})

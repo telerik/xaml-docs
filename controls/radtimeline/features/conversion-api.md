@@ -21,6 +21,6 @@ __RadTimeline__ allows you to convert a screen coordinates (a Point), to a DateT
 	}
 {{endregion}}
 
-### See Also
+## See Also
  * [Getting Started]({%slug radtimebar-mvvm-support%})
  * [Properties]({%slug radtimebar-properties%})

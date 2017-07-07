@@ -2,7 +2,9 @@ module Reading
   class TabbedCodeGenerator < Jekyll::Generator
 		def generate(site)				
 			@headerSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*/ 
-			@snippetSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\n*\r*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)*{{endregion}}/ # gets the whole snippet portion - header + region tags + code snippet
+			@snippetSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\s*(>\n*)*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)+?(>?{{endregion}})/ # gets the whole snippet portion - header + region tags + code snippet			
+			# @snippetSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\n*\r*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)*{{endregion}}/ # gets the whole snippet portion - header + region tags + code snippet
+			# @snippetSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\s*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)*{{endregion}}/ # gets the whole snippet portion - header + region tags + code snippet
 			@regionsPattern = /{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*)*{{endregion}}/ # gets the region tags and the content between them
 			@regionStartPattern = /{{region\s.*}}/
 			@regionEndPattern = /{{endregion}}/
@@ -115,13 +117,18 @@ module Reading
 			codeSnippetStartIndex = regionSnippet.index(@regionStartPattern) + regionMatch.length
 			codeSnippetEndIndex = regionSnippet.index(@regionEndPattern);
 			codeSnippet = regionSnippet[codeSnippetStartIndex..codeSnippetEndIndex - 1]
-			
-			htmlBlock = encodeLiquid(codeSnippet)
-			htmlBlock = @converter.convert(htmlBlock)			
-			htmlBlock = encodeNewLines(htmlBlock)
+						
+			codeSnippet = removeBlockquote(codeSnippet)						
+			htmlBlock = encodeLiquid(codeSnippet)			
+			htmlBlock = @converter.convert(htmlBlock)
+			htmlBlock = encodeNewLines(htmlBlock)			
 			
 			return htmlBlock
 		end	
+		
+		def removeBlockquote(content)
+			content = content.gsub(/\n>/, '')
+		end
 		
 		def encodeNewLines(content)
 			content = content.gsub("\n","&#13;")

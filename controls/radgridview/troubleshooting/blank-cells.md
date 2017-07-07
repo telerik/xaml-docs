@@ -18,11 +18,11 @@ When you use the [GridViewComboBoxColumn]({%slug radgridview-columns-column-type
 
 __CAUSE__
 
-First you need to check
+First you need to check:
 
-* the __Output for Binding exceptions__
+* The Output for Binding exceptions
 
-* if the __types are of the same type__
+* If the types are of the same type
 
 If you do not encounter any of the above mentioned problems, then you probably use ElementName binding for that column, e.g.
 

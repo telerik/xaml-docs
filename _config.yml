@@ -515,6 +515,9 @@ navigation:
         title: RadTreeMap
     controls/radtreeview:
         title: RadTreeView
+    controls/radtreeview/how-to/drag-and-drop:
+        title: Drag and Drop
+        position: 0
     controls/radupload:
         title: RadUpload
     controls/radupload/features:

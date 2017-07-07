@@ -229,7 +229,7 @@ In **Example 1** we've changed the control template so that all disabled cells h
 
 Similarly, you can define the visual state in **Example 2** so that there's no visual difference between enabled and disabled cells.
 
-#### [XAML] __Example 2: No visual difference between enabled and disabled cells__
+#### __[XAML] Example 2: No visual difference between enabled and disabled cells__
 
 {{region xaml-gridview-how-to-set-background-disabled-cell_1}}
 	<VisualState x:Name="Disabled">

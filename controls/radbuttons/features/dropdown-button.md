@@ -103,4 +103,5 @@ The drop down button supports popup animations which are triggered when the drop
  * [Commands]({%slug radbuttons-features-commands%})
  * [Button]({%slug radbuttons-features-button%})
  * [Split Button]({%slug radbuttons-features-split-button%})
+ * [Events]({%slug radbuttons-events%})
  * {% if site.site_name == 'Silverlight' %}[DropDown Button API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_raddropdownbutton.html){% endif %}{% if site.site_name == 'WPF' %}[DropDown Button API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_raddropdownbutton.html){% endif %}

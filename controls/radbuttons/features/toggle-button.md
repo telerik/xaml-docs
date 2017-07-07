@@ -10,18 +10,16 @@ position: 4
 
 # Toggle Button
 
-__RadToggleButton__ inherits from the native __ToggleButton__ control and implements the [ICommandSource](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. Because of the inheritance, it has all of the features of the native __ToggleButton__ control has. The __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
-
->tip To learn more about the members of the RadToggleButton class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.
+__RadToggleButton__ inherits from the native __ToggleButton__ control and implements the [ICommandSource](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. Because of the inheritance, it has all of the features of the native __ToggleButton__ control. The __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
-## Instantiating RadToggleButton
+#### __Figure 1: Toggle button__
+![](images/radbuttons-features-toggle-button-0.png)
 
-You can instantiate __RadToggleButton__ in both XAML and code. Here is an example:		
+## Defining RadToggleButton
 
-> RadToggleButton is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly.{% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
->Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
+You can instantiate __RadToggleButton__ in both XAML and code as shown in Examples 1 and 2.
 
 #### __[XAML] Example 1: Defining a button in XAML__
 {{region xaml-radbuttons-features-toggle-button_0}}
@@ -38,13 +36,28 @@ You can instantiate __RadToggleButton__ in both XAML and code. Here is an exampl
 	Dim radToggleButton As New RadToggleButton()
 {{endregion}}
 
-## Handling the Button Checked Event
+## Enable Three State Mode
 
-To execute some logic when __RadToggleButton__ gets toggled, you have to handle the __Checked__ event.
+To make __RadToggleButton__ to go into a three state mode you can just set its __IsThreeState__ property to __True__.
 
->tip As any other button __RadToggleButton__ exposes a __Click__ event, too.
+#### __[XAML] Example 5: Enabling the three-state mode__
+{{region xaml-radbuttons-features-toggle-button_6}}
+	<telerik:RadToggleButton IsThreeState="True" />
+{{endregion}}
 
-Here is an example of handling the __Checked__ event of a button.		
+## Toggle Events
+
+The button provides a set of events that are fired when you toggle it. 
+
+* __Checked__: This event is fired when the button is toggled on.
+* __Unchecked__: This event is fired when the button is toggled off.
+* __Activate__: This event is fired when the button is toggled on or off.
+
+>tip As any other button, RadToggleButton exposes a __Click__ event, too. Additionally, the control has __PreviewClick__ event.
+
+The toggle state of the button can be manually controlled via its __IsChecked__ property.
+
+Here is an example of handling the __Checked__ event of a button.
 
 #### __[XAML] Example 3: Subscribing to the Checked event__
 {{region xaml-radbuttons-features-toggle-button_3}}
@@ -66,25 +79,20 @@ Here is an example of handling the __Checked__ event of a button.
 	End Sub
 {{endregion}}
 
->important RadToggleButton also exposes Unchecked event that is called when the button is unchecked. The same handling (as with the Checked event) applies for the Unchecked event.
-
-## Three State RadToggleButton
-
-To make __RadToggleButton__ to go into a three state mode you just have to set its __IsThreeState__ property to __True__. Here is an example:		
-
-#### __[XAML] Example 5: Enabling the three-state mode__
-{{region xaml-radbuttons-features-toggle-button_6}}
-	<telerik:RadToggleButton IsThreeState="True" />
-{{endregion}}
-
 ## Customizing RadToggleButton
 
-* __IsBackgroundVisible__: this property controls the visibility of the background and the border of __RadToggleButton__ in normal state
+* __IsBackgroundVisible__: This property controls the visibility of the background and the border of the button when in normal state.
+	#### __Figure 2: Toggle button with hidden background__
+	![](images/radbuttons-features-toggle-button-1.png)
 
-* __CornerRadius__: this property controls the __CornerRadius__ of __RadToggleButton__ 		  
+* __CornerRadius__: This property controls the corner radius of the button.
+	#### __Figure 3: Toggle button with its CornerRadius set to 15__
+	![](images/radbuttons-features-toggle-button-2.png)
 
-## See Also
+## See Also 
  * [Button]({%slug radbuttons-features-button%})
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Commands]({%slug radbuttons-features-commands%})
+ * [Events]({%slug radbuttons-events%})
  * [Appearance]({%slug radbuttons-features-appearance%})
+ * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.

@@ -24,7 +24,7 @@ This section describes the keyboard shortcuts used by RadAutoCompleteBox.
 
 * __Enter__: Closes the DropDown if it is open and selects the currently highlighted item.
 
-* __Escape__: Closes the DropDown and deletes the last non autocompleted entered text.
+* __Escape__: Closes the DropDown and deletes the last entered text which has not been autocompleted.
 
 >When an item is selected with the keyboard, it should be scrolled into the viewport and made visible.
 
@@ -54,7 +54,7 @@ A possible scenario would be to select the highlighted item and move the focus t
 
 #### __[VB.NET] Example 1: Overriding the HandleKeyDown method__
 
-{{region cs-radautocompletebox-features-keyboard-support-0}}
+{{region vb-radautocompletebox-features-keyboard-support-0}}
 	Public Class CustomAutoCompleteBox
 	Inherits RadAutoCompleteBox
 
@@ -78,3 +78,8 @@ __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAut
 {{region xaml-radautocompletebox-features-keyboard-support-0}}
 	<telerik:RadAutoCompleteBox telerik:TabNavigationExtensions.IsTabStop="False" />
 {{endregion}}
+
+## See Also
+
+* [Key Properties]({%slug radautocompletebox-features-key-properties%})
+* [Filtering Behavior]({%slug radautocompletebox-features-filteringbehavior%})

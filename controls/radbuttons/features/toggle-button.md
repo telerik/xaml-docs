@@ -28,12 +28,14 @@ You can instantiate __RadToggleButton__ in both XAML and code as shown in Exampl
 
 #### __[C#] Example 2: Defining a button in code__
 {{region cs-radbuttons-features-toggle-button_1}}
-	RadToggleButton radToggleButton = new RadToggleButton();
+	RadToggleButton radToggleButton = new RadToggleButton() { Content = "Toggle Me!" };
 {{endregion}}
 
 #### __[VB.NET] Example 2: Defining a button in code__
 {{region vb-radbuttons-features-toggle-button_2}}
-	Dim radToggleButton As New RadToggleButton()
+	Dim radToggleButton As New RadToggleButton() With { _
+	    .Content = "Toggle Me!" _
+	}
 {{endregion}}
 
 ## Enable Three State Mode

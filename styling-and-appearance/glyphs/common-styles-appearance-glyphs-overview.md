@@ -46,35 +46,42 @@ The available glyphs are separated in several groups, based on their usage:
 The glyphs are basically text shapes, so they need to be hosted in a control with a text contents. Recommended for this is a __TextBlock__ as it has no special styling.
 
 #### __[XAML] Example 1: Using glyphs__
+{{region common-styling-appearance-glyphs-overview-0}}
 	<TextBlock FontFamily=”{StaticResource TelerikWebUI}” 
 			   FontSize=”16” 
 			   Text=”{StaticResource GlyphHeart}” 
 			   FontWeight=”Normal” 
 			   Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”/>
+{{endregion}}
 
 The content of the text-hosting element is set in a string with format *&#xe[3-digit number];*
 
 Since this string carries no meaning for the glyph it relates to, we are providing a dictionary with key-value pairs for all available glyphs. This enables the usage of more meaningful references for the needed glyphs.
 
 #### __[XAML] Example 2: Setting a glyph__
+{{region common-styling-appearance-glyphs-overview-1}}
 	<!-- Glyph string -->
 	<TextBlock Text="&#xe101;" /> 
 	
 	<!-- Meaningful reference name -->
 	<TextBlock Text="{StaticResource GlyphRedo}" /> 
+{{endregion}}
 
 Furthermore that allows inclusions to the __TelerikWebUI__ font as it is extended occasionally, sometimes shifting the numbers of some of the existing glyphs. The resource dictionary is updated and shipped with the font in the assembly with every change, without a need for changes in the already existing projects.
 
 In order to use the glyph references and the font as __StaticResources__ in a project, you need to include the __Telerik.Windows.Controls.dll__ and merge the required dictionary in the application resources.
 
 #### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
+{{region common-styling-appearance-glyphs-overview-2}}
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
+{{endregion}}
 
 In the UI for WPF controls the needed resources are provided, so this inclusion is required only in case you would like to use the font and the glyphs in your custom project.
 
 Changing the glyphs’ color is achieved by changing the foreground of the holding element, in the same manner as the foreground of a regular font. This is extremely useful in scenarios when the background of the control changes in different interaction states (see __Example 4__).
 
 #### __[XAML] Example 4: Setting glyph foreground__
+{{region common-styling-appearance-glyphs-overview-3}}
 	<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10">
 		<TextBlock Text="{StaticResource GlyphLock}" 
 		           FontFamily="{StaticResource TelerikWebUI}" 
@@ -82,6 +89,7 @@ Changing the glyphs’ color is achieved by changing the foreground of the holdi
 				   Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, 
 				   Path=(TextElement.Foreground)}" />
 	</telerik:RadToggleButton>
+{{endregion}}
 
 #### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
 ![](images/common-styling-appearance-glyphs-overview-0.png)
@@ -89,6 +97,7 @@ Changing the glyphs’ color is achieved by changing the foreground of the holdi
 __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or unchecked.
 
 #### __[XAML] Example 5: Dynamic glyph change__
+{{region common-styling-appearance-glyphs-overview-4}}
 	<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
 		<TextBlock FontFamily="{StaticResource TelerikWebUI}" FontSize="16"
 			   Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Path=(TextElement.Foreground)}" />
@@ -105,6 +114,7 @@ __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton_
 			</Style>
 		</telerik:RadToggleButton.Resources>
 	</telerik:RadToggleButton>
+{{endregion}}
 
 #### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
 ![](images/common-styling-appearance-glyphs-overview-1.png)

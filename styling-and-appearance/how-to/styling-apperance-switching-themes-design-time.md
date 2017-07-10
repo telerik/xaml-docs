@@ -30,6 +30,7 @@ This will automatically add the new theme dll in the references of the project a
 ![](images/styling-apperance-switching-themes-design-time-03.png)
 
 #### __[XAML] Example 1: The merged theme resources__
+{{region styling-apperance-swiching-themes-design-time-0}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -38,6 +39,7 @@ This will automatically add the new theme dll in the references of the project a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
+{{endregion}}
 
 {% if site.site_name == 'WPF' %}> You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).{% endif %}
 	

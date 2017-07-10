@@ -96,7 +96,9 @@ Let’s add one new appointment to the collection
 Finally, we need to set the AppointmentsSource (note, this is a specialized form of ItemsSource) to our collection,
 
 #### __C#__
+{{region xamlflix-scheduleview-103}}
 	xRadScheduleView.AppointmentsSource = appointments;
+{{endregion}}
 
 Here’s the complete source code for the code-behind page for context,        
 
@@ -681,12 +683,16 @@ We can then populate our ComboResources with a few speakers,
 And now we are ready to add all of these in one go to the Resources collection of newRT, 
 
 #### __C#__
+{{region xamlflix-scheduleview-101}}
 	newRT.Resources.AddRange(ComboResources);
+{{endregion}}
 	
 And let’s add newRT to our collection of ResourceTypes,
 
 #### __C#__
+{{region xamlflix-scheduleview-102}}
 	ResourceTypes.Add(newRT);
+{{endregion}}
 	
 Having created the ComboResources we can make it the ItemsSource for our combo box.  Return to design view,        
 

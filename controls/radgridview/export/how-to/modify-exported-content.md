@@ -2,7 +2,7 @@
 title: Modify Content Before Exporting
 page_title: ExportFormat.Xlsx
 description: ExportFormat.Xlsx
-slug: gridview-export-xlsx
+slug: gridview-export-howto-modify-exported-content
 tags: exportformat.xlsx
 published: True
 position: 7
@@ -27,7 +27,7 @@ __ExportToWorkbook__ and __ExportToRadFixedDocument__ methods use additional lib
 The method exports the associated RadGridView to a Workbook object.
 
 #### __[C#] Example 1: Export RadGridView to a Workbook on Button click:__
- 
+{{region gridview-export-howto-modify-exported-content-0}}
 	  private void Button_Click(object sender, RoutedEventArgs e)
         {
 			//Instantiate the Workbook object
@@ -55,14 +55,14 @@ The method exports the associated RadGridView to a Workbook object.
                 }
             }
         }
-
+{{endregion}}
 
 ## ExportToRadFixedDocument
 
 The method exports the associated RadGridView to a RadFixedDocument object.
 
 #### __[C#] Example 2: Export RadGridView to a RadFixedDocument on Button click:__
-
+{{region gridview-export-howto-modify-exported-content-1}}
 	private void Button2_Click(object sender, RoutedEventArgs e)
         {	
 			//Instantiate the RadFixedDocument object
@@ -89,7 +89,7 @@ The method exports the associated RadGridView to a RadFixedDocument object.
                 }
             }
         }
-
+{{endregion}}
 
 Both methods can be overloaded and take __GridViewDocumentExportOptions__ as parameter. You can use it to set the following export options:
 
@@ -103,11 +103,7 @@ Both methods can be overloaded and take __GridViewDocumentExportOptions__ as par
 >important __ExportToRadFixedDocument__ method utilizes [PdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and __ExportToWorkbook__ method utilizes [SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library. You can check their documentation for more information on how to modify them.
 
 ## See Also
-
  * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Export]({%slug gridview-export%})
-
  * [Export Async]({%slug gridview-export-async%})
-
  * [Export Events]({%slug gridview-export-events%})

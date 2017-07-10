@@ -51,6 +51,7 @@ The __ExportToXlsx__ method uses additional libraries so you need to add referen
 The following example shows how to use the method on a button click:
 
 #### __[C#] Example 1: Use of ExportToXlsx Method__
+{{region gridview-export-xlsx-0}}
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xlsx";
@@ -76,7 +77,7 @@ The following example shows how to use the method on a button click:
 	        }
 	    }
 	}
-
+{{endregion}}
 
 ## Export Default Styles
 
@@ -92,7 +93,7 @@ By default the ExportDefaultStyles property is set to false. You can see the res
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
 #### __[C#] Example 2: Configuring ExportDefaultStyles Setting__
-
+{{region gridview-export-xlsx-1}}
 	gridViewExport.ExportToXlsx(stream,
 	    new GridViewDocumentExportOptions()
 			{
@@ -101,6 +102,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 			    ShowGroupFooters = true,
 			    ExportDefaultStyles = true
 			});   
+{{endregion}}
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
 ![ExportDefaultStyles false](../images/exportdefaultstyles2.png)
@@ -110,7 +112,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
 
 #### __[C#] Example 3: Setting the AutoFitColumnsWidth Property to False__
-
+{{region gridview-export-xlsx-2}}
 	if (dialog.ShowDialog() == true)
 	{
 	    using (Stream stream = dialog.OpenFile())
@@ -126,7 +128,8 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 	            });
 	    }
 	}
-
+{{endregion}}
+	
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
 ![AutoFitColumnsWidth false](../images/autofitcolumnswidth.png)
 
@@ -144,11 +147,7 @@ There are two events related to the exporting of RadGridView with the ExportToXl
 
 
 ## See Also
-
  * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Export]({%slug gridview-export%})
-
  * [Export Async]({%slug gridview-export-async%})
-
  * [Export Events]({%slug gridview-export-events%})

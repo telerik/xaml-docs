@@ -53,7 +53,6 @@ To tell that a specific column belongs to a specific group, you need to set the 
 For example:
 
 #### __[XAML]Example 2: Specify ColumnGroupName for a column__
-
 {{region xaml-gridview-columns-column-headers_4}}
 	<telerik:RadGridView.ColumnGroups>
 	    <telerik:GridViewColumnGroup  Name="VehicleInfo" Header="Vehicle info" />
@@ -84,7 +83,6 @@ __Figure 2:__ Nested ColumnGroups.
 You can define a __custom header__ for the __GridViewColumnGroup__ through its HeaderTemplate:
 
 #### __[XAML]Example 4: Define GridViewColumnGroup.HeaderTemplate__
-
 {{region xaml-gridview-columns-column-headers_6}}
 	<telerik:GridViewColumnGroup Name="Data">
 	    <telerik:GridViewColumnGroup.HeaderTemplate>
@@ -111,6 +109,7 @@ With the new virtualization mode, we can also offer a __better visual representa
 
 For the purpose of demonstration, let's define more illustrative Names:
 #### __[XAML]Example 5: Sample ColumnGroups setup__
+{{region xaml-gridview-columns-column-headers_7}}
 	<telerik:RadGridView.ColumnGroups>			
 		<telerik:GridViewColumnGroup Name="Level2group1">
 			<telerik:GridViewColumnGroup Name="Level1group11"/>
@@ -121,6 +120,7 @@ For the purpose of demonstration, let's define more illustrative Names:
 			<telerik:GridViewColumnGroup Name="Level1group22"/>
 		</telerik:GridViewColumnGroup>
 	</telerik:RadGridView.ColumnGroups>
+{{endregion}}
 
 * In case the user moves the frozen column splitter in a middle of an existing ColumnGroup, then it will be __divided into two separate ColumnGroups__. That way the user can still have __visual representation on the second part when scrolling horizontally__. 
 

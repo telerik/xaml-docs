@@ -125,7 +125,7 @@ As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignm
 
 
 #### __[XAML] Example 5: Setting the Text Properties of GridViewHeaderCell and GridViewColumn__
-
+{{region xaml-gridview-columns-column-headers_3}}
 	<Window.Resources>
 	    <Style TargetType="telerik:GridViewHeaderCell"
 	           		x:Key="HeaderCellStyle">
@@ -158,20 +158,16 @@ As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignm
                                         HeaderTextDecorations="Underline"/>
     	</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
+{{endregion}}
 
 #### Figure 5: Setting the text properties of GridViewHeaderCell and GridViewColumn
 
 ![](images/gridview-header-textproperties.png)
 
 Note, that the first column has a __HeaderCellStyle__ defined, which aligns the content of the __HeaderCell__ to the left, but the __Style__ is not applied, as the __HeaderTextAlignment__ of __GridViewColumn__ is also being set.
-
         
-# See Also
-
- * [Column Footers]({%slug gridview-columns-column-footers%})
- 
+## See Also
+ * [Column Footers]({%slug gridview-columns-column-footers%}) 
  * [Column Groups]({%slug gridview-column-groups%})
-
  * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
-
  * [Resizing Columns]({%slug gridview-columns-resizing-columns%})

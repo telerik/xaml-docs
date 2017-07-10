@@ -59,11 +59,13 @@ The following example demonstrates how to use the __UI Virtualization__ feature 
 When you will try to load this file using the shape-file reader directly like the code below then the performance of zooming and panning will be very low.
 
 #### __XAML__
+{{region radmap-visualization-layer-shapes-virtualization_6}}	
 	<telerik:VisualizationLayer x:Name="visualizationLayer" UseBitmapCache="False">
 		<telerik:VisualizationLayer.Reader>
 			<telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" />
 		</telerik:VisualizationLayer.Reader>
 	</telerik:VisualizationLayer>
+{{endregion}}
 	
 Such performance is a reason to use the __Map Shapes Virtualization__ to improve the performance of rendering.        
 
@@ -449,5 +451,5 @@ The result at ZoomLevel 7:
 The result at ZoomLevel 8:
 ![radmap-visualization-layer-shapes-virtualization 2](images/radmap-visualization-layer-shapes-virtualization_2.png)
 
-# See Also
+## See Also
  * [Items Virtualization]({%slug radmap-visualization-layer-virtualization%})

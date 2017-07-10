@@ -41,11 +41,13 @@ If you want to change the default position of the __Quick Access Toolbar__, set 
 * If you want to change the default __Height__ of the __RadRibbonView__, you can set the __ContentHeight__ property.				  
 
 	#### __XAML__
+	{{region radribbonview-styling-controlling-appearance-0}}
 		<telerik:RadRibbonView ContentHeight="120"
 						   Title="Document1"
 						   ApplicationName="Telerik Word">
 
 		</telerik:RadRibbonView>					  
+	{{endregion}}
 
 	![Rad Ribbon View Styling Appearance Content Height](images/RadRibbonView_Styling_Appearance_ContentHeight.png)
 
@@ -67,7 +69,7 @@ If you want to change the default position of the __Quick Access Toolbar__, set 
 * __Large__
 	![](images/RibbonView_Buttons_Overview_Large.png)
 
-# See Also
+## See Also
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the QuickAccessToolbar]({%slug radribbonview-styling-quickaccesstoolbar%})

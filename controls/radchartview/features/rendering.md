@@ -37,6 +37,7 @@ In order to use the Direct2DRenderOptions, you will need to reference the follow
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 
 #### __XAML__
+{{region radchartview-features-rendering-0}}
 	<telerik:RadCartesianChart.Series>
 	  <telerik:LineSeries>
 		  <telerik:LineSeries.RenderOptions>
@@ -44,6 +45,7 @@ After referencing those binaries, you will be able to set the RenderOptions prop
 		  </telerik:LineSeries.RenderOptions>
 	  </telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
+{{endregion}}
 
 The Direct2DRenderOptions class exposes the following properties:
 
@@ -74,6 +76,7 @@ Using this rendering mode, the __RadChartView__ will create one Bitmap image and
 You can enable this rendering mode with the following code:
 
 #### __XAML__
+{{region radchartview-features-rendering-1}}
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>
 			<telerik:LineSeries.RenderOptions>
@@ -81,12 +84,13 @@ You can enable this rendering mode with the following code:
 			</telerik:LineSeries.RenderOptions>
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
-
+{{endregion}}
+	
 You can control the number of components created to visualize the data points in this rendering mode through the __DefaultVisualsRenderMode__ property. As an enumeration of style __DefaultVisualsRenderModeand__ it provides the following options:
 
 * __Separate__ - the __RadChartView__ component will create a separate visual component for each data point.
 * __Barch__ - the charting control will use one visual element to render all data points.
 
-# See Also
+## See Also
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})
 * [Customizing Series Apperance]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})

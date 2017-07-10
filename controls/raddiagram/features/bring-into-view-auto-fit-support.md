@@ -31,10 +31,12 @@ The AutoFit method tries to adjust the viewport so that all items which are plot
 This section demonstrates the use of the BringIntoView and AutoFit methods. For the sake of the examples the following RadDiagram XAML declaration will be used:
 
 #### __XAML__
+{{region raddiagram-features-bring-into-view-auto-fit-0}}
 	<telerik:RadDiagram x:Name="diagram" Width="600" Height="600">
 		<telerik:RadDiagramShape x:Name="diagramShape" Position="200 160" />
 		<telerik:RadDiagramShape Position="400 860" />
 	</telerik:RadDiagram>
+{{endregion}}
 
 Here is the visual result rendered by the RadDiagram’s definition above:
 ![](images/radidiagram-features-bringintoview-autofit_01.png)
@@ -43,21 +45,27 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 	* __BringIntoView(Rect newViewPort, [bool useAnimation = true])__ – this overload accepts a Rect object that defines the new viewport of the diagram and fits it inside the Rect. The second argument is optional and it determines if the bring into view should be performed with an animation. 
 	
 		#### __C#__
+		{{region raddiagram-features-bring-into-view-auto-fit-1}}
 			this.diagram.BringIntoView(new Rect(220, 180, 300, 100));
+		{{endregion}}
 
 		![](images/radidiagram-features-bringintoview-autofit_02.png)
 
 	* __BringIntoView(object item, [double zoomLevel = 1], [bool useAnimation =  true])__ – this overload accepts an object that contains the shape which should be brought into the view. The last two arguments define the zoom level which should be applied and if an animation should be performed. The shape will be positioned at the center of the viewport.
 	
 		#### __C#__
+		{{region raddiagram-features-bring-into-view-auto-fit-2}}
 			this.diagram.BringIntoView(this.diagramShape);
+		{{endregion}}
 
 		![](images/radidiagram-features-bringintoview-autofit_03.png)
 	
 	* __BringIntoView(Point position, [double zoomLevel = 1], [bool useAnimation =  true])__ – this overload gets a Point object which determines the top left position of the viewport. The last two arguments define the zoom level which should be applied and if an animation should be performed.
 		
 		#### __C#__
+		{{region raddiagram-features-bring-into-view-auto-fit-3}}
 			this.diagram.BringIntoView(new Point(200, 160));
+		{{endregion}}
 		
 		![](images/radidiagram-features-bringintoview-autofit_04.png)
 
@@ -65,18 +73,22 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 	
 	* __AutoFit()__ – this overload will fit the items without using any margin as a white space border.
 		#### __C#__
+		{{region raddiagram-features-bring-into-view-auto-fit-4}}
 			this.diagram.AutoFit();
+		{{endregion}}
 		
 		![](images/radidiagram-features-bringintoview-autofit_05.png)
 		
 	* __AutoFit(Thickness margin, [bool useAnimation = true])__  - this overload accepts a Thickness object as an argument that determines the margin used as a white space border around the diagram items. 
 		
 		#### __C#__
-				this.diagram.AutoFit(new Thickness(100));
+		{{region raddiagram-features-bring-into-view-auto-fit-5}}
+			this.diagram.AutoFit(new Thickness(100));
+		{{endregion}}
 		
 		![](images/radidiagram-features-bringintoview-autofit_06.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Pan and Zoom]({%slug raddiagrams-features-pan-zoom%})
  * [Global Settings]({%slug raddiagram-features-global-settings%})

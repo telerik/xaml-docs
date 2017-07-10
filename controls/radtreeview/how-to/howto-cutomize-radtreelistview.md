@@ -15,6 +15,7 @@ This article will explain why you will benefit from using our __RadTreeListView_
 Those of you who are already familiar with the visual structure of the __RadTreeListView__ control may say that it is much more than a hierarchical control. They would be right, this control derives from our __RadGridView__ and inherits some of its functionalities along with its column generation algorithms. Of course, you may not need all that information and functionality, this is why the __RadTreeListView__ exposes properties that can be used to customize the control. You can practically hide everything that makes it look like __RadGridView__. The following style changes the look of the control and styles it like our __RadTreeView__ control.
 	
 #### __XAML__	
+{{region radtreeview-howto-cutomize-radtreelistview-0}}
 	<Style TargetType="telerik:RadTreeListView" BasedOn="{StaticResource RadTreeListViewStyle}">
 		<Setter Property="VerticalGridLinesBrush" Value="{x:Null}"/>
 		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -33,6 +34,7 @@ Those of you who are already familiar with the visual structure of the __RadTree
 		<Setter Property="BorderBrush" Value="{x:Null}"/>
 		<Setter Property="IsSynchronizedWithCurrentItem" Value="False" />
 	 </Style>
+{{endregion}}
 
 > NoXaml binaries in combination with implicit styles are used for the example in this article. More on the topic is available {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}
 
@@ -49,6 +51,7 @@ The __RadTreeListView__ control is designed to use __TreeListViewTableDefinition
 You should keep in mind that the __RadTreeListView__ is designed to work with homogeneous data, meaning that the control expects that the collection holding the children of each level is always named the same. As the structure that we have is rather heterogeneous we need to create a converter to be used in the binding of the __ItemsSource__. This converter will change the property holding the children of each level of the hierarchy. It will simply return the correct property for each level of the hierarchy. You can use the following sample implementation.
 	
 #### __C#__	
+{{region radtreeview-howto-cutomize-radtreelistview-1}}
 	public class ItemsSourceSelector : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -68,6 +71,7 @@ You should keep in mind that the __RadTreeListView__ is designed to work with ho
 		  throw new NotImplementedException();
 		}
 	}
+{{endregion}}
 
 Figure 1 shows how the control looks once you create some sample data and populate it
 
@@ -84,4 +88,4 @@ To enhance the hierarchical visualization you can allow the __RadTreeListView__ 
 Figure 3: Visible tree lines
 ![Rad Tree View How To Customize Rad Tree List View Visible Tree Lines](images/RadTreeView_HowToCustomizeRadTreeListView_VisibleTreeLines.png)
 
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.

@@ -29,7 +29,6 @@ You can select a __RadTreeViewItem__ by setting its __IsSelected__ to True.
 	<telerik:RadTreeViewItem x:Name="radTreeViewItem" IsSelected="True"/>
 {{endregion}}
 
-
 #### __[C#] Example 2: Setting IsSelected in code__  
 {{region radtreeview-feautres-treeviewitem-selection_1}}
 	radTreeViewItem.IsSelected = true;

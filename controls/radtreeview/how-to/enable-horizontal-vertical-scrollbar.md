@@ -64,21 +64,27 @@ The same operation can be done in the code-behind:
 If you want to enable the scrollbars __on demand__, you need to set the scrollbars visibility to __Auto__:
 	
 #### __XAML__
+{{region radtreeview-how-to-enable-horizontal-vertical-scrollbar_4}}
 	<telerik:RadTreeView x:Name="radTreeView" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+{{endregion}}
 	
 #### __C#__
+{{region radtreeview-how-to-enable-horizontal-vertical-scrollbar_5}}
 	private void EnableScrollBars()
 	{
 		ScrollViewer.SetHorizontalScrollBarVisibility( radTreeView, ScrollBarVisibility.Auto );
 		ScrollViewer.SetVerticalScrollBarVisibility( radTreeView, ScrollBarVisibility.Auto );
 	}
+{{endregion}}
 
 #### __VB.NET__	
+{{region radtreeview-how-to-enable-horizontal-vertical-scrollbar_6}}
 	Private Sub EnableScrollBars()
 		ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)
 		ScrollViewer.SetVerticalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)
 	End Sub
-
-# See Also
+{{endregion}}
+	
+## See Also
  * [Disable Default Animation in RadTreeView]({%slug radtreeview-how-to-disable-default-animation%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

@@ -21,6 +21,7 @@ The RadTreeView class allows you to change this default behavior by overriding i
 The following code snippet demonstrates how to override the method and replace the default __Content__ of the __DragPreview__ with a single TextBlock element:
 
 #### __C#__
+{{region radtreeview-howto-customize-treeviewdragvisual-0}}
 	public class CustomTreeView : RadTreeView
 	{
 		protected override object CreateDragVisualContent(IList<object> draggedItems)
@@ -29,6 +30,8 @@ The following code snippet demonstrates how to override the method and replace t
 			return new TextBlock() { Text = text, Margin = new Thickness(5) };  
 		}  
 	}
+{{endregion}}
+
 Here is a sample visual that demonstrates the end result.
 ![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_03.png)
 
@@ -37,6 +40,7 @@ The DragPreview of the drag visual is presented by a ContentControl which gets t
 Here is a possible scenario in which we prepare a list of strings and return it as a Content of the drag visual:
 
 #### __C#__
+{{region radtreeview-howto-customize-treeviewdragvisual-1}}
 	public class CustomTreeView : RadTreeView
     {
         protected override object CreateDragVisualContent(IList<object> draggedItems)
@@ -53,6 +57,7 @@ Here is a possible scenario in which we prepare a list of strings and return it 
             return headersList;
         }       
     }
+{{endregion}}
 
 > The code assumes the __RadTreeView__ is defined in __XAML__ or in code behind but it is not data bound. However, similar approach can be used in data binding scenarios. In such case the "draggedItems" parameter will hold list of view models.
 	
@@ -61,6 +66,7 @@ Here is a possible scenario in which we prepare a list of strings and return it 
 You can set the ContentTemplate of the __TreeViewDragVisual__ with Style like so:
 
 #### __XAML__
+{{region radtreeview-howto-customize-treeviewdragvisual-2}}
 	<Application.Resources>
         <Style TargetType="telerik:TreeViewDragVisual">
             <Setter Property="ContentTemplate">
@@ -78,6 +84,7 @@ You can set the ContentTemplate of the __TreeViewDragVisual__ with Style like so
             </Setter>
         </Style>
     </Application.Resources>
+{{endregion}}
 
 >important Since the __TreeViewDragVisual__ element resides in a __Popup__, it is very important to define this style in the application's resources (the  __App.xaml__ file) in order to have the style successfully applied.
 
@@ -86,7 +93,7 @@ You can set the ContentTemplate of the __TreeViewDragVisual__ with Style like so
 Below you can find a possible visual result of a drag drop operation in such custom RadTreeView:
 ![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_04.png)
 
-# See Also
+## See Also
 * [Overview]({%slug radtreeview-overview2 %})
 * [Getting Started]({%slug radtreeview-getting-started %})
 * [SDK Examples]({%slug radtreeview-sdk-examples %})

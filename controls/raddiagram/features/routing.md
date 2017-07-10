@@ -235,7 +235,6 @@ On a button's click event handler we will perform 3 base steps:
 {{endregion}}
 
 #### __VB.NET__
-
 {{region raddiagram-features-routing-3}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		PrepareShapesForTipOverTreeRouting()
@@ -315,11 +314,13 @@ In the following section we will create a custom Router. This way we will be abl
 Lets first create some items:
 
 #### __XAML__
+{{region raddiagram-features-routing-3}}
     <telerik:RadDiagram x:Name="diagram">
 	<telerik:RadDiagramShape Position="100 100" Width="100" Height="30" Content="Shape A" x:Name="shapeA"/>
 	<telerik:RadDiagramShape Position="300 100" Width="100" Height="30" Content="Shape B" x:Name="shapeB"/>
 	<telerik:RadDiagramConnection Source="{Binding ElementName=shapeA}" Target="{Binding ElementName=shapeB}" ConnectionType="Polyline"/>
 	</telerik:RadDiagram>
+{{endregion}}
 
 Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method:
 		
@@ -344,7 +345,6 @@ Now we have to create class that implements the __IRouter__ interface and overri
 {{endregion}}
 
 #### __VB.NET__
-
 {{region raddiagram-features-routing-1}}
 	Public Class CustomRouter
 		Implements IRouter

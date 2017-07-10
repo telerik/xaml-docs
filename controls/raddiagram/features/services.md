@@ -21,23 +21,32 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 * __RegisterDefaultServices()__ - this method registers the default Diagramming services. However, please note that the __RadDiagram__ constructor internally calls this method during initialization. This is why the method is usefull mostly in scenarios where custom services are registered within a __RadDiagram__ instance and you need to dynamically revert back to the default services.			
 
 	#### __C#__
+	{{region raddiagram-features-services-0}}
 		xDiagram.ServiceLocator.RegisterDefaultServices();
-
+	{{endregion}}
+		
 	#### __VB.NET__
+	{{region raddiagram-features-services-1}}
 		xDiagram.ServiceLocator.RegisterDefaultServices()
-
+	{{endregion}}
+		
 * __GetService<T>()__ where __T__ represents a service interface - this method returns a service instance used by a __RadDiagram__. The type parameter allows you to specify the interface of the service you need to access. For example, if you want to get the resizing service currently used in a RadDiagram instance, you need to ask for the service implementing the __IResizingService__ interface:
 
 	#### __C#__
+	{{region raddiagram-features-services-2}}
 		xDiagram.ServiceLocator.GetService<IResizingService>();
-
+	{{endregion}}
+		
 	#### __VB.NET__
+	{{region raddiagram-features-services-3}}
 		xDiagram.ServiceLocator.GetService(Of IResizingService)()
-
+	{{endregion}}
+	
 * __Register<T>(T service)__ - this method allows you to register a new service in a __RadDiagram__. Please note that the type parameter __T__ represents the service interface type, while the method argument allows you to provide a new service class.
 	For instance, if you create a custom resizing service, you can register it in a __RadDiagram__ instance:
 	
 	#### __C#__	
+	{{region raddiagram-features-services-4}}
 		public class CustomResizingService : ResizingService
 		{
 			public CustomResizingService(IGraphInternal graph):base(graph)
@@ -56,8 +65,10 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 				xDiagram.ServiceLocator.Register<IResizingService>(new CustomResizingService(this.xDiagram));
 			}
 		}
-
+	{{endregion}}
+	
 	#### __VB.NET__		
+	{{region raddiagram-features-services-5}}
 		Public Class CustomResizingService
 			Inherits ResizingService
 			Public Sub New(graph As IGraphInternal)
@@ -73,6 +84,7 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 				xDiagram.ServiceLocator.Register(Of IResizingService)(New CustomResizingService(Me.xDiagram))
 			End Sub
 		End Class	
+	{{endregion}}
 
 * __ServiceRegistered__ - this event occurs when a service is registered. You can handle it to keep track of the services changes in a __RadDiagram__ instance.
 

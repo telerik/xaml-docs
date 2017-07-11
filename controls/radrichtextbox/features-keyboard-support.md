@@ -212,7 +212,7 @@ Now these key bindings can be overridden and customized to the liking of the use
 Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
 {{region richtextbox-commands}}
 	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
-{{#endregion}}
+{{endregion}}
 
 Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:
 

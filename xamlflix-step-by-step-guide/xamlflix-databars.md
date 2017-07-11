@@ -27,6 +27,7 @@ Figure 2
 Your application will open to MainPage.xaml and, thanks to the *Telerik Visual Studio extensions*, the namespace __telerik__ will already have been created in the XAML heading.	
 
 #### __XAML__
+{{region xamlflix-databars-0}}
 	<UserControl x:Class="RadDataBars.GettingStarted.MainPage"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -34,10 +35,12 @@ Your application will open to MainPage.xaml and, thanks to the *Telerik Visual S
 			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 			mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">	
+{{endregion}}
 			
 Begin by creating row and column definitions,
 
 #### __XAML__
+{{region xamlflix-databars-1}}
 	<Grid.RowDefinitions>
 		 <RowDefinition Height="40" />
 		 <RowDefinition Height="40" />
@@ -48,10 +51,12 @@ Begin by creating row and column definitions,
 		 <ColumnDefinition />
 		 <ColumnDefinition />
 	 </Grid.ColumnDefinitions>
+{{endregion}}	 
 
 Create prompts for three data bars,
 
 #### __XAML__
+{{region xamlflix-databars-2}}
 	<TextBlock Text="RadDataBar"
 			   HorizontalAlignment="Center"
 			   VerticalAlignment="Center"
@@ -64,16 +69,19 @@ Create prompts for three data bars,
 			   HorizontalAlignment="Center"
 			   VerticalAlignment="Center"
 			   Grid.Row="2" />
+{{endregion}}
 
 Let’s add a __RadDataBar__ in the second column of the first row,		
 
 #### __XAML__
+{{region xamlflix-databars-3}}
 	<telerik:RadDataBar 
 		Grid.Row="0"
 		Grid.Column="1"
 		Value="-8"
 		Minimum="-20"
 		Maximum="20" />
+{{endregion}}
 
 Notice that I’ve set the minimum to -20 and the Maximum to 20, creating a sale where 0 is in the center and positive values are to the right of the center, negative values to the left.  Since the current value is set to -8, we see that there is a red bar to the left of the center point in the column, as shown in figure 3.		
 
@@ -85,43 +93,54 @@ It is important that you play with the minimum and maximum values and see their 
 Add a __RadStackedDataBar__ to the XAML,	
 
 #### __XAML__
+{{region xamlflix-databars-4}}
 	<telerik:RadStackedDataBar
 		Name="xStatckedDataBar"
 		Grid.Row="1"
 		Grid.Column="1" />
+{{endregion}}
 
 Note that nothing is showing in the designer. Open the code behind page, MainPage.xaml.cs.
 
 Let’s start by creating a class to hold our data,
 
 #### __C#__
+{{region xamlflix-databars-5}}
 	public class RadDataBarItemClass
 	{
 		public string ToolTipItem { get; set; }
 		public int BarValue { get; set; }
 	}
+{{endregion}}
 
 Within the Loaded event handler, we’ll create a collection of RadDataBarItemClass objects,
 
 #### __C#__
+{{region xamlflix-databars-6}}
 	List<RadDataBarItemClass> barItems = new List<RadDataBarItemClass>();
+{{endregion}}
 
 And we can add four objects to the collection,
 
 #### __C#__
+{{region xamlflix-databars-7}}
 	barItems.Add(new RadDataBarItemClass() { BarValue = 4, ToolTipItem = "One" });
 	barItems.Add(new RadDataBarItemClass() { BarValue = 6, ToolTipItem = "Two" });
 	barItems.Add(new RadDataBarItemClass() { BarValue = 2, ToolTipItem = "Three" });
 	barItems.Add(new RadDataBarItemClass() { BarValue = 8, ToolTipItem = "Four" });
+{{endregion}}
 
 Finally, assign that collection to be the ItemsSource for our stacked data bar,
 
 #### __C#__
+{{region xamlflix-databars-8}}
 	xStatckedDataBar.ItemsSource = barItems
+{{endregion}}
 
 Return to the XAML and modify the control to set the path for its value, for its tooltips and turn on ShowToolTips,
 
 #### __XAML__
+{{region xamlflix-databars-9}}
 	<telerik:RadStackedDataBar
 		Name="xStatckedDataBar"
 		Grid.Row="1"
@@ -129,6 +148,7 @@ Return to the XAML and modify the control to set the path for its value, for its
 		ValuePath="BarValue"
 		ToolTipPath="ToolTipItem"
 		ShowToolTips="True"/>
+{{endregion}}
 		
 The values are now displayed in the stacked databar as shown in figure 4,
 
@@ -149,6 +169,7 @@ Figure 5
 Let’s normalize the scale for our first two bars at __Minimum__ of 20 and a __Maximum__ of 40 and while we’re at it, let’s add the __RadStacked100DataBar__ (which doesn’t take a minimum/maximum as it always uses the available space for 0-100).	
 
 #### __XAML__
+{{region xamlflix-databars-10}}
 	<telerik:RadDataBar 
 		Grid.Row="0"
 		Grid.Column="1"
@@ -173,12 +194,15 @@ Let’s normalize the scale for our first two bars at __Minimum__ of 20 and a __
 		ValuePath="BarValue"
 		ToolTipPath="ToolTipItem"
 		ShowToolTips="True" />
+{{endregion}}
 
 Remember to set the __ItemsSource__ for the new xRadStacked100,		
 
 #### __C#__
+{{region xamlflix-databars-11}}
 	xStackedDataBar.ItemsSource = barItems;
 	xRadStacked100.ItemsSource = barItems;
+{{endregion}}
 	
 Run the application, and as you can see in figure 6, the RadStacked100 bar shows the proportional size using all available room, while the others size to their minimum and maximum.
 
@@ -192,6 +216,7 @@ Let’s take a look at adding a data axis, and also at modifying the colors of t
 Start a new application, create five rows and two columns and properties for your textBlocks as shown here,
 
 #### __XAML__
+{{region xamlflix-databars-12}}
 	<Grid.RowDefinitions>
 		 <RowDefinition Height="40" />
 		 <RowDefinition Height="40" />
@@ -211,18 +236,22 @@ Start a new application, create five rows and two columns and properties for you
 					 Value="Center" />              
 		 </Style>
 	 </Grid.Resources>
+{{endregion}}
 	 
 Add four prompts,
 
 #### __XAML__
+{{region xamlflix-databars-13}}
 	<TextBlock Text="RadDataBar" Grid.Row="0"/>
 	<TextBlock Text="RadStackedDataBar" Grid.Row="1" />
 	<TextBlock Text="RadDataAxis" Grid.Row="2" />
 	<TextBlock Text="RadStacked100DataBar" Grid.Row="3" />
+{{endregion}}
 
 Set up the three databars in the XAML,
 
 #### __XAML__
+{{region xamlflix-databars-14}}
 	<telerik:RadDataBar
 		Name="xRadDataBar"
 		Grid.Row="0"
@@ -242,11 +271,13 @@ Set up the three databars in the XAML,
 		Name="xStacked100"
 		Grid.Row="3"
 		Grid.Column="1" />
+{{endregion}}
 		
 Return to the code-behind, and grab the Loaded event handler and __RadDataBarItemClass__ definition from the previous example,
 		
 
 #### __C#__
+{{region xamlflix-databars-15}}
     public partial class MainPage : UserControl
     {
         public MainPage()
@@ -274,12 +305,14 @@ Return to the code-behind, and grab the Loaded event handler and __RadDataBarIte
         public string ToolTipItem { get; set; }
         public int BarValue { get; set; }
     }
+{{endregion}}
 
 >Note the small change to the __BarValues__ in the __Loaded__ event handler		  
 
 Remember to now add the __ValuePath__ and __ToolTipPath__ to the __RadStackedDataBar__, and the stacked100 data bar,
 
 #### __XAML__
+{{region xamlflix-databars-16}}
 	<telerik:RadStackedDataBar
 		Name="xStackedDataBar"
 		Grid.Row="1"
@@ -288,16 +321,19 @@ Remember to now add the __ValuePath__ and __ToolTipPath__ to the __RadStackedDat
 		Maximum="20"
 		ValuePath="BarValue"
 		ToolTipPath="ToolTipItem"/>	 
+{{endregion}}
 		
 If you run this it will look very much like the previous example. Let’s add a data axis control so that we can get a better idea of the values being displayed,
 
 #### __XAML__
+{{region xamlflix-databars-17}}
 	<telerik:RadDataAxis
 		 Name="xDataAxis"
 		 Grid.Row="2"
 		 Grid.Column="1"
 		 Minimum="-20"
 		 Maximum="20" />
+{{endregion}}
 
 The axis appears below our two relative bars and aids the eye in estimating the values, as shown in figure 7
 
@@ -307,6 +343,7 @@ Figure 7
 The display is overlapping the edges of the columns.  We can fix this by giving a margin to the data axis, but we must remember to use the same margins on the stack bars,
 	
 #### __XAML__
+{{region xamlflix-databars-18}}
 	<telerik:RadDataBar
 		Name="xRadDataBar"
 		Grid.Row="0"
@@ -333,6 +370,7 @@ The display is overlapping the edges of the columns.  We can fix this by giving 
 		Minimum="-20"
 		Maximum="20" 
 		Margin="10,5"/>	
+{{endregion}}
 
 The results are readily apparent, as shown in figure 8,
 
@@ -347,6 +385,7 @@ Figure 9
 By default, negative values are displayed in __Red__ and positive values in __Blue__, however, you can change that with the NegativeValueBrush and __ValueBrush__ respectively,	
 
 #### __XAML__
+{{region xamlflix-databars-19}}
 	<telerik:RadDataBar
 		Name="xRadDataBar"
 		Grid.Row="0"
@@ -358,6 +397,7 @@ By default, negative values are displayed in __Red__ and positive values in __Bl
 		BarHeightPercent=".2"
 		NegativeValueBrush="Yellow"
 		ValueBrush="Green"/>
+{{endregion}}
 
 You’ll see the brush changes immediately in the design window.
 
@@ -366,12 +406,15 @@ The __StackedDataBar__ is a different story. Here we need a set of colors, one f
 Before proceeding, add the following namespace to your XAML file,
 
 #### __XAML__
+{{region xamlflix-databars-20}}
 	xmlns:databars="clr-namespace:Telerik.Windows.Controls.DataBars;
 	   assembly=Telerik.Windows.Controls.DataVisualization"
+{{endregion}}
 	   
 Open the __RadStackedDataBar__ declaration, and within it, add BarBrushes, and within that the __BrushCollection__, as shown below,
 		
 #### __XAML__
+{{region xamlflix-databars-21}}
 	<telerik:RadStackedDataBar
 		Name="xStackedDataBar"
 		Grid.Row="1"
@@ -387,10 +430,12 @@ Open the __RadStackedDataBar__ declaration, and within it, add BarBrushes, and w
 			</databars:BrushCollection>
 		</telerik:RadStackedDataBar.BarBrushes>
 	</telerik:RadStackedDataBar>
+{{endregion}}
 
 The __BrushCollection__ is an observable collection of __Brushes__, which you can fill with any brushes, and which we will fill with solid color brushes,		
 
 #### __XAML__
+{{region xamlflix-databars-22}}
 	<databars:BrushCollection>
 		 <SolidColorBrush Color="SlateBlue" />
 		 <SolidColorBrush Color="AntiqueWhite" />
@@ -398,6 +443,7 @@ The __BrushCollection__ is an observable collection of __Brushes__, which you ca
 		 <SolidColorBrush Color="Green" />
 		 <SolidColorBrush Color="Blue" />
 	 </databars:BrushCollection>
+{{endregion}}
 	 
 Running the application shows the new colors being used, as shown in figure 10
 
@@ -414,6 +460,7 @@ Try narrowing and widening the browser window and you’ll see that the ticks ad
 Finally, on the Stack100 databar we can do the same trick with the __Brushes__ collection,
 	
 #### __XAML__
+{{region xamlflix-databars-23}}
 	<telerik:RadStacked100DataBar
 		Name="xStacked100"
 		Grid.Row="3"
@@ -430,3 +477,4 @@ Finally, on the Stack100 databar we can do the same trick with the __Brushes__ c
 			</databars:BrushCollection>
 		</telerik:RadStacked100DataBar.BarBrushes>
 	</telerik:RadStacked100DataBar>
+{{endregion}}

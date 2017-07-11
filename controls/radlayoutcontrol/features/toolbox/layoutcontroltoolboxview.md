@@ -13,6 +13,7 @@ position: 1
 __LayoutControlToolBoxView__ is the control that represents the toolbox. This article demonstrates how to set it up and associate it with RadLayoutControl. 
 
 #### __[XAML] Example 1: Setting up the toolbox__  
+{{region radlayoutcontrol-features-toolbox-toolboxview-0}}
 	 <StackPanel Orientation="Horizontal">
         <telerik:RadLayoutControl x:Name="layout" Width="300" Height="250">
             <Button Content="Item" />
@@ -23,7 +24,8 @@ __LayoutControlToolBoxView__ is the control that represents the toolbox. This ar
         </telerik:RadLayoutControl>
         <telerik:LayoutControlToolBoxView LayoutControl="{Binding ElementName=layout}" Width="300" Height="250"/>
     </StackPanel>
-	
+{{endregion}}
+
 The toolbox can be associated with RadLayoutControl through its __LayoutControl__ property (see __Example 1__).
 	
 #### __Figure 1: Final result__  
@@ -40,7 +42,9 @@ The toolbox allows you to track and restore the items that was removed from the 
 >important This feature is disabled by default. You can enable it by setting the __TrackDeletedItems__ property to __True__.
 
 #### __[XAML] Example 2: Enabling the deleted items tracking__
+{{region radlayoutcontrol-features-toolbox-toolboxview-1}}
 	<telerik:LayoutControlToolBoxView TrackDeletedItems="True"/>
+{{endregion}}
 	
 #### __Figure 2: Deleted items__
 ![](images/radlayoutcontrol-features-toolbox-toolboxview-02.png)
@@ -54,7 +58,7 @@ The proxy object contains information about the elements in the toolbox.
 * __OriginalItemType__: This property holds the type of the associated element.
 * __OriginalItem__: This property holds the associated element.
 
-By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add custom __UIElements__ in the toolbox.
+By default the toolbox is populated with a collection that contains all available layout controls. But you can use the __NewItems__ collection and the __LayoutControlHierarchicalNodeProxy__ class to add custom __UIElements__ in the toolbox. Read more about this in the [Add Custom Element in the ToolBox]({%slug radlayoutcontrol-how-to-add-custom-element-in-toolbox%}) article.
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

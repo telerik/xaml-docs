@@ -23,6 +23,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 * use the __RadDiagram Layout()__ method:
 			  
 #### __XAML__
+{{region raddiagram-features-layout-4}}
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -37,22 +38,27 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
                             Grid.Row="1"
                             Margin="5" />
     </Grid>		
+{{endregion}}
 
 #### __C#__
+{{region raddiagram-features-layout-5}}
     private void Layout(object sender, RoutedEventArgs e)
     {
         diagram.Layout();
     }		  
+{{endregion}}
 
 #### __VB.NET__
-
+{{region raddiagram-features-layout-6}}
     Private Sub Layout(sender As Object, e As RoutedEventArgs)
         diagram.Layout()
     End Sub			  
+{{endregion}}
 
 * use the __DiagramCommands Layout__ command:
 			  
 #### __XAML__
+{{region raddiagram-features-layout-7}}
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -67,7 +73,8 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
         <telerik:RadDiagram x:Name="diagram"
                             Grid.Row="1"
                             Margin="5" />
-    </Grid>		  
+    </Grid>		
+{{endregion}}	
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
@@ -88,8 +95,7 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 {{endregion}}
 
 #### __VB.NET__
-
-{{region raddiagram-features-layout-0}}
+{{region raddiagram-features-layout-1}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New SugiyamaSettings() With { 
 			 .HorizontalDistance = 50, 
@@ -146,7 +152,7 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 Here is how this could be achieved in code behind.	
 
 #### __C#__
-{{region raddiagram-features-layout-1}}
+{{region raddiagram-features-layout-2}}
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		TreeLayoutSettings settings = new TreeLayoutSettings()
@@ -160,8 +166,7 @@ Here is how this could be achieved in code behind.
 {{endregion}}
 
 #### __VB.NET__
-
-{{region raddiagram-features-layout-1}}
+{{region raddiagram-features-layout-3}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New TreeLayoutSettings() With { 
 			 .TreeLayoutType = TreeLayoutType.TreeDown, 
@@ -215,9 +220,7 @@ __Tree layout settings__
 * __RadialFirstLevelSeparation__: (applies only to the RadialTree type) the radial distance between the root and the first level.			  
 * __KeepComponentsInOneRadialLayout__: (applies only to the RadialTree type) if set to true the default behavior of organizing components into a grid will be overridden and the components will be considered as part of one radial tree. To this end a virtual root will be added which unifies the different components. See the example below.			  
 * __StartRadialAngle__: The radial layout allows you to use a sector instead of the full 360 degrees. This start angle defines the beginning of this sector.			  
-* __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used).			  
-
-		  
+* __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used).			  		  
 
 Below you can see the explanation of the main __TreeLayout Settings__ for the base 4 types (Up, Down, Left, Right) + TipOverTree.
 
@@ -240,7 +243,6 @@ The properties that are related with the same feature are:
 * __AutoLayout__ – Boolean property that controls whether the __RadDiagram__ should automatically layout the items hosted in it whenever a new item is added or removed.
 
 >Note: If you need to change the settings that are used when the automatic layout is triggered you should ones call the __LayoutAsync()__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__. By default this feature is disabled.
-
 
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

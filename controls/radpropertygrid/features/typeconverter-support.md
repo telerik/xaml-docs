@@ -25,7 +25,9 @@ In certain cases, __RadPropertyGrid__ is used for displaying and editing propert
 
 * [Defining the Business Object](#defining-the-business-object)
 
+{% if site.site_name == 'WPF' %} 
 * [Display a Predefined List of Values for a Property with TypeConverter](#display-a-predefined-list-of-values-for-a-property-with-typeconverter)
+{% endif %}
 
 * [Culture-aware TypeConverter](#culture-aware-typeconverter)
 
@@ -196,12 +198,10 @@ The example will use a __Club__ object which has a __Captain__ property of type 
 	End Class
 {{endregion}}
 
-
+{% if site.site_name == 'WPF' %} 
 ## Display a Predefined List of Values for a Property with TypeConverter
 
 As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides support for a standard set of values that can be picked from a predefined list. This can be done through overriding the __GetStandardValuesSupported__ method.
-
-
 
 #### __[C#] Example 2: Defining a TypeConverter providing a default set of values__
 {{region cs-radpropertygrid-typeconverter-support_2}}
@@ -247,9 +247,12 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 	End Class
 {{endregion}}
 
+> If __EditorAttribute__ is set to a specific property with a set __TypeConverter__ the __EditorAttribute__ is with lower priority - a default set of values will be visualized if the __GetStandardValuesSupported__ is overridden instead of an editor.
+
 #### __Figure 1: TypeConverter providing a default set of values__
 
 ![](images/RadPropertyGrid_TypeConverter_Predefined_List.png)
+{% endif %}
 
 ## Culture-aware TypeConverter
 

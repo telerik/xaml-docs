@@ -56,7 +56,7 @@ To learn more about the column headers take a look at the [Column Headers]({%slu
 __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual appearance of its text content. This can be achieved through the __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties.
 
 #### __[XAML] Example 1: Setting the Text Properties of GridViewColumn__
-
+{{region xaml-gridview-columns-customizing-columns-0}}
 	<telerik:RadGridView Name="clubsGrid" 
                      ItemsSource="{Binding Clubs}"
                      AutoGenerateColumns="False"
@@ -77,20 +77,14 @@ __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual 
                                         TextDecorations="Underline"/>
     		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-
+{{endregion}}
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
 ![](images/gridview-textproperties-column.png)
 
-# See Also
-
+## See Also
  * [Data Formatting]({%slug gridview-columns-data-formatting%})
-
  * [Column Headers]({%slug gridview-columns-column-headers%})
-
- * [Column Footers]({%slug gridview-columns-column-footers%})
- 
+ * [Column Footers]({%slug gridview-columns-column-footers%}) 
  * [Add button column]({%slug gridview-add-button-column%})
-
  * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})
- 

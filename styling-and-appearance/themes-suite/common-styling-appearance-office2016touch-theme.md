@@ -82,7 +82,9 @@ The general naming convention is: __Office2016TouchPalette.Palette.[name]Color__
 Changing the colors can be achieved in code behind.
 
 #### __[XAML] Example 1: Setting palette colors__
+{{region styling-appearance-office2016touch-0}}
 	Office2016TouchPalette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
 
 ## Changing Fonts
 
@@ -95,25 +97,31 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 __Example 2__ shows the default font sizes and families.
 
 #### __[C#] Example 2: Default FontSize and FontFamily__
+{{region styling-appearance-office2016touch-1}}
 	Office2016TouchPalette.Palette.FontSizeS = 10;
 	Office2016TouchPalette.Palette.FontSize = 12;
 	Office2016TouchPalette.Palette.FontSizeL = 14;
 	Office2016TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
+{{endregion}}
 
 __Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI"** to **"Calibri"** and the FontSize from **12** to **16** on a click of a button:
 
 #### __[XAML] Example 3: Example view definition__
+{{region styling-appearance-office2016touch-2}}
 	<StackPanel>
 		<telerik:RadCalendar HorizontalAlignment="Center" />
 		<telerik:RadButton Content="Change Font" Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
+{{endregion}}
 
 #### __[C#] Example 4: Changing the theme's FontSize and FontFamily__
+{{region styling-appearance-office2016touch-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2016TouchPalette.Palette.FontSize = 16;
 		Office2016TouchPalette.Palette.FontFamily = new FontFamily("Calibri");
 	}
+{{endregion}}
 
 #### __Figure 4: Setting FontSize and FontFamily__ 
 ![Setting FontSize and FontFamily](images/common-styling-appearance-office2016touch-theme-3.png)	
@@ -123,7 +131,9 @@ __Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI
 A new feature of the Office2016Touch theme’s palette is the __FocusThickness__ property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it can be easily changed in a similar way as the other palette properties.
 
 #### __[C#] Example 5: Changing the theme's FocusThickness__
+{{region styling-appearance-office2016touch-4}}
 	Office2016TouchPalette.Palette.FocusThickness = new Thickness(1);
+{{endregion}}
 
 #### __Figure 5: Setting FocusThickness__ 
 ![Setting FocusThickness](images/common-styling-appearance-office2016touch-theme-4.png)	
@@ -133,20 +143,24 @@ A new feature of the Office2016Touch theme’s palette is the __FocusThickness__
 The Office2016Touch theme exposes an easy way to modify the corner radius of many elements in your application. You can use corner radius properties of the palette. Their default values are __0__.
 
 #### __[C#] Example 6: Setting corner radius__
+{{region styling-appearance-office2016touch-5}}
 	Office2016TouchPalette.Palette.CornerRadius = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusTop = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusBottom = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusLeft = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
+{{endregion}}
 
 __Example 7__ shows how to change the default corner radius from **0** to **3**:
 
 #### __[C#] Example 7: Changing the default corner radius__
+{{region styling-appearance-office2016touch-6}}
 	Office2016TouchPalette.Palette.CornerRadius = new CornerRadius(3); 
 	Office2016TouchPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 3, 3);
 	Office2016TouchPalette.Palette.CornerRadiusLeft = new CornerRadius(3, 0, 0, 3);
 	Office2016TouchPalette.Palette.CornerRadiusRight = new CornerRadius(0, 3, 3, 0);
 	Office2016TouchPalette.Palette.CornerRadiusTop = new CornerRadius(3, 3, 0, 0);
+{{endregion}}
 
 #### __Figure 6: Setting corner radius__ 
 ![Setting corner radius](images/common-styling-appearance-office2016touch-theme-5.png)	
@@ -160,7 +174,9 @@ In the Office2016Touch theme there are two brushes that define background and bo
 If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of __Office2016TouchPalette__. The default value of the property is 0.5.
 
 #### __[XAML] Example 8: Changing the disabled opacity__
+{{region styling-appearance-office2016touch-7}}
 	Office2016TouchPalette.Palette.DisabledOpacity = 0.3;
+{{endregion}}
 
 #### __Figure 7: Setting the disabled opacity__ 
 ![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	

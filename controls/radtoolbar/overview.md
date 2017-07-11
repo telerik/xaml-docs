@@ -11,56 +11,31 @@ position: 0
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
-![toolbar sl icon](images/toolbar_sl_icon.png)
+![RadToolBar Silevrlight Icon](images/toolbar_sl_icon.png)
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-![toolbar wpf icon](images/toolbar_wpf_icon.png)
+![RadToolBar WPF Icon](images/toolbar_wpf_icon.png)
 {% endif %}
 
 Thank you for choosing Telerik __RadToolBar__!
-![](images/RadToolBar.png)
 
-__RadToolBar__ is an __ItemsControl__ that contains a group of controls (items). The __RadToolBar__ can displays its items in accompanying (pop-up) overflow area if the available area is too small.
+![RadToolBar](images/RadToolBar.png)
 
-The __RadToolBar__ mimics the functionality and behavior of the VS toolbar with its __Strip__ and __Overflow__ areas. All the items in the toolbar will jump between the strip and the overflow depending on the toolbar’s size. In addition, the developer is able to stick items into one of these areas using a single property  - __OverflowMode__.
+__RadToolBar__ is an __ItemsControl__ that can contain a group of controls (items). The __RadToolBar__ can also display its items in accompanying (pop-up) overflow area if the available area is too small.
 
-The __RadToolBar__ also supports a __Style Selector__ that sets defauld styles to its items. There are pre-defined styles for many of the regular controls – Button, RadButton, ToggleButton, RadToggleButton, CheckBox, RadioButton, RadRadioButton, RadDropDownButton, TextBox, TextBlock, RadToolBarSeparator{% if site.site_name == 'Silverlight' %}, RadSeparator{% endif %}.				
+The __RadToolBar__ mimics the functionality and behavior of the Visual Studio toolbar with its __Strip__ and __Overflow__ areas. All the items in the toolbar will jump between the strip and the overflow depending on the toolbar's size. In addition, the developer is able to stick items into one of these areas using the attached __OverflowMode__ property.
 
-> The __RadToolBar__ control can be found in the following assembly:
->Assembly: __Telerik.Windows.Controls.Navigation.dll__ ; Namespace: __Telerik.Windows.Controls__
+The __RadToolBar__ also enables you to apply conditional styling to its items. The [ToolBarContainerStyleSelector](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyleselector.htm) class allows you to easily specify different styles for the different control types by providing a collection of [ToolBarContainerStyle](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyle.htm) objects.
 
-#### __XAML__
+There are also pre-defined styles for many of the standart controls – Button, RadButton, ToggleButton, RadToggleButton, CheckBox, RadioButton, RadRadioButton, RadDropDownButton, TextBox, TextBlock, RadToolBarSeparator{% if site.site_name == 'Silverlight' %}, RadSeparator{% endif %}.
 
-{{region radtoolbar-overview_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	<!-- ... -->
-	<telerik:RadToolBar>
-	
-	<!-- ... -->
-	</telerik:RadToolBar>
-{{endregion}}
+## See Also
 
-#### __C#__
+ * [Getting Started]({%slug radtoolbar-getting-started%})
 
-{{region radtoolbar-overview_1}}
-	using Telerik.Windows.Controls;
-	void CreateToolbar()
-	{
-		RadToolBar toolbar = new RadToolBar();
-		this.toolbarHolder.Children.Add(toolbar);
-	}
-{{endregion}}
+ * [ToolBarTray Overview]({%slug radtoolbartray-overview%})
 
-#### __VB.NET__
+ * [Item Alignment]({%slug radtoolbar-features-itemalignment%})
 
-{{region radtoolbar-overview_1}}
-	Imports Telerik.Windows.Controls
-
-	Private Sub CreateToolbar()
-		Dim toolbar As New RadToolBar()
-		Me.toolbarHolder.Children.Add(toolbar)
-	End Sub	
-{{endregion}}
-
->The __RadToolBar__ provides an overflow mechanism that places items that do not fit in the toolbar into an overflow area.
+ * [RadToolBar API Reference](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_radtoolbar.htm)

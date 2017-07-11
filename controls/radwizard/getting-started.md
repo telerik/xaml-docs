@@ -25,8 +25,9 @@ For the purpose of this example, you will need to open Visual Studio and then cr
 You can add __RadWizard__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Toolbox. 
 
 #### __[XAML]Example 1: Adding a RadWizard manually in XAML__
-
+{{region radwizard-getting-started-0}}
 	 <telerik:RadWizard x:Name="radWizard" />
+{{endregion}}
 
 >In order to use __RadWizard__ you should define the following namespace:
 __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
@@ -36,7 +37,7 @@ Now we can populate __RadWizard__ with some pages.
  To add pages to __RadWizard__ you have to use its __WizardPages__ collection, which consists of __WizardPage__ elements. Here is an example of defining a page (__Example 2__): 
 
 #### __[XAML]Example 2: Adding a WizardPage manually in XAML__
- 
+{{region radwizard-getting-started-1}}
 	<Grid>
 	<telerik:RadWizard x:Name="radWizard" >
 			<telerik:RadWizard.WizardPages>
@@ -44,7 +45,7 @@ Now we can populate __RadWizard__ with some pages.
 			</telerik:RadWizard.WizardPages>			
 		</telerik:RadWizard>
 	</Grid>
-
+{{endregion}}
 
 Running the application (__Figure 1__) you will see the wizard page with its content and the page footer that contains all the predefined buttons.
 

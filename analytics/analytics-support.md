@@ -63,7 +63,7 @@ Let's first define a couple of controls.
 	</StackPanel> 
 {{endregion}}
 
-All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 4__. Note that the set values will be used in the dashboard.
+All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 3__. Note that the set values will be used in the dashboard.
 
 #### __[XAML] Example 3: Set Analytics.Name property__
 

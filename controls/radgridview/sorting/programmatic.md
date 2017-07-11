@@ -12,7 +12,7 @@ position: 1
 
 Besides the built-in sorting functionality, you are able to programmatically sort the data in __RadGridView__ using the __SortDescriptors__ collection. This collection of __ISortDescriptor__ objects allows you to use descriptors that define the sorting property (or column) and the sorting direction for the bound data. Because this is a collection, you are able not only to add, but you can also remove or clear the entries.
     
->tipIf you use __ICollectionView__ as data source, RadGridView will automatically synchronize the __SortDescriptors__ of the source with its own ones.
+>tip If you use __ICollectionView__ as data source, RadGridView will automatically synchronize the __SortDescriptors__ of the source with its own ones.
 
 >As of Q3 2010, RadGridView adds/removes __ColumnSortDescriptor__ to its __SortDescriptors__ collection when the user sorts from the UI.
 
@@ -21,7 +21,6 @@ Besides the built-in sorting functionality, you are able to programmatically sor
 When you add a new descriptor to the collection, the data is automatically sorted according to it. To learn how to create and configure descriptors, look at the following example:
 
 #### __[C#]__
-
 {{region cs-gridview-sorting-programmatic_2}}
 	ColumnSortDescriptor csd = new ColumnSortDescriptor()
 	{
@@ -31,8 +30,7 @@ When you add a new descriptor to the collection, the data is automatically sorte
 	this.clubsGrid.SortDescriptors.Add(csd);
 {{endregion}}
 
-#### __[VB.NET]
-
+#### __[VB.NET]__
 {{region gridview-sorting-programmatic_3}}
 
 	Dim csd As New ColumnSortDescriptor() With { _
@@ -43,15 +41,11 @@ When you add a new descriptor to the collection, the data is automatically sorte
 {{endregion}}
 
 FIGURE 1: Programmatically sorted RadGridView:
-
 ![](images/RadGridView_ProgrammaticSorting_1.png)
-#### __VB.NET__
-
       
 Another approach is to add the new __SortDescriptor__ object (instead of __ColumnSortDescriptor__) to the RadGridView.SortDescriptors collection:
 
 #### __C#__
-
 {{region cs-gridview-sorting-programmatic_0}}
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "Title";
@@ -59,7 +53,6 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 {{endregion}}
 
 #### __VB.NET__
-
 {{region vb-gridview-sorting-programmatic_1}}
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "Title"
@@ -75,7 +68,6 @@ You can easily create a sort descriptor in XAML and then add it to the SortDescr
 For example:
 
 #### __XAML__
-
 {{region xaml-gridview-sorting-programmatic_4}}
 	<telerik:RadGridView x:Name="radGridView"
 	             AutoGenerateColumns="False">
@@ -91,7 +83,6 @@ As of __Q3 2011__, you can create a ColumnSortDescriptor in XAML and then add it
       
 For example:
 #### __XAML__
-
 {{region xaml-gridview-sorting-programmatic_7}}
 	<telerik:RadGridView x:Name="clubsGrid" 
 	                AutoGenerateColumns="False">
@@ -106,7 +97,7 @@ For example:
 
 ### XAML Tip
 
->tipIn case of a static data structure, known during design time, it is better to declare your default sorting in XAML, rather than in your code-behind.
+>tip In case of a static data structure, known during design time, it is better to declare your default sorting in XAML, rather than in your code-behind.
 
 After the application runs with this descriptor defined, __RadGridView__ data will be sorted ascending by the __Title__ column and will look as if the user clicked on the __Title__ column header.
         
@@ -114,9 +105,8 @@ After the application runs with this descriptor defined, __RadGridView__ data wi
 
 >The built-in sorting also uses the __SortDescriptors__ collection. When a header is clicked, it clears the __SortDescriptors__ collection and adds a new __ColumnSortDescriptor__ to it.
 
->tipYou are able to add __SortDescriptors/ColumnSortDescriptor__ in XAML only at design time. 
->tipWhen implementing multi-column sorting behavior you have to manage the __SortDescriptors__ collection at runtime. To learn more, look at the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
-
+>tip You are able to add __SortDescriptors/ColumnSortDescriptor__ in XAML only at design time. 
+>tip When implementing multi-column sorting behavior you have to manage the __SortDescriptors__ collection at runtime. To learn more, look at the [Multi-column Sorting]({%slug gridview-multiple-column-sorting%}) topic.
 
 ## Clearing the SortDescriptors Collection of the RadGridView ##
 
@@ -125,7 +115,6 @@ If you need to apply multiple sorting operations and you would like to reset all
 Consider the following scenario. You apply a programmatic sorting for your RadGridView as follows:
 
 #### __[C#]__
-
 {{region cs-gridview-sorting-programmatic_8}}
 	ColumnSortDescriptor csd = new ColumnSortDescriptor();
 	clubsGrid.SortDescriptors.Clear();
@@ -135,7 +124,6 @@ Consider the following scenario. You apply a programmatic sorting for your RadGr
 {{endregion}}
 
 #### __[VB.NET]__
-
 {{region vb-gridview-sorting-programmatic_9}}
 	Dim csd As New ColumnSortDescriptor()
 	clubsGrid.SortDescriptors.Clear()
@@ -147,13 +135,11 @@ Consider the following scenario. You apply a programmatic sorting for your RadGr
 At this point, the RadGridView has the following state:
 
 FIGURE 3:
-
 ![](images/RadGridView_ProgrammaticSorting_1.png)
 
 Eventually, you need to sort the grid by another column and would like to remove the previously applied rule. Use the following approach:
 
 #### __[C#]__
-
 {{region cs-gridview-sorting-programmatic_10}}
 	ColumnSortDescriptor csd = new ColumnSortDescriptor();
 	clubsGrid.SortDescriptors.Clear();
@@ -163,7 +149,6 @@ Eventually, you need to sort the grid by another column and would like to remove
 {{endregion}}
 
 #### __[VB.NET]__
-
 {{region vb-gridview-sorting-programmatic_11}}
 	Dim csd As New ColumnSortDescriptor()
 	clubsGrid.SortDescriptors.Clear()
@@ -175,13 +160,9 @@ Eventually, you need to sort the grid by another column and would like to remove
 The result will be:
 
 FIGURE 4:
-
 ![](images/RadGridView_ProgrammaticSorting_2.png)
 
-# See Also
-
+## See Also
  * [Basic Sorting]({%slug gridview-sorting-basics%})
-
  * [Custom Sorting]({%slug gridview-sorting-custom%})
-
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})

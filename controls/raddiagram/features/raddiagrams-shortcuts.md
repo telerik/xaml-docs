@@ -10,8 +10,6 @@ position: 8
 
 # Keyboard Support
 
-## Keyboard Support Overview
-
 Using the __Telerik Diagramming Framework__ allows you to trigger most of its features using key combinations. Below you can find a list of all supported key combinations and information about the features they trigger:		
 
 * You can use the __Ctrl__ key to change the active mouse tool in the __RadDiagram__. The default tool is the __PointerTool__ but holding down the __Ctrl__ key allows you to use the __PanTool__.			
@@ -53,18 +51,21 @@ These key gestures are defined in the __RadDiagram InputBindings__ collection. Y
 For example if you want to create a custom key combination that triggers the __DiagramCommands.Layout__ command, you can add a new __KeyBinding__ to the __RadDiagram InputBindings__ collection as follows:
 	  
 #### __XAML__
-	
+{{region raddiagrams-features-shortcuts-0}}
     <telerik:RadDiagram x:Name="diagram" />		  
+{{endregion}}
 		  
 #### __C#__
-	
+{{region raddiagrams-features-shortcuts-1}}
     diagram.InputBindings.Add(new KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control));		  
+{{endregion}}
 		  
 #### __VB.NET__ 
-
+{{region raddiagrams-features-shortcuts-2}}
     diagram.InputBindings.Add(New KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control))		  
+{{endregion}}
 		  
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

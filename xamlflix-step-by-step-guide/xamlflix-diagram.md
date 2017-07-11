@@ -29,6 +29,7 @@ When you click ok, the necessary assemblies are added to the References as shown
 Your application will open to *MainPage.xaml* and, thanks to the __Telerik Visual Studio extensions__, the namespace __telerik__ will already have been created in the XAML heading.       
 
 #### __XAML__
+{{region xamlflix-diagram-0}}
 	<UserControl x:Class="RadBarCode.GettingStarted.MainPage"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -38,19 +39,22 @@ Your application will open to *MainPage.xaml* and, thanks to the __Telerik Visua
 			mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
 		...
 	</UserControl>
+{{endregion}}
 
 To begin, add the Xaml for an instance of the __RadDiagram__,       
 
 #### __XAML__
-	<telerik:RadDiagram Name="xRadDiagram" Margin="9,0,0,0">
-				
-	</telerik:RadDiagram>
+{{region xamlflix-diagram-1}}
+	<telerik:RadDiagram Name="xRadDiagram" Margin="9,0,0,0" />
+{{endregion}}
+	
 
 You’ll see that the designer immediately creates a grid as the background for the diagram.
 
 Let’s add a number of shapes to the diagram,
 	
 #### __XAML__
+{{region xamlflix-diagram-2}}
 	<telerik:RadDiagram Name="xRadDiagram" Margin="9,0,0,0">
 		<telerik:RadDiagramShape Content="Diagram #1" Position="-400,-200" />
 		<telerik:RadDiagramShape Content="Diagram #2" Position="-200,-200" />
@@ -59,20 +63,24 @@ Let’s add a number of shapes to the diagram,
 		<telerik:RadDiagramShape Content="Diagram #5" Position="100,0"  Name="s3"/>
 		<telerik:RadDiagramShape Content="Diagram #6" Position="50,50"  Name="s4"/>
 	</telerik:RadDiagram>
+{{endregion}}
 
 Note that some of the shapes are positioned outside of the window.
 
 Our next step is to connect some of the shapes together.
 
 #### __XAML__
+{{region xamlflix-diagram-3}}
 	<telerik:RadDiagramConnection 
 			 Source="{Binding ElementName=s1}" Target="{Binding ElementName=s2}" />
+{{endregion}}
 
 Note that we use __Element Binding__ to bind the source to the target.        
 
 If we run the application we can zoom in and out on the diagram using the mouse wheel, but we can’t move the elements around. To get started with panning and more, drag three buttons to the bottom of the diagram,
 
 #### __XAML__
+{{region xamlflix-diagram-4}}
 	<Button Content="Connector" 
 			Height="23" 
 			HorizontalAlignment="Left" 
@@ -97,10 +105,12 @@ If we run the application we can zoom in and out on the diagram using the mouse 
 			VerticalAlignment="Top" 
 			Width="75" 
 			Click="Pointer_Click" />
+{{endregion}}
 			
 Add a click event for each of the three buttons.  Add a __MouseTool__ as the __ActiveTool__ for each of the three event handlers,
         
 #### __C#__
+{{region xamlflix-diagram-4}}
 	private void Connector_Click(object sender, RoutedEventArgs e)
 	{
 		xRadDiagram.ActiveTool = MouseTool.ConnectorTool;
@@ -115,8 +125,10 @@ Add a click event for each of the three buttons.  Add a __MouseTool__ as the __A
 	{
 		xRadDiagram.ActiveTool = MouseTool.PointerTool;
 	}
+{{endregion}}
 	
 #### __VB__
+{{region xamlflix-diagram-5}}
 	Private Sub Connector_Click(sender As Object, e As RoutedEventArgs)
 		xRadDiagram.ActiveTool = MouseTool.ConnectorTool
 	End Sub
@@ -128,6 +140,7 @@ Add a click event for each of the three buttons.  Add a __MouseTool__ as the __A
 	Private Sub Pointer_Click(sender As Object, e As RoutedEventArgs)
 		xRadDiagram.ActiveTool = MouseTool.PointerTool
 	End Sub
+{{endregion}}
 
 Run the application and click on the Pan button. You’ll be able to drag the entire diagram against the background.  You can pan the __RadDiagram__ by holding control and moving the mouse and you can zoom in and out with the mouse button.  For additional keyboard shortcuts see the [Keyboard Support]({%slug raddiagrams-features-shortcuts%}) article.
 
@@ -146,6 +159,7 @@ Figure 4
 Allowing Copy, Paste, Cut and Delete is as simple as setting the appropriate attributes on the __RadDiagram__ control itself,
 	
 #### __XAML__
+{{region xamlflix-diagram-6}}
 	<telerik:RadDiagram 
 			 Name="xRadDiagram" 
 			 Margin="9,0,0,0"
@@ -153,6 +167,7 @@ Allowing Copy, Paste, Cut and Delete is as simple as setting the appropriate att
 			 AllowCut="True"
 			 AllowPaste="True"
 			 AllowDelete="True" />
+{{endregion}}
 			 
 Once you’ve added these attributes, run the application, pan the shapes into place and click on a shape. Hit control-C and{% if site.site_name == 'Silverlight' %} Silverlight 5 will ask if you want to allow the web application to access the clipboard. Click Yes, and you can copy that shape and paste it elsewhere on the diagram, as shown in figure 5,        
 
@@ -167,6 +182,7 @@ Figure 5
 You can add your own shapes to the diagram by generating the shape in, e.g., Expression Blend and then grabbing the resulting path.  Note that in the following custom shape the path is broken up across multiple lines to fit in this posting, but you will want the path to be on a single line with no carriage returns or line feeds,
 	
 #### __XAML__
+{{region xamlflix-diagram-7}}
 	<telerik:RadDiagramShape 
 		Geometry="M9.4136295,2.4576555E-05 C14.800209,-0.013108866 21.555286,5.2417045 22.176739,5.7343717
 		L22.197632,5.7509871 L22.217262,5.7353773 C22.838715,5.2427092 29.593792,-0.012109431 34.98037,0.0010241366
@@ -177,6 +193,7 @@ You can add your own shapes to the diagram by generating the shape in, e.g., Exp
 		C8.6667957,0.027634615 9.0368671,0.00094353169 9.4136295,2.4576555E-05 z" 
 		Content="Diagram #11" 
 		Position="120, 125"/> 
+{{endregion}}
 		
 It turns out that this draws a heart shape.  Once this is added to your diagram, this shape can be used like any other, as shown in figure 6,
 
@@ -188,6 +205,7 @@ Figure 6
 A very simple change we can make is to change the color of the background of the __Grid__. You do that by adding the background attribute to the __RadDiagram__.
 
 #### __XAML__
+{{region xamlflix-diagram-8}}
 	<telerik:RadDiagram Name="xRadDiagram" 
 						Margin="9,0,0,0"
 						AllowCopy="True"
@@ -195,14 +213,17 @@ A very simple change we can make is to change the color of the background of the
 						AllowPaste="True"
 						AllowDelete="True"
 						Background="AntiqueWhite"/>
+{{endregion}}
 						
 You can also change the background of any of the individual shapes,
 
 #### __XAML__
+{{region xamlflix-diagram-9}}
 	<telerik:RadDiagramShape Content="Diagram #4" 
 							 Background="Aqua" 
 							 Foreground="Red"  
 							 Position="100,100"  
 							 Name="s2"/>
+{{endregion}}
 							 
 You can also change the __FontSize, FontFamily__, etc.

@@ -239,7 +239,7 @@ __RadRichTextBox__ exposes a API allowing you to use various methods to add, mod
 
 	#### __[VB.NET] Example 4: Change Table Cell Content Alignment__
 	{{region radrichtextbox-features-document-elements-tables_9}}
-		Me.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed)
+		Me.radRichTextBox.ChangeTableCellContentAlignment(RadTextAlignment.Center, RadVerticalAlignment.Center)
 	{{endregion}}
 
 * __ChangeTableCellVerticalContentAlignment__:  Modifies the vertical alignment of the currently selected cell.
@@ -256,37 +256,37 @@ __RadRichTextBox__ exposes a API allowing you to use various methods to add, mod
             
 * __ChangeTableLayoutMode__: Modifies the layout mode of a table.
 
-	#### __[C#] Example 4: Change Table Layout Mode__
+	#### __[C#] Example 5: Change Table Layout Mode__
 	{{region radrichtextbox-features-document-elements-tables_10}}
 		this.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed);
 	{{endregion}}           
 
-	#### __[VB.NET] Example 4: Change Table Layout Mode__
+	#### __[VB.NET] Example 5: Change Table Layout Mode__
 	{{region radrichtextbox-features-document-elements-tables_11}}
-		Me.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed);
+		Me.radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.Fixed)
 	{{endregion}}  
 * __ChangeTableHorizontalAlignment__: Modifies the horizontal alignment of the currently selected table.
 
 
 * __ChangeTableGridColumnWidth__: Modifies the width of the column with the specified zero-based index.
 
-	#### __[C#] Example 5: Change the Width of a Table Column__
+	#### __[C#] Example 6: Change the Width of a Table Column__
 	{{region radrichtextbox-features-document-elements-tables_12}}
 		 this.radRichTextBox.ChangeTableGridColumnWidth(table, 3, new TableWidthUnit(TableWidthUnitType.Fixed, 12));
 	{{endregion}}  
             
-	#### __[VB.NET] Example 5: Change the Width of a Table Column__
+	#### __[VB.NET] Example 6: Change the Width of a Table Column__
 	{{region radrichtextbox-features-document-elements-tables_13}}
 		Me.radRichTextBox.ChangeTableGridColumnWidth(table, 3, New TableWidthUnit(TableWidthUnitType.Fixed, 12))
 	{{endregion}}  
 * __ChangeTableRowHeight__: Changes the height of a table row.
   
-	#### __[C#] Example 6: Change the Height of a Table Row__
+	#### __[C#] Example 7: Change the Height of a Table Row__
 	{{region radrichtextbox-features-document-elements-tables_14}}
 		this.radRichTextBox.ChangeTableRowHeight(table.Rows.First, 35.5);
 	{{endregion}}  
 
-	#### __[VB.NET] Example 6: Change the Height of a Table Row__
+	#### __[VB.NET] Example 7: Change the Height of a Table Row__
 	{{region radrichtextbox-features-document-elements-tables_15}}
         Me.radRichTextBox.ChangeTableRowHeight(table.Rows.First, 35.5)
 	{{endregion}} 

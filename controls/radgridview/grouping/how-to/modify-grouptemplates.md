@@ -25,7 +25,6 @@ Please note that the DataContext of the group row is {% if site.site_name == 'WP
 Below you can find a sample code showing how to set a new __GroupHeaderTemplate for the GridViewDataColumn__:
 
 #### __XAML__
-
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_0}}
 	<telerik:GridViewDataColumn.GroupHeaderTemplate>
 	    <DataTemplate>
@@ -42,7 +41,6 @@ Below you can find a sample code showing how to set a new __GroupHeaderTemplate 
 You could do the same for all the columns by defining a __GroupHeaderTemplate for the RadGridView__:
 
 #### __XAML__
-
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_1}}
 	<telerik:RadGridView.GroupHeaderTemplate>
 	    <DataTemplate>
@@ -59,7 +57,6 @@ You could do the same for all the columns by defining a __GroupHeaderTemplate fo
 Note that if you have any AggregateFunctions defined, and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you will have to hide them. You can achieve this, like so:
 
 #### __XAML__
-
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_2}}
 	<Style TargetType="telerik:GridViewGroupRow">
 	    <Setter Property="ShowHeaderAggregates" Value="False"/>
@@ -73,6 +70,7 @@ Note that if you have any AggregateFunctions defined, and you do not want the de
 A similar logic applies for the group footers and __GroupFooterTemplate__. For example, you can define such per column with the following sample DataTemplate:
 
 #### __XAML__
+{{region xaml-gridview-grouping-how-to-modify-grouptemplates_3}}
     <telerik:GridViewDataColumn.GroupFooterTemplate>
        <DataTemplate>
           <telerik:AggregateResultsList ItemsSource="{Binding}">
@@ -88,7 +86,8 @@ A similar logic applies for the group footers and __GroupFooterTemplate__. For e
           </telerik:AggregateResultsList>
       </DataTemplate>
     </telerik:GridViewDataColumn.GroupFooterTemplate>
+{{endregion}}
 
->tipYou can also check the implementation of {% if site.site_name == 'Silverlight' %} [Totals demo](http://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %} __Totals__ [WPF Demos](http://demos.telerik.com/wpf/#GridView/Totals){% endif %}.   
+>tip You can also check the implementation of {% if site.site_name == 'Silverlight' %} [Totals demo](http://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %} __Totals__ [WPF Demos](http://demos.telerik.com/wpf/#GridView/Totals){% endif %}.   
 
 >For styling the appearance of the GroupRow via editing the template of the GridViewGroupRow, please follow this [this article.]({%slug gridview-styling-group-row%})

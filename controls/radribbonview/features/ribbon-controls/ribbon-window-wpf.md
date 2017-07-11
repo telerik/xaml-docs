@@ -130,6 +130,7 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 			InitializeComponent()
 		End Sub
 	End 
+{{endregion}}
 
 In order to apply a Telerik style on the __RadRibbonWindow__, it is best to use the implicit styling mechanism further described in the [Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html) tutorial.
 

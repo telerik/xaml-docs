@@ -73,6 +73,7 @@ These events handle more complex gesture interactions that are combinations of b
 The TouchManager expose public methods for all events that could be subscribed to. The following code snippet illustrates how to subscribe to the TouchManager events:
 
 #### __[C#] Example 1: Subscribing to TouchManager events__  
+{{region touchmanager-events-0}}
 	TouchManager.AddTapEventHandler(uiElement, new TapEventHandler(OnUIElementTap));
 	TouchManager.AddTouchDownEventHandler(uiElement, new TouchEventHandler(OnUIElementTouchDown));
 	//-------------
@@ -83,8 +84,10 @@ The TouchManager expose public methods for all events that could be subscribed t
 	private void OnUIElementTouchDown(object sender, TouchEventArgs args)
 	{		
 	}
+{{endregion}}
 	
 #### __[VB.NET] Example 1: Subscribing to TouchManager events__  
+{{region touchmanager-events-1}}
 	TouchManager.AddTapEventHandler(uiElement, New TapEventHandler(AddressOf OnUIElementTap))
 	TouchManager.AddTouchDownEventHandler(uiElement, New TouchEventHandler(AddressOf OnUIElementTouchDown))	
 	'--------------'
@@ -93,7 +96,8 @@ The TouchManager expose public methods for all events that could be subscribed t
 
 	Private Sub OnUIElementTouchDown(sender As Object, args As TouchEventArgs)
 	End Sub
-	
+{{endregion}}
+
 ## See Also
 * [Overview]({%slug touchmanager-overview%})
 * [Getting Started]({%slug touchmanager-getting-started%})

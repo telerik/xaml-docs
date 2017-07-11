@@ -104,7 +104,8 @@ controls/radmap/how-to/howto-wraparound-virtualization-visualizationlayer,
 controls/radgridview/columns/trimmed-text-tooltips.md,
 controls/radtreelistview/features/trimmed-text-tooltips.md,
 controls/radvirtualgrid,
-analytics/google-analytics-integration]
+analytics/google-analytics-integration,
+controls/radwindow/features/radwindowinterophelper]
 
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:

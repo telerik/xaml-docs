@@ -11,9 +11,6 @@ position: 3
 # Implement a Tri-State CheckBox logic using MVVM
 
 This tutorial will guide you through the process of implementing a 'tri-state' __CheckBox__ functionality in the __RadTreeView__ using MVVM.
-	  
-
-## 
 
 The __RadTreeView__ control supports check boxes/radio buttons elements next to each item out-of-the-box. However, their 'tri-state' logic implementation is designed to work when the __RadTreeView.Items__ collection is populated with __RadTreeViewItems__. Basically it will work as expected when the __RadTreeView__ is [declaratively populated]({%slug radtreeview-populating-with-data-declaratively%}) or its __Items__ collection is populated in  [code-behind]({%slug radtreeview-populating-with-data-in-code-behind%}). However, the __RadTreeView__ control is mostly used in databinding scenarios following the MVVM pattern. And if your applicaiton requirements include a 'tri-state' check box logic, then it's best to define a __CheckBox__ control inside the __RadTreeViewItem's DataTemplates__ and implement the 'tri-state' logic entirely in the view models.
 
@@ -129,16 +126,21 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 * Now let's extend that sample model to include our 'tri-state' logic. Firstly, in order to update the checked state of the parent items, each item will have to keep a reference of its parent item.
 	
 	#### __C#__
+	{{region radtreeview-how-to-tri-state-5}}
 		private CategoryViewModel parentItem;
+	{{endregion}}
 		
 	#### __VB.NET__	
+	{{region radtreeview-how-to-tri-state-6}}
 		Private parentItem As CategoryViewModel
+	{{endregion}}
 
 * Then we need to implement the logic that determines the checked state of each item. For that purpose we have to traverse the children colleciton of a checked item as well as to find the checked state in which its parent item should be set.
 
 	* Let's create a method traversing the children collection of an item:
 
 		#### __C#__
+		{{region radtreeview-how-to-tri-state-7}}
 			private void UpdateChildrenCheckState()
 			{
 				foreach (var item in this.SubCategories)
@@ -149,8 +151,10 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 					}
 				}
 			}
+		{{endregion}}
 
 		#### __VB.NET__	
+		{{region radtreeview-how-to-tri-state-8}}
 			Private Sub UpdateChildrenCheckState()
 				For Each item In Me.SubCategories
 					If Me.IsChecked IsNot Nothing Then
@@ -158,10 +162,12 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 					End If
 				Next item
 			End Sub
+		{{endregion}}
 
 	* We can also create a method that updates the checked state of the parent item. In order to simplify the code, we can use a lambda function to count the number of the checked children of the parent item. If this number indicates that all its children are checked, we can set the parent item checked state to checked, if the count of its checked children is 0, then we need to uncheck it. In all other cases, its state should stay indeterminate.
 	
 		#### __C#__
+		{{region radtreeview-how-to-tri-state-9}}
 			private bool? DetermineCheckState()
 			{
 				bool allChildrenChecked = this.SubCategories.Count(x => x.IsChecked == true) == this.SubCategories.Count;
@@ -177,9 +183,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 
 				return null;
-			}		
+			}				
+		{{endregion}}
 			
 		#### __VB.NET__	
+		{{region radtreeview-how-to-tri-state-10}}
 			Private Function DetermineCheckState() As Boolean?
 				Dim allChildrenChecked As Boolean = Me.SubCategories.LongCount(Function(x) x.IsChecked.Equals(True)) = Me.SubCategories.Count
 				If allChildrenChecked Then
@@ -193,6 +201,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 
 				Return Nothing
 			End Function
+		{{endregion}}
 
 * We need to call both methods when the checked state of each item is changed. That basically means that we need to call them when the __IsChecked__ property value is changed:
 
@@ -694,6 +703,6 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 
 >tip You can find the sample solution in our {% if site.site_name == 'Silverlight' %}[CodeLibrary](http://www.telerik.com/community/code-library/silverlight/treeview/treeview-how-to-create-a-tri-state-checkbox-logic-using-mvvm.aspx){% endif %}{% if site.site_name == 'WPF' %}[CodeLibrary](http://www.telerik.com/community/code-library/wpf/treeview/tri-state-checkbox-logic-in-a-radtreeview-using-mvvm.aspx){% endif %}.
 
-# See Also
+## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
  * [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%})

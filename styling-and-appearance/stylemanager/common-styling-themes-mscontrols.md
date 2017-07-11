@@ -43,7 +43,12 @@ Below is the full control list of native {% if site.site_name == 'Silverlight' %
           
 
 * System.Windows.Tooltip
-          
+{% if site.site_name == 'WPF' %}
+
+
+* System.Windows.StatusBar
+{% endif %}    
+
 
 For all of those controls you may __specify the theme for them__ as you may for any Telerik control.
 

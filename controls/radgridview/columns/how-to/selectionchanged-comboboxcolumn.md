@@ -27,11 +27,13 @@ position: 7
 #### __[C#] Example 2: Handle the SelectionChanged event__
 
 {{region cs-gridview-columns-howto-selectionchanged-comboboxcolumn_2}}
-	Private Sub OnSelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
-	    If e.RemovedItems.Count > 0 Then
-	        'your code here
-	    End If
-	End Sub
+	private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.RemovedItems.Count > 0)
+            {
+                //your code here
+            }
+        }
 {{endregion}}
 
 #### __[VB.NET] Example 2: Handle the SelectionChanged event__
@@ -46,10 +48,8 @@ position: 7
 
 You can see that with the code snippet above I check if there are any items being unselected (through the RemovedItems.Count). This ensures the event will not be handled on initial loading when a default item has been selected. 
 
-# See Also
+## See Also
 
- * [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
-
- * [Empty Cells in Combobox column]({%slug gridview-troubleshooting-blank-cells%})
-
- * [Number of clicks in the ComboBox column]({%slug gridview-combobox-column-clicks%})
+* [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
+* [Empty Cells in Combobox column]({%slug gridview-troubleshooting-blank-cells%})
+* [Number of clicks in the ComboBox column]({%slug gridview-combobox-column-clicks%})

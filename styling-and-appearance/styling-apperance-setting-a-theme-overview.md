@@ -66,7 +66,7 @@ The approaches are shown in details below:
 ![implicit styles 1](images/implicit-styles-theme-dll.PNG)
 
 #### __[XAML] Example 1: After you add a reference, you should merge the needed .xaml files__
-
+{{region styling-apperance-implicit-styles-overview-0}}
 	 <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -79,6 +79,7 @@ The approaches are shown in details below:
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>	
 	 </Application.Resources>
+{{endregion}}
  
 ### Copy the XAML files in a dedicated folder in your application
 
@@ -95,7 +96,7 @@ As already advised, the default styles and resources for each theme are shipped 
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
 #### __[XAML] Example 2: The MergedDictionaries in your application resources:__
-
+{{region styling-apperance-implicit-styles-overview-1}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -108,6 +109,7 @@ As already advised, the default styles and resources for each theme are shipped 
 	    		</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
+{{endregion}}
 
 
 >If you copy the XAML files in your project, please make sure that they are with the proper build action. Generally it should be __Resource__, but for the __Telerik.Windows.Controls.RibbonView.xaml__ file the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).

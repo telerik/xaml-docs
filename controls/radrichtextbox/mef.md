@@ -128,7 +128,7 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(TabStopsPropertiesDialog),
     typeof(UnprotectDocumentDialog),
     typeof(WatermarkSettingsDialog));
-{{region}}
+{{endregion}}
 
 You could remove all the types you won’t need in your application.
 

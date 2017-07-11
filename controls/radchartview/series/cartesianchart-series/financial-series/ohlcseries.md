@@ -87,7 +87,7 @@ You can use the CategoryBinding, OpenBinding, CloseBinding, LowBinding, HighBind
 
 ## Styling the Series
 
-You can see how to style spline area series using different properties in the [OhlcSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
+You can see how to style the ohlc series using different properties, in the [OhlcSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
 
 Additionally, you can use the Palette property of the chart to change the colors of the OhlcSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 

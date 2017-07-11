@@ -44,7 +44,7 @@ New format providers can be easily plugged-in by deriving from the __DocumentFor
 
 	[CustomDocumentFormatProvider]
 	public class DocFormatProvider : DocumentFormatProviderBase
-{{region}}
+{{endregion}}
 
 >tip An example showing how to create a custom format provider could be downloaded [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DocFormatProviderDemo).
 
@@ -59,12 +59,10 @@ You can create and plug your custom dictionary by implementing the __IWordDictio
 
 
 #### __[C#] Example 3: Create Custom Dictionary__
-
 {{region radrichtextbox-mef_2}}
-
     [WordDictionaryMetadata("da-DK")]
     public class CustomDanishDictionary : IWordDictionary
-{{region}}
+{{endregion}}
 
 
 ## Initial Load Performance of RadRichTextBox
@@ -77,7 +75,6 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
 
 
 #### __[C#] Example 4: Create TypeCatalog__
-
 {{region radrichtextbox-mef_3}}
 
 	RadCompositionInitializer.Catalog = new TypeCatalog(
@@ -184,6 +181,6 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 		{{endregion}}
 
 
-# See also 
+## See also 
 
 * [Performance]({%slug radrichtextbox-performance%})

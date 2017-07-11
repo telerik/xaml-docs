@@ -171,6 +171,7 @@ A new feature of the Office2016 theme’s palette is the __FocusThickness__ prop
 #### __[C#] Example 6: Setting focus border thickness__
 {{region styling-appearance-office2016-5}}
 	Office2016Palette.Palette.FocusThickness = new Thickness(1);
+{{endregion}}
 	
 #### __Figure 4: Setting the focus border thickness__
 ![](../images/common-styling-appearance-office2016-theme-3.png)	

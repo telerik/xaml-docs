@@ -84,7 +84,7 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 
 ## Styling the Series
 
-You can see how to style area series using different properties in the [ScatterPointSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
+You can see how to style the series using different properties in the [ScatterPointSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
 
 Additionally, you can use the Palette property of the chart to change the colors of the ScatterPointSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 

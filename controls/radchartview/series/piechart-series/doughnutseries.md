@@ -18,6 +18,7 @@ This series is visualized on the screen as separate slices representing each of 
 You can use the following definition to display a simple DoughnutSeries
 
 #### __XAML__
+{{region radchartview-series-doughnutseries-0}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:DoughnutSeries>
@@ -31,8 +32,9 @@ You can use the following definition to display a simple DoughnutSeries
 			</telerik:DoughnutSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>
+{{endregion}}
 
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
 
-# See Also
+## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

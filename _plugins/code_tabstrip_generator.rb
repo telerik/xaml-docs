@@ -1,8 +1,13 @@
 module Reading
   class TabbedCodeGenerator < Jekyll::Generator
-		def generate(site)				
-			@headerSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*/ 
-			@snippetSearchPattern = /#### (__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\s*(>\n*)*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)+?(>?{{endregion}})/ # gets the whole snippet portion - header + region tags + code snippet 			
+		def generate(site)		
+			codeTabstripEnabled = site.config['code_tabstrip_enabled']
+			if codeTabstripEnabled.nil? || !codeTabstripEnabled				
+				return
+			end			
+			
+			@headerSearchPattern = /####\s{1,}(__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*/ 
+			@snippetSearchPattern = /####\s{1,}(__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\s*(>\n*)*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)+?(>?{{endregion}})/ # gets the whole snippet portion - header + region tags + code snippet 			
 			@regionsPattern = /{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*)*{{endregion}}/ # gets the region tags and the content between them
 			@regionStartPattern = /{{region\s.*}}/
 			@regionEndPattern = /{{endregion}}/
@@ -100,7 +105,7 @@ module Reading
 		end
 		
 		def getTrimmedHeader(header)			
-			headerLangPattern = /#### (__|\*\*)\[?(VB.NET|VB|C#|XAML)\]?\s*/ # gets the language part of the header (including white spaces). Examples: '__[XAML] ' or '__[C#] ' or '__XAML ', etc. 
+			headerLangPattern = /####\s{1,}(__|\*\*)\[?(VB.NET|VB|C#|XAML)\]?\s*/ # gets the language part of the header (including white spaces). Examples: '__[XAML] ' or '__[C#] ' or '__XAML ', etc. 
 			languageString = header[headerLangPattern];
 			 if !languageString.nil?					
 				header = header.gsub(languageString, "")				

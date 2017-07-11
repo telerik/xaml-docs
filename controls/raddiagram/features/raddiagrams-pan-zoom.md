@@ -198,9 +198,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 The __DiagrammingFramework__ also provides a built-in zoom animation. By default this animation is activated, but you can easily deactivate and activate it again through the __DiagramAnimations.IsZoomAnimationEnabled__ attached property.                
 
 #### __XAML__
+{{region raddiagrams-features-pan-zoom-7}}
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
 	<telerik:RadDiagram telerik:DiagramAnimations.IsZoomAnimationEnabled="True" />
+{{endregion}}
 
 ## Zoom Events
 

@@ -17,7 +17,6 @@ When working in unbound mode, the polar series are filled with PolarDataPoint ob
 Below is an example of RadPolarChart with PolarAreaSeries:
 
 #### __XAML__
-
 {{region radchart-series-polarseries_0}}
 	<telerikChart:RadPolarChart>
 	    <telerikChart:RadPolarChart.PolarAxis>
@@ -39,10 +38,6 @@ Below is an example of RadPolarChart with PolarAreaSeries:
 	                                           Value="10"/>
 	    </telerikChart:PolarAreaSeries>
 	</telerikChart:RadPolarChart>
-	{{endregion}}
-
-
-
-
+{{endregion}}
 
 ![](images/radchartview-chart_series_polar.png)

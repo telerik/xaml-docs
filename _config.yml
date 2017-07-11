@@ -3117,6 +3117,9 @@ defaults:
 # Define any custom fields that you use in the site here
 framework_name: WPF
 
+# Determines if the tabstrip with the code snippets will be build. Because building those is a heavy operation you can set this field to False while working locally with the documentation, thus improving the building performance. The field accepts True and False values
+code_tabstrip_enabled: False
+
 # Feedback Form Google Sheet ID
 ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 

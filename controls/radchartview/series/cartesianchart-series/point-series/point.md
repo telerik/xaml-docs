@@ -84,7 +84,7 @@ You can use the ValueBinding and CategoryBinding properties of the PointSeries t
 
 ## Styling the Series
 
-You can see how to style area series using different properties in the [PointSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
+You can see how to style the series using different properties in the [PointSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
 
 Additionally, you can use the Palette property of the chart to change the colors of the PointSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 

@@ -88,38 +88,56 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 * StandardPaletteHeaderText
 	
 	#### __XAML__
+	{{region colorselector-appearance_6}}
 		<telerik:RadColorSelector StandardPaletteHeaderText="Header" />
+	{{endregion}}
 		
 	#### __C#__
+	{{region colorselector-appearance_7}}
 		RadColorSelector selector = new RadColorSelector();
 		selector.StandardPaletteHeaderText = "header";
+	{{endregion}}
 		
 	#### __VB.NET__
+	{{region colorselector-appearance_8}}
 		Dim selector As New RadColorSelector()
 		selector.StandardPaletteHeaderText = "header"
+	{{endregion}}
 	
 * MainPaletteHeaderText
 	
 	#### __XAML__
+	{{region colorselector-appearance_9}}
 		<telerik:RadColorSelector MainPaletteHeaderText="Header" />
+	{{endregion}}
 	 
 	#### __C#__
+	{{region colorselector-appearance_10}}
 		RadColorSelector selector = new RadColorSelector();
 		selector.MainPaletteHeaderText = "header";
+	{{endregion}}
 		
 	#### __VB.NET__
+	{{region colorselector-appearance_11}}
 		Dim selector As New RadColorSelector()
 		selector.MainPaletteHeaderText = "header"
+	{{endregion}}
 
 * NoColorText
 	
 	#### __XAML__
+	{{region colorselector-appearance_12}}
 		<telerik:RadColorSelector NoColorText="No Color Text" />
+	{{endregion}}
 		
 	#### __C#__
+	{{region colorselector-appearance_13}}
 		RadColorSelector selector = new RadColorSelector();
 		selector.NoColorText = "No Color Text";
+	{{endregion}}
 		
 	#### __VB.NET__
+	{{region colorselector-appearance_14}}
 		Dim selector As New RadColorSelector()
 		selector.NoColorText = "No Color Text"
+	{{endregion}}

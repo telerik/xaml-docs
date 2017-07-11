@@ -27,7 +27,6 @@ This tutorial will walk you through the common tasks of:
 For the purpose of this tutorial the following declaration will be used:
 
 #### __XAML__
-
 {{region xaml-gridview-group-footers_0}}
 	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -47,7 +46,6 @@ For the purpose of this tutorial the following declaration will be used:
 In order to enable the group footers functionality, merely set __ShowGroupFooters__ property of __RadGridView__ to __True__.
 
 #### __XAML__
-
 {{region xaml-gridview-group-footers_1}}
 	<telerik:RadGridView ShowGroupFooters="True" />
 {{endregion}}
@@ -59,7 +57,6 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 The same operation can be done in the code-behind.
 
 #### __C#__
-
 {{region cs-gridview-group-footers_2}}
 	private void EnableGroupFooters()
 	{
@@ -68,7 +65,6 @@ The same operation can be done in the code-behind.
 {{endregion}}
 
 #### __VB.NET__
-
 {{region vb-gridview-group-footers_3}}
 	Private Sub EnableGroupFooters()
 	    Me.radGridView.ShowGroupFooters = True
@@ -82,7 +78,6 @@ The same operation can be done in the code-behind.
 If you want your group footers to have a static content, simply configure __GroupFootersTemplate__ property.
 
 #### __XAML__
-
 {{region xaml-gridview-group-footers_4}}
 	<Grid.Resources>
 	    <DataTemplate x:Key="GroupFooterTemplate">
@@ -100,7 +95,6 @@ If you want your group footers to have a static content, simply configure __Grou
 	</Grid>
 {{endregion}}
 
-
 ![](images/RadGridView_Grouping_GroupFooters_020.png)
 
 * Using [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}).
@@ -108,7 +102,6 @@ If you want your group footers to have a static content, simply configure __Grou
 The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example:
 
 #### __XAML__
-
 {{region xaml-gridview-group-footers_5}}
 	<telerik:RadGridView AutoGenerateColumns="False" ShowGroupFooters="True">
 	    <telerik:RadGridView.Columns>
@@ -144,8 +137,9 @@ Check out the following topics which explain in great details __RadGridView__'s 
 ## Re-defining Group Aggregates
 
 You can modify the default template of displaying group aggregates by applying a new __GroupFooterTemplate__ configured it per specific requirements.
-For example:
+
 #### __XAML__
+{{region xaml-gridview-group-footers_6}}
 	<telerik:GridViewDataColumn.GroupFooterTemplate>
 	    <DataTemplate>
 	        <StackPanel Orientation="Vertical"
@@ -175,13 +169,11 @@ For example:
 	        </StackPanel>
 	    </DataTemplate>
 	</telerik:GridViewDataColumn.GroupFooterTemplate>
+{{endregion}}
 
->Note that the GroupFooter's DataContext is __AggregateResultsList__.
+> The GroupFooter's DataContext is __AggregateResultsList__.
 
-# See Also
-
+## See Also
  * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
-
  * [Basic Filtering]({%slug gridview-filtering-basic%})
-
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

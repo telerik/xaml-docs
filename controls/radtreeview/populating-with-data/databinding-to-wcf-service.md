@@ -162,19 +162,23 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 	The body of the exposed __LoadCategories()__ method is shown on the code snippet below.
 		
 	#### __C#__
+	{{region radtreeview-populating-with-data-databinding-to-wcf-service_22}}
 		[OperationContract]
 		public List<Categories> LoadCategories()
 		{
 			NorthwindEntities ent = new NorthwindEntities();
 			return ent.Categories.Execute( MergeOption.AppendOnly ).ToList();
 		}
+	{{endregion}}
 
 	#### __VB.NET__	
+	{{region radtreeview-populating-with-data-databinding-to-wcf-service_23}}
 		<OperationContract>
 		Public Function LoadCategories() As List(Of Categories)
 			Dim ent As New NorthwindEntities()
 			Return ent.Categories.Execute(MergeOption.AppendOnly).ToList()
 		End Function
+	{{endregion}}
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
@@ -305,6 +309,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 	The body of the exposed __LoadProductsByCategoryId()__ method is shown on the code snippet below.
 		
 	#### __C#__
+	{{region radtreeview-populating-with-data-databinding-to-wcf-service_24}}
 		[OperationContract]
 		public List<Products> LoadProductsByCategoryId( int categoryId )
 		{
@@ -315,14 +320,17 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 					select p;
 			return q.ToList();
 		}
+	{{endregion}}
 
 	#### __VB.NET__
+	{{region radtreeview-populating-with-data-databinding-to-wcf-service_25}}
 		<OperationContract>
 		Public Function LoadProductsByCategoryId(categoryId As Integer) As List(Of Products)
 			Dim ent As New NorthwindEntities()
 			Dim q = From p In ent.Products Where p.Categories.CategoryID = categoryIdOrder By p.ProductNamep
 			Return q.ToList()
 		End Function
+	{{endregion}}
 
 * Add the following code to the load on demand event handler, which you declared on step 1. 
 
@@ -364,7 +372,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 And here is the result: 
 ![](images/RadTreeView_PopulatingWithBindingToWCFService_030.PNG)
 
-# See Also
+## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})
  * [Populating with Data - In Code-Behind]({%slug radtreeview-populating-with-data-in-code-behind%})

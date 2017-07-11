@@ -18,7 +18,6 @@ This article shows how you can wrap the text of the column header, i.e. to have 
 We will take advantage of the fact that the __Header__ property of the GridView column is of type Object so we can put everything in it. In this case this would be a TextBlock which has a convenient property __TextWrapping__
 
 #### __XAML__
-
 {{region xaml-gridview-howto-wrap-text-column-header_0}}
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" 
@@ -28,9 +27,9 @@ We will take advantage of the fact that the __Header__ property of the GridView 
 	        <TextBlock Text="Stadium Established Date" TextWrapping="Wrap" />
 	    </telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
-	
+{{endregion}}
+
 That is it, now you have a multi-line header. 
 
-#See also
-
+## See also
  * [Column Headers]({%slug gridview-columns-column-headers%})

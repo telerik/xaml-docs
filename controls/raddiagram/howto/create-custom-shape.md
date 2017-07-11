@@ -26,6 +26,7 @@ Let's take this step by step:
 	
 	{% if site.site_name == 'Silverlight' %}
 	#### __C#__	
+	{{region raddiagram-howto-create-custom-shape-0}}
 		public class CustomShape : Control
 		{
 			public CustomShape()
@@ -33,8 +34,10 @@ Let's take this step by step:
 				this.DefaultStyleKey = typeof(CustomShape);
 			}
 		}
-			
+	{{endregion}}
+	
 	#### __XAML__
+	{{region raddiagram-howto-create-custom-shape-1}}
 		<Style TargetType="{x:Type local:CustomShape}">
 			<Setter Property="Template">
 				<Setter.Value>
@@ -47,10 +50,11 @@ Let's take this step by step:
 				</Setter.Value>
 			</Setter>
 		</Style>				
-	
+	{{endregion}}
 	{% endif %}
 	{% if site.site_name == 'WPF' %}	
 	#### __C#__	
+	{{region raddiagram-howto-create-custom-shape-2}}
 		public class CustomShape : Control
 		{
 			static CustomShape()
@@ -58,8 +62,10 @@ Let's take this step by step:
 				DefaultStyleKeyProperty.OverrideMetadata(typeof(CustomShape), new FrameworkPropertyMetadata(typeof(CustomShape)));
 			}
 		}	
+	{{endregion}}
 
 	#### __XAML__
+	{{region raddiagram-howto-create-custom-shape-3}}
 		<Style TargetType="{x:Type local:CustomShape}">
 			<Setter Property="Template">
 				<Setter.Value>
@@ -72,19 +78,23 @@ Let's take this step by step:
 				</Setter.Value>
 			</Setter>
 		</Style>
+	{{endregion}}
 	{% endif %}
 
 * Change the type of the __CustomShape__ class to derive from __RadDiagramShapeBase__:			
 
 	#### __C#__
+	{{region raddiagram-howto-create-custom-shape-4}}
 		public class CustomShape : Telerik.Windows.Controls.Diagrams.RadDiagramShapeBase
 		{
 		  ...
 		}
-
+	{{endregion}}
+	
 * Modify the default __ControlTemplate__ of the __CustomShape__ to better fit your needs. In this tutorial we will create a radio station loading shape which displays the name and frequency of a radio station. It also indicates the current loading process and the rating of the station. Below you can find the custom __Style__ for that shape:			
 
 	#### __XAML__
+	{{region raddiagram-howto-create-custom-shape-5}}
 		<Style TargetType="local:CustomShape">
 			<Setter Property="BorderThickness" Value="4" />
 			<Setter Property="BorderBrush" Value="#6C666666" />
@@ -191,15 +201,18 @@ Let's take this step by step:
 					</ControlTemplate>
 				</Setter.Value>
 			</Setter>
-		</Style>			  
+		</Style>	
+	{{endregion}}		
 		
 * Now that your custom control is defined and its __ControlTemplate__ is customized, you can use it as a shape in your Diagramming drawing canvas:			
 
 	#### __XAML__
+	{{region raddiagram-howto-create-custom-shape-6}}
         <telerik:RadDiagram>
             <local:CustomShape />
         </telerik:RadDiagram>			  
-			  
+	{{endregion}}
+	
 	>The __local__ alias points to the namespace of the __CustomShape__ class. 
 	
 As a result you'll get the following custom shape:
@@ -208,6 +221,7 @@ As a result you'll get the following custom shape:
 Please note that in case you need to bind the __RadDiagram__ control to a collection of business data and you need to display the business data in a custom shape, then you have to create a custom __RadDiagram__. In the custom diagram class you need to override the __IsItemItsOwnShapeContainerOverride__ and __GetShapeContainerForItemOverride__ methods to return the custom shape type:		
 
 #### __C#__
+{{region raddiagram-howto-create-custom-shape-7}}
 	public class CustomDiagram : RadDiagram
 	{
 		protected override bool IsItemItsOwnShapeContainerOverride(object item)
@@ -220,8 +234,10 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 			return new CustomShape();
 		}
 	}			  
+{{endregion}}
 			  
 #### __VB.NET__	
+{{region raddiagram-howto-create-custom-shape-8}}
 	Public Class CustomDiagram
 		Inherits RadDiagram
 		Protected Overrides Function IsItemItsOwnShapeContainerOverride(item As Object) As Boolean
@@ -232,10 +248,11 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 			Return New CustomShape()
 		End Function
 	End Class		  
-			  
+{{endregion}}
+	
 You can download a sample project from our {% if site.site_name == 'Silverlight' %}[CodeLibrary](http://www.telerik.com/community/code-library/silverlight/diagrams/how-to-create-a-custom-shape.aspx){% endif %}{% if site.site_name == 'WPF' %}[CodeLibrary](http://www.telerik.com/community/code-library/wpf/diagrams/how-to-create-a-custom-shape.aspx){% endif %}.		
 
-# See Also
+## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Use MVVM in RadDiagram]({%slug raddiagrams-howto-mvvm%})
  * [Iterate Over the Diagram Items]({%slug raddiagrams-howto-iterate-over-the-diagram-items%})

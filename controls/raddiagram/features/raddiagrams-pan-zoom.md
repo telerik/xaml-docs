@@ -27,11 +27,11 @@ You can also activate the __Pan__[ MouseTool]({%slug raddiagrams-features-mouse-
 The __DiagrammingFramework__ also provides a built-in pan animation. By default this animation isn't activated which means that you have to manually activate it in case you need to utilize it in your solution. The animation can be set through the __DiagramAnimations.IsPanAnimationEnabled__ attached property.
                 
 #### __XAML__
-
+{{region raddiagrams-features-pan-zoom-6}}
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
     <telerik:RadDiagram telerik:DiagramAnimations.IsPanAnimationEnabled="True" />
-
+{{endregion}}
 
 ## Pan Events
 
@@ -369,7 +369,7 @@ You can use the __RadSlider__ control to visualize the current zoom value of a _
 
 ![raddiagrams zooming](images/raddiagrams_zooming.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

@@ -43,19 +43,25 @@ The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingRestMapProv
 Here is an example of a __BingMapProvider__ definition:        
 
 #### __XAML__
+{{region radmap-features-providers-0}}	
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
+{{endregion}}
 
 #### __C#__
+{{region radmap-features-providers-1}}	
 	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
 	this.radMap.Provider = bingMap;
+{{endregion}}
 
 #### __VB__
+{{region radmap-features-providers-2}}
 	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
 	Me.radMap.Provider = bingMap
+{{endregion}}
 
 Here is a snapshot of the map that appears:
 
@@ -66,19 +72,25 @@ Here is a snapshot of the map that appears:
 The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __OpenStreetMapProvider__ class.         
 
 #### __XAML__
+{{region radmap-features-providers-3}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider />
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
+{{endregion}}
 
 #### __C#__
+{{region radmap-features-providers-4}}
 	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider();
 	this.radMap.Provider = openStreetMap;
+{{endregion}}
 	
 #### __VB__
+{{region radmap-features-providers-5}}
 	Dim openStreetMap As New OpenStreetMapProvider()
 	Me.radMap.Provider = openStreetMap
+{{endregion}}
 
 Here is a snapshot of the map that appears:
 
@@ -108,21 +120,27 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 * Topographic
 
 #### __XAML__
+{{region radmap-features-providers-6}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:ArcGisMapProvider Mode="Physical" />
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
+{{endregion}}
 
 #### __C#__
+{{region radmap-features-providers-7}}
 	ArcGisMapProvider provider = new ArcGisMapProvider();
 	provider.Mode = ArcGisMapMode.Physical;
 	this.radMap.Provider = provider;
+{{endregion}}
 
 #### __VB__
+{{region radmap-features-providers-8}}
 	Dim provider As New ArcGisMapProvider ()
 	provider.Mode = ArcGisMapMode.Physical
 	Me.radMap.Provider = provider
+{{endregion}}
 
 Here is a snapshot of the map that appears:
 

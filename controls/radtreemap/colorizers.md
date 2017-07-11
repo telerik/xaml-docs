@@ -19,7 +19,7 @@ Let's get started with creating a sample TreeMap, bound to collection of busines
 Here's our sample TreeMap:
 
 #### __C#__
-
+{{region radtreemap-colorizers-0}}
 	public MainPage()
 	{
 	  InitializeComponent();
@@ -58,9 +58,10 @@ Here's our sample TreeMap:
 		public string Country { get; set; }
 		public double Gdp { get; set; }
 	}
-	
-#### __VB.NET__
+{{endregion}}
 
+#### __VB.NET__
+{{region radtreemap-colorizers-1}}
 	Public Sub New()
 		InitializeComponent()
 		treeMap1.ItemsSource = Me.GetData()
@@ -94,9 +95,10 @@ Here's our sample TreeMap:
 		Public Property Country() As String
 		Public Property Gdp() As Double
 	End Class
+{{endregion}}
 
 #### __XAML__
-
+{{region radtreemap-colorizers-2}}
 	<telerik:RadTreeMap x:Name="treeMap1" LayoutStrategy="Squarified" BorderThickness="1" BorderBrush="#FF5F031C">
 		<telerik:RadTreeMap.TypeDefinitions>
 			<telerik:TypeDefinition TargetTypeName="GdpInfo" 
@@ -107,7 +109,8 @@ Here's our sample TreeMap:
 			</telerik:TypeDefinition>
 		</telerik:RadTreeMap.TypeDefinitions>
 	</telerik:RadTreeMap>
-
+{{endregion}}
+	
 The result si shown bellow:
 ![Rad Tree Map radtreemap colorizer 0](images/RadTreeMap_radtreemap_colorizer_0.PNG)
 	

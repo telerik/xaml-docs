@@ -15,8 +15,9 @@ This tutorial describes how to use a custom property provider to define the prop
 The __PersistenceFramework__ exposes an extension method that allows you to register a class to act as a property provider and define which properties of a persisted control should be saved and how. The method has the following syntax:	  
 
 #### __C#__
-
+{{region persistence-framework-custom-property-provider-0}}
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(System.Type type, Telerik.Windows.Persistence.Services.IPersistenceProvider provider);
+{{endregion}}
 
 You need to pass as arguments the type of the component that will use the custom property provider and an instance of the custom property provider class.  
 
@@ -138,7 +139,7 @@ You can find examples of __ICustomPropertyProvider__ implementations in the __Pe
 * __Docking Serializaiton__
 {% endif %}
 
-# See Also
+## See Also
  * [Isolated Storage]({%slug persistence-framework-isolated-storage%})
  * [Save in a Stream]({%slug persistence-framework-save-stream%})
  * [Serialization Options]({%slug persistence-framework-defining-properties%})

@@ -41,11 +41,13 @@ If you want to display galleries with __DiagramShapes__ in different panels, you
 The __Diagramming Framework__ provides a built-in __SettingsPane__ that allows the users to examine and modify the settings of the diagramming items. It can be displayed through the __ItemInformationAdorner.AdditionalContent__ attached property:		
 
 #### __XAML__
+{{region raddiagrams-faq-0}}
 	<telerik:RadDiagram x:Name="xDiagram">
 		<primitives:ItemInformationAdorner.AdditionalContent>
 			<telerik:SettingsPane Diagram="{Binding ElementName=xDiagram}"/>
 		</primitives:ItemInformationAdorner.AdditionalContent>
 	</telerik:RadDiagram>
+{{endregion}}
 
 ## Q: Can I create Custom Connectors
 
@@ -99,7 +101,7 @@ You can dynamically duplicate a selected __RadDiagramItem__ through the __Ctrl+D
 
 You can slightly move (nudge) the currently selected item or items using the __Ctrl+arrow__ key combination. The __Ctrl+Shift+arrow__ key combination, on the other hand, nudges the selection five times more. Please refer to the [Keyboard Support article]({%slug raddiagrams-features-shortcuts%}) for further information.		
 
-# See Also
+## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Connections]({%slug raddiagrams-features-connections%})
  * [Layout]({%slug raddiagram-features-diagram-layout%})

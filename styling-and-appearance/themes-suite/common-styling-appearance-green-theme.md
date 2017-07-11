@@ -27,6 +27,7 @@ The following topic explains the specifics of the theme's color variations.
 There are two palettes of colors which can be easily set by choosing one of the two default color variations:
 
 #### __[C#] Example 1: The ColorVariation enumeration that determines which color variation should be used__
+{{region styling-appearance-green-theme-18}}
 	/// <summary>
 	/// Represents theme color variations.
 	/// </summary>
@@ -42,6 +43,7 @@ There are two palettes of colors which can be easily set by choosing one of the 
 		/// </summary>
 		Light
 	}
+{{endregion}}
 
 The next screenshot displays RadCalendar in its Light and Dark color variations:  
 
@@ -53,19 +55,23 @@ The next screenshot displays RadCalendar in its Light and Dark color variations:
 You can switch between the color palettes by calling the __LoadPreset__ method as shown below:
 
 #### __[C#] Example 2: Changing the color variantion of the theme__
+{{region styling-appearance-green-theme-0}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);	
 
 	//light color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
+{{endregion}}
 	
 #### __[VB.NET] Example 2: Changing the color variantion of the theme__
+{{region styling-appearance-green-theme-1}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
 
 	//light color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light)
-	
+{{endregion}}
+
 ## Green Palette Brushes
 
 Below you can find the differences between the two color variations. Every brush has relevant HEX value in the corresponding color variation.
@@ -143,20 +149,24 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 All available __FontSizes and FontFamily__ as well as their default values are:
 
 #### __[C#] Example 2: Default FontFamily and FontSize values__
+{{region styling-appearance-green-theme-2}}
 	GreenPalette.Palette.FontSizeXS = 10;
 	GreenPalette.Palette.FontSizeS = 11; 
 	GreenPalette.Palette.FontSize = 12;
 	GreenPalette.Palette.FontSizeL = 13;
 	GreenPalette.Palette.FontSizeXL = 14; 
 	GreenPalette.Palette.FontFamily = new FontFamily("Segoe UI");
+{{endregion}}
 	
 #### __[VB.NET] Example 2: Default FontFamily and FontSize values__
+{{region styling-appearance-green-theme-3}}
 	GreenPalette.Palette.FontSizeXS = 10
 	GreenPalette.Palette.FontSizeS = 11
 	GreenPalette.Palette.FontSize = 12
 	GreenPalette.Palette.FontSizeL = 13
 	GreenPalette.Palette.FontSizeXL = 14
 	GreenPalette.Palette.FontFamily = New FontFamily("Segoe UI");
+{{endregion}}
 
 More details regarding the rarely used font sizes can be found below:  
 * GreenPalette.Palette.FontSizeXS is used in: 
@@ -187,6 +197,7 @@ More details regarding the rarely used font sizes can be found below:
 As the following example shows, you can change the default __FontFamily__ from "Segoe UI" to "Comic Sans MS" and the __FontSize__ from 12 to 14 on a click of a button:
 
 #### __[XAML] Example 3: The view of the example__
+{{region styling-appearance-green-theme-4}}
 	<StackPanel> 
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/> 
 		 <telerik:RadButton x:Name="BtnChangeFontSize"
@@ -194,19 +205,24 @@ As the following example shows, you can change the default __FontFamily__ from "
 								   HorizontalAlignment="Center" VerticalAlignment="Center" 
 								   Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
+{{endregion}}
 
 #### __[C#] Example 4: Changing the FontSize and the FontFamily__
+{{region styling-appearance-green-theme-5}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		GreenPalette.Palette.FontSize = 14;
 		GreenPalette.Palette.FontFamily = new FontFamily("Comic Sans MS");
 	}
+{{endregion}}
 
 #### __[VB.NET] Example 4: Changing the FontSize and the FontFamily__	
+{{region styling-appearance-green-theme-6}}
 	Private Sub OnButtonChangeFontSizeClick(sender As Object, e As RoutedEventArgs)
 		GreenPalette.Palette.FontSize = 14
 		GreenPalette.Palette.FontFamily = New FontFamily("Comic Sans MS")
 	End Sub
+{{endregion}}
 
 #### __Figure 3: Change in theme fonts__
 ![Green Theme Image 03](../images/Common_Styling_Appearance_Green_Theme_03.png)
@@ -216,22 +232,27 @@ As the following example shows, you can change the default __FontFamily__ from "
 A new feature of the Green theme is exposing an easy way to modify the corner radius of many elements in your application. You can use the five new palette properties with default values as shown below:
 
 #### __[C#] Example 5: Default CornerRadius values__	
+{{region styling-appearance-green-theme-7}}
 	GreenPalette.Palette.CornerRadius = new CornerRadius(1, 1, 1, 1);
 	GreenPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 1, 1);
 	GreenPalette.Palette.CornerRadiusLeft = new CornerRadius(1, 0, 0, 1);
 	GreenPalette.Palette.CornerRadiusRight = new CornerRadius(0, 1, 1, 0);
 	GreenPalette.Palette.CornerRadiusTop = new CornerRadius(1, 1, 0, 0);
+{{endregion}}
 
 #### __[VB.NET] Example 5: Default CornerRadius values__	
+{{region styling-appearance-green-theme-8}}
 	GreenPalette.Palette.CornerRadius = New CornerRadius(1, 1, 1, 1)
 	GreenPalette.Palette.CornerRadiusBottom = New CornerRadius(0, 0, 1, 1)
 	GreenPalette.Palette.CornerRadiusLeft = New CornerRadius(1, 0, 0, 1)
 	GreenPalette.Palette.CornerRadiusRight = New CornerRadius(0, 1, 1, 0)
 	GreenPalette.Palette.CornerRadiusTop = New CornerRadius(1, 1, 0, 0)
+{{endregion}}
 
 As the following example shows, you can change the default __CornerRadius__ from 1 to 5 on a click of a button:
 
 #### __[XAML] Example 6: The view of the example__	
+{{region styling-appearance-green-theme-9}}
 	<StackPanel>
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
 		 <telerik:RadComboBox x:Name="ComboBoxChangeCornerRadius"
@@ -240,8 +261,10 @@ As the following example shows, you can change the default __CornerRadius__ from
 							  SelectedIndex="1"
 							  HorizontalAlignment="Center" />
 	</StackPanel>
+{{endregion}}
 
 #### __[C#] Example 7: Changing the CornerRadius__	
+{{region styling-appearance-green-theme-10}}
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -261,8 +284,10 @@ As the following example shows, you can change the default __CornerRadius__ from
 			GreenPalette.Palette.CornerRadiusTop = new CornerRadius(selectedValue, selectedValue, 0, 0); 
 		}
 	}
+{{endregion}}
 	
 #### __[VB.NET] Example 7: Changing the CornerRadius__	
+{{region styling-appearance-green-theme-11}}
 	Public Sub New()
 		InitializeComponent()
 		Me.CornerRadiusComboBox.ItemsSource = Enumerable.Range(0, 10)
@@ -279,6 +304,7 @@ As the following example shows, you can change the default __CornerRadius__ from
 			GreenPalette.Palette.CornerRadiusTop = New CornerRadius(selectedValue, selectedValue, 0, 0)
 		End If
 	End Sub
+{{endregion}}
 
 #### __Figure 4: Changes in corner radius__	
 ![Green Theme Image 04](../images/Common_Styling_Appearance_Green_Theme_04.png)
@@ -288,13 +314,19 @@ As the following example shows, you can change the default __CornerRadius__ from
 If you need to change the opacity of disabled elements, you can now easily do it by using the __DisabledOpacity__ property of GreenPalette as follows: 
 
 #### __[XAML]:Example 8: The view of the opacity__	
+{{region styling-appearance-green-theme-12}}
 	<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10" IsEnabled="False"/>
+{{endregion}}
 
 #### __[C#] Example 9: Changing the DisabledOpacity__	
+{{region styling-appearance-green-theme-13}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
+{{endregion}}
 	
 #### __[VB.NET] Example 9: Changing the DisabledOpacity__	
+{{region styling-appearance-green-theme-14}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
+{{endregion}}
 	
 #### __Figure 5: Changes in the disabled elements opacity__
 ![Green Theme Image 05](../images/Common_Styling_Appearance_Green_Theme_05.png)
@@ -302,19 +334,25 @@ If you need to change the opacity of disabled elements, you can now easily do it
 The same is applicable for the ReadOnly state of controls by using the exposed __ReadOnlyOpacity__ property of GreenPalette. The default values are 0.2 and 1 for the __DisabledOpacity__ and the __ReadOnlyOpacity__ properties. 
 
 #### __[XAML] Example 10: The view of the example__		
+{{region styling-appearance-green-theme-15}}
 	<StackPanel Width="200" HorizontalAlignment="Center">
 		<TextBox Text="TextBox" Margin="5" />
 		<TextBox Text="Disabled TextBox" Margin="5" IsEnabled="False" />
 		<TextBox Text="ReadOnly TextBox" Margin="5" IsReadOnly="True" />
 	</StackPanel>
+{{endregion}}
 
 #### __[C#] Example 11: Changing the opacity__		
+{{region styling-appearance-green-theme-16}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5;
+{{endregion}}
 	
 #### __[VB.NET] Example 11: Changing the opacity__		
+{{region styling-appearance-green-theme-17}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
+{{endregion}}
 
 #### __Figure 6: Changes in the readonly elements opacity__
 ![Green Theme Image 06](../images/Common_Styling_Appearance_Green_Theme_06.png)	

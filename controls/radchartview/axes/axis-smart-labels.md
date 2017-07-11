@@ -21,9 +21,11 @@ The RadChartView suite supports couple smart mechanisms which control the axis l
 You can enable the smart labels mode by setting the __SmartLabelsMode__ property of the axis.
 
 #### __XAML__
+{{region radchartview-features-axis-smart-labels-0}}
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis SmartLabelsMode="SmartStep"/>
 	</telerik:RadCartesianChart.VerticalAxis>
+{{endregion}}
 
 The SmartLabelMode property is of type AxisSmartLabelsMode enum and it defines the algorithm which should be used for generating the labels. The enumeration expose the following properties:
 * __None__ (default value): Do not attempt to avoid overlapping labels
@@ -41,9 +43,11 @@ The following picture demonstrates the different modes.
 You can enable the automatic recalculation of the axis labels when you zoom in/out the chart by setting the __IsStepRecalculationOnZoomEnabled__ property to __True__.
 
 #### __XAML__
+{{region radchartview-features-axis-smart-labels-0}}
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis IsStepRecalculationOnZoomEnabled="True"/>
 	</telerik:RadCartesianChart.VerticalAxis>
+{{endregion}}
 
 The following picture demonstrates this feature:
 
@@ -51,7 +55,7 @@ The following picture demonstrates this feature:
 
 >This mechanism is supported only by the chart's numeric axes.
 
-# See Also
+## See Also
 * [Overview]({%slug radchartview-overview %})
 * [Getting Started]({%slug radchartview-introduction %})
 * [Axis]({%slug radchartview-axes-axis %})

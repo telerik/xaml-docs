@@ -1086,9 +1086,7 @@ __After:__
 	    Next
 	    Me.radGridView.FilterDescriptors.ResumeNotifications()
 	    End Class
-	#End Region
-
-
+{{endregion}}
 
 ## Q3 2011
       

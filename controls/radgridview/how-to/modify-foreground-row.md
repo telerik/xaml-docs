@@ -1,84 +1,75 @@
 ---
-title: Modify foreground color of Selected/Hovered row
-page_title: Modify foreground color of Selected/Hovered row
-description: Modify foreground color of Selected/Hovered row
+title: Modify Foreground Color of Selected/Hovered Row
+page_title: Modify Foreground Color of Selected/Hovered Row
+description: Modify Foreground Color of Selected/Hovered Row
 slug: gridview-how-to-modify-foreground-row
 tags: modify,foreground,color,of,selected/hovered,row
 published: True
 position: 14
 ---
 
-# Modify foreground color of Selected/Hovered row
+# Modify Foreground Color of Selected/Hovered Row
 
+This help article will show you how to modify the foreground color of the **GridViewRow** element when you select or hover it.
 
-This help article will show you how to modify the foreground color of GridViewRow on selecting it or hovering over it.
+Every row shows a set of **GridViewCells**. In order to change the foreground of all the GridViewCells when their parent row is hovered or selected you should [predefine the template]({%slug styling-apperance-editing-control-templates%}) of the GridViewRow and access the part __DataCellsPresenter__ element. This element is an **ItemsControl** used to display the cells contained in a row.
 
-Every row shows a set of GridViewCells. In order to change the foreground of all the GridViewCells when their parent row is hovered/selected you should predefine the template of GridViewRow and access the part __DataCellsPresenter__. This element is a plain presenter used to display the cells contained in a row.
+You then need to add an additional animation to the default hover and/or selection states of a row and manipulate the **Foreground** property of __PART_DataCellsPresenter__. 
 
-You should then add an additional animation to the default hover/selection states of a row and manipulate the Foreground property of __PART_DataCellsPresenter__. 
+**Example 1** demonstrates how to edit the **Selected** visual state in order to change the foreground of the row when it is selected.
 
-For example:Selected State
-
-#### __XAML__
+#### __[XAML] Example 1: Modify Selected visual state__
 
 {{region xaml-gridview-how-to-modify-foreground-row_0}}
-	<VisualState x:Name="Selected">
-	    <Storyboard>
-	        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Selected"
-	UIElement.Visibility)">
-	            <DiscreteObjectKeyFrame KeyTime="0">
-	                <DiscreteObjectKeyFrame.Value>
-	                    <Visibility>Visible</Visibility>
-	                </DiscreteObjectKeyFrame.Value>
-	            </DiscreteObjectKeyFrame>
-	        </ObjectAnimationUsingKeyFrames>
-	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NavigatorIndicatorBackground"
-	ackground">
-	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	iew_RowIndicatorCellBackground_Selected}" />
-	        </ObjectAnimationUsingKeyFrames>
-	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
-	oreground">
-	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	iew_ItemForeground_Selected}" />
-	        </ObjectAnimationUsingKeyFrames>
-	    </Storyboard>
-	</VisualState>
+    <VisualState x:Name="Selected">
+	<Storyboard>
+	    <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Selected" Storyboard.TargetProperty="(UIElement.Visibility)">
+		<DiscreteObjectKeyFrame KeyTime="0">
+		    <DiscreteObjectKeyFrame.Value>
+			<Visibility>Visible</Visibility>
+		    </DiscreteObjectKeyFrame.Value>
+		</DiscreteObjectKeyFrame>
+	    </ObjectAnimationUsingKeyFrames>
+	    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NavigatorIndicatorBackground" Storyboard.TargetProperty="Background">
+		<DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{StaticResource GridView_RowIndicatorCellBackground_Selected}" />
+	    </ObjectAnimationUsingKeyFrames>
+	    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter" Storyboard.TargetProperty="Foreground">
+		<DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{StaticResource GridView_ItemForeground_Selected}" />
+	    </ObjectAnimationUsingKeyFrames>
+	</Storyboard>
+    </VisualState>
 {{endregion}}
 
-MouseOver State
+**Example 2** demonstrates how to edit the **MouseOver** visual state in order to change the foreground of the row when it is hovered.
 
-#### __XAML__
+#### __[XAML] Example 2: Modify MouseOver visual state__
 
 {{region xaml-gridview-how-to-modify-foreground-row_1}}
-	<VisualState x:Name="MouseOver">
-	    <Storyboard>
-	        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Over"
-	UIElement.Visibility)">
-	            <DiscreteObjectKeyFrame KeyTime="0">
-	                <DiscreteObjectKeyFrame.Value>
-	                    <Visibility>Visible</Visibility>
-	                </DiscreteObjectKeyFrame.Value>
-	            </DiscreteObjectKeyFrame>
-	        </ObjectAnimationUsingKeyFrames>
-	        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter"
-	oreground">
-	            <DiscreteObjectKeyFrame KeyTime="0:0:0"
-	iew_ItemForeground_Over}" />
-	        </ObjectAnimationUsingKeyFrames>
-	    </Storyboard>
-	</VisualState>
+    <VisualState x:Name="MouseOver">
+	<Storyboard>
+	    <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Over" Storyboard.TargetProperty="(UIElement.Visibility)">
+		<DiscreteObjectKeyFrame KeyTime="0">
+		    <DiscreteObjectKeyFrame.Value>
+			<Visibility>Visible</Visibility>
+		    </DiscreteObjectKeyFrame.Value>
+		</DiscreteObjectKeyFrame>
+	    </ObjectAnimationUsingKeyFrames>
+	    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_DataCellsPresenter" Storyboard.TargetProperty="Foreground">
+		<DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{StaticResource GridView_ItemForeground_Over}" />
+	    </ObjectAnimationUsingKeyFrames>
+	</Storyboard>
+    </VisualState>
 {{endregion}}
 
-You may also add your own brush resources with an appropriate color for this animation:
+**Example 3** shows how to define your own brush resources with an appropriate color for these animations.
         
-#### __XAML__
+#### __[XAML] Example 3: Custom brushes for the Selected and MouseOver states__
 
 {{region xaml-gridview-how-to-modify-foreground-row_2}}
-	<SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
-	<SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>
+    <SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
+    <SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Styling a Row]({%slug gridview-styling-a-row%})

@@ -10,17 +10,17 @@ position: 9
 
 # Defining Columns
 
-Columns can be defined in two ways: 
+__RadGridView__ provides two mechanisms for defining its columns: 
 
-* __RadGridView__ will [automatically generate columns](#automatic-columns-generation) based on the underlying data source. 
+* [Automatic columns definition](#automatic-columns-generation) based on the underlying data source. 
 
-* [Manually specifying columns](#manual-columns-definition) in XAML or code-behind. 
+* [Manual columns definition](#manual-columns-definition) in XAML or code-behind. 
 
 This help article explains how to do both with code examples.
 
 ## Automatic Columns Generation
 
-By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of the __RadGridView__ control to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), __RadGridView__ will create a separate column for each public property of the __Employee__ object.
+By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadGridView__ to a collection of employees (see code in __Example 1__ and the result in __Figure 1__),the control will create a separate column for each public property of the __Employee__ object.
 
 There will be specific editors generated for the following types:
 	*	String - TextBox editor (default)
@@ -31,7 +31,7 @@ However, if you wish to explicitly specify the column name for certain property 
 
 __Example 1: RadGridView__ generates columns automatically.
 
-#### __C#__
+#### __[C#[ Example 1: Defining the business object__
 
 {{region cs-gridview-columns-defining-columns_0}}
 	public class Employee
@@ -57,7 +57,7 @@ __Example 1: RadGridView__ generates columns automatically.
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB] Defining the business object__
 
 {{region vb-gridview-columns-defining-columns_1}}
 	Public Class Employee
@@ -100,7 +100,7 @@ __Figure 1:__ The result of letting __RadGridView__ automatically generate two c
 
 ## Manual Columns Definition
 
-Using the built-in auto generation of columns does not fit all scenarios. In such cases you can manually define columns you want to be displayed. When defining a column you can choose between several column types:
+Using the built-in auto generation of columns does not fit all scenarios. In such cases you can manually define the needed columns. When defining a column you can choose between several column types:
 
 *  [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) 
 *  [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%})
@@ -113,11 +113,11 @@ Using the built-in auto generation of columns does not fit all scenarios. In suc
 *  [Masked Input Column]({%slug radgridview-columns-column-types-masked-input-column%})
 *  [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 
-You must add the columns to __Columns__ collection of __RadGridView__. Later on in the application lifecycle, you can easily access them via the __UniqueName__ property or by column index. To see this sequence unfold, look at the following step-by-step example.
+You must add the columns to the __Columns__ collection of __RadGridView__. Later on in the application lifecycle, you can easily access them via the __UniqueName__ property of __GridViewColumn__, or by the index of the column. To see this sequence unfold, look at the following step-by-step example.
 
 * Define a column of type __GridViewDataColumn__.
 
-#### __XAML__
+#### __[XAML] Example 2: Defining a GridViewDataColumn declaratively__
 
 {{region xaml-gridview-columns-defining-columns_2}}
 	<telerik:GridViewDataColumn/>
@@ -125,24 +125,24 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 >You will find the column types in the same namespace (__Telerik.Windows.Controls__) and assembly (__Telerik.Windows.Controls.GridView.dll__) as __RadGridView__.
 
-#### __C#__
+#### __[C#] Example 3: Defining a GridViewDataColumn programmatically__
 
 {{region cs-gridview-columns-defining-columns_3}}
 	GridViewDataColumn column = new GridViewDataColumn();
 {{endregion}}
 
-#### __VB__
+#### __[VB] Example 3: Defining a GridViewDataColumn programmatically__
 
 {{region vb-gridview-columns-defining-columns_4}}
 	Dim column As New GridViewDataColumn()
 {{endregion}}
 
-* Set __Header__ property and add the column to the __Columns__ collection. The default Header will be the property specified as DataMemberBinding. 
+* Set __Header__ property and add the column to the __Columns__ collection. The __default Header__ will be the property specified as __DataMemberBinding__. 
 		  
 
->importantYou can set and work with __UniqueName__ of a column only when you have also configured __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use __Header__ property instead of UniqueName. 
+>importantYou can utilize the __UniqueName__ property of a column only when you have also configured the __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use its __Header__ property instead of  the __UniqueName__ one. 
 			  
-#### __XAML__
+#### __[XAML] Example 4: Defining a column declaratively with UniqueName property set__
 
 {{region xaml-gridview-columns-defining-columns_5}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -153,7 +153,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 5: Defining a column programmatically with UniqueName property set__
 
 {{region cs-gridview-columns-defining-columns_6}}
 	GridViewDataColumn column = new GridViewDataColumn();
@@ -164,7 +164,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 	this.radGridView.Columns.Add(column);
 {{endregion}}
 
-#### __VB__
+#### __[VB] Example 5: Defining a column programmatically with UniqueName property set__
 
 {{region vb-gridview-columns-defining-columns_7}}
 	Dim column As New GridViewDataColumn()
@@ -178,7 +178,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 * To access the column later, use the __UniqueName__ value or its __column index__ as a key for the __Columns__ collection.
 		  
 
-#### __C#__
+#### __[C#] Example 6: Accessing a column by index__
 
 {{region cs-gridview-columns-defining-columns_8}}
 	var myColumn = this.radGridView.Columns["MyColumn"];
@@ -186,7 +186,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 {{endregion}}
 
 
-#### __VB__
+#### __[VB] Example 6: Accessing a column by index__
 
 {{region vb-gridview-columns-defining-columns_9}}
 	Dim myColumn = Me.radGridView.Columns("MyColumn")
@@ -195,7 +195,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 * In order to set a __CellTemplate__ of __GridViewDataColumn__ in code-behind you can store a defined __DataTemplate__ within __Resources collection__ as follows:
 
-#### __XAML__
+#### __[XAML] Example 7: Defining a DataTemplate__
 
 {{region xaml-gridview-columns-defining-columns_10}}
 	<Grid.Resources>
@@ -207,7 +207,7 @@ You must add the columns to __Columns__ collection of __RadGridView__. Later on 
 
 Then reference it in code-behind as demonstrated below:
         
-#### __C#__
+#### __[C#] Example 8: Applying the defined DataTemplate through the CellTemplate property__
 
 {{region cs-gridview-columns-defining-columns_12}}
 	GridViewDataColumn column = new GridViewDataColumn();
@@ -215,7 +215,7 @@ Then reference it in code-behind as demonstrated below:
 	radGridView.Columns.Add(column);
 {{endregion}}
 
-#### __VB__
+#### __[VB] Example 8: Applying the defined DataTemplate through the CellTemplate property__
 
 {{region vb-gridview-columns-defining-columns_13}}
 	Dim column As New GridViewDataColumn()
@@ -224,7 +224,7 @@ Then reference it in code-behind as demonstrated below:
 {{endregion}}
 
 
-# See Also
+## See Also
 
  * [Basic Column]({%slug radgridview-columns-column-types-basic-column%})
  

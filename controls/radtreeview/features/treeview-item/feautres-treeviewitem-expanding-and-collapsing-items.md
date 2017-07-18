@@ -192,7 +192,7 @@ This is useful when the treeview is data bound to a collection of business objec
 
 ## Binding the IsExpanded Property
 
-A very common scenario i s to have the RadTreeViewItem IsExpanded property bound to a property of a custom business object. The easiest way to achieve this is to use style binding. __Example 10__ shows how to bind a boolean property (named IsExpanded) of a business object to the IsExpanded property RadTreeViewItem.
+A very common scenario is to have the RadTreeViewItem IsExpanded property bound to a property of a custom business object. The easiest way to achieve this is to use style binding. __Example 10__ shows how to bind a boolean property (named IsExpanded) of a business object to the IsExpanded property RadTreeViewItem.
 
 #### __[XAML] Example 10: Data bind the IsExpanded property__
 {{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_21}}
@@ -296,6 +296,7 @@ You can define a Style object that targets RadTreeViewItem and set the IsExpande
 {{endregion}}
 
 ## See Also
+
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})
  * [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%})
  * [Enable and Disable Items]({%slug radtreeview-feautres-treeviewitem-enable-disable-items%})

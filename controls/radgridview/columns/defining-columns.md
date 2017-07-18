@@ -20,18 +20,19 @@ This help article explains how to do both with code examples.
 
 ## Automatic Columns Generation
 
-By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadGridView__ to a collection of employees (see code in __Example 1__ and the result in __Figure 1__),the control will create a separate column for each public property of the __Employee__ object.
+By default, __RadGridView__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadGridView__ to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), the control will create a separate column for each public property of the __Employee__ object.
 
-There will be specific editors generated for the following types:
-	*	String - TextBox editor (default)
-	*	Boolean - CheckBox editor accompanied by GridViewCheckBox element displayed in View mode 
-	*	DateTime - RadDatePicker editor
+Specific editors will be generated for the following types:
+
+* **String**: **TextBox** editor (default)
+* **Boolean**: **CheckBox** editor accompanied by **GridViewCheckBox** element displayed in view mode 
+* **DateTime**: **RadDatePicker** editor
 
 However, if you wish to explicitly specify the column name for certain property of your data class or to prevent the creation of a column for it, use the __System.ComponentModel.DataAnnotations.DisplayAttribute__, as it is shown in the sample below.
 
 __Example 1: RadGridView__ generates columns automatically.
 
-#### __[C#[ Example 1: Defining the business object__
+#### __[C#] Example 1: Defining the business object__
 
 {{region cs-gridview-columns-defining-columns_0}}
 	public class Employee

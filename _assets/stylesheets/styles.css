@@ -26,16 +26,23 @@ a img {
     border-width: 0;
 }
 
+header,
+nav,
+section,
+article,
+aside,
+footer {
+   display:block;
+}
+
+
 .TK-Hat {
     padding-left: 15px;
     padding-right: 15px;
     border-bottom: 1px solid #eff0f1;
     color: #4d4f52;
     background: #ffffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 42042;
 }
 .TK-Hat::after {
@@ -85,12 +92,9 @@ a img {
 
 #page-header {
     background-color: #2a2d33;
-    font-size: 12px;
-    padding: 20px 0 20px 15px;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    top: 41px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px; 
+    padding: 20px 15px;
     z-index: 100;
 }
 
@@ -106,18 +110,12 @@ a img {
 
 #logo-bar,
 #logo-bar-sl {
-    font-size: 14px;
-	float: left;
-	width: 330px;
+	float: left; 
 }
 
 #logo-bar a,
 #logo-bar-sl a{
     display: inline-block;
-}
-
-#logo-bar-sl {
-	width: 395px;
 }
 
 #logo-bar-sl span {
@@ -139,13 +137,15 @@ a img {
     font-size: 15px;
     font-weight: bold;
     line-height: 1.33334;
-    margin: 1px 4px 0 4px;
-    padding: 6px 30px;
+    /*set negative margin to achieve header 70px*/
+    margin: -1px 4px;
+    padding: 5px 30px;
     position: relative;
     text-align: center;
     transition-duration: 0.2s;
     transition-property: background-color, color;
     transition-timing-function: ease;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -156,19 +156,12 @@ a img {
 .btn-primary {
     background-color: #ee5315;
     border-color: #ee5315;
-    margin-right: 1.200em;
 }
 
 .btn-primary:hover {
     background-color: #c2410e;
     border-color: #c2410e;
     cursor: pointer;
-}
-
-#page-top {
-    /* position: relative; */
-   /*  height: 80px; 
-    border-bottom: 2px solid #ebecee;*/
 }
 
 /* Tabs */
@@ -207,33 +200,36 @@ a img {
     position: relative;
     cursor: pointer;
     vertical-align: top;
-    margin: 8px 0 0 0;
+    margin: 6px 0 0 0;
 }
 
 #page-search {
-    margin: 0;
+    margin: 0 0 0 85px;
     position: absolute;
-    top: 9px;
+    top: 61px;
     background-color: transparent;
     padding: 0;
     right: 514px;
     text-align: right;
-    left: 28%;
+    left: 18%;
+    max-width: 930px;
 }
 
 #page-search.search-visibility {
-    background-color: #2a2d33;
     display: block;
-    left: 1.83em;
-    margin-top: 0;
-    position: relative;
-    right: 1.83em;
-    top: -1.6em;
-    width: calc(100% - 3.666em);
 }
 
+#page-search form {
+    box-shadow: 3px 3px 19px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 0;
+}
 #page-search form > table {
     border: 1px solid #D9D9D9;
+    margin: 0px; 
+    padding: 0px;
+}
+#page-search table {
+    margin: 0;  
 }
 
 #page-search .gsc-input-box {
@@ -245,8 +241,13 @@ a img {
     display: none;
 }
 
+#page-search table.gsc-search-box{
+    font-size: 0px; 
+}
+
 #page-search table.gsc-search-box td {
     background-color: #fff;
+    padding:  0 5px; 
 }
 
 #page-breadcrumb {
@@ -270,6 +271,7 @@ a img {
 #page-search .gsc-control-cse {
     background: none;
     border: 0;
+    padding: 0; 
 }
 
 #page-search .gsc-input {
@@ -286,7 +288,7 @@ a img {
     border-radius: 0;
     margin: 0;
     border: 0;
-    padding: 13px 13px 12px;
+    padding: 8px 7px 7px;
     background: none;
     opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -300,10 +302,6 @@ a img {
     display: inline-block;
     text-align: left;
     width: 100%;
-}
-
-#page-header #page-search input.gsc-search-button {
-    padding: 8px 7px 7px;
 }
 
 /* Topic navigation */
@@ -510,11 +508,11 @@ a img {
 }
 
 #page-inner-content {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-	clear: both;
-    top: 120px;
+    position: absolute;
+	overflow: hidden !important;
+    top: 113px;
+    bottom: 44px; 
+    width: 100%;
 }
 
 #page-inner-content:after {
@@ -538,7 +536,6 @@ a img {
 }
 
 #page-article h1:after {
-    border-bottom: 2px solid #ebecee;
     content: " ";
     display: block;
     font-size: 0;
@@ -548,7 +545,7 @@ a img {
 }
 
 #page-article h1 {
-	font-size: 1.9em;
+	font-size: 34px;
 }
 
 a {
@@ -563,6 +560,14 @@ h1,h2,h3,h4,h5,h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #000;
     text-decoration: none;
+    letter-spacing: -0.04em; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400; 
+    line-height: 1.2em; 
+    margin-top: 30px; 
+    margin-bottom: 12px; 
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -697,7 +702,6 @@ a.footer-links:hover {
 	padding-bottom: 1em;
 	padding-left: 36px;
 }
-
 #page-edit-link {
 	position: absolute;
 	z-index: 10;
@@ -707,59 +711,34 @@ a.footer-links:hover {
 	text-decoration: none;
 }
 
-#logo-bar ul,
-#logo-bar-sl ul {
-    float: left;
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+/*#page-edit-link {
+    transition: width .2s linear .3s; 
+	position: absolute;
+	z-index: 10;
+	right: 36px;
+	top: 70px;
+    width: 26px; 
+    height: 17px; 
+	margin: 0;
+	text-decoration: none;
+    margin-top: 79px; 
+    padding: 9px 10px 10px 0; 
+    background-color: #fff; 
+    color: #787878;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border: 1px solid #e8ebef; 
+    border-radius:  20px; 
 }
 
-#logo-bar li,
-#logo-bar-sl li  {
-    display: inline-block;
-    vertical-align: middle;
-}
-#logo-bar li::before,
-#logo-bar-sl li::before {
-    content: "";
-    display: inline-block;
-    height: 40px;
-    width: 12px;
-    background: url("../images/nav-arrow.png") no-repeat center center;
-    background-size: 12px 40px;
-    margin: 0 14px;
-    vertical-align: middle;
-}
+.k-i-pencil::before {
+    content: "\e10b";
+}*/
 
 .logo {
-    font-size: 14px;
-    width: 323px;
-    height: 40px;
+    height: 30px;
     display: inline-block;
     vertical-align: top;
-}
-
-.logo em {
-    background: url('../images/tap-logo.png') 0 center no-repeat;
-    background-size: 14px 14px;
-    display: inline-block;
-    width: 14px;
-    height: 13px;
-    margin-right: 1px;
-}
-
-.logo strong {
-    color: #fff;
-    margin-right: 6px;
-}
-
-#telerik-logo {
-    background: transparent url(../images/icon-telerik-badge.png) 0 0 no-repeat;
-    width: 30px;
-    height: 27px;
-    float: left;
 }
 
 .copyright {
@@ -820,6 +799,10 @@ h4 {
 	font-weight: normal;
 }
 
+#page-article {
+    line-height: 1.5; 
+}
+
 #page-article table {
 	border: 1px solid #2CB144;
 	border-collapse: collapse;
@@ -869,7 +852,7 @@ header, nav, section, article, aside, footer {
 	#logo-bar-sl{
         float: none;
         display: inline-block;
-		margin-left: 1em;
+        margin-left: 1em; 
     }
 
     #page-nav {
@@ -888,17 +871,31 @@ header, nav, section, article, aside, footer {
     .nav-buttons {
         display: none;
     }
+
+    #page-header #page-search.search-visibility~#logo-bar, 
+    #page-header #page-search.search-visibility~.show-search
+    {
+        display: none;
+    }
+	
 	
 	.show-search {
         display: inline-block;
         margin: 0;
         position: absolute;
-        top: 27px;
+        top: 65px;
         padding: 0;
         right: 1.833em;
         text-align: right;
         left: auto;
         cursor: pointer;
+    }
+
+    #page-search {
+        left: 50px;
+        max-width: initial; 
+        right: 15px; 
+        margin: 0px; 
     }
 	 
 	 .toggle-nav {
@@ -961,14 +958,6 @@ header, nav, section, article, aside, footer {
 
     .toggle-nav {
         display: inline-block;
-    }
-
-    #page-search {
-        width: 33%;
-		right: 0px;
-        left: auto;
-        display: none;
-        background-color: #2a2d33;
     }
 
     #page-search > div {
@@ -1570,10 +1559,6 @@ header, nav, section, article, aside, footer {
 }
 
 @media (max-width: 450px) {
-	header {
-		height: 77px;
-	}
-
 	#logo-bar, 
 	#logo-bar-sl {
 		position: absolute;

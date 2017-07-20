@@ -33,5 +33,7 @@ You can use the following definition to display a simple PieSeries:
 
 ![radchartview-series-pieseries](images/radchartview-series-pieseries.png)
 
-# See Also
+## See Also
+
+ * [Customizing Pie Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%})
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

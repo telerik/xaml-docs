@@ -94,8 +94,10 @@ footer {
     background-color: #2a2d33;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px; 
-    padding: 20px 15px;
+    padding: 19px 15px;
     z-index: 100;
+    height: 32px;
+    overflow: hidden;
 }
 
 #page-header:after {
@@ -137,8 +139,7 @@ footer {
     font-size: 15px;
     font-weight: bold;
     line-height: 1.33334;
-    /*set negative margin to achieve header 70px*/
-    margin: -1px 4px;
+    margin: 0px 4px;
     padding: 5px 30px;
     position: relative;
     text-align: center;
@@ -904,9 +905,14 @@ header, nav, section, article, aside, footer {
     #page-article {
         width: 100%;
         margin-left: 0;
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 0;
+        padding-right:0;
     }
+	
+    #page-article article {
+        padding: 15px 1em 0;
+    }
+
 }
 
 /* Responsive styles */

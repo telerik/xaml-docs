@@ -247,7 +247,7 @@ footer {
 
 #page-search table.gsc-search-box td {
     background-color: #fff;
-    padding:  0 5px; 
+    vertical-align: top; 
 }
 
 #page-breadcrumb {
@@ -458,11 +458,6 @@ footer {
 
 #introduction #page-search .gsc-input {
     font-size: 18px;
-}
-
-#introduction #page-search table.gsc-search-box td {
-    vertical-align: top;
-    padding-top: 7px;
 }
 
 #category-list {
@@ -711,30 +706,6 @@ a.footer-links:hover {
 	text-decoration: none;
 }
 
-/*#page-edit-link {
-    transition: width .2s linear .3s; 
-	position: absolute;
-	z-index: 10;
-	right: 36px;
-	top: 70px;
-    width: 26px; 
-    height: 17px; 
-	margin: 0;
-	text-decoration: none;
-    margin-top: 79px; 
-    padding: 9px 10px 10px 0; 
-    background-color: #fff; 
-    color: #787878;
-    white-space: nowrap; 
-    overflow: hidden; 
-    border: 1px solid #e8ebef; 
-    border-radius:  20px; 
-}
-
-.k-i-pencil::before {
-    content: "\e10b";
-}*/
-
 .logo {
     height: 30px;
     display: inline-block;
@@ -872,7 +843,7 @@ header, nav, section, article, aside, footer {
         display: none;
     }
 
-    #page-header #page-search.search-visibility~#logo-bar, 
+    #page-header #logo-bar.logo-visibility,  
     #page-header #page-search.search-visibility~.show-search
     {
         display: none;
@@ -950,10 +921,6 @@ header, nav, section, article, aside, footer {
 
     #markdown-toc {
         border-bottom: none;
-    }
-
-    #page-article h1 {
-        margin-top: 1em;
     }
 
     .toggle-nav {

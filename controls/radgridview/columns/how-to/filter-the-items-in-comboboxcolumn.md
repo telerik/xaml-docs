@@ -33,6 +33,7 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
 	        <Style TargetType="telerik:RadComboBox">
 	            <Setter Property="IsFilteringEnabled" Value="True"/>
 	            <Setter Property="StaysOpenOnEdit" Value="True"/>
+		    <Setter Property="OpenDropDownOnFocus" Value="True"/>
 	            <Setter Property="ItemsPanel">
 	                <Setter.Value>
 	                    <ItemsPanelTemplate>
@@ -45,8 +46,8 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
 	</telerik:GridViewComboBoxColumn>
 {{endregion}}
 
-# See Also
+## See Also
 
+ * [RadComboBox Filtering]({%slug radcombobox-features-filtering%})
  * [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%}) 
- 
  * [Number of clicks in ComboBoxColumn]({%slug gridview-combobox-column-clicks%}) 

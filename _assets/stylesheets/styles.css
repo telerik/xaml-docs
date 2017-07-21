@@ -440,6 +440,65 @@ footer {
     color: #428bca;
 }
 
+#markdown-toc+#page-article {
+    /* adjust for ToC fixed positioning */
+    padding-top: 80px;
+}
+
+#markdown-toc+#page-article :target:before {
+    content: "";
+    display: block;
+    height: 135px;
+    margin: -135px 0 0;
+}
+
+#markdown-toc+#page-article h1 {
+    margin: 0;
+}
+
+#markdown-toc+#page-article h1+p {
+    margin: 0;
+}
+
+#markdown-toc+#page-article h3 {
+    margin-bottom: 3px;
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+#markdown-toc+#page-article h3 a {
+    color: #e50870;
+    letter-spacing: normal;
+}
+
+#markdown-toc+#page-article h3+p,
+#markdown-toc+#page-article h4+p,
+#markdown-toc+#page-article h5+p {
+    margin-top: 0;
+}
+
+#markdown-toc+#page-article h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+#markdown-toc+#page-article h5 {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+#markdown-toc+#page-article h5 code {
+    color: #3e526b;
+}
+
+#markdown-toc+#page-article h5 a code {
+    color: #1976d2;
+}
+
 /* Index page */
 
 #introduction #page-search {
@@ -521,9 +580,13 @@ footer {
 
 #page-article {
     background-color: #fff;
-    bottom: 0;
-    box-sizing: border-box;
     line-height: 1.5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    bottom: 0;
     overflow: auto;
     position: absolute;
     right: 0;
@@ -542,6 +605,7 @@ footer {
 
 #page-article h1 {
 	font-size: 34px;
+    margin-top: 1em; 
 }
 
 a {
@@ -551,6 +615,8 @@ a {
 a:hover {
     color: #036c9c;
 }
+
+/* Headings */
 
 h1,h2,h3,h4,h5,h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -574,37 +640,81 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1 a:hover, h2 a:hover, h3 a:hover,
 h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: none;
     background: transparent url(../images/anchor.png) no-repeat 0px 50%;
+}
+h1 {
+    font-size: 34px;
 }
 
 h2 {
-    margin: 2em 0em 1em 0;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 42px;
 }
 
 h3 {
-    border-top: 2px solid #ebecee;
-    padding-top: 20px;
-    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-h2 + h3 {
-    border-top: 0;
-    margin-top: 0;
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    /*we leave green color here for now */ 
+    color: #00b312;
+    letter-spacing: 0; 
 }
 
-h3 code, h3 em {
-    color: #666;
-    font-family: monospace;
+h5 {
     font-size: 15px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+ 
+/*h1+p {
+    font-size: 18px;
+}*/
+
+h3 code,
+h3 em {
+    color: #666;
+    font-size: 14px;
 }
 
 h3 code {
-    margin-left: 10px;
+    margin-left: 4px;
+}
+
+h3 a:first-child+a code:before {
+    content: "-";
+    margin-right: 7px;
+    color: #ccc;
+}
+
+h3>code:first-child:before {
+    content: "|";
+    margin-right: 7px;
+    color: #ccc;
 }
 
 h3 em {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+p {
+    margin: 12px 0;
+}
+
+ul,
+ol {
+    margin: 12px 0 30px;
 }
 
 blockquote,
@@ -724,17 +834,6 @@ a.footer-links:hover {
     margin-left: 35px;
 }
 
-h2:before {
-    border-top: 2px solid #ebecee;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 1px;
-    top: -15px;
-    width: 100%;
-	position: relative;
-}
-
 footer {
     bottom: 0;
     box-sizing: border-box;
@@ -764,17 +863,6 @@ footer p a#send-feedback:hover  {
 	color: #00b312;
 }
 
-h4 {
-	color: #00b312;
-    font-size: 1.1em;
-	margin: 12px 0 0 0;
-	font-weight: normal;
-}
-
-#page-article {
-    line-height: 1.5; 
-}
-
 #page-article table {
 	border: 1px solid #2CB144;
 	border-collapse: collapse;
@@ -801,7 +889,7 @@ h4 {
 
 #page-article article {
     max-width: 930px;
-	padding: 15px 1em 0 3em;
+	margin: 15px 1em 0 3em;
 }
 
 header, nav, section, article, aside, footer {
@@ -906,13 +994,17 @@ header, nav, section, article, aside, footer {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
-        padding-right:0;
-    }
-	
-    #page-article article {
-        padding: 15px 1em 0;
+        padding-right: 0;
     }
 
+    #page-article article {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+    #page-article h1 {
+        margin-top: 1em;
+    }
 }
 
 /* Responsive styles */

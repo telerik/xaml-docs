@@ -71,15 +71,3 @@
     font-weight: normal;
     font-style: normal;
 }
-
-#page-inner-content {
-    bottom: 44px;
-    position: absolute;
-    top: 120px;
-    width: 100%;
-	overflow: hidden !important;
-}
-
-#page-inner-content.move-inner-content {
-    top: 126px;
-}

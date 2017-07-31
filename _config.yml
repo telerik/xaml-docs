@@ -518,6 +518,9 @@ navigation:
     controls/radtreeview/how-to/drag-and-drop:
         title: Drag and Drop
         position: 0
+    controls/radtreeview/features/treeview-item:
+        title: RadTreeViewItem
+        position: 50
     controls/radupload:
         title: RadUpload
     controls/radupload/features:

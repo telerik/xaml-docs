@@ -12,7 +12,7 @@ position: 3
 
 Before proceed reading the __Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ documentation we recommend that you check the fundamental concepts of {% if site.site_name == 'WPF' %}__Windows Presentation Foundation (WPF)__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %}. This article contains basic information about the {% if site.site_name == 'WPF' %}__WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %} framework and tells you where to find relevant information about its features.
 
-## __Overview__ 
+## Overview
 
 {% if site.site_name == 'WPF' %}
 __Windows Presentation Foundation__ provides a unified programming model for building Windows smart client user experiences that incorporate UI, media, and documents. 

@@ -75,7 +75,7 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 
 {% if site.site_name == 'WPF' %}
 
-Finally in order to make the style default for all of the __ToolWindow__controls you have to set it to the following value.{% endif %}
+Finally in order to make the style default for all of the __ToolWindow__ controls you have to set it to the following value.{% endif %}
 
 #### __XAML__
 

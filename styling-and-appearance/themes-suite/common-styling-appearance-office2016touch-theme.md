@@ -98,13 +98,13 @@ __Example 2__ shows the default font sizes and families.
 
 #### __[C#] Example 2: Default FontSize and FontFamily__
 {{region styling-appearance-office2016touch-1}}
-	Office2016TouchPalette.Palette.FontSizeS = 10;
-	Office2016TouchPalette.Palette.FontSize = 12;
-	Office2016TouchPalette.Palette.FontSizeL = 14;
+	Office2016TouchPalette.Palette.FontSizeS = 12;
+	Office2016TouchPalette.Palette.FontSize = 14;
+	Office2016TouchPalette.Palette.FontSizeL = 16;
 	Office2016TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 {{endregion}}
 
-__Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI"** to **"Calibri"** and the FontSize from **12** to **16** on a click of a button:
+__Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI"** to **"Calibri"** and the FontSize from **14** to **16** on a click of a button:
 
 #### __[XAML] Example 3: Example view definition__
 {{region styling-appearance-office2016touch-2}}

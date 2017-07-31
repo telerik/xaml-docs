@@ -1653,7 +1653,7 @@ header, nav, section, article, aside, footer {
 
 #helpful-buttons-container {
 	font-size: 1.5em;
-	font-weight: bold;
+	font-weight: 500;
 	color: #000;
 	text-decoration: none;
 	position: relative;
@@ -1693,11 +1693,9 @@ header, nav, section, article, aside, footer {
 
 #feedback-submitted-container,
 #additional-feedback-button {
-	/* font-size: 1.5em; */
-	/* visibility: hidden; */
 	display: none; 	
 	font-size: 22px;
-	font-weight: bold;	
+	font-weight: 500;	
 }
 
 #feedback-submitted-container {

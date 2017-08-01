@@ -34,16 +34,15 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Configuration__: Telerik __RadWindow__ can be easily configured to suit the needs of your application. You have a full control over determining the initial [state]({%slug radwindow-features-states%}) and [position]({%slug radwindow-features-positioning%}) of the window, whether it can be [resized]({%slug radwindow-features-resizing%}), [closed]({%slug radwindow-features-closing%}) or [moved]({%slug radwindow-features-moving%}).
 
+>tip Get started with the control with its [Getting Started]({%slug radwindow-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+
 ## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
-
  * [Getting Started]({%slug radwindow-getting-started%})
-
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
-
  * [Events]({%slug radwindow-events-overview%})
-
  * [End-User Capabilities]({%slug radwindow-end-user-capabilities%})
-
  * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})

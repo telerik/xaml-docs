@@ -12,20 +12,27 @@ position: 0
 
 {% if site.site_name == 'Silverlight' %}![](images/RadNumericUpDown_Overview.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadNumericUpDown_Overview_WPF.png){% endif %}
 
+__RadNumericUpDown__ provides a rich user experience by allowing users to define various value formats, as well as additionally customize them to meet the customers' business requirements. Besides the predefined numeric, percentage and currency formats, developers can also create their custom formats. Additionally, the control allows you to define minimum and maximum values to which the user can increment/decrement the input’s value. 
+
 ![](images/RadNumericUpDown_General.png)
 
-This control provides a rich user experience by allowing users to define various value formats, as well as additionally customize them to meet the customers' business requirements. The rich formatting options let users define different value formats. Besides the predefined numeric, percentage and currency formats, developers can also create their custom formats. __RadNumericUpDown__ also allows you to define minimum and maximum values to which the user can increment/decrement the input’s value. Additionally, you can specify the “change” that will be applied to the value upon each increase/decrease. The control can also be used in read-only mode in which the user cannot set custom values.
+## Key Features
 
-__RadNumericUpDown__ can be used in UpDown mode that uses paired arrow-buttons to increment or decrement a certain value, i.e. a scroll position or a number displayed in a companion control without showing a text box. To accomplish this feature you should set the __ShowTextBox__ property to __false__.
+* __Formatting options__: You can set different formatting options to be applied over the control's value. Read more about this in the [Formatting]({%slug radnumericupdown-formatting%}) article.
 
-Moreover, __RadNumericUpDown__ can be fully declared both in xaml and code behind, and extensively customized in __Microsoft Expression Blend__. However, changing the control template of __RadNumericUpDown__ may impact its functionality in case some required parts are missed. For more details about required parts in the control template as well as appearance and styling you should refer to the Styles and Templates section of this help. 
+* __Keyboard and mouse support__: The control supports updating the value via the keyboard and the mouse. You can do that with the mouse wheel or the up/down and page up/down keys. Read more about this in the [Keyboard Support]({%slug radnumericupdown-navigation%}) article.
 
-# See Also
+* __Different display modes__: RadNumericUpDown allows you to change between two display modes. The default one is the up-down mode that shows a textbox input and paired arrow buttons next to it. And the other one displays only the arrow buttons. You can switch between the modes via the __ShowTextBox__ boolean property.
 
- * [Required parts]({%slug radnumericupdown-required-parts%})
-{% if site.site_name == 'WPF' %}
- * [HowTo]({%slug radnumericupdown-howto-events-wpf%})
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-* [HowTo]({%slug radnumericupdown-howto-events%})
-{% endif %}
+* __Custom value change step__: The control allows you to define the value step that will be applied to the value upon each increase/decrease. Read more about this in the [Behavior]({%slug radnumericupdown-behavior%}) article.
+
+* __Read-only mode__: RadNumericUpDown supports read-only mode in which the end user cannot set custom values.
+
+>tip Get started with the control with its [Getting Started]({%slug radnumericupdown-drag-and-drop%}) help article that shows how to use it in a basic scenario.
+
+> Check out the demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#NumericUpDown){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+
+## See Also  
+ * [Visual Structure]({%slug radnumericupdown-structure%})
+ * [Behavior]({%slug radnumericupdown-behavior%})
+ 

@@ -12,19 +12,31 @@ position: 0
 
 With RadPdfViewer you are able to both display and verify documents within your application and make sure that it has not been tampered with.
 
-## What is a Digital Signature
+This article contains the following sections:
+
+* [What is a Digital Signature?](#what-is-a-digital-signature)
+
+* [Cryptography Standards](#cryptography-standards)
+
+* [Signature Field](#signature-field)
+
+* [Validation](#validation)
+
+* [Limitations](#limitations)
+
+## What is a Digital Signature?
 
 The digital signature is the equivalent of the handwritten signature and is intended to solve security problems in the digital communication. The signature is unique to each signer and is widely used to confirm that the document content originated from the signer and has not been modified in any way.
 
-The digital signatures rely on a mathematical algorithm, which generates a public and a private key. The private key is used to create the signature while the user signs the document. The algorithm creates a hash over the document data and uses the signer's private key to encrypt this hash. The result of this operation is the digital signature of the document. Once the document is signed, any change on it invalidates the hash, respectively the signature and anyone trying to open this document is notified that it has been modified.
+The digital signatures rely on a mathematical algorithm, which generates a public and a private key. The private key is used to create the signature while the user signs the document. The algorithm creates a hash over the document data and uses the signer's private key to encrypt this hash. The result of this operation is the digital signature of the document. Once the document is signed, any change on it invalidates the hash, respectively the signature is invalidated.
 
-## Signature Encodings
+## Cryptography Standards
 
-RadPdfViewer enables you to validate signature fields using standard signature encodings. Following is a list of them:
+RadPdfViewer enables you to validate signature fields using standard  Cryptography Standards. Following is a list of them:
 
-* adbe.x509.rsa_sha1 (PKCS #1)
+* adbe.x509.rsa_sha1 ([PKCS #1](https://tools.ietf.org/html/rfc8017))
 
-* adbe.pkcs7.sha1 (PKCS #7)
+* adbe.pkcs7.sha1 ([PKCS #7](https://tools.ietf.org/html/rfc2315))
 
 * adbe.pkcs7.detached (PKCS #7 Detached)
 
@@ -33,10 +45,10 @@ For all other formats you might need, there is a flexible API enabling you to im
 
 ## Signature Field
 
-The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called Signature, which is responsible for signing and validating.
+The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called Signature, which is responsible for validating.
 
 
-## Signature Validation
+## Validation
 
 In the PDF document model, the validation is performed per signature. For a valid signed document is considered one that has not been changed after the signing and all of its certificates have valid trusted root certificate.
 
@@ -99,8 +111,9 @@ The **Signature** class exposes two methods allowing you to validate a signature
 	
 	Validate() returns object of type [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm).
 
-
 * **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm) object and second one allows you to also pass **SignatureValidationProperties**.
+
+>The Validate() method throws an exception if there is a problem with the signature, while TryValidate() returns false in similar cases.
 
 **Example 4** shows how the validation can be used.
 
@@ -154,3 +167,6 @@ There are few limitations related to the usage of digital signature in RadPdfVie
 
 * The validation is always performed for the current field, against the state of the document in the moment of importing.
 
+## See Also
+
+* [Showing a File]({%slug radpdfviewer-showing-a-file%})

@@ -129,15 +129,17 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 The __Paragraph__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
-* __FontSize__ - represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.__LineSpacing - specifies the value for the space between the lines.__
+* __FontSize__ - represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.
 
-* __LineSpacingType - specifies the type of spacing:__
+* __LineSpacing__ - specifies the value for the space between the lines.
 
-* __AtLeast -__ the space between the lines should equal or greater than the value of the __LineSpacing__ property.
+* __LineSpacingType__ - specifies the type of spacing:
 
-* __Auto -__ the space between the lines is determined automatically.
+	* __AtLeast -__ the space between the lines should equal or greater than the value of the __LineSpacing__ property.
 
-* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property.
+	* __Auto -__ the space between the lines is determined automatically.
+
+	* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property.
 
 * __LeftIndent -__ represents the size of the indent to the left size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
 

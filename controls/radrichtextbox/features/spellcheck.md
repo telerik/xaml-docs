@@ -30,7 +30,7 @@ As the default value is *True*, the only thing you need to do in order to get a 
 
 You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextBox__. It is of type __ISpellChecker__. By default an object of type DocumentSpellChecker, which implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
->When spell checking is enable using `IsSpellCheckingEnabled` property, spell checker is asynchronously invoked in a background thread and marks the words in the document as valid or invalid. If you need to invalidate the words currently marked, you can use `RadRichTextBox.InvalidateProofingErrors(bool)` method.
+>When spell checking is enabled using **IsSpellCheckingEnabled** property, spell checker is asynchronously invoked in a background thread and marks the words in the document as valid or invalid. If you need to invalidate the words currently marked, you can use RadRichTextBox.**InvalidateProofingErrors(bool)** method.
 
 ## Dictionaries
 

@@ -12,9 +12,9 @@ position: 1
 
 >Before proceeding with this tutorial, please first read the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help article.
 
-By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then  add the merged dictionaries of another theme to your application resources in code-behind:
+By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik UI for {% site.framework_name %} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then add the merged dictionaries of another theme to your application resources in code-behind:
 
-#### __[C#] Example 1: Merging ResourceDictionaries in code__ 
+#### __[C#] Example 1: Merging resource dictionaries in code__ 
 {{region styling-apperance-themes-runtime_0}}
 	Application.Current.Resources.MergedDictionaries.Clear();
 	Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = ......});
@@ -24,10 +24,10 @@ This will apply different implicit styles to your control at runtime.
 
 In this help article we'll go through a quick example to demonstrate the approach.
 
-1. Add the required assemblies from the Binaries.NoXaml folder located in the Telerik UI installation folder. You must also include the theme assemblies.  
+1. Add the required assemblies from the **Binaries.NoXaml** folder located in the installation folder of the controls. You must also include the theme assemblies.
 	![Dynamic Switch Themes dlls](images/DynamicSwitchThemes_dlls.png)
 
-2. Add the needed resource dictionaries for the default theme in App.xaml.  
+2. Add the needed resource dictionaries for the default theme in **App.xaml**.  
 
 	#### __[XAML] Example 2: Merging ResourceDictionaries in XAML__ 
 	{{region styling-apperance-themes-runtime_1}}
@@ -43,7 +43,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 		</Application.Resources>
 	{{endregion}}
 
-3. Add a few controls of your choice to the page. In this example, we will add a grid, a stackpanel, a RadComboBox, a RadDateTimePicker and three buttons RadButtons to switch between three of the themes.        
+3. Add a few controls of your choice to the page. In this example, we will add a **Grid**, **StackPanel**, **RadComboBox**,  **RadDateTimePicker** and three **RadButtons** to switch between three of the themes.        
 
 	#### __[XAML] Example 3: Defining the view__  
 	{{region styling-apperance-themes-runtime_2}}
@@ -73,9 +73,9 @@ In this help article we'll go through a quick example to demonstrate the approac
 		</Grid>
 	{{endregion}}
 
-4. The example will use the simplest way to change the theme at runtime – it will use the Click event of each of the three RadButtons. Upon click, we will clear merged dictionaries from the application resources and merge new resource dictionaries from the theme assemblies.       
+4. The example will use the simplest way to change the theme at runtime – it will use the **Click** event of each of the three buttons. Upon click, we will clear the merged dictionaries from the application resources and merge the new resource dictionaries from the theme assemblies.
 
-	#### __[C#] Example 4: The code that merges the theme resources at runtime__  
+	#### __[C#] Example 4: Merge the theme resources at runtime__  
 	{{region styling-apperance-themes-runtime_3}}
 		private void OfficeBlack_Click(object sender, RoutedEventArgs e)
 		{
@@ -111,13 +111,20 @@ In this help article we'll go through a quick example to demonstrate the approac
 		}
 	{{endregion}}
 
-5. __Figures 1-3__ show the result.
+5. __Figures 1-3__ show the final result.
 
 	#### __Figure 1: Click the Office Black button to show a black and grey theme.__  
-	![Dynamic Switch Themes 01](images/DynamicSwitchThemes_01.png)
+	![Controls with Office Black Theme](images/DynamicSwitchThemes_01.png)
 
 	#### __Figure 2: The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.__  
-	![Dynamic Switch Themes 02](images/DynamicSwitchThemes_02.png)
+	![Controls with Windows8 Theme](images/DynamicSwitchThemes_02.png)
 
-	#### __Figure 3: And finally, the Windows 7 theme shows a blue-grey gradient set of colors for the controls.__  
-	![Dynamic Switch Themes 03](images/DynamicSwitchThemes_03.png)
+	#### __Figure 3: And finally, the Windows7 theme shows a blue-grey gradient set of colors for the controls.__  
+	![Controls with Windows7 Theme](images/DynamicSwitchThemes_03.png)
+
+## See Also
+
+* [Switching Themes at Design-time]({%slug styling-apperance-swiching-themes-design-time%})
+* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+* [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})
+* [Switching Icons at Runtime]({%slug styling-apperance-switching-icons-at-runtime%})

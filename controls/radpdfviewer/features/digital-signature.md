@@ -84,7 +84,7 @@ To use this dialog, you should register it through the ExtensibilityManager as d
 	ExtensibilityManager.RegisterSignaturePropertiesDialog(new SignaturePropertiesDialog());
 {{endregion}}
 
-When registered, SignaturePropertiesDialog can be shown by clicking on the SingatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 3** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
+When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 3** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 
 #### **[C#] Example 3: Showing SignaturePropertiesDialog from code-behind**
 

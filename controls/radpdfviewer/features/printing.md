@@ -19,7 +19,7 @@ __RadPdfViewer__ allows printing of the document shown in it. The following arti
 __RadPdfViewer__'s sample UI allows you to print the currently shown PDF document with a simple button click.
 ![Rad Pdf Viewer Printing 03](images/RadPdfViewer_Printing_03.png)
 
-The button shown on the above picture is actually bound to the __PrintPdfDocumentCommand__ with the help of the __PrintCommandDescriptor__, so you can modify the UI to fit your needs.
+The button shown in the above picture is actually bound to the __PrintPdfDocumentCommand__ with the help of the __PrintCommandDescriptor__, so you can modify the UI to fit your needs.
         
 
 #### __XAML__
@@ -39,7 +39,7 @@ The button shown on the above picture is actually bound to the __PrintPdfDocumen
 
 ## Printing Programatically
 
-Additionally to using the UI, you can print by taking advantage of the __Print()__ and __Print(PrintSettings printSettings)__ methods of __RadPdfViewer__. 
+Additionally, to using the UI, you can print by taking advantage of the __Print()__ and __Print(PrintSettings printSettings)__ methods of __RadPdfViewer__. 
 
 The __PrintSettings__ class holds all possible customization options when invoking printing:
 {% if site.site_name == 'Silverlight' %}

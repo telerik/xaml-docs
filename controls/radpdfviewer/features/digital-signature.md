@@ -111,7 +111,7 @@ The **Signature** class exposes two methods allowing you to validate a signature
 	
 	Validate() returns object of type [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm).
 
-* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm) object and second one allows you to also pass **SignatureValidationProperties**.
+* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm) object and the second one allows you to also pass **SignatureValidationProperties**.
 
 >The Validate() method throws an exception if there is a problem with the signature, while TryValidate() returns false in similar cases.
 
@@ -161,7 +161,7 @@ The **Signature** class exposes two methods allowing you to validate a signature
 
 ## Limitations
 
-There are few limitations related to the usage of digital signature in RadPdfViewer.
+There are few limitations related to the usage of a digital signature in RadPdfViewer.
 
 * The validation of a signature depends on the bytes representing the document. Thus, to validate a signature, the stream used to import the document must be still open.
 

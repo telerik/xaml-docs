@@ -12,7 +12,7 @@ position: 1
 
 >Before proceeding with this tutorial, please first read the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help article.
 
-By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik UI for {% site.framework_name %} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then add the merged dictionaries of another theme to your application resources in code-behind:
+By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik UI for {{ site.framework_name }} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then add the merged dictionaries of another theme to your application resources in code-behind:
 
 #### __[C#] Example 1: Merging resource dictionaries in code__ 
 {{region styling-apperance-themes-runtime_0}}

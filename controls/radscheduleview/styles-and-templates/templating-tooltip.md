@@ -5,7 +5,7 @@ description: Templating the ToolTip
 slug: radscheduleview-styles-and-templates-templating-tooltip
 tags: templating,the,tooltip
 published: True
-position: 4
+position: 6
 ---
 
 # Templating the ToolTip

@@ -5,7 +5,7 @@ description: Templating the TimeRulerItems
 slug: radscheduleview-styles-and-templates-templating-timeruleritems
 tags: templates,timeruleritems
 published: True
-position: 8
+position: 3
 ---
 
 # Templating the TimeRulerItems

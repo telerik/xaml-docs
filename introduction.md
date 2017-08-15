@@ -41,15 +41,15 @@ License agreement and detailed information about different licenses and which on
 
 ## Installation and Deployment
 
-To learn how to install Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
+To learn how to install Telerik UI for {{ site.framework_name }} and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
 
 ## Consuming Data
 
-To learn more about the different approaches for populating the Telerik &reg; Telerik UI for {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
+To learn more about the different approaches for populating the Telerik &reg; Telerik UI for {{{ site.framework_name }} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
 
 ## Styling and Appearance
 
-To find how to customize the look of Telerik UI for {% if site.site_name == 'Silverlight' %} Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
+To find how to customize the look of Telerik UI for {{ site.framework_name }} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 
 If you need further assistance you can post your question in the {% if site.site_name == 'Silverlight' %}[Silverlight forums](http://www.telerik.com/community/forums/silverlight.aspx){% endif %}{% if site.site_name == 'WPF' %}[WPF forums](http://www.telerik.com/community/forums/wpf.aspx){% endif %} or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
 
@@ -73,7 +73,7 @@ If you need further assistance you can post your question in the {% if site.site
 
 * Creative ideas – [http://telerik.com/blogs](http://telerik.com/blogs)
 
-## Help us Improve {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Documentation
+## Help us Improve the Telerik UI for {{ site.framework_name }} Documentation
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better and we encourage you to help us with that task in the way that you choose:
 

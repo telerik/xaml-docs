@@ -10,14 +10,14 @@ position: 2
 
 # Editing Control Templates
 
-This article will show you two different approaches on how to extract and edit the default control templates of the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls.
+This article will show you two different approaches on how to extract and edit the default control templates of the Telerik UI for {{ site.framework_name }} controls.
 
 * [Extracting Control Templates Manually from the Theme XAML File](#extracting-control-templates-manually-from-the-theme-xaml-file)
 * [Extracting Control Templates Using Visual Studio](#extracting-control-templates-using-visual-studio)
 
 ## Extracting Control Templates Manually from the Theme XAML File
 
-Inside the installation folder of your version of Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} you can find a folder named __Themes.Implicit__. It contains the **XAML** files of the different themes for all the controls.
+Inside the installation folder of your version of Telerik UI for {{ site.framework_name }} you can find a folder named __Themes.Implicit__. It contains the **XAML** files of the different themes for all the controls.
 
 You then have to navigate to the required theme and open the needed XAML file with your favorite editor. For example, if you are using the **Office_Black** theme and you need the control template of the **RadListBox** control, you need to go in the **Themes.Implicit\OfficeBlack\Themes** folder and find the __Telerik.Windows.Controls.xaml__ file which usually corresponds to the name of the assembly the control is located in.
 

@@ -14,7 +14,7 @@ position: 5
 
 ## 
 
-The Scenario templates’ purpose is to let you quickly start using UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} in your existing projects. You can use the following steps to use our Scenario templates.
+The Scenario templates’ purpose is to let you quickly start using Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} in your existing projects. You can use the following steps to use our Scenario templates.
 
 1. Open the __Add New Item dialog__, just as you usually do when adding a new Item to your project and select the __Telerik Scenario__ Item template or use the __Add Telerik Scenario__ menu item
 	
@@ -36,7 +36,7 @@ The Scenario templates’ purpose is to let you quickly start using UI for {% if
 
 	>Currently there are three predefined scenarios: 
 	
-	* __Page__ – Creates a basic Page, ready to use with UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}
+	* __Page__ – Creates a basic Page, ready to use with Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}
 	
 	* __RadWindow__ – Creates a new __RadWindow__ item. __RadWindow__ lets you create __Child__ and __Dialogs Windows__, which can have their appearance and content customized. 
 	

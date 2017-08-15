@@ -20,7 +20,7 @@ This article will discuss the following topics:
 
 ## ITraceMonitor Interface
 
-As of **R2 2017 SP1**, the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
+As of **R2 2017 SP1**, the Telerik UI for {{ site.framework_name }} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
 
 You need to implement the following methods in order to receive trace events from the controls used in your application:
 

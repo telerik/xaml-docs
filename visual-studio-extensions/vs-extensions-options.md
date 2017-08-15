@@ -18,7 +18,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Options�
 
 ![VSExtentions Options Dialog Menu](images/VSExtentions_OptionsDialogMenu.png)
 
-The __Options__ dialog contains two sets of options that affect the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__.
+The __Options__ dialog contains two sets of options that affect the __Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__.
 
 ![VSExtentions Options Dialog General](images/VSExtentions_OptionsDialogGeneral.png)
 
@@ -35,7 +35,7 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 __Suggest project upgrades for Telerik product version available on my computer__ – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI installed on your system
 
-__Suggest upgrades when an equal Dev release is detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__– When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is available on your system, but the current project uses a trial version
 
 ## Select a Folder for Downloads
 
@@ -44,7 +44,7 @@ Configures the path where the extensions look for and store distributions.
 
 >Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
 
-All settings under the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} category affect only the respective product.
+All settings under the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} category affect only the respective product.
 
 ![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_OptionsDialog.png)
 
@@ -54,4 +54,4 @@ __Include internal builds in Latest Version update and retrieval__ – When enab
 
 ## Notifications
 
-__Show me a message when a newer version is available on [www.telerik.com](http://www.telerik.com)__ – When enabled, you will receive notifications if a new version of __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ is available on the Telerik website.
+__Show me a message when a newer version is available on [www.telerik.com](http://www.telerik.com)__ – When enabled, you will receive notifications if a new version of __Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ is available on the Telerik website.

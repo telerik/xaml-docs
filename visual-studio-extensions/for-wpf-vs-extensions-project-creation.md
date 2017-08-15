@@ -17,7 +17,7 @@ With the new Visual Studio Extensions for WPF you can quickly create an applicat
 
 For convenience the same project templates could be found under the __Visual C# -> Windows__ and __Visual Basic -> Windows__ nodes. 
 
-After you click the __OK__ button, you get the Create New Project Wizard, provided by the Telerik UI for WPF Visual Studio Extensions. The wizard detects all the installed __Use Implicit Styles__ version of UI for WPF and lists them in a combobox. You can select a version which you want to be applied to your project. You can select what type of project to be created: Standard, Word-Inspired, Excel-Inspired or Outlook-Inspired. You can access the Create New Project Wizard through the Telerik menu when you need to create a new Telerik WPF application:
+After you click the __OK__ button, you get the Create New Project Wizard, provided by the Telerik UI for WPF Visual Studio Extensions. The wizard detects all the installed __Use Implicit Styles__ version of Telerik UI for WPF and lists them in a combobox. You can select a version which you want to be applied to your project. You can select what type of project to be created: Standard, Word-Inspired, Excel-Inspired or Outlook-Inspired. You can access the Create New Project Wizard through the Telerik menu when you need to create a new Telerik WPF application:
 
 The Create New Project Wizard lets you:
 
@@ -27,7 +27,7 @@ The Create New Project Wizard lets you:
 
 * Download the latest versions available on our website using the __GET LATEST__ button
 
-* Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
+* Specify which assemblies your project would use. When selecting a Telerik UI for WPF assembly all dependent controls are selected automatically and vice-versa.
 
 >GET LATEST button is available only when there is a newer version released on our web site.
 

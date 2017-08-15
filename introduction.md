@@ -17,7 +17,7 @@ position: 1
 <img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="Telerik UI for WPF logo" />
 {% endif %}-->
 
-Thank you for choosing Telerik &reg;  Telerik UI for {{ site.framework_name }}.
+Thank you for choosing Telerik &reg; UI for {{ site.framework_name }}.
 
 {% if site.site_name == 'Silverlight' %}
 Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
@@ -29,7 +29,7 @@ Sharing the same codebase with Telerik &reg; WPF controls, the Silverlight contr
 Telerik UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.  
 {% endif %}
 
-Telerik &reg; Telerik UI for {{ site.framework_name }} features the following controls:
+Telerik &reg; UI for {{ site.framework_name }} features the following controls:
 
 {% include intro-page-table.html  %}
 
@@ -45,7 +45,7 @@ To learn how to install Telerik UI for {{ site.framework_name }} and for compreh
 
 ## Consuming Data
 
-To learn more about the different approaches for populating the Telerik &reg; Telerik UI for {{{ site.framework_name }} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
+To learn more about the different approaches for populating the Telerik &reg; UI for {{ site.framework_name }} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
 
 ## Styling and Appearance
 

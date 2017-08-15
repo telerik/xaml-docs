@@ -33,7 +33,7 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 >For 32-bit operating systems, the path should be "%CommonProgramFiles%\Microsoft Shared\VSTT\\__[Version]__\UITestExtensionPackages".
 
-* You will find the following folders in your UI for WPF installation folder - (usually C:\Program Files\Telerik\UI for WPF [version]\Binaries\WPF40\\__TestTools__\VS[version]\).          
+* You will find the following folders in your Telerik UI for WPF installation folder - (usually C:\Program Files\Telerik\UI for WPF [version]\Binaries\WPF40\\__TestTools__\VS[version]\).          
 
 * The __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore__ assembly must be installed into the global assembly cache (GAC). You can achieve this following the next steps:
 	1. Open Visual Studio Command Prompt.
@@ -75,7 +75,7 @@ RadScheduleView	|	Yes	|	No	|	No
 
 ## Q2 2014
 
-With __Q2 2014__ release of UI for WPF we have included [Level 4 Coded UI test support](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) for two of our controls. The following table gives more details on the controls as well as the supported actions:
+With __Q2 2014__ release of Telerik UI for WPF we have included [Level 4 Coded UI test support](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) for two of our controls. The following table gives more details on the controls as well as the supported actions:
 
 Control	|	Action	|	Occurs	|	Action Property
 ---	|	---	|	---	|	---

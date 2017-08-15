@@ -35,7 +35,7 @@ Some of its key features are:
            
 Using the SDK Samples Browser has very limited __requirements__ in order to make all of the examples runnable out of the box. You will need to make sure to either:
                 
-* Have the latest {% if site.site_name == 'WPF' %}[ UI for WPF ](http://www.telerik.com/products/wpf/download.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[ UI for Silverlight ](http://www.telerik.com/products/silverlight/download.aspx){% endif %} are installed in the environment
+* Have the latest {% if site.site_name == 'WPF' %}[ Telerik UI for WPF ](http://www.telerik.com/products/wpf/download.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[ Telerik UI for Silverlight ](http://www.telerik.com/products/silverlight/download.aspx){% endif %} are installed in the environment
                         
 or
                 

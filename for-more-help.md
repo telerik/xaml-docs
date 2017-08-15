@@ -29,4 +29,4 @@ You can check the following resources that demonstrate possible use cases and co
 
 ## Blogs
 
-You can find some tips about working with the UI for {{ site.framework_name }} controls as well as the introduction of new controls and features in the [Telerik {{ site.framework_name }} Blogs](http://www.telerik.com/blogs/tag/{{ site.framework_name }}).
+You can find some tips about working with the Telerik UI for {{ site.framework_name }} controls as well as the introduction of new controls and features in the [Telerik {{ site.framework_name }} Blogs](http://www.telerik.com/blogs/tag/{{ site.framework_name }}).

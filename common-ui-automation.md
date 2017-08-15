@@ -16,7 +16,7 @@ Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_nam
 
 ## AutomationMode property
 
-With Q2 2014 SP release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} you will have the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__.
+With Q2 2014 SP release of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} you will have the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__.
 
 >importantCreating the automation peers can be turned off only for the whole application, not for separate controls.
 

@@ -170,7 +170,7 @@ The suggested approach in scenarios that include export is to use a [document va
 
 As a value of the document variable, you could also insert the "\r\n". Keep in mind that this value is exported to DOCX files only.
 
-# See Also
+## See Also
 
 * [Mail Merge]({%slug radrichtextbox-features-mail-merge%})
 * [Break]({%slug radrichtextbox-features-document-elements-break%})

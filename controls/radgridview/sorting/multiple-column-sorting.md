@@ -24,7 +24,7 @@ You can check how the column headers will look like after the user has sorted on
 
 ![Rad Grid View Multi Column Sorting 2](images/RadGridView_MultiColumnSorting_2.png)
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

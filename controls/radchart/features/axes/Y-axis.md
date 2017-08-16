@@ -115,7 +115,7 @@ And here is a snapshot of the result. You can see how the Y-axis ticks are place
 
 ![](images/RadChart_Features_Axes_Y_Axis_06.png)
 
-# See Also
+## See Also
 
  * [Axes Overview]({%slug radchart-features-axes-overview%})
 

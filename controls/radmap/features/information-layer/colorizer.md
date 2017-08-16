@@ -440,7 +440,7 @@ In addition to the previous approach you can again use the __PrepareCompleted__ 
 	</telerik:RadMap>
 {{endregion}}
 
-# See Also
+## See Also
  * [Map Legend]({%slug radmap-features-map-legend%})
  * [Shape Appearance]({%slug radmap-features-shape-appearance%})
  * [Extended Data]({%slug radmap-features-extended-data%})

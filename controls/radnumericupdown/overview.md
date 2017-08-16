@@ -20,7 +20,7 @@ __RadNumericUpDown__ can be used in UpDown mode that uses paired arrow-buttons t
 
 Moreover, __RadNumericUpDown__ can be fully declared both in xaml and code behind, and extensively customized in __Microsoft Expression Blend__. However, changing the control template of __RadNumericUpDown__ may impact its functionality in case some required parts are missed. For more details about required parts in the control template as well as appearance and styling you should refer to the Styles and Templates section of this help. 
 
-# See Also
+## See Also
 
  * [Required parts]({%slug radnumericupdown-required-parts%})
 {% if site.site_name == 'WPF' %}

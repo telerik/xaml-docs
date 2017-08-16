@@ -88,7 +88,7 @@ The final result can be seen on the next figure.
 
 ![](images/RadGridView_Paging_DataPager_020.png)
 
-# See Also
+## See Also
 
  * [Loading Data from XML]({%slug gridview-loading-data-from-xml%})
 

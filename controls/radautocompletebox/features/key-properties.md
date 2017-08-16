@@ -104,7 +104,7 @@ There are some other key properties in RadAutoCompleteBox:
 
 * __SelectedItems__ - Gets or sets a collection containing the currently selected items into RadAutoCompleteBox.
 
-# See Also
+## See Also
 
  * [Overview]({%slug radautocompletebox-overview%})
  

@@ -164,7 +164,7 @@ Here is the final XAML for the __Style__after the modifications:
 
 
 
-# See Also
+## See Also
 
  * [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%})
 

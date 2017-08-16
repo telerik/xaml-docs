@@ -104,7 +104,7 @@ __Figure 2__ illustrates how the "Title" column stays static while scrolling hor
 
 ![RadGanttView Frozen Column](images/radganttview-features-columns-overview_01.png)
 
-# See Also
+## See Also
 
  * [Customizing the CellTemplate]({%slug radganttview-features-columns-cell-template%})
 

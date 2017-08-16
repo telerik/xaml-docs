@@ -26,6 +26,6 @@ For further details, see the [Docking PRISM Implementation with MEF](https://git
 
 For detailed description on the implementation, see the [Using RadDocking with PRISM in WPF/Silverlight](http://www.telerik.com/blogs/using-raddocking-with-prism-in-wpf-silverlight) blog post.
 
-# See Also
+## See Also
 
  * [PanesSource - MVVM Support]({%slug raddocking-features-panes-panesource%})

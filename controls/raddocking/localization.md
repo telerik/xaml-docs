@@ -49,7 +49,7 @@ Dockable	|	Dockable
 Tabbed_document	|	Tabbed document
 
 
-# See Also
+## See Also
 
  * [How to Add Buttons to the Pane Header]({%slug raddocking-how-to-add-buttons-to-the-pane-headers%})
 

@@ -107,7 +107,7 @@ There are several important things to notice here:
 
 3.   Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to navigate across pages. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
 
-# See Also #
+## See Also #
 
 [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
 

@@ -55,7 +55,7 @@ A complete list with all key features can be found [here]({%slug radscheduleview
 
 Check out the online demo at:{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/){% endif %}
 
-# See Also
+## See Also
 
  * [Key Features]({%slug radscheduleview-key-features%})
 

@@ -116,7 +116,7 @@ __RadTreeViewItem HeaderTemplate__
 
 If you have different items and/or you prefer to display items with different styles, then you should use the [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%}) property.
 
-# See Also
+## See Also
  * [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%})
  * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

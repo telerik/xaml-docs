@@ -20,6 +20,6 @@ This chapter covers the most common end-user work flows in the usage of the Tele
 
 * [Configurate TimeRuler]({%slug radscheduleview-end-user-capabilities-timerulerconfiguration%})
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})

@@ -52,7 +52,7 @@ Inherited Properties:
 |Content|Gets or sets an object that represents the content of the represented connection.|
 |IsSelected|Gets or sets a Boolean value indicating whether the represented connection is selected.|
 
-# See Also
+## See Also
  * [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%})
  * [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%})
  * [ContainerNodeViewModelBase]({%slug raddiagram-data-containernodeviewmodel%})

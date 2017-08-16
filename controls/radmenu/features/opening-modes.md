@@ -38,7 +38,7 @@ and upon a mouse click:
 
 ![](images/RadMenu_Features_Opening_Modes_03.png)
 
-# See Also
+## See Also
 
  * [Opening and Closing Delays]({%slug radmenu-features-opening-and-closing-delays%})
 

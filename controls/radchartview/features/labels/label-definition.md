@@ -107,6 +107,6 @@ The final result of this example should look similar to the next picture.
 
 ![radchartview-features-labeldefinitions](images/radchartview-features-labeldefinitions.png)
 
-# See Also
+## See Also
 
  * [Smart Labels]({%slug radchartview-features-smart-labels%})

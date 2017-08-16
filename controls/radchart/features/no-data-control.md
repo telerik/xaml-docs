@@ -49,7 +49,7 @@ On the image below you can see the custom message displayed.
 
 If you need further customizations, check [Styling the No Data Control]({%slug radchart-styling-and-appearance-styling-no-data-control%}).
 
-# See Also
+## See Also
 
  * [Styling the No Data Control]({%slug radchart-styling-and-appearance-styling-no-data-control%})
 

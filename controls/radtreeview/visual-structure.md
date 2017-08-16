@@ -28,7 +28,7 @@ The structure of a __RadTreeView__ is pretty simple. It consists of the followin
 
 * __Item Images__ - item images are displayed in front of the nodes' text (check boxes - if they are shown). __RadTreeView__ gives you the ability to define images for each item state. [Read more]({%slug radtreeview-feautres-treeviewitem-item-images%})
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtreeview-getting-started%})
  * [Populating with Data]({%slug radtreeview-populating-with-data-databinding-overview%})
  * [Templates Structure]({%slug radtreeview-styles-and-templates-tesmplates-structure%})

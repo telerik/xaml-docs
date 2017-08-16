@@ -81,7 +81,7 @@ The following topic describes what steps you should perform in order to add the 
 
 >Note that after dropping a control, Visual Studio automatically creates a namespace that points to the appropriate assembly. If you want to manually set up a namespace take a look at the [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%}) topic.
 
-# See Also
+## See Also
 
  * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
 

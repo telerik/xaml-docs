@@ -26,7 +26,7 @@ Here is an example of a __RadMenu__ with a delay before opening a menu equal to 
 	</telerik:RadMenu>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Opening Modes]({%slug radmenu-features-opening-modes%})
  

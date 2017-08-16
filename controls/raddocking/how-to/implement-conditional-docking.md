@@ -188,7 +188,7 @@ In the last case, all compass indicators are disabled.
 
 >tipThere is an alternative approach to disable the docking. You need to set the initial position of the [RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) to __FloatingOnly__.
 
-# See Also
+## See Also
 
  * [Compass]({%slug raddocking-features-compass%})
 

@@ -265,7 +265,7 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	End Function
 {{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmap-getting-started%})
  * [Information Layer]({%slug radmap-features-information-layer%})
  * [Hot Spots]({%slug radmap-features-hot-spots%})

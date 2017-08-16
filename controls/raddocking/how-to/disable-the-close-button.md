@@ -112,7 +112,7 @@ Switch to the code-behind and add the following code in the event handler:
 
 Run your application. Note that the close button is now visible. However, if you try to click, the pane won't close. The same is valid when your window is floatable.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddocking-visual-structure%})
 

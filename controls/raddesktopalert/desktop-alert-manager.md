@@ -289,7 +289,7 @@ With Q3 2015 released version of WPF a brand new property __AlertsReorderAnimati
 	manager.AlertsReorderAnimationDuration = 1000
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

@@ -34,6 +34,6 @@ This article describes all the visual elements and terms used in __RadRadialMenu
 
 * __ToolTip__ - the tooltip for the current __RadRadialMenuItem__.          
 
-# See Also
+## See Also
 
  * [Configuration]({%slug radradialmenu-features-configuration%})

@@ -99,7 +99,7 @@ It contains the following parts:
 
 * CloudUploadNotificationIcon_InnerFill - a brush that represents the inner fill color of the __RadCloudUpload__ notification icon.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radcloudupload-structure%})
 

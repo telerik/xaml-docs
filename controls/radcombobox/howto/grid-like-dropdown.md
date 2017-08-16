@@ -203,7 +203,7 @@ The final result is shown again on the next image.
 
 ![](images/RadComboBox_HowTo_GridLikeDropDown_020.png)
 
-# See Also
+## See Also
 
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})
 

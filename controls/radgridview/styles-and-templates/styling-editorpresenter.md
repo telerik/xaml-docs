@@ -33,7 +33,7 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
             
 >If you would like to change the appearance of the editor itself, then you should create a simple style targeted at the corresponding editor. You can have a look at the [Styling Column Editor]({%slug radgridview-styling-column-editor%}) article for more information.
         
-# See Also
+## See Also
 
  * [Styling Column Editor]({%slug radgridview-styling-column-editor%})
 

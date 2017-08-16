@@ -29,5 +29,5 @@ This section defines terms and concepts used in the scope of __RadMediaPlayer,__
 
 __RadMediaPlayer__ is __ItemsControl__ where each item is of type __RadMediaItem__ - used to represent one item in the Playlist. __RadMediaItem__ is also an ItemsControl where each item is __RadMediaChapter__ - used to represent a point in time with some __Content__ to more clearly describe the chapter. __RadMediaItem__ also has __Header__ and __HeaderTemplate__ properties that specify how each item in the playlist will be rendered.
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmediaplayer-populating%})

@@ -32,7 +32,7 @@ This topic covers the specific events exposed by the __RadDiagramItem__. The eve
 
 * __ManipulationPointActivated__ - occurs when a connector of the connection is activated.			
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

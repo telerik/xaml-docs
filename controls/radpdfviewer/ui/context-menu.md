@@ -44,5 +44,5 @@ Additionally, you can easily add a custom menu item to the context menu by bindi
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / ContextMenu__.
           
 
-# See Also
+## See Also
 [Command Descriptors]({%slug radpdfviewer-command-descriptors%}).

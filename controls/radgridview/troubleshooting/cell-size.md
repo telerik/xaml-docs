@@ -31,7 +31,7 @@ You can check this [help article]({%slug common-styles-appearance-colorizing-met
 
 More information on GridView's Styling could be found [here]({%slug gridview-stylines-and-templates-overview%}). If you use the Implicit Themes, then this [article]({%slug styling-apperance-implicit-styles-overview%}) might be helpful as well.
 
-# See Also
+## See Also
 
  * [Styling a Row]({%slug gridview-styling-a-row%})
  * [Styling the Header Row]({%slug gridview-styling-header-row%})

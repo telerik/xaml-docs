@@ -30,7 +30,7 @@ The __RadTimeSpanPicker__ control raises the following specific events:
 
 	* A __RoutedEventArgs__ object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtimespanpicker-getting-started%})
  

@@ -14,7 +14,7 @@ For now the __RadDocumentPane__ control is identical to the __RadPane__ control 
 
 >tipYou are able to set a style created for the __RadPane__ control directly to the __RadDocumentPane__ control without the need to change its __TargetType__, as the __RadDocumentPane__ derives from the __RadPane__.
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

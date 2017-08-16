@@ -43,7 +43,7 @@ To apply the style to the real items, set it to the __ItemContainerStyle__ prope
 
 >Don't forget to delete the dummy __RadUploadItem__ control, when you finish editing the style.		  
 
-# See Also
+## See Also
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})
  * [Template Structure]({%slug radupload-styles-and-templates-template-structure%})
  * [Styling the RadUpload]({%slug radupload-styles-and-templates-styling-the-radupload%})

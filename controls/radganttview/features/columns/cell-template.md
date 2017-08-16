@@ -56,7 +56,7 @@ The next screenshot shows the final result:
 
 ![radganttview-features-columns-customizing-cell-template](images/radganttview-features-columns-customizing-cell-template.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radganttview-features-columns-types%})
 

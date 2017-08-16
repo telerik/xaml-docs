@@ -202,7 +202,7 @@ Finally set the property in XAML:
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 
-# See Also
+## See Also
 
  * [Enable\Disable RadComboBoxItems]({%slug radcombobox-howto-enable-disable-radcombobox-items%})
 

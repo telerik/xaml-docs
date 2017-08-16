@@ -115,7 +115,7 @@ The reason for the impact on the performance is that these elements are kept in 
 
 It is possible to add [headers and footers]({%slug radrichtextbox-features-headers-and-footers%}) for each section in the document. The same is also true for [Endnotes and Footnotes]({%slug radrichtextbox-features-footnotes-endnotes%}), as well as [Comments]({%slug radrichtextbox-features-comments%}). This provides the means for creating even richer documents, but all this additional content is shown in separate instances of __RadRichTextBox__. Furthermore, the contents of the documents of the headers and footers have to be copied across all pages of the section, which may cause performance hindrance with large documents.
 
-# See Also 
+## See Also 
 
 * [MEF]({%slug radrichtextbox-mef%})
 

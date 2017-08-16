@@ -134,7 +134,7 @@ When the updated item is committed, it will be automatically added to the __RadG
 
 ![](images/RadGridView_EditingItems_2.png)
 
-# See Also
+## See Also
 
  * [Adding New Entries]({%slug gridview-managing-data-add-new-entries%})
 

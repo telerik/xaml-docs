@@ -64,7 +64,7 @@ By setting the __GenerateDefaultComponents__ property to __True__ the control wi
 	</UserControl>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug radtimespanpicker-overview%})
 

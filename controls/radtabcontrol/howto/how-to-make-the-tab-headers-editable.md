@@ -425,7 +425,7 @@ Open the appropriate __MainPage.xaml__ code behind class and paste the following
 
 
 
-# See Also
+## See Also
 
  * [How to Take Advantage of the Tag Property]({%slug radtabcontrol-how-to-take-advantage-of-the-tag-property%})
 

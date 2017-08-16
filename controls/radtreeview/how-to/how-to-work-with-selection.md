@@ -59,7 +59,7 @@ Another way to select an item is to add it to the __SelectedItems__ collection o
 
 For more information read the topic about [Working with Selection]({%slug radtreeview-feautres-treeviewitem-selection%}).
 
-# See Also
+## See Also
 
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
 

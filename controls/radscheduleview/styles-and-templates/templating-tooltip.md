@@ -92,6 +92,6 @@ And here is the final result:
 
 ![radscheduleview-styles-and-templates-templating-tooltip](images/radscheduleview-styles-and-templates-templating-tooltip.png)
 
-# See Also
+## See Also
 
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

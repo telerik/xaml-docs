@@ -33,7 +33,7 @@ When you add a new control (or configure an existing one) in the XAML, Visual St
 In the code-behind, each time a particular class/property/method is being selected from the dropdown of the autocomplete functionality, a tooltip with the comment for this class/property/method is displayed.
 ![Common Installing Using Intellisense 014](images/Common_InstallingUsingIntellisense_014.png)
 
-# See Also
+## See Also
 
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})
 

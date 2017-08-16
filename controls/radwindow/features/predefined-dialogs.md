@@ -249,7 +249,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 If you want to change the appearance of the predefined window, you have to show it by calling the overload that takes a __DialogParameters__ object as an argument. Create an appropriate style and set it to its __WindowStyle__ property. To learn more read [here]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%}).
 
-# See Also
+## See Also
 
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
 

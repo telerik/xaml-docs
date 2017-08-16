@@ -38,7 +38,7 @@ Here is the result.
 
 ![](images/RadDocking_TemplatingRadDocking_07.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddocking-styling-overview%})
 

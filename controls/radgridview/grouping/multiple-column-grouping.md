@@ -74,7 +74,7 @@ The result is the same as if the user has dragged and dropped the desired column
 
 ![](images/RadGridView_MultiColumnGrouping_1.png)
 
-# See Also
+## See Also
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})
 

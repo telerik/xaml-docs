@@ -64,7 +64,7 @@ The __RadWindow__ raises the following specific events:
 
 	* An __EventArgs__ object.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
 

@@ -127,7 +127,7 @@ By default the autocomplete feature of __RadComboBox__ is always enabled. In ord
 	radComboBox.IsTextSearchEnabled = False
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Selection]({%slug radcombobox-features-selection%})
 

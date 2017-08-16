@@ -72,7 +72,7 @@ __Figure 1__ shows the RadScheduleView before and after applying the previously 
 
 ![](images/radscheduleview_howto_setgroupheaderswidth_0.png)
 
-# See Also
+## See Also
 
  * [Styling the GroupHeaders]({%slug radscheduleview-styles-and-templates-styling-groupheaders%})
 

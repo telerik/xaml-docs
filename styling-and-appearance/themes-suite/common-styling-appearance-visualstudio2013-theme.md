@@ -176,5 +176,5 @@ This will be the final result:
 
 ![Common Styling Appearance VS 2013 Theme](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
-# See Also
+## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

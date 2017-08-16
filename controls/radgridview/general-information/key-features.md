@@ -78,7 +78,7 @@ As of __Q3 2012__ official release we have included __Level 1 Coded UI test supp
 As of __Q2 2013__ we have included [Level 2 and Level 3 Coded UI test support]( http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx).
 {% endif %}
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

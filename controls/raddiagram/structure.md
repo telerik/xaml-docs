@@ -35,7 +35,7 @@ In the following picture you can see the main components which a __RadDiagram__ 
 
 * __Information Tooltips__ - tooltips that appear below the manipulation adorner when you resize, rotate or drag a shape or group of shapes and connections.			  
 
-# See Also
+## See Also
  * [Overview]({%slug raddiagram-overview%})
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

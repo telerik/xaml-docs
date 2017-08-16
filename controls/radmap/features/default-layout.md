@@ -38,7 +38,7 @@ To learn how to use each of the __RadMap__ controls independent and outside of i
 * [Zoom Modes]({%slug radmap-features-zoom-modes%})
 * [Mouse Location]({%slug radmap-features-mouse-location%})
 
-# See Also
+## See Also
  * [Navigation]({%slug radmap-features-navigation%})
  * [Click Modes]({%slug radmap-features-click-modes%})
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})

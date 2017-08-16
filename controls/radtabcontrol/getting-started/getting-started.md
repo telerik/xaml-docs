@@ -260,7 +260,7 @@ RadTabControl allows you to control whether to display the tabs horizontally or 
 #### __Figure 6: RadTabItem with a UIElement set as its content__
 ![](images/radtabcontrol-getting-started-06.png)
 
-# See Also
+## See Also
  * [Visual structure]({%slug radtabcontrol-visual-structure%})
  * [Key features]({%slug radtabcontrol-key-features%})
  * [Populating with tabs]({%slug radtabcontrol-populating-with-tabs%})

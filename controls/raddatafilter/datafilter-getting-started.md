@@ -269,7 +269,7 @@ The filtered collection inside the __RadDataFilter__ can be accessed via the __F
 
 ![Rad Data Filter raddatafilter gettingstarted 02](images/RadDataFilter_raddatafilter_gettingstarted_03.png)
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatafilter-visual-structure%})
 

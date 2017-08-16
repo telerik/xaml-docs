@@ -18,7 +18,7 @@ To change the background color for the filtering icon, you should modify the bru
 You can get familiar with the template structure of the GridView [here]({%slug radgridview-styles-and-templates-templates-structure%}).
         
 
-# See Also
+## See Also
 
  * [Templates Structure]({%slug radgridview-styles-and-templates-templates-structure%})
 

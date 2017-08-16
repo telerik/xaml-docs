@@ -79,7 +79,7 @@ __RadCalculator__ supports the following key combinations:
 * __Z Key (Z)__ - performs undo operation.
 					  
 
-# See Also
+## See Also
 
  * [Memory Functionality]({%slug radcalculator_memoryfunctionality%})
 

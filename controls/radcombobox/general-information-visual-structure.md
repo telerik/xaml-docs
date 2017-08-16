@@ -34,6 +34,6 @@ When the __RadComboBox__ is in [edit mode]({%slug radcombobox-features-edit-mode
 
 ![Rad Combo Box Visual Structure 03](images/RadComboBox_VisualStructure_03.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radcombobox-getting-started%})

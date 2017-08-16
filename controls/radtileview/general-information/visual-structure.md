@@ -26,6 +26,6 @@ The developer can also modify the number of rows and columns in which the __Tile
 
 When all items are restored they can be dragged and to change their position with a customizable [animation]({%slug radtileview-animation%}).
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})

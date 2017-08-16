@@ -178,7 +178,7 @@ __Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
 #### __Figure 4: RadTreeView with Windows8 theme__
 ![](images/radtreeview-getting-started-04.png)
 	
-# See Also
+## See Also
  * [Overview]({%slug radtreeview-overview2%})
  * [Visual Structure]({%slug radtreeview-visual-structure%})
  * [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%})

@@ -804,7 +804,7 @@ As you can see, the new instance of __StockToolTipControl__ is created, initiali
 
 >tipCheck out how a [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%}) is created using customized tooltip. 
 
-# See Also
+## See Also
 
  * [Format Expressions]({%slug radchart-features-format-expressions%})
 

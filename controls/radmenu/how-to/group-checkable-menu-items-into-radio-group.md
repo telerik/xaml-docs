@@ -327,7 +327,7 @@ This will be the result:
 
 ![Rad Menu How To Group Checkable Menu Items](images/RadMenu_How_To_Group_Checkable_Menu_Items.png)
 
-# See Also
+## See Also
 
  * [Checkable Items]({%slug radmenu-features-checkable-items%})
 

@@ -26,7 +26,7 @@ To select a control from the design surface in Expression Blend click __Direct S
 
 The other way to select a control is to click it in the __Interaction__panel under __Objects and Timeline__.
 
-# See Also
+## See Also
 
  * [Search for a Property in Expression Blend]({%slug radtreeview-how-to-search-for-property-in-expression-blend%})
 

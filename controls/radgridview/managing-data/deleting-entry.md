@@ -115,7 +115,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 
 In this example the implementation manages both the __RadGridView__ and the data storage. Of course it is up to the developer to shape the deleting logic, so it suits the application requirements in the best way.
 
-# See Also
+## See Also
 
  * [Adding New Entries]({%slug gridview-managing-data-add-new-entries%})
 

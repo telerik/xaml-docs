@@ -150,7 +150,7 @@ In the snapshot below you can see that for the object with __EmployeeID__ equal 
 
 ![](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_030.png)
 
-# See Also
+## See Also
 
  * [Basic Hierarchies]({%slug gridview-basic-hierarchies%})
 

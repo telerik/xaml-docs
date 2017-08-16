@@ -347,7 +347,7 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 
 >tipThe __CellEditEnded__ event is always fired before __RowEditEnded__ event.
 
-# See Also
+## See Also
 
  * [Events - Overview]({%slug gridview-events-overview%})
 

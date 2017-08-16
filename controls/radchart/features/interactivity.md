@@ -107,7 +107,7 @@ There are two main methods, which handle the selection. The first one is:
 __Chart1.DefaultView.ChartArea.SelectItem__ - this method has a few overloads, but in general accepts a datapoint, or an index pointing to a specific datapoint in the chart series.
 The __Chart1.DefaultView.ChartArea.SelectItems__ method allows the selection of multiple datapoints, which are specified through the parameters.
 
-# See Also
+## See Also
 
  * [ToolTips]({%slug radchart-features-tooltips%})
 

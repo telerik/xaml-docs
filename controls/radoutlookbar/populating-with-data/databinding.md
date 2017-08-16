@@ -282,7 +282,7 @@ You can see the end result on the screenshots below
 
 ![outlook databinding result 1](images/outlook_databinding_result1.png)
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
  * [Templates]({%slug radoutlookbar-templates%})
  * [Icons]({%slug radoutlookbar-features-icons%})

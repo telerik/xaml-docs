@@ -87,7 +87,7 @@ Here is an example for a complex row details template (__Example 2__). You can o
 __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.
 ![gridview-row-details-template-complex](images/gridview-row-details-template-complex.png)
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

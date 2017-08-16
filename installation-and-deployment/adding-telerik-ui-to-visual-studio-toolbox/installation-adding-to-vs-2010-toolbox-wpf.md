@@ -55,7 +55,7 @@ To manually add Telerik UI for WPF to the Toolbox, follow the steps below:
 
 ![Common Installing Adding ToVS 2010 Tool Box 080 WPF](images/Common_InstallingAddingToVS2010ToolBox_080_WPF.png)
 
-# See Also
+## See Also
 
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
 

@@ -77,5 +77,5 @@ Additional features that you may find interesting are:
 * [Minimization]({%slug radribbonview-minimization%})
 * [Localization]({%slug radribbonview-localization%})
 
-# See Also
+## See Also
  * [Styling the RadRibbonComboBox]({%slug radribbonview-styling-ribboncombobox%})

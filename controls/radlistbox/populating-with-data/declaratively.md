@@ -38,6 +38,6 @@ In order to add listbox items you need to use the __RadListBox__'s __Items__ pro
 
 ![radlistbox populatingwithdata declaratively](images/radlistbox_populatingwithdata_declaratively.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})

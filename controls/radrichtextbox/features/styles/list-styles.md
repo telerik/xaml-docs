@@ -289,6 +289,6 @@ Figure 1: The result of the created list.
 
 ![](images/RadRichTextBox_lists_example_01.png)
 
-# See Also
+## See Also
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

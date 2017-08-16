@@ -141,7 +141,7 @@ Here is the final XAML for the __Style__ after the modifications:
 
 
 
-# See Also
+## See Also
 
  * [Styling the Chart Series]({%slug radchart-styling-and-appearance-styling-chart-series%})
 

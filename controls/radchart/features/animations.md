@@ -242,7 +242,7 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 
 
-# See Also[](796308DB-6789-4F88-8C96-7D29A8F49E8B)
+## See Also[](796308DB-6789-4F88-8C96-7D29A8F49E8B)
 
  * [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%})
 

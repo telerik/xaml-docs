@@ -100,7 +100,7 @@ From the __Versions__ dropdown you can select an older version to download:
 
 >important Please note that if you do not see the desired version you can contact our [sales team](mailto:sales@telerik.com) and they will enable the version for download.
 
-# See Also
+## See Also
 
  * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 

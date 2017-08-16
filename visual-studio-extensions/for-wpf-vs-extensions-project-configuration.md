@@ -42,7 +42,7 @@ When you click the Finish button:
 * A default application-wide theme gets set if you use theming based on implicit styles.
           
 
-# See Also
+## See Also
 
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 

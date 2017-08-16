@@ -97,7 +97,7 @@ When you click the Finish button:
 * A default application-wide theme gets set if you select theming based on implicit styles. The first selected theme will be used for a default theme in case you select multiple themes
           
 
-# See Also
+## See Also
 
  * [Automatic Dependency Resolving]({%slug radcontrols-for-silverlight-vs-extensions-automatic-resolving%})
 

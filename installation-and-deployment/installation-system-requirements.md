@@ -59,7 +59,7 @@ In order to develop applications with Telerik UI for Silverlight you need to hav
 
 * Hard disk: up to 850 MB of available space may be required
 
-# See Also
+## See Also
 
  * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
 

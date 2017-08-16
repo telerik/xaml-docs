@@ -56,7 +56,7 @@ When you click the Finish button:
           
 
 
-# See Also
+## See Also
 
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 

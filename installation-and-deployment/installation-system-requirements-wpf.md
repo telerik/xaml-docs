@@ -59,7 +59,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 
 * Display: 800 x 600, 256 colors (minimum); 1024 x 768 high color, 32-bit (recommended)
 
-# See Also
+## See Also
 
  * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 

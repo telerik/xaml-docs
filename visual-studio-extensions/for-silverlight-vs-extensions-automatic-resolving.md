@@ -29,7 +29,7 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 * Deselecting a __Telerik UI__ assembly will also deselect assemblies depending on it along with it.  
 
-# See Also
+## See Also
 
  * [Project Creation and Configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
 

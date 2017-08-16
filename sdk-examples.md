@@ -10,7 +10,7 @@ position: 19
 
 # Developer Focused Examples
 
-You can find additional demos for most of the Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in the [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/). The examples demonstrate many specific user case scenarios, that might be really helpful. A full list of the controls that provide additional SDK examples can be found below:
+You can find additional demos for most of the Telerik UI for {{ site.framework_name }} controls in the [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/tree/master/). The examples demonstrate many specific user case scenarios, that might be really helpful. A full list of the controls that provide additional SDK examples can be found below:
 
 * [AutoCompleteBox]({%slug radautocompletebox-sdk-examples%})
 

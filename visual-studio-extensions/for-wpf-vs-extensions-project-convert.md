@@ -19,7 +19,7 @@ Telerik Visual Studio extensions Convert Project Wizard could be accessed throug
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert. 
 
-The Convert Project Wizard lets you tune your project's use of UI for WPF.
+The Convert Project Wizard lets you tune your project's use of Telerik UI for WPF.
 
 ![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConfigWizard.png)
 
@@ -30,7 +30,7 @@ The wizard’s first page lets you:
 
 * Download the latest versions available on our website using the __GET LATEST__ button
 
-* Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
+* Specify which assemblies your project would use. When selecting a Telerik UI for WPF assembly all dependent controls are selected automatically and vice-versa.
 
 >GET LATEST button is available only when there is a newer version released on our web site.
 

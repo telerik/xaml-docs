@@ -30,7 +30,7 @@ In order to download these you need to take the following steps:
 
 	![](images/Download_product_files_0.png)
 
-3. Select __UI for WPF__ product title:
+3. Select __Telerik UI for WPF__ product title:
 	
 	![](images/Download_product_files_1.png)
 
@@ -46,11 +46,11 @@ Below you could find a list of the available files:
 
 ### Installation
 
-* Telerik_UI_for_WPF_[version]_[license].msi – automatic installation, check [Installing UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
+* Telerik_UI_for_WPF_[version]_[license].msi – automatic installation, check [Installing Telerik UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
 
 ### Other Setup Files
 
-* Telerik_UI_for_WPF_[version]_[license]_Hotfix.zip – used for manual installation, for more details check [Installing UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
+* Telerik_UI_for_WPF_[version]_[license]_Hotfix.zip – used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
 * Telerik_UI_for_WPF_[version]_Themes.zip
 * Telerik_UI_for_WPF_[version]_[license]_PDBs.zip
 * Telerik_UI_for_WPF_[version]\_NuGet_Xaml_[license].zip
@@ -65,7 +65,7 @@ Below you could find a list of the available files:
 
 ### Documentation
 
-This section contains the offline documentation as well as the ApiReference (both as CHM and Help3) of UI for WPF and [DocumentProcessing](http://docs.telerik.com/devtools/document-processing/introduction) products.
+This section contains the offline documentation as well as the ApiReference (both as CHM and Help3) of Telerik UI for WPF and [DocumentProcessing](http://docs.telerik.com/devtools/document-processing/introduction) products.
 
 * Telerik_UI_for_WPF_Documentation_Help3_[version].zip
 * Telerik_UI_for_WPF_Documentation_[version].chm
@@ -90,7 +90,7 @@ You could download the complete source code of the [WPF Demos application]({%slu
 
 ### Source Code
 
-* Telerik_UI_for_WPF_Source_[version].zip – complete source code of the UI for WPF product, available only with Developer license.
+* Telerik_UI_for_WPF_Source_[version].zip – complete source code of the Telerik UI for WPF product, available only with Developer license.
 
 ## Available versions
 
@@ -102,8 +102,8 @@ From the __Versions__ dropdown you can select an older version to download:
 
 # See Also
 
- * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
+ * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 
- * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
+ * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 
- * [Installing UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%})
+ * [Installing Telerik UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%})

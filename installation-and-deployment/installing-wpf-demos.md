@@ -11,7 +11,7 @@ site_name: WPF
 
 # Installing WPF Demos application
 
-__Telerik WPF Demos application__ provides a bunch of examples showcasing all the important features of UI for WPF controls.
+__Telerik WPF Demos application__ provides a bunch of examples showcasing all the important features of Telerik UI for WPF controls.
 
 In this topic we will go through the following sections:
 
@@ -43,17 +43,17 @@ Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prere
 
 ## How to get the solution
 
-The solution containing the source code of the examples is available in the UI for WPF download page inside your Telerik account. Go to the next steps in order to download it:
+The solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Go to the next steps in order to download it:
 
 * Log in at [www.telerik.com](http://www.telerik.com/account.aspx).
 
-* Click Products & Subscriptions tab and then select UI for WPF from the dropdown (or Trials if you have a trial license).
+* Click Products & Subscriptions tab and then select Telerik UI for WPF from the dropdown (or Trials if you have a trial license).
 
 >If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
 
 * Click "Download Installer and other resources" button. 
 
->Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite. Locate "UI for WPF" product and follow "Browse all product files" to go to the detailed download page.
+>Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite. Locate "Telerik UI for WPF" product and follow "Browse all product files" to go to the detailed download page.
 
 * Under the Resources section, you should see the archive file containing the source code of the examples. Its name is __Telerik_UI_for_WPF_[version]_Demos.zip__.
 
@@ -83,8 +83,8 @@ You should either uninstall the older SQL Server or change the instances names, 
 
 # See Also
 
- * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
+ * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 
- * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
+ * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 
  * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})

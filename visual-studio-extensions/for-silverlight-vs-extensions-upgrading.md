@@ -17,11 +17,11 @@ site_name: Silverlight
 
 An important feature in the __Visual Studio Extensions__ is __Project Upgrade Wizard__. 
 
-The Upgrade Wizard (started by using the __Telerik > UI for Silverlight > Upgrade Wizard__ menu item) is used to change the version of UI for Silverlight your project uses. 
+The Upgrade Wizard (started by using the __Telerik > Telerik UI for Silverlight > Upgrade Wizard__ menu item) is used to change the version of Telerik UI for Silverlight your project uses. 
 
 In addition to the pure assembly reference change, the upgrade wizard provides several important features: 
 
-* Check if a new version of __UI for Silverlight__ is available on the Telerik website. 
+* Check if a new version of __Telerik UI for Silverlight__ is available on the Telerik website. 
 
 * Download of a newly discovered version. 
 
@@ -31,7 +31,7 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 * Current project backup. 
 
-On the first step the wizard lists all projects from the solution, which use UI for Silverlight. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
+On the first step the wizard lists all projects from the solution, which use Telerik UI for Silverlight. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively):
 
 
 
@@ -45,7 +45,7 @@ The last step suggests creating a backup of your project:
 
 Notes: 
 
-* The distribution selection screen lists all the UI for Silverlight versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
+* The distribution selection screen lists all the Telerik UI for Silverlight versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
 
 * You can use the Browse button to navigate to the folder of a manually downloaded distribution.  
 

@@ -172,7 +172,7 @@ This will ensure that your methods will be used when the following operations ar
 
 To learn more about the default key-bindings of the editor and ways to override them, you can refer to this article: [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}).
 
-# See Also
+## See Also
 
  * [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%})
 

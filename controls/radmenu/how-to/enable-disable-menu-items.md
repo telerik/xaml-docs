@@ -71,7 +71,7 @@ In order to disable a dynamic menu item you have to bind its __IsEnabled__ prope
 	</telerik:HierarchicalDataTemplate>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Checkable Items]({%slug radmenu-features-checkable-items%})
 

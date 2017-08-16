@@ -58,7 +58,7 @@ The data editing model of the __RadGridView__ provides an editing process which 
 
 To learn more about the events in the __RadGridView__ take a look at the [Events]({%slug gridview-events-overview%}) topic.
 
-# See Also
+## See Also
 
  * [Adding New Entries]({%slug gridview-managing-data-add-new-entries%})
 

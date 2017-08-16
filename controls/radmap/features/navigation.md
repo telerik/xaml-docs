@@ -65,7 +65,7 @@ Here is a snapshot of the result.
 
 ![](images/RadMap_Features_Navigation_01.png)
 
-# See Also
+## See Also
  * [Click Modes]({%slug radmap-features-click-modes%})
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})
  * [Distance and Scale]({%slug radmap-features-dsitance-and-scale%})

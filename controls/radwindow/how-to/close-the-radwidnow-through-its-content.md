@@ -99,7 +99,7 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
 

@@ -69,7 +69,7 @@ And here is the end result:
 
 ![radscheduleview features recurrence 6](images/radscheduleview_features_recurrence6.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radscheduleview-features-recurrences-overview%})
 

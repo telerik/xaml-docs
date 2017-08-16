@@ -26,6 +26,6 @@ Figure 1. Main RadGanttView parts
 
 ![radganttview-visual-structure-1](images/radganttview-visual-structure-1.png)
 
-# See Also
+## See Also
 
  * [GanttView Styles]({%slug radganttview-styles-and-templates-overview%})

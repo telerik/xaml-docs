@@ -27,7 +27,7 @@ This section defines the terms and concepts used in the scope of the __RadDataPa
 
 * __Current Page__ - this area allows the user to see the current page and the total count of pages. It also allows the user to input the desired page and navigate directly to it.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddatapager-getting-started%})
 

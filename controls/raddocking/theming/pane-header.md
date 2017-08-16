@@ -96,7 +96,7 @@ Here is a snapshot of a sample result.
 
 ![](images/RadDocking_ThemingPaneHeader_01.png)
 
-# See Also
+## See Also
 
  * [Theming - Overview]({%slug raddocking-theming-overview%})
 

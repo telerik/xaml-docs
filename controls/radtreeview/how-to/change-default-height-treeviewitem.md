@@ -59,7 +59,7 @@ In order to change the default height of the treeview item, you need to perform 
 And here is the result: 
 ![](images/RadTreeView_HowToChangeDefaultHeight_010.png)
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%})

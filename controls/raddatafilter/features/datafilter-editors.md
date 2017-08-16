@@ -44,7 +44,7 @@ If you want to specify a custom filter editor you can do that by using the __Edi
 You can see a running demo [here](http://demos.telerik.com/silverlight/#DataFilter/CustomEditors)
           . 
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug datafilter-getting-started%})
 

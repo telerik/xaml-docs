@@ -46,5 +46,5 @@ You can use the following definition to display a simple PolarAreaSeries
 
 ![radchartview-series-polarareaseries](images/radchartview-series-polarareaseries.png)
 
-# See Also
+## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

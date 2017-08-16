@@ -57,7 +57,7 @@ The next screenshots show the final result:
 
 ![radganttview-features-columns-highlight-template-2](images/radganttview-features-columns-highlight-template-2.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radganttview-features-columns-types%})
 

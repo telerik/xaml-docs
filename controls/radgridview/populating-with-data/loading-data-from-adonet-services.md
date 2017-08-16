@@ -284,7 +284,7 @@ Run your demo, the result can be seen on the next picture:
 
 >tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 
-# See Also
+## See Also
 
  * [Using in-memory Data]({%slug gridview-in-memory-date%})
 

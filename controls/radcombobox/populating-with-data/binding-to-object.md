@@ -292,7 +292,7 @@ The end result is shown on the next snapshot.
 
 >If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the __ToString()__ method of the business object.
 
-# See Also
+## See Also
 
  * [Binding to WCF Service]({%slug radcombobox-populating-with-data-binding-to-wcf%})
 

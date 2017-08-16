@@ -310,7 +310,7 @@ On the table below you can see some more examples of format expressions:
 
 
 
-# See Also
+## See Also
 
  * [Chart Area]({%slug radchart-features-chart-area%})
 

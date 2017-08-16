@@ -187,7 +187,7 @@ The result is shown on the next figure.
 
 As you can see, automatic series mapping can be useful for simple data. However, if you need more data binding options, take a look at the [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) topic and the [Data Binding to Nested Collections]({%slug radchart-populating-with-data-data-binding-to-nested-collections%}) topic.
 
-# See Also
+## See Also
 
  * [Populating with Data Overview]({%slug radchart-populating-with-data-overview%})
 

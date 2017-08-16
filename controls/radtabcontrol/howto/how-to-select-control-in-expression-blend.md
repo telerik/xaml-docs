@@ -18,7 +18,7 @@ To select control click __Selection__ (in the Toolbox, and then select the contr
 
 The other way to select a control is to click it in the __Interaction__ panel under __Objects and Timeline__.
 
-# See Also
+## See Also
 
  * [How to Create Multi-line Tabs]({%slug radtabcontrol-how-to-create-multi-line-tabs%})
 

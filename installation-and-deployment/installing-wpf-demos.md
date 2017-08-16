@@ -81,7 +81,7 @@ _Prerequisite check for system component SQL Server 2008 Express failed with the
 
 You should either uninstall the older SQL Server or change the instances names, so that the default “SQLEXPRESS” refers to the SQL Server 2008 Express.
 
-# See Also
+## See Also
 
  * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 

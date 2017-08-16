@@ -71,7 +71,7 @@ Check out the __WPF Demos__ at: [http://demos.telerik.com/wpf/](http://demos.tel
 >tipYou can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.
           
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radtreelistview-visual-structure%})
 

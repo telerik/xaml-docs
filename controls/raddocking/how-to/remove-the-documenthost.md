@@ -20,7 +20,7 @@ In order to remove the __DocumentHost__ from your __RadDocking__ control you hav
 	</telerik:RadDocking>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Document Host]({%slug raddocking-features-document-host%})
 

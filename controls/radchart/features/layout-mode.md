@@ -86,7 +86,7 @@ Note the areas inside the red rectangles and see how the line and the bar charts
  
       ![](images/RadChart_Features_LayoutMode_04.png)
 
-# See Also
+## See Also
 
  * [X-Axis]({%slug radchart-features-axes-x-axis%})
 

@@ -85,6 +85,6 @@ Here is a snapshot of the result when the mouse is over the group
 
 {% endif %}
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the RadRibbonGroup]({%slug radribbonview-styling-ribbongroup%})

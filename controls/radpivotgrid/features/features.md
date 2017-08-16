@@ -26,7 +26,7 @@ By combining these features you'll be able to modify __RadPivotGrid__ and genera
 
 ![Rad Pivot Grid Features 01](images/RadPivotGrid_Features_01.png)
 
-# See Also
+## See Also
 
  * [RadPivotFieldList]({%slug radpivotgrid-fieldlist%})
 

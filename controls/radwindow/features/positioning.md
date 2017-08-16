@@ -46,7 +46,7 @@ The __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its 
 
 >tipTo learn more about the __States__ of the __RadWindow__ read [here]({%slug radwindow-features-states%}).
 
-# See Also
+## See Also
 
  * [States]({%slug radwindow-features-states%})
 

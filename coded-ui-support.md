@@ -86,6 +86,6 @@ RadDateTimePicker	|	SetValueAction	|	On SelectedValue changed	|	DateTimeText
 
 With __Q3 2012__ official release we have included [Level 1 Coded UI test support](              http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across all controls, except __RadChart__ control.
         
-# See Also
+## See Also
  
 * [UI Automation Support]({%slug common-ui-automation%})

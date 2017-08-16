@@ -25,6 +25,6 @@ You should then add an additional animation to the default hover/selection state
 For sample code you can check this [article]({%slug gridview-how-to-modify-foreground-row%}) for __RadGridView__. 
         
 
-# See Also
+## See Also
 
  * [Templates Structure]({%slug radtreelistview-templates-structure%})

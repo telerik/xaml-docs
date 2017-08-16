@@ -37,7 +37,7 @@ Units are added to the selection only by combining the mouse clicks with the Ctr
             
 For more information take a look at the [Basic Selection]({%slug gridview-selection-basics%}) topic.
 
-# See Also
+## See Also
 
  * [Basic Selection]({%slug gridview-selection-basics%})
 

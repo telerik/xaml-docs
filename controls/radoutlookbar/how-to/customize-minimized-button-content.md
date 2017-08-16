@@ -48,7 +48,7 @@ You can see the end result on the picture below
 
 ![outlookbar-how-to-customize-minimized-button-content-01](images/outlookbar-how-to-customize-minimized-button-content-01.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
  * [Templates]({%slug radoutlookbar-templates%})

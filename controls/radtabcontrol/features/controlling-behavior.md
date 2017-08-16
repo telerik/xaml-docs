@@ -40,7 +40,7 @@ In this chapter we will show you some of the ways you can use to customize the c
 
 * __IsTextSearchEnabled__
 
-# See Also
+## See Also
 
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})
 

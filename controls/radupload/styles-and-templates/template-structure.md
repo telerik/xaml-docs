@@ -139,7 +139,7 @@ It contains the following parts:
 * __IconDelete__ - represents the remove file icon and is of type __Button__.
                   
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radupload-visual-structure%})
 

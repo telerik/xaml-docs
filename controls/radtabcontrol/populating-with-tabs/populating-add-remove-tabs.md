@@ -98,7 +98,7 @@ For example insert the following line __<telerik:RadTabItem Header="New Tab Item
 
 >tipConsider declaring tabs in XAML instead of adding them by code whenever it’s possible. This includes situations when you know what tabs you need at design time.Declaring tabs in XAML is also a preferable choice when you are working with a designer that will style the control using Expression Blend.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtabcontrol-getting-started%})
 

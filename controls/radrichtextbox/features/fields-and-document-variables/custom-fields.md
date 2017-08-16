@@ -265,7 +265,7 @@ The properties influencing the update operation are grouped in __FieldTypeUpdate
 	
 	For performance reasons, the document is not always paginated during the UpdateAllFields operation, which may lead to incorrect field values for some fields, for example ones using current page number or total number of pages in section/document. In these cases, you can set NeedsPagination property to true. 
 
-# See Also
+## See Also
 
  * [Fields]({%slug radrichtextbox-features-fields%})
 

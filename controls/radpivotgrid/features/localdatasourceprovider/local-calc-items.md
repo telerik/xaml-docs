@@ -225,7 +225,7 @@ As you can see the intersected cell between the two calculated items has value 5
 
 ![Rad Pivot Grid Features Local Calc Items 03](images/RadPivotGrid_Features_Local_Calc_Items_03.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

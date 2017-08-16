@@ -90,7 +90,7 @@ Here is a snapshot of the final result:
 
 ![](images/RadWindow_How_To_Center_the_Header_01.png)
 
-# See Also
+## See Also
 
  * [Window Header]({%slug radwindow-features-window-header%})
 

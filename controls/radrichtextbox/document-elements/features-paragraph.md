@@ -151,7 +151,7 @@ The __Paragraph__ exposes several properties that allow you to customize the lay
 
 * __TextAlignment__ - represents the alignment of the text inside the __Paragraph__.
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

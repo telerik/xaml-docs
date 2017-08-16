@@ -23,6 +23,6 @@ Then we use the __RadDiagram.Save()__ - this returns a string with the serialize
 
 On Load, we open the created file from storage and use __StreamReader__ and __RadDiagram.Load()__ method.
 
-# See Also
+## See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})
  * [Commands]({%slug raddiagrams-features-commands%})

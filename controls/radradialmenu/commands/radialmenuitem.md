@@ -71,6 +71,6 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 		</telerik:RadRadialMenu>
 	{{endregion}}
 
-# See Also
+## See Also
 
  * [RadialMenu Commands]({%slug radradialmenu-commands-radialmenu%})

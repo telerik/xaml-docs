@@ -135,7 +135,7 @@ And here is the result:
 
 As you can see, this filter returns all records that have their City field set to "Berlin" or "Aachen" and Country set to "Germany". 
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-basic-filtering2%})
 

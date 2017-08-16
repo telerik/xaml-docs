@@ -31,7 +31,7 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 >Note that not all assemblies are listed.
 
-# See Also
+## See Also
 
  * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
 

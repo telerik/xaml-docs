@@ -52,7 +52,7 @@ In this video, we will look at some of the features and functionality in Telerik
 [![](images/images/Menu_Getting_Started.png)](http://tv.telerik.com/silverlight/video/introduction-radmenu-silverlight)
 {% endif %}
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radmenu-visual-structure%})
 

@@ -241,7 +241,7 @@ By default, __RadPropertyGrid__ will create an object instance for a property of
 {{endregion}}
 
 
-# See Also
+## See Also
 
  * [Edit Modes]({%slug radpropertygrid-edit-modes%})
  

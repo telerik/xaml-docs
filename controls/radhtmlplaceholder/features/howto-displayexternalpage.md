@@ -40,7 +40,7 @@ Displaying an external page inside a Silverlight application can be achieved by 
 
 ![htmlplaceholder-getting-started](images/htmlplaceholder-getting-started.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radhtmlplaceholder-getting-started%})
 

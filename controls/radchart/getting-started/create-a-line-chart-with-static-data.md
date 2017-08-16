@@ -229,7 +229,7 @@ If you need to know how to data bind your __RadChart__, take a look at the follo
 
 * [Data Binding to ADO.NET Data Service]({%slug radchart-populating-with-data-binding-to-adonet-service%})
 
-# See Also
+## See Also
 
  * [Key Features]({%slug radchart-overview-key-features%})
 

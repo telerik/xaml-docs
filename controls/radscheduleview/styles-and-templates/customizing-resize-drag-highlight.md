@@ -96,6 +96,6 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 
 ![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](images/radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)
 
-# See Also
+## See Also
 
  * [Appointment Style]({%slug radscheduleview-styles-and-templates-appointment-style%})

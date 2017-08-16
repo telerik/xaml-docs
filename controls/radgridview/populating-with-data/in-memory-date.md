@@ -152,7 +152,7 @@ Run your demo, the result can be seen on the next picture:
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 
-# See Also
+## See Also
 
  * [Loading Data from XML]({%slug gridview-loading-data-from-xml%}) 
 {% if site.site_name == 'Silverlight' %}

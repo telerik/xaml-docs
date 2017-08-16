@@ -23,6 +23,6 @@ Each GridViewColumn has a property called __FilterMemberPath__. You can use this
 >tipFor example: FilterMemberPath="PropertyToFilterOn". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
             
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})

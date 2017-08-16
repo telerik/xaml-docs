@@ -60,7 +60,7 @@ Notes:
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 
 
-# See Also
+## See Also
 
  * [Project Creation and Configuration]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%})
 

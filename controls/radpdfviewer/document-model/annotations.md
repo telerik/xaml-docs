@@ -100,6 +100,6 @@ This scenario is additionally extended by the option to create your own Destinat
 If you invoke the method GoToDestination with parameter *myDestination*, this will scroll the document to bring the third page (indexing starts at 0) into view. The same scenario can be implemented using the GoToPage(int pageNumber) when pageNumber = 2, but with Destinations you have finer control in terms of the horizontal and vertical offsets.
         	 
 
-# See Also
+## See Also
 
  * [RadFixedDocument]({%slug radpdfviewer-document-model-radfixeddocument%})

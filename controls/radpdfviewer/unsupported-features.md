@@ -32,7 +32,7 @@ The unsupported features include:
 
 When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
 
-# See Also
+## See Also
 
  * [Showing a File]({%slug radpdfviewer-showing-a-file%})
 

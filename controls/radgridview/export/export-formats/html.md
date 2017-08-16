@@ -55,7 +55,7 @@ For example:
 
 You can read more about the export events [here]({%slug gridview-export-events%}).
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

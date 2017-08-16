@@ -52,7 +52,7 @@ The result is shown on the image below. Note how the template of the selected it
 
 ![](images/RadComboBox_PopulatingWithData_SelectionBoxItemTemplate_020.png)
 
-# See Also
+## See Also
 
  * [Binding to WCF Service]({%slug radcombobox-populating-with-data-binding-to-wcf%})
 

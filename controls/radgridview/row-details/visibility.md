@@ -24,7 +24,7 @@ Another approach for displaying the __Row Details__ is to use the [GridViewToggl
 
 >tipYou can download a runnable project demonstrating the different options from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __GridView/RowDetailsVisibilityOptions__. In addition to make finding and browsing the examples easier, you can take advantage of our [SDK Samples Browser]({%slug sdk-samples-browser%}).
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

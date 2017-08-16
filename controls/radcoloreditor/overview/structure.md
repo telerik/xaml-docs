@@ -20,5 +20,5 @@ This section defines terms and concepts used in the scope of __RadColorEditor__ 
 * __Selected Color__ 
 * __Hex Representation__
 
-# See Also
+## See Also
  * [Overview]({%slug radcoloreditor-overview%})

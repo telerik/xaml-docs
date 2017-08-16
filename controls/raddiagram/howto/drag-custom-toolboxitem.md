@@ -173,7 +173,7 @@ If you run the project now, you will be able to drag shapes from the toolbox and
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomToolboxDragDrop__.
 
-# See Also
+## See Also
  * [Drag and Drop Support]({%slug raddiagrams-features-drag-drop%})
  * [DiagramToolbox]({%slug raddiagram-extensions-toolbox%})
  * [Use MVVM in RadDiagram]({%slug raddiagrams-howto-mvvm%})

@@ -539,6 +539,6 @@ As you can see first method gathers required information from the actual editor 
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
-# See Also
+## See Also
 
  * [Defining Columns]({%slug gridview-columns-defining-columns%})

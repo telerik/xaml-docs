@@ -32,6 +32,6 @@ Read the following topics to learn more:
 
 * [Styling the RadToggleButton]({%slug radbuttons-styles-and-templates-styling-the-radtogglebutton%})
 
-# See Also
+## See Also
  * [Appearance]({%slug radbuttons-features-appearance%})
  * [Visual Structure]({%slug radbuttons-visual-structure%})

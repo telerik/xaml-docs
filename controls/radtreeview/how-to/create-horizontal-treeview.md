@@ -81,7 +81,7 @@ Apply this style to the __ItemContainerStyle__ of the treeview and each treeview
 Here is the result:
 ![](images/RadTreeView_HowToCreateHorizontalTreeView_010.PNG)
 
-# See Also
+## See Also
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})
  * [Templated Nodes]({%slug radtreeview-styles-and-templates-templated-nodes%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

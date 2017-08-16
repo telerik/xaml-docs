@@ -129,7 +129,7 @@ And the result looks like this:
 Note, that for performance reasons this event will be thrown only once per each comment – the first time it is shown. The __AppearanceSettings__ will then be cached and used for the associated comment when needed.
         
 
-# See Also
+## See Also
 
  * [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%})
 

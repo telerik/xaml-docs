@@ -23,7 +23,7 @@ The __RadDataPager__ splits the data into separate pages with a certain size. In
          
  ![](images/RadDataPager_Features_PageSize_01.png)
 
-# See Also
+## See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 

@@ -29,7 +29,7 @@ Read the following topics to learn more:
 
 * [Styling the RadUploadItem]({%slug radupload-styles-and-templates-styling-the-raduploaditem%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radupload-visual-structure%})
 

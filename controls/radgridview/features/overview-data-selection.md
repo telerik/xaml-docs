@@ -30,7 +30,7 @@ Check out the chapters entirely dedicated to the selection functionality of __Ra
 
 * How to use [multiple selection]({%slug gridview-multiple-selection%}) and to [select all items]({%slug radgridview-selection-programmatic-selection%}).
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
 

@@ -81,6 +81,6 @@ Use a Style to set the ContentTemplate as below:
 	</telerik:RadGridView>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

@@ -24,7 +24,7 @@ The __RadComboBox__ offers an additional button displayed in the drop-down part,
 
 ![](images/RadComboBox_Features_Selection_010.png)
 
-# See Also
+## See Also
 
  * [Filtering]({%slug radcombobox-features-filtering%})
 

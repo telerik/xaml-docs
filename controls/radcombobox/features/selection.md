@@ -149,7 +149,7 @@ Use the __RadComboBox__'s __Text__ property, whenever you want to get or set the
 	Dim text As String = radComboBox.Text
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Filtering]({%slug radcombobox-features-filtering%})
 

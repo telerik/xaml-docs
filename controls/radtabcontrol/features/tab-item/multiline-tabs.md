@@ -32,7 +32,7 @@ Multi-line tabs can be created using the __IsBreak__ property of the __RadTabIte
 
 In the above example the property __IsBreak__ of the tab item "Colors" is set to __True__ and the next tab item "Quote" is placed on a new line above all other tab items.
 
-# See Also
+## See Also
 
  * [Controlling Behavior]({%slug radtabcontrol-features-controlling-behavior%})
 

@@ -22,6 +22,6 @@ __SOLUTION__
 
 If you want to avoid this behavior you may force RadGridView to correctly calculate its rows by __setting the RowHeight property to a fixed size__. This size should be properly set based on the actual row height you have after the text has been wrapped.
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

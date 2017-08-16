@@ -120,7 +120,7 @@ The __Span__ exposes several properties that allow you to customize the layout o
 
 * __UnderlineDecoration__ - indicates whether the text should be underlined.
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

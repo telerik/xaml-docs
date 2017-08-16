@@ -71,7 +71,7 @@ In order to add an animation for the collapsing of the popup you have to define 
 	</telerik:RadMenu>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Icons]({%slug radmenu-features-icons%})
 

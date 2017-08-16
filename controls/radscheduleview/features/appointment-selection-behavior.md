@@ -119,7 +119,7 @@ The end result is:
 
 ![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)
 
-# See Also
+## See Also
 
  * [Resources]({%slug radscheduleview-features-resources%})
 

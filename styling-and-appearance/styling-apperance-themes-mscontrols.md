@@ -64,7 +64,7 @@ If you want to style those native controls based on the current application them
 
 
 
-# See Also
+## See Also
 
  * [Use StyleManager to Apply Theme on MS Controls]({%slug common-styling-themes-mscontrols%})
 

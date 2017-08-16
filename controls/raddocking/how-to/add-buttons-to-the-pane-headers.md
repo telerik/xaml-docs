@@ -112,7 +112,7 @@ Of course you may need to do something more complex than just one of the standar
 
 Note that in the previous example, the button will be __enabled__ only when the __RadPane__ is docked. Respectively, when the pane is in floating state, the button will be __disabled__.
 
-# See Also
+## See Also
 
  * [How to Disable the Close Button]({%slug raddocking-how-to-disable-the-close-button%})
 

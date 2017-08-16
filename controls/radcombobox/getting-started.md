@@ -206,7 +206,7 @@ __AutoComplete__ is a feature provided by many browsers, programs and controls. 
 
 The __RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read only in order to keep the editable look but prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes. [Read more]({%slug radcombobox-features-edit-modes%})
 
-# See Also
+## See Also
 
  * [Populating With Data]({%slug radcombobox-populating-with-data-overview%})
 

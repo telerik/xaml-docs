@@ -101,7 +101,7 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 
 If you are looking for more data binding options take a look at the [Populating with Data Overview]({%slug radchart-populating-with-data-overview%}) topic.
 
-# See Also
+## See Also
 
  * [Populating With Data Overview]({%slug radchart-populating-with-data-overview%})
 

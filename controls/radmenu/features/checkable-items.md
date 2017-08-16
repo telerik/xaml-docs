@@ -33,7 +33,7 @@ Upon clicking on the item it will get checked and the tick will appear as an ico
 
 >If you want to programmatically mark an item as checked, you have to set the __IsChecked__ property to __True__.
 
-# See Also
+## See Also
 
  * [Icons]({%slug radmenu-features-icons%})
 

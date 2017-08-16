@@ -325,7 +325,7 @@ Notice how this hierarchy is the same as the Popup filtering control layout. Wor
 
 >tipYou can check some sample code on the {% if site.site_name == 'Silverlight' %}[Programmatic Filtering Demo](http://demos.telerik.com/silverlight/#GridView/ProgrammaticFiltering){% endif %}{% if site.site_name == 'WPF' %}[Programmatic Filtering Demo](http://demos.telerik.com/wpf){% endif %}.
 
-# See Also
+## See Also
 
  * [Filtering Visual Structure]({%slug gridview-visual-structure%}#filtering-visual-structure)
 

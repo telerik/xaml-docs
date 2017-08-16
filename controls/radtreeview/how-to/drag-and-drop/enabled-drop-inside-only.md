@@ -131,7 +131,7 @@ In order to implement only drop inside you need to perform the following steps:
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/EnableOnlyDropInsideItem__.
 
-# See Also
+## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})

@@ -50,7 +50,7 @@ The next code snippet shows how the AutomationMode property can be set:
 	}
 {{endregion}}
 {% if site.site_name == 'WPF' %} 
-# See Also
+## See Also
  
 * [Coded UI Support]({%slug coded-ui-support%})
 {% endif %}

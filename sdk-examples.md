@@ -112,6 +112,6 @@ You can find additional demos for most of the Telerik UI for {% if site.site_nam
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
 
-# See Also
+## See Also
 
 * [SDK Samples Browser]({%slug sdk-samples-browser%})

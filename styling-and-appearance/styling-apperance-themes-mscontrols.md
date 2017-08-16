@@ -10,12 +10,12 @@ position: 9
 
 # Setting a Theme on MS Controls
 
-The __Telerik themes__ are designed to work mainly with our controls and some native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls. Our theming mechanism cannot cover the full control list included in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
+The __Telerik themes__ are designed to work mainly with our controls and some native {{ site.framework_name }} controls. Our theming mechanism cannot cover the full control list included in {{ site.framework_name }}.
 	
 
 ## Native controls supported by the Telerik theming mechanism
 
-Below is the full control list of native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls supported by the Telerik theming mechanism:
+Below is the full control list of native {{ site.framework_name }} controls supported by the Telerik theming mechanism:
 		
 
 * System.Windows.Button

@@ -38,8 +38,6 @@ __Figure 2__ shows the NavigationHeader in more details:
 
 ![radscheduleview visualstructure 02](images/radscheduleview_visualstructure_02.png)
 
-## See Also
-
+## See Also 
  * [Getting Started]({%slug radscheduleview-getting-started%})
-
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})

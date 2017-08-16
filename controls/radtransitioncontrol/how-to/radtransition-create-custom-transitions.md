@@ -180,7 +180,7 @@ Now you can use it as any of the built-in transition effects.
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

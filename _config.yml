@@ -592,9 +592,12 @@ navigation:
     controls/radpdfviewer/ui:
         title: UI
         position: 6
+    controls/radpdfviewer/features:
+        title: Features
+        position: 7
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
-        position: 7
+        position: 8
     controls/radpdfviewer/document-model/text:
         title: Text
     controls/radspreadprocessing/working-with-workbooks:

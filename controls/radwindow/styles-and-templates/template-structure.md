@@ -90,7 +90,7 @@ It contains the following parts:
 
 * __SW__ - handles the resizing of the __RadWindow__ to the south-west and is of type __Thumb__.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
 

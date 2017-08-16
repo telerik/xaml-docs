@@ -54,7 +54,7 @@ To manually add Telerik UI for Silverlight to the Visual Studio 2015 Toolbox, fo
 >
 >![Common Installing Adding ToVS 2015 Tool Box 080](images/Common_InstallingAddingToVS2015ToolBox_Silverlight_08.png)
 
-# See Also
+## See Also
  * [Creating an Application and Adding UI for Silverlight]({%slug installation-adding-to-application-create-application-and-adding-control%})
  * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})

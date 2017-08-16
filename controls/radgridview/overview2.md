@@ -66,7 +66,7 @@ Check out the WPF demos [here.](http://demos.telerik.com/wpf/){% endif %}
 
 >tipYou can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](http://demos.telerik.com/xaml-sdkbrowser//)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug gridview-getting-started2%})
  * [Key Features]({%slug gridview-key-features%})

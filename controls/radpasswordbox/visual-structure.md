@@ -22,7 +22,7 @@ This article describes all the visual elements and terms used in __RadPasswordBo
 
 * __ShowPasswordButton__: represents the button used to display the password at runtime.
 
-# See Also
+## See Also
 
  * [Overview]({%slug radpasswordbox-overview%})
 

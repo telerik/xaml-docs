@@ -83,7 +83,7 @@ Check out the chapters entirely dedicated to the grouping functionality of __Rad
 
 * How to use the [group footers]({%slug gridview-group-footers%}).
 
-# See Also
+## See Also
  
  * [Filtering]({%slug gridview-overview-filtering%})
 

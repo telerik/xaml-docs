@@ -28,7 +28,7 @@ To copy the default style, load your project in Expression Blend and open the Us
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadRichTextBox__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio. For example, you can change the background of the __RadRichTextBox__ by modifying the __Background__ property.
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radrichtextbox-styles-and-tempaltes-overview%})
 

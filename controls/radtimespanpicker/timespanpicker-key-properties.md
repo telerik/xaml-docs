@@ -36,7 +36,7 @@ The following example demonstrates how to set the __StringFormat__ property.
 
 >You can find detailed inforamation about the supported formats of the TimeSpan [here](https://msdn.microsoft.com/en-us/library/ee372287%28v=vs.110%29.aspx).
 
-# See Also
+## See Also
 
  * [Overview]({%slug radtimespanpicker-overview%})
 

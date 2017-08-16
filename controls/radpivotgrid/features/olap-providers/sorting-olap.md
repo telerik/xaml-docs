@@ -344,7 +344,7 @@ If you want to change the property based on which the sort is applied, then you 
 
 ![Rad Pivot Grid Features Sorting OLAP 06](images/RadPivotGrid_Features_Sorting_OLAP_06.png)
 
-# See Also
+## See Also
 
  * [LocalDataSourceProvider]({%slug radpivotgrid-data-localdatasource%})
 

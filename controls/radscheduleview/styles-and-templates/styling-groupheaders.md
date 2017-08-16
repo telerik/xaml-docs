@@ -5,7 +5,7 @@ description: Styling the GroupHeaders
 slug: radscheduleview-styles-and-templates-styling-groupheaders
 tags: styling,the,groupheaders
 published: True
-position: 3
+position: 4
 ---
 
 # Styling the GroupHeaders

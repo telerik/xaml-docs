@@ -34,7 +34,7 @@ In the code-behind, each time a particular class/property/method is being select
 
 ![Common Installing Using Intellisense 014 WPF](images/Common_InstallingUsingIntellisense_014_WPF.png)
 
-# See Also
+## See Also
 
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})
 

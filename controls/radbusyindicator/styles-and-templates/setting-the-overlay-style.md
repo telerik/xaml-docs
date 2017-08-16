@@ -74,7 +74,7 @@ Here is the result:
 
 ![](images/radbusyindicator_styles_and_templates_overlay_style_010.png)
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
 

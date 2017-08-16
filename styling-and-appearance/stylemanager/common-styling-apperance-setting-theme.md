@@ -370,7 +370,7 @@ In the above code snippet it is assumed that:
 
 * The __Generic.xaml__ file is located in the __Themes__ folder.
 
-# See Also
+## See Also
 
  * [Modifying a Built-In Theme]({%slug common-styling-apperance-modifying-built-in-theme%})
 

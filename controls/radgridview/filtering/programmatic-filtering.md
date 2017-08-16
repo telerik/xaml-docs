@@ -18,7 +18,7 @@ Besides the built-in filtering functionality you are able to use a programmatic 
 
 * __IColumnFilterDescriptor__ - represents a column filter descriptor associated with a specific column. [Read more]({%slug radgridview-filtering-icolumn-filter-descriptors%})
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-basic-filtering%})
 

@@ -98,7 +98,7 @@ The important part is setting __TargetType__ property to the type of the user co
 
 >tipTo learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})
 

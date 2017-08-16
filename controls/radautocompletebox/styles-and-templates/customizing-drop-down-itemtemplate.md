@@ -84,6 +84,6 @@ The next screenshots show the final result:
 
 ![radautocompletebox-customizing-drop-down-itemtemplate-3](images/radautocompletebox-customizing-drop-down-itemtemplate-3.png)
 
-# See Also
+## See Also
 
  * [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%})

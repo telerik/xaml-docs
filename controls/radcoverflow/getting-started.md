@@ -37,6 +37,6 @@ Once you have your images added, creating a RadCoverFlow is straight-forward. He
 
 ![](images/RadCoverFlow.png)
 
-# See Also
+## See Also
 
  * [Structure]({%slug coverflow-structure%})

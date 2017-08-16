@@ -31,6 +31,6 @@ For example add a __GridViewMaskedTextBoxColumn__ that represents the OrderNumbe
 	        -->
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Masked Input Column]({%slug radgridview-columns-column-types-masked-input-column%})

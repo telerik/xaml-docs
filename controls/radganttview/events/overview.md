@@ -30,7 +30,7 @@ __RadGanttView__ raises the following specific events:
 
 	* A __TaskEditedEventArgs__ object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radganttview-getting-started%})
  

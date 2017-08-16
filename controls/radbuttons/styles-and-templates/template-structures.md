@@ -128,7 +128,7 @@ The template contains the following parts.
 		* __FocusVisual__ - a __Border__ control that represents the background and the outer border of the __RadToggleButton__, when it is focused										
 			* __FocusInnerVisual__ - a __Border__ control that represents the inner border of the __RadToggleButton__, when it is focused											
 
-# See Also
+## See Also
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})
  * [Styling the RadButton]({%slug radbuttons-styles-and-templates-styling-the-radbutton%})
  * [Styling the RadDropDownButton]({%slug radbuttons-styles-and-templates-styling-the-radropdownbutton%})

@@ -155,7 +155,7 @@ Here is the final result:
 
 ![](images/radbusyindicator_features_report_progress_value_010.png)
 
-# See Also
+## See Also
 
  * [Enabling the Indicator]({%slug radbusyindicator-features-enabling-the-indicator%})
 

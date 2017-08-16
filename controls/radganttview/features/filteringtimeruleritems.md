@@ -118,7 +118,7 @@ And here is the end result:
 
 EmptyRangeGenerator allows you to remove the TimeRuler completely when used in the TimeLineFilteringBehavior.
 
-# See Also
+## See Also
 
  * [Special Slots]({%slug radganttview-specialslots%})
 

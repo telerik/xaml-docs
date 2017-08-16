@@ -300,7 +300,7 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 
 Notice how the __MinValue__ and __MaxValues__ are set - they are set to the OLE Automation equivalent of the __DateTime__ value. In this example, 1 Jan 2009 and 31 Mar 2009. Additionally, the __LabelStep__ is set to 2, which means that each second tick will have a label.
 
-# See Also
+## See Also
 
  * [Axes Overview]({%slug radchart-features-axes-overview%})
 

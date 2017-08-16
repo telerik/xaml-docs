@@ -52,7 +52,7 @@ If you want to learn more about the __Row Details__ and how to implement them in
 
 * [Asynchronous Master-Details with RadGridView Part II](http://blogs.telerik.com/rossenhristov/posts/10-01-08/radgridview-for-silverlight-and-wcf-ria-services-part-ii-basic-editing-support.aspx)
 
-# See Also
+## See Also
 
  * [Grid Rows Overview]({%slug gridview-rows-overview%})
 

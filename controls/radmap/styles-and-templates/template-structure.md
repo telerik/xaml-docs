@@ -130,7 +130,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 			* __PART_TextBlock__ - displays the value for the mouse location and is of type __TextBlock__.
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})
  * [Styling the RadMap]({%slug radmap-styling-and-templates-styling-the-radmap%})
  * [Styling the MapCommandBar]({%slug radmap-styles-and-templates-styling-the-mapcommandbar%})

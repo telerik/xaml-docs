@@ -47,7 +47,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 {% endif %}
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonTab]({%slug radribbonview-styling-ribbontab%})

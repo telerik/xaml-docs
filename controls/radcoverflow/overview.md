@@ -23,7 +23,7 @@ In this video, we will look at some of the features and functionality in Telerik
 [![](images/CoverFlow_Getting_Started.png)](http://tv.telerik.com/watch/silverlight/video/introduction-radcoverflow-silverlight)	
 {% endif %}
 
-# See Also
+## See Also
 
  * [Features]({%slug coverflow-offsets%})
 

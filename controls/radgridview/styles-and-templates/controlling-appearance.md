@@ -140,7 +140,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 You can see that the group footers are shown, while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.
 
-# See Also
+## See Also
 
  * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
 

@@ -58,7 +58,7 @@ If you prefer visualizing __RadDesktopAlert__ by passing an object of type __Des
 	})
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

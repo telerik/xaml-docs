@@ -79,7 +79,7 @@ The __RadHtmlPlaceholer__ is declared on page this way:
 
 
 
-# See Also
+## See Also
 
  * [Display external page in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayexternalpage%})
 

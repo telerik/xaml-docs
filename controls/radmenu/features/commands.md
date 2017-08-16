@@ -20,7 +20,7 @@ The __RadMenuItem__ control provides you with a standard __ICommandSource__ impl
 
 >tipAs the __RadMenuItem__ implements the __ICommandSource__, you can use it with any command that implements the __ICommand__ interface, for example the __DelegateCommands__ in Prism.
 
-# See Also
+## See Also
 
  * [Checkable Items]({%slug radmenu-features-checkable-items%})
 

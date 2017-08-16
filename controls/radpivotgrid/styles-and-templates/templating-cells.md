@@ -284,6 +284,6 @@ Figure 3: Header cells with different images.
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomHeaderTemplate__.          
 
-# See Also
+## See Also
 
  * [QuickStyle]({%slug radpivotgrid-styles-and-templates-quickstyles%})

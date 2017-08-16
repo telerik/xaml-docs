@@ -28,6 +28,6 @@ As alternative solution, you can benefit from a property called __FilterMemberPa
 >tipFor example: FilterMemberPath="BirthDate.Date". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
           
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})

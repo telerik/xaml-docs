@@ -140,7 +140,7 @@ In order to learn how to use the __RadMenu__ and what capabilities it holds, rea
 
 * [Keyboard Navigation]({%slug radmenu-keyboard-navigation%})
 
-# See Also
+## See Also
 
  * [Overview]({%slug radmenu-overview%})
 

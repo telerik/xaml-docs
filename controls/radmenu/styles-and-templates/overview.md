@@ -26,7 +26,7 @@ Read the following topics to learn more:
 
 * [Styling the RadMenuItem]({%slug radmenu-styling-and-appearance-styling-radmenuitem%})
 
-# See Also
+## See Also
 
  * [Overview]({%slug radmenu-overview%})
 

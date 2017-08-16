@@ -36,5 +36,5 @@ The __Start__ and __Stop__ Patterns are present on each row in the PDF417. The s
 
 Additionally, there is a minimum of two modules on each side of the PDF417 barcode, dedicated to the quiet zone. This gives space, and separates the barcode from other visual elements on the page, allowing the reader to more reliably detect it.        
 
-# See Also
+## See Also
  * [PDF417 Properties]({%slug radbarcode-pdf417-properties%})

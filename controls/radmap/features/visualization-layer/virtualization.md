@@ -370,6 +370,6 @@ The result at ZoomLevel 3:
 The result at ZoomLevel 9:
 ![radmap-visualization-layer-virtualization-zoomed](images/radmap-visualization-layer-virtualization-zoomed.png)
 
-# See Also
+## See Also
  * [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%})
  * [Map Shape Data]({%slug radmap-visualization-layer-map-shape-data%})

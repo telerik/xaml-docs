@@ -129,7 +129,7 @@ Each __RadTileViewItem__ is associated with a position within the __RadTileView_
 
 If you need to ensure that tiles keep their original positions in the __RadTileView Items__ collection, then you need to set the __PreservePositionWhenMaximized__ property to __True__ as the default value of this property is __False__.
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Fluid Content Control]({%slug radtileview-fluid-content-control%})
  * [Events]({%slug radtileview-events%})

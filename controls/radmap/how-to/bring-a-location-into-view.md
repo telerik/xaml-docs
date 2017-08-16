@@ -34,7 +34,7 @@ In order to bring a location point into view, you simply have to set the __Cente
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Navigation]({%slug radmap-features-navigation%})
  * [Set the Best View for the InformationLayer]({%slug radmap-how-to-set-the-best-view-for-the-informationlayer%})
  * [Put a Mark on the clicked Location]({%slug radmap-how-to-put-a-mark-on-the-clicked-location%})

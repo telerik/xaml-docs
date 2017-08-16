@@ -24,6 +24,6 @@ Prior knowledge of the following concepts is also helpful, but not required to c
 
 * Entity Data Models and the ADO.NET Entity Framework. For more information, see [Entity Data Model](http://msdn.microsoft.com/en-us/library/ee382825.aspx) and [Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx).      		
 
-# See Also
+## See Also
 
  * [RadScheduleView Types and Sources]({%slug radscheduleview-populating-with-data-binding-to-db-sources%})

@@ -215,6 +215,6 @@ The result can be seen on the image below. All members of the __System.Windows.C
 
 ![](images/RadComboBox_HowTo_BindToEnumValues_010.png)
 
-# See Also
+## See Also
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})

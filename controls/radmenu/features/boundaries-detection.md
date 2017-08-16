@@ -24,7 +24,7 @@ Bottom	|	Aligns to the top edge.	|	The target origin changes to the top-left cor
 Left	|	Aligns to the top edge.	|	Aligns to the bottom edge.	|	The target origin changes to the top-right corner of the target area and the popup alignment point changes to the top-left corner of the RadMenu.	|	Aligns to the right edge.
 Right	|	Aligns to the top edge.	|	Aligns to the bottom edge.	|	Aligns to the left edge.	|	The target origin changes to the top-left corner of the target area and the popup alignment point changes to the top-right corner of the RadMenu.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radmenu-visual-structure%})
 

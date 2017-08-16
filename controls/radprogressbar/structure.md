@@ -17,6 +17,6 @@ This section defines terms and concepts used in the scope of __RadProgressBar__ 
 * __Progress Indicator__ - indicates the current status of the progress 
 * __Progress Track__ - holder of the progress indicator used to hold and contrast the progress.
 
-# See Also
+## See Also
  * [Required Parts]({%slug radprogressbar-required-template-parts%})
  * [Getting Started]({%slug getting_started%})

@@ -28,7 +28,7 @@ There are a number of ways to customize the look and feel of your __RadDocking__
 
 * Moreover you can change the look and feel of your __RadDocking__ controls completely using [styles]({%slug raddocking-styling-overview%}), [themes]({%slug raddocking-theming-overview%}) and [templates]({%slug raddocking-styles-and-templates-templates-structure%}). 
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug raddocking-styling-overview%})
 

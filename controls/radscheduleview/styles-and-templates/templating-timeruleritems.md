@@ -5,7 +5,7 @@ description: Templating the TimeRulerItems
 slug: radscheduleview-styles-and-templates-templating-timeruleritems
 tags: templates,timeruleritems
 published: True
-position: 8
+position: 3
 ---
 
 # Templating the TimeRulerItems
@@ -101,7 +101,7 @@ __Figure 8__ shows the final result.
 
 ![](images/radscheduleview_templating_timeruleritems_08.png)
 
-# See Also
+## See Also
 
  * [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%})
 

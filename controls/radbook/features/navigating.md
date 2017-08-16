@@ -40,5 +40,5 @@ Below is a sample of a button which shows the next set of pages when clicked:
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radbook-getting-started%})

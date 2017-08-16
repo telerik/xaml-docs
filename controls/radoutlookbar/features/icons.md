@@ -24,7 +24,7 @@ The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ wh
 
 >tip You can see how to bind the icon properties to e property of a business object in the Data Binding example in our online [SDK repository](https://github.com/telerik/xaml-sdk), after navigating to OutlookBar/DataBinding          
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})
  * [Templates]({%slug radoutlookbar-templates%})
  * [Data Binding]({%slug radoutlookbar-databinding%})

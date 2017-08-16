@@ -72,7 +72,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 >tipTo undock a pane and make it floatable, just drag it out of its current place and drop it outside any compass indicator.
 
-# See Also
+## See Also
 
  * [Tool Window]({%slug raddocking-features-tool-window%})
 

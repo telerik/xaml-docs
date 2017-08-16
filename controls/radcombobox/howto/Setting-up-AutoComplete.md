@@ -12,7 +12,7 @@ position: 0
 
 For more information about the __RadComboBox__'s __AutoComplete__ feature, please take a look at the [AutoComplete]({%slug radcombobox-features-autocomplete%}) topic in the __Features__ section.
 
-# See Also
+## See Also
 
 {% if site.site_name == 'Silverlight' %}
  * [Bind a RadComboBox to Enum Values]({%slug radcombobox-howto-bind-enum-values%})

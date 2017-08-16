@@ -89,7 +89,7 @@ On the image below you can see how the __Y-Axis__ and the series item labels are
 
 ![](images/RadChart_Features_ChartArea_20.png)
 
-# See Also
+## See Also
 
  * [Styling the Chart Area]({%slug radchart-styling-and-appearance-styling-chart-area%})
 

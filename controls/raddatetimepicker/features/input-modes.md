@@ -44,7 +44,7 @@ This leads to the following result:
 
 ![](images/dateTimePicker_features___input_modes_020.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

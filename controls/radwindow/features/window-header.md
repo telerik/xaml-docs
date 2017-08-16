@@ -60,7 +60,7 @@ If you want to share a common icon layout structure for the content of multiple 
 
 ![](images/RadWindow_Features_Window_Header_01.png)
 
-# See Also
+## See Also
 
  * [Window Icon]({%slug radwindow-features-window-icon%})
 

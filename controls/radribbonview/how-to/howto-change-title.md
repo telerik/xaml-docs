@@ -37,7 +37,7 @@ The RadRibbonView exposes a string property named __Title__, which should be use
 
 >The __RadRibbonView__'s __Title__ is not entirely changed. Instead, your custom title string is combined with the default "My Application" string. To change the string "My Application" you have to set the __RadRibbonView.ApplciationName__ property to the value you want.
 
-# See Also
+## See Also
  * [Handle double click on application button]({%slug radribbonview-how-to-handle-double-click-on-application-button%})
  * [Add Screen Tips in the Code Behind]({%slug radribbonview-howto-add-screentips-code-behind%})
  * [Change the Application Menu's Image]({%slug radribbonview-how-to-change-the-image-of-the-application-button%})

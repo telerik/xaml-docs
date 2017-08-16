@@ -96,7 +96,7 @@ Here is a sample code showing how this can be achieved:
 	{{endregion}}
 
 
-# See Also
+## See Also
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 

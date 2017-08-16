@@ -26,7 +26,7 @@ With its default settings, the __RadWindow__ can be dragged off the screen by th
 	radWindow.IsRestricted = True
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Moving]({%slug radwindow-features-moving%})
 

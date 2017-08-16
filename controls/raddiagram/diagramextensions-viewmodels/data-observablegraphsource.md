@@ -60,7 +60,7 @@ Inherited Virtual Methods
 
 >Please note that in your solution it is best to create a custom class deriving from __ObservableGraphSourceBase__. Once you do so, you will be able to override all of the above virtual methods. This will allow you to describe a custom __RadDiagram GraphSource__ class that supports __TwoWay__ binding scenarios where any changes in the __RadDiagram__ UI are reflected in your __GraphSource__ implementation.		  
 
-# See Also
+## See Also
  * [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%})
  * [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%})
  * [LinkViewModelBase]({%slug raddiagram-data-linkviewmodel%})

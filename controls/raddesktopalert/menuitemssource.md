@@ -144,7 +144,7 @@ In order to use the created style with __RadDeskotopAlert__ , you have to set it
 	alert.MenuItemContainerStyle = TryCast(Me.Resources("DesktopAlertMenuItemContainerStyle"), Style)
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

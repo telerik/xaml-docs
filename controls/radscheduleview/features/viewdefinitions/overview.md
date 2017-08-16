@@ -62,10 +62,7 @@ In order to include each one of the views in the RadScheduleView, they have to b
 	this.scheduleView.ViewDefinitions.Add(weekDefinition);
 {{endregion}}
 
-# See Also
-
+## See Also  
  * [Configuration]({%slug radscheduleview-viewdefinitions-configuration%})
-
  * [View specific properties]({%slug radscheduleview-viewdefinitions-specificproperties%})
-
  * [How to configure the VisibleRange]({%slug radscheduleview-features-viewdefinitions-configure-visiblerange%})

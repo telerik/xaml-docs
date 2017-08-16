@@ -130,7 +130,7 @@ Here is a snapshot of the final result.
 
 By editing the template of the header cell you are able to change its overall look and feeling. Making use of the VisualStateManager also allows you to adjust the visual behavior according to the actions of the user - sorted descending or ascending etc. You can also change the visual element that represents the direction of the sorting. To learn more about how to do that take a look at the [Templating the Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

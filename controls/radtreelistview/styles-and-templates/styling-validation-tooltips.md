@@ -16,6 +16,6 @@ As __RadTreeListView__ inherits __RadGridView__ directly, please refer to the [S
 
 > For customizing __TreeListViewRow__ you need to modify a __ControlTemplate__ with **x:Key="TreeListViewRow_ValidationToolTipTemplate"** instead of **x:Key="GridViewRow_ValidationToolTipTemplate"**
 
-# See Also
+## See Also
 
 * [Validation]({%slug gridview-managing-data-validation%})

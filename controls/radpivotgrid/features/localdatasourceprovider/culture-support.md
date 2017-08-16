@@ -74,6 +74,6 @@ If you would like to change the Culture at runtime you will need to manualy rese
 	provider.ItemsSource = itemsSource
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Localization]({%slug radpivotgrid-features-localization%})

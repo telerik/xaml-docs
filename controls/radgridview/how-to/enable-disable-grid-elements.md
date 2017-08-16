@@ -56,7 +56,7 @@ The defined Style is implicit and it will be applied to all elements of type Gri
 
 To apply the disabled style to some rows only, you can consider [RowStyleSelector]({%slug gridview-rowstyleselector%}).
 
-# See Also
+## See Also
 
  * [Read Only Rows and Cells]({%slug gridview-read-only-rows-cells%})
  

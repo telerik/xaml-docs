@@ -16,5 +16,5 @@ Below you can see a snapshot and explanation of the main visual elements of the 
 
 ![outlook visuals](images/outlook_visuals.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})

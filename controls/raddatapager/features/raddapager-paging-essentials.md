@@ -28,7 +28,7 @@ Those of you who are on the WPF front don't need to worry though. As you might a
 >caution The WPF default implementation of the interface is Telerik’s [QueryableCollectionView](http://www.telerik.com/help/wpf/t_telerik_windows_data_queryablecollectionview.html) which, among many other interfaces, implements [IPagedCollectionView](http://www.telerik.com/help/wpf/t_telerik_windows_data_ipagedcollectionview.html).
    {% endif %}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddatapager-getting-started%})
 

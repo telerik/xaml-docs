@@ -82,7 +82,7 @@ If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ p
 	radPane.CanUserPin = False
 {{endregion}}
 
-# See Also
+## See Also
 
  * [RadPane]({%slug raddocking-panes-radpane%})
 

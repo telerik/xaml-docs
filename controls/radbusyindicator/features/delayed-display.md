@@ -52,7 +52,7 @@ As a result when the user clicks on a button after a delay of five seconds, the 
 
 >tip __RadBusyIndicator__ also gives you a read-only boolean property - __IsBusyIndicationVisible__. Its value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and visualized.To check whether the __RadBusyIndicator__ is enabled, you can observe its __IsBusy__ boolean property.
 
-# See Also
+## See Also
 
  * [Enabling the Indicator]({%slug radbusyindicator-features-enabling-the-indicator%})
 

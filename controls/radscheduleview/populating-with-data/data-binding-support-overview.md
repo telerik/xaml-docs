@@ -34,6 +34,6 @@ Binding to __RadScheduleView__ involves the following property:
 
 >Note that the data source passed to the property __GroupDescriptionsSource__ should contain only objects of type __GroupDescription__.
 
-# See Also
+## See Also
 
  * [Implementing View-ViewModel ]({%slug radscheduleview-populating-with-data-implementing-view-model%})

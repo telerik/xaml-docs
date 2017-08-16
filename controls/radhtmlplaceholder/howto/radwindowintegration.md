@@ -101,7 +101,7 @@ In order to use the __RadWindow__ control in your application, you need to add a
 
 ![htmlplaceholder-howto-window-integration](images/htmlplaceholder-howto-window-integration.png)
 
-# See Also
+## See Also
 
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
 

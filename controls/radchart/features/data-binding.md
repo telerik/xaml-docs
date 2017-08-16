@@ -23,7 +23,7 @@ __RadChart__ supports data binding to various data sources and services. Moreove
 
 For more information take a look at the [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%}) topic.
 
-# See Also
+## See Also
 
  * [Populating with Data Overview]({%slug radchart-populating-with-data-overview%})
 

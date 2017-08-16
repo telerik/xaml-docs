@@ -576,7 +576,7 @@ __RadDiagramToolbox__ supports drag/drop operations out-of-the-box. As soon as a
 
 Due to this built-in __DragDropManager__ drag implementation, you can easily drag shapes and containers out of a __RadDiagramToolbox__ and drop them onto a diagramming surface. __RadDiagram__ knows how to extract the serialized information out of a __DiagramDropInfo__ object to create a new __RadDiagramItem__ on the surface. However, if you create a custom __RadDiagramToolbox__ populated with a business collection of items, you will have to further configure the drag/drop operation. Please have a look at the [How To Drag Items from a Custom Databound DiagramToolbox]({%slug raddiagram-howto-drag-custom-toolboxitem%}) tutorial for instructions on how to implement such a scenario.            
 
-# See Also
+## See Also
  * [Drag Items from a Custom Databound DiagramToolbox]({%slug raddiagram-howto-drag-custom-toolboxitem%})
  * [Thumbnail]({%slug raddiagram-extensions-thumbnail%})
  * [DiagramNavigationPane]({%slug raddiagram-extensions-navigationpane%})

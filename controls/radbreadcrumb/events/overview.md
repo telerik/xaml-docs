@@ -18,7 +18,7 @@ This topic covers the specific events exposed by the __RadBreadcrumb__ control:
 
 * A __RadRoutedEventArgs__ object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radbreadcrumb-getting-started%})
 

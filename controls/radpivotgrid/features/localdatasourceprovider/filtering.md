@@ -351,7 +351,7 @@ When you choose any of them a new Dialog window will help you to adjust the need
 
 ![Rad Pivot Grid Features Filtering 07](images/RadPivotGrid_Features_Filtering_07.png)
 
-# See Also
+## See Also
 
  * [LocalDataSourceProvider]({%slug radpivotgrid-data-localdatasource%})
 

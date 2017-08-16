@@ -371,7 +371,7 @@ Here it is shown how the final result should look like:
 
 ![](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
 
-# See Also
+## See Also
 
  * [Populating with Data Overview]({%slug radchart-populating-with-data-overview%})
 

@@ -64,7 +64,7 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
 	End If
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})
 

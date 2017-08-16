@@ -91,7 +91,7 @@ In the image bellow you can see how the custom layout chart looks like:
 
 ![](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_030.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radchart-populating-with-data-overview%})
 

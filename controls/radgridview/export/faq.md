@@ -65,7 +65,7 @@ You can go through the articles about using the [RadDocument]({%slug radrichtext
 
 >In order to print or export with more advanced options you can check the __Telerik Reporting__ product. You can find more information about it [here.](http://www.telerik.com/products/reporting.aspx)
 
-# See Also
+## See Also
 
  * [Grid Export]({%slug gridview-export%})
 

@@ -90,7 +90,7 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 After finishing with your modification you have to set the __Style__ for the __FilterControl__ to its instances inside the __RadDataFilter__. To see how to do it, read the [Styling the RadDataFilter]({%slug raddatafilter-styles-and-templates-styling-the-raddatafilter%}) topic.
         
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug raddatafilter-styles-and-templates-template-structure%})
 

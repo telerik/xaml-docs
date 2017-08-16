@@ -47,7 +47,7 @@ Here is the result:
 
 >importantWhen using the above described approach you should know that setting the x:Name of the RadDateTimePicker to either __"DatePicker"__ or __"DateTimePicker"__ will lead to the ErrorTooltip not showing. The reason is that those specific names are already used in the theme of the control which lead to the binding in the custom TooltipTemplate getting broken.
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

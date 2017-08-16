@@ -178,7 +178,7 @@ Modifying the methods will result in the action shown in the image below when tr
 
 ![RadCollectionNavigator with customized MoveCurrentToNext command](../images/collectionnavigator_03.png)
 
-# See Also
+## See Also
 
 * [Overview]({%slug collectionnavigator_overview%})
 

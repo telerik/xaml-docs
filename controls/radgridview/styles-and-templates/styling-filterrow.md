@@ -107,6 +107,6 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 ![RadGridView with styled GridViewEditorPresenter](images/gridview-styled-filter-row.png)
 
-# See Also
+## See Also
 
  * [Styling the FilteringControl]({%slug gridview-styling-filteringcontrol%})

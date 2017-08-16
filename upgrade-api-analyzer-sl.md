@@ -10,11 +10,9 @@ position: 20
 
 # Telerik Upgrade API Analyzer 
 
-With every release of UI for Silverlight we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when upgrading your app to the latest release. That is why we have the **Telerik Upgrade API Analyzer**; its purpose is to make the upgrade process easier by comparing both versions and determining the problematic areas.
+With every release of Telerik UI for Silverlight we’re trying to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when upgrading your app to the latest release. That is why we have the **Telerik Upgrade API Analyzer**; its purpose is to make the upgrade process easier by comparing both versions and determining the problematic areas.
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
-
-**Telerik Upgrade API Analyzer** currently supports Telerik releases from Q1 2015 up to Q1 2016. Support for additional releases can be added upon request. 
 
 ## Why Do You Need This Tool?
            

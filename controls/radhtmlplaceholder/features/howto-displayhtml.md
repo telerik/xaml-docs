@@ -86,7 +86,7 @@ Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPla
 
 ![](images/image3.png)
 
-# See Also
+## See Also
 
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
 

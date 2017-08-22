@@ -12,6 +12,8 @@ position: 4
 
 __GridViewComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too. In addition, GridViewComboBoxColumn provides a __RadComboBox__ editor for editing cell values. It also takes care to translate the __Data Member__ value of the column to the corresponding __DisplayMember__ value of __RadComboBox__. 
 
+>important  __IsLightweightModeEnabled__ - introduced in __R2 2016__. Setting this property to __True__ is recommended when the __DataMemberBinding__ of the column is not a nested property. Its default value is __False__. When set to __True__, the new lightened lookup logic is triggered, thus the performance of GridViewComboBoxColumn is significantly increased. If the column`s DataMemberBinding is a nested property, the value of __IsLightweightModeEnabled__ is not respected.
+
 Here is a list of the most important properties:
 
 * __DataMemberBinding__ - you should specify the property of the bound business object to relate to __SelectedValueMemberPath__ from column's ItemsSource. 
@@ -26,8 +28,7 @@ Here is a list of the most important properties:
 
 * __IsComboBoxEditable__ - allows you to configure whether the editor (__RadComboBox__) is editable.
 
-* __IsLightweightModeEnabled__ - introduced in __R2 2016__. Its default value is __False__. When set to __True__, the new lightened lookup logic is triggered, thus the performance of GridViewComboBoxColumn is significantly increased. *If the column`s DataMemberBinding is a nested property, the value of IsLightweightModeEnabled is not respected*. 
-
+ 
 >importantThe __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
 
 >Since __Q3 2012 SP__ typing a letter in __GridViewComboBoxColumn__ will point to the first item starting with the same letter.
@@ -144,8 +145,6 @@ __Figure 4.__ and __Figure 5.__ show the result of configuring __ItemsSourceBind
 >tipYou can download a runnable project of the previous example from our online SDK repository:[ComboboxColumnItemsSourceBinding](https://github.com/telerik/xaml-sdk/GridView/ComboboxColumnItemsSourceBinding__).
         
 >If you are setting GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [troubleshooting article]({%slug gridview-troubleshooting-blank-cells%}).
-
->tipYou can download a __runnable project__ suggesting a modification for performance improvement from our online SDK repository: [LightweightComboboxColumn](https://github.com/telerik/xaml-sdk/GridView/LightweightComboboxColumn).
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
         

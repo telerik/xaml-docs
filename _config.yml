@@ -449,8 +449,12 @@ navigation:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
+    controls/radpanelbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
+    controls/radprogressbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:

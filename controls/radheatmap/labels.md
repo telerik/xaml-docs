@@ -29,6 +29,7 @@ For demonstration purposes we will use a simple class that will represent one ce
 * __Value__: Аn integer property which gets or sets the value of the corresponding cell.
 
 #### __C#__
+{{region radheatmap-labels-0}}
 	public class PlotInfo
 	{
 		public string Row { get; set; }
@@ -37,10 +38,12 @@ For demonstration purposes we will use a simple class that will represent one ce
 
 		public double Value { get; set; }
 	}
+{{endregion}}
 
 To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objects and set it as DataContext of the control. 
 	
 #### __C#__
+{{region radheatmap-labels-1}}
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -66,10 +69,12 @@ To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objec
             this.heatMap.DataContext = data;
         }
     } 
+{{endregion}}
 
 After having the sample data ready we can go in the XAML code and define the RadHeatMap and the CellLabelSettings.
 
 #### __XAML__
+{{region radheatmap-labels-2}}
 	<telerik:RadHeatMap x:Name="heatMap"
 						CellBorderColor="Black"
 						CellBorderThickness="1">
@@ -83,6 +88,7 @@ After having the sample data ready we can go in the XAML code and define the Rad
 				<telerik:HeatMapCellLabelSettings Foreground="Yellow" />
 		 </telerik:RadHeatMap.CellLabelSettings>		
 	 </telerik:RadHeatMap>
+{{endregion}}
 	 
 The final look of the example will be similar to the following picture:
 ![labels picture](images/RadHeatMap_labels_01.png)

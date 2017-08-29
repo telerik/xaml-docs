@@ -430,7 +430,7 @@ The final stage of this tutorial is to implement the Close button’s command. W
 	
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TileView/AddCloseButton__.            
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})
  * [Visual Structure]({%slug radtileview-visual-structure%})

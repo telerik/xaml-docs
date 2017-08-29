@@ -22,7 +22,7 @@ The state of the __RadWindow__ can change depending on the user actions, but it 
 
 >Every time when the __RadWindow__ changes its state, the __WindowStateChanged__ event is raised. More about the __RadWindow__ events can be found [here]({%slug radwindow-events-overview%}).
 
-# See Also
+## See Also
 
  * [Window Header]({%slug radwindow-features-window-header%})
 

@@ -226,10 +226,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 
 The next step is to use the __DragDropManager__ to enable the __drop__ operation on the __ListBox__ control.		
 
-Find the __ListBox__ declaration and add the following attribute:
-
-#### __XAML__
-	AllowDrop="True"
+Find the __ListBox__ declaration and set its __AllowDrop__ property to __True__.
 
 Now that the __ListBox__ allows drop operations, we need to make sure that the __ListItems__ are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowCapturedDrag__ attached property to __True__ on every __ListItem__:		
 
@@ -1083,7 +1080,7 @@ With that last piece of code, our application is ready. It can now provide a flu
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DragDropTreeViewToControls__.
 		  
 
-# See Also
+## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

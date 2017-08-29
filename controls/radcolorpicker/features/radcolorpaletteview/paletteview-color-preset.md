@@ -15,6 +15,7 @@ __ColorPreset__ is an enum that represent all built-in palettes.
 You can use it to set  the __Palette__ property of RadColorPaletteView or __HeaderPalette__/__StandardPalette__/__MainPalette__ properties of the __RadColorSelector__.
 				
 #### __C#__
+{{region paletteview-color-preset-0}}
     public enum ColorPreset
     {
         None,
@@ -45,15 +46,16 @@ You can use it to set  the __Palette__ property of RadColorPaletteView or __Head
         Urban,
         Verve
     }
+{{endregion}}
 
 #### __XAML__
-{{region paletteview-color-preset_0}}
+{{region paletteview-color-preset_1}}
 	<telerik:RadColorPaletteView Palette="Office" />
 	<telerik:RadColorSelector MainPalette="Office" />
 {{endregion}}
 
 #### __C#__
-{{region paletteview-color-preset_1}}
+{{region paletteview-color-preset_2}}
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 	colorPaletteView.Palette = ColorPreset.Office;
 	RadColorSelector colorSelector = new RadColorSelector();
@@ -61,7 +63,7 @@ You can use it to set  the __Palette__ property of RadColorPaletteView or __Head
 {{endregion}}
 
 #### __VB.NET__
-{{region paletteview-color-preset_1}}
+{{region paletteview-color-preset_3}}
 		Dim colorPaletteView As New RadColorPaletteView()
 		colorPaletteView.Palette = ColorPreset.Office
 		Dim colorSelector As New RadColorSelector()

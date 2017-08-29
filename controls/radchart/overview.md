@@ -63,7 +63,7 @@ Check out the online demo at:[http://demos.telerik.com/silverlight/#Chart/FirstL
 
 Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
 
-# See Also
+## See Also
 
  * [Key Features]({%slug radchart-overview-key-features%})
 

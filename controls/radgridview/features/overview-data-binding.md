@@ -40,7 +40,7 @@ To learn more about data binding and find answers to your questions take a look 
 
 * [Configuring the Data Binding]({%slug gridview-configuring-the-databindings%})
 
-# See Also
+## See Also
 
  * [Managing Data]({%slug gridview-overview-managing-data%})
 

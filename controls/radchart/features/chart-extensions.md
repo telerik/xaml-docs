@@ -100,7 +100,7 @@ __RadChart__ provides out-of-the-box a custom __CameraExtension__ that follows t
 
 * These transforms are then applied to the __ChartArea Visual3D__ in order to actually zoom / rotate the __ChartArea__ in the 3D space.
 
-# See Also
+## See Also
 
  * [Chart Area]({%slug radchart-features-chart-area%})
 

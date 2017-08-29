@@ -76,5 +76,5 @@ To see the fixes and features included in our latest official release please ref
 
 * Added RangeSeries type
 
-# See Also
+## See Also
  * [Backward Compatibility]({%slug radchartview-changes%})

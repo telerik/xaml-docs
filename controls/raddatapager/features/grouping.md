@@ -19,7 +19,7 @@ The idea behind the second approach is to do the paging before the grouping so t
 
 If you would like to implement the second approach, then I would suggest you to check the {% if site.site_name == 'Silverlight' %}[Paging before Grouping Demo](http://demos.telerik.com/silverlight/#GridView/PagingBeforeGrouping){% endif %}{% if site.site_name == 'WPF' %}[Paging before Grouping Demo](http://demos.telerik.com/wpf){% endif %}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddatapager-getting-started%})
 

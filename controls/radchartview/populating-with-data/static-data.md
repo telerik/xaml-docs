@@ -170,7 +170,7 @@ To enable striplines you should set some brushes. See __Example 7__.
 #### __Figure 3: Stylized grid lines__
 ![Rad Chart View-chart Stylize majorlines](images/radchartview-chart_majorlines_stylize.PNG)
 
-# See Also
+## See Also
  * [Introduction] ({%slug radchartview-introduction%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
  * [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%})

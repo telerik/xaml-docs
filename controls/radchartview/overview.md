@@ -11,90 +11,54 @@ position: 0
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
+![radchartview sl](images/radchartview_sl.png)
+{% endif %}
+{% if site.site_name == 'WPF' %}
+![radchartview wpf](images/radchartview_wpf.png)
+{% endif %}
 
-![radchartview sl](images/radchartview_sl.png){% endif %}{% if site.site_name == 'WPF' %}
+RadChartView is a set of versatile charting components that offer unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have RadCartesianChart (using Cartesian coordinate system) and RadPieChart (using radial coordinate system).
 
-![radchartview wpf](images/radchartview_wpf.png){% endif %}
+![radchartview wpf](images/radchartview-overview-1.png)
 
-##### 1. Overview
-RadChartView is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have RadCartesianChart (using Cartesian coordinate system) and RadPieChart (using radial coordinate system).
-
->The following references are required in order to use RadChartView:
->	- __Telerik.Windows.Data.dll__
->	- __Telerik.Windows.Controls.dll__
->	- __Telerik.Windows.Controls.Chart.dll__
-
-##### 2. Architecture
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.
 
-##### 2.1. RadCartesianChart
-As the name hints, this concrete chart control uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point’s coordinates in the plot area are calculated.
 
-##### 2.1.1.  Axes
-Available are the following axes:
+## Key Features
 
-##### 2.1.1.1. Categorical
-Arranges the plotted data points in categories where the key of each category is the point’s value (if available) for that axis or its index within the points collection. The point’s coordinate, specified by this axis is discrete and is calculated depending on the size of the category slot where the point resides.
+* __Different chart types__: RadChartView provides few different chart types which can be used for different data visualizations. __RadCartesianChart__, __RadPieChart__ and __RadPolarChart__.
 
-##### 2.1.1.2. Date-time Categorical
-Special categorical axis that expects each data point to provide a System.DateTime structure as its value for this axis. The points are grouped by a user-defined date-time component (Year, Month, Day, etc.) and then the groups are sorted chronologically.
+* __Rich set of series visualizations__: There is a list of chart visualizations, as pie, bar, line, point, area, financial sticks and candles, spline, etc. For the full list check the [Series]({%slug radchartview-series-chartseries%}) section in the documentation.
 
-##### 2.1.1.3. Linear
-Calculates the coordinate of each data point, depending on the actual numerical value this point provides for the axis. Exposes Minimum and Maximum properties to allow for explicit definition of the range of values visible on this axis. If these properties are not specified, the axis will automatically calculate the range, depending on the minimum and maximum data point values.
+* __Variety of axes__: The chart supports several axes types which can be used with the charts. There are axes specialized for numeric, categorical, date-time, radial and polar scenarios. Read more about this in the [Axis]({%slug radchartview-axes-axis%}) section in the documentation.
 
-##### 2.1.1.4. Logarithmic
-Special linear axis that will transform each data point value using the logarithm function. Allows numerical data with huge delta between the minimum and the maximum to be visualized in a readable way.
+* __Chart Grid__: The chart may be optionally decorated with grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively. Read more in the [CartesianChartGrid and PolarChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}) article. A runnable example can be found in [Create Chart With Static Data]({%slug radchartview-populating-with-data-static-data%}).
 
-##### 2.1.1.5. Date-time Continuous
-Special axis that expects each data point to provide a System.DateTime structure as its value for this axis. May be thought of as a timeline where the coordinate of each data point is calculated depending on the position of its associated DateTime on the timeline. The base unit (or the timeline step) of the axis is calculated depending on the smallest difference between any two dates.
+* __Behaviors__: The charts have a behaviors collection that accepts ChartBehavior objects. Each object represents a special interaction behavior such as [Scroll and Zoom]({%slug radchartview-features-panzoom%}) or [TrackBall]({%slug radchartview-features-trackball%}).
 
-##### 2.1.1.6. Polar Axis
-Special axis which is a fixed line in a system of polar coordinates from which the polar angle, θ, is measured anticlockwise. You may read more about it in [Polar Axis]({%slug radchartview-axes-polaraxis%}) topic.
+* __Annotations__: The chart components support different annotations. Those are visual elements that can be used to highlight certain areas on the plo area and denote statistical significance. Read more about this in the [Annotations]({%slug radchartview-annotations-overview%}) section in the documentation.
 
-##### 2.1.1.7. Radial Axis
-Special axis used by RadPolarChart with [Radar Series]({%slug radchartview-series-chartseries%}).
+* __Light rendering modes__: RadChartView allows you to specify the series rendering surface for some series. This way you can adjust the overall performance of the chart. Read more about this in [Rendering]({%slug radchartview-features-rendering%}) article.
 
-* __Categorical__ - positions catgories/labels around the circumference of the circle.
+* __Dynamic number of series__: You can create a dynamic number of chart series based on a collection of custom business objects. Read more abou this in the [ChartSeriesProvider]({%slug radchartview-features-chartseriesprovider%}) article.
 
-##### 2.1.2.  Series
-The currently implemented chart series are categorical – they accept Categorical data points and expect a categorical axis to be specified in order to be properly visualized. Following is a list with all the available series:    
+* __Easy label customization__: The chart series allows you to easily customize the axis and item labels. Read more about the series item labels customization in the [Label Definition]({%slug radchartview-features-label-definition%}) help article. About axis labels check the [Axis]({%slug radchartview-axes-axis%}) article.
 
-##### 2.1.2.1. Area
-Data points and the corresponding coordinate axis enclose an area that may be optionally stroked and/or filled.
+* __Smart labels__: The RadCartesianChart and the RadPieChart controls support smart labels. The term "smart labels" refers to labels positioned in such a way that they do not overlap one another. Read more about this in the [Smart Labels]({%slug radchartview-features-smart-labels%}) article.
 
-##### 2.1.2.2. SplineArea
-An area, which points are connected with smooth rather than straight segments.
+* __Series combine mode__: Most RadChartView series can be combined either in __stacks__ or __clusters__. Combinations are formed when more than one data point from different series falls within a same category. The “Cluster” combine mode will position such points next to each other while the “Stack” one will arrange such points in a stack-like structure. When stacks are formed, the numerical axis (if present) will consider each stack as a single entity and its sum will be the actual value used rather than each point’s one. The bar series of the chart also supports a __Stack100__ mode. It shows the combined contribution of values as percentages where the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more significant than the amounts. The mode is set via the CombineMode property of the series.
 
-##### 2.1.2.3. Bar
-Data points are represented by a box where the height (width) of the box is the distance between the point’s numerical value and the categorical axis that plots the point. Bars may be either “horizontal” or “vertical” depending on whether the categorical axis is specified as an “X-axis” or as a “Y-axis”.
+* __Palettes__: The charts can be easily colorized using palettes. You can use the rich variety of built-in palettes, or create a custom one. Read more about this in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section.
 
-##### 2.1.2.4. Line
-Data points are connected with straight line segments.    
+{% if site.site_name == 'WPF' %}> You can also check the [RadChartView3D]({%slug radchartview3d-overview%}) for 3D visualization.{% endif %}
 
-##### 2.1.2.5. Spline
-Data points are connected with smooth rather than straight line segments.
+>tip Get started with the control with its [Getting Started]({%slug radchartview-introduction%}) help article that shows how to use it in a basic scenario.
 
-##### 2.1.2.6. Scatter Point
-Data points are simply plotted in the chart plot area with nothing connecting them. Each scatter data point has X and Y values which make the position of the data point in the data source and its location on the plot area unrelated. For example the third data point in the data source may appear before the firstdata point when plotted. There are also scatter line and scatter area series which behave in the exact same way with the only (visual)difference that the points define a line and area respectively.
+> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#ChartView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
-##### 2.1.2.7. Combined series
-Each of the above series of same type may be combined in either stacks or clusters. Combinations are formed when more than one data point from different series falls within a same category. The “Cluster” combine mode will position such points next to each other while the “Stack” one will arrange such points in a stack-like structure. When stacks are formed, the numerical axis (if present) will consider each stack as a single entity and its sum will be the actual value used rather than each point’s one.For more information - refer to [Chart Series]({%slug radchartview-series-chartseries%}).
-
-* __Stack100__ - Supported with Bar Series only. It shows the combined contribution of values as percentages where the combined total for each category is 100 percent. It's good to use it when the relationship between values in a category is more significant than the amounts.
-
-##### 2.1.3. Chart Grid
-The chart may be optionally decorated with grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively.
-
-##### 2.1.3.1  Cartesian Grid
-You may refer to [Create Chart With Static Data]({%slug radchartview-populating-with-data-static-data%}) for more information on how to toggle GridLines and Stripes inside Cartesian Grid.
-
-##### 2.1.3.2  Polar Grid
-You may refer to [CartesianChartGrid and PolarChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}) for more information on how to toggle GridLines and Stripes inside Polar Grid.
-
-##### 2.2. RadPieChart
-This concrete chart control visualizes its data points using radial coordinate system. Each point is represented as an arc segment where the arc’s length is actually the percentage this point’s value is from the total sum.
-
-##### 2.3. RadPolarChartRadPolarChart inherits from RadChart and has a PolarAxis and a RadialAxis. It accepts only PolarSeries objects and plots data points in the polar coordinate system.
-
-##### 2.4. Behaviors
-Both chart types (pie and cartesian) have a behaviors collection that accepts ChartBehavior objects. Each object represents a special interaction behavior such as [Scroll and Zoom]({%slug radchartview-features-panzoom%}) or [TrackBall]({%slug radchartview-features-trackball%}).
+## See Also  
+* [Populating with data]({%slug radchartview-series-databinding%})
+* [Sampling]({%slug radchartview-populating-with-data-chartdatasource%})
+* [Series and axes]({%slug radchartview-series-and-axes%})
+* [Export]({%slug radchartview-export%})
+* [Legend support]({%slug radchartview-features-radlegend-support%})

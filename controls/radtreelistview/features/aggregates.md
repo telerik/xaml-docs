@@ -36,7 +36,7 @@ To display an aggregate function for a certain column, just instantiate the func
 
 As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its filtering mechanism. To learn more read the [respective topic]({%slug gridview-columns-aggregate-functions%}) in the __RadGridView's__ documentation. 
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtreeliestview-getting-started%})
 

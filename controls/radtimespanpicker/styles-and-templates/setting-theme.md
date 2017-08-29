@@ -68,7 +68,7 @@ Either way you choose, the end result will be the following:
 __Figure 3:__ TimeSpanPicker with Windows8 theme applied
 ![Rad Time Span Picker Setting Theme 03](images/RadTimeSpanPicker_Setting_Theme_03.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtimespanpicker-getting-started%})
 

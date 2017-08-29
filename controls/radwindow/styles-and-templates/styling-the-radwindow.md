@@ -88,7 +88,7 @@ Here is a snapshot of the result.
 
 ![](images/RadWindow_Styles_and_Templates_Styling_the_RadWindow_03.png)
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug radwindow-styles-and-templates-template-structure%})
 

@@ -49,7 +49,7 @@ For example if you have a collection of Orders when you want to add a new Order 
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Adding New Entries]({%slug gridview-managing-data-add-new-entries%})
  * [Adding Rows]({%slug gridview-rows-adding-rows%})

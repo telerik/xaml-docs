@@ -73,7 +73,7 @@ GridViewGroupPanelTopTextGrouped | Grouped by:
 GridViewSearchPanelTopText | Full Text Search
 GridViewColumnsSelectionButtonTooltip | Select Columns
 
-# See Also
+## See Also
 
  * [CurrentCulture Format Settings are not respected]({%slug gridview-troubleshooting-apply-currentculture%})
 

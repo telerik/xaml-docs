@@ -68,6 +68,6 @@ Whenever a color is selected the __SelectedColorChanged__ event is raised:
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Overview]({%slug radcoloreditor-overview%})
  * [Structure]({%slug radcoloreditor-structure%})

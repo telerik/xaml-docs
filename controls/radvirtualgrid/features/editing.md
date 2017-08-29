@@ -54,7 +54,7 @@ The event is raised when the user ends editing the cell by setting the focus to 
 
 When an edit is committed, the new property value needs to be manually pushed to the underlying source and to __RadVirtualGrid__ as well. The control exposes the __PushCellValue__ method for updating the UI. The method can be used in conjunction with the aforementioned __CellEditEnded__ event handler. It accepts the following parameters. 
 
-* __PushCellValue(int columnIndex, int rowIndex, object value)__
+* __PushCellValue(int rowIndex, int columnIndex, object value)__
 
 #### __[C#] Example 2: Updating RadVirtualGrid with the modified data__
 	
@@ -62,14 +62,11 @@ When an edit is committed, the new property value needs to be manually pushed to
 	private void VirtualGrid_CellEditEnded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
         {
-            this.VirtualGrid.PushCellValue(e.ColumnIndex, e.RowIndex, e.Value);
+            this.VirtualGrid.PushCellValue(e.RowIndex, e.ColumnIndex, e.Value);
         }
 {{endregion}}
 
 ## See Also
 
 * [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%})
-
 * [Pinned Rows and Columns]({%slug virtualgrid-pinned-rows-and-columns%})
-
-

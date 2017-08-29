@@ -77,7 +77,7 @@ Check out the chapters entirely dedicated to the sorting functionality of __RadG
 
 * How to [style the column header]({%slug gridview-styling-column-headers%}) of the sorted column.
 
-# See Also
+## See Also
 
  * [Grouping]({%slug gridview-overview-grouping%})
 

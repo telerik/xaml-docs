@@ -93,7 +93,7 @@ And the result is:
 
 ![](images/radbusyindicator_styles_and_templates_styling_radprogressbar_010.png)
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
 

@@ -79,7 +79,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
 
  * [End-User Capabilities]({%slug radwindow-end-user-capabilities%})
 

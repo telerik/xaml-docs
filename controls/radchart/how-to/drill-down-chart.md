@@ -697,7 +697,7 @@ When the user clicks on a specific item (product), some information about the or
 
 ![](images/RadChart_HowToDrillDownChart_030.png)
 
-# See Also
+## See Also
 
  * [MVVM Support]({%slug radchart-how-to-mvvm-support%})
 

@@ -90,6 +90,6 @@ Figure 3: As soon as the Start goes after the Deadline, the task is marked as de
 
 ![ganttview gantttaskdeadline 03](images/ganttview_gantttaskdeadline_03.png)
 
-# See Also
+## See Also
 
  * [Custom GanttTask]({%slug radganttview-features-items-custom-gantttask%})

@@ -91,7 +91,7 @@ __RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item u
 
 ![Rad Menu Features Menu Items 03](images/RadMenu_Features_MenuItems_03.png)
 
-# See Also
+## See Also
 
  * [Icons]({%slug radmenu-features-icons%})
 

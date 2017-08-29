@@ -50,7 +50,7 @@ Here is the result:
 
 ![](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_030.png)
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
 

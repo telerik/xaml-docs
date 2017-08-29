@@ -85,7 +85,7 @@ If you open the installation folder ( __C:\Program Files\Telerik\UI for Silverli
 
 >The Silverlight Demos application can be downloaded from the UI for Silverlight download page (in the [Telerik account](http://www.telerik.com/account.aspx)) as a separate ZIP file as well.
 
-# See Also
+## See Also
 
  * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
 

@@ -51,7 +51,7 @@ __DataPointMember__ and __DataPoint__ classes are related. For each data item of
 
 More about data binding and supported data types you can see [here]({%slug radchart-populating-with-data-data-binding-support-overview%}).
 
-# See Also
+## See Also
 
  * [Creating a Chart Declaratively]({%slug radchart-populating-with-data-creating-chart-declaratively%})
 

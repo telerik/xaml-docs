@@ -20,7 +20,7 @@ This article will discuss the following topics:
 
 ## ITraceMonitor Interface
 
-As of **R2 2017 SP1**, the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
+As of **R2 2017 SP1**, the Telerik UI for {{ site.framework_name }} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
 
 You need to implement the following methods in order to receive trace events from the controls used in your application:
 
@@ -63,7 +63,7 @@ Let's first define a couple of controls.
 	</StackPanel> 
 {{endregion}}
 
-All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 4__. Note that the set values will be used in the dashboard.
+All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 3__. Note that the set values will be used in the dashboard.
 
 #### __[XAML] Example 3: Set Analytics.Name property__
 

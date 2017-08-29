@@ -193,7 +193,7 @@ For more details you can check our [Aggregates](http://demos.telerik.com/silverl
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.         
 
-# See Also
+## See Also
 
  * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
 

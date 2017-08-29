@@ -112,7 +112,7 @@ The result is shown below:
 
 ![](images/RadChart_chart_stylingscatter.PNG)
 
-# See Also
+## See Also
 
  * [Styling the Chart Series]({%slug radchart-styling-and-appearance-styling-chart-series%})
 

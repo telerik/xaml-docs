@@ -38,7 +38,7 @@ Here is an example of a __RadWindow__ that can be resized, minimized or maximize
 
 ![](images/RadWindow_Features_Resizing_01.png)
 
-# See Also
+## See Also
 
  * [Closing]({%slug radwindow-features-closing%})
 

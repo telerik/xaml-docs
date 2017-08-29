@@ -11,7 +11,7 @@ position: 14
 
 # Telerik Analytics Integration
 
-When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With Q3 2013 release UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides integrated support for [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
+When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With Q3 2013 release Telerik UI for {{ site.framework_name }} provides integrated support for [Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage.
       
 In order to use the service you should contact sales@telerik.com and they will help you get your product key. For more information, please check out the [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction) topic.
       
@@ -22,7 +22,7 @@ Both options are explained in details below.
       
 ## How to Create a New Project Supporting Analytics
      
-Using the [Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}) you can quickly create an application configured to use UI for Silverlight.
+Using the [Telerik Visual Extensions]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}) you can quickly create an application configured to use Telerik UI for Silverlight.
         
 After including the needed Telerik assemblies and setting a theme in the __New Project Wizard__, you will reach the following configuration screen:
 ![eqatec install 3](images/eqatec_install3.png)
@@ -54,7 +54,7 @@ where [product_key] will be replaced with the entered in the __New Project Wizar
     
 ## How to Add Support to Existing Applications
       
-First, you will need to reference the __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ in your application. Note that these dlls are distributed together with the other assemblies in the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite.        
+First, you will need to reference the __EQATEC.Analytics.Monitor.dll__ and __Telerik.Windows.Analytics.dll__ in your application. Note that these dlls are distributed together with the other assemblies in the Telerik UI for {{ site.framework_name }} suite.        
       
 Then, in order to configure the project to support Analytics, please add the code from __Example 2__ in the constructor of the App class.        
 
@@ -131,7 +131,7 @@ Clicking on the __Session__ link will show additional details about the session 
 If you go to the __Feature Use link__ in the Dashboard panel, you will find information and statistics for the registered features for different periods of time:
 ![eqatec dashboard 4](images/eqatec_dashboard_4.png)
 
-## Traceable Features in UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
+## Traceable Features in Telerik UI for {{ site.framework_name }}
 
 Currently only few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from Bindings are not supported.
 

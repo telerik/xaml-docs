@@ -76,7 +76,7 @@ You can change the __StackPanel's Background__ depending on is the row alternati
 
 >tipTo manually change the visibility of a row - set its __DetailsVisibility__ property to either Visibility.Collapsed or Visibility.Visible
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

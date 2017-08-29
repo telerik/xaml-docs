@@ -30,7 +30,7 @@ After the __RadComboBox__ has set the mask to the desired item, click somewhere 
 
 ![](images/RadComboBox_End_User_Capabilities_AutoComplete_04.png)
 
-# See Also
+## See Also
 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 

@@ -10,8 +10,6 @@ position: 2
 
 # Undo and Redo
 
-
-
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		
 
 ## Undo/Redo Overview
@@ -27,7 +25,6 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 * __Redo()__ - this method reapplies the last operation that was undone in the __RadDiagram__.				  
 
 #### __XAML__
-
 {{region raddiagram-features-undo-redo_0}}
 	<Grid>
 		<Grid.RowDefinitions>
@@ -69,6 +66,7 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 {{endregion}}
 
 #### __C#__	
+{{region raddiagram-features-undo-redo-2}}
     private void Undo(object sender, RoutedEventArgs e)
     {
         diagram.Undo();
@@ -78,16 +76,18 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
     {
         diagram.Redo();
     }				  
-
+{{endregion}}
 
 #### __VB.NET__	
+{{region raddiagram-features-undo-redo-3}}
     Private Sub Undo(sender As Object, e As RoutedEventArgs)
         diagram.Undo()
     End Sub
 
     Private Sub Redo(sender As Object, e As RoutedEventArgs)
         diagram.Redo()
-    End Sub				
+    End Sub			
+{{endregion}}	
 
 ![Rad Diagram Features Undo Redo Methods](images/RadDiagram_Features_UndoRedo_Methods.png)
 
@@ -98,7 +98,6 @@ __Telerik Diagramming Framework__ exposes a set of commands that allow you to ea
 >For a full list of the Telerik __DiagramCommands__, please refer to the [Commands]({%slug raddiagrams-features-commands%}) tutorial.			  
 
 #### __XAML__
-
 {{region raddiagram-features-undo-redo_1}}
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -177,7 +176,7 @@ You can also trigger an undo or redo action using a keyboard combination:
 
 >More information about the __Telerik Diagramming Framework__ keyboard shortcuts you can find in the [Shortcuts]({%slug raddiagrams-features-shortcuts%}) tutorial.			  
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

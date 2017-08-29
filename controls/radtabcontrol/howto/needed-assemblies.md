@@ -16,7 +16,7 @@ position: 5
 
 In order to use __Telerik.Windows.Controls.RadTabControl__ in your projects, you have to add references to the following two assemblies: {% if site.site_name == 'Silverlight' %}<br/>* __Telerik.Windows.Controls.dll__<br/>* __Telerik.Windows.Controls.Navigation.dll__<br/>You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}{% if site.site_name == 'WPF' %}<br/>* __Telerik.Windows.Controls.dll__<br/>* __Telerik.Windows.Controls.Navigation.dll__<br/>* __Telerik.Windows.Data.dll__<br/>You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
 
-# See Also
+## See Also
 
  * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 

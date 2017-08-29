@@ -22,6 +22,6 @@ You can also check the [FilterMemberPath documentation]({%slug gridview-filterin
 
 >important Grouping, on the other hand, would respect the converted values and duplicated groups would not be created. 
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})

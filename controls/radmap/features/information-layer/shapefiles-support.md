@@ -81,7 +81,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 
 >tip RadMap provides built-in converters  for the following coordinate systems EPSG:4326 (Mercator, degrees) <-> OSGB36 (National Grid UK), EPSG:4326 (Mercator, degrees) <-> EPSG:900913 (Mercator, meters). This allows you to use shapefiles created for OSGB36 or EPSG:900913 with map providers that use EPSG:4326 so it is possible to show such shapefiles "as is" over the BingMaps or OpenStreetMap imagery data. The converter (__OSGB36Converter__/ __EPSG900913Converter__) can be specified by setting the __MapShapeReader.CoordinateConverter__ property.
 
-# See Also
+## See Also
  * [KML Data Import]({%slug radmap-features-kml-data-import%})
  * [Shape Reader]({%slug radmap-features-information-layer-shape-reder%})
  * [Colorizer]({%slug radmap-features-colorizer%})

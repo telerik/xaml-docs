@@ -669,7 +669,7 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 
 >tip You can download a runnable project of the demonstrated example from our online [SDK repository](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DragDropBetweenTreeViews__.
 
-# See Also
+## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

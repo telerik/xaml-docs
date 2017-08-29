@@ -23,7 +23,7 @@ The Project Configuration Wizard’s first page lets you:
 
 ![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConfigureWizard.png)       
 
-* Specify which assemblies your project would use. When selecting a UI for WPF assembly all dependent controls are selected automatically and vice-versa.
+* Specify which assemblies your project would use. When selecting a Telerik UI for WPF assembly all dependent controls are selected automatically and vice-versa.
          
 Through the Project Configuration Wizard’s second page you can:
 
@@ -42,7 +42,7 @@ When you click the Finish button:
 * A default application-wide theme gets set if you use theming based on implicit styles.
           
 
-# See Also
+## See Also
 
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
 

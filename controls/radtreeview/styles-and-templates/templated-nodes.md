@@ -740,5 +740,5 @@ Here is the complete XAML for __ControlTemplate.Triggers__ section and the final
 And here is the final result:
 ![](images/RadTreeView_TemplatingTemplatedNodes_060.PNG)
 
-# See Also
+## See Also
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

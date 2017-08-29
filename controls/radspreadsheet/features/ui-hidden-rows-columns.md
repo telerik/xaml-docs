@@ -63,5 +63,5 @@ Similarly to hiding rows and columns, you can unhide them by dragging the thumb 
 >tipThe autofit behavior of the columns is different from the behavior of the columns. An empty column will not expand when autofitted, unlike an empty row.
 
 
-# See Also
+## See Also
  * [Hidden Rows and Columns in the Model](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/hidden-rows-columns)

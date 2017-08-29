@@ -30,9 +30,6 @@ The __RadExpander__ is a __HeaderedContentControl__ and we can initialize both i
 {% endif %}
 
 #### __XAML__
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-
-#### __XAML__
 {{region expander-getting-started-0}}
 	<telerik:RadExpander Header="My Expander">
 	    <ListBox>
@@ -212,7 +209,7 @@ If the information in the __Header__ and/or the __Content__ is more complex then
 
 ![](images/RadExpander_GettingStarted_Demo.png)
 
-# See Also
+## See Also
  * [Expand Direction]({%slug radexpander-features-expand_direction%})
  * [Alignment]({%slug radexpander-features-alignment%})
  * [Expander Animation]({%slug radexpander-howto-animation%})

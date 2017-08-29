@@ -60,10 +60,9 @@ __RadGridView's header row__ can also be styled by creating an appropriate __Sty
 
 >As you can see, the changes we made apply only for the row. The header cells remain unchanged. To learn how to style them, take a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
-# See Also
+## See Also
 
- * [Styling a Row]({%slug gridview-styling-a-row%})
-
- * [Styling the Row Details]({%slug gridview-styling-row-details%})
-
- * [Styling the Group Row]({%slug gridview-styling-group-row%})
+* [Styling Column Headers]({%slug gridview-styling-column-headers%})
+* [Styling a Row]({%slug gridview-styling-a-row%})
+* [Styling the Row Details]({%slug gridview-styling-row-details%})
+* [Styling the Group Row]({%slug gridview-styling-group-row%})

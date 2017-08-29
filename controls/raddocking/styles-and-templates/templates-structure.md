@@ -42,7 +42,7 @@ Take a look at the child elements of the __PopupPanel__:
 
 ![](images/RadDocking_Structure_03.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddocking-styling-overview%})
 

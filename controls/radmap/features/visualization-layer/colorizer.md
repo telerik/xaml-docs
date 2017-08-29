@@ -383,7 +383,7 @@ Additionally with the __Min__ and __Max__ values defined you can directly define
     </telerik:VisualizationLayer.Colorizer>
 {{endregion}}
 
-# See Also
+## See Also
  * [Map Legend]({%slug radmap-features-map-legend%})
  * [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%})
  * [Extended Data]({%slug radmap-features-extended-data%})

@@ -67,6 +67,6 @@ And here is how to set it:
 	<telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Close Filtering Popup on Pressing Filter Button]({%slug gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button%})

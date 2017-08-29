@@ -291,7 +291,7 @@ The next step is to implement the custom logic for creating the path in order to
 The final result after bringing *Item 2.3.1.4* should look like this
 ![Rad Tree View How To Expand And Select Item](images/RadTreeView_HowTo_ExpandAndSelectItem.png)
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item]({%slug radtreeview-how-to-get-previous-next-parent-sibling-node%})

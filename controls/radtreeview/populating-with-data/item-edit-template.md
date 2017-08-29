@@ -167,7 +167,7 @@ Here is the final XAML:
 
 >Don't forget to set the __IsEditable__ property of your __RadTreeView__ to __True__.
 
-# See Also
+## See Also
  * [ItemEditTemplateSelector]({%slug radtreeview-populating-with-data-item-edit-template-selector%})
  * [ItemTemplate]({%slug radtreeview-populating-with-data-item-template%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

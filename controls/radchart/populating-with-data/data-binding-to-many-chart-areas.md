@@ -201,7 +201,7 @@ As you can see from the image below, the __RadChart__ layout is changed and cont
 
 ![](images/RadChart_PopulatingWithData_ManyChartAreas_20.png)
 
-# See Also
+## See Also
 
  * [Populating with Data Overview]({%slug radchart-populating-with-data-overview%})
 

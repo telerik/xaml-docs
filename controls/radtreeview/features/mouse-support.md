@@ -14,7 +14,7 @@ On of the most important usage of your mouse device in combination with __RadTre
 
 To learn more about the __RadTreeView__'s mouse support take a look at the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}) topic. There you will find step-by-step tutorials showing you how to perform some of the most common tasks using just your mouse.
 
-# See Also
+## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Keyboard Support]({%slug radtreeview-features-keyboard-support%})
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})

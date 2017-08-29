@@ -89,7 +89,7 @@ The Outlook-Inspired Calendar Template can be used separately and it has been in
 __Figure 5: Outlook-Inspired Calendar Template__
 ![VisualStudio Templates](images/Common_VisualStudio_Templates_02.png)
 
-# See Also
+## See Also
 
 * [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
 

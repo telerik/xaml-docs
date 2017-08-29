@@ -41,7 +41,7 @@ The __RadColorEditor__ control enables you to keep track of the previously selec
 
 * __HistoryCapacity__ - this property is of type __int__. It gets/set the number of previously used colors to be stored in the __ColorHistory__ collection.					
 
-# See Also
+## See Also
  * [Structure]({%slug radcoloreditor-structure%})
  * [Getting Started]({%slug radcoloreditor-getting-started%})
  * [Color Mode]({%slug radcoloreditor-features-color-mode%})

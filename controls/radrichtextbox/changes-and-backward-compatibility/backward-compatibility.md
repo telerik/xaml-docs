@@ -152,4 +152,4 @@ More about __Styles__ can be found in [this topic]({%slug radrichtextbox-feature
 
 There are no breaking changes in this version of the control.
 
-# See Also
+## See Also

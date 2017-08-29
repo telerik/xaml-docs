@@ -214,7 +214,7 @@ Here is a snapshot of the final result.
 
 Telerik __RadTreeView__ also supports __ItemEditTemplate__ and __ItemEditTemplateSelector__. To learn more on how to do that, visit the [Item Edit Template]({%slug radtreeview-populating-with-data-item-edit-template%}) and [Item Edit Template Selector]({%slug radtreeview-populating-with-data-item-edit-template-selector%}) topics.
 
-# See Also
+## See Also
  * [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%})
  * [Enable and Disable Items]({%slug radtreeview-feautres-treeviewitem-enable-disable-items%})
  * [Working with Selections]({%slug radtreeview-feautres-treeviewitem-selection%})

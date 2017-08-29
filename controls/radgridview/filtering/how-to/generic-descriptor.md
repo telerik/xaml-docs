@@ -31,6 +31,6 @@ Then, you should add the defined FilterDescriptor to the __FilterDescriptors col
 
 For more information you can check the [Filtering section]({%slug gridview-filtering-basic%})
 
-# See Also
+## See Also
 
  * [Use expression descriptors]({%slug gridview-howto-use-expression-descriptors%})

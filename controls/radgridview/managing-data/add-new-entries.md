@@ -159,7 +159,7 @@ When the new item is committed, it is added to RadGridView's __Items__ collectio
 
 ![The new row](images/RadGridView_AddingNewItems_2.png)
 
-# See Also
+## See Also
 
  * [Updating an Entry]({%slug gridview-managing-data-updating-entry%})
 

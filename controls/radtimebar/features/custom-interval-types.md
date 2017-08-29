@@ -19,6 +19,7 @@ The __Intervals__ collection contains items of type __IntervalBase__. That is wh
 The example below shows how you can add a custom interval type to the Intervals collection of a RadTimeBar control:
 
 #### __XAML__
+{{region radtimebar-features-custom-interval-types-0}}
 	<telerik:RadTimeBar PeriodStart="2011-01-01"
                      PeriodEnd="2012-01-01">
 		<telerik:RadTimeBar.Intervals>
@@ -26,7 +27,8 @@ The example below shows how you can add a custom interval type to the Intervals 
 			<telerik:MonthInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-	
+{{endregion}}
+
 ## The IntervalBase class
 
 A custom interval is a class that inherits the __IntervalBase__ class and implements its abstract properties and methods:
@@ -38,6 +40,7 @@ A custom interval is a class that inherits the __IntervalBase__ class and implem
 Below you can find a sample custom interval implementation:
 
 #### __C#__
+{{region radtimebar-features-custom-interval-types-1}}
 	using Telerik.Windows.Controls.TimeBar;
 	public class CustomInterval : IntervalBase
 	{
@@ -93,8 +96,10 @@ Below you can find a sample custom interval implementation:
 			return firstMonthOfInterval;
 		}
 	}
+{{endregion}}
 
 #### __VB.NET__
+{{region radtimebar-features-custom-interval-types-2}}
 	Imports Telerik.Windows.Controls.TimeBar
 	Public Class CustomInterval
 		Inherits IntervalBase
@@ -136,12 +141,13 @@ Below you can find a sample custom interval implementation:
 			Return firstMonthOfInterval
 		End Function
 	End Class
+{{endregion}}
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TimeBar/CustomIntervalTypes__. 
 
 Using the sample custom interval above, you will get the following result:
 ![](images/radtimebar-features-custom-interval-types_01.jpg)
 
-# See Also
+## See Also
  * [Intervals Formatters]({%slug radtimebar-intervals-formatters%})
  * [Formatter Provider]({%slug radtimebar-features-formatter-provider%})

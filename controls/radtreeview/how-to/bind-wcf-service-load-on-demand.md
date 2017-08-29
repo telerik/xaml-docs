@@ -362,7 +362,7 @@ Switch to the code-behind and the following code to handle the event.
 
 Here, you first get references to the treeview and the item that was expanded. Then, you get a reference to the hierarchical data source and call its __LoadItemChildren()__ method and pass the value of the expanded item. What the method does is fetching the children of that data item via the web service and adding them as children of the treeview.
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Binding to WCF Service]({%slug radtreeview-populating-with-data-databinding-to-wcf-service%})
  * [Binding to XML]({%slug radtreeview-populating-with-data-data-binding-to-xml%})

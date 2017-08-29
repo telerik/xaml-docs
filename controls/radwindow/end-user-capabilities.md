@@ -52,7 +52,7 @@ The user can resize the __RadWindow__ in different directions by clicking and dr
 
 ![](images/RadWindow_End_User_Capabilities_05.png)
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
 

@@ -18,7 +18,7 @@ Typically, you use a template selector when you have more than one data template
 
 >tipFor more information, you can check the [DataTemplateSelector Class msdn article](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector(v=vs.110).aspx).
 
-# See Also
+## See Also
 
  * [CellTemplateSelector]({%slug gridview-cell-template-selector%})
  

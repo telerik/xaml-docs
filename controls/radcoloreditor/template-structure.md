@@ -120,6 +120,6 @@ position: 4
 					* __[TextBlock] "#"__ - is of type __TextBlock__ and displays the "#" symbol.
 					* __[TextBlock]__ - is of type __TextBlock__ and displays/controls the all components of the final color.
 
-# See Also
+## See Also
  * [Active Sections]({%slug radcoloreditor-activesections%})
  * [Structure]({%slug radcoloreditor-structure%})

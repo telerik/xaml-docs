@@ -32,7 +32,7 @@ In order to disable the mouse wheel scrolling, you should set the __RadComboBox_
 	<telerik:RadComboBox x:Name="radComboBox" IsMouseWheelEnabled="False"/>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 

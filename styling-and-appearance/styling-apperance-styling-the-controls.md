@@ -19,7 +19,7 @@ When you create a style that targets a specific control, you should base it on t
 We have followed a naming convention where the key for every control's default style consists of **the name of the control followed by a "Style" suffix**. This would mean that the default style applied for the **RadGridView** control is with **x:Key="RadGridViewStyle"**, the default one for the **RadComboBox** with **x:Key="RadComboBoxStyle"**, etc. **Example 1** shows how to create custom styles based on the default one for the **RadComboBox** control:
 
 #### **[XAML] Example 1: Custom styles for RadComboBox**
-
+{{region implicit-styles-styling-the-controls-0}}
 	<Style x:Key="CustomStyle" TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Green" />
 	</Style>
@@ -27,13 +27,13 @@ We have followed a naming convention where the key for every control's default s
 	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Red" />
 	</Style>
+{{endregion}}
 
 ## Styling Custom Controls
 
 Note that custom controls will not automatically receive the inherited control's style. You will have to base your custom style on the default style of the control that is inherited.
 
 #### __[XAML] Example 2: Adding Style for styling custom control__
-
 {{region styling-apperance-implicit-styles-overview_7}}
     <Application.Resources>
       <ResourceDictionary>
@@ -51,7 +51,6 @@ Note that custom controls will not automatically receive the inherited control's
 You will then need to set the control's **DefaultStyleKey**.
 
 #### __[C#] Example 3: Setting the DefaultStyleKey for styling custom control__
-
 {{region styling_customstyles}}
     public class MyCustomGrid : RadGridView
     {
@@ -63,7 +62,6 @@ You will then need to set the control's **DefaultStyleKey**.
 {{endregion}}
 
 #### __[VB.NET] Example 3: Setting the DefaultStyleKey for styling custom control__
-
 {{region styling_customstyles-2}}
     Public Class MyCustomGrid
         Inherits RadGridView
@@ -137,4 +135,3 @@ You will then need to set the control's **DefaultStyleKey**.
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 
 * [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})
-

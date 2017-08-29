@@ -152,6 +152,6 @@ If you also want to avoid the appearance of the delete confirm dialog, you will 
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __ScheduleView/RemoveDeleteButton__.         
 
-# See Also
+## See Also
 
  * [Prevent Dialogs from Opening]({%slug radscheduleview-howto-prevent-dialogs-from-opening%})

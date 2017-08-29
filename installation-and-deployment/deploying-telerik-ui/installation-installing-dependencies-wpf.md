@@ -108,7 +108,7 @@ RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.F
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 
-# See Also
+## See Also
 
  * [Adding UI for WPF to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox-wpf%})
 

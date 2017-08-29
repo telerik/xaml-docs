@@ -272,7 +272,7 @@ You can download a __runnable project__ on how to sort a group by a different pr
 
 You can also find [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
-# See Also
+## See Also
  
  * [Sorting Strings as Numbers]({%slug gridview-sort-strings%})
 

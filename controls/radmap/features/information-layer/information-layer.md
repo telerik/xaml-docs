@@ -142,7 +142,7 @@ The __InformationLayer__ derives from the __ItemsControl__, so it's able to disp
 
 >By using the __InformationLayer__ to display your collection of data, you have to provide the entire data to it. Assuming that your data comes from a service or/and contains a lot of entries, you might want to have a data virtualization. By default the InformationLayer control doesn't support this scenario. For that purpose you can use the __DynamicLayer__ control, which is specially designed to request data upon region or zoom level change. To learn more and how to use it, please read the Dynamic Layer article.          
 
-# See Also
+## See Also
  * [Dynamic Layer]({%slug radmap-features-dynamic-layer%})
  * [Framework Elements]({%slug radmap-features-information-layer-framework-elements%})
  * [Map Shapes]({%slug radmap-features-map-shapes%})

@@ -45,7 +45,7 @@ This is a list with short descriptions of the top-of-the line features of Teleri
 * __Expression Blend support__ – all RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be easily customized using Expression Blend.
 					
 
-# See Also
+## See Also
 
  * [Overview]({%slug radtabcontrol-overview2%})
 

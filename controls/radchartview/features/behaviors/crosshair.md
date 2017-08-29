@@ -19,6 +19,7 @@ The behavior also displays two labels (one for each line) which, by default, are
 You can add the crosshair behavior in the RadCartesianChart’s __Behaviors__ collection. The following code snippet demonstrates a simple chart definition that includes ChartCrosshairBehavior and it recreates the visualization shown in the image above.
 
 #### __XAML__
+{{region radchartview-features-crosshair-0}}
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -40,6 +41,7 @@ You can add the crosshair behavior in the RadCartesianChart’s __Behaviors__ co
 			</telerik:LineSeries.DataPoints>
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart>
+{{endregion}}
 
 ## Properties
 
@@ -62,7 +64,7 @@ The crosshair behavior exposes the following events:
 
 >tip You can find a runnable project demonstrating the crosshair behavior in our [GitHub repository](https://github.com/telerik/xaml-sdk), after navigating to __ChartView/Crosshair__.
 	
-# See Also	
+## See Also	
 {% if site.site_name == 'WPF' %}
 * [ChartCrosshairBehavior](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_chartview_chartcrosshairbehavior.htm)
 * [ChartCrosshairPositionChangedEventArgs](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_chartview_chartcrosshairpositionchangedeventargs.htm)

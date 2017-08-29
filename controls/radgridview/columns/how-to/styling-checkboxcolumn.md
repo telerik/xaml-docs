@@ -11,6 +11,6 @@ position: 13
 
 To learn how to style __GridViewCheckBoxColumn__ read [this]({%slug gridview-columns-styling-checkboxcolumn%}) help article.
 
-# See Also
+## See Also
 
  * [CheckBox Column]({%slug gridview-checkbox-column%})

@@ -40,7 +40,7 @@ __SpellChecking TextBox, RichTextBox and RadRichtextBox__- the Telerik __RadSpel
 
 * __Setting Window settings__ – choose one of our themes and apply it to RadSpellChecker’s pop-up windows.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radspellchecker-getting-started%})
 

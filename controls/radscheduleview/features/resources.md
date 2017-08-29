@@ -165,6 +165,6 @@ The whole example above can be also set up in the code behind:
 	this.scheduleView.GroupDescriptionsSource = groupDescription;
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Data Binding Support Overview]({%slug radscheduleview-populating-with-data-data-binding-support-overview%})

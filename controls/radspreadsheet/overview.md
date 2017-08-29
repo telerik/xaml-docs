@@ -104,7 +104,7 @@ Some of its features are:
 
 * Easy integration with __RadRibbonView__.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radspreadsheet-getting-started%})
 

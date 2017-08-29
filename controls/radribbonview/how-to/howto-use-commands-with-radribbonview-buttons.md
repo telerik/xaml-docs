@@ -121,5 +121,5 @@ In the XAML provide the bindings for the command and set the command parameter.
     </telerik:RadRibbonView>
 {{endregion}}
 
-# See Also
+## See Also
  * [RibbonButtons]({%slug radribbonview-buttons-overview%})

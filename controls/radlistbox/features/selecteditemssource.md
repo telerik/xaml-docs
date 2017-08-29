@@ -167,7 +167,7 @@ The final result is shown on the snapshot below:
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as RadListBox/SelectedItemsSource.
 
-# See Also
+## See Also
 
 * [Selection]({%slug radlistbox-features-selection%})
 

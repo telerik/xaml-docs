@@ -152,7 +152,7 @@ Here is a code snippet which adds a ColumnGroupDescriptor to RadGridView which g
 	})
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Basic Grouping]({%slug gridview-grouping-basics%})
  

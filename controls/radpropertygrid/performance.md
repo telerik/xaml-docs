@@ -50,7 +50,7 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 * When adding/removing a lot of __PropertyDefinitions__ (for example more than 100) at runtime, you should consider invoking the respective __SuspendNotifications()__ and __ResumeNotifications()__ methods and raise notifications only once for all the operations.
 			
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radpropertygrid-virtualization%})
  * [Touch Support]({%slug touch-support%})

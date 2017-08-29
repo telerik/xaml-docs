@@ -109,5 +109,5 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Styling the RadRibbonDropDownButton]({%slug radribbonview-styling-ribbondropdownbutton%})

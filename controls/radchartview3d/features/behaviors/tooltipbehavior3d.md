@@ -15,11 +15,13 @@ The tooltip behavior visualizes arbitrary information related to a data point. W
 To enable the tooltip behavior you can add a __Chart3DTooltipBehavior__ object in the __Behaviors__ collection of the __RadCartesianChart3D__ control.
 
 #### __[XAML] Example 1: Defining tooltip behavior__
+{{region radchartview3d-behaviors-tooltip-0}}
 	<telerik:RadCartesianChart3D>
 		<telerik:RadCartesianChart3D.Behaviors>
 			<telerik:Chart3DTooltipBehavior/>
 		</telerik:RadCartesianChart3D.Behaviors>	
 	</telerik:RadCartesianChart3D>
+{{endregion}}
 	
 #### __Figure 1: Tooltip__
 ![](images/radchartview-3d-behaviors-tooltip-0.png)
@@ -33,6 +35,7 @@ You can use the ToolTipTemplate property of the chart to define a global templat
 >In the context of the series the ToolTipTemplate property of the series has bigger priority than the chart’s ToolTipTemplate.
 
 #### __[XAML] Example 2: Defining tooltip template__
+{{region radchartview3d-behaviors-tooltip-1}}
 	<telerik:PointSeries3D>
 		<telerik:PointSeries3D.TooltipTemplate>
 			<DataTemplate>
@@ -55,6 +58,7 @@ You can use the ToolTipTemplate property of the chart to define a global templat
 			</DataTemplate>
 		</telerik:PointSeries3D.TooltipTemplate>
 	</telerik:PointSeries3D>
+{{endregion}}
 
 #### __Figure 2: Tooltip template__
 ![](images/radchartview-3d-behaviors-tooltip-1.png)

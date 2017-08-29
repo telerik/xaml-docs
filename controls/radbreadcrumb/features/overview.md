@@ -54,7 +54,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 >Please avoid using the character set as a __PathSeparator__ in the __Header__ of the items, because this can lead to an unexpected behavior when you try to expand a path. Also, keep in mind that the __'\'__ character is the default PathSeparator.
 	
-# See Also
+## See Also
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})
  * [Getting Started]({%slug radbreadcrumb-getting-started%})
  * [Databinding ]({%slug radbreadcrumb-databinding%})

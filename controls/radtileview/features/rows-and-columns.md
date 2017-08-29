@@ -219,6 +219,6 @@ The __RadTileView__ exposes two properties that allow you to define the size of 
 >	- __RestoredHeight/RestoredWidth__ - specifies the size of the tile in a Restored state
 >	- __MinimizedHeight/MinimizedWidth__ - specifies the size of the tile in a Minimized state				
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})

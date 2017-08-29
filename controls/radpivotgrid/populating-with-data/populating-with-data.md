@@ -74,7 +74,7 @@ The default value is true for the __LocalDataSourceProvider__ and false for __Xm
 
 * __BeginInit() and  EndInit()__ - these methods must be used when you intialize the DataProvider in the code behind. Wrapping the initialization in __BeginInit()__ - __EndInit()__ will suspend automatic *Refreshes* until the __EndInit()__ that will unconditionally force *Refresh*.
 
-# See Also
+## See Also
 
  * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
 

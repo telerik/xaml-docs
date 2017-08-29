@@ -153,7 +153,7 @@ The result will look like this:
 
 ![Rad Pivot Grid Features Local Calc Fields 02](images/RadPivotGrid_Features_Local_Calc_Fields_02.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

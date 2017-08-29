@@ -18,7 +18,7 @@ Each class that descends from __FrameworkElement__ has a dependency property nam
 
 For example you can store some custom data like ID, type, name or anything else that will help you identify your object on a later stage.
 
-# See Also
+## See Also
 
  * [How to Add New Tab Item]({%slug radtabcontrol-how-to-add-new-tab-item%})
 

@@ -108,7 +108,7 @@ Here is a snapshot of the final result.
 
 ![](images/RadDocking_StylingRootCompass_11.png)
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

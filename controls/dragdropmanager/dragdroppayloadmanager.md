@@ -212,7 +212,7 @@ Figure 2: ListBox1 is on the left and ListBox2 is on the right. After the drop i
 
 >tipYou can download a runnable project of the previous example from the online SDK repository [here](https://github.com/telerik/xaml-sdk). The example is listed as __DragDrop / UsingDragDropPayloadManager__.          
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug dragdropmanager-getting-started%})
 

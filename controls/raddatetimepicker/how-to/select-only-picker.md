@@ -26,7 +26,7 @@ This will achieve the desired behavior. However, a specific grey visual element 
 
 >tipLearn more about the __RadWatermarkTextBox__ [here]({%slug radwatermarktextbox-overview%}).
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
 

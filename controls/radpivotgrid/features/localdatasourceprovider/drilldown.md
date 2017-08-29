@@ -12,9 +12,8 @@ position: 10
 
 As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** method that allows you to extract the records from your ItemsSource that were used for accumulating the result for a particular row and column. The GetUnderlyingData method takes two parameters: **Row Group** and **Column Group**.
 
-#### __[C#] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-
 {% if site.site_name == 'Silverlight' %}
+#### __[C#] Example 1: Calling GetUnderlyingData on Cell Double-Click__
 {{region cs-radpivotgrid-features-localdatasourceprovider-drilldown_1}}
 	private void pivotGrid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
@@ -39,6 +38,7 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 {{endregion}}
 {% endif %}
 {% if site.site_name == 'WPF' %}
+#### __[C#] Example 1: Calling GetUnderlyingData on Cell Double-Click__
 {{region cs-radpivotgrid-features-localdatasourceprovider-drilldown_2}}
 	private void pivotGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
 	{
@@ -60,9 +60,8 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 {{endregion}}
 {% endif %}
 
-#### __[VB.NET] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-
 {% if site.site_name == 'Silverlight' %}
+#### __[VB.NET] Example 1: Calling GetUnderlyingData on Cell Double-Click__
 {{region vb-radpivotgrid-features-localdatasourceprovider-drilldown_1}}
 	Private Sub pivotGrid_MouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 		If e.ClickCount = 2 Then
@@ -82,6 +81,7 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 {{endregion}}
 {% endif %}
 {% if site.site_name == 'WPF' %}
+#### __[VB.NET] Example 1: Calling GetUnderlyingData on Cell Double-Click__
 {{region vb-radpivotgrid-features-localdatasourceprovider-drilldown_2}}
 	Private Sub pivotGrid_MouseDoubleClick(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 			Dim pivotGrid = TryCast(sender, RadPivotGrid)

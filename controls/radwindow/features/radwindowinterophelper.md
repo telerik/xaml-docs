@@ -37,10 +37,10 @@ Here is a brief list of all attached properties exposed by the class:
 		navigation:RadWindowInteropHelper.Title="Custom Window"
 		navigation:RadWindowInteropHelper.Icon="icon.png"
 		navigation:RadWindowInteropHelper.ShowInTaskbar="True" >
-    <Grid>
-        <!-- ... -->
-    </Grid>
-</telerik:RadWindow>
+	    <Grid>
+		<!-- ... -->
+	    </Grid>
+	</telerik:RadWindow>
 {{endregion}}
 
 #### __[C#] Example 1: Set RadWindowInteropHelper attached properties__

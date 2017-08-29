@@ -14,7 +14,7 @@ Along with its other features, __RadMenu__ supports keyboard navigation. You can
 
 ![](images/RadMenu_Keyboard_Navigation_01.png)
 
-# See Also
+## See Also
 
  * [Orientation and DropDownPlacement]({%slug radmenu-features-orientation%})
 

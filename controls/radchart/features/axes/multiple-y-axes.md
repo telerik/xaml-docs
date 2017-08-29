@@ -145,7 +145,7 @@ As you can see on the snapshot below, the chart contains two series - one for th
 
 ![](images/RadChart_Features_Axes_MultipleYAxes_20.png)
 
-# See Also
+## See Also
 
  * [Axes Overview]({%slug radchart-features-axes-overview%})
 

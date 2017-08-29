@@ -44,7 +44,7 @@ As you can see there is only one request in the left panel. So lets "Inspect" it
 
 So if your __RadPivotGrid__ doesn't show data from OLAP Cube, try tracing the requests and responses with Fiddler.        
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

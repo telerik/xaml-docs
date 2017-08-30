@@ -449,12 +449,8 @@ navigation:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
-    controls/radpanelbar/styling-and-appearance:
-        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
-    controls/radprogressbar/styling-and-appearance:
-        title: Styling and Appearance
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:
@@ -519,12 +515,6 @@ navigation:
         title: RadTreeMap
     controls/radtreeview:
         title: RadTreeView
-    controls/radtreeview/how-to/drag-and-drop:
-        title: Drag and Drop
-        position: 0
-    controls/radtreeview/features/treeview-item:
-        title: RadTreeViewItem
-        position: 50
     controls/radupload:
         title: RadUpload
     controls/radupload/features:
@@ -555,6 +545,8 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/series/funnelchart-series:
+        title: FunnelChart Series 
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -596,12 +588,9 @@ navigation:
     controls/radpdfviewer/ui:
         title: UI
         position: 6
-    controls/radpdfviewer/features:
-        title: Features
-        position: 7
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
-        position: 8
+        position: 7
     controls/radpdfviewer/document-model/text:
         title: Text
     controls/radspreadprocessing/working-with-workbooks:
@@ -717,24 +706,6 @@ navigation:
     controls/radrichtextbox/import-export:
         title: Import/Export
         position: 7	
-    controls/radrichtextbox/import-export/docx:
-        title: Docx	
-        position: 2
-    controls/radrichtextbox/import-export/html:
-        title: Html	
-        position: 3
-    controls/radrichtextbox/import-export/pdf:
-        title: Pdf
-        position: 4		
-    controls/radrichtextbox/import-export/rtf:
-        title: Rtf	
-        position: 5
-    controls/radrichtextbox/import-export/xaml:
-        title: Xaml	 
-        position: 6
-    controls/radrichtextbox/import-export/plain-text:
-        title: Plain Text	
-        position: 7
     controls/radrichtextbox/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting
         position: 8
@@ -755,7 +726,19 @@ navigation:
     controls/radrichtextbox/features/merge-documents:
         title: Merge Documents
     "*radspreadstreamprocessing":
-        title: RadSpreadStreamProcessing 	
+        title: RadSpreadStreamProcessing
+    controls/radrichtextbox/import-export/docx:
+        title: Docx	
+    controls/radrichtextbox/import-export/html:
+        title: Html	
+    controls/radrichtextbox/import-export/pdf:
+        title: Pdf	
+    controls/radrichtextbox/import-export/plain-text:
+        title: Plain-Text	
+    controls/radrichtextbox/import-export/rtf:
+        title: Rtf	
+    controls/radrichtextbox/import-export/xaml:
+        title: Xaml	
 ## Centaur Controls End
 
 ## X1 Controls Start
@@ -918,7 +901,7 @@ navigation:
     controls/radvirtualgrid:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:
-        title: Styling and Appearance
+        title: Styling and Appearance    
 ## X1 Controls End
 
 ## Common Start

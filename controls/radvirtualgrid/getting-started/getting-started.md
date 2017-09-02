@@ -76,18 +76,6 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 #### __Figure 1: RadVirtualGrid populated with data__
 ![RadVirtualGrid populated with data](images/RadVirtualGrid_GettingStarted_01.png)
 
-### HeaderValueNeeded
-
-Through this event the appearance of the row and column headers can be controlled. The event arguments provide the following properties:
-
-* __HeaderOrientation__: Enumeration through which has two values: __Horizontal__ and __Vertical__. The first one sets the value to the Row Header, whereas the second one sets the value to the Column Header.
-
-* __Index__: Sets the index of the Header.
-
-* __Value__: The actual value to be applied to the Header.
-
-
-
 ## Resetting the Capacity to the Initial Row and Column Count
 
 As inserting rows and columns does not affect the __InitialRowCount__ and __InitialColumnCount__ properties, __RadVirtualGrid__ supports resetting its capacity to the values that are set to them. This can be done through the following methods:

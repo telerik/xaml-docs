@@ -789,6 +789,8 @@ navigation:
         title: RadDataPager
     controls/raddatapager/changes-and-backward-compability:
         title: Changes and Backward Compability
+    controls/radfiledialogs:
+        title: RadFileDialogs
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:

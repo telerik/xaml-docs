@@ -19,8 +19,10 @@ __RadVirtualGrid__ supports selection of a cell region. This mechanism can be ma
 * __SelectCellRegion(IEnumerable<Telerik.Windows.Controls.VirtualGrid.CellRegion>)__ - Expects multiple __CellRegion__ elements.
 
 #### __[C#] Example 1: Selecting a CellRegion__
+{{region radvirtualgrid-selection_programmatic-selection_0}}
 	 this.VirtualGrid.SelectCellRegion
                 (new Telerik.Windows.Controls.VirtualGrid.CellRegion(1, 1, 2, 5));
+{{endregion}}
 
 #### __Figure 1: Selecting a CellRegion__
 ![Selecting a CellRegion](images/RadVirtualGrid_Selection_03.png)
@@ -36,14 +38,18 @@ The control supports programmatic selection based on a given index/indexes. For 
 * __SelectedIndexes__ - provides information regarding the selected indexes. As it is a collection property it cannot be assigned.
 
 #### __[C#] Example 2: Setting the SelectedIndex property__
+{{region radvirtualgrid-selection_programmatic-selection_1}}
 	this.VirtualGrid.SelectedIndex = 1;
+{{endregion}}
 
 #### __Figure 2: Setting the SelectedIndex property__
 ![Setting the SelectedIndex property](images/RadVirtualGrid_Selection_04.png)
 
 #### __[C#] Example 3: Adding selected indexes__
+{{region radvirtualgrid-selection_programmatic-selection_2}}
 	this.VirtualGrid.SelectedIndexes.Add(1);
     this.VirtualGrid.SelectedIndexes.Add(2);
+{{endregion}}
 
 #### __Figure 3: Adding selected indexes__
 ![Setting the SelectedIndex property](images/RadVirtualGrid_Selection_05.png)

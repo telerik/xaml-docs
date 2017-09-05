@@ -49,9 +49,23 @@ __RadVirtualGrid__ needs to be initially populated with fixed amount of rows and
                                 InitialRowCount="5"/>
 {{endregion}}
 
-## Populating with Data
+## Populating with Data through DataProvider
 
-> In order the control to be populated with data, its [InitialRowCount and InitialColumnCount](#setting-initial-row-and-column-count) properties need to be set
+>important When populating data with a __DataProvider__, it handles most of the operations of __RadVirtualGrid__ out-of-the-box. Thus, the events that are  intended to be used for manually populating and manipulating the data of the control will not be raised.
+
+Instead of using the __CellValueNeeded__ event, __RadVirtualGrid__ provides an option to populate its data through the built-in __DataProvider__ mechanism. The __DataProvider__ object accepts an IEnumerable through its constructor and can be applied to __RadVirtualGrid__ through its relevant property.
+
+#### __[C#] Example 4: Applying a DataProvider__
+
+{{region radvirtualgrid-gettingstarted_3}}
+	this.VirtualGrid.DataProvider = new Telerik.Windows.Controls.VirtualGrid.DataProvider(this.myCollection);
+{{endregion}}
+
+> The __DataProvider__ mechanism is intended to cover basic scenarios for populating the control with data. For extending the default behavior, __RadVirtualGrid__ provides support for [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%})
+
+## Populating with data manually
+
+> In order the control to be populated with data, its [InitialRowCount and InitialColumnCount](#setting-initial-row-and-column-count) properties need to be set.
 
 The control populates its data through the __CellValueNeeded__ event. It is raised when the control is initially loaded and when newly data is about to be loaded on demand when the user scrolls horizontally or vertically. The event arguments expose the following properties:
 
@@ -83,19 +97,6 @@ As inserting rows and columns does not affect the __InitialRowCount__ and __Init
 * __Reset()__: Resets the capacity of the control to the values of the __InitialRowCount__ and __InitialColumnCount__ properties.
 
 * __Reset(int rowCount, int columnCount)__: Through this overload of the Reset method, the capacity of __RadVirtualGrid__ can be reset to values different from the ones initially set to the __InitialRowCount__ and __InitialColumnCount__ properties. Furthermore, the two properties will be updated accordingly.
-
-## Populating with Data through DataProvider
-
-Instead of using the __CellValueNeeded__ event, __RadVirtualGrid__ provides an option to populate its data through the built-in __DataProvider__ mechanism. The __DataProvider__ object accepts an IEnumerable through its constructor and can be applied to __RadVirtualGrid__ through its relevant property.
-
-#### __[C#] Example 4: Applying a DataProvider__
-
-{{region radvirtualgrid-gettingstarted_3}}
-	this.VirtualGrid.DataProvider = 
-    	new Telerik.Windows.Controls.VirtualGrid.DataProvider(this.myCollection);
-{{endregion}}
-
-> The __DataProvider__ mechanism is intended to cover basic scenarios for populating the control with data. For extending the default behavior, __RadVirtualGrid__ provides support for [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%})
 
 ## See also
 

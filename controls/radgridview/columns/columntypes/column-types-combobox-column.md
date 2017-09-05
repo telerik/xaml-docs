@@ -29,7 +29,7 @@ Here is a list of the most important properties:
 * __IsComboBoxEditable__ - allows you to configure whether the editor (__RadComboBox__) is editable.
 
  
->importantThe __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
+>important The __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
 
 >Since __Q3 2012 SP__ typing a letter in __GridViewComboBoxColumn__ will point to the first item starting with the same letter.
         

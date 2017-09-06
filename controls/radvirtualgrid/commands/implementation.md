@@ -21,7 +21,7 @@ A straightforward approach for implementing the commands is to set them directly
            CommandTarget="{Binding ElementName=VirtualGrid}" />
 {{endregion}}
 
-Note, that the target object needs to be explicitly set in the definition of the CommandTarget Property, specifying the RadVirtualGrid towards which the command has to be applied. 
+Note, that the target object needs to be explicitly set in the definition of the __CommandTarget__ Property, specifying the RadVirtualGrid towards which the command has to be applied. 
 
 ## See Also
 

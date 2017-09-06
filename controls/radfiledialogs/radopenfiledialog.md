@@ -12,7 +12,7 @@ position: 3
 
 __RadOpenFileDialog__ is modal dialog box that allows you to specify one or multiple filenames to open.
 
-#### __Figure 1: RadOpenFileDialog__ 
+#### __Figure 1: RadOpenFileDialog in single selection mode__ 
 ![](images/radopenfiledialog-01.png)
 
 ## Show the dialog

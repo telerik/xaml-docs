@@ -81,6 +81,6 @@ __In order to modify\extend and apply a built-in theme:__
 
 
 
-# See Also
+## See Also
 
  * [Creating a Custom Theme Project - Using the Telerik Approach]({%slug common-styling-apperance-themes-custom-theme-project-telerik-approach%})

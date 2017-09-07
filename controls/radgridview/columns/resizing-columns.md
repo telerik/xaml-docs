@@ -57,7 +57,7 @@ When the user resizes the column the __ColumnWidthChanging__ event is fired and 
 
 >The user can resize columns only if __CanUserResizeColumns__ is set to __True__ (this is its default value).
 
-# See Also
+## See Also
 
  * [Reordering Columns]({%slug gridview-columns-reordering-columns%})
 

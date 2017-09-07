@@ -80,7 +80,7 @@ You can also refer to the documentation on [Implicit Styles and NoXaml binaries]
 
 >tipYou can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
 
-# See Also
+## See Also
 
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})
 

@@ -72,7 +72,7 @@ Here is the result:
 
 ![](images/dateTimePicker_styling_styling_the_raddatetimepicker_030.png)
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
 

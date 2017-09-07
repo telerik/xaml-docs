@@ -96,7 +96,7 @@ Here is a snapshot of the result:
 
 {% endif %}
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the RadRibbonTab]({%slug radribbonview-styling-ribbontab%})
  * [Styling the RadRibbonGroup]({%slug radribbonview-styling-ribbongroup%})

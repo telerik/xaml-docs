@@ -43,6 +43,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#Buttons/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
- * [Visual Structure]({%slug radbuttons-visual-structure%}) 
+ * [Getting Started]({%slug radbuttons-getting-started%})
+ * [Visual Structure]({%slug radbuttons-visual-structure%})
  * [Events]({%slug radbuttons-events%})
  * [Styles and Templates]({%slug radbuttons-styles-and-templates-overview%})

@@ -17,7 +17,7 @@ position: 2
 Find out how to [populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control.
         
 
-# See Also
+## See Also
 
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})
 

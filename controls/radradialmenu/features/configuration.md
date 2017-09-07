@@ -96,6 +96,6 @@ __RadRadialMenu__ provides a static *double* property that will help you to adju
 	RadRadialMenu.AnimationSpeedFactor = 1.2d;
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radradialmenu-visual-structure%})

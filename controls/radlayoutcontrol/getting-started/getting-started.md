@@ -170,7 +170,7 @@ This section demonstrates a basic layout set up with nested groups and different
 
 > You can switch between normal and edit mode of the control by setting its __IsInEditMode__ property.
 
-# See Also
+## See Also
 * [Overview]({%slug radlayoutcontrol-overview%})
 * [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%})
 * [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%})

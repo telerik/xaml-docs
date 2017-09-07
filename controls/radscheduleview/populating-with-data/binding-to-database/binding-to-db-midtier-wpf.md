@@ -29,6 +29,6 @@ Now, when we have the table definitions that match the types in the RadScheduleV
 
 ![radscheduleview populating with data EFModel](images/radscheduleview_populating_with_data_EFModel.png)
 
-# See Also
+## See Also
 
  * [Models]({%slug radscheduleview-populating-with-data-binding-to-db-models%})

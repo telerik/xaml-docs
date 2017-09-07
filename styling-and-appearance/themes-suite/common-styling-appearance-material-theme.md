@@ -111,26 +111,30 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 __Example 1__ shows the default font sizes and families.
 
 #### __[C#] Example 1: Default FontSize and FontFamily properties:__
-
+{{region styling-appearance-material-theme-0}}
 	MaterialPalette.Palette.FontSizeS = 12;
 	MaterialPalette.Palette.FontSize = 14;
 	MaterialPalette.Palette.FontSizeL = 18;
 	MaterialPalette.Palette.FontFamily = new FontFamily(“Roboto”);
+{{endregion}}
 
 The __Examples 2 and 3__ show how to change the default FontFamily from "Roboto" to "Calibri" and the FontSize from 14 to 12 on a click of a button.
 
 #### __[XAML] Example 2: Example view definition__
-	
+{{region styling-appearance-material-theme-1}}
 	<telerik:RadCalendar HorizontalAlignment="Center" />
 	<telerik:RadButton Content="Change Font" Click="OnButtonChangeFontSizeClick" 
 		     HorizontalAlignment="Center" VerticalAlignment="Center"/>
+{{endregion}}
 	
 #### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
+{{region styling-appearance-material-theme-2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		MaterialPalette.Palette.FontSize = 12;
 		MaterialPalette.Palette.FontFamily = new FontFamily("Calibri");
 	}
+{{endregion}}
 
 #### __Figure 2: Setting FontSize and FontFamily__
 ![font changed](images/MaterialThemeFontChange.png)	
@@ -144,7 +148,9 @@ The **Material Theme** uses and supports the same approach for adding icons and 
 **Example 4** show how to merge the font resources.
 
 #### __[XAML] Example 4: Adding the ResourceDictionary with the glyphs__
+{{region styling-appearance-material-theme-3}}
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
+{{endregion}}
 
 **Example 10** in the [Material Control](#material-control) section shows the usage of a glyph in a TextBlock.
  
@@ -153,16 +159,20 @@ The **Material Theme** uses and supports the same approach for adding icons and 
 The **Material Theme** exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the **CornerRadius** value is **2** as shown in **Example 5**. 
 
 #### __[C#] Example 5: Default corner radius values__
+{{region styling-appearance-material-theme-4}}
 	  MaterialPalette.Palette.CornerRadius = new CornerRadius(2);
       MaterialPalette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
       MaterialPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
       MaterialPalette.Palette.CornerRadiusLeft = new CornerRadius(2, 0, 0, 2);
       MaterialPalette.Palette.CornerRadiusRight = new CornerRadius(0, 2, 2, 0);
+{{endregion}}
 	
 **Example 6** shows how to change the default corner radius from 2 to 10. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the **CornerRadius** main property.
 
 #### __[C#] Example 6: Changing the default corner radius__
+{{region styling-appearance-material-theme-5}}
 	MaterialPalette.Palette.CornerRadius = new CornerRadius(10); 	
+{{endregion}}
 
 #### __Figure 3: Apperance of a RadButton control after changing the default corner radius__
 ![corner radius](images/materialtheme-corner-radius.png)	
@@ -182,16 +192,19 @@ The **Material Assist** static class exposes a set of attached properties and ca
 **Example 8** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
 
 #### __[XAML] Example 7: Declare the namespace for the Material components__
+{{region styling-appearance-material-theme-6}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
-
+{{endregion}}
 
 #### __[XAML] Example 8: Set RadToggleButton's visual appearance through the MaterialAssist class__
+{{region styling-appearance-material-theme-7}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
                                mat:MaterialAssist.MouseOverBrush="{telerik:MaterialResource ResourceKey=AccentHoverBrush}"
                                mat:MaterialAssist.PressedBrush="{telerik:MaterialResource ResourceKey=AccentPressedBrush}"
 							   mat:MaterialAssist.CheckedBrush="{telerik:MaterialResource ResourceKey=ValidationBrush}" 
 							   mat:MaterialAssist.FocusBrush="{telerik:MaterialResource ResourceKey=PrimaryNormalBrush}"/>
+{{endregion}}
 
 #### **Figure 4: Appearance of the RadToggleButton in the different states**
 
@@ -206,13 +219,14 @@ The **Shadow** is one of the newly introduced elements designed specifically for
 If you would like to use it separately in your application, you should work with its Width/Height properties so that it appears around the desired element as shown in **Example 9**.
 
 #### **[XAML] Example 9: Using a Shadow component separately**
-
+{{region styling-appearance-material-theme-8}}
 	 <Grid>
                 <mat:Shadow Background="White" Width="150" Height="30" ShadowDepth="Depth5"/>
                 <TextBlock Text="Some Text"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"/>
      </Grid>
+{{endregion}}
 
 >important The Shadow element should have a background set for the effect to appear.
 
@@ -241,15 +255,16 @@ Another element specifically designed for the Material theme and used to display
 The following code snippets show how you can integrate the Material Control with a RadButton  
 
 #### **[XAML] Example 10: Declaration of the Button element with a glyph as text**
-
+{{region styling-appearance-material-theme-9}}
 		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
                 <TextBlock FontFamily="{StaticResource TelerikWebUI}"
                            FontSize="32" FontWeight="Normal" FontStyle="Normal"
                            Text="{StaticResource GlyphEdit}" VerticalAlignment="Center" HorizontalAlignment="Center" />
          </Button>
+{{endregion}}
   					
 #### **[XAML] Example 11: Button's Style declaration**
-
+{{region styling-appearance-material-theme-10}}
 	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FF2196F3" />
             <Setter Property="Foreground" Value="{telerik:MaterialResource ResourceKey=MarkerInvertedBrush}" />
@@ -281,6 +296,7 @@ The following code snippets show how you can integrate the Material Control with
                 </Setter.Value>
             </Setter>
       </Style>
+{{endregion}}
 
 #### **Figure 7: Material Control used within a custom template applied to a Button**
 

@@ -36,7 +36,7 @@ It contains the following parts:
 
 * __[TextBlock]__
 
-# See Also
+## See Also
 
  * [Styles and templates - Overview]({%slug radrichtextbox-styles-and-tempaltes-overview%})
 

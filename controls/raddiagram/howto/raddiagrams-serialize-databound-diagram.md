@@ -399,7 +399,7 @@ Now let's see a possible use case with this set of Diagram configuration and Vie
 
 >important Please note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](http://docs.telerik.com/devtools/wpf/api/html/M_Telerik_Windows_Diagrams_Core_IObservableGraphSource_AddNode.htm) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.			  
 
-# See Also
+## See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})
  * [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%})
  * [DataBinding]({%slug raddiagram-data-databinding%})

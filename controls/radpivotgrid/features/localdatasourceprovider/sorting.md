@@ -196,7 +196,7 @@ If you want to change the property based on which the sort is applied, then you 
 
 ![Rad Pivot Grid Features Queryable Sorting 06](images/RadPivotGrid_Features_Queryable_Sorting_06.png)
 
-# See Also
+## See Also
 
  * [LocalDataSourceProvider]({%slug radpivotgrid-data-localdatasource%})
 

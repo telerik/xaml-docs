@@ -55,7 +55,7 @@ In order to visualize it, a new instance of __RadDesktopAlertManager__ should be
 	manager.ShowAlert(alert)
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

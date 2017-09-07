@@ -83,7 +83,7 @@ Telerik introduced the __IsInputRestrictedToSelectableDates__ boolean property i
 	   IsInputRestrictedToSelectableDates="True"/>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

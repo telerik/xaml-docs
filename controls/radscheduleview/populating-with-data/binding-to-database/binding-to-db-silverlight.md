@@ -37,6 +37,6 @@ All generated entities from the WCF RIA Services are partial classes and we coul
 
 Most of the properties are already implemented from the entity, so we need to add the others manually. The tricky part here is the IAppointment implementation (the SqlExceptionAppointment implementation is very similar to the IAppointment, the only difference is that the exceptions don’t have RecurrenceRule). Please, note that the Copy() method is called when the appointment is being copied (for example – when is dragging with ctrl control pressed). In this case, we need to copy all the properties form the original appointment to the copy.      	
 
-# See Also
+## See Also
 
  * [Models]({%slug radscheduleview-populating-with-data-binding-to-db-models%})

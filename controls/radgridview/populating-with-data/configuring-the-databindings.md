@@ -56,7 +56,7 @@ The data in the __RadGridView__ is separated in columns. There are different typ
 
 To learn more about defining columns and the different types of columns take a look at the [Grid Columns]({%slug gridview-columns-overview%}) section.
 
-# See Also
+## See Also
 
  * [Using in-memory Data]({%slug gridview-in-memory-date%})
 

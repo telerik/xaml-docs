@@ -44,6 +44,6 @@ The following example shows how to create a __RadAutoCompleteBox__ control in th
 	</UserControl>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Overview]({%slug radautocompletebox-overview%})

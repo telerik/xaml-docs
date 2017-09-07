@@ -208,6 +208,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	Me.DataContext = New MyViewModel()
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Implementing View-ViewModel ]({%slug radscheduleview-populating-with-data-implementing-view-model%})

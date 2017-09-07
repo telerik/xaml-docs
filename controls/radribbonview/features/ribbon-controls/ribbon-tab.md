@@ -211,5 +211,5 @@ For a full list of the exposed by the __RadRibbonView__ events, take a look at t
 * [Minimization]({%slug radribbonview-minimization%})
 * [Localization]({%slug radribbonview-localization%})
 
-# See Also
+## See Also
  * [Styling the RadRibbonTab]({%slug radribbonview-styling-ribbontab%})

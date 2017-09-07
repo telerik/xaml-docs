@@ -31,6 +31,6 @@ Then, add the defined GroupDescriptor to the __GroupDescriptors collection__ of 
         
 For more information you can check the [Grouping section]({%slug gridview-grouping-basics%}).
     
-# See Also
+## See Also
 
  * [Use expression descriptors]({%slug gridview-howto-use-expression-descriptors%})

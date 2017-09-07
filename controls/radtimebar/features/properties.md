@@ -103,4 +103,4 @@ will make the seconds in groups with 10 each. You can also set more than one *In
 
 __CurrentItemInterval__ and __CurrentGroupInterval__ properties can be used in code-behind to take the current item respectively group interval span set.
 
-__MinZoomRange__ - sets the minimal range of the TimeBar that can be zoomed.
+__MinZoomRange__ and __MaxZoomRange__ -  These properties set the minimal and maximum range of the TimeBar that can be zoomed.

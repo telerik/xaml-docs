@@ -20,6 +20,6 @@ This section defines terms and concepts used in the scope of __RadToolBar__ you 
 * __Dropdown Button__ - A button to act on in order to open/ close the __Overflow__. 
 * __Overflow panel__ - The area that holds all items not located in the __Strip__ panel. 
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtoolbar-declaration%})
  * [Required Parts]({%slug radtoolbar-template-parts%})

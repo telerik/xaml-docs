@@ -22,7 +22,7 @@ More about managing data in __RadGridView__ can be found [here]({%slug gridview-
 
 * [Data Validation]({%slug gridview-managing-data-validation%})
 
-# See Also
+## See Also
 
  * [Sorting]({%slug gridview-overview-sorting%})
 

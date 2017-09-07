@@ -14,11 +14,11 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 ## Keyboard Shortcuts
 
-* __Up/Down__ - selects previous/next item.
+* __Up/Down__: Selects the previous/next item.
 
-* __PageUp/PageDown__ - skips 10 items, selects previous/next item.
+* __PageUp/PageDown__: Selects the first/last item in the viewport or selects the previous/next item if all items are in the viewport.
 
-* __Home/End__ - selects first/last item.
+* __Home/End__: Selects the first/last item.
 
 >Navigation always starts from the currently selected item. If there is no selection the navigation should start from the first item.
       	

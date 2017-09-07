@@ -202,7 +202,7 @@ __Figure 2:__ TimeSpanComponent that consist of weeks:
 	
 ![Rad Time Span Picker TimeSpanComponents 02](images/RadTimeSpanPicker_TimeSpanComponents_02.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radtimespanpicker-overview%})
 

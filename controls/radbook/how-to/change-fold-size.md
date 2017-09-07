@@ -46,6 +46,6 @@ To change the fold size you can use the __FoldSize__ property of __RadBook__. It
 	</telerik:RadBook>
 {{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radbook-getting-started%})
  * [Visual Structure]({%slug radbook-visual-structure%})

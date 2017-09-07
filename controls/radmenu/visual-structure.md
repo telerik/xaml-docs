@@ -34,7 +34,7 @@ When a menu item is selected it gets expanded and its sub items appear. See the 
 
 >tipFor more detailed descriptions of the required parts of the control please take a look at the [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%}) topic.
 
-# See Also
+## See Also
 
  * [Overview]({%slug radmenu-overview%})
 

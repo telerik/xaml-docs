@@ -255,7 +255,7 @@ The next screenshots show the final result:
 
 ![radganttview-dragdrop-radlistbox-3](images/radganttview-dragdrop-radlistbox-3.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radganttview-dragdrop-overview%})
 

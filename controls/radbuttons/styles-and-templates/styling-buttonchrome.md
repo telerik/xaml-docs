@@ -30,7 +30,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __B
 
 {% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ButtonChrome__. Their names indicate to which part of the __RadButton__ appearance they are assigned.{% endif %}
 
-# See Also
+## See Also
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the RadButton]({%slug radbuttons-styles-and-templates-styling-the-radbutton%})
  * [Styling the RadDropDownButton]({%slug radbuttons-styles-and-templates-styling-the-radropdownbutton%})

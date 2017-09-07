@@ -14,7 +14,7 @@ For more information about creating and applying an __ItemTemplate__, check out 
 
 To learn what is the difference between __ItemTemplate__ and __SelectionBoxTemplate__, take a look at the [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%}) topic.
 
-# See Also
+## See Also
 
  * [Setting up AutoComplete]({%slug radcombobox-setting-up-autocomplete%})
 

@@ -69,7 +69,7 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 You could also use RadGridView's **RowStyleSelector** and **AlternateRowsStyleSelector** properties to style rows differently based on a specific condition. More details about how this can be achieved can be found in the [RowStyleSelector article]({%slug gridview-rowstyleselector%}).
 
-# See Also
+## See Also
 
  * [Alternating Rows]({%slug radgridview-rows-alternating-rows%})
 

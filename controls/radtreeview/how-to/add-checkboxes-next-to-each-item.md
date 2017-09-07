@@ -28,7 +28,7 @@ If the check boxes need to have "tri-states" set the __IsTriStateMode__ property
 
 For more information, read the topic about [CheckBox Support]({%slug check-box-support%}).
 
-# See Also
+## See Also
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})
  * [Implement a Tri-State CheckBox logic using MVVM]({%slug radtreeview-howto-tri-state-mvvm%})
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})

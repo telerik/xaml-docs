@@ -42,7 +42,7 @@ The __RadMap__ control raises the following specific events:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__type.
 	* A __RoutedEventArgs__ object.
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})
  * [Getting Started]({%slug radmap-getting-started%})
  * [Localization]({%slug radmap-localization%})

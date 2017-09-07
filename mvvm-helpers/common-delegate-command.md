@@ -22,7 +22,7 @@ It exposes the following methods and events:
 The **DelegateCommand** constructor has two overloads. The first accepts just a Delegate to execute as a parameter. The second one accepts the **Delegate** to execute as well as a **Predicate** that allows/bans the execution.  
 
 #### **[C#] Example 1: DelegateCommand implementation in your ViewModel that accepts a delegate:**
-	
+{{region common-mvvm-delegate-command-implementation-0}}
 	 	public ICommand CustomCommand { get; set; }
 
         public MyViewModel()
@@ -34,10 +34,11 @@ The **DelegateCommand** constructor has two overloads. The first accepts just a 
         {
             MessageBox.Show("Custom Command Executed!");
         }
+{{endregion}}
 	
 
 #### **[C#] Example 2: DelegateCommand implementation in your ViewModel that accepts a delegate and a predicate:**
-
+{{region common-mvvm-delegate-command-implementation-1}}
 		public bool CanExecuteCommand { get; set; }
         public ICommand CustomCommand { get; set; }
 
@@ -55,6 +56,7 @@ The **DelegateCommand** constructor has two overloads. The first accepts just a 
         {
             MessageBox.Show("Custom Command Executed!");
         }
+{{endregion}}
 
 
 

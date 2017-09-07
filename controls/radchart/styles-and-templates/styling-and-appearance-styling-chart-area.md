@@ -24,7 +24,7 @@ Through the __ChartArea__ you are able to style the following parts of it:
 
 * The control which is displayed when no data is present. To learn how to style it read [here]({%slug radchart-styling-and-appearance-styling-no-data-control%}). 
 
-# See Also
+## See Also
 
  * [Styling the Chart Legend]({%slug radchart-styling-and-appearance-styling-chart-legend%})
 

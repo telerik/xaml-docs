@@ -65,7 +65,6 @@ The ChartTrackballBehavior exposes three properties and an event. These properti
 ## Specifying a custom TrackBallInfoTemplate        
 
 #### __XAML__
-
 {{region radchart-features-trackball_1}}
 	<telerik:ScatterLineSeries>
 	    <telerik:ScatterLineSeries.TrackBallInfoTemplate>
@@ -186,10 +185,14 @@ ChartTrackBallBehavior exposes the __Position__ property that can be used to man
 For example, if the chart is 500px wide and 300px high, and the Position property is set to new Point(250, 150) the trackball will be placed at the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
 
 #### __C#__
+{{region radchart-features-trackball_5}}
 	trackballBehavior.Position = new Point(250, 150);
-	
+{{endregion}}
+
 #### __VB.NET__	
+{{region radchart-features-trackball_6}}
 	trackballBehavior.Position = New Point(250, 150)
+{{endregion}}
 
 This behavior also provides the __PositionChanging__ event, which is called on each change of the Position property. The event arguments expose a couple of helpful properties:
 * __PreviousPosition__: Gets the previous position of the trackball.

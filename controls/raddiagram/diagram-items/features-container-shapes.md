@@ -31,17 +31,20 @@ A container can be compared with a __HeaderedItemsControl__ but is also a true d
 The __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
 #### __XAML__
+{{region raddiagram-features-container-shapes-0}}
     <Grid>
         <telerik:RadDiagram>
             <telerik:RadDiagramContainerShape Content="Container" />
         </telerik:RadDiagram>
     </Grid>			  
+{{endregion}}
 
 ![Rad Diagram Features Containers Content](images/RadDiagram_Features_Containers_Content.png)
 
 If you bind the __Content__ property to a business property, you can use the __ContentTemplate__ to apply a __DataTemplate__ and control the way your business data is displayed in the header of the __RadDiagramContainerShape__:		  
 
 #### __XAML__
+{{region raddiagram-features-container-shapes-1}}
     <Grid>
         <telerik:RadDiagram>
             <telerik:RadDiagramContainerShape Content="{Binding}">
@@ -53,6 +56,7 @@ If you bind the __Content__ property to a business property, you can use the __C
             </telerik:RadDiagramContainerShape>
         </telerik:RadDiagram>
     </Grid>
+{{endregion}}
 
 ### Edit Mode
 
@@ -67,24 +71,30 @@ The main purpose of the __RadDiagramContainerShape__ is to allow you to drop sha
 You can also populate it manually in xaml:
 			
 #### __XAML__
-	
+{{region raddiagram-features-container-shapes-2}}	
     <telerik:RadDiagram>
         <telerik:RadDiagramContainerShape  x:Name="containerShape" Content="Container">
             <telerik:RadDiagramShape Content="Shape1" />
         </telerik:RadDiagramContainerShape>
     </telerik:RadDiagram>	
+{{endregion}}
 
 Or in code-behind:
 
 #### __C#__
+{{region raddiagram-features-container-shapes-3}}
     containerShape.Items.Add(new RadDiagramShape() { Content = "Shape 1"});			  
+{{endregion}}
 
 #### __VB.NET__
+{{region raddiagram-features-container-shapes-4}}
     containerShape.Items.Add(New RadDiagramShape() With {.Content = "Shape 1"})
+{{endregion}}
 
-You can also populate the __RadDiagramContainerShape__ from a collection of business items. You can use the __ItemsSource__ property to bind it to your data objects. For example, if the __RadDiagram.DataContext__ contains a collection of business nodes:		  
+You can also populate the __RadDiagramContainerShape__ from a collection of business items. You can use the __ItemsSource__ property to bind it to your data objects. For example, if the __RadDiagram.DataContext__ contains a collection of business nodes:	  
 
 #### __C#__
+{{region raddiagram-features-container-shapes-5}}
     public class MainViewModel
     {
         public ObservableCollection<NodeViewModelBase> Nodes { get; set; }
@@ -111,8 +121,10 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
             this.xDiagram.DataContext = new MainViewModel();
         }
     }    
-    
+{{endregion}}
+ 
 #### __VB.NET__
+{{region raddiagram-features-container-shapes-6}}
     Public Class MainViewModel
         Public Property Nodes() As ObservableCollection(Of NodeViewModelBase)
             Get
@@ -141,11 +153,12 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
             Me.xDiagram.DataContext = New MainViewModel()
         End Sub
     End Class
+{{endregion}}
 
-You can display that collection in a __RadDiagramContainerShape__:
-		  
+You can display that collection in a __RadDiagramContainerShape__:		  
 
 #### __XAML__
+{{region raddiagram-features-container-shapes-7}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
             <Style TargetType="telerik:RadDiagramShape">
@@ -161,6 +174,7 @@ You can display that collection in a __RadDiagramContainerShape__:
                                     Content="Container"
                                     ItemsSource="{Binding Nodes}" />
     </telerik:RadDiagram>			  			  
+{{endregion}}
 
 ![Rad Diagram Container Shape Items Source](images/RadDiagram_ContainerShape_ItemsSource.png)
 
@@ -175,6 +189,7 @@ With Q2 2013, you can make your __RadDiagramContainerShape__ collapsible. In ord
 For instance, if you take the above __RadDiagramContainerShape__ data-bound definition, you can extend it to set the __IsCollapsible__ property to __True__ in the following manner:	  
 
 #### __XAML__
+{{region raddiagram-features-container-shapes-8}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
             <Style TargetType="telerik:RadDiagramShape">
@@ -191,6 +206,7 @@ For instance, if you take the above __RadDiagramContainerShape__ data-bound defi
                                           IsCollapsible="True"
                                           ItemsSource="{Binding Nodes}" />
     </telerik:RadDiagram>		  
+{{endregion}}
 
 This should result in the following layout:
 ![Rad Diagram Container Shape Collapsible](images/RadDiagram_ContainerShape_Collapsible.png)
@@ -204,6 +220,7 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
 * __CollapsedContent__ - gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.		  
 
 #### __XAML__
+{{region raddiagram-features-container-shapes-9}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
             <Style TargetType="telerik:RadDiagramShape">
@@ -221,6 +238,7 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
                                           IsCollapsible="True"
                                           ItemsSource="{Binding Nodes}" />
     </telerik:RadDiagram>
+{{endregion}}
 
 ![Rad Diagram Container Shape Collapsed Content](images/RadDiagram_ContainerShape_CollapsedContent.png)
 
@@ -254,7 +272,7 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 
 >tip You can use the __RadDiagram.ContainerShapeStyle__ property to explicitly apply a style on all __RadDiagramContainerShapes__ in a __RadDiagram__ instance.		  
 
-# See Also
+## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Customize a ContainerShape]({%slug raddiagram-howto-customize-containers%})
  * [Connections]({%slug raddiagrams-features-connections%})

@@ -14,19 +14,19 @@ __PROBLEM__
 
 When you use the [GridViewComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) you might encounter empty cells in that column:
 
-![](images/gridview_troubleshoot_blank_cells.png)
+![GridView Troubleshooting Blank Cells](images/gridview_troubleshoot_blank_cells.png)
 
 __CAUSE__
 
-First you need to check
+First you need to check:
 
-* the __Output for Binding exceptions__
+* The Output for Binding exceptions
 
-* if the __types are of the same type__
+* If the types are of the same type
 
 If you do not encounter any of the above mentioned problems, then you probably use ElementName binding for that column, e.g.
 
-#### __XAML__
+#### __[XAML] Example 1: Binding with ElementName__
 
 {{region xaml-gridview-troubleshooting-blank-cells_0}}
 	<telerik:GridViewComboBoxColumn Header="Category"
@@ -42,9 +42,11 @@ __SOLUTION__
 
 There are two ways of solving the issue : 
 
-1. Expose the ViewModel as a static resource on the page so that it can be easily accessible by the binding:
+## Setting the ItemsSource of GridViewComboBoxColumn
 
-#### __XAML__
+* Expose the ViewModel as a static resource on the page so that it can be easily accessible by the binding:
+
+#### __[XAML] Example 2: Exposing the ViewModel as a Static Resource__
 
 {{region xaml-gridview-troubleshooting-blank-cells_1}}
 	<UserControl.Resources>
@@ -52,9 +54,9 @@ There are two ways of solving the issue :
 	</UserControl.Resources>
 {{endregion}}
 
-2. Set the ItemsSource of the ComboBox column:
+* Set the ItemsSource of the ComboBox column:
 
-#### __XAML__
+#### __[XAML] Example 3: Setting the ItemsSource of GridViewComboBox declaratively__
 
 {{region xaml-gridview-troubleshooting-blank-cells_2}}
 	<telerik:GridViewComboBoxColumn Header="Category"
@@ -64,7 +66,7 @@ There are two ways of solving the issue :
 	SelectedValueMemberPath="CategoryID" />
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
 
 {{region cs-gridview-troubleshooting-blank-cells_3}}
 	private void gridView_DataLoaded(object sender, EventArgs e)
@@ -73,10 +75,26 @@ There are two ways of solving the issue :
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
 
 {{region vb-gridview-troubleshooting-blank-cells_3}}
 	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
 	    TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
 	End Sub
 {{endregion}}
+
+## Setting the IsLightWeightModeEnabled property
+
+As of __R2 2016__ GridViewComboBoxColumn exposes the IsLightWeightModeEnabled. When set to True, a completely new lookup logic is used which improves the performance of the column and could be a solution for a scenario when having empty cells in it. More information can be found in the [ComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) topic.
+
+## See also
+
+ * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%})
+ 
+ * [Handle SelectionChanged for ComboBoxColumn]({%slug gridview-columns-howto-selectionchanged-comboboxcolumn%})
+  
+ * [Filter items in ComboboxColumn]({%slug gridview-columns-how-to-filter-the-items-in-comboboxcolumn%})
+
+ * [Number of clicks in the ComboBoxColumn]({%slug gridview-combobox-column-clicks%})
+
+ * [ComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%})

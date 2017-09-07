@@ -68,5 +68,5 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Styling the RadRibbonToggleButton]({%slug radribbonview-styling-ribbontogglebutton%})

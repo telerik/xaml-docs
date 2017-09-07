@@ -40,6 +40,6 @@ For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber 
 	</telerik:RadGridView>
 {{endregion}}
 
-# See Also
+## See Also
 * [RadMaskedInput Overview]({%slug radmaskedinput-overview%})
 * [How to migrate from RadMaskedTextBox to RadMaskedInput]({%slug radmaskedinput-migrating%})

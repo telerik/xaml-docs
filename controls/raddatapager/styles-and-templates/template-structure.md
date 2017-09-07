@@ -92,7 +92,7 @@ Like most controls, __RadDataPager__ also allows you to template it in order to 
 
 * __[ContentControl]__ - displays the content of the button and is of type __ContentControl__.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatapager-visual-structure%})
 

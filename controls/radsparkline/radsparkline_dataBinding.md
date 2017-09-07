@@ -10,10 +10,6 @@ position: 3
 
 # DataBinding
 
-
-
-## 
-
 Databinding for the Sparkline control involves the correlation between the business logic/data, and the visualization of the control.
 
 The DataBinding  involves the following three properties:
@@ -52,8 +48,6 @@ Some of the implementations of these interfaces include:
 
 * [ObservableCollection](http://msdn.microsoft.com/en-us/library/ms668604.aspx)
 
-
-
 __1.Binding To Collection of Doubles__
 
 The following code snippets demonstrate how to databind RadSparkLine to generic List of double type
@@ -61,17 +55,13 @@ The following code snippets demonstrate how to databind RadSparkLine to generic 
 Create new *RadLinearSparkline* in XAML and turn on visibility for Indicators as follows:
 
 #### __XAML__
-
 {{region radsparkline_dataBinding_0}}
     <telerik:RadLinearSparkline Width="150" Height="50" x:Name="myLinearSparkline" ShowFirstPointIndicator="True" ShowLastPointIndicator="True" ShowHighPointIndicators="True" ShowLowPointIndicators="True"/>
-	{{endregion}}
-
-
+{{endregion}}
 
 Set the List as datasource for the SparkLine using the *ItemsSource *property of the RadLinearSparkline:
 
 #### __C#__
-
 {{region radsparkline_dataBinding_1}}
 	Random r = new Random();
 	List<double> myData = new List<double>();
@@ -80,12 +70,9 @@ Set the List as datasource for the SparkLine using the *ItemsSource *property of
 	myData.Add(r.Next(0,100));
 	}
 	myLinearSparkline.ItemsSource = myData;
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radsparkline_dataBinding_2}}
     Dim myLinearSparkline As New RadLinearSparkline()
     Dim r As New Random()
@@ -95,9 +82,7 @@ Set the List as datasource for the SparkLine using the *ItemsSource *property of
         Next i
 	
 	myLinearSparkline.ItemsSource = myData
-	{{endregion}}
-
-
+{{endregion}}
 
 The result is shown below:
 
@@ -108,7 +93,6 @@ __2.Binding To a List of Business Objects__
 If you have a list of business objects and you want to bind it to the RadSparkLine control here is how to do it:
 
 #### __XAML__
-
 {{region radsparkline_dataBinding_1}}
     <telerik:RadColumnSparkline x:Name="PART_SparkbarControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="400"
                                 ShowAxis="False"
@@ -124,12 +108,9 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
                                 ShowLastPointIndicator="True"
                                 ShowHighPointIndicators="True"
                                 ShowLowPointIndicators="True" />
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __C#__
-
 {{region radsparkline_dataBinding_2}}
     public partial class MainPage : UserControl 
     {
@@ -156,12 +137,9 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
         public double UnitCost { get; set; }
         public DateTime MyDate { get; set; }
     }
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radsparkline_dataBinding_3}}
     Partial Public Class MainPage
         Inherits UserControl
@@ -179,5 +157,4 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
         Public Property UnitCost() As Double
         Public Property MyDate() As Date
     End Class
-	{{endregion}}
-	{{endregion}}
+{{endregion}}

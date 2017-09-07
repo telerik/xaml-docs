@@ -38,7 +38,7 @@ You are able to remove items from the __RadGridView__ by manipulating the __Item
 
 Tha __RadGridView__ allows you to validate the data entered in the managed cells by applying custom validating rules. You can validate for each cell or you can validate the whole row at a time.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtreeliestview-getting-started%})
 

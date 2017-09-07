@@ -106,7 +106,7 @@ Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn
 The CheckBox is two-way bound to the IsActive boolean property so with single click you change it. The benefit here is that the CheckBox looks enabled, because it is in the CellTemplate while in the first approach the CheckBox looks disabled (because the cells are not in edit mode yet). 
 >The column is read-only, since this is a CheckBox with two-way binding and there is no need to enter the edit mode at all.
 
-# See Also
+## See Also
 
  * [CheckBox Column]({%slug gridview-checkbox-column%}) 
  

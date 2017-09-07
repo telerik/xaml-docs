@@ -230,7 +230,7 @@ If you want to get the parent item of the currently selected item, you should us
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Add Check Boxes (Radio Buttons) Next to Each Item]({%slug radtreeview-how-to-add-checkboxes-next-to-each-item%})

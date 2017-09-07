@@ -30,7 +30,7 @@ Read the following topics to learn more:
 
 * [Setting the OverlayStyle]({%slug radbusyindicator-styles-and-templates-setting-the-overlay-style%})
 
-# See Also
+## See Also
 
  * [Overview]({%slug radbusyindicator-overview%})
 

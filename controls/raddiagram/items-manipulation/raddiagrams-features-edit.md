@@ -11,7 +11,6 @@ position: 5
 # Items Editing
 
 __RadDiagram__ gives you the ability to edit the Content of its items. You can double-click items in order to edit them or use __DiagramCommands__. __RadDiagramShape__ and __RadDiagramConnection__ also provide __EditTemplates__ and __EditTemplateSelectors__. Please note that through the examples in the tutorial, __Telerik Windows8 theme__ is applied as an Application Theme.
-	  
 
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
 
@@ -20,7 +19,9 @@ __RadDiagram__ gives you the ability to edit the Content of its items. You can d
 By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality, you can use the __IsEditable__ property:		
 
 #### __XAML__	
+{{region radiagram-features-edit-0}}
 	<telerik:RadDiagram IsEditable="False">
+{{endregion}}
 
 ## Start Editing by Using Keyboard
 
@@ -46,7 +47,7 @@ __RadDiagram__ provides three predefined commands for editing the selected item 
 
 Consider the following code: 
 #### __XAML__
-{{region radiagram_features_edit_1}}
+{{region radiagram-features-edit-1}}
 	 <Grid>
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
@@ -97,6 +98,7 @@ __RadDiagram__ provides the following EditTemplates and EditTemplateSelectors:
 Below you can find example of basic EditTemplate of a Shape. Suppose we have a sample business object called DataItem:
 
 #### __C#__
+{{region radiagram-features-edit-2}}
 	public class DataItem : ViewModelBase
 	{
 		private string ipAddress;
@@ -110,8 +112,10 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 			}
 		}
 	}
+{{endregion}}
 
 #### __VB.NET__
+{{region radiagram-features-edit-3}}
 	Public Class DataItem
 		Inherits ViewModelBase
 		Private m_ipAddress As String
@@ -125,17 +129,22 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 			End Set
 		End Property
 	End Class
+{{endregion}}
 
 #### __C#__
+{{region radiagram-features-edit-4}}
 	this.shape.DataContext = new DataItem() { IpAddress = "5.5.5.5" };
+{{endregion}}
 
 #### __VB.NET__
+{{region radiagram-features-edit-5}}
 	Me.shape.DataContext = New DataItem() With { .IpAddress = "5.5.5.5" }
+{{endregion}}
 
 Now you can define __ContentTemplate__ and __EditTemplate__ like so:
 		
 #### __XAML__
-{{region radiagram_features_edit_0}}
+{{region radiagram-features-edit-6}}
 	 <Grid>
 	        <Grid.Resources>
 	            <DataTemplate x:Key="editTemplate">
@@ -170,7 +179,7 @@ Now you can define __ContentTemplate__ and __EditTemplate__ like so:
 In the picture below you can see the result of successful edit of the shape:
 ![Rad Diagrams-Features-Edit Template](images/RadDiagrams-Features-EditTemplate.png)
 
-# See Also
+## See Also
  * [Structure]({%slug raddiagram-structure%})
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})

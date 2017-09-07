@@ -604,13 +604,27 @@ function SearchForKeywords(keywords, fileInfo, wordDictionary, sortByTitle)
 
 
 $(document).ready(function(){ 
-
+     
 	$("#PageHeader").contents().filter(function () {
 		 return this.nodeType === 3; 
 	}).remove();
+   
+	var elemDiv = document.createElement('div');
+    elemDiv.className = "TK-Hat";
+
+    var logoContainer = document.createElement ('div');
+    logoContainer.className = "TK-Hat-Brand";
+    logoContainer.innerHTML = "<a href=\"https://www.progress.com\" class=\"TK-PRGS-Logo\" title=\"Progress \"> Progress</a>";
+
+    elemDiv.appendChild(logoContainer);
+    document.body.prepend(elemDiv);    
+
+    logoBar = document.createElement('div');
+    logoBar.id = "logo-bar";
+    logoBar.innerHTML = "<a href=\"http://docs.telerik.com/devtools/silverlight/\" class=\"t-logo\" title=\"Telerik UI for Silverlight \"> Telerik UI for Silverlight</a>";
 	
-	$( "#PageHeader" ).prepend( "<a href=\"http://docs.telerik.com/devtools/silverlight/\" class=\"t-logo\" title=\"Telerik UI for Silverlight \"> Telerik UI for Silverlight</a>" );
-	
+	$( "#PageHeader").prepend(logoBar);
+
 	var leftColum = $('#leftNav').height();
 	var rightColum = $('#TopicContent').height();
 	
@@ -619,5 +633,5 @@ $(document).ready(function(){
 	$('#leftNav').height(parseInt(maxHeight));
 	$('#TopicContent').height(parseInt(maxHeight));
 	
-	$(".toclevel0 a:last-child").first().text("Telerik UI for Silverlight Documented Class Library");
+$(".toclevel0 a:last-child").first().text("Telerik UI for Silverlight Documented Class Library");
 })

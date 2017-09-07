@@ -56,7 +56,7 @@ __Key features__ list includes:
 You can check __RadPivotGrid__ demos at:
      	{% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](http://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](http://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

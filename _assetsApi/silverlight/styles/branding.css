@@ -2,6 +2,7 @@
 html {
 	height: 100%;
 }
+
 body {
 	font-family: 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
 	font-size: 15px;
@@ -159,28 +160,79 @@ pre {
 	font-family: Consolas, Courier, monospace;
 	overflow: hidden;
 }
-.pageHeader {
-	font-family: 'Segoe UI' , Tahoma, Helvetica, Sans-Serif;
-	color: transparent;
-	text-indent: -1000px;
-	vertical-align: middle;
-	height: 29.1px;
-	background: #2a2d33 url("../icons/telerik_logo_sl.png") no-repeat scroll 1.7em 1.4em;
-	padding-bottom: 2em;
-    padding-top: 1.4em;
-	background-size: 334px;
+
+.TK-Hat {
+		padding-left: 15px;
+		padding-right: 15px;
+		border-bottom: 1px solid #eff0f1;
+		color: #4d4f52;
+		position: relative;
+		z-index: 42042;
+		font-family: 'Segoe UI' , Tahoma, Helvetica, Sans-Serif;
+		text-indent: -1000px;
+		vertical-align: middle;  
 }
+.TK-Hat::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.TK-Hat *,
+.TK-Hat:after,
+.TK-Hat:before {
+    box-sizing: border-box;
+}
+.TK-Hat-Brand {
+    float: left;
+    width: 150px;
+    margin: 0;
+}
+.TK-PRGS-Logo {
+	background: url("../icons/progress.svg") no-repeat scroll;
+	width: 150px;
+	height: 40px; 
+	background-size: 94px 40px;
+	background-repeat: no-repeat;
+    display: block;
+    outline: none!important;
+    text-decoration: none!important;
+    transition: color .1s linear, background .1s linear, opacity .1s linear;
+}
+.TK-PRGS-Logo:focus,
+.TK-PRGS-Logo:hover {
+    opacity: .75;
+}
+ 
+.pageHeader {
+	background: #2a2d33;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px; 
+    padding: 20px 15px;
+    z-index: 100;
+}
+
+#logo-bar {
+	float: left;
+} 
 
 .pageHeader a.t-logo {
+	background: #2a2d33 url("../icons/wpf-logo.svg") no-repeat scroll;
+	background-position: 0 0;
+	background-size: 242px 30px;
 	display: inline-block;
-    height: 35px;
-    width: 334px;
-	margin-left: -136px;
+    height: 30px;
+    width: 242px; 
+	text-indent: -1000px;
+}
+#page-header:after, #PageHeader::after {
+    clear: both;
+    content: "";
+    display: block;
 }
 
-.pageHeader a.t-logo span {
-	display: none;
-}
+#page-header a, #PageHeader a {
+    text-decoration: none;
+} 
 
 .pageBody {
 	padding: 0px;

@@ -36,7 +36,9 @@ As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __Vis
 For example:
 
 __Before__
+
 #### __C#__
+{{region cs-radgridview-backward-compatibility_15}}
 	private void radGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
     {
         e.Background = Colors.Red;
@@ -48,6 +50,7 @@ __Before__
         e.TextAlignment = TextAlignment.Center;
         e.VerticalAlignment = VerticalAlignment.Bottom;
     }
+{{endregion}}
 
 __After__
 

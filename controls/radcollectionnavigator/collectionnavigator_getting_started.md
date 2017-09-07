@@ -49,7 +49,7 @@ __Figure 1__ shows the final result:
 
 ![RadCollectionNavigator bound to a ListBox](images/collectionnavigator-getting-started.jpg)
 
-# See Also
+## See Also
 
 * [Overview]({%slug collectionnavigator_overview%})
 

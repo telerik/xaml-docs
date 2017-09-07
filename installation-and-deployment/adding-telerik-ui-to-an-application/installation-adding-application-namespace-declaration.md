@@ -76,7 +76,7 @@ Or you can select it from the IntelliSense in XAML.![Common Installing Namespace
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies%}).
 
-# See Also
+## See Also
 
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})
 

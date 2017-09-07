@@ -19,24 +19,27 @@ position: 0
 
 Thank you for choosing __RadBusyIndicator__!
 
-![](images/radbusyindicator_overview_busyindicator_screenshot.png)
+__RadBusyIndicator__ enables you to display a notification whenever a longer-running process is being handled by the application. This makes the UI more informative and the user experience smoother.
 
-Telerik __RadBusyIndicator__ enables you to display a notification whenever a longer-running process is being handled by the application. This makes the UI more informative and the user experience smoother.
+![](images/radbusyindicator-overview-0.png)
 
-This is a list with short descriptions of the top-of-the-line features of Telerik's __RadBusyIndicator__ control:
+## Key Features
 
-* __Progress Determination__ - The Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight {% endif %} __BusyIndicator__ control can display a visual indication for either determinate or indeterminate processes. [Read more]({%slug radbusyindicator-features-progress-determination%})
+This is a list with short descriptions of the top-of-the-line features of the __RadBusyIndicator__ control:
 
-* __Progress Detection__ - With the __BusyIndicator’s__ rich API model you can easily detect the progress and present the progress value. [Read more]({%slug radbusyindicator-features-report-progress-value%})
+* __Progress Determination__: RadBusyIndicator can display a visual indication for either determinate or indeterminate processes. Read more about this in the [Progress Determination]({%slug radbusyindicator-features-progress-determination%}) article.
 
-* __Styling and Appearance__ - Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight {% endif %} __BusyIndicator__ can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the control. [Read more]({%slug radbusyindicator-styles-and-templates-overview%})
+* __Progress Detection__: The control provides a rich API model which can be used to easily detect the progress and present the progress value. Read more about this in the [Report Progress Value]({%slug radbusyindicator-features-report-progress-value%}) article.
 
-* __Delayed Start__ - You can set the preferred delay timespan, after which the __BusyIndicator__ will start. [Read more]({%slug radbusyindicator-features-delayed-display%})
+* __Delayed Start__: You can set the preferred delay timespan, after which the __BusyIndicator__ will start. Read more about this in the [Delayed Display]({%slug radbusyindicator-features-delayed-display%}) article.
 
-# See Also
+* __Theming__: As any other control from the UI for {{ site.framework_name }} suite, RadBusyIndicator comes with different themes. Read more about this in the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section of the documentation. 
 
+>tip Get started with the control with its [Getting Started]({%slug radbusyindicator-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#BusyIndicator/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+
+## See Also
  * [Visual Structure]({%slug radbusyindicator-visual-structure%})
-
  * [Getting Started]({%slug radbusyindicator-getting-started%})
-
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})

@@ -23,8 +23,6 @@ You declare a custom header for a column (__Example 1__):
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
 
-
-
 As a result, the __Foreground__ color of the custom header does not change on mouse hover (__Figure 1__ ), sorting, etc.		
 
 __Figure 1:__ The __Foreground__ color of the custom header does not change, when the column is hovered.
@@ -38,12 +36,9 @@ Your custom header is not automatically bound to the default theme's __Foregroun
 __SOLUTION__
 
 You can bind the __Foreground__ property of the custom header(in this example this is a __TextBlock__) to the __Foreground__ property of the control containing the content of the __GridViewHeaderCell__(__Example 2__ ). In this case the container is a __ContentControl__ with __x:Name="ContentPresenter"__, which is located in the default __GridViewHeaderCellTemplate__. You can observe the result in __Figure 2__.
-		
-
-#### __[XAML] Example 2: Final declaration of a custom header__
 
 {% if site.site_name == 'WPF' %}
-
+#### __[XAML] Example 2: Final declaration of a custom header__
 {{region xaml-gridview-troubleshooting-styling-custom-header_1}}
 	<telerik:GridViewDataColumn.Header>
 	    <TextBlock Foreground="{Binding Foreground,
@@ -52,13 +47,10 @@ You can bind the __Foreground__ property of the custom header(in this example th
 	TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
-
 {% endif %}
-
 {% if site.site_name == 'Silverlight' %}
-
+#### __[XAML] Example 2: Final declaration of a custom header__
 {{region gridview-troubleshooting-styling-custom-header_1}}
-
 	<telerik:GridViewDataColumn.Header>
     <TextBlock Foreground="{Binding Foreground,
                RelativeSource={RelativeSource AncestorType=UserControl}}"
@@ -66,11 +58,7 @@ You can bind the __Foreground__ property of the custom header(in this example th
                TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
-
 {% endif %}
-
-
 
 __Figure 2:__ The __Foreground__ color of the custom header now changes, when the column is hovered.
 ![gridview-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)
-

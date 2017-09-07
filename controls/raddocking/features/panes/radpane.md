@@ -71,12 +71,14 @@ Here is a sample XAML code, showing you how to add two __RadPane__ instances to 
 	radPane1.Header = "Document 1"
 	Dim textBlock As New TextBlock()
 	textBlock.Text = "Some simple text here"
-	radPane1.Content = textBlock
+	radPane1.Content = textBlock
+
 	Dim radPane2 As New RadPane()
 	radPane2.Header = "Document 2"
 	textBlock = New TextBlock()
 	textBlock.Text = "Some simple text here"
-	radPane2.Content = textBlock
+	radPane2.Content = textBlock
+
 	RadPaneGroup.Items.Add(radPane1)
 	RadPaneGroup.Items.Add(radPane2)
 {{endregion}}
@@ -144,9 +146,11 @@ The major control elements of a the standard __RadPane__ are:
 
 ## Closing RadPane instances
 
-Each __RadPane__ is closable by default via the Close button or the "Hide" menu shown on the snapshots above.
+Each __RadPane__ is closable by default via the **Close** button or the **Hide** menu item shown on the snapshots above.
         
 You can also hide/show your __RadPane__ instances programmatically using the boolean __RadPane__'s property __IsHidden.__ When a __RadPane__ is closed it is actually hidden and you can always make it visible again when needed.
+
+>When you set the **IsHidden** property of a **RadPane** to **True** or close it, it is actually removed from the visual tree.
         
 #### __XAML__
 
@@ -234,7 +238,7 @@ The next example will demonstrate how you could activate (focus) a RadPane witho
 
 >tipYou can also check the article about the [PaneActivationMode]({%slug raddocking-features-panes-activation-mode%}) property of __RadDocking__ - it indicates which __RadPane__ should be activated when the current active one is closed. By default the next non-disabled and visible __RadPane__ in the PaneGroup is activated.
           
-# See Also
+## See Also
 
  * [RadDocumentPane]({%slug raddocking-panes-raddocumentpane%})
 

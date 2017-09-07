@@ -23,6 +23,7 @@ The __Graph Colorizer__ has two major properties:
 The following example will demonstrate how you can color the RadMap using the Graph Colorizer
 
 #### __XAML__
+{{region radmap-visualization-layer-graph-colorizer-0}}	
 	<telerik:RadMap x:Name="radMap">
 		<telerik:RadMap.Provider>
 			<telerik:EmptyProvider />
@@ -47,8 +48,10 @@ The following example will demonstrate how you can color the RadMap using the Gr
 			</telerik:VisualizationLayer.Colorizer>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
+{{endregion}}
 
 #### __C#__
+{{region radmap-visualization-layer-graph-colorizer-1}}	
 	GraphColoriser colorizer = new GraphColoriser();
 	colorizer.ShapeFillCollection.Add(new MapShapeFill()
 	{
@@ -89,8 +92,10 @@ The following example will demonstrate how you can color the RadMap using the Gr
 	});
 
 	this.visualizationLayer.Colorizer = colorizer;
+{{endregion}}
 
 #### __VB__
+{{region radmap-visualization-layer-graph-colorizer-2}}	
 	Dim colorizer As New GraphColoriser()
 	colorizer.ShapeFillCollection.Add(New MapShapeFill() With { 
 	  Key .Fill = New SolidColorBrush(Colors.Green), 
@@ -125,6 +130,7 @@ The following example will demonstrate how you can color the RadMap using the Gr
 	})
 
 	Me.visualizationLayer.Colorizer = colorizer
+{{endregion}}
 
 The result can be seen below:
 

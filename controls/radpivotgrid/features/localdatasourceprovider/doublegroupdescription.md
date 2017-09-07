@@ -71,7 +71,7 @@ With the Q1 2015 release version of UI for {% if site.site_name == 'WPF' %}WPF{%
 
 ![Rad Pivot Grid Features Double Group 02](images/RadPivotGrid_Features_DoubleGroup_02.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

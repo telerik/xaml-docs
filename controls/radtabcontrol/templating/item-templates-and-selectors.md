@@ -270,16 +270,17 @@ Override the __SelectTemplate__ method and implement your custom logic in it. Th
 >tipYou can define your __DataTemplates__ in the Application’s resources (__App.xaml__), so you can easily access them  from the __ItemSelector:__
 
 #### __C#__
-    DataTemplate dataTemplate = ( DataTemplate )Application.Current.Resources[ "DataTemplateKey" ];
-		  
+{{region radtabcontrol-item-templates-and-selectors_10}}
+    DataTemplate dataTemplate = ( DataTemplate )Application.Current.Resources["DataTemplateKey"];
+{{endregion}}
+
 #### __VB.NET__
+{{region radtabcontrol-item-templates-and-selectors_11}}
     Dim dataTemplate As DataTemplate = DirectCast(Application.Current.Resources("DataTemplateKey"), DataTemplate)
-		  
+{{endregion}}
 
 
-
-Define the created selector as a resource in your XAML and set it to the __ItemTemplateSelector__ property.
-		
+Define the created selector as a resource in your XAML and set it to the __ItemTemplateSelector__ property.		
 
 #### __XAML__
 
@@ -293,12 +294,8 @@ Define the created selector as a resource in your XAML and set it to the __ItemT
 ![](images/RadTabControl_Figure_00500.png)
 
 >The same approach is used when creating __StyleSelectors__ (for example for the __ItemContainerStyleSelector__ property); just derive your selector class from __StyleSelector__, instead of __DataTemplateSelector__.
-		  
 
-# See Also
-
+## See Also
  * [Tab Item Templates]({%slug radtabcontrol-templating-tabs-templates%})
-
  * [Choose Header Template by Custom Logic]({%slug radtabcontrol-templating-custom-header-template%})
-
  * [Templating Overview]({%slug radtabcontrol-templating-overview%})

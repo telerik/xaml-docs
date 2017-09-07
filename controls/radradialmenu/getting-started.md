@@ -68,7 +68,7 @@ Here is a simple example demonstrating how to declare a __RadRadialMenu__ instan
 
 For further reference check [RadRadialMenu as a ContextMenu]({%slug radradialmenu-features-contextmenu%}) topic.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radradialmenu-getting-started%})
 

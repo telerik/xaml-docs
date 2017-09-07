@@ -20,7 +20,7 @@ __RadAutoCompleteBox__ provides the following properties for styling and templat
 
 * __BoxesItemStyleSelector__ - introduced with the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, you can use the __BoxesItemStyleSelector__ property to provide a way to easily apply styles based on some custom logic and thus to customize the items that are inside the boxes part of the control. You could use the style selector when you have more that one style defined for the same type of objects. In order to create a style selector, you need to create a class that inherits the __StyleSelector__ and override the __SelectStyle__ method - it should return the desired style based on the implemented custom logic.
 
-# See Also
+## See Also
 
  * [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%})
  

@@ -50,6 +50,6 @@ In this scenario, if the RadScheduleView control is resized so that the extend i
 
 ![Configurate TimeRuler 02](images/radscheduleview_end_user_capabilities_configurate_timeRuler_02.png)
 
-# See Also
+## See Also
 
  * [ScheduleView Overview]({%slug radscheduleview-overview%})

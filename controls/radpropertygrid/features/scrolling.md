@@ -118,7 +118,7 @@ To guarantee that such operations will be successfully executed, both root and n
 
 For sample code on how to perform the scroll please refer to the [ScrollIntoViewAsync section](#the-scrollintoviewasync-method) above.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpropertygrid-getting-started-getting-started%})
 

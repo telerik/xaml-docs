@@ -60,7 +60,6 @@ The headers will be still draggable, but when you drop them nothing will happen.
 The order of the columns may also be configured by setting the __DisplayIndex__ property of each of them:
 
 #### __[XAML] Example 3: Reorder using DisplayIndex__
-
 {{region xaml-gridview-columns-reordering-columns_2}}
 	<telerik:RadGridView.Columns>
 	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" DisplayIndex="0"/>
@@ -76,20 +75,17 @@ In this case the columns will be visualized in the following order - Name, Count
 The default scrolling behavior of __RadGridView__ while dragging its columns can be modified by configuring the __ScrollingSettingsBehavior__.
 
 #### __[XAML] Example 4: Using the ScrollingSettingsBehavior__
- 
+ {{region xaml-gridview-columns-reordering-columns_3}}
 	<telerik:RadGridView x:Name="radGridView" 
                      ScrollViewer.HorizontalScrollBarVisibility="Visible"
                      telerik:ScrollingSettingsBehavior.IsEnabled="True"
                      telerik:ScrollingSettingsBehavior.ScrollAreaPadding="5 20 5 20"
                      telerik:ScrollingSettingsBehavior.ScrollStep="1.5"
                      telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5"/>
-
+{{endregion}}
 
 To learn more read the [Scrolling]({%slug gridview-scrolling%}) topic.
 
-
-# See Also
-
+## See Also
  * [Frozen Columns]({%slug gridview-columns-frozen-columns%})
-
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})

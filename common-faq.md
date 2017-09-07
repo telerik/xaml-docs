@@ -10,9 +10,9 @@ position: 3
 
 # Getting Started
 
-Before proceed reading the __Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ documentation we recommend that you check the fundamental concepts of {% if site.site_name == 'WPF' %}__Windows Presentation Foundation (WPF)__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %}. This article contains basic information about the {% if site.site_name == 'WPF' %}__WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %} framework and tells you where to find relevant information about its features.
+Before proceed reading the __Telerik UI for {{ site.framework_name }}__ documentation we recommend that you check the fundamental concepts of {% if site.site_name == 'WPF' %}__Windows Presentation Foundation (WPF)__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %}. This article contains basic information about the {% if site.site_name == 'WPF' %}__WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %} framework and tells you where to find relevant information about its features.
 
-## __Overview__ 
+## Overview
 
 {% if site.site_name == 'WPF' %}
 __Windows Presentation Foundation__ provides a unified programming model for building Windows smart client user experiences that incorporate UI, media, and documents. 
@@ -26,7 +26,7 @@ __Microsoft Silverlight__ is a cross-browser, cross-platform implementation of t
 >important For more information, see the [Silverlight Overview](http://msdn.microsoft.com/en-us/library/bb404700(VS.95).aspx) MSDN article.
 {% endif %}
 
-The following sections describe the most basic features of the {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} framework.
+The following sections describe the most basic features of the {{ site.framework_name }} framework.
 
 * [XAML (Extensible Application Markup Language)](#xaml-extensible-application-markup-language)
 * [Assemblies and Namespaces in .NET](#assemblies-and-namespaces-in-net)
@@ -44,7 +44,7 @@ The following sections describe the most basic features of the {% if site.site_n
 
 ## XAML (Extensible Application Markup Language)
 
-__Extensible Application Markup Language__ (XAML) is an __XML-based markup language__ that is used to construct the visual appearance of an application. XAML to {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} what HTML is to web. You can find details on XAML concepts and how to use the language in your applications in the {% if site.site_name == 'WPF' %}[XAML Overview](http://msdn.microsoft.com/en-us/library/ms752059.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[XAML Overview](https://msdn.microsoft.com/en-us/library/cc189054(VS.95).aspx){% endif %} MSDN article. {% if site.site_name == 'WPF' %}See also the [WPF Architecture](http://msdn.microsoft.com/en-us/library/ms750441.aspx) MSDN article.{% endif %}
+__Extensible Application Markup Language__ (XAML) is an __XML-based markup language__ that is used to construct the visual appearance of an application. XAML to {{ site.framework_name }} what HTML is to web. You can find details on XAML concepts and how to use the language in your applications in the {% if site.site_name == 'WPF' %}[XAML Overview](http://msdn.microsoft.com/en-us/library/ms752059.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[XAML Overview](https://msdn.microsoft.com/en-us/library/cc189054(VS.95).aspx){% endif %} MSDN article. {% if site.site_name == 'WPF' %}See also the [WPF Architecture](http://msdn.microsoft.com/en-us/library/ms750441.aspx) MSDN article.{% endif %}
 
 ## Assemblies and Namespaces in .NET
 
@@ -80,7 +80,7 @@ With the help of __IValueConverter__, you can apply custom logic to a binding. T
 
 ## Commanding
 
-The {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} framework supports a commanding input mechanism whose purpose is to separate the logic that executes the command from the object that invokes the command. The most common use of commands is the avoid using events and code-behind. Instead, the command and its logic are defined in the view model and then bound to the visual element in the UI. For more information, see the {% if site.site_name == 'WPF' %}[Commanding Overview](https://msdn.microsoft.com/en-us/library/ms752308(v=vs.110).aspx){% endif %}{% if site.site_name == 'Silverlight' %}[ICommandInterface](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.95).aspx){% endif %} MSDN article{% if site.site_name == 'Silverlight' %} and the 
+The {{ site.framework_name }} framework supports a commanding input mechanism whose purpose is to separate the logic that executes the command from the object that invokes the command. The most common use of commands is the avoid using events and code-behind. Instead, the command and its logic are defined in the view model and then bound to the visual element in the UI. For more information, see the {% if site.site_name == 'WPF' %}[Commanding Overview](https://msdn.microsoft.com/en-us/library/ms752308(v=vs.110).aspx){% endif %}{% if site.site_name == 'Silverlight' %}[ICommandInterface](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.95).aspx){% endif %} MSDN article{% if site.site_name == 'Silverlight' %} and the 
 [Command Support]({%slug common-command-support%}) article{% endif %}.
 
 ## Styles and Templates

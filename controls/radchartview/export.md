@@ -12,15 +12,11 @@ position: 4
 
 The __RadChartView__ suite does not have a built-in functionality for exporting the chart, but there are several ways that you can utilize to achieve that. 
 
-
 ## Export RadChartView to PDF
-
 
 You can export the charting components using the __ExportUIElement__ example which implements exporting of UIElements with the [RadPdfProcessing]({%slug radpdfprocessing-overview%}) library. You can read about the example in the [Export Support]({%slug common-export-support %}) common article.
 
-
 >You can find a runnable example in our [GitHub](https://github.com/telerik/xaml-sdk) repository: [Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement).
-
 
 ## Export RadChartView to Image
 
@@ -29,18 +25,22 @@ You can export the chart to an image using the __Telerik.Windows.Media.Imaging.E
 The following code snippets demonstrate how to use the ExportToImage() method.
 
 #### __XAML__
+{{region radchartview-export-0}}
 	<telerik:RadCartesianChart x:Name="chart" />
-	
+{{endregion}}
+
 #### __C#__
+{{region radchartview-export-1}}
 	string filename = "ExportedChart.png"; 
 	using (Stream fileStream = File.Open(filename, FileMode.OpenOrCreate))
 	{
 		Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(this.chart, fileStream, new PngBitmapEncoder());
 	}
+{{endregion}}
 
 >tip The ExportToImage() method expects that the UI element which will be exported is __measured and arranged__ - otherwise, an exception will be thrown.
 
-# See Also
+## See Also
 * [Overview]({%slug radchartview-overview %})
 * [Getting Started]({%slug radchartview-introduction %})
 * [SDK Examples]({%slug radchartview-sdk-examples %})

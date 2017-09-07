@@ -17,9 +17,11 @@ __Telerik Diagramming Framework__ supports __UI Virtualization__, which collapse
 By default the __Virtualization__ feature of the __RadDiagram__ is enabled. You can disable it by setting the __DiagramSurface.IsVirtualizing__ attached property to False.
 		
 #### __XAML__	
+{{region raddiagram-features-virtualization-0}}
     <telerik:RadDiagram x:Name="diagram" telerik:DiagramSurface.IsVirtualizing="False"/>	  		  
+{{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

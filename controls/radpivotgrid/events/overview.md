@@ -159,7 +159,7 @@ The event can be used in order to add and/or remove nodes from the tree.
 
 >tipFor more details on how to add/remove nodes from the FieldTree you can check the following example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples is listed as __PivotGrid / CustomizeFieldTree__.              
 
-# See Also
+## See Also
 
  * [Layouts]({%slug radpivotgrid-features-layouts%})
 

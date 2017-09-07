@@ -48,7 +48,7 @@ And here is a snapshot of the result.
 
 ![Rad Menu-Features-Input Gesture Text-01](images/RadMenu_Features_InputGestureText_01.png)
 
-# See Also
+## See Also
 
  * [Commands]({%slug radmenu-features-commands%})
 

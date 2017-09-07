@@ -48,7 +48,7 @@ These two templates contain a control that represents __RadDataFilter's__ UI - t
 To learn how to style __FilterControl__ you can read [this topic]({%slug raddatafilter-styles-and-templates-styling-the-filtercontrol%}).
         
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug raddatafilter-styles-and-templates-template-structure%})
 

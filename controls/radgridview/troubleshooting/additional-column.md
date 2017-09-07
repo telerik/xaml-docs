@@ -50,7 +50,7 @@ Now, the result would be:
 
 ![](images/troubleshooting_additional_column_gridview_fix2.png)
 
-# See Also
+## See Also
 * [Columns Overview]({%slug gridview-columns-overview%})
  
 

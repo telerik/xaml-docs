@@ -149,7 +149,7 @@ You can disable the floating functionality of a RadPane via the boolean property
 	radPane.CanFloat = False
 {{endregion}}
 
-# See Also
+## See Also
 
  * [RadPane]({%slug raddocking-panes-radpane%})
 

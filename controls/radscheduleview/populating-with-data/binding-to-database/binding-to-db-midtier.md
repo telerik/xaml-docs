@@ -86,6 +86,6 @@ Once the domain service class is added, rebuild the project as well. Let’s add
 	}
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Silverlight Part]({%slug radscheduleview-populating-with-data-binding-to-db-silverlight%})

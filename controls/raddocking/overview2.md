@@ -11,19 +11,19 @@ position: 0
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RadDocking_Overview_010.png)
+![RadDocking for Silverlight](images/RadDocking_Overview_010.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RadDocking_Overview_020_WPF.png)
+![RadDocking for WPF](images/RadDocking_Overview_020_WPF.png)
 {% endif %}
 
-Thank you for choosing Telerik RadDocking!
+Thank you for choosing Telerik ® RadDocking!
 
-Are you comfortable handling multiple windows in your application? Save yourself the hassle with __RadDocking__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} – a docking system like the one in Microsoft Visual Studio. You get the dockable ToolWindows, a hidden DockingManager control, and a designer to make the creation of attractive layouts easy.
+Are you comfortable handling multiple windows in your application? Save yourself the hassle with __RadDocking__ for {{ site.framework_name }} – a docking system like the one in Microsoft Visual Studio. You get the dockable ToolWindows, a hidden DockingManager control, and a designer to make the creation of attractive layouts easy.
         
 ![Rad Docking Overview](images/RadDocking_Overview.png)
 
-__RadDocking__ key features list: 
+__RadDocking__'s key features include: 
 
 * __Save/Load Layout__
 
@@ -47,16 +47,19 @@ __RadDocking__ key features list:
 
 * __Codeless Test Automation for Docking__
 
-A complete list with all the key features can be found [here]({%slug raddocking-key-features%})
+The complete list of features can be found [here]({%slug raddocking-key-features%}).
 
 {% if site.site_name == 'Silverlight' %}
-Check out the online demo at: [http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook](http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook)
+Check out the online demos available at: [http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook](http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-Check out the online demo at: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)
+Check out the online demos available at: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}
-In the following video, we will look at some of the features and functionality in Telerik RadDocking for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:13)
-[![](images/Docking_Getting_Started.png)](http://tv.telerik.com/silverlight/video/introduction-raddocking-silverlight)
-{% endif %}
+## See Also
+
+* [Getting Started]({%slug raddocking-getting-started2%})
+* [Pane Groups]({%slug raddocking-features-pane-groups%})
+* [Split Container]({%slug raddocking-features-split-container%})
+* [Tool Window]({%slug raddocking-features-tool-window%})
+* [RadDocking API Reference](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_raddocking.htm)

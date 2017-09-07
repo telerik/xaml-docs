@@ -143,5 +143,5 @@ The final result should be similar to the following one:
 
 ![Rad Color Picker How To Data Binding Object](images/RadColorPicker_HowTo_DataBinding_Object.png)
 
-# See Also
+## See Also
  * [Customize the PaletteViewItem's ToolTip]({%slug radcolorpicked-howto-custom-tooltip%})

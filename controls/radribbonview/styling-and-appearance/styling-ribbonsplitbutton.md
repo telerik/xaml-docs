@@ -117,7 +117,7 @@ and when the popup is visible:
 
 {% endif %}          
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the RadRibbonTab]({%slug radribbonview-styling-ribbontab%})
  * [Styling the RadRibbonGroup]({%slug radribbonview-styling-ribbongroup%})

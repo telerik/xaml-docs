@@ -31,7 +31,7 @@ As the __RadTreeListView__ inherits the __RadGridView__, it uses the same stylin
 
 >As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for __RadGridView__ and __RadTreeListView__. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radtreelistview-visual-structure%})
 

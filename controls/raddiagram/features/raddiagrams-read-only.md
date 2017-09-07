@@ -47,7 +47,7 @@ Here is the list of properties that control the read-only state of the diagram i
 	* __Multiple__ – selecting items on each click and with Rectangle selection tool.
 	* __Extended__ – selecting items with CTRL or using Rectangle selection tool.				
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

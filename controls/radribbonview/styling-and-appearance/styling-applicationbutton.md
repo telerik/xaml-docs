@@ -121,7 +121,7 @@ After clicking 'OK', Expression Blend will generate the default template of the 
 
 	* __DisabledIndicator__ - is a __Rectangle__ that represents the background of the __ApplicationButton__, when it is disabled(__ApplicationMenu/BackstageMenu__)
 
-# See Also
+## See Also
  * [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})

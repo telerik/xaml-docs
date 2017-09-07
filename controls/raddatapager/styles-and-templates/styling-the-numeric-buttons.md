@@ -245,7 +245,7 @@ Here is the default XAML for the numeric buttons' __Style__ and its resources.
 
 
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug raddatapager-styles-and-templates-template-structure%})
 

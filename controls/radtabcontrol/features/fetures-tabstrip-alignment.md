@@ -32,6 +32,6 @@ The RadTabControl exposes an __Align__ property of type __TabStripAlign__ enumer
 >If there is not enough space available, the RadTabItems are arranged like Justify is chosen. Hence, parts of the items can be clipped. In such cases you can consider using [multi-line tabs]({%slug radtabcontrol-features-multiline-tabs%}).
 		  
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radtabcontrol-visual-structure%})

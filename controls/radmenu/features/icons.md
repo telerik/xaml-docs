@@ -101,7 +101,7 @@ The result is the same.
 
 ![](images/RadMenu_Features_Icons_01.png)
 
-# See Also
+## See Also
 
  * [Checkable Items]({%slug radmenu-features-checkable-items%})
 

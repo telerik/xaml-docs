@@ -47,7 +47,7 @@ The __ChartLegend__ element contains a header, where explanation text is shown a
 
  ![](images/RadChart_GeneralInformation_VisualStructure_04.png)
 
-# See Also
+## See Also
 
  * [Key Features]({%slug radchart-overview-key-features%})
 

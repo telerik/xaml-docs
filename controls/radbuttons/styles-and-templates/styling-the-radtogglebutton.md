@@ -88,7 +88,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __RadToggleButtonStyle__ - the default __Style__ for the __RadToggleButton__.
 
-# See Also
+## See Also
  * [Toggle Button]({%slug radbuttons-features-toggle-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

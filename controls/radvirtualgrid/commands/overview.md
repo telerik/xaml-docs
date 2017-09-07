@@ -41,6 +41,12 @@ All supported commands are defined in the __RadVirtualGridCommands__ class and a
 *	__MovePageUp, MovePageDown__: Moves the focus to the cell situated one viewport away from the current cell.
 
 *	__MoveTop, MoveBottom__: Moves the focus to the cell situated in the first/last item.
+
+*   __PinRowTop, PinRowBottom__: Pins a row at the top/bottom.
+
+*   __PinColumnLeft, PinColumnRight__: Pins a column to the left/right.
+
+*   __UnpinRow, UnpinColumn__: Unpins a row/column.
 	
 *	__SelectCurrentItem__: Selects the current item.
 

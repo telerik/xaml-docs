@@ -10,18 +10,18 @@ position: 3
 
 # RadOpenFileDialog
 
-__RadOpenFileDialog__ is modal dialog box that allows you to specify one or multiple filenames to open.
+__RadOpenFileDialog__ is a modal dialog box that allows you to specify one or multiple filenames to open.
 
 #### __Figure 1: RadOpenFileDialog in single selection mode__ 
 ![](images/radopenfiledialog-01.png)
 
-## Show the dialog
+## Showing the dialog
 
-To show the dialog call its __ShowDialog__ method. If a valid file is opened, the __DialogResult__ property will return True and the __FileName__, and __FileNames__ properties will be set. You can use FileName and FileNames to get the names of the selected items.
+To show the dialog call its __ShowDialog__ method. If a valid file is opened when you press OK, the __DialogResult__ property will return True and the __FileName__, and __FileNames__ properties will be set. You can use FileName and FileNames to get the names of the selected items.
 
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
-#### __[C#] Example 1: Show a file dialog__
+#### __[C#] Example 1: Show a open file dialog__
 {{regiond radfiledialogs-radopenfiledialog-0}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
@@ -32,9 +32,9 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened, th
 	}
 {{endregiond}}
 
-## Open the selected file
+## Opening the selected file
 
-You can open a read-only stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
+You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
 #### __[C#] Example 2: Open a file stream__
 {{regiond radfiledialogs-radopenfiledialog-1}}
@@ -47,7 +47,7 @@ You can open a read-only stream for the selected file using the __OpenFile__ met
 	}
 {{endregiond}}
 
-## Enable multiple selection
+## Enabling multiple selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
@@ -61,7 +61,7 @@ The dialog supports single and multiple selection modes. By default you can sele
 #### __Figure 2: Multiple selection__ 
 ![](images/radopenfiledialog-02.png)
 
-## Work with the selected files
+## Working with the selected files
 
 You can get the paths of the selected files via the __FileName__ and __FileNames__ properties. Note that the properties are empty until the DialogResult is valid. When you open file(s) the properties will return the corresponding paths.
 
@@ -80,8 +80,10 @@ You can get only the name of the selected files, without the full path, via the 
 	}
 {{endregiond}}
 
+The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
+
 ## See Also
-* [Visual Structure]()
-* [RadOpenFolderDialog]()
-* [RadSaveFileDialog]()
-* [Events]()
+* [Visual Structure]({%slug radfiledialogs-visual-structure%})
+* [RadOpenFolderDialog]({%slug radfiledialogs-radopenfolderdialog%})
+* [RadSaveFileDialog]({%slug radfiledialogs-radsavefiledialog%})
+* [Events]({%slug radfiledialogs-events%})

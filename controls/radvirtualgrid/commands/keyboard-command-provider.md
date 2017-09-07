@@ -10,7 +10,7 @@ position: 2
 
 # Keyboard Command Provider
 
-__RadVirtualGrid__ executes a certain set of commands for a given navigation scenario. This default consequences of commands can be altered by either implementing the __IKeyboardCommandProvider__ interface, or by inheriting the __DefaultKeyboardCommandProvider__ object. The first approach would be quite laborious, as all commands will have to be predefined. When only a certain keyboard scenario needs to be modified, utilizing the __DefaultKeyboardCommandProvider__ would be more appropriate.  
+__RadVirtualGrid__ executes a certain set of commands for a given navigation scenario. This default consequences of commands can be altered by either implementing the __IKeyboardCommandProvider__ interface or by inheriting the __DefaultKeyboardCommandProvider__ object. The first approach would be quite laborious, as all commands will have to be predefined. When only a certain keyboard scenario needs to be modified, utilizing the __DefaultKeyboardCommandProvider__ would be more appropriate.  
 
 The following code snippet illustrates a possible implementation of such custom KeyboardCommandProvider.
 

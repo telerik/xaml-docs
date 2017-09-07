@@ -27,6 +27,6 @@ There are a number of ways you can customize the look & feel of your __RadTabCon
 
 * Use the built-in [Templates]({%slug radtabcontrol-templating-overview%}) mechanism if you want to completely change the appearance of your __RadTabControl__.					
 
-# See Also
+## See Also
  * [Templating]({%slug radtabcontrol-templating-overview%})
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

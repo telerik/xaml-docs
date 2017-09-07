@@ -98,7 +98,7 @@ __Figure 3: Repeat Table Header Rows button in the Table Tools contextual menu__
 
 
 
-# See Also
+## See Also
 
 * [Table]({%slug radrichtextbox-features-document-elements-tables%})
 

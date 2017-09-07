@@ -133,7 +133,7 @@ This way configured, the two buttons are ready to bring to front or sent to back
 Here is the result of selecting the shape with ZIndex = 1 and clicking the left button:
 ![raddiagrams-features-zindex-bringup 2](images/raddiagrams-features-zindex-bringup2.png)
 
-# See Also
+## See Also
  * [Structure]({%slug raddiagram-structure%})
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})

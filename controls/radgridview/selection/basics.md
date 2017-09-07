@@ -104,7 +104,7 @@ To learn more about the selection events go to [this help topic]({%slug gridview
 
 To modify the selection color you have to modify the style of the __RadGridView__ rows. To learn more about how to do it take a look at the [Styling a Row]({%slug gridview-styling-a-row%}) topic.
 
-# See Also
+## See Also
 
  * [Multiple Selection]({%slug gridview-multiple-selection%})
 

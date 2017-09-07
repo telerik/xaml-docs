@@ -77,6 +77,6 @@ To handle the changes in the position of the item you can subscribe to the __Ite
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})
  * [Visual Structure]({%slug radoutlookbar-visual-structure%})

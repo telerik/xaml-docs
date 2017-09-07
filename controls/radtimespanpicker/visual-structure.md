@@ -25,7 +25,7 @@ This article describes all the visual elements and terms used in __RadTimeSpanPi
 * __Clear Button__ - is a RadButton that clears the currently selected value of __RadTimeSpanPicker__.
 
 
-# See Also
+## See Also
 
  * [Overview]({%slug radtimespanpicker-overview%})
 

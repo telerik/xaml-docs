@@ -146,4 +146,4 @@ As an example, you can follow the steps bellow:
 The result based on the above code will the one illustrated on the image below:
 ![styling-apperance-custom-style](images/styling-apperance-custom-style.png)
 
-# See Also
+## See Also

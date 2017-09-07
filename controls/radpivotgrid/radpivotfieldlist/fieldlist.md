@@ -34,7 +34,7 @@ __Key Features:__
 
 	* Using percent of GrandTotal instead showing the whole number.
 
-# See Also
+## See Also
 
  * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
 

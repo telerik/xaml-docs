@@ -16,7 +16,7 @@ For more information about the ribbon gallery, take a look at the [Ribbon Galler
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.		
 
-# See Also
+## See Also
  * [Hide the Application Menu]({%slug radribbonview-how-to-hide-the-application-menu%})
  * [Change the Application Menu's Image]({%slug radribbonview-how-to-hide-the-application-menu%})
  * [Add Screen Tips in the Code Behind]({%slug radribbonview-howto-add-screentips-code-behind%})

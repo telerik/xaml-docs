@@ -179,7 +179,7 @@ Here are several small demos for __RadGridView__:
 	cells.ForEach(c => c.ChildrenOfType<CheckBox>().First().IsChecked = true);
 {{endregion}}
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
 

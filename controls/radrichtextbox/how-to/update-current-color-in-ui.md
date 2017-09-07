@@ -36,7 +36,7 @@ To use **FormattingColorPicker** you will need to add a reference to the **Teler
 
 This property gets or sets the active color which is shown on the bottom part of the drop down button. It keeps the currently selected color and it is updated according to the position of the caret.
 
-# See Also
+## See Also
 
 * [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%})
 

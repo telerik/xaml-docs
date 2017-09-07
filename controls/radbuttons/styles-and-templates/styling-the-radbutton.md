@@ -70,7 +70,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __RadButtonStyle__ - the default Style for the __RadButton__.
 
-# See Also
+## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

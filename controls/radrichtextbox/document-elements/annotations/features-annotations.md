@@ -149,7 +149,7 @@ HTML
 HyperlinkRangeStart/End are persisted.
               </td></tr></table>
 
-# See Also
+## See Also
 
  * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%})
 

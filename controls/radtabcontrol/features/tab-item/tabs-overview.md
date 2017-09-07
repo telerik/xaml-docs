@@ -31,7 +31,7 @@ Here is a list of most important tab item features:
 * Control the way the tab items are oriented using the __RadTabControl__ property __TabOrientation__ as shown [here]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%}).
 					
 
-# See Also
+## See Also
 
  * [Templating Overview]({%slug radtabcontrol-templating-overview%})
 

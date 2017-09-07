@@ -38,7 +38,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Flexible Recurring Appointments Support__ - The control features the ability to configure repeating appointments with ultimate flexibility. Use the advanced editing options to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from a date to date. The flexible rule mechanism covers all possible recurrence scenarios.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radscheduleview-getting-started%})
 

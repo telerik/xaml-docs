@@ -12,7 +12,11 @@ position: 8
 
 The __SelectionBoxTemplate__ gives you the ability to define a separate template for the selected item of Non-Editable __RadComboBox__. The purpose of this tutorial is to show you how to create and apply __SelectionBoxTemplate__.
 
->important The __SelectionBoxTemplate__ is used only by Non-Editable __RadComboBox__. However, if you want to customize the TextBox part of Editable __RadComboBox__ you could use the [TextBoxStyle]({%slug radcombobox-features-textboxstyle%}) property.
+>important The __SelectionBoxTemplate__ is used only by the non-editable __RadComboBox__. However, if you want to customize the TextBox part of ab editable __RadComboBox__ you could use the [TextBoxStyle]({%slug radcombobox-features-textboxstyle%}) property.
+
+<!-- -->
+
+>important If you're using a RadComboBox with [multiple selection]({%slug radcombobox-features-multiple-selection%}) you should use the [MultipleSelectionBoxTemplate]({%slug radcombobox-features-multiple-selection%}#multipleselectionboxtemplate) property instead of the __SelectionBoxTemplate__.
 
 >Before proceeding further with this tutorial, be sure that you are familiar with how to bind a __RadComboBox__ to a collection of business objects. For more information take a look at the [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%}) topic. __This tutorial will use exactly the same example as in the aforementioned topic.__
 
@@ -52,7 +56,7 @@ The result is shown on the image below. Note how the template of the selected it
 
 ![](images/RadComboBox_PopulatingWithData_SelectionBoxItemTemplate_020.png)
 
-# See Also
+## See Also
 
  * [Binding to WCF Service]({%slug radcombobox-populating-with-data-binding-to-wcf%})
 

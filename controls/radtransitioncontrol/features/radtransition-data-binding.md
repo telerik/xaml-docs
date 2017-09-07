@@ -55,7 +55,7 @@ In this case the data item representing the __SelectedItem__ is the __DataContex
 
 >tipIn the [Getting Started]({%slug radtransition-getting-started%}) topic you can find an example of a __RadTransitionControl__ bound to a __ListBox__, which lists photos.
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

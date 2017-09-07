@@ -160,7 +160,7 @@ Finally you can bind the command
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to RibbonView/HelpFunctionality.          
 
-# See Also
+## See Also
  * [Show Help Button and Change its Image]({%slug radribbonview-howto-show-help-icon-and-change-its-image%})
  * [Getting Started]({%slug radribbonview-gettingstarted%})
  * [Visual Structure]({%slug radribbonview-visual-structure%})

@@ -46,7 +46,7 @@ With the Q3 2012 release, we introduced a built-in feature in the __Diagramming_
 
 Furthermore, you can now copy any portion of __MicrosoftOffice__ data or part of a __Photoshop__ image and paste it directly onto the Diagramming surface. You can also copy an xml representing __RadDiagram__ elements and as soon as you paste it onto your __RadDiagram__, the elements will be deserialized and automatically generated on the surface.
 
-# See Also
+## See Also
  * [Structure]({%slug raddiagram-structure%})
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})

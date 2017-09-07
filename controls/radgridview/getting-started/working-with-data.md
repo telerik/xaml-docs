@@ -77,7 +77,7 @@ You can find more information about [managing data]({%slug gridview-managing-dat
 
 * [Data Validation]({%slug gridview-managing-data-validation%})
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug gridview-getting-started2%})
 

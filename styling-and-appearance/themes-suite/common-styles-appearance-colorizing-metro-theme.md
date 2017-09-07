@@ -241,6 +241,6 @@ __Figure 3__ shows a comparison of the application before and after the button i
 Figure 3: You can click a button to change FontSize.
 ![Common Windows 8 Font Change 01](../images/Common_Windows8_FontChange_01.png)
 
-# See Also
+## See Also
 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

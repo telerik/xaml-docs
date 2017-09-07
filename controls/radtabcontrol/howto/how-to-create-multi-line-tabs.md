@@ -16,7 +16,7 @@ position: 8
 
 See how to create multi-line tab controls [here]({%slug radtabcontrol-features-multiline-tabs%}).
 
-# See Also
+## See Also
 
  * [How to Add Close Button to the Tab Headers]({%slug radtabcontrol-how-to-add-close-button-to-the-tab-headers%})
 

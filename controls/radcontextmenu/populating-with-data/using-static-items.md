@@ -158,7 +158,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 
 >tipConsider declaring menu items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
-# See Also
+## See Also
 
  * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
 

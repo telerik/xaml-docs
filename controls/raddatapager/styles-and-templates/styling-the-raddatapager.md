@@ -83,7 +83,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * ***RadDataPagerStyle*** - represents the __Style__ for __RadDataPager__.
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug raddatapager-styles-and-templates-template-structure%})
 

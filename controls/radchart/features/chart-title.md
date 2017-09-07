@@ -103,7 +103,7 @@ And here is the final result:
 
 If you want to learn more about styling the __ChartTitle__ take a look at the [Customizing Title]({%slug radchart-styling-and-appearance-styling-chart-title%}) topic.
 
-# See Also
+## See Also
 
  * [Styling the Chart Title]({%slug radchart-styling-and-appearance-styling-chart-title%})
 

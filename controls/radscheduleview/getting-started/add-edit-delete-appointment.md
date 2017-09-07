@@ -28,7 +28,7 @@ To learn how to manipulate the appointments displayed by the __RadScheduleView__
 
 * [Drag&Drop Appointments]({%slug radscheduleview-features-draganddrop%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radscheduleview-getting-started-visual-structure%})
  

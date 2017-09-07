@@ -93,7 +93,7 @@ Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;
 
 The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.
 
-# See Also
+## See Also
 
  * [RecurrencePattern]({%slug radscheduleview-features-recurrences-recurrencepattern%})
 

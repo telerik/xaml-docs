@@ -140,7 +140,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 ![radchartview-styles-and-templates-Radar Point Series-Default Visual Style](images/radchartview-styles-and-templates-RadarPointSeries-DefaultVisualStyle.png)
 
-# See Also
+## See Also
 
  * [Customizing CartesianChart Series]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})
 

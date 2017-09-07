@@ -28,6 +28,6 @@ In this section you will find:
 
 * [Binding to Object]({%slug radlistbox-populating-with-data-binding-to-object%}) - explains how to bind your RadListBox to a collection of objects.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})

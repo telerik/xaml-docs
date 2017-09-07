@@ -22,6 +22,6 @@ For more information about the __ApplicationButtonDoubleClick__ event, take a lo
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview ]({%slug radribbonview-events-overview%}) topic.		
 
-# See Also
+## See Also
  * [Handle double click on application button]({%slug radribbonview-how-to-handle-double-click-on-application-button%})
  * [Add Screen Tips in the Code Behind]({%slug radribbonview-howto-add-screentips-code-behind%})

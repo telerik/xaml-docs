@@ -47,7 +47,7 @@ __Result:__ __Q3 2011 SP1__ and __Q1 2012 SP1__ are installed on the machine
 
 >Part of the__UI for Silverlight__are the__Visual Studio Extensions__. Since the __Visual Studio Extensions__ integrate into the __Visual Studio IDE__ they don’t support parallel versions. When newer version is installed regardless of its type (major/minor) the __Visual Studio Extensions__ get updated to the newer version.
 
-# See Also
+## See Also
 
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})
 

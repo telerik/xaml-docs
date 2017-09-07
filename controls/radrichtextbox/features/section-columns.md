@@ -124,7 +124,7 @@ The **SectionColumnsLayout** enumeration could have the following values:
 
 >You can insert a column break at a specific position inside a section column. For more information, read [this article]({%slug radrichtextbox-features-document-elements-break%}).
 
-# See Also
+## See Also
 
 * [Section]({%slug radrichtextbox-features-document-elements-section%})
 * [Break]({%slug radrichtextbox-features-document-elements-break%})

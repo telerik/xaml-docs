@@ -217,7 +217,7 @@ The next example shows you how to use __RadButtonGroup__.
 
 ![](images/RibbonView_Buttons_Overview_ButtonGroup.png)
 
-# See Also
+## See Also
  * [Ribbon Group]({%slug radribbonview-ribbon-group%})
  * [Resizing]({%slug radribbonview-resizing%})
  * [Ordered Wrap Panel]({%slug radribbonview-ordered-wrap-panel%})

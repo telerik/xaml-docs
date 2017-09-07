@@ -57,6 +57,6 @@ To learn more about styling the __RadGridView__ specific elements, read the foll
 
 >As of __2013 Q2 SP__ we have introduced __Lightweight Templates__ for __RadGridView__ and __RadTreeListView__. The main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%})
 
-# See Also
+## See Also
 
  * [Lightweight Templates]({%slug gridview-overview-lightweight-template%})

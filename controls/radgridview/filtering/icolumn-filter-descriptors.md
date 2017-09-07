@@ -153,6 +153,6 @@ And here is the result:
 
 ![](images/RadGridView_Filtering_Column_Filter_Descriptors_03.png)
 
-# See Also
+## See Also
 
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

@@ -40,7 +40,7 @@ Here is an example of a __RadDataPager__ control with an __AutoEllipsisMode__ se
 
 ![](images/RadDataPager_Features_AutoEllipsis_01.png)
 
-# See Also
+## See Also
 
  * [Display Modes]({%slug raddatapager-features-display-modes%})
 

@@ -370,7 +370,7 @@ If you run the application now, the __RadDiagram__ should display the following 
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.					
 
-# See Also
+## See Also
  * [DataBinding]({%slug raddiagram-data-databinding%})
  * [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%})
  * [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%})

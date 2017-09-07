@@ -25,7 +25,7 @@ Typically the size of a control is changed by setting its Width and Height prope
 
 Of course, if the size you need is in this range you don't have to set these properties explicitly.
 
-# See Also
+## See Also
 
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
 

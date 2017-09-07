@@ -52,7 +52,7 @@ The Demos Application ZIP package does not include the Telerik assemblies, so in
 >tipIf you have multiple UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} installations on your machine the projects might sometimes reference an older installed version of the components. In that case you can run the {% if site.site_name == 'WPF' %}[Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}){% endif %}{% if site.site_name == 'Silverlight' %}[Upgrade Wizard]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%}){% endif %} to update the referenced assemblies to use the latest version of the components in the projects you need to run.
    
 {% if site.site_name == 'Silverlight' %}   
-# See Also
+## See Also
 
  * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
  

@@ -55,7 +55,7 @@ Add a new tab with name "UI for WPF".
 
 ![Common Installing Adding ToVS 2012 Tool Box 080 WPF](images/Common_InstallingAddingToVS2012ToolBox_080_WPF.png)
 
-# See Also
+## See Also
 
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
 

@@ -41,7 +41,7 @@ To style the group row you can use the __GroupRowStyle__ property. To learn how 
 
 To style the header row you can use the __HeaderRowStyle__ property. To learn how to do this take a look at the [Styling Header Row]({%slug gridview-styling-header-row%}) topic.
 
-# See Also
+## See Also
 
  * [Grid Rows - Overview]({%slug gridview-rows-overview%})
 

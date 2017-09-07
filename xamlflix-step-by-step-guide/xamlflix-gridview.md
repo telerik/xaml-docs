@@ -13,7 +13,7 @@ position: 6
 This tutorial will introduce the __RadGridView__ control, part of the Telerik suite of XAML controls. You can jump ahead to these topics:  
 	  
 
-* [Set up and install UI for WPF by working through the Project Configuration Wizard.](#setting-up-the-project)
+* [Set up and install Telerik UI for WPF by working through the Project Configuration Wizard.](#setting-up-the-project)
 
 * [Explore built-in functionality such as sorting, grouping, reordering columns.](#built-in-functionality)
 

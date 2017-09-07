@@ -271,7 +271,7 @@ You can subscribe to the __RowValidated__ event declaratively or in code-behind 
 	AddHandler Me.radGridView.RowValidated, AddressOf radGridView_RowValidated
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Validating]({%slug gridview-managing-data-validation%})
 

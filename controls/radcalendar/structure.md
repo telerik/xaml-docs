@@ -26,7 +26,7 @@ This section defines terms and concepts used in the scope of __RadCalendar__ you
 
 * __Highlighted Date__ - currently highlighted date.
 
-# See Also
+## See Also
 
 * [Overview]({%slug radcalendar-overview%})
  

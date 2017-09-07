@@ -68,7 +68,7 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 
 You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. More details about how this can be achieved can be found in the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
 
-# See Also
+## See Also
 
  * [Styling the GridViewEditorPresenter]({%slug gridview-styling-editorpresenter%})
 

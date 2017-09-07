@@ -24,7 +24,7 @@ __RadDesktopAlert__ control raises the following specific events:
 
 	* A __RadRoutedEventArgs__ object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddesktopalert-getting-started%})
  

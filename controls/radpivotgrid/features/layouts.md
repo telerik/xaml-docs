@@ -83,7 +83,7 @@ Here is __RadPivotGrid__ with the following configuration:
 
 ![Rad Pivot Grid Features Layouts 04](images/RadPivotGrid_Features_Layouts_04.png)
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

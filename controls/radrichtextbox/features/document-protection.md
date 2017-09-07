@@ -185,7 +185,7 @@ Here is an example:
 This code will insert a permission range around the current selection in the document. The type of the permissionis Individual - meaning that only the CurrentUser will be able to edit the region.
         
 
-# See Also
+## See Also
 
  * [Selection]({%slug radrichtextbox-features-selection%})
 

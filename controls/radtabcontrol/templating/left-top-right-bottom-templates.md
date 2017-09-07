@@ -71,7 +71,7 @@ You are now able to modify the desired templates to your liking.
 
 >Modify the templates carefully because removing some of the controls may cause the control to malfunction!
 
-# See Also
+## See Also
 
  * [Templating Overview]({%slug radtabcontrol-templating-overview%})
 

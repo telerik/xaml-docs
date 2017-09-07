@@ -122,7 +122,7 @@ In order to make a call to your service, you just need to invoke the exposed by 
 
 {% endif %}
 
-# See Also
+## See Also
 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
 

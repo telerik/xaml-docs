@@ -28,7 +28,7 @@ This topic covers the specific events exposed by the __RadColorEditor__ control.
 	* The sender argument contains the __RadColorEditor__. This argument is of type __object__, but can be cast to the __RadColorEditor__ type.
 	* A __HistoryChangedEventArgs__ object. You can use it to access the selected colors added to the __ColorHistory__ collection through the __AddedItems__ collection. The __HistoryChangedEventArgs__ object also exposes a collection of the colors removed from the __ColorHistory__ - __RemovedItems__.							
 
-# See Also
+## See Also
  * [Structure]({%slug radcoloreditor-structure%})
  * [Getting Started]({%slug radcoloreditor-getting-started%})
  * [Color Mode]({%slug radcoloreditor-features-color-mode%})

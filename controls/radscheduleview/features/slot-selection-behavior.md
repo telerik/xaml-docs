@@ -94,7 +94,7 @@ The end result is:
 
 ![radscheduleview features slot selection behavior 3](images/radscheduleview_features_slot_selection_behavior_3.png)
 
-# See Also
+## See Also
 
  * [AppointmentSelectionBehavior]({%slug radscheduleview-features-appointment-selection-behavior%})
 

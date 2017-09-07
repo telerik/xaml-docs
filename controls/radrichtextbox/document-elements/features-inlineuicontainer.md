@@ -190,7 +190,7 @@ There are some differences between the format providers when it comes to importi
 
 * __PdfFormatProvider__: PDF import is currently not supported.
             
-# See Also
+## See Also
 
 * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
 

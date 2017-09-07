@@ -48,7 +48,7 @@ In the second case the UI behind the __RadWindow__ gets inactive and cannot be u
 >tipWhen opened as a modal dialog the __RadWindow__ covers the UI behind it with a background. You can modify the color of this background via the __ModalBackground__ property of the __RadWindow__.
 {% endif %}
 
-# See Also
+## See Also
 
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
 

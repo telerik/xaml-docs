@@ -80,7 +80,7 @@ And this is how you create an image watermark and apply it:
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadRichTextBox / Watermark__.
           
 
-# See Also
+## See Also
 
  * [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%})
 

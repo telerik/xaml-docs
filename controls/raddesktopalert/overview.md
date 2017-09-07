@@ -34,7 +34,7 @@ __RadDesktopAlert__ is a WPF control that allows you to display notifications on
 
 You can check __RadDesktopAlert__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddesktopalert-getting-started%})
 

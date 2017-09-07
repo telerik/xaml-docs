@@ -24,7 +24,7 @@ The __RadTreeView__ API offers you the ability to expand an item by path program
 
 For more information read the topic about [Expanding and Collapsing Items]({%slug radtreeview-feautres-treeviewitem-expanding-and-collapsing-items%}).		
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})

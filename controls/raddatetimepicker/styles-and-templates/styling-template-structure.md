@@ -72,7 +72,7 @@ The __RadDateTimePicker's__ default template also gives you a simple __Watermark
 
 	* __[TextBlock]__ - represents the __RadDateTimePicker's__ watermark content.
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
 

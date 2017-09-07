@@ -196,7 +196,7 @@ Here is the final result:
 
 ![](images/radbusyindicator_styles_and_templates_busycontenttemplate_010.png)
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug radbusyindicator-styles-and-templates-template-structure%})
 

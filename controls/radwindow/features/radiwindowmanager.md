@@ -38,7 +38,7 @@ Here is an example of how to use __RadWindowManager__ to close all active __RadW
 	RadWindowManager.Current.CloseAllWindows()
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
 

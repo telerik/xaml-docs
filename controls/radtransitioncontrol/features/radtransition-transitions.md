@@ -237,7 +237,7 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 
 You are allowed to create your own custom transition effects. This is done via the HLSL language and the base classes provided by the __Telerik RadTransitionControl API__. To learn more about how to create such effects, take e look at [How to Create Custom Transitions]({%slug radtransition-how-to-create-custom-transitions%}).
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

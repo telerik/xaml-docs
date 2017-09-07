@@ -297,7 +297,7 @@ When you want to apply/change the calculation at runtime you should use __RadPiv
 
 ![Rad Pivot Grid Features Calculations 09](images/RadPivotGrid_Features_Calculations_09.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

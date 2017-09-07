@@ -96,7 +96,7 @@ This series also expose the __SliceStyles__ property. It is of type __Observable
 
 ![radchartview-styles-and-templates-Doughnut Series-Slice Styles](images/radchartview-styles-and-templates-DoughnutSeries-SliceStyles.png)
 
-# See Also
+## See Also
 
  * [Customizing CartesianChart Series]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})
 

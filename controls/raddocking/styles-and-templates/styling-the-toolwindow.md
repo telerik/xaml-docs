@@ -68,7 +68,7 @@ Here is a snapshot of the final result.
 
 ![](images/RadDocking_StylingToolWindow_08.png)
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

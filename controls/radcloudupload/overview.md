@@ -43,7 +43,7 @@ In order to use the __RadCloudUpload__ in your projects you have to add referenc
 >tipYou can find more info about the __RadControls__ dependencies [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
           
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug radcloudupload-templates-template-structure%})
 

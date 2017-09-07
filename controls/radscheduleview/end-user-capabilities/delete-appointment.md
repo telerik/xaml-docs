@@ -46,7 +46,7 @@ You can delete an appointment using the code. Just Call __Remove()__ method of t
 	Me.radScheduleView.Remove(appointment)
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})
 

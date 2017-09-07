@@ -277,7 +277,7 @@ The next screenshots show the final result:
 
 1. ![radganttview-dragdrop-radscheduleview-3](images/radganttview-dragdrop-radscheduleview-3.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radganttview-dragdrop-overview%})
 

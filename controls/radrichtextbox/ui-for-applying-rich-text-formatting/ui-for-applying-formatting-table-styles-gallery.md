@@ -82,7 +82,7 @@ All table styles can be deleted using the *Delete Table Style…* menu item. If 
 When the *Table Style Options* are changed the gallery automatically updates all the table styles appropriate to the current set of options. When user clicks between tables the Table Style Options are automatically changed based on the options of the current selected table.
         
 
-# See Also
+## See Also
 
  * [Styles]({%slug radrichtextbox-features-styles%})
 

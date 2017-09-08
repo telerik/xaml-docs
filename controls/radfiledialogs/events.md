@@ -22,7 +22,7 @@ This article lists the events specific to the RadFileDialog controls. All file d
         }
 	{{endregiond}}
 	
-* __Closed__: This event occurs when the dialog is closed. The event arguments are of type __WindowClosedEventArgs__. You 
+* __Closed__: This event occurs when the dialog is closed. The event arguments are of type __WindowClosedEventArgs__. 
 
 * __ExceptionRaised__: This event occurs when an exception is raised. This event could be raised in different occasions, for example - if the selected folder cannot be accessed or if the file path is too long, or when there is an error while searching, etc.
 

@@ -588,6 +588,9 @@ navigation:
     controls/radpdfviewer/ui:
         title: UI
         position: 6
+    cotrols/radpdfviewer/features:
+        title: Features
+        position: 7
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
         position: 7

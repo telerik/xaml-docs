@@ -449,8 +449,12 @@ navigation:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
+    controls/radpanelbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
+    controls/radprogressbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:
@@ -515,6 +519,12 @@ navigation:
         title: RadTreeMap
     controls/radtreeview:
         title: RadTreeView
+    controls/radtreeview/how-to/drag-and-drop:
+        title: Drag and Drop
+        position: 0
+    controls/radtreeview/features/treeview-item:
+       title: RadTreeViewItem
+       position: 50
     controls/radupload:
         title: RadUpload
     controls/radupload/features:
@@ -588,12 +598,12 @@ navigation:
     controls/radpdfviewer/ui:
         title: UI
         position: 6
-    cotrols/radpdfviewer/features:
+    controls/radpdfviewer/features:
         title: Features
         position: 7
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
-        position: 7
+        position: 8
     controls/radpdfviewer/document-model/text:
         title: Text
     controls/radspreadprocessing/working-with-workbooks:

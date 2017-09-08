@@ -32,7 +32,7 @@ __RadVirtualGrid__ exposes an API for inserting and removing rows and columns at
 
 ## Events
 
-The events related to a delete operation will be raised when the selected indexes are deleted through the __Delete key__.
+Events related to a deletint operation will be raised when the selected indexes are deleted through the __Delete key__.
 
 ### Deleting
 
@@ -44,10 +44,9 @@ Raised when the selected indexes of __RadVirtualGrid__ are about to be deleted. 
 
 #### __Example 1: Subscribing to the Deleting event__
 {{region radvirtualgrid-features_insert-and-remove-data_0}}
-	private void VirtualGrid_Deleting(object sender, VirtualGridDeletingEventArgs e)
-        {
-            
-        }
+	private void VirtualGrid_Deleting(object sender, VirtualGridDeletingEventArgs e) 
+	{ 
+	}
 {{endregion}}
 
 ### Deleted
@@ -58,10 +57,9 @@ This event is raised when the selected indexes of the control have been deleted.
 
 #### __Example 2: Subscribing to the Deleted event__
 {{region radvirtualgrid-features_insert-and-remove-data_1}}
-	private void VirtualGrid_Deleted(object sender, VirtualGridDeletedEventArgs e)
-        {
-            
-        }
+	private void VirtualGrid_Deleted(object sender, VirtualGridDeletedEventArgs e) 
+	{ 
+	}
 {{endregion}}
 
 ## See Also

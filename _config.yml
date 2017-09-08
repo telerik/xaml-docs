@@ -555,6 +555,8 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/features/combinemode:
+        title: Combine Mode
 ## X2 Controls End
 
 ## Centaur Controls Start

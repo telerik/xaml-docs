@@ -91,6 +91,14 @@ Feature	|	Feature Name
 ---	|	---
 __RadBusyIndicator__	|	
 Show	|	ShowIndicator
+__RadCalendar__ |
+SelectionChanged	|	SelectionChanged
+__RadCarousel__ |
+SelectionChanged	|	SelectionChanged
+__RadColorEditor__ |
+SelectionChanged	|	SelectionChanged
+__RadColorPicker__ |
+SelectionChanged	|	SelectionChanged
 __RadComboBox__	|	
 SelectionChanged	|	SelectionChanged
 DropDownOpened	|	DropDownOpened
@@ -109,11 +117,16 @@ __RadGridView__	|
 Sort	|	Sorted
 Group	|	Grouped
 Filter	|	Filtered
+SelectionChanged	|	SelectionChanged
+__RadListBox__ |
+SelectionChanged	|	SelectionChanged
 __RadMenu__	|	
 Click	|	Click
 __RadRadioButton__ |	
 Checked	|	Checked
 UnChecked	|	UnChecked	
+__RadRibbonView__ |
+SelectionChanged	|	SelectionChanged
 __RadRichTextBox__	|	
 Open Document	|	Open Document
 Save Document	|	Save Document
@@ -123,6 +136,10 @@ Open Document	|	Open Document
 Save Document	|	Save Document
 Load Image	|	LoadImage
 Save Image	|	SaveImage	
+__RadTabControl__ |
+SelectionChanged	|	SelectionChanged
+__RadTileView__	|
+SelectionChanged	|	SelectionChanged
 __RadToggleButton__	|	
 Checked	|	Checked
 UnChecked	|	UnChecked
@@ -130,6 +147,11 @@ __RadTreeListView__	|
 Sort	|	Sorted
 Group	|	Grouped
 Filter	|	Filtered
+SelectionChanged	|	SelectionChanged
+__RadTreeView__ |
+SelectionChanged	|	SelectionChanged
+__RadVirtualGrid__ |
+SelectionChanged	|	SelectionChanged
 
 {% if site.site_name == 'WPF' %}
 ## See Also

@@ -718,7 +718,7 @@ navigation:
         position: 6
     controls/radrichtextbox/import-export:
         title: Import/Export
-        position: 7     
+        position: 7    
     controls/radrichtextbox/import-export/docx:
         title: Docx	
         position: 2
@@ -757,7 +757,7 @@ navigation:
     controls/radrichtextbox/features/merge-documents:
         title: Merge Documents
     "*radspreadstreamprocessing":
-        title: RadSpreadStreamProcessing      
+        title: RadSpreadStreamProcessing       
 ## Centaur Controls End
 
 ## X1 Controls Start

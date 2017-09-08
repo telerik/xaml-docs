@@ -1,0 +1,60 @@
+---
+title: Save As
+page_title: Save As
+description: Save As
+slug: radpdfviewer-save-as
+tags: save
+published: True
+position: 0
+---
+
+# Save As
+
+RadPdfViewer enables you to save the loaded document to a file on the file system. This functionality can be easily wired to the UI using the related [command descriptor]({%slug radpdfviewer-command-descriptors%}). 
+
+>The Save As functionality is available as of R3 2017. 
+
+## Working with the Save As Command
+ 
+When invoked, the SaveAsCommand opens the SaveAs dialog and writes the document loaded in RadPdfViewer to a new file on the file system. The new document is then loaded in the control.
+
+If there are changes to the document, the command adds additional bytes to the original PDF file in order to preserve the changes. For example, if some [interactive form field]({%slug radpdfviewer-features-interactive-forms%}) values are modified through **RadPdfViewer UI**, then the SaveAs command will preserve these changes in the new PDF file.
+
+When the document is not modified, the command saves the original file stream without modifying it.
+
+>Currently, this command has a limitation when working with **encrypted documents.** No changes can be saved when the original PDF file uses encryption.
+
+### Wiring the Command to the UI
+
+Similarly to the other commands of **RadPdfViewer**, the **SaveAsCommand** can be wired to the UI using its [command descriptor]({%slug radpdfviewer-command-descriptors%}). **Example 1** shows how you can set up a button to execute the save operation when clicked.
+ 
+#### [XAML] Example 1: Wiring SaveAsCommand to UI
+{{region radpdfviewer-save-as_0}}
+	<telerik:RadButton Command="{Binding SaveAsCommandDescriptor.Command}" Visibility="{Binding SaveAsCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" >
+	    <ToolTipService.ToolTip>
+	        <TextBlock Text="Save As" />
+	    </ToolTipService.ToolTip>
+	    <Image Source="{telerik:IconResource IconRelativePath=save.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
+	</telerik:RadButton>
+{{endregion}}
+
+#### Figure 1: Save As button in RadPdfViewer's toolbar
+![](images/PdfViewer_SaveAs_2.png)
+
+
+### Invoking in Code-Behind
+
+You can invoke the SaveAsCommand from your code as well. **Example 2** shows how you can access and execute it.
+
+ 
+#### [C#] Example 2: Invoking SaveAsCommand
+{{region radpdfviewer-save-as_1}}
+
+	this.pdfViewer.CommandDescriptors.SaveAsCommandDescriptor.Command.Execute(null);
+{{endregion}}
+
+## See Also
+
+* [Showing a File]({%slug radpdfviewer-showing-a-file%})
+* [Wiring UI]({%slug radpdfviewer-wiring-ui%})
+* [Digital Signature]({%slug radpdfviewer-features-digital-signature%})

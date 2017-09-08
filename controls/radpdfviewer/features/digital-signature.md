@@ -10,7 +10,7 @@ position: 0
 
 # Digital Signature
 
-With RadPdfViewer you are able to both display and verify documents within your application and make sure that it has not been tampered with.
+With RadPdfViewer you are able to display, sign and verify documents within your application and make sure that it has not been tampered with.
 
 This article contains the following sections:
 
@@ -19,6 +19,8 @@ This article contains the following sections:
 * [Cryptography Standards](#cryptography-standards)
 
 * [Signature Field](#signature-field)
+
+* [Signing](#signing)
 
 * [Validation](#validation)
 
@@ -32,7 +34,7 @@ The digital signatures rely on a mathematical algorithm, which generates a publi
 
 ## Cryptography Standards
 
-RadPdfViewer enables you to validate signature fields using standard  Cryptography Standards. Following is a list of them:
+RadPdfViewer enables you to validate signature fields using standard Cryptography Standards. Following is a list of them:
 
 * adbe.x509.rsa_sha1 ([PKCS #1](https://tools.ietf.org/html/rfc8017))
 
@@ -48,6 +50,27 @@ For all other formats you might need, there is a flexible API enabling you to im
 The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called Signature, which is responsible for validating.
 
 
+## Signing 
+
+When a document containing a signature field is loaded in RadPdfViewer, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the ***Sign*** button prompts you to save the signed document to a new file. The newly saved file then opens in RadPdfViewer.
+
+To use the **SignSignatureDialog** you should first register it through the ExtensibilityManager as shown in **Example 1**.
+
+#### **[C#] Example 1: Registering SignSignatureDialog**
+
+{{region radpdfviewer-features-digital-signature_4}}
+
+	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());
+{{endregion}}
+
+
+#### **Figure 1: Signing a document in RadPdfViewer**
+![](images/PdfViewer_DigitalSignature_3.gif)
+
+The SignSignatureDialog can be customized when needed. To implement the customization, you should replace the value of the **ViewModelCreator** with your custom implementation of **SignSignatureDialogViewModel**.
+
+
+
 ## Validation
 
 In the PDF document model, the validation is performed per signature. For a valid signed document is considered one that has not been changed after the signing and all of its certificates have valid trusted root certificate.
@@ -56,12 +79,12 @@ In the PDF document model, the validation is performed per signature. For a vali
 
 The signature panel of RadPdfViewer detects when the imported document contains a signature, validates the document and shows the final result to the user. 
 
-#### **Figure 1: SignaturePanel showing signature status**
+#### **Figure 2: SignaturePanel showing signature status**
 ![](images/PdfViewer_DigitalSignature_1.png)
 
-To enable this panel, you should add it to the XAML as demonstrated in **Example 1**:
+To enable this panel, you should add it to the XAML as demonstrated in **Example 2**:
 
-#### **[XAML] Example 1: Declaring SignaturePanel and wiring it with RadPdfViewer**
+#### **[XAML] Example 2: Declaring SignaturePanel and wiring it with RadPdfViewer**
 
 {{region radpdfviewer-features-digital-signature_0}}
 
@@ -75,18 +98,18 @@ To enable this panel, you should add it to the XAML as demonstrated in **Example
 
 The SignaturePanel detects if any signatures are present and validates them. However, the panel shows only the end result of the validation and doesn't expose a detailed information on which one is invalid and why. You can obtain this information from the SignaturePropertiesDialog. 
 
-To use this dialog, you should register it through the ExtensibilityManager as demonstrated in **Example 2**.
+To use this dialog, you should register it through the **ExtensibilityManager** as demonstrated in **Example 3**.
 
-#### **[C#] Example 2: Registering SignaturePropertiesDialog**
+#### **[C#] Example 3: Registering SignaturePropertiesDialog**
 
 {{region radpdfviewer-features-digital-signature_1}}
 
 	ExtensibilityManager.RegisterSignaturePropertiesDialog(new SignaturePropertiesDialog());
 {{endregion}}
 
-When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 3** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
+When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 4** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 
-#### **[C#] Example 3: Showing SignaturePropertiesDialog from code-behind**
+#### **[C#] Example 4: Showing SignaturePropertiesDialog from code-behind**
 
 {{region radpdfviewer-features-digital-signature_2}}
 
@@ -95,9 +118,9 @@ When registered, SignaturePropertiesDialog can be shown by clicking on the Signa
 	this.pdfViewer.CommandDescriptors.ShowSignaturePropertiesDialogCommandDescriptor.Command.Execute(context);
 {{endregion}}
 
-**Figure 2** shows how it looks like the SignaturePropertiesDialog when visualizing a signature whose validation result is Unknown.
+**Figure 3** shows how it looks like the **SignaturePropertiesDialog** when visualizing a signature whose validation result is Unknown.
 
-#### **Figure 2: SignaturePropertiesDialog showing the status of a signature**
+#### **Figure 3: SignaturePropertiesDialog showing the status of a signature**
 ![](images/PdfViewer_DigitalSignature_2.png)
 
 
@@ -115,9 +138,9 @@ The **Signature** class exposes two methods allowing you to validate a signature
 
 >The Validate() method throws an exception if there is a problem with the signature, while TryValidate() returns false in similar cases.
 
-**Example 4** shows how the validation can be used.
+**Example 5** shows how the validation can be used.
 
-#### **[C#] Example 4: Validate a field**
+#### **[C#] Example 5: Validate a field**
 
 
 {{region radpdfviewer-features-digital-signature_3}}

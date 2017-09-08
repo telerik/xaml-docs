@@ -28,7 +28,7 @@ The unsupported features include:
             
 * Annotations: Link and Widget annotations are supported. All others are currently not implemented.
 
-* Structured content: There are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline and article threads. The interactive forms are currently read-only.
+* Structured content: There are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline and article threads. 
 
 When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
 

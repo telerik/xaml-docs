@@ -919,6 +919,18 @@ navigation:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:
         title: Styling and Appearance
+    controls/radvirtualgrid/selection:
+        title: Selection
+        position: 5
+    controls/radvirtualgrid/filtering:
+        title: Filtering
+        position: 6
+    controls/radvirtualgrid/sorting:
+        title: Sorting
+        position: 7
+    controls/radvirtualgrid/commands:
+        title: Commands
+        position: 8
 ## X1 Controls End
 
 ## Common Start

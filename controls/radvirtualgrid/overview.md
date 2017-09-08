@@ -29,4 +29,22 @@ __RadVirtualGrid__'s features list:
 
 * __Touch support for vertical and horizontal scrolling__
 
+* __Custom DataProvider__
+
+* __Filtering__
+
+* __Sorting__
+
+* __Selection__
+
+* __Scrolling__
+
+* __Alternation__
+
+* __Row and Column resizing__
+
+* __Commands__
+
+
+
 

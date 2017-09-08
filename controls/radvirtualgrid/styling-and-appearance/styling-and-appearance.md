@@ -12,6 +12,8 @@ position: 0
 
 __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its performance and overall user experience intact. Thus, the control does not utilize the common templating mechanism provided by WPF and does not add its visual elements to the visual tree. It provides a set of properties for customizing its appearance. 
 
+> When updating the visual properties for the headers of the control at runtime, the __UpdateHeadersUI__ method needs to be called. For any other modifications of the visual properties at runtime, the __UpdateUI__ method is to be called.
+
 * __Background__: Sets the Background of the cell.
 
 * __Foreground__: Sets the Foreground of the cell.

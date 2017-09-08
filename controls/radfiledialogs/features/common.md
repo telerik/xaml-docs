@@ -18,7 +18,7 @@ All the dialog controls expose a __InitialDirectory__ property that determines t
 
 #### __[C#] Example 1: Setting initial directory__ 
 {{regiond radfiledialogs-features-common-0}}
-	RadSaveFileDialog saveFileDialog = new RadOpenFileDialog();	
+	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
 	saveFileDialog.Owner = this;
 	
 	saveFileDialog.InitialDirectory = @"C:\Temp\";
@@ -32,13 +32,17 @@ All the dialog controls expose a __InitialSelectedLayout__ property that determi
 
 #### __[C#] Example 2: Setting initial layout__ 
 {{regiond radfiledialogs-features-common-1}}
-	RadSaveFileDialog saveFileDialog = new RadOpenFileDialog();	
+	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
 	saveFileDialog.Owner = this;
 	
 	saveFileDialog.InitialSelectedLayout = Telerik.Windows.Controls.FileDialogs.LayoutType.Tiles;
 	
 	saveFileDialog.ShowDialog();	
 {{endregiond}}
+
+#### Figure 1: RadOpenFileDialog in Tile view mode
+
+![RadOpenFileDialog in Tile view mode](images/FileDialogs_TileViewMode.png)
 
 The layout is determined by the LayoutType enum that provides the following modes:
 

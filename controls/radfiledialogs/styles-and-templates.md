@@ -5,7 +5,7 @@ description: Styles and Templates
 slug: radfiledialogs-styles-and-templates
 tags: styles,templates
 published: True
-position: 6
+position: 8
 ---
 
 # Styles and Templates

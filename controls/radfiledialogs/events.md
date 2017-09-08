@@ -5,7 +5,7 @@ description: Events
 slug: radfiledialogs-events
 tags: events
 published: True
-position: 0
+position: 7
 ---
 
 # Events

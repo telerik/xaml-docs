@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started
 
-This article will guide you through the knowledge required to use the file dialogs in a basic scenario.
+This article will provide you with the knowledge required to use the file dialogs in a basic scenario.
 
 ## Assembly References
 
@@ -24,7 +24,7 @@ In order to use the file dialog controls, you will need to add references to the
 
 ## Using the dialogs
 
-There are few dialogs that you can use in a similar way. __Example 1__ shows how to show a RadOpenFileDialog. You can use this code to show also the open folder and save file dialogs.
+There are few dialogs that you can use in a similar way. __Example 1__ shows how to show a __RadOpenFileDialog__. You can use this code to also show the __open folder__ and __save file__ dialogs.
 
 #### __[C#] Example 1: Opening a dialog__ 
 {{regiond radfiledialogs-getting-started-0}}
@@ -87,7 +87,7 @@ To change the theme, you can follow the steps below:
 	{{endregion}}
 
 #### __Figure 1: File dialog with VisualStudio2013 theme applied__
-![](images/radfiledialogs-getting-started-01.png)
+![File dialog with VisualStudio2013 theme applied](images/radfiledialogs-getting-started-01.png)
 
 ## See Also
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})

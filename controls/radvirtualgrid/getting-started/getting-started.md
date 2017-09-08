@@ -15,9 +15,10 @@ This tutorial will walk you through the required steps for using __RadVirtualGri
 * [Assembly References](#assembly-references)
 * [Adding RadVirtualGrid to the Project](#adding-radvirtualgrid-to-the-project)
 * [Setting Initial Row and Column Count](#setting-initial-row-and-column-count)
-* [Populating with Data](#populating-with-data)
+* * [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
+* [Populating with Data](#populating-with-data-manually)
 * [Resetting the Capacity to the Initial Row and Column Count](#resetting-the-capacity-to-the-initial-row-and-column-count)
-* [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
+
 
 ## Assembly References
 

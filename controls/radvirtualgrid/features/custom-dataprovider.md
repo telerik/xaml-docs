@@ -46,6 +46,8 @@ By inheriting the default __DataProvider__, the following methods and properties
 
 * __ShouldPushEditValueToGrid__: When an editor is provided for the [Editing]({%slug virtualgrid-editing%}) operation, its edited value needs to be manually pushed to underlying source and to the grid through its __PushCellValue__ method. If the __ShouldPushEditValueToGrid__ property is overriden and returns a __True__ value, updating the control with the edited property value will be done automatically.
 
+* __DistinctValuesLimit__: By default, its value is set to 1000. Through it, the maximum count of distinct values in the __FilteringControl__ can be manipulated.
+
 ### Methods
 
 * __OnCellEditEnded__: The method that is called when the __CellEditEnded__ event is raised.

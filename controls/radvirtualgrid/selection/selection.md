@@ -36,6 +36,13 @@ The selection functionality of the control exposes three selection units. Manipu
 
 * __Column__ - clicking within the cells of a given column selects the whole column.
 
+### Column Selection
+
+When the __SelectionUnit__ of __RadVirtualGrid__ is set to __Column__, all cells within the selected column will be added to the __SelectedCells__ collection irrelevant to whether the __SelectionMode__ is set or not.
+
+#### __Figure 2: RadVirtualGrid with SelectionUnit set to Column__
+![RadVirtualGrid with SelectionUnit set to Column](images/RadVirtualGrid_Selection_02.png)
+
 ## Events
 
 > The __AddedItems__ and __RemovedItems__ properties can be utilized only when the __SelectionInit__ of __RadVirtualGrid__ is set to __Row__ or __Column__.
@@ -62,7 +69,7 @@ The selection functionality of the control exposes three selection units. Manipu
         }
 {{endregion}}
 
-* __SelectionChanged__ - raised when the selection of the control has changed. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
+* __SelectionChanged__ - raised when the selection of the control has changed. It is triggered only when the __SelectionUnit__ is different from __Cell__. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
 
 #### __[C#] Example 3: Subscribing to the SelectionChanged event__
 

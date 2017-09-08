@@ -10,7 +10,7 @@ position: 0
 
 # Editing 
 
-> By default, the __CanUserEdit__ property of __RadVirtualGrid__ is set to __False__, thus the editing mechanism is disabled. In order to enabled it, its value needs to be set to __True__
+> By default, the __CanUserEdit__ property of __RadVirtualGrid__ is set to __True__, thus the editing mechanism is enabled. In order to disable it, its value needs to be set to __False__.
 
 As __RadVirtualGrid__ does not utilize data binding for populating and managing its data, it does not provide a default editor. Instead, when the user double clicks to enter edit mode, the __EditorNeeded__ event is raised. 
 
@@ -89,10 +89,9 @@ The event is raised when the user ends editing the cell by setting the focus to 
 #### __[C#] Example 3: Handling the CellEditEnded event__
 
 {{region radvirtualgrid-features_editing_2}}
-	   private void VirtualGrid_CellEditEnded(object sender,
-            Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
+	   private void VirtualGrid_CellEditEnded_1(object sender, CellEditEndedEventArgs e)
         {
-            
+
         }
 {{endregion}}
 

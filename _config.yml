@@ -555,6 +555,8 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/features/combinemode:
+        title: Combine Mode
     controls/radchartview/series/funnelchart-series:
         title: FunnelChart Series 
 ## X2 Controls End

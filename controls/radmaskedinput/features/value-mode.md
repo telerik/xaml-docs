@@ -31,7 +31,9 @@ Note that if you set a Value that doesn't include literals, the control will aut
 
 When this mode is enabled the Value property of the masked input control will contain also the placeholders for the missing positions required by the Mask property. For example if the Mask is set to "####" and you enter "222" the Value property will be "222_", where the '-' character is the default placeholder.
 
-Note that if you set a Value that doesn't include literals, the control will automatically, parse it according to the applied Mask and then update the Value property. For example setting the Value to "222" will display "22-2_" and then the Value will be updated to "22-2".
+## IncludeLiteralsAndPlaceholders mode
+
+When this mode is enabled the Value property of the masked input control will contain also the literals and placeholders for the missing positions required by the Mask property. For example if the Mask is set to "##-##" and you enter "222" the Value property will be "22-2".
 
  
 ## See Also

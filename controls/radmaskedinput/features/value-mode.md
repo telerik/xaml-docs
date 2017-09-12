@@ -12,8 +12,12 @@ position: 2
 
 > This feature is supported only in __RadMaskedTextInput__.
 
-
 __RadMaskedTextInput__ allows you to set the behavior of the Value property in a mask scenario (when the Mask property is set). By default the Value holds the characters without including the placeholders and the literals defined in the mask. You can alter this and allow the value to hold also literal and placeholders by setting the __ValueMode__ property of the control. The property is an enum of type ValueMode which contains several options described in the next sections.
+
+#### __[XAML] Example 1: Setting the value mode__
+{{region xaml-radmaskedinput-features-value-mode-0}}
+	<telerik:RadMaskedTextInput ValueMode="IncludeLiteralsAndPlaceholders"/>
+{{endregion}}
 
 ## Plain mode
 
@@ -29,16 +33,12 @@ Note that if you set a Value that doesn't include literals, the control will aut
 
 ## IncludePlaceholders mode
 
-When this mode is enabled the Value property of the masked input control will contain also the placeholders for the missing positions required by the Mask property. For example if the Mask is set to "####" and you enter "222" the Value property will be "222_", where the '-' character is the default placeholder.
+When this mode is enabled the Value property of the masked input control will contain also the placeholders for the missing positions required by the Mask property. For example if the Mask is set to "####" and you enter "222" the Value property will be "222_", where the '_' character is the default placeholder.
 
 ## IncludeLiteralsAndPlaceholders mode
 
-When this mode is enabled the Value property of the masked input control will contain also the literals and placeholders for the missing positions required by the Mask property. For example if the Mask is set to "##-##" and you enter "222" the Value property will be "22-2".
-
+When this mode is enabled the Value property of the masked input control will contain also the literals and placeholders for the missing positions required by the Mask property. For example if the Mask is set to "##-##" and you enter "222" the Value property will be "22-2_".
  
 ## See Also
  * [Common Features]({%slug radmaskedinput-features-common%})
- * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})
- * [MaskedCurrencyInput]({%slug radmaskedinput-features-controls-currency%})
  * [MaskedTextInput]({%slug radmaskedinput-features-controls-text%})
- * [MaskedDateTimeInput]({%slug radmaskedinput-features-controls-datetime%})

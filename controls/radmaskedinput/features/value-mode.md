@@ -1,11 +1,11 @@
 ---
-title: Mask Tokens
-page_title: Mask Tokens
-description: Mask Tokens
-slug: radmaskedinput-features-mask-tokens
-tags: mask,tokens
+title: Value Mode
+page_title: Value Mode
+description: Value Mode
+slug: radmaskedinput-features-value-mode
+tags: value,mode
 published: True
-position: 2
+position: 3
 ---
 
 # Value Mode

@@ -58,7 +58,7 @@ The lower part of the control represents the two field filters. These are two fi
 
 The lower part of the field filter is called the field filter editor. Again, the editor that the user will see depends on the column data type. For example, if you have a date column the user will be able to enter the filtering criteria through a date time picker control. Depending on the column data type the most suitable editor is selected and used. Of course, you can always plug-in your very own field filter editor as described in this [article]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). If you want to modify the appearance or behavior of the stock field filter editor that we have selected for you, you can easily do that by attaching to the **FieldFilterEditorCreated** event of RadGridView as demonstrated [here]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
 
-If you don't need the field filter part of the filtering control you can hide it by using the **ShouldGenerateFieldFilterEditors** property of the column. Additionally, if you need to display the field filter editors for a boolean column (which does not show any editors by default), you can create your own custom column (inheriting from [GridViewCheckBoxColumn]({%slug gridview-checkbox-column%}), for example) and set its ShouldGenerateFieldFilterEditors property to **True** in the constructor.
+If you don’t need the field filter part of the filtering control you can hide it by using the **ShowFieldFilters** property of the column. This property only makes sense when the filtering mode is Popup. For boolean columns, this is false by default since it makes little sense to have field filters for boolean values.
 
 ### Deferred Filtering
 

@@ -125,6 +125,7 @@ div#tocNav > div.toclevel10 {
 
 /* Search form */
 form#SearchForm {
+    height: 28px;
     margin: 0 0 0 85px;
     position: absolute;
     top: 61px;
@@ -140,7 +141,7 @@ form#SearchForm {
 form#SearchForm input { 
 	background: transparent; 
 	border: 0; 
-	width: 95%;
+	width: 93%;
 	color: #2a2a2a;
 	display: inline-block;
 	padding: 3px 5px 4px 10px;

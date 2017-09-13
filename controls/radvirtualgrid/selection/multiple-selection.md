@@ -21,13 +21,6 @@ The __Extended__ selection on the other hand, allows users to select multiple re
 #### __Figure 1: RadVirtualGrid with Extended SelectionMode and Cell SelectionUnit__
 ![RadVirtualGrid with Extended SelectionMode and Cell SelectionUnit](images/RadVirtualGrid_Selection_01.png)
 
-## Column Selection
-
-When the __SelectionUnit__ of __RadVirtualGrid__ is set to __Column__, all cells within the selected column will be added to the __SelectedCells__ collection irrelevant to whether the __SelectionMode__ is set or not.
-
-#### __Figure 2: RadVirtualGrid with SelectionUnit set to Column__
-![RadVirtualGrid with SelectionUnit set to Column](images/RadVirtualGrid_Selection_02.png)
-
 ## See also
 
 * [Selection]({%slug virtualgrid-selection%})

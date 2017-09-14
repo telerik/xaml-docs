@@ -20,7 +20,7 @@ In order to use the file dialog controls, you will need to add references to the
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.GridView__
 * __Telerik.Windows.Controls.FileDialogs__
-* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Data__
 
 ## Using the dialogs
 

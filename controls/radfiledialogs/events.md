@@ -26,7 +26,7 @@ This article lists the events specific to the RadFileDialog controls. All file d
 
 * __ExceptionRaised__: This event occurs when an exception is raised. This event could be raised in different occasions, for example - if the selected folder cannot be accessed or if the file path is too long, or when there is an error while searching, etc.
 
-	#### __[C#] Example 1: Showing an alert when an error appears__
+	#### __[C#] Example 2: Showing an alert when an error appears__
 	{{regiond radfiledialogs-events-0}}
 		private void openDialog_ExceptionRaised(object sender, FileBrowserExceptionRaisedEventArgs e)
         {

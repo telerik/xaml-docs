@@ -34,7 +34,7 @@
 	margin-top: 20px;
 }
 div#leftNav {
-	height: 100%;
+	height:100% !important;
 	margin: 0px -1px 0 0;
 	width: 280px;
 	min-height: 10px;
@@ -65,6 +65,7 @@ div#leftNav a:hover {
 	color: #3390b1;
 }
 div#tocNav > div > a, div#tocNav > div > a:link, div#tocNav > div > a:visited {
+	display: block;
 	margin-left: 18px;
 	overflow: hidden;
 }
@@ -125,7 +126,7 @@ div#tocNav > div.toclevel10 {
 
 /* Search form */
 form#SearchForm {
-    height: 28px;
+	height: 28px;
     margin: 0 0 0 85px;
     position: absolute;
     top: 61px;
@@ -133,7 +134,7 @@ form#SearchForm {
     padding: 0;
 	border: 1px solid #D9D9D9;
     max-width: 930px;
-	min-width: 500px; 
+	min-width: 600px; 
 	left: 18%;
     right: 514px;
 	box-shadow: 3px 3px 19px rgba(0, 0, 0, 0.1); 
@@ -141,7 +142,7 @@ form#SearchForm {
 form#SearchForm input { 
 	background: transparent; 
 	border: 0; 
-	width: 93%;
+	width: 92%;
 	color: #2a2a2a;
 	display: inline-block;
 	padding: 3px 5px 4px 10px;
@@ -153,9 +154,7 @@ form#SearchForm button {
 	border: 0;
 	cursor: pointer;
 	color: #2a2a2a;
-	padding: 14px 14px 14px 19px;
-	width: 13px;
-	height: 13px;
+	padding: 14px;
 	overflow: hidden;
 }
 .searchContainer {
@@ -163,13 +162,6 @@ form#SearchForm button {
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.searchContainer form#SearchForm {
-	margin-left: 0px !important;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 700px;
 }
 
 .feedbackLink {

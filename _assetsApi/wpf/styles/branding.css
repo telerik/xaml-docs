@@ -161,18 +161,6 @@ pre {
 	overflow: hidden;
 }
 
-/*.TK-Hat {
-	font-family: 'Segoe UI' , Tahoma, Helvetica, Sans-Serif;
-	color: transparent;
-	text-indent: -1000px;
-	vertical-align: middle;
-	height: auto;
-	background: url("../icons/progress.svg") no-repeat scroll 0px 0px/94px 40px;
-	padding-top: 0px; 
-	padding-bottom: 20px;
- 
-}*/
-
 .TK-Hat {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -246,10 +234,6 @@ pre {
     text-decoration: none;
 } 
 
-.pageBody {
-	padding: 0px;
-	position: relative;
-}
 .topicContent {
 	padding: 10px 10px 15px 10px;
 	border-left: 1px solid #ebecee;

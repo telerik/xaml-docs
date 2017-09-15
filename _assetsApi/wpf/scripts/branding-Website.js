@@ -603,11 +603,7 @@ function SearchForKeywords(keywords, fileInfo, wordDictionary, sortByTitle)
 }
 
 
-$(document).ready(function(){ 
-
-    
-    
-     
+$(document).ready(function(){    
 	$("#PageHeader").contents().filter(function () {
 		 return this.nodeType === 3; 
 	}).remove();

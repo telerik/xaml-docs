@@ -40,7 +40,7 @@ Besides the __RadComboBox__'s __ItemTemplate__ property, you could use the __Dis
 
 >tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the __ToString()__ method of the business object.
 
-# See Also
+## See Also
 
  * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
 

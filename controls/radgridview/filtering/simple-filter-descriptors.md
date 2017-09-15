@@ -88,7 +88,7 @@ After running the application with this descriptor defined, the __RadGridView__ 
 
 >tipIn case of a static data structure, known during design time, it is better to declare your default filtering in the XAML, rather than in your code-behind.
 
-# See Also
+## See Also
 
  * [Basic Filtering]({%slug gridview-basic-filtering2%})
 

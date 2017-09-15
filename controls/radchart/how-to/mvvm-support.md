@@ -551,7 +551,7 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 The result:
 ![](images/RadChart_HowToMVVM_040.PNG)
 
-# See Also
+## See Also
 
  * [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%})
 

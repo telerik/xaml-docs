@@ -162,7 +162,7 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 ![](images/RadWindow_GettingStarted_05.png)
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
 

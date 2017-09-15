@@ -80,6 +80,6 @@ As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.micros
 
 That’s about all you need to do. You can download a sample project from [here](http://blogs.telerik.com/Libraries/RossenHristov/RowDetailsInRadWindowSources.sflb).
 
-# See Also
+## See Also
 
  * [RowDetails - Overview]({%slug radgridview-row-details-overview%})[RadWindow - Overview](B911CE0E-1A02-44B8-BA96-5FCDF57E0E9B)

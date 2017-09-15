@@ -18,7 +18,7 @@ Telerik Diagramming Framework exposes a __RadDiagram__ class that describes the 
 
 * [With databinding, populating the GraphSource collection]({%slug raddiagram-data-databinding%})
 
-# See Also
+## See Also
  * [Structure]({%slug raddiagram-structure%})
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

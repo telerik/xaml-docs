@@ -19,7 +19,7 @@ Here is an ordinary treeview declaration:
 
 #### __XAML__
 
-{{region radtreeview-how-to-get-item-by-path_0}}
+{{region radtreeview-how-to-get-item-by-path-0}}
 	        <telerik:RadTreeView TextSearch.TextPath="Header">
 	            <telerik:RadTreeViewItem Header="Sport Categories">
 	                <telerik:RadTreeViewItem Header="Football">
@@ -47,14 +47,14 @@ For example, see the following situation - you want to retrieve the treeview ite
 2. Set the __telerik:TextSearch.TextPath__ attached property to indicate which property to be used as a path segment.
 	#### __XAML__
 
-	{{region radtreeview-how-to-get-item-by-path_1}}
+	{{region radtreeview-how-to-get-item-by-path-1}}
 		<telerik:RadTreeView TextSearch.TextPath="Header" />
 	{{endregion}}
 
 3. Invoke the __GetItemByPath()__ method of the __RadTreeView__ class. 
 	#### __C#__
 
-	{{region radtreeview-how-to-get-item-by-path_0}}
+	{{region radtreeview-how-to-get-item-by-path-2}}
 		private void GetTreeViewItemByPath()
 		{
 			string path = "Sport Categories|Football|Soccer";
@@ -64,7 +64,7 @@ For example, see the following situation - you want to retrieve the treeview ite
 
 	#### __VB.NET__
 
-	{{region radtreeview-how-to-get-item-by-path_1}}
+	{{region radtreeview-how-to-get-item-by-path-3}}
 		Private Sub GetTreeViewItemByPath()
 			Dim path As String = "Sport Categories|Football|Soccer"
 			Dim targetItem As RadTreeViewItem = radTreeView.GetItemByPath(path, "|")
@@ -74,27 +74,31 @@ For example, see the following situation - you want to retrieve the treeview ite
 	The __GetItemByPath()__ method will work only __after__ the treeview has __loaded__. It will not work before that.
 	
 	#### __C#__
+	{{region radtreeview-how-to-get-item-by-path-4}}
 		this.radTreeView.Loaded += new RoutedEventHandler( radTreeView_Loaded );
 		private void radTreeView_Loaded( object sender, RoutedEventArgs e )
 		{
 			// If the treeview is data bound, use the
 			// GetItemByPath method here - when the treeview has already loaded.
 		}
-
+	{{endregion}}
+	
 	#### __VB.NET__
+	{{region radtreeview-how-to-get-item-by-path-5}}
 		AddHandler Me.radTreeView.Loaded, AddressOf radTreeView_Loaded
 		Private Sub radTreeView_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			' If the treeview is data bound, use the '
 			' GetItemByPath method here - when the treeview has already loaded. '
 		End Sub
-
+	{{endregion}}
+	
 	>Note that, invoking the __GetItemByPath()__ method will expand the target item without animation, regardless the value of the [AnimationManager.IsAnimationEnabled]({%slug radtreeview-how-to-disable-default-animation%}) property.
 
 The __RadTreeView__ class supports __PathSeparator__ property, which represents the default separator. The default separator for the __RadTreeView__ is "__\\__", but it can be changed. Here you can see how the previous example will look like if you set the __PathSeparator__ property. 
 
 #### __C#__
 
-{{region radtreeview-how-to-get-item-by-path_2}}
+{{region radtreeview-how-to-get-item-by-path_6}}
 	private void GetTreeViewItemByPath()
 	{
 	    string path = "Sport Categories|Football|Soccer";
@@ -105,7 +109,7 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-get-item-by-path_3}}
+{{region radtreeview-how-to-get-item-by-path_7}}
 	Private Sub GetTreeViewItemByPath()
 	    Dim path As String = "Sport Categories|Football|Soccer"
 	    radTreeView.PathSeparator = "|"
@@ -119,6 +123,6 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 
 You can see how to use the __GetItemByPath()__ method with a tree in a data binding scenario in the [Expand and Select Item with Load on Demand Enabled RadTreeView]({%slug radtreeview-howto-exapand-select-item-with-lod-enabled-treeview%}) article.
 
-# See Also
+## See Also
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
  * [Templated Nodes]({%slug radtreeview-styles-and-templates-templated-nodes%})

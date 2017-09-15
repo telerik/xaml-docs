@@ -28,7 +28,7 @@ Read the following topics to learn more:
 
 * [Styling the RadRichTextBox]({%slug radrichtextbox-styles-and-templates-styling-radrichtextbox%})
 
-# See Also
+## See Also
 
  * [Events]({%slug radrichtextbox-events-overview%})
 

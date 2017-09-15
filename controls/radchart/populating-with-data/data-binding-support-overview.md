@@ -79,7 +79,7 @@ __RadChart__ also allows you to bind to DataSourceProvider sources (e.g. [XmlDat
 
 * [Data Binding to Many Chart Areas]({%slug radchart-populating-with-data-data-binding-to-many-chart-areas%})
 
-# See Also
+## See Also
 
  * [Populating With Data Overview]({%slug radchart-populating-with-data-overview%})
 

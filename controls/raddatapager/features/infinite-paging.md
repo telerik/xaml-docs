@@ -26,7 +26,7 @@ The infinite paging is controlled by the __IsTotalItemCountFixed__ property. Its
 
  ![](images/RadDataPager_Features_InfinitePaging_01.png)
 
-# See Also
+## See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 

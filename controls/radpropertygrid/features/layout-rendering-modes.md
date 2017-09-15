@@ -36,7 +36,7 @@ There are a number of benefits of using the __Flat__ render mode. Some are liste
 * [Keyboard Navigation]({%slug radpropertygrid-features-keyboard-support%})
         
 
-# See Also
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

@@ -73,7 +73,7 @@ The following screenshot shows how the __RadAutoCompleteBox__ looks after the __
 
 ![radautocompletebox-radautocompletebox-boxesitemstyle-2](images/radautocompletebox-boxesitemstyle-2.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radautocompletebox-styles-and-templates-overview%})
  

@@ -251,7 +251,7 @@ After the custom token is added in the Tokens collection of the __RadMaskedInput
 
 ![radmaskedinput-howto-create-custom-token](images/radmaskedinput-howto-create-custom-token.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [How to Define Consecutive Input]({%slug radmaskedinput-howto-allow-skip-placeholders%})

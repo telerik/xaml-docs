@@ -27,6 +27,7 @@ Figure 2
 Your application will open to MainPage.xaml and, thanks to the *Telerik Visual Studio Extensions* , the namespace __telerik__ will already have been created in the XAML heading.		
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-0}}
 	<UserControl x:Class="RadTreeMapTutorial.GettingStarted.MainPage"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -34,28 +35,34 @@ Your application will open to MainPage.xaml and, thanks to the *Telerik Visual S
 			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 			mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+{{endregion}}
 			
 Let’s begin by setting up data for the __RadTreeMap__ application.  To begin, we’ll define an interface, *IDiskItem* that implements __INotifyPropertyChanged__,	
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-1}}
 	public interface IDiskItem : INotifyPropertyChanged
 	{
 		string Name { get;  }
 		long Size { get;  }
 		IList<IDiskItem> Children { get;  }
 	}
+{{endregion}}
 	
 Create a Folder class that implements IDiskItem,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-2}}
 	public class Folder : IDiskItem
 	{
 		private long size = 0;
 	}
+{{endregion}}
 	
 A lot of the heavy lifting is done in the constructor,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-3}}
 	public Folder(string name, IEnumerable<IDiskItem> children)
 	 {
 		 this.Name = name;
@@ -67,10 +74,12 @@ A lot of the heavy lifting is done in the constructor,
 		   System.Collections.Specialized.NotifyCollectionChangedEventHandler(collection_CollectionChanged);
 		 this.Children = collection;
 	 }
+{{endregion}}
 	 
 We set up the __ObservableItemCollection__ of __IDiskItems__ and add the children to the collection. We then set up two event handlers. The first is ItemChanged,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-4}}
 	void collection_ItemChanged(object sender, ItemChangedEventArgs<IDiskItem> e)
 	{
 		if ( e.PropertyName == "Size")
@@ -78,28 +87,34 @@ We set up the __ObservableItemCollection__ of __IDiskItems__ and add the childre
 			this.OnPropertyChanged("Size");
 		}
 	} 
-	
+{{endregion}}
+
 The second is CollectionChanged,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-5}}
 	void collection_CollectionChanged(
 		object sender, 
 		System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 	{
 		this.OnPropertyChanged("Size");
 	}
+{{endregion}}
 
 The folder is overloaded to handle a cached size,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-6}}
 	public Folder(string name, IEnumerable<IDiskItem> children, long cachedSize)
 	{
 		this.size = cachedSize;
 	}
+{{endregion}}
 
 The Size property computes the sum of the sizes of all the child folders,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-7}}
 	public long Size
 	{
 		get
@@ -109,10 +124,12 @@ The Size property computes the sum of the sizes of all the child folders,
 			return this.size;
 		}
 	}
+{{endregion}}
 
 The folder of course also defines properties for Name and Children and implements __INotifyPropertyChanged__,
 		
 #### __C#__
+{{region xamlflix-tree-pivot-maps-8}}
 	public string Name { get; set; }
 
 	public IList<IDiskItem> Children { get; private set; }
@@ -124,10 +141,12 @@ The folder of course also defines properties for Name and Children and implement
 		if (this.PropertyChanged != null)
 			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	}	
+{{endregion}}
 	
 Similarly, we also define a class for File,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-9}}
 	public class File : IDiskItem
 	 {
 		 private long size;
@@ -167,12 +186,14 @@ Similarly, we also define a class for File,
 				 this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 		 }
 	 }
+{{endregion}}
 	 
 Returning to the MainPage.xaml.cs file, the work is done in the Loaded event handler,
 
 In the Loaded event handler, we’ll create a folder, Windows, that will contain two folders, each of which will contain two files. We’ll also add a second folder, MyDocuments (which will hold two files) and a file, pagefile.sys,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-10}}
 	void MainPage_Loaded(object sender, RoutedEventArgs e)
 	{
 		var datasource = new List<IDiskItem>(){
@@ -187,6 +208,7 @@ In the Loaded event handler, we’ll create a folder, Windows, that will contain
 
 		treemap1.ItemsSource = dataSource;
 	}
+{{endregion}}
 
 Of course, we’ve not yet created the treemap, so let’s do that new in MainPage.xaml,
 
@@ -195,6 +217,7 @@ Add a __RadTreeMap__, give it a name, and set the LayoutStategy to “Squarified
 We’re then going to add TypeDefinitions,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-11}}
 	<telerik:RadTreeMap Name="xRadTreeMap"
 						LayoutStrategy="Squarified">
 		<telerik:RadTreeMap.TypeDefinitions>
@@ -203,10 +226,12 @@ We’re then going to add TypeDefinitions,
 									LabelPath="Name"
 									ChildrenPath="Children"
 									ToolTipPath="Size">
+{{endregion}}
 									
 Next we’ll add TypeDefinition Mappings,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-12}}
 	<telerik:RadTreeMap Name="xRadTreeMap"
 						LayoutStrategy="Squarified">
 		<telerik:RadTreeMap.TypeDefinitions>
@@ -219,10 +244,12 @@ Next we’ll add TypeDefinition Mappings,
 			<telerik:BrushColorizer Brush="AliceBlue" />
 		</telerik:TypeDefinition.Mappings>
 	</telerik:TypeDefinition>
+{{endregion}}
 
 That sets up the folder, next we need to set up the file,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-13}}
 	<telerik:TypeDefinition TargetTypeName="File"
 							LabelPath="Name"
 							ValuePath="Size">
@@ -230,6 +257,7 @@ That sets up the folder, next we need to set up the file,
 			<telerik:BrushColorizer Brush="LightBlue" />
 		</telerik:TypeDefinition.Mappings>
 	</telerik:TypeDefinition>
+{{endregion}}
 
 When we run the application we get a graphical representation of both the containment of files within folders, and of the relative size of the files, as shown in figure 3,
 
@@ -243,6 +271,7 @@ Create a new application and use the same set up as in the previous example (e.g
 In this demo we’ll work with GDP information that we will scientifically gather by making it up.  In MainPage.xaml.cs, create a new class within MainPage, called GdpInfo,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-14}}
 	public partial class MainPage : UserControl 
 	{
 		public class GdpInfo
@@ -253,9 +282,13 @@ In this demo we’ll work with GDP information that we will scientifically gathe
 			public double Gdp { get; set; }
 		}
 		
+	}
+{{endregion}}
+
 Create a GetData method which will generate dummy GDP data for our use,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-15}}
 	public List<GdpInfo> GetData()
 	{
 		List<GdpInfo> data = new List<GdpInfo>()
@@ -279,20 +312,24 @@ Create a GetData method which will generate dummy GDP data for our use,
 		
 		return data;
 	}
+{{endregion}}
 
 Before wiring this up to the __ItemsSource__ property of the __PivotMap__ we need to add the __PivotMap__ to the XAML,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-16}}
 	<telerik:RadPivotMap Name="xPivotMap"
 						 LayoutStrategy="Squarified"
 						 ValuePath="Gdp"
 						 LabelPath="State">
 		
 	</telerik:RadPivotMap>
+{{endregion}}
 	
 Next we add the grouping,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-17}}
 	<telerik:RadPivotMap Name="xPivotMap"
 						 LayoutStrategy="Squarified"
 						 ValuePath="Gdp"
@@ -300,12 +337,15 @@ Next we add the grouping,
 		<telerik:RadPivotMap.GroupDefinitions>
 			<telerik:GroupDefinition Member="Country" />
 		</telerik:RadPivotMap.GroupDefinitions>
-	</telerik:RadPivotMap
+	</telerik:RadPivotMap>
+{{endregion}}
 	
 Return to the constructor in the code behind and add the ItemsSource assignment,
 
 #### __C#__
+{{region xamlflix-tree-pivot-maps-18}}
 	xPivotMap.ItemsSource = this.GetData();	
+{{endregion}}
 
 Run the application and you can see the relative GDP represented graphically (the bigger the GDP, the larger the box), as shown in figure 4
 
@@ -319,6 +359,7 @@ You can add color to your __RadTreeMap__ and your __RadPivotMap__ to enhance the
 For this iteration, we’ll use the GDP data from the previous example, but we’ll change the XAML to use a TreeMap,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-19}}
 	<telerik:RadTreeMap Name="xTreeMap"
 						LayoutStrategy="Squarified"
 						BorderThickness="1"
@@ -333,7 +374,8 @@ For this iteration, we’ll use the GDP data from the previous example, but we�
 				<telerik:TypeDefinition.Mappings>
 					
 				</telerik:TypeDefinition.Mappings>
-			</telerik:TypeDefinition>	
+			</telerik:TypeDefinition>
+{{endregion}}
 			
 When you run this, you get a nice representation of the various country’s GDP but as with Figure 4 it is a bit boring in that there is no color, as is shown in figure 5,
 
@@ -343,6 +385,7 @@ Figure 5
 We can fix that in the __Mappings__ definition. We’ll add a gradient brush, and tell it the range of values that the gradient will represent. We’ll also tell it how to distribute the gradient colors using Gradient Stops.		
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-20}}
 	<telerik:TypeDefinition.Mappings>
 		<telerik:ValueGradientColorizer RangeMaximum="14600"
 										RangeMinimum="0">
@@ -354,6 +397,7 @@ We can fix that in the __Mappings__ definition. We’ll add a gradient brush, an
 						  Color="Maroon" />
 		</telerik:ValueGradientColorizer>
 	</telerik:TypeDefinition.Mappings>
+{{endregion}}
 
 When we run the application again, making no other changes, we get a much more intuitive and powerful feel for the differences among the GDP of the various countries because the color reinforces the sizes, as shown in figure 6,
 
@@ -363,6 +407,7 @@ Figure 6
 We can lend even more meaning to the colors by using a RangeBrushColorizer.  To do so, remove the mappings and create two new resources. First, create a set of SolidColorBrush resources with keys that correspond to the values we care about,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-21}}
 	<UserControl.Resources>
 		 <SolidColorBrush Color="#FFE10000"
 						  x:Key="Thousand" />
@@ -376,10 +421,12 @@ We can lend even more meaning to the colors by using a RangeBrushColorizer.  To 
 						  x:Key="FiveThousand" />
 		 <SolidColorBrush Color="Gray"
 						  x:Key="BorderBrush" />
+{{endregion}}
 						  
 With those in place, create a __RangeBrushCollection__ (also in your resources) that uses __RangeBrushes__ to map the keys to colors.
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-22}}
 	<telerik:RangeBrushCollection x:Key="ColorizerBrushes">
 		 <telerik:RangeBrush Brush="{StaticResource Thousand}"
 							 From="0"
@@ -398,10 +445,12 @@ With those in place, create a __RangeBrushCollection__ (also in your resources) 
 							 From="4001"
 							 To="15000" />
 	 </telerik:RangeBrushCollection>
+{{endregion}}
 
 Return to the mappings, but this time use a __ValueBrushColorizer__,
 
 #### __XAML__
+{{region xamlflix-tree-pivot-maps-23}}
 	<telerik:TypeDefinition.Mappings>
 		<telerik:ValueBrushColorizer IsAbsolute="True"
 									 ValuePath="Gdp"
@@ -409,6 +458,7 @@ Return to the mappings, but this time use a __ValueBrushColorizer__,
 									 RangeMaximum="14600"
 									 Brushes="{StaticResource ColorizerBrushes}" />
 	</telerik:TypeDefinition.Mappings>
+{{endregion}}
 
 The net effect is that we’ve determined the “meaning” of the colors. They are not just a gradient of relative value, but each color represents a range. The result is shown in figure 7,
 

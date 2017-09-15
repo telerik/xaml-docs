@@ -18,7 +18,6 @@ With __2013 Q2 SP__ we have introduced lightweight templates for __RadGridView a
 * [Remove the Border of the Current Cell](#remove-the-border-of-the-current-cell)
 * [Remove the Border of the Current Cell With Validation](#remove-the-border-of-the-current-cell-with-validation)
 
-
 They are represented by several additional __simplified styles, which you can merge in your project__. The main idea of simplifying templates of different parts of RadGridView is to limit the number of visual elements within the templates in order to __speed up the performance__ of __RadGridView/RadTreeListView__.   
 
 >importantThe Lightweight Templates can only be applied with NoXaml binaries and Implicit Themes. You can find more information on them [here]({%slug styling-apperance-implicit-styles-overview%}).
@@ -30,16 +29,12 @@ They are represented by several additional __simplified styles, which you can me
 {% endif %}
 
 >Please note that the __row details/hierarchy__ option is __not supported__ with these templates.
-        
-
 
 ## Core Styles
 
-The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__ including basic еffects and funcionalities such as __hover, selection, currency, grouping__ for these elements. These core styles are included within the themes of RadGridView and you may reference them in your project as shown below:
-        
+The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__ including basic еffects and funcionalities such as __hover, selection, currency, grouping__ for these elements. These core styles are included within the themes of RadGridView and you may reference them in your project as shown below:        
 
 #### __[XAML] Example 1: Applying the Lightweight Templates__
-
 {{region xaml-gridview-overview-lightweight-template_0}}
 	<Grid.Resources>
 	    <ResourceDictionary>
@@ -60,18 +55,15 @@ The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewR
 
 ![gridview overview lightweight 0](images/gridview_overview_lightweight_0.png)
 
->tipFor __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
+>tip For __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
 
->__GridViewRowCoreStyle__ does not contain a row indicator. Please set the __RowIndicatorVisibility__ property of the RadGridView to __Collapsed__ to avoid any visual differences between the row's headers and cells.
-          
+>__GridViewRowCoreStyle__ does not contain a row indicator. Please set the __RowIndicatorVisibility__ property of the RadGridView to __Collapsed__ to avoid any visual differences between the row's headers and cells.          
 
 ## Core Styles with Validation
 
-The CoreValidationStyles are an alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__. They include basic еffects and funcionalities such as __hover, selection, currency, grouping, validation__ for these elements. These core styles are included within the themes of RadGridView and you may reference it in your project as shown below.
-        
+The CoreValidationStyles are an alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__. They include basic еffects and funcionalities such as __hover, selection, currency, grouping, validation__ for these elements. These core styles are included within the themes of RadGridView and you may reference it in your project as shown below.        
 
 #### __[XAML] Example 2: Applying Lightweight Templates with Validation__
-
 {{region xaml-gridview-overview-lightweight-template_1}}
 	<Grid.Resources>
 	    <ResourceDictionary>
@@ -102,8 +94,8 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 For such requirement, you need to predefine the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates__ are used. Within the __ControlTemplate__ you need to search for the __IsCurrent Property Trigger__ and delete it.
 
 #### __[XAML] Example 3: Deleting the IsCurrent Property Trigger__
-
-	    <ControlTemplate x:Key="GridViewCellCoreTemplate" TargetType="grid:GridViewCell">
+{{region xaml-gridview-overview-lightweight-template_2}}
+	<ControlTemplate x:Key="GridViewCellCoreTemplate" TargetType="grid:GridViewCell">
         <Grid>
             ...
         </Grid>
@@ -115,6 +107,7 @@ For such requirement, you need to predefine the __ControlTemplate__ applied to _
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
+{{endregion}}
 
 #### __Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
 
@@ -124,9 +117,8 @@ For such requirement, you need to predefine the __ControlTemplate__ applied to _
 
 A similar approach as from the previous section needs to be used. The difference is that the same __Property Trigger__ has to be __deleted__ from the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates with validation__ are used.
 
-
 #### __[XAML] Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates with Validation are applied__
-
+{{region xaml-gridview-overview-lightweight-template_3}}
 	<ControlTemplate x:Key="GridViewCellCoreValidationTemplate" TargetType="grid:GridViewCell">
         <Grid>
             ...
@@ -141,6 +133,7 @@ A similar approach as from the previous section needs to be used. The difference
             ...
         </ControlTemplate.Triggers>
     </ControlTemplate>
+{{endregion}}
 
 #### __Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
 
@@ -148,4 +141,3 @@ A similar approach as from the previous section needs to be used. The difference
 
 >You can download a __runnable solution__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/LightweightTemplates).       
 >You can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
-

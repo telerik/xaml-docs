@@ -121,6 +121,6 @@ Here is how the new categories look like:
 
 ![radscheduleview categories 03](images/radscheduleview_categories_03.png)
 
-# See Also
+## See Also
 
  * [Implementing View-ViewModel ]({%slug radscheduleview-populating-with-data-implementing-view-model%})

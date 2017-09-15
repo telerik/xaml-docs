@@ -401,7 +401,7 @@ If you need further customizations of the __RadDocking__ you can take a look at 
 
 * [Style the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%})
 
-# See Also
+## See Also
 
  * [Key Features]({%slug raddocking-key-features%})
 

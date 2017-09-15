@@ -170,7 +170,7 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 
 >tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __GridView/RowDetailsTemplateSelector__. In addition to make finding and browsing the examples easier, you can take advantage of our [SDK Samples Browser]({%slug sdk-samples-browser%}).                 
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

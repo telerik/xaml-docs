@@ -65,7 +65,7 @@ The implementation of the event handler __radTabControl_SelectionChanged__ is lo
 
 >If your tab control is bound to a custom collection, the code above will fail with __InvalidCastException__, because the __AddedItems__ collection will no longer contain items of type __RadTabItem__ and the explicit cast will fail. The collection will contain items that are of the same type that the source collection contains i.e. __Person__, __TabModel__ etc.
 
-# See Also
+## See Also
 
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})
 

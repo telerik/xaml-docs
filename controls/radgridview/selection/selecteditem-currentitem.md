@@ -22,7 +22,7 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 	<telerik:RadGridView SelectedItem="{Binding SelectedItem}" />
 {{endregion}}
 
-#### __[C#] Example 2: The viewmodel's SelectedItem property
+#### __[C#] Example 2: The viewmodel's SelectedItem property__
 
 {{region cs-gridview-selection-selecteditem-currentitem-1}}
 	public class MainViewModel : ViewModelBase
@@ -44,7 +44,7 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: The viewmodel's SelectedItem property
+#### __[VB.NET] Example 2: The viewmodel's SelectedItem property__
 
 {{region vb-gridview-selection-selecteditem-currentitem-1}}
 	Public Class MainViewModel

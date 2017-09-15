@@ -99,7 +99,7 @@ You can modify these properties to achieve the desired appearance. However most 
 
 >If you want to modify the default style of the __RibbonScrollViewer__ control, you can follow the approach described in [this article]({%slug radribbonview-styling-ribbonscrollviewer%}).					
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonGroup]({%slug radribbonview-styling-ribbongroup%})

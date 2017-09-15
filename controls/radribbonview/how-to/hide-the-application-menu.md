@@ -12,6 +12,6 @@ position: 1
 
 Whenever you want to prevent the end-user from using the application menu, you should set the RadRibbonView's __ApplicationButtonVisibility__ property to __Visibility.Collapsed__. For more information, take a look at the [Application Menu]({%slug radribbonview-applicationmenu%}) topic.		
 
-# See Also
+## See Also
  * [Handle double click on application button]({%slug radribbonview-how-to-handle-double-click-on-application-button%})
  * [Add Screen Tips in the Code Behind]({%slug radribbonview-howto-add-screentips-code-behind%})

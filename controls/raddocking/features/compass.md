@@ -109,7 +109,7 @@ And the result:
 
 ![](images/RadDocking_Features_Compass_030.png)
 
-# See Also
+## See Also
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
 

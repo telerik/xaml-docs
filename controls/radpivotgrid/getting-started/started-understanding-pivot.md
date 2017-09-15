@@ -128,7 +128,7 @@ And here is __RadGridView__ with the same grouping and aggregate descriptions ap
 
 The differences are obvious - __RadPivotGrid__ is grouping data in Rows and Columns and shows only grouped values, while with __RadGridView__ you are able to expand/collapse all groups and you can see each data item.              
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

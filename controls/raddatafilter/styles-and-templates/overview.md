@@ -37,7 +37,7 @@ Read the following topics to learn more:
 
 * [Styling the FilterControl]({%slug raddatafilter-styles-and-templates-styling-the-filtercontrol%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatafilter-visual-structure%})
 

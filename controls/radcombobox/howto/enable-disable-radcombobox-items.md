@@ -169,7 +169,7 @@ Two things should be mentioned here. First, note how the __IsEnabled__ property 
 ![](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 
-# See Also
+## See Also
 
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})
 

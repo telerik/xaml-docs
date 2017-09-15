@@ -466,7 +466,7 @@ __{{region radtreeview-retrieving-checked-items_14}}
 >It is highly advisable __not to use this approach__ when dealing with a __virtualized__ tree, since this can have great impact on performance.
 		  
 
-# See Also
+## See Also
 
  * [Bind RadTreeView to Hierarchical Data and Use ContainerBindingCollection]({%slug radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection%})
 

@@ -119,7 +119,7 @@ Change the elements' properties until you get the desired look.
 >![](images/RibbonView_Styling_RibbonGroup_Triggers.png)
 {% endif %}
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the Ribbon GroupChrome]({%slug radribbonview-styling-groupchrome%})
  * [Styling the RadRibbonButton]({%slug radribbonview-styling-ribbonbutton%})

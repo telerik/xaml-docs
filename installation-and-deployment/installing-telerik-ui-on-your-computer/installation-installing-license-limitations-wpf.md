@@ -35,7 +35,7 @@ The trial licenses will occasionally display the following message on your appli
 
 Telerik UI for WPF trial version. Copyright Telerik © 2002-2014. To remove this message, please, purchase a developer version.
 
-# See Also
+## See Also
 
  * [Adding UI for WPF to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox-wpf%})
 

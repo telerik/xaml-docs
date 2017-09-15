@@ -33,7 +33,7 @@ In case you have a set of elements displayed by the __InformationLayer__, you mi
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})
  * [Navigation]({%slug radmap-features-navigation%})
  * [Put a Mark on the clicked Location]({%slug radmap-how-to-put-a-mark-on-the-clicked-location%})

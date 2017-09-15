@@ -26,6 +26,6 @@ Here you could refer to the class diagram for more detailed information about th
 
 ![radscheduleview populating with data schedule View Types Diagram](images/radscheduleview_populating_with_data_scheduleViewTypesDiagram.png)
 
-# See Also
+## See Also
 
  * [Table Definitions and Relationships]({%slug radscheduleview-populating-with-data-binding-to-db-datatier%})

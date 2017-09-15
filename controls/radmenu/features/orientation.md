@@ -77,7 +77,7 @@ Here is an example:
 
 ![Rad Menu Features Orientation and Drop Down Placement 03](images/RadMenu_Features_Orientation_and_DropDownPlacement_03.png)
 
-# See Also
+## See Also
 
  * [Opening Modes]({%slug radmenu-features-opening-modes%})
 

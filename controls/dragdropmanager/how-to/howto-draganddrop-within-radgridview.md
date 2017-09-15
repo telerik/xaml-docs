@@ -663,12 +663,14 @@ Finally, you should populate your __RadGridView__ with sample data and attach th
 {{endregion}}
 
 #### __VB.NET__
+{{region dragdropmanager-howto-draganddrop-within-radgridview_20}}
 	Public Sub New()
 		InitializeComponent()
 
 		Me.radGridView.ItemsSource = MessageViewModel.Generate()
 		RowReorderBehavior.SetIsEnabled(Me.radGridView, True)
 	End Sub
+{{endregion}}
 
 >tipYou can download a __runnable project__ on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines).
 

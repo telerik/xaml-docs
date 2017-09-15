@@ -509,7 +509,7 @@ PivotFieldList_ItemFilterConditionCaption	|	Show items with value that	|	Used as
 PivotFieldList_None	|	Data source order	|	Used as a content of a RadioButton in the More Sorting Options dialog of a group description.
 PivotFieldList_Sort_BySortKeys	|	by Sort Keys	|	Used in the More Sorting Options dialog of a group description when data provider is OLAP Cube.
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

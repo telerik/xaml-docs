@@ -20,7 +20,7 @@ To make it left aligned and remove the selection you can set the __SelectAllText
 
 ![](images/ComboSelection_2.jpg)
 
-# See Also
+## See Also
 
  * [Setting up AutoComplete]({%slug radcombobox-setting-up-autocomplete%})
 

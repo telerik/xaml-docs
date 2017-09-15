@@ -198,6 +198,6 @@ __Step 5:__ Register the custom document presenter as demonstrated in **Example 
 >tip You can download an example that demonstrates how to create and register a custom document presenter from  [our SDK repository on GitHub](https://github.com/telerik/xaml-sdk/blob/master/PdfViewer/CustomPresenter).
         
 
-# See Also
+## See Also
 
  * [Document Presenter]({%slug radpdfviewer-ui-document-presenters%})

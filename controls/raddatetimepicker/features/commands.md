@@ -43,7 +43,7 @@ __Example 2__ demonstrates how to close the drop down of __RadDateTimePicker__ b
 	RadDateTimePickerCommands.Close.Execute(null, this.dateTimePicker1);
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Date Selection Modes]({%slug raddatetimepicker-features-date-selection-modes%})
 

@@ -12,7 +12,7 @@ position: 2
 
 For implementing Custom Hierarchies you can use the RowDetails option. Addtion information is described in its section [here]({%slug radgridview-row-details-overview%}). 
 
-# See Also
+## See Also
 
  * [Basic Hierarchies]({%slug gridview-basic-hierarchies%})
 

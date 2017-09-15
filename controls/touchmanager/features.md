@@ -30,14 +30,20 @@ TouchManager exposes the following public properties:
 		> The element on which this value is set should be a ScrollViewer. Otherwise, an exception will be thrown.
 	* __Parent__: If an unhandled swipe gesture occurs for this element, the first ScrollViewer parent will get panned.
 	
-	#### __[XAML]: Setting ScrollViewerSwipeMode in XAML__
+	#### __[XAML] Example 1: Setting ScrollViewerSwipeMode in XAML__
+	{{region touchmanager-features-0}}
 		<ListBox x:Name="element" telerik:TouchManager.ScrollViewerSwipeMode="Parent">
+	{{endregion}}
 		
-	#### __[C#]: Setting ScrollViewerSwipeMode in code__
+	#### __[C#] Example 2: Setting ScrollViewerSwipeMode in code__
+	{{region touchmanager-features-1}}
 		TouchManager.SetScrollViewerSwipeMode(this.element, ScrollViewerSwipeMode.Parent);
+	{{endregion}}
 		
-	#### __[VB.NET]: Setting ScrollViewerSwipeMode in code__
+	#### __[VB.NET] Example 2: Setting ScrollViewerSwipeMode in code__
+	{{region touchmanager-features-2}}
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
+	{{endregion}}
 
 * __ShouldSuspendMousePromotion__: An attached property of type __bool__ that indicates whether mouse events should be suspended during touch input.
 		
@@ -62,14 +68,20 @@ TouchManager exposes the following public properties:
 	* __TouchMove__: The drag operation will be triggered during a TouchMove, regardless of whether a TapAndHold event has occured or not.
 	* __TapAndHold__ (default): The drag operation will be triggered during a TapAndHold event.
 
-	#### __[XAML]: Setting DragStartTrigger in XAML__
+	#### __[XAML] Example 3: Setting DragStartTrigger in XAML__
+	{{region touchmanager-features-3}}
 		<Border x:Name="element" telerik:TouchManager.DragStartTrigger="TapHoldAndMove">
+	{{endregion}}
 		
-	#### __[C#]: Setting DragStartTrigger in code__
+	#### __[C#] Example 4: Setting DragStartTrigger in code__
+	{{region touchmanager-features-4}}
 		TouchManager.SetDragStartTrigger(this.element, TouchDragStartTrigger.TapHoldAndMove);
+	{{endregion}}
 		
-	#### __[VB.NET]: Setting DragStartTrigger in code__
+	#### __[VB.NET] Example 4: Setting DragStartTrigger in code__
+	{{region touchmanager-features-5}}
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
+	{{endregion}}
 
 >important The __IsTouchHitTestVisibility__ property is __obsolete__ and __replaced__ by the __TouchMode__ property.
 

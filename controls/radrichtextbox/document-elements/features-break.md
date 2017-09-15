@@ -60,7 +60,7 @@ The __Break__ element exposes a __BreakType__ property, which specifies the type
 
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

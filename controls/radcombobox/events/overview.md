@@ -36,7 +36,7 @@ The __RadComboBox__ is an __ItemsControl__. Almost all of the exposed events are
 
 		1. RemovedItems - gets a list that contains the items that were unselected.
 		
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radcombobox-general-information-visual-structure%})
 

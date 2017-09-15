@@ -67,7 +67,7 @@ In order to remove a task you have to remove it from the __TasksSource__ collect
 
 >Note that when removing a task, you should also remove programmatically the relations to this item.
 
-# See Also
+## See Also
 
  * [Types of Items]({%slug radganttview-features-items-types%})
 

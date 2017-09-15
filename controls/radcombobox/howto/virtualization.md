@@ -31,6 +31,6 @@ In some scenarios it is required to load thousands of items in a __RadComboBox__
 
 >importantWhen RadComboBox is virtualized the filtering is not supported.
 
-# See Also
+## See Also
 
  * [Creating ItemTemplate and SelectionBoxTemplate]({%slug radcombobox-creating-itemtemplate%})

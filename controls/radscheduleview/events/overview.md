@@ -181,6 +181,6 @@ __RadScheduleView__ exposes the following events regarding the data manipulation
 	}
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})

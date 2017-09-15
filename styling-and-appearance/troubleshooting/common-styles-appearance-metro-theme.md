@@ -29,6 +29,6 @@ __Solution:__
 To fix the issue, you should just call the Freeze method on the PalleteInstance of the Windows8Colors. Telerik.Windows.Controls.Windows8Palette.Palette.Freeze();
           
 
-# See Also
+## See Also
 
  * [Colorizing Windows8 Theme]({%slug common-styles-appearance-colorizing-metro-theme%})

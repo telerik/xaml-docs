@@ -413,7 +413,7 @@ You can find the final XAML definition of the "if-else" flow diagram in __Exampl
 #### __Figure 13: "if-else" operator flow diagram visual look__  
 ![Rad Diagram Getting Started Result](images/RadDiagram_GettingStartedResult.png)
 
-# See Also
+## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Connections]({%slug raddiagrams-features-connections%})

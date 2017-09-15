@@ -163,7 +163,7 @@ The next screenshots show the final result:
 * After the RadBusyIndicator is hidden (the focused TextBox is focused):
 ![radbusyindicator-how-to-restore-the-focus-3](images/radbusyindicator-how-to-restore-the-focus-3.png)
 
-# See Also
+## See Also
 
  * [Delayed Display]({%slug radbusyindicator-features-delayed-display%})
 

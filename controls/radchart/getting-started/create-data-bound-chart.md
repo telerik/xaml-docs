@@ -303,7 +303,7 @@ If you need to know more about __RadChart__ data binding, take a look at the fol
 
 * [Data Binding to ADO.NET Data Service]({%slug radchart-populating-with-data-binding-to-adonet-service%})
 
-# See Also
+## See Also
 
  * [Key Features]({%slug radchart-overview-key-features%})
 

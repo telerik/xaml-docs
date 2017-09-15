@@ -32,7 +32,7 @@ When the drop down button is selected:
 
 * __Input Box__– is the __RadWatermarkTextBox__ control showing the selected value and allowing you to enter date/time values.
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

@@ -44,7 +44,7 @@ By default all of the MenuItems has equal space reserved for an Icon. With the Q
 	</telerik:RadMenu>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radmenu-getting-started%})
 

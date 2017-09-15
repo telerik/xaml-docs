@@ -20,7 +20,7 @@ This article will discuss the following topics:
 
 ## ITraceMonitor Interface
 
-As of **R2 2017 SP1**, the UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
+As of **R2 2017 SP1**, the Telerik UI for {{ site.framework_name }} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
 
 You need to implement the following methods in order to receive trace events from the controls used in your application:
 
@@ -63,7 +63,7 @@ Let's first define a couple of controls.
 	</StackPanel> 
 {{endregion}}
 
-All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 4__. Note that the set values will be used in the dashboard.
+All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 3__. Note that the set values will be used in the dashboard.
 
 #### __[XAML] Example 3: Set Analytics.Name property__
 
@@ -91,6 +91,14 @@ Feature	|	Feature Name
 ---	|	---
 __RadBusyIndicator__	|	
 Show	|	ShowIndicator
+__RadCalendar__ |
+SelectionChanged	|	SelectionChanged
+__RadCarousel__ |
+SelectionChanged	|	SelectionChanged
+__RadColorEditor__ |
+SelectionChanged	|	SelectionChanged
+__RadColorPicker__ |
+SelectionChanged	|	SelectionChanged
 __RadComboBox__	|	
 SelectionChanged	|	SelectionChanged
 DropDownOpened	|	DropDownOpened
@@ -109,11 +117,16 @@ __RadGridView__	|
 Sort	|	Sorted
 Group	|	Grouped
 Filter	|	Filtered
+SelectionChanged	|	SelectionChanged
+__RadListBox__ |
+SelectionChanged	|	SelectionChanged
 __RadMenu__	|	
 Click	|	Click
 __RadRadioButton__ |	
 Checked	|	Checked
 UnChecked	|	UnChecked	
+__RadRibbonView__ |
+SelectionChanged	|	SelectionChanged
 __RadRichTextBox__	|	
 Open Document	|	Open Document
 Save Document	|	Save Document
@@ -123,6 +136,10 @@ Open Document	|	Open Document
 Save Document	|	Save Document
 Load Image	|	LoadImage
 Save Image	|	SaveImage	
+__RadTabControl__ |
+SelectionChanged	|	SelectionChanged
+__RadTileView__	|
+SelectionChanged	|	SelectionChanged
 __RadToggleButton__	|	
 Checked	|	Checked
 UnChecked	|	UnChecked
@@ -130,6 +147,11 @@ __RadTreeListView__	|
 Sort	|	Sorted
 Group	|	Grouped
 Filter	|	Filtered
+SelectionChanged	|	SelectionChanged
+__RadTreeView__ |
+SelectionChanged	|	SelectionChanged
+__RadVirtualGrid__ |
+SelectionChanged	|	SelectionChanged
 
 {% if site.site_name == 'WPF' %}
 ## See Also

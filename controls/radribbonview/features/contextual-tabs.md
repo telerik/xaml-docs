@@ -239,6 +239,6 @@ You can easily control the active groups from code-behind. For instance, the __I
 ![Rad Ribbon View Contextual Groups Activate 1](images/RadRibbonView_ContextualGroups_Activate1.png)
 ![Rad Ribbon View Contextual Groups Activate 2](images/RadRibbonView_ContextualGroups_Activate2.png)
 
-# See Also
+## See Also
  * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
  * [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})

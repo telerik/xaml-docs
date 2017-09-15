@@ -296,7 +296,7 @@ Run your demo, the result can be seen on the snapshot below:
 
 ![](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_020.png)
 
-# See Also
+## See Also
 
  * [DataBinding Support Overview]({%slug radcombobox-populating-with-data-binding-support-overview%})
 

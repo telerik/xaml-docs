@@ -592,7 +592,7 @@ Now you can drag and drop items from one treeview to another:
 
 You can use the built-in __RadTreeView DragDrop__ when implementing drag-drop between the tree and other controls such as a __ListBox__. For  more information you can read the topic [How To Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%}).
 
-# See Also
+## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})
  * [Implement Copy Drag]({%slug radtreeview-how-to-implement-copy-drag%})

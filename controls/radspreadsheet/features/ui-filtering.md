@@ -142,7 +142,7 @@ Figure 7: Result
 They will not become available again, until we remove the filtering from the second column.
         
 
-# See Also
+## See Also
  * [Model Filtering](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering)
 
  * [Sorting]({%slug radspreadsheet-ui-sorting%})

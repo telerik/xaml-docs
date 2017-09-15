@@ -372,6 +372,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
 
 #### __[XAML] Example 6: Specify BackstageClippingElement property__
+{{region radribbonview-ribbon-backstage_6}}
      <Grid x:Name="LayoutRoot" Background="White" ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -398,6 +399,7 @@ The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that al
             </telerik:RadRibbonView>
         </Grid>
     </Grid>
+{{endregion}}
 
 #### __Figure 5: RadRibbonView with BackstageClippingElement property set__
 ![](images/RadRibbonView_BackstageClippingElement_Sample.PNG)

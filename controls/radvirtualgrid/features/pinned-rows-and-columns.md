@@ -12,6 +12,8 @@ position: 1
 
 __RadVirtualGrid__ provides pinning mechanism for both its rows and columns. Through it a given row can be pinned to the top or bottom of the grid. Respectively, a column can be pinned to the left or right side of __RadVirtualGrid__. Thus, they will not take part in the vertical or horizontal scrolling. This functionality can be controlled through the following methods exposed by the API of the control.
 
+> __RadVirtualGrid__ exposes built-in commands for its pinning functionality. More information can be found in the [Commands Overview]({%slug virtualgrid-commands-overview%}).
+
 * __PinRowTop(int index)__: Pins a row at a given index on the top.
 
 #### __[C#] Example 1: Calling the PinRowTop method__

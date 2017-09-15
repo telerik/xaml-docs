@@ -107,7 +107,7 @@ Using the ElementCreatedEventArgs provided by each of the above events, the user
 	* __LayoutUpdated__ - Occurs when the layout of the visual tree changes.
 	
 
-# See Also
+## See Also
 
  * [RadPane]({%slug raddocking-panes-radpane%})
 

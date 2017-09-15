@@ -50,7 +50,7 @@ Here is a snapshot of the result.
 
 ![Rad Menu How To Multicolumn Menu 01](images/RadMenu_How_To_Multicolumn_Menu_01.png)
 
-# See Also
+## See Also
 
  * [Using Static Items]({%slug radmenu-populating-with-data-using-static-items%})
 

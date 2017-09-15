@@ -17,7 +17,7 @@ After that bring the template for the __DataPagerPresenter__ in edit mode and ma
 
 >tip You might find it useful to get familiar with the [Template Structure of the DataPagerPresenter](http://penev/devtools/wpf/controls/raddatapager/styles-and-templates/template-structure#datapagerpresenter).
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug raddatapager-styles-and-templates-template-structure%})
 

@@ -141,7 +141,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

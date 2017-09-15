@@ -20,7 +20,7 @@ In this section you will find:
 * [Drawing Tools]({%slug raddiagram-features-drawing%})
 * [Text Tool]({%slug raddiagrams-tools-text-tool%})
 
-# See Also
+## See Also
  * [Pan and Zoom]({%slug raddiagrams-features-pan-zoom%})
  * [Selection]({%slug raddiagrams-features-selection%})
  * [Align and Snap ]({%slug raddiagrams-features-snap%})

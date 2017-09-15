@@ -100,7 +100,7 @@ By default there is no easing function specified for the __RadTransitionControl_
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Transitions]({%slug radtransition-features-transitions%})
 

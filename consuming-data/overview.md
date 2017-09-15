@@ -11,7 +11,7 @@ position: 0
 # Overview
 
 
-Telerik __UI for__ can be populated with data in any of the following ways:
+Telerik __Telerik UI for {{ site.framework_name }}__ can be populated with data in any of the following ways:
 
 {% if site.site_name == 'WPF' %} 
 * Populating with data from __WCF Service__. [Read more]({%slug consuming-data-wcf-service%})

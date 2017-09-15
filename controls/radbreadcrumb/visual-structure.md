@@ -28,5 +28,5 @@ The structure of the __RadBreadcrumb__ is pretty simple. It consists of the foll
 
 * __History ToggleButton__ - displays the list of __RadBreadcrumb.HistoryItems__
 
-# See Also
+## See Also
  * [Features Overview]({%slug radbreadcrumb-features-overview%})

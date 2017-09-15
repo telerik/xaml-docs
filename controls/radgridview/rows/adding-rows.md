@@ -33,7 +33,7 @@ __RadGridView__ gives you the ability to make the newly inserted row visible. Al
 The default text of the __GridViewNewRow__ is *"Click here to add new item"*. However, you can change the content by creating a custom [LocalizationManager]({%slug common-localization%}), override the *GetStringOverride* method for the *GridViewAlwaysVisibleNewRow* resource and apply the custom manager to your application. 
 
 #### __[C#] Example 1: Create custom LocalizationManager class__
-
+{{region gridview-rows-adding-rows-0}}
 	class CustomLocalizationManager : LocalizationManager
     {
         public override string GetStringOverride(string key)
@@ -47,14 +47,16 @@ The default text of the __GridViewNewRow__ is *"Click here to add new item"*. Ho
            
         }
     }
+{{endregion}}
         
 #### __[C#] Example 2: Apply the custom LocalizationManager for your application__
-
+{{region gridview-rows-adding-rows-0}}
 	 public MainWindow()
         {
             InitializeComponent();
             LocalizationManager.Manager = new CustomLocalizationManager();
         }
+{{endregion}}
 
 __Figure 3__ shows the result after the custom LocalizationManager is applied.
 
@@ -63,10 +65,7 @@ __Figure 3__ shows the result after the custom LocalizationManager is applied.
 
 To learn more about how to utilize __GridViewNewRow__ take a look at the [Adding New Entries]({%slug gridview-managing-data-add-new-entries%}) topic.
         
-# See Also
-
+## See Also
  * [Customizing Rows]({%slug gridview-customizing-rows%})
-
  * [Grid Rows - Overview]({%slug gridview-rows-overview%})
-
  * [Cannot Insert New Row]({%slug gridview-troubleshooting-cannot-insert-new-row%})

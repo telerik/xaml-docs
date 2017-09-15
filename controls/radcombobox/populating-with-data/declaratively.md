@@ -47,7 +47,7 @@ In order to add combobox items you need to use the __RadComboBox__'s __Items__ p
 
 >tipConsider declaring combobox items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
-# See Also
+## See Also
 
  * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
 

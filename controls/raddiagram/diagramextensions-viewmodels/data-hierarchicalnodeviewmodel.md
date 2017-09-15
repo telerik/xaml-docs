@@ -46,7 +46,7 @@ Inherited Properties
 |Content|Gets or sets an object that represents the content of a shape.|
 |IsSelected|Gets or sets a Boolean value indicating whether the represented shape is selected.|
 
-# See Also
+## See Also
  * [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%})
  * [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%})
  * [LinkViewModelBase]({%slug raddiagram-data-linkviewmodel%})

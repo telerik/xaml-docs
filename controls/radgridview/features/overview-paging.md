@@ -97,7 +97,7 @@ Take a look at the following topics which explain in great details the various f
 
 * [Data Selection]({%slug gridview-overview-data-selection%}) functionality. 
 
-# See Also
+## See Also
 
  * [Grouping]({%slug gridview-overview-grouping%})
 

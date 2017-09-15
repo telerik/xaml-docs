@@ -30,7 +30,7 @@ __RadTimeSpanPicker__ is a component control that provides a full control over p
 
 You can check __RadTimeSpanPicker__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtimespanpicker-getting-started%})
 

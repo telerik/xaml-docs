@@ -40,10 +40,12 @@ RadDiagramNavigationPane is consisted of:
 In order to use with the DiagramNavigationPane you have to bind its Diagram property to a RadDiagram:		
 
 #### __XAML__
+{{region raddiagram-extensions-navigationpane-0}}
 	<telerik:RadDiagram x:Name="diagram" />
 	<telerik:RadDiagramNavigationPane Diagram="{Binding ElementName=diagram}"
 								      HorizontalAlignment="Left"
    									  VerticalAlignment="Bottom"/>
+{{endregion}}
 
 Once you bind the Diagram property you have to decide whether the control will be expanded or not.
 
@@ -73,5 +75,5 @@ You can also hide the AutoFitButton by using the __IsAutofitButtonVisible__ prop
 This way the AutoFitButton will be collapsed in both the mini mode and the expanded mode of the DiagramNavigationPane. 
 ![raddiagram-extensions-navigationpane-autofitcollapsed](images/raddiagram-extensions-navigationpane-autofitcollapsed.png)
 
-# See Also
+## See Also
  * [Thumbnail]({%slug raddiagram-extensions-thumbnail%})

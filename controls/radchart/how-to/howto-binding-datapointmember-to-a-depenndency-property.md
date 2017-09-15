@@ -135,7 +135,7 @@ Here is the final result:
 
 >tipYou should move the focus out of the Text box in Silverlight to be able to see the new value of the Bar. 
 
-# See Also
+## See Also
 
  * [MVVM Support]({%slug radchart-how-to-mvvm-support%})
 

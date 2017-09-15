@@ -18,6 +18,7 @@ The following article will show how you can save the __RadDiagram__ in the File 
 Let's first configure our XAML. We'll keep it simple - two buttons for Save and Load and a Diagram with one shape.
 
 #### __XAML__
+{{region raddiagrams-howto-save-0}}
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -32,6 +33,7 @@ Let's first configure our XAML. We'll keep it simple - two buttons for Save and 
 			<telerik:RadButton Content="Load From Storage" x:Name="loadButton" Click="loadButton_Click" />
 		</StackPanel>
 	</Grid>
+{{endregion}}
 
 In code behind we are using the Click event handlers of our Save/Load Buttons. On Save, we use a __SaveFileDialog__ and we can create new or overwrite an existing text file.		
 
@@ -40,6 +42,7 @@ Then we use the __RadDiagram.Save()__ - this returns a string with the serialize
 On Load, we open the created file by __OpenFileDialog__ and use __StreamReader__ and __RadDiagram.Load()__ method.		
 
 #### __C#__
+{{region raddiagrams-howto-save-1}}
 	public partial class MainWindow : Window
 	{
 		private string fileName;
@@ -99,8 +102,10 @@ On Load, we open the created file by __OpenFileDialog__ and use __StreamReader__
 			}
 		}
 	}
+{{endregion}}
 
 #### __VB.NET__
+{{region raddiagrams-howto-save-2}}
 	Partial Public Class MainWindow
 		 Inherits Window
 		   Private fileName As String
@@ -150,7 +155,8 @@ On Load, we open the created file by __OpenFileDialog__ and use __StreamReader__
 				   End If
 			   End Try
 	End Sub
+{{endregion}}
 
-# See Also
+## See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})
  * [Commands]({%slug raddiagrams-features-commands%})

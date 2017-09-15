@@ -49,6 +49,6 @@ For example you can define a generic AggregateFunction which calculates the Sum 
 	playersGrid.Columns[0].AggregateFunctions.Add(aggregate);
 {{endregion}}
 
-# See Also
+## See Also
 
 * [Column Aggregate Functions]({%slug gridview-columns-aggregate-functions%})

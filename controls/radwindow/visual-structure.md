@@ -28,7 +28,7 @@ This section defines the terms and concepts used in the scope of __RadWindow__ y
 
 * __Resizable Border__ - resizes the __RadWindow__ along the X and Y axes. [Read more]({%slug radwindow-features-resizing%})
 
-# See Also
+## See Also
 
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
 

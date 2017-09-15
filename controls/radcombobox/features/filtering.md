@@ -82,7 +82,7 @@ Start your demo and write "al" in the __input box__. Now only items, which text 
 
 >importantWhen RadComboBox is virtualized the filtering is not supported.
 
-# See Also
+## See Also
 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 

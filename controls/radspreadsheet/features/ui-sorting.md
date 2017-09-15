@@ -173,7 +173,7 @@ Figure 5: Filtering Popus Sorting by Color
 
 ![Rad Spreadsheet UI Sorting 05](images/RadSpreadsheet_UI_Sorting_05.png)
 
-# See Also
+## See Also
  * [Model Sorting](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/sorting)
 
  * [Filtering]({%slug radspreadsheet-ui-filtering%})

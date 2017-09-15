@@ -124,7 +124,7 @@ The Step Area chart type is similar to step line with the area under the step li
 ![](images/RadChart_types_RangeBar_thumb.png)
 The Range Bar, like the CandleStick chart, shows a range of value movement over time. It uses only bars to do so. The vertical bar  shows the extreme high and low values. The Range Bar can have Horizontal orientation. The Range Bar chart type displays separate events that have beginning and end values known as Low and High.
 
-# See Also
+## See Also
 
  * [3D Charts]({%slug radchart-features-chart-types-3d-charts%})
 

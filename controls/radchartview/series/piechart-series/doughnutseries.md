@@ -34,5 +34,7 @@ You can use the following definition to display a simple DoughnutSeries
 
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
 
-# See Also
+## See Also
+
+ * [Customizing Doughnut Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%}#customizing-doughnut-series)
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

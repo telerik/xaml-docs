@@ -116,7 +116,7 @@ div#tocNav > div.toclevel10 {
 
 /* Search form */
 form#SearchForm {
-	height: 28px;
+    height: 28px;
     margin: 0 0 0 85px;
     position: absolute;
     top: 61px;

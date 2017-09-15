@@ -24,7 +24,7 @@ Here is a sample definition of __RadMenuItem__, used as separator:
 
 >tipIn order to customize the appearance of the separator you have to set the __SeparatorTemplateKey__ to an appropriate __ControlTemplate__. To learn more about the __RadMenuItem's__ templates read [this topic]({%slug radmenu-styles-and-templates-templates-structure%}).
 
-# See Also
+## See Also
 
  * [Checkable Items]({%slug radmenu-features-checkable-items%})
 

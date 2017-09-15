@@ -51,13 +51,11 @@ In order to use the __RadTreeListView__ in your application, you should add refe
 
 After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code (Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
 
-
 >In order to use __RadTreeListView__ in XAML, you have to declare the following namespace:
 >#### __[XAML] Example 1: Declaring Telerik Namespace__
 >{{region radtreeliestview-getting-started_0}}
 >	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 >{{endregion}}
-
 
 
 #### __[XAML] Example 2: Adding RadTreeListView in XAML__
@@ -287,6 +285,7 @@ Here is an example class that dynamically creates the sample data.
 Finally, define a view model containing the created sample data.
 
 #### __[C#] Example 5: Define a Sample View Model__
+{{region radtreeliestview-getting-started_12}}
 	public class WarehouseViewModel: ViewModelBase
 	{
 	    private ObservableCollection<WarehouseItem> warehouseItems;
@@ -304,8 +303,10 @@ Finally, define a view model containing the created sample data.
 	        }
 	    }
 	}
+{{endregion}}
 
 #### __[VB.NET] Example 5: Define a Sample View Model__
+{{region radtreeliestview-getting-started_13}}
 	Public Class WarehouseViewModel
 		Inherits ViewModelBase
 	
@@ -321,6 +322,7 @@ Finally, define a view model containing the created sample data.
 	        End Get
 	    End Property
 	End Class
+{{endregion}}
 
 In order to display your data, you need to bind the __ItemsSource__ property of __RadTreeListView__.
 
@@ -393,11 +395,7 @@ __Figure 2: RadTreeListView with manually defined columns__
 
 ![](images/RadTreeListView_GettingStarted_01.png)
 
-
-# See Also
-
+## See Also
  * [Data Binding]({%slug radtreelistview-features-data-binding%})
-
  * [Columns]({%slug radtreelistview-features-columns%})
-
  * [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%})

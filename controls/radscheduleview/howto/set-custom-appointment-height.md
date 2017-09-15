@@ -145,7 +145,7 @@ Figure 1: Appointments with different heights in MonthViewDefinition
 
 >tipYou can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
 
-# See Also
+## See Also
 
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
 

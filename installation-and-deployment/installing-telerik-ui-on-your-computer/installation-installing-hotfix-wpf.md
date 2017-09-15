@@ -70,7 +70,7 @@ In order to apply the Hotfix you need to perform the following instructions:
 >* Clean the project as sometimes Visual Studio is caching old binaries. Then Rebuild.       
 >* If this does not help, delete the bin and obj folders of the project manually and Rebuild.
             
-# See Also
+## See Also
 
  * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})
 

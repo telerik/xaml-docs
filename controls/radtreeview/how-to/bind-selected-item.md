@@ -32,7 +32,7 @@ If you want to bind to the __RadTreeViewItem__'s __IsSelected__ property when yo
 	</telerik:RadTreeView>
 	{{endregion}}
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})
  * [Change the Default Height of a TreeViewItem]({%slug radtreeview-how-to-change-default-height-treeviewitem%})

@@ -10,7 +10,7 @@ position: 0
 
 # Setting a Theme
 
-__UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite provides a variety of themes that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
+__Telerik UI for {{ site.framework_name }}__ suite provides a [variety of themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
 
 The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and modifications through **Blend** is supported. 
 
@@ -22,7 +22,7 @@ To apply a theme, you need to merge these files into the **Merged Dictionaries**
 
 ## Where Can a Theme Be Found?
 
-After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite, you will find the following structure in the installation folder (usually C://Program Files/Telerik/ UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} [version]/)
+After installing the __Telerik UI for {{ site.framework_name }}__ suite, you will find the following structure in the installation folder (usually C://Program Files/Telerik/ Telerik UI for {{ site.framework_name }} [version]/)
     
 
 * __[Binaries](#standard-binaries-vs-noxaml-binaries)__: The standard binaries including the themes dlls.
@@ -33,7 +33,7 @@ After installing the __UI for {% if site.site_name == 'Silverlight' %}Silverligh
 
 ### Themes.Implicit Folder
 
-As its name suggests, the **Themes.Implicit** folder contains all styles and resources needed for the visualization of the **UI for WPF** controls. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
+As its name suggests, the **Themes.Implicit** folder contains all styles and resources needed for the visualization of the **Telerik UI for {{ site.framework_name }}** controls. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
 
 ### Standard Binaries vs NoXAML Binaries
 
@@ -43,7 +43,7 @@ The **NoXAML binaries**, on the other hand, *do not include any XAML files* - no
 
 ## Does a Theme Affect All WPF Controls?
 
-All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
 
 ## Applying a Theme for Your Application
 
@@ -66,7 +66,7 @@ The approaches are shown in details below:
 ![implicit styles 1](images/implicit-styles-theme-dll.PNG)
 
 #### __[XAML] Example 1: After you add a reference, you should merge the needed .xaml files__
-
+{{region styling-apperance-implicit-styles-overview-0}}
 	 <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -79,6 +79,7 @@ The approaches are shown in details below:
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>	
 	 </Application.Resources>
+{{endregion}}
  
 ### Copy the XAML files in a dedicated folder in your application
 
@@ -95,7 +96,7 @@ As already advised, the default styles and resources for each theme are shipped 
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
 #### __[XAML] Example 2: The MergedDictionaries in your application resources:__
-
+{{region styling-apperance-implicit-styles-overview-1}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -108,6 +109,7 @@ As already advised, the default styles and resources for each theme are shipped 
 	    		</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
+{{endregion}}
 
 
 >If you copy the XAML files in your project, please make sure that they are with the proper build action. Generally it should be __Resource__, but for the __Telerik.Windows.Controls.RibbonView.xaml__ file the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).

@@ -131,7 +131,7 @@ Here is a snapshot of the final result:
 
 ![](images/RadMap_Features_HotSpots_02.png)
 
-# See Also
+## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})
  * [Framework Elements]({%slug radmap-features-information-layer-framework-elements%})
  * [Map Shapes]({%slug radmap-features-map-shapes%})

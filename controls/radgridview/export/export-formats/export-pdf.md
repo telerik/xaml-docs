@@ -48,10 +48,10 @@ The __ExportToPdf__ method uses additional libraries so you need to add referenc
 * ShowColumnHeaders
 * ExportDefaultStyles  
 
-
 The following example shows how to use the method on a button click:
 
 #### __[C#] Example 1: Usage of Method ExportToPdf__
+{{region gridview-export-pdf-0}}
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "pdf";
@@ -78,7 +78,7 @@ The following example shows how to use the method on a button click:
 	        }
 	    }
 	}
-
+{{endregion}}
 
 ## Export Default Styles
 
@@ -94,7 +94,7 @@ By default the ExportDefaultStyles property is set to false. You can see the res
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2)
 
 #### __[C#] Example 2: Configuring ExportDefaultStyles property__
-
+{{region gridview-export-pdf-1}}
 	gridViewExport.ExportToPdf(stream,
     	new GridViewPdfExportOptions()
 		{
@@ -103,6 +103,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 		    ShowGroupFooters = true,
 		    ExportDefaultStyles = true
 		});   
+{{endregion}}
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
 ![ExportDefaultStyles false](../images/exportdefaultstyles4.png)
@@ -112,7 +113,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
 
 #### __[C#] Example 3: Setting the AutoFitColumnsWidth Property to False__
-
+{{region gridview-export-pdf-2}}
 	this.gridViewExport.ExportToPdf(stream,
     	new GridViewDocumentExportOptions()
 		{
@@ -122,6 +123,7 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 		    ExportDefaultStyles = true,
 		    AutoFitColumnsWidth = false
 		});
+{{endregion}}
 
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
 ![AutoFitColumnsWidth false](../images/autofitcolumnswidthPdf.png)
@@ -138,13 +140,8 @@ There are two events related to the exporting of RadGridView with the ExportToPd
 
 * **[Style Exported XLSX & PDF Documents]({%slug gridview-export-style-exported-xlsx-pdf-documents%})**
 
-
 ## See Also ##
-
  * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Export]({%slug gridview-export%})
-
  * [Export Async]({%slug gridview-export-async%})
-
  * [Export Events]({%slug gridview-export-events%})

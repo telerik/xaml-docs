@@ -316,7 +316,7 @@ This section contains all features demonstrated in the article assembled into a 
 #### __Figure 9: RadRibbonView example__  
 ![](images/ribbonview-getting-started-09.png)
 
-# See Also
+## See Also
  * [Commands Support]({%slug radribbonview-features-commands-support%})
  * [Developer Focused Examples]({%slug radribbonview-sdk-examples%})
  * [Events]({%slug radribbonview-events-overview%}) 

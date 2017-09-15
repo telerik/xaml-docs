@@ -67,7 +67,7 @@ You can see the final result on __Figure 2__.
 Figure 2: RadComboBox with custom TextBoxStyle applied.
 ![Rad Combo Box Features Text Box Style 02](images/RadComboBox_Features_TextBoxStyle_02.png)
 
-# See Also
+## See Also
 
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
 

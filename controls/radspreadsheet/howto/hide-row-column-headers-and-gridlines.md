@@ -43,6 +43,6 @@ If you want to show or hide the gridlines of __RadSpreadsheet__ just set the __S
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
           
 
-# See Also
+## See Also
 
  * [Customize Row and Column Headers]({%slug radspreadsheet-howto-customize-row-column-headers%})

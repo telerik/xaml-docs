@@ -141,7 +141,7 @@ The alignment lines are part of the __AlignmentAdorner__ and therefore their app
 
 ![raddiagram-features-align-customstyle](images/raddiagram-features-align-customstyle.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

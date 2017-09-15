@@ -111,7 +111,7 @@ Finally, set the **MergedCellsStyleSelector** property:
 #### __[XAML] Example 3: Setting the MergedCellsStyleSelector property__
 
 	{{region gridview-styling-merged-cells-6}}
-	<telerik:RadGridView MergedCellsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
+	<telerik:RadGridView MergedCellsDirection="Vertical" MergedCellsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
 	{{endregion}}
 
 And here is the final result:
@@ -122,6 +122,6 @@ And here is the final result:
 
 ## See Also
 
+* [Merged Cells]({%slug gridview-merged-cells%})
 * [Styling a Cell]({%slug gridview-styling-cell%})
-
 * [Styling Merged Cells]({%slug gridview-styling-mergedcell%})

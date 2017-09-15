@@ -87,7 +87,7 @@ One of the important custom events that __RadHtmlPlaceholder__ exposes is the __
 
 ![htmlplaceholder-howto-events](images/htmlplaceholder-howto-events.png)
 
-# See Also
+## See Also
 
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
 

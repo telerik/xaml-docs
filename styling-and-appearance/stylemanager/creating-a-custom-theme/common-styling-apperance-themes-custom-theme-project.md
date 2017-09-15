@@ -135,7 +135,7 @@ The purpose of this topic is to show you how to do that.
 	![Common Styling Theming Creating Custom Theme 030](images/Common_StylingTheming_Creating_Custom_Theme_030.png)
 
 
-# See Also
+## See Also
 
  * [Creating a Custom Theme Project - Using the Telerik Approach]({%slug common-styling-apperance-themes-custom-theme-project-telerik-approach%})
 

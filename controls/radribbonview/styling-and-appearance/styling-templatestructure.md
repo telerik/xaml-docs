@@ -40,7 +40,7 @@ This topic will explain you the structure of the __RadRibbonView__ template and 
 	* __BackstagePopup__ - a __Popup__ control that is used to display the __RadRibbonBackstage__ menu
 		* __BackstageArea__ - a __Canvas__ control that hosts the __RadRibbonBackstage__ menu									
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [Styling the ApplicationButton]({%slug radribbonview-styling-applicationbutton%})
  * [Styling the RadRibbonView TitleBar]({%slug radribbonview-styling-titlebar%})

@@ -28,7 +28,7 @@ Take a look at the following topics to learn more:
 
 * [Styling the Clock]({%slug raddatetimepicker-styling-clock-view%})
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

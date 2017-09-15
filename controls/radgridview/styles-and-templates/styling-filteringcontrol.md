@@ -52,7 +52,7 @@ You can modify it similarly to the FilteringDropDown style and set it as follows
 
 You are also free to create your own [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
 
-# See Also
+## See Also
 
  * [Modifying Default Styles]({%slug gridview-modifying-default-styles%})
 

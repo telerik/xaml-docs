@@ -40,7 +40,7 @@ __RadDocking__ provides the ability to easily set the initial floating size and 
 
 To learn how to style the tool windows of your applications, read the [Styling the ToolWindow]({%slug raddocking-styling-the-toolwindow%}) topic.
 
-# See Also
+## See Also
 
  * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})
 

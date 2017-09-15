@@ -89,7 +89,7 @@ You can define a nested property like so:
 
 >Before __Q1 2012__ the NestedPropertiesVisibility property has modes __FlatMode__ and __NestedPropertiesMode__.
 
-# See Also
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

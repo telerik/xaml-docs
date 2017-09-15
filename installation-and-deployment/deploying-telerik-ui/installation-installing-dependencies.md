@@ -101,7 +101,7 @@ RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 
-# See Also
+## See Also
 
  * [Adding UI for Silverlight to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox%})
 

@@ -41,7 +41,7 @@ Similarly to the other commands of **RadPdfViewer**, the **SaveAsCommand** can b
 #### Figure 1: Save As button in RadPdfViewer's toolbar
 ![](images/PdfViewer_SaveAs_2.png)
 
-
+{% if site.site_name == 'WPF' %}
 ### Invoking in Code-Behind
 
 You can invoke the SaveAsCommand from your code as well. **Example 2** shows how you can access and execute it.
@@ -52,9 +52,11 @@ You can invoke the SaveAsCommand from your code as well. **Example 2** shows how
 
 	this.pdfViewer.CommandDescriptors.SaveAsCommandDescriptor.Command.Execute(null);
 {{endregion}}
-
+{% endif %}
 ## See Also
 
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})
 * [Wiring UI]({%slug radpdfviewer-wiring-ui%})
+{% if site.site_name == 'WPF' %} 
 * [Digital Signature]({%slug radpdfviewer-features-digital-signature%})
+{% endif %}

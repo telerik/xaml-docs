@@ -53,4 +53,6 @@ After filling the forms, you can save the document using the Save As command.
 ## See Also
 
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})
+{% if site.site_name == 'WPF' %}
 * [Digital Signature]({%slug radpdfviewer-features-digital-signature%})
+{% endif %}

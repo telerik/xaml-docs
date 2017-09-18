@@ -71,6 +71,7 @@ You can get only the name of the selected files, without the full path, via the 
 {{regiond radfiledialogs-radopenfiledialog-3}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
+	openFileDialog.Multiselect = true;
 	openFileDialog.ShowDialog();
 	if (openFileDialog.DialogResult == true)
 	{

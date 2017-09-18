@@ -616,13 +616,13 @@ $(document).ready(function(){
     logoContainer.innerHTML = "<a href=\"https://www.progress.com\" class=\"TK-PRGS-Logo\" title=\"Progress \"> Progress</a>";
 
     elemDiv.appendChild(logoContainer);
-    document.body.prepend(elemDiv);    
+    $(document.body).prepend(elemDiv);    
 
     logoBar = document.createElement('div');
     logoBar.id = "logo-bar";
     logoBar.innerHTML = "<a href=\"http://docs.telerik.com/devtools/wpf/\" class=\"t-logo\" title=\"Telerik UI for WPF \"> Telerik UI for WPF</a>";
 	
-	$( "#PageHeader").prepend(logoBar);
+	$("#PageHeader").prepend(logoBar);
 
 	var leftColum = $('#leftNav').height();
 	var rightColum = $('#TopicContent').height();

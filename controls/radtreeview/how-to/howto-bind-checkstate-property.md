@@ -127,7 +127,7 @@ For a complete code listing, please take a look at the [How to Bind RadTreeView 
 * Second, add container bindings like in the code snippet above.
             {% endif %}
 
-# See Also
+## See Also
 
  * [Implement a Tri-State CheckBox logic using MVVM]({%slug radtreeview-howto-tri-state-mvvm%})
 

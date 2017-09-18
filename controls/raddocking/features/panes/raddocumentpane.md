@@ -18,7 +18,7 @@ To learn more about __RadDocumentPane__ take a look at the __RadPane__'s [Overvi
 
 ![](images/RadDocking_Features_Panes_RadDocumentPane_010.png)
 
-# See Also
+## See Also
 
  * [RadPane]({%slug raddocking-panes-radpane%})
 

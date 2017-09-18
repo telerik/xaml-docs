@@ -37,7 +37,7 @@ In order to disable the drop operation on a specific treeview item, you need to 
 
 If you want to read more about the __Drag and Drop__ behavior of the __RadTreeView__, see the main topic about [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}).
 
-# See Also
+## See Also
 
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

@@ -89,7 +89,7 @@ Modify the __TitleBarBackground__ too, in order to make the background consisten
 Here is a snapshot of the result.
 ![](images/RibbonView_Styling_RibbonView_Example.png)
 
-# See Also
+## See Also
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the QuickAccessToolbar]({%slug radribbonview-styling-quickaccesstoolbar%})
  * [Styling the ApplicationButton]({%slug radribbonview-styling-applicationbutton%})

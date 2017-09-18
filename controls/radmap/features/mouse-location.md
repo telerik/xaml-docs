@@ -40,7 +40,7 @@ Here is a snapshot of the result:
 
 ![](images/RadMap_Features_MouseLocation_01.png)
 
-# See Also
+## See Also
  * [Navigation]({%slug radmap-features-navigation%})
  * [Click Modes]({%slug radmap-features-click-modes%})
  * [Zoom Modes]({%slug radmap-features-zoom-modes%})

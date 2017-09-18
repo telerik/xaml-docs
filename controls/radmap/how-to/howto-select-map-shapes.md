@@ -264,7 +264,7 @@ In event's body you check whether the selected shape is line or the whole polyli
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Resize Map Shapes With Mouse Dragging]({%slug radmap-howto-resize-map-shapes-with-mouse-dragging%})
  * [Set the Best View for the InformationLayer]({%slug radmap-how-to-set-the-best-view-for-the-informationlayer%})
  * [Bring a Location into View]({%slug radmap-how-to-bring-a-location-into-view%})

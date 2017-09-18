@@ -91,7 +91,7 @@ the information is presented clearly and neatly.
 
 * __Free Testing Framework for RadControls__ - the free WebAii Testing Framework helps developers build automated functional tests and end–to-end scenario tests for both Silverlight- and AJAX-powered applications. The framework ships with special wrappers for Telerik RadControls for Silverlight and ASP.NET AJAX, making it easier than ever before to create and maintain tests.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radchart-general-information-visual-structure%})
 

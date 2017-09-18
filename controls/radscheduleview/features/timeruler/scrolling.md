@@ -94,6 +94,6 @@ And the result is:
 
 ![radscheduleview features timeruler scrolling 4](images/radscheduleview_features_timeruler_scrolling_4.png)
 
-# See Also
+## See Also
 
  * [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%})

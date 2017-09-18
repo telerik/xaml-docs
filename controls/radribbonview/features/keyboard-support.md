@@ -226,7 +226,7 @@ The keytips are themeable and any built-in Telerik theme can be applied to them.
 >The __Telerik_Windows_Controls_RibbonView_KeyTips__ namespace definition is: 
 >`xmlns:Telerik_Windows_Controls_RibbonView_KeyTips="clr-namespace:Telerik.Windows.Controls.RibbonView.KeyTips;assembly=Telerik.Windows.Controls.RibbonView"`
 
-# See Also
+## See Also
  * [Overview]({%slug radribbonview-buttons-overview%})
  * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
  * [Ribbon Group]({%slug radribbonview-ribbon-group%})

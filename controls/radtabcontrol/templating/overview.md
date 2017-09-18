@@ -37,7 +37,7 @@ __RadTabControl__ takes full advantage of the templates by providing a set of __
 
 * __HeaderTemplateSelector__ property’s value must inherit from __Telerik.Windows.Controls.DataTemplatesSelector__ and allows you to use custom logic to determine which template to apply to the header of the tab.
 
-# See Also
+## See Also
 
  * [Tab Item Templates]({%slug radtabcontrol-templating-tabs-templates%})
 

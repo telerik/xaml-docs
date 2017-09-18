@@ -26,7 +26,7 @@ The __RadDataPager__ control raises the following specific events:
 
 * A {% if site.site_name == 'Silverlight' %}[PageIndexChangedEventArgs ](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_pageindexchangedeventargs.html){% endif %}{% if site.site_name == 'WPF' %}[PageIndexChangedEventArgs ](http://www.telerik.com/help/wpf/t_telerik_windows_controls_pageindexchangedeventargs.html){% endif %} object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddatapager-getting-started%})
 

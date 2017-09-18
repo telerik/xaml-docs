@@ -585,7 +585,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 >Please note that in the above sample we have defined custom styles for the __Button__ controls which you can remove or modify accordignly to your requirements.
 		  
 
-# See Also
+## See Also
 
  * [Choose Header Template by Custom Logic]({%slug radtabcontrol-templating-custom-header-template%})
 

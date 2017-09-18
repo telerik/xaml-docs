@@ -74,7 +74,7 @@ Column footers are also used to display aggregated information on the data displ
 
 To learn how to do that take a look at the [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}) topic.
 
-# See Also
+## See Also
 
  * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
 

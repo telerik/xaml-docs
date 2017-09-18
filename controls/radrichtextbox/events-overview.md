@@ -90,7 +90,7 @@ The event handler receives two arguments:
 
     * A __SelectedLayoutBoxChangedEventArgs__ object.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
 

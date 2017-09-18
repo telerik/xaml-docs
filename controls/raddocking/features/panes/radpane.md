@@ -238,7 +238,7 @@ The next example will demonstrate how you could activate (focus) a RadPane witho
 
 >tipYou can also check the article about the [PaneActivationMode]({%slug raddocking-features-panes-activation-mode%}) property of __RadDocking__ - it indicates which __RadPane__ should be activated when the current active one is closed. By default the next non-disabled and visible __RadPane__ in the PaneGroup is activated.
           
-# See Also
+## See Also
 
  * [RadDocumentPane]({%slug raddocking-panes-raddocumentpane%})
 

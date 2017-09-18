@@ -35,7 +35,7 @@ There are a number of ways you can control the layout of your __RadTabControl__ 
 * And last but not least, you can dramatically change the layout of your __RadTabControl__ using [templating]({%slug radtabcontrol-templating-overview%}) and [styling]({%slug radtabcontrol-controlling-appearance%}).
 							
 
-# See Also
+## See Also
 
  * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 

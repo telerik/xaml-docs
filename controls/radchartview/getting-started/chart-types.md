@@ -126,7 +126,7 @@ __Specific Properties__
 
 * __Series__: A property of type __PresenterCollection<PieSeries>__ which gets the collection containing all the series presented by the control.
 
-# See Also
+## See Also
 * [Smart Labels]({%slug radchartview-features-smart-labels%})
 * [Axis]({%slug radchartview-axes-axis%})
 * [RadLegend Support]({%slug radchartview-features-radlegend-support%})

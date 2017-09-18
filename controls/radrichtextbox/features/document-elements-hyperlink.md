@@ -169,7 +169,7 @@ When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextBo
 
 ![](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkClicked.png)
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

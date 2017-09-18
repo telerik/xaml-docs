@@ -31,6 +31,6 @@ You can include the control in your page by either dragging it from the toolbox 
 
 >tipMore detailed information how to populate __RadListBox__ with some data you could found [here]({%slug radlistbox-populating-with-data-overview%}).
 
-# See Also
+## See Also
 
  * [Overview]({%slug radlistbox-overview%})

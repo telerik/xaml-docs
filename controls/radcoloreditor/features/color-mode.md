@@ -26,6 +26,6 @@ The __ColorMode__ property is an enumeration of type __ColorMode__ and it expose
 * __CMYK__ - sets the color model to [CMYK (Cyan, Magenta, Yellow and Key/Black)](http://en.wikipedia.org/wiki/Cmyk)  
 	![radcoloreditor-features-cmyk](images/radcoloreditor-features-cmyk.png)
 
-# See Also
+## See Also
  * [Structure]({%slug radcoloreditor-structure%})
  * [Getting Started]({%slug radcoloreditor-getting-started%})

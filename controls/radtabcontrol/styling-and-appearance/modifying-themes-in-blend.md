@@ -130,7 +130,7 @@ The same way you can modify the __DisabledVisual__ rectangle. To modify the tabâ
 >If any of the __Telerikâ€™s__ themes is set to the __RadTabControl,__ you will be modifying the __ControlTemplate__ for the __RadTabControl__ defined in them.
 						
 
-# See Also
+## See Also
 
  * [Tab Item Templates]({%slug radtabcontrol-templating-tabs-templates%})
 

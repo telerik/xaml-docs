@@ -194,6 +194,6 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 * __IsEditorVisibleChanged__: Occurs when the cell editors has visibility changed. The type of the passed event arguments is __RoutedPropertyChangedEventArgs<bool>__.
           
 
-# See Also
+## See Also
 
  * [Validation]({%slug gridview-events-validation%})

@@ -81,7 +81,7 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 ![](images/RadDataPager_Features_DisplayModes_02.png)
 
-# See Also
+## See Also
 
  * [Page Size]({%slug raddatapager-features-page-size%})
 

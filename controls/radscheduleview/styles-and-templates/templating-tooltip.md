@@ -5,7 +5,7 @@ description: Templating the ToolTip
 slug: radscheduleview-styles-and-templates-templating-tooltip
 tags: templating,the,tooltip
 published: True
-position: 4
+position: 6
 ---
 
 # Templating the ToolTip
@@ -92,6 +92,6 @@ And here is the final result:
 
 ![radscheduleview-styles-and-templates-templating-tooltip](images/radscheduleview-styles-and-templates-templating-tooltip.png)
 
-# See Also
+## See Also
 
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

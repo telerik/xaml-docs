@@ -17,7 +17,7 @@ The __Row Details__ are represented by a __DetailsPresenter__ control. By defaul
 
 To learn how to do this take a look at the [Styling the Row Details]({%slug gridview-styling-row-details%}) topic. 
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

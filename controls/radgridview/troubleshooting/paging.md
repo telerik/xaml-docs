@@ -57,7 +57,7 @@ Add an __OrderBy__ clause in your query at server side or define a __SortDescrip
 	order_Details_ExtendedDomainDataSource.SortDescriptors.Add(new SortDescriptor("OrderID", ListSortDirection.Ascending));
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Using Telerik RadDataPager]({%slug radgridview-paging-using-telerik-raddatapager%})
  

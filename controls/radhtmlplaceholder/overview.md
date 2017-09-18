@@ -26,7 +26,7 @@ __RadHtmlPlaceHolder__ is a powerful tool to show external web pages inside your
 
 
 
-# See Also[Getting Started with RadHtmlPlaceholder - Video Tutorial ](http://tv.telerik.com/watch/silverlight/video/introduction-radhtmlplaceholder-silverlight)
+## See Also[Getting Started with RadHtmlPlaceholder - Video Tutorial ](http://tv.telerik.com/watch/silverlight/video/introduction-radhtmlplaceholder-silverlight)
 
  * [RadHtmlPlaceholder Events]({%slug radhtmlplaceholder-howto-events%})
 

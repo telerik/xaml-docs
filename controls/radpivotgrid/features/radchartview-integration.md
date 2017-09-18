@@ -169,7 +169,7 @@ Now we just have to add __RadLegend__ to our application:
 And here is the result:
 ![Rad Pivot Grid Features Chart View Integration 02](images/RadPivotGrid_Features_ChartViewIntegration_02.png)
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

@@ -83,7 +83,7 @@ The last thing to do is to set the created __ControlTemplate__ to the __Frame__ 
 	            Template="{StaticResource FrameTemplate}" />
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Integration with Content Controls]({%slug radtransition-features-integration-with-content-controls%})
 

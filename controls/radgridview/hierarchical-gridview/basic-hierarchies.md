@@ -95,7 +95,7 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 
 >tipThe __GridViewTableDefinition__ object also exposes a __ChildTableDefinitions__ property, which means that you can nest grids on more than one level.
 
-# See Also
+## See Also
 
  * [Custom Hierarchies]({%slug gridview-custom-hierarchies%})
 

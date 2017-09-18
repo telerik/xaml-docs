@@ -48,5 +48,5 @@ The __RadTileViewItem__ exposes the following events:
 
 * __TileStateChanged__ - raised when the state of the item is changed.
 
-# See Also
+## See Also
  * [Getting Started]({%slug radtileview-getting-started%})

@@ -209,6 +209,6 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 
 >tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to __TreeView / FilterSearchSort__.
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

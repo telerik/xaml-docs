@@ -112,6 +112,6 @@ Here is a snapshot of the __Birdseye__ mode for __Bing Map Rest Provider__:
 
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
 	
-# See Also
+## See Also
  * [Providers Overview]({%slug radmap-features-providers%})
  * [ArcGIS Online Map Provider]({%slug radmap-features-providers-arcgis%})

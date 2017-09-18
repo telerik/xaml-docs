@@ -81,7 +81,7 @@ The __Top-Level Templates__ make use of both of the states, depending on the ope
 
 >The __Submenu Item__ can't enter the __Focused__ state, because it has no children to display. That's why it uses the __Highlighted__ state. The __Separator Item__ doesn't need to implement states' animation, because it should not respond to the user's actions.          
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
 

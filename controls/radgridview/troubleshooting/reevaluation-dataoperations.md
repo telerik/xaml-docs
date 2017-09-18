@@ -34,7 +34,7 @@ There are four possible solutions:
 
 >tipYou can also find the blog post on [Fast real-time update](http://blogs.telerik.com/vladimirenchev/posts/10-10-04/fast-real-time-data-update-for-your-silverlight-and-wpf-applications.aspx).
 
-# See Also 
+## See Also 
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 
 * [Basic Grouping]({%slug gridview-grouping-basics%})

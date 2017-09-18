@@ -35,6 +35,6 @@ Here is a list of the __Resources__ available and their default values:
         
 <table><tr><td>Key</td><td>Value</td></tr><tr><td>Categorize</td><td>Categorize</td></tr><tr><td>Alphabetical</td><td>Alphabetical</td></tr></table>
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpropertygrid-getting-started-getting-started%})

@@ -161,7 +161,7 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 {{endregion}}
 
 
-# See Also
+## See Also
 
  * [Overview]({%slug gridview-events-overview%})
  * [Commands]({%slug gridview-commands-overview%})

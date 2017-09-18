@@ -22,7 +22,7 @@ __RadCalculator__ supports all native clear functionality the end user is accust
 * __Clear (C)__ - clears the input value, the calculated value and the history:
 ![Rad Calculator-Clears](images/RadCalculator-Clears.png)
 
-# See Also
+## See Also
 
  * [Memory Functionality]({%slug radcalculator_memoryfunctionality%})
 

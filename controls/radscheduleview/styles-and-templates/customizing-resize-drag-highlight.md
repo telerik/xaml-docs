@@ -5,7 +5,7 @@ description: Customizing the Resize and DragDropHighlight
 slug: radscheduleview-styles-and-templates-customizing-resize-drag-highlight
 tags: customizing,the,resize,and,dragdrophighlight
 published: True
-position: 7
+position: 8
 ---
 
 # Customizing the Resize and DragDropHighlight
@@ -96,6 +96,6 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 
 ![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](images/radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)
 
-# See Also
+## See Also
 
  * [Appointment Style]({%slug radscheduleview-styles-and-templates-appointment-style%})

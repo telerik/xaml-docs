@@ -29,7 +29,7 @@ Using the UI you can easily zoom in and out, and scroll the document in the view
 
 The control utilizes virtualization in order to guarantee good performance with larger documents as well.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpdfviewer-getting-started%})
 

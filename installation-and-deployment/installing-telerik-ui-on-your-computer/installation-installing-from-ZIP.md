@@ -83,7 +83,7 @@ Once the archived folders are extracted you will probably note the following fol
 
 >You can install the Demos separately, downloading the 'Demos Automatic Installation" from your account.
 
-# See Also
+## See Also
 
  * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
 

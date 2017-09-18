@@ -53,7 +53,7 @@ Now, RadGridView will not generate a column for the Players property.
 	}
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Show/Hide Columns outside of RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})
 

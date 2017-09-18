@@ -449,8 +449,12 @@ navigation:
         title: RadOutlookbar
     controls/radpanelbar:
         title: RadPanelBar
+    controls/radpanelbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
+    controls/radprogressbar/styling-and-appearance:
+        title: Styling and Appearance
     controls/radpersistenceframework:
         title: RadPersistenceFramework
     controls/radrating:
@@ -551,6 +555,10 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/features/combinemode:
+        title: Combine Mode
+    controls/radchartview/series/funnelchart-series:
+        title: FunnelChart Series 
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -592,9 +600,12 @@ navigation:
     controls/radpdfviewer/ui:
         title: UI
         position: 6
+    controls/radpdfviewer/features:
+        title: Features
+        position: 7
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
-        position: 7
+        position: 8
     controls/radpdfviewer/document-model/text:
         title: Text
     controls/radspreadprocessing/working-with-workbooks:
@@ -709,7 +720,7 @@ navigation:
         position: 6
     controls/radrichtextbox/import-export:
         title: Import/Export
-        position: 7	
+        position: 7    
     controls/radrichtextbox/import-export/docx:
         title: Docx	
         position: 2
@@ -748,7 +759,7 @@ navigation:
     controls/radrichtextbox/features/merge-documents:
         title: Merge Documents
     "*radspreadstreamprocessing":
-        title: RadSpreadStreamProcessing 	
+        title: RadSpreadStreamProcessing       
 ## Centaur Controls End
 
 ## X1 Controls Start
@@ -782,6 +793,11 @@ navigation:
         title: RadDataPager
     controls/raddatapager/changes-and-backward-compability:
         title: Changes and Backward Compability
+    controls/radfiledialogs:
+        title: RadFileDialogs
+    controls/radfiledialogs/features:
+        title: Features
+        position: 6
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
@@ -912,6 +928,18 @@ navigation:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:
         title: Styling and Appearance
+    controls/radvirtualgrid/selection:
+        title: Selection
+        position: 5
+    controls/radvirtualgrid/filtering:
+        title: Filtering
+        position: 6
+    controls/radvirtualgrid/sorting:
+        title: Sorting
+        position: 7
+    controls/radvirtualgrid/commands:
+        title: Commands
+        position: 8
 ## X1 Controls End
 
 ## Common Start

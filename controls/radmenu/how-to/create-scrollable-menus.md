@@ -58,7 +58,7 @@ If you are using __RadMenuGroupItem__ you can control the scrolling inside via S
 
 ![Rad Menu How to Create Scrollable Menus 03](images/RadMenu_How_to_Create_Scrollable_Menus_03.jpg)
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radmenu-visual-structure%})
 

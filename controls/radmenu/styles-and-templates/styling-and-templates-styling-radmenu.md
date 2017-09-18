@@ -52,7 +52,7 @@ Here is a snapshot of the result.
 
 ![](images/RadMenu_Styles_and_Templates_Styling_RadMenu_03.png)
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
 

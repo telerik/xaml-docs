@@ -95,7 +95,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
 * __[Path]__ - represents the shape inside the button and is of type __Path__.
             
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatafilter-visual-structure%})
 

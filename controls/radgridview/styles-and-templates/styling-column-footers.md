@@ -53,7 +53,7 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 ![RadGridView with styled footer cells](images/RadGridView_Styles_and_Templates_Styling_GridViewColumnFooterCell_03.png)
 
-# See Also
+## See Also
 
  * [Styling a Cell]({%slug gridview-styling-cell%})
 

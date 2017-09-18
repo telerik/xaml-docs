@@ -88,7 +88,7 @@ If you open the installation folder ( __C:\Program Files\Telerik\UI for WPF [ver
 
 >The WPF Demos application can be downloaded from the UI for WPF download page (in the [Telerik account](http://www.telerik.com/account.aspx)) as a separate ZIP file as well.
 
-# See Also
+## See Also
 
  * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 

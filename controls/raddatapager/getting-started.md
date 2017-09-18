@@ -151,7 +151,7 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 
  ![Rad Data Pager Getting Started 02](images/RadDataPager_GettingStarted_02.PNG)
 
-# See Also
+## See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 

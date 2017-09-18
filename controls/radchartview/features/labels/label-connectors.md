@@ -43,7 +43,7 @@ The following example demonstrates how to set the LabelConnectorsSettings propet
 Here is the end result:
 ![](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
 	
-# See Also
+## See Also
 * [GettingStarted]({%slug radchartview-introduction%})
 * [LineSeries]({%slug radchartview-series-lineseries%})
 * [Smart Labels]({%slug radchartview-features-smart-labels%})

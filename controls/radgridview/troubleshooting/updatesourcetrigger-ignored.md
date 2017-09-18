@@ -22,7 +22,7 @@ __SOLUTION__
 
 You could overcome that with a few lines of code using __GridViewColumn.CellEditTemplate__ property and setting binding for the element in Edit mode (for example the editing element for GridViewDataColumn is TextBox).
         
-# See Also
+## See Also
 
  * [Setting CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 

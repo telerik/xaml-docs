@@ -206,7 +206,7 @@ The final result is shown on the next image:
 When the __ItemsSource__ is specified, __RadTabItem__ containers are generated for each item in the collection. By using the template properties of the __RadTabControl__ and the __RadTabItem__ you can control the appearance and the visualization of the items in the collection. [Read more about templates here]({%slug radtabcontrol-templating-overview%}).
 						
 
-# See Also
+## See Also
 
  * [Choose Header Template by Custom Logic]({%slug radtabcontrol-templating-custom-header-template%})
 

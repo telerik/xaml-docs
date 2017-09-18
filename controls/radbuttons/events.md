@@ -82,7 +82,7 @@ __RadToggleButton__
     * The sender argument contains the button. This argument is of type object, but can be cast to the __RadToggleButton__ type.
     * A System.Windows.__RoutedEventArgs__ object.
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radbuttons-visual-structure%})
  * [Getting Started]({%slug radbuttons-getting-started%})
  * [Commands]({%slug radbuttons-features-commands%})

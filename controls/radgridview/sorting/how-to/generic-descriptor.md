@@ -32,6 +32,6 @@ Then, you should add the defined SortDescriptor to the __SortDescriptors collect
         
 For more information you can check the [Sorting section]({%slug gridview-sorting-basics%}).
         
-# See Also
+## See Also
 
  * [Use expression descriptors]({%slug gridview-howto-use-expression-descriptors%})

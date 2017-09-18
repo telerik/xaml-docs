@@ -52,7 +52,7 @@ Here is a snapshot of the final result.
 
 ![](images/RadDocking_StylingRadPaneGroup_10.png)
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

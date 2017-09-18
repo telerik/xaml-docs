@@ -24,11 +24,11 @@ This article will show you how to localize any resource string used by Telerik U
 
 * [Localization using custom localization manager](#localization-using-custom-localization-manager)
 
->All examples in this article are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls__.
+>All examples in this article are demonstrated in the context of the Telerik __RadGridView__ control. However, the techniques and principles used for the localization of the string resources are valid for all the other Telerik __{{ site.framework_name }} controls__.
 
 ## Localization Using Built-in Resources
 
-The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to easily set the used Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} controls in one of the following supported languages:
+The built-in localization mechanism in {{ site.framework_name }} provides the possibility to easily set the used Telerik {{ site.framework_name }} controls in one of the following supported languages:
 
 * **English**
 

@@ -54,7 +54,7 @@ __RadGridView__ API allows you to tweak your application for optimal performance
 
 * As of __R2 2016__ GridViewComboBoxColumn exposes a new property - __IsLightweightModeEnabled__. Setting it to true significantly increases RadGridView's performance.
             
-# See Also
+## See Also
 
  * [Degraded Performance]({%slug gridview-troubleshooting-performance%})
 

@@ -71,7 +71,7 @@ Check out the RadDateTimePicker Configurator online demo at [http://demos.teleri
 Check out the [RadDateTimePicker Configurator online demo ](http://demos.telerik.com/silverlight/#DateTimePicker/Configurator) to see __AllowParsingWithoutSeparator__ in action.
 {% endif %}
 
-# See Also
+## See Also
 
  * [Formatting]({%slug raddatetimepicker-features-formatting%})
 

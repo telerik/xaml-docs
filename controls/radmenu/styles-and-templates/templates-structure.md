@@ -218,7 +218,7 @@ It contains the following parts:
 
 	* __Bg__ - represents the element that binds to the control's properties and is of type __Rectangle__.
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
 

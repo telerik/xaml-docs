@@ -22,7 +22,7 @@ __RadBusyIndicator__ is a content control which gives you the ability to notify 
 
 * __ProgressBar__ - is the __RadProgressBar__ control representing the ongoing process.  
 
-# See Also
+## See Also
 
  * [Overview]({%slug radbusyindicator-overview%})
 

@@ -131,7 +131,7 @@ The UI should also respond when the caret is on a document position where the te
 
 
  
-# See Also
+## See Also
 
 * [Selection Mini Tool Bar]({%slug radrichtextbox-features-selection-mini-toolbar%})
 

@@ -20,6 +20,6 @@ This section defines terms and concepts used in the scope of __RadTimePicker__ y
 
 * __Hours__ - previously defined space in time
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtimepicker-timepicker-populating%})

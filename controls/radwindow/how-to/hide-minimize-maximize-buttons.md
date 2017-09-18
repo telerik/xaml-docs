@@ -30,7 +30,7 @@ Before continuing you have to get familiar with the [RadWindow's template struct
 
 After getting familiar with the template and preparing it for editing, the only thing left is to locate the __Button__ controls that represent the __Minimize__ and the __Maximize__ buttons and to set their __Visibility__ to __Collapsed__. These buttons have their __Name__ properties set to __PART_MinimizeButton__ and __PART_MaximizeButton__.
 
-# See Also
+## See Also
 
  * [Minimizing/Maximizing]({%slug radwindow-features-minimizingmaximazing%})
 

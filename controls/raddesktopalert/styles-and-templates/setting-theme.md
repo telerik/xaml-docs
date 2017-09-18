@@ -65,7 +65,7 @@ Either way you choose, the end result will be the following:
 __Figure 3:__ DesktopAlert with VisualStudio2013 theme applied
 ![Rad Desktop Alert Setting Theme 03](images/RadDesktopAlert_Setting_Theme_03.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug raddesktopalert-getting-started%})
 

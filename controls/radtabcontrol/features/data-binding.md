@@ -28,7 +28,7 @@ __RadTabControl__ takes a full advantage of the __DataBinding__ in {% if site.si
 * Use __DataBinding__ in combination with converter so you can easily adjust the value to your needs. 
           
 
-# See Also
+## See Also
 
  * [Populating RadTabControl with Data]({%slug radtabcontrol-populating-with-tabs%})
 

@@ -58,7 +58,7 @@ And here is a snapshot of the final result:
 ![](images/RadMap_StylesAndTemplates_StylingRadMap_03.png)
 {% endif %}
 
-# See Also
+## See Also
  * [Template Structure]({%slug radmap-styles-and-templates-template-structure%})
  * [Styling the MapCommandBar]({%slug radmap-styles-and-templates-styling-the-mapcommandbar%})
  * [Styling the MapNavigation]({%slug radmap-styles-and-templates-styling-the-mapnavigation%})

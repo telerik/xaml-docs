@@ -99,6 +99,6 @@ As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridVie
 	</telerik:RadGridView>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Custom Hierarchies]({%slug gridview-custom-hierarchies%})

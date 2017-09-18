@@ -22,7 +22,7 @@ This topic will show you how to change the default placement of the __RadBusyInd
 
 * Set the __HorizontalAlignment__ and __VerticalAlignment__ properties in a way that suits your scenario.
 
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
 

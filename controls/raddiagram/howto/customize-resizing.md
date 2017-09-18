@@ -313,7 +313,7 @@ However, as soon as you uncheck any of the buttons, the related resizing operati
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
 
-# See Also
+## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Resizing]({%slug raddiagrams-features-resizing%})
  * [Services]({%slug raddiagram-features-services%})

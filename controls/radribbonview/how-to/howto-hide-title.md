@@ -39,7 +39,7 @@ The result is shown on the next image - the title is hidden.
 
 >The __QuckAccessToolBar__ will be also hidden.		  
 
-# See Also
+## See Also
  * [Handle double click on application button]({%slug radribbonview-how-to-handle-double-click-on-application-button%})
  * [Add Screen Tips in the Code Behind]({%slug radribbonview-howto-add-screentips-code-behind%})
  * [Change the Application Menu's Image]({%slug radribbonview-how-to-change-the-image-of-the-application-button%})

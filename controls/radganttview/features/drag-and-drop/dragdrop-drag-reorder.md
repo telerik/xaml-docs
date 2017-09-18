@@ -130,7 +130,7 @@ The next screenshots show the final result:
 
 ![radganttview-dragdrop-drag-reorder-7](images/radganttview-dragdrop-drag-reorder-7.jpg)![radganttview-dragdrop-drag-reorder-8](images/radganttview-dragdrop-drag-reorder-8.jpg)
 
-# See Also
+## See Also
 
  * [Drag and Drop: Overview]({%slug radganttview-dragdrop-overview%})
 

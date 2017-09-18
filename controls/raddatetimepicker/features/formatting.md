@@ -100,7 +100,7 @@ Here is the result:
 
 ![](images/dateTimePicker_features_formatting_030.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

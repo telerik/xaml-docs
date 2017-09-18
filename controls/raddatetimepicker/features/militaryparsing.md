@@ -77,6 +77,6 @@ Input	|	Output
 "Jan"	|	Sets the current day and year, and the month parsed.
 "Jan21"	|	Should parse 21 of January, current year.
 
-# See Also
+## See Also
 
  * [Formatting]({%slug raddatetimepicker-features-formatting%})

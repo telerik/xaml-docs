@@ -10,9 +10,15 @@ position: 2
 
 # Insert and Remove Data
 
+* [Methods](#methods)
+
+* [Events](#events)
+
 __RadVirtualGrid__ exposes an API for inserting and removing rows and columns at given index. This can be achieved through the following methods:
 
-> The methods for removing a row or column cannot be utilized for pinned rows or columns
+> The methods for removing a row or column cannot be utilized for pinned rows or columns.
+
+## Methods
 
 * __InsertNewRowAtIndex(int index)__: Increases the table capacity by adding a row at given index
 
@@ -23,6 +29,38 @@ __RadVirtualGrid__ exposes an API for inserting and removing rows and columns at
 * __RemoveColumnAtIndex(int index)__: Decreases the capacity of the table by removing a column at given index
 
 >When inserting a row or a column, the control simply increases its capacity. Updating the source collection with this modification needs to be done manually as well.
+
+## Events
+
+Events related to a deletint operation will be raised when the selected indexes are deleted through the __Delete key__.
+
+### Deleting
+
+Raised when the selected indexes of __RadVirtualGrid__ are about to be deleted. The __VirtualGridDeletingEventArgs__ expose the __Indexes__ property.
+
+* __Cancel__: As the event arguments are of type __CancelEventArgs__, the event can be canceled through this property.
+
+* __Indexes__: The selected indexes that are about to be deleted.
+
+#### __Example 1: Subscribing to the Deleting event__
+{{region radvirtualgrid-features_insert-and-remove-data_0}}
+	private void VirtualGrid_Deleting(object sender, VirtualGridDeletingEventArgs e) 
+	{ 
+	}
+{{endregion}}
+
+### Deleted
+
+This event is raised when the selected indexes of the control have been deleted. Similarly to the __VirtualGridDeletingEventArgs__, the __VirtualGridDeletedEventArgs__ provide the __Indexes property__
+
+* __Indexes__: The selected indexes that have been deleted.
+
+#### __Example 2: Subscribing to the Deleted event__
+{{region radvirtualgrid-features_insert-and-remove-data_1}}
+	private void VirtualGrid_Deleted(object sender, VirtualGridDeletedEventArgs e) 
+	{ 
+	}
+{{endregion}}
 
 ## See Also
 

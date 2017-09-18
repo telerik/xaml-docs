@@ -50,7 +50,7 @@ __SOLUTION__
 
 Use [CellStyleSelector]({%slug gridview-cell-style-selector%}) to set the style for the Cells and [RowStyleSelector]({%slug gridview-rowstyleselector%}) to set styles for the Rows
 
-# See Also
+## See Also
 
  * [Getting Started with RadGridView]({%slug gridview-getting-started2%})
  

@@ -101,7 +101,7 @@ Figure 2: When there is exact match the matched item is highlighted.
 
 ![radautocompletebox-features-highlightbehavior-3](images/radautocompletebox-features-highlightbehavior-3.png)
 
-# See Also
+## See Also
 
  * [AutoComplete]({%slug radautocompletebox-features-autocomplete%})
 

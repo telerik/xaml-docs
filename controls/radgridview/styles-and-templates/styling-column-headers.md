@@ -61,7 +61,7 @@ __RadGridView__ header cells can also be styled by creating an appropriate __Sty
 
 ![RadGridView with styled header cells](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 
-# See Also
+## See Also
 
  * [Styling a Cell]({%slug gridview-styling-cell%})
 

@@ -195,7 +195,7 @@ This will lead to the following result:
 
 ![radscheduleview updateresources 2](images/radscheduleview_updateresources_2.png)
 
-# See Also
+## See Also
 
  * [Implementing View-ViewModel ]({%slug radscheduleview-populating-with-data-implementing-view-model%})
 

@@ -38,7 +38,7 @@ Here is a more detailed visual structure of the __Commands Bar__:
 
 * __Zoom__ - allows the user to zoom in and out.            
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmap-getting-started%})
  * [Template Structure]({%slug radmap-styles-and-templates-template-structure%})
  * [Navigation]({%slug radmap-features-navigation%})

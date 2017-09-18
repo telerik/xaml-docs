@@ -92,7 +92,7 @@ With this approach we are re-defining the template of the cells for that column.
 	</telerik:RadGridView.Columns>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
 

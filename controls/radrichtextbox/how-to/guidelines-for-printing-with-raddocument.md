@@ -200,7 +200,7 @@ Secondly, if the document you are creating is somewhat bigger, it should be crea
 One of the solutions is to have the document created and shown inside a RadRichTextBox and only then proceed to actually print it. If the RadRichTextBox is set as read-only, that would result in a behavior similar to print-preview.
 {% endif %}     
 
-# See Also
+## See Also
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

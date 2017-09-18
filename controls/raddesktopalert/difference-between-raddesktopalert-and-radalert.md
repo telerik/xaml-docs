@@ -22,7 +22,7 @@ If you need to display a notification for a short period of time __RadDesktopAle
 __Figure 2:__ DesktopAlert
 ![Rad Desktop Alert Differences between RadDesktopAlert and RadAlert 01](images/RadDesktopAlert_Difference_Between_RadDesktopAler_and_RadAlert_01.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

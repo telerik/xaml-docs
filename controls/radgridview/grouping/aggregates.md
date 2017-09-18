@@ -14,6 +14,8 @@ This article will explain some more information on:
 
 * [Aligning Group Header Aggregates](#align-header-aggregates)
 
+* [Aligning Column Header Aggregates in GroupHeaderRow](#aligning-column-header-aggregates-in-groupheaderrow)
+
 # Group Aggregates
 
 ![](images/RadGridView_GroupAggregates_1.png)
@@ -44,7 +46,7 @@ To use the aggregate functions you have to declare them and add them to the __Ag
 
 An alternative way of manipulating the group descriptors of RadGridView is the new (added in Q3 2010) __ColumnGroupDescriptor__ class. You can directly define __ColumnGroupDescriptor__ and add the AggregateFunctions for the respective column. Please note ColumnGroupDescriptor is associated with a specific column and that is why there is not a need for it to also expose the option do define AggregateFunctions as GroupDescriptor. 
 
-#### __XAML__
+#### __[XAML] Example 1: Defining a GroupDescriptor with AggregateFunction__
 
 {{region gridview-grouping-aggregates_0}}
 
@@ -63,7 +65,7 @@ An alternative way of manipulating the group descriptors of RadGridView is the n
 {{endregion}}
 
 
-#### __C#__
+#### __[C#] Example 2: Defining a GroupDescriptor with AggregateFunction programmatically__
 
 {{region gridview-grouping-aggregates_1}}
 
@@ -77,7 +79,7 @@ An alternative way of manipulating the group descriptors of RadGridView is the n
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Defining a GroupDescriptor with AggregateFunction programmatically__
 
 {{region gridview-grouping-aggregates_2}}
 
@@ -95,7 +97,7 @@ You can add more than one aggregate function to __AggregateFunctions__ collectio
 
 >The __FirstFunction__ will display the value returned by overriding __ToString()__ method of your business object.
 
-#### __XAML__
+#### __[XAML] Example 3: Defining a GroupDescriptor with multiple AggregateFunctions__
 
 {{region gridview-grouping-aggregates_3}}
 
@@ -114,7 +116,7 @@ You can add more than one aggregate function to __AggregateFunctions__ collectio
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 4: Defining a GroupDescriptor with multiple AggregateFunctions programmatically__
 
 {{region gridview-grouping-aggregates_4}}
 
@@ -130,7 +132,7 @@ You can add more than one aggregate function to __AggregateFunctions__ collectio
 	this.radGridView.GroupDescriptors.Add( countryDescriptor );
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Defining a GroupDescriptor with multiple AggregateFunctions programmatically__
 
 {{region gridview-grouping-aggregates_5}}
 
@@ -148,18 +150,20 @@ You can add more than one aggregate function to __AggregateFunctions__ collectio
 
 The final result can be seen on the snapshot below:
 
+#### __Figure 1: RadGridView with GroupDescriptor and AggregateFunctions defined__
 ![](images/RadGridView_GroupAggregates_2.png)
 
 With __Q3 2012__ we added built-in feature for __aligning header aggregates__ with corresponding columns.
         
 ## Align Header Aggregates
 
+#### __Figure 2: Aligning the Aggregates__
 ![Rad Grid View Group Aggregates 3](images/RadGridView_GroupAggregates_3.png)
 
 This feature can be controlled with applying a __Style__. The Style should be targeting at the GroupHeaderRow visual element having the __GroupRenderMode of the RadGridView set to Flat__.
 Here is an example of the style definition:
         
-#### __XAML__
+#### __[XAML] Example 5: Settng the ShowGroupHeaderColumnAggregates property of GroupHeaderRow__
 
 {{region gridview-grouping-aggregates_6}}
 
@@ -171,7 +175,7 @@ Here is an example of the style definition:
 
 When using this feature, most probably you don't need the group row aggregates to be shown any more. You can hide them extending the above style as follows:
         
-#### __XAML__
+#### __[XAML] Example 6: Setting the ShowHeaderAggregates property of GroupHeaderRow to False__
 
 {{region gridview-grouping-aggregates_7}}
 
@@ -185,6 +189,7 @@ When using this feature, most probably you don't need the group row aggregates t
 
 Setting the "ShowHeaderAggregates" to false will hide the default header aggregates.
 
+#### __Figure 3: RadGridView with ShowHeaderAggregates set to False__
 ![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_4.png)
 
 For more details you can check our [Aggregates](http://demos.telerik.com/silverlight/#GridView/Aggregates) demo.
@@ -192,6 +197,25 @@ For more details you can check our [Aggregates](http://demos.telerik.com/silverl
 >tipYou can download a __runnable project__ on how to sort a group by aggregate from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByAggregate__  .
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.         
+
+## Aligning Column Header Aggregates in GroupHeaderRow
+
+When using the __ShowGroupHeaderColumnAggregates__ property of __GroupHeaderRow__, the aggregates will be aligned in the __GroupFooterRow__ element. If aligning them in the __GroupHeaderRow__ is required, you need to use the __ColumnAggregatesAlignment__ property of __RadGridView__ instead. It is an enumeration and provides three values:
+
+* __BelowGroupKey__
+
+* __NextToGroupKey__
+
+* __NoAlignment__
+
+#### __Figure 4: RadGridView with ColumnAggregatesAlignment set to BelowGroupKey__
+![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_5.png)
+
+#### __Figure 5: RadGridView with ColumnAggregatesAlignment set to NextToGroupKey__
+![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_6.png)
+
+#### __Figure 6: RadGridView with ColumnAggregatesAlignment set to NextToGroupKey__
+![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_7.png)
 
 ## See Also
 

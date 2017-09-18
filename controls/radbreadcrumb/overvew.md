@@ -37,6 +37,6 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Expression Blend Support__ -  All __RadControls__ for Silverlight can be easily customized using Expression Blend.
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})
  * [Getting Started]({%slug radbreadcrumb-getting-started%})

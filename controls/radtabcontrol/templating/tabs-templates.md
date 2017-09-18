@@ -259,7 +259,7 @@ When you start the application with configured __ItemsSource__ ([read more here]
 The __ContentTemplate__ is mainly used when we bind the __RadTabControl__ to a collection. In this case in Visual Studio you set the __ContentTemplate__ property via the __ItemContainerStyle__ property of the __RadTabControl__. More about that here.
 		
 
-# See Also
+## See Also
 
  * [Templating Overview]({%slug radtabcontrol-templating-overview%})
 

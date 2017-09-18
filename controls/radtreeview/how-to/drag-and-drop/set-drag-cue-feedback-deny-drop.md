@@ -172,7 +172,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DenyDropVisualFeedback__.
 
-# See Also
+## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})
  * [Disable Drop at Specific Location]({%slug radtreeview-how-to-disable-drop-specific-location%})
  * [Implement Copy Drag]({%slug radtreeview-how-to-implement-copy-drag%})

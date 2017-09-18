@@ -134,7 +134,7 @@ And here is a snapshot of the result:
 ![](images/RadMap_StylesAndTemplates_StylingMapZoomBar_03.png)
 {% endif %}
 
-# See Also
+## See Also
  * [Template Structure]({%slug radmap-styles-and-templates-template-structure%})
  * [Styling the RadMap]({%slug radmap-styling-and-templates-styling-the-radmap%})
  * [Styling the MapCommandBar]({%slug radmap-styles-and-templates-styling-the-mapcommandbar%})

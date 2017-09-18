@@ -118,7 +118,7 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 	{{endregion}}
 {% endif %}
 
-# See Also
+## See Also
 
  * [Setting a Theme on MS Controls using Implicit Styles]({%slug styling-apperance-themes-mscontrols%})
 

@@ -87,7 +87,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __RadRadioButtonStyle__ - the default __Style__ for the __RadRadioButton__.
 
-# See Also
+## See Also
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

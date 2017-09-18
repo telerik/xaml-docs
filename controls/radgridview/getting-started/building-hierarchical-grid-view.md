@@ -368,7 +368,7 @@ And here is the final result.
 
 To learn more about the Hierarchical Grids you can visit the [Hierarchical GridView]({%slug gridview-hierachy-overview%}) section.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug gridview-getting-started2%})
 

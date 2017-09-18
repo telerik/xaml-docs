@@ -560,7 +560,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 * __CloseButton__ - Represents the element used to collapse the Search Panel. It is of type __RadPathButton__. 
 
-# See Also
+## See Also
 
  * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
  * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

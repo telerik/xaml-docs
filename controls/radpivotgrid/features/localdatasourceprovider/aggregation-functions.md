@@ -145,7 +145,7 @@ You can change applied Aggregate Function at runtime by using __RadPivotFieldLis
 
 ![Rad Pivot Grid Features Aggregate Functions 12](images/RadPivotGrid_Features_Aggregate_Functions_12.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

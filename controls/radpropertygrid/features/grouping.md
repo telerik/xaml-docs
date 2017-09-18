@@ -157,7 +157,7 @@ It has two methods:
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
-# See Also
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

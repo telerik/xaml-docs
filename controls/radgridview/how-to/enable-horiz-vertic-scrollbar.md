@@ -12,15 +12,15 @@ position: 1
 
 In order to enable horizontal and/or vertical scrollbars you need to set the __ScrollViewer__'s attached properties __HorizontalScrollBarVisibility__ and/or __VerticalScrollBarVisibility__.
 
-#### __XAML__
+#### __[XAML] Example 1: Set Attached ScrollViewer Properties__
 
 {{region xaml-radgridview-how-to-enable-horiz-vertic-scrollbar_0}}
 	<telerik:RadGridView x:Name="radGridView" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 {{endregion}}
 
-The same operation can be done in the code-behind:
+The same operation can be done in code-behind:
 
-#### __C#__
+#### __[C#] Example 1: Set Attached ScrollViewer Properties__
 
 {{region cs-radgridview-how-to-enable-horiz-vertic-scrollbar_1}}
 	private void EnableScrollBars()
@@ -30,9 +30,7 @@ The same operation can be done in the code-behind:
 	}
 {{endregion}}
 
-
-
-#### __VB.NET__
+#### __[VB.NET] Example 1: Set Attached ScrollViewer Properties__
 
 {{region vb-radgridview-how-to-enable-horiz-vertic-scrollbar_2}}
 	Private Sub EnableScrollBars()
@@ -41,10 +39,14 @@ The same operation can be done in the code-behind:
 	End Sub
 {{endregion}}
 
-The result can be seen on the next image.
+The result is illustrated in **Figure 1**.
 
-![](images/RadGridView_HowTo_HorizontalAndVerticalScrollbar_010.png)
+#### __Figure 1: RadGridView with vertical and horizontal scrollbars__
 
-# See Also
+![RadGridView with vertical and horizontal scrollbars](images/RadGridView_HowTo_HorizontalAndVerticalScrollbar_010.png)
 
+## See Also
+
+ * [Scrolling]({%slug gridview-scrolling%})
+ * [Scroll to a Particular Row or Column]({%slug gridview-scroll-item%})
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

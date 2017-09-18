@@ -86,7 +86,7 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 You could also use RadGridView's **GroupRowStyleSelector** property to style group rows differently based on a specific condition. The [following article]({%slug gridview-group-row-style-selector%}) demonstrates how this can be done.
 
-# See Also
+## See Also
 
  * [Styling Group Footers]({%slug gridview-styles-and-templates-styling-group-footers%})
 

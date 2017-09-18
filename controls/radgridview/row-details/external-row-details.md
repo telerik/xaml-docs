@@ -56,7 +56,7 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 
 >You can see that the __RowDetailsTemplate__ must be defined in the __RadGridView__ as it is passed by the __RowDetailsProvider__ to both the internal and the external presenter. The same applies for the __RowDetailsStyle__.
 
-# See Also
+## See Also
 
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})
 

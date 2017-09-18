@@ -76,7 +76,7 @@ Run your demo, the result can be seen on the snapshot below:
 
  ![](images/RadComboBox_PopulatingWithData_BindingToRiaService_010.png)
 
-# See Also
+## See Also
 
  * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
 

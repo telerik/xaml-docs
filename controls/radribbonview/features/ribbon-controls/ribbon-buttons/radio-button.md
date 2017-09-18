@@ -94,5 +94,5 @@ Besides the __Click__ event, the __RadRibbonRadioButton__ control exposes two ad
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
  * [Styling the RadRibbonRadioButton]({%slug radribbonview-styling-ribbonradiobutton%})

@@ -33,7 +33,7 @@ This will result in a red background for the merged header cells.
 
 >If you want to have your [**Row Indicator** visible]({%slug gridview-customizing-rows%}#hiding-the-row-indicator), you will also need to modify the **CommonHeaderIndent** element of the **GridViewHeaderRow**. You can look at the [Styling Header Row article]({%slug gridview-styling-header-row%}) for more information on how to achieve that.
 
-# See Also
+## See Also
 
  * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
  

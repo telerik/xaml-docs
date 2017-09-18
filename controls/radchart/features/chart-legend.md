@@ -259,7 +259,7 @@ Here is an example:
 
 There are scenarios where you would like to have the Legend Items displayed in reverse order. For example when you have a *Horizontal Bar Series* the series will be displayed in the Legend in the way they are populated. The bottom Serie will appear first on the Legend and the topmost will be last in the Legend. For such scenarios RadChart exposes a __ReverseLegendItemsOrder__ boolean property to reverse the Legend Items order as its name implies.
 
-# See Also
+## See Also
 
  * [Chart Title]({%slug radchart-features-chart-title%})
 

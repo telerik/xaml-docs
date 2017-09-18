@@ -29,7 +29,7 @@ Read the following topics to learn more:
 * [Styling the MapScale]({%slug radmap-styles-and-templates-styling-the-mapscale%})
 * [Styling the MapMouseLocationIndicator]({%slug radmap-styles-and-templates-styling-the-mapmouselocationindicator%})
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})
  * [Getting Started]({%slug radmap-getting-started%})
  * [Events]({%slug radmap-events%})

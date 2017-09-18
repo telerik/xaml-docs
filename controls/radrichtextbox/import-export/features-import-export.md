@@ -35,7 +35,7 @@ __RadRichTextBox__ allows you to export and import its content. This is useful i
 
 __RadRichTextBox__'s format providers can import/export a wide variety of features supported by the control. However, features which are not yet supported are stripped on import. Such examples are content controls like text boxes, check boxes, etc. which can be inserted in the document in some rich text editors such as Microsoft Word or can be included in the HTML.
         
-# See Also
+## See Also
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})
 

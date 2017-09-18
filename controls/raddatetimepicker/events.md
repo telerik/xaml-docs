@@ -68,7 +68,7 @@ __DropDownOpened__ occurs each time the drop-down pane gets shown. The event han
 
 * A __RoutedEventArgs__ object
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

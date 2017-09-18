@@ -29,5 +29,5 @@ To hide the header row you can use the __HeaderVisibility__ property and set the
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})

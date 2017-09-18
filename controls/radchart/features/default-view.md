@@ -24,7 +24,7 @@ When you create your chart declaratively or from the code behind, with static da
 You can find more information about using __DefaultView__ or a custom layout here: [Creating Chart Declaratively]({%slug radchart-populating-with-data-creating-chart-declaratively%}) and [Creating Chart in Code Behind]({%slug radchart-populating-with-data-creating-chart-in-code-behind%}).
         
 
-# See Also
+## See Also
 
  * [Chart Title]({%slug radchart-features-chart-title%})
 

@@ -36,7 +36,7 @@ Notice that when a determined __RadbusyIndicator__ is enabled its inner donut wi
 
 How much of the inner donut is filled depends on the __ProgressValue__ property. If it is less or equal to 0 the donut will be empty and when it is grater or equal to 100 the donut will be filled. 
 
-# See Also
+## See Also
 
  * [Enabling the Indicator]({%slug radbusyindicator-features-enabling-the-indicator%})
 

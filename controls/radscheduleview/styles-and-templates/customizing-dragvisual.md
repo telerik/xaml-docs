@@ -5,7 +5,7 @@ description: Customizing the DragVisual
 slug: radscheduleview-styles-and-templates-customizing-dragvisual
 tags: customizing,the,dragvisual
 published: True
-position: 6
+position: 7
 ---
 
 # Customizing the DragVisual

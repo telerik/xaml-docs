@@ -22,7 +22,7 @@ After minimized or maximized the respective button is replaced by a __Restore__ 
 
 >tipThe __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its size and position for the __Normal__ and the __Minimized__ states.
 
-# See Also
+## See Also
 
  * [Hide the Maximize and Minimize buttons]({%slug radwindow-how-to-hide-minimize-maximize-buttons%})
 

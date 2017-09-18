@@ -47,6 +47,6 @@ Telerik RadControls API allows you to also listen for events that have been alre
 	End Sub
 	{{endregion}}
 
-# See Also
+## See Also
  * [Events - Overview]({%slug radtreeview-events-overview%})
  * [Working with ItemPrepared Event]({%slug radtreeview-events-working-with-item-prepared-event%})

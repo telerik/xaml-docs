@@ -25,7 +25,7 @@ If the __RadColorEditor SelectedColor__ is set to __Magenta__, the __UnifiedColo
 
 ![radcoloreditor-features-set-unified-color](images/radcoloreditor-features-set-unified-color.png)
 
-# See Also
+## See Also
  * [Structure]({%slug radcoloreditor-structure%})
  * [Getting Started]({%slug radcoloreditor-getting-started%})
  * [Color Mode]({%slug radcoloreditor-features-color-mode%})

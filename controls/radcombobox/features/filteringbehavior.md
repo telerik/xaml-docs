@@ -138,6 +138,6 @@ __Figure 2:__ Again the items are filtered and because there isn’t an item tha
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as ComboBox/CustomFiltering.
 
-# See Also
+## See Also
 
 * [Filtering]({%slug radcombobox-features-filtering%})

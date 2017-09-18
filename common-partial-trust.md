@@ -25,7 +25,7 @@ All controls in the suite require the following permissions due to the license m
 Increasing the permissions of a partially trusted application could usually be achieved by changing the permission set in the application manifest. 
 
 
-The below table lists all controls in __UI for WPF__ suite and the additional permissions they require. 
+The below table lists all controls in __Telerik UI for WPF__ suite and the additional permissions they require. 
 
 
 Control	|	Working in WPF Partial Trust	|	Comments

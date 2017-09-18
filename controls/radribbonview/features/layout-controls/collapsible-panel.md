@@ -112,7 +112,7 @@ The next example demonstrates the usage of the __RadCollapsiblePanel__.
 
 ![](images/RibbonView_CollapsiblePanel_Sample.png)
 
-# See Also
+## See Also
  * [Application Menu]({%slug radribbonview-applicationmenu%})
  * [Backstage Menu]({%slug radribbonview-ribbon-backstage%})
  * [Ribbon Gallery]({%slug radribbonview-ribbon-gallery%})

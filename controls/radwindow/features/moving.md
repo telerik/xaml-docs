@@ -32,7 +32,7 @@ To disable the moving of the __RadWindow__ via the UI you have to set the __CanM
 	radWindow.CanMove = False
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Closing]({%slug radwindow-features-closing%})
 

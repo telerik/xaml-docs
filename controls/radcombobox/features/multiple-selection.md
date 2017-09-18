@@ -245,7 +245,7 @@ This section describes the specific keyboard shortcuts used by __RadComboBox__ w
 
 * Back - Deselects the current highlighted item when __RadComboBox__ is __Non-Editable__.
 
-# See Also
+## See Also
 
  * [Selection]({%slug radcombobox-features-selection%})
 

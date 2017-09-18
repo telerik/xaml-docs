@@ -106,6 +106,6 @@ Like most controls, the __RadChart__ also allow you to template it in order to c
 
 * __PART_MinorTickPoints__ - represents the axis' ticks and is of type __HorizontalMinorTicks2D__.
 
-# See Also
+## See Also
 
  * [Templating the Point Marks]({%slug radchart-templating-point-marks%})[](BF9585DF-C6C5-440B-9445-9C321EA345A8)[](B3D82EC6-5928-4F61-A4EE-7A58BCE31BCA)

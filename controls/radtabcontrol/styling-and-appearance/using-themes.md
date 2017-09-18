@@ -210,7 +210,7 @@ Applying the custom theme is done in the same way as applying a Telerik’s them
 
 >tipEach one of the Telerik’s themes contains a set of color resources that determine the overall look of the controls. By configuring just these resources you can change the visual appearance of the controls and create your own theme on the basis of the original ones.
 
-# See Also
+## See Also
 
  * [Modifying Themes in Blend]({%slug radtabcontrol-modifying-themes-in-blend%})
 

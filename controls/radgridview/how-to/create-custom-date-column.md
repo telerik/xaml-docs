@@ -12,7 +12,7 @@ position: 3
 
 The [Create Custom Column Editor]({%slug gridview-how-to-create-custom-column-editor%}) tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, it demonstrates using an UserControl with __RadDatePicker__ and __RadTimePicker__, as well as a custom bound column that uses it as an edit element.
 
-# See Also
+## See Also
 
  * [Add a button column]({%slug gridview-add-button-column%})
 

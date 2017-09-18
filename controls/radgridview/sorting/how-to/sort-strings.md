@@ -18,7 +18,7 @@ As another option, you can expose a property of the business object to hold the 
 
 For more detailed information on the sorting mechanism, you can check the [Sorting section]({%slug gridview-sorting-basics%}).
         
-# See Also
+## See Also
 
  * [Custom Sorting]({%slug gridview-sorting-custom%})
 

@@ -298,7 +298,7 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 
-# See Also
+## See Also
  * [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%})
  * [How to Edit an Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})
  * [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%})

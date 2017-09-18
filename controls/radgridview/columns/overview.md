@@ -46,7 +46,7 @@ This chapter gives you detailed information about columns in __RadGridView__. Th
             
 * __Frozen columns__ - find out how to [freeze/unfreeze]({%slug gridview-columns-frozen-columns%}) columns or how to [disable]({%slug gridview-columns-frozen-columns%}) this functionality.
 
-# See Also
+## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
 

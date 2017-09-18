@@ -242,7 +242,7 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 {{endregion}}
 
 
-# See Also
+## See Also
 
  * [Programmatic Grouping]({%slug gridview-programmatic-grouping%})
 

@@ -57,6 +57,6 @@ In order to remove a specific __RadListBoxItem__, you should remove it from the 
 	}
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})

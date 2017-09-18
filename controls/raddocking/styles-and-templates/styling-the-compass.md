@@ -113,7 +113,7 @@ Here is a snapshot of the final result.{% if site.site_name == 'Silverlight' %}
 
 ![](images/RadDocking_StylingCompass_11_WPF.png){% endif %}
 
-# See Also
+## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
 

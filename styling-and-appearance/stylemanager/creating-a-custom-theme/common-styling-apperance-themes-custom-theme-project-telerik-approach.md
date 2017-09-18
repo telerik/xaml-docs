@@ -160,7 +160,7 @@ The following tutorial demonstrates how to do that:
 	![Common Styling Theming Creating Custom Theme Telerik 030](images/Common_StylingTheming_Creating_Custom_Theme_Telerik_030.png)
 
 
-# See Also
+## See Also
 
  * [Creating a Custom Theme Project]({%slug common-styling-apperance-themes-custom-theme-project%})
 

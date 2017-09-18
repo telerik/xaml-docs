@@ -328,7 +328,7 @@ Here is an example:
     
 ![](images/RadChart_StylingChartSeries_06.PNG)
 
-# See Also
+## See Also
 
  * [Styling the Chart Area]({%slug radchart-styling-and-appearance-styling-chart-area%})
 

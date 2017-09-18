@@ -276,7 +276,7 @@ In the previous example the demo would change the size of the groups following t
 
 Please keep in mind that when the group changes its __Size__, the elements inside are automatically resized. And in order to customize the resizing behavior of the elements you can wrap them in the panels that Telerik supports. For more information, take a look at the [Ordered Wrap Panel]({%slug radribbonview-ordered-wrap-panel%}) and [Collapsible Panel]({%slug radribbonview-collapsible-panel%}) topics. Developers can also choose to create a custom logic for the resizing by using the __RadRibbonButtons__ and by defining how they will behave when the group changes its size. For more information, please take a look at the [Ribbon Buttons]({%slug radribbonview-buttons-overview%}) topic.
 
-# See Also
+## See Also
  * [Ribbon Group]({%slug radribbonview-ribbon-group%})
  * [RibbonButtons Overview]({%slug radribbonview-buttons-overview%})
  * [Collapsing]({%slug radribbonview-collapsing%})

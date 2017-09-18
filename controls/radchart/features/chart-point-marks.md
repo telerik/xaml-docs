@@ -42,7 +42,7 @@ __RadChart__ supports eight predefined shapes that you can use to customize the 
 
 To learn more about customizing the point marks read the [Styling the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%}) topic. In case the provided customizations are not enough, you can completely re-template the point mark. See [here]({%slug radchart-templating-point-marks%}) for more information.
 
-# See Also
+## See Also
 
  * [Styling the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%})
 

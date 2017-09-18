@@ -261,7 +261,7 @@ Now that we have our Resources set and our __AppointmentStyleSelector__ ready, l
 
 ![radscheduleview appointment style 2](images/radscheduleview_appointment_style_2.png)
 
-# See Also
+## See Also
 
  * [Resources]({%slug radscheduleview-features-resources%})
 

@@ -42,7 +42,7 @@ __RadMap's__ key features include:
 
 Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#Map/SalesDashboard](http://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/#Map/SalesDashboard](http://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})
  * [Getting Started]({%slug radmap-getting-started%})
  * [Styles and Templates]({%slug radmap-styles-and-templates-overview%})

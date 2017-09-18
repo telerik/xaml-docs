@@ -36,7 +36,7 @@ __RadDataFilter__ key features include:
 
 Do not miss the online demos at:{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#DataFilter/FirstLook](http://demos.telerik.com/silverlight/#DataFilter/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/?DataFilter/FirstLook](http://demos.telerik.com/wpf/?DataFilter/FirstLook){% endif %}
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatafilter-visual-structure%})
 

@@ -134,7 +134,7 @@ The arguments of both events expose a __ManipulationStatus__ property. It serves
 
 	* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.				
 
-# See Also
+## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})

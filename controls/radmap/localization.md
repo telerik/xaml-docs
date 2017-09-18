@@ -34,7 +34,7 @@ Here is a list of all of the __Resources__ available and their default values:
 |MapPresetZoomLevelCity|City|
 |MapPresetZoomLevelNeighborhood|Neighborhood|
 
-# See Also
+## See Also
  * [Getting Started]({%slug radmap-getting-started%})
  * [Events]({%slug radmap-events%})
  * [Visual Structure]({%slug radmap-visual-structure%})

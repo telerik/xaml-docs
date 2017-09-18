@@ -58,7 +58,7 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 >__IsDropDownTabNavigationEnabled__ affects only non-editable RadComboBoxes.
 
-# See Also
+## See Also
 
  * [Selection]({%slug radcombobox-features-selection%})
 

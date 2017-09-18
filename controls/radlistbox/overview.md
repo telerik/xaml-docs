@@ -32,6 +32,6 @@ __RadListBox__ is a {% if site.site_name == 'Silverlight' %}Silverlight{% endif 
 
 * __Keyboard Support__ - __RadListBox__ supports several keyboard shortcuts for performing the most common task. [Read more]({%slug radlistbox-features-keyboard-support%})
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})

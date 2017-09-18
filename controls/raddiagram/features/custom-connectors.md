@@ -196,7 +196,7 @@ Below you can see a possible result of the code so far (some additional styling 
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomConnectors__.              
 
-# See Also
+## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Populating with Data]({%slug raddiagrams-features-connections%})

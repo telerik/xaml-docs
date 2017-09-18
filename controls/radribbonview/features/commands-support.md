@@ -37,7 +37,7 @@ You can find the following properties in the RibbonCommands class:
 * __RibbonCommands.MinimizeRibbonCommand__ - executes when the minimize button is clicked in order to minimize the ribbon
 * __RibbonCommands.ToggleQATPositionCommand__ - executes when the position of the ribbon's QuickAccessToolBar is toggled by clicking on its toggle button
 
-# See Also
+## See Also
 * [Functional Structure]({%slug radribbonview-functional-structure%})
 * [Visual Structure]({%slug radribbonview-visual-structure%})
 * [RibbonCommands class](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_ribboncommands.htm)

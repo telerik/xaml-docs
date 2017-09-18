@@ -57,7 +57,7 @@ You can add new appointment using the code. Here are the steps to accomplish thi
 	Me.radScheduleView.Commit()
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})
 

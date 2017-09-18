@@ -30,7 +30,7 @@ Once you have declared the needed namespace, the only thing you have to do is se
 
 >The default duration of the expand animation is 2 seconds.
 
-# See Also
+## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

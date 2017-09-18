@@ -54,7 +54,7 @@ If you want to enable or disable specific tab item(s) you have to use the __Bool
 
 
 
-# See Also
+## See Also
 
  * [Controlling Appearance]({%slug radtabcontrol-controlling-appearance%})
 

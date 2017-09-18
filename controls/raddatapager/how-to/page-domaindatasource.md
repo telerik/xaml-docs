@@ -52,7 +52,7 @@ If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you prob
 
 Note that both the __ListBox__ and the __RadDataPager__ are bound to the __Data__ property of the __DomainDataSource__. 
 
-# See Also
+## See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 

@@ -18,7 +18,7 @@ This section defines the terms and concepts used in the scope of __RadContextMen
 
 * __Menu Item__ - a __RadMenuItem__, that provides a way to display data in a hierarchical structure. Each __RadMenuItem__ can have other __RadMenuItems__ as children. To learn more about the __RadMenuItem__ control, please take a look at [this topic]({%slug radmenu-features-menuitems%}).          
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug contextmenu-getting-started%})
 

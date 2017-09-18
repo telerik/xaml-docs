@@ -102,6 +102,6 @@ The next example will show how to implement custom command that will be executed
 		</telerik:RadRadialMenu>
 	{{endregion}}
 
-# See Also
+## See Also
 
  * [RadialMenuItem Commands]({%slug radradialmenu-commands-radialmenuitem%})

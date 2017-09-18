@@ -71,7 +71,7 @@ The __RadUpload__ control raises the following specific events:
 	* The sender argument contains the __RadUpload__. This argument is of type object, but can be cast to the __RadUpload__ type.  
 	* An [DuplicateFileNameEventArgs](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_upload_eventarguments_duplicatefilenameeventargs.html) object.								
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
  * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Event Cycles]({%slug radupload-events-event-cycles%})

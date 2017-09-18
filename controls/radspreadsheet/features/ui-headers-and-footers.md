@@ -84,7 +84,7 @@ Along with text, you can insert several fields in a header or footer as shown in
 
 > You can format the text of each section using the *Format Text* button.
 
-# See Also
+## See Also
 
 * [Headers and Footers for SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/headers-and-footers)
 * [Printing]({%slug radspreadsheet-ui-printing%})

@@ -113,7 +113,7 @@ __RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type DataTemp
 
 You can notify the users about an ongoing process with a specific delay when __RadBusyIndicator__ is used. By changing the __DisplayAfter__ property to a certain __TimeSpan__, __RadBusyIndicator__ will be shown after the corresponding amount of time elapses - the default value of this delay is 100 milliseconds. For detailed information about using a delay with __RadBusyIndicator__, look at [this article]({%slug radbusyindicator-features-delayed-display%}).
 
-# See Also
+## See Also
 
  * [Overview]({%slug radbusyindicator-overview%})
 

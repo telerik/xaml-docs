@@ -54,7 +54,7 @@ To disable the closing of the __RadWindow__ via the UI you have to set the __Can
 
 ![](images/RadWindow_Features_Closing_02.png)
 
-# See Also
+## See Also
 
  * [Moving]({%slug radwindow-features-moving%})
 

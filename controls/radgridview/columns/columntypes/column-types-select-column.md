@@ -74,7 +74,7 @@ GridViewSelectColumn exposes two properties of type style: **CheckBoxStyle** and
 
 ![The styled GridViewSelectColumn](images/selectcolumn-styled.png)
 
-# See Also
+## See Also
 
  * [Column Selection]({%slug gridview-column-selection%})
 

@@ -69,7 +69,7 @@ Or you can select from the IntelliSense in XAML:
 
 >If you wonder which control in which assembly belongs to, read the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}).
 
-# See Also
+## See Also
 
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs-wpf%})
 

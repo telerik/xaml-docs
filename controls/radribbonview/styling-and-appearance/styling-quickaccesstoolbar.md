@@ -77,7 +77,7 @@ Here is a snapshot of the result:
 
 {% endif %}
 
-# See Also
+## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonView TitleBar]({%slug radribbonview-styling-titlebar%})

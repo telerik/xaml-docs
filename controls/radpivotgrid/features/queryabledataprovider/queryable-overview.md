@@ -55,7 +55,7 @@ Here are the main advantages of __QueryableDataProvider__:
 
 * __Case-sensitivity of filters depends on database__ - if you are using case-sensitive filter, it may not be applied correctly if the column in the table with data is not with correct collation.            
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

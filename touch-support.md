@@ -10,7 +10,7 @@ position: 10
 
 # Touch Support
 
-Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} now provides touch support. The functionality is built on top of our [TouchManager]({%slug touchmanager-overview%}) framework which provides the needed extensibility and the ability for each of the specific controls in the suite to support only the needed for it gestures.
+Telerik UI for {{ site.framework_name }} now provides touch support. The functionality is built on top of our [TouchManager]({%slug touchmanager-overview%}) framework which provides the needed extensibility and the ability for each of the specific controls in the suite to support only the needed for it gestures.
       
 ## Gestures
 

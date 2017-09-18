@@ -84,7 +84,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * {% if site.site_name == 'Silverlight' %}__RadDropDownButtonStyle__ - the default __Style__ for the __RadDropDownButton__. {% endif %}
 
-# See Also
+## See Also
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

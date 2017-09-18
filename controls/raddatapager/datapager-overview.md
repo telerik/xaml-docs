@@ -53,7 +53,7 @@ Telerik __RadDataPager__ provides the user with a navigation interface to page t
 [![RadDataPager Introduction Video](images/datapager_introduction_video.png)](http://tv.telerik.com/watch/silverlight/introduction-to-raddatapager)
         
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatapager-visual-structure%})
 

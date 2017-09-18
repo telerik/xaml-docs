@@ -35,6 +35,6 @@ In addition to the properties inherited from RadWindow, there is a property call
 
 >You need to add references to __Telerik.Windows.Controls__ and the Theme you want to use (in this case __Telerik.Windows.Themes.Summer__) in order to use it.{% endif %}
 
-# See Also
+## See Also
 
 * [Localization]({%slug radspellchecker-localization%})

@@ -73,7 +73,7 @@ Here is the above sample of an unbound column transformed into a template column
 
 ![](images/RadGridView_BoundUnboundColumns_3.png)
 
-# See Also
+## See Also
 
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
 

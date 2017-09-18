@@ -162,7 +162,7 @@ Here is a snapshot of the changed filter operator:
 
 By editing the template of the header cell you are able to change it's overall look and feel. To learn more about how to do that take a look at the [Templating the Column Headers]({%slug gridview-styling-column-headers%}) topic.
 
-# See Also
+## See Also
 
  * [Programmatic Filtering]({%slug gridview-programmatic-filtering%})
 

@@ -24,7 +24,7 @@ __RadBusyIndicator__ also gives you the __IsBusyIndicationVisible__ property. It
 
 >tipTo read more about the possible scenarios where you can use the __IsBusyIndicationVisible__ property, [look here]({%slug radbusyindicator-how-to-restore-the-focus%}). 
 
-# See Also
+## See Also
 
  * [Delayed Display]({%slug radbusyindicator-features-delayed-display%})
 

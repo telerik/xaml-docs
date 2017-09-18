@@ -94,6 +94,6 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	End Class
 {{endregion}}
 
-# See Also
+## See Also
  * [Overview]({%slug radchart-overview%})
  * [Populating with Data - Overview]({%slug radchart-populating-with-data-overview%})

@@ -177,7 +177,7 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 	End Class
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

@@ -35,7 +35,7 @@ Hierarchies of arbitrary complexity can be created, and once windows are docked 
 
 * __Codeless Test Automation for Docking__ - Now you can record, execute and debug functional tests for Docking without leaving the familiar Visual Studio environment. Telerik [WebUI Test Studio](http://www.telerik.com/products/web-testing-tools/webui-test-studio-features.aspx) is an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. The Studio ships with special translators for Telerik controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite for ASP.NET AJAX and Silverlight.
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddocking-visual-structure%})
 

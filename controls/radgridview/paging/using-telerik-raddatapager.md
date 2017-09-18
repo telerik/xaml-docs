@@ -118,7 +118,7 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 	</StackPanel>
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Basic Sorting]({%slug gridview-sorting-basics%})
 

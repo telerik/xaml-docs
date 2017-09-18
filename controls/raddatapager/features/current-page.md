@@ -96,7 +96,7 @@ Here is the XAML for the example.
 
 ![](images/RadDataPager_Features_CurrentPage_01.png)
 
-# See Also
+## See Also
 
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 

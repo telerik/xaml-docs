@@ -188,6 +188,6 @@ The next code snippet shows a sample implementation of __IDependant__ interface:
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __GanttView / CustomGanttTaskWithStatus__.
 
-# See Also
+## See Also
 
  * [Columns - Overview]({%slug radganttview-features-columns-types%})

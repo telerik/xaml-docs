@@ -16,6 +16,8 @@ To use __TxtFormatProvider__, you should add references to:
 	
 * __Telerik.Windows.Documents.dll__
         
+>The TxtFormatProvider of RadRichTextBox resides in the **Telerik.Windows.Documents.FormatProviders.Txt** namespace, so you will need to add a *using* statement for it.	
+	
 ## Import
 
 In order to import a plain text document, you need to use the __Import()__ method of __TxtFormatProvider__. __Example 1__ shows how to use __TxtFormatProvider__ to import a document from a file.

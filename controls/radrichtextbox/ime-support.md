@@ -127,7 +127,7 @@ The last thing you should do, is to set the RadRichTextBox’ CaretFactory prope
 
 
 
-# See Also
+## See Also
  * [SDK Example Custom Caret](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret) 
 
  * [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%})

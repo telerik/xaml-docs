@@ -15,17 +15,17 @@ position: 0
 __RadRichTextBox__ allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of __RadRichTextBox__ to/from a file. To import and export you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently __RadRichTextBox__ can export and import the following formats:
       
 
-* __XAML__ - to import/export __XAML__ documents you have to use the __XamlFormatProvider__ class.
+* __XAML__: To import/export __XAML__ documents you have to use the [__XamlFormatProvider__]({%slug radrichtextbox-import-export-using-xamlformatprovider%}) class.
 
-* __DOCX__ - to import/export __DOCX__ documents you have to use the __DocxFormatProvider__ class.
+* __DOCX__: To import/export __DOCX__ documents you have to use the [__DocxFormatProvider__]({%slug radrichtextbox-import-export-using-docxformatprovider%}) class.
 
-* __HTML__ - to import/export __HTML__ documents you have to use the __HtmlFormatProvider__ class.
+* __HTML__: To import/export __HTML__ documents you have to use the [__HtmlFormatProvider__]({%slug radrichtextbox-import-export-html-htmlformatprovider%}) class.
      
-* __RTF__- to import/export __RTF__ documents you have to use the __RtfFormatProvider__ class.
+* __RTF__: To import/export __RTF__ documents you have to use the [__RtfFormatProvider__]({%slug radrichtextbox-import-export-rtf-rtfformatprovider%}) class.
 
-* __Plain text__ - to import/export plain text documents you have to use the __TxtFormatProvider__ class.
+* __Plain text__: To import/export plain text documents you have to use the [__TxtFormatProvider__]({%slug radrichtextbox-import-export-txt-txtformatprovider%}) class.
 
-* __PDF__ - to export documents to __PDF__ you have to use the __PdfFormatProvider__ class.
+* __PDF__: To export documents to __PDF__ you have to use the [__PdfFormatProvider__]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%}) class.
           
 
 >tipEach __FormatProvider__ class is located in a separate assembly matching its name. For example, the __XamlFormatProvider__ class is in the __Telerik.Windows.Documents.FormatProviders.Xaml.dll__ assembly. The only exception is the __TxtFormatProvider__, which is included in __Telerik.Windows.Documents__.

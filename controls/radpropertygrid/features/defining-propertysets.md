@@ -1,36 +1,32 @@
 ---
-title: Defining Property-Sets
-page_title: Defining Property-Sets
-description: Defining Property-Sets
+title: Property Sets
+page_title: Property Sets
+description: Property Sets
 slug: radpropertygrid-defining-propertysets
 tags: defining,property-sets
 published: True
 position: 1
 ---
 
-# Defining Property-Sets
+# Property Sets
 
-With the __“Property sets”__ feature RadPropertyGrid enables its users to process multiple items, properties simultaneously. It is no longer needed to provide additional ViewModels to expose them or manage their changes backwards to your business object instances. Everything now happens under the hood.
+With the __property sets__ feature RadPropertyGrid enables its users to process multiple items' properties simultaneously. You no longer need to provide additional view models to expose those properties or manage their changes backwards to your business object instances. Everything now happens under the hood.
 
-## How does it work?
+This article consists of the following sections:
 
-In order to benefit from this feature, one should set RadPropertyGrid’s PropertySetMode property an appropriate value and provide an IEnumerable based instance that contains the business objects. 
+* [Setup](#setup)
 
->You can check the "__Validating Property Sets__" section from the PropertyGrid`s [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
+* [Property Set Modes](#property-set-modes)
 
-* [Modes](#modes)
+* [PropertySet Property](#propertyset-property)
 
 * [Customizing PropertyDefinitions](#customizing-propertydefinitions)
 
 * [Disable creating object instance for null value](#disable-creating-object-instance-for-null-value)
 
-## Modes
+## Setup
 
-* [None](#none)
-
-* [Union](#union)
-
-* [Intersection](#intersection)
+In order to benefit from this feature, you should set RadPropertyGrid's **PropertySetMode** property to an appropriate value and provide an **IEnumerable** instance that contains the business objects. 
 
 For the means of illustrating the separate mode values, the following types will be used:
 
@@ -44,6 +40,7 @@ For the means of illustrating the separate mode values, the following types will
 	    public double RadiusX2 { get; set; }
 	    public Point Center { get; set; }
 	}
+
 	public class RegularPolygon
 	{
 	    public int CornersCount { get; set; }
@@ -51,6 +48,7 @@ For the means of illustrating the separate mode values, the following types will
 	    public Point Center { get; set; }
 	    public double SideLength { get; set; }
 	}
+
 	public class ViewModel
 	{
 	    public IEnumerable<object> Shapes
@@ -78,8 +76,6 @@ For the means of illustrating the separate mode values, the following types will
 	}
 {{endregion}}
 
-
-
 #### __[VB.NET] Example 1: Preparing sample data__
 
 	{{region vb-radpropertygrid-defining-propertysets_0}}
@@ -89,12 +85,14 @@ For the means of illustrating the separate mode values, the following types will
 	    Public Property RadiusX2() As Double
 	    Public Property Center() As Point
 	End Class
+
 	Public Class RegularPolygon
 	    Public Property CornersCount() As Integer
 	    Public Property FillColor() As Color
 	    Public Property Center() As Point
 	    Public Property SideLength() As Double
 	End Class
+
 	Public Class ViewModel
 	    Public ReadOnly Property Shapes() As IEnumerable(Of Object)
 	        Get
@@ -122,40 +120,95 @@ For the means of illustrating the separate mode values, the following types will
 	{{region xaml-radpropertygrid-defining-propertysets_1}}
 	<Grid>
 	    <Grid.Resources>
-	        <local:ViewModel x:Key="vm" />
+	        <local:ViewModel x:Key="ViewModel" />
 	    </Grid.Resources>
-	    <telerik:RadPropertyGrid DataContext="{StaticResource vm}" 
-	                         Item="{Binding Shapes}" />
+	    <telerik:RadPropertyGrid DataContext="{StaticResource ViewModel}" Item="{Binding Shapes}" />
 	</Grid>
 {{endregion}}
 
+## Property Set Modes
+
+The PropertySetMode property accepts values of type **PropertySetOperation** which is an enumeration that has three values - [None](#none), [Union](#union) and [Intersection](#intersection).
+
 ### None
 
-“None” is the default value of RadPropertyGrid’s PropertySetMode property. In this case the Item value is processed as a single object, regardless of its type. It is a List of objects instance in our occasion:
+**None** is the default value of RadPropertyGrid’s **PropertySetMode** property. In this case the item value is processed as a single object, regardless of its type. It is a List of objects instance in our occasion.
 
-![Rad Property Grid Sets None](images/RadPropertyGrid_Sets_None.png)
+#### Figure 1: RadPropertyGrid with PropertySetMode set to None
 
-Both RegularPolygon and Ellipse’s properties has been disregarded and only the two public properties of List are displayed.
+![RadPropertyGrid with PropertySetMode set to None](images/RadPropertyGrid_Sets_None.png)
+
+Both **RegularPolygon** and **Ellipse**'s properties have been disregarded and only the two public properties of the **List** class are displayed.
 
 ### Union
 
-When “Union” is the active mode, a union set of items’ properties is constructed. In case that a property that is common for several items has the same value for each of them, RadPropertyGrid displays this value in the respective editor. On the other hand, if it has different values for the separate items, the editor displays either null, or the default value for this type
+When **Union** is the active mode, a union set of the items' properties is constructed. In case that a property that is common for several items has the same value for each of them, RadPropertyGrid displays this value in the respective editor. On the other hand, if it has different values for the separate items, the editor displays either null, or the default value for this type.
 
-![Rad Property Grid Sets Union](images/RadPropertyGrid_Sets_Union.png)
+#### Figure 2: RadPropertyGrid with PropertySetMode set to Union
+
+![RadPropertyGrid with PropertySetMode set to Union](images/RadPropertyGrid_Sets_Union.png)
+
+Notice that all 6 distinct properties are displayed.
 
 ### Intersection
 
-The “Intersection” mode works in a similar way to the “Union” mode, with a single difference – when it is used RadPropertyGrid constructs an intersection set instead. Here is the output when “Intersection” mode is applied over the same data source:
+The **Intersection** mode works in a similar way to the "Union" mode, however, in this case RadPropertyGrid constructs an intersection set instead. Here is the output when "Intersection" mode is applied over the same data source:
 
-![Rad Property Grid Sets Intersection](images/RadPropertyGrid_Sets_Intersection.png)
+#### Figure 3: RadPropertyGrid with PropertySetMode set to Intersection
+
+![RadPropertyGrid with PropertySetMode set to Intersection](images/RadPropertyGrid_Sets_Intersection.png)
+
+In this case, only the **Center** and **FillColor** properties which are common for both classes are displayed.
+
+## PropertySet Property
+
+As of **R3 2017**, RadPropertyGrid exposes a **PropertySet** property of type PropertySet which is a basic implementation of the **DynamicObject** class. Thus, you can access and modify each of the properties of the set through its indexer.
+
+> More information about the DynamicObject class can be found in [this MSDN article](https://msdn.microsoft.com/en-us/library/system.dynamic.dynamicobject).
+
+#### __[C#] Example 3: Update PropertySet value__
+
+	{{region cs-radpropertygrid-defining-propertysets_2}}
+		this.RadPropertyGrid.PropertySet["FillColor"] = Colors.Blue;
+	{{endregion}}
+
+#### __[VB.NET] Example 3: Update PropertySet value__
+
+	{{region vb-radpropertygrid-defining-propertysets_2}}
+		Me.RadPropertyGrid.PropertySet("FillColor") = Colors.Blue
+	{{endregion}}
+
+The control also provides an **UpdatePropertySetValue** which accepts three arguments:
+
+* **propertyName**: The name of the updated property
+* **propertyValue**: The value of the updated property
+* **shouldUpdateBoundData**: Indicates whether the bound data (item) should be updated
+
+**Example 4** demonstrates how to update the property set similarly to **Example 3** but without propagating the changed values back to the underlying models.
+
+#### __[C#] Example 4: Update PropertySet value without notifying underlying models__
+
+	{{region cs-radpropertygrid-defining-propertysets_3}}
+		this.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, false);
+	{{endregion}}
+
+#### __[VB.NET] Example 4: Update PropertySet value without notifying underlying models__
+
+	{{region vb-radpropertygrid-defining-propertysets_3}}
+		Me.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, False)
+	{{endregion}}
+
+>You can check the __Validating Property Sets__ section from the control's [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
 
 ## Customizing PropertyDefinitions
 
-RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the specified set. In order to provide a cross-platform data binding approach, an indexer has been exposed. However, as dynamic properties do not contain any information about their relying type an IValueConverter instance might be needed in certain scenarios:
+When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the DataContext of the created editors is an instance of **PropertySetViewModel**. It exposes the **CurrentPropertySet** property which is the same instance provided by the PropertySet property of the RadPropertyGrid control. You can use this to define your customized property definitions. However, as dynamic properties do not contain any information about their underlying type, an **IValueConverter** might be needed in certain scenarios.
 
-#### __[XAML] Example 3: Defining editor template__
+**Examples 5-7** demonstrate how to use a custom **EditorTemplate** for the integer property of a property set.
 
-	{{region xaml-radpropertygrid-defining-propertysets_2}}
+#### __[XAML] Example 5: Defining editor template__
+
+	{{region xaml-radpropertygrid-defining-propertysets_4}}
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <local:ViewModel x:Key="vm" />
@@ -171,9 +224,9 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	</Grid>
 {{endregion}}
 
-#### __[C#] Example 4: Setting EditorTemplate of a PropertyDefinition__
+#### __[C#] Example 6: Setting EditorTemplate of a PropertyDefinition__
 
-	{{region cs-radpropertygrid-defining-propertysets_3}}
+	{{region cs-radpropertygrid-defining-propertysets_5}}
 	private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    if (e.PropertyDefinition.DisplayName == "CornersCount")
@@ -183,9 +236,9 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	}
 {{endregion}}
 	
-#### __[VB.NET] Example 4: Setting EditorTemplate of a PropertyDefinition__
+#### __[VB.NET] Example 6: Setting EditorTemplate of a PropertyDefinition__
 
-	{{region vb-radpropertygrid-defining-propertysets_3}}
+	{{region vb-radpropertygrid-defining-propertysets_5}}
 	Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
 	    If e.PropertyDefinition.DisplayName = "CornersCount" Then
 	        e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
@@ -193,9 +246,9 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	End Sub
 {{endregion}}
 	
-#### __[C#] Example 5: Defining IValueConverter__
+#### __[C#] Example 7: Defining IValueConverter__
 
-	{{region cs-radpropertygrid-defining-propertysets_4}}
+	{{region cs-radpropertygrid-defining-propertysets_6}}
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -209,9 +262,9 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	}
 {{endregion}}
 	
-#### __[VB.NET] Example 5: Defining IValueConverter__
+#### __[VB.NET] Example 7: Defining IValueConverter__
 
-	{{region vb-radpropertygrid-defining-propertysets_4}}
+	{{region vb-radpropertygrid-defining-propertysets_6}}
 	Public Class MyConverter
 	    Implements IValueConverter
 	    Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.Convert
@@ -223,16 +276,17 @@ RadPropertyGrid utilizes a DynamicObject ViewModel for the construction of the s
 	End Class
 {{endregion}}
 
-![Rad Property Grid Sets Customized](images/RadPropertyGrid_Sets_Customized.png)
+#### Figure 4: RadNumericUpDown for integer property of property set
 
+![RadNumericUpDown for integer property of property set](images/RadPropertyGrid_Sets_Customized.png)
 
 ## Disable creating object instance for null value
 
 By default, __RadPropertyGrid__ will create an object instance for a property of custom data type with null value. This behavior can be altered through the __ShouldAddNullForNonMatchingValues__ boolean property. Its default value is __False__. When set to __True__, the control __will not create a new instance__ for __null property values__. 
 
-#### __[XAML] Example 6: Setting the ShouldAddNullForNonMatchingValues property to True__
+#### __[XAML] Example 8: Setting the ShouldAddNullForNonMatchingValues property to True__
 
-	{{region xaml-radpropertygrid-defining-propertysets_5}}
+	{{region xaml-radpropertygrid-defining-propertysets_7}}
 
 	      <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
 	                                 Item="{Binding Shapes}"
@@ -240,15 +294,7 @@ By default, __RadPropertyGrid__ will create an object instance for a property of
 	                                 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
 {{endregion}}
 
-
 ## See Also
 
  * [Edit Modes]({%slug radpropertygrid-edit-modes%})
- 
  * [Validation]({%slug radpropertygrid-features-validation%}) 
- 
-
-
-
-
-

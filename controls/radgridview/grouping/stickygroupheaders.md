@@ -18,6 +18,8 @@ By default, RadGridView's group headers will go out of view once you scroll past
 
 You can stick the headers of the group to the top until its items are scrolled out of view by setting the **EnableStickyGroupHeaders** property to *true*.
 
+>important The EnableStickyGroupHeaders functionality is only supported when [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}) is **Flat**. If the **Nested** grouping mode is set, a **NotSupportedException** will be thrown.
+
 #### __Example 1: Enable Sticky Group Headers__
 
 {{region gridview-sticky-group-headers-0}}
@@ -31,5 +33,5 @@ You can stick the headers of the group to the top until its items are scrolled o
 ## See Also
 
  * [Group Footers]({%slug gridview-group-footers%})
-
  * [Modifying Group Panel]({%slug gridview-modifying-group-panel%})
+ * [Grouping Modes]({%slug gridview-grouping-groupingmodes%})

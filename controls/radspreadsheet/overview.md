@@ -18,94 +18,108 @@ position: 0
 
 Thank you for choosing Telerik __RadSpreadsheet__!
 
-__RadSpreadsheet__ is a control that allows editing tabular data 
-      utilizing a variety of cell formatting options, styles and themes. 
+__RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
 
-![Rad Spreadsheet Overview small](images/RadSpreadsheet_Overview_small.png)
+![Rad Spreadsheet Overview ](images/RadSpreadsheet_Overview.png)
 
-Some of its features are:
 
-* Named Ranges;
+>important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 
-* Protection;
+## Features
 
-* Images;
+Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
-* Freeze panes;
+* Insert and delete cells, rows and columns
 
-* Printing;
+* Use different **cell formatting**:
 
-* Create and use multiple sheets, each one with its own history stack;
+	* various fonts and font sizes;	
+	* fore color and background color;	
+	* bold, italics and underline;	
+	* vertical and horizontal cell alignment;	
+	* text wrapping;	
+	* cell borders;	
+	* use cell styles and themes for a more consistent look.
 
-* Selection and active cell;
+* A battery of **data formatting** options:
 
-* Scrolling - there are two scrolling modes - ItemBased and PixelBased. 
-        	The first one ensures that the whole content of the top left cell is visible, the latter designed for smoother interaction;
+	* Number;	
+	* Currency;	
+	* Accounting;	
+	* Date;	
+	* Time;	
+	* Percentage;	
+	* Fraction;	
+	* Scientific;	
+	* Text;	
+	* Special;	
+	* Custom.
+	
 
-* Insert and delete cells, rows and columns;
+* A broad range of **formulas** in different categories. **RadSpreadsheet** comes with more than 200 built-in functions. The API enables you to easily plug custom ones as well. For more informations, refer to the [Formulas](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/formulas/formulas) section for SpreadProcessing.
 
-* Merge cells, merge cells across columns and unmerge;
+* **Shapes and Images**: The UI enables you to work with images. [API](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
 
-* Resize rows and columns, auto fit;
+* **Document themes**
 
-* Zoom in and out each sheet separately;
+* **Auto fill** and **Series**: Fill cells automatically with data following a specific pattern.
 
-* Use different cell formatting:
+* [**Data Validation**]({%slug radspreadsheet-ui-data-validation%}): Enables you to control the type of data or the values that users enter into a cell. Different data validation rules are available, including list, number, date, text length or custom rules.
 
-* various fonts and font sizes;
+* [**Filtering**]({%slug radspreadsheet-ui-filtering%}) worksheet data.	
 
-* fore color and background color;
+* [**Sorting**]({%slug radspreadsheet-ui-filtering%}) the data in the worksheet.	
 
-* bold, italics and underline;
+* [**Find and replace data**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/find-and-replace).
 
-* vertical and horizontal cell alignment;
+* **Copy/Paste**: Add or copy worksheets within or across workbooks. Of course, copying and pasting of cells is supported as well.
 
-* text wrapping;
+* Customize row/column **headings**
 
-* cell borders;
+* **Show/Hide** gridlines and headers
 
-* use cell styles and themes for a more consistent look.
+* **Merge** cells, merge cells across columns and unmerge
 
-* A battery of data formatting options:
+* **Resize** rows and columns, auto fit
 
-* Number;
+* **Zoom** in and out each sheet separately
 
-* Currency;
+* **Named Ranges**: You can use the named ranges on workbook and worksheet levels.
 
-* Accounting;
+* **Protection**: Different options available for protecting the workbook and its worksheets from modifications.
 
-* Date;
+* [**Freeze panes**]({%slug radspreadsheet-ui-freeze-panes%})
 
-* Time;
+* [**Printing**]({%slug radspreadsheet-ui-printing%})
 
-* Percentage;
+* [**Headers and Footers**]({%slug radspreadsheet-ui-headers-and-footers%}): The functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
 
-* Fraction;
+* Create and use multiple sheets, each one with its own [**history**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hostory) stack
 
-* Scientific;
+* [**Selection** and active cell]({%slug radspreadsheet-ui-working-with-selection%})
 
-* Text;
+* [Customizing the selection appearance]({%slug radspreadsheet-howto-customize-selection%})
 
-* Special;
+* **Scrolling**: There are two scrolling modes - **ItemBased** and **PixelBased**. The first one ensures that the whole content of the top left cell is visible, the latter designed for smoother interaction.
 
-* Custom.
+* Easy integration with __RadRibbonView__
 
-* Auto fill and Series - fill cells automatically with data following a specific pattern;
+* [**Localization**]({%slug radspreadsheet-localization%}): You can easily translate the string resources of **RadSpreadsheet**.
 
-* A broad range of formulas in different categories:
 
-* Logical;
+## Supported formats: 
 
-* Text;
+* [**XLSX**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
 
-* Date and Time;
+* [**CSV**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/csv/csvformatprovider) 
 
-* Math and Trigonometry.
+* [**Plain text**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/txt/txtformatprovider) 
 
-* Easy integration with __RadRibbonView__.
+* [**PDF**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider) (export only)
+ 
 
 ## See Also
 
- * [Getting Started]({%slug radspreadsheet-getting-started%})
-
- * [Unsupported Features]({%slug radspreadsheet-unsupported-features%})
+* [Getting Started]({%slug radspreadsheet-getting-started%})
+* [Unsupported Features]({%slug radspreadsheet-unsupported-features%}) 
+* [RadSpreadProcessing Documentation](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)

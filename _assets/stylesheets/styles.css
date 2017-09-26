@@ -755,7 +755,7 @@ blockquote th, blockquote td {
 .prettyprint {
     font-size: 12px;
     padding: 20px;
-	background-color: #fbfdfe;
+	background-color: #ffffff;
     border: 2px dashed #ebecee;	
 	margin: 5px 0;
 }
@@ -1867,6 +1867,10 @@ div.k-window-content {
 /* END Introduction page all controls table styles */
 
 /* START TabStrip styles */
+.k-tabstrip-wrapper {
+	background-color: #ffffff;
+}
+
 .k-tabstrip {
     border: 1px solid #ebecee;
 }
@@ -1889,7 +1893,8 @@ div.k-window-content {
 }
 
 .k-tabstrip .k-content {
-    background: #fff;
+    background: #ffffff;
+	max-height: 40vh;
 }
 
 .k-tabstrip .k-tabstrip-items .k-state-active {

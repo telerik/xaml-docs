@@ -14,24 +14,26 @@ position: 0
 
 Thank you for choosing Telerik __RadListBox__!
 
-__RadListBox__ is a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control used to display a list of items from which the user can choose. The control has a number of advanced features like multiple selection, autocomplete, keyboard support, drag and drop, as well as full customization capabilities.
+__RadListBox__ is a {{ site.framework_name }} control used to display a list of items from which the user can choose. The control has a number of advanced features like multiple selection, autocomplete, keyboard support, drag and drop, as well as rich customization capabilities.
 
 ![Rad List Box Overview 02](images/RadListBox_Overview_02_WPF.png)
 
 ## Key Features:
 
-* __Selection__ - RadListBox provides three selection modes - Single, Multiple and Extended. Check [here]({%slug radlistbox-features-selection%}) for more details.          
+* __Selection__: RadListBox provides three selection modes - Single, Multiple and Extended. Read more about this in the [Selection]({%slug radlistbox-features-selection%}) article.
 
-* __AutoComplete__ - when __RadListBox__ is in focus, the first matching item is selected while the user is typing. [Read more]({%slug radlistbox-features-autocomplete%}).          
+* __AutoComplete__: When the control is focused, the first matching item is selected while the user is typing. Read more about this in the [Autocomplete]({%slug radlistbox-features-autocomplete%}) article.
 
-* __Drag and Drop__ - take advantage of the built-in drag and drop support to reorder items or move them from one RadListBox to another. [Read more]({%slug radlistbox-features-dragdrop%}).       
+* __Drag and Drop__: Take advantage of the built-in drag and drop support to reorder items or move them from one RadListBox to another. Read more about this in the [Drag and Drop]({%slug radlistbox-features-dragdrop%}) section.
 
-* __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} ListBox shares a single codebase with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your RadListBox logic if you have parallel Silverlight/WPF development.          
+* __Keyboard Support__: RadListBox supports several keyboard shortcuts for performing the most common task. Read more about this in the [Keyboard Support]({%slug radlistbox-features-keyboard-support%}) article.
 
-* __Expression Blend support__ - all controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite can be easily customized using Expression Blend.          
+* __Theming__: As any other control from the UI for {{ site.framework_name }} suite, RadListBox comes with different themes. Read more about this in the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section of the documentation. 
 
-* __Keyboard Support__ - __RadListBox__ supports several keyboard shortcuts for performing the most common task. [Read more]({%slug radlistbox-features-keyboard-support%})
+>tip Get started with the control with its [Getting Started]({%slug radlistbox-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#ListBox){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
-
  * [Getting Started]({%slug radlistbox-getting-started%})
+ * [Events]({%slug radlistbox-events%})

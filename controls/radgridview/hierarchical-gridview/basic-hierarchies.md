@@ -98,5 +98,5 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 ## See Also
 
  * [Custom Hierarchies]({%slug gridview-custom-hierarchies%})
-
  * [Self-Referencing GridView]({%slug gridview-self-referencing-grid%})
+ * [How-to Set Properties of the Child RadGridView]({%slug gridview-how-to-access-child-gridview%})

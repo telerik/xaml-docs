@@ -17,6 +17,7 @@ This series is visualized on the screen as a straight line connecting each of th
 You can use the following definition to display a simple RadarLineSeries
 
 #### __XAML__
+{{region radchartview-series-radarlineseries-0}}
 	<telerik:RadPolarChart Palette="Windows8">
 		<telerik:RadPolarChart.PolarAxis>
 			<telerik:PolarAxis />
@@ -43,6 +44,7 @@ You can use the following definition to display a simple RadarLineSeries
 			</telerik:RadarLineSeries>
 		</telerik:RadPolarChart.Series>
 	</telerik:RadPolarChart>
+{{endregion}}
 
 ![radchartview-series-radarlineseries](images/radchartview-series-radarlineseries.png)
 

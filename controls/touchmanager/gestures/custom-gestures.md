@@ -26,6 +26,7 @@ The __GestureRecognizerBase__ class exposes methods for the basic event handlers
 * __OnTouchLeave__: This method will be called when a TouchLeave event for the element is fired.
 
 #### __[C#] Example 1: Sample gesture recognizer__
+{{region touchmanager-custom-gestures-0}}
 	public class MyGestureRecognizer : GestureRecognizerBase
     {
 		public override void OnTouchEnter(GestureRecognizerEventArgs args)
@@ -48,8 +49,10 @@ The __GestureRecognizerBase__ class exposes methods for the basic event handlers
         {
         }
     }
+{{endregion}}
 
 #### __[VB.NET ] Example 1: Sample gesture recognizer__
+{{region touchmanager-custom-gestures-1}}
 	Public Class MyGestureRecognizer
 		Inherits GestureRecognizerBase
 		Public Overrides Sub OnTouchEnter(args As GestureRecognizerEventArgs)
@@ -67,6 +70,7 @@ The __GestureRecognizerBase__ class exposes methods for the basic event handlers
 		Public Overrides Sub OnTouchLeave(args As GestureRecognizerEventArgs)
 		End Sub		
 	End Class
+{{endregion}}
 
 ## Gesture recognizer factory
 
@@ -76,6 +80,7 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
 * __RegisterGestureTransitions__: A method that can be used to register the allowed gesture transitions.
 
 #### __[C#] Example 2: Sample gesture recognizer factory__
+{{region touchmanager-custom-gestures-2}}
 	public class MyGestureRecognizerFactory : IGestureRecognizerFactory
     {
         public GestureRecognizerBase CreateGestureRecognizer(System.Windows.UIElement element)
@@ -95,8 +100,10 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
         {
         }
     }
+{{endregion}}
 	
 #### __[VB.NET] Example 2: Sample gesture recognizer factory__	
+{{region touchmanager-custom-gestures-3}}
 	Public Class MyGestureRecognizerFactory
 		Implements IGestureRecognizerFactory
 		Public Function CreateGestureRecognizer(element As System.Windows.UIElement) As GestureRecognizerBase
@@ -112,7 +119,8 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
 		Public Sub RegisterGestureTransitions()
 		End Sub
 	End Class	
-
+{{endregion}}
+	
 > You can see how to implement a gesture in the [Creating Custom Gesture]() help article.
 
 ## See Also

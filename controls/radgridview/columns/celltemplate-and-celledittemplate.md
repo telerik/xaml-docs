@@ -20,17 +20,17 @@ RadGridView provides a set of predefined column types like __GridViewCheckBoxCol
 
 #### Default controls for view mode
 
-* __TextBlock__ - for string, numeric, DateTime properties;
+* __TextBlock__: for string, numeric, DateTime properties;
 
-* __CheckBox__ - for boolean properties;
+* __CheckBox__: for boolean properties;
 
 #### Default editors
 
-* __TextBox__ - for string and numeric properties;
+* __TextBox__: for string and numeric properties;
 
-* __CheckBox__ - for boolean properties;
+* __CheckBox__: for boolean properties;
 
-* __RadDatePicker__ - for DateTime properties.
+* __RadDatePicker__: for DateTime properties.
 
 In case you want to change those default elements for a particular columns, you may define them as follows:
 

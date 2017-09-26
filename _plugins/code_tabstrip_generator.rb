@@ -72,7 +72,7 @@ module Reading
 				# insert the generated html at the original content start position
 				if language.include? "VB"
 					 content = content.insert(vbCodeInsertIndex, codeSnippetHtml)					
-					 endIndex = vbCodeInsertIndex + codeSnippetHtml.length + @tabstripEndTag.length
+					 endIndex = vbCodeInsertIndex + codeSnippetHtml.length + @tabstripEndTag.length					 
 				else
 					htmlHeader = ""
 					if !header.nil?
@@ -80,10 +80,9 @@ module Reading
 					end		
 					
 					# wrap the html snippet in a tabstrip container
-					newTabStripContent = htmlHeader + @tabstripStartTag + codeSnippetHtml + @tabstripEndTag										
-					content = content.insert(startIndex, newTabStripContent)
-					
-					vbCodeInsertIndex = startIndex + @tabstripStartTag.length + codeSnippetHtml.length
+					newTabStripContent = htmlHeader + @tabstripStartTag + codeSnippetHtml + @tabstripEndTag					
+					content = content.insert(startIndex, newTabStripContent)					
+					vbCodeInsertIndex = startIndex + newTabStripContent.length - @tabstripEndTag.length
 				end			
 			end
 		end
@@ -105,10 +104,11 @@ module Reading
 			headerLangPattern = /####\s{1,}(__|\*\*)\[?(VB.NET|VB|C#|XAML)\]?\s*/ # gets the language part of the header (including white spaces). Examples: '__[XAML] ' or '__[C#] ' or '__XAML ', etc. 
 			languageString = header[headerLangPattern];
 			 if !languageString.nil?					
-				header = header.gsub(languageString, "")				
+				header = header.gsub(languageString, "")							
+				header = header.strip
 				header = header.chomp("__")
 				header = header.chomp("**")
-			 end
+			 end			 
 			return header
 		end
 		

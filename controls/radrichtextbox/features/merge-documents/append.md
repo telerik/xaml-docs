@@ -38,7 +38,7 @@ The overloads of the AppendDocument() method allow you to pass a parameter of ty
 	* **SourceStartContinuous**: Append the first source section as it is, with a preceding section break of type *SectionBreakType.Continuous*. The section properties, headers and footers are preserved. For example, if the source section has a *landscape* orientation and the target has *portrait*, the result section will have a *landscape* orientation, but the break type will change to a next page since two sections with different orientation or a page size cannot exist on a single page.
 
 
-#### **Example 1: Using the AppendDocument() method**
+#### **[C#] Example 1: Using the AppendDocument() method**
 
 {{region cs-radrichtextbox-features-merge-append-documents_1}}
 

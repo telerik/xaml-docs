@@ -39,7 +39,7 @@ Read the following topics to learn more:
 
 * [Styling Nummeric Buttons]({%slug raddatapager-styles-and-templates-styling-the-numeric-buttons%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug raddatapager-visual-structure%})
 

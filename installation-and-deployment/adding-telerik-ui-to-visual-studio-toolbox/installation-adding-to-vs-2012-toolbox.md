@@ -53,7 +53,7 @@ To manually add UI for Silverlight to the Toolbox, follow the steps below:
 
 ![Common Installing Adding ToVS 2012 Tool Box 080](images/Common_InstallingAddingToVS2012ToolBox_080.png)
 
-# See Also
+## See Also
 
  * [Creating an Application and Adding UI for Silverlight]({%slug installation-adding-to-application-create-application-and-adding-control%})
 

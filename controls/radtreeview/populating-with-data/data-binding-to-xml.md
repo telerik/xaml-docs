@@ -220,18 +220,6 @@ The final result should look like the snapshot below:
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-xml_10}}
-		<UserControl.Resources>
-			<example:RadTreeViewXmlDataSource x:Key="treeViewData"
-				Source="RadTreeViewBindingToXml.xml"/>
-			<telerik:HierarchicalDataTemplate x:Key="Item" ItemsSource="{Binding Items}">
-				<TextBlock Text="{Binding Header}" />
-			</telerik:HierarchicalDataTemplate>
-		</UserControl.Resources>
-		{{endregion}}
-
-	#### __XAML__
-
 	{{region radtreeview-populating-with-data-data-binding-to-xml_11}}
 		<UserControl.Resources>
 			<example:RadTreeViewXmlDataSource x:Key="treeViewData"
@@ -255,7 +243,7 @@ The final result should look like the snapshot below:
 * Here is the final result.
 ![](images/RadTreeView_PopulatingWithDataBindingToXML_010.PNG)
 
-# See Also
+## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})
  * [Populating with Data - In Code-Behind]({%slug radtreeview-populating-with-data-in-code-behind%})

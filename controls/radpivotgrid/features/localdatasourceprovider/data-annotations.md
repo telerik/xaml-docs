@@ -232,7 +232,7 @@ You can see how in the top part of __RadPivotFieldList__ the CustomName is not a
 
 >If you use Data Annotations and CustomName for the same property, CustomName will be used as it has higher priority.          
 
-# See Also
+## See Also
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
 

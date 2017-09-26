@@ -25,7 +25,7 @@ If you set this property to __True__, the menu won't get closed upon a click on 
 
 >tipYou might find this functionality very useful, when having checkable menu items in your __RadMenu__. It allows you to keep the menu open, when a menu item gets checked. To learn more about this type of items read [here]({%slug radmenu-features-checkable-items%}).
 
-# See Also
+## See Also
 
  * [Opening Modes]({%slug radmenu-features-opening-modes%})
 

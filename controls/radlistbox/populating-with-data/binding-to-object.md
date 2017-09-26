@@ -155,6 +155,6 @@ The end result is shown on the next snapshot:
 
 >If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the item would be set to the value returned by the ToString() method of the business object. 
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radlistbox-getting-started%})

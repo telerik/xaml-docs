@@ -152,6 +152,6 @@ The __GridViewSelectedCellsChangedEventArgs__ class exposes the following specif
 
 * __RemovedCells__ - a collection of the cell(s) that has/have been removed from the selection
 
-# See Also
+## See Also
 
  * [Basic Selection]({%slug gridview-selection-basics%})

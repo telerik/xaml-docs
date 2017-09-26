@@ -101,7 +101,7 @@ Both operations result in __raising of the EditEnded event__, which indicates th
 
 These __edit actions are integrated__ with [RadPropertyGrid’s Keyboard navigation]({%slug radpropertygrid-features-keyboard-support%}) (i.e. clicking on a display TextBlock triggers edit, pressing Esc cancels edit etc).
 
-# See Also
+## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})
 

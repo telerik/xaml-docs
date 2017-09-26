@@ -169,5 +169,5 @@ This will be the final result:
 
 ![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_04.png)
 
-# See Also
+## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

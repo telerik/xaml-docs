@@ -112,5 +112,5 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	End Sub
 {{endregion}}		  
 
-# See Also
+## See Also
  * [Styling the RadRibbonSplitButton]({%slug radribbonview-styling-ribbonsplitbutton%})

@@ -36,7 +36,7 @@ The __ItemViewModelBase__ class exposes the following properties:
 |IsSelected|Gets or sets a Boolean value indicating whether an item is selected.|
 
 
-# See Also
+## See Also
  * [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%})
  * [LinkViewModelBase]({%slug raddiagram-data-linkviewmodel%})
  * [ContainerNodeViewModelBase]({%slug raddiagram-data-containernodeviewmodel%})

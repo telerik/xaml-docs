@@ -114,6 +114,6 @@ __Example 5__ will show how these properties could be set:
 Figure 3: Custom Thickness properties
 ![Rad Radial Menu Styling Radial Menu 04](images/RadRadialMenu_Styling_RadialMenu_04.png)
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radradialmenu-visual-structure%})

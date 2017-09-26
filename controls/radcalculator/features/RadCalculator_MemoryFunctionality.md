@@ -42,7 +42,7 @@ __RadCalculator__ supports all native memory functionality the end user is accus
 * __Memory Clear (MC)__ - clears the memory value.
 			  
 
-# See Also
+## See Also
 
  * [Clear Functionality]({%slug radcalculator-clearfunctionality%})
 

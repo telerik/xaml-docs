@@ -125,7 +125,7 @@ It is time to configure our Internet Information Service (IIS). To do it start I
 	If you use Authentication for your service, you should add Authorization in the http-request-headers:  __http-request-headers="SOAPAction,Authorization"__. More information about clientaccespolicy can be found [here](http://msdn.microsoft.com/en-us/library/cc197955(v=vs.95).aspx).
 	{% endif %}
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radpivotgrid-getting-started%})
 

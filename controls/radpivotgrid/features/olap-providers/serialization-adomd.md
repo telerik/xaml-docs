@@ -270,7 +270,7 @@ So the last step is to serialize the provider and deserialize it:
 	provider.Deserialize(Me.pivot.DataProvider, Me.lastSerializedProvider)
 {{endregion}}
 
-# See Also
+## See Also
 
  * [AdomdDataProvider]({%slug radpivotgrid-data-adomd%})
 

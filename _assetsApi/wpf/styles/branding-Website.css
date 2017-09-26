@@ -116,31 +116,35 @@ div#tocNav > div.toclevel10 {
 
 /* Search form */
 form#SearchForm {
-	float: left;
-	background-color: #eee;
-	width: 45%;
-	margin-left: 380px;
+    height: 28px;
+    margin: 0 0 0 85px;
+    position: absolute;
+    top: 61px;
+    background-color: #fff;
+    padding: 0;
+	border: 1px solid #D9D9D9;
+    max-width: 930px;
+	min-width: 600px; 
+	left: 18%;
+    right: 514px;
+	box-shadow: 3px 3px 19px rgba(0, 0, 0, 0.1); 
 }
-form#SearchForm input {
-	background-color: #eee;
-	border: 0;
-	height: 35px;
+form#SearchForm input { 
+	background: transparent; 
+	border: 0; 
 	width: 92%;
-	color: #3b3b3b;
+	color: #2a2a2a;
 	display: inline-block;
-	float: left;
-	padding: 1px 4px 1px 10px;
+	padding: 3px 5px 4px 10px;
+	font-size: 16px;
 }
 form#SearchForm button {
-	background: url('../icons/Search.png') no-repeat scroll center;
-	background-color: #eee;
+	background: url('../icons/search.png') no-repeat scroll center; 
 	float: right;
 	border: 0;
-	margin: 10px 5px 0 0;
 	cursor: pointer;
-	color: #3b3b3b;
-	width: 19px;
-	height: 18px;
+	color: #2a2a2a;
+	padding: 14px;
 	overflow: hidden;
 }
 .searchContainer {
@@ -148,13 +152,6 @@ form#SearchForm button {
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.searchContainer form#SearchForm {
-	margin-left: 0px !important;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 700px;
 }
 
 .feedbackLink {

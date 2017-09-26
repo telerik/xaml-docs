@@ -128,7 +128,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 					</telerik:SurfaceSeries3DValueGradientColorizer.GradientStops>
 				</telerik:SurfaceSeries3DValueGradientColorizer>
 			</telerik:SurfaceSeries3D.Colorizer>
-		<telerik:SurfaceSeries3D>
+		</telerik:SurfaceSeries3D>
 	{{endregion}}
 		
 	#### __Figure 2: SurfaceSeries3DValueGradientColorizer__
@@ -163,7 +163,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 					<telerik:SurfaceSeries3D.Colorizer>
 						<telerik:SurfaceSeries3DDataPointColorizer ColorBinding="Color"/>
 					</telerik:SurfaceSeries3D.Colorizer>                   
-				</telerik:SurfaceSeries3D>
+				</telerik:SurfaceSeries3D>				
 			</telerik:RadCartesianChart3D.Series>
 			<telerik:RadCartesianChart3D.Grid>
 				<telerik:CartesianChart3DGrid />

@@ -20,7 +20,7 @@ __RadComboBox__'s API gives you the ability to open the __DropDown__ when the co
 
 >tipThe default value of the __RadComboBox__'s __OpenDropDownOnFocus__ property is __False__.
 
-# See Also
+## See Also
 
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})
 

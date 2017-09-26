@@ -39,7 +39,7 @@ You can also reorder, resize or freeze the columns, manage their headers and foo
 Now you can merge the column headers. To learn more read the [topic]({%slug gridview-columns-column-headers%}) in the __RadGridView's__ documentation.
         
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtreeliestview-getting-started%})
 

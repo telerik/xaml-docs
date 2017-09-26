@@ -75,7 +75,7 @@ You can use the following properties to configure the weeks inside __RadCalendar
 
 If you need a calendar that takes less space, use the [RadDateTimePicker]({%slug raddatetimepicker-overview%}) control which in its essence is a DropDown with a calendar and date parser.
 
-# See Also
+## See Also
 
 * [Selection Modes]({%slug radcalendar-selection-modes%})
  

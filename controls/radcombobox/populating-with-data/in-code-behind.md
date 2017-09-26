@@ -82,7 +82,7 @@ In order to remove a specific __RadComboBoxItem__, you should remove it from the
 	End Sub
 {{endregion}}
 
-# See Also
+## See Also
 
  * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
 

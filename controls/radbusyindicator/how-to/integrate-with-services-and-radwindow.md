@@ -265,7 +265,7 @@ Here is the final result:
 
 ![](images/radbusyindicator_how_service_and_radwindow_010.png)
 
-# See Also
+## See Also
 
  * [Progress Determination]({%slug radbusyindicator-features-progress-determination%})
 

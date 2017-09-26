@@ -21,7 +21,7 @@ __RadHtmlPlaceholder__ uses [WebBrowser](http://msdn.microsoft.com/en-us/library
 #### __VB.NET__
 	Dim browser As WebBrowser = Me.placeholder.WebBrowser
 
-# See Also
+## See Also
  * [Getting Started]({%slug radhtmlplaceholder-getting-started%})
  * [Display HTML string in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayhtml%})
  * [Display external page in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayexternalpage%})

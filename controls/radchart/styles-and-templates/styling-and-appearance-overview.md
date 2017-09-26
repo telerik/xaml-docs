@@ -56,7 +56,7 @@ Read the following articles to learn how to:
 
 * [Style the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%})
 
-# See Also
+## See Also
 
  * [Styling the Chart Title]({%slug radchart-styling-and-appearance-styling-chart-title%})
 

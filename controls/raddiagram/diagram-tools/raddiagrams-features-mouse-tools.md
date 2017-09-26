@@ -24,7 +24,7 @@ Below you can find sample descriptions of the three Mouse Tools:
 
 >Please note that you can set the active tool in XAML or code behind using the __ActiveTool__ property. But since the __PanTool__ could be activate by pressing the __Ctrl__ key, this makes sense only if you set the __ActiveTool__ to __ConnectorTool__ - which will allow you to create floating connections.		  
 
-# See Also
+## See Also
  * [Text Tool]({%slug raddiagrams-tools-text-tool%})
  * [Drawing Tools]({%slug raddiagram-features-drawing%})
  * [Getting Started]({%slug raddiagram-getting-started%})

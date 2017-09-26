@@ -126,7 +126,7 @@ This topic describes all properties of __RadRadialMenu__ control and its element
               The default value of the property is *0.2d*.
             
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radradialmenu-getting-started%})
 

@@ -88,7 +88,7 @@ Here is the final result:
 
 ![](images/RadDocking_HowTo_AddPaneHeaderIcon_020.png)
 
-# See Also
+## See Also
 
  * [How to Freeze the Layout]({%slug raddocking-how-to-freeze-the-layout%})
 

@@ -304,7 +304,7 @@ Here is a list of the property descriptions that you can use:
 
 * __PropertyAggregateDescription__ - Available for AggregateDescriptions only. You have to define the *AggregateFunction* that will be used. You can use various predefined functions including Average, Sum, Min, Max, etc.
 
-# See Also
+## See Also
 
  * [Populating with data]({%slug radpivotgrid-populating-with-data%})
 

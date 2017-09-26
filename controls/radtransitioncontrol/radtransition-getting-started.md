@@ -114,7 +114,7 @@ Now, if you run your application and select an image from the list, you should s
 
 ![](images/RadTransition_Getting_Started_01.png)
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

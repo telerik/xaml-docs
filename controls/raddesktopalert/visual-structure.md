@@ -22,7 +22,7 @@ This article describes all the visual elements and terms used in __RadDesktopAle
 
 * __Icon__ - represents the container for the icon image of __RadDesktopAlert__.
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddesktopalert-overview%})
 

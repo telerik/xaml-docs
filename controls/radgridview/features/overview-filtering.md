@@ -97,7 +97,7 @@ Check out the chapters entirely dedicated to the filtering functionality of __Ra
 
 * How to [style the column header]({%slug gridview-styling-column-headers%}) of the filtered column.
 
-# See Also
+## See Also
 
  * [Data Selection]({%slug gridview-overview-data-selection%})
 

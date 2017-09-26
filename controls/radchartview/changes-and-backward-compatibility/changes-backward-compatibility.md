@@ -87,5 +87,5 @@ Use the ScatterPointSeries.RenderOptions property instead.
 
 * Introduced new Windows8 palette and made Metro palette obsolete.            
 
-# See Also
+## See Also
  * [Link inner text]({%slug radchartview-changes%})

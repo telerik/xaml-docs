@@ -134,7 +134,7 @@ Here is the final XAML for the __Style__:
 
 
 
-# See Also
+## See Also
 
  * [Styling the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%})
 

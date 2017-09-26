@@ -38,7 +38,7 @@ This is a list with short descriptions of the top-of-the-line features of __Tele
 
 * __Integration with other Controls__ - you can integrate the __RadTransitionControl__ in any other complex __ContentControl__ (like __HeaderedContentControl__, __ScrollViewer__, __Frame__ etc.) or in any control that displays content. [Read more]({%slug radtransition-features-integration-with-content-controls%})
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtransition-getting-started%})
 

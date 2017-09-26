@@ -123,7 +123,7 @@ __Figure 2:__ __DocumentHost__ with visible __HorizontalScrollBar__ and drop dow
 
 ![](images/raddocking-features-document-host-6.png)
 
-# See Also
+## See Also
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
 

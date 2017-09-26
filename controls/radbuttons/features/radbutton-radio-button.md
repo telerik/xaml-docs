@@ -10,18 +10,16 @@ position: 2
 
 # Radio Button
 
-The __RadRadioButton__ control inherits from the __RadioButton__ control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features that the standard __RadioButton__ control has. The __ICommandSource__ implementation allows you to attach commands to the button, that will be executed when the __RadRadioButton__ is clicked.	  
-
->tip To learn more about the members of the __RadRadioButton__ class you can read {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radradiobutton.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radradiobutton.html){% endif %}.
+The __RadRadioButton__ control inherits from the native RadioButton control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features of the standard RadioButton control. The __ICommandSource__ implementation allows you to attach commands to the button, that will be executed when the RadRadioButton is clicked.	  
 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
-## Instantiating RadButton
+#### __Figure 1: Radio button__
+![](images/radbuttons-features-radio-button-0.png)
 
-You can instantiate your __RadRadioButton__ in both XAML and code. Here is an example:		
+## Defining RadButton
 
->The __RadRadioButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} 
-> Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
+You can instantiate your __RadRadioButton__ in both XAML and code.
 
 #### __[XAML] Example 1: Defining a button in XAML__
 {{region xaml-radbutton-features-radio-button_0}}
@@ -40,11 +38,17 @@ You can instantiate your __RadRadioButton__ in both XAML and code. Here is an ex
 	}
 {{endregion}}
 
-## Handling the Button Checked Event
+## Button Checked Events
 
-To execute some logic when the __RadRadioButton__ gets checked, you have to handle the __Checked__ event.	
+The button provides a set of events that are fired when you click on it. 
+
+* __Checked__: This event is fired when the button is checked.
+* __Unchecked__: This event is fired when the button is unchecked.
+* __Activate__: This event is fired when the button is checked or unchecked.
 
 >tip As any other button the __RadRadioButton__ exposes a __Click__ event as well.		
+
+The check state of the button can be manually controlled via its __IsChecked__ property.
 
 Here is an example of handling the __Checked__ event of a button.		
 
@@ -68,11 +72,9 @@ Here is an example of handling the __Checked__ event of a button.
 	End Sub
 {{endregion}}
 
->important The RadRadioButton also exposes Unchecked event that is called when the button is unchecked. The same handling (as with the Checked event) applies for the Unchecked event.
-
 ## Grouping RadRadioButtons
 
-By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several __RadRadioButtons__ you just have to place them in the same layout panel. Here is an example:		
+By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several RadRadioButtons you can place them in the same layout panel (see Example 5).
 
 #### __[XAML] Example 5: Grouping radio buttons__  
 {{region xaml-radbutton-features-radio-button_6}}
@@ -88,12 +90,23 @@ By grouping the __RadRadioButtons__ the user will be allowed to check only one b
 
 The above code creates two groups of __RadRadioButtons__.		
 
+#### __Figure 2: Grouped radio buttons__
+![](images/radbuttons-features-radio-button-1.png)
+
 ## Customizing the RadRadioButton
 
-* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadRadioButton__ control in normal state		  
+* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the RadRadioButton control when in normal state. 
+	#### __Figure 2: Radio button with hidden background__
+	![](images/radbuttons-features-radio-button-2.png)
+
+* __CornerRadius__: This property controls the corner radius of the button.
+	#### __Figure 3: Radio button with its CornerRadius set to 15__
+	![](images/radbuttons-features-radio-button-3.png)
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [Toggle Button]({%slug radbuttons-features-toggle-button%})
  * [Commands]({%slug radbuttons-features-commands%})
  * [Appearance]({%slug radbuttons-features-appearance%})
+ * [Events]({%slug radbuttons-events%})
+ * {% if site.site_name == 'Silverlight' %}[RadRadioButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radradiobutton.html){% endif %}{% if site.site_name == 'WPF' %}[RadRadioButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radradiobutton.html){% endif %}.

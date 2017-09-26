@@ -38,7 +38,7 @@ In this section you will find:
 
 * [Using SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%}) - you could define a separate template for the selected item using the __SelectionBoxTemplate__ property.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radcombobox-getting-started%})
 

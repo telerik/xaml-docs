@@ -51,7 +51,7 @@ Here is the result:
 
 ![](images/dateTimePicker_features_watermark_010.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
 

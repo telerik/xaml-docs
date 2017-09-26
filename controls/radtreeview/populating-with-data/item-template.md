@@ -306,7 +306,7 @@ Here is the final XAML:
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 
-# See Also
+## See Also
  * [ItemTemplateSelector]({%slug radtreeview-populating-with-data-item-template-selector%})
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})
  * [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%})

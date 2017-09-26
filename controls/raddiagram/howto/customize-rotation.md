@@ -193,7 +193,7 @@ And if you enter a __RotationStep__ of __90__, you will be able to rotate the __
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
 
-# See Also
+## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})
  * [Rotation]({%slug raddiagrams-features-rotation%})
  * [Services]({%slug raddiagram-features-services%})

@@ -165,7 +165,7 @@ For additional reading, you can refer to [this blog post](http://blogs.telerik.c
 Of the default document format providers, custom annotations are supported only in XAML. The other formats do not offer such extensibility. When exporting to XAML, the exporter will generate prefixes for each custom annotation namespace (custom1, custom2, etc.). Serialization is handled by XamlFormatProvider which looks for properties with the appropriate attributes: XamlSerializable (as inline properties) and XamlCompositePropertySerializable (as XAML composite properties).
         
 
-# See Also
+## See Also
 
  * [Annotations Overview]({%slug radrichtextbox-features-document-elements-annotations%})
 

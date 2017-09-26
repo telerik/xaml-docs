@@ -175,7 +175,7 @@ In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __Co
 
 ![](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
 
-# See Also
+## See Also
 
  * [How to Add Buttons to the Pane Header]({%slug raddocking-how-to-add-buttons-to-the-pane-headers%})
 

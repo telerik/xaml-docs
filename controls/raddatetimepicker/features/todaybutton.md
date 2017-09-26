@@ -24,7 +24,7 @@ The final result is shown on the snapshot below:
 
 ![raddatetimepicker-todaybutton-0](images/raddatetimepicker-todaybutton-01.png)
 
-# See Also
+## See Also
 
  * [Date Selection Modes]({%slug raddatetimepicker-features-date-selection-modes%})
 

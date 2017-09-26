@@ -65,7 +65,7 @@ The __RadComboBox__ exposes a boolean property named __StaysOpenOnEdit__. When t
 
 >It is important to remember, that setting the __RadComboBox__'s __StaysOpenOnEdit__ to __True__ will affect the __RadComboBox__ only when it is __editable__.
 
-# See Also
+## See Also
 
  * [Selection]({%slug radcombobox-features-selection%})
 

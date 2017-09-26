@@ -24,7 +24,7 @@ Read the following topics to learn more:
 
 * [Styling the Predefined Windows]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%})
 
-# See Also
+## See Also
 
  * [Visual Structure]({%slug radwindow-visual-structure%})
 

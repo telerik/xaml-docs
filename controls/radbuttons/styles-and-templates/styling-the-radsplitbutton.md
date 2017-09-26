@@ -108,7 +108,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 * __RadSplitButtonStyle__ - the default __Style__ for the __RadSplitButton__. 
 
-# See Also
+## See Also
  * [Split Button]({%slug radbuttons-features-split-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})
  * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})

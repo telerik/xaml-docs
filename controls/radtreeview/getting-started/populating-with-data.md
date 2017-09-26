@@ -22,7 +22,7 @@ Each one of the approaches described above is applicable for certain cases and t
 
 >tip Bear in mind that the XAML file is the best place to declare your user interface; use the code-behind only when you cannot do that in XAML.
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtreeview-getting-started%})
  * [Binding to XML]({%slug radtreeview-populating-with-data-data-binding-to-xml%})

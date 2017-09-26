@@ -16,7 +16,7 @@ You can modify the look of __RadTimePicker__ either by changing some of the brus
 
 >Note that in changing the Control Template you should include all required parts. Even thought your code will compile some of the functionality may be subject to impact due to the omission of the required parts. 
 
-# See Also
+## See Also
 
  * [Layout Support]({%slug radtimepicker-layout-support%})
 

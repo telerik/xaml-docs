@@ -17,48 +17,37 @@ position: 0
 ![RadScheduleView Logo](images/scheduleview_silverlight_logo.png)
 {% endif %}
 
-Thank you for choosing Telerik __RadScheduleView__!
+Thank you for choosing Telerik __RadScheduleView__.
 
-__RadScheduleView__ is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. The __RadScheduleView__ empowers end users with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
+__RadScheduleView__ is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. RadScheduleView empowers the end user with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
 
 ![scheduleview overview](images/scheduleview_overview.png)
 
-__RadScheduleView__ key features list:
+## Key Features
 
-* __Performance__
+* __Rich User Experience__: The RadScheduleView control allows you to perform various operations in an interactive manner. You can drag tasks to new time slots or days, resize tasks to change their length, create all day appointments or modify your appointments through inline editing.
 
-* __Edit Forms__
+* __Performance__: The control provides blazing fast performance via the built-in UI virtualization feature that creates and re-uses containers only for the current viewport.
 
-* __Built-in and Custom Views__
+* __Edit forms__: You can easily create and edit appointments using the edit forms the control provides. The forms are displayed in built-in dialog windows. Read more about this in the [End-User Capabilities]({%slug radscheduleview-end-user-capabilities-overview%}) article.
 
-* __Multi-level Grouping__
+* __Built-in and custom views__: RadScheduleView comes with few predefined views - day, week, month and timeline - which can be customized. Read more about this in the [ViewDefinintions]({%slug radscheduleview-viewdefinitions-overview%}) section.
 
-* __Orientation__
+* __Multi-level grouping__: You can display multiple resources and group the appointments accordingly. Also, you can assign appointments to several resources and then group them as you need. Read more about this in the [Grouping]({%slug radscheduleview-features-groupbytimezone%}) article.
 
-* __Exact Rendering of Appointments__
+* __Orientation__: The control allows you to change the view definitions orientation. Read more about this in the ViewDefinitions [Configuration]({%slug radscheduleview-viewdefinitions-configuration%}) article.
 
-* __Dragging multiple appointments__
+* __Dragging multiple appointments__: The control supports drag/drop of multiple appointments at once. With the improved API you can fully customize the drag-drop and the resize operations. Read more about this in the [Drag and Drop]({%slug radscheduleview-features-draganddrop%}) article.
 
-* __Zooming__
+* __Zooming__: The scheduleview supports zoom-in/out the appointments within the visible area of the schedule. This way, you can navigate through a big amount of appointments while keeping the fast performance of the control.
 
-* __Snap Appointments__
+* __Snap аppointments__: You can easily snap appointments according to the size of the defined TimeSlot items with setting the SnapAppointments property. Read more about this in the [Snapping Appointments]({%slug radscheduleview-features-snapappointments%}) article
 
-* __Creating Recurrent Appointment using TimeSlot selection__
+>tip Get started with the control with its [Getting Started]({%slug radscheduleview-getting-started%}) help article that shows how to use it in a basic scenario.
 
-* __Truly Lookless, Stylable Control__
+> Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#ScheduleView){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 
-* __Rich User Experience__
-
-* __Flexible Recurring Appointments Support__
-
-A complete list with all key features can be found [here]({%slug radscheduleview-key-features%}).
-
-Check out the online demo at:{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/){% endif %}
-
-# See Also
-
+## See Also 
  * [Key Features]({%slug radscheduleview-key-features%})
-
- * [Getting Started]({%slug radscheduleview-getting-started%})
-
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})
+ * [Visual Structure]({%slug radscheduleview-getting-started-visual-structure%})

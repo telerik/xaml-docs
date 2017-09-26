@@ -152,7 +152,7 @@ __Figure 1__: __RadRadialMenu__ populated from the bound collection of CustomMen
 
 >tipYou can download a runnable project that demonstrates a more complex example of binding a collection of custom objects as __ItemsSource__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadialMenu / BindingItemsSource__.        
 
-# See Also
+## See Also
 
  * [Populating With Data]({%slug radradialmenu-populating-with-data-overview%})
  

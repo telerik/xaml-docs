@@ -276,7 +276,7 @@ Now it's time to summarize the steps needed to build a chart using grouping and 
 
 * Forth, via __ItemMapping__, the Value is bound to the __Y-Axis__. Additionally, the data is aggregated using the __Sum__ function. Thus, the value shown on the __Y-Axis__ will be the sum of all the fruits consumed for a certain year and region.
 
-# See Also
+## See Also
 
  * [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%})
 

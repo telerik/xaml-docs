@@ -263,7 +263,7 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
 * You can enable the [Document Protection]({%slug radrichtextbox-features-document-protection%}) with the **ProtectDocument()** method.
 
 
-# See Also
+## See Also
 
  * [Document Elements]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

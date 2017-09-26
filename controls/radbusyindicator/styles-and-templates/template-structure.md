@@ -53,7 +53,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 		* __ProgressBarIndicator__- is a __PART__ element of type __Rectangle__ and hosts the innermost circle of the __RadProgressBar's__ indicator.
 		
-# See Also
+## See Also
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
 

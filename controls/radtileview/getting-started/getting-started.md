@@ -102,7 +102,7 @@ To set the minimized area positions use the __MinimizedItemsPosition__ property.
 
 ![Tile View - minimized items position](images/tileview_Step3.png)
 
-# See Also
+## See Also
  * [Visual Structure]({%slug radtileview-visual-structure%})
  * [Minimizing And Maximizing]({%slug radtileview-minimizing-and-maximizing%})
  * [Rows and Columns]({%slug radtileview-rows-and-columns%})

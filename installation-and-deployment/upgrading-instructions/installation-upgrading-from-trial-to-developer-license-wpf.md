@@ -73,6 +73,6 @@ If your dll files contain this message in the FileDescription then they are Tria
 >* Please make sure that all the assemblies you have referenced are with the same version. 
 >* If this does not help, delete the bin and obj folders of the project manually and Rebuild.
             
-# See Also
+## See Also
 
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})

@@ -130,7 +130,7 @@ To change the history capacity you have to set the desired value of the __Depth_
 RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their previous changes. You can find detailed information on the topic [here]({%slug radrichtextbox-features-raddocumenteditor%}).
         
 
-# See Also
+## See Also
 
  * [Selection]({%slug radrichtextbox-features-selection%})
 

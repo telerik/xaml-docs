@@ -459,7 +459,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 {{endregion}}
 {% endif %}
 
-# See Also
+## See Also
 
  * [Working with the RadContextMenu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
 

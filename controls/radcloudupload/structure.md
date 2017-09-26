@@ -50,7 +50,7 @@ The structure of a __RadCloudUpload__ consists of the following main elements:
 * __Canceled__ - in this state the icon is changed to an orange triangle and it indicates that the uploading is canceled.
                 
 
-# See Also
+## See Also
 
  * [Template Structure]({%slug radcloudupload-templates-template-structure%})
 

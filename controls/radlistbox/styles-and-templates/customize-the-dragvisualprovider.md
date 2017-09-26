@@ -158,7 +158,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 	![radlistbox-styles-and-templates-customize-the-dragvisualprovider-2](images/radlistbox-styles-and-templates-customize-the-dragvisualprovider-2.jpg)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radlistbox-features-dragdrop%})
 

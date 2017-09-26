@@ -51,7 +51,7 @@ There are several controls that already provide sample code which you can use as
 ### Export XAML UI Elements to PDF
 
 
-The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI for WPF suite, including a combination of several controls in the same view.
+The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/document-processing-sdk/tree/2d32fd229282a1f7101d6f9b0961a650e89a1dc1/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI for WPF suite, including a combination of several controls in the same view.
 
 
 ![Common Export Support](images/Common_Export_Support_01.png) 
@@ -60,7 +60,7 @@ The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you
 The code operates with a set of renderers deriving from the base __UIElementRendererBase__ - __TextBlockRenderer__, __BorderRenderer__, etc. This allows separation, since each concrete render is responsible for drawing the element it is intended for without dependencies to the other renderers, and gives you the ability to extend the sample code to fit your precise needs if you need to.
 
 
-Take a look at the [source code of the example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor) class.
+Take a look at the [source code of the example on GitHub](https://github.com/telerik/document-processing-sdk/tree/2d32fd229282a1f7101d6f9b0961a650e89a1dc1/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor) class.
 
 
 ## Export Images With ExportExtensions

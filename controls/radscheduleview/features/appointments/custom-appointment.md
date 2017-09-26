@@ -198,6 +198,6 @@ This is what the Appointment ToolTip should look like now:
 
 By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.
 
-# See Also
+## See Also
 
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})

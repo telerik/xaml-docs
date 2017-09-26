@@ -37,7 +37,7 @@ With our __Q3 2014__ official release we introduced the RadPathButton control. I
 	}
 {{endregion}}
 
-Note that in XAML you can directly use string format [Path Markup Syntax](http://msdn.microsoft.com/en-us/library/ms752293(v=vs.110).aspx)
+Note that in XAML you can directly use string format [Path Markup Syntax](https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/path-markup-syntax)
 
 #### __[XAML] Example 3: Setting the path geometry in XAML__
 {{region xaml-radbuttons-features-path-button-4}}

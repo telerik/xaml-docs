@@ -36,5 +36,5 @@ position: 3
 
 ![](images/outloobar_templates.png)
 
-# See Also
+## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})

@@ -28,7 +28,7 @@ There is not a build-in mechanism for hiding rows. You can still hide or show ro
 
 There are cases when you don't want to display the whole information that an object provides in a single row. The __RadGridView__ allows you to define a details view, which can hold additional information provided by the row data item and is displayed only when the row is selected. To learn more on that topic read [here]({%slug radgridview-row-details-overview%}).
 
-# See Also
+## See Also
 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
  

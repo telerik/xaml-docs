@@ -654,7 +654,7 @@ When you choose any of them a new Dialog window will help you to adjust the need
 
 ![Rad Pivot Grid Features Filtering OLAP 05](images/RadPivotGrid_Features_Filtering_OLAP_05.png)
 
-# See Also
+## See Also
 
  * [XmlaDataProvider]({%slug radpivotgrid-data-xmla%})
 

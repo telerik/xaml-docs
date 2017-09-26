@@ -16,7 +16,7 @@ There is an element hierarchy which you must consider when building your rich co
 
 ![Rad Rich Text Box Elements Hierarchy](images/RadRichTextBox_ElementsHierarchy_03.png)
 
-# See Also
+## See Also
 
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
 

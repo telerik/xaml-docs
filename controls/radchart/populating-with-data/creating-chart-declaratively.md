@@ -205,7 +205,7 @@ The result is [categorical chart]({%slug radchart-features-categorical-charts%})
 
 ![](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_020.png)
 
-# See Also
+## See Also
 
  * [Overview]({%slug radchart-populating-with-data-overview%})
 

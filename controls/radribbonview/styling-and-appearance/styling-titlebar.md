@@ -43,6 +43,6 @@ Modify the resource to bring the desired appearance to the __TitleBar__. For mor
 
 {% endif %}
 
-# See Also
+## See Also
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})

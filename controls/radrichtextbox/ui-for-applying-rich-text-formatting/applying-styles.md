@@ -86,7 +86,7 @@ The predefined set of Styles in RadDocument cannot be deleted using the UI. Only
 
 ![Rad Rich Text Box UI For Applying Rich Text Formatting Applying Styles 07](images/RadRichTextBox_UI_For_Applying_Rich_Text_Formatting_Applying_Styles_07.png)
 
-# See Also
+## See Also
 
  * [How to wire the default UI]({%slug radrichtextbox-features-radrichtextboxribbonui%})
 

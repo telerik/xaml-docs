@@ -33,7 +33,7 @@ In order to access the __RegionName__ attached property you have to declare the 
 
 >tipYou can find more about __Prism__ [here](http://compositewpf.codeplex.com/).
 
-# See Also
+## See Also
 
  * [Working with the RadTransitionControl]({%slug radtransition-features-working-with-radtransitioncontrol%})
 

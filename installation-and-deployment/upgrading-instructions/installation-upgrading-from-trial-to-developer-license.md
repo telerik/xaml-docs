@@ -53,6 +53,6 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 >* Please make sure that all the assemblies you have referenced are with the same version.
 >* If this does not help, delete the bin and obj folders of the project manually and Rebuild.
             
-# See Also
+## See Also
 
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})

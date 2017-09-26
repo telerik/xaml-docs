@@ -160,6 +160,6 @@ The end result:
 
 ![radlistbox features dragdrop 8](images/radlistbox_features_dragdrop_8.png)
 
-# See Also
+## See Also
 
  * [Drag-Drop between RadListBox and RadScheduleView]({%slug radlistbox-features-dragdrop-scheduleview%})

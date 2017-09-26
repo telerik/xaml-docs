@@ -13,7 +13,7 @@ module Reading
 			@separator = "!snippet-separator!"
 			
 			@converter = site.getConverterImpl(Jekyll::Converters::Markdown)
-			
+						
 			site.pages.each do |p|	
 				createTabbedCode(p)	
 			end

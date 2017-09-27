@@ -29,7 +29,7 @@ You can find the required assemblies for each control from the Telerik UI for WP
 There are few dialogs that you can use in a similar way. __Example 1__ shows how to show a __RadOpenFileDialog__. You can use this code to also show the __open folder__ and __save file__ dialogs.
 
 #### __[C#] Example 1: Opening a dialog__ 
-{{regiond radfiledialogs-getting-started-0}}
+{{region radfiledialogs-getting-started-0}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();	
 	openFileDialog.Owner = theHostWindowInstance;	
 	openFileDialog.ShowDialog();
@@ -37,7 +37,7 @@ There are few dialogs that you can use in a similar way. __Example 1__ shows how
 	{
 		string selectedFileName = openFileDialog.FileName;
 	}
-{{endregiond}}
+{{endregion}}
 
 You can see how to define and show the different dialogs in the corresponding articles.
 

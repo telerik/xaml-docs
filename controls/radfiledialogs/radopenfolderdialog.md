@@ -22,7 +22,7 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
 #### __[C#] Example 1: Show a open folder dialog__
-{{regiond radfiledialogs-radopenfolderdialog-0}}
+{{region radfiledialogs-radopenfolderdialog-0}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;            
 	openFolderDialog.ShowDialog();
@@ -30,18 +30,18 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 	{
 		string folderName = openFolderDialog.FileName;
 	}
-{{endregiond}}
+{{endregion}}
 
 ## Enabling multiple selection
 
 The dialog supports single and multiple selection modes. By default you can select only one folder at a time. To alter this you can set the __Multiselect__ property of RadOpenFolderDialog.
 
 #### __[C#] Example 3: Enable multiple selection__
-{{regiond radfiledialogs-radopenfolderdialog-1}}
+{{region radfiledialogs-radopenfolderdialog-1}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;
 	openFolderDialog.Multiselect = true;
-{{endregiond}}
+{{endregion}}
 
 #### __Figure 2: Multiple selection__ 
 ![](images/radopenfolderdialog-02.png)
@@ -53,7 +53,7 @@ You can get the paths of the selected folders via the __FileName__ and __FileNam
 You can get only the name of the selected folders, without the full path, via the __SafeFileNames__ collection property.
 
 #### __[C#] Example 3: Get the selected folder names__
-{{regiond radfiledialogs-radopenfolderdialog-2}}
+{{region radfiledialogs-radopenfolderdialog-2}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;                  
 	openFolderDialog.ShowDialog();
@@ -63,7 +63,7 @@ You can get only the name of the selected folders, without the full path, via th
 		IEnumerable<string> folderPaths = openFolderDialog.FileNames;
 		IEnumerable<string> folderNames = openFolderDialog.SafeFileNames;
 	}
-{{endregiond}}
+{{endregion}}
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 

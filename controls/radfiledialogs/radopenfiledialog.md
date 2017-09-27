@@ -22,7 +22,7 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
 #### __[C#] Example 1: Show a open file dialog__
-{{regiond radfiledialogs-radopenfiledialog-0}}
+{{region radfiledialogs-radopenfiledialog-0}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
 	openFileDialog.ShowDialog();
@@ -30,14 +30,14 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 	{
 		string fileName = openFileDialog.FileName;
 	}
-{{endregiond}}
+{{endregion}}
 
 ## Opening the selected file
 
 You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
 #### __[C#] Example 2: Open a file stream__
-{{regiond radfiledialogs-radopenfiledialog-1}}
+{{region radfiledialogs-radopenfiledialog-1}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
 	openFileDialog.ShowDialog();
@@ -45,18 +45,18 @@ You can open a read-only file stream for the selected file using the __OpenFile_
 	{
 		Stream fileStream = openFileDialog.OpenFile();
 	}
-{{endregiond}}
+{{endregion}}
 
 ## Enabling multiple selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
 #### __[C#] Example 3: Enable multiple selection__
-{{regiond radfiledialogs-radopenfiledialog-2}}
+{{region radfiledialogs-radopenfiledialog-2}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
 	openFileDialog.Multiselect = true;
-{{endregiond}}
+{{endregion}}
 
 #### __Figure 2: Multiple selection__ 
 ![](images/radopenfiledialog-02.png)
@@ -68,7 +68,7 @@ You can get the paths of the selected files via the __FileName__ and __FileNames
 You can get only the name of the selected files, without the full path, via the __SafeFileNames__ collection property.
 
 #### __[C#] Example 3: Get the selected file names__
-{{regiond radfiledialogs-radopenfiledialog-3}}
+{{region radfiledialogs-radopenfiledialog-3}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
 	openFileDialog.Multiselect = true;
@@ -79,7 +79,7 @@ You can get only the name of the selected files, without the full path, via the 
 		IEnumerable<string> filePaths = openFileDialog.FileNames;
 		IEnumerable<string> fileNames = openFileDialog.SafeFileNames;
 	}
-{{endregiond}}
+{{endregion}}
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 

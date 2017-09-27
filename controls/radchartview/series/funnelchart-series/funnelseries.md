@@ -92,6 +92,7 @@ FunnelSeries supports drawing of connector lines between the series' data points
 The following example demonstrates how to set the LabelConnectorsSettings propety:
 
 #### __[XAML] Example 4: Set label connectors__
+{{region radchartview-series-funnelchart-funnelseries_3}}
 	<telerik:RadFunnelChart  Margin="50 50 100 50"  Palette="Windows8" ClipToBounds="False">
 		<telerik:FunnelSeries ShowLabels="True" Width="50" ClipToPlotArea="False">
 			<telerik:FunnelSeries.DataPoints>

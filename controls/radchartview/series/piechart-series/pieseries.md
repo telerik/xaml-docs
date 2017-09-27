@@ -17,6 +17,7 @@ This series is visualized on the screen as separate pie slices representing each
 You can use the following definition to display a simple PieSeries:
 
 #### __XAML__
+{{region radchartview-series-pieseries-0}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>
@@ -30,10 +31,10 @@ You can use the following definition to display a simple PieSeries:
 			</telerik:PieSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>
+{{endregion}}
 
 ![radchartview-series-pieseries](images/radchartview-series-pieseries.png)
 
 ## See Also
-
- * [Customizing Pie Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%})
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})
+ * [Customizing Pie Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%})

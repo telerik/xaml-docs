@@ -17,6 +17,7 @@ This series is visualized on the screen as separate points representing each of 
 You can use the following definition to display a simple PolarPointSeries
 
 #### __XAML__	
+{{region radchartview-series-polarpointseries-0}}
 	<telerik:RadPolarChart Palette="Windows8">
 		<telerik:RadPolarChart.PolarAxis>
 			<telerik:PolarAxis />
@@ -43,6 +44,7 @@ You can use the following definition to display a simple PolarPointSeries
 			</telerik:PolarPointSeries>
 		</telerik:RadPolarChart.Series>
 	</telerik:RadPolarChart>
+{{endregion}}
 
 ![radchartview-series-polarpointseries](images/radchartview-series-polarpointseries.png)
 

@@ -76,6 +76,8 @@ The customized __ControlTemplate__ can be applied as follows.
 ## Applying the Styles to GridViewCheckBoxColumn explicitly
 
 The aforementioned approach implies defining the styles __implicitly__. If you need to apply the modifications to a particular instance of __RadGridView__, you can apply these Styles __explicitly__ through the __Resources__ of __RadGridView__.
+
+#### __[XAML] Example 5: Opening Resources tag__
 {{region gridview-columns-styling-checkboxcolumn-4}}
 	<telerik:RadGridView.Resources>
 		...
@@ -107,7 +109,7 @@ However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into e
 
 In order to align the default editor of __GridViewCheckBoxColumn__ correctly, you can specify a different __Margin__ for it by handling the __PreparingCellForEdit__ event of __RadGridView__:        
 
-#### __[C#] Example 5: Setting the Margin of the Editor GridViewCheckBoxColumn__
+#### __[C#] Example 6: Setting the Margin of the Editor GridViewCheckBoxColumn__
 {{region xaml-gridview-checkbox-column-5}}
 	private void RadGridView_PreparingCellForEdit(object sender, Telerik.Windows.Controls.GridViewPreparingCellForEditEventArgs e)
 	{

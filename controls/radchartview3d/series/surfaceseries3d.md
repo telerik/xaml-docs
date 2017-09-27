@@ -90,6 +90,7 @@ You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ prope
 #### __[XAML] Example 3: Setting up the series__
 {{region radchartview3d-series-surfaceseries3d-2}}
 	<telerik:SurfaceSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
+{{endregion}}
 
 ## Colorizers
 	

@@ -6,6 +6,7 @@ slug: radgridview-filtering-icolumn-filter-descriptors
 tags: column,filter,descriptors
 published: True
 position: 11
+navigation_visible: false
 ---
 
 # Column Filter Descriptors

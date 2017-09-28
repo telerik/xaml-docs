@@ -328,5 +328,5 @@ Notice how this hierarchy is the same as the Popup filtering control layout. Wor
 ## See Also
 
  * [Filtering Visual Structure]({%slug gridview-visual-structure%}#filtering-visual-structure)
-
  * [Basic Filtering]({%slug gridview-filtering-basic%})
+ * [Custom Filtering Controls]({%slug gridview-filtering-custom-filtering-controls%})

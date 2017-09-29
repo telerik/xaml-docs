@@ -1,7 +1,7 @@
 ---
 title: Data Column
 page_title: Data Column
-description: Data Column
+description: The GridViewDataColumn provides all the functionality of the GridViewBoundColumnBase and in addition generates appropriate editor elements based on the bound data type.
 slug: radgridview-columns-column-types-data-column
 tags: data,column
 published: True

@@ -10,15 +10,9 @@ position: 3
 
 # RadHtmlPlaceholder Events
 
-
-
-## 
-
-One of the important custom events that __RadHtmlPlaceholder__ exposes is the __UrlLoaded__ event. This event occurs as soon as the external url that is set as a source is loaded.
-				
+One of the important custom events that __RadHtmlPlaceholder__ exposes is the __UrlLoaded__ event. This event occurs as soon as the external url that is set as a source is loaded.				
 
 #### __XAML__
-
 {{region radhtmlplaceholder-howto-events_0}}
 	<UserControl x:Class="RadHtmlPlaceholderDemo.Page" 
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -38,10 +32,7 @@ One of the important custom events that __RadHtmlPlaceholder__ exposes is the __
 	</UserControl>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radhtmlplaceholder-howto-events_1}}
 	using System;
 	using System.Windows;
@@ -61,12 +52,9 @@ One of the important custom events that __RadHtmlPlaceholder__ exposes is the __
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radhtmlplaceholder-howto-events_1}}
 	Imports System.Windows
 	Imports System.Windows.Controls
@@ -82,19 +70,13 @@ One of the important custom events that __RadHtmlPlaceholder__ exposes is the __
 			End Sub
 		End Class
 	End Namespace
-
-
+{{endregion}}
 
 ![htmlplaceholder-howto-events](images/htmlplaceholder-howto-events.png)
 
-## See Also
-
+## See Also  
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
-
  * [RadHtmlPlaceholder Events]({%slug radhtmlplaceholder-howto-events%})
-
  * [Display HTML string in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayhtml%})
-
  * [Display external page in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayexternalpage%})
-
  * [Getting Started]({%slug radhtmlplaceholder-getting-started%})

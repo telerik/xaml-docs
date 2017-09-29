@@ -94,9 +94,11 @@ You can easily customize the __RadDropDownButton__ by using the following proper
 
 * __DropDownPlacement__: Specifies where the drop down area should be placed - __Absolute__, __Bottom__, __Center__, __Left__, __Right__, __Top__.
 
+{% if site.site_name == 'WPF' %}
 ## Popup Animations
 
 The drop down button supports popup animations which are triggered when the drop down content opens. The animation is set via the PopupAnimation property of the button. Read more about this in the [Popup Animation]({%slug radbuttons-features-popup-animation%}) article.
+{% endif %}
 
 ## See Also
  * [Appearance]({%slug radbuttons-features-appearance%})

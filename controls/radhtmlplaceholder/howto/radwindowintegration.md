@@ -10,15 +10,11 @@ position: 1
 
 # Integrating RadHtmlPlaceholder and RadWindow
 
-
-
 In order to use the __RadWindow__ control in your application, you need to add a reference to the __Telerik.Windows.Controls.Navigation__ assembly.<br/>{% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 
-## Adding __RadHtmlPlaceholder__ is the same as adding any other content in the __RadWindow__.
-		
+## Adding __RadHtmlPlaceholder__ is the same as adding any other content in the __RadWindow__.		
 
 #### __XAML__
-
 {{region radhtmlplaceholder-howto-radwindowintegration_0}}
 	<UserControl x:Class="SilverlightApplication18.MainPage"
 	     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
@@ -33,10 +29,7 @@ In order to use the __RadWindow__ control in your application, you need to add a
 	</UserControl>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radhtmlplaceholder-howto-radwindowintegration_1}}
 	using System;
 	using System.Windows;
@@ -69,10 +62,7 @@ In order to use the __RadWindow__ control in your application, you need to add a
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
-
 {{region radhtmlplaceholder-howto-radwindowintegration_1}}
 	Imports System.Windows
 	Imports System.Windows.Controls
@@ -96,19 +86,13 @@ In order to use the __RadWindow__ control in your application, you need to add a
 			End Sub
 		End Class
 	End Namespace
-
-
+{{endregion}}
 
 ![htmlplaceholder-howto-window-integration](images/htmlplaceholder-howto-window-integration.png)
 
-## See Also
-
+## See Also  
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
-
  * [RadHtmlPlaceholder Events]({%slug radhtmlplaceholder-howto-events%})
-
  * [Display HTML string in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayhtml%})
-
  * [Display external page in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayexternalpage%})
-
  * [Getting Started]({%slug radhtmlplaceholder-getting-started%})

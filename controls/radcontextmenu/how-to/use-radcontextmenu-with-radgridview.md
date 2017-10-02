@@ -10,7 +10,7 @@ position: 0
 
 # Use RadContextMenu within RadGridView
 
-This tutorial will demonstrate how to use a **RadContextMenu** to add functionality to the **RadGridView** control. The article is divided in the following sections:
+This tutorial will demonstrate how to use a **RadContextMenu** to add functionality to the **RadGridView** control. The article is divided into the following sections:
 
 * [Attach RadContextMenu to RadGridView](#attach-radcontextmenu-to-radgridview)
 * [Configure the ItemContainerStyle for RadContextMenu](#configure-the-itemcontainerstyle-for-radcontextmenu)

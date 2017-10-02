@@ -60,7 +60,7 @@ By inheriting the default __DataProvider__, the following methods and properties
 
 * __OnHeaderValueNeeded__: The method that is called when the __HeaderValueNeeded__ event is raised.
 
-* __DistinctValuesLoading__: Occurs when the grid column distinct values is about to be loaded. 
+* __DistinctValuesLoading__: Occurs when the grid column distinct values are about to be loaded. 
 
 * __FilterOperatorsLoading__: The method is invoked when the __FilterOperators__ for a given column are being loaded.
 

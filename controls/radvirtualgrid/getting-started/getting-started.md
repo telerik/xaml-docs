@@ -53,7 +53,7 @@ Instead of using the __CellValueNeeded__ event, __RadVirtualGrid__ provides an o
 
 > In order the control to be populated with data, its [InitialRowCount and InitialColumnCount](#setting-initial-row-and-column-count) properties need to be set.
 
-__RadVirtualGrid__ needs to be initially defined with fixed amount of rows and columns. The below listed properties are exposed for achieving this. An important note is that when additional rows or columns are  added at runtime, the values of these properties remain unmodified, but the capacity of the control increases. More information on inserting rows and columns can be found in the [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%}) topic.
+__RadVirtualGrid__ needs to be initially defined with a fixed amount of rows and columns. The below listed properties are exposed for achieving this. An important note is that when additional rows or columns are added at runtime, the values of these properties remain unmodified, but the capacity of the control increases. More information on inserting rows and columns can be found in the [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%}) topic.
 
 * __InitialRowCount__: Gets or sets the amount of initially loaded rows
 

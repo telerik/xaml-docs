@@ -47,8 +47,6 @@ All supported commands are defined in the __RadVirtualGridCommands__ class and a
 *   __PinColumnLeft, PinColumnRight__: Pins a column to the left/right.
 
 *   __UnpinRow, UnpinColumn__: Unpins a row/column.
-	
-*	__SelectCurrentItem__: Selects the current item.
 
 *	__SelectCurrentUnit__: Selects the current unit. By default the selection unit is "Row", but the SelectionUnit property may also be set to "Cell", thus enabling a cell-based selection.
 

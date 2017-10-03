@@ -25,6 +25,12 @@ The mechanism that the control provides for disabling the column resizing, is it
 
 The ability to resize the rows of __RadVirtualGrid__ can be manipulated through the __CanUserResizeRows__ property. Its default value is __False__. When set to true, the user will be able to resize the rows of the control.
 
+## Fit Column Width
+
+>important The ability to use this mechanism depends on the value of the __MeasureTextOnRender__ property. More information can be found in the [Getting Started]({%slug virtualgrid-getting-started2%})
+
+__RadVirtualGrid__ supports setting the width of a given column to be as large as biggest cell's content present in the viewport. This can be done through the __FitColumnWidthToContent__ method. It accepts the index of the column that needs to be resized.
+
 ## See Also
 
 * [Alternation]({%slug virtualgrid-alternation%})

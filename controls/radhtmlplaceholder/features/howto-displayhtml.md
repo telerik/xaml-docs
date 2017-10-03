@@ -10,14 +10,9 @@ position: 2
 
 # Display HTML string in RadHtmlPlaceholder
 
-
-
-## 
-
 Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPlaceholder. Any valid HTML content will be displayed as part of the Silverlight page layout and will be rendered by the browser.
 
 #### __XAML__
-
 {{region radhtmlplaceholder-howto-displayhtml_0}}
 	<UserControl x:Class="RadHtmlPlaceholderDemo.Page" 
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -33,10 +28,7 @@ Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPla
 	</UserControl>
 {{endregion}}
 
-
-
 #### __C#__
-
 {{region radhtmlplaceholder-howto-displayhtml_1}}
 	using System.Windows;
 	using System.Windows.Controls;
@@ -57,12 +49,9 @@ Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPla
 			}
 		}
 	}
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region radhtmlplaceholder-howto-displayhtml_1}}
 	Imports System.Windows
 	Imports System.Windows.Controls
@@ -80,20 +69,13 @@ Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPla
 			End Sub
 		End Class
 	End Namespace
-	#End Region
-
-
+{{endregion}}
 
 ![](images/image3.png)
 
-## See Also
-
+## See Also 
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})
-
  * [RadHtmlPlaceholder Events]({%slug radhtmlplaceholder-howto-events%})
-
  * [Display HTML string in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayhtml%})
-
  * [Display external page in RadHtmlPlaceholder]({%slug radhtmlplaceholder-howto-displayexternalpage%})
-
  * [Getting Started]({%slug radhtmlplaceholder-getting-started%})

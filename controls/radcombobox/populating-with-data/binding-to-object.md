@@ -10,14 +10,14 @@ position: 4
 
 # Binding to Collection
 
-To bind the __RadComboBox__ to a collection of business objects, you should set its __ItemsSource__ property. If you want the changes to the collection to be automatically reflected in the __RadComboBoxItems__, the collection needs to implement the __INotifyCollectionChanged__ interface and your business objects have to implement the __INotifyPropertyChanged__ interface.
-
-This tutorial will guide you through the process of binding a __RadComboBox__ to a collection of business objects. It will also demonstrates two ways of customizing the visualization of the bound items.
+This tutorial will guide you through the process of binding a __RadComboBox__ to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items.
 
 * [Set the DisplayMemberPath Property](#set-the-displaymemberpath-property)
 * [Define a Custom ItemTemplate](#define-a-custom-itemtemplate)
 
 >tip Before reading this tutorial you should get familiar with the [Data Binding]({%slug radcombobox-populating-with-data-binding-support-overview%}) support of the __RadComboBox__ control.
+
+To bind the __RadComboBox__ to a collection of business objects, you should set its __ItemsSource__ property. If you want the changes to the collection to be automatically reflected in the __RadComboBoxItems__, the collection needs to implement the __INotifyCollectionChanged__ interface and your business objects have to implement the __INotifyPropertyChanged__ interface.
 
 First, define the __RadComboBox__ control in your XAML as demonstrated in **Example 1**.
 

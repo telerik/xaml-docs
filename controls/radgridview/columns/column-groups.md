@@ -1,7 +1,7 @@
 ---
 title: Column Groups
 page_title: Column Groups
-description: Columns in RadGridView may be grouped in column groups visually presented by common column headers. 
+description: Columns in RadGridView may be grouped in column groups visually represented by common column headers. 
 slug: gridview-column-groups
 tags: merged,column, headers, groups
 published: True
@@ -10,7 +10,7 @@ position: 6
 
 # Column Groups
 
-Columns in RadGridView may be grouped in __column groups__ visually presented by common column headers.
+Columns in RadGridView may be grouped in __column groups__ visually represented by common column headers.
 
 This article covers the following topics:
 

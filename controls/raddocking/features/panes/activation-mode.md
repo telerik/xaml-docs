@@ -1,53 +1,91 @@
 ---
-title: PaneActivationMode
-page_title: PaneActivationMode
-description: PaneActivationMode
+title: Pane Activation
+page_title: Pane Activation
+description: Pane Activation
 slug: raddocking-features-panes-activation-mode
 tags: paneactivationmode
 published: True
-position: 5
+position: 7
 ---
 
-# PaneActivationMode
+## RadPane Activation
+			  
+There are two possible approaches for activating/deactivating a pane - using the __ActivePane__ property of the **RadDocking** control or using the __IsActive__ property of the **RadPane**. Both approaches will lead to the same final result but could be used in different scenarios. Using the IsActive property of the RadPane is useful when you want to activate a pane but do not have a reference to the RadDocking control itself.
+        
+**Examples 1 and 2** show how to activate panes through the IsActive property.
+        
+#### __[XAML] Example 1: Activate panes__
 
-With our Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we added the possibility to set which RadPane should be focused/activated after another RadPane in its PaneGroup is closed. Setting the activation mode is done via the PaneActivationMode property of the RadDocking control.
+{{region xaml-raddocking-panes-radpane_4}}
+	<Grid>
+	    <Grid.RowDefinitions>
+	        <RowDefinition Height="Auto"/>
+	        <RowDefinition Height="*"/>
+	    </Grid.RowDefinitions>
+	    <Button Content="Set IsActive" Click="Button_Click"/>
+	    <telerik:RadDocking Grid.Row="1" >
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Pane 1" IsActive="True"/>
+	                <telerik:RadPane Header="Pane 2"/>
+	                <telerik:RadPane Header="Pane 3" x:Name="Pane3"/>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking>
+	</Grid>
+{{endregion}}
 
-## Setting PaneActivationMode
+#### __[C#] Example 2: Activate panes__
 
-The PaneActivationMode property gets or sets a value indicating which Pane in the current PaneGroup should be activated when the active Pane is closed and can be set to one of the following values:
+{{region cs-raddocking-panes-radpane_5}}
+	private void Button_Click(object sender, RoutedEventArgs e)
+	{
+	    this.Pane3.IsActive = true;
+	}
+{{endregion}}
 
-* __First__ - Activates the first non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated. If there isn't such an item at all no action is performed and the value of the ActivePane property is null.
+#### __[VB.NET] Example 2: Activate panes__
 
-* __Last__ - Activates the last non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated. If there isn't such an item at all no action is performed and the value of the ActivePane property is null.
+{{region vb-raddocking-panes-radpane_5}}
+	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		Me.Pane3.IsActive = True
+	End Sub
+{{endregion}}
 
-* __Previous__ - Activates the previous non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated. If there isn't such an item at all no action is performed and the value of the ActivePane property is null.
+## PaneActivationMode
 
-* __Next__ - *This is the default mode*. Activates the next non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated. If there isn't such an item at all no action is performed and the value of the ActivePane property is null. 
+By default the next non-disabled and visible __RadPane__ in the PaneGroup is activated when the current active one is closed.
+
+ RadDocking's **PaneActivationMode** property controls which RadPane should be focused/activated after another RadPane in its PaneGroup is closed. It is of type **ActivationMode** and can be set to the following values: 
+
+* __First__: Activates the first non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated.
+
+* __Last__: Activates the last non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated.
+
+* __Previous__: Activates the previous non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated.
+
+* __Next__: *This is the default mode*. Activates the next non-disabled and visible __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated.
             
-* __LastActivated__ - Activates the previous activated __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated. If there isn't such an item at all no action is performed and the value of the ActivePane property is null.
+* __LastActivated__: Activates the previous activated __RadPane__ in the Items collection of the PaneGroup and if there isn't one - the first non-disabled and visible __RadPane__ in the Items collection of __RadDocking__ is activated.
 
-The next examples will demonstrate the expected behaviors when using the above modes:
-  
-* When setting the mode to First after closing a Pane in the PaneGroup the first Pane in the PaneGroup will be activated:
+> If no pane can be activated no action is performed and the value of the **ActivePane** property is set to **null**.
 
-Figure 1. Pane 1 is activated after closing Pane 4
+Figures 1 through 4 will demonstrate the expected behaviors when using the above modes
 
-![raddocking-features-panes-activation-mode-1](images/raddocking-features-panes-activation-mode-1.png)
+#### Figure 1: Pane 1 is activated after closing Pane 4 with ActivationMode.First
 
-* When setting the mode to Last after closing a Pane in the PaneGroup the last Pane in that group will be activated:
+![Pane 1 is activated after closing Pane 4 with ActivationMode.First](images/raddocking-features-panes-activation-mode-1.png)
 
-Figure 2. Pane 5 is activated after closing Pane 3
+#### Figure 2: Pane 5 is activated after closing Pane 3 with ActivationMode.Last
 
-![raddocking-features-panes-activation-mode-2](images/raddocking-features-panes-activation-mode-2.png)
+![Pane 5 is activated after closing Pane 3 with ActivationMode.First](images/raddocking-features-panes-activation-mode-2.png)
 
-* When setting the mode to Next after closing a Pane in the PaneGroup the last Pane in that group will be activated:
+#### Figure 3: Pane 2 is activated after closing Pane 1 with ActivationMode.Next
 
-Figure 3. Pane 2 is activated after closing Pane 1
+![Pane 2 is activated after closing Pane 1 with ActivationMode.Next](images/raddocking-features-panes-activation-mode-3.png)
 
-![raddocking-features-panes-activation-mode-3](images/raddocking-features-panes-activation-mode-3.png)
-
-* When setting the mode to LastActivated after closing a Pane in the PaneGroup the last Pane which was active will be activated:
-
-Figure 4. Pane 3 is activated after closing Pane 5. Notice that Pane 3 was the last active Pane before closing Pane 5
+#### Figure 4. Pane 3 is activated after closing Pane 5 with ActivationMode.LastActivated
 
 ![raddocking-features-panes-activation-mode-4](images/raddocking-features-panes-activation-mode-4.png)
+
+> Notice that Pane 3 was the last active pane before closing Pane 5

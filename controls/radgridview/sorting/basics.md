@@ -1,7 +1,7 @@
 ---
 title: Basic Sorting
 page_title: Basic Sorting
-description: Basic Sorting
+description: RadGridView provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. 
 slug: gridview-sorting-basics
 tags: basic,sorting
 published: True

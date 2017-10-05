@@ -10,43 +10,53 @@ position: 0
 
 # Basic Sorting
 
-Through __SortingState__ property, __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. The data can be sorted in three ways:
+__RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. 
 
-* __Ascending__
-* __Descending__
-* __No Sort__
+This article is divided in the following topics:
 
->tip __SortingState__ property does not have sorting functionality. It just determines the way the data would be sorted.
+* [Overview](#overview)
+* [SortMemberPath](#sortmemberpath)
+* [Disable Sorting](#disable-sorting)
+* [Events](#events)
+	* [Sorting](#events-Sorting)
+	* [Sorted](#events-Sorted)
+* [Style the Sorted Header](#style-the-sorted-header)
 
->tipRadGridView allows __multi column sorting__. You can check [this topic]({%slug gridview-multiple-column-sorting%}) for more information.
-        
-
->Sorting is a data operation and it is performed by building and executing a LINQ query over the source collection.
->
->If the RadGridView is bound to a collection that inherits __ICollectionView__ that has a __CanSort__ property set to __true__, the RadGridView`s sorting is disabled and the sorting mechanism of the collection is used instead.
+## Overview
 
 The data gets sorted as the user clicks the header of a column. When sorted you should see the header of the column highlighted and the appropriate arrow showing if the applied sorting is ascending or descending.
 
-![](images/RadGridView_BasicSorting_1.png)
+#### Figure 1: RadGridView with applied sorting
 
-By clicking on the header a second time the sort direction is changed to descending and on the next click the sorting will be cleared. The header goes into its normal state and the arrow disappears.
+![RadGridView with applied sorting](images/RadGridView_BasicSorting_1.png)
 
->You can set the __SortMemberPath__ property of the column to specify the name of the property the data in the column will be sorted by.
+By clicking on the header a second time, the sort direction is changed to descending and on the next click the sorting will be cleared. The header goes into its normal state and the arrow disappears.
         
+>Sorting is a data operation and it is performed by building and executing a LINQ query over the source collection.
+>
+>If the RadGridView is bound to a collection that inherits __ICollectionView__ that has a __CanSort__ property set to __True__, the RadGridView's sorting is disabled and the sorting mechanism of the collection is used instead.
 
-## Disabling Sorting
+## SortMemberPath
+
+You can set the __SortMemberPath__ property of a column to specify the name of the property the data in the column will be sorted by. Use this if you need to sort the column by a property different than the one it is bound to.
+
+{{region xaml-gridview-sorting-basics_7}}
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" SortMemberPath="Name" />
+{{endregion}}
+
+## Disable Sorting
 
 If you don't want your __RadGridView__ to be sortable, you just have to set its __CanUserSortColumns__ property to __False__:
 
-#### __XAML__
+#### __[XAML] Example 1: Disable sorting__
 
 {{region xaml-gridview-sorting-basics_0}}
 	<telerik:RadGridView CanUserSortColumns="False" />
 {{endregion}}
 
-In case you want to disable sorting for a particular column only, you can configure column's __IsSortable__ property to __False__:
+In case you want to disable sorting for a particular column only, you can set that column's __IsSortable__ property to __False__:
 
-#### __XAML__
+#### __[XAML] Example 2: Disable sorting for a particular column__
 
 {{region xaml-gridview-sorting-basics_1}}
 	<telerik:GridViewColumn IsSortable="False" />
@@ -56,18 +66,25 @@ In case you want to disable sorting for a particular column only, you can config
 
 There are two events that are raised as the user apply sorting on any column. The first one is the __Sorting__ event and it is raised before the data is sorted. The second one is the __Sorted__ event and it is raised after the data is sorted.
 
-#### __XAML__
+#### __[XAML] Example 3: Handle the Sorting and Sorted events__
 
 {{region xaml-gridview-sorting-basics_2}}
 	<telerik:RadGridView Sorting="radGridView_Sorting" 
 	             Sorted="radGridView_Sorted" />
 {{endregion}}
 
-Via the __GridViewSortingEventArgs__ of the __Sorting__ event you can get the instance of the column that is being sorted (__e.Column__), the instance of the __RadGridView__ that owns the column (__e.DataControl__), the sorting state (__e.SortingState__) and others. ![](images/RadGridView_BasicSorting_2.png)
+### Sorting
 
-You are also able to cancel the sorting operation by setting the __e.Cancel__ property to __True__.
+The __GridViewSortingEventArgs__ of the __Sorting__ event provide you with the following properties:
 
-#### __C#__
+* **Cancel**: A boolean property indicating whether the sorting operation should be canceled.
+* **Column**: The **GridViewColumn** that is being sorted.
+* **DataControl**: The instance of the **GridViewDataControl** that owns the column. 
+* **OldSortingState**: The old **SortingState**. 
+* **NewSortingState**: The new **SortingState**.
+* **IsMultipleColumnSorting**: The a boolean value indicating whether the current sorting operation is a multiple column. You can check the [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%}) article for more information.
+
+#### __[C#] Example 4: Cancel the sorting of a column__
 
 {{region cs-gridview-sorting-basics_3}}
 	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
@@ -76,7 +93,7 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Cancel the sorting of a column__
 
 {{region vb-gridview-sorting-basics_4}}
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
@@ -84,14 +101,15 @@ You are also able to cancel the sorting operation by setting the __e.Cancel__ pr
 	End Sub
 {{endregion}}
 
-To learn how to use the __Sorting__ event to overwrite the built-in sorting functionality take a look at the [Custom Sorting]({%slug gridview-sorting-custom%}) topic.
+> To learn how to use the __Sorting__ event to overwrite the built-in sorting functionality take a look at the [Custom Sorting]({%slug gridview-sorting-custom%}) topic.
 
-The __Sorted__ event allows you to get an instance of the column by which the data is sorted via its __GridViewSortedEventArgs__:
-![](images/RadGridView_BasicSorting_3.png)
+### Sorted
 
-In the event handler you can place some code that has to be executed when the data in the __RadGridView__ gets sorted. For example, you can change the background color of the sorted column:
+The __Sorted__ event allows you to get the instance of the column by which the data is sorted via its __GridViewSortedEventArgs__.
 
-#### __C#__
+In the event handler you can place some code that has to be executed when the data in the __RadGridView__ gets sorted. For example, you can change the [TextAlignment]({%slug gridview-columns-customizing-columns%}#text-properties) of the sorted column:
+
+#### __[C#] Example 5: Change the TextAlignment of the sorted column__
 
 {{region cs-gridview-sorting-basics_5}}
 	private GridViewColumn previousColumn;
@@ -99,45 +117,39 @@ In the event handler you can place some code that has to be executed when the da
 	{
 	    if (this.previousColumn != null)
 	    {
-	        this.previousColumn.Background = new SolidColorBrush(Colors.Transparent);
+	        this.previousColumn.TextAlignment = TextAlignment.Left;
 	    }
-	    e.Column.Background = new SolidColorBrush(Colors.Green);
+
+	    e.Column.TextAlignment = TextAlignment.Right;
 	    this.previousColumn = e.Column;
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Change the TextAlignment of the sorted column__
 
 {{region vb-gridview-sorting-basics_6}}
 	Private previousColumn As GridViewColumn
 	Private Sub radGridView_Sorted(ByVal sender As Object, ByVal e As GridViewSortedEventArgs)
-	    If Me.previousColumn IsNot Nothing Then
-	        Me.previousColumn.Background = New SolidColorBrush(Colors.Transparent)
-	    End If
-	
-	    e.Column.Background = New SolidColorBrush(Colors.Green)
-	    Me.previousColumn = e.Column
+		If Me.previousColumn IsNot Nothing Then
+			Me.previousColumn.TextAlignment = TextAlignment.Left
+		End If
+
+		e.Column.TextAlignment = TextAlignment.Right
+		Me.previousColumn = e.Column
 	End Sub
 {{endregion}}
 
-In this example, the previous column field is used to store the currently sorted column. This is done in order to revert its background color when another column is selected. 
+> In this example, the **previousColumn** field is used to store the currently sorted column. This is done in order to revert its TextAlignment color when another column is selected. 
 
-Here is a snapshot of the final result.
+## Style the Sorted Header
 
-![](images/RadGridView_BasicSorting_4.png)
-
-## Styling the Sorted Header
-
-By editing the template of the header cell you are able to change its overall look and feeling. Making use of the VisualStateManager also allows you to adjust the visual behavior according to the actions of the user - sorted descending or ascending etc. You can also change the visual element that represents the direction of the sorting. To learn more about how to do that take a look at the [Templating the Column Headers]({%slug gridview-styling-column-headers%}) topic.
+By [editing the template]({%slug styling-apperance-editing-control-templates%}) of the header cell you are able to change its overall look and feeling. Making use of the **VisualStateManager** also allows you to adjust the visual appearance in the different sorting states - descending, ascending and none. You can also change the visual element that represents the direction of the sorting. For more information, have a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) article.
 
 ## See Also
 
- * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Programmatic Sorting]({%slug gridview-sorting-programmatic%})
-
+ * [Set SortingState on Column]({%slug gridview-set-sortingstate-on-column%})
  * [Custom Sorting]({%slug gridview-sorting-custom%})
-
  * [Multiple-column Sorting]({%slug gridview-multiple-column-sorting%})
-
  * [Reevaluation of data operations]({%slug gridview-troubleshooting-reevaluation%})
+ * [Styling Column Headers]({%slug gridview-styling-column-headers%})

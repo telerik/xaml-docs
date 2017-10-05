@@ -3,106 +3,94 @@ title: Setting a Theme
 page_title: Setting a Theme 
 description: Setting a Theme 
 slug: styling-apperance-implicit-styles-overview
-tags: setting,a,theme,(using,,implicit,styles)
+tags: setting,a,theme,(using,implicit,styles)
 published: True
 position: 0
 ---
 
 # Setting a Theme
 
-The __Telerik UI for {{ site.framework_name }}__ suite provides a [variety of themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply and what approach to take in order to do so, you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and their [Distribution](#where-can-a-theme-be-found).
+>tip Before proceed reading this topic we recommend you to read the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
 
-The theming mechanism makes it really easy for you to change the overall appearance of your application. Furthermore, it is simple for you to make customizations, assemblies have smaller size and modifications through **Blend** is supported. 
-
-## Assemblies - Xaml vs. NoXaml
-
-Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This artcile will describe the difference and help you to choose a version.
-
-
-
+The __Telerik UI for {{ site.framework_name }}__ suite provides a [variety of themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply you might find it useful to familiarize with the [Themes Concept](#what-is-a-theme) and the difference between [Xaml and NoXaml](#where-can-a-theme-be-found).
 
 ## What is a Theme?
 
 A theme contains all the styles and resources needed for the visualization of the **Telerik** controls. Each theme consists of multiple **XAML** files. You can think of each separate file as a collection of compliant styles which are needed for the visualisation of a certain control. As most of the custom controls are quite complex and contain within themselves other custom controls, often you will need the resources of several files. 
 
-To apply a theme, you need to merge these files into the **Merged Dictionaries** of your application. As you most probably will be using just a subset of the available controls, you can merge only several files which are needed for the specific controls. This leads to a smaller assembly size and an easy-to-customize appearance.  
+## Theme Setting Mechanisms
 
-## Where Can a Theme Be Found?
+There are two mechanisms that can be used to set a theme.
 
-After installing the __Telerik UI for {{ site.framework_name }}__ suite, you will find the following structure in the installation folder (usually C://Program Files/Telerik/ Telerik UI for {{ site.framework_name }} [version]/)
-    
+* [Using NoXaml Dlls and Implicit Styles](#setting-a-theme-using-implicit-styles)
+	In this case use Xaml dlls.
+	
+* [Using StyleManager](#setting-a-theme-using-stylemanager)
+	In this case use NoXaml dlls.
 
-* __[Binaries](#standard-binaries-vs-noxaml-binaries)__: The standard binaries including the themes dlls.
+## Setting a Theme Using Implicit Styles
 
-* __[Binaries.NoXaml](#standard-binaries-vs-noxaml-binaries)__: Binaries without XAML, even the default **Office_Black** theme is not included.
+Using implicit styles gives you full Blend support and smaller dlls size. To use this mechanism you will need to use the __NoXaml__ version of the UI for {{ site.framework_name }} dlls.
 
-* __[Themes.Implicit](#themesimplicit-folder)__: The theme-specific XAML code for all the controls.
+To change the theme 	you will need to make few steps.
 
-### Themes.Implicit Folder
+1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/* folder.
 
-As its name suggests, the **Themes.Implicit** folder contains all styles and resources needed for the visualization of the **Telerik UI for {{ site.framework_name }}** controls. Further digging into its structure, you will notice that it contains separate folders for each available theme.  
+2. __Get the .xaml files with the control styles and templates__.	
+	
+	There two options to get the .xaml files.
+	
+	* [Reference the theme dll](#reference-theme-dll) from the */Binaries.NoXaml/* folder - for example Telerik.Windows.Themes.Office_Black.dll. The theme dll contains ResourceDictionary files with the styles for the controls.
+	
+	* [Copy the XAML files in a dedicated folder in your application](#copy-the-xaml-files-in-a-dedicated-folder-in-your-application). You can get the files from the */Telerik UI for {{ site.framework_name }} installation folder/Themes.Implicit/* folder.  
+3. Merge the required .xaml files in the App.xaml file. 
+	
+	#### __[XAML] Example 1: Merging .xaml files for the Office_Black theme (from the theme dll)__
+	{{region styling-apperance-implicit-styles-overview-0}}
+		<Application>
+			<Application.Resources>
+				<ResourceDictionary>
+					<ResourceDictionary.MergedDictionaries>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>	             
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Data.xaml"/>             
+					</ResourceDictionary.MergedDictionaries>
+				</ResourceDictionary>
+			</Application.Resources>
+		</Application>
+	{{endregion}}	
+	
+	In the implicit styles (NoXaml) scenario you will need to merge the resources for each referenced dll. For example, to use RadGridView you will need to reference the following dlls.
+		
+	* Telerik.Windows.Controls.dll
+    * Telerik.Windows.Controls.Input.dll
+	* Telerik.Windows.Controls.Navigation.dll
+	* Telerik.Windows.Controls.GridView.dll
+	* Telerik.Windows.Controls.Data.dll
 
-### Standard Binaries vs NoXAML Binaries
+	And then merge the dictionaries for the controls in the dlls as shown in __Example 1__.
 
-The **standard binaries** include the implementation of the different controls as well as the styles and the resources needed for their visualization. As our assemblies contain multiple components, all styles for them are included and the assembly size is larger. 
+> Keep in mind that, creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+	
+### How to get the .xaml files required for merging
 
-The **NoXAML binaries**, on the other hand, *do not include any XAML files* - no styles, no brushes or any other resources. This results in smaller assembly size and would mean that when you use them, you have to provide the resources needed for the visualization of the controls. This happens by merging the needed **XAML files** from the **Themes folder** into the Application's **Merged Dictionaries**.
+You can find all required .xaml files in two places, respectively you can use two approaches to reference them in the project.
 
-## Does a Theme Affect All WPF Controls?
+### Reference theme dll
 
-All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+All styles and templates for the themes are encapsulated in **theme dlls** located in the **/Binaries.NoXaml/** folder (Telerik.Windows.Themes.Material.dll, Telerik.Windows.Themes.Office2016.dll, etc.). To get the styles for a specific theme you can just merge its ResourceDictionaries directly from the theme assembly. For example, if you are using the **Office_Black** theme, you should add a reference to the **Telerik.Windows.Themes.Office_Black.dll** and then merge the needed .xaml files as shown in **Example 1** .
 
-## Applying a Theme for Your Application
-
-Now that you have an idea of the concepts behind the theming mechanism, it is time to set up your project so that it is correctly applied. 
-
-There are two main approaches from which you can choose:
-
-* [Reference the **theme DLL**](#reference-the-theme-dll) which includes *all XAML files* for the respective theme and merge only the needed **XAML** files in the **MergedDictionaries** of your application.
-
-* [Copy the different **XAML** files of the controls](#copy-the-xaml-files-in-a-dedicated-folder-in-your-application) which you will use in your application(from the respective theme`s folder) into a dedicated folder in your application and merge them in the application's **MergedDictionaries**. This approach is preferred in case you need to directly modify the default styles and resources of the theme.
-
-The approaches are shown in details below:
-
-### Reference the Theme DLL
-
- All XAML files are included in a separate __Theme DLL__ located in the **Binaries.NoXaml** folder (Telerik.Windows.Themes.Expression_Dark.dll, Telerik.Windows.Themes.Windows8.dll, etc.). So instead of copying all the XAML files in your project(as shown in the second approach), you can just merge them directly from the theme assembly. For example, if you are using the **Office_Black** theme, you should add a reference to the **Telerik.Windows.Themes.Office_Black.dll** and then merge the needed .xaml files as shown in **Figure 1** and **Example 1** .
-
-#### __Figure 1: Add reference to the theme binary file:__
-
-![implicit styles 1](images/implicit-styles-theme-dll.PNG)
-
-#### __[XAML] Example 1: After you add a reference, you should merge the needed .xaml files__
-{{region styling-apperance-implicit-styles-overview-0}}
-	 <Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>	             
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Data.xaml"/>              
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>	
-	 </Application.Resources>
-{{endregion}}
- 
 ### Copy the XAML files in a dedicated folder in your application
 
-As already advised, the default styles and resources for each theme are shipped in the **Themes.Implicit** folder. In order to apply a certain theme for your application you need to merge all the required **XAML** files from the respective theme's folder(depends on the set of controls you are using) in the application's **MergedDictionaries**. You should merge all **XAML** files corresponding to each assembly reference you have in your project, as shown in **Example 1** and **Figure 1 and 2**. 
+The default styles and resources for each theme are shipped also in the **/Telerik UI for {{ site.framework_name }} installation folder/Themes.Implicit** folder. In order to apply a certain theme for your application you can copy all the required **XAML** files from the respective theme's folder(depends on the set of controls you are using) in a folder from your application. And then merge the ResourceDictionaries in the application's **MergedDictionaries** collection. You should merge all .xaml files corresponding to each assembly reference you have in your project, as shown in **Example 2** and **Figure 1**. 
 
-#### __Figure 2: The binary references in your application:__
-
-![implicit styles 3](images/implicit-styles-references.png)
-
->important The references should point to the binary files from the __Binaries.NoXAML__ folder.
-
-#### __Figure 3: Copy the needed XAML files in a separate folder in your application:__
-
+#### Figure 1: Copy the needed XAML files in a separate folder in your application
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
-#### __[XAML] Example 2: The MergedDictionaries in your application resources:__
+#### [XAML] Example 2: The MergedDictionaries in your application resources:
 {{region styling-apperance-implicit-styles-overview-1}}
 	<Application.Resources>
 		<ResourceDictionary>
@@ -113,20 +101,59 @@ As already advised, the default styles and resources for each theme are shipped 
 				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
 				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.GridView.xaml"/>               
 				<ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Data.xaml"/>
-	    		</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
 {{endregion}}
 
+>tip If you merge a ResourceDictionary for a dll that is missing from the project's References an error will occur.
+<!-- -->
 
->If you copy the XAML files in your project, please make sure that they are with the proper build action. Generally it should be __Resource__, but for the __Telerik.Windows.Controls.RibbonView.xaml__ file the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
+>tip You should not set application theme using the StyleManager when using implicit styles. 
 
->tip You should not set Application Theme using the __StyleManager__ when using implicit styles. 
+>If you copy the XAML files in your project, please make sure that the .xaml files are with the proper **build action**. Generally it should be __Resource__, except for the __Telerik.Windows.Controls.RibbonView.xaml__ file where the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
-## See Also
+## Setting a Theme Using StyleManager
 
+StyleManager is recommended to use when working with the standard (Xaml) dlls. The manager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
+
+To change the theme via the StyleManager you will need to make few steps.
+
+1. Reference the Xaml version of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries/* folder.
+
+2. Set the __StyleManager.Theme__ attached property on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the InitialComponent method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
+
+	#### __[C#] Example 1: Setting the theme on a control level__
+	{{region styling-apperance-implicit-styles-overview-2}}		
+		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
+	{{endregion}}
+	
+	#### __[VB.NET] Example 1: Setting the theme of the window__
+	{{region styling-apperance-implicit-styles-overview-3}}	
+		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
+	{{endregion}}
+	
+	#### __[C#] Example 2: Setting the theme on application level__
+	{{region styling-apperance-implicit-styles-overview-4}}		
+		StyleManager.ApplicationTheme = new Office2016Theme();
+		InitializeComponent();
+	{{endregion}}
+	
+	#### __[VB.NET] Example 2: Setting the theme on application level__
+	{{region styling-apperance-implicit-styles-overview-5}}		
+		StyleManager.ApplicationTheme = New Office2016Theme()
+		InitializeComponent()
+	{{endregion}}
+
+Read more about this approach in the [StyleManager]() help section.
+
+>tip We recommend you to avoid mixing the theme setting mechanisms. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
+
+## Does a Theme Affects All {{ site.framework_name }} Controls?
+
+All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+
+## See Also  
 * [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
-
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
-
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})

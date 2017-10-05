@@ -1,9 +1,9 @@
 ---
-title: Setting a Theme
-page_title: Setting a Theme 
-description: Setting a Theme 
+title: Xaml vs. NoXaml
+page_title: Xaml vs. NoXaml
+description: Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This artcile will describe the difference and help you to choose a version. 
 slug: xaml-vs-noxaml
-tags: setting,a,theme,(using,,implicit,styles)
+tags: xaml,noxaml
 published: True
 position: 0
 ---

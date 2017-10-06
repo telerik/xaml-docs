@@ -55,7 +55,7 @@ At this point the filtering is enabled but no filters are applied. In order to r
 
 ## Filtering Popup
 
-By clicking the arrow found in each column header, you can open the filtering popup. Through it you can apply, reapply, change and remove the filter for the respective column. The popup gives access to various predefined filters. A brief description of each type of filter can be found    [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering).
+By clicking the arrow found in each column header, you can open the filtering popup. Through it you can apply, reapply, change and remove the filter for the respective column. The popup gives access to various predefined filters. A brief description of each type of filter can be found    [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering).
         
 
 Figure 2: Filtering Popup
@@ -143,6 +143,6 @@ They will not become available again, until we remove the filtering from the sec
         
 
 ## See Also
- * [Model Filtering](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering)
+ * [Model Filtering](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering)
 
  * [Sorting]({%slug radspreadsheet-ui-sorting%})

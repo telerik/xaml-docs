@@ -23,7 +23,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 ![Rad Spreadsheet Overview ](images/RadSpreadsheet_Overview.png)
 
 
->important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
+>important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 
 ## Features
 
@@ -56,9 +56,9 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 	* Custom.
 	
 
-* A broad range of **formulas** in different categories. **RadSpreadsheet** comes with more than 200 built-in functions. The API enables you to easily plug custom ones as well. For more informations, refer to the [Formulas](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/formulas/formulas) section for SpreadProcessing.
+* A broad range of **formulas** in different categories. **RadSpreadsheet** comes with more than 200 built-in functions. The API enables you to easily plug custom ones as well. For more informations, refer to the [Formulas](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/formulas/formulas) section for SpreadProcessing.
 
-* **Shapes and Images**: The UI enables you to work with images. [API](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
+* **Shapes and Images**: The UI enables you to work with images. [API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
 
 * **Document themes**
 
@@ -70,7 +70,7 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * [**Sorting**]({%slug radspreadsheet-ui-filtering%}) the data in the worksheet.	
 
-* [**Find and replace data**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/find-and-replace).
+* [**Find and replace data**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/find-and-replace).
 
 * **Copy/Paste**: Add or copy worksheets within or across workbooks. Of course, copying and pasting of cells is supported as well.
 
@@ -94,7 +94,7 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * [**Headers and Footers**]({%slug radspreadsheet-ui-headers-and-footers%}): The functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
 
-* Create and use multiple sheets, each one with its own [**history**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hostory) stack
+* Create and use multiple sheets, each one with its own [**history**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hostory) stack
 
 * [**Selection** and active cell]({%slug radspreadsheet-ui-working-with-selection%})
 
@@ -109,17 +109,17 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 ## Supported formats: 
 
-* [**XLSX**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
+* [**XLSX**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
 
-* [**CSV**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/csv/csvformatprovider) 
+* [**CSV**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/csv/csvformatprovider) 
 
-* [**Plain text**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/txt/txtformatprovider) 
+* [**Plain text**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/txt/txtformatprovider) 
 
-* [**PDF**](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider) (export only)
+* [**PDF**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider) (export only)
  
 
 ## See Also
 
 * [Getting Started]({%slug radspreadsheet-getting-started%})
 * [Unsupported Features]({%slug radspreadsheet-unsupported-features%}) 
-* [RadSpreadProcessing Documentation](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
+* [RadSpreadProcessing Documentation](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)

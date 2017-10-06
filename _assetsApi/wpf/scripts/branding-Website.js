@@ -1,4 +1,4 @@
-﻿//===============================================================================================================
+//===============================================================================================================
 // System  : Sandcastle Help File Builder
 // File    : branding-Website.js
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
@@ -620,7 +620,7 @@ $(document).ready(function(){
 
     logoBar = document.createElement('div');
     logoBar.id = "logo-bar";
-    logoBar.innerHTML = "<a href=\"http://docs.telerik.com/devtools/wpf/\" class=\"t-logo\" title=\"Telerik UI for WPF \"> Telerik UI for WPF</a>";
+    logoBar.innerHTML = "<a href=\"https://docs.telerik.com/devtools/wpf/\" class=\"t-logo\" title=\"Telerik UI for WPF \"> Telerik UI for WPF</a>";
 	
 	$("#PageHeader").prepend(logoBar);
 

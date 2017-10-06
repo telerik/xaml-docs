@@ -11,7 +11,7 @@ position: 6
 # Headers and Footers
 
 
-The Headers and Footers functionality enables you to add rich text content in the page margins when laying out a worksheet to pages. This functionality is useful in scenarios like [exporting to PDF](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider), [printing]({%slug radspreadsheet-ui-printing%}) or [importing/exporting to XLSX](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider). 
+The Headers and Footers functionality enables you to add rich text content in the page margins when laying out a worksheet to pages. This functionality is useful in scenarios like [exporting to PDF](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider), [printing]({%slug radspreadsheet-ui-printing%}) or [importing/exporting to XLSX](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider). 
 
 
 ## Overview
@@ -86,5 +86,5 @@ Along with text, you can insert several fields in a header or footer as shown in
 
 ## See Also
 
-* [Headers and Footers for SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/headers-and-footers)
+* [Headers and Footers for SpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/headers-and-footers)
 * [Printing]({%slug radspreadsheet-ui-printing%})

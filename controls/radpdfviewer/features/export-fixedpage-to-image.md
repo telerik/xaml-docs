@@ -30,4 +30,4 @@ The converter is defined in the __Telerik.Windows.Documents.Converters__ namespa
 
 * [Getting Started]({%slug radpdfviewer-getting-started%})
 * [Viewer Modes]({%slug radpdfviewer-viewer-modes%})
-* {% if site.site_name == 'Silverlight' %}[Thumbnail class](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_documents_ui_thumbnail.htm){% endif %}{% if site.site_name == 'WPF' %}[Thumbnail class](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_ui_thumbnail.htm){% endif %}
+* {% if site.site_name == 'Silverlight' %}[Thumbnail class](https://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_documents_ui_thumbnail.htm){% endif %}{% if site.site_name == 'WPF' %}[Thumbnail class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_ui_thumbnail.htm){% endif %}

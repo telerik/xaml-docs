@@ -54,4 +54,4 @@ The __CloudUploadFile__ class exposes several events.
 ## See Also  
 * [RadCloudUploadListItem]({%slug radcloudupload-radclouduploadlistitem%})
 * [Events]({%slug radcloudupload-features-events%})
-* [CloudUploadFile API](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Cloud_Controls_Upload_CloudUploadFile.htm)
+* [CloudUploadFile API](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Cloud_Controls_Upload_CloudUploadFile.htm)

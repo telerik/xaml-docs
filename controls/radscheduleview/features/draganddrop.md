@@ -289,4 +289,4 @@ As of __R1 2017 SP1__, __ScheduleViewDragDropBehavior__ exposes the __CacheConve
 
 
 
->Check out the {% if site.site_name == 'WPF' %} Drag and Drop Example at [WPF online demos](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demo](http://demos.telerik.com/silverlight/#ScheduleView/DragDrop){% endif %} to see the __RadScheduleView__'s Drag and Drop functionality in action.        
+>Check out the {% if site.site_name == 'WPF' %} Drag and Drop Example at [WPF online demos](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/DragDrop){% endif %} to see the __RadScheduleView__'s Drag and Drop functionality in action.        

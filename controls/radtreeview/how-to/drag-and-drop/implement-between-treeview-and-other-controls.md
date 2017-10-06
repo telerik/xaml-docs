@@ -264,7 +264,7 @@ Now we're getting to the actual DragDrop implementation. And we'll start with co
 		
 
 >Please note that this article is based on the
-			{% if site.site_name == 'Silverlight' %}[TreeToGrid online demo](http://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %}[TreeToGrid demo](http://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid), which you can find by navigating to the DragAndDrop examples ->Tree To Grid Drag
+			{% if site.site_name == 'Silverlight' %}[TreeToGrid online demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %}[TreeToGrid demo](https://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid), which you can find by navigating to the DragAndDrop examples ->Tree To Grid Drag
 			{% endif %}.
 		  
 

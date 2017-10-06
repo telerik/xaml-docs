@@ -12,17 +12,17 @@ position: 2
 
 ## Online Demos
 
-* [Paging 1 million records with RadDataPager](http://demos.telerik.com/silverlight/#GridView/Paging)
+* [Paging 1 million records with RadDataPager](https://demos.telerik.com/silverlight/#GridView/Paging)
 
-* [Client binding to 1 million records](http://demos.telerik.com/silverlight/#GridView/Performance)
+* [Client binding to 1 million records](https://demos.telerik.com/silverlight/#GridView/Performance)
 
-* [Scrolling 50 million cells](http://demos.telerik.com/silverlight/#GridView/UIVirtualization)
+* [Scrolling 50 million cells](https://demos.telerik.com/silverlight/#GridView/UIVirtualization)
 
-* [Client binding to 1 million records](http://demos.telerik.com/wpf/#GridView/)
+* [Client binding to 1 million records](https://demos.telerik.com/wpf/#GridView/)
 
-* [Server page, sort group and filter](http://demos.telerik.com/wpf/#GridView/)
+* [Server page, sort group and filter](https://demos.telerik.com/wpf/#GridView/)
 
-* [Scrolling 50 million cells](http://demos.telerik.com/wpf/#GridView/)
+* [Scrolling 50 million cells](https://demos.telerik.com/wpf/#GridView/)
 
 ## Blog posts{% if site.site_name == 'Silverlight' %}
 

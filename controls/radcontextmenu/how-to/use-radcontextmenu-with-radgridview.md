@@ -17,7 +17,7 @@ This tutorial will demonstrate how to use a **RadContextMenu** to add functional
 * [Display Different Menu Items Depending on Which RadGridView Part Is Clicked](#display-different-menu-items-depending-on-which-radgridview-part-is-clicked)
 * [Handle the Menu Items' Clicks](#handle-the-menu-items-clicks)
 
-> You can have a look at the **Row Context Menu** and **Header Context Menu** demos which can be found in the RadGridView section of the {% if site.site_name == 'WPF' %}[WPF Controls Examples](http://demos.telerik.com/wpf/){% elsif site.site_name == 'Silverlight' %}[Silverlight Controls Examples](http://demos.telerik.com/silverlight/){% endif %}. 
+> You can have a look at the **Row Context Menu** and **Header Context Menu** demos which can be found in the RadGridView section of the {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% elsif site.site_name == 'Silverlight' %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/){% endif %}. 
 
 To start, first define a RadGridView, which will display a list of __Employee__ objects.
 

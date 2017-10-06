@@ -67,7 +67,7 @@ RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nest
 	}
 {{endregion}}
 
-For a full example please check the __Nested Properties__  {% if site.site_name == 'Silverlight' %}[demo](http://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[demo](http://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %} about NestedPropertyDefinitions.
+For a full example please check the __Nested Properties__  {% if site.site_name == 'Silverlight' %}[demo](https://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[demo](https://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %} about NestedPropertyDefinitions.
 
 You can define a nested property like so:
 

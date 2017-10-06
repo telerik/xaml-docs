@@ -26,7 +26,7 @@ The __UpdateValueEvent__ property of the __RadMaskedTextInput__ controls allows 
 
 >tip The default value of all __RadMaskedInput__'s __UpdateValueEvent__ property is __UpdateValueEvent.PropertyChanged__.
 
->tip You can see a live demo demonstrating the __UpdateValueEvent__ property [here](http://demos.telerik.com/silverlight/#MaskedInput/MaskedNumericInput).
+>tip You can see a live demo demonstrating the __UpdateValueEvent__ property [here](https://demos.telerik.com/silverlight/#MaskedInput/MaskedNumericInput).
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

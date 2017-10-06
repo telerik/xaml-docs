@@ -323,7 +323,7 @@ As you might have already guessed, the IColumnFilterDescriptor that is used for 
 
 Notice how this hierarchy is the same as the Popup filtering control layout. Working through the IColumnFilterDescriptor interface makes sure that you cannot randomly add criteria which cannot be correctly displayed by the Popup filtering control.
 
->tipYou can check some sample code on the {% if site.site_name == 'Silverlight' %}[Programmatic Filtering Demo](http://demos.telerik.com/silverlight/#GridView/ProgrammaticFiltering){% endif %}{% if site.site_name == 'WPF' %}[Programmatic Filtering Demo](http://demos.telerik.com/wpf){% endif %}.
+>tipYou can check some sample code on the {% if site.site_name == 'Silverlight' %}[Programmatic Filtering Demo](https://demos.telerik.com/silverlight/#GridView/ProgrammaticFiltering){% endif %}{% if site.site_name == 'WPF' %}[Programmatic Filtering Demo](https://demos.telerik.com/wpf){% endif %}.
 
 ## See Also
 

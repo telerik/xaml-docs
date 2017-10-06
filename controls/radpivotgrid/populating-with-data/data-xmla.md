@@ -133,7 +133,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	    <pivot:XmlaConnectionSettings 
 	        Cube="Adventure Works" 
 	        Database="Adventure Works DW 2008R2" 
-	        ServerAddress="http://demos.telerik.com/olap/msmdpump.dll">
+	        ServerAddress="https://demos.telerik.com/olap/msmdpump.dll">
 	    </pivot:XmlaConnectionSettings>
 	</pivot:XmlaDataProvider.ConnectionSettings>
 {{endregion}}
@@ -144,7 +144,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
 	cubeConnectionDetails.Cube = "Adventure Works";
 	cubeConnectionDetails.Database = "Adventure Works DW 2008R2";
-	cubeConnectionDetails.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll";
+	cubeConnectionDetails.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll";
 	
 	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails;
@@ -156,7 +156,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
 	cubeConnectionDetails.Cube = "Adventure Works"
 	cubeConnectionDetails.Database = "Adventure Works DW 2008R2"
-	cubeConnectionDetails.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll"
+	cubeConnectionDetails.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll"
 	
 	Dim xmlaDataProvider As New XmlaDataProvider()
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails

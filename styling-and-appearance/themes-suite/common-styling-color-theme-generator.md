@@ -28,7 +28,7 @@ You can always hit the reset button to start over.
 
 The source code of the application can be found in the downloads section of your **Telerik** account.
 
->important You can check the **Color Theme Generator** application on the following page {% if site.site_name == 'Silverlight' %}[Silverlight Color Theme Generator](http://demos.telerik.com/silverlight/Themesgenerator){% endif %}{% if site.site_name == 'WPF' %}[WPF Color Theme Generator](http://demos.telerik.com/wpf/colorthemegenerator){% endif %}
+>important You can check the **Color Theme Generator** application on the following page {% if site.site_name == 'Silverlight' %}[Silverlight Color Theme Generator](https://demos.telerik.com/silverlight/Themesgenerator){% endif %}{% if site.site_name == 'WPF' %}[WPF Color Theme Generator](https://demos.telerik.com/wpf/colorthemegenerator){% endif %}
 
 
 

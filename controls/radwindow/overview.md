@@ -36,7 +36,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 >tip Get started with the control with its [Getting Started]({%slug radwindow-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 

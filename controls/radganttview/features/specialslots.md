@@ -102,4 +102,4 @@ And the result is the following:
 
 ![ganttview specialslots 3](images/ganttview_specialslots_3.png)
 
-You can check the GanttView Special Slots example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](http://demos.telerik.com/silverlight/#GanttView/Programming/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](http://demos.telerik.com/wpf/){%endif%}.
+You can check the GanttView Special Slots example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](https://demos.telerik.com/silverlight/#GanttView/Programming/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](https://demos.telerik.com/wpf/){%endif%}.

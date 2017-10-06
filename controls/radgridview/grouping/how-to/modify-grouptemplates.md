@@ -88,6 +88,6 @@ A similar logic applies for the group footers and __GroupFooterTemplate__. For e
     </telerik:GridViewDataColumn.GroupFooterTemplate>
 {{endregion}}
 
->tip You can also check the implementation of {% if site.site_name == 'Silverlight' %} [Totals demo](http://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %} __Totals__ [WPF Demos](http://demos.telerik.com/wpf/#GridView/Totals){% endif %}.   
+>tip You can also check the implementation of {% if site.site_name == 'Silverlight' %} [Totals demo](https://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %} __Totals__ [WPF Demos](https://demos.telerik.com/wpf/#GridView/Totals){% endif %}.   
 
 >For styling the appearance of the GroupRow via editing the template of the GridViewGroupRow, please follow this [this article.]({%slug gridview-styling-group-row%})

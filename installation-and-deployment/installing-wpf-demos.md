@@ -23,7 +23,7 @@ In this topic we will go through the following sections:
 
 ## How to run WPF Demos application
 
-WPF Demos application could be accessed from the following link: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)
+WPF Demos application could be accessed from the following link: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
@@ -35,7 +35,7 @@ As it is deployed as a ClickOnce application it requires the following component
 
 * SQL Server 2008 SP3 Express or newer
 
-If these components are already installed, you can [launch](http://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
+If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
 
 Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 

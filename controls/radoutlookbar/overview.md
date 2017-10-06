@@ -31,4 +31,4 @@ __RadOutlookBar__ key features list:
 
 * __All Telerik controls for Silverlight support styling with Expression Blend__{% if site.site_name == 'Silverlight' %}
 
-Check out the online demo at: [http://demos.telerik.com/silverlight/#OutlookBar/FirstLook](http://demos.telerik.com/silverlight/#OutlookBar/FirstLook){% endif %}
+Check out the online demo at: [https://demos.telerik.com/silverlight/#OutlookBar/FirstLook](https://demos.telerik.com/silverlight/#OutlookBar/FirstLook){% endif %}

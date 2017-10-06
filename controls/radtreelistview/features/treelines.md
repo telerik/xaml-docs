@@ -33,6 +33,6 @@ __The functionality can be configured through the following properties:__
 
 __Figure 1: RadTreeListView__ with tree lines visible. The __TreeLinesStrokeThickness__  is set to ___10___.![Rad Tree List View Connecting Lines](images/RadTreeListView_ConnectingLines.png)
 
-{% if site.site_name == 'Silverlight' %}You can check out the ["Tree Lines" online Demo.](http://demos.telerik.com/silverlight/#TreeListView/TreeLines){% endif %}{% if site.site_name == 'WPF' %}
+{% if site.site_name == 'Silverlight' %}You can check out the ["Tree Lines" online Demo.](https://demos.telerik.com/silverlight/#TreeListView/TreeLines){% endif %}{% if site.site_name == 'WPF' %}
 
-You can also check out the ["Tree Lines" WPF Demo.](http://demos.telerik.com/wpf/){% endif %}
+You can also check out the ["Tree Lines" WPF Demo.](https://demos.telerik.com/wpf/){% endif %}

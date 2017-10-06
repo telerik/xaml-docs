@@ -17,7 +17,7 @@ There are two ways to do grouping with paging. One is to __group before paging__
 The idea behind the second approach is to do the paging before the grouping so that RadGridView will never know that someone is paging its data. It will simply think that its ItemsSource is a collection with several items (i.e. __PageSize__) and will group these items.
         
 
-If you would like to implement the second approach, then I would suggest you to check the {% if site.site_name == 'Silverlight' %}[Paging before Grouping Demo](http://demos.telerik.com/silverlight/#GridView/PagingBeforeGrouping){% endif %}{% if site.site_name == 'WPF' %}[Paging before Grouping Demo](http://demos.telerik.com/wpf){% endif %}
+If you would like to implement the second approach, then I would suggest you to check the {% if site.site_name == 'Silverlight' %}[Paging before Grouping Demo](https://demos.telerik.com/silverlight/#GridView/PagingBeforeGrouping){% endif %}{% if site.site_name == 'WPF' %}[Paging before Grouping Demo](https://demos.telerik.com/wpf){% endif %}
 
 ## See Also
 

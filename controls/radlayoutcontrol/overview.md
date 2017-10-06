@@ -30,7 +30,7 @@ __RadLayoutControl__ is a flexible component that allows you to arrange visual e
 
 * __Toolbox__: The toolbox allows you to easily add items to the layout via drag/drop. You can also use it to keep track of the deleted items, and the hierarchical structure of the layout. You can read more about this in the [ToolBox]({%slug radlayoutcontrol-features-toolbox-overview%}) documentation section.
 
->You can find examples that demonstrate RadLayoutControl in our [demo application](http://demos.telerik.com/wpf/).
+>You can find examples that demonstrate RadLayoutControl in our [demo application](https://demos.telerik.com/wpf/).
 
 ## See Also  
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

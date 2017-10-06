@@ -203,4 +203,4 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 
 
-Another example is available [here](http://demos.telerik.com/silverlight/#Chart/MultipleDataSources).
+Another example is available [here](https://demos.telerik.com/silverlight/#Chart/MultipleDataSources).

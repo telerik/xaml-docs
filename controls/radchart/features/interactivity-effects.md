@@ -90,7 +90,7 @@ For example if __HoverScope__ is set to __InteractivityScope.Series__ for a give
 
 There is one additional setting related to hover effects that can be set on global level - __RadChart.HoverActivationDelay__. This property gets or sets the delay before the hover effect is activated (by default there is no delay and the hover effect becomes active immediately).
 
->tipYou could check out an online example [here](http://demos.telerik.com/silverlight/#Chart/InteractivityEffects).
+>tipYou could check out an online example [here](https://demos.telerik.com/silverlight/#Chart/InteractivityEffects).
 
 ## Complete Demo Code
 

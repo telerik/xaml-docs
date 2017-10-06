@@ -39,7 +39,7 @@ The other API changes are listed in the table below:
 |MaxLength|Use the [MaskedInputExtensions](http://www.telerik.com/help/wpf/radmaskedinput-features-extensions.html) MaskedInputExtensions.Maximum for RadMaskedNumericInput and RadMaskedCurrencyInput MaskedInputExtensions.MaxTextLength for RadMaskedTextInput|
 |IsEmpty|You can check if the Value property of a MaskedInput component equals null to see if the component is empty.|
 
-At the same time in the __RadMaskedInput__ components you will find a more extensive set of features further demonstrated in the examples available within the {% if site.site_name == 'Silverlight' %}[ UI for Silverlight demo application](http://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[ UI for WPF demo application](http://demos.telerik.com/wpf/){% endif %}.        
+At the same time in the __RadMaskedInput__ components you will find a more extensive set of features further demonstrated in the examples available within the {% if site.site_name == 'Silverlight' %}[ UI for Silverlight demo application](https://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[ UI for WPF demo application](https://demos.telerik.com/wpf/){% endif %}.        
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

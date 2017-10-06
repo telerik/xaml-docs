@@ -30,4 +30,4 @@ The __SelectedItemRemoveBehaviour__ property allows you to choose which __RadTab
 
 ## See Also
 
- * [How To Add Close Button to the Tab Headers]({%slug radtabcontrol-how-to-add-close-button-to-the-tab-headers%})[TabControlDatabinding](http://demos.telerik.com/silverlight/#TabControl/Databinding)
+ * [How To Add Close Button to the Tab Headers]({%slug radtabcontrol-how-to-add-close-button-to-the-tab-headers%})[TabControlDatabinding](https://demos.telerik.com/silverlight/#TabControl/Databinding)

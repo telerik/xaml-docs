@@ -60,7 +60,7 @@ You can also set a custom display for the items. For the purpose please set __Co
 	  </telerik:RadGridView.ControlPanelItems>
 {{endregion}}
 
->tip You can review a __runnable solution__ showing how to define ControlPanelItems from our SDK Samples Browser, which you can download from [here](http://demos.telerik.com/xaml-sdkbrowser/). The example is listed under __GridView/ControlPanel__
+>tip You can review a __runnable solution__ showing how to define ControlPanelItems from our SDK Samples Browser, which you can download from [here](https://demos.telerik.com/xaml-sdkbrowser/). The example is listed under __GridView/ControlPanel__
    
 
 ## Reusing Control Panel Items  ##

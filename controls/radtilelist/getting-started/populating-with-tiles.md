@@ -232,5 +232,5 @@ Afterwards, all you need to do is to set the __ItemsSource of__ the RadTileList:
 
 ## Populating RadTileList With Custom Tiles
 
-A typical usage of __Custom RadTileList's Tiles__ is available on {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TileList/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[ our WPF demos](http://demos.telerik.com/wpf/){% endif %}.
+A typical usage of __Custom RadTileList's Tiles__ is available on {% if site.site_name == 'Silverlight' %}[ this online demo](https://demos.telerik.com/silverlight/#TileList/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[ our WPF demos](https://demos.telerik.com/wpf/){% endif %}.
         

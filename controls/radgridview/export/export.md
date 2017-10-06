@@ -131,6 +131,6 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 
  * [Export Events]({%slug gridview-export-events%})
  
- * [Online Demo - Exporting to various formats](http://demos.telerik.com/silverlight/#GridView/Exporting)
+ * [Online Demo - Exporting to various formats](https://demos.telerik.com/silverlight/#GridView/Exporting)
  
- * [Online Demo - Exporting Row Details](http://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
+ * [Online Demo - Exporting Row Details](https://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)

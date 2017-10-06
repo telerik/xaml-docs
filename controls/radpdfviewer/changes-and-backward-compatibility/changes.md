@@ -87,4 +87,4 @@ In 2012 Q1 SP1 - 2012.1.0326 there are some additional enhancements:
 
 * Enable Display PDF in RadBook scenario.
 
-* A demo on the integration between RadPdfViewer and RadBook. {% if site.site_name == 'Silverlight' %}[Online demo](http://demos.telerik.com/silverlight/#PdfViewer/Integration/RadBookIntegration){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](http://demos.telerik.com/wpf/){% endif %}
+* A demo on the integration between RadPdfViewer and RadBook. {% if site.site_name == 'Silverlight' %}[Online demo](https://demos.telerik.com/silverlight/#PdfViewer/Integration/RadBookIntegration){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](https://demos.telerik.com/wpf/){% endif %}

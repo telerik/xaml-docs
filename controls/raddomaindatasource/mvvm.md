@@ -146,7 +146,7 @@ All of the business logic happens inside this view model. A central part of the 
 
 
 
-To illustrate this, let’s take a look at how the page size can be changed by the user. The view contains a [RadNumericUpDown](http://demos.telerik.com/silverlight/#NumericUpDown/FirstLook) bound to the __PageSize__ property of the view model:
+To illustrate this, let’s take a look at how the page size can be changed by the user. The view contains a [RadNumericUpDown](https://demos.telerik.com/silverlight/#NumericUpDown/FirstLook) bound to the __PageSize__ property of the view model:
 
 #### __XAML__
 

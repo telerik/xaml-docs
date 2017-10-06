@@ -28,4 +28,4 @@ __RadExpressionEditor__ key features list:
 
 * __Resulting expressions can be used in any API that works with LINQ expressions__
 
-Check out our online demo at {% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](http://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}
+Check out our online demo at {% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}

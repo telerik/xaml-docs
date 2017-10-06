@@ -106,7 +106,7 @@ This topic will summarize the new functionality introduced in the editor with he
 * Multiple Sections support, various page orientations, even/odd section breaks, different Haders/Footers, UI to toggle Headers/Footer linking.
             
 
-* Enhancements to the custom annotations and the document protection feature. New demo available related to this feature - [Structured Content Editing](http://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
+* Enhancements to the custom annotations and the document protection feature. New demo available related to this feature - [Structured Content Editing](https://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
             
 
 * FloatingImageBlocks improvements in FlowLayoutMode, achieving a behavior resembling HTML floating blocks. As a result, floating image blocks in the Header/Footer are shown in a much better way.

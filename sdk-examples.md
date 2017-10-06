@@ -110,7 +110,7 @@ You can find additional demos for most of the Telerik UI for {{ site.framework_n
 
 {% if site.site_name == 'WPF' %}* [WordsProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/sdk-examples){% endif %}
 
->You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](http://demos.telerik.com/xaml-sdkbrowser/).
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](https://demos.telerik.com/xaml-sdkbrowser/).
 
 ## See Also
 

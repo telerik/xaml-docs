@@ -376,7 +376,7 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 
 No matter which of these three formats you have chosen, you will have to create a new __RadDocument__, which will hold the content, that will be exported. After that, you have to set this __RadDocument__ instance to the Document property of __RadRichTextBox__. This __RadRichTextBox__ must be visualized in order to be able to export its data. To generate __RadDocument__ you can use the code below:        
 
->tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](http://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](http://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
+>tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](https://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](https://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
 
 #### __[C#] Example 2: Generating the exported document__
 
@@ -1121,7 +1121,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	End Sub
 {{endregion}}
 
->A working version of this example is also available in the [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/), titled **Export PivotGrid**.
+>A working version of this example is also available in the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/), titled **Export PivotGrid**.
 
 ## See Also
 

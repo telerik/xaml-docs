@@ -131,4 +131,4 @@ results in the following look:
 
 ![TimelineView Formatting Properties](images/radscheduleview_features_formatstringstimelineview.png)
 
-Check out the {% if site.site_name == 'Silverlight' %}[online demo](http://demos.telerik.com/silverlight/?ScheduleView/CustomDateFormats){% endif %}{% if site.site_name == 'WPF' %}[RadScheduleView Custom Date Formats example](http://demos.telerik.com/wpf/){% endif %} to see the formatting properties in action.        
+Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/?ScheduleView/CustomDateFormats){% endif %}{% if site.site_name == 'WPF' %}[RadScheduleView Custom Date Formats example](https://demos.telerik.com/wpf/){% endif %} to see the formatting properties in action.        

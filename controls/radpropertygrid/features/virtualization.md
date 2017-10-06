@@ -49,4 +49,4 @@ Finally, in order to enable the __UI Virtualization__ behavior, you should set t
 	<telerik:RadPropertyGrid IsVirtualizing="True" />
 {{endregion}}
 
->tipA complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](http://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.
+>tipA complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](https://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.

@@ -10,7 +10,7 @@ position: 1
 
 # Display RadGridView Row Details in RadWindow
 
-As you know, in order to display Row Details outside [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx), you need to place a [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) control somewhere around [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx) and wire them up. Well, it does not need to be around, really. This article will show how to place it in Telerik’s [RadWindow](http://demos.telerik.com/silverlight/#Window/FirstLook): 
+As you know, in order to display Row Details outside [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx), you need to place a [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) control somewhere around [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx) and wire them up. Well, it does not need to be around, really. This article will show how to place it in Telerik’s [RadWindow](https://demos.telerik.com/silverlight/#Window/FirstLook): 
 
 #### __C#__
 

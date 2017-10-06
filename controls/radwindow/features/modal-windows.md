@@ -28,7 +28,7 @@ In the first case, the UI behind the RadWindow is still active. To open it as a 
 
 ## Showing RadWindow as a modal dialog
 
-To show the window as a modal dialog call the __ShowDialog()__ method. In this case the UI behind the RadWindow gets inactive and cannot be used until the window is closed.
+To show the window as a modal dialog call the __ShowDialog()__ method. In this case, the UI behind the RadWindow gets inactive and cannot be used until the window is closed.
 
 #### __[C#] Example 2: Showing a dialog__
 {{region cs-radwindow-features-modal-windows_2}}

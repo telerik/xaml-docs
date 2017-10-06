@@ -12,7 +12,7 @@ position: 0
 
 __RadGridView__ provides you with selection functionality, which allows the user to select one or more rows and/or cells from the data displayed by the control.
 
->tipThe selection mechanism can be controlled programmatically too. For more information take a look at the [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%}) article.
+>tip The selection mechanism can be controlled programmatically too. For more information take a look at the [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%}) article.
 
 This article is split in the following sections:
 
@@ -34,7 +34,7 @@ If enabled, users can also select a single cell or multiple cells as shown in **
 
 ![Cell Selection](images/RadGridView_BasicSelection_2.png)
 
-To set the selection unit, use the __SelectionUnit__ enumeration property of the RadGridView. Setting it to __FullRow__ will enable the selection of rows (default), while setting it to __Cell__ will enable the cell selection.
+To set the selection unit, use the __SelectionUnit__ enumeration property of the RadGridView. Setting it to __FullRow__ will enable the selection of rows (default) while setting it to __Cell__ will enable the cell selection.
 
 ## Selection Modes
 
@@ -46,7 +46,7 @@ The __RadGridView__ control provides three selection modes, which allow you to m
 
 * __Extended__: Items are added to the selection only by combining the mouse clicks with the __Ctrl__ or __Shift__ keys. 
 
->tipTo learn more about the multiple selection (the __Multiple__ and __Extended__ selection modes) take a look at the [Multiple Selection]({%slug gridview-multiple-selection%}) topic.
+>tip To learn more about the multiple selections (the __Multiple__ and __Extended__ selection modes) take a look at the [Multiple Selection]({%slug gridview-multiple-selection%}) topic.
 
 ## Selection Units
 

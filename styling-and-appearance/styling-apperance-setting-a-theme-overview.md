@@ -23,16 +23,16 @@ A theme contains all the styles and resources needed for the visualization of th
 There are two mechanisms that can be used to set a theme.
 
 * [Using NoXaml Dlls and Implicit Styles](#setting-a-theme-using-implicit-styles)
-	In this case use Xaml dlls.
+	In this case use NoXaml dlls.
 	
 * [Using StyleManager](#setting-a-theme-using-stylemanager)
-	In this case use NoXaml dlls.
+	In this case use Xaml dlls.
 
 ## Setting a Theme Using Implicit Styles
 
 Using implicit styles gives you full Blend support and smaller dlls size. To use this mechanism you will need to use the __NoXaml__ version of the UI for {{ site.framework_name }} dlls.
 
-To change the theme 	you will need to make few steps.
+To change the theme you will need to make few steps.
 
 1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/* folder.
 
@@ -72,8 +72,10 @@ To change the theme 	you will need to make few steps.
 	* Telerik.Windows.Controls.Data.dll
 
 	And then merge the dictionaries for the controls in the dlls as shown in __Example 1__.
+	
+	> Merging the .xaml files in App.xaml will apply the theme to all controls in the application. To apply the theme only for a specific view you can merge the dictionaries in its Resources. For example, in the `<UserControl.Resources></UserControl.Resources>`. To apply the theme only for a specific control you can merge the dictionaries in the Resources of the control's parent container.
 
-> Keep in mind that, creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+> Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
 	
 ### How to get the .xaml files required for merging
 
@@ -109,7 +111,7 @@ The default styles and resources for each theme are shipped also in the **/Teler
 >tip If you merge a ResourceDictionary for a dll that is missing from the project's References an error will occur.
 <!-- -->
 
->tip You should not set application theme using the StyleManager when using implicit styles. 
+>caution You should not set application theme using the StyleManager when using implicit styles. 
 
 >If you copy the XAML files in your project, please make sure that the .xaml files are with the proper **build action**. Generally it should be __Resource__, except for the __Telerik.Windows.Controls.RibbonView.xaml__ file where the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
 
@@ -145,9 +147,9 @@ To change the theme via the StyleManager you will need to make few steps.
 		InitializeComponent()
 	{{endregion}}
 
-Read more about this approach in the [StyleManager]() help section.
+Read more about this approach in the [StyleManager]({%slug %}) help section.
 
->tip We recommend you to avoid mixing the theme setting mechanisms. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
+>caution Avoid merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager). Alsom use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
 ## Does a Theme Affects All {{ site.framework_name }} Controls?
 

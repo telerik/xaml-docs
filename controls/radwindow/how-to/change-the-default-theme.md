@@ -17,7 +17,7 @@ You can easily change the theme of __RadWindow__ to one of the predefined themes
 
 ## Implicit Styles vs. StyleManager
 
-The Implicit Styles theming mechanism has a full design-time support. It is smaller size of dlls, because the NoXaml assemblies contains only the code + the styles for a single theme that comes from the theme dlls. Also, you have easier access to the resources and style sfor the controls via the StaticResources keyword.
+The Implicit Styles theming mechanism has a full design-time support. It is smaller size of dlls because the NoXaml assemblies contain only the code + the styles for a single theme that comes from the theme dlls. Also, you have easier access to the resources and styles for the controls via the StaticResources keyword.
 
 On the other hand the StyleManager is easier to apply. You need only to set the StyleManager.Theme property on the control you want to theme.
 
@@ -32,7 +32,7 @@ To change the theme using the implicit styles mechanism you will need to make fe
 	* Telerik.Windows.Controls.xaml
 	* Telerik.Windows.Controls.Navigation.xaml
 
-	>As RadWindow is placed in a different visual tree than the UserControl it is opened from, the xaml files should be merged in App.xaml, if you merge them locally in the UserControl Resources, RadWindow will not receive its Style.
+	>As RadWindow is placed in a different visual tree than the UserControl it is opened from, the XAML files should be merged in App.xaml, if you merge them locally in the UserControl Resources, RadWindow will not receive its Style.
 	
 	The following example shows how to merge the Windows8 theme resources and open a new window.
 	
@@ -99,7 +99,7 @@ If you use __RadWindow__ as a custom UserControl as shown in __Example 3__, you 
 	</Application>
 {{endregion}}
 
-The important part is to set set the __TargetType__ property to the type of the UserControl.
+The important part is to set the __TargetType__ property to the type of the UserControl.
 
 >tip Read more about this in the [How to use RadWindow as user control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) article.
 

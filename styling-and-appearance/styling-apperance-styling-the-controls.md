@@ -71,7 +71,7 @@ You will then need to set the control's **DefaultStyleKey**.
     End Class
 {{endregion}}
 
->You might also have a look at the [Setting a Theme on a Custom Control](http://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/styling-apperance-custom-control) article.
+>You might also have a look at the [Setting a Theme on a Custom Control](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/styling-apperance-custom-control) article.
 
 ## Control Styles Dependencies
 

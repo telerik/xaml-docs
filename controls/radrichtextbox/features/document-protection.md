@@ -29,7 +29,7 @@ This article describes how this feature can be used in terms of UI and API of __
 
 The editing restrictions can be used with a set of users or groups. When document protection is enforced, each user will be able to edit only the parts of the document he/she has rights for and the parts that are editable by the group he/she belongs to.
         
-The __PermissionInfo__ class allows you to create permission objects, which later can be assigned to instances of the __UserInfo__ class through the Group property. The permission type could be declared as Everyone, Group or Individual using the values of the {% if site.site_name == 'Silverlight' %}[PermissionType](http://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_PermissionType.htm){% endif %}{% if site.site_name == 'WPF' %}[PermissionType](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_PermissionType.htm){% endif %}  enumeration. 
+The __PermissionInfo__ class allows you to create permission objects, which later can be assigned to instances of the __UserInfo__ class through the Group property. The permission type could be declared as Everyone, Group or Individual using the values of the {% if site.site_name == 'Silverlight' %}[PermissionType](https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_PermissionType.htm){% endif %}{% if site.site_name == 'WPF' %}[PermissionType](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_PermissionType.htm){% endif %}  enumeration. 
 
 The users that will be able to edit the document and the groups they are in can be declared like this:
 

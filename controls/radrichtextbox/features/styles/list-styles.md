@@ -54,7 +54,7 @@ After defining your new style, it is added to the list gallery and can easily be
 The **ListStyle** class contains the structure corresponding to a list and exposes the following properties: 
 
 * **ID**: The Id of the list.
-* **Levels**: [NotifiableCollection](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_utils_notifiablecollection_1.htm) representing the **ListLevelStyle** objects related to the list. Every List can contain up to 9 levels.
+* **Levels**: [NotifiableCollection](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_utils_notifiablecollection_1.htm) representing the **ListLevelStyle** objects related to the list. Every List can contain up to 9 levels.
 * **StyleLink**: Specifies the numbering style associated with the list.
 * **IsDefault**: Indicates if the list is registered in the default lists styles and it is [implemented out of the box](#predefined-lists-in-radrichtextbox). Such list won’t be shown in the List Styles Gallery.
 
@@ -64,10 +64,10 @@ The **ListStyle** class contains the structure corresponding to a list and expos
 The class, which contains the structure corresponding to the list level is **ListLevelStyle**. The exposed properties specify the appearance and behavior of the associated numbered paragraphs:
 
 * **StartIndex**: Specifies the starting number of a **ListLevelStyle**.
-* **NumberingFormat**: Specifies the numbering format of a list level, described in [ListNumberingFormat](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListNumberingFormat.htm) enumeration. It can be a number, bullet, letter, etc. The default value is **ListNumberingFormat.Bullet**.
+* **NumberingFormat**: Specifies the numbering format of a list level, described in [ListNumberingFormat](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListNumberingFormat.htm) enumeration. It can be a number, bullet, letter, etc. The default value is **ListNumberingFormat.Bullet**.
 * **LevelText**: Specifies the number format string for a list level.
 * **StyleName**: Specifies the name of the [paragraph style](http://localhost/devtools/wpf/controls/radrichtextbox/features/styles/styles#paragraph-style) associated with the list level. **ListLevelStyle** can be associated only with paragraph style.
-* **SpanProperties**: Represent the associated [span properties](http://docs.telerik.com/devtools/wpf/api/html/Properties_T_Telerik_Windows_Documents_Model_Span.htm).
+* **SpanProperties**: Represent the associated [span properties](https://docs.telerik.com/devtools/wpf/api/html/Properties_T_Telerik_Windows_Documents_Model_Span.htm).
 * **FontFamily**: Specifies the font-family for the level text. Its short property from the **SpanProperties** of a list level.
 * **FontWeight**: Specifies the font-weight for the level text. Its short property from the **SpanProperties** of a list level.
 * **ForeColor**: Specifies the fore-color for the level text. Its short property from the **SpanProperties** of a list level.
@@ -77,17 +77,17 @@ The class, which contains the structure corresponding to the list level is **Lis
 
 ## Document List Overview
 
-[DocumentList](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DocumentList.htm) is the connection point between the paragraphs and a list style inside a document. Its Id is referenced in the [Paragraph](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm).ListId property. Additionally, the class provides functionality to easily associate a paragraph with list style.
+[DocumentList](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DocumentList.htm) is the connection point between the paragraphs and a list style inside a document. Its Id is referenced in the [Paragraph](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm).ListId property. Additionally, the class provides functionality to easily associate a paragraph with list style.
 
 * **ID**: The Id of the document list.
 * **StyleId**: Represents the Id of the **ListStyle**.
 * **Style**: Specifies the **ListStyle**.
-* **Document**: Reference to the owner [RadDocument](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocument.htm).
+* **Document**: Reference to the owner [RadDocument](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocument.htm).
 
 
 ## List Manager Overview
 
-[ListManager](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListManager.htm) is the structure holding all ListStyles and DocumentLists. Can be accessed through **RadDocument’s ListManager** property.
+[ListManager](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListManager.htm) is the structure holding all ListStyles and DocumentLists. Can be accessed through **RadDocument’s ListManager** property.
 
 
 ## Predefined Lists in RadRichTextBox
@@ -101,7 +101,7 @@ There are some predefined lists in RadRichTextBox:
 * Parenthesis
 * Numbered Hierarchical. 
 
-They can be accessed through the [DefaultListStyles](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DefaultListStyles.htm) static class. 
+They can be accessed through the [DefaultListStyles](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_DefaultListStyles.htm) static class. 
 
 
 ## Create List Programmatically 

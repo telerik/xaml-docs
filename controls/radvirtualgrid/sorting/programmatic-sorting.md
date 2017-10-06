@@ -78,7 +78,7 @@ It is raised when the sort descriptor is ready and the sorting operation can be 
         }
 {{endregion}}
 
-Note, that in the example above, the __SortDescriptorCollection__ is used for sorting the __underlying data source__. For this purpose, the __Sort__ extension method which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](http://docs.telerik.com/devtools/wpf/api/html/m_telerik_windows_data_queryableextensions_sort_2.htm). 
+Note, that in the example above, the __SortDescriptorCollection__ is used for sorting the __underlying data source__. For this purpose, the __Sort__ extension method which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/html/m_telerik_windows_data_queryableextensions_sort_2.htm). 
 
 ## See Also
 

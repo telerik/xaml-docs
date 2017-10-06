@@ -65,7 +65,7 @@ Below you could find a list of the available files:
 
 ### Documentation
 
-This section contains the offline documentation as well as the ApiReference (both as CHM and Help3) of Telerik UI for WPF and [DocumentProcessing](http://docs.telerik.com/devtools/document-processing/introduction) products.
+This section contains the offline documentation as well as the ApiReference (both as CHM and Help3) of Telerik UI for WPF and [DocumentProcessing](https://docs.telerik.com/devtools/document-processing/introduction) products.
 
 * Telerik_UI_for_WPF_Documentation_Help3_[version].zip
 * Telerik_UI_for_WPF_Documentation_[version].chm

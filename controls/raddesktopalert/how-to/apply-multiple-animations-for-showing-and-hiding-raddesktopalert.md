@@ -26,7 +26,7 @@ This is the list of the several build-in animations you could apply:
 
 You could either set a single animation to the __ShowAnimation__ and __HideAnimation__ properties or use the __AnimationGroup__ to group several animations from the list above and play them simultaneously.
 
->To learn more about the methods and properties exposed by the API for each of the other animations mentioned above take a look at [this topic](http://docs.telerik.com/devtools/wpf/api/html/N_Telerik_Windows_Controls_Animation.htm).
+>To learn more about the methods and properties exposed by the API for each of the other animations mentioned above take a look at [this topic](https://docs.telerik.com/devtools/wpf/api/html/N_Telerik_Windows_Controls_Animation.htm).
 
 ## Applying AnimationGroup
 

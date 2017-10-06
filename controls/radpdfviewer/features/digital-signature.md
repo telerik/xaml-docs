@@ -42,7 +42,7 @@ RadPdfViewer enables you to validate signature fields using standard Cryptograph
 
 * adbe.pkcs7.detached (PKCS #7 Detached)
 
-For all other formats you might need, there is a flexible API enabling you to implement them. To do so, you should inherit the [SignatureValidationHandlerBase](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationhandlerbase.htm) and register the new handler in the [SignatureValidationHandlersManager](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationhandlersmanager.htm). The base class exposes the ValidationOverride() method, so you can implement the logic for validating any type of signature. Once the validation is done in the body of this method, an instance of the [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationresult.htm) class will be returned containing data for the signature status.
+For all other formats you might need, there is a flexible API enabling you to implement them. To do so, you should inherit the [SignatureValidationHandlerBase](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationhandlerbase.htm) and register the new handler in the [SignatureValidationHandlersManager](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationhandlersmanager.htm). The base class exposes the ValidationOverride() method, so you can implement the logic for validating any type of signature. Once the validation is done in the body of this method, an instance of the [SignatureValidationResult](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_digitalsignatures_signaturevalidationresult.htm) class will be returned containing data for the signature status.
 
 
 ## Signature Field
@@ -132,9 +132,9 @@ The **Signature** class exposes two methods allowing you to validate a signature
 	*  **Chain**: Gets or sets the chain used to validate the certificate that signed the digital signature. It is of type [X509Chain](https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509chain(v=vs.110).aspx).
 	*  **ChainStatusFlags**: Gets or sets the chain status flags which describes the used signature certificate as invalid. It is of type [X509ChainStatusFlags](https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509chainstatusflags(v=vs.110).aspx).
 	
-	Validate() returns object of type [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm).
+	Validate() returns object of type [SignatureValidationResult](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm).
 
-* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm) object and the second one allows you to also pass **SignatureValidationProperties**.
+* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Model_DigitalSignatures_SignatureValidationResult.htm) object and the second one allows you to also pass **SignatureValidationProperties**.
 
 >The Validate() method throws an exception if there is a problem with the signature, while TryValidate() returns false in similar cases.
 

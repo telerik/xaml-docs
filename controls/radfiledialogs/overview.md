@@ -32,7 +32,7 @@ Here are a few of the controls' main features:
 
 >tip Get started with the file dialogs with the [Getting Started]({%slug radscheduleview-getting-started%}) help article that shows how to use them in basic scenarios.
 
-> Check out the controls' demos at [demos.telerik.com](http://demos.telerik.com/wpf/)
+> Check out the controls' demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
 
 ## See Also
 

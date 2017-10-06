@@ -32,4 +32,4 @@ All that's needed for the custom implementation is to implement the IFlyoutBehav
 * **OnPaneDeactivated**: Called when a RadPane is being deactivated.
 * **OnPaneMouseLeftButtonDown**: This method is called when a pane receives the **MouseLeftButtonDown** event (i.e. when the user clicks it).
 
->A sample implementation of a custom FlyoutBehavior for the RadDocking control can be found in the **Click Flyout Behavior With Animation** demo from the [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/).
+>A sample implementation of a custom FlyoutBehavior for the RadDocking control can be found in the **Click Flyout Behavior With Animation** demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).

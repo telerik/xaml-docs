@@ -28,7 +28,7 @@ __RadTimeSpanPicker__ is a component control that provides a full control over p
 
 * __Events__ - Support of routed events and some specific for the control events.
 
-You can check __RadTimeSpanPicker__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
+You can check __RadTimeSpanPicker__ demos at: [https://demos.telerik.com/wpf](https://demos.telerik.com/wpf).
 
 ## See Also
 

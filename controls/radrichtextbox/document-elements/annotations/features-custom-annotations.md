@@ -157,7 +157,7 @@ HyperlinkRangeEnd:
 
 
 
-For additional reading, you can refer to [this blog post](http://blogs.telerik.com/xamlteam/posts/12-03-06/structured-content-editing-with-richtextbox-for-silverlight-wpf.aspx) or check out the online demo at [http://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing](http://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
+For additional reading, you can refer to [this blog post](http://blogs.telerik.com/xamlteam/posts/12-03-06/structured-content-editing-with-richtextbox-for-silverlight-wpf.aspx) or check out the online demo at [https://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing](https://demos.telerik.com/silverlight/#RichTextBox/StructuredContentEditing).
         
 
 ## Serialization

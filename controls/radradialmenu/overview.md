@@ -42,7 +42,7 @@ __RadRadialMenu__ key features list:
 
 * __Fully Customizable Appearance__
 
-You can check __RadRadialMenu__ demos at: {% if site.site_name == 'Silverlight' %}[RadRadialMenu FirstLook](http://demos.telerik.com/silverlight/#RadialMenu/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf](http://demos.telerik.com/wpf). {% endif %}
+You can check __RadRadialMenu__ demos at: {% if site.site_name == 'Silverlight' %}[RadRadialMenu FirstLook](https://demos.telerik.com/silverlight/#RadialMenu/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf](https://demos.telerik.com/wpf). {% endif %}
 
 ## See Also
 

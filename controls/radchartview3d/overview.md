@@ -26,7 +26,7 @@ __RadChartView3D__ provides you with a charting component that enables three-dim
 
 * __Axes__: __RadChartView3D__ have few axis types which you can use to display different type of data - numeric and categorical. For more information, see the [Axes]({%slug radchartview3d-axes%}) help article.
 
->You can find examples that demonstrate RadChartView3D in our [demo application](http://demos.telerik.com/wpf/).
+>You can find examples that demonstrate RadChartView3D in our [demo application](https://demos.telerik.com/wpf/).
 
 ## See Also  
 

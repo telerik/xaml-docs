@@ -95,4 +95,4 @@ Here are some examples:
 {{endregion}}
 
 
-You can check the ScheduleView Configurator example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](http://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](http://demos.telerik.com/wpf/){% endif %} to see the tick length properties in action.
+You can check the ScheduleView Configurator example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](https://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](https://demos.telerik.com/wpf/){% endif %} to see the tick length properties in action.

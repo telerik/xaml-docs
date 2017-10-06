@@ -738,4 +738,4 @@ Finally, we need to change the __RadDiagram__ and __RadFluidContentControl__ def
 If you run the application now, you should be able to dynamically change the content of the sample __RadDiagramShape__ while zooming in or out of the __RadDiagram__.
 ![Rad Diagram Semantic Zoom Fluid Content](images/RadDiagram_SemanticZoom_FluidContent.png)
 
-A semantic zoom feature is implemented in the {% if site.site_name == 'Silverlight' %}[OrgChart demo](http://demos.telerik.com/silverlight/#Diagrams/OrgChart){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->OrgChart demo](http://demos.telerik.com/wpf/#Diagrams/OrgChart){% endif %} solution.
+A semantic zoom feature is implemented in the {% if site.site_name == 'Silverlight' %}[OrgChart demo](https://demos.telerik.com/silverlight/#Diagrams/OrgChart){% endif %}{% if site.site_name == 'WPF' %}[Diagrams->OrgChart demo](https://demos.telerik.com/wpf/#Diagrams/OrgChart){% endif %} solution.

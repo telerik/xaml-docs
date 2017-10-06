@@ -14,7 +14,7 @@ position: 8
 
 ## 
 
-The following article demonstrates how to control the overlapping of [Bubbles](http://demos.telerik.com/silverlight/#Chart/Gallery/Bubble) when they are positioned too close. By selecting one of the Bubbles the *Canvas.ZIndex* attached property will increase it's value (by default it is 0) which will cause the selected Bubble to be positioned over the others.
+The following article demonstrates how to control the overlapping of [Bubbles](https://demos.telerik.com/silverlight/#Chart/Gallery/Bubble) when they are positioned too close. By selecting one of the Bubbles the *Canvas.ZIndex* attached property will increase it's value (by default it is 0) which will cause the selected Bubble to be positioned over the others.
 
 ##### 1. Create a class of Business Objects that will be used to populate the Chart:
 

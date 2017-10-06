@@ -38,7 +38,7 @@ Telerik __RadDataPager__ provides the user with a navigation interface to page t
 
 
 {% if site.site_name == 'Silverlight' %}
-* __WCF RIA Services and DomainDataSource support:__ __RadDataPager__ can be easily integrated with the __DomainDataSource__ control and consume server data through __WCF RIA Services__.  Check out the online demo at [http://demos.telerik.com/silverlight/#DomainDataSource/FirstLook](http://demos.telerik.com/silverlight/#DomainDataSource/FirstLook).
+* __WCF RIA Services and DomainDataSource support:__ __RadDataPager__ can be easily integrated with the __DomainDataSource__ control and consume server data through __WCF RIA Services__.  Check out the online demo at [https://demos.telerik.com/silverlight/#DomainDataSource/FirstLook](https://demos.telerik.com/silverlight/#DomainDataSource/FirstLook).
 {% endif %}
 
 

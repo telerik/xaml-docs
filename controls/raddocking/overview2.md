@@ -50,10 +50,10 @@ __RadDocking__'s key features include:
 The complete list of features can be found [here]({%slug raddocking-key-features%}).
 
 {% if site.site_name == 'Silverlight' %}
-Check out the online demos available at: [http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook](http://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook)
+Check out the online demos available at: [https://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook](https://demos.telerik.com/silverlight/default.aspx#Docking/FirstLook)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-Check out the online demos available at: [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)
+Check out the online demos available at: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 {% endif %}
 
 ## See Also

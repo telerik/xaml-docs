@@ -85,7 +85,7 @@ With the help of those methods you can identify whether a certain command can be
 	Function CanAddNewExecute() As Boolean
 {{endregion}}
 
-A runnable demo that utilizes the code from this article can be found on {% if site.site_name == 'Silverlight' %}[this online demo](http://demos.telerik.com/silverlight/#DataForm/CustomCommandsProvider){% endif %}{% if site.site_name == 'WPF' %}[the DataForm's CustomCommandsProvider demo](http://demos.telerik.com/wpf/){% endif %}.
+A runnable demo that utilizes the code from this article can be found on {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#DataForm/CustomCommandsProvider){% endif %}{% if site.site_name == 'WPF' %}[the DataForm's CustomCommandsProvider demo](https://demos.telerik.com/wpf/){% endif %}.
 
 ## Designing a Custom DataFormCommandProvider
 

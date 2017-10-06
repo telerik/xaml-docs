@@ -164,7 +164,7 @@ The __UndoRedoService__ also exposes undo/redo methods:
 
 * __ExecuteCommand()__ - this method allows you to execute a custom command. It takes as an argument a __Telerik.Windows.Diagrams.Core.ICommand__ command and it also allwos you to pass a state parameter as its second argument.				
 
-You can use the __UndoRedoService UndoStack/RedoStack__ properties to create a DropDownMenu displaying the list of undid or redid actions in your application. You can find a solution showcasing this approach in our online {% if site.site_name == 'Silverlight' %}[demos](http://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos](http://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %}.			
+You can use the __UndoRedoService UndoStack/RedoStack__ properties to create a DropDownMenu displaying the list of undid or redid actions in your application. You can find a solution showcasing this approach in our online {% if site.site_name == 'Silverlight' %}[demos](https://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos](https://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %}.			
 
 ### Keyboard Support
 

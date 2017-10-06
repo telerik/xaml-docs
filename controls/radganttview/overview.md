@@ -35,4 +35,4 @@ __Key features__ list includes:
 
 * __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} GanttView shares a single codebase with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your GanttView logic if you have parallel Silverlight/WPF development. 
 
-You can check __RadGanttView__ demos at {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/#GanttView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+You can check __RadGanttView__ demos at {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/](https://demos.telerik.com/silverlight/#GanttView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}

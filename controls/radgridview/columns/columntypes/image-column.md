@@ -38,4 +38,4 @@ Here is a list of the most important properties.
 
 ![The resulting RadGridView](images/RadGridView_ColumnTypes_6.png)
 
->You can have a look at the [Image Column Filtering](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) demo from the [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/) for a good example of how to override GridViewImageColumn's distinct values to be images and not a string path.
+>You can have a look at the [Image Column Filtering](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) for a good example of how to override GridViewImageColumn's distinct values to be images and not a string path.

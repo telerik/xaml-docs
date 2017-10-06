@@ -47,7 +47,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 
 * __Selection__: __RadTreeListView__ provides a familiar selection API that will make developers feel at home. The control supports single and multiple record selection that can be manipulated both with the mouse and the keyboard. Read more about this in the [Selection]({%slug radtreelistview-features-selection%}) article.
 
-Check out the control's demos at:{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#TreeListView/FirstLook](http://demos.telerik.com/silverlight/#TreeListView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+Check out the control's demos at:{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#TreeListView/FirstLook](https://demos.telerik.com/silverlight/#TreeListView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
 
 >tipYou can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.       
 

@@ -10,7 +10,7 @@ position: 1
 
 # Create Custom Filter Editors
 
->You can find a running demo {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
+>You can find a running demo {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
 
 If you want to specify a custom filter editor you can do it by using the __EditorTemplateSelector__ property of the control. Once the editor (custom or default) is created, you can add the final touch to it by attaching to the __EditorCreated__ event.
 

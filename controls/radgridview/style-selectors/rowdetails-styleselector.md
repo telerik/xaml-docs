@@ -133,7 +133,7 @@ And here is the final result:
 
 ![The row details styled using the RowDetailsStyleSelector property](images/gridview-rowdetails-styleselector.png)
 		 
->tipAnother approach for achieving the same result is demonstrated in the {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](http://demos.telerik.com/silverlight/#GridView/Selectors/StyleSelectors/RowDetailsStyleSelector){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](http://demos.telerik.com/wpf/) under **StyleSelectors -> Row Details**{% endif %}.
+>tipAnother approach for achieving the same result is demonstrated in the {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/Selectors/StyleSelectors/RowDetailsStyleSelector){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](https://demos.telerik.com/wpf/) under **StyleSelectors -> Row Details**{% endif %}.
 
 ## See Also
 

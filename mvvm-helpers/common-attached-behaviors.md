@@ -84,7 +84,7 @@ Applying these steps will result in a confirmation dialog through which you can 
 
 Another implementation can be found on the following blog post - [Extending the Functionalities of RadControls with Attached Properties.](http://www.telerik.com/blogs/extending-the-functionality-of-radcontrols-with-attached-properties)
 
-There is a demo available in our **SDK repository located at GitHub** - [ListBox SelectedItems](https://github.com/telerik/xaml-sdk/tree/master/ListBox/SelectedItems). The example is also available in the [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/) labeled **"Create Attached Property for SelectedItems"**.
+There is a demo available in our **SDK repository located at GitHub** - [ListBox SelectedItems](https://github.com/telerik/xaml-sdk/tree/master/ListBox/SelectedItems). The example is also available in the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) labeled **"Create Attached Property for SelectedItems"**.
 
 ## See Also
 

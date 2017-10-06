@@ -55,13 +55,13 @@ To support new data binding scenarios, Telerik __RadChart__ provides automated d
 
 * __DateTime Support__ - no worries binding __DateTimes__ in __RadChart__. [Read more]({%slug radchart-features-datetime-support%})
 
-* __MVVM Support__ - Telerik __RadChart__ can be integrated with the Model-View-ViewModel (MVVM) pattern to get better control over chart customization. The control exposes fully separates functionality from appearance, thus providing you the power to completely restyle it without changing a single line of code. [See an example](http://demos.telerik.com/silverlight/default.aspx#Chart/MVVM)
+* __MVVM Support__ - Telerik __RadChart__ can be integrated with the Model-View-ViewModel (MVVM) pattern to get better control over chart customization. The control exposes fully separates functionality from appearance, thus providing you the power to completely restyle it without changing a single line of code. [See an example](https://demos.telerik.com/silverlight/default.aspx#Chart/MVVM)
 
 * __Flexible API__ - Telerik __RadChart__ provides a flexible API that grants full control over various programmatic operations. Show/Hide charts labels, tooltips, axes, gridlines and strip lines. Change the chart titles and the data formatting for all chart elements is made easy. {% if site.site_name == 'Silverlight' %}
 
-Check out the online demo at:[http://demos.telerik.com/silverlight/#Chart/FirstLook](http://demos.telerik.com/silverlight/#Chart/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
+Check out the online demo at:[https://demos.telerik.com/silverlight/#Chart/FirstLook](https://demos.telerik.com/silverlight/#Chart/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
 
-Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+Check out the online demo at:[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 

@@ -45,7 +45,7 @@ This is a list with short descriptions of the top-of-the-line features of the Te
 
 >tip Get started with the control with its [Getting Started]({%slug raddatetimepicke-getting-started%}) help article that shows how to use it in a basic scenario.
 
->Check out the RadDateTimePicker demos at: {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#DateTimePicker/FirstLook](http://demos.telerik.com/silverlight/#DateTimePicker/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+>Check out the RadDateTimePicker demos at: {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#DateTimePicker/FirstLook](https://demos.telerik.com/silverlight/#DateTimePicker/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 

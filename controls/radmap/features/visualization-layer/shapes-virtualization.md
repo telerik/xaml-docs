@@ -54,7 +54,7 @@ Also the __MapShapeDataVirtualizationSource__ contains the following events:
 
 ## Map Shapes Virtualization Example
 
-The following example demonstrates how to use the __UI Virtualization__ feature for displaying the counties of USA. The example will display the polygons which are contained in the “County” shape-file. You can find it in our [Async Shape File](http://demos.telerik.com/silverlight/#Map/AsyncReadWithVirtualization) demo  application. The file contains over 6000 polygons which contain about 800000 points.        
+The following example demonstrates how to use the __UI Virtualization__ feature for displaying the counties of USA. The example will display the polygons which are contained in the “County” shape-file. You can find it in our [Async Shape File](https://demos.telerik.com/silverlight/#Map/AsyncReadWithVirtualization) demo  application. The file contains over 6000 polygons which contain about 800000 points.        
 
 When you will try to load this file using the shape-file reader directly like the code below then the performance of zooming and panning will be very low.
 
@@ -155,7 +155,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	End Class
 {{endregion}}
 
-If your application cannot limit zoom level and it requires that some data still be visible on the low zoom levels (1 – 7) then you can use approach which show different sets of shapes for different zoom levels. For example, you can show the map of USA states for lower zoom levels (1-7). In this case you should design your own custom virtualization source class which will show data depend on the zoom level. The sample code below uses the “usa_states” shape-file which is also used in the [United States](http://demos.telerik.com/silverlight/#Map/Shapefile/UnitedStates) demo.
+If your application cannot limit zoom level and it requires that some data still be visible on the low zoom levels (1 – 7) then you can use approach which show different sets of shapes for different zoom levels. For example, you can show the map of USA states for lower zoom levels (1-7). In this case you should design your own custom virtualization source class which will show data depend on the zoom level. The sample code below uses the “usa_states” shape-file which is also used in the [United States](https://demos.telerik.com/silverlight/#Map/Shapefile/UnitedStates) demo.
         
 #### __C#__
 {{region radmap-visualization-layer-shapes-virtualization_3}}

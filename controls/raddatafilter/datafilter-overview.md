@@ -34,7 +34,7 @@ __RadDataFilter__ key features include:
 * __Seamless Integration__ - __RadDataFilter__ can communicate with any kind of collections (even a plain IEnumerable). The control can then be bound to any ItemsControls (GridView, TreeListView, ComboBox, TreeView etc.) to the filtered endpoint called __FilteredSource__. This allows extreme flexibility and loose coupling.
             
 
-Do not miss the online demos at:{% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#DataFilter/FirstLook](http://demos.telerik.com/silverlight/#DataFilter/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/?DataFilter/FirstLook](http://demos.telerik.com/wpf/?DataFilter/FirstLook){% endif %}
+Do not miss the online demos at:{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#DataFilter/FirstLook](https://demos.telerik.com/silverlight/#DataFilter/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/?DataFilter/FirstLook](https://demos.telerik.com/wpf/?DataFilter/FirstLook){% endif %}
 
 ## See Also
 

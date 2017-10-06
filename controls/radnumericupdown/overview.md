@@ -30,7 +30,7 @@ __RadNumericUpDown__ provides a rich user experience by allowing users to define
 
 >tip Get started with the control with its [Getting Started]({%slug radnumericupdown-drag-and-drop%}) help article that shows how to use it in a basic scenario.
 
-> Check out the demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#NumericUpDown){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+> Check out the demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#NumericUpDown){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also  
  * [Visual Structure]({%slug radnumericupdown-structure%})

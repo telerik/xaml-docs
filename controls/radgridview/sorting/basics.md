@@ -12,7 +12,7 @@ position: 0
 
 __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. 
 
-This article is divided in the following topics:
+This article is divided into the following topics:
 
 * [Overview](#overview)
 * [SortMemberPath](#sortmemberpath)
@@ -30,7 +30,7 @@ The data gets sorted as the user clicks the header of a column. When sorted you 
 
 ![RadGridView with applied sorting](images/RadGridView_BasicSorting_1.png)
 
-By clicking on the header a second time, the sort direction is changed to descending and on the next click the sorting will be cleared. The header goes into its normal state and the arrow disappears.
+By clicking on the header a second time, the sort direction is changed to descending and on the next click, the sorting will be cleared. The header goes into its normal state and the arrow disappears.
         
 >Sorting is a data operation and it is performed by building and executing a LINQ query over the source collection.
 >
@@ -107,7 +107,7 @@ The __GridViewSortingEventArgs__ of the __Sorting__ event provide you with the f
 
 The __Sorted__ event allows you to get the instance of the column by which the data is sorted via its __GridViewSortedEventArgs__.
 
-In the event handler you can place some code that has to be executed when the data in the __RadGridView__ gets sorted. For example, you can change the [TextAlignment]({%slug gridview-columns-customizing-columns%}#text-properties) of the sorted column:
+In the event handler, you can place some code that has to be executed when the data in the __RadGridView__ gets sorted. For example, you can change the [TextAlignment]({%slug gridview-columns-customizing-columns%}#text-properties) of the sorted column:
 
 #### __[C#] Example 5: Change the TextAlignment of the sorted column__
 
@@ -143,7 +143,7 @@ In the event handler you can place some code that has to be executed when the da
 
 ## Style the Sorted Header
 
-By [editing the template]({%slug styling-apperance-editing-control-templates%}) of the header cell you are able to change its overall look and feeling. Making use of the **VisualStateManager** also allows you to adjust the visual appearance in the different sorting states - descending, ascending and none. You can also change the visual element that represents the direction of the sorting. For more information, have a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) article.
+By [editing the template]({%slug styling-apperance-editing-control-templates%}) of the header cell, you are able to change its overall look and feel. Making use of the **VisualStateManager** also allows you to adjust the visual appearance in the different sorting states - descending, ascending and none. You can also change the visual element that represents the direction of the sorting. For more information, have a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) article.
 
 ## See Also
 

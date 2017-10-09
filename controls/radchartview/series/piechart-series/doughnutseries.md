@@ -10,15 +10,19 @@ position: 1
 
 # DoughtnutSeries
 
-This series is visualized on the screen as separate slices representing each of the __DataPoints__. The only difference from the PieSeries is that the separate slices of this series start with an offset of the center of the RadPieChart control.
-      
+This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that the separate slices of this series start with an offset of the center of the RadPieChart control.
+
+* [Declaratively Defined Series](#declaratively-defined-series)
+* [Properties](#properties)
+* [Data Binding](#data-binding)
+* [Styling the Series](#styling-the-series)      
 
 ## Declaratively defined series
 
 You can use the following definition to display a simple DoughnutSeries
 
-#### __XAML__
-{{region radchartview-series-doughnutseries-0}}
+#### __[XAML] Example 1: Declaring an DoughtnutSeries in XAML__
+{{region  radchartview-series-doughnutseries_0}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:DoughnutSeries>
@@ -34,8 +38,51 @@ You can use the following definition to display a simple DoughnutSeries
 	</telerik:RadPieChart>
 {{endregion}}
 
+#### __Figure 1: DoughtnutSeries visual appearance__	
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
 
+## Properties
+
+* __ValueBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the value of the data point.
+* __AngleRange__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
+* __RadiusFactor__: A property of type __double__ that gets or sets the radius factor used to calculate the radius of the visual series.
+* __SelectedPointOffset__: A property of type __double__ that gets or sets the offset applied to a __Telerik.Charting.PieDataPoint__ which is currently selected. This value is applied only if the point's OffsetFromCenter property is 0.
+* __InnerRadiusFactor__: A property of type __double__ that gets or sets the inner radius factor (that is the space that remains empty) of the series. The value is in logical units, in the range of [0, 1].
+* __DefaultSliceStyle__: A property type of Style that gets the style applied to every segment in the series.
+
+## Data Binding
+
+You can use the __ValueBinding__ property of the PieSeries to bind the DataPoints’ properties to the properties from your view models.
+
+#### __[C#] Example 2: Defining the view model__
+
+{{region radchartview-series-doughnutseries_1}}
+	public class PlotInfo
+    {
+        public double Value { get; set; }
+    }
+
+	//.......
+	this.DataContext = new ObservableCollection<PlotInfo>
+	{
+		new PlotInfo() { Value = 43.46},
+		//....
+	};
+{{endregion}}		
+
+#### __[XAML] Example 3: Specify a PieSeries in XAML__
+{{region radchartview-series-doughnutseries_2}}
+	<telerik:DoughtnutSeries ItemsSource="{Binding}" ValueBinding="PieValue" />
+{{endregion}}	
+
+>See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
+
+## Styling the Series
+
+You can see how to style area series using different properties in the [DoughtnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
+
+Additionally, you can use the Palette property of the chart to change the colors of the DoughtnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
+
 ## See Also
- * [Customizing Doughnut Series]({%slug radchartview-styles-and-templates-customizing-piechart-series%}#customizing-doughnut-series)
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})
+ * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

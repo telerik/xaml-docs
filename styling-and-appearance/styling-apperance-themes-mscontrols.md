@@ -38,7 +38,9 @@ Below is the full control list of native {% if site.site_name == 'Silverlight' %
 
 * System.Windows.Controls.Primitives.StatusBar
 
-* System.Windows.Controls.Separator{% endif %}
+* System.Windows.Controls.Separator
+
+* System.Windows.Controls.GridSplitter{% endif %}
 
 For all of those controls you may __specify a Theme for them__ as you may for any Telerik control.
 		

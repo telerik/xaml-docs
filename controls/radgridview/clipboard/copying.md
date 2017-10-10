@@ -26,7 +26,8 @@ Here's a list of all the available values:
 * **Cells:** Copy grid cells.
 * **Header:** Copy grid header.
 * **Footer:** Copy grid footer.
-* **SkipEmptyRows:** Will not copy rows with values that are all null or empty. (introduced with Q1 2016)
+* **SkipEmptyRows:** Will not copy rows with values that are all null or empty. (introduced with __Q1 2016__)
+* **SkipEmptyColumns** Will not copy columns with values that are null or empty.(introduced as of __R3 2017 SP1__)
 * **All:** Copy cells, header and footer.
 
 >The default value is **Cells**.
@@ -49,6 +50,8 @@ Here is an example on how to copy column headers as well as selected data:
 ## Events
 
 There are two events that allow you to control the copying operation: __Copying__ and __CopyingCellClipboardContent.__ The first allows you to cancel a copying operation, whereas the second event allows you to cancel copying for a single cell or override the value to be copied to the Clipboard. The latter is especially useful if you have columns with custom cell templates and you would like to be able to place their values in the clipboard. Here is an example of how you can accomplish that:
+
+> With its initial implementation, the __CopyingCellClipboardContent__ event will be raised only for the __cells__ of __RadGridView__. As of __R3 2017 SP1__ it will be raised for the __Header__ and __Footer cells__ as well.
 
 #### __[C#] Example 2: The CopyingCellClipboardContent Event__
 

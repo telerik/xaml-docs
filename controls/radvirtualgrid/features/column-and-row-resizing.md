@@ -31,6 +31,19 @@ The ability to resize the rows of __RadVirtualGrid__ can be manipulated through 
 
 __RadVirtualGrid__ supports setting the width of a given column to be as large as biggest cell's content present in the viewport. This can be done through the __FitColumnWidthToContent__ method. It accepts the index of the column that needs to be resized.
 
+>important Invoking the __FitColumnWidthToContent__ also depends on the __MainPanel__ of the control to be loaded. This is needed so the control can actually perform the measuring calculations. Thus, calling the method right after the __InitializeComponent__ method of the application is __not recommended__.
+
+A possible way to ensure that the visual elements of __RadVirtualGrid__ are already generated, the __Loaded__ event of the control can be utilized. 
+
+#### __Example 1: Invoking the FitColumnWidthToContent method__
+
+{{region radvirtualgrid-features-column-and-row-resizing_0}}
+	private void VirtualGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.VirtualGrid.FitColumnWidthToContent(1);
+        }
+{{endregion}}
+
 ## See Also
 
 * [Alternation]({%slug virtualgrid-alternation%})

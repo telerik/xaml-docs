@@ -47,7 +47,7 @@ You can use the following definition to display a simple PieSeries:
 * __AngleRange__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
 * __RadiusFactor__: A property of type __double__ that gets or sets the radius factor used to calculate the radius of the visual series.
 * __SelectedPointOffset__: A property of type __double__ that gets or sets the offset applied to a __Telerik.Charting.PieDataPoint__ which is currently selected. This value is applied only if the point's OffsetFromCenter property is 0.
-* __DefaultSliceStyle__: A property type of Style that gets the style applied to every segment in the series.
+* __DefaultSliceStyle__: A property of type __Style__ that gets the style applied to every segment in the series.
 
 ## Data Binding
 

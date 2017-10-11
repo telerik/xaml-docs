@@ -48,11 +48,11 @@ You can use the following definition to display a simple DoughnutSeries
 * __RadiusFactor__: A property of type __double__ that gets or sets the radius factor used to calculate the radius of the visual series.
 * __SelectedPointOffset__: A property of type __double__ that gets or sets the offset applied to a __Telerik.Charting.PieDataPoint__ which is currently selected. This value is applied only if the point's OffsetFromCenter property is 0.
 * __InnerRadiusFactor__: A property of type __double__ that gets or sets the inner radius factor (that is the space that remains empty) of the series. The value is in logical units, in the range of [0, 1].
-* __DefaultSliceStyle__: A property type of Style that gets the style applied to every segment in the series.
+* __DefaultSliceStyle__: A property of type __Style__ that gets the style applied to every segment in the series.
 
 ## Data Binding
 
-You can use the __ValueBinding__ property of the PieSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __ValueBinding__ property of the DoughtnutSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __[C#] Example 2: Defining the view model__
 
@@ -70,9 +70,9 @@ You can use the __ValueBinding__ property of the PieSeries to bind the DataPoint
 	};
 {{endregion}}		
 
-#### __[XAML] Example 3: Specify a PieSeries in XAML__
+#### __[XAML] Example 3: Specify a DoughtnutSeries in XAML__
 {{region radchartview-series-doughnutseries_2}}
-	<telerik:DoughtnutSeries ItemsSource="{Binding}" ValueBinding="PieValue" />
+	<telerik:DoughtnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
 {{endregion}}	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.

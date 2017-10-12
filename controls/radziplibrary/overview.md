@@ -14,6 +14,7 @@ position: 0
 
 Have you ever wondered how to increase the responsiveness of your applications by compressing the data that you send over the internet? With the new __Zip Library__ you can compress data like images, docx or pdf files and send them over the wire. Thus, you will achieve fast and secure transactions. 
 
+![Zip Library Overview image](images/ZipLibrary_Overview_01.png)
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __Zip Library__ control:
         

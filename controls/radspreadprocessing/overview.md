@@ -14,7 +14,7 @@ position: 0
 
 This library enables you to work with spreadsheet documents – create ones from scratch, modify existing documents or convert between the most common spreadsheet formats. You can save the generated workbook to a local file, stream, or stream it to the client browser.
 
-![Rad Spread Processing Overview 01](images/RadSpreadProcessing_Overview_01.png)
+![Rad Spread Processing Overview image](images/RadSpreadProcessing_Overview_01.png)
 
 **RadSpreadProcessing** comes with support for:
 

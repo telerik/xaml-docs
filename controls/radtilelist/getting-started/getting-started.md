@@ -121,5 +121,5 @@ You can set the theme of __RadTileList__ to one of the predefined themes for the
 Read the 	[Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})and[Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) articles for more information.
         
 
-To see the different themes of __RadTileList__ please check our  [Theming](http://demos.telerik.com/silverlight/#TileList/Theming) online example. 
+To see the different themes of __RadTileList__ please check our  [Theming](https://demos.telerik.com/silverlight/#TileList/Theming) online example. 
         

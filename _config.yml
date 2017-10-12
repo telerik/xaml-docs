@@ -1,5 +1,5 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/devtools/wpf"
+url: "https://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,

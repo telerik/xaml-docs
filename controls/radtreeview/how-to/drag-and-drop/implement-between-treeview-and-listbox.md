@@ -247,7 +247,7 @@ Next we'll need to populate the controls with data but as the __ViewModels__ def
 
 Now we're getting to the actual DragDrop implementation. And we'll start with configuring the __ListBox__ as a participant in drag and drop operations.
 
->Please note that this article is based on the {% if site.site_name == 'Silverlight' %}[TreeToGrid online demo](http://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %}[TreeToGrid demo](http://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid), which you can find by navigating to the DragAndDrop examples ->Tree To Grid Drag{% endif %}.		  
+>Please note that this article is based on the {% if site.site_name == 'Silverlight' %}[TreeToGrid online demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %}[TreeToGrid demo](https://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid), which you can find by navigating to the DragAndDrop examples ->Tree To Grid Drag{% endif %}.		  
 
 In this tutorial we'll use a custom behavior to define the __ListBox__ DragDrop behavior. Essentially the behavior will attach handlers for the following events:		
 

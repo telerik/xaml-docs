@@ -16,7 +16,7 @@ The __Path Tool__ and __Pencil Tool__ of the __RadDiagram__ enable you to create
 
 * __Pencil Tool__ - this tool allows you to perform free hand drawing thus creating various custom shapes. It is not active by default.
 
-You can examine the full power of this feature in the {% if site.site_name == 'Silverlight' %}[Diagrams Drawing demo](http://demos.telerik.com/silverlight/#Diagrams/Drawing){% endif %}{% if site.site_name == 'WPF' %}[Diagrams Drawing demo](http://demos.telerik.com/wpf/#Diagrams/Drawing){% endif %}.
+You can examine the full power of this feature in the {% if site.site_name == 'Silverlight' %}[Diagrams Drawing demo](https://demos.telerik.com/silverlight/#Diagrams/Drawing){% endif %}{% if site.site_name == 'WPF' %}[Diagrams Drawing demo](https://demos.telerik.com/wpf/#Diagrams/Drawing){% endif %}.
 
 ![raddiagram-features-drawing](images/raddiagram-features-drawing.png)
 

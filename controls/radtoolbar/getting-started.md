@@ -81,4 +81,4 @@ Adding static items in XAML is good for scenarios when you know in advance the c
 
  * [Item Alignment]({%slug radtoolbar-features-itemalignment%})
 
- * [RadToolBar API Reference](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_radtoolbar.htm)
+ * [RadToolBar API Reference](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_radtoolbar.htm)

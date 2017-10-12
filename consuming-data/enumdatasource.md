@@ -107,7 +107,7 @@ A typical use case would be to bind the **DisplayMemberPath** of the combo to th
 									SelectedValueMemberPath="Value" />
 {{endregion}}
 
->A practical example of how to use the EnumDataSource utility can be found in the respective demo of the {% if site.site_name == 'WPF'%}[WPF Controls Samples](http://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](http://demos.telerik.com/silverlight/#GridView/EnumDataSource){% endif %}.
+>A practical example of how to use the EnumDataSource utility can be found in the respective demo of the {% if site.site_name == 'WPF'%}[WPF Controls Samples](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/EnumDataSource){% endif %}.
 
 ## See Also
 

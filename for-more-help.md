@@ -25,7 +25,7 @@ You can contact Telerik support with a technical question using your account by 
 You can check the following resources that demonstrate possible use cases and configuration scenarios with __Telerik UI for {{ site.framework_name }}__.
 
 * [GitHub SDK repository](https://github.com/telerik/xaml-sdk): A repository with developer focused examples for most Telerik {{ site.framework_name }} controls. You can also use the [SDK Sample Browser]({%slug sdk-samples-browser%}) to easily explore and run the examples.
-* {% if site.site_name == 'Silverlight' %}[Product Demos](http://demos.telerik.com/silverlight/?windowless=false): An application that showcases the Telerik Silverlight products in different user scenarios.{% endif %}{% if site.site_name == 'WPF' %}[Product Demos](http://demos.telerik.com/wpf/): An application that showcases the Telerik WPF products in different user scenarios.{% endif %} 
+* {% if site.site_name == 'Silverlight' %}[Product Demos](https://demos.telerik.com/silverlight/?windowless=false): An application that showcases the Telerik Silverlight products in different user scenarios.{% endif %}{% if site.site_name == 'WPF' %}[Product Demos](https://demos.telerik.com/wpf/): An application that showcases the Telerik WPF products in different user scenarios.{% endif %} 
 
 ## Blogs
 

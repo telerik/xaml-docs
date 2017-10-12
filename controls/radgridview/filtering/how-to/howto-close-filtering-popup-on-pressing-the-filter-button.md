@@ -12,7 +12,7 @@ position: 22
 
 In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of FilteringControl.
 
->important A demo on how to achieve the desired behavior is available in our [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/). The demo is labeled **"Close Filtering Popup"** and can also be found on GitHub - [CloseFilteringPopupFilterButton](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
+>important A demo on how to achieve the desired behavior is available in our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/). The demo is labeled **"Close Filtering Popup"** and can also be found on GitHub - [CloseFilteringPopupFilterButton](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
 
 #### __[C#] Example 1: Overriding OnApplyFilter method__
 {{region cs-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_1}}

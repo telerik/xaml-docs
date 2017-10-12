@@ -66,7 +66,7 @@ The following properties are used in the __ItemsRequest()__ method from the __Dy
 
 In this method you have to implement your logic for getting the desired items. The items can be represented by static and dynamic data as well. Here is an example of how to implement simple static functionality in the __ItemsRequest()__ method.        
 
->If you want to deliver your data via a WebService you can follow our [demo](http://demos.telerik.com/silverlight/#Map/DynamicLayer) with full source code.          
+>If you want to deliver your data via a WebService you can follow our [demo](https://demos.telerik.com/silverlight/#Map/DynamicLayer) with full source code.          
 
 #### __C#__
 {{region radmap-features-dynamic-layer_1}}

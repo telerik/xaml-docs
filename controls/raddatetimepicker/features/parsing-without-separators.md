@@ -65,10 +65,10 @@ Input	|	Output
 “144” or “344”	|	Parses it as an hour and minutes until reaches the set Time format.<br/>![datetimepicker parsing 7](images/datetimepicker_parsing7.png)
 			  
 {% if site.site_name == 'WPF' %}
-Check out the RadDateTimePicker Configurator online demo at [http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/) to see __AllowParsingWithoutSeparator__ in action.
+Check out the RadDateTimePicker Configurator online demo at [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/) to see __AllowParsingWithoutSeparator__ in action.
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
-Check out the [RadDateTimePicker Configurator online demo ](http://demos.telerik.com/silverlight/#DateTimePicker/Configurator) to see __AllowParsingWithoutSeparator__ in action.
+Check out the [RadDateTimePicker Configurator online demo ](https://demos.telerik.com/silverlight/#DateTimePicker/Configurator) to see __AllowParsingWithoutSeparator__ in action.
 {% endif %}
 
 ## See Also

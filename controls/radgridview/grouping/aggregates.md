@@ -38,7 +38,7 @@ The available functions are:
 
 * __SumFunction__ – returns the Sum of all values for the group.
 
->tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates ).
+>tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates ).
 
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 
@@ -192,7 +192,7 @@ Setting the "ShowHeaderAggregates" to false will hide the default header aggrega
 #### __Figure 3: RadGridView with ShowHeaderAggregates set to False__
 ![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_4.png)
 
-For more details you can check our [Aggregates](http://demos.telerik.com/silverlight/#GridView/Aggregates) demo.
+For more details you can check our [Aggregates](https://demos.telerik.com/silverlight/#GridView/Aggregates) demo.
 
 >tipYou can download a __runnable project__ on how to sort a group by aggregate from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/SortGroupByAggregate__  .
 

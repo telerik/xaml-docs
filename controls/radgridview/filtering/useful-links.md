@@ -15,15 +15,15 @@ position: 8
 
 ## Online Demos {% if site.site_name == 'Silverlight' %}
 
-* [Custom Filter Controls](http://demos.telerik.com/silverlight/#GridView/CustomFilterControls)
+* [Custom Filter Controls](https://demos.telerik.com/silverlight/#GridView/CustomFilterControls)
 
-* [Search as you type](http://demos.telerik.com/silverlight/#GridView/Search)
+* [Search as you type](https://demos.telerik.com/silverlight/#GridView/Search)
 
-* [Set Distinct Values](http://demos.telerik.com/silverlight/#DomainDataSource/DistinctValues){% endif %}{% if site.site_name == 'WPF' %}
+* [Set Distinct Values](https://demos.telerik.com/silverlight/#DomainDataSource/DistinctValues){% endif %}{% if site.site_name == 'WPF' %}
 
-* [Custom Filter Controls](http://demos.telerik.com/wpf/#GridView/CustomFilterControls)
+* [Custom Filter Controls](https://demos.telerik.com/wpf/#GridView/CustomFilterControls)
 
-* [Search as you type](http://demos.telerik.com/wpf/#GridView/Search){% endif %}
+* [Search as you type](https://demos.telerik.com/wpf/#GridView/Search){% endif %}
 
 ## How-to Articles
 

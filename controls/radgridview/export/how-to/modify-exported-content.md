@@ -100,7 +100,7 @@ Both methods can be overloaded and take __GridViewDocumentExportOptions__ as par
 * ShowColumnHeaders
 * ExportDefaultStyles  
 
->important __ExportToRadFixedDocument__ method utilizes [PdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and __ExportToWorkbook__ method utilizes [SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library. You can check their documentation for more information on how to modify them.
+>important __ExportToRadFixedDocument__ method utilizes [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and __ExportToWorkbook__ method utilizes [SpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library. You can check their documentation for more information on how to modify them.
 
 ## See Also
  * [RadGridView Overview]({%slug gridview-overview2%})

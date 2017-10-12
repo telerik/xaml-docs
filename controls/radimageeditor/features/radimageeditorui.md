@@ -102,9 +102,9 @@ The image to be used will be chosen depending on the Theme applied to the editor
 	</telerik:ImageToolItem>
 {{endregion}}
 
->You can see how the tools and commands can be declared in code-behind and modified on the fly in the CustomizingDefaultUI demo at [http://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](http://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI).
+>You can see how the tools and commands can be declared in code-behind and modified on the fly in the CustomizingDefaultUI demo at [https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI).
 
->tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo CustomUI, which can be viewed here: [http://demos.telerik.com/silverlight/#ImageEditor/CustomUI](http://demos.telerik.com/silverlight/#ImageEditor/CustomUI).
+>tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo CustomUI, which can be viewed here: [https://demos.telerik.com/silverlight/#ImageEditor/CustomUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomUI).
 
 ## See Also
 

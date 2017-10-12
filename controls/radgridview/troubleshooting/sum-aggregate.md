@@ -32,7 +32,7 @@ You can sum only __Numeric__ types.
         
 __SOLUTION__
 
-You can create a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} instead and return the Sum of the values. 
+You can create a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](https://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} instead and return the Sum of the values. 
 
 You can also specify some custom aggregate expressions. Then add the defined function to the AggregateFunctions collection of GridViewDataColumn as illustrated in this [help topic]({%slug gridview-columns-aggregate-functions%}).
         

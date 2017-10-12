@@ -24,5 +24,5 @@ Most browsers have a maximum uniform resource locator (URL) length of 2,083 char
 
 
 2. In paged __RadGridView__, ___the distinct values listbox shows the values from the current page only___.
-The current version __WCF RIA Services__ do not support projections on the server, i.e. you can't make a ___Select(person=>person.Name).Distinct()___ on the server out-of-the-box. But this can easily be done with an additional query for every __Type__ of column and the help of a simple dummy class called __DistinctValue__. A demo showing the approach can be observed [here](http://demos.telerik.com/silverlight/#DomainDataSource/DistinctValues).
+The current version __WCF RIA Services__ do not support projections on the server, i.e. you can't make a ___Select(person=>person.Name).Distinct()___ on the server out-of-the-box. But this can easily be done with an additional query for every __Type__ of column and the help of a simple dummy class called __DistinctValue__. A demo showing the approach can be observed [here](https://demos.telerik.com/silverlight/#DomainDataSource/DistinctValues).
 

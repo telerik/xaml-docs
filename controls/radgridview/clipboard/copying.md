@@ -74,7 +74,7 @@ There are two events that allow you to control the copying operation: __Copying_
 	End Sub
 {{endregion}}
 
->For some interesting examples, like how to skip copying of GridViewSelectColumn and GridViewToggleRowDetailsColumn, please check our [SDK example browser](http://demos.telerik.com/xaml-sdkbrowser/).
+>For some interesting examples, like how to skip copying of GridViewSelectColumn and GridViewToggleRowDetailsColumn, please check our [SDK example browser](https://demos.telerik.com/xaml-sdkbrowser/).
 
 ## See also
 

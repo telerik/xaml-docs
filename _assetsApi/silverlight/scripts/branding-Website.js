@@ -1,4 +1,4 @@
-﻿//===============================================================================================================
+//===============================================================================================================
 // System  : Sandcastle Help File Builder
 // File    : branding-Website.js
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
@@ -621,7 +621,7 @@ $(document).ready(function(){
 
     logoBar = document.createElement('div');
     logoBar.id = "logo-bar";
-    logoBar.innerHTML = "<a href=\"http://docs.telerik.com/devtools/silverlight/\" class=\"t-logo\" title=\"Telerik UI for Silverlight \"> Telerik UI for Silverlight</a>";
+    logoBar.innerHTML = "<a href=\"https://docs.telerik.com/devtools/silverlight/\" class=\"t-logo\" title=\"Telerik UI for Silverlight \"> Telerik UI for Silverlight</a>";
 	
 	$("#PageHeader").prepend(logoBar);
 

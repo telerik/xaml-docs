@@ -47,6 +47,9 @@ Below is the full control list of native {% if site.site_name == 'Silverlight' %
 
 
 * System.Windows.StatusBar
+
+
+* System.Windows.GridSplitter
 {% endif %}    
 
 

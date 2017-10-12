@@ -60,6 +60,32 @@ By inheriting the default __DataProvider__, the following methods and properties
 
 * __OnHeaderValueNeeded__: The method that is called when the __HeaderValueNeeded__ event is raised.
 
+* __DistinctValuesLoading__: Occurs when the grid column distinct values are about to be loaded. 
+
+* __FilterOperatorsLoading__: The method is invoked when the __FilterOperators__ for a given column are being loaded.
+
+* __SortDescriptorPreparing__: The method is called when the __SortDescriptors__ are being prepared.
+
+* __SortDescriptorPrepared__: The method is called when the __SortDescriptors__ are prepared and a sort operation will occur.
+
+* __OnSortingCompleted__: The method is called when the sort operation is completed. 
+
+* __FilterDescriptorPreparing__: The method is called when the __FilterDescriptors__ are being prepared.
+
+* __FilterDescriptorPrepared__: The method is called when the __FilterDescriptors__ are prepared and a filter operation will occur.
+
+* __OnFilteringCompleted__: The method is called when the filter operation is completed. 
+
+* __ApplyFilterDescriptor__: Adds the filter descriptor to the __Source QCV__, which is the collection used for the data operations of the provider.
+
+* __ApplySortDescriptor__: Adds the sort descriptor to the __Source QCV__, which is the collection used for the data operations of the provider.
+
+* __RemoveColumnFilter__: Removes the given filter descriptor from the __Source QCV__.
+
+* __IsColumnReadOnly__: Determines whether a given column is ReadOnly. 
+
+* __RemoveItemsFromSource__: Removes a set of items from the underlying source.
+
 ## See Also
 
 * [Editing]({%slug virtualgrid-editing%})

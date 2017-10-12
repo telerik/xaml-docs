@@ -82,6 +82,6 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 * [Export Numeric Value]({%slug gridview-export-numeric-value%})
 
-* [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
+* [Format Codes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
 
-* [Number Formatting](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/number-formats)
+* [Number Formatting](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/number-formats)

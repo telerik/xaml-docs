@@ -17,7 +17,7 @@ There are several options available:
 
 * through [ControlPanel]({%slug gridview-overview-controlpanel%})
 
-* defining {% if site.site_name == 'Silverlight' %}[Header Context Menu](http://demos.telerik.com/silverlight/#GridView/HeaderContextMenu){% endif %}{% if site.site_name == 'WPF' %}[Header Context Menu](http://demos.telerik.com/wpf){% endif %} 
+* defining {% if site.site_name == 'Silverlight' %}[Header Context Menu](https://demos.telerik.com/silverlight/#GridView/HeaderContextMenu){% endif %}{% if site.site_name == 'WPF' %}[Header Context Menu](https://demos.telerik.com/wpf){% endif %} 
 
 ## ListBox Outside RadGridView
 

@@ -18,5 +18,5 @@ This can be achieved with the help of __attached behavior__. The main idea here 
 ![](images/RadGridView_RowReorder.png)
 
 The full source code of the behavior is available on this
-{% if site.site_name == 'WPF' %}[demo](http://demos.telerik.com/wpf/#GridView/RowReorder){% endif %}
-{% if site.site_name == 'Silverlight' %}[demo](http://demos.telerik.com/silverlight/#GridView/RowReorder){% endif %}
+{% if site.site_name == 'WPF' %}[demo](https://demos.telerik.com/wpf/#GridView/RowReorder){% endif %}
+{% if site.site_name == 'Silverlight' %}[demo](https://demos.telerik.com/silverlight/#GridView/RowReorder){% endif %}

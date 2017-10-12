@@ -40,7 +40,7 @@ __RadMap's__ key features include:
 
 * __Geocode__ - __RadMap__ has integrated geocoding support.          
 
-Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[http://demos.telerik.com/silverlight/#Map/SalesDashboard](http://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[http://demos.telerik.com/wpf/#Map/SalesDashboard](http://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
+Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#Map/SalesDashboard](https://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/#Map/SalesDashboard](https://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
 
 ## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})

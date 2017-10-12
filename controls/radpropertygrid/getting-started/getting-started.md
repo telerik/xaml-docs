@@ -130,7 +130,7 @@ The controls from our suite support different themes. You can see how to apply a
 >important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
 
 To change the theme, you can follow the steps below:
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](http://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](http://demos.telerik.com/wpf/){% endif %}.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](https://demos.telerik.com/wpf/){% endif %}.
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For RadPropertyGrid, you will need to merge the following resources:
 

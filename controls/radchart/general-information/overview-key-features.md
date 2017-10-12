@@ -37,7 +37,7 @@ The added custom style properties for all major chart elements and all series fa
 
 * __DateTime Support__ - no worries binding __DateTimes__ in __RadChart__. [Read more]({%slug radchart-features-datetime-support%})
 
-* __MVVM Support__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart can be integrated with the Model-View-ViewModel (MVVM) pattern to get better control over chart customization. The control exposes fully separated functionality from appearance, thus providing you the power to completely restyle it without changing a single line of code. [See an example](http://demos.telerik.com/silverlight/default.aspx#Chart/MVVM)
+* __MVVM Support__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Chart can be integrated with the Model-View-ViewModel (MVVM) pattern to get better control over chart customization. The control exposes fully separated functionality from appearance, thus providing you the power to completely restyle it without changing a single line of code. [See an example](https://demos.telerik.com/silverlight/default.aspx#Chart/MVVM)
 
 * __Advanced X Axis Capabilities__ - to make the horizontal axis more intelligent and to improve the way horizontal axis handles user data, several new features are introduced: 
 

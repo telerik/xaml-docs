@@ -43,7 +43,7 @@ The list below describes several of the top-of-the-line features of the Telerik 
 
 * __Codeless test automation for RadComboBox__: You can record, execute and debug functional tests for the controls from the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite without leaving the familiar Visual Studio environment. [Progress® Test Studio®](http://www.telerik.com/teststudio) is an advanced click and play web application testing tool specialized for automating both AJAX and Silverlight applications. Telerik Test Studio ships with special translators for Telerik UI for ASP.NET AJAX and Telerik UI for Silverlight.
 
-You can find a number of helpful examples in the {% if site.site_name == 'Silverlight' %}[UI for Silverlight Controls Examples](http://demos.telerik.com/silverlight/#ComboBox/FirstLook/){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF Controls Examples](http://demos.telerik.com/wpf/){% endif %} application and [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser/).
+You can find a number of helpful examples in the {% if site.site_name == 'Silverlight' %}[UI for Silverlight Controls Examples](https://demos.telerik.com/silverlight/#ComboBox/FirstLook/){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF Controls Examples](https://demos.telerik.com/wpf/){% endif %} application and [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
 
 ## See Also
 

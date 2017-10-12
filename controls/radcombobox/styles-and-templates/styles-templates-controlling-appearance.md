@@ -127,4 +127,6 @@ As their names suggest, the NonEditableTemplate is used when the **IsEditable** 
 * [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%})
 * [Clear Selection Button]({%slug radcombobox-features-clearselectionbutton%})
 * [TextBoxStyle]({%slug radcombobox-features-textboxstyle%})
+{% if site.site_name == 'WPF' %}
 * [MultipleSelectionBoxTemplate]({%slug radcombobox-features-multiple-selection%}#multipleselectionboxtemplate)
+{% endif %}

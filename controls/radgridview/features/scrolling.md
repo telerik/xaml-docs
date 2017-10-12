@@ -71,13 +71,13 @@ This feature enables customizing the scrolling behavior of __RadGridView__ while
 
 {% if site.site_name == 'Silverlight' %}
 
->You can refer to the [ScrollingSettingsBehavior API Reference](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_controls_scrollingsettingsbehavior.htm)
+>You can refer to the [ScrollingSettingsBehavior API Reference](https://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_controls_scrollingsettingsbehavior.htm)
 >
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 
->You can refer to the [ScrollingSettingsBehavior API Reference](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_scrollingsettingsbehavior.htm)
+>You can refer to the [ScrollingSettingsBehavior API Reference](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_scrollingsettingsbehavior.htm)
 
 {% endif %}
 

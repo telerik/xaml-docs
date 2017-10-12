@@ -54,7 +54,7 @@ __Key features__ list includes:
 * Serialization of the DataProviders, so you can save the current state and load it later.
 
 You can check __RadPivotGrid__ demos at:
-     	{% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](http://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](http://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
+     	{% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](https://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](https://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
 
 ## See Also
 

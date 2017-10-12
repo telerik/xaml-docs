@@ -433,11 +433,11 @@ The implementation of the ViewModel is below:
 
 {% if site.site_name == 'Silverlight' %}
 A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/silverlight/contextmenu/radcontextmenu-mvvm.aspx).
-You can also check [Header Context Menu](http://demos.telerik.com/silverlight/#GridView/HeaderContextMenu) and [Row Context Menu](http://demos.telerik.com/silverlight/#GridView/RowContextMenu) demos.
+You can also check [Header Context Menu](https://demos.telerik.com/silverlight/#GridView/HeaderContextMenu) and [Row Context Menu](https://demos.telerik.com/silverlight/#GridView/RowContextMenu) demos.
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/wpf/contextmenu/radcontextmenu-mvvm.aspx).
-You can also check __Header Context Menu__ and __Row Context Menu__ [WPF Demos](http://demos.telerik.com/wpf/).
+You can also check __Header Context Menu__ and __Row Context Menu__ [WPF Demos](https://demos.telerik.com/wpf/).
 {% endif %}
 

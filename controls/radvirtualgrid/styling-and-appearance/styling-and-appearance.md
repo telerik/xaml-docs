@@ -32,6 +32,12 @@ __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its 
 
 * __FontSize__: Sets the FontSize of the cell content.The property is of type double.
 
+* __CellPadding__: Gets or sets a value that indicates the cells' text padding.
+
+* __CellTextAlignment__: An enumeration property, which value can be set to the one of the following ones: __Left__, __Right__, __Center__, __Justify__.
+
+>The ability to use the __CellTextAlignment__ mechanism depends on the value of the __MeasureTextOnRender__ property. More information can be found in the [Getting Started]({%slug virtualgrid-getting-started2%}) topic.
+
 The styling options of the control support applying __Brushes__ to various of its elements. They are described in the following figure. 
 
 #### __Figure 1: RadVirtualGrid's Visual Elements__ 

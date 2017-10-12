@@ -37,7 +37,7 @@ This is a list with short descriptions of the top-of-the-line features of the __
 
 >tip Get started with the control with its [Getting Started]({%slug radbusyindicator-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#BusyIndicator/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#BusyIndicator/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
  * [Visual Structure]({%slug radbusyindicator-visual-structure%})

@@ -16,7 +16,7 @@ Thank you for choosing Telerik SDK Samples Browser
             
 The SDK Samples Browser is an application that automatically connects to GitHub and downloads the XAML SDK repository locally to a location that could be set by the user. After download is complete the application gives a very convenient navigation between all the available examples and a search functionality which doesn’t simply search by control’s names but also through the example’s names and descriptions.
             
-You can download the application from [ here ](http://demos.telerik.com/xaml-sdkbrowser/).
+You can download the application from [ here ](https://demos.telerik.com/xaml-sdkbrowser/).
            
 Some of its key features are:            
 

@@ -27,15 +27,25 @@ __RadVirtualGrid__ supports selection of a cell region. This mechanism can be ma
 #### __Figure 1: Selecting a CellRegion__
 ![Selecting a CellRegion](images/RadVirtualGrid_Selection_03.png)
 
-## Selected Index and Selected Indexes
+## Unselect Cell Region
 
-The control supports programmatic selection based on a given index/indexes. For this purpose, the __SelectedIndex__ and __SelectedIndexes__ properties are exposed.
+The control also provides a method for deselecting a __CellRegion__, or multiple __CellRegions__.
+
+* __UnselectCellRegion(Telerik.Windows.Controls.VirtualGrid.CellRegion)__
+
+* __UnselectCellRegion(IEnumerable<Telerik.Windows.Controls.VirtualGrid.CellRegion>)__
+
+## Selected Index, Selected Indexes and ToggleIndexSelection
+
+The control supports programmatic selection based on a given index/indexes. For this purpose, the __SelectedIndex__ and __SelectedIndexes__ properties are exposed, as well the __ToggleIndexSelection__ method.
 
 > The index based selection of __RadVirtualGrid__ can be utilized only when the __SelectionUnit__ of the control is set to __Row__ or __Column__. Depending on the property value, the control will operate with either the index/indexes of the rows, or the columns.
 
-* __SelectedIndex__ - provides information regarding the selected index of the control and can be assigned as well.
+* __SelectedIndex__: Provides information regarding the selected index of the control and can be assigned as well.
 
-* __SelectedIndexes__ - provides information regarding the selected indexes. As it is a collection property it cannot be assigned.
+* __SelectedIndexes__: Provides information regarding the selected indexes. As it is a readonly collection, it __cannot be assigned__ and __items cannot be added to it__.
+
+* __ToggleIndexSelection__: Selects the given index if it is not selected, or deselects if it is already selected. The unit that will be selected depends on the value of the __SelectionUnit__ property. When using this method, the __SelectedIndexes__ collection will be updated. Thus, using it is recommended when the application logic depends on the __SelectedIndexes__ collection.
 
 #### __[C#] Example 2: Setting the SelectedIndex property__
 {{region radvirtualgrid-selection_programmatic-selection_1}}
@@ -45,14 +55,6 @@ The control supports programmatic selection based on a given index/indexes. For 
 #### __Figure 2: Setting the SelectedIndex property__
 ![Setting the SelectedIndex property](images/RadVirtualGrid_Selection_04.png)
 
-#### __[C#] Example 3: Adding selected indexes__
-{{region radvirtualgrid-selection_programmatic-selection_2}}
-	this.VirtualGrid.SelectedIndexes.Add(1);
-    this.VirtualGrid.SelectedIndexes.Add(2);
-{{endregion}}
-
-#### __Figure 3: Adding selected indexes__
-![Setting the SelectedIndex property](images/RadVirtualGrid_Selection_05.png)
 
 ## See also
 

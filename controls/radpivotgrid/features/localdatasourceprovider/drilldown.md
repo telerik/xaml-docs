@@ -142,10 +142,10 @@ Once RadPivotGrid has finished processing the underlying data, the newly-introdu
 {{endregion}}
 
 {% if site.site_name == 'Silverlight' %}
->A better example of the Drill Down functionality can be found [here](http://demos.telerik.com/silverlight/#PivotGrid/DrillDown).
+>A better example of the Drill Down functionality can be found [here](https://demos.telerik.com/silverlight/#PivotGrid/DrillDown).
 {% endif %}
 {% if site.site_name == 'WPF' %}
->A better example of the Drill Down functionality can be found in the [WPF Controls Samples](http://demos.telerik.com/wpf/) under **PivotGrid -> Underlying data**.
+>A better example of the Drill Down functionality can be found in the [WPF Controls Samples](https://demos.telerik.com/wpf/) under **PivotGrid -> Underlying data**.
 {% endif %}
 
 ## See Also

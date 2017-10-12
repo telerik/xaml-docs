@@ -311,7 +311,7 @@ __Example 5__ shows how to use __ExcelMLStyle__.
  
  * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
  
- * [Online Demo - Exporting to various formats](http://demos.telerik.com/silverlight/#GridView/Exporting)
+ * [Online Demo - Exporting to various formats](https://demos.telerik.com/silverlight/#GridView/Exporting)
  
- * [Online Demo - Exporting Row Details](http://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
+ * [Online Demo - Exporting Row Details](https://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
 

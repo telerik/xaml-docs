@@ -197,7 +197,7 @@ Now as the sibling items from the same group are available, the only things that
 
 >tipBefore you continue, please, Take a look at the topic about [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}).          
 
->tipAn entirely business object oriented approach about handling radio groups within dynamic data can be found in the [online demo](http://demos.telerik.com/silverlight/#Menu/CheckableMenuItems).          
+>tipAn entirely business object oriented approach about handling radio groups within dynamic data can be found in the [online demo](https://demos.telerik.com/silverlight/#Menu/CheckableMenuItems).          
 
 When having __RadMenu__ with dynamic data in it, the logic remains the same, but you have to modify the data items a bit, so they can provide the needed information. You need your business object to expose several properties.        
 

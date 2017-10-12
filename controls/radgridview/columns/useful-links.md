@@ -13,17 +13,17 @@ position: 15
 ## Online Demos 
 {% if site.site_name == 'Silverlight' %}
 
-* [Column Settings](http://demos.telerik.com/silverlight/#GridView/Columns)
+* [Column Settings](https://demos.telerik.com/silverlight/#GridView/Columns)
 
-* [Column Types](http://demos.telerik.com/silverlight/#GridView/ColumnTypes)
+* [Column Types](https://demos.telerik.com/silverlight/#GridView/ColumnTypes)
 
-* [Custom Column](http://demos.telerik.com/silverlight/#GridView/CustomColumn)
+* [Custom Column](https://demos.telerik.com/silverlight/#GridView/CustomColumn)
 
-* [Frozen Columns](http://demos.telerik.com/silverlight/#GridView/FrozenColumns)
+* [Frozen Columns](https://demos.telerik.com/silverlight/#GridView/FrozenColumns)
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-* [Link to online demos](http://demos.telerik.com/wpf/#GridView/)
+* [Link to online demos](https://demos.telerik.com/wpf/#GridView/)
 {% endif %}
 
 ## How-to articles

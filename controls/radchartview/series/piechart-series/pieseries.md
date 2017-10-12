@@ -1,7 +1,7 @@
 ---
 title: PieSeries
 page_title: PieSeries
-description: This article describe the PieSeries of the ChartView.
+description: This article describe the PieSeries of RadChartView.
 slug: radchartview-series-pieseries
 tags: pieseries
 published: True
@@ -10,7 +10,7 @@ position: 0
 
 # PieSeries
 
-This series is visualized on the screen as separate pie slices representing each of the data points.
+This series is visualized on the screen as a circle constructed with separate pie slices representing each of the data points.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
@@ -78,7 +78,7 @@ You can use the __ValueBinding__ property of the PieSeries to bind the DataPoint
 
 ## Styling the Series
 
-You can see how to style area series using different properties in the [PieSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
+You can see how to style the series using different properties in the [PieSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
 
 Additionally, you can use the Palette property of the chart to change the colors of the PieSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 

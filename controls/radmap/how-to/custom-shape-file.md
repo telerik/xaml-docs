@@ -15,7 +15,7 @@ Via a software that supports the format, the geometries can be translated proper
 
 >To learn more about the shapefiles, read this [article](http://en.wikipedia.org/wiki/Shapefile).
 
-This help topic will walk you through the steps you should take to create your own shapefile like the [Stadium](http://demos.telerik.com/silverlight/#Map/Stadium) we demonstrated with our online examples.
+This help topic will walk you through the steps you should take to create your own shapefile like the [Stadium](https://demos.telerik.com/silverlight/#Map/Stadium) we demonstrated with our online examples.
 
 1. __Drawing the shapes.__  
 	We'll get started with the playground and then with the seats.        

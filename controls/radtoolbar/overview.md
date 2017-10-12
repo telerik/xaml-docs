@@ -26,7 +26,7 @@ __RadToolBar__ is an __ItemsControl__ that can contain a group of controls (item
 
 The __RadToolBar__ mimics the functionality and behavior of the Visual Studio toolbar with its __Strip__ and __Overflow__ areas. All the items in the toolbar will jump between the strip and the overflow depending on the toolbar's size. In addition, the developer is able to stick items into one of these areas using the attached __OverflowMode__ property.
 
-The __RadToolBar__ also enables you to apply conditional styling to its items. The [ToolBarContainerStyleSelector](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyleselector.htm) class allows you to easily specify different styles for the different control types by providing a collection of [ToolBarContainerStyle](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyle.htm) objects.
+The __RadToolBar__ also enables you to apply conditional styling to its items. The [ToolBarContainerStyleSelector](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyleselector.htm) class allows you to easily specify different styles for the different control types by providing a collection of [ToolBarContainerStyle](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_toolbarcontainerstyle.htm) objects.
 
 There are also pre-defined styles for many of the standart controls – Button, RadButton, ToggleButton, RadToggleButton, CheckBox, RadioButton, RadRadioButton, RadDropDownButton, TextBox, TextBlock, RadToolBarSeparator{% if site.site_name == 'Silverlight' %}, RadSeparator{% endif %}.
 
@@ -38,4 +38,4 @@ There are also pre-defined styles for many of the standart controls – Button, 
 
  * [Item Alignment]({%slug radtoolbar-features-itemalignment%})
 
- * [RadToolBar API Reference](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_radtoolbar.htm)
+ * [RadToolBar API Reference](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_radtoolbar.htm)

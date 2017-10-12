@@ -82,7 +82,7 @@ When the chart is populated with thousands of business items, the visual represe
 
 ##### 5. __Appearance__. 
 
-Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](http://demos.telerik.com/silverlight/#ChartView/Palettes){% endif %}{% if site.site_name == 'WPF' %}[Appearance example](http://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.						
+Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](https://demos.telerik.com/silverlight/#ChartView/Palettes){% endif %}{% if site.site_name == 'WPF' %}[Appearance example](https://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.						
 
 ## Features with no equivalent in RadChartView
 

@@ -57,9 +57,9 @@ RadChart key features list:
 
 * __Flexible API__: The control provides a flexible API that grants full control over various programmatic operations. Show/Hide charts labels, tooltips, axes, gridlines and strip lines. Change the chart titles and the data formatting for all chart elements is made easy. {% if site.site_name == 'Silverlight' %}
 
-Check out the online demo at:[http://demos.telerik.com/silverlight/#Chart/FirstLook](http://demos.telerik.com/silverlight/#Chart/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
+Check out the online demo at:[https://demos.telerik.com/silverlight/#Chart/FirstLook](https://demos.telerik.com/silverlight/#Chart/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
 
-Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/){% endif %}
+Check out the online demo at:[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 

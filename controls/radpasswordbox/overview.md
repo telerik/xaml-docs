@@ -29,7 +29,7 @@ __RadPasswordBox__ is a control used for easily entering and handling passwords.
 * __Styling and Appearance__: Provides an easy way to customize the appearance of the control.
 
 
-You can check __RadPasswordBox__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
+You can check __RadPasswordBox__ demos at: [https://demos.telerik.com/wpf](https://demos.telerik.com/wpf).
 
 ## See Also
 

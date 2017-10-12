@@ -45,7 +45,7 @@ For example, a link to our Silverlight MSWord demo can be inserted in the docume
 {{region radrichtextbox-features-document-elements-hyperlink_0}}
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
-	    NavigateUri = "http://demos.telerik.com/silverlight/#RichTextBox/TelerikEditor",
+	    NavigateUri = "https://demos.telerik.com/silverlight/#RichTextBox/TelerikEditor",
 	    Target = HyperlinkTargets.Blank,
 	    IsAnchor = false
 	};

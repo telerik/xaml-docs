@@ -129,12 +129,12 @@ Next, you need to register the __SampleCustomPropertyProvider__ in the applicati
 
 {% if site.site_name == 'Silverlight' %}
 You can find examples of __ICustomPropertyProvider__ implementations in the following demos:
-* [GridView Serializaiton](http://demos.telerik.com/silverlight/#PersistenceFramework/GridViewCustomSerialization)
-* [Docking Serializaiton](http://demos.telerik.com/silverlight/#PersistenceFramework/DockingCustomSerialization)
+* [GridView Serializaiton](https://demos.telerik.com/silverlight/#PersistenceFramework/GridViewCustomSerialization)
+* [Docking Serializaiton](https://demos.telerik.com/silverlight/#PersistenceFramework/DockingCustomSerialization)
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-You can find examples of __ICustomPropertyProvider__ implementations in the __PersistenceFramework__ demos. Open the  [UI for WPF demos](http://demos.telerik.com/wpf/) and search for the following examples:
+You can find examples of __ICustomPropertyProvider__ implementations in the __PersistenceFramework__ demos. Open the  [UI for WPF demos](https://demos.telerik.com/wpf/) and search for the following examples:
 * __GridView Serializaiton__
 * __Docking Serializaiton__
 {% endif %}

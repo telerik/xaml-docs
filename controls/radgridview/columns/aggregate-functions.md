@@ -40,7 +40,7 @@ Here's a list of the available functions:
 
 >tipYou can also create your own custom functions similar to these by inheriting the __Telerik.Windows.Data.EnumerableAggregateFunction__ class.
 
->tipYou could also use a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](http://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} to define some custom aggregate expressions. An example can be found [here](http://demos.telerik.com/silverlight/#GridView/CustomAggregates).
+>tipYou could also use a {% if site.site_name == 'WPF' %}[Generic AggregateFunction](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %}{% if site.site_name == 'Silverlight' %}[Generic AggregateFunction](https://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_data_aggregatefunction_2.htm){% endif %} to define some custom aggregate expressions. An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates).
 
 If the **ShowColumnFooters** property of the RadGridView control is set to **True**, the footer cells will display a caption and the result for the defined aggregate functions.
 

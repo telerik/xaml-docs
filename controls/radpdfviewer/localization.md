@@ -28,7 +28,7 @@ __RadPdfViewer__ can be translated in one of the following supported languages u
 * Dutch
 * Turkish
 
-More information on how to achieve this you can find in the [Localization Using Built-in Resources](http://docs.telerik.com/devtools/wpf/common-localization#localization-using-built-in-resources) article.
+More information on how to achieve this you can find in the [Localization Using Built-in Resources](https://docs.telerik.com/devtools/wpf/common-localization#localization-using-built-in-resources) article.
 
 ## Localization Using Resource Files
 

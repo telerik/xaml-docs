@@ -40,7 +40,7 @@ More information about using of the __ItemTemplate__ property you can find in th
 
 ## Items Grouping Example
 
-The following example demonstrates how to use the __Clustering__ feature to display the airports of USA. The example displays the point type data which can be found in the “airports” shape-file of our {% if site.site_name == 'WPF' %}[Virtualization and Grouping](http://demos.telerik.com/wpf/#Map/ClusterVirtualization){% endif %}{% if site.site_name == 'Silverlight' %}[Virtualization and Grouping](http://demos.telerik.com/silverlight/#Map/ClusterVirtualization){% endif %} demo. The file contains 940 airports.        
+The following example demonstrates how to use the __Clustering__ feature to display the airports of USA. The example displays the point type data which can be found in the “airports” shape-file of our {% if site.site_name == 'WPF' %}[Virtualization and Grouping](https://demos.telerik.com/wpf/#Map/ClusterVirtualization){% endif %}{% if site.site_name == 'Silverlight' %}[Virtualization and Grouping](https://demos.telerik.com/silverlight/#Map/ClusterVirtualization){% endif %} demo. The file contains 940 airports.        
 
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         

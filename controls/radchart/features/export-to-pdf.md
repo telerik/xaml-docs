@@ -78,7 +78,7 @@ The following code creates the Chart part of the PDF document:
 {{endregion}}
 
 
-As for the grid part of the constructed document – all you need to do is create a second __Section__ element and construct __Table__ with the respective __TableRow__/ __TableCell__ elements. We will not go into details as you may find them as well as the source listing in this [online example](http://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument) and this blog post [here](http://blogs.telerik.com/vladimirenchev/posts/10-11-11/pdf_export_with_radgridview_for_silverlight_q3_2010.aspx).
+As for the grid part of the constructed document – all you need to do is create a second __Section__ element and construct __Table__ with the respective __TableRow__/ __TableCell__ elements. We will not go into details as you may find them as well as the source listing in this [online example](https://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument) and this blog post [here](http://blogs.telerik.com/vladimirenchev/posts/10-11-11/pdf_export_with_radgridview_for_silverlight_q3_2010.aspx).
 
 Now that the document model is ready, you can add a Button that will function as exporter and call the __PdfFormatProvider.Export(...)__ method from the *Click* event's body like this:
 

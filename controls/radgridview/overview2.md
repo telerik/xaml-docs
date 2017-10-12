@@ -60,16 +60,16 @@ __RadGridView__ key features list:
 
 You can find a list with all key features and additional explanation of the features [here]({%slug gridview-key-features%}){% if site.site_name == 'Silverlight' %}
 
-Check out the online demo [here.](http://demos.telerik.com/silverlight/#GridView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
+Check out the online demo [here.](https://demos.telerik.com/silverlight/#GridView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
 
-Check out the WPF demos [here.](http://demos.telerik.com/wpf/){% endif %}
+Check out the WPF demos [here.](https://demos.telerik.com/wpf/){% endif %}
 
->tipYou can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](http://demos.telerik.com/xaml-sdkbrowser//)
+>tipYou can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
 
 ## See Also
 
  * [Getting Started]({%slug gridview-getting-started2%})
  * [Key Features]({%slug gridview-key-features%})
  * [Visual Structure]({%slug gridview-visual-structure%})
- * [UI for WPF Demos](http://demos.telerik.com/wpf/)
- * [SDK Samples Browser](http://demos.telerik.com/xaml-sdkbrowser//)
+ * [UI for WPF Demos](https://demos.telerik.com/wpf/)
+ * [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser//)

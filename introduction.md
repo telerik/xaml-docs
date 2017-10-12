@@ -57,14 +57,14 @@ If you need further assistance you can post your question in the {% if site.site
 {% if site.site_name == 'Silverlight' %}
 * Telerik UI for Silverlight product page - [http://www.telerik.com/products/silverlight/overview.aspx](http://www.telerik.com/products/silverlight/overview.aspx)
 
-* Telerik UI for Silverlight demos - [http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)
+* Telerik UI for Silverlight demos - [https://demos.telerik.com/silverlight/](https://demos.telerik.com/silverlight/)
 
 * Latest news for Telerik UI for Silverlight - [http://www.telerik.com/support/whats-new/silverlight](http://www.telerik.com/support/whats-new/silverlight)
 {% endif %}
 {% if site.site_name == 'WPF' %}
 * Telerik UI for WPF product page - [http://www.telerik.com/products/wpf/overview.aspx](http://www.telerik.com/products/wpf/overview.aspx)
 
-* Telerik UI for WPF demos - [ http://demos.telerik.com/wpf/ ]( http://demos.telerik.com/wpf/ )
+* Telerik UI for WPF demos - [ https://demos.telerik.com/wpf/ ]( https://demos.telerik.com/wpf/ )
 
 * Latest news for Telerik UI for WPF - [http://www.telerik.com/support/whats-new/wpf](http://www.telerik.com/support/whats-new/wpf)
 {% endif %}

@@ -161,7 +161,7 @@ So checking/unchecking the checkboxes will update the visible Resources in the V
 
 ![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)
 
->tipYou can check this approach in RadScheduleView Grouping and Filtering demo {% if site.site_name == 'Silverlight' %}[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering){% endif %}{% if site.site_name == 'WPF' %}[here](http://demos.telerik.com/wpf/){% endif %}.
+>tipYou can check this approach in RadScheduleView Grouping and Filtering demo {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf/){% endif %}.
 
 ## Adding/removing resources at run time
 

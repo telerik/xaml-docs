@@ -10,7 +10,7 @@ position: 1
 
 # DiagramToolbox
 
-This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](http://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.            
+This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](https://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](https://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.            
 
 >In order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
 >	- Telerik.Windows.Controls.Diagrams

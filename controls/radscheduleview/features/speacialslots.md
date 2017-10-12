@@ -198,4 +198,4 @@ and cancel it in the event handler:
 	}
 {{endregion}}
 
-Check out the {% if site.site_name == 'Silverlight' %}[online demo](http://demos.telerik.com/silverlight/#ScheduleView/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[online demo](http://demos.telerik.com/wpf/?ScheduleView/SpecialSlots){% endif %} to see special slots in action.        
+Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[online demo](https://demos.telerik.com/wpf/?ScheduleView/SpecialSlots){% endif %} to see special slots in action.        

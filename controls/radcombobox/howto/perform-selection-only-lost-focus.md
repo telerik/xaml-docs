@@ -24,7 +24,7 @@ By default, when an item is matched by the text entered in an editable RadComboB
 	</telerik:RadComboBox>
 {{endregion}}
 
->You can have a look at the **Configurator** demo from the [{{ site.framework_name }} Controls Samples]({% if site.framework_name == 'Silverlight' %}http://demos.telerik.com/silverlight/#ComboBox/Configurator{% else %}http://demos.telerik.com/wpf{% endif %}) to get a better understanding of how the **UpdateSelectionOnLostFocus** property works.
+>You can have a look at the **Configurator** demo from the [{{ site.framework_name }} Controls Samples]({% if site.framework_name == 'Silverlight' %}https://demos.telerik.com/silverlight/#ComboBox/Configurator{% else %}https://demos.telerik.com/wpf{% endif %}) to get a better understanding of how the **UpdateSelectionOnLostFocus** property works.
 
 ## See Also
 

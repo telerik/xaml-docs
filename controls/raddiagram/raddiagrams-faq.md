@@ -34,7 +34,7 @@ This is why __RadDiagram__ can articulate a wide variety of diagramming tasks bu
 
 ## Q: How to display the DiagramToolbox items in a PanelBar
 
-If you want to display galleries with __DiagramShapes__ in different panels, you can use the __RadPanelBar__ control. As the control is essentially a hierarchical control, you can populate it with the built-in __HierarchicalGalleryItemsCollection__. This approach is demonstrated in the __RadDiagram__{% if site.site_name == 'Silverlight' %}[FirstLook demo](http://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[FirstLook demo](http://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %}.		
+If you want to display galleries with __DiagramShapes__ in different panels, you can use the __RadPanelBar__ control. As the control is essentially a hierarchical control, you can populate it with the built-in __HierarchicalGalleryItemsCollection__. This approach is demonstrated in the __RadDiagram__{% if site.site_name == 'Silverlight' %}[FirstLook demo](https://demos.telerik.com/silverlight/#Diagrams/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[FirstLook demo](https://demos.telerik.com/wpf/#Diagrams/FirstLook){% endif %}.		
 
 ## Q: How to display the RadDiagramItems properties pane
 

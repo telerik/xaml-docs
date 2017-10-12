@@ -33,7 +33,7 @@ __TouchManager__ has the following key features:
 
 * __Creating custom gestures__: TouchManager allows you to create custom gestures to trace specific patterns or movements. You can find more information about creating custom gestures in the [Custom Gestures]({%slug touchmanager-custom-gestures-overview%}) section of the TouchManager documentation.
 
-> You can find an example that demonstrates TouchManager in our {% if site.site_name == 'Silverlight' %}[demo application](http://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[demo application](http://demos.telerik.com/wpf/){% endif %}. 
+> You can find an example that demonstrates TouchManager in our {% if site.site_name == 'Silverlight' %}[demo application](https://demos.telerik.com/silverlight/){% endif %}{% if site.site_name == 'WPF' %}[demo application](https://demos.telerik.com/wpf/){% endif %}. 
 
 > See the [Touch Support]({%slug touch-support%}) help article for more information about the touch support in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}
 

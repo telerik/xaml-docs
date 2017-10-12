@@ -178,7 +178,7 @@ Below you can see how the MaskedInputs are being validated:
 {% if site.site_name == 'Silverlight' %}![Rad Masked Input-Validation-Data AnnotationsSL](images/radmaskedinput_validation_data_annotations_01-sl.png){% endif %}
 {% if site.site_name == 'WPF' %}![Rad Masked Input-Validation-Data AnnotationsWPF](images/radmaskedinput_validation_data_annotations_01-wpf.png){% endif %}
 
->tip You can see a live demo demonstrating the __DataValidation__ feature [here](http://demos.telerik.com/silverlight/#MaskedInput/Validation).
+>tip You can see a live demo demonstrating the __DataValidation__ feature [here](https://demos.telerik.com/silverlight/#MaskedInput/Validation).
 
 The RadMaskedInput controls support two properties that allow you to further customize your DataValidation scenarios:
 

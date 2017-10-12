@@ -1,5 +1,5 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/devtools/silverlight"
+url: "https://docs.telerik.com/devtools/silverlight"
 site_name: Silverlight
 
 destination: _site_SL

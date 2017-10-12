@@ -16,7 +16,7 @@ The __BoxesItemStyle__ property, introduced with the Q1 2016 release of UI for {
 
 First, you need to create a __RadAutoCompleteBox__ with an ItemsSource bound to a collection of business objects:
 
->Check {% if site.site_name == 'WPF' %}[this](http://docs.telerik.com/devtools/wpf/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](http://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %} article for some more detailed information how to bind the __ItemsSource__ to a collection of business objects.
+>Check {% if site.site_name == 'WPF' %}[this](https://docs.telerik.com/devtools/wpf/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %}{% if site.site_name == 'Silverlight' %}[this](https://docs.telerik.com/devtools/silverlight/controls/radautocompletebox/populating-with-data/binding-to-object.html){% endif %} article for some more detailed information how to bind the __ItemsSource__ to a collection of business objects.
 
 #### __[XAML] RadAutoCompleteBox declaration__
 
@@ -43,7 +43,7 @@ Next, you need to create a custom Style that targets __RadAutoCompleteBoxItem__ 
 	</Style>
 {{endregion}}
 
->If you are using {% if site.site_name == 'WPF' %}[Implicit Styles](http://docs.telerik.com/devtools/wpf/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}{% if site.site_name == 'Silverlight' %}[Implicit Styles](http://docs.telerik.com/devtools/silverlight/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}, please notice that the Style should based on the default __RadAutoCompleteBoxItemStyle__.
+>If you are using {% if site.site_name == 'WPF' %}[Implicit Styles](https://docs.telerik.com/devtools/wpf/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}{% if site.site_name == 'Silverlight' %}[Implicit Styles](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}, please notice that the Style should based on the default __RadAutoCompleteBoxItemStyle__.
 
 #### __[XAML] Custom BoxesItemStyle with Implicit Styles__
 

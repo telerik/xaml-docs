@@ -36,7 +36,7 @@ More than one condition may be applied to each column of the range.
 The conditions are applied in order. The range is first sorted according to the first condition. If there are repeating values in the column to which the first condition is applied, the next condition is used to sort these rows.
         
 
-A brief description of each type of sorting condition can be found in the RadSpreadProcessing section of the documentation [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/sorting).
+A brief description of each type of sorting condition can be found in the RadSpreadProcessing section of the documentation [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/sorting).
         
 
 ## Sorting Dialog
@@ -174,6 +174,6 @@ Figure 5: Filtering Popus Sorting by Color
 ![Rad Spreadsheet UI Sorting 05](images/RadSpreadsheet_UI_Sorting_05.png)
 
 ## See Also
- * [Model Sorting](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/sorting)
+ * [Model Sorting](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/sorting)
 
  * [Filtering]({%slug radspreadsheet-ui-filtering%})

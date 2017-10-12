@@ -30,7 +30,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	* **IsHandled**: Gets or sets whether the event is handled.
 	* **Header**: Gets or sets the header of the message.
 	* **Content**: Gets or sets the content of the message.
-	* **NotificationType**: Gets or sets the type of the notification. The property is of type [MessageBoxNotificationType](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_spreadsheet_dialogs_messageboxnotificationtype.htm).
+	* **NotificationType**: Gets or sets the type of the notification. The property is of type [MessageBoxNotificationType](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_spreadsheet_dialogs_messageboxnotificationtype.htm).
 
 	The code from **Example 1** shows how to disable the messages appearing when the user is trying to edit a protected worksheet.
 
@@ -70,7 +70,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * **WorkbookChanged**: Occurs when the workbook is changed.
 
-* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_spreadsheet_commands_commandexecutingeventargs.htm) and allow you to cancel the execution of the command.  
+* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_spreadsheet_commands_commandexecutingeventargs.htm) and allow you to cancel the execution of the command.  
 
 	#### **[C#] Example 2: Cancel a command through WorkbookCommandExecuting**
 	

@@ -33,7 +33,7 @@ __DragDropManager__ offers intuitive API similar to the WPF native drag and drop
 
 >tip Get started with the control with its [Getting Started]({%slug dragdropmanager-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#DragAndDrop){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}. Additionally, you can download more runnable projects from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop).
+> Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#DragAndDrop){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}. Additionally, you can download more runnable projects from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop).
 
 ## See Also
  * [Developer Focused Examples]({%slug dragdropmanager-sdk-examples%})

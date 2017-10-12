@@ -34,14 +34,14 @@ The following list shows the default editors of different types of data:
 
  ![](images/RadDataFilter_Features_FilterEditors_01.png)
 
-You can see a running demo [here](http://demos.telerik.com/silverlight/#DataFilter/DefaultEditors)
+You can see a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/DefaultEditors)
           . 
 
 ## Custom Filter Editors
 
 If you want to specify a custom filter editor you can do that by using the __EditorTemplateSelector__ property of the control. Once the editor (custom or default) has been created you can add the final touch to it by attaching to the __EditorCreated__ event. A full example can be found [here]({%slug raddatafilter-how-to-create-custom-filter-editors%}).
 
-You can see a running demo [here](http://demos.telerik.com/silverlight/#DataFilter/CustomEditors)
+You can see a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors)
           . 
 
 ## See Also

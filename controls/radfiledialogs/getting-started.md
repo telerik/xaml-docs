@@ -54,7 +54,7 @@ The controls from our suite support different themes. You can see how to apply a
 >important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
 
 To change the theme, you can follow the steps below:
-* Choose between the [themes]({%slug common-styling-appearance-available-themes%}) and add reference to the corresponding theme assembly (for example: Telerik.Windows.Themes.VisualStudio2013.dll). You see the different themes applied in the Theming examples from our [demos application](http://demos.telerik.com/wpf/).
+* Choose between the [themes]({%slug common-styling-appearance-available-themes%}) and add reference to the corresponding theme assembly (for example: Telerik.Windows.Themes.VisualStudio2013.dll). You see the different themes applied in the Theming examples from our [demos application](https://demos.telerik.com/wpf/).
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadTreeView__, you will need to merge the following resources:
 	* __System.Windows.xaml__

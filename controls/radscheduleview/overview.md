@@ -45,7 +45,7 @@ __RadScheduleView__ is a radically different scheduling component, going beyond 
 
 >tip Get started with the control with its [Getting Started]({%slug radscheduleview-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#ScheduleView){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
+> Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ScheduleView){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also 
  * [Key Features]({%slug radscheduleview-key-features%})

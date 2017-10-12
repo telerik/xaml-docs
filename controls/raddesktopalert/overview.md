@@ -32,7 +32,7 @@ __RadDesktopAlert__ is a WPF control that allows you to display notifications on
 
 * __Command__ - __RadDesktopAlert__ allows you to register a custom command and pass a parameter to it.
 
-You can check __RadDesktopAlert__ demos at: [http://demos.telerik.com/wpf](http://demos.telerik.com/wpf).
+You can check __RadDesktopAlert__ demos at: [https://demos.telerik.com/wpf](https://demos.telerik.com/wpf).
 
 ## See Also
 

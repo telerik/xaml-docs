@@ -13,19 +13,19 @@ position: 2
 ## Online Demos 
 {% if site.site_name == 'Silverlight' %}
 
-* [Paging Configurator](http://demos.telerik.com/silverlight/#GridView/PagingModes)
+* [Paging Configurator](https://demos.telerik.com/silverlight/#GridView/PagingModes)
 
-* [Paging Any Collection](http://demos.telerik.com/silverlight/#GridView/PagingIEnumerable)
+* [Paging Any Collection](https://demos.telerik.com/silverlight/#GridView/PagingIEnumerable)
 
-* [Endless Paging](http://demos.telerik.com/silverlight/#GridView/PagingEndless)
+* [Endless Paging](https://demos.telerik.com/silverlight/#GridView/PagingEndless)
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-* [Paging Configurator](http://demos.telerik.com/wpf/#GridView/PagingModes)
+* [Paging Configurator](https://demos.telerik.com/wpf/#GridView/PagingModes)
 
-* [Paging Any Collection](http://demos.telerik.com/wpf/#GridView/PagingIEnumerable)
+* [Paging Any Collection](https://demos.telerik.com/wpf/#GridView/PagingIEnumerable)
 
-* [Endless Paging](http://demos.telerik.com/wpf/#GridView/PagingEndless)
+* [Endless Paging](https://demos.telerik.com/wpf/#GridView/PagingEndless)
 {% endif %}
 
 ## Blog Posts

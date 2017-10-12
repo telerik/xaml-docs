@@ -99,7 +99,7 @@ The API allows you to create the columns separately from each other with the Sec
 
 ### Apply Columns With RadDocumentEditor
 
-In addition to the approaches discussed so far, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can use to lay out the text in columns. The overloads of the ChangeSectionColumns() method allow you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
+In addition to the approaches discussed so far, [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) exposes a method that you can use to lay out the text in columns. The overloads of the ChangeSectionColumns() method allow you to pass a SectionColumnCollection instance or a value of the [**SectionColumnsLayout enumeration**](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_SectionColumnsLayout.htm).
 
 The **SectionColumnsLayout** enumeration could have the following values:
 

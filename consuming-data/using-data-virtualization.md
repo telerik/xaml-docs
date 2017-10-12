@@ -117,12 +117,12 @@ __ItemsLoading__ event will be raised if you try to access some item by index an
 >When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
                
 {% if site.site_name == 'WPF' %}
-Check out the WPF Demos [here.](http://demos.telerik.com/wpf/)
+Check out the WPF Demos [here.](https://demos.telerik.com/wpf/)
 
 You can also check this [blog.](http://blogs.telerik.com/vladimirenchev/posts/10-10-20/data-virtualization-for-your-silverlight-and-wpf-applications.aspx){% endif %}
 {% if site.site_name == 'Silverlight' %}
 
-Check out the online demo [here.](http://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
+Check out the online demo [here.](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
 
 You can also check those additional blogs:
 

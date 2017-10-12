@@ -40,4 +40,4 @@ For example if the CLR property is named "IsReadOnly", you should add code simil
 	}
 {{endregion}}
 
-You can check {% if site.site_name == 'Silverlight' %}[the Various Data Sources](http://demos.telerik.com/silverlight/#GridView/DataSources){% endif %}{% if site.site_name == 'WPF' %}[the Various Data Sources](http://demos.telerik.com/wpf){% endif %} demo for an example of binding to dynamic data.
+You can check {% if site.site_name == 'Silverlight' %}[the Various Data Sources](https://demos.telerik.com/silverlight/#GridView/DataSources){% endif %}{% if site.site_name == 'WPF' %}[the Various Data Sources](https://demos.telerik.com/wpf){% endif %} demo for an example of binding to dynamic data.

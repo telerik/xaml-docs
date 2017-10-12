@@ -93,6 +93,7 @@ The same can be achieved in code-behind as illustrated in **Example 3**.
 	        Header = "Delete"
 	    });
 	}
+{{endregion}}
 
 #### __[VB.NET] Example 3: Define the custom column in code-behind__
 

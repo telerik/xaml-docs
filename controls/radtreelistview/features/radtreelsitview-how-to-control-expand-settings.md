@@ -169,12 +169,12 @@ Follow these steps to accomplish the task:
 
 ![Rad Tree List View radtreelistview how-to-isexpanded 01png](images/RadTreeListView_radtreelistview_how-to-isexpanded_01png.PNG)
 
->tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](http://demos.telerik.com/wpf/){% endif %}.
+>tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](https://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](https://demos.telerik.com/wpf/){% endif %}.
           
 
 ## Use of IsExpandableBinding
 
 The use of __IsExpandableBinding__ would be similar as shown for the __IsExpandedBinding__.
 
->tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](http://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](http://demos.telerik.com/wpf/){% endif %}.
+>tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](https://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](https://demos.telerik.com/wpf/){% endif %}.
           

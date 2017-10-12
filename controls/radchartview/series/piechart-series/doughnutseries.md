@@ -10,7 +10,7 @@ position: 1
 
 # DoughtnutSeries
 
-This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that the separate slices of this series start with an offset of the center of the RadPieChart control.
+This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that each slices is drawn with an offset from the center of the control.
 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
@@ -79,7 +79,7 @@ You can use the __ValueBinding__ property of the DoughtnutSeries to bind the Dat
 
 ## Styling the Series
 
-You can see how to style area series using different properties in the [DoughtnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
+You can see how to style the series using different properties in the [DoughtnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
 
 Additionally, you can use the Palette property of the chart to change the colors of the DoughtnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 

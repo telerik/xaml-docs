@@ -25,7 +25,7 @@ To manually UI for WPF to the Toolbox, follow the steps below:
 
 ![Common Installing Adding ToVS 2012 Tool Box 010 WPF](images/Common_InstallingAddingToVS2012ToolBox_010_WPF.png)
 
-Add a new tab with name "UI for WPF".
+* Add a new tab with name "UI for WPF".
 
 ![Common Installing Adding ToVS 2012 Tool Box 020 WPF](images/Common_InstallingAddingToVS2012ToolBox_020_WPF.png)
 

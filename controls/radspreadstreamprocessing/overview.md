@@ -10,14 +10,12 @@ position: 0
 
 # Overview
 
-Thank you for choosing Telerik **RadSpreadStreamProcessing**!
-
 This article briefly explains the specifics of **RadSpreadStreamProcessing** - what is spread streaming, how it works compared to the RadSpreadProcessing library and when to use it.
 
 >**RadSpreadStreamProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamsprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview).
 
 
-![](images/SpreadStreamProcessing-Overview_01.png)
+![SpreadStreamProcessing Fast Export image](images/SpreadStreamProcessing-Overview_01.png)
 
 ## What is Spread Streaming?
 
@@ -27,15 +25,32 @@ The key for the memory efficiency is that the spread streaming library writes th
 
 ## Key Features
 
+
 Some of the features you can take advantage of are:
 
-* Export to XLSX or CSV files
+* [Export](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/export) to XLSX or CSV files
+
 * Writing directly into a stream
-* Append new worksheets to existing ones
-* Grouping
-* [Styling](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/cell-styles) and [formatting cells](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/cells#set-a-format)
-* Hidden [rows](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/row) and [columns](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/column)
-* [Freezing panes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#freeze-panes)
+
+* **Append** new worksheets to existing workbook
+
+* **Grouping**: Helps you organize data in sections, to be able to show and hide the currently relevant chunks.
+
+* **Hidden [rows](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/row) and [columns](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/column)**: The API allows you to set the hidden state of each row or column.
+
+* [**Cell formatting**](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/cells#set-a-format): A number of properties enabling you to apply the desired look to a cell.
+
+* [**Cell styles**](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/cell-styles): Using cell styles allows you to apply multiple format options in one step and also offers an easy approach to achieve consistency in cell formatting.
+
+* [**Merge cells**](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/cells#merge-cells): You have the ability to merge two or more adjacent cells into a single cell that spans over multiple rows and columns.
+
+* **Controlling the view state of a sheet:**
+	* [Setting scale factor](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#scale-a-document)
+	* [Control over the selection and the active cell](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#add-selection-to-a-document)
+	* [Show/hide gridlines](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#hide-grid-lines-and-row-or-column-headers)
+	* [Show/hide row and column headers](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#ide-grid-lines-and-row-or-column-headers)
+	* [Freezing panes](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#freeze-panes): Keep part of the worksheet always visible while scrolling.
+	* [Changing the first visible cell](docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#change-the-first-visible-cell): when you would like to show a particular part of the sheet to the user on opening the document in a viewer.
 
 ## RadSpreadStreamProcessing vs. RadSpreadProcessing
 

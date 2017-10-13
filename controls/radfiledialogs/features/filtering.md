@@ -46,7 +46,7 @@ To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ 
 
 ## Filter in RadSaveFileDialog
 
-To set filter to the __RadSaveFileDialog__ dialog you can set the __Filter__ property. When this property __is not set__ the combo box will appear but will be empty. 
+To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ property. When this property __is not set__ the combo box will appear but will be empty. 
 
 > Note that the filter property does not only filter the files in the main pane but also determines the type of the file which will be saved.
 

@@ -10,13 +10,12 @@ position: 3
 
 # Filtering
 
-With the R3 2017 SP 1 version of Telerik UI for WPF, you can now specify a filter to the __RadOpenFileDialog and RadSaveFileDialog__ dialogs in order indicate the user which types of files should be opening or saving. To enabled this functionality you can set the __Filter__ and __FilterIndex__ properties. These properties works the same way as the Microsoft file dialogs ([OpenFileDialog](https://msdn.microsoft.com/en-us/library/microsoft.win32.openfiledialog(v=vs.110).aspx), [SaveFileDialog](https://msdn.microsoft.com/en-us/library/microsoft.win32.savefiledialog(v=vs.110).aspx)) do.
-
+With the R3 2017 SP 1 version of Telerik UI for WPF, you can now specify a filter to the __RadOpenFileDialog and RadSaveFileDialog__ dialogs in order indicate the user which types of files should be opening or saving. To enabled this functionality you can set the __Filter__ and __FilterIndex__ properties. 
 
 The __Filter__ is a property of type string that determines what type of files should be used in the combo box. On the other hand the __FilterIndex__ property can be used to gets or sets the index of the filter currently selected in a file dialog.
 > The index value of the first filter entry is 1. 
 
-The string set to the __Filter__ property is parsed in strict way. So when parsing is not successful, an ArgumentException is thrown. The exception string is the same as the Microsoft dialogs.
+The string set to the __Filter__ property is parsed in strict way. So when parsing is not successful, an ArgumentException is thrown.
 > __Provided filter string is not valid. Filter string should contain a description of the filter, followed by a vertical bar and the filter pattern. Must also separate multiple filter description and pattern pairs by a vertical bar. Must separate multiple extensions in a filter pattern with a semicolon. Example: "Image files (*.bmp, *.jpg)|*.bmp;*.jpg|All files (*.*)|*.*"__
 
 ## Filter in RadOpenFileDialog

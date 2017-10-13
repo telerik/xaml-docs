@@ -107,8 +107,8 @@ controls/radtreelistview/features/trimmed-text-tooltips.md,
 controls/radvirtualgrid,
 analytics/google-analytics-integration,
 controls/radwindow/features/radwindowinterophelper,
+controls/radfiledialogs,
 controls/radwindow/features/active-state-visualisation-mode]
-
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

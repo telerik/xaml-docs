@@ -33,7 +33,7 @@ As it is deployed as a ClickOnce application it requires the following component
 
 * Microsoft .NET Framework 4 Client Profile (x86 and x64) 
 
-* SQL Server 2008 SP3 Express or newer
+* SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
 If these components are already installed, you can [launch](http://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
 
@@ -72,7 +72,7 @@ __Figure 1: Exception when trying to install WPF Demos__
 Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clear the application cache. By default the files of the application are stored under the following directory: 
 <drive>:\Users\<your_user>\AppData\Local\Apps\2.0
 
-* SQL version mismatch
+* SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
 
 If you receive an error about the SQL version, for example:
 

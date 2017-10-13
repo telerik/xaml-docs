@@ -791,6 +791,9 @@ navigation:
         title: Changes and Backward Compability
     controls/radfiledialogs:
         title: RadFileDialogs
+    controls/radfiledialogs/features:
+        title: Features
+        position: 6
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:

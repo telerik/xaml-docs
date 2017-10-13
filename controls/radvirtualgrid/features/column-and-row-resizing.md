@@ -33,7 +33,7 @@ __RadVirtualGrid__ supports setting the width of a given column to be as large a
 
 >important Invoking the __FitColumnWidthToContent__ also depends on the __MainPanel__ of the control to be loaded. This is needed so the control can actually perform the measuring calculations. Thus, calling the method right after the __InitializeComponent__ method of the application is __not recommended__.
 
-A possible way to ensure that the visual elements of __RadVirtualGrid__ are already generated, the __Loaded__ event of the control can be utilized. 
+A possible way to ensure that the visual elements of __RadVirtualGrid__ are already generated, is to handle the __Loaded__ event of the control. 
 
 #### __Example 1: Invoking the FitColumnWidthToContent method__
 

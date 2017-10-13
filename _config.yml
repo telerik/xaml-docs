@@ -798,8 +798,6 @@ navigation:
     controls/radfiledialogs/features:
         title: Features
         position: 6
-    controls/radfiledialogs/features/filtering:
-        title: Filtering
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:

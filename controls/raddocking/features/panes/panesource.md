@@ -5,7 +5,7 @@ description: PanesSource - MVVM Support
 slug: raddocking-features-panes-panesource
 tags: panessource,-,mvvm,support
 published: True
-position: 6
+position: 8
 ---
 
 # PanesSource - MVVM Support

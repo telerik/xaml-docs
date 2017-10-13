@@ -39,16 +39,16 @@ __RadGridView__ API allows you to tweak your application for optimal performance
             
 * As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to the respective [help article]({%slug styling-apperance-implicit-styles-overview%}).
             
-* As of __Q3 2012__ we introduced a new rendering mode - Flat. Configuring it, involves rendering rows one below the other, which leads to better perfromance results. You can also refer to the [GroupingModes]({%slug gridview-grouping-groupingmodes%}) article.
+* As of __Q3 2012__ we introduced a new rendering mode - Flat. Configuring it involves rendering rows one below the other, which leads to better performance results. You can also refer to the [GroupingModes]({%slug gridview-grouping-groupingmodes%}) article.
               
 * As of __2013 Q2 SP__ we introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%}).
 
 >tipYou can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
 
 * RadGridView with applied __Windows8, Windows8Touch or Office2013 Theme__
-                - Telerik controls in these themes use resources, which are linked to a one major singleton that contains the colors used in them. Such an approach slows down the performance of virtualized components, such as RadGridView. You can consider applying the __Lightweight Templates__ in order to speed up the performance. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
+                - Telerik controls in these themes use resources, which are linked to one major singleton that contains the colors used in them. Such an approach slows down the performance of virtualized components, such as RadGridView. You can consider applying the __Lightweight Templates__ in order to speed up the performance. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
               
-* As of __Q2 2014 SP__ release we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
+* As of __Q2 2014 SP__ release, we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
             
 * __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
 

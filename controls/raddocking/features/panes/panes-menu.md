@@ -5,7 +5,7 @@ description: Pane's Menu
 slug: raddocking-features-panes-panes-menu
 tags: pane's,menu
 published: True
-position: 4
+position: 6
 ---
 
 # Pane's Menu

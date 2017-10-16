@@ -67,7 +67,7 @@ You can create and plug your custom dictionary by implementing the __IWordDictio
 
 ## Initial Load Performance of RadRichTextBox
 
-When __RadRichTextBox__ is loaded, the MEF checks all the assemblies, which the control has dependencies to and loads the necessary parts using reflection. However, traversing all the assemblies and searching if there is something to load in them is a slow operation and may decrease the initial load performance of the control. Below are listed the possible approaches to speed up the loading of all necessary for the application types or just load them without using MEF.
+When __RadRichTextBox__ is loaded, the MEF checks all the assemblies, which the control has dependencies to and loads the necessary parts using reflection. However, traversing all the assemblies and searching if there is something to load in them is a slow operation and may decrease the initial load performance of the control. The possible approaches to speed up the loading of the necessary application types or load them without using MEF are listed below.
 
 ### Explicitly set the necessary types
 

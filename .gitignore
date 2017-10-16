@@ -2,3 +2,4 @@
 _site
 _site_SL
 .bundle
+.asset-cache

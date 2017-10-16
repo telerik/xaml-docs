@@ -3133,11 +3133,15 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/wpf"
 
+plugins:
+  - jekyll-sitemap
+
 ## Assign layout and category per different paths
 defaults:
 -
     scope:
         path: ""
+        type: "pages"
     values:
         layout: "page"
         category: "default"
@@ -3158,7 +3162,7 @@ google_custom_search: '001595215763381649090:jt1stbj813w'
 
 ## Do not edit below this line
 safe: false
-markdown: MarkdownProcessor
+markdown: kramdown
 kramdown:
     toc_levels: 2..3
     smart_quotes: ["quot", "quot", "quot", "quot"]

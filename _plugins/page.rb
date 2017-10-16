@@ -4,7 +4,7 @@ module Jekyll
         def read_yaml(base, name, opts = {})
             begin
                 self.content = File.read(Jekyll.sanitized_path(base, name),
-                                         merged_file_read_opts(opts))
+                                         Utils.merged_file_read_opts(site, opts))
                 if content =~ /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
                     self.content = $POSTMATCH
                     self.data = SafeYAML.load($1.gsub(/{{site\.([^}]+)}}/) {|o| site.config[$1]} )

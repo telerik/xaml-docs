@@ -12,7 +12,7 @@ module Reading
 			@headingEndTag = "</strong></h4>"
 			@separator = "!snippet-separator!"
 			
-			@converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+			@converter = site.find_converter_instance(Jekyll::Converters::Markdown)
 						
 			site.pages.each do |p|	
 				createTabbedCode(p)	

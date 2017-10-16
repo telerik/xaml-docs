@@ -2,7 +2,7 @@ module Reading
   class Generator < Jekyll::Generator
     def generate(site)	
 		@site = site
-	    @converter = site.getConverterImpl(Jekyll::Converters::Markdown)	
+	    @converter = site.find_converter_instance(Jekyll::Converters::Markdown)	
         site.pages.each do |p|			
 			createAlert("tip", p.content)
 			createAlert("important", p.content)

@@ -11,6 +11,7 @@
         
         <link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html','' }}" />
 
+        {% if page.page_title %}<meta name="title" content="{{page.page_title}}">{% endif %}
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
         
         <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">

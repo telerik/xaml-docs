@@ -28,6 +28,8 @@ If the text of a RadComboBox exceeds the width of its parent, the content will b
 						Width="80" />
 {{endregion}}
 
+>A working version of this example is also available in the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/), titled **Show Tooltip On Trimmed Text**. Its full source code can be found [on GitHub](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/ShowToolTipOnTrimmedText).
+
 ## See Also
 
 * [AutoComplete]({%slug radcombobox-features-autocomplete%})

@@ -18,7 +18,7 @@ The __Filter__ is a property of type string that determines what file extensions
 
 The string set to the __Filter__ property is parsed in a strict way. So when parsing is not successful, the following __ArgumentException__ is thrown:
 
-> __Provided filter string is not valid. Filter string should contain a description of the filter, followed by a vertical bar and the filter pattern. Must also separate multiple filter description and pattern pairs by a vertical bar. Must separate multiple extensions in a filter pattern with a semicolon. Example: "Image files (*.bmp, *.jpg)|*.bmp;*.jpg|All files (*.*)|*.*"__
+> __Provided filter string is not valid. Filter string should contain a description of the filter, followed by a vertical bar and the filter pattern. Must also separate multiple filter description and pattern pairs by a vertical bar. Must separate multiple extensions in a filter pattern with a semicolon. Example: "Image files (\*.bmp, \*.jpg)|\*.bmp;\*.jpg|All files (\*.\*)|\*.\*"__
 
 ## Filter in RadOpenFileDialog
 
@@ -29,13 +29,13 @@ To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ 
 {{region radfiledialogs-features-filtering-0}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.FileName = "Document";
-	openFileDialog.Filter = "Word Documents(*.doc)|*.doc|Excel Worksheets (*.xls;*.xlsx)|*.xls;*.xlsx|"+
-							"PowerPoint Presentations (*.ppt)|*.ppt" +
-							"|Office Files (*.doc;*.xls;*.xlsx;*.ppt)|*.doc;*.xls;*.xlsx;*.ppt" +
-							"|Image Files (*.jpg;*.png)|*.jpg;*.png" +
-							"|Text Files (*.txt;)|*.txt;" +
-							"|Archives Files (*.zip;*.rar)|*.zip;*.rar" +
-							"|All Files (*.*)|*.*";
+	openFileDialog.Filter = "Word Documents(\*.doc)|\*.doc|Excel Worksheets (\*.xls;\*.xlsx)|\*.xls;\*.xlsx|"+
+							"PowerPoint Presentations (\*.ppt)|\*.ppt" +
+							"|Office Files (\*.doc;\*.xls;\*.xlsx;\*.ppt)|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
+							"|Image Files (\*.jpg;\*.png)|\*.jpg;\*.png" +
+							"|Text Files (\*.txt;)|\*.txt;" +
+							"|Archives Files (\*.zip;*.rar)|\*.zip;\*.rar" +
+							"|All Files (\*.\*)|\*.\*";
 	openFileDialog.FilterIndex = 2;
 	openFileDialog.ShowDialog();
 {{endregion}}
@@ -55,13 +55,13 @@ To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ 
 {{region radfiledialogs-features-filtering-1}}
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
 	saveFileDialog.FileName = "Document";
-	saveFileDialog.Filter = "Word Documents(*.doc)|*.doc|Excel Worksheets (*.xls;*.xlsx)|*.xls;*.xlsx|"+
-							"PowerPoint Presentations (*.ppt)|*.ppt" +
-							"|Office Files (*.doc;*.xls;*.xlsx;*.ppt)|*.doc;*.xls;*.xlsx;*.ppt" +
-							"|Image Files (*.jpg;*.png)|*.jpg;*.png" +
-							"|Text Files (*.txt;)|*.txt;" +
-							"|Archives Files (*.zip;*.rar)|*.zip;*.rar" +
-							"|All Files (*.*)|*.*";
+	saveFileDialog.Filter = "Word Documents(\*.doc)|*.doc|Excel Worksheets (\*.xls;\*.xlsx)|\*.xls;\*.xlsx|"+
+							"PowerPoint Presentations (\*.ppt)|\*.ppt" +
+							"|Office Files (\*.doc;\*.xls;\*.xlsx;\*.ppt)|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
+							"|Image Files (\*.jpg;\*.png)|\*.jpg;\*.png" +
+							"|Text Files (\*.txt;)|\*.txt;" +
+							"|Archives Files (\*.zip;\*.rar)|\*.zip;\*.rar" +
+							"|All Files (\*.\*)|\*.\*";
 	saveFileDialog.FilterIndex = 2;
 	saveFileDialog.ShowDialog();
 {{endregion}}

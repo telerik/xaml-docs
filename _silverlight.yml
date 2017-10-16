@@ -108,7 +108,8 @@ controls/radvirtualgrid,
 analytics/google-analytics-integration,
 controls/radwindow/features/radwindowinterophelper,
 controls/radfiledialogs,
-controls/radwindow/features/active-state-visualisation-mode]
+controls/radwindow/features/active-state-visualisation-mode,
+controls/radcombobox/howto/show-tooltip-on-trimmed-text.md,]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

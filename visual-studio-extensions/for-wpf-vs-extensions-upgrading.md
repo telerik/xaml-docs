@@ -17,7 +17,7 @@ site_name: WPF
 
 An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
 
-The Upgrade Wizard (started by using the __Telerik > UI for WPF > Upgrade Wizard__ menu item) is used to change the version of __Telerik UI for WPF__ your project uses.
+The Upgrade Wizard (started by using the __Telerik > Telerik UI for WPF > Upgrade Wizard__ menu item) is used to change the version of __Telerik UI for WPF__ your project uses.
 
 In addition to the pure assembly reference change, the upgrade wizard provides several important features:
 

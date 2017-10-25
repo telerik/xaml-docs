@@ -21,15 +21,15 @@ Have you ever wondered how to increase the responsiveness of your applications b
 This is a list with short descriptions of the top-of-the-line features of Telerik's __Zip Library__ control:
         
 
-* **Easy to use API**: The library exposes flexible and easy API to provide you with full control over the compressed data. The [extension methods](docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/zip-extensions) allow you to implement the most common scenarios in a single line of code, like creating zip file from folder or extracting it.
+* **Easy to use API**: The library exposes flexible and easy API to provide you with full control over the compressed data. The [extension methods](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/zip-extensions) allow you to implement the most common scenarios in a single line of code, like creating zip file from folder or extracting it.
 
 * **Load or create ZIP files**: You can load data from existing ZIP files, create new ones and edit ZIPs that can be used by other applications. You can also create ZIP files in memory or add data to ZIP file from stream.
 
-* [**Compress a stream**](docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/compress-stream): **RadZipLibrary** can significantly facilitate your efforts in compressing a stream, for example to send it over the internet.
+* [**Compress a stream**](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/compress-stream): **RadZipLibrary** can significantly facilitate your efforts in compressing a stream, for example to send it over the internet.
 
 * **Support for large files**: The **Zip Library** works seamlessly with large files (over 4GB).
             
-* **Support for [encryption](docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/protect-ziparchive)**: You can protect your ZIP file with password for more security.
+* **Support for [encryption](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/protect-ziparchive)**: You can protect your ZIP file with password for more security.
             
 
             

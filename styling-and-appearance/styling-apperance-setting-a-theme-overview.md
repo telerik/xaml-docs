@@ -10,19 +10,19 @@ position: 0
 
 # Setting a Theme
 
->tip Before proceed reading this topic we recommend you to read the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
+>tip Before you proceed reading this topic we recommend you read the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
 
 The __Telerik UI for {{ site.framework_name }}__ suite provides a [variety of themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply you might find it useful to familiarize with the [themes concept](#what-is-a-theme) and the difference between Xaml and NoXaml.
 
 ## What is a Theme?
 
-A theme contains all the styles and resources needed for the visualization of the Telerik controls. Each theme consists of multiple XAML files. You can think of each separate file as a collection of compliant styles which are needed for the visualisation of a certain control. As most of the custom controls are quite complex and contain within themselves other custom controls, often you will need the resources of several files. 
+A theme contains all the styles and resources needed for the visualization of the Telerik controls. Each theme consists of multiple XAML files. You can think of each separate file as a collection of compliant styles which are needed for the visualization of a certain control. As most of the custom controls are quite complex and contain other custom controls within themselves, often you will need the resources of several files. 
 
 ## Theme Setting Mechanisms
 
 There are two mechanisms that can be used to set a theme.
 
-* [Using NoXaml Dlls and Implicit Styles](#setting-a-theme-using-implicit-styles)
+* [Using Implicit Styles](#setting-a-theme-using-implicit-styles)
 	In this case use NoXaml dlls.
 	
 * [Using StyleManager](#setting-a-theme-using-stylemanager)
@@ -32,13 +32,13 @@ There are two mechanisms that can be used to set a theme.
 
 Using implicit styles gives you full Blend support and smaller dlls size. To use this mechanism you will need to use the __NoXaml__ version of the UI for {{ site.framework_name }} dlls.
 
-To change the theme you will need to make few steps.
+To change the theme you will need to take the following few steps.
 
-1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/* folder.
+1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the &ast;/Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/&ast; folder.
 
 2. __Get the .xaml files__ with the control styles and templates.	
 	
-	There two options to get the .xaml files.	
+	There are two options to get the .xaml files.	
 	
 	<ul>
 		<li>{% mdslug %}[Reference the theme dll](#reference-theme-dll){% endmdslug %} from the <em>/Binaries.NoXaml/</em> folder - for example Telerik.Windows.Themes.Office_Black.dll. The theme dll contains ResourceDictionary files with the styles for the controls.</li>
@@ -72,13 +72,13 @@ To change the theme you will need to make few steps.
 		</Application>
 	{{endregion}}	
 	
-	Note that the `Telerik.Windows.Data.dll` doesn't have UI (controls) so it doesn't have a ResourceDictionary with styles and templates.
+	Note that the `Telerik.Windows.Data.dll` doesn't have any UI (controls) so it doesn't have a ResourceDictionary with styles and templates.
 	
 > Merging the .xaml files in App.xaml will apply the theme to all controls in the application. To apply the theme only for a specific view you can merge the dictionaries in its Resources. For example, in the `<UserControl.Resources></UserControl.Resources>`. To apply the theme only for a specific control you can merge the dictionaries in the Resources of the control's parent container.  
 
 <!-- -->
 
-> Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+>important Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
 	
 ### How to get the .xaml files required for merging
 
@@ -120,33 +120,33 @@ The default styles and resources for each theme are shipped also in the **/Teler
 
 ## Setting a Theme Using StyleManager
 
-StyleManager is recommended to use when working with the standard (Xaml) dlls. The manager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
+StyleManager is used when working with the standard (Xaml) dlls. The StyleManager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
 
-To change the theme via the StyleManager you will need to make few steps.
+To change the theme via the StyleManager you will need to take the following few steps.
 
 1. __Reference the Xaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries/* folder.
 
 {% if site.site_name == 'Silverlight' %}2. __Add a reference__ to the dll with the theme (example: Telerik.Windows.Themes.Office_Black.dll).{% endif %}
 
-3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the InitialComponent method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
+3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the **InitializeComponent** method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
-	#### __[C#] Example 1: Setting the theme on a control level__
+	#### __[C#] Example 3: Setting the theme on a control level__
 	{{region styling-apperance-implicit-styles-overview-2}}		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
 	{{endregion}}
 	
-	#### __[VB.NET] Example 1: Setting the theme of the window__
+	#### __[VB.NET] Example 3: Setting the theme on a control level__
 	{{region styling-apperance-implicit-styles-overview-3}}	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
 	{{endregion}}
 	
-	#### __[C#] Example 2: Setting the theme on application level__
+	#### __[C#] Example 4: Setting the theme on application level__
 	{{region styling-apperance-implicit-styles-overview-4}}		
 		StyleManager.ApplicationTheme = new Office2016Theme();
 		InitializeComponent();
 	{{endregion}}
 	
-	#### __[VB.NET] Example 2: Setting the theme on application level__
+	#### __[VB.NET] Example 4: Setting the theme on application level__
 	{{region styling-apperance-implicit-styles-overview-5}}		
 		StyleManager.ApplicationTheme = New Office2016Theme()
 		InitializeComponent()
@@ -156,7 +156,7 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
-## Does a Theme Affects All {{ site.framework_name }} Controls?
+## Does a Theme Affect All {{ site.framework_name }} Controls?
 
 All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
 

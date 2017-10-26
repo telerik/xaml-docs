@@ -1,16 +1,16 @@
 ---
 title: Xaml vs. NoXaml
 page_title: Xaml vs. NoXaml
-description: Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This artcile will describe the difference and help you to choose a version. 
+description: Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This article will describe the difference and help you to choose a version. 
 slug: xaml-vs-noxaml
 tags: xaml,noxaml
 published: True
-position: 0
+position: 10
 ---
 
 # Xaml vs. NoXaml
 
-Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This artcile will describe the difference and help you to choose a version. 
+Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This article will describe the difference and help you to choose a version. 
 
 Let's start with that both types of dlls contain the same source code. The only difference is that the Xaml assemblies embeds also all styles of the controls. 
 
@@ -22,9 +22,9 @@ The __NoXaml__ dlls can be found in the __Telerik UI for {{ site.framework_name 
 
 ## Xaml assemblies
 
-The Xaml dlls contains the same code as the NoXaml, but they hold also all the styles and templates of the UI controls, for all themes. This means that they are bigger in size compared to NoXaml.
+The Xaml dlls contain the same code as the NoXaml, but they hold also all the styles and templates of the UI controls, for all themes. This means that they are bigger in size compared to NoXaml.
 
-Using Xaml dlls allows you to set up your project a bit easier and __change the controls UI theme very easiliy__ by setting a single property. Read more about this in the [Setting a Theme]({%slug implicit-styles-styling-the-controls%}) article.
+Using Xaml dlls allows you to set up your project a bit easier and __change the controls UI theme very easily__ by setting a single property. Read more about this in the [Setting a Theme]({%slug implicit-styles-styling-the-controls%}) article.
 
 ## NoXaml assemblies
 
@@ -32,7 +32,7 @@ The NoXaml dlls has the same code as the Xaml, but they don't contain any styles
 
 The benefit of using NoXaml is that you get a full __design-time support__ when a theme different than the default one (Office_Black) is used.
 
-Because the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from RadCartesianChart should has a Style that targets the custom control and it is based on RadCartesianChartStyle. The same applies for any custom implict styles targeting Telerik controls. You need to base them on the default control style, otherwise it will be completely overridden and all setters and templates originally applied to the control will be lost. You can read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+Because the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from RadCartesianChart should has a Style that targets the custom control and it is based on RadCartesianChartStyle. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise it will be completely overridden and all setters and templates originally applied to the control will be lost. You can read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
 
 ## How to check the assemblies version
 

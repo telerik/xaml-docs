@@ -33,3 +33,4 @@ That is it, now you have a multi-line header.
 
 ## See also
  * [Column Headers]({%slug gridview-columns-column-headers%})
+ * [Foreground color does not change in a custom header]({%slug gridview-troubleshooting-styling-custom-header%})

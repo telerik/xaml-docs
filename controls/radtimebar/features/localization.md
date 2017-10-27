@@ -36,7 +36,7 @@ The snapshot below shows the content of the __RadTimeBarResources.de.resx__ file
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
 
-#### __C#__
+#### __[C#] Example 1: Instantiate LocalizationManager__
 
 {{region radtimebar-localization_0}}
 	LocalizationManager.Manager = new LocalizationManager()
@@ -47,7 +47,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Instantiate LocalizationManager__
 
 {{region radtimebar-localization_1}}
 	LocalizationManager.Manager = New LocalizationManager()
@@ -58,7 +58,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 >tipIf you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and German languages, you can store the localized strings in Resources.resx and Resources.de.resx files. For the Resources.resx file you can set ResXFileCodeGenerator to Internal or Public and for others - to No code generation. Then, open the project file in a text-mode and insert the code below into the section. In this way you notify the framework about the supported cultures
 
-#### __XML__
+#### __[XML] Example 2: SupportedCultures tag__
 
 {{region radtimebar-localization}}
 	          <SupportedCultures>en;de</SupportedCultures>
@@ -68,7 +68,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 To see the __RadTimeBar__ localized in German for example you should set the *CurrentCulture* and *CurrentUICulture* in *App.xaml.cs/ App.xaml.vb* like this:
 
-#### __C#__
+#### __[C#] Example 3: Set current culture to German__
 
 {{region radtimebar-localization_2}}
 	CultureInfo culture = new CultureInfo("de");
@@ -78,7 +78,7 @@ To see the __RadTimeBar__ localized in German for example you should set the *Cu
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Set current culture to German__
 
 {{region radtimebar-localization_3}}
 	Dim culture As New CultureInfo("de")
@@ -96,7 +96,7 @@ __Localization Using Custom Localization Manager__
 
 The other way to localize your __RadTimeBar__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below for German language:
 
-#### __C#__
+#### __[C#] Example 4: GetStringOverride method__
 
 {{region radtimebar-localization_4}}
 	class CustomLocalizationManager : LocalizationManager
@@ -121,7 +121,7 @@ The other way to localize your __RadTimeBar__ control is to create a class that 
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: GetStringOverride method__
 
 {{region radtimebar-localization_5}}
 	Friend Class CustomLocalizationManager Inherits LocalizationManager

@@ -14,7 +14,7 @@ __GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 > The values displayed in GridViewExpressionColumn will be updated automatically when a concerned property on the data item changes.
 
-#### __[XAML] Example 1: Define GridViewExpressionColumn in XAML.__
+#### __[XAML] Example 1: Define GridViewExpressionColumn in XAML__
 
 {{region xaml-gridview-expression-column_0}}
 	<telerik:RadGridView x:Name="RadGridView1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" ColumnWidth="*">
@@ -30,9 +30,9 @@ __GridViewExpressionColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 The most important property to be set in code is [Expression](http://msdn.microsoft.com/en-us/library/bb397687.aspx property of the GridViewExpressionColumn).
 
-#### __[#] Example 2: Set Expression for GridViewExpressionColumn in code.__
+#### __[C#] Example 2: Set Expression for GridViewExpressionColumn in code__
 
-{{region gridview-expression-column_1}}
+{{region cs-gridview-expression-column_1}}
 
 	Expression<Func<Products, double>> expression = prod => prod.UnitPrice * prod.UnitsInStock;
 	GridViewExpressionColumn column = this.RadGridView1.Columns["TotalValue"] as GridViewExpressionColumn;

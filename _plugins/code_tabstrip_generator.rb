@@ -1,8 +1,8 @@
 module Reading
   class TabbedCodeGenerator < Jekyll::Generator
 		def generate(site)					
-			@headerSearchPattern = /####\s{1,}(__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*/ 
-			@snippetSearchPattern = /####\s{1,}(__|\*\*)\[?(VB|VB.NET|C#|XAML)\]?\s*.*\s*(>\n*)*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)+?(>?{{endregion}})/ # gets the whole snippet portion - header + region tags + code snippet 			
+			@headerSearchPattern = /####\s{1,}(__|\*\*)*\[?(SQL|XML|VB|VB.NET|C#|XAML)\]?\s*.*/ 
+			@snippetSearchPattern = /####\s{1,}(__|\*\*)*\[?(SQL|XML|VB|VB.NET|C#|XAML)\]?\s*.*\s*(>\n*)*{{region\s.*}}\n*\r*((?!{{endregion}}).*\n*\r*\s*)+?(>?{{endregion}})/ # gets the whole snippet portion - header + region tags + code snippet 			
 			@regionsPattern = /{{region\s.*}}(.*\n*\r*\s*)+?(>?{{endregion}})/ # gets the region tags and the content between them
 			@regionStartPattern = /{{region\s.*}}/
 			@regionEndPattern = /{{endregion}}/
@@ -46,7 +46,7 @@ module Reading
 				matchContent = match[0]				
 			
 				startIndex = content.index(matchContent)
-				endIndex = startIndex + matchContent.length;	
+				endIndex = startIndex + matchContent.length - 1;
 				
 				header = @headerSearchPattern.match(matchContent)
 				if !header.nil?
@@ -72,7 +72,7 @@ module Reading
 				# insert the generated html at the original content start position
 				if language.include? "VB"
 					 content = content.insert(vbCodeInsertIndex, codeSnippetHtml)					
-					 endIndex = vbCodeInsertIndex + codeSnippetHtml.length + @tabstripEndTag.length					 
+					 #endIndex = vbCodeInsertIndex + codeSnippetHtml.length + @tabstripEndTag.length					 
 				else
 					htmlHeader = ""
 					if !header.nil?
@@ -88,7 +88,7 @@ module Reading
 		end
 		
 		def getLanguageFromHeader(header)			
-			headerLangPattern = /(__|\*\*)\[?(VB.NET|VB|C#|XAML)\]?/  # gets the language part of the header (no white spaces). Examples: '__[XAML]' or '__[C#]' or '__XAML', etc.
+			headerLangPattern = /(__|\*\*)*\[?(SQL|XML|VB.NET|VB|C#|XAML)\]?/  # gets the language part of the header (no white spaces). Examples: '__[XAML]' or '__[C#]' or '__XAML', etc.
 			languageString = header[headerLangPattern];
 			if !languageString.nil?							
 				languageString = languageString.gsub("__", "")
@@ -101,7 +101,7 @@ module Reading
 		end
 		
 		def getTrimmedHeader(header)			
-			headerLangPattern = /####\s{1,}(__|\*\*)\[?(VB.NET|VB|C#|XAML)\]?\s*/ # gets the language part of the header (including white spaces). Examples: '__[XAML] ' or '__[C#] ' or '__XAML ', etc. 
+			headerLangPattern = /####\s{1,}(__|\*\*)*\[?(SQL|XML|VB.NET|VB|C#|XAML)\]?\s*/ # gets the language part of the header (including white spaces). Examples: '__[XAML] ' or '__[C#] ' or '__XAML ', etc. 
 			languageString = header[headerLangPattern];
 			 if !languageString.nil?					
 				header = header.gsub(languageString, "")							

@@ -9,5 +9,5 @@ gem 'jekyll-assets'
 gem 'github-markdown'
 gem 'html-pipeline'
 gem 'commonmarker'
-gem 'guard'
+gem 'sanitize'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?

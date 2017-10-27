@@ -26,15 +26,15 @@ Besides these connectors you can define custom connectors or remove the existing
 
 Adding a custom connector can be done by simply adding a RadDiagramConnector to the Connectors collection of the shape:
 
-#### __C#__
-{{region raddiagram-features-customconnectors-0}}
+#### __[C#] Example 1: Add custom connector__
+{{region cs-raddiagram-features-customconnectors-0}}
     var shape = new RadDiagramShape();
     var connector = new RadDiagramConnector(){Offset = new Point(1, 0.67), Name = "CustomConnector1"};
     shape.Connectors.Add(connector);
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-customconnectors-0}}
+#### __[VB.NET] Example 1: Add custom connector__
+{{region vb-raddiagram-features-customconnectors-0}}
 	Dim shape = New RadDiagramShape()
 	Dim connector = New RadDiagramConnector() With { 
 		 .Offset = New Point(1, 0.67), 
@@ -67,7 +67,9 @@ So, in practice you can go outside the actual bounds of the  shape but some mode
 
 Now let's define some shapes and custom connectors and use them. First, we will create 6 shapes with the following template:		
 
-{{region raddiagram-features-customconnectors-0}}
+#### __[XAML] Example 2: Define a custom shape__
+
+{{region xaml-raddiagram-features-customconnectors-0}}
 	<telerik:RadDiagramShape x:Name="match1shape" 
 							 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
 							 Position="100 100">					
@@ -82,8 +84,8 @@ Now let's define some shapes and custom connectors and use them. First, we will 
 
 We will define 4 custom connectors for each shape in the diagram. __Naming them is mandatory__:
 		
-#### __C#__
-{{region raddiagram-features-customconnectors-1}}
+#### __[C#] Example 3: Create custom connectors__
+{{region cs-raddiagram-features-customconnectors-1}}
 	this.diagram.Shapes.ToList().ForEach(x =>
 	{
 		var connectorUpRight = new RadDiagramConnector() { Offset = new Point(1, 0.25), Name = x.Name + "Connector1" };
@@ -98,7 +100,7 @@ We will define 4 custom connectors for each shape in the diagram. __Naming them 
 	});
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Create custom connectors__
 {{region raddiagram-features-customconnectors-1}}
 	Me.diagram.Shapes.ToList().ForEach(Function(x) 
 		Dim connectorUpRight = New RadDiagramConnector() With {
@@ -126,8 +128,8 @@ Next step is to add some connections between the custom connectors. The first fo
 
 The next four connections are attached with the RadDiagramConnection.Attach() method which takes two connectors.
 		
-#### __C#__
-{{region raddiagram-features-customconnectors-2}}
+#### __[C#] Example 4: Create connections between custom connectors with RadDiagram.AddConnection and RadDiagramConnection.Attach methods__
+{{region cs-raddiagram-features-customconnectors-2}}
 		var connection = this.diagram.AddConnection(this.diagram.Shapes[0], this.diagram.Shapes[1], "match1shapeConnector1", "match2shapeConnector3");
 		(connection as RadDiagramConnection).Stroke = new SolidColorBrush() { Color = Color.FromArgb(255, 255, 116, 2) };
 	
@@ -158,8 +160,8 @@ The next four connections are attached with the RadDiagramConnection.Attach() me
 		this.diagram.Items.Add(connection8);
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-customconnectors-2}}
+#### __[VB.NET] Example 4: Create connections between custom connectors with RadDiagram.AddConnection and RadDiagramConnection.Attach methods__
+{{region vb-raddiagram-features-customconnectors-2}}
 	Dim connection = Me.diagram.AddConnection(Me.diagram.Shapes(0), Me.diagram.Shapes(1), "match1shapeConnector1", "match2shapeConnector3")
 	TryCast(connection, RadDiagramConnection).Stroke = New SolidColorBrush() With { .Color = Color.FromArgb(255, 255, 116, 2) }
 	

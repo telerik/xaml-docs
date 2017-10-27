@@ -44,7 +44,8 @@ The following example demonstrates how to use the __Clustering__ feature to disp
 
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         
-#### __XAML__
+#### __[XAML] Example 1: Load file with AsyncShapeFileReader__
+
 {{region radmap-visualization-layer-clustering_0}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -80,6 +81,8 @@ Such performance is a reason to use the __Clustering__ feature to improve the pe
 
 You can set the __ClusteringEnabled__ property to __true__ for enabling the feature.        
 
+#### __[XAML] Example 2: Load file with AsyncShapeFileReader and enabled clustering__
+
 {{region radmap-visualization-layer-clustering_1}}
     <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClusteringEnabled="True">
         <telerik:VisualizationLayer.Reader>
@@ -96,7 +99,8 @@ By default the cluster looks like above and it shows how many items it contains.
 
 You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to customize the appearance of the item and of the cluster.
         
-#### __XAML__
+#### __[XAML] Example 3: Set ItemTemplate and ClusterItemTemplate__
+
 {{region radmap-visualization-layer-clustering_2}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

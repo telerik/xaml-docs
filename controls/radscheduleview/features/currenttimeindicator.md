@@ -23,9 +23,9 @@ This article covers the following topics:
 
 In order to display the current time indicator, you must set the __ShowCurrentTimeIndicator__ property of the RadScheduleView as in __Example 1__.
 
-#### __Example 1: [XAML] Enable CurrentTimeIndicator__
+#### __[XAML] Example 1: Enable CurrentTimeIndicator__
 
-{{region radscheduleview-currenttimeindicator_0}}
+{{region xaml-radscheduleview-currenttimeindicator_0}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowCurrentTimeIndicator="True">            
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition />               
@@ -47,9 +47,9 @@ As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 * **AppointmentsArea** – the indicator is shown only through the Appointments panel.
 * **WholeArea** – the indicator is shown on both the TimeRuler and Appointments panel.
 
-#### __Example 2: [XAML] Set CurrentTimeIndicatorLocation__
+#### __[XAML] Example 2: Set CurrentTimeIndicatorLocation__
 
-{{region radscheduleview-currenttimeindicator_1}}
+{{region xaml-radscheduleview-currenttimeindicator_1}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 		ShowCurrentTimeIndicator="True"
 		CurrentTimeIndicatorLocation="WholeArea">            
@@ -73,9 +73,9 @@ __CurrentTimeIndicatorStyle__ is applied to the part of the CurrentTimeIndicator
 
 __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows how the Style properties should be set to the ScheduleView.
 
-#### __Example 3: [XAML] Define CurrentTimeIndicator Styles__
+#### __[XAML] Example 3: Define CurrentTimeIndicator Styles__
 
-{{region radscheduleview-currenttimeindicator_2}}
+{{region xaml-radscheduleview-currenttimeindicator_2}}
 	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">
 		<Setter Property="Canvas.ZIndex" Value="2"/>  
 		<Setter Property="Template">
@@ -98,7 +98,7 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 	</Style>
 {{endregion}}
 
-#### __Example 4: [XAML] Set CurrentTimeIndicator Style Properties__
+#### __[XAML] Example 4: Set CurrentTimeIndicator Style Properties__
 
 {{region radscheduleview-currenttimeindicator_3}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
@@ -120,7 +120,7 @@ If you run the application at this stage, you will see RadScheduleView with Curr
 
 Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. 
 
-#### __Example 5: [XAML] Set AllowCustomSize__
+#### __[XAML] Example 5: Set AllowCustomSize__
 
 {{region radscheduleview-currenttimeindicator_4}}
 	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">

@@ -11,7 +11,7 @@ module Jekyll
                 href = a['href'].strip
 
                 if href.start_with? '/'
-                    a['href'] = context[:baseurl] +  href
+                    a['href'] = href
                 end
             end
 
@@ -21,7 +21,7 @@ module Jekyll
                 src = img['src'].strip
 
                 if src.start_with? '/'
-                    img['src'] = context[:baseurl] + src
+                    img['src'] = src
                 end
             end
 
@@ -94,7 +94,7 @@ module Jekyll
         end
     end
 
-    class Converters::Markdown::MarkdownProcessor
+    class Jekyll::Converters::Markdown::MarkdownProcessor
         def initialize(config)
             @config = config
 

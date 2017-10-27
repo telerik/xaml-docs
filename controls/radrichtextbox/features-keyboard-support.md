@@ -173,9 +173,9 @@ Now these key bindings can be overridden and customized to the liking of the use
         
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Add KeyBindings__
 
-{{region radrichtextbox-features-keyboard-support_0}}
+{{region xaml-radrichtextbox-features-keyboard-support_0}}
 	<telerik:RadRichTextBox Grid.Row="1" Name="editor">
 		<telerik:CommandManager.InputBindings>
 			<telerik:InputBindingCollection>
@@ -192,9 +192,9 @@ Now these key bindings can be overridden and customized to the liking of the use
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Add KeyBindings__
 
-{{region radrichtextbox-features-keyboard-support_1}}
+{{region xaml-radrichtextbox-features-keyboard-support_1}}
     <telerik:RadRichTextBox Name="radRichTextBox">
       <telerik:RadRichTextBox.InputBindings>
         <!-- Bind Spell Checking to Ctrl+Shift+S -->
@@ -210,15 +210,17 @@ Now these key bindings can be overridden and customized to the liking of the use
 {% endif %}
 
 Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
-{{region richtextbox-commands}}
+
+#### __XAML__
+{{region xaml-richtextbox-commands}}
 	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
 {{endregion}}
 
 Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:
 
-#### __C#__
+#### __[C#] Example 2: Handle PreviewEditorKeyDown__
 
-{{region radrichtextbox-features-keyboard-support_0}}
+{{region cs-radrichtextbox-features-keyboard-support_0}}
 	  this.radRichTextBox.PreviewEditorKeyDown += (sender, args) =>
          {
              if (Keyboard.Modifiers.HasFlag(ModifierKeys.Alt) && Keyboard.Modifiers.HasFlag(ModifierKeys.Control) && args.Key == Key.E)

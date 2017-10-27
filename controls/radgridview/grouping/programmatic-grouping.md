@@ -89,7 +89,7 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 	             DisplayContent="Country Group" />
 {{endregion}}
 
-#### __[C] Example 4: Set the DisplayContent property__
+#### __[C#] Example 4: Set the DisplayContent property__
 
 {{region cs-gridview-programmatic-grouping_7}}
 	GroupDescriptor descriptor2 = new GroupDescriptor();

@@ -20,9 +20,9 @@ You can stick the headers of the group to the top until its items are scrolled o
 
 >important The EnableStickyGroupHeaders functionality is only supported when [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}) is **Flat**. If the **Nested** grouping mode is set, a **NotSupportedException** will be thrown.
 
-#### __Example 1: Enable Sticky Group Headers__
+#### __[XAML] Example 1: Enable Sticky Group Headers__
 
-{{region gridview-sticky-group-headers-0}}
+{{region xaml-gridview-sticky-group-headers-0}}
 	<telerik:RadGridView EnableStickyGroupHeaders="True" />
 {{endregion}}
 

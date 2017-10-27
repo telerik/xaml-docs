@@ -12,6 +12,10 @@ position: 0
 
 The following help article will demonstrate how to bind the __RadDiagram__ in MVVM scenario using the extension ViewModels which are part of the __Telerik.Windows.Controls.Diagrams.Extensions.dll__ project.			
 
+* [Sample MVVM RadDiagram](#sample-mvvm-raddiagram)
+* [Using MVVM to populate RadDiagram with ContainerShapes](#using-mvvm-to-populate-raddiagram-with-containershapes)
+* [Using MVVM to bind SourceConnectorPosition and TargetConnectorPosition properties](#using-mvvm-to-bind-sourceconnectorposition-and-targetconnectorposition-properties)
+
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.				
 
 The DiagrammingFramework comes with a predefined set of ViewModels, further described in the [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%}) tutorial. We will take advantage of these built-in models bellow to quickly build MVVM diagramming solutions.			
@@ -29,8 +33,7 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 
 * [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:						
 
-	#### __C#__
-
+	#### __[C#] Example 1: Creating ViewModel__
 	{{region raddiagram-howto-mvvm-0}}
 		using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
 		public class DiagramViewModel : GraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
@@ -62,9 +65,9 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 		}
 	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 1: Creating ViewModel__
 
-	{{region raddiagram-howto-mvvm-0}}
+	{{region raddiagram-howto-mvvm-1}}
 		Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
 		Public Class DiagramViewModel
 			Inherits GraphSourceBase(Of NodeViewModelBase, LinkViewModelBase(Of NodeViewModelBase))
@@ -86,9 +89,9 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 ##### 2. __Configure the View__
 Once we have all __ViewModels__ in place, we can go ahead and define a __RadDiagram__ instance in our view to consume the business data. We can use style bindings and __DataTemplates__ to apply bindings on the __RadDiagramConnection__ and __RadDiagramShape__ properties.						
 
-#### __XAML__
+#### __[XAML] Example 2: Creating custom style for the connections and shapes__
 
-{{region raddiagram-howto-mvvm-0}}
+{{region raddiagram-howto-mvvm-2}}
 	<Style TargetType="telerik:RadDiagramShape">
 		  <Setter Property="Position" Value="{Binding Position}" />
 		  <Setter Property="RotationAngle" Value="{Binding RotationAngle}" />
@@ -114,21 +117,21 @@ Once we have all __ViewModels__ in place, we can go ahead and define a __RadDiag
 ##### 3. __Associate the ViewModel with the View__
 The final step is to assign the __GraphSource__ property of the __RadDiagram__ to the ViewModel:						
 
-#### __XAML__
+#### __[XAML] Example 3: Declaring RadDiagram in XAML__
 
-{{region raddiagram-howto-mvvm-1}}
+{{region raddiagram-howto-mvvm-3}}
 	<telerik:RadDiagram x:Name="xDiagram"/>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 4: Setting the GraphSource property__
 
-{{region raddiagram-howto-mvvm-1}}
+{{region raddiagram-howto-mvvm-4}}
 	xDiagram.GraphSource = new DiagramViewModel();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Setting the GraphSource propert__
 
-{{region raddiagram-howto-mvvm-1}}
+{{region raddiagram-howto-mvvm-5}}
 	xDiagram.GraphSource = New DiagramViewModel()
 {{endregion}}
 
@@ -143,17 +146,17 @@ The __RadDiagramContainerShapes__ are essentially considered shapes and therefor
 
 For the purpose of this example, we will create the following ViewModels:
 
-* __Brand__ - a class deriving from the __ContainerNodeViewModelBase__ ViewModel that represents a container node						
+* __Brand__: A class deriving from the __ContainerNodeViewModelBase__ ViewModel that represents a container node.						
 
-* __Model__ - a class deriving from the __NodeViewModelBase__ ViewModel that represents a node						
+* __Model__: A class deriving from the __NodeViewModelBase__ ViewModel that represents a node.						
 
-* __Link__ - a class deriving from the __LinkViewModelBase__ ViewModel that represent a link						
+* __Link__: A class deriving from the __LinkViewModelBase__ ViewModel that represent a link.					
 
-* __CarsGraphSource__ - a class deriving from the __ObservableGraphSourceBase__ ViewModel that represent the __RadDiagram GraphSource__
+* __CarsGraphSource__ - a class deriving from the __ObservableGraphSourceBase__ ViewModel that represent the __RadDiagram GraphSource__.
 
-#### __C#__
+#### __[C#] Example 5: Creating ViewModels__
 
-{{region raddiagram-howto-mvvm-2}}
+{{region raddiagram-howto-mvvm-6}}
 	public class Brand : ContainerNodeViewModelBase<object>
 	{
 	}
@@ -209,9 +212,9 @@ For the purpose of this example, we will create the following ViewModels:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Creating ViewModels__
 
-{{region raddiagram-howto-mvvm-2}}
+{{region raddiagram-howto-mvvm-7}}
 	Public Class Brand
 	    Inherits ContainerNodeViewModelBase(Of Object)
 	End Class
@@ -317,9 +320,9 @@ Please note that the __ContainerNodeViewModelBase__ exposes a collection of __In
 
 Next, we can go ahead and define a __RadDiagram__ control in our View:				
 
-#### __XAML__
+#### __[XAML] Example 7: Defining RadDiagram in XAML__
 
-{{region raddiagram-howto-mvvm-2}}
+{{region raddiagram-howto-mvvm-8}}
 	<telerik:RadDiagram x:Name="diagram"
 	                    ConnectionEditTemplate="{StaticResource editTemplate}"
 	                    ConnectionTemplate="{StaticResource contentTemplate}"
@@ -344,20 +347,19 @@ Next, we can go ahead and define a __RadDiagram__ control in our View:
 
 And finally, we need to set the __RadDiagram GraphSource__ property:
 
-#### __C#__
+#### __[C#] Example 8: Setting GraphSource property__
 
-{{region raddiagram-howto-mvvm-3}}
+{{region raddiagram-howto-mvvm-9}}
 	public Example()
 	{
-		InitializeComponent();
-	
+		InitializeComponent();	
 		this.diagram.GraphSource = new CarsGraphSource();
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 9: Setting GraphSource property__
 
-{{region raddiagram-howto-mvvm-3}}
+{{region raddiagram-howto-mvvm-10}}
 	Public Sub New()
 	    InitializeComponent()
 	
@@ -368,7 +370,56 @@ And finally, we need to set the __RadDiagram GraphSource__ property:
 If you run the application now, the __RadDiagram__ should display the following structure:
 ![raddiagram-howto-mvvm-containers](images/raddiagram-howto-mvvm-containers.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.					
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.	
+
+## Using MVVM to bind SourceConnectorPosition and TargetConnectorPosition properties
+
+To bind the __SourceConnectorPoistion__ and __TargetConnectorPoistion__ properties of the RadDiagramConnection you can create string properties in your __LinkViewModelBase<NodeViewModelBase>__ class. The next step is to create an implicit style to bind them in XAML.
+
+> Note that the diagram expects the SourceConnectorPosition and TargetConnectorPosition properties to have default values set.
+
+#### __[C#] Example 10: Creating string SourceConnectorPosition and TargetConnectorPosition properties__
+{{region raddiagram-howto-mvvm-11}}
+	public class Link : LinkViewModelBase<NodeViewModelBase>
+	{
+        public Link()
+        {
+            this.SourceConnectionName = ConnectorPosition.Auto;
+            this.TargetConnectionName = ConnectorPosition.Auto;
+        }
+		
+        private string _sourceConnectionName;
+        public string SourceConnectionName
+        {
+            get { return _sourceConnectionName; }
+            set
+            {
+                _sourceConnectionName = value;
+                OnPropertyChanged("SourceConnectionName");
+            }
+        }
+
+        private string _targetConnectionName;
+        public string TargetConnectionName
+        {
+            get { return _targetConnectionName; }
+            set
+            {
+                _targetConnectionName = value;
+                OnPropertyChanged("TargetConnectionName");
+            }
+        }
+    }
+{{endregion}}
+
+#### __[XAML] Example 11: Binding SourceConnectorPosition and TargetConnectorPosition in XAML__
+
+{{region raddiagram-howto-mvvm-12}}
+	<Style  TargetType="telerik:RadDiagramConnection">
+		<Setter Property="SourceConnectorPosition" Value="{Binding SourceConnectionName,Mode=TwoWay}" />
+		<Setter Property="TargetConnectorPosition" Value="{Binding TargetConnectionName,Mode=TwoWay}" />         
+	</Style>
+{{endregion}}
 
 ## See Also
  * [DataBinding]({%slug raddiagram-data-databinding%})

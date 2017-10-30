@@ -35,6 +35,9 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Table support__
 	The control allows you to display and create tables. This feature includes also support for nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width, header row repeating on new pages, and more. For more information, see the [Table]({%slug radrichtextbox-features-document-elements-tables%}) article.
 
+* __Section Columns__
+	You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns UI]({%slug radrichtextbox-ui-for-applying-rich-text-formatting-section-columns%}) and [Section Columns API]({%slug radrichtextbox-features-section-columns%}) articles.
+
 * __Context menu__
 	A standard context menu is provided out of the box, but it can be easily customized or replaced with a user-defined menu. For more information, see the [Context Menu]({%slug radrichtextbox-features-context-menu%}) article.
 

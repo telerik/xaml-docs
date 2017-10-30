@@ -81,7 +81,7 @@ In RadDocument the base class for all fields is __CodeBasedField__. It is an abs
 
 ## Display Modes
 
-Fields normally have two modes – __Code__ and __Result__. When in code mode, they appear as {<FieldTypeName> [<field parameter>] [<switch> <switch parameter>]*}.
+Fields normally have two modes – __Code__ and __Result__. When in code mode, they appear as {&lt;FieldTypeName&gt; [&lt;field parameter&gt;] [&lt;switch&gt; &lt;switch parameter&gt;]}.
         
 
 For instance, Page Fields appear as { PAGE }, Merge Fields as { MERGEFIELD FirstName } or { MERGEFIELD FirstName \b "text that will appear before the merge field if it is not empty" }.

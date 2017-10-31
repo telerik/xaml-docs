@@ -29,7 +29,7 @@ This topic contains the following sections:
 
 ## Field Types
 
-In RadDocument the base class for all fields is __CodeBasedField__. It is an abstract class that can be inherited from. Some of the implemented and ready-to-use field types are:
+In RadDocument's model the base class for all fields is __CodeBasedField__. It is an abstract class that can be inherited from. Some of the implemented and ready-to-use field types are:
 
 * __DateField__: Inserts the current date in one of the specified formats.
             

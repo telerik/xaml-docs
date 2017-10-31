@@ -10,12 +10,12 @@ position: 0
 
 # Overview
 
-Thank you for choosing __RadVirtualGrid__!
+![VirtualGrid Icon](images/virtualgrid_icon.png)
 
 __RadVirtualGrid__ is a lightweight tabular component, designed to be able to operate with huge datasets. It provides outstanding performance through evading the common templating mechanism used in the framework. Instead, the control avoids adding most of its items to the visual tree and exposes a mechanism for loading data on demand. 
 
 #### __Figure 1: RadVirtualGrid__ 
-![](images/virtualgrid_overview.png)
+![VirtualGrid Overview](images/virtualgrid_overview.png)
 
 __RadVirtualGrid__'s features list:
 
@@ -27,7 +27,11 @@ __RadVirtualGrid__'s features list:
 
 * __Conditional cell decoration__
 
-* __Touch support for vertical and horizontal scrolling__
+* __Touch support__
+
+* __Automation support__
+
+* __Coded UI support__
 
 * __Custom DataProvider__
 

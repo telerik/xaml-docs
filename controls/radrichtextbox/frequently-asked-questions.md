@@ -48,7 +48,7 @@ RadRichTextBox has a Boolean property called __DocumentInheritsDefaultStyleSetti
 
 Here is how you can do that in XAML:
 
-#### __XAML__
+#### __[XAML] Example 1: Applying default style settings on the document__
 
 {{region radrichtextbox-frequently-asked-questions_0}}
     <telerik:RadRichTextBox Name="radRichTextBox1" Grid.Row="1" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" FontWeight="Bold" DocumentInheritsDefaultStyleSettings="True"/>
@@ -59,7 +59,7 @@ Here is how you can do that in XAML:
 If you run that in an example with a __RadRichTextBoxRibbonUI__ and/or __SelectionMiniToolBar__, you will notice that the value of the FontSize they show is 12. That is so, because the unit they use when measuring is points, as opposed to RadRichTextBox's default measuring unit – DIP. You can also set these properties in code behind. If you decide on that option, you can also make use of the methods that the class __Telerik.Windows.Documents.Model.Unit__ exposes for converting between different measuring units. The following code produces the same result as the XAML above:
         
 
-#### __C#__
+#### __[C#] Example 1: Applying default style settings on the document__
 
 {{region radrichtextbox-frequently-asked-questions_1}}
     public void SetDefaultFontPropertiesToEditor(RadRichTextBox editor)
@@ -74,7 +74,7 @@ If you run that in an example with a __RadRichTextBoxRibbonUI__ and/or __Selecti
 
 
 
->These settings will not be applied on text which is imported by a rich text FormatProvider, as the settings defined in the input file/string will be applied.
+>These settings will not be applied on text which is imported by a rich-text [format provider]({%slug radrichtextbox-features-import-export%}), as the settings defined in the input file/string will be applied.
           
 
 ## How to Get and Set the Text of RadRichTextBox
@@ -96,7 +96,7 @@ RadRichTextBox does not have a Text property because different formats for impor
 You can read more about the use of format providers [here]({%slug radrichtextbox-features-import-export%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
         
 
-#### __C#__
+#### __[C#] Example 2: Export a document__
 
 {{region radrichtextbox-frequently-asked-questions_2}}
     public string GetXAML(RadDocument document)
@@ -108,12 +108,12 @@ You can read more about the use of format providers [here]({%slug radrichtextbox
 
 
 
-To get the text stripped of all formatting, you can use __TxtFormatProvider__, which is included in the __Telerik.Windows.Documents__ assembly. Setting the content of RadRichTextBox can be done in the same manner, if you have the content in one of these formats. For example, importing an HTML string to RadDocument can be done as follows:
+To get the text stripped of all formatting, you can use __TxtFormatProvider__, which is included in the __Telerik.Windows.Documents.dll__ assembly. Setting the content of RadRichTextBox can be done in the same manner if you have the content in one of these formats. For example, importing an HTML string to RadDocument can be done as follows:
         
 
 
 
-#### __C#__
+#### __[C#] Example 3: Import a document__
 
 {{region radrichtextbox-frequently-asked-questions_3}}
     public RadDocument ImportHtml(string content)
@@ -128,9 +128,7 @@ To get the text stripped of all formatting, you can use __TxtFormatProvider__, w
 If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert~__ methods of __RadRichTextBox__ or [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}). The Insert method of RadRichTextBox uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position.
         
 
-Inserting text in RadRichTextBox at caret position:
-
-#### __C#__
+#### __[C#] Example 4: Inserting text in RadRichTextBox at caret position__
 
 {{region radrichtextbox-frequently-asked-questions_4}}
     this.radRichTextBox.Insert(textToInsert);
@@ -138,26 +136,32 @@ Inserting text in RadRichTextBox at caret position:
 
 
 
-You can manipulate the caret position before invoking the insert method in order to change the position where you wish the text to appear. You can find more information on document positions and their usage [here]({%slug radrichtextbox-features-positioning%}).
+You can manipulate the caret position before invoking the Insert~() method in order to change the position where the new content will appear. You can find more information on document positions and their usage [here]({%slug radrichtextbox-features-positioning%}).
         
 
 ## Setting the Margins of the Document
 
-If you are using a document in flow layout mode, the document respects the value you set to the Padding property that RadRichTextBox inherits from Control. 
+If you are using a document in [flow layout mode]({%slug radrichtextbox-features-layout-modes%}#flow), the document respects the value you set to the Padding property that RadRichTextBox inherits from Control. 
 
-#### __XAML__
+#### __[XAML] Example 5: Set padding__
 
 {{region radrichtextbox-frequently-asked-questions_1}}
     <telerik:RadRichTextBox Name="radRichTextBox" Padding="0,20,100,60" />
 {{endregion}}
 
 
+#### __[C#] Example 5: Set padding__
 
-With paged layout mode, you can set the margin of the document like this:
+{{region radrichtextbox-frequently-asked-questions_9}}
+    this.editor.Padding = new Thickness(0, 20, 100, 60);
+{{endregion}}
+
+
+With [paged layout mode]({%slug radrichtextbox-features-layout-modes%}#paged), you can set the margin of the document like this:
 
 
 
-#### __XAML__
+#### __[XAML] Example 6: Apply margin to a Section__
 
 {{region radrichtextbox-frequently-asked-questions_2}}
     <telerik:RadRichTextBox Name="editor" LayoutMode="Paged">
@@ -167,21 +171,7 @@ With paged layout mode, you can set the margin of the document like this:
 
 
 
-In code-behind the same effect can be achieved like this:
-
-For flow layout mode:
-
-#### __C#__
-
-{{region radrichtextbox-frequently-asked-questions_9}}
-    this.editor.Padding = new Thickness(0, 20, 100, 60);
-{{endregion}}
-
-
-
-For Paged layout mode:
-
-#### __C#__
+#### __[C#] Example 6: Apply margin to a Section__
 
 {{region radrichtextbox-frequently-asked-questions_10}}
     this.editor.Document.LayoutMode = DocumentLayoutMode.Paged;
@@ -190,12 +180,12 @@ For Paged layout mode:
 
 
 
-If you are using data providers to bind the content of the RichTextBox, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on DocumentChanged.
+If you are using [data providers]({%slug radrichtextbox-features-data-providers%}) to bind the content of RadRichTextBox, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on DocumentChanged.
         
 
-## Inserting multiple consecutive tables
+## Inserting Multiple Consecutive Tables
 
-Inserting multiple [Table]({%slug radrichtextbox-features-document-elements-tables%}) elements in a RadDocument one after another results in them being separated by some space. This may also happen when importing a document from one of the supported formats.The additional space is caused by an empty paragraph appended between the tables and is expected as RadDocument's structure does not allow adjacent tables.
+Inserting multiple [Table]({%slug radrichtextbox-features-document-elements-tables%}) elements in a RadDocument one after another results in them being separated by some space. This may also happen when importing a document from one of the supported formats. The additional space is caused by an empty paragraph appended between the tables and is expected as RadDocument's structure does not allow adjacent tables.
         
 
 When [building a document from code]({%slug radrichtextbox-getting-started%}), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.

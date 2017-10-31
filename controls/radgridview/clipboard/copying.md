@@ -26,7 +26,8 @@ Here's a list of all the available values:
 * **Cells:** Copy grid cells.
 * **Header:** Copy grid header.
 * **Footer:** Copy grid footer.
-* **SkipEmptyRows:** Will not copy rows with values that are all null or empty. (introduced with Q1 2016)
+* **SkipEmptyRows:** Will not copy rows with values that are all null or empty. (introduced with __Q1 2016__)
+* **SkipEmptyColumns:** Will not copy columns with values that are null or empty. (introduced as of __R3 2017 SP1__) 
 * **All:** Copy cells, header and footer.
 
 >The default value is **Cells**.

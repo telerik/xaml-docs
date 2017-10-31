@@ -1,4 +1,4 @@
----
+https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingToICustomTypeProvider---
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
 description: This article demonstrates how to bind RadGridView to Dynamic Data.

@@ -1,4 +1,4 @@
-https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingToICustomTypeProvider---
+https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingToICustomTypeProviderhttps://github.com/telerik/xaml-sdk/tree/master/GridView/BindingToICustomTypeProvider---
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
 description: This article demonstrates how to bind RadGridView to Dynamic Data.
@@ -31,8 +31,7 @@ In case a custom Type needs to be provided by the dynamic type implementation, t
 {% if site.site_name == 'WPF' %}
 ## ICustomTypeDescriptor
 
-When there is a need for providing the information regarding a given type at runtime, the __ICustomTypeDescriptor__ comes in handy. Such implementations are supported by RadGridView. A demonstration of such implementation with the control is demonstrated in the [Binding to ICustomTypeDescriptor SDK Example]().
-
+When there is a need for providing the information regarding a given type at runtime, the __ICustomTypeDescriptor__ comes in handy. Such implementations are supported by RadGridView. A demonstration of such implementation with the control is demonstrated in the [Binding to ICustomTypeDescriptor SDK Example](https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingToICustomTypeDescriptor).
 {% endif %}
 
 ## See Also

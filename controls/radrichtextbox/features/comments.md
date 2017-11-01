@@ -47,8 +47,10 @@ Here is an example usage of these commands:
 #### __XAML__
 
 {{region radrichtextbox-features-comments_0}}
-    <telerik:RadButton Content="New Comment" Command="{Binding ElementName=radRichTextBox, Path=Commands.InsertCommentCommand}" Grid.RowSpan="2"  />
-    <CheckBox Content="Show Comments" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ElementName=radRichTextBox, Path=Commands.ToggleCommentsCommand}" Grid.RowSpan="2"/>
+    <telerik:RadButton Content="New Comment" 
+                       Command="{Binding ElementName=radRichTextBox, Path=Commands.InsertCommentCommand}" />
+    <CheckBox Content="Show Comments" 
+              telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ElementName=radRichTextBox, Path=Commands.ToggleCommentsCommand}" />
 {{endregion}}
 
 

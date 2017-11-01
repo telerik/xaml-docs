@@ -5,12 +5,12 @@ description: Docked/Floating Panes
 slug: raddocking-features-panes-docked-floating-panes
 tags: docked/floating,panes
 published: True
-position: 2
+position: 4
 ---
 
 # Docked/Floating Panes
 
-__RadPane__ is flexible {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control that can be either in docked or in floating state. Each newly created RadPane is docked by default in the root container but you can change this behavior either using the methods explained below or the properties (i.e. __InitialPosition__) exposed by the [RadSplitContainer]({%slug raddocking-features-split-container%}).
+__RadPane__ is a flexible {{ site.framework_name }} control that can be either in docked or in floating state. Each newly created RadPane is docked by default in the root container but you can change this behavior either using the methods explained below or the properties (i.e. __InitialPosition__) exposed by the [RadSplitContainer]({%slug raddocking-features-split-container%}).
 
 ## Docking Panes
 

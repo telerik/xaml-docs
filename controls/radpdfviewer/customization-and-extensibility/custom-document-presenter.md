@@ -71,7 +71,7 @@ Implementing this interface allows you to create a fully functioning document pr
 * __InvalidateArrange():__ This method invalidates the arrangement state.
             
 
-* __UpdatePresenterLayout():__This method updates the presenter layout.
+* __UpdatePresenterLayout():__ This method updates the presenter layout.
             
 
 * __Initialize(IFixedDocumentViewer owner):__ This method initializes the document presenter with the provided owner.

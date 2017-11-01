@@ -5,7 +5,7 @@ description: Pinned/Unpinned Panes
 slug: raddocking-panes-pinned-unpinned-panes
 tags: pinned/unpinned,panes
 published: True
-position: 3
+position: 5
 ---
 
 # Pinned/Unpinned Panes

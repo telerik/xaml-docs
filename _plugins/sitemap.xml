@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+{% if page.xsl %}
+  <?xml-stylesheet type="text/xsl" href="{{ "/sitemap.xsl" | absolute_url }}"?>
+{% endif %}
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% capture site_url %}{% if site.url %}{{ site.url }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
-  {% for post in site.html_pages %}{% unless post.sitemap == false %}
-   <url>
-    <loc>{{ site_url }}{{ post.url | replace:'.html','' }}</loc>
-    <lastmod>{% timestamp %}{{ post.url | replace_first:'/' | replace:'.html','.md' }}{% endtimestamp %}</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  {% endunless %}{% endfor %}
+  {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
+  {% for collection in collections %}
+    {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
+    {% for doc in docs %}
+      <url>
+        <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
+      </url>
+    {% endfor %}
+  {% endfor %}
+
+  {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
+  {% for page in pages %}
+    <url>
+      <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
+    </url>
+  {% endfor %}
+
+  {% assign static_files = page.static_files | where_exp:'page','page.name != "404.html"' %}
+  {% for file in static_files %}
+    <url>
+      <loc>{{ file.path | absolute_url | xml_escape }}</loc>
+    </url>
+  {% endfor %}
 </urlset>

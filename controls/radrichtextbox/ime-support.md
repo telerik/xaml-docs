@@ -48,7 +48,7 @@ The **ICaretFactory** interface has a CreateCaret() method which is responsible 
 
 ## How to implement your own IME support?
 
-To achieve a different than the Microsoft IME support, you should implement your own caret which inherits RadRichTextBox’ Caret class and overrides the handlers of the above mentioned events. In these overridden methods you can execute the specific logic for the corresponding input method editor. 
+To achieve a different than the Microsoft IME support, you should implement your own caret which inherits RadRichTextBox’s Caret class and overrides the handlers of the above mentioned events. In these overridden methods you can execute the specific logic for the corresponding input method editor. 
 
 
 #### __C#__

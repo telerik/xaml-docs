@@ -49,6 +49,8 @@ Here is an example on how to copy column headers as well as selected data:
 
 ## Events
 
+> With the initial implementation, the __CopyingCellClipboardContent__ will be thrown for the cells only. As of the 2017.3.1023 latest internal build and with the __R1 2018__ official version, the event will be thrown for the header and footer cells as well.
+
 There are two events that allow you to control the copying operation: __Copying__ and __CopyingCellClipboardContent.__ The first allows you to cancel a copying operation, whereas the second event allows you to cancel copying for a single cell or override the value to be copied to the Clipboard. The latter is especially useful if you have columns with custom cell templates and you would like to be able to place their values in the clipboard. Here is an example of how you can accomplish that:
 
 #### __[C#] Example 2: The CopyingCellClipboardContent Event__

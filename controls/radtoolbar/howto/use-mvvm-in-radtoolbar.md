@@ -10,15 +10,15 @@ position: 5
 
 # Use MVVM in RadToolbar
 
-This example shows how to use the __RadToolBar__ control with the Model-View-ViewModel (MVVM) pattern and a custom DataTemplateSelector.
+This example shows how to use the __RadToolBar__ control with the Model-View-ViewModel (MVVM) pattern and a custom **DataTemplateSelector**.
 
-### 1. __Implementing the custom DataTemplateSelector__
+### 1. __Implement the custom DataTemplateSelector__
 
-Since there is no ToolBarItem, because ToolBar may contain variety of other controls, we will use custom DataTemplateSelector to help us determine the template for each item inside the ToolBar:            
+Because RadToolBar may contain a variety of other controls as its items, we will use a custom DataTemplateSelector to help us determine the template for each item inside its ItemsSource.
 
-#### __[C#] Example 1: Implementing the custom DataTemplateSelector__
+#### __[C#] Example 1: The custom DataTemplateSelector__
 
-{{region radtoolbar-mvvm-support-0}}
+{{region cs-radtoolbar-mvvm-support-0}}
     public class ToolBarItemTemplateSelector : DataTemplateSelector
     {
         public override System.Windows.DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -39,9 +39,9 @@ Since there is no ToolBarItem, because ToolBar may contain variety of other cont
     }
 {{endregion}}
 
-#### __[VB.NET] Example 1: Implementing the custom DataTemplateSelector__
+#### __[VB.NET] Example 1: The custom DataTemplateSelector__
 
-{{region radtoolbar-mvvm-support-1}}
+{{region vb-radtoolbar-mvvm-support-1}}
     Public Class ToolBarItemTemplateSelector
         Inherits DataTemplateSelector
         Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
@@ -74,10 +74,9 @@ Since there is no ToolBarItem, because ToolBar may contain variety of other cont
     End Class
 {{endregion}}
 
+#### __[XAML] Example 2: Assign the ItemTemplateSelector property__
 
-#### __[XAML] Example 2: Assigning the ItemTemplateSelector Property__
-
-{{region radtoolbar-mvvm-support-2}}
+{{region xaml-radtoolbar-mvvm-support-2}}
     <Window.Resources>
         <local:ToolBarItemTemplateSelector 	x:Key="TemplateSelector"
                                             TextBlockTemplate="{StaticResource TextBlockTemplate}"
@@ -87,13 +86,13 @@ Since there is no ToolBarItem, because ToolBar may contain variety of other cont
     <telerik:RadToolBar ItemTemplateSelector="{StaticResource TemplateSelector}" />
 {{endregion}}
 
-### 2. __Creating ViewModels__
+### 2. __Create ViewModels__
 
-We will create two view models for this example: ColorPickerViewModel and TextBlockViewModel. The ColorPickerViewModel will contain a collection of colors and the TextBlockViewModel will contain only one property - Text:
+We will create two view models for this example: **ColorPickerViewModel** and **TextBlockViewModel**. The ColorPickerViewModel will contain a collection of colors and the TextBlockViewModel will contain a single text property.
 
-#### __[C#] Example 3: Defining ColorPickerViewModel and TextViewModel__
+#### __[C#] Example 3: Define ColorPickerViewModel and TextViewModel__
 
-{{region radtoolbar-mvvm-support-3}}
+{{region cs-radtoolbar-mvvm-support-3}}
     public class ColorPickerViewModel : ViewModelBase
     {
         public ColorPickerViewModel()
@@ -144,9 +143,9 @@ We will create two view models for this example: ColorPickerViewModel and TextBl
     }
 {{endregion}}
 
-#### __[VB.NET] Example 3: Defining ColorPickerViewModel and TextViewModel__
+#### __[VB.NET] Example 3: Define ColorPickerViewModel and TextViewModel__
 
-{{region radtoolbar-mvvm-support-4}}
+{{region vb-radtoolbar-mvvm-support-4}}
     Public Class ColorPickerViewModel
     Inherits ViewModelBase
     Public Sub New()
@@ -201,14 +200,13 @@ We will create two view models for this example: ColorPickerViewModel and TextBl
     End Class
 {{endregion}}
 
+### 3. __Define the DataTemplates for the DataTemplateSelector__           
 
-The next step is to define the templates for the ViewModel classes:            
-
-> In order to use the RadColorPicker, you have to add references to the following assembly: __Telerik.Windows.Controls.Input__
+> In order to use the RadColorPicker control, you have to add a reference to the following assembly: __Telerik.Windows.Controls.Input__
 
 #### __[XAML] Example 4: Defining the templates for the ViewModels:
 
-{{region radtoolbar-mvvm-support-5}}
+{{region xaml-radtoolbar-mvvm-support-5}}
     <DataTemplate x:Key="TextBlockTemplate">
         <TextBlock FontWeight="Bold" Text="{Binding Text}"/>
     </DataTemplate>
@@ -223,11 +221,13 @@ The next step is to define the templates for the ViewModel classes:
     </DataTemplate>
 {{endregion}}
 
-After that we are going to create our MainViewModel which will contain a collection of our ViewModels:
+### 4. __Create the MainViewModel__
 
-#### __[C#] Example 5: Creating the MainViewModel__
+Let's now create the MainViewModel which will contain a collection of our ViewModels.
 
-{{region radtoolbar-mvvm-support-6}}
+#### __[C#] Example 5: Create the MainViewModel__
+
+{{region cs-radtoolbar-mvvm-support-6}}
     public class MainViewModel
     {
         public MainViewModel()
@@ -251,9 +251,9 @@ After that we are going to create our MainViewModel which will contain a collect
     }
 {{endregion}}
 
-#### __[VB.NET] Example 5: Creating the MainViewModel__
+#### __[VB.NET] Example 5: Create the MainViewModel__
 
-{{region radtoolbar-mvvm-support-7}}
+{{region vb-radtoolbar-mvvm-support-7}}
     Public Class MainViewModel
         Public Sub New()
             Me.PopulateSampleViewModel()
@@ -281,14 +281,14 @@ After that we are going to create our MainViewModel which will contain a collect
     End Class
 {{endregion}}
 
-### 3.  __Setting the DataContext and ItemsSource of the RadToolBar__
+### 5.  __Set the DataContext and ItemsSource of the RadToolBar__
 
-Finally we need to instantiate our ViewModel, assign it as the DataContext of the ToolBar and bind the ItemsSource property to the Items property in our ViewModel. We also set the VerticalAlignment to center and add some margin for better visualization:
+Finally we need to instantiate our ViewModel and assign it as the DataContext of the ToolBar. You should then bind the **ItemsSource** property to the **Items** property in our ViewModel. Let's also set the **VerticalAlignment** to **Center** and add some margins for better visualization.
 
-#### __[XAML] Example 6: Setting the DataContext and ItemsSource of the RadToolBar:
+#### __[XAML] Example 6: Set the DataContext and ItemsSource of the RadToolBar__
 
-{{region radtoolbar-mvvm-support-8}}
-<Window.Resources>
+{{region xaml-radtoolbar-mvvm-support-8}}
+    <Window.Resources>
         <DataTemplate x:Key="TextBlockTemplate">
             <TextBlock FontWeight="Bold" Text="{Binding Text}"/>
         </DataTemplate>
@@ -319,7 +319,7 @@ Finally we need to instantiate our ViewModel, assign it as the DataContext of th
 #### __Figure 1: MVVM ToolBar with custom DataTemplateSelector__
 ![ToolBar MVVM](images/RadToolBar_MVVM.png)
 
-> In order to see an extended implemenation with custom styles, you can check out our [ToolBarMVVM SDK Example](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarMVVM) 
+> For an extended implementation with custom styles, check out the [ToolBarMVVM](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarMVVM) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
 
 ## See Also
 * [ToolBar DataBinding]({%slug toolbar-databinding%})

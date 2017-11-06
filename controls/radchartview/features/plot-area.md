@@ -51,6 +51,42 @@ You can customize the plot area visual via the __PlotAreaStyle__ property of the
 #### __Figure 3: PlotAreaStyle example__
 ![PlotAreaStyle example](images/radchartview-features-plot-area-2.png)
 
+## Displaying stacked elements 
+
+By default the order in which the elements are defined in XAML determines which will be in front of the other when displayed. You can control which element is displayed on top by setting the elements' **ZIndex** property. RadChartView elements which have this property are [Series]({%slug radchartview-series-chartseries%}), [Annotations]({%slug radchartview-annotations-overview%}) and [Axes]({%slug radchartview-axes-axis%}).
+
+#### __[XAML] Example 3: Setting ZIndex property__
+{{region radchartview-features-plot-area-2}}
+	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
+            <telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:CategoricalAxis/>
+            </telerik:RadCartesianChart.HorizontalAxis>
+
+            <telerik:RadCartesianChart.VerticalAxis >
+                <telerik:LinearAxis />
+            </telerik:RadCartesianChart.VerticalAxis>
+
+            <telerik:RadCartesianChart.Series>
+                <telerik:BarSeries>
+                    <telerik:BarSeries.DataPoints>
+                        <telerik:CategoricalDataPoint Category="January" Value="3" />
+                        <telerik:CategoricalDataPoint Category="February" Value="5" />
+                    </telerik:BarSeries.DataPoints>
+                </telerik:BarSeries>
+
+                <telerik:LineSeries ZIndex="100">
+                    <telerik:LineSeries.DataPoints >
+                        <telerik:CategoricalDataPoint Category="January" Value="1" />
+                        <telerik:CategoricalDataPoint Category="February" Value="5" />
+                    </telerik:LineSeries.DataPoints>
+                </telerik:LineSeries>
+            </telerik:RadCartesianChart.Series>
+        </telerik:RadCartesianChart>
+{{endregion}}
+
+#### __Figure 4: ZIndex example__
+![ZIndex example](images/radchartview-ZIndex.png)
+ 
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})
 * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

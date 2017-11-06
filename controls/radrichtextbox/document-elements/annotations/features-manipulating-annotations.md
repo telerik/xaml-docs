@@ -53,7 +53,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 
 
-* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the position where the caret is at.First, you can obtain the current inline like this:
+* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the caret position. First, you can obtain the current inline like this:
 
 #### __C#__
 

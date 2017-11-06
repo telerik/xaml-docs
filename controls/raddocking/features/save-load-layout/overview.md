@@ -288,7 +288,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 {{region cs-raddocking-features-save-load-layout_5}}
 	private void LoadLayout()
 	{
-	    // Load your layot from the isolated storage.
+	    // Load your layout from the isolated storage.
 	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
 	    {
 	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
@@ -303,7 +303,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 {{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
-		' Load your layot from the isolated storage.
+		' Load your layout from the isolated storage.
 		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
 			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
 				Me.radDocking.LoadLayout(isoStream)
@@ -319,7 +319,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 {{region cs-raddocking-features-save-load-layout_6}}
 	private void LoadLayout()
 	{
-	    // Load your layot from the isolated storage.
+	    // Load your layout from the isolated storage.
 	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly())
 	    {
 	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
@@ -334,7 +334,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 {{region vb-raddocking-features-save-load-layout_6}}
 	Private Sub LoadLayout()
-		' Load your layot from the isolated storage.
+		' Load your layout from the isolated storage.
 		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
 			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
 				Me.radDocking.LoadLayout(isoStream)

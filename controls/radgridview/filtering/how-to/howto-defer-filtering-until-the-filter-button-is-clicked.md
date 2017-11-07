@@ -10,5 +10,11 @@ position: 15
 
 # Defer Filtering Until the Filter Button is Clicked
 
-When in Popup filtering mode, you can set the GridViewColumn.IsFilteringDeferred property to true. Filtering will be performed when the end user clicks the Filter button. The Clear button will immediately clear the column filter regardless of this setting.
+By default, when in **Popup** filtering mode, filtering will be applied to the RadGridView control once any of the two field filter editors loses focus.
 
+You can set a column's **IsFilteringDeferred** property to **True** to change this behavior so that filtering will be performed only when the end user clicks the **Filter** button. Please note that the **Clear** button will immediately clear the column filter regardless of this setting.
+
+## See Also
+
+ * [Basic Filtering]({%slug gridview-filtering-basic%})
+ * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

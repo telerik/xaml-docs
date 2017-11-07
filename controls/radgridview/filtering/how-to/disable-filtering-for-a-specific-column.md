@@ -10,9 +10,11 @@ position: 1
 
 # Disable Filtering for a Specific Column
 
+You can disable filtering for a specific column by setting its **IsFilterable** property to **False**. This will hide the filtering UI of the respective column and the end user will not be able to perform filtering. The property's default value is **True**.
 
-If a column is filterable you can disable filtering by setting its IsFilterable property to false. This will hide the filtering UI of the respective column and the end user will not be able to perform filtering.
+If the data displayed in the column is not filterable in the first place, setting the IsFilterable property will not have any effect. To learn what your properties need to implement to become filterable, please have a look at the [Filter a Custom Type]({%slug gridview-filtering-howto-filter-a-custom-type%}) article.
 
-The IsFilterable property is true by default. If data displayed in the column is not filterable in the first place, setting IsFilterable to true will not do anything, since true is the default value anyway. To learn what your property needs to implement in order to become filterable, please read this [article.]({%slug gridview-filtering-howto-filter-a-custom-type%})
+## See Also
 
-
+* [Basic Filtering]({%slug gridview-filtering-basic%})
+* [Filter a Custom Type]({%slug gridview-filtering-howto-filter-a-custom-type%})

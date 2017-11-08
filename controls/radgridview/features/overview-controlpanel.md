@@ -10,18 +10,17 @@ position: 14
 
 # Control Panel
 
-The Control Panel is a feature of the RadGridView that provides the end user with the option to change different configurations related to RadGridView`s settings through additional elements positioned on the top right of the control.
+The Control Panel is a feature of the RadGridView that provides the end user with the option to change different configurations related to RadGridView's settings through additional elements positioned on the top right of the control.
 
+#### __Figure 1: Control Panel within RadGridView__
 
-__Figure 1:__ Control Panel within RadGridView
-
-![gridview control panel 1](images/gridview_controlpanel_01.png)
+![Control Panel within RadGridView](images/gridview_controlpanel_01.png)
 
 
 In order to add items in the Control Panel, you need to set the __ControlPanelItems__ property of the RadGridView. You can define different content for as many ControlPanelItems as you need. Each ControlPanelItem can allow the end user to configure different options. Each item should have a __ControlPanelItem.Content__.
 
 
-#### __[XAML] Example 1:__ Adding items in the Control Panel.
+#### __[XAML] Example 1: Adding items in the Control Panel__
 
 {{region xaml-gridview-overview-controlpanel_1}}
 	  <telerik:RadGridView.ControlPanelItems>
@@ -41,7 +40,7 @@ In order to add items in the Control Panel, you need to set the __ControlPanelIt
 
 You can also set a custom display for the items. For the purpose please set __ControlPanelItem.ButtonContent__ as shown in Example 2.
 
-#### __[XAML] Example 2:__ Setting a custom display for the items.
+#### __[XAML] Example 2: Setting a custom display for the items__
 
 
 {{region xaml-gridview-overview-controlpanel_2}}
@@ -63,7 +62,7 @@ You can also set a custom display for the items. For the purpose please set __Co
 >tip You can review a __runnable solution__ showing how to define ControlPanelItems from our SDK Samples Browser, which you can download from [here](https://demos.telerik.com/xaml-sdkbrowser/). The example is listed under __GridView/ControlPanel__
    
 
-## Reusing Control Panel Items  ##
+## Reusing Control Panel Items
 
  You can add a common Style targeting the ControlPanel that all the RadGridView controls in the application will inherit.
 
@@ -73,12 +72,12 @@ The __ControlPanelItemsCollection__ property of the RadGridView, added in Q1 201
 You can set the __ControlPanelItemsCollection__ either implicitly or explicitly. We advise on using the first approach. 
 {% endif %}
 
-### Implicitly Set the Control Panel Items  ###
+### Implicitly Set the Control Panel Items
 
 It is possible to declare a style that targets the RadGridView control. In this case, the style will be applied to all RadGridView controls in the application, as shown in Example 3. 
 
 
-#### __[XAML] Example 3:__ Declare a common style for the Control Panel.
+#### __[XAML] Example 3: Declare a common style for the Control Panel__
 
 {{region xaml-gridview-overview-controlpanel_3}}
 	  <Style TargetType="telerik:RadGridView">
@@ -114,12 +113,14 @@ It is possible to declare a style that targets the RadGridView control. In this 
 	  </Style>
 {{endregion}}
 
+>If you're using [implicit styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadGridViewStyle__.
+
 {% if site.site_name == 'WPF' %}
-### Explicitly Set the Control Panel Items ###
+### Explicitly Set the Control Panel Items
 
 You can change the control panel items explicitly for a specific RadGridView. First, the __ControlPanelItemCollection__ should be created as a static resource: 
 
-#### __[XAML] Example 4:__ Explicitly change the item collection of the RadGridView`s Control Panel.
+#### __[XAML] Example 4: Explicitly change the item collection of the RadGridView's Control Panel__
 
 {{region xaml-gridview-overview-controlpanel_4}}
 	  <telerik:ControlPanelItemCollection x:Key="itemsControl" x:Shared="False" >
@@ -149,7 +150,7 @@ You can change the control panel items explicitly for a specific RadGridView. Fi
 
 Then set the __ControlPanelItems__ property of the specific RadGridView:
 
-#### __[XAML] Example 5:__ Set RadGridView's ControlPanelItems property
+#### __[XAML] Example 5: Set RadGridView's ControlPanelItems property__
 
 {{region xaml-gridview-overview-controlpanel_5}}
 	<telerik:RadGridView Grid.Row="0"
@@ -165,9 +166,5 @@ Then set the __ControlPanelItems__ property of the specific RadGridView:
 ## See Also
  
  * [Filtering]({%slug gridview-overview-filtering%})
-
  * [Sorting]({%slug gridview-overview-sorting%})
-
  * [Validating]({%slug gridview-managing-data-validation%})
-
-

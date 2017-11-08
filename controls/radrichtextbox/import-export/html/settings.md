@@ -102,7 +102,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport;
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	HtmlFormatProvider.ExportSettings = htmlExportSettings;
+	htmlFormatProvider.ExportSettings = htmlExportSettings;
 {{endregion}}
 
 ## Import Settings
@@ -128,7 +128,7 @@ __HtmlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 	htmlImportSettings.UseDefaultStylesheetForFontProperties = true;	
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	HtmlFormatProvider.ImportSettings = htmlImportSettings;
+	htmlFormatProvider.ImportSettings = htmlImportSettings;
 {{endregion}}
 
 ## See Also

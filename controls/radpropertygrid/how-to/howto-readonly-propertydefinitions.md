@@ -26,4 +26,4 @@ Here is a simple PropertyDefinition declaration:
 	</telerik:PropertyDefinition>
 {{endregion}}
 
-> For an extended implementation, check out the [ReadOnlyPropertyDefinition](https://github.com/telerik/xaml-sdk/tree/master/PropertyGrid/ReadOnlyPropertyDefinition) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
+> For an extended example, check out the [ReadOnlyPropertyDefinition](https://github.com/telerik/xaml-sdk/tree/master/PropertyGrid/ReadOnlyPropertyDefinition) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).

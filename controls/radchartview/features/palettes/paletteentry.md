@@ -10,21 +10,20 @@ position: 2
 
 # Palette Entry
 
-Each palette contains PaletteEntries which expose the following properties:        
+Each palette contains PaletteEntry objects which expose the following properties:        
 
 * Fill
 * Stroke
 * AdditionalFill
 * AdditionalStroke
 
-__Fill__ and __Stroke__ are the most commonly used properties which affect most of the series in __RadChartView__. The other two are more specific and are not relevant for all types of series. In the OhlcSeries the properties __Open__ and __Close__ define two types of sticks, depending on which of these properties has a bigger value. One of these types takes its color from __Stroke__ and the other - from __AdditionalStroke__. Similarly the __AdditionalFill__ property affects the CandlestickSeries.        
+__Fill__ and __Stroke__ are the most commonly used properties which affect most of the series in RadChartView. __AdditionalFill__ and __AdditionalStroke__ are more specific and are not relevant for all types of series. 
 
-Here is an example of how to use the __AdditionalFill__ and __AdditionalStroke__ properties in CandlestickSeries:        
+> The AdditionalStroke property, for example, is relevant in the OhlcSeries, where the properties OpenBinding and CloseBinding define two types of sticks, depending on which of these properties has a bigger value. One of these types takes its color from Stroke and the other - from AdditionalStroke. Similarly, the AdditionalFill property affects the CandlestickSeries.     
 
-#### __XAML__
-
-{{region radchartview-palettes-paletteentry_0}}
-	<telerik:RadCartesianChart >
+#### __[XAML] Example 1: Creating a custom palette__
+{{region radchartview-palettes-paletteentry-0}}
+	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.Palette>
 	        <telerik:ChartPalette>
 	            <telerik:ChartPalette.GlobalEntries>
@@ -59,10 +58,29 @@ Here is an example of how to use the __AdditionalFill__ and __AdditionalStroke__
 	            <telerik:OhlcDataPoint Category="Thu" Low="3" High="7" Open="6" Close="4.5"/>
 	            <telerik:OhlcDataPoint Category="Fri" Low="3" High="7" Open="5.5" Close="4"/>
 	        </telerik:CandlestickSeries.DataPoints>
-	    </telerik:CandlestickSeries>
-	
+	    </telerik:CandlestickSeries>	
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-Here is a snapshot of the example:
-![Rad Chart View-palettes-paletteentry-0](images/RadChartView-palettes-paletteentry-0.png)
+#### __Figure 1: OhlcSeries with Custom Palette__
+![OhlcSeries with Custom Palette](images/RadChartView-palettes-paletteentry-0.png)
+
+## Getting a PaletteEntry of a Series
+
+ You can get the PaletteEntry of a series using the **Palette** property of the chart through its **GetEntry** method. 
+
+ > When you are working with BarSeries with its property **PaletteMode** set to **DataPoint** you can also get the PaletteEntry per data point.
+
+#### __[C#] Example 2: Getting the palette entry of a series__
+{{region radchartview-features-pallettes-paletteentry-1}}
+	PaletteEntry? paletteEntry = this.chart.Palette.GetEntry(this.series, 0);
+{{endregion}}
+
+#### __[VB.NET] Example 2: Getting the palette entry of a series__
+{{region radchartview-features-pallettes-paletteentry-2}}
+	Dim paletteEntry As System.Nullable(Of PaletteEntry) = Me.chart.Palette.GetEntry(Me.series, 0)
+{{endregion}}
+
+## See Also
+* [Palettes]({%slug radchartview-features-palettes-introduction%})
+* [Creating Custom palettes]({%slug radchartview-features-palettes-custom-palettes%})

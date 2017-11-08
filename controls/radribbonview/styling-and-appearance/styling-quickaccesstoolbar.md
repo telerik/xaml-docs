@@ -77,6 +77,113 @@ Here is a snapshot of the result:
 
 {% endif %}
 
+## Styling QuickAccessToolbar items using ItemContainerStyleSelector
+
+> With **R1 2017** we introduced predefined styles inside QuickAccessToolbar, so in order to style its items you can use QuickAccessToolbar's **ItemContainerStyleSelector** property.
+
+#### __[XAML] Example 1: RadRibbonView with QuickAccesToolbar__
+{{region xaml-radribbonview-styling-quickaccesstoolbar-0}}
+	 <telerik:RadRibbonView ApplicationButtonContent="File">
+        <telerik:RadRibbonView.QuickAccessToolBar>
+            <telerik:QuickAccessToolBar>
+               <telerik:RadRibbonButton Text="Save" Foreground="White" />
+                <telerik:RadRibbonButton Text="Print" Foreground="White"/>
+            </telerik:QuickAccessToolBar>
+        </telerik:RadRibbonView.QuickAccessToolBar>
+    </telerik:RadRibbonView>
+{{endregion}}
+
+#### __[C#] Example 2: Define ItemContainerStyleSelector__  
+{{region cs-radribbonview-styling-quickaccesstoolbar-2}}
+	public class QATItemContainerStyleSelector : StyleSelector
+    {
+        public Style SaveStyle { get; set; }
+        public Style PrintStyle { get; set; }
+
+        public override Style SelectStyle(object item, DependencyObject container)
+        {
+            var button = item as RadRibbonButton;
+            if (button != null)
+            {
+                if(button.Text == "Save")
+                {
+                    return this.SaveStyle;
+                }
+                else if(button.Text == "Print")
+                {
+                    return this.PrintStyle;
+                }
+            }
+
+            return base.SelectStyle(item, container);
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 2: Define ItemContainerStyleSelector__  
+{{region vb-radribbonview-styling-quickaccesstoolbar-3}}
+    Public Class QATItemContainerStyleSelector
+        Inherits StyleSelector
+        Public Property SaveStyle() As Style
+            Get
+                Return m_SaveStyle
+            End Get
+            Set
+                m_SaveStyle = Value
+            End Set
+        End Property
+        Private m_SaveStyle As Style
+        Public Property PrintStyle() As Style
+            Get
+                Return m_PrintStyle
+            End Get
+            Set
+                m_PrintStyle = Value
+            End Set
+        End Property
+        Private m_PrintStyle As Style
+
+        Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
+            Dim button = TryCast(item, RadRibbonButton)
+            If button IsNot Nothing Then
+                If button.Text = "Save" Then
+                    Return Me.SaveStyle
+                ElseIf button.Text = "Print" Then
+                    Return Me.PrintStyle
+                End If
+            End If
+
+            Return MyBase.SelectStyle(item, container)
+        End Function
+    End Class
+{{endregion}}
+
+#### __[XAML] Example 3: Define custom styles and set ItemContainerStyleSelector__
+{{region xaml-radribbonview-styling-quickaccesstoolbar-1}}
+	<Style x:Key="PrintStyle" TargetType="telerik:RadRibbonButton" BasedOn="{StaticResource RadRibbonButtonStyle}">
+            <Setter Property="Background" Value="Red" />
+            <Setter Property="Size" Value="Medium" />
+    </Style>
+
+    <Style x:Key="SaveStyle" TargetType="telerik:RadRibbonButton" BasedOn="{StaticResource RadRibbonButtonStyle}">
+            <Setter Property="Background" Value="Blue" />
+            <Setter Property="Size" Value="Medium" />
+    </Style>
+
+    <local:QATItemContainerStyleSelector x:Key="QATItemContainerStyleSelector"
+                    PrintStyle="{StaticResource PrintStyle}"
+                    SaveStyle="{StaticResource SaveStyle}" />
+
+    <Style BasedOn="{StaticResource QuickAccessToolBarStyle}" TargetType="telerik:QuickAccessToolBar">
+        <Setter Property="ItemContainerStyleSelector" Value="{StaticResource QATItemContainerStyleSelector}" />
+    </Style>
+{{endregion}}
+
+> This example is implemented with [NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}) and the styles are based on the [default styles]({%slug implicit-styles-styling-the-controls%}) for the theme.
+
+#### __Figure 1: QuickAccessToolBar styled with ItemContainerStyleSelector__ 
+ ![QuickAccessToolBar ItemContainerStyleSelector](images/RadRibbonView_QuickAccessToolbar_ItemContainerStyleSelector.png)
+
 ## See Also
  * [Styling the RadRibbonView]({%slug radribbonview-styling-ribbonview%})
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})

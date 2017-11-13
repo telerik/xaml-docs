@@ -36,9 +36,7 @@ In order to use __RadDataFilter__ in your project, you need to add references to
 
 After adding references to the aforementioned dlls, you can declare a new __RadDataFilter__ as any normal Silverlight/WPF control.
 
->
-
-To use the __RadDataFilter__ in the XAML you have to add the following namespace declaration:
+> To use the __RadDataFilter__ in the XAML you have to add the following namespace declaration:
 
 #### __XAML__
 
@@ -70,9 +68,7 @@ You can configure __RadDataFilter__ via the properties that it exposes. You can 
 
 ## Filtering a Collection
 
->
-
-To learn more about the usage of the __Source__ and the __FilteredSource__ properties, please read [this topic]({%slug raddatafilter-features-source-and-filtered-source%}).
+> To learn more about the usage of the __Source__ and the __FilteredSource__ properties, please read [this topic]({%slug raddatafilter-features-source-and-filtered-source%}).
 
 __RadDataFilter__ can filter any collection that implements the __IEnumerable__ interface. The only thing that you have to do is to pass the collection to its __Source__ property.
 

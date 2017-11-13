@@ -16,9 +16,9 @@ This article will demonstrate a basic implementation of the DragDropManager by d
 
 Firstly, for the purpose of this tutorial we will create a business object ApplicationInfo, which will expose a couple of properties as well as a sample collection for populating the ListBoxes. The structure of the class used in this example is shown on the next code snippets:
 
-#### __C#__
+#### __[C#] Example 1: Create ApplicationInfo__
 
-{{region dragdropmanager-getting-started_0}}
+{{region cs-dragdropmanager-getting-started_0}}
 	public class ApplicationInfo
 	{
 		public Double Price
@@ -89,9 +89,9 @@ Firstly, for the purpose of this tutorial we will create a business object Appli
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Create ApplicationInfo__
 
-{{region dragdropmanager-getting-started_1}}
+{{region vb-dragdropmanager-getting-started_1}}
 	Public Class ApplicationInfo
 	 Public Property Price() As [Double]
 	  Get
@@ -180,8 +180,8 @@ Then we need to define our ListBoxes with suitable ItemTemplates. We also enable
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
-{{region dragdropmanager-getting-started_2}}
+#### __[XAML] Example 2: Define ListBoxes, style and DataTemplate__
+{{region xaml-dragdropmanager-getting-started_2}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	      <Grid.Resources>
 	          <Style TargetType="ListBoxItem">
@@ -207,9 +207,9 @@ Then we need to define our ListBoxes with suitable ItemTemplates. We also enable
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 2: Define ListBoxes, style and DataTemplate__
 
-{{region dragdropmanager-getting-started_13}}
+{{region xaml-dragdropmanager-getting-started_3}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	      <Grid.Resources>
 	          <Style TargetType="ListBoxItem">
@@ -239,25 +239,23 @@ Then we need to define our ListBoxes with suitable ItemTemplates. We also enable
 
 Afterwards we need to set the ItemsSource of the controls:
 
-#### __C#__
+#### __[C#] Example 3: Set ItemsSource__
 
-{{region dragdropmanager-getting-started_3}}
+{{region cs-dragdropmanager-getting-started_4}}
 	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos();
 	MyAppList.ItemsSource = new ObservableCollection<ApplicationInfo>();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Set ItemsSource__
 
-{{region dragdropmanager-getting-started_4}}
+{{region vb-dragdropmanager-getting-started_5}}
 	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos()
 	MyAppList.ItemsSource = New ObservableCollection(Of ApplicationInfo)()
 {{endregion}}
 
-Now, we need to attach Drag-Drop event handlers:
+#### __[C#] Example 4: Attach Drag-Drop event handlers__
 
-#### __C#__
-
-{{region dragdropmanager-getting-started_5}}
+{{region cs-dragdropmanager-getting-started_6}}
 	DragDropManager.AddDragInitializeHandler(ApplicationList, OnDragInitialize);
 	DragDropManager.AddDragInitializeHandler(MyAppList, OnDragInitialize);
 	
@@ -271,9 +269,9 @@ Now, we need to attach Drag-Drop event handlers:
 	DragDropManager.AddDropHandler(MyAppList, OnDrop);	
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Attach Drag-Drop event handlers__
 
-{{region dragdropmanager-getting-started_6}}
+{{region vb-dragdropmanager-getting-started_7}}
 	DragDropManager.AddDragInitializeHandler(ApplicationList, New DragInitializeEventHandler(AddressOf OnDragInitialize))
 	DragDropManager.AddDragInitializeHandler(MyAppList, New DragInitializeEventHandler(AddressOf OnDragInitialize))
 	
@@ -287,11 +285,13 @@ Now, we need to attach Drag-Drop event handlers:
 	DragDropManager.AddDropHandler(MyAppList, New DragEventHandler(AddressOf OnDrop))	
 {{endregion}}
 
+> For more information about the available events, check out the [Events]({%slug dragdropmanager-events%}) article.
+
 Then on DragInitialize we define the data that will be dragged as well as the visual representation. We also set DragDropEffects to all to allow drop on all scenarios.
 
-#### __C#__
+#### __[C#] Example 5: Implement OnDragInitialize__
 
-{{region dragdropmanager-getting-started_7}}
+{{region cs-dragdropmanager-getting-started_8}}
 	private void OnDragInitialize(object sender, DragInitializeEventArgs args)
 	{
 	    args.AllowedEffects = DragDropEffects.All;
@@ -303,9 +303,9 @@ Then on DragInitialize we define the data that will be dragged as well as the vi
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Implement OnDragInitialize__
 
-{{region dragdropmanager-getting-started_8}}
+{{region vb-dragdropmanager-getting-started_9}}
 	Private Sub OnDragInitialize(ByVal sender As Object, ByVal args As DragInitializeEventArgs)
 		args.AllowedEffects = DragDropEffects.All
 		Dim payload = DragDropPayloadManager.GeneratePayload(Nothing)
@@ -318,9 +318,9 @@ Then on DragInitialize we define the data that will be dragged as well as the vi
 
 We also set mouse cursor to be arrow:
 
-#### __C#__
+#### __[C#] Example 6: Implement OnGiveFeedback__
 
-{{region dragdropmanager-getting-started_9}}
+{{region cs-dragdropmanager-getting-started_10}}
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
 	{
 	    args.SetCursor(Cursors.Arrow);
@@ -329,9 +329,9 @@ We also set mouse cursor to be arrow:
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Implement OnGiveFeedback__
 
-{{region dragdropmanager-getting-started_10}}
+{{region vb-dragdropmanager-getting-started_11}}
 	Private Sub OnGiveFeedback(sender As Object, args As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
 	 args.SetCursor(Cursors.Arrow)
 	 args.Handled = True
@@ -342,9 +342,9 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __C#__
+#### __[C#] Example 7: Implement OnDrop__
 
-{{region dragdropmanager-getting-started_11}}
+{{region cs-dragdropmanager-getting-started_12}}
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
 	{
 	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
@@ -358,9 +358,9 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Implement OnDrop__
 
-{{region dragdropmanager-getting-started_12}}
+{{region vb-dragdropmanager-getting-started_13}}
 	Private Sub OnDrop(ByVal sender As Object, ByVal args As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim data = CType(args.Data, DataObject).GetData("DragData")
 		CType((TryCast(sender, ListBox)).ItemsSource, IList).Add(data)
@@ -375,9 +375,9 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __C#__
+#### __[C#] Example 7: Implement OnDrop__
 
-{{region dragdropmanager-getting-started_13}}
+{{region cs-dragdropmanager-getting-started_14}}
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
 	{
 	    var data = ((DataObject)args.Data).GetData("DragData");
@@ -391,9 +391,9 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Implement OnDrop__
 
-{{region dragdropmanager-getting-started_14}}
+{{region vb-dragdropmanager-getting-started_15}}
 	Private Sub OnDrop(ByVal sender As Object, ByVal args As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim data = CType(args.Data, DataObject).GetData("DragData")
 		CType((TryCast(sender, ListBox)).ItemsSource, IList).Add(data)
@@ -407,4 +407,10 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 
 {% endif %}
 
-![](images/DragDropManager_DragBetweenListBoxes.png)
+#### __Figure 1: Drag between ListBoxes__
+![Drag between ListBoxes](images/DragDropManager_DragBetweenListBoxes.png)
+
+## See Also
+
+ * [Events]({%slug dragdropmanager-events%})
+ * [DragDropManager Migration]({%slug dragdropmanager-migration%})

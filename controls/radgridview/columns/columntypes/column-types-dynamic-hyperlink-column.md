@@ -46,7 +46,7 @@ You can also directly configure the navigate url to be a complete TeamUrl specif
 	 NavigateUrlMemberPaths="TeamUrl"
 	 NavigateUrlFormatString="{} {0}"
 	 TargetName="_blank" />
-{{endregion}}
+{{endregion}}  
 
 __Figure 1: Look of GridViewDynamicHyperlinkColumn represented in RadGridView__ 
 

@@ -22,7 +22,7 @@ It only takes a few simple steps:
 * Change the color settings of brushes on the right
 * Immediately see the effect on the left
 * Go through all available controls from the tab on the right to see how each control looks
-* When satisfied with the results, copy the code of the generated palette to the clipboard and simply drop it in your application.
+* When satisfied with the results, copy the code of the generated palette to the clipboard and simply paste it in your application.
 
 You can always hit the reset button to start over. 
 

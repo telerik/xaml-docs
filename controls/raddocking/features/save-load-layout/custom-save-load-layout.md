@@ -20,7 +20,7 @@ In this article, we will go through all these events:
 
 * [Loading properties](#loading-properties)
 
-* [Loading of custom elements](#loading-of-custom-elements)
+* [Loading of custom elements](#loading-custom-elements)
 
 * [ElementLayoutCleaning](#elementlayoutcleaning)
 

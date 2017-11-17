@@ -94,7 +94,7 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 
 ## Events
 
-There are five events relevant to the selection functionality in the RadGridView - __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellsChanging and SelectedCellChanged__. To learn more about each of them go to the [Selection Events]({%slug gridview-selection-events%}) article.
+There are five events relevant to the selection functionality in the RadGridView - __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellsChanging and SelectedCellsChanged__. To learn more about each of them go to the [Selection Events]({%slug gridview-selection-events%}) article.
 
 ## See Also
 

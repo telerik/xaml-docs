@@ -39,7 +39,7 @@ The categorical axis displays a range of categories and the values that determin
 #### __Figure 1: Result from Example 1__
 ![RadChartView with CategoricalAxis](images/radchartview-categoricalaxis.png)
 
-If a category binding is not specified for the categorical axis, each data point will be in its own category with the category being determined by the position of the data point in the data source. Notice how each data point is its own category on the X axis
+If a category binding is not specified for the categorical axis, each data point will be in its own category with the category being determined by the position of the data point in the data source. 
 
 #### __[XAML] Example 2: Chart with no category defined for datapoints__
 {{region xaml-radchart-axes-categoricalaxis_1}}
@@ -47,7 +47,7 @@ If a category binding is not specified for the categorical axis, each data point
 	   <telerik:RadCartesianChart.HorizontalAxis>
 	      <telerik:CategoricalAxis/>
 	   </telerik:RadCartesianChart.HorizontalAxis>
-	
+
 	   <telerik:RadCartesianChart.VerticalAxis>
 	      <telerik:LinearAxis/>
 	   </telerik:RadCartesianChart.VerticalAxis>
@@ -67,10 +67,12 @@ If a category binding is not specified for the categorical axis, each data point
 	</telerik:RadCartesianChart.Series>
 {{endregion}}
 
+Notice how each data point is its own category on the X axis.
+
 #### __Figure 2: Result from Example 2__
 ![RadChartView with CategoricalAxis](images/radchartview-chart_axes_categoricalaxis.png)
 
-You can customize the categoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate
+You can customize the categoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate.
 
 #### __[XAML] Example 3: CategoricalAxis with LabelTemplate__
 {{region xaml-radchart-axes-categoricalaxis_2}}
@@ -110,8 +112,9 @@ You can customize the categoricalAxis by utilizing its **LabelTemplate** propert
 {{endregion}}
 
 #### __Figure 3: Result from Example 3__
-![RadChartView with CategoricalAxis](images/radchartview-categoricalaxis-labeltemplate.png)
+![CategoricalAxis with LabelTemplate](images/radchartview-categoricalaxis-labeltemplate.png)
 
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})
 * [Axes]({%slug radchartview-axes-axis%})
+* [Axis Smart Labels]({%slug radchartview-features-axis-smart-labels%})

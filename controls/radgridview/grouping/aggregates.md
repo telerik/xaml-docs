@@ -8,17 +8,21 @@ published: True
 position: 4
 ---
 
-This article will explain some more information on:
-
-* [Group Aggregates](#group-aggregates)
-
-* [Aligning Group Header Aggregates](#align-header-aggregates)
-
-* [Aligning Column Header Aggregates in GroupHeaderRow](#aligning-column-header-aggregates-in-groupheaderrow)
-
 # Group Aggregates
 
-![](images/RadGridView_GroupAggregates_1.png)
+This article will discuss the following topics:
+
+* [Aggregate Functions](#aggregate-functions)
+
+* [Align Group Header Aggregates](#align-header-aggregates)
+
+* [Align Column Header Aggregates in GroupHeaderRow](#align-column-header-aggregates-in-groupheaderrow)
+
+#### Figure 1: RadGridView With Group Aggregates
+
+![RadGridView With Group Aggregates](images/RadGridView_GroupAggregates_1.png)
+
+## Aggregate Functions
 
 When you are using [programmatic grouping]({%slug gridview-programmatic-grouping%}), you can add aggregate functions to the group rows. These functions allow you to display information about the data in the group such as first item, last item, count of items etc. 
 

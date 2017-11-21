@@ -202,7 +202,7 @@ For more details you can check our [Aggregates](https://demos.telerik.com/silver
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.         
 
-## Aligning Column Header Aggregates in GroupHeaderRow
+## Align Column Header Aggregates in GroupHeaderRow
 
 When using the __ShowGroupHeaderColumnAggregates__ property of __GroupHeaderRow__, the aggregates will be aligned in the __GroupFooterRow__ element. If aligning them in the __GroupHeaderRow__ is required, you need to use the __ColumnAggregatesAlignment__ property of __RadGridView__ instead. It is an enumeration and provides three values:
 

@@ -1,61 +1,60 @@
 ---
-title: Behavior
-page_title: Behavior
-description: Behavior
+title: Key Properties
+page_title: Key Properties
+description: This article lists RadNumericUpDown's key properties.
 slug: radnumericupdown-behavior
-tags: behavior
+tags: key, properties
 published: True
 position: 3
 ---
 
-# Behavior
+# Key Properties
 
-There are several properties that describe the behavior of __RadNumericUpDown__.
+__RadNumericUpDown__ comes with a couple of key properties which you can use to customize its default behavior.
 
-Here is a brief list of all behavior properties defined in RadNumericUpDown.
+* __Maximum__: The maximum possible value of RadNumericUpDown.
 
-* __Maximum__ - the maximum possible value of RadNumericUpDown.
+* __Minimum__: The minimum possible value of RadNumericUpDown.
 
-* __Minimum__ - the minimum possible value of RadNumericUpDown.
+* __SmallChange__: The change used by the Up and Down keys as well as the increase and decrease repeat buttons of RadNumericUpDown. For more information see the [Keyboard Support]({%slug radnumericupdown-navigation%}) article.
 
-* __SmallChange__ - the change used by the Up and Down keys as well as the increase and decrease repeat buttons of RadNumericUpDown. For more information see __Keyboard Navigation__.
+* __LargeChange__: The change used by the PageUp and PageDown keys. For more information see the [Keyboard Support]({%slug radnumericupdown-navigation%}) article.
 
-* __LargeChange__ - the change used by the PageUp and PageDown keys. For more information see __Keyboard Navigation__.
+* __AutoReverse__: Determines whether the control will start from the Minimum value whenever the Maximum is reached and vice versa.
 
-* __AutoReverse__ - describes the behavior whether the control will start from the Minimum value whenever the Maximum is reached and vice versa.
+* __ChangeAcceleration__: Whenever any of the PageUp, PageDown, Up, and Down buttons are held for more than 20 clicks, the repeat interval will automatically start to decrease.
 
-* __ChangeAcceleration__ - whenever any of the PageUp, PageDown, Up, and Down buttons are hold for more than 20 clicks, the repeat interval will automatically start to decrease.
+* __IsEditable__: Determines whether the user can input numeric data in the TextBox using the keyboard. In both cases, the value could be changed using the increase and decrease repeat buttons and the Up and Down keys.
 
-* __IsEditable__ - determines whether the user can input numeric data in the TextBox using the keyboard. Still the value could be changed using the increase and decrease repeat buttons and the Up and Down keys.
+* __UpdateValueToMatchTextOnLostFocus__: Determines whether the selected __Value__ will be updated to match the displayed text when the focus gets lost and the text gets formatted. (available with **SP1 Q2 2015**) 
 
-* __UpdateValueToMatchTextOnLostFocus__ - (available with SP1 Q2 2015) determines whether the selected __Value__ will be updated to match the displayed text when the focus gets lost and the text gets formatted.
+* __IsReadOnly__: Determines whether the editing functionality of the control is enabled or disabled. When it is set to True both the increase and decrease repeat buttons are disabled – the user can no longer press them in order to increase/decrease the value. The __TextBox__ that contains the __ContentText__ becomes read-only as well and the value can no longer be changed using the keyboard or the Up/Down keys.
 
-* __IsReadOnly__ - (available with SP1 Q2 2015) determines whether the editing functionality of the control is enabled or disabled. When it is set to True both the increase and decrease repeat buttons are disabled – the user could no longer press them in order to increase/decrease the value. The __TextBox__ that contains the __ContentText__ becomes ReadOnly either and the value could no longer be changed using the keyboard or the Up/Down keys.
+* __NullValue__: Gets or sets the string that is displayed when the Value of the control is null.
 
-	#### __XAML__
+* __UpdateValueEvent__: Gets or sets the way the Value property is updated. When set to **PropertyChanged**, the Value property will be changed immediately after the user input and when **LostFocus** is selected the value will be changed when the focus leaves the control.
 
-	{{region xaml-radnumericupdown-behavior_0}}
-		<telerik:RadNumericUpDown x:Name="radNumericUpDown" IsReadOnly="True"/>
-	{{endregion}}
+* __CustomUnit__: Gets or sets an additional string to appear in the end of numeric values. For example, **kg**, **km/h**, etc.
 
-	#### __C#__
+**Example 1** demonstrates how to set the **IsReadOnly** property of the control.
 
-	{{region cs-radnumericupdown-behavior_1}}
-		this.radNumericUpDown.IsReadOnly = true;
-	{{endregion}}
+#### __[XAML] Example 1: Make RadNumericUpDown read-only__
 
-	#### __VB__
+{{region xaml-radnumericupdown-behavior_0}}
+	<telerik:RadNumericUpDown x:Name="radNumericUpDown" IsReadOnly="True"/>
+{{endregion}}
 
-	{{region vb-radnumericupdown-behavior_2}}
-		Me.radNumericUpDown.IsReadOnly = True
-	{{endregion}}
+#### Figure 1: A read-only RadNumericUpDown
 
-	__Figure 1:__ RadNumericUpDown with a set to True __IsReadOnly__ property:
+![A read-only RadNumericUpDown](images/RadNumericUpDown_Features_Behavior_01.png)
 
-	![Rad Numeric Up Down Features Behavior 01](images/RadNumericUpDown_Features_Behavior_01.png)
+As the TextBox becomes read-only as well the value of the control could no longer be changed, but still it could be selected and copied.
 
-	As the TextBox becomes also ReadOnly the value of the control could no longer be changed, but still it could be selected and copied.
+#### Figure 2: Select the value of а read-only RadNumericUpDown
 
-	__Figure 2:__ Selection of the value of __ReadOnly__ RadNumericUpDown:
+![Select the value of а read-only RadNumericUpDown](images/RadNumericUpDown_Features_Behavior_02.png)
 
-	![Rad Numeric Up Down Features Behavior 02](images/RadNumericUpDown_Features_Behavior_02.png)
+## See Also
+
+* [Keyboard Support]({%slug radnumericupdown-navigation%})
+* [Events]({%slug radnumericupdown-howto-events-wpf%})

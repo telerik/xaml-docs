@@ -5,7 +5,7 @@ description: CurrentTimeIndicator
 slug: radscheduleview-features-currenttimeindicator
 tags: currenttimeindicator
 published: True
-position: 20
+position: 21
 ---
 
 # CurrentTimeIndicator

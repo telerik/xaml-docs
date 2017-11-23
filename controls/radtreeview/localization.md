@@ -10,7 +10,7 @@ position: 3
 
 # Localization
 
-The built-in localization mechanism in the platform allows you to localize the Drag&Drop hints in the __RadTreeView__ control. 
+The built-in localization mechanism in the framework allows you to localize the drag and drop hints in the __RadTreeView__ control. 
 
 Here is a list of the supported languages:
 
@@ -22,13 +22,13 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish
 
->tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
+>tipTo learn more about the ways to localize the UI for {{ site.framework_name }} controls please read the common topic on [Localization]({%slug common-localization%}).
 
 ## Resource Keys
 
-You can localize the four __RadTreeView__ Drag&Drop hints. In order to be able to distinguish these resources, a unique identifier, called __resource key__, is assigned to each localizable string.
+Currently, you can localize the four __RadTreeView__ drag and drop hints. In order to be able to distinguish these resources, a unique identifier, called a __resource key__, is assigned to each localizable string.
 
-Here is a list of all of the __Resources__ available and their default values:
+Here is a list of all of the available __resources__ and their default values:
 
 Key	|	Value
 ---	|	---	

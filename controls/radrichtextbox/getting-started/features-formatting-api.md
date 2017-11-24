@@ -15,8 +15,7 @@ position: 2
 If you want to format the content of __RadRichTextBox__ at run time, you have to use the API exposed by __RadRichTextBox__. This is essential, as the main purpose of __RadRichTextBox__ is to allow the users to format their input via UI. The UI should call the respective API methods of the control.
       
 
->To learn more about the methods exposed by the API take a look at {% if site.site_name == 'WPF' %}[this topic](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_radrichtextbox.html){% endif %}{% if site.site_name == 'Silverlight' %}[this topic](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_radrichtextbox.html){% endif %}
-          .
+>To learn more about the methods exposed by the API take a look at {% if site.site_name == 'WPF' %}[this topic](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_controls_radrichtextbox.html){% endif %}{% if site.site_name == 'Silverlight' %}[this topic](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_controls_radrichtextbox.html){% endif %}.
         
 
 ## Changing the text formatting

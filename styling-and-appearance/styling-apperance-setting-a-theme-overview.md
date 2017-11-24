@@ -120,33 +120,33 @@ The default styles and resources for each theme are shipped also in the **/Teler
 
 ## Setting a Theme Using StyleManager
 
-StyleManager is recommended to use when working with the standard (Xaml) dlls. The manager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
+StyleManager is used when working with the standard (Xaml) dlls. The StyleManager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
 
-To change the theme via the StyleManager you will need to make few steps.
+To change the theme via the StyleManager you will need to take the following few steps.
 
 1. __Reference the Xaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries/* folder.
 
 {% if site.site_name == 'Silverlight' %}2. __Add a reference__ to the dll with the theme (example: Telerik.Windows.Themes.Office_Black.dll).{% endif %}
 
-3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the InitialComponent method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
+3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the **InitializeComponent** method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
-	#### __[C#] Example 1: Setting the theme on a control level__
+	#### __[C#] Example 3: Setting the theme on a control level__
 	{{region styling-apperance-implicit-styles-overview-2}}		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
 	{{endregion}}
-	
-	#### __[VB.NET] Example 1: Setting the theme of the window__
+
+	#### __[VB.NET] Example 3: Setting the theme on a control level__
 	{{region styling-apperance-implicit-styles-overview-3}}	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
 	{{endregion}}
 	
-	#### __[C#] Example 2: Setting the theme on application level__
+	#### __[C#] Example 4: Setting the theme on application level__
 	{{region styling-apperance-implicit-styles-overview-4}}		
 		StyleManager.ApplicationTheme = new Office2016Theme();
 		InitializeComponent();
 	{{endregion}}
 	
-	#### __[VB.NET] Example 2: Setting the theme on application level__
+	#### __[VB.NET] Example 4: Setting the theme on application level__
 	{{region styling-apperance-implicit-styles-overview-5}}		
 		StyleManager.ApplicationTheme = New Office2016Theme()
 		InitializeComponent()
@@ -156,7 +156,7 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
-## Does a Theme Affects All {{ site.framework_name }} Controls?
+## Does a Theme Affect All {{ site.framework_name }} Controls?
 
 All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
 

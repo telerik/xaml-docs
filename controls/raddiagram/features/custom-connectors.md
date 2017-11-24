@@ -10,7 +10,7 @@ position: 0
 
 # Custom Connectors
 
-Custom Connectors increase your experience when using __Diagrams__ by enabling you to define custom connector points around the shapes.	  
+Custom Connectors increase your experience when using __Diagrams__ by enabling you to define custom connector points around the shapes.	
 
 ## Defining Custom Connectors
 
@@ -26,15 +26,15 @@ Besides these connectors you can define custom connectors or remove the existing
 
 Adding a custom connector can be done by simply adding a RadDiagramConnector to the Connectors collection of the shape:
 
-#### __C#__
-{{region raddiagram-features-customconnectors-0}}
+#### __[C#] Example 1: Adding a custom Connector__
+{{region cs-raddiagram-features-customconnectors-0}}
     var shape = new RadDiagramShape();
     var connector = new RadDiagramConnector(){Offset = new Point(1, 0.67), Name = "CustomConnector1"};
     shape.Connectors.Add(connector);
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-customconnectors-0}}
+#### __[VB.NET] Example 1: Adding a custom Connector__
+{{region vb-raddiagram-features-customconnectors-1}}
 	Dim shape = New RadDiagramShape()
 	Dim connector = New RadDiagramConnector() With { 
 		 .Offset = New Point(1, 0.67), 
@@ -61,13 +61,14 @@ You can go outside the [0,1] range but the following should be considered:
 
 * The visual interpretation of a connector put at a large Offset might lead to confusion since it potentially can be interpreted as the connector of another shape. In addition, if a connection is bound to a connector far off its parent shape it might be interpreted as a floating connection.			  
 
-So, in practice you can go outside the actual bounds of the  shape but some moderation is advised.		
+So, in practice you can go outside the actual bounds of the  shape but some moderation is advised.	
 
 ## Using Custom Connectors
 
 Now let's define some shapes and custom connectors and use them. First, we will create 6 shapes with the following template:		
 
-{{region raddiagram-features-customconnectors-0}}
+#### __[XAML] Example 2: Creating shapes__
+{{region xaml-raddiagram-features-customconnectors-2}}
 	<telerik:RadDiagramShape x:Name="match1shape" 
 							 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
 							 Position="100 100">					
@@ -82,8 +83,8 @@ Now let's define some shapes and custom connectors and use them. First, we will 
 
 We will define 4 custom connectors for each shape in the diagram. __Naming them is mandatory__:
 		
-#### __C#__
-{{region raddiagram-features-customconnectors-1}}
+#### __[C#] Example 3: Creating custom connectors__
+{{region cs-raddiagram-features-customconnectors-3}}
 	this.diagram.Shapes.ToList().ForEach(x =>
 	{
 		var connectorUpRight = new RadDiagramConnector() { Offset = new Point(1, 0.25), Name = x.Name + "Connector1" };
@@ -98,8 +99,8 @@ We will define 4 custom connectors for each shape in the diagram. __Naming them 
 	});
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-customconnectors-1}}
+#### __[VB.NET] Example 3: Creating custom connectors__
+{{region vb-raddiagram-features-customconnectors-4}}
 	Me.diagram.Shapes.ToList().ForEach(Function(x) 
 		Dim connectorUpRight = New RadDiagramConnector() With {
 			 .Offset = New Point(1, 0.25),  .Name = x.Name.ToString() & "Connector1"
@@ -126,8 +127,8 @@ Next step is to add some connections between the custom connectors. The first fo
 
 The next four connections are attached with the RadDiagramConnection.Attach() method which takes two connectors.
 		
-#### __C#__
-{{region raddiagram-features-customconnectors-2}}
+#### __[C#] Example 4: Attaching connections__
+{{region cs-raddiagram-features-customconnectors-5}}
 		var connection = this.diagram.AddConnection(this.diagram.Shapes[0], this.diagram.Shapes[1], "match1shapeConnector1", "match2shapeConnector3");
 		(connection as RadDiagramConnection).Stroke = new SolidColorBrush() { Color = Color.FromArgb(255, 255, 116, 2) };
 	
@@ -158,8 +159,8 @@ The next four connections are attached with the RadDiagramConnection.Attach() me
 		this.diagram.Items.Add(connection8);
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-customconnectors-2}}
+#### __[VB.NET] Example 4: Attaching connections__
+{{region vb-raddiagram-features-customconnectors-6}}
 	Dim connection = Me.diagram.AddConnection(Me.diagram.Shapes(0), Me.diagram.Shapes(1), "match1shapeConnector1", "match2shapeConnector3")
 	TryCast(connection, RadDiagramConnection).Stroke = New SolidColorBrush() With { .Color = Color.FromArgb(255, 255, 116, 2) }
 	
@@ -194,7 +195,45 @@ Below you can see a possible result of the code so far (some additional styling 
 
 ![radidiagram-features-customconnectors 2](images/radidiagram-features-customconnectors2.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomConnectors__.              
+>tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomConnectors__.
+
+## Connectors Visibility 
+
+Note that the Connectors are made visible on selection or when [ConnectorTool]({%slug raddiagrams-features-mouse-tools%}) is active. When you are defining a custom shape you can control the visibility of the Connectors by disabling the ConnectorsAdornerVisible VisualState.
+
+> You can find the ConnectorsAdornerVisible VisualState in the ControlTemplate of the RadDigramShape.
+
+#### __[C#] Example 5: Making a custom shape's connectors always visible__
+{{region cs-raddiagram-features-customconnectors-7}}
+    public class CustomShape : RadDiagramShape
+   	{
+       static CustomShape()
+       {
+           DefaultStyleKeyProperty.OverrideMetadata(typeof(CustomShape), new FrameworkPropertyMetadata(typeof(CustomShape)));
+       }
+ 
+       protected override void UpdateVisualStates()
+       {
+           base.UpdateVisualStates();
+           VisualStateManager.GoToState(this, "ConnectorsAdornerVisible", false);
+       }
+   	}
+{{endregion}}
+
+#### __[VB.NET] Example 5: Making a custom shape's connectors always visible__
+{{region vb-raddiagram-features-customconnectors-8}}
+	Public Class CustomShape
+		Inherits RadDiagramShape
+		Shared Sub New()
+			DefaultStyleKeyProperty.OverrideMetadata(GetType(CustomShape), New FrameworkPropertyMetadata(GetType(CustomShape)))
+		End Sub
+
+		Protected Overrides Sub UpdateVisualStates()
+			MyBase.UpdateVisualStates()
+			VisualStateManager.GoToState(Me, "ConnectorsAdornerVisible", False)
+		End Sub
+	End Class
+{{endregion}}              
 
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

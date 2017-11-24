@@ -3133,14 +3133,30 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/wpf"
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-assets
+
+assets:
+    digests: true
+    sources:
+        - _assets/stylesheets
+        - _assets/javascripts
+
 ## Assign layout and category per different paths
 defaults:
 -
     scope:
         path: ""
+        type: "pages"
     values:
         layout: "page"
         category: "default"
+-
+    scope:
+        path: "web.config"
+    values:
+        layout: null
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
@@ -3155,6 +3171,8 @@ ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:jt1stbj813w'
+
+incremental: true
 
 ## Do not edit below this line
 safe: false

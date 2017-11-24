@@ -18,7 +18,7 @@ In order to automatically export a custom column, without handling some of the e
 
 >important The GridViewBoundColumnBase class implements the interface so you can directly override the method.
 
-#### **Example 1: Overriden GetCellContent method**
+#### [C#] **Example 1: Overriden GetCellContent method**
  
 {{region cs-gridview-export-how-to-export-custom-column-1}}
 
@@ -28,6 +28,7 @@ In order to automatically export a custom column, without handling some of the e
 	       return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
 	   }
  {{endregion}}
+ 
 The values from the exported column will appear in Excel as shown in **Figure 1**.
 
 #### **Figure 1: Exported Custom Column to Excel**

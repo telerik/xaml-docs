@@ -51,39 +51,43 @@ __Instructions__
             
 **2.** Uncomment the following line:
 
-	#### __Before__
-	
-	{{region protecting-telerik-radcontrols-assembly_0}}
-        public static void Validate()
-		{
-		    //Uncomment the following line
-		    //ValidatePassPhrase();
-		}
-	{{endregion}}
-	
-	#### __After__
-	
-	{{region protecting-telerik-radcontrols-assembly_1}}
-        public static void Validate()
-		{
-		    //Uncomment the following line
-		    ValidatePassPhrase();
-		}
-	{{endregion}}
+#### __Before__
+
+#### [C#] Example 1: Validate method
+{{region protecting-telerik-radcontrols-assembly_0}}
+	public static void Validate()
+	{
+		//Uncomment the following line
+		//ValidatePassPhrase();
+	}
+{{endregion}}
+
+#### __After__
+
+#### [C#] Example 2: Validate method
+{{region protecting-telerik-radcontrols-assembly_1}}
+	public static void Validate()
+	{
+		//Uncomment the following line
+		ValidatePassPhrase();
+	}
+{{endregion}}
 
 **3.** Change the **ApplicationName** constant to match the name of your application:
 
-	#### __Before__
-	
-	{{region protecting-telerik-radcontrols-assembly_2}}
-		internal const string ApplicationName = "MyApp";
-	{{endregion}}
-	
-	#### __After__
-	
-	{{region protecting-telerik-radcontrols-assembly_3}}
-		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-	{{endregion}}
+#### __Before__
+
+#### [C#] Example 3: Change ApplicationName
+{{region protecting-telerik-radcontrols-assembly_2}}
+	internal const string ApplicationName = "MyApp";
+{{endregion}}
+
+#### __After__
+
+#### [C#] Example 4: Change ApplicationName
+{{region protecting-telerik-radcontrols-assembly_3}}
+	internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
+{{endregion}}
 
 
 **4.** Save __AssemblyProtection.cs__ and rebuild the suite (described separately in the source code build instructions document).
@@ -96,6 +100,7 @@ __Instructions__
             
 #### __Before__
 
+#### [XAML] Example 5: Add resource
 {{region protecting-telerik-radcontrols-assembly_4}}
 	<Application 
 	    xmlns="http://schemas.microsoft.com/client/2007"
@@ -106,6 +111,7 @@ __Instructions__
 
 #### __After__
 
+#### [XAML] Example 6: Add resource
 {{region protecting-telerik-radcontrols-assembly_5}}
 	<Application 
 	      xmlns="http://schemas.microsoft.com/client/2007"
@@ -128,13 +134,14 @@ If you are building the assemblies needed for one of the components depending on
           
 **1.** Open **C:\Telerik{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}Source\Documents\Licensing\AssemblyProtection.cs** in a text editor (notepad, Visual Studio, etc.).
 
-	>In versions of the suite prior to R2 2016, the path is **C:\Telerik{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}Source\Documents\Core\Core\Licensing\AssemblyProtection.cs**.
+>In versions of the suite prior to R2 2016, the path is **C:\Telerik{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}Source\Documents\Core\Core\Licensing\AssemblyProtection.cs**.
             
 
 **2.** Uncomment the following line:
             
 #### __Before__
 
+#### [XAML] Example 7: IsValid method
 {{region protecting-telerik-radcontrols-assembly_6}}
 	public static bool IsValid()
 	{
@@ -146,6 +153,7 @@ If you are building the assemblies needed for one of the components depending on
 
 #### __After__
 
+#### [XAML]  Example 8: IsValid method
 {{region protecting-telerik-radcontrols-assembly_7}}
 	public static bool IsValid()
 	{

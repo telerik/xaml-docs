@@ -18,7 +18,7 @@ This article demonstrates how you can change the default look of the __RadPolarC
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 1: Set PolarLineSeries.ShapeStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}
 
@@ -38,7 +38,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __RadarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 2: Set RadarLineSeries.ShapeStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}	
 
@@ -60,7 +60,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarAreaSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 3: Set PolarAreaSeries.ShapeStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}
 
@@ -81,7 +81,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __RadarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 4: Set RadarAreaSeries.ShapeStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}
 
@@ -103,7 +103,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarPointSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 5: Set PolarPointSeries.DefaultVisualStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}
 
@@ -123,7 +123,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property like this:
             
-#### XAML
+#### [XAML] Example 6: Set RadarPointSeries.DefaultVisualStyle
 
 {{region radchartview-styles-and-templates-customizing-piechart-series}}
 

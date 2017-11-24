@@ -27,7 +27,7 @@ We have followed a naming convention where the key for every control's default s
 	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Red" />
 	</Style>
-{{endregion}}
+{{endregion}}d
 
 ## Styling Custom Controls
 

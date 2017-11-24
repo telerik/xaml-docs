@@ -40,6 +40,8 @@ By clicking on the header a second time, the sort direction is changed to descen
 
 You can set the __SortMemberPath__ property of a column to specify the name of the property the data in the column will be sorted by. Use this if you need to sort the column by a property different than the one it is bound to.
 
+#### __[XAML] Example 1: Sort by property different from the DataMemberBinding__
+
 {{region xaml-gridview-sorting-basics_7}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" SortMemberPath="Name" />
 {{endregion}}

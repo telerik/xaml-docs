@@ -134,7 +134,7 @@ To change the theme via the StyleManager you will need to take the following few
 	{{region styling-apperance-implicit-styles-overview-2}}		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
 	{{endregion}}
-	
+
 	#### __[VB.NET] Example 3: Setting the theme on a control level__
 	{{region styling-apperance-implicit-styles-overview-3}}	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())

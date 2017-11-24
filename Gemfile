@@ -5,7 +5,7 @@ gem 'uglifier'
 gem 'jekyll'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-sitemap'
-gem 'jekyll-assets'
+gem "jekyll-assets", "2.4.0", group: :jekyll_plugins
 gem 'github-markdown'
 gem 'html-pipeline'
 gem 'commonmarker'

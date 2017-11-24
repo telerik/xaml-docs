@@ -3135,6 +3135,13 @@ baseurl: "/devtools/wpf"
 
 plugins:
   - jekyll-sitemap
+  - jekyll-assets
+
+assets:
+    digests: true
+    sources:
+        - _assets/stylesheets
+        - _assets/javascripts
 
 ## Assign layout and category per different paths
 defaults:

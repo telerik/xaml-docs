@@ -13,9 +13,9 @@ position: 5
 
 There are a couple of events relevant to the selection in RadGridView: [SelectionChanging](#selectionchanging-event), [SelectionChanged](#selectionchanged-event), [CurrentCellChanged](#currentcellchanged-event), [SelectedCellsChanging](#selectedcellschanging-event) and [SelectedCellsChanged](#selectedcellschanged-event). The sequence of the events depends on the __SelectionUnit__ property:
 
-* __FullRow__ - the __CurrentCellChanged__ is fired first and after that the __SelectionChanged__ event fires 
+* __FullRow__: The __CurrentCellChanged__ is fired first and after that the __SelectionChanged__ event fires.
 
-* __Cell__ - the __CurrentCellChanged__ is fired first and after that the __SelectedCellsChanged__ event fires
+* __Cell__: The __CurrentCellChanged__ is fired first and after that the __SelectedCellsChanged__ event fires.
 
 The events are fired by RadGridView each time there is a modification of the __SelectedItems__ / __SelectedCells__ collection, regardless of the way it happened (by user input or programmatically). 
 

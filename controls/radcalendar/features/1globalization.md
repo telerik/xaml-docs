@@ -48,7 +48,7 @@ You can set the default calendar for the whole application or for a specific Rad
 		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
         Thread.CurrentThread.CurrentCulture = arSA;
         Thread.CurrentThread.CurrentUICulture = arSA;
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
+        arSA.DateTimeFormat.Calendar = new PersianCalendar();
 	{{endregion}}
 
 #### __[VB.NET] Example 1: Setting the default calendar application-wide__
@@ -57,14 +57,14 @@ You can set the default calendar for the whole application or for a specific Rad
 		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
 		Thread.CurrentThread.CurrentCulture = arSA
 		Thread.CurrentThread.CurrentUICulture = arSA
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
+		arSA.DateTimeFormat.Calendar = New PersianCalendar()
 	{{endregion}}
 
 #### __[C#] Example 2: Setting the calendar for a specific RadCalendar instance__
 
 	{{region cs-radcalendar-calendar-support-1}}
 		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
+        arSA.DateTimeFormat.Calendar = new PersianCalendar();
         calendar.Culture = arSA;
 	{{endregion}}
 
@@ -72,7 +72,7 @@ You can set the default calendar for the whole application or for a specific Rad
 
 	{{region vb-radcalendar-calendar-support-1}}
 		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
+		arSA.DateTimeFormat.Calendar = New PersianCalendar()
 		calendar.Culture = arSA
 	{{endregion}}
 

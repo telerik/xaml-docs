@@ -105,7 +105,7 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 
 As the built-in transition effects are located in the __Telerik.Windows.Controls.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 
-#### __[XAML] Example 5: Add TransitionEffects namespace__
+#### __[XAML] Example 5: Adding TransitionEffects namespace__
 
 {{region xaml-radtransition-getting-started_4}}
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"

@@ -28,7 +28,7 @@ You can get information about the plot area's boundaries via the __PlotAreaClip_
 By default the elements presented by the chart (series and annotations) are clipped into the plot area. Anything that leaves the boundaries won't be rendered. To alter this you can use the __ClipToPlotArea__ property that is exposed by the elements. Its __default value__ is __True__.
 
 #### __[XAML] Example 1: Setting ClipToPlotArea of a chart series__
-{{region radchartview-features-plot-area-0}}
+{{region xaml-radchartview-features-plot-area-0}}
 	 <telerik:PointSeries ClipToPlotArea="False" />
 {{endregion}}
 
@@ -40,7 +40,7 @@ By default the elements presented by the chart (series and annotations) are clip
 You can customize the plot area visual via the __PlotAreaStyle__ property of the chart. It is of type __Style__ and the expected __TargetType__ is __Border__ - the area's visual element.
 
 #### __[XAML] Example 2: Setting PlotAreaStyle__
-{{region radchartview-features-plot-area-1}}
+{{region xaml-radchartview-features-plot-area-1}}
 	<telerik:RadCartesianChart.PlotAreaStyle>
 		<Style TargetType="Border">
 			<Setter Property="Background" Value="#FFFDB3" />
@@ -51,12 +51,12 @@ You can customize the plot area visual via the __PlotAreaStyle__ property of the
 #### __Figure 3: PlotAreaStyle example__
 ![PlotAreaStyle example](images/radchartview-features-plot-area-2.png)
 
-## Displaying stacked elements 
+## Controlling the stack order of the elements
 
-By default the order in which the elements are defined in XAML determines which will be in front of the other when displayed. You can control which element is displayed on top by setting the elements' **ZIndex** property. RadChartView elements which have this property are [Series]({%slug radchartview-series-chartseries%}), [Annotations]({%slug radchartview-annotations-overview%}) and [Axes]({%slug radchartview-axes-axis%}).
+The stack order of the elements in the chart is determined by their positions in the items collection that holds them. You can additionally control which element is displayed on top by setting the elements' **ZIndex** property. RadChartView elements which have this property are [Series]({%slug radchartview-series-chartseries%}), [Annotations]({%slug radchartview-annotations-overview%}) and [Axes]({%slug radchartview-axes-axis%}).
 
-#### __[XAML] Example 3: Setting ZIndex property__
-{{region radchartview-features-plot-area-2}}
+#### __[XAML] Example 3: Setting the ZIndex property__
+{{region xaml-radchartview-features-plot-area-2}}
 	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -67,19 +67,19 @@ By default the order in which the elements are defined in XAML determines which 
             </telerik:RadCartesianChart.VerticalAxis>
 
             <telerik:RadCartesianChart.Series>
-                <telerik:BarSeries>
-                    <telerik:BarSeries.DataPoints>
-                        <telerik:CategoricalDataPoint Category="January" Value="3" />
-                        <telerik:CategoricalDataPoint Category="February" Value="5" />
-                    </telerik:BarSeries.DataPoints>
-                </telerik:BarSeries>
-
                 <telerik:LineSeries ZIndex="100">
                     <telerik:LineSeries.DataPoints >
                         <telerik:CategoricalDataPoint Category="January" Value="1" />
                         <telerik:CategoricalDataPoint Category="February" Value="5" />
                     </telerik:LineSeries.DataPoints>
                 </telerik:LineSeries>
+
+                <telerik:BarSeries>
+                    <telerik:BarSeries.DataPoints>
+                        <telerik:CategoricalDataPoint Category="January" Value="3" />
+                        <telerik:CategoricalDataPoint Category="February" Value="5" />
+                    </telerik:BarSeries.DataPoints>
+                </telerik:BarSeries>
             </telerik:RadCartesianChart.Series>
         </telerik:RadCartesianChart>
 {{endregion}}

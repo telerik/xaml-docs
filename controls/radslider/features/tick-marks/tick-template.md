@@ -10,10 +10,6 @@ position: 2
 
 # Tick template
 
-
-
-## 
-
 Changing the look of the tick marks can be done by setting the __TickTemplate__ property, which is of type __DataTemplate__.
 
 #### __XAML__
@@ -50,4 +46,4 @@ If you want to display the numeric value of each tick, you have to add a __TextB
 
 ![](images/radslider_features_digit_ticktemplate.png)
 
-More information how to use a value converter and display not only numeric values, can be found [here](http://blogs.telerik.com/KirilStanoev/Posts/08-07-24/Using_ValueConverter_to_edit_Slider_s_TickTemplate.aspx?ReturnURL=%2fKirilStanoev%2fPosts.aspx).
+More information how to use a value converter and display not only numeric values, can be found [here](https://www.telerik.com/blogs/using-valueconverter-to-edit-slider-s-ticktemplate).

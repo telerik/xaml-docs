@@ -34,6 +34,9 @@ You can add __RadWizard__ in XAML or in code. You can also add the control by dr
 	 <telerik:RadWizard x:Name="wizard" />
 {{endregion}}
 
+>In order to use __RadWizard__ you should define the following namespace:
+__xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
+
 #### __[C#] Example 1: Adding a RadWizard in code__
 {{region cs-radwizard-getting-started-0}}
 	 RadWizard wizard = new RadWizard();
@@ -43,9 +46,6 @@ You can add __RadWizard__ in XAML or in code. You can also add the control by dr
 {{region vb-radwizard-getting-started-1}}
 	 Private wizard As RadWizard = New RadWizard()
 {{endregion}}
-
->In order to use __RadWizard__ you should define the following namespace:
-__xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
  
 ## Adding pages to RadWizard
  To add pages to __RadWizard__ you can use its __WizardPages__ collection, which consists of [__WizardPage__]({%slug wizard-pages%}) elements. Here is an example of defining a page in code and in xaml: 

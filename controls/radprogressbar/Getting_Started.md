@@ -56,6 +56,6 @@ You can fill the RadProgressBar during runtime by changing its __Value__ propert
 {{endregion}}
 
 #### __[VB.NET] Example 5: Change RadProgressBar value__
-{{region cs-Getting_Started_7}}
+{{region vb-Getting_Started_7}}
 	progressBar.Value += 5
 {{endregion}}

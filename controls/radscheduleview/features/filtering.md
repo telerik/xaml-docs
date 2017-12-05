@@ -10,7 +10,7 @@ position: 10
 
 # Filtering
 
-The RadScheduleView control enables you to filter its appointments and individual occurrences by passing a predicate a view definition's **AppointmentFilter** and **OccurrenceFilter** properties. While the AppointmentFilter will filter out the appointments which fulfil the predicate's condition, the OccurrenceFilter will check each individual occurence (including exceptions) of an recurring appointment.
+The RadScheduleView control enables you to filter its appointments and individual occurrences by passing a predicate to a view definition's **AppointmentFilter** and **OccurrenceFilter** properties. While the AppointmentFilter will filter out the appointments which fulfil the predicate's condition, the OccurrenceFilter will check each individual occurence (including exceptions) of an recurring appointment.
 
 ## AppointmentFilter
 

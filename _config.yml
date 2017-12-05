@@ -352,6 +352,8 @@ navigation:
         title: RadDiagram
     controls/raddiagram/diagram-items:
         title: Diagram Items
+    controls/raddiagram/diagram-items/shape:
+        title: Shapes
     controls/raddiagram/diagram-tools:
         title: Diagram Tools
     controls/raddiagram/diagramextensions-viewmodels:

@@ -49,9 +49,9 @@ This topic aims to get you familiar with the specific properties of each databar
 
 * __OriginValue__ - defines an origin for the databar to start at. For example:           
 
-	#### __XAML__
+	#### __[XAML] Example 1: RadDataBar properties__
 
-	{{region raddatabar-properties_1}}
+	{{region xaml-raddatabar-properties-1}}
 		 <telerik:RadDataBar Height="20" Value="50" BorderBrush="Gray" BorderThickness="1" Margin="2" />
 		 <telerik:RadDataBar Height="20" Value="50" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
 		 <telerik:RadDataBar Height="20" Value="60" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
@@ -69,11 +69,11 @@ This topic aims to get you familiar with the specific properties of each databar
 
 * __BarBrushes__ - a Brush collection that is to be used with the bars.          
 
-	The *BrushCollection* class is currently located in the Telerik.Windows.Controls.DataBars namespace so please mind adding a reference to it.Here's an example:
+	The *BrushCollection* class is currently located in the Telerik.Windows.Controls.DataBars namespace so please mind adding a reference to it like so: "xmlns:dataBars="clr-namespace:Telerik.Windows.Controls.DataBars;assembly=Telerik.Windows.Controls.DataVisualization". Here's an example:
 
-	#### __XAML__
+	#### __[XAML] Example 2: RadStacked100DataBar BarBrushes property__
 
-	{{region raddatabar-properties_0}}
+	{{region xaml-raddatabar-properties-0}}
 		 <telerik:RadStacked100DataBar.BarBrushes>
 			<dataBars:BrushCollection>
 				<SolidColorBrush Color="Red" />

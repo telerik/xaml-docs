@@ -10,19 +10,17 @@ position: 1
 
 # MVVM Support
 
-This topic will go through the approach of using __RadVirtualGrid__ in an MVVM environment. This can be achieved by benefiting from the __DataProvider__ mechanism of the control. More information on this matter can be found in the [Getting Started]({%slug virtualgrid-getting-started2%}) and [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%}) topics.
+This topic will go through the approach of using __RadVirtualGrid__ in MVVM scenarios. This can be achieved by benefiting from the __DataProvider__ mechanism of the control. More information on this matter can be found in the [Getting Started]({%slug virtualgrid-getting-started2%}) and [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%}) topics.
 
 ## Defining the business model
 
-Firstly, we need an object model that will be used for further populating __RadVirtualGrid__ with data. For this purpose, the following __Club__ object is defined.
+Firstly, we need an object model that will be used to populate __RadVirtualGrid__ with data. For this purpose, the following __Club__ object is defined.
 
 #### __[C#] Example 1: Defining the Club object__
 
 {{region radvirtualgrid-mvvm_0}}
-	public class Club : INotifyPropertyChanged
+	public class Club : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
         private string name;
         private DateTime established;
         private int stadiumCapacity;
@@ -37,6 +35,7 @@ Firstly, we need an object model that will be used for further populating __RadV
                 this.OnPropertyChanged("PrimaryKey");
             }
         }
+
         public string Name
         {
             get { return this.name; }
@@ -88,48 +87,21 @@ Firstly, we need an object model that will be used for further populating __RadV
             this.stadiumCapacity = stadiumCapacity;
         }
 
-        protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-        {
-            PropertyChangedEventHandler handler = this.PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, args);
-            }
-        }
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-        }
-
-        public override string ToString()
-        {
-            return this.Name;
-        }
-
         public static ObservableCollection<Club> GetClubs()
         {
             ObservableCollection<Club> clubs = new ObservableCollection<Club>();
             Club club;
-            int id = 0;
-
-            // Liverpool
-            club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362) { PrimaryKey = id};
+            
+            club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362) { PrimaryKey = 1};
             clubs.Add(club);
 
-            id++;
-            // Manchester Utd.
-            club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212) {PrimaryKey = id};
+            club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212) {PrimaryKey = 2};
             clubs.Add(club);
 
-            id++;
-            // Chelsea
-            club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055) { PrimaryKey = id };
+            club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055) { PrimaryKey = 3 };
             clubs.Add(club);
 
-            id++;
-            // Arsenal
-            club = new Club("Arsenal", new DateTime(1886, 1, 1), 60355) { PrimaryKey = id };
+            club = new Club("Arsenal", new DateTime(1886, 1, 1), 60355) { PrimaryKey = 4 };
             clubs.Add(club);
 
             return clubs;
@@ -139,7 +111,7 @@ Firstly, we need an object model that will be used for further populating __RadV
 
 ## Implementing a custom DataProvider
 
-Then, a custom __DataProvider__ that handles some specific scenarios will be defined. Speaking shortly, it demonstrates how the selection of the control can be persisted when sorting or filtering. Note, that by default it is being cleared when processing these operations. Also, hiding a given column, defining a custom editor, setting a given column to be readonly and applying a custom header is demonstrated.
+The next step is to define a custom __DataProvider__ that handles some specific scenarios. It demonstrates how the selection of the control can be persisted when sorting or filtering. Note, that by default the selection is being cleared when processing these operations. Also, the example demonstrates how to hide a given column, define a custom editor, set a given column to be readonly and apply a custom header.
 
 #### __[C#] Example 2: Implementing a Custom DataProvider__
 
@@ -152,10 +124,7 @@ Then, a custom __DataProvider__ that handles some specific scenarios will be def
 	            this.selectedIndexes = new List<int>();
 	        }
 	
-	        /// <summary>
-	        /// At this state the SelectedIndexes are not cleared yet and can be persisted.
-	        /// </summary>
-	        /// <param name="e"></param>
+	        //At this state the SelectedIndexes are not cleared yet and can be persisted.
 	        protected override void SortDescriptorPrepared(SortedEventArgs e)
 	        {
 	            var selectedIndexes = this.ParentGrid.SelectedIndexes.ToList();
@@ -166,18 +135,14 @@ Then, a custom __DataProvider__ that handles some specific scenarios will be def
 	            base.SortDescriptorPrepared(e);
 	        }
 	
-	        /// <summary>
-	        /// Update the selection after the sorting is processed.
-	        /// </summary>
+	        //Update the selection after the sorting is processed.
 	        protected override void OnSortingCompleted()
 	        {
 	            base.OnSortingCompleted();
 	            this.UpdateSelection(this.selectedIndexes);
 	        }
 	
-	        /// <summary>
-	        /// Hide the primary key property
-	        /// </summary>
+	        //Hide the primary key property
 	        public override IList<ItemPropertyInfo> ItemProperties
 	        {
 	            get
@@ -277,7 +242,7 @@ Then, a custom __DataProvider__ that handles some specific scenarios will be def
 
 ## Defining the View Model
 
-Furthermore, the custom DataProvider needs to be exposed by a view model.
+The following code snippet demonstrates how the custom DataProvider can be exposed by a view model.
 
 #### __[C#] Example 2: Defining the View Model__
 
@@ -303,7 +268,7 @@ Furthermore, the custom DataProvider needs to be exposed by a view model.
 
 ## Populate RadVirtualGrid
 
-Finally, the View Model is set to be the DataContext of __RadVirtualGrid__ and its __DataProvider__ property is bound to the custom DataProvider.
+This section shows how the View Model can be set to be the DataContext of __RadVirtualGrid__ and how its __DataProvider__ property can be bound to the custom DataProvider.
 
 #### __[XAML] Example 3: Populating RadVirtualGrid__
 
@@ -321,7 +286,5 @@ Finally, the View Model is set to be the DataContext of __RadVirtualGrid__ and i
 ## See Also
 
 * [Getting Started]({%slug virtualgrid-getting-started2%})
-
 * [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%})
-
 * [Editing]({%slug virtualgrid-editing%})

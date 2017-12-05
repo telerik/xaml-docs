@@ -69,7 +69,7 @@ This topic aims to get you familiar with the specific properties of each databar
 
 * __BarBrushes__ - a Brush collection that is to be used with the bars.          
 
-	The *BrushCollection* class is currently located in the Telerik.Windows.Controls.DataBars namespace so please mind adding a reference to it like so: "xmlns:dataBars="clr-namespace:Telerik.Windows.Controls.DataBars;assembly=Telerik.Windows.Controls.DataVisualization".Here's an example:
+	The *BrushCollection* class is currently located in the Telerik.Windows.Controls.DataBars namespace so please mind adding a reference to it like so: "xmlns:dataBars="clr-namespace:Telerik.Windows.Controls.DataBars;assembly=Telerik.Windows.Controls.DataVisualization". Here's an example:
 
 	#### __[XAML] Example 2: RadStacked100DataBar BarBrushes property__
 

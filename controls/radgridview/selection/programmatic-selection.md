@@ -28,6 +28,8 @@ Besides the built-in selection functionality, you are able to use a programmatic
 
 * [Deselecting Cell Regions](#deselecting-cell-regions)
 
+* [Selecting Items Range](#selecting-range-of-items)
+
 >tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
         
 ## SelectedItem
@@ -232,6 +234,19 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 ## Deselecting cell regions
 
 You can deselect cell regions by using RadGridView's **UnselectCellRegion** method similarly to using [SelectCellRegion](#selecting-cell-regions).
+
+## Selecting range of items
+
+>In order this functionality to be available, the __SelectionMode__ needs to be set either to __Multiple__, or to __Extended__.
+
+__RadGridView__ exposes a mechanism for a fast programmatic selection of a range of items. The method for utilizing it is the __SelectItemsRange__. It is available with the __2017.3.1120 latest internal build__ and the official version that is going to support it is __R1 2018__. The method exposes two overloads:
+
+* __SelectItemsRange(int startIndex, int endIndex)__: Selects items in a given range by specified indexes.
+
+* __SelectItemsRange(object startItem, object endItem)__: Selects items in a given range by specified object instances.
+
+>Deselecting items when using the __SelectItemsRange__ needs to be performed through removing items from the __SelectedItems__ collection of __RadGridView__
+
 
 ## See Also
 

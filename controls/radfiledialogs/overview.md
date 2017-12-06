@@ -30,7 +30,7 @@ Here are a few of the controls' main features:
 
 * **Variety of Themes**: You can persist the appearance throughout your application by applying any of the **predefined themes** provided by the UI for WPF suite to your dialogs.
 
->tip Get started with the file dialogs with the [Getting Started]({%slug radscheduleview-getting-started%}) help article that shows how to use them in basic scenarios.
+>tip Get started with the file dialogs with the [Getting Started]({%slug radfiledialogs-getting-started%}) help article that shows how to use them in basic scenarios.
 
 > Check out the controls' demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
 

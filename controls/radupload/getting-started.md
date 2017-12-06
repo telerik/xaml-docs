@@ -17,6 +17,16 @@ To use the __RadUpload__ control you have to configure both the client and the s
 
 * [Configuring the client side](#Configuring_the_client_side)
 
+## Assembly References
+
+In order to use __RadUpload__ control in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+{% if site.site_name == 'WPF' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.{% endif %}
+{% if site.site_name == 'Silverlight' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.{% endif %}
+
 ## Configuring the server side
 
 The first thing you have to do is to add a reference to the __Telerik.Windows.RadUploadHandler__ assembly in the ASP.NET application that hosts your Silverlight application. It is located in the __ServerSide__ folder of your UI for Silverlight installation. After that create a Generic (__ASHX__) Handler, that derives from the __RadUploadHandler__ class.
@@ -57,12 +67,6 @@ To test the handler point your browser to the SampleUploadHandler.ashx file. You
 ## Configuring the client side
 
 The first thing you have to do on the client side is to declare a __RadUpload__ control in the appropriate UserControl.
-
->In order to use __RadUpload__ control in your projects you have to add references to the following assemblies:
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Input__
-{% if site.site_name == 'WPF' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.{% endif %}
-{% if site.site_name == 'Silverlight' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.{% endif %}
 
 #### __[XAML] Example 2: RadUpload definition__
 {{region xaml-radupload-getting-started_2}}

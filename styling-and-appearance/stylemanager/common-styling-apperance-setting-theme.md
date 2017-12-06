@@ -317,7 +317,7 @@ In the above code snippet it is assumed that:
 
 ## Unsupported controls
 
-The RadGanttView control doesn't support changing the theme using StyleManager and it should be used with NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. 
+The RadGanttView control doesn't support changing the theme using StyleManager and it should be used with the NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. 
 
 ## See Also  
  * [Modifying a Built-In Theme]({%slug common-styling-apperance-modifying-built-in-theme%})

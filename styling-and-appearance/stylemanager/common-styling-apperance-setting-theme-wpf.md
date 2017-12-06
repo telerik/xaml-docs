@@ -11,7 +11,7 @@ site_name: WPF
 
 # Setting a Theme with StyleManager
 
-This help article will show you how to set a built-in theme to Telerik UI for WPF. You  will also see code examples for these related topics:      
+This help article will show you how to set a built-in theme to Telerik UI for WPF. You will also see code examples for these related topics:      
 
 * [Setting Instance-Specific Built-in Theme in XAML](#setting-instance-specific-built-in-theme-in-xaml)
 
@@ -21,7 +21,7 @@ This help article will show you how to set a built-in theme to Telerik UI for WP
 
 * [Unsupported Controls](#unsupported-controls)
 
-Telerik __WPF controls__ support the following themes:      
+Telerik's __WPF controls__ support the following themes:      
 
 * __Office_Black__
 * __Office_Blue__
@@ -44,11 +44,11 @@ Telerik __WPF controls__ support the following themes:
 
 >important With **Q1 2014** the **Themes** folder, containing the standard themes used with StyleManager, is not provided in the installation package anymore. They can be separately downloaded from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).        
 
-In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.      
+In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.
 
->You can read more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.        
+>You can find more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.        
 
-You are now ready to use the themes either for a single control or for all controls in your application scope.
+You are now ready to apply the themes to either a single control or for all controls in your application scope.
 
 >The following examples use the __Vista__ theme.        
 
@@ -56,7 +56,7 @@ You are now ready to use the themes either for a single control or for all contr
 
 In order to change the theme of a single control in XAML you have to declare a resource of type __Theme__ and set an appropriate key. To complete this procedure, follow the instructions below.        
 
-1. Open the user control that hosts your control.        
+1. Open the user control that hosts your control. 
 
 2. Declare one of the Telerik WPF controls and set the attached property __StyleManager.Theme__ value to __Vista__.        
 
@@ -157,7 +157,7 @@ Changing the application theme is similar to changing the theme of single contro
 
 ## Unsupported controls
 
-There are few controls that doesn't support changing the theme using StyleManager and they should be used with NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. Here is a list of those controls:
+There are few controls that don't support changing the theme using StyleManager and they should be used with the NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. Here is a list of those controls:
 
 * RadGanttView
 * RadLayoutControl

@@ -11,16 +11,29 @@ site_name: Silverlight
 
 # Getting Started
 
-__RadUpload__ has a client and a server side part. The client side is executed entirely in the browser using the Silverlight platform. The server side requires a handler on the server for processing the files that are submitted from the client side. This topic will explain the basics of:
+To use the __RadUpload__ control you have to configure both the client and the server side part of your application. The client side is executed entirely in the browser using the Silverlight platform. The server side requires a handler on the server for processing the files that are submitted from the client side. This topic will explain the basics of:
 
 * [Configuring the server side](#Configuring_the_server_side)
 
 * [Configuring the client side](#Configuring_the_client_side)
 
+## Assembly References
+
+In order to use __RadUpload__ control in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+{% if site.site_name == 'WPF' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.{% endif %}
+{% if site.site_name == 'Silverlight' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.{% endif %}
+
 ## Configuring the server side
 
-The first thing you have to do is to add a reference to the __Telerik.Windows.RadUploadHandler__ assembly in the ASP.NET application that hosts your Silverlight application. After that create a Generic (__ASHX__) Handler, that derives from the __RadUploadHandler__ class.
-![](images/RadUpload_GettingStarted_01.png)
+The first thing you have to do is to add a reference to the __Telerik.Windows.RadUploadHandler__ assembly in the ASP.NET application that hosts your Silverlight application. It is located in the __ServerSide__ folder of your UI for Silverlight installation. After that create a Generic (__ASHX__) Handler, that derives from the __RadUploadHandler__ class.
+
+#### Figure 1: The generic RadUploadHandler
+
+![The generic RadUploadHandler](images/RadUpload_GettingStarted_01.png)
 
 #### __[C#] Example 1: Create a generic handler__
 {{region cs-radupload-getting-started_0}}
@@ -37,20 +50,23 @@ The first thing you have to do is to add a reference to the __Telerik.Windows.Ra
 	End Class
 {{endregion}}
 
-Create a folder, in which the uploaded files will be stored.
-![](images/RadUpload_GettingStarted_02.png)
+Next, create a folder, in which the uploaded files will be stored.
+
+#### Figure 2: The UserUploads folder
+
+![The UserUploads folder](images/RadUpload_GettingStarted_02.png)
 
 >Please note that the target folder should be in the same folder as the upload handler.
 
 To test the handler point your browser to the SampleUploadHandler.ashx file. You should see the following output if everything is done correctly.
-![](images/RadUpload_GettingStarted_03.png)
+
+#### Figure 3: The ouput when navigating to the handler
+
+![The ouput when navigating to the handler](images/RadUpload_GettingStarted_03.png)
 
 ## Configuring the client side
 
 The first thing you have to do on the client side is to declare a __RadUpload__ control in the appropriate UserControl.
-		
-
->In order to use __RadUpload__ control in your projects you have to add references to the following assemblies:<br/>1. __Telerik.Windows.Controls__<br/>2. __Telerik.Windows.Controls.Input__<br/>{% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 
 #### __[XAML] Example 2: RadUpload definition__
 {{region xaml-radupload-getting-started_2}}

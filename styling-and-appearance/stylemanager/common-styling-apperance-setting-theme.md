@@ -11,9 +11,7 @@ site_name: Silverlight
 
 # Setting a Theme with StyleManager
 
-
-
-The purpose of this tutorial is to show you how to set a built-in theme to __UI__ for Silverlight.
+The purpose of this tutorial is to show you how to set a built-in theme to __UI for Silverlight__.
 
 This topic contains the following sections:
 
@@ -25,36 +23,43 @@ This topic contains the following sections:
 
 * [Create a custom theme](#create-a-custom-theme)
 
->Currently Telerik __Silverlight controls__ support the following themes:
+* [Unsupported Controls](#unsupported-controls)
 
-* __Office Black__ - this is the __default__ theme. No assembly is required for it.
+Telerik __Silverlight controls__ support the following themes:
 
-* __Office Blue__ - requires __Telerik.Windows.Themes.Office_Blue.dll__.
+* __Office Black__: This is the __default__ theme. No assembly is required for it.
 
-* __Office Silver__ - requires __Telerik.Windows.Themes.Office_Silver.dll__.
+* __Office Blue__: Requires __Telerik.Windows.Themes.Office_Blue.dll__.
 
-* __Expression Dark__ - requires __Telerik.Windows.Themes.Expression_Dark.dll__.
+* __Office Silver__: Requires __Telerik.Windows.Themes.Office_Silver.dll__.
 
-* __Summer__ - requires __Telerik.Windows.Themes.Summer.dll__.
+* __Expression Dark__: Requires __Telerik.Windows.Themes.Expression_Dark.dll__.
 
-* __Vista__ - requires __Telerik.Windows.Themes.Vista.dll__.
+* __Summer__: Requires __Telerik.Windows.Themes.Summer.dll__.
 
-* __Windows 7__ - requires __Telerik.Windows.Themes.Windows7.dll__.
+* __Vista__: Requires __Telerik.Windows.Themes.Vista.dll__.
 
-* __Transparent__ - requires __Telerik.Windows.Themes.Transparent.dll__
+* __Windows 7__: Requires __Telerik.Windows.Themes.Windows7.dll__.
 
-* __Windows8__ - requires __Telerik.Windows.Themes.Windows8.dll__
+* __Transparent__: Requires __Telerik.Windows.Themes.Transparent.dll__
 
-* __Windows8Touch__ - requires __Telerik.Windows.Themes.Windows8Touch.dll__
+* __Windows8__: Requires __Telerik.Windows.Themes.Windows8.dll__
 
->The __Silverlight themes__ are located in separate assemblies in order the size of the control assembly to be optimized. You can use the [Telerik Assembly Minifier](http://minifier.telerik.com/) tool to minimize the size of the theme as well.
+* __Windows8Touch__: Requires __Telerik.Windows.Themes.Windows8Touch.dll__
 
+* __VisualStudio2013__: Requires __Telerik.Windows.Themes.VisualStudio2013.dll__
+
+* __Office2013__: Requires __Telerik.Windows.Themes.Office2013.dll__
+
+>The __Silverlight themes__ are located in separate assemblies in order the size of the control assembly to be optimized.
+
+## Set up the Silverlight project
 
 1. Create a new Silverlight application or open an existing one.
 
-1. Click the menu item *Project -> Add Reference...*.
+2. Click the menu item *Project -> Add Reference...*.
 
-1. Navigate to the place where you have installed __UI for Silverlight__.
+3. Navigate to the place where you have installed __UI for Silverlight__.
 
 * Browse Binaries (Bin) folder.
 
@@ -66,33 +71,27 @@ Now you are ready to use the themes either for a single control or for all contr
 
 >In the following examples the __Vista__ theme will be used.
 
-
 ## Setting Instance-Specific Built-In Theme in XAML
 
 In order to change the theme of a single control in XAML you have to declare a resource of type Theme and set an appropriate key. To complete this procedure follow the instructions below.
 
 1. Open the user control that hosts your control. 
 
-1. Declare one of the Telerik Silverlight controls and set the attached property __StyleManager.Theme__ value to __Vista__.
+2. Declare one of the Telerik Silverlight controls and set the attached property __StyleManager.Theme__ value to __Vista__.
 
-1. After executing all steps your code should be similar to this:
+3. After executing all steps your code should be similar to this:
 
-	#### __XAML__
-	
+	#### __XAML__  	
 	{{region common-styling-apperance-setting-theme_0}}
 		<UserControl x:Class="Test.MainPage"
 		    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 		    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		    xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls">
-		    <Grid x:Name="LayoutRoot">
-		
-		        <telerik:RadSlider telerik:StyleManager.Theme="Vista"/>
-		
+		    <Grid x:Name="LayoutRoot">		
+		        <telerik:RadSlider telerik:StyleManager.Theme="Vista"/>		
 		    </Grid>
 		</UserControl>
-		{{endregion}}
-
-
+	{{endregion}}
 
 ## Setting Instance-Specific Built-In Theme in the Code-Behind
 
@@ -100,25 +99,19 @@ You can also choose to change the theme for the Telerik Silverlight controls in 
 
 1. Open your user control.
 
-1. Make sure you have explicitly named the target control in XAML. 
+2. Make sure you have explicitly named the target control in XAML. 
 
-1. In the constructor of your user control place the following code:
+3. In the constructor of your user control place the following code:
 
-	#### __C#__
-	
+	#### __C#__	
 	{{region common-styling-apperance-setting-theme_1}}
 		StyleManager.SetTheme(radSlider, new VistaTheme() );
-		{{endregion}}
-	
-	
-	
-	#### __VB.NET__
-	
+	{{endregion}}
+		
+	#### __VB.NET__	
 	{{region common-styling-apperance-setting-theme_2}}
 		StyleManager.SetTheme(radSlider, New VistaTheme())
-		{{endregion}}
-
-
+	{{endregion}}
 
 The result of both approaches will be similar and can be seen on the next figure.
 
@@ -132,68 +125,50 @@ To change the application theme in code-behind you should follow the instruction
 
 1. Open an existing application or create a new one. 
 
-1. Open __MainPage.xaml.cs__
-
-	>In this case __MainPage.xaml.cs__ is your entry point for the application. If you wonder which is your startup page, open the __App.xaml.cs__ file and see the __Application_Startup__ event handler:
+2. Open __MainPage.xaml.cs__. In this case __MainPage.xaml.cs__ is your entry point for the application. If you wonder which is your startup page, open the __App.xaml.cs__ file and see the __Application_Startup__ event handler:
 	
-	#### __C#__
-	
+	#### __C#__ 	
 	{{region common-styling-apperance-setting-theme_3}}
 		private void Application_Startup( object sender, StartupEventArgs e )
 		{
 		    this.RootVisual = new MainPage();
 		}
-		{{endregion}}
+	{{endregion}}	
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_4}}
 		Private Sub Application_Startup(ByVal sender As Object, ByVal e As StartupEventArgs)
 		    Me.RootVisual = New MainPage()
 		End Sub
-		{{endregion}}
+	{{endregion}}
 
+2. Declare the following code __before the InitializeComponent()__ call, depending on the name of your theme as follows:
 
-
-1. Declare the following code __before the InitializeComponent()__ call, depending on the name of your theme as follows:
-
-	#### __C#__
-	
+	#### __C#__  
 	{{region common-styling-apperance-setting-theme_5}}
 		StyleManager.ApplicationTheme = new VistaTheme();
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_6}}
 		StyleManager.ApplicationTheme = New VistaTheme()
-		{{endregion}}
+	{{endregion}}
 
+3. After properly executing the following steps your __MainPage__ class should be similar to this:
 
-1. After properly executing the following steps your __MainPage__ class should be similar to this:
-
-	#### __C#__
-	
+	#### __C#__   	
 	{{region common-styling-apperance-setting-theme_7}}
 		public partial class MainPage : UserControl
 		{
 		    public MainPage()
 		    {
-		        StyleManager.ApplicationTheme = new VistaTheme();
-		
+		        StyleManager.ApplicationTheme = new VistaTheme();		
 		        InitializeComponent();
 		    }
 		}
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_8}}
 		Public Partial Class MainPage
 		    Inherits UserControl
@@ -203,13 +178,11 @@ To change the application theme in code-behind you should follow the instruction
 		        InitializeComponent()
 		    End Sub
 		End Class
-		{{endregion}}
+	{{endregion}}	
 	
+	>tip With the same success setting an application-wide built-in theme can be done in the constructor of your Application class (App.xaml.cs):
 	
-	>tipWith the same success setting an application-wide built-in theme can be done in the constructor of your Application class (App.xaml.cs):
-	
-	#### __C#__
-	
+	#### __C#__  	
 	{{region common-styling-apperance-setting-theme_9}}
 		public partial class App : Application
 		{
@@ -224,12 +197,9 @@ To change the application theme in code-behind you should follow the instruction
 		        InitializeComponent();
 		    }
 		}
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_10}}
 		Public Partial Class App
 		    Inherits Application
@@ -244,9 +214,7 @@ To change the application theme in code-behind you should follow the instruction
 		        InitializeComponent()
 		    End Sub
 		End Class
-		{{endregion}}
-
-
+	{{endregion}}
 
 ## Create a Custom Theme
 
@@ -266,21 +234,15 @@ This section contains the following subsections:
 
 	For example, if you merge your styles in __Generic.xaml__ file, then you can set the theme pointing to this file:
 	
-	#### __C#__
-	
+	#### __C#__  	
 	{{region common-styling-apperance-setting-theme_11}}
 		Telerik.Windows.Controls.StyleManager.ApplicationTheme = new Theme( Uri( "/Telerik.Windows.Themes.CustomTheme;component/Themes/Generic.xaml", UriKind.Relative ) );
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__	
 	{{region common-styling-apperance-setting-theme_12}}
 		Telerik.Windows.Controls.StyleManager.ApplicationTheme = New Theme(Uri("/Telerik.Windows.Themes.CustomTheme;component/Themes/Generic.xaml", UriKind.Relative))
-		{{endregion}}
-	
-	
+	{{endregion}}		
 	
 	In the above code snippet it is assumed that:
 	
@@ -292,77 +254,60 @@ This section contains the following subsections:
 
 1. Create a new __Silverlight Class Library__ project.
 
-1. Add a new __Silverlight Resource Dictionary__. Here you should define the styles for the controls you want to style.
+2. Add a new __Silverlight Resource Dictionary__. Here you should define the styles for the controls you want to style.
 
-1. At the end you should have a single file that merges all your XAML files (if you have separate XAML files) using the __ResourceDictionary.MergedDictionaries__ construction.
+3. At the end you should have a single file that merges all your XAML files (if you have separate XAML files) using the __ResourceDictionary.MergedDictionaries__ construction.
 
-1. Create a new class which derives from __Theme__.
+4. Create a new class which derives from __Theme__.
 
-	#### __C#__
-	
+	#### __C#__  	
 	{{region common-styling-apperance-setting-theme_13}}
 		public class CustomTheme : Telerik.Windows.Controls.Theme
 		{
 		}
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_14}}
 		Public Class CustomTheme
 		    Inherits Telerik.Windows.Controls.Theme
 		End Class
-		{{endregion}}
+	{{endregion}}
 
+5. Set the __ThemeLocationAttribute__ attribute to __BuiltIn__ like this:
 
-
-1. Set the __ThemeLocationAttribute__ attribute to __BuiltIn__ like this:
-
-	#### __C#__
-	
+	#### __C#__  	
 	{{region common-styling-apperance-setting-theme_15}}
 		[ThemeLocation( ThemeLocation.BuiltIn )]
 		public class CustomTheme : Telerik.Windows.Controls.Theme
 		{
 		}
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_16}}
 		<ThemeLocation(ThemeLocation.BuiltIn)> _
 		Public Class CustomTheme
 		    Inherits Telerik.Windows.Controls.Theme
 		End Class
-		{{endregion}}
+	{{endregion}}
 
+6. In the class constructor set the __Source__ property of the Theme.
 
-1. In the class constructor set the __Source__ property of the Theme.
-
-	#### __C#__
-	
+	#### __C#__  	
 	{{region common-styling-apperance-setting-theme_17}}
 		public CustomTheme()
 		{
 		    this.Source = new Uri( "/Telerik.Windows.Themes.CustomTheme;component/themes/Generic.xaml", UriKind.Relative );
 		}
-		{{endregion}}
+	{{endregion}}
 	
-	
-	
-	#### __VB.NET__
-	
+	#### __VB.NET__  	
 	{{region common-styling-apperance-setting-theme_18}}
 		Public Sub New()
 		    Me.Source = New Uri("/Telerik.Windows.Themes.CustomTheme;component/Themes/Generic.xaml", UriKind.Relative)
 		End Sub
-		{{endregion}}
-
-
+	{{endregion}}
 
 In the above code snippet it is assumed that:
 
@@ -370,8 +315,11 @@ In the above code snippet it is assumed that:
 
 * The __Generic.xaml__ file is located in the __Themes__ folder.
 
-## See Also
+## Unsupported controls
 
+The RadGanttView control doesn't support changing the theme using StyleManager and it should be used with the NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. 
+
+## See Also  
  * [Modifying a Built-In Theme]({%slug common-styling-apperance-modifying-built-in-theme%})
-
  * [Theming-Overview]({%slug common-styling-apperance-create-theme-overview%})
+ * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

@@ -64,13 +64,16 @@ $(document).ready(function () {
       //Feedback menu controls
       var feedbackButtonsContainer = $("#helpful-buttons-container");
       var feedbackSubmittedContainer = $("#feedback-submitted-container");
+      var additionalFeedbackContainer = $("#additional-feedback-button");
       var toggleFeedbackButtons = function (toggle) {
         if (toggle) {
           feedbackButtonsContainer.show();
           feedbackSubmittedContainer.hide();
+          additionalFeedbackContainer.hide();
         } else {
           feedbackButtonsContainer.hide();
           feedbackSubmittedContainer.show();
+          additionalFeedbackContainer.show();
         }
       };
     
@@ -250,14 +253,14 @@ $(document).ready(function () {
         setCookieByName("yesNoFeedback", "Yes");
         toggleFeedbackButtons(false);
         Feedback.closeFeedback();
-        Feedback.hideFeedbackForm();
+        //Feedback.hideFeedbackForm();
         Feedback.adjustNavigationPosition();
       });
       $("#noButton").click(function () {
         setCookieByName("yesNoFeedback", "No");
         toggleFeedbackButtons(false);
         Feedback.closeFeedback();
-        Feedback.hideFeedbackForm();
+        //Feedback.hideFeedbackForm();
         Feedback.adjustNavigationPosition();
         win.center().open();
       });
@@ -311,7 +314,6 @@ $(document).ready(function () {
         _events: function () {
           $window.scroll(Feedback._window_scroll);
           $window.resize(Feedback._window_resize);
-          $("#close-button").click(Feedback._button_click);
         },
         _window_scroll: function () {
           updateVariables();

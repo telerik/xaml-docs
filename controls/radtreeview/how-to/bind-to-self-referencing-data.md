@@ -10,13 +10,13 @@ position: 16
 
 # Bind RadTreeView to Self-Referencing Data
 
-This tutorial will show you how to display in a __RadTreeView__ flat, self-referencing data, loaded from a database, that has properties __ID__ and __ParentID__ (or similar) which define the hierarchy. 
+This tutorial will show you how to display a __RadTreeView__ with flat, self-referencing data, loaded from a database, that has properties __ID__ and __ParentID__ (or similar) which define the hierarchy. 
 
 Consider the following very simple data object:
 
-#### __C#__
+#### __[C#] Example 1: Defining the DataItem class__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_0}}
+{{region cs-radtreeview-how-to-bind-to-self-referencing-data_0}}
 	public class DataItem
 	{
 	    public int Id
@@ -44,11 +44,11 @@ Consider the following very simple data object:
 	        this.Owner = collection;
 	    }
 	}
-	{{endregion}}
+{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Defining the DataItem class__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_1}}
+{{region vb-radtreeview-how-to-bind-to-self-referencing-data_1}}
 	Public Class DataItem
 	Private _Id As Integer
 	    Public Property Id() As Integer
@@ -98,9 +98,9 @@ Consider the following very simple data object:
 
 Those data objects are added into a special __DataItemCollection__ class, that inherits __ObservableCollection<T>__ and overrides __SetItem(), InsertItem(), RemoveItem()__ and __ClearItems()__ methods. In each override we call __AdoptItem()__ and __DiscardItem()__, respectively, which set the __Owner__ property of the __DataItem__ class: 
 
-#### __C#__
+#### __[C#] Example 2: Defining DataItemCollection__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_2}}
+{{region cs-radtreeview-how-to-bind-to-self-referencing-data_2}}
 	public class DataItemCollection : ObservableCollection<DataItem>
 	{
 	    protected override void InsertItem( int index, DataItem item )
@@ -137,9 +137,9 @@ Those data objects are added into a special __DataItemCollection__ class, that i
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Defining DataItemCollection__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_3}}
+{{region vb-radtreeview-how-to-bind-to-self-referencing-data_3}}
 		Public Class DataItemCollection
 			Inherits ObservableCollection(Of DataItem)
 			Protected Overloads Overrides Sub InsertItem(ByVal index As Integer, ByVal item As DataItem)
@@ -180,9 +180,9 @@ Now we are ready to data-bind our __RadTreeView__:
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 3: Defining the resources__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_4}}
+{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_4}}
 	<example:HierarchyConverter x:Key="HierarchyConverter" />
 	
 	<telerik:HierarchicalDataTemplate x:Key="ItemTemplate"
@@ -194,9 +194,9 @@ Now we are ready to data-bind our __RadTreeView__:
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 3: Defining the resources__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_466}}
+{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_466}}
 	<example:HierarchyConverter x:Key="HierarchyConverter" />
 	
 	<HierarchicalDataTemplate x:Key="ItemTemplate"
@@ -207,9 +207,9 @@ Now we are ready to data-bind our __RadTreeView__:
 
 {% endif %}
 
-#### __XAML__
+#### __[XAML] Example 4: Defining the RadTreeView__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_5}}
+{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_5}}
 	<telerik:RadTreeView x:Name="radTreeView"
 	 ItemTemplate="{StaticResource ItemTemplate}"
 	 ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}"/>
@@ -217,9 +217,9 @@ Now we are ready to data-bind our __RadTreeView__:
 
 There is one non-standard thing: all __ItemsSource__ bindings are made through a __ValueConverter__. This __ValueConverter__ will create the "real" hierarchy for us: 
 
-#### __C#__
+#### __[C#] Example 5: Defining the HierarchyConverter__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_6}}
+{{region cs-radtreeview-how-to-bind-to-self-referencing-data_6}}
 	public class HierarchyConverter : IValueConverter
 	{
 	    public object Convert( object value, Type targetType, object parameter, CultureInfo culture )
@@ -228,13 +228,15 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 	        DataItem item = value as DataItem;
 	        if ( item != null )
 	        {
-	            return item.Owner.Where( i => i.ParentId == item.Id );
+	            var owners = item.Owner.Where(i => i.ParentId == item.Id);
+                return new ObservableCollection<DataItem>(owners);
 	        }
 	        // We are binding the treeview
 	        DataItemCollection items = value as DataItemCollection;
 	        if ( items != null )
 	        {
-	            return items.Where( i => i.ParentId == 0 );
+	            var filteredItems = items.Where(i => i.ParentId == 0);
+                return new ObservableCollection<DataItem>(filteredItems);
 	        }
 	        return null;
 	    }
@@ -245,42 +247,39 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Defining the HierarchyConverter__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_7}}
+{{region vb-radtreeview-how-to-bind-to-self-referencing-data_7}}
 		Public Class HierarchyConverter
-			Implements IValueConverter
-	
-			Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object Implements IValueConverter.Convert
-				' We are binding an item'
+			Inherits IValueConverter
+
+			Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
 				Dim item As DataItem = TryCast(value, DataItem)
 				If item IsNot Nothing Then
-					Return item.Owner.Where(Function(i) i.ParentId = item.Id)
+					Dim owners = item.Owner.Where(Function(i) i.ParentId = item.Id)
+					Return New ObservableCollection(Of DataItem)(owners)
 				End If
-	
-				' We are binding the treeview'
+
 				Dim items As DataItemCollection = TryCast(value, DataItemCollection)
 				If items IsNot Nothing Then
-					Return items.Where(Function(i) i.ParentId = 0)
+					Dim filteredItems = items.Where(Function(i) i.ParentId = 0)
+					Return New ObservableCollection(Of DataItem)(filteredItems)
 				End If
-	
+
 				Return Nothing
 			End Function
-	
-			Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object Implements IValueConverter.ConvertBack
+
+			Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
 				Throw New NotImplementedException()
 			End Function
-	
 		End Class
 {{endregion}}
 
-When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__ method will return all __DataItem__ objects from the __Owner__ collection that have __ParentID__ equal to the __ID__ of the passed __DataItem__. When a __DataItemCollection__ is passed, we are binding the __RadTreeView__, so the __Convert()__ method will return the root-level __DataItem__ objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. I did it in this way for simplicity, but if you want, you could split the code into two classes.
+When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__ method will return all __DataItem__ objects from the __Owner__ collection that have __ParentID__ equal to the __ID__ of the passed __DataItem__. When a __DataItemCollection__ is passed, we are binding the RadTreeView, so the __Convert()__ method will return the root-level __DataItem__ objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. It is done in this way for simplicity, but if you want, you could split the code into two classes.
 
-Finally, let's populate the treeview with some data: 
+#### __[C#] Example 7: Populating the RadTreeView__
 
-#### __C#__
-
-{{region radtreeview-how-to-bind-to-self-referencing-data_8}}
+{{region cs-radtreeview-how-to-bind-to-self-referencing-data_8}}
 	this.DataContext = new DataItemCollection()
 	{
 	 new DataItem () { Text = "Item 1", Id = 1, ParentId = 0 },
@@ -298,9 +297,9 @@ Finally, let's populate the treeview with some data:
 	};
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Populating the RadTreeView__
 
-{{region radtreeview-how-to-bind-to-self-referencing-data_9}}
+{{region vb-radtreeview-how-to-bind-to-self-referencing-data_9}}
 	Me.DataContext = New DataItemCollection() From { 
 		New DataItem () With {.Text = "Item 1", .Id = 1, .ParentId = 0}, 
 		New DataItem () With {.Text = "Item 2", .Id = 2, .ParentId = 0}, 
@@ -317,8 +316,8 @@ Finally, let's populate the treeview with some data:
 													}
 {{endregion}}
 
-Here is the result: 
-![](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
+#### __Image 1: Self-Referencing RadTreeView__ 
+![Self referencing RadTreeView](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
 
 ## See Also
  * [Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%})

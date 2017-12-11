@@ -319,6 +319,8 @@ When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__
 #### __Image 1: Self-Referencing RadTreeView__ 
 ![Self referencing RadTreeView](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
 
+>You can check out this example in the [RadTreeView SDK examples]({%slug radtreeview-sdk-examples%}) or in the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](https://demos.telerik.com/xaml-sdkbrowser/).
+
 ## See Also
  * [Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%})
  * [Enable the Horizontal and Vertical Scrollbars]({%slug radtreeview-how-to-enable-horizontal-vertical-scrollbar%})

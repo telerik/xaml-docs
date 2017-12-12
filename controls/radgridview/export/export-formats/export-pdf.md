@@ -18,6 +18,8 @@ position: 2
 
 * [Disable Column's Width Auto Fit](#disable-column-width-auto-fit)
 
+* [Disable GroupHeaderRow Aggregates](#disable-groupheaderrow-aggregates)
+
 * [Events](#events)
 
 The __ExportToPdf__ method allows exporting to "Pdf" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
@@ -127,6 +129,27 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
 ![AutoFitColumnsWidth false](../images/autofitcolumnswidthPdf.png)
+
+## Disable GroupHeaderRow Aggregates
+
+By default, the Aggregate results of the __GroupHeaderRow__ will be exported. Note, that this is an operation performed on data level. Hiding the GroupHeaderRow Aggregates in the UI through a Style targeting the __GroupHeaderRow__ element does not affect it. In order to disable the exporting of the GroupHeaderRow Aggregates, you can set the __ShowGroupHeaderColumnAggregates__ of the __GridViewDocumentExportOptions__ to __False__.
+
+{{region gridview-export-xlsx-3}}
+	if (dialog.ShowDialog() == true)
+            {
+                using (Stream stream = dialog.OpenFile())
+                {
+                    gridViewExport.ExportToXlsx(stream,
+                        new GridViewDocumentExportOptions()
+                        {
+                            ShowColumnFooters = true,
+                            ShowColumnHeaders = true,
+                            ShowGroupFooters = true,
+                            ShowGroupHeaderRowAggregates = false
+                        });
+                }
+            }
+{{endregion}}
 
 ## Events
 

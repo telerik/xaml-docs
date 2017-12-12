@@ -18,123 +18,99 @@ Consider the following very simple data object:
 
 {{region cs-radtreeview-how-to-bind-to-self-referencing-data_0}}
 	public class DataItem
-	{
-	    public int Id
-	    {
-	        get;
-	        set;
-	    }
-	    public int ParentId
-	    {
-	        get;
-	        set;
-	    }
-	    public string Text
-	    {
-	        get;
-	        set;
-	    }
-	    public DataItemCollection Owner
-	    {
-	        get;
-	        protected set;
-	    }
-	    internal void SetOwner( DataItemCollection collection )
-	    {
-	        this.Owner = collection;
-	    }
-	}
+    {
+        public int Id
+        {
+            get;
+            set;
+        }
+        public int ParentId
+        {
+            get;
+            set;
+        }
+        public string Text
+        {
+            get;
+            set;
+        }
+
+        public DataItemCollection OwnerCollection
+        {
+            get;
+            protected set;
+        }
+
+        internal void SetOwnerCollection(DataItemCollection collection)
+        {
+            this.OwnerCollection = collection;
+        }
+    }
 {{endregion}}
 
 #### __[VB.NET] Example 1: Defining the DataItem class__
 
 {{region vb-radtreeview-how-to-bind-to-self-referencing-data_1}}
 	Public Class DataItem
-	Private _Id As Integer
-	    Public Property Id() As Integer
-	        Get
-	            Return _Id
-	        End Get
-	        Set(ByVal value As Integer)
-	            _Id = value
-	        End Set
-			End Property
-	
-			Private _ParentId As Integer
-			Public Property ParentId() As Integer
-				Get
-					Return _ParentId
-				End Get
-				Set(ByVal value As Integer)
-					_ParentId = value
-				End Set
-			End Property
-	
-			Private _Text As String
-			Public Property Text() As String
-				Get
-					Return _Text
-				End Get
-				Set(ByVal value As String)
-					_Text = value
-				End Set
-			End Property
-	
-			Private _Owner As DataItemCollection
-			Public Property Owner() As DataItemCollection
-				Get
-					Return _Owner
-				End Get
-				Protected Set(ByVal value As DataItemCollection)
-					_Owner = value
-				End Set
-			End Property
-	
-			Friend Sub SetOwner(ByVal collection As DataItemCollection)
-				Me.Owner = collection
-			End Sub
-		End Class
+    Inherits ViewModelBase
+
+    Public Property Id As Integer
+
+    Public Property ParentId As Integer
+
+    Public Property Text As String
+
+    Public Property OwnerCollection As DataItemCollection
+
+    Friend Sub SetOwnerCollection(ByVal collection As DataItemCollection)
+        Me.OwnerCollection = collection
+    End Sub
+End Class
 {{endregion}}
 
-Those data objects are added into a special __DataItemCollection__ class, that inherits __ObservableCollection<T>__ and overrides __SetItem(), InsertItem(), RemoveItem()__ and __ClearItems()__ methods. In each override we call __AdoptItem()__ and __DiscardItem()__, respectively, which set the __Owner__ property of the __DataItem__ class: 
+Those data objects are added into a special __DataItemCollection__ class, that inherits __ObservableCollection<T>__ and implements an AssociatedItem property that holds the root of each node.
 
 #### __[C#] Example 2: Defining DataItemCollection__
 
 {{region cs-radtreeview-how-to-bind-to-self-referencing-data_2}}
-	public class DataItemCollection : ObservableCollection<DataItem>
-	{
-	    protected override void InsertItem( int index, DataItem item )
-	    {
-	        this.AdoptItem( item );
-	        base.InsertItem( index, item );
-	    }
-	    protected override void RemoveItem( int index )
-	    {
-	        this.DiscardItem( this[ index ] );
-	        base.RemoveItem( index );
-	    }
-	    protected override void SetItem( int index, DataItem item )
-	    {
-	        this.AdoptItem( item );
-	        base.SetItem( index, item );
-	    }
-	    protected override void ClearItems()
-	    {
-	        foreach ( DataItem item in this )
-	        {
-	            this.DiscardItem( item );
-	        }
-	        base.ClearItems();
-	    }
-	    private void AdoptItem( DataItem item )
-	    {
-	        item.SetOwner( this );
-	    }
-	    private void DiscardItem( DataItem item )
-	    {
-	        item.SetOwner( null );
-	    }
-	}
+	 public class DataItemCollection : ObservableCollection<DataItem>
+    {
+        public DataItemCollection()
+            : base()
+        {
+        }
+
+        public DataItemCollection(IEnumerable<DataItem> collection)
+            : base(collection)
+        {
+        }
+
+        public DataItem AssociatedItem
+        {
+            get;
+            protected set;
+        }
+
+        public void SetAssociatedItem(DataItem item)
+        {
+            this.AssociatedItem = item;
+        }
+
+        protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+        {
+            base.OnCollectionChanged(e);
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (DataItem item in e.NewItems)
+                {
+                    if (this.AssociatedItem != null && item.ParentId != this.AssociatedItem.Id)
+                    {
+                        item.ParentId = this.AssociatedItem.Id;
+                    }                    
+                }
+            }
+        }
+    }
 {{endregion}}
 
 #### __[VB.NET] Example 2: Defining DataItemCollection__
@@ -142,36 +118,30 @@ Those data objects are added into a special __DataItemCollection__ class, that i
 {{region vb-radtreeview-how-to-bind-to-self-referencing-data_3}}
 		Public Class DataItemCollection
 			Inherits ObservableCollection(Of DataItem)
-			Protected Overloads Overrides Sub InsertItem(ByVal index As Integer, ByVal item As DataItem)
-				Me.AdoptItem(item)
-				MyBase.InsertItem(index, item)
+
+			Public Sub New()
 			End Sub
-	
-			Protected Overloads Overrides Sub RemoveItem(ByVal index As Integer)
-				Me.DiscardItem(Me(index))
-				MyBase.RemoveItem(index)
+
+			Public Sub New(ByVal collection As IEnumerable(Of DataItem))
 			End Sub
-	
-			Protected Overloads Overrides Sub SetItem(ByVal index As Integer, ByVal item As DataItem)
-				Me.AdoptItem(item)
-				MyBase.SetItem(index, item)
+
+			Public Property AssociatedItem As DataItem
+
+			Public Sub SetAssociatedItem(ByVal item As DataItem)
+				Me.AssociatedItem = item
 			End Sub
-	
-			Protected Overloads Overrides Sub ClearItems()
-				For Each item As DataItem In Me
-					Me.DiscardItem(item)
-				Next
-				MyBase.ClearItems()
-			End Sub
-	
-			Private Sub AdoptItem(ByVal item As DataItem)
-				item.SetOwner(Me)
-			End Sub
-	
-			Private Sub DiscardItem(ByVal item As DataItem)
-				item.SetOwner(Nothing)
-			End Sub
-		End Class
+
+			Protected Overrides Sub OnCollectionChanged(ByVal e As NotifyCollectionChangedEventArgs)
+				MyBase.OnCollectionChanged(e)
+				If e.Action = NotifyCollectionChangedAction.Add Then
+					For Each item As DataItem In e.NewItems
+						If Me.AssociatedItem IsNot Nothing AndAlso item.ParentId <> Me.AssociatedItem.Id Then
+							item.ParentId = Me.AssociatedItem.Id
+						End If
+					Next
+				End If
+		End Sub
+End Class
 {{endregion}}
 
 Normally when you load your data objects from a service in your application, you will have auto-generated partial classes, that are relatively easy to extend. 
@@ -221,33 +191,37 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 
 {{region cs-radtreeview-how-to-bind-to-self-referencing-data_6}}
 	public class HierarchyConverter : IValueConverter
-	{
-	    public object Convert( object value, Type targetType, object parameter, CultureInfo culture )
-	    {
-	        // We are binding an item
-	        DataItem item = value as DataItem;
-	        if ( item != null )
-	        {
-	            var owners = item.Owner.Where(i => i.ParentId == item.Id);
-                return new ObservableCollection<DataItem>(owners);
-	        }
-	        // We are binding the treeview
-	        DataItemCollection items = value as DataItemCollection;
-	        if ( items != null )
-	        {
-	            var filteredItems = items.Where(i => i.ParentId == 0);
-                return new ObservableCollection<DataItem>(filteredItems);
-	        }
-	        return null;
-	    }
-	    public object ConvertBack( object value, Type targetType, object parameter, CultureInfo culture )
-	    {
-	        throw new NotImplementedException();
-	    }
-	}
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            // We are binding an item
+            DataItem item = value as DataItem;
+            if (item != null)
+            {   
+                var children = item.OwnerCollection.Where(i => i.ParentId == item.Id);
+                var collection = new DataItemCollection(children);
+                collection.SetAssociatedItem(item);
+                return collection;
+            }
+
+            // We are binding the treeview
+            DataItemCollection items = value as DataItemCollection;
+            if (items != null)
+            {
+                var children = items.Where(i => i.ParentId == 0);
+                return new DataItemCollection(children);
+            }
+            return null;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
 {{endregion}}
 
-#### __[VB.NET] Example 6: Defining the HierarchyConverter__
+#### __[VB.NET] Example 5: Defining the HierarchyConverter__
 
 {{region vb-radtreeview-how-to-bind-to-self-referencing-data_7}}
 		Public Class HierarchyConverter
@@ -256,14 +230,16 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 			Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
 				Dim item As DataItem = TryCast(value, DataItem)
 				If item IsNot Nothing Then
-					Dim owners = item.Owner.Where(Function(i) i.ParentId = item.Id)
-					Return New ObservableCollection(Of DataItem)(owners)
+					Dim children = item.OwnerCollection.Where(Function(i) i.ParentId = item.Id)
+					Dim collection = New DataItemCollection(children)
+					collection.SetAssociatedItem(item)
+					Return collection
 				End If
 
 				Dim items As DataItemCollection = TryCast(value, DataItemCollection)
 				If items IsNot Nothing Then
-					Dim filteredItems = items.Where(Function(i) i.ParentId = 0)
-					Return New ObservableCollection(Of DataItem)(filteredItems)
+					Dim children = items.Where(Function(i) i.ParentId = 0)
+					Return New DataItemCollection(children)
 				End If
 
 				Return Nothing
@@ -271,49 +247,69 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 
 			Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
 				Throw New NotImplementedException()
-			End Function
-		End Class
+		End Function
+End Class
 {{endregion}}
 
 When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__ method will return all __DataItem__ objects from the __Owner__ collection that have __ParentID__ equal to the __ID__ of the passed __DataItem__. When a __DataItemCollection__ is passed, we are binding the RadTreeView, so the __Convert()__ method will return the root-level __DataItem__ objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. It is done in this way for simplicity, but if you want, you could split the code into two classes.
 
-#### __[C#] Example 7: Populating the RadTreeView__
+#### __[C#] Example 6: Populating the RadTreeView__
 
 {{region cs-radtreeview-how-to-bind-to-self-referencing-data_8}}
-	this.DataContext = new DataItemCollection()
+	public MainWindow()
 	{
-	 new DataItem () { Text = "Item 1", Id = 1, ParentId = 0 },
-	 new DataItem () { Text = "Item 2", Id = 2, ParentId = 0 },
-	 new DataItem () { Text = "Item 3", Id = 3, ParentId = 0 },
-	 new DataItem () { Text = "Item 1.1", Id = 5, ParentId = 1 },
-	 new DataItem () { Text = "Item 1.2", Id = 6, ParentId = 1 },
-	 new DataItem () { Text = "Item 1.3", Id = 7, ParentId = 1 },
-	 new DataItem () { Text = "Item 2.1", Id = 8, ParentId = 2 },
-	 new DataItem () { Text = "Item 2.2", Id = 9, ParentId = 2 },
-	 new DataItem () { Text = "Item 2.3", Id = 10, ParentId = 2 },
-	 new DataItem () { Text = "Item 3.1", Id = 11, ParentId = 3 },
-	 new DataItem () { Text = "Item 3.2", Id = 12, ParentId = 3 },
-	 new DataItem () { Text = "Item 3.3", Id = 13, ParentId = 3 }
-	};
+		InitializeComponent();
+		
+		var source =  new DataItemCollection()
+		{                
+				new DataItem () { Text = "Item 1", Id = 1, ParentId = 0 },
+				new DataItem () { Text = "Item 2", Id = 2, ParentId = 0 },
+				new DataItem () { Text = "Item 3", Id = 3, ParentId = 0 },
+				new DataItem () { Text = "Item 1.1", Id = 5, ParentId = 1 },
+				new DataItem () { Text = "Item 1.2", Id = 6, ParentId = 1 },
+				new DataItem () { Text = "Item 1.3", Id = 7, ParentId = 1 },
+				new DataItem () { Text = "Item 2.1", Id = 8, ParentId = 2 },
+				new DataItem () { Text = "Item 2.2", Id = 9, ParentId = 2 },
+				new DataItem () { Text = "Item 2.3", Id = 10, ParentId = 2 },
+				new DataItem () { Text = "Item 3.1", Id = 11, ParentId = 3 },
+				new DataItem () { Text = "Item 3.2", Id = 12, ParentId = 3 },
+				new DataItem () { Text = "Item 3.3", Id = 13, ParentId = 3, }                 
+		};
+
+		foreach (var item in source)
+		{
+			item.SetOwnerCollection(source);
+		}
+
+		this.DataContext = source;
+	}
 {{endregion}}
 
-#### __[VB.NET] Example 7: Populating the RadTreeView__
+#### __[VB.NET] Example 6: Populating the RadTreeView__
 
 {{region vb-radtreeview-how-to-bind-to-self-referencing-data_9}}
-	Me.DataContext = New DataItemCollection() From { 
-		New DataItem () With {.Text = "Item 1", .Id = 1, .ParentId = 0}, 
-		New DataItem () With {.Text = "Item 2", .Id = 2, .ParentId = 0}, 
-		New DataItem () With {.Text = "Item 3", .Id = 3, .ParentId = 0}, 
-		New DataItem () With {.Text = "Item 1.1", .Id = 5, .ParentId = 1}, 
-		New DataItem () With {.Text = "Item 1.2", .Id = 6, .ParentId = 1}, 
-		New DataItem () With {.Text = "Item 1.3", .Id = 7, .ParentId = 1}, 
-		New DataItem () With {.Text = "Item 2.1", .Id = 8, .ParentId = 2}, 
-		New DataItem () With {.Text = "Item 2.2", .Id = 9, .ParentId = 2}, 
-		New DataItem () With {.Text = "Item 2.3", .Id = 10, .ParentId = 2}, 
-		New DataItem () With {.Text = "Item 3.1", .Id = 11, .ParentId = 3}, 
-		New DataItem () With {.Text = "Item 3.2", .Id = 12, .ParentId = 3}, 
-		New DataItem () With {.Text = "Item 3.3", .Id = 13, .ParentId = 3} 
-													}
+	Public Sub MainWindow()
+		InitializeComponent()
+		Dim source = New DataItemCollection() From {
+			New DataItem() With {.Text = "Item 1", .Id = 1, .ParentId = 0}, 
+			New DataItem() With {.Text = "Item 2", .Id = 2, .ParentId = 0},
+			 New DataItem() With {.Text = "Item 3", .Id = 3, .ParentId = 0}, 
+			 New DataItem() With {.Text = "Item 1.1", .Id = 5, .ParentId = 1}, 
+			 New DataItem() With {.Text = "Item 1.2", .Id = 6, .ParentId = 1}, 
+			 New DataItem() With {.Text = "Item 1.3", .Id = 7, .ParentId = 1}, 
+			 New DataItem() With {.Text = "Item 2.1", .Id = 8, .ParentId = 2}, 
+			 New DataItem() With {.Text = "Item 2.2", .Id = 9, .ParentId = 2}, 
+			 New DataItem() With {.Text = "Item 2.3", .Id = 10, .ParentId = 2}, 
+			 New DataItem() With {.Text = "Item 3.1", .Id = 11, .ParentId = 3}, 
+			 New DataItem() With {.Text = "Item 3.2", .Id = 12, .ParentId = 3}, 
+			 New DataItem() With {.Text = "Item 3.3", .Id = 13, .ParentId = 3}}
+		
+		For Each item In source
+			item.SetOwnerCollection(source)
+		Next
+
+		Me.DataContext = source
+	End Sub
 {{endregion}}
 
 #### __Image 1: Self-Referencing RadTreeView__ 

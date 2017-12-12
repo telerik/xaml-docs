@@ -1,65 +1,65 @@
 ---
-title: How to populate RadDiagramShape with custom connectors in MVVM scenario
-page_title: How to populate RadDiagramShape with custom connectors in MVVM scenario
-description: How to populate RadDiagramShape with custom connectors in MVVM scenario.
-slug: raddiagram-howto-create-populate-raddiagramshape-with-custom-connectors-in-mvvm-scenario
+title: Using custom connectors in MVVM
+page_title: Using custom connectors in MVVM
+description: Using custom connectors in MVVM.
+slug: raddiagram-using-custom-connectors-in-mvvm
 tags: create,custom,shape,connectors,mvvm,graphsource
 published: True
 position: 18
 ---
 
-# How to populate RadDiagramShape with custom connectors in MVVM scenario
+# Using custom connectors in MVVM
 
 This tutorial will guide you through the task of populating RadDiagramShape with custom connectors in MVVM scenario.
 
-To populate the __RadDiagramShape__ with custom connectors in MVVM scenario you can create an attached property. Then bind the Value of this property to a collection from your ViewModel. In the attached property you have access to the shape and its Connectors collection. Using this you can add new connectors to the collection. 
+To populate the __RadDiagramShape__ with custom connectors in MVVM scenario you can create an attached property. Then bind the value of this property to a collection from your view model. In the property changed callback of the attached property you have access to the shape and its __Connectors__ collection. Using this you can add new connectors to the collection. 
 
-To implement this scenario you can create a collection which holds the custom connectors in your ViewModel.
+To implement this scenario you can create a collection which holds the custom connectors in your view model.
 
 #### __[C#] Example 1: Creating collection with custom connectors__
-{{region raddiagram-howto-create-populate-raddiagramshape-with-custom-connectors-in-mvvm-scenario-0}}
-	public class ConnectorProxy
-    {
-        public string Name { get; set; }
-        public System.Windows.Point Position { get; set; }
-    }
-	public class Node : NodeViewModelBase
+{{region raddiagram-using-custom-connectors-in-mvvm-0}}
+public class ConnectorProxy
+{
+	public string Name { get; set; }
+	public System.Windows.Point Position { get; set; }
+}
+public class Node : NodeViewModelBase
+{
+	private ObservableCollection<ConnectorProxy> myConnectors = new ObservableCollection<ConnectorProxy>();
+
+	public Node()
 	{
-		private ObservableCollection<ConnectorProxy> myConnectors = new ObservableCollection<ConnectorProxy>();
+		//Add connectors.
+		this.MyConnectors.Add(new ConnectorProxy() { Name = "FirstConnector", Position = new Point(0, 0.3) });
+		this.MyConnectors.Add(new ConnectorProxy() { Name = "SecondConnector", Position = new Point(1, 0.3) });
+		this.MyConnectors.Add(new ConnectorProxy() { Name = "ThirdConnector", Position = new Point(0.5, 0.8) });
+	}
 
-		public Node()
+	public ObservableCollection<ConnectorProxy> MyConnectors
+	{
+		get
 		{
-			//Add connectors.
-			this.MyConnectors.Add(new ConnectorProxy() { Name = "FirstConnector", Position = new Point(0, 0.3) });
-			this.MyConnectors.Add(new ConnectorProxy() { Name = "SecondConnector", Position = new Point(1, 0.3) });
-			this.MyConnectors.Add(new ConnectorProxy() { Name = "ThirdConnector", Position = new Point(0.5, 0.8) });
-		}
-
-		public ObservableCollection<ConnectorProxy> MyConnectors
-		{
-			get
-			{
-				return this.myConnectors;
-			}
+			return this.myConnectors;
 		}
 	}
-	public class Link : LinkViewModelBase<NodeViewModelBase>
-	{       
-    }
-	public  class MyGraphSource : ObservableGraphSourceBase<Node, Link>
-    {
-        public MyGraphSource()
-        {
-            Node shape1 = new Node() {Content = "Shape1", Position=new Point(80,120) };
-            this.AddNode(shape1);
-        }
-    }
+}
+public class Link : LinkViewModelBase<NodeViewModelBase>
+{       
+}
+public  class MyGraphSource : ObservableGraphSourceBase<Node, Link>
+{
+	public MyGraphSource()
+	{
+		Node shape1 = new Node() {Content = "Shape1", Position=new Point(80,120) };
+		this.AddNode(shape1);
+	}
+}
 {{endregion}}
 
 The next step is to create the attached property.
 
 #### __[C#] Example 2: Creating attached property__
-{{region raddiagram-howto-create-populate-raddiagramshape-with-custom-connectors-in-mvvm-scenario-1}}
+{{region raddiagram-using-custom-connectors-in-mvvm-1}}
 	public static class AttachedProperties
 	{
 		public static IEnumerable<ConnectorProxy> GetConnectors(DependencyObject obj)
@@ -93,11 +93,11 @@ The next step is to create the attached property.
 	}
 {{endregion}}
 
-Finally, you can create implicit style and bind the attached property to the custom collection and define a RadDiagram control in the View.
+Finally, you can create an implicit style and bind the attached property to the custom collection and define a RadDiagram control in the view.
 
 #### __[C#] Example 3: Setting the attached property in XAML__
 
-{{region raddiagram-howto-create-populate-raddiagramshape-with-custom-connectors-in-mvvm-scenario-2}}
+{{region raddiagram-using-custom-connectors-in-mvvm-2}}
 	<Window.Resources>
 		<local:MyGraphSource x:Key="Source"/>
         <DataTemplate x:Key="contentTemplate">

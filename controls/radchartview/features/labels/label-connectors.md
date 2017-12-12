@@ -38,7 +38,7 @@ RadChartView supports drawing of connector lines between the series' data points
 	</telerik:RadPieChart>
 {{endregion}}
 
-#### __Figure 1: Labels connectors visual appereance__
+#### __Figure 1: Label connectors visual appearance__
 ![](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
 
 ## Customizing labels connectors points

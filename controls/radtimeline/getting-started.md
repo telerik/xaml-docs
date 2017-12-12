@@ -10,9 +10,12 @@ position: 1
 
 # Getting Started
 
-This topic will walk you through the creating of  __RadTimeline__.    
+This topic will walk you through the creating of __RadTimeline__.    
 
->In order to use __RadTimeline__ in your project you have to add references to the following two assemblies:
+## Assembly References
+
+>In order to use __RadTimeline__ control in your project you have to add references to the following assemblies:
+
 > * Telerik.Windows.Controls.dll
 > * Telerik.Windows.Controls.DataVisualization.dll
 > * Telerik.Windows.Data.dll

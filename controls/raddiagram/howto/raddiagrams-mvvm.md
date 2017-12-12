@@ -14,7 +14,7 @@ The following help article will demonstrate how to bind the __RadDiagram__ in MV
 
 * [Sample MVVM RadDiagram](#sample-mvvm-raddiagram)
 * [Using MVVM to populate RadDiagram with ContainerShapes](#using-mvvm-to-populate-raddiagram-with-containershapes)
-* [Using MVVM to bind SourceConnectorPosition and TargetConnectorPosition properties](#using-mvvm-to-bind-sourceconnectorposition-and-targetconnectorposition-properties)
+* [Bind the source and target connector positions of the connection](#bind-the-source-and-target-connector-positions-of-the-connection)
 
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.				
 
@@ -372,7 +372,7 @@ If you run the application now, the __RadDiagram__ should display the following 
 
 >tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.	
 
-## Using MVVM to bind SourceConnectorPosition and TargetConnectorPosition properties
+## Bind the source and target connector positions of the connection
 
 To bind the __SourceConnectorPoistion__ and __TargetConnectorPoistion__ properties of the RadDiagramConnection you can create string properties in your __LinkViewModelBase<NodeViewModelBase>__ class. The next step is to create an implicit style to bind them in XAML.
 

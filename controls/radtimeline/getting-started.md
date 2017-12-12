@@ -14,13 +14,13 @@ This topic will walk you through the creating of __RadTimeline__.
 
 ## Assembly References
 
->In order to use __RadTimeline__ control in your project you have to add references to the following assemblies:
+In order to use __RadTimeline__ control in your project you have to add references to the following assemblies:
 
-> * Telerik.Windows.Controls.dll
-> * Telerik.Windows.Controls.DataVisualization.dll
-> * Telerik.Windows.Data.dll
+* __Telerik.Windows.Controls.dll__
+* __Telerik.Windows.Controls.DataVisualization.dll__
+* __Telerik.Windows.Data.dll__
 
-You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. __Example 1__ demonstrate how to create __RadTimeline__ in XAML.
+You can include the control in your page by either dragging it from the toolbox in Visual Studio or manually creating the control. __Example 1__ demonstrate how to create __RadTimeline__ in XAML.
 
 #### __[XAML] Example 1: Creating RadTimeline control__
 
@@ -45,7 +45,7 @@ You can include the control in your page by either dragging it from the toolbox 
 
 ## RadTimeline items
 
-The RadTimeline control presents its data in two types of occurrences(events). The first one is one-time occurrence which happens once in a time. The second type represents periodical occurrence. It requires a strict Start and End time to be presented.
+The RadTimeline control presents its data in two types of occurrences(events). The first one is a one-time occurrence which happens once in a time. The second type represents periodical occurrence. It requires a strict __Start__ and __End__ time to be presented.
 
 #### __Figure 2: RadTimeline items visualization__
 ![](images/RadTimeline_Getting_Started_1.PNG)

@@ -20,7 +20,7 @@ The __Placeholder__ character is a character used to represent the absence of us
 #### __Figure 1 : Default placeholder__
 ![](images/RadMaskedTextBox_Features_Placeholder_Default.png)
 
-When the __Value__ of a __RadMaskedInput__ control contains underscore character, it will be removed when we use the default placeholder. This is because of the default placeholder of the control is underscore character __"_"__. This behavior can be workaround by changing the default __Placeholder__. In order to do that you can set a __RadMaskedInput__ control's __Placeholder__ property, like in __Example 1__.
+When the __Value__ of a __RadMaskedInput__ control contains underscore character, it will be removed when we use the default placeholder. This is because of the default placeholder of the control is underscore character __"_"__. You can alter this behavior by changing the default __Placeholder__. In order to do that you can set a __RadMaskedInput__ control's __Placeholder__ property, like in __Example 1__.
 
 #### __[XAML] Example 1: Change the default placeholder__
 {{region xaml-radmaskedinput-features-placeholder_1}}

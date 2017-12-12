@@ -10,39 +10,29 @@ position: 1
 
 # Creating Linear Gauge
 
-One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This topic will guide you in creating a trivial linear gauge and will explain the following:
+One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This tutorial will walk you through the creation of a sample application that contains a linear RadGauge.
 
-* [Defining a LinearGauge](#defining-a-linear-gauge)
-
-* [Defining a LinearScale](#defining-a-linearscale)
-
+* [Assembly References](#assembly-references)
+* [Defining a linear gauge with a linear scale](#defining-a-linear-gauge-with-a-linear-scale)
 * [Defining an Indicator](#defining-an-indicator)
-
 * [Set Indicator's Position](#set-indicators-position)
 
-* [Configuring the Gauge](#configuring-the-gauge)
+## Assembly References
 
-## Defining a Linear Gauge
+In order to use the __RadGauge__ control in your projects, you have to add references to the following assemblies:			
 
->In order to use the __RadGauge__ control and its components you have to reference the following assemblies:
->	- __Telerik.Windows.Controls.DataVisualization.dll__
->	- __Telerik.Windows.Controls.dll__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.DataVisualization__
 
-The linear gauge type is represented by the __HorizontalLinearGauge__ or __VerticalLinearGauge__ class. You can use either of them to have vertical or horizontal orientated gauges. The linear gauge control is used for wrapping linear scales. You can place one or more __LinearScale__ objects inside of it. Here is an example of an instance of the __LinearGauge__ control with dimensions __100x300__.
+## Defining a linear gauge with a linear scale
+
+The linear gauge type is represented by the __HorizontalLinearGauge__ or __VerticalLinearGauge__ class. You can use either of them to have vertical or horizontal orientated gauges. The linear gauge control is used for wrapping linear scales. You can place one or more __LinearScale__ objects inside of it. In order to define a scale inside the __LinearGauge__ control you have to use the __LinearScale__ control. The __LinearGauge__ works as an __ItemsControl__, which takes __LinearScale__ controls as items. This means that you can have more than one scale inside the linear gauge.
 
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:  
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-## Defining a LinearScale
-
-In order to define a scale inside the __LinearGauge__ control you have to use the __LinearScale__ control. The __LinearGauge__ works as an __ItemsControl__, which takes __LinearScale__ controls as items. This means that you can have more than one scale inside the linear gauge.
-
->tip To learn more about the usage of the __LinearScale__ control read the Linear Scale topic.
-
-Here is an example of a single __LinearScale__:
-
-#### __XAML__
-{{region radgauge-getting-started-creating-linear-gauge_2}}
+#### __[XAML] Example 1: Creating RadVerticalLinearGauge with a VerticalLinearScale__
+{{region xaml-radgauge-getting-started-creating-linear-gauge_2}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" 
 	                    Max="20"
@@ -56,16 +46,18 @@ Here is an example of a single __LinearScale__:
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
 
-Here is a snapshot of the result:
+>tip To learn more about the usage of the __LinearScale__ control, read the [Linear Scale]({%slug linear-scale-overview%}) topic.
 
-![](images/RadGauge_GettingStarted_LinearGauge_02.png)
+#### __Image 1: Result from Example 1__
+
+![RadVerticalLinearGauge with a VerticalLinearScale](images/RadGauge_GettingStarted_LinearGauge_02.png)
 
 ## Defining an Indicator
 
 The __LinearScale__ control allows you to display different types of indicators that point to a value off the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of LinearScale that uses a Marker indicator to mark the current value.
 
-#### __XAML__
-{{region radgauge-getting-started-creating-linear-gauge_3}}
+#### __[XAML] Example 2: Adding Indicators__
+{{region xaml-radgauge-getting-started-creating-linear-gauge_3}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
@@ -85,16 +77,16 @@ The __LinearScale__ control allows you to display different types of indicators 
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
 
-Here is a snapshot of the result.
+#### __Image 2: Result from Example 2__
 
-![](images/RadGauge_GettingStarted_LinearGauge_03.png)
+![RadVerticalLinearGauge with Indicator](images/RadGauge_GettingStarted_LinearGauge_03.png)
 
 ## Set Indicator's Position
 
 To make the indicator point to a certain value off the scale, you have to use the Value property of the indicator. Here is an example:
 
-#### __XAML__
-{{region radgauge-getting-started-creating-linear-gauge_4}}
+#### __[XAML] Example 3: Setting indicator's position__
+{{region xaml-radgauge-getting-started-creating-linear-gauge_4}}
 	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
@@ -115,13 +107,11 @@ To make the indicator point to a certain value off the scale, you have to use th
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
 
-Here is a snapshot of the result.
+#### __Image 3: Result from Example 3__
 
-![](images/RadGauge_GettingStarted_LinearGauge_04.png)
+![RadVerticalLinearGauge with Indicator position](images/RadGauge_GettingStarted_LinearGauge_04.png)
 
-## Configuring the Gauge
-
-To configure and setup the linear gauge you can use the various properties of the elements inside of it. In order to get familiar with them read the following topics: 
+## See Also
 
 * [Ranges]({%slug radgauge-features-ranges-gauge-range%})
 * [Indicators]({%slug radgauge-features-indicators-basics%})

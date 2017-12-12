@@ -18,42 +18,42 @@ To implement this scenario you can create a collection which holds the custom co
 
 #### __[C#] Example 1: Creating collection with custom connectors__
 {{region raddiagram-using-custom-connectors-in-mvvm-0}}
-public class ConnectorProxy
-{
-	public string Name { get; set; }
-	public System.Windows.Point Position { get; set; }
-}
-public class Node : NodeViewModelBase
-{
-	private ObservableCollection<ConnectorProxy> myConnectors = new ObservableCollection<ConnectorProxy>();
-
-	public Node()
+	public class ConnectorProxy
 	{
-		//Add connectors.
-		this.MyConnectors.Add(new ConnectorProxy() { Name = "FirstConnector", Position = new Point(0, 0.3) });
-		this.MyConnectors.Add(new ConnectorProxy() { Name = "SecondConnector", Position = new Point(1, 0.3) });
-		this.MyConnectors.Add(new ConnectorProxy() { Name = "ThirdConnector", Position = new Point(0.5, 0.8) });
+		public string Name { get; set; }
+		public System.Windows.Point Position { get; set; }
 	}
-
-	public ObservableCollection<ConnectorProxy> MyConnectors
+	public class Node : NodeViewModelBase
 	{
-		get
+		private ObservableCollection<ConnectorProxy> myConnectors = new ObservableCollection<ConnectorProxy>();
+
+		public Node()
 		{
-			return this.myConnectors;
+			//Add connectors.
+			this.MyConnectors.Add(new ConnectorProxy() { Name = "FirstConnector", Position = new Point(0, 0.3) });
+			this.MyConnectors.Add(new ConnectorProxy() { Name = "SecondConnector", Position = new Point(1, 0.3) });
+			this.MyConnectors.Add(new ConnectorProxy() { Name = "ThirdConnector", Position = new Point(0.5, 0.8) });
+		}
+
+		public ObservableCollection<ConnectorProxy> MyConnectors
+		{
+			get
+			{
+				return this.myConnectors;
+			}
 		}
 	}
-}
-public class Link : LinkViewModelBase<NodeViewModelBase>
-{       
-}
-public  class MyGraphSource : ObservableGraphSourceBase<Node, Link>
-{
-	public MyGraphSource()
-	{
-		Node shape1 = new Node() {Content = "Shape1", Position=new Point(80,120) };
-		this.AddNode(shape1);
+	public class Link : LinkViewModelBase<NodeViewModelBase>
+	{       
 	}
-}
+	public  class MyGraphSource : ObservableGraphSourceBase<Node, Link>
+	{
+		public MyGraphSource()
+		{
+			Node shape1 = new Node() {Content = "Shape1", Position=new Point(80,120) };
+			this.AddNode(shape1);
+		}
+	}
 {{endregion}}
 
 The next step is to create the attached property.
@@ -100,22 +100,20 @@ Finally, you can create an implicit style and bind the attached property to the 
 {{region raddiagram-using-custom-connectors-in-mvvm-2}}
 	<Window.Resources>
 		<local:MyGraphSource x:Key="Source"/>
-        <DataTemplate x:Key="contentTemplate">
-            <TextBlock Text="{Binding Content}" />
-        </DataTemplate>
-        
-        <Style TargetType="telerik:RadDiagramShape">
-            <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-            <Setter Property="common:AttachedProperties.Connectors" Value="{Binding MyConnectors}" />
-        </Style>
-
-    </Window.Resources>
-    <Grid>
-        <telerik:RadDiagram GraphSource="{StaticResource Source}"
-							ShapeTemplate="{StaticResource contentTemplate}" 
-							ConnectionTemplate="{StaticResource contentTemplate}">          
-        </telerik:RadDiagram>
-    </Grid>
+		<DataTemplate x:Key="contentTemplate">
+		    <TextBlock Text="{Binding Content}" />
+		</DataTemplate>
+		<Style TargetType="telerik:RadDiagramShape">
+		    <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
+		    <Setter Property="common:AttachedProperties.Connectors" Value="{Binding MyConnectors}" />
+		</Style>
+	</Window.Resources>
+	<Grid>
+		<telerik:RadDiagram GraphSource="{StaticResource Source}"
+								ShapeTemplate="{StaticResource contentTemplate}" 
+								ConnectionTemplate="{StaticResource contentTemplate}">          
+		</telerik:RadDiagram>
+	</Grid>
 {{endregion}}
 
 #### __Figure 1: Custom connectors in RadDiagramShape__

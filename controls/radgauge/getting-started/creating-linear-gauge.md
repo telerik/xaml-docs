@@ -33,7 +33,7 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 
 #### __[XAML] Example 1: Creating RadVerticalLinearGauge with a VerticalLinearScale__
 {{region xaml-radgauge-getting-started-creating-linear-gauge_2}}
-	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                    Max="20"
 	                    RelativeHeight="1"
@@ -52,13 +52,15 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 
 ![RadVerticalLinearGauge with a VerticalLinearScale](images/RadGauge_GettingStarted_LinearGauge_02.png)
 
+> The examples in this article are styled with the [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}) theme.
+
 ## Defining an Indicator
 
 The __LinearScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of LinearScale that uses a Marker indicator to mark the current value.
 
 #### __[XAML] Example 2: Adding Indicators__
 {{region xaml-radgauge-getting-started-creating-linear-gauge_3}}
-	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
 	                         RelativeHeight="1"
@@ -87,7 +89,7 @@ To make the indicator point to a certain value on the scale, you have to use the
 
 #### __[XAML] Example 3: Setting indicator's position__
 {{region xaml-radgauge-getting-started-creating-linear-gauge_4}}
-	<telerik:RadVerticalLinearGauge Width="100" Height="200" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
 	                         RelativeHeight="1"

@@ -33,7 +33,7 @@ There is no special container for the numeric scale, as for the radial or linear
 
 #### __[XAML] Example 1: Creating RadHorizontalLinearGauge with a NumericScale__
 {{region xaml-radgauge-getting-started-creating-numeric-gauge_2}}
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
 	    <telerik:NumericScale Min="0" Max="999">
 	    </telerik:NumericScale>
 	</telerik:RadHorizontalLinearGauge>
@@ -47,7 +47,7 @@ The __NumericScale__ control allows you to display numeric indicators that repre
 
 #### __[XAML] Example 2: Adding Indicators__
 {{region xaml-radgauge-getting-started-creating-numeric-gauge_3}}
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
 	    <telerik:NumericScale Min="0" Max="999">
 	        <telerik:NumericScale.Indicators>
 	            <telerik:NumericIndicator telerik:ScaleObject.RelativeX="0.05"
@@ -75,13 +75,15 @@ The __NumericScale__ control allows you to display numeric indicators that repre
 
 ![RadHorizontalLinearGauge with indicator](images/RadGauge_GettingStarted_NumericGauge_03.png)
 
+> The examples in this article are styled with the [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}) theme.
+
 ## Set Indicator's Position
 
 To make the indicator display a certain value on the scale, you have to use the __Value__ property of the indicator. Here is an example.
 
 #### __[XAML] Example 3: Setting indicator's position__
 {{region xaml-radgauge-getting-started-creating-numeric-gauge_4}}
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50" telerik:StyleManager.Theme="Windows8">
+	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
 	    <telerik:NumericScale Min="0" Max="999">
 	        <telerik:NumericScale.Indicators>
 	            <telerik:NumericIndicator telerik:ScaleObject.RelativeX="0.05"

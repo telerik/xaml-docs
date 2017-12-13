@@ -8,9 +8,9 @@ published: True
 position: 2
 ---
 
-# Diagramming Framework Predefined Shape Geometries
+# Predefined Shape Geometries
 
-__Telerik Diagramming Framework__ provides three types of predefined shape geometries - __ArrowShapes__, __CommonShapes__ and __FlowChartShapes__. For each of these types the framework exposes xaml markup extensions that can be applied at the __RadDiagramShape.Geometry__ property as a shortcut way of creating a shape.
+The __Telerik Diagramming Framework__ provides three types of predefined shape geometries - __ArrowShapes__, __CommonShapes__ and __FlowChartShapes__. For each of these types the framework exposes xaml markup extensions that can be applied at the __RadDiagramShape.Geometry__ property as a shortcut way of creating a shape.
 
 This article contains a list with the available geometries and shows how to set a geometry.
 

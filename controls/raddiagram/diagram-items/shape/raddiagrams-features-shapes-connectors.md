@@ -45,7 +45,7 @@ This feature comes with a set of predefined shape forms determining the form of 
 
 ## Hiding the Default Connectors
 
-To hide the default connectors you can set the __UseDefaultConnectors__ property of RadDiagramShape to False in order to hide the default connectors. The property is available also in RadDiagramContainerShape.
+To hide the default connectors you can set the __UseDefaultConnectors__ property of the RadDiagramShape and RadDiagramContainerShape to **False**.
 
 ## Using Custom Connectors 
 

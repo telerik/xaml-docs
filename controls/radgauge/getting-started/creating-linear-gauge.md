@@ -10,10 +10,10 @@ position: 1
 
 # Creating Linear Gauge
 
-One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value off the scale. This tutorial will walk you through the creation of a sample application that contains a linear RadGauge.
+One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a linear RadGauge.
 
 * [Assembly References](#assembly-references)
-* [Defining a linear gauge with a linear scale](#defining-a-linear-gauge-with-a-linear-scale)
+* [Defining a Linear Gauge with a Linear Scale](#defining-a-linear-gauge-with-a-linear-scale)
 * [Defining an Indicator](#defining-an-indicator)
 * [Set Indicator's Position](#set-indicators-position)
 
@@ -24,7 +24,7 @@ In order to use the __RadGauge__ control in your projects, you have to add refer
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__
 
-## Defining a linear gauge with a linear scale
+## Defining a Linear Gauge with a Linear Scale
 
 The linear gauge type is represented by the __HorizontalLinearGauge__ or __VerticalLinearGauge__ class. You can use either of them to have vertical or horizontal orientated gauges. The linear gauge control is used for wrapping linear scales. You can place one or more __LinearScale__ objects inside of it. In order to define a scale inside the __LinearGauge__ control you have to use the __LinearScale__ control. The __LinearGauge__ works as an __ItemsControl__, which takes __LinearScale__ controls as items. This means that you can have more than one scale inside the linear gauge.
 
@@ -54,7 +54,7 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 
 ## Defining an Indicator
 
-The __LinearScale__ control allows you to display different types of indicators that point to a value off the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of LinearScale that uses a Marker indicator to mark the current value.
+The __LinearScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of LinearScale that uses a Marker indicator to mark the current value.
 
 #### __[XAML] Example 2: Adding Indicators__
 {{region xaml-radgauge-getting-started-creating-linear-gauge_3}}
@@ -83,7 +83,7 @@ The __LinearScale__ control allows you to display different types of indicators 
 
 ## Set Indicator's Position
 
-To make the indicator point to a certain value off the scale, you have to use the Value property of the indicator. Here is an example:
+To make the indicator point to a certain value on the scale, you have to use the Value property of the indicator. Here is an example:
 
 #### __[XAML] Example 3: Setting indicator's position__
 {{region xaml-radgauge-getting-started-creating-linear-gauge_4}}

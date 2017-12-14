@@ -227,13 +227,16 @@ __Example 7__ demonstrates how to prevent the Header property of the left docked
 
 #### __[C#] Example 7: Loading properties__
 
-{{region cs-raddocking-features-custom-save-load-layout_6}}
-	private void radDocking_CustomElementLoading(object sender, LayoutSerializationCustomLoadingEventArgs e)
+{{region cs-raddocking-features-custom-save-load-layout_8}}
+	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
 	{
-	    if (e.CustomElementTypeName == "MyRadPane")
-	    {
-	        e.SetAffectedElement(new MyRadPane());
-	    }
+		if (e.AffectedElementSerializationTag.Contains("PaneLeft"))
+		{
+			if(e.ElementProperties.ContainsKey("Header"))
+			{
+				e.ElementProperties.Remove("Header");	
+			}		
+		}		
 	}
 {{endregion}}
 

@@ -19,7 +19,6 @@ body {
     color: #555;
     font: 400 14px Arial, Helvetica, sans-serif;
     position: relative;
-    overflow: hidden;
 }
 
 a img {
@@ -97,9 +96,10 @@ footer {
     background-color: #2a2d33;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px; 
+    box-sizing: border-box;
     padding: 19px 15px;
     z-index: 100;
-    height: 32px;
+    height: 70px;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -577,9 +577,7 @@ footer {
 
 #page-inner-content {
     clear: both;
-    width: 80%;
     position: relative;
-    padding-left: 20%;
     padding-top: 119px;
 }
 
@@ -600,8 +598,9 @@ footer {
     -webkit-overflow-scrolling: touch;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     overflow: auto;
-    width: 80%;
     height: 100%;
+    padding-bottom: 102px;
+    padding-left: 20%;
 }
 
 #page-article h1:after {
@@ -837,21 +836,16 @@ a.footer-links:hover {
 }
 
 footer {
-    bottom: 0;
+    padding: 20px 0;
     box-sizing: border-box;
-    left: 0;
-    position: fixed;
-    text-align: right;
-    width: 100%;
-	background-color: #2a2d33;
-    color: #fff;
-	min-height: 44px;
-	z-index: 100;
+    z-index: 100;
+    border-top: 1px solid rgb(235, 236, 238);
 }
 
 footer p {
-	margin-top: 15px;
-	margin-right: 1em;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
 }
 
 footer p a#send-feedback {
@@ -1651,7 +1645,7 @@ header, nav, section, article, aside, footer {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     text-align: left;
     position: absolute;
-    bottom: 44px;
+    bottom: 41px;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -1698,7 +1692,9 @@ header, nav, section, article, aside, footer {
 
 footer,
 #feedback-menu-container {
-  padding-left: 20%;
+  padding-left: 4em;
+  padding: 13px 4em 13px 6em;
+  margin-left: 20%;
 }
 
 @-webkit-keyframes hide-feedback-form-animation {
@@ -1747,7 +1743,6 @@ footer,
 
 #helpful-buttons-container,
 #feedback-submitted-container {
-    padding-left: 4em;
 	color: #fff;
 	text-decoration: none;
     position: relative;
@@ -1786,8 +1781,6 @@ footer,
 #feedback-submitted-container,
 #additional-feedback-button {
 	display: none; 	
-	font-size: 22px;
-	font-weight: 500;	
 }
 
 #additional-feedback-button {

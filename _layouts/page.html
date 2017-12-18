@@ -1,49 +1,49 @@
 ---
 layout: index
 ---
-<div id="page-inner-content">
-    <div id="page-nav">
-        <div id="page-tree"></div>
-        <script>
-			$("#page-tree").kendoTreeView({
-				dataSource: {
-					transport: {
-						read: {
-							url: "{{site.baseurl}}/{{page.category}}.json",
-							dataType: "json"
-						}
-					},
-					schema: {
-						model: {
-							id: "path",
-							children: "items",
-							hasChildren: "items"
-						}
+<div id="page-nav">
+	<div id="page-tree"></div>
+	<script>
+		$("#page-tree").kendoTreeView({
+			dataSource: {
+				transport: {
+					read: {
+						url: "{{site.baseurl}}/{{page.category}}.json",
+						dataType: "json"
 					}
 				},
-				select: preventParentSelection,
-				template: navigationTemplate("{{site.baseurl}}/"),
-				dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
-			});
-        </script>
-		<div id="page-api" class="k-treeview">
-			<ul class="k-group">
-				<li class="k-item">
-					<span class="k-icon k-plus" role="presentation"></span>
-					<span class="k-in">
-						<a href="{{site.baseurl}}/api/" target="_blank">API Reference</a>
-					</span>
-				</li>
-			</ul>
-		</div>			
-    </div>
+				schema: {
+					model: {
+						id: "path",
+						children: "items",
+						hasChildren: "items"
+					}
+				}
+			},
+			select: preventParentSelection,
+			template: navigationTemplate("{{site.baseurl}}/"),
+			dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
+		});
+	</script>
+	<div id="page-api" class="k-treeview">
+		<ul class="k-group">
+			<li class="k-item">
+				<span class="k-icon k-plus" role="presentation"></span>
+				<span class="k-in">
+					<a href="{{site.baseurl}}/api/" target="_blank">API Reference</a>
+				</span>
+			</li>
+		</ul>
+	</div>			
+</div>
+<div id="page-inner-content">
 	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/xaml-docs/edit/master{{ page.url | replace: '.html','' }}.md">Edit this page</a>
     <div id="page-article">       
         <article>
             {{ content }}
         </article>
-{% if site.ff-sheet-id %}{% include feedback-form.html %}{% endif %}
-    </div>	
+	</div>	
+	{% if site.ff-sheet-id %}{% include feedback-form.html %}{% endif %}
+	
+	{% include footer.html %}
 </div>
-
-{% include footer.html %}

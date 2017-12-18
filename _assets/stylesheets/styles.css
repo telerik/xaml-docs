@@ -13,13 +13,13 @@ html {
 
 body, html {
     min-height: 100%;
-	overflow: hidden;
 }
 
 body {
     color: #555;
     font: 400 14px Arial, Helvetica, sans-serif;
     position: relative;
+    overflow: hidden;
 }
 
 a img {
@@ -42,7 +42,10 @@ footer {
     border-bottom: 1px solid #eff0f1;
     color: #4d4f52;
     background: #ffffff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 42042;
 }
 .TK-Hat::after {
@@ -98,6 +101,9 @@ footer {
     z-index: 100;
     height: 32px;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 41px;
 }
 
 #page-header:after {
@@ -207,7 +213,6 @@ footer {
 #page-search {
     margin: 0 0 0 85px;
     position: absolute;
-    top: 61px;
     background-color: transparent;
     padding: 0;
     right: 514px;
@@ -310,14 +315,22 @@ footer {
 #page-nav {
     float: left;
     width: 20%;
-	height: 100% !important;
+    margin-top: 112px;
 	top: 0;
     left: 0;
     overflow: auto;
-    position: absolute;
+    position: fixed;
 	background: none repeat scroll 0 0 #f5f7f8;
     border-right: 1px solid #ebecee;
 	z-index: 1;
+}
+
+#page-nav:after {
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
 }
 
 #page-tree {
@@ -563,11 +576,11 @@ footer {
 }
 
 #page-inner-content {
-    position: absolute;
-	overflow: hidden !important;
-    top: 113px;
-    bottom: 44px; 
-    width: 100%;
+    clear: both;
+    width: 80%;
+    position: relative;
+    padding-left: 20%;
+    padding-top: 119px;
 }
 
 #page-inner-content:after {
@@ -586,12 +599,9 @@ footer {
     -webkit-box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    bottom: 0;
     overflow: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-	width: 80%;
+    width: 80%;
+    height: 100%;
 }
 
 #page-article h1:after {
@@ -774,15 +784,7 @@ pre .atn { color: #3e526b; } /* attribute name */
 pre .dec { color: #3e526b; } /* decimal */
 
 /* Footer */
-#footer
-{
-    background-color: #2a2d33;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+
 
 .footer-links {
     display: inline-block;
@@ -838,7 +840,7 @@ footer {
     bottom: 0;
     box-sizing: border-box;
     left: 0;
-    position: absolute;
+    position: fixed;
     text-align: right;
     width: 100%;
 	background-color: #2a2d33;
@@ -1645,9 +1647,14 @@ header, nav, section, article, aside, footer {
 }
 
 #feedback-section {
-    margin-top: 15px;
-    margin-left: 40px;
-    padding-bottom: 20px;
+    background-color: #1976d2;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-align: left;
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 #feedback-section.fixed {
@@ -1679,17 +1686,19 @@ header, nav, section, article, aside, footer {
 }
 
 #feedback-section .side-title {
-    font-size: 22px;
+    font-size: 14px;
     margin-bottom: 0;
     margin-right: 15px;
     flex: 1;
 }
 
 #feedback-menu-container {
-	width: 100%;
-	max-width: 930px;
-	padding-top: 15px;
-	border-top: 2px solid #ebecee;
+    padding: 13px 0;
+}
+
+footer,
+#feedback-menu-container {
+  padding-left: 20%;
 }
 
 @-webkit-keyframes hide-feedback-form-animation {
@@ -1738,32 +1747,23 @@ header, nav, section, article, aside, footer {
 
 #helpful-buttons-container,
 #feedback-submitted-container {
-	font-size: 1.5em;
-	font-weight: 500;
-	color: #000;
+    padding-left: 4em;
+	color: #fff;
 	text-decoration: none;
     position: relative;
     display: flex;
     align-items: center;
+    max-width: 930px;
 }
 
 #helpful-buttons-container .button {
-	float: right;
-	line-height: 0.933em;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 2px;
-	padding: 0.667em 2.000em;
-	background-color: #fff;
-	color: #555;
-	border-width: 0;
-	cursor: pointer;
-	background-clip: padding-box;
-	border: 1px solid #ccc;
-	transition-property: background-color, color;
-	transition-duration: 0.2s;
-	transition-timing-function: ease;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b4daff;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
 }
 
 #helpful-buttons-container span {
@@ -1774,9 +1774,13 @@ header, nav, section, article, aside, footer {
 	margin-right: 10px;
 }
 
-#helpful-buttons-container .button:hover{
-	background-color: #2a2d33;
-	color: #fff;
+#noButton {
+    margin-left: 10px;
+}
+
+#helpful-buttons-container .button:hover {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #feedback-submitted-container,
@@ -1784,11 +1788,6 @@ header, nav, section, article, aside, footer {
 	display: none; 	
 	font-size: 22px;
 	font-weight: 500;	
-}
-
-#feedback-submitted-container {
-	float: right;	
-	color: #000;	
 }
 
 #additional-feedback-button {

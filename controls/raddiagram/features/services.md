@@ -86,6 +86,8 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 		End Class	
 	{{endregion}}
 
+	> When registering a new [SerializationService](#serializationservice), you also have to re-initialize the [DataTransferService](#datatransferservice).
+
 * __ServiceRegistered__ - this event occurs when a service is registered. You can handle it to keep track of the services changes in a __RadDiagram__ instance.
 
 ## AdornerService

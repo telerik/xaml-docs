@@ -167,6 +167,16 @@ In order to use the chartview components in code, you will need to add the requi
 
 Although you can easily populate the __RadCartesianChart Series__ directly with DataPoint objects, in most real-life applications, you will populate the series with business data. This is why all series types expose an __ItemsSource__ property. You can bind that property to a collection of business items. And if you use a collection that implements the __INotifyCollectionChanged__ interface, then any changes within the business data will be immediately reflected in the appropriate __RadChartView__ components and vice versa. You can find more information in the [Populating with Data]({%slug radchartview-series-databinding%}) section of our documentation.
 
+## Caching mechanism
+
+When the chart is loaded it saves the size of most of its elements, as labels and data point visuals to optimize the performance and it uses this cache size. In order to update these elements, you need to update the chart's API. For example, if you change the axis range, add a new data point, remove/add series, etc. __Example 6__ demonstrates one of the approaches which can be used to update the chart's API.
+
+#### __[C#] Example 6: Update chart API__
+{{region radchart-introduction_6}}
+	this.myChart.VerticalAxis = null;
+	this.myChart.VerticalAxis = new LinearAxis();
+{{endregion}}
+
 ## See Also
 * [Overview]({%slug radchartview-overview%})
 * [Series and Axes]({%slug radchartview-series-and-axes%})

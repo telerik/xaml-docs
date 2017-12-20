@@ -338,10 +338,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	topFilterDescription.Levels.Add(levelFilterDescription2)
 {{endregion}}
 
-## See Also
-
+## See Also  
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
-
  * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
-
  * [Populating with Data]({%slug radpivotgrid-populating-with-data%})

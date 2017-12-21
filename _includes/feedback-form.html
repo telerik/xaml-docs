@@ -1,18 +1,14 @@
 <div id="feedback-container">
   <div id="feedback-section">
     {% javascript feedback %}
-    <span id="popupNotification"></span>
     <div id="feedback-menu-container">
       <div id="helpful-buttons-container">
-        <span class="side-title">Was this article helpful?</span>
-        <a class="button" id="yesButton">Yes</a>
+        <span class="side-title">Is this article helpful?</span>
+        <a class="button" id="yesButton">Yes</a> /
         <a class="button" id="noButton">No</a>
       </div>
-      <div id="feedback-submitted-container" class="feedback-ext__left">		
-        <span class="feedback-ext__label-submit">Thank you for your feedback!</span>		
-      </div>
-      <div id="additional-feedback-button" class="feedback-ext__right">		
-        <span class="feedback-ext__addition">Give additional feedback</span>		
+      <div id="feedback-submitted-container">
+        <span class="side-title">Thank you for your feedback!</span>
       </div>
     </div>
     <div id="feedback-window-container">
@@ -66,6 +62,9 @@
         </div>
       </div>
     </div>
+    <a id="close-button" class="button">
+      <img src="{{site.baseurl}}/images/close-btn.svg" alt="close" />
+    </a>
   </div>
   <div id="feedback-section-dummy">Dummy</div>
 </div>

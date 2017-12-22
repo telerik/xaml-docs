@@ -126,19 +126,19 @@ In order to modify the search behavior, you can benefit from the following three
 
 - __+__: The items that will pass the filtering operation will have to __contain__ both the value __before__ the operator and the one __after__ it.
 
-	__Figure 2: Using the __+__ search operator__
+	__Figure 2: Using the `+` search operator__
 	
 	![Using the + search operator](images/gridview-textsearch-plus-operator.png)
 
 - __-__: All items that will pass the filtering operation will have to  __contain__ the value __before__ the operator, but __not__ the one __after__ it.
 
-	__Figure 3: Using the __-__ search operator__
+	__Figure 3: Using the `-` search operator__
 	
 	![Using the - search operator](images/gridview-textsearch-minus-operator.png)
 
 - __""__: When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 	
-	__Figure 4: Using the *""* search operator__
+	__Figure 4: Using the `""` search operator__
 	
 	![Using the "" search operator](images/gridview-textsearch-quotes-operator.png)
 

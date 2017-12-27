@@ -29,13 +29,13 @@ To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ 
 {{region radfiledialogs-features-filtering-0}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.FileName = "Document";
-	openFileDialog.Filter = "Word Documents|*.doc|Excel Worksheets|*.xls;*.xlsx|" +
-							"PowerPoint Presentations|*.ppt" +
-							"|Office Files|*.doc;*.xls;*.xlsx;*.ppt" +
-							"|Image Files|*.jpg;*.png" +
-							"|Text Files|*.txt;" +
-							"|Archives Files|*.zip;*.rar" +
-							"|All Files|*.*";
+	openFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
+							"PowerPoint Presentations|\*.ppt" +
+							"|Office Files|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
+							"|Image Files|\*.jpg;\*.png" +
+							"|Text Files|\*.txt;" +
+							"|Archives Files|\*.zip;\*.rar" +
+							"|All Files|\*.\*";
 	openFileDialog.FilterIndex = 2;
 	openFileDialog.ShowDialog();
 {{endregion}}
@@ -55,13 +55,13 @@ To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ 
 {{region radfiledialogs-features-filtering-1}}
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
 	saveFileDialog.FileName = "Document";
-	saveFileDialog.Filter = "Word Documents|*.doc|Excel Worksheets|*.xls;*.xlsx|" +
-							"PowerPoint Presentations|*.ppt" +
-							"|Office Files|*.doc;*.xls;*.xlsx;*.ppt" +
-							"|Image Files|*.jpg;*.png" +
-							"|Text Files|*.txt;" +
-							"|Archives Files|*.zip;*.rar" +
-							"|All Files|*.*";
+	saveFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
+							"PowerPoint Presentations|\*.ppt" +
+							"|Office Files|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
+							"|Image Files|\*.jpg;\*.png" +
+							"|Text Files|\*.txt;" +
+							"|Archives Files|\*.zip;\*.rar" +
+							"|All Files|\*.\*";
 	saveFileDialog.FilterIndex = 2;
 	saveFileDialog.ShowDialog();
 {{endregion}}

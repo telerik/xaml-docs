@@ -10,7 +10,7 @@ position: 2
 
 # Protecting Telerik UI Assemblies
 
-Technical guidelines for protecting **Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by Progress** binaries when redistributed with other applications.
+Technical guidelines for protecting **Telerik UI for {{ site.framework_name }} by Progress** binaries when redistributed with other applications.
      
 There are a couple of approaches that you can take:
 * [Use the PowerShell Scripts](#use-the-powershell-scripts)
@@ -18,7 +18,7 @@ There are a couple of approaches that you can take:
 
 ## Use the PowerShell Scripts
 
-Telerik UI source code provides two power shell scripts that will allow you to easily apply the modifications needed to protect the Telerik assemblies without the need to open and edit any files. The scrips are located in the **\UI for {{ site.framework_name }} installation folder\Build\BuildInstructions\AssemblyProtection** folder of the **Telerik UI** source code. 
+Telerik UI source code provides two power shell scripts that will allow you to easily apply the modifications needed to protect the Telerik assemblies without the need to open and edit any files. The scrips are located in the **Build\BuildInstructions\AssemblyProtection** folder of the suite's source code which can be downloaded as explained in {% if site.framework_name == 'WPF' %}[this article]({%slug download-product-files-wpf%}){% else %}[this article]({%slug download-product-files%}){% endif %}. 
 
 The available scripts are: 
 
@@ -116,6 +116,8 @@ __Instructions__
 		</Application>
 	{{endregion}}
 
+<!-- -->
+
 ## Building Telerik Documents Assemblies from Source Code
 
 The instructions in the previous section explain how to build the **Telerik.Windows.Controls** assembly and the assemblies depending on it. The UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite contains libraries for processing documents which do not depend on **Telerik.Windows.Controls.dll**. 
@@ -148,6 +150,8 @@ If you are building the assemblies needed for one of the components depending on
 			return ValidatePassPhrase();
 		}
 	{{endregion}}
+
+<!-- -->
 
 3. Execute steps **3-7** from the previous section.
 

@@ -341,7 +341,19 @@ footer {
 }
 
 #page-nav .k-plus { background: url(../images/close.png) no-repeat; }
+
+#page-nav .k-i-expand { background: url(../images/close.png) no-repeat; }
+
+#page-nav .k-i-expand::before { content: "" }
+
 #page-nav .k-minus { background: url(../images/open.png) no-repeat; }
+
+#page-nav .k-i-collapse { 
+    background: url(../images/open.png) no-repeat;
+    margin-top: 0;
+}
+
+#page-nav .k-i-collapse::before { content: "" }
 
 #page-nav .article {
 	background: url(../images/file.png) no-repeat;

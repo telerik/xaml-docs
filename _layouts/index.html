@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="page-position" content="{{page.position}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.page_title || page.title }} | UI for {{site.site_name}} Documentation by Progress</title>
@@ -19,17 +19,19 @@
 		{% if page.glyphs_refence_sheet %}
 			{% stylesheet telerikwebui-glyph-styles %}
 		{% endif %}
-        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2017.3.1026/styles/kendo.common.min.css" />
         {% stylesheet styles %}
         {% stylesheet theme %}
         {% stylesheet branding %}
         {% stylesheet highlight %}
+        {% stylesheet icon-font %}
         <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
-         <script src="//kendo.cdn.telerik.com/2016.1.112/js/kendo.web.min.js"></script>
+         <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
         {% javascript prettify %}
         {% javascript app %}
 		{% javascript prettify %}
         {% javascript branding %}
+        {% javascript matchMedia %}
 		
 		<!--[if lt IE 9]>
 		<script>

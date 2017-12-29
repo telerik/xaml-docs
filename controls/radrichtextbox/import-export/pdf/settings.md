@@ -35,9 +35,9 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 * __ImagesCompressionMode:__  A property of type __PdfImagesCompressionMode__ that gets or sets a value indicating the compression mode used when compressing images.
 	* __None__: No compression.
 	* __Deflate__: The deflate algorithm will be applied to compress the images.
-	* __Jpeg__: The jpeg algorithm will be applied to compress the images.
+	* __Jpeg__: The Jpeg algorithm will be applied to compress the images.
 	* __Automatic__: Default mode. The best algorithm will be automatically decided upon for you.	Currently, __Jpeg__ is used for JPEG images, and __Deflate__ for all others.
-* __ImagesDeflaterCompressionLevel__:  A property of type __integer__ between -1 and 9 that gets or sets a value indicating the compression level to be used when deflating the images in the document. This property is respected when an image is compressed with __Deflate__ mode (see __ImagesCompressionMode:__).
+* __ImagesDeflaterCompressionLevel__:  A property of type __integer__ between -1 and 9 that gets or sets a value indicating the compression level to be used when deflating the images in the document. This property is respected when an image is compressed with __Deflate__ mode (see __ImagesCompressionMode__).
 	* __-1__: Automatic compression, which is currently 6 (Optimal Compression).
 	* __0__: No Compression. This is the default value of the property.
 	* __9__: Best Compression. 

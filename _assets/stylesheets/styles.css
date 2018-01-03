@@ -634,6 +634,11 @@ a:hover {
     color: #036c9c;
 }
 
+a .anchor {
+    padding-top: 119px;
+    margin-top: -119px;
+}
+
 /* Headings */
 
 h1,h2,h3,h4,h5,h6,
@@ -822,7 +827,7 @@ a.footer-links:hover {
 	position: absolute;
 	z-index: 10;
 	right: 28px;
-	top: 10px;
+	top: 129px;
 	margin: 0;
 	text-decoration: none;
 }

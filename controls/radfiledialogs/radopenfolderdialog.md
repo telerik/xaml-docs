@@ -22,7 +22,7 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
 #### __[C#] Example 1: Show a open folder dialog__
-{{region radfiledialogs-radopenfolderdialog-0}}
+{{region cs-radfiledialogs-radopenfolderdialog-0}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;            
 	openFolderDialog.ShowDialog();
@@ -37,7 +37,7 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 The dialog supports single and multiple selection modes. By default you can select only one folder at a time. To alter this you can set the __Multiselect__ property of RadOpenFolderDialog.
 
 #### __[C#] Example 3: Enable multiple selection__
-{{region radfiledialogs-radopenfolderdialog-1}}
+{{region cs-radfiledialogs-radopenfolderdialog-1}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;
 	openFolderDialog.Multiselect = true;
@@ -53,7 +53,7 @@ You can get the paths of the selected folders via the __FileName__ and __FileNam
 You can get only the name of the selected folders, without the full path, via the __SafeFileNames__ collection property.
 
 #### __[C#] Example 3: Get the selected folder names__
-{{region radfiledialogs-radopenfolderdialog-2}}
+{{region cs-radfiledialogs-radopenfolderdialog-2}}
 	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
 	openFolderDialog.Owner = theHostWindowInstance;                  
 	openFolderDialog.ShowDialog();
@@ -66,6 +66,16 @@ You can get only the name of the selected folders, without the full path, via th
 {{endregion}}
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
+
+## Saving the last used directory
+
+You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFolderDialog. After setting this property to __True__ and opening a folder the __InitialDirectory__ of the RadOpenFolderDialog will be the parent of the opened folder.
+
+#### __[C#] Example 4: Set RestoreDirectory property__
+{{region cs-radfiledialogs-radopenfolderdialog-3}}
+	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
+	openFolderDialog.RestoreDirectory = true;
+{{endregion}}
 
 ## See Also
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})

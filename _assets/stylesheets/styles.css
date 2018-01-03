@@ -634,7 +634,7 @@ a:hover {
     color: #036c9c;
 }
 
-a .anchor {
+a.anchor {
     padding-top: 119px;
     margin-top: -119px;
 }

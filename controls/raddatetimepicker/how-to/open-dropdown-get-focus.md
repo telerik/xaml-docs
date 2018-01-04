@@ -10,7 +10,7 @@ position: 3
 
 # Open the DropDown When the Control Gets Focus
 
-__RadDateTimePicker__'s API gives you the ability to open the __DropDown__ when the control gets focus. In order to enable this behavior you should set the __RadDateTimePicker__'s  __OpenDropDownOnFocus__ property to __True__.
+__RadDateTimePicker__'s API gives you the ability to open the __DropDown__ when the control gets focus. In order to enable this behavior, you should set the __RadDateTimePicker__'s  __OpenDropDownOnFocus__ property to __True__.
 
 #### __[XAML] Example 1: Set the OpenDropDownOnFocus property__
 

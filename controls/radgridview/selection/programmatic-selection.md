@@ -237,7 +237,7 @@ You can deselect cell regions by using RadGridView's **UnselectCellRegion** meth
 
 ## Selecting range of items
 
->In order this functionality to be available, the __SelectionMode__ needs to be set either to __Multiple__, or to __Extended__.
+>To enable this functionality, the __SelectionMode__ needs to be set either to __Multiple__, or to __Extended__.
 
 __RadGridView__ exposes a mechanism for a fast programmatic selection of a range of items. The method for utilizing it is the __SelectItemsRange__. It is available with the __2017.3.1120 latest internal build__ and the official version that is going to support it is __R1 2018__. The method exposes two overloads:
 

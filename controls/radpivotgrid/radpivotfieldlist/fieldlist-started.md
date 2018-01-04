@@ -54,7 +54,7 @@ Here's the result of the modified application from [Getting Started]({%slug radp
 Now by using __RadPivotFieldList__ you are able to modify __RadPivotGrid__ at runtime and to generate reports with entire new structure and information. For example:
 ![Rad Pivot Grid Rad Field List Getting Started 02](images/RadPivotGrid_RadFieldList_GettingStarted_02.png)
 
->tip The OlapDataProviders (AdomdDataProvider and XmlaDataProvider) has a default distinct values limit of 1000 records. This is why if you have more distinct values in your database you won't see them all in the pivot field list control. To alter this number set the [DistinctValuesLimit]({%slug radpivotgrid-features-distinct-values-limit%}) property of the provider.
+>tip The OlapDataProviders (AdomdDataProvider and XmlaDataProvider) have a default distinct values limit of 1000 records. This is why if you have more distinct values in your database you won't see them all in the pivot field list control. To alter this number, set the [DistinctValuesLimit]({%slug radpivotgrid-features-distinct-values-limit%}) property of the provider.
 
 ## See Also 
  * [RadPivotFieldList]({%slug radpivotgrid-fieldlist%})

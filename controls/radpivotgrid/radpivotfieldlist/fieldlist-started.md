@@ -36,16 +36,14 @@ In this article we will show how to integrate __RadPivotFieldList__ with __RadPi
 
 You can add your __RadPivotFieldList__ directly in the XAML. First step is to define __pivot__ namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. After that add the code below:        	
 
-#### __XAML__
-
+#### __XAML__  
 {{region radpivotgrid-fieldlist-getting-started_1}}
 	<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1" />
 {{endregion}}
 
 Now the only thing you have to set is the DataProvider:        	
 
-#### __XAML__
-
+#### __XAML__  
 {{region radpivotgrid-fieldlist-getting-started_2}}
 	<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1"  DataProvider="{StaticResource LocalDataProvider}"/>
 {{endregion}}
@@ -56,10 +54,9 @@ Here's the result of the modified application from [Getting Started]({%slug radp
 Now by using __RadPivotFieldList__ you are able to modify __RadPivotGrid__ at runtime and to generate reports with entire new structure and information. For example:
 ![Rad Pivot Grid Rad Field List Getting Started 02](images/RadPivotGrid_RadFieldList_GettingStarted_02.png)
 
-## See Also
+>tip The OlapDataProviders ({% if site.site_name == 'WPF' %}AdomdDataProvider and {% endif %}XmlaDataProvider) have a default distinct values limit of 1000 records. This is why if you have more distinct values in your database you won't see them all in the pivot field list control. To alter this number, set the [DistinctValuesLimit]({%slug radpivotgrid-features-distinct-values-limit%}) property of the provider.
 
+## See Also 
  * [RadPivotFieldList]({%slug radpivotgrid-fieldlist%})
-
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
-
  * [Populating with Data]({%slug radpivotgrid-populating-with-data%})

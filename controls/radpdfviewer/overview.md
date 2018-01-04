@@ -57,6 +57,8 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * Extensible support for different stream compression filters. [[Read more]({%slug radpdfviewer-customize-pdf-rendering%})]
 
+* Support for documents encrypted with **Encryption Algorithm 4 (RC4)** 
+
 * The API provides different options for **extending** and **customizing** the control.
 
 ## See Also

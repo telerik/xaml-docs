@@ -22,7 +22,7 @@ The unsupported features include:
 
 * Lab, ICCBased.
 
-* Encrypted documents when a non-standard encryption method is used, or the document is password-protected.
+* Password protection.
 
 * JPXDecode filter: This filter does not work out of the box. However, there is API allowing to plug-in custom user-defined filters. This API is described in the [Customize PDF Rendering]({%slug radpdfviewer-customize-pdf-rendering%}) topic and an [SDK example](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomDecoder) showing the approach is available in our SDK repository on GitHub.
             

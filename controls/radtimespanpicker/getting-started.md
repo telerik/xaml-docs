@@ -45,19 +45,17 @@ By setting the __GenerateDefaultComponents__ property to __True__ the control wi
 #### __[XAML] Adding TimeSpanComponents__
 
 {{region xaml-radtimespanpicker-getting-started_1}}
-<telerik:RadTimeSpanPicker>
-    <telerik:RadTimeSpanPicker.TimeSpanComponents>
-	<telerik:DayTimeSpanComponent/>
-	<telerik:HourTimeSpanComponent/>
-	<telerik:MinuteTimeSpanComponent/>
-	<telerik:SecondTimeSpanComponent/>
-	<telerik:MillisecondTimeSpanComponent/>
-    </telerik:RadTimeSpanPicker.TimeSpanComponents>
-</telerik:RadTimeSpanPicker>
+	<telerik:RadTimeSpanPicker>
+	    <telerik:RadTimeSpanPicker.TimeSpanComponents>
+		<telerik:DayTimeSpanComponent/>
+		<telerik:HourTimeSpanComponent/>
+		<telerik:MinuteTimeSpanComponent/>
+		<telerik:SecondTimeSpanComponent/>
+		<telerik:MillisecondTimeSpanComponent/>
+	    </telerik:RadTimeSpanPicker.TimeSpanComponents>
+	</telerik:RadTimeSpanPicker>
 {{endregion}}
 
-## See Also
-
- * [Overview]({%slug radtimespanpicker-overview%})
-
+## See Also 
+ * [Overview]({%slug radtimespanpicker-overview%}) 
  * [Visual Structure]({%slug radtimespanpicker-visual-structure%})

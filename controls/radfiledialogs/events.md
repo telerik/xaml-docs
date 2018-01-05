@@ -34,11 +34,11 @@ This article lists the events specific to all of the RadFileDialog controls.
         }
 	{{endregion}}
 
-* __DirectoryInfoRequested__: This event can be used in order to filter the navigation TreeView, the navigation Breadcrumb and any [Custom Places]({%slug radfiledialogs-features-customplaces%}) that are added. The following example demonstrates how you can filter out the "D:\\" and "K:\\" directories:
+* __DirectoryRequesting__: This event can be used in order to filter the navigation TreeView, the navigation Breadcrumb and any [Custom Places]({%slug radfiledialogs-features-customplaces%}) that are added. The following example demonstrates how you can filter out the "D:\\" and "K:\\" directories:
 
 	#### __[C#] Example 3: Filtering the D and K directories__
 	{{region cs-radfiledialogs-events-2}}
-		private void OpenFileDialog_DirectoryInfoRequested(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryInfoRequestedEventArgs e)
+		private void OpenFileDialog_DirectoryRequesting(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryRequestingEventArgs e)
         {
             if (e.Directory.FullName.StartsWith("D:\\") || e.Directory.FullName.StartsWith("K:\\"))
             {

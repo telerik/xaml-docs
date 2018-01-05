@@ -69,7 +69,7 @@ The __FileName__ property can be set manually. This will change the value displa
 
 ## Saving the last used directory
 
-You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFolderDialog. After setting this property to __True__ and opening a folder the __InitialDirectory__ of the RadOpenFolderDialog will be the parent of the opened folder.
+You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFolderDialog. After setting this property to __True__ and opening a folder the __InitialDirectory__ of this RadOpenFolderDialog instance will be the parent of the opened folder.
 
 #### __[C#] Example 4: Set RestoreDirectory property__
 {{region cs-radfiledialogs-radopenfolderdialog-3}}

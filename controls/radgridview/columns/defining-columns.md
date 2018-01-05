@@ -234,17 +234,16 @@ __RadGridView__ provides a mechanism for easily fetching the properties of one c
 
 {{region cs-gridview-columns-defining-columns_14}}
 	GridViewDataColumn col = new GridViewDataColumn();
-    col.CopyPropertiesFrom(this.clubsGrid.Columns[0]);
-
-    this.clubsGrid.Columns.Add(col);
+	col.CopyPropertiesFrom(this.clubsGrid.Columns[0]);
+	this.clubsGrid.Columns.Add(col);
 {{endregion}}
 
 #### __[VB] Example 9: Copying the properties of one column to another__
 
 {{region cs-gridview-columns-defining-columns_14}}
-	 Dim col As GridViewDataColumn = New GridViewDataColumn()
-     col.CopyPropertiesFrom(Me.clubsGrid.Columns(0))
-     Me.clubsGrid.Columns.Add(col)
+	Dim col As GridViewDataColumn = New GridViewDataColumn()
+	col.CopyPropertiesFrom(Me.clubsGrid.Columns(0))
+	Me.clubsGrid.Columns.Add(col)
 {{endregion}}
 
 ## See Also

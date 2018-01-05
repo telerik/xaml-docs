@@ -12,6 +12,8 @@ position: 0
 
 With the new Office2016 theme we introduced a new approach to add icons and icon-like images. We are providing font "glyphs" via the __TelerikWebUI__ font. The glyphs are vector symbols that can be used as information-carrying icons or interaction indicators. 
 
+> As of **R1 2018** we recommend using the new **RadGlyph** class and markup extension to visualize font glyphs. It has a number of advantages which are documented in [this article]({%slug common-styling-appearance-radglyph%}).
+
 This article explains the specifics of this approach, demonstrates usage with examples and provides a reference sheet for the available glyphs.
 
 > You can find a list with all available glyphs in the [reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).

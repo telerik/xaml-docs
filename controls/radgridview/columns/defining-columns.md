@@ -16,6 +16,8 @@ __RadGridView__ provides two mechanisms for defining its columns:
 
 * [Manual columns definition](#manual-columns-definition) in XAML or code-behind. 
 
+* [Copying properties from another column](#copying-properties-from-another-column)
+
 This help article explains how to do both with code examples.
 
 ## Automatic Columns Generation
@@ -224,6 +226,25 @@ Then reference it in code-behind as demonstrated below:
 	radGridView.Columns.Add(column)
 {{endregion}}
 
+## Copying Properties from another Column
+
+__RadGridView__ provides a mechanism for easily fetching the properties of one column to another. This can be done through the __CopyPropertiesFrom__ method of __GridViewColumn__. 
+
+#### __[C#] Example 9: Copying the properties of one column to another__
+
+{{region cs-gridview-columns-defining-columns_14}}
+	GridViewDataColumn col = new GridViewDataColumn();
+	col.CopyPropertiesFrom(this.clubsGrid.Columns[0]);
+	this.clubsGrid.Columns.Add(col);
+{{endregion}}
+
+#### __[VB] Example 9: Copying the properties of one column to another__
+
+{{region cs-gridview-columns-defining-columns_14}}
+	Dim col As GridViewDataColumn = New GridViewDataColumn()
+	col.CopyPropertiesFrom(Me.clubsGrid.Columns(0))
+	Me.clubsGrid.Columns.Add(col)
+{{endregion}}
 
 ## See Also
 

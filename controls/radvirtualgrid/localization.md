@@ -12,7 +12,7 @@ position: 10
 
 > More detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 
-This topic will go through the approach of localizing __RadVirtualGrid__ component.
+This topic will go available resource keys for localizing __RadVirtualGrid__.
 
 Below is the list of supported languages.
 

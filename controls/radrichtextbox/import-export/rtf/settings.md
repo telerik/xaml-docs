@@ -22,7 +22,7 @@ __RtfFormatProvider__ exposes __ExportSettings__, which allow customization in h
 	* __Code__: Shows all fields codes in the current document.
 	* __DisplayName__: Show all fields names in the current document.
 	* __Result__: Replace the merge fields in your document with actual data from your recipient list.
-	
+	* **Null**: When the __FieldResultMode__ is set to `null`, fields' display mode is **not changed**. *This can provide a better performance and lower memory usage while exporting.*	
 #### __[C#] Example 1: Setting the ExportSettings of the PdfFormatProvider__
 {{region c#-radrichtextbox-import-export-rtf-settings_0}}
 	RtfExportSettings exportSettings = new RtfExportSettings();

@@ -33,10 +33,13 @@ __Example 1__ shows you how you can get a reference to the format provider used 
 {{endregion}}
 
 The __FieldResultMode__ property of the __DocxExportSettings__ is an enumeration and it allows the following values:
+
 * __Code__: Shows all fields codes in the current document.
 * __DisplayName__: Shows all fields names in the current document.
 * __Result__: Replaces the merge fields in your document with actual data from your recipient list.
-	
+* **Null**: When the __FieldResultMode__ is set to `null`, fields' display mode is **not changed**. *This can provide a better performance and lower memory usage while exporting.*
+
+
 ## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})

@@ -58,7 +58,11 @@ The lower part of the control represents the two field filters. These are two fi
 
 The lower part of the field filter is called the field filter editor. Again, the editor that the user will see depends on the column data type. For example, if you have a date column the user will be able to enter the filtering criteria through a date time picker control. Depending on the column data type the most suitable editor is selected and used. Of course, you can always plug-in your very own field filter editor as described in this [article]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). If you want to modify the appearance or behavior of the stock field filter editor that we have selected for you, you can easily do that by attaching to the **FieldFilterEditorCreated** event of RadGridView as demonstrated [here]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
 
-If you don’t need the field filter part of the filtering control you can hide it by using the **ShowFieldFilters** property of the column. This property only makes sense when the filtering mode is Popup. For boolean columns, this is false by default since it makes little sense to have field filters for boolean values.
+If you don’t need the field filter part of the filtering control you can hide it by using the **ShowFieldFilters** property of the column. This property only makes sense when the filtering mode is Popup. For boolean columns, this is **False** by default.
+
+As of **R1 2018** you can also control the creation of field filters in both **Popup** and **FilterRow** mode via the new **ShouldGenerateFieldFilterEditors** property. Its default value is **null** in which case field filters will be generated for all non-boolean columns. Setting it to **False** will stop the generation of field filter editors and consequently the **FilterOperatorsLoading** event will not be raised. Setting the property to **True** will have an effect only on boolean columns which will then display a checkbox as their filter editor along with the **IsEqualTo** and **IsNotEqualTo** filter operators rather than the fake **True** and **False** operators.
+
+> Please note that both **ShowFieldFilters** and **ShouldGenerateFieldFilterEditors** are taken into account when using the **Popup** filtering mode. If any of them is set to **False**, no field filter editors will be created.
 
 ### Deferred Filtering
 

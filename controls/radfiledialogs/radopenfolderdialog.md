@@ -15,7 +15,7 @@ __RadOpenFolderDialog__ is a modal dialog box that allows you to specify one or 
 #### __Figure 1: RadOpenFolderDialog in single selection mode__ 
 ![](images/radopenfolderdialog-01.png)
 
-## Showing the dialog
+## Showing the Dialog
 
 To show the dialog call its __ShowDialog__ method. If a valid folder is opened when you press OK, the __DialogResult__ property will return True and the __FileName__, and __FileNames__ properties will be set. You can use FileName and FileNames to get the names of the selected folders.
 
@@ -32,7 +32,7 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 	}
 {{endregion}}
 
-## Enabling multiple selection
+## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default you can select only one folder at a time. To alter this you can set the __Multiselect__ property of RadOpenFolderDialog.
 
@@ -46,7 +46,7 @@ The dialog supports single and multiple selection modes. By default you can sele
 #### __Figure 2: Multiple selection__ 
 ![](images/radopenfolderdialog-02.png)
 
-## Working with the selected folders
+## Working with the Selected Folders
 
 You can get the paths of the selected folders via the __FileName__ and __FileNames__ properties. Note that the properties are empty until the DialogResult is valid. When you open folder(s) the properties will return the corresponding directory paths.
 
@@ -67,9 +67,9 @@ You can get only the name of the selected folders, without the full path, via th
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
-## Saving the last used directory
+## Saving the Last Used Directory
 
-You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFolderDialog. After setting this property to __True__ and opening a folder the __InitialDirectory__ of this RadOpenFolderDialog instance will be the parent of the opened folder.
+You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFolderDialog. After setting this property to __True__ and opening a folder the __InitialDirectory__ of this RadOpenFolderDialog instance will be set to the parent of the opened folder.
 
 #### __[C#] Example 4: Set RestoreDirectory property__
 {{region cs-radfiledialogs-radopenfolderdialog-3}}

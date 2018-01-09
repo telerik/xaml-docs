@@ -15,7 +15,7 @@ __RadOpenFileDialog__ is a modal dialog box that allows you to specify one or mu
 #### __Figure 1: RadOpenFileDialog in single selection mode__ 
 ![](images/radopenfiledialog-01.png)
 
-## Showing the dialog
+## Showing the Dialog
 
 To show the dialog call its __ShowDialog__ method. If a valid file is opened when you press OK, the __DialogResult__ property will return True and the __FileName__, and __FileNames__ properties will be set. You can use FileName and FileNames to get the names of the selected items.
 
@@ -32,7 +32,7 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 	}
 {{endregion}}
 
-## Opening the selected file
+## Opening the Selected File
 
 You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
@@ -47,7 +47,7 @@ You can open a read-only file stream for the selected file using the __OpenFile_
 	}
 {{endregion}}
 
-## Enabling multiple selection
+## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
@@ -61,7 +61,7 @@ The dialog supports single and multiple selection modes. By default you can sele
 #### __Figure 2: Multiple selection__ 
 ![](images/radopenfiledialog-02.png)
 
-## Working with the selected files
+## Working with the Selected Files
 
 You can get the paths of the selected files via the __FileName__ and __FileNames__ properties. Note that the properties are empty until the DialogResult is valid. When you open file(s) the properties will return the corresponding paths.
 
@@ -83,9 +83,9 @@ You can get only the name of the selected files, without the full path, via the 
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
-## Saving the last used directory
+## Saving the Last Used Directory
 
-You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFileDialog. After setting this property to __True__ and opening a file the __InitialDirectory__ of this RadOpenFileDialog instance will be the parent folder of the opened file.
+You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFileDialog. After setting this property to __True__ and opening a file the __InitialDirectory__ of this RadOpenFileDialog instance will be set to the parent folder of the opened file.
 
 #### __[C#] Example 4: Set RestoreDirectory property__
 {{region cs-radfiledialogs-radopenfolderdialog-4}}

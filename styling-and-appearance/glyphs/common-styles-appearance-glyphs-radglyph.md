@@ -142,6 +142,8 @@ The same result can be achieved in code behind as demonstrated in **Example 6**.
 	}
 {{endregion}}
 
+> Please note that in this scenario we use the custom **GetGlyph** method to transform the 8-character code to a **single character**. This is required as otherwise all 8 characters will be displayed as-is.
+
 ## Use Glyphs as ImageSource
 
 #### __[XAML] Example 8: Provide ImageSource for RadTreeView items__

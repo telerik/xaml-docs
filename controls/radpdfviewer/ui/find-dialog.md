@@ -38,7 +38,9 @@ This is how the Find Dialog looks:
 ## Adding the FindDialog to a project
 
 In a few simple steps the FindDialog could be added to a project.
-        
+{% if site.site_name == 'WPF' %}        
+>If you are using **RadPdfViewerToolBar**, the FindDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+{% endif %}
 
 First of all, it is obligatory to register a new find dialog using the ExtensibilityManager:
         

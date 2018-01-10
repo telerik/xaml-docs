@@ -34,7 +34,7 @@ This article lists the events specific to all of the RadFileDialog controls.
         }
 	{{endregion}}
 
-* __DirectoryRequesting__: This event can be used in order to filter the navigation TreeView, the navigation Breadcrumb and any [Custom Places]({%slug radfiledialogs-features-customplaces%}) that are added. The following example demonstrates how you can filter out the "D:\\" and "K:\\" directories:
+* __DirectoryRequesting__: This event can be used to filter the navigation RadTreeView and RadBreadcrumb or any [Custom Places]({%slug radfiledialogs-features-customplaces%}) that are added. The following example demonstrates how you can filter out the "D:\\" and "K:\\" directories:
 
 	#### __[C#] Example 3: Filtering the D and K directories__
 	{{region cs-radfiledialogs-events-2}}
@@ -47,7 +47,7 @@ This article lists the events specific to all of the RadFileDialog controls.
         }
 	{{endregion}}
 
-	> If the __InitialDirectory__ of the RadFileDialog is filtered out as in Example 3, the current directory on load will be the default one. 
+	> If the __InitialDirectory__ of the RadFileDialog is filtered out as in __Example 3__, the current directory on load will be the default one. 
 
 	#### __Image 1: Unfiltered Directories__
 	![](images/radfiledialogs-directories.png)

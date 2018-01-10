@@ -23,9 +23,14 @@ Here is a list of all of the __Resources__ available and their default values:
 |Key|Value|
 |---|-----|
 |MapAerialCommand|Aerial View|
+|MapAerialOnDemandCommand|Aerial On Demand View|
 |MapLabelsVisibleCommand|Show Labels|
 |MapRoadCommand|Road View|
+|MapRoadOnDemandCommand|Road On Demand View|
 |MapBirdseyeCommand|Bird's Eye View|
+|MapCanvasLightCommand|Canvas Light|
+|MapCanvasGrayCommand|Canvas Gray|
+|MapCanvasDarkCommand|Canvas Dark|
 |MapMapScaleKilometerFormat|{0} km|
 |MapMapScaleMileFormat|{0} ml|
 |MapPresetZoomLevelWorld|World|

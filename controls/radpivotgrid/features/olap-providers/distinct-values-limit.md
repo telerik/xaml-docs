@@ -17,7 +17,7 @@ The providers that derives from OlapDataProvider (XmlaDataProvider{% if site.sit
 	<pivot:XmlaDataProvider DistinctValuesLimit="5000">
 {{endregion}}
 
-<br/>  
+<br/>
 >tip Check the [Using XmlaDataProvider]({%slug radpivotgrid-data-xmla%}){% if site.site_name == 'WPF' %} and [Using AdomdDataProvider]({%slug radpivotgrid-data-adomd%}){% endif %} to see how to set up the provider.
 
 ## See Also  

@@ -121,6 +121,41 @@ __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton_
 #### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
 ![](images/common-styling-appearance-glyphs-overview-1.png)
 
+## Binding Glyphs
+
+If you wish to bind glyphs from your view model, you need to parse the code of the glyph to a **single character** for it can be displayed as expected. Otherwise, all characters of the code will be displayed as-is. This can be achieved either by using a converter for your bindings, or by doing the conversion inside your viewmodel.
+
+**Example 6** demonstrates how this can be done with an **IValueConverter** but the same approach can be used directly in your viewmodel.
+
+#### __[C#] Example 6: Using a converter to parse the glyph hex code__
+{{region cs-common-styling-appearance-glyphs-overview-6}}
+	public class StringToGlyphConverter : IValueConverter 
+    {
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            if (value.GetType() != typeof(string))
+            {
+                return null;
+            }
+
+            string glyph = (value as string).Substring(3, 4);
+            return (char)int.Parse(glyph, NumberStyles.HexNumber);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            return null;
+        }
+    }
+{{endregion}}
+
+If, for example, you have a **Glyph** property in your viewmodel which is of type **string** and has the value **"\&#xe11b;"**, you can bind it to the **Text** property of a **TextBlock** as demonstrated in **Example 7** to display the **close** glyph.
+
+#### __[XAML] Example 7: Use the StringToGlyphConverter for the binding__
+{{region xaml-common-styling-appearance-glyphs-overview-7}}
+	<TextBlock FontFamily="{StaticResource TelerikWebUI}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
+{{endregion}}
+
 ## See Also
 
 * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

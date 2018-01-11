@@ -32,8 +32,6 @@ There are four __TextSearchMode__ types that can work with the RadComboBox:
 
 * __StartsWithCaseSensitive__ - only items, which text starts with the typed text, will be shown in the drop-down part, case sensitive.
 
->The __ContainsCaseSensitive__ and __StartsWithCaseSensitive__ are available since Q1 2010 SP1.
-
 ## Using TextSearch.TextPath
 
 >The __TextSearch__ class is located in the __Telerik.Windows.Controls.dll__ assembly.

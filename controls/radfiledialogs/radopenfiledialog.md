@@ -13,6 +13,7 @@ position: 3
 __RadOpenFileDialog__ is a modal dialog box that allows you to specify one or multiple filenames to open.
 
 #### __Figure 1: RadOpenFileDialog in single selection mode__ 
+
 ![RadOpenFileDialog in single selection mode](images/radopenfiledialog-01.png)
 
 ## Showing the Dialog
@@ -59,6 +60,7 @@ The dialog supports single and multiple selection modes. By default you can sele
 {{endregion}}
 
 #### __Figure 2: Multiple selection__ 
+
 ![RadOpenFileDialog with multiple selection](images/radopenfiledialog-02.png)
 
 ## Working with the Selected Files
@@ -83,12 +85,28 @@ You can get only the name of the selected files, without the full path, via the 
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
+## Enabling ReadOnly CheckBox
+
+You can display a checkbox to control whether the file should be opened in readonly mode with the __ShowReadOnly__ property of the RadOpenFileDialog. You can control the state of that checkbox by using the __ReadOnlyChecked__ property of the RadOpenFileDialog.
+
+#### __[C#] Example 4: Enabling the ReadOnly CheckBox__
+{{region cs-radfiledialogs-radopenfiledialog-4}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.Owner = theHostWindowInstance;
+	openFileDialog.ShowReadOnly = true;
+	openFileDialog.ReadOnlyChecked = true;
+	openFileDialog.ShowDialog();
+{{endregion}}
+
+#### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
+![RadOpenFileDialog with ReadOnlyCheckBox](images/radopenfiledialog-readonlycheckbox.png)
+
 ## DereferenceLinks
 
 As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the **.lnk** extension).
 
-#### __[C#] Example 4: Using the DereferenceLinks property__
-{{region cs-radfiledialogs-radopenfiledialog-4}}
+#### __[C#] Example 5: Using the DereferenceLinks property__
+{{region cs-radfiledialogs-radopenfiledialog-5}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theHostWindowInstance;
 	openFileDialog.DereferenceLinks = true;

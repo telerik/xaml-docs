@@ -51,6 +51,8 @@ ChartSeriesProvider allows you to use a generic descriptor that gives you more f
 
 In this case, the __TargetType__ of the descriptor determines the type of the series that will be created.
 
+>important If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles theming mechanism]({%slug styling-apperance-implicit-styles-overview%}) you will need to base the Style of the ChartSeriesDescriptor on the default style of the series. In the example above you have to set the following property of the Style - __BasedOn="{StaticResource RangeSeriesStyle}"__. The same naming convention *&lt;series name&gt;Style* is applicable for all series types, for example, LineSeriesStyle, BarSeriesStyle, PointSeriesStyle, etc. If you don't set the BasedOn attribute when using NoXaml dlls, the series won't display any data points.
+
 ## Properties
 
 Important properties of __ChartSeriesDescriptor__:  

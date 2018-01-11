@@ -45,9 +45,15 @@ When building UI for the RichTextBox, the respective commands can be used:{% if 
 
 {{region radrichtextbox-features-clipboard-support_0}}
 	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut" telerik:ScreenTip.Description="Cut the selection and put it on the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}" Size="Medium" SmallImage="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/cut.png" Text="Cut" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy" telerik:ScreenTip.Description="Copy the selection and put it on the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}" Size="Medium" SmallImage="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/copy.png" Text="Copy" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste" telerik:ScreenTip.Description="Paste the contents of the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}" Size="Medium" SmallImage="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/paste.png" Text="Paste" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut" 
+	  		  	   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}"
+				   Text="Cut" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy"
+	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}"
+				   Text="Copy" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste"
+	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}"
+				   Text="Paste" />
 	</telerik:RadToolBar>
 {{endregion}}
 
@@ -57,9 +63,15 @@ When building UI for the RichTextBox, the respective commands can be used:{% if 
 
 {{region radrichtextbox-features-clipboard-support_1}}
 	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut" telerik:ScreenTip.Description="Cut the selection and put it on the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}" Size="Medium" SmallImage="pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/cut.png" Text="Cut" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy" telerik:ScreenTip.Description="Copy the selection and put it on the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}" Size="Medium" SmallImage="pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/copy.png" Text="Copy" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste" telerik:ScreenTip.Description="Paste the contents of the Clipboard." CollapseToSmall="WhenGroupIsMedium" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}" Size="Medium" SmallImage="pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/16/paste.png" Text="Paste" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut"
+	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}" 
+				   Text="Cut" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy"
+	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}" 
+				   Text="Copy" />
+	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste"
+	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}"
+				   Text="Paste" />
 	</telerik:RadToolBar>
 {{endregion}}
 

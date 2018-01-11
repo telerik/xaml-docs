@@ -1,7 +1,7 @@
 ---
 title: RadOpenFileDialog
 page_title: RadOpenFileDialog
-description: RadOpenFileDialog
+description: This article describes the RadOpenFileDialog control which can be used to specify one or multiple filenames to open. 
 slug: radfiledialogs-radopenfiledialog
 tags: open,file,dialog,show
 published: True
@@ -13,9 +13,10 @@ position: 3
 __RadOpenFileDialog__ is a modal dialog box that allows you to specify one or multiple filenames to open.
 
 #### __Figure 1: RadOpenFileDialog in single selection mode__ 
-![RadOpenFileDialog single selection mode](images/radopenfiledialog-01.png)
 
-## Showing the dialog
+![RadOpenFileDialog in single selection mode](images/radopenfiledialog-01.png)
+
+## Showing the Dialog
 
 To show the dialog call its __ShowDialog__ method. If a valid file is opened when you press OK, the __DialogResult__ property will return True and the __FileName__, and __FileNames__ properties will be set. You can use FileName and FileNames to get the names of the selected items.
 
@@ -32,7 +33,7 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 	}
 {{endregion}}
 
-## Opening the selected file
+## Opening the Selected File
 
 You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
@@ -47,7 +48,7 @@ You can open a read-only file stream for the selected file using the __OpenFile_
 	}
 {{endregion}}
 
-## Enabling multiple selection
+## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
@@ -59,9 +60,10 @@ The dialog supports single and multiple selection modes. By default you can sele
 {{endregion}}
 
 #### __Figure 2: Multiple selection__ 
-![RadOpenFileDialog Multiple Selection](images/radopenfiledialog-02.png)
 
-## Working with the selected files
+![RadOpenFileDialog with multiple selection](images/radopenfiledialog-02.png)
+
+## Working with the Selected Files
 
 You can get the paths of the selected files via the __FileName__ and __FileNames__ properties. Note that the properties are empty until the DialogResult is valid. When you open file(s) the properties will return the corresponding paths.
 
@@ -98,6 +100,27 @@ You can display a checkbox to control whether the file should be opened in reado
 
 #### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
 ![RadOpenFileDialog with ReadOnlyCheckBox](images/radopenfiledialog-readonlycheckbox.png)
+
+## DereferenceLinks
+
+As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the **.lnk** extension).
+
+#### __[C#] Example 5: Using the DereferenceLinks property__
+{{region cs-radfiledialogs-radopenfiledialog-5}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.Owner = theHostWindowInstance;
+	openFileDialog.DereferenceLinks = true;
+	openFileDialog.ShowDialog();
+	if (openFileDialog.DialogResult == true)
+	{
+		string filePath = openFileDialog.FileName;
+		// If the selected file was C:\Users\\<user>\Desktop\Shortcut.lnk, for example,
+		// the FileName property will now contain the actual location of the file,
+		// for example - C:\Program Files\Program\Shortcut.exe.
+	}
+{{endregion}}
+
+> If in multiple or single selection the first selected item is a link to a **directory** and DereferenceLinks is set to **True**, clicking the **Open** button will actually navigate to this directory.
 
 ## See Also
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})

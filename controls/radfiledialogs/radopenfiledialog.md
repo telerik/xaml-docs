@@ -85,6 +85,16 @@ You can get only the name of the selected files, without the full path, via the 
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
+## Saving the Last Used Directory
+
+You can save the last used directory by setting the __RestoreDirectory__ property of the RadOpenFileDialog. After setting this property to __True__ and opening a file the __InitialDirectory__ of this RadOpenFileDialog instance will be set to the parent folder of the opened file.
+
+#### __[C#] Example 4: Set RestoreDirectory property__
+{{region cs-radfiledialogs-radopenfolderdialog-4}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.RestoreDirectory = true;
+{{endregion}}
+
 ## Enabling ReadOnly CheckBox
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the __ShowReadOnly__ property of the RadOpenFileDialog. You can control the state of that checkbox by using the __ReadOnlyChecked__ property of the RadOpenFileDialog.

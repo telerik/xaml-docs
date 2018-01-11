@@ -63,6 +63,8 @@ To use the **SignSignatureDialog** you should first register it through the Exte
 	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());
 {{endregion}}
 
+>If you are using **RadPdfViewerToolBar**, the SignSignatureDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+
 
 #### **Figure 1: Signing a document in RadPdfViewer**
 ![](images/PdfViewer_DigitalSignature_3.gif)
@@ -106,6 +108,8 @@ To use this dialog, you should register it through the **ExtensibilityManager** 
 
 	ExtensibilityManager.RegisterSignaturePropertiesDialog(new SignaturePropertiesDialog());
 {{endregion}}
+
+>If you are using **RadPdfViewerToolBar**, the SignaturePropertiesDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
 
 When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 4** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 

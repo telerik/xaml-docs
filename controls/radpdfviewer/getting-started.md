@@ -5,7 +5,7 @@ description: Getting Started
 slug: radpdfviewer-getting-started
 tags: getting,started
 published: True
-position: 2
+position: 1
 ---
 
 # Getting Started
@@ -71,8 +71,9 @@ After that, you can add a RadPdfViewer, as shown in **Example 2**.
 ## Wiring the UI with RadPdfViewer Commands 
 
 The navigation panel is separated from the control to provide better customization options. In order to add a panel in your application, you can use __RadToolBar__, which has the command descriptors of the viewer as a DataContext.
-        
-
+{% if site.site_name == 'WPF' %}        
+>Since R1 2018, you can use the predefined UI of RadPdfViewer - **RadPdfViewerToolBar**. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+{% endif %}
 #### __[XAML] Example 3: Add a RadToolBar to RadPdfViewer__
 
 {{region xaml-radpdfviewer-getting-started_2}}

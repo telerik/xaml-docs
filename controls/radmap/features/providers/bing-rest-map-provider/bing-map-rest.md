@@ -51,66 +51,7 @@ Here is a snapshot of the map that appears:
 
 You can the disable labels using the __IsLabelVisible__ property. When you set it to *False* the labels disappear. Here is a snapshot of the Aerial mode for Bing Map Rest Provider when the labels are not visible:
 
-
 ![Rad Map Features Rest Providers 01 nolabels](images/RadMap_Features_Rest_Providers_02_nolabels.png)	
-
-## Road Mode
-
-The *Road* mode of Bing Maps ignores the __IsLabelVisible__ property. For this mode the labels are displayed always.        
-
-Here is an example of the __Road Mode__ definition:        
-
-#### __[XAML] Example 4: Setting Road mode in XAML__
-{{region xaml-radmap-features-providers-bing-rest-map-provider-search-location_1}}
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Road" IsLabelVisible="True"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-{{endregion}}
-#### __[C#] Example 5: Setting Road mode programmaticaly__
-{{region xaml-radmap-features-providers-bing-rest-map_3}}
-	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Road, true, "key" );
-	this.radMap.Provider = bingMap;
-{{endregion}}
-#### __[VB.NET] Example 5: Setting Road mode programmaticaly__
-{{region xaml-radmap-features-providers-bing-rest-map_4}}
-	Dim bingMap As New BingRestMapProvider(MapMode.Road, True, "key")
-	Me.radMap.Provider = bingMap
-{{endregion}}
-Here is a snapshot of the __Road__ mode for __Bing Map Rest Provider__:
-
-![Rad Map Features Providers Bing Map Road](images/RadMap_Features_Providers_BingMap_Road.png)
-
-## Birdseye Mode
-
-The __Bing Map Rest Provider__ also supports the *Birdseye* mode. This mode can be used for high resolution levels only (zoom level 19-20)        
-
->The __Birdseye__ mode does not provide the tile images for all regions around the world. Some regions have not images for Birdseye mode.          
-
-Here is an example of the __Birdseye Mode__ definition:
-
-#### __[XAML] Example 6: Setting Birdseye mode in XAML__
-{{region xaml-radmap-features-providers-bing-rest-map_5}}
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Birdseye" IsLabelVisible="True"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-{{endregion}}
-#### __[C#] Example 7: Setting Birdseye mode programmaticaly__
-{{region cs-radmap-features-providers-bing-rest-map_6}}
-	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Birdseye, true, "key" );
-	this.radMap.Provider = bingMap;
-{{endregion}}
-#### __[VB.NET] Example 7: Setting Birdseye mode programmaticaly__
-{{region vb-radmap-features-providers-bing-rest-map_7}}
-	Dim bingMap As New BingRestMapProvider(MapMode.Birdseye, True, "key")
-	Me.radMap.Provider = bingMap
-{{endregion}}
-Here is a snapshot of the __Birdseye__ mode for __Bing Map Rest Provider__:
-
-![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
 	
 ## See Also
  * [Providers Overview]({%slug radmap-features-providers%})

@@ -10,7 +10,11 @@ position: 10
 
 # Frozen Columns
 
-__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column, the user has to drag the frozen columns separator.
+As of __R1 2018 RadGridView__ supports pinning columns both on its left and right side. Prior this version, the __FrozenColumnsCount__ property was available, through which columns could be frozen on the left side only. With the newer functionality this property is obsolete. It is replaced with the __LeftFrozenColumnsCount__ and __RightFrozenColumnsCount__ properties.
+
+## Left Frozen Columns
+
+__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column on the left, the user has to drag the left frozen columns separator.
 
 ![Rad Grid View Frozencolumns 1](images/RadGridView_Frozencolumns_1.png)
 
@@ -24,28 +28,54 @@ A frozen column always stays on top of horizontal scrolling.
 
 ![Rad Grid View Frozencolumns 3](images/RadGridView_Frozencolumns_3.png)
 
-## Freezing Columns
+## Right Frozen Columns
 
-You can freeze columns programmatically using the __FrozenColumnCount__ property of the __RadGridView__ control. The property is numeric and you have to set it to the number of columns you wish to freeze.
+The approach of using the right side frozen columns is basically the same. The only difference is that the __RightFrozenColumnsSplitterVisibility__ property of __RadGridView__ needs to be set to set to __Visible__, as by default it is hidden. 
 
-In __Example 1__, the first two columns are frozen starting from left to right.
+## Freezing Columns Programmatically 
 
-#### __[XAML] Example 1: Setting FrozenColumnCount__
+> In order to programmatically freeze columns on the right side, the __RightFrozenColumnsSplitterVisibility__ property needs to be set to __Visible__.
+
+You can freeze columns programmatically using the __LeftFrozenColumnCount__ and __RightFrozenColumnCount__ properties of __RadGridView__ control. They are both numeric and you have to set them to the number of columns you wish to freeze.
+
+In __Example 1__, the first two columns are frozen starting from __left to right__.
+
+#### __[XAML] Example 1: Setting LeftFrozenColumnCount__
 
 {{region xaml-gridview-columns-frozen-columns_0}}
-	<telerik:RadGridView FrozenColumnCount="2" />
+	<telerik:RadGridView LeftFrozenColumnCount="2" />
 {{endregion}}
 
-#### __[C#] Example 1: Setting FrozenColumnCount__
+#### __[C#] Example 1: Setting LeftFrozenColumnCount__
 
 {{region cs-gridview-columns-frozen-columns_1}}
-	this.radGridView.FrozenColumnCount = 2;
+	this.radGridView.LeftFrozenColumnCount = 2;
 {{endregion}}
 
-#### __[VB.NET] Example 1: Setting FrozenColumnCount__
+#### __[VB.NET] Example 1: Setting LeftFrozenColumnCount__
 
 {{region vb-gridview-columns-frozen-columns_2}}
-	Me.radGridView.FrozenColumnCount = 2
+	Me.radGridView.LeftFrozenColumnCount = 2
+{{endregion}}
+
+In __Example 2__, the first two columns are frozen starting from __right to left__.
+
+#### __[XAML] Example 2: Setting RightFrozenColumnCount__
+
+{{region xaml-gridview-columns-frozen-columns_3}}
+	<telerik:RadGridView RightFrozenColumnCount="2" />
+{{endregion}}
+
+#### __[C#] Example 2: Setting RightFrozenColumnCount__
+
+{{region cs-gridview-columns-frozen-columns_4}}
+	this.radGridView.RightFrozenColumnCount = 2;
+{{endregion}}
+
+#### __[VB.NET] Example 2: Setting RightFrozenColumnCount__
+
+{{region vb-gridview-columns-frozen-columns_5}}
+	Me.radGridView.RightFrozenColumnCount = 2
 {{endregion}}
 
 ## Disabling Frozen Columns
@@ -61,9 +91,9 @@ To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __
 
 ![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
 
-## Hiding the Frozen Columns Splitter
+## Hiding the Left Frozen Columns Splitter
 
-You can set the **FrozenColumnsSplitterVisibility** property of the __RadGridView__ control in order to hide/show the frozen columns splitter.
+You can set the **FrozenColumnsSplitterVisibility** property of the __RadGridView__ control in order to hide/show the left frozen columns splitter.
 
 The property has one of three values:
 

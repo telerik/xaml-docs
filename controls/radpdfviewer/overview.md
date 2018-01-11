@@ -52,10 +52,14 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 * **RadPdfViewer** allows [**printing**]({%slug radpdfviewer-printing%}) of the document loaded in it.
 
 * You can [**rotate**]({%slug radpdfviewer-rotation%}) the document as well.
-
+{% if site.site_name == 'WPF' %}
+* An easy to use [**Predefined UI**]({%slug radpdfviewer-default-ui%}). The UI also provides a number of customization options to fit the different requirements you might have.
+{% endif %}
 * [**Context Menu**]({%slug radpdfviewer-context-menu%}) to provide easy access to several of the features of the control. 
 
 * Extensible support for different stream compression filters. [[Read more]({%slug radpdfviewer-customize-pdf-rendering%})]
+
+* Support for documents encrypted with **Encryption Algorithm 4 (RC4/AES-128)** 
 
 * The API provides different options for **extending** and **customizing** the control.
 

@@ -70,16 +70,19 @@ Since __R1 2018__, you can add a new folder in all the dialog controls with the 
 
 ## Edit Mode
 
-In order to edit the selected file/folder, you can press the __F2__ key. Alternatively you can click on the TextBlock which holds the file/folder name in all layouts except the Details layout where you can click on the cell holding the file/folder name. If you try to add a reserved character in a file/folder name, you will receive the following warning:
+In order to edit the selected file/folder, you can press the __F2__ key. Alternatively, you can click on the TextBlock which holds the file/folder name in all layouts except the **Details** layout where you can click on the cell holding the file/folder name. If you try to add a reserved character in a file/folder name, you will receive the warning illustrated in **Figure 3**:
 
 #### Figure 3: Reserved character warning in the Office2016 theme
 
 ![Reserved character warning](images/FileDialogs_EditMode.png)
 
-Trying to change the file extension prompts the following message box:
+Trying to change the file extension prompts the message box shown in **Figure 4**:
 
 #### Figure 4: Changing file extension message box in the Office2016 theme
 
 ![Changing file extension message box](images/FileDialogs_ChangeFileExtensionMessageBox.png)
 
 ## See Also
+
+* [Custom Places]({%slug radfiledialogs-features-customplaces%})
+* [Filtering]({%slug radfiledialogs-features-filtering%})

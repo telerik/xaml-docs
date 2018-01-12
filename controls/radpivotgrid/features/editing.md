@@ -8,9 +8,15 @@ published: True
 position: 7
 ---
 
-# Editing
+# Editing 
 
 As of **R1 2018**, the **RadPivotGrid** control allows you to implement your custom editing logic through its **EditProvider** property and **EditEnded** event.
+
+>important Please note that the API only provides a visual representation for the editing operation but the actual process should be handled entirely by the developer.
+
+#### Figure 1: RadPivotGrid with custom editing and validation
+
+![Custom editing with validation](images/pivot-editing.gif)
 
 ## EditProvider
 
@@ -21,6 +27,12 @@ The new EditProvider property takes an instance of the **EditProvider** class. T
 * **GetBindingProperty()**: Provides the data binding property of the given editor. The return type is **DependencyProperty**.
 * **EnableValidation**: A **boolean** property which indicates whether validation will be executed.
 * **Validate(object value)**: Validates the current edit value, generating an error message if it is needed. The return type is **string**.
+
+> The EditProvider must be initialized before any editing operations can take place.
+
+<!-- -->
+
+> The validation of the control utilizes the **IDataErrorInfo** interface which should be taken into account in data-binding scenarios.
 
 ## EditEnded Event
 
@@ -33,7 +45,7 @@ Once the user has commited the pending edit, if there are no validation errors, 
 	* **Value**: The value produced by the **IAggregateDescription**. This is a plain **object**.
 	* **FormattedValue**: The **string** representation of the value with the **IAggregateDescription**'s string formats applied.
 
-* **EditValue**: Gets or sets the edited value. 
+* **EditValue**: Gets the new value.
 
 ## See Also
 

@@ -15,13 +15,13 @@ The following topic will show you how to use the __Hotfix DLLs__. The same instr
 				
 The __Hotfix__ archive is a bare-bones upgrade option for the Telerik controls - it contains only those files that you need to replace in your project to upgrade to the new version of Telerik UI for WPF. If you are already using Telerik products and just want to update, then you should download the latest HOTFIX and apply it. The __Hotfix__ archive contains the following files:
 			
-* __Binaries__ folder - contains the .dll files
+* __Binaries__ folder: Contains the .dll files.
 
-* __Binaries.NoXaml__ folder - binaries without XAML.
+* __Binaries.NoXaml__ folder: Binaries without XAML.
 
 * __LicenseAgreements__ folder
 				
-* __Themes.Implicit__ - implicit styles friendly XAML.			
+* __Themes.Implicit__: Implicit styles friendly XAML.			
 
 >If you are installing the Telerik products for the first time, we recommend you to download the installation package ([MSI file]({%slug installation-installing-from-msi-wpf%})).			
 
@@ -34,7 +34,7 @@ In order to apply the Hotfix you need to perform the following instructions:
 * Click __Products & Subscriptions__ and then select UI for WPF from the dropdown (or Trial downloads if you are a trial user).
 ![Common Installing FromMSIFiles 005 WPF](images/Common_InstallingFromMSIFiles_005_WPF.png)
 
->If you've purchased TTelerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
+>If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
 >![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
 
 * Click "Download Installer and other resources" button.![Common Installing Download Button](images/Common_Installing_Download_Button.png)

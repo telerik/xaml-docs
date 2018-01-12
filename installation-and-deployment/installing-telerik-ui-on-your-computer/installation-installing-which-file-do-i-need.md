@@ -24,7 +24,7 @@ Each installation package comes in three types:
 
 ## MSI File For Automatic Installation
 
-The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy and automatic installation of a product. It installs the controls on your computer in a folder in your Program Files named Telerik, and automatically creates the necessary virtual folders and projects.
+The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy and automatic installation of a product. It installs the controls on your computer in a folder in your Program Files named __Progress__, and automatically creates the necessary virtual folders and projects.
 
 For more information about how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from MSI file, read [here]{% if site.site_name == 'WPF' %}({%slug installation-installing-from-msi-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}({%slug installation-installing-from-msi%}).{% endif %}
 

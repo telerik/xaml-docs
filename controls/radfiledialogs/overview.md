@@ -30,6 +30,24 @@ Here are a few of the controls' main features:
 
 * **Variety of Themes**: You can persist the appearance throughout your application by applying any of the **predefined themes** provided by the UI for WPF suite to your dialogs.
 
+* **Keyboard Navigation Support**: You can easily navigate through the **tree-view-like navigation pane**, the **breadcrumb/path pane** and the files in all layouts by just pressing the arrow keys on your keyboard.
+
+* **Windows File System Synchronization**: The dialogs provide seemless synchronization with the Windows File System. Adding, renaming or deleting operations on files are reflected in the dialogs instantly. 
+
+* **New Folder Functionality**: You can add a new folder in all dialogs with the **New Folder** button.
+
+* **Context Menu**: The dialogs use the well-known Windows context menu. 
+
+* **Editing**: The controls provide file and folder names editing via the F2 key or mouse click.
+
+* **Touch Support**: The dialogs also provide out-of-the-box touch support.
+
+* **Drive/Directory Filtering**: You can filter all drives and directories with the **DirectoryRequesting** event.
+
+* **Codeless Тest Аutomation**: You can record, execute and debug functional tests for the controls without leaving the familiar Visual Studio environment.
+ 
+The file dialogs also support many other features of the native Windows file dialogs.
+
 >tip Get started with the file dialogs with the [Getting Started]({%slug radfiledialogs-getting-started%}) help article that shows how to use them in basic scenarios.
 
 > Check out the controls' demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
@@ -38,4 +56,5 @@ Here are a few of the controls' main features:
 
 * [Getting Started]({%slug radfiledialogs-getting-started%})
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})
+* [Events]({%slug radfiledialogs-events%})
 * [Styles and Templates]({%slug radfiledialogs-styles-and-templates%})

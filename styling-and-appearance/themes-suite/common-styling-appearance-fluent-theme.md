@@ -179,33 +179,6 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 #### **Figure 4: Appearance of the RadToggleButton in the different states**  
 ![pressed brush](images/fluent-theme-togglebutton-pressed-brush.png)![mouseover brush](images/fluent-theme-togglebutton-mouseover-brush.png)![checked brush](images/fluent-theme-togglebutton-checked-brush.png) 
 
-## Shadow 
-
-The **Shadow** is an element that is used to add a shadow effect around another control or element. 
-
->important The Shadow element **is not intended to directly host other elements** as the WPF drop shadow effect affects any nested texts and results in blurry characters. 
-
-If you would like to use it separately in your application, you should work with its Width/Height properties so that it appears around the desired element as shown in **Example 9**.
-
-#### **[XAML] Example 10: Using a Shadow component separately**
-{{region styling-appearance-fluent-theme-9}}
-	 <Grid>
-		<mat:Shadow Background="White" Width="150" Height="30" ShadowDepth="Depth5"/>
-		<TextBlock Text="Some Text"
-				   HorizontalAlignment="Center"
-				   VerticalAlignment="Center"/>
-     </Grid>
-{{endregion}}
-
->important The Shadow element should have a background set for the effect to appear.
-
-The element exposes a **ShadowDepth** enum property which takes one of the following values: **Depth5**, **Depth4**, **Depth3**, **Depth2**, **Depth1**, **Depth0**. The larger the depth number is the stronger the shadow effect will be. 
-
-**Figure 5** shows the effect that the shadow element adds around a **TextBlock** element. 
-
-#### **Figure 5: Shadow effect applied over a TextBlock**  
-![shadow](images/materialtheme-shadow-control.png)
-
 ## Fluent Control
 
 The **FluentControl** is an element designed for the Fluent theme and used to display the interaction of the users with some of the controls. It is mainly used within the template of controls that suggest user actions such as the RadButton, RadToggleButton, etc. It adds a "ripple" and "Glow" effects and exposes several properties which you can use to modify the ripple/glow functionality and its appearance:
@@ -223,8 +196,8 @@ The **FluentControl** is an element designed for the Fluent theme and used to di
 
 The following code snippets show how you can integrate the FluentControl with a RadButton  
 
-#### **[XAML] Example 11: Declaration of the Button element with a glyph as text**
-{{region styling-appearance-fluent-theme-10}}
+#### **[XAML] Example 10: Declaration of the Button element with a glyph as text**
+{{region styling-appearance-fluent-theme-9}}
 		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
                 <TextBlock FontFamily="{StaticResource TelerikWebUI}"
                            FontSize="32" FontWeight="Normal" FontStyle="Normal"
@@ -232,8 +205,8 @@ The following code snippets show how you can integrate the FluentControl with a 
          </Button>
 {{endregion}}
   					
-#### **[XAML] Example 12: Button's Style declaration**
-{{region styling-appearance-fluent-theme-11}}
+#### **[XAML] Example 11: Button's Style declaration**
+{{region styling-appearance-fluent-theme-10}}
 	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FF2196F3" />
             <Setter Property="Foreground" Value="{telerik:FluentResource ResourceKey=MarkerInvertedBrush}" />
@@ -269,8 +242,6 @@ The following code snippets show how you can integrate the FluentControl with a 
 
 #### **Figure 7: FluentControl used within a custom template applied to a Button**  
 ![custom button](images/custombtngif.gif)
-
-> Note that the **MaterialAssist.MouseOverBrush** and **MaterialAssist.PressedBrush** properties, which are responsible for the mouse over and pressed animations, are automatically bound to the templated parent.
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

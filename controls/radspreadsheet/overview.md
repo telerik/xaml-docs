@@ -102,12 +102,14 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * **Scrolling**: There are two scrolling modes - **ItemBased** and **PixelBased**. The first one ensures that the whole content of the top left cell is visible, the latter designed for smoother interaction.
 
-* Easy integration with __RadRibbonView__
+* Integration with __RadRibbonView__. {% if site.site_name == 'WPF' %} An easy to use [Predefined UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}). {% endif %}
 
 * [**Localization**]({%slug radspreadsheet-localization%}): You can easily translate the string resources of **RadSpreadsheet**.
 
 
 ## Supported formats: 
+
+With RadSpreadsheet you can easily [import and export]({%slug radspreadsheet-import-export%}) documents from the following formats:
 
 * [**XLSX**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
 

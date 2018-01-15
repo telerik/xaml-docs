@@ -68,11 +68,11 @@ As an example, you can follow the steps bellow:
 
 {{region xaml-styling-apperance-custom-styles-themes-runtime_3}}
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	                    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	    <Style TargetType="telerik:RadButton" BasedOn="{StaticResource RadButtonStyle}">
-	        <Setter Property="Background" Value="Red"/>
-	    </Style>
+			    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+		<Style TargetType="telerik:RadButton" BasedOn="{StaticResource RadButtonStyle}">
+			<Setter Property="Background" Value="Red"/>
+		</Style>
 	</ResourceDictionary>
 {{endregion}}
 

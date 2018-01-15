@@ -42,27 +42,27 @@ You can switch the three color palettes by calling the __LoadPreset__ method as 
 
 Below you can find the differences between the three color variations. Every brush has relevant HEX value in the corresponding color variation.
 
-|Brush name|Light (default)|Dark|Blue|
-|----------|---------------|----|----|
-|__Brushes, which are same in the three palettes__| | | |
-|AccentMainBrush|FF3399FF|FF3399FF|FF3399FF|
-|AccentDarkBrush|FF007ACC|FF007ACC|FF007ACC|
-|SelectedBrush|FFFFFFFF|FFFFFFFF|FFFFFFFF|
-|ValidationBrush|FFF3333|FFFF3333|FFFF3333|
-|__Brushes, which are different in the three palettes__| | | |
-|AccentBrush|FF007ACC|FF007ACC|FFE5C365|
-|MarkerBrush|FF1E1E1E|FFF1F1F1|FF1E1E1E|
-|StrongBrush|FF717171|FF999999|FF717171|
-|MainBrush|FFFFFFFF|FF1E1E1E|FFFFFFFF|
-|PrimaryBrush|FFEEEEF2|FF2D2D30|FFE6EBF5|
-|AlternativeBrush|FFF5F5F5|FF252526|FFF6F6F6|
-|MouseOverBrush|FFC9DEF5|FF3E3E40|FFFDF4BF|
-|BasicBrush|FFCCCEDB|FF3F3F46|FFCCCEDB|
-|SemiBasicBrush|66CCCEDB|663F3F46|66CCCEDB|
-|HeaderBrush|FF007ACC|FF007ACC|FF35496A|
-|ComplementaryBrush|FFDBDDE6|FF434346|FFDBDDE6|
-|__Additional color__| | | |		
-|DefaultForegroundColor*|FF1E1E1E|FFF1F1F1|FF1E1E1E|
+|Brush name|Light (default)| |Dark| |Blue| |
+|----------|---------------|---|----|---|----|---|
+|__Brushes, which are same in the three palettes__| | | | | | |
+|AccentMainBrush|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|
+|AccentDarkBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|
+|SelectedBrush|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|ValidationBrush|FFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|
+|__Brushes, which are different in the three palettes__| | | | | | |
+|AccentBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FFE5C365|<div class="theme-palette-color" style="background: #E5C365"></div>|
+|MarkerBrush|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
+|StrongBrush|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|FF999999|<div class="theme-palette-color" style="background: #999999"></div>|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|
+|MainBrush|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|PrimaryBrush|FFEEEEF2|<div class="theme-palette-color" style="background: #EEEEF2"></div>|FF2D2D30|<div class="theme-palette-color" style="background: #2D2D30"></div>|FFE6EBF5|<div class="theme-palette-color" style="background: #E6EBF5"></div>|
+|AlternativeBrush|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
+|MouseOverBrush|FFC9DEF5|<div class="theme-palette-color" style="background: #C9DEF5"></div>|FF3E3E40|<div class="theme-palette-color" style="background: #3E3E40"></div>|FFFDF4BF|<div class="theme-palette-color" style="background: #FDF4BF"></div>|
+|BasicBrush|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
+|SemiBasicBrush|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46|<div class="theme-palette-color" style="background: #"></div>|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
+|HeaderBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF35496A|<div class="theme-palette-color" style="background: #35496A"></div>|
+|ComplementaryBrush|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
+|__Additional color__| | | | | | |		
+|DefaultForegroundColor*|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
 
 \* __DefaultForegroundColor__ is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
 

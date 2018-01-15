@@ -82,6 +82,14 @@ Trying to change the file extension prompts the message box shown in **Figure 4*
 
 ![Changing file extension message box](images/FileDialogs_ChangeFileExtensionMessageBox.png)
 
+## Using the ContextMenu
+
+As of __R1 2018 RadFileDialogs__ has a ContextMenu. The well-known ContextMenu used in Windows is used for this purpose. It is available for the __RadListBox, RadTreeView and RadGridView__ components used in the Main Pane.
+
+#### Figure 5: Showing the ContextMenu
+
+![Showing the ContextMenu](images/FileDialogs_ContextMenu.png)
+
 ## See Also
 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})

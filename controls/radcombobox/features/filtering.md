@@ -10,17 +10,7 @@ position: 0
 
 # Filtering
 
-The advanced filtering mechanism of the __RadComboBox__ control allows the users to refine their search results as they type in the input area. There are four __TextSearchMode__ types that can work with the __RadComboBox__:
-
-* __Contains__ - only items containing the typed text will be displayed in the drop-down part, case insensitive.
-
-* __ContainsCaseSensitive__ - only items containing the typed text will be displayed in the drop-down part, case sensitive.
-
-* __StartsWith__ - only items, which text starts with the typed text, will be shown in the drop-down part, case insensitive.
-
-* __StartsWithCaseSensitive__ - only items, which text starts with the typed text, will be shown in the drop-down part, case sensitive.
-
->The __ContainsCaseSensitive__ and __StartsWithCaseSensitive__ are available since Q1 2010 SP1.
+The advanced filtering mechanism of the __RadComboBox__ control allows the users to refine their search results as they type in the input area. The RadComboBox filtering is done according to the __TextSearchMode__ property of the RadComboBox. You can read some more about it in the [Text Search]({%slug radcombobox-features-textsearch%}#textsearchmode) article.
 
 The next code snippet shows a regular __RadComboBox__ with static data (defined in XAML).
 

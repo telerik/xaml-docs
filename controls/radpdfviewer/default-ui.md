@@ -10,7 +10,7 @@ position: 2
 
 # Default UI
 
-RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolBar** automatically registers the UI components of **RadPdfViewer** and keeps them up-to-date after each upgrade.
+RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, zoom and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose.
 
 #### Figure 1: RadPdfViewer with default UI and context menu
  
@@ -85,7 +85,7 @@ The default value for all of the ToolBar Customization options is `true`. Unchec
 {{endregion}}  
 
 
-### Customizing the Template of RadPdfViewer
+### Customizing the Template of RadPdfViewerToolBar
 
 When you need to make a more complicated change to the toolbar besides adding and removing buttons, for example, adding a new button with custom functionality, you can extract the template of **RadPdfViewerToolBar**. This can be achieved through the **Replace RadPdfViewerToolBar with Editable XAML** option of the Visual Studio Designer's context menu.
 
@@ -93,7 +93,7 @@ When you need to make a more complicated change to the toolbar besides adding an
 
 ![](images/RadPdfViewer_defaultUI_03.png)
 
-> Note that in this scenario, the RadPdfViewerToolBar is replace by its XAML code. Doing this, you will not be able to receive updates for the control and will not be able to take advantage of the styling functionalities. 
+> Note that in this scenario, the RadPdfViewerToolBar is replaced by its XAML code. Doing this, you will not be able to receive updates for the control and will not be able to take advantage of the styling functionalities. 
 
 
 

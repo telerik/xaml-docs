@@ -26,7 +26,7 @@ position: 16
 
 * [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
 
-* [Search in hidden columns](#search-in-hidden-columns)
+* [Search in Hidden Columns](#search-in-hidden-columns)
 
 ## Showing the Search Panel
 
@@ -35,7 +35,7 @@ As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean _
 >important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a __string__ type the operator is set to __Contains__. For all other types the operator is set to __IsEqualTo__.
 
 #### __[XAML] Example 1: Showing the Search Panel__
-{{region radgridview-search-as-you-type-0}}
+{{region xaml-radgridview-search-as-you-type-0}}
 	<telerik:RadGridView ItemsSource="{Binding Orders}"     
 							 ShowSearchPanel="True"
                              Name="orderItemsDataGrid" Margin="5" 
@@ -52,7 +52,7 @@ __Figure 1: Showing the Search Panel__
 You can control whether the users can use the **Search Panel** through the **CanUserSearch** boolean property of  **RadGridView**. Its default value is **true**. Setting it to **false** would permanently disable the functionality, meaning that the **Ctrl + F** combination would not show the panel as well.   
 
 #### __[XAML] Example 2: Disabling the Search Panel__
-{{region radgridview-search-as-you-type-1}}
+{{region xaml-radgridview-search-as-you-type-1}}
 	<telerik:RadGridView ItemsSource="{Binding Orders}"     
 							 CanUserSearch="False"
                              Name="orderItemsDataGrid" Margin="5" 
@@ -67,7 +67,7 @@ The deferred searching functionality can be controlled through the __IsSearching
 When __IsSearchingDeferred__ is set to __True__, the filtering will be executed when the value is being committed on __lost focus__ or when the __Enter__ or __Tab__ key is pressed. 
 
 #### __[XAML] Example 3: Setting the IsSearchingDeferred to True__
-{{region radgridview-search-as-you-type-2}}
+{{region xaml-radgridview-search-as-you-type-2}}
 	<telerik:RadGridView ItemsSource="{Binding Orders}"
 					 IsSearchingDeferred="True"
                      Name="orderItemsDataGrid" 
@@ -90,7 +90,7 @@ As of **R2 2016**, the **SearchPanelVisibilityChanged** event will be raised on 
 A common scenario where you can use this event is when you want to clear the search criteria on collapsing the panel:
 
 #### __[C#] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
-{{region radgridview-search-as-you-type-3}}
+{{region cs-radgridview-search-as-you-type-3}}
 	public MainWindow()
     {
         InitializeComponent();
@@ -108,7 +108,7 @@ A common scenario where you can use this event is when you want to clear the sea
 {{endregion}}
 
 #### __[VB.NET] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
-{{region radgridview-search-as-you-type-4}}
+{{region vb-radgridview-search-as-you-type-4}}
 	Public Sub New()
 		InitializeComponent()
 		AddHandler Me.RadGridView.SearchPanelVisibilityChanged, AddressOf RadGridView_SearchPanelVisibilityChanged
@@ -156,10 +156,10 @@ __RadGridView's__ search mechanism supports defining a search criteria programma
 
 RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the __CanUserSearchInHiddenColumns__ property of the RadGridView control.
 
->important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterword it was included in __R3 2018__ official version of __Telerik UI for WPF__.
+>important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterwards, it was included in __R1 2018__ official release of the __Telerik UI for WPF__ suite.
 
 #### __[XAML] Example 5: Setting CanUserSearchInHiddenColumns property in XAML__
-{{region radgridview-search-as-you-type-5}}
+{{region xaml-radgridview-search-as-you-type-5}}
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
 

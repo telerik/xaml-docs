@@ -81,7 +81,9 @@ Here is a snapshot of the result:
 
 > With **R1 2017** we introduced predefined styles inside QuickAccessToolbar, so in order to style its items you can use QuickAccessToolbar's **ItemContainerStyleSelector** property.
 
-#### __[XAML] Example 1: RadRibbonView with QuickAccesToolbar__
+First we will define a RadRibbonView with a QuickAccessToolbar:
+
+#### __[XAML] Example 1: RadRibbonView with QuickAccessToolbar__
 {{region xaml-radribbonview-styling-quickaccesstoolbar-0}}
 	 <telerik:RadRibbonView ApplicationButtonContent="File">
         <telerik:RadRibbonView.QuickAccessToolBar>
@@ -92,6 +94,8 @@ Here is a snapshot of the result:
         </telerik:RadRibbonView.QuickAccessToolBar>
     </telerik:RadRibbonView>
 {{endregion}}
+
+Then we will define a custom StyleSelector which will choose a style for the RadRibbonButtons based on their text:
 
 #### __[C#] Example 2: Define ItemContainerStyleSelector__  
 {{region cs-radribbonview-styling-quickaccesstoolbar-2}}
@@ -157,6 +161,8 @@ Here is a snapshot of the result:
         End Function
     End Class
 {{endregion}}
+
+Finally we need to define the two custom styles and assign the QATItemContainerStyleSelector to the ItemContainerStyleSelector property of the QuickAccessToolBar.
 
 #### __[XAML] Example 3: Define custom styles and set ItemContainerStyleSelector__
 {{region xaml-radribbonview-styling-quickaccesstoolbar-1}}

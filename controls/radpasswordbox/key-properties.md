@@ -47,7 +47,11 @@ __Figure 1__ illustates __RadPasswordBox__ when loaded.
 
 ![](images/RadPasswordBox_KeyProperties_4.png)
 
->When the password is preserved in the __Password__ property, it is actually saved in the process memory as plain text. In certain cases, you could choose not using that property (check [SecureString vs. String](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx#vsString)). 
+>__Password__ is **not a dependency property** (it is not bindable) as dependency properties keep their values unencrypted in memory.
+
+<!-- -->
+
+>When the password is preserved in the __Password__ property, it is actually saved in the process memory as plain text. In certain cases, you could choose not to use that property (check [SecureString vs. String](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx#vsString)). 
 
 ## IsPasswordVisible
 

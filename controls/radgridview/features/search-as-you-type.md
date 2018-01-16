@@ -26,6 +26,8 @@ position: 16
 
 * [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
 
+* [Search in hidden columns](#search-in-hidden-columns)
+
 ## Showing the Search Panel
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
@@ -149,6 +151,17 @@ By default, the value of the __TextBlock__ appearing before the __Search TextBox
 ## Add Search Criteria Programmatically 
 
 __RadGridView's__ search mechanism supports defining a search criteria programmatically. This can be done through the __SearchByText__ Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
+
+## Search in Hidden Columns
+
+RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the __CanUserSearchInHiddenColumns__ property of the RadGridView control.
+
+>important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterword it was included in __R3 2018__ official version of __Telerik UI for WPF__.
+
+#### __[XAML] Example 5: Setting CanUserSearchInHiddenColumns property in XAML__
+{{region radgridview-search-as-you-type-5}}
+	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
+{{endregion}}
 
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})

@@ -154,7 +154,7 @@ __RadGridView's__ search mechanism supports defining a search criteria programma
 
 ## Search in Hidden Columns
 
-RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the __CanUserSearchInHiddenColumns__ property of the RadGridView control.
+RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the __CanUserSearchInHiddenColumns__ property of the RadGridView control to __True__.
 
 >important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterwards, it was included in __R1 2018__ official release of the __Telerik UI for WPF__ suite.
 

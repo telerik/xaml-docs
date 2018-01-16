@@ -10,7 +10,7 @@ position: 3
 
 # Categorical Axis
 
-The categorical axis displays a range of categories and the values that determine each category do not define an order. Here is an example of a categorical axis with a few data points.
+The categorical axis displays a set of categories. The values for each category do not define the order in which they appear. Here is an example of a categorical axis with a few data points.
 
 #### __[XAML] Example 1: Chart with categorical axis__
 {{region xaml-radchart-axes-categoricalaxis_0}}
@@ -39,7 +39,7 @@ The categorical axis displays a range of categories and the values that determin
 #### __Figure 1: Result from Example 1__
 ![RadChartView with CategoricalAxis](images/radchartview-categoricalaxis.png)
 
-If a category binding is not specified for the categorical axis, each data point will be in its own category with the category being determined by the position of the data point in the data source. 
+If a data point category is not defined, the series will set a category automatically. The category will be a numeric value determined by the position of the data point in the data source. For example, "1", "2", "3",etc."
 
 #### __[XAML] Example 2: Chart with no category defined for datapoints__
 {{region xaml-radchart-axes-categoricalaxis_1}}
@@ -67,12 +67,10 @@ If a category binding is not specified for the categorical axis, each data point
 	</telerik:RadCartesianChart.Series>
 {{endregion}}
 
-Notice how each data point is its own category on the X axis.
-
 #### __Figure 2: Result from Example 2__
 ![RadChartView with CategoricalAxis](images/radchartview-chart_axes_categoricalaxis.png)
 
-You can customize the categoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate.
+You can customize the CategoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate.
 
 #### __[XAML] Example 3: CategoricalAxis with LabelTemplate__
 {{region xaml-radchart-axes-categoricalaxis_2}}

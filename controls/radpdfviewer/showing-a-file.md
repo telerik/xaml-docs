@@ -34,7 +34,7 @@ First, you need to declare the Telerik namespace as shown in __Example 1__.
 
 {{region radpdfviewer-showing-a-file_0}}
 
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
 {{endregion}}
 
 

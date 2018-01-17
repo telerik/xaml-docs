@@ -26,7 +26,7 @@ In order to use the __RadGauge__ control in your projects, you have to add refer
 
 ## Defining a Numeric Gauge with a NumericScale
 
-There is no special container for the numeric scale, as for the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put a NumericScale in a Grid container too. In order to define a numerical scale inside the __Gauge__ control you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.
+There is no special container for the numeric scale, unlike the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put a NumericScale in a Grid container too. In order to define a numerical scale inside the __Gauge__ control you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.
 
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`

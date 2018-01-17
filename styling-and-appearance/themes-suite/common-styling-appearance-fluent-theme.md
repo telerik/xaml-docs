@@ -3,14 +3,14 @@ title: Fluent Theme
 page_title: Fluent Theme
 description: Fluent Theme
 slug: common-styling-appearance-fluent-theme
-tags: fluent,theme,glyphs,fontsize,fontfamily,shadow
+tags: fluent,theme,acrylic,glyphs,fontsize,fontfamily,shadow
 published: True
 position: 6
 ---
 
 # Fluent Theme
 
-With the **R1 2018** release of the **UI for WPF** suite we have introduced the brand new **Fluent Theme**. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Fluent design with beautiful and smooth transitions between the states. 
+With the **R1 2018** release of the **UI for WPF** suite we have introduced the brand new **Fluent theme**. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and beautiful interpretation of the Fluent design system.
 
 The following topic explains the specifics of the theme's palette and features.
 
@@ -19,8 +19,7 @@ The following topic explains the specifics of the theme's palette and features.
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
 * [Changing Corner Radius](#set-corner-radius)
-* [Material Assist](#material-assist)
-* [Shadow](#shadow)
+* [Visual helpers](#visual-helpers)
 * [Fluent Control](#fluent-control)
 
 ## Default Theme Colors
@@ -73,11 +72,11 @@ You can switch between the color palettes by calling the LoadPreset method as sh
 
 When using the **Fluent theme** you can dynamically change the **FontSize** and **FontFamily** properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, **Office2016**, **Green** and **Material** themes.
 
-The **FontSize** and **FontFamily** properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value 12 and can be modified through the **MaterialPalette.Palette.FontSize** property. 
+The **FontSize** and **FontFamily** properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value 12 and can be modified through the **FluentPalette.Palette.FontSize** property. 
 
 The default font used in the theme is [Segoe UI](https://www.microsoft.com/typography/fonts/family.aspx?FID=331).
 
->important For complex scenarios we strongly recommend setting the **FontSize** property only **before the application is initialized**. 
+>important For complex scenarios we strongly recommend setting the **FontSize** properties only **before the application is initialized**. 
 
 __Example 1__ shows the default font sizes and families.
 
@@ -86,6 +85,7 @@ __Example 1__ shows the default font sizes and families.
 	FluentPalette.Palette.FontSizeS = 10;
 	FluentPalette.Palette.FontSize = 12;
 	FluentPalette.Palette.FontSizeL = 13;
+	FluentPalette.Palette.FontSizeXL = 13;
 	FluentPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 {{endregion}}
 
@@ -112,35 +112,18 @@ The __Examples 2 and 3__ show how to change the default FontFamily from "Segoe U
 
 ## Glyphs
 
-The **Fluent Theme** uses and supports adding icons and icon-like images which was introduced with the **Office2016** theme. Instead of images or paths we are using a font of glyphs by default. The **TelerikWebUI** font provides over 400 scalable vector glyphs that are available for use to our clients.
+The **Fluent Theme** uses again the **Telerik Web UI** [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. With this theme we are introducting the **RadGlyph** which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
 
-> You can read more about the usage and range of the new glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-overview%}).
-
-**Example 4** show how to merge the font resources.
-
-#### __[XAML] Example 5: Adding the ResourceDictionary with the glyphs__
-{{region styling-appearance-fluent-theme-4}}
-	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-{{endregion}}
-
-**Example 10** in the [Fluent Control](#fluent-control) section shows the usage of a glyph in a TextBlock.
+> You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-glyphs-radglyph%}).
+ and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
 ## Set Corner Radius
 
-The **Fluent Theme** exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the **CornerRadius** value is **0** as shown in **Example 5**. 
-
-#### __[C#] Example 6: Default corner radius values__
-{{region styling-appearance-fluent-theme-5}}
-	FluentPalette.Palette.CornerRadius = new CornerRadius(0);
-	FluentPalette.Palette.CornerRadiusTop = new CornerRadius(0);
-	FluentPalette.Palette.CornerRadiusBottom = new CornerRadius(0);
-	FluentPalette.Palette.CornerRadiusLeft = new CornerRadius(0);
-	FluentPalette.Palette.CornerRadiusRight = new CornerRadius(0);
-{{endregion}}
+The **Fluent Theme** exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the **CornerRadius** value is **0**.
 	
 **Example 6** shows how to change the default corner radius from 0 to 10. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the **CornerRadius** main property.
 
-#### __[C#] Example 7: Changing the default corner radius__
+#### __[C#] Example 6: Changing the default corner radius__
 {{region styling-appearance-fluent-theme-6}}
 	FluentPalette.Palette.CornerRadius = new CornerRadius(10); 	
 {{endregion}}
@@ -148,16 +131,28 @@ The **Fluent Theme** exposes an easy way to modify the corner radius of many ele
 #### __Figure 3: Apperance of a RadButton control after changing the default corner radius__
 ![corner radius](images/fluent-theme-button-cornerradius.png)	
 
-## Material Assist
+## Visual effects helpers
+
+### Acrylic effect
+
+With the **Fluent** theme we are introducting a **ThemeEffectsHelper** static class that is responsible for the iconic tranaparent and blurred effect that is associated with the design system. The **ThemeEffectsHelper.IsAcrylic** attached property can be applied to a **Window**, **RadWindow**, **Popup** and window-derivate controls to achieve this translucent effect. It is supported currently only under **Windows 10**. In any other operating system it would simply result in a transparent window/popup.
+
+> **ThemeEffectsHelper.IsAcrylicEnabled** is used to turn off globally the setting of the effect. And set opaque backgrounds in our controls. You can detect the version of the OS that the application is currently running and disable the effect below **Windows 10**. For more information about achieving that you can review the following MSDN articles: 
+[Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) and
+[Targeting your application for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn481241.aspx) (if the application is not targeting Windows 10, the version number returned would be always 6.2)
+
+> Applying the **ThemeEffectsHelper.IsAcrylic** to a control could result in an unexpected visual issues.
+
+### Material Assist
 
 The **MaterialAssist** static class comes from the Material theme and it is reused in the Fluent theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of the dependency properties which can be set directly in XAML:
 
-* **CheckedBrush:** Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(ToggleButton, RadListBoxItem, etc.)  
-* **FocusBrush:** Sets the value of the background Brush applied when the element is focused.
-* **IsShadowDisabled:** The property is used to control the visibility of the shadow effect.
 * **MouseOverBrush:** Sets the value of the background Brush applied when the mouse is over the control. 
 * **PressedBrush:** Sets the value of the background Brush applied when the control is pressed.
+* **CheckedBrush:** Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(ToggleButton, RadListBoxItem, etc.)
+* **FocusBrush:** Sets the value of the background Brush applied when the element is focused.
 * **ShadowDepth:** Enum property that indicates the depth of the shadow effect over the control. There are 5 values that can be selected.
+* **IsShadowDisabled:** The property is used to control the visibility of the shadow effect.
 * **CornerRadius:** Used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.). **Example 11** shows how to set corner radius to a default Button element.
 
 **Example 8** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
@@ -181,67 +176,75 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 
 ## Fluent Control
 
-The **FluentControl** is an element designed for the Fluent theme and used to display the interaction of the users with some of the controls. It is mainly used within the template of controls that suggest user actions such as the RadButton, RadToggleButton, etc. It adds a "ripple" and "Glow" effects and exposes several properties which you can use to modify the ripple/glow functionality and its appearance:
+The **FluentControl** is an element designed for the Fluent theme and used to display the interaction of the users with some of the controls. It is mainly used within the template of controls that suggest user actions such as the RadButton, RadToggleButton, etc. It adds a "Ripple" and "Glow" effects and exposes several properties which you can use to modify the ripple/glow functionality and its appearance:
 
 * **IsRippleEnabled:** Indicates whether the ripple effect is enabled.
 * **IsRippleCentered:** Controls the initial position from where the ripple effect starts. Setting the property to true will cause the effect to always start from the center of the control. Otherwise, the cursor position is respected. 
 * **IsSmartClipped:** Sets whether the ripple should be within the boundaries of the corner radius.
-* **RippleBrush:** Sets the brush used for the ripple effect.
+* **RippleBrush:** Sets the brush used for the ripple effect. The default is a RadialGradientBrush that is moved and transformed runtime.
 * **RippleOpacity:** Sets the opacity of the ripple effect.
-* **BorderGradient:** Sets the border gradient brush.
+* **BorderGradient:** Sets the border gradient brush. This brush should be RadialGradientBrush and is cloned in code because it is modified runtime and should not be frozen.
 * **EffectMode:** Sets the opacity of the ripple effect mode of the control - Ripple or Glow. The default effect is Ripple.
 
 #### **Figure 6: Ripple effect оn RadDropDownButton**  
 ![ripple effect](images/fluent-theme-dropdownbutton-rippleanimation.gif)
 
 The following code snippets show how you can integrate the FluentControl with a RadButton  
-
-#### **[XAML] Example 10: Declaration of the Button element with a glyph as text**
-{{region styling-appearance-fluent-theme-9}}
-		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
-                <TextBlock FontFamily="{StaticResource TelerikWebUI}"
-                           FontSize="32" FontWeight="Normal" FontStyle="Normal"
-                           Text="{StaticResource GlyphEdit}" VerticalAlignment="Center" HorizontalAlignment="Center" />
-         </Button>
-{{endregion}}
   					
-#### **[XAML] Example 11: Button's Style declaration**
+#### **[XAML] Example 09: RadButton's Style declaration**
+{{region styling-appearance-fluent-theme-09}}
+	 <Style TargetType="telerik:RadButton" x:Key="custom">
+        <Setter Property="Foreground" Value="{telerik:FluentResource ResourceKey=MarkerBrush}" />
+        <Setter Property="Background" Value="{telerik:FluentResource ResourceKey=MainBrush}" />
+        <Setter Property="BorderBrush" Value="{telerik:FluentResource ResourceKey=MainBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="10 5" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="MinWidth" Value="64" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="telerik:RadButton">
+                    <Grid>
+                        <Border Background="{TemplateBinding Background}" />
+                        <mat:FluentControl EffectMode="{TemplateBinding Tag}"
+                                           BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter Focusable="False"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              TextBlock.Foreground="{TemplateBinding Foreground}"
+                                              Margin="{TemplateBinding Padding}"
+                                              Content="{TemplateBinding Content}" />
+                        </mat:FluentControl>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{telerik:FluentResource ResourceKey=MouseOverBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{telerik:FluentResource ResourceKey=PressedBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+{{endregion}} 
+
+#### **[XAML] Example 10: RadButton's instancing**
 {{region styling-appearance-fluent-theme-10}}
-	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#FF2196F3" />
-            <Setter Property="Foreground" Value="{telerik:FluentResource ResourceKey=MarkerInvertedBrush}" />
-            <Setter Property="mat:MaterialAssist.MouseOverBrush" Value="#FF1976D2" />
-            <Setter Property="mat:MaterialAssist.PressedBrush" Value="#FF1565C0" />
-            <Setter Property="mat:MaterialAssist.CornerRadius" Value="30" />
-            <Setter Property="Width" Value="60" />
-            <Setter Property="Height" Value="60" />
-            <Setter Property="Padding" Value="14" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Grid>
-                            <mat:Shadow Background="{TemplateBinding Background}"
-                                        ShadowDepth="Depth4"
-                                        CornerRadius="{TemplateBinding mat:MaterialAssist.CornerRadius}" />
-                            <mat:FluentControl IsRippleCentered="True"
-                                                 RippleBrush="#FF82B1FF"
-                                                 RippleOpacity="0.8"
-                                                 IsSmartClipped="True"
-                                                 CornerRadius="{TemplateBinding mat:MaterialAssist.CornerRadius}">  
-                                <ContentPresenter Focusable="False"
-											      TextBlock.Foreground="{TemplateBinding Foreground}"
-											      Margin="{TemplateBinding Padding}"
-                                                  Content="{TemplateBinding Content}" />
-                            </mat:FluentControl>
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-      </Style>
+     <StackPanel VerticalAlignment="Center">
+        <telerik:RadButton VerticalAlignment="Center" Content="Ripple"
+                           Tag="{x:Static mat:FluentControlEffectMode.Ripple}"
+                           Style="{StaticResource custom}" />
+        <telerik:RadButton VerticalAlignment="Center" Content="Glow" Margin="0 10 0 0"
+                           Tag="{x:Static mat:FluentControlEffectMode.Glow}"
+                           Style="{StaticResource custom}" />
+    </StackPanel>
 {{endregion}}
 
-#### **Figure 7: FluentControl used within a custom template applied to a Button**  
-![custom button](images/custombtngif.gif)
+#### **Figure 7: FluentControl used within a custom template applied to a RadButton**  
+![custom button light](images/fluent-theme-light-effect.gif)
+![custom button dark](images/fluent-theme-dark-effect.gif)
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

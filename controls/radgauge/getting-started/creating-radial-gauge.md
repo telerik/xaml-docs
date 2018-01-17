@@ -10,7 +10,7 @@ position: 0
 
 # Creating Radial Gauge
 
-One of the gauges you can create with the __RadGauge__ control, is a radial gauge. It is represented by a circle container with a scale in it. Additionally it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a radial RadGauge.  
+One of the gauges you can create with the __RadGauge__ control, is a radial gauge. It is represented by a circle container with a scale in it. Additionally, it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a radial RadGauge.  
 
 * [Assembly References](#assembly-references)  
 * [Defining a RadialGauge with a Radial Scale](#defining-a-radialgauge-with-a-radialscale)
@@ -52,7 +52,7 @@ The radial gauge type is represented by the __RadRadialGauge__ class. The __RadR
 
 ## Defining an Indicator
 
-The __RadialScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator use the Indicators property, which is of type __UIElementCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example of RadialScale that uses a __Needle__ indicator to mark the current value as well as __Pinpoint__ to mark the center of the Gauge.        
+The __RadialScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator, use the __Indicators__ property, which is of type __UIElementCollection__. This means that the __Indicators__ property can hold more than one indicator. Example 2 shows a RadialScale that uses a __Needle__ indicator to mark the current value as well as __Pinpoint__ to mark the center of the Gauge.        
 
 #### __[XAML] Example 2: Adding Indicators__
 {{region radgauge-getting-started-creating-radial-gauge_3}}
@@ -75,7 +75,7 @@ The __RadialScale__ control allows you to display different types of indicators 
 
 ## Set Indicator's Position
 
-To make the indicator point to a certain value from the scale, you have to use the __Value__ property of the indicator. Here is an example:        
+To make the indicator point to a certain value from the scale, you have to use the __Value__ property of the indicator. Example 3 shows how you can work with this property:        
 
 #### __[XAML] Example 3: Setting indicator's position__
 {{region xaml-radgauge-getting-started-creating-radial-gauge_4}}

@@ -26,7 +26,7 @@ In order to use the __RadGauge__ control in your projects, you have to add refer
 
 ## Defining a Numeric Gauge with a NumericScale
 
-There is no special container for the numeric scale, unlike the radial or linear scales. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally you can put a NumericScale in a Grid container too. In order to define a numerical scale inside the __Gauge__ control you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.
+Unlike the [radial]({%slug radgauge-getting-started-creating-radial-gauge%}#defining-a-radialgauge-with-a-radialscale) and [linear]({%slug radgauge-getting-started-creating-linear-gauge%}#defining-a-linear-gauge-with-a-linear-scale) scales, the numeric scale doesn't require a special container. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally, you can put a __NumericScale__ in a __Grid__ container too. In order to define a numerical scale inside the __Gauge__ control, you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.
 
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
@@ -43,7 +43,7 @@ There is no special container for the numeric scale, unlike the radial or linear
 
 ## Defining a Numeric Indicator
 
-The __NumericScale__ control allows you to display numeric indicators that represent a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Here is an example.
+The __NumericScale__ control allows you to display numeric indicators that represent a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator.
 
 #### __[XAML] Example 2: Adding Indicators__
 {{region xaml-radgauge-getting-started-creating-numeric-gauge_3}}
@@ -79,7 +79,7 @@ The __NumericScale__ control allows you to display numeric indicators that repre
 
 ## Set Indicator's Position
 
-To make the indicator display a certain value on the scale, you have to use the __Value__ property of the indicator. Here is an example.
+To make the indicator display a certain value on the scale, you have to use the __Value__ property of the indicator.
 
 #### __[XAML] Example 3: Setting indicator's position__
 {{region xaml-radgauge-getting-started-creating-numeric-gauge_4}}

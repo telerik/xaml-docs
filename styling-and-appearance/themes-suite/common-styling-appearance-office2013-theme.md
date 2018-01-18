@@ -88,26 +88,26 @@ For example, if you want to set the __DarkGray__ color variation, you should hav
 {% endif %}
 
 ## Office2013 Palette brushes and colors
-|Brush name|White|Light Gray|Dark Gray|
-|----------|-----|----------|---------|
-|AccentMain|FF0072C6|FF0072C6|FF0072C6|
-|Accent|FF0072C6|FF0072C6|FF444444|
-|Main|FFFFFFFF|FFFFFFFF|FFFFFFFF|
-|Inverted|FF000000|FF000000|FF000000|
-|Basic|FFFDFDFD|FFFDFDFD|FFFDFDFD|
-|Strong|FF767676|FF767676|FF767676|
-|Validation|FFFF0000|FFFF0000|FFFF0000|
-|LowLightMain|FFF1F1F1|FFF1F1F1|FFF1F1F1|
-|LowLight|FFFFFFFF|FFF1F1F1|FFE5E5E5|
-|LowDark|FFFFFFFF|FFFAFAFA|FFF3F3F3|
-|MediumLight|FFE1E1E1|FFE1E1E1|FFE1E1E1|
-|MediumDark|FFC6C6C6|FFC6C6C6|FFC6C6C6|
-|HighLight|FFD4D4D4|FFC6C6C6|FFABABAB|
-|HighDark|FFABABAB|FFABABAB|FFABABAB|
-|EffectLow|33FFFFFF|33FFFFFF|FF0072C6|
-|EffectHigh|33000000|33000000|800072C6|
-|EffectAccentLow|330072C6|330072C6|330072C6|
-|EffectAccentHigh|800072C6|800072C6|800072C6|
+|Brush name|White| |Light Gray| |Dark Gray| |
+|----------|-----|---|----------|---|---------|---|
+|AccentMain|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|
+|Accent|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|FF444444|<div class="theme-palette-color" style="background: #444444"></div>|
+|Main|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|Inverted|FF000000|<div class="theme-palette-color" style="background: #000000"></div>|FF000000|<div class="theme-palette-color" style="background: #000000"></div>|FF000000|<div class="theme-palette-color" style="background: #000000"></div>|
+|Basic|FFFDFDFD|<div class="theme-palette-color" style="background: #FDFDFD"></div>|FFFDFDFD|<div class="theme-palette-color" style="background: #"></div>|FFFDFDFD|<div class="theme-palette-color" style="background: #FDFDFD"></div>|
+|Strong|FF767676|<div class="theme-palette-color" style="background: #767676"></div>|FF767676|<div class="theme-palette-color" style="background: #767676"></div>|FF767676|<div class="theme-palette-color" style="background: #767676"></div>|
+|Validation|FFFF0000|<div class="theme-palette-color" style="background: #FF0000"></div>|FFFF0000|<div class="theme-palette-color" style="background: #FF0000"></div>|FFFF0000|<div class="theme-palette-color" style="background: #FF0000"></div>|
+|LowLightMain|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|
+|LowLight|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FFE5E5E5|<div class="theme-palette-color" style="background: #E5E5E5"></div>|
+|LowDark|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFAFAFA|<div class="theme-palette-color" style="background: #FAFAFA"></div>|FFF3F3F3|<div class="theme-palette-color" style="background: #F3F3F3"></div>|
+|MediumLight|FFE1E1E1|<div class="theme-palette-color" style="background: #E1E1E1"></div>|FFE1E1E1|<div class="theme-palette-color" style="background: #E1E1E1"></div>|FFE1E1E1|<div class="theme-palette-color" style="background: #E1E1E1"></div>|
+|MediumDark|FFC6C6C6|<div class="theme-palette-color" style="background: #C6C6C6"></div>|FFC6C6C6|<div class="theme-palette-color" style="background: #C6C6C6"></div>|FFC6C6C6|<div class="theme-palette-color" style="background: #C6C6C6"></div>|
+|HighLight|FFD4D4D4|<div class="theme-palette-color" style="background: #D4D4D4"></div>|FFC6C6C6|<div class="theme-palette-color" style="background: #C6C6C6"></div>|FFABABAB|<div class="theme-palette-color" style="background: #ABABAB"></div>|
+|HighDark|FFABABAB|<div class="theme-palette-color" style="background: #ABABAB"></div>|FFABABAB|<div class="theme-palette-color" style="background: #"></div>|FFABABAB|<div class="theme-palette-color" style="background: #ABABAB"></div>|
+|EffectLow|33FFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|33FFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FF0072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|
+|EffectHigh|33000000|<div class="theme-palette-color" style="background: #000000"></div>|33000000|<div class="theme-palette-color" style="background: #000000"></div>|800072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|
+|EffectAccentLow|330072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|330072C6|<div class="theme-palette-color" style="background: #"></div>|330072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|
+|EffectAccentHigh|800072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|800072C6|<div class="theme-palette-color" style="background: #"></div>|800072C6|<div class="theme-palette-color" style="background: #0072C6"></div>|
 
 ## Changing Fonts
 

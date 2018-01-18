@@ -14,12 +14,12 @@ With the **R1 2018** release of the **UI for WPF** suite we have introduced the 
 
 The following topic explains the specifics of the theme's palette and features.
 
-* [Default theme colors](#default-theme-colors)
+* [Default Theme Colors](#default-theme-colors)
 * [Theme Variation Changing](#theme-variation-changing)
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
 * [Changing Corner Radius](#set-corner-radius)
-* [Visual helpers](#visual-effects-helpers)
+* [Visual Helpers](#visual-effects-helpers)
 * [Fluent Control](#fluent-control)
 
 ## Default Theme Colors
@@ -53,7 +53,7 @@ The default values of the brushes in the theme are listed below:
 | ReadOnlyBorderColor | #FFCDCDCD | <div class="theme-palette-color fluenttheme-readonlybordercolor-light"></div> |#FF4C4C4C | <div class="theme-palette-color fluenttheme-readonlybordercolor-dark"></div>|
 
 #### __Figure 1: Theme colors represented in RadOutlookBar__
-![fluent theme colors](images/fluent-theme-outlook.PNG)	
+![Fluent theme colors represented in RadOutlookBar](images/fluent-theme-outlook.PNG)	
 
 ## Theme Variation Changing
 
@@ -89,7 +89,7 @@ __Example 1__ shows the default font sizes and families.
 	FluentPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 {{endregion}}
 
-The __Example 3__ shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from 12 to 13.
+__Example 3__ shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from 12 to 13.
 
 #### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
 {{region styling-appearance-fluent-theme-3}}
@@ -101,11 +101,11 @@ The __Example 3__ shows how to change the default FontFamily from "Segoe UI" to 
 {{endregion}}
 
 #### __Figure 2: Setting FontSize and FontFamily__
-![font changed](images/fluent-theme-calendar-font-change-1.png)![font changed](images/fluent-theme-calendar-font-change-2.png)	
+![RadCalendar with default FontSize and FontFamiliy](images/fluent-theme-calendar-font-change-1.png)![RadCalendar with modified FontSize and FontFamiliy](images/fluent-theme-calendar-font-change-2.png)	
 
 ## Glyphs
 
-The **Fluent Theme** uses again the **Telerik Web UI** [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. With this theme we are introducting the **RadGlyph** which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
+The **Fluent Theme** also uses the **Telerik Web UI** [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. With this theme we are introducting the **RadGlyph** which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
@@ -113,7 +113,7 @@ The **Fluent Theme** uses again the **Telerik Web UI** [font glyphs](({%slug com
 
 The **Fluent Theme** exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the **CornerRadius** value is **0**.
 	
-**Example 6** shows how to change the default corner radius from 0 to 10. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the **CornerRadius** main property.
+**Example 4** shows how to change the default corner radius from 0 to 10. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the main **CornerRadius** property.
 
 #### __[C#] Example 4: Changing the default corner radius__
 {{region styling-appearance-fluent-theme-6}}
@@ -121,15 +121,15 @@ The **Fluent Theme** exposes an easy way to modify the corner radius of many ele
 {{endregion}}
 
 #### __Figure 3: Apperance of a RadButton control after changing the default corner radius__
-![corner radius](images/fluent-theme-button-cornerradius.png)	
+![RadButton with a CornerRadius of 10](images/fluent-theme-button-cornerradius.png)	
 
-## Visual effects helpers
+## Visual Effects Helpers
 
 ### Acrylic effect
 
 With the **Fluent** theme we are introducting a **ThemeEffectsHelper** static class that is responsible for the iconic transparent and blurred effect that is associated with the design system. The **ThemeEffectsHelper.IsAcrylic** attached property can be applied to a **Window**, **RadWindow**, **Popup** and window-derivate controls to achieve this translucent effect. It is **supported currently only under Windows 10**. In any other operating system it would simply result in a transparent window/popup.
 
-> **ThemeEffectsHelper.IsAcrylicEnabled** is used to turn off globally the setting of the effect. And set opaque backgrounds in our controls. You can detect the version of the OS that the application is currently running and disable the effect below **Windows 10**. For more information about achieving that you can review the following MSDN articles: 
+> **ThemeEffectsHelper.IsAcrylicEnabled** is used to turn off globally the setting of the effect and set opaque backgrounds in our controls. You can detect the version of the OS that the application is currently running and disable the effect for versions prior to **Windows 10**. For more information about achieving that you can review the following MSDN articles: 
 [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) and [Targeting your application for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn481241.aspx) (if the application is not targeting Windows 10, the version number returned would be always 6.2)
 
 >important Applying the **ThemeEffectsHelper.IsAcrylic** to a control could result in unexpected visual issues.
@@ -163,11 +163,11 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 {{endregion}}
 
 #### **Figure 4: Appearance of the RadToggleButton in the different states**  
-![pressed brush](images/fluent-theme-togglebutton-pressed-brush.png)![mouseover brush](images/fluent-theme-togglebutton-mouseover-brush.png)![checked brush](images/fluent-theme-togglebutton-checked-brush.png) 
+![RadToggleButton Pressed](images/fluent-theme-togglebutton-pressed-brush.png)![RadToggleButton MouseOver](images/fluent-theme-togglebutton-mouseover-brush.png)![RadToggleButton Checked](images/fluent-theme-togglebutton-checked-brush.png) 
 
 ## Fluent Control
 
-The **FluentControl** is an element designed for the Fluent theme and used to display the interaction of the users with some of the controls. It is mainly used within the template of controls that suggest user actions such as the RadButton, RadToggleButton, etc. It adds a "Ripple" and "Glow" effects and exposes several properties which you can use to modify the ripple/glow functionality and its appearance:
+The **FluentControl** is an element designed for the Fluent theme and used to display the interaction of the users with some of the controls. It is mainly used within the template of controls that suggest user actions such as the RadButton, RadToggleButton, etc. It adds "Ripple" and "Glow" effects and exposes several properties which you can use to modify the ripple/glow functionality and its appearance:
 
 * **IsRippleEnabled:** Indicates whether the ripple effect is enabled.
 * **IsRippleCentered:** Controls the initial position from where the ripple effect starts. Setting the property to true will cause the effect to always start from the center of the control. Otherwise, the cursor position is respected. 
@@ -178,7 +178,7 @@ The **FluentControl** is an element designed for the Fluent theme and used to di
 * **EffectMode:** Sets the opacity of the ripple effect mode of the control - Ripple or Glow. The default effect is Ripple.
 
 #### **Figure 5: Ripple effect оn RadDropDownButton**  
-![ripple effect](images/fluent-light-dropdown.gif)![ripple effect](images/fluent-dark-dropdown.gif)
+![Ripple effect оn RadDropDownButton](images/fluent-light-dropdown.gif)![Ripple effect оn RadDropDownButton with Dark Variation](images/fluent-dark-dropdown.gif)
 
 The following code snippets show how you can integrate the FluentControl with a RadButton  
   					
@@ -234,7 +234,7 @@ The following code snippets show how you can integrate the FluentControl with a 
 {{endregion}}
 
 #### **Figure 6: FluentControl used within a custom template applied to a RadButton**  
-![custom button light](images/fluent-theme-light-effect.gif)![custom button dark](images/fluent-theme-dark-effect.gif)
+![FluentControl used within a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![FluentControl used within a custom template applied to a RadButton in Dark variation](images/fluent-theme-dark-effect.gif)
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

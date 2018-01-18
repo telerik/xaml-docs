@@ -39,6 +39,7 @@ Telerik's __WPF controls__ support the following themes:
 * __VisualStudio2013__
 * __Green__
 * __Material__
+* __Fluent__
 
 >The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller). The __WPF themes__ are embedded in the control assemblies.
 

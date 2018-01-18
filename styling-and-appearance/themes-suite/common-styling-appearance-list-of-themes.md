@@ -13,6 +13,7 @@ The __UI for {{ site.framework_name }}__ suite comes with a variety of predefine
 
 Theme name | Appearance
 ---|---{% if site.site_name == 'WPF' %}
+**Fluent** | ![fluent theme](images/FluentTheme.png)
 **Material** | ![material theme](images/MaterialTheme.png)
 **Office 2016** | ![office 2016](images/Office2016Theme.png)
 **Green*** | ![Green](images/GreenTheme.png){% endif %}

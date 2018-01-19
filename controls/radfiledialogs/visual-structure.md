@@ -30,6 +30,8 @@ This help article will help you understand the visual structure of the file dial
 
 * **Configuration Pane**: The pane where the layout configurator is placed in.
 
+* **New Folder Button**: The button for creating a new folder.
+
 * **Layout Configurator**: Represents a RadComboBox to select the view mode to be used in the main pane.
 
 * **Custom Places Pane**: Lists all directories provided in the dialog's **CustomPlaces** collection.
@@ -39,6 +41,8 @@ This help article will help you understand the visual structure of the file dial
 * **Main Pane**: Displays all files and/or folders in the current directory after the search filters (if any) have been applied. This view depends on the layout selected in the layout configurator combobox.
 
 * **Operations Pane**: Consist of a RadAutoCompleteBox where the currently selected item(s) are displayed and can be set and the operation buttons for the given dialog.
+
+* **Extensions Filter ComboBox**: Displays all file extensions added with the **Filter** property to the RadOpenFileDialog and RadSaveFileDialog controls in order to indicate to the user which types of files should be opened or saved.
 
 ## See Also
 

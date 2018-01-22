@@ -219,18 +219,18 @@ __Figure 2__ visualizes how RadDocking looks after loading the saved layout.
 
 ## Loading Properties
 
-In order to restore properties that are not loaded by default, the __ElementLoading__ event needs to be handled. __Example 7__ shows how you can restore the __CanFloat__ property saved in __Example 2__.
+In order to restore properties that are not loaded by default, you need to handle the __ElementLoading__ event. __Example 7__ shows how you can restore the __CanFloat__ property saved in __Example 2__.
 
 #### __[C#] Example 7: Restore value of saved property__
 {{region cs-raddocking-features-custom-save-load-layout_9}}
 	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
 	{
-		var pane = e.AffectedElement as RadPane;
+	    var pane = e.AffectedElement as RadPane;
 	
 	    if (e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
 	    {
-			var canFloat = e.ElementProperties.First(p => p.Key == "CanFloat").Value.ToString();
-			pane.CanFloat = (bool.Parse(canFloat));
+		var canFloat = e.ElementProperties.First(p => p.Key == "CanFloat").Value.ToString();
+		pane.CanFloat = (bool.Parse(canFloat));
 	    }
 	}
 {{endregion}}

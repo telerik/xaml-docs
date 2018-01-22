@@ -219,13 +219,27 @@ __Figure 2__ visualizes how RadDocking looks after loading the saved layout.
 
 ## Loading Properties
 
-In order to prevent a specific property from loading, the __ElementLoading__ event needs to be handled. By using the __ElementProperties__ dictionary (that contains all saved properties) you could simply remove the properties that should not be loaded. 
+In order to restore properties that are not loaded by default, you need to handle the __ElementLoading__ event. __Example 7__ shows how you can restore the __CanFloat__ property saved in __Example 2__.
+
+#### __[C#] Example 7: Restore value of saved property__
+{{region cs-raddocking-features-custom-save-load-layout_9}}
+	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
+	{
+	    var pane = e.AffectedElement as RadPane;
+	
+	    if (e.AffectedElementSerializationTag.Equals("PaneTop1") && pane != null)
+	    {
+		var canFloat = e.ElementProperties.First(p => p.Key == "CanFloat").Value.ToString();
+		pane.CanFloat = (bool.Parse(canFloat));
+	    }
+	}
+{{endregion}}
 
 >The event is only called for the elements that have a set __SerializationTag__. However, you have the ability to "say" whether this event should be fired or not, when the __SerializationTag__ is __not specified__. You should set the second overload of the __LoadLayout__ and __SaveLayout__ methods to __True__.
 
-__Example 7__ demonstrates how to prevent the Header property of the left docked Panes from loading.
+You could also use the __ElementLoading__ event to remove properties that should not be loaded. __Example 8__ demonstrates how to prevent the Header property of the left docked Panes from loading.
 
-#### __[C#] Example 7: Loading properties__
+#### __[C#] Example 8: Exclude properties from loading__
 
 {{region cs-raddocking-features-custom-save-load-layout_8}}
 	private void radDocking_ElementLoading(object sender, Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs e)
@@ -242,7 +256,7 @@ __Example 7__ demonstrates how to prevent the Header property of the left docked
 
 In __Figure 3__ you can see how the left docked PaneGroup visualizes after the layout is loaded.
 
-#### __Figure 3: RadDocking after execution of Example 7__
+#### __Figure 3: RadDocking after execution of Example 8__
 
 ![](images/RadDocking_Features_CustomSaveLoadLayout_3.png)
 
@@ -252,9 +266,9 @@ In order to load a custom element other than the built-in RadSplitContainer, Rad
 
 >The event will be called only for the Panes, PaneGroups and SplitContainers that do not have a set __SerializationTag__. Otherwise, the __ElementLoading__ will be called.
 
-__Example 7__ demonstrates how to load a custom pane (for example, "MyRadPane") that derives from the default RadPane class.
+__Example 9__ demonstrates how to load a custom pane (for example, "MyRadPane") that derives from the default RadPane class.
 
-#### __[C#] Example 6: Custom loading of elements__
+#### __[C#] Example 9: Custom loading of elements__
 
 {{region cs-raddocking-features-custom-save-load-layout_6}}
 	private void radDocking_CustomElementLoading(object sender, LayoutSerializationCustomLoadingEventArgs e)
@@ -272,9 +286,9 @@ When the saved layout of RadDocking starts loading, the current layout of RadDoc
 
 >The event does not get called for the __RadDocking__ control, but only for its elements - RadPane, RadPaneGroup and RadSplitContainer.
 
-__Example 8__ demonstrates how to prevent a PaneGroup from being cleaned when the layout is about to be loaded.
+__Example 10__ demonstrates how to prevent a PaneGroup from being cleaned when the layout is about to be loaded.
 
-#### __[C#] Example 8: Prevent element from cleaning__
+#### __[C#] Example 10: Prevent element from cleaning__
 
 {{region cs-raddocking-features-custom-save-load-layout_7}}
 	private void radDocking_ElementLayoutCleaning(object sender, LayoutSerializationCleaningEventArgs e)

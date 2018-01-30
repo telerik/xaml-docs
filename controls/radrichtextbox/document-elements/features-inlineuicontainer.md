@@ -174,7 +174,7 @@ Different approaches have been adopted when it comes to exporting inline UI cont
 * __DocxFormatProvider__: All __InlineUIContainers__ are ignored as the Microsoft Word concept of controls is quite different.
             
 
-* __RtfFormatProvider__: All __InlineUIContainers__ are ignored as the RTF standard does not have the necessary concepts.
+* __RtfFormatProvider__: All __InlineUIContainers__ are ignored as the RTF standard does not have a concept for similar elements.
 
 
 * __PdfFormatProvider__: The __InlineUIContainers__ are taken a snapshot of and included in the export. If you like, you can prevent that by setting the __InlineUIContainersExportMode__ property of the provider to __None__.
@@ -188,10 +188,10 @@ There are some differences between the format providers when it comes to importi
 * __XamlFormatProvider__: All inline UI containers are deserialized and imported.
             
 
-* __DocxFormatProvider__: There cannot be any inline UI containers in a DOCX, as they are not exported in the first place.
+* __DocxFormatProvider__: There cannot be any inline UI containers in DOCX, as they are not exported in the first place.
 
             
-* __RtfFormatProvider__: There cannot be any inline UI containers in a DOCX, as they are not exported in the first place.
+* __RtfFormatProvider__: There cannot be any inline UI containers in RTF, as they are not exported in the first place.
             
 
 * __PdfFormatProvider__: PDF import is currently not supported.

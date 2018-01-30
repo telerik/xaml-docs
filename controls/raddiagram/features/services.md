@@ -86,7 +86,7 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 		End Class	
 	{{endregion}}
 
-	When registering a new [SerializationService](#serializationservice), you also have to recreate and reregister the [DataTransferService](#datatransferservice) in the Service Locator:
+	When registering a new [SerializationService](#serializationservice), you also have to recreate and register the [DataTransferService](#datatransferservice) in the service locator:
 
 	#### __C#__	
 	{{region cs-raddiagram-features-services-6}}
@@ -97,7 +97,7 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 	#### __VB.NET__		
 	{{region vb-raddiagram-features-services-7}}
 		xDiagram.ServiceLocator.Register(Of ISerializationService)(New CustomSerializationService(Me.xDiagram))
-    	xDiagram.ServiceLocator.Register(Of IDataTransferService)(New DataTransferService(Me.xDiagram))
+    		xDiagram.ServiceLocator.Register(Of IDataTransferService)(New DataTransferService(Me.xDiagram))
 	{{endregion}}
 
 

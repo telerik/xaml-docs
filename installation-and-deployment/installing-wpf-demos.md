@@ -25,6 +25,8 @@ In this topic we will go through the following sections:
 
 WPF Demos application could be accessed from the following link: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
+You can also download the application from the Windows Store: [<img height="40" width="125" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
+
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
 * Windows Installer 3.1
@@ -35,7 +37,7 @@ As it is deployed as a ClickOnce application it requires the following component
 
 * SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
-If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
+If these components are already installed, you can [install](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
 
 Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 
@@ -43,7 +45,7 @@ Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prere
 
 ## How to get the solution
 
-The solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Go to the next steps in order to download it:
+The solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Follow the next steps in order to download it:
 
 * Log in at [www.telerik.com](http://www.telerik.com/account.aspx).
 
@@ -69,7 +71,7 @@ __Figure 1: Exception when trying to install WPF Demos__
 
 ![](images/wpf_demos_0.png)
 
-Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clear the application cache. By default the files of the application are stored under the following directory: 
+Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: 
 <drive>:\Users\<your_user>\AppData\Local\Apps\2.0
 
 * SQL version mismatch **(not relevant with R3 2017 SP1 and later)**

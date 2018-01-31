@@ -25,7 +25,9 @@ In this topic we will go through the following sections:
 
 WPF Demos application could be accessed from the following link: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
-You can also download the application from the Windows Store: [<img height="40" width="125" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
+You can also download the application from the Windows Store: 
+
+[<img width="125" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
@@ -37,7 +39,9 @@ As it is deployed as a ClickOnce application it requires the following component
 
 * SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
-If these components are already installed, you can [install](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
+If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
+
+> Lauching the ClickOnce application is possible only in Internet Explorer.
 
 Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 
@@ -82,6 +86,10 @@ _Prerequisite check for system component SQL Server 2008 Express failed with the
 "SQL Server 2008 Express Service Pack 1 (x64) cannot upgrade the existing instance of SQL Server 2005 Express (x64 WoW) named 'SQLEXPRESS'. Uninstall this instance of SQL Server 2005 Express and retry installing SQL Server 2008 Express Service Pack 1 (x64)."_
 
 You should either uninstall the older SQL Server or change the instances names, so that the default “SQLEXPRESS” refers to the SQL Server 2008 Express.
+
+* Receiving a System.Deployment.Application.InvalidDeploymentException.
+
+This exception is thrown when trying to open a ClickOnce application in a browser different than Internet Explorer. In order to open a ClickOnce application in another browser, you can look for an extension in the corresponding browser store. 
 
 ## See Also
 

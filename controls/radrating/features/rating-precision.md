@@ -18,32 +18,29 @@ Users can use the __Precision__ property to control the rating precision. The pr
 
 * __Exact__ - you can rate with custom precision 
 
-## Setting the Precision property to Item
-
-#### __XAML__
-{{region rating-features-precision_0}}
+#### __[XAML] Example 1: Setting the Precision property to Item__
+{{region xaml-rating-features-precision_0}}
 	<telerik:RadRating Precision="Item"
 	                   ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}" />
 {{endregion}}
 
-![](images/rating_precision_item.png)
+#### __Figure 1: Result from Example 1__
+![RadRating with Precision](images/rating_precision_item.png)
 
-## Setting the Precision to Half
-
-#### __XAML__
-{{region rating-features-precision_1}}
+#### __[XAML] Example 2: Setting the Precision to Half__
+{{region xaml-rating-features-precision_1}}
 	<telerik:RadRating Precision="Half"
 	                   ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}" />
 {{endregion}}
 
-![](images/rating_precision_half.png)
+#### __Figure 2: Result from Example 2__
+![RadRating with Precision](images/rating_precision_half.png)
 
-## Setting the Precision to Exact
-
-#### __XAML__
-{{region rating-features-precision_2}}
+#### __[XAML] Example 3: Setting the Precision to Exact__
+{{region xaml-rating-features-precision_2}}
 	<telerik:RadRating Precision="Exact"
 	                   ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}" />
 {{endregion}}
 
-![](images/rating_precision_exact.png)
+#### __Figure 3: Result from Example 3__
+![RadRating with Precision](images/rating_precision_exact.png)

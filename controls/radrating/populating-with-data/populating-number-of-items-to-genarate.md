@@ -12,20 +12,22 @@ position: 1
 
 This tutorial will show the way of populating __RadRating__ using the __NumberOfItemsToGenerate__ property.
 
-Here is a regular __RadRating__ declaration:
+Example 1 demonstrates a regular __RadRating__ declaration:
 
-#### __XAML__
-{{region populating-number-of-items-to-genarate_0}}
+#### __[XAML] Example 1: Declare a RadRating__
+{{region xaml-populating-number-of-items-to-genarate_0}}
 	<telerik:RadRating x:Name="radRating"/>
 {{endregion}}
 
-![](images/rating_default.png)
+#### __Figure 1: Result from Example 1__
+![RadRating](images/rating_default.png)
 
 If you want to set a specific number of rating items you should set the __NumberOfItemsToGenerate__ property:
 
-#### __XAML__
-{{region populating-number-of-items-to-genarate_1}}
+#### __[XAML] Example 2: Setting the NumberOfItemsToGenerate__
+{{region xaml-populating-number-of-items-to-genarate_1}}
     <telerik:RadRating x:Name="radRating" NumberOfItemsToGenerate="3" />
 {{endregion}}
 
-![](images/rating_with_3_items.png)
+#### __Figure 2: Result from Example 2__
+![RadRating](images/rating_with_3_items.png)

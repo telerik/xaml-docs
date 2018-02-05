@@ -9,11 +9,6 @@ position: 4
 ---
 
 # Find Dialog
-#### __C#__
-
-{{region radpdfviewer-find-dialog}}
-		ExtensibilityManager.RegisterFindDialog(new FindDialog());
-{{endregion}}
 
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available search options, as well as how to use and customize the find dialog.

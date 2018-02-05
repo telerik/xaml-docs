@@ -23,7 +23,6 @@ This article contains the following sections:
 * [Signing](#signing)
 
 * [Validation](#validation)
-
 * [Limitations](#limitations)
 
 ## What is a Digital Signature?
@@ -35,7 +34,6 @@ The digital signatures rely on a mathematical algorithm, which generates a publi
 ## Cryptography Standards
 
 RadPdfViewer enables you to validate signature fields using standard Cryptography Standards. Following is a list of them:
-
 * adbe.x509.rsa_sha1 ([PKCS #1](https://tools.ietf.org/html/rfc8017))
 
 * adbe.pkcs7.sha1 ([PKCS #7](https://tools.ietf.org/html/rfc2315))
@@ -51,20 +49,28 @@ The information about a digital signature in a document is stored in a signature
 
 
 ## Signing 
-
 When a document containing a signature field is loaded in RadPdfViewer, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the ***Sign*** button prompts you to save the signed document to a new file. The newly saved file then opens in RadPdfViewer.
 
-To use the **SignSignatureDialog** you should first register it through the ExtensibilityManager as shown in **Example 1**.
+To use the **SignSignatureDialog** you should first register it. You can do this through the ExtensibilityManager as shown in **Example 1**.
 
-#### **[C#] Example 1: Registering SignSignatureDialog**
+i#### **[C#] Example 1: Registering SignSignatureDialog using ExtensibilityManager**
 
 {{region radpdfviewer-features-digital-signature_4}}
-
 	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());
 {{endregion}}
 
->If you are using **RadPdfViewerToolBar**, the SignSignatureDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+{% if site.site_name == 'WPF' %}
+If you prefer adding the dialog through XAML, you can use the RegisterSignSignatureDialog property of the RadPdfViewerAttachedComponents class.
 
+
+#### **[XAML] Example 2: Registering SignSignatureDialog through XAML**
+ 
+{{region radpdfviewer-features-digital-signature_5}}
+
+	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" />
+{{endregion}}
+
+{% endif %}
 
 #### **Figure 1: Signing a document in RadPdfViewer**
 ![](images/PdfViewer_DigitalSignature_3.gif)
@@ -86,7 +92,7 @@ The signature panel of RadPdfViewer detects when the imported document contains 
 
 To enable this panel, you should add it to the XAML as demonstrated in **Example 2**:
 
-#### **[XAML] Example 2: Declaring SignaturePanel and wiring it with RadPdfViewer**
+#### **[XAML] Example 3: Declaring SignaturePanel and wiring it with RadPdfViewer**
 
 {{region radpdfviewer-features-digital-signature_0}}
 
@@ -100,20 +106,31 @@ To enable this panel, you should add it to the XAML as demonstrated in **Example
 
 The SignaturePanel detects if any signatures are present and validates them. However, the panel shows only the end result of the validation and doesn't expose a detailed information on which one is invalid and why. You can obtain this information from the SignaturePropertiesDialog. 
 
-To use this dialog, you should register it through the **ExtensibilityManager** as demonstrated in **Example 3**.
+To use this dialog, you should register it first. This can be done through the **ExtensibilityManager** as demonstrated in **Example 4**.
 
-#### **[C#] Example 3: Registering SignaturePropertiesDialog**
+#### **[C#] Example 4: Registering SignaturePropertiesDialog**
 
 {{region radpdfviewer-features-digital-signature_1}}
 
 	ExtensibilityManager.RegisterSignaturePropertiesDialog(new SignaturePropertiesDialog());
 {{endregion}}
 
->If you are using **RadPdfViewerToolBar**, the SignaturePropertiesDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+
+{% if site.site_name == 'WPF' %}
+If you prefer adding the dialog through XAML, you can use the RegisterSignaturePropertiesDialog property of the RadPdfViewerAttachedComponents class.
+
+#### **[XAML] Example 5: Registering SignaturePropertiesDialog through XAML**
+
+{{region radpdfviewer-features-digital-signature_6}}
+
+	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" />
+{{endregion}}
+
+{% endif %}
 
 When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 4** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 
-#### **[C#] Example 4: Showing SignaturePropertiesDialog from code-behind**
+#### **[C#] Example 6: Showing SignaturePropertiesDialog from code-behind**
 
 {{region radpdfviewer-features-digital-signature_2}}
 
@@ -144,7 +161,7 @@ The **Signature** class exposes two methods allowing you to validate a signature
 
 **Example 5** shows how the validation can be used.
 
-#### **[C#] Example 5: Validate a field**
+#### **[C#] Example 7: Validate a field**
 
 
 {{region radpdfviewer-features-digital-signature_3}}

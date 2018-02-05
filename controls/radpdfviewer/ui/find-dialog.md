@@ -9,7 +9,11 @@ position: 4
 ---
 
 # Find Dialog
+#### __C#__
 
+{{region radpdfviewer-find-dialog}}
+		ExtensibilityManager.RegisterFindDialog(new FindDialog());
+{{endregion}}
 
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available search options, as well as how to use and customize the find dialog.
@@ -38,11 +42,9 @@ This is how the Find Dialog looks:
 ## Adding the FindDialog to a project
 
 In a few simple steps the FindDialog could be added to a project.
-{% if site.site_name == 'WPF' %}        
->If you are using **RadPdfViewerToolBar**, the FindDialog can be added/removed through its settings. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
-{% endif %}
 
-First of all, it is obligatory to register a new find dialog using the ExtensibilityManager:
+
+First of all, it is obligatory to register a new find dialog. This can be done using the ExtensibilityManager:
         
 
 #### __C#__
@@ -50,6 +52,19 @@ First of all, it is obligatory to register a new find dialog using the Extensibi
 {{region radpdfviewer-find-dialog}}
 		ExtensibilityManager.RegisterFindDialog(new FindDialog());
 {{endregion}}
+
+
+{% if site.site_name == 'WPF' %}        
+If you prefer adding the dialog through XAML, you can use the RegisterFindDialog property of the RadPdfViewerAttachedComponents class:
+
+#### [XAML]
+
+{{region radpdfviewer-find-dialog2}}
+		<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" />
+
+{{endregion}}
+
+{% endif %}
 
 
 The __ShowFindDialogCommand__ handles the opening of the find dialog. This command is bound to the __Ctrl+F__ shortcut key combination (__Apple+F__ for Mac) in RadPdfViewer.

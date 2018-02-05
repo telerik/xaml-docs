@@ -23,6 +23,7 @@ This article contains the following sections:
 * [Signing](#signing)
 
 * [Validation](#validation)
+
 * [Limitations](#limitations)
 
 ## What is a Digital Signature?
@@ -34,6 +35,7 @@ The digital signatures rely on a mathematical algorithm, which generates a publi
 ## Cryptography Standards
 
 RadPdfViewer enables you to validate signature fields using standard Cryptography Standards. Following is a list of them:
+
 * adbe.x509.rsa_sha1 ([PKCS #1](https://tools.ietf.org/html/rfc8017))
 
 * adbe.pkcs7.sha1 ([PKCS #7](https://tools.ietf.org/html/rfc2315))
@@ -48,12 +50,13 @@ For all other formats you might need, there is a flexible API enabling you to im
 The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called Signature, which is responsible for validating.
 
 
-## Signing 
+## Signing
+
 When a document containing a signature field is loaded in RadPdfViewer, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the ***Sign*** button prompts you to save the signed document to a new file. The newly saved file then opens in RadPdfViewer.
 
 To use the **SignSignatureDialog** you should first register it. You can do this through the ExtensibilityManager as shown in **Example 1**.
 
-i#### **[C#] Example 1: Registering SignSignatureDialog using ExtensibilityManager**
+#### **[C#] Example 1: Registering SignSignatureDialog using ExtensibilityManager**
 
 {{region radpdfviewer-features-digital-signature_4}}
 	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());

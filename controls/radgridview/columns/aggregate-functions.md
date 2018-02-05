@@ -94,6 +94,8 @@ To specify an aggregate function for a certain column, just add it to the __Aggr
 You can subscribe to the **AutoGeneratingColumn** event and additionally configure a column as demonstrated in **Example 3**.
 
 #### __[C#] Example 3: Configuring column on AutoGeneratingColumn__
+
+{{region cs-gridview-columns-aggregate-functions_7}}
 	private void clubsGrid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
 	{
 	    if (e.Column.UniqueName == "Name")
@@ -101,6 +103,7 @@ You can subscribe to the **AutoGeneratingColumn** event and additionally configu
 	        e.Column.AggregateFunctions.Add(new CountFunction());
 	    }
 	}
+{{endregion}}
 
 >If you do not explicitly specify a __UniqueName__, then its value will be the name of the property set as the __DataMemberBinding__ for the column.
 
@@ -110,7 +113,7 @@ If you need to recalculate the aggregate results, you can call the **CalculateAg
 
 #### __[C#] Example 4: Invoke CalculateAggregates() method__
 
-{{region gridview-columns-aggregate-functions_4}}
+{{region cs-gridview-columns-aggregate-functions_4}}
 
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
@@ -126,7 +129,7 @@ You can modify the default template of the displayed aggregates by setting the _
 
 #### __[C#] Example 5: Overriding GridViewDataColumn.Footer__
 
-{{region gridview-columns-aggregate-functions_5}}
+{{region cs-gridview-columns-aggregate-functions_5}}
 	<telerik:GridViewDataColumn.Footer>
 		<StackPanel Orientation="Vertical"
 					Margin="0,10">
@@ -168,7 +171,7 @@ If you need to have a default aggregate function for the custom column which is 
 
 #### __[C#] Example 6: Adding a default AggregateFunction__
 
-{{region gridview-columns-aggregate-functions_5}}
+{{region cs-gridview-columns-aggregate-functions_6}}
 	public class MyColumn : GridViewDataColumn
     {
         public MyColumn()

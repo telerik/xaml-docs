@@ -5,7 +5,7 @@ description: Grid Export
 slug: gridview-export
 tags: grid,export
 published: True
-position: 0
+position: 1
 ---
 
 # Grid Export

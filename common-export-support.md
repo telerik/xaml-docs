@@ -29,11 +29,12 @@ The Telerik UI for WPF suite includes the **Telerik Document Processing** librar
 
 
 * [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview): Supports export to PDF.
+
 * [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview): Supports export to XLSX, CSV, PDF and plain text (TXT).
 
-* [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview): Supports export to XLSX and CSV. Allows you create big spreadsheet documents with minimal resources usage.
-* 
 {% if site.site_name == 'WPF' %}
+* [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview): Supports export to XLSX and CSV. Allows you create big spreadsheet documents with minimal resources usage.
+
 * [RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
 {%endif%}
 

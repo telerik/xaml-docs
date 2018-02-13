@@ -22,7 +22,7 @@ In order to import a __.docx__ file, you need to use the Import() method of Docx
 
 #### __[C#] Example 1: Import document from a file__
 {{region cs-radrichtextbox-import-export-using-docxformatprovider-0}}
-	DocxFormatProvider provider = new DocxFormatProvider();
+	Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
 	using (FileStream inputStream = new FileStream("Sample.docx",FileMode.Open))
 	{
 		this.radRichTextBox.Document = provider.Import(inputStream);
@@ -34,7 +34,7 @@ And here is how you can import a document from byte array containing the docx do
 
 #### __[C#] Example 2: Import document from a byte array__
 {{region cs-radrichtextbox-formats-and-conversion-docx-docxformatprovider_1}}
-    DocxFormatProvider provider = new DocxFormatProvider();
+    Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
     RadDocument document = provider.Import(input);
 {{endregion}}
 
@@ -43,7 +43,7 @@ In order to export a document to DOCX, you need to use the Export() method of Do
 
 #### __[C#] Example 3: Export document to a file__
 {{region cs-radrichtextbox-import-export-using-docxformatprovider-2}}
-	DocxFormatProvider provider = new DocxFormatProvider();
+	Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
 	using (FileStream output =  new FileStream("Sample.docx",FileMode.OpenOrCreate))
 	{
 		RadDocument document = this.radRichTextBox.Document;
@@ -55,7 +55,7 @@ You can also export the document to a byte array and preserve it in a database.
 
 #### __[C#] Example 4: Export a document to a byte array__
 {{region cs-radrichtextbox-import-export-using-docxformatprovider_3}}
-    DocxFormatProvider provider = new DocxFormatProvider();
+    Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
     RadDocument document = CreateRadDocument();
     byte[] output = provider.Export(document);
 {{endregion}}

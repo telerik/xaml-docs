@@ -63,7 +63,7 @@ To use the **SignSignatureDialog** you should first register it. You can do this
 {{endregion}}
 
 {% if site.site_name == 'WPF' %}
-If you prefer adding the dialog through XAML, you can use the RegisterSignSignatureDialog property of the RadPdfViewerAttachedComponents class.
+If you prefer adding the dialog through XAML, you can use the **RegisterSignSignatureDialog** property of the **RadPdfViewerAttachedComponents** class.
 
 
 #### **[XAML] Example 2: Registering SignSignatureDialog through XAML**
@@ -120,7 +120,7 @@ To use this dialog, you should register it first. This can be done through the *
 
 
 {% if site.site_name == 'WPF' %}
-If you prefer adding the dialog through XAML, you can use the RegisterSignaturePropertiesDialog property of the RadPdfViewerAttachedComponents class.
+If you prefer adding the dialog through XAML, you can use the **RegisterSignaturePropertiesDialog** property of the RadPdfViewerAttachedComponents class.
 
 #### **[XAML] Example 5: Registering SignaturePropertiesDialog through XAML**
 

@@ -46,17 +46,17 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 	<Grid>
 	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition/>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition/>
 	    </Grid.RowDefinitions>
-	    <telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"/>
-	    <telerik:SignaturePanel Grid.Row="1"/>
+	    <telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" SignaturePanel="{Binding ElementName=signaturePanel, Mode=OneTime}"/>
+	    <fixedViewersUI:SignaturePanel x:Name="signaturePanel" PdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" Grid.Row="1"/>
 	    <telerik:RadPdfViewer x:Name="pdfViewer" DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}" 
-	                            telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" 
-	                            telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" Grid.Row="2" 
-	                            telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" 
-	                            telerik:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
+				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" 
+				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterFindDialog="True" Grid.Row="2" 
+				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" 
+				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
 	</Grid>
 {{endregion}}  
  

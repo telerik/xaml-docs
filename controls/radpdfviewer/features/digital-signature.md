@@ -62,7 +62,6 @@ To use the **SignSignatureDialog** you should first register it. You can do this
 	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());
 {{endregion}}
 
-{% if site.site_name == 'WPF' %}
 If you prefer adding the dialog through XAML, you can use the **RegisterSignSignatureDialog** property of the **RadPdfViewerAttachedComponents** class.
 
 
@@ -73,7 +72,6 @@ If you prefer adding the dialog through XAML, you can use the **RegisterSignSign
 	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" />
 {{endregion}}
 
-{% endif %}
 
 #### **Figure 1: Signing a document in RadPdfViewer**
 ![](images/PdfViewer_DigitalSignature_3.gif)
@@ -119,7 +117,6 @@ To use this dialog, you should register it first. This can be done through the *
 {{endregion}}
 
 
-{% if site.site_name == 'WPF' %}
 If you prefer adding the dialog through XAML, you can use the **RegisterSignaturePropertiesDialog** property of the RadPdfViewerAttachedComponents class.
 
 #### **[XAML] Example 5: Registering SignaturePropertiesDialog through XAML**
@@ -129,7 +126,6 @@ If you prefer adding the dialog through XAML, you can use the **RegisterSignatur
 	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" />
 {{endregion}}
 
-{% endif %}
 
 When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 4** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 

@@ -36,13 +36,8 @@ The following methods are not utilizing the [RadSpreadProcessing](https://docs.t
 ## See Also
 
  * [Grid Export]({#slug gridview-export})
-
  * [Grid Async Export]({%slug gridview-export-async%})
-
  * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
-
- * [ExportFormat.Html]({%slug gridview-export-html%})
- 
- * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%})
- 
+ * [ExportFormat.Html]({%slug gridview-export-html%}) 
+ * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%}) 
  * [ExportFormat.Pdf]({%slug gridview-export-pdf%})

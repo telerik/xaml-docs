@@ -5,7 +5,7 @@ description:  Export Events
 slug: gridview-export-events
 tags: grid,export,events
 published: True
-position: 2
+position: 3
 ---
 
 # RadGridView Export Events

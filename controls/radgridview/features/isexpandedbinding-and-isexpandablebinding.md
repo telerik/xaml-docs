@@ -59,7 +59,7 @@ As of __R1 2018 SP2 RadGridView__ exposes the __IsExpandedBinding__ and __IsExpa
     }
 {{endregion}}
 
-#### __[C#] Example 2: Create sample data
+#### __[C#] Example 2: Create sample data__
 {{region radgridview-isexpanded-and-isexpandablebinding_1}}
 	public class MyDataContext
     {

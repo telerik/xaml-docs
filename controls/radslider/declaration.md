@@ -55,17 +55,6 @@ You can add __RadSlider__ in XAML or in code as demonstrated in examples 1 and 2
 #### Figure 1: Result from Examples 1 and 2
 ![RadSlider](images/radslider_gettingstarted.png)
 
-## Key Properties
-
-The __RadSlider__ control derives from the [DoubleRangeBase](https://docs.telerik.com/devtools/silverlight/api/html/t_telerik_windows_controls_doublerangebase.htm) class which in turn derives from the [RangeBase](https://msdn.microsoft.com/en-us/library/system.windows.controls.primitives.rangebase(v=vs.110).aspx) class. In addition to the inherited properties, these are some of the properties the RadSlider defines:
-
-* __EnableSideTicks__: Gets or sets a value indicating whether side ticks are enabled.
-* __Delay__: Gets or sets the Delay property of the Increase and Decrease handles.
-* __Orientation__: Gets or sets the orientation of a RadSlider. This is a dependency property.
-* __TickFrequency__: Gets or sets the interval between tick marks. This is a dependency property.
-* __ThumbVisibility__:  Gets or sets the visibility of the thumb(s) in RadSlider.
-* __IsDirectionReversed__: Gets or sets the direction of increasing value. This is a dependency property.
-
 ## See Also
 * [Visual Structure]({%slug radslider-visual-structure%})
 * [Events]({%slug radslider-events-overview%})

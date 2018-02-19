@@ -13,7 +13,7 @@ position: 2
 
 
 Since __Q1 2013__ release, __RadTreeListView__ has two new properties - __IsExpandedBinding__ and __IsExpandableBinding__ which can be used to synchronize its expanded and expandable states with your view-model.
->cation Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
+>caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
 
 ## Use of IsExpandedBinding
 

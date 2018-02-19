@@ -152,6 +152,3 @@ The visibility of the __GridViewToggleButton__ can be controlled through setting
 ## See Also
 
 * [Defining Columns]({%slug gridview-columns-defining-columns%})
-
-
-

@@ -20,9 +20,9 @@ Assume we have a GridView bound to a collection of clubs. Each club has a proper
 
 To do so follow these steps:
 
-1. Create a new class which inherits the __DataTemplateSelector__ class.
+**1**. Create a new class which inherits the __DataTemplateSelector__ class.
 
-2. Override its __SelectTemplate__ method. Based on your conditions - you return the proper DataTemplate that will be applied to the framework element (cell in our case).
+**2**. Override its __SelectTemplate__ method. Based on your conditions - you return the proper DataTemplate that will be applied to the framework element (cell in our case).
 
 #### __C#__
 
@@ -89,7 +89,7 @@ To do so follow these steps:
 
 In this case we have two different DataTemplates that could be applied - bigStadium and smallStadium. Depending on the underlying data we choose / select which template to apply.
 
-3. In the XAML file define the template selector as a resource and set the properties of the bigStadium and smallStadium:
+**3**. In the XAML file define the template selector as a resource and set the properties of the bigStadium and smallStadium:
 
 #### __XAML__
 
@@ -114,7 +114,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 	</my:MyCellTemplateSelector>
 {{endregion}}
 
-4. Finally, set the __CellTemplateSelector__ property of the data column which represents the StadiumCapacity field:
+**4**. Finally, set the __CellTemplateSelector__ property of the data column which represents the StadiumCapacity field:
 
 #### __XAML__
 

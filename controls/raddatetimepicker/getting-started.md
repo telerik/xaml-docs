@@ -15,6 +15,7 @@ This tutorial will walk you through the creation of a sample application that co
 * [Assembly References](#assembly-references)
 * [Adding RadDateTimePicker to the Project](#adding-raddatetimepicker-to-the-project)
 * [Working with Selected Values](#working-with-selected-values)
+* [Manually Updating the Bound Property](#manually-updating-the-bound-property)
 * [Setting a Theme](#setting-a-theme)
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug raddatetimepicke-visual-structure%}) of the __RadDateTimePicker__ control.
@@ -90,6 +91,21 @@ Normally you would want to bind the __SelectedValue__ property to your data as d
 
 {{region xaml-raddatetimepicke-getting-started_6}}
 	<telerik:RadDateTimePicker SelectedValue="{Binding Established}" />
+{{endregion}}
+
+## Manually Updating the Bound Property
+
+In case the bound property value needs to be manually updated at some state, the __DateTimeText__ property of the control can simply be set to be equal to the __CurrentDateTimeText__ one.
+
+#### __[C#] Example 5: Manually updating the bound property__
+
+{{region cs-raddatetimepicke-getting-started_7}}
+	this.DateTimePicker.DateTimeText = this.DateTimePicker.CurrentDateTimeText;
+{{endregion}}
+
+#### __[VB.NET] Example 5: Manually updating the bound property__
+{{region vb-raddatetimepicke-getting-started_7}}
+	Me.DateTimePicker.DateTimeText = Me.DateTimePicker.CurrentDateTimeText
 {{endregion}}
 
 ## Setting a Theme

@@ -150,7 +150,7 @@ In the following examples, we will demonstrate how to find a specific location b
 				MessageBox.Show(e.Error.ToString());
 			}
 		}	
-	{{endregion}}
+	{{endregion}}	
 	#### __[VB.NET] Example 3: Get a location by specific address__
 	{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_5}}
 		Class MainWindow
@@ -184,6 +184,22 @@ In the following examples, we will demonstrate how to find a specific location b
 			End Sub
 		End Class
 	{{endregion}}
+
+## Structured/ Unstructured URL
+	
+The __Microsoft Bing Maps REST Service__ provides two URL's which you can use to search for a location by given query ([Structured/ Unstructured URL](https://msdn.microsoft.com/en-us/library/ff701711.aspx?f=255&MSPPError=-2147217396)). With the __R1 2018 SP2__ version of our controls, you can now change the URL which the BingRestMapProvider search mechanism use in its code. By the default the __BingRestSearchLocationRequest__ use Structured URL. To force the search functionality to use Unstructured URL you can set the __UseUnstructuredQuery__ property of the __BingRestSearchLocationRequest__ to true. 
+
+Setting one of these URL depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such scenario you can use __Structured URL__. On another hand, if you type an unstructured address (or free form query) you should choose unstructured Bing URL for better results from service.	
+
+#### __[C#] Example 4: Get a location by specific address__
+	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_6}}	
+		BingRestMapProvider provider = new BingRestMapProvider(MapMode.Aerial, true, "Your Bing Map Key");
+		BingRestSearchLocationRequest request = new BingRestSearchLocationRequest();
+		request.SearchLocationOptions.UseUnstructuredQuery = true;
+		request.Query = "Your query";
+		this.provider.SearchLocationAsync(request);		
+	{{endregion}}
+	
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})
  * [Bing Rest Map]({%slug radmap-features-providers-bing-rest-map%})

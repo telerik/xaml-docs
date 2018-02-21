@@ -185,11 +185,13 @@ In the following examples, we will demonstrate how to find a specific location b
 		End Class
 	{{endregion}}
 
-## Structured/ Unstructured URL
+## Structured / Unstructured URL
 	
-The __Microsoft Bing Maps REST Service__ provides two URL's which you can use to search for a location by given query ([Structured/ Unstructured URL](https://msdn.microsoft.com/en-us/library/ff701711.aspx?f=255&MSPPError=-2147217396)). With the __R1 2018 SP2__ version of our controls, you can now change the URL which the BingRestMapProvider search mechanism use in its code. By the default the __BingRestSearchLocationRequest__ use Structured URL. To force the search functionality to use Unstructured URL you can set the __UseUnstructuredQuery__ property of the __BingRestSearchLocationRequest__ to true. 
+The __Microsoft Bing Maps REST Service__ provides two URL templates which you can use to get latitude and longitude coordinates for a location by a given query. To learn more about these templates, please refer to the [Find a Location by Address](https://msdn.microsoft.com/en-us/library/ff701711.aspx)) MSDN article.
 
-Setting one of these URL depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such scenario you can use __Structured URL__. On another hand, if you type an unstructured address (or free form query) you should choose unstructured Bing URL for better results from service.	
+With the __R1 2018 SP2__ version of our controls, you can now change the type of URL which the BingRestMapProvider's search mechanism uses in its code. By default, the __BingRestSearchLocationRequest__ uses the __structured__ URL template. To force the search functionality to use an unstructured URL template, you can set the __UseUnstructuredQuery__ property of the __BingRestSearchLocationRequest__ to __True__. 
+
+Setting one of these URLs depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such a scenario you can use a __Structured URL__. On the hand, if you type an unstructured address (or free form query) you should choose the unstructured Bing URL to get better results from the service.	
 
 #### __[C#] Example 4: Get a location by specific address__
 	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_6}}	

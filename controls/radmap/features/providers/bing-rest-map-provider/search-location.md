@@ -191,7 +191,7 @@ The __Microsoft Bing Maps REST Service__ provides two URL templates which you ca
 
 With the __R1 2018 SP2__ version of our controls, you can now change the type of URL which the BingRestMapProvider's search mechanism uses in its code. By default, the __BingRestSearchLocationRequest__ uses the __structured__ URL template. To force the search functionality to use an unstructured URL template, you can set the __UseUnstructuredQuery__ property of the __BingRestSearchLocationRequest__ to __True__. 
 
-Setting one of these URLs depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such a scenario you can use a __Structured URL__. On the hand, if you type an unstructured address (or free form query) you should choose the unstructured Bing URL to get better results from the service.	
+Setting one of these URLs depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such a scenario you can use a __Structured URL__. On the other hand, if you type an unstructured address (or free form query) you should choose the unstructured Bing URL to get better results from the service.	
 
 #### __[C#] Example 4: Get a location by specific address__
 	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_6}}	

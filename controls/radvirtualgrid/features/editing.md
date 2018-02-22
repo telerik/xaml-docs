@@ -12,7 +12,7 @@ position: 0
 
 > By default, the __CanUserEdit__ property of __RadVirtualGrid__ is set to __True__, thus the editing mechanism is enabled. In order to disable it, its value needs to be set to __False__.
 
-As __RadVirtualGrid__ does not utilize data binding for populating and managing its data, it does not provide a default editor. Instead, when the user double clicks to enter edit mode, the __EditorNeeded__ event is raised. 
+As __RadVirtualGrid__ does not utilize data binding for populating and managing its data, it does not provide a default editor. Instead, when the user double clicks to enter edit mode, the __EditorNeeded__ event is raised. This means that by default there won't be editor visulized until you create it in the event handler.
 
 * [Events](#events)
 
@@ -42,8 +42,7 @@ Through this event a custom editor for handling the editing operation can be def
 
 > The property of the editor that is being edited needs to be set manually as well.
 
-#### __[C#] Example 1: Handling the EditorNeeded event__
-
+#### __[C#] Example 1: Handling the EditorNeeded event__  
 {{region radvirtualgrid-features_editing_0}}
 	private void VirtualGrid_EditorNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs e)
@@ -56,6 +55,8 @@ Through this event a custom editor for handling the editing operation can be def
         }
 {{endregion}}
 
+> Most input controls (MaskedTextInput, RadNumericUpDown, RadComboBox, etc.) in the Material, Fluent and Transparent themes have an opacity applied. This means that you can see through them which could lead to a visual glitch when used as editors in RadVirtualGrid. To avoid this set the Background property of the editor to a solid color when you create it in the event handler.
+
 ### EditorValueChanged
 
 This event is triggered each time the underlying property value that is edited has been changed. Its event arguments provide the following information. 
@@ -66,8 +67,7 @@ This event is triggered each time the underlying property value that is edited h
 
 * __Value__: Provides information regarding the user input.
 
-#### __[C#] Example 2: Handling the EditorValueChanged event__
-
+#### __[C#] Example 2: Handling the EditorValueChanged event__  
 {{region radvirtualgrid-features_editing_1}}
 	private void VirtualGrid_EditorValueChanged(object sender, 
 			Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
@@ -86,8 +86,7 @@ The event is raised when the user ends editing the cell by setting the focus to 
 
 * __Value__: Provides information regarding the user input.
 
-#### __[C#] Example 3: Handling the CellEditEnded event__
-
+#### __[C#] Example 3: Handling the CellEditEnded event__  
 {{region radvirtualgrid-features_editing_2}}
 	   private void VirtualGrid_CellEditEnded_1(object sender, CellEditEndedEventArgs e)
         {

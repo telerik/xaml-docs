@@ -120,8 +120,7 @@ When an edit is committed, the new property value needs to be manually pushed to
 
 * __PushCellValue(int rowIndex, int columnIndex, object value)__
 
-#### __[C#] Example 2: Updating RadVirtualGrid with the modified data__
-	
+#### __[C#] Example 2: Updating RadVirtualGrid with the modified data__  	
 {{region radvirtualgrid-features_editing_1}}
 	private void VirtualGrid_CellEditEnded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
@@ -129,8 +128,6 @@ When an edit is committed, the new property value needs to be manually pushed to
             this.VirtualGrid.PushCellValue(e.RowIndex, e.ColumnIndex, e.Value);
         }
 {{endregion}}
-
-
 
 ## EditTriggers
 

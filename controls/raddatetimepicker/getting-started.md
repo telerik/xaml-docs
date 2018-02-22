@@ -95,7 +95,7 @@ Normally you would want to bind the __SelectedValue__ property to your data as d
 
 ## Manually Updating the Bound Property
 
-In case the bound property value needs to be manually updated at some state, the __DateTimeText__ property of the control can simply be set to be equal to the __CurrentDateTimeText__ one.
+In case the bound property value needs to be manually updated at some state, the __DateTimeText__ property of the control can simply be set to be equal to the __CurrentDateTimeText__ one. The __CurrentDateTimeText__ property is updated each time the user types in the textbox, whereas the __DateTimeText__ is updated once the textbox has lost focus, for example.  
 
 #### __[C#] Example 5: Manually updating the bound property__
 

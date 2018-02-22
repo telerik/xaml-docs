@@ -125,11 +125,14 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 ## RadRibbonView Resource Keys
 
-The following __Resource Keys__ are available:
-* __RibbonViewGalleryButtonMore__
-* __RibbonViewGalleryButtonUpDown__
-* __RibbonViewQATCustomize__
-* __RibbonViewQATMinimize__
-* __RibbonViewQATShowAbove__
-* __RibbonViewQATShowBelow__
-* __RibbonViewWindowTitleDivider__
+Here is a list of all of the __Resources Keys__ available and their default values:
+
+Key	|	Value
+---	|	---	
+RibbonViewGalleryButtonMore | More
+RibbonViewGalleryButtonUpDown | Row
+RibbonViewQATCustomize | Customize Quick Access ToolBar
+RibbonViewQATMinimize | Minimize the Ribbon
+RibbonViewQATShowAbove | Show above the Ribbon
+RibbonViewQATShowBelow | Show below the Ribbon
+RibbonViewWindowTitleDivider | - 

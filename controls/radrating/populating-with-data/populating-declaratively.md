@@ -12,22 +12,20 @@ position: 2
 
 This tutorial will walk you through the common task of populating __RadRating__ with __RadRatingItems__ declaratively.
 
-Here is a regular __RadRating__ declaration:
+Example 1 demonstrates a regular __RadRating__ declaration, where __telerik__ points to: __&lt;xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" /&gt;__
 
-#### __XAML__
-{{region populating-declaratively_0}}
-	<xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"/>
-	...
-	<telerik:RadRating x:Name="radRating">
-	</telerik:RadRating>
+#### __[XAML] Example 1: Declare a RadRating __
+{{region xaml-populating-declaratively_0}}
+	<telerik:RadRating x:Name="radRating" />
 {{endregion}}
 
-![](images/rating_default.png)
+#### __Figure 1: Result from Example 1__
+![RadRating](images/rating_default.png)
 
-In order to add rating items you need to use the __RadRating's__ __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadRatingItems__. For example, insert the following lines to the declaration of your __RadRating__ and see how it will change.
+In order to add rating items you need to use the __RadRating's__ __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadRatingItems__. Example 2 shows how to add RadRatingItems to your RadRating.
 
-#### __XAML__
-{{region populating-declaratively_1}}
+#### __[XAML] Example 2: Adding RadRatingItems__
+{{region xaml-populating-declaratively_1}}
 	<telerik:RadRating x:Name="radRating">
 	    <telerik:RadRatingItem Content="1" />
 	    <telerik:RadRatingItem Content="2" />
@@ -42,6 +40,7 @@ In order to add rating items you need to use the __RadRating's__ __Items__ prope
 	</telerik:RadRating>
 {{endregion}}
 
-![](images/rating_with_10_items.png)
+#### __Figure 2: Result from Example 2__
+![RadRating with RadRatingItems](images/rating_with_10_items.png)
 
 >tip Consider declaring rating items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.

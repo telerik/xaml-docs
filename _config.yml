@@ -1005,6 +1005,9 @@ navigation:
     "styling-and-appearance":
         title: "Styling and Appearance"
         position: 8
+    "cloud-integration":
+        title: "Cloud Integration"
+        position: 9
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 5

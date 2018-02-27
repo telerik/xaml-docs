@@ -142,4 +142,4 @@ In order to change the applied transition you can set the __Transition__ propert
 
  * [Integration with Content Controls]({%slug radtransition-features-integration-with-content-controls%})
 
- * [RadTransitionControl SDK examples]({%slug radtransition-sdk-examples%})
+ * [RadTransitionControl SDK examples]({%slug  radtransitioncontrol-sdk-examples%})

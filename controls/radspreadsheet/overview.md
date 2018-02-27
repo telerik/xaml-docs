@@ -94,7 +94,7 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * [**Headers and Footers**]({%slug radspreadsheet-ui-headers-and-footers%}): The functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
 
-* Create and use multiple sheets, each one with its own [**history**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hostory) stack
+* Create and use multiple sheets, each one with its own [**history**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/history) stack
 
 * [**Selection** and active cell]({%slug radspreadsheet-ui-working-with-selection%})
 

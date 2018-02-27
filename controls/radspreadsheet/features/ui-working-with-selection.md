@@ -194,7 +194,7 @@ Here is a sample code on how you can achieve the result from the above image thr
 {{region radspreadsheet-ui-working-with-selection_3}}
 	        Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 	
-	        selection.[Select](6, 1, 2, 4)
+	        selection.&#91;Select&#93;(6, 1, 2, 4)
 	{{endregion}}
 
 

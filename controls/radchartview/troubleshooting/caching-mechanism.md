@@ -1,7 +1,7 @@
 ---
 title: Caching mechanism
 page_title: Caching mechanism
-description: This article described the Caching mechanism of the chartview.
+description: This article described the caching mechanism of the chartview.
 slug: radchartview-troubleshooting-caching-mechanism
 tags: troubleshooting,caching,mechanism,clipped,chart,label
 published: True
@@ -16,7 +16,7 @@ When the chart is loaded it caches the size of most of its elements, as labels a
 
 For example, in a scenario with custom label template where the size of the element in the DataTemplate changes at run-time. Because the size of the ContentPresenter that wraps the elements in the DataTemplate is cached, the element will be clipped if its size becomes bigger than the size of the ContentPresenter. In such case to trigger the size update you can reset the PointTemplate of the series after you change the size.
 	  	  
-#### __[C#] Example 1: Updating the chart by resetting the PointTemplate__
+#### __[C#] Example 1: Updating the chart's API by resetting the PointTemplate__
 
 {{region radchartview-troubleshooting-caching-mechanism_0}}
 	var template = series.PointTemplate;

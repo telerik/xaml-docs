@@ -31,7 +31,7 @@ __RadGridView__ API allows you to tweak your application for optimal performance
 
 * Avoid using converters. Calling a converter is a time-consuming operation and this will slow down the performance.
 
-* Avoid applying a __RowStyle__ and/or an __AlternateRowStyle__ that modifies the ControlTemplate that the GridViewRow is created with. This will result in a performance hit.
+* Avoid applying a __RowStyle__ and/or an __AlternateRowStyle__ that modifies the default GridViewRow ControlTemplate. This will result in a performance hit.
             
 * __DataLoadMode="Asynchronous"__ - using this mode is __not recommended__, it leads to potential problems. Please do not use it.        
 

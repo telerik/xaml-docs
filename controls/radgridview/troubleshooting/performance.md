@@ -41,7 +41,7 @@ You might notice a reduced performance of RadGridView control. Below are listed 
             
 * As of __Q2 2014 SP__ release we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
 
-* Applying a __RowStyle__ or an __AlternateRowStyle__ that modifies the ControlTemplate with which the GridViewRow is created will result in a performance hit.
+* Applying a __RowStyle__ or an __AlternateRowStyle__ that modifies the default GridViewRow ControlTemplate will result in a performance hit.
 
 * __IsPropertyChangedAggregationEnabled__ - Introduced as of __Q2 2015 SP1__. Basically, through this property you can control how __RadGridView__ will handle __PropertyChanged__ event. Its default value is __True__, meaning that the event occurrency will be handled on a fixed time period using a __DispatcherTimer__, which improves the rendering performance for multiple value updates. When set to __False__, the resources taken by the aforementioned __DispatcherTimer__ will be freed, thus the overall performance of the control will be improved. 
 

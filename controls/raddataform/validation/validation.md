@@ -30,6 +30,7 @@ For example:
 	    var employer = this.DataForm1.CurrentItem as Employee;
 	    if (employer.Salary < 1000)
 	    {
+	      	e.Cancel = true;
 	        RadWindow.Alert("You have to raise " + employer.LastName + " salary");
 	    }
 	}
@@ -41,6 +42,7 @@ For example:
 	Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs)
 	    Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
 	    If employer.Salary < 1000 Then
+	    	e.Cancel = True
 	        RadWindow.Alert("You have to raise " & Convert.ToString(employer.LastName) & " salary")
 	    End If
 	End Sub

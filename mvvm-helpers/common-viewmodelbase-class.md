@@ -5,7 +5,7 @@ description: ViewModelBase
 slug: common-viewmodelbase-class
 tags: ViewModelBase
 published: True
-position: 2
+position: 1
 ---
 
 # ViewModelBase class

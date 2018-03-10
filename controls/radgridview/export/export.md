@@ -49,7 +49,7 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 	        Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
 	        FilterIndex = 1
 	    };
-	    if (dialog.ShowDialog() == true)
+	    if (dialog.ShowDialog() == DialogResult.OK)
 	    {
 	        using (Stream stream = dialog.OpenFile())
 	        {

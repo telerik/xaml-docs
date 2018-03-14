@@ -8,11 +8,13 @@ published: True
 position: 2
 ---
 
-# Integration between RadCloudUpload and Azure Blob Storage
+# Blob Storage
 
 This article will demonstrate how to connect the [RadCloudUpload]({%slug radcloudupload-overview%}) control with an Azure storage account.
 
->important For the purposes of this article, we will assume that you've already created an [Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account).
+## Set up storage account
+
+For the purposes of this article, you will have to create an [Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account).
 
 ## Implementing a CustomAzureProvider
 

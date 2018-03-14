@@ -5,7 +5,7 @@ description: Blob Storage
 slug: cloud-integration-azure-blob-storage
 tags: cloud,integration, radcloudupload,azureprovider
 published: True
-position: 2
+position: 4
 ---
 
 # Blob Storage

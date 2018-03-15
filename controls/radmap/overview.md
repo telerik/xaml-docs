@@ -34,11 +34,11 @@ __RadMap's__ key features include:
 
 * __KML Data Import__- __RadMap__ provides support for stunning map overlays through its KML-import feature.  Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control.          
 
-* __Search__ - searching for a particular location takes just a few seconds thanks to the integrated search functionality in __RadMap__.          
+* __Search__ - __RadMap__ supports searching Locations via the search mechanism exposed by __BingRestMapProvider__.
 
-* __Routing__ - the control provides integrated Bing Maps routing support.          
+* __Routing__ - the control provides Bing Maps routing support.          
 
-* __Geocode__ - __RadMap__ has integrated geocoding support.          
+* __Geocode__ - __RadMap__ has __BingRestMapProvider__ geocoding support.          
 
 Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#Map/SalesDashboard](https://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/#Map/SalesDashboard](https://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
 

@@ -52,3 +52,5 @@ Click add new user and follow the instructions on the screen. There are 4 steps:
 This is the final step. If you do not see the AWS start page (see the first image) go to View - AWS Explorer. Click **Add New User** and import the csv file.
 
 ![aws-getting-started004](images/aws-getting-started004.png)
+
+> In order to see the codes of each region, please check out the [Amazon API Gateway](https://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region)

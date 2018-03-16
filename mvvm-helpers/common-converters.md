@@ -15,8 +15,10 @@ Telerik controls provides a set of different built-in __IValueConverters__ which
 >To get access to these converters you can add reference to the __Telerik.Windows.Controls.dll__.
 
 * [BooleanToOpacityConverter](#booleantoopacityconverter)
+* [InvertedBooleanToOpacityConverter](#invertedbooleantoopacityconverter)
 * [BooleanToVisibilityConverter](#booleantovisibilityconverter)
 * [InvertedBooleanToVisibilityConverter](#invertedbooleantovisibilityconverter)
+* [EnumToVisibilityConverter](#enumtovisibilityconverter)
 * [ColorToBrushConverter](#colortobrushconverter)
 * [NullToVisibilityConverter](#nulltovisibilityconverter)
 * [NumberToVisibilityConverter](#numbertovisibilityconverter)
@@ -29,7 +31,11 @@ Telerik controls provides a set of different built-in __IValueConverters__ which
 
 ## BooleanToOpacityConverter
 
-This converter converts __Boolean__ values to 1 or 0 opacity.
+This converter converts __Boolean__ values to 1 or 0 opacity. If the __Boolean__ value is __false__ the converter will return 0 opacity.
+
+## InvertedBooleanToOpacityConverter
+
+This converter converts __Boolean__ values to 1 or 0 opacity. If the __Boolean__ value is __false__ the converter will return 1 opacity.
 
 ## BooleanToVisibilityConverter
 
@@ -38,6 +44,10 @@ This converter converts __Boolean__ values to __Visibility__ enumeration values.
 ## InvertedBooleanToVisibilityConverter
 
 This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the __Convert()__ method will return __Visibility.Collapsed__.
+
+## EnumToVisibilityConverter
+
+Converts an __Enum__ value to a __Boolean__ one if it is one from the specified in the parameter values.
 
 ## ColorToBrushConverter
 

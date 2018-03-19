@@ -92,7 +92,7 @@ There is a demo available in our **SDK repository located at GitHub** - [ListBox
 
 ## TextBoxBehavior
 
-The built-in behavior of the standard TextBox control can be manipulated through as set of members exposed by the __TextBoxBehavior__. It is defined in the __Telerik.Windows.Controls__ namespace. 
+The built-in behavior of the standard TextBox control can be manipulated through as set of members exposed by the __TextBoxBehavior__ class. It is defined in the __Telerik.Windows.Controls__ namespace. 
 
 * __SelectAllOnGotFocus__: Selects the whole Text when the TextBox receives focus.
 * __SelectAllOnTripleClick__: Selects the whole Text when the user performs a triple mouse click.

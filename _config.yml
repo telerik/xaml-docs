@@ -563,6 +563,7 @@ navigation:
         title: FunnelChart Series
     controls/radchartview/troubleshooting:
         title: Troubleshooting 
+        position: 13
 ## X2 Controls End
 
 ## Centaur Controls Start

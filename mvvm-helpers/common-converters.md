@@ -10,7 +10,7 @@ position: 2
 
 # Converters
 
-Telerik controls provides a set of different built-in __IValueConverters__ which can be used to perform conversion between different types.
+Telerik controls provide a set of different built-in __IValueConverters__ which can be used to perform conversion between different types.
 
 >To get access to these converters you can add reference to the __Telerik.Windows.Controls.dll__.
 
@@ -47,7 +47,7 @@ This converter converts __Boolean__ values to __Visibility__ enumeration values.
 
 ## EnumToVisibilityConverter
 
-Converts an __Enum__ value to a __Boolean__ one if it is one from the specified in the parameter values.
+Converts an __Enum__ value to a __Boolean__ one if it is one of the specified ones in the parameter values.
 
 ## ColorToBrushConverter
 
@@ -71,7 +71,7 @@ This converter converts all __lowcase__ to __uppercase__ letters.
 
 ## BinaryImageConverter
 
-The converter convert __byte array__ to __image__.
+The converter converts __byte array__ to __image__.
 
 ## DoubleToThicknessConverter
 
@@ -79,7 +79,7 @@ The converter converts __numeric__ value to __Thickness__ based on the parameter
 
 ## OpacityConverter
 
-The converter apply opacity to a __Color__ or __Brush__ value based on the parameter.
+The converter applies opacity to a __Color__ or __Brush__ value based on the parameter.
 
 ## See Also
 

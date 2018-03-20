@@ -121,7 +121,7 @@ In case you want to display (in the item headers) a specific property of an obje
 	    End Property
 	    Public ReadOnly Property Number() As Integer
 	        Get
-	            Return m_number.[Next](0, 1000)
+	            Return m_number.Next(0, 1000)
 	        End Get
 	    End Property
 	    Public ReadOnly Property Text() As String

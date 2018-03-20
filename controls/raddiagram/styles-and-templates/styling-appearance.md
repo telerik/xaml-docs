@@ -69,7 +69,7 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 
 	![Rad Diagram Styling Line Thickness](images/RadDiagram_Styling_LineThickness.png)
 	
->tip If you need to customize the appearance and the settings of the __RadDiagram__ PagesPreview canvas, you can examine the [Pages Preview](a0973f36-f74e-44df-ac8f-d124c3e948aa#PagesPreview) section in the __Printing__ article.
+>tip If you need to customize the appearance and the settings of the __RadDiagram__ PagesPreview canvas, you can examine the [Pages Preview]({%slug raddiagram-features-printing%}#pages-preview-canvas) section in the __Printing__ article.
 
 ### DiagramAdorners
 

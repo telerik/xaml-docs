@@ -358,12 +358,12 @@ In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handle
 
 		Public Shared Sub AddTwoFingerTapEventHandler(element As UIElement, handler As RoutedEventHandler)
 			Dim recognizer As TwoFingerTapGestureRecognizer = GestureManager.GetOrCreateGestureRecognizer(Of TwoFingerTapGestureRecognizer)(element)
-			recognizer.[AddHandler](handler)
-			element.[AddHandler](TwoFingerTapEvent, handler, False)
+			recognizer.AddHandler(handler)
+			element.AddHandler(TwoFingerTapEvent, handler, False)
 		End Sub
 
 		Friend Shared Sub RaiseTwoFingerTap(element As UIElement)
-			element.[RaiseEvent](New RoutedEventArgs(TwoFingerTapEvent, element))
+			element.RaiseEvent(New RoutedEventArgs(TwoFingerTapEvent, element))
 		End Sub
 	End Class	
 {{endregion}}

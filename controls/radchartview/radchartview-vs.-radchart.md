@@ -2,7 +2,7 @@
 title: RadChart vs. RadChartView
 page_title: RadChart vs. RadChartView
 description: RadChart vs. RadChartView
-slug: radchartview-radchartview-vs.-radchart
+slug: radchartview-radchartview-vs-radchart
 tags: radchart,vs.,radchartview
 published: True
 position: 2

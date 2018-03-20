@@ -388,20 +388,20 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 
 {{region vb-radchart-how-to-mvvm-support_8}}
 	Private Function GetData() As List(Of PersonViewModel)
-	    Dim rand As New Random(DateTime.Now.Millisecond)
-	    Dim studentList As New List(Of Person)()
-	
-	    For i As Integer = 0 To rand.[Next](9, 12) - 1
-	        studentList.Add(New Person("Person" & i, rand.[Next](15, 100)))
-	    Next
-	
-	    Dim modelList As New List(Of PersonViewModel)()
-	    For Each person As Person In studentList
-	        modelList.Add(New PersonViewModel(person))
-	    Next
-	
-	    Return modelList
-	End Function
+        Dim rand As Random = New Random(DateTime.Now.Millisecond)
+        Dim studentList As List(Of Person) = New List(Of Person)
+        Dim i As Integer = 0
+        Do While (i < rand.Next(9, 12))
+            studentList.Add(New Person(("Person" + i), rand.Next(15, 100)))
+            i = (i + 1)
+        Loop
+        
+        Dim modelList As List(Of PersonViewModel) = New List(Of PersonViewModel)
+        For Each person As Person In studentList
+            modelList.Add(New PersonViewModel(person))
+        Next
+        Return modelList
+    End Function
 {{endregion}}
 
 

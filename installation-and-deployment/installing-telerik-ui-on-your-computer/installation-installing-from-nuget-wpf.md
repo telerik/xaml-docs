@@ -23,6 +23,8 @@ We will go through the following sections:
 
 * [Installing WPF Controls Package](#installing-wpf-controls-package)
 
+* [Installing Latest Internal Build NuGet Packages](#installing-latest-internal-build-nuget-packages)
+
 * [Add the Telerik NuGet Server](#add-the-telerik-nuget-server)
 
 ## Downloading the NuGet packages
@@ -46,8 +48,18 @@ Click the “Install” button and the references will be automatically added to
 
 You can now use the Telerik WPF controls in your project. 
 
->tipAdditionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
-          
+>tip Additionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
+    
+## Installing Latest Internal Build NuGet Packages
+
+You can install and test the Latest Internal Build (LIB) dlls provided on a weekly basis, via the Nuget Package Manager. You can see how to set up the nugets in a local nuget source (package source) in the [Installing WPF Controls Package](#installing-wpf-controls-package) section of this article. 
+
+> The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a local package source and copy the files there. You cannot download LIB dlls via the online telerik nuget server (https://nuget.telerik.com/nuget) because they are not available there.
+
+When you set up the package source and place the nuget files there, you can find them in the Nuget Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
+
+![](images/Common_InstallingFromNuGet_10_wpf.png)
+	
 ## Add the Telerik NuGet Server
 
 Through the Telerik NuGet Server users can easily include the Telerik UI for WPF suite and update to latest official version without having to log into their Telerik account. The following steps will demonstrate how this can be done in Visual Studio:

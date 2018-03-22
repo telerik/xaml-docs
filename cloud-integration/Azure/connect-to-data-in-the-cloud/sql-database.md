@@ -61,7 +61,7 @@ You are now able to work with the entities you chose through the created **DbCon
 
 All the interaction with the Azure SQL Database will be done by the viewmodel. First define the properties which will be used to interact with the view.
 
-#### __[XAML] Example 2: Define public properties__
+#### __[XAML] Example 1: Define public properties__
 
 {{region cloud-integration-sql-database-1}}
 
@@ -109,7 +109,7 @@ All the interaction with the Azure SQL Database will be done by the viewmodel. F
 
 Now what's left is to actually make the connection to the database and query the data. For the purpose, create a new **BackgroundWorker** in the viewmodel's constructor and handle the **DoWork** and **RunWorkerCompleted** events as shown in **Example 3**.
 
-#### __[XAML] Example 3: Add logic to work with the SQL database__
+#### __[XAML] Example 2: Add logic to work with the SQL database__
 
 {{region cloud-integration-sql-database-2}}
 
@@ -153,7 +153,7 @@ The **RunWorkerCompleted** event handler then creates a new instance of the gene
 
 The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occured. **Example 4** demonstrates the code for these two operations.
 
-#### __[XAML] Example 4: Save and Load changes__
+#### __[XAML] Example 3: Save and Load changes__
 
 {{region cloud-integration-sql-database-3}}
 
@@ -182,9 +182,9 @@ The final step is to actually save any changes that are made the database as wel
 
 All that's left is to define the actual user interface clients of this application will use. The layout consists of a RadGridView to display the data, a RadDataPager to page it and two buttons - one to save the changes to the database and one to load newly-updated data from the cloud. Note that the **local** namespace in the example corresponds to the namespace where **MainWindowViewModel** resides.
 
-#### __[XAML] Example 1: Add RadGridView in XAML__
+#### __[XAML] Example 4: Add RadGridView in XAML__
 
-{{region cloud-integration-sql-database-0}}
+{{region cloud-integration-sql-database-4}}
 
     <Grid>
 		<Grid.DataContext>

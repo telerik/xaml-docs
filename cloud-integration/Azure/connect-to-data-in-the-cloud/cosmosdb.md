@@ -16,7 +16,7 @@ position: 1
 
  Let's start with setting up the **FamilyDB** database and **FamilyCollection** collection from the [SQL API Getting Started Tutorial](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started).
 
-## Query the Data
+## Create the Layout
 
 Let us first define the RadGridView instance that we will be using.
 
@@ -64,6 +64,8 @@ We will also want to display the parents for each family by specifying the RowDe
         </DataTemplate>
     </Grid.Resources>
 {{endregion}}
+
+## Define the ViewModel
 
 And here is the definition of the underlying viewmodel.
 

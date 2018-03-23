@@ -34,7 +34,7 @@ Using implicit styles gives you full Blend support and smaller dlls size. To use
 
 To change the theme you will need to take the following few steps.
 
-1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the &ast;/Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/&ast; folder.
+1. __Reference the NoXaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the &#42;/Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/&#42; folder.
 
 2. __Get the .xaml files__ with the control styles and templates.	
 	

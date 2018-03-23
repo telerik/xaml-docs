@@ -1,14 +1,14 @@
 ---
-title: RadObservableCollection
-page_title: RadObservableCollection
-description: RadObservableCollection
+title: RadObservableCollection and ObservableItemCollection
+page_title: RadObservableCollection and ObservableItemCollection
+description: RadObservableCollection and ObservableItemCollection
 slug: consuming-data-radobservablecollection
-tags: radobservablecollection
+tags: radobservablecollection, observableitemcollection
 published: True
 position: 13
 ---
 
-# RadObservableCollection
+# RadObservableCollection and ObservableItemCollection
 
 This article will give you information about the **RadObservableCollection**.
 
@@ -16,6 +16,7 @@ This article will give you information about the **RadObservableCollection**.
 * [Methods](#methods)
 * [Properties](#properties)
 * [Events](#events)
+* [ObservableItemCollection](#observableitemcollection)
 
 ## Overview
 
@@ -79,3 +80,18 @@ Simply put, a RadObservableCollection represents an **ObservableCollection** tha
 	* **Item**: Gets or sets the currently added/removed item.
 
 * **PropertyChanged**: Occurs when a property value changes.
+
+## ObservableItemCollection
+
+__ObservableItemCollection__ extends __RadObservableCollection__ by exposing the __ItemChanged__ event. It is raised when one of the properties of the items present in the collection is changed.
+
+**ItemChanged**: The event provides the following properties:
+
+ * **Item**: Gets the item that has changed.
+ * **PropertyName**: Gets the name of the property that has changed.
+
+## See Also
+
+* [Consuming Data Overview]({%slug consuming-data-overview%})
+
+* [In-Memory Data]({%slug consuming-data-in-memory-data%})

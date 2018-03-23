@@ -560,7 +560,10 @@ navigation:
     controls/radchartview/features/combinemode:
         title: Combine Mode
     controls/radchartview/series/funnelchart-series:
-        title: FunnelChart Series 
+        title: FunnelChart Series
+    controls/radchartview/troubleshooting:
+        title: Troubleshooting 
+        position: 13
 ## X2 Controls End
 
 ## Centaur Controls Start

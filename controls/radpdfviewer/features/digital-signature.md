@@ -49,6 +49,9 @@ For all other formats you might need, there is a flexible API enabling you to im
 
 The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called Signature, which is responsible for validating.
 
+>If you need to add signature fields and widgets to PDF files which do not have any fields, then the only possible approach is to use the [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. With it, you can [import the existing PDF](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import), modify its [AcroForm FormFieldCollection](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/interactive-forms/formfieldcollection), [create and position widgets](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/interactive-forms/widgets#widget-class) for the new fields and finally [export the result to PDF](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#export) FileStream or MemoryStream. The exported file can then be [imported in RadPdfViewer](https://docs.telerik.com/devtools/wpf/controls/radpdfviewer/showing-a-file#setting-the-document-in-code-behind), so that you can render the resultant document. 
+>
+>Sample code for creating fields and widgets with **RadPdfProcessing** can be seen in the [CreateInteractiveForms SDK example](https://github.com/telerik/document-processing-sdk/tree/master/PdfProcessing/CreateInteractiveForms).
 
 ## Signing
 

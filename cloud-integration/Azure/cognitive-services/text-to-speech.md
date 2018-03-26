@@ -5,7 +5,7 @@ description: Speech-to-Text
 slug: cloud-integration-cognitive-services-speech-to-text
 tags: cloud,integration,azure,cognitive,services,speech,to,text
 published: True
-position: 3
+position: 0
 ---
 
 # Speech-to-Text
@@ -22,7 +22,7 @@ Once you've created the account, you have to obtain the subscription keys that h
 
 ## Create the Application
 
-Start by {% if site.framework_name == 'WPF' %}[creating a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}){% else %}[creating a new Silverlight application]({%slug installation-adding-to-application-create-application-and-adding-control%}){% endif %} and add the following assemblies which you will need.
+{% if site.framework_name == 'WPF' %}[Create a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}){% else %}[Create a new Silverlight application]({%slug installation-adding-to-application-create-application-and-adding-control%}){% endif %} and add the following assemblies which you will need.
 
 * **Telerik.Windows.Controls**
 * **Telerik.Windows.Data**
@@ -82,7 +82,7 @@ Now, add a new **UserControl** to your project. You can give it a descriptive na
 
 ## Add the Speech Recognition NuGet Package
 
-You can now add the **Microsoft.ProjectOxford.SpeechRecognition** NuGet package corresponding to your application's build configuration.
+You now have to add the **Microsoft.ProjectOxford.SpeechRecognition** NuGet package corresponding to your application's build configuration.
 
 ![Add the Microsoft.ProjectOxford.SpeechRecognition NuGet Package](images/speech-recognition-nuget.png)
 
@@ -166,5 +166,6 @@ That's it. You can now use the control however you find necessary to record you 
 ## See Also
 
 * [Image Analysis]({%slug cloud-integration-cognitive-services-image-analysis%})
+* [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 * [Azure SQL Database]({%slug cloud-integration-sql-database%})

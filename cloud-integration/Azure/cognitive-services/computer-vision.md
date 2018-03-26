@@ -5,7 +5,7 @@ description: Image Analysis
 slug: cloud-integration-cognitive-services-image-analysis
 tags: cloud,integration,azure,cognitive,services,image,analysis
 published: True
-position: 3
+position: 1
 ---
 
 # Image Analysis
@@ -22,7 +22,7 @@ Once you've created the account, you have to obtain the subscription keys that h
 
 ## Create the Application
 
-Start by {% if site.framework_name == 'WPF' %}[creating a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}){% else %}[creating a new Silverlight application]({%slug installation-adding-to-application-create-application-and-adding-control%}){% endif %} and add the following assemblies which you will need.
+{% if site.framework_name == 'WPF' %}[Create a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}){% else %}[Create a new Silverlight application]({%slug installation-adding-to-application-create-application-and-adding-control%}){% endif %} and add the following assemblies which you will need.
 
 * **Telerik.Windows.Controls**
 * **Telerik.Windows.Controls.DataVisualization**
@@ -90,7 +90,7 @@ Now, add a new **UserControl** to your project. You can give it a descriptive na
 
 ## Add the Newtonsoft.Json NuGet Package
 
-You can now add the **Newtonsoft.Json** NuGet package which will allow you to deserialize the returned JSON response.
+You now have to add the **Newtonsoft.Json** NuGet package which will allow you to deserialize the returned JSON response.
 
 ## Add Reference to System.Net.Http
 
@@ -98,7 +98,7 @@ You also need to add a reference to **System.Net.Http** which holds the API requ
 
 ## Use the Computer Vision API
 
-All that's left to do is actually handle the button's **Click** event and use the Computer Vision API to analyze the image uploaded file selected from an [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}).
+The code in **Example 3** handles the button's **Click** event and uses the Computer Vision API to analyze the image uploaded file which is selected from a [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}).
 
 #### __[XAML] Example 3: The User Control's Definition__
 
@@ -145,7 +145,7 @@ All that's left to do is actually handle the button's **Click** event and use th
 
 What's left to do is to define the **MakeAnalysisRequest** method which will get the actual response from the service for the provided image and the **CalculatePortraitProbability** method which will calculate the final result based on the **categories** and **tags** from the response.
 
-#### __[XAML] Example 3: The User Control's Definition__
+#### __[XAML] Example 4: The User Control's Definition__
 
 {{region cloud-integration-cognitive-services-image-analysis-3}}
 
@@ -257,7 +257,7 @@ What's left to do is to define the **MakeAnalysisRequest** method which will get
 	}
 {{endregion}}
 
-Most of the code is self-explanatory but, in short, it creates an HTTP request which is asynchronously processed by the service. The returned JSON is then deserialized into an **ImageResponse** instance which is modeled to hold the data (an example of the actual JSON which is returned can be found in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#analyze-an-image-response)).
+The code from **Example 4** creates an HTTP request which is asynchronously processed by the service. The returned JSON is then deserialized into an **ImageResponse** instance which is modeled to hold the data (an example of the actual JSON which is returned can be found in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#analyze-an-image-response)).
 
 Finally, the **CalculatePortraitProbability** method analyzes the ImageResponse and based on some custom logic returns a value between **0 and 1** which is the probability based on our custom criteria that the image is actually a portrait. You're free to customize this logic based on your project's requirements.
 
@@ -267,7 +267,7 @@ Once the probability is calculated it is passed to the **Confidence** property o
 
 That's it. You can now use the control however you find necessary to analyze uploaded images.
 
-#### __[XAML] Example 4: Use the User Control__
+#### __[XAML] Example 5: Use the User Control__
 
 {{region cloud-integration-cognitive-services-image-analysis-4}}
 
@@ -283,5 +283,6 @@ That's it. You can now use the control however you find necessary to analyze upl
 ## See Also
 
 * [Speech-to-Text]({%slug cloud-integration-cognitive-services-speech-to-text%})
+* [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 * [Azure SQL Database]({%slug cloud-integration-sql-database%})

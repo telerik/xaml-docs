@@ -51,7 +51,7 @@ In addition you need to add the following to your App.config file:
 
 #### __[XAML] Example 2: Adding the AWS Profile in App.config__
 
-{{region xml-cloud-services-aws-storage-1}}
+{{region xaml-cloud-services-aws-storage-1}}
     <?xml version="1.0" encoding="utf-8" ?>
         <configuration>
             <appSettings>
@@ -69,7 +69,7 @@ Before proceeding with the example you will have to create a new bucket using th
 
 ## Step 4: Define the ViewModel
 
-The Next step is to create the ViewModel. It will need an [IAmazonS3](https://docs.aws.amazon.com/sdkfornet/latest/apidocs/items/TS3IS3NET45.html) client object which will be used for managing the data. We also need to implement all of the commands that the RadButtons are bound to.
+The next step is to create the ViewModel. It will need an [IAmazonS3](https://docs.aws.amazon.com/sdkfornet/latest/apidocs/items/TS3IS3NET45.html) client object which will be used for managing the data. We also need to implement all of the commands that the RadButtons are bound to.
 
 #### __[C#] Example 3: Defining the ViewModel__
 
@@ -348,7 +348,7 @@ All that is left is to set the DataContext to our ViewModel and pass an instance
     }
 {{endregion}}
 
-#### __[VB.NET] Example 6: Set the DataContext__
+#### __[VB.NET] Example 5: Set the DataContext__
 
 {{region vb-cloud-services-aws-storage-7}}
     Public Sub MainWindow()

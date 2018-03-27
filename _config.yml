@@ -1008,6 +1008,27 @@ navigation:
     "cloud-integration":
         title: "Cloud Integration"
         position: 9
+    "cloud-integration/amazon-web-services":
+        title: "Amazon Web Services"
+        position: 2
+    "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
+        title: "Connect to data in the cloud"
+        position: 5
+    "cloud-integration/azure":
+        title: "Azure"
+        position: 3
+    "cloud-integration/azure/cognitive-services":
+        title: "Cognitive services"
+        position: 4
+    "cloud-integration/azure/connect-to-data-in-the-cloud":
+        title: "Connect to data in the cloud"
+        position: 5
+    "cloud-integration/google-cloud":
+        title: "Google Cloud"
+        position: 4
+    "cloud-integration/google-cloud/cognitive-services":
+        title: "Cognitive Services"
+        position: 4
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 5

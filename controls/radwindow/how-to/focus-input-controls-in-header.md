@@ -17,7 +17,7 @@ To prevent the RadWindow from handling the mouse events, you have to set the att
 #### __[XAML] Example 1: Set WindowHost.HitTestable property__
 
 {{region xaml-radwindow-how-to-focus-input-controls-in-header_0}}
-	<TextBox Text="{Binding SearchText}" telerik:WindowHost.HitTestable="False" />
+	<TextBox Text="{Binding SearchText}" telerik:WindowHost.HitTestable="True" />
 {{endregion}}
 
 ## See Also

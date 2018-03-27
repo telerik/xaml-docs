@@ -168,4 +168,4 @@ That's it. You can now use the control however you find necessary to record you 
 * [Image Analysis]({%slug cloud-integration-cognitive-services-image-analysis%})
 * [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
-* [Azure SQL Database]({%slug cloud-integration-sql-database%})
+* [Azure SQL Database]({%slug cloud-integration-azure-sql-database%})

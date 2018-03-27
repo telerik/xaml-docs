@@ -24,7 +24,7 @@ Here are the currently available topics:
 
     * [Cosmos DB]({%slug crud-operations-gridview-cosmosdb%})
 
-    * [SQL Database]({%slug cloud-integration-sql-database%})
+    * [SQL Database]({%slug cloud-integration-azure-sql-database%})
 
     * Data Warehouse
 

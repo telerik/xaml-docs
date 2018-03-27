@@ -2,7 +2,7 @@
 title: SQL Database
 page_title: SQL Database
 description: SQL Database
-slug: cloud-integration-sql-database
+slug: cloud-integration-azure-sql-database
 tags: cloud,integration,azure,sql,database
 published: True
 position: 0
@@ -63,7 +63,7 @@ All the interaction with the Azure SQL Database will be done by the viewmodel. F
 
 #### __[XAML] Example 1: Define public properties__
 
-{{region cloud-integration-sql-database-1}}
+{{region cloud-integration-azure-sql-database-1}}
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -111,7 +111,7 @@ Now what's left is to actually make the connection to the database and query the
 
 #### __[XAML] Example 2: Add logic to work with the SQL database__
 
-{{region cloud-integration-sql-database-2}}
+{{region cloud-integration-azure-sql-database-2}}
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -155,7 +155,7 @@ The final step is to actually save any changes that are made the database as wel
 
 #### __[XAML] Example 3: Save and Load changes__
 
-{{region cloud-integration-sql-database-3}}
+{{region cloud-integration-azure-sql-database-3}}
 
     public MainWindowViewModel()
     {
@@ -184,7 +184,7 @@ All that's left is to define the actual user interface clients of this applicati
 
 #### __[XAML] Example 4: Add RadGridView in XAML__
 
-{{region cloud-integration-sql-database-4}}
+{{region cloud-integration-azure-sql-database-4}}
 
     <Grid>
 		<Grid.DataContext>

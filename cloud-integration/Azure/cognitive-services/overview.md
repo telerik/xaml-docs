@@ -23,4 +23,4 @@ Here's the current list of articles available:
 ## See Also
 
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
-* [Azure SQL Database]({%slug cloud-integration-sql-database%})
+* [Azure SQL Database]({%slug cloud-integration-azure-sql-database%})

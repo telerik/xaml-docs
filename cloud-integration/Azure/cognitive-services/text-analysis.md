@@ -188,4 +188,4 @@ That's it. You can now use the control however you find necessary to analyze use
 * [Speech-to-Text]({%slug cloud-integration-cognitive-services-speech-to-text%})
 * [Image Analysis]({%slug cloud-integration-cognitive-services-image-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
-* [Azure SQL Database]({%slug cloud-integration-sql-database%})
+* [Azure SQL Database]({%slug cloud-integration-azure-sql-database%})

@@ -1019,10 +1019,10 @@ navigation:
         position: 3
     "cloud-integration/azure/cognitive-services":
         title: "Cognitive services"
-        position: 4
+        position: 5
     "cloud-integration/azure/connect-to-data-in-the-cloud":
         title: "Connect to data in the cloud"
-        position: 5
+        position: 6
     "cloud-integration/google-cloud":
         title: "Google Cloud"
         position: 4

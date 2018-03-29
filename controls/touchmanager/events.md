@@ -52,7 +52,7 @@ These events handle more complex gesture interactions that are combinations of b
 
 * __SwipeInertia__: Occurs after the SwipeInertiaStarted event while the swipe inertial operation is running. The event handler arguments are of type __SwipeInertiaEventArgs__.
 
-	> The SwipeInertial event won't be fired unless SwipeInertiaStarted is handled.
+	> The SwipeInertia event won't be fired unless SwipeInertiaStarted is handled.
 	
 * __SwipeInertiaFinished__: Occurs when the swipe inertia finishes. The event handler arguments are of type __RadRoutedEventArgs__.
 

@@ -19,13 +19,11 @@ __GridViewBoundColumnBase__ provides a mechanism for it to be excluded from the 
 #### __Example 1: Setting the IsSearchable property to False__
 
 {{region xaml-gridview-how-to-exclude-column-from-search_0}}
-		<telerik:RadGridView Grid.Row="0" 
-                             Name="clubsGrid" 
+		<telerik:RadGridView Grid.Row="0"
                              ItemsSource="{Binding Clubs}"
                              ShowSearchPanel="True"
                              AutoGenerateColumns="False"
-                             GroupRenderMode="Flat"
-                             Margin="5">
+                             GroupRenderMode="Flat">
             <telerik:RadGridView.Columns>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" 
                                             IsSearchable="False"/>

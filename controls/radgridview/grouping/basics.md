@@ -97,6 +97,8 @@ The **ShouldReorderColumnsOnUngrouping** property controls whether the columns' 
        
 ## Disabling Grouping
 
+> As of __R2 2018__ the grouping operation can be disabled for all columns of the control. This can be done through the __CanUserGroupColumns__ property of __RadGridView__. If the property is set to __False__ at runtime and there is a grouping applied prior it, the user will not be able to neither ungroup the control, nor to reorder the __GroupPanelCells__ in the __GroupPanel__.
+
 There are two ways to disable the built-in grouping of __RadGridView__. The first one is at __RadGridView__ level via the __ShowGroupPanel__ property. By setting it to __False__ the grouping area gets hidden and the column headers have nowhere to be dropped. The default value is __True__.
 
 #### __[XAML] Example 2: Disable Grouping__

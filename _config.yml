@@ -1016,7 +1016,7 @@ navigation:
         position: 5
     "cloud-integration/azure":
         title: "Azure"
-        position: 3
+        position: 2
     "cloud-integration/azure/cognitive-services":
         title: "Cognitive services"
         position: 5

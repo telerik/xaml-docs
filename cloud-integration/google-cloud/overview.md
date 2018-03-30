@@ -20,11 +20,11 @@ Here are the currently available topics:
 
 * [Getting Started]({%slug cloud-integration-google-getting-started%})
 
-* Connect to data in the cloud
-
 * [Blob Storage]({%slug radcloudupload-customazureprovider%})
 
-* [Cognitive services]()({%slug cloud-integration-cognitive-services%})
+* Cognitive services
+
+    * [Translation]({%slug cloud-integration-cognitive-services-google-translation%})
 
 ## See Also
 

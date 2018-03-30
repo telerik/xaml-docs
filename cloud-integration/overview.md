@@ -12,46 +12,50 @@ position: 1
 
 This section shows how one can use various cloud services like **Azure**, **Google Cloud**, **Amazon Web Services** etc. with the Telerik UI for WPF suite. The following list contains the topics discussed here:
 
+* AWS (Amazon Web Services)
+
+    * [Overview]({%slug cloud-services/aws/overview%})
+
+    * [Getting Started]({%slug cloud-services/aws/getting-started%})
+
+    * [Storage (S3)]({%slug cloud-services/aws/storage%})
+
+    * Connect to data in the cloud
+
+        * [DynamoDB]({%slug cloud-services/aws/dynamodb%})
+
+        * [Relational Database Service]({%slug cloud-services/aws/rds%})
+
 * Azure
 
     * [Overview]({%slug cloud-integration-azure-overview%})
 
-    * Connect to data in the cloud
-
-        * [CosmosDb]({%slug cloud-integration-cosmosdb%})
-
-        * SQL Server
+    * [Getting Started]({%slug cloud-integration-azure-getting-started%})
 
     * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 
     * Cognitive services
 
+        * [Computer Vision]({%slug cloud-integration-cognitive-services-image-analysis%})
+
+        * [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
+
+        * [Speech to Text]({%slug cloud-integration-cognitive-services-speech-to-text%})
+
+    * Connect to data in the cloud
+
+        * [CosmosDb]({%slug cloud-integration-cosmosdb%})
+
+        * [SQL Server]({%slug cloud-integration-azure-sql-database%})
+
 * Google Cloud
 
-    * Overview
+    * [Overview]({%slug cloud-integration-google-overview%})
 
-    * Connect to data in the cloud
+    * [Getting Started]({%slug cloud-integration-google-getting-started%})
 
-        * Cloud SQL
-
-        * Cloud DataStore
-
-    * Storage
+    * [Cloud Storage]({%slug cloud-integration-google-cloud-storage%})
 
     * Cognitive services
 
-* AWS (Amazon Web Services)
-
-    * Overview
-
-    * Getting Started
-
-    * Connect to data in the cloud
-
-        * DynamoDB
-
-        * RDS
-
-    * Storage (S3)
-
-    * Cognitive services
+        * [Translation]({%slug cloud-integration-cognitive-services-google-translation%})

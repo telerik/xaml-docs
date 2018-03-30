@@ -20,14 +20,6 @@ Here are the currently available topics:
 
 * [Getting Started]({%slug cloud-integration-azure-getting-started%})
 
-* Connect to data in the cloud
-
-    * [Cosmos DB]({%slug crud-operations-gridview-cosmosdb%})
-
-    * [SQL Database]({%slug cloud-integration-azure-sql-database%})
-
-    * Data Warehouse
-
 * [Blob Storage]({%slug radcloudupload-customazureprovider%})
 
 * Cognitive services
@@ -37,3 +29,9 @@ Here are the currently available topics:
     * [Image Analysis]({%slug cloud-integration-cognitive-services-image-analysis%})
 
     * [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})
+
+* Connect to data in the cloud
+
+    * [Cosmos DB]({%slug crud-operations-gridview-cosmosdb%})
+
+    * [SQL Database]({%slug cloud-integration-azure-sql-database%})

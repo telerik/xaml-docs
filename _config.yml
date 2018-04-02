@@ -1012,16 +1012,16 @@ navigation:
         title: "Amazon Web Services"
         position: 2
     "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
-        title: "Connect to data in the cloud"
+        title: "Connect to Data in the Cloud"
         position: 5
     "cloud-integration/azure":
         title: "Azure"
         position: 2
     "cloud-integration/azure/cognitive-services":
-        title: "Cognitive services"
+        title: "Cognitive Services"
         position: 5
     "cloud-integration/azure/connect-to-data-in-the-cloud":
-        title: "Connect to data in the cloud"
+        title: "Connect to Data in the Cloud"
         position: 6
     "cloud-integration/google-cloud":
         title: "Google Cloud"

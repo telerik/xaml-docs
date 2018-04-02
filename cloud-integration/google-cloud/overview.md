@@ -25,9 +25,3 @@ Here are the currently available topics:
 * Cognitive services
 
     * [Translation]({%slug cloud-integration-cognitive-services-google-translation%})
-
-## See Also
-
-- [Google Cloud Functions]({%slug common-google-cloud-functions%})
-- [Google Cloud Translation API]({%slug common-google-cloud-translation%})
-- [Google Cloud MySQL DataBase]({%slug common-google-cloud-mysql%})

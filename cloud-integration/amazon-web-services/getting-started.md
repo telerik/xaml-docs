@@ -12,9 +12,9 @@ position: 1
 
 This article will help you to setup your environment and start using AWS. Here are the main steps that you need to take:
 
-1. [Create an AWS account] (#create-an-aws-account)
-2. [Install the AWS SDK for .NET] (#install-the-aws-sdk)
-3. [Create a user](#crate-a-user)
+1. [Create an AWS account](#create-an-aws-account)
+2. [Install the AWS SDK for .NET](#install-the-aws-sdk)
+3. [Create a user](#creating-a-user)
 4. [Enter the credentials in Visual Studio](#enter-credentials-in-visual-studio)
 
 

@@ -2,7 +2,7 @@
 title: Dynamo DB 
 page_title: Dynamo DB 
 description: Dynamo DB
-slug: cloud-integration-aws-dynamodb
+slug: cloud-services/aws/dynamodb
 tags: cloud,aws,dynamodb
 published: True
 position: 0
@@ -27,7 +27,7 @@ Now define the following XAML layout which consists of a RadGridView control to 
 
 #### __[XAML] Example 1: XAML layout__
 
-{{region cloud-integration-aws-dynamodb-1}}
+{{region cloud-services/aws/dynamodb-1}}
 
     <Grid>
 		<Grid.RowDefinitions>
@@ -59,7 +59,7 @@ In addition you need to [configure your AWS credentials](https://docs.aws.amazon
 
 #### __[XAML] Example 2: Add AWS Credentials__
 
-{{region cloud-integration-aws-dynamodb-2}}
+{{region cloud-services/aws/dynamodb-2}}
 
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
@@ -78,7 +78,7 @@ As our database contains a list of customers, define a Customer class that will 
 
 #### __[XAML] Example 3: The Customer class__
 
-{{region cloud-integration-aws-dynamodb-3}}
+{{region cloud-services/aws/dynamodb-3}}
 
     public class Customer
     {
@@ -98,7 +98,7 @@ First of all, create the **Customers** collection which will hold the entries fr
 
 #### __[XAML] Example 4: Create the Customers table__
 
-{{region cloud-integration-aws-dynamodb-4}}
+{{region cloud-services/aws/dynamodb-4}}
 
     public class MainWindowViewModel : ViewModelBase
     {
@@ -191,7 +191,7 @@ Now when the table is ready you can add some data by adding the following method
 
 #### __[XAML] Example 5: Add items to the table__
 
-{{region cloud-integration-aws-dynamodb-5}}
+{{region cloud-services/aws/dynamodb-5}}
 
     private void AddCustomers()
     {
@@ -220,7 +220,7 @@ You can then invoke the **AddCustomers** method in the constructor of the viewmo
 
 #### __[XAML] Example 6: Invoke the AddCustomers method in the viewmodel's constructor__
 
-{{region cloud-integration-aws-dynamodb-6}}
+{{region cloud-services/aws/dynamodb-6}}
 
     public MainWindowViewModel()
     {
@@ -242,7 +242,7 @@ Now set the **DataContext** of the Grid to the **MainWindowViewModel** so that t
 
 #### __[XAML] Example 7: Initialize the MainWindowViewModel__
 
-{{region cloud-integration-aws-dynamodb-7}}
+{{region cloud-services/aws/dynamodb-7}}
 
     <Grid.DataContext>
         <local:MainWindowViewModel />
@@ -259,7 +259,7 @@ Now you are ready to populate the RadGridView control with the data by iterating
 
 #### __[XAML] Example 8: Load data from the database__
 
-{{region cloud-integration-aws-dynamodb-8}}
+{{region cloud-services/aws/dynamodb-8}}
 
     // MainWindowViewModel.cs
     private void LoadData(object obj)
@@ -310,7 +310,7 @@ If you now call the **LoadData** method in the constructor of the viewmodel, the
 
 #### __[XAML] Example 9: Load data from the database__
 
-{{region cloud-integration-aws-dynamodb-9}}
+{{region cloud-services/aws/dynamodb-9}}
 
     this.client = new AmazonDynamoDBClient();
     this.Customers = new ObservableCollection<Customer>();
@@ -329,7 +329,7 @@ All that's left is to handle the click of the two RadButtons. For the purpose, a
 
 #### __[XAML] Example 10: Define the save and load commands__
 
-{{region cloud-integration-aws-dynamodb-10}}
+{{region cloud-services/aws/dynamodb-10}}
 
     public ICommand LoadCustomersCommand { get; set; }
     public ICommand SaveChangesCommand { get; set; }
@@ -351,7 +351,7 @@ All that's left is to bind the command of the "Save Data" button. The **SaveChan
 
 #### __[XAML] Example 11: Save changes to the database__
 
-{{region cloud-integration-aws-dynamodb-11}}
+{{region cloud-services/aws/dynamodb-11}}
 
     private void SaveChanges(object obj)
     {

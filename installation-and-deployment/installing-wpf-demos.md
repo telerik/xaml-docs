@@ -76,7 +76,7 @@ __Figure 1: Exception when trying to install WPF Demos__
 ![](images/wpf_demos_0.png)
 
 Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: 
-<drive>:\Users\<your_user>\AppData\Local\Apps\2.0
+C:\Users\\<your_user>\AppData\Local\Apps\2.0
 
 * SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
 

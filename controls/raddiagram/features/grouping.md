@@ -82,7 +82,7 @@ Let's first create some random shapes:
 				 .Content = i 
 				}
 			shape.Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape)
-			shape.Position = New Point(random.[Next](0, 900), random.[Next](0, 200))
+			shape.Position = New Point(random.Next(0, 900), random.Next(0, 200))
 			Me.diagram.Items.Add(shape)
 		Next
 	End Sub

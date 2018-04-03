@@ -145,7 +145,7 @@ One of the Select() overloads gets a CellIndex parameter that points to the cell
 {{region radspreadsheet-ui-working-with-selection_1}}
 	        Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 	
-	        selection.[Select](New CellIndex(0, 0), False)
+	        selection.Select(New CellIndex(0, 0), False)
 	{{endregion}}
 
 ![Rad Spreadsheet UI Selection 03](images/RadSpreadsheet_UI_Selection_03.png)
@@ -168,7 +168,7 @@ The Selection class also offers a Select() method that takes a CellRange as an a
 {{region radspreadsheet-ui-working-with-selection_2}}
 	        Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 	
-	        selection.[Select](New CellRange(0, 0, 2, 2))
+	        selection.Select(New CellRange(0, 0, 2, 2))
 	{{endregion}}
 
 
@@ -194,7 +194,7 @@ Here is a sample code on how you can achieve the result from the above image thr
 {{region radspreadsheet-ui-working-with-selection_3}}
 	        Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 	
-	        selection.&#91;Select&#93;(6, 1, 2, 4)
+	        selection.Select(6, 1, 2, 4)
 	{{endregion}}
 
 
@@ -267,7 +267,7 @@ The following code snippet demonstrates how to use the SelectAll() method and th
 	        selection.SelectAll()
 	
 	        Dim usedRange As CellRange = Me.radSpreadsheet.ActiveWorksheet.UsedCellRange
-	        selection.[Select](usedRange)
+	        selection.Select(usedRange)
 	{{endregion}}
 
 
@@ -324,9 +324,9 @@ The following example shows how to make a complex selection from three parts, wh
 	
 	        selection.BeginUpdate()
 	
-	        selection.[Select](New CellRange(4, 3, 8, 5))
-	        selection.[Select](New CellRange(5, 2, 3, 3), clearSelection:=False)
-	        selection.[Select](New CellIndex(2, 1), clearSelection:=False)
+	        selection.Select(New CellRange(4, 3, 8, 5))
+	        selection.Select(New CellRange(5, 2, 3, 3), clearSelection:=False)
+	        selection.Select(New CellIndex(2, 1), clearSelection:=False)
 	
 	        selection.EndUpdate()
 	{{endregion}}
@@ -363,12 +363,12 @@ The following example makes a single CellRange selection and saves it in a Selec
 {{region radspreadsheet-ui-working-with-selection_6}}
 	        Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 	
-	        selection.[Select](New CellRange(4, 3, 8, 5))
+	        selection.Select(New CellRange(4, 3, 8, 5))
 	
 	        Dim selectionState As SelectionState = selection.CreateSelectionState()
 	
-	        selection.[Select](New CellRange(5, 2, 3, 3), clearSelection:=False)
-	        selection.[Select](New CellIndex(2, 1), clearSelection:=False)
+	        selection.Select(New CellRange(5, 2, 3, 3), clearSelection:=False)
+	        selection.Select(New CellIndex(2, 1), clearSelection:=False)
 	
 	        selection.RestoreSelectionState(selectionState)
 	{{endregion}}

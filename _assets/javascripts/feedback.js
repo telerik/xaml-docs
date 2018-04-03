@@ -309,9 +309,21 @@ $(document).ready(function () {
   
       // #region events
       _events: function () {
+        $window.ready(Feedback._window_ready);
+        $window.load(Feedback._window_load);
         $window.scroll(Feedback._window_scroll);
         $window.resize(Feedback._window_resize);
         $("#close-button").click(Feedback._button_click);
+      },
+      _window_ready: function () {
+          updateVariables();
+          Feedback.adjustFeedbackPoistion();
+          Feedback.adjustNavigationPosition();
+      },
+      _window_load: function () {
+        updateVariables();
+          Feedback.adjustFeedbackPoistion();
+          Feedback.adjustNavigationPosition();
       },
       _window_scroll: function () {
         updateVariables();

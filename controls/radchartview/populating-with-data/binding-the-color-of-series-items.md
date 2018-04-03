@@ -260,20 +260,20 @@ Let's create some data so we can test the result.
 		DataContext = GetData(12)
 	End Sub
 	
-	Public Shared Function GetData(dataSize As Integer) As List(Of ChartData)
-		Dim rnd As New Random()
-		Dim result = New List(Of ChartData)()
-	
-		For i As Integer = 0 To dataSize - 1
-			result.Add(New ChartData() With { _
-				.Category = i, _
-				.Value = rnd.[Next](1, 100), _
-				.Color = New SolidColorBrush(Color.FromArgb(255, CByte(rnd.[Next](0, 256)), CByte(rnd.[Next](0, 256)), CByte(rnd.[Next](0, 256)))) _
-			})
-		Next
-	
-		Return result
-	End Function
+	Public Shared Function GetData(ByVal dataSize As Integer) As List(Of ChartData)
+    Dim rnd As Random = New Random()
+    Dim result = New List(Of ChartData)()
+
+    For i As Integer = 0 To dataSize - 1
+        result.Add(New ChartData() With {
+            .Category = i,
+            .Value = rnd.Next(1, 100),
+            .Color = New SolidColorBrush(Color.FromArgb(255, CByte(rnd.Next(0, 256)), CByte(rnd.Next(0, 256)), CByte(rnd.Next(0, 256))))
+        })
+    Next
+
+    Return result
+End Function
 {{endregion}}
 		
 ## See Also

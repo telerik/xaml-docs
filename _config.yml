@@ -560,7 +560,10 @@ navigation:
     controls/radchartview/features/combinemode:
         title: Combine Mode
     controls/radchartview/series/funnelchart-series:
-        title: FunnelChart Series 
+        title: FunnelChart Series
+    controls/radchartview/troubleshooting:
+        title: Troubleshooting 
+        position: 13
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -1010,7 +1013,7 @@ navigation:
         position: 5
     "for-more-help":
         title: "For More Help"
-        position: 24
+        position: 25
     "installation-and-deployment/installing-telerik-ui-on-your-computer":
         title: "Installing Telerik UI on your Computer"
         position: 2
@@ -1040,6 +1043,9 @@ navigation:
         title: "How To"
     "mvvm-helpers":
         title: "MVVM Helpers"
+        position: 23
+    "troubleshooting":
+        title: "Troubleshooting"
         position: 23
 ## Common End
 

@@ -1,18 +1,21 @@
----
 title: Attached Behavior
 page_title: Attached Behavior/Properties
 description: AttachedBehavior
 slug: common-mvvm-attached-behavior
 tags: attached,behavior
 published: True
-position: 2
----
+position: 3
+
 
 # Attached Behavior/Properties
 
 Ever found your self in a situation where a control is missing the one feature that would make it perfect for your requirements? Or maybe you want to modify its default behavior in a specific scenario? This is where attached properties come handy.
 
 [Attached properties](https://msdn.microsoft.com/en-us/library/ms749011(v=vs.110).aspx) could be used to extend the functionality of a control with very little implementation on our side. A great benefit is that an additional behavior can be added without performing the logic in the code-behind of the window where the control is situated.
+
+* [Example](#example)
+
+* [TextBoxBehavior](#textboxbehavior)
 
 ## Example
 
@@ -85,6 +88,20 @@ Applying these steps will result in a confirmation dialog through which you can 
 Another implementation can be found on the following blog post - [Extending the Functionalities of RadControls with Attached Properties.](http://www.telerik.com/blogs/extending-the-functionality-of-radcontrols-with-attached-properties)
 
 There is a demo available in our **SDK repository located at GitHub** - [ListBox SelectedItems](https://github.com/telerik/xaml-sdk/tree/master/ListBox/SelectedItems). The example is also available in the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) labeled **"Create Attached Property for SelectedItems"**.
+
+## TextBoxBehavior
+
+The built-in behavior of the standard TextBox control can be manipulated through as set of members exposed by the __TextBoxBehavior__ class. It is defined in the __Telerik.Windows.Controls__ namespace. 
+
+* __SelectAllOnGotFocus__: Selects the whole Text when the TextBox receives focus.
+* __SelectAllOnTripleClick__: Selects the whole Text when the user performs a triple mouse click.
+* __UpdateTextOnEnter__: Updates the bound property when the user presses Enter key.
+* __UpdateTextOnTextChanged__: Updates the bound property on each user input.
+
+#### __[XAML] Example 4: Applying the TextBoxBehavior__
+{{region common-mvvm-attached-behavior-2}}
+	<TextBox Text="{Binding Name}" telerik:TextBoxBehavior.SelectAllOnGotFocus="True" />
+{{endregion}}
 
 ## See Also
 

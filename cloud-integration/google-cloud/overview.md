@@ -25,3 +25,7 @@ Here are the currently available topics:
 * Cognitive services
 
     * [Translation]({%slug cloud-integration-cognitive-services-google-translation%})
+
+* Connect to data in the cloud
+
+    * [DataStore]({%slug cloud-services-google-cloud-datastore%})

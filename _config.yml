@@ -1029,6 +1029,9 @@ navigation:
     "cloud-integration/google-cloud/cognitive-services":
         title: "Cognitive Services"
         position: 4
+    "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 5
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 5

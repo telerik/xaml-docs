@@ -64,24 +64,28 @@ The default values of the brushes in the theme are listed below:
 * **MouseOver**: Used for an interaction of buttons.
 * **PressedBrush**: Used for interaction of button-like controls.
 * **BasicBrush**: Used in the majority of the normal state borders.
+* **BasicSolidBrush**: Used for borders in the cases when several would overlap (in complex grid-structured controls) and is calculated automatically when the __BasicBrush__ is changed by overlaying it on top of the __PrimaryBackgroundBrush__.
 * **MainBrush**: Used for backgrounds of buttons, headers and footers.
-* **IconBrush**: Used for glyph and path icons, which should be 80% of black/white and for the light/dark variation respectfully
+* **IconBrush**: Used for glyph and path icons, which should be 80% of black/white and for the light/dark variation respectfully.
 
 ### **Opaque Brushes**
 
 * **PrimaryBackgroundBrush**: Used when backgrounds need to be solid white/black
 * **AlternativeBrush**: Used for backgrounds of popups, windows, listboxes etc and is slightly darker/lighter.
-* **Complementary**: Slightly darker/lighter than the alternative in case of collisions
+* **ComplementaryBrush**: Slightly darker/lighter than the alternative in case of collisions.
 * **AccentBrush**: Used for coloring the primary accent elements.
 * **AccentMouseOverBrush**: Variation of the __AccentBrush__ that is used for the hovered states of primary accent elements.
 * **AccentPressedBrush**: Variation of the __AccentBrush__ that is used for the pressed states of primary accent elements.
 * **AccentFocusedBrush**: Variation of the __AccentBrush__ that is used for the focused states of primary accent elements.
-* **MarkerBrush**: Used for all foregrounds which are black/white.
-* **MarkerInvertedBrush**: Used for interactions states which is white/white.
-* **MarkerMouseOverBrush**: 
-* **DisabledOpacity**: Used for texts when they are disabled. Backgrounds are usually AlternativeBrush when disabled.
+* **MarkerBrush**: Used for the majority of foregrounds which are black/white.
+* **MarkerInvertedBrush**: Used for interactions states - white in both variations.
+* **MarkerMouseOverBrush**: Used for mouse over and focused states of inputs which is black/black.
+* **ValidationBrush**: A bright red brush that is used for the invalid elements, and validation tooltips.
+* **DisabledOpacity**: Used for texts when they are disabled. Backgrounds are usually __AlternativeBrush__ when disabled.
 * **InputOpacity**: Used for texts in input controls __(TextBox, RadMaskedInput etc.)__ when they are in normal state.
 * **ReadOnlyOpacity**: Used for texts in inputs when they are in a read-only state.
+* **FocusThickness**: The default value is 2, 2, 2, 2. It is used for the thickness of the focus border as well as the thickness of the read only borders of inputs where applicable.
+* **FontFamily**: The global font family used for the theme. By default it is __Segoe UI__.
 
 ## Theme Variation Changing
 

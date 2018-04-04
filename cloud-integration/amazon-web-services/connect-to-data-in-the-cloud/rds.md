@@ -276,7 +276,7 @@ All that's left is to define the actual user interface clients of this applicati
 			<local:MainWindowViewModel />
 		</Grid.DataContext>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="\*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />

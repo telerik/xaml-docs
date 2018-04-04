@@ -31,7 +31,7 @@ Now define the following XAML layout which consists of a RadGridView control to 
 
     <Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="*" />
+			<RowDefinition Height="\*" />
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
 		</Grid.RowDefinitions>

@@ -68,7 +68,7 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 	</Style>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __FieldFilterControlStyle__.
 
 ## Modifying Other Editors
 

@@ -151,7 +151,7 @@ Initially, the list doesn’t have any associated list levels. The possible list
 	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
 	{
 	    ListLevelStyle listLevel = new ListLevelStyle();
-	    list.Levels.Add(levelIndex);
+	    list.Levels.Add(listLevel);
 	}
 {{endregion}}
 

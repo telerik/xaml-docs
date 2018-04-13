@@ -13,7 +13,7 @@ published: True
 
 __RadRichTextBox__ exposes a full set of commands that provide an alternative to its API methods, exposed through its __Commands__ property. For each of the [Formatting API]({%slug radrichtextbox-features-formatting-api%}) methods there is a respective command. 
 
-This article describes the following topic related to commands:
+This article describes the following topics related to commands:
 
 * [Binding Commands to UI Elements](#binding-commands-to-ui-elements)
 * [Modifying Default Application Commands Bindings](#modifying-default-application-commands-bindings)
@@ -55,6 +55,7 @@ Now when the button is clicked, it will toggle the boldness of the current selec
 #### [C#] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand
 
 {{region radrichtextbox-features-commands_1}}
+
 	public CommandsSample()
 	{
 	    InitializeComponent();
@@ -90,7 +91,7 @@ Now the button will respond to the current state of the selection.
 You can also use the functionality provided by the __RadRichTextBoxRibbonUI__ class in order to get the event handling out of the box.
         
 
->tipThe __RadRichTextBoxRibbonUI__ provides you with a fully predefined UI for RadRichtextBox. To learn how to use it read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+>tipThe __RadRichTextBoxRibbonUI__ provides you with a fully predefined UI for RadRichTextBox. To learn how to use it read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
 If you are building your UI manually, for example using a **RadRibbonView** control, you have to only bind the command to the __RadRichTextBoxRibbonUI__.__RichTextCommand__ attached property of the desired __RadRibbonView__ control. Here is an example with a __RadRibbonToggleButton__.
@@ -142,12 +143,14 @@ You can remove some of the bindings by using __RadRichTextBox.RegisteredApplicat
 #### [C#] Example 4: Remove ApplicationCommands bindings
 
 {{region radrichtextbox-features-commands_4}}
+
     this.radRichTextBox.RegisteredApplicationCommands.Remove(ApplicationCommands.Save);
 {{endregion}}
 
 #### [VB.NET] Example 4: Remove ApplicationCommands bindings
 
 {{region radrichtextbox-features-commands_18}}
+
      Me.radRichTextBox.RegisteredApplicationCommands.Remove(ApplicationCommands.Save)
 {{endregion}}
 
@@ -156,12 +159,14 @@ and re-add them (as long as they are among the default mappings list) at later t
 #### [C#] Example 5: Add ApplicationCommands bindings
 
 {{region radrichtextbox-features-commands_5}}
+
     this.radRichTextBox.RegisteredApplicationCommands.Add(ApplicationCommands.Save);
 {{endregion}}
 
 #### [VB.NET] Example 5: Add ApplicationCommands bindings
 
 {{region radrichtextbox-features-commands_19}}
+
      Me.radRichTextBox.RegisteredApplicationCommands.Add(ApplicationCommands.Save)
 {{endregion}}
 
@@ -170,6 +175,7 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
 #### [C#] Example 6: Suppress default action for application command
 
 {{region radrichtextbox-features-commands_6}}
+
     this.radRichTextBox.PreviewEditorKeyDown += (sender, e) =>
         {
             if (Keyboard.IsKeyDown(Key.LeftCtrl) && e.Key == Key.S)
@@ -182,6 +188,7 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
 #### [VB.NET] Example 6: Suppress default action for application command
 
 {{region radrichtextbox-features-commands_7}}
+
 	Me.radRichTextBox.PreviewEditorKeyDown += Function(sender, e) Do
 		If Keyboard.IsKeyDown(Key.LeftCtrl) AndAlso e.Key = Key.S Then
 			e.SuppressDefaultAction = True
@@ -243,7 +250,6 @@ An example usage of this event is when you need to modify the content that is pa
 	End Sub
 {{endregion}}
 
-**Example 9** shows how you can stop the execution of a command.
 
 #### [C#] Example 9: Canceling CommandExecuting
 
@@ -285,6 +291,7 @@ The **CommandExecuted** event fires after the execution of a command. You can us
 #### [C#] Example 10: Using CommandExecuted
 
 {{region radrichtextbox-features-commands_14}}
+
 	private void RadRichTextBox_CommandExecuted(object sender, CommandExecutedEventArgs e)
 	{
 	    if (e.Command is InsertPictureCommand)

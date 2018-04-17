@@ -220,6 +220,9 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
 	AddHandler Me.radRichTextBox.CommandError, AddressOf RadRichTextBox_CommandError
 {{endregion}}
 
+
+>You can find a runnable [example demonstrating how to use the CommandExecuting and CommandExecuted events](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands) to customize the behavior of a command in our [SDK repository](https://github.com/telerik/xaml-sdk) on GitHub. 
+
 ### CommandExecuting
 
 The **CommandExecuting** event fires just before the execution of a command. You can use it to stop the command or modify its behavior/parameter. The parameters the event enables you to use are of type **CommandExecutingEventArgs** and can give you information about the command the event is fired for and its parameter. 
@@ -364,3 +367,4 @@ This event fires when a command fails to execute its operation. It is useful to 
 * [RichTextBoxCommands Class](https://www.telerik.com/help/silverlight/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}
 {% if site.site_name == 'WPF' %}
 * [RichTextBoxCommands Class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.htm){% endif %}
+* [Customize Commands SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands)

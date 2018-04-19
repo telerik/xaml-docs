@@ -81,6 +81,8 @@ Two new commands have been exposed for the text search functionality.
 
 - __Search__: Executed in order to show the search panel.
 
+- __SearchByText__: Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
+
 - __CloseSearchPanel__: Executed in order to hide the search panel.
 
 ## Events

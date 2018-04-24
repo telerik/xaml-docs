@@ -295,3 +295,8 @@ Table styles can only be based on other table styles. The inheritance is as foll
 * Table cell properties are inherited from the base table style.
 
 * Table properties are inherited from the base table style.
+
+
+## See Also
+
+* [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocumentdefaultstyles.htm)

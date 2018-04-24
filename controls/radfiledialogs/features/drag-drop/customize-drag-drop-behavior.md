@@ -10,14 +10,14 @@ position: 1
 
 # Customizing Drag Drop Behavior
 
-The drag and drop functionality of the file browser is implemented via a custom [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}). The default behavior is a class of type __FileBrowserDragDropBehavior__ and can be accessed or replaced through the __DragDropBehavior__ property of the dialog control.
+The drag and drop functionality of the file browser is implemented via a [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}). The default behavior is a class of type __FileBrowserDragDropBehavior__ and can be accessed or replaced through the __DragDropBehavior__ property of the dialog control.
 
 To customize the behavior you can create a new class that derives from FileBrowserDragDropBehavior and override its virtual methods. 
 
-The following example will show you how to create a behavior that allows you to drag files only, but no folders. To do so you will need to override the CanDragStart method of the behavior and based on the information recieved from the DragDropState class return true or false.
+The following example will show you how to create a behavior that allows you to drag files only, but no folders. To do so you will need to override the CanDragStart method of the behavior and based on the information recieved from the __DragDropState__ class return true or false.
 
 #### __[C#] Example 1: Custom drag drop behavior__ 
-{{regiond radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-0}}
+{{region radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-0}}
 	public class CustomFileBrowserDragDropBehavior : FileBrowserDragDropBehavior
 	{
 		public override bool CanStartDrag(DragDropState state)
@@ -35,15 +35,15 @@ The following example will show you how to create a behavior that allows you to 
 			}
 		}
 	}
-{{endregiond}}
+{{endregion}}
 
-#### _[C#] Example 2: Setting the custom behavior__
-{{regiond radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-1}}
+#### __[C#] Example 2: Setting the custom behavior__
+{{region radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-1}}
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theOwnerWindow;
 	openFileDialog.DragDropBehavior = new CustomFileBrowserDragDropBehavior();	
 	openFileDialog.ShowDialog();
-{{endregiond}}
+{{endregion}}
 
 > This example was designed for the scenario where you can drag/drop only a single item. For multiple selection you will need to extend the example.
 

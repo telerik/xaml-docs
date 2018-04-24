@@ -10,7 +10,7 @@ position: 2
 
 # Customizing the Drag Visual
 
-The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or extract its template and modify it.
+The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or [extract its template]({%slug styling-apperance-editing-control-templates%}) and modify it.
 
 #### __Figure 1: Default drag visual__
 ![](images/filedialogs-drag-drop-customize-drag-visual-0.png)
@@ -22,18 +22,18 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 > The FileBrowserDragVisual element can be found in the following namespace: `xmlns:fileDialogs="clr-namespace:Telerik.Windows.Controls.FileDialogs.DragDrop;assembly=Telerik.Windows.Controls.FileDialogs"`
 
 #### __[XAML] Example 1: Setting the drag visual properties__ 
-{{regiond radfiledialogs-features-dragdrop-customize-drag-visual-0}}
+{{region radfiledialogs-features-dragdrop-customize-drag-visual-0}}
 	<Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="DragVisualOffset" Value="50, 0" />
         </Style>
     </Application.Resources>
-{{endregiond}}
+{{endregion}}
 
 > It is important to define the style in the application's Resources. Otherwise, it won't be applied.
 
 <!-- -->
-> If you use NoXaml dlls you will need to set the following property to the FileBrowserDragVisual Style - `BasedOn="{StaticResource FileBrowserDragVisualStyle}"`
+> If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls you will need to set the following property to the FileBrowserDragVisual Style - `BasedOn="{StaticResource FileBrowserDragVisualStyle}"`
 
 ## Setting the Drag Visual Offset
 
@@ -49,7 +49,7 @@ You can use the IconTemplate property of the FileBrowserDragVisual control to de
 The following example shows how to define a custom template containing an image and some additional text showing the name of the drop target folder.
 
 #### __[XAML] Example 2: Setting the icon template__ 
-{{regiond radfiledialogs-features-dragdrop-customize-drag-visual-1}}
+{{region radfiledialogs-features-dragdrop-customize-drag-visual-1}}
     <Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="IconTemplate">
@@ -67,7 +67,7 @@ The following example shows how to define a custom template containing an image 
             </Setter>
         </Style>
     </Application.Resources>
-{{endregiond}}
+{{endregion}}
 
 #### __Figure 3: Custom icon template__
 ![](images/filedialogs-drag-drop-customize-drag-visual-2.png)
@@ -78,8 +78,8 @@ You can use the ContentTemplate property of the FileBrowserDragVisual control to
 
 The following example shows how to define a custom template containing a list of the dragged files.
 
-#### __[XAML] Example 2: Setting the content template__ 
-{{regiond radfiledialogs-features-dragdrop-customize-drag-visual-2}}
+#### __[XAML] Example 3: Setting the content template__ 
+{{region radfiledialogs-features-dragdrop-customize-drag-visual-2}}
      <Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="ContentTemplate">
@@ -105,7 +105,7 @@ The following example shows how to define a custom template containing a list of
             </Setter>
         </Style>
     </Application.Resources>
-{{endregiond}}
+{{endregion}}
 
 #### __Figure 4: Custom content template__
 ![](images/filedialogs-drag-drop-customize-drag-visual-3.png)

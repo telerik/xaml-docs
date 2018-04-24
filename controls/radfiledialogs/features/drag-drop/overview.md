@@ -12,8 +12,8 @@ position: 0
 
 The drag and drop feature of the file dialogs allows you to grab items (file and folders) and move them to a different location. The feature supports copy and move operations and it is enabled by default. 
 
-#### __Figure 1: Default drag visual__
-![](images/filedialogs-drag-drop-overview-0.png) ![](images/filedialogs-drag-drop-overview-0.png)
+#### __Figure 1: Drag drop files__
+![](images/filedialogs-drag-drop-overview-0.png)
 
 The dialog gives you the ability to drag and drop in the main pane and the navigation tree pane, and also between them.
 
@@ -28,12 +28,12 @@ The default drag operation is move. So, if you drag a file/folder and then drop 
 To enable or disable the feature you can use the __IsDragDropEnabled__ property of the file dialog.
 
 #### __[C#] Example 1: Disabling drag and drop__ 
-{{regiond radfiledialogs-features-dragdrop-overview-0}}
+{{region radfiledialogs-features-dragdrop-overview-0}}
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
 	saveFileDialog.Owner = theOwnerWindow;	
 	saveFileDialog.IsDragDropEnabled = false;	
 	saveFileDialog.ShowDialog();	
-{{endregiond}}
+{{endregion}}
 
 ## Customizing Drag and Drop
 

@@ -798,9 +798,9 @@ navigation:
     controls/radfiledialogs/features:
         title: Features
         position: 6
-    controls/radfiledialogs/drag-drop:
+    controls/radfiledialogs/features/drag-drop:
         title: Drag and Drop
-        position: 7
+        position: 3
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:

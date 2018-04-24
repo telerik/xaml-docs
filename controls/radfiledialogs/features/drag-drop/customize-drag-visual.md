@@ -13,7 +13,7 @@ position: 2
 The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or extract its template and modify it.
 
 #### __Figure 1: Default drag visual__
-![](images/filedialogs-drag-drop-overview-0.png)
+![](images/filedialogs-drag-drop-customize-drag-visual-0.png)
 
 ## Setting the Drag Visual Appearance
 
@@ -32,12 +32,15 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 
 > It is important to define the style in the application's Resources. Otherwise, it won't be applied.
 
+<!-- -->
+> If you use NoXaml dlls you will need to set the following property to the FileBrowserDragVisual Style - `BasedOn="{StaticResource FileBrowserDragVisualStyle}"`
+
 ## Setting the Drag Visual Offset
 
 You can use the __DragVisualOffset__ property of the FileBrowserDragVisual control to offset it from the mouse cursor position. The previous example (Example 1) shows how to set the property.
 
 #### __Figure 2: Setting the drag visual offset__
-![](images/filedialogs-drag-drop-customize-drag-visual-0.png)
+![](images/filedialogs-drag-drop-customize-drag-visual-1.png)
 
 ## Setting Icon Template
 
@@ -67,7 +70,45 @@ The following example shows how to define a custom template containing an image 
 {{endregiond}}
 
 #### __Figure 3: Custom icon template__
-![](images/filedialogs-drag-drop-customize-drag-visual-1.png)
+![](images/filedialogs-drag-drop-customize-drag-visual-2.png)
+
+## Setting Content Template
+
+You can use the ContentTemplate property of the FileBrowserDragVisual control to define the content that will be shown in the tooltip of the drag visual. The data context of the template will be an object of type __DropIndicationDetails__ which you can use to display the required information.
+
+The following example shows how to define a custom template containing a list of the dragged files.
+
+#### __[XAML] Example 2: Setting the content template__ 
+{{regiond radfiledialogs-features-dragdrop-customize-drag-visual-2}}
+     <Application.Resources>
+        <Style TargetType="fileDialogs:FileBrowserDragVisual">
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Operation}" FontWeight="Bold"/>
+                                <TextBlock Text=" to: " FontWeight="Bold"/>
+                                <TextBlock Text="{Binding DropFolderName}" />
+                            </StackPanel>
+                            <TextBlock Text="Dragged files:" FontWeight="Bold"/>
+                            <ItemsControl ItemsSource="{Binding DraggedFiles}" Margin="3">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" MaxWidth="300" TextWrapping="Wrap" Margin="2" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+{{endregiond}}
+
+#### __Figure 4: Custom content template__
+![](images/filedialogs-drag-drop-customize-drag-visual-3.png)
 
 ## See Also  
 * [Getting Started]({%slug radfiledialogs-getting-started%})

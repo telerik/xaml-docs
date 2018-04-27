@@ -43,7 +43,7 @@ The class that contains the logic behind the styles feature is __StyleDefinition
 Each __StyleDefinition__ has the following properties:
         
 
-* __Name__: The name of the style. All styles in a document have a unique name, which is used as an identifier when applying the style.
+* __Name__: The name of the style. All styles in the document have unique names, which are used as an identifier when applying the style.
             
 
 * __DisplayName__: A name that will be shown in the UI.
@@ -179,7 +179,7 @@ Styles of type Character get applied to the currently selected part of the docum
 
 Styles of type Paragraph follow the same logic and are applied to all paragraphs in the selection or the current paragraph. 
 
-For example, the code from **Example 5** applies the "linkedParagraphStyle" to the current Paragraph and the parts of the text which are selected.
+The code from **Example 5** applies the "linkedParagraphStyle" to the current Paragraph and the parts of the text which are selected.
 
 #### __[C#] Example 5: Apply custom style__
 

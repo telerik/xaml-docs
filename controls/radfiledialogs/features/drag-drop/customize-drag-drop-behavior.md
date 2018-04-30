@@ -12,7 +12,7 @@ position: 1
 
 The drag and drop functionality of the file browser is implemented via a [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}). The default behavior is a class of type __FileBrowserDragDropBehavior__ and can be accessed or replaced through the __DragDropBehavior__ property of the dialog control.
 
-To customize the behavior you can create a new class that derives from FileBrowserDragDropBehavior and override its virtual methods. 
+To customize the behavior, you can create a new class that derives from FileBrowserDragDropBehavior and override its virtual methods. 
 
 The following example will show you how to create a behavior that allows you to drag files only, but no folders. To do so you will need to override the CanDragStart method of the behavior and based on the information recieved from the __DragDropState__ class return true or false.
 

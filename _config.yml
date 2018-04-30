@@ -798,6 +798,9 @@ navigation:
     controls/radfiledialogs/features:
         title: Features
         position: 6
+    controls/radfiledialogs/features/drag-drop:
+        title: Drag and Drop
+        position: 3
     controls/radfiledialogs/dialog-controls:
         title: Dialog Controls
         position: 4

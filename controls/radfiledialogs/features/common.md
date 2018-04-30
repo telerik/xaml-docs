@@ -12,6 +12,12 @@ position: 0
 
 This articles shows the minor features shared between all file dialogs - __RadOpenFileDialog, RadSaveFileDialog and RadOpenFolderDialog__.
 
+* [Setting Initial Directory](#setting-initial-directory)
+* [Setting the Initial Layout of the Tiles](#setting-the-initial-layout-of-the-tiles)
+* [New Folder Button](#new-folder-button)
+* [Edit Mode](#edit-mode)
+* [Disable the Automatic Expanding to Current Directory](#disable-the-automatic-expanding-to-current-directory)
+
 ## Setting Initial Directory
 
 All the dialog controls expose a __InitialDirectory__ property that determines the directory that will be opened when the dialog shows.
@@ -82,7 +88,20 @@ Trying to change the file extension prompts the message box shown in **Figure 4*
 
 ![Changing file extension message box](images/FileDialogs_ChangeFileExtensionMessageBox.png)
 
-## See Also
+## Disable the Automatic Expanding to Current Directory
 
+By default the main pane with the files/folders and the navigation tree are synced and when you navigate through the folders the selection in the tree navigation pane will also be updated. To disable this you can set the __ExpandToCurrentDirectory__ property of the dialog to False.
+
+#### __[C#] Example 3: Disabling the automatic expanding to current directory__ 
+{{regiond radfiledialogs-features-common-2}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.Owner = theOwnerWindow;
+	openFileDialog.ExpandToCurrentDirectory = false;
+	openFileDialog.ShowDialog();
+{{endregiond}}
+
+>tip When enabled the automatic expanding always synchronizes the files/folders list with the navigation tree. If you want to sync them only on load of the control, you can skip setting the property initially and then subscribe to the Loaded event of the dialog. In the event handler you can set the ExpandToCurrentDirectory property to False.
+
+## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})
 * [Filtering]({%slug radfiledialogs-features-filtering%})

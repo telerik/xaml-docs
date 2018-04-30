@@ -90,7 +90,7 @@ Trying to change the file extension prompts the message box shown in **Figure 4*
 
 ## Disable the Automatic Expanding to Current Directory
 
-By default the main pane with the files/folders and the navigation tree are synced and when you navigate through the folders the selection in the tree will also be updated. To disable this you can set the __ExpandToCurrentDirectory__ property of the dialog to False.
+By default the main pane with the files/folders and the navigation tree are synced and when you navigate through the folders the selection in the tree navigation pane will also be updated. To disable this you can set the __ExpandToCurrentDirectory__ property of the dialog to False.
 
 #### __[C#] Example 3: Disabling the automatic expanding to current directory__ 
 {{regiond radfiledialogs-features-common-2}}

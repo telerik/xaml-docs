@@ -15,13 +15,13 @@ The drag and drop feature of the file dialogs allows you to grab items (file and
 #### __Figure 1: Drag drop files__
 ![](images/filedialogs-drag-drop-overview-0.png)
 
-The dialog gives you the ability to drag and drop in the main pane and the navigation tree pane, and also between them.
+The dialog gives you the ability to drag and drop in the main pane and the tree navigation pane, and also between them.
 
 ## Copy Drag vs. Move Drag
 
 The default drag operation is move. So, if you drag a file/folder and then drop it, the item will be moved to the new location. To start a copy drag you will need to press and hold the __Ctrl__ modifier key. 
 
-> You can alter between copy and move also in the middle of the drag/drop operation by pressing Ctrl. In other words, you can start dragging without pressing the Ctrl, and just before drop you can press the key, thus changing the type of the operation.
+> You can also alter between copy and move in the middle of the drag/drop operation by pressing Ctrl. In other words, you can start dragging without pressing the Ctrl key, and just before drop you can press the key, thus changing the type of the operation.
 
 ## Enable and Disable Drag and Drop
 

@@ -33,7 +33,7 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 > It is important to define the style in the application's Resources. Otherwise, it won't be applied.
 
 <!-- -->
-> If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls you will need to set the following property to the FileBrowserDragVisual Style - `BasedOn="{StaticResource FileBrowserDragVisualStyle}"`
+> If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls you will need to set the following property on the FileBrowserDragVisual Style - `BasedOn="{StaticResource FileBrowserDragVisualStyle}"`
 
 ## Setting the Drag Visual Offset
 

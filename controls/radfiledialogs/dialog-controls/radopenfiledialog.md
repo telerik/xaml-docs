@@ -5,7 +5,7 @@ description: This article describes the RadOpenFileDialog control which can be u
 slug: radfiledialogs-radopenfiledialog
 tags: open,file,dialog,show
 published: True
-position: 3
+position: 1
 ---
 
 # RadOpenFileDialog

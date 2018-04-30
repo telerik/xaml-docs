@@ -801,6 +801,9 @@ navigation:
     controls/radfiledialogs/features/drag-drop:
         title: Drag and Drop
         position: 3
+    controls/radfiledialogs/dialog-controls:
+        title: Dialog Controls
+        position: 4
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:

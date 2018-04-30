@@ -61,8 +61,12 @@ After implementing your custom name converter you need to instantiate it and ass
 
 That's it. The column heading is changed.
         
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomRowAndColumnHeadings).
+{% if site.site_name == 'Silverlight' %}
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/SL/CustomRowAndColumnHeadings).
+{% endif %} 
+{% if site.site_name == 'WPF' %}
+>tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).
+{% endif %} 
 
 ## States of the Row and Column Headings
 

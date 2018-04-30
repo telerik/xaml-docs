@@ -14,7 +14,7 @@ The drag and drop functionality of the file browser is implemented via a [DragDr
 
 To customize the behavior, you can create a new class that derives from FileBrowserDragDropBehavior and override its virtual methods. 
 
-The following example will show you how to create a behavior that allows you to drag files only, but no folders. To do so you will need to override the CanDragStart method of the behavior and based on the information recieved from the __DragDropState__ class return true or false.
+The following example will show you how to create a behavior that allows you to drag files only, but not folders. To do so you will need to override the CanDragStart method of the behavior and based on the information received from the __DragDropState__ class return true or false.
 
 #### __[C#] Example 1: Custom drag drop behavior__ 
 {{region radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-0}}

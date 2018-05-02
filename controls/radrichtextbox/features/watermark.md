@@ -77,7 +77,7 @@ And this is how you create an image watermark and apply it:
 
 {% if site.site_name == 'Silverlight' %}{% endif %}
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadRichTextBox / Watermark__.
+>tipYou can download a runnable project of the previous example from our online SDK repository: [Watermark SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/Watermark).
           
 
 ## See Also

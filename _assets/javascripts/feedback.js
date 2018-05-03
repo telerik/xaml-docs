@@ -227,8 +227,19 @@ $(document).ready(function () {
         formModel.uuid = getCookieByName("uuid");
         formModel.path = currentPath;
         formModel.sheetId = $("#hidden-sheet-id").val();
-        $.post("https://api.everlive.com/v1/lzrla9wpuk636rdd/functions/saveFeedback", formModel.toJSON(), function () {
-          formIsProcessing = false;
+        $.ajax({
+          url: "https://baas.kinvey.com/rpc/kid_Hk57KwIFf/custom/saveFeedback",
+          method: "POST",
+          dataType: "json",
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(formModel),
+          crossDomain: true,
+          beforeSend: function (xhr) {
+              xhr.setRequestHeader("Authorization", "Basic " + btoa("feedback:feedback"));
+          },
+          success: function (data) {
+              formIsProcessing = false;
+          }
         });
       } else {
         formIsProcessing = false;

@@ -16,7 +16,6 @@ This tutorial will walk you through the required steps for using __RadVirtualGri
 * [Adding RadVirtualGrid to the Project](#adding-radvirtualgrid-to-the-project)
 * [Populating with Data](#populating-with-data-manually)
 * [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
-* [Resetting the Capacity to the Initial Row and Column Count](#resetting-the-capacity-to-the-initial-row-and-column-count)
 * [MeasureTextOnRender](#measuretextonrender)
 
 
@@ -89,14 +88,6 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 
 #### __Figure 1: RadVirtualGrid populated with data__
 ![RadVirtualGrid populated with data](images/RadVirtualGrid_GettingStarted_01.png)
-
-## Resetting the Capacity to the Initial Row and Column Count
-
-As inserting rows and columns does not affect the __InitialRowCount__ and __InitialColumnCount__ properties, __RadVirtualGrid__ supports resetting its capacity to the values that are set to them. This can be done through the following methods:
-
-* __Reset()__: Resets the capacity of the control to the values of the __InitialRowCount__ and __InitialColumnCount__ properties.
-
-* __Reset(int rowCount, int columnCount)__: Through this overload of the Reset method, the capacity of __RadVirtualGrid__ can be reset to values different from the ones initially set to the __InitialRowCount__ and __InitialColumnCount__ properties. Furthermore, the two properties will be updated accordingly.
 
 ## MeasureTextOnRender
 

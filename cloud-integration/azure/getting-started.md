@@ -17,7 +17,7 @@ This article will help you get started using Microsoft Azure. Here are the main 
 
 # Create a Microsoft Azure Account
 
-To create an account, go to the [Amazon Azure](https://azure.microsoft.com/en-us/free/) website and create a new account. The process is straightforward and easy. You will be prompted for a credit card number despite that there is a free option. 
+To create an account, go to the [Microsoft Azure](https://azure.microsoft.com/en-us/free/) website and create a new account. The process is straightforward and easy. You will be prompted for a credit card number despite that there is a free option. 
 
 # Choose the Desired Service
 

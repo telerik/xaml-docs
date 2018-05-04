@@ -90,7 +90,9 @@ controls/radtreeview/how-to/howto-bind-treeview.md,
 controls/radcoverflow,
 controls/raddomaindatasource,
 controls/radupload,
-controls/radgridview/troubleshooting/corrupted_extended-selection.md,]
+controls/radgridview/troubleshooting/corrupted_extended-selection.md,
+cloud-integration/google-cloud/mysql-database,
+cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -1008,6 +1010,33 @@ navigation:
     "styling-and-appearance":
         title: "Styling and Appearance"
         position: 8
+    "cloud-integration":
+        title: "Cloud Integration"
+        position: 9
+    "cloud-integration/amazon-web-services":
+        title: "Amazon Web Services"
+        position: 2
+    "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 5
+    "cloud-integration/azure":
+        title: "Azure"
+        position: 2
+    "cloud-integration/azure/cognitive-services":
+        title: "Cognitive Services"
+        position: 5
+    "cloud-integration/azure/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 6
+    "cloud-integration/google-cloud":
+        title: "Google Cloud"
+        position: 4
+    "cloud-integration/google-cloud/cognitive-services":
+        title: "Cognitive Services"
+        position: 4
+    "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 5
     "visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 5

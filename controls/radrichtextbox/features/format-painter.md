@@ -26,7 +26,7 @@ The following commands related to the copying of formatting are available in the
 
 * **CopyFormatting**: Copies the formatting of the current selection.
 * **PasteFormatting**: Pastes the currently copied formatting on the current selection.
-* **CancelFormatPainter**: Untoggles the UI button and stops pasting the styling with the selection. Still, pasting is possible through the Ctrl+Shift+V shortcut and through the PasteFormatting command.
+* **CancelFormatPainter**: Untoggles the UI button and stops pasting of the formatting by using the selection. Still, pasting is possible through the Ctrl+Shift+V shortcut and through the PasteFormatting command.
 * **ChangeFormatPainterState**: The Execute() method of this command accepts a parameter of type [ChangeFormatPainterStateCommandParameter](https://docs.telerik.com/devtools/wpf/api/html/n_telerik_windows_documents_richtextboxcommands_ChangeFormatPainterStateCommandParameter.htm). Depending on the parameter passed to this command, it can perform one of the following actions:
 	* **CopyForSinglePaste**: The format painter copies the current formatting and prepares to paste it once.
 	* **CopyForMultiplePaste**: The format painter copies the current formatting and prepares to paste it in multiple places.
@@ -39,7 +39,7 @@ The following commands related to the copying of formatting are available in the
 >There are also shortcuts implemented for easier usage:
 >- *Ctrl+Shift+C* copies the formatting.
 >- *Ctrl+Shift+V* pastes the formatting to the current selection.
->- *Esc* untoggles the UI button and stops pasting the styling with the selection.
+>- *Esc* untoggles the UI button and stops pasting of the formatting by using the selection.
 
 
 ## Using Format Painter Programmatically

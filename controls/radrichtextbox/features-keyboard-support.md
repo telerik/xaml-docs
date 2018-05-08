@@ -81,6 +81,18 @@ ClearFormatting</td><td>
 
 Ctrl+Space</td></tr><tr><td>
 
+CopyFormatting</td><td>
+
+Ctrl+Shift+C</td></tr><tr><td>
+
+PasteFormatting</td><td>
+
+Ctrl+Shift+V</td></tr><tr><td>
+
+CancelFormatPainter</td><td>
+
+Esc</td></tr><tr><td>
+
 ChangeTextAlignment with parameter RadTextAlignment.Justify</td><td>
 
 Ctrl+J</td></tr><tr><td>

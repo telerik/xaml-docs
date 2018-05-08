@@ -38,6 +38,9 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Section Columns__
 	You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns UI]({%slug radrichtextbox-ui-for-applying-rich-text-formatting-section-columns%}) and [Section Columns API]({%slug radrichtextbox-features-section-columns%}) articles.
 
+* __Format Painter__
+	The Format Painter feature enables you to copy the formatting of a particular content and paste it on other elements, so you can easily achieve the desired format. For more information about this functionality, check the [Format Painter]({%slug radrichtextbox-features-format-painter%}) topic.
+
 * __Context menu__
 	A standard context menu is provided out of the box, but it can be easily customized or replaced with a user-defined menu. For more information, see the [Context Menu]({%slug radrichtextbox-features-context-menu%}) article.
 

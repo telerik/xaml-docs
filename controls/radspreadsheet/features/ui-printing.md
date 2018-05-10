@@ -101,12 +101,6 @@ All the scaling options are available in the Print Preview as well as in the Pag
 #### Figure 2: Scaling options
 ![Scaling options in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_02.png)
 
-In case you need to calculate the custom scale factor in order for the worksheet to fit in a specific number of pages when printed, you can use the methods provided by the **PageScaleFactorCalculator** static class:
-
-- **CalculateScaleAccordingToFitToPages(Worksheet worksheet)**: Calculates the maximum scale factor that can be set to a worksheet in order for it to fit into the number of pages specified in the FitToPagesWide and FitToPagesTall properties of [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup). 
-
-- **CalculateScaleAccordingToFitToPages(Worksheet worksheet, IEnumerable&lt;CellRange&gt; includedRanges)**:  Calculates the maximum scale factor that can be set to a worksheet in order for the **specified ranges** to fit into the number of pages specified in the FitToPagesWide and FitToPagesTall properties of [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup). 
-
 
 ## Print Preview
 

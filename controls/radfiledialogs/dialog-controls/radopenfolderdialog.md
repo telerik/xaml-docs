@@ -5,7 +5,7 @@ description: RadOpenFolderDialog
 slug: radfiledialogs-radopenfolderdialog
 tags: open,folder,dialog
 published: True
-position: 4
+position: 2
 ---
 
 # RadOpenFolderDialog

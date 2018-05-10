@@ -90,7 +90,7 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * [**Freeze panes**]({%slug radspreadsheet-ui-freeze-panes%})
 
-* [**Printing**]({%slug radspreadsheet-ui-printing%})
+* [**Printing**]({%slug radspreadsheet-ui-printing%}): Many properties allowing you to customize the way the data will be printed. Some of them are automatic and custom scaling, headers and footers, page breaks, print area.
 
 * [**Headers and Footers**]({%slug radspreadsheet-ui-headers-and-footers%}): The functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
 

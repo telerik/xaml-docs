@@ -805,6 +805,12 @@ navigation:
     controls/radfiledialogs/features:
         title: Features
         position: 6
+    controls/radfiledialogs/features/drag-drop:
+        title: Drag and Drop
+        position: 4
+    controls/radfiledialogs/dialog-controls:
+        title: Dialog Controls
+        position: 4
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
@@ -947,6 +953,14 @@ navigation:
     controls/radvirtualgrid/commands:
         title: Commands
         position: 8
+    controls/radchat:
+        title: RadChat(Conversational UI)
+    controls/radchat/chat-items:
+        title: Chat Items
+    controls/radchat/chat-items/messages:
+        title: Messages
+    controls/radchat/chat-items/messages/card-messages:
+        title: Cards
 ## X1 Controls End
 
 ## Common Start

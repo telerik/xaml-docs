@@ -73,12 +73,14 @@ __Fill__ and __Stroke__ are the most commonly used properties which affect most 
 
 #### __[C#] Example 2: Getting the palette entry of a series__
 {{region radchartview-features-pallettes-paletteentry-1}}
-	PaletteEntry? paletteEntry = this.chart.Palette.GetEntry(this.series, 0);
+	int index = chart.Series.IndexOf(series);
+	PaletteEntry? paletteEntry = this.chart.Palette.GetEntry(series, index);
 {{endregion}}
 
 #### __[VB.NET] Example 2: Getting the palette entry of a series__
 {{region radchartview-features-pallettes-paletteentry-2}}
-	Dim paletteEntry As System.Nullable(Of PaletteEntry) = Me.chart.Palette.GetEntry(Me.series, 0)
+	Dim index As Integer = chart.Series.IndexOf(series)
+	Dim paletteEntry As System.Nullable(Of PaletteEntry) = Me.chart.Palette.GetEntry(series, index)
 {{endregion}}
 
 ## See Also

@@ -40,14 +40,15 @@ __RadScheduleView__ exposes its functionality through various commands that can 
 
 * [GoToPreviousAppointment / GoToNextAppointment Commands](#gotopreviousappointment--gotonextappointment-commands)
 
+* [SetToday Command](#settoday-command)
+
 ## CreateAppointment / CreateAppointmentWithDialog Commands
 
 When you want to create a new appointment and show the EditAppointmentDialog, then you need to use the __CreateAppointment__ or __CreateAppointmentWithDialog__ commands. If no parameter is passed, the __SelectedSlot__ of __RadScheduleView__ will be used for the new appointment start and end dates. If you want to explicitly specify which will be the start and end date you should pass a parameter of type __IDateSpan__ (for example Slot is an __IDateSpan__).
 
 The difference between both commands is when neither the parameter nor the __SelectedSlot__ is set. In this case only the __CreateAppointmentWithDialog__ command will show EditAppointmentDialog for the first visible slot, while __CreateAppointment__ command won’t be executed.
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_0}}
 	RadScheduleViewCommands.CreateAppointment.Execute(null, ScheduleView);
 	RadScheduleViewCommands.CreateAppointmentWithDialog.Execute(null, ScheduleView);
@@ -57,8 +58,7 @@ The difference between both commands is when neither the parameter nor the __Sel
 
 Use it when you want to create a new appointment via the inline editing. If no parameter is passed, the __SelectedSlot__ of __RadScheduleView__ will be used for the new appointment start and end dates. If you want to explicitly specify which will be the start and end date you should pass a parameter of type __IDateSpan__ (for example __Slot__ is an __IDateSpan__):
 
-#### __C#__
-
+#### __C#__   
 {{region radscheduleview-features-commands_1}}
 	RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
 {{endregion}}
@@ -69,8 +69,7 @@ Use it when you want to create a new appointment via the inline editing. If no p
 
 Use it when you want to show the edit dialog for an appointment. If no parameters are passed it uses the __SelectedAppointment__ of __RadScheduleView__. By default this command is bound to double click on appointment.
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_2}}
 	RadScheduleViewCommands.EditAppointment.Execute(null, ScheduleView);
 {{endregion}}
@@ -79,8 +78,7 @@ Use it when you want to show the edit dialog for an appointment. If no parameter
 
 When you want to remove an appointment from __AppointmentsSource__ collection, then you need to use the __DeleteAppointment__ command. If no parameter is passed the __SelectedAppointment__ will be used.
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_3}}
 	RadScheduleViewCommands.DeleteAppointment.Execute(null, ScheduleView);
 {{endregion}}
@@ -101,9 +99,7 @@ If you want to edit the master appointment, when the user has initiated editing 
 
 Executing this command will result in setting the RadScheduleView’s __ActiveViewDefinition__ property to __DayViewDefinition__.
 
-
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_4}}
 	RadScheduleViewCommands.SetDayViewMode.Execute(null, ScheduleView);
 {{endregion}}
@@ -112,8 +108,7 @@ Executing this command will result in setting the RadScheduleView’s __ActiveVi
 
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __WeekViewDefinition__.
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_5}}
 	RadScheduleViewCommands.SetWeekViewMode.Execute(null, ScheduleView);
 {{endregion}}
@@ -122,8 +117,7 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __MonthViewDefinition__.
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_6}}
 	RadScheduleViewCommands.SetMonthViewMode.Execute(null, ScheduleView);
 {{endregion}}
@@ -133,7 +127,6 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __TimelineViewDefinition__.
 
 #### __C#__
-
 {{region radscheduleview-features-commands_7}}
 	RadScheduleViewCommands.SetTimelineViewMode.Execute(null, ScheduleView);
 {{endregion}}
@@ -143,7 +136,6 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 Increases/decreases the first visible date with n months or days, where n is the value of the __LargeChangeInterval__ property of the ActiveViewDefinition. Executing this command is equivalent to changing the displayed days using the navigation buttons.
 
 #### __C#__
-
 {{region radscheduleview-features-commands_8}}
 	RadScheduleViewCommands.IncreaseVisibleDateLarge.Execute(null, ScheduleView);
 	RadScheduleViewCommands.DecreaseVisibleDateLarge.Execute(null, ScheduleView);
@@ -157,9 +149,17 @@ When you want to set the Appointment's Importance property, then you need to exe
 
 Use these commands when you want to navigate to the previous/next appointment outside the visible range:
 
-#### __C#__
-
+#### __C#__  
 {{region radscheduleview-features-commands_9}}
 	RadScheduleViewCommands.GoToPreviousAppointment.Execute(null, ScheduleView);
 	RadScheduleViewCommands.GoToNextAppointment.Execute(null, ScheduleView);
+{{endregion}}
+
+## SetToday Command
+
+You can use the __SetToday__ command to navigate to the current day in the active view definition.
+
+#### __C#__  
+{{region radscheduleview-features-commands_10}}
+	RadScheduleViewCommands.SetToday.Execute(null, ScheduleView);
 {{endregion}}

@@ -26,7 +26,11 @@ position: 16
 
 * [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
 
+* [Search Over Dynamic Data](#search-over-dynamic-data)
+
 ## Showing the Search Panel
+
+> Searching over XML data source is available as of __R2 2018__.
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
@@ -149,6 +153,10 @@ By default, the value of the __TextBlock__ appearing before the __Search TextBox
 ## Add Search Criteria Programmatically 
 
 __RadGridView's__ search mechanism supports defining a search criteria programmatically. This can be done through the __SearchByText__ Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
+
+## Search Over Dynamic Data
+
+As of __R2 2018 RadGridView__ provides full support for searching over dynamic data. This includes __IDynamicMetaObjectProvider__(DynamicObject and ExpandoObject), __ICustomTypeProvider__ and __ICustomTypeDescriptor__ implementations.
 
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})

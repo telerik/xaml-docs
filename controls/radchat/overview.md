@@ -14,25 +14,23 @@ The UI for WPF's Conversational UI provides capabilities for integrating it with
 
 #### __Figure 1: RadChat__
 
-__RadChat__ features list:
+__Conversational UI's__ features list:
 
-* __Messages__
+* __Messages__: A predefined set of built-in messages depending on the type of data that needs to be sent.
 
-* __Authors__
+* __Cards__: Displaying a message in a structured and intuitive for the user manner.
 
-* __Cards__
+* __Overlays__: Calendar, List, Carousel, etc. 
 
-* __Overlays__
+* __Suggestions__: Make the user's input easier by adding suggestions.
 
-* __Suggestions__
+* __Predefined variety of themes__
 
-* __Customizable layout with variety of themes__
+* __Customizable layout__
 
 ## See Also
 
 * [Getting Started]({%slug chat-getting-started%})
-
-* [Visual Structure]({%slug chat-visual-structure%})
 
 
 

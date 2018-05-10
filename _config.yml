@@ -946,6 +946,14 @@ navigation:
     controls/radvirtualgrid/commands:
         title: Commands
         position: 8
+    controls/radchat:
+        title: RadChat(Conversational UI)
+    controls/radchat/chat-items:
+        title: Chat Items
+    controls/radchat/chat-items/messages:
+        title: Messages
+    controls/radchat/chat-items/messages/card-messages:
+        title: Cards
 ## X1 Controls End
 
 ## Common Start

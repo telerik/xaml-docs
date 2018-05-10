@@ -121,8 +121,8 @@ This setup will have the following result.
 ## See Also
 
 * [Overview]({%slug chat-overview%})
+* [Messages Overview]({%slug chat-items-messages-overview%})
 
-* [Visual Structure]({%slug chat-visual-structure%})
 
 
 

@@ -14,10 +14,8 @@ The file dialogs provide you with the option the specify a list of directories t
 
 To enable this functionality, you should add a list of directories to the control's **CustomPlaces** collection. It is of type **IList<string>**.
 
-#### [C#] Example 1: Add custom places
-
-{{region cs-radfiledialogs-features-customplaces_0}}
-
+#### [C#] Example 1: Add custom places  
+{{region cs-radfiledialogs-features-customplaces_0}} 
     RadSaveFileDialog saveFileDialog = new RadSaveFileDialog(); 
     saveFileDialog.Owner = this;
 

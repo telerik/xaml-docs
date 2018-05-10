@@ -56,7 +56,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 {{endregion}}
 
 #### __Figure 1: Handling the SuggestedActionReported evnet__
-![Setting the TypeIndicator](images/RadChat_Items_TypeIndicator_02.png)
+![Setting the TypeIndicator](images/RadChat_Items_SuggestedActions_02.png)
 
 ## See Also
 

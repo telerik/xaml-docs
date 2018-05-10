@@ -19,7 +19,9 @@ The dialog gives you the ability to drag and drop in the main pane and the tree 
 
 ## Copy Drag vs. Move Drag
 
-The default drag operation is move. So, if you drag a file/folder and then drop it, the item will be moved to the new location. To start a copy drag you will need to press and hold the __Ctrl__ modifier key. 
+The default drag operation is move, except you drag an item to another drive. So, if you drag a file/folder and then drop it, the item will be moved to the new location. To start a copy drag you will need to press and hold the __Ctrl__ modifier key.
+
+Dragging an item to another drive will copy it there. To change the operation you can hold the __Shift__ key while dropping.
 
 > You can also alter between copy and move in the middle of the drag/drop operation by pressing Ctrl. In other words, you can start dragging without pressing the Ctrl key, and just before drop you can press the key, thus changing the type of the operation.
 

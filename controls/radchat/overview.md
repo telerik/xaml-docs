@@ -14,6 +14,8 @@ The UI for WPF's Conversational UI provides capabilities for integrating it with
 
 #### __Figure 1: RadChat__
 
+![RadChat](images/RadChat_Overview.png)
+
 __Conversational UI's__ features list:
 
 * __Messages__: A predefined set of built-in messages depending on the type of data that needs to be sent.

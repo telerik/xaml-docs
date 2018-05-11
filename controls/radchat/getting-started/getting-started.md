@@ -10,24 +10,24 @@ position: 0
 
 # Getting Started
 
-This topic will guide you through the process of creating a sample application containing __RadChat__. For the purpose of the example a simple echo bot will be defined.
+This topic will guide you through the process of creating a sample application containing __Conversational UI__. For the purpose of the example a simple echo bot will be defined.
 
 * [Assembly References](#assembly-references)
 * [Adding RadChat to the Project](#adding-radchat-to-the-project)
-* [Defining a simple Echo Bot](#defining-a-simple-echo-bot)
 * [Adding Authors to RadChat](#adding-authors-to-radchat)
 
 ## Assembly References
 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.ConversationalUI__
 
 ## Adding RadChat to the Project
 
 Before proceeding with adding __RadChat__ to your project, make sure the required assembly references are added to the project. 
 
-You can add __RadChat__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
+You can add __Conversational UI__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
 #### __[XAML] Example 1: Adding RadChat in XAML__
 
@@ -41,32 +41,32 @@ Running the application at this state will result in an empty chat.
 
 ![Empty RadChat](images/RadChat_GettingStarted_01.png)
 
-## Defining a simple Echo Bot
+## Adding Authors to RadChat
 
-So, for a simple demonstration purpose a sample echo bot will be defined.
+So, for the purpose of this example a sample MessageHelper will be defined.
 
 #### __[C#] Example 2: Defining the Echo Bot__
 
 {{region c#-chat-getting-started_1}}
-	 public class EchoBot
-     {
-        public EchoBot(string id, string name)
+	 public class MessageHelper
+    {
+        public MessageHelper(string id, string authorName)
         {
             this.Id = id;
-            this.Name = name;
+            this.AuthorName = authorName;
         }
 
-        public string Name { get; set; }
+        public string AuthorName { get; set; }
         public string Id { get; set; }
 
         public string RecieveMessage(MessageBase message)
         {
             return (message as TextMessage).Text;
         }
-     }
+    }
 {{endregion}}
 
-## Adding Authors to RadChat
+
 
 #### __[C#] Example 3: Adding Authors to RadChat__
 
@@ -84,9 +84,9 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
             InitializeComponent();
 
             currentAuthor = new Author("1") { Name = "Peter" };
-            echoBot = new EchoBot("2", "EchoBot");
-            botAuthor = new Author(echoBot.Id) { Name = echoBot.Name };
 
+            messageHelper = new MessageHelper("2", "Steven");
+            otherAuthor = new Author(messageHelper.Id) { Name = messageHelper.AuthorName };
             this.chat.CurrentAuthor = currentAuthor;
         }
     }
@@ -99,17 +99,17 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
 #### __[C#] Example 4: Subscribing to the SendMessage event__
 
 {{region c#-chat-getting-started_3}}
-	private void Chat_SendMessage_(object sender, SendMessageEventArgs e)
+	 private void Chat_SendMessage_(object sender, SendMessageEventArgs e)
         {
             var author = e.Message.Author;
             if (author == this.chat.CurrentAuthor)
             {
-                this.chat.AddMessage(e.Message); 
-                this.chat.AddMessage(this.echoBot.RecieveMessage(e.Message), this.botAuthor);
+                this.chat.AddMessage((e.Message as TextMessage).Text, this.currentAuthor); 
+                this.chat.AddMessage(this.messageHelper.RecieveMessage(e.Message), this.otherAuthor);
 
                 e.Handled = true;
             }
-        } 
+        }
 {{endregion}}
 
 This setup will have the following result.

@@ -26,7 +26,7 @@ The __TextMessage__ is intended to be used for sending a simple string type mess
 {{endregion}}
 
 #### __Figure 1: Defining TextMessage__
-![TextMessage with Status set](images/RadChat_Messages_Overview_01.png)
+![TextMessage with Status set](images/RadChat_Messages_Text_01.png)
 
 ## See Also
 

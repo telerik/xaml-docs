@@ -8,16 +8,16 @@ published: True
 position: 1
 ---
 
-# Type Indicator
+# Typing Indicator
 
-The __TypeIndicator__ functionality of the Conversational UI can be used to indicate that an __Author__ is typing. This is done through the following properties.
+The __TypingIndicator__ functionality of the Conversational UI can be used to indicate that an __Author__ is typing. This is done through the following properties.
 
-* __TypeIndicatorVisibility__: It is of type __Visibility__.By default its value is set to __Collapsed__. In order the __TypeIndicator__ to be displayed it can be set to __Visible__.
+* __TypeIndicatorVisibility__: It is of type __Visibility__.By default its value is set to __Collapsed__. In order the __TypingIndicator__ to be displayed it can be set to __Visible__.
 * __TypeIndicatorText__: A string property that specifies what text to be displayed when an __Author__ is typing.
-* __TypeIndicatorIcon__: An ImageSource property through which a custom icon for the __TypeIndicator__ can be applied.
+* __TypeIndicatorIcon__: An ImageSource property through which a custom icon for the __TypingIndicator__ can be applied.
 
-#### __[C#] Example 1: Setting the TypeIndicator__
-{{region radchat-messages-typeindicator_01}}
+#### __[C#] Example 1: Setting the TypingIndicator__
+{{region radchat-messages-typingindicator_01}}
 			var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
             textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
 
@@ -28,11 +28,11 @@ The __TypeIndicator__ functionality of the Conversational UI can be used to indi
             this.chat.TypingIndicatorIcon = new BitmapImage(new Uri("/Images/PeterJohnson.jpeg", UriKind.RelativeOrAbsolute));
 {{endregion}}
 
-Setting the __TypeIndicator__ in such manner will have the following result.
+Setting the __TypingIndicator__ in such manner will have the following result.
 
-#### __Figure 1: Setting the TypeIndicator__
+#### __Figure 1: Setting the TypingIndicator__
 
-![Setting the TypeIndicator](images/RadChat_Items_TypeIndicator_01.png)
+![Setting the TypingIndicator](images/RadChat_Items_TypeIndicator_01.png)
 
 ## See Also
 

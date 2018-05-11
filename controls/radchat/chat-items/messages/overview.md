@@ -10,13 +10,13 @@ position: 0
 
 # Overview
 
+__RadChat__ provides a predefined set of message types. They all have some common functionality which is derived from the __MessageBase__ class. All messages have an __Author__ and __CreationDate__. The message value is dependent on the given message type so it is not common for all messages. 
+
 * [Adding the Message](#adding-the-message)
 * [Sending the Message](#sending-the-message)
 * [Display Position](#display-position)
 * [Status](#status)
 * [Cards](#cards)
-
-__RadChat__ provides a predefined set of message types. They all have some common functionality which is derived from the __MessageBase__ class. All messages have an __Author__ and __CreationDate__. The message value is dependent on the given message type so it is not common for all messages. 
 
 ## Adding the Message
 
@@ -48,9 +48,20 @@ When sending a message. the __SendMessage__ event will be triggered. Its argumen
 
 Depending on the type of the given message, it can have a different value for its __MessageDisplayPosition__ property. This is an enumeration that can have one of the following values.
 
-* __Popup__
 * __Inline__
+* __Popup__
 * __Overlay__
+
+For demonstrating the different __DisplayPositions__, a sample __CalendarMessage will be used. 
+
+#### __Figure 1: Inline DisplayPosition__
+![Inline DisplayPosition](images/RadChat_Messages_Calendar_01.png)
+
+#### __Figure 2: Popup DisplayPosition__
+![Popup DisplayPosition](images/RadChat_Messages_Overview_01.png)
+
+#### __Figure 3: Overlay DisplayPosition__
+![Overlay DisplayPosition](images/RadChat_Messages_Overview_02.png)
 
 Note, that some message types support modifying their display position, whereas other ones have a fixed value which cannot be controlled. 
 

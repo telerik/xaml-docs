@@ -20,9 +20,9 @@ The purpose of this article is to familiarize you with the .NET API designed for
 
 For the purpose of this example, you have to enable the Google Cloud DataStore API. Please read the [Getting Started]({%slug cloud-integration-google-getting-started%}) article for more information on how you can achieve that. You also have to set up a DataStore instance which can be done by following the [Datastore Quickstart](https://cloud.google.com/datastore/docs/quickstart#store_data) tutorial. 
 
-## Step 1: Create the WPF Application
+## Step 1: Create the {{ site.framework_name }} Application
 
-Create a standard WPF application and add a [RadDataForm]({%slug raddataform-getting-started%}). It will provide an interface to update the entities in your DataStore instance. Please note that we are handling the EditEnded event with a command via the [EventToCommandBehavior]({%slug common-event-to-command-behavior%}).
+Create a standard {{ site.framework_name }} application and add a [RadDataForm]({%slug raddataform-getting-started%}). It will provide an interface to update the entities in your DataStore instance. Please note that we are handling the EditEnded event with a command via the [EventToCommandBehavior]({%slug common-event-to-command-behavior%}).
 
 #### __[XAML] Example 1: Defining the view__
 {{region xaml-cloud-services-google-cloud-datastore-0}}

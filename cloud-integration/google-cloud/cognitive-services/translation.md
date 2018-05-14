@@ -12,9 +12,9 @@ position: 1
 
 In this article we are going to show you how to use Google's Translation API. The process of embedding the functionality in your .NET application is very easy once you have enabled the feature from your [GCP console](https://console.cloud.google.com/).
 
-## Step 1: Create the WPF Application
+## Step 1: Create the {{ site.framework_name }} Application
 
-Create a standard WPF application and add 2 [RadComboBoxes]({%slug radcombobox-getting-started%}), 2 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}). The RadComboBoxes will provide a choice for source and target language of the translation, the RadWaterMarkTextBoxes will hold the text that has to be translated and its translation in the chosen language. The RadButton will make a call to Google's Translation API through a Command.
+Create a standard {{ site.framework_name }} application and add 2 [RadComboBoxes]({%slug radcombobox-getting-started%}), 2 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}). The RadComboBoxes will provide a choice for source and target language of the translation, the RadWaterMarkTextBoxes will hold the text that has to be translated and its translation in the chosen language. The RadButton will make a call to Google's Translation API through a Command.
 
 #### __[XAML] Example 1: Defining the view__
 {{region xaml-cloud-integration-cognitive-services-google-translation-0}}

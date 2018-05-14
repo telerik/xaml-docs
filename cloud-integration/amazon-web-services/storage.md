@@ -10,11 +10,11 @@ position: 3
 
 # Storage (S3) 
 
-The **Amazon Simple Storage Service** (Amazon S3) is a storage service that allows you to upload any kind of data at any time, from anywhere. This article will demonstrate how one can use this service from a WPF application and manage the uploaded files.
+The **Amazon Simple Storage Service** (Amazon S3) is a storage service that allows you to upload any kind of data at any time, from anywhere. This article will demonstrate how one can use this service from a {{ site.framework_name }} application and manage the uploaded files.
 
-## Step 1: Create the WPF Application
+## Step 1: Create the {{ site.framework_name }} Application
 
-Create a standard WPF application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
+Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
 #### __[XAML] Example 1: Defining the view __
 

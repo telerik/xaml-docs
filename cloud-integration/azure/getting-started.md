@@ -21,7 +21,7 @@ To create an account, go to the [Microsoft Azure](https://azure.microsoft.com/en
 
 # Choose the Desired Service
 
-Here are the services that will be demonstrated in combination with the controls from the UI for WPF suite in this section:
+Here are the services that will be demonstrated in combination with the controls from the UI for {{ site.framework_name }} suite in this section:
 
 * [Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) service demonstrated in the [Blob Storage]({%slug cloud-integration-azure-blob-storage%}) article.
 * [Speech To Text](https://azure.microsoft.com/en-us/services/cognitive-services/speech/) service demonstrated in the [Speech To Text]({%slug cloud-integration-cognitive-services-speech-to-text%}) article.

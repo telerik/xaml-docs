@@ -16,9 +16,9 @@ Google Cloud Storage allows world-wide storage and retrieval of any amount of da
 
 For the purposes of this article, you will have to enable the Google Cloud Storage API and Google Cloud Storage JSON API. Please read the [Getting Started]({%slug cloud-integration-google-getting-started%}) for more information on how you can achieve that.
 
-## Step 1: Create the WPF Application
+## Step 1: Create the {{ site.framework_name }} Application
 
-Create a standard WPF application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
+Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
 #### __[XAML] Example 1: Defining the view__
 {{region xaml-cloud-integration-google-cloud-storage-0}}

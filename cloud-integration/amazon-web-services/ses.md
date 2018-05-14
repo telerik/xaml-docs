@@ -13,11 +13,11 @@ position: 4
 
 Amazon SES is an email service that provides you with a way to send and receive emails using your own email addresses and domains.
 
-This article will demonstrate how one can use this service from a {{ site.framework_name }} application and send an email to a specific address.
+This article will demonstrate how one can use this service from a WPF application and send an email to a specific address.
 
-## Step 1: Create the {{ site.framework_name }} Application
+## Step 1: Create the WPF Application
 
-Create a standard {{ site.framework_name }} application and add 3 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}) to it. The watermarktextboxes will contain the sender and receiver emails and the subject. The button will be responsible for sending the email.
+Create a standard WPF application and add 3 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}) to it. The watermarktextboxes will contain the sender and receiver emails and the subject. The button will be responsible for sending the email.
 
 #### __[XAML] Example 1: Defining the view __
 

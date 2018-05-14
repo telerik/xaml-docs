@@ -15,7 +15,7 @@ position: 2
 
 ## Adding the SuggestedAction
 
-__Conversational UI__ supports adding suggestions to the user. This can be done by adding __SuggestedAction__ items to the __SuggestedActions__ collection of __RadChat__
+__Conversational UI__ supports adding suggestions to the user. This can be done by adding __SuggestedAction__ items to the __SuggestedActions__ collection of __RadChat__.
 
 #### __[C#] Example 1: Adding SuggestedAction__ 
 {{region radchat-messages-suggestedactions_01}}
@@ -55,7 +55,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
         }
 {{endregion}}
 
-#### __Figure 1: Handling the SuggestedActionReported evnet__
+#### __Figure 1: Handling the SuggestedActionReported event__
 ![Setting the TypeIndicator](images/RadChat_Items_SuggestedActions_02.png)
 
 ## See Also

@@ -20,7 +20,7 @@ Here are the currently available topics:
 
 * [Getting Started]({%slug cloud-integration-google-getting-started%})
 
-* [Blob Storage]({%slug radcloudupload-customazureprovider%})
+* [Cloud Storage]({%slug cloud-integration-google-cloud-storage%})
 
 * Cognitive services
 

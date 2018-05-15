@@ -954,7 +954,7 @@ navigation:
         title: Commands
         position: 8
     controls/radchat:
-        title: RadChat(Conversational UI)
+        title: RadChat (Conversational UI)
     controls/radchat/chat-items:
         title: Features
     controls/radchat/chat-items/messages:

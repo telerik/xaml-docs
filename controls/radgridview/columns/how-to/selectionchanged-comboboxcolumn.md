@@ -16,13 +16,13 @@ position: 7
 #### __[C#] Example 1: Add a handler for the SelectionChanged event__
 
 {{region cs-gridview-columns-howto-selectionchanged-comboboxcolumn_1}}
-	this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
+	this.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
 {{endregion}}
 
 #### __[VB.NET] Example 1: Add a handler for the SelectionChanged event__
 
 {{region vb-gridview-columns-howto-selectionchanged-comboboxcolumn_1}}
-	Me.AddHandler(RadComboBox.SelectionChangedEvent, New System.Windows.Controls.SelectionChangedEventHandler(AddressOf OnSelectionChanged))
+	Me.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, New System.Windows.Controls.SelectionChangedEventHandler(AddressOf OnSelectionChanged))
 {{endregion}}
 
 #### __[C#] Example 2: Handle the SelectionChanged event__

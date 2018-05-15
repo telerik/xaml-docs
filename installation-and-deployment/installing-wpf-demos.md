@@ -31,11 +31,9 @@ You can also download the application from the Windows Store:
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
-* Windows Installer 3.1
-
 * Windows Installer 4.5 
 
-* Microsoft .NET Framework 4 Client Profile (x86 and x64) 
+* Microsoft .NET Framework 4.5
 
 * SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
@@ -91,10 +89,7 @@ You should either uninstall the older SQL Server or change the instances names, 
 
 This exception is thrown when trying to open a ClickOnce application in a browser different than Internet Explorer. In order to open a ClickOnce application in another browser, you can look for an extension in the corresponding browser store. 
 
-## See Also
-
+## See Also  
  * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
-
  * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
-
  * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})

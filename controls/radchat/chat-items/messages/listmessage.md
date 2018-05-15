@@ -38,3 +38,5 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
 ![Defining ListMessage](images/RadChat_Messages_List_01.png)
 
 ## See Also
+
+* [Messages Overview]({%slug chat-items-messages-overview%})

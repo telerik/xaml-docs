@@ -10,9 +10,11 @@ position: 0
 
 # Overview
 
-The UI for WPF's Conversational UI provides capabilities for integrating it with all major services available today. This is done through the __RadChat__ component.  
+The __UI for WPF's Conversational UI__ is exposed as of __R2 2018__. It provides capabilities for integrating it with all major services available today. This is done through the __RadChat__ component.  
 
 #### __Figure 1: RadChat__
+
+![RadChat](images/RadChat_Overview.png)
 
 __Conversational UI's__ features list:
 

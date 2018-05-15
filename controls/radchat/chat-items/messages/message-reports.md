@@ -37,7 +37,7 @@ Adding a __CancelResponseAction__ will have the following output.
 {{endregion}}
 
 #### __Figure 2: Defining CalendarMessage with CancelResponseAction__
-![CalendarMessage with CancelResponseAction](images/RadChat_Messages__Reports_02.png)
+![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_02.png)
 
 ## Handling the Response
 
@@ -64,12 +64,12 @@ As an example, lets have the following implementation of the event.
                 {
                     e.PostResultInline = true;
                     e.CloseAfterReport = true;
-                    this.chat.AddMessage("Accepted!", this.otherAuthor);
+                    this.chat.AddMessage(this.otherAuthor, "Accepted!");
                 }
                 else if (e.ReportType == MessageReportType.Cancel)
                 {
                     e.CloseAfterReport = true;
-                    this.chat.AddMessage("Canceled!", this.otherAuthor);
+                    this.chat.AddMessage(this.otherAuthor, "Canceled!");
                 }
             }
         }

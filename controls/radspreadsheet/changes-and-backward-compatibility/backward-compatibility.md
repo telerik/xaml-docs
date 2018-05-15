@@ -14,6 +14,27 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+
+## What's Different in 2018 R2
+
+### Changed
+
+The default value of Telerik.Windows.Documents.Spreadsheet.Model.Printing.SheetPageSetupBase::**PaperType** has been changed from `A4` to `Letter`.
+
+### What to do now
+
+If you need to keep the document with A4 PaperType, you can apply this setting before exporting it:
+
+{{region radspreadprocessing-backward-compatibility_0}}
+
+	foreach (Worksheet worksheet in workbook.Worksheets)
+	{
+		worksheet.WorksheetPageSetup.PaperType = PaperTypes.A4;
+	}
+
+{{endregion}}
+
+
 ## What's Different in 2016 R3
 
 ### Changed

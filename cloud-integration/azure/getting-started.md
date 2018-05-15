@@ -21,17 +21,15 @@ To create an account, go to the [Microsoft Azure](https://azure.microsoft.com/en
 
 # Choose the Desired Service
 
-Here are the services that will be demonstrated in combination with the controls from the UI for WPF suite in this section:
+Here are the services that will be demonstrated in combination with the controls from the UI for {{ site.framework_name }} suite in this section:
 
 * [Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) service demonstrated in the [Blob Storage]({%slug cloud-integration-azure-blob-storage%}) article.
 * [Speech To Text](https://azure.microsoft.com/en-us/services/cognitive-services/speech/) service demonstrated in the [Speech To Text]({%slug cloud-integration-cognitive-services-speech-to-text%}) article.
 * [Image Analysis](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) service demonstrated in the [Image Analysis]({%slug cloud-integration-cognitive-services-image-analysis%}) article.
 * [Text Analysis](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) service demonstrated in the [Image Analysis]({%slug cloud-integration-cognitive-services-text-analysis%}) article.
 * [SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/) service demonstrated in the [SQL Database]({%slug cloud-integration-azure-sql-database%}) article.
-* [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) service demonstrated in the [Cosmos DB]({%slug cloud-integration-cosmosdb%}) article.
 
 ## See Also
 
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
-* [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
-* [Cosmos DB]({%slug cloud-integration-cosmosdb%})
+* [SQL Database]({%slug cloud-integration-azure-sql-database%})

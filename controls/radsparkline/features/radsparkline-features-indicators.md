@@ -10,7 +10,7 @@ position: 2
 
 # Indicators
 
-The controls from the RadSparkline suite support several types of indicators which you can be used to highlight the plotted data.
+The controls from the RadSparkline suite support several types of indicators which can be used to highlight the plotted data.
 
 ## Markers
 

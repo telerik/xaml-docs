@@ -1,3 +1,4 @@
+---
 title: Attached Behavior
 page_title: Attached Behavior/Properties
 description: AttachedBehavior
@@ -5,7 +6,7 @@ slug: common-mvvm-attached-behavior
 tags: attached,behavior
 published: True
 position: 3
-
+---
 
 # Attached Behavior/Properties
 

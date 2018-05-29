@@ -28,6 +28,7 @@ Here is a list of the most important properties:
 
 * __IsComboBoxEditable__ - allows you to configure whether the editor (__RadComboBox__) is editable.
 
+* __EmptyText__ - allows you to set a string which will be displayed in both view mode and edit mode when the RadComboBox editor does not have a selected item. This property is available since __R2 2018__.
  
 >important The __type__ of the properties configured as __DataMemberBinding__ and __SelectedValueMemberPath__ should be the same.
 

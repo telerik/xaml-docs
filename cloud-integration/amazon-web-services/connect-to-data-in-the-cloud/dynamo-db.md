@@ -70,7 +70,7 @@ In addition you need to [configure your AWS credentials](https://docs.aws.amazon
     </configuration>
 {{endregion}}
 
->note If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
+>If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the ViewModel
 
@@ -378,4 +378,4 @@ The changes made in the RadGridView control will now be reflected in the databas
 ## See Also
 
 * [Storage (S3)]({%slug cloud-services/aws/storage%})
-* [Relational Database Service]({%slug cloud-integration/aws/rds%})
+* [Relational Database Service]({%slug cloud-services/aws/rds%})

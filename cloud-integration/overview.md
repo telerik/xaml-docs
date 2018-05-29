@@ -44,8 +44,6 @@ This section shows how one can use various cloud services like **Azure**, **Goog
 
     * Connect to data in the cloud
 
-        * [CosmosDb]({%slug cloud-integration-cosmosdb%})
-
         * [SQL Server]({%slug cloud-integration-azure-sql-database%})
 
 * Google Cloud

@@ -13,6 +13,7 @@ module Jekyll
 
 		includedInNavigation = page.data['navigation_visible']
 		next if includedInNavigation.to_s.empty? == false & !includedInNavigation
+				next if page.path.include? "controls/radchart/"
                 next if page.data['publish'] == false
                 next unless category
 

@@ -559,6 +559,12 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/indicators:
+        title: Financial Indicators
+        position: 12
+    controls/radchartview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 14
     controls/radchartview/features/combinemode:
         title: Combine Mode
     controls/radchartview/series/funnelchart-series:

@@ -15,6 +15,7 @@ This series is visualized on the screen as a circle constructed with separate pi
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
 * [Data Binding](#data-binding)
+* [Setting the Pie Radius](#setting-the-pie-radius)
 * [Styling the Series](#styling-the-series)
 
 ## Declaratively defined series
@@ -75,6 +76,26 @@ You can use the __ValueBinding__ property of the PieSeries to bind the DataPoint
 {{endregion}}	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
+
+## Setting the Pie Radius
+
+The radius of the pie can be set via the __RadiusFactor__ property of the series. The property works in relative units between 0 and 1. Value of 0.3 means that the pie visual will take 30% of the chart's available space.
+
+Setting the property to 1 means that the circle (pie) will take all the available space given from the chart control. 
+
+Setting the property to 0.5 means that the circle (pie) will take half of the available space given from the chart control. 
+
+Setting the property to a value bigger than 1 (ex: 1.4) will make the pie bigger than the available size.
+
+The default value of the property is 0.85
+
+#### __[XAML] Example 4: Setting RadiusFactor__
+{{region radchartview-series-pieseries_3}}
+	<telerik:PieSeries RadiusFactor="0.4" />
+{{endregion}}	
+
+#### __Figure 2: RadiusFactor of 1 (left) and 0.4 (right)__
+![radchartview-series-pieseries](images/radchartview-series-pieseries-1.png)
 
 ## Styling the Series
 

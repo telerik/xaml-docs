@@ -15,6 +15,7 @@ This series is visualized on the screen as separate slices representing each of 
 * [Declaratively Defined Series](#declaratively-defined-series)
 * [Properties](#properties)
 * [Data Binding](#data-binding)
+* [Setting the Doughnut Radius](#setting-the-doughnut-radius)
 * [Styling the Series](#styling-the-series)      
 
 ## Declaratively defined series
@@ -76,6 +77,46 @@ You can use the __ValueBinding__ property of the DoughtnutSeries to bind the Dat
 {{endregion}}	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
+
+## Setting the Doughnut Radius
+
+The API of the series allows you to define the radius of the doughnut visual (the circle) and also radius of the space that reamins empty (the whole).
+
+The radiuses can be set via the  __RadiusFactor__  and __InnerRadiusFactor__ properties of the series. The property works in relative units between 0 and 1.
+
+### RadiusFactor
+
+__RadiusFactor__ sets the radius of the doughnut visual. Value of 0.3 means that the pie visual will take 30% of the chart's available space.
+
+Setting __RadiusFactor__ to 1 means that the doughnut visual will take all the available space given from the chart control. 
+
+Setting  __RadiusFactor__ to 0.5 means that the circle (pie) will take half of the available space given from the chart control. 
+
+Setting __RadiusFactor__ to a value bigger than 1 (ex: 1.4) will make the pie bigger than the available size.
+
+The default value of __RadiusFactor__ is 0.85
+
+### InnerRadiusFactor
+
+__InnerRadiusFactor__ sets the radius of the space that remains empty. Value of 0.3 means that the empty space will take 30% of the chart's available space. 
+
+Setting __InnerRadiusFactor__ to 1 means that the empty space will take all available space given from the chart control. 
+
+> If the InnerRadiusFactor gets bigger than the RadiusFactor, the doughnut visual will be drawn in the intersection area between the radius ranges.
+
+Setting  __InnerRadiusFactor__ to 0.5 means that the empty space will take half of the available space given from the chart control. 
+
+Setting __InnerRadiusFactor__ to a value bigger than 1 (ex: 1.4) will make the empty space bigger than the available size.
+
+The default value of __InnerRadiusFactor__ is 0.5
+
+#### __[XAML] Example 4: Setting RadiusFactor and InnerRadiusFactor__
+{{region radchartview-series-doughnutseries_3}}
+	<telerik:DoughnutSeries RadiusFactor="1" InnerRadiusFactor="0.3">
+{{endregion}}	
+
+#### __Figure 2: RadiusFactor of 1 (left) and 0.5 (right), and InnerRadiusFactor of 0.2 (left) and 0.3 (right)__
+![radchartview-series-pieseries](images/radchartview-series-doughnutseries-1.png)
 
 ## Styling the Series
 

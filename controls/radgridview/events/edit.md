@@ -54,7 +54,7 @@ You can subscribe to the __BeginningEdit__ event declaratively or runtime like t
 #### __XAML__
 
 {{region xaml-gridview-events-edit_0}}
-	<telerik:RadGridView BeginningEdit="radGridView_BeginningEdit"/>
+	<telerik:RadGridView x:Name="radGridView" BeginningEdit="radGridView_BeginningEdit"/>
 {{endregion}}
 
 
@@ -236,7 +236,7 @@ You can subscribe to the __CellEditEnded__ event declaratively or runtime like t
 #### __XAML__
 
 {{region xaml-gridview-events-edit_11}}
-	<telerik:RadGridView CellEditEnded="radGridView_CellEditEnded"/>
+	<telerik:RadGridView x:Name="radGridView" CellEditEnded="radGridView_CellEditEnded"/>
 {{endregion}}
 
 
@@ -304,7 +304,7 @@ You can subscribe to the __RowEditEnded__ event declaratively or runtime like th
 #### __XAML__
 
 {{region xaml-gridview-events-edit_16}}
-	<telerik:RadGridView RowEditEnded="radGridView_RowEditEnded"/>
+	<telerik:RadGridView x:Name="radGridView" RowEditEnded="radGridView_RowEditEnded"/>
 {{endregion}}
 
 #### __C#__

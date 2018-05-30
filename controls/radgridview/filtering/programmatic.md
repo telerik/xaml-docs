@@ -21,6 +21,7 @@ RadGridView provides a rich API that allows you to filter programmatically. Ever
 	* [IFilterDescriptor](#ifilterdescriptor)
 	* [FilterDescriptor](#filterdescriptor)
 	* [CompositeFilterDescriptor](#compositefilterdescriptor)
+* [Set the Culture of a FilterDescriptor](#set-the-culture-of-a-filterdescriptor)
 
 ## Column Filtering
 
@@ -244,13 +245,30 @@ The data engine builds, compiles and executes this LINQ expression at run-time. 
 
 There is one special singleton value called **FilterDesciptor.UnsetValue**. If you assign this special value to the **Value** property of the FilterDescriptor you are effectively turning it off. In other words, when the data engine encounters a FilterDescriptor whose Value is equal to FilterDesciptor.UnsetValue it will simply ignore it. This special value might be very useful when you don’t want to be constantly attaching and detaching a FilterDescriptor when you simply want to turn it on and off. You can check whether a FilterDescriptor is currently active by reading its **IsActive** property.
 
+### Set the Culture of a FilterDescriptor
+
+As of __R2 2018__ (2018.1.226 latest internal build) a specific Culture can be applied to a FilterDescriptor. This is done through an additional constructor that accepts a System.Globalization.CultureInfo parameter.
+
+#### __[C#] Example 6: Setting the Culture of a FilterDescriptor__
+{{region cs-gridview-filtering-programmatic_7}}
+	 FilterDescriptor descriptor 
+                = new FilterDescriptor("Name", FilterOperator.IsNotEqualTo, "Liverpool", new CultureInfo("fr-FR"));
+{{endregion}}
+
+#### __[VB.NET] Example 6: Setting the Culture of a FilterDescriptor__
+{{region vb-gridview-filtering-programmatic_7}}
+	 Private descriptor As FilterDescriptor
+		 = New FilterDescriptor("Name", FilterOperator.IsNotEqualTo, "Liverpool", New CultureInfo("fr-FR"))
+{{endregion}}
+
+
 ### CompositeFilterDescriptor
 
 The **CompositeFilterDescriptor** is nothing more than a collection of other IFilterDescriptors combined with a logical operator (**AND**/**OR**). Its children are stored in its FilterDescriptors property and can be any valid implementation of the IFilterDescriptor interface, which allows you to construct unlimited filtering criteria trees. These child filters are combined together with the **LogicalOperator** which can be either AND or OR.
 
 Imagine that we would like to get only people between the ages of 18 and 60 who are from Spain. **Example 5** shows how this can be achieved:
 
-#### __[C#] Example 6: Creating a CompositeFilterDescriptor__
+#### __[C#] Example 7: Creating a CompositeFilterDescriptor__
 
 	{{region cs-gridview-filtering-programmatic_5}}
 	Telerik.Windows.Data.FilterDescriptor olderThan18Filter = new Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsGreaterThanOrEqualTo, 18);
@@ -271,7 +289,7 @@ Imagine that we would like to get only people between the ages of 18 and 60 who 
 	this.radGridView.FilterDescriptors.Add(mainFilter);
 {{endregion}}
 
-#### __[VB.NET] Example 6: Creating a CompositeFilterDescriptor__
+#### __[VB.NET] Example 7: Creating a CompositeFilterDescriptor__
 
 	{{region vb-gridview-filtering-programmatic_5}}
 	' Give me all people that are named John.
@@ -301,13 +319,13 @@ So in the end you will get the following filtering criteria tree:
 
 The data engine will generate something similar in pseudo-code:
 
-#### __[C#] Example 7: The generated LINQ expression__
+#### __[C#] Example 8: The generated LINQ expression__
 
 	{{region cs-gridview-filtering-programmatic_6}}
 	people.Where(person => (person.Country == "Spain" && (person.Age >= 18 && person.Age < 60)));
 {{endregion}}
 
-#### __[VB.NET] Example 7: The generated LINQ expression__
+#### __[VB.NET] Example 8: The generated LINQ expression__
 
 	{{region vb-gridview-filtering-programmatic_6}}
 	people.Where(Function(person) (person.Country = "Spain" AndAlso (person.Age >= 18 AndAlso person.Age < 60)))

@@ -131,8 +131,16 @@ Key	|	Value
 ---	|	---	
 RibbonViewGalleryButtonMore | More
 RibbonViewGalleryButtonUpDown | Row
+RibbonViewGalleryOfPart | of
 RibbonViewQATCustomize | Customize Quick Access ToolBar
 RibbonViewQATMinimize | Minimize the Ribbon
 RibbonViewQATShowAbove | Show above the Ribbon
 RibbonViewQATShowBelow | Show below the Ribbon
+RibbonViewQATRestore | Restore the Ribbon
 RibbonViewWindowTitleDivider | - 
+RibbonWindowClose | Close
+RibbonWindowMaximize | Maximize
+RibbonWindowMinimize | Minimize
+RibbonWindowRestoreDown | Restore Down
+RibbonViewExpandRibbon | Expand the Ribbon
+RibbonViewHelp | Help

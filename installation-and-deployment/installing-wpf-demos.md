@@ -31,11 +31,9 @@ You can also download the application from the Windows Store:
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
-* Windows Installer 3.1
-
 * Windows Installer 4.5 
 
-* Microsoft .NET Framework 4 Client Profile (x86 and x64) 
+* Microsoft .NET Framework 4.5
 
 * SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
@@ -76,7 +74,7 @@ __Figure 1: Exception when trying to install WPF Demos__
 ![](images/wpf_demos_0.png)
 
 Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: 
-<drive>:\Users\<your_user>\AppData\Local\Apps\2.0
+C:\Users\\<your_user>\AppData\Local\Apps\2.0
 
 * SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
 
@@ -91,10 +89,7 @@ You should either uninstall the older SQL Server or change the instances names, 
 
 This exception is thrown when trying to open a ClickOnce application in a browser different than Internet Explorer. In order to open a ClickOnce application in another browser, you can look for an extension in the corresponding browser store. 
 
-## See Also
-
+## See Also  
  * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
-
  * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
-
  * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})

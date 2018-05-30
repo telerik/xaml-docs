@@ -10,6 +10,8 @@ position: 18
 
 # IsExpandedBinding and IsExpandableBinding
 
+> This functionality is available only when  [Hierarchical RadGridView]({%slug gridview-basic-hierarchies%}) is used.
+
 As of __R1 2018 SP2 RadGridView__ exposes the __IsExpandedBinding__ and __IsExpandableBinding__ properties. Through it the expanded and expandable states of the rows can be synchronized with the view model. For the purpose of demonstrating this functionality, the following business model will be defined.
 
 

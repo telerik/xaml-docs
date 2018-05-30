@@ -106,7 +106,7 @@ Then, all that is left is to add the __Spreadsheet__ component to the page:
 ## Spreadsheet and RibbonView
 
 
-__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the {% if site.site_name == 'Silverlight' %}[SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/FirstLook).{% endif %}{% if site.site_name == 'WPF' %} [Spreadsheet UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) topic that describes how you can take advantage of **RadSpreadsheetRibbon**.{% endif %}        
+__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the {% if site.site_name == 'Silverlight' %}[SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/SL/FirstLook).{% endif %}{% if site.site_name == 'WPF' %} [Spreadsheet UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) topic that describes how you can take advantage of **RadSpreadsheetRibbon**.{% endif %}        
 
 ## Open/Save Documents
 

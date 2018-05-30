@@ -13,7 +13,6 @@ site_name: WPF
 
 
 
-##
 
 An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
 

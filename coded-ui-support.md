@@ -71,7 +71,7 @@ RadGanttView	|	Yes	|	No	|	No
 RadPivotGrid	|	Yes	|	No	|	No
 RadScheduleView	|	Yes	|	No	|	No 
 
-Use RadChartView instead of RadChart. For more information, please go through the [RadChart vs. RadChartView]({%slug radchartview-radchartview-vs.-radchart%}) article. 
+Use RadChartView instead of RadChart. For more information, please go through the [RadChart vs. RadChartView]({%slug radchartview-radchartview-vs-radchart%}) article. 
 
 ## Q2 2014
 

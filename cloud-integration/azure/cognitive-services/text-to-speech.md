@@ -10,7 +10,7 @@ position: 0
 
 # Speech-to-Text
 
-This article will guide you through the process of integrating Azure's [Bing Speech API](https://azure.microsoft.com/en-us/services/cognitive-services/speech/) with the controls from the UI for WPF suite. More specifically, you will use the [RadWatermarkTextBox]({%slug radwatermarktextbox-overview%}), [RadToggleButton]({%slug radbuttons-features-toggle-button%}) and [RadGlyph]({%slug common-styling-appearance-radglyph%}) to create a simple user control which will determine whether an uploaded photo is a portrait or not.
+This article will guide you through the process of integrating Azure's [Bing Speech API](https://azure.microsoft.com/en-us/services/cognitive-services/speech/) with the controls from the UI for {{ site.framework_name }} suite. More specifically, you will use the [RadWatermarkTextBox]({%slug radwatermarktextbox-overview%}), [RadToggleButton]({%slug radbuttons-features-toggle-button%}) and [RadGlyph]({%slug common-styling-appearance-radglyph%}) to create a simple user control which transforms the recorded speech to text.
 
 ## Create a Bing Speech API Account
 

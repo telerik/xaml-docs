@@ -10,7 +10,7 @@ position: 1
 
 # Cloud Integration Overview
 
-This section shows how one can use various cloud services like **Azure**, **Google Cloud**, **Amazon Web Services** etc. with the Telerik UI for WPF suite. The following list contains the topics discussed here:
+This section shows how one can use various cloud services like **Azure**, **Google Cloud**, **Amazon Web Services** etc. with the Telerik UI for {{ site.framework_name }} suite. The following list contains the topics discussed here:
 
 * AWS (Amazon Web Services)
 
@@ -43,8 +43,6 @@ This section shows how one can use various cloud services like **Azure**, **Goog
         * [Speech to Text]({%slug cloud-integration-cognitive-services-speech-to-text%})
 
     * Connect to data in the cloud
-
-        * [CosmosDb]({%slug cloud-integration-cosmosdb%})
 
         * [SQL Server]({%slug cloud-integration-azure-sql-database%})
 

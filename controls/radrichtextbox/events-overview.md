@@ -72,8 +72,8 @@ The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
     * An __EventArgs__ object.
 
-* __HyperlinkClicked__ - occurs when the current page has changed. The event handler receives two arguments:
-    * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
+* __HyperlinkClicked__ - occurs when a hyperlink inside the document is clicked. The event handler receives two arguments:
+    * The sender argument contains the __Span__ containing the hyperlink's content. This argument is of type object, but can be cast to the __Span__ type.
     * A __HyperlinkClickedEventArgs__ object. This argument allows you to access the URL and the target of the hyperlink.
 
 * __IsReadOnlyChanged__ - occurs when __IsReadOnly__ value has changed. The event handler receives two arguments:

@@ -41,38 +41,9 @@ You might notice a reduced performance of RadGridView control. Below are listed 
             
 * As of __Q2 2014 SP__ release we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
 
-* __Alternation__ is a very slow operation. Avoid it unless it is definetely needed. 
-
-* __AlternateRowStyle__ - using AlternateRowStyle is a time consuming operation. If you just need to set background simulating alternating rows we recommend using [RowStyleSelector]({%slug gridview-rowstyleselector%}).
-            
-* __RowStyle__ - using RowStyle is a time consuming operation. Please apply implicit Styles.
-
-__Not Recommended__ (using the RowStyle):
-
-#### __XAML__
-
-{{region xaml-gridview-troubleshooting-performance_0}}
-	<telerik:RadGridView RowStyle="{StaticResource myRowStyle}" ItemsSource="{Binding Data}" />
-{{endregion}}
-
-__Recommended__ (using implicit Style):
-
-#### __XAML__
-
-{{region xaml-gridview-troubleshooting-performance_1}}
-	<Grid.Resources>
-	    <Style TargetType="telerik:GridViewRow">
-	        <Setter Property="Background" Value="Blue"/>
-	    </Style>
-	</Grid.Resources>
-	<Grid x:Name="LayoutRoot" Margin="100">
-	    <telerik:RadGridView ItemsSource="{Binding Data}" />
-	</Grid>
-{{endregion}}
+* Applying a __RowStyle__ or an __AlternateRowStyle__ that modifies the default GridViewRow ControlTemplate will result in a performance hit.
 
 * __IsPropertyChangedAggregationEnabled__ - Introduced as of __Q2 2015 SP1__. Basically, through this property you can control how __RadGridView__ will handle __PropertyChanged__ event. Its default value is __True__, meaning that the event occurrency will be handled on a fixed time period using a __DispatcherTimer__, which improves the rendering performance for multiple value updates. When set to __False__, the resources taken by the aforementioned __DispatcherTimer__ will be freed, thus the overall performance of the control will be improved. 
-
-           
 
 You can also refer to the documentation on [Implicit Styles and NoXaml binaries]({%slug styling-apperance-implicit-styles-overview%}).
         

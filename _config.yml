@@ -559,10 +559,19 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+    controls/radchartview/indicators:
+        title: Financial Indicators
+        position: 12
+    controls/radchartview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 14
     controls/radchartview/features/combinemode:
         title: Combine Mode
     controls/radchartview/series/funnelchart-series:
-        title: FunnelChart Series 
+        title: FunnelChart Series
+    controls/radchartview/troubleshooting:
+        title: Troubleshooting 
+        position: 13
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -802,6 +811,12 @@ navigation:
     controls/radfiledialogs/features:
         title: Features
         position: 6
+    controls/radfiledialogs/features/drag-drop:
+        title: Drag and Drop
+        position: 4
+    controls/radfiledialogs/dialog-controls:
+        title: Dialog Controls
+        position: 4
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
@@ -944,6 +959,14 @@ navigation:
     controls/radvirtualgrid/commands:
         title: Commands
         position: 8
+    controls/radchat:
+        title: RadChat (Conversational UI)
+    controls/radchat/chat-items:
+        title: Features
+    controls/radchat/chat-items/messages:
+        title: Messages
+    controls/radchat/chat-items/messages/card-messages:
+        title: Cards
 ## X1 Controls End
 
 ## Common Start
@@ -1039,7 +1062,7 @@ navigation:
         position: 5
     "for-more-help":
         title: "For More Help"
-        position: 24
+        position: 25
     "installation-and-deployment/installing-telerik-ui-on-your-computer":
         title: "Installing Telerik UI on your Computer"
         position: 2
@@ -1069,6 +1092,9 @@ navigation:
         title: "How To"
     "mvvm-helpers":
         title: "MVVM Helpers"
+        position: 23
+    "troubleshooting":
+        title: "Troubleshooting"
         position: 23
 ## Common End
 

@@ -138,7 +138,7 @@ If you want to share a common layout structure for the content of multiple windo
 
 The __RadWindow__ exposes a few methods, that allow you to programmatically control its behavior. Here is a list of them:
 
-* __BringToFront__ - attempts to bring the __RadWidnow__ over any other __RadWindows__ except topmost. 
+* __BringToFront__ - attempts to bring the __RadWindow__ over any other __RadWindows__ except topmost. 
 
 * __Close__ - closes the __RadWindow__.
 

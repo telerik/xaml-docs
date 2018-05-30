@@ -10,25 +10,31 @@ position: 1
 
 # Getting Started
 
+This tutorial will walk you through the creation of a sample application that contains a __RadSlider__. 
+
+* [Assembly References](#assembly-references)
+* [Adding RadSlider to the Project](#adding-radslider-to-the-project)
+* [Key Properties](#key-properties)
 
 
-## 
+## Assembly References
 
->In order to use __RadSlider__ control in your projects you have to add reference to the __Telerik.Windows.Controls__ assembly. {% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}If you are new to e {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} check the article {% if site.site_name == 'Silverlight' %}{% endif %}[ Namespace Declaration](http://www.telerik.com/help/silverlight/installation-adding-application-namespace-declaration.html){% if site.site_name == 'WPF' %}[ Namespace Declaration](http://www.telerik.com/help/wpf/installation-adding-application-namespace-declaration-wpf.html){% endif %} to see namespaces in XAML. After you have referenced the assembly and you have named it for example "telerik" your XAML declaration should look similar to this:
+In order to use the __RadSlider__ control in your projects, you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
 				
+## Adding RadSlider to the Project
 
-#### __XAML__
+You can add __RadSlider__ in XAML or in code as demonstrated in examples 1 and 2 respectively. 
 
+> In order to use the RadSlider control, you need to declare the following namespace: xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+
+#### __[XAML] Example 1: Adding RadSlider in XAML__
 {{region xaml-radslider-declaration_0}}
 	<telerik:RadSlider Value="5" Minimum="0" SmallChange="1" Maximum="100"/>
 {{endregion}}
 
-
-
-Code-behind declaration:
-
-#### __C#__
-
+#### __[C#] Example 2: Adding RadSlider in code__
 {{region cs-radslider-declaration_1}}
 	RadSlider slider = new RadSlider();
 	slider.Maximum = 100;
@@ -37,10 +43,7 @@ Code-behind declaration:
 	slider.SmallChange = 1;
 {{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __[VB.NET] Example 2: Adding RadSlider in code__
 {{region vb-radslider-declaration_2}}
 	Dim slider As New RadSlider()
 	slider.Maximum = 100
@@ -49,5 +52,11 @@ Code-behind declaration:
 	slider.SmallChange = 1
 {{endregion}}
 
+#### Figure 1: Result from Examples 1 and 2
+![RadSlider](images/radslider_gettingstarted.png)
 
-![](images/radslider_gettingstarted.png)
+## See Also
+* [Visual Structure]({%slug radslider-visual-structure%})
+* [Events]({%slug radslider-events-overview%})
+* [Orientation]({%slug radslider-orientation%})
+* [Ticks and tick frequency]({%slug radslider-ticks-and-tick-frequency%})

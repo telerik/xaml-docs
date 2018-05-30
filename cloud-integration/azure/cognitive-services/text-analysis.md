@@ -10,7 +10,7 @@ position: 2
 
 # Text Analysis
 
-This article will guide you through the process of integrating Azure's [Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) with the controls from the UI for WPF suite. More specifically, you will use the [RadWatermarkTextBox]({%slug radwatermarktextbox-overview%}), [RadGauge]({%slug radgauge-overview%}) and [RadGlyph]({%slug common-styling-appearance-radglyph%}) to create a simple user control which will determine whether the text which is entered is in English or not as well as analyze its sentiment.
+This article will guide you through the process of integrating Azure's [Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) with the controls from the UI for {{ site.framework_name }} suite. More specifically, you will use the [RadWatermarkTextBox]({%slug radwatermarktextbox-overview%}), [RadGauge]({%slug radgauge-overview%}) and [RadGlyph]({%slug common-styling-appearance-radglyph%}) to create a simple user control which will determine whether the text which is entered is in English or not as well as analyze its sentiment.
 
 ## Create a Text Analytics API Account
 

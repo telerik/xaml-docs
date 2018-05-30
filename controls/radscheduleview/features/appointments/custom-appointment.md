@@ -130,7 +130,7 @@ For the next step, it is important to set the __AppointmentsSource__ of RadSched
 
 {{region radscheduleview-features-appointments-custom-appointment_3}}
 	Dim today = DateTime.Today
-	Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Function(i) New Task() With { _
+	Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).Select(Function(i) New Task() With { _
 	 .Start = today.AddMinutes(i * 60 + 15), _
 	 .[End] = today.AddMinutes((i + 1) * 60), _
 	 .Subject = String.Format("Task num. {0}", i), _

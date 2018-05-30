@@ -36,7 +36,7 @@ You can initialize __RadDesktopAlertManager__ using one of the following constru
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
-* [Show/HideAnimation](#showhideanimation)
+* [Show/Hide Animation](#showhide-animation)
 
 * [ScreenPosition](#screenposition)
 
@@ -219,14 +219,11 @@ __Example 7__ shows how to get all __RadDesktopAlert__:
 	Dim alerts As IEnumerable = manager.GetAllAlerts()
 {{endregion}}
 
-## Show/HideAnimation
+## Show/Hide Animation
 
-Using the Show/HideAnimation properties of __RadDesktopAlertManager__ you could easily apply a custom Animation or group animations. That animation should be visualized when you show or hide a __RadDesktopAlert__ on the screen.
+Using the __ShowAnimation__ and __HideAnimation__ properties of RadDesktopAlertManager you could easily apply a custom Animation or group animations. That animation will start when you show or hide a __RadDesktopAlert__ on the screen.
 
-__Example 8__ demonstates how a __FadeAnimation__ could be used:
-
-#### __[C#] Example 8: Applying ShowAnimation__
-
+#### __[C#] Example 8: Applying ShowAnimation - FadeAnimation__  
 {{region cs-raddesktopalert-desktop-alert-manager_8}}
 	manager.ShowAnimation = new FadeAnimation
 	{
@@ -237,8 +234,7 @@ __Example 8__ demonstates how a __FadeAnimation__ could be used:
 	};
 {{endregion}}
 
-#### __[VB] Example 8: Applying ShowAnimation__
-
+#### __[VB] Example 8: Applying ShowAnimation - FadeAnimation__  
 {{region vb-raddesktopalert-desktop-alert-manager_8}}
 	manager.ShowAnimation = New FadeAnimation() With
 	{
@@ -246,6 +242,26 @@ __Example 8__ demonstates how a __FadeAnimation__ could be used:
 	     .MinOpacity = 0.5,
 	     .MaxOpacity = 0.9,
 	     .SpeedRatio = 0.5
+	}
+{{endregion}}
+
+#### __[C#] Example 9: Applying ShowAnimation - RevealAnimation__  
+{{region cs-raddesktopalert-desktop-alert-manager_10}}
+	manager.ShowAnimation = new RevealAnimation()
+	{
+		Duration = TimeSpan.FromMilliseconds(1000),
+		Orientation = Orientation.Horizontal,
+		AnimationDirection = AnimationDirection.In,
+	};
+{{endregion}}
+
+#### __[VB] Example 9: Applying ShowAnimation - RevealAnimation__  
+{{region vb-raddesktopalert-desktop-alert-manager_11}}	
+	manager.ShowAnimation = new RevealAnimation() With
+	{
+		.Duration = TimeSpan.FromMilliseconds(1000),
+		.Orientation = Orientation.Horizontal,
+		.AnimationDirection = AnimationDirection.In,
 	}
 {{endregion}}
 
@@ -277,22 +293,19 @@ You could easily set the distance between the currently open __RadDesktopAlerts_
 
 With Q3 2015 released version of WPF a brand new property __AlertsReorderAnimationDuration__ was introduce. It is of type integer and represents the number of milliseconds the animation used for updating the order of all instances of __RadDesktopAlert__.
 
-#### __[C#]  Setting AlertsReorderAnimationDuration__
+#### __[C#] Example 10: Setting AlertsReorderAnimationDuration__
 
 {{region cs-raddesktopalert-desktop-alert-manager_9}}
 	manager.AlertsReorderAnimationDuration = 1000;
 {{endregion}}
 
-#### __[VB]  Setting AlertsReorderAnimationDuration__
+#### __[VB] Example 10:  Setting AlertsReorderAnimationDuration__
 
 {{region vb-raddesktopalert-desktop-alert-manager_9}}
 	manager.AlertsReorderAnimationDuration = 1000
 {{endregion}}
 
-## See Also
-
+## See Also  
  * [Overview]({%slug raddesktopalert-overview%})
-
- * [Getting Started]({%slug raddesktopalert-getting-started%})
- 
+ * [Getting Started]({%slug raddesktopalert-getting-started%}) 
  * [DesktopAlert Key Properties]({%slug raddesktopalert-features-key-properties%})

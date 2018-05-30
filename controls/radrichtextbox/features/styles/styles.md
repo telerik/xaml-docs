@@ -15,7 +15,7 @@ position: 0
 __RadRichTextBox__ supports Styles similar to the ones in Microsoft Office.
       
 
-Styles can be created and added to a document programmatically or via the __Styles__ dialog. In addition, styles can be instantiated from a docx or XAML document on import, to provide for a consistent look of the document and richer editing capabilities.
+Styles can be created and added to a document programmatically or via the __Styles__ dialog. In addition, styles can be instantiated from a DOCX or XAML document on import, to provide a consistent look of the document and richer editing capabilities.
       
 
 This topic covers:
@@ -23,6 +23,8 @@ This topic covers:
 * [Style Definition Overview](#styledefinition-overview)
 
 * [Types Of Styles](#types-of-styles)
+
+* [Accessing Styles](#accessing-styles)
 
 * [Declaring New Styles](#declaring-new-styles)
 
@@ -32,6 +34,7 @@ This topic covers:
 
 * [Style Evaluation](#style-evaluation)
 
+
 ## StyleDefinition Overview
 
 The class that contains the logic behind the styles feature is __StyleDefinition__.
@@ -40,26 +43,26 @@ The class that contains the logic behind the styles feature is __StyleDefinition
 Each __StyleDefinition__ has the following properties:
         
 
-* __Name__ - the name of the style. All styles in a document have a unique name, which is used as an identifier when applying the style.
+* __Name__: The name of the style. All styles in the document have unique names, which are used as an identifier when applying the style.
             
 
-* __DisplayName__ - a name that will be shown in the UI.
+* __DisplayName__: A name that will be shown in the UI.
             
 
-* __Type__ - specifies which document elements the style will target, e.g. a Paragraph, a Table, a Span.
+* __Type__: Specifies which document elements the style will target, e.g. a Paragraph, a Table, a Span.
             
 
-* __BasedOn__ - specifies that the current style inherits the StyleDefinition set to this property. This is how hierarchical Styles can be defined.
+* __BasedOn__: Specifies that the current style inherits the StyleDefinition that is applied to this property. This is how hierarchical Styles can be defined.
 
-    >The type of the style must match that of the inherited style. It is not possible to have a Character style inherit a Paragraph style for example.
+    >The type of the style must match that of the inherited style. It is not possible to have a Character style inheriting a Paragraph style for example.
             
 
-* __BasedOnName__ - the same as above, the only difference being in the way the style is set - using its Name.
+* __BasedOnName__: The same as above, the only difference being in the way the style is set - using its Name.
             
 
-* __LinkedStyle__ - provides a relation between a Paragraph and Character style.
+* __LinkedStyle__: Provides a relation between a Paragraph and a Character style.
   
->The __Name__ and __Type__ properties are compulsory for each StyleDefinition.   
+>The __Name__ and __Type__ properties are compulsory for each StyleDefinition. 
 
 ## Types of Styles
 
@@ -77,17 +80,29 @@ You can have a Paragraph style linked to a Character style using the __LinkedSty
 Table styles include properties of Table, such as Borders and Background. They are contained in the __TableProperties__ of the style.When such style is applied to a document, it changes the formatting of the tables.
         
 
+## Accessing Styles
+
+All the styles defined for a document are stored in its **StyleRepository** property. The built-in styles can be easily obtained using the [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocumentdefaultstyles.htm) to get their names.
+
+#### [C#] Example 1: Accessing a style from a document
+
+{{region radrichtextbox-features-styles_6}}
+	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
+{{endregion}}
+
+
 ## Declaring New Styles
 
-New styles can be declared and added to the StylesRepository of the document. In this way they will be discovered by the default UI and could be applied to parts of the document.
+New styles can be declared and added to the **StylesRepository** of the document. In this way, they will be discovered by the default UI and could be applied to parts of the document.
 
 ### Declaring a Character Style
 
-This is how a Character style can be defined and registered:
+**Example 2** shows how a Character style can be defined and registered.
 
-#### __C#__
+#### __[C#] Example 2: Create and register a Character style__
 
 {{region radrichtextbox-features-styles_0}}
+
 	StyleDefinition charStyle = new StyleDefinition();
 	charStyle.Type = StyleType.Character;
 	charStyle.SpanProperties.FontFamily = new FontFamily("Calibri");
@@ -107,7 +122,7 @@ This style will set "Calibri" as a FontFamily to the part of the document it is 
 
 A paragraph style can be defined as follows:
 
-#### __C#__
+#### __[C#] Example 3: Create and register a Paragraph style__
 
 {{region radrichtextbox-features-styles_1}}
 	StyleDefinition paragraphStyle = new StyleDefinition();
@@ -126,9 +141,9 @@ When applied to a Paragraph, this style will set the Background color of the Par
 
 ### Declaring a Linked Style
 
-Linked styles should be used when both properties of Paragraph and Span should be set by the same style. They can be declared like this:
+Linked styles should be used when both properties of Paragraph and Span should be set by the same style. They can be declared like demonstrated in **Example 4**.
 
-#### __C#__
+#### __[C#] Example 4: Create and register a linked style__
 
 {{region radrichtextbox-features-styles_2}}
 	StyleDefinition linkedParagraphStyle = new StyleDefinition();
@@ -164,9 +179,9 @@ Styles of type Character get applied to the currently selected part of the docum
 
 Styles of type Paragraph follow the same logic and are applied to all paragraphs in the selection or the current paragraph. 
 
-For example, the following line will apply the "linkedParagraphStyle" to the current Paragraph and the parts of the text which are selected:
+The code from **Example 5** applies the "linkedParagraphStyle" to the current Paragraph and the parts of the text which are selected.
 
-#### __C#__
+#### __[C#] Example 5: Apply custom style__
 
 {{region radrichtextbox-features-styles_3}}
 	this.editor.ChangeStyleName("linkedParagraphStyle");
@@ -178,22 +193,20 @@ Styles of type LinkedStyle change the values of the paragraph when there is no s
 
 ## Default Styles
 
-The default style for span and paragraph properties is __Normal__. It internally inherits the default style of the document located in __RadDocument.Style__
+The default style for span and paragraph properties is __Normal__. It internally inherits the default style of the document located in __RadDocument.Style__.
 
->The document's default style is only for the current instance of the document and if you create a new document, those settings will not be copied. For this purpose you can use the __DocumentInheritsDefaultStyleSettings__ property of __RadRichTextBox__. When set to true it will copy each property you set in __RadRichTextBox.DefaultStyleSettings__ to newly created documents. You can find more information on setting default style settings on the document [here]({%slug radrichtextbox-frequently-asked-questions%})
+>The document's style is only for the current instance of the document and if you create a new document, those settings will not be copied. For this purpose, you can use the __DocumentInheritsDefaultStyleSettings__ property of __RadRichTextBox__. When set to true it will copy each property you set in __RadRichTextBox.DefaultStyleSettings__ to newly created documents. You can find more information on setting default style settings on the document [here]({%slug radrichtextbox-frequently-asked-questions%}).
 
 The default style for table properties is __TableNormal__, which does not inherit any other styles. It has an inheritor - __TableGrid__, which contains predefined borders and is the one applied when inserting a table from the UI of __RadRichTextBox__.
         
 
 All default styles as well as some other predefined styles can be applied using the members exposed by the __RadDocumentDefaultStyles__ class. The set of properties provided by the class are of type *string* and should be applied using the __StyleName__ property of the respective document element.
         
-
-For example the __TableGrid__ style can be applied to a table as follows:
-        
-
-#### __C#__
+      
+#### __[C#] Example 6: Apply built-in style to a Table__
 
 {{region radrichtextbox-features-styles_4}}
+
 	table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
 {{endregion}}
 
@@ -202,31 +215,46 @@ For example the __TableGrid__ style can be applied to a table as follows:
 And a paragraph can have __Heading 1__ style applied to it like this:
         
 
-#### __C#__
+#### __[C#] Example 7: Apply built-in style to a Paragraph__
 
 {{region radrichtextbox-features-styles_5}}
+
 	paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 {{endregion}}
 
+### Change Properties of the Default Styles
 
+You can obtain each of the pre-defined styles and modify it according to your preferences and requirements. **Example 8** shows how you can get the Normal style and modify its ParagraphProperties. 
+
+#### __[C#] Example 8: Modify default style__
+
+{{region radrichtextbox-features-styles_7}}
+	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
+	normalStyle.ParagraphProperties.AutomaticSpacingAfter = false;
+	normalStyle.ParagraphProperties.SpacingAfter = 0;
+{{endregion}}
+
+>The styles are defined on document level and thus, if the document changes, the styles will be reset as well.
+
+Changing style properties is useful when you import a document without a particular style defined inside. In this case, the Normal style is applied to the Paragraph elements and their Spans. Only in case of importing HTML, the default style applied is *Normal Web*.
 
 ## Style Evaluation
 
 Each style first checks its local value for the property that is being evaluated and then turns to its base style. If no local value is found, it turns to its default style. If no local value is found, the evaluation system turns to the default style of the document. 
 
-Here is how style properties for different styles are inherited: Span style
+Here is how style properties for different styles are inherited:
 
 ### Span style
 
-Span styles can only be based on other span styles.  The inheritance is as follows:
+Span styles can only be based on other span styles. The inheritance is as follows:
 
-* Span properties are inherited from the base span style.Paragraph style
+* Span properties are inherited from the base span style.
 
 ### Paragraph style
 
 Paragraph styles can be based on other paragraph styles or on linked styles.
 
-* When a paragraph style is based on another paragraph style the inheritance of the properties is as follows:
+* When a paragraph style is based on another paragraph style, the inheritance of the properties is as follows:
 
     * Paragraph properties are inherited from the base paragraph style.
 
@@ -236,11 +264,11 @@ Paragraph styles can be based on other paragraph styles or on linked styles.
 
     * Paragraph properties are inherited from the paragraph style part in its base linked style.
 
-    * Span properties are inherited from the span style part in its base linked style.Linked style
+    * Span properties are inherited from the span style part in its base linked style.
 
 ### Linked style
 
-Linked styles are composite styles and their components are a paragraph and a span style with link between them.  When paragraph properties need to be applied they are taken from the linked paragraph style and accordingly when span properties need to be applied they are taken from the linked span style.
+Linked styles are composite styles and their components are a paragraph and a span style with link between them.  When paragraph properties need to be applied, they are taken from the linked paragraph style and accordingly, when span properties need to be applied, they are taken from the linked span style.
 
 Linked styles can be based on other linked styles or on paragraph styles.
 
@@ -254,7 +282,7 @@ Linked styles can be based on other linked styles or on paragraph styles.
 
     * Paragraph properties are inherited from the paragraph style part in its base linked style.
 
-    * Span properties are inherited from the span style part in its base linked style.Table style
+    * Span properties are inherited from the span style part in its base linked style.
 
 ### Table style
 
@@ -267,3 +295,8 @@ Table styles can only be based on other table styles. The inheritance is as foll
 * Table cell properties are inherited from the base table style.
 
 * Table properties are inherited from the base table style.
+
+
+## See Also
+
+* [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocumentdefaultstyles.htm)

@@ -24,7 +24,7 @@ This tutorial will walk you through the creation of a sample application that co
 In order to use the __RadTreeView__ control, you will need to add references to the following assemblies:
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Navigation__
-* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Data__
 
 You can find the required assemblies for each control from the UI for WPF suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 

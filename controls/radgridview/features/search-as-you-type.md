@@ -28,7 +28,9 @@ position: 16
 
 * [Search in Hidden Columns](#search-in-hidden-columns)
 
-## Showing the Search Panel
+* [Search Over Dynamic Data](#search-over-dynamic-data)## Showing the Search Panel
+
+> Searching over XML data source is available as of __R2 2018__.
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
@@ -81,6 +83,7 @@ Two new commands have been exposed for the text search functionality.
 
 - __Search__: Executed in order to show the search panel.
 
+- __SearchByText__: Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
 - __CloseSearchPanel__: Executed in order to hide the search panel.
 
 ## Events
@@ -152,6 +155,11 @@ By default, the value of the __TextBlock__ appearing before the __Search TextBox
 
 __RadGridView's__ search mechanism supports defining a search criteria programmatically. This can be done through the __SearchByText__ Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
 
+
+## Search Over Dynamic Data
+
+As of __R2 2018 RadGridView__ provides full support for searching over dynamic data. This includes __IDynamicMetaObjectProvider__(DynamicObject and ExpandoObject), __ICustomTypeProvider__ and __ICustomTypeDescriptor__ implementations.
+
 ## Search in Hidden Columns
 
 RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the __CanUserSearchInHiddenColumns__ property of the RadGridView control to __True__.
@@ -162,7 +170,6 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 {{region xaml-radgridview-search-as-you-type-5}}
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
-
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

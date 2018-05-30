@@ -14,7 +14,7 @@ RadChartView supports several types of axes. All of them are represented by the 
 
 ![radchartview-styles-and-templates-customizing-axes](images/radchartview-styles-and-templates-customizing-axes.png)
 
-This relates the UI in the following way – there is simply no separate Style for each Axis Type. Instead all axes are BasedOn one and the same style with Key AxisStyle. Each time you want to customize your axis you should inherit this style in XAML. For example:#_XAML_
+This relates the UI in the following way – there is simply no separate Style for each axis type. Instead all axes are BasedOn one and the same style with x:Key AxisStyle. Each time you want to customize your axis you should inherit this style in XAML. 
 
 #### __XAML__	
 {{region radchartview-styles-and-templates-customizing-axes-0}}

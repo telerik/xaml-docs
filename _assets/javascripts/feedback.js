@@ -16,7 +16,8 @@ $(document).ready(function () {
       outdatedSample: false,
       inaccurateOutdatedCodeSamplesText: "",
       otherFeedback: false,
-      textFeedback: ""
+      textFeedback: "",
+      acceptFeedbackContact: false
     };
   
     $("#feedback-checkbox-area").click(function (e) {
@@ -222,13 +223,25 @@ $(document).ready(function () {
   
       if (canSubmitForm()) {
         win.close();
-        setCookieByName("submittingFeedback")
+        setCookieByName("submittingFeedback");
         formModel.yesNoFeedback = getCookieByName("yesNoFeedback") || "Not submitted";
         formModel.uuid = getCookieByName("uuid");
         formModel.path = currentPath;
         formModel.sheetId = $("#hidden-sheet-id").val();
-        $.post("https://api.everlive.com/v1/lzrla9wpuk636rdd/functions/saveFeedback", formModel.toJSON(), function () {
-          formIsProcessing = false;
+        formModel.email = formModel.acceptFeedbackContact ? formModel.email : '';
+        $.ajax({
+          url: "https://baas.kinvey.com/rpc/kid_Hk57KwIFf/custom/saveFeedback",
+          method: "POST",
+          dataType: "json",
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(formModel),
+          crossDomain: true,
+          beforeSend: function (xhr) {
+              xhr.setRequestHeader("Authorization", "Basic " + btoa("feedback:feedback"));
+          },
+          success: function (data) {
+              formIsProcessing = false;
+          }
         });
       } else {
         formIsProcessing = false;
@@ -309,9 +322,21 @@ $(document).ready(function () {
   
       // #region events
       _events: function () {
+        $window.ready(Feedback._window_ready);
+        $window.load(Feedback._window_load);
         $window.scroll(Feedback._window_scroll);
         $window.resize(Feedback._window_resize);
         $("#close-button").click(Feedback._button_click);
+      },
+      _window_ready: function () {
+          updateVariables();
+          Feedback.adjustFeedbackPoistion();
+          Feedback.adjustNavigationPosition();
+      },
+      _window_load: function () {
+        updateVariables();
+          Feedback.adjustFeedbackPoistion();
+          Feedback.adjustNavigationPosition();
       },
       _window_scroll: function () {
         updateVariables();

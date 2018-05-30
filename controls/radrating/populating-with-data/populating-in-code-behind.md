@@ -10,16 +10,17 @@ position: 3
 
 # In Code-Behind
 
-This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing ](#Removing_RadRatingItems) __RadRatingItems__ programmatically.			
+This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing](#Removing_RadRatingItems) __RadRatingItems__ programmatically.			
 
-Here is a regular __RadRating__ declaration:
+Example 1 demonstrates a regular __RadRating__ declaration:
 
-#### __XAML__
-{{region populating-in-code-behind_0}}
+#### __[XAML] Example 1: Declare a RadRating__
+{{region xaml-populating-in-code-behind_0}}
 	<telerik:RadRating x:Name="radRating"/>
 {{endregion}}
 
-![](images/rating_default.png)
+#### __Figure 1: Result from Example 1__
+![RadRating](images/rating_default.png)
 
 ## Adding RadRatingItems
 
@@ -31,21 +32,20 @@ In order to add new rating items to a __RadRating__ control, you have to perform
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-	#### __C#__
-	{{region populating-in-code-behind_1}}
+	#### __[C#] Example 2: Adding RadRatingItems__
+	{{region cs-populating-in-code-behind_1}}
 		RadRatingItem ratingItem = new RadRatingItem();
 		this.radRating.Items.Add(ratingItem);
 	{{endregion}}
 
-	#### __VB.NET__
-	{{region populating-in-code-behind_2}}
+	#### __[VB.NET] Example 2: Adding RadRatingItems__
+	{{region vb-populating-in-code-behind_2}}
 		Dim ratingItem As New RadRatingItem()
 		Me.radRating.Items.Add(ratingItem)
 	{{endregion}}
 
-The result is shown on the image below:
-
-![](images/rating_wit_6_items.png)
+#### __Figure 2: Result from Example 2__
+![RadRating](images/rating_wit_6_items.png)
 
 In order to clear the default rating items and add new you have to add one additional step to the previous:
 
@@ -57,8 +57,8 @@ In order to clear the default rating items and add new you have to add one addit
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-#### __C#__
-{{region populating-in-code-behind_3}}
+#### __[C#] Example 3: Clearing the Items collection__
+{{region cs-populating-in-code-behind_3}}
 	this.radRating.Items.Clear(); 
 	RadRatingItem ratingItem = new RadRatingItem();
 	ratingItem.Content = "1";
@@ -68,8 +68,8 @@ In order to clear the default rating items and add new you have to add one addit
 	this.radRating.Items.Add(ratingItem);
 {{endregion}}
 
-#### __VB.NET__
-{{region populating-in-code-behind_4}}
+#### __[VB.NET] Example 3: Clearing the Items collection__
+{{region vb-populating-in-code-behind_4}}
 	Me.radRating.Items.Clear() 
 	Dim ratingItem As New RadRatingItem()
 	ratingItem.Content = "1"
@@ -79,9 +79,8 @@ In order to clear the default rating items and add new you have to add one addit
 	Me.radRating.Items.Add(ratingItem)
 {{endregion}}
 
-The result is shown on the image below:
-
-![](images/rating_with__2_items.png)
+#### __Figure 3: Result from Example 3__
+![RadRating](images/rating_with__2_items.png)
 
 >tip Consider declaring rating items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
@@ -89,16 +88,16 @@ The result is shown on the image below:
 
 In order to remove a specific __RadRatingItem__, you should remove it from the __RadRating__'s __Items__ collection.				
 
-#### __C#__
-{{region populating-in-code-behind_5}}
+#### __[C#] Example 4: Removing RadRatingItems__
+{{region cs-populating-in-code-behind_5}}
 	private void RemoveRatingItem( RadRatingItem itemToRemove )
 	{
 	   this.radRating.Items.Remove( itemToRemove );
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region populating-in-code-behind_6}}
+#### __[VB.NET] Example 4: Removing RadRatingItems__
+{{region vb-populating-in-code-behind_6}}
 	Private Sub RemoveRatingItem(ByVal itemToRemove As RadRatingItem)
 	    Me.radRating.Items.Remove(itemToRemove)
 	End Sub

@@ -44,6 +44,7 @@ visual-studio-extensions/for-wpf-vs-extensions-project-convert.md,
 assembly-minifier-section.md,
 assembly-minifier/minifier-what-is-new.md,
 assembly-minifier/overview.md,
+troubleshooting,
 controls/radbuttons/features/popup-animation.md,
 controls/radcarousel/how-to/change-scroll-buttons.md,
 controls/radcarousel,
@@ -111,7 +112,8 @@ analytics/google-analytics-integration,
 controls/radwindow/features/radwindowinterophelper,
 controls/radfiledialogs,
 controls/radwindow/features/active-state-visualisation-mode,
-controls/radcombobox/howto/show-tooltip-on-trimmed-text.md,]
+controls/radcombobox/howto/show-tooltip-on-trimmed-text.md,
+controls/radchat]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

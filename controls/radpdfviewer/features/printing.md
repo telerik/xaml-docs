@@ -96,7 +96,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 RadPdfViewer also provides a __Print(PrintDialog printDialog, PrintSettings settings)__ method. It allows you to pass an already initialized PrintDialog instance to the method and print the PDF document shown in the viewer. This means that you have control over the way the document is printed and can, for example, print it silently to a printer other than the default one.
 
->tipYou can download a runnable project of this from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomPrinting__.
+>tipYou can download a runnable project showing how you can customize the printing functionality from our online [SDK repository on GitHub](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomPrinting).
 {% endif %}
 
 

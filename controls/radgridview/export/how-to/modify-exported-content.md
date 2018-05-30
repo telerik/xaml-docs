@@ -10,9 +10,9 @@ position: 7
 
 # Modify RadGridView's Content Before Exporting
 
-In __R1 2016__, we have introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkbook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
+In __R1 2016__, we introduced two new extension methods related to the exporting of RadGridView - *ExportToWorkbook()* and *ExportToRadFixedDocument()*. You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 
-__Assembly References__
+## Assembly References
 
 __ExportToWorkbook__ and __ExportToRadFixedDocument__ methods use additional libraries so you need to add references to the following assemblies:
 
@@ -24,9 +24,9 @@ __ExportToWorkbook__ and __ExportToRadFixedDocument__ methods use additional lib
 
 ## ExportToWorkbook 
 
-The method exports the associated RadGridView to a Workbook object.
+This method exports the associated RadGridView to a [Workbook](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/working-wtih-workbooks-what-is-workbook) object. Examples 1 and 2 show how you can modify that object before exporting.
 
-#### __[C#] Example 1: Export RadGridView to a Workbook on Button click:__
+#### __[C#] Example 1: Export RadGridView to a Workbook and modify cell style:__
 {{region gridview-export-howto-modify-exported-content-0}}
 	  private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -57,12 +57,20 @@ The method exports the associated RadGridView to a Workbook object.
         }
 {{endregion}}
 
+#### __[C#] Example 2: Double the width of the exported columns:__
+{{region gridview-export-howto-modify-exported-content-1}}
+    for (int i = 0; i < workbook.ActiveWorksheet.UsedCellRange.ColumnCount; i++)
+    {
+        workbook.ActiveWorksheet.Columns[i].SetWidth(new ColumnWidth(this.clubsGrid.Columns[i].ActualWidth * 2, true));
+    }
+{{endregion}}
+
 ## ExportToRadFixedDocument
 
-The method exports the associated RadGridView to a RadFixedDocument object.
+This method exports the associated RadGridView to a [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) object.
 
-#### __[C#] Example 2: Export RadGridView to a RadFixedDocument on Button click:__
-{{region gridview-export-howto-modify-exported-content-1}}
+#### __[C#] Example 3: Export RadGridView to a RadFixedDocument and rotate the page 90 degrees__
+{{region gridview-export-howto-modify-exported-content-2}}
 	private void Button2_Click(object sender, RoutedEventArgs e)
         {	
 			//Instantiate the RadFixedDocument object
@@ -73,8 +81,8 @@ The method exports the associated RadGridView to a RadFixedDocument object.
             {
                 var actualPage = page as RadFixedPage;
                 actualPage.Rotation =  Telerik.Windows.Documents.Fixed.Model.Data.Rotation.Rotate90;
-
             }
+
 			//Export the RadFixedDocument to a PDF file
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.DefaultExt = "*.pdf";

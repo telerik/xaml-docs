@@ -12,6 +12,34 @@ position: 1
 
 This article will show you how to easily modify __Windows8__ and __Windows8Touch__ themes and how to change the font of your application at runtime.
       
+## Default Windows8 and Windows8Touch theme colors
+
+The Windows8 has one color variation, but it is designed to be easily modified via the exposed colors in the theme palette. The default values of the brushes in the theme are listed below:
+
+|Brush name|Brush value||
+|----------|-----------|---|
+|MainColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|BasicColor|#FFD6D4D4|<div class="theme-palette-color" style="background: #D6D4D4"></div>|
+|MarkerColor|#FF000000|<div class="theme-palette-color" style="background: #000000"></div>|
+|ValidationColor|#FFDE3914|<div class="theme-palette-color" style="background: #DE3914"></div>|
+|AccentColor|#FF25A0DA|<div class="theme-palette-color" style="background: #25A0DA"></div>|
+|StrongColor|#FF767676|<div class="theme-palette-color" style="background: #767676"></div>|
+
+The same is with Windows8Touch:
+
+|Brush name|Brush value||
+|----------|-----------|---|
+|MainColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|ValidationColor|#FFE23907|<div class="theme-palette-color" style="background: #E23907"></div>|
+|AccentColor|#FF26A0DA|<div class="theme-palette-color" style="background: #26A0DA"></div>|
+|EffectHighColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|EffectLowColor|#FFE1E1E1|<div class="theme-palette-color" style="background: #E1E1E1"></div>|
+|HighColor|#FF767676|<div class="theme-palette-color" style="background: #767676"></div>|
+|InvertedColor|#FF000000|<div class="theme-palette-color" style="background: #000000"></div>|
+|InvertedForegroundColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|LowColor|#FFE9E9E9|<div class="theme-palette-color" style="background: #E9E9E9"></div>|
+|MainForegroundColor|#FF000000|<div class="theme-palette-color" style="background: #000000"></div>|
+|MediumColor|#FFCCCCCC|<div class="theme-palette-color" style="background: #CCCCCC"></div>|
 
 ## Colorizing the Windows8 and Windows8Touch Themes
 

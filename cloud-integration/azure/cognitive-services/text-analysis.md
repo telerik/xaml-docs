@@ -139,17 +139,18 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
                           new Input("1", text)
                         }));
 
-			var language = languageResult.Documents.First().DetectedLanguages.First();
+			var detectedLanguage = languageResult.Documents.First().DetectedLanguages.First();
+			var englishProbability = detectedLanguage.Iso6391Name == "en" ? detectedLanguage.Score : 0;
 
 			SentimentBatchResult sentimentResult = await client.SentimentAsync(
-				new MultiLanguageBatchInput(new List<MultiLanguageInput>()
-				{
-					new MultiLanguageInput(language.Iso6391Name, "1", text)
-				}));
+			new MultiLanguageBatchInput(new List<MultiLanguageInput>()
+			{
+				new MultiLanguageInput(detectedLanguage.Iso6391Name, "1", text)
+			}));
 
-			var sentiment = sentimentResult.Documents.First();
+			var sentiment = sentimentResult.Documents.First().Score;
 
-			return (language.Score + sentiment.Score) / 2;
+			return (englishProbability + sentiment) / 2;
         }
 
         private async void RadButton_Click(object sender, RoutedEventArgs e)

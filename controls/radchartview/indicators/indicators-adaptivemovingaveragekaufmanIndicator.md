@@ -10,7 +10,7 @@ position: 2
 
 # AdaptiveMovingAverageKaufmanIndicator
 
-AdaptiveMovingAverageKaufmanIndicator acts as a moving average indicator, therefore it is smoothing the data to form a trend following. In addition to this, the indicator track the degree of noise in the trend and adjust based on it.
+AdaptiveMovingAverageKaufmanIndicator acts as a moving average indicator, therefore it is smoothing the data to form a trend following. In addition to this, the indicator tracks the degree of noise in the trend and adjusts based on it.
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__, __SlowPeriod__ and __FastPeriod__ properties.
 

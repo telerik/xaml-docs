@@ -14,7 +14,7 @@ BollingerBandsIndicator is used to define the prevailing high and low values in 
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property. 
 
-To get set the number of standard deviations use to calculate the indicator values you can use the __StandardDeviations__ property. And the stroke of the lower band is set via __LowerBandStroke__ property.
+To set the number of standard deviations used to calculate the indicator values you can use the __StandardDeviations__ property. And the stroke of the lower band is set via __LowerBandStroke__ property.
 
 #### __[XAML] Example 1: Defining BollingerBandsIndicator__
 {{region radchartview-indicators-bollingerbandsindicator-0}}

@@ -10,7 +10,7 @@ position: 23
 
 # WeightedMovingAverageIndicator
 
-WeightedMovingAverageIndicator
+WeightedMovingAverageIndicator measures and shows the simple average for a period of past data using heavier weighting, thus smoothing the data to form a trend following.
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 

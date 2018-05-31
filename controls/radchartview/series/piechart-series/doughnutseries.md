@@ -80,7 +80,7 @@ You can use the __ValueBinding__ property of the DoughtnutSeries to bind the Dat
 
 ## Setting the Doughnut Radius
 
-The API of the series allows you to define the radius of the doughnut visual (the circle) and also radius of the space that reamins empty (the whole).
+The API of the series allows you to define the radius of the doughnut visual (the circle) and also the radius of the space that remains empty (the hole).
 
 The radiuses can be set via the  __RadiusFactor__  and __InnerRadiusFactor__ properties of the series. The property works in relative units between 0 and 1.
 

@@ -59,7 +59,7 @@ In order to customize the __MouseOverHighlightStyle__ using implicit styles you 
         </telerik:RadScheduleView>
     {{endregion}}
 
-#### Image 1: Result from Example 3 after hovering over a slot in the Office 2016 theme
+#### Figure 1: Result from Example 3 after hovering over a slot in the Office 2016 theme
 ![Radscheduleview MouseOverHighlightStyle](images/radscheduleview_mouseoverhighlight.png)
 
 ## Customizing the SelectionHighlightStyle
@@ -89,7 +89,7 @@ In order to customize the __SelectionHighlightStyle__ using implicit styles you 
 		</telerik:RadScheduleView>
 	{{endregion}}
 
-#### Image 2: Result from Example 5 after selecting a slot in the Office 2016 theme__
+#### Figure 2: Result from Example 5 after selecting a slot in the Office 2016 theme__
 ![RadScheduleView SelectionHighlightStyle](images/radscheduleview_selectionhighlight.png)
 
 ## See Also

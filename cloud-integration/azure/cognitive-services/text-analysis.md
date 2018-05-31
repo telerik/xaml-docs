@@ -140,7 +140,7 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
                         }));
 
 			var detectedLanguage = languageResult.Documents.First().DetectedLanguages.First();
-			var englishProbability = detectedLanguage.Iso6391Name == "en" ? detectedLanguage.Score : 0;
+			var englishProbability = detectedLanguage.Name == "English" ? detectedLanguage.Score : 0;
 
 			SentimentBatchResult sentimentResult = await client.SentimentAsync(
 			new MultiLanguageBatchInput(new List<MultiLanguageInput>()
@@ -148,7 +148,11 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
 				new MultiLanguageInput(detectedLanguage.Iso6391Name, "1", text)
 			}));
 
-			var sentiment = sentimentResult.Documents.First().Score;
+			double? sentiment = 0;
+			if (sentimentResult.Documents.Any())
+			{
+				sentiment = sentimentResult.Documents.First().Score;
+			}
 
 			return (englishProbability + sentiment) / 2;
         }

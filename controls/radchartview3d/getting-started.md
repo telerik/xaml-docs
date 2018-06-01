@@ -170,7 +170,7 @@ This section demonstrates how to setup the chart from __Example 1__, but in a da
 	</telerik:RadCartesianChart3D>
 {{endregion}}
 
-# Setting chart size
+## Setting chart size
 
 The size of the chart's plot area can be changed via the __PlotAreaSize__ property of the chart. This property is of type System.Windows.Media.Media3D.__Size3D__, thus allowing you to set all 3 dimensions of the area. 
 

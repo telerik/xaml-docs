@@ -10,9 +10,9 @@ position: 9
 
 # HoverMode
 
-The different charts expose a property called **HoverMode** which controls weather the rest of the series will fade out when a certain series is hovered. In the case of the RadPieChart, all of the slices fade out except the hovered one. It is useful in situations with many overlapping series and has two possible values: **FadeOtherSeries** and **None**. The default value is **None**. This article will demonstrate this property with a RadCartesianChart.
+The different charts from the RadChartView suite expose a property called **HoverMode** which controls whether the rest of the series will fade out when a certain series is hovered. It is useful in situations with many overlapping series and has two possible values: **FadeOtherSeries** and **None**. The default value is **None**. This article will demonstrate this property with a RadCartesianChart.
 
-All that is necessary, is to set up the desired chart and set its **HoverMode** property to **FadeOtherSeries** as demonstrated in Example 1.
+The following example demonstrates how to set up a RadCartesianChart and set its HoverMode.
         
 #### __[XAML] Example 1: Define the RadCartesianChart with HoverMode__
 
@@ -79,6 +79,8 @@ All that is necessary, is to set up the desired chart and set its **HoverMode** 
 
 #### Figure 1: Result from Example 1 comparing hovering over different series
 ![RadChartView HoverMode](images/RadChartView-HoverMode.png)
+
+> In the case of the RadPieChart, when the HoverMode property is set, all of the slices fade out except the hovered one.
 
 ## See also
 

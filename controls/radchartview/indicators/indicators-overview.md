@@ -15,7 +15,7 @@ RadChartView provides a rich set of __financial indicators__ which can be used t
 > The financial indicators are applicable only in the context of __RadCartesianChart__.
 
 #### __Figure 1: Financial indicators__
-![](images/radchartview-indicators-overview-0.png)
+<img src="images/radchartview-indicators-overview-0.png" style="width: 80%;">
 
 ## Setting Up an Indicator
 
@@ -41,7 +41,7 @@ The indicator is populate using the same approach as shown in the [Data Bind to 
 This section provides a full list with the chart's indicators.
 
 * [AverageTrueRangeIndicator]({%slug radchartview-indicators-averagetruerangeindicator%})
-* [AdaptiveMovingAverageKaufmanIndicator]({%slug radchartview-indicators-adaptivemovingaveragekaufmanIndicator%})
+* [AdaptiveMovingAverageKaufmanIndicator]({%slug radchartview-indicators-adaptivemovingaveragekaufmanindicator%})
 * [BollingerBandsIndicator]({%slug radchartview-indicators-bollingerbandsindicator%})
 * [CommodityChannelIndexIndicator]({%slug radchartview-indicators-commoditychannelindexindicator%})
 * [ExponentialMovingAverageIndicator]({%slug radchartview-indicators-exponentialmovingaverageindicator%})

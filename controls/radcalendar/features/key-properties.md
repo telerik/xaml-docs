@@ -30,7 +30,7 @@ The purpose of this help article is to show you the key properties of the __RadC
 
 ## Setting the Current Display Date
 
-* __DisplayDate__: The property allows you to set the current visible date. This is date which will be displayed when you show the calendar.
+* __DisplayDate__: This property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
 
 #### __[XAML] Example 1: Setting DisplayDate__
 {{region radcalendar-keyproperties-0}}

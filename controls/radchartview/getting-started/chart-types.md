@@ -28,9 +28,7 @@ __Common Properties__:
 
 * __EmptyContentTemplate__: A property of type __DataTemplate__ which specifies the template applied to the content visualized when no series are defined.            
 
-* __SelectedPoints__: A property of type __ReadOnlyDataPointCollection__ which gets or sets the selected data points.            
-
-* __HoverMode__: A property of type __ChartHoverMode__ (enum) which controls weather the series will fade out on mouse over.            
+* __SelectedPoints__: A property of type __ReadOnlyDataPointCollection__ which gets or sets the selected data points. 
 
 __Zoom and Pan properties__:        
 
@@ -76,7 +74,9 @@ __Specific Properties:__
 
 * __SmartLabelsStrategy__: A property of type __ChartSmartLabelsStrategyBase__ which gets or sets the labels arranging strategy of the series. It is useful in cases where labels are overlapping.
 
-* __Annotations__: A property of type __PresenterCollection<CartesianChartAnnotation>__ which gets the annotations of the charting component. This collection can be used to visualize custom objects in the plot area.            
+* __Annotations__: A property of type __PresenterCollection<CartesianChartAnnotation>__ which gets the annotations of the charting component. This collection can be used to visualize custom objects in the plot area.
+
+* __HoverMode__: A property of type __ChartHoverMode__ (enum) which controls weather the series will fade out on mouse over.              
 
 __Zoom and Pan properties__:
 
@@ -116,7 +116,9 @@ __Specific Properties__
 
 * __Series__: A property of type __PresenterCollection<PolarSeries>__ which gets the collection containing all the series presented by the control.            
 
-* __StartAngle__: A property of type __Double__ which gets or sets the angle at which the polar axis is anchored.            
+* __StartAngle__: A property of type __Double__ which gets or sets the angle at which the polar axis is anchored. 
+
+* __HoverMode__: A property of type __ChartHoverMode__ (enum) which controls weather the series will fade out on mouse over.
 
 ## RadPieChart
 
@@ -125,6 +127,8 @@ This section presents the properties exposed by the RadPolarChart control
 __Specific Properties__
 
 * __Series__: A property of type __PresenterCollection<PieSeries>__ which gets the collection containing all the series presented by the control.
+
+* __HoverMode__: A property of type __PieChartHoverMode__ (enum) which controls weather the slices will fade out on mouse over.
 
 ## See Also
 * [Smart Labels]({%slug radchartview-features-smart-labels%})

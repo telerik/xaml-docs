@@ -42,6 +42,9 @@ You can instantiate your __RadSplitButton__ in both XAML and code. Here is an ex
 	}
 {{endregion}}
 
+#### __Figure 1: The created split button__
+![The created split button](images/radbuttons-features-split-button-0.png)
+
 ## Adding DropDown Content
 
 In order to add content to the drop down area of the __RadSplitButton__ you have to use its __DropDownContent__ property. It is of type object so you can add any control as a content of the drop down. Here is an example of a __ListBox__ control placed inside a __RadSplitButton.DropDownContent__.		
@@ -62,6 +65,9 @@ In order to add content to the drop down area of the __RadSplitButton__ you have
 
 >tip If you want to display dynamic content inside the drop down area, you can use the __DropDownContentTemplate__ and the __DropDownContentTemplateSelector__ properties. To learn more about __TemplateSelectors__ you can read the [Data Templating Overview](https://msdn.microsoft.com/en-us/library/ms742521(v=vs.100).aspx) MSDN article.
 
+#### __Figure 2: RadSplitButton with dropdown content__
+![RadSplitButton with dropdown content](images/radbuttons-features-split-button-1.png)
+
 ## Toggling the RadSplitButton
 
 The functional part of the __RadSplitButton__ is represented by a RadButton. This part handles the click event of the __RadSplitButton__ and it can behave as a toggle button. In order to take advantage of this feature you just have to set the __RadSplitButton.IsToggle__ property to __True__.		
@@ -70,6 +76,9 @@ The functional part of the __RadSplitButton__ is represented by a RadButton. Thi
 {{region xaml-radbuttons-features-split-button_4}}
 	<telerik:RadSplitButton IsToggle="True" />
 {{endregion}}
+
+#### __Figure 3: RadSplitButton as toggle button__
+![RadSplitButton as toggle button](images/radbuttons-features-split-button-2.png)
 
 ## Auto Opening
 
@@ -115,6 +124,24 @@ You can easily customize the __RadSplitButton__ by using the following propertie
 * __ToggleCornerRadius__ - gets/sets the __CornerRadius__ of the __RadSplitButton.ButtonPart__ when it behaves like a __ToggleButton__.
 
 * __TogglePartStyle__ - gets/sets the style of the __RadToggleButton__ that represents the ButtonPart of the __RadSplitButton__, when it behaves like a __ToggleButton__.
+
+#### __[XAML] Example 6: Customizing RadSplitButton__
+{{region xaml-radbuttons-features-split-button_6}}
+	<telerik:RadSplitButton DropDownButtonPosition="Bottom" 
+							Content="Click or Choose an Item" 
+							DropDownWidth="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+		<telerik:RadSplitButton.DropDownContent>
+			<ListBox>
+				<ListBoxItem Content="Item 1" />
+				<ListBoxItem Content="Item 2" />
+				<ListBoxItem Content="Item 3" />
+			</ListBox>
+		</telerik:RadSplitButton.DropDownContent>
+	</telerik:RadSplitButton>
+{{endregion}}
+
+#### __Figure 4: Customized RadSplitButton__
+![Customized RadSplitButton](images/radbuttons-features-split-button-3.png)
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})

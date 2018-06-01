@@ -39,6 +39,9 @@ You can instantiate your __RadButton__ in both XAML and code. Here is an example
 	}
 {{endregion}}
 
+#### __Figure 1: The created button__
+![The created button](images/radbuttons-features-button-0.png)
+
 ## Handling the Button Click
 
 If you want to implement custom logic to be executed when the button is clicked, you can either:
@@ -75,9 +78,13 @@ Here is an example of handling the __Click__ event of a button.
 
 ## Customizing the RadButton
 
-* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadButton__ control in normal state		  
+* __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadButton__ control in normal state	
+	#### __Figure 2: A button with a hidden background__
+	![A button with a hidden background](images/radbuttons-features-button-1.png)	  
 
-* __CornerRadius__ - this property is of type __CornerRadius__ and it controls the __CornerRadius__ of the __RadButton__ control		  
+* __CornerRadius__ - this property is of type __CornerRadius__ and it controls the __CornerRadius__ of the __RadButton__ control	
+	#### __Figure 3: A button with its CornerRadius set to 15__
+	![A button with its CornerRadius set to 15](images/radbuttons-features-button-2.png)	  
 
 ## See Also
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})

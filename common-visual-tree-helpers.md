@@ -12,7 +12,7 @@ position: 18
 
 The UI for {{ site.framework_name }} provides with several extension methods that allows you to enumerate the UI children of an element or find its parents. This way you can get a specific control from the visual tree interact with it.
 
-The methods are available in the __ChildrenOfTypeExtensions__ and __ParentOfTypeExtensions__ static classes. And they extend the DependencyObject class so you can call them on any UI element.
+The methods are available in the __ChildrenOfTypeExtensions__ and __ParentOfTypeExtensions__ static classes. They extend the DependencyObject class so you can call them on any UI element.
 
 >important The extension methods would be able to enumerate the children/parents only if the visual tree of the control has been loaded. This is why you should call the methods after the Loaded event of the corresponding control was invoked.
 

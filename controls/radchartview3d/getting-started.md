@@ -172,7 +172,7 @@ This section demonstrates how to setup the chart from __Example 1__, but in a da
 
 ## Setting chart size
 
-The size of the chart's plot area can be changed via the __PlotAreaSize__ property of the chart. This property is of type System.Windows.Media.Media3D.__Size3D__, thus allowing you to set all 3 dimensions of the area. 
+The size of the chart's plot area can be changed via the __PlotAreaSize__ property of the chart. The property is of type System.Windows.Media.Media3D.__Size3D__, thus allowing you to set all 3 dimensions of the area. 
 
 #### __[XAML] Example 7: Setting PlotAreaSize__  
 {{region radchartview3d-getting-started-6}}

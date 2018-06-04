@@ -28,7 +28,9 @@ position: 16
 
 * [Search in Hidden Columns](#search-in-hidden-columns)
 
-* [Search Over Dynamic Data](#search-over-dynamic-data)## Showing the Search Panel
+* [Search Over Dynamic Data](#search-over-dynamic-data)
+
+## Showing the Search Panel
 
 > Searching over XML data source is available as of __R2 2018__.
 

@@ -156,7 +156,7 @@ The __MaskedInputExtensions.CaretToEndOfTextOnFocus__ property allows you to con
 
 ## Allow Null Values
 
-By default the RadMaskedNumericInput and RadMaskedCurrencyInput doesn't allow you to set *null* to the Value property. Instead the *null* value is coerced to *0*. To alter this behavior and allow *null* values you can set the __MaskedInputExtensions.AllowNull__ attached property to __True__.
+By default the RadMaskedNumericInput and RadMaskedCurrencyInput don't allow you to set *null* to their Value property. Instead the *null* value is coerced to *0*. To alter this behavior and allow *null* values you can set the __MaskedInputExtensions.AllowNull__ attached property to __True__.
 
 #### __[XAML] Example 10: Setting MaskedInputExtensions.AllowNull attached property__
 {{region xaml-radmaskedinput-features-extensions-9}}

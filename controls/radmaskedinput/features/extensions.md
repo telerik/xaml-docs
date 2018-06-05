@@ -20,6 +20,7 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 * [Allow minus on null values](#allow-minus-on-null-values)
 * [Tab navigation](#tab-navigation)
 * [Set the caret position of RadMaskedTextInput](#set-the-caret-position-of-radmaskedtextinput)
+* [Allow Null Values](#allow-null-values)
 
 >The MaskedInputExtensions class can be accessed in XAML through the following namespace:  
 >`xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"`
@@ -150,7 +151,19 @@ The __MaskedInputExtensions.CaretToEndOfTextOnFocus__ property allows you to con
 {{region xaml-radmaskedinput-features-extensions-8}}
 	<telerik:RadMaskedTextInput maskedInput:MaskedInputExtensions.CaretToEndOfTextOnFocus="True"/>
 {{endregion}}
+
 >This property is designed to work only for the RadMaskedTextInput control.
+
+## Allow Null Values
+
+By default the RadMaskedNumericInput and RadMaskedCurrencyInput don't allow you to set *null* to their Value property. Instead the *null* value is coerced to *0*. To alter this behavior and allow *null* values you can set the __MaskedInputExtensions.AllowNull__ attached property to __True__.
+
+#### __[XAML] Example 10: Setting MaskedInputExtensions.AllowNull attached property__
+{{region xaml-radmaskedinput-features-extensions-9}}
+	<telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.AllowNull="True"/>
+{{endregion}}
+
+>This property is designed to work only for the RadMaskedNumericInput and RadMaskedCurrencyInput controls.
 
 ## See Also
  * [Common Features]({%slug radmaskedinput-features-common%})

@@ -5,7 +5,7 @@ description: Popup Content Position
 slug: troubleshooting-popup-content-position
 tags: popup, ribbonview, content, position, troubleshooting
 published: True
-position: 9
+position: 1
 ---
 
 # Popup Content Position

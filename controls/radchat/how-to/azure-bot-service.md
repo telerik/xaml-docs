@@ -8,7 +8,11 @@ published: True
 position: 2
 ---
 
-# What is Azure Bot Service 
+# How to Connect to Azure Bot Service
+
+This topic will guide you through the process of connecting **RadChat** to a chat bot created with **Azure Bot Service**. 
+
+## What is Azure Bot Service 
 
 Azure Bot Service provides an integrated environment that is purpose-built for bot development, enabling you to build, connect, test, deploy, and manage intelligent bots, all from one place. 
 

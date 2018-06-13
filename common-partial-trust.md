@@ -55,7 +55,7 @@ DataPager	|	Yes	|
 DataServiceDataSource	|	No	|	
 DateTimePicker	|	Yes	|	
 DesktopAlert	|	No	|	
-Diagram	|	Yes	|	Versions from Q3 2014 and older requires additional permission for System.Security.Permissions.EnvironmentPermission <br/><br/> `<IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" Flags="Assertion, UnmanagedCode, Execution, ControlThread, ControlEvidence, ControlPolicy, SerializationFormatter, ControlDomainPolicy, ControlPrincipal, ControlAppDomain, RemotingConfiguration, Infrastructure, BindingRedirects"/>`
+Diagram	|	Yes	|	Versions from Q3 2014 and older require additional permission for System.Security.Permissions.EnvironmentPermission <br/><br/> `<IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" Flags="Assertion, UnmanagedCode, Execution, ControlThread, ControlEvidence, ControlPolicy, SerializationFormatter, ControlDomainPolicy, ControlPrincipal, ControlAppDomain, RemotingConfiguration, Infrastructure, BindingRedirects"/>`
 Docking	|	Partially	|	No floating windows - require full trust permission
 EntityFrameworkDataSource	|	Partially	|	Requires additional permission for System.Data.SqlClient.SqlClientPermission
 Expander	|	Yes	|	

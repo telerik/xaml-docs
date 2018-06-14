@@ -120,11 +120,23 @@ __Specific Properties__
 
 ## RadPieChart
 
-This section presents the properties exposed by the RadPolarChart control
+This section presents the properties exposed by the RadPieChart control
 
 __Specific Properties__
 
 * __Series__: A property of type __PresenterCollection<PieSeries>__ which gets the collection containing all the series presented by the control.
+
+* __HoverMode__: A property of type __PieChartHoverMode__ that gets or sets the hover functionality. If it is set to “FadeOtherSeries”, when you mouse over a pie slice, all other slices will be fade out. The default value of the property is “None”.
+
+## RadFunnelChart
+
+This section presents the properties exposed by the RadFunnelChart control
+
+__Specific Properties__
+
+* __Series__: A property of type __PresenterCollection<FunnelSeries>__ which gets the collection containing all the series presented by the control.
+
+* __HoverMode__: A property of type __FunnelChartHoverMode__ that gets or sets the hover functionality. If it is set to “FadeOtherSeries”, when you mouse over a funnel datapoint, all other datapoints will be fade out. The default value of the property is “None”.
 
 ## See Also
 * [Smart Labels]({%slug radchartview-features-smart-labels%})

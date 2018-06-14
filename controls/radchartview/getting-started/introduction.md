@@ -20,11 +20,12 @@ __RadChartView__ is essentially a toolset of charting components designed to hel
 
 ## Chart Types 
 
-The RadChartView suite provides three different chart types.
+The RadChartView suite provides four different chart types.
 
 * __RadCartesianChart__
 * __RadPieChart__
 * __RadPolarChart__
+* __RadFunnelChart__
 
 Each of these charting components is designed to best fit specific use cases. You can read more about the charts in the [ChartTypes]({%slug radchartview-chart-types%}) help article.        
 

@@ -14,7 +14,7 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains __RadGridView__ bound to __RadDomainDataSource__. 
 
->tip If you are using Open RIA services with 4.5 version you need to add reference to the __Telerik.Windows.Controls.DomainServices.OpenRia45__ which is built against it.
+>tip If you are using Open RIA services with 4.5 version you need to add a reference to the __Telerik.Windows.Controls.DomainServices.OpenRia45__ which is built against it.
 
 ## Creating the Silverlight application
 

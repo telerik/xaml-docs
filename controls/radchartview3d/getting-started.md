@@ -15,6 +15,7 @@ This article will walk you through the creation of a sample application that con
 * [Assembly References](#assembly-references)
 * [Defining chart and axes](#defining-chart-and-axes)
 * [Data binding](#data-binding)
+* [Setting chart size](#setting-chart-size)
 * [Camera behavior](#camera-behavior)
 
 ## Assembly References
@@ -169,12 +170,25 @@ This section demonstrates how to setup the chart from __Example 1__, but in a da
 	</telerik:RadCartesianChart3D>
 {{endregion}}
 
+## Setting chart size
+
+The size of the chart's plot area can be changed via the __PlotAreaSize__ property of the chart. The property is of type System.Windows.Media.Media3D.__Size3D__, thus allowing you to set all 3 dimensions of the area. 
+
+#### __[XAML] Example 7: Setting PlotAreaSize__  
+{{region radchartview3d-getting-started-6}}
+	<telerik:RadCartesianChart3D PlotAreaSize="500, 500, 500"/>
+{{endregion}}
+
+The default size is X=1000, Y=1000, Z=800
+
+> The plot area is the space locked between the axes, where the series are drawn.
+
 ## Camera behavior
 
 In order to interact with the chart's scene you can use the __Chart3DCameraBehavior__. You can find more information about this in the [Camera Behavior]({%slug radchartview3d-behaviors-camera%}) article.
 
-#### __[C#] Example 7: Defining camera behavior__  
-{{region radchartview3d-getting-started-6}}
+#### __[XAML] Example 8: Defining camera behavior__  
+{{region radchartview3d-getting-started-7}}
 	<telerik:RadCartesianChart3D.Behaviors>
 		<telerik:Chart3DCameraBehavior />
 	</telerik:RadCartesianChart3D.Behaviors>

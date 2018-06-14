@@ -37,6 +37,9 @@ With our __Q3 2014__ official release we introduced the RadPathButton control. I
 	}
 {{endregion}}
 
+#### __Figure 1: The created path button__
+![The created button](images/radbuttons-features-pathbutton-0.png)
+
 Note that in XAML you can directly use string format [Path Markup Syntax](https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/path-markup-syntax)
 
 #### __[XAML] Example 3: Setting the path geometry in XAML__
@@ -57,6 +60,9 @@ To achieve the same results through code you can use our __GeometryParser__
 	    .PathGeometry = GeometryParser.GetGeometry("M3,7L9,7L9,4L13,8L9,12L9,9L3,9z") _
 	}
 {{endregion}}
+
+#### __Figure 2: RadPathButton with PathGeometry__
+![RadPathButton with PathGeometry](images/radbuttons-features-pathbutton-1.png)
 
 # Customizing the RadPathButton
 
@@ -80,6 +86,42 @@ The __RadPathButton__ exposes the __ContentPlacement__ property. It is of type _
 	}
 {{endregion}}
 
+#### __Figure 3: RadPathButton with ContentPlacement set to Right__
+![RadPathButton with ContentPlacement set to Right](images/radbuttons-features-pathbutton-2.png)
+
 In addition to all customizing options that are inherited from the __RadButton__ the __PathButton__ has a __PathStyle__ property. This property gets or sets the style of the __Path__ element in the template.
 
+#### __[XAML] Example 5: Setting the content position in XAML__
+{{region xaml-radbuttons-features-path-button-10}}
+	<telerik:RadPathButton.PathStyle>
+			<Style TargetType="Path">
+				<Setter Property="Fill" Value="Red" />
+				<Setter Property="Stretch" Value="Fill" />
+			</Style>
+		</telerik:RadPathButton.PathStyle>
+{{endregion}}
+
+#### __Figure 4: RadPathButton with custom PathStyle__
+![RadPathButton with custom PathStyle](images/radbuttons-features-pathbutton-3.png)
+
 Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type __Thickness__ and determines the margin around its content. This allows users to adjust size of the Path that the button hosts. For adjusting the position of the Path itself users can use the __RadPathButton.Padding__ property.
+
+## RadPathButton and RadGlyph
+
+The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appearance-radglyph%}).
+
+#### __[XAML] Set RadGlyph as PathGeometry__
+{{region xaml-radbuttons-features-path-button-11}}
+	<telerik:RadPathButton Width="50" Height="50" Padding="10"
+							PathGeometry="{telerik:RadGlyph Glyph={StaticResource GlyphGlobe}}" />
+{{endregion}}
+
+#### __Figure 5: RadPathButton with RadGlyph__
+![RadPathButton with RadGlyph](images/radbuttons-features-pathbutton-4.png)
+
+## See Also
+ * [Button]({%slug radbuttons-features-button%})
+ * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
+ * [Split Button]({%slug radbuttons-features-split-button%})
+ * [Commands]({%slug radbuttons-features-commands%})
+ * [Appearance]({%slug radbuttons-features-appearance%})

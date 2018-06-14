@@ -10,12 +10,7 @@ position: 0
 
 # DiagramExtensions ViewModels
 
-
-
 Telerik Diagramming Framework provides a list of __ViewModels__ defined in the __Telerik.Windows.Controls.Diagrams.Extensions.dll__. 
-		
-
-## 
 
 Please note that these classes are designed to serve as a base implementation of your __ViewModels__ thus facilitating your efforts when working with a data-bound __RadDiagram__. 
 	  

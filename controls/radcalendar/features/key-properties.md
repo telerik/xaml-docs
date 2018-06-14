@@ -28,6 +28,17 @@ The purpose of this help article is to show you the key properties of the __RadC
 
 * __BlackoutDates__: Gets or sets a collection of dates that cannot be selected
 
+## Setting the Current Display Date
+
+* __DisplayDate__: This property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
+
+#### __[XAML] Example 1: Setting DisplayDate__
+{{region radcalendar-keyproperties-0}}
+	<telerik:RadCalendar DisplayDate="4/1/2018"/>
+{{endregion}}
+
+> DisplayDate is different from SelectedDate. The DisplayDate points out just the default month and year visible when the calendar first pops up.
+
 ## Styling the Different Views
 
 You can apply a style to the different modes through the following properties:

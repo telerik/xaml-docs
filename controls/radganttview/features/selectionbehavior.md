@@ -12,7 +12,18 @@ position: 6
 
 The RadGanttView control provides you with selection functionality, which allows the user to select one or more items at a time. To control this selection mechanism, you must set the **SelectionBehavior** property.
 
+#### __[XAML] Example 1: Setting SelectionBehavior__
+{{region radganttview-selectionbehavior-0}}
+	<telerik:RadGanttView>
+		<telerik:RadGanttView.SelectionBehavior>
+			<telerik:SingleSelectionBehavior />
+		</telerik:RadGanttView.SelectionBehavior>			
+	</telerik:RadGanttView>
+{{endregion}}
+
 There is a set of predefined selection behaviors, however, you're free to define your custom behavior as long as it implements the **ISelectionBehavior** interface.
+
+> The default behavior is [SchedulingSelectionBehavior](#schedulingselectionbehavior).
 
 Below you will find the list of available behaviors.
 
@@ -55,3 +66,8 @@ The **SchedulingSelectionBehavior** further extends the functionality of the Ext
 #### __Figure 5: Selecting items with SchedulingSelectionBehavior__
 
 ![Selecting items with SchedulingSelectionBehavior](images/schedulingselectionbehavior.gif)
+
+## See Also
+* [Getting Started]({%slug radganttview-getting-started%})
+* [Special Slots]({%slug radganttview-specialslots%})
+* [Scrolling]({%slug radganttview-scrolling%})

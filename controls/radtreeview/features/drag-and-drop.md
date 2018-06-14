@@ -424,7 +424,9 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 	{{endregion}}
 
 Note that the __TargetDropItem__ property may be null if the drop is in an empty treeview. That's why when you use that property it always has to be checked:
-		  
+
+#### C#
+{{region radtreeview-features-drag-and-drop_33}}
 	private void radTreeView_DragEnded(object sender, RadTreeViewDragEndedEventArgs e)
 	{
 	  // Target drop item
@@ -433,7 +435,8 @@ Note that the __TargetDropItem__ property may be null if the drop is in an empty
 	  {
 		// Do something
 	  }
-	}		
+	}	
+{{endregion}}
 
 ## Using DragDropManager events to manage the drag and drop process
 
@@ -451,10 +454,14 @@ __RadTreeView__ internally handles the following __DragDropManager__ events:
 As __RadTreeView__ handles internally the above __DragDropManager__ events, in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.Add[Event]Handler__ extension method.
 
 #### C#
+{{region radtreeview-features-drag-and-drop_32}}
 	DragDropManager.AddDragOverHandler(xTreeView, OnDragOver,true);  
+{{endregion}}
 
 #### VB.NET	
+{{region radtreeview-features-drag-and-drop_33}}
 	DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True) 
+{{endregion}}
 		
 
 >tipYou can find more information about the __DragDropManager__ events in the {% if site.site_name == 'Silverlight' %}[Events](http://www.telerik.com/help/silverlight/dragdropmanager-events.html){% endif %}{% if site.site_name == 'WPF' %}[Events](http://www.telerik.com/help/wpf/dragdropmanager-events.html){% endif %} tutorial.

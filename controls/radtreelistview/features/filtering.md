@@ -33,7 +33,7 @@ As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its fil
 
 ## Utilizing the AutoExpandItemsAfterFilter property
 
-Since **R2 2018 SP** you have the option to prevent the expanding of the RadTreeListView items after it is filtered. You can do that by setting the **AutoExpandItemsAfterFilter** property to **False**. The default value of the property is **True** which keeps the previous behavior of expanding all items after filtering.
+Since **R2 2018 SP1** you have the option to prevent the expanding of the RadTreeListView items after it is filtered. You can do that by setting the **AutoExpandItemsAfterFilter** property to **False**. The default value of the property is **True** which keeps the previous behavior of expanding all items after filtering.
 
 #### __[XAML] Example 2: Setting the AutoExpandItemsAfterFilter property__
 {{region radtreeliestview-getting-started_1}}

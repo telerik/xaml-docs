@@ -14,6 +14,8 @@ When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanis
 
 > The filtering of __RadVirtualGrid__ can be disabled by setting the __IsFilterable__ property to __false__.
 
+> The __FilteringControl__ of __RadVirtualGrid__ can be manually closed by calling the __CloseFilteringControl__ method of the control.
+
 * [Filtering](#filtering)
 
 * [Filtering through ColumnFilterDescriptor](#filtering-through-columnfilterdescriptor)

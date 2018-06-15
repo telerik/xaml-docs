@@ -12,6 +12,8 @@ position: 1
 
 __RadVirtualGrid__ provides an API for programmatically filtering its data. The following article will go through the exposed mechanisms.
 
+> The __FilteringControl__ of __RadVirtualGrid__ can be manually closed by calling the __CloseFilteringControl__ method of the control.
+
 >important The events that this section covers cannot be utilized when the __DataProvider__ mechanism is used for populating data. In such scenario, the built-in filtering can be altered through a [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%}).
 
 __RadVirtualGrid__ provides a set of events which can be utilized so that the filtering operation is aligned to the specific needs. They will be raised in the order they are listed below.

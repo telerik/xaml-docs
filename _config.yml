@@ -959,6 +959,9 @@ navigation:
     controls/radvirtualgrid/commands:
         title: Commands
         position: 8
+    controls/radvirtualgrid/how-to:
+        title: How to
+        position: 9
     controls/radchat:
         title: RadChat (Conversational UI)
     controls/radchat/chat-items:

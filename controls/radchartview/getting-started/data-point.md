@@ -26,9 +26,9 @@ The __DataContext__ of most chart templates and styles, as [ToolTipTemplate]({%s
 
 The following table shows which data points are being used by the corresponding series.
 
-| Cartesian Chart Data Points | Pie Chart Data Points | Polar Chart Data Points |
-| --- | --- | --- |
-| __CategoricalDataPoint__<ul><li>LineSeries</li><li>StepLineSeries</li><li>SplineSeries</li><li>BarSeries</li><li>AreaSeries</li><li>SplineAreaSeries</li><li>StepAreaSeries</li><li>PointSeries</li</ul> | __PieDataPoint__<ul><li>PieSeries</li><li>DoughnutSeries</li></ul> | __PolarDataPoint__<ul><li>PolarLineSeries</li><li>PolarAreaSeries</li><li>PolarPointSeries</li><li>RadarLineSeries</li><li>RadarAreaSeries</li><li>RadarPointSeries</li></ul> |
+| Cartesian Chart Data Points | Pie Chart Data Points | Polar Chart Data Points | Funnel Chart Data Point
+| --- | --- | --- | --- |
+| __CategoricalDataPoint__<ul><li>LineSeries</li><li>StepLineSeries</li><li>SplineSeries</li><li>BarSeries</li><li>AreaSeries</li><li>SplineAreaSeries</li><li>StepAreaSeries</li><li>PointSeries</li</ul> | __PieDataPoint__<ul><li>PieSeries</li><li>DoughnutSeries</li></ul> | __PolarDataPoint__<ul><li>PolarLineSeries</li><li>PolarAreaSeries</li><li>PolarPointSeries</li><li>RadarLineSeries</li><li>RadarAreaSeries</li><li>RadarPointSeries</li></ul> | __FunnelDataPoint__<ul><li>FunnelSeries</li></ul>
 | __ScatterDataPoint__<ul><li>ScatterLineSeries</li><li>ScatterSplineSeries</li><li>ScatterAreaSeries</li><li>ScatterSplineAreaSeries</li><li>ScatterPointSeries</li></ul> |
 | __RangeDataPoint__<ul><li>RangeSeries</li><li>RangeBarSeries</li></ul> |
 | __OhlcDataPoint__<ul><li>OhlcSeries</li><li>CandlestickSeries</li></ul> |
@@ -37,7 +37,7 @@ The following table shows which data points are being used by the corresponding 
 
 ## DataPoint
 
-DataPoint is an abstract class used as a base by the concerete data point impelementations. The class contains information related to the element plotted in the chart. There are several classes that derive from DataPoint and they all share some common properties.
+DataPoint is an abstract class used as a base by the concrete data point implementations. The class contains information related to the element plotted in the chart. There are several classes that derive from DataPoint and they all share some common properties.
 
 * __Presenter__: A property of type __IChartElementPresenter__ that holds a reference to the parent series where the data point is visualized.
 
@@ -61,6 +61,7 @@ Each different DataPoint inheritor implements properties that define the values 
 * [ScatterBubbleDataPoint](#scatterbubbledatapoint)
 * [PieDataPoint](#piedatapoint)
 * [PolarDataPoint](#polardatapoint)
+* [FunnelDataPoint](#funneldatapoint)
 
 ## CategoricalDataPoint
 
@@ -80,7 +81,7 @@ The __RangeDataPoint__ is a type of categorical data point, so it has a __Catego
 
 The __OhlcDataPoint__ is a type of categorical data point, so it has a __Category__ property. But, instead of a single value it works with few additional values accessed via the following properties: __High__, __Low__, __Open__ and __Close__. This type of data point is used in the financial series of the chart (ohlc and candlestick).
 
-Additionaly, the class exposes two properties that indicate whether the data point follows rasising (bullish) or falling (bearish) trend. The properties are __IsRising__ and __IsFalling__.
+Additionally, the class exposes two properties that indicate whether the data point follows raising (bullish) or falling (bearish) trend. The properties are __IsRising__ and __IsFalling__.
 
 ## ScatterDataPoint
 
@@ -100,9 +101,13 @@ The pie data point also allows you to define its offset from the center of the p
 
 ## PolarDataPoint
 
-This data point model is used in polar chart series and it exposes two properties defining the position of the data point in the polar cooridnate system.
+This data point model is used in polar chart series and it exposes two properties defining the position of the data point in the polar coordinate system.
 
 The __Angle__ property defines the angle of the data point on the radial (circular) axis. And the __Value__ property defines the value of the data point on the polar (linear) axis. 
+
+## FunnelDataPoint
+
+This data point model is used in funnel chart series. To define the value of the data point the __Value__ property of the __FunnelDataPoint__ needs to be set. The funnel series data points also expose a __Label__ property which contains the associated label.
 
 ## Sampling and DataItem
 

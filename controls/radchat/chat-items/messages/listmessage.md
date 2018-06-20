@@ -16,10 +16,9 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
 * __Author author__
 * __IEnumerable source__
 * __SelectionMode selectionMode__
-* __DateTime creationDate = default(DateTime)__
+* __DateTime creationDate__
 
 #### __[C#] Example 1: Defining an ListMessage__
-
 {{region radchat-messages-listmessage_01}}
 	   List<string> coffee = new List<string>();
             coffee.Add("Caffe Latte");

@@ -10,7 +10,7 @@ position: 4
 
 # Weather Card
 
-__Weather__ card extends __ImageCard__ by adding options to display weather data. The following set of properties is exposed for this purpose. They all or of __string__ type.
+__Weather__ card extends __ImageCard__ by adding options to display weather data. The following set of properties is exposed for this purpose. They are all or of __string__ type.
 
 * __Temperature__
 * __Humidity__

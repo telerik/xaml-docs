@@ -27,7 +27,7 @@ Adding a given message is done through the __AddMessage__ method of __RadChat__.
 
 ## Sending the Message
 
-When sending a message. the __SendMessage__ event will be triggered. Its arguments expose the __Message__ property through which the message that is currently being sent can be customized.
+When sending a message the __SendMessage__ event will be triggered. Its arguments expose the __Message__ property through which the message that is currently being sent can be customized.
 
 #### __[C#] Example 1: Handling the SendMessage event__ 
 {{region radchat-messages-overview_01}}
@@ -55,23 +55,22 @@ Depending on the type of the given message, it can have a different value for it
 For demonstrating the different __DisplayPositions__, a sample __CalendarMessage__ will be used. 
 
 #### __Figure 1: Inline DisplayPosition__
-![Inline DisplayPosition](images/RadChat_Messages_Calendar_01.png)
+![Inline DisplayPosition](images/RadChat_Messages_Overview_01.png)
 
 #### __Figure 2: Popup DisplayPosition__
-![Popup DisplayPosition](images/RadChat_Messages_Overview_01.png)
+![Popup DisplayPosition](images/RadChat_Messages_Overview_02.png)
 
 #### __Figure 3: Overlay DisplayPosition__
-![Overlay DisplayPosition](images/RadChat_Messages_Overview_02.png)
+![Overlay DisplayPosition](images/RadChat_Messages_Overview_03.png)
 
 Note, that some message types support modifying their display position, whereas other ones have a fixed value which cannot be controlled. 
 
 ### Messages that can have their Display Position set
 
-* __CalendarMessage__
-* __ListMessage__
-* __DataFormMessage__
-* __CarouselMessage__
-
+* [CalendarMessage]({%slug chat-items-calendarmessage%})
+* [ListMessage]({%slug chat-items-listmessage%})
+* [DataFormMessage]({%slug chat-items-dataformmessage%})
+* [CarouselMessage]({%slug chat-items-carouselmessage%})
 
 ## Cards
 

@@ -10,7 +10,7 @@ position: 0
 
 # Getting Started
 
-This topic will guide you through the process of creating a sample application containing __Conversational UI__. For the purpose of the example a simple echo bot will be defined.
+This topic will guide you through the process of creating a sample application containing __RadChat__.
 
 * [Assembly References](#assembly-references)
 * [Adding RadChat to the Project](#adding-radchat-to-the-project)
@@ -43,50 +43,22 @@ Running the application at this state will result in an empty chat.
 
 ## Adding Authors to RadChat
 
-So, for the purpose of this example a sample MessageHelper will be defined.
-
-#### __[C#] Example 2: Defining the Echo Bot__
-
-{{region c#-chat-getting-started_1}}
-	 public class MessageHelper
-    {
-        public MessageHelper(string id, string authorName)
-        {
-            this.Id = id;
-            this.AuthorName = authorName;
-        }
-
-        public string AuthorName { get; set; }
-        public string Id { get; set; }
-
-        public string RecieveMessage(MessageBase message)
-        {
-            return (message as TextMessage).Text;
-        }
-    }
-{{endregion}}
-
-
-
 #### __[C#] Example 3: Adding Authors to RadChat__
 
-Two authors will be defined for this example. Note, that the __CurrentAuthor__ property of __RadChat__  must be set. In this case it would be the user entering the input, whereas the other Author would be the EchoBot. 
+Two authors will be defined for this example. Note, that the __CurrentAuthor__ property of __RadChat__  must be set.
 
 {{region c#-chat-getting-started_2}}
 	public partial class MainWindow : Window
     {
-        private EchoBot echoBot;
         private Author currentAuthor;
-        private Author botAuthor;
+        private Author otherAuthor;
 
         public MainWindow()
         {
             InitializeComponent();
 
             currentAuthor = new Author("1") { Name = "Peter" };
-
-            messageHelper = new MessageHelper("2", "Steven");
-            otherAuthor = new Author(messageHelper.Id) { Name = messageHelper.AuthorName };
+            otherAuthor = new Author("2") { Name = "Steven" };
             this.chat.CurrentAuthor = currentAuthor;
         }
     }
@@ -104,8 +76,8 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
             var author = e.Message.Author;
             if (author == this.chat.CurrentAuthor)
             {
-                this.chat.AddMessage((e.Message as TextMessage).Text, this.currentAuthor); 
-                this.chat.AddMessage(this.messageHelper.RecieveMessage(e.Message), this.otherAuthor);
+                this.chat.AddMessage(this.currentAuthor, (e.Message as TextMessage).Text);
+                this.chat.AddMessage(this.otherAuthor, (e.Message as TextMessage).Text);
 
                 e.Handled = true;
             }
@@ -114,9 +86,9 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
 
 This setup will have the following result.
 
-#### __Figure 2: RadChat with a simple Echo Bot__
+#### __Figure 2: RadChat with Messages__
 
-![Echo Bot Example](images/RadChat_GettingStarted_02.png)
+![RadChat with Messages](images/RadChat_GettingStarted_02.png)
 
 ## See Also
 

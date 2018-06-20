@@ -30,7 +30,7 @@ __Conversational UI__ supports adding suggestions to the user. This can be done 
 Adding the __SuggestedAction__ will be visualized as shown in the figure below.
 
 #### __Figure 1: Adding a SuggestedAction__
-![Setting the TypeIndicator](images/RadChat_Items_TypeIndicator_01.png)
+![Adding a SuggestedAction](images/RadChat_Items_SuggestedActions_01.png)
 
 > By default the __SuggestedActions__ will be visible. In case they need to be hidden, the __SuggestedActionsVisibility__ of __RadChat__ can be set to __Collapsed__.
 
@@ -42,7 +42,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 * __PostResultInline__: A boolean property that determines whether the suggestion should be posted as an inline text message or not.
 * __Text__: The text result.
 
-#### __[C#] Example 1: Adding SuggestedAction__ 
+#### __[C#] Example 2: Handling the SuggestedActionReported event__ 
 {{region radchat-messages-suggestedactions_02}}
 	 private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventArgs e)
         {
@@ -56,7 +56,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 {{endregion}}
 
 #### __Figure 1: Handling the SuggestedActionReported event__
-![Setting the TypeIndicator](images/RadChat_Items_SuggestedActions_02.png)
+![Handling the SuggestedActionReported event](images/RadChat_Items_SuggestedActions_02.png)
 
 ## See Also
 

@@ -15,8 +15,8 @@ The __CalendarMessage__ operates with __DateTime__ value type. Its constructors 
 * __DateTime selectedDate__ 
 * __MessageDisplayPosition displayPosition__ 
 * __Author author__ 
-* __[DateTime creationDate = default(DateTime)]__ 
-* __[DateTime displayDate = default(DateTime)])__: the __creationDate__ and __displayDate__ parameters are optional here. The __displayDate__ parameter is used to control the visible time period when adding the message. If the __selectedDate__ corresponds to a different time period, it would not be visible initially.
+* __DateTime creationDate__ 
+* __DateTime displayDate__: the __creationDate__ and __displayDate__ parameters are optional. The __displayDate__ parameter is used to control the visible time period when adding the message. If the __selectedDate__ corresponds to a different time period, it would not be visible initially.
 
 #### __[C#] Example 1: Defining a CalendarMessage__ 
 {{region radchat-messages-calendarmessage_01}}

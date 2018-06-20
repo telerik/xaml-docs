@@ -10,12 +10,12 @@ position: 5
 
 # DataForm Message
 
-The __DataFormMessage__ utilizes the [RadDataForm]({%slug raddataform-overview%}) control for displaying its data. The constructor of this message and its parameters are illustrated below.
+The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) control for displaying its data. The constructor of this message and its parameters are illustrated below.
 
 * __MessageDisplayPosition displayPosition__ 
 * __Author author, object item__: the __item__ parameter has to be the reference of the item that is to be  edited.
 * __IEnumerable<string> propertyNames__: the properties of the __item__ have to be passed as collection of strings.  
-* __[DateTime creationDate = default(DateTime)])__
+* __DateTime creationDate__: the __creationDate__ parameter is optional.
 
 #### __[C#] Example 1: Defining a DataFormMessage__ 
 {{region radchat-messages-dataformmessage_01}}

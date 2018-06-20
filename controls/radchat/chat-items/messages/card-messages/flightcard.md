@@ -34,7 +34,7 @@ A sample __FlightCard__ can be defined as follows.
 	
             FlightCardMessage flightCardMessage = new FlightCardMessage(this.currentAuthor);
            
-            flightCardMessage.ImageSource = new BitmapImage(new Uri"/Images/plane.png", UriKind.RelativeOrAbsolute));
+            flightCardMessage.ImageSource = new BitmapImage(new Uri("/Images/plane.png", UriKind.RelativeOrAbsolute));
 
             FlightInfo departureFlight = new FlightInfo();
 

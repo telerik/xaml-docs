@@ -21,7 +21,7 @@ There are two mechanisms that can be used to resolve this.
 
 ## AllowCrossVersion
 
-The __AllowCorssVersion__ property gives you the ability to serialize Telerik controls with one version and deserialize them with another version. To enable this set the property to True.
+The __AllowCrossVersion__ property gives you the ability to serialize Telerik controls with one version and deserialize them with another version. To enable this set the property to True.
 
 #### __[C#] Example 2: Setting AllowCrossVersion__
 {{region persistence-framework-cross-version-support-1}}

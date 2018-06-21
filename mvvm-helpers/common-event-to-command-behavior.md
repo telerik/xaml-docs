@@ -11,6 +11,14 @@ position: 4
 # EventToCommandBehavior
 
 When working in more advanced development scenarios we often find ourselves leaning towards the MVVM pattern for producing cleaner, loosely coupled, easier to test code, but along with this comes the responsibility of ensuring that all controls we are using can follow this pattern. While it is very easy to work with the event-based model that exists across the .Net framework, events do not play well into the mindset of reducing traditional code-behind and instead handling logic within a viewmodel. This is where the Telerik __EventToCommandBehavior__ comes into use to allow your events to fire and your code to respond accordingly, all in the ViewModel without touching the code-behind of the UserControls.
+
+* [Getting Started](#getting-started)
+* [RaiseOnHandledEvents](#raiseonhandledevents)
+* [Command Parameters](#command-parameters)
+* [CommandTarget](#commandtarget)
+* [Multiple Commands](#multiple-commands)
+* [Failing Bindings](#failing-bindings)
+
       
 ## Getting Started
 
@@ -172,6 +180,43 @@ The __EventToCommandBehavior__ gives you the ability to add multiple __EventBini
 {{endregion}}
 
 >If you have multiple commands attached to a single event, the commands will be executed in the order they are defined in the __EventBindings__ collection (from top to bottom).
+
+## Failing Bindings
+
+There are some cases where an event could be raised before the __Command__ binding of the __EventBinding__ is evaluated. Thus, the events would not be handled. There are a couple solutions for such scenarios. For the purpose of the examples, the __AutoGeneratingColumn__ event of __RadGridView__ will be used.
+
+### Use ElementName for the Command binding
+
+#### __[XAML] Example 11: Set ElementName binding for the Command__
+{{region common-event-to-command-behavior_07}}
+	<telerik:EventBinding Command="{Binding ElementName=gridView, Path=DataContext.AutoGeneratingColumnCommand}" EventName="AutoGeneratingColumn" PassEventArgsToCommand="True"/>
+{{endregion}}
+
+### Set the DataContext of the Window in XAML
+
+#### __[XAML] Example 12: Set the DataContext of the Window in XAML__
+{{region common-event-to-command-behavior_08}}
+	<Window.DataContext>
+    	<local:MainWindowViewModel />
+	</Window.DataContext>
+{{endregion}}
+
+### Add the EventBinding programmatically
+
+#### __[XAML] Example 13: Add the EventBinding programmatically__
+{{region common-event-to-command-behavior_09}}
+	public MainWindow()
+	{
+    	InitializeComponent();
+    	this.DataContext = new MainWindowViewModel();
+    	EventToCommandBehavior.GetEventBindings(gridView).Add(new Telerik.Windows.Controls.EventBinding()
+    	{
+        	EventName = "AutoGeneratingColumn",
+        	Command = (gridView.DataContext as MainWindowViewModel).AutoGeneratingColumnCommand,
+        	PassEventArgsToCommand = true
+    	});
+	}
+{{endregion}}
 
 ## See Also
 

@@ -127,7 +127,7 @@ The Azure Bot Service makes it possible to attach suggested actions to messages 
 ## See Also
 
 * [Getting Started]({%slug chat-getting-started%})
-* [Type Indicator]({%slug chat-items-type-indicator%})
+* [Typing Indicator]({%slug chat-items-typing-indicator%})
 * [Azure Cloud Integration Getting Started]({%slug cloud-integration-azure-getting-started%})
 * [Azure Cloud Integration Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 * [Azure Cloud Integration TextAnalysis]({%slug cloud-integration-cognitive-services-text-analysis%})

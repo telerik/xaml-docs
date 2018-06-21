@@ -15,7 +15,7 @@ The __TextMessage__ is intended to be used for sending a simple string type mess
 * __String text__ 
 * __Author author__
 * __String status__: when having a __status__ defined, the __creationDate__ needs to be set as well.
-* __DateTime creationDate__: the __creationDate__ parameter can optionally be set.
+* __DateTime creationDate__: the __creationDate__ parameter can be set optionally.
 
 #### __[C#] Example 1: Defining a TextMessage__ 
 {{region radchat-messages-textmessage_01}}

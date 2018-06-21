@@ -10,7 +10,7 @@ position: 2
 
 # Product Card
 
-__ProductCard__ extends __ImageCard__ by adding a few more fields for additional information intended to describe a product. Below are the properties specific for it.
+__ProductCard__ extends __ImageCard__ by adding a few more fields for additional information intended to describe a product. Below are the properties that are specific for it.
 
 * __RatingItemsCount__: controls the overall number of items based on which the product will be rated
 * __Rating__: sets the rating value of the given card product

@@ -15,10 +15,12 @@ __ImageCard__ extends the __CardMessage__ by adding the option an __Image__ to b
 #### __[C#] Example 1: Defining an ImageCard__
 {{region radchat-messages-imagecard_01}}
 	ImageCardMessage imageCardMessage = new ImageCardMessage(this.currentAuthor);
-            imageCardMessage.ImageSource = new BitmapImage(new Uri("/Images/PeterJohnson.jpg", UriKind.Relative));
+            imageCardMessage.ImageSource = new BitmapImage(new Uri("/Images/PeterJohnson.jpg", UriKind.RelativeOrAbsolute));
             imageCardMessage.Title = "Peter Johnson";
             imageCardMessage.SubTitle = "Senior Front-end Developer";
             imageCardMessage.Text = "Peter has an experience of 5 years as a front-end developer."; 
+
+	this.chat.AddMessage(imageCardMessage);
 {{endregion}}
 
 #### __Figure 1: Defining ImageCard__

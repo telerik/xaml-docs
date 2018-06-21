@@ -24,17 +24,17 @@ Interacting with the messages of __RadChat__ is done through __ResponseAction__ 
 Their visual representation may vary depending on the type of message. For example, the default __CommitResponseAction__ that is defined for the __CalendarMessage__ would appear as a __Submit__ button shown below.
 
 #### __Figure 1: Defining CalendarMessage__
-![CalendarMessage](images/RadChat_Messages__Reports_01.png)
+![CalendarMessage](images/RadChat_Messages_Reports_01.png)
 
-Adding a __CancelResponseAction__ will have the following output.
 
 #### __[C#] Example 1: Adding a CancelResponseAction__
 {{region radchat-messages-reports_01}}
-			DateTime time = new DateTime(2018, 6, 1);
             CalendarMessage calendarMessage = new CalendarMessage(MessageDisplayPosition.Inline, otherAuthor, DateTime.Now, DateTime.Now);
             calendarMessage.ReportActions.Add(new CancelResponseAction(calendarMessage, "Cancel"));
             this.chat.AddMessage(calendarMessage);
 {{endregion}}
+
+Adding a __CancelResponseAction__ will have the following output.
 
 #### __Figure 2: Defining CalendarMessage with CancelResponseAction__
 ![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_02.png)

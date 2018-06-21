@@ -15,7 +15,7 @@ The __CarouselMessage__ utilizes the [RadCarousel]({%slug carousel-overview%}) c
 * __MessageDisplayPosition displayPosition__
 * __Author author__
 * __IEnumerable source__
-* __[DateTime creationDate = default(DateTime)]__
+* __DateTime creationDate__
 
 For the purpose of this example a sample collection of [ImageCards]({%slug chat-items-imagecard%}) will be defined.
 

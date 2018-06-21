@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The __UI for WPF's Conversational UI__ is exposed as of __R2 2018__. It provides capabilities for integrating it with all major services available today. This is done through the __RadChat__ component.  
+The __RadChat__ component is exposed as of __R2 2018__. It enables easy implementation of conversational UI in WPF applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilites. 
 
 #### __Figure 1: RadChat__
 
@@ -24,7 +24,11 @@ __Conversational UI's__ features list:
 
 * __Overlays__: Calendar, List, Carousel, etc. 
 
-* __Suggestions__: Make the user's input easier by adding suggestions.
+* __Suggested Actions__: Make the user's input easier by adding suggestions.
+
+* __Type Indicator__: Indicate to the current user that another __Author__ is typing.
+
+* __ToolBar Commands__: Enabling user interaction with the __ToolBar__ through triggering __ToolBarCommands__.
 
 * __Predefined variety of themes__
 
@@ -33,7 +37,9 @@ __Conversational UI's__ features list:
 ## See Also
 
 * [Getting Started]({%slug chat-getting-started%})
-
+* [Messages Overview]({%slug chat-items-messages-overview%})
+* [ToolBar Commands]({%slug chat-items-toolbar-commands%})
+* [Suggested Actions]({%slug chat-items-suggested-actions%})
 
 
 

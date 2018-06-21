@@ -71,24 +71,24 @@ After having the __ToolBarCommandTemplateSelector__ implemented, it can be defin
 #### __[XAML] Example 4: Adding the ToolBarCommandTemplateSelector__
 {{region radchat-messages-toolbarcommands_04}} 
 	<Window.Resources>
-        <my:ToolBoxCommandTemplateSelector x:Key="ToolBoxCommandsTemplateSelector">
-            <my:ToolBoxCommandTemplateSelector.ClickTemplate>
+        <my:ToolBarCommandTemplateSelector x:Key="ToolBarCommandTemplateSelector">
+            <my:ToolBarCommandTemplateSelector.ClickTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Image Source="/Images/Hotelresidential.png" Width="50"/>
-                        <TextBlock Text="{Binding Text}"/>
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="/Images/Hotelresidential.png" Width="70" Height="120"/>
+                        <TextBlock Text="{Binding Text}" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
-            </my:ToolBoxCommandTemplateSelector.ClickTemplate>
-        </my:ToolBoxCommandTemplateSelector>
-	</Window.Resources>
+            </my:ToolBarCommandTemplateSelector.ClickTemplate>
+        </my:ToolBarCommandTemplateSelector>
+    </Window.Resources>
 {{endregion}}
 
 Finally, the __ToolBarCommandTemplateSelector__ can be applied to __RadChat__.
 
 #### __[XAML] Example 5: Applying the ToolBarCommandTemplateSelector__
 {{region radchat-messages-toolbarcommands_05}} 
-	<telerik:RadChat x:Name="chat" ToolBarCommandTemplateSelector="{StaticResource ToolBoxCommandsTemplateSelector}"/>
+	<telerik:RadChat x:Name="chat" ToolBarCommandTemplateSelector="{StaticResource ToolBarCommandTemplateSelector}"/>
 {{endregion}}
 
 #### __Figure 3: Conversational UI with custom ToolBarCommandTemplateSelector__

@@ -197,7 +197,7 @@ There are some cases where an event could be raised before the __Command__ bindi
 #### __[XAML] Example 12: Set the DataContext of the Window in XAML__
 {{region common-event-to-command-behavior_08}}
 	<Window.DataContext>
-    	<local:MainWindowViewModel />
+    		<local:MainWindowViewModel />
 	</Window.DataContext>
 {{endregion}}
 
@@ -207,14 +207,14 @@ There are some cases where an event could be raised before the __Command__ bindi
 {{region common-event-to-command-behavior_09}}
 	public MainWindow()
 	{
-    	InitializeComponent();
-    	this.DataContext = new MainWindowViewModel();
-    	EventToCommandBehavior.GetEventBindings(gridView).Add(new Telerik.Windows.Controls.EventBinding()
-    	{
-        	EventName = "AutoGeneratingColumn",
-        	Command = (gridView.DataContext as MainWindowViewModel).AutoGeneratingColumnCommand,
-        	PassEventArgsToCommand = true
-    	});
+		InitializeComponent();
+		this.DataContext = new MainWindowViewModel();
+		EventToCommandBehavior.GetEventBindings(gridView).Add(new Telerik.Windows.Controls.EventBinding()
+		{
+			EventName = "AutoGeneratingColumn",
+			Command = (gridView.DataContext as MainWindowViewModel).AutoGeneratingColumnCommand,
+			PassEventArgsToCommand = true
+		});
 	}
 {{endregion}}
 

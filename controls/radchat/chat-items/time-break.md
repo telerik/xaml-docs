@@ -39,7 +39,7 @@ __RadChat__ provides the __AddTimeBreak__ method for adding a __TimeBreak__ whic
 #### __Figure 2: Adding a TimeBreak__
 ![Adding a TimeBreak](images/RadChat_TimeBreak_01.png)
 
-## Handling the AddingTimeBreak event
+## Handling the AddingTimeBreak Event
 
 The __AddingTimeBreak__ event provides various information regarding the last __MessageGroup__ and the __Messages__ in it. Also, the event can be canceled. The following event arguments are exposed for this purpose.
 
@@ -57,8 +57,6 @@ The __LastMessageGroup__ itself provides the following information.
 
 ## See Also
 
-* [Getting Started]({%slug chat-getting-started%})
-
-* [Typing Indicator]({%slug chat-items-typing-indicator%})
-
+* [Getting Started]({%slug chat-getting-started%}) 
+* [Typing Indicator]({%slug chat-items-typing-indicator%}) 
 * [Suggested Actions]({%slug chat-items-suggested-actions%})

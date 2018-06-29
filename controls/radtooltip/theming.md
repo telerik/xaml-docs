@@ -11,7 +11,7 @@ position: 3
 # Theming
 
 {% if site.site_name == 'Silverlight' %}
-Telerik themes are not turned on by default in __RadToolTip__. This article described two approaches which can be used to theme the __RadToolTip__ control.
+Telerik themes are not turned on by default in __RadToolTip__. This article describes two approaches which can be used to theme the __RadToolTip__ control.
 
 The first approach that can be used for setting up the __RadToolTip__ theming is to set the __RadToolTipContentView__ control inside the __ToolTipContent__ property.
 

@@ -12,32 +12,25 @@ position: 0
 
 {% if site.site_name == 'WPF' %}![sparklines wpf](images/sparklines_wpf.png){% endif %}{% if site.site_name == 'Silverlight' %}![sparklines sl](images/sparklines_sl.png){% endif %}
 
-Thank you for choosing Telerik __RadSparkline__!
+__RadSparkline__ is a set of controls that shows an information graphic. The controls are characterized by small size, excellent performance and lightweight. By definition, the sparkline is mainly used to outline trends, however, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.
 
-The __RadSparkline__ control is an information graphic, which is characterized by small size, excellent performance and lightweight. By definition, the Sparkline is mainly used to outline trends, however, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.
+In terms of data visualization, RadSparkline is comparable to [RadCartesianChart]({%slug radchartview-overview%}), however, in order to maximize performance, the spark lines do not utilize this many visual indicators, as well as x or y axis, or multiple axes.
 
-In terms of data visualization, the __RadSparkline__ control is comparable to __RadChart__, however, in order to maximize performance, the spark lines do not utilize this many visual indicators, as well as x or y axis or multiple axes.
+![](images/sparkline-overview-0.png)
 
->In order to use __RadSparkline__ control in your projects you have to add references to __Telerik.Windows.Controls.Charting.dll, Telerik.Windows.Controls.dll, Telerik.Windows.Controls.DataVisualization.dll and Telerik.Windows.Data.dll.__
+## Key Features
 
-__Types of Sparklines__ Currently, the Sparkline control has the following subtypes:
+* __Different visualization types__: You can use the controls from the sparkline suite to visualize your data using line, points, bars, etc. Read more about this in the [Sparkline Types]({%slug radsparkline-getting-started-types%}) article.
 
-1. __Line__, which is of type __RadLinearSparkline__. This type of sparkline represents a set of points, connected by a line.
+* __Indicators__: The indicator are visual markers that can be used to annotate the data points positions or highlight values from the plotted data. Read more about this in the [Indicators]({%slug radsparkline-features-indicators%}) article.
 
-    ![](images/radsparklineline.png)
+* __Horizontal axis__: The sparkline allows you to draw a horizontal axis that can be used to annotate the data trend. Read more about this in the [Axis]({%slug radsparkline-features-axis%}) article.
 
-2. __Scatter__, which is of type __RadScatterSparkline__. This represents the data points as a set of scattered, separate points. This is demonstrated in the screenshot below:
+>tip Get started with the controls with the [Getting Started]({%slug radsparkline-getting-started%}) help article that shows how to use them in a basic scenario.
 
-    ![](images/radsparklinescatter.png)
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#TabControl/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
-3. __Area__, which is of type __RadAreaSparkline__. The area represents a series of datapoints, connected by a line, as well as the space defined by the line and the median (which is usually the 0-value axis, however the value may be specified to be different from 0). This is demonstrated by the screenshot below:
+## See Also
+ * [Data Binding]({%slug radsparkline_databinding%})
+ * [Indicators]({%slug radsparkline-features-indicators%})
 
-    ![](images/radsparklinearea.png)
-
-4. __Column__, which is of type __RadColumnSparkline__. This type is very similar to a bar, and is a precise match of the value of each datapoint. Its vertical direction is an indicator of the value - positive or negative.
-
-    ![](images/radsparklinecolumn.png)
-
-5. __Win/Loss__ is of type __RadWinLossSparkline__. This type of sparkline is very similar to the __column__ type, with the only difference being that all datapoints, or bars are of equal size. There is no visual indicator of the precise value of each datapoint, but simply of its positive or negative nature. This is demonstrated in the screenshot below:
-
-    ![](images/radsparklinewinloss.png)

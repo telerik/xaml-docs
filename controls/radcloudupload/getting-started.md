@@ -40,7 +40,7 @@ The following example shows how to define a RadCloudUpload control and a RadClou
     </Grid>
 {{endregion}}
 
-> The could upload control itself provides only a UI and an interface to execute the upload task. However, the upload process should be implemented with additional custom code. The next section shows how to set up this.
+> The cloud upload control itself provides only a UI and an interface to execute the upload task. However, the upload process should be implemented with additional custom code. The next section shows how to set up this.
 
 ## Creating the Provider
 

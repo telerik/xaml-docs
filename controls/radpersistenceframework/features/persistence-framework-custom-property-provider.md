@@ -14,7 +14,7 @@ This tutorial describes how to use a custom property provider to define the prop
 
 The __PersistenceFramework__ exposes an extension method that allows you to register a class to act as a property provider and define which properties of a persisted control should be saved and how. The method has the following syntax:	  
 
-#### __C#__
+#### __[C#] Example 1: Register Custom Provider__
 {{region persistence-framework-custom-property-provider-0}}
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(System.Type type, Telerik.Windows.Persistence.Services.IPersistenceProvider provider);
 {{endregion}}
@@ -22,8 +22,16 @@ The __PersistenceFramework__ exposes an extension method that allows you to regi
 You need to pass as arguments the type of the component that will use the custom property provider and an instance of the custom property provider class.  
 
 >A custom property provider should be used if:
->	- You need to persist more complex controls with complex properties such as the __RadGridView__.
->	- You need to have more control over the persistence process and specifically over the list of persisted properties and how they are provided to the __PersistenceFramework__ for serialization.			
+>	* You need to persist more complex controls with complex properties such as the __RadGridView__.
+>	* You need to have more control over the persistence process and specifically over the list of persisted properties and how they are provided to the __PersistenceFramework__ for serialization.			
+
+The PersistenceFramework provides several providers which can be used to persist specific properties.
+
+* [ICustomPropertyProvider](#icustompropertyprovider)
+* [IAttachedPropertyProvider](#iattachedpropertyprovider)
+* [IPropertyProvider](#ipropertyprovider)
+* [IPropertyValidatorProvider](#ipropertyvalidatorprovider)
+* [ITypeConverterProvider](#itypeconverterprovider)
 
 ## ICustomPropertyProvider
 
@@ -43,7 +51,7 @@ The __PersistenceFramework__ provides an __ICustomPropertyProvider__ interface w
 
 You can implement the above methods in a custom property provider class as follows:		
 
-#### __C#__
+#### __[C#] Example 2: Implement ICustomPropertyProvider interface__
 
 {{region persistence-framework-custom-property-provider-1}}
     public class SampleCustomPropertyProvider : ICustomPropertyProvider
@@ -82,7 +90,7 @@ You can implement the above methods in a custom property provider class as follo
     }
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Implement ICustomPropertyProvider interface__
 {{region persistence-framework-custom-property-provider-1}}
     Public Class SampleCustomPropertyProvider
         Implements ICustomPropertyProvider
@@ -115,12 +123,12 @@ You can implement the above methods in a custom property provider class as follo
 
 Next, you need to register the __SampleCustomPropertyProvider__ in the application.		
 
-#### __C#__
+#### __[C#] Example 3: Register the SampleCustomPropertyProvider class__
 {{region persistence-framework-custom-property-provider-2}}
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(typeof(SampleControl), new SampleCustomPropertyProvider());
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Register the SampleCustomPropertyProvider class__
 {{region persistence-framework-custom-property-provider-2}}
     ServiceProvider.RegisterPersistenceProvider(Of ICustomPropertyProvider)(GetType(SampleControl), New SampleCustomPropertyProvider())
 {{endregion}}
@@ -138,6 +146,99 @@ You can find examples of __ICustomPropertyProvider__ implementations in the __Pe
 * __GridView Serializaiton__
 * __Docking Serializaiton__
 {% endif %}
+
+## IAttachedPropertyProvider
+
+This __IAttachedPropertyProvider__ interface should be implement when you want to persist custom attached properties. It exposes the following method:
+
+* __GetAttachedPropertyTypeProviders():__ This method should return an array of Type objects to represent the list of attached properties that have to be persisted by the __PersistenceFramework__.
+
+#### __[C#] Example 4: Implement IAttachedPropertyProvider interface__
+{{region persistence-framework-custom-property-provider-2}}   
+	public class CustomAttachedProvider : IAttachedPropertyProvider
+    {
+        public Type[] GetAttachedPropertyTypeProviders()
+        {
+            return new Type[]
+			{
+			};
+        }
+    }
+{{endregion}}
+
+## IPropertyProvider
+
+This __IAttachedPropertyProvider__ interface should be implement when you want to control which properties should be saved.
+
+* __GetProperties():__ this method should return an array of __PropertyInfo__ objects to represent the list of properties that have to be persisted by the __PersistenceFramework__.
+
+#### __[C#] Example 5: Implement IPropertyProvider interface__
+{{region persistence-framework-custom-property-provider-2}}   
+	public class CustomPropertyProvider : IPropertyProvider
+    {
+        public PropertyInfo[] GetProperties()
+        {
+			return new PropertyInfo[]
+			{
+			};
+        }
+    }
+{{endregion}}
+
+## IPropertyValidatorProvider
+
+By implementing this interface you can validate if a property should be saved or not. 
+
+* __IsValid():__ This method return true or false if a property should be persist.
+
+#### __[C#] Example 6: Implement IPropertyValidatorProvider interface__
+{{region persistence-framework-custom-property-provider-2}}   
+	public class PropertyValidatorProvider : IPropertyValidatorProvider
+    {
+        public bool IsValid(string propertyName, Type propertyType, object context, object value)
+        {
+           return true;
+        }
+    }
+{{endregion}}
+
+>Only one validator for given type should be register.
+
+## ITypeConverterProvider
+
+The __ICustomPropertyProvider__ interface should be implement in order to convert a values or properties.	
+
+* __GetTypeConverterType():__ This method return the type of the __TypeConverter__.
+
+#### __[C#] Example 7: Implement ITypeConverterProvider interface__
+{{region persistence-framework-custom-property-provider-2}}   
+	public class TypeProvider : ITypeConverterProvider
+    {
+        public Type GetTypeConverterType()
+        {
+            return typeof(CustomTypeConverter);
+        }
+    }
+    public class CustomTypeConverter : TypeConverter
+    {        
+        public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
+        {
+            return base.CanConvertFrom(context, sourceType);
+        }
+        public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
+        {
+            return base.ConvertFrom(context, culture, value);
+        }
+        public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
+        {
+            return base.CanConvertTo(context, destinationType);
+        }
+        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+        {
+            return base.ConvertTo(context, culture, value, destinationType);
+        }
+    }
+{{endregion}}
 
 ## See Also
  * [Isolated Storage]({%slug persistence-framework-isolated-storage%})

@@ -10,7 +10,7 @@ position: 4
 
 # Open File Dialog
 
-__RadCloudUpload__ allows you to open a custom dialog to browse the files for upload. To do this set the __CreateOpenFileDialog__ property. It is of type __Func&lt;Microsoft.Win32.OpenFileDialog&gt;__ and can be used to provide a function that returns a OpeFileDialog instance. This is useful to customize the dialog settings. For example, to restrict users to upload certain type of files.        
+__RadCloudUpload__ allows you to open a custom dialog to browse the files for upload. To do this set the __CreateOpenFileDialog__ property. It is of type __Func&lt;Microsoft.Win32.OpenFileDialog&gt;__ and can be used to provide a function that returns an OpeFileDialog instance. This is useful to customize the dialog settings. For example, to restrict users to upload certain type of files.        
 
 #### __[XAML] Example 1: Defining the cloud upload control__
 {{region radcloudupload-features-custom-open-file-dialog-0}}

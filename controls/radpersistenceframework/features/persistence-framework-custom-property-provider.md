@@ -168,7 +168,7 @@ This __IAttachedPropertyProvider__ interface should be implement when you want t
 
 ## IPropertyProvider
 
-This __IAttachedPropertyProvider__ interface should be implement when you want to control which properties should be saved.
+This __IPropertyProvider__ interface should be implement when you want to control which properties should be saved.
 
 * __GetProperties():__ this method should return an array of __PropertyInfo__ objects to represent the list of properties that have to be persisted by the __PersistenceFramework__.
 
@@ -206,7 +206,7 @@ By implementing this interface you can validate if a property should be saved or
 
 ## ITypeConverterProvider
 
-The __ICustomPropertyProvider__ interface should be implement in order to convert a values or properties.	
+The __ITypeConverterProvider__ interface should be implement in order to convert a values or properties.	
 
 * __GetTypeConverterType():__ This method return the type of the __TypeConverter__.
 

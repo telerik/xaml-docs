@@ -29,6 +29,8 @@ We have followed a naming convention where the key for every control's default s
 	</Style>
 {{endregion}}
 
+> The Telerik themes come also with Styles for some of the [MS native controls]({%slug styling-apperance-themes-mscontrols%}#native-controls-supported-by-the-telerik-theming-mechanism) as TextBox, CheckBox, Button etc. If you want to customize the Style of those controls and keep the Telerik theming you can use the same principle as in __Example1__. For example, the x:Key of the TextBox style is __TextBoxStyle__.
+
 ## Styling Custom Controls
 
 Note that custom controls will not automatically receive the inherited control's style. You will have to base your custom style on the default style of the control that is inherited.

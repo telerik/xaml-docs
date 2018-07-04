@@ -13,28 +13,22 @@ position: 0
 {% if site.site_name == 'Silverlight' %}![radlegend sl](images/radlegend_sl.png){% endif %}
 {% if site.site_name == 'WPF' %}![radlegend wpf](images/radlegend_wpf.png){% endif %}
 
-The RadLegend is a standalone control which visualizes a list of items. The items with which the control works are of type __Telerik.Windows.Controls.Legend.LegendItem__. In order for items to be visualized, the LegendItem objects must be passed to the RadLegend in a LegendItemCollection.        
+__RadLegend__ is a stand-alone control which visualizes a list of legend items. The control could be used to create a legend for a chart ot other type of data visualization.  
 
->In order to use the RadLegend in your project you have to add references to the following assembly:
->	- __Telerik.Windows.Controls.dll__  
-> After adding references to Controls dll you can access the RadLegend element in XAML through the following namespace declaration:
-> `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
+![](images/radlegend-overview-0.png)
 
-Below is given a simple way to use the RadLegend control:       
+## Key Feautres
 
-#### __XAML__
-{{region radlegend-overview_1}}
-	<telerik:RadLegend>
-	    <telerik:RadLegend.Items>
-	        <telerik:LegendItemCollection>
-	            <telerik:LegendItem MarkerFill="#FF55AA33" Title="Legend item 1" />
-	            <telerik:LegendItem MarkerFill="#FFCC3399" Title="Legend item 2" />
-	            <telerik:LegendItem MarkerFill="#FF5511BB" Title="Legend item 3" />
-	        </telerik:LegendItemCollection>
-	    </telerik:RadLegend.Items>
-	</telerik:RadLegend>
-{{endregion}}
+* __Default geometry visualization__: The visual items of legend come with a predefined template that contains of a small rectangle geometry marking the color of the item and also a text title.
 
-![Legend 1](images/radlegend-overview-0.png)
+* __Flexible customization__: The legend items can be easily customized via the LegendItem objects which populates the control's Items collection. Additionally, you can fully customize the visual via the [ItemTemplate]({%slug radlegend-itemtemplate%}) of the control.
 
-The RadLegend is easily customized through the DefaultMarkerGeometry, ItemTemplate and ItemsPanel properties.
+* __RadChartView integration__: The controls from the RadChartView suite come with a built-in [support for the RadLegend control]({%slug radchartview-features-radlegend-support%}).
+
+>tip Get started with the control with its [Getting Started]({%slug radlegend-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> You can see the RadLegend control demonstrated mostly in the RadChartView examples from the demo application that can found at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#TabControl/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+
+## See Also
+* [ItemsPanel]({%slug radlegend-itemspanel%})
+* [Marker Geometry]({%slug radlegend-marker-geometry%})

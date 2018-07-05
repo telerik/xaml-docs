@@ -13,12 +13,13 @@ position: 0
 This tutorial will walk you through the creation of a sample application that contains __RadLinearSparkline__. The other controls from the RadSparkline suite are set up using the same principle.
 
 * [Assembly References](#assembly-references)
+* [Sparkline Types](#sparkline-types)
 * [Defining Sparkline](#defining-sparkline)
 * [Showing Axis](#showing-axis)
 
 ## Assembly References
 
-In order to use the _RadSparkline__ control, you will need to add references to the following assemblies:
+In order to use the __RadSparkline__ control, you will need to add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__

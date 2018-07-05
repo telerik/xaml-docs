@@ -26,7 +26,7 @@ To show the axis set the __ShowAxis__ property of the sparkline control to True.
 {{endregion}}
 
 #### Figure 1: Sparkline Axis
-![](images/radsparkline-features-axis-0.png)
+![Sparkline Axis](images/radsparkline-features-axis-0.png)
 
 ## Customizing the Axis
 
@@ -44,7 +44,7 @@ To set the origin value of the axis (in relation to the vertical axis), set the 
 {{endregion}}
 
 #### Figure 1: Sparkline Customized Axis
-![](images/radsparkline-features-axis-1.png)
+![Sparkline Customized Axis](images/radsparkline-features-axis-1.png)
 
 ## Controlling the Data Range
 

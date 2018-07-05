@@ -36,7 +36,7 @@ The __RadHeatMap__ control can be used to visualize numeric data in a matrix lik
 
 * __Labels__: You can show labels in the cells generated for the plotted data. Read more about thsi in the [Labels]({%slug radheatmap-labels%}) article.
 
-* __Customizeable templates__: The control allows you to customize the appearance of the control as well as its elements.
+* __Customizable templates__: The control allows you to customize the appearance of the control as well as its elements.
 
 >tip Get started with the control with its [Getting Started]({%slug radheatmap-getting-started%}) help article that shows how to use it in a basic scenario.
 

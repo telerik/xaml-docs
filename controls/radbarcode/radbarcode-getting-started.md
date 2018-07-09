@@ -10,7 +10,7 @@ position: 1
 
 # Getting Started
 
-The RadBarcode suite contains a set of controls that allows you to display different barcodes. This article will walk you through the creating a simple application that contains __RadBarcode128__ control. The same principle can be used to set up the other controls from the suite.
+The RadBarcode suite contains a set of controls that allows you to display different barcodes. This article will walk you through creating a simple application that contains __RadBarcode128__ control. The same principle can be used to set up the other controls from the suite.
 
 * [Assembly References](#assembly-references)
 * [Defining the Control and Setting Data](#defining-the-control-and-setting-data)

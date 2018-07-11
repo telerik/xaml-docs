@@ -19,9 +19,9 @@ __RadLegend__ is a stand-alone control which visualizes a list of legend items. 
 
 ## Key Feautres
 
-* __Default geometry visualization__: The visual items of legend come with a predefined template that contains of a small rectangle geometry marking the color of the item and also a text title.
+* __Default geometry visualization__: The visual items of legend come with a predefined template that contains a small rectangle geometry marking the color of the item and also a text title.
 
-* __Flexible customization__: The legend items can be easily customized via the LegendItem objects which populates the control's Items collection. Additionally, you can fully customize the visual via the [ItemTemplate]({%slug radlegend-itemtemplate%}) of the control.
+* __Flexible customization__: The legend items can be easily customized via the LegendItem objects which populate the control's Items collection. Additionally, you can fully customize the visual via the [ItemTemplate]({%slug radlegend-itemtemplate%}) of the control.
 
 * __RadChartView integration__: The controls from the RadChartView suite come with a built-in [support for the RadLegend control]({%slug radchartview-features-radlegend-support%}).
 

@@ -178,10 +178,17 @@ This __IPropertyProvider__ interface should be implement when you want to contro
     {
         public PropertyInfo[] GetProperties()
         {
-			return new PropertyInfo[]
+		List<PropertyInfo> properties = new List<PropertyInfo>();
+		var allProperties = typeof(RadGridView).GetProperties();
+		foreach (PropertyInfo item in allProperties)
+		{
+			if (item.Name == "Width" || item.Name == "Height")
 			{
-			};
-        }
+				properties.Add(item);
+			}
+		}
+		return properties.ToArray();
+	}
     }
 {{endregion}}
 

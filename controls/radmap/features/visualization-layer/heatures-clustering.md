@@ -12,6 +12,11 @@ position: 11
 
 Many applications operate with collections of items which are placed close to others and it's uncomfortable to use them as separate objects for low zoom levels. The __VisualizationLayer__ supports the __Clustering__ feature. It allows grouping of items according to condition.      
 
+* [Using of the clustering](#usingoftheclustering)
+* [DefaultClusterGenerator class](#defaultclustergenerator)
+* [Items Grouping Example](#itemsgroupingexample)
+* [The ClusterData object](#theclusterdataobject)
+
 ## Using of the clustering
 
 The __VisualizationLayer__ exposes the following properties which are related to the __Clustering__ feature:        
@@ -44,7 +49,7 @@ The following example demonstrates how to use the __Clustering__ feature to disp
 
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         
-#### __XAML__
+#### __[XAML] Example 1: Displaying Airports of USA__
 {{region radmap-visualization-layer-clustering_0}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -96,7 +101,7 @@ By default the cluster looks like above and it shows how many items it contains.
 
 You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to customize the appearance of the item and of the cluster.
         
-#### __XAML__
+#### __[XAML] Example 2: Customizing the appearance of the cluster__
 {{region radmap-visualization-layer-clustering_2}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -177,6 +182,23 @@ There are the results of using custom templates for clusters and items:
 ![Rad Map Features Virtualization Layer Clustering 2](images/RadMap_Features_VirtualizationLayer_Clustering_2.png)
 ![Rad Map Features Virtualization Layer Clustering 3](images/RadMap_Features_VirtualizationLayer_Clustering_3.png)
 
+## DefaultClusterGenerator class
+
+VisualizationLayer has __IClusterGenerator__ instance member which is responsible for the clustering behavior. By default it uses the instance of the built-in __DefaultClusterGenerator class__. This class can used to customize the default grouping algorithm. The __DefaultClusterGenerator class__ expose the following properties:
+
+* __AutoExpandWhenSingle:__ A property of type __Boolean__ that gets or sets the value which indicates whether cluster should be automatically expanded when it contains one data item only.
+* __CloseDistance:__ A property of type __double[]__ that gets or sets an array of the doubles which every item define the max distance between the cluster center and the item for the corresponding ZoomLevel.
+* __DeleteWhenEmpty:__ A property of type __Boolean__ that gets or sets the value which indicates whether cluster should be deleted if it is empty.
+* __ExpandRadius:__ A property of type __double__ that gets or sets the radius (in pixels) which will be used to calculate coordinates of the items when a cluster is expanded to the polygon vertices. 
+* __HideExpanded:__ A property of type __Boolean__ that gets or sets whether expanded cluster should be hidden or not.
+* __Layer:__ A property of type __VisualizationLayer__ that gets or sets layer which the current map belongs to.
+
+The __DefaultClusterGenerator__ class also provides several methods which can be overridden in order to further customize the clustering algorithm.
+
+* __CreateCluster(Location center, object item):__ This method creates a cluster at the specified location. 
+* __IsItemInClusterRegion(ClusterData cluster, MapObjectInfo info, int zoomLevel):__ This method check if data item belongs to a given cluster.
+* __RegenerationNeeded(ClusterData cluster, int zoomLevel): This method can be overridden so you can customize if given cluster should be regenerated at a given zoom level. The default value is __true__.
+
 ## The ClusterData object
 
 The __VisualizationLayer__ uses the __ClusterData__ object to visualize the cluster. The __ClusterData__ exposes the following properties which can be used in applications:        
@@ -213,7 +235,7 @@ Many of these properties are used by the cluster generator, only. It calculates 
 
 The __ClusterState__ property allows displaying the items of cluster without increasing of the zoom level. You can attach the mouse events in the cluster template like the XAML code below.
         
-#### __XAML__
+#### __[XAML] Example 3: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
 {{region radmap-visualization-layer-clustering_3}}
     <DataTemplate x:Key="ClusterTemplate">
         <Border Background="#af3f3f3f"
@@ -232,7 +254,7 @@ The __ClusterState__ property allows displaying the items of cluster without inc
 
 The following *MouseLeftButtonDown* event handler uses to expand the items of cluster to the polygon vertices:
         
-#### __C#__
+#### __[C#] Example 4: MouseLeftButtonDown event handler__
 {{region radmap-visualization-layer-clustering_4}}
 	private void ExpandClusterToPolygon(object sender, MouseButtonEventArgs e)
 	{
@@ -258,7 +280,7 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB.NET] Example 4: MouseLeftButtonDown event handler__
 {{region radmap-visualization-layer-clustering_5}}
     Private Sub ExpandClusterToPolygon(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
@@ -280,7 +302,7 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 
 The following *MouseRightButtonDown* event handler uses to expand the items of cluster to their original locations:
         
-#### __C#__
+#### __[C#] Example 5: MouseRightButtonDown event handler__
 {{region radmap-visualization-layer-clustering_6}}
 	private void ExpandCluster(object sender, MouseButtonEventArgs e)
 	{
@@ -306,7 +328,7 @@ The following *MouseRightButtonDown* event handler uses to expand the items of c
 	}
 {{endregion}}
 
-#### __VB__
+#### __[VB.NET] Example 5: MouseRightButtonDown event handler__
 {{region radmap-visualization-layer-clustering_7}}
     Private Sub ExpandCluster(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)

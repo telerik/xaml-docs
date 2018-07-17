@@ -13,9 +13,9 @@ position: 11
 Many applications operate with collections of items which are placed close to others and it's uncomfortable to use them as separate objects for low zoom levels. The __VisualizationLayer__ supports the __Clustering__ feature. It allows grouping of items according to condition.      
 
 * [Using of the clustering](#using-of-the-clustering)
-* [DefaultClusterGenerator class](#defaultclustergenerator-class)
 * [Items Grouping Example](#items-grouping-example)
-* [The ClusterData object](#the-cluster-data-object)
+* [DefaultClusterGenerator class](#defaultclustergenerator-class)
+* [The ClusterData object](#the-clusterdata-object)
 
 ## Using of the clustering
 
@@ -184,7 +184,7 @@ There are the results of using custom templates for clusters and items:
 
 ## DefaultClusterGenerator class
 
-VisualizationLayer has __IClusterGenerator__ instance member which is responsible for the clustering behavior. By default it uses the instance of the built-in __DefaultClusterGenerator class__. This class can used to customize the default grouping algorithm. The __DefaultClusterGenerator class__ expose the following properties:
+The VisualizationLayer has an __IClusterGenerator__ instance member which is responsible for the clustering behavior. By default it uses an instance of the built-in __DefaultClusterGenerator class__. This class can be used to customize the default grouping algorithm. The __DefaultClusterGenerator class__ exposes the following properties:
 
 * __AutoExpandWhenSingle:__ A property of type __Boolean__ that gets or sets the value which indicates whether cluster should be automatically expanded when it contains one data item only.
 * __CloseDistance:__ A property of type __double[]__ that gets or sets an array of the doubles which every item define the max distance between the cluster center and the item for the corresponding ZoomLevel.
@@ -196,8 +196,8 @@ VisualizationLayer has __IClusterGenerator__ instance member which is responsibl
 The __DefaultClusterGenerator__ class also provides several methods which can be overridden in order to further customize the clustering algorithm.
 
 * __CreateCluster(Location center, object item):__ This method creates a cluster at the specified location. 
-* __IsItemInClusterRegion(ClusterData cluster, MapObjectInfo info, int zoomLevel):__ This method check if data item belongs to a given cluster.
-* __RegenerationNeeded(ClusterData cluster, int zoomLevel): This method can be overridden so you can customize if given cluster should be regenerated at a given zoom level. The default value is __true__.
+* __IsItemInClusterRegion(ClusterData cluster, MapObjectInfo info, int zoomLevel):__ This method checks if a data item belongs to a given cluster.
+* __RegenerationNeeded(ClusterData cluster, int zoomLevel)__: This method can be overridden so you can customize if given cluster should be regenerated at a given zoom level. The default value is __true__.
 
 ## The ClusterData object
 

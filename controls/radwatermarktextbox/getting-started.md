@@ -44,6 +44,6 @@ In order to use __RadWatermarkTextBox__ in your application, you need to add ref
 
 ## See also
 
-*  [Overview]({%slug radwatermarktextbox-overview%})
+* [Overview]({%slug radwatermarktextbox-overview%})
 * [Features]({%slug radwatermarktextbox-features%})
 

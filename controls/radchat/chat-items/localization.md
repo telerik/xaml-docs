@@ -12,7 +12,7 @@ position: 5
 
 > More detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 
-This topic will go available resource keys for localizing __RadChat__.
+This topic will go over the available resource keys for localizing the __RadChat__ control.
 
 Below is the list of supported languages.
 
@@ -32,7 +32,7 @@ Below is the list of supported languages.
 
 ## Resource Keys
 
-__RadFileDialogs__ provides strings for localizing various of its elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
+__RadChat__ provides strings for localizing various of its elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
 
 ![RadChat Localization](images/RadChat_Localization_01.png)
 

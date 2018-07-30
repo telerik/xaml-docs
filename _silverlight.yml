@@ -129,3 +129,30 @@ framework_name: Silverlight
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:aio0tnk2npy'
+
+edit_repo_url: https://github.com/telerik/xaml-docs/edit/master
+product: "Telerik UI for Silverlight"
+platform: silverlight
+download: http://www.telerik.com/products/silverlight/download.aspx 
+nav:
+  "Demos": https://demos.telerik.com/silverlight/
+  "Release History": https://www.telerik.com/support/whats-new/silverlight/release-history
+  "About": http://www.telerik.com/products/silverlight/overview.aspx 
+  "Pricing": http://www.telerik.com/purchase/individual/silverlight.aspx
+
+footer:
+  main:
+    "Install Now": https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading
+    "Release History": https://www.telerik.com/support/whats-new/silverlight/release-history
+    "Demos": https://demos.telerik.com/silverlight/
+  community_support:
+    "Support Plans": https://www.telerik.com/purchase/support-plans
+    "Feedback Portal": https://feedback.telerik.com/Project/143
+    "Forums": https://www.telerik.com/forums/silverlight
+    "SDK Samples Browser": https://demos.telerik.com/xaml-sdkbrowser/
+  get_involved:
+    "GitHub SDK Repository": https://github.com/telerik/xaml-sdk
+    "What Should We Do Next?": https://feedback.telerik.com/Project/143
+  social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc

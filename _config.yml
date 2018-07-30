@@ -3199,7 +3199,7 @@ defaults:
     scope:
         path: ""
     values:
-        layout: "page"
+        layout: "documentation"
         category: "default"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
@@ -3215,6 +3215,36 @@ ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:jt1stbj813w'
+
+# Folders not supporting Silverlight:
+non-sl-folders: ["radwordsprocessing", "radspreadstreamprocessing"]
+
+edit_repo_url: https://github.com/telerik/xaml-docs/edit/master
+product: "Telerik UI for WPF"
+platform: wpf
+download: http://www.telerik.com/products/wpf/download.aspx 
+nav:
+  "Demos": https://demos.telerik.com/wpf/
+  "Release History": https://www.telerik.com/support/whats-new/wpf/release-history
+  "About": http://www.telerik.com/products/wpf/overview.aspx 
+  "Pricing": http://www.telerik.com/purchase/individual/wpf.aspx
+
+footer:
+  main:
+    "Install Now": https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading
+    "Release History": https://www.telerik.com/support/whats-new/wpf/release-history
+    "Demos": https://demos.telerik.com/wpf/
+  community_support:
+    "Support Plans": https://www.telerik.com/purchase/support-plans
+    "Feedback Portal": https://feedback.telerik.com/Project/143
+    "Forums": https://www.telerik.com/forums/wpf
+    "SDK Samples Browser": https://demos.telerik.com/xaml-sdkbrowser/
+  get_involved:
+    "GitHub SDK Repository": https://github.com/telerik/xaml-sdk
+    "What Should We Do Next?": https://feedback.telerik.com/Project/143
+  social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
 
 ## Do not edit below this line
 safe: false

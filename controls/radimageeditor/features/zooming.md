@@ -20,7 +20,7 @@ The RadImageEditor control provides out of the box zooming functionality. You ca
 
 As can be seen in **Figure 1**, the default zooming mechanism does not take into account the position of the mouse cursor.
 
-As of **R2 2018 SP1**, both RadImageEditor and RadImageEditorUI controls expose a **ZoomToCursor** property. By setting this property to **True**, holding **Ctrl** and spinning the **mouse wheel** will zoom towards the position of the mouse cursor. The result can be observed in **Figure 2**.
+As of version **2018.2.716**, both RadImageEditor and RadImageEditorUI controls expose a **ZoomToCursor** property. By setting this property to **True**, holding **Ctrl** and spinning the **mouse wheel** will zoom towards the position of the mouse cursor. The result can be observed in **Figure 2**.
 
 #### Figure 2: Zooming to the mouse cursor
 

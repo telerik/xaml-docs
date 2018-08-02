@@ -123,7 +123,8 @@ framework_name: Silverlight
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:aio0tnk2npy'
+gcs_engine: '011354416605164361800:ebfuug7ih7i'
+gcs_api_key: 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM'
 
 edit_repo_url: https://github.com/telerik/xaml-docs/edit/master
 product: "Telerik UI for Silverlight"

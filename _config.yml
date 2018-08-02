@@ -3,41 +3,37 @@ url: "https://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
-common-routed-events-support.md,
-common-command-support.md,
-upgrade-api-analyzer-sl.md,
-installation-and-deployment/installation-system-requirements.md,
-installation-and-deployment/download-product-files.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-hotfix.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-license-limitations.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-nuget.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox-silverlight.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
-installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license.md,
-installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies.md,
-consuming-data/web-asmx-service.md,
-consuming-data/net-ria-service.md,
-consuming-data/domain-datasource-support.md,
-consuming-data/isolated-storage.md,
+common-information/common-routed-events-support.md,
+common-information/common-command-support.md,
+common-information/upgrade-api-analyzer-sl.md,
+getting-started/installation/installation-system-requirements.md,
+getting-started/installation/download-product-files.md,
+getting-started/installation/installation-installing-from-MSI.md,
+getting-started/installation/installation-installing-from-ZIP.md,
+getting-started/installation/for-silverlight-vs-extensions-releases.md,
+getting-started/installation/installation-installing-hotfix.md,
+getting-started/installation/installation-installing-license-limitations.md,
+getting-started/installation/installation-installing-from-nuget.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
+integration/installation-adding-to-vs-toolbox-silverlight.md,
+upgrade/installation-upgrading-from-trial-to-developer-license.md,
+common-information/installation-installing-dependencies.md,
+common-information/consuming-data/web-asmx-service.md,
+common-information/consuming-data/net-ria-service.md,
+common-information/consuming-data/domain-datasource-support.md,
+common-information/consuming-data/isolated-storage.md,
 styling-and-appearance/stylemanager/common-styling-apperance-setting-theme.md,
 styling-and-appearance/stylemanager/common-styling-apperance-create-theme-overview.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-modifying-built-in-theme.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-create-theme-overview.md,
-visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
-visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
-visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
-visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
 assembly-minifier-section.md,
 assembly-minifier/minifier-what-is-new.md,
 assembly-minifier/overview.md,
@@ -972,10 +968,7 @@ navigation:
         title: Cards
 ## X1 Controls End
 
-## Common Start
-    controls:
-        title: Controls
-        position: 22
+## Common Start   
     "*overview":
         title: Overview
         position: 1
@@ -1015,27 +1008,18 @@ navigation:
     "api-reference":
         title: "Api Reference"
         position: 23
-    "xamlflix-step-by-step-guide":
-        title: "XAMLflix Step-by-Step Guide"
-        position: 21
-    "licensing":
-        title: "Licensing"
-        position: 7
-    "installation-and-deployment":
-        title: "Installation and Deployment"
-        position: 6
-    "analytics":
+    "common-information/analytics":
         title: "Analytics"
-        position: 15
-    "consuming-data":
+        position: 2
+    "common-information/consuming-data":
         title: "Consuming Data"
-        position: 16
-    "styling-and-appearance":
-        title: "Styling and Appearance"
-        position: 8
-    "cloud-integration":
-        title: "Cloud Integration"
-        position: 9
+        position: 0
+    "common-information/mvvm-helpers":
+        title: "MVVM Helpers"
+        position: 1
+    "common-information/troubleshooting":
+        title: "Troubleshooting"
+        position: 14
     "cloud-integration/amazon-web-services":
         title: "Amazon Web Services"
         position: 2
@@ -1060,27 +1044,15 @@ navigation:
     "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
         title: "Connect to Data in the Cloud"
         position: 5
-    "visual-studio-extensions":
+    "integration/visual-studio-extensions":
         title: "Visual Studio Extensions"
-        position: 5
-    "for-more-help":
-        title: "For More Help"
-        position: 25
-    "installation-and-deployment/installing-telerik-ui-on-your-computer":
-        title: "Installing Telerik UI on your Computer"
-        position: 2
-    "installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox":
-        title: "Adding Telerik UI to Visual Studio Toolbox"
-        position: 3
-    "installation-and-deployment/adding-telerik-ui-to-an-application":
+        position: 0
+    "getting-started/installation":
+        title: "Installation"
+        position: 1
+    "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
-        position: 4	
-    "installation-and-deployment/upgrading-instructions":
-        title: "Upgrading Instructions"
-        position: 5
-    "installation-and-deployment/deploying-telerik-ui":
-        title: "Deploying Telerik UI"
-        position: 6
+        position: 2
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
@@ -1093,12 +1065,36 @@ navigation:
         position: 4
     "styling-and-appearance/how-to":
         title: "How To"
-    "mvvm-helpers":
-        title: "MVVM Helpers"
-        position: 23
-    "troubleshooting":
-        title: "Troubleshooting"
-        position: 23
+    "getting-started":
+        title: "Getting Started"
+        position: 1
+    "controls":
+        title: Controls
+        position: 3    
+    "styling-and-appearance":
+        title: "Style and Appearance"
+        position: 4
+    "licensing":
+        title: "Distribution and Licensing"
+        position: 5
+    "upgrade":  
+        title: "Upgrade"
+        position: 6
+    "common-information":
+        title: "Common Information"
+        position: 7
+    "integration":
+        title: "Integration"
+        position: 8
+    "cloud-integration":
+        title: "Cloud Integration"
+        position: 9
+    "developer-focused-examples":
+        title: "Developer Focused Examples"    
+        position: 10
+    "xamlflix-step-by-step-guide":
+        title: "XAMLflix Step-by-Step Guide"
+        position: 11
 ## Common End
 
 ## Api Reference Start
@@ -3234,6 +3230,7 @@ footer:
     "Install Now": https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading
     "Release History": https://www.telerik.com/support/whats-new/wpf/release-history
     "Demos": https://demos.telerik.com/wpf/
+    "Blogs": http://www.telerik.com/blogs/tag/wpf
   community_support:
     "Support Plans": https://www.telerik.com/purchase/support-plans
     "Feedback Portal": https://feedback.telerik.com/Project/143

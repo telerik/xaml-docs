@@ -5,14 +5,12 @@ description: License Agreement
 slug: license-agreement
 tags: license,agreement
 published: True
-position: 2
+position: 1
 ---
 
 # License Agreement
 
 __Telerik End-User License Agreement__
-
-## 
 
 The End User License Agreement for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} can be found on the following page:
         

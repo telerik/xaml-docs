@@ -1,138 +1,204 @@
 ---
-title: Bind to object data
-page_title: Bind to object data
-description: Bind to object data
+title: Bind to Object Data
+page_title: Bind to Object Data
+description: Bind to Object Data
 slug: radpanelbar-object-data
 tags: bind,to,object,data
 published: True
 position: 1
 ---
 
-# Bind to object data
+# Bind to Object Data
 
-__RadPanelBar__ can be bound to a collection of objects and dynamically create its collection of items. The collection that is provided as items source can contain either __RadPanelBarItems__ or any other type of objects. If the items source collection contains __RadPanelBarItems__, they are directly made children of the __RadPanelBar__ control. Otherwise, the objects in the items source collection are wrapped in __RadPanelBarItem__ objects and then are pushed into the __Items__ collection of the __RadPanelBar__ control.
+__RadPanelBar__ can be bound to a collection of objects and dynamically create its collection of items. The collection that is provided as ItemsSource can contain either __RadPanelBarItems__ or any other type of objects. If the ItemsSource collection contains __RadPanelBarItems__, they are directly made children of the __RadPanelBar__ control. Otherwise, the objects in the ItemsSource collection are wrapped in __RadPanelBarItem__ objects and are pushed into the __Items__ collection of the __RadPanelBar__ control.
 
 Naturally, if the collection you are binding to implements the __INotifyCollectionChanged__ interface, whenever your source collection is changed, the change would be immediately reflected in the __Items__ collection of the __RadPanelBar__.
 
-Here is an example of binding a __RadPanelBar__ control to a collection of strings:
+## Binding ItemsSource to a Collection of Strings
 
-#### __C#__
-{{region cs-radpanelbar-object-data_0}}
-	List<string> myListDataSource = new List<string>();
-	myListDataSource.Add("Item 1");
-	myListDataSource.Add("Item 2");
-	myListDataSource.Add("Item 3");
-	RadPanelBar myPanel = new RadPanelBar();
-	myPanel.ItemsSource = myListDataSource;
+**Examples 1 and 2** demonstrate how you can bind the __RadPanelBar__ to a collection of strings:
+
+#### __[XAML] Example 1: RadPanelBar definition__
+{{region xaml-radpanelbar-object-data_0}}
+	<telerik:RadPanelBar ItemsSource="{Binding}" />
 {{endregion}}
 
-#### __VB.NET__
-{{region vb-radpanelbar-object-data_1}}
-	Dim myListDataSource As New List(Of String)()
-	myListDataSource.Add("Item 1")
-	myListDataSource.Add("Item 2")
-	myListDataSource.Add("Item 3")
-	Dim myPanel As New RadPanelBar()
-	myPanel.ItemsSource = myListDataSource
+#### __[C#] Example 2: Binding RadPanelBar to list of strings__
+{{region cs-radpanelbar-object-data_1}}
+	public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            List<string> myListDataSource = new List<string>();
+            myListDataSource.Add("Item 1");
+            myListDataSource.Add("Item 2");
+            myListDataSource.Add("Item 3");
+
+            this.DataContext = myListDataSource;
+        }
+    }
 {{endregion}}
 
-By default, the string values from the items source collection will be assigned to the __Header__ property of each __RadPanelBarItem__ in the __RadPanleBar__ control you are populating.
+#### __[VB.NET] Example 2: Binding RadPanelBar to list of strings__
+{{region vb-radpanelbar-object-data_2}}
+	Partial Public Class MainWindow
+		Inherits Window
 
-In case you want to display (in the item headers) a specific property of an object in a source collection, you can use the __DisplayMemberPath__ property of __RadPanelBar__. You should set __DisplayMemberPath__ to the name of the property you want to be displayed in the item header, like so:
+		Public Sub New()
+			InitializeComponent()
 
-#### __C#__
-{{region cs-radpanelbar-object-data_2}}
-	public partial class Example : UserControl
-	{
-	    public Example()
-	    {
-	        InitializeComponent();
-	        List<SourceCollection> sourceCollection = new List<SourceCollection>();
-	        sourceCollection.Add(new SourceCollection());
-	        sourceCollection.Add(new SourceCollection());
-	        sourceCollection.Add(new SourceCollection());
-	        RadPanelBar myPanel = new RadPanelBar();
-	        myPanel.ItemsSource = sourceCollection;
-	        myPanel.DisplayMemberPath = "Text";
-	
-	    }
-	}
-	public class SourceCollection
-	{
-	    private Random number;
-	    public SourceCollection()
-	    {
-	        number = new Random((int)DateTime.Now.Ticks);
-	    }
-	    public DateTime Time
-	    {
-	        get { return DateTime.Now; }
-	    }
-	    public int Number
-	    {
-	        get
-	        {
-	            return number.Next(0, 1000);
-	        }
-	    }
-	    public string Text
-	    {
-	        get
-	        {
-	            // Return a string of 8 random characters from A to Z
-	            System.Text.StringBuilder randomText = new System.Text.StringBuilder(8);
-	            for (int i = 0; i < 8; i++)
-	            {
-	                randomText.Append((char)(65 + (number.NextDouble() * 25)));
-	            }
-	            return randomText.ToString();
-	        }
-	    }
-	}
-{{endregion}}
+			Dim myListDataSource As New List(Of String)()
+			myListDataSource.Add("Item 1")
+			myListDataSource.Add("Item 2")
+			myListDataSource.Add("Item 3")
 
-#### __VB.NET__
-{{region vb-radpanelbar-object-data_3}}
-	Partial Public Class Example
-	    Inherits UserControl
-	    Public Sub New()
-	        InitializeComponent()
-	
-	        Dim sourceCollection As New List(Of SourceCollection)()
-	
-	        sourceCollection.Add(New SourceCollection())
-	        sourceCollection.Add(New SourceCollection())
-	        sourceCollection.Add(New SourceCollection())
-	        Dim myPanel As New RadPanelBar()
-	        myPanel.ItemsSource = sourceCollection
-	
-	        myPanel.DisplayMemberPath = "Text"
-	    End Sub
-	End Class
-	Public Class SourceCollection
-	    Private m_number As Random
-	    Public Sub New()
-	        m_number = New Random(CInt(DateTime.Now.Ticks))
-	    End Sub
-	    Public ReadOnly Property Time() As DateTime
-	        Get
-	            Return DateTime.Now
-	        End Get
-	    End Property
-	    Public ReadOnly Property Number() As Integer
-	        Get
-	            Return m_number.Next(0, 1000)
-	        End Get
-	    End Property
-	    Public ReadOnly Property Text() As String
-	        Get
-	            'Return a string of 8 random characters from A to Z'
-	            Dim randomText As New System.Text.StringBuilder(8)
-	            For i As Integer = 0 To 7
-	                randomText.Append(ChrW(65 + (m_number.NextDouble() * 25)))
-	            Next
-	            Return randomText.ToString()
-	        End Get
-	    End Property
+			Me.DataContext = myListDataSource
+		End Sub
 	End Class
 {{endregion}}
+
+By default, the string values from the ItemsSource collection will be assigned to the __Header__ property of each __RadPanelBarItem__ in the __RadPanelBar__ control you are populating.
+
+#### __Figure 1: Result from Example 2 in Office2016 Theme__
+![RadPanelBar binding to strings](images/PanelBar_BindingToStrings.png)
+
+## Binding ItemsSource to a Collection of Objects
+
+In case you want to display (in the item headers) a specific property of an object in a source collection, you can use either the __DisplayMemberPath__, or the __ItemTemplate__ property of __RadPanelBar__. The approach of using an ItemTemplate is demonstrated in **Examples 3 and 4**:
+
+#### __[XAML] Example 3: RadPanelBar definition with ItemTemplate__
+{{region xaml-radpanelbar-object-data_3}}
+	<HierarchicalDataTemplate x:Key="headerTemplate" ItemsSource="{Binding Items}">
+		<TextBlock Text="{Binding Text}" />
+	</HierarchicalDataTemplate>
+
+	<telerik:RadPanelBar ItemsSource="{Binding}" 
+						 ItemTemplate="{StaticResource headerTemplate}"/>
+{{endregion}}
+
+#### __[C#] Example 3: Displaying a specific property as a Header__
+{{region cs-radpanelbar-object-data_4}}
+	public class SampleItem : ViewModelBase
+    {
+        private string text;
+        private ObservableCollection<SampleItem> items;
+
+        public string Text
+        {
+            get
+            {
+                return this.text;
+            }
+
+            set
+            {
+                if (this.text != value)
+                {
+                    this.text = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        public ObservableCollection<SampleItem> Items
+        {
+            get
+            {
+                return this.items;
+            }
+
+            set
+            {
+                if (this.items != value)
+                {
+                    this.items = value;
+                    this.OnPropertyChanged("Items");
+                }
+            }
+        }
+    }
+
+	public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+			var source = new ObservableCollection<SampleItem>();
+			for (int i = 1; i <= 3; i++)
+			{
+				var secondLevelItems = new ObservableCollection<SampleItem>() { new SampleItem() { Text = "Second level " + i } };
+				source.Add(new SampleItem() { Text = "First level " + i, Items = secondLevelItems });
+			}
+
+			this.DataContext = source;
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 4: Displaying a specific property as a Header__
+{{region vb-radpanelbar-object-data_5}}
+	Public Class SampleItem
+		Inherits ViewModelBase
+
+		Private _text As String
+		Private _items As ObservableCollection(Of SampleItem)
+
+		Public Property Text() As String
+			Get
+				Return Me._text
+			End Get
+
+			Set(ByVal value As String)
+				If Me._text <> value Then
+					Me._text = value
+					Me.OnPropertyChanged("Text")
+				End If
+			End Set
+		End Property
+
+		Public Property Items() As ObservableCollection(Of SampleItem)
+			Get
+				Return Me._items
+			End Get
+
+			Set(ByVal value As ObservableCollection(Of SampleItem))
+				If Me._items IsNot value Then
+					Me._items = value
+					Me.OnPropertyChanged("Items")
+				End If
+			End Set
+		End Property
+	End Class
+
+	Partial Public Class MainWindow
+	Inherits Window
+
+		Public Sub New()
+			InitializeComponent()
+
+			Dim source = New ObservableCollection(Of SampleItem)()
+			For i As Integer = 1 To 3
+				Dim secondLevelItems = New ObservableCollection(Of SampleItem)() From {
+					New SampleItem() With {.Text = "Second level " & i}
+				}
+				source.Add(New SampleItem() With {
+					.Text = "First level " & i,
+					.Items = secondLevelItems
+				})
+			Next i
+
+			Me.DataContext = source
+		End Sub
+	End Class
+
+{{endregion}}
+
+#### __Figure 2: Result from Example 4 in Office2016 Theme__
+![RadPanelBar binding to object](images/PanelBar_Binding.png)
+
+## See also 
+* [Getting Started]({%slug radpanelbar-populating%})
+* [How to Display Hierarchical Data]({%slug howto-display-hierarchical-data%})

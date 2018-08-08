@@ -22,7 +22,7 @@ As of version __2013 Q3 SP1__ we have added support for __EntityFramework 6.0__.
 
 1. Note that __RadEntityFrameworkDataSource__ is built on top of the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/ef/ef6/). Basic Entity Framework experience is required for working with __RadEntityFrameworkDataSource__.
 
-2. Start Visual Studio 2017 and create a new WPF Application.
+2. Start Visual Studio and create a new WPF Application.
 
 ## Creating the Model
 
@@ -50,6 +50,8 @@ Now let's go to the client side.
 
 * __Telerik.Windows.Controls.EntityFramework__ (mandatory for __RadEntityFrameworkDataSource__ with EF **5.0** or previous)
 
+	or
+
 * __Telerik.Windows.Controls.EntityFramework60__ (mandatory for __RadEntityFrameworkDataSource__ with EF **6.0** or later)
 
 * __Telerik.Windows.Controls.GridView__ (mandatory for __RadGridView__)
@@ -74,16 +76,16 @@ Now let's go to the client side.
 			Title="MainWindow" Height="450" Width="800">
 		<Grid>
 			<telerik:RadEntityFrameworkDataSource Name="OrdersEntityFrameworkDataSource" QueryName="Orders">
-				<telerik:RadEntityFrameworkDataSource.ObjectContext>
+				<telerik:RadEntityFrameworkDataSource.DbContext>
 					<local:MyEntityModel/>
-				</telerik:RadEntityFrameworkDataSource.ObjectContext>
+				</telerik:RadEntityFrameworkDataSource.DbContext>
 			</telerik:RadEntityFrameworkDataSource>
 			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=OrdersEntityFrameworkDataSource}"/>
 		</Grid>
 	</Window>
 {{endregion}}
 
->importantSince __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**.
+>importantSince __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**. If you are using an older version of Entity Framework, you can set the **RadEntityFrameworkDataSource.ObjectContext** property.
 
 Several important things to notice:
 

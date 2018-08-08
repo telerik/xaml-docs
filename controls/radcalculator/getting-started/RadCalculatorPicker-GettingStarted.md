@@ -10,8 +10,7 @@ position: 1
 
 # RadCalculatorPicker Getting Started
 
-This tutorial will walk your through the creation of a sample application that contains __RadCalculatorPicker__ and will show you how:
-		  
+This tutorial will walk your through the creation of a sample application that contains __RadCalculatorPicker__ and will show you how to:
 
 * Use RadCalculatorPicker in your project;
 
@@ -21,8 +20,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 * [Assembly References](#assembly-references)		
 * [Adding RadCalculatorPicker to the Project](#adding-radcalculatorpicker-to-the-project)
-* [Use RadCalculatorPicker as Editing Element](#using-radcalculatorpicker-as-editing-element)
-  
+* [Use RadCalculatorPicker as Editing Element](#use-radcalculatorpicker-as-editing-element)
 
 ## Assembly References
 
@@ -39,11 +37,11 @@ In order to use __RadCalculator__ in your projects, you have to add reference to
 * Add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Input__;
 				  
 
-* Add the RadCalculatorPicker as demonstrated below
+* Add the RadCalculatorPicker as demonstrated in **Example 1**
 
 #### __[XAML] Example 1: Defining RadCalculator Picker__
 
-{{region radcalculatorpicker-getting-started_0}}
+{{region xaml-radcalculatorpicker-getting-started_0}}
 	<UserControl x:Class="RadCalculatorPicker.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -59,19 +57,18 @@ In order to use __RadCalculator__ in your projects, you have to add reference to
 	</UserControl>
 {{endregion}}
 
-Now if you run the application, you have RadCalculatorPicker:
+Now if you run the application, you will have RadCalculatorPicker:
 
 #### __Figure 1: Defining RadCalculatorPicker__
 ![Rad Calculator Picker-Basic](images/RadCalculatorPicker-Basic.png)
 
-
 ## Use RadCalculatorPicker as Editing Element
 
-RadCalculatorPicker can be embeded as an editing element. In this case we will define it in a CellEditTemplate for a column in RadGridView. For this example we will create as simple grid  and customize one of its columns:
+RadCalculatorPicker can be embeded as an editing element. In this case we will define it in a CellEditTemplate for a column in RadGridView. For this example we will create a simple grid and customize one of its columns:
 
 #### __[XAML] Example 2: Using RadCalculatorPicker as a cell editor of RadGridView__
 
-{{region radcalculatorpicker-getting-started_4}}
+{{region xaml-radcalculatorpicker-getting-started_4}}
 
 	<telerik:RadGridView Name="clubsGrid" CanUserFreezeColumns="False" 
 						 ShowGroupPanel="False" RowIndicatorVisibility="Collapsed"

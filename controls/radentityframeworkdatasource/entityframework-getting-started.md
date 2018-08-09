@@ -26,7 +26,7 @@ As of version __2013 Q3 SP1__ we have added support for __EntityFramework 6.0__.
 
 ## Creating the Model
 
-Now that we have the application, we will add our entity model using the Northwind database. 
+Now that we have the application, we will add our entity model using the AdventureWorks database. 
 
 1. In the project add a new __ADO.NET Entity Data Model__. You need to make sure that **Data** is selected from the left menu.
 ![Rad Entity Framework Getting Started 1](images/RadEntityFramework_Getting_Started1.png)
@@ -34,9 +34,9 @@ Now that we have the application, we will add our entity model using the Northwi
 2. Choose to create a model using the code first approach from an existing database.
 ![Rad Entity Framework Getting Started 2](images/RadEntityFramework_Getting_Started2.png)
 
-3. Choose the data connection (for example the __Northwind__ database). In order to learn how to add the Northwind and other sample databases, check out the [Install SQL Server sample databases](https://msdn.microsoft.com/en-us/library/mt710790.aspx) article.
+3. Choose the data connection (for example the __AdventureWorks__ database). In order to learn how to add the AdventureWorks database, check out the [AdventureWorks Readme](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) article.
 
-4. Generate the entities from the __Orders__ table of the __Northwind__ database.
+4. Generate the entities from all of the tables in the __AdventureWorks__ database.
 
 5. Click __Finish__ and __rebuild the solution__.
 
@@ -75,12 +75,12 @@ Now let's go to the client side.
 			mc:Ignorable="d"
 			Title="MainWindow" Height="450" Width="800">
 		<Grid>
-			<telerik:RadEntityFrameworkDataSource Name="OrdersEntityFrameworkDataSource" QueryName="Orders">
+			<telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
 				<telerik:RadEntityFrameworkDataSource.DbContext>
 					<local:MyEntityModel/>
 				</telerik:RadEntityFrameworkDataSource.DbContext>
 			</telerik:RadEntityFrameworkDataSource>
-			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=OrdersEntityFrameworkDataSource}"/>
+			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkDataSource}"/>
 		</Grid>
 	</Window>
 {{endregion}}
@@ -93,7 +93,7 @@ Several important things to notice:
 
 * The __QueryName__ points to the query of the data source.
 
-* __ObjectContext__ - points to the context that has been created.
+* __DbContext__ - points to the context that has been created.
 
 * __DataView__ - the data that comes from the query is stored in the __DataView__ property, so we bind the __RadGridView__ to it.
 

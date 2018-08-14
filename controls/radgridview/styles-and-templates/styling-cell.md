@@ -73,7 +73,7 @@ You could also use a column's **CellStyleSelector** property to style cells diff
 
 ## Setting the SelectedBackground of the Cell
 
-> As of __R3 2018 RadGridView__ supports setting the Background of the selected cell, by setting the **SelectedBackground** property of the GridViewCell.
+As of __R3 2018 RadGridView__ supports setting the Background of the selected cell, by setting the **SelectedBackground** property of the GridViewCell.
 
 #### __[XAML] Example 3: Setting the SelectedBackground of the GridViewCell__
 {{region xaml-gridview-styling-cell_1}}
@@ -87,7 +87,7 @@ You could also use a column's **CellStyleSelector** property to style cells diff
 
 ## Setting the BorderBrush of the CurrentCell
 
-> As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell . 
+As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell . 
 
 **Example 4** demonstrates how you can set the borderbrush of the current cell to transparent. You can compare **Figure 3** and **Figure 4** to notice that the border of the current cell is not visible.
 

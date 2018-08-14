@@ -20,6 +20,10 @@ In this article we will discuss the following topics:
 
 * [Setting a Column's CellStyleSelector](#setting-a-columns-cellstyleselector)
 
+* [Setting the SelectedBackground of the Cell](#setting-the-selectedbackground-of-the-cell)
+
+* [Setting the BorderBrush of the CurrentCell](#setting-the-borderbrush-of-the-currentcell)
+
 #### __Figure 1: GridViewCell template structure__
 
 ![GridViewCell template structure](images/gridviewcell-template.png)
@@ -38,7 +42,7 @@ You have two options:
 
 #### __[XAML] Example 1: Styling all cells of an application__
 
-	{{region xaml-gridview-styling-cell_2}}
+{{region xaml-gridview-styling-cell_2}}
 	<Style TargetType="telerik:GridViewCell">
 	    <Setter Property="VerticalContentAlignment" Value="Top"/>
 	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -48,7 +52,7 @@ You have two options:
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
 
-#### __Figure 2: RadGridView with styled cells__
+#### __Figure 2: RadGridView with styled cells in the Office2016 theme__
 
 ![RadGridView with styled cells](images/RadGridView-Cell-Styled.png)
 
@@ -57,8 +61,7 @@ You have two options:
 __RadGridView Cells__ can also be styled by creating an appropriate __Style__ for the **GridViewCell** element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
-
-	{{region xaml-gridview-styling-cell_1}}
+{{region xaml-gridview-styling-cell_1}}
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
 	                Header="Name"
 	                CellStyle="{StaticResource GridViewCellStyle}" />
@@ -67,6 +70,36 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 ## Setting a Column's CellStyleSelector
 
 You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. More details about how this can be achieved can be found in the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
+
+## Setting the SelectedBackground of the Cell
+
+As of __R3 2018 RadGridView__ supports setting the Background of the selected cell, by setting the **SelectedBackground** property of the GridViewCell.
+
+#### __[XAML] Example 3: Setting the SelectedBackground of the GridViewCell__
+{{region xaml-gridview-styling-cell_1}}
+	<Style TargetType="telerik:GridViewCell">
+		<Setter Property="SelectedBackground" Value="Bisque" />
+	</Style>
+{{endregion}}
+
+#### __Figure 3: Result from Example 3 in the Office2016 theme__
+![RadGridView with SelectedBackground for the cells](images/gridview-selectedbackground-cell.png)
+
+## Setting the BorderBrush of the CurrentCell
+
+As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell . 
+
+**Example 4** demonstrates how you can set the borderbrush of the current cell to transparent. You can compare **Figure 3** and **Figure 4** to notice that the border of the current cell is not visible.
+
+#### __[XAML] Example 4: Setting the CurrentBorderBrush of the GridViewCell__
+{{region xaml-gridview-styling-cell_1}}
+	<Style TargetType="telerik:GridViewCell">
+		<Setter Property="CurrentBorderBrush" Value="Transparent" />
+	</Style>
+{{endregion}}
+
+#### __Figure 4: Result from Example 4 in the Office2016 theme__
+![RadGridView with CurrentBorderBrush for the cells](images/gridview-currentborderbrush.png)
 
 ## See Also
 

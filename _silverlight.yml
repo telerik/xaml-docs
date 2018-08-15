@@ -137,19 +137,33 @@ nav:
   "Pricing": http://www.telerik.com/purchase/individual/silverlight.aspx
 
 footer:
-  main:
+-
+  title: "Getting Started"
+  links:
     "Install Now": https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight
-    "Release History": https://www.telerik.com/support/whats-new/silverlight/release-history
-    "Demos": https://demos.telerik.com/silverlight/
-    "Blogs": http://www.telerik.com/blogs/tag/silverlight
-  community_support:
-    "Support Plans": https://www.telerik.com/purchase/support-plans
-    "Feedback Portal": https://feedback.telerik.com/Project/143
-    "Forums": https://www.telerik.com/forums/silverlight
-    "SDK Samples Browser": https://demos.telerik.com/xaml-sdkbrowser/
-  get_involved:
+    "Demos": http://demos.telerik.com/silverlight/
+    "SDK Samples Browser": http://demos.telerik.com/xaml-sdkbrowser/
+    "Sample Applications": https://www.telerik.com/silverlight/sample-applications
+    "Themes Generator": https://www.telerik.com/wpf/color-theme-generator
+-
+  title: "Support Resources"
+  links: 
+    "Code Library": https://www.telerik.com/support/code-library/silverlight
+    "Knowledge Base": https://www.telerik.com/support/kb/silverlight
+    "MVVM Support": https://www.telerik.com/silverlight/mvvm-support
+    "Videos": https://www.telerik.com/videos/silverlight
     "GitHub SDK Repository": https://github.com/telerik/xaml-sdk
-    "What Should We Do Next?": https://feedback.telerik.com/Project/143
-  social: 
+    "System Requirements": https://www.telerik.com/help/silverlight/installation-system-requirements.html
+-
+  title: "Community"
+  links:
+    "Forums": https://www.telerik.com/forums/silverlight
+    "Blogs": https://www.telerik.com/blogs/.net
+    "XAML Feedback Portal": https://feedback.telerik.com/Project/143
+    "Document Processing Feedback Portal": http://feedback.telerik.com/Project/184
+  
+footer_social: 
     facebook: https://www.facebook.com/Telerik/
     youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/ 
+    twitter: https://twitter.com/Telerik/ 

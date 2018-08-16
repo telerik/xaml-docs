@@ -83,7 +83,7 @@ Here is a list of these properties:
 		this.editor.ChangeSectionPageMargin(new Padding(40, 40, 30, 30));
 	{{endregion}}
 
-
+	>If you would like to use the predefined margins, the **ToPadding()** method of **PageMarginTypesConverter** will help to automatically get the Padding values, which you need to set for the margins.
 
 * __PageOrientation__: Specifies if the pages in the section should be in Portrait or Landscape mode.
             

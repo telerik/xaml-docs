@@ -10,7 +10,7 @@ position: 4
 
 # Selected Row Background
 
-__RadGridView__ has a default __Brush__ for its selection on row level depending on the given theme. For example, the visual appearance of the selected row in the __Office2016__ theme would be as shown below.
+RadGridView has a default Brush for its selection on row level depending on the given theme. For example, the visual appearance of the selected row in the Office2016 theme would be as shown below.
 
 #### __Figure 1: Selected Row Background in Office2016 Theme__
 

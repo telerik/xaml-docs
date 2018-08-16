@@ -16,9 +16,7 @@ RadGridView has a default Brush for its selection on row level depending on the 
 
 ![Selected Row Background in Office2016 Theme](images/RadGridView_SelectedRow_Background_01.png)
 
-As of __R3 2018 RadGridView__ provides support for setting the __Background__ of its selected rows through the __SelectedBackground__ property of __GridViewRow__.
-
-Setting it through Style will have the following output.
+As of __R3 2018 RadGridView__ provides support for setting the background of its selected rows through the __SelectedBackground__ property of __GridViewRow__.
 
 #### __Example 1: Setting the SelectedBackground property of GridViewRow__
 

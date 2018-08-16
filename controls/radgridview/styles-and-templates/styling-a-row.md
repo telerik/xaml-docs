@@ -12,7 +12,7 @@ position: 14
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
-> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row. More information can be found [here]({%slug radgridview-rows-selected-background%}).
+> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row. More information can be found in the [Selected Row Background]({%slug radgridview-rows-selected-background%}) article.
 
 In this article we will discuss the following topics:
 

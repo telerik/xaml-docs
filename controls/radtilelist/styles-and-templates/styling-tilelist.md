@@ -39,15 +39,17 @@ For the purpose of this example, the following definition of __RadTileList__ wil
         </telerik:RadTileList>
 {{endregion}}
 
-Then, defining a __Style__ for the __Tile__ can achieved as follows.
+Then, defining a __Style__ for the __Tile__ can achieved as follows. This example demonstrates how an implicit style targeting the __Tile__ can be defined. Thus, it will be applied to all __Tile__ instances.
 
 #### __[XAML] Example 2: Defining Style for the Tiles__
 {{region xaml-radtilelist-styling-1}}
-	<Style TargetType="telerik:Tile">
-        <Setter Property="Width" Value="250"/>
-        <Setter Property="FontWeight" Value="ExtraBlack"/>
-        <Setter Property="Background" Value="LightSlateGray"/>
-    </Style>
+	  <Window.Resources>
+        <Style TargetType="telerik:Tile">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontWeight" Value="ExtraBlack"/>
+            <Setter Property="Background" Value="LightSlateGray"/>
+        </Style>
+    </Window.Resources>
 {{endregion}}
 
 This setup will result in the following output.

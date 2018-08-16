@@ -10,27 +10,50 @@ position: 2
 
 # Getting Started
 
-Getting started with the __RadListBox__ control is pretty straightforward.
+This tutorial will walk you through the required steps for using __RadListBox__. 
 
->In order to use __RadListBox__ in your project you have to add reference to the following assembly:
->__Telerik.Windows.Controls__
+
+
+## Assembly References
+
+In order to use __RadListBox__ in your project you have to add reference to the __Telerik.Windows.Controls__ assembly.
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadListBox__ control in code behind and XAML code:
 
-#### __[XAML]  Creating RadListBox__
+## Adding RadListBox to the Project
+
+#### __[XAML] Example 1: Adding RadListBox__
 
 {{region xaml-radlistbox-getting-started_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="200" />
 {{endregion}}
 
-#### __[C#]  Creating RadListBox__
+## Populating with Items
 
-{{region cs-radlistbox-getting-started_1}}
-	RadListBox listBox = new RadListBox();
+The control can either be populated by adding __RadListBoxItems__ to its __Items__ collection, or by its data binding support.
+
+#### __[XAML] Example 2: Adding RadListBoxItems__
+{{region xaml-radlistbox-getting-started_1}}
+	<telerik:RadListBox  Width="200" x:Name="radListBox">
+	    <telerik:RadListBoxItem Content="Australia" />
+	    <telerik:RadListBoxItem Content="Brazil" />
+	    <telerik:RadListBoxItem Content="Canada" />
+	    <telerik:RadListBoxItem Content="China" />
+	    <telerik:RadListBoxItem Content="England" />
+	    <telerik:RadListBoxItem Content="Germany" />
+	</telerik:RadListBox>
 {{endregion}}
 
->tipMore detailed information how to populate __RadListBox__ with some data you could found [here]({%slug radlistbox-populating-with-data-overview%}).
+#### __[XAML] Example 3: Binding RadListBox
+
+{{region xaml-radlistbox-getting-started_2}}
+	<telerik:RadListBox x:Name="radListBox" Width="200" 
+						ItemsSource="{Binding Items}"/>
+{{endregion}}
+
+>More detailed information on how to populate __RadListBox__ with some data you could found [here]({%slug radlistbox-populating-with-data-overview%}).
 
 ## See Also
 
  * [Overview]({%slug radlistbox-overview%})
+ * [Populating with Data]({%slug radlistbox-populating-with-data-overview%})

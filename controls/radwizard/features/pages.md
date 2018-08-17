@@ -14,9 +14,9 @@ position: 0
 * [Preserve WizardPage Content](#preserve-wizardpage-content)
 
 In order to add pages to RadWizard, you have to use its __WizardPages__ collection. It consists of the following page types:
-* __WizardPage__: Represents a wizard's page and by default its __ButtonsVisibilityMode property is set to “Previous”, ”Next” and “Cancel”__.
-* __WelcomeWizardPage__: Represents a welcome page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Next” and “Cancel”__ by default. 
-* __CompletionWizardPage__: Represents a completion page. It derives directly from __WizardPage__ and the only difference is that the __ButtonsVisibilityMode property is set to “Previous”, “Cancel” and “Finish”__ by default. 
+* __WizardPage__: Represents a wizard's page and by default it will have the __“Previous”, ”Next” and “Cancel”__ buttons visible. This behavior can be controlled through the __ButtonsVisibilityMode__ enumeration.
+* __WelcomeWizardPage__: Represents a welcome page. It derives directly from __WizardPage__ and the only difference is that it will have the __“Next” and “Cancel”__ buttons visible by default. 
+* __CompletionWizardPage__: Represents a completion page. It derives directly from __WizardPage__ and the only difference is that it will have the __“Previous”, “Cancel” and “Finish”__ buttons visible by default. 
 
 For each wizard page you are able to define a header, title, side header and change the default footer by setting the following properties:
 * __Header__ : Enables you to define anything as a header.

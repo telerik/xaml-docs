@@ -23,7 +23,7 @@ First, you will need to set up an OData Endpoint of your Web API service and set
 
 ## Add a Service Reference
 
-Once you've set up the service, you can create your client applicaton and add a service reference to you OData service. The process of doing so is also thoroughly explained [here](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v3/calling-an-odata-service-from-a-net-client).
+Once you've set up the service, you can create your client applicaton and add a service reference to your OData service. The process of doing so is also thoroughly explained [here](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v3/calling-an-odata-service-from-a-net-client).
 
 ## Use the Service Proxy (Container)
 
@@ -78,7 +78,7 @@ You can see that there are handlers for the **Deleted** and **RowEditEnded** eve
     }
 {{endregion}}
 
-After all of this, you should be able to see the data from your service as shown in **Figue 1**.
+After all of this, you should be able to see the data from your service as shown in **Figure 1**.
 
 #### Figure 1: The data from the service in RadGridView
 

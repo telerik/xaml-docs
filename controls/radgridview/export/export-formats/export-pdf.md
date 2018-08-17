@@ -86,6 +86,8 @@ The following example shows how to use the method on a button click:
 
 >To export the default styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
+>importantExporting the Default Styles will take into account the styling applied to the __first element__ of each type(cell, column header, etc.). This is due to performance optimizations. Exporting a separate style for the needed element is discussed in details here:[Style Exported XLSX & PDF Documents]({%slug gridview-export-style-exported-xlsx-pdf-documents%}).
+
 RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
 
 By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1)

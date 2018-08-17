@@ -920,6 +920,9 @@ navigation:
         title: Paging
     controls/raddataservicedatasource/sorting:
         title: Sorting
+    controls/raddataservicedatasource/how-to:
+        title: How To
+        position: 9
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:

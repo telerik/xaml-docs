@@ -5,7 +5,7 @@ description: Getting Started
 slug: databar-getting-started2
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
@@ -39,7 +39,11 @@ By default the __Value__ property of the control will have a value of __0__. It 
 
 ## Displaying collection of Bars
 
-__RadDataBar__ is intended to display a single value. When displaying a collection of values is needed, the __RadStackedDataBar__ control comes in handy. It will basically generate a bar for each value present in its __ItemsSource__. More information can be found in the [Data Binding]({%slug raddatabar-databinding%}) article.
+__RadDataBar__ is intended to display a single value. When you need to display a collection of values, you can use the __RadStackedDataBar__ and __RadStacked100DataBar__ controls. They will both generate a bar for each value present in its __ItemsSource__. 
+
+The difference between the controls is how the sizes of the bars are calculated. The size of each bar in the **RadStackedDataBar** is calculated in accordance to the set **Minimum** and **Maximum**. On the other hand, each bar's size in the **RadStacked100DataBar** corresponds to the percent of the bar's value compared to the sum of all values in the stack.
+
+More information can be found in the [Data Binding]({%slug raddatabar-databinding%}) article.
 
 ## See Also
 

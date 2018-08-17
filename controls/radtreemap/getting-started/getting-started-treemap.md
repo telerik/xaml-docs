@@ -84,7 +84,7 @@ For this example we will use a simple hierarchical structure consisting of teams
 
 ## Setting up the RadTreeMap
 
-To set up the control you can set two esential properties - __ItemsSource__ and __TypeDefinitions__. The TypeDefinitions is a collection of TypeDefinition objects which contain information that tells the tree map how to fetch the data from the  objects in the ItemsSource. 
+To set up the control you can set two essential properties - __ItemsSource__ and __TypeDefinitions__. The TypeDefinitions is a collection of TypeDefinition objects which contain information that tells the tree map how to fetch the data from the  objects in the ItemsSource. 
 
 The __ValuePath__ determines the size of the tile.
 

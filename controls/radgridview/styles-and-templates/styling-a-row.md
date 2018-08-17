@@ -45,7 +45,7 @@ You have two options:
 	</Style>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__ and __AlternateGridViewRowStyle__.
 
 ## Setting RadGridView's RowStyle and AlternateRowStyle
 

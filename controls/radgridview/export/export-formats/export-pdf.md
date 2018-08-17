@@ -155,7 +155,7 @@ By default, the Aggregate results of the __GroupHeaderRow__ will be exported. No
 
 ## Events
 
-There are two events related to the exporting of RadGridView with the ExportToPdf method: *ElementExportingToDocument* and *ElementExportedToDocument*. You can find more information regarding them in the [Export Events]({%slug gridview-export-events%}) section.
+There are two events related to the exporting of RadGridView with the ExportToPdf() method: *ElementExportingToDocument* and *ElementExportedToDocument*. You can find more information regarding them in the [Export Events]({%slug gridview-export-events%}) section.
 
 ## How to
 

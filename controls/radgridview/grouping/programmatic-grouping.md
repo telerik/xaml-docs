@@ -18,6 +18,7 @@ This article will describe two implementations of the IGroupDescriptor interface
 
 * [GroupDescriptor](#groupdescriptor)
 * [ColumnGroupDescriptor](#columngroupdescriptor)
+* [Expanding and collapsing a group](#expanding-and-collapsing-a-group)
 
 ## GroupDescriptor
 
@@ -153,6 +154,24 @@ As you see the last two properties are similar to the same properties of the Gro
 	 .Column = Me.radGridView.Columns("Name"),
 	 .SortDirection = ListSortDirection.Descending
 	})
+{{endregion}}
+
+## Expanding and collapsing a group
+
+The groups of the control can be programmatically expanded/collapsed through the __ExpandGroup__ and __CollapseGroup__ methods of the control. Passing a group to them can be achieved by type casting a given group to the [IGroup](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_igroup.htm) interface. The following example demonstrates how the __ExpandGroup__ method can be called. The __CollapseGroup__ one can be used in the same manner.
+
+#### __[C#] Example 6: Call the ExpandGroup method of RadGridView__
+
+{{region cs-gridview-programmatic-grouping_11}}
+	 var group = this.clubsGrid.Items.Groups[1] as IGroup;
+     this.clubsGrid.ExpandGroup(group);
+{{endregion}}
+
+#### __[VB.NET] Example 6: Call the ExpandGroup method of RadGridView__
+
+{{region vb-gridview-programmatic-grouping_11}}
+    Dim group = TryCast(Me.clubsGrid.Items.Groups(1), IGroup)
+    Me.clubsGrid.ExpandGroup(group)
 {{endregion}}
 
 ## See Also

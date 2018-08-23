@@ -12,13 +12,15 @@ position: 2
 
 This tutorial will walk you through the required steps for using __RadListBox__. 
 
-
+* [Assembly References](#assembly-references)
+* [Adding RadListBox to the Project](#adding=radlistbox-to-the-project)
+* [Populating with Items](#populating-with-items)
 
 ## Assembly References
 
 In order to use __RadListBox__ in your project you have to add reference to the __Telerik.Windows.Controls__ assembly.
 
-You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadListBox__ control in code behind and XAML code:
+You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadListBox__ control in XAML code:
 
 ## Adding RadListBox to the Project
 
@@ -51,9 +53,12 @@ The control can either be populated by adding __RadListBoxItems__ to its __Items
 						ItemsSource="{Binding Items}"/>
 {{endregion}}
 
->More detailed information on how to populate __RadListBox__ with some data you could found [here]({%slug radlistbox-populating-with-data-overview%}).
+>More detailed information on how to populate __RadListBox__ with some data you can found [here]({%slug radlistbox-populating-with-data-overview%}).
 
 ## See Also
 
- * [Overview]({%slug radlistbox-overview%})
- * [Populating with Data]({%slug radlistbox-populating-with-data-overview%})
+* [Overview]({%slug radlistbox-overview%})
+* [Data Binding Support Overview]({%slug radlistbox-populating-with-data-binding-support-overview%})
+* [Drag and Drop]({%slug radlistbox-features-dragdrop%})
+* [Selection]({%slug radlistbox-features-selection%})
+* [Auto Complete]({%slug radlistbox-features-autocomplete%})

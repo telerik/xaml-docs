@@ -156,9 +156,9 @@ As you see the last two properties are similar to the same properties of the Gro
 	})
 {{endregion}}
 
-## Expanding and collapsing a group
+## Expanding and Collapsing a Group
 
-The groups of the control can be programmatically expanded/collapsed through the __ExpandGroup__ and __CollapseGroup__ methods of the control. Passing a group to them can be achieved by type casting a given group to the [IGroup](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_igroup.htm) interface. The following example demonstrates how the __ExpandGroup__ method can be called. The __CollapseGroup__ one can be used in the same manner.
+The groups of the control can be programmatically expanded and collapsed through the __ExpandGroup__ and __CollapseGroup__ methods of the control. Passing a group to them can be achieved by type casting a given group to the [IGroup](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_data_igroup.htm) interface. The following example demonstrates how the __ExpandGroup__ method can be called. The __CollapseGroup__ one can be used in the same manner.
 
 #### __[C#] Example 6: Call the ExpandGroup method of RadGridView__
 

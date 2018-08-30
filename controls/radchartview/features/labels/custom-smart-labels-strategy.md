@@ -10,9 +10,9 @@ position: 3
 
 # Custom Smart Label Strategy
 
-When the __Smart Labels__ functionality of the chart is apply, it will try to position the labels in such a way that they do not overlap one another. Nevertheless, there could be cases where the labels need to be position on a given requirement. In such cases, we have provide a way to create custom smart label strategy from scratch which could fit according to our customers requirement. To create such custom smart label strategy, the __ChartSmartLabelsStrategyBase__ class need to be inherit and override the __CalculateLabelsPositions()__. 
+The chart's smart labels feature tries to positions the labels of the data points in such a way that they do not overlap one another. To customize this behavior and implement custom smart labels startegy you can use create a class that derives from __ChartSmartLabelsStrategyBase__ and override its __CalculateLabelsPositions__ method.
 
-#### __[C#] Example 1: Inherit the ChartSmartLabelsStrategyBase__
+#### __[C#] Example 1: Defininig custom smart label strategy class__
 {{region radchartview-labels-custom-smart-labels-strategy_0}}
 	public class CustomSmartLabelStrategy: ChartSmartLabelsStrategyBase
 	{
@@ -25,9 +25,9 @@ When the __Smart Labels__ functionality of the chart is apply, it will try to po
 
 ## Creating Custom Smart Label Strategy
 
-This section will walk you through the creation of custom smart label strategy. First we will specify the following ViewModels which are going to be used to populate the RadCartesianChart control.
+This section will walk you through the creation of a custom smart label strategy. First, we will specify the following view models which are going to be used to populate the chart control.
 
-#### __[C#] Example 1: Creating ViewModels__
+#### __[C#] Example 1: Defining view models__
 {{region radchartview-labels-custom-smart-labels-strategy_1}}
 	public class PlotInfo
 	{
@@ -52,7 +52,7 @@ This section will walk you through the creation of custom smart label strategy. 
 	}
 {{endregion}}
 
-Next, we can go ahead and define the chart in our view. For the purpose of this example we have specify __LineSeries__ and added label connectors and defined custom template so it is more clearly where the labels are position.
+Next, we can go ahead and define the chart. For the purpose of this example we will specify a __LineSeries__ and add label connectors. Then we can definea a custom label template, so it is more clear where the labels are positioned.
 
 >important In order to visualize the connections between the labels and the corresponding data points, you can take advantage of the __LabelConnectorsSettings__ property of the chart series. 
 
@@ -89,7 +89,7 @@ Next, we can go ahead and define the chart in our view. For the purpose of this 
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-To populate the chart we need to set the DataContext of the MainWindow.
+To populate the chart we need to set the DataContext of the user control that hosts it.
 
 #### __[XAML] Example 3: Defining RadCartesianChart in XAML__
 {{region radchartview-labels-custom-smart-labels-strategy_3}}
@@ -108,7 +108,7 @@ If you run the application now, you should get a structure like in **Figure 1**.
 #### Figure 1: Labels without Custom Smart Label Strategy
 ![radchartview-labels-custom-smart-labels-strategy_NoStrategy](images/radchartview-labels-custom-smart-labels-strategy_1.png)
 
-Looking at the Figure 1 you can easily observe that some of the labes are overlapped and it is not clear enough which label for which data point corresponds to. To change the position of the label we can create custom label strategy. To do that we will need to create custom class which inherit __ChartSmartLabelsStrategyBase()__ class. You can use this base class to control the positioning of the labels. The arranging of the labels is happening in the __CalculateLabelsPositions()__ method. So this method need be override and inside it we can create custom logic for positioning the labels in a position so that they are not overlapped. **Example 4** demonstrate a possible solution for such purpose.
+Looking at the Figure 1 you can easily observe that some of the labes are overlapped and it is not clear enough which label for which data point corresponds. To change the position of the label we can create custom label strategy. To do that we will need to create a custom class which inherits ChartSmartLabelsStrategyBase. You can use this class to control the positioning of the labels. The arranging of the labels is happening in the CalculateLabelsPositions() method. 
 
 #### __[C#] Example 4: Creating custom ChartSmartLabelsStrategyBase__
 {{region radchartview-labels-custom-smart-labels-strategy_4}}
@@ -216,9 +216,9 @@ Looking at the Figure 1 you can easily observe that some of the labes are overla
 	}
 {{endregion}}
 
-No to apply the custom smart strategy to the chart, the SmartLabelsStrategy property can be used.
+To apply the custom smart strategy to the chart, set the SmartLabelsStrategy property.
 
-#### __[C#] Example 4: Setting CustomSmartLabelStrategy to the SmartLabelsStrategy property__
+#### __[C#] Example 4: Setting the CustomSmartLabelStrategy__
 {{region radchartview-labels-custom-smart-labels-strategy_3}}
 	public partial class MainWindow : Window
 	{		
@@ -235,8 +235,7 @@ No to apply the custom smart strategy to the chart, the SmartLabelsStrategy prop
 #### Figure 1: Labels with Custom Smart Label Strategy
 ![radchartview-labels-custom-smart-labels-strategy_NoStrategy](images/radchartview-labels-custom-smart-labels-strategy_2.png)
 
-## See Also
-
+## See Also  
 * [GettingStarted]({%slug radchartview-introduction%})
 * [LineSeries]({%slug radchartview-series-lineseries%})
 * [Smart Labels]({%slug radchartview-features-smart-labels%})

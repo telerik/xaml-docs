@@ -12,11 +12,6 @@ position: 10
 
 __RadTreeView__ allows you to navigate through the nodes without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes.
 
-* [Keys List](#keys-list)
-* [Properties](#properties)
-* [Events](#events)
-* [Keyboard Selection](#keyboard-selection)
-
 ## Keys List
 
 __RadTreeView__ provides first class keyboard support. Here is the list of the keys that are supported:

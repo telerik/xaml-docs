@@ -12,6 +12,13 @@ position: 10
 
 __RadTreeView__ allows you to navigate through the nodes without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes.
 
+* [Keys List](#keys-list)
+* [Properties](#properties)
+* [Events](#events)
+* [Keyboard Selection](#keyboard-selection)
+
+## Keys List
+
 __RadTreeView__ provides first class keyboard support. Here is the list of the keys that are supported:
 
 * __ARROW KEYS__ - navigate in the tree
@@ -42,7 +49,7 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 In the example below you can see how to attach to __KeyDown__ and __KeyUp__ events and how to specify a value for the __TabNavigation__ property from your XAML. 
 
-#### __XAML__
+#### __[XAML] Example 1: Subscribing to the KeyDown and KeyUp events__
 
 {{region radtreeview-features-keyboard-support_0}}
 	<telerik:RadTreeView x:Name="radTreeView" KeyDown="radTreeView_KeyDown" KeyUp="radTreeView_KeyUp"/>
@@ -52,7 +59,7 @@ In the example below you can see how to attach to __KeyDown__ and __KeyUp__ even
 
 The implementation of both of the event handlers __radTreeView_KeyDown__ and __radTreeView_KeyUp__ is located in the code-behind file (C# or VB.NET) and looks like this: 
 
-#### __C#__
+#### __[C#] Example 2: Handling the KeyDown and KeyUp events__
 
 {{region radtreeview-features-keyboard-support_1}}
 	private void radTreeView_KeyDown( object sender, KeyEventArgs e )
@@ -65,9 +72,7 @@ The implementation of both of the event handlers __radTreeView_KeyDown__ and __r
 	}
 	{{endregion}}
 
-
-
-#### __VB.NET__
+#### __[VB.NET] Example 2: Handling the KeyDown and KeyUp events__
 
 {{region radtreeview-features-keyboard-support_2}}
 	Private Sub radTreeView_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
@@ -77,6 +82,20 @@ The implementation of both of the event handlers __radTreeView_KeyDown__ and __r
 	    MessageBox.Show("The released key is: " & e.Key.ToString())
 	End Sub
 	{{endregion}}
+
+## Keyboard Selection
+
+>More information on the __IsSelectable__ property of __RadTreeViewItem__ can be found in the [Selection]({%slug radtreeview-feautres-treeviewitem-selection%}) topic.
+
+By default, navigating through the keyboard will select the given __RadTreeViewItem__. It exposes the __IsSelectable__ property through which this default behavior can be altered. Let's have the following example. In it the first item is selected and the second one has its __IsSelectable__ property set to __False__.
+
+#### __Figure 1: RadTreeView with its first item selected__
+![RadTreeView with its first item selected](images/RadTreeView_KeyboardSupport_01.png)
+
+When pressing the Down arrow key in this case the end result will be as follows.
+
+#### __Figure 2: RadTreeView with the IsSelectable of the second item set to False__
+![RadTreeView with its first item selected](images/RadTreeView_Keyboard_Support_02.png)
 
 ## See Also
  * [Mouse Support]({%slug radtreeview-features-mouse-support%})

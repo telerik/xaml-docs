@@ -3256,6 +3256,8 @@ footer_social:
     linkedin: https://www.linkedin.com/showcase/telerik/ 
     twitter: https://twitter.com/Telerik/ 
 
+api_reference_url: "api/"
+
 ## Do not edit below this line
 safe: false
 markdown: MarkdownProcessor

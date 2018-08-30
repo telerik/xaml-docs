@@ -12,7 +12,7 @@ position: 2
 
 __RadChartView__ has two DateTime dedicated axes. The first one is __DateTimeCategoricalAxis__, the other is __DateTimeContinuousAxis__. These axes are different in nature as one is categorical (discrete), and the other is continuous. This topic will cover the specific properties of these two axes.
 
-## __Date Time Continuous Axis__
+## Date Time Continuous Axis
 
 The __DateTimeContinuousAxis__ is like a numerical axis but the axis value range consists of DateTime values which are always sorted chronologically. This axis expects each data point to provide a System.DateTime structure as its value for this axis. It does not work with categories, it works with ranges. The base unit (or the timeline step) of the axis is calculated depending on the smallest difference between any two dates.
 
@@ -160,15 +160,13 @@ And finally the definition of the ChartDataObject class:
 
 ![](images/radchartview-chart_datetime_continuous_axis.png)
 
-## __Date Time Categorical Axis__
+## Date Time Categorical Axis
 
 The DateTime categorical axis is a categorical axis with Date-Time values which are sorted chronologically and is represented by the DateTimeCategoricalAxis class. It also allows definition of categories based on specific date time components. For example if such an axis displays a range of one year, the data points can be plotted in categories for each month. If the range is one month, the values may be categorized by day and so on. 
  
 ### Specific Properties
 
 * __DateTimeComponent__: A property of type __DateTimeComponent__ that gets or sets how data points will be grouped. The DateTime component property is an enumeration and it allows the following values: __Ticks, Year, Quarter, Month, Week, Hour, Minute, Second, Millisecond, Date, TimeOfDay, Day, DayOfWeek, DayOfYear.__
-
-Here is an example that uses the date time categorical axis:
 
 #### __[XAML] Example 4: Setting the DateTimeCategoricalAxis axes__
 

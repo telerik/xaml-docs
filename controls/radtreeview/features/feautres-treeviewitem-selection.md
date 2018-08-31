@@ -40,7 +40,7 @@ You can select a __RadTreeViewItem__ by setting its __IsSelected__ to True.
 	radTreeViewItem.IsSelected = True
 {{endregion}}
 
->Note that the code snippets above cover a scenario when the __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#Binding_the_IsSelected_Property) section at the end of this topic.
+>Note that the code snippets above cover a scenario when the __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#binding-the-isselected-property) section at the end of this topic.
 
 ## Selecting an Item by Using the SelectedItems Collection
 

@@ -20,6 +20,8 @@ You have more control over the exportation by utilizing the export events which 
 
 * [ElementExportedToDocument](#elementexportedtodocument)
 
+* [DataContext of the Export Elements](#datacontext-of-the-export-elements)
+
 * [InitializingExcelMLStyles](#initializingexcelmlstyles-excelml-only)
 
 ## Export Events Life Cycle
@@ -63,7 +65,7 @@ The event was introcuded in __Q1 2010 SP2__ as a direct replacement of the obsol
 The event takes argument of type __GridViewElementExportingEventArgs__ which expose the following properties:
 
 - __Cancel__: Gets or sets a boolean value that indicates whether the event should be canceled or not.
-- __Context__: Gets the data context of the element that is about to be exported. In case the element is *Cell* the *DataContext* would be the underlying item.
+- __Context__: Gets the data context of the element that is about to be exported. In case the element is *Cell* the *DataContext* would be the underlying GridViewDataColumn.
 - __Element__: Gets the current element that is about to be exported.
 - __Format__: Gets the current export format - ExcelMl, Html, etc.
 - __Value__: 	Gets or sets the value that is about to be exported. You can use it to change a certain element`s value.
@@ -148,7 +150,7 @@ The event handler expects __GridViewElementExportingToDocumentEventArgs__ argume
 
  - __Element__ - Gets the current element that is about to be exported.
  - __Cancel__ - Gets or sets a boolean value that indicates whether the event should be canceled or not.
- - __DataContext__ - the DataContext of the corresponding visual element. For example the DataContext of a row is its corresponding data item.
+ - __DataContext__ - the DataContext of the corresponding visual element. For example the DataContext of the **ExportElement.Row** is the underlying **GridViewRow**.
  - __Value__ - the value that is about to be exported.
  - __VisualParameters__ - they are of type __GridViewDocumentVisualExportParameters__ and have a property __Style__ which is of type CellSelectionStyle. It provides the ability to set the FontSize, Fill and etc. for the exported document.
 
@@ -159,6 +161,18 @@ The event handler expects __GridViewElementExportedToDocumentEventArgs__ argumen
 
  - __Element__ - the export Element.
  - __DataContext__ - the DataContext of the corresponding element.
+ 
+## DataContext of the Export Elements
+
+Each of the four events exposes a property which holds the **DataContext** for this particular **ExportElement**. Here is a breakdown of all the possible contexts:
+
+* **GridViewRow**: The context of the **Row** export element.
+* **GridViewHeaderRow**: The context of the **HeaderRow** export element.
+* **GridViewDataColumn**: The context of the **HeaderCell**, **GroupFooterCell**, **FooterCell** and **Cell** export elements.
+* **GroupingImpl<TGroupKey, TItem>**: The context of the **GroupHeaderRow**, **GroupHeaderCell** and **GroupFooterRow** export elements.
+* **GridViewFooterRow**: The context of the **FooterRow** export element.
+
+You can use these contexts to conditionally style and format the exported elements.
 
 ## InitializingExcelMLStyles (ExcelML only)
 
@@ -249,8 +263,6 @@ __NumberFormat:__
 	    e.Styles.Add(style);
 	}
 {{endregion}}
-
-
         
 ## See Also
 

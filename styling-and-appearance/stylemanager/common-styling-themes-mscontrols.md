@@ -18,40 +18,33 @@ position: 3
 Below is the full control list of native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls supported by the Telerik theming mechanism:
         
 
-* System.Windows.Button
-          
+* System.Windows.Controls.Button
 
-* System.Windows.ScrollViewer
-          
+* System.Windows.Controls.ScrollViewer
 
-* System.Windows.CheckBox
-          
+* System.Windows.Controls.CheckBox
 
-* System.Windows.TextBox
-          
+* System.Windows.Controls.TextBox
 
-* System.Windows.RadioButton
-          
+* System.Windows.Controls.RadioButton
 
-* System.Windows.ListBox
-          
+* System.Windows.Controls.ListBox
 
-* System.Windows.PasswordBox
-          
+* System.Windows.Controls.PasswordBox
 
-* System.Windows.RepeatButton
-          
+* System.Windows.Controls.Primitives.RepeatButton
 
-* System.Windows.Tooltip
+* System.Windows.Controls.Tooltip
+
 {% if site.site_name == 'WPF' %}
 
+* System.Windows.Controls.Primitives.StatusBar
 
-* System.Windows.StatusBar
+* System.Windows.Controls.GridSplitter
 
+* System.Windows.Controls.Separator
 
-* System.Windows.GridSplitter
 {% endif %}    
-
 
 For all of those controls you may __specify the theme for them__ as you may for any Telerik control.
 

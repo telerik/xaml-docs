@@ -124,7 +124,7 @@ This property controls whether the hierarchy should be expanded or not. Setting 
 {{endregion}}
 
 #### Figure 1: Expanding hierarchy through the IsExpandedBinding property
-[Expanding hierarchy with IsExpandedBinding](images/radgridview-isexpandedbinding-isexpandablebinding_1)
+![Expanding hierarchy with IsExpandedBinding](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
 
 ## IsExpandableBinding
 
@@ -149,7 +149,7 @@ The visibility of the __GridViewToggleButton__ can be controlled through setting
 {{endregion}}
 
 #### Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding
-[Hiding the GridViewToggleButton through the IsExpandableBinding](images/radgridview-isexpandedbinding-isexpandablebinding_2)
+![Hiding the GridViewToggleButton through the IsExpandableBinding](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)
 
 ## See Also
 

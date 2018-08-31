@@ -19,6 +19,7 @@ This article describes the selection API exposed by __RadTreeView__. The control
 * [Events](#events)
 * [Using the SelectedItem, SelectedValue and SelectedValuePath properties](#using-the-selecteditem-selectedvalue-and-selectedvaluepath-properties)
 * [Binding the IsSelected property](#binding-the-isselected-property)
+* [Binding the IsSelectable property](#binding-the-isselectable-property)
 
 ## Manual item selection
 
@@ -306,6 +307,18 @@ Let's use the following example. There is a business object that defines a boole
 {{endregion}}
 
 If you remove the x:Key setting of the style, it will become an implicit style. This means that it will be applied globally to all RadTreeViewItems in the scope where the style is defined. In this case you will also need to remove the ItemContainerStyle setting.
+
+## Binding the IsSelectable property
+
+__RadTreeViewItem__ provides the option to control whether the item can be selected through the UI or not. This is done through its __IsSelectable__ property. Similarly to the previous example, the __IsSelectable__ property can be set through a Style targeting RadTreeViewItem. 
+
+{{region radtreeview-feautres-treeviewitem-selection_18}}
+	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
+	    <Setter Property="IsSelectable" Value="{Binding IsSelectable}"/>
+	</Style>
+	<!-- -->
+	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
+{{endregion}}
 		
 ## See Also  
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

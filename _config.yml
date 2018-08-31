@@ -916,6 +916,9 @@ navigation:
         title: Paging
     controls/raddataservicedatasource/sorting:
         title: Sorting
+    controls/raddataservicedatasource/how-to:				
+        position: 9
+        title: How To				 
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:

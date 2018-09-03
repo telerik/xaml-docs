@@ -10,13 +10,7 @@ published: True
 # Selection
 
 
-**RadRichTextBox** supports not only selection via the UI, but also programmatic selection. This topic covers the following:
-
-* [Use UI Selection](#ui-selection)
-
-* [Implement Programmatic Selection](#programmatic-selection)
-
-* [Implement Multi-range Selection](#multi-range-selection)
+**RadRichTextBox** supports not only selection via the UI, but also programmatic selection. This topic shows how you can use both approaches.
 
 
 ## UI Selection

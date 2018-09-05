@@ -179,7 +179,7 @@ The groups of the control can be programmatically expanded and collapsed through
 
 >The __IsExpanded__ method can also be used to check whether a hierarchy item is expanded. More information can be found in the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic.
 
-In case when checking whether a given group is expanded the __IsExpanded__ method of __RadGridView__ comes in handy. When a group is passed as a parameter to it, it will return a boolean value determining whether the group is expanded or not.
+When checking whether a given group is expanded, the __IsExpanded__ method of __RadGridView__ comes in handy. When a group is passed as a parameter to it, it will return a boolean value determining whether the group is expanded or not.
 
 #### __[C#] Example 7: Call the IsExpanded method of RadGridView__
 

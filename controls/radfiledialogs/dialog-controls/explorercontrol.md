@@ -30,6 +30,30 @@ The ExplorerControl element can be used as a stand-alone control, thus allowing 
 
 The ExplorerControl supports most of the features described in the [Features]({%slug radfiledialogs-features-common%}) section of the documentation.
 
+## Using the ExplorerControl 
+
+The **ExplorerControl** exposes the following properties:
+
+* **CurrentDirectoryPath** - Gets or sets a value indicating the path of the current directory in this Telerik.Windows.Controls.FileDialogs.ExplorerControl instance.
+
+* **CustomPlacesPaths** - Gets or sets the paths to the custom places navigation tree view. It is of type IEnumerable<string> which differs from the [CustomPlaces]({%slug radfiledialogs-features-common%}) property of the dialogs.
+
+* **ExpandToCurrentDirectory** - Gets or sets a value indicating whether the main navigation pane expands and brings into view the current directory.
+
+* **Filter** - Gets or sets the filter string that describes the list of extensions to filter by. It has an effect only when the IsFolderBrowser property is False.
+
+* **FilterIndex** - Gets or sets a value indicating the current filter index from the list of filter strings specified by the **Filter** property. It has an effect only when the IsFolderBrowser property is False.
+
+* **IsFolderBrowser** - 
+
+## Setting the Layout 
+
+The ExplorerControl exposes a __Layout__ property that determines the layout of the list with the files. This property is similar to the [InitialSelectedLayout]({%slug radfiledialogs-features-common%}#setting-the-initial-layout-of-the-tiles) property of the file dialogs.
+
+## Custom Places 
+
+The ExplorerControl provides you with the option display directories to the left of the Main Pane above the Tree Navigation Pane similarly to Windows' Quick Access view. You can do that by setting the **CustomPlacesPaths** property of the control. This property is similar to the [CustomPlaces]({%slug radfiledialogs-features-common%}) property of the dialogs.
+
 ## Browser Mode
 
 The control can work in two modes - the first one allows you to select folders and files. The second one allows you to select only folders. You can control this via the __IsFolderBrowser__ property. If you set the property to __True__ you will be able to see and select only folders.

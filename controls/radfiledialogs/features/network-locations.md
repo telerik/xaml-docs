@@ -12,18 +12,6 @@ position: 5
 
 Since **R3 2018**, the RadFileDialogs as well as the ExplorerControl provide out of the box support for Network Locations.
 
-## Breaking Changes
- 
-In order to introduce support for the network locations in the RadFileDialogs, some changes in the infrastructure were introduced:
-
-* **DirectoryInfoWrapper** now inherits from the new class **DirectoryBaseWrapper** which inherits from **FileSystemInfoWrapper**. Previously DirectoryInfoWrapper directly inherited FileSystemInfoWrapper.
-
-* HistoryNavigationPaneControl's DirectoryHistory property is now **RadObservableCollection of DirectoryBaseWrapper**. Previously it was **RadObservableCollection of DirectoryInfoWrapper**.
-
-* IDialogViewModel's InitialDirectory property is now **DirectoryBaseWrapper**. Previously it was **DirectoryInfoWrapper**.
-
-* ICurrentDirectoryViewModel InitialDirectory property is now **DirectoryBaseWrapper**. Previously it was **DirectoryInfoWrapper**.
-
 ## Enabling Network Locations
 
 In order for the RadFileDialogs and ExplorerControl to show the Network drive and all of the available network locations, you can set the **ShowNetworkLocations** property to **True**. This is demonstrated in **Example 1**.
@@ -59,7 +47,19 @@ Network nodes can be accessed either though the Path Navigation Pane by typing "
 
 ## Opening Server Nodes
 
-The RadFileDialogs as well as the ExplorerControl also support creating nodes based on a valid server path. They can be opened by typing "\\" followed by the name of the server in the Path Navigation Pane, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid server path. An example of a valid server path is "\\localhost". 
+The RadFileDialogs as well as the ExplorerControl also support creating nodes based on a valid server path. They can be opened by typing "\\" followed by the name of the server in the Path Navigation Pane, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid server path. An example of a valid server path is "\\localhost".
+
+## Breaking Changes
+ 
+In order to introduce support for the network locations in the RadFileDialogs, some changes in the infrastructure were introduced:
+
+* **DirectoryInfoWrapper** now inherits from the new class **DirectoryBaseWrapper** which inherits from **FileSystemInfoWrapper**. Previously DirectoryInfoWrapper directly inherited FileSystemInfoWrapper.
+
+* HistoryNavigationPaneControl's DirectoryHistory property is now **RadObservableCollection of DirectoryBaseWrapper**. Previously it was **RadObservableCollection of DirectoryInfoWrapper**.
+
+* IDialogViewModel's InitialDirectory property is now **DirectoryBaseWrapper**. Previously it was **DirectoryInfoWrapper**.
+
+* ICurrentDirectoryViewModel InitialDirectory property is now **DirectoryBaseWrapper**. Previously it was **DirectoryInfoWrapper**.
 
 ## See Also
 

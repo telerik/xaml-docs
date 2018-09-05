@@ -19,7 +19,7 @@ The ExplorerControl element can be used as a stand-alone control, thus allowing 
 >tip The explorer control can be found in the Telerik.Windows.Controls.FileDialogs namespace, so in order to use it in XAML you can define the following namespace: `xmlns:fileDialogs="clr-namespace:Telerik.Windows.Controls.FileDialogs;assembly=Telerik.Windows.Controls.FileDialogs"`.
 
 #### __[XAML] Example 1: Define explorer control__
-{{region radfiledialogs-explorercontrol-0}}
+{{region xaml-radfiledialogs-explorercontrol-0}}
 	<fileDialogs:ExplorerControl CurrentDirectoryPath="C:\Program Files"  />
 {{endregion}}
 
@@ -32,19 +32,35 @@ The ExplorerControl supports most of the features described in the [Features]({%
 
 ## Using the ExplorerControl 
 
-The **ExplorerControl** exposes the following properties:
+Here are some of the key properties that the **ExplorerControl** exposes: 
 
-* **CurrentDirectoryPath** - Gets or sets a value indicating the path of the current directory in this Telerik.Windows.Controls.FileDialogs.ExplorerControl instance.
+* **CurrentDirectoryPath** - Gets or sets a value indicating the path of the current directory in the ExplorerControl instance.
 
-* **CustomPlacesPaths** - Gets or sets the paths to the custom places navigation tree view. It is of type IEnumerable<string> which differs from the [CustomPlaces]({%slug radfiledialogs-features-common%}) property of the dialogs.
+* **CustomPlacesPaths** - Gets or sets the paths to the custom places navigation tree view. It is of type IEnumerable of string which differs from the [CustomPlaces]({%slug radfiledialogs-features-customplaces%}) property of the dialogs which is of type IList of string.
 
 * **ExpandToCurrentDirectory** - Gets or sets a value indicating whether the main navigation pane expands and brings into view the current directory.
 
 * **Filter** - Gets or sets the filter string that describes the list of extensions to filter by. It has an effect only when the IsFolderBrowser property is False.
 
+* **FilterDescriptors** -  Gets the list of the Telerik.Windows.Controls.FileDialogs.FileFilterDescriptor specified by the Filter property. It has effect only when IsFolderBrowser is False.
+
 * **FilterIndex** - Gets or sets a value indicating the current filter index from the list of filter strings specified by the **Filter** property. It has an effect only when the IsFolderBrowser property is False.
 
-* **IsFolderBrowser** - 
+* **IsFolderBrowser** - Gets or sets a value indicating whether the ExplorerControl instance is used for directories selection or both directories and files.
+
+* **Layout** - Gets or sets the current Telerik.Windows.Controls.FileDialogs.LayoutType of the Main pane.
+
+* **MultiSelect** - Gets or sets a value indicating whether multiple selection of files or folders is allowed.
+
+* **SelectedFileName** -  Gets the full path of the currently selected file or directory.
+
+* **SelectedFileNames** - Gets the list of full paths of the currently selected files and / or folders.
+
+* **SelectedSafeFileNames** - Gets the list of names of the currently selected files and / or folders.
+
+* **ShowHiddenFiles** - Gets or sets a boolean value indicating whether hidden files and folders should be visible in the Explorer.
+
+* **ShowNetworkLocations** - Gets or sets a value indicating whether the dialog shows network computers in the navigation tree.
 
 ## Setting the Layout 
 
@@ -62,6 +78,8 @@ The control can work in two modes - the first one allows you to select folders a
 {{region xaml-radfiledialogs-explorercontrol-01}}
 	<fileDialogs:ExplorerControl IsFolderBrowser="True" />
 {{endregion}}
+
+> Changing the **IsFolderBrowser** property during runtime is not supported. The property is respected only during initializing of the ExplorerControl.
 
 ## Navigating Through Directories
 
@@ -81,13 +99,45 @@ To get the selected files or folders you can use the __SelectedFileName__, __Sel
 By default the selection mode is single which allows you to select a single file or folder. To change this you can set the __Multiselect__ property to __True__.
 
 #### __[XAML] Example 4: Enable multi selection__
-{{region radfiledialogs-explorercontrol-03}}
+{{region xaml-radfiledialogs-explorercontrol-03}}
 	<fileDialogs:ExplorerControl Multiselect="True" />
 {{endregion}}
 
 ## Filtering 
 
-The ExplorerControl can be filtered using its __Filter__ and __FilterIndex__ properties. Read more about them in the [Filtering]({%slug radfiledialogs-features-filtering%}) article.
+In order to filter the ExplorerControl, you can bind its **Filter** and **FilterIndex** properties.  **Example 5** demonstrates how you can bind the FilterIndex property to the SelectedValue property of a RadComboBox which is bound to the FilterDescriptors property of the ExplorerControl.
+
+#### __[XAML] Example 5: Filtering ExplorerControl__
+{{region xaml-radfiledialogs-explorercontrol-03}}
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <fileDialogs:ExplorerControl x:Name="explorer"
+                                     IsFolderBrowser="False"
+                                     Filter="{Binding Text, ElementName=filtertext}"
+                                     FilterIndex="{Binding SelectedIndex, ElementName=filterindex}" />
+
+       
+        <StackPanel Orientation="Vertical" Margin="2 4" Grid.Row="1">
+            <TextBlock Text="Filter and FilterIndex " FontWeight="Bold" />
+            <TextBlock  TextWrapping="Wrap" Text="Office Files (*.doc, *.xls)|*.doc;*.xls;*.xlsx;*.ppt|Image Files (*.jpg, *.png)|*.jpg;*.png|Text Files (*.txt)|*.txt;|Archives Files (*.zip, *.rar)|*.zip;*.rar|All Files (*.*)|*.*" x:Name="filtertext"/>
+            <telerik:RadComboBox  x:Name="filterindex" SelectedIndex="4"
+                                          ItemsSource="{Binding FilterDescriptors, ElementName=explorer}" DisplayMemberPath="FilterName"/>
+        </StackPanel>
+        
+    </Grid>
+{{endregion}}
+
+#### __Figure 2: Result from Example 5 before filtering__ 
+![ExplorerControl before filter](images/explorercontrol-beforefilter.png)
+
+
+#### __Figure 3: Result from Example 5 after filtering__ 
+![ExplorerControl after filter](images/explorercontrol-afterfilter.png)
+
+You can read some more about the __Filter__ and __FilterIndex__ properties in the [Filtering]({%slug radfiledialogs-features-filtering%}) article.
 
 >important Filtering is available only if the __IsFolderBrowser__ property is set to __False__.
 

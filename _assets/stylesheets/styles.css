@@ -1377,6 +1377,108 @@ header, nav, section, article, aside, footer {
 .fluenttheme-readonlybordercolor-dark {
 	background: #4C4C4C;
 }
+
+/* START Crystal Theme Palette Colors */
+
+.crystaltheme-accenthighcolor {
+	background: #56A9FD;
+}
+.crystaltheme-accentlowcolor {
+	background: #087EFF;
+}
+.crystaltheme-accentmouseoverhighcolor {
+	background: #2590FB;
+}
+.crystaltheme-accentmouseoverlowcolor {
+	background: #0072EE;
+}
+.crystaltheme-accentpressedcolor {
+	background: #0060CF;
+}
+.crystaltheme-accentfocusedcolor {
+	background: #7CB7F9;
+}
+.crystaltheme-accentselectedcolor {
+	background: #1C83FF;
+}
+.crystaltheme-basichighcolor {
+	background: #CCCCCC;
+}
+.crystaltheme-basiclowcolor {
+	background: #A4A3A4;
+}
+.crystaltheme-accentbasichighcolor {
+	background: #2390FD;
+}
+.crystaltheme-accentbasiclowcolor {
+	background: #0052E6;
+}
+.crystaltheme-iconcolor {
+	background: #505050;
+}
+.crystaltheme-mainhighcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-mainlowcolor {
+	background: #F3F3F3;
+}
+.crystaltheme-markercolor {
+	background: #020202;
+}
+.crystaltheme-validationcolor {
+	background: #D40012;
+}
+.crystaltheme-complementarycolor {
+	background: #DEDEDE;
+}
+.crystaltheme-complementarybasichighcolor {
+	background: #ADADAD;
+}
+.crystaltheme-complementarybasiclowcolor {
+	background: #8D8D8D;
+}
+.crystaltheme-mouseoverhighcolor {
+	background: #F3F3F3;
+}
+.crystaltheme-mouseoverlowcolor {
+	background: #EEEEEE;
+}
+.crystaltheme-pressedhighcolor {
+	background: #DCDCDC;
+}
+.crystaltheme-pressedlowcolor {
+	background: #CDCDCD;
+}
+.crystaltheme-alternativecolor {
+	background: #EAEAEA;
+}
+.crystaltheme-alternativebasiccolor {
+	background: #D3D3D3;
+}
+.crystaltheme-markerinvertedcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-primarycolor {
+	background: rgba(255,255,255, 0.4);
+}
+.crystaltheme-primarybackgroundcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-headerhighcolor {
+	background: #E8E6E6;
+}
+.crystaltheme-headerlowcolor {
+	background: #D4D0D0;
+}
+.crystaltheme-readonlybackgroundcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-readonlybordercolor {
+	background: #A4A3A4;
+}
+
+/* END Crystal Theme Palette Colors */
+
 /* END Theme Palette Color Styles */
 
 /* START Kendo Grid Nova Theme CSS*/

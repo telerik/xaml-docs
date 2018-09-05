@@ -12,6 +12,8 @@ position: 14
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
+> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row. More information can be found in the [Selected Row Background]({%slug radgridview-rows-selected-background%}) article.
+
 In this article we will discuss the following topics:
 
 * [Targeting the GridViewRow Element](#targeting-the-gridviewrow-element)
@@ -45,7 +47,7 @@ You have two options:
 	</Style>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__ and __AlternateGridViewRowStyle__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
 ## Setting RadGridView's RowStyle and AlternateRowStyle
 

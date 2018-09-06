@@ -5,7 +5,7 @@ description: Exporting Fixed Page to Image
 slug: radpdfviewer-exporting-fixedpage-to-image
 tags: save,saving,exporting,radfixedpage,image,export,to
 published: True
-position: 7
+position: 4
 ---
 
 # Exporting Fixed Page to Image

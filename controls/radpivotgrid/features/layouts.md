@@ -18,37 +18,33 @@ When you create your report with __RadPivotGrid__ you may want to make the data 
 
 * __Compact__ - with this layout all row headers are in one column and all column headers are in one row. If you have more than one group description in your rows/columns you will notice that there is fixed indent for each group headers. This way there is more space for numeric data:
 
-![Rad Pivot Grid Features Layouts 01](images/RadPivotGrid_Features_Layouts_01.png)
+	![Rad Pivot Grid Features Layouts 01](images/RadPivotGrid_Features_Layouts_01.png)
 
 * __Outline__ - with this layout Row and Column Headers are separated based on their level. The indent depends on the length of the Row Headers and on the height of the Column Headers.
 
-![Rad Pivot Grid Features Layouts 02](images/RadPivotGrid_Features_Layouts_02.png)
+	![Rad Pivot Grid Features Layouts 02](images/RadPivotGrid_Features_Layouts_02.png)
 
 * __Tabular__ - with this layout you will see only one row/column per item. The hierarchy from the other two layouts is "flattened" here. 
 
-![Rad Pivot Grid Features Layouts 03](images/RadPivotGrid_Features_Layouts_03.png)
+	![Rad Pivot Grid Features Layouts 03](images/RadPivotGrid_Features_Layouts_03.png)
 
 ## Defining Layout
 
 __RadPivotGrid__ uses two different layouts - horizontal layout(for columns) and vertical layout (for rows). By combining them you can change your generated report to look exactly as you need it. You can set them in your __XAML__ or in code behind:        
 
-#### __XAML__
-
+#### __[XAML] Example 1: Setting the layout in XAML__  
 {{region radpivotgrid-features-layouts_1}}
-	<pivot:RadPivotGrid HorizontalLayout="Outline" VerticalLayout="Compact">
-	</pivot:RadPivotGrid>
+	<pivot:RadPivotGrid HorizontalLayout="Outline" VerticalLayout="Compact" />
 {{endregion}}
 
-#### __C#__
-
+#### __[C#] Example 2: Setting the layout in code__  
 {{region radpivotgrid-features-layouts_1}}
 	RadPivotGrid pivot = new RadPivotGrid();
 	pivot.HorizontalLayout = PivotLayoutType.Outline;
 	pivot.VerticalLayout = PivotLayoutType.Compact;
 {{endregion}}
 
-#### __VB.NET__
-
+#### __[VB.NET] Example 2: Setting the layout in code__  
 {{region radpivotgrid-features-layouts_1}}
 	Dim pivot As New RadPivotGrid()
 	pivot.HorizontalLayout = PivotLayoutType.Outline
@@ -83,12 +79,42 @@ Here is __RadPivotGrid__ with the following configuration:
 
 ![Rad Pivot Grid Features Layouts 04](images/RadPivotGrid_Features_Layouts_04.png)
 
-## See Also
+## Auto Show Subtotals
 
+When you set the RowSubTotalsPosition property of the group description to a value different than None, the pivot renders the subtotals of the corresponding property group. You can alter this and hide the subtotals for a specific group via the __AutoShowSubTotals__ property of the corresponding group description object.
+
+#### __[XAML] Example 3: Hidding the subtotals in XAML__  
+{{region radpivotgrid-features-layouts-2}}	
+	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
+		<pivot:PropertyGroupDescription PropertyName="Product" />
+		<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" AutoShowSubTotals="False"/>
+	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
+{{endregion}}
+
+#### __[C#] Example 4: Hidding the subtotals in code__  
+{{region radpivotgrid-features-layouts-3}}	
+		dataSourceProvider.RowGroupDescriptions.Add(new PropertyGroupDescription() { PropertyName = "Product" });
+		dataSourceProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "Date", Step = DateTimeStep.Month, AutoShowSubTotals = false });
+{{endregion}}
+
+#### __[VB.NET] Example 4: Hidding the subtotals in code__  
+{{region radpivotgrid-features-layouts-4}}
+	dataSourceProvider.RowGroupDescriptions.Add(New PropertyGroupDescription() With { .PropertyName = "Product" })
+	dataSourceProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With {
+        .PropertyName = "Date",
+        .[Step] = DateTimeStep.Month,
+        .AutoShowSubTotals = False
+    })
+{{endregion}}
+
+![](images/pivotgrid-features-layouts-0.png)
+
+The show sub totals option is available also in the context menu of the group descriptions in the RadPivotFieldList control.
+
+![](images/pivotgrid-features-layouts-1.png)
+
+## See Also  
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
-
  * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
-
  * [Populating with Data]({%slug radpivotgrid-populating-with-data%})
-
  * [Features]({%slug radpivotgrid-features%})

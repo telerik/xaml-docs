@@ -33,7 +33,7 @@ In **RadPdfViewer**, you can show bookmarks using **RadPdfViewerNavigationPane**
 	        <ColumnDefinition Width="Auto" />
 	        <ColumnDefinition />
 	    </Grid.ColumnDefinitions>
-	    <telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" PaneWidth="300" />
+	    <telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" PaneWidth="300" />
 	    <telerik:RadPdfViewer Grid.Column="1" x:Name="pdfViewer" DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}" />
 	</Grid>
 {{endregion}}
@@ -44,7 +44,7 @@ The items inside the panel are represented by the **BookmarkItem** class, which 
 
 ## Setting the Way the Document Looks Like When Opened in a Viewer
 
-The PDF format allows you to specify how the document should be displayed when opened. In RadPdfViewer, you can obtain the information about the document visualization using the **PageMode** property. It is of type **PageMode** and supports two values:
+The PDF format allows you to specify how the document should be displayed when opened. In RadPdfViewer, you can obtain the information about the document visualization using the **PageMode** property. It is of type **PageMode** and supports two values. The enum controls if any of the tabs in the havigation pane should be selected (opened) by default when the document contains bookmarks. The values of **PageMode** could be:
 
 * **UseNone**: Nothing additional except the document is visible. 
 * **UseBookmarks**: Document bookmarks are visible.
@@ -60,7 +60,7 @@ This command represents the bookmark activated action (usually a user click even
 
 ### SyncCurrentBookmarkItemCommand
 
-Synchronizes the current location on the page with the related bookmark item. Can be invoked through the UI using the **Find Current Bookmark** button, shown in **Figure 1**.
+Synchronizes the current location in the document with the related bookmark item. Can be invoked through the UI using the **Find Current Bookmark** button, shown in **Figure 1**.
 
 #### [C#] Example 2: Invoking a command in code
 

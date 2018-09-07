@@ -19,6 +19,7 @@ This article will describe two implementations of the IGroupDescriptor interface
 * [GroupDescriptor](#groupdescriptor)
 * [ColumnGroupDescriptor](#columngroupdescriptor)
 * [Expanding and collapsing a group](#expanding-and-collapsing-a-group)
+* [Check if a group is expanded](#check-if-a-group-is-expanded)
 
 ## GroupDescriptor
 
@@ -172,6 +173,24 @@ The groups of the control can be programmatically expanded and collapsed through
 {{region vb-gridview-programmatic-grouping_11}}
     Dim group = TryCast(Me.clubsGrid.Items.Groups(1), IGroup)
     Me.clubsGrid.ExpandGroup(group)
+{{endregion}}
+
+## Check if a group is expanded
+
+>The __IsExpanded__ method can also be used to check whether a hierarchy item is expanded. More information can be found in the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic.
+
+When checking whether a given group is expanded, the __IsExpanded__ method of __RadGridView__ comes in handy. When a group is passed as a parameter to it, it will return a boolean value determining whether the group is expanded or not.
+
+#### __[C#] Example 7: Call the IsExpanded method of RadGridView__
+
+{{region cs-gridview-programmatic-grouping_12}}
+	bool isExpanded = this.clubsGrid.IsExpanded(this.clubsGrid.Items.Groups[1]);
+{{endregion}}
+
+#### __[VB.NET] Example 7: Call the IsExpanded method of RadGridView__
+
+{{region vb-gridview-programmatic-grouping_12}}
+	Dim isExpanded As Boolean = Me.clubsGrid.IsExpanded(Me.clubsGrid.Items.Groups(1))
 {{endregion}}
 
 ## See Also

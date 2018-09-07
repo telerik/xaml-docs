@@ -26,7 +26,7 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 * [**Interactive Forms**]({%slug radpdfviewer-features-interactive-forms%}): The control supports different types of interactive forms and enables the end user to modify their values.
 {% if site.site_name == 'WPF' %}
 
-* [**Bookmarks (Document Outlines)**]({%slug radpdfviewer-features-bookmarks%})": RadPdfViewer can show the bookmarks of the document and ease the navigation inside.
+* [**Bookmarks (Document Outlines)**]({%slug radpdfviewer-features-bookmarks%}): RadPdfViewer can show the bookmarks of the document and ease the navigation inside.
 
 * [**Digital Signatures**]({%slug radpdfviewer-features-digital-signature%}): The user can show digitally signed documents and validate the signatures inside. Signing a document is supported as well.
 {% endif %}

@@ -14,6 +14,16 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+## What's Different in 2018 R3
+
+### Changed
+
+The method __DocumentPosition.GetCurrentPositionInSpan()__ is deprecated. 
+
+### What to do now
+
+You can use the __DocumentPosition.GetIndexInCurrentSpanBox()__ method instead.
+
 
 ## What's Different in 2015 Q2
 

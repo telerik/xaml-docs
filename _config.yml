@@ -445,6 +445,8 @@ navigation:
         title: Validation
     controls/radmediaplayer:
         title: RadMediaPlayer
+    controls/radmulticolumncombobox:
+        title: RadMultiColumnComboBox
     controls/radoutlookbar:
         title: RadOutlookbar
     controls/radpanelbar:

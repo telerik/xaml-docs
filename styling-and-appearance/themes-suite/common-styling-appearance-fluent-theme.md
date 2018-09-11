@@ -8,6 +8,112 @@ published: True
 position: 6
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.fluenttheme-accentcolor-light {
+	background: #0099BC;
+}
+.fluenttheme-accentmouseovercolor-light {
+	background: #00BFE8;
+}
+.fluenttheme-accentpressedcolor-light {
+	background: #0087A4
+}
+.fluenttheme-accentfocusedcolor-light {
+	background: #15D7FF;
+}
+.fluenttheme-basiccolor-light {
+	background: #CCCCCC;
+}
+.fluenttheme-basiccolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-basicsolidcolor-light {
+	background: #CCCCCC;
+}
+.fluenttheme-basicsolidcolor-dark {
+	background: #4C4C4C;
+}
+.fluenttheme-iconcolor-light {
+	background: #333333;
+}
+.fluenttheme-iconcolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-maincolor-light {
+	background: #E6E6E6;
+}
+.fluenttheme-maincolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-markercolor-light {
+	background: #000000;
+}
+.fluenttheme-markercolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-markermouseovercolor-light {
+	background: #000000;
+}
+.fluenttheme-validationcolor-light {
+	background: #E81123;
+}
+.fluenttheme-complementarycolor-light {
+	background: #CCCCCC;
+}
+.fluenttheme-complementarycolor-dark {
+	background: #333333;
+}
+.fluenttheme-mouseovercolor-light {
+	background: #CCCCCC;
+}
+.fluenttheme-mouseovercolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-pressedcolor-light {
+	background: #B3B3B3;
+}
+.fluenttheme-pressedcolor-dark {
+	background: #FFFFFF;
+}
+.fluenttheme-alternativecolor-light {
+	background: #F2F2F2;
+}
+.fluenttheme-alternativecolor-dark {
+	background: #2B2B2B;
+}
+.fluenttheme-markerinvertedcolor-light {
+	background: #FFFFFF;
+}
+.fluenttheme-primarycolor-light {
+	background: #FFFFFF;
+}
+.fluenttheme-primarybackgroundcolor-light {
+	background: #FFFFFF;
+}
+.fluenttheme-primarybackgroundcolor-dark {
+	background: #000000;
+}
+.fluenttheme-primarymouseovercolor-light {
+	background: #FFFFFF;
+}
+.fluenttheme-readonlybackgroundcolor-light {
+	background: #FFFFFF;
+}
+.fluenttheme-readonlybordercolor-light {
+	background: #CDCDCD;
+}
+.fluenttheme-readonlybordercolor-dark {
+	background: #4C4C4C;
+}
+</style>
+
 # Fluent Theme
 
 With the **R1 2018** release of the **UI for WPF** suite we have introduced the brand new **Fluent theme**. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and beautiful interpretation of the Fluent design system.

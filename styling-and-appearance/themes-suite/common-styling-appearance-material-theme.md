@@ -8,6 +8,70 @@ published: True
 position: 6
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.materialtheme-mainbrush{
+	background: #FFFFFF;
+}
+.materialtheme-primarybrush{
+	background: #FAFAFA;
+}
+.materialtheme-complementarybrush{
+	background: #E0E0E0;
+}
+.materialtheme-alternativebrush{
+	background: #F5F5F5;
+}
+.materialtheme-dividerbrush{
+	background: #E1E1E1;
+}
+.materialtheme-markerbrush{
+	background: #000000;
+}
+.materialtheme-markerinvertedbrush{
+	background: #FFFFFF;
+}
+.materialtheme-iconbrush{
+	background: #000000;
+}
+.materialtheme-validationbrush{
+	background: #D50000;
+}
+.materialtheme-accentnormalbrush{
+	background: #FFAB40;
+}
+.materialtheme-accenthoverbrush{
+	background: #FFD180;
+}
+.materialtheme-accentpressedbrush{
+	background: #FF9100;
+}
+.materialtheme-primarynormalbrush{
+	background: #3F51B5;
+}
+.materialtheme-primaryhoverbrush{
+	background: #303F9F;
+}
+.materialtheme-primarypressedbrush{
+	background: #1A237E;
+}
+.materialtheme-primaryfocusbrush{
+	background: #9FA8DA;
+}
+.materialtheme-ripplebrush{
+	background: #FFFFFF;
+}
+.materialtheme-dividersolidbrush{
+	background: #E1E1E1;
+}
+</style>
+
 # Material Theme
 
 With the **R2 2017** release of the **UI for WPF** suite we have introduced the brand new **Material Theme**. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Material design drop shadows with beautiful and smooth transitions between the states. 

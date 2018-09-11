@@ -8,6 +8,112 @@ published: True
 position: 7
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.crystaltheme-accenthighcolor {
+	background: #56A9FD;
+}
+.crystaltheme-accentlowcolor {
+	background: #087EFF;
+}
+.crystaltheme-accentmouseoverhighcolor {
+	background: #2590FB;
+}
+.crystaltheme-accentmouseoverlowcolor {
+	background: #0072EE;
+}
+.crystaltheme-accentpressedcolor {
+	background: #0060CF;
+}
+.crystaltheme-accentfocusedcolor {
+	background: #7CB7F9;
+}
+.crystaltheme-accentselectedcolor {
+	background: #1C83FF;
+}
+.crystaltheme-basichighcolor {
+	background: #CCCCCC;
+}
+.crystaltheme-basiclowcolor {
+	background: #A4A3A4;
+}
+.crystaltheme-accentbasichighcolor {
+	background: #2390FD;
+}
+.crystaltheme-accentbasiclowcolor {
+	background: #0052E6;
+}
+.crystaltheme-iconcolor {
+	background: #505050;
+}
+.crystaltheme-mainhighcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-mainlowcolor {
+	background: #F3F3F3;
+}
+.crystaltheme-markercolor {
+	background: #020202;
+}
+.crystaltheme-validationcolor {
+	background: #D40012;
+}
+.crystaltheme-complementarycolor {
+	background: #DEDEDE;
+}
+.crystaltheme-complementarybasichighcolor {
+	background: #ADADAD;
+}
+.crystaltheme-complementarybasiclowcolor {
+	background: #8D8D8D;
+}
+.crystaltheme-mouseoverhighcolor {
+	background: #F3F3F3;
+}
+.crystaltheme-mouseoverlowcolor {
+	background: #EEEEEE;
+}
+.crystaltheme-pressedhighcolor {
+	background: #DCDCDC;
+}
+.crystaltheme-pressedlowcolor {
+	background: #CDCDCD;
+}
+.crystaltheme-alternativecolor {
+	background: #EAEAEA;
+}
+.crystaltheme-alternativebasiccolor {
+	background: #D3D3D3;
+}
+.crystaltheme-markerinvertedcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-primarycolor {
+	background: rgba(255,255,255, 0.4);
+}
+.crystaltheme-primarybackgroundcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-headerhighcolor {
+	background: #E8E6E6;
+}
+.crystaltheme-headerlowcolor {
+	background: #D4D0D0;
+}
+.crystaltheme-readonlybackgroundcolor {
+	background: #FFFFFF;
+}
+.crystaltheme-readonlybordercolor {
+	background: #A4A3A4;
+}
+</style>
+
 # Crystal Theme
 
 With the **R3 2018** release of the **UI for WPF** suite we have introduced the brand new **Crystal theme**. Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.

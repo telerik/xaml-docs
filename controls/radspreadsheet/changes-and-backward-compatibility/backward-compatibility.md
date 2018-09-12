@@ -10,10 +10,7 @@ position: 1
 
 # Backward Compatibility
 
-
-
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
-
 
 ## What's Different in 2018 R2
 
@@ -25,15 +22,12 @@ The default value of Telerik.Windows.Documents.Spreadsheet.Model.Printing.SheetP
 
 If you need to keep the document with A4 PaperType, you can apply this setting before exporting it:
 
-{{region radspreadprocessing-backward-compatibility_0}}
-
+{{region radspreadprocessing-backward-compatibility_0}}  
 	foreach (Worksheet worksheet in workbook.Worksheets)
 	{
 		worksheet.WorksheetPageSetup.PaperType = PaperTypes.A4;
 	}
-
 {{endregion}}
-
 
 ## What's Different in 2016 R3
 
@@ -44,7 +38,6 @@ Telerik.Windows.Controls.Spreadsheet.Controls::**ProtectionButton** is obsolete.
 ### What to do now
 
 The control can be replaced with any other button.
-
 
 ## What's Different in 2016 Q1
 
@@ -59,7 +52,6 @@ Telerik.Windows.Maths::**InterpolationExtensions** is now internal.
 ### Changed
 
 Telerik.Windows.Maths::**RVector** is now internal.
-
 
 ### Changed
 
@@ -77,7 +69,6 @@ Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionBase.Eval
 
 Use Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionBase.EvaluateOverride(FunctionEvaluationContext context)** instead.
 
-
 ### Changed
 
 Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionWithArguments.EvaluateOverride(object[] arguments)** is obsolete.
@@ -93,8 +84,6 @@ Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionWithSameT
 ### What to do now
 
 Use Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionWithSameTypeArguments&lt;T&gt;.EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)** instead.
-
-
 
 ## What's Different in 2015 Q2
 
@@ -169,7 +158,6 @@ Telerik.Windows.Controls.Spreadsheet.Dialogs.NameManagerDialogViewModel::__Selec
 ### What to do now
 
 Use the __SelectedSpreadsheetNameView__ property instead.
-
 
 ### Changed
 
@@ -392,8 +380,6 @@ Use __ExportWhat__ property instead.
 
 Telerik.Windows.Controls.Spreadsheet.PrintWhatSettings::__PrintWhat__ is removed.
 
-
-
 ### Changed
 
 Telerik.Windows.Controls.Spreadsheet.PrintWhatSettings::__PrintWhatSettings__ is removed.
@@ -410,14 +396,11 @@ Telerik.Windows.Controls.__IconManager__ is removed.
 
 Use __IconResource__ MarkupExtension instead. You can read more about the markup extension at [the common Switching Icons at Runtime article]({%slug styling-apperance-switching-icons-at-runtime%}) and [the one for Spreadsheet]({%slug radspreadsheet-howto-switching-icons-at-runtime%}).
 
-
-
 ## What's Different in 2015 Q1
 
 ### Changed
 
 __CellEditorBase__ no longer inherits from __Textbox__.
-
 
 ### Changed
 
@@ -427,7 +410,6 @@ Removed __CellEditor__'s InsertText(string), SetText(string, int), SetText(strin
 
 Use the Text property.
 
-
 ### Changed
 
 __ICellEditor__ interface:
@@ -435,8 +417,6 @@ __ICellEditor__ interface:
 * Changed the __TextChanged__ type from TextChangedEventHandler to EventHandler
 * Changed the __SelectionChanged__ type from RoutedEventHandler to EventHandler
 * Removed the __int CaretIndex__ property
-
-
 
 ### Changed      
 
@@ -446,27 +426,22 @@ The __DocumentContentChanged__ event of __CellEditor__ is obsolete.
 
 Use the __TextChanged__ event instead.
 
-
 ## What's Different in 2014 Q3
 
 ### Changed
 
-The __IsEnabled__ property of the WorkbookHistory class is changed to be by default false. . It is set to true when the Workbook is assigned to a RadSpreadsheet.
-            
+The __IsEnabled__ property of the WorkbookHistory class is changed to be by default false. . It is set to true when the Workbook is assigned to a RadSpreadsheet.            
 
 ### What to do now
 
-If you are modifying a Workbook without showing it in RadSpreadsheet and need to preserve the history, set the IsEnabled property to true.
-            
+If you are modifying a Workbook without showing it in RadSpreadsheet and need to preserve the history, set the IsEnabled property to true.            
 
 ## What's Different in 2014 Q1
 
 ### Changed
 
-The __NameBox__ class uses a ViewModel.
-            
+The __NameBox__ class uses a ViewModel.            
 
 ### What to do now
 
 Use the properties of the __NameBoxViewModel__.
-            

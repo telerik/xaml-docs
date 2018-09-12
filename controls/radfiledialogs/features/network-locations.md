@@ -43,15 +43,15 @@ Network nodes differ from normal nodes in some aspects which are described below
 
 ## Accessing Network Nodes 
 
-Network nodes can be accessed either though the Path Navigation Pane by typing "\\" followed by the name of the network node, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid node path.  
+Network nodes can be accessed either though the Path Navigation Pane by typing "\\\\" followed by the name of the network node, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid node path.  
 
 ## Opening Server Nodes
 
-The RadFileDialogs as well as the ExplorerControl also support creating nodes based on a valid server path. They can be opened by typing "\\" followed by the name of the server in the Path Navigation Pane, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid server path. An example of a valid server path is "\\localhost".
+The RadFileDialogs as well as the ExplorerControl also support creating nodes based on a valid server path. They can be opened by typing "\\\\" followed by the name of the server in the Path Navigation Pane, or by setting the **InitialDirectory** of the dialog or **CurrentDirectoryPath** of the ExplorerControl to a valid server path. An example of a valid server path is "\\\\localhost".
 
-## Breaking Changes
+## Changes
  
-In order to introduce support for the network locations in the RadFileDialogs, some changes in the infrastructure were introduced:
+In order to introduce support for the network locations in the RadFileDialogs, some changes in the infrastructure were introduced after **R3 2018**:
 
 * **DirectoryInfoWrapper** now inherits from the new class **DirectoryBaseWrapper** which inherits from **FileSystemInfoWrapper**. Previously DirectoryInfoWrapper directly inherited FileSystemInfoWrapper.
 

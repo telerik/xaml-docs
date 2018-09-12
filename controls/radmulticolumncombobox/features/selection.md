@@ -17,10 +17,11 @@ __RadMultiColumnComboBox__ would perform its selection based on the property tha
 
 Furthermore, the control exposes the following properties and events for handling the user selection.
 
- * __SelectedItem__: gets or sets the data item that is selected.
- * __SelectedItems__: gets the data items that participate in the selection. It is useful in case multiple selection is used.
- * __SelectedValue__: gets or sets the selected property value.
- * __SelectedValueMemberPath__: gets or sets the property path of the property used for the selected value.
+ * __SelectedItem__: Gets or sets the data item that is selected.
+ * __SelectedItems__: Gets the data items that participate in the selection. It is useful in case multiple selection is used.
+ * __SelectedValue__: Gets or sets the selected property value.
+ * __SelectedIndex__: Gets or sets the index of the selected item.
+ * __SelectedValuePath__: Gets or sets the property path of the property used for the selected value.
 
 ## Multiple Selection
 

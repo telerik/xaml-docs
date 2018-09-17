@@ -246,6 +246,7 @@ navigation:
         title: RadButtons
     controls/radchart:
         title: RadChart
+        include_in_navigation: false
     controls/radchart/features/axes:
         title: Axis
     controls/radchart/features/drill-down:

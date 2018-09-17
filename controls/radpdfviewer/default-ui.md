@@ -10,9 +10,9 @@ position: 2
 
 # Default UI
 
-RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, zoom and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose.
+RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, zoom and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose. **RadPdfViewerNavigationPane** takes care of visualizing different navigation panels, including the [Bookmarks]({%slug radpdfviewer-features-bookmarks%}) of the PDF document.
 
-#### Figure 1: RadPdfViewer with default UI and context menu
+#### Figure 1: RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu
  
 ![](images/RadPdfViewer_defaultUI_00.png)
 
@@ -34,6 +34,8 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 * **Add Sign Signature Dialog**: Determines whether the [Sign Signature Dialog]({%slug radpdfviewer-features-digital-signature%}#signing) of RadPdfViewer should be added to the UI.
 
+* **Add Navigation Pane**: Determines whether the RadPdfViewerNavigationPane should be added to the UI to show  the bookmarks of a PDF document. 
+
 #### Figure 2: Choose the components you would like to use
  
 ![](images/RadPdfViewer_defaultUI_01.png)
@@ -46,17 +48,20 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 	<Grid>
 	    <Grid.RowDefinitions>
-		<RowDefinition Height="Auto"/>
-		<RowDefinition Height="Auto"/>
-		<RowDefinition/>
+	        <RowDefinition Height="Auto"/>
+	        <RowDefinition Height="Auto"/>
+	        <RowDefinition/>
 	    </Grid.RowDefinitions>
 	    <telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" SignaturePanel="{Binding ElementName=signaturePanel, Mode=OneTime}"/>
-	    <fixedViewersUI:SignaturePanel x:Name="signaturePanel" PdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" Grid.Row="1"/>
-	    <telerik:RadPdfViewer x:Name="pdfViewer" DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}" 
-				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" 
-				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterFindDialog="True" Grid.Row="2" 
-				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" 
-				    fixedViewersUI:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
+	    <telerik:SignaturePanel x:Name="signaturePanel" PdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" Grid.Row="1"/>
+	    <Grid Grid.Row="2">
+	        <Grid.ColumnDefinitions>
+	            <ColumnDefinition Width="Auto"/>
+	            <ColumnDefinition Width="*"/>
+	        </Grid.ColumnDefinitions>
+	        <telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"/>
+	        <telerik:RadPdfViewer x:Name="pdfViewer" Grid.Column="1" DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}" telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
+	    </Grid>
 	</Grid>
 {{endregion}}  
  
@@ -100,3 +105,10 @@ When you need to make a more complicated change to the toolbar besides adding an
 ### Customizing the Template of the Default Context Menu
 
 Extracting the template of the default context menu can be done using a pretty similar approach to the one described for RadPdfViewerToolBar. Just right-click on RadPdfViewer in the designer of Visual Studio and choose **Replace Default Context Menu with Editable XAML**.
+
+## See Also
+
+* [Getting Started with RadPdfViewer]({%slug radpdfviewer-getting-started%})
+* [Showing a File]({%slug radpdfviewer-showing-a-file%})
+* [Bookmarks]({%slug radpdfviewer-features-bookmarks%})
+* [Interactive Forms]({%slug radpdfviewer-features-interactive-forms%})

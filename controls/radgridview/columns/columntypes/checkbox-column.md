@@ -36,6 +36,8 @@ Here are the possible cases:
 
 3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick"__ - only one click is needed to change the value of the __CheckBox__. 
 
+> Since the __GridViewCheckBoxColumn__ is specially designed to dispay checkboxes, setting its __CellTemplate__, __CellEditTemplate__, __CellTemplateSelector__ and __CellEditTemplateSelector__ is not supported. For such requirents, you can use a [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}).
+
 ## See Also
 
  * [Clicks in GridViewCheckBoxColumn]({%slug gridview-checkbox-column-clicks%}) 

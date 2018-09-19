@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started
 
-The __RadTimePicker__ is a control that displays a range of times from which the user can select a single time. It essentially inherits the [RadDateTimePicker]({%slug raddatetimepicke-getting-started%}) and sets the __InputMode__ property to __TimePicker__.
+The __RadTimePicker__ is a control that displays a range of times from which the user can select a single time. It essentially inherits [RadDateTimePicker]({%slug raddatetimepicke-getting-started%}) and sets the __InputMode__ property to __TimePicker__.
 
 ## Assembly References
 

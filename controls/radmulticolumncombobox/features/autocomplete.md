@@ -28,20 +28,20 @@ __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. T
 #### __Figure 1: Setting the AutoCompleteMode to Append__
 ![Setting the AutoCompleteMode to Append](images/MultiColumnComboBox_AutoComplete_01.png)
 
-* __Search__: Filters and highlights the data.  
+* __Search__: Filters and highlights the data. For a __string__ property a __Contains__ operator will be applied, whereas for any other types an __IsEqualTo__ will be used. This is basically the [Search as you type]({%slug radgridview-search-as-you-type%}) mechanism of RadGridView.
 
 #### __Figure 2: Setting the AutoCompleteMode to Search__
 ![Setting the AutoCompleteMode to Search](images/MultiColumnComboBox_AutoComplete_02.png)
  
-* __Suggest__: Filters the data but does not suggest items.
+* __Suggest__: Filters the data but does not append.
 
-#### __Figure 3: Setting the AutoCompleteMode to Sugggest__
+#### __Figure 3: Setting the AutoCompleteMode to Suggest__
 ![Setting the AutoCompleteMode to Sugggest](images/MultiColumnComboBox_AutoComplete_03.png)
 
 * __SuggestAppend__: Both filtering and auto-completion is applied.
 
-#### __Figure 4: Setting the AutoCompleteMode to SugggestAppend__
-![Setting the AutoCompleteMode to Sugggest](images/MultiColumnComboBox_AutoComplete_04.png)
+#### __Figure 4: Setting the AutoCompleteMode to SuggestAppend__
+![Setting the AutoCompleteMode to Suggest](images/MultiColumnComboBox_AutoComplete_04.png)
 
 ## See Also
 

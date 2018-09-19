@@ -26,7 +26,7 @@ Getting started with the __RadProgressBar__ control is pretty straightforward. T
 
 #### __[XAML] Example 2: Create RadProgressBar in XAML__
 {{region xaml-Getting_Started_2}}
-	<telerik:RadProgressBar />
+	<telerik:RadProgressBar x:Name="progressBar" />
 {{endregion}}
 
 You may need to change the __Minimum__ and __Maximum__ values of the control by setting the corresponding properties. The default values are 0 and 100.
@@ -45,7 +45,7 @@ You may need to change the __Minimum__ and __Maximum__ values of the control by 
 
 #### __[XAML] Example 4: Set Minimum and Maximum properties in XAML__
 {{region xaml-Getting_Started_5}}
-	<telerik:RadProgressBar Minimum="10" Maximum="20" />
+	<telerik:RadProgressBar x:Name="progressBar" Minimum="10" Maximum="20" />
 {{endregion}}
 
 You can fill the RadProgressBar during runtime by changing its __Value__ property.

@@ -91,6 +91,8 @@ controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
 cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
 
+exclude_navigation: [controls/radchart]
+
 navigation:
 ## List your directory names and order here, like this:
 

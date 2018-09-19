@@ -22,7 +22,8 @@ __RadMultiColumnComboBox__ is a special case of a ComboBox control. Its main adv
 * Selection and navigation
 * Filtering
 * AutoComplete
-* All features supported by the [RadGridView]({%slug gridview-overview2%}) component 
+* Most common features supported by RadGridView
+* Customizable DropDown
 * Customizable appearance and theming support
 
 ## See Also

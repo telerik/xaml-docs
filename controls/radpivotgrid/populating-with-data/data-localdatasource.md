@@ -300,8 +300,6 @@ Here is a list of the property descriptions that you can use:
 
 * __DateTimeGroupDescription__: Available for RowGroupDescriptions and ColumnGroupDescriptions. Used when the data is of type DateTime. The *Step* property is very useful; you can set it if the grouping should be on day, month or year.   
 
-* __DateTimePropertyGroupDescription__: Used for DateTime values to group and represent items using the specified format and culture-specific format information. Available for RowGroupDescriptions and ColumnGroupDescriptions. The **Format** property can be used to determine the format of the date. (Introduced with version 2018.2.716 of the suite)
-
 * __PropertyFilterDescription__: Available for FilterDescriptions only. The important property here is *Condition* as the filtering is done based on it. You can use four conditions: ComparisonCondition, IntervalCondition, SetCondition or TextCondition.                     
 
 * __PropertyAggregateDescription__: Available for AggregateDescriptions only. You have to define the *AggregateFunction* that will be used. You can use various predefined functions including Average, Sum, Min, Max, etc.

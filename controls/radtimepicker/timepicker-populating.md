@@ -10,43 +10,57 @@ position: 2
 
 # Getting Started
 
-RadTimePicker is a control that displays a time representation from which the user can select a single time.
+The __RadTimePicker__ is a control that displays a range of times from which the user can select a single time. It essentially inherits [RadDateTimePicker]({%slug raddatetimepicke-getting-started%}) and sets the __InputMode__ property to __TimePicker__.
 
->In order to use __RadTimePicker__ control in your projects you have to add references to the following assemblies:
->	1. __Telerik.Windows.Controls__
->	1. __Telerik.Windows.Controls.Input__
+## Assembly References
 
->	You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
+In order to use the __RadTimePicker__ control in your projects, you have to add references to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
 
-__HeaderText:__
+You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
-__HeaderContent__ property can be used to customize the TimePickers header. You can use for header almost all types of controls.
+## Setting the SelectedTime
 
-__Selection:__
+The __SelectedTime__ property holds the selected time. Examples 1 and 2 demonstrate how you can set this property in xaml and code behind. For more information, check out the [Selection]({%slug raddatetimepicker-features-selection%}) article of the __RadDateTimePicker__.
 
-The __SelectedTime__ property holds the selected time.  
+#### __[XAML] Example 1: Setting the SelectedTime in xaml__
 
-#### __C#__
-
-{{region cs-radtimepicker-timepicker-populating_0}}
-	timePicker.SelectedTime = new TimeSpan(3,0,0);
+{{region xaml-radtimepicker-timepicker-populating_0}}
+ 	<telerik:RadTimePicker x:Name="timePicker" SelectedTime="15:00" />
 {{endregion}}
 
-__Populating:__
+#### __[C#] Example 2: Setting the SelectedTime in code__
 
-You can limit the times that can be selected by setting the __StartTime__ and __EndTime__ properties. The __TimeInterval__ property allows user to specify the interval between time slots available for selection. RadTimePicker also allows binding to various data source types through __ClockItemSource__ property.
+{{region cs-radtimepicker-timepicker-populating_1}}
+	timePicker.SelectedTime = new TimeSpan(15,0,0);
+{{endregion}}
 
-#### __XAML__
+#### __[VB.NET] Example 2: Setting the SelectedTime in code__
 
-{{region xaml-radtimepicker-timepicker-populating_1}}
+{{region vb-radtimepicker-timepicker-populating_2}}
+	timePicker.SelectedTime = New TimeSpan(15,0,0)
+{{endregion}}
+
+> In order to take some action when the SelectedTime is changed, you can handle the __SelectionChanged__ event. You can check out all of the available events in the [Events]({%slug raddatetimepicker-events%}) article of the RadDateTimePicker.
+
+## StartTime, EndTime and TimeInterval
+
+You can limit the times that can be selected by setting the __StartTime__ and __EndTime__ properties. The __TimeInterval__ property allows user to specify the interval between time slots available for selection. For more information, check out the [Clock Items]({%slug raddatetimepicker-features-clock-items%}#using-the-starttime-endtime-and-timeinterval-features).
+
+#### __[XAML] Example 2: Setting the StartTime, EndTime and TimeInterval__
+
+{{region xaml-radtimepicker-timepicker-populating_3}}
 	<telerik:RadTimePicker x:Name="timePicker" TimeInterval="0:30:0" StartTime="0:0:0" EndTime="7:0:0" />
 {{endregion}}
 
-The following example demonstrate how to bind RadTimePicker to observable collection from TimeSpan objects.
+## Setting the ClockItemsSource
 
-#### __C#__
+You can also populate the RadTimePicker from code behind by setting its ClockItemsSource property to a collection of TimeSpan objects. **Example 3** demonstrates how you can achieve this. 
 
-{{region cs-radtimepicker-timepicker-populating_2}}
+#### __[C#] Example 3: Setting the ClockItemsSource__
+
+{{region cs-radtimepicker-timepicker-populating_4}}
 	public DataBinding()
 	{
 	    this.radTimePicker.ClockItemsSource = this.LoadDataObjects();
@@ -64,14 +78,25 @@ The following example demonstrate how to bind RadTimePicker to observable collec
 	}
 {{endregion}}
 
-For more information on the handling the selection events, see the Binding section.
+#### __[VB.NET] Example 3: Setting the ClockItemsSource__
 
-__Clock:__
+{{region vb-radtimepicker-timepicker-populating_5}}
+	Public Sub New()
+		Me.radTimePicker.ClockItemsSource = Me.LoadDataObjects()
+	End Sub
+	Public Function LoadDataObjects() As ObservableCollection(Of TimeSpan)
+		Dim times As New ObservableCollection(Of TimeSpan)() From {
+			New TimeSpan(9,0,0),
+			New TimeSpan(10,0,0),
+			New TimeSpan(10,5,0),
+			New TimeSpan(10,22,0)
+		}
+		Return times
+	End Function
+{{endregion}}
 
-If you need a clock that takes less space, use the RadClock control which in its essence is a panel with header and times and have almost all of the properties of TimePicker.
+## See also 
 
-![](images/Clock.jpg)
-
-__Styling and Appearance:__
-
-The TimePicker control has __IconButtonStyle__ property that can be used to style the toggle button of the control and also support different layouts for the Clock using __ClockPanel__ property. For more information see the Styling and Appearance section.
+* [Layout Support]({%slug radtimepicker-layout-support%})
+* [Keyboard Support]({%slug raddatetimepicker-features-keyboard-support%})
+* [Parsing Without Separators]({%slug raddatetimepicker-features-parsing-without-separators%}#parsing-the-time-part)

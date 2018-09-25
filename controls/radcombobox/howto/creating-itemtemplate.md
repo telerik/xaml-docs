@@ -10,9 +10,15 @@ position: 1
 
 # Creating ItemTemplate and SelectionBoxTemplate
 
-For more information about creating and applying an __ItemTemplate__, check out the __DataBinding__ topics of the __Common__ section in __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Help__. The __RadComboBox__ help also offers several topics where the __ItemTemplate__ is used. Take a look at the [Populating with Data]({%slug radcombobox-populating-with-data-binding-support-overview%}) topics.
+The RadComboBox exposes the __ItemTemplate__ and __SelectionBoxTemplate__ properties which allow you to define a custom datatemplate for its drop down items and for its selected item when the RadComboBox is not editable. 
 
-To learn what is the difference between __ItemTemplate__ and __SelectionBoxTemplate__, take a look at the [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%}) topic.
+## Define an ItemTemplate
+
+If you want the RadComboBox to visualize more information, you can define a custom DataTemplate and set it to the __ItemTemplate__ property of the control. This template will be applied to the selected item(when the RadComboBox is not editable), as well as, all of the items displayed in the dropdown. For an example implementation, check out the [Define a Custom ItemTemplate]({%slug radcombobox-populating-with-data-binding-to-object%}#define-a-custom-itemtemplate) section of the __Binding to Collection__ article in our documentation.
+
+## Define a SelectionBoxTemplate
+
+In order to define a separate template for the selected item of a Non-Editable RadComboBox, you can set the __SelectionBoxTemplate__ property of the control to a custom datatemplate. For an example implementation, check out the [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%}) article in our documentation.
 
 ## See Also
 

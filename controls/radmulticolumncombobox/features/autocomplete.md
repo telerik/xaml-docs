@@ -16,7 +16,7 @@ __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. T
 
 * __Append__: Only suggesting items without filtering. The first found item would be set as the __CurrentItem__ of RadGridView. 
 
-#### __[XAML]: Example 1: Setting the AutoCompleteMode to Append__
+#### __[XAML] Example 1: Setting the AutoCompleteMode to Append__
 {{region radmulticolumncombobox-features_autocomplete_01}}
 	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" AutoCompleteMode="Append" MatchCase="True">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>

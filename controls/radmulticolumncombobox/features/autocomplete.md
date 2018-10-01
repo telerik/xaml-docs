@@ -14,7 +14,9 @@ __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. T
 
 >The case sensitivity of the user's input can be controlled through the __MatchCase__ boolean property. Its default value is __False__ meaning that the input will be case insensitive. Respectively, when set to __True__ it will be case sensitive.
 
-* __Append__: Only suggesting items without filtering. The first found item would be set as the __CurrentItem__ of RadGridView. 
+>important The __Append, Suggest and SuggestAppend __ modes by default use a __StartsWith__ operator for a string data type.
+
+* __Append__: Finds the matching items without filtering the source collection. In this mode the control auto-completes the text with the property value of the first found item.
 
 #### __[XAML]: Example 1: Setting the AutoCompleteMode to Append__
 {{region radmulticolumncombobox-features_autocomplete_01}}
@@ -33,7 +35,7 @@ __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. T
 #### __Figure 2: Setting the AutoCompleteMode to Search__
 ![Setting the AutoCompleteMode to Search](images/MultiColumnComboBox_AutoComplete_02.png)
  
-* __Suggest__: Filters the data but does not append.
+* __Suggest__: Filters the data but does not auto-complete.
 
 #### __Figure 3: Setting the AutoCompleteMode to Suggest__
 ![Setting the AutoCompleteMode to Sugggest](images/MultiColumnComboBox_AutoComplete_03.png)

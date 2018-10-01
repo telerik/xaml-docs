@@ -8,6 +8,15 @@ published: True
 position: 1
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+</style>
+
 # Windows8 and Windows8Touch Colors and Fonts
 
 This article will show you how to easily modify __Windows8__ and __Windows8Touch__ themes and how to change the font of your application at runtime.

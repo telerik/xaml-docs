@@ -8,6 +8,15 @@ published: True
 position: 2
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+</style>
+
 # Office2013 Theme
 
 The official Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __external__ theme with a flat modern UI and three color variations – White, Light Gray, Dark Gray.             

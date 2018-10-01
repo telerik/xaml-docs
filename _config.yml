@@ -78,6 +78,7 @@ controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silv
 controls/radtabcontrol/styling-and-appearance/using-themes.md,
 controls/radtabcontrol/styling-and-appearance/modifying-themes-in-blend.md,
 controls/radtabcontrol/howto/how-to-make-the-tab-headers-editable.md,
+controls/radtimepicker/features,
 controls/radtoolbar/overview/structure.md,
 controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
@@ -89,6 +90,8 @@ controls/radupload,
 controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
 cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
+
+exclude_navigation: [knowledge-base/*, controls/radchart/*]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -3215,7 +3218,7 @@ ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
-gcs_engine: '011354416605164361800:ebfuug7ih7i'
+gcs_engine: '001595215763381649090:jt1stbj813w'
 gcs_api_key: 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M'
 
 # Folders not supporting Silverlight:

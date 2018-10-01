@@ -292,6 +292,19 @@ Here are all of the predefined chart palettes:
 			<div style="width:20px;height:20px;background: #CA5010;display: inline-block;"></div>
 		</td>
   </tr>
+   <tr>
+    <td>Crystal</td>
+    <td>
+			<div style="width:20px;height:20px;background: #3366FF;display: inline-block;"></div> 
+			<div style="width:20px;height:20px;background: #CC3366;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #FFCC00;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #0099FF;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #6633CC;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #00CC99;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #00CCFF;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #FF9933;display: inline-block;"></div>
+		</td>
+  </tr>
 </table>
 
 A palette can be set via the __Palette__ property of the chart. The property is of type __System.Windows.Media.Media3D.MaterialCollection__ so you can easily create a [custom palette](#create-a-custom-palette).

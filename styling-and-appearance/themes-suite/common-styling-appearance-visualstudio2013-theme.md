@@ -8,6 +8,15 @@ published: True
 position: 3
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+</style>
+
 # VisualStudio2013 Theme
 
 The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.        

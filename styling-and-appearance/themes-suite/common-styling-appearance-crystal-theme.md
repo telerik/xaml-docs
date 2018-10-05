@@ -121,7 +121,7 @@ With the **R3 2018** release of the **UI for WPF** suite we have introduced the 
 The following topic explains the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
-* [CrystalPalette Brushes](#crystalpalette-brushes)
+* [CrystalPalette Properties](#crystalpalette-properties)
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
 * [Changing Corner Radius](#set-corner-radius)
@@ -171,7 +171,7 @@ The default values of the brushes in the theme are listed below. Please note tha
 #### __Figure 1: Theme colors represented in RadOutlookBar__
 ![Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)	
 
-## CrystalPalette Brushes
+## CrystalPalette Properties
 
 ### Primary Brushes 
 
@@ -200,6 +200,13 @@ The default values of the brushes in the theme are listed below. Please note tha
 
 * **HeaderBrush**: Used in backgrounds of header elements. 
 * **ValidationBrush**:  A bright red brush used for indicating validation errors - for the underline of the invalid control and as a background for the error tooltip, background for invalid rows and cells as well as for clear buttons' mouse over states. 
+
+## Other Properties
+
+* **DisabledOpacity**: Used for text when they are disabled. Backgrounds usually use the  **AlternativeBrush** when disabled.
+* **InputOpacity**: Used for text in masked input controls and watermark elements.
+* **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
+* **FocusThickness**: The default value is **2, 2, 2, 2**. It is used for the thickness of the focus border.
 
 ## Font Family and Font Size
 

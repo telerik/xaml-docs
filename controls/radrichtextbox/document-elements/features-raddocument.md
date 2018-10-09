@@ -46,11 +46,11 @@ __RadDocument__ exposes several properties that enables you to customize the lay
 	>The __SectionDefault~__ settings get applied only when Paged layout mode is used.
                   
 
-* __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Section.htm) class.
+* __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.section) class.
 
-* __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_PageOrientation.htm) and could be set to **Portrait** or **Landscape**.
+* __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.pageorientation) and could be set to **Portrait** or **Landscape**.
 
-* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after each of the paragraphs, use the respective property of the [__Paragraph__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Paragraph.htm) class.      
+* __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after each of the paragraphs, use the respective property of the [__Paragraph__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.paragraph) class.      
 
 * __ParagraphDefaultSpacingBefore__: Defines the default spacing before for each of the paragraphs in the __RadDocument__. To assign different spacing before each of the paragraphs, use the respective property of the __Paragraph__ class.
 

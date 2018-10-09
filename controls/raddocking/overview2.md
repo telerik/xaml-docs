@@ -62,4 +62,4 @@ Check out the online demos available at: [https://demos.telerik.com/wpf/](https:
 * [Pane Groups]({%slug raddocking-features-pane-groups%})
 * [Split Container]({%slug raddocking-features-split-container%})
 * [Tool Window]({%slug raddocking-features-tool-window%})
-* [RadDocking API Reference](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_raddocking.htm)
+* [RadDocking API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.raddocking)

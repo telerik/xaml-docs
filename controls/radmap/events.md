@@ -24,11 +24,11 @@ The __RadMap__ control raises the following specific events:
 
 * __MapMouseClick__ - occurs when the left mouse button is clicked a single time. You can use the __MouseClickMode__ property to choose one of the predefined single click behaviors or you can implement your own using the event. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.
-	* {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}
+	* {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.map.mapmouseroutedeventargs).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.map.mapmouseroutedeventargs).{% endif %}
 
 * __MapMouseDoubleClick__ - occurs when the left mouse button is double clicked. You can use the __MouseDoubleClickMode__ property to choose one of the predefined double click behaviors  or you can implement your own using the event. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.
-	* * {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_Map_MapMouseRoutedEventArgs.htm).{% endif %}
+	* * {% if site.site_name == 'WPF' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.map.mapmouseroutedeventargs).{% endif %}{% if site.site_name == 'Silverlight' %} A [MapMouseRoutedEventArgs](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.map.mapmouseroutedeventargs).{% endif %}
 	
 * __PanningFinished__ - occurs when the panning executed by the user finishes. The event handler receives two arguments:
 	* The sender argument contains the __RadMap__. This argument is of type object, but can be cast to the __RadMap__ type.

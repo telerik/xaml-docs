@@ -42,7 +42,7 @@ This property enables you to manage the position of the caret inside the documen
 
 An alternative of using the __CaretPosition__ property is to create an instance of the __DocumentPosition__ class. Here is the same example from the previous chapter done with an instance of the __DocumentPosition__ class.        
 
->When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text. The position of the instance won't be affected by the UI. To change it, you have to use {% if site.site_name == 'Silverlight' %}[the API of the DocumentPosition class](http://www.telerik.com/help/silverlight/t_telerik_windows_documents_documentposition.html){% endif %}{% if site.site_name == 'WPF' %}[the API of the DocumentPosition class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_documentposition.htm){% endif %}.            
+>When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text. The position of the instance won't be affected by the UI. To change it, you have to use {% if site.site_name == 'Silverlight' %}[the API of the DocumentPosition class](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.documentposition){% endif %}{% if site.site_name == 'WPF' %}[the API of the DocumentPosition class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.documentposition){% endif %}.            
 
 #### __[C#] Example 2: Getting the word on the caret using the DocumentPosition class__  
 {{region radrichtextbox-features-positioning_2}}

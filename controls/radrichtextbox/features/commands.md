@@ -366,5 +366,5 @@ This event fires when a command fails to execute its operation. It is useful to 
 {% if site.site_name == 'Silverlight' %}
 * [RichTextBoxCommands Class](https://www.telerik.com/help/silverlight/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html){% endif %}
 {% if site.site_name == 'WPF' %}
-* [RichTextBoxCommands Class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.htm){% endif %}
+* [RichTextBoxCommands Class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.richtextboxcommands.richtextboxcommands){% endif %}
 * [Customize Commands SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands)

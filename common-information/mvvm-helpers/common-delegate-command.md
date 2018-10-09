@@ -10,9 +10,7 @@ position: 3
 
 # DelegateCommand
 
-The **DelegateCommand** class provides a simple **ICommand** implementation.
-
-It exposes the following methods and events:
+The **DelegateCommand** class provides a simple **ICommand** implementation. It is located in the **Telerik.Windows.Controls** namespace and exposes the following methods and events:
 
 * **CanExecute:** Defines the method that determines whether the command can execute in its current state.
 * **Execute:** Defines the method to be called when the command is invoked.

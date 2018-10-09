@@ -65,6 +65,7 @@ __RadDocument__ exposes several properties that enables you to customize the lay
 
 * __DefaultTabWidth__: Specifies the default tab width of the document.
           
+>**RadDocument** exposes also the **IsEmpty** property allowing you to determine whether the document instance has any content.
 
 ## Specifics
 

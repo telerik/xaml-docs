@@ -56,7 +56,7 @@ The commands related to bookmarks are exposed in the **CommandDescriptors** prop
 
 ### ActivateBookmarkItemCommand
 
-This command represents the bookmark activated action (usually a user click event). When executed, **RadPdfViewer** displays the related Bookmark destination or executes the provided action. The command accepts a parameter of type [**BookmarkItem**](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_fixed_model_navigation_bookmarkitem.htm). 
+This command represents the bookmark activated action (usually a user click event). When executed, **RadPdfViewer** displays the related Bookmark destination or executes the provided action. The command accepts a parameter of type [**BookmarkItem**](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.model.navigation.bookmarkitem). 
 
 ### SyncCurrentBookmarkItemCommand
 

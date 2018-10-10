@@ -88,7 +88,7 @@ Implementing this interface allows you to create a fully functioning document pr
 
 ## Inheriting FixedDocumentPresenterBase
 
-The [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_FixedDocumentPresenterBase.htm) class implements all the members from [__IFixedDocumentPresenter__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_IFixedDocumentPresenter.htm) but it allows the inheriting class to override those members with custom functionality. Some members of this class are abstract and need to be overridden in the inheriting classes:
+The [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.fixeddocumentpresenterbase) class implements all the members from [__IFixedDocumentPresenter__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.ifixeddocumentpresenter) but it allows the inheriting class to override those members with custom functionality. Some members of this class are abstract and need to be overridden in the inheriting classes:
         
 
 * __PagesLayoutManager:__ The property is of type __Telerik.Windows.Documents.Fixed.Layout.PagesLayoutManagerBase__  and is responsible for the way pages are laid out in the document.
@@ -120,7 +120,7 @@ __PagesLayoutManagerBase__ is an abstract class responsible for the layout of th
 The following steps illustrate what you need to do to create and register a custom document presenter:
         
 
-__Step 1:__ Create a class that inherits the abstract [__FixedPageLayoutInfo__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Layout_FixedPageLayoutInfo.htm) class. This class is responsible for the page layout and should hold information about how to visualize a single page. Implement the base constructor and add your preferences.
+__Step 1:__ Create a class that inherits the abstract [__FixedPageLayoutInfo__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.layout.fixedpagelayoutinfo) class. This class is responsible for the page layout and should hold information about how to visualize a single page. Implement the base constructor and add your preferences.
         
 
 #### __[C#] Example 1: Implement FixedPageLayoutInfo__
@@ -136,7 +136,7 @@ __Step 1:__ Create a class that inherits the abstract [__FixedPageLayoutInfo__](
 	}
 {{endregion}}
 
-__Step 2:__ Create a class that inherits the abstract [__PagesLayoutManagerBase__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_Layout_PagesLayoutManagerBase.htm) class, and will be responsible for the layout of the document pages. Implement all abstract members of the class and override them according to your scenario.
+__Step 2:__ Create a class that inherits the abstract [__PagesLayoutManagerBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.layout.pageslayoutmanagerbase) class, and will be responsible for the layout of the document pages. Implement all abstract members of the class and override them according to your scenario.
        
 
 #### __[C#] Example 2: Implement PagesLayoutManagerBase__
@@ -177,7 +177,7 @@ __Step 2:__ Create a class that inherits the abstract [__PagesLayoutManagerBase_
 {{endregion}} 
 
 
-__Step 3:__ Add a new class for your custom presenter that inherits the abstract [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_UI_FixedDocumentPresenterBase.htm) class which, in turn, inherits the __IFixedDocumentPresenter__ interface.
+__Step 3:__ Add a new class for your custom presenter that inherits the abstract [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.fixeddocumentpresenterbase) class which, in turn, inherits the __IFixedDocumentPresenter__ interface.
         
 
 __Step 4:__ Implement all the members of the __FixedDocumentPresenterBase__ class to create a fully functional document presenter. Some members of the FixedDocumentPresenterBase class are abstract and need to be overridden with custom functionality.

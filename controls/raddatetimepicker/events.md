@@ -26,7 +26,7 @@ The event handler receives two arguments:
 
 * The sender argument contains the __RadDateTimePicker__ control.
 
-* A {% if site.site_name == 'Silverlight' %}[ParseDateTimeEventArgs](https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Controls_ParseDateTimeEventArgs.htm){% endif %}{% if site.site_name == 'WPF' %}[ParseDateTimeEventArgs](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Controls_ParseDateTimeEventArgs.htm){% endif %} object.
+* A {% if site.site_name == 'Silverlight' %}[ParseDateTimeEventArgs](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.parsedatetimeeventargs){% endif %}{% if site.site_name == 'WPF' %}[ParseDateTimeEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.parsedatetimeeventargs){% endif %} object.
 
 >Whenever you set the __IsParsingSuccessful's__ value to False, the __ErrorTooltip__ will appear. The __Result__ value will be displayed in the __TooltipContent__ appearing while you type in text in the control's input box.  
 

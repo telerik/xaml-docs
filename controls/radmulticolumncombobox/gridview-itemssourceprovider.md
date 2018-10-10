@@ -50,8 +50,8 @@ By default, __RadGridView__ will execute a certain command corresponding to a gi
 
 The visibility of the column headers and footers can be controlled through the following boolean properties of __GridViewItemsSourceProvider__. 
 
-* __ShowColumnHeaders__: its default value is __True__ meaning that the column headers will be visible. Setting it to __False__ will hide them.
-* __ShowColumnFooters__: its default value is __False__ meaning that the column footers will be hidden. Setting it to __True__ will make them visible.
+* __ShowColumnHeaders__: The default value is __True__ meaning that the column headers will be visible. Setting it to __False__ will hide them.
+* __ShowColumnFooters__: The default value is __False__ meaning that the column footers will be hidden. Setting it to __True__ will make them visible.
 
 ## See Also
 

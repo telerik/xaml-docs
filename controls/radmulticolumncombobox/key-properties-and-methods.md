@@ -12,14 +12,14 @@ position: 3
 
 The article lists the most important properties and methods of __RadMultiColumnComboBox__.
 
-* [Delaying the Text Change](#delay-the-text-change)
+* [Text Change Without Delay](#text-change-without-delay)
 * [Disable Items Highlighting](#disable-items-highlighting)
 * [Setting Text for an Empty Selection](#setting-text-for-an-empty-selection)
-* [Programmatically Closing the DropDown](#programmatically-closing-the-dropdown)
+* [Open,Close and Toggle the DropDown](#open,close-and-toggle-the-dropdown)
 
-## Delaying the Text Change
+## Text Change Without Delay
 
-The default behavior of __RadMultiColumnComboBox__ for reacting to a text change will be triggered immediately. In case when a delay of the update is needed, the __DeferTextChange__ property can be set to __True__.
+By default, the reaction of __RadMultiColumnComboBox__ to a text change will be deferred. In case when updating needs to be done immediately, the __DeferTextChange__ property can be set to __False__.
 
 ## Disable Items Highlighting 
 
@@ -42,14 +42,13 @@ When there is no selection applied, the control will display an empty AutoComple
 #### __Figure 1: MultiColumnComboBox with NullText set__
 ![MultiColumnComboBox with NullText set](images/MultiColumnComboBox_KeyProperties_01.png)
 
-## Programmatically Closing the DropDown
+## Open,Close and Toggle the DropDown
 
-In order to close the already opened DropDown at given state, the __CloseDropDown__ method can be called.
+The following set of methods is provided for manipulating the visibility of the DropDown.
 
-#### __[C#] Example 2: Calling the CloseDropDown method__
-{{region radmulticolumncombobox-key_properties_1}}
-	this.multiColumnComboBox.CloseDropDown();
-{{endregion}}
+* __OpenDropDown__: Opens the DropDown if it is closed.
+* __CloseDropDown__: Closes the DropDown if it is opened.
+* __ToggleDropDown__: Toggles the opened/closed state of the DropDown.
 
 ## See Also
 

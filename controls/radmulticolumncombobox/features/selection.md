@@ -10,7 +10,7 @@ position: 1
 
 # Selection
 
-__RadMultiColumnComboBox__ would perform its selection based on the property that is set to be its __DisplayMemberPath__. 
+The selection in the AutoCompleteBox will display the property of the selected item to which the __DisplayMemberPath__ points. 
 
 #### Figure 1: Default Selection
 ![Default Selection](images/MultiColumnComboBox_Selection_01.png)

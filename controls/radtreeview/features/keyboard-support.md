@@ -80,7 +80,7 @@ The implementation of both of the event handlers __radTreeView_KeyDown__ and __r
 
 ## Keyboard Selection
 
->More information on the __IsSelectable__ property of __RadTreeViewItem__ can be found in the [Selection]({%slug radtreeview-feautres-treeviewitem-selection%}) topic.
+>More information on the __IsSelectable__ property of __RadTreeViewItem__ can be found in the [Selection]({%slug radtreeview-feautres-treeviewitem-selection%}) topic. The __IsSelectable__ property is available since the __R3 2018__ version.
 
 By default, navigating through the keyboard will select the given __RadTreeViewItem__. It exposes the __IsSelectable__ property through which this default behavior can be altered. Let's have the following example. In it the first item is selected and the second one has its __IsSelectable__ property set to __False__.
 

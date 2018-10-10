@@ -10,7 +10,7 @@ position: 1
 
 # Selection
 
-The selection in the AutoCompleteBox will display the property of the selected item to which the __DisplayMemberPath__ points to. 
+The selection in the AutoCompleteBox will display the property of the selected item to which the __DisplayMemberPath__ points. 
 
 #### Figure 1: Default Selection
 ![Default Selection](images/MultiColumnComboBox_Selection_01.png)

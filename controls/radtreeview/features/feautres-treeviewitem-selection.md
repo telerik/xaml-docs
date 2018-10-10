@@ -319,6 +319,8 @@ __RadTreeViewItem__ provides the option to control whether the item can be selec
 	<!-- -->
 	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
 {{endregion}}
+
+> The __IsSelectable__ property is available since the __R3 2018__ version.
 		
 ## See Also  
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

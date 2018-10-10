@@ -12,12 +12,6 @@ position: 4
 
 By default, __RadMultiColumnComboBox__ will have the RadGridView component integrated as its DropDown. For this purpose, the control utilizes the __GridViewItemsSourceProvider__.  This article will go through the different functionalities of RadGridView supported by the __GridViewItemsSourceProvider__.
 
-* [Alternation](#alternation)
-* [Columns](#columns)
-* [Rows Styling](#rows-styling)
-* [Keyboard support](#keyboard-support)
-* [Column Headers and Footers](#column-headers-and-footers)
-
 ## Alternation
 
 In case when readability needs to be improved, the alternation support comes in handy. The following set of properties are provided for manipulating it.

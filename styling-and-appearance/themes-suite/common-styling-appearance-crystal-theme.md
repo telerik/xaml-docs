@@ -213,6 +213,7 @@ The following topic explains the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
 * [CrystalPalette Properties](#crystalpalette-properties)
+* [Theme Variation Changing](#theme-variation-changing)
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
 * [Changing Corner Radius](#set-corner-radius)
@@ -299,6 +300,21 @@ The default values of the brushes in the theme are listed below. Please note tha
 * **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
 * **FocusThickness**: The default value is **2, 2, 2, 2**. It is used for the thickness of the focus border.
 
+## Theme Variation Changing
+
+You can switch between the color palettes by calling the LoadPreset method as shown below:
+
+#### **[C#] Example 1: Changing the color variantion of the theme**
+{{region styling-appearance-crystal-theme-0}}	
+	//default color variation
+	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Light);  
+
+	//dark color variation
+	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Dark);
+{{endregion}}
+
+>The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
+
 ## Font Family and Font Size
 
 When using the **Crystal theme** you can dynamically change the **FontSize** and **FontFamily** properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, **Office2016**, **Green**, **Material** and **Fluent** themes.
@@ -311,7 +327,7 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 
 __Example 1__ shows the default font sizes and families.
 
-#### __[C#] Example 1: Default FontSize__
+#### __[C#] Example 2: Default FontSize__
 {{region cs-styling-appearance-crystal-theme-1}}
 	CrystalPalette.Palette.FontSizeXS = 11;
 	CrystalPalette.Palette.FontSizeS = 12;
@@ -322,7 +338,7 @@ __Example 1__ shows the default font sizes and families.
 
 __Example 2__ shows how to change the default FontFamily from "Roboto" to "Calibri Italic" and the FontSize from 13 to 14.
 
-#### __[C#] Example 2: Changing the theme's FontSize and FontFamily__
+#### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
 {{region cs-styling-appearance-crystal-theme-2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -346,7 +362,7 @@ The **Crystal Theme** exposes an easy way to modify the corner radius of many el
 	
 **Example 3** shows how to change the default corner radius from 5 to 0. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the main **CornerRadius** property.
 
-#### __[C#] Example 3: Changing the default corner radius__
+#### __[C#] Example 4: Changing the default corner radius__
 {{region cs-styling-appearance-crystal-theme-3}}
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 {{endregion}}
@@ -368,12 +384,12 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 
 **Example 6** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
 
-#### __[XAML] Example 4: Declare the namespace for the Material components__
+#### __[XAML] Example 5: Declare the namespace for the Material components__
 {{region xaml-styling-appearance-crystal-theme-4}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Example 5: Set RadToggleButton's visual appearance through the MaterialAssist class__
+#### __[XAML] Example 6: Set RadToggleButton's visual appearance through the MaterialAssist class__
 {{region xaml-styling-appearance-crystal-theme-5}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
@@ -389,7 +405,7 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 
 In accordance to the MacOS design, by default the minimize, maximize, restore and close buttons of the RadWindow controls are displayed on the left of the window's title in the Crystal theme. This can be easily modified via the **WindowButtonsAlignment** property of the Crystal palette.
 
-#### __[C#] Example 6: Changing the WindowButtonsAlignment__
+#### __[C#] Example 7: Changing the WindowButtonsAlignment__
 {{region cs-styling-appearance-crystal-theme-6}}
 	CrystalPalette.Palette.WindowButtonsAlignment = ButtonsAlignment.Right; 	
 {{endregion}}

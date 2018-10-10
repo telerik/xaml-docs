@@ -151,6 +151,8 @@ There are two palettes of colors which can be easily set by choosing one of the 
 	}
 {{endregion}}
 
+>The Dark variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
+
 The next screenshot displays RadCalendar in its Light and Dark color variations:  
 
 #### __Figure 1: Light and Dark color variations demonstrated with RadCalendar__

@@ -206,6 +206,8 @@ You can switch between the color palettes by calling the LoadPreset method as sh
 	FluentPalette.LoadPreset(FluentPalette.ColorVariation.Dark);
 {{endregion}}
 
+>The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
+
 ## Font Family and Font Size
 
 When using the **Fluent theme** you can dynamically change the **FontSize** and **FontFamily** properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, **Office2016**, **Green** and **Material** themes.

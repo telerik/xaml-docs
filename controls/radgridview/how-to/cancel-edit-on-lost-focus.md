@@ -33,7 +33,7 @@ Let's say, for example, that you want to have two buttons outside of your RadGri
             CommandTarget="{Binding ElementName=GridView}"/>
 {{endregion}}
 
-With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because the RadGridView loses focus prior to the command being executed.
+With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because RadGridView loses focus prior to the command being executed.
 
 #### __Figure 1: RadGridView with default ActionOnLostFocus__
 ![RadGridView with default ActionOnLostFocus](images/action-on-lost-focus-commitedit.GIF)	

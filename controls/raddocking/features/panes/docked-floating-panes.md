@@ -18,15 +18,15 @@ Docked panes are all these panes that are hosted inside the __RadDockng__ contro
 
 The five possible docking positions are:
 
-* __Left__ - the __RadPane__ will be placed in the left side of the container. 
+* __Left__: The __RadPane__ will be placed in the left side of the container. 
 
-* __Top__ - the __RadPane__ will be placed in the top side of the container. 
+* __Top__: The __RadPane__ will be placed in the top side of the container. 
 
-* __Right__ - the __RadPane__ will be placed in the right side of the container. 
+* __Right__: The __RadPane__ will be placed in the right side of the container. 
 
-* __Bottom__ - the __RadPane__ will be placed at the bottom side of the container. 
+* __Bottom__: The __RadPane__ will be placed at the bottom side of the container. 
 
-* __Tabbed document__ - the docked __RadPane__ will be inserted as a new tab page.
+* __Tabbed document__: The docked __RadPane__ will be inserted as a new tab page.
 
 To dock your panes declaratively to a certain position you have to host your panes in __RadSplitContainer__ and define its __InitialPosition__ property as it is shown in __Example 1__:
 
@@ -137,13 +137,13 @@ You can disable the floating functionality of a RadPane via the boolean property
 	<telerik:RadPane x:Name="pane1" CanFloat="False"/>
 {{endregion}}
 
-#### __[C#]__
+#### __[C#] Example 6: Disable the floating of a RadPane__
 
 {{region cs-raddocking-features-panes-docked-floating-panes_9}}
 	radPane.CanFloat = false;
 {{endregion}}
 
-#### __[VB.NET]__
+#### __[VB.NET] Example 6: Disable the floating of a RadPane__
 
 {{region vb-raddocking-features-panes-docked-floating-panes_10}}
 	radPane.CanFloat = False

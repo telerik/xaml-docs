@@ -317,16 +317,18 @@ Of course, if you don't want to hard-code your translation inside your source co
 	End Function
 {{endregion}}
 
-All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager:
+All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager. Please note that you need to do this assingnment prior to invoking the InitializeComponent method of the affected controls.
 
 #### __[C#] {% if site.site_name == 'WPF' %}Example 5{% endif %}{% if site.site_name == 'Silverlight' %}Example 7{% endif %}: Applying the custom LocalizationManager__
 {{region common-localization_0}}
 	LocalizationManager.Manager = new CustomLocalizationManager();
+        InitializeComponent();
 {{endregion}}
 
 #### __[VB.NET] {% if site.site_name == 'WPF' %}Example 5{% endif %}{% if site.site_name == 'Silverlight' %}Example 7{% endif %}: Applying the custom LocalizationManager__
 {{region common-localization_1}}
 	LocalizationManager.Manager = New CustomLocalizationManager()
+	InitializeComponent()
 {{endregion}}
 
 ## See Also

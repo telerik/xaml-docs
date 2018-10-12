@@ -186,6 +186,8 @@ When standard date codes are too restrictive, you can create your own custom for
 
 * __f__ - Millisecond token			  
 
+> The day time period can be changed using the keyboard arrows keys. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse.
+
 #### __[XAML] Example 4: Setting custom DateTime format codes__
 {{region xaml-radmaskedinput-features-mask-tokens_3}}
 	<StackPanel Background="White"

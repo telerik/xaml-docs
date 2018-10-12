@@ -28,57 +28,65 @@ The __RadMap__ control allows you to display rich geographical information from 
 
 After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        
 
-#### __XAML__
+#### __[XAML] Example 1: Defining map in XAML__
 {{region radmap-getting-started_1}}
-    <telerik:RadMap x:Name="radMap" />
+   	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+		<Grid x:Name="LayoutRoot">
+			<telerik:RadMap x:Name="radMap" />
+		</Grid>
+	</UserControl> 
 {{endregion}}
 
 ## Specifying a Provider
 
 The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the __RadMap__ control supports a few providers out of the box:        
 
-* __Bing Maps__
+* [Bing Maps]({%slug radmap-features-providers-bing-map%}) 
 
-* __OpenStreet Maps__
+* [OpenStreet Maps]({%slug radmap-features-providers-bing-map%}) 
 
-* __ArcGIS Online__
+* [ArcGIS Online]({%slug radmap-features-providers-arcgis%}) 
+
+* [Empty Provider]({%slug radmap-features-empty-provider%}) 
+
+* [URI Image provider]({%slug radmap-features-uriimageprovider%}) 
 
 * __WMS__
 
-* __Empty Provider__
-
-* __URI Image provider__
-
 This example will use __Bing Maps__ as its provider. In order to do that you have to set the __Provider__ property of the __RadMap__ to the built-in __BingMapProvider__ class.        
 
-#### __XAML__
+#### __[XAML] Example 2: Specifying provider to the RadMap control__
 {{region radmap-getting-started_4}}
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:RadMap.Provider>
-	        <telerik:BingRestMapProvider ApplicationId="Bing_Map_Key"
-	                                 Mode="Aerial"
-	                                 IsLabelVisible="True"/>
-	    </telerik:RadMap.Provider>
-	</telerik:RadMap>
+	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+		<Grid x:Name="LayoutRoot">
+			<telerik:RadMap x:Name="radMap">
+				<telerik:RadMap.Provider>
+					<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key"
+											 Mode="Aerial"
+											 IsLabelVisible="True"/>
+				</telerik:RadMap.Provider>
+			</telerik:RadMap>
+		</Grid>
+	</UserControl> 
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 3: Setting BingRestMapProvider__
 {{region radmap-getting-started_2}}
 	this.radMap.Provider = new BingRestMapProvider( MapMode.Aerial, true, "key" );
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Setting BingRestMapProvider__
 {{region radmap-getting-started_3}}
 	Me.radMap.Provider = New BingRestMapProvider(MapMode.Aerial, True, "key")
 {{endregion}}
 
 Using the third overload of the __BingRestMapProvider's__ constructor, allows you to pass some starting parameters:        
 
-* the starting view mode of the map - aerial.
+* The starting view mode of the map: Aerial.
 
-* the visibility of the map labels - visible.
+* The visibility of the map labels: Visible.
 
-* a __Bing Maps__ specific key.            
+* A __Bing Maps__ specific key.            
 
 >In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](http://msdn.microsoft.com/en-us/library/ee681900.aspx). Note that the __Bing Map won't__ __appear__ in your __RadMap__ control, without supplying the key.          
 
@@ -109,3 +117,9 @@ The major goals of the new engine are:
 * Support of items selection in the engine core.
 
 To learn more about the layers and how to display the different types of elements in them, please read the [Visualization layer]({%slug radmap-visualization-layer-introduction%}) section.
+
+## See Also
+
+ * [Overview]({%slug radmap-overview%})
+ * [Visual Structure]({%slug radmap-visual-structure%})
+ * [Bing Map Rest Provider]({%slug radmap-features-providers-bing-rest-map%})

@@ -62,6 +62,10 @@ You can further restrict the user input by setting the __FormatString__ property
 
 ![](images/radmaskedinput_datetimeinput_format_string.png)
 
+## Changing AM/PM
+
+With the built-in functionality of the control it is not necessary to type __AM__ or __PM__ in order to change the time period. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse.
+
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})

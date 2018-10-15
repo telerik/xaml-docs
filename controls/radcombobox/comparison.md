@@ -1,15 +1,15 @@
 ---
-title: Tech Specs &amp; Comparisons
-page_title: Tech Specs &amp; Comparisons
-description: Tech Specs &amp; Comparisons
+title: Tech Specs and Comparisons
+page_title: Tech Specs and Comparisons
+description: Tech Specs and Comparisons
 slug: radcombobox-comparison
-tags: tech,specs,&amp;,comparisons
+tags: tech,specs,comparisons
 published: True
 position: 5
 site_name: Silverlight
 ---
 
-# Tech Specs &amp; Comparisons
+# Tech Specs and Comparisons
 
 This article compares __RadComboBox__ with native Silverlight ComboBox features and explains few additional ones as well.
 

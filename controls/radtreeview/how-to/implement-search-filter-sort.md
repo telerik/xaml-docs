@@ -27,10 +27,11 @@ The searching functionality is triggered when the *Search* button is pressed. Ba
 
 For more details examine the following code:
 
-#### __C#__
+#### __[C#]: Example 1: Implement Searching__
 
 {{region radtreeview-howto-implement-search-filter-sort_0}}
 			//the RadTreeView.ItemsSource collection is traversed to find an item by a provided name 
+			string searchText = null;
 			private void Search(object sender, RoutedEventArgs e)
 			{
 				if (!string.IsNullOrEmpty(searchTextBox.Text))
@@ -61,10 +62,11 @@ For more details examine the following code:
 			}  
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Implement Searching__
 
 {{region radtreeview-howto-implement-search-filter-sort_1}}
 		'the RadTreeView.ItemsSource collection is traversed to find an item by a provided name'
+		Dim searchText As String = Nothing
 		Private Sub Search(sender As Object, e As RoutedEventArgs)
 			If Not String.IsNullOrEmpty(searchTextBox.Text) Then
 				searchText = searchTextBox.Text.ToLower()
@@ -95,10 +97,11 @@ The filtering functionality is triggered immediately when the text of the second
 
 Below you can examine the implementation of these two methods:
 
-#### __C#__
+#### __[C#] Example 2: Implement Filtering__
 
 {{region radtreeview-howto-implement-search-filter-sort_2}}
 			//the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria   
+			string filterText = null;
 			private void filterTextBox_TextChanged(object sender, TextChangedEventArgs e)
 			{
 				if (!String.IsNullOrEmpty(filterTextBox.Text))
@@ -125,10 +128,11 @@ Below you can examine the implementation of these two methods:
 			}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Implement Filtering__
 
 {{region radtreeview-howto-implement-search-filter-sort_3}}
 		'the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria'
+		Dim filterText As String = Nothing
 		Private Sub filterTextBox_TextChanged(sender As Object, e As TextChangedEventArgs)
 			If Not [String].IsNullOrEmpty(filterTextBox.Text) Then
 				filterText = If(filterTextBox.Text = " Enter product name", "", filterTextBox.Text)
@@ -153,7 +157,7 @@ Below you can examine the implementation of these two methods:
 
 The sort functionality is triggered when the selection of the __ComboBox__ is changed. When the __SelectionChanged__ event occurs we check the __SelectedItem.__ and based on its __Value__, we sort the __RadTreeView.__ collection.
 
-#### __C#__
+#### __[C#] Example 3: Implement Sorting__
 
 {{region radtreeview-howto-implement-search-filter-sort_4}}
 			//When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly        
@@ -185,7 +189,7 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 			}     
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Implement Sorting__
 
 {{region radtreeview-howto-implement-search-filter-sort_5}}
 		'When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly'     

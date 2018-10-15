@@ -8,7 +8,7 @@ published: True
 position: 31
 ---
 
-# Customize RadTreeListView to look a like a RadTreeView 
+# Customize RadTreeListView to look like a RadTreeView 
 
 This article will go through the customization of the RadTreeListView to look a like RadTreeView control. The article explained the benefit from using our __RadTreeListView__ control for visualizing hierarchical data as ordinary hierarchical control like RadTreeView. The reason why we suggest the approach is the fact that __RadTreeListView__ is a flat control. This means that it uses only one container to visualize all of its items. What this means for your application is that you can boost the performance of the scrolling and bringing into view functionalities, as well as the virtualization.
 
@@ -44,7 +44,7 @@ Now, when you have the initial look, you can proceed with visualizing some data.
 	* Team
 		* Player
 
-The League has a collection of teams. Each Team has a collection of players that is called __Items__ which does not have any further collections. __Example 2__ demonstrate the data structure.
+The League has a collection of teams. Each Team has a collection of players that is called __Items__ which does not have any further collections. __Example 2__ demonstrates the data structure.
 
 #### __[C#] Example 2: Setting data structure__
 {{region csharp-radtreeview-howto-cutomize-radtreelistview_1}}
@@ -143,4 +143,4 @@ To enhance the hierarchical visualization you can allow the __RadTreeListView__ 
 #### __Figure 3: Visible tree lines__
 ![Rad Tree View How To Customize Rad Tree List View Visible Tree Lines](images/RadTreeView_HowToCustomizeRadTreeListView_VisibleTreeLines.png)
 
->tipYou can download a runnable project which demonstrate similar structure from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.
+>tipYou can download a runnable project which demonstrates similar structure from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.

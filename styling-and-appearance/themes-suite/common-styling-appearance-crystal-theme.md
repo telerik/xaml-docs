@@ -94,9 +94,6 @@ position: 7
 .crystaltheme-markerinvertedcolor {
 	background: #FFFFFF;
 }
-.crystaltheme-primarycolor {
-	background: rgba(255,255,255, 0.4);
-}
 .crystaltheme-primarybackgroundcolor {
 	background: #FFFFFF;
 }
@@ -112,6 +109,100 @@ position: 7
 .crystaltheme-readonlybordercolor {
 	background: #A4A3A4;
 }
+
+.crystaltheme-accenthighcolor-dark {
+	background: #56A9FD;
+}
+.crystaltheme-accentlowcolor-dark {
+	background: #087EFF;
+}
+.crystaltheme-accentmouseoverhighcolor-dark {
+	background: #2590FB;
+}
+.crystaltheme-accentmouseoverlowcolor-dark {
+	background: #0072EE;
+}
+.crystaltheme-accentpressedcolor-dark {
+	background: #0060CF;
+}
+.crystaltheme-accentfocusedcolor-dark {
+	background: #7CB7F9;
+}
+.crystaltheme-accentselectedcolor-dark {
+	background: #1C83FF;
+}
+.crystaltheme-basichighcolor-dark {
+	background: #818181;
+}
+.crystaltheme-basiclowcolor-dark {
+	background: #4F4F4F;
+}
+.crystaltheme-accentbasichighcolor-dark {
+	background: #2390FD;
+}
+.crystaltheme-accentbasiclowcolor-dark {
+	background: #0052E6;
+}
+.crystaltheme-iconcolor-dark {
+	background: #FFFFFF;
+}
+.crystaltheme-mainhighcolor-dark {
+	background: #686868;
+}
+.crystaltheme-mainlowcolor-dark {
+	background: #5F5F5F;
+}
+.crystaltheme-markercolor-dark {
+	background: #FFFFFF;
+}
+.crystaltheme-validationcolor-dark {
+	background: #D40012;
+}
+.crystaltheme-complementarycolor-dark {
+	background: #252525;
+}
+.crystaltheme-complementarybasichighcolor-dark {
+	background: #646464;
+}
+.crystaltheme-complementarybasiclowcolor-dark {
+	background: #4D4D4D;
+}
+.crystaltheme-mouseoverhighcolor-dark {
+	background: #898989;
+}
+.crystaltheme-mouseoverlowcolor-dark {
+	background: #818181;
+}
+.crystaltheme-pressedhighcolor-dark {
+	background: #5B5B5B;
+}
+.crystaltheme-pressedlowcolor-dark {
+	background: #4B4B4B;
+}
+.crystaltheme-alternativecolor-dark {
+	background: #3A3A3A;
+}
+.crystaltheme-alternativebasiccolor-dark {
+	background: #4D4D4D;
+}
+.crystaltheme-markerinvertedcolor-dark {
+	background: #FFFFFF;
+}
+.crystaltheme-primarybackgroundcolor-dark {
+	background: #2C2C2C;
+}
+.crystaltheme-headerhighcolor-dark {
+	background: #5B5B5B;
+}
+.crystaltheme-headerlowcolor-dark {
+	background: #494949;
+}
+.crystaltheme-readonlybackgroundcolor-dark {
+	background: #2C2C2C;
+}
+.crystaltheme-readonlybordercolor-dark {
+	background: #4D4D4D;
+}
 </style>
 
 # Crystal Theme
@@ -122,6 +213,7 @@ The following topic explains the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
 * [CrystalPalette Properties](#crystalpalette-properties)
+* [Theme Variation Changing](#theme-variation-changing)
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
 * [Changing Corner Radius](#set-corner-radius)
@@ -134,39 +226,39 @@ The **Crystal Theme** is designed to be easily modified via the exposed colors i
 
 The default values of the brushes in the theme are listed below. Please note that as the theme uses a number of gradients, most of the colors have a **low** and **high** value which indicates the colors at both stops of the gradient.
 
-|Color name|Color value||
-|----------|-----------|---|
-|**AccentHighColor**|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor" color:></div>|
-|**AccentLowColor**|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor"></div>|
-|**AccentMouseOverHighColor**|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor"></div>|
-|**AccentMouseOverLowColor**|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor"></div>|
-|**AccentPressedColor**|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor"></div>|
-|**AccentFocusedColor**|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor"></div>|
-|**AccentSelectedColor**|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor"></div>|
-|**BasicHighColor**|#FFCCCCCC|<div class="theme-palette-color crystaltheme-basichighcolor"></div>|
-|**BasicLowColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-basiclowcolor"></div>|
-|**AccentBasicHighColor**|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor"></div>|
-|**AccentBasicLowColor**|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor"></div>|
-|**IconColor**|#FF505050|<div class="theme-palette-color crystaltheme-iconcolor"></div>|
-|**MainHighColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-mainhighcolor"></div>|
-|**MainLowColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mainlowcolor"></div>|
-|**MarkerColor**|#FF020202|<div class="theme-palette-color crystaltheme-markercolor"></div>|
-|**ValidationColor**|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor"></div>|
-|**ComplementaryColor**|#FFDEDEDE|<div class="theme-palette-color crystaltheme-complementarycolor"></div>|
-|**ComplementaryBasicHighColor**|#FFADADAD|<div class="theme-palette-color crystaltheme-complementarybasichighcolor"></div>|
-|**ComplementaryBasicLowColor**|#FF8D8D8D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor"></div>|
-|**MouseOverHighColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mouseoverhighcolor"></div>|
-|**MouseOverLowColor**|#FFEEEEEE|<div class="theme-palette-color crystaltheme-mouseoverlowcolor"></div>|
-|**PressedHighColor**|#FFDCDCDC|<div class="theme-palette-color crystaltheme-pressedhighcolor"></div>|
-|**PressedLowColor**|#FFCDCDCD|<div class="theme-palette-color crystaltheme-pressedlowcolor"></div>|
-|**AlternativeColor**|#FFEAEAEA|<div class="theme-palette-color crystaltheme-alternativecolor"></div>|
-|**AlternativeBasicColor**|#FFD3D3D3|<div class="theme-palette-color crystaltheme-alternativebasiccolor"></div>|
-|**MarkerInvertedColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor"></div>|
-|**PrimaryBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-primarybackgroundcolor"></div>|
-|**HeaderHighColor**|#FFE8E6E6|<div class="theme-palette-color crystaltheme-headerhighcolor"></div>|
-|**HeaderLowColor**|#FFD4D0D0|<div class="theme-palette-color crystaltheme-headerlowcolor"></div>|
-|**ReadOnlyBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor"></div>|
-|**ReadOnlyBorderColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-readonlybordercolor"></div>|
+|Color name|Light||Dark||
+|----------|-----------|---|-----------|---|
+|**AccentHighColor**|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor" color:></div>|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor-dark" color:></div>|
+|**AccentLowColor**|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor"></div>|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor-dark"></div>|
+|**AccentMouseOverHighColor**|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor"></div>|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor-dark"></div>|
+|**AccentMouseOverLowColor**|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor"></div>|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor-dark"></div>|
+|**AccentPressedColor**|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor"></div>|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor-dark"></div>|
+|**AccentFocusedColor**|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor"></div>|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor-dark"></div>|
+|**AccentSelectedColor**|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor"></div>|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor-dark"></div>|
+|**BasicHighColor**|#FFCCCCCC|<div class="theme-palette-color crystaltheme-basichighcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-basichighcolor-dark"></div>|
+|**BasicLowColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-basiclowcolor"></div>|#FF4F4F4F|<div class="theme-palette-color crystaltheme-basiclowcolor-dark"></div>|
+|**AccentBasicHighColor**|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor"></div>|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor-dark"></div>|
+|**AccentBasicLowColor**|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor"></div>|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor-dark"></div>|
+|**IconColor**|#FF505050|<div class="theme-palette-color crystaltheme-iconcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-iconcolor-dark"></div>|
+|**MainHighColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-mainhighcolor"></div>|#FF686868|<div class="theme-palette-color crystaltheme-mainhighcolor-dark"></div>|
+|**MainLowColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mainlowcolor"></div>|#FF5F5F5F|<div class="theme-palette-color crystaltheme-mainlowcolor-dark"></div>|
+|**MarkerColor**|#FF020202|<div class="theme-palette-color crystaltheme-markercolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markercolor-dark"></div>|
+|**ValidationColor**|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor"></div>|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor-dark"></div>|
+|**ComplementaryColor**|#FFDEDEDE|<div class="theme-palette-color crystaltheme-complementarycolor"></div>|#FF252525|<div class="theme-palette-color crystaltheme-complementarycolor-dark"></div>|
+|**ComplementaryBasicHighColor**|#FFADADAD|<div class="theme-palette-color crystaltheme-complementarybasichighcolor"></div>|#FF646464|<div class="theme-palette-color crystaltheme-complementarybasichighcolor-dark"></div>|
+|**ComplementaryBasicLowColor**|#FF8D8D8D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor-dark"></div>|
+|**MouseOverHighColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mouseoverhighcolor"></div>|#FF898989|<div class="theme-palette-color crystaltheme-mouseoverhighcolor-dark"></div>|
+|**MouseOverLowColor**|#FFEEEEEE|<div class="theme-palette-color crystaltheme-mouseoverlowcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-mouseoverlowcolor-dark"></div>|
+|**PressedHighColor**|#FFDCDCDC|<div class="theme-palette-color crystaltheme-pressedhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-pressedhighcolor-dark"></div>|
+|**PressedLowColor**|#FFCDCDCD|<div class="theme-palette-color crystaltheme-pressedlowcolor"></div>|#FF4B4B4B|<div class="theme-palette-color crystaltheme-pressedlowcolor-dark"></div>|
+|**AlternativeColor**|#FFEAEAEA|<div class="theme-palette-color crystaltheme-alternativecolor"></div>|#FF3A3A3A|<div class="theme-palette-color crystaltheme-alternativecolor-dark"></div>|
+|**AlternativeBasicColor**|#FFD3D3D3|<div class="theme-palette-color crystaltheme-alternativebasiccolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-alternativebasiccolor-dark"></div>|
+|**MarkerInvertedColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor-dark"></div>|
+|**PrimaryBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-primarybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-primarybackgroundcolor-dark"></div>|
+|**HeaderHighColor**|#FFE8E6E6|<div class="theme-palette-color crystaltheme-headerhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-headerhighcolor-dark"></div>|
+|**HeaderLowColor**|#FFD4D0D0|<div class="theme-palette-color crystaltheme-headerlowcolor"></div>|#FF494949|<div class="theme-palette-color crystaltheme-headerlowcolor-dark"></div>|
+|**ReadOnlyBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor-dark"></div>|
+|**ReadOnlyBorderColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-readonlybordercolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-readonlybordercolor-dark"></div>|
 
 #### __Figure 1: Theme colors represented in RadOutlookBar__
 ![Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)	
@@ -208,6 +300,21 @@ The default values of the brushes in the theme are listed below. Please note tha
 * **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
 * **FocusThickness**: The default value is **2, 2, 2, 2**. It is used for the thickness of the focus border.
 
+## Theme Variation Changing
+
+You can switch between the color palettes by calling the LoadPreset method as shown below:
+
+#### **[C#] Example 1: Changing the color variantion of the theme**
+{{region styling-appearance-crystal-theme-0}}	
+	//default color variation
+	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Light);  
+
+	//dark color variation
+	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Dark);
+{{endregion}}
+
+>The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
+
 ## Font Family and Font Size
 
 When using the **Crystal theme** you can dynamically change the **FontSize** and **FontFamily** properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, **Office2016**, **Green**, **Material** and **Fluent** themes.
@@ -220,7 +327,7 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 
 __Example 1__ shows the default font sizes and families.
 
-#### __[C#] Example 1: Default FontSize__
+#### __[C#] Example 2: Default FontSize__
 {{region cs-styling-appearance-crystal-theme-1}}
 	CrystalPalette.Palette.FontSizeXS = 11;
 	CrystalPalette.Palette.FontSizeS = 12;
@@ -231,7 +338,7 @@ __Example 1__ shows the default font sizes and families.
 
 __Example 2__ shows how to change the default FontFamily from "Roboto" to "Calibri Italic" and the FontSize from 13 to 14.
 
-#### __[C#] Example 2: Changing the theme's FontSize and FontFamily__
+#### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
 {{region cs-styling-appearance-crystal-theme-2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -255,7 +362,7 @@ The **Crystal Theme** exposes an easy way to modify the corner radius of many el
 	
 **Example 3** shows how to change the default corner radius from 5 to 0. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the main **CornerRadius** property.
 
-#### __[C#] Example 3: Changing the default corner radius__
+#### __[C#] Example 4: Changing the default corner radius__
 {{region cs-styling-appearance-crystal-theme-3}}
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 {{endregion}}
@@ -277,12 +384,12 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 
 **Example 6** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
 
-#### __[XAML] Example 4: Declare the namespace for the Material components__
+#### __[XAML] Example 5: Declare the namespace for the Material components__
 {{region xaml-styling-appearance-crystal-theme-4}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Example 5: Set RadToggleButton's visual appearance through the MaterialAssist class__
+#### __[XAML] Example 6: Set RadToggleButton's visual appearance through the MaterialAssist class__
 {{region xaml-styling-appearance-crystal-theme-5}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
@@ -298,7 +405,7 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 
 In accordance to the MacOS design, by default the minimize, maximize, restore and close buttons of the RadWindow controls are displayed on the left of the window's title in the Crystal theme. This can be easily modified via the **WindowButtonsAlignment** property of the Crystal palette.
 
-#### __[C#] Example 6: Changing the WindowButtonsAlignment__
+#### __[C#] Example 7: Changing the WindowButtonsAlignment__
 {{region cs-styling-appearance-crystal-theme-6}}
 	CrystalPalette.Palette.WindowButtonsAlignment = ButtonsAlignment.Right; 	
 {{endregion}}

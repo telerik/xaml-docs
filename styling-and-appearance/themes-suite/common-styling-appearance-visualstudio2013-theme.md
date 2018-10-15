@@ -47,6 +47,8 @@ You can switch the three color palettes by calling the __LoadPreset__ method as 
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); 
 {{endregion}}
 
+>The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
+
 ## VisualStudio2013 Palette brushes and colors
 
 Below you can find the differences between the three color variations. Every brush has relevant HEX value in the corresponding color variation.

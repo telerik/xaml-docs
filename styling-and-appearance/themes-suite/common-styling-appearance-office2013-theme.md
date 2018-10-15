@@ -96,6 +96,8 @@ For example, if you want to set the __DarkGray__ color variation, you should hav
 {{endregion}}
 {% endif %}
 
+>The **DarkGrey** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
+
 ## Office2013 Palette brushes and colors
 |Brush name|White| |Light Gray| |Dark Gray| |
 |----------|-----|---|----------|---|---------|---|

@@ -60,8 +60,6 @@ In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__
     </ControlTemplate>
 {{endregion}}
 
-<Comment: The formatting of the previous section looks incorrect to me.>
-
 The customized __ControlTemplate__ can be applied as follows.
 
 #### __[XAML] Example 4: Applying the ControlTemplate to CheckBox__

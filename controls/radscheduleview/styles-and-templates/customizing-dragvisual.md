@@ -60,7 +60,12 @@ Let’s for example, change the DataTemplate  as following:
 {{endregion}}
 
 >If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration: 
-<telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />
+
+#### __XAML__
+
+{{region radscheduleview-styles-and-templates-customizing-dragvisual_8}}
+    <telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />
+{{endregion}}
 
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 

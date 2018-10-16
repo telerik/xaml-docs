@@ -153,7 +153,6 @@ Now that you have the needed files, it's time to localize only the text for the 
 >Note that the name of the resource string should be the same as the resource key for the string that you are localizing. The resource key for RadGridView's group panel is __GridViewGroupPanelText__.
           
 >tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
-<Comment: This is a repeat of the same tip in the last section. Is it important to repeat it?>
 
 Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
 

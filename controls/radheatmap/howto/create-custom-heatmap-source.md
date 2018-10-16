@@ -29,8 +29,16 @@ The interface exposes few methods and properties that are used by the heatmap to
     }
 {{endregion}}
 
-#### __[C#] Example 2: Implementing the IHeatMapSource interface__
+#### __[VB.NET] Example 1: Creating custom data item that will store the information for each cell in the heatmap control__
 {{region radheatmap-how-to-custom-heatmap-source-1}}
+	Public Class CustomHeatMapItem
+		Public Property Color As Color
+		Public Property Value As Double
+	End Class
+{{endregion}}
+
+#### __[C#] Example 2: Implementing the IHeatMapSource interface__
+{{region radheatmap-how-to-custom-heatmap-source-2}}
 	public class CustomHeatMapSource : IHeatMapSource
     {
         private CustomHeatMapItem[,] array;
@@ -79,12 +87,62 @@ The interface exposes few methods and properties that are used by the heatmap to
     }
 {{endregion}}
 
+#### __[VB.NET] Example 2: Implementing the IHeatMapSource interface__
+{{region radheatmap-how-to-custom-heatmap-source-3}}
+	Public Class CustomHeatMapSource
+		Inherits IHeatMapSource
+
+		Private array As CustomHeatMapItem(,)
+
+		Public Sub New(ByVal array As CustomHeatMapItem(,))
+			Me.array = array
+		End Sub
+
+		Public Property ItemsSource As IEnumerable
+			Get
+				Return Me.array
+			End Get
+			Set(ByVal value As IEnumerable)
+				Me.array = CType(value, CustomHeatMapItem(,))
+			End Set
+		End Property
+
+		Public ReadOnly Property RowsCount As Integer
+			Get
+				Return Me.array.GetLength(0)
+			End Get
+		End Property
+
+		Public ReadOnly Property ColumnsCount As Integer
+			Get
+				Return Me.array.GetLength(1)
+			End Get
+		End Property
+
+		Public Function GetDataItem(ByVal rowIndex As Integer, ByVal columnIndex As Integer) As Object
+			Return Me.array(rowIndex, columnIndex)
+		End Function
+
+		Public Function GetValue(ByVal rowIndex As Integer, ByVal columnIndex As Integer) As Double
+			Return Me.array(rowIndex, columnIndex).Value
+		End Function
+
+		Public Function GetColor(ByVal rowIndex As Integer, ByVal columnIndex As Integer) As Color
+			Return Me.array(rowIndex, columnIndex).Color
+		End Function
+
+		Public Sub Dispose()
+			Me.array = Nothing
+		End Sub
+	End Class
+{{endregion}}
+
 ## Creating Custom HeatMapDefinition
 
 To use the custom source, implement a custom definition that derives from the __HeatMapDefinition__ class. The class exposes several protected methods and a property that should be overridden.
 
 #### __[C#] Example 3: Implementing the custom HeatMapDefinition__
-{{region radheatmap-how-to-custom-heatmap-source-2}}
+{{region radheatmap-how-to-custom-heatmap-source-4}}
 	public class CustomHeatMapDefinition : HeatMapDefinition
 	{
 		private CustomHeatMapSource source;
@@ -126,12 +184,55 @@ To use the custom source, implement a custom definition that derives from the __
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 3: Implementing the custom HeatMapDefinition__
+{{region radheatmap-how-to-custom-heatmap-source-5}}
+	Public Class CustomHeatMapDefinition
+		Inherits HeatMapDefinition
+
+		Private source As CustomHeatMapSource
+
+		Public Sub New(ByVal source As CustomHeatMapSource)
+			Me.source = source
+		End Sub
+
+		Protected Overrides ReadOnly Property Source As IHeatMapSource
+			Get
+				Return Me.source
+			End Get
+		End Property
+
+		Protected Overrides Function GetColor(ByVal rowIndex As Integer, ByVal columnIndex As Integer) As Integer
+			Dim color As Integer = ToColorInt(Me.source.GetColor(rowIndex, columnIndex))
+			Return color
+		End Function
+
+		Protected Overrides Function GetColumnHeader(ByVal index As Integer) As Object
+			Return "Column " & index
+		End Function
+
+		Protected Overrides Function GetRowHeader(ByVal index As Integer) As Object
+			Return "Row " & index
+		End Function
+
+		Protected Overrides Sub OnItemsSourceChanged()
+		End Sub
+		
+		Private Shared Function ToColorInt(ByVal color As Color) As Integer
+			Dim scaleApha
+			Return ((color.A + 24)  _
+						Or ((CType((color.R * scaleApha),Byte) + 16)  _
+						Or ((CType((color.G * scaleApha),Byte) + 8)  _
+						Or CType((color.B * scaleApha),Byte))))
+		End Function
+	End Class
+{{endregion}}
+
 ## Using the Custom Definition
 
 To use the custom definition you can create a multidimensional array of CustomHeatMapItem elements and populate the CustomHeatMapSource with it. Then pass it to the custom definition.
 
 #### __[XAML] Example 4: Defining the RadHeatMap in XAML__
-{{region radheatmap-how-to-custom-heatmap-source-3}}
+{{region radheatmap-how-to-custom-heatmap-source-6}}
 	<telerik:RadHeatMap x:Name="heatmap">
 		<telerik:RadHeatMap.RowHeaderSettings>
 			<telerik:HeatMapRowHeaderSettings LabelInterval="100" LabelClipToBounds="False" />
@@ -142,15 +243,15 @@ To use the custom definition you can create a multidimensional array of CustomHe
 	</telerik:RadHeatMap>
 {{endregion}}
 
-#### __[C#] Example 4: Populating the source with 4 million items and setting the heatmap definition__
-{{region radheatmap-how-to-custom-heatmap-source-4}}
+#### __[C#] Example 5: Populating the source with 4 million items and setting the heatmap definition__
+{{region radheatmap-how-to-custom-heatmap-source-7}}
 
 	private static Random randomGenerator = new Random();
 	private static List<Color> colors = new List<Color> { Colors.Red, Colors.DarkBlue, Colors.Cornsilk, Colors.DarkGoldenrod, Colors.LightBlue, };
 
 	// You can decide where to use this method. 
 	// For example, you can call it after the InitializeComponent() call of the view where the RadHeatMap control is used.
-	public SetDefinition()
+	public void SetDefinition()
 	{
 		CustomHeatMapItem[,] data = this.GetData(2000, 2000);
 		CustomHeatMapSource source = new CustomHeatMapSource(data);
@@ -169,6 +270,39 @@ To use the custom definition you can create a multidimensional array of CustomHe
 		}
 		return data;
 	}
+{{endregion}}
+
+#### __[VB.NET] Example 5: Populating the source with 4 million items and setting the heatmap definition__
+{{region radheatmap-how-to-custom-heatmap-source-8}}
+    Private Shared randomGenerator As Random = New Random()	
+    Private Shared colors As List(Of Color) = New List(Of Color) From {
+        Colors.Red,
+        Colors.DarkBlue,
+        Colors.Cornsilk,
+        Colors.DarkGoldenrod,
+        Colors.LightBlue
+    }
+
+    Public Sub SetDefinition()
+        Dim data As CustomHeatMapItem(,) = Me.GetData(2000, 2000)
+        Dim source As CustomHeatMapSource = New CustomHeatMapSource(data)
+        Me.heatmap.Definition = New CustomHeatMapDefinition(source)
+    End Sub
+
+    Private Function GetData(ByVal rowsCount As Integer, ByVal columnsCount As Integer) As CustomHeatMapItem(,)
+        Dim data As CustomHeatMapItem(,) = New CustomHeatMapItem(rowsCount - 1, columnsCount - 1) {}
+
+        For row As Integer = 0 To rowsCount - 1
+
+            For column As Integer = 0 To columnsCount - 1
+                data(row, column) = New CustomHeatMapItem With {
+                    .Value = row + column,
+                    .Color = colors(randomGenerator.[Next](0, colors.Count))
+                }
+            Next
+        Next
+        Return data
+    End Function
 {{endregion}}
 
 > The implementation shown in this example is merely a proof of concept. The main idea of the article is to show you the entry point that you can use in order to create a custom source and use it with the RadHeatMap control.

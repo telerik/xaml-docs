@@ -12,8 +12,11 @@ position: 0
 
 
 
-> There is a required precedence of the __TimeBar's__ properties. This means that the __Start Time__ should always be set before the __End Time__. A required precedence of Properties is given in the code snippet below. 
-{{region radtimebar-properties_0}}
+> There is a required precedence of the __TimeBar's__ properties. This means that the __Start Time__ should always be set before the __End Time__. A required precedence of Properties is given in the code snippet below.
+
+#### __XAML__
+
+{{region xamlradtimebar-properties_0}}
 	<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"      
 						PeriodStart="01-01-2011"
 						PeriodEnd="01/01/2012"

@@ -28,7 +28,7 @@ __Example 1__ will show you how you could decrease the GroupHeaders width by cus
 
 First, we will [generate the default GroupHeaderContentTemplateSelector]({%slug radscheduleview-styles-and-templates-templating-groupheaders%}#how-to-generate-and-use-groupheadercontenttemplateselector) and will set Width to the ContentPresenters in both the HorizontalTemplate and VerticalTemplate (which template is used depends on the active ViewDefinition Orientation) as shown in __Example 1__.
 
-#### __Example 1: [XAML] Modified GroupHeaderContentTemplateSelector__
+#### __[XAML] Example 1: Modified GroupHeaderContentTemplateSelector__
 
 {{region radscheduleview-howto-set-groupheaders-width_0}}
 	<telerik:GroupHeaderTemplateSelector x:Key="GroupHeaderContentTemplateSelector">
@@ -54,7 +54,7 @@ Then, we will apply the created GroupHeaderContentTemplateSelector to the Schedu
 
 Additionally, we will change the format of the dates inside the GroupHeaders as explained in the [Formatting]({%slug radscheduleview-features-formatting%}) topic and will set the __MinAppointmentWidth__ property of the ScheduleView to a smaller value.
 
-#### __Example 2: [XAML] Apply GroupHeaderContentTemplateSelector__
+#### __[XAML] Example 2: Apply GroupHeaderContentTemplateSelector__
 
 {{region radscheduleview-howto-set-groupheaders-width_1}}
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 

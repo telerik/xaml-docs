@@ -43,11 +43,11 @@ Running the application at this state will result in an empty chat.
 
 ## Adding Authors to RadChat
 
-#### __[C#] Example 3: Adding Authors to RadChat__
-
 Two authors will be defined for this example. Note, that the __CurrentAuthor__ property of __RadChat__  must be set.
 
-{{region c#-chat-getting-started_2}}
+#### __[C#] Example 3: Adding Authors to RadChat__
+
+{{region cs-chat-getting-started_2}}
 	public partial class MainWindow : Window
     {
         private Author currentAuthor;
@@ -70,7 +70,7 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
 
 #### __[C#] Example 4: Subscribing to the SendMessage event__
 
-{{region c#-chat-getting-started_3}}
+{{region cs-chat-getting-started_3}}
 	 private void Chat_SendMessage_(object sender, SendMessageEventArgs e)
         {
             var author = e.Message.Author;

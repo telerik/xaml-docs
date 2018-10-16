@@ -222,7 +222,9 @@ Now these key bindings can be overridden and customized to the liking of the use
 {% endif %}
 
 Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
-{{region richtextbox-commands}}
+
+#### __XAML__
+{{region xaml-richtextbox-commands}}
 	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
 {{endregion}}
 

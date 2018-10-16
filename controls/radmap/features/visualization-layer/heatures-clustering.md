@@ -85,7 +85,9 @@ Such performance is a reason to use the __Clustering__ feature to improve the pe
 
 You can set the __ClusteringEnabled__ property to __true__ for enabling the feature.        
 
-{{region radmap-visualization-layer-clustering_1}}
+#### __XAML__
+
+{{region xaml-radmap-visualization-layer-clustering_1}}
     <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClusteringEnabled="True">
         <telerik:VisualizationLayer.Reader>
             <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />

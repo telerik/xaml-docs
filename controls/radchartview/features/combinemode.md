@@ -52,7 +52,7 @@ Categorical series in RadChartView have a mechanism which can be used for combin
         </telerik:RadCartesianChart>
 	{{endregion}}
 
-<!--- --->
+<!-- -->
 
  * __None__: In this mode each series will be plotted on top of each other. The series that is defined last will be rendered on top. You can change that by setting the **ZIndex** property of the series.
 

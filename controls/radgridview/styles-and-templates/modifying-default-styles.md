@@ -42,7 +42,7 @@ In our case, we can find the FilteringDropDown under **Controls -> All -> Filter
 
 ![Selecting the FilteringDropDown from the Assets tab](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_1.png)
 
-You can then double-click or draw to place a dummy control of the selected type on the scene. <Comment: I am not familiar with using scene in this context. Do you mean screen? Note that if you change it, you also use scene later in this help article, so change it later as well.>
+You can then double-click or draw to place a dummy control of the selected type on the scene.
 
 #### __Figure 3: The dummy FilteringDropDown__
 

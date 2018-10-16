@@ -73,9 +73,9 @@ To break away from the standard tabular view, you can customize the row appearan
 * __Enhanced Routed Events Framework__: To help your code become even more elegant and concise, Enhanced Routed Events Framework for RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is implemented. This gives you more freedom when you design your applications, since you can write instance handlers as well as class handlers for the routed events of your controls.
             
 * __Expression Blend support__:  All UI Controls can be easily customized using Expression Blend.
-            
-* {% if site.site_name == 'WPF' %}
-As of __Q3 2012__ official release we have included __Level 1 Coded UI test support__ across our controls. For more detailed information on Coded UI and Levels of support you could check this
+
+{% if site.site_name == 'WPF' %}           
+* As of __Q3 2012__ official release we have included __Level 1 Coded UI test support__ across our controls. For more detailed information on Coded UI and Levels of support you could check this
 [link](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx).
 As of __Q2 2013__ we have included [Level 2 and Level 3 Coded UI test support]( http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx).
 

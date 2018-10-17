@@ -30,19 +30,19 @@ You can include the control in your projects by either dragging it from the tool
 
 The following examples show how to create a __RadAutoCompleteBox__ control in the code-behind and in XAML:
 
-#### __[C#] Example 1: Creating a RadAutoCompleteBox__
+#### __[C#] Example 1: Creating a RadAutoCompleteBox in code-behind__
 
 {{region cs-radautocompletebox-getting-started-0}}
 	RadAutoCompleteBox autoCompleteBox = new RadAutoCompleteBox();
 {{endregion}}
 
-#### __[VB] Example 1: Creating a RadAutoCompleteBox__
+#### __[VB] Example 1: Creating a RadAutoCompleteBox in code-behind__
 
 {{region vb-radautocompletebox-getting-started-0}}
 	Dim autoCompleteBox As New RadAutoCompleteBox()
 {{endregion}}
 
-#### __[XAML] Example 1: Creating a RadAutoCompleteBox__
+#### __[XAML] Example 1: Creating a RadAutoCompleteBox in XAML__
 
 {{region xaml-radautocompletebox-getting-started-0}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -123,15 +123,15 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 
 #### __[XAML] Example 4: Merge the ResourceDictionaries__  
 {{region xaml-radautocompletebox-getting-started_3}}
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
 {{endregion}}
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.

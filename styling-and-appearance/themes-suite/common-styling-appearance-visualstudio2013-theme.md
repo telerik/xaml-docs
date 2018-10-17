@@ -15,6 +15,11 @@ position: 3
 	margin: auto;
 	border: 1px solid black;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # VisualStudio2013 Theme

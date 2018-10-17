@@ -112,6 +112,11 @@ position: 6
 .fluenttheme-readonlybordercolor-dark {
 	background: #4C4C4C;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Fluent Theme

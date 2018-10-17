@@ -112,6 +112,11 @@ position: 6
 .green-complementarybrush-ligth {	
 	background: #CACACA;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Green Theme

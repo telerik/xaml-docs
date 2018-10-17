@@ -15,6 +15,11 @@ position: 2
 	margin: auto;
 	border: 1px solid black;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Office2013 Theme

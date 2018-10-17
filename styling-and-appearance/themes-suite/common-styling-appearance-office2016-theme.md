@@ -70,6 +70,11 @@ position: 4
 .office2016-readonlyborderbrush {	
 	background: #ABABAB;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Office2016 Theme

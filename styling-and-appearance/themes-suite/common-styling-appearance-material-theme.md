@@ -70,6 +70,11 @@ position: 6
 .materialtheme-dividersolidbrush{
 	background: #E1E1E1;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Material Theme

@@ -203,6 +203,11 @@ position: 7
 .crystaltheme-readonlybordercolor-dark {
 	background: #4D4D4D;
 }
+
+article table
+{
+    table-layout: auto;
+}
 </style>
 
 # Crystal Theme

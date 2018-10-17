@@ -62,8 +62,7 @@ The __SelectionChanged__ event is raised after the selection has already complet
 #### __[XAML] Example 3: Subscribing to the SelectionChanged Event__
 
 {{region radtabcontrol-features-selection_3}}
-	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" SelectionChanged="radTabControl_SelectionChanged">
-	</telerik:RadTabControl>
+	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" SelectionChanged="radTabControl_SelectionChanged" />
 {{endregion}}
 
 #### __[C#] Example 4: Implementing the SelectionChanged Event Handler__
@@ -87,8 +86,6 @@ The __SelectionChanged__ event is raised after the selection has already complet
 
 >If your tab control is bound to a custom collection, the code above will fail with __InvalidCastException__, because the __AddedItems__ collection will no longer contain items of type __RadTabItem__ and the explicit cast will fail. The collection will contain items that are of the same type that the source collection contains i.e. __Person__, __TabModel__ etc.
 
-## See Also
-
+## See Also  
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})
-
  * [Add and Remove Tabs]({%slug radtabcontrol-populating-add-remove-tabs%})

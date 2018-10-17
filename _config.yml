@@ -3276,7 +3276,7 @@ intro_columns:
       "CollectionNavigator": "collectionnavigator_overview"
       "DataFilter": "datafilter-overview"
       "DataForm": "raddataform-overview"
-      "DataPager": "slug datapager-overview"
+      "DataPager": "datapager-overview"
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
       "ExpressionEditor": "radexpressioneditor-overview"

@@ -41,9 +41,9 @@ After adding references to the aforementioned dlls, you can declare a new __RadM
 
 The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the __RadMap__ control supports a few providers out of the box:        
 
-* [Bing Maps]({%slug radmap-features-providers-bing-map%}) 
+* [Bing Maps]({%slug radmap-features-providers-bing-rest-map%}) 
 
-* [OpenStreet Maps]({%slug radmap-features-providers-bing-map%}) 
+* [OpenStreet Maps]({%slug radmap-features-providers%}#openstreet-maps) 
 
 * [ArcGIS Online]({%slug radmap-features-providers-arcgis%}) 
 

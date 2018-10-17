@@ -136,12 +136,14 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 
 By default, the Aggregate results of the __GroupHeaderRow__ will be exported. Note, that this is an operation performed on data level. Hiding the GroupHeaderRow Aggregates in the UI through a Style targeting the __GroupHeaderRow__ element does not affect it. In order to disable the exporting of the GroupHeaderRow Aggregates, you can set the __ShowGroupHeaderColumnAggregates__ of the __GridViewDocumentExportOptions__ to __False__.
 
-{{region gridview-export-xlsx-3}}
+#### __[C#] Example 4: Setting ShowGroupHeaderRowAggregates__
+
+{{region cs-gridview-export-pdf-3}}
 	if (dialog.ShowDialog() == true)
             {
                 using (Stream stream = dialog.OpenFile())
                 {
-                    gridViewExport.ExportToXlsx(stream,
+                    gridViewExport.ExportToPdf(stream,
                         new GridViewDocumentExportOptions()
                         {
                             ShowColumnFooters = true,

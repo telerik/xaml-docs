@@ -80,6 +80,8 @@ To build the code from **Example 1**, you should add the following namespaces:
 
 #### Namespaces
 
+#### __XAML__
+
 {{region radspreadsheet-getting-started-spreadsheet-ui_1}}
 
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 

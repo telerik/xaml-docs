@@ -277,8 +277,10 @@ Imagine that you have a business object named __MyViewModel__, with three member
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
+
 #### __[XAML] Example 11: Setting SelectedValuePath__ 
-{{region radtreeview-feautres-treeviewitem-selection_18}}
+
+{{region xaml-radtreeview-feautres-treeviewitem-selection_18}}
 	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
 	    <telerik:RadTreeView.ItemTemplate>
 	        <HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}">
@@ -287,6 +289,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	    </telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
 {{endregion}}
+
 {% endif %}
 
 When you select a __MyViewModel.Title__ from the __RadTreeView__, the __SelectedItem__ property returns the	 __MyViewModel__ data item that corresponds to the selected __Title__. However, because the __SelectedValuePath__ of this __RadTreeView__ is set to the __MyViewModel__'s __Price__ property, the __SelectedValue__ will return the __Price__ property of the __MyViewModel__ business object (e.g. 101.56$).		

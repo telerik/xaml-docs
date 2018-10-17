@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started
 
->In order to use __RadProgressBar__ control in your projects you have to add a reference to the __Telerik.Windows.Controls__ assembly.<br/>{% if site.site_name == 'WPF' %}You can find more info [here]({%slug installation-installing-controls-dependencies%}).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).{% endif %}
+>In order to use __RadProgressBar__ control in your projects you have to add a reference to the __Telerik.Windows.Controls__ assembly.<br/>You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
 Getting started with the __RadProgressBar__ control is pretty straightforward. To begin with, you should include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadProgressBar__ control in *C#*, *VB.NET* and *XAML* code:
 

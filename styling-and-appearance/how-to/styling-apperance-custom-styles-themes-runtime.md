@@ -81,6 +81,8 @@ As an example, you can follow the steps bellow:
 
 **5.** Add the resource dictionary to the application's MergedDictionaries collection:
 
+#### __[XAML] Example 4: Add dictionary to MergedDictionaries__
+
 {{region xaml-styling-apperance-custom-styles-themes-runtime_5}}
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
@@ -95,7 +97,7 @@ As an example, you can follow the steps bellow:
 
 **6.** Then, in the buttons' **Click** handlers, we will clear the merged dictionaries from the application resources and merge the new resource dictionaries from the theme assemblies along with our custom styles contained in the custom resource dictionaries:
 
-#### __[C#] Example 4: Clear and merge dictionaries upon button click__
+#### __[C#] Example 5: Clear and merge dictionaries upon button click__
 
 {{region cs-styling-apperance-custom-styles-themes-runtime_4}}
 	private void Office_Black_Click(object sender, RoutedEventArgs e)

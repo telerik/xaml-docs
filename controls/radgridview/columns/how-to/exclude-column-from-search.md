@@ -16,7 +16,7 @@ __GridViewBoundColumnBase__ provides a mechanism for it to be excluded from the 
 
 ![gridview-howto-exclude-column-from-search](images/gridview-howto-exclude-column-from-search_01.png)
 
-#### __Example 1: Setting the IsSearchable property to False__
+#### __[XAML] Example 1: Setting the IsSearchable property to False__
 
 {{region xaml-gridview-how-to-exclude-column-from-search_0}}
 		<telerik:RadGridView Grid.Row="0"

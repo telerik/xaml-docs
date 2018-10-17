@@ -1,14 +1,14 @@
 ---
-title: Custom HeatMap Source
-page_title: Custom HeatMap Source
-description: Custom HeatMap Source
+title: Create Custom HeatMap Source
+page_title: Create Custom HeatMap Source
+description: Create Custom HeatMap Source
 slug: radheatmap-how-to-custom-heatmap-source
 tags: performance, fast, heatmapdefinition, iheatmapsource
 published: True
 position: 1
 ---
 
-# Custom HeatMap Source
+# Create Custom HeatMap Source
 
 This tutorial will walk you through the creation of a custom IHeatMapSource and a HeatMapDefinition that uses it. This allows you to customize the data fetching mechanism of the control, thus optimizing the performance and the memory footprint.
 
@@ -305,10 +305,14 @@ To use the custom definition you can create a multidimensional array of CustomHe
     End Function
 {{endregion}}
 
+#### __Figure 1: HeatMap with 4 million cells__
+![](images/radheatmap-how-to-custom-heatmap-source-0.png)
+
 > The implementation shown in this example is merely a proof of concept. The main idea of the article is to show you the entry point that you can use in order to create a custom source and use it with the RadHeatMap control.
 <!-- -->
-
+{% if site.site_name == 'WPF' %}
 >tip You can find a runnable example showing this approach in our [GitHub SDK Examples repository](https://github.com/telerik/xaml-sdk/tree/master/HeatMap/WPF/CustomHeatMapSourceAndDefinition).
+{% endif %}
 
 ## See Also
 * [Getting Started]({%slug radheatmap-getting-started%})

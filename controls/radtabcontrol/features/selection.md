@@ -10,11 +10,11 @@ position: 2
 
 # Selection
 
-
-
 __RadTabControl__ exposes several useful properties and events, which can help you to work with items selections.
-        
 
+* [Properties](#properties)
+* [Events](#events)
+        
 ## Properties
 
 * By using __SelectedIndex__ property you can get or set the index of the currently selected tab item.
@@ -27,46 +27,65 @@ __RadTabControl__ exposes several useful properties and events, which can help y
 
 * Use the __SelectedContent__ property to get or set the content of the currently selected tab item. Please note that, when you set value to this property you will replace the content of the currently selected tab item, but the selected tab item will not change, it will stay the same.
 
->__The items counting is zero based, meaning that the index of the first tab items is 0, the index of the second item is 1 and so on. Make sure you set the__ If you want to clear the selection just set the property __SelectedIndex to -1__.
+>__The items counting is zero based, meaning that the index of the first tab items is 0, the index of the second item is 1 and so on.__ If you want to clear the selection just set the property __SelectedIndex to -1__.
 
-#### __XAML__
+## Events
+
+__RadTabControl__ provides two events in regards to its selection: the __PreviewSelectionChanged__ and __SelectionChanged__ ones. The first one is raised before the selection is complete. Marking the event as handled will basically revert the selection.
+
+#### __[XAML] Example 1: Subscribing to the PreviewSelectionChanged Event__
 
 {{region radtabcontrol-features-selection_0}}
-	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" SelectionChanged="radTabControl_SelectionChanged">
+	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" PreviewSelectionChanged="radTabControl_PreviewSelectionChanged">
 	</telerik:RadTabControl>
-	{{endregion}}
+{{endregion}}
 
-
-
-The implementation of the event handler __radTabControl_SelectionChanged__ is located in the code-behind file (C# or VB.NET) and looks like this:
-
-#### __C#__
+#### __[C#] Example 2: Handling the PreviewSelectionChanged Event__
 
 {{region radtabcontrol-features-selection_1}}
+	 private void radTabControl_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
+        {
+            e.Handled = true;
+        }
+{{endregion}}
+
+#### __[VB.NET] Example 2: Handling the PreviewSelectionChanged Event__
+
+{{region radtabcontrol-features-selection_2}}
+	Private Sub radTabControl_PreviewSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadSelectionChangedEventArgs)
+    	e.Handled = True
+	End Sub
+{{endregion}} 
+
+The __SelectionChanged__ event is raised after the selection has already completed.
+
+#### __[XAML] Example 3: Subscribing to the SelectionChanged Event__
+
+{{region radtabcontrol-features-selection_3}}
+	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" SelectionChanged="radTabControl_SelectionChanged" />
+{{endregion}}
+
+#### __[C#] Example 4: Implementing the SelectionChanged Event Handler__
+
+{{region radtabcontrol-features-selection_4}}
 	private void radTabControl_SelectionChanged( System.Object sender, System.Windows.RoutedEventArgs e )
 	{
 	    RadSelectionChangedEventArgs selectionArgs = ( RadSelectionChangedEventArgs )e;
 	    MessageBox.Show( “The selected tab item is ” + ( ( RadTabItem )selectionArgs.AddedItems[ 0 ] ).Header.ToString() );
 	}
-	{{endregion}}
+{{endregion}}
 
+#### __[VB.NET] Example 4: Implementing the SelectionChanged Event Handler__
 
-
-#### __VB.NET__
-
-{{region radtabcontrol-features-selection_2}}
+{{region radtabcontrol-features-selection_5}}
 	Private Sub radTabControl_SelectionChanged( ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)
 	        Dim selectionArgs As RadSelectionChangedEventArgs = DirectCast(e,RadSelectionChangedEventArgs)
 	        MessageBox.Show("The selected tab item is " + DirectCast(selectionArgs.AddedItems(0), RadTabItem).Header.ToString() )
 	End Sub
-	{{endregion}}
-
-
+{{endregion}}
 
 >If your tab control is bound to a custom collection, the code above will fail with __InvalidCastException__, because the __AddedItems__ collection will no longer contain items of type __RadTabItem__ and the explicit cast will fail. The collection will contain items that are of the same type that the source collection contains i.e. __Person__, __TabModel__ etc.
 
-## See Also
-
+## See Also  
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})
-
  * [Add and Remove Tabs]({%slug radtabcontrol-populating-add-remove-tabs%})

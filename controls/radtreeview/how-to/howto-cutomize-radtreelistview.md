@@ -8,14 +8,14 @@ published: True
 position: 31
 ---
 
-# Customize RadTreeListView
+# Customize RadTreeListView to look like a RadTreeView 
 
-This article will explain why you will benefit from using our __RadTreeListView__ control for visualizing hierarchical data as ordinary hierarchical control. The reason why we suggest the approach is the fact that __RadTreeListView__ is a flat control. This means that it uses only one container to visualize all of its items. What this means for your application is that you can boost the performance of the scrolling and bringing into view functionalities, as well as the virtualization.
+This article will go through the customization of the RadTreeListView to look a like RadTreeView control. The article explained the benefit from using our __RadTreeListView__ control for visualizing hierarchical data as ordinary hierarchical control like RadTreeView. The reason why we suggest the approach is the fact that __RadTreeListView__ is a flat control. This means that it uses only one container to visualize all of its items. What this means for your application is that you can boost the performance of the scrolling and bringing into view functionalities, as well as the virtualization.
 
 Those of you who are already familiar with the visual structure of the __RadTreeListView__ control may say that it is much more than a hierarchical control. They would be right, this control derives from our __RadGridView__ and inherits some of its functionalities along with its column generation algorithms. Of course, you may not need all that information and functionality, this is why the __RadTreeListView__ exposes properties that can be used to customize the control. You can practically hide everything that makes it look like __RadGridView__. The following style changes the look of the control and styles it like our __RadTreeView__ control.
 	
-#### __XAML__	
-{{region radtreeview-howto-cutomize-radtreelistview-0}}
+#### __[XAML] Example 1: Setting RadTreeListView properties__	
+{{region xaml-radtreeview-howto-cutomize-radtreelistview_0}}
 	<Style TargetType="telerik:RadTreeListView" BasedOn="{StaticResource RadTreeListViewStyle}">
 		<Setter Property="VerticalGridLinesBrush" Value="{x:Null}"/>
 		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -44,48 +44,103 @@ Now, when you have the initial look, you can proceed with visualizing some data.
 	* Team
 		* Player
 
-The League has a collection of teams. Each Team has a collection of players that is called Players which does not have any further collections.
+The League has a collection of teams. Each Team has a collection of players that is called __Items__ which does not have any further collections. __Example 2__ demonstrates the data structure.
 
-The __RadTreeListView__ control is designed to use __TreeListViewTableDefinition__ to visualize its items. You can use the __TreeListViewTableDefinition.ItemsSource__ property to recreate the requested hierarchy.        
-
-You should keep in mind that the __RadTreeListView__ is designed to work with homogeneous data, meaning that the control expects that the collection holding the children of each level is always named the same. As the structure that we have is rather heterogeneous we need to create a converter to be used in the binding of the __ItemsSource__. This converter will change the property holding the children of each level of the hierarchy. It will simply return the correct property for each level of the hierarchy. You can use the following sample implementation.
-	
-#### __C#__	
-{{region radtreeview-howto-cutomize-radtreelistview-1}}
-	public class ItemsSourceSelector : IValueConverter
+#### __[C#] Example 2: Setting data structure__
+{{region csharp-radtreeview-howto-cutomize-radtreelistview_1}}
+	public class League
 	{
-		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+		public string Name { get; set; }
+		public League()
 		{
-		  if (value.GetType() == typeof(League))
-		  {
-			return (value as League).Teams;
-		  }
-		  else if (value.GetType() == typeof(Team))
-		  {
-			return (value as Team).Players;
-		  }
-			return null;
+			Items = new ObservableCollection<Team>();
 		}
-		public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+		public ObservableCollection<Team> Items { get; set; }
+	}
+	
+	public class Team
+	{
+		public string Name { get; set; }
+		public Team()
 		{
-		  throw new NotImplementedException();
+			Items = new ObservableCollection<Player>();
+		}
+		public ObservableCollection<Player> Items { get; set; }
+	}	
+	
+	public class Player
+	{
+		public string Name { get; set; }
+	}	
+{{endregion}}
+
+Now we can go ahead and create our hierarchical data.
+
+#### __[C#] Example 3: Creating hierarchical data__
+{{region csharp-radtreeview-howto-cutomize-radtreelistview_2}}
+	public partial class MainWindow : Window
+	{
+		public ObservableCollection<League> Data { get; set; }
+		public MainWindow()
+		{
+			InitializeComponent();
+			Data = GetData();
+			this.DataContext = this;
+		}
+
+		private ObservableCollection<League> GetData()
+		{
+			var result = new ObservableCollection<League>();
+			for (int i = 0; i < 2; i++)
+			{
+				League league = new League() {  Name= "League "+i };
+				for (int j = 0; j < 4; j++)
+				{
+					Team team = new Team() { Name="Team "+j };
+					league.Items.Add(team);
+					for (int p = 0; p < 10; p++)
+					{
+						Player player = new Player() { Name="Player "+p };
+						team.Items.Add(player);
+					}
+				}
+				result.Add(league);
+			}
+			return result;
 		}
 	}
 {{endregion}}
 
-Figure 1 shows how the control looks once you create some sample data and populate it
+The __RadTreeListView__ control is designed to use __TreeListViewTableDefinition__ to visualize its items. You can use the __TreeListViewTableDefinition.ItemsSource__ property to recreate the requested 
+hierarchy.   
+    
+#### __[XAML] Example 2: Setting TreeListViewTableDefinition__
+{{region xaml-radtreeview-howto-cutomize-radtreelistview_3}}
+	<telerik:RadTreeListView ItemsSource="{Binding Data}" AutoGenerateColumns="False">            
+		<telerik:RadTreeListView.ChildTableDefinitions>
+			<telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}"/>
+		</telerik:RadTreeListView.ChildTableDefinitions>            
+		<telerik:RadTreeListView.Columns>
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
+		</telerik:RadTreeListView.Columns>
+	</telerik:RadTreeListView>
+{{endregion}}
 
-Figure 1: RadTreeListView
+>You should keep in mind that the __RadTreeListView__ expects that the collection holding the children of each level is always named the same way.
+
+__Figure 1__ shows how the control looks once you create some sample data and populate it
+
+#### __Figure 1: RadTreeListView__
 ![Rad Tree View How To Customize Rad Tree List View](images/RadTreeView_HowToCustomizeRadTreeListView.png)
 
 When the data is populated you can take a look at the section on {% if site.site_name == 'WPF' %}[selection of the control](http://www.telerik.com/help/wpf/radtreelistview-features-selection.html){% endif %}{% if site.site_name == 'Silverlight' %}[selection of the control](http://www.telerik.com/help/silverlight/radtreelistview-features-selection.html){% endif %}. The  __RadTreeListView__ exposes the a the  __SelectionUnit__ property. It is of type __GridViewSelectionUnit__ and controls the visual appearance type of the selection in the control. Setting it to __Cell__ mode forces the control to select only  the header of the separate items. If you set it to __FullRow__, the control selects the full row hosting the corresponding item. The following picture  Figure 2 shows both selection modes          
 
-Figure 2: SelectionUnit
+#### __Figure 2: SelectionUnit__
 ![Rad Tree View How To Customize Rad Tree List View Selection Unit](images/RadTreeView_HowToCustomizeRadTreeListView_SelectionUnit.png)
 
 To enhance the hierarchical visualization you can allow the __RadTreeListView__ to visualize lines connecting the items of the same level of hierarchy. This can be done by setting the __RadTreeListView.TreeLinesVisibility__ property. Figure 3 shows the effect of the property Wwhen it is set to Visible the result will be like the following picture.
 
-Figure 3: Visible tree lines
+#### __Figure 3: Visible tree lines__
 ![Rad Tree View How To Customize Rad Tree List View Visible Tree Lines](images/RadTreeView_HowToCustomizeRadTreeListView_VisibleTreeLines.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.
+>tipYou can download a runnable project which demonstrates similar structure from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.

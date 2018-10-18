@@ -25,8 +25,8 @@ __AutomationMode__ property is of enum type and accepts the following values:
 * Disabled – this option will disable creating of automation peers of Telerik controls;
 * FrameworkOnly – this option will include only the base methods of AutomationPeers of MS classes;
 {% if site.site_name == 'WPF' %}
-* Basic – will create the full AutomationPeer implementation for Telerik UI controls;
-* Advanced - required for any Coded UI tests. This is the default value. 
+* Basic – will create the full AutomationPeer implementation for Telerik UI controls. It supports the most basic Coded UI tests;
+* Advanced - required for Coded UI tests with Level 2 and Level 3. This is the default value. 
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}

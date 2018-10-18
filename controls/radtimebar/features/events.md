@@ -12,15 +12,17 @@ position: 2
 
 You can handle the following events when using the __RadTimeBar__ for a very rich user experience with the control:
 
-* __GroupIntervalChanged__ - fires when interval groups drill level changed.
+* __GroupIntervalChanged__: Fires when interval groups drill level changed.
 
-* __HoveredPeriodChanged__ - fires when the time period hovered changes.
+* __HoveredPeriodChanged__: Fires when the time period hovered changes.
 
-* __ItemIntervalChanged__ - fires when the interval items drill level changed. 
+* __ItemIntervalChanged__: Fires when the interval items drill level changed. 
 
-* __VisiblePeriodChanged__ - fires when the period that is currently visible has changed as we scroll and zoom within the control.
+* __VisiblePeriodChanged__: Fires when the period that is currently visible has changed as we scroll and zoom within the control.
 
-* __SelectionChanged__ - fires when the time period selected has changed.
+* __SelectionChanged__: Fires when the time period selection has changed.
+
+* __ActualSelectionChanged__: Fires when the selected time period is changing, i.e., when the user is dragging one of the selection thumbs. The ActualSelectionStart and ActualSelectionEnd properties will hold the selected period at this point.
 
 For example you can get the current item interval using the __TimeBar.ItemIntervalChanged__ event via the __TimeBar.CurrentItemInterval__ property.
 This event will also fire on initial load, when the best current item interval is set.
@@ -67,3 +69,6 @@ This event will also fire on initial load, when the best current item interval i
 
 The same approach is applicable for groups - In order to get the current group interval you can use __TimeBar.GroupIntervalChanged__ event and __TimeBar.CurrentGroupInterval__ property respectively.
       
+## See Also
+
+* [Properties]({%slug radtimebar-properties%})

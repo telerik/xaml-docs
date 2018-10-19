@@ -10,13 +10,13 @@ position: 3
 
 # Chart Series Label Strategy
 
-The chart's series label strategy is responsible for the visualization of the series labels. In a specific scenarios you may need to control their appereance. The chart allow you to do that by creating a class that derives from __ChartSeriesLabelStrategy__ and override one or more of the following methods.
+The chart's series label strategy is responsible for the visualization of the series labels. In a specific scenario, you may need to control their appearance. The chart allows you to do that by creating a class that derives from __ChartSeriesLabelStrategy__ and override one or more of the following methods.
 
-* __CreateDefaultVisual():__ This method return a __FrameworkElement__ which represents the visual element for the label. For example this method can be used to create a StackPanel with two TextBlock. One will hold the value and the other one will have additional information about this value.
-* __GetLabelContent():__ This method return a object which represent the content of the label. You can override this one to modify what content to be displayed inside the label.
-* __GetLabelDesiredSize():__ This method return a object of type RadSize which represent the size of the label. Overriding this method, you can specify your own size for every label.
-* __GetLabelLayoutSlot():__ This method return a object of type RadRect. This RadRect represent the layout slot where the label is placed. The layout slot is the position and the size of the element. 
-* __SetLabelContent():__ This method can be override to add your own content to the label.
+* __CreateDefaultVisual():__ This method returns a __FrameworkElement__ which represents the visual element for the label. For example, this method can be used to create a StackPanel with two TextBlock. One will hold the value and the other one will have additional information about this value.
+* __GetLabelContent():__ This method returns an object which represents the content of the label. You can override this one to modify what content to be displayed inside the label.
+* __GetLabelDesiredSize():__ This method returns an object of type RadSize which represent the size of the label. Overriding this method, you can specify your own size for every label.
+* __GetLabelLayoutSlot():__ This method returns an object of type RadRect. This RadRect represents the layout slot where the label is placed. The layout slot is the position and the size of the element. 
+* __SetLabelContent():__ This method can be overridden to add your own content to the label.
 
 Those methods will be fired for each data point in the series, but there is a curious specific in the __ChartSeriesLabelStrategy__ class and its methods. The methods won't be fired unless you specify that they should be used via the __Options__ property. The property is a flags enum and it can accept several values. For example, you can specify that you want to use only the __GetLabelContent__ and __GetLayoutSlot__ methods and skip the others. To do so, you can use the following options:
 
@@ -33,7 +33,7 @@ Those methods will be fired for each data point in the series, but there is a cu
 
 ## Custom Series Label Strategy
 
-In the following section we will go throught creating custom __ChartSeriesLabelStrategy__ for the labels. First we are need to create a chart and populated with some points. 
+In the following sections we will go through  creating custom __ChartSeriesLabelStrategy__ for the labels. First, we need to create a chart and populated with some points. 
 
 #### __[C#] Example 2: Defining view models__
 {{region radchartview-labels-shart-series-labels-strategy_1}}
@@ -121,7 +121,7 @@ If you run the application now, you should get a structure like in **Figure 1**.
 #### Figure 1: Labels without Custom Label Strategy
 ![radchartview-labels-shart-series-labels-strategy_NoStrategy](images/radchartview-labels-shart-series-labels-strategy_1.png)
 
-Looking at **Figure 1** every bar have its label position in its center. Our task is to shows what percent every bar represent from the sum of every datapoint in one category. First we need to create a custom class which inherits __ChartSeriesLabelStrategy__. In our case we are going to override __GetLabelContent()__ and create custom logic which calculate what percent every value represent.
+Looking at **Figure 1** every bar has its label position in its center. Our task is to shows what percent every bar represent from the sum of every data point in one category. First, we need to create a custom class which inherits __ChartSeriesLabelStrategy__. In our case, we are going to override __GetLabelContent()__ and create custom logic which calculates what percent every value represent.
 
 #### __[C#] Example 5: Creating custom ChartSeriesLabelStrategy__
 {{region radchartview-labels-shart-series-labels-strategy_2}}

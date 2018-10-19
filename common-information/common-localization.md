@@ -376,5 +376,7 @@ With this setting, changing the **Culture** of the LocalizationManager will upda
     LocalizationManager.Manager.Culture = New CultureInfo("de")
 {{endregion}}
 
+>Please note that not all controls from the UI for {{ site.framework_name }} suite support dynamic localization out-of-the box. You can, however, [edit the control templates]({%slug styling-apperance-editing-control-templates%}) of unsupported controls and use the LocalizableResourceExtension wherever possible.
+
 ## See Also
 * [Consuming Data - Overview]({%slug consuming-data-overview%})

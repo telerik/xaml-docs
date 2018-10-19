@@ -14,7 +14,7 @@ The __RadWindow__ provides you with a set of predefined dialog windows that are 
 
 * Alert the user with a certain message
 
-* Prompt the user for a certain information
+* Prompt the user for certain information
 
 * Allow the user to confirm an action
 
@@ -22,11 +22,11 @@ These windows can be shown using the respective methods of the static __RadWindo
 
 * __Alert()__ - 3 overloads
 
-* __Prompt()__ - 3 overloads
-
 * __Confirm()__ - 2 overloads
 
->All of the predefined windows are modal!
+* __Prompt()__ - 3 overloads
+
+>All of the predefined windows are modal.
 
 Each of the methods has an overload that takes an object of type __DialogParameters__ as an argument. The __DialogParameters__ class has members similar to the specific ones of the __RadWindow__. This allows you to configure the predefined dialogs via the argument of the method.
 
@@ -108,6 +108,11 @@ The alert dialog window allows you to alert the user with a certain message. It 
 	}
 	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
+	    var result = e.DialogResult;
+	    if (result == true)
+	    {
+	        // handle confirmation
+	    }
 	}
 {{endregion}}
 
@@ -118,84 +123,16 @@ The alert dialog window allows you to alert the user with a certain message. It 
 	    RadWindow.Alert("Hello", AddressOf Me.OnClosed)
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+	    Dim result = e.DialogResult
+		If result = True Then
+			' handle confirmation
+		End If
 	End Sub
 {{endregion}}
 
 ![](images/RadWindow_Features_Predefined_Windows_01.png)
 
-## Prompt
-
-The prompt dialog window allows the user to input information. It is shown by calling the __Prompt()__ method of the static __RadWindow__ class. It can take one of the following argument groups:
-
-* __DialogParameters dialogParameters__ - an object of type __DialogParameters__.
-
-
-#### __C#__
-
-{{region cs-radwindow-features-predefined-dialogs_6}}
-	DialogParameters parameters = new DialogParameters();
-	parameters.Content = "Enter your name:";
-	RadWindow.Prompt(parameters);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-predefined-dialogs_7}}
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Enter your name:"
-	RadWindow.Prompt(parameters)
-{{endregion}}
-
-* __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
-
-
-#### __C#__
-
-{{region cs-radwindow-features-predefined-dialogs_8}}
-	public void ShowPrompt()
-	{
-	    RadWindow.Prompt("Enter your name:", this.OnClosed);
-	}
-	private void OnClosed(object sender, WindowClosedEventArgs e)
-	{
-	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-predefined-dialogs_9}}
-	Public Sub ShowPrompt()
-	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed)
-	End Sub
-	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
-	End Sub
-{{endregion}}
-
-* __object content, EventHandler\<WindowsClosedEventArgs\> closed, string defaultPropmptResult__ - an object that represents the content, an event handler that should handle the __Closed__ event of the __RadWindow__ and a default result value.
-
-#### __C#__
-
-{{region cs-radwindow-features-predefined-dialogs_10}}
-	public void ShowPrompt()
-	{
-	    RadWindow.Prompt("Enter your name:", this.OnClosed, "John Doe");
-	}
-	private void OnClosed(object sender, WindowClosedEventArgs e)
-	{
-	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-predefined-dialogs_11}}
-	Public Sub ShowPrompt()
-	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed, "John Doe")
-	End Sub
-	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
-	End Sub
-{{endregion}}
-
-![](images/RadWindow_Features_Predefined_Windows_02.png)
+>The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will always be **null**.
 
 ## Confirm 
 
@@ -230,6 +167,11 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 	}
 	private void OnClosed(object sender, WindowClosedEventArgs e)
 	{
+	    var result = e.DialogResult;
+	    if (result == true)
+	    {
+	        // handle confirmation
+	    }
 	}
 {{endregion}}
 
@@ -240,10 +182,98 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 	    RadWindow.Confirm("Are you sure?", AddressOf Me.OnClosed)
 	End Sub
 	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+	    Dim result = e.DialogResult
+		If result = True Then
+			' handle confirmation
+		End If
 	End Sub
 {{endregion}}
 
 ![](images/RadWindow_Features_Predefined_Windows_03.png)
+
+>The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK**, **False** if the user clicked **Cancel** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will always be **null**.
+
+## Prompt
+
+The prompt dialog window allows the user to input information. It is shown by calling the __Prompt()__ method of the static __RadWindow__ class. It can take one of the following argument groups:
+
+* __DialogParameters dialogParameters__ - an object of type __DialogParameters__.
+
+#### __C#__
+
+{{region cs-radwindow-features-predefined-dialogs_6}}
+	DialogParameters parameters = new DialogParameters();
+	parameters.Content = "Enter your name:";
+	RadWindow.Prompt(parameters);
+{{endregion}}
+
+#### __VB.NET__
+
+{{region vb-radwindow-features-predefined-dialogs_7}}
+	Dim parameters As New DialogParameters()
+	parameters.Content = "Enter your name:"
+	RadWindow.Prompt(parameters)
+{{endregion}}
+
+* __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
+
+#### __C#__
+
+{{region cs-radwindow-features-predefined-dialogs_8}}
+	public void ShowPrompt()
+	{
+	    RadWindow.Prompt("Enter your name:", this.OnClosed);
+	}
+	private void OnClosed(object sender, WindowClosedEventArgs e)
+	{
+	    var result = e.PromptResult;
+	    var message = "Hello " + result + "!";
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region vb-radwindow-features-predefined-dialogs_9}}
+	Public Sub ShowPrompt()
+	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed)
+	End Sub
+	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+		Dim result = e.PromptResult
+		Dim message = "Hello " & result & "!"
+	End Sub
+{{endregion}}
+
+* __object content, EventHandler\<WindowsClosedEventArgs\> closed, string defaultPropmptResult__ - an object that represents the content, an event handler that should handle the __Closed__ event of the __RadWindow__ and a default result value.
+
+#### __C#__
+
+{{region cs-radwindow-features-predefined-dialogs_10}}
+	public void ShowPrompt()
+	{
+	    RadWindow.Prompt("Enter your name:", this.OnClosed, "John Doe");
+	}
+	private void OnClosed(object sender, WindowClosedEventArgs e)
+	{
+	    var result = e.PromptResult;
+	    var message = "Hello " + result + "!";
+	}
+{{endregion}}
+
+#### __VB.NET__
+
+{{region vb-radwindow-features-predefined-dialogs_11}}
+	Public Sub ShowPrompt()
+	    RadWindow.Prompt("Enter your name:", AddressOf Me.OnClosed, "John Doe")
+	End Sub
+	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+		Dim result = e.PromptResult
+		Dim message = "Hello " & result & "!"
+	End Sub
+{{endregion}}
+
+>The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK**, **False** if the user clicked **Cancel** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will hold the value entered by the user if they clicked **OK** and **null** otherwise.
+
+![](images/RadWindow_Features_Predefined_Windows_02.png)
 
 ## Styling the predefined windows
 

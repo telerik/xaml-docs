@@ -14,8 +14,8 @@ You can control the alignment of the __RadExpander__ control through the __Horiz
 
 >The alignment properties depend on the __ExpandDirection__ of the control. Therefore before setting the alignment properties, you should carefully plan how you need to render the control depending on the available area as well as the __ExpandDirection__ of the control. 
 
-#### __XAML__
-{{region radexpander-features-alignment_0}}
+#### __[XAML] Example 1: Setting ExpandDirection property__
+{{region xaml-radexpander-features-alignment_0}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*" />
@@ -50,14 +50,15 @@ You can control the alignment of the __RadExpander__ control through the __Horiz
 	</Grid>
 {{endregion}}
 
+#### Figure 2: RadExpander directions
 ![](images/RadExpander_Features_Alignment_default.png)
 
 ## HorizontalAlignment and VerticalAlignment properties
 
 You can control the vertical and horizontal alignment of the control through the __HorizontalAlignment__ and __VerticalAlignment__ properties. By default both properties are set to __Stretch.__ However, if you want the control to take up only as much space as it needs, you can define the __VerticalAlignment__ and __HorizontalAlignment__ properties accordingly to the __ExpandDirection__ of the control:
 
-#### __XAML__
-{{region radexpander-features-alignment_1}}
+#### __[XAML] Example 2: Setting HorizontalAlignment and VerticalAlignment properties__
+{{region xaml-radexpander-features-alignment_1}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*" />
@@ -92,7 +93,8 @@ You can control the vertical and horizontal alignment of the control through the
 	</Grid>
 {{endregion}}
 
-![](images/RadExpander_Features_Alignment_shrink.png)
+#### Figure 2: HorizontalAlignment and VerticalAlignment properties visual appearance
+![](images/RadExpander_Features_Vertical_HorizontalAlignment_shrink.png)
 
 >Please note that when the __VerticalAlignment__/__HorizontalAlignment__ properties match the __ExpandDirection__, the __Header__ will move aside as the content is expanded. 
 
@@ -100,8 +102,8 @@ You can control the vertical and horizontal alignment of the control through the
 
 You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ properties to control how the __RadExpander's__ __Content__ will be rendered. For example you can use the properties to set the __RadExpander's__ __Content__ to take up only as much space as it needs:
 
-#### __XAML__
-{{region radexpander-features-alignment_2}}
+#### __[XAML] Example 3: Setting HorizontalContentAlignment and VerticalContentAlignment properties__
+{{region xaml-radexpander-features-alignment_2}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*" />
@@ -156,23 +158,24 @@ You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ 
 	</Grid>
 {{endregion}}
 
+#### Figure 2: 
 ![](images/RadExpander_Features_Alignment_shrink.png)
 
-## HorizontalHeaderAlignment and VerticalHeader alignment properties
+## HorizontalHeaderAlignment and VerticalHeaderAlignment properties
 
 You can control how to render the __RadExpander's__ __Header__ through the __HorizontalHeaderAlignment__ and __VerticalHeaderAlignment__ properties. These properties should be set accordingly to the __ExpandDirection__ value. 
 
 If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can control the __Header's__ alignment through the __HorizontalHeaderAlignment.__ The property exposes the following enumeration: 
 
-* __Center__ - the __RadExpander.Header's__ content will be centered in the header part of the __RadExpander ControlTemplate__
+* __Center:__ The __RadExpander.Header's__ content will be centered in the header part of the __RadExpander ControlTemplate__
 
-* __Right__ - the __RadExpander.Header's__ content will be right-aligned in the header part of the __RadExpander ControlTemplate__
+* __Right:__ The __RadExpander.Header's__ content will be right-aligned in the header part of the __RadExpander ControlTemplate__
 
-* __Left__ - the __RadExpander.Header's__ content will be left-aligned in the header part of the __RadExpander ControlTemplate__
+* __Left:__ The __RadExpander.Header's__ content will be left-aligned in the header part of the __RadExpander ControlTemplate__
 
-* __Stretch__ - the __RadExpander.Header's__ content will be stretched throughout the header part of the __RadExpander ControlTemplate__
+* __Stretch:__ The __RadExpander.Header's__ content will be stretched throughout the header part of the __RadExpander ControlTemplate__
 
-#### __XAML__
+#### __[XAML] Example 4: Setting HorizontalHeaderAlignment property__
 {{region radexpander-features-alignment_3}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.ColumnDefinitions>
@@ -204,26 +207,19 @@ If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can cont
 	</Grid>
 {{endregion}}
 
+#### Figure 3: HorizontalHeaderAlignment with ExpandDirection set to Down and Up
 ![](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
 
-If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through the __VerticalHeaderAlignment__ property. The property exposes the following enumeration: 
+If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through again the __HorizontalHeaderAlignment__ property.
 
-* __Center__ - the __RadExpander.Header's__ content will be centered in the header part of the __RadExpander ControlTemplate__
-
-* __Bottom__- the __RadExpander.Header's__ content will be placed at the bottom of the header part of the __RadExpander ControlTemplate__
-
-* __Top__- the __RadExpander.Header's__ content will be placed at the top of the header part of the __RadExpander ControlTemplate__
-
-* __Stretch__ - the __RadExpander.Header's__ content will be stretched throughout the header part of the __RadExpander ControlTemplate__
-
-#### __XAML__
+#### __[XAML] Example 5: Setting HorizontalHeaderAlignment property__
 {{region radexpander-features-alignment_4}}
 	<Grid x:Name="LayoutRoot" Width="555" Height="444" Background="White" ShowGridLines="True">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="*" />
 	        <ColumnDefinition Width="*" />
 	    </Grid.ColumnDefinitions>
-	    <telerik:RadExpander Grid.Column="0" ExpandDirection="Right" VerticalHeaderAlignment="Bottom">
+	    <telerik:RadExpander Grid.Column="0" ExpandDirection="Right" HorizontalHeaderAlignment="Right">
 	        <telerik:RadExpander.Header>
 	            <Border Background="LightPink">
 	                <TextBlock Text="Right" FontWeight="Bold" />
@@ -233,7 +229,7 @@ If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can c
 	            <Ellipse Width="99" Height="99" Margin="5" Fill="Red" />
 	        </Border>
 	    </telerik:RadExpander>
-	    <telerik:RadExpander Grid.Column="1" ExpandDirection="Left" VerticalHeaderAlignment="Center">
+	    <telerik:RadExpander Grid.Column="1" ExpandDirection="Left" HorizontalHeaderAlignment="Center">
 	        <telerik:RadExpander.Header>
 	            <Border Background="LightGreen">
 	                <TextBlock Text="Left" FontWeight="Bold" />
@@ -246,4 +242,9 @@ If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can c
 	</Grid>
 {{endregion}}
 
+#### Figure 4: HorizontalHeaderAlignment with ExpandDirection set to Right and Left
 ![](images/RadExpander_Features_Alignment_VerticalHeader.png)
+
+## See Also  
+* [Getting Started]({%slug expander-getting-started%})
+* [Expand Direction]({%slug radexpander-features-expand_direction%})

@@ -10,8 +10,6 @@ position: 0
 
 # Properties
 
-
-
 > There is a required precedence of the __TimeBar's__ properties. This means that the __Start Time__ should always be set before the __End Time__. A required precedence of Properties is given in the code snippet below.
 
 #### __XAML__
@@ -33,24 +31,25 @@ position: 0
 	</telerik:RadTimeBar>
 {{endregion}} 
 	
-__PeriodStart__ - gets or sets the timeline's start date
-__PeriodEnd__ - gets or sets the timeline's end data
-__VisiblePeriodStart__ - gets or sets the currently visible start date
-__VisiblePeriodEnd__ - gets or sets the the currently visible end date
-__Intervals__ - determines the displayed time intervals
+__PeriodStart__: Gets or sets the timeline's start date
+__PeriodEnd__: Gets or sets the timeline's end data
+__VisiblePeriodStart__: Gets or sets the currently visible start date
+__VisiblePeriodEnd__: Gets or sets the the currently visible end date
+__Intervals__: Determines the displayed time intervals
 
 Currently the supported intervals are:
-*         Century;
-*         Decade;
-*         Year;
-*         Quarter;
-*         Month;
-*         Week;
-*         Day;
-*         Hour;
-*         Minute;
-*         Second;
-*         Millisecond;
+
+* Century
+* Decade
+* Year
+* Quarter
+* Month
+* Week
+* Day
+* Hour
+* Minute
+* Second
+* Millisecond
 
 A sample Intervals section may look like this:
 
@@ -63,9 +62,7 @@ A sample Intervals section may look like this:
 	     <telerik:WeekInterval/>
 	     <telerik:DayInterval/>
 	 </telerik:RadTimeBar.Intervals>
-	{{endregion}}
-
-
+{{endregion}}
 
 Every interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeBar automatically choses the appropriate string formatter according to the control size and visible range. For example year interval uses the following set of formatting strings:
 
@@ -73,13 +70,15 @@ Every interval has a preset collection of formatting strings that creates the st
 
 “yy”
 
-__SelectionStart__ and __SelectionEnd__ – These properties determine the beginning of the selected range in the TimeBar control.
+__SelectionStart__ and __SelectionEnd__: These properties determine the beginning of the selected range in the TimeBar control.
 
-__IsSnapToIntervalEnabled__- This turns on the snapping functionality, which will restrict the moving of the selection thumb, so that it will snap to the items' lines.
+__ActualSelectionStart__ and __ActualSelectionEnd__: When the user is dragging one of the selection thumbs, the SelectionStart and SelectionEnd properties are updated once the user releases the selection thumb. On the other hand, the ActualSelectionStart and ActualSelectionEnd properties are updated while the selection thumbs are moving.
 
-__MinSelectionRange__ and __MaxSelectionRange__ - These properties define the Selection Range interval thus you won't be able to select interval lower than the MinSelectionRange and higher than MaxSelectionRange.
+__IsSnapToIntervalEnabled__: This turns on the snapping functionality, which will restrict the moving of the selection thumb, so that it will snap to the items' lines.
 
-__IntervalSpans__ -this property can be set from each Interval except Decade and Quarter. It is used to group the given Interval Items Together. For example setting:
+__MinSelectionRange__ and __MaxSelectionRange__: These properties define the Selection Range interval thus you won't be able to select interval lower than the MinSelectionRange and higher than MaxSelectionRange.
+
+__IntervalSpans__: This property can be set from each Interval except Decade and Quarter. It is used to group the given Interval Items Together. For example setting:
 
 #### __XAML__
 
@@ -87,9 +86,7 @@ __IntervalSpans__ -this property can be set from each Interval except Decade and
 	<telerik:RadTimeBar.Intervals>
 	   <telerik:SecondInterval IntervalSpans="10"/>
 	</telerik:RadTimeBar.Intervals>
-	{{endregion}}
-
-
+{{endregion}}
 
 will make the seconds in groups with 10 each. You can also set more than one *IntervalSpan* simultaneously by separating them with comma:
 
@@ -100,10 +97,8 @@ will make the seconds in groups with 10 each. You can also set more than one *In
 	   <telerik:SecondInterval IntervalSpans="10,15,30" />
 	   <telerik:MinuteInterval IntervalSpans="1,10,15,30" />
 	</telerik:RadTimeBar.Intervals>
-	{{endregion}}
+{{endregion}}
 
+__CurrentItemInterval__ and __CurrentGroupInterval__: These properties can be used in code-behind to take the current item respectively group interval span set.
 
-
-__CurrentItemInterval__ and __CurrentGroupInterval__ properties can be used in code-behind to take the current item respectively group interval span set.
-
-__MinZoomRange__ and __MaxZoomRange__ -  These properties set the minimal and maximum range of the TimeBar that can be zoomed.
+__MinZoomRange__ and __MaxZoomRange__: These properties set the minimal and maximum range of the TimeBar that can be zoomed.

@@ -244,6 +244,8 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 {{region radtimebar-getting-started-12}}
 	private static Random r = new Random();
 	
+	// You can decide where to use this method. 
+	// For example, you can call it after the InitializeComponent() call of the view where the control is used (ex: MainWindow.xaml.cs).
 	private void SetupSparkLineSource()
 	{
 		List<int> data = new List<int>();
@@ -260,6 +262,8 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 #### __[VB.NET] Example 9: Setting up the ItemsSource of the sparkline control__
 {{region radtimebar-getting-started-13}}
 	Private Shared r As Random = New Random()
+	' You can decide where to use this method. 
+	' For example, you can call it after the InitializeComponent() call of the view where the control is used (ex: MainWindow.xaml.cs).
     Private Sub SetupSparkLineSource()
         Dim data As List(Of Integer) = New List(Of Integer)()
         Dim startDate As DateTime = New DateTime(2019, 1, 1, 12, 0, 0)

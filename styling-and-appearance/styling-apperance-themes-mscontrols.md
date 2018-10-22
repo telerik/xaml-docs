@@ -64,7 +64,7 @@ If you want to style those native controls based on the current application them
 	</Application.Resources>
 	{{endregion}}
 
-
+> If you want to customize the style of the native controls and keep the Telerik theming you should base your custom styles on the default style that the theme provides as explained in the [Styling the Controls article]({%slug implicit-styles-styling-the-controls%}). For example, the x:Key of the TextBox style is __TextBoxStyle__.
 
 ## See Also
 

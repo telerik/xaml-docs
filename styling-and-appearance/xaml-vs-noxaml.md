@@ -28,7 +28,7 @@ Using Xaml dlls allows you to set up your project a bit easier and __change the 
 
 ## NoXaml assemblies
 
-The NoXaml dlls have the same code as the Xaml ones, but they don't contain any styles and templates. This makes them __smaller in size__ compared to NoXaml, but they require a bit more effort to set up. You will need to reference an additional theme dll and merge the ResourceDictionaries with the styles for each control dll. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article.
+The NoXaml dlls have the same code as the Xaml ones, but they don't contain any styles and templates. This makes them __smaller in size__ compared to Xaml, but they require a bit more effort to set up. You will need to reference an additional theme dll and merge the ResourceDictionaries with the styles for each control dll. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article.
 
 The benefit of using NoXaml is that you get full __design-time support__ when a theme different from the default one (Office_Black) is used.
 

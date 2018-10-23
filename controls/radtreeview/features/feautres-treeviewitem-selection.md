@@ -278,8 +278,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 
 {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 11: Setting SelectedValuePath__ 
-
+#### __[XAML] Example 11: Setting SelectedValuePath__  
 {{region xaml-radtreeview-feautres-treeviewitem-selection_18}}
 	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
 	    <telerik:RadTreeView.ItemTemplate>

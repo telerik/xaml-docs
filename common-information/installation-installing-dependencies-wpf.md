@@ -109,10 +109,7 @@ RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.F
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 
-## See Also
-
-* [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
-
- * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
-
- * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration-wpf%})
+## See Also 
+ * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
+ * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
+ * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})

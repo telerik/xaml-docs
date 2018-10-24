@@ -10,7 +10,7 @@ position: 1
 
 # RadDocumentPane
 
-__RadDocumentPane__ is a more concrete type of pane meant to host any kind of documents editable by your applications. Since RadDocumentPane is direct inheritor of __RadPane__ it shares the same code base as its parent - the [RadPane]({%slug raddocking-panes-radpane%}) class. 
+Since RadDocumentPane is a direct inheritor of __RadPane__, it shares the same code base as its parent - the [RadPane]({%slug raddocking-panes-radpane%}) class. There aren't any functional or visual differences between the RadDocumentPane and the RadPane. The RadDocumentPane exists to simplify the distinguishing between document panes and tool panes for the developer.
 
 To learn more about __RadDocumentPane__ take a look at the __RadPane__'s [Overview]({%slug raddocking-panes-radpane%}) topic, since all of the characteristics and functionalities of the __RadPane__ are also valid for the RadDocumentPane.
 

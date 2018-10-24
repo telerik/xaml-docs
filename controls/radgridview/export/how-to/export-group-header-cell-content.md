@@ -14,7 +14,7 @@ By handling the [ElementExportingToDocument]({%slug gridview-export-events%}#ele
 
 #### __[C#] Example 1: Custom Group Header Cell Export Content__
 
-{{region gridview-export-group-header-cell-content-1}}
+{{region cs-gridview-export-group-header-cell-content-1}}
     private void Grid_ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
     {
         if (e.Element == ExportElement.GroupHeaderCell)

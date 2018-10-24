@@ -51,7 +51,7 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
 
 In the example above Entity Framework is used. However, you may use Linq to SQL, OpenAccess or any other Linq provider in the same manner.
 
->When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
+>When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ by setting the __ShowScrollPositionIndicator__ property of the RadGridView to __False__. This property is available since ____.
 
 {% endif %}
 

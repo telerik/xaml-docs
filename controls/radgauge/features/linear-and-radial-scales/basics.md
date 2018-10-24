@@ -85,11 +85,11 @@ The __Interactivity__ feature allows the user to interact with the scale. Enabli
 
 Both radial and linear scales have a Distribution property which specifies the value distribution along the scale (linear, logarithmic, exponential and etc.). This property is defined in the GraphicScale class and is of type [__IValueDistribution__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gauge.ivaluedistribution). This interface converts real scale value (given as value between Min and Max property of the scale) to the relative value (value in the [0...1] interval) which represents relative position of the value along the scale and vice versa. It is also possible to calculate the value for the tick mark using its index and the total number of ticks. Currently there are 3 basic implementations of this interface:
 
-* __Regular__ - the default distribution which is represented by a linear function. Check __Example 3__.
+* __Regular__: The default distribution which is represented by a linear function. Check __Example 3__.
 
-* __Range logarithmic__ - the distribution which maps a logarithmic function on any value range (i.e. tick marks have close values at the beginning of the range and wide distance at the end of range). It corresponds to the IsLogarithmic mode in the old implementation.  Check __Example 4__.
+* __Range logarithmic__: The distribution which maps a logarithmic function on any value range (i.e. tick marks have close values at the beginning of the range and wide distance at the end of range). It corresponds to the IsLogarithmic mode in the old implementation.  Check __Example 4__.
 
-* __Classic logarithmic__ – the distribution which is represented by a logarithmic function. It represents the classic meaning of the logarithmic scale. In contrast to the range logarithmic distribution it can’t be used on an arbitrary value range, but on positive numbers only. Check __Example 5__.
+* __Classic logarithmic__: The distribution which is represented by a logarithmic function. It represents the classic meaning of the logarithmic scale. In contrast to the range logarithmic distribution it can’t be used on an arbitrary value range, but on positive numbers only. Check __Example 5__.
 
 >tip The default value for the __LogarithmicBase__ property of the logarithmic distributions is __10__.
 

@@ -3,9 +3,9 @@ title: Column Resizing
 page_title: Column Resizing
 description: Column Resizing
 slug: radpivotgrid-features-column-resizing
-tags: editing
+tags: column,resizing
 published: True
-position: 7
+position: 8
 ---
 
 # Column Resizing 

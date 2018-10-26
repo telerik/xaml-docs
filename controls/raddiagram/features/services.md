@@ -168,6 +168,23 @@ This service manages the grouping and ungrouping of items. More information abou
 
 The __GroupService__ implements the __IGroupService__ interface and it provides the __GroupsChanged__ event. The event occurs when a root level logical group is created or destroyed through a new group or ungroup operation.		
 
+## HitTestService
+
+This service handles the hit-testing of diagram elements. It implements the __IHitTestService__ interface and exposes the following members:
+
+_Properties_:
+* __ShapeUnderMouse__ - gets the shape that is currently under the mouse.
+* __ItemUnderMouse__ - gets the item that is currently under the mouse.
+
+_Methods_:
+* __GetTopShapesUnderPoint__ - accepts a point as a parameter and returns the shape/s with the highest ZIndex under that point.
+* __GetShapesNearPoint__ - accepts a point and a delta of type double as a parameter and returns the nearest shape/s within that delta.
+* __GetItemsNearPoint__ -  accepts a point and a delta of type double as a parameter and returns the nearest item/s within that delta.
+* __GetTopItemNearPoint__ - accepts a point a and a delta of type double as a parameter and returns the item with the highest ZIndex within that delta.
+* __GetShapesUnderRect__ - accepts a Rect as a paramater and returns the shapes under that rectangle.
+* __GetConnectionsUnderRect__ - accepts a Rect as a parameter and returns the connections intersecting that rectangle.
+* __GetItemsUnderRect__ - accepts a Rect as a parameter and returns the items under that rectangle.
+
 ## ManipulationPointService
 
 This service packages the undoable actions performed by the ConnectionTool and the ConnectionManipulationTool on a connection. It keeps a reference to the ConnectionEditorPoint which is being manipulated and which acts as a key binding element between the RadDiagramConnection, the ConnectionManipulationAdorner and the tools. 

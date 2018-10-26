@@ -45,6 +45,8 @@ Here are a few of the controls' main features:
 * **Drive/Directory Filtering**: You can filter all drives and directories with the **DirectoryRequesting** event.
 
 * **Codeless Тest Аutomation**: You can record, execute and debug functional tests for the controls without leaving the familiar Visual Studio environment.
+
+* **Environment variables**: The dialogs support the usage of all system and user-defined enviroment variables.
  
 The file dialogs also support many other features of the native Windows file dialogs.
 

@@ -14,11 +14,11 @@ The RadFileDialogs provide out of the box support for the most common system env
 
 > When adding a new environment variable, you have to restart the application (if you started it from the .exe file). This is needed in order to get the new environement variables from Windows. If the application is started from Visual Studio, a restart of Visual Studio is required. 
 
-## Common behavior 
+## Common Behavior 
 
->The examples in this section assume that you have an environment variable defined, named "test" with value - "D:\Test5".
+>The examples in this section assume that you have an environment variable defined, named "test" with a value of "D:\Test5".
 
-When typing an environment variable in the Path Navigation Pane of the file dialogs and typing enter, the Tree Navigation Pane will navigate to the respective directory. **Figure 1** demonstrates what will happen when typing %test% in the Path Navigation Pane.
+When typing an environment variable in the **Path Navigation Pane** of the file dialogs and typing enter, the **Tree Navigation Pane** will navigate to the respective directory. **Figure 1** demonstrates what will happen when typing %test% in the Path Navigation Pane.
 
 #### Figure 1: Typing an EV in the breadcrumb
 
@@ -30,7 +30,7 @@ When typing an enviroment variable followed by **"\"** in the Path Navigation Pa
 
 ![File Dialogs Environment Variables](images/FileDialogs_EV2.gif)
 
-> If you type %invalid% and hit enter, assuming that you have not defined an enviroment variable named "invalid", an InvalidOperationException will be thrown and the [ExceptionRaised]({%slug radfiledialogs-events%}) event will be raised.
+> If you type %invalid% and hit enter, assuming that you have not defined an enviroment variable named "invalid", an **InvalidOperationException** will be thrown and the [ExceptionRaised]({%slug radfiledialogs-events%}) event will be raised.
 
 > If the environment variable returns a valid path to a file, the file will be opened using the corresponding Windows program.
 
@@ -48,10 +48,10 @@ Depending on whether the environment variable points to a folder or a file, the 
 
 ## Common Windows Environment Variables
 
-* __ComSpec__ - Typing this environment variable and hitting enter will open the terminal.
-* __windir__ - Typing "%windir%/", followed by a valid path is a supported scenario.
-* __USERNAME__ - It is possible to include an environment variable in the middle of a file path. "C:\Users\%USERNAME%\", followed by a valud path is a supported scenario.
-* __userdomain__ - When typing this enviroment variable and hitting enter, an InvalidOperationException will be thrown and the [ExceptionRaised]({%slug radfiledialogs-events%}) event will be raised, since this enviroment variable does not point to a file or folder.
+* __ComSpec__: Typing this environment variable and hitting enter will open the terminal.
+* __windir__: Typing "%windir%/", followed by a valid path is a supported scenario.
+* __USERNAME__: It is possible to include an environment variable in the middle of a file path. "C:\Users\%USERNAME%\", followed by a valud path is a supported scenario.
+* __userdomain__: When typing this enviroment variable and hitting enter, an **InvalidOperationException** will be thrown and the [ExceptionRaised]({%slug radfiledialogs-events%}) event will be raised, since this enviroment variable does not point to a file or folder.
 
 The examples above assume that the default paths of the listed system environment variables have not been changed.
 

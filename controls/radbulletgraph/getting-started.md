@@ -2,31 +2,31 @@
 title: Getting Started
 page_title: Getting Started
 description: Getting Started
-slug: radbulletgraph_getting_started
+slug: radbulletgraph-getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started
 
 This tutorial will walk you through the creation of a RadBulletGraph.
 
-* [Assembly References](#assembly-references)
-* [Defining the RadBulletGraph](#defining-the-radbulletgraph)
-
 ## Assembly References
-> In order to use RadBulletGraph in your project you have to add a reference to the following assemblies:
->	1. __Telerik.Windows.Controls__
->	2. __Telerik.Windows.Controls.DataVisualization__
->	3. __Telerik.Windows.Data__
+ 
+In order to use RadBulletGraph in your project you have to add a reference to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.DataVisualization__ 
+* __Telerik.Windows.Data__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
 ## Defining the RadBulletGraph
 
 There are two main types of bullet graphs - horizontal and vertical, depending on the direction in which the control is drawn.
 
 #### __[XAML] Example 1: Defining horizontal bulletgraph control__
-{{region radbulletgraph_getting_started_0}}
+{{region radbulletgraph-getting-started-0}}
 	<telerik:RadHorizontalBulletGraph Width="300" Height="60" Minimum="0" Maximum="100" FeaturedMeasure="60" ComparativeMeasure="65" ProjectedValue="75">
 		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
 			<telerik:QualitativeRange Brush="#A8A8A8" Value="150" />
@@ -40,7 +40,7 @@ There are two main types of bullet graphs - horizontal and vertical, depending o
 ![](images/radbulletgraph_getting_started_0.png)
 
 #### __[XAML] Example 1: Defining vertical bulletgraph control__
-{{region radbulletgraph_getting_started_1}}
+{{region radbulletgraph-getting-started-1}}
 	<telerik:RadVerticalBulletGraph Width="60" Height="300" Minimum="0" Maximum="100" FeaturedMeasure="60" ComparativeMeasure="65" ProjectedValue="75">
 		<telerik:RadVerticalBulletGraph.QualitativeRanges>
 			<telerik:QualitativeRange Brush="#A8A8A8" Value="150" />

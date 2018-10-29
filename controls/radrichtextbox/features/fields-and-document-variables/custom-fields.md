@@ -5,7 +5,7 @@ description: Custom Fields
 slug: radrichtextbox-features-custom-fields
 tags: custom,fields
 published: True
-position: 2
+position: 3
 ---
 
 # Custom Fields

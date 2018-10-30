@@ -37,7 +37,7 @@ The following topic describes what steps you should perform in order to add the 
 4. Configure the project using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking okay will add all required references for the controls.
 
 	#### __Figure 3: Adding references to the charting controls__
-	![Common Installing Creating Application 013 WPF](images/nstallation-adding-to-application-create-application-and-adding-control-3.png)	
+	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
 
 	> This step is optional and you will need it only if use controls that are not defined in Telerik.Windows.Controls.dll.
 
@@ -48,7 +48,7 @@ The following topic describes what steps you should perform in order to add the 
 2. Create a new {{ site.platform_name }} application.
 	
 	#### __Figure 4: Creating new {{ site.platform_name }} application__
-	![Common Installing Creating Application 011 WPF](images/Common_InstallingCreatingApplication_011_WPF.png)
+	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-4.png)
 
 3. Add references to the Telerik assemblies. There are two options to do this.
 	

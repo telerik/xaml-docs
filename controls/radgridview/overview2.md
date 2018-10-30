@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: RadGridView for WPF is the ultimate grid control that provides outstanding performance and a remarkably flexible hierarchy model.
 slug: gridview-overview2
 tags: overview
 published: True

@@ -573,6 +573,8 @@ navigation:
     controls/radchartview/troubleshooting:
         title: Troubleshooting 
         position: 13
+    controls/raddiagram/performance:
+        title: Performance
 ## X2 Controls End
 
 ## Centaur Controls Start

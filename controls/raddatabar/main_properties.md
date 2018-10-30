@@ -118,3 +118,8 @@ This topic aims to get you familiar with the specific properties of each databar
 * __TicksDistance__ - specifies a value indicating that every axis tick should be placed at least n pixels away from the next one, where n is the value of the property. Use when you have too much data to display on the axis to control the number of ticks shown. 
 
 	>The TickDitance property has a smaller priority than Step. If both Step and TickDistance are set - the axis algorithm that distributes the ticks will only take into consideration the Step property. These two properties should not be used in conjunction.
+
+## See Also
+
+* [Getting Started]({%slug databar-getting-started2%})
+* [Data Binding]({%slug raddatabar-databinding%})

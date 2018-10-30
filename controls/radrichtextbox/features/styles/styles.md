@@ -82,7 +82,7 @@ Table styles include properties of Table, such as Borders and Background. They a
 
 ## Accessing Styles
 
-All the styles defined for a document are stored in its **StyleRepository** property. The built-in styles can be easily obtained using the [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocumentdefaultstyles.htm) to get their names.
+All the styles defined for a document are stored in its **StyleRepository** property. The built-in styles can be easily obtained using the [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.raddocumentdefaultstyles) to get their names.
 
 #### [C#] Example 1: Accessing a style from a document
 
@@ -299,4 +299,4 @@ Table styles can only be based on other table styles. The inheritance is as foll
 
 ## See Also
 
-* [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocumentdefaultstyles.htm)
+* [RadDocumentDefaultStyles class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.raddocumentdefaultstyles)

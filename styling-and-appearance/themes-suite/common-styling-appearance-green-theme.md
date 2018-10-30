@@ -8,6 +8,117 @@ published: True
 position: 6
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.green-strongbrush-dark {	
+	background:#646464;
+}
+.green-strongbrush-ligth {	
+	background:#646464;
+}
+.green-validationbrush-dark {	
+	background:#E60000;
+}
+.green-validationbrush-ligth {	
+	background:#E60000;
+}
+.green-fixedbrush-dark {	
+	background:#FFFFFF;
+}
+.green-fixedbrush-ligth {	
+	background:#FFFFFF;
+}
+.green-accenthighbrush-dark {	
+	background:#2B7402;
+}
+.green-accenthighbrush-ligth {	
+	background:#4FA520;
+}
+.green-accentlowbrush-dark {	
+	background:#86B90E;
+}
+.green-accentlowbrush-ligth {	
+	background:#008406;
+}
+.green-semiaccentlowbrush-dark {	
+	background: #CFDF9D;
+}
+.green-semiaccentlowbrush-ligth {	
+	background: #A0CC9A;
+}
+.green-mouseoverbrush-dark {	
+	background: #669933;
+}
+.green-mouseoverbrush-ligth {	
+	background: #8EBC00;
+}
+.green-mainbrush-dark {	
+	background: #1B1B1F;
+}
+.green-mainbrush-ligth {	
+	background: #F1F1F1;
+}
+.green-primarybrush-dark {	
+	background: #2B2C2E;
+}
+.green-primarybrush-ligth {	
+	background: #E8E8E8;
+}
+.green-alternativebrush-dark {	
+	background: #1D1E21;
+}
+.green-alternativebrush-ligth {	
+	background: #E0E0E0;
+}
+.green-markerbrush-dark {	
+	background: #F1F1F1;
+}
+.green-markerbrush-ligth {	
+	background: #000000;
+}
+.green-basicbrush-dark {	
+	background: #474747;
+}
+.green-basicbrush-ligth {	
+	background: #999999;
+}
+.green-selectedbrush-dark {	
+	background: #FFFFFF;
+}
+.green-selectedbrush-ligth {	
+	background: #353535;
+}
+.green-lowbrush-dark {	
+	background: #343434;
+}
+.green-lowbrush-ligth {	
+	background: #8D8D8D;
+}
+.green-highbrush-dark {	
+	background: #131313;
+}
+.green-highbrush-ligth {	
+	background: #ECECEC;
+}
+.green-complementarybrush-dark {	
+	background: #444446;
+}
+.green-complementarybrush-ligth {	
+	background: #CACACA;
+}
+
+article table
+{
+    table-layout: auto;
+}
+</style>
+
 # Green Theme
 
 The official Q1 2016 release of __UI for WPF__ brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
@@ -44,6 +155,8 @@ There are two palettes of colors which can be easily set by choosing one of the 
 		Light
 	}
 {{endregion}}
+
+>The Dark variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
 
 The next screenshot displays RadCalendar in its Light and Dark color variations:  
 

@@ -14,6 +14,76 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+## What's Different in 2018 R3
+
+### Changed
+
+The method __DocumentPosition.GetCurrentPositionInSpan()__ is deprecated. 
+
+### What to do now
+
+You can use the __DocumentPosition.GetIndexInCurrentSpanBox()__ method instead.
+
+### Changed
+
+The method __DocumentPosition.IsAtCellEnd()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtTableCellEnd** instance property instead.
+
+
+### Changed
+
+The method __DocumentPosition.IsAtCellStart()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtTableCellStart** instance property instead.
+
+
+### Changed
+
+The method __DocumentPosition.IsAtDocumentEnd()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtDocumentEnd** instance property instead.
+
+
+### Changed
+
+The method __DocumentPosition.IsAtDocumentStart()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtDocumentStart** instance property instead.
+
+
+### Changed
+
+The method __DocumentPosition.IsAtParagraphEnd()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtParagraphEnd** instance property instead.
+
+### Changed
+
+The method __DocumentPosition.IsAtParagraphStart()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtParagraphStart** instance property instead.
+
+### Changed
+
+The method __DocumentPosition.IsAtRowStart()__ is deprecated. 
+
+### What to do now
+
+Use the **IsPositionAtTableRowStart** instance property instead.
+
 
 ## What's Different in 2015 Q2
 

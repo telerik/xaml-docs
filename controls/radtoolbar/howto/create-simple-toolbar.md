@@ -20,7 +20,6 @@ Code:
 #### __XAML__
 
 {{region radtoolbar-create-simple-toolbar_0}}
-	xmlns:telerik=&quot;http://schemas.telerik.com/2008/xaml/presentation&quot;
 	<telerik:RadToolBar>
 		<Button>
 			<Image Source="/Images/ToolBar/Open.png" />

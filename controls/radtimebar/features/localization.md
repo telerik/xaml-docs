@@ -10,10 +10,6 @@ position: 1
 
 # Localization
 
-
-
-## 
-
 The built-in localization mechanism in Silverlight and WPF (which is available since __Q2 2011__) allows you to localize any string resource used by the standard __RadTimeBar__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything.
 
 

@@ -8,6 +8,20 @@ published: True
 position: 3
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+article table
+{
+    table-layout: auto;
+}
+</style>
+
 # VisualStudio2013 Theme
 
 The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.        
@@ -37,6 +51,8 @@ You can switch the three color palettes by calling the __LoadPreset__ method as 
 	//dark color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); 
 {{endregion}}
+
+>The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
 
 ## VisualStudio2013 Palette brushes and colors
 

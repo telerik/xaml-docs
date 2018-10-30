@@ -19,6 +19,7 @@ This article describes the selection API exposed by __RadTreeView__. The control
 * [Events](#events)
 * [Using the SelectedItem, SelectedValue and SelectedValuePath properties](#using-the-selecteditem-selectedvalue-and-selectedvaluepath-properties)
 * [Binding the IsSelected property](#binding-the-isselected-property)
+* [Binding the IsSelectable property](#binding-the-isselectable-property)
 
 ## Manual item selection
 
@@ -39,7 +40,7 @@ You can select a __RadTreeViewItem__ by setting its __IsSelected__ to True.
 	radTreeViewItem.IsSelected = True
 {{endregion}}
 
->Note that the code snippets above cover a scenario when the __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#Binding_the_IsSelected_Property) section at the end of this topic.
+>Note that the code snippets above cover a scenario when the __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#binding-the-isselected-property) section at the end of this topic.
 
 ## Selecting an Item by Using the SelectedItems Collection
 
@@ -276,8 +277,10 @@ Imagine that you have a business object named __MyViewModel__, with three member
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
+
 #### __[XAML] Example 11: Setting SelectedValuePath__ 
-{{region radtreeview-feautres-treeviewitem-selection_18}}
+
+{{region xaml-radtreeview-feautres-treeviewitem-selection_18}}
 	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
 	    <telerik:RadTreeView.ItemTemplate>
 	        <HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}">
@@ -286,6 +289,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 	    </telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
 {{endregion}}
+
 {% endif %}
 
 When you select a __MyViewModel.Title__ from the __RadTreeView__, the __SelectedItem__ property returns the	 __MyViewModel__ data item that corresponds to the selected __Title__. However, because the __SelectedValuePath__ of this __RadTreeView__ is set to the __MyViewModel__'s __Price__ property, the __SelectedValue__ will return the __Price__ property of the __MyViewModel__ business object (e.g. 101.56$).		
@@ -306,6 +310,20 @@ Let's use the following example. There is a business object that defines a boole
 {{endregion}}
 
 If you remove the x:Key setting of the style, it will become an implicit style. This means that it will be applied globally to all RadTreeViewItems in the scope where the style is defined. In this case you will also need to remove the ItemContainerStyle setting.
+
+## Binding the IsSelectable property
+
+__RadTreeViewItem__ provides the option to control whether the item can be selected through the UI or not. This is done through its __IsSelectable__ property. Similarly to the previous example, the __IsSelectable__ property can be set through a Style targeting RadTreeViewItem. 
+
+{{region radtreeview-feautres-treeviewitem-selection_18}}
+	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
+	    <Setter Property="IsSelectable" Value="{Binding IsSelectable}"/>
+	</Style>
+	<!-- -->
+	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
+{{endregion}}
+
+> The __IsSelectable__ property is available since the __R3 2018__ version.
 		
 ## See Also  
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

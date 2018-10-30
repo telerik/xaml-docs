@@ -12,41 +12,45 @@ position: 3
 
 This tutorial will walk you through the creation of a sample application that contains __RadGridView__ bound to __RadEntityFrameworkDataSource__.
 
-You can check the latest changes [here]({%slug entityframework-changes%}).
+* [Creating the WPF Application](#creating-the-wpf-application)
+* [Creating the Model](#creating-the-model)
+* [Adding RadGridView and RadEntityFrameworkDataSource](#adding-radgridview-and-radentityframeworkdatasource)
 
 As of version __2013 Q3 SP1__ we have added support for __EntityFramework 6.0__. You will need to reference the __Telerik.Windows.Controls.EntityFramework60__ assembly, rather than the __Telerik.Windows.Controls.EntityFramework__ one in order for this to work.
 
-## Creating the WPF application
+## Creating the WPF Application
 
-1. Note that __RadEntityFrameworkDataSource__ is built on top of the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx). Basic Entity Framework experience is required for working with __RadEntityFrameworkDataSource__.
+1. Note that __RadEntityFrameworkDataSource__ is built on top of the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/ef/ef6/). Basic Entity Framework experience is required for working with __RadEntityFrameworkDataSource__.
 
-2. Start Visual Studio 2010 and create a new WPF Application.
+2. Start Visual Studio and create a new WPF Application.
 
 ## Creating the Model
 
-Now that we have the application, we will add our entity model using the Northwind database. 
+Now that we have the application, we will add our entity model using the AdventureWorks database. 
 
-1. In the project add a new __ADO.NET Entity Data Model__.
+1. In the project add a new __ADO.NET Entity Data Model__. You need to make sure that **Data** is selected from the left menu.
 ![Rad Entity Framework Getting Started 1](images/RadEntityFramework_Getting_Started1.png)
 
-2. Choose the data connection (for example the __Northwind__ database).
+2. Choose to create a model using the code first approach from an existing database.
 ![Rad Entity Framework Getting Started 2](images/RadEntityFramework_Getting_Started2.png)
 
-3. Generate the entities from the __Orders__ table of the __Northwind__ database.
+3. Choose the data connection (for example the __AdventureWorks__ database). In order to learn how to add the AdventureWorks database, check out the [AdventureWorks Readme](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) article.
 
-4. Click __Finish__ and __rebuild the solution__.
+4. Generate the entities from all of the tables in the __AdventureWorks__ database.
+
+5. Click __Finish__ and __rebuild the solution__.
 
 ## Adding RadGridView and RadEntityFrameworkDataSource
 
 Now let's go to the client side.
 
-1. __Add References__ to the following __Telerik__ assemblies:
+**1.** Add References to the following __Telerik__ assemblies:
 
 * __Telerik.Windows.Controls__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
 
-* __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
-
 * __Telerik.Windows.Controls.EntityFramework__ (mandatory for __RadEntityFrameworkDataSource__ with EF **5.0** or previous)
+
+	or
 
 * __Telerik.Windows.Controls.EntityFramework60__ (mandatory for __RadEntityFrameworkDataSource__ with EF **6.0** or later)
 
@@ -54,29 +58,34 @@ Now let's go to the client side.
 
 * __Telerik.Windows.Controls.Input__ (mandatory for __RadGridView__)
 
-2. Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the user window. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below.
+* __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
 
-#### __XAML__
+**2.** Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the main window. **Example 1** demonstrates how you can do that.
 
-{{region entityframework-getting-started.aml_1}}
+#### __[XAML] Example 1: Adding RadGridView and RadEntityFrameworkDataSource__
 
-	<Window x:Class="EntityFramework_Example.MainWindow"
-	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	        xmlns:local="clr-namespace:EntityFramework_Example"
-	        Title="MainWindow" Height="350" Width="525">
-	    <Grid>
-	        <telerik:RadEntityFrameworkDataSource Name="OrdersEntityFrameworkDataSource" QueryName="Orders">
-	            <telerik:RadEntityFrameworkDataSource.ObjectContext>
-	                <local:MyNorthwindEntities/>
-	            </telerik:RadEntityFrameworkDataSource.ObjectContext>
-	        </telerik:RadEntityFrameworkDataSource>
-	        <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=OrdersEntityFrameworkDataSource}"/>
-	    </Grid>
+{{region xaml-entityframework-getting-started-1}}
+	<Window x:Class="EntityFrameworkGettingStarted.MainWindow"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:local="clr-namespace:EntityFrameworkGettingStarted"
+			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			mc:Ignorable="d"
+			Title="MainWindow" Height="450" Width="800">
+		<Grid>
+			<telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
+				<telerik:RadEntityFrameworkDataSource.DbContext>
+					<local:MyEntityModel/>
+				</telerik:RadEntityFrameworkDataSource.DbContext>
+			</telerik:RadEntityFrameworkDataSource>
+			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkDataSource}"/>
+		</Grid>
 	</Window>
-	
 {{endregion}}
+
+>importantSince __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**. If you are using an older version of Entity Framework, you can set the **RadEntityFrameworkDataSource.ObjectContext** property.
 
 Several important things to notice:
 
@@ -84,14 +93,10 @@ Several important things to notice:
 
 * The __QueryName__ points to the query of the data source.
 
-* __ObjectContext__ - points to the context that has been created.
+* __DbContext__ - points to the context that has been created.
 
 * __DataView__ - the data that comes from the query is stored in the __DataView__ property, so we bind the __RadGridView__ to it.
 
-* Click __Ctrl + F5__ to run the application and see the gridview populated with the data from the __Orders__ table.
+## See also
 
-## RadEntityFrameworkDataSource.DbContext property.
-
-Since __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**.
-
->Please note that this property is available for __Entity Framework 5.0__ and __Entity Framework 6.0__ projects targeting __.NET Framework 4.5__ only.
+* [Create a simple data application with WPF and Entity Framework 6](https://docs.microsoft.com/en-us/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6)

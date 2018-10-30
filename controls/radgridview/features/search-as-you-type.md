@@ -81,7 +81,7 @@ When __IsSearchingDeferred__ is set to __True__, the filtering will be executed 
 
 ## Commands
 
-Two new commands have been exposed for the text search functionality. 
+Three new commands have been exposed for the text search functionality. 
 
 - __Search__: Executed in order to show the search panel.
 

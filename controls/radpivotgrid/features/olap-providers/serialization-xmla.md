@@ -10,6 +10,8 @@ position: 3
 
 # Serialize XmlaDataProvider
 
+> The implementation demonstrated in this article can also be reviewed in the [Serialize XmlaDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/XmlaProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
+
 In this article we will show you how to serialize and deserialize XmlaDataProvider and all of its settings. You can use this feature to save the current state of the provider and load it next time the application is started.      
 
 ## Serialize XmlaDataProvider with DataContractSerializer

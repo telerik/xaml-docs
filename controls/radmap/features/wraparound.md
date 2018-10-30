@@ -14,8 +14,8 @@ The WrapAround feature provides infinite horizontal panning to the __RadMap__ co
 
 The feature is not enabled by default. To turn it on you can set the __WrapAround__ property of the RadMap to __True__.
 
-#### __Example 1: Setting the WrapAround property__
-{{region radmap-features-wraparound-01}}
+#### __[XAML] Example 1: Setting the WrapAround property__
+{{region xaml-radmap-features-wraparound-01}}
 	<telerik:RadMap WrapAround="True">
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider />

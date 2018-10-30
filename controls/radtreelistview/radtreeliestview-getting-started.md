@@ -348,7 +348,6 @@ __Figure 1: RadTreeListView bound to collection of WarehouseItems__
 In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__ and set its __ItemsSource__ property to the respective member of the business object. Then you need to set the table definition to the __ChildTableDefinition__ property of __RadTreeListView__. 
 
 >In the context of __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but instead use the __TreeListViewTableDefinition__ class because it exposes an __ItemSource__ property that should be bound to the property that represents the next level of hierarchy. This property should have the same name at each level of the hierarchy.
-<Comment: Please verify that the changes I made to the previous sentences did not create a technical error.>
 
 #### __[XAML] Example 7: Define a ChildTableDefinition for RadTreeListView__
 

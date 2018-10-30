@@ -109,6 +109,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	        this.dictionary["PivotFieldList_TopTenFilter"] = "Top 10 Filter";
 	        this.dictionary["PivotFieldList_ClearFilter"] = "Clear Filter";
 	        this.dictionary["PivotFieldList_ShowEmptyGroups"] = "Show Empty Groups";
+			this.dictionary["PivotFieldList_ShowSubTotals "] = "Show Subtotals";
 	        this.dictionary["PivotFieldList_SelectItems"] = "Select Items";
 	        this.dictionary["PivotFieldList_MoreAggregateOptions"] = "More Aggregate Options...";
 	        this.dictionary["PivotFieldList_MoreCalculationOptions"] = "More Calculation Options...";
@@ -276,6 +277,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 			Me.dictionary("PivotFieldList_TopTenFilter") = "Top 10 Filter"
 			Me.dictionary("PivotFieldList_ClearFilter") = "Clear Filter"
 			Me.dictionary("PivotFieldList_ShowEmptyGroups") = "Show Empty Groups"
+			Me.dictionary("PivotFieldList_ShowSubTotals ") = "Show Subtotals"
 			Me.dictionary("PivotFieldList_SelectItems") = "Select Items"
 			Me.dictionary("PivotFieldList_MoreAggregateOptions") = "More Aggregate Options..."
 			Me.dictionary("PivotFieldList_MoreCalculationOptions") = "More Calculation Options..."
@@ -473,6 +475,7 @@ PivotFieldList_SetPercentOfGrandTotalFormat	|	% of Grand Total	|	Used in the dro
 PivotFieldList_SetSumAggregate	|	Sum	|	Used in the drop-down button inside Values filter box of RadPivotFieldList. When this option is selected, Sum aggregate function will be applied to the values inside RadPivotGrid.
 PivotFieldList_Show	|	Show	|	Used in the Top 10 Filter dialog of RadPivotFieldList. It marks the area where users can select different options for the filter.
 PivotFieldList_ShowEmptyGroups	|	Show Empty Groups	|	Used in the drop-down button inside Rows and Columns boxes of RadPivotFieldList. When this option is selected, the empty groups will be shown in RadPivotGrid.
+PivotFieldList_ShowSubTotals 	|	Show Subtotals	|	Used in the drop-down button inside Rows and Columns boxes of RadPivotFieldList. When this option is selected, the subtotals will be shown in RadPivotGrid.
 PivotFieldList_ShowItemsForWhich	|	Show items for which	|	Used in Values filter dialog of RadPivotFieldList. It marks the area where users can select different options for the filter.
 PivotFieldList_ShowItemsForWhichTheLabel	|	Show items for which the label	|	Used in Label filter dialog of RadPivotFieldList. It marks the area where users can select different options for the filter.
 PivotFieldList_ShowValuesAs	|	Show Values As	|	Used in calculation dialog of RadPivotFieldList. It marks the area where users can select which calculation function to apply.

@@ -11,28 +11,32 @@ position: 0
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
-
 ![radtreemapandpivotmap sl](images/radtreemapandpivotmap_sl.png)
-
 {% endif %}
 {% if site.site_name == 'WPF' %}
-
 ![radtreemapandpivotmap wpf](images/radtreemapandpivotmap_wpf.png)
 {% endif %}
 
-Thank you for choosing Telerik __RadTreeMap__!
-
 __RadTreeMap__ and __RadPivotMap__ are data visualization controls used to display hierarchical data as a set of nested rectangles. Each rectangle has an area proportional to a specified dimension on the data. Both controls are useful in scenarios where a lot of items have to be compared in a limited space. When the color and size dimensions are correlated in some way with the tree structure, you can easily see patterns that would be difficult to spot in other ways.
 
-__RadTreeMap__ control can be bound to collections hence the data has to be converted into a tree. __RadPivotMap__ can be bound to a flat data where the control automatically groups the data to be visualized.
-
-> In order to use __RadTreeMap__ control in your projects you have to add references to __Telerik.Windows.Controls.dll, Telerik.Windows.Controls.DataVisualization.dll__ and __Telerik.Windows.Data.dll.__
-
-The Layout Orientation (Vertical or Horizontal) will be chosen automatically - by calculating the available space for the given data. When Horizontal Orientation is applied - the child tiles are going to be stacked horizontally. Respectively Vertical Orientation will make the child tiles to be stacked vertically.
-
-Currently you can choose between two tiling algorithms to visualize the data:
-* *Squarified*
-* *Slice and Dice*
-
-The default one is *Slice and Dice*.         
 ![](images/radtreemap_overview.png)
+
+## Key Features
+
+* __Different tiling algorithms__: The controls support two tiling algorithms to visualize the data - __Squarified__ and __Slice and Dice__. The default one is Slice and Dice. Read more about this in the [Layout Strategies]({%slug radtreemap-layout-strategies%}) article.
+
+* __Colorizers__: The colorizers allow you to choose different color for the different tiles in the control. Read more about this in the [Colorizers]({%slug radtreemap-colorizers%}) article.
+
+* __Selection__: The controls support selection functionality that allows you to highlight items upon click or setting a property. Read more about this in the [Selection]({%slug radtreemap-selection%}) article.
+
+* __Data binding support__: The RadTreeMap control can be bound to a hierarchical collection which will be visualized in a tree-like layout. The RadPivotMap can be bound to a flat data where the control automatically groups the data to be visualized. Read more about this in the [Populating with Data RadTreeMap]({%slug radtreemap-populating-with-data-radtreemap%}) and [Populating with Data RadPivotMap]({%slug radtreemap-populating-with-data-radpivotmap%}) articles.
+
+* __Automatic items ordering__: The layout orientation (vertical or horizontal) will be chosen automatically - by calculating the available space for the given data. When horizontal orientation is applied - the child tiles are going to be stacked horizontally. Respectively vertical orientation will make the child tiles to be stacked vertically.
+
+>tip Get started with the control with its [Getting Started]({%slug radtreemap-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Treemap/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+
+## See Also  
+* [Mappings]({%slug radtreemap-mappings%})
+* [Developer Focused Examples]({%slug radtreemap-sdk-examples%})

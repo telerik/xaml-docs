@@ -5,7 +5,7 @@ description: Group Filtering
 slug: radpivotgrid-features-queryable-group-filtering
 tags: group,filtering
 published: True
-position: 0
+position: 9
 site_name: WPF
 ---
 

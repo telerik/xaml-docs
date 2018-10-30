@@ -10,6 +10,8 @@ position: 5
 
 # External Row Details
 
+> The External RowDetails functionality is available only if the __SelectionUnit__ is __FullRow__ or __Mixed__. For the __Mixed SelectionUnit__ the selection has to be applied through the __row indicator__.
+
 In order to display Row Details outside of the __RadGridView__, place a __DetailsPresenter__ control somewhere around your __RadGridView__. The only thing that you need to do in order to synchronize the __DetailsPresenter__ with the __RadGridView__ is to connect its __DetailsProvider__ property to the __RowDetailsProvider__ property of the __RadGridView__. 
 
 >tipThe __DetailsPresenter__ control used for displaying external details is exactly the same control internally used by the __RadGridView__ rows. 
@@ -18,7 +20,7 @@ The __RowDetailsProvider__ takes care to passing the needed data (the data templ
 
 Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid view to __Collapsed__ in order to prevent the row details to show both inside and outside the __RadGridView__.
 
-#### __XAML__
+#### __[XAML] Example 1: Setting the RowDetailsVisibilityMode to Collapsed__
 
 {{region xaml-radgridview-row-details-external-row-details_0}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -40,19 +42,19 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 
 
 
-#### __C#__
+#### __[C#] Example 2: Setting the DetailsProvider__
 
 {{region cs-radgridview-row-details-external-row-details_1}}
 	this.ExternalPresenter.DetailsProvider = this.radGridView.RowDetailsProvider;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Setting the DetailsProvider__
 
 {{region vb-radgridview-row-details-external-row-details_2}}
 	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
 {{endregion}}
 
-![](images/RadGridView_RowDetails_5.png)
+![Setting the DetailsProvider](images/RadGridView_RowDetails_5.png)
 
 >You can see that the __RowDetailsTemplate__ must be defined in the __RadGridView__ as it is passed by the __RowDetailsProvider__ to both the internal and the external presenter. The same applies for the __RowDetailsStyle__.
 

@@ -16,8 +16,9 @@ Since the official __Q1 2014__ release all series exposed by the __RadCartesianC
 
 In order to enable a smart label strategy in a __RadCartesianChart__ you can utilize the __ChartSmartLabelsStrategy__.
 
-#### XAML
-{{region radchartview-smart-labels}}
+#### __XAML__
+
+{{region xaml-radchartview-smart-labels}}
      <telerik:RadCartesianChart.SmartLabelsStrategy>
           <telerik:ChartSmartLabelsStrategy />
       </telerik:RadCartesianChart.SmartLabelsStrategy>
@@ -34,9 +35,10 @@ You can find this feature demonstrated in our {% if site.site_name == 'Silverlig
 ## Using Smart Labels in RadPieChart
 
 In order to enable a smart label strategy in a __RadPieChart__ you can utilize the __PieChartSmartLabelsStrategy__.
-#### XAML
 
-{{region radchartview-smart-labels-2}}
+#### __XAML__
+
+{{region xaml-radchartview-smart-labels-2}}
     <telerik:RadPieChart.SmartLabelsStrategy>
       <telerik:PieChartSmartLabelsStrategy/>
     </telerik:RadPieChart.SmartLabelsStrategy>

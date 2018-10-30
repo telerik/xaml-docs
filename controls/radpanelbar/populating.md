@@ -10,50 +10,38 @@ position: 2
 
 # Getting Started
 
-This article will show you how to create a simple PanelBar.
+This tutorial will walk you through the creation of a sample application that contains __RadPanelBar__. 
 
-## Getting Started with RadPanelBar
+* [Assembly References](#assembly-references)
+* [Adding RadPanelBar to the Project](#adding-radpanelbar-to-the-project)
+* [Declaratively populating the RadPanelBar control Items collection](#declaratively-populating-the-radpanelbar-control-items-collection)
+* [Databinding the RadPanelBar control](#databinding-the-radpanelbar-control)
+
+## Assembly References
+
+In order to use __RadPanelBar__ control in your projects you have to add references to the following assemblies:
 
 {% if site.site_name == 'WPF' %}
->In order to use __RadPanelBar__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Navigation__
->	- __Telerik.Windows.Data__  
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Data__
+
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
->In order to use __RadPanelBar__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Navigation__  
 
->You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+
 {% endif %}
 
-1. Drag and Drop the __PanelBar__ control from the toolbox.
-	{% if site.site_name == 'Silverlight' %}
-	![](images/RadPanel1.gif)
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-	![](images/RadPanel2.gif)
-	{% endif %}
+## Adding RadPanelBar to the Project
 
-1. After you have dropped the control onto the XAML you can manage the control by setting various properties to operate the control's behavior:			
+**Example 1** demonstrates how you can add a RadPanelBar in xaml.
 
-	#### __XAML__
-	{{region xaml-radpanelbar-populating_0}}
-		<telerik:RadPanelBar VerticalAlignment="Center" ExpandMode="Single" />
-	{{endregion}}
-
-## Populating the RadPanelBar with Items
-
-### Declaratively populating the RadPanelBar control Items collection	  
-
-You can add __RadPanelBarItems__ directly to the __RadPanelBar.Items__ collection in XAML:			
-
-#### __XAML__
-{{region xaml-radpanelbar-populating_1}}
+#### __[XAML] Example 1: RadPanelBar with statically declared items in xaml__
+{{region xaml-radpanelbar-populating_0}}
 	<telerik:RadPanelBar>
 	    <telerik:RadPanelBarItem Header="Item 1" />
 	    <telerik:RadPanelBarItem Header="Item 2" />
@@ -61,9 +49,14 @@ You can add __RadPanelBarItems__ directly to the __RadPanelBar.Items__ collectio
 	</telerik:RadPanelBar>
 {{endregion}}
 
-Or you can populate the items collection from code-behind:			
+#### __Figure 1: Result from Example 1 in Office2016 Theme__
+![RadPanelBar Getting Started](images/panelbar_getting_started.png)
 
-#### __C#__
+## Declaratively Populating the Items Collection of the RadPanelBar Control
+
+**Example 2** demonstrates how you can add __RadPanelBarItems__ directly to the __Items__ collection of the RadPanelBar in code behind:			
+
+#### __[C#] Example 2: Adding RadPanelBarItems in code__
 {{region cs-radpanelbar-populating_2}}
 	RadPanelBar myPanelBar = new RadPanelBar();
 	RadPanelBarItem item1 = new RadPanelBarItem() { Header = "Item 1" };
@@ -74,7 +67,7 @@ Or you can populate the items collection from code-behind:
 	myPanelBar.Items.Add(item3);
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Adding RadPanelBarItems in code__
 {{region vb-radpanelbar-populating_3}}
 	Dim myPanelBar As New RadPanelBar()
 	Dim item1 As New RadPanelBarItem() With {
@@ -91,26 +84,10 @@ Or you can populate the items collection from code-behind:
 	myPanelBar.Items.Add(item3)
 {{endregion}}
 
-### Databinding the RadPanelBar control		  
+## Databinding the RadPanelBar Control		  
 
-The alternative to populating a __RadPanelBar__ by explicitly declaring its items, is data binding the control to a collection of objects. Here is an example of binding a __RadPanelBar__ to a list of strings:			
+**RadPanelBar** can be also be bound to a collection of objects. You can learn more about this in the [Bind to Object Data]({%slug radpanelbar-object-data%}) article in our documentation.
 
-#### __C#__
-{{region cs-radpanelbar-populating_4}}
-	List<string> myListDataSource = new List<string>();
-	myListDataSource.Add("Item 1");
-	myListDataSource.Add("Item 2");
-	myListDataSource.Add("Item 3");
-	RadPanelBar myPanel = new RadPanelBar();
-	myPanel.ItemsSource = myListDataSource;
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-radpanelbar-populating_5}}
-	Dim myListDataSource As New List(Of String)()
-	myListDataSource.Add("Item 1")
-	myListDataSource.Add("Item 2")
-	myListDataSource.Add("Item 3")
-	Dim myPanel As New RadPanelBar()
-	myPanel.ItemsSource = myListDataSource
-{{endregion}}
+## See Also
+* [Events]({%slug radpanelbar-events-overview%})
+* [How to Display Hierarchical Data]({%slug howto-display-hierarchical-data%})

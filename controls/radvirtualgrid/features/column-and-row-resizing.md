@@ -35,9 +35,9 @@ __RadVirtualGrid__ supports setting the width of a given column to be as large a
 
 A possible way to ensure that the visual elements of __RadVirtualGrid__ are already generated, is to handle the __Loaded__ event of the control. 
 
-#### __Example 1: Invoking the FitColumnWidthToContent method__
+#### __[C#] Example 1: Invoking the FitColumnWidthToContent method__
 
-{{region radvirtualgrid-features-column-and-row-resizing_0}}
+{{region cs-radvirtualgrid-features-column-and-row-resizing_0}}
 	private void VirtualGrid_Loaded(object sender, RoutedEventArgs e)
         {
             this.VirtualGrid.FitColumnWidthToContent(1);

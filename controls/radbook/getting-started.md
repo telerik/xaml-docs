@@ -24,7 +24,7 @@ In order to use the __RadBook__ control in your projects you have to add referen
 {% if site.site_name == 'WPF' %}
 >You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
-{% if site.site_name == Silverlight' %}
+{% if site.site_name == 'Silverlight' %}
 >You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
 {% endif %}
 

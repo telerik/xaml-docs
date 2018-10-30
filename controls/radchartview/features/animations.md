@@ -12,7 +12,7 @@ position: 1
 
 With the __R2 2018__ version of our controls, you can now animate RadChartView series and their points. The series and the points can be animated using either built-in or custom animation effects. To animate the series or the points first you need to set the __SeriesAnimation__ and/or __PointAnimation__ property with your animation. Depending on which element you want to animate (Series,Points or Both) you can call the __PlaySeriesAnimation()__ and __PlayPointAnimations()__ methods. 
 
-* [Animations Type](#animations-type)
+* [Animation Types](#animations-type)
 	* [Animation Base Class](#animation-base-class)
 	* [Move Animation](#move-animation)
 	* [Reveal Animation](#reveal-animation)
@@ -28,7 +28,7 @@ With the __R2 2018__ version of our controls, you can now animate RadChartView s
 #### __Figure 1: Chart Animations__
 ![](images/radchartview-features-animations-main-animations.gif)
 
-## Animations Type
+## Animation Types
 
 There are several different built-in animations which can be used to animate the chart series and their points. Each animation allows you to apply duration, delay and an easing function to its animated effect. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in WPF and you are allowed to create custom ones, too.
 
@@ -175,8 +175,8 @@ The __ChartFadeAnimation__ fades in the series and their points. The fade effect
 The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The difference here is that this animation add additional fade in effect.
 
 #### __[XAML] Example 4: Setting drop and fade animation in XAML__
-{{region radchartview-features-animations-2}}
-	<telerik:RadCartesianChart Palette="Windows8">
+{{region radchartview-features-animations-3}}
+	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
 		</telerik:RadCartesianChart.HorizontalAxis>
@@ -184,8 +184,8 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 			<telerik:LinearAxis />
 		</telerik:RadCartesianChart.VerticalAxis>
 		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries CombineMode="Stack">
-				<telerik:BarSeries.DataPoints>
+			<telerik:AreaSeries CombineMode="Stack">
+				<telerik:AreaSeries.DataPoints>
 					<telerik:CategoricalDataPoint Category="January" Value="6" />
 					<telerik:CategoricalDataPoint Category="February" Value="8" />
 					<telerik:CategoricalDataPoint Category="March" Value="7" />
@@ -193,17 +193,13 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 					<telerik:CategoricalDataPoint Category="May" Value="2" />
 					<telerik:CategoricalDataPoint Category="June" Value="5" />
 					<telerik:CategoricalDataPoint Category="July" Value="8" />
-				</telerik:BarSeries.DataPoints>
-				<telerik:BarSeries.PointAnimation>
-					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:0.500" Delay="0:0:0.100" >
-						<telerik:ChartDropFadeAnimation.Easing>
-							<BounceEase  EasingMode="EaseOut"/>
-						</telerik:ChartDropFadeAnimation.Easing>
-					</telerik:ChartDropFadeAnimation>                        
-				</telerik:BarSeries.PointAnimation>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="Stack">
-				<telerik:BarSeries.DataPoints>
+				</telerik:AreaSeries.DataPoints>
+				<telerik:AreaSeries.SeriesAnimation>
+					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:1.500" Delay="0:0:0.200"/>       
+				</telerik:AreaSeries.SeriesAnimation>
+			</telerik:AreaSeries>
+			<telerik:AreaSeries CombineMode="Stack">
+				<telerik:AreaSeries.DataPoints>
 					<telerik:CategoricalDataPoint Category="January" Value="2" />
 					<telerik:CategoricalDataPoint Category="February" Value="5" />
 					<telerik:CategoricalDataPoint Category="March" Value="3" />
@@ -211,17 +207,13 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 					<telerik:CategoricalDataPoint Category="May" Value="9" />
 					<telerik:CategoricalDataPoint Category="June" Value="7" />
 					<telerik:CategoricalDataPoint Category="July" Value="1" />
-				</telerik:BarSeries.DataPoints>
-				<telerik:BarSeries.PointAnimation>
-					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:0.500" Delay="0:0:0.100">
-						<telerik:ChartDropFadeAnimation.Easing>
-							<BounceEase  EasingMode="EaseOut"/>
-						</telerik:ChartDropFadeAnimation.Easing>
-					</telerik:ChartDropFadeAnimation>
-				</telerik:BarSeries.PointAnimation>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="Stack">
-				<telerik:BarSeries.DataPoints>
+				</telerik:AreaSeries.DataPoints>
+				<telerik:AreaSeries.SeriesAnimation>
+					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:1.500" Delay="0:0:0.200"/>
+				</telerik:AreaSeries.SeriesAnimation>
+			</telerik:AreaSeries>
+			<telerik:AreaSeries CombineMode="Stack">
+				<telerik:AreaSeries.DataPoints>
 					<telerik:CategoricalDataPoint Category="January" Value="8" />
 					<telerik:CategoricalDataPoint Category="February" Value="12" />
 					<telerik:CategoricalDataPoint Category="March" Value="19" />
@@ -229,15 +221,11 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 					<telerik:CategoricalDataPoint Category="May" Value="7" />
 					<telerik:CategoricalDataPoint Category="June" Value="14" />
 					<telerik:CategoricalDataPoint Category="July" Value="7" />
-				</telerik:BarSeries.DataPoints>
-				<telerik:BarSeries.PointAnimation>
-					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:0.500" Delay="0:0:0.100" >
-						<telerik:ChartDropFadeAnimation.Easing>
-							<BounceEase  EasingMode="EaseOut"/>
-						</telerik:ChartDropFadeAnimation.Easing>
-					</telerik:ChartDropFadeAnimation>
-				</telerik:BarSeries.PointAnimation>
-			</telerik:BarSeries>
+				</telerik:AreaSeries.DataPoints>
+				<telerik:AreaSeries.SeriesAnimation>
+					<telerik:ChartDropFadeAnimation MoveAnimationType="Top" Duration="0:0:1.500" Delay="0:0:0.200" />
+				</telerik:AreaSeries.SeriesAnimation>
+			</telerik:AreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
 {{endregion}}
@@ -247,18 +235,18 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 
 ### Scale Animation
 
-The __ChartScaleAnimation__ animates the size of the series and their points. You can customize this animation by setting the starting point of the animation and the scale range.
+The __ChartScaleAnimation__ animates the size of the series and their points. You can customize this animation by setting the starting point of the animation and the scale mode.
 
 * __MinScale:__ A property of type __double__ that gets or sets the initial scale of the animation.
 * __MaxScale:__ A property of type __double__ that gets or sets the final scale of the animation.
-* __RenderTransformOrigin:__ A property of type __Point__ that gets or sets the starting point of the scaling. Default value is Point(0.05,0.05).
+* __RenderTransformOrigin:__ A property of type __Point__ that gets or sets the starting point of the scaling. Default value is Point(0.5,0.5).
 * __ScaleMode:__ A property of type __ScaleMode__ that gets or sets the orientation of the animation. The scale mode property is an enumeration and it allows the following values:
 	* __Horizontal:__ Default value. When set the scaling is performed horizontally.
-	* __Vertical:__ When set the scaling is performed horizontally.
+	* __Vertical:__ When set the scaling is performed vertically.
 	* __Both:__ When set the scaling is performed in both directions.
 
 #### __[XAML] Example 5: Setting scale animation in XAML__
-{{region radchartview-features-animations-3}}
+{{region radchartview-features-animations-4}}
 	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -324,7 +312,7 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 * __InitialSweepAngle:__ A property of type __double__ that gets or sets the initial value of the sweep angle. Default value is __0__.
 
 #### __[XAML] Example 6: Setting pie chart angle range animation in XAML__
-{{region radchartview-features-animations-3}}
+{{region radchartview-features-animations-5}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>
@@ -351,7 +339,7 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of the PieSeries. The animation stars from 0 to the value of the __RadiusFactor__ property.
 
 #### __[XAML] Example 7: Setting pie chart radius factor animation in XAML__
-{{region radchartview-features-animations-3}}
+{{region radchartview-features-animations-6}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>
@@ -378,7 +366,7 @@ The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of 
 All built-in animation of the chart derives from __ChartAnimationBase__. In order to create a custom animation, you need to define a custom class which derives from this base class. This class provides __BuildPointAnimation()__ and __BuildSeriesAnimation()__ methods which can be overridden so you can create your own animation. __Example 2__ demonstrate custom point animation.
 
 #### __[C#] Example 8: Custom point animation__
-{{region radchartview-features-animations-1}}
+{{region radchartview-features-animations-7}}
 	public class CustomAnimation : ChartAnimationBase
     {
         protected override RadAnimation BuildPointAnimation(FrameworkElement visual, DataPoint point, RadRect plotAreaClip)
@@ -400,12 +388,44 @@ All built-in animation of the chart derives from __ChartAnimationBase__. In orde
     }
 {{endregion}}
 
+#### __[XAML] Example 8: Setting custom animation in XAML__
+{{region radchartview-features-animations-8}}
+	<telerik:RadCartesianChart  x:Name="chart" Palette="Windows8" >
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis />
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.Series>                
+			<telerik:BubbleSeries PaletteMode="DataPoint">
+				<telerik:BubbleSeries.DataPoints>
+					<telerik:BubbleDataPoint Category="January" Value="2" BubbleSize="83" />
+					<telerik:BubbleDataPoint Category="February" Value="5" BubbleSize="75" />
+					<telerik:BubbleDataPoint Category="March" Value="3" BubbleSize="65"/>
+					<telerik:BubbleDataPoint Category="April" Value="6" BubbleSize="30"/>
+					<telerik:BubbleDataPoint Category="May" Value="9" BubbleSize="45"/>
+					<telerik:BubbleDataPoint Category="June" Value="7" BubbleSize="89"/>
+					<telerik:BubbleDataPoint Category="July" Value="1" BubbleSize="35" />
+				</telerik:BubbleSeries.DataPoints>
+				<telerik:BubbleSeries.PointAnimation>
+					<local:CustomAnimation Delay="0:0:0.125" Duration="0:0:1.55">
+						<local:CustomAnimation.Easing>
+							<BounceEase EasingMode="EaseOut" Bounces="20" Bounciness="5" />
+						</local:CustomAnimation.Easing>
+					</local:CustomAnimation>
+				</telerik:BubbleSeries.PointAnimation>
+			</telerik:BubbleSeries>                     
+		</telerik:RadCartesianChart.Series>
+	</telerik:RadCartesianChart>
+{{endregion}}
+
 #### __Figure 9: This custom animation look as follows__
 ![](images/radchartview-features-animations-custom-animation.gif)
 
 ## Events
 
-This section covers the events expose for the animation.
+This section covers the events exposed for the animation.
 * __PointAnimationsCompleted:__ This event is fired when the animation for all datapoints of the series is completed.
 * __SeriesAnimationCompleted:__ This event is fired when the animation of the series is completed.
 

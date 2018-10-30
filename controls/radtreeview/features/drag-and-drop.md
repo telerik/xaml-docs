@@ -425,8 +425,9 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 
 Note that the __TargetDropItem__ property may be null if the drop is in an empty treeview. That's why when you use that property it always has to be checked:
 
-#### C#
-{{region radtreeview-features-drag-and-drop_33}}
+#### __C#__
+
+{{region cs-radtreeview-features-drag-and-drop_33}}
 	private void radTreeView_DragEnded(object sender, RadTreeViewDragEndedEventArgs e)
 	{
 	  // Target drop item
@@ -453,13 +454,15 @@ __RadTreeView__ internally handles the following __DragDropManager__ events:
 * __DragDropCompleted__ - This event occurs when an object is dropped on the drop target and is used to notify the source that the drag operation is over. Therefore the __RadTreeView__ handles it internally to update its state and items based on the __DropAction__ type of a successful drop.
 As __RadTreeView__ handles internally the above __DragDropManager__ events, in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.Add[Event]Handler__ extension method.
 
-#### C#
-{{region radtreeview-features-drag-and-drop_32}}
+#### __C#__
+
+{{region cs-radtreeview-features-drag-and-drop_32}}
 	DragDropManager.AddDragOverHandler(xTreeView, OnDragOver,true);  
 {{endregion}}
 
-#### VB.NET	
-{{region radtreeview-features-drag-and-drop_33}}
+#### __VB.NET__
+
+{{region vb-radtreeview-features-drag-and-drop_33}}
 	DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True) 
 {{endregion}}
 		

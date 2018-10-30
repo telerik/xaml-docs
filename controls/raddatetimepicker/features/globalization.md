@@ -2,7 +2,7 @@
 title: Globalization
 page_title: Globalization
 description: Globalization
-slug: radcalendar-globalization
+slug: raddatetimepicker-features-globalization
 tags: globalization
 published: True
 position: 1

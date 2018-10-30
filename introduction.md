@@ -5,7 +5,7 @@ description: Introduction
 slug: introduction
 tags: introduction
 published: True
-position: 1
+position: 0
 ---
 
 # Introduction

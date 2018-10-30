@@ -8,6 +8,75 @@ published: True
 position: 5
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.office2016-mainbrush {	
+	background: #FFFFFF;
+}
+.office2016-primarybrush {	
+	background: #E6E6E6;
+}
+.office2016-complementarybrush {	
+	background: #E1E1E1;
+}
+.office2016-alternativebrush {	
+	background: #F1F1F1;
+}
+.office2016-basicbrush {	
+	background: #ABABAB;
+}
+.office2016-markerbrush {	
+	background: #444444;
+}
+.office2016-markerinvertedbrush {	
+	background: #F9F9F9;
+}
+.office2016-iconbrush {	
+	background: #444444;
+}
+.office2016-validationbrush {	
+	background: #E81123;
+}
+.office2016-accentbrush {	
+	background: #2A579A;
+}
+.office2016-accentmouseoverbrush {	
+	background: #3E6DB6;
+}
+.office2016-accentpressedbrush {	
+	background: #19478A;
+}
+.office2016-accentfocusedbrush {	
+	background: #88C3FF;
+}
+.office2016-mouseoverbrush {	
+	background: #C5C5C5;
+}
+.office2016-pressedbrush {	
+	background: #AEAEAE;
+}
+.office2016-selectedbrush {	
+	background: #EBEBEB;
+}
+.office2016-readonlybackgroundbrush {	
+	background: #FFFFFF;
+}
+.office2016-readonlyborderbrush {	
+	background: #ABABAB;
+}
+
+article table
+{
+    table-layout: auto;
+}
+</style>
+
 # Office2016Touch Theme
 
 The official **R1 2017** release of UI for WPF includes a brand new **Office2016Touch** theme.

@@ -9,7 +9,7 @@ position: 7
 ---
 # Color Theme Generator
 
-The **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
+The **Crsyal**, **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the **Color Theme Generator**.
      

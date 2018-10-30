@@ -12,25 +12,27 @@ position: 5
 
 Each __RadPane__ provides built-in pin/unpin functionality that allows you to control the behavior and the visualization of the docked __RadPanes__ during run-time.
 
-By default this functionality is enabled and when a __RadPane__ is docked, pin/unpin toggle button is created and placed at its upper right corner. To toggle the pinned state of a certain __RadPane__ just click the button, highlighted on the snapshot below.
+By default this functionality is enabled and when a __RadPane__ is docked, pin/unpin toggle button is created and placed at its upper right corner. To toggle the pinned state of a certain __RadPane__ just click the button, highlighted on **Figure 1**.
 
-![](images/RadDocking_Features_Panes_Pinn_Unpinn_010.png)
+#### Figure 1: Pin button on a docked pane
+
+![Pin button on a docked pane](images/RadDocking_Features_Panes_Pinn_Unpinn_010.png)
 
 You can also change the pin state of a __RadPane__ programmatically using the __RadPane__'s boolean property __IsPinned__.
 
-#### __XAML__
+#### __[XAML] Example 1: Set the IsPinned property on a pane__
 
 {{region xaml-raddocking-panes-pinned-unpinned-panes_0}}
 	<telerik:RadPane x:Name="radPane" IsPinned="True"/>
 {{endregion}}
 
-#### __C#__
+#### __[C#]__
 
 {{region cs-raddocking-panes-pinned-unpinned-panes_1}}
 	radPane.IsPinned = true;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]__
 
 {{region vb-raddocking-panes-pinned-unpinned-panes_2}}
 	radPane.IsPinned = True
@@ -46,9 +48,9 @@ You can recognize that a docked __RadPane__ is pinned if it is visible all the t
 
 ## Unpinned Panes
 
-The unpinned __RadPane__ is shown only when the mouse cursor is over it and is hidden when the cursor leaves its area. When it is hidden you can only see its tab header placed in the auto hide area, while when shown, it is slided on the top of all the other controls without affecting the overall layout.
+The unpinned __RadPane__ is shown only when the mouse cursor is over it and is hidden when the cursor leaves its area. When it is hidden you can only see its tab header placed in the auto-hide area, while when shown, it is slided on the top of all the other controls without affecting the overall layout.
 
-On the snapshot below you can see two unpinned __RadPanes__; the first is a "Toolbox" docked to the left, the second is a "Solution Explorer" docked respectively to the right. You can see that all their content is hidden, except their tab headers placed in the auto hide area.
+On the snapshot below you can see two unpinned __RadPanes__; the first is a "Toolbox" docked to the left, the second is a "Solution Explorer" docked respectively to the right. You can see that all their content is hidden, except their tab headers placed in the auto-hide area.
 
 ![](images/RadDocking_Features_Panes_Pinn_Unpinn_030.png)
 
@@ -56,27 +58,43 @@ If you hover your mouse over the tab of the "Toolbox" pane, it will slide automa
 
 ![](images/RadDocking_Features_Panes_Pinn_Unpinn_040.png)
 
->tipIf you want to control the auto hide width and the auto hide hight of your unpinned panes use the respective __RadPane__'s properties __AutoHideHeight__ and __AutoHideWidth__.
+>tipIf you want to control the auto-hide area's width and hight of your unpinned panes use the respective __RadPane__'s properties __AutoHideHeight__ and __AutoHideWidth__.
+
+## Let Auto-Hide Area Content Exceed Screen
+
+As the element hosting the content of the pane when you hover over the auto-hide area is a popup, it will try to position itself optimally so that all of it's content is displayed. An example of this behavior when such a popup is opened near the edge of the screen is illustrated in **Figure 2**.
+
+#### Figure 2: Default unpinned pane near the edge of the screen
+
+![Default unpinned pane near edge of screen](images/CanAutoHideAreaExceedScreen_False.png)
+
+If, however, you want to force the panes to go outside of the screen, you can set the **CanAutoHideAreaExceedScreen** property of the RadDocking control to **True**. The result in such a scenario can be observed in **Figure 3**.
+
+#### Figure 3: Unpinned pane near the edge of the screen with CanAutoHideAreaExceedScreen set to True
+
+![Unpinned pane near edge of screen with CanAutoHideAreaExceedScreen set to True](images/CanAutoHideAreaExceedScreen_True.png)
 
 ## Disabling Pin
 
-If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ property to __False__. Once disabled the user will not be able to change the pin state of the __RadPane__ run-time because the toggle button will be hidden.
+If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ property to __False__. Once disabled the user will not be able to change the pin state of a __RadPane__ run-time because the toggle button will be hidden. This has been illustrated in **Figure 4**.
 
- ![](images/RadDocking_Features_Panes_Pinn_Unpinn_050.png)
+#### Figure 4: Docked pane with no pin button
 
-#### __XAML__
+![Docked pane with no pin button](images/RadDocking_Features_Panes_Pinn_Unpinn_050.png)
+
+#### __[XAML] Example 2: Disable pinning of panes via the CanUserPin property__
 
 {{region xaml-raddocking-panes-pinned-unpinned-panes_3}}
 	<telerik:RadPane x:Name="radPane1" CanUserPin="False"/>
 {{endregion}}
 
-#### __C#__
+#### __[C#]__
 
 {{region cs-raddocking-panes-pinned-unpinned-panes_4}}
 	radPane.CanUserPin = false;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]__
 
 {{region vb-raddocking-panes-pinned-unpinned-panes_5}}
 	radPane.CanUserPin = False

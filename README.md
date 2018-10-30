@@ -63,19 +63,7 @@ There are two ways you can contribute to the public Telerik UI for WPF/Silverlig
 
 You can generate a static web site from the Telerik UI for WPF/Silverlight the documentation and browse it locally.
 
-For the WPF documentaion:
-
- 1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
- 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
- 3. Run `jekyll serve`
- 4. Open "http://localhost:4000/devtools/wpf" in your browser
-        
-For the Silverlight documentaion:
-
- 1. Clone the repository `git clone git@github.com:telerik/xaml-docs.git`
- 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
- 3. Run `jekyll serve --config _config.yml,_silverlight.yml`
- 4. Open "http://localhost:4000/devtools/silverlight" in your browser
+Detailed instructions on how to achieve this can be found in the [docs-seed repository](https://github.com/telerik/docs-seed#local-setup).
 
 ## License
 

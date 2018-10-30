@@ -3,41 +3,37 @@ url: "https://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
-common-routed-events-support.md,
-common-command-support.md,
-upgrade-api-analyzer-sl.md,
-installation-and-deployment/installation-system-requirements.md,
-installation-and-deployment/download-product-files.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-MSI.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-ZIP.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/for-silverlight-vs-extensions-releases.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-hotfix.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-license-limitations.md,
-installation-and-deployment/installing-telerik-ui-on-your-computer/installation-installing-from-nuget.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox.md,
-installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox-silverlight.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
-installation-and-deployment/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
-installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license.md,
-installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies.md,
-consuming-data/web-asmx-service.md,
-consuming-data/net-ria-service.md,
-consuming-data/domain-datasource-support.md,
-consuming-data/isolated-storage.md,
+common-information/common-routed-events-support.md,
+common-information/common-command-support.md,
+common-information/upgrade-api-analyzer-sl.md,
+getting-started/installation/installation-system-requirements.md,
+getting-started/installation/download-product-files.md,
+getting-started/installation/installation-installing-from-MSI.md,
+getting-started/installation/installation-installing-from-ZIP.md,
+getting-started/installation/for-silverlight-vs-extensions-releases.md,
+getting-started/installation/installation-installing-hotfix.md,
+getting-started/installation/installation-installing-license-limitations.md,
+getting-started/installation/installation-installing-from-nuget.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
+getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
+integration/installation-adding-to-vs-toolbox-silverlight.md,
+upgrade/installation-upgrading-from-trial-to-developer-license.md,
+common-information/installation-installing-dependencies.md,
+common-information/consuming-data/web-asmx-service.md,
+common-information/consuming-data/net-ria-service.md,
+common-information/consuming-data/domain-datasource-support.md,
+common-information/consuming-data/isolated-storage.md,
 styling-and-appearance/stylemanager/common-styling-apperance-setting-theme.md,
 styling-and-appearance/stylemanager/common-styling-apperance-create-theme-overview.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-modifying-built-in-theme.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach.md,
 styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-create-theme-overview.md,
-visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
-visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
-visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
-visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-overview.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
+integration/visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
 assembly-minifier-section.md,
 assembly-minifier/minifier-what-is-new.md,
 assembly-minifier/overview.md,
@@ -82,6 +78,7 @@ controls/radspreadsheet/model/import/export/import-export-txtformatprovider-silv
 controls/radtabcontrol/styling-and-appearance/using-themes.md,
 controls/radtabcontrol/styling-and-appearance/modifying-themes-in-blend.md,
 controls/radtabcontrol/howto/how-to-make-the-tab-headers-editable.md,
+controls/radtimepicker/features,
 controls/radtoolbar/overview/structure.md,
 controls/radtoolbar/overview/declaration.md,
 controls/radtransitioncontrol/how-to/radtransition-use-with-silverlight-navigation-framework.md,
@@ -93,6 +90,8 @@ controls/radupload,
 controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
 cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
+
+exclude_navigation: [knowledge-base/*, controls/radchart/*]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -449,6 +448,8 @@ navigation:
         title: Validation
     controls/radmediaplayer:
         title: RadMediaPlayer
+    controls/radmulticolumncombobox:
+        title: RadMultiColumnComboBox
     controls/radoutlookbar:
         title: RadOutlookbar
     controls/radpanelbar:
@@ -920,6 +921,9 @@ navigation:
         title: Paging
     controls/raddataservicedatasource/sorting:
         title: Sorting
+    controls/raddataservicedatasource/how-to:		
+        title: How To		
+        position: 9
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -972,10 +976,7 @@ navigation:
         title: Cards
 ## X1 Controls End
 
-## Common Start
-    controls:
-        title: Controls
-        position: 22
+## Common Start   
     "*overview":
         title: Overview
         position: 1
@@ -1015,27 +1016,18 @@ navigation:
     "api-reference":
         title: "Api Reference"
         position: 23
-    "xamlflix-step-by-step-guide":
-        title: "XAMLflix Step-by-Step Guide"
-        position: 21
-    "licensing":
-        title: "Licensing"
-        position: 7
-    "installation-and-deployment":
-        title: "Installation and Deployment"
-        position: 6
-    "analytics":
+    "common-information/analytics":
         title: "Analytics"
-        position: 15
-    "consuming-data":
+        position: 2
+    "common-information/consuming-data":
         title: "Consuming Data"
-        position: 16
-    "styling-and-appearance":
-        title: "Styling and Appearance"
-        position: 8
-    "cloud-integration":
-        title: "Cloud Integration"
-        position: 9
+        position: 0
+    "common-information/mvvm-helpers":
+        title: "MVVM Helpers"
+        position: 1
+    "common-information/troubleshooting":
+        title: "Troubleshooting"
+        position: 14
     "cloud-integration/amazon-web-services":
         title: "Amazon Web Services"
         position: 2
@@ -1060,27 +1052,15 @@ navigation:
     "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
         title: "Connect to Data in the Cloud"
         position: 5
-    "visual-studio-extensions":
+    "integration/visual-studio-extensions":
         title: "Visual Studio Extensions"
-        position: 5
-    "for-more-help":
-        title: "For More Help"
-        position: 25
-    "installation-and-deployment/installing-telerik-ui-on-your-computer":
-        title: "Installing Telerik UI on your Computer"
-        position: 2
-    "installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox":
-        title: "Adding Telerik UI to Visual Studio Toolbox"
-        position: 3
-    "installation-and-deployment/adding-telerik-ui-to-an-application":
+        position: 0
+    "getting-started/installation":
+        title: "Installation"
+        position: 1
+    "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
-        position: 4	
-    "installation-and-deployment/upgrading-instructions":
-        title: "Upgrading Instructions"
-        position: 5
-    "installation-and-deployment/deploying-telerik-ui":
-        title: "Deploying Telerik UI"
-        position: 6
+        position: 2
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
@@ -1093,12 +1073,36 @@ navigation:
         position: 4
     "styling-and-appearance/how-to":
         title: "How To"
-    "mvvm-helpers":
-        title: "MVVM Helpers"
-        position: 23
-    "troubleshooting":
-        title: "Troubleshooting"
-        position: 23
+    "getting-started":
+        title: "Getting Started"
+        position: 1
+    "controls":
+        title: Controls
+        position: 3    
+    "styling-and-appearance":
+        title: "Style and Appearance"
+        position: 4
+    "licensing":
+        title: "Distribution and Licensing"
+        position: 5
+    "upgrade":  
+        title: "Upgrade"
+        position: 6
+    "common-information":
+        title: "Common Information"
+        position: 7
+    "integration":
+        title: "Integration"
+        position: 8
+    "cloud-integration":
+        title: "Cloud Integration"
+        position: 9
+    "developer-focused-examples":
+        title: "Developer Focused Examples"    
+        position: 10
+    "xamlflix-step-by-step-guide":
+        title: "XAMLflix Step-by-Step Guide"
+        position: 11
 ## Common End
 
 ## Api Reference Start
@@ -3199,7 +3203,7 @@ defaults:
     scope:
         path: ""
     values:
-        layout: "page"
+        layout: "documentation"
         category: "default"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
@@ -3214,7 +3218,185 @@ ff-sheet-id: 1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:jt1stbj813w'
+gcs_engine: '001595215763381649090:jt1stbj813w'
+gcs_api_key: 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M'
+
+# Folders not supporting Silverlight:
+non-sl-folders: ["radwordsprocessing", "radspreadstreamprocessing"]
+
+edit_repo_url: https://github.com/telerik/xaml-docs/edit/master
+product: "Telerik UI for WPF"
+platform: wpf
+download: http://www.telerik.com/products/wpf/download.aspx 
+nav:
+  "Demos": https://demos.telerik.com/wpf/
+  "Release History": https://www.telerik.com/support/whats-new/wpf/release-history
+  "About": http://www.telerik.com/products/wpf/overview.aspx 
+  "Pricing": http://www.telerik.com/purchase/individual/wpf.aspx
+
+footer:
+-
+  title: "Getting Started"
+  links:
+    "Install Now": https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading
+    "Demos": https://demos.telerik.com/wpf/
+    "SDK Samples Browser": https://demos.telerik.com/xaml-sdkbrowser/
+    "Sample Applications": https://www.telerik.com/wpf/sample-applications
+-
+  title: "Support Resources"
+  links: 
+    "Code Library": https://www.telerik.com/support/code-library/wpf
+    "Knowledge Base": https://www.telerik.com/support/kb/wpf
+    "MVVM Support": https://www.telerik.com/wpf/mvvm-support-wpf-controls
+    "Videos": https://www.telerik.com/videos/wpf
+    "GitHub SDK Repository": https://github.com/telerik/xaml-sdk
+-
+  title: "Community"
+  links:
+    "Forums": https://www.telerik.com/forums/wpf
+    "Blogs": http://www.telerik.com/blogs/tag/wpf
+    "XAML Feedback Portal": https://feedback.telerik.com/Project/143
+    "Document Processing Feedback Portal": http://feedback.telerik.com/Project/184
+  
+footer_social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/ 
+    twitter: https://twitter.com/Telerik/ 
+
+api_reference_url: "api/"
+
+
+intro_columns:
+-
+  categories:
+  -
+    title: "Data Management"  
+    items:
+      "CollectionNavigator": "collectionnavigator_overview"
+      "DataFilter": "datafilter-overview"
+      "DataForm": "raddataform-overview"
+      "DataPager": "datapager-overview"
+      "DataServiceDataSource": "raddataservicedatasource-overview"
+      "EntityFrameworkDataSource": "entityframework-overview"
+      "ExpressionEditor": "radexpressioneditor-overview"
+      "GridView": "gridview-overview2"
+      "VirtualGrid": "virtualgrid-overview"
+      "ListBox": "radlistbox-overview"
+      "PivotGrid": "radpivotgrid-overview"
+      "PropertyGrid": "radpropertygrid-overview"
+      "TreeListView": "radtreelistview-overview"
+      "MultiColumnComboBox": "multicolumncombobox-overview"
+  -
+    title: "Scheduling"
+    items:
+      "Calendar": "radcalendar-overview"
+      "DateTimePicker": "raddatetimepicker-overview"
+      "ScheduleView": "radscheduleview-overview"
+      "TimePicker": "radtimepicker-overview"
+      "TimeSpanPicker": "radtimespanpicker-overview"
+-
+  categories:
+  -
+    title: "Data Visualization"
+    items:
+      "Barcode": "radbarcode-overview"
+      "BulletGraph": "radbulletgraph_overview"
+      "Chart": "radchart-overview"
+      "ChartView": "radchartview-overview"
+      "ChartView3D": "radchartview3d-overview"
+      "DataBar": "raddatabar-overview"
+      "Diagram Framework": "raddiagram-overview"
+      "GanttView": "radganttview-overview"
+      "Gauge": "radgauge-overview"
+      "HeatMap": "radheatmap-overview"
+      "Legend": "radlegend-overview"
+      "Map": "radmap-overview"
+      "Sparkline": "radsparkline_overview"
+      "TimeBar": "radtimebar-overview"
+      "Timeline": "radtimeline-overview"
+      "TreeMap and PivotMap": "radtreemap-overview"
+-
+  categories:
+  -
+    title: "Editors"
+    items:
+      "AutoCompleteBox": "radautocompletebox-overview"
+      "Calculator": "radcalculator-overview"
+      "ColorEditor": "radcoloreditor-overview"
+      "ColorPicker": "radcolorpicker-overview"
+      "ComboBox": "radcombobox-overview"
+      "MaskedInput": "radmaskedinput-overview"
+      "NumericUpDown": "radnumericupdown-overview"
+      "PasswordBox": "radpasswordbox-overview"
+      "Rating": "radrating-overview"
+      "RichTextBox": "radrichtextbox-overview"
+      "Slider": "radslider-overview"
+      "SpellChecker": "radspellchecker-overview"
+      "Spreadsheet": "radspreadsheet-overview"
+      "WatermarkTextBox": "radwatermarktextbox-overview"
+  -
+    title: "Media"
+    items:
+      "ImageEditor": "radimageeditor-overview"
+-
+  categories:
+  -
+    title: "Navigation"
+    items:
+      "Breadcrumb": "radbreadcrumb-overvew"
+      "Buttons": "radbuttons-overview"
+      "ContextMenu": "contextmenu-overview1"
+      "Menu": "radmenu-overview"
+      "OutlookBar": "radoutlookbar-overview"
+      "PanelBar": "radpanelbar-overview"
+      "RadialMenu": "radradialmenu-overview"
+      "RibbonView": "radribbonview-overview"
+      "TabControl": "radtabcontrol-overview2"
+      "ToolBar": "radtoolbar-overview"
+      "TreeView": "radtreeview-overview2"
+  -
+    title: "Interactivity & UX"
+    items:
+      "BusyIndicator": "radbusyindicator-overview"
+      "DesktopAlert": "raddesktopalert-overview"
+      "DragDropManager": "dragdropmanager-overview"
+      "PersistenceFramework": "persistence-framework-overview"
+      "ProgressBar": "radprogressbar-overview"
+      "ToolTip": "radtooltip-overview"
+      "TouchManager": "touchmanager-overview"
+-
+  categories:
+  -
+    title: "File Upload & Management"
+    items:
+      "CloudUpload": "radcloudupload-overview"
+      "FileDialogs": "radfiledialogs-overview"
+      "PdfProcessing": "radpdfprocessing-overview"
+      "PdfViewer": "radpdfviewer-overview"
+      "SpreadProcessing": "radspreadprocessing-overview"
+      "SpreadStreamProcessing":
+        isLink: true
+        value: "https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview"
+      "WordsProcessing": "radwordsprocessing-overview"
+      "ZipLibrary": "radziplibrary-overview"
+  -
+    title: "Layout"
+    items:
+      "Book": "radbook-visual-structure"
+      "Carousel": "carousel-overview"
+      "Docking": "raddocking-overview2"
+      "Expander": "radexpander-overview"
+      "LayoutControl": "radlayoutcontrol-overview"
+      "TileList": "radtilelist-overview"
+      "TileView": "radtileview-overview"
+      "TransitionControl": "radtransition-overview"
+      "Window": "radwindow-overview"
+      "Wizard": "wizard-overview"
+
+sdk_examples: "sdk_wpf.json"
+sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
+sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
 
 ## Do not edit below this line
 safe: false

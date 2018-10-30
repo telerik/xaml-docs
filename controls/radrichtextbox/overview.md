@@ -62,7 +62,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Multi-region selection__
 	The built-in multi-region support enables you to perform various operations for more than one selection simultaneously. For more information, see the [Selection]({%slug radrichtextbox-features-selection%}) article.
 
-* {% if site.site_name == 'Silverlight' %}__Delete, Cut, Copy and Paste in plain text (using Silverlight 4.0 build-in clipboard). Copy/Paste in internal rich-text clipboard.__{% endif %}{% if site.site_name == 'WPF' %}__Rich-text clipboard__{% endif %}
+* {% if site.site_name == 'Silverlight' %}__Delete, Cut, Copy and Paste in plain text (using Silverlight's build-in clipboard). Copy/Paste in internal rich-text clipboard.__{% endif %}{% if site.site_name == 'WPF' %}__Rich-text clipboard__{% endif %}
 	{% if site.site_name == 'WPF' %} The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc.{% endif %} For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article.
 
 * __Import/export__
@@ -96,7 +96,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	This feature can be used for referencing a source in the form of text or pointing the source of a citation. For more information, see the [Bibliographic References]({%slug radrichtextbox-features-bibliographic-references%}) article.
 
 * __Cross-references__
-	References to a Heading, Caption or Bookmark can change along with their source. For more information, see the [Corss-Reference]({%slug radrichtextbox-features-cross-reference%}) article.
+	References to a Heading, Caption or Bookmark can change along with their source. For more information, see the [Cross-Reference]({%slug radrichtextbox-features-cross-reference%}) article.
 
 * __Captions for tables and figures__
 	Images, tables, etc. can now be easily labeled. For more information, see the [Captions for Tables and Figures]({%slug radrichtextbox-features-captions-for-tables-and-figures%}) article.

@@ -18,7 +18,7 @@ RadGridView has a default Brush for its selection on row level depending on the 
 
 As of __R3 2018 RadGridView__ provides support for setting the background of its selected rows through the __SelectedBackground__ property of __GridViewRow__.
 
-#### __Example 1: Setting the SelectedBackground property of GridViewRow__
+#### __[XAML] Example 1: Setting the SelectedBackground property of GridViewRow__
 
 {{region xaml-radgridview-rows-selectedrow-background_0}}
 	 <Style TargetType="telerik:GridViewRow">

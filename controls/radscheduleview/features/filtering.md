@@ -48,7 +48,7 @@ The filter demonstrated in **examples 3 and 4** will exclude all occurences whos
 
 >The OccurenceFilter is useful when you need to exclude only certain occurrences/exceptions of any recurring appointment.
 
-#### Example 3: Define the occurences filter predicate
+#### [C#] Example 3: Define the occurences filter predicate
 
 {{region cs-radscheduleview-features-filtering-3}}
     public Predicate<IOccurrence> OccurenceFilter

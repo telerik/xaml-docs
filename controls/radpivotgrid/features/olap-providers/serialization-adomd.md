@@ -11,6 +11,8 @@ site_name: WPF
 
 # Serialize AdomdDataProvider
 
+> The implementation demonstrated in this article can also be reviewed in the [Serialize AdomdDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/AdomdProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
+
 In this article we will show you how to serialize and deserialize AdomdDataProvider and all of its settings. You can use this feature to save the current state of the provider and load it next time the application is started.      
 
 ## Serialize AdomdDataProvider with DataContractSerializer

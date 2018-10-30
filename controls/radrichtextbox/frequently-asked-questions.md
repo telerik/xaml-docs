@@ -12,17 +12,7 @@ position: 2
 
 
 
-This topic aims to answer some of the frequently asked questions about the use of RadRichTextBox, namely:
-
-[Assembly References](#assembly-references)
-
-[Setting Default Style Settings on the Document](#setting-default-style-settings-on-the-document)
-
-[How to Get and Set the Text of RadRichTextBox](#how-to-get-and-set-the-text-of-radrichtextbox)
-
-[Setting the Margins of the Document](#setting-the-margins-of-the-document)
-
-[Inserting multiple consecutive tables](#inserting-multiple-consecutive-tables)
+This topic aims to answer some of the frequently asked questions about the use of RadRichTextBox.
 
 ## Assembly References
 
@@ -46,12 +36,15 @@ RadRichTextBox has a Boolean property called __DocumentInheritsDefaultStyleSetti
 
 * FontWeight (Normal/Bold).
 
+* Foreground;
+
+
 Here is how you can do that in XAML:
 
 #### __[XAML] Example 1: Applying default style settings on the document__
 
 {{region radrichtextbox-frequently-asked-questions_0}}
-    <telerik:RadRichTextBox Name="radRichTextBox1" Grid.Row="1" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" FontWeight="Bold" DocumentInheritsDefaultStyleSettings="True"/>
+    <telerik:RadRichTextBox Name="radRichTextBox1" Grid.Row="1" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" FontWeight="Bold" DocumentInheritsDefaultStyleSettings="True" Foreground="Red"/>
 {{endregion}}
 
 
@@ -68,6 +61,7 @@ If you run that in an example with a __RadRichTextBoxRibbonUI__ and/or __Selecti
         this.radRichTextBox1.FontSize = Unit.PointToDip(12);
         this.radRichTextBox1.FontStyle = FontStyles.Italic;
         this.radRichTextBox1.FontWeight = FontWeights.Bold;
+		this.radRichTextBox1.Foreground = Brushes.Red;
         this.radRichTextBox1.DocumentInheritsDefaultStyleSettings = true;
     }
 {{endregion}}

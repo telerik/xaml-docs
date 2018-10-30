@@ -1,0 +1,186 @@
+---
+title: Persistence
+page_title: Persistence
+description: Persistence
+slug: radpivotgrid-features-queryable-persistence
+tags: queryable, dataprovider, persistence
+published: True
+position: 10
+---
+
+# Persistence
+
+> The implementation demonstrated in this article can also be reviewed in the [Persist QueryableDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Persistence/QueryableDataProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
+
+This article will go through the process of persisting the current state of __QueryableDataProvider__ via __RadPersistenceFramework__. Through it the state of the control can be persisted and loaded the next time the application is started.
+
+* [Using the DataContract Attribute](#using-the-datacontract-attribute)
+* [Defining the IValueProvider](#defining-the-ivalueprovider)
+* [Specifying the KnownTypes](#specifying-the-knowntypes)
+* [Registering the PersistenceProvider](#registering-the-persistenceprovider)
+
+
+## Using the DataContract Attribute
+
+The DataContract attribute is added to all classes used by the QueryableDataProvider. This enables easy serialization with the DataContractSerializer. Below is a sample definition of such classes. The __DataContract__ attribute is added on class level and the __DataMember__ one is added for each property.
+
+#### __[C#] Example 1: Using the DataContract attribute__	
+
+{{region radpivotgrid-features-queryable-persistence_1}}
+	[DataContract]
+    public class DataProviderSettings
+    {
+        [DataMember]
+        public object[] Aggregates { get; set; }
+
+        [DataMember]
+        public object[] Filters { get; set; }
+
+        [DataMember]
+        public object[] Rows { get; set; }
+
+        [DataMember]
+        public object[] Columns { get; set; }
+
+        [DataMember]
+        public int AggregatesLevel { get; set; }
+
+        [DataMember]
+        public PivotAxis AggregatesPosition { get; set; }
+    }
+{{endregion}}
+
+## Defining the IValueProvider
+
+The next step is to create a new class, which implements the __Telerik.Windows.Persistence.Services.IValueProvider__ interface. It provides two methods that need to be implemented - __ProvideValue__ and __RestoreValue__. The first one is used when the data is saved. The second one is used when the data is restored from a previously saved state. When saving the provider, an instance of the *DataProviderSettings* class has to be created with all of its properties set. Then, the instance can be saved to a file or a stream. Below is a sample implementation of the interface.
+
+#### __[C#] Example 2: Implementing the IValueProvider interface__
+
+{{region radpivotgrid-features-queryable-persistence_2}}
+    public abstract class DataProviderValueProvider : IValueProvider
+    {
+        public abstract IEnumerable<Type> KnownTypes { get; }
+
+        public string ProvideValue(object context)
+        {
+            string serialized = string.Empty;
+
+            IDataProvider dataProvider = context as IDataProvider;
+            if (dataProvider != null)
+            {
+                MemoryStream stream = new MemoryStream();
+
+                DataProviderSettings settings = new DataProviderSettings()
+                {
+                    Aggregates = dataProvider.Settings.AggregateDescriptions.OfType<object>().ToArray(),
+                    Filters = dataProvider.Settings.FilterDescriptions.OfType<object>().ToArray(),
+                    Rows = dataProvider.Settings.RowGroupDescriptions.OfType<object>().ToArray(),
+                    Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType<object>().ToArray(),
+                    AggregatesLevel = dataProvider.Settings.AggregatesLevel,
+                    AggregatesPosition = dataProvider.Settings.AggregatesPosition
+                };
+
+                DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+                serializer.WriteObject(stream, settings);
+
+                stream.Position = 0;
+                var streamReader = new StreamReader(stream);
+                serialized += streamReader.ReadToEnd();
+            }
+
+            return serialized;
+        }
+
+        public void RestoreValue(object context, string savedValue)
+        {
+            IDataProvider dataProvider = context as IDataProvider;
+            if (dataProvider != null)
+            {
+                var stream = new MemoryStream();
+                var tw = new StreamWriter(stream);
+                tw.Write(savedValue);
+                tw.Flush();
+                stream.Position = 0;
+
+                DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+                var result = serializer.ReadObject(stream);
+
+                dataProvider.Settings.AggregateDescriptions.Clear();
+                foreach (var aggregateDescription in (result as DataProviderSettings).Aggregates)
+                {
+                    dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription);
+                }
+
+                dataProvider.Settings.FilterDescriptions.Clear();
+                foreach (var filterDescription in (result as DataProviderSettings).Filters)
+                {
+                    dataProvider.Settings.FilterDescriptions.Add(filterDescription);
+                }
+
+                dataProvider.Settings.RowGroupDescriptions.Clear();
+                foreach (var rowDescription in (result as DataProviderSettings).Rows)
+                {
+                    dataProvider.Settings.RowGroupDescriptions.Add(rowDescription);
+                }
+
+                dataProvider.Settings.ColumnGroupDescriptions.Clear();
+                foreach (var columnDescription in (result as DataProviderSettings).Columns)
+                {
+                    dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription);
+                }
+
+                dataProvider.Settings.AggregatesPosition = (result as DataProviderSettings).AggregatesPosition;
+                dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
+            }
+        }
+    }
+{{endregion}}
+
+## Specifying the KnownTypes
+
+In the previous example a collection of KnownTypes is passed to the __DataContractSerializer__. It consists of all types needed for serializing the QueryableDataProvider. For this purpose we created a new __QueryablePivotSerializationHelper__ class which has a static member - KnownTypes. 
+
+#### __[C#] Example 3: Specifying the KnownTypes__
+
+{{region radpivotgrid-features-queryable-persistence_3}}
+	 public class QueryableDataSourceValueProvider: DataProviderValueProvider
+    {
+        public override IEnumerable<Type> KnownTypes
+        {
+            get 
+            {
+                return QueryablePivotSerializationHelper.KnownTypes;
+            }
+        }
+    }
+{{endregion}}
+
+## Registering the PersistenceProvider
+
+The final step is to register a persistence provider and implement the logic needed for saving and loading the state of the QueryableDataProvider.
+
+#### __[C#] Example 4: Registering the PersistenceProvider__
+{{region radpivotgrid-features-queryable-persistence_4}}
+	Stream stream = new MemoryStream();
+
+	ServiceProvider.RegisterPersistenceProvider<IValueProvider>(typeof(QueryableDataProvider), new QueryableDataSourceValueProvider());
+	//saving
+	PersistenceManager manager = new PersistenceManager();
+    this.stream = manager.Save(this.PivotGrid.DataProvider);
+	//loading
+	this.stream.Position = 0;
+    PersistenceManager manager = new PersistenceManager();
+    manager.Load(this.PivotGrid.DataProvider, this.stream);
+{{endregion}}
+
+## See Also
+
+ * [Getting Started]({%slug radpivotgrid-getting-started%})
+
+ * [RadPivotFieldList]({%slug radpivotgrid-fieldlist%})
+
+ * [LocalDataSourceProvider]({%slug radpivotgrid-data-localdatasource%})
+
+ * [Features]({%slug radpivotgrid-features%})
+
+ * [Serialization]({%slug radpivotgrid-features-serialization%})

@@ -20,7 +20,7 @@ The purpose of this overview is to give you a straight-forward way how to create
 
 __RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.        
 
->If the user modifies an individual appointment occurrence, an exception is created. This exception is added to the __ReccurenceRule__ of the master appointment along with its specific date.          
+>If the user modifies an individual appointment occurrence, an exception is created. This exception is added to the __RecurrenceRule__ of the master appointment along with its specific date.          
 
 Consider the following example:
 

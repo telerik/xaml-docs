@@ -2,7 +2,7 @@
 title: IsExpandedBinding and IsExpandableBinding
 page_title: IsExpandedBinding and IsExpandableBinding
 description: IsExpandedBinding and IsExpandableBinding
-slug: radgridview-isexpandedbinding-isexpandablebinding
+slug: radgridview--hierarchy-isexpandedbinding-isexpandablebinding
 tags: isexpandedbinding,and,isexpandablebinding
 published: True
 position: 4

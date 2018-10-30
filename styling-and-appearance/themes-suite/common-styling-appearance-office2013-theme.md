@@ -8,6 +8,20 @@ published: True
 position: 2
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+article table
+{
+    table-layout: auto;
+}
+</style>
+
 # Office2013 Theme
 
 The official Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __external__ theme with a flat modern UI and three color variations – White, Light Gray, Dark Gray.             
@@ -86,6 +100,8 @@ For example, if you want to set the __DarkGray__ color variation, you should hav
     }
 {{endregion}}
 {% endif %}
+
+>The **DarkGrey** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
 
 ## Office2013 Palette brushes and colors
 |Brush name|White| |Light Gray| |Dark Gray| |

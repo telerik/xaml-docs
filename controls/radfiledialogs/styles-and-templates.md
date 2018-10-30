@@ -38,7 +38,7 @@ To modify the appearance of each of the individual elements, you should first cr
 
 **Example 1** demonstrates how to add a Favorites title to the **Custom Places Pane**.
 
-#### Example 1: Add title to the Custom Places Pane
+#### [XAML] Example 1: Add title to the Custom Places Pane
 
 {{region xaml-radfiledialogs-styles-and-templates_0}}
     <ControlTemplate x:Key="ExplorerControlTemplate" TargetType="fileDialogs:ExplorerControl">

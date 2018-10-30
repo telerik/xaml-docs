@@ -196,7 +196,7 @@ __RadRichTextBox__ exposes the following methods that regard the creation or del
 __RadRichTextBox__ exposes a API allowing you to use various methods to add, modify or delete elements from [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. __RadRichTextBox__ exposes the following methods in regard to modifying of a table:
         
 
-* __ChangeTableBorders__: Modifies the borders of the currently selected table via a [__TableBorders__]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableBorders.htm){%endif%} object.
+* __ChangeTableBorders__: Modifies the borders of the currently selected table via a [__TableBorders__]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.model.tableborders){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.tableborders){%endif%} object.
 
 	#### __[C#] Example 3: Change Table Borders__
 	{{region radrichtextbox-features-document-elements-tables_6}}
@@ -226,7 +226,7 @@ __RadRichTextBox__ exposes a API allowing you to use various methods to add, mod
 
 * __ChangeTableCellBackground__: Sets the background color of the currently selected cell.
             
-* __ChangeTableCellBorders__: Modifies the borders of the currently selected table via a [__TableCellBorders__ ]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_TableCellBorders.htm){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableCellBorders.htm){%endif%} or a [__Border__]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/html/T_Telerik_Windows_Documents_Model_Border.htm){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_Border.htm){%endif%} object.
+* __ChangeTableCellBorders__: Modifies the borders of the currently selected table via a [__TableCellBorders__ ]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.model.tablecellborders){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.tablecellborders){%endif%} or a [__Border__]{% if site.site_name == 'Silverlight' %}(https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.model.border){%endif%}{% if site.site_name == 'WPF' %}(https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.border){%endif%} object.
             
 * __ChangeTableCellSpacing__: Modifies the spacing between the cells.
 

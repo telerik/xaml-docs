@@ -40,6 +40,6 @@ You can find the following properties in the RibbonCommands class:
 ## See Also
 * [Functional Structure]({%slug radribbonview-functional-structure%})
 * [Visual Structure]({%slug radribbonview-visual-structure%})
-* [RibbonCommands class](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_ribboncommands.htm)
+* [RibbonCommands class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.ribboncommands)
 * [Ribbon Backstage]({%slug radribbonview-ribbon-backstage%})
 * [Use Commands with RadRibbonView Buttons]({%slug radribbonview-howto-use-commands-with-radribbonview-buttons%})

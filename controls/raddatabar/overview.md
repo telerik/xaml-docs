@@ -43,3 +43,9 @@ The __Data Bar__ is actually a set of controls:
 
 4. __RadHorizontalAxis__ - makes the comparison of data easier as it displays the dimensions of the data.
     ![Rad Data Bar dataaxis](images/RadDataBar_dataaxis.png)
+    
+## See Also
+
+* [Getting Started]({%slug databar-getting-started2%})
+* [Properties]({%slug raddatabar-main_properties%})
+* [Data Binding]({%slug raddatabar-databinding%})

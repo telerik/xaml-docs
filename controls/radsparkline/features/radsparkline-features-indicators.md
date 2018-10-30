@@ -27,13 +27,13 @@ The markers are visual indicators showing the location of each data point along 
 {{endregion}}
 
 #### __Figure 1: RadLinearSparkline and RadAreaSparkline with shown markers__
-![](images/radsparkline-features-indicators-0.png)
+![RadLinearSparkline and RadAreaSparkline](images/radsparkline-features-indicators-0.png)
 
 You can change the color of the marker via the __MarkersBrush__ property.
 
-The markers can be customized via the __MarkerStyle__ property of the control.
+The markers can be customized via the __MarkersStyle__ property of the control.
 
-#### __[XAML] Example 3: Setting MarkerStyle__
+#### __[XAML] Example 3: Setting MarkersStyle__
 {{region radsparkline-features-indicators-2}}	
 	<telerik:RadLinearSparkline.MarkersStyle>
 		<Style TargetType="telerik:IndicatorItem">                    
@@ -49,8 +49,8 @@ The markers can be customized via the __MarkerStyle__ property of the control.
 	</telerik:RadLinearSparkline.MarkersStyle>
 {{endregion}}
 
-#### __Figure 2: RadLinearSparkline with custom MarkerStyle__
-![](images/radsparkline-features-indicators-1.png)
+#### __Figure 2: RadLinearSparkline with custom MarkersStyle__
+![RadLinearSparkline with custom MarkersStyle](images/radsparkline-features-indicators-1.png)
 
 ## High Point
 
@@ -67,7 +67,7 @@ This is a visual indicator which highlights the single highest-value datapoint i
 {{endregion}}
 
 #### __Figure 3: RadColumnSparkline with shown high point indicator__
-![](images/radsparkline-features-indicators-2.png)
+![RadColumnSparkline with shown high point indicator](images/radsparkline-features-indicators-2.png)
 
 You can change the color of the high point indicator via the __HighPointBrush__ property.
 
@@ -83,7 +83,7 @@ You can customize the appearance of the data point via the __HighPointStyle__ pr
 {{endregion}}
 
 #### __Figure 4: RadColumnSparkline with custom HighPointStyle__
-![](images/radsparkline-features-indicators-3.png)
+![RadColumnSparkline with custom HighPointStyle](images/radsparkline-features-indicators-3.png)
 
 ## Low Point
 
@@ -100,7 +100,7 @@ This is a visual indicator which highlights the single lowest-value datapoint in
 {{endregion}}
 
 #### __Figure 5: RadColumnSparkline with shown low point indicator__
-![](images/radsparkline-features-indicators-4.png)
+![RadColumnSparkline with shown low point indicator](images/radsparkline-features-indicators-4.png)
 
 You can change the color of the low point indicator via the __LowPointBrush__ property.
 
@@ -116,7 +116,7 @@ You can customize the appearance of the data point via the __LowPointStyle__ pro
 {{endregion}}
 
 #### __Figure 6: RadColumnSparkline with custom LowPointStyle__
-![](images/radsparkline-features-indicators-5.png)
+![RadColumnSparkline with custom LowPointStyle](images/radsparkline-features-indicators-5.png)
 
 ## Negative Points
 
@@ -133,7 +133,7 @@ These visual indicators highlight all negative data points in a series. If the s
 {{endregion}}
 
 #### __Figure 7: RadLinearSparkline with shown negative point indicators__
-![](images/radsparkline-features-indicators-6.png)
+![RadLinearSparkline with shown negative point indicators](images/radsparkline-features-indicators-6.png)
 
 You can change the color of the negative points via the __NegativePointBrush__ property.
 
@@ -160,18 +160,18 @@ This is a visual indicator, which highlights the first data point in a series. I
 
 The first point is enabled in the series by setting the __ShowFirstPointIndicator__ property to True.
 
-#### __[XAML] Example 13: Show negative points of RadLinearSparkline in XAML__
+#### __[XAML] Example 13: Show first point of RadLinearSparkline in XAML__
 {{region radsparkline-features-indicators-12}}
 	 <telerik:RadLinearSparkline ShowFirstPointIndicator="True" />
 {{endregion}}
 
-#### __[C#] Example 14: Show negative points of RadLinearSparkline in code__
+#### __[C#] Example 14: Show first point of RadLinearSparkline in code__
 {{region radsparkline-features-indicators-13}}	
 	this.sparklineControl.ShowFirstPointIndicator = true;
 {{endregion}}
 
-#### __Figure 8: RadLinearSparkline with shonw first point indicator__
-![](images/radsparkline-features-indicators-7.png)
+#### __Figure 8: RadLinearSparkline with shown first point indicator__
+![RadLinearSparkline with shown first point indicator](images/radsparkline-features-indicators-7.png)
 
 You can change the color of the first point via the __FirstPointBrush__ property.
 
@@ -196,24 +196,24 @@ The first point can be customized via the __FirstPointStyle__ property of the co
 
 This is a visual indicator which highlights the last data point in a series. If the spark line is of type RadColumnSparkline or RadWinLossSparkLine the bar which represents the last value is highlighted. The last point is indicated in the series, by setting the __ShowLastPointIndicator__ property to True.
 
-#### __[XAML] Example 16: Show negative points of RadLinearSparkline in XAML__
+#### __[XAML] Example 16: Show last point of RadLinearSparkline in XAML__
 {{region radsparkline-features-indicators-15}}
 	 <telerik:RadLinearSparkline ShowFirstPointIndicator="True" />
 {{endregion}}
 
-#### __[C#] Example 17: Show negative points of RadLinearSparkline in code__
+#### __[C#] Example 17: Show last point of RadLinearSparkline in code__
 {{region radsparkline-features-indicators-16}}	
 	this.sparklineControl.ShowFirstPointIndicator = true;
 {{endregion}}
 
-#### __Figure 9: RadLinearSparkline with shonw first point indicator__
-![](images/radsparkline-features-indicators-8.png)
+#### __Figure 9: RadLinearSparkline with shown last point indicator__
+![RadLinearSparkline with shown last point indicator](images/radsparkline-features-indicators-8.png)
 
-You can change the color of the first point via the __LastPointBrush__ property.
+You can change the color of the last point via the __LastPointBrush__ property.
 
-The first point can be customized via the __LastPointStyle__ property of the control.
+The last point can be customized via the __LastPointStyle__ property of the control.
 
-#### __[XAML] Example 18: Setting FirstPointStyle (see Figure 9)__
+#### __[XAML] Example 18: Setting LastPointStyle (see Figure 9)__
 {{region radsparkline-features-indicators-17}}	
 	<telerik:RadLinearSparkline.LastPointStyle>
 		<Style TargetType="telerik:IndicatorItem">			
@@ -241,7 +241,7 @@ There are cases when the collection of data to which the Sparkline is bound may 
 {{endregion}}
 
 #### __Figure 10: RadLinearSparkline and RadColumnSparkline with a single null value shown as zero__
-![](images/radsparkline-features-indicators-9.png)
+![RadLinearSparkline and RadColumnSparkline](images/radsparkline-features-indicators-9.png)
 
 ## See Also
 * [Data Binding]({%slug radsparkline_databinding%})

@@ -14,7 +14,6 @@ position: 0
 
 __RadWatermarkTextBox__ control represents a TextBox that allows you to define a placeholder to be displayed when the content is empty and the control is not focused. This is useful when you want to display additional information when having an empty text input control.
 
-<br/>
 ![](images/radwatermarktextbox-overview-01.png)
 
 ## Key Features

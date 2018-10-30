@@ -47,4 +47,6 @@ The latter can be done by setting the __ForceVector__ property of __PrintSetting
 	    pdfViewer.Print(new PrintSettings() { ForceVector = false});
 {{endregion}}
 
+## Poor Performance
 
+**RadPdfViewer** visualizes the documents in parts - while the user scrolls in it - and this optimization is lost when the control is placed in a container without a specified size, which measures its children in *Infinity*. As the document pages themselves should be measured and visualized all at once, loading a bigger document takes much time. Make sure that RadPdfViewer is not placed inside such a contained (ScrollViewer, for example).

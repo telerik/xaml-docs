@@ -166,7 +166,7 @@ At this state the filter operators are ready and the filtering operation can be 
         }
 {{endregion}}
 
-Note, that in the example above, the __CompositeFilterDescriptorCollection__ is used for filtering the __underlying data source__. For this purpose, the __Where extension method__ which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/html/m_telerik_windows_data_queryableextensions_where_3.htm). After the filtering is evaluated for the data source, the __InitialRowCount__ of __RadVirtualGrid__ needs to be set so that it equals the number of items that have passed the filtering criteria.
+Note, that in the example above, the __CompositeFilterDescriptorCollection__ is used for filtering the __underlying data source__. For this purpose, the __Where extension method__ which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Where_System_Linq_IQueryable_Telerik_Windows_Data_CompositeFilterDescriptorCollection_). After the filtering is evaluated for the data source, the __InitialRowCount__ of __RadVirtualGrid__ needs to be set so that it equals the number of items that have passed the filtering criteria.
 
 ## See Also
 

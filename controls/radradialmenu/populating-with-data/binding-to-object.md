@@ -54,7 +54,7 @@ In order to be able to successfully use the binding feature of the control, the 
 	End Class
 {{endregion}}
 
->Note that if you need to change any of those properties at run time you would need implement also the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx), interface or inherit from the built in [ViewModelBase](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_controls_viewmodelbase.htm) class in order to raise PropertyChanged of required properties.
+>Note that if you need to change any of those properties at run time you would need implement also the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx), interface or inherit from the built in [ViewModelBase](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.viewmodelbase) class in order to raise PropertyChanged of required properties.
 
 ## Implementing a ViewModel
 

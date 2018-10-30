@@ -39,7 +39,7 @@ You can set one or more rows as a repeat table header row(s) consecutively. In o
 
 ### Programmatically via the RadRichTextBox API 
 
-The __[TableRow class](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Model_TableRow.htm)__ exposes a property called RepeatOnEveryPage of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
+The __[TableRow class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.tablerow)__ exposes a property called RepeatOnEveryPage of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
 
 
 #### __[C#] Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__

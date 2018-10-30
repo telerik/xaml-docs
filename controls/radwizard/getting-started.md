@@ -27,7 +27,7 @@ You can find the required assemblies for each control from the suite in the {% i
 
 ## Adding RadWizard to the Project
 
-You can add __RadWizard__ in XAML or in code. You can also add the control by dragging it from the [Toolbox]({%slug installation-adding-to-vs-2017-toolbox%}). 
+You can add __RadWizard__ in XAML or in code. You can also add the control by dragging it from the [Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}). 
 
 #### __[XAML] Example 1: Adding a RadWizard in XAML__
 {{region xaml-radwizard-getting-started-2}}

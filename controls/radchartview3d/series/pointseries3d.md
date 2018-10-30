@@ -12,10 +12,6 @@ position: 1
 
 The point series visualizes three dimensional data represented by ellipsoid shapes (spheres by default). Each data point is defined by X, Z and Y values which determines its position in the plot area. The size of the shapes is defined via the __PointSize__ property of the series.
 
-* [Declaratively defined series](#declaratively-defined-series)
-* [Data bound series](#data-bound-series)
-* [Customizing the data point visuals](#customizing-the-data-point-visuals)
-
 ## Declaratively defined series
 
 You can use the code from __Example 1__ to create a __PointSeries3D__. 

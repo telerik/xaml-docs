@@ -24,7 +24,7 @@ This help article discusses different ways of loading a document in __RadPdfView
 
 ## Showing a PDF file
 
-__RadPdfViewer__ exposes a __DocumentSource__ property of type [FixedDocumentStreamSource](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FixedDocumentStreamSource.htm) that can be used to pass a PDF file to the control. There are several ways to set the property.
+__RadPdfViewer__ exposes a __DocumentSource__ property of type [FixedDocumentStreamSource](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.fixeddocumentstreamsource) that can be used to pass a PDF file to the control. There are several ways to set the property.
 
 ###  Setting the DocumentSource in XAML
 
@@ -177,7 +177,7 @@ Notice that regardless of the type of the property you choose to bind the Docume
 Starting with the release of R2 2016, you can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time (as done in versions prior R2 2016) or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it.
         
 
-You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [FormatProviderSettings class](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_FormatProviderSettings.htm):
+You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [FormatProviderSettings class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.formatproviders.formatprovidersettings):
 
 * __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to memory. 
 

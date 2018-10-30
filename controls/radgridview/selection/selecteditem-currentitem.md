@@ -1,14 +1,14 @@
 ---
-title: CurrentItem, SelectedItem & SelectedItems
-page_title: CurrentItem, SelectedItem & SelectedItems
-description: CurrentItem, SelectedItem & SelectedItems
+title: CurrentItem, SelectedItem and SelectedItems
+page_title: CurrentItem, SelectedItem and SelectedItems
+description: CurrentItem, SelectedItem and SelectedItems
 slug: gridview-selection-selecteditem-currentitem
 tags: currentitem,vs,selecteditem
 published: True
 position: 4
 ---
 
-# CurrentItem, SelectedItem & SelectedItems
+# CurrentItem, SelectedItem and SelectedItems
 
 This article explains the usage of the [SelectedItem](#selecteditem), [CurrentItem](#currentitem) & [SelectedItems](#selecteditems) properties.
 

@@ -86,6 +86,8 @@ The following example shows how to use the method on a button click:
 
 >To export the default styles of RadGridView in grouped state, at least one row must be expanded, so that the exporting engine can get the styles.
 
+>importantExporting the Default Styles will take into account the styling applied to the __first element__ of each type(cell, column header, etc.). This is due to performance optimizations. Exporting a separate style for the needed element is discussed in details here:[Style Exported XLSX & PDF Documents]({%slug gridview-export-style-exported-xlsx-pdf-documents%}).
+
 RadGridView can be exported with its default styles by setting the ExportDefaultStyles property to “true”
 
 By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1)
@@ -134,12 +136,14 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 
 By default, the Aggregate results of the __GroupHeaderRow__ will be exported. Note, that this is an operation performed on data level. Hiding the GroupHeaderRow Aggregates in the UI through a Style targeting the __GroupHeaderRow__ element does not affect it. In order to disable the exporting of the GroupHeaderRow Aggregates, you can set the __ShowGroupHeaderColumnAggregates__ of the __GridViewDocumentExportOptions__ to __False__.
 
-{{region gridview-export-xlsx-3}}
+#### __[C#] Example 4: Setting ShowGroupHeaderRowAggregates__
+
+{{region cs-gridview-export-pdf-3}}
 	if (dialog.ShowDialog() == true)
             {
                 using (Stream stream = dialog.OpenFile())
                 {
-                    gridViewExport.ExportToXlsx(stream,
+                    gridViewExport.ExportToPdf(stream,
                         new GridViewDocumentExportOptions()
                         {
                             ShowColumnFooters = true,
@@ -153,7 +157,7 @@ By default, the Aggregate results of the __GroupHeaderRow__ will be exported. No
 
 ## Events
 
-There are two events related to the exporting of RadGridView with the ExportToPdf method: *ElementExportingToDocument* and *ElementExportedToDocument*. You can find more information regarding them in the [Export Events]({%slug gridview-export-events%}) section.
+There are two events related to the exporting of RadGridView with the ExportToPdf() method: *ElementExportingToDocument* and *ElementExportedToDocument*. You can find more information regarding them in the [Export Events]({%slug gridview-export-events%}) section.
 
 ## How to
 

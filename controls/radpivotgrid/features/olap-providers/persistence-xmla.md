@@ -10,6 +10,8 @@ position: 4
 
 # Persist XmlaDataProvider
 
+> The implementation demonstrated in this article can also be reviewed in the [Persist XmlaDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Persistence/XmlaPersistence) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
+
 In this article we will show you how to persist the current state of __XmlaDataProvider__ via Telerik's RadPersistenceFramework.      
 
 ## Persistence Framework

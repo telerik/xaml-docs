@@ -56,7 +56,7 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 
 ## Configure the Smart Labels feature
 
-You are able to configure the setting of the Smart Labels feature by using the __LabelSettings__ property of the series definitions. For the most series this property is of type __LabelSettings__. For the __BarSeriesDefinition__ it is of type __BarLabelSettings__ and for the __PieSereisDefinition__ and the __DoughnutSeriesDefinition__ it is of type __RadialLabelSettings__.
+You are able to configure the setting of the Smart Labels feature by using the __LabelSettings__ property of the series definitions. For the most series this property is of type __LabelSettings__. For the __BarSeriesDefinition__ it is of type __BarLabelSettings__ and for the __PieSeriesDefinition__ and the __DoughnutSeriesDefinition__ it is of type __RadialLabelSettings__.
 
 ## LabelSettings
 

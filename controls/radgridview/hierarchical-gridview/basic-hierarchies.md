@@ -10,35 +10,21 @@ position: 1
 
 # Basic Hierarchies
 
-![](images/RadGridView_BasicHierarchies_1.png)
+* [Defining the GridViewTableDefinition](#defining-the-gridviewtabledefinition)
+* [Check if a hierarchy item is expanded](#check-if-a-hierarchy-item-is-expanded)
 
-The __RadGridView__ allows you to display hierarchical data in the form of nested grid views. To do so you have to define a table definition for each subset of data you want to display. Such a definition can be done by creating a __GridViewTableDefinition__ object and adding it to the __ChildTableDefinitions__ collection of the __RadGridView__.
+#### __Figure 1: Hierarhical RadGridView__
+![Hierarhical RadGridView](images/RadGridView_BasicHierarchies_1.png)
 
-The __GridViewTableDefinition__ class is to be found in the same assembly and namespace as the __RadGridView__ control. To learn how to create a __GridViewTableDefinition__ take a look at the following lines of code.
+__RadGridView__ allows you to display hierarchical data in the form of nested grid views. To do so you have to define a table definition for each subset of data you want to display. Such a definition can be done by creating a __GridViewTableDefinition__ object and adding it to the __ChildTableDefinitions__ collection of the __RadGridView__.
 
-#### __XAML__
+## Defining the GridViewTableDefinition
 
-{{region xaml-gridview-basic-hierarchies_0}}
-	<telerik:GridViewTableDefinition />
-{{endregion}}
-
-#### __C#__
-
-{{region cs-gridview-basic-hierarchies_1}}
-	GridViewTableDefinition d = new GridViewTableDefinition();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-basic-hierarchies_2}}
-	Dim d As New GridViewTableDefinition()
-{{endregion}}
-
-After that set its __Relation__ property to the name of the property containing the subset of data. In this way you define the data source for the nested tables. You set the property to an object of type __PropertyRelation__.
+Specific for the __GridViewTableDefinition__ is that it needs to have its __Relation__ property to the name of the property containing the subset of data. In this way you define the data source for the nested tables. You set the property to an object of type __PropertyRelation__.
 
 The __ParentPropertyName__ of the __PropertyRelation__ object represents the name of the property that will be used as a source for the nested table.
 
-#### __XAML__
+#### __[XAML] Example 1: Defining the GridViewTableDefinition__
 
 {{region xaml-gridview-basic-hierarchies_4}}
 	<telerik:GridViewTableDefinition>
@@ -48,15 +34,14 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 	</telerik:GridViewTableDefinition>
 {{endregion}}
 
-#### __C#__
-
+#### __[C#] Example 2: Defining the GridViewTableDefinition programmatically__
 {{region cs-gridview-basic-hierarchies_5}}
 	GridViewTableDefinition td = new GridViewTableDefinition();
 	td.Relation = new PropertyRelation("Orders");
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Defining the GridViewTableDefinition programmatically__
 
 {{region vb-gridview-basic-hierarchies_6}}
 	Dim td As New GridViewTableDefinition()
@@ -65,7 +50,7 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 
 Now you can add the definition to the __ChildTableDefinitions__ collection.
 
-#### __XAML__
+#### __[XAML] Example 3: Adding the GridViewTableDefinition to the ChildTableDefinitions__
 
 {{region xaml-gridview-basic-hierarchies_7}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -81,19 +66,36 @@ Now you can add the definition to the __ChildTableDefinitions__ collection.
 {{endregion}}
 
 
-#### __C#__
+#### __[C#] Example 4: Adding the GridViewTableDefinition to the ChildTableDefinitions programmatically__
 
 {{region cs-gridview-basic-hierarchies_8}}
 	this.radGridView.ChildTableDefinitions.Add(td);
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Adding the GridViewTableDefinition to the ChildTableDefinitions programmatically__
 
 {{region vb-gridview-basic-hierarchies_9}}
 	Me.radGridView.ChildTableDefinitions.Add(d)
 {{endregion}}
 
 >tipThe __GridViewTableDefinition__ object also exposes a __ChildTableDefinitions__ property, which means that you can nest grids on more than one level.
+
+## Check if a hierarchy item is expanded
+
+>The __IsExpanded__ method can also be used to check whether a group is expanded. More information can be found in the [Programmatic Grouping]({%slug gridview-programmatic-grouping%}) topic.
+
+In case when checking whether a given hierarchical item is expanded the __IsExpanded__ method of __RadGridView__ comes in handy. When an item is passed as a parameter to it, it will return a boolean value determining whether its hierarchy is expanded or not.
+
+#### __[C#] Example 5: Call the IsExpanded method of RadGridView__
+
+{{region vb-gridview-basic-hierarchies_10}}
+	bool isExpanded = this.clubsGrid.IsExpanded(this.clubsGrid.Items[0]);
+{{endregion}}
+
+#### __[VB.NET] Example 5: Call the IsExpanded method of RadGridView__
+{{region vb-gridview-basic-hierarchies_10}}
+	Dim isExpanded As Boolean = Me.clubsGrid.IsExpanded(Me.clubsGrid.Items(0))
+{{endregion}}
 
 ## See Also
 

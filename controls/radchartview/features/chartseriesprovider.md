@@ -101,202 +101,188 @@ In the following example, the chart is populated by a collection of 3 items, thu
 
 #### __[XAML] Example 2: A sample chart definition with its SeriesProvider set__
 {{region radchartview-features-chartseriesprovider_02}}
-	<telerik:RadCartesianChart x:Name="chart" Palette="Summer">
-	            
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	        <telerik:CategoricalAxis></telerik:CategoricalAxis>
-	    </telerik:RadCartesianChart.HorizontalAxis>
-	            
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis HorizontalAlignment="Right"></telerik:LinearAxis>
-	    </telerik:RadCartesianChart.VerticalAxis>
-	            
-	    <telerik:RadCartesianChart.SeriesProvider>
-	        <telerik:ChartSeriesProvider Source="{Binding Data}">
-	            <telerik:ChartSeriesProvider.SeriesDescriptors>
-	
-	                <telerik:CategoricalSeriesDescriptor ItemsSourcePath="Data" ValuePath="Sales" CategoryPath="MonthName">
-	                    <telerik:CategoricalSeriesDescriptor.Style>
-	                        <Style TargetType="telerik:BarSeries">
-	                            <Setter Property="CombineMode" Value="Cluster" />
-	                        </Style>
-	                    </telerik:CategoricalSeriesDescriptor.Style>
-	                </telerik:CategoricalSeriesDescriptor>
-	
-	                <telerik:CategoricalSeriesDescriptor ItemsSourcePath="Data" ValuePath="Sales" CategoryPath="MonthName" CollectionIndex="2">
-	                    <telerik:CategoricalSeriesDescriptor.Style>
-	                        <Style TargetType="telerik:LineSeries">
-	                            <Setter Property="StrokeThickness" Value="2"/>
-	                        </Style>
-	                    </telerik:CategoricalSeriesDescriptor.Style>
-	                </telerik:CategoricalSeriesDescriptor>
-	                        
-	            </telerik:ChartSeriesProvider.SeriesDescriptors>
-	        </telerik:ChartSeriesProvider>
-	                
-	    </telerik:RadCartesianChart.SeriesProvider>
+	<telerik:RadCartesianChart Palette="Flower">
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis />
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis />
+		</telerik:RadCartesianChart.VerticalAxis>
+
+		<telerik:RadCartesianChart.SeriesProvider>
+			<telerik:ChartSeriesProvider Source="{Binding Data}">
+				<telerik:ChartSeriesProvider.SeriesDescriptors>
+					<telerik:CategoricalSeriesDescriptor CategoryPath="Category" 
+															ValuePath="Value" 
+															ItemsSourcePath="Items" />
+					<telerik:CategoricalSeriesDescriptor CategoryPath="Category"
+															ValuePath="Value"
+															ItemsSourcePath="Items" 
+															CollectionIndex="2">
+						<telerik:CategoricalSeriesDescriptor.Style>
+							<Style TargetType="telerik:LineSeries">
+								<Setter Property="StrokeThickness" Value="4" />
+							</Style>
+						</telerik:CategoricalSeriesDescriptor.Style>
+					</telerik:CategoricalSeriesDescriptor>
+				</telerik:ChartSeriesProvider.SeriesDescriptors>
+			</telerik:ChartSeriesProvider>
+		</telerik:RadCartesianChart.SeriesProvider>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
 #### __[C#] Example 3: The chart's view models set up__
 {{region radchartview-features-chartseriesprovider_03}}
-	public class SalesInfo 
-	{
-	    public string MonthName { get; set; }
-	    public double Sales { get; set; }
-	}
+	public class DataItem
+    {
+        public string Category { get; set; }
+
+        public double Value { get; set; }
+    }
 	
-	public class VendorYearlyData
-	{
-	    public string VendorName { get; set; }
-	    public ObservableCollection<SalesInfo> Data { get; set; }
-	}
+	public class SeriesViewModel
+    {
+        public string SeriesType { get; set; }
+
+        public ObservableCollection<DataItem> Items { get; set; }
+    }
 	
 	public class MainViewModel
-	{
-	    public ObservableCollection<VendorYearlyData> Data { get; set; }
-	
-	    public MainViewModel()
-	    {
-	        this.Data = GetSampleData();
-	    }
-	
-	    private ObservableCollection<VendorYearlyData> GetSampleData()
-	    {
-	        var result = new ObservableCollection<VendorYearlyData>();
-	
-	        result.Add(new VendorYearlyData()
-	        {
-	            VendorName = "Vendor A",
-	            Data = new ObservableCollection<SalesInfo>()
-	            {
-	                new SalesInfo() { MonthName = "Jan", Sales = 5 },
-	                new SalesInfo() { MonthName = "Feb", Sales = 7 },
-	                new SalesInfo() { MonthName = "Mar", Sales = 6 },
-	                new SalesInfo() { MonthName = "Apr", Sales = 8 }
-	            }
-	        });
-	
-	        result.Add(new VendorYearlyData()
-	        {
-	            VendorName = "Vendor B",
-	            Data = new ObservableCollection<SalesInfo>()
-	            {
-	                new SalesInfo() { MonthName = "Jan", Sales = 15 },
-	                new SalesInfo() { MonthName = "Feb", Sales = 18 },
-	                new SalesInfo() { MonthName = "Mar", Sales = 19 },
-	                new SalesInfo() { MonthName = "Apr", Sales = 23 }
-	            }
-	        });
-	
-	
-	        result.Add(new VendorYearlyData()
-	        {
-	            VendorName = "Vendor C",
-	            Data = new ObservableCollection<SalesInfo>()
-	            {
-	                new SalesInfo() { MonthName = "Jan", Sales = 21 },
-	                new SalesInfo() { MonthName = "Feb", Sales = 25 },
-	                new SalesInfo() { MonthName = "Mar", Sales = 26 },
-	                new SalesInfo() { MonthName = "Apr", Sales = 25 }
-	            }
-	        });
-	
-	        return result;
-	    }
-	}
+    {
+        public ObservableCollection<SeriesViewModel> Data
+        {
+            get;
+            set;
+        }
+
+        public MainViewModel()
+        {
+            this.Data = new ObservableCollection<SeriesViewModel>()
+            {
+                new SeriesViewModel()
+                {
+                    SeriesType = "Bar",
+                    Items = new ObservableCollection<DataItem>()
+                    {
+                        new DataItem() { Category = "A", Value = 5},
+                        new DataItem() { Category = "B", Value = 7},
+                        new DataItem() { Category = "C", Value = 6},
+                        new DataItem() { Category = "D", Value = 8}
+                    }
+                },
+                new SeriesViewModel()
+                {
+                    SeriesType = "Bar",
+                    Items = new ObservableCollection<DataItem>()
+                    {
+                        new DataItem() { Category = "A", Value = 15},
+                        new DataItem() { Category = "B", Value = 18},
+                        new DataItem() { Category = "C", Value = 19},
+                        new DataItem() { Category = "D", Value = 23}
+                    }
+                },
+                new SeriesViewModel()
+                {
+                    SeriesType = "Line",
+                    Items = new ObservableCollection<DataItem>()
+                    {
+                        new DataItem() { Category = "A", Value = 21},
+                        new DataItem() { Category = "B", Value = 25},
+                        new DataItem() { Category = "C", Value = 26},
+                        new DataItem() { Category = "D", Value = 25}
+                    }
+                }
+            };
+        }
+    }
 {{endregion}}
 
 #### __[VB.NET] Example 3: A sample chart definition with its SeriesProvider set__
 {{region radchartview-features-chartseriesprovider_04}}
-	Public Class SalesInfo
-		Public Property MonthName() As String
-		Public Property Sales() As Double
+	Public Class DataItem
+		Public Property Category() As String
+
+		Public Property Value() As Double
 	End Class
+
 	
-	Public Class VendorYearlyData
-		Public Property VendorName() As String
-		Public Property Data() As ObservableCollection(Of SalesInfo)
+	Public Class SeriesViewModel
+		Public Property SeriesType() As String
+
+		Public Property Items() As ObservableCollection(Of DataItem)
 	End Class
 	
 	Public Class MainViewModel
-		Public Property Data() As ObservableCollection(Of VendorYearlyData)
-	
+		Public Property Data() As ObservableCollection(Of SeriesViewModel)
+
 		Public Sub New()
-			Me.Data = GetSampleData()
+			Me.Data = New ObservableCollection(Of SeriesViewModel)() _
+				From {
+					New SeriesViewModel() With {
+						.SeriesType = "Bar",
+						.Items = New ObservableCollection(Of DataItem)() From {
+							New DataItem() With {
+								.Category = "A",
+								.Value = 5
+							},
+							New DataItem() With {
+								.Category = "B",
+								.Value = 7
+							},
+							New DataItem() With {
+								.Category = "C",
+								.Value = 6
+							},
+							New DataItem() With {
+								.Category = "D",
+								.Value = 8
+							}
+						}
+					},
+					New SeriesViewModel() With {
+						.SeriesType = "Bar",
+						.Items = New ObservableCollection(Of DataItem)() From {
+							New DataItem() With {
+								.Category = "A",
+								.Value = 15
+							},
+							New DataItem() With {
+								.Category = "B",
+								.Value = 18
+							},
+							New DataItem() With {
+								.Category = "C",
+								.Value = 19
+							},
+							New DataItem() With {
+								.Category = "D",
+								.Value = 23
+							}
+						}
+					},
+					New SeriesViewModel() With {
+						.SeriesType = "Line",
+						.Items = New ObservableCollection(Of DataItem)() From {
+							New DataItem() With {
+								.Category = "A",
+								.Value = 21
+							},
+							New DataItem() With {
+								.Category = "B",
+								.Value = 25
+							},
+							New DataItem() With {
+								.Category = "C",
+								.Value = 26
+							},
+							New DataItem() With {
+								.Category = "D",
+								.Value = 25
+							}
+						}
+					}
+				}
 		End Sub
-	
-		Private Function GetSampleData() As ObservableCollection(Of VendorYearlyData)
-			Dim result = New ObservableCollection(Of VendorYearlyData)()
-	
-			result.Add(New VendorYearlyData() With { _
-				.VendorName = "Vendor A", _
-				.Data = New ObservableCollection(Of SalesInfo)() With { _
-					New SalesInfo() With { _
-						.MonthName = "Jan", _
-						.Sales = 5 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Feb", _
-						.Sales = 7 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Mar", _
-						.Sales = 6 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Apr", _
-						.Sales = 8 _
-					} _
-				} _
-			})
-	
-			result.Add(New VendorYearlyData() With { _
-				.VendorName = "Vendor B", _
-				.Data = New ObservableCollection(Of SalesInfo)() With { _
-					New SalesInfo() With { _
-						.MonthName = "Jan", _
-						.Sales = 15 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Feb", _
-						.Sales = 18 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Mar", _
-						.Sales = 19 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Apr", _
-						.Sales = 23 _
-					} _
-				} _
-			})
-	
-			result.Add(New VendorYearlyData() With { _
-				.VendorName = "Vendor C", _
-				.Data = New ObservableCollection(Of SalesInfo)() With { _
-					New SalesInfo() With { _
-						.MonthName = "Jan", _
-						.Sales = 21 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Feb", _
-						.Sales = 25 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Mar", _
-						.Sales = 26 _
-					}, _
-					New SalesInfo() With { _
-						.MonthName = "Apr", _
-						.Sales = 25 _
-					} _
-				} _
-			})
-			
-			Return result
-		End Function
 	End Class
 {{endregion}}
 

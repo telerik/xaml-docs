@@ -135,6 +135,11 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-zoom-out"></i>|GlyphZoomOut|e140|&amp;#xe140;|
 |<i class=" t-i-pan"></i>|GlyphPan|e141|&amp;#xe141;|
 |<i class=" t-i-calculator"></i>|GlyphCalculator|e142|&amp;#xe142;|
+|<i class=" t-i-equal"></i>|GlyphEqual|e14A|&amp;#xe14a;|
+|<i class=" t-i-not-equal"></i>|GlyphNotEqual|e14B|&amp;#xe14b;|
+|<i class=" t-i-less-or-equal"></i>|GlyphLessThanOrEqual|e14C|&amp;#xe14c;|
+|<i class=" t-i-greater-or-equal"></i>|GlyphGreaterThanOrEqual|e14D|&amp;#xe14d;|
+|<i class=" t-i-divide"></i>|GlyphDivide|e14E|&amp;#xe14e;|
 |__Media__|__e200__|||
 |<i class=" t-i-play"></i>|GlyphPlay|e200|&amp;#xe200;|
 |<i class=" t-i-pause"></i>|GlyphPause|e201|&amp;#xe201;|

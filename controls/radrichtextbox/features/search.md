@@ -1,13 +1,13 @@
 ---
-title: Search
-page_title: Search
-description: Search
+title: Find and Replace (Search)
+page_title: Find and Replace (Search)
+description: Find and Replace (Search)
 slug: radrichtextbox-features-search
-tags: search
+tags: search, find, replace
 published: True
 ---
 
-# Search
+# Find and Replace (Search)
 
 
 

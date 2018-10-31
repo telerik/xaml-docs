@@ -28,6 +28,8 @@ There is also an option to implement programmatic scrolling. To learn more read 
 
 When RadGridView's **ScrollMode** is set to **Deffered**, a small tooltip appears when scrolling which previews the current scroll position. This is an element of type **ScrollPositionIndicator** and by default its content will be that of the first column's cells. You can define a custom **DataTemplate** for it by setting RadGridView's **ScrollPositionIndicatorTemplate** property in order to display content of your choice.
 
+> If you want to prevent the ScrollPositionIndicator from showing, you can set the __ShowScrollPositionIndicator__ property of the RadGridView to __False__. This property is available since the __2018.3.1029__ version. Setting the ShowScrollPositionIndicator property will only have an effect when the **ScrollMode** is set to **Deffered**.
+
 #### __[XAML] Example 1: Defining ScrollPositionIndicatorTemplate__
 
 {{region xaml-gridview-scrolling_0}}

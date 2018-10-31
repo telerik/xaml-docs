@@ -51,7 +51,7 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
 
 In the example above Entity Framework is used. However, you may use Linq to SQL, OpenAccess or any other Linq provider in the same manner.
 
->When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
+>When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ by setting the __ShowScrollPositionIndicator__ property of the RadGridView to __False__. This property is available since the __2018.3.1029__ version.
 
 {% endif %}
 
@@ -99,8 +99,6 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 __ItemsLoading__ event will be raised if you try to access some item by index and this item is not yet loaded. When you scroll down, the ItemsLoading event will be called and the empty(null) items in the collection will be replaced with the new items. When an item is already loaded the collection will not call ItemsLoading event for this item.
         
 >important When you provide IQueryable in the VirtualQueryableCollectionView you do not need to handle the ItemsLoading event.
-
->When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
                
 {% if site.site_name == 'WPF' %}
 Check out the WPF Demos [here.](https://demos.telerik.com/wpf/)

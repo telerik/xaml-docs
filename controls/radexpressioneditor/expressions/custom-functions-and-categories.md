@@ -205,5 +205,5 @@ The example above removes some of the operators, constants and the **Discontinue
 
 ## See Also
 
-* [Lambdas]({%slug %})
+* [Lambdas]({%slug radexpressioneditor-expressions-lambdas%})
 

@@ -5,7 +5,7 @@ description: Document Variables
 slug: radrichtextbox-features-document-variables
 tags: document,variables
 published: True
-position: 1
+position: 2
 ---
 
 # Document Variables

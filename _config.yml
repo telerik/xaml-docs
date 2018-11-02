@@ -412,8 +412,6 @@ navigation:
     controls/radgauge/features/ticks:
         title: Ticks
         position: 9
-    controls/radhyperlinkbutton:
-        title: RadHyperlinkButton
     controls/radheatmap:
         title: RadHeatMap
     controls/radhtmlplaceholder:

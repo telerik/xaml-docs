@@ -27,6 +27,7 @@ Telerik controls provide a set of different built-in __IValueConverters__ which 
 * [BinaryImageConverter](#binaryimageconverter)
 * [DoubleToThicknessConverter](#doubletothicknessconverter)
 * [OpacityConverter](#opacityconverter)
+* [ThicknessToOrientedThicknessConverter](#thicknesstoorientedthicknessconverter )
 
 #### __[XAML] Example 1: Specifying converters in XAML__
 	{{region xaml-common-converters_0}}
@@ -44,6 +45,7 @@ Telerik controls provide a set of different built-in __IValueConverters__ which 
 			  <telerik:BinaryImageConverter x:Key="BinaryImageConverter"/>
 			  <telerik:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter"/>
 			  <telerik:OpacityConverter x:Key="OpacityConverter"/>
+			  <telerik:ThicknessToOrientedThicknessConverter x:Key="ThicknessToOrientedThicknessConverter"/>
 		  </FrameworkElement.Resources>
 		</FrameworkElement>
 	{{endregion}}
@@ -149,6 +151,30 @@ The converter applies opacity to a __Color__ or __Brush__ value based on the par
 	{{region xaml-common-converters_6}}
 		<Border Background="{Binding Color, Converter={StaticResource OpacityConverter},ConverterParameter=8}"  />
 	{{endregion}}
+
+## ThicknessToOrientedThicknessConverter
+
+The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. __The parameter is required.__
+
+#### __[C#] Example 6: Setting the ViewModel__
+	{{region cs-common-converters_5}}
+		public class MainWindow
+		{
+			 public MainWindow()
+			{
+				InitializeComponent();
+
+				this.DataContext = this;
+				Value = new Thickness(2, 3, 4, 5);				
+			}
+			public Thickness Value { get; set; }
+		}
+	{{endregion}}
+
+#### __[XAML] Example 7: Setting the converter to the BorderThickness property__
+	{{region xaml-common-converters_6}}
+		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
+	{{endregion}}	
 
 ## See Also
 

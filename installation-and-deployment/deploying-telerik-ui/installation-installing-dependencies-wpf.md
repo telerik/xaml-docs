@@ -57,7 +57,6 @@ RadExpressionEditor	|	Telerik.Windows.Controls.Expressions, Telerik.Windows.Data
 RadGanttView	|	Telerik.Windows.Controls.GanttView, Telerik.Windows.Scheduling.Core
 RadGauge	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadGridView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input
-RadHyperlinkButton | Telerik.Windows.Controls
 RadHeatMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadImageEditor	|	Telerik.Windows.Controls.ImageEditor, Telerik.Windows.Controls.Input
 RadLayoutControl	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation

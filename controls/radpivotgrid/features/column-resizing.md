@@ -1,7 +1,7 @@
 ---
 title: Column Resizing
 page_title: Column Resizing
-description: Column Resizing
+description: This article describes how users can change the widths of the columns in the RadPivotGrid control via the CanUserResizeColumns property.
 slug: radpivotgrid-features-column-resizing
 tags: column,resizing
 published: True

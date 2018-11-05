@@ -10,8 +10,7 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadBulletGraph_Overview_01.png){% endif %}
-{% if site.site_name == 'WPF' %}![](images/RadBulletGraph_Overview_01_WPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![](images/RadBulletGraph_Overview_01.png){% else %}![](images/RadBulletGraph_Overview_01_WPF.png){% endif %}
 
 The __RadBulletGraph__ control is a variation of linear gauge. It combines a number of indicators, as well as the data indicator into one control, which is lightweight, easily customizable and straightforward to setup and use. The control is a great tool for creating dashboards that presents a lot of information in relatively small size.
 
@@ -27,7 +26,7 @@ The __RadBulletGraph__ control is a variation of linear gauge. It combines a num
 
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#BulletGraph/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
-__RadBulletGraph elements__
-
-The following screenshot demonstrates the elements available in the Bullet graph control:  
-![](images/radbulletgraphelements.png)
+## See Also  
+* [Getting Started]({%slug radbulletgraph-getting-started%})
+* [Qualitative Scale]({%slug radbulletgraph-features-qualitative-scale%})
+* [Qualitative Ranges]({%slug radbulletgraph-features-qualitative-ranges%})

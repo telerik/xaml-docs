@@ -21,13 +21,31 @@ In order to use RadBulletGraph in your project you have to add a reference to th
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
+## BulletGraph Types
+
+The RadBulletGraph suite provides two controls - one horizontally arranged and one vertically.
+
+* __RadHorizontalBulletGraph__
+
+* __RadVerticalBulletGraph__
+
+## Visual Structure
+
+The following image describes the main elements of the RadBulletGraph control.
+
+#### __Figure 1: BulletGraph visual elements__
+![](images/radbulletgraphelements.png)
+
 ## Defining the RadBulletGraph
 
-There are two main types of bullet graphs - horizontal and vertical, depending on the direction in which the control is drawn.
+The following examples show how to define a simple horizontal and vertical bullet graphs.
 
-#### __[XAML] Example 1: Defining horizontal bulletgraph control__
+#### __[XAML] Example 1: Defining horizontal bullet graph control__
 {{region radbulletgraph-getting-started-0}}
-	<telerik:RadHorizontalBulletGraph Width="300" Height="60" Minimum="0" Maximum="100" FeaturedMeasure="60" ComparativeMeasure="65" ProjectedValue="75">
+	<telerik:RadHorizontalBulletGraph FeaturedMeasure="60"
+									  ComparativeMeasure="65" 
+									  ProjectedValue="75"
+									  Maximum="100">
 		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
 			<telerik:QualitativeRange Brush="#A8A8A8" Value="150" />
 			<telerik:QualitativeRange Brush="#C6C8C8" Value="225" />
@@ -36,12 +54,15 @@ There are two main types of bullet graphs - horizontal and vertical, depending o
 	</telerik:RadHorizontalBulletGraph>
 {{endregion}}
 
-#### __Figure 1: RadHorizontalBulletGraph__
+#### __Figure 2: RadHorizontalBulletGraph__
 ![](images/radbulletgraph_getting_started_0.png)
 
-#### __[XAML] Example 1: Defining vertical bulletgraph control__
+#### __[XAML] Example 1: Defining vertical bullet graph control__
 {{region radbulletgraph-getting-started-1}}
-	<telerik:RadVerticalBulletGraph Width="60" Height="300" Minimum="0" Maximum="100" FeaturedMeasure="60" ComparativeMeasure="65" ProjectedValue="75">
+	<telerik:RadVerticalBulletGraph FeaturedMeasure="60" 
+									ComparativeMeasure="65" 
+									ProjectedValue="75"
+									Maximum="100">
 		<telerik:RadVerticalBulletGraph.QualitativeRanges>
 			<telerik:QualitativeRange Brush="#A8A8A8" Value="150" />
 			<telerik:QualitativeRange Brush="#C6C8C8" Value="225" />
@@ -55,5 +76,6 @@ There are two main types of bullet graphs - horizontal and vertical, depending o
 
 ## See Also
 * [Overview]({%slug radbulletgraph_overview%})
-* [Properties]({%slug radbulletgraph_properties%})
+* [Qualitative Ranges]({%slug radbulletgraph-features-qualitative-ranges%})
+* [Measures]({%slug radbulletgraph-features-measures%})
 * [Creating a BulletGraph Programmatically]({%slug radbulletgraph_creating_a_bulletgraph_programmatically%})

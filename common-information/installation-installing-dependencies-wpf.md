@@ -65,7 +65,6 @@ RadListBox	|	Telerik.Windows.Controls
 RadMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadMaskedInput	|	Telerik.Windows.Controls.Input
 RadMenu	|	Telerik.Windows.Controls.Navigation
-RadMultiColumnComboBox | Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Data
 RadNumericUpDown	|	Telerik.Windows.Controls.Input
 RadOutlookBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPanelBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
@@ -110,10 +109,8 @@ RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.F
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 
-## See Also
+## See Also 
+ * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
+ * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
+ * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
 
-* [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
-
- * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
-
- * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration-wpf%})

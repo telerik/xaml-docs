@@ -87,7 +87,7 @@ As of __R3 2018 RadGridView__ supports setting the Background of the selected ce
 
 ## Setting the BorderBrush of the CurrentCell
 
-As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell . 
+As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell. 
 
 **Example 4** demonstrates how you can set the borderbrush of the current cell to transparent. You can compare **Figure 3** and **Figure 4** to notice that the border of the current cell is not visible.
 
@@ -100,6 +100,8 @@ As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current ce
 
 #### __Figure 4: Result from Example 4 in the Office2016 theme__
 ![RadGridView with CurrentBorderBrush for the cells](images/gridview-currentborderbrush.png)
+
+> After you have set the __CurrentBorderBrush__ to __Transparent__, if you start navigating through the cells with the keyboard, you will be able to see the FocusVisual border. If you want to hide it as well, you can set the __FocusVisualStyle__ of the GridViewCell to null through a style similar to __Example 4__.
 
 ## See Also
 

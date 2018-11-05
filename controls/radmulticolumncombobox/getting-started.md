@@ -41,7 +41,7 @@ Note, that such definition would simply result in having an AutoComplete box. In
 {{region radmulticolumncombobox-gettingstarted_1}}
 	 <telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}" />
+                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" />
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
 {{endregion}}

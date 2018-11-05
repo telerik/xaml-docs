@@ -10,7 +10,7 @@ position: 1
 
 # Edit Modes
 
-The __RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read-only, in order to keep the editable look, and in the same time to prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes.
+__RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read-only, in order to keep the editable look, and in the same time to prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes.
 
 This topic contains the following sections:
 
@@ -46,6 +46,8 @@ By default, the __RadComboBox__ is non-editable. Which means that its __Input Ar
 ## Editable and Read-Only RadComboBox
 
 You have the ability to make your __RadComboBox__ __editable__, but its __text box__ to be __read-only__. Thus you will keep the editable look, but will prevent the user from typing. The only thing you should do is to set both of the properties __IsEditable__ and __IsReadOnly__ to __True__.
+
+> The RadComboBox does not have a visual _readonly_ state. In fact, it will have its normal look when the __IsReadOnly__ property is __True__. Additionally, setting the ReadOnlyBackgroundColor and ReadOnlyBorderColor, available in all themes released after [Office2016]({%slug common-styling-appearance-office2016-theme%}#readonlybackgroundbrush-and-readonlyborderbrush), will have no effect on the control. 
 
 #### __[XAML] Example 1: Setting the IsEditable and IsReadOnly to True__
 

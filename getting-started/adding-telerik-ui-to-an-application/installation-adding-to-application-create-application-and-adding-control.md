@@ -34,7 +34,7 @@ The following topic describes what steps you should perform in order to add the 
 
 	At this point the project references only the common Telerik.Windows.Controls.dll. 
 
-4. Configure the project using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking okay will add all required references for the controls.
+4. Configure the project using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
 
 	#### __Figure 3: Adding references to the charting controls__
 	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
@@ -60,7 +60,7 @@ The following topic describes what steps you should perform in order to add the 
 
 * Add the Telerik {{ site.platform_name }} controls to the [Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}).
 
-	>tip If you wonder which control in which assembly belongs to, read the main topic about {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
+	>tip See the assemblies required by each Telerik control in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} article.
 
 * Open {% if site.site_name == 'WPF' %}MainWindow.xaml{% else %}MainPage.xaml{% endif %} of the project you have previously created (in the [Creating Application and Manually Referencing the Telerik Assemblies](#creating-application-and-manually-referencing-the-telerik-assemblies) section).
 

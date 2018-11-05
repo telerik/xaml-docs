@@ -124,4 +124,4 @@ In order to create a custom tool, you can create a new class using one of the fo
 
 * Create a class that implements the {% if site.site_name == 'Silverlight' %}[ITool](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.diagrams.core.itool){% else %}[ITool](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.itool){% endif %} interface and one or both of the __IMouseListener__ and __IKeyboardListener__ interfaces.
 
->tip See the [CustomTools](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomTools) SDK example which demostrates how to implement a custom tool. See also, the [Customize the Path and Pencil Tools]({%slug raddiagram-howto-customize-path-pencil-tools%}) article.
+>tip See the [CustomTools](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomTools) SDK example which demonstrates how to implement a custom tool. See also, the [Customize the Path and Pencil Tools]({%slug raddiagram-howto-customize-path-pencil-tools%}) article.

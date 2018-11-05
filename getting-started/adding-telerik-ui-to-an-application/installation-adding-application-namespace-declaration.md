@@ -13,9 +13,9 @@ site_name: WPF
 
 The following topic will show you how to manually declare a namespace in XAML.
 
-Almost all Telerik controls can be found in a special URI namespace schema. You can use only this namespace to access all controls from Telerik assemblies that you are referring in your application. You cannot access controls from assemblies that you are not referring.
+Almost all Telerik controls can be found in the 'telerik' URI namespace schema (see Example 1). You can use only this namespace to access all controls from Telerik assemblies that you are referring in your application. You cannot access controls from assemblies that you are not referring.
         
->There are few controls which are in another namespace. For example, such are RadPivotGrid and RadPivotFieldList and their namespace is: xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"
+>There are few controls which are in another namespace. For example, such are RadPivotGrid and RadPivotFieldList and their namespace is: xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot". 
         	
 1. Create a new [Application]({%slug installation-adding-to-application-create-application-and-adding-control%}).
     	
@@ -74,7 +74,7 @@ Almost all Telerik controls can be found in a special URI namespace schema. You 
 	{{endregion}}
 	{% endif %}
 
-* Now you should be able to declare any controls existing in this namespace and which is in the assemblies you have added in your project. An example of RadTreeView declaration is shown below.
+* Now you should be able to declare any controls - existing in the Telerik namespace - which are included in the assemblies you have added to the project. An example of RadTreeView declaration is shown below.
 
 	{% if site.site_name == 'WPF' %}
 	#### __[XAML] Example 3: Using the Telerik namespace__
@@ -108,7 +108,7 @@ Almost all Telerik controls can be found in a special URI namespace schema. You 
 	{{endregion}}
 	{% endif %}
 
->tip If you wonder which control in which assembly belongs to, read the main topic about {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
+>tip See the Telerik assemblies required by each control in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} article.
 
 ## See Also  
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})

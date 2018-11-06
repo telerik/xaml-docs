@@ -57,7 +57,7 @@ The following examples show how to define a simple horizontal and vertical bulle
 #### __Figure 2: RadHorizontalBulletGraph__
 ![](images/radbulletgraph_getting_started_0.png)
 
-#### __[XAML] Example 1: Defining vertical bullet graph control__
+#### __[XAML] Example 2: Defining vertical bullet graph control__
 {{region radbulletgraph-getting-started-1}}
 	<telerik:RadVerticalBulletGraph FeaturedMeasure="60" 
 									ComparativeMeasure="65" 
@@ -71,7 +71,7 @@ The following examples show how to define a simple horizontal and vertical bulle
 	</telerik:RadVerticalBulletGraph>
 {{endregion}}
 
-#### __Figure 2: RadVerticalBulletGraph__
+#### __Figure 3: RadVerticalBulletGraph__
 ![](images/radbulletgraph_getting_started_1.png)
 
 ## See Also

@@ -35,7 +35,7 @@ When in **Popup** filtering mode, you can set **GridViewColumn.ShowFilterButton*
 
 #### __[VB] Example 2: Hide filter button in code-behind__
 
-{{region vb-gridview-filtering-howto-hide-the-filter-button-2}}
+{{region vb-gridview-filtering-howto-hide-the-filter-button-3}}
 
     Private Sub Grid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
 		If e.ItemPropertyInfo.PropertyType Is GetType(String) Then

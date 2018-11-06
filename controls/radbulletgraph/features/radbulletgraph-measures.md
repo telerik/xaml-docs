@@ -14,9 +14,9 @@ The measures allows you to show the data performance on the bullet graph control
 
 * __FeaturedMeasure__
 
-	This measure is presented by a bar and usually can be used to shows the actual data value. The visual appearance of the featured measure changes if the scale doesn't contain the 0 value. In this case the measure is rendered as an ellipse on the corresponding value. 
+	This measure is presented by a bar and usually can be used to show the actual data value. The visual appearance of the featured measure changes if the scale doesn't contain the 0 value. In this case the measure is rendered as an ellipse on the corresponding value. 
 	
-	The others indincators on the graph allow the end user to the match the actual value against other qualitative and quantitative indicators.
+	The other indincators on the graph allow the end user to the match the actual value against other qualitative and quantitative indicators.
 	
 * __ComparativeMeasure__
 	

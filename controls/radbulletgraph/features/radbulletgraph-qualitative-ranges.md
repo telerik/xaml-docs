@@ -16,7 +16,7 @@ The qualitative ranges are visual annotations used to separate the scale into di
 
 ## Defining Ranges
 
-The ranges are defined manually in the __QualitativeRanges__ collection of the control. Each range is presented by the QualitativeRange control which exposes couple of properties - __Brush__ and __Value__.
+The ranges are defined manually in the __QualitativeRanges__ collection of the control. Each range is presented by the QualitativeRange control which exposes the following properties - __Brush__ and __Value__.
 
 #### __[XAML] Example 1: Showing qualitative ranges__
 {{region radbulletgraph-features-qualitative-ranges-0}}

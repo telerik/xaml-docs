@@ -1,7 +1,7 @@
 ---
 title: Converters
 page_title: Converters 
-description: This article describe built-in converter which can be used.
+description: This article describe Telerik built-in converters which can be used.
 slug: common-converters
 tags: converter
 published: True
@@ -154,7 +154,7 @@ The converter applies opacity to a __Color__ or __Brush__ value based on the par
 
 ## ThicknessToOrientedThicknessConverter
 
-The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. __The parameter is required.__
+The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
 
 #### __[C#] Example 6: Setting the ViewModel__
 	{{region cs-common-converters_5}}

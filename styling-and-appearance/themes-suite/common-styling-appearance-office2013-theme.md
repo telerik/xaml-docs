@@ -161,22 +161,17 @@ As the following example shows, you can change the default __FontFamily__ from "
 #### __XAML__
 {{region common-styling-appearance-office2013-theme_0}}
 	<StackPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-			<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
-			<telerik:RadClock x:Name="Clock" Height="250" Margin="4 10" TimeInterval="0:0:1"/>
-		</StackPanel>
-		<telerik:RadButton x:Name="BtnChangeFontSize" VerticalAlignment="Center" 
-						   HorizontalAlignment="Center" Content="Change Font"
-						   Click="OnButtonChangeFontSizeClick" />
+		<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
+		<telerik:RadButton HorizontalAlignment="Center" Content="Change Font" Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
-</StackPanel>
 {{endregion}}
 
 #### __C#__
 {{region common-styling-appearance-office2013-theme_4}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
-		Office2013Palette.Palette.FontSize = 16;
+		Office2013Palette.Palette.FontSizeL = 24;
+		Office2013Palette.Palette.FontSizeS = 16;
 		Office2013Palette.Palette.FontFamily = new FontFamily("MonoType Corsiva");
 	}
 {{endregion}}

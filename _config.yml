@@ -3396,6 +3396,7 @@ sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
 
 ## Do not edit below this line
+skip_tabbed_code: true
 safe: false
 markdown: MarkdownProcessor
 kramdown:

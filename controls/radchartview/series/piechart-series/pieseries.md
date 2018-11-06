@@ -16,6 +16,7 @@ This series is visualized on the screen as a circle constructed with separate pi
 * [Properties](#properties)
 * [Data Binding](#data-binding)
 * [Setting the Pie Radius](#setting-the-pie-radius)
+* [Offset Pie Slice from Center](#offset-pie-slice-from-center)
 * [Styling the Series](#styling-the-series)
 
 ## Declaratively defined series
@@ -96,6 +97,57 @@ The default value of the property is 0.85
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.4 (right)__
 ![radchartview-series-pieseries](images/radchartview-series-pieseries-1.png)
+
+## Offset Pie Slice from Center
+
+The PieSeries allows you to offset each pie slice from the center of the pie. To do this set the __OffsetFromCenter__ property of the corresponding PieDataPoint.
+
+#### __[XAML] Example 5: Offsetting pie slices__
+{{region radchartview-series-pieseries_4}}
+	<telerik:RadPieChart Palette="Windows8">
+		<telerik:RadPieChart.Series>
+			<telerik:PieSeries>
+				<telerik:PieSeries.DataPoints>
+					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
+					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
+					<telerik:PieDataPoint Label="15.11%" Value="15.11" OffsetFromCenter="0.2"/>
+					<telerik:PieDataPoint Label="10.35%" Value="10.35" OffsetFromCenter="0.2"/>
+					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
+				</telerik:PieSeries.DataPoints>
+			</telerik:PieSeries>
+		</telerik:RadPieChart.Series>
+	</telerik:RadPieChart>
+{{endregion}}	
+
+#### __Figure 3: Exploding pie slices__
+![radchartview-series-pieseries](images/radchartview-series-pieseries-2.png)
+
+Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of PieSeries. In this case when you select a data point, the correspondign pie slice will *explode* from the center of the pie.
+
+#### __[XAML] Example 6: Setting SelectedPointOffset__
+{{region radchartview-series-pieseries_5}}
+	<telerik:RadPieChart Palette="Windows8">
+		<telerik:RadPieChart.Series>
+			<telerik:PieSeries SelectedPointOffset="0.32" RadiusFactor="0.7">
+				<telerik:PieSeries.DataPoints>
+					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
+					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
+					<telerik:PieDataPoint Label="15.11%" Value="15.11" />
+					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
+					<telerik:PieDataPoint Label="3.55%" Value="3.55" />
+				</telerik:PieSeries.DataPoints>
+			</telerik:PieSeries>                
+		</telerik:RadPieChart.Series>
+		<telerik:RadPieChart.Behaviors>
+			<telerik:ChartSelectionBehavior />
+		</telerik:RadPieChart.Behaviors>
+	</telerik:RadPieChart>
+{{endregion}}
+
+#### __Figure 4: Selected exploding pie slices__
+![radchartview-series-pieseries](images/radchartview-series-pieseries-3.png)
+
+> The OffsetFromCenter and SelectedPointOffset works in relative units between 0 and 1. 
 
 ## Styling the Series
 

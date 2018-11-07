@@ -26,7 +26,7 @@ Each [chart series]({%slug radchartview-series-chartseries%}) expose a __LegendS
 
 * __DataPointLegendSettings__: This is supported only by the [BarSeries]({%slug radchartview-series-barseries%}) and [BubbleSeries]({%slug radchartview-series-bubbleseries%}). A LegendItem will be generated for each data point in the series that uses the settings.
 
-	The settings allows you to bind the title to a property from the data point model. You can do that via the __TitleBinding__ property. The property expects a string value that corresponds to the name of a property in the [DataPoint]({%slug radchartview-getting-started-data-point%}) object.
+	The settings allow you to bind the title to a property from the data point model. You can do that via the __TitleBinding__ property. The property expects a string value that corresponds to the name of a property in the [DataPoint]({%slug radchartview-getting-started-data-point%}) object.
 	
 	#### __[XAML] Example 1: Binding legend items title to the Category property of the CategoricalDataPoint object__
 	{{region radchartview-features-radlegend-support_0}}
@@ -62,7 +62,7 @@ Each [chart series]({%slug radchartview-series-chartseries%}) expose a __LegendS
 	
 	![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-0.png)
 
-Both legend settings allows you to set the geometry of the legend item's marker. You can do that via the __MarkerGeometry__ property of the settings.
+Both legend settings allow you to set the geometry of the legend item's marker. You can do that via the __MarkerGeometry__ property of the settings.
 
 ## Code Example
 

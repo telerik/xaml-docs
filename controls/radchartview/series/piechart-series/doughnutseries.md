@@ -1,7 +1,7 @@
 ---
 title: DoughtnutSeries
 page_title: DoughtnutSeries
-description: DoughtnutSeries
+description: RadChartView DoughtnutSeries is visualized on the screen as separate slices representing each of the data points.
 slug: radchartview-series-doughnutseries
 tags: doughtnutseries
 published: True

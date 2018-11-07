@@ -179,7 +179,6 @@ The series in a chart can also be bound through XAML assuming the DataContext of
 			Data = new ObservableCollection<Product>();
 			GetData();
 		}
-
 		private void GetData()
 		{
 			for (int i = 0; i < 10; i++)
@@ -193,11 +192,32 @@ The series in a chart can also be bound through XAML assuming the DataContext of
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 5: Creating ViewModel class__
+
+{{region radchartview-series-databinding_9}}
+	Public Class ViewModel
+		Public Property Data As ObservableCollection(Of Product)
+		Private rnd As Random = New Random()
+		Public Sub New()
+			Data = New ObservableCollection(Of Product)()
+			GetData()
+		End Sub
+		Private Sub GetData()
+			For i As Integer = 0 To 10 - 1
+				Dim product As Product = New Product()
+				product.Name = "Product " & i
+				product.QuantitySold = rnd.[Next](10, 99)
+				Data.Add(product)
+			Next
+		End Sub
+	End Class
+{{endregion}}
+
 The next step is to set the DataContext of the MainWindow to our ViewModel class.
 
 #### __[C#] Example 6: Specifying DataContext of the MainWindow__
 
-{{region radchartview-series-databinding_9}}
+{{region radchartview-series-databinding_10}}
 	public MainWindow()
 	{
 	    InitializeComponent();
@@ -207,7 +227,7 @@ The next step is to set the DataContext of the MainWindow to our ViewModel class
 
 #### __[VB.NET] Example 6: Specifying DataContext of the MainWindow__
 
-{{region radchartview-series-databinding_10}}
+{{region radchartview-series-databinding_11}}
 	Public Sub New()
 		InitializeComponent()
 		Me.DataContext = New ViewModel()
@@ -216,7 +236,7 @@ The next step is to set the DataContext of the MainWindow to our ViewModel class
 
 #### __[XAML] Example 7: Binding BarSeries in XAML__
 
-{{region radchartview-series-databinding_11}}
+{{region radchartview-series-databinding_12}}
 	<telerik:RadCartesianChart x:Name="chart">
 
 		<telerik:RadCartesianChart.HorizontalAxis>

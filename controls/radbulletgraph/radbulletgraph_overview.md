@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: The __RadBulletGraph__ control is a variation of linear gauge. It combines a number of indicators, as well as the data indicator into one control, which is lightweight, easily customizable and straightforward to setup and use.
 slug: radbulletgraph_overview
 tags: overview
 published: True

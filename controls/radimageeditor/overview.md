@@ -21,11 +21,11 @@ __RadImageEditor__ is a control that can be used to preview and edit images in d
 
 * __Rich image editing features set__: The control comes with a bunch of tools that applies different effects to the loaded image. For example, __crop, canvas resize, hue shift, saturation, contrast, rotations, adding text, drawing__, etc. Read more about this in the [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%}) article.
 
-* __Support for various image formats__: The control allows you to import and export different image formats. The following formats could be imported - __JPEG, PNG{% if site.site_name == 'WPF' %}, TIFF, GIF, ICO{%endif%}. The following formats can be exported - PNG, BMP{% if site.site_name == 'WPF' %}, JPEG, TIFF, GIF{%endif%}. Read more about this in the [Import/Export]({%slug radimageeditor-features-import-export%}) article.
+* __Support for various image formats__: The control allows you to import and export different image formats. The following formats could be imported - __JPEG, PNG{% if site.site_name == 'WPF' %}, TIFF, GIF, ICO{%endif%}__. The following formats can be exported - __PNG, BMP{% if site.site_name == 'WPF' %}, JPEG, TIFF, GIF{%endif%}__. Read more about this in the [Import/Export]({%slug radimageeditor-features-import-export%}) article.
 
 * __Custom tools__: __RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. Read more about this in the [How to]({%slug radimageeditor-howto-custom-tool%}) section of the documentation.
 
-* __History__: The control keeps a undo/redo stack with the changes applied to the control. This means that you can go forward and backward into the applied changes. Read more abou this in the [History]({%slug radimageeditor-features-history%}) article.
+* __History__: The control keeps an undo/redo stack with the changes applied to the control. This means that you can go forward and backward into the applied changes. Read more abou this in the [History]({%slug radimageeditor-features-history%}) article.
 
 * __RadImageEditorUI__: An additional control that wraps the RadImageEditor and enriches it with a UI that allows you to easily edit the image without manually executing the different tools. Read more abou this in the [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) article.
 

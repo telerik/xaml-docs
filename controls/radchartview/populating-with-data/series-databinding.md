@@ -137,7 +137,7 @@ Also if binding is done through XAML, the PropertyNameDataPointBinding is the on
 If a series is bound to an observable collection, the series will update as soon as a property of a data item changes. If we needed to track the selling of our products in real-time, we can simply put the product types in an observable collection and whenever we update a product's sold quantity, the chart will be updated. For example:
 
 
-#### __[C#] Example 4: Binding BarSeries to a ObservableCollection__
+#### __[C#] Example 4: Binding BarSeries to ObservableCollection__
 
 {{region radchartview-series-databinding_6}}
 	ObservableCollection<Product> products = new ObservableCollection<Product>();
@@ -147,7 +147,7 @@ If a series is bound to an observable collection, the series will update as soon
 	barSeries.ItemsSource = products;
 {{endregion}}
 
-#### __[VB.NET] Example 4: Binding BarSeries to a ObservableCollection__
+#### __[VB.NET] Example 4: Binding BarSeries to ObservableCollection__
 
 {{region radchartview-series-databinding_7}}
 	Dim products As ObservableCollection(Of Product) = New ObservableCollection(Of Product)

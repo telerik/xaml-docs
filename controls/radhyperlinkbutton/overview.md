@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: RadHyperlink's Overview Article
 slug: hyperlinkbutton-overview
 tags: overview
 published: True

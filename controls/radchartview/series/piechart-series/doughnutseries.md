@@ -143,7 +143,7 @@ The DoughnutSeries allows you to offset each doughnut slice from the center of t
 #### __Figure 3: Exploding pie slices__
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-2.png)
 
-Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the correspondign doughnut slice will *explode* from the center of the doughnut.
+Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the corresponding doughnut slice will *explode* from the center of the doughnut.
 
 #### __[XAML] Example 6: Setting SelectedPointOffset__
 {{region radchartview-series-doughnutseries_5}}

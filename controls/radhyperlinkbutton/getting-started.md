@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: RadHyperlink's Getting Started Article
 slug: hyperlinkbutton-getting-started
 tags: getting,started
 published: True

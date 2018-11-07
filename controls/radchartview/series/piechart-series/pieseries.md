@@ -1,7 +1,7 @@
 ---
 title: PieSeries
 page_title: PieSeries
-description: This article describe the PieSeries of RadChartView.
+description: RadChartView PieSeries is visualized on the screen as a circle constructed with separate pie slices representing each of the data points.
 slug: radchartview-series-pieseries
 tags: pieseries
 published: True

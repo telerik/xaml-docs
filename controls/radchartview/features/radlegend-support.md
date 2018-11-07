@@ -1,7 +1,7 @@
 ---
 title: RadLegend Support
 page_title: RadLegend Support
-description: RadLegend Support
+description: This topic will give you an overview of the RadLegend support that RadChartView provides.
 slug: radchartview-features-radlegend-support
 tags: radlegend,support
 published: True

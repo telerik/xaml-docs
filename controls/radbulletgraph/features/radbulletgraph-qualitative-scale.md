@@ -1,7 +1,7 @@
 ---
 title: Qualitative Scale
 page_title: Qualitative Scale
-description: Qualitative Scale
+description: This article describes the properties exposed by the RadBulletGraph controls for adjusting the qualitative scale.
 slug: radbulletgraph-features-qualitative-scale
 tags: properties, scale
 published: True

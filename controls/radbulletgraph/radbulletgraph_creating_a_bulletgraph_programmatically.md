@@ -26,7 +26,7 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 		Me.LayoutRoot.Children.Add(horizontalBulletGraph)
 	{{endregion}}
 
-2. Configure the BulletGraph by setting sample values for it's [properties]({%slug radbulletgraph_properties%}):
+2. Configure the BulletGraph by setting sample values for it's properties.
 
 	#### __[C#] Example 2: Setting up the bullet graph__  
 	{{region cs-radbulletgraph-creating-bulletgraph-programmatically-2}}

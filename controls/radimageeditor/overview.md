@@ -11,68 +11,29 @@ position: 0
 # Overview
 
 
+{% if site.site_name == 'Silverlight' %}![](images/RadImageEditor_Overview_sl.png){% else %}![](images/RadImageEditor_Overview_wpf.png){% endif %}
 
-## 
+__RadImageEditor__ is a control that can be used to preview and edit images in different file formats. It is meant to be used as a stand-alone control, but has also been integrated in __RadRichTextBox__.         
 
-{% if site.site_name == 'Silverlight' %}![](images/RadImageEditor_Overview_sl.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadImageEditor_Overview_wpf.png){% endif %}
+![](images/radimageeditor-overview-1.png)
 
-__RadImageEditor__ is a control that can be used to preview and edit images in different file formats. It is meant to be used as a stand-alone control, but has also been integrated in __RadRichTextBox__.
-         
+## Key Features
 
-The operations it can perform on an image are: 
+* __Rich image editing features set__: The control comes with a bunch of tools that applies different effects to the loaded image. For example, __crop, canvas resize, hue shift, saturation, contrast, rotations, adding text, drawing__, etc. Read more about this in the [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%}) article.
 
-* Crop 
+* __Support for various image formats__: The control allows you to import and export different image formats. The following formats could be imported - __JPEG, PNG{% if site.site_name == 'WPF' %}, TIFF, GIF, ICO{%endif%}. The following formats can be exported - PNG, BMP{% if site.site_name == 'WPF' %}, JPEG, TIFF, GIF{%endif%}. Read more about this in the [Import/Export]({%slug radimageeditor-features-import-export%}) article.
 
-* Canvas Resize
+* __Custom tools__: __RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. Read more about this in the [How to]({%slug radimageeditor-howto-custom-tool%}) section of the documentation.
 
-* Round Corners (including border)
+* __History__: The control keeps a undo/redo stack with the changes applied to the control. This means that you can go forward and backward into the applied changes. Read more abou this in the [History]({%slug radimageeditor-features-history%}) article.
 
-* Hue Shift
+* __RadImageEditorUI__: An additional control that wraps the RadImageEditor and enriches it with a UI that allows you to easily edit the image without manually executing the different tools. Read more abou this in the [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) article.
 
-* Saturation
+>tip Get started with the control with its [Getting Started]({%slug radimageeditor-getting-started%}) help article that shows how to use it in a basic scenario.
 
-* Contrast (and brightness) 
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ImageEditor/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
-* Sharpen and Blur
-
-* Rotating and Flipping
-
-* Typing
-
-* Drawing
-
-* Panning
-
-The image formats it supports are: 
-
-For import: 
-
-* JPEG; 
-
-* PNG; 
-
-* BMP{% if site.site_name == 'Silverlight' %}.{%endif%}{% if site.site_name == 'WPF' %};
-
-* TIFF;
-
-* GIF;
-
-* ICO.
-{%endif%}
-
-For export: 
-
-{% if site.site_name == 'WPF' %}
-* JPEG;
-{%endif%}
-
-* PNG; 
-
-* BMP{% if site.site_name == 'Silverlight' %}.{%endif%}{% if site.site_name == 'WPF' %};
-
-* TIFF;
-
-* GIF.
-{%endif%}
-
-__RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. 
+## See Also   
+ * [Zooming]({%slug radimageeditor-features-zooming%})
+ * [Panning]({%slug radimageeditor-tools-panning%})
+ * [Developer Focused Examples]({%slug radimageeditor-sdk-examples%})

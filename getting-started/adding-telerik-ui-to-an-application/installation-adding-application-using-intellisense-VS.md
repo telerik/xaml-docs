@@ -5,8 +5,7 @@ description: Using IntelliSense in Visual Studio
 slug: installation-adding-application-using-intellisense-vs
 tags: using,intellisense,in,visual,studio
 published: True
-position: 4
-site_name: Silverlight
+position: 5
 ---
 
 # Using IntelliSense in Visual Studio
@@ -15,8 +14,12 @@ Visual Studio automatically enables [IntelliSense](http://en.wikipedia.org/wiki/
 
 ## Using IntelliSense when Declaring Namespace
 
-When declaring a namespace you can select from the IntelliSense in XAML any of the available namespaces:
-![Common Installing Namespace Declaration 012](images/Common_InstallingNamespaceDeclaration_012.png)
+When declaring a namespace you can select from the IntelliSense in XAML any namespace which is available:
+{% if site.site_name == 'WPF' %}
+![Common Installing Namespace Declaration 1](images/installation-adding-application-using-intellisense-vs-wpf-0.png)
+{% else %}
+![Common Installing Namespace Declaration 2](images/installation-adding-application-using-intellisense-vs-wpf-1.png)
+{% endif %}
 
 For more information about declaring namespaces read [here]({%slug installation-adding-application-namespace-declaration%}).
 
@@ -24,17 +27,20 @@ For more information about declaring namespaces read [here]({%slug installation-
 
 When you add a new control (or configure an existing one) in the XAML, Visual Studio will automatically show a dropdown with suggestions for autocomplete. For example, see the next two figures.
 
-![Common Installing Using Intellisense 012](images/Common_InstallingUsingIntellisense_012.png)
+![Common Installing Namespace Declaration 3](images/installation-adding-application-using-intellisense-vs-wpf-2.png)
+![Common Installing Namespace Declaration 4](images/installation-adding-application-using-intellisense-vs-wpf-3.png)
 
-![Common Installing Using Intellisense 013](images/Common_InstallingUsingIntellisense_013.png)
-
-## Using IntelliSense in the code behind
+## Using IntelliSense in the Code-Behind
 
 In the code-behind, each time a particular class/property/method is being selected from the dropdown of the autocomplete functionality, a tooltip with the comment for this class/property/method is displayed.
-![Common Installing Using Intellisense 014](images/Common_InstallingUsingIntellisense_014.png)
 
-## See Also
+![Common Installing Namespace Declaration 5](images/installation-adding-application-using-intellisense-vs-wpf-4.png)
 
+## See Also  
+{% if site.site_name == 'WPF' %}
+ * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})
+ * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
+{% else %}
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})
-
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
+{% endif %}

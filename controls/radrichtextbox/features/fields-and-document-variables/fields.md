@@ -29,55 +29,9 @@ This topic contains the following sections:
 
 ## Field Types
 
-In the model of RadDocument, the base class for all fields is __CodeBasedField__. It is an abstract class that can be inherited from. Some of the implemented and ready-to-use field types are:
+In the model of RadDocument, the base class for all fields is __CodeBasedField__. It is an abstract class that can be inherited from. 
 
-* __DateField__: Inserts the current date in one of the specified formats.
-            
-
-* __PageField__: Shows the current page number.
-            
-
-* __NumPagesField__: Shows the number of pages in the document.
-            
-
-* __MergeField__: Used in mail-merge scenarios. You can read more here: [Mail Merge]({%slug radrichtextbox-features-mail-merge%}).
-            
-
-* __IncludePictureField__: Specifies the URI from which an image must be retrieved.
-            
-
-* __DocumentVariableField__ А field which uses DocumentVariables. More information can be found here: [Document Variables]({%slug radrichtextbox-features-document-variables%}).
-            
-
-* __SequentialField__: Tracks the number of tables and figures inserted in the document before a place in the document, so that the __InsertCaption()__ method would use the correct number. Find more here: [Captions for Tables and Figures]({%slug radrichtextbox-features-captions-for-tables-and-figures%}).
-            
-
-* __StyleReferenceField__: The type of field that a reference field refers to when a cross-reference to a Heading style is inserted.
-            
-
-* __ReferenceField__: Used to refer to a bookmark or other type of field. It is inserted when a cross-reference to a table or figure caption is added to the document. Find more here: [Cross-Reference]({%slug radrichtextbox-features-cross-reference%}).
-            
-
-* __PageReferenceField__: Inserts the page number of a referenced bookmark.
-            
-
-* __HyperlinkField__: Inserted in hyperlinks to store information about the navigation URI.
-            
-
-* __TableOfContentsField__: Shows a table of contents including headings and other specially marked parts of the document. Also can be configured to show table of figures or table of tables.
-            
-
-* __TCField__: Used to mark text that should be included as entry in TableOfContentsField. 
-            
-
-* __AuthorField__: The type of field is related to track changes, specifies the name of the user that has modified the document part. Read more here: [Track Changes]({%slug radrichtextbox-features-track-changes%}).
-            
-
-* __CitationField__: Inserted when you add a citation to the document.
-            
-
-* __BibliographyField__: Inserted in the document when you want to add information about the bibliographic sources used in the document. Read more here: [Bibliographic References]({%slug radrichtextbox-features-bibliographic-references%}).
-            
+>All the supported field codes and switches for them are listed in the [Supported Fields]({%slug radrichtextbox-features-fields-supported-fields%}) topic.
 
 ## Display Modes
 
@@ -127,8 +81,7 @@ You can update all fields in the document with the __UpdateAllFields()__ method 
 
 ## See Also
 
+ * [Supported Field Codes]({%slug radrichtextbox-features-fields-supported-fields%})
  * [Custom Fields]({%slug radrichtextbox-features-custom-fields%})
-
- * [Mail Merge]({%slug radrichtextbox-features-mail-merge%})
- 
+ * [Mail Merge]({%slug radrichtextbox-features-mail-merge%}) 
  * [CustomField SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomField)

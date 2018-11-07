@@ -278,8 +278,7 @@ Imagine that you have a business object named __MyViewModel__, with three member
 
 {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 11: Setting SelectedValuePath__ 
-
+#### __[XAML] Example 11: Setting SelectedValuePath__  
 {{region xaml-radtreeview-feautres-treeviewitem-selection_18}}
 	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
 	    <telerik:RadTreeView.ItemTemplate>
@@ -315,6 +314,7 @@ If you remove the x:Key setting of the style, it will become an implicit style. 
 
 __RadTreeViewItem__ provides the option to control whether the item can be selected through the UI or not. This is done through its __IsSelectable__ property. Similarly to the previous example, the __IsSelectable__ property can be set through a Style targeting RadTreeViewItem. 
 
+#### __[XAML] Example 13: Binding the IsSelectable property__  
 {{region radtreeview-feautres-treeviewitem-selection_18}}
 	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
 	    <Setter Property="IsSelectable" Value="{Binding IsSelectable}"/>

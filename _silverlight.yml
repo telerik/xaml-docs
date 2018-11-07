@@ -17,9 +17,6 @@ getting-started/installation/for-wpf-vs-extensions-releases.md,
 getting-started/installation/installation-installing-hotfix-wpf.md,
 getting-started/installation/installation-installing-license-limitations-wpf.md,
 getting-started/installation/installation-installing-from-nuget-wpf.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf.md,
 integration/installation-adding-to-vs-toolbox.md,
 upgrade/installation-upgrading-from-trial-to-developer-license-wpf.md,
 common-information/installation-installing-dependencies-wpf.md,
@@ -289,3 +286,7 @@ intro_columns:
       "TransitionControl": "radtransition-overview"
       "Window": "radwindow-overview"
       "Wizard": "wizard-overview"
+
+sdk_examples: "sdk_sl.json"
+sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
+sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"

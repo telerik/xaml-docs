@@ -282,6 +282,12 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 #### __Figure 4: RadTimeBar and RadSparkline__
 ![](images/radtimebar-getting-started-3.png)
 
+#### DataBinding the RadSparkLine
+
+In order to learn how you can bind the ItemsSource of a RadSparkLine component in general, you can read the [DataBinding]({%slug radsparkline_databinding%}) article in the RadSparkLine section.
+
+> In case the ItemsSource of the sparkline is a collection of business objects, where the property bound to the XValue of the sparkline is of type DateTime, you need to make sure that the collection is ordered (ascending) by that property. This is needed for the virtualization of the RadSparkLine, which is enabled by the __EnableSparklineVirtualization__ property of the RadTimeBar(__True__ by default).
+
 ## See Also  
 * [Properties]({%slug radtimebar-properties%})
 * [SDK Examples]({%slug radtimebar-sdk-examples%})

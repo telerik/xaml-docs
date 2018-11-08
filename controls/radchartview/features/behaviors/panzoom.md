@@ -1,7 +1,7 @@
 ---
 title: Scroll and Zoom 
 page_title: Scroll and Zoom 
-description: Scroll and Zoom 
+description: RadChartView provides zoom and scroll interactivity via the ChartPanAndZoomBehavior class.
 slug: radchartview-features-panzoom
 tags: scroll,and,zoom,
 published: True
@@ -201,6 +201,42 @@ You can use the __MouseWheelMode__ property of __ChartPanAndZoomBehavior__ to sp
 #### __[XAML] Example 11: Settings mouse wheel mode__
 {{region radchart-features-scrollandzoom_10}}
 	<telerik:ChartPanAndZoomBehavior MouseWheelMode="Zoom" />
+{{endregion}}
+
+## Restrict zooming 
+
+To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties of the chart. This defines a minimum and maximum scale values for chart axes. For example a __MaxZoom=new Size(50, 15)__ setting specifies that the maximum zoom level on the horizontal axis is 50, and the maximum zoom level on the vertical axis is 10.
+
+#### __[XAML] Example 12: Restrict zooming __
+{{region radchart-features-scrollandzoom_11}}
+	  <telerik:RadCartesianChart MaxZoom="30, 30" MinZoom="5, 5">
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartPanAndZoomBehavior ZoomMode="Both">
+			</telerik:ChartPanAndZoomBehavior>
+		</telerik:RadCartesianChart.Behaviors>
+		<telerik:RadCartesianChart.Series>
+			<telerik:BarSeries>
+				<telerik:BarSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="1" Value="18" />
+					<telerik:CategoricalDataPoint Category="2" Value="4" />
+					<telerik:CategoricalDataPoint Category="3" Value="7" />
+					<telerik:CategoricalDataPoint Category="4" Value="11" />
+					<telerik:CategoricalDataPoint Category="5" Value="15" />
+					<telerik:CategoricalDataPoint Category="6" Value="10" />
+					<telerik:CategoricalDataPoint Category="7" Value="4" />
+					<telerik:CategoricalDataPoint Category="8" Value="7" />
+					<telerik:CategoricalDataPoint Category="9" Value="11" />
+					<telerik:CategoricalDataPoint Category="10" Value="15" />
+				</telerik:BarSeries.DataPoints>
+			</telerik:BarSeries>
+		</telerik:RadCartesianChart.Series>
+	</telerik:RadCartesianChart>
 {{endregion}}
 
 ## See Also 

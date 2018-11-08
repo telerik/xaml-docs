@@ -16,11 +16,11 @@ There are numerous scenarios where large number of items should be visualized on
 
 The __VisualizationLayer__ exposes the following properties:        
 
-* __RenderWhileMotion__ - a property of type bool that gets or sets a value indicating whether the layer should request and render items while the user is zooming or panning.            
+* __RenderWhileMotion__: А property of type bool that gets or sets a value indicating whether the layer should request and render items while the user is zooming or panning.            
 
-* __VirtualizationSource__ - a property of type __IMapVirtualizationSource__ that gets or sets the item source of the layer.            
+* __VirtualizationSource__: А property of type __IMapVirtualizationSource__ that gets or sets the item source of the layer.            
 
-* __ZoomLevelGridList__ - a property of type __ZoomLevelGridCollection__ that gets the collection of __ZoomLevelGrids__ used to specify the map division.            
+* __ZoomLevelGridList__: А property of type __ZoomLevelGridCollection__ that gets the collection of __ZoomLevelGrids__ used to specify the map division.            
 
 If both __VirtualizationSource__ and __ZoomLevelGridList__ properties are set then the __VisualizationLayer__ switches to use UI Virtualization. When this feature is enabled the layer doesn’t take its items from the __ItemsSource__ property. Instead, it raises an items request event when the __ZoomLevel__ or __Center__ properties of the __RadMap__ control are changed.        
 
@@ -30,15 +30,27 @@ The __VisualizationLayer__ needs the map surface to be divided into regions. The
 
 The __ZoomLevelGrid__ exposes the following properties:        
 
-* __CellWidth__ - it is of type int and gets or sets the width of the cell in pixels.            
+* __CellWidth__: A property of type __int__ that gets or sets the width of the cell in pixels.            
 
-* __CellHeight__ - it is of type int and gets or sets the height of the cell in pixels.            
+* __CellHeight__: A property of type __int__ that gets or sets the height of the cell in pixels.            
 
-* __MinZoom__ - it is of type int and gets or sets the minimum zoom.            
+* __MinZoom__: A property of type __int__ that gets or sets the minimum zoom.            
 
-By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet.        
+By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet. Specifying the size of а cell for the zoom level affects a number of requests to a __Virtualization Source__ which is depended on the viewport size of the map.        
 
-Specifying the size of а cell for the zoom level affects a number of requests to a __Virtualization Source__ which is depended on the viewport size of the map.        
+>important If the requests are performed slowly (for example they use a service which has low performance) you can increase the cell size to lower the number of requests.          
+    
+#### __[XAML] Example 1: Virtualization Layer declaration__
+{{region radmap-features-virtualization-layer_0}}
+	<telerik:RadMap x:Name="radMap">
+	    <telerik:VisualizationLayer x:Name="visualizationLayer">
+			<telerik:VisualizationLayer.ZoomLevelGridList>
+				<telerik:ZoomLevelGrid MinZoom="3" />
+				<telerik:ZoomLevelGrid MinZoom="9" />
+			</telerik:VisualizationLayer.ZoomLevelGridList>
+		</telerik:VisualizationLayer>
+	</telerik:RadMap>
+{{endregion}}
 
 ## Virtualization Source
 
@@ -50,9 +62,9 @@ If the cell size is 256x256 pixels (the default one) and there are 9 cells in th
 In this case only 6 requests will be sent to the virtualization source whenever this geographical region comes into the view.
 ![Rad Map visualization layer virtualization 2](images/RadMap_visualization_layer_virtualization_2.png)
 
-Here is an example of how to implement simple virtualization source:
+__Example 2__ desmonstrate how to implement simple virtualization source.
 
-#### __C#__
+#### __[C#] Example 2: Create custom IMapItemsVirtualizationSource__
 {{region radmap-visualization-layer-virtualization_0}}
 	public class MyVirtualizationSource : IMapItemsVirtualizationSource
 	{
@@ -173,7 +185,7 @@ Here is an example of how to implement simple virtualization source:
 	}	
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Create custom IMapItemsVirtualizationSource__
 {{region radmap-visualization-layer-virtualization_1}}
 	Public Class MyVirtualizationSource
 		Implements IMapItemsVirtualizationSource
@@ -290,7 +302,7 @@ Here is an example of how to implement simple virtualization source:
 
 Here is a sample of the __VisualizationLayer__ declaration with UI Virtualization enabled:        
 
-#### __XAML__
+#### __[XAML] Example 3: Setting custom IMapItemsVirtualizationSource in XAML__
 {{region radmap-visualization-layer-virtualization_2}}
     <UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Virtualization.ItemsVirtualization"
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

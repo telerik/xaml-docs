@@ -194,7 +194,7 @@ Updating all fields in a document (by calling __UpdateAllFields__ method) is a c
 
 To change the default update order and behavior, additional update information can be registered for a field type using the __FieldsUpdateManager__ static class.
 
-#### __[C#] Example 10: Control the update order__
+#### __[C#] Example 12: Control the update order__
 
 {{region radrichtextbox-features-custom-fields_12}}
 

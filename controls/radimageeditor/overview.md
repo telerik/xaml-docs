@@ -25,9 +25,9 @@ __RadImageEditor__ is a control that can be used to preview and edit images in d
 
 * __Custom tools__: __RadImageEditor__ is highly extensible, so you can implement and utilize additional image editing tools, as well as import and export in other formats. Read more about this in the [How to]({%slug radimageeditor-howto-custom-tool%}) section of the documentation.
 
-* __History__: The control keeps an undo/redo stack with the changes applied to the control. This means that you can go forward and backward into the applied changes. Read more abou this in the [History]({%slug radimageeditor-features-history%}) article.
+* __History__: The control keeps an undo/redo stack with the changes applied to the image. This means that you can reverse and re-apply actions. Read more about this in the [History]({%slug radimageeditor-features-history%}) article.
 
-* __RadImageEditorUI__: An additional control that wraps the RadImageEditor and enriches it with a UI that allows you to easily edit the image without manually executing the different tools. Read more abou this in the [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) article.
+* __RadImageEditorUI__: An additional control that wraps the RadImageEditor and enriches it with a UI that allows you to easily edit the image without manually executing the different tools. Read more about this in the [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) article.
 
 >tip Get started with the control with its [Getting Started]({%slug radimageeditor-getting-started%}) help article that shows how to use it in a basic scenario.
 

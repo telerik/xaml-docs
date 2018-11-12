@@ -34,6 +34,8 @@ position: 16
 
 > Searching over XML data source is available as of __R2 2018__.
 
+>important As of R3 2018 the constructor of the HighlightTextBlock needs to have the SearchStateManager passed as a parameter. It is exposed through the SearchStateManager property of RadGridView.
+
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
 >important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a __string__ type the operator is set to __Contains__. For all other types the operator is set to __IsEqualTo__.

@@ -26,7 +26,7 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __RadDiagramThumbnail__: The __RadDiagramThumbnail__ mechanism represent the current ViewPort of the RadDiagram. The Thumbnail is updated on every pan, zoom, position changed operation etc. In a case with a large number of items in the ViewPort, this could lead to a slow performance. In such scenarios, you can try avoiding using the __RadDiagramThumbnail__.
 
-* __Disable Thumbnail from refreshing__: By default __RadDiagramThumbnail__ is refresh on every UI operation performed into the RadDiagram. You can disable its auto refreshing mechanism and manually refresh it only when necessary. You can do that via the __IsAutoRefreshEnabled__ property and the __RefreshThumbnail()__ method.
+* __Disable Thumbnail from refreshing__: By default __RadDiagramThumbnail__ is refreshed on every UI operation performed into the RadDiagram. You can disable its auto refreshing mechanism and manually refresh it only when necessary. You can do that via the __IsAutoRefreshEnabled__ property and the __RefreshThumbnail()__ method.
 
 * __Number of shapes in ViewPort__:  Work with a small number of shapes in the ViewPort. The smaller the number of shapes in the Viewport the faster diagram will be.
 
@@ -36,7 +36,7 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Shapes Width and Height__: To improve layout time, it is important the shapes ploted on the diagram to be with equal width and height. Layouting the diagram with different size of the shapes could lead to slower performance.
 
-* __Suspend Connection Update__: For better performance is better to suspend the connection update before calling the __Layout()__ method.
+* __Suspend Connection Update__: For better performance it is better to suspend the connection update before calling the __Layout()__ method.
 
 #### __[XAML] Example 1: Suspend connection update__
 {{region raddiagram-performance-tips-tricks_0}}
@@ -65,7 +65,7 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 	</Style>
 {{endregion}}
 
-* __Routing__: The routing functionality of the diagram provides several algorithms __(OrgTreeRouter, AStarRouter, InflatedRectRouter)__ which can used to reduce the crossing of the connection. In some cases, one can be musch faster than others. You can test your scenario with all of them and used the one which works best for your case.
+* __Routing__: The routing functionality of the diagram provides several algorithms __(OrgTreeRouter, AStarRouter, InflatedRectRouter)__ which can be used to reduce the crossing of the connection. In some cases, one can be much faster than others. You can test your scenario with all of them and used the one which works best for your case.
        
 ## Optimize Copy Paste 
 

@@ -21,7 +21,7 @@ The wizard could be also reached through the context menu counterparts accessed 
 
 The Convert Project Wizard lets you tune your project's use of Telerik UI for WPF.
 
-![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConfigWizard.png)
+![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
 
 The wizard’s first page lets you:
         

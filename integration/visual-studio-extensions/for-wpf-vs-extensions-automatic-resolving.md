@@ -21,7 +21,7 @@ Some controls require multiple assemblies and mistakes are likely to happen. For
 
 When using the __New Project Wizard__ or __Project Configuration Wizard__, the possibility to make such mistakes is lowered to a minimum, thanks to the dependency analysis in the Visual Studio Extensions. 
 
-![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConfigWizard.png)
+![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
 
 The VSExtensions assembly list control is controlled by the dependency analyzer, which will not let you select Telerik UI for WPF assemblies without selecting the assemblies they depend on. Both the aspects are covered: 
 

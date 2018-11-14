@@ -18,7 +18,7 @@ Fields are a convenient way to show non-static data in the document. In this way
 >For a description of the supported out of the box field types, please refer to [this article]({%slug radrichtextbox-features-fields-supported-fields%}).
       
 
-This topic explainс how custom fields can be created in order to suit application-specific purposes. 
+This topic explains how custom fields can be created in order to suit application-specific purposes. 
 
 
 ## Create Custom Field

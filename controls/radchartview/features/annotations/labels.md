@@ -1,7 +1,7 @@
 ---
 title: Annotation Labels
 page_title: Annotation Labels
-description: Annotation Labels
+description: The RadChartView CartesianStrokedAnnotation class provides infrastructure for annotation labels. This article shows how to use it.
 slug: radchartview-annotations-labels
 tags: annotation,labels
 published: True

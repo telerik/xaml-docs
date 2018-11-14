@@ -12,7 +12,7 @@ position: 8
 
 The CartesianStrokedAnnotation class provides infrastructure for annotation labels.
 
->  Only the [CartesianGridLine]({%slug radchartview-annotations-gridline%}) and [CartesianPlotBand]({%slug radchartview-annotations-plotband%}) annotations have out-of-the-box support for this feature.
+>  Only the annotations deriving from CartesianStrokedAnnotation ( [CartesianGridLine]({%slug radchartview-annotations-gridline%}) and [CartesianPlotBand]({%slug radchartview-annotations-plotband%}) ) have out-of-the-box support for this feature.
 
 ## Setting a Label
 
@@ -48,7 +48,7 @@ To show the annotation's label, set its __Label__ property.
 
 ## Using Label Definition
 
-The chart annotation labels are adjusted using __LabelDefinition__ property. The property accepts a property of type __ChartAnnotationLabelDefinition__ that allows you to style and position the label.
+The chart annotation labels are adjusted using the __LabelDefinition__ property. The property accepts a value of type __ChartAnnotationLabelDefinition__ that allows you to style and position the label.
 
 #### __[XAML] Example 2: Setting LabelDefinition__
 {{region radchartview-annotations-labels-1}}
@@ -136,7 +136,7 @@ Annotations provide a mechanism for label positioning that consists of three lay
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### Figure 3: Custom positioned label
+#### Figure 5: Custom positioned label
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-2.png)
 
 ## Default Visual Style
@@ -182,7 +182,7 @@ The default visual element of the label is a native TextBlock. To customize it y
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### Figure 4: Customized Label Style
+#### Figure 6: Customized Label Style
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-3.png)
 
 ## Defining a Custom Label Template
@@ -231,7 +231,7 @@ To replace the default label visual element with an entirely custom UI you can u
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### Figure 5: Customized Label Style
+#### Figure 7: Customized Label Template
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-4.png)
 
 ## See Also

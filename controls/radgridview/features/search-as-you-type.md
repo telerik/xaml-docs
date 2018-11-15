@@ -34,7 +34,7 @@ position: 16
 
 > Searching over XML data source is available as of __R2 2018__.
 
->important As of R3 2018 the constructor of the HighlightTextBlock needs to have the SearchStateManager passed as a parameter. It is exposed through the SearchStateManager property of RadGridView.
+>important In case highlighting in a custom column or CellTemplate is needed, the __HightlightTextBlock__ can be used. As of __R3 2018__ its constructor needs to have the __SearchStateManager__ passed as a parameter. It is exposed through the SearchStateManager property of RadGridView. The usage of the __HighlightTextBlock__ is demonstrated in the [Custom Highlight Column](https://github.com/telerik/xaml-sdk/tree/master/GridView/HighlightCustomColumn).
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 

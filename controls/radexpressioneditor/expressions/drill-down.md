@@ -34,6 +34,8 @@ As of **R1 2019**, the RadExpressionEditor control allows users to expand comple
 
 {% figure 1, "Drill-down functionality", "drill-down.png" %}
 
+>important If you have defined a custom [ExpressionEditorViewModel]({%slug radexpressioneditor-expressions-custom-functions-and-categories%}), you should set the **IsFieldsDrillDownEnabled** property after you set the control's **ViewModel** property for the drill-down functionality to work.
+
 ## See Also
 
 * [Lambdas]({%slug radexpressioneditor-expressions-lambdas%})

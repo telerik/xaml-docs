@@ -106,11 +106,13 @@ If you want to add your custom non-static functions to the control you need to s
 
     public class CustomExpressionFunctionContext : ExpressionFunctionContext
     {
+        [Description("Increase the value by 1")]
         public int OnePlus(int input)
         {
             return ++input;
         }
-
+        
+        [Description("Increase the value with 2")]
         public int TwoPlus(int input)
         {
             return input + 2;
@@ -129,7 +131,7 @@ If you want to add your custom non-static functions to the control you need to s
 
 You can then add these functions in the **GetFunctionsItemModels** override as well as remove some of the predefined functions.
 
-#### [C#] Example 6: Add and remove functions
+#### [C#] Example 6: Add custom functions
 
 {{region cs-radexpressioneditor-expressions-custom-functions-and-categories-6}}
 
@@ -145,7 +147,7 @@ You can then add these functions in the **GetFunctionsItemModels** override as w
     }
 {{endregion}}
 
-**Example 6** removes the **Aggregate** subcategory and adds the two custom functions defined in Example 4 to the **Other** subcategory. It also removes the **Where** function from it. The results before and after respectively are illustrated in **Figure 2**. 
+**Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
 
 {% figure 2, "Custom functions", "custom-functions.png" %}
 

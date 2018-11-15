@@ -28,7 +28,14 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Disable Thumbnail from refreshing__: By default __RadDiagramThumbnail__ is refreshed on every UI operation performed into the RadDiagram. You can disable its auto refreshing mechanism and manually refresh it only when necessary. You can do that via the __IsAutoRefreshEnabled__ property and the __RefreshThumbnail()__ method.
 
-* __Number of shapes in ViewPort__:  Work with a small number of shapes in the ViewPort. The smaller the number of shapes in the Viewport the faster diagram will be.
+* __Number of shapes in ViewPort__: Work with a small number of shapes in the ViewPort. The smaller the number of shapes in the Viewport the faster diagram will be.
+
+* __Clear Cashed of the Diagram__: When an item (node) is removed from GraphSource, its corresponding UI container (RadDiagramShape) is stored in collection of 'recycled' shapes for future use. This aims to speed up the diagram performance in extensive undo-redo and container generation operations (loadin process). However, in a scenario where large number of Add/Remove operation are performed, the therecycled collection store in memory every operation which could lead to a possible memory issues. What can be done here is to manually clear this collection at some moment by calling the __ClearCache()__ method.
+
+#### __[C#] Example 1: Clear Cashed of RadDiagram__
+{{region raddiagram-performance-tips-tricks_0}}
+	(this.xDiagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
+{{endregion}}
 
 ## Optimize Layout
 
@@ -38,8 +45,8 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Suspend Connection Update__: For better performance it is better to suspend the connection update before calling the __Layout()__ method.
 
-#### __[XAML] Example 1: Suspend connection update__
-{{region raddiagram-performance-tips-tricks_0}}
+#### __[XAML] Example 2: Suspend connection update__
+{{region raddiagram-performance-tips-tricks_1}}
 	this.xDiagram.Connections.ForEach(x => RadDiagramConnection.SetIsAutoUpdateSuppressed((RadDiagramConnection)x, true)); 
 	this.xDiagram.Layout(LayoutType.Tree, settings);
 	this.xDiagram.Connections.ForEach(x => RadDiagramConnection.SetIsAutoUpdateSuppressed((RadDiagramConnection)x, false));
@@ -48,8 +55,8 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Simplify Shapes Template__: In a scenario with a large number of shapes you can try to simplify the template of the shapes as much as possible. This way you can increase the initial load time. You can check the [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%}) help article which desribes how you can create a custom shape. __Example 2__ demonstrate possible template. 
 
-#### __[XAML] Example 2: Simplify Shapes Template__
-{{region raddiagram-performance-tips-tricks_1}}
+#### __[XAML] Example 3: Simplify Shapes Template__
+{{region raddiagram-performance-tips-tricks_2}}
 	<Style TargetType="{x:Type telerik:RadDiagramShape}">
 		<Setter Property="Template">
 			<Setter.Value>
@@ -69,10 +76,10 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
        
 ## Optimize Copy Paste 
 
-* __Disable Selection__: When copying and pasting hundreds of shapes could lead to performance issues. This is because thousands of visual elements are added in a Canvas (every shape has borders, resizing / rotation thumbs, many other visuals in its control template). What you can do to optimize the process is to disable the selection behavior of the paste shapes. In order to do that you can create a custom class which derives from RadDiagram control and override the __Paste()__ method. Then you can create a dummy boolean value which we are going to use to handle the selection of the control in its __PreviewSelectionChanged__ event handler.
+* __Disable Selection__: Copying and pasting hundreds of shapes could lead to performance issues. This is because thousands of visual elements are added in a Canvas (every shape has borders, resizing / rotation thumbs, many other visuals in its control template). What you can do to optimize the process is to disable the selection behavior of the paste shapes. In order to do that you can create a custom class which derives from RadDiagram control and override the __Paste()__ method. Then you can create a dummy boolean value which RadDiagram are going to use to handle the selection of the control in its __PreviewSelectionChanged__ event handler.
 
-#### __[XAML] Example 3: Simplify Shapes Template__
-{{region raddiagram-performance-tips-tricks_2}}
+#### __[XAML] Example 4: Simplify Shapes Template__
+{{region raddiagram-performance-tips-tricks_3}}
 	public class CustomDiagram : RadDiagram
 	{
 		internal bool IsPasteInPrrogress { get; set; }

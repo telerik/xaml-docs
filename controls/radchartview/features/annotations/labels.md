@@ -235,7 +235,7 @@ To replace the default label visual element with an entirely custom UI you can u
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-4.png)
 
 ## See Also
-* [Getting Started]({%slug %})
+* [Getting Started]({%slug radchartview-introduction%})
 * [Annotations Provider]({%slug radchartview-annotations-annotationsprovider%})
 * [Series Labels]({%slug radchartview-features-label-definition%})
 

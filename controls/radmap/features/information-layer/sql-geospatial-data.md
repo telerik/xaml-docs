@@ -10,7 +10,7 @@ position: 14
 
 # SQL Geospatial Data
 
-Since Q2 2011 a new class - __RadGeospatialDataReader__ was added to support binding RadMap to SQL Geospatial data. It allows generating map shapes from any *IEnumerable* instance (for example a row collection) which contains a property with geospatial data in __Wkt__ (Well known text) or __Wkb__ (Well known binary) format. The __Source__ property and the __GeospatialPropertyName__ property are used to specify the *IEnumerable* instance and the name of the property which contains a Geospatial data.        
+RadMap supports binding to SQL Geospatial data. The control allows generating map shapes from any *IEnumerable* instance (for example a row collection) which contains a property with geospatial data in __Wkt__ (Well known text) or __Wkb__ (Well known binary) format. The __Source__ property and the __GeospatialPropertyName__ property are used to specify the *IEnumerable* instance and the name of the property which contains a Geospatial data.        
 
 The __SqlGeospatialDataReader__ supports the following geometry types:        
 
@@ -200,4 +200,4 @@ If you use *Wcf Data Service* or *Domain Service* in your Silverlight applicatio
 	End Class
 {{endregion}}
 
->tip You may review our demo with source code - Wkt Reader that loads the sample data from collection of Wkt based data.         
+>tip In our {% if site.site_name == 'Silverlight' %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/Silverlight/SQLGeospatialData){% else %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/SQLGeospatialData){% endif %} you can find a runnable example showing how to define a Wkt reader that loads sample data from a collection of Wkt based objects. 

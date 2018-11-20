@@ -1,9 +1,9 @@
 <style>
-  article {
+article {
   background: transparent !important;
 }
 
-article div.contribution-panel {
+div.contribution-panel {
   display: none;
 }
 

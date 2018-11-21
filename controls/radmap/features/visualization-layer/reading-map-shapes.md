@@ -168,11 +168,11 @@ In this case the reader starts reading immediately and the loaded shapes will be
 
 The events described in this section are available for the AsyncShapeFileReader, AsyncKmlReader and AsyncSqlGeospatialDataReader since they are defined in the AsyncReaderBase class which is inherited by all of them. The example in this section uses the AsyncShapeFileReader for demonstration purposes. 
 
-* __PreviewReadShapeDataCompleted__ - Occurs when the reader completes to read shapes.
+* __PreviewReadShapeDataCompleted__: Occurs when the reader completes to read shapes.
 
-* __ReadShapeDataCompleted__ -  Occurs when the reader completes to read shapes and pass them to target information layer.
+* __ReadShapeDataCompleted__:  Occurs when the reader completes to read shapes and pass them to target information layer.
 
-* __PreviewReadShapeData__ - Occurs each time when a shape data is read. __Example 5__ demonstrates how you can use the PreviewReadShapeData event in order to cancel the loading of the shapes.
+* __PreviewReadShapeData__: Occurs each time when a shape data is read. __Example 5__ demonstrates how you can use the PreviewReadShapeData event in order to cancel the loading of the shapes.
 
 	#### __[XAML] Example 4: AsyncShapeFileReader with PreviewReadShapeData event__
 	{{region radmap_visualization_layer_reading_map_shapes_4}}
@@ -210,7 +210,7 @@ The events described in this section are available for the AsyncShapeFileReader,
 		End Sub
 	{{endregion}}
 
-* __ProgressChanged__ -  Occurs when part of data is read.
+* __ProgressChanged__:  Occurs when part of data is read.
 
 ## Specifying a tooltip
 

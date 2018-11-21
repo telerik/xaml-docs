@@ -16,7 +16,7 @@ The AsyncSqlGeospatialDataReader allows you to provide an __IEnumerable__ of any
 
 ## Setting up the Reader
 
-AsyncSqlGeospatialDataReader is supported in the map's VisualizationLayer. You can assing it to the __Reader__ property of the layer.
+AsyncSqlGeospatialDataReader is supported in the map's VisualizationLayer. You can assign it to the __Reader__ property of the layer.
 
 The IEnumerable collection with the geospatial data is provided to the reader via its __Source__ property. And the mapping to the concrete property that holds the geospatial data is created via the __GeospatialPropertyName__ property of the reader. 
 
@@ -42,7 +42,7 @@ The AsyncSqlGeospatialDataReader supports the following geometry types.
   
 * __GeometryCollection__ 
 
-> The geometry coordinates may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) with an *m* value that is part of a linear referencing system or 2D with an *m* value (x, y, m). However, the AsyncSqlGeospatialDataReader uses the __x and y coordinates only__, so that the z and m coordinates will be ignored.
+> The geometry coordinates may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) with an *m* value that is part of a linear referencing system or 2D with an *m* value (x, y, m). However, the AsyncSqlGeospatialDataReader uses the __x and y coordinates only__, and the z and m coordinates will be ignored.
 
 ## Code Example
 
@@ -110,7 +110,7 @@ This section shows how to assemble an example that demonstrates reading Wkt geos
     } 
 {{endregion}}
 
-#### __[VB.NET] Example 1: Defining the Wkt model__
+#### __[VB.NET] Example 1:  Defining the Wkt model and the data storage__
 {{region radmap-features-async-sql-geospatial-data-1}}
 	Public Class WktItemModel
 		Public Property Name As String
@@ -168,6 +168,10 @@ This section shows how to assemble an example that demonstrates reading Wkt geos
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
 {{endregion}}
+
+Notice the __ToolTipFormat__ setting in the AsyncSqlGeospatialDataReader. It points to the Name property of the WktItemModel class. This enables a tooltip that will show the value of the Name property when you mouse over the corresponding shape.
+
+Additionally, the __ItemTemplate__ of the VisualizationLayer is set. This will affect only the Point geometries. Instead of the default pin we show a simple ellipse. The __MapLayer.HotSpot__ property allows you to define a HotSpot object that offsets the position of the UIElement by relative portion of its size. In this example X=0.5 means half of the width and Y=0.5 half of the height of the Ellipse. The Ellipse will be centered at the location of the Point geometry.
 
 #### __[C#] Example 3: Setting the reader's source in code__
 {{region radmap-features-async-sql-geospatial-data-3}}

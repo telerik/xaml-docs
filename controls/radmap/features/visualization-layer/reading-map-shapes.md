@@ -31,13 +31,13 @@ This topic covers the major concepts of the geospatial data reading:
 
 The Visualization Layer reads map shape data using asynchronous map shape data readers:        
 
-* __AsyncShapeFileReader__: reads map shape geometry from the ESRI Shape file (.shp) and extended data from the data file (.dbf).            
+* __AsyncShapeFileReader__: Reads map shape geometry from the ESRI Shape file (.shp) and extended data from the data file (.dbf).            
 
-* __AsyncKmlReader__: reads map shape geometry and extended data from the KML file.            
+* __AsyncKmlReader__: Reads map shape geometry and extended data from the KML file.            
 
 	>important Not all KML elements are supported.
 
-* __AsyncSqlGeospatialDataReader__: reads map shape geometry from the WKT/WKB representation.         
+* __AsyncSqlGeospatialDataReader__: Reads map shape geometry from the WKT/WKB representation.         
 
 > The __AsyncShapeFileReader__ and __AsyncKmlReader__ inherit the [AsyncFileReaderBase](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.map.asyncfilereaderbase) abstract class which in turn inherits the [AsyncReaderBase](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.map.asyncreaderbase) abstract class, which is the base class for all of the readers mentioned above.
 
@@ -216,11 +216,11 @@ The events described in this section are available for the AsyncShapeFileReader,
 
 The asynchronous map shape data readers can use the Extended Data associated with map shape to display it in a tooltip for the respective shape. In order to allow you to configure the tooltip's appearance and content, the readers expose the following properties:        
 
-* __ToolTipFormat__: allows you to specify the format string for the tooltip. This is the simplest way to configure the tooltip, when having a one-line tooltip scenario.            
+* __ToolTipFormat__: Allows you to specify the format string for the tooltip. This is the simplest way to configure the tooltip, when having a one-line tooltip scenario.            
 
-* __ToolTipStyle__: allows you to apply a Style that targets the ToolTip control.            
+* __ToolTipStyle__: Allows you to apply a Style that targets the ToolTip control.            
 
-* __ToolTipTemplate__: allows you to define a DataTemplate for the tooltip. This one is used when more complex, multi-line and styled tooltip scenarios.            
+* __ToolTipTemplate__: Allows you to define a DataTemplate for the tooltip. This one is used when more complex, multi-line and styled tooltip scenarios.            
 
 ### ToolTipFormat
 

@@ -14,7 +14,7 @@ This article demonstrates how to create a custom drag cue that connects the drag
 
 ## Defining the Arrow Visual
 
-The arrow visual used in this example is a custom Shape element that creates its geometry based on a start and end points.
+The arrow visual used in this example is a custom Shape element that creates its geometry based on start and end points.
 
 #### __[C#] Example 1: Creating custom arrow visual__
 {{region dragdropmanager-howto-create-custom-drag-arrow-0}}
@@ -74,13 +74,13 @@ In order to update the geometry of the ArrowShape control when changing its X an
 
 ## Defining the Drag Arrow Behavior
 
-The logic that shows the arrow visual can be implemented in a static class using attached property. This way it can be re-used across multiple controls.
+The logic that shows the arrow visual can be implemented in a static class using an attached property. This way it can be re-used across multiple controls.
 
 The custom class uses a native Popup container that hosts the ArrowShape control while the drag operation is performing.
 
 The behavior uses the __DragDropManager__ and its __DragInitialized, DragOver and DragDropCompleted__ events to update the arrow visual.
 
-The attached behavior also handles several additional cases - it allows to define a drag start threshold and also and offset between the mouse and the arrows end point.
+The attached behavior also handles several additional cases - it allows to define a drag start threshold and also an offset between the mouse and the arrow's end point.
 
 #### __[C#] Example 2: Creating the dragdrop attached behavior that updates the arrow visual__
 {{region dragdropmanager-howto-create-custom-drag-arrow-1}}
@@ -200,7 +200,7 @@ The attached behavior also handles several additional cases - it allows to defin
 
 ## Using the Custom Drag Arrow
 
-To demonstrate the custom drag arrow we will use two Border elements. A drag/drop opreation can be performed from the one to the another.
+To demonstrate the custom drag arrow we will use two Border elements. A drag/drop opreation can be performed from one to the other.
 
 #### __[XAML] Example 3: Defining the view in XAML and setting the DragDropManagerUtilities.ShowArrowDragCue attached property__
 {{region dragdropmanager-howto-create-custom-drag-arrow-2}}

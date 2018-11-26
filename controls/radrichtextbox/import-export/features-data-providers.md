@@ -11,8 +11,7 @@ position: 1
 # Data Providers
 
 
-
-The __RadRichTextBox__ control allows you to export and import its documents into various document formats - __HTML__, __XAML__,__RTF__, __DOCX__, __PDF__. You can export and import the document from and to __strings__ or __files__. For that purpose you could use the following classes:
+The __RadRichTextBox__ control allows you to export and import its documents into various document formats - __HTML__, __XAML__, __RTF__, __DOCX__, __PDF__. You can export and import the document from and to __strings__ or __files__. For that purpose you could use the following classes:
       
 
 * __XamlFormatProvider__
@@ -31,32 +30,33 @@ The __RadRichTextBox__ control allows you to export and import its documents int
 >tipFor more information, check out the [Import/Export]({%slug radrichtextbox-features-import-export%}) topic.
         
 
-However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import and Export methods. This is something that you might not want to be concerned with when using the __RadRichTextBox__ in a data bound scenarios. For such cases the __DataProvider__ classes are used. They wrap the __FormatProviders'__ functionality and allow its usage in XAML. Currently the following __DataProvider__ classes are available:
+However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using __RadRichTextBox__ in a data bound scenarios. For such cases, the __DataProvider__ classes are used. They wrap the __FormatProviders'__ functionality and allow its usage in XAML. Currently, the following __DataProvider__ classes are available:
       
 
-* __XamlDataProvider__ - use when you want to bind XAML source to __RadRichTextBox__.
+* __XamlDataProvider__: Use when you want to bind XAML source to __RadRichTextBox__.
           
 
-* __HtmlDataProvider__ - use when you want to bind HTML source to __RadRichTextBox__.
+* __HtmlDataProvider__: Use when you want to bind HTML source to __RadRichTextBox__.
           
 
-* __RtfDataProvider__ - use when you want to bind RTF source to __RadRichTextBox__.
+* __RtfDataProvider__: Use when you want to bind RTF source to __RadRichTextBox__.
           
 
-* __DocxDataProvider__ - use when you want to bind a docx source to __RadRichTextBox__.
+* __DocxDataProvider__: Use when you want to bind a docx source to __RadRichTextBox__.
           
 
-* __TxtDataProvider__ - use when you want to bind plain text source to __RadRichTextBox__.
+* __TxtDataProvider__: Use when you want to bind plain text source to __RadRichTextBox__.
 
 >tipData providers have to be declared in the visual tree and not the Resource dictionary of a control. You don't have to worry about the place in the visual tree where a provider is, as it does not have a visual representation.          
 
-The __DataProviders__ can be easily used to bind the __RadRichTextBox__ to a XAML, HTML, RTF or a plain text string. This is done only in XAML without the usage of any code-behind. Using a two way data binding you can also keep the string up to date with the changes made to it through the __RadRichTextBox__. To implement a DataProvider class in your application, you'll have to create an instance and configure it via the following properties:
+>important RadRichTextBox's data providers encapsulate the logic of the format providers that come with the control. What they do internally is import/export the document using the respective format provider. By default, the property in your view model will be updated on each document change. As this triggers an export to the document you might notice some delay when typing in the control. You could try customizing this by setting the **UpdateSourceTrigger** property of the data provider to **LostFocus** or **Explicit**.
+
+The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, HTML, RTF or a plain text string. This is done only in XAML without the usage of any code-behind. Using a two way data binding, you can also keep the string up to date with the changes made to it through the __RadRichTextBox__. To implement a DataProvider class in your application, you'll have to create an instance and configure it via the following properties:
       
 
-* __RichTextBox__ - specifies which __RadRichTextBox__ instance this data provider is attached to.
+* __RichTextBox__: Specifies which __RadRichTextBox__ instance this data provider is attached to.
           
-
-* __String Value__- specifies the input/output of the __DataProvider__ in the respective format.  The name of the property is __Xaml__ for __XamlDataProvider__, __Html__ for __HtmlDataProvider__, __Text__ for __TxtDataProvider__ and __Rtf__ for __RtfDataProvider__. An exception to this rule is the __Docx__ property of __DocxDataProvider__ which is a byte array. 
+* __String Value__: Specifies the input/output of the __DataProvider__ in the respective format.  The name of the property is __Xaml__ for __XamlDataProvider__, __Html__ for __HtmlDataProvider__, __Text__ for __TxtDataProvider__ and __Rtf__ for __RtfDataProvider__. An exception to this rule is the __Docx__ property of __DocxDataProvider__ which is a byte array. 
 
 {% if site.site_name == 'Silverlight' %}
 >tipIt is best to declare data providers in the visual tree, as this way the binding will be properly updated when the data context is changed. You don't have to worry about the place in the visual tree where the provider is, as it does not have a visual representation.{% endif %}
@@ -74,17 +74,9 @@ The __DataProviders__ can be easily used to bind the __RadRichTextBox__ to a XAM
 {{endregion}}
 
 
-
-The purpose of this topic is to show you how to use the __DataProviders__ in __DataBinding__ scenarios. The following scenarios will be explained:
-      
-
-* [Binding the provider to other UI Elements](#binding-the-provider-to-other-ui-elements)
-
-* [Binding the DataProvider to Dynamic Data](#binding-the-dataprovider-to-dynamic-data)
-
 ## Binding the provider to other UI Elements
 
-In the following example two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
+In the following example, two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
         
 
 #### __XAML__
@@ -143,7 +135,7 @@ At some point, you may want to start customizing the documents' appearance or mo
 
 
 
-In the previous example, the document's __LayoutMode__ property is changed. However you can apply any number of modifications to the document.
+In the previous example, the document's __LayoutMode__ property is changed. However, you can apply any number of modifications to the document.
         
 
 ## Binding the DataProvider to Dynamic Data

@@ -1,11 +1,11 @@
 ---
 title: Selection
 page_title: Selection
-description: Animation
+description: This article demonstrates the selection feature of the RadTileView control.
 slug: radtileview-selection
 tags: animation
 published: True
-position: 4
+position: 9
 ---
 
 # Selection

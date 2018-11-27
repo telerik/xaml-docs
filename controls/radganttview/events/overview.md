@@ -14,7 +14,7 @@ This topic covers the specific events exposed by __RadGanttView__.
 
 __RadGanttView__ raises the following events, when a task is edited through the UI, in the order that they are shown below:
 
-* __TaskEditing__ - occurs when the task editing is initiated through the UI. __Example 1__ demonstrates how you can handle the event in order to cancel the editing based on a specific condition.
+* __TaskEditing__: Occurs when the task editing is initiated through the UI. __Example 1__ demonstrates how you can handle the event in order to cancel the editing based on a specific condition.
 
 	#### __[C#] Example 1: Canceling the editing of a task__
 	{{region cs-radganttview-events-overview-0}}
@@ -36,7 +36,7 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 		End Sub
 	{{endregion}}
 
-* __TaskSaving__ - occurs when an edit operation is being committed through the UI. Please, note that you can handle this event to cancel the editing similarly to __Example 1__.
+* __TaskSaving__: Occurs when an edit operation is being committed through the UI. Please, note that you can handle this event to cancel the editing similarly to __Example 1__.
 
 	The __TaskEditing__ and __TaskSaving__ events receive the following two arguments:
 
@@ -44,7 +44,7 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 
 	* A __TaskEditingEventArgs__ object. It contains the task that is being edited.
 	
-* __TaskEdited__ - occurs when a task has been edited through the UI. __Example 2__ demonstrates how you can handle the event in order to show a MessageBox indicating the __Duration__ of the task after it has been edited.
+* __TaskEdited__: Occurs when a task has been edited through the UI. __Example 2__ demonstrates how you can handle the event in order to show a MessageBox indicating the __Duration__ of the task after it has been edited.
 
 	* The sender argument contains the __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
 

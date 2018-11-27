@@ -160,7 +160,7 @@ This section demonstrates how to data bind the SelectedItem property of the cont
 #### Figure 2: Data binding example
 ![radtileview-selection-1.png](images/radtileview-selection-1.png)
 
-> You can find more information about the __ViewModeBase__ class used in Example 5 in the []({%slug %}) article.
+> You can find more information about the __ViewModeBase__ class used in Example 5 in the [ViewModelBase Class]({%slug common-viewmodelbase-class%}) article.
 
 ## See Also
  * [Getting Started]({%slug radtileview-getting-started%})

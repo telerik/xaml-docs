@@ -32,7 +32,7 @@ In order to use the __RadRibbonView__ control, you will need to add references t
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.RibbonView__
-* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Data__
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 

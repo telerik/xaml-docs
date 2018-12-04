@@ -410,7 +410,7 @@ Finally, we add logic, that will be executed when drag and drop operations finis
 #### __Figure 1: Drag between ListBoxes__
 ![Drag between ListBoxes](images/DragDropManager_DragBetweenListBoxes.png)
 
-{% if site.site_name == 'WPF' %}> By default the DragDropManager performs the drag drop in a separate window. Since the __2018.3.1112__ internal build version, you have the option to set the __UseAdornerLayer__ property of the DragDropManager. After this property is set, the drag drop operations will be performed in the AdornerLayer of the MainWindow.{% endif %} 
+{% if site.site_name == 'WPF' %}> By default the DragDropManager shows the drag visual in a separate window. Since the __2018.3.1112__ internal build version, you have the option to set the __UseAdornerLayer__ property of the DragDropManager. After this property is set to __True__, the drag visual will be shown in the AdornerLayer of the MainWindow.{% endif %} 
 
 ## See Also
 

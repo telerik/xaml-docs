@@ -49,9 +49,9 @@ Home | RadGridViewCommands.MoveHome | Focus first cell of selected row
 End | RadGridViewCommands.MoveEnd | Focus last cell of selected row
 Tab | RadGridViewCommands.MoveNext | Focuses next cell
 Tab + Shift | RadGridViewCommands.MovePrevious | Focuses previous cell
-C + Shift | RadGridViewCommands.Copy | Copy text
-V + Shift | RadGridViewCommands.Paste | Paste text
-F + Ctrl | RadGridViewCommands.Search | Show Search Panel
+Ctrl + C | RadGridViewCommands.Copy | Copy text
+Ctrl + V | RadGridViewCommands.Paste | Paste text
+Ctrl + F | RadGridViewCommands.Search | Show Search Panel
 Space | RadGridViewCommands.CollapseHierarchyItem | Collapse a particular item in the hierarchy
 Space | RadGridViewCommands.ExpandHierarchyItem | Expand a particular item in the hierarchy
 

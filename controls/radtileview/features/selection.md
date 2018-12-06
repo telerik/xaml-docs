@@ -67,6 +67,15 @@ Depending on the setup the SelectedItem property can contain different values. I
 	this.radTileView.SelectedItem = this.radTileView.Items[0]	
 {{endregion}}
 
+#### __[VB.NET] Example 3: Getting and setting selection manually via the SelectedItem property__
+{{region vb-radtileview-selection-2}}
+	' Getting the selection
+	Dim selectedItem As Object = Me.radTileView.SelectedItem
+
+	' Setting the selection. Selecting the first item in the Items collection of the control
+	Me.radTileView.SelectedItem = Me.radTileView.Items(0)
+{{endregion}}
+
 #### __[C#] Example 4: Setting selection via the SelectedItems collection property__
 {{region cs-radtileview-selection-3}}
 	// Getting the selection
@@ -74,6 +83,15 @@ Depending on the setup the SelectedItem property can contain different values. I
 
 	// Setting the selection. Selecting the first item in the Items collection of the control
 	this.radTileView.SelectedItems.Add(this.radTileView.Items[0]);
+{{endregion}}
+
+#### __[VB.NET] Example 4: Setting selection via the SelectedItems collection property__
+{{region vb-radtileview-selection-3}}
+	' Getting the selection
+	Dim selectedItem As Object = Me.radTileView.SelectedItems(0)
+
+	' Setting the selection. Selecting the first item in the Items collection of the control
+	Me.radTileView.SelectedItems.Add(Me.radTileView.Items(0))
 {{endregion}}
 
 ## Events
@@ -129,6 +147,45 @@ This section demonstrates how to data bind the SelectedItem property of the cont
         public string Header { get; set; }
         public string Content { get; set; }
     }
+{{endregion}}
+
+#### __[VB.NET] Example 5: Defining the model and populating it with data__
+{{region vb-radtileview-selection-4}}
+	Public Class MainViewModel
+		Inherits ViewModelBase
+
+		Private _selectedItem As TileInfo
+		Public Property SelectedItem() As TileInfo
+			Get
+				Return _selectedItem
+			End Get
+			Set(ByVal value As TileInfo)
+				If Me._selectedItem IsNot value Then
+					Me._selectedItem = value
+					Me.OnPropertyChanged("SelectedItem")
+				End If
+			End Set
+		End Property
+
+		Public Property Tiles() As ObservableCollection(Of TileInfo)
+
+		Public Sub New()
+			Me.Tiles = New ObservableCollection(Of TileInfo)()
+			For i As Integer = 0 To 5
+				Me.Tiles.Add(New TileInfo() With {
+					.Header = "Tile " & i,
+					.Content = "Tile Content " & i
+				})
+			Next i
+
+			Me.SelectedItem = Me.Tiles(0)
+		End Sub
+	End Class
+
+	Public Class TileInfo
+		Public Property Header() As String
+		Public Property Content() As String
+	End Class
 {{endregion}}
 
 #### __[XAML] Example 6: Setting the DataContext__

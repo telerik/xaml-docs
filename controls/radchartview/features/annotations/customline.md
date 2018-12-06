@@ -18,7 +18,7 @@ The __CartesianCustomLineAnnotation__ is used to for  visualizing lines from poi
 Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are used for defining the line, the __CartesianCustomLineAnnotation__ exposes the following properties:
         
 
-* __HorizontalAxis__ and __VerticalAxis__ Used for assosiating the annotation with the chart axes.            
+* __HorizontalAxis__ and __VerticalAxis__ Used for associating the annotation with the chart axes.            
 
 	>By default the annotation is associated with the __RadCartesianChart.HorizontalAxis__ and __RadCartesianChart.VerticalAxis__ axes, so it is not necessary to specify these properties. They are usually used in a multiple axis scenarios.              
 

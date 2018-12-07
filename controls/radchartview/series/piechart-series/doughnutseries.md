@@ -1,14 +1,14 @@
 ---
-title: DoughtnutSeries
-page_title: DoughtnutSeries
-description: RadChartView DoughtnutSeries is visualized on the screen as separate slices representing each of the data points.
+title: DoughnutSeries
+page_title: DoughnutSeries
+description: RadChartView DoughnutSeries is visualized on the screen as separate slices representing each of the data points.
 slug: radchartview-series-doughnutseries
-tags: doughtnutseries
+tags: doughnutseries
 published: True
 position: 1
 ---
 
-# DoughtnutSeries
+# DoughnutSeries
 
 This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that each slices is drawn with an offset from the center of the control.
 
@@ -23,7 +23,7 @@ This series is visualized on the screen as separate slices representing each of 
 
 You can use the following definition to display a simple DoughnutSeries
 
-#### __[XAML] Example 1: Declaring an DoughtnutSeries in XAML__
+#### __[XAML] Example 1: Declaring an DoughnutSeries in XAML__
 {{region  radchartview-series-doughnutseries_0}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
@@ -40,7 +40,7 @@ You can use the following definition to display a simple DoughnutSeries
 	</telerik:RadPieChart>
 {{endregion}}
 
-#### __Figure 1: DoughtnutSeries visual appearance__	
+#### __Figure 1: DoughnutSeries visual appearance__	
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
 
 ## Properties
@@ -54,7 +54,7 @@ You can use the following definition to display a simple DoughnutSeries
 
 ## Data Binding
 
-You can use the __ValueBinding__ property of the DoughtnutSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __ValueBinding__ property of the DoughnutSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __[C#] Example 2: Defining the view model__
 
@@ -72,9 +72,9 @@ You can use the __ValueBinding__ property of the DoughtnutSeries to bind the Dat
 	};
 {{endregion}}		
 
-#### __[XAML] Example 3: Specify a DoughtnutSeries in XAML__
+#### __[XAML] Example 3: Specify a DoughnutSeries in XAML__
 {{region radchartview-series-doughnutseries_2}}
-	<telerik:DoughtnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
+	<telerik:DoughnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
 {{endregion}}	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
@@ -172,9 +172,9 @@ Additionally, you can define the offset for the selected PieDataPoint objects, v
 
 ## Styling the Series
 
-You can see how to style the series using different properties in the [DoughtnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
+You can see how to style the series using different properties in the [DoughnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
 
-Additionally, you can use the Palette property of the chart to change the colors of the DoughtnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
+Additionally, you can use the Palette property of the chart to change the colors of the DoughnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 
 ## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

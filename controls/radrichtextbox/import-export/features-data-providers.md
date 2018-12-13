@@ -14,18 +14,17 @@ position: 1
 The __RadRichTextBox__ control allows you to export and import its documents into various document formats - __HTML__, __XAML__, __RTF__, __DOCX__, __PDF__. You can export and import the document from and to __strings__ or __files__. For that purpose you could use the following classes:
       
 
-* __XamlFormatProvider__
+* [__XamlFormatProvider__]({%slug radrichtextbox-import-export-using-xamlformatprovider%})
 
-* __HtmlFormatProvider__
+* [__HtmlFormatProvider__]({%slug radrichtextbox-import-export-html-htmlformatprovider%})
 
-* __DocxFormatProvider__
+* [__DocxFormatProvider__]({%slug radrichtextbox-import-export-using-docxformatprovider%})
 
-* __RtfFormatProvider__
+* [__RtfFormatProvider__]({%slug radrichtextbox-import-export-rtf-rtfformatprovider%})
 
-* __PdfFormatProvider__ (export only)
+* [__PdfFormatProvider__ ]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})(export only)
           
-
-* __TxtFormatProvider__
+* [__TxtFormatProvider__]({%slug radrichtextbox-import-export-txt-txtformatprovider%})
 
 >tipFor more information, check out the [Import/Export]({%slug radrichtextbox-features-import-export%}) topic.
         
@@ -67,7 +66,7 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
 >The __DataProviders__ can be accessed via the default Telerik namespace:
         
 
-#### __XAML__
+#### __[XAML] Example 1: Define the namespace__
 
 {{region radrichtextbox-features-data-providers_0}}
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -76,10 +75,10 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
 
 ## Binding the provider to other UI Elements
 
-In the following example, two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
+In Example 2, two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
         
 
-#### __XAML__
+#### __[XAML] Example 2: Binding the provider to a TextBox__
 
 {{region radrichtextbox-features-data-providers_2}}
 	<UserControl x:Class="DataProvidersDemo.MainPage"
@@ -104,7 +103,7 @@ In the following example, two simple UI controls are used - a plain __RadRichTex
 At some point, you may want to start customizing the documents' appearance or modify the document after it has been imported but before it is shown. Data providers facilitate this by exposing a __SetupDocument__ event. It's fired every time the data provider instantiates a new document so you can modify the document. The following code-snippet demonstrates how to do that.
         
 
-#### __XAML__
+#### __[XAML] Example 3: Attach to the SetupDocument event__
 
 {{region radrichtextbox-features-data-providers_3}}
 	<telerik:XamlDataProvider Name="xamlDataProvider"
@@ -115,7 +114,7 @@ At some point, you may want to start customizing the documents' appearance or mo
 
 
 
-#### __C#__
+#### __[C#] Example 4: Handle the SetupDocument event__
 
 {{region radrichtextbox-features-data-providers_2}}
 	private void XamlDataProvider_SetupDocument(object sender, Telerik.Windows.Documents.FormatProviders.SetupDocumentEventArgs e)
@@ -125,7 +124,7 @@ At some point, you may want to start customizing the documents' appearance or mo
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Handle the SetupDocument event__
 
 {{region radrichtextbox-features-data-providers_3}}
 	Private Sub XamlDataProvider_SetupDocument(sender As Object, e As Telerik.Windows.Documents.FormatProviders.SetupDocumentEventArgs)
@@ -143,10 +142,10 @@ In the previous example, the document's __LayoutMode__ property is changed. Howe
 The __DataProviders__ can also be used in __DataTemplates__ to enable __DataContext__ binding.
         
 
-Here is an example using __RadRichTextBox__ in __ItemsControl__. For each item in the __ItemsSorce__ collection an expander is created. The content of the expander is __RadRichTextBox__ control bound to the __Body__ property of the __DataContext__ through __HtmlDataProvider__.
+Example 5 shows using __RadRichTextBox__ in __ItemsControl__. For each item in the __ItemsSorce__ collection an expander is created. The content of the expander is __RadRichTextBox__ control bound to the __Body__ property of the __DataContext__ through __HtmlDataProvider__.
         
 
-#### __XAML__
+#### __[XAML] Example 5: Binding with dynamic data__
 
 {{region radrichtextbox-features-data-providers_4}}
 	<ItemsControl>
@@ -176,3 +175,21 @@ Here is an example using __RadRichTextBox__ in __ItemsControl__. For each item i
 Here is a sample snapshot:
 
 ![](images/RadRichTextBox_Features_DataProviders_01.png)
+
+
+## Troubleshooting
+
+### NullReferenceException on Loading Data Provider
+
+The data providers internally use the corresponding format provider classes, which are automatically loaded by [MEF]({%slug radrichtextbox-mef%}). Sometimes the MEF fails to load a format provider and a **NullReferenceException** is thrown.
+
+To prevent this error, you will need to load the format provider without using MEF. There are two ways to handle this:
+
+- [Change the TypeCatalog]({%slug radrichtextbox-mef%}#explicitly-set-the-necessary-types) 
+
+- Register the format provider with the **DocumentFormatProvidersManager**:
+
+#### __[C#] Example 6: Using DocumentFormatProvidersManager to manually load format provider__
+{{region radrichtextbox-features-data-providers_4}}
+	DocumentFormatProvidersManager.RegisterFormatProvider(new HtmlFormatProvider());
+{{endregion}}

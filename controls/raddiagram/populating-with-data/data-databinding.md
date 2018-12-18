@@ -392,8 +392,6 @@ In Q2 2012 we improved the MVVM support by adding two-way changes, i.e. changes 
 In order to make use of the two-way binding the data source should implement the __IObservableGraphSource__ interface which extends the __IGraphSource__ interface with some methods called by __RadDiagram__ when Items are added or removed in the diagram.		
 
 The simplest way to use the __IObservableGraphSource__ is via its default implementation in the Extensions library. The __ObservableGraphSourceBase__ contains Add and Remove methods which can and should be overriden to make sure that any changes in the view (__RadDiagram__ canvas), will be reflected in the ViewModel. The next examples demonstrate this in a sample scenario.
-
-> Note that, when an item (node) is removed from the GraphSource, its corresponding UI container (the RadDiagramShape) is stored in a collection of 'recycled' shapes for future use. This aims to speed up the diagram performance in extensive undo-redo and container generation operations. However, this could lead to an increased use of memory. In order to clear this cache, utilize the __ClearCache__ method of the diagram's __ContainerGenerator__ like so: "(this.Diagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();".
 		
 #### __[C#] Example 8: Defining a model__
 {{region raddiagram-data-databinding-13}}
@@ -534,6 +532,20 @@ For this purpose you need to override the AddNode method in the Datastore as in 
 		
 #### __Figure 4: Result from Example 11__
 ![raddiagram-databindig-mvvm-2way 3](images/raddiagram-databindig-mvvm-2way3.png)
+
+## Clearing the Cache of the ItemContainerGenerator
+
+When an item (node) is removed from the GraphSource, its corresponding UI container (the RadDiagramShape) is stored in a collection of 'recycled' shapes for future use. This aims to speed up the diagram's performance in extensive undo-redo and container generation operations. However, this could lead to an increased use of memory. In order to clear this cache, utilize the __ClearCache__ method of the diagram's __ContainerGenerator__ as demonstrated in __Example 12__.
+
+#### __[C#] Example 12: Invoking the ClearCache method of the ItemContainerGenerator__
+{{region raddiagram-data-databinding-20}}
+	(this.Diagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
+{{endregion}}
+
+#### __[VB.NET] Example 12: Invoking the ClearCache method of the ItemContainerGenerator__
+{{region raddiagram-data-databinding-20}}
+	TryCast(Me.Diagram.ContainerGenerator, GenericContainerGenerator(Of Telerik.Windows.Controls.Diagrams.RadDiagramItem)).ClearCache()
+{{endregion}}
 
 ## See Also
  * [Structure]({%slug raddiagram-structure%})

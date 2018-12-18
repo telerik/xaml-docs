@@ -538,12 +538,12 @@ For this purpose you need to override the AddNode method in the Datastore as in 
 When an item (node) is removed from the GraphSource, its corresponding UI container (the RadDiagramShape) is stored in a collection of 'recycled' shapes for future use. This aims to speed up the diagram's performance in extensive undo-redo and container generation operations. However, this could lead to an increased use of memory. In order to clear this cache, utilize the __ClearCache__ method of the diagram's __ContainerGenerator__ as demonstrated in __Example 12__.
 
 #### __[C#] Example 12: Invoking the ClearCache method of the ItemContainerGenerator__
-{{region raddiagram-data-databinding-20}}
+{{region cs-raddiagram-data-databinding-20}}
 	(this.Diagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
 {{endregion}}
 
 #### __[VB.NET] Example 12: Invoking the ClearCache method of the ItemContainerGenerator__
-{{region raddiagram-data-databinding-20}}
+{{region vb-raddiagram-data-databinding-20}}
 	TryCast(Me.Diagram.ContainerGenerator, GenericContainerGenerator(Of Telerik.Windows.Controls.Diagrams.RadDiagramItem)).ClearCache()
 {{endregion}}
 

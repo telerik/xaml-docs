@@ -213,7 +213,7 @@ navigation:
         position: 1			
     controls/radganttview/features/timeruler:
         title: TimeRuler
-        position: 2
+        position: 2        
     controls/radpivotgrid/features/localdatasourceprovider:
         title: LocalDataSourceProvider
     controls/radpivotgrid/features/olap-providers:
@@ -326,7 +326,9 @@ navigation:
     "*financial-series":
         title: Financial Series
     "*scatter-series":
-        title: Scatter Series    
+        title: Scatter Series
+    controls/radfluidcontentcontrol:
+        title: RadFluidContentControl
     controls/radcloudupload:
         title: RadCloudUpload
     controls/radcoloreditor:

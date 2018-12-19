@@ -44,7 +44,7 @@ In the following example, the user is asked to enter four digits:
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" WatermarkContent="Please Enter Four Digits:" />
 {{endregion}}
 
-![radwatermarktextbox overview 010](images/radwatermarktextbox_overview_010.png)
+{% figure 1, "RadWatermarkTextBox with watermark text", "radwatermarktextbox_overview_010.png" %}
 
 The __WatermarkContent__ property is of type object. Which means that you can set anything you want. For example:
 
@@ -61,7 +61,7 @@ The __WatermarkContent__ property is of type object. Which means that you can se
 	</telerik:RadWatermarkTextBox>
 {{endregion}}
 
-![radwatermarktextbox overview 020](images/radwatermarktextbox_overview_020.png)
+{% figure 2, "RadWatermarkTextBox with custom watermark content", "radwatermarktextbox_overview_020.png" %}
 
 ## Using WatermarkTemplate Property
 
@@ -82,7 +82,7 @@ Similarly, you can use the __WatermarkTemplate__ property for the same sort of s
 	</telerik:RadWatermarkTextBox>
 {{endregion}}
 
-![radwatermarktextbox overview 030](images/radwatermarktextbox_overview_030.png)
+{% figure 3, "RadWatermarkTextBox with custom WatermarkTemplate", "radwatermarktextbox_overview_030.png" %}
 
 ## Setting the SelectionOnFocus Property
 
@@ -105,6 +105,30 @@ __WatermarkBehavior__ is an enumeration property which specifies when the waterm
 * __HideOnTextEntered__ - The watermark will be hidden when the the user writes text into the RadWatermarkTextBox
 
 The default value is __HideOnTextEntered__.
+
+## ReadOnlyBackground and DisabledBackground
+
+As of R1 2019, the __RadWatermarkTextBox__ control exposes two new properties to set its background when it is disabled or read-only, namely **DisabledBackground** and **ReadOnlyBackground** respectively.
+
+Examples 5 and 6 demonstrate how to set these properties in XAML and figures 4 and 5 illustrate the respective results in the **Office2016** theme.
+
+#### __[XAML] Example 5: Setting the DisabledBackground property__
+
+{{region xaml-radwatermarktextbox-overview_4}}
+        <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsEnabled="False" DisabledBackground="DarkGray" />
+{{endregion}}
+
+{% figure 4, "Disabled RadWatermarkTextBox with and without DisabledBackground", "DisabledBackground.png" %}
+
+#### __[XAML] Example 6: Setting the ReadOnlyBackground property__
+
+{{region xaml-radwatermarktextbox-overview_5}}
+        <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsReadOnly="True" ReadOnlyBackground="DarkGray" />
+{{endregion}}
+
+{% figure 5, "Read-only RadWatermarkTextBox with and without ReadOnlyBackground", "ReadOnlyBackground.png" %}
+
+>Please note that the read-only visual is drawn over the disabled visual so the ReadOnlyBackground will take precedence over the DisabledBackground if the control is in both the disabled and read-only states.
 
 ## See also
 

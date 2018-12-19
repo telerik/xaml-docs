@@ -87,5 +87,5 @@ All that is left is to specify the place of your layer, i.e. which layers should
 
 
 
-There is a demo where all these steps have been implemented at:{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation](https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](https://demos.telerik.com/wpf/){% endif %}.
+There is a demo where all these steps have been implemented at:{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation](https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation){% endif %}{% if site.site_name == 'WPF' %}[Click-once demos](https://demos.telerik.com/wpf/) (Inside the application, choose RichTextBox / Customize Presentation){% endif %}, and a developer-focused [CustomLayerAndCustomAnnotation](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomLayerAndCustomAnnotation) example.
      

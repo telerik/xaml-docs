@@ -1,7 +1,7 @@
 ---
 title: Integration Examples
 page_title: Integration Examples
-description: The article contains list with the RadFluidContentControl integration examples with other controls.
+description: The article contains a list with RadFluidContentControl examples demonstrating how to integrate it with other controls.
 slug: radfluidcontentcontrol-integration-examples
 tags: integration,tileview,samples
 published: True
@@ -10,7 +10,7 @@ position: 5
 
 # Integration Examples
 
-There are couple of controls that utilize the RadFluidContentControl in some custom scenarios. This articles contains a list of those examples.
+There are a couple of controls that utilize the RadFluidContentControl in some custom scenarios. This articles contains a list of those examples.
 
 * The [Use RadFluidContentControl in RadTileView]({%slug radtileview-howto-use-fluidcontentcontrol-in-tileview%}) article. There is an additional article that introduces the fluid control in RadTileView - [Fluid Content Control]({%slug radtileview-fluid-content-control%}).
 

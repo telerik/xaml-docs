@@ -71,7 +71,7 @@ The control exposes a few properties that allow you to set a different content f
 
 There are two mechanisms for changing the currently visible content. The default one is based on the size of the control. When it reaches a specific size range the content will be change accordingly. The second mechanism is manual. In this case you can manually set the __State__ property of the __RadFluidContentControl__.
 
-To enabled the size based mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Automatic__. You can control the size thresholds via the following properties.
+To enable the size based mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Automatic__. You can control the size thresholds via the following properties.
 * __NormalToSmallThreshold__: The maximum size at which the control can be in Small state. When the control reaches this size it enters into Normal state. The default value of the property is *new Size(150, 150)*.
 
 * __NormalToLargeThreshold__: The maximum size at which the control can be in Normal state. When the control reaches this size it enters into Large state. The default value of the property is *new Size(150, 150)*.

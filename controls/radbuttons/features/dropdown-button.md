@@ -92,6 +92,10 @@ You can easily customize the __RadDropDownButton__ by using the following proper
 
 * __DropDownMaxWidth__: Specifies the maximal width of the drop down area.  
 
+* __DropDownMinHeight__: Specifies the minimal height of the drop down area.
+
+* __DropDownMinWidth__: Specifies the minimal width of the drop down area.  
+
 * __DropDownPlacement__: Specifies where the drop down area should be placed - __Absolute__, __Bottom__, __Center__, __Left__, __Right__, __Top__.
 
 {% if site.site_name == 'WPF' %}

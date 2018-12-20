@@ -10,7 +10,7 @@ position: 2
 
 # Data Binding
 
-RadFluidContentControl provides data binding support. This means that you can bind its Content, SmallContent and LargeContent properties and also define a DataTemplate of each content.
+RadFluidContentControl provides data binding support. This means that you can bind its Content, SmallContent and LargeContent properties and also define a DataTemplate for each content.
 
 This article demonstrates how to data bind the control to a simple business model.
 
@@ -138,7 +138,7 @@ When the model is set up, it can be provided to the RadFluidContentControl via i
 
 Each content property has a corresponding content template property, so you can define a DataTemplate and bind it's controls to the view model as shown in __Example 4__. 
 
-## Defining an Additiona Logic for Updating the State
+## Defining Additiona Logic for Updating the State
 
 This section shows how to link the State property of the RadFluidContentControl to a drop down list via the State property defined in the view model.
 
@@ -187,7 +187,7 @@ This section shows how to link the State property of the RadFluidContentControl 
     </Grid>
 {{endregion}}
 
-To make the binding in the drop down list to work we need to move the data context from the RadFluidContentControl parent control that hosts it. 
+To make the binding in the drop down list work we need to move the data context from the RadFluidContentControl parent control that hosts it. 
 
 #### __[C#] Example 6: Setting up the control__
 {{region radfluidcontentcontrol-data-binding-6}}

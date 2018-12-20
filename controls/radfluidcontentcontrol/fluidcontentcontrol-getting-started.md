@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: This tutorial will walk you through the creation of a sample application that contains RadFluidContentControl.
 slug: fluidcontentcontrol-getting-started
 tags: getting,started
 published: True
@@ -12,11 +12,6 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadFluidContentControl__.
 
-* [Assembly references](#assembly-references)
-* [Defining a RadFluidContentControl](#defining-a-radtabcontrol)
-* [Setting up the Content Changing Mechanism](#adding-content-in-the-tabs)
-* [Data binding](#data-binding)
-			
 ## Assembly References
 
 In order to use __RadFluidContentControl__, you will need to add references to the following assemblies:
@@ -26,7 +21,7 @@ You can find the required assemblies for each control from the suite in the {% i
 
 ## Content States
 
-RadFluidContentControl support three states for displaying the different contents. When the control enters a state the corresponding view will be displayed.
+RadFluidContentControl supports three states for displaying the different contents. When the control enters a state the corresponding view will be displayed.
 
 * __Small__
 * __Normal__
@@ -38,7 +33,7 @@ Read the [Setting up the Content Changing Mechanism](#setting-up-the-content-cha
 
 ## Defining a RadFluidContentControl
 
-The control expose three properties that allows you to set a different content for the different states. 
+The control exposes a few properties that allow you to set a different content for the different states. 
 
 * __SmallContent__: The property accepts any object and it will display it when the control is in __Small__ state.
 
@@ -74,7 +69,7 @@ The control expose three properties that allows you to set a different content f
 
 ## Setting up the Content Changing Mechanism
 
-There two mechanisms for changing the currently visible content. The default one is based on the size of the control. When it reaches a specific size range the content will be change accordingly. The second mechanism is manual. In this case you can manually set the __State__ property of the __RadFluidContentControl__.
+There are two mechanisms for changing the currently visible content. The default one is based on the size of the control. When it reaches a specific size range the content will be change accordingly. The second mechanism is manual. In this case you can manually set the __State__ property of the __RadFluidContentControl__.
 
 To enabled the size based mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Automatic__. You can control the size thresholds via the following properties.
 * __NormalToSmallThreshold__: The maximum size at which the control can be in Small state. When the control reaches this size it enters into Normal state. The default value of the property is *new Size(150, 150)*.

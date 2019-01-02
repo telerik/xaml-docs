@@ -45,5 +45,3 @@ The __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]
 
 #### __Figure 1: Defining the GridViewMultiColumnComboBoxColumn__
 ![Defining the GridViewMultiColumnComboBoxColumn](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
-
-## See Also

@@ -17,7 +17,7 @@ The __RadDiagram__ provides the developer with the possibility to enable or disa
 When dragging and dropping the __RadDiagram__ from the Visual Studio ToolBox, you will be presented with a wizard which allows you to configure the control before adding it in xaml.
 
 #### __Figure 1: RadDiagram Design-time wizard__
-{% if site.site_name == 'WPF' %}![RadDiagram Design-time wizard](images/DiagramDesignWizardGeneralOptions.png){% endif %}{% if site.site_name == 'Silverlight' %}![RadDiagram Design-time wizard](images/DiagramDesignWizardGeneralOptions_SL.png){% endif %}
+{% if site.site_name == 'WPF' %}![RadDiagram Design-time wizard](images/DiagramDesignWizardGeneralOptions.png){% else %}![RadDiagram Design-time wizard](images/DiagramDesignWizardGeneralOptions_SL.png){% endif %}
 
 ## Design-time Wizard Options
 

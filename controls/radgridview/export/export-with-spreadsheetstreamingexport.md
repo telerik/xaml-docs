@@ -11,10 +11,23 @@ position: 9
 # Export with SpreadsheetStreamingExport
 
 The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the most common formats. 
-
+* [Assembly References]()
 * [Exporting](#exporting)
 * [Asynchronous Export](#asynchronous-export)
 * [Events](#events)
+
+## Assembly References
+
+The __Export with SpreadsheetStreamingExport__ functionality uses additional libraries so you need to add references to the following assemblies:
+
+* Telerik.Windows.Documents.Core.dll
+* Telerik.Windows.Documents.Spreadsheet.dll 
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+* Telerik.Windows.Zip.dll
+* Telerik.Windows.Controls.GridView.Export.dll
+* Telerik.Windows.Controls.GridView.SpreadSheetStreamingExport.dll
+
+>  __Telerik.Windows.Controls.GridView.SpreadSheetStreamingExport.dll__ is a new binary introduced in __R1 2019__. 
 
 ## Exporting
 

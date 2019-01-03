@@ -2,10 +2,10 @@
 title: Design-time support
 page_title: Design-time support
 description: This article demonstrates what options are available for configuring the RadDiagram during design-time.
-slug: raddiagram-design-time-support
+slug: raddiagram-features-design-time-support
 tags: design-time, configuration, toolbox
 published: True
-position: 11
+position: 19
 ---
 
 # Design-time Support

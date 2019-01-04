@@ -10,13 +10,13 @@ position: 13
 
 # Routing
 
-__Routing__ - a mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes. 
+A mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes. 
 
 ## Default Routing
 	
-Routing in __RadDiagram__ is only available if the __RadDiagram RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.		  
+Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.		  
 
-#### __XAML__
+#### __[XAML] Example 1: Setting RouteConnections property in XAML__
 {{region raddiagram-features-routing-01}}
 	<Grid>
 		<Grid.Resources>
@@ -65,7 +65,7 @@ Routing in __RadDiagram__ is only available if the __RadDiagram RouteConnections
 
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
 
-#### __XAML__
+#### __[XAML] Example 2: Setting Route property to False__
 {{region raddiagram-features-routing-01}}
 	<telerik:RadDiagramConnection x:Name="xConnection2" Route="False"
 								  SourceConnectorPosition="Bottom"
@@ -88,14 +88,15 @@ This value indicates the size of the cells of the underlying grid used by the al
 
 ## OrgTreeRouter	  
 
-The __OrgTreeRouter__ is __LayoutType__ - based router that performs a hierarchical routing between parent and child shape. When a shape is being dragged, it removes only the crossings between the connection and its source and target shapes. It should be used when following conditions are satisfied:		
+The __OrgTreeRouter__ is __LayoutType__: Based router that performs a hierarchical routing between parent and child shape. When a shape is being dragged, it removes only the crossings between the connection and its source and target shapes. It should be used when following conditions are satisfied:		
 
 * The __IsConnectorsManipulationEnabled__ is set to false.			
 
 * The __LayoutType__ is among the following 5 - __TipOverTree__, __TreeDown__, __TreeUp__, __TreeLeft__, __TreeRight__.
 
 In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter object and set it as current Router of the RadDiagram via the RoutingService:
-#### __C#__
+
+#### __[C#] Example 3: Setting OrgTreeRouter__
 {{region raddiagram-features-routing-0}}
 	public MainPage()
 	{
@@ -109,7 +110,7 @@ In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter obj
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Setting OrgTreeRouter__
 
 {{region raddiagram-features-routing-0}}
 	Public Sub New()
@@ -126,7 +127,7 @@ The TreeLayoutType points to the type of Layout you wish to use. The routing log
 
 The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape and the connection.
 
-#### __XAML__
+#### __[XAML] Example 4: Specifing RadDiagram in XAML__
 {{region raddiagram-features-routing-0}}
 	<telerik:RadDiagram IsManipulationAdornerVisible="False" IsConnectorsManipulationEnabled="False" 
 					x:Name="diagram" Width="1000" Height="500" Grid.Row="1" RouteConnections="True">
@@ -272,36 +273,46 @@ Here is a possible result in Windows8 theme:
 
 As the name suggest this is a connection router that uses a version of the [A* search algorithm](http://en.wikipedia.org/wiki/A*_search_algorithm) to find the best route between two points. There are several ways to parameterize the algorithm:
 
+>tip The routing connection algorithm of the AStarRouter support two types of connection: Polyline and Spline.
+
 #### Using Diagram Constants
 
-* __DiagramConstants.RoutingGridSize__ - of type double and gets or sets the routing grid size.
+* __DiagramConstants.RoutingGridSize__: A property of type double that gets or sets the routing grid size.
 
 ![AStarRouter](images/radidiagram-features-AStarRouter.png)
 
-* __DiagramConstants.RouterInflationValue__ - of type double and gets or sets the size of the restricted area around the shapes.
+* __DiagramConstants.RouterInflationValue__: A properly of type double that gets or sets the size of the restricted area around the shapes.
 
 #### Using properties of the router
 
-* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is __False__ by default.
+* __AvoidShapes__: Boolean property controlling the logic that makes the connections go around the shapes. This property is __True__ by default.
 
 ![AStarRouter](images/radidiagram-features-AStarRouter2.png)
 
-* __WallOptimization__ - boolean property controlling router optimization logic. If you set this property to True the router will try to optimize some of the steps so that there are the least corners. 
+* __WallOptimization__: Boolean property controlling router optimization logic. If you set this property to __True__ the router will try to optimize some of the steps so that there are the least corners. 
+
+With the __R1 2019__ version of __Telerik UI for WPF__, several properties were created which can be used to further modify the algorithm for the routing connections. In order, the changes to be applied to the algorithm the __AvoidConnectionOverlap__ property of the __AStarRouter__ need to be set to __True__.
+
+* __SegmentOverlapPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections behavior will become very close to when __AvoidConnectionOverlap__ is set to __False__. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete 
+scenario. The default value is __0.5__.
+
+* __ShapeCrossPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. The default value is __1__;
+
+* __SegmentOverlapDistance__: A property of type double that gets or sets the surrounding area of a segment in which an overlap is detected. This property require __AvoidConnectionOverlap__ to be set to __True__.
 
 #### Using virtual methods
 
 If the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
 
-* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes 
+* __GetSiblingNodes__: This method receives the current state and the end target and should return the next possible nodes 
 
 >The order in which the steps are returned is important - if you have two steps with the same price we'll choose the first one.
 
-* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
+* __CalculateWallPenalty__: This method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
 
-* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
+* __CalculateBendAlteration__: This method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
 
 >If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.
-
 
 ## InflatedRectRouter
 
@@ -313,8 +324,8 @@ In the following section we will create a custom Router. This way we will be abl
 
 Lets first create some items:
 
-#### __XAML__
-{{region raddiagram-features-routing-3}}
+#### __[XAML]__
+{{region raddiagram-features-routing-4}}
     <telerik:RadDiagram x:Name="diagram">
 	<telerik:RadDiagramShape Position="100 100" Width="100" Height="30" Content="Shape A" x:Name="shapeA"/>
 	<telerik:RadDiagramShape Position="300 100" Width="100" Height="30" Content="Shape B" x:Name="shapeB"/>
@@ -324,7 +335,7 @@ Lets first create some items:
 
 Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method:
 		
-#### __C#__
+#### __[C#]__
 {{region raddiagram-features-routing-1}}
 	public class CustomRouter : IRouter
 	{
@@ -344,7 +355,7 @@ Now we have to create class that implements the __IRouter__ interface and overri
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]__
 {{region raddiagram-features-routing-1}}
 	Public Class CustomRouter
 		Implements IRouter
@@ -367,12 +378,12 @@ Please note that we only have to add in the list the route points, no need to ad
 
 The final step is to make our Router the current one of the Diagram. This is done via Diagram's Routing Service;
 
-#### __C#__
+#### __[C#]__
 {{region raddiagram-features-routing-2}}
 	this.diagram.RoutingService.Router = new CustomRouter();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET]__
 {{region raddiagram-features-routing-2}}
 	this.diagram.RoutingService.Router = new CustomRouter();
 {{endregion}}

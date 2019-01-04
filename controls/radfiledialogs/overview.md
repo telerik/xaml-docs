@@ -46,6 +46,8 @@ Here are a few of the controls' main features:
 
 * **Codeless Тest Аutomation**: You can record, execute and debug functional tests for the controls without leaving the familiar Visual Studio environment.
 
+* **Environment variables**: The dialogs support the usage of all system and user-defined enviroment variables.
+
 * **Network Locations**: The controls allow you to display network locations by setting the **ShowNetworkLocations** property.
  
 The file dialogs also support many other features of the native Windows file dialogs.

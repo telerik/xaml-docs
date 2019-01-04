@@ -50,6 +50,7 @@ ExpressionEditor_Logical | Logical
 ExpressionEditor_Math | Math
 ExpressionEditor_Operators | Operators
 ExpressionEditor_Other | Other
+ExpressionEditor_Text | Text
  
 
 ## See Also

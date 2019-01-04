@@ -14,11 +14,12 @@ This article describes the set of properties that can be used for manipulating t
 
 * [Height of the DropDown](#height-of-the-dropdown)
 * [Width of the DropDown](#width-of-the-dropdown)
-* [Set Max Height or Width of the DropDown](#set-max-height-or-width-of-the-dropdown)
+* [Set Min and Max Height or Width of the DropDown](#set-min-and-max-height-or-width-of-the-dropdown)
 * [Disable DropDown Resizing](#disable-dropdown-resizing)
 * [Keep the DropDown Open](#keep-the-dropdown-open)
 * [Open the DropDown in Input](#open-the-dropdown-on-input)
 * [Position of the DropDown](#position-of-the-dropdown)
+* [Closing the DropDown when Selecting](#closing-the-dropdown-when-selecting)
 
 ## Height of the DropDown
 
@@ -28,7 +29,7 @@ The Height of the DropDown element can be set through the __DropDownHeight__ pro
 {{region radmulticolumncombobox-dropdown-properties_01}}
 	 <telerik:RadMultiColumnComboBox DisplayMemberPath="Name" DropDownHeight="200">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Orders, Source={StaticResource ViewModel}}" />
+                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Orders}" />
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
 {{endregion}}
@@ -40,9 +41,14 @@ The Height of the DropDown element can be set through the __DropDownHeight__ pro
 
 The Width of the DropDown element can be set through the __DropDownWidth__ property.
 
-## Set Max Height or Width of the DropDown
+## Set Min and Max Height or Width of the DropDown
 
-The maximum Width or Height space that the DropDown can take can be controled by the __DropDownMaxHeight__ and __DropDownMaxWidth__ properties.
+The minimum and maximum Width or Height space that the DropDown can take can be controlled by the following set of properties.
+
+* __DropDownMaxHeight__  
+* __DropDownMaxWidth__
+* __DropDownMinHeight__
+* __DropDownMaxHeight__
 
 ## Disable DropDown Resizing
 
@@ -71,6 +77,22 @@ __RadMultiColumnComboBox__ provides a predefined set of options for setting the 
 * __RelativePoint__
 * __Right__
 * __Top__
+
+## Closing the DropDown when Selecting
+
+> The __CloseDropDownAfterSelectionInput__ property is respected only in __Single SelectionMode__
+
+By default, the __DropDown__ of RadMultiColumnComboBox will be kept open when the user performs selection. The __CloseDropDownAfterSelectionInput__ property of RadMultiColumnComboBox can be used in order to close the __DropDown__ each time the user applies a new selection. This can be achieved by setting its value to __True__.
+
+#### __[XAML] Example 2: Setting the CloseDropDownAfterSelectionInput property__
+{{region radmulticolumncombobox-dropdown-properties_02}}
+	<telerik:RadMultiColumnComboBox CloseDropDownAfterSelectionInput="True"
+                                        DisplayMemberPath="Name" SelectionMode="Multiple">
+            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" />
+            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+        </telerik:RadMultiColumnComboBox>
+{{endregion}}
 
 ## See Also
 

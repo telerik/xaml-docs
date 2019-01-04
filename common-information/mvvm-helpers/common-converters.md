@@ -1,7 +1,7 @@
 ---
 title: Converters
 page_title: Converters 
-description: This article describe built-in converter which can be used.
+description: This article describe Telerik built-in converters which can be used.
 slug: common-converters
 tags: converter
 published: True
@@ -28,27 +28,29 @@ Telerik controls provide a set of different built-in __IValueConverters__ which 
 * [DoubleToThicknessConverter](#doubletothicknessconverter)
 * [OpacityConverter](#opacityconverter)
 * [StringToGlyphConverter](#stringtoglyphconverter)
+* [ThicknessToOrientedThicknessConverter](#thicknesstoorientedthicknessconverter )
 
 #### __[XAML] Example 1: Specifying converters in XAML__
-{{region xaml-common-converters_0}}
-	<FrameworkElement>
-	  <FrameworkElement.Resources>
-		  <telerik:BooleanToOpacityConverter x:Key="BooleanToOpacityConverter"/>
-		  <telerik:InvertedBooleanToOpacityConverter x:Key="InvertedBooleanToOpacityConverter"/>
-		  <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-		  <telerik:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter"/>
-		  <telerik:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter"/>
-		  <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
-		  <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
-		  <telerik:DateTimeTypeConverter x:Key="DateTimeTypeConverter"/>
-		  <telerik:UppercaseConverter x:Key="UppercaseConverter"/>
-		  <telerik:BinaryImageConverter x:Key="BinaryImageConverter"/>
-		  <telerik:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter"/>
-		  <telerik:OpacityConverter x:Key="OpacityConverter"/>
-		  <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
-	  </FrameworkElement.Resources>
-	</FrameworkElement>
-{{endregion}}
+	{{region xaml-common-converters_0}}
+		<FrameworkElement>
+		  <FrameworkElement.Resources>
+			  <telerik:BooleanToOpacityConverter x:Key="BooleanToOpacityConverter"/>
+			  <telerik:InvertedBooleanToOpacityConverter x:Key="InvertedBooleanToOpacityConverter"/>
+			  <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+			  <telerik:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter"/>
+			  <telerik:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter"/>
+			  <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
+			  <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+			  <telerik:DateTimeTypeConverter x:Key="DateTimeTypeConverter"/>
+			  <telerik:UppercaseConverter x:Key="UppercaseConverter"/>
+			  <telerik:BinaryImageConverter x:Key="BinaryImageConverter"/>
+			  <telerik:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter"/>
+			  <telerik:OpacityConverter x:Key="OpacityConverter"/>
+			  <telerik:ThicknessToOrientedThicknessConverter x:Key="ThicknessToOrientedThicknessConverter"/>
+			  <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter"/>
+		  </FrameworkElement.Resources>
+		</FrameworkElement>
+	{{endregion}}
 
 
 ## BooleanToOpacityConverter
@@ -152,14 +154,38 @@ The converter applies opacity to a __Color__ or __Brush__ value based on the par
 	<Border Background="{Binding Color, Converter={StaticResource OpacityConverter},ConverterParameter=8}"  />
 {{endregion}}
 
+## ThicknessToOrientedThicknessConverter
+
+The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
+
+#### __[C#] Example 6: Setting the ViewModel__
+	{{region cs-common-converters_5}}
+		public class MainWindow
+		{
+			 public MainWindow()
+			{
+				InitializeComponent();
+
+				this.DataContext = this;
+				Value = new Thickness(2, 3, 4, 5);				
+			}
+			public Thickness Value { get; set; }
+		}
+	{{endregion}}
+
+#### __[XAML] Example 7: Setting the converter to the BorderThickness property__
+	{{region xaml-common-converters_6}}
+		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
+	{{endregion}}	
+
 ## StringToGlyphConverter
 
 The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts it to the corresponding `char` represantation. The converter is useful when you store the glyph string value in your model and want to data bind it to the UI.
 
 > See all available glyphs in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
-#### __[C#] Example 7: Setting the view model__
-{{region cs-common-converters_6}}
+#### __[C#] Example 8: Setting the view model__
+{{region cs-common-converters_7}}
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -170,8 +196,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 	}
 {{endregion}}
 
-#### __[XAML] Example 8: Using the StringToGlyphConverter converter__
-{{region xaml-common-converters_7}}
+#### __[XAML] Example 9: Using the StringToGlyphConverter converter__
+{{region xaml-common-converters_8}}
 	<telerik:RadGlyph Glyph="{Binding GlyphString, Converter={StaticResource StringToGlyphConverter}}" />	
 {{endregion}}
 

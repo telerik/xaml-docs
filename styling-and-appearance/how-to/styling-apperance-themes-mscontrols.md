@@ -36,6 +36,8 @@ Below is the full control list of native {% if site.site_name == 'Silverlight' %
 
 * System.Windows.Controls.Tooltip
 
+* System.Windows.Documents.Hyperlink
+
 {% if site.site_name == 'WPF' %}
 
 * System.Windows.Controls.Primitives.StatusBar

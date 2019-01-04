@@ -152,6 +152,16 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 
 The linear axis is a plain numerical axis, that is, the LinearAxis class inherits from __NumericalAxis__ and NumericalAxis itself inherits from Axis. NumericalAxis defines only a few features on top of the abstract Axis class.
 
+## Getting the Axis Actual Range
+
+The range of the chart's continuous axes (LinearAxis, LogarithmicAxis and DateTimeContinuousAxis) can be adjusted manually by the Minimum and Maximum properties. If they are not set the axis range is calculated manually. In this case its range can be get from several properties and events exposed by the axis.
+
+* __ActualRange__: The property returns an object of type ValueRange<T> that contains the actual visible range of the axis. This is the range visible in the plot area of the control. The ActualVisibleRange will be different than the ActualRange when you zoom-in the chart. See also the __ActualRangeChanged__ event in the [Common Events](#common-events) section of this article.
+
+* __ActualVisibleRange__: The property returns an object of type ValueRange<T> that contains the the actual range of the axis - minimum and maximum. See also the __ActualVisibleRangeChanged__ event in the [Common Events](#common-events) section of this article.
+
+* __ActualMajorStep__: The property returns a numeric value that determines the actual major step of the axis. Available only for __LinearAxis__. See also the __ActualMajorStepChanged__ event in the [Common Events](#common-events) section of this article.
+
 ## Common Events
 
 There are several common events exposed by the different type of axes.

@@ -22,7 +22,7 @@ The __RadTimeSpanPicker__ control raises the following specific events:
 
 * __DropDownClosed__ - occurs when the __DropDownButton__ is closed.
 
-* __DropDownOpend__ - occurs when the __DropDownButton__ is opened.
+* __DropDownOpened__ - occurs when the __DropDownButton__ is opened.
 
 	Both events receive two arguments:
 

@@ -84,11 +84,11 @@ The next screenshots show the finally result:
 
 ![radautocompletebox-features-filteringbehavior-2](images/radautocompletebox-features-filteringbehavior-2.png)
 
-__With__ the custom FilteringBehavior (the DropDown portion is populated although no watches were found):
+__With__ the custom FilteringBehavior (the DropDown portion is populated although no matches were found):
 
 ![radautocompletebox-features-filteringbehavior-3](images/radautocompletebox-features-filteringbehavior-3.png)
 
-__Without__ the custom FilteringBehavior (the default FilteringBehavior) (the DropDown portion is not populated because no watch were found):
+__Without__ the custom FilteringBehavior (the default FilteringBehavior) (the DropDown portion is not populated because no matches were found):
 
 ![radautocompletebox-features-filteringbehavior-4](images/radautocompletebox-features-filteringbehavior-4.png)
 

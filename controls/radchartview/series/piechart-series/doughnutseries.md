@@ -1,14 +1,14 @@
 ---
-title: DoughtnutSeries
-page_title: DoughtnutSeries
-description: DoughtnutSeries
+title: DoughnutSeries
+page_title: DoughnutSeries
+description: RadChartView DoughnutSeries is visualized on the screen as separate slices representing each of the data points.
 slug: radchartview-series-doughnutseries
-tags: doughtnutseries
+tags: doughnutseries
 published: True
 position: 1
 ---
 
-# DoughtnutSeries
+# DoughnutSeries
 
 This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that each slices is drawn with an offset from the center of the control.
 
@@ -16,13 +16,14 @@ This series is visualized on the screen as separate slices representing each of 
 * [Properties](#properties)
 * [Data Binding](#data-binding)
 * [Setting the Doughnut Radius](#setting-the-doughnut-radius)
+* [Offset Doughnut Slice from Center](#offset-doughnut-slice-from-center)
 * [Styling the Series](#styling-the-series)      
 
 ## Declaratively defined series
 
 You can use the following definition to display a simple DoughnutSeries
 
-#### __[XAML] Example 1: Declaring an DoughtnutSeries in XAML__
+#### __[XAML] Example 1: Declaring an DoughnutSeries in XAML__
 {{region  radchartview-series-doughnutseries_0}}
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
@@ -39,7 +40,7 @@ You can use the following definition to display a simple DoughnutSeries
 	</telerik:RadPieChart>
 {{endregion}}
 
-#### __Figure 1: DoughtnutSeries visual appearance__	
+#### __Figure 1: DoughnutSeries visual appearance__	
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
 
 ## Properties
@@ -53,7 +54,7 @@ You can use the following definition to display a simple DoughnutSeries
 
 ## Data Binding
 
-You can use the __ValueBinding__ property of the DoughtnutSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __ValueBinding__ property of the DoughnutSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __[C#] Example 2: Defining the view model__
 
@@ -71,9 +72,9 @@ You can use the __ValueBinding__ property of the DoughtnutSeries to bind the Dat
 	};
 {{endregion}}		
 
-#### __[XAML] Example 3: Specify a DoughtnutSeries in XAML__
+#### __[XAML] Example 3: Specify a DoughnutSeries in XAML__
 {{region radchartview-series-doughnutseries_2}}
-	<telerik:DoughtnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
+	<telerik:DoughnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
 {{endregion}}	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
@@ -116,13 +117,64 @@ The default value of __InnerRadiusFactor__ is 0.5
 {{endregion}}	
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.5 (right), and InnerRadiusFactor of 0.2 (left) and 0.3 (right)__
-![radchartview-series-pieseries](images/radchartview-series-doughnutseries-1.png)
+![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-1.png)
+
+## Offset Doughnut Slice from Center
+
+The DoughnutSeries allows you to offset each doughnut slice from the center of the doughnut. To do this set the __OffsetFromCenter__ property of the corresponding PieDataPoint.
+
+#### __[XAML] Example 5: Offsetting pie slices__
+{{region radchartview-series-doughnutseries_4}}
+	<telerik:RadPieChart Palette="Windows8">
+		<telerik:RadPieChart.Series>
+			<telerik:DoughnutSeries>
+				<telerik:DoughnutSeries.DataPoints>
+					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
+					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
+					<telerik:PieDataPoint Label="15.11%" Value="15.11" OffsetFromCenter="0.2"/>
+					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
+					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
+				</telerik:DoughnutSeries.DataPoints>
+			</telerik:DoughnutSeries>
+		</telerik:RadPieChart.Series>
+	</telerik:RadPieChart>
+{{endregion}}	
+
+#### __Figure 3: Exploding pie slices__
+![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-2.png)
+
+Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the corresponding doughnut slice will *explode* from the center of the doughnut.
+
+#### __[XAML] Example 6: Setting SelectedPointOffset__
+{{region radchartview-series-doughnutseries_5}}
+	<telerik:RadPieChart Palette="Windows8">
+		<telerik:RadPieChart.Series>
+			<telerik:DoughnutSeries SelectedPointOffset="0.25" RadiusFactor="0.7">
+				<telerik:DoughnutSeries.DataPoints>
+					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
+					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
+					<telerik:PieDataPoint Label="15.11%" Value="15.11" />
+					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
+					<telerik:PieDataPoint Label="3.55%" Value="3.55" />
+				</telerik:DoughnutSeries.DataPoints>
+			</telerik:DoughnutSeries>                
+		</telerik:RadPieChart.Series>
+		<telerik:RadPieChart.Behaviors>
+			<telerik:ChartSelectionBehavior />
+		</telerik:RadPieChart.Behaviors>
+	</telerik:RadPieChart>
+{{endregion}}
+
+#### __Figure 4: Selected exploding pie slices__
+![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-3.png)
+
+> The OffsetFromCenter and SelectedPointOffset works in relative units between 0 and 1. 
 
 ## Styling the Series
 
-You can see how to style the series using different properties in the [DoughtnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
+You can see how to style the series using different properties in the [DoughnutSeries section]({%slug radchartview-styles-and-templates-customizing-piechart-series%}) of the Customizing PieChart Series help article.
 
-Additionally, you can use the Palette property of the chart to change the colors of the DoughtnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
+Additionally, you can use the Palette property of the chart to change the colors of the DoughnutSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 
 ## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

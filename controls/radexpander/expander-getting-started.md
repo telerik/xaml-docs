@@ -16,19 +16,9 @@ This article will provide you with the knowledge required to use the **RadExpand
 
 In order to use the RadExpander control, you will need to add references to the following assemblies:
 
-{% if site.site_name == 'Silverlight' %}
-- __Telerik.Windows.Controls__
-- __Telerik.Windows.Controls.Navigation__ 
+* __Telerik.Windows.Controls__
 
->You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.  
-{% endif %}
-{% if site.site_name == 'WPF' %}
-- __Telerik.Windows.Controls__
-- __Telerik.Windows.Controls.Navigation__
-- __Telerik.Windows.Data__
-
->You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.  
-{% endif %}
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
 ## Add а RadExpander to the Project
 

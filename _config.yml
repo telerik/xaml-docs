@@ -14,9 +14,6 @@ getting-started/installation/for-silverlight-vs-extensions-releases.md,
 getting-started/installation/installation-installing-hotfix.md,
 getting-started/installation/installation-installing-license-limitations.md,
 getting-started/installation/installation-installing-from-nuget.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration.md,
-getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS.md,
 integration/installation-adding-to-vs-toolbox-silverlight.md,
 upgrade/installation-upgrading-from-trial-to-developer-license.md,
 common-information/installation-installing-dependencies.md,
@@ -221,7 +218,7 @@ navigation:
         position: 1			
     controls/radganttview/features/timeruler:
         title: TimeRuler
-        position: 2
+        position: 2        
     controls/radpivotgrid/features/localdatasourceprovider:
         title: LocalDataSourceProvider
     controls/radpivotgrid/features/olap-providers:
@@ -334,7 +331,9 @@ navigation:
     "*financial-series":
         title: Financial Series
     "*scatter-series":
-        title: Scatter Series    
+        title: Scatter Series
+    controls/radfluidcontentcontrol:
+        title: RadFluidContentControl
     controls/radcloudupload:
         title: RadCloudUpload
     controls/radcoloreditor:
@@ -578,6 +577,8 @@ navigation:
     controls/radchartview/troubleshooting:
         title: Troubleshooting 
         position: 13
+    controls/raddiagram/performance:
+        title: Performance
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -3405,6 +3406,7 @@ sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
 
 ## Do not edit below this line
+skip_tabbed_code: true
 safe: false
 markdown: MarkdownProcessor
 kramdown:

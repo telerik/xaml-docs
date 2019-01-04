@@ -29,6 +29,8 @@ The __ColumnSortDescriptor__ of a given column can be fetched through the __GetS
 
 Through the __ColumnSortDescriptor__, the sorting state can be set by manipulating its __SortDirection__ property.
 
+> In order the UI to be updated accordingly, the __IsActive__ property of the given __SortDescriptor__ needs to be set to __True__.
+
 #### __[C#] Example 2: Setting the SortDirection property__
 
 {{region radvirtualgrid-sorting-programmatic-sorting_1}}

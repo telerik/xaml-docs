@@ -33,7 +33,7 @@ The following table shows which data points are being used by the corresponding 
 | __RangeDataPoint__<ul><li>RangeSeries</li><li>RangeBarSeries</li></ul> |
 | __OhlcDataPoint__<ul><li>OhlcSeries</li><li>CandlestickSeries</li></ul> |
 | __BubbleDataPoint__<ul><li>BubbleSeries</li></ul> |
-| __BubbleScatterDataPoint__<ul><li>ScatterBubbleSeries</li></ul> |
+| __ScatterBubbleDataPoint__<ul><li>ScatterBubbleSeries</li></ul> |
 
 ## DataPoint
 

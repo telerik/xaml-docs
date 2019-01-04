@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article shows the events exposed by RadGanttView.
 slug: radganttview-events-overview
 tags: overview
 published: True
@@ -12,27 +12,63 @@ position: 0
 
 This topic covers the specific events exposed by __RadGanttView__.
 
-__RadGanttView__ raises the following specific events:
+__RadGanttView__ raises the following events, when a task is edited through the UI, in the order that they are shown below:
 
-* __TaskEditing__ - occurs when a task editing is initiated through the UI.
+* __TaskEditing__: Occurs when the task editing is initiated through the UI. __Example 1__ demonstrates how you can handle the event in order to cancel the editing based on a specific condition.
 
-* __TaskSaving__ - occurs when an edit operation is being committed through the UI.
+	#### __[C#] Example 1: Canceling the editing of a task__
+	{{region cs-radganttview-events-overview-0}}
+		private void GanttView_TaskEditing(object sender, Telerik.Windows.Controls.GanttView.TaskEditingEventArgs e)
+        {
+            if (your condition here)
+			{
+				e.Cancel = true;
+			}
+        }
+	{{endregion}}
 
-	Both events receive two arguments:
+	#### __[VB.NET] Example 1: Canceling the editing of a task__
+	{{region vb-radganttview-events-overview-1}}
+		Private Sub GanttView_TaskEditing(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditingEventArgs)
+			If your condition here Then
+				e.Cancel = True
+			End If
+		End Sub
+	{{endregion}}
 
-	* The sender argument contains __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
+* __TaskSaving__: Occurs when an edit operation is being committed through the UI. Please, note that you can handle this event to cancel the editing similarly to __Example 1__.
 
-	* A __TaskEditingEventArgs__ object.
+	The __TaskEditing__ and __TaskSaving__ events receive the following two arguments:
+
+	* The sender argument contains the __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
+
+	* A __TaskEditingEventArgs__ object. It contains the task that is being edited.
 	
-* __TaskEdited__ - occurs when a task has been edited through the UI.
+* __TaskEdited__: Occurs when a task has been edited through the UI. __Example 2__ demonstrates how you can handle the event in order to show a MessageBox indicating the __Duration__ of the task after it has been edited.
 
-	* The sender argument contains __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
+	* The sender argument contains the __RadGanttView__. This argument is of type object, but can be cast to __RadGanttView__ type.
 
-	* A __TaskEditedEventArgs__ object.
+	* A __TaskEditedEventArgs__ object. It contains the task that has been edited.
+
+	#### __[C#] Example 2: Show Task duration after it has been edited__
+	{{region cs-radganttview-events-overview-2}}
+		private void GanttView_TaskEdited(object sender, Telerik.Windows.Controls.GanttView.TaskEditedEventArgs e)
+        {
+            var durationAfterEditing = e.Task.Duration;
+            MessageBox.Show($"The duration after editing is - {durationAfterEditing}");
+        }
+	{{endregion}}
+
+	#### __[VB.NET] Example 2: Show Task duration after it has been edited__
+	{{region vb-radganttview-events-overview-3}}
+		Private Sub GanttView_TaskEdited(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditedEventArgs)
+			Dim durationAfterEditing = e.Task.Duration
+			MessageBox.Show($"The duration after editing is - {durationAfterEditing}")
+		End Sub
+	{{endregion}}
 
 ## See Also
 
  * [Getting Started]({%slug radganttview-getting-started%})
  
  * [Visual Structure]({%slug radganttview-visual-structure%})
-

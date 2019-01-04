@@ -20,8 +20,10 @@ This tutorial will walk you through the creation of a sample application that co
 
 In order to use the __RadWizard__ control in your projects you have to add references to the following assemblies:
 * __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Navigation__
-{% if site.site_name == 'WPF' %}*__Telerik.Windows.Data__{% endif %} 
+* __Telerik.Windows.Controls.Navigation__  
+{% if site.site_name == 'WPF' %} 
+* __Telerik.Windows.Data__  
+{% endif %} 
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 

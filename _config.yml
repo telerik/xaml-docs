@@ -125,6 +125,11 @@ navigation:
         title: RadListBox
     controls/radmenu:
         title: RadMenu
+    controls/radnavigationview:
+        title: RadNavigationView
+    controls/radnavigationview/populating-with-data:
+        title: Populating With Data
+        position: 5
     controls/radnumericupdown:
         title: RadNumericUpDown
     controls/radradialmenu:
@@ -3348,6 +3353,7 @@ intro_columns:
       "Buttons": "radbuttons-overview"
       "ContextMenu": "contextmenu-overview1"
       "Menu": "radmenu-overview"
+      "NavigationView": "radnavigationview-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"

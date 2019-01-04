@@ -42,7 +42,7 @@ In order to prevent the RadNavigationView from entering a certain DisplayMode, y
 {{endregion}}
 
 #### __[VB.NET] Example 2: Setting the AllowedDisplayModes to Minimal and Compact__
-{{region cs-radnavigationview-display-mode-2}}
+{{region vb-radnavigationview-display-mode-2}}
     Me.navigationView.AllowedDisplayModes = NavigationViewDisplayMode.Minimal Or NavigationViewDisplayMode.Compact
 {{endregion}}
 
@@ -63,7 +63,7 @@ By default the __RadNavigationView__ handles its SizeChanged event in order to c
 {{endregion}}
 
 #### __[VB.NET] Example 4: Setting the AutoChangeDisplayMode to False in code__
-{{region cs-radnavigationview-display-mode-3}}
+{{region vb-radnavigationview-display-mode-3}}
     Me.navigationView.AutoChangeDisplayMode = False
 {{endregion}}
 

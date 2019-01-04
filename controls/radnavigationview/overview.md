@@ -9,8 +9,6 @@ position: 0
 
 # Overview
 
-Thank you for choosing __RadNavigationView__!				
-
 __RadNavigationView__ is an adaptive component, used to build a consistent navigational experience in {{ site.framework_name }} applications. The control can automatically adjust its display mode based on the amount of screen space available to it, thus improving the overall user experience (UX) of your applications.				
 
 RadNavigationView is part of the powerful UI for WPF navigation controls framework, which includes components as [RadToolBar]({%slug radtoolbar-overview%}), [RadTreeView]({%slug radtreeview-overview2%}), [RadPanelBar]({%slug radpanelbar-overview%}), [RadWindow]({%slug radwindow-overview%}), [RadMenu]({%slug radmenu-overview%}) and more.
@@ -18,7 +16,7 @@ RadNavigationView is part of the powerful UI for WPF navigation controls framewo
 #### __Figure 1: RadNavigationView in the Office 2016 theme__
 ![RadNavigationView Overview](images/NavigationView_Overview.png)
 
-As every control from UI for {{ site.framework_name }}, RadNavigationView comes with a set of pre-defined themes. Of course, if you choose to do so, you can design your own templates for a completely custom look using Expression Blend.
+As every control from UI for WPF, RadNavigationView comes with a set of pre-defined themes. Of course, if you choose to do so, you can design your own templates for a completely custom look using Blend for Visual Studio.
 
 ## Key Features
 

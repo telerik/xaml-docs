@@ -78,7 +78,7 @@ For the purposes of this article, we will create a simple object and a view mode
 After we have created the viewmodel, the next step is to create an instance and set it to the DataContext of a RadNavigationView. This is demonstrated in __Example 2__. Note, that the change of the RadNavigationView Content is animated by a [RadTransitionControl]({%slug radtransition-getting-started%}), which is bound to its SelectedItem. Additionally, a ContentTemplate is specified for the RadTransitionControl.
 
 #### __[XAML] Example 2: Defining the control and the necessary styles__
-{{region cs-radnavigationview-populating-with-data-databinding-2}}
+{{region xaml-radnavigationview-populating-with-data-databinding-2}}
     <Window.Resources>
 
         <local:MainViewModel x:Key="ViewModel" />
@@ -93,8 +93,7 @@ After we have created the viewmodel, the next step is to create an instance and 
             <Setter Property="IconTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <telerik:RadGlyph Glyph="{Binding Converter={StaticResource StringToGlyphConverter}}"
-                                      />
+                        <telerik:RadGlyph Glyph="{Binding Converter={StaticResource StringToGlyphConverter}}" />
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
@@ -121,7 +120,7 @@ After we have created the viewmodel, the next step is to create an instance and 
 #### __Figure 5: Result from Example 2 in the Office2016 theme__
 ![DataBound RadNavigationView](images/RadNavigationView_DataBinding.gif)
 
->For another, more complicated, databinding example, check out the __First Look__ RadNavigationView example from our [demos](https://demos.telerik.com/wpf/).
+>For another, more complicated, databinding example, check out the __First Look__ RadNavigationView example from the [WPF Controls Samples application](https://demos.telerik.com/wpf/).
 
 ## See Also 
 

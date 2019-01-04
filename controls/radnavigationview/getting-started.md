@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: This article will walk you through the creation of a sample application that contains RadNavigationView control.
+description: This article will walk you through the creation of a sample application that contains a RadNavigationView control.
 slug: radnavigationview-getting-started
 tags: getting,started,navigationviewitem
 position: 1
@@ -9,7 +9,7 @@ position: 1
 
 # Getting Started
 
-This tutorial will walk you through the creation of a sample application that contains __RadNavigationView__ control.
+This tutorial will walk you through the creation of a sample application that contains a __RadNavigationView__ control.
 			
 ## Assembly References
 
@@ -70,17 +70,17 @@ The control can either be populated by adding RadNavigationViewItems to its Item
 
 ## DisplayMode
 
-The __RadNavigationView__ dynamically changes its layout based on its size. It has three display modes: __Minimal__, __Compact__ and __Expanded__. You can read more about them in the [Display Mode]({%slug radnavigationview-display-mode%}) article.
+The __RadNavigationView__ control dynamically changes its layout based on its size. It has three display modes: __Minimal__, __Compact__ and __Expanded__. You can read more about them in the [Display Mode]({%slug radnavigationview-display-mode%}) article.
 
 ## PaneHeader and PaneFooter
 
-The __RadNavigationView__ allows you to customize its header and footer. You can set them to simple strings or add a custom control. Check out the [Header and Footer]({%slug radnavigationview-header-and-footer%}) article for more information.
+The __RadNavigationView__ control allows you to customize its header and footer. You can set them to simple strings or add a custom control. Check out the [Header and Footer]({%slug radnavigationview-header-and-footer%}) article for more information.
 
 ## Navigation
 
 __RadNavigationView__ doesn't perform any navigation automatically. When a certain __RadNavigationViewItem__ is clicked, the __ItemClick__ event is raised. If the click results in a new item being selected, a __SelectionChanged__ event is also raised.
 
-Either of the above events can be handled to perform navigation related tasks or change the Content of the RadNavigationView. Alternatively, the SelectedItem property can be used in order to change the content. This is demonstrated in the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.  
+Either of the above events can be handled to perform navigation related tasks or change the Content of the RadNavigationView control. Alternatively, the SelectedItem property can be used in order to change the content. This is demonstrated in the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.  
 
 ## Opening/Closing the NavigationPane in code
 

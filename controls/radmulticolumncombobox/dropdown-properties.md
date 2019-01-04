@@ -80,7 +80,7 @@ __RadMultiColumnComboBox__ provides a predefined set of options for setting the 
 
 ## Closing the DropDown when Selecting
 
-> The __CloseDropDownAfterSelectionInput__ is respected only in __Single SelectionMode__
+> The __CloseDropDownAfterSelectionInput__ property is respected only in __Single SelectionMode__
 
 By default, the __DropDown__ of RadMultiColumnComboBox will be kept open when the user performs selection. The __CloseDropDownAfterSelectionInput__ property of RadMultiColumnComboBox can be used in order to close the __DropDown__ each time the user applies a new selection. This can be achieved by setting its value to __True__.
 

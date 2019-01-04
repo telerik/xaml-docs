@@ -123,7 +123,7 @@ __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton_
 
 ## Binding Glyphs
 
-If you wish to bind glyphs from your view model, you need to parse the code of the glyph to a **single character** for it can be displayed as expected. Otherwise, all characters of the code will be displayed as-is. This can be achieved either by using a converter for your bindings, or by doing the conversion inside your viewmodel.
+If you wish to bind glyphs from your view model, you need to parse the code of the glyph to a **single character** for it that can be displayed as expected. Otherwise, all characters of the code will be displayed as-is. This can be achieved either by using a converter for your bindings, or by doing the conversion inside your viewmodel.
 
 **Example 6** demonstrates how this can be done with an **IValueConverter** but the same approach can be used directly in your viewmodel.
 
@@ -156,8 +156,9 @@ If, for example, you have a **Glyph** property in your viewmodel which is of typ
 	<TextBlock FontFamily="{StaticResource TelerikWebUI}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
 {{endregion}}
 
-## See Also
+>tip Since R1 2019 the **StringToGlyphConverter** is built-in the UI for WPF suite so you can access it via the `telerik` namespace in xaml or code-behind. Read more about this in the [Converters]({%slug common-converters%}#stringtoglyphconverter) article.
 
+## See Also  
 * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
 * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
 * [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%})

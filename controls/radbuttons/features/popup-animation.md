@@ -5,7 +5,7 @@ description: Popup Animation
 slug: radbuttons-features-popup-animation
 tags: popup,animation,button,dropdown,split,fade,scroll,none,slide
 published: True
-position: 7
+position: 8
 ---
 
 # Popup Animation

@@ -1,25 +1,18 @@
 ---
-title: Getting Started
-page_title: Getting Started
-description: RadHyperlink's Getting Started Article
-slug: hyperlinkbutton-getting-started
-tags: getting,started
+title: Hyperlink Button
+page_title: Hyperlink Button
+description: RadHyperlink Button
+slug: radbuttons-features-hyperlink-button
+tags: hyperlink,button
 published: True
-position: 1
+position: 5
 ---
 
+# Hyperlink Button
 
-# Getting Started
+![HyperlinkButton Icon](images/RadHyperlinkButton_Icon.png)
 
-This tutorial will walk you through the required steps for using __RadHyperlinkButton__.
-
-* [Assembly References](#assembly-references)
-* [Setting the Content and Uri](#adding-radhyperlinkbutton-to-the-project)
-* [Setting the Uri](#setting-the-uri)
-
-## Assembly References
-
-In order to use __RadHyperlinkButton__ in your application, you need to add reference to the __Telerik.Windows.Controls__ assembly.
+__RadHyperlinkButton__ provides the look and feel of __RadButton__ extending it with Hyperlink capabilities. 
 
 ## Setting the Content, Uri and the Target
 
@@ -50,5 +43,9 @@ The control will indicate when the link is visited by modifying the text Foregro
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_03.png)
 
 ## See Also 
-
-* [Overview]({%slug hyperlinkbutton-overview%})
+ * [Button]({%slug radbuttons-features-button%})
+ * [Radio Button]({%slug radbutton-features-radio-button%})
+ * [Commands]({%slug radbuttons-features-commands%})
+ * [Events]({%slug radbuttons-events%})
+ * [Appearance]({%slug radbuttons-features-appearance%})
+ * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.

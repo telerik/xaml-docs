@@ -10,9 +10,9 @@ position: 5
 
 # Hyperlink Button
 
-![HyperlinkButton Icon](images/RadHyperlinkButton_Icon.png)
+__RadHyperlinkButton__ provides the look and feel of RadButton extending it with Hyperlink capabilities. 
 
-__RadHyperlinkButton__ provides the look and feel of __RadButton__ extending it with Hyperlink capabilities. 
+![](images/radbuttons-features-hyperlink-button-0.png)
 
 ## Setting the Content, Uri and the Target
 
@@ -48,4 +48,4 @@ The control will indicate when the link is visited by modifying the text Foregro
  * [Commands]({%slug radbuttons-features-commands%})
  * [Events]({%slug radbuttons-events%})
  * [Appearance]({%slug radbuttons-features-appearance%})
- * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% endif %}{% if site.site_name == 'WPF' %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.
+ * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% else %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.

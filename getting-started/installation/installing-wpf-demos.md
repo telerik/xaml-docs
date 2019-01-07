@@ -27,7 +27,7 @@ WPF Demos application could be accessed from the following link: [https://demos.
 
 You can also download the application from the Windows Store: 
 
-[<img width="125" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
+[<img style="width:125px;height:50px" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 

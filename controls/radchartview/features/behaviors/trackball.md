@@ -1,7 +1,7 @@
 ---
 title: TrackBall
 page_title: TrackBall
-description: ChartTrackBallBehavior behavior can display a vertical line across the chart plot area and little visual indicators at points where the trackball line crosses the visualization of a series object.
+description: ChartTrackBallBehavior can display a vertical line across the chart plot area and little visual indicators at points where the trackball line crosses the visualization of a series object.
 slug: radchartview-features-trackball
 tags: trackball
 published: True

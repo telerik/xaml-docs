@@ -10,173 +10,291 @@ position: 2
 
 # TrackBall
 
-Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%slug radchartview-features-panzoom%}) behaviors, RadChartView provides a trackball behavior through the __ChartTrackBallBehavior__ class. This behavior can display a vertical line across the chart plot area and little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example, when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point.
+Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%slug radchartview-features-panzoom%}) behaviors, RadChartView provides a trackball visualization through the __ChartTrackBallBehavior__ class. 
 
-#### __Figure 1: RadCartesianChart with a track ball__
-![Rad Chart View-chart behaviors trackball](images/radchartview-chart_behaviors_trackballinfo_00.png)
+This behavior can display a vertical line across the chart plot area and little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example, when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point.
 
-The trackball behavior can also display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the trackball line's cross section, as can be seen in Figure 1 above.
+The behavior also displays a small popup (the trackball info), similar to the tooltip, in order to provide more detailed information about the points closest to the trackball line's cross section (see Figure 1).
 
-The ChartTrackBallBehavior exposes three properties and an event. These properties are __ShowTrackInfo__, __ShowIntersectionPoints__, __SnapMode__ and the event is called __TrackInfoUpdated__. ShowTrackInfo and ShowIntersectionPoints enable and disable the popup and the intersection circles respectively. Note that the intersection points can be visually modified by the ChartSeries __TrackBallTemplate__ property and can therefore have an arbitrary visualization. The track info can also be specified as a different template using the ChartSeries' __TrackInfoTemplate__ property. Examples 1 and 2 show how to modify the trackball and track info templates. 
+## Enable the TrackBall
 
-#### __[XAML] Example 1: Specifying a custom TrackBallTemplate__
-{{region radchart-features-trackball_0}}
+To enable the trackball visualization, add a new __ChartTrackBallBehavior__ instance in the __Behaviors__ collection of the RadCartesianChart control.
+
+#### __[XAML] Example 1: Enabling the trackball__
+{{region radchart-features-trackball-0}}
+	<telerik:RadCartesianChart Palette="Windows8">       
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior />
+		</telerik:RadCartesianChart.Behaviors>
+
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="4"/>
+					<telerik:CategoricalDataPoint Category="B" Value="8"/>
+					<telerik:CategoricalDataPoint Category="C" Value="7"/>
+					<telerik:CategoricalDataPoint Category="D" Value="9"/>
+				</telerik:LineSeries.DataPoints>                
+			</telerik:LineSeries>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="7"/>
+					<telerik:CategoricalDataPoint Category="B" Value="2"/>
+					<telerik:CategoricalDataPoint Category="C" Value="18"/>
+					<telerik:CategoricalDataPoint Category="D" Value="15"/>
+				</telerik:LineSeries.DataPoints>
+			</telerik:LineSeries>
+		</telerik:RadCartesianChart.Series>            
+	</telerik:RadCartesianChart>
+{{endregion}}
+
+#### __Figure 1: RadCartesianChart with trackball__
+![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-0.png)
+
+> By default the trackball shows the preview line that follows the data points closest to the mouse position and also the track info control (the information tooltip). The ellipses that snap to the data points are not displayed until explicitly enabled. Read more in the [Toggle the TrackBall Visual Elements](#toggle-the-trackball-visual-elements) section of this article.
+
+## Snap Mode
+
+The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball line will be snapped to the chart's data points. The property is enum accepting the following values:
+
+* __None__: This mode disables the snapping of the line.
+	
+	#### __Figure 2: SnapMode: None__
+	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-1.png)
+
+* __ClosestPoint__ (default): This mode snaps the trackball line to the closest point of all data points in the chart.
+
+	#### __Figure 3: SnapMode: ClosestPoint__
+	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-2.png)
+	
+* __AllClosestPoints__: This mode snaps the trackball line to the closest point from each series object in the chart.
+
+	#### __Figure 4: SnapMode: AllClosestPoints__
+	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-3.png)
+
+#### __[XAML] Example 2: Setting the SnapMode__
+{{region radchart-features-trackball-1}}
 	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.Behaviors>
-	        <telerik:ChartTrackBallBehavior ShowIntersectionPoints="True"
-	                                             ShowTrackInfo="False"/>
+			<telerik:ChartTrackBallBehavior SnapMode="None"/>
 	    </telerik:RadCartesianChart.Behaviors>
+	</telerik:RadCartesianChart>
+{{endregion}}
 	
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	        <telerik:LinearAxis/>
-	    </telerik:RadCartesianChart.HorizontalAxis>
-	
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis/>
-	    </telerik:RadCartesianChart.VerticalAxis>
-	
-	    <telerik:ScatterLineSeries>
-	        <telerik:ScatterLineSeries.TrackBallTemplate>
-	            <DataTemplate>
-	                <Rectangle Width="20"
-	                           Height="20"
-	                           Fill="Violet"
-	                           RenderTransformOrigin="0.5,0.5">
-	                    <Rectangle.RenderTransform>
-	                        <RotateTransform Angle="45"/>
-	                    </Rectangle.RenderTransform>
-	                </Rectangle>
-	            </DataTemplate>
-	        </telerik:ScatterLineSeries.TrackBallTemplate>
-	
-	        <telerik:ScatterDataPoint XValue="5"
-	                                             YValue="5"/>
-	        <telerik:ScatterDataPoint XValue="15"
-	                                             YValue="5"/>
-	        <telerik:ScatterDataPoint XValue="20"
-	                                             YValue="5"/>
-	    </telerik:ScatterLineSeries>
+## Snap Multiple Points Per Series
+
+By default the trackball will display information only for a single data point per series. To change this set the __SnapSinglePointPerSeries__ property to False. This way if you have multiple points in a single series, that are considered close to the mouse, all of them will be shown by the trackball.
+
+#### __[XAML] Example 3: Setting the SnapSinglePointPerSeries property__
+{{region radchart-features-trackball-2}}
+	<telerik:RadCartesianChart Palette="Windows8">    
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" SnapSinglePointPerSeries="False" />
+		</telerik:RadCartesianChart.Behaviors>
+		
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="4"/>
+					<telerik:CategoricalDataPoint Category="B" Value="8"/>
+					<telerik:CategoricalDataPoint Category="B" Value="5"/>
+					<telerik:CategoricalDataPoint Category="C" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="D" Value="9"/>                        
+				</telerik:LineSeries.DataPoints>                
+			</telerik:LineSeries>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="B" Value="2"/>
+					<telerik:CategoricalDataPoint Category="D" Value="15"/>
+				</telerik:LineSeries.DataPoints>
+			</telerik:LineSeries>
+		</telerik:RadCartesianChart.Series>            
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __Figure 1: Result from Example 1__
-![RadChartView-custom TrackBallTemplate](images/RadChartView-chart_behaviors_trackball.PNG)
+#### __Figure 5: Snap to multiple points series__
+![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-4.png)
 
-#### __[XAML] Example 2: Specifying a custom TrackBallInfoTemplate__
-{{region radchart-features-trackball_1}}
-	<telerik:ScatterLineSeries>
-	    <telerik:ScatterLineSeries.TrackBallInfoTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <TextBlock Text="{Binding Path=DisplayHeader}" Foreground="Blue" FontWeight="Bold"/>
-	                <TextBlock Text="{Binding Path=DisplayContent}" Foreground="Blue" Margin="4,0,0,0"/>
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:ScatterLineSeries.TrackBallInfoTemplate>
-	</telerik:ScatterLineSeries>
-{{endregion}}
+## Toggle the TrackBall Visual Elements
 
-#### __Figure 2: Result from Example 2__
-![RadChartView-custom TrackBallInfoTemplate](images/radchartview-chart_features_trackballinfoupdated.png)
+The trackball consists of three main visuals - line, info tooltip and intersection points. You can toggle their visibility via few properties.
 
-## SnapMode
+To show/hide the info tooltip (the trackball info control), set the __ShowTrackInfo__ property.
 
-The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball line will be snapped to the chart's data points. Valid property values are __None__, __ClosestPoint__ and __AllClosestPoints__ with None disabling snapping, ClosestPoint snapping to the closest point of all data points in the chart, and AllClosestPoints snapping to the closest point from each series object in the chart. That is, AllClosestPoints snaps to multiple data points at once. A few screenshots will best describe the different values of SnapMode:
+To show/hide the intersection points, set the __ShowIntersectionPoints__ property.
 
-#### __Figure 3: SnapMode: None__
-![RadChartView: trackball with SnapMode](images/radchartview-chart_behaviors_trackballinfo_03.png)
+To show/hide the line set its Visibility via the __TrackBallLineStyle__ property of the RadCartesianChart.
 
-#### __Figure 4: SnapMode: ClosestPoint__
-![RadChartView: trackball with SnapMode](images/radchartview-chart_behaviors_trackballinfo_02.png)
-
-#### __Figure 5: SnapMode: AllClosestPoints__
-![RadChartView: trackball with SnapMode](images/radchartview-chart_behaviors_trackballinfo_01.png)
-
-## TrackInfoUpdated
-
-ChartTrackballBehavior provides a __TrackInfoUpdated__ event that fires as the users drag their mouse across the chart plot area. On every drag event, TrackInfoUpdated's event arguments provide information related to the current position of the trackball, which is the same ChartDataContext that is provided for the tooltip. The event arguments provide the closest data point for each series in the chart as well as the absolute closest data point. Another property of the event arguments is the Header property (of type object), which allows users to directly specify a header for the track info popup. Example 3 shows how to use the TrackInfoUpdated event:
-
-#### __[XAML] Example 3: Setting up the RadCartesianChart__
-{{region radchart-features-trackball_2}}
-	<telerik:RadCartesianChart>
-	   <telerik:RadCartesianChart.TrackBallInfoStyle>
-	      <Style TargetType="telerik:TrackBallInfoControl">
-	         <Setter Property="HeaderTemplate">
-	            <Setter.Value>
-	               <DataTemplate>
-	                  <TextBlock Text="{Binding}" 
-	                             FontSize="23"
-	                             Foreground="Green"/>
-	               </DataTemplate>
-	            </Setter.Value>
-	         </Setter>
-	      </Style>
-	   </telerik:RadCartesianChart.TrackBallInfoStyle>
-	
-	   <telerik:RadCartesianChart.Behaviors>
-	      <telerik:ChartTrackBallBehavior ShowTrackInfo="True"
-	                                           ShowIntersectionPoints="True"
-	                                           TrackInfoUpdated="ChartTrackBallBehavior_TrackInfoUpdated"/>
-	   </telerik:RadCartesianChart.Behaviors>
-	
-	   <telerik:RadCartesianChart.VerticalAxis>
-	      <telerik:LinearAxis/>
-	   </telerik:RadCartesianChart.VerticalAxis>
-	
-	   <telerik:RadCartesianChart.HorizontalAxis>
-	      <telerik:CategoricalAxis/>
-	   </telerik:RadCartesianChart.HorizontalAxis>
-	
-	   <telerik:SplineSeries>
-		<telerik:SplineSeries.DataPoints>
-			<telerik:CategoricalDataPoint Value="0.2" />
-			<telerik:CategoricalDataPoint Value="0.4" />
-			<telerik:CategoricalDataPoint Value="0.5" />
-			<telerik:CategoricalDataPoint Value="1.4" />
-			<telerik:CategoricalDataPoint Value="1.0" />
-			<telerik:CategoricalDataPoint Value="1.3" />
-		</telerik:SplineSeries.DataPoints>
-	   </telerik:SplineSeries>
-	
-	   <telerik:LineSeries>
-		<telerik:LineSeries.DataPoints>
-			<telerik:CategoricalDataPoint Value="0.1"/>
-			<telerik:CategoricalDataPoint Value="0.3"/>
-			<telerik:CategoricalDataPoint Value="0.3"/>
-			<telerik:CategoricalDataPoint Value="0.4"/>
-			<telerik:CategoricalDataPoint Value="0.2"/>
-			<telerik:CategoricalDataPoint Value="0.3"/>
-		</telerik:LineSeries.DataPoints>
-	   </telerik:LineSeries>
+#### __[XAML] Example 4: Toggle the trackball visuals__
+{{region radchart-features-trackball-3}}
+	 <telerik:RadCartesianChart Palette="Windows8">       
+		<telerik:RadCartesianChart.TrackBallLineStyle>
+			<Style TargetType="Polyline">
+				<Setter Property="Visibility" Value="Collapsed" />
+			</Style>
+		</telerik:RadCartesianChart.TrackBallLineStyle>
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" ShowTrackInfo="False"/>
+		</telerik:RadCartesianChart.Behaviors>
+		
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="4"/>
+					<telerik:CategoricalDataPoint Category="B" Value="8"/>
+					<telerik:CategoricalDataPoint Category="C" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="D" Value="9"/>                        
+				</telerik:LineSeries.DataPoints>                
+			</telerik:LineSeries>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="B" Value="2"/>
+					<telerik:CategoricalDataPoint Category="D" Value="15"/>
+				</telerik:LineSeries.DataPoints>
+			</telerik:LineSeries>
+		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __[C#] Example 4: Using the TrackInfoUpdated event__
-{{region radchart-features-trackball_3}}
-	private void ChartTrackBallBehavior_TrackInfoUpdated(object sender, TrackBallInfoEventArgs e)
-	{
-	    foreach (DataPointInfo info in e.Context.DataPointInfos)
-	    {
-	        info.DisplayHeader = "Custom data point header";
-	    }
-	
-	    e.Header = "Sample header";
-	}
+#### __Figure 6: TrackBall with only intersection points shown__
+![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-5.png)
+
+## Customize the TrackBall Visual Elements
+
+The chart provides several properties that allows customizing the trackball.
+
+To customize the trackball line, set the __TrackBallLineStyle__ property. The property accepts a Style object with its TargetType set to __Polyline__.
+
+To customize the trackball info, set the __TrackBallInfoStyle__ property. The property accepts a Style object with its TargetType set to __TrackBallInfoControl__.
+
+#### __[XAML] Example 5: Setting the line and trackball info styles__
+{{region radchart-features-trackball-4}}
+	<telerik:RadCartesianChart Palette="Windows8">         
+		<telerik:RadCartesianChart.TrackBallInfoStyle>
+			<Style TargetType="telerik:TrackBallInfoControl">
+				<Setter Property="Background" Value="Bisque" />
+				<Setter Property="Header" Value="My Trackball Header" />
+			</Style>
+		</telerik:RadCartesianChart.TrackBallInfoStyle>
+		<telerik:RadCartesianChart.TrackBallLineStyle>
+			<Style TargetType="Polyline">
+				<Setter Property="Stroke" Value="Red" />                    
+			</Style>
+		</telerik:RadCartesianChart.TrackBallLineStyle>
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior />
+		</telerik:RadCartesianChart.Behaviors>
+		
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="4"/>
+					<telerik:CategoricalDataPoint Category="B" Value="8"/>
+					<telerik:CategoricalDataPoint Category="C" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="D" Value="9"/>                        
+				</telerik:LineSeries.DataPoints>                
+			</telerik:LineSeries>
+			<telerik:LineSeries>
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="B" Value="2"/>
+					<telerik:CategoricalDataPoint Category="D" Value="15"/>
+				</telerik:LineSeries.DataPoints>
+			</telerik:LineSeries>
+		</telerik:RadCartesianChart.Series>		
+	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __[VB.NET] Example 4: Using the TrackInfoUpdated event__
-{{region radchart-features-trackball_4}}
-	Private Sub ChartTrackBallBehavior_TrackInfoUpdated(ByVal sender As Object, ByVal e As TrackBallInfoEventArgs)
-	   For Each info As DataPointInfo In e.Context.DataPointInfos
-	      info.DisplayHeader = "Custom data point header"
-	   Next
-	
-	   e.Header = "Sample header"
-	End Sub
+#### __Figure 7: Customized line and trackball info__
+![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-6.png)
+
+The trackball intersection points can be customized per series via the __TrackBallTemplate__ property of the corresponding chart series.
+
+Additionally, you can customize the information for each series via the __TrackBallInfoTemplate__ property of the corresponding chart series.
+
+#### __[XAML] Example 6: Setting the line and trackball templates__
+{{region radchart-features-trackball-5}}
+	<telerik:RadCartesianChart Palette="Windows8">
+		<telerik:RadCartesianChart.Resources>
+			<DataTemplate x:Key="trackBallTemplate">
+				<Rectangle Width="16" Height="16" Fill="Bisque" Stroke="Black" StrokeThickness="1">
+					<Rectangle.LayoutTransform>
+						<RotateTransform Angle="45" />
+					</Rectangle.LayoutTransform>
+				</Rectangle>
+			</DataTemplate>
+			<DataTemplate x:Key="trackBallInfoTemplate">
+				<StackPanel Background="Wheat" Margin="3" Width="100">
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="X=" FontWeight="Bold" />
+						<TextBlock Text="{Binding DataPoint.Category}" />
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="Y=" FontWeight="Bold" />
+						<TextBlock Text="{Binding DataPoint.Value}" />
+					</StackPanel>
+				</StackPanel>
+			</DataTemplate>
+		</telerik:RadCartesianChart.Resources>            
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" />
+		</telerik:RadCartesianChart.Behaviors>            
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries TrackBallTemplate="{StaticResource trackBallTemplate}" 
+								TrackBallInfoTemplate="{StaticResource trackBallInfoTemplate}">
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="4"/>
+					<telerik:CategoricalDataPoint Category="B" Value="8"/>
+					<telerik:CategoricalDataPoint Category="C" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="D" Value="9"/>                        
+				</telerik:LineSeries.DataPoints>                
+			</telerik:LineSeries>
+			<telerik:LineSeries TrackBallTemplate="{StaticResource trackBallTemplate}" 
+								TrackBallInfoTemplate="{StaticResource trackBallInfoTemplate}">
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="7"/>                        
+					<telerik:CategoricalDataPoint Category="B" Value="2"/>
+					<telerik:CategoricalDataPoint Category="D" Value="15"/>
+				</telerik:LineSeries.DataPoints>
+			</telerik:LineSeries>               
+		</telerik:RadCartesianChart.Series>
+	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __Figure 6: Result from Example 4__
-![Rad Charting Kit-chart behaviors trackballinfoupdated](images/radchartview-chart_behaviors_trackballinfoupdated.png)
+#### __Figure 8: Customized line and trackball templates__
+![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-7.png)
 
 ## Update the TrackBall Position
 
@@ -184,13 +302,13 @@ ChartTrackBallBehavior exposes a __Position__ property that can be used to manua
 
 For example, if the chart is 500px wide and 300px high, and the Position property is set to new Point(250, 150) the trackball will be placed at the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
 
-#### __[C#] Example 5: Updating the trackball position__
-{{region radchart-features-trackball_5}}
+#### __[C#] Example 7: Updating the trackball position__
+{{region radchart-features-trackball-6}}
 	trackballBehavior.Position = new Point(250, 150);
 {{endregion}}
 
-#### __[VB.NET] Example 5: Updating the trackball position__	
-{{region radchart-features-trackball_6}}
+#### __[VB.NET] Example 8: Updating the trackball position__	
+{{region radchart-features-trackball-7}}
 	trackballBehavior.Position = New Point(250, 150)
 {{endregion}}
 
@@ -203,78 +321,40 @@ This behavior also provides the __PositionChanging__ event, which is called on e
 <!-- -->
 
 > You can find a runnable project that demonstrates manipulating the position of the trackball in the {% if site.site_name == 'WPF' %}[TrackBallSyncedCharts](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/TrackBallSyncedCharts)
-{% endif %}{% if site.site_name == 'Silverlight' %}[TrackBallSyncedCharts](https://github.com/telerik/xaml-sdk/tree/master/ChartView/SL/TrackBallSyncedCharts){% endif %} SDK example.
+{% else %}[TrackBallSyncedCharts](https://github.com/telerik/xaml-sdk/tree/master/ChartView/SL/TrackBallSyncedCharts){% endif %} SDK example.
 
-## Styling the TrackBall Line and TrackBallInfoControl
+## Events
 
-You can style the trackball line using RadChartView's __TrackBallLineStyle__ property. It is of type Style and must target the __PolyLine__ class because the trackball behavior uses a PolyLine internally. Additionally, you can style the TrackBallInfoControl using RadChartView's __TrackBallInfoStyle__ property. It is also of type Style and must target the __TrackBallInfoControl__. Examples 6 and 7 show how you can style both elements.
+The behavior exposes the __TrackInfoUpdated__ event that is useful if you want to modify the trackball info that is displayed in the tooltip. The __TrackBallInfoEventArgs__ contain information about the data points near the mouse position.
 
-#### __[XAML] Example 6: Styling the trackball line__
-{{region radchart-features-trackball_7}}
+#### __[XAML] Example 9: Subscribing to the TrackInfoUpdated event__
+{{region radchart-features-trackball-8}}
 	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" />
-		</telerik:RadCartesianChart.Behaviors>
-
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-
-		<telerik:RadCartesianChart.TrackBallLineStyle>
-			<Style TargetType="Polyline">
-				<Setter Property="Stroke" Value="Red" />
-				<Setter Property="StrokeThickness" Value="5" />
-			</Style>
-		</telerik:RadCartesianChart.TrackBallLineStyle>
-		<telerik:ScatterLineSeries>
-
-		<telerik:ScatterLineSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="5" YValue="5"/>
-				<telerik:ScatterDataPoint XValue="15" YValue="5"/>
-				<telerik:ScatterDataPoint XValue="20" YValue="5"/>
-			</telerik:ScatterLineSeries.DataPoints>
-		</telerik:ScatterLineSeries>
+	    <telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartTrackBallBehavior TrackInfoUpdated="ChartTrackBallBehavior_TrackInfoUpdated"/>
+	    </telerik:RadCartesianChart.Behaviors>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __Figure 7: Result from Example 6__
-![RadChartView-TrackBallLineStyle](images/radchartview-features_behaviors_trackballlinestyle.png)
-
-#### __[XAML] Example 7: Styling the TrackBallInfoControl__
-{{region radchart-features-trackball_8}}
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" />
-		</telerik:RadCartesianChart.Behaviors>
-
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		
-		<telerik:RadCartesianChart.TrackBallInfoStyle>
-			<Style TargetType="telerik:TrackBallInfoControl">
-				<Setter Property="Background" Value="Black" />
-				<Setter Property="Foreground" Value="Yellow" />
-			</Style>
-		</telerik:RadCartesianChart.TrackBallInfoStyle>
-
-		<telerik:ScatterLineSeries>
-			<telerik:ScatterLineSeries.DataPoints>
-					<telerik:ScatterDataPoint XValue="5" YValue="5"/>
-					<telerik:ScatterDataPoint XValue="15" YValue="5"/>
-					<telerik:ScatterDataPoint XValue="20" YValue="5"/>
-			</telerik:ScatterLineSeries.DataPoints>
-		</telerik:ScatterLineSeries>
-	</telerik:RadCartesianChart>
+#### __[C#] Example 10: Canceling the trackball showing when the mouse is close to a specific category__
+{{region radchart-features-trackball-9}}
+	private void ChartTrackBallBehavior_TrackInfoUpdated(object sender, Telerik.Windows.Controls.ChartView.TrackBallInfoEventArgs e)
+	{
+		var closestDataPoint = (CategoricalDataPoint)e.Context.ClosestDataPoint.DataPoint;
+		if (closestDataPoint.Category.Equals("C"))
+		{
+			e.Context.DataPointInfos.Clear();
+		}            
+	}
 {{endregion}}
 
-#### __Figure 8: Result from Example 7__
-![RadChartView-TrackBallInfoStyle](images/chartview_features_behaviors_trackballinfostyle.png)
+#### __[VB.NET] Example 11: Canceling the trackball when the mouse is close to a specific category__
+{{region radchart-features-trackball-10}}
+	Private Sub ChartTrackBallBehavior_TrackInfoUpdated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.ChartView.TrackBallInfoEventArgs)
+		Dim closestDataPoint = CType(e.Context.ClosestDataPoint.DataPoint, CategoricalDataPoint)
+
+		If closestDataPoint.Category.Equals("C") Then
+			e.Context.DataPointInfos.Clear()
+		End If
+	End Sub
+{{endregion}}

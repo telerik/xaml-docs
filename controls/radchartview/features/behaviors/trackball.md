@@ -21,7 +21,7 @@ The behavior also displays a small popup (the trackball info), similar to the to
 To enable the trackball visualization, add a new __ChartTrackBallBehavior__ instance in the __Behaviors__ collection of the RadCartesianChart control.
 
 #### __[XAML] Example 1: Enabling the trackball__
-{{region radchart-features-trackball-0}}
+{{region xaml-radchart-features-trackball-0}}
 	<telerik:RadCartesianChart Palette="Windows8">       
 		<telerik:RadCartesianChart.Behaviors>
 			<telerik:ChartTrackBallBehavior />
@@ -79,7 +79,7 @@ The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball
 	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-3.png)
 
 #### __[XAML] Example 2: Setting the SnapMode__
-{{region radchart-features-trackball-1}}
+{{region xaml-radchart-features-trackball-1}}
 	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.Behaviors>
 			<telerik:ChartTrackBallBehavior SnapMode="None"/>
@@ -92,7 +92,7 @@ The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball
 By default the trackball will display information only for a single data point per series. To change this set the __SnapSinglePointPerSeries__ property to False. This way if you have multiple points in a single series, that are considered close to the mouse, all of them will be shown by the trackball.
 
 #### __[XAML] Example 3: Setting the SnapSinglePointPerSeries property__
-{{region radchart-features-trackball-2}}
+{{region xaml-radchart-features-trackball-2}}
 	<telerik:RadCartesianChart Palette="Windows8">    
 		<telerik:RadCartesianChart.Behaviors>
 			<telerik:ChartTrackBallBehavior ShowIntersectionPoints="True" SnapSinglePointPerSeries="False" />
@@ -139,7 +139,7 @@ To show/hide the intersection points, set the __ShowIntersectionPoints__ propert
 To show/hide the line set its Visibility via the __TrackBallLineStyle__ property of the RadCartesianChart.
 
 #### __[XAML] Example 4: Toggle the trackball visuals__
-{{region radchart-features-trackball-3}}
+{{region xaml-radchart-features-trackball-3}}
 	 <telerik:RadCartesianChart Palette="Windows8">       
 		<telerik:RadCartesianChart.TrackBallLineStyle>
 			<Style TargetType="Polyline">
@@ -188,7 +188,7 @@ To customize the trackball line, set the __TrackBallLineStyle__ property. The pr
 To customize the trackball info, set the __TrackBallInfoStyle__ property. The property accepts a Style object with its TargetType set to __TrackBallInfoControl__.
 
 #### __[XAML] Example 5: Setting the line and trackball info styles__
-{{region radchart-features-trackball-4}}
+{{region xaml-radchart-features-trackball-4}}
 	<telerik:RadCartesianChart Palette="Windows8">         
 		<telerik:RadCartesianChart.TrackBallInfoStyle>
 			<Style TargetType="telerik:TrackBallInfoControl">
@@ -239,7 +239,7 @@ The trackball intersection points can be customized per series via the __TrackBa
 Additionally, you can customize the information for each series via the __TrackBallInfoTemplate__ property of the corresponding chart series.
 
 #### __[XAML] Example 6: Setting the line and trackball templates__
-{{region radchart-features-trackball-5}}
+{{region xaml-radchart-features-trackball-5}}
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.Resources>
 			<DataTemplate x:Key="trackBallTemplate">
@@ -303,12 +303,12 @@ ChartTrackBallBehavior exposes a __Position__ property that can be used to manua
 For example, if the chart is 500px wide and 300px high, and the Position property is set to new Point(250, 150) the trackball will be placed at the data points plotted closest to the 250th horizontal and 150th vertical pixels of the chart.
 
 #### __[C#] Example 7: Updating the trackball position__
-{{region radchart-features-trackball-6}}
+{{region cs-radchart-features-trackball-6}}
 	trackballBehavior.Position = new Point(250, 150);
 {{endregion}}
 
-#### __[VB.NET] Example 8: Updating the trackball position__	
-{{region radchart-features-trackball-7}}
+#### __[VB.NET] Example 7: Updating the trackball position__	
+{{region vb-radchart-features-trackball-7}}
 	trackballBehavior.Position = New Point(250, 150)
 {{endregion}}
 
@@ -327,8 +327,8 @@ This behavior also provides the __PositionChanging__ event, which is called on e
 
 The behavior exposes the __TrackInfoUpdated__ event that is useful if you want to modify the trackball info that is displayed in the tooltip. The __TrackBallInfoEventArgs__ contain information about the data points near the mouse position.
 
-#### __[XAML] Example 9: Subscribing to the TrackInfoUpdated event__
-{{region radchart-features-trackball-8}}
+#### __[XAML] Example 8: Subscribing to the TrackInfoUpdated event__
+{{region xaml-radchart-features-trackball-8}}
 	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.Behaviors>
 			<telerik:ChartTrackBallBehavior TrackInfoUpdated="ChartTrackBallBehavior_TrackInfoUpdated"/>
@@ -336,8 +336,8 @@ The behavior exposes the __TrackInfoUpdated__ event that is useful if you want t
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __[C#] Example 10: Canceling the trackball showing when the mouse is close to a specific category__
-{{region radchart-features-trackball-9}}
+#### __[C#] Example 9: Canceling the trackball showing when the mouse is close to a specific category__
+{{region cs-radchart-features-trackball-9}}
 	private void ChartTrackBallBehavior_TrackInfoUpdated(object sender, Telerik.Windows.Controls.ChartView.TrackBallInfoEventArgs e)
 	{
 		var closestDataPoint = (CategoricalDataPoint)e.Context.ClosestDataPoint.DataPoint;
@@ -348,8 +348,8 @@ The behavior exposes the __TrackInfoUpdated__ event that is useful if you want t
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 11: Canceling the trackball when the mouse is close to a specific category__
-{{region radchart-features-trackball-10}}
+#### __[VB.NET] Example 9: Canceling the trackball when the mouse is close to a specific category__
+{{region vb-radchart-features-trackball-10}}
 	Private Sub ChartTrackBallBehavior_TrackInfoUpdated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.ChartView.TrackBallInfoEventArgs)
 		Dim closestDataPoint = CType(e.Context.ClosestDataPoint.DataPoint, CategoricalDataPoint)
 
@@ -358,3 +358,8 @@ The behavior exposes the __TrackInfoUpdated__ event that is useful if you want t
 		End If
 	End Sub
 {{endregion}}
+
+## See Also
+
+* [Tooltip]({%slug radchartview-features-tooltip%})
+* [Scroll and Zoom]({%slug radchartview-features-panzoom%})

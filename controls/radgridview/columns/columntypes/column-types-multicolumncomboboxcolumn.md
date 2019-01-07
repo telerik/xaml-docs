@@ -1,16 +1,16 @@
 ---
-title: MultiColumnComboBoxColumn Column
-page_title: MultiColumnComboBoxColumn Column
-description: MultiColumnComboBoxColumn Column
+title: MultiColumnComboBox Column
+page_title: MultiColumnComboBox Column
+description: The MultiColumnComboBox column is represented by a standard TextBlock in view mode, and with RadMultiColumnComboBox control in edit mode.
 slug: radgridview-columns-column-types-multicolumncombobox-column
 tags: multicolumncombobox,column
 published: True
 position: 12
 ---
 
-# MultiColumnComboBoxColumn Column
+# MultiColumnComboBox Column
 
-The __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}). In view mode it is represented by a standard TextBlock whereas in edit mode the [RadMultiColumnComboBox]({%slug multicolumncombobox-overview%}) component is used. Here is a list of its most important properties:
+__GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}). In view mode it is represented by a standard TextBlock, whereas in edit mode the [RadMultiColumnComboBox]({%slug multicolumncombobox-overview%}) component is used. Here is a list of its most important properties:
 
 * __DataMemberBinding__: Allows you to specify the binding to the property, whose value you want to display in the column. 
 
@@ -43,5 +43,5 @@ The __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]
         </telerik:RadGridView>
 {{endregion}}
 
-#### __Figure 1: Defining the GridViewMultiColumnComboBoxColumn__
+#### __Figure 1: GridViewMultiColumnComboBoxColumn example__
 ![Defining the GridViewMultiColumnComboBoxColumn](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)

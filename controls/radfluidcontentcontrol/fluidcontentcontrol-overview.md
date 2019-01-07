@@ -25,5 +25,5 @@ __RadFluidContentControl__ is a flexible content control used to built responsiv
 >tip Get started with the control with its [Getting Started]({%slug fluidcontentcontrol-getting-started%}) help article that shows how to use it in a basic scenario.
 
 ## See Also
- * [Integration Examples]({%slug fluidcontentcontrol-integration-examples%})
+ * [Integration Examples]({%slug radfluidcontentcontrol-integration-examples%})
  * [Events]({%slug fluidcontentcontrol-events%})

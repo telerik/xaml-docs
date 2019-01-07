@@ -68,9 +68,9 @@ Then you can apply it to a desired column like so:
 	Me.radGridView.Columns("Name").FilteringControl = New MyFilteringControl(Me.radGridView.Columns("Name"))
 {{endregion}}
 
->important In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
+>In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
 The Style you should apply in XAML then is:
-#### __[XAML] Example 3: Style targetting the custom control__
-{{region xaml-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_5}}
+>#### __[XAML] Example 3: Style targetting the custom control__
+>{{region xaml-gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button_5}}
 	<Style TargetType="my:MyFilteringControl" BasedOn="{StaticResource FilteringControlStyle}"/>
 {{endregion}}

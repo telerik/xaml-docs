@@ -136,6 +136,6 @@ To enable the manual mechanism set the __ContentChangeMode__ property of RadFlui
 The Content, SmallContent and LargeContent properties can be data bound to properties from a business object. In this case you can define the views for each state via the __ContentTemplate, SmallContentTemplate__ and __LargeContentTemplate__ properties. Read more about this in the [Data Binding]({%slug fluidcontentcontrol-data-binding%}) article.
 
 ## See Also
- * [Integration Examples]({%slug fluidcontentcontrol-integration-examples%})
+ * [Integration Examples]({%slug radfluidcontentcontrol-integration-examples%})
  * [Events]({%slug fluidcontentcontrol-events%})
  * [Transitions]({%slug fluidcontentcontrol-transitions%})

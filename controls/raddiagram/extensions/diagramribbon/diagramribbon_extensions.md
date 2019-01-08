@@ -1,0 +1,157 @@
+---
+title: DiagramRibbon Extensions
+page_title: DiagramRibbon Extensions
+description: This article will get you familiar with the DiagramRibbon control extensions.
+slug: raddiagram-extensions-diagramribbon-extensions
+tags: DiagramRibbon Extensions
+published: True
+position: 1
+---
+
+# DiagramRibbon Extensions
+
+__DiagramRibbon__ control allows easily add one or all of the following RadDiagram and RadRibbonView extensions. This way we can give the user ability to show/hide any of the specified extensions dynamically.
+
+#### __Figure 1: DiagramRibbon Extensions__ 
+![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
+
+## __RadDiagramToolBox__
+
+To add __DiagramToolBox__ to the DiagramRibbon the __ToolBox__ property can be bound to a DiagramToolBox using x:Name.
+
+#### __[XAML] Example 2: Add RadDiagramToolbox to DiagramRibbon__
+{{region raddiagram-extensions-diagramribbon-extensions-0}}
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <telerik:RadDiagramRibbon Grid.ColumnSpan="2" Diagram="{Binding ElementName=diagram}" Toolbox="{Binding ElementName=toolBox}"/>
+        <telerik:RadDiagram x:Name="diagram" Grid.Row="1" Grid.Column="1">
+            <telerik:RadDiagramShape Content="Shape 1"/>
+        </telerik:RadDiagram>
+        <telerik:RadDiagramToolbox x:Name="toolBox" Grid.Column="0" Grid.Row="1" ItemsSource="{Binding GalleryItems}" />      
+    </Grid>
+{{endregion}}
+
+## __DiagramNavigationPane__
+
+To add __DiagramNavigationPane__ to the DiagramRibbon the __NavigationPane__ property can be bound to a DiagramToolBox using x:Name.
+
+#### __[XAML] Example 3: Add RadDiagramNavigationPane to DiagramRibbon__
+{{region raddiagram-extensions-diagramribbon-extensions-1}}
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <telerik:RadDiagramRibbon Grid.ColumnSpan="2" 
+                                  Diagram="{Binding ElementName=diagram}" 
+                                  NavigationPane="{Binding ElementName=navigationPane}"/>
+        <telerik:RadDiagram x:Name="diagram" Grid.Row="1" Grid.Column="1">
+            <telerik:RadDiagramShape Content="Shape 1"/>
+        </telerik:RadDiagram>
+        <telerik:RadDiagramNavigationPane Grid.Column="1" Grid.Row="1" x:Name="navigationPane" Diagram="{Binding ElementName=diagram}" HorizontalAlignment="Left" VerticalAlignment="Bottom" />    
+    </Grid>
+{{endregion}}
+
+## __RadDiagramRuler__
+
+To add __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler / HorizontalRuler__ property can be bound to a RadDiagramRuler using x:Name.
+
+#### __[XAML] Example 4: Add RadDiagramRuler to DiagramRibbon__
+{{region raddiagram-extensions-diagramribbon-extensions-2}}
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<telerik:RadDiagramRibbon Grid.Column="1"
+									  Diagram="{Binding ElementName=diagram}"    
+									  VerticalRuler="{Binding ElementName=verticalRuler}"
+									  HorizontalRuler="{Binding ElementName=horizontalRuler}"/>
+			<telerik:RadDiagram x:Name="diagram" Grid.Row="1" Grid.Column="1">
+				<telerik:RadDiagramShape Content="Shape 1"/>
+			</telerik:RadDiagram>
+			<telerik:RadDiagramRuler x:Name="verticalRuler" Placement="Left" Diagram="{Binding ElementName=diagram}" Grid.Row="1" Grid.Column="0"/>
+			<telerik:RadDiagramRuler x:Name="horizontalRuler" Placement="Bottom" Diagram="{Binding ElementName=diagram}" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2"/>
+		</Grid>
+{{endregion}}
+
+## __QuickAccessToolBar__
+
+To add __QuickAccessToolBar__ to the DiagramRibbon the __VerticalRuler / HorizontalRuler__ property can be bound to a RadDiagramRuler using x:Name.
+
+#### __[XAML] Example 4: Add QuickAccessToolBar to DiagramRibbon__
+{{region raddiagram-extensions-diagramribbon-extensions-3}}
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<telerik:RadDiagramRibbon Grid.Column="1"
+									  Diagram="{Binding ElementName=diagram}"  
+									  QuickAccessToolBarPosition="BelowRibbon">
+				<telerik:RadDiagramRibbon.QuickAccessToolBar>
+					<telerik:QuickAccessToolBar/>
+				</telerik:RadDiagramRibbon.QuickAccessToolBar>
+			</telerik:RadDiagramRibbon>
+			<telerik:RadDiagram x:Name="diagram" Grid.Row="1" Grid.Column="1">
+				<telerik:RadDiagramShape Content="Shape 1"/>
+			</telerik:RadDiagram>    
+		</Grid>
+{{endregion}}
+
+## __RadRibbonBackstage__
+
+To add __Backstage__ to the DiagramRibbon the __Backstage__ property can be dirrectly set to __RadRibbonBackstage__ element.
+
+#### __[XAML] Example 5: Add Backstage to DiagramRibbon__
+{{region raddiagram-extensions-diagramribbon-extensions-4}}
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}"   
+								  BackstageClippingElement="{Binding ElementName=LayoutRoot}">
+			<telerik:RadDiagramRibbon.Backstage>
+				<telerik:RadRibbonBackstage>
+					<telerik:RadRibbonBackstageItem Header="Samples" IsDefault="true">
+						<ListBox x:Name="SamplesList" BorderThickness="0" HorizontalAlignment="Center"/>
+					</telerik:RadRibbonBackstageItem>
+				</telerik:RadRibbonBackstage>
+			</telerik:RadDiagramRibbon.Backstage>
+		</telerik:RadDiagramRibbon>
+		<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
+			<telerik:RadDiagramShape Content="Shape 1"/>
+		</telerik:RadDiagram>    
+	</Grid>
+{{endregion}}
+
+## See Also
+
+* [Getting Started]({%slug raddiagram-getting-started%})
+* [DiagramExtensions ViewModels]({%slug raddiagram-data-extensionsviewmodels%})
+* [Extensions Overview]({%slug raddiagram-extensions%})

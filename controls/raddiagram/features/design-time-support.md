@@ -53,7 +53,7 @@ The design-time wizard lets you configure the following options:
     ![Enable the RadDiagram rulers](images/DiagramDesignWizardRulers.png)
 
 {% if site.site_name == 'WPF' %}
-* Enabling the [RadDiagramRibbon]({%slug raddiagram-extensions-diagramribbon%}) as demonstrated in __Figure 6__.
+* Enabling the [RadDiagramRibbon]({%slug raddiagram-extensions-diagramribbon-overview%}) as demonstrated in __Figure 6__.
 
     #### __Figure 6: Enabling the RadDiagramRibbon__
     ![Enable the RadDiagramRibbon](images/DiagramDesignWizardRibbon.png)

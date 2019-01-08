@@ -26,6 +26,8 @@ In case when readability needs to be improved, the alternation support comes in 
 
 > The topic is discussed in details in the [Defining Columns]({%slug gridview-columns-defining-columns%}) article.
 
+>important These properties affect only the Columns manually defined through the GridViewItemsSourceProvider. All Columns can be accessed through the __GridViewDropDownContentManager.Columns__ after the grid is loaded.
+
 Both manual and automatic column definitions are supported. Also, the width of the columns of RadGridView can be set. The following two properties are exposed by __GridViewItemsSourceProvider__ for this purpose.
 
 * __AutoGenerateColumns__: A boolean property determining whether the columns will be automatically or manually generated. Its default value is __True__.

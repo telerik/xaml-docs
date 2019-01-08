@@ -23,7 +23,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish   
 
->tipTo learn more about the ways to localize the RadControls please read the common topic about   {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
+>tipTo learn more about the ways to localize the controls from the UI for {{ site.framework_name }} suite, please read the common topic on [Localization]({%slug common-localization%}).
 
 Below you may see the resource keys and the strings they are associated with.
 
@@ -33,5 +33,9 @@ Below you may see the resource keys and the strings they are associated with.
 
 The resources of the control can be localized by using an unique identifier called resource key that is assigned to each localizable string. Below you may find a list of the Resources available and their default values:
 
-
-<table> <tr>KeyValue</tr><tr><td>RadDataPagerEllipsisString</td><td>...</td></tr><tr><td>RadDataPagerOf</td><td>of</td></tr><tr><td>RadDataPagerPage</td><td>Page</td></tr></table>
+<table>
+<tr><th>Key</th><th>Value</th></tr>
+<tr><td>RadDataPagerEllipsisString</td><td>...</td></tr>
+<tr><td>RadDataPagerOf</td><td>of</td></tr>
+<tr><td>RadDataPagerPage</td><td>Page</td></tr>
+</table>

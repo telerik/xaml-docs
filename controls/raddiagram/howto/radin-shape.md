@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Place RadControls in Diagram Shapes
+# Place Rad Controls in Diagram Shapes
 
 This tutorial demonstrates how to use {% if site.site_name == 'WPF' %}__UI for WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__UI for Silverlight__{% endif %} in the content of a __RadDiagramShape__ component.
 

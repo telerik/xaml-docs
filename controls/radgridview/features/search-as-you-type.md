@@ -1,7 +1,7 @@
 ---
 title: Search As You Type
 page_title: Search As You Type
-description: Search As You Type
+description: RadGridView supports searching through its columns via its search panel. Deferred search as well as searching in hidden columns are also supported.
 slug: radgridview-search-as-you-type
 tags: search-as-you-type
 published: True
@@ -10,29 +10,7 @@ position: 16
 
 # Search as You Type
 
-* [Showing the Search Panel](#showing-the-search-panel)
-
-* [Disabling the 'Search as You Type' functionality](#disable-showing-the-search-panel)
-
-* [Deferred Searching](#deferred-searching)
-
-* [Commands](#commands)
-
-* [Events](#events)
-
-* [Modifying the Searching Criteria](#modifying-the-searching-criteria)
-
-* [Change the Label Text of the Search Panel](#change-the-label-text-of-the-search-panel)
-
-* [Add Search Criteria Programmatically](#add-search-criteria-programmatically)
-
-* [Search in Hidden Columns](#search-in-hidden-columns)
-
-* [Search Over Dynamic Data](#search-over-dynamic-data)
-
 ## Showing the Search Panel
-
-> Searching over XML data source is available as of __R2 2018__.
 
 As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean __ShowSearchPanel__ property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
@@ -51,6 +29,10 @@ __Figure 1: Showing the Search Panel__
 
 ![Showing the Search Panel](images/gridview-textsearch-showsearchpanel.png)
 
+> Searching over XML data source is available as of __R2 2018__.
+
+>important In case highlighting in a custom column or CellTemplate is needed, the __HightlightTextBlock__ can be used. As of __R3 2018__ its constructor needs to have the __SearchStateManager__ passed as a parameter. It is exposed through the SearchStateManager property of RadGridView. The usage of the __HighlightTextBlock__ is demonstrated in the [Custom Highlight Column](https://github.com/telerik/xaml-sdk/tree/master/GridView/HighlightCustomColumn).
+
 ## Disable showing the Search Panel
 
 You can control whether the users can use the **Search Panel** through the **CanUserSearch** boolean property of  **RadGridView**. Its default value is **true**. Setting it to **false** would permanently disable the functionality, meaning that the **Ctrl + F** combination would not show the panel as well.   
@@ -63,6 +45,29 @@ You can control whether the users can use the **Search Panel** through the **Can
 							 AutoGenerateColumns="False" 
 							 ColumnWidth="*"/>
 {{endregion}}
+
+## Hiding the Close Button
+
+The visibility of the search panel's close button can be controlled via the **SearchPanelCloseButtonVisibility** property. The default value is **Visible** meaning that the search panel can originally be closed via this button.
+
+#### __[XAML] Example 3: Collapse the close button in XAML__
+{{region xaml-radgridview-search-as-you-type-2}}
+	<telerik:RadGridView SearchPanelCloseButtonVisibility="Collapsed" />
+{{endregion}}
+
+#### __[C#] Example 3: Collapse the close button in code-behind__
+{{region cs-radgridview-search-as-you-type-3}}
+    this.GridView.SearchPanelCloseButtonVisibility = Visibility.Collapsed;
+{{endregion}}
+
+#### __[VB.NET] Example 3: Collapse the close button in code-behind__
+{{region vb-radgridview-search-as-you-type-3}}
+    Me.GridView.SearchPanelCloseButtonVisibility = Visibility.Collapsed
+{{endregion}}
+
+__Figure 2: Hidden Close Button__
+
+![Hidden Close Button](images/hide-close-button.png)
 
 ## Deferred Searching
 
@@ -172,6 +177,7 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 {{region xaml-radgridview-search-as-you-type-5}}
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
+
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

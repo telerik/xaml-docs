@@ -58,6 +58,16 @@ RadMap exposes two methods which you can use to convert map coordinates.
 When the wraparound feature is enabled on the RadMap the built-in MiniMap also has this functionality turned on. But when you are using the MiniMap as a standalone control you have to explicitly set its __WrapAround__ property to __True__ in order to turn the feature on.
 
 >The WrapAround property of the RadMap control that is linked to the MiniMap has a higher priority than the WrapAround property of the MiniMap.
+
+## Supported Providers
+
+The wraparound feature is supported by the following providers.
+
+* __BingRestMapProvider__
+
+* __OpenStreetMapProvider__
+
+* __ArcGisMapProvider__
 	
 ## See Also
  * [Getting Started] ({%slug radmap-getting-started%})

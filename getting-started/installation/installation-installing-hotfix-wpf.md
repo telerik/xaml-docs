@@ -70,12 +70,8 @@ In order to apply the Hotfix you need to perform the following instructions:
 >* Clean the project as sometimes Visual Studio is caching old binaries. Then Rebuild.       
 >* If this does not help, delete the bin and obj folders of the project manually and Rebuild.
             
-## See Also
-
+## See Also  
  * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})
-
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
-
- * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control-wpf%})
-
+ * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})

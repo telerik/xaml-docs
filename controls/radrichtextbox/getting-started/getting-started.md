@@ -214,6 +214,8 @@ When you already have prepared the sample data, you can bind it to **RadRichText
 >tipMore details on using data providers in **RadRichTextBox** are available [here]({%slug radrichtextbox-features-data-providers%}).
 
 >tipYou can download the complete runnable project demonstrating **Data Binding** in **RadRichTextBox** from our [SDK Repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DataBinding).
+
+
 ### Setting the Document in Code-Behind
 
 The **RadRichTextBox** class exposes the **Document** property of type [**RadDocument**]({%slug radrichtextbox-features-document-elements-raddocument%}) that allows you to assign a document to the control in code-behind. You can import an existing document and show it in RadRichTextBox using a format provider as **Example 5** shows.

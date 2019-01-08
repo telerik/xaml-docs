@@ -84,6 +84,7 @@ Through the Telerik NuGet Server users can easily include the Telerik UI for WPF
 
 ![](images/Common_InstallingFromNuGet_09_wpf.png)
 
+>Using this approach you can only use versions from **2016.3.1024** and later. If you need to use a previous version of the suite you will need to create a [local package source](#installing-wpf-controls-package).
           
 ## See Also
 

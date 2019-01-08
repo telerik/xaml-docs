@@ -12,17 +12,7 @@ position: 1
 
 With the __property sets__ feature RadPropertyGrid enables its users to process multiple items' properties simultaneously. You no longer need to provide additional view models to expose those properties or manage their changes backwards to your business object instances. Everything now happens under the hood.
 
-This article consists of the following sections:
-
-* [Setup](#setup)
-
-* [Property Set Modes](#property-set-modes)
-
-* [PropertySet Property](#propertyset-property)
-
-* [Customizing PropertyDefinitions](#customizing-propertydefinitions)
-
-* [Disable creating object instance for null value](#disable-creating-object-instance-for-null-value)
+>Property sets do not support nested properties. You need to create a computed property in your business objects pointing to the nested property to enable this functionality. For example, you can define a **CountryName** property returning the value of the nested **Name** property of the bound objects' **Country**.
 
 ## Setup
 

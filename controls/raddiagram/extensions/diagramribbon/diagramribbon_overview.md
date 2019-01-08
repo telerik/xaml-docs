@@ -10,9 +10,11 @@ position: 0
 
 # Overview
  
-With the __R1 2019__ version Telerik UI for WPF we have introduce __RadDiagramRibbon__ control. The __DiagramRibbon__ control allows the users to examine and modify the settings of the diagramming items in run-time. __DiagramRibbon__ is a configurer RadRibbonView control which is used as top level navigation control for the RadDiagram. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of a __RadDiagram__. The DiagramRibbon is fully customizable and scales its child widgets automatically based on the available area. 
+With the __R1 2019__ version Telerik UI for WPF we have introduced the __RadDiagramRibbon__ control. It allows users to examine and modify the settings of the diagramming items in run-time.
 
->In order to use the __DiagramRibbon__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
+The control is a configured [RadRibbonView]({%slug radribbonview-overview%}) which is used as a top level navigation control for the RadDiagram. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of the RadDiagram. RadDiagramRibbon is fully customizable and scales its child widgets automatically based on the available area. 
+
+>In order to use the __RadDiagramRibbon__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
 >	- Telerik.Windows.Controls
 >	- Telerik.Windows.Controls.Navigation
 >	- Telerik.Windows.Controls.Input
@@ -24,9 +26,9 @@ With the __R1 2019__ version Telerik UI for WPF we have introduce __RadDiagramRi
 
 ## Overview
 
-The __DiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance. 
+__RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance.
 
-#### __[XAML] Example 1: Specify DiagramRibbon in XAML__
+#### __[XAML] Example 1: Specify RadDiagramRibbon in XAML__
 {{region raddiagram-extensions-diagramribbon-overview-0}}
 	<Grid>
 		<Grid.RowDefinitions>
@@ -43,18 +45,18 @@ The __DiagramRibbon__ exposes a __Diagram__ property which is used to associate 
 #### __Figure 1: DiagramRibbon Overview__ 
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing the Windows8 theme. In the [Setting a Theme]({%slug common-styling-apperance-setting-theme%}) article you can find more information on how to set an application-wide theme.
 
-## Customize tab and groups
+## Customize Tabs and Groups
 
-__RadDiagramRibbon__ by design contains three build-in __RibbonTabs__ which holds different type of settings for customizing your __RadDiagram__: __Home, Settings and Design__. To add a new tab or a new group, the __AdditionalTabs__ and __AdditionalGroups__ collection properties can be used for such purposes. 
+__RadDiagramRibbon__ by design contains three build-in __RibbonTabs__ which hold different types of settings for customizing your __RadDiagram__: __Home, Settings and Design__. To add a new tab or a new group, you can use the __AdditionalTabs__ and __AdditionalGroups__ collection properties. 
 
-### Add new RadRibbonTab
+### Add New RadRibbonTab
 
-To add a new tab we can just call the __Add()__ method of the __AdditionalTabs__ collection or specified dirrectly in __XAML__. The new tab will be placed at the last position.
+To add a new tab you can just call the __Add()__ method of the __AdditionalTabs__ collection or declare it dirrectly in __XAML__. The new tab will be placed at the last position.
 
 #### __[XAML] Example 2: Add RadRibbonTab in XAML__
-{{region raddiagram-extensions-diagramribbon-overview-1}}
+{{region xaml-raddiagram-extensions-diagramribbon-overview-1}}
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
 		<telerik:RadDiagramRibbon.AdditionalTabs>
@@ -64,7 +66,7 @@ To add a new tab we can just call the __Add()__ method of the __AdditionalTabs__
 {{endregion}}
 
 #### __[C#] Example 3: Add RadRibbonTab programmatically__
-{{region raddiagram-extensions-diagramribbon-overview-2}}
+{{region cs-raddiagram-extensions-diagramribbon-overview-2}}
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -78,9 +80,9 @@ To add a new tab we can just call the __Add()__ method of the __AdditionalTabs__
 #### __Figure 2: Add new tab__ 
 ![Diagram Ribbon Overview New Tab](images/RadDiagram_DiagramRibbon_Overview_NewTab.png)
 
-### Add new RadRibbonGroup
+### Add New RadRibbonGroup
 
-To add a new group to __Home__ tab for example first we will create new __RadRibbonGroup__ and add a RadRibbonButton to that group. Then we need to specify to which tab we want to add the group. To do that we can set the __DiagramRibbonExtensions.RibbonTabHeader__ attached property. The last step is to add our new group to the __AdditionalGroups__ collection.
+To add a new group to __Home__ tab for example first you can create a new __RadRibbonGroup__ and add a RadRibbonButton to that group. Then you need to specify to which tab you want to add the group. To do that you can set the __DiagramRibbonExtensions.RibbonTabHeader__ attached property. The last step is to add the new group to the __AdditionalGroups__ collection.
 
 #### __[XAML] Example 2: Add RadRibbonGroup in XAML__
 {{region raddiagram-extensions-diagramribbon-overview-1}}
@@ -113,11 +115,11 @@ To add a new group to __Home__ tab for example first we will create new __RadRib
 {{endregion}}
 
 #### __Figure 3: Add new group__ 
-![Diagram Ribbon Overview New Tab](images/RadDiagram_DiagramRibbon_Overview_NewGroup.png)
+![Diagram Ribbon Overview New Group](images/RadDiagram_DiagramRibbon_Overview_NewGroup.png)
 
 ## Keyboard Support
 
-__RadDiagramRibbon__ provides a keyboard navigation mechanisms using key tips and the arrow keys. The key tips are enabled by default. This feature can be disabled by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadDiagramRibbon__ to __False__.
+__RadDiagramRibbon__ provides a keyboard navigation mechanism using key tips and the arrow keys. The key tips are enabled by default. This feature can be disabled by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadDiagramRibbon__ to __False__.
 
 #### __[XAML] Example 3: Disable DiagramRibbon KeyTips__
 {{region raddiagram-extensions-diagramribbon-overview-2}}
@@ -126,7 +128,7 @@ __RadDiagramRibbon__ provides a keyboard navigation mechanisms using key tips an
 
 ## DiagramRibbon Commands
 
-__DiagramRibbon__ provide build-in commands which can be used in MVVM scenario to modify your diagram and its items. The static __DiagramRibbonCommands__ class is located in Telerik.Windows.Controls.Diagrams.Ribbon assembly:
+The __RadDiagramRibbon__ control provides built-in commands which can be used in an MVVM scenario to modify your diagram and its items. The static __DiagramRibbonCommands__ class is located in the **Telerik.Windows.Controls.Diagrams.Ribbon** assembly:
 
 * __SugiyamaLayout__: Rearange the RadDiagram items in Sugiyama Layout. [(Read more)]({%slug raddiagram-features-routing%}#astarrouter)
 * __TreeLayout__: Rearange the RadDiagram items in Tree Layout. [(Read more)]({%slug raddiagram-features-routing%}#orgtreerouter)
@@ -137,7 +139,7 @@ __DiagramRibbon__ provide build-in commands which can be used in MVVM scenario t
 
 ## Events
 
-* __HtmlExportButtonClicked__: This event is called when the HTML Export button is clicked. There is no build-in logic which will export the RadDiagram in HTML file. This event is expose so that you can subscribe to the click event of the button and called your exporting logic. More information how to export RadDiagram in HTML can be found in the [(Read more)]({%slug raddiagram-features-html-support%})
+* __HtmlExportButtonClicked__: This event is called when the HTML Export button is clicked. Plase note that there is no built-in logic which will export the RadDiagram in HTML file and this event is exposed so that you can handle it and call your exporting logic. More information on how to export RadDiagram in HTML can be found in the [Html Support]({%slug raddiagram-features-html-support%}) article.
 
 ## See Also
 

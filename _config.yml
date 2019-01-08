@@ -367,6 +367,8 @@ navigation:
         title: Extensions
     controls/raddiagram/items-manipulation:
         title: Items Manipulation
+    controls/raddiagram/extensions/diagramribbon:
+        title: "Diagram Ribbon"
     controls/radexpander:
         title: RadExpander
     controls/radgauge:

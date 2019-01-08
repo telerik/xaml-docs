@@ -84,8 +84,6 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 		End Class
 	{{endregion}}
 
-	> It is important to add all nodes in the graph source __before__ the links that connect them. Otherwise, the connection could be missed when the visual elements are created (RadDiagramShape and RadDiagramConnection).
-
 	The __GraphSourceBase<TNode,TLink>__ class inherits __ViewModelBase__ and it also implements the __IGraphSource__ interface. This is why the class exposes   two __IEnumerable__ collections - one with the nodes -__Items__, and the other one with the links - __Links__.
 		
 ##### 2. __Configure the View__

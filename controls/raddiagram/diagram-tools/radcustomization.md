@@ -12,9 +12,9 @@ position: 4
 
 __RadDiagram__ provides a list of all available tools, which you can easily change to better fit your applicaiton logic. You can remove built-in tools, create custom ones and add them to the list or replace existing ones with them.
 
-In __RadDiagram__ the __ToolService__ keeps a collection of tools in its __ToolList__ property. This property is essentially a collection of objects implementing the {% if site.site_name == 'Silverlight' %}[ITool](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.diagrams.core.itool){% else %}[ITool](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.itool){% endif %} interface.
+In __RadDiagram__ the __ToolService__ keeps a collection of tools in its __ToolList__ property. This property is essentially a collection of objects implementing the {% if site.site_name == 'Silverlight' %}[ITool](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_itool.html){% endif %}{% if site.site_name == 'WPF' %}[ITool](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_itool.html){% endif %} interface.
 
-You can get the __ToolService__ currently used by a __RadDiagram__ instance through the __ServiceLocator.GetService()__ method. You can read more about the __ServiceLocator__ in the [Services]({%slug raddiagram-features-services%}) tutorial. 
+>tip You can get the __ToolService__ currently used by a __RadDiagram__ instance through the __ServiceLocator.GetService()__ method. You can read more about the __ServiceLocator__ in the [Services]({%slug raddiagram-features-services%}) tutorial. 
 
 By default there are 14 tools registered in the following order in the __ToolService ToolList__ collection:		
 
@@ -50,71 +50,11 @@ By default there are 14 tools registered in the following order in the __ToolSer
 
 You can easily add, remove or replace tools from the above collection. It is also important to note that all these tools handle user interactions - mouse and keyboard actions, originating from the __RadDiagram__. This is why they have to handle mouse and keyboard events. In order to do so the services implement one or both of the following interfaces:		
 
-* __IMouseListener__ - this interface describes the four fundamental methods of a mouse handler object - __MouseDown__, __MouseDoubleClick__, __MouseMove__ and __MouseUp__. You can examine its members in {% if site.site_name == 'Silverlight' %}[the API reference](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.diagrams.core.imouselistener){% else %}[the API reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.imouselistener){% endif %}
+* __IMouseListener__ - this interface describes the four fundamental methods of a mouse handler object - __MouseDown__, __MouseDoubleClick__, __MouseMove__ and __MouseUp__. You can examine its members in {% if site.site_name == 'Silverlight' %}[the API reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_diagrams_core_imouselistener.html){% endif %}{% if site.site_name == 'WPF' %}[the API reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_diagrams_core_imouselistener.html){% endif %}
 
-* __IKeyboardListener__ - this interface describes the two fundamental methods of a keyboard handler object - __KeyUp__ and __KeyDown__. You can examine its members in {% if site.site_name == 'Silverlight' %}[the API reference](https://docs.telerik.com/DEVTOOLS/SILVERLIGHT/api/telerik.windows.diagrams.core.ikeyboardlistener){% else %}[the API reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.ikeyboardlistener){% endif %}
+* __IKeyboardListener__ - this interface describes the two fundamental methods of a keyboard handler object - __KeyUp__ and __KeyDown__. You can examine its members in {% if site.site_name == 'Silverlight' %}[the API reference](http://www.telerik.com/help/silverlight/allmembers_t_telerik_windows_diagrams_core_ikeyboardlistener.html){% endif %}{% if site.site_name == 'WPF' %}[the API reference](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_diagrams_core_ikeyboardlistener.html){% endif %}
 
 >tip The order of the tools added to the __ToolList__ collection is important due to the fact that they all listen to the same mouse and keyboard events. As soon as an active tool detects a user interaction that it has to respond to, it notifies the __ToolService__ not to propagate this event any further. This is why the tools next in line in the __ToolList__ will not receive the inetraciton. This ensures that there is only one active tool at all times.		  
-
-## Getting a Tool
-
-A tool can be get from the Tools collection of the diagram's ToolService.
-
-#### __[C#] Example 1: Getting a tool by name__
-{{region raddiagram-tools-customization-0}}
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	PencilTool pencilTool  = (PencilTool)toolService.FindTool(PencilTool.ToolName);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Getting a tool by name__
-{{region raddiagram-tools-customization-1}}
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    Dim pencilTool As PencilTool = CType(toolService.FindTool(PencilTool.ToolName), PencilTool)
-{{endregion}}
-
-#### __[C#] Example 2: Getting a tool by index__
-{{region raddiagram-tools-customization-2}}
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	PencilTool pencilTool = (PencilTool)toolService.ToolList[2];
-{{endregion}}
-
-#### __[VB.NET] Example 2: Getting a tool by index__
-{{region raddiagram-tools-customization-3}}
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-	Dim pencilTool As PencilTool = CType(toolService.ToolList(2), PencilTool)
-{{endregion}}
-
-## Registering a Tool
-
-To register or replace a tool you can use the __Tools__ collection of the diagram's ToolService.
-
-#### __[C#] Example 3: Replace an existing tool__
-{{region raddiagram-tools-customization-4}}
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	toolService.ToolList[2] = new MyPencilTool("MyPencilTool");	
-{{endregion}}
-
-#### __[VB.NET] Example 3: Replace an existing tool__
-{{region raddiagram-tools-customization-5}}
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    toolService.ToolList(2) = New MyPencilTool("MyPencilTool")
-{{endregion}}
-
-#### __[C#] Example 4: Register a new tool__
-{{region raddiagram-tools-customization-6}}
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	MyCustomTool myCustomTool = new MyCustomTool("MyCustomTool");
-	toolService.ToolList.Add(myCustomTool);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Register a new tool__
-{{region raddiagram-tools-customization-7}}
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    Dim myCustomTool As MyCustomTool = New MyCustomTool("MyCustomTool")
-    toolService.ToolList.Add(myCustomTool)
-{{endregion}}
-
-## Creating a Custom Tool
 
 In order to create a custom tool, you can create a new class using one of the following approaches:		
 
@@ -122,6 +62,4 @@ In order to create a custom tool, you can create a new class using one of the fo
 
 * Create a class that derives from the __ToolBase__ class and implements the __IMouseListener__ and/or __IKeyboardListener__ interfaces.			
 
-* Create a class that implements the {% if site.site_name == 'Silverlight' %}[ITool](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.diagrams.core.itool){% else %}[ITool](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.itool){% endif %} interface and one or both of the __IMouseListener__ and __IKeyboardListener__ interfaces.
-
->tip See the [CustomTools](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomTools) SDK example which demonstrates how to implement a custom tool. See also, the [Customize the Path and Pencil Tools]({%slug raddiagram-howto-customize-path-pencil-tools%}) article.
+* Create a class that implements the {% if site.site_name == 'Silverlight' %}[ITool](http://www.telerik.com/help/silverlight/t_telerik_windows_diagrams_core_itool.html){% endif %}{% if site.site_name == 'WPF' %}[ITool](http://www.telerik.com/help/wpf/t_telerik_windows_diagrams_core_itool.html){% endif %} interface and one or both of the __IMouseListener__ and __IKeyboardListener__ interfaces.

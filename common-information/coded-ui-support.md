@@ -17,6 +17,8 @@ The purpose of this section is to show you how to create a simple CodedUI test.
 
 >importantThe supported Visual Studio editions for coded UI tests are __Microsoft Visual Studio Ultimate or Microsoft Visual Studio Premium__. You can also check [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://msdn.microsoft.com/en-us/library/dd380742(v=vs.110).aspx).
 
+> For Visual Studio versions 2017 and later, please make sure that you have [Installed the coded UI test component](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2017#install-the-coded-ui-test-component) as it is not installed automatically.
+
 In order to create a CodedUI test, you need to perform the following steps:
 
 * Add the __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore__ assembly into the following directory (for 64-bit operating system):          

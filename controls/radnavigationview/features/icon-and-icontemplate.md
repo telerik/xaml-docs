@@ -89,7 +89,7 @@ First we will define a model for our items and a viewmodel which will hold a col
 	End Class
 {{endregion}}
 
-After that we can setup our __RadNavigationView__ and set its ItemsSource to an instance of our viewmodel. We also need to create a style targeting __RadNavigationViewItem__ in order to bind the properties of the NavigationItemModel class. Note, that a StringToGlyphConverter is used to convert the IconGlyph string property to a glyph. 
+After that we can setup our __RadNavigationView__ and set its ItemsSource to an instance of our viewmodel. We also need to create a style targeting __RadNavigationViewItem__ in order to bind the properties of the NavigationItemModel class. Note, that a [StringToGlyphConverter]({%slug common-converters%}#stringtoglyphconverter) is used to convert the IconGlyph string property to a glyph. 
 
 #### __[XAML] Example 3: Setting up the view__
 {{region xaml-radnavigationview-item-icon-3}}

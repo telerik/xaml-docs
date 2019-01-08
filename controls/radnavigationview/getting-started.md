@@ -84,7 +84,7 @@ Either of the above events can be handled to perform navigation related tasks or
 
 ## Opening/Closing the NavigationPane in code
 
-The NavigationPane which hosts the RadNavigationViewItems is normally opened/closed by clicking the RadToggleButton. However, this can also be in code by setting the __IsPaneOpen__ property of the __RadNavigationView__ as demonstrated in ___Examples 3 and 4__.
+The NavigationPane which hosts the RadNavigationViewItems is normally opened/closed by clicking the RadToggleButton. However, this can also be in code by setting the __IsPaneOpen__ property of the __RadNavigationView__ as demonstrated in __Examples 3 and 4__.
 
 #### __[XAML] Example 3: Setting the IsPaneOpen property in xaml__
 {{region cs-radnavigationview-getting-started-2}}

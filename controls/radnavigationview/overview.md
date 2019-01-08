@@ -26,6 +26,8 @@ As every control from UI for WPF, RadNavigationView comes with a set of pre-defi
 
 * __Flexible Header and Footer Content__: Customize your headers and footers any way you want using direct content or data templates. Read more about this in the [Header and Footer]({%slug radnavigationview-header-and-footer%}) section of the documentation.
 
+* __Keyboard support__: RadNavigationView allows you to perform navigation, selection and other tasks without using the mouse. Read more about this in the [Keyboard Support]({%slug radnavigationview-features-keyboard-support%}) article.
+
 * __UI Automation Support__: Check the [UI Automation Support]({%slug common-ui-automation%}) common article.
 
 * __Enhanced Routed Events Framework__: The events system of the control will help your code become even more elegant and concise.

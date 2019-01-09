@@ -13,7 +13,7 @@ position: 1
 The __RadDiagramRibbon__ control allows you to easily add one or all of the following RadDiagram and RadRibbonView extensions. This way you can give the user ability to show/hide any of the specified extensions dynamically.
 
 #### __Figure 1: DiagramRibbon Extensions__ 
-![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
+![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Extensions.png)
 
 ## RadDiagramToolBox
 

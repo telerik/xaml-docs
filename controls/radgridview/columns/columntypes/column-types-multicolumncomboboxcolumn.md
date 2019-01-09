@@ -52,7 +52,7 @@ __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%s
 
 ## Setting up GridViewMultiColumnComboBoxColumn
 
-__Examples 1 and 2__ demonstrate how you can define some dummy data and setup a GridViewMultiColumnComboBoxColumn. The RadGridView will be populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection will be set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.
+__Examples 1 and 2__ demonstrate how you can define some dummy data and set up a GridViewMultiColumnComboBoxColumn. The RadGridView is populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection is set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.
 
 #### __[C#] Example 1: Defining the models and viewmodel__
 {{region cs-radmulticolumncombobox-dropdown-properties-0}}
@@ -176,7 +176,7 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and setup a 
 	</Window.Resources>
     <Grid DataContext="{StaticResource MyViewModel}">
         <telerik:RadGridView Grid.Row="0" 
-                             Name="clubsGrid" 
+                             Name="DepartmentsGrid" 
                              ItemsSource="{Binding Departments}"
                              AutoGenerateColumns="False"
                              GroupRenderMode="Flat"

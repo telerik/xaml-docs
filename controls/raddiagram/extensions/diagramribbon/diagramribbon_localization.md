@@ -1,16 +1,18 @@
 ---
-title: DiagramRibbon Localization
-page_title: DiagramRibbon Localization
+title: Localization
+page_title: Localization
 description: This article described the localization strings of the RadDiagramRibbon.
 slug: raddiagram-extensions-diagramribbon-localization
-tags: DiagramRibbon Localization
+tags: diagram,ribbon,localization
 published: True
 position: 2
 ---
 
-# DiagramRibbon Localization
+# Localization
 
-The built-in localization mechanism in the platform allows you to localize __RadDiagramRibbon__ control.
+The built-in localization mechanism in the platform allows you to localize the __RadDiagramRibbon__ control.
+
+The resources of the control can be localized by using an unique identifier called resource key that is assigned to each localizable string. Below you will find a list of all available resources and their default values:
 
 Key	|	Value
 ---	|	---	

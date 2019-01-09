@@ -1,26 +1,26 @@
 ---
-title: DiagramRibbon Extensions
-page_title: DiagramRibbon Extensions
-description: This article will get you familiar with the DiagramRibbon control extensions.
+title: Extensions
+page_title: Extensions
+description: This article will get you familiar with the RadDiagramRibbon control extensions.
 slug: raddiagram-extensions-diagramribbon-extensions
-tags: DiagramRibbon Extensions
+tags: diagram,ribbon,extensions
 published: True
 position: 1
 ---
 
-# DiagramRibbon Extensions
+# Extensions
 
-__DiagramRibbon__ control allows easily add one or all of the following RadDiagram and RadRibbonView extensions. This way we can give the user ability to show/hide any of the specified extensions dynamically.
+The __RadDiagramRibbon__ control allows you to easily add one or all of the following RadDiagram and RadRibbonView extensions. This way you can give the user ability to show/hide any of the specified extensions dynamically.
 
 #### __Figure 1: DiagramRibbon Extensions__ 
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
 
-## __RadDiagramToolBox__
+## RadDiagramToolBox
 
-To add __DiagramToolBox__ to the DiagramRibbon the __ToolBox__ property can be bound to a DiagramToolBox using x:Name.
+To add a __RadDiagramToolbox__ to the RadDiagramRibbon control, you can bind the __ToolBox__ property to a RadDiagramToolBox using an ElementName binding.
 
-#### __[XAML] Example 2: Add RadDiagramToolbox to DiagramRibbon__
-{{region raddiagram-extensions-diagramribbon-extensions-0}}
+#### __[XAML] Example 1: Add RadDiagramToolbox to DiagramRibbon__
+{{region xaml-raddiagram-extensions-diagramribbon-extensions-0}}
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -39,12 +39,12 @@ To add __DiagramToolBox__ to the DiagramRibbon the __ToolBox__ property can be b
     </Grid>
 {{endregion}}
 
-## __DiagramNavigationPane__
+## DiagramNavigationPane
 
-To add __DiagramNavigationPane__ to the DiagramRibbon the __NavigationPane__ property can be bound to a DiagramToolBox using x:Name.
+To add a __RadDiagramNavigationPane__ to the RadDiagramRibbon control, you can bind the __NavigationPane__ property to a RadDiagramNavigationPane using an ElementName binding.
 
-#### __[XAML] Example 3: Add RadDiagramNavigationPane to DiagramRibbon__
-{{region raddiagram-extensions-diagramribbon-extensions-1}}
+#### __[XAML] Example 2: Add RadDiagramNavigationPane to DiagramRibbon__
+{{region xaml-raddiagram-extensions-diagramribbon-extensions-1}}
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -65,12 +65,12 @@ To add __DiagramNavigationPane__ to the DiagramRibbon the __NavigationPane__ pro
     </Grid>
 {{endregion}}
 
-## __RadDiagramRuler__
+## RadDiagramRuler
 
-To add __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler / HorizontalRuler__ property can be bound to a RadDiagramRuler using x:Name.
+To add a __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler__ and __HorizontalRuler__ properties can be bound to RadDiagramRuler instances using an ElementName binding.
 
-#### __[XAML] Example 4: Add RadDiagramRuler to DiagramRibbon__
-{{region raddiagram-extensions-diagramribbon-extensions-2}}
+#### __[XAML] Example 3: Add RadDiagramRuler to DiagramRibbon__
+{{region xaml-raddiagram-extensions-diagramribbon-extensions-2}}
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -93,12 +93,12 @@ To add __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler / Horizontal
 		</Grid>
 {{endregion}}
 
-## __QuickAccessToolBar__
+## QuickAccessToolBar
 
-To add __QuickAccessToolBar__ to the DiagramRibbon the __VerticalRuler / HorizontalRuler__ property can be bound to a RadDiagramRuler using x:Name.
+To add __QuickAccessToolBar__ to the DiagramRibbon you can bind the **QuickAccessToolBar** property a QuickAccessToolBar instance using an ElementName binding.
 
 #### __[XAML] Example 4: Add QuickAccessToolBar to DiagramRibbon__
-{{region raddiagram-extensions-diagramribbon-extensions-3}}
+{{region xaml-raddiagram-extensions-diagramribbon-extensions-3}}
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -122,12 +122,12 @@ To add __QuickAccessToolBar__ to the DiagramRibbon the __VerticalRuler / Horizon
 		</Grid>
 {{endregion}}
 
-## __RadRibbonBackstage__
+## RadRibbonBackstage
 
-To add __Backstage__ to the DiagramRibbon the __Backstage__ property can be dirrectly set to __RadRibbonBackstage__ element.
+To add a __Backstage__ to the DiagramRibbon you can use the __Backstage__ property and declare a __RadRibbonBackstage__ element.
 
 #### __[XAML] Example 5: Add Backstage to DiagramRibbon__
-{{region raddiagram-extensions-diagramribbon-extensions-4}}
+{{region xaml-raddiagram-extensions-diagramribbon-extensions-4}}
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>

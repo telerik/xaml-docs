@@ -17,7 +17,7 @@ This article describes the set of properties that can be used for manipulating t
 * [Set Min and Max Height or Width of the DropDown](#set-min-and-max-height-or-width-of-the-dropdown)
 * [Disable DropDown Resizing](#disable-dropdown-resizing)
 * [Keep the DropDown Open](#keep-the-dropdown-open)
-* [Open the DropDown in Input](#open-the-dropdown-on-input)
+* [Open the DropDown on Input](#open-the-dropdown-on-input)
 * [Position of the DropDown](#position-of-the-dropdown)
 * [Closing the DropDown when Selecting](#closing-the-dropdown-when-selecting)
 
@@ -58,7 +58,7 @@ By default, the user is able to resize the DropDown of the control. This can be 
 
 When the DropDown of __RadMultiColumnComboBox__ is opened, it will be closed on losing focus. In order to keep it open the __KeepDropDownOpen__ property can be set to __True__.
 
-## Open the DropDown in Input
+## Open the DropDown on Input
 
 When receiving an input in the AutoCompleteBox the control will automatically open its DropDown. To disable this, the __OpenDropDownOnInput__ property can be set to __False__.
 

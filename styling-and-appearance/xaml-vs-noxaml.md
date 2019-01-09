@@ -32,7 +32,7 @@ The NoXaml dlls have the same code as the Xaml ones, but they don't contain any 
 
 The benefit of using NoXaml is that you get full __design-time support__ when a theme different from the default one (Office_Black) is used.
 
-Because the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from **RadCartesianChart** should have a Style that targets the custom control and it is based on **RadCartesianChartStyle**. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise they will be completely overridden and all setters and templates originally applied to the controls will be lost. You can read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+>importantBecause the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from **RadCartesianChart** should have a Style that targets the custom control and it is based on **RadCartesianChartStyle**. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise they will be completely overridden and all setters and templates originally applied to the controls will be lost. You can read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
 
 ## How to check the assemblies version
 

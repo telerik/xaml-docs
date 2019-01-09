@@ -24,8 +24,6 @@ The control is a configured [RadRibbonView]({%slug radribbonview-overview%}) whi
 >	- Telerik.Windows.Diagrams.Core
 >	- Telerik.Windows.Controls.Diagrams.Extensions
 
-## Overview
-
 __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance.
 
 #### __[XAML] Example 1: Specify RadDiagramRibbon in XAML__
@@ -59,9 +57,9 @@ To add a new tab you can just call the __Add()__ method of the __AdditionalTabs_
 {{region xaml-raddiagram-extensions-diagramribbon-overview-1}}
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
-		<telerik:RadDiagramRibbon.AdditionalTabs>
-			<telerik:RadRibbonTab Header="New Tab"/>
-		</telerik:RadDiagramRibbon.AdditionalTabs>		
+		<telerik:RadRibbonTab Header="New Tab">
+			<telerik:RadRibbonGroup Header="New Group"/>
+		</telerik:RadRibbonTab>		
 	</telerik:RadDiagramRibbon>
 {{endregion}}
 
@@ -88,9 +86,11 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 {{region raddiagram-extensions-diagramribbon-overview-1}}
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
-		<telerik:RadDiagramRibbon.AdditionalTabs>
-			<telerik:RadRibbonTab Header="New Tab"/>
-		</telerik:RadDiagramRibbon.AdditionalTabs>		
+		<telerik:RadDiagramRibbon.AdditionalGroups>
+			<telerik:RadRibbonGroup Header="New Group"  telerik:DiagramRibbonExtensions.RibbonTabHeader="Home">
+				<telerik:RadRibbonButton Content="My Button" VerticalContentAlignment="Center" Foreground="White" Background="#2A579A"/>
+			</telerik:RadRibbonGroup>
+		</telerik:RadDiagramRibbon.AdditionalGroups>	
 	</telerik:RadDiagramRibbon>
 {{endregion}}
 
@@ -101,7 +101,7 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 		RadRibbonButton button = new RadRibbonButton();
 		button.Content = "My Button";
 		button.Foreground = Brushes.White;
-		button.Background = new SolidColorBrush((Color)(ColorConverter.ConvertFromString("#25A0DA")));
+		button.Background = new SolidColorBrush((Color)(ColorConverter.ConvertFromString("#2A579A")));
 		button.VerticalContentAlignment = VerticalAlignment.Center;
 
 		RadRibbonGroup newGroup = new RadRibbonGroup();

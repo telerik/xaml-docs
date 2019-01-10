@@ -1,13 +1,12 @@
 ---
 title: Routing
 page_title: Routing
-description: Routing
+description: This article describes the routing functionality of the RadDiagram control.
 slug: raddiagram-features-routing
-tags: routing
+tags: routing,astarrouter, treelayout,custom routertree, inflatedrectrouter, orgTreeRouter, tipovertreerouter, avoidshapes, avoidconnectionoverlap, overlap
 published: True
 position: 13
 ---
-
 # Routing
 
 A mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes. 
@@ -17,7 +16,7 @@ A mechanism using algorithms to make sure that the connections don't cross each 
 Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.		  
 
 #### __[XAML] Example 1: Setting RouteConnections property in XAML__
-{{region raddiagram-features-routing-01}}
+{{region xaml-raddiagram-features-routing-0}}
 	<Grid>
 		<Grid.Resources>
 			<Style TargetType="telerik:RadDiagramShape" >
@@ -61,12 +60,13 @@ Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections
 	</Grid>		  
 {{endregion}}
 
+#### __Figure 1: Default routing__
 ![raddiagram-features-routing 0](images/raddiagram-features-routing1.png)
 
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
 
 #### __[XAML] Example 2: Setting Route property to False__
-{{region raddiagram-features-routing-01}}
+{{region xaml-raddiagram-features-routing-1}}
 	<telerik:RadDiagramConnection x:Name="xConnection2" Route="False"
 								  SourceConnectorPosition="Bottom"
 								  TargetConnectorPosition="Top"
@@ -74,6 +74,7 @@ If you want to __exclude/include__ a connection from the routing process, you ca
 								  Target="{Binding ElementName=xShape3}"/>	
 {{endregion}}	
 
+#### __Figure 2: Route property set to False__
 ![raddiagram-features-routing 1](images/raddiagram-features-routing2.png)	
 	
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
@@ -97,7 +98,8 @@ The __OrgTreeRouter__ is __LayoutType__: Based router that performs a hierarchic
 In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter object and set it as current Router of the RadDiagram via the RoutingService:
 
 #### __[C#] Example 3: Setting OrgTreeRouter__
-{{region raddiagram-features-routing-0}}
+
+{{region cs-raddiagram-features-routing-2}}
 	public MainPage()
 	{
 		InitializeComponent();
@@ -112,7 +114,7 @@ In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter obj
 
 #### __[VB.NET] Example 3: Setting OrgTreeRouter__
 
-{{region raddiagram-features-routing-0}}
+{{region vb-raddiagram-features-routing-3}}
 	Public Sub New()
 		InitializeComponent()
 		Dim router As New OrgTreeRouter() With { 
@@ -128,7 +130,7 @@ The TreeLayoutType points to the type of Layout you wish to use. The routing log
 The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape and the connection.
 
 #### __[XAML] Example 4: Specifing RadDiagram in XAML__
-{{region raddiagram-features-routing-0}}
+{{region xaml-raddiagram-features-routing-4}}
 	<telerik:RadDiagram IsManipulationAdornerVisible="False" IsConnectorsManipulationEnabled="False" 
 					x:Name="diagram" Width="1000" Height="500" Grid.Row="1" RouteConnections="True">
 					<telerik:RadDiagramShape Width="45" Height="45" Content="Parent" x:Name="parentShape"/>
@@ -151,7 +153,9 @@ The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape 
 	</telerik:RadDiagram>
 {{endregion}}
 
-Below you can see these shapes after TreeDown Layout operation performed on the Diagram.
+__Figure 3__ demonstrate these shapes after TreeDown Layout operation performed on the Diagram.
+
+#### __Figure 3: TreeDown Layout__
 ![raddiagram-features-routing 2](images/raddiagram-features-routing3.png)
 
 The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of RadDiagram.
@@ -160,8 +164,8 @@ The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of Ra
 
 When the TreeLayoutType is set to TipOverTree, the OrgTreeRouter uses a special kind of router - the TipOverTreeRouter. It produces best visual results when a custom connectors are added in the bottom-left part of the shapes. In the following lines we will create a quick sample demonstrating the TipOverTree routing and how to configure it properly. Lets first define some shapes:
 
-#### __XAML__
-{{region raddiagram-features-routing-1}}
+#### __[XAML]__
+{{region xaml-raddiagram-features-routing-5}}
 	<Grid.Resources>
 		<Style TargetType="telerik:RadDiagramConnection">
 			<Setter Property="ConnectionType" Value="Polyline" />
@@ -201,8 +205,8 @@ On a button's click event handler we will perform 3 base steps:
 * Create TreeLayoutSettings and configure it.
 * Create Router and assign it to be the default one.
 
-#### __C#__
-{{region raddiagram-features-routing-3}}
+#### __[C#]__
+{{region cs-raddiagram-features-routing-6}}
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		PrepareShapesForTipOverTreeRouting();
@@ -235,8 +239,8 @@ On a button's click event handler we will perform 3 base steps:
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region raddiagram-features-routing-3}}
+#### __[VB.NET]__
+{{region vb-raddiagram-features-routing-7}}
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		PrepareShapesForTipOverTreeRouting()
 		Dim settings As New TreeLayoutSettings() With { 
@@ -267,6 +271,8 @@ On a button's click event handler we will perform 3 base steps:
 {{endregion}}
 
 Here is a possible result in Windows8 theme:
+
+#### __Figure 4: TreeLayoutType set to TipOverTree__
 ![raddiagram-features-routing 3](images/raddiagram-features-routing4.png)
 
 ## AStarRouter
@@ -279,6 +285,7 @@ As the name suggest this is a connection router that uses a version of the [A* s
 
 * __DiagramConstants.RoutingGridSize__: A property of type double that gets or sets the routing grid size.
 
+#### __Figure 5: Setting RoutingGridSize property__
 ![AStarRouter](images/radidiagram-features-AStarRouter.png)
 
 * __DiagramConstants.RouterInflationValue__: A properly of type double that gets or sets the size of the restricted area around the shapes.
@@ -287,11 +294,17 @@ As the name suggest this is a connection router that uses a version of the [A* s
 
 * __AvoidShapes__: Boolean property controlling the logic that makes the connections go around the shapes. This property is __True__ by default.
 
+#### __Figure 6: Setting AvoidShapes property__
 ![AStarRouter](images/radidiagram-features-AStarRouter2.png)
 
 * __WallOptimization__: Boolean property controlling router optimization logic. If you set this property to __True__ the router will try to optimize some of the steps so that there are the least corners. 
 
 With the __R1 2019__ version of __Telerik UI for WPF__, several properties were created which can be used to further modify the algorithm for the routing connections. In order, the changes to be applied to the algorithm the __AvoidConnectionOverlap__ property of the __AStarRouter__ need to be set to __True__.
+
+* __AvoidConnectionOverlap__: Boolean property that gets or sets a value which indicates whether the routing algorithm should try to minimize connection overlaps. The default value is False.
+
+#### __Figure 7: Setting AvoidConnectionOverlap property__
+![AvoidConnectionOverlap property](images/raddiagram-features-routing5.png)
 
 * __SegmentOverlapPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections behavior will become very close to when __AvoidConnectionOverlap__ is set to __False__. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete 
 scenario. The default value is __0.5__.
@@ -325,7 +338,7 @@ In the following section we will create a custom Router. This way we will be abl
 Lets first create some items:
 
 #### __[XAML]__
-{{region raddiagram-features-routing-4}}
+{{region xaml-raddiagram-features-routing-8}}
     <telerik:RadDiagram x:Name="diagram">
 	<telerik:RadDiagramShape Position="100 100" Width="100" Height="30" Content="Shape A" x:Name="shapeA"/>
 	<telerik:RadDiagramShape Position="300 100" Width="100" Height="30" Content="Shape B" x:Name="shapeB"/>
@@ -336,7 +349,7 @@ Lets first create some items:
 Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method:
 		
 #### __[C#]__
-{{region raddiagram-features-routing-1}}
+{{region cs-raddiagram-features-routing-9}}
 	public class CustomRouter : IRouter
 	{
 		public System.Collections.Generic.IList<Point> GetRoutePoints(IConnection connection, bool showLastLine)
@@ -356,7 +369,7 @@ Now we have to create class that implements the __IRouter__ interface and overri
 {{endregion}}
 
 #### __[VB.NET]__
-{{region raddiagram-features-routing-1}}
+{{region vb-raddiagram-features-routing-10}}
 	Public Class CustomRouter
 		Implements IRouter
 		Public Function GetRoutePoints(connection As IConnection, showLastLine As Boolean) As System.Collections.Generic.IList(Of Point)
@@ -379,12 +392,12 @@ Please note that we only have to add in the list the route points, no need to ad
 The final step is to make our Router the current one of the Diagram. This is done via Diagram's Routing Service;
 
 #### __[C#]__
-{{region raddiagram-features-routing-2}}
+{{region cs-raddiagram-features-routing-11}}
 	this.diagram.RoutingService.Router = new CustomRouter();
 {{endregion}}
 
 #### __[VB.NET]__
-{{region raddiagram-features-routing-2}}
+{{region vb-raddiagram-features-routing-12}}
 	this.diagram.RoutingService.Router = new CustomRouter();
 {{endregion}}
 

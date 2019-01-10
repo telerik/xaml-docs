@@ -14,13 +14,13 @@ This topic covers the specific events exposed by the __RadDiagramItem__. The eve
 
 ## Edit Events
 
-* __PreviewBeginEdit__: Occurs when item is about to be edited.			
+* __PreviewBeginEdit__: Occurs when an item is about to be edited.			
 
-* __BeginEdit__: Occurs when item has entered edit mode.			
+* __BeginEdit__: Occurs when an item has entered edit mode.			
 
-* __PreviewEndEdit__: Occurs when item is about to exit the edit mode.			
+* __PreviewEndEdit__: Occurs when an item is about to exit edit mode.			
 
-* __EndEdit__ - occurs when item is edited (exited the edit mode).			
+* __EndEdit__ - occurs when an item is edited (exited the edit mode).			
 
 ## Shape Specific Events
 

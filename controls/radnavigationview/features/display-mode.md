@@ -27,27 +27,6 @@ By default the RadNavigationView changes its DisplayMode when its size passes ce
 #### __Figure 1: RadNavigationView DisplayModes__
 ![RadNaviationView DisplayModes](images/RadNavigationView_DisplayModes_Resizing.gif)
 
-## AllowedDisplayModes
-
-In order to prevent the RadNavigationView from entering a certain DisplayMode, you can set the __AllowedDisplayModes__ property. By default all of the modes (Minimal, Compact and Expanded) are allowed. __Examples 1 and 2__ demonstrate how you can prevent the control from changing to the Expanded DisplayMode.
-
-#### __[XAML] Example 1: Setting the AllowedDisplayModes to Minimal and Compact__
-{{region xaml-radnavigationview-display-mode-0}}
-    <telerik:RadNavigationView x:Name="navigationView" AllowedDisplayModes="Minimal, Compact" />
-{{endregion}}
-
-#### __[C#] Example 2: Setting the AllowedDisplayModes to Minimal and Compact__
-{{region cs-radnavigationview-display-mode-1}}
-    this.navigationView.AllowedDisplayModes = NavigationViewDisplayMode.Minimal | NavigationViewDisplayMode.Compact;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the AllowedDisplayModes to Minimal and Compact__
-{{region vb-radnavigationview-display-mode-2}}
-    Me.navigationView.AllowedDisplayModes = NavigationViewDisplayMode.Minimal Or NavigationViewDisplayMode.Compact
-{{endregion}}
-
->important The __AllowedDisplayModes__ property is taken into account only when the RadNavigationView auto changes its display modes. If the __AutoChangeDisplayMode__ property is set to __False__, it will not be taken into account.
-
 ## AutoChangeDisplayMode
 
 By default the __RadNavigationView__ handles its SizeChanged event in order to change its DisplayMode based on the values of the __CompactModeThresholdWidth__ and __ExpandedModeThresholdWidth__ properties. If you do not want this to be the case, you can set the __AutoChangeDisplayMode__ property to __False__ as demonstrated in __Example 3__.

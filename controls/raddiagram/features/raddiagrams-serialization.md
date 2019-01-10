@@ -192,7 +192,7 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* Geometry
 	* GlidingStyle
 	* Id
-	* IsConnectionManipulationEnabled
+	* IsConnectorsManipulationEnabled
 	* IsDraggingEnabled
 	* IsEditable
 	* IsResizingEnabled
@@ -230,7 +230,7 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* FontWeight    
 	* Foreground    
 	* Id
-	* IsConnectionManipulationEnabled
+	* IsConnectorsManipulationEnabled
 	* IsDraggingEnabled
 	* IsEditable    
 	* IsModified    
@@ -251,6 +251,7 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* TargetCapType
 	* TargetConnectorPosition
 	* ZIndex
+	* UseFreeConnectors 
 
 For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialized the Opacity of the Shapes:			
 

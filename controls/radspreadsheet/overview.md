@@ -60,6 +60,8 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * **Shapes and Images**: The UI enables you to work with images. [API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
 
+* RadSpreadsheet enables you to show **Charts** and modify them as well: [Charts]({%slug radspreadsheet-ui-charts%}). 
+
 * **Document themes**
 
 * **Auto fill** and **Series**: Fill cells automatically with data following a specific pattern.

@@ -1,7 +1,7 @@
 ---
 title: Items Events
 page_title: Items Events
-description: Items Events
+description: This article describes the events of the items inside the RadDiagram framework.
 slug: raddiagrams-events-item
 tags: items,events
 published: True
@@ -14,23 +14,25 @@ This topic covers the specific events exposed by the __RadDiagramItem__. The eve
 
 ## Edit Events
 
-* __PreviewBeginEdit__ - occurs when item is about to be edited.			
+* __PreviewBeginEdit__: Occurs when an item is about to be edited.			
 
-* __BeginEdit__ - occurs when item has entered edit mode.			
+* __BeginEdit__: Occurs when an item has entered edit mode.			
 
-* __PreviewEndEdit__ - occurs when item is about to exit the edit mode.			
+* __PreviewEndEdit__: Occurs when an item is about to exit edit mode.			
 
-* __EndEdit__ - occurs when item is edited (exited the edit mode).			
+* __EndEdit__ - occurs when an item is edited (exited the edit mode).			
 
 ## Shape Specific Events
 
-* __ConnectorActivated__ - occurs when a connector of the shape is activated.			
+* __GeometryChanged__: Occurs when the geometry of the shape is changed.			
 
-* __GeometryChanged__ - occurs when the geometry of the shape is changed.			
+## Container Shape Specific Events
+
+* __IsCollapsedChanged__: Occurs when the container IsCollapsed property has changed.
 
 ## Connection Specific Events
 
-* __ManipulationPointActivated__ - occurs when a connector of the connection is activated.			
+* __ManipulationPointActivated__: Occurs when a connector of the connection is activated.			
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

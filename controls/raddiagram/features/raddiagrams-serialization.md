@@ -1,7 +1,7 @@
 ---
 title: Serialization
 page_title: Serialization
-description: Serialization
+description: This article describes the serialization mechanism of the RadDiagram framework.
 slug: raddiagrams-features-serialization
 tags: serialization
 published: True

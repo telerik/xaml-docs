@@ -34,23 +34,23 @@ This topic covers the specific events exposed by the __RadDiagram__. The events 
 
 ## Drag Events
 
-* __PreviewDrag__: Occurs when dragging operation is about to be performed.			
+* __PreviewDrag__: Occurs when a dragging operation is about to be performed.			
 
-* __Drag__: Occurs when dragging operation is performed.			
+* __Drag__: Occurs when a dragging operation is performed.			
 
 ## Serialization Events
 
-* __Deserialized__: Occurs when deserialization process end.			
+* __Deserialized__: Occurs when a deserialization process ends.			
 
-* __Serialized__: Occurs when serialization process end.			
+* __Serialized__: Occurs when a serialization process ends.			
 
-* __ShapeDeserialized__: Occurs when shape is deserialized.			
+* __ShapeDeserialized__: Occurs when a shape is deserialized.			
 
-* __ShapeSerialized__: Occurs when shape is serialized.			
+* __ShapeSerialized__: Occurs when a shape is serialized.			
 
-* __ConnectionDeserialized__: Occurs when connection is deserialized.			
+* __ConnectionDeserialized__: Occurs when a connection is deserialized.			
 
-* __ConnectionSerialized__: Occurs when connection is serialized.			
+* __ConnectionSerialized__: Occurs when a connection is serialized.			
 
 * __MetadataDeserialized__: Occurs when metadata is deserialized.			
 
@@ -58,23 +58,23 @@ This topic covers the specific events exposed by the __RadDiagram__. The events 
 
 ## Click Events
 
-* __ShapeClicked__: Occurs when shape is clicked.			
+* __ShapeClicked__: Occurs when a shape is clicked.			
 
-* __ShapeDoubleClicked__: Occurs when shape is double clicked.			
+* __ShapeDoubleClicked__: Occurs when a shape is double clicked.			
 
 ## Command Events
 
-* __CommandExecuted__: Occurs when DiagramCommand is executed.			
+* __CommandExecuted__: Occurs when a DiagramCommand is executed.			
 
 ## Items Collection Events
 
 * __ItemsChanging__: Occurs while the Items collection is changing its items.			
 
-* __ItemsChanged__: Occurs when Items collection is changed.			
+* __ItemsChanged__: Occurs when the Items collection is changed.			
 
 ## Connector Events
 
-* __ConnectorActivationChanged__: Occurs after a connector have been activated or deactivated.
+* __ConnectorActivationChanged__: Occurs after a connector has been activated or deactivated.
 
 ## Connection Manipulation Events
 

@@ -123,7 +123,7 @@ navigation:
     controls/radmenu:
         title: RadMenu
     controls/radnavigationview:
-        title: RadNavigationView
+        title: RadNavigationView (HamburgerMenu)
     controls/radnavigationview/populating-with-data:
         title: Populating With Data
         position: 5
@@ -3368,7 +3368,7 @@ intro_columns:
       "Buttons": "radbuttons-overview"
       "ContextMenu": "contextmenu-overview1"
       "Menu": "radmenu-overview"
-      "NavigationView": "radnavigationview-overview"
+      "NavigationView (HamburgerMenu)": "radnavigationview-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
@@ -3380,6 +3380,7 @@ intro_columns:
     title: "Interactivity & UX"
     items:
       "BusyIndicator": "radbusyindicator-overview"
+      "Chat (Conversational UI)": "chat-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

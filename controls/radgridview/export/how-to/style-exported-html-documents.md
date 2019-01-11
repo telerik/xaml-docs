@@ -1,17 +1,16 @@
 ---
-title: ExportFormat.Html
-page_title: ExportFormat.Html
-description: ExportFormat.Html
+title: Style Exported Html
+page_title: Style Exported Html
+description: Style Exported Html
 slug: gridview-export-html
 tags: exportformat.html
 published: True
-position: 4
+position: 5
 ---
 
-# ExportFormat.Html
+# Style Exported Html
 
 You can use the ExportFormat.Html to export RadGridView in HTML format.
-
 
 >important As of __Q3 2013 GridViewElementExportingEventArgs__ exposes a new argument __VisualParameters__. The value of the property depends on the export format. Please note that it is only valid when exporting with __ExportFormat.ExcelML__ and __ExportFormat.Html__.
         

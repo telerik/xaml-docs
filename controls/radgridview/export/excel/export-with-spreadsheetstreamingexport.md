@@ -1,14 +1,14 @@
 ---
-title: SpreadsheetStreaming Export
-page_title: SpreadsheetStreaming Export
-description: SpreadsheetStreaming Export
+title: SpreadsheetStreamingExport
+page_title: SpreadsheetStreamingExport
+description: SpreadsheetStreamingExport
 slug: gridview-export-spreadsheetstreamingexport
 tags: export,spreadsheetstreamingexport
 published: True
-position: 9
+position: 2
 ---
 
-# Export with SpreadsheetStreamingExport
+# SpreadsheetStreamingExport
 
 The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the Csv and Xlsx formats. 
 * [Assembly References](#assembly-references)

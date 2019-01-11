@@ -43,7 +43,7 @@ __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate t
 #### __Figure 1: DiagramRibbon Overview__ 
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
 
->Please note that the examples in this tutorial are showcasing the Windows8 theme. In the [Setting a Theme]({%slug common-styling-apperance-setting-theme%}) article you can find more information on how to set an application-wide theme.
+>Please note that the examples in this tutorial are showcasing the Windows8 theme. In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article you can find more information on how to set an application-wide theme.
 
 ## Customize Tabs and Groups
 

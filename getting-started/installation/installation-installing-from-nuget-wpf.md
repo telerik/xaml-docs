@@ -49,6 +49,8 @@ Click the “Install” button and the references will be automatically added to
 You can now use the Telerik WPF controls in your project. 
 
 >tip Additionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
+
+>tip Since R1 2019, .NET Core 3 UI for WPF assemblies are also available in NuGet Packages.
     
 ## Installing Latest Internal Build NuGet Packages
 

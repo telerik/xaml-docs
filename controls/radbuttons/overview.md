@@ -20,7 +20,7 @@ Thank you for choosing Telerik __RadButtons__!
 
 __RadButtons__ for {{ site.framework_name }} is a set of customizable buttons allowing you to build complex forms and to easily manage the user input.  You can style the control consistently with the other controls from UI for {{ site.framework_name }} and get advantage of the Command support that RadButtons provide.
 
-![](images/buttons-overview-0.png)
+![](images/ButtonsOverview_01.png)
 
 # Key Features
 
@@ -35,6 +35,8 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 * __Radio Button__: Mimics the functionality of the radio button, but has more flexibility in its design. Read more about this in the [Radio Button]({%slug radbutton-features-radio-button%}) article.
 
 * __Path Button__: Derives from RadButton, but provides the ability to set a Path alongside its content. Read more about this in the [Path Button]({%slug radbuttons-features-pathbutton%}) article.
+
+* __Hyperlink Button__: Extends RadButton with hyperlink capabilities. More information can be found in the [Hyperlink Button]({%slug radbuttons-features-hyperlink-button%}) article.
 
 * __Command Support__: Full implementation of the Command pattern is available by using RadButtons. You can build complex UIs and keep your code simple by using Commands. Read more about this in the [Commands]({%slug radbuttons-features-commands%}) article.
 

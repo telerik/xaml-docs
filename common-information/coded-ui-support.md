@@ -37,7 +37,7 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 	>For 32-bit operating systems, the path should be "%CommonProgramFiles%\Microsoft Shared\VSTT\\__[Version]__\UITestExtensionPackages".
 
-	>tip You can find the  __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore.dll__ file in the UI for WPF installation folder - usually C:\Program Files\Telerik\UI for WPF [version]\Binaries\WPF40\\__TestTools__\VS[version]\
+	>tip You can find the  __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore.dll__ file in the UI for WPF installation folder - usually C:\Program Files\Progress\Telerik UI for WPF [version]\Binaries\WPF40\\__TestTools__\VS[version]\
 
 * The __Telerik.VisualStudio.TestTools.UITest.Extension.ExtensionsCore__ assembly must be installed into the global assembly cache (GAC). You can achieve this following the next steps:
 	1. Open Visual Studio Command Prompt.

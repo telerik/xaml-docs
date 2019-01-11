@@ -1,14 +1,14 @@
 ---
-title: Export FAQ
-page_title: Export FAQ
-description: Export FAQ
+title: FAQ
+page_title: FAQ
+description: FAQ
 slug: gridview-export-faq
 tags: export,faq
 published: True
-position: 8
+position: 7
 ---
 
-# Export FAQ
+# FAQ
 
 For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](https://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 

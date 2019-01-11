@@ -858,6 +858,21 @@ navigation:
     controls/radgridview/export:
         title: Export
         position: 10
+    controls/radgridview/export/excel:
+        title: Excel
+        position: 1
+    controls/radgridview/export/pdf:
+        title: PDF
+        position: 2
+    controls/radgridview/export/generic:
+        title: Other Formats
+        position: 3
+    controls/radgridview/export/events:
+        title: Events
+        position: 4
+    controls/radgridview/export/how-to:
+        title: How To
+        position: 8
     controls/radgridview/filtering:
         title: Filtering
         position: 11
@@ -952,9 +967,6 @@ navigation:
         title: RadWizard
     controls/radwizard/features:
         title: Features
-    controls/radgridview/export/export-formats:
-        title: Export Formats
-        position: 6
     controls/radvirtualgrid:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:

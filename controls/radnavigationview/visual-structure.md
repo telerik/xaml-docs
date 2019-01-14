@@ -17,13 +17,13 @@ This topic defines terms and concepts related to __RadNavigationView__ that you 
 
 The following table lists the elements that make up a RadNavigationView:
 
-* __PaneHeader__ - Represents the Header of a RadNavigationView. For more information, read the [Header and Footer]({%slug radnavigationview-header-and-footer%}#customizing-the-header) article.
+* __PaneHeader__: Represents the Header of a RadNavigationView. For more information, read the [Header and Footer]({%slug radnavigationview-header-and-footer%}#customizing-the-header) article.
 
-* __PaneToggleButton__ - Opens/Closes the NavigationPane which hosts the RadNavigationViewItems.
+* __PaneToggleButton__: Opens/Closes the NavigationPane which hosts the RadNavigationViewItems.
 
-* __NavigationView Items__ - RadNavigationViewItems can be populated [statically]({%slug radnavigationview-getting-started%}#populating-with-items) or through [databinding]({%slug radnavigationview-populating-with-data-databinding%}).
+* __NavigationView Items__: RadNavigationViewItems can be populated [statically]({%slug radnavigationview-getting-started%}#populating-with-items) or through [databinding]({%slug radnavigationview-populating-with-data-databinding%}).
 
-* __Pane Footer__ - Represents the Footer of a RadNavigationView. For more information, read the [Header and Footer]({%slug radnavigationview-header-and-footer%}#customizing-the-footer) article.
+* __Pane Footer__: Represents the Footer of a RadNavigationView. For more information, read the [Header and Footer]({%slug radnavigationview-header-and-footer%}#customizing-the-footer) article.
 
 ## See Also
 

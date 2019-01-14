@@ -32,6 +32,8 @@ As every control from UI for WPF, RadNavigationView comes with a set of pre-defi
 
 * __Enhanced Routed Events Framework__: The events system of the control will help your code become even more elegant and concise.
 
+* __Built-in Animations__: NavigationView provides predefined and customizable open/close animations of the navigation pane. 
+
 >tip Get started with the control with its [Getting Started]({%slug radnavigationview-getting-started%}) help article that shows how to use it in a basic scenario.
 
 >Check out the online demos at [demos.telerik.com](https://demos.telerik.com/wpf/).

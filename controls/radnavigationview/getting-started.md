@@ -101,7 +101,7 @@ The NavigationPane which hosts the RadNavigationViewItems is normally opened/clo
     Me.navigationView.IsPaneOpen = True
 {{endregion}}
 
-## Changing the width of the Navigation Pane
+## Changing the Width of the Navigation Pane
 
 The width of the NavigationPane when it is opened/closed can be controlled through the __CompactPaneWidth__ and __ExpandedPaneWidth__ properties. __Example 5__ demonstrates how you can set the __CompactPaneWidth__ property in order to increase the default width when the navigation pane is closed.
 

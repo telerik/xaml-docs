@@ -51,6 +51,8 @@ It is possible to further customize the header by setting the __PaneHeaderTempla
 #### __Figure 2: Result from Example 2 in the Office 2016 theme__
 ![NavigationView HeaderTemplate](images/NavigationView_HeaderTemplate.png)
 
+> The pane header's Background and Foreground can also be changed with the __PaneHeaderBackground__ and __PaneHeaderForeground__ properties.
+
 ## Customizing the Footer
 
 RadNavigationView's footer can be customized with the following properties: __PaneFooter__, __PaneFooterTemplate__. The approach for doing so is identical to customizing its header which is described in the previous section.

@@ -4,7 +4,7 @@ page_title: Getting Started
 description: This article will walk you through the creation of a sample application that contains a RadNavigationView control.
 slug: radnavigationview-getting-started
 tags: getting,started,navigationviewitem
-position: 1
+position: 2
 ---
 
 # Getting Started
@@ -100,6 +100,8 @@ The NavigationPane which hosts the RadNavigationViewItems is normally opened/clo
 {{region cs-radnavigationview-getting-started-4}}
     Me.navigationView.IsPaneOpen = True
 {{endregion}}
+
+## Changing the Width of the Navigation Pane
 
 The width of the NavigationPane when it is opened/closed can be controlled through the __CompactPaneWidth__ and __ExpandedPaneWidth__ properties. __Example 5__ demonstrates how you can set the __CompactPaneWidth__ property in order to increase the default width when the navigation pane is closed.
 

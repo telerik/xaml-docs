@@ -119,18 +119,6 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
         
 ## See Also
 
- * [Grid Async Export]({%slug gridview-export-async%})
-
- * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
-
- * [ExportFormat.Html]({%slug gridview-export-html%})
- 
- * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%})
- 
- * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
-
- * [Export Events]({%slug gridview-export-events%})
- 
- * [Online Demo - Exporting to various formats](https://demos.telerik.com/silverlight/#GridView/Exporting)
- 
- * [Online Demo - Exporting Row Details](https://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

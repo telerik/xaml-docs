@@ -10,7 +10,7 @@ position: 1
 
 # ExportToXlsx
 
-The __ExportToXlsx__ method allows exporting to "Xlsx" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
+The __ExportToXlsx__ method allows exporting to the XLSX format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 
 ## Assembly References
 
@@ -41,7 +41,7 @@ The __ExportToXlsx__ method uses additional libraries so you need to add referen
 The following example shows how to use the method on a button click:
 
 #### __[C#] Example 1: Use of ExportToXlsx Method__
-{{region gridview-export-xlsx-0}}
+{{region cs-gridview-export-xlsx-0}}
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xlsx";
@@ -85,7 +85,7 @@ By default the ExportDefaultStyles property is set to false. You can see the res
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
 #### __[C#] Example 2: Configuring ExportDefaultStyles Setting__
-{{region gridview-export-xlsx-1}}
+{{region cs-gridview-export-xlsx-1}}
 	gridViewExport.ExportToXlsx(stream,
 	    new GridViewDocumentExportOptions()
 			{
@@ -104,7 +104,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
 
 #### __[C#] Example 3: Setting the AutoFitColumnsWidth Property to False__
-{{region gridview-export-xlsx-2}}
+{{region cs-gridview-export-xlsx-2}}
 	if (dialog.ShowDialog() == true)
 	{
 	    using (Stream stream = dialog.OpenFile())
@@ -149,7 +149,6 @@ By default, the Aggregate results of the __GroupHeaderRow__ will be exported. No
             }
 {{endregion}}
 
-
 ## Events
 
 There are two events related to the exporting of RadGridView with the ExportToXlsx method: *ElementExportingToDocument* and *ElementExportedToDocument*. You can find more information regarding them in the [Export Events]({%slug gridview-export-events%}) section.
@@ -161,7 +160,6 @@ There are two events related to the exporting of RadGridView with the ExportToXl
 * __[Disable the Export of a Particular Column]({%slug gridview-troubleshooting-disable-column-export%})__
 
 * **[Style Exported XLSX & PDF Documents]({%slug gridview-export-style-exported-xlsx-pdf-documents%})**
-
 
 ## See Also
  * [RadGridView Overview]({%slug gridview-overview2%})

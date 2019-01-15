@@ -22,9 +22,9 @@ The __ElementExporting__ event can be cancelled for a particular row or cell. If
 
 You can subscribe to the events either declaratively or from the code-behind like this:
 
-#### __[XAML]Example 1: Subscribe to events declaratively:__
+#### __[XAML] Example 1: Subscribe to events declaratively:__
 
-{{region xaml-gridview-export-events_0}}
+{{region xaml-gridview-export-events-elementexporting-elementexported_0}}
 	<telerik:RadGridView x:Name="RadGridView1"
 	             ElementExporting="RadGridView1_ElementExporting"
 	             ElementExported="RadGridView1_ElementExported" />
@@ -32,7 +32,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 #### __[C#]Example 2: Subscribe to events from the code-behind:__
 
-{{region cs-gridview-export-events_1}}
+{{region cs-gridview-export-events-elementexporting-elementexported_1}}
 	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
 	RadGridView1.ElementExported += RadGridView1_ElementExported;
 {{endregion}}
@@ -40,7 +40,7 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 #### __[VB.NET]Example 3: Subscribe to events from the code-behind:__
 
-{{region vb-gridview-export-events_2}}
+{{region vb-gridview-export-events-elementexporting-elementexported_2}}
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
 {{endregion}}
@@ -85,7 +85,7 @@ You can use this event if you want to write additional data to the stream. A com
 	
 #### __[C#] Example 4: Add row details to the exported data:__
 
-{{region cs-gridview-export-events_5}}
+{{region cs-gridview-export-events-elementexporting-elementexported_3}}
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
 	    if (e.Element == ExportElement.Row)
@@ -108,7 +108,7 @@ You can use this event if you want to write additional data to the stream. A com
 
 #### __[VB.NET] Example 5: Add row details to the exported data:__
 
-{{region vb-gridview-export-events_6}}
+{{region vb-gridview-export-events-elementexporting-elementexported_4}}
 	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
 	    If e.Element = ExportElement.Row Then
 	        Dim obj As Employee = TryCast(e.Context, Employee)
@@ -150,7 +150,7 @@ For example:
         
 #### __[C#] Example 6: Define a style:__
 
-{{region cs-gridview-export-events_7}}
+{{region cs-gridview-export-events-elementexporting-elementexported_5}}
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
@@ -191,10 +191,9 @@ __NumberFormat:__
 
 - Format
 
-
 #### __[C#] Example 7: Apply a style before exporting:__
 
-{{region cs-gridview-export-events_9}}
+{{region cs-gridview-export-events-elementexporting-elementexported_6}}
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");
@@ -233,16 +232,6 @@ __NumberFormat:__
         
 ## See Also
 
- * [Grid Async Export]({%slug gridview-export-async%})
-
- * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
-
- * [ExportFormat.Html]({%slug gridview-export-html%})
- 
- * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%})
- 
- * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
- 
- * [Online Demo - Exporting to various formats](https://demos.telerik.com/silverlight/#GridView/Exporting)
- 
- * [Online Demo - Exporting Row Details](https://demos.telerik.com/silverlight/#GridView/ExportingRowDetails)
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

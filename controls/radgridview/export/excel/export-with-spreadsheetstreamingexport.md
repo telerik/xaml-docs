@@ -10,11 +10,7 @@ position: 2
 
 # SpreadsheetStreamingExport
 
-The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the Csv and Xlsx formats. 
-* [Assembly References](#assembly-references)
-* [Exporting](#exporting)
-* [Asynchronous Export](#asynchronous-export)
-* [Events](#events)
+The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the XLSX and CSV formats. 
 
 ## Assembly References
 
@@ -28,94 +24,108 @@ The __Export with SpreadsheetStreamingExport__ functionality uses additional lib
 * Telerik.Documents.SpreadsheetStreaming.dll
 * Telerik.Windows.Zip.dll
 
->  __Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll__ is a new binary introduced in __R1 2019__. 
+> __Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll__ is a new binary introduced in __R1 2019__. 
 
-## Exporting
+## GridViewSpreadStreamExport
 
-In order to export RadGridView, an instance of the __GridViewSpreadStreamExport__ has to be defined. The instance of the __RadGridView__ object that needs to be exported has to be passed as a parameter. Then, calling the __RunExport__ method will trigger the export mechanism. It accepts the name of the file that is to be exported and a __SpreadStreamExportRenderer__ instance.
+In order to export RadGridView, you need to define an instance of the __GridViewSpreadStreamExport__ class. You must then pass the instance of the __RadGridView__ control that you want to be exported as a parameter. You can also specify the name of the sheet that will be exported as well as the ExportFormat - **XLSX** or **CSV**. 
 
 #### __[C#] Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
-{{region gridview-export-spreadsheetstreamingexport_0}}
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.clubsGrid);
+{{region cs-gridview-export-spreadsheetstreamingexport_0}}
+	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
+    spreadStreamExport.SheetName = "Sheet1";
+    spreadStreamExport.ExportFormat = SpreadStreamExportFormat.Xlsx;
+{{endregion}}
+
+## RunExport
+
+Once you've correctly initialized the GridViewSpreadStreamExport, you can call the __RunExport__ method to trigger the export mechanism. The method itself has 4 different overloads:
+
+- **RunExport(string fileName, SpreadStreamExportRenderer exportRenderer)**
+- **RunExport(string fileName, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
+- **RunExport(Stream exportStream, SpreadStreamExportRenderer exportRenderer)**
+- **RunExport(Stream exportStream, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
+
+As you can observe, you must either specify a file name or provide a stream for the GridViewSpreadStreamExport to work with and must create an instance of the **SpreadStreamExportRenderer** class which exposes the methods needed to export using RadSpreadStreamProcessing. Optionally, you can also pass in [GridViewSpreadStreamExportOptions](#gridviewspreadstreamexportoptions) to customize the export to your needs.
+
+#### __[C#] Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
+{{region cs-gridview-export-spreadsheetstreamingexport_0}}
+	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
 	spreadStreamExport.RunExport(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
 {{endregion}}
 
 When the exporting operation is completed, the __ExportCompleted__ event of __GridViewSpreadStreamExport__ is raised.
 
-## Asynchronous Export
+## RunExportAsync
 
-Exporting __RadGridView__ asynchronously can be achieved by utilizing the __RunExportAsync__ method of __GridViewSpreadStreamExport__. 
+You can also export __RadGridView__ asynchronously by utilizing the __RunExportAsync__ method of the __GridViewSpreadStreamExport__ class. The method has the same overloads as its synchroneous counterpart:
+
+- **RunExportAsync(string fileName, SpreadStreamExportRenderer exportRenderer)**
+- **RunExportAsync(string fileName, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
+- **RunExportAsync(Stream exportStream, SpreadStreamExportRenderer exportRenderer)**
+- **RunExportAsync(Stream exportStream, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
 
 #### __[C#] Example 2: Exporting RadGridView Asynchronously__
-{{region gridview-export-spreadsheetstreamingexport_1}}
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.clubsGrid);
+{{region cs-gridview-export-spreadsheetstreamingexport_1}}
+	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
 	spreadStreamExport.RunExportAsync(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
 {{endregion}}
 
 When the progress of the asynchronous export changes, the __AsyncExportProgressChanged__ event of __GridViewSpreadStreamExport__ is triggered. Finally, when the export operation is over, the __AsyncExportCompleted__ event is raised.
 
+When using the RunExportAsync method you can also set the **ShowLoadingIndicatorWhileAsyncExport** property to **True** to display a [RadBusyIndicator]({%slug gridview-busy-indicator%}) to the user and indicate that a time-consuming operation is taking place without blocking the UI. You can control the content of the indicator via RadGridView's **BusyContent** and **BusyContentTemplate** properties.
+
+If you wish to cancel the export operation, you can also invoke the **CancelExportAsync** method.
+
+## GridViewSpreadStreamExportOptions
+
+Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView control is exported. The class exposes the following properties:
+
+- **ExportDefaultStyles**: Specifies whether the GridViewDataControl will be exported with its default styles.
+- **ShowColumnFooters**: Specifies whether column footers should be included on export.
+- **ShowGroupFooters**: Specifies whether group footers should be included on export.
+- **ShowColumnGroups**: Specifies whether common column headers should be included on export.
+- **ShowGroupHeaderRowAggregates**: Specifies whether group header aggregates should be included on export.
+- **HiddenColumnExportOption**: Gets or sets a value indicating how hidden columns are exported. The **HiddenColumnExportOptions** enumeration provides three possible options: **ExportAlways**, **DoNotExport** and **ExportAsHidden**.
+- **Items**: The collection of items to be exported.
+
+#### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
+
+{{region gridview-export-spreadsheetstreamingexport_2}}
+	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
+                               spreadStreamExport.RunExport(dialog.FileName.ToString(), 
+    							 							new SpreadStreamExportRenderer(), 
+    							 							new GridViewSpreadStreamExportOptions() 
+								 							{ 
+																ShowColumnHeaders = true, 
+																ShowColumnFooters = true, 
+																ExportDefaultStyles=true 
+								 							});
+{{endregion}}
+
+#### __Figure 1: Exporting with ExportDefaultStyles set to True__
+![Export RadGridView with headers, footers and default styles](../images/exportdefaultstyles2.png)
+
 ## Events
 
-Apart from the previously discussed __ExportCompleted__, __AsyncExportProgressChanged__ and __AsyncExportCompleted__ events, __GridViewSpreadStreamExport__ exposes a couple of other events that provide different options for manipulating the exported data.
+Apart from the previously discussed __ExportCompleted__, __AsyncExportProgressChanged__ and __AsyncExportCompleted__ events, __GridViewSpreadStreamExport__ also exposes the **ElementExportingToDocument** and **ElementExportedToDocument** events which allow you to style and format the exported elements.
 
-### CellFormatting
+### ElementExportingToDocument
 
-This event occurs for every cell that is being exported. It can be used for styling the cells or applying custom format to the cells values.
+The **ElementExportingToDocument** when an element is about to be exported. Via its **GridViewSpreadStreamElementExportingEventArgs** you can access the following properties:
 
-#### __[C#] Example 3: Handling the CellFormatting event__
-{{region gridview-export-spreadsheetstreamingexport_2}}
-	 private void SpreadStreamExport_CellFormatting(object sender, SpreadStreamCellFormattingEventArgs e)
-		{
-			e.CellStyleInfo.Background = Colors.Blue;
-			e.CellStyleInfo.Foreground = Colors.OrangeRed;
-			e.CellStyleInfo.FontSize = 11;
-			e.CellStyleInfo.FontFamily = new FontFamily("Comic Sans MS");
-		}
-{{endregion}}
+- **Element**: The type of the currently exported element. This can be any of the following types: **HeaderCell**, **FooterCell**, **GroupHeaderCell**, **GroupFooterCell**, **Cell** or **CommonColumnHeader**.
+- **Value**: The value that is about to be exported.
+- **Cancel**: A boolean value that indicates whether the event should be canceled or not.
+- **Column**: The column of the exported cell.
+- **Style**: The style for the exported cell. It is of type **SpreadStreamCellStyle** and provides a number of options for styling the exported element.
 
-### RowCreated
+### ElementExportedToDocument
 
-Occurs when a new row is created in current worksheet. This is suitable place to set any row properties (like height) and/or add indent cells.
-
-#### __[C#] Example 3: Handling the RowCreated event__
-{{region gridview-export-spreadsheetstreamingexport_3}}
-	 private void SpreadStreamExport_RowCreated(object sender, SpreadStreamRowEventArgs e)
-        {
-            var row = e.Row as Telerik.Documents.SpreadsheetStreaming.IRowExporter;
-            row.SetHeightInPixels(30);
-        }
-{{endregion}}
-
-### RowExporting
-
-Occurs before every spread row is exported. This is suitable place to add any additional cells at the end of the row.
-
-#### __[C#] Example 4: Handling the RowExporting event__
-{{region gridview-export-spreadsheetstreamingexport_4}}
-	if (e.GridRowIndex % 2 == 0)
-            {
-                var row = e.Row as IRowExporter;
-                using (ICellExporter cell = row.CreateCellExporter())
-                {
-                    SpreadCellFormat format = new SpreadCellFormat()
-                    {
-                        Fill = SpreadPatternFill.CreateSolidFill(new SpreadColor(100, 100, 100))
-                    };
-                    cell.SetValue("---");
-                    format.HorizontalAlignment = SpreadHorizontalAlignment.Center;
-                    format.VerticalAlignment = SpreadVerticalAlignment.Center;
-                    format.LeftBorder = new SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100));
-                    format.RightBorder = new SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100));
-                    cell.SetFormat(format);
-                }
-            }
-{{endregion}}
+The **ElementExportedEvent** on the other hand is fired each time an element is exported. Its **GridViewSpreadStreamElementExportedEventArgs** have a single property - **Element**, which holds the type of the exported element (**HeaderCell**, **FooterCell**, **GroupHeaderCell**, **GroupFooterCell**, **Cell** or **CommonColumnHeader**).
 
 ## See Also
 
- * [Grid Export]({#slug gridview-export})
- * [Grid Async Export]({%slug gridview-export-async%})
- * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
- * [ExportFormat.Html]({%slug gridview-export-html%}) 
- * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%}) 
- * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})
+* [RadBusyIndicator]({%slug gridview-busy-indicator%})

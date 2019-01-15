@@ -10,7 +10,7 @@ position: 3
 
 # ExportToWorkbook
 
-In __R1 2016__, we introduced a new extension method related to the exporting of RadGridView - *ExportToWorkbook()*. You can use it if you need to modify the content of the exported RadGridView and avoid styling the document manually.
+In __R1 2016__ we introduced a new extension method related to the exporting of RadGridView - *ExportToWorkbook()*. You can use it if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 
 ## Assembly References
 
@@ -27,7 +27,7 @@ __ExportToWorkbook__ uses additional libraries so you need to add references to 
 This method exports the associated RadGridView to a [Workbook](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/working-wtih-workbooks-what-is-workbook) object. **Examples 1 and 2** show how you can modify that object before exporting.
 
 #### __[C#] Example 1: Export RadGridView to a Workbook and modify cell style:__
-{{region gridview-export-workbook-0}}
+{{region cs-gridview-export-workbook-0}}
 	  private void Button_Click(object sender, RoutedEventArgs e)
         {
 			//Instantiate the Workbook object
@@ -58,7 +58,7 @@ This method exports the associated RadGridView to a [Workbook](https://docs.tele
 {{endregion}}
 
 #### __[C#] Example 2: Double the width of the exported columns:__
-{{region gridview-export-workbook-1}}
+{{region cs-gridview-export-workbook-1}}
     for (int i = 0; i < workbook.ActiveWorksheet.UsedCellRange.ColumnCount; i++)
     {
         workbook.ActiveWorksheet.Columns[i].SetWidth(new ColumnWidth(this.clubsGrid.Columns[i].ActualWidth * 2, true));
@@ -80,7 +80,6 @@ The method can be overloaded and take __GridViewDocumentExportOptions__ as a par
 
 ## See Also
 
-* [RadGridView Overview]({%slug gridview-overview2%})
-* [Export]({%slug gridview-export%})
-* [Export Async]({%slug gridview-export-async%})
-* [Export Events]({%slug gridview-export-events%})
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

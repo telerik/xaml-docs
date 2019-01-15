@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# ExportToWorkbook
+# ExportToRadFixedDocument
 
 In __R1 2016__, we introduced a new extension method related to the exporting of RadGridView - **ExportToRadFixedDocument**. You can use it if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 
@@ -27,7 +27,7 @@ In __R1 2016__, we introduced a new extension method related to the exporting of
 This method exports the associated RadGridView to a [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) object. **Example 1** shows how you can rotate the exported page before exporting.
 
 #### __[C#] Example 1: Export RadGridView to a RadFixedDocument and rotate the page 90 degrees__
-{{region gridview-export-fixed-document-0}}
+{{region cs-gridview-export-fixed-document-0}}
 	private void Button_Click(object sender, RoutedEventArgs e)
         {	
 			//Instantiate the RadFixedDocument object
@@ -71,7 +71,6 @@ The method can be overloaded and take __GridViewDocumentExportOptions__ as a par
 
 ## See Also
 
-* [RadGridView Overview]({%slug gridview-overview2%})
-* [Export]({%slug gridview-export%})
-* [Export Async]({%slug gridview-export-async%})
-* [Export Events]({%slug gridview-export-events%})
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

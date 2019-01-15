@@ -21,12 +21,12 @@ Exporting to the __XLSX__  format can also be achieved by using the following tw
 - [ExportToXlsx]({%slug gridview-export-xlsx%})
 - [ExportToWorkbook]({%slug gridview-export-workbook%})
 
-## Export to Pdf
+## Export to PDF
 
 To export the control to the __PDF__  format you can use the following two extension methods:
 
-- [ExportToPdf]({%slug gridview-export-xlsx%})
-- [ExportToRadFixedDocument]({%slug gridview-export-workbook%})
+- [ExportToPdf]({%slug gridview-export-pdf%})
+- [ExportToRadFixedDocument]({%slug gridview-export-fixed-document%})
 
 ## Export to Other Formats
 
@@ -42,9 +42,9 @@ Alternatively, you can use the [RadSpreadProcessing](https://docs.telerik.com/de
 
 ## See Also
 
- * [Grid Export]({#slug gridview-export})
- * [Grid Async Export]({%slug gridview-export-async%})
- * [ExportFormat.ExcelML]({%slug gridview-export-excelml%})
- * [ExportFormat.Html]({%slug gridview-export-html%}) 
- * [ExportFormat.Xlsx]({%slug gridview-export-xlsx%}) 
- * [ExportFormat.Pdf]({%slug gridview-export-pdf%})
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToWorkbook]({%slug gridview-export-workbook%})
+* [ExportToPdf]({%slug gridview-export-pdf%})
+* [ExportToRadFixedDocument]({%slug gridview-export-fixed-document%})
+* [Export Events]({%slug gridview-export-events-elementexporting-elementexported-todocument%})

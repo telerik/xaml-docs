@@ -40,7 +40,7 @@ For example:
 
 #### __[C#] Example 1: Set the style of the exported element__
 
-{{region cs-gridview-export-style-exported-excelml-documents_1}}
+{{region cs-gridview-export-excelml_1}}
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -59,7 +59,7 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
 
 #### __[C#] Example 2: Define a style:__
 
-{{region cs-gridview-export-style-exported-excelml-documents_2}}
+{{region cs-gridview-export-excelml_2}}
 	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("someStyle");
@@ -76,10 +76,6 @@ You can check the [Export Events]({%slug gridview-export-events%}) article for m
 
 ## See Also
 
- * [RadGridView Overview]({%slug gridview-overview2%})
-
- * [Export]({%slug gridview-export%})
-
- * [Export Async]({%slug gridview-export-async%})
-
- * [Export Events]({%slug gridview-export-events%})
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

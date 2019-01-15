@@ -31,9 +31,9 @@ When using the ElementExporting event, the type of the VisualParameters property
 For example:
         
 
-#### __[C#]Example 1: Set the properties of the VisualParameters:__
+#### __[C#] Example 1: Set the properties of the VisualParameters:__
 
-{{region cs-gridview-export-async_6}}
+{{region cs-gridview-export-html_1}}
 	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
@@ -56,10 +56,6 @@ You can read more about the export events [here]({%slug gridview-export-events%}
 
 ## See Also
 
- * [RadGridView Overview]({%slug gridview-overview2%})
-
- * [Export]({%slug gridview-export%})
-
- * [Export Async]({%slug gridview-export-async%})
-
- * [Export Events]({%slug gridview-export-events%})
+* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
+* [ExportToXlsx]({%slug gridview-export-xlsx%})
+* [ExportToPdf]({%slug gridview-export-pdf%})

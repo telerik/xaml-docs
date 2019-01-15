@@ -112,7 +112,8 @@ controls/radcombobox/howto/show-tooltip-on-trimmed-text.md,
 controls/radchat,
 cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
-controls/radnavigationview]
+controls/radnavigationview,
+controls/raddiagram/extensions/diagramribbon]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

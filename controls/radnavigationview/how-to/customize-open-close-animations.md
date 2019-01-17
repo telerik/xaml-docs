@@ -14,7 +14,7 @@ __RadNavigationView__ provides built in animations for opening and closing the N
 
 ## RadNavigationView Animations
 
-By default __RadNavigationView__ defines three animations named __ResizePaneAnimation__, __MinimalPaneOpenAnimation__ and __MinimalPaneCloseAnimation__. __Example 1__ demonstrate the default values of these animations.
+By default __RadNavigationView__ defines three animations named __ResizePaneAnimation__, __MinimalPaneOpenAnimation__ and __MinimalPaneCloseAnimation__. __Example 1__ demonstrates the default values of these animations.
 
 * __ResizePaneAnimation__: Played when the [DisplayMode]({%slug radnavigationview-display-mode%}) of the RadNavigationView is either __Compact__ or __Expanded__ and the NavigationPane is opened or closed.
 * __MinimalPaneOpenAnimation__: Played when the [DisplayMode]({%slug radnavigationview-display-mode%}) of the RadNavigationView is __Minimal__ and the NavigationPane is closed.
@@ -70,7 +70,7 @@ In order to customize the animations supported by RadNavigationView, you can [ex
     </Grid>
 {{endregion}}
 
-#### __Figure 1: Result from Example 2 in the Office2016 theme__
+#### __Figure 1: Result from Example 2 in the Fluent theme__
 ![NavigationPane slow animation](images/RadNavigationView_ResizeAnimation_Duration.gif)
 
 > In order for the animations to be played correctly the __AnimationName__ and __TargetElementName__ properties should not be modified.

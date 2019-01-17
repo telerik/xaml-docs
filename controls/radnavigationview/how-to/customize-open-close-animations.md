@@ -70,10 +70,12 @@ In order to customize the animations supported by RadNavigationView, you can [ex
     </Grid>
 {{endregion}}
 
-#### __Figure 1: Result from Example 2 in the Fluent theme__
+#### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![NavigationPane slow animation](images/RadNavigationView_ResizeAnimation_Duration.gif)
 
 > In order for the animations to be played correctly the __AnimationName__ and __TargetElementName__ properties should not be modified.
+
+>tip The animation namespace used in __Example 2__ corresponds to the following: xmlns:animation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls".
 
 ## See Also
 

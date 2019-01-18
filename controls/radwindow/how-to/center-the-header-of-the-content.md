@@ -10,85 +10,24 @@ position: 4
 
 # Center the Header of the RadWindow
 
-In order to allow the content in the header to be centered, you have to modify some elements in the __ControlTemplate__ of the __RadWindow__. Before continuing you might want to take a look at the template structure of the __RadWindow__. You might also find useful to learn [how to edit the default template of a control]({%slug styling-apperance-editing-control-templates%}).
+In order to allow the content in the header to be centered, you can set a UIElement (for example TextBlock) with HorizontalAlignment="Center" as the __Header__ of the RadWindow. This is demonstrated in __Example 1__.
 
-In the __ControlTemplate__ for the __RadWindow__, find the __Grid__ with name "Header". It should have a __StackPanel__ placed in its first column:
+#### __[XAML] Example 1: Centering the Header of the RadWindow__
 
-#### __XAML__
-
-{{region xaml-radwindow-how-to-center-the-header-of-the-content_0}}
-	<StackPanel Margin="2 0 0 0" Grid.Column="0" Orientation="Horizontal">
-	    <ContentPresenter x:Name="IconContent"
-	              HorizontalAlignment="Left"
-	              Margin="2"
-	              VerticalAlignment="Center"
-	              Content="{TemplateBinding Icon}"
-	              ContentTemplate="{TemplateBinding IconTemplate}" />
-	    <ContentPresenter x:Name="HeaderContent"
-	              HorizontalAlignment="Left"
-	              VerticalAlignment="Center"
-	              Content="{TemplateBinding Header}"
-	              ContentTemplate="{TemplateBinding HeaderTemplate}" />
-	</StackPanel>
+{{region xaml-radwindow-how-to-center-the-header-of-the-content-0}}
+	<telerik:RadWindow 
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		Width="380">
+    <telerik:RadWindow.Header>
+        <TextBlock Text="My Header" HorizontalAlignment="Center" />
+    </telerik:RadWindow.Header>
+</telerik:RadWindow>
 {{endregion}}
 
-Replace the __StackPanel__ with a __Grid__, having two columns. Place the __IconContent__ in the first column, then place the __HeaderContent__ in the second one and set the __HorizontalAlignment__ property of the __ContentPresenter__ to __Stretch__.
+#### __Figure 1: Result from Example 1 in the Office2016 theme__
+![RadWindow with Centered Header](images/RadWindow_How_To_Center_the_Header_01.png)
 
-#### __XAML__
-
-{{region xaml-radwindow-how-to-center-the-header-of-the-content_1}}
-	<Grid Margin="2 0 0 0" Grid.Column="0">
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="Auto" />
-	        <ColumnDefinition Width="*" />
-	    </Grid.ColumnDefinitions>
-	    <ContentPresenter x:Name="IconContent" 
-	              Grid.Column="0"
-	              HorizontalAlignment="Left"
-	              Margin="2"
-	              VerticalAlignment="Center"
-	              Content="{TemplateBinding Icon}"
-	              ContentTemplate="{TemplateBinding IconTemplate}" />
-	    <ContentPresenter x:Name="HeaderContent"
-	              Grid.Column="1"
-	              HorizontalAlignment="Stretch"
-	              VerticalAlignment="Center"
-	              Content="{TemplateBinding Header}"
-	              ContentTemplate="{TemplateBinding HeaderTemplate}" />
-	</Grid>
-{{endregion}}
-
-With this done, you can easily control the position of the content through the elements passed to the Header property:
-
-#### __C#__
-
-{{region cs-radwindow-how-to-center-the-header-of-the-content_2}}
-	TextBlock textBlock = new TextBlock();
-	textBlock.Text = "My RadWindow";
-	textBlock.HorizontalAlignment = HorizontalAlignment.Center;
-	RadWindow radWindow = new RadWindow();
-	radWindow.Width = 400;
-	radWindow.Height = 300;
-	radWindow.Style = this.Resources["RadWindowStyle"] as Style;
-	radWindow.Header = textBlock;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-how-to-center-the-header-of-the-content_3}}
-	Dim textBlock As New TextBlock()
-	textBlock.Text = "My RadWindow"
-	textBlock.HorizontalAlignment = HorizontalAlignment.Center
-	Dim radWindow As New RadWindow()
-	radWindow.Width = 400
-	radWindow.Height = 300
-	radWindow.Style = TryCast(Me.Resources("RadWindowStyle"), Style)
-	radWindow.Header = textBlock
-{{endregion}}
-
-Here is a snapshot of the final result:
-
-![](images/RadWindow_How_To_Center_the_Header_01.png)
+>tip Alternatively, you can also place the centered UIElement in the __HeaderTemplate__ of the RadWindow.
 
 ## See Also
 

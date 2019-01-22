@@ -171,5 +171,5 @@ The following list describes the tags used by the persistence manager.
 > All the brackets (lower-than and greater-than) in the XML are stored using the corresponding entity name - &amp;lt; and &amp;gt;
 
 ## See Also
-* [Getting Started]({%slug persistence-framework-getting-started%})	
-* [Cross Version Support]({%slug persistence-framework-cross-version-support%})			
+* [Getting Started]({%slug persistence-framework-getting-started%})
+* [Cross Version Support]({%slug persistence-framework-cross-version-support%})

@@ -133,6 +133,7 @@ The following topic explains the specifics of the theme's palette and features.
 * [Changing Corner Radius](#set-corner-radius)
 * [Visual Helpers](#visual-effects-helpers)
 * [Fluent Control](#fluent-control)
+* [Change ScrollBarMode](#change-scrollbarmode)
 
 ## Default Theme Colors
 
@@ -380,6 +381,26 @@ The following code snippets show how you can integrate the FluentControl with a 
 
 #### **Figure 6: FluentControl used within a custom template applied to a RadButton**  
 ![FluentControl used within a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![FluentControl used within a custom template applied to a RadButton in Dark variation](images/fluent-theme-dark-effect.gif)
+
+## Change ScrollBarMode
+
+By default scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __2019.1.121__ version of our dlls, you have the option of setting the __ScrollBarMode__ property of the Fluent palette in order to control this behavior. It is ot type __ScrollViewerScrollBarsMode__ and can be set to the following values: 
+
+*  **FluentPalette.ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+
+*  **FluentPalette.ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
+
+*  **FluentPalette.ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+
+#### **Figure 7: ScrollBar behavior in Auto, Compact and Normal ScrollBarMode**  
+![ScrollBar in Auto, Compact and Normal ScrollBarMode](images/fluent-light-scrollbarmode.gif)
+
+__Example 9__ demonstrates how the __ScrollBarMode__ property of the palette can be set.
+
+#### **[C#] Example 9: Setting the __ScrollBarMode__ property of the palette to Compact**
+{{region styling-appearance-fluent-theme-11}}	
+	FluentPalette.Palette.ScrollBarMode = FluentPalette.ScrollViewerScrollBarsMode.Compact;
+{{endregion}}
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

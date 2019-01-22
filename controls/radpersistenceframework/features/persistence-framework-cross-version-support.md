@@ -54,5 +54,5 @@ The __TypeRestored__ event allows you to manually restore the type of the deseri
 {{endregion}}
 
 ## See Also
-* [Getting Started]({%slug persistence-framework-getting-started%});
-* [Custom Property Provider]({%slug persistence-framework-custom-property-provider%});
+* [Getting Started]({%slug persistence-framework-getting-started%})
+* [Custom Property Provider]({%slug persistence-framework-custom-property-provider%})

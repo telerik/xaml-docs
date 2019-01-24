@@ -1,7 +1,7 @@
 ---
 title: Minimizing/Maximizing
 page_title: Minimizing/Maximizing
-description: Minimizing/Maximizing
+description: This article describes the Minimizing/Maximizing functionality of the RadWindow.
 slug: radwindow-features-minimizingmaximazing
 tags: minimizing/maximizing
 published: True

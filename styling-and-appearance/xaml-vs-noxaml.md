@@ -20,6 +20,8 @@ The __Xaml__ dlls can be found in the __Telerik UI for {{ site.framework_name }}
 
 The __NoXaml__ dlls can be found in the __Telerik UI for {{ site.framework_name }} installation folder/Binaries.NoXaml/__
 
+>important Mixing Xaml and NoXaml dlls is not supported. This works, but in some cases leads to visual or design-time issues. Use only one of the versions. 
+
 ## Xaml assemblies
 
 The Xaml dlls contain the same code as the NoXaml ones, but they hold also all the styles and templates of the UI controls, for all themes. This means that they are bigger in size compared to the NoXaml ones.

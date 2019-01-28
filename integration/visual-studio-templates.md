@@ -10,17 +10,17 @@ position: 2
 
 # Visual Studio Templates
 
-With the official Q1 2015 release of __Telerik UI for WPF__ the __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})__ provides few built in __Visual Studio Templates__. Now it is possible with just a few clicks to start building Windows inspired application. Currently you have the option to choose from the following templates: 
+The __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})__ provides few built in __Visual Studio Templates__. Now it is possible with just a few clicks to start building Windows inspired application. Currently you have the option to choose from the following templates: 
 
 * [Word-Inspired Template](#word-inspired-template)
 
 * [Excel-Inspired Template](#excel-inspired-template)
 
-* [Outlook-Inspired Template](#outlook-inspired-template) (available with Q2 2015 release version)
+* [Outlook-Inspired Template](#outlook-inspired-template)
 
-* [Outlook-Inspired Mail Template](#outlook-inspired-mail-template) (available with Q2 2015 release version)
+* [Outlook-Inspired Mail Template](#outlook-inspired-mail-template)
 
-* [Outlook-Inspired Calendar Template](#outlook-inspired-calendar-template) (available with Q2 2015 release version)
+* [Outlook-Inspired Calendar Template](#outlook-inspired-calendar-template)
 
 >All the templates are prepared with the __[Office 2013 theme]({%slug common-styling-appearance-office2013-theme%})__ and use __[Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})__.
 

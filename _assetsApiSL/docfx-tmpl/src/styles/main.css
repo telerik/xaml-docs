@@ -316,20 +316,13 @@ article h4 {
     margin-left: -15px;
   }
 
-  #navbar {
-    display: none;
-  }
-
-  nav.TK-Nav {
-    position: fixed; }
-
   span.all-components-expanded-icon {
     display: none; }
 }
 
 @media (max-width: 767px) {
   .article {
-    margin-top: 60px !important;
+    margin-top: 0px !important;
   }
   .article.grid-right {
     margin-left: -15px !important;
@@ -1749,7 +1742,7 @@ body .toc {
   -webkit-transition: padding-top .1s;
   transition: padding-top .1s;
   padding-top: 20px;
-  margin-left: 0 !important;
+  margin-left: 0px !important;
   padding-right: 30px;
   margin-bottom: 20px; }
   .scroll #navbar {
@@ -2187,7 +2180,26 @@ body .toc {
 
 /* ####################################################################################################### */
 
+@media (max-width: 767px) {
+  .global-search {
+    position: absolute;
+    left: 100px;
+  }
+
+  .article #navbar {
+    margin-left: -15px !important;
+  }
+}
+
 @media (min-width: 768px) {
+  .article .global-search {
+    margin-left: 0px;
+  }
+
+  .article #navbar {
+    padding-right: 0px;
+  }
+
   /* Styles for width >= 768px */
   #navbar select {
     display: none;
@@ -2723,30 +2735,6 @@ body .toc {
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   min-height: 0;
-}
-
-.glyphicon-filter:before {
-  content: "\e003" !important;
-}
-
-input#toc_filter_input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  content: "Search..."
-}
-
-input#toc_filter_input::-moz-placeholder {
-  /* Firefox 19+ */
-  content: "Search..."
-}
-
-input#toc_filter_input:-ms-input-placeholder {
-  /* IE 10+ */
-  content: "Search..."
-}
-
-input#toc_filter_input:-moz-placeholder {
-  /* Firefox 18- */
-  content: "Search..."
 }
 
 /* Generic Styles */

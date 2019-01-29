@@ -2737,30 +2737,6 @@ body .toc {
   min-height: 0;
 }
 
-.glyphicon-filter:before {
-  content: "\e003" !important;
-}
-
-input#toc_filter_input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  content: "Search..."
-}
-
-input#toc_filter_input::-moz-placeholder {
-  /* Firefox 19+ */
-  content: "Search..."
-}
-
-input#toc_filter_input:-ms-input-placeholder {
-  /* IE 10+ */
-  content: "Search..."
-}
-
-input#toc_filter_input:-moz-placeholder {
-  /* Firefox 18- */
-  content: "Search..."
-}
-
 /* Generic Styles */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {

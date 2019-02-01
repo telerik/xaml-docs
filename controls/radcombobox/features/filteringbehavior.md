@@ -35,7 +35,7 @@ Firstly you need to create a custom class that inherits the default __ComboBoxFi
 #### __C#__
 
 {{region radcombobox-features-filteringbehavior-0}}
-	public class StringLenghtFilteringBehavior : ComboBoxFilteringBehavior
+	public class StringLengthFilteringBehavior : ComboBoxFilteringBehavior
 	{
 	
 	}
@@ -44,7 +44,7 @@ Firstly you need to create a custom class that inherits the default __ComboBoxFi
 #### __VB__
 
 {{region radcombobox-features-filteringbehavior-0}}
-	Public Class StringLenghtFilteringBehavior
+	Public Class StringLengthFilteringBehavior
 		Inherits ComboBoxFilteringBehavior
 	End Class
 {{endregion}}
@@ -54,12 +54,12 @@ Next thing you have to do is to override the __FindMatchingIndexes()__ method th
 #### __C#__
 
 {{region radcombobox-features-filteringbehavior-1}}
-	private int charLenght;
+	private int charLength;
 	public override List<int> FindMatchingIndexes(string text)
 	{
-		if (int.TryParse(text, out this.charLenght))
+		if (int.TryParse(text, out this.charLength))
 		{
-			return this.ComboBox.Items.OfType<DataItem>().Where(i => i.Title.Length >= this.charLenght).Select(i => this.ComboBox.Items.IndexOf(i)).ToList();
+			return this.ComboBox.Items.OfType<DataItem>().Where(i => i.Title.Length >= this.charLength).Select(i => this.ComboBox.Items.IndexOf(i)).ToList();
 		}
 		return new List<int>();
 	}
@@ -68,10 +68,10 @@ Next thing you have to do is to override the __FindMatchingIndexes()__ method th
 #### __VB__
 
 {{region radcombobox-features-filteringbehavior-1}}
-	Private charLenght As Integer
+	Private charLength As Integer
 	Public Overrides Function FindMatchingIndexes(ByVal text As String) As List(Of Integer)
-		If Integer.TryParse(text, Me.charLenght) Then
-			Return Me.ComboBox.Items.OfType(Of DataItem)().Where(Function(i) i.Title.Length >= Me.charLenght).Select(Function(i) Me.ComboBox.Items.IndexOf(i)).ToList()
+		If Integer.TryParse(text, Me.charLength) Then
+			Return Me.ComboBox.Items.OfType(Of DataItem)().Where(Function(i) i.Title.Length >= Me.charLength).Select(Function(i) Me.ComboBox.Items.IndexOf(i)).ToList()
 		End If
 		Return New List(Of Integer)()
 	End Function
@@ -84,7 +84,7 @@ The __FindFullMatchIndex()__ method also needs to be overridden. It should retur
 {{region radcombobox-features-filteringbehavior-2}}
 	public override int FindFullMatchIndex(ReadOnlyCollection<int> matchIndexes)
 	{
-		var fullMatch = this.ComboBox.Items.OfType<DataItem>().FirstOrDefault(i => i.Title.Length == charLenght);
+		var fullMatch = this.ComboBox.Items.OfType<DataItem>().FirstOrDefault(i => i.Title.Length == charLength);
 		if (fullMatch == null)
 		{
 			return -1;
@@ -102,7 +102,7 @@ The __FindFullMatchIndex()__ method also needs to be overridden. It should retur
 
 {{region radcombobox-features-filteringbehavior-2}}
 	Public Overrides Function FindFullMatchIndex(ByVal matchIndexes As ReadOnlyCollection(Of Integer)) As Integer
-		Dim fullMatch = Me.ComboBox.Items.OfType(Of DataItem)().FirstOrDefault(Function(i) i.Title.Length = charLenght)
+		Dim fullMatch = Me.ComboBox.Items.OfType(Of DataItem)().FirstOrDefault(Function(i) i.Title.Length = charLength)
 		If fullMatch Is Nothing Then
 			Return -1
 		End If

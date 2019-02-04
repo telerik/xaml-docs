@@ -121,3 +121,86 @@ The example below demonstrates the cooperation between the RadLegend and RadCart
 ![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-1.png)
 
 > If the default LegendItem objects created by the chart doesn't work for your scenario, you can manually populate the legend instead of using the __LegendItems__ collection. Read the [Getting Started]({%slug radlegend-getting-started%}) article of RadLegend to see how to populate the control with LegendItem objects manually.
+
+## Using RadLegend with SeriesProvider
+
+When using SeriesProvider, you can define the legend settings object via the Style of the series or the [SeriesCreated]({%slug radchartview-features-chartseriesprovider%}#events) event. The following example shows how to set up a SeriesProvider and add SeriesLegendSettings for each series.
+
+#### __[XAML] Example 3: Defining the view__  
+{{region radchartview-features-radlegend-support_2}}
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+		
+		<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
+			<telerik:RadCartesianChart.VerticalAxis>
+				<telerik:LinearAxis />
+			</telerik:RadCartesianChart.VerticalAxis>
+			<telerik:RadCartesianChart.HorizontalAxis>
+				<telerik:CategoricalAxis />
+			</telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:RadCartesianChart.SeriesProvider>
+				<telerik:ChartSeriesProvider x:Name="seriesProvider">
+					<telerik:CategoricalSeriesDescriptor CategoryPath="Category" ValuePath="Value" ItemsSourcePath="Items">
+						<telerik:CategoricalSeriesDescriptor.Style>
+							<!-- If you use NoXaml, please set the following property on the Style - BasedOn="{StaticResource PointSeriesStyle}" -->
+							<Style TargetType="telerik:PointSeries">
+								<Setter Property="LegendSettings">
+									<Setter.Value>
+										<telerik:SeriesLegendSettings Title="{Binding SeriesName}" />
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</telerik:CategoricalSeriesDescriptor.Style>
+					</telerik:CategoricalSeriesDescriptor>
+				</telerik:ChartSeriesProvider>
+			</telerik:RadCartesianChart.SeriesProvider>
+		</telerik:RadCartesianChart>
+
+		<telerik:RadLegend Items="{Binding ElementName=chart, Path=LegendItems}" Grid.Column="1"/>
+	</Grid>
+{{endregion}}
+
+#### __[C#] Example 4: Defining the models__  
+{{region radchartview-features-radlegend-support_3}}
+	public class SeriesInfo
+    {
+        public string SeriesName { get; set; }
+        public ObservableCollection<PlotInfo> Items { get; set; }
+    }
+
+    public class PlotInfo
+    {
+        public double Value { get; set; }
+        public string Category { get; set; }
+    }
+{{endregion}}
+
+#### __[C#] Example 5: Populating with data__  
+{{region radchartview-features-radlegend-support_4}}
+	private static Random r = new Random();
+	private ObservableCollection<SeriesInfo> GetData()
+	{
+		var source = new ObservableCollection<SeriesInfo>();
+		for (int i = 0; i < 5; i++)
+		{
+			var seriesInfo = new SeriesInfo() { SeriesName = "Series " + i,  Items = new ObservableCollection<PlotInfo>() };
+			for (int k = 0; k < 10; k++)
+			{
+				seriesInfo.Items.Add(new PlotInfo() { Category = "C" + k, Value = r.Next(100, 300) });
+			}
+			source.Add(seriesInfo);
+		}
+
+		return source;
+	}
+{{endregion}}
+
+#### __[C#] Example 6: Setting the SeriesProvider Source__  
+{{region radchartview-features-radlegend-support_5}}
+	this.seriesProvider.Source = GetData();
+{{endregion}}
+
+![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-2.png)

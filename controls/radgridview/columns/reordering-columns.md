@@ -106,7 +106,7 @@ The order of the columns may also be configured by setting the __DisplayIndex__ 
 
 In this case the columns will be visualized in the following order - Name, Country and Number.
 
-> It is recommended that the __DisplayIndex__ values form an integer sequence.
+> It is recommended that the __DisplayIndex__ values form an integer sequence. For example: 1,2,3,4,5 etc.
 
 ## Scrolling Behavior while Reordering
 

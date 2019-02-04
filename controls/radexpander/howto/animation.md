@@ -1,7 +1,7 @@
 ---
-title: Expander Animation
-page_title: Expander Animation
-description: Expander Animation
+title: Customize Expander Animation
+page_title: Customize Expander Animation
+description: This article shows how to disable or enable and also customize the RadExpander default expand/collapse animations.
 slug: radexpander-howto-animation
 tags: expander,animation
 published: True
@@ -10,88 +10,69 @@ position: 1
 
 # Expander Animation
 
-## Animating the RadExpander control.
+The RadExpander control has an animation enabled by default. 
 
-To enable or disable the animation you can use the __IsAnimationEnabled__ attached property of the __AnimationManager__ class. By default the __Animation__ is enabled for the __RadExpander__. Below are code-snippets for XAML and C#:
+To disable or enable the animation set the __AnimationManager.IsAnimationEnabled__ attached property on RadExpander. 
 
-#### __XAML__
+#### __[XAML] Example 1: Disabling animation in XAML__
 {{region radexpander-howto-animation_0}}
-    <StackPanel Orientation="Horizontal">
-        <!--  DISABLE the Animation:  -->
-        <telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="False" />
-        <!--  ENABLE the Animation:  -->
-        <telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="True" />
-    </StackPanel>
+	<telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="False" />
 {{endregion}}
 
-#### __C#__
-{{region radexpander-howto-animation_1}}
-    using Telerik.Windows.Controls.Animation;
-    private void SetAnimation()
-    {
-        if (this.radExpander != null)
-        {
-            AnimationManager.SetIsAnimationEnabled(this.radExpander, false);
-            // some code...
-            AnimationManager.SetIsAnimationEnabled(this.radExpander, true);
-            // some code...
-        }
-    }
+#### __[C#] Example 2: Disabling animation in code__
+{{region radexpander-howto-animation_1}}        
+	AnimationManager.SetIsAnimationEnabled(this.radExpander, false);
 {{endregion}}
 
-#### __VB.NET__
-{{region radexpander-howto-animation_2}}
-    Imports Telerik.Windows.Controls.Animation
-    Private Sub SetAnimation()
-        If Me.radExpander IsNot Nothing Then
-            AnimationManager.SetIsAnimationEnabled(Me.radExpander, False)
-            ' some code...'
-            AnimationManager.SetIsAnimationEnabled(Me.radExpander, True)
-            ' some code...'
-        End If
-    End Sub
+#### __[VB.NET] Example 2: Disabling animation in code__
+{{region radexpander-howto-animation_2}}    
+	AnimationManager.SetIsAnimationEnabled(Me.radExpander, False)            
 {{endregion}}
 
-You can further edit the default animations of the __RadExpander__ using the __AnimationSelector__ attached property of the __AnimationManager__ class. By default the following animations are defined for the __RadExpander__ control:				
+## Customize Animations
 
-#### __XAML__
+To customize the RadExpander animations use the __AnimationManager.AnimationSelector__ property. The supported animation class is ExpanderExpandCollapseAnimation which exposes few properties to customize the animation
+
+#### __[XAML] Example 3: Change the speed of the animations using the SpeedRation property (when ExpandDirection is Up or Down)__
 {{region radexpander-howto-animation_3}}
-    <Style x:Key="RadExpanderStyle" TargetType="telerik:RadExpander">
-          ...  
-        <Setter Property="telerik:AnimationManager.AnimationSelector">
-            <Setter.Value>
-                <telerik:AnimationSelector>
-                    <telerik:ExpanderExpandCollapseAnimation AnimationName="Expand" 
-                                                             Direction="In"
-                                                             TargetElementName="Content" />
-                    <telerik:ExpanderExpandCollapseAnimation AnimationName="Collapse" 
-                                                             Direction="Out"
-                                                             TargetElementName="Content" />
-                </telerik:AnimationSelector>
-            </Setter.Value>
-        </Setter>
-    </Style>
+	<telerik:RadExpander>
+		<telerik:AnimationManager.AnimationSelector>
+			<telerik:AnimationSelector>
+				<telerik:ExpanderExpandCollapseAnimation AnimationName="Expand" 
+														 Direction="In"
+														 SpeedRatio="0.2"
+														 TargetElementName="Content" />
+				<telerik:ExpanderExpandCollapseAnimation AnimationName="Collapse" 
+														 Direction="Out"
+														 SpeedRatio="0.2"
+														 TargetElementName="Content" />
+			</telerik:AnimationSelector>
+		</telerik:AnimationManager.AnimationSelector>
+	</telerik:RadExpander>
 {{endregion}}
 
-You can control the speed of the animations through the __SpeedRatio__ property:				
+> The previous code snippet is applicable only when the ExpandState property of RadExpander is set to Up or Down.
 
-#### __XAML__
+When the ExpandState property is set to Right or Left you need to use a different AnimationNames for the ExpanderExpandCollapseAnimation objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
+
+#### __[XAML] Example 4: Change the speed of the animations using the SpeedRation property (when ExpandDirection is Right or Left)__
 {{region radexpander-howto-animation_4}}
-    <Style x:Key="RadExpanderStyle" TargetType="telerik:RadExpander">
-          ...  
-        <Setter Property="telerik:AnimationManager.AnimationSelector">
-            <Setter.Value>
-                <telerik:AnimationSelector>
-                    <telerik:ExpanderExpandCollapseAnimation AnimationName="Expand" 
-                                                             Direction="In"
-                                                             SpeedRatio="0.2"
-                                                             TargetElementName="Content" />
-                    <telerik:ExpanderExpandCollapseAnimation AnimationName="Collapse" 
-                                                             Direction="Out"
-                                                             SpeedRatio="0.2"
-                                                             TargetElementName="Content" />
-                </telerik:AnimationSelector>
-            </Setter.Value>
-        </Setter>
-    </Style>
+	<telerik:RadExpander>
+		<telerik:AnimationManager.AnimationSelector>
+			<telerik:AnimationSelector>
+				<telerik:ExpanderExpandCollapseAnimation AnimationName="ExpandHorizontal" 
+														 Direction="In"
+														 SpeedRatio="0.2"
+														 TargetElementName="Content" />
+				<telerik:ExpanderExpandCollapseAnimation AnimationName="CollapseHorizontal" 
+														 Direction="Out"
+														 SpeedRatio="0.2"
+														 TargetElementName="Content" />
+			</telerik:AnimationSelector>
+		</telerik:AnimationManager.AnimationSelector>
+	</telerik:RadExpander>
 {{endregion}}
+
+## See Also
+* [Getting Started]({%slug expander-getting-started%})
+* [Expand Direction]({%slug radexpander-features-expand_direction%})

@@ -1,7 +1,7 @@
 ---
 title: Selected Row Background
 page_title: Selected Row Background
-description: Selected Row Background
+description: RadGridView provides support for changing the background of its selected row through SelectedBackground property.
 slug: radgridview-rows-selected-background
 tags: selected,row,background
 published: True

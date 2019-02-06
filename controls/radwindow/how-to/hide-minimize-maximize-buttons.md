@@ -12,23 +12,32 @@ position: 3
 
 If you want to hide the Minimize and Maximize buttons you have two options:
 
+* [Set the HideMinimizeButton and HideMaximizeButton properties](#set-the-hideminimizebutton-and-hidemaximizebutton-properties)
+
 * [Use the ResizeMode property](#use-the-resizemode-property)
 
-* [Hide the buttons in the RadWindow's ControlTemplate](#hide-the-buttons-in-the-radwindows-controltemplate)
+## Set the HideMinimizeButton and HideMaximizeButton properties
+
+The easiest way to hide the minimize or maximize buttons is to set the __HideMinimizeButton__ and __HideMaximizeButton__ properties respectively. This is demonstrated in __Example 1__. 
+
+#### __[XAML] Example 1: Hiding the Minimize and Maximize Buttons__
+
+{{region xaml-radwindow-how-to-hide-minimize-maximize-buttons-0}}
+	<telerik:RadWindow 
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        HideMaximizeButton="True" 
+        HideMinimizeButton="True"
+		Header="MainWindow" />
+{{endregion}}
+
+#### __Figure 1: Result from Example 1 in the Office2016 theme__
+![RadWindow without Maximize and Minimize buttons](images/RadWindow_Hide_Maximize_And_Minimize.png)
 
 ## Use the ResizeMode property
 
 By setting the __ResizeMode__ property to __CanMinimize__ only the __Minimize__ button will be visible. The resize button will get hidden and the resizing will get disabled. By setting the __ResizeMode__ property to __NoResize__ both the Minimize and the Maximize buttons will get hidden, the resizing will also get disabled. 
 
->If you want to hide these buttons without affecting the resizing functionality, consider using the approach explained below.
-
 To learn more about resizing the __RadWindow__ read [here]({%slug radwindow-features-resizing%}).
-
-## Hide the buttons in the RadWindow's ControlTemplate
-
-Before continuing you have to get familiar with the [RadWindow's template structure]({%slug radwindow-styles-and-templates-template-structure%}) and [how to edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
-
-After getting familiar with the template and preparing it for editing, the only thing left is to locate the __Button__ controls that represent the __Minimize__ and the __Maximize__ buttons and to set their __Visibility__ to __Collapsed__. These buttons have their __Name__ properties set to __PART_MinimizeButton__ and __PART_MaximizeButton__.
 
 ## See Also
 

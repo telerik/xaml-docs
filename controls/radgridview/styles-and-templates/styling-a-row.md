@@ -18,7 +18,7 @@ In this article we will discuss the following topics:
 
 * [Targeting the GridViewRow Element](#targeting-the-gridviewrow-element)
 
-* [Setting RadGridView's RowStyle and AlternateRowsStyle](#setting-radgridviews-rowstyle-and-alternaterowsstyle)
+* [Setting RadGridView's RowStyle and AlternateRowsStyle](#setting-radgridviews-rowstyle-and-alternaterowstyle)
 
 * [Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector](#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector)
 

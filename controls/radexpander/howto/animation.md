@@ -12,7 +12,7 @@ position: 1
 
 The RadExpander control has an animation enabled by default. 
 
-To disable or enable the animation set the __AnimationManager.IsAnimationEnabled__ attached property on RadExpander. 
+To disable or enable the animation, set the __AnimationManager.IsAnimationEnabled__ attached property on RadExpander. 
 
 #### __[XAML] Example 1: Disabling animation in XAML__
 {{region radexpander-howto-animation_0}}
@@ -31,9 +31,9 @@ To disable or enable the animation set the __AnimationManager.IsAnimationEnabled
 
 ## Customize Animations
 
-To customize the RadExpander animations use the __AnimationManager.AnimationSelector__ property. The supported animation class is ExpanderExpandCollapseAnimation which exposes few properties to customize the animation
+To customize RadExpander animations, use the __AnimationManager.AnimationSelector__ property. The supported animation class is ExpanderExpandCollapseAnimation which exposes few properties to customize the animation.
 
-#### __[XAML] Example 3: Change the speed of the animations using the SpeedRation property (when ExpandDirection is Up or Down)__
+#### __[XAML] Example 3: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Up or Down)__
 {{region radexpander-howto-animation_3}}
 	<telerik:RadExpander>
 		<telerik:AnimationManager.AnimationSelector>
@@ -53,9 +53,9 @@ To customize the RadExpander animations use the __AnimationManager.AnimationSele
 
 > The previous code snippet is applicable only when the ExpandState property of RadExpander is set to Up or Down.
 
-When the ExpandState property is set to Right or Left you need to use a different AnimationNames for the ExpanderExpandCollapseAnimation objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
+When the ExpandState property is set to Right or Left you need to use different AnimationNames for the ExpanderExpandCollapseAnimation objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
 
-#### __[XAML] Example 4: Change the speed of the animations using the SpeedRation property (when ExpandDirection is Right or Left)__
+#### __[XAML] Example 4: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Right or Left)__
 {{region radexpander-howto-animation_4}}
 	<telerik:RadExpander>
 		<telerik:AnimationManager.AnimationSelector>

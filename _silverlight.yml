@@ -114,7 +114,8 @@ controls/radchat,
 cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
 controls/radnavigationview,
-controls/raddiagram/extensions/diagramribbon]
+controls/raddiagram/extensions/diagramribbon,
+knowledge-base/*]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

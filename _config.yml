@@ -3225,6 +3225,11 @@ defaults:
     values:
         layout: "documentation"
         category: "default"
+-
+    scope:
+        path: "knowledge-base"
+    values:
+        res_type: "kb"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
@@ -3285,7 +3290,6 @@ footer_social:
     twitter: https://twitter.com/Telerik/ 
 
 api_reference_url: "api/"
-
 
 intro_columns:
 -

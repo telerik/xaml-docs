@@ -15,36 +15,31 @@ RadChartView provides a group of scatter series that can be plotted on two linea
 #### __XAML__
 
 {{region radchart-series-scatterseries_0}}
-	<telerikChart:RadCartesianChart>
-	   <telerikChart:RadCartesianChart.HorizontalAxis>
-	      <telerikChart:LinearAxis/>
-	   </telerikChart:RadCartesianChart.HorizontalAxis>
+	<telerik:RadCartesianChart>
+	   <telerik:RadCartesianChart.HorizontalAxis>
+	      <telerik:LinearAxis/>
+	   </telerik:RadCartesianChart.HorizontalAxis>
 	
-	   <telerikChart:RadCartesianChart.VerticalAxis>
-	      <telerikChart:LinearAxis/>
-	   </telerikChart:RadCartesianChart.VerticalAxis>
+	   <telerik:RadCartesianChart.VerticalAxis>
+	      <telerik:LinearAxis/>
+	   </telerik:RadCartesianChart.VerticalAxis>
 	
-	   <telerikChart:ScatterPointSeries>
-	      <telerikChart:ScatterPointSeries.PointTemplate>
+	   <telerik:ScatterPointSeries>
+	      <telerik:ScatterPointSeries.PointTemplate>
 	         <DataTemplate>
-	            <Ellipse Width="5"
-	                     Height="5"
-	                     Fill="Green"/>
+	            <Ellipse Width="5" Height="5" Fill="Green"/>
 	         </DataTemplate>
-	      </telerikChart:ScatterPointSeries.PointTemplate>
+	      </telerik:ScatterPointSeries.PointTemplate>
 	
-	      <telerikChartEngine:ScatterDataPoint XValue="2"
-	                                           YValue="1"/>
-	      <telerikChartEngine:ScatterDataPoint XValue="5"
-	                                           YValue="2"/>
-	      <telerikChartEngine:ScatterDataPoint XValue="6"
-	                                           YValue="4"/>
-	      <telerikChartEngine:ScatterDataPoint XValue="3"
-	                                           YValue="2"/>
-	      <telerikChartEngine:ScatterDataPoint XValue="4"
-	                                           YValue="3"/>
-	   </telerikChart:ScatterPointSeries>
-	</telerikChart:RadCartesianChart>
+	      <telerik:ScatterDataPoint.DataPoints>
+		      <telerik:ScatterDataPoint XValue="2" YValue="1"/>
+		      <telerik:ScatterDataPoint XValue="5" YValue="2"/>
+		      <telerik:ScatterDataPoint XValue="6" YValue="4"/>
+		      <telerik:ScatterDataPoint XValue="3" YValue="2"/>
+		      <telerik:ScatterDataPoint XValue="4" YValue="3"/>
+	      </telerik:ScatterDataPoint.DataPoints>
+	   </telerik:ScatterPointSeries>
+	</telerik:RadCartesianChart>
 {{endregion}}
 
 All scatter series have __XValueBinding__ and __YValueBinding__  properties which work in the same way as the [CategoryBinding and ValueBinding]({%slug radchartview-series-databinding%}) properties of the CategoricalAxis.

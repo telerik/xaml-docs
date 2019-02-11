@@ -78,7 +78,7 @@ You can also attach a connection to a source and target shape using the __RadDia
 
 You can control the connection type through the __ConnectionType__ property. As an enumeration of type  __Telerik.Windows.Diagrams.Core.ConnectionType__, it exposes the following members:		
 
-* __Polyline__: This enumeration type allows you to define multiple points, a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.			
+* __Polyline__: This connection type allows you to define multiple points, a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.			
 
 	#### __XAML__
 	{{region raddiagram-features-connections-6}}

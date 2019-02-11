@@ -1,7 +1,7 @@
 ---
 title: StackOverflowException on selecting all distinct values
 page_title: StackOverflowException on selecting all distinct values
-description: StackOverflowException on selecting all distinct values
+description: Learn how to deal with StackOverflowException thrown by the .NET Framework when selecting all distinct values in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-filtering-faq-stackoverflow-exception
 tags: stackoverflowexception,on,selecting,all,distinct,values
 published: True

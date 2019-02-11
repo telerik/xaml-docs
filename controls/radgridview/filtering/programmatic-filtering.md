@@ -1,14 +1,14 @@
 ---
 title: Programmatic Filtering
-page_title: Programmatic Filtering
-description: Programmatic Filtering
+page_title: Filter Programmatically
+description: Read this article to learn how to filter programmatically in Telerik's WPF DataGrid through different filter descriptors.
 slug: gridview-programmatic-filtering
 tags: programmatic,filtering
 published: False
 position: 1
 ---
 
-# Programmatic Filtering
+# Filter Programmatically
 
 Besides the built-in filtering functionality you are able to use a programmatic approach to filter the data in the __RadGridView__. This is achieved via the __FilterDescriptors__ property of the __RadGridView__. This collection stores filter descriptors that implement the __IFilterDescriptor__ interface. The most important classes that implement this interface directly or not are:
 

@@ -1,7 +1,7 @@
 ---
 title: Set the Current Cell
 page_title: Set the Current Cell
-description: This article explains how to set the current cell of the RadGridView control by using the CurrentCellInfo class.
+description: Learn how to set the current cell of the Telerik WPF DataGrid by specifying an item from the Items collection and a column from the Columns collection.
 slug: gridview-how-to-set-current-cell
 tags: set,the,current,cell
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling Group Footers
 page_title: Styling Group Footers
-description: Styling Group Footers
+description: Get started with Telerik's WPF DataGrid and learn how to style the GroupFooterRow element.
 slug: gridview-styles-and-templates-styling-group-footers
 tags: styling,group,footers
 published: True

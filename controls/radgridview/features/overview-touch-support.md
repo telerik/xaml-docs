@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: Touch Support
+description: Read this article to learn more about the touch gestures supported by RadGridView - Telerik's WPF DataGrid. 
 slug: gridview-overview-touch-support
 tags: touch,support
 published: True
@@ -13,7 +13,7 @@ position: 12
 
 This article describes the touch support implemented in RadGridView
 
-RadGridView now provide touch support. To learn more about Touch Support of RadControls please read the common topic about [Touch Support]({%slug touch-support%}).
+RadGridView now provides touch support. To learn more about Touch Support of RadControls please read the common topic about [Touch Support]({%slug touch-support%}).
       
 
 ## Supported Touch Gestures

@@ -1,7 +1,7 @@
 ---
 title: Wrap text in column header
 page_title: Wrap text in column header
-description: Wrap text in column header
+description: Check out how you can wrap the text of the column header and have a multi-line header within RadGridView - Telerik's WPF DataGrid.
 slug: gridview-howto-wrap-text-column-header
 tags: wrap,text,in,column,header
 published: True

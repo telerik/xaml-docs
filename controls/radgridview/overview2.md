@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: RadGridView is the ultimate grid control that provides outstanding performance and a remarkably flexible hierarchy model.
+description: Create fully customizable and highly interactive interfaces for display and management of large data with RadGridView - Telerik's WPF DataGrid.
 slug: gridview-overview2
 tags: overview
 published: True
@@ -12,7 +12,7 @@ position: 0
 
 {% if site.site_name == 'Silverlight' %}![](images/RadGridView_SL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadGridView_WPF.png){% endif %}
 
-Thank you for choosing __RadGridView__!
+Thank you for choosing __RadGridView__ - Telerik's WPF DataGrid!
 
 __RadGridView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is the ultimate grid control that provides outstanding performance and a remarkably flexible hierarchy model. __RadGridView__ enables you to create fully customizable and highly interactive interfaces for display and management of large data. ![](images/RadGridView_Overview_2.png)
 

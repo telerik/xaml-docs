@@ -1,7 +1,7 @@
 ---
 title: Managing Data
 page_title: Managing Data
-description: Managing Data
+description: Learn how to manage data in Telerik's WPF DataGrid through execution of Insert, Update and Delete operations, data validation and other methods.
 slug: gridview-overview-managing-data
 tags: managing,data
 published: True

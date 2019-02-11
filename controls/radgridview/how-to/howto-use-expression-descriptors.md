@@ -1,14 +1,14 @@
 ---
 title: Use expression descriptors
-page_title: Use expression descriptors
-description: Use expression descriptors
+page_title: Use Expression Descriptors
+description: Learn how to create generic expression descriptors (SortDescriptor, GroupDescriptors and FilterDescriptors) for RadGridView - Telerik's WPF DataGrid.
 slug: gridview-howto-use-expression-descriptors
 tags: use,expression,descriptors
 published: True
 position: 15
 ---
 
-# Use expression descriptors
+# Use Expression Descriptors
 
 This help article will show you how to create generic expression descriptors (SortDescriptor<T>, GroupDescriptors<T> and FilterDescriptors<T>) for __RadGridView__.
 

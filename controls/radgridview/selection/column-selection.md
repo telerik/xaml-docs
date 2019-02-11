@@ -1,7 +1,7 @@
 ---
 title: Column Selection
 page_title: Column Selection
-description: Column Selection
+description: Get started with Telerik's WPF DataGrid and learn about the three approaches to adding entire columns to the grid's selection.
 slug: gridview-column-selection
 tags: column,selection
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ExportToWorkbook
 page_title: ExportToWorkbook
-description: ExportToWorkbook
+description: Read about the ExportToWorkbook functionality of Telerik's WPF DataGrid used to modify the content of the exported grid and avoid styling the document manually.
 slug: gridview-export-workbook
 tags: gridview,export,workbook
 published: True

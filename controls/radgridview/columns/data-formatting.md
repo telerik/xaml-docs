@@ -1,7 +1,7 @@
 ---
 title: Data Formatting
 page_title: Data Formatting
-description: Data Formatting
+description: Learn how to format data in Telerik's WPF DataGrid by specifying an appropriate format string and assigning it to the DataFormatString property.
 slug: gridview-columns-data-formatting
 tags: data,formatting
 published: True

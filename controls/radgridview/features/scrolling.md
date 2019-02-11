@@ -1,7 +1,7 @@
 ---
 title: Scrolling
 page_title: Scrolling
-description: Scrolling
+description: Learn more about the default scrolling mechanism of Telerik's WPF DataGrid and the options to additionally configure it for a better user experience.
 slug: gridview-scrolling
 tags: scrolling
 published: True

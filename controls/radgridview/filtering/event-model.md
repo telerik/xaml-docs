@@ -1,7 +1,7 @@
 ---
 title: Event Model
 page_title: Event Model
-description: Event Model
+description: Learn more about the rich filtering event model of Telerik's WPF DataGrid that allows customization and configuration of the default filtering behavior.
 slug: gridview-filtering-event-model
 tags: event,model
 published: True

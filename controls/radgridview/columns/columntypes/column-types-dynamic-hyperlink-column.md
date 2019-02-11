@@ -1,7 +1,7 @@
 ---
 title: Dynamic Hyperlink Column
 page_title: Dynamic Hyperlink Column
-description: Dynamic Hyperlink Column
+description: Check out the properties of the Dynamic Hyperlink Column in Telerik's WPF DataGrid and see how you can specify a URL for the hyperlink that hosts the content.
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
 published: True

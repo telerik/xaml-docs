@@ -1,7 +1,7 @@
 ---
 title: Configure the Data Bindings
 page_title: Configure the Data Bindings
-description: This article demonstrates how to bind RadGridView to a collection of items and configure the data bindings for its columns.
+description: Read this article demonstrating how to bind Telerik's WPF DataGrid to a collection of items and configure the data bindings for its columns.
 slug: gridview-configuring-the-databindings
 tags: configure,the,data,bindings
 published: True

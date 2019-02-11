@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check out our tutorial that will walk you through the creation of a sample application containing RadGridView - Telerik's WPF DataGrid.
 slug: gridview-getting-started2
 tags: getting,started
 published: True

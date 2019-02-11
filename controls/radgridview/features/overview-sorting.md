@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Sorting
+description: Learn how you can easily sort grid data by one of the columns thanks to the sorting functionality of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-overview-sorting
 tags: sorting
 published: True

@@ -1,14 +1,14 @@
 ---
 title: Delete
-page_title: Delete
-description: Delete
+page_title: Delete Events
+description: Learn more about the delete events of Telerik's WPF DataGrid that occur when data is about to be deleted or has been already deleted by the user.
 slug: gridview-events-delete
 tags: delete
 published: True
 position: 3
 ---
 
-# Delete
+# Delete Events
 
 The delete events are ment to support the deleting data process. They occur when the data in the __RadGridView__ is about to be deleted or has been already deleted by the user.
 

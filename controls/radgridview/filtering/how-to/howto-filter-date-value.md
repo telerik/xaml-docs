@@ -1,7 +1,7 @@
 ---
 title: Filter on Date value only
 page_title: Filter on Date value only
-description: Filter on Date value only
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to filter on date value only.
 slug: gridview-filtering-howto-filter-date-value
 tags: filter,on,date,value,only
 published: True

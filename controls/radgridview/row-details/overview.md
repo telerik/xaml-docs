@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Row Details Overview
 description: Overview
 slug: radgridview-row-details-overview
 tags: overview
@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# Row Details Overview
 
 Each __RadGridView__ row is capable of presenting additional information by means of a __Row Details__. The __Row Details__ is a __DataTemplate__ defined on the grid- or row-level and is used for displaying data without affecting the dimensions of the row and the cells within it.
 

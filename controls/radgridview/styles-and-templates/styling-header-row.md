@@ -1,7 +1,7 @@
 ---
 title: Styling Header Row
 page_title: Styling Header Row
-description: Styling Header Row
+description: Get started with Telerik's WPF DataGrid and learn how to style the HeaderRow element.
 slug: gridview-styling-header-row
 tags: styling,header,row
 published: True

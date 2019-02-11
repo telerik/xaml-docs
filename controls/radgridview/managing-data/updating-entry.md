@@ -1,7 +1,7 @@
 ---
 title: Updating an Entry
 page_title: Updating an Entry
-description: Updating an Entry
+description: Learn about the three ways of updating a row in Telerik's WPF DataGrid that allow you to edit all of the fields in that row.
 slug: gridview-managing-data-updating-entry
 tags: updating,an,entry
 published: True

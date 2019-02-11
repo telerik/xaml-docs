@@ -1,7 +1,7 @@
 ---
 title: Styling Group Row
 page_title: Styling Group Row
-description: Styling Group Row
+description: Get started with Telerik's WPF DataGrid and learn how to style the GroupRow element.
 slug: gridview-styling-group-row
 tags: styling,group,row
 published: True

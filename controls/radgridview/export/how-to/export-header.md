@@ -1,7 +1,7 @@
 ---
 title: Export Custom Header
 page_title: Export Custom Header
-description: Export Custom Header
+description: Read this article to learn how to define the value of a custom header in Telerik's WPF DataGrid in order to export it correctly.
 slug: gridview-export-troubleshooting-export-header
 tags: export,custom,header
 published: True

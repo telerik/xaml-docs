@@ -1,7 +1,7 @@
 ---
 title: CellStyleSelector
 page_title: CellStyleSelector
-description: CellStyleSelector
+description: Learn how to style grid cells conditionally by using the CellStyleSelector property of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-cell-style-selector
 tags: cellstyleselector
 published: True

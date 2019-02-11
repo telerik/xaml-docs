@@ -1,7 +1,7 @@
 ---
 title: Applied DataFormatString on a Column
 page_title: Applied DataFormatString on a Column
-description: Applied DataFormatString on a Column
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn why DataFormatString is used for presentation purposes only.
 slug: gridview-filtering-faq-dataformatstring-and-filtering
 tags: applied,dataformatstring,on,a,column
 published: True

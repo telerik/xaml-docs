@@ -1,7 +1,7 @@
 ---
 title: Masked TextBox Column
 page_title: Masked TextBox Column
-description: Masked TextBox Column
+description: Learn about the properties of the Masked TextBox Column in Telerik's WPF DataGrid and how to define it in XAML.
 slug: radgridview-columns-column-types-masked-textbox-column
 tags: masked,textbox,column
 published: False

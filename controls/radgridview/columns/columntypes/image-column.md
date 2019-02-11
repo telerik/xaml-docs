@@ -1,7 +1,7 @@
 ---
 title: Image Column
 page_title: Image Column
-description: Image Column
+description: Check out how easily you can configure the height, width and stretch of an image with the Image column in RadGridView - Telerik's WPF DataGrid.
 slug: radgridview-columns-columntypes-image-column
 tags: image,column
 published: True

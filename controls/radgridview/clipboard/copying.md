@@ -1,7 +1,7 @@
 ---
 title: Copying
 page_title: Copying
-description: Copying
+description: Check out an example on how to copy column headers as well as selected data in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-copying
 tags: copying
 published: True

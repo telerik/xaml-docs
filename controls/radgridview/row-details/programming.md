@@ -1,14 +1,14 @@
 ---
 title: Events
-page_title: Events
-description: Events
+page_title: Row Details Events
+description: Get started with Telerik's WPF DataGrid and learn more about the events exposed by the control regarding the Row Details. 
 slug: radgridview-row-details-programming
 tags: events
 published: True
 position: 4
 ---
 
-# Events
+# Row Details Events
 
 * [Setting the Background of the DetailsPresenter](#setting-the-background-of-the-detailspresenter)
 * [Accessing the Expanded Item](#accessing-the-expanded-item)

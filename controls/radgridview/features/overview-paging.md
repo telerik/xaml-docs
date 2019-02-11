@@ -1,7 +1,7 @@
 ---
 title: Paging
 page_title: Paging
-description: Paging
+description: Learn about the few simple steps you need to perform in order to connect Telerik's WPF DataGrid with a DataPager.
 slug: gridview-overview-paging
 tags: paging
 published: True

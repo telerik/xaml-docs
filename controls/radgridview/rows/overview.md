@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Rows Overview
+description: Check out this overview of the most commonly used row classes in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-rows-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Rows Overview
 
 A row is the UI representation that wraps an object form the __ItemsSource__ of the __RadGridView__. The most commonly used class is the __GridViewRow__. There are also additional row classes that are used for more specific tasks, such as the __GridViewGroupRow__, which allows expanding and collapsing the items that belong to it. There are also rows that serve as a static containers  - the __GridViewHeaderRow__ and the __GridViewFooterRow__.
 

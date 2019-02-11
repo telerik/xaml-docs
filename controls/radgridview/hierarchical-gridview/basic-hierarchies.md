@@ -1,7 +1,7 @@
 ---
 title: Basic Hierarchies
 page_title: Basic Hierarchies
-description: Basic Hierarchies
+description: Get started with Telerik's WPF DataGrid that allows you to display hierarchical data in the form of nested grid views.
 slug: gridview-basic-hierarchies
 tags: basic,hierarchies
 published: True

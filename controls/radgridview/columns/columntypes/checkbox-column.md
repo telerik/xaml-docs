@@ -1,7 +1,7 @@
 ---
 title: CheckBox Column
 page_title: CheckBox Column
-description: CheckBox Column
+description: Find out how you can display a checkbox for each grid row using the CheckBox column in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-checkbox-column
 tags: checkbox,column
 published: True

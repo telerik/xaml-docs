@@ -1,7 +1,7 @@
 ---
 title: Always focus the first cell on insert 
 page_title: Always focus the first cell on insert 
-description: Always focus the first cell on insert 
+description: Read this article showing how to always have the first column focused when a new item is about to be inserted in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-how-to-focus-first-cell-insert
 tags: always,focus,the,first,cell,on,insert,
 published: True

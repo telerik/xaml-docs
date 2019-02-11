@@ -1,7 +1,7 @@
 ---
 title: Column Headers
 page_title: Column Headers
-description: Column Headers
+description: See examples of setting value and adding a corresponding picture to the column's header in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-columns-column-headers
 tags: column,headers
 published: True

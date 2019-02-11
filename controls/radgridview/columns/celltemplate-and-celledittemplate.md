@@ -1,7 +1,7 @@
 ---
 title: CellTemplate and CellEditTemplate
 page_title: CellTemplate and CellEditTemplate
-description: Setting CellTemplate and CellEditTemplate
+description: Learn how to use the CellTemplate or CellEditTemplate properties to extend the functionality of the columns in RadGridView - Telerik's WPF DataGrid.
 slug: radgridview-columns-celltemplate-and-celledittemplate
 tags: setting,celltemplate,and,celledittemplate
 published: True

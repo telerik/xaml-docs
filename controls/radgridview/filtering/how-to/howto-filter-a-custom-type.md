@@ -1,7 +1,7 @@
 ---
 title: Filter a Custom Type
 page_title: Filter a Custom Type
-description: Filter a Custom Type
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to filter a custom type.
 slug: gridview-filtering-howto-filter-a-custom-type
 tags: filter,a,custom,type
 published: True

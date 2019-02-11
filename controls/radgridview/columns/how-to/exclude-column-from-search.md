@@ -1,7 +1,7 @@
 ---
 title: Exclude Column from Search
 page_title: Exclude Column from Search
-description: Exclude Column from Search
+description: Learn how to set the IsSearchable property to False in order to exclude column from search within RadGridView - Telerik's WPF DataGrid.
 slug: gridview-how-to-exclude-column-from-search
 tags: exclude,column,search
 published: True

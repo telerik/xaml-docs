@@ -1,7 +1,7 @@
 ---
 title: Custom Sorting
 page_title: Custom Sorting
-description: Custom Sorting
+description: Get started with Telerik's WPF DataGrid and learn more about the different ways to enable custom sorting.
 slug: gridview-sorting-custom
 tags: custom,sorting
 published: True

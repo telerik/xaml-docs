@@ -1,7 +1,7 @@
 ---
 title: RowStyleSelector
 page_title: RowStyleSelector
-description: RowStyleSelector
+description: Learn how to style grid rows conditionally by using the RowStyleSelector and AlternateRowStyleSelector properties of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-rowstyleselector
 tags: rowstyleselector
 published: True

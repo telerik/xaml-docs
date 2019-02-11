@@ -1,7 +1,7 @@
 ---
 title: Customizing Row Details
 page_title: Customizing Row Details
-description: Customizing Row Details
+description: Get started with Telerik's WPF DataGrid and learn how to use the RowDetailsStyle property to customize the appearance of the control.
 slug: radgridview-row-details-customizing-the-row-details
 tags: customizing,row,details
 published: True

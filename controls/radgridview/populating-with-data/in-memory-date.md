@@ -1,14 +1,14 @@
 ---
 title: Using in-memory Data
-page_title: Using in-memory Data
-description: Using in-memory Data
+page_title: Using In-Memory Data
+description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with in-memory data.
 slug: gridview-in-memory-date
 tags: using,in-memory,data
 published: True
 position: 2
 ---
 
-# Using in-memory Data
+# Using In-Memory Data
 
 The purpose of this tutorial is to show you how to populate a __RadGridView__ with in-memory data.
 

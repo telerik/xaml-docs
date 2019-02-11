@@ -1,7 +1,7 @@
 ---
 title: Hide the Filter Button
 page_title: Hide the Filter Button
-description: Hide the Filter Button
+description: Learn how to set the Column.ShowFilterButton to false in order to hide the Filter Button in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-filtering-howto-hide-the-filter-button
 tags: hide,the,filter,button
 published: True

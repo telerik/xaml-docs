@@ -1,7 +1,7 @@
 ---
 title: Styling FilterRow
 page_title: Styling FilterRow
-description: Styling FilterRow
+description: Get started with Telerik's WPF DataGrid and learn how to style the FilterRow element.
 slug: gridview-styling-filterrow
 tags: styling,filterrow
 published: True

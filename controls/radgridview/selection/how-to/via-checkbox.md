@@ -1,7 +1,7 @@
 ---
 title: Selection via CheckBox
 page_title: Selection via CheckBox
-description: Selection via CheckBox
+description: Get started with Telerik's WPF DataGrid supporting GridViewSelectColumn with the help of which you can perform a selection via CheckBox.
 slug: gridview-selection-via-checkbox
 tags: selection,via,checkbox
 published: True

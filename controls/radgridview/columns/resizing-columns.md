@@ -1,7 +1,7 @@
 ---
 title: Resizing Columns
 page_title: Resizing Columns
-description: Resizing Columns
+description: See examples of setting a column with fixed width and disabling resizing for all columns or a specific column within RadGridView - Telerik's WPF DataGrid.
 slug: gridview-columns-resizing-columns
 tags: resizing,columns
 published: True

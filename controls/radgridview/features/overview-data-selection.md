@@ -1,7 +1,7 @@
 ---
 title: Data Selection
 page_title: Data Selection
-description: Data Selection
+description: Learn how to enable the selection of one or more items from the data displayed by RadGridView - Telerik's WPF DataGrid.
 slug: gridview-overview-data-selection
 tags: data,selection
 published: True

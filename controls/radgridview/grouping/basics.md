@@ -1,7 +1,7 @@
 ---
 title: Basic Grouping
 page_title: Basic Grouping
-description: Basic Grouping
+description: Get started with the grouping functionality of Telerik's WPF DataGrid that allows the user to easily group the data by one or more columns.
 slug: gridview-grouping-basics
 tags: basic,grouping
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Row Details TemplateSelector
 page_title: Row Details TemplateSelector
-description: Row Details TemplateSelector
+description: Get started with Telerik's WPF DataGrid and learn how you can apply a RowDetailsTemplate conditionally through specifying a proper RowDetailsTemplateSelector. 
 slug: radgridview-row-details-templateselector
 tags: row,details,templateselector
 published: True

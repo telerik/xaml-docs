@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Filtering
+description: Learn how you can easily filter data by one or more columns by clicking on the filtering icon next to the header text in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-overview-filtering
 tags: filtering
 published: True

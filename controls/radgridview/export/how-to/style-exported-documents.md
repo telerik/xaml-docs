@@ -1,7 +1,7 @@
 ---
 title: Style Exported XLSX and PDF Documents
 page_title: Style Exported XLSX and PDF Documents
-description: Style Exported XLSX and PDF Documents
+description: Read this article to learn how to style XLSX and PDF documents exported from RadGridView - Telerik's WPF DataGrid.
 slug: gridview-export-style-exported-xlsx-pdf-documents
 tags: style,exported,xlsx,pdf,documents
 published: True

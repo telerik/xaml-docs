@@ -1,7 +1,7 @@
 ---
 title: Override Default RadGridView Styles
 page_title: Override Default RadGridView Styles
-description: Override Default RadGridView Styles
+description: Get started with Telerik's WPF DataGrid and learn how to override the default styles of the control.
 slug: how-to-override-default-gridview-styles
 tags: override,default,radgridview,styles
 published: False

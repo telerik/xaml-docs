@@ -1,7 +1,7 @@
 ---
 title: Additional column appears
 page_title: Additional column appears
-description: Additional column added after all gridview columns
+description: Learn how to troubleshoot when an additional empty column appears after all columns within RadGridView - Telerik's WPF DataGrid.
 slug: gridview-troubleshooting-additional-column
 tags: additional,column,added,after,all,gridview,columns
 published: True

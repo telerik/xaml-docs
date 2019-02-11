@@ -1,7 +1,7 @@
 ---
 title: Basic Selection
 page_title: Basic Selection
-description: This article describes the various selection modes and selection units provided by the RadGridView control.
+description: Read this article describing the various selection modes and selection units provided by RadGridView - Telerik's WPF DataGrid.
 slug: gridview-selection-basics
 tags: basic,selection
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling Merged Cells
 page_title: Styling Merged Cells
-description: Styling Merged Cells
+description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the MergedCell element.
 slug: gridview-styling-mergedcell
 tags: styling,merged,cells
 published: True

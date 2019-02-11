@@ -1,7 +1,7 @@
 ---
 title: Adding New Entries
 page_title: Adding New Entries
-description: Adding New Entries
+description: Read more about the two ways of adding new entries in Telerik's WPF DataGrid - by pressing the Insert key or by calling the BeginInsert method.
 slug: gridview-managing-data-add-new-entries
 tags: adding,new,entries
 published: True

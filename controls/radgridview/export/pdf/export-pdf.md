@@ -1,7 +1,7 @@
 ---
 title: ExportToPdf
 page_title: ExportFormat.Pdf
-description: ExportFormat.Pdf
+description: Learn how to export to PDF format from Telerik's WPF DataGrid by using the ExportToPdf method without any need for the user to make the integration manually.
 slug: gridview-export-pdf
 tags: exportformat.pdf
 published: True

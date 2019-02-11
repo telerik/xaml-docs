@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export
-description: Export
+description: Learn how to export data from Telerik's WPF DataGrid by using the Export method gives you control over which elements are included in the exported data.
 slug: gridview-export
 tags: grid,export
 published: True

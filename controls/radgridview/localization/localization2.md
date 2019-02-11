@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Localization
+description: Learn more about the localization mechanism built in Telerik's WPF DataGrid and see a list of the supported languages.
 slug: gridview-localization2
 tags: localization
 published: True

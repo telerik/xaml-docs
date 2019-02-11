@@ -1,7 +1,7 @@
 ---
 title: Filtering Custom Types
 page_title: Filtering Custom Types
-description: Filtering Custom Types
+description: Check out this step-by-step tutorial for Telerik's WPF DataGrid showing how to implement your own filtering to a column that is data-bound to a custom type.  
 slug: radgridview-filtering-custom-types
 tags: filtering,custom,types
 published: False

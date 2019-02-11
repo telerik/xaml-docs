@@ -1,7 +1,7 @@
 ---
 title: Lightweight Templates
 page_title: Lightweight Templates
-description: Lightweight Templates
+description: Learn more about the lightweight templates of Telerik's WPF DataGrid that are represented by several additional simplified styles.
 slug: gridview-overview-lightweight-template
 tags: lightweight,templates
 published: True

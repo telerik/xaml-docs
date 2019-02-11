@@ -1,7 +1,7 @@
 ---
 title: Group Footers
 page_title: Group Footers
-description: Group Footers
+description: Get started with the grouping functionality of Telerik's WPF DataGrid which that allows you to render a footer under each group in the grid.
 slug: gridview-group-footers
 tags: group,footers
 published: True

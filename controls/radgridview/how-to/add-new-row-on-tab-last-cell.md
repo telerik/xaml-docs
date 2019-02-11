@@ -1,7 +1,7 @@
 ---
 title: Insert New Row on Tab of Last Cell
 page_title: Insert New Row on Tab of Last Cell
-description: Insert New Row on Tab of Last Cell
+description: Check out our example of how to insert a new row when you are at the last column of the last row in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-add-new-row-on-tab-last-cell
 tags: insert,new,row,tab,last,cell,column,row
 published: True

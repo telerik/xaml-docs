@@ -1,14 +1,14 @@
 ---
 title: Basic Filtering
-page_title: Basic Filtering
-description: Basic Filtering
+page_title: Filtering Basics
+description: Learn more about the filtering functionality of Telerik's WPF DataGrid that allows the user to select which of the values of a current column to be displayed.
 slug: gridview-basic-filtering2
 tags: basic,filtering
 published: False
 position: 0
 ---
 
-# Basic Filtering
+# Filtering Basics
 
 
 >__Important!__ Please check the [filtering breaking changes]({%slug radgridview-backward-compatibility%}) introduced with __Q1 2012__.

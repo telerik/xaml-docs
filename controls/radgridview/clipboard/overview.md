@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Clipboard Overview
+description: Learn more about the fine-grained control over copying and pasting provided by RadGridView - Telerik's WPF DataGrid.
 slug: gridview-clipboard-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Clipboard Overview
 
 ![](images/RadGridView_ClipboardOperations.png)
 

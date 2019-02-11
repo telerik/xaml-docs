@@ -1,7 +1,7 @@
 ---
 title: Column
 page_title: Column Events
-description: Column Events
+description: Learn more about the column events of Telerik's WPF DataGrid that you can subscribe to declaratively or at runtime.
 slug: gridview-column-resize-event
 tags: column, events
 published: True

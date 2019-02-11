@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Columns Overview
+description: Learn more about defining, customizing, resizing, reordering, freezing and unfreezing columns in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-columns-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Columns Overview
 
 This chapter gives you detailed information about columns in __RadGridView__. The covered topics are:
 

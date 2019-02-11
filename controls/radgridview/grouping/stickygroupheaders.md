@@ -1,7 +1,7 @@
 ---
 title: Sticky Group Headers
 page_title: Sticky Group Headers
-description: Sticky Group Headers
+description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how to stick the headers of a group to the top. 
 slug: gridview-sticky-group-headers
 tags: sticky,group,headers
 published: True

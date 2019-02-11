@@ -1,7 +1,7 @@
 ---
 title: Useful Links
-page_title: Useful Links
-description: Useful Links
+page_title: Paging - Useful Links
+description: Get started with our list of useful links to online demos and blog posts related to the paging functionality of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-paging-useful-links
 tags: useful,links
 published: True

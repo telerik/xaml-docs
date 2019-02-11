@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Controlling Appearance
+description: Get started with Telerik's WPF DataGrid and learn about the different ways to customize the look and feel of the control.
 slug: gridview-styles-and-templates-controlling-appearance
 tags: controlling,appearance
 published: False

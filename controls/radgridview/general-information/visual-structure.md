@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check out the visual representation of columns, rows, cells, scroll bars, buttons and other essential elements of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-visual-structure
 tags: visual,structure
 published: True

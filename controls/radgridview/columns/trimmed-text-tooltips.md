@@ -1,7 +1,7 @@
 ---
 title: Trimmed Text Tooltips
 page_title: Trimmed Text Tooltips
-description: Trimmed Text Tooltips
+description: Learn how to specify whether or not a tooltip should be shown when the text of a RadGridView's cell exceeds its parent column's width.
 slug: gridview-trimmed-text-tooltips
 tags: trimmed,text,tooltips
 published: True

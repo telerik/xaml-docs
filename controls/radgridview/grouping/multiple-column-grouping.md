@@ -1,14 +1,14 @@
 ---
 title: Multiple-column Grouping
-page_title: Multiple-column Grouping
-description: Multiple-column Grouping
+page_title: Multiple-Column Grouping
+description: Learn how to enable multiple-column grouping in Telerik's WPF DataGrid by dragging and dropping more than one column headers into the grouping area. 
 slug: gridview-multiple-column-grouping
 tags: multiple-column,grouping
 published: True
 position: 3
 ---
 
-# Multiple-column Grouping
+# Multiple-Column Grouping
 
 On the snapshot you can see how the data in the __RadGridView__ is grouped by two columns - the __Country__ and the __Title__. The data is first grouped by the __Country__ column and then the data in the separate groups is grouped again by the __Title__ column.
 

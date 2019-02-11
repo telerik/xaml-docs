@@ -1,14 +1,14 @@
 ---
 title: Building Hierarchical Grid View
-page_title: Building Hierarchical Grid View
-description: Building Hierarchical Grid View
+page_title: Building Hierarchical Grid
+description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
 published: True
 position: 1
 ---
 
-# Building Hierarchical Grid View
+# Building Hierarchical Grid
 
 
 This tutorial will walk you through the process of displaying hierarchical data in __RadGridView__. It will not cover the creation of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application, adding __RadGridView__ to your __UserControl__ or how to define columns. If you need information on any of these topics please read the [Getting Started]({%slug gridview-getting-started2%}) topic. 
@@ -346,12 +346,14 @@ The next step is to make the __RadGridView__ display the collections of teams as
 
 {{region xaml-gridview-building-hierarchical-grid-view_9}}
 	<telerik:RadGridView AutoGenerateColumns="False">
-	    <telerik:RadGridView.ChildTableDefinitions>
+	    <telerik:RadGridView.ChildTableDefinitions>
+
 	        <telerik:GridViewTableDefinition>
 	            <telerik:GridViewTableDefinition.Relation>
 	                <telerik:PropertyRelation ParentPropertyName="Teams" />
 	            </telerik:GridViewTableDefinition.Relation>
-	        </telerik:GridViewTableDefinition>
+	        </telerik:GridViewTableDefinition>
+
 	    </telerik:RadGridView.ChildTableDefinitions>
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"

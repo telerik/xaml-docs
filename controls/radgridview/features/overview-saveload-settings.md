@@ -1,7 +1,7 @@
 ---
 title: Save/Load Settings
 page_title: Save/Load Settings
-description: Save/Load Settings
+description: Learn more about the PersistenceFramework control which you can use to save and load settings of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-overview-saveload-settings
 tags: save/load,settings
 published: True

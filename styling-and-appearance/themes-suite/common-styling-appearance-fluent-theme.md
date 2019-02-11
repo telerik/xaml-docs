@@ -382,6 +382,19 @@ The following code snippets show how you can integrate the FluentControl with a 
 #### **Figure 6: FluentControl used within a custom template applied to a RadButton**  
 ![FluentControl used within a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![FluentControl used within a custom template applied to a RadButton in Dark variation](images/fluent-theme-dark-effect.gif)
 
+It is possible to disable the ripple effect of the FluentControl through a style. __Example 9__ demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
+
+#### **[XAML] Example 9: Disabling the Ripple effect**
+{{region styling-appearance-fluent-theme-11}}
+	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
+        <Style TargetType="mat:FluentControl" BasedOn="{StaticResource FluentControlStyle}" > 
+        -->
+        
+	<Style TargetType="mat:FluentControl" >
+		<Setter Property="IsRippleEnabled" Value="False" />
+	</Style>
+{{endregion}}
+
 ## Change ScrollBarMode
 
 By default scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __2019.1.121__ version of our dlls, you have the option of setting the __ScrollBarMode__ property of the Fluent palette in order to control this behavior. It is ot type __ScrollViewerScrollBarsMode__ and can be set to the following values: 
@@ -395,10 +408,10 @@ By default scrollbars in the Fluent theme change their size depending on whether
 #### **Figure 7: ScrollBar behavior in Auto, Compact and Normal ScrollBarMode**  
 ![ScrollBar in Auto, Compact and Normal ScrollBarMode](images/fluent-light-scrollbarmode.gif)
 
-__Example 9__ demonstrates how the __ScrollBarMode__ property of the palette can be set.
+__Example 10__ demonstrates how the __ScrollBarMode__ property of the palette can be set.
 
-#### **[C#] Example 9: Setting the __ScrollBarMode__ property of the palette to Compact**
-{{region styling-appearance-fluent-theme-11}}	
+#### **[C#] Example 10: Setting the __ScrollBarMode__ property of the palette to Compact**
+{{region styling-appearance-fluent-theme-12}}	
 	FluentPalette.Palette.ScrollBarMode = FluentPalette.ScrollViewerScrollBarsMode.Compact;
 {{endregion}}
 

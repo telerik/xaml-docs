@@ -373,6 +373,19 @@ The following code snippets show how you can integrate the Material Control with
 
 > Note that the **MaterialAssist.MouseOverBrush** and **MaterialAssist.PressedBrush** properties, which are responsible for the mouse over and pressed animations, are automatically bound to the templated parent.
 
+It is possible to disable the ripple effect of the MaterialControl through a style. __Example 12__ demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
+
+#### **[XAML] Example 12: Disabling the Ripple effect**
+{{region styling-appearance-material-theme-11}}
+	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
+        <Style TargetType="mat:MaterialControl" BasedOn="{StaticResource MaterialControlStyle}" > 
+        -->
+        
+	<Style TargetType="mat:MaterialControl" >
+		<Setter Property="IsRippleEnabled" Value="False" />
+	</Style>
+{{endregion}}
+
 ## See Also
 
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

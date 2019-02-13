@@ -57,7 +57,7 @@ The visibility of the column headers and footers can be controlled through the f
 
 ## IsReadOnly
 
-Since __R1 2019 SP 1__, the GridViewItemsSourceProvider exposes the __IsReadOnly__ property through which you can control the __IsReadOnly__ property of the RadGridView.
+Since __R1 2019 SP1__, the GridViewItemsSourceProvider exposes the __IsReadOnly__ property through which you can control the __IsReadOnly__ property of the RadGridView control in the dropdown.
 
 ## See Also
 

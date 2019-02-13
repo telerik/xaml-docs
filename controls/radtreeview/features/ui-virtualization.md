@@ -18,7 +18,7 @@ The __RadTreeView__ API supports __UI Virtualization__, which processes only inf
 
 The following tutorial shows how to bind to a collection of business objects and virtualize the items displayed in a __RadTreeView__ element using the __IsVirtualizing__ property.
 
-Here is a simple __RadTreeView__ declaration.
+__Example 1__ demonstrates a simple __RadTreeView__ declaration. You can find __RadTreeViewSampleData__ custom class implementation in the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) help article.
 
 #### __[XAML] Example 1: Bind RadTreeView to large number of items__
 
@@ -45,6 +45,10 @@ In this case you need to use the __UI Virtualization__ behavior of the __RadTree
 
 In order to enable the UI Virtualization behavior, you should set the __IsVirtualizing__ property of the __RadTreeView__ to __True__. See the example below:
 
+>When the __IsVirtualizing__ proeprty is set to __True__, the __ChildDefaultLength__ property can be set to the expected header size of the __TreeViewItems__ if it will be different than the default __MinHeight__ of 24 for the __TreeViewItems__.
+
+<!-- -->
+
 > Do not place __RadTreeView__ in controls/panels which will measure it with infinity as this will disable the __UI Virtualization__. For example, __ScrollViewer__, __StackPanel__ and __Grid__ with __Row.Height=Auto__ or __Column.Width=Auto__ will measure it in that way. You can place it in RowDefinition with Height="*" instead. 
 
 #### __[XAML] Example 2: Set IsVirtualizing property__
@@ -53,7 +57,7 @@ In order to enable the UI Virtualization behavior, you should set the __IsVirtua
 	<telerik:RadTreeView x:Name="radTreeView" IsVirtualizing="True">
 {{endregion}}
 
-Now when you try to expand the first node, then only those elements that might be on the screen will be generated.
+Now when you try to expand the first node, then only those elements that will be on the screen will be generated.
 
 >tip When the __RadTreeView__'s __IsVirtualizing__ property is set to __False__, then all items within an expanded level are created. The performance may not be as bad if there is a deep hierarchy and all items are initially collapsed. Around 200 expanded items may run smooth.
 
@@ -68,7 +72,7 @@ When you want to specify the method the __TreeViewPanel__ uses to manage virtual
 
 The __TreeVirtualizationMode__ property is a __VirtualizationMode__ enumeration which may accept the following values:
 
-> In some version of Visual Studio MS XAML parsel could throw a 'Ambiguous match found.' error in the output when the __VirtualizationMode__ property is used. This error comes from the fact that __TreeViewPanel__ inherits from the MS VirtualizingPanel which in .Net4.5 exposes that same property and which is hiding an inheritance property. The XAML parser is designed to work in that way so we have introduced another attached property which is doing the same thing. We suggest to use the telerik:TreeViewPanel.TreeVirtualizationMode property instead.
+> In some version of Visual Studio MS XAML Parsel could throw a 'Ambiguous match found.' error in the output when the __VirtualizationMode__ property is used. This error comes from the fact that __TreeViewPanel__ inherits from the MS VirtualizingPanel which in .Net4.5 exposes that same property which is hiding an inheritance property. The XAML Parser is designed to work in that way so we have introduced another attached property which is doing the same thing. We suggest to use the telerik:TreeViewPanel.TreeVirtualizationMode property instead.
 
 ## TreeVirtualizationMode.Standard
 
@@ -100,14 +104,14 @@ When you use __VirtualizationMode__.__Hierarchical__, then items that are out of
 	<telerik:RadTreeView x:Name="radTreeView" telerikTreeView:TreeViewPanel.IsVirtualizing="True" telerikTreeView:TreeViewPanel.VirtualizationMode="Hierarchical">
 {{endregion}}
 
-> By default, a __TreeViewPanel__ creates an item container for each visible item and discards it when it is no longer needed (such as when the item is scrolled out of view). When an ItemsControl contains a many items, the process of creating and discarding item containers can negatively affect performance. 
+> By default, a __TreeViewPanel__ creates an item container for each visible item and discards it when it is no longer needed (such as when the item is scrolled out of view). When an ItemsControl contains many items, the process of creating and discarding item containers can negatively affect performance. 
 
 >When __TreeVirtualizationMode__ is set to __Recycling__, the __TreeViewPanel__ reuses item containers instead of creating a new one each time. When __TreeViewPanel__ cannot recycle item containers, it uses the standard mode of virtualization, which is to create and discard item containers for each item. The following list describes the cases when the __TreeViewPanel__ cannot recycle item containers:
 
 > - The __ItemsControl__ contains item containers of different types. 
 > - You explicitly create the item containers for the __ItemsControl__.
 
->When the __IsVirtualizing__ is set to __True__, the __ChildDefaultLength__ property can be set to the expected header size of the __TreeViewItems__ if it will be different than the default __MinHeight__ of 24 for the __TreeViewItems__.
+<!-- -->
 
 ## See Also
  * [Load on Demand]({%slug radtreeview-features-load-on-demand%})

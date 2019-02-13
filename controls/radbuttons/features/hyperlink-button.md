@@ -10,7 +10,7 @@ position: 5
 
 # Hyperlink Button
 
-__RadHyperlinkButton__ provides the look and feel of RadButton extending it with Hyperlink capabilities. 
+__RadHyperlinkButton__ provides the RadButton functionality extending it with Hyperlink capabilities. 
 
 ![](images/radbuttons-features-hyperlink-button-0.png)
 

@@ -55,6 +55,10 @@ The visibility of the column headers and footers can be controlled through the f
 * __ShowColumnHeaders__: The default value is __True__ meaning that the column headers will be visible. Setting it to __False__ will hide them.
 * __ShowColumnFooters__: The default value is __False__ meaning that the column footers will be hidden. Setting it to __True__ will make them visible.
 
+## IsReadOnly
+
+Since __R1 2019 SP 1__, the GridViewItemsSourceProvider exposes the __IsReadOnly__ property through which you can control the __IsReadOnly__ property of the RadGridView.
+
 ## See Also
 
 * [Getting Started]({%slug multicolumncombobox-getting-started%})

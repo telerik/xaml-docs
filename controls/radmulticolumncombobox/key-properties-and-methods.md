@@ -53,9 +53,9 @@ The following set of methods is provided for manipulating the visibility of the 
 
 ## DropDownElementStyle
 
-Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle__ property. Through it, you can get or set a Style that will be applied to the drop down element.
+Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle__ property. Through it, you can get or set a Style that will be applied to the dropdown element.
 
-> The TargetType of the Style should match the type of the drop down element.
+> The TargetType of the Style should match the type of the dropdown element.
 
 ## See Also
 

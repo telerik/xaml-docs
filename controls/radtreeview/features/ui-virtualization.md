@@ -72,7 +72,7 @@ When you want to specify the method the __TreeViewPanel__ uses to manage virtual
 
 The __TreeVirtualizationMode__ property is a __VirtualizationMode__ enumeration which may accept the following values:
 
-> In some version of Visual Studio MS XAML Parsel could throw a 'Ambiguous match found.' error in the output when the __VirtualizationMode__ property is used. This error comes from the fact that __TreeViewPanel__ inherits from the MS VirtualizingPanel which in .Net4.5 exposes that same property which is hiding an inheritance property. The XAML Parser is designed to work in that way so we have introduced another attached property which is doing the same thing. We suggest to use the telerik:TreeViewPanel.TreeVirtualizationMode property instead.
+> In some version of Visual Studio MS XAML Parser could throw a 'Ambiguous match found.' error in the output when the __VirtualizationMode__ property is used. This error comes from the fact that __TreeViewPanel__ inherits from the MS VirtualizingPanel which in .Net4.5 exposes that same property which is hiding an inheritance property. The XAML Parser is designed to work in that way so we have introduced another attached property which is doing the same thing. We suggest to use the telerik:TreeViewPanel.TreeVirtualizationMode property instead.
 
 ## TreeVirtualizationMode.Standard
 

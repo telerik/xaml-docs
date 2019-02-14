@@ -10,13 +10,13 @@ position: 1
 
 # Creating an Application and Adding Telerik Controls
 
-The following topic describes what steps you should perform in order to add the Telerik UI for {{ site.platform_name }} in your application. There are two ways to do this - first one is to install Telerik Extensions for VisualStudio. The second one is by adding the necessary assemblies as references in your application manually. No matter which of the two manners you will choose, you will be able to use the Toolbox to create your application.
+The following topic describes what steps you should perform in order to add the Telerik UI for {{ site.site_name }} in your application. There are two ways to do this - first one is to install Telerik Extensions for VisualStudio. The second one is by adding the necessary assemblies as references in your application manually. No matter which of the two manners you will choose, you will be able to use the Toolbox to create your application.
 
 ## Creating Application with Telerik Visual Studio Extensions
 
 1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% endif %}{% if site.site_name == 'WPF' %}({%slug installation-system-requirements-wpf%}){% endif %}.
 
-2. Create new Telerik {{ site.platform_name }} application.
+2. Create new Telerik {{ site.site_name }} application. {% if site.site_name == 'WPF' %}For more information, check out the [Create Project]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) article.{% endif %}
 	
 	#### __Figure 1: Creating new Telerik application__	
 	{% if site.site_name == 'Silverlight' %}
@@ -34,7 +34,7 @@ The following topic describes what steps you should perform in order to add the 
 
 	At this point the project references only the common Telerik.Windows.Controls.dll. 
 
-4. Configure the project using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
+4. {% if site.site_name == 'WPF' %}[Configure the project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% endif %}{% if site.site_name == 'Silverlight' %}[Configure the project]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
 
 	#### __Figure 3: Adding references to the charting controls__
 	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
@@ -45,20 +45,20 @@ The following topic describes what steps you should perform in order to add the 
 
 1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% else %}({%slug installation-system-requirements-wpf%}){% endif %}.
           	
-2. Create a new {{ site.platform_name }} application.
+2. Create a new {{ site.site_name }} application.
 	
-	#### __Figure 4: Creating new {{ site.platform_name }} application__
+	#### __Figure 4: Creating new {{ site.site_name }} application__
 	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-4.png)
 
 3. Add references to the Telerik assemblies. There are two options to do this.
 	
 	* [Drag a Telerik control from the toolbox](#dragging-controls-from-visual-studio-toolbox). When the control gets dropped onto the Visual Studio designer's surface, Visual Studio will automatically add the corresponding references.
 	
-	* Manually reference the Telerik dlls from the UI for {{ site.platform_name }} installation folder.	The binaries are located in the *UI for {{ site.platform_name }} installation folder/Binaries/{% if site.site_name == 'WPF' %}WPF40/{% endif %}*
+	* Manually reference the Telerik dlls from the UI for {{ site.site_name }} installation folder.	The binaries are located in the *UI for {{ site.site_name }} installation folder/Binaries/ or *UI for {{ site.site_name }} installation folder/Binaries.NoXaml/*. To learn about the differences between the dlls in the **Binaries** and the **Binaries.NoXaml** folders, check out the [Xaml vs NoXaml]({%slug xaml-vs-noxaml%}) article.
 	
 ### Dragging Controls from Visual Studio Toolbox
 
-* Add the Telerik {{ site.platform_name }} controls to the [Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}).
+* Add the Telerik {{ site.site_name }} controls to the [Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}).
 
 	>tip See the assemblies required by each Telerik control in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} article.
 

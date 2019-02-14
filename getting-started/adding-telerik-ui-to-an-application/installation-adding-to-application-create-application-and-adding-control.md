@@ -54,7 +54,7 @@ The following topic describes what steps you should perform in order to add the 
 	
 	* [Drag a Telerik control from the toolbox](#dragging-controls-from-visual-studio-toolbox). When the control gets dropped onto the Visual Studio designer's surface, Visual Studio will automatically add the corresponding references.
 	
-	* Manually reference the Telerik dlls from the UI for {{ site.site_name }} installation folder.	The binaries are located in the *UI for {{ site.site_name }} installation folder/Binaries/{% if site.site_name == 'WPF' %}WPF40/{% endif %}* or *UI for {{ site.site_name }} installation folder/Binaries.NoXaml/{% if site.site_name == 'WPF' %}WPF40/{% endif %}*. To learn about the differences between the dlls in the **Binaries** and the **Binaries.NoXaml** folders, check out the [Xaml vs NoXaml]({%slug xaml-vs-noxaml%}) article.
+	* Manually reference the Telerik dlls from the UI for {{ site.site_name }} installation folder.	The binaries are located in the *UI for {{ site.site_name }} installation folder/Binaries/ or *UI for {{ site.site_name }} installation folder/Binaries.NoXaml/*. To learn about the differences between the dlls in the **Binaries** and the **Binaries.NoXaml** folders, check out the [Xaml vs NoXaml]({%slug xaml-vs-noxaml%}) article.
 	
 ### Dragging Controls from Visual Studio Toolbox
 

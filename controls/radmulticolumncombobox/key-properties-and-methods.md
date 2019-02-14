@@ -16,6 +16,7 @@ The article lists the most important properties and methods of __RadMultiColumnC
 * [Disable Items Highlighting](#disable-items-highlighting)
 * [Setting Text for an Empty Selection](#setting-text-for-an-empty-selection)
 * [Open,Close and Toggle the DropDown](#open,close-and-toggle-the-dropdown)
+* [DropDownElementStyle](#dropdownelementstyle)
 
 ## Text Change Without Delay
 
@@ -49,6 +50,12 @@ The following set of methods is provided for manipulating the visibility of the 
 * __OpenDropDown__: Opens the DropDown if it is closed.
 * __CloseDropDown__: Closes the DropDown if it is opened.
 * __ToggleDropDown__: Toggles the opened/closed state of the DropDown.
+
+## DropDownElementStyle
+
+Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle__ property. Through it, you can get or set a Style that will be applied to the dropdown element.
+
+> The TargetType of the Style should match the type of the dropdown element.
 
 ## See Also
 

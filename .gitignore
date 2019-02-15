@@ -3,6 +3,7 @@
 .dockerignore
 .DS_Store
 .editorconfig
+.jekyll-metadata
 .ruby-version
 /.asset-cache/
 /_assets/
@@ -26,6 +27,7 @@ Dockerfile
 Gemfile
 Gemfile.lock
 install-npm.sh
+knowledge-base.html
 robots.txt
 search.html
 start-docs.sh

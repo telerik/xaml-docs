@@ -14,7 +14,7 @@ Telerik UI for {{ site.framework_name }} provides built-in support for Microsoft
       
 >For detailed information on the UI Automation check the [UI Automation Fundamentals](http://msdn.microsoft.com/en-us/library/ms753107%28v=vs.110%29.aspx) section on MSDN.
 
-## AutomationMode property
+## AutomationMode
 
 With Q2 2014 SP release of Telerik UI for {{ site.framework_name }} you will have the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__.
 

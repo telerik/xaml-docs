@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# FileManager
+# FileManager 
 
 The FileManager is an extension class which can be used to save/load your RadDiagram in in a file on your __Disk__ or in your application __IsolatedStorage__. 
 

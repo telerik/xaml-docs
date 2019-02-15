@@ -10,7 +10,7 @@ position: 5
 
 # FileManager 
 
-The FileManager is an extension class which can be used to save/load your RadDiagram in in a file on your __Disk__ or in your application __IsolatedStorage__. 
+The FileManager is an extension class which can be used to save/load your RadDiagram in a file on your __Disk__ or in your application's __IsolatedStorage__. 
 
 ## Properties
 
@@ -18,12 +18,11 @@ The FileManager is an extension class which can be used to save/load your RadDia
 
 ## Methods
 
-FileManager class expose two methods: LoadFromFile and SaveToFile. Depending on the paramerter of these methods the XML string can be save to two storage location: Disk or IsolatedStorage.
+FileManager class exposes two methods: LoadFromFile and SaveToFile. Depending on the parameter of these methods, the XML string can be saved to two storage locations: Disk or IsolatedStorage.
 
-* __LoadFromFile(FileLocation location = FileLocation.Disk)__: This method accept enum type of __FileLocation__. By default the FileManager will load the XML string from the hard drive.
+* __LoadFromFile(FileLocation location = FileLocation.Disk)__: This method accepts an enum of type __FileLocation__. By default the FileManager will load the XML string from the hard drive.
 
-* __SaveToFile(FileLocation location = FileLocation.Disk)__: This method accept enum type of __FileLocation__. By default the FileManager will save the XML string to the hard drive.
-
+* __SaveToFile(FileLocation location = FileLocation.Disk)__: This method accepts an enum of type __FileLocation__. By default the FileManager will save the XML string to the hard drive.
 
 To demonstrate this extension we are going to create a very simple application. First we can go ahead and declare the RadDiagram in XAML and add some shapes. Then we can add two buttons for save and load behavior.
 
@@ -48,11 +47,11 @@ To demonstrate this extension we are going to create a very simple application. 
 	</Grid>	
 {{endregion}}
 
-Then we can subscribe to the Click event of the Save Load buttons. The next step is to declare our FileManager and set its CurrentFile property. This property set the path where the XML file will be saved on the user Disk.
+Then we can subscribe to the Click event of the Save/Load buttons. The next step is to declare our FileManager and set its CurrentFile property. This property sets the path where the XML file will be saved on the user Disk.
 
 #### __[C#] Example 2: Specify FileManager and save/load the RadDiagram__
-{{region csharp-raddiagram-extensions-filemanager_1}}
-	public partial class MainWindow : Window
+{{region cs-raddiagram-extensions-filemanager_1}}
+    public partial class MainWindow : Window
     {
         FileManager fileManager;
         public MainWindow()

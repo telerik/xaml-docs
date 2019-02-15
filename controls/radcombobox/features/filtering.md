@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Filtering
+description: RadComboBox provides filtering behavior for its items. This article explained in details this mechanism.
 slug: radcombobox-features-filtering
 tags: filtering
 published: True
@@ -11,6 +11,8 @@ position: 0
 # Filtering
 
 The advanced filtering mechanism of the __RadComboBox__ control allows the users to refine their search results as they type in the input area. The RadComboBox filtering is done according to the __TextSearchMode__ property of the RadComboBox. You can read some more about it in the [Text Search]({%slug radcombobox-features-textsearch%}#textsearchmode) article.
+
+>For implementing custom filtering behavior you can take a look at the [Filtering Behavior]({%slug radcombobox-features-filteringbehavior%}) help article.
 
 The next code snippet shows a regular __RadComboBox__ with static data (defined in XAML).
 
@@ -77,3 +79,5 @@ Start your demo and write "al" in the __input box__. Now only items, which text 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})
 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%})
+ 
+ * [Filtering Behavior]({%slug radcombobox-features-filteringbehavior%})

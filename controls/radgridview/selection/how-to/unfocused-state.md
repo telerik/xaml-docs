@@ -1,7 +1,7 @@
 ---
 title: Stop Showing the Unfocused State
 page_title: Stop Showing the Unfocused State
-description: Stop Showing the Unfocused State
+description: Get started with Telerik's WPF DataGrid and learn how to stop showing the unfocused state for the selected row.
 slug: gridview-selection-unfocused-state
 tags: stop,showing,the,unfocused,state
 published: True

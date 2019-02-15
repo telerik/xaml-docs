@@ -1,7 +1,7 @@
 ---
 title: Foreground color does not change in a custom header
 page_title: Foreground color does not change in a custom header
-description: Foreground color does not change in a custom header
+description: Learn how to troubleshoot within the Telerik WPF DataGrid when the Foreground color of the custom header does not change on mouse hover, sorting, etc.
 slug: gridview-troubleshooting-styling-custom-header
 tags: foreground,color,does,not,change,in,a,custom,header
 published: True

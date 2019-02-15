@@ -1,7 +1,7 @@
 ---
 title: Row Details Visibility
 page_title: Row Details Visibility
-description: Row Details Visibility
+description: Get started with Telerik's WPF DataGrid and learn how to specify the display mode of the Row Details by using the RowDetailsVisibilityMode property.
 slug: radgridview-row-details-visibility
 tags: row,details,visibility
 published: True

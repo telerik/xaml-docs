@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop
 page_title: Drag and Drop
-description: This article describes how to implement Drag and Drop operations within RadGridView
+description: Learn how to use the DragDropManager property to implement the drag and drop functionality of RadGridView - Telerik's WPF DataGrid.
 slug: gridview-drag-drop-scenario
 tags: drag,and,drop
 published: True

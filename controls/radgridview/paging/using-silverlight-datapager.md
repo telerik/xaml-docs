@@ -1,7 +1,7 @@
 ---
 title: Using Silverlight DataPager
 page_title: Using Silverlight DataPager
-description: Using Silverlight DataPager
+description: Learn more about the integration with the standard Silverlight DataPager supported by RadGridView - Telerik's WPF DataGrid. 
 slug: gridview-paging-using-silverlight-datapager
 tags: using,silverlight,datapager
 published: True

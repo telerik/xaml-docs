@@ -1,7 +1,7 @@
 ---
 title: Styling RadGridView
 page_title: Styling RadGridView
-description: Styling RadGridView
+description: Learn how to create an appropriate style targeting the RadGridView control in order to style all instances of Telerik's WPF DataGrid in your application.
 slug: radgridview-styles-and-templates-styling-radgridview
 tags: styling,radgridview
 published: True

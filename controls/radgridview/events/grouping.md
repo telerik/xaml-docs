@@ -1,14 +1,14 @@
 ---
 title: Grouping events
-page_title: Grouping events
-description: Grouping events
+page_title: Grouping Events
+description: Learn more about the grouping events of Telerik's WPF DataGrid that occur either when data is grouped from the UI or when a group row is expanded or collapsed.
 slug: gridview-events-grouping
 tags: grouping,events
 published: True
 position: 8
 ---
 
-# Grouping events
+# Grouping Events
 
 There are two events that are raised, when the data in RadGridView is __grouped from the UI__.
       

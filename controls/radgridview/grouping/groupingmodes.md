@@ -1,7 +1,7 @@
 ---
 title: Grouping Modes
 page_title: Grouping Modes
-description: Grouping Modes
+description: Get started with the grouping modes property in Telerik's WPF DataGrid that allows you to choose either nested or flat mode. 
 slug: gridview-grouping-groupingmodes
 tags: grouping,modes
 published: True

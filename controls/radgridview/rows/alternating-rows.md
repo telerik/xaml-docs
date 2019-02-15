@@ -1,7 +1,7 @@
 ---
 title: Alternating Rows
 page_title: Alternating Rows
-description: Alternating Rows
+description: Get started with Telerik's WPF DataGrid and learn how to improve the readability by having alternating rows.
 slug: radgridview-rows-alternating-rows
 tags: alternating,rows
 published: True

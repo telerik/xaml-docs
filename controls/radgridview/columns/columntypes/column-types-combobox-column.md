@@ -1,7 +1,7 @@
 ---
 title: ComboBox Column
 page_title: ComboBox Column
-description: ComboBox Column
+description: Learn how to edit cell values with the RadComboBox editor available in the ComboBox column of RadGridView - Telerik's WPF DataGrid.
 slug: radgridview-columns-column-types-combobox-column
 tags: combobox,column
 published: True

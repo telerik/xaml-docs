@@ -1,7 +1,7 @@
 ---
 title: MultiColumnComboBox Column
 page_title: MultiColumnComboBox Column
-description: The MultiColumnComboBox column is represented by a standard TextBlock in view mode, and with RadMultiColumnComboBox control in edit mode.
+description: See examples of how you can define some data and set up the MultiColumnComboBox column in RadGridView - Telerik's WPF DataGrid.
 slug: radgridview-columns-column-types-multicolumncombobox-column
 tags: multicolumncombobox,column
 published: True

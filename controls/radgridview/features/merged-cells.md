@@ -1,7 +1,7 @@
 ---
 title: Merged Cells
 page_title: Merged Cells
-description: Merged Cells
+description: Learn how to merge cells with equal values vertically or horizontally when working with RadGridView - Telerik's WPF DataGrid.
 slug: gridview-merged-cells
 tags: merged,cells
 published: True

@@ -1,14 +1,14 @@
 ---
 title: Scroll to particular row or column
-page_title: Scroll to particular row or column
-description: Scroll to particular row or column
+page_title: Scroll to Particular Row or Column
+description: Find out about the two methods that can be invoked when your goal is to scroll to a particular row or column in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-scroll-item
 tags: scroll,to,particular,row,or,column
 published: True
 position: 11
 ---
 
-# Scroll to a particular row or column
+# Scroll to Particular Row or Column
 
 This article shows how to scroll RadGridView to a particular row and / or column. There are two methods that can be invoked:
 

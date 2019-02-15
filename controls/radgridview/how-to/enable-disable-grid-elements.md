@@ -1,7 +1,7 @@
 ---
 title: Enable\Disable Grid Elements
 page_title: Enable\Disable Grid Elements
-description: Enable\Disable Grid Elements
+description: See how you can disable a whole column of the Telerik WPF DataGrid by changing the IsEnabled property of each one of its cells.
 slug: gridview-enable-disable-grid-elements
 tags: enable\disable,grid,elements
 published: True

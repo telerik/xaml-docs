@@ -1,7 +1,7 @@
 ---
 title: Styling Column Footers
 page_title: Styling Column Footers
-description: Styling Column Footers
+description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the FooterRow element.
 slug: gridview-styling-column-footers
 tags: styling,column,footers
 published: True

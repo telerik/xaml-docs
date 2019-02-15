@@ -1,7 +1,7 @@
 ---
 title: Basic Filtering
 page_title: Basic Filtering
-description: Basic Filtering
+description: Learn more about the filtering functionality of Telerik's WPF DataGrid that allows the user to easily filter data by one or more columns.
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True

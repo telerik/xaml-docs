@@ -1,7 +1,7 @@
 ---
 title: Filter a Collection Property
 page_title: Filter a Collection Property
-description: Filter a Collection Property
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to filter a collection property.
 slug: gridview-filtering-howto-filter-a-collection-property
 tags: filter,a,collection,property
 published: True

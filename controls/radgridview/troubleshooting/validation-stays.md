@@ -1,7 +1,7 @@
 ---
 title: Validation Error Indicator Remains
 page_title: Validation Error Indicator Remains
-description: Validation Error Indicator Remains
+description: Learn how to troubleshoot when you correct a value but the error indicator is still being displayed by RadGridView - Telerik's WPF DataGrid.
 slug: gridview-troubleshooting-validation-stays
 tags: validation,errors,not,cleared,indicator,remains
 published: True

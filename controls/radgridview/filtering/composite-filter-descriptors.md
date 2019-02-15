@@ -1,7 +1,7 @@
 ---
 title: Composite Filter Descriptors
 page_title: Composite Filter Descriptors
-description: Composite Filter Descriptors
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to apply composite filter descriptors.
 slug: radgridview-filtering-composite-filter-descriptors
 tags: composite,filter,descriptors
 published: False

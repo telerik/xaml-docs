@@ -1,14 +1,14 @@
 ---
 title: Use generic GroupDescriptor
-page_title: Use generic GroupDescriptor
-description: Use generic GroupDescriptor
+page_title: Use Generic GroupDescriptor
+description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how to create generic expression GroupDescriptors. 
 slug: gridview-grouping-generic-descriptor
 tags: use,generic,groupdescriptor
 published: True
 position: 2
 ---
 
-# Use generic GroupDescriptor
+# Use Generic GroupDescriptor
 
 This help article will show you how to create generic expression GroupDescriptors<T> for __RadGridView__.
 ## Generic GroupDescriptor

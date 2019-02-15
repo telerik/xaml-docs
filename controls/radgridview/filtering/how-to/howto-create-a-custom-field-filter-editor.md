@@ -1,7 +1,7 @@
 ---
 title: Create a Custom Field Filter Editor
 page_title: Create a Custom Field Filter Editor
-description: Create a Custom Field Filter Editor
+description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to create a custom field filter editor.
 slug: gridview-filtering-howto-create-a-custom-field-filter-editor
 tags: create,a,custom,field,filter,editor
 published: True

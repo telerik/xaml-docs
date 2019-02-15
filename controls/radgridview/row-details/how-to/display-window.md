@@ -1,14 +1,14 @@
 ---
 title: Display RadGridView Row Details in RadWindow
-page_title: Display RadGridView Row Details in RadWindow
-description: Display RadGridView Row Details in RadWindow
+page_title: Display Row Details in RadWindow
+description: Get started with Telerik's WPF DataGrid and learn how to display Row Details in RadWindow.
 slug: gridview-how-to-display-row-details-window
 tags: display,radgridview,row,details,in,radwindow
 published: True
 position: 1
 ---
 
-# Display RadGridView Row Details in RadWindow
+# Display Row Details in RadWindow
 
 As you know, in order to display Row Details outside [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx), you need to place a [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) control somewhere around [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx) and wire them up. Well, it does not need to be around, really. This article will show how to place it in Telerik’s [RadWindow](https://demos.telerik.com/silverlight/#Window/FirstLook): 
 

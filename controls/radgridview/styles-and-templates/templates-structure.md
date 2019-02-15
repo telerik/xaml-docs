@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Get started with the templates structure of Telerik's WPF DataGrid that allows you to template the grid in order to change it from the inside.
 slug: radgridview-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

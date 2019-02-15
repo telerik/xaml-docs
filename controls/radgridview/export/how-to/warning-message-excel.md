@@ -1,7 +1,7 @@
 ---
 title: Warning message when opening the excel file
 page_title: Warning message when opening the excel file
-description: Warning message when opening the excel file
+description: Learn what to do when you get a warning message after opening excel file with data exprted from RadGridView - Telerik's WPF DataGrid.
 slug: gridview-troubleshooting-warning-message-excel
 tags: warning,message,when,opening,the,excel,file
 published: True

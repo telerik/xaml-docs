@@ -1,7 +1,7 @@
 ---
 title: Use a RadContextMenu in MVVM
 page_title: Use a RadContextMenu in MVVM
-description: Use a RadContextMenu in MVVM
+description: Check out this tutorial demonstrating how to define RadContextMenu, create style for GridViewHeaderCell and define RadGridView - Telerik's WPF DataGrid.
 slug: gridview-how-to-use-radcontextmenu-mvvm
 tags: use,a,radcontextmenu,in,mvvm
 published: True

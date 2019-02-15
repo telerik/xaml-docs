@@ -1,14 +1,14 @@
 ---
 title: Selection
-page_title: Selection
-description: Selection
+page_title: Selection Events
+description: Learn more about the selection events of Telerik's WPF DataGrid that occur each time there is a modification of the SelectedItems / SelectedCells collection.
 slug: gridview-selection-events
 tags: selection
 published: True
 position: 5
 ---
 
-# Selection
+# Selection Events
 
 
 There are a couple of events relevant to the selection in RadGridView: [SelectionChanging](#selectionchanging-event), [SelectionChanged](#selectionchanged-event), [CurrentCellChanged](#currentcellchanged-event), [SelectedCellsChanging](#selectedcellschanging-event) and [SelectedCellsChanged](#selectedcellschanged-event). The sequence of the events depends on the __SelectionUnit__ property:

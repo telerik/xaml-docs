@@ -91,13 +91,15 @@ The ScatterPointSeries can be customized using the same manner as with the [BarS
 		<telerik:ScatterPointSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
 			<telerik:ScatterPointSeries.DefaultVisualStyle>
 				<Style TargetType="Path">
-					<Setter Property="Fill" Value="{Binding DataItem.Color}" />
+					<Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Tag.DataItem.Color}" />
 					<Setter Property="Width" Value="10" />
 					<Setter Property="Height" Value="10" />
 				</Style>
 			</telerik:ScatterPointSeries.DefaultVisualStyle>
 		</telerik:ScatterPointSeries>
 	{{endregion}}
+	
+	> The data context passed in the DefaultVisualStyle of the ScatterPointSeries (and several other series) is not the DataPoint object, but the context of the series. In this case the DataPoint is stored in the Tag property of the Path.
 
 * When using __PointTemplate__ the most common shape you will use is an ellipse so you can define an Ellipse element in the template. 
 	

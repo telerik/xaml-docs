@@ -1,7 +1,7 @@
 ---
 title: InitializingExcelMLStyles
 page_title:  InitializingExcelMLStyles
-description:  InitializingExcelMLStyles
+description:  Check out our examples of defining a style and applying it before exporting data when the InitializingExcelMLStyles event of Telerik's WPF DataGRid is raised.
 slug: gridview-export-events-initializing-excelml-styles
 tags: grid,export,events,initializing,excelml,styles
 published: True

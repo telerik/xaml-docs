@@ -1,7 +1,7 @@
 ---
 title: Row Details Template
 page_title: Row Details Template
-description: Row Details Template
+description: Get started with Telerik's WPF DataGrid and learn how you can apply the Row Details template defined through the RowDetailsTemplate property. 
 slug: radgridview-row-details-template
 tags: row,details,template
 published: True

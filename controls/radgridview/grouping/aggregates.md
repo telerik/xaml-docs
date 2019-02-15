@@ -1,7 +1,7 @@
 ---
 title: Group Aggregates
 page_title: Group Aggregates
-description: Group Aggregates
+description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how you can add aggregate functions to the group rows. 
 slug: gridview-grouping-aggregates
 tags: group,aggregates
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Loading Data from Web Services
 page_title: Loading Data from Web Services
-description: Loading Data from Web Services
+description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from a Web Service.
 slug: gridview-loading-data-from-web-services
 tags: loading,data,from,web,services
 published: True

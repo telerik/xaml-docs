@@ -1,7 +1,7 @@
 ---
 title: DomainDataSource Support
 page_title: DomainDataSource Support
-description: DomainDataSource Support
+description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data using DomainDataSource.
 slug: gridview-domaindatasource-support
 tags: domaindatasource,support
 published: True

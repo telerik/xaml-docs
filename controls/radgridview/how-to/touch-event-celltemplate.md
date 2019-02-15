@@ -1,7 +1,7 @@
 ---
 title: Enable touch events for custom elements
-page_title:  Enable touch events for custom elements
-description: How To Enable Touch Events for Custom Elements
+page_title:  Enable Touch Events for Custom Elements
+description: Check out our example of enabling touch event for a button within a column cell template within RadGridView - Telerik's WPF DataGrid.
 slug: gridview-how-to-enable-touch-events-celltemplate
 tags: touch, event, cell-templates
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Bound/Unbound Columns
 page_title: Bound/Unbound Columns
-description: Bound/Unbound Columns
+description: Learn more about RadGridView's bound columns supporting sorting, filtering, grouping, etc. and unbound columns used for displaying custom content.
 slug: gridview-columns-bound-unbound-columns
 tags: bound/unbound,columns
 published: True

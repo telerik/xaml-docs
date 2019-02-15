@@ -1,7 +1,7 @@
 ---
 title: Programmatic Sorting
 page_title: Programmatic Sorting
-description: Programmatic Sorting
+description: Get started with Telerik's WPF DataGrid and learn how to sort data programmatically using the SortDescriptors collection.
 slug: gridview-sorting-programmatic
 tags: programmatic,sorting
 published: True

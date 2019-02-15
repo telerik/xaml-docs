@@ -1,7 +1,7 @@
 ---
 title: Reordering Columns
 page_title: Reordering Columns
-description: Reordering Columns
+description: Learn more about the column reordering in run-time and the different reordering modes available in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-columns-reordering-columns
 tags: reordering,columns
 published: True
@@ -105,8 +105,6 @@ The order of the columns may also be configured by setting the __DisplayIndex__ 
 {{endregion}}
 
 In this case the columns will be visualized in the following order - Name, Country and Number.
-
-> It is recommended that the __DisplayIndex__ values form an integer sequence. For example: 1,2,3,4,5 etc.
 
 ## Scrolling Behavior while Reordering
 

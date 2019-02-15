@@ -1,7 +1,7 @@
 ---
 title: Modify Foreground Color of Selected/Hovered Row
 page_title: Modify Foreground Color of Selected/Hovered Row
-description: Modify Foreground Color of Selected/Hovered Row
+description: Get started with the Telerik WPF DataGrid and learn how to change the foreground color of all GridViewCells when their parent row is hovered or selected.
 slug: gridview-how-to-modify-foreground-row
 tags: modify,foreground,color,of,selected/hovered,row
 published: True

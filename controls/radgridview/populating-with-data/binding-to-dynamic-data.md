@@ -1,7 +1,7 @@
 ---
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
-description: This article demonstrates how to bind RadGridView to Dynamic Data.
+description: Get started with Telerik's WPF DataGrid and learn how to bind the control to different types of dynamic data.
 slug: gridview-binding-dynamic-data
 tags: binding,dynamic,data
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Search As You Type
 page_title: Search As You Type
-description: RadGridView supports searching through its columns via its search panel. Deferred search as well as searching in hidden columns are also supported.
+description: Learn about searching via search panel, deferred search and searching in hidden columns that are all supported by Telerik's WPF DataGrid.
 slug: radgridview-search-as-you-type
 tags: search-as-you-type
 published: True

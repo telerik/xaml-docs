@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Backward Compatibility
+description: Check out our release notes and learn more about code changes needed after upgrades to the backward compatible RadGridView - Telerik's WPF DataGrid.
 slug: radgridview-backward-compatibility
 tags: backward,compatibility
 published: True

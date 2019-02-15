@@ -1,7 +1,7 @@
 ---
 title: Create Custom Editor with RadGridView
 page_title: Create Custom Editor with RadGridView
-description: Create Custom Editor with RadGridView
+description: Get started with Telerik's WPF DataGrid and learn more about the two approaches to creating custom editor.
 slug: radgridview-howto-create-custom-editor
 tags: create,custom,editor,with,radgridview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling Search Panel
 page_title: Styling Search Panel
-description: Styling Search Panel
+description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the SearchPanel element.
 slug: gridview-styling-search-panel
 tags: styling,search,panel
 published: True
@@ -12,7 +12,7 @@ position: 23
 
 >Before reading this topic, you might find it useful to get familiar with RadGridView's [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
 
-You can style the SearchPanel within the __RadGridView__ control by by creating an appropriate Style that targets the __GridViewSearchPanel__ element.
+You can style the SearchPanel within the __RadGridView__ control by creating an appropriate Style that targets the __GridViewSearchPanel__ element.
  
 You have two options:
 

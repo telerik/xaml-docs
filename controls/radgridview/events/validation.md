@@ -1,14 +1,14 @@
 ---
 title: Validation
-page_title: Validation
-description: Validation
+page_title: Validation Events
+description: Learn more about the validation events of Telerik's WPF DataGrid that occur when the new content entered by the user is about to be committed.
 slug: gridview-events-validation
 tags: validation
 published: True
 position: 1
 ---
 
-# Validation
+# Validation Events
 
 
 The validation events are meant to support the data validation of the user input. They occur when the new content entered by the user is about to be committed.

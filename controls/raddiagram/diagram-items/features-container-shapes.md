@@ -1,7 +1,7 @@
 ---
 title: ContainerShapes
 page_title: ContainerShapes
-description: ContainerShapes
+description: The article describes the containers shapes inside the RadDiagram.
 slug: raddiagram-features-container-shapes
 tags: containershapes
 published: True
@@ -30,8 +30,8 @@ A container can be compared with a __HeaderedItemsControl__ but is also a true d
 
 The __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
-#### __XAML__
-{{region raddiagram-features-container-shapes-0}}
+#### __[XAML] Example 1: Specify container shape element in XAML__
+{{region xaml-raddiagram-features-container-shapes-0}}
     <Grid>
         <telerik:RadDiagram>
             <telerik:RadDiagramContainerShape Content="Container" />
@@ -43,7 +43,7 @@ The __RadDiagramContainerShape__ header is controlled via the __Content__ proper
 
 If you bind the __Content__ property to a business property, you can use the __ContentTemplate__ to apply a __DataTemplate__ and control the way your business data is displayed in the header of the __RadDiagramContainerShape__:		  
 
-#### __XAML__
+#### __[XAML] Example 2: Bind Content property of the container shape__
 {{region raddiagram-features-container-shapes-1}}
     <Grid>
         <telerik:RadDiagram>
@@ -70,7 +70,7 @@ The main purpose of the __RadDiagramContainerShape__ is to allow you to drop sha
 
 You can also populate it manually in xaml:
 			
-#### __XAML__
+#### __[XAML] Example 3: Declarativity populate container shape with items__
 {{region raddiagram-features-container-shapes-2}}	
     <telerik:RadDiagram>
         <telerik:RadDiagramContainerShape  x:Name="containerShape" Content="Container">
@@ -81,19 +81,19 @@ You can also populate it manually in xaml:
 
 Or in code-behind:
 
-#### __C#__
+#### __[C#] Example 4: Populate container shape with items in code behind__
 {{region raddiagram-features-container-shapes-3}}
     containerShape.Items.Add(new RadDiagramShape() { Content = "Shape 1"});			  
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Populate container shape with items in code behind__
 {{region raddiagram-features-container-shapes-4}}
     containerShape.Items.Add(New RadDiagramShape() With {.Content = "Shape 1"})
 {{endregion}}
 
 You can also populate the __RadDiagramContainerShape__ from a collection of business items. You can use the __ItemsSource__ property to bind it to your data objects. For example, if the __RadDiagram.DataContext__ contains a collection of business nodes:	  
 
-#### __C#__
+#### __[C#] Example 5: Create ViewModel which will hold custom collection of business objects__
 {{region raddiagram-features-container-shapes-5}}
     public class MainViewModel
     {
@@ -123,7 +123,7 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
     }    
 {{endregion}}
  
-#### __VB.NET__
+#### __[VB.NET] Example 5: Create ViewModel which will hold custom collection of business objects__
 {{region raddiagram-features-container-shapes-6}}
     Public Class MainViewModel
         Public Property Nodes() As ObservableCollection(Of NodeViewModelBase)
@@ -157,7 +157,7 @@ You can also populate the __RadDiagramContainerShape__ from a collection of busi
 
 You can display that collection in a __RadDiagramContainerShape__:		  
 
-#### __XAML__
+#### __[XAML] Example 6: Bind ItemsSource property of container shape__
 {{region raddiagram-features-container-shapes-7}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
@@ -188,7 +188,7 @@ With Q2 2013, you can make your __RadDiagramContainerShape__ collapsible. In ord
 
 For instance, if you take the above __RadDiagramContainerShape__ data-bound definition, you can extend it to set the __IsCollapsible__ property to __True__ in the following manner:	  
 
-#### __XAML__
+#### __[XAML] Example 7: Set IsCollapsible in XAML__
 {{region raddiagram-features-container-shapes-8}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
@@ -213,13 +213,13 @@ This should result in the following layout:
 
 Below you can find a list of all __RadDiagramContainerShape__ members that are related to the collapsible feature of the shape:
 
-* __IsCollapsible__ - a property of type __bool__ that controls the collapsible state of a __RadDiagramContainerShape__.			
+* __IsCollapsible__: A property of type __bool__ that controls the collapsible state of a __RadDiagramContainerShape__.			
 
-* __IsCollapsed__ - a property of type __bool__ that controls whether a collapsible __RadDiagramContainerShape__ is currently collapsed.			
+* __IsCollapsed__: A property of type __bool__ that controls whether a collapsible __RadDiagramContainerShape__ is currently collapsed.			
 
-* __CollapsedContent__ - gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.		  
+* __CollapsedContent__: A property of type __object__ that gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.		  
 
-#### __XAML__
+#### __[XAML] Example 8: Set CollapsedContent property in XAML__
 {{region raddiagram-features-container-shapes-9}}
     <telerik:RadDiagram x:Name="xDiagram">
         <telerik:RadDiagram.ShapeStyle>
@@ -242,21 +242,21 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
 
 ![Rad Diagram Container Shape Collapsed Content](images/RadDiagram_ContainerShape_CollapsedContent.png)
 
-* __CollapsedContentTemplate__ -  gets or sets a __DataTemplate__ used to display the content inside a collapsed __RadDiagramContainerShape__.
+* __CollapsedContentTemplate__: Gets or sets a __DataTemplate__ used to display the content inside a collapsed __RadDiagramContainerShape__.
 
-* __IsCollapsedChanged__ - an event that is raised by a __RadDiagramContainerShape__ to inform that the collapsed state of the shape is changed.
+* __IsCollapsedChanged__: An event that is raised by a __RadDiagramContainerShape__ to inform that the collapsed state of the shape is changed.
 
 ## Interaction
 
 Below you can find a list of the interactions supported by the __RadDiagramContainerShape__: 
 
-* __Rotation__ - you can rotate only the __RadDiagramContainerShape__. This means that the rotation won't affect the container's children. You can find more information about shapes rotation in [this tutorial]({%slug raddiagrams-features-rotation%}).			
+* __Rotation__: You can rotate only the __RadDiagramContainerShape__. This means that the rotation won't affect the container's children. You can find more information about shapes rotation in [this tutorial]({%slug raddiagrams-features-rotation%}).			
 
-* __Translation__ - you can translate the __ContainerShape__ along with its children.			
+* __Translation__: You can translate the __ContainerShape__ along with its children.			
 
-* __Scaling__ - you can scale only the __ContainerShape__ without affecting its children scale. You can find more information about __RadDiagramItems__ resizing in [this tutorial]({%slug raddiagrams-features-resizing%}).			
+* __Scaling__: You can scale only the __ContainerShape__ without affecting its children scale. You can find more information about __RadDiagramItems__ resizing in [this tutorial]({%slug raddiagrams-features-resizing%}).			
 
-* __Cut and Copy__ - these clipboard operations work only on the __ContainerShape__. The shapes inside the container won't be cut or copied. You can find more information about the clipboard operations supported in the __RadDiagram__ in [this tutorial]({%slug raddiagrams-features-clipboard%}).			
+* __Cut and Copy__: These clipboard operations work only on the __ContainerShape__. The shapes inside the container won't be cut or copied. You can find more information about the clipboard operations supported in the __RadDiagram__ in [this tutorial]({%slug raddiagrams-features-clipboard%}).			
 
 If you do wish to rotate, scale, cut or copy both the container and its children simultaneously, you can do so by dragging a selection rectangle around the container (instead of just clicking-selecting the container). This selection will contain both the container and the children thus allowing you to perform the aforementioned actions on all items at the same time.  
 
@@ -264,13 +264,58 @@ If you do wish to rotate, scale, cut or copy both the container and its children
 
 You can easily customize the visual appearance of the __RadDiagramContainerShape__ by using the following properties:		
 
-* __Background__ - gets or sets the brush that specifies the __RadDiagramContainerShape__ background color.			
+* __Background__: Gets or sets the brush that specifies the __RadDiagramContainerShape__ background color.			
 
-* __BorderBrush__ - gets or sets the brush that specifies the __RadDiagramContainerShape__ border color.			
+* __BorderBrush__: Gets or sets the brush that specifies the __RadDiagramContainerShape__ border color.			
 
-* __BorderThickness__ - gets or sets the width of the __RadDiagramContainerShape__ outline.			
+* __BorderThickness__: Gets or sets the width of the __RadDiagramContainerShape__ outline.			
 
 >tip You can use the __RadDiagram.ContainerShapeStyle__ property to explicitly apply a style on all __RadDiagramContainerShapes__ in a __RadDiagram__ instance.		  
+
+## Container Service
+
+* __CompleteManipulation__: A void method that completes given manipulation. Accept parameter of type __CompositeAsyncStateCommand__.
+* __DetachItemsFromContainer__: A void method that detaches items from a container.
+* __GetChildrenBounds__: This method returns Rect element which wraps the items inside the container.
+* __GetContainerChildrenRecursively__: This method search recursively and return all children of the container.
+* __GetFloatingChildren__: This method return all shapes and connection which are not attched to shapes.
+* __GetParentContainersRecursively__: This method search recursively and return all parent containers.
+* __GetRootItems__: A void method the return all root containers if any exist. 
+* __UpdateContainerLayout__: A void method thats update the container layout. Accept parameter of type __IDragDropAware__.
+
+## How To
+
+* __Prevent dropping a shape in container__: To prevent dropping a shape inside a container, you can set the __IsDropEnabled__ property of the __RadDiagramContainerShape__ to __False__.
+
+## IDragDropAware interface
+
+__RadDiagramContainerShape__ implements __IDragDropAware__ interface. This interface allows you to get notify when a shape is dragged over a container. The interface implements the following events and property:
+
+* __IsDropPossible__: A property of type __bool__ that gets whether drag-drop items in this container is possible.
+* __OnDragEnter__: This event is called when a dragged shape is over a container.
+* __OnDragLeave__: This event is called when a dragged shape leave the boundary of the currently hover container.
+* __OnDrop__: This event is called when a dragged shape is drop over a container.
+
+To subsribe to these events you can create a custom class which derives from __RadDiagramContainerShape__ and override these methods.
+
+#### __[C#] Example : Overriding drag/drop events of container shape__
+{{region raddiagram-features-container-shapes-10}}
+	public class CustomShape : RadDiagramContainerShape
+	{
+		protected override void OnDragEnter(DragItemsEventArgs args)
+		{
+			base.OnDragEnter(args);
+		}
+		protected override void OnDragLeave(DragItemsEventArgs args)
+		{
+			base.OnDragLeave(args);
+		}
+		protected override void OnDrop(DragItemsEventArgs args)
+		{
+			base.OnDrop(args);
+		}
+	}
+{{endregion}}
 
 ## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})

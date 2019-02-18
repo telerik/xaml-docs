@@ -14,7 +14,7 @@ Telerik UI for {{ site.framework_name }} provides built-in support for Microsoft
       
 >For detailed information on the UI Automation check the [UI Automation Fundamentals](http://msdn.microsoft.com/en-us/library/ms753107%28v=vs.110%29.aspx) section on MSDN.
 
-## AutomationMode property
+## AutomationMode
 
 With Q2 2014 SP release of Telerik UI for {{ site.framework_name }} you will have the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__.
 
@@ -35,7 +35,7 @@ __AutomationMode__ property is of enum type and accepts the following values:
 
 The next code snippet shows how the AutomationMode property can be set:
 
-#### __C#__
+#### __[C#] Example 1: Setting AutomationMode__
 
 {{region common-ui-automation_0}}
 	using Telerik.Windows.Automation.Peers; 
@@ -49,6 +49,32 @@ The next code snippet shows how the AutomationMode property can be set:
 	    }
 	}
 {{endregion}}
+
+## UseDefaultHelpText
+
+By default, most Telerik UI for {{ site.framework_name }} controls will return their **class name** as the **HelpText** when using UI automation.
+
+With **R1 2019 SP1** we introduced a new boolean **UseDefaultHelpText** property of the AutomationManager which determines whether the automation peer of the controls will return a predefined string (the class name) as HelpText.
+
+The default value is **true** - the class name of the control will be returned as the HelpText if the **GetHelpTextCore** method is overridden in the respective automation peer class. When set to **false**, however, the value set as the **AutomationProperties.HelpText** will be returned.
+
+The UseDefaultHelpText can be set similarly to the **AutomationMode** as demonstrated in **Example 2**.
+
+#### __[C#] Example 2: Setting UseDefaultHelpText__
+
+{{region common-ui-automation_1}}
+	using Telerik.Windows.Automation.Peers; 
+	
+	public partial class App : Application
+	{
+	    public App()
+	    {
+	        AutomationManager.UseDefaultHelpText = false;
+	        this.InitializeComponent();
+	    }
+	}
+{{endregion}}
+
 {% if site.site_name == 'WPF' %} 
 ## See Also
  

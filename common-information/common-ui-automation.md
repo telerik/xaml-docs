@@ -52,7 +52,7 @@ The next code snippet shows how the AutomationMode property can be set:
 
 ## UseDefaultHelpText
 
-By default, most By default most Telerik UI for {{ site.framework_name }} controls will return their **class name** as the **HelpText** when using UI automation.
+By default, most Telerik UI for {{ site.framework_name }} controls will return their **class name** as the **HelpText** when using UI automation.
 
 With **R1 2019 SP1** we introduced a new boolean **UseDefaultHelpText** property of the AutomationManager which determines whether the automation peer of the controls will return a predefined string (the class name) as HelpText.
 

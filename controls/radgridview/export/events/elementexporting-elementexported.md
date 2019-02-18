@@ -1,6 +1,6 @@
 ---
-title: ElementExporting & ElementExported
-page_title:  ElementExporting & ElementExported
+title: ElementExporting and ElementExported
+page_title:  ElementExporting and ElementExported
 description:  Learn how to utilize the ElementExporting and ElementExported events which are fired when you export data from RadGridView - Telerik's WPF DataGrid.
 slug: gridview-export-events-elementexporting-elementexported
 tags: grid,export,events,elementexporting,elementexported
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ElementExporting & ElementExported
+# ElementExporting and ElementExported
 
 You have more control over the exportation by utilizing the export events which are fired when you export data from RadGridView.
 

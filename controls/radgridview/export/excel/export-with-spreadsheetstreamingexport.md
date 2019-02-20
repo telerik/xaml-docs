@@ -87,6 +87,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **ShowColumnGroups**: Specifies whether common column headers should be included on export.
 - **ShowGroupHeaderRowAggregates**: Specifies whether group header aggregates should be included on export.
 - **HiddenColumnExportOption**: Gets or sets a value indicating how hidden columns are exported. The **HiddenColumnExportOptions** enumeration provides three possible options: **ExportAlways**, **DoNotExport** and **ExportAsHidden**.
+- **ColumnWidth**: Gets or sets the width of the columns that are exported.
 - **Items**: The collection of items to be exported.
 
 #### __[C#] Example 3: Export RadGridView with headers, footers and default styles__

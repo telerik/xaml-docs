@@ -3230,6 +3230,11 @@ defaults:
         path: "knowledge-base"
     values:
         res_type: "kb"
+-
+    scope:
+        path: "controls/radgridview"
+    values:
+        title_prefix: "WPF DataGrid"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

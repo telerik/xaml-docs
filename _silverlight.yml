@@ -123,6 +123,14 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/silverlight"
 
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
+
 # Define any custom fields that you use in the site here
 framework_name: Silverlight
 

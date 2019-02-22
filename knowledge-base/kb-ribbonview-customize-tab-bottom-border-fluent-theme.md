@@ -1,10 +1,10 @@
 ---
-title: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
-description: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
+title: Custom Style for selected tab border color and thickness
+description: Create a style for the Underline Border of the selected tab. Change its color and thickness in code behind. 
 type: how-to
 page_title: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
 slug: kb-ribbonview-customize-tab-bottom-border-fluent-theme
-position: 
+position: 0
 tags: childrenoftype,underline
 ticketid: 1387740
 res_type: kb
@@ -24,18 +24,18 @@ res_type: kb
 
 ## Description
 
-By default the selected RadRibbonTab control has a 4 pixels high blue-colored border. The following example shows how to customize this without extracting the ControlTemplate of RadRibbonTab.
+How to change the color and thickness of the blue underline border of the selected tab in RadRibbonView.
 
 ## Solution
 
 To customize the RadRibbonTab in code follow the next few steps:
 
 1. Subscribe to the Loaded event of RadRibbonTab.
-2. Call the [ChildrenOfType<T>()]({%slug common-visual-tree-helpers%}) method with the loaded RadRibbonTab control to get all Border elements. 
+2. In the event handler call the [ChildrenOfType<T>()]({%slug common-visual-tree-helpers%}) method to get all Border elements of the loaded RadRibbonTab. 
 3. Call the FirstOrDefault() Linq method to find the Border with x:Name="SelectedVisual". This is the element presenting the border around the selected tab.
 4. Set the BorderBrush and BorderThicknes properties of the Border control.
 
-#### [XAML] Subscribing to the Loaded event
+#### XAML
 {{region kb-ribbonview-customize-tab-bottom-border-fluent-theme-0}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonTab Header="Home" Loaded="RadRibbonTab_Loaded" />
@@ -44,7 +44,7 @@ To customize the RadRibbonTab in code follow the next few steps:
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### [C#] Customizing the border in code
+#### C#
 {{region kb-ribbonview-customize-tab-bottom-border-fluent-theme-1}}
 	private void RadRibbonTab_Loaded(object sender, RoutedEventArgs e)
 	{
@@ -58,10 +58,11 @@ To customize the RadRibbonTab in code follow the next few steps:
 	}
 {{endregion}}
 
-#### Before (left) and after (right) visual example
 ![Before (left) and after (right) visual example](images/kb-ribbonview-customize-tab-bottom-border-fluent-theme-0.png)
 
 ## See Also
 * [Visual Tree Helpers]({%slug common-visual-tree-helpers%})
 * [RibbonView Getting Started]({%slug radribbonview-gettingstarted%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
 

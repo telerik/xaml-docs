@@ -196,7 +196,7 @@ intro_columns:
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "DomainDataSource": "dds-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "GridView": "gridview-overview2"
+      "DataGrid": "gridview-overview2"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"
       "PropertyGrid": "radpropertygrid-overview"

@@ -3272,6 +3272,7 @@ footer:
     "Demos": https://demos.telerik.com/wpf/
     "SDK Samples Browser": https://demos.telerik.com/xaml-sdkbrowser/
     "Sample Applications": https://www.telerik.com/wpf/sample-applications
+    "WPF DataGrid Product Page": https://www.telerik.com/products/wpf/gridview.aspx
 -
   title: "Support Resources"
   links: 
@@ -3309,7 +3310,7 @@ intro_columns:
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "GridView": "gridview-overview2"
+      "DataGrid": "gridview-overview2"
       "VirtualGrid": "virtualgrid-overview"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"

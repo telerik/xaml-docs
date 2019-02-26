@@ -21,7 +21,6 @@ ticketid: 1388550
 	</tr>
 </table>
 
-
 ## Description
 
 How to autofit the content area of RadRibbonView to the elements in the selected tab.

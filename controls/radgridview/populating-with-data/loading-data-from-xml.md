@@ -1,7 +1,7 @@
 ---
 title: Loading Data from XML
 page_title: Loading Data from XML
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from XML.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from XML.
 slug: gridview-loading-data-from-xml
 tags: loading,data,from,xml
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Modifying Group Panel
 page_title: Modifying Group Panel
-description: Learn how you can make basic modifications of the Group Panel by using the GroupPanelBackground and GroupPanelForeground properties of Telerik's WPF DataGrid.
+description: Learn how you can make basic modifications of the Group Panel by using the GroupPanelBackground and GroupPanelForeground properties of Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-modifying-group-panel
 tags: modifying,group,panel
 published: True

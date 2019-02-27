@@ -1,7 +1,7 @@
 ---
 title: Containers' Size is Increased
 page_title: Containers' Size is Increased
-description: Get started with Telerik's WPF DataGrid allowing you to adjust the size of the containers based on the size of the content to be shown in them. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing you to adjust the size of the containers based on the size of the content to be shown in them. 
 slug: gridview-troubleshooting-cell-size
 tags: containers',size,is,increased
 published: True

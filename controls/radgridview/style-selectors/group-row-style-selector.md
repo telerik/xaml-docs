@@ -1,7 +1,7 @@
 ---
 title: GroupRowStyleSelector
 page_title: GroupRowStyleSelector
-description: Learn how to style groups of grid rows differently by using the GroupRowStyleSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style groups of grid rows differently by using the GroupRowStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-group-row-style-selector
 tags: grouprowstyleselector
 published: True

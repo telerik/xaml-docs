@@ -1,7 +1,7 @@
 ---
 title: Column Filter Descriptors
 page_title: Column Filter Descriptors
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to apply column filter descriptors.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to apply column filter descriptors.
 slug: radgridview-filtering-icolumn-filter-descriptors
 tags: column,filter,descriptors
 published: True

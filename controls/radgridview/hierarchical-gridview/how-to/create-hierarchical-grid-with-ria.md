@@ -1,7 +1,7 @@
 ---
 title: How to Load data in a hierarchical grid with RIA Services
 page_title: How to Load data in a hierarchical grid with RIA Services
-description: Learn about the couple of options for filling up Telerik's WPF DataGrid when using RIA Services and domain data source.
+description: Learn about the couple of options for filling up Telerik's {{ site.framework_name }} DataGrid when using RIA Services and domain data source.
 slug: gridview-how-to-create-hierarchical-grid-with-ria
 tags: how,to,load,data,in,a,hierarchical,grid,with,ria,services
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Why doesn’t my column show the filtering funnel icon?
 page_title: Column doesn’t show the filtering funnel icon
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn what to do when a column doesn’t show the filtering funnel icon.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn what to do when a column doesn’t show the filtering funnel icon.
 slug: gridview-filtering-faq-no-funnel-icon
 tags: why,doesn’t,my,column,show,the,filtering,funnel,icon?
 published: True

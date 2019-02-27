@@ -1,7 +1,7 @@
 ---
 title: Programmatic Selection
 page_title: Programmatic Selection
-description: Get started with Telerik's WPF DataGrid and learn how to use a programmatic approach to data selection.  
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to use a programmatic approach to data selection.  
 slug: radgridview-selection-programmatic-selection
 tags: programmatic,selection
 published: True

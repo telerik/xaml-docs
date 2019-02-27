@@ -1,7 +1,7 @@
 ---
 title: Loading Data from WCF Services
 page_title: Loading Data from WCF Services
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from a WCF Service.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from a WCF Service.
 slug: gridview-loading-data-from-wcf-services
 tags: loading,data,from,wcf,services
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Read about data binding, grouping, sorting, filtering, in-place editing, frozen columns and many other key features of RadGridView - Telerik's WPF DataGrid.
+description: Read about data binding, grouping, sorting, filtering, in-place editing, frozen columns and many other key features of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-key-features
 tags: key,features
 published: True

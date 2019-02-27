@@ -1,7 +1,7 @@
 ---
 title: Multiple Selection
 page_title: Multiple Selection
-description: Get started with Telerik's WPF DataGrid allowing users to select more than one item from the displayed data.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing users to select more than one item from the displayed data.
 slug: gridview-multiple-selection
 tags: multiple,selection
 published: True

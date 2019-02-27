@@ -1,7 +1,7 @@
 ---
 title: Get aggregates from a group
 page_title: Get aggregates from a group
-description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how to access aggregates in a specific group.
+description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to access aggregates in a specific group.
 slug: gridview-grouping-how-to-get-aggregates
 tags: get,aggregates,from,a,group
 published: True

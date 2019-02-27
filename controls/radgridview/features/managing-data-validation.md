@@ -1,7 +1,7 @@
 ---
 title: Validating
 page_title: Data Validation
-description: Learn more about the data validation feature which allows you to take complete control of the data entered in the cells of RadGridView - Telerik's WPF DataGrid.
+description: Learn more about the data validation feature which allows you to take complete control of the data entered in the cells of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-managing-data-validation
 tags: validating
 published: True

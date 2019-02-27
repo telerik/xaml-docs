@@ -1,7 +1,7 @@
 ---
 title: BoundColumnBase
 page_title: BoundColumnBase
-description: Learn how to easily bind data, format it and edit it using editors when it comes to the BoundColumnBase in RadGridView - Telerik's WPF DataGrid.
+description: Learn how to easily bind data, format it and edit it using editors when it comes to the BoundColumnBase in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-column-types-boundcolumnbase
 tags: boundcolumnbase
 published: True

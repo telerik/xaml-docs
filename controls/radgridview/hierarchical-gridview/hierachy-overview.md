@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Hierarchy Overview
-description: Learn how you can display hierarchical data in the form of nested tables when working with RadGridView - Telerik's WPF DataGrid. 
+description: Learn how you can display hierarchical data in the form of nested tables when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-hierachy-overview
 tags: overview
 published: True

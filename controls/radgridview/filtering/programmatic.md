@@ -1,7 +1,7 @@
 ---
 title: Programmatic Filtering
 page_title: Programmatic Filtering
-description: Read this article to learn how you can use the rich API of Telerik's WPF DataGrid to enable programmatic filtering.
+description: Read this article to learn how you can use the rich API of Telerik's {{ site.framework_name }} DataGrid to enable programmatic filtering.
 slug: gridview-filtering-programmatic
 tags: programmatic,filtering
 published: True

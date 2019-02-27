@@ -1,7 +1,7 @@
 ---
 title: Configure The Filtering Mode
 page_title: Configure The Filtering Mode
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to configure the filtering mode.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to configure the filtering mode.
 slug: gridview-filtering-howto-configure-the-filtering-mode
 tags: configure,the,filtering,mode
 published: True

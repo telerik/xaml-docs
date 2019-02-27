@@ -1,7 +1,7 @@
 ---
 title: Create Custom DateTimePicker Column
 page_title: Create Custom DateTimePicker Column
-description: Check out this tutorial on creating a custom column in Telerik's WPF DataGrid by using a UserControl with RadDatePicker and RadTimePicker.  
+description: Check out this tutorial on creating a custom column in Telerik's {{ site.framework_name }} DataGrid by using a UserControl with RadDatePicker and RadTimePicker.  
 slug: gridview-how-to-create-custom-date-column
 tags: create,custom,datetimepicker,column
 published: False

@@ -1,7 +1,7 @@
 ---
 title: Cascading Distinct Values
 page_title: Cascading Distinct Values
-description: Read this article to learn how you can avoid seeing the distinct values that are left after all other filters have been applied in RadGridView - Telerik's WPF DataGrid. 
+description: Read this article to learn how you can avoid seeing the distinct values that are left after all other filters have been applied in RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-filtering-cascading-distinct-values
 tags: cascading,distinct,values
 published: False

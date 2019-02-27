@@ -1,7 +1,7 @@
 ---
 title: Applied IValueConverter on the DataMemberBinding
 page_title: Applied IValueConverter on the DataMemberBinding
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn why IValueConverters should be used for presentation purposes only.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn why IValueConverters should be used for presentation purposes only.
 slug: gridview-filtering-faq-ivalueconverter-and-filtering
 tags: applied,ivalueconverter,on,the,datamemberbinding
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Create Custom Column Editor
 page_title: Create Custom Column Editor
-description: This tutorial will guide you through the business object definition, grid declaration, and other steps for creating a custom column in Telerik's WPF DataGrid.
+description: This tutorial will guide you through the business object definition, grid declaration, and other steps for creating a custom column in Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-create-custom-column-editor
 tags: create,custom,column,editor
 published: True

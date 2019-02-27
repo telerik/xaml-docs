@@ -1,7 +1,7 @@
 ---
 title: Aggregates are not updated
 page_title: Aggregates are not updated
-description: Learn how to solve the problem of not having aggregates updated when a value is modified in code within RadGridView - Telerik's WPF DataGrid.
+description: Learn how to solve the problem of not having aggregates updated when a value is modified in code within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-aggregates-not-updated
 tags: aggregates,are,not,updated
 published: True

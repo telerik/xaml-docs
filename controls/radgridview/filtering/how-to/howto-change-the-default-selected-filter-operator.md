@@ -1,7 +1,7 @@
 ---
 title: Change the Default Selected Filter Operators
 page_title: Change the Default Selected Filter Operators
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to change the default selected filter operators.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to change the default selected filter operators.
 slug: gridview-filtering-howto-change-the-default-selected-filter-operator
 tags: change,the,default,selected,filter,operators
 published: True

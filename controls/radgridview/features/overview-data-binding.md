@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Learn how to set the ItemsSource property as a data binding mechanism in order to display data in RadGridView - Telerik's WPF DataGrid.
+description: Learn how to set the ItemsSource property as a data binding mechanism in order to display data in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-overview-data-binding
 tags: data,binding
 published: True

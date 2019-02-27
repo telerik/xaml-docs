@@ -1,7 +1,7 @@
 ---
 title: ElementExportingToDocument and ElementExportedToDocument
 page_title:  ElementExportingToDocument and ElementExportedToDocument
-description:  Learn how to utilize the ElementExportingToDocument and ElementExportedToDocument events which are fired when you export data from Telerik's WPF DataGrid.
+description:  Learn how to utilize the ElementExportingToDocument and ElementExportedToDocument events which are fired when you export data from Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-events-elementexporting-elementexported-todocument
 tags: grid,export,events,elementexporting,elementexported,todocument
 published: True

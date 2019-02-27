@@ -1,7 +1,7 @@
 ---
 title: Mixed Selection
 page_title: Mixed Selection
-description: Get started with Telerik's WPF DataGrid allowing the user to select a cell as well as to select a row. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing the user to select a cell as well as to select a row. 
 slug: gridview-mixed-selection
 tags: mixed,selection
 published: True

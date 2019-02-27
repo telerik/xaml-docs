@@ -1,7 +1,7 @@
 ---
 title: Modifying Default Styles
 page_title: Modifying Default Styles
-description: Get started with Telerik's WPF DataGrid and learn about the two ways of modifying the default style of the control.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the two ways of modifying the default style of the control.
 slug: gridview-modifying-default-styles
 tags: modifying,default,styles
 published: True

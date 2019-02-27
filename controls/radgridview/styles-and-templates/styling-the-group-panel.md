@@ -1,7 +1,7 @@
 ---
 title: Styling Group Panel
 page_title: Styling Group Panel
-description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the GroupPanel element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the GroupPanel element.
 slug: radgridview-styles-and-templates-styling-the-group-panel
 tags: styling,group,panel
 published: True

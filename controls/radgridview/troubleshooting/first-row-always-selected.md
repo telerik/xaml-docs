@@ -1,7 +1,7 @@
 ---
 title: First Row is Always Selected
 page_title: First Row is Always Selected
-description: Get staretd with Telerik's WPF DataGrid and learn how not to have the first row selected by default.
+description: Get staretd with Telerik's {{ site.framework_name }} DataGrid and learn how not to have the first row selected by default.
 slug: gridview-troubleshooting-first-row-always-selected
 tags: first,row,is,always,selected
 published: True

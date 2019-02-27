@@ -1,7 +1,7 @@
 ---
 title: IsExpandedBinding and IsExpandableBinding
 page_title: IsExpandedBinding and IsExpandableBinding
-description: Learn how to synchronize the expanded and expandable states of the rows with the view model when working with RadGridView - Telerik's WPF DataGrid. 
+description: Learn how to synchronize the expanded and expandable states of the rows with the view model when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: radgridview-isexpandedbinding-isexpandablebinding
 tags: isexpandedbinding,and,isexpandablebinding
 published: True

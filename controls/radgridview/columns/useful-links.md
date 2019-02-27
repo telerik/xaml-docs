@@ -1,7 +1,7 @@
 ---
 title: Useful Links
 page_title: Useful Links
-description: Get started with our list of useful links to online demos, how-to articles, blog posts, and examples on GitHub related to RadGridView - Telerik's WPF DataGrid.
+description: Get started with our list of useful links to online demos, how-to articles, blog posts, and examples on GitHub related to RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-useful-links
 tags: useful,links
 published: True

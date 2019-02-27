@@ -1,7 +1,7 @@
 ---
 title: Save and Load Filter Settings
 page_title: Save and Load Filter Settings
-description: Learn how you can create a simple property bag class in order to save and load column filters in RadGridView - Telerik's WPF DataGrid.
+description: Learn how you can create a simple property bag class in order to save and load column filters in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-filtering-howto-save-and-load-filter-settings
 tags: save,and,load,filter,settings
 published: True

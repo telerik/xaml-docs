@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Template Selectors Overview
-description: Learn how to apply grid data templates based on custom logic with the help of the template selector within RadGridView - Telerik's WPF DataGrid.
+description: Learn how to apply grid data templates based on custom logic with the help of the template selector within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-template-selectors-overview
 tags: overview
 published: True

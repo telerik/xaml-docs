@@ -1,7 +1,7 @@
 ---
 title: CellTemplateSelector
 page_title: CellTemplateSelector
-description: Learn how to apply different data templates to grid cells by using the CellTemplateSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to apply different data templates to grid cells by using the CellTemplateSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-cell-template-selector
 tags: celltemplateselector
 published: True

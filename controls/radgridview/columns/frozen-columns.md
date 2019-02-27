@@ -1,7 +1,7 @@
 ---
 title: Frozen Columns
 page_title: Frozen Columns
-description: Find out how easily you can select columns and exclude them from the horizontal or vertical scrolling when using RadGridView - Telerik's WPF DataGrid.
+description: Find out how easily you can select columns and exclude them from the horizontal or vertical scrolling when using RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-frozen-columns
 tags: frozen,columns
 published: True

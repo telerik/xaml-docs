@@ -1,7 +1,7 @@
 ---
 title: Styling Validation Tooltips
 page_title: Styling Validation Tooltips
-description: Get started with Telerik's WPF DataGrid and learn how to style its validation tooltips.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style its validation tooltips.
 slug: styling-validation-tooltip-in-gridview
 tags: styling,validation,tooltips,gridview
 published: True

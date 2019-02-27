@@ -1,7 +1,7 @@
 ---
 title: Styling Cells
 page_title: Styling Cells
-description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the Cell element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the Cell element.
 slug: gridview-styling-cell
 tags: styling,cells
 published: True

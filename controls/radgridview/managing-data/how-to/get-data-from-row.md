@@ -1,7 +1,7 @@
 ---
 title: Get the data from a row
 page_title: Get the data from a row
-description: Check out two scenarios for obtaining data from a row - getting the data from the selected row and getting the data from any row in Telerik's WPF DataGrid.
+description: Check out two scenarios for obtaining data from a row - getting the data from the selected row and getting the data from any row in Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-get-data-from-row
 tags: get,the,data,from,a,row
 published: True

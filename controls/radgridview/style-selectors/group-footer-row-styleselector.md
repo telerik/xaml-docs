@@ -1,7 +1,7 @@
 ---
 title: GroupFooterRowStyleSelector
 page_title: GroupFooterRowStyleSelector
-description: Learn how to style groups of grid footer rows differently by using the GroupFooterRowStyleSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style groups of grid footer rows differently by using the GroupFooterRowStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-group-footer-row-style-selector
 tags: groupfooterrowstyleselector
 published: True

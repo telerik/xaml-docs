@@ -1,7 +1,7 @@
 ---
 title: Grouping events
 page_title: Grouping Events
-description: Learn more about the grouping events of Telerik's WPF DataGrid that occur either when data is grouped from the UI or when a group row is expanded or collapsed.
+description: Learn more about the grouping events of Telerik's {{ site.framework_name }} DataGrid that occur either when data is grouped from the UI or when a group row is expanded or collapsed.
 slug: gridview-events-grouping
 tags: grouping,events
 published: True

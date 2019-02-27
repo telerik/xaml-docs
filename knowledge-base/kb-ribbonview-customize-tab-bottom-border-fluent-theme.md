@@ -1,6 +1,6 @@
 ---
-title: Custom Style for selected tab border color and thickness
-description: Create a style for the Underline Border of the selected tab. Change its color and thickness in code behind. 
+title: Custom Style for Selected Tab Border Color and Thickness in Fluent theme
+description: Create a style for the underline border of the selected tab. Change its color and thickness in code behind. 
 type: how-to
 page_title: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
 slug: kb-ribbonview-customize-tab-bottom-border-fluent-theme
@@ -24,15 +24,15 @@ res_type: kb
 
 ## Description
 
-How to change the color and thickness of the blue underline border of the selected tab in RadRibbonView.
+How to change the color and thickness of the blue underline border of the selected tab in RadRibbonView in Fluent Theme.
 
 ## Solution
 
-To customize the RadRibbonTab in code follow the next few steps:
+To customize RadRibbonTab in code, follow the next few steps:
 
 1. Subscribe to the Loaded event of RadRibbonTab.
 2. In the event handler call the [ChildrenOfType<T>()]({%slug common-visual-tree-helpers%}) method to get all Border elements of the loaded RadRibbonTab. 
-3. Call the FirstOrDefault() Linq method to find the Border with x:Name="SelectedVisual". This is the element presenting the border around the selected tab.
+3. Call the FirstOrDefault() method (from the System.Linq namespace) to find the Border with x:Name="SelectedVisual". This is the element presenting the border around the selected tab.
 4. Set the BorderBrush and BorderThicknes properties of the Border control.
 
 #### XAML

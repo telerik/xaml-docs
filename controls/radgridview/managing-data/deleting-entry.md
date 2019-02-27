@@ -1,7 +1,7 @@
 ---
 title: Deleting an Entry
 page_title: Deleting an Entry
-description: Learn how to remove manually the desired items from the ItemsSource collection of Telerik's WPF DataGrid in order to delete an entry.
+description: Learn how to remove manually the desired items from the ItemsSource collection of Telerik's {{ site.framework_name }} DataGrid in order to delete an entry.
 slug: gridview-managing-data-deleting-entry
 tags: deleting,an,entry
 published: True

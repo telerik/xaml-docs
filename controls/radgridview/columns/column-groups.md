@@ -1,7 +1,7 @@
 ---
 title: Column Groups
 page_title: Column Groups
-description: Learn how to combine grid columns in column groups visually represented by common headers when using RadGridView - Telerik's WPF DataGrid. 
+description: Learn how to combine grid columns in column groups visually represented by common headers when using RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-column-groups
 tags: merged,column, headers, groups
 published: True

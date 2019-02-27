@@ -1,7 +1,7 @@
 ---
 title: Enable Horizontal and Vertical Scrollbar 
 page_title: Enable Horizontal and Vertical Scrollbar 
-description: Learn how to set the ScrollViewer's attached properties in order to enable horizontal and vertical scrollbars in RadGridView - Telerik's WPF DataGrid. 
+description: Learn how to set the ScrollViewer's attached properties in order to enable horizontal and vertical scrollbars in RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: radgridview-how-to-enable-horiz-vertic-scrollbar
 tags: enable,horizontal,and,vertical,scrollbar,
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Export DateTime Value
 page_title: Export DateTime Value
-description: Read this article to learn how to export DateTime values from Telerik's WPF DataGrid without having the values appear as numbers.
+description: Read this article to learn how to export DateTime values from Telerik's {{ site.framework_name }} DataGrid without having the values appear as numbers.
 slug: gridview-export-datetime
 tags: export, datetime, value
 published: True

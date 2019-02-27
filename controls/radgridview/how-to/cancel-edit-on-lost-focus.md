@@ -1,7 +1,7 @@
 ---
 title: Cancel Edit On LostFocus
 page_title:  Cancel Edit On LostFocus
-description: Learn how to control what happens if the focus of a grid element is lost when working with RadGridView - Telerik's WPF DataGrid.
+description: Learn how to control what happens if the focus of a grid element is lost when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-cancel-edit-on-lost-focus
 tags: cancel,edit,lost,focus,actiononlostfocus
 published: True

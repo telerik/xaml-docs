@@ -1,7 +1,7 @@
 ---
 title: Turn off SortingState.None
 page_title: Turn off SortingState.None
-description: Get started with Telerik's WPF DataGrid and learn how to turn off returning to the None sorting state when you click on the column header.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to turn off returning to the None sorting state when you click on the column header.
 slug: gridview-sorting-none
 tags: turn,off,sortingstate.none
 published: True

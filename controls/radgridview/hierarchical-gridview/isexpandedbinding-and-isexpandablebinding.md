@@ -1,7 +1,7 @@
 ---
 title: IsExpandedBinding and IsExpandableBinding
 page_title: IsExpandedBinding and IsExpandableBinding
-description: Learn about the properties of Telerik's WPF DataGrid that you can use to synchronize the expanded and expandable states of the rows with the view model.
+description: Learn about the properties of Telerik's {{ site.framework_name }} DataGrid that you can use to synchronize the expanded and expandable states of the rows with the view model.
 slug: radgridview--hierarchy-isexpandedbinding-isexpandablebinding
 tags: isexpandedbinding,and,isexpandablebinding
 published: True

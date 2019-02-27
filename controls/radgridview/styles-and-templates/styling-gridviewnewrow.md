@@ -1,7 +1,7 @@
 ---
 title: Styling GridViewNewRow
 page_title: Styling GridViewNewRow
-description: Get started with Telerik's WPF DataGrid and learn how to you can explicitly or implicitly style the GridViewNewRow
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to you can explicitly or implicitly style the GridViewNewRow
 slug: gridview-styling-gridviewnewrow
 tags: styling,new,row
 published: True

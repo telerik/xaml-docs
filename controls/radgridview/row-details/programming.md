@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Row Details Events
-description: Get started with Telerik's WPF DataGrid and learn more about the events exposed by the control regarding the Row Details. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn more about the events exposed by the control regarding the Row Details. 
 slug: radgridview-row-details-programming
 tags: events
 published: True

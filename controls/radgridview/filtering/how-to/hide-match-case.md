@@ -1,7 +1,7 @@
 ---
 title: Hide the Match Case option of the Filtering control
 page_title: Hide the Match Case option of the Filtering control
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to hide the Match Case option of the filtering control.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to hide the Match Case option of the filtering control.
 slug: gridview-how-to-hide-match-case
 tags: hide,the,match,case,option,of,the,filtering,control
 published: True

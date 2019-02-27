@@ -1,7 +1,7 @@
 ---
 title: MergedCellsStyleSelector
 page_title: MergedCellsStyleSelector
-description: Learn how to style merged grid cells differently by using the MergedCellsStyleSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style merged grid cells differently by using the MergedCellsStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-merged-cells-style-selector
 tags: mergedcellstyleselector
 published: True

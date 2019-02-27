@@ -1,7 +1,7 @@
 ---
 title: Aggregate Functions
 page_title: Aggregate Functions
-description: See examples of how you can display or add an aggregate function for a certain column in RadGridView - Telerik's WPF DataGrid.
+description: See examples of how you can display or add an aggregate function for a certain column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-aggregate-functions
 tags: aggregate,functions
 published: True

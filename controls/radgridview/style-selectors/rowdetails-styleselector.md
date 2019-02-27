@@ -1,7 +1,7 @@
 ---
 title: RowDetailsStyleSelector
 page_title: RowDetailsStyleSelector
-description: Learn how to style grid row details conditionally by using the RowDetailsStyleSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style grid row details conditionally by using the RowDetailsStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-rowdetails-styleselector
 tags: rowdetailsstyleselector
 published: True

@@ -1,7 +1,7 @@
 ---
 title: External Row Details
 page_title: External Row Details
-description: Get started with Telerik's WPF DataGrid and learn how you can display Row Details outside the control.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can display Row Details outside the control.
 slug: radgridview-row-details-external-row-details
 tags: external,row,details
 published: True

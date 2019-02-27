@@ -1,7 +1,7 @@
 ---
 title: Change Background for Disabled Cells
 page_title: Change Background for Disabled Cells
-description: Check out our tutorial showing you how to customize the look of disabled GridViewCell elements in RadGridView - Telerik's WPF DataGrid.
+description: Check out our tutorial showing you how to customize the look of disabled GridViewCell elements in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-set-background-disabled-cell
 tags: change,background,for,disabled,grid,elements
 published: True

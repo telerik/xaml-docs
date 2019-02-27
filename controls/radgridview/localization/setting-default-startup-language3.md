@@ -1,7 +1,7 @@
 ---
 title: Setting Default Startup Language
 page_title: Setting Default Startup Language
-description: Learn how to use the CustomLocalization Manager in order to translate Telerik's WPF DataGrid in another language.
+description: Learn how to use the CustomLocalization Manager in order to translate Telerik's {{ site.framework_name }} DataGrid in another language.
 slug: gridview-localization-setting-default-startup-language3
 tags: setting,default,startup,language
 published: True

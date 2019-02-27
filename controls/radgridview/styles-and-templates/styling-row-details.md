@@ -1,7 +1,7 @@
 ---
 title: Styling Row Details
 page_title: Styling Row Details
-description: Learn how to create an appropriate style targeting the DetailsPresenter element in Telerik's WPF DataGrid in order to style all row details of your application.
+description: Learn how to create an appropriate style targeting the DetailsPresenter element in Telerik's {{ site.framework_name }} DataGrid in order to style all row details of your application.
 slug: gridview-styling-row-details
 tags: styling,row,details
 published: True

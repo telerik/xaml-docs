@@ -1,7 +1,7 @@
 ---
 title: Programmatic Filtering
 page_title: Filter Programmatically
-description: Read this article to learn how to filter programmatically in Telerik's WPF DataGrid through different filter descriptors.
+description: Read this article to learn how to filter programmatically in Telerik's {{ site.framework_name }} DataGrid through different filter descriptors.
 slug: gridview-programmatic-filtering
 tags: programmatic,filtering
 published: False

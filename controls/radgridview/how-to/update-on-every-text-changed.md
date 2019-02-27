@@ -1,7 +1,7 @@
 ---
 title: Using TextBoxBehavior
 page_title: Using TextBoxBehavior
-description: Check out which behavior pattern you can use in order to change the default behavior of a TextBox within RadGridView - Telerik's WPF DataGrid.
+description: Check out which behavior pattern you can use in order to change the default behavior of a TextBox within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-update-on-every-text-changed
 tags: using,textboxbehavior
 published: True

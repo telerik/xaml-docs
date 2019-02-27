@@ -1,7 +1,7 @@
 ---
 title: Respect Application's CurrentCulture in Custom Format Strings
 page_title: CurrentCulture in Custom Format Strings
-description: Find out which property you can use to control whether CurrentCulture or Language are respected within RadGridView - Telerik's WPF DataGrid.
+description: Find out which property you can use to control whether CurrentCulture or Language are respected within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-custom-format
 tags: respect,application,custom,format,string,currentculture
 published: True

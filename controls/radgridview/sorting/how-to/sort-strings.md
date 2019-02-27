@@ -1,7 +1,7 @@
 ---
 title: Sort Strings
 page_title: Sort Strings
-description: Get started with Telerik's WPF DataGrid and learn how to sort strings which are not compared like numbers in the .NET Platform. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to sort strings which are not compared like numbers in the .NET Platform. 
 slug: gridview-sort-strings
 tags: sort, string ,sortdescriptor
 published: True

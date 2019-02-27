@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Create fully customizable and highly interactive interfaces for display and management of large data with RadGridView - Telerik's WPF DataGrid.
+description: Create fully customizable and highly interactive interfaces for display and management of large data with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-overview2
 tags: overview
 published: True

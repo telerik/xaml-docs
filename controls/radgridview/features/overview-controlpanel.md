@@ -1,7 +1,7 @@
 ---
 title: Control Panel
 page_title: Control Panel
-description: Learn more about the Control Panel feature of Telerik's WPF DataGrid that allows changing different configurations through additional grid elements.
+description: Learn more about the Control Panel feature of Telerik's {{ site.framework_name }} DataGrid that allows changing different configurations through additional grid elements.
 slug: gridview-overview-controlpanel
 tags: control,panel
 published: True

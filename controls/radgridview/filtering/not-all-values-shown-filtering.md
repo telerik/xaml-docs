@@ -1,7 +1,7 @@
 ---
 title: Not all values are shown in the distinct values filter
 page_title: Not all values are shown in the distinct values filter
-description: Learn how to make all items in a filtering popup column visible in the distinct values filter when working with Telerik's WPF DataGrid.
+description: Learn how to make all items in a filtering popup column visible in the distinct values filter when working with Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-not-all-values-shown-filtering
 tags: not,all,values,are,shown,in,the,distinct,values,filter
 published: False

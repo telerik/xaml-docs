@@ -1,7 +1,7 @@
 ---
 title: Disable the Export of a Particular Column
 page_title: Disable Export of a Column
-description: Read this article to learn how to disable the export of a particular column within RadGridView - Telerik's WPF DataGrid.
+description: Read this article to learn how to disable the export of a particular column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-disable-column-export
 tags: column, disable, export,
 published: True

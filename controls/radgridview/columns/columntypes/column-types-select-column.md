@@ -1,7 +1,7 @@
 ---
 title: Select Column
 page_title: Select Column
-description: See how you can select a given grid row via a checkbox provided by the Select Column in RadGridView - Telerik's WPF DataGrid.
+description: See how you can select a given grid row via a checkbox provided by the Select Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-column-types-select-column
 tags: select,column
 published: True

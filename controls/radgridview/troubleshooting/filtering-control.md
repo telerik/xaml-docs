@@ -1,7 +1,7 @@
 ---
 title: Filter goes outside the window
 page_title: Filter goes outside the window
-description: Learn how to troubleshoot if the filtering control goes out of the window or gets cut by the browser boundaries when working with the Telerik WPF DataGrid.
+description: Learn how to troubleshoot if the filtering control goes out of the window or gets cut by the browser boundaries when working with the Telerik {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-filtering-control
 tags: filter,goes,outside,the,window
 published: True

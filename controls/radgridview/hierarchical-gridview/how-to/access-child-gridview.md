@@ -1,7 +1,7 @@
 ---
 title: How-to Set properties to the child gridview
 page_title: Set properties to the child gridview
-description: Get started with Telerik's WPF DataGrid and learn how to access and set different properties to the child gridview.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to access and set different properties to the child gridview.
 slug: gridview-how-to-access-child-gridview
 tags: how-to,set,properties,to,the,child,gridview
 published: True

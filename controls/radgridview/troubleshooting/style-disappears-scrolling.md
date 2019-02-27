@@ -1,7 +1,7 @@
 ---
 title: Styling or content mixed-up on scrolling
 page_title: Styling or content mixed-up on scrolling
-description: Learn how to solve problems caused by directly working with the values of the rows or cells within RadGridView - Telerik's WPF DataGrid.
+description: Learn how to solve problems caused by directly working with the values of the rows or cells within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-style-disappears-scrolling
 tags: styling,or,content,mixed-up,on,scrolling
 published: True

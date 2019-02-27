@@ -1,7 +1,7 @@
 ---
 title: Masked Input Column
 page_title: Masked Input Column
-description: Learn about the properties of the Masked Input Column in Telerik's WPF DataGrid and how to define it in XAML.
+description: Learn about the properties of the Masked Input Column in Telerik's {{ site.framework_name }} DataGrid and how to define it in XAML.
 slug: radgridview-columns-column-types-masked-input-column
 tags: masked,input,column
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Not auto-generate a column for a specific property
 page_title: Prevent Column Auto-Generation
-description: Learn about two ways of preventing auto-generation of a column for a specific property within RadGridView - Telerik's WPF DataGrid.
+description: Learn about two ways of preventing auto-generation of a column for a specific property within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-prevent-column-autogenerate
 tags: not,auto-generate,a,column,for,a,specific,property
 published: True

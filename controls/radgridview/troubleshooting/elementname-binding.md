@@ -1,7 +1,7 @@
 ---
 title: ElementName binding in column Header or CellTemplate
 page_title: ElementName binding in column Header or CellTemplate
-description: Get started with Telerik's WPF DataGrid and learn how to make the ElementName binding work when used in column Header or CellTemplate.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to make the ElementName binding work when used in column Header or CellTemplate.
 slug: gridview-troubleshooting-elementname-binding
 tags: elementname,binding,in,column,header,or,celltemplate
 published: True

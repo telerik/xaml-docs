@@ -1,7 +1,7 @@
 ---
 title: Basic Sorting
 page_title: Basic Sorting
-description: Learn about the built-in sorting functionality of Telerik's WPF DataGrid which allows the user to easily sort the data by one or several columns. 
+description: Learn about the built-in sorting functionality of Telerik's {{ site.framework_name }} DataGrid which allows the user to easily sort the data by one or several columns. 
 slug: gridview-sorting-basics
 tags: basic,sorting
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling CheckBoxColumn
 page_title: Styling CheckBoxColumn
-description: Get started with Telerik's WPF DataGrid and learn how to style the CheckBoxColumn. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the CheckBoxColumn. 
 slug: gridview-columns-styling-checkboxcolumn
 tags: styling,checkboxcolumn
 published: True

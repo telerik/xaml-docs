@@ -1,7 +1,7 @@
 ---
 title: Export Paged Data
 page_title: Export Paged Data
-description: Read this article to learn how to export paged data to Excel from RadGridView - Telerik's WPF DataGrid.
+description: Read this article to learn how to export paged data to Excel from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-troubleshooting-export-paged-data
 tags: export,paged,data
 published: True

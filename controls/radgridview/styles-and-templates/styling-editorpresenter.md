@@ -1,7 +1,7 @@
 ---
 title: Styling Editor Presenter
 page_title: Styling Editor Presenter
-description: Get started with Telerik's WPF DataGrid and learn how to change the appearance of a cell when it enters edit mode.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to change the appearance of a cell when it enters edit mode.
 slug: gridview-styling-editorpresenter
 tags: styling,gridvieweditorpresenter
 published: True

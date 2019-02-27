@@ -1,7 +1,7 @@
 ---
 title: Format Group Header Cell Content
 page_title: Format Group Header Cell Content
-description: Read this article to learn how to format group header cell content within RadGridView - Telerik's WPF DataGrid.
+description: Read this article to learn how to format group header cell content within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-group-header-cell-content
 tags: export, group, header, cell, content
 published: True

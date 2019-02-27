@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Learn how you can control the keyboard interaction and get notified when keyboard events occur within RadGridView - Telerik's WPF DataGrid.
+description: Learn how you can control the keyboard interaction and get notified when keyboard events occur within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-overview-keyboard-support
 tags: keyboard,support
 published: True

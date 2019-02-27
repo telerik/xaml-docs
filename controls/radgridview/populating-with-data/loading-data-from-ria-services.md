@@ -1,7 +1,7 @@
 ---
 title: Loading Data from RIA Services
 page_title: Loading Data from RIA Services
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from a .NET RIA Service.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from a .NET RIA Service.
 slug: gridview-loading-data-from-ria-services
 tags: loading,data,from,ria,services
 published: True

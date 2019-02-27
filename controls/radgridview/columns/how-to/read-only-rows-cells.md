@@ -1,7 +1,7 @@
 ---
 title: Read Only Rows and Cells
 page_title: Read Only Rows and Cells
-description: Learn how to control the read-only state of the Telerik WPF DataGrid either on grid or column level by binding it to a boolean property of your business object.
+description: Learn how to control the read-only state of the Telerik {{ site.framework_name }} DataGrid either on grid or column level by binding it to a boolean property of your business object.
 slug: gridview-read-only-rows-cells
 tags: read,only,rows,and,cells
 published: True

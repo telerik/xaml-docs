@@ -1,6 +1,6 @@
 ---
-title: Show ScrollViewer for the time display items
-description: Enable vertical scroll bar when no space for the clock items
+title: Show ScrollViewer for the Time Display Items of RadDateTimePicker
+description: Enable vertical scroll bar when no space for the clock items of RadDateTimePicker
 type: how-to
 page_title: Have a scrollbar in the time interval dropdown display 
 slug: kb-datetimepicker-show-scrollviewer-for-the-clock-items
@@ -77,5 +77,7 @@ How to show a vertical scrollbar in the time section of the drop down.
         </telerik:RadDateTimePicker>
     </Grid>    
 {{endregion}}
+
+> This template is extracted from the OfficeBlack [theme]({%slug common-styling-appearance-available-themes%}).
 
 ![](images/kb-datetimepicker-show-scrollviewer-for-the-clock-items-0.png)

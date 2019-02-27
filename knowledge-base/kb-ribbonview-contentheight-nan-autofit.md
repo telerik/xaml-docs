@@ -1,6 +1,6 @@
 ---
-title: Adjust the ribbon view's height to its content
-description: Autofit the RadRibbonView content height to the selected item content
+title: Adjust ribbon view's height to its content
+description: Autofit RadRibbonView content height to the selected item content
 type: how-to
 page_title: Autosize RadRibbonView height to selected tab elements 
 slug: kb-ribbonview-contentheight-nan-autofit
@@ -27,7 +27,7 @@ How to autofit the content area of RadRibbonView to the elements in the selected
 
 ## Solution
 
-To make the content height to stretch based on the size of the elements in the selected tab, you can set the ContentHeight property of RadRibbonView to double.NaN.
+To make the content height stretch based on the size of the elements in the selected tab, you can set the ContentHeight property of RadRibbonView to double.NaN.
 
 #### XAML
 {{region kb-ribbonview-contentheight-nan-autofit-0}}

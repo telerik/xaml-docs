@@ -274,6 +274,8 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 
 ## Container Service
 
+The __ContainerService__ is a static class which can be used to manipulate the container shapes. This static class expose the following methods.
+
 * __CompleteManipulation__: A void method that completes given manipulation. Accept parameter of type __CompositeAsyncStateCommand__.
 * __DetachItemsFromContainer__: A void method that detaches items from a container.
 * __GetChildrenBounds__: This method returns Rect element which wraps the items inside the container.
@@ -283,23 +285,28 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 * __GetRootItems__: A void method the return all root containers if any exist. 
 * __UpdateContainerLayout__: A void method thats update the container layout. Accept parameter of type __IDragDropAware__.
 
-## How To
+## Prevent Dropping Shape in Container
 
 * __Prevent dropping a shape in container__: To prevent dropping a shape inside a container, you can set the __IsDropEnabled__ property of the __RadDiagramContainerShape__ to __False__.
 
-## IDragDropAware interface
+#### __[XAML] Example : Setting IsDropEnabled property to False__
+{{region xaml-raddiagram-features-container-shapes-10}}
+	<telerik:RadDiagramContainerShape IsDropEnabled="False" />
+{{endregion}}
 
-__RadDiagramContainerShape__ implements __IDragDropAware__ interface. This interface allows you to get notify when a shape is dragged over a container. The interface implements the following events and property:
+## Customize drag and drop actions
+
+__RadDiagramContainerShape__ implements __IDragDropAware__ interface. This interface allows you to get notified when a shape is dragged over a container. The interface implements the following events and property:
 
 * __IsDropPossible__: A property of type __bool__ that gets whether drag-drop items in this container is possible.
 * __OnDragEnter__: This event is called when a dragged shape is over a container.
 * __OnDragLeave__: This event is called when a dragged shape leave the boundary of the currently hover container.
 * __OnDrop__: This event is called when a dragged shape is drop over a container.
 
-To subsribe to these events you can create a custom class which derives from __RadDiagramContainerShape__ and override these methods.
+To subscribe to the drag/drop events you can create a custom class which derives from __RadDiagramContainerShape__ and override the corresponding methods.
 
-#### __[C#] Example : Overriding drag/drop events of container shape__
-{{region raddiagram-features-container-shapes-10}}
+#### __[C#] Example : Overriding event handlers__
+{{region raddiagram-features-container-shapes-11}}
 	public class CustomShape : RadDiagramContainerShape
 	{
 		protected override void OnDragEnter(DragItemsEventArgs args)

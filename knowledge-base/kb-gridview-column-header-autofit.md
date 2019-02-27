@@ -2,7 +2,7 @@
 title: RadGridView Column Header doesn't auto change width
 description: Telerik DataGrid column header doesn't change size when text gets smaller
 type: troubleshooting
-page_title: DataGrid column header doesn't shrink to 
+page_title: DataGrid column header doesn't shrink to fit the new Header size at runtime.
 slug: kb-gridview-column-header-autofit
 position: 0
 tags: autofit,width,gridviewlength
@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-When change RadGridView column Header from longer to shorter string, the column header width doesn't change its size to autofit.
+When a RadGridView column header is changed from a longer to a shorter string, the column header width doesn't change its size to autofit.
 
 ## Solution
 
-To change make the header fit to its content, reset the Width of the column when the Header changes.
+To change make the header fit its content, reset the Width of the column when the Header changes.
 
 #### __[C#]__
 {{region kb-gridview-column-header-autofit-0}}

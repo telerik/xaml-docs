@@ -9,6 +9,8 @@ position: 0
 
 # Overview
 
+![RadNavigationView](images/NavigationView_Overview_Small.png)
+
 __RadNavigationView__ is an adaptive component, used to build a consistent navigational experience in {{ site.framework_name }} applications. The control can automatically adjust its display mode based on the amount of screen space available to it, thus improving the overall user experience (UX) of your applications.				
 
 RadNavigationView is part of the powerful UI for WPF navigation controls framework, which includes components as [RadToolBar]({%slug radtoolbar-overview%}), [RadTreeView]({%slug radtreeview-overview2%}), [RadPanelBar]({%slug radpanelbar-overview%}), [RadWindow]({%slug radwindow-overview%}), [RadMenu]({%slug radmenu-overview%}) and more.

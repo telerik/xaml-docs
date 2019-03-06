@@ -86,7 +86,9 @@ controls/raddomaindatasource,
 controls/radupload,
 controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
-cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
+cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
+getting-started/first-steps-sl,
+getting-started/explore-control-features-sl]
 
 exclude_navigation: [knowledge-base/*, controls/radchart/*]
 
@@ -1077,10 +1079,10 @@ navigation:
         position: 0
     "getting-started/installation":
         title: "Installation"
-        position: 1
+        position: 5
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
-        position: 2
+        position: 6
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":

@@ -1,0 +1,61 @@
+---
+title: Change Control Appearance
+page_title: Change Control Appearance
+description: Change Control Appearance
+slug: getting-started-change-control-appearance
+tags: Change Control Appearance
+published: True
+position: 2
+---
+
+# Change Control Appearance
+
+The UI for WPF controls use [Themes]({%slug styling-apperance-implicit-styles-overview%}) to change their appearance. The suite provides over 25 built-in themes that can fit in the majority of desktop application designs. A list of all the available themes can be found [here]({%slug common-styling-appearance-available-themes%}).
+
+There are two mechanisms that can be used to set a theme:
+
+* [Using Implicit Styles](#setting-a-theme-using-implicit-styles)
+	In this case use NoXaml dlls.
+	
+* [Using StyleManager](#setting-a-theme-using-stylemanager)
+	In this case use Xaml dlls.
+
+It is important to not mix the two approaches and always use the **correct assemblies** for the respective mechanism.
+
+## Custom Appearance
+
+If you wish to simply change a few of the colors or font sizes of your controls, you can [define a new style]({%slug implicit-styles-styling-the-controls%}) for them and override the desired properties. 
+
+#### **[XAML] Example 1: Custom styles for RadListBox**
+{{region getting-started-change-control-appearance-0}}
+    <Style TargetType="telerik:RadListBox">
+        <Setter Property="Foreground" Value="Green" />
+        <Setter Property="FontSize" Value="22" />
+    </Style>
+{{endregion}}
+
+If you wish to apply further customizations such as repositioning the building parts of a control, however, you will most probably need to [edit its control template]({%slug styling-apperance-editing-control-templates%}).
+
+## Color Theme Generator
+
+The **Crsyal**, **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
+
+For seamless color customization and faster palette creation that looks great and matches all controls, we created the [Color Theme Generator]({%slug common-styling-color-theme-generator%}).
+
+## Next Steps
+
+* [More Learning Resources]({%slug getting-started-next-steps%})
+{% if site.site_name == 'WPF' %}
+* [Start from the First Steps]({%slug getting-started-first-steps%})
+{% else %}
+* [Start from the First Steps]({%slug getting-started-first-steps-sl%})
+{% endif %}
+
+## See Also
+
+* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
+* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Available Themes]({%slug common-styling-appearance-available-themes%})
+* [Color Theme Generator]({%slug common-styling-color-theme-generator%})

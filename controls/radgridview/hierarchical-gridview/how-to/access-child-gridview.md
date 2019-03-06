@@ -15,7 +15,7 @@ Usually, you create the gridview hierarchy by using the __TableDefinition__ and 
 
 This article will show how to access and set different properties, in code behind, of the child gridview. Follow the steps below in order to achieve a child gridview which does not have a group panel and does not have auto-generated columns:
 
-![](images/gridview_how_to_child_grid.png)
+![Telerik {{ site.framework_name }} DataGrid how to child grid](images/gridview_how_to_child_grid.png)
 
 
 1. Subscribe to the __DataLoading__ event of the parent gridview 

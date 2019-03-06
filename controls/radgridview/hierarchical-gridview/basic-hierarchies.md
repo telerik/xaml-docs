@@ -14,7 +14,7 @@ position: 1
 * [Check if a hierarchy item is expanded](#check-if-a-hierarchy-item-is-expanded)
 
 #### __Figure 1: Hierarhical RadGridView__
-![Hierarhical RadGridView](images/RadGridView_BasicHierarchies_1.png)
+![Telerik {{ site.framework_name }} DataGrid BasicHierarchies 1](images/RadGridView_BasicHierarchies_1.png)
 
 __RadGridView__ allows you to display hierarchical data in the form of nested grid views. To do so you have to define a table definition for each subset of data you want to display. Such a definition can be done by creating a __GridViewTableDefinition__ object and adding it to the __ChildTableDefinitions__ collection of the __RadGridView__.
 

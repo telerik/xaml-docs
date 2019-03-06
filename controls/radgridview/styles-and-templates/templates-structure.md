@@ -69,7 +69,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                   
 ## GridViewCell
 
-![Rad Grid View Styles and Templates Templates Structure Grid View Cell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewCell.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewCell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewCell.png)
 
 * __Grid__ - hosts the elements of the template and is of type Grid.
    
@@ -112,7 +112,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 {% if site.site_name == 'WPF' %} 
 ## GridViewMergedCell
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewMergedCell.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewMergedCell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewMergedCell.png)
        
 * __Grid__ - hosts the elements of the template and is of type __Grid__.
              
@@ -139,7 +139,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ## GridViewHeaderCell
 
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewHeaderCell.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewHeaderCell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewHeaderCell.png)
 
 * __PART_HeaderCellGrid__ - hosts the elements of the template and is of type __Grid__.
           
@@ -179,7 +179,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ## GridViewFooterCell
 
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewFooterCell.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewFooterCell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewFooterCell.png)
 
 * __PART_FooterCellBorder__ - hosts the template elements; represents the border and the background of the footer and is of type __Border__.
           
@@ -290,7 +290,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                   
 
 ## GridViewGroupRow/GroupHeaderRow
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupRow.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewGroupRow](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupRow.png)
 
 * __PART_GroupExpanderGrid__ - hosts the elements of the template and is of type __Grid__.
           
@@ -350,7 +350,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                       
 
 ## GridViewGroupPanel
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupPanel.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewGroupPanel](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupPanel.png)
 
 * __[Grid]__ - hosts the elements of the __GridViewGroupPanel__ and is of type __Grid__.
    
@@ -365,7 +365,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
               
 
 ## GridViewGroupPanelItem
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupPanelItem.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewGroupPanelItem](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupPanelItem.png)
 
 * __PART_GroupPanelItemStackPanel__ - hosts the elements of the __GridViewGroupPanelItem's__ template and is of type __StackPanel__.
           
@@ -386,7 +386,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                   
 
 ## GridViewGroupFooterCell
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupFooterCell.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure GridViewGroupFooterCell](images/RadGridView_Styles_and_Templates_Templates_Structure_GridViewGroupFooterCell.png)
 
 * __PART_FooterCellBorder__ - represents the background and the border of the __GridViewGroupFooterCell__ and is of type __Border__.
           
@@ -395,7 +395,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
               
 
 ## DetailsPresenter
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_DetailsPresenter.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure DetailsPresenter](images/RadGridView_Styles_and_Templates_Templates_Structure_DetailsPresenter.png)
 
 * __DetailsBorder__ - hosts the elements of the template; represents the outer border of the __DetailsPresenter__ and is of type __Border__.
           
@@ -407,7 +407,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
                   
 
 ## FilteringControl
-![](images/template_structure_filtering_control_gridview.png)
+![template structure filtering control Telerik {{ site.framework_name }} DataGrid](images/template_structure_filtering_control_gridview.png)
 
 * __[Border]__ - represents the outer border of the __FilteringControl__ and is of type __Border__.
       
@@ -465,7 +465,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ## FilteringDropDown
 
-![](images/RadGridView_Styles_and_Templates_Templates_Structure_FilteringDropDown.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Templates Structure FilteringDropDown](images/RadGridView_Styles_and_Templates_Templates_Structure_FilteringDropDown.png)
 
 * __Grid__
 
@@ -488,7 +488,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ## GridViewNewRow
 
-![](images/newrow_template_gridview.png)
+![New Row Template Telerik {{ site.framework_name }} DataGrid](images/newrow_template_gridview.png)
 
 
 * __Grid -__ hosts the elements of the __GridViewNewRow__ template and is of type __SelectiveScrollingGrid__.
@@ -541,7 +541,7 @@ Like most controls, __RadGridView__ also allows you to template it in order to c
 
 ## GridViewSearchPanel
 
-![](images/search_panel_template.png)
+![Telerik {{ site.framework_name }} DataGrid search panel template](images/search_panel_template.png)
 
 
 * __Grid__ - Hosts the elements of the Search Panel and the border elements.

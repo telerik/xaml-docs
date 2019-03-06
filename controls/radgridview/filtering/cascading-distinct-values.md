@@ -36,6 +36,6 @@ Here is a small example:
 
 Now the listbox in the filtering control will be populated with all the distinct items for the filtered column. 
 
-![gridview-filtering-cascading-distinct-values](images/gridview-filtering-cascading-distinct-values.png)
+![Telerik {{ site.framework_name }} DataGrid-filtering-cascading-distinct-values](images/gridview-filtering-cascading-distinct-values.png)
 
 

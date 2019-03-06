@@ -28,7 +28,7 @@ The data gets sorted as the user clicks the header of a column. When sorted you 
 
 #### Figure 1: RadGridView with applied sorting
 
-![RadGridView with applied sorting](images/RadGridView_BasicSorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid BasicSorting 1](images/RadGridView_BasicSorting_1.png)
 
 By clicking on the header a second time, the sort direction is changed to descending and on the next click, the sorting will be cleared. The header goes into its normal state and the arrow disappears.
         

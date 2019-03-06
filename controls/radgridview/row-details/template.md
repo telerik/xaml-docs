@@ -39,7 +39,7 @@ Here is an example for a basic row details template (__Example 1__). You can obs
 
 __Figure 1:__ Displays the result of the applied __Basic RowDetails Template__.
 
-![gridview-row-details-template-basic](images/gridview-row-details-template-basic.png)
+![Telerik {{ site.framework_name }} DataGrid-row-details-template-basic](images/gridview-row-details-template-basic.png)
 
 ## Complex RowDetails Template
 
@@ -85,7 +85,7 @@ Here is an example for a complex row details template (__Example 2__). You can o
 {{endregion}}
 
 __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.
-![gridview-row-details-template-complex](images/gridview-row-details-template-complex.png)
+![Telerik {{ site.framework_name }} DataGrid-row-details-template-complex](images/gridview-row-details-template-complex.png)
 
 ## See Also
 

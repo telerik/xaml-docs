@@ -14,7 +14,7 @@ __PROBLEM__
 
 The filtering control goes out of the window (in WPF) or gets cut by the browser boundaries (in Silverlight) when there is not enough space for it. Here is an example:
 
-![](images/troubleshooting_filtering_boundaries_gridview.png)
+![troubleshooting filtering boundaries Telerik {{ site.framework_name }} DataGrid](images/troubleshooting_filtering_boundaries_gridview.png)
 
 __SOLUTION__
 
@@ -22,13 +22,13 @@ You have two options here:
 
 1. You can shorten the filtering control by either removing the distinct values listbox (top part) or the field filter controls (bottom part). The two boolean properties that controls these behaviors are: __ShowDistinctFilters__ and __ShowFieldFilters__
 
-![](images/troubleshooting_filtering_boundaries_gridview2.png)
+![troubleshooting filtering boundaries Telerik {{ site.framework_name }} DataGrid 2](images/troubleshooting_filtering_boundaries_gridview2.png)
 
 2. This method manipulates the [XAML of the filtering control]({%slug radgridview-styles-and-templates-templates-structure%}) to reduce the height of the distinct values listbox. This way you will have both the distinct values listbox and the other field filtering controls.
 
 You need to find the __PART_DistinctValuesList__ listbox and set its MaxHeight property to a smaller value, e.g. MaxHeight="100". If you make the Filtering style implicit - it will be applied to all filtering controls of the gridview. Here is the result it produces:
 
-![](images/troubleshooting_filtering_boundaries_gridview4.png)
+![troubleshooting filtering boundaries Telerik {{ site.framework_name }} DataGrid 4](images/troubleshooting_filtering_boundaries_gridview4.png)
 
 {% if site.site_name == 'WPF' %}
 

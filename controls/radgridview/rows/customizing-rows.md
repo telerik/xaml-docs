@@ -12,7 +12,7 @@ position: 2
 
 By default the first cell of a row represents row indicator, which appears when the row is set as current.
 
-![](images/RadGridView_CustomizingRows_1.png)
+![Telerik {{ site.framework_name }} DataGrid CustomizingRows 1](images/RadGridView_CustomizingRows_1.png)
 
 To hide the row indicator set the __RowIndicatorVisibility__ property to __Collapsed__.
 
@@ -25,7 +25,7 @@ To hide the row indicator set the __RowIndicatorVisibility__ property to __Colla
 	</telerik:RadGridView>
 {{endregion}}
 
-![](images/RadGridView_CustomizingRows_2.png)
+![Telerik {{ site.framework_name }} DataGrid CustomizingRows 2](images/RadGridView_CustomizingRows_2.png)
 
 RadGridView allows you to easily customize each of the row types by just assigning a style to it. 
 

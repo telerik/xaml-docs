@@ -38,7 +38,7 @@ When a user adds a new item, an empty row is created in which the user can input
 
 #### __Figure 1: The newly created row__
 
-![The newly created row](images/RadGridView_AddingNewItems_1.png)
+![Telerik {{ site.framework_name }} DataGrid Adding New Items 1](images/RadGridView_AddingNewItems_1.png)
 
 >If the __IsReadOnly__ property of RadGridView is set to __True__ or the __CanUserInsertRows__ property is set to __False__, no row is added.
 
@@ -157,7 +157,7 @@ When the new item is committed, it is added to RadGridView's __Items__ collectio
 
 #### __Figure 2: The new row__
 
-![The new row](images/RadGridView_AddingNewItems_2.png)
+![Telerik {{ site.framework_name }} DataGrid Adding New Items 2](images/RadGridView_AddingNewItems_2.png)
 
 ## See Also
 

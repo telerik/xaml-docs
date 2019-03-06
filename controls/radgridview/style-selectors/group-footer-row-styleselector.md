@@ -121,7 +121,7 @@ And here is the final result:
 
 #### __Figure 1: The group footer rows styled using the GroupFooterRowStyleSelector property__
 
-![The group footer rows styled using the GroupFooterRowStyleSelector property](images/gridview-groupfooterrowstyleselector.png)
+![Telerik {{ site.framework_name }} DataGrid-groupfooterrowstyleselector](images/gridview-groupfooterrowstyleselector.png)
 
 ## See Also
 

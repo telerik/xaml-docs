@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
 
-![](images/RadGridView_KeyFeatures_1.png)
+![Telerik {{ site.framework_name }} DataGrid Key Features 1](images/RadGridView_KeyFeatures_1.png)
 
 This is a list with short descriptions of the top-of-the line features of __RadGridView__ control.
         

@@ -14,7 +14,7 @@ __PROBLEM__
 
 When you use the [GridViewComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) you might encounter empty cells in that column:
 
-![GridView Troubleshooting Blank Cells](images/gridview_troubleshoot_blank_cells.png)
+![Telerik {{ site.framework_name }} DataGrid troubleshoot blank cells](images/gridview_troubleshoot_blank_cells.png)
 
 __CAUSE__
 

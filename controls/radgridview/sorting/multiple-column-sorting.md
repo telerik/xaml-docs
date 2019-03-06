@@ -12,7 +12,7 @@ position: 3
 
 On the snapshot bellow the data in __RadGridView__ is sorted ascending by the Est. column and then sorted again by the Stadium column, without removing the previous sorting. This feature is called multi column sorting.
        
-![](images/RadGridView_MultiColumnSorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid MultiColumnSorting 1](images/RadGridView_MultiColumnSorting_1.png)
 
 To learn how to implement progtammatic sorting in your __RadGridView__ read on this [topic]({%slug gridview-sorting-programmatic%}).
 
@@ -22,7 +22,7 @@ As of __Q2 2013__, the user can benefit from __Column Sort Sequence Indicator__.
 
 You can check how the column headers will look like after the user has sorted on multiple columns.
 
-![Rad Grid View Multi Column Sorting 2](images/RadGridView_MultiColumnSorting_2.png)
+![Telerik {{ site.framework_name }} DataGrid MultiColumnSorting 2](images/RadGridView_MultiColumnSorting_2.png)
 
 ## See Also
 

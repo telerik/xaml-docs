@@ -40,7 +40,7 @@ RadGridView's new **CanUserSelectColumns** property determines whether users can
 
 #### __Figure 1: Selecting columns through the UI__
 
-![Selecting columns through the UI](images/gridview-columnselection.png)
+![Telerik {{ site.framework_name }} DataGrid column selection](images/gridview-columnselection.png)
 
 >If you do not want to display the column selection button, you can use RadGridView's **ColumnsSelectionButtonVisibility** property in order to hide it.
 

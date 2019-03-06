@@ -12,7 +12,7 @@ position: 4
 
 Usually the bottom cell of a column is called footer. Its purpose is to display some additional information that applies to the whole column.
 
-![](images/RadGridView_ColumnFooters_1.png)
+![Telerik {{ site.framework_name }} DataGrid Column Footers 1](images/RadGridView_ColumnFooters_1.png)
 
 To set the value of the footer use __Footer__ property of the column.
 
@@ -52,7 +52,7 @@ Because it is of type object, you are not limited to just using plain text. For 
 	</telerik:GridViewDataColumn>
 {{endregion}}
 
-![](images/RadGridView_ColumnFooters_2.png)
+![Telerik {{ site.framework_name }} DataGrid Column Footers 2](images/RadGridView_ColumnFooters_2.png)
 
 ## Showing the Column Footers
 
@@ -70,7 +70,7 @@ By default column footers are hidden, so in order to make them visible you have 
 
 Column footers are also used to display aggregated information on the data displayed in the column via aggregate functions.
 
-![](images/RadGridView_ColumnFooters_3.png)
+![Telerik {{ site.framework_name }} DataGrid Column Footers 3](images/RadGridView_ColumnFooters_3.png)
 
 To learn how to do that take a look at the [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}) topic.
 

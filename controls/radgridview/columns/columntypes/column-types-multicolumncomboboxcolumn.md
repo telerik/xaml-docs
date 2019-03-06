@@ -190,7 +190,7 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
 {{endregion}}
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
-![Defining the GridViewMultiColumnComboBoxColumn](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
+![Setting up the MultiColumnComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
 
 ## See Also
 

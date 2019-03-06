@@ -49,7 +49,7 @@ You have two options:
 
 #### __Figure 1: RadGridView with styled GridViewNewRow in the Office 2016 theme__
 
-![RadGridView with styled GridViewNewRow](images/gridview-newrow-styling.png)
+![Telerik {{ site.framework_name }} DataGrid-new-row-styling](images/gridview-newrow-styling.png)
 
 ## See Also
 

@@ -105,7 +105,7 @@ If you want to adjust many properties at once without triggering a data engine u
 
 #### __Figure 1: Pre-filtered RadGridView__
 
-![Pre-filtered RadGridView](images/gridview_filtering_programmatic_01.png)
+![Telerik {{ site.framework_name }} DataGrid filtering programmatic 01](images/gridview_filtering_programmatic_01.png)
 
 >The **DistinctFilter** object also has a method called **RemoveDistinctValue** which does the opposite of **AddDistinctValue**.
 
@@ -315,7 +315,7 @@ So in the end you will get the following filtering criteria tree:
 
 #### __Figure 2: Filtering Criteria Tree Concept__
 
-![Filtering Criteria Tree Concept](images/gridview_filtering_programmatic_02.png)
+![Telerik {{ site.framework_name }} DataGrid filtering programmatic 02](images/gridview_filtering_programmatic_02.png)
 
 The data engine will generate something similar in pseudo-code:
 
@@ -337,7 +337,7 @@ As you might have already guessed, the IColumnFilterDescriptor that is used for 
 
 #### __Figure 3: ColumnFilterDescriptor Tree__
 
-![Column Filter Descriptor Tree](images/gridview_filtering_programmatic_03.png)
+![Telerik {{ site.framework_name }} DataGrid filtering programmatic 03](images/gridview_filtering_programmatic_03.png)
 
 Notice how this hierarchy is the same as the Popup filtering control layout. Working through the IColumnFilterDescriptor interface makes sure that you cannot randomly add criteria which cannot be correctly displayed by the Popup filtering control.
 

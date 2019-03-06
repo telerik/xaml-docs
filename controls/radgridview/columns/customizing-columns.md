@@ -80,7 +80,7 @@ __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual 
 {{endregion}}
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
-![](images/gridview-textproperties-column.png)
+![Telerik {{ site.framework_name }} DataGrid-text properties-column](images/gridview-textproperties-column.png)
 
 ## See Also
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

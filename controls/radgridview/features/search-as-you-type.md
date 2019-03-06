@@ -27,7 +27,7 @@ As of __R1 2016__, __RadGridView__ supports searching. Through the new boolean _
 
 __Figure 1: Showing the Search Panel__
 
-![Showing the Search Panel](images/gridview-textsearch-showsearchpanel.png)
+![Telerik {{ site.framework_name }} DataGrid-textsearch-showsearchpanel](images/gridview-textsearch-showsearchpanel.png)
 
 > Searching over XML data source is available as of __R2 2018__.
 
@@ -67,7 +67,7 @@ The visibility of the search panel's close button can be controlled via the **Se
 
 __Figure 2: Hidden Close Button__
 
-![Hidden Close Button](images/hide-close-button.png)
+![Telerik {{ site.framework_name }} DataGrid hide-close-button](images/hide-close-button.png)
 
 ## Deferred Searching
 
@@ -140,19 +140,19 @@ In order to modify the search behavior, you can benefit from the following three
 
 	__Figure 2: Using the `+` search operator__
 	
-	![Using the + search operator](images/gridview-textsearch-plus-operator.png)
+	![Telerik {{ site.framework_name }} DataGrid-textsearch-plus-operator](images/gridview-textsearch-plus-operator.png)
 
 - __-__: All items that will pass the filtering operation will have to  __contain__ the value __before__ the operator, but __not__ the one __after__ it.
 
 	__Figure 3: Using the `-` search operator__
 	
-	![Using the - search operator](images/gridview-textsearch-minus-operator.png)
+	![Telerik {{ site.framework_name }} DataGrid-textsearch-minus-operator](images/gridview-textsearch-minus-operator.png)
 
 - __""__: When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 	
 	__Figure 4: Using the `""` search operator__
 	
-	![Using the "" search operator](images/gridview-textsearch-quotes-operator.png)
+	![Telerik {{ site.framework_name }} DataGrid-textsearch-quotes-operator](images/gridview-textsearch-quotes-operator.png)
 
 ## Change the Label Text of the Search Panel
 

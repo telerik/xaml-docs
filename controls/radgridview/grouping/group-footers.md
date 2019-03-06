@@ -50,7 +50,7 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 	<telerik:RadGridView ShowGroupFooters="True" />
 {{endregion}}
 
-![](images/RadGridView_Grouping_GroupFooters_010.png)
+![Telerik {{ site.framework_name }} DataGrid Grouping GroupFooters 010](images/RadGridView_Grouping_GroupFooters_010.png)
 
 >The default value of __ShowGroupFooters__ property is __False__.
 
@@ -95,7 +95,7 @@ If you want your group footers to have a static content, simply configure __Grou
 	</Grid>
 {{endregion}}
 
-![](images/RadGridView_Grouping_GroupFooters_020.png)
+![Telerik {{ site.framework_name }} DataGrid Grouping GroupFooters 020](images/RadGridView_Grouping_GroupFooters_020.png)
 
 * Using [Aggregate Functions]({%slug gridview-columns-aggregate-functions%}).
 
@@ -118,7 +118,7 @@ The group footers are most commonly used to visualize calculations from aggregat
 
 The result can be seen on the next image.
 
-![](images/RadGridView_Grouping_GroupFooters_030.png)
+![Telerik {{ site.framework_name }} DataGrid Grouping GroupFooters 030](images/RadGridView_Grouping_GroupFooters_030.png)
 
 >__RadGridView__ will calculate aggregates over the entire data source and will respect the filter expression applied (if present).
 

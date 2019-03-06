@@ -12,7 +12,7 @@ position: 1
 
 The __RadGridview__ provides you with a selection functionality, which allows the user to select one or more items from the data displayed by the control.
 
-![](images/RadGridView_FunctionalOverview_Selection_1.png)
+![Telerik {{ site.framework_name }} DataGrid Functional Overview Selection 1](images/RadGridView_FunctionalOverview_Selection_1.png)
 
 Check out the chapters entirely dedicated to the selection functionality of __RadGridView__ and find the answers to the following questions:
 

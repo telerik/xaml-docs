@@ -13,7 +13,7 @@ position: 17
 
 By default, the filtering control shows the Match Case option when the type of the data is string. This article shows how to hide this option (as some languages does not have a difference between lower and upper case letters).
 
-![](images/how_to_hide_match_case_gridview.png)
+![how to hide match case Telerik {{ site.framework_name }} DataGrid](images/how_to_hide_match_case_gridview.png)
 
 
 This cannot be done by simply adding the XAML of the control template, because the proper filter editor is added in runtime depending on the type of the column.

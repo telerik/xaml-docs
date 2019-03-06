@@ -48,7 +48,7 @@ The gridview will be bound to a __DomainDataSource__. When the control is loaded
 
 Run your demo, the result can be seen on the next picture: 
 
-![](images/RadGridView_PopulatingWithDataLoadFromDomainDataSource_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromDomainDataSource 010](images/RadGridView_PopulatingWithDataLoadFromDomainDataSource_010.PNG)
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

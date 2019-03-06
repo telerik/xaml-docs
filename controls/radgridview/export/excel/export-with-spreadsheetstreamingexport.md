@@ -105,7 +105,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 {{endregion}}
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to True__
-![Export RadGridView with headers, footers and default styles](../images/exportdefaultstyles2.png)
+![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)
 
 ## Events
 

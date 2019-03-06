@@ -14,7 +14,7 @@ This article will show how to access the default editing element of RadGridView'
 
 First, let's start with a real world scenario - you have a cell which shows a long text. You wrap the text by setting the __TextWrapping="Wrap"__ property of the column. The text looks good in view mode, but when you enter edit mode - the full text is shown on one line:
 
-![](images/how_to_access_editing_element_gridview.png)
+![how to access editing element Telerik {{ site.framework_name }} DataGrid 2](images/how_to_access_editing_element_gridview.png)
 
 To make the editing textbox wraps the text as well you need to subscribe to the PreparingCellForEdit event, find the editing element and set its property:
 
@@ -44,7 +44,7 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 
 Now it is better:
 
-![](images/how_to_access_editing_element_gridview2.png)
+![how to access editing element Telerik {{ site.framework_name }} DataGrid](images/how_to_access_editing_element_gridview2.png)
 
 Ok, what if I do not want have this text selected, but want to have the cursor positioned at the end of it? Here comes the other useful event - PreparedCellForEdit which fires when the cell is already prepared for editing:
 

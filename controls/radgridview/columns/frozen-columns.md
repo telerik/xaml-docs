@@ -16,17 +16,17 @@ As of __R1 2018 RadGridView__ supports pinning columns both on its left and righ
 
 __RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column on the left, the user has to drag the left frozen columns separator.
 
-![Rad Grid View Frozencolumns 1](images/RadGridView_Frozencolumns_1.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen columns 1](images/RadGridView_Frozencolumns_1.png)
 
 Once there is a frozen column, you can freeze other columns by dragging their headers behind the frozen columns separator.
 
-![Rad Grid View Frozencolumns 2](images/RadGridView_Frozencolumns_2.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen columns 2](images/RadGridView_Frozencolumns_2.png)
 
 Similarly, you can unfreeze columns by dragging their headers outside the frozen columns separator.
 
 A frozen column always stays on top of horizontal scrolling.
 
-![Rad Grid View Frozencolumns 3](images/RadGridView_Frozencolumns_3.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen columns 3](images/RadGridView_Frozencolumns_3.png)
 
 ## Right Frozen Columns
 
@@ -89,7 +89,7 @@ To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __
 	             CanUserFreezeColumns="False" />
 {{endregion}}
 
-![Rad Grid View Frozencolumns 4](images/RadGridView_Frozencolumns_4.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen columns 4](images/RadGridView_Frozencolumns_4.png)
 
 ## Hiding the Left Frozen Columns Splitter
 
@@ -103,8 +103,8 @@ The property has one of three values:
 
 #### __Figure 1: FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
 
-![FrozenColumnsSplitterVisibility="Visible"](images/FrozenColumnsSplitterVisibility_Visible.png)
-![FrozenColumnsSplitterVisibility="Hidden"](images/FrozenColumnsSplitterVisibility_Hidden.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Visible](images/FrozenColumnsSplitterVisibility_Visible.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Hidden](images/FrozenColumnsSplitterVisibility_Hidden.png)
 
 ## Frozen Columns Events
 
@@ -163,8 +163,8 @@ __Example 4__ shows how you can get the names of the columns currently in the fr
 	End Sub
 {{endregion}}
 
-![Rad Grid View FrozenColumnsChanged 1](images/RadGridView_FrozenColumnsChanged_1.png)
-![Rad Grid View FrozenColumnsChanged 2](images/RadGridView_FrozenColumnsChanged_2.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 1](images/RadGridView_FrozenColumnsChanged_1.png)
+![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 2](images/RadGridView_FrozenColumnsChanged_2.png)
 
 ## See Also
 

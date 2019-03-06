@@ -18,11 +18,11 @@ You can compare:
 
 The appearance __before__:
 
-![gridview dynamic fonts 1](images/gridview_dynamic_fonts_1.png)
+![Telerik {{ site.framework_name }} DataGrid dynamic fonts 1](images/gridview_dynamic_fonts_1.png)
 
 The appearance __now__:
 
-![gridview dynamic fonts 2](images/gridview_dynamic_fonts_2.png)
+![Telerik {{ site.framework_name }} DataGrid dynamic fonts 2](images/gridview_dynamic_fonts_2.png)
 
 In order to have a different (smaller) Size for the containers, you can define a Style targeting the element you are interested in. Then __set its Height property with the desired value__. In the example with the CellTemplate, you could define a __simple Style targeting the GridViewRow element__ and set a fixed Height.
 

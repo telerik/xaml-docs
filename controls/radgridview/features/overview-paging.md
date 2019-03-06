@@ -14,7 +14,7 @@ site_name: Silverlight
 __RadGridView__ offers an excellent integration with Silverlight __DataPager__.
 
 
-![](images/RadGridView_Features_Paging_010.png)
+![Telerik {{ site.framework_name }} DataGrid Features Paging 010](images/RadGridView_Features_Paging_010.png)
 
 To connect the __RadGridView__ with a __DataPager__ you need to perform a few simple steps:
 

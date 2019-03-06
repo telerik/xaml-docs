@@ -429,7 +429,7 @@ The implementation of the ViewModel is below:
 
 ## The defined ContextMenu works
 
-![gridview-how-to-use-radcontextmenu-mvvm 1](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
+![Defining ContextMenu in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
 
 {% if site.site_name == 'Silverlight' %}
 A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/silverlight/contextmenu/radcontextmenu-mvvm.aspx).

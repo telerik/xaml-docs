@@ -26,19 +26,19 @@ In order to group data the user has to just drag the desired column to __GridVie
 
 #### __Figure 1: Dragging a column to the GridViewGroupPanel__
 
-![Dragging a column to the GridViewGroupPanel](images/RadGridView_BasicGrouping_1.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 1](images/RadGridView_BasicGrouping_1.png)
 
 After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header and the data will be properly grouped.
 
 #### __Figure 2: RadGridView after grouping__
 
-![RadGridView after grouping](images/RadGridView_BasicGrouping_2.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 2](images/RadGridView_BasicGrouping_2.png)
 
 To remove the grouping just click the close button of the rectangle or drag it out of the grouping area.
 
 #### __Figure 3: Removing the grouping__
 
-![Removing the grouping](images/RadGridView_BasicGrouping_3.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 3](images/RadGridView_BasicGrouping_3.png)
 
 >tipThe data can be grouped by more than one column. To do that just drag another column into the grouping area and the data will be grouped against these two criteria. To learn more about the multi-column grouping take a look at the [Multi-Column Grouping]({%slug gridview-multiple-column-grouping%}) topic.
         
@@ -50,7 +50,7 @@ __RadGridView__ also provides the user with a way to sort the groups of data. To
 
 #### __Figure 4: Sorting RadGridView when grouping is applied__
 
-![Sorting RadGridView when grouping is applied](images/RadGridView_BasicGrouping_4.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 4](images/RadGridView_BasicGrouping_4.png)
 
 ### Sort Group by Aggregate
         
@@ -91,11 +91,11 @@ The **ShouldReorderColumnsOnUngrouping** property controls whether the columns' 
 
 #### __Figure 5: Dragging the group cell over a header cell__
 
-![Dragging the group cell over a header cell](images/reorderondrop1.png)
+![Telerik {{ site.framework_name }} DataGrid reorderondrop1](images/reorderondrop1.png)
 
 #### __Figure 6: The reordered columns when ShouldReorderColumnsOnUngrouping is True__
 
-![The reordered column when ShouldReorderColumnsOnUngrouping is True](images/reorderondrop2.png)
+![Telerik {{ site.framework_name }} DataGrid reorderondrop2](images/reorderondrop2.png)
        
 ## Disabling Grouping
 
@@ -111,7 +111,7 @@ There are two ways to disable the built-in grouping of __RadGridView__. The firs
 
 #### __Figure 7: RadGridView with disabled grouping__
 
-![RadGridView with disabled grouping](images/RadGridView_BasicGrouping_5.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 5](images/RadGridView_BasicGrouping_5.png)
 
 The second way is to disable it on column level via __IsGroupable__ property. When set to __False__ the column is not allowed to be dropped in the grouping area.
 
@@ -138,7 +138,7 @@ The second way is to disable it on column level via __IsGroupable__ property. Wh
 
 #### __Figure 8: RadGridView with disabled grouping for a specific column__
 
-![RadGridView with disabled grouping for a specific column](images/RadGridView_BasicGrouping_6.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Grouping 6](images/RadGridView_BasicGrouping_6.png)
 
 >important If an **IValueConverter** is applied to the **DataMemberBinding** of a certain column, Grouping will respect it and create Group names according to the converted values. Thus, the appearance of duplicated groups will be avoided. In the case of filtering the **RadGridView** control, on the other hand, the converted values would not be respected.  
 

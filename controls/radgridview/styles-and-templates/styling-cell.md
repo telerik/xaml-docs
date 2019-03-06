@@ -28,7 +28,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewCell template structure__
 
-![GridViewCell template structure](images/gridviewcell-template.png)
+![Telerik {{ site.framework_name }} DataGrid Cell Template](images/gridviewcell-template.png)
 
 ## Targeting the GridViewCell Element
 
@@ -56,7 +56,7 @@ You have two options:
 
 #### __Figure 2: RadGridView with styled cells in the Office2016 theme__
 
-![RadGridView with styled cells](images/RadGridView-Cell-Styled.png)
+![Telerik {{ site.framework_name }} DataGrid-Cell-Styled](images/RadGridView-Cell-Styled.png)
 
 ## Setting a Column's CellStyle
 
@@ -85,7 +85,7 @@ As of __R3 2018 RadGridView__ supports setting the Background of the selected ce
 {{endregion}}
 
 #### __Figure 3: Result from Example 3 in the Office2016 theme__
-![RadGridView with SelectedBackground for the cells](images/gridview-selectedbackground-cell.png)
+![Telerik {{ site.framework_name }} DataGrid-selected-background-cell](images/gridview-selectedbackground-cell.png)
 
 ## Setting the BorderBrush of the CurrentCell
 
@@ -101,7 +101,7 @@ As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current ce
 {{endregion}}
 
 #### __Figure 4: Result from Example 4 in the Office2016 theme__
-![RadGridView with CurrentBorderBrush for the cells](images/gridview-currentborderbrush.png)
+![Telerik {{ site.framework_name }} DataGrid-currentborderbrush](images/gridview-currentborderbrush.png)
 
 > After you have set the __CurrentBorderBrush__ to __Transparent__, if you start navigating through the cells with the keyboard, you will be able to see the FocusVisual border. If you want to hide it as well, you can set the __FocusVisualStyle__ of the GridViewCell to null through a style similar to __Example 4__.
 

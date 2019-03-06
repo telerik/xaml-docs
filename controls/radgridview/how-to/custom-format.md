@@ -49,11 +49,11 @@ Still, there is a way to set the CurrentCulture and apply the format you would l
 
 __Figure 1__: RadGridView displaying data with IsLocalizationLanguageRespected set to True
         
-![RadGridView displaying data with IsLocalizationLanguageRespected set to True](images/gridview_customformat_before.png)
+![Telerik {{ site.framework_name }} DataGrid customformat before](images/gridview_customformat_before.png)
 
 __Figure 2__: RadGridView displaying data with IsLocalizationLanguageRespected set to False
 
-![RadGridView displaying data with IsLocalizationLanguageRespected set to False](images/gridview_customformat_after.png)
+![Telerik {{ site.framework_name }} DataGrid customformat after](images/gridview_customformat_after.png)
 
 ## See Also
 

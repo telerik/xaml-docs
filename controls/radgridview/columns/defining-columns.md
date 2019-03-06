@@ -99,7 +99,7 @@ __Example 1: RadGridView__ generates columns automatically.
 
 __Figure 1:__ The result of letting __RadGridView__ automatically generate two columns. 
 
-![Rad Grid View definingcolumns 1](images/RadGridView_definingcolumns_1.png)
+![Telerik {{ site.framework_name }} DataGrid defining columns 1](images/RadGridView_definingcolumns_1.png)
 
 ## Manual Columns Definition
 

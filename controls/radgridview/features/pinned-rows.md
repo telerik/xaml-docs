@@ -63,7 +63,7 @@ Pressing the button will pin the respective row. Clicking on it again will remov
 
 #### __Figure 1: Pinning rows from the row indicator__
 
-![Pinning rows from the row indicator](images/radgridview-pinned-rows-1.png)
+![Telerik {{ site.framework_name }} DataGrid-pinned-rows-1](images/radgridview-pinned-rows-1.png)
 
 Another way to allow your users to pin rows with the click of a button is to define a **GridViewPinRowColumn**, which enables pinning and unpinning of the rows.
 
@@ -76,7 +76,7 @@ Another way to allow your users to pin rows with the click of a button is to def
 
 #### __Figure 2: Pinning rows from the GridViewPinRowColumn__
 
-![Pinning rows from the GridViewPinRowColumn](images/radgridview-pinned-rows-2.png)
+![Telerik {{ site.framework_name }} DataGrid-pinned-rows-2](images/radgridview-pinned-rows-2.png)
 
 ## Grouping
 

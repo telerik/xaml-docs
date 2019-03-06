@@ -49,7 +49,7 @@ Via the __DataFormatString__ property you are able to format the bound data and 
 
 #### __Figure 1: GridViewDataColumn with custom formatting__
 
-![GridViewDataColumn with custom formatting](images/RadGridView_ColumnTypes_0.png)
+![Custom Formatting of the Data Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_0.png)
 
 To learn more about how to format the displayed data, please check the [Data Formatting]({%slug gridview-columns-data-formatting%}) article. 
 

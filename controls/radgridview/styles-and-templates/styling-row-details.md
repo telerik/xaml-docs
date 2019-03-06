@@ -54,7 +54,7 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 #### __Figure 2: RadGridView with styled row details__
 
-![RadGridView with styled row details](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewRowDetails 03](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
 
 ## Setting RadGridView's RowDetailsStyleSelector
 

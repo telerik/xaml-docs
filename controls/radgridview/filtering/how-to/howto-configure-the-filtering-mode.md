@@ -25,7 +25,7 @@ To enable the popup filtering mode, set RadGridView’s FilteringMode property t
 
 Popup Filtering Mode
 
-![](images/gridview_filtering_basic_01.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 01](images/gridview_filtering_basic_01.png)
 
 ## Filter Row Mode
 
@@ -40,5 +40,5 @@ To enable the custom filter row mode, set RadGridView’s FilteringMode property
 
 Popup Filtering Mode
 
-![](images/gridview_filtering_basic_02.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
 

@@ -458,7 +458,7 @@ The final result should be similar to the image below:
 
 #### __Figure 1: The RadColorPickerColumn__
 
-![The RadColorPickerColumn](images/RadGridView_HowTo_CreateCustomEditor_010.png)
+![Telerik {{ site.framework_name }} DataGrid How To Create Custom Editor 010](images/RadGridView_HowTo_CreateCustomEditor_010.png)
 
 ## Integrating the RadColorPickerColumn into the Validation and Editing Engine
 

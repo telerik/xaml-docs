@@ -12,7 +12,7 @@ position: 4
 
 When you insert a new item (via the Insert key or the insert row) RadGridView will check which is your current column and focus that column in the newly added and probably blank row. This picture explains it better:
 
-![](images/how_to_focus_first_cell.png)
+![how to focus first cell Telerik {{ site.framework_name }} DataGrid](images/how_to_focus_first_cell.png)
 
 This article shows how to make always the first column be focused when a new item is about to be inserted. You need to subscribe to the __AddingNewDataItem__ event of the RadGridView and set the current column in its event handler:
 

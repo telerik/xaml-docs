@@ -148,7 +148,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 Run your demo, the result can be seen on the next picture:
 
-![](images/RadGridView_PopulatingWithDataLoadFromInMemoryData_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromInMemoryData 010](images/RadGridView_PopulatingWithDataLoadFromInMemoryData_010.PNG)
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

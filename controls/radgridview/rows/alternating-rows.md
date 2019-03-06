@@ -20,7 +20,7 @@ In order to define the pattern of alternation, you have to set the __Alternation
 	<telerik:RadGridView AlternationCount="2" />
 {{endregion}}
 
-![Setting the AlternationCount Property](images/RadGridView_Rows_Alternating_Rows_02.png)
+![Telerik {{ site.framework_name }} DataGrid Rows Alternating Rows 02](images/RadGridView_Rows_Alternating_Rows_02.png)
 
 In order to style the alternating rows, you can specify the __AlternateRowStyle__ and/or the __AlternateRowBackground__ properties. If you do not specify an AlternateRowBackground a default color will be picked, based on the current theme.
 
@@ -34,7 +34,7 @@ __Example 2__ shows __RadGridView__ with __AlternationCount__ set to __2__ and _
 	                   AlternateRowBackground="Coral" />
 {{endregion}}
 
-![Setting the AlternateRowBackground Property](images/RadGridView_Rows_Alternating_Rows_01.png)
+![Telerik {{ site.framework_name }} DataGrid Rows Alternating Rows 01](images/RadGridView_Rows_Alternating_Rows_01.png)
 
 ## See Also
 

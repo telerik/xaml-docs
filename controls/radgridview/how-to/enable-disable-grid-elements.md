@@ -40,7 +40,7 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 
 The screenshot below illustrates RadGridView control with a few disabled cells along with the "CompanyName" column.
 
-![](images/RadGridView_EnableDisable_1.png)
+![Telerik {{ site.framework_name }} DataGrid EnableDisable 1](images/RadGridView_EnableDisable_1.png)
 
 To __disable all the rows__ you need to apply a Style targeting the __GridViewRow__ element.
 

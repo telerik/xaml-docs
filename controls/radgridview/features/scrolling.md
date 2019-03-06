@@ -51,7 +51,7 @@ When RadGridView's **ScrollMode** is set to **Deffered**, a small tooltip appear
 
 #### __Figure 1: Custom ScrollPositionIndicator__
 
-![Custom ScrollPositionIndicator](images/radgridview-scrollpositionindicatortemplate.png)
+![Telerik {{ site.framework_name }} DataGrid scroll-position-indicator-template](images/radgridview-scrollpositionindicatortemplate.png)
 
 Additionally, you can style the element by creating the appropriate style and setting the **TargetType** property to **telerik:ScrollPositionIndicator** as demonstrated in **Example 2**:
 

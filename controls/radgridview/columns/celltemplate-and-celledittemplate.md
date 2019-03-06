@@ -61,7 +61,7 @@ In case you want to change those default elements for a particular columns, you 
 
 The grid defined above will be displayed as follows:
 
-![](images/RadGridView_CellTemplate_CellEditTemplate.png)
+![Telerik {{ site.framework_name }} DataGrid Cell Template Cell Edit Template](images/RadGridView_CellTemplate_CellEditTemplate.png)
 
 As it can be seen, the editor for a column of type __DateTime__ is defined as __RadDateTimePicker__, while the template for the numeric column is set as __RadNumericUpDown__.
 

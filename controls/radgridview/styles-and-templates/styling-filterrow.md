@@ -22,7 +22,7 @@ In this topic we will discuss:
 
 #### __Figure 1: RadGridView's filter row__
 
-![Rad Grid View Styles and Templates Styling Filter Row 01](images/RadGridView_Styles_and_Templates_Styling_FilterRow_01.PNG)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling FilterRow 01](images/RadGridView_Styles_and_Templates_Styling_FilterRow_01.PNG)
 
 ## Type of Editors
 
@@ -105,7 +105,7 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 #### __Figure 2: RadGridView with styled filter row__
 
-![RadGridView with styled GridViewEditorPresenter](images/gridview-styled-filter-row.png)
+![Telerik {{ site.framework_name }} DataGrid-styled-filter-row](images/gridview-styled-filter-row.png)
 
 ## See Also
 

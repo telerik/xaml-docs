@@ -132,7 +132,7 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 
 And here is how the error message is displayed:
 
-![](images/RadGridView_Events_Validation_010.png)
+![Events Validation in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_Events_Validation_010.png)
 
 ## CellValidated Event
 

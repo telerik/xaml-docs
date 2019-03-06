@@ -14,7 +14,7 @@ __GridViewBoundColumnBase__ provides a mechanism for it to be excluded from the 
 
 #### __Figure 1: RadGridView without having the IsSearchable set to none of its columns__
 
-![gridview-howto-exclude-column-from-search](images/gridview-howto-exclude-column-from-search_01.png)
+![Columns not Excluded from Search in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-howto-exclude-column-from-search_01.png)
 
 #### __[XAML] Example 1: Setting the IsSearchable property to False__
 
@@ -40,7 +40,7 @@ __GridViewBoundColumnBase__ provides a mechanism for it to be excluded from the 
 
 #### __Figure 2: RadGridView with having the IsSearchable set to one of its columns__
 
-![gridview-howto-exclude-column-from-search](images/gridview-howto-exclude-column-from-search_02.png)
+![Column Excluded from Search in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-howto-exclude-column-from-search_02.png)
 
 ## See Also
 

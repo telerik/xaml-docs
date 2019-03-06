@@ -100,7 +100,7 @@ Finally, set the **GroupFooterCellStyleSelector** property of the chosen column:
 
 #### __Figure 1: The group footer cells styled using the GroupFooterCellStyleSelector property__
 
-![The group footer cells styled using the GroupFooterCellStyleSelector property](images/gridview-groupfootercell-styleselector.png)
+![Telerik {{ site.framework_name }} DataGrid-groupfootercell-styleselector](images/gridview-groupfootercell-styleselector.png)
 
 ## See Also
 

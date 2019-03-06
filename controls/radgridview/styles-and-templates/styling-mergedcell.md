@@ -53,7 +53,7 @@ You can apply a style to the merged cells, similar to:
 
 #### __Figure 1: Styled merged cells__
 
-![RadGridView styled merged cells](images/gridview_merged_cells_5.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 5](images/gridview_merged_cells_5.png)
 
 ## Setting MergedCellsStyle
 

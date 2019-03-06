@@ -18,7 +18,7 @@ Assume we have RadGridView bound to a collection of Clubs. Each Club has a prope
 
 #### __Figure 1: The expected result__
 
-![The expected result](images/gridview_cellstyleselector.png)
+![Telerik {{ site.framework_name }} DataGrid cellstyleselector](images/gridview_cellstyleselector.png)
 
 To do so follow these steps:
 

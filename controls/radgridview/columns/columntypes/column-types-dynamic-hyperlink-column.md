@@ -50,7 +50,7 @@ You can also directly configure the navigate url to be a complete TeamUrl specif
 
 __Figure 1: Look of GridViewDynamicHyperlinkColumn represented in RadGridView__ 
 
-![](images/RadGridView_ColumnTypes_9.png)
+![Dynamic Hyperlink Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_9.png)
 
 ## See also
 * [Hyperlink Column]({%slug radgridview-columns-column-types-hyperlink-column%})

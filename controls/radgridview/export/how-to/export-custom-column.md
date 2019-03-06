@@ -44,7 +44,7 @@ The values from the exported column will appear in Excel as shown in **Figure 1*
 
 #### **Figure 1: Exported Custom Column to Excel**
 
-![exported custom column](images/gridview_exported-custom-column.png)
+![Telerik {{ site.framework_name }} DataGrid-exported-custom-column](images/gridview_exported-custom-column.png)
 
 ## See Also
 

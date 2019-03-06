@@ -16,7 +16,7 @@ This article will show you how to conditionally apply a different data template 
 
 Assume we have a GridView bound to a collection of clubs. Each club has a property StadiumCapacity. What we want to achieve is to apply one data template if the capacity is greater than 50 000 and another otherwise:
 
-![](images/cell_template_selector_gridview.png)
+![cell template selector Telerik {{ site.framework_name }} DataGrid](images/cell_template_selector_gridview.png)
 
 To do so follow these steps:
 

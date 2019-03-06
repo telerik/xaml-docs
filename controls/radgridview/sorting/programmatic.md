@@ -41,7 +41,7 @@ When you add a new descriptor to the collection, the data is automatically sorte
 {{endregion}}
 
 FIGURE 1: Programmatically sorted RadGridView:
-![](images/RadGridView_ProgrammaticSorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid ProgrammaticSorting 1](images/RadGridView_ProgrammaticSorting_1.png)
       
 Another approach is to add the new __SortDescriptor__ object (instead of __ColumnSortDescriptor__) to the RadGridView.SortDescriptors collection:
 
@@ -135,7 +135,7 @@ Consider the following scenario. You apply a programmatic sorting for your RadGr
 At this point, the RadGridView has the following state:
 
 FIGURE 3:
-![](images/RadGridView_ProgrammaticSorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid ProgrammaticSorting 1](images/RadGridView_ProgrammaticSorting_1.png)
 
 Eventually, you need to sort the grid by another column and would like to remove the previously applied rule. Use the following approach:
 
@@ -160,7 +160,7 @@ Eventually, you need to sort the grid by another column and would like to remove
 The result will be:
 
 FIGURE 4:
-![](images/RadGridView_ProgrammaticSorting_2.png)
+![Telerik {{ site.framework_name }} DataGrid ProgrammaticSorting 2](images/RadGridView_ProgrammaticSorting_2.png)
 
 ## See Also
  * [Basic Sorting]({%slug gridview-sorting-basics%})

@@ -26,7 +26,7 @@ __ToolTip for column's cells__
 
 You can check the source code below on how to set a ToolTip for a specific column. The ToolTip will use a DataTemplate with TextBlocks and will show information from the currently hovered row. The final result should look like this:
 
-![](images/gridview_row_tooltip.png)
+![Telerik {{ site.framework_name }} DataGrid row tooltip](images/gridview_row_tooltip.png)
 
 
 To achive that you can define a ToolTipTemplate for the column:
@@ -90,7 +90,7 @@ Two of the options to do so are:
 
 The final result should look like this:
 
-![gridview header tooltip](images/gridview_header_tooltip.png)
+![Telerik {{ site.framework_name }} DataGrid header tooltip](images/gridview_header_tooltip.png)
 
 __ToolTip for a row__
 

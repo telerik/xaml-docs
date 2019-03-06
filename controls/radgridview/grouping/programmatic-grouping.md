@@ -111,7 +111,7 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 #### Figure 1: The box displayed in the group panel after the DisplayContent is set
 
-![The box displayed in the group panel after the DisplayContent is set](images/RadGridView_ProgrammaticGrouping_1.png)
+![Telerik {{ site.framework_name }} DataGrid ProgrammaticGrouping 1](images/RadGridView_ProgrammaticGrouping_1.png)
 
 >tip In the group rows you are able to display aggregate functions, which display information about the data contained in the group. To learn more about how to add aggregate functions to the group rows take a look at the [Group Aggregates]({%slug gridview-grouping-aggregates%}) topic.
 

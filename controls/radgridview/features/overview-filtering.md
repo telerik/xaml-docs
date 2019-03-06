@@ -12,7 +12,7 @@ position: 2
 
 __RadGridView__ provides you with a built-in filtering functionality, which allows the user to easily filter the data by one or more columns, just by clicking on the filtering icon next to the header text.
 
-![](images/RadGridView_FunctionalOverview_Filtering_1.png)
+![Telerik {{ site.framework_name }} DataGrid FunctionalOverview Filtering 1](images/RadGridView_FunctionalOverview_Filtering_1.png)
 
 You can define filtering either in the XAML or in the code-behind.
 

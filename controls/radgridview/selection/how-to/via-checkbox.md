@@ -42,7 +42,7 @@ Here is a __RadGridView__ declaration, which is populated with some sample data.
 
 The grid is shown on the next figure.
 
-![](images/RadGridView_HowTo_SelectionViaCheckbox_010.png)
+![Telerik {{ site.framework_name }} DataGrid HowTo SelectionViaCheckbox 010](images/RadGridView_HowTo_SelectionViaCheckbox_010.png)
 
 In order to enable the selection via checkbox behavior, you need to perform the following instructions:
 
@@ -68,7 +68,7 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 Here is the final result. When you select the CheckBox Header, then all rows will be automatically selected.
 
-![](images/RadGridView_HowTo_SelectionViaCheckbox_020.png)
+![Telerik {{ site.framework_name }} DataGrid HowTo SelectionViaCheckbox 020](images/RadGridView_HowTo_SelectionViaCheckbox_020.png)
 
 >tipWhen you want to use selection via checkbox, then:1. Set the __SelectionMode__ property to __Extended__ or __Multiple__. Leaving it to __Single__ you won't be able to select all of the entries in the __RadGridView__.2. Add a __GridViewSelectColumn__.
 

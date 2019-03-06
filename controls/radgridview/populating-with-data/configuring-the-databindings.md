@@ -100,7 +100,7 @@ The data in __RadGridView__ is separated in columns. There are different types o
 
 #### Figure 1: The rendered RadGridView
 
-![The rendered RadGridView](images/RadGridView_ObservableCollection_ItemsSource.png)
+![Telerik {{ site.framework_name }} DataGrid ObservableCollection ItemsSource](images/RadGridView_ObservableCollection_ItemsSource.png)
 
 > To learn more about defining columns and the different types of columns, take a look at the [Columns]({%slug gridview-columns-overview%}) section.
 

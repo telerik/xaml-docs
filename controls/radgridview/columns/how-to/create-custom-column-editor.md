@@ -490,7 +490,7 @@ Here is the code of the custom converter we have used:
 
 #### __Figure 1: Snapshot of the created CustomColumn__
 
-![The CustomColumn](images/gridview-howto-create-custom-column-editor.png)
+![Creating Custom Column Editor in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-howto-create-custom-column-editor.png)
 
 >tipYou can download a runnable project of the previous example from the online SDK repository [CustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomColumnEditor).
 

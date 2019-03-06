@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadGridView_SL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadGridView_WPF.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![Telerik SL DataGrid](images/RadGridView_SL.png){% endif %}{% if site.site_name == 'WPF' %}![Telerik WPF DataGrid](images/RadGridView_WPF.png){% endif %}
 
 Thank you for choosing __RadGridView__ - Telerik's {{site.framework_name}} DataGrid!
 

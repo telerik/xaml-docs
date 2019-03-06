@@ -59,7 +59,7 @@ And in the event handler call the method for the Click event.
 	End Sub
 {{endregion}}
 
-![](images/RadGridView_EditingItems_1.png)
+![Telerik {{ site.framework_name }} DataGrid Editing Items 1](images/RadGridView_EditingItems_1.png)
 
 >If the __IsReadOnly__ property of the __RadGridView__ is set to __True__ you won't be able to bring the row into edit mode.
 
@@ -132,7 +132,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 
 When the updated item is committed, it will be automatically added to the __RadGridView__'s __Items__ collection, so you don't have to worry about anything on the client-side. If you have to save it to a data base use the event handler to call the appropriate method, as it is shown in the example above.
 
-![](images/RadGridView_EditingItems_2.png)
+![Telerik {{ site.framework_name }} DataGrid Editing Items 2](images/RadGridView_EditingItems_2.png)
 
 ## See Also
 

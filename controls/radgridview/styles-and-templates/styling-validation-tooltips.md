@@ -24,7 +24,7 @@ Especially for __Silverlight__ a special __ValidationToolTip__ element was devel
 
 #### __Figure 1: The default validation tooltip__
 
-![The default validation tooltip](images/Validation-Tooltip.png)
+![Telerik {{ site.framework_name }} DataGrid Validation-Tooltip](images/Validation-Tooltip.png)
 
 __RadGridView__ supports different validation modes and the validation tooltip depends on different factors. Visually all tooltips are the same, but they appear on different elements. In edit mode, a validation tooltip depends on the editor and __GridViewEditorPresenter__ element. __GridViewEditorPresenter__ is a generic container for all type of editors. In view mode, a validation tooltip depends on the cell and on the row.
 

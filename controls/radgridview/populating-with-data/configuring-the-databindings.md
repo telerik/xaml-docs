@@ -1,7 +1,7 @@
 ---
 title: Configure the Data Bindings
 page_title: Configure the Data Bindings
-description: Read this article demonstrating how to bind Telerik's WPF DataGrid to a collection of items and configure the data bindings for its columns.
+description: Read this article demonstrating how to bind Telerik's {{ site.framework_name }} DataGrid to a collection of items and configure the data bindings for its columns.
 slug: gridview-configuring-the-databindings
 tags: configure,the,data,bindings
 published: True
@@ -100,7 +100,7 @@ The data in __RadGridView__ is separated in columns. There are different types o
 
 #### Figure 1: The rendered RadGridView
 
-![The rendered RadGridView](images/RadGridView_ObservableCollection_ItemsSource.png)
+![Telerik {{ site.framework_name }} DataGrid ObservableCollection ItemsSource](images/RadGridView_ObservableCollection_ItemsSource.png)
 
 > To learn more about defining columns and the different types of columns, take a look at the [Columns]({%slug gridview-columns-overview%}) section.
 

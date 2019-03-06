@@ -1,7 +1,7 @@
 ---
 title: Loading Data from ADO.NET Services
 page_title: Loading Data from ADO.NET Services
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from an ADO.NET Data Service.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from an ADO.NET Data Service.
 slug: gridview-loading-data-from-adonet-services
 tags: loading,data,from,ado.net,services
 published: True
@@ -106,7 +106,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 Run your demo, the result can be seen on the next image:
 
-![](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromAdoNet 010](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
 
 ## Using MVVM Approach
 
@@ -280,7 +280,7 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 Run your demo, the result can be seen on the next picture: 
 
-![](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromAdoNet 010](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
 
 >tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 

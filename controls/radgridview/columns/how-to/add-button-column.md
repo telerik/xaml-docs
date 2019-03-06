@@ -1,7 +1,7 @@
 ---
 title: Add a Button Column
 page_title: Add a Button Column
-description: See examples demonstrating how to add a column with a delete button for each row within RadGridView - Telerik's WPF DataGrid.
+description: See examples demonstrating how to add a column with a delete button for each row within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-add-button-column
 tags: add,a,button,column
 published: True
@@ -14,7 +14,7 @@ This article demonstrates how to add a column with a delete button for each row.
 
 #### Figure 1: RadGridView with custom button column
 
-![RadGridView with custom button column](images/delete_column_gridview.png)
+![Custom Button Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/delete_column_gridview.png)
 
 There are several ways to achieve this. Let's look at some of them.
 

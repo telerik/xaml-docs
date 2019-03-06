@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Commands Overview
-description: Learn more about the commands built in Telerik's WPF DataGrid that allow you to easily handle the user interface actions.
+description: Learn more about the commands built in Telerik's {{ site.framework_name }} DataGrid that allow you to easily handle the user interface actions.
 slug: gridview-commands-overview
 tags: overview
 published: True

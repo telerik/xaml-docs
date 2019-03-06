@@ -1,7 +1,7 @@
 ---
 title: Corrupted Extended Selection
 page_title: Corrupted Extended Selection
-description: Learn how to troubleshoot corrupted selection if Telerik's WPF DataGrid looses focus during extended selection.
+description: Learn how to troubleshoot corrupted selection if Telerik's {{ site.framework_name }} DataGrid looses focus during extended selection.
 slug: gridview-troubleshooting-corrupted_extended-selection
 tags: corrupted,extended,selection
 published: True

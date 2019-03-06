@@ -1,7 +1,7 @@
 ---
 title: Sticky Group Headers
 page_title: Sticky Group Headers
-description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how to stick the headers of a group to the top. 
+description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to stick the headers of a group to the top. 
 slug: gridview-sticky-group-headers
 tags: sticky,group,headers
 published: True
@@ -14,7 +14,7 @@ By default, RadGridView's group headers will go out of view once you scroll past
 
 #### __Figure 1: RadGridView with Disabled Sticky Group Headers__
 
-![RadGridView with Disabled Sticky Group Headers](images/disabledstickygroupheaders.png)
+![Telerik {{ site.framework_name }} DataGrid disabled sticky group headers](images/disabledstickygroupheaders.png)
 
 You can stick the headers of the group to the top until its items are scrolled out of view by setting the **EnableStickyGroupHeaders** property to *true*.
 
@@ -28,7 +28,7 @@ You can stick the headers of the group to the top until its items are scrolled o
 
 #### __Figure 2: RadGridView with Enabled Sticky Group Headers__
 
-![RadGridView with Enabled Sticky Group Headers](images/enabledstickygroupheaders.png)
+![Telerik {{ site.framework_name }} DataGrid enabled sticky group headers](images/enabledstickygroupheaders.png)
 
 ## See Also
 

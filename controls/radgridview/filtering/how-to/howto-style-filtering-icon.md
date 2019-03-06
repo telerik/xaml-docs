@@ -1,7 +1,7 @@
 ---
 title: Style the Filtering Funnel Icon
 page_title: Style the Filtering Funnel Icon
-description: Learn how you can style the filtering funnel icon in Telerik's WPF DataGrid through predefined template of the FilteringDropDown element.
+description: Learn how you can style the filtering funnel icon in Telerik's {{ site.framework_name }} DataGrid through predefined template of the FilteringDropDown element.
 slug: gridview-filtering-howto-style-filtering-icon
 tags: style,the,filtering,funnel,icon
 published: True

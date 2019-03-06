@@ -115,7 +115,7 @@ cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
 controls/radnavigationview,
 controls/raddiagram/extensions/diagramribbon,
-knowledge-base/*,
+knowledge-base/,
 getting-started/first-steps.md,
 getting-started/explore-control-features.md]
 navigation:
@@ -124,6 +124,14 @@ navigation:
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"
+
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
 
 # Define any custom fields that you use in the site here
 framework_name: Silverlight
@@ -190,7 +198,7 @@ intro_columns:
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "DomainDataSource": "dds-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "GridView": "gridview-overview2"
+      "DataGrid": "gridview-overview2"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"
       "PropertyGrid": "radpropertygrid-overview"

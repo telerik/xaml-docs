@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Data Management Overview
-description: Get started with Telerik's WPF DataGrid that allows you to use Insert, Update and Delete operations, to validate data and to manage it in many more ways.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid that allows you to use Insert, Update and Delete operations, to validate data and to manage it in many more ways.
 slug: gridview-managing-data-overview
 tags: overview
 published: True

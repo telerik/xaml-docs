@@ -1,7 +1,7 @@
 ---
 title: Control Panel
 page_title: Control Panel
-description: Learn more about the Control Panel feature of Telerik's WPF DataGrid that allows changing different configurations through additional grid elements.
+description: Learn more about the Control Panel feature of Telerik's {{ site.framework_name }} DataGrid that allows changing different configurations through additional grid elements.
 slug: gridview-overview-controlpanel
 tags: control,panel
 published: True
@@ -14,7 +14,7 @@ The Control Panel is a feature of the RadGridView that provides the end user wit
 
 #### __Figure 1: Control Panel within RadGridView__
 
-![Control Panel within RadGridView](images/gridview_controlpanel_01.png)
+![Telerik {{ site.framework_name }} DataGrid control panel 01](images/gridview_controlpanel_01.png)
 
 
 In order to add items in the Control Panel, you need to set the __ControlPanelItems__ property of the RadGridView. You can define different content for as many ControlPanelItems as you need. Each ControlPanelItem can allow the end user to configure different options. Each item should have a __ControlPanelItem.Content__.

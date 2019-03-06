@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-description: Learn how you can easily group data by one or more columns by dragging the desired column to the GroupPanel of RadGridView - Telerik's WPF DataGrid.
+description: Learn how you can easily group data by one or more columns by dragging the desired column to the GroupPanel of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-overview-grouping
 tags: grouping
 published: True
@@ -14,7 +14,7 @@ __RadGridView__ provides you with a built-in grouping functionality, which allow
 
 #### **Figure 1: Grouped RadGridView**
 
-![grouped radgridview](images/RadGridView_FunctionalOverview_Grouping_1.png)
+![Telerik {{ site.framework_name }} DataGrid Functional Overview Grouping 1](images/RadGridView_FunctionalOverview_Grouping_1.png)
 
 You can define grouping either in the XAML or in the code-behind.
 

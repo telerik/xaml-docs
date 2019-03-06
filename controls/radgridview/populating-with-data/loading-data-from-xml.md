@@ -1,7 +1,7 @@
 ---
 title: Loading Data from XML
 page_title: Loading Data from XML
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from XML.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from XML.
 slug: gridview-loading-data-from-xml
 tags: loading,data,from,xml
 published: True
@@ -14,7 +14,7 @@ In order to bind the __RadGridView__ to a XML you will need to convert the XML t
 
 The final result should look like the snapshot below:  
 
-![](images/RadGridView_PopulatingWithDataLoadFromXml_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromXml 010](images/RadGridView_PopulatingWithDataLoadFromXml_010.PNG)
 
 * Below is a simple XML declaration, used in this tutorial: 
 
@@ -212,7 +212,7 @@ The final result should look like the snapshot below:
 
 Run your demo, the result can be seen on the next picture: 
 
-![](images/RadGridView_PopulatingWithDataLoadFromXml_020.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromXml 020](images/RadGridView_PopulatingWithDataLoadFromXml_020.PNG)
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

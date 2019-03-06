@@ -1,7 +1,7 @@
 ---
 title: Using Silverlight DataPager
 page_title: Using Silverlight DataPager
-description: Learn more about the integration with the standard Silverlight DataPager supported by RadGridView - Telerik's WPF DataGrid. 
+description: Learn more about the integration with the standard Silverlight DataPager supported by RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-paging-using-silverlight-datapager
 tags: using,silverlight,datapager
 published: True
@@ -32,7 +32,7 @@ For the purpose of this tutorial the following __RadGridView__ declaration will 
 	</Grid>
 {{endregion}}
 
-![](images/RadGridView_Paging_DataPager_010.png)
+![Telerik {{ site.framework_name }} DataGrid Paging DataPager 010](images/RadGridView_Paging_DataPager_010.png)
 
 As you can see the grid view is populated with some initial data.
 
@@ -86,7 +86,7 @@ In order to use the __DataPager__ with __RadGridView__, you need to perform the 
 
 The final result can be seen on the next figure.
 
-![](images/RadGridView_Paging_DataPager_020.png)
+![Telerik {{ site.framework_name }} DataGrid Paging DataPager 020](images/RadGridView_Paging_DataPager_020.png)
 
 ## See Also
 

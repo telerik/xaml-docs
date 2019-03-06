@@ -1,7 +1,7 @@
 ---
 title: Export DateTime Value
 page_title: Export DateTime Value
-description: Read this article to learn how to export DateTime values from Telerik's WPF DataGrid without having the values appear as numbers.
+description: Read this article to learn how to export DateTime values from Telerik's {{ site.framework_name }} DataGrid without having the values appear as numbers.
 slug: gridview-export-datetime
 tags: export, datetime, value
 published: True
@@ -16,13 +16,13 @@ __PROBLEM__
 
 #### __Figure 1: Exporting DateTime values without specified DataFormatString__
 
-![Exporting DateTime values without specified DataFormatString](images/gridview-export-datetime-as-number.png)
+![Telerik {{ site.framework_name }} DataGrid-export-datetime-as-number](images/gridview-export-datetime-as-number.png)
 
 2) When exporting DateTime values with specified **DataFormatString** to Excel, the values appear as strings as shown in **Figure 2**:
 
 #### __Figure 2: Exporting DateTime values with specified DataFormatString__
 
-![Exporting DateTime values with specified DataFormatString](images/gridview-export-datetime-as-string.png)
+![Telerik {{ site.framework_name }} DataGrid-export-datetime-as-string](images/gridview-export-datetime-as-string.png)
 
 __CAUSE__
 
@@ -74,7 +74,7 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 #### __Figure 3: Exporting DateTime values with ElementExportingToDocument__
 
-![Exporting DateTime values with ElementExportingToDocument](images/gridview-export-datetime-as-datetime.png)
+![Telerik {{ site.framework_name }} DataGrid-export-datetime-as-datetime](images/gridview-export-datetime-as-datetime.png)
 
 ## See Also
 

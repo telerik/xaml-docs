@@ -1,7 +1,7 @@
 ---
 title: Styling GridViewNewRow
 page_title: Styling GridViewNewRow
-description: Get started with Telerik's WPF DataGrid and learn how to you can explicitly or implicitly style the GridViewNewRow
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to you can explicitly or implicitly style the GridViewNewRow
 slug: gridview-styling-gridviewnewrow
 tags: styling,new,row
 published: True
@@ -49,7 +49,7 @@ You have two options:
 
 #### __Figure 1: RadGridView with styled GridViewNewRow in the Office 2016 theme__
 
-![RadGridView with styled GridViewNewRow](images/gridview-newrow-styling.png)
+![Telerik {{ site.framework_name }} DataGrid-new-row-styling](images/gridview-newrow-styling.png)
 
 ## See Also
 

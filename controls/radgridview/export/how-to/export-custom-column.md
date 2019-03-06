@@ -1,7 +1,7 @@
 ---
 title: Export Custom Column
 page_title: Export Custom Column
-description: Read this article to learn how to automatically export a custom column from RadGridView - Telerik's WPF DataGrid.
+description: Read this article to learn how to automatically export a custom column from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-custom-column
 tags: export,string,value
 published: True
@@ -44,7 +44,7 @@ The values from the exported column will appear in Excel as shown in **Figure 1*
 
 #### **Figure 1: Exported Custom Column to Excel**
 
-![exported custom column](images/gridview_exported-custom-column.png)
+![Telerik {{ site.framework_name }} DataGrid-exported-custom-column](images/gridview_exported-custom-column.png)
 
 ## See Also
 

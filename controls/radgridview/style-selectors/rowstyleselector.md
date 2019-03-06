@@ -1,7 +1,7 @@
 ---
 title: RowStyleSelector
 page_title: RowStyleSelector
-description: Learn how to style grid rows conditionally by using the RowStyleSelector and AlternateRowStyleSelector properties of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style grid rows conditionally by using the RowStyleSelector and AlternateRowStyleSelector properties of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-rowstyleselector
 tags: rowstyleselector
 published: True
@@ -20,7 +20,7 @@ Assume we have RadGridView bound to a collection of Clubs. Each Club has a prope
 
 #### __Figure 1: The expected result__
 		
-![The expected result](images/gridview_rowstyleselector.png)
+![Telerik {{ site.framework_name }} DataGrid rowstyleselector](images/gridview_rowstyleselector.png)
 
 To do so follow these steps:
 
@@ -159,7 +159,7 @@ If you've set the **AlternationCount** property, you can apply conditional style
 
 #### __Figure 2: The alternating rows styled using the AlternateRowStyleSelector property__
 
-![The alternating rows styled using the AlternateRowStyleSelector property](images/gridview_alternaterowstyleselector.png)
+![Telerik {{ site.framework_name }} DataGrid alternaterowstyleselector](images/gridview_alternaterowstyleselector.png)
 
 ## See Also
 

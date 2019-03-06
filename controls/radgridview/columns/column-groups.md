@@ -1,7 +1,7 @@
 ---
 title: Column Groups
 page_title: Column Groups
-description: Learn how to combine grid columns in column groups visually represented by common headers when using RadGridView - Telerik's WPF DataGrid. 
+description: Learn how to combine grid columns in column groups visually represented by common headers when using RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-column-groups
 tags: merged,column, headers, groups
 published: True
@@ -44,7 +44,7 @@ To enable __column grouping__ you need to add **GridViewColumnGroup** instances 
 
 #### Figure 1: RadGridView with Column Groups
 
-![RadGridView with Column Groups](images/RadGridView_ColumnHeaders_7.png)
+![Telerik {{ site.framework_name }} DataGrid Column Headers 7](images/RadGridView_ColumnHeaders_7.png)
 
 Please observe that to add a specific column to a certain column group, you need to set the __ColumnGroupName__ property of the column to match the value of the __Name__ property of the relevant __GridViewColumnGroup__.
 
@@ -69,7 +69,7 @@ Column groups can also be __nested__. **Example 2** shows how this is achieved.
 
 #### Figure 2: Nested column groups
 
-![Nested column groups](images/RadGridView_ColumnHeaders_8.png)
+![Telerik {{ site.framework_name }} DataGrid Column Headers 8](images/RadGridView_ColumnHeaders_8.png)
 
 ## Define Custom Header
 
@@ -124,15 +124,15 @@ In case the user moves the frozen column splitter in the middle of an existing c
 
 #### Figure 3: Initial setup with FrozenColumnSplitter at default position
 
-![Initial setup with FrozenColumnSplitter](images/columngroups_frozencolumn_1.png)
+![Telerik {{ site.framework_name }} DataGrid column groups frozen column 1](images/columngroups_frozencolumn_1.png)
 
 #### Figure 4: A duplicate column group is created when FrozenColumnSplitter moved after the first column
 
-![A duplicate column group is created when FrozenColumnSplitter moved after the first column](images/columngroups_frozencolumn_2.png)
+![Telerik {{ site.framework_name }} DataGrid column groups frozen column 2](images/columngroups_frozencolumn_2.png)
 
 #### Figure 5: ColumnGroup's Header is still visible after scrolling to the right
 
-![ColumnGroup's Header is still visible after scrolling to the right](images/columngroups_frozencolumn_3.png)
+![Telerik {{ site.framework_name }} DataGrid column groups frozen column 3](images/columngroups_frozencolumn_3.png)
 
 When scrolling horizontally, the column group header remains visible until there are still visible sub-columns under the specific group.
 
@@ -142,11 +142,11 @@ When some GridViewColumns do not have a **ColumnGroupName** specified, they are 
 
 #### Figure 6: Various setups illustrating the default space fill
  
-![Nested groups and Default space fill](images/columngroups_defaultgroups_1.png)
+![Telerik {{ site.framework_name }} DataGrid column groups default groups 1](images/columngroups_defaultgroups_1.png)
 
-![Nested groups and Default space fill](images/columngroups_defaultgroups_2.png)
+![Telerik {{ site.framework_name }} DataGrid column groups default groups 2](images/columngroups_defaultgroups_2.png)
 
-![Nested groups and Default space fill](images/columngroups_defaultgroups_3.png)
+![Telerik {{ site.framework_name }} DataGrid column groups default groups 3](images/columngroups_defaultgroups_3.png)
 
 ## See Also
 

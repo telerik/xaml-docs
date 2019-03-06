@@ -1,7 +1,7 @@
 ---
 title: GroupRowStyleSelector
 page_title: GroupRowStyleSelector
-description: Learn how to style groups of grid rows differently by using the GroupRowStyleSelector property of RadGridView - Telerik's WPF DataGrid.
+description: Learn how to style groups of grid rows differently by using the GroupRowStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-group-row-style-selector
 tags: grouprowstyleselector
 published: True
@@ -117,7 +117,7 @@ And here is the final result:
 
 #### __Figure 1: The group footer rows styled using the GroupRowStyleSelector property__
 
-![The group rows styled using the GroupRowStyleSelector property](images/gridview-grouprowstyleselector.png)
+![Telerik {{ site.framework_name }} DataGrid-grouprowstyleselector](images/gridview-grouprowstyleselector.png)
 
 ## See Also
 

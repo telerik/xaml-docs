@@ -1,7 +1,7 @@
 ---
 title: Styling Column Headers
 page_title: Styling Column Headers
-description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the HeaderCell element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the HeaderCell element.
 slug: gridview-styling-column-headers
 tags: styling,column,headers
 published: True
@@ -20,7 +20,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewHeaderCell template structure__
 
-![RadGridView template structure](images/gridviewheadercell-template.png)
+![Telerik {{ site.framework_name }} DataGrid Header Cell Template](images/gridviewheadercell-template.png)
 
 ## Targeting the GridViewHeaderCell element
 
@@ -59,7 +59,7 @@ __RadGridView__ header cells can also be styled by creating an appropriate __Sty
 
 #### __Figure 2: RadGridView with styled header cells__
 
-![RadGridView with styled header cells](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewHeaderCell 03](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 
 ## See Also
 

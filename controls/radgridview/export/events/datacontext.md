@@ -1,7 +1,7 @@
 ---
 title: DataContext of the Export Elements
 page_title:  DataContext of the Export Elements
-description:  Learn how to use a number of contexts to conditionally style and format the elements exported from RadGridView - Telerik's WPF DataGrid.
+description:  Learn how to use a number of contexts to conditionally style and format the elements exported from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-events
 tags: grid,export,events
 published: True

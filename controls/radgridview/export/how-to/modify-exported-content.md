@@ -1,7 +1,7 @@
 ---
 title: Modify Content Before Exporting
 page_title: Modify Content Before Exporting
-description: Read this article to learn how to modify content before exporting it from RadGridView - Telerik's WPF DataGrid.
+description: Read this article to learn how to modify content before exporting it from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-howto-modify-exported-content
 tags: modify,content,before,exporting
 published: True

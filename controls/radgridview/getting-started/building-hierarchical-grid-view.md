@@ -1,7 +1,7 @@
 ---
 title: Building Hierarchical Grid View
 page_title: Building Hierarchical Grid
-description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's WPF DataGrid.
+description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
 published: True
@@ -15,7 +15,7 @@ This tutorial will walk you through the process of displaying hierarchical data 
 
 The final result should look like this:
 
-![](images/RadGridView_BuildingHierarchicalGrid_2.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 2](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
 Assuming that you have already created a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application and defined the __RadGridView__ control, it is time to prepare the sample data for it.
 
@@ -336,7 +336,7 @@ Set the __ItemsSource__ in the code-behind file of your UserControl.
 
 If you run the application at this stage you should see this.
 
-![](images/RadGridView_BuildingHierarchicalGrid_1.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 1](images/RadGridView_BuildingHierarchicalGrid_1.png)
 
 ## Defining ChildTableDefinitions
 
@@ -366,7 +366,7 @@ The next step is to make the __RadGridView__ display the collections of teams as
 
 And here is the final result.
 
-![](images/RadGridView_BuildingHierarchicalGrid_2.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 2](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
 To learn more about the Hierarchical Grids you can visit the [Hierarchical GridView]({%slug gridview-hierachy-overview%}) section.
 

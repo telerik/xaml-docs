@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Learn more about the localization mechanism built in Telerik's WPF DataGrid and see a list of the supported languages.
+description: Learn more about the localization mechanism built in Telerik's {{ site.framework_name }} DataGrid and see a list of the supported languages.
 slug: gridview-localization2
 tags: localization
 published: True
@@ -23,7 +23,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish
 
-![Rad Grid View Localization 4](images/RadGridView_Localization_4.png)
+![Telerik {{ site.framework_name }} DataGrid Localization 4](images/RadGridView_Localization_4.png)
 
 >tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
@@ -35,7 +35,7 @@ __RadGridView__ is a complex user interface control and its strings for localiza
 
 On the picture below you can see some of the resource keys and the strings they are associated with.
 
-![Rad Grid View Localization 3](images/RadGridView_Localization_3.png)
+![Telerik {{ site.framework_name }} DataGrid Localization 3](images/RadGridView_Localization_3.png)
 
 Here is a list of all of the __Resources__ available and their default values:
 

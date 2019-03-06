@@ -1,7 +1,7 @@
 ---
 title: Styling CheckBoxColumn
 page_title: Styling CheckBoxColumn
-description: Get started with Telerik's WPF DataGrid and learn how to style the CheckBoxColumn. 
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the CheckBoxColumn. 
 slug: gridview-columns-styling-checkboxcolumn
 tags: styling,checkboxcolumn
 published: True
@@ -27,7 +27,7 @@ The cells of __RadGridView__ have two templates for their current state - when i
 ## Styling GridViewCheckBoxColumn in View Mode
 
 #### __Figure 1: Default look of GridViewCheckBox__        
-![Rad Grid View Styles and Templates Styling Check Box Column 01](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 01](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
 
 In order to modify the visual appearance of a cell in __view mode__, the __ControlTemplate__ of __GridViewCheckBox__ should be modified.
 
@@ -97,13 +97,13 @@ Now the __GridViewCheckBoxColumn__ will look like:
 
 #### __Figure 2: Centered GridViewCheckBoxColumn__     
 
-![Rad Grid View Styles and Templates Styling Check Box Column 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
 
 However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into edit mode:
 
 #### __Figure 3: Centered GridViewCheckBoxColumn in edit mode__       
 
-![Rad Grid View Styles and Templates Styling Check Box Column 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)
 
 In order to align the default editor of __GridViewCheckBoxColumn__ correctly, you can specify a different __Margin__ for it by handling the __PreparingCellForEdit__ event of __RadGridView__:        
 
@@ -123,7 +123,7 @@ Here is the result:
 
 #### __Figure 4 GridViewCheckBoxColumn with set margin__
         
-![Rad Grid View Styles and Templates Styling Check Box Column 05](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_05.PNG)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 05](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_05.PNG)
 
 ## See Also
  * [CheckBox Column]({%slug gridview-checkbox-column%})

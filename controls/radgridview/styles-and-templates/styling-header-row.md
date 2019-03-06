@@ -1,7 +1,7 @@
 ---
 title: Styling Header Row
 page_title: Styling Header Row
-description: Get started with Telerik's WPF DataGrid and learn how to style the HeaderRow element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the HeaderRow element.
 slug: gridview-styling-header-row
 tags: styling,header,row
 published: True
@@ -20,7 +20,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewHeaderRow template structure__
 
-![GridViewHeaderRow template structure](images/gridview-headerrow-template.png)
+![Telerik {{ site.framework_name }} DataGrid-headerrow-template](images/gridview-headerrow-template.png)
 
 ## Targeting the GridViewHeaderRow Element
 
@@ -56,7 +56,7 @@ __RadGridView's header row__ can also be styled by creating an appropriate __Sty
 
 #### __Figure 1: RadGridView with styled header row__
 
-![RadGridView with styled header row](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewHeaderRow 03](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png)
 
 >As you can see, the changes we made apply only for the row. The header cells remain unchanged. To learn how to style them, take a look at the [Styling Column Headers]({%slug gridview-styling-column-headers%}) topic.
 

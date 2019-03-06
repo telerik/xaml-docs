@@ -1,7 +1,7 @@
 ---
 title: Group Aggregates
 page_title: Group Aggregates
-description: Get started with the grouping functionality of Telerik's WPF DataGrid and learn how you can add aggregate functions to the group rows. 
+description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how you can add aggregate functions to the group rows. 
 slug: gridview-grouping-aggregates
 tags: group,aggregates
 published: True
@@ -20,7 +20,7 @@ This article will discuss the following topics:
 
 #### Figure 1: RadGridView With Group Aggregates
 
-![RadGridView With Group Aggregates](images/RadGridView_GroupAggregates_1.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 1](images/RadGridView_GroupAggregates_1.png)
 
 ## Aggregate Functions
 
@@ -155,14 +155,14 @@ You can add more than one aggregate function to __AggregateFunctions__ collectio
 The final result can be seen on the snapshot below:
 
 #### __Figure 1: RadGridView with GroupDescriptor and AggregateFunctions defined__
-![](images/RadGridView_GroupAggregates_2.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 2](images/RadGridView_GroupAggregates_2.png)
 
 With __Q3 2012__ we added built-in feature for __aligning header aggregates__ with corresponding columns.
         
 ## Align Header Aggregates
 
 #### __Figure 2: Aligning the Aggregates__
-![Rad Grid View Group Aggregates 3](images/RadGridView_GroupAggregates_3.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 3](images/RadGridView_GroupAggregates_3.png)
 
 This feature can be controlled with applying a __Style__. The Style should be targeting at the GroupHeaderRow visual element having the __GroupRenderMode of the RadGridView set to Flat__.
 Here is an example of the style definition:
@@ -194,7 +194,7 @@ When using this feature, most probably you don't need the group row aggregates t
 Setting the "ShowHeaderAggregates" to false will hide the default header aggregates.
 
 #### __Figure 3: RadGridView with ShowHeaderAggregates set to False__
-![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_4.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 4](images/RadGridView_GroupAggregates_4.png)
 
 For more details you can check our [Aggregates](https://demos.telerik.com/silverlight/#GridView/Aggregates) demo.
 
@@ -213,13 +213,13 @@ When using the __ShowGroupHeaderColumnAggregates__ property of __GroupHeaderRow_
 * __NoAlignment__
 
 #### __Figure 4: RadGridView with ColumnAggregatesAlignment set to BelowGroupKey__
-![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_5.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 5](images/RadGridView_GroupAggregates_5.png)
 
 #### __Figure 5: RadGridView with ColumnAggregatesAlignment set to NextToGroupKey__
-![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_6.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 6](images/RadGridView_GroupAggregates_6.png)
 
 #### __Figure 6: RadGridView with ColumnAggregatesAlignment set to NextToGroupKey__
-![Rad Grid View Group Aggregates 4](images/RadGridView_GroupAggregates_7.png)
+![Telerik {{ site.framework_name }} DataGrid Group Aggregates 7](images/RadGridView_GroupAggregates_7.png)
 
 ## See Also
 

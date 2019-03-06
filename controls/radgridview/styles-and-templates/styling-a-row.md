@@ -1,7 +1,7 @@
 ---
 title: Styling Rows
 page_title: Styling Rows
-description: Get started with Telerik's WPF DataGrid and learn how to set the background of the selected row.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to set the background of the selected row.
 slug: gridview-styling-a-row
 tags: styling,rows
 published: True
@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewRow template structure__
 
-![GridViewRow template structure](images/gridview-row-template.png)
+![Telerik {{ site.framework_name }} DataGrid-row-template](images/gridview-row-template.png)
 
 ## Targeting the GridViewRow Element
 
@@ -65,7 +65,7 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 #### __Figure 2: RadGridView with styled rows__
 
-![RadGridView with styled cells](images/gridview-styled-row-and-alternaterow.png)
+![Telerik {{ site.framework_name }} DataGrid-styled-row-and-alternate-row](images/gridview-styled-row-and-alternaterow.png)
 
 ## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
 

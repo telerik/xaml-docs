@@ -1,7 +1,7 @@
 ---
 title: Styling Search Panel
 page_title: Styling Search Panel
-description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the SearchPanel element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the SearchPanel element.
 slug: gridview-styling-search-panel
 tags: styling,search,panel
 published: True
@@ -34,7 +34,7 @@ You can apply a style to the Search Panel, similar to Example 1:
 {{endregion}}
 
 #### __Figure 1: Appearance of the control after the style is applied:__
-![Appearance of the control after the style is applied](images/search-panel-styled.PNG)
+![Telerik {{ site.framework_name }} DataGrid search-panel-styled](images/search-panel-styled.PNG)
 
 You can find the GridViewSearchPanel template structure in the [Templates Structure]({%slug radgridview-styles-and-templates-templates-structure%}) article for RadGridView.
 
@@ -51,7 +51,7 @@ By default, the symbols matching the searching criteria are colored in red. You 
 
 #### __Figure 2: Appearance of the highlighted text after the style is applied__
 
-![Appearance of the highlighted text after the style is applied](images/search-panel-highlight-color.png)
+![Telerik {{ site.framework_name }} DataGrid search-panel-highlight-color](images/search-panel-highlight-color.png)
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __HighlightTextBlockStyle__.
 

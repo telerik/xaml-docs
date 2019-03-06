@@ -1,7 +1,7 @@
 ---
 title: Validation
 page_title: Validation Events
-description: Learn more about the validation events of Telerik's WPF DataGrid that occur when the new content entered by the user is about to be committed.
+description: Learn more about the validation events of Telerik's {{ site.framework_name }} DataGrid that occur when the new content entered by the user is about to be committed.
 slug: gridview-events-validation
 tags: validation
 published: True
@@ -132,7 +132,7 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 
 And here is how the error message is displayed:
 
-![](images/RadGridView_Events_Validation_010.png)
+![Events Validation in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_Events_Validation_010.png)
 
 ## CellValidated Event
 

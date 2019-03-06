@@ -1,7 +1,7 @@
 ---
 title: Tips and Tricks
 page_title: Tips and Tricks
-description: Check out our list of tips and tricks related to Telerik's WPF DataGrid that will help you tweak your application for optimal performance.
+description: Check out our list of tips and tricks related to Telerik's {{ site.framework_name }} DataGrid that will help you tweak your application for optimal performance.
 slug: radgridview-performance-tips-tricks
 tags: tips,and,tricks
 published: True

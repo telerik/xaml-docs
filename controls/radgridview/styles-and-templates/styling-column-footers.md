@@ -1,7 +1,7 @@
 ---
 title: Styling Column Footers
 page_title: Styling Column Footers
-description: Get started with Telerik's WPF DataGrid and learn how to create an appropriate style targeting the FooterRow element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the FooterRow element.
 slug: gridview-styling-column-footers
 tags: styling,column,footers
 published: True
@@ -55,7 +55,7 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 #### __Figure 1: RadGridView with styled footer rows__
 
-![RadGridView with styled footer cells](images/gridview-footerrow-style.png)
+![Telerik {{ site.framework_name }} DataGrid-footerrow-style](images/gridview-footerrow-style.png)
 
 ## Targeting the GridViewFooterCell Element
 
@@ -87,7 +87,7 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 #### __Figure 2: RadGridView with styled footer cells__
 
-![RadGridView with styled footer cells](images/RadGridView_Styles_and_Templates_Styling_GridViewColumnFooterCell_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewColumnFooterCell 03](images/RadGridView_Styles_and_Templates_Styling_GridViewColumnFooterCell_03.png)
 
 ## See Also
 

@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection Events
-description: Learn more about the selection events of Telerik's WPF DataGrid that occur each time there is a modification of the SelectedItems / SelectedCells collection.
+description: Learn more about the selection events of Telerik's {{ site.framework_name }} DataGrid that occur each time there is a modification of the SelectedItems / SelectedCells collection.
 slug: gridview-selection-events
 tags: selection
 published: True

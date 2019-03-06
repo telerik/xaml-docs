@@ -1,7 +1,7 @@
 ---
 title: Styling Group Row
 page_title: Styling Group Row
-description: Get started with Telerik's WPF DataGrid and learn how to style the GroupRow element.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the GroupRow element.
 slug: gridview-styling-group-row
 tags: styling,group,row
 published: True
@@ -28,7 +28,7 @@ In order to style all group rows of __RadGridView__ instances with **GroupRender
 
 #### __Figure 1: GridViewGroupRow template structure__
 
-![GridViewGroupRow template structure](images/gridview-group-row-template.png)
+![Telerik {{ site.framework_name }} DataGrid-group-row-template](images/gridview-group-row-template.png)
 
 You have two options:
 
@@ -54,7 +54,7 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 #### __Figure 2: GroupHeaderRow template structure__
 
-![GroupHeaderRow template structure](images/gridview-groupheaderrow-template.png)
+![Telerik {{ site.framework_name }} DataGrid-groupheaderrow-template](images/gridview-groupheaderrow-template.png)
 
 #### __[XAML] Example 2: Targetting GroupHeaderRow__
 
@@ -78,7 +78,7 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 #### __Figure 3: RadGridView with styled group rows__
 
-![](images/RadGridView_Styles_and_Templates_Styling_GridViewGroupRow_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewGroupRow 03](images/RadGridView_Styles_and_Templates_Styling_GridViewGroupRow_03.png)
 
 >In order to fully style the grouping appearance you have to also modify the styles for [GridViewRow]({%slug gridview-styling-a-row%}), [GridViewGroupRow]({%slug gridview-styles-and-templates-styling-group-footers%}) and [indent cells]({%slug radgridview-styling-indent-cells%}).
 

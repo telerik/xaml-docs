@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Learn how you can easily sort grid data by one of the columns thanks to the sorting functionality of RadGridView - Telerik's WPF DataGrid.
+description: Learn how you can easily sort grid data by one of the columns thanks to the sorting functionality of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-overview-sorting
 tags: sorting
 published: True
@@ -12,7 +12,7 @@ position: 5
 
 __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one of the columns.
 
-![](images/RadGridView_FunctionalOverview_Sorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid Functional Overview Sorting 1](images/RadGridView_FunctionalOverview_Sorting_1.png)
 
 You can define sorting criteria either in the XAML or in the code-behind.
 

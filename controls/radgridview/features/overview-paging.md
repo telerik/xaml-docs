@@ -1,7 +1,7 @@
 ---
 title: Paging
 page_title: Paging
-description: Learn about the few simple steps you need to perform in order to connect Telerik's WPF DataGrid with a DataPager.
+description: Learn about the few simple steps you need to perform in order to connect Telerik's {{ site.framework_name }} DataGrid with a DataPager.
 slug: gridview-overview-paging
 tags: paging
 published: True
@@ -14,7 +14,7 @@ site_name: Silverlight
 __RadGridView__ offers an excellent integration with Silverlight __DataPager__.
 
 
-![](images/RadGridView_Features_Paging_010.png)
+![Telerik {{ site.framework_name }} DataGrid Features Paging 010](images/RadGridView_Features_Paging_010.png)
 
 To connect the __RadGridView__ with a __DataPager__ you need to perform a few simple steps:
 

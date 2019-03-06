@@ -1,7 +1,7 @@
 ---
 title: Simple Filter Descriptors
 page_title: Simple Filter Descriptors
-description: Get started with the filtering functionality of Telerik's WPF DataGrid and learn how to create and combine simple filter descriptors.
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to create and combine simple filter descriptors.
 slug: radgridview-filtering-simple-filter-descriptors
 tags: simple,filter,descriptors
 published: False

@@ -1,7 +1,7 @@
 ---
 title: Aggregate Functions
 page_title: Aggregate Functions
-description: See examples of how you can display or add an aggregate function for a certain column in RadGridView - Telerik's WPF DataGrid.
+description: See examples of how you can display or add an aggregate function for a certain column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-aggregate-functions
 tags: aggregate,functions
 published: True
@@ -48,7 +48,7 @@ If the **ShowColumnFooters** property of the RadGridView control is set to **Tru
 
 #### __Figure 1: RadGridView with aggregate results__
 
-![RadGridView with aggregate results](images/RadGridView_Aggregate_Functions.png)
+![Telerik {{ site.framework_name }} DataGrid Aggregate Functions](images/RadGridView_Aggregate_Functions.png)
 
 To specify an aggregate function for a certain column, just add it to the __AggregateFunctions__ collection of that column.
 
@@ -80,7 +80,7 @@ To specify an aggregate function for a certain column, just add it to the __Aggr
 
 #### __Figure 2: RadGridView with a defined CountFunction__
 
-![RadGridView with a defined CountFunction](images/RadGridView_Aggregate_Functions_010.png)
+![Telerik {{ site.framework_name }} DataGrid Aggregate Functions 010](images/RadGridView_Aggregate_Functions_010.png)
 
 >You need to set RadGridView's __ShowColumnFooters__ property of  to true in order to display aggregates.
             

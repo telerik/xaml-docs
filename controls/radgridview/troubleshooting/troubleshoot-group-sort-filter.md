@@ -1,7 +1,7 @@
 ---
 title: Cannot group, sort and filter a specific column
 page_title: Cannot group, sort and filter a specific column
-description: Learn how to solve the problem of not being able to group, sort and filter a specific column within RadGridView - Telerik's WPF DataGrid.
+description: Learn how to solve the problem of not being able to group, sort and filter a specific column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshoot-group-sort-filter
 tags: cannot,group,,sort,and,filter,a,specific,column
 published: True

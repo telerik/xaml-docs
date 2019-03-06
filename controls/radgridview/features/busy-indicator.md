@@ -1,7 +1,7 @@
 ---
 title: Busy Indicator
 page_title: Busy Indicator
-description: Learn how to display a notification whenever a longer-running process is being handled by Telerik's WPF DataGrid by incorporating the RadBusyIndicator.
+description: Learn how to display a notification whenever a longer-running process is being handled by Telerik's {{ site.framework_name }} DataGrid by incorporating the RadBusyIndicator.
 slug: gridview-busy-indicator
 tags: busy,indicator
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Scroll to Newly Added Item
 page_title: Scroll to Newly Added Item
-description: Get started with Telerik's WPF DataGrid and learn how to scroll to a newly added item by using the ScrollIntoViewAsync method and the CollectionChanged event.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to scroll to a newly added item by using the ScrollIntoViewAsync method and the CollectionChanged event.
 slug: gridview-how-to-scroll-to-newly-added-item
 tags: scroll,to,newly,added,item
 published: True

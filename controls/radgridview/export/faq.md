@@ -1,7 +1,7 @@
 ---
 title: FAQ
 page_title: Data Export FAQ
-description: Check out the FAQ about exporting data from Telerik's WPF DataGrid and learn how to export paged data, how to modify the exported value and much more.
+description: Check out the FAQ about exporting data from Telerik's {{ site.framework_name }} DataGrid and learn how to export paged data, how to modify the exported value and much more.
 slug: gridview-export-faq
 tags: export,faq
 published: True

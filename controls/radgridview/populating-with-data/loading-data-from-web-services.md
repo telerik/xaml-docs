@@ -1,7 +1,7 @@
 ---
 title: Loading Data from Web Services
 page_title: Loading Data from Web Services
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with data from a Web Service.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from a Web Service.
 slug: gridview-loading-data-from-web-services
 tags: loading,data,from,web,services
 published: True
@@ -92,7 +92,7 @@ The gridview control will be populated with all __Customers__ from the __Northwi
 
 Run your demo, the result can be seen on the next image:
 
-![](images/RadGridView_PopulatingWithDataLoadFromWeb_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromWeb 010](images/RadGridView_PopulatingWithDataLoadFromWeb_010.PNG)
 
 ## Using MVVM Approach
 
@@ -234,7 +234,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 Run your demo, the result can be seen on the next picture: 
 
-![](images/RadGridView_PopulatingWithDataLoadFromWeb_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromWeb 010](images/RadGridView_PopulatingWithDataLoadFromWeb_010.PNG)
 
 >tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 

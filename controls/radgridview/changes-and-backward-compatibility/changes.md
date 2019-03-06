@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check out this change log listing all released features and bug fixes of RadGridView - Telerik's WPF DataGrid.
+description: Check out this change log listing all released features and bug fixes of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-changes
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customizing Columns
 page_title: Customizing Columns
-description: Check out how you can customize a column's content, footer and header cells seperately from each other in RadGridView - Telerik's WPF DataGrid.
+description: Check out how you can customize a column's content, footer and header cells seperately from each other in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-customizing-columns
 tags: customizing,columns
 published: True
@@ -80,7 +80,7 @@ __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual 
 {{endregion}}
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
-![](images/gridview-textproperties-column.png)
+![Telerik {{ site.framework_name }} DataGrid-text properties-column](images/gridview-textproperties-column.png)
 
 ## See Also
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

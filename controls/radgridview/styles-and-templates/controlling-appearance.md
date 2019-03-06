@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Get started with Telerik's WPF DataGrid and learn about the different ways to customize the look and feel of the control.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the different ways to customize the look and feel of the control.
 slug: gridview-styles-and-templates-controlling-appearance
 tags: controlling,appearance
 published: False
@@ -49,7 +49,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 The final result should be similar to this:
 
-![](images/RadGridView_Controlling_Appearance_1.png)
+![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 1](images/RadGridView_Controlling_Appearance_1.png)
 
 You can see that the columns headers are not visible, while the column footers are, moreover there are only vertical grid lines and the columns' __background__ of all columns is set to Bisque.
 
@@ -107,7 +107,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 	</telerik:RadGridView>
 {{endregion}}
 
-![](images/RadGridView_Controlling_Appearance_2.png)
+![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 2](images/RadGridView_Controlling_Appearance_2.png)
 
 You can see that the row indicators are missing and the row details are displayed only for the selected row. Moreover each even row has different styling because of the property __AlternationCount__.
 
@@ -136,7 +136,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 	</telerik:RadGridView>
 {{endregion}}
 
-![](images/RadGridView_Controlling_Appearance_3.png)
+![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 3](images/RadGridView_Controlling_Appearance_3.png)
 
 You can see that the group footers are shown, while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.
 

@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export Events
-description: Learn more about the export events of Telerik's WPF DataGrid that occur when you export data from the grid.
+description: Learn more about the export events of Telerik's {{ site.framework_name }} DataGrid that occur when you export data from the grid.
 slug: gridview-events-export-events
 tags: export
 published: True
@@ -141,7 +141,7 @@ You can see the result in **Figure 1**.
 
 #### __Figure 1: Exporting Row Details__
 
-![Exporting Row Details](images/gridview_row_details_export.png)
+![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_row_details_export.png)
 
 ## ElementExportingToDocument
 

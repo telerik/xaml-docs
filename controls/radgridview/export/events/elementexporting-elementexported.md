@@ -1,14 +1,14 @@
 ---
-title: ElementExporting & ElementExported
-page_title:  ElementExporting & ElementExported
-description:  Learn how to utilize the ElementExporting and ElementExported events which are fired when you export data from RadGridView - Telerik's WPF DataGrid.
+title: ElementExporting and ElementExported
+page_title:  ElementExporting and ElementExported
+description:  Learn how to utilize the ElementExporting and ElementExported events which are fired when you export data from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-events-elementexporting-elementexported
 tags: grid,export,events,elementexporting,elementexported
 published: True
 position: 1
 ---
 
-# ElementExporting & ElementExported
+# ElementExporting and ElementExported
 
 You have more control over the exportation by utilizing the export events which are fired when you export data from RadGridView.
 
@@ -127,7 +127,7 @@ You can use this event if you want to write additional data to the stream. A com
 
 The result is:
 
-![](images/gridview_row_details_export.png)
+![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_row_details_export.png)
 
 ## DataContext of the Export Elements
 

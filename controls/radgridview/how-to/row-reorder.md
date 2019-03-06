@@ -1,7 +1,7 @@
 ---
 title: Enable Row Reordering within two RadGridView-s
 page_title: Enable Row Reordering within two RadGridView-s
-description: Learn how to implement additional functionality to Telerik's WPF DataGrid by enabling row reordering within two RadGridView-s.
+description: Learn how to implement additional functionality to Telerik's {{ site.framework_name }} DataGrid by enabling row reordering within two RadGridView-s.
 slug: radgridview-row-reorder
 tags: enable,row,reordering,within,two,radgridview-s
 published: True
@@ -15,7 +15,7 @@ RadGridView does provide you with a great amount of built-in features that enabl
 This can be achieved with the help of __attached behavior__. The main idea here would be to use the DragDropManager, set the required properties for the corresponding grids and perform the logic for row reordering.
         
 
-![](images/RadGridView_RowReorder.png)
+![Telerik {{ site.framework_name }} DataGrid RowReorder](images/RadGridView_RowReorder.png)
 
 The full source code of the behavior is available on this
 {% if site.site_name == 'WPF' %}[demo](https://demos.telerik.com/wpf/#GridView/RowReorder){% endif %}

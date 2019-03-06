@@ -1,7 +1,7 @@
 ---
 title: Basic Filtering
 page_title: Filtering Basics
-description: Learn more about the filtering functionality of Telerik's WPF DataGrid that allows the user to select which of the values of a current column to be displayed.
+description: Learn more about the filtering functionality of Telerik's {{ site.framework_name }} DataGrid that allows the user to select which of the values of a current column to be displayed.
 slug: gridview-basic-filtering2
 tags: basic,filtering
 published: False
@@ -17,7 +17,7 @@ The __RadGridView__ provides you with a built-in filtering functionality, which 
 
 Clicking the filtering icon in the column headers opens a menu with the distinct values for the current column and the user can select which of those values to be displayed.
 
-![](images/RadGridView_BasicFiltering_1.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Filtering 1](images/RadGridView_BasicFiltering_1.png)
 
 The user can enter a filter criterion in the filter box. A drop-down list allows the user to select a filter expression that is applied to the criterion for the column. The case sensitivity can also be specified via a check box. When the user presses the filter button, the grid displays only the records matching the filter criteria specified using the filter boxes.
 
@@ -62,7 +62,7 @@ The third one is the __FieldFilterEditorCreated__ and the forth it the __FilterO
 {{endregion}}
 
 You are also able to cancel the filtering operation by setting the __Cancel__ property to __True__.
-![](images/RadGridView_BasicFiltering_2.png)     
+![Telerik {{ site.framework_name }} DataGrid Basic Filtering 2](images/RadGridView_BasicFiltering_2.png)     
 
 #### __C#__
 
@@ -85,7 +85,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 
 * Via the __GridViewFilteredEventArgs__ of the __Filtered__ event you can get the added or removed filter descriptors. Unlike the __Filtering__ event, you cannot cancel the filtering process from here.
 
-![](images/RadGridView_BasicFiltering_3.png)
+![Telerik {{ site.framework_name }} DataGrid Basic Filtering 3](images/RadGridView_BasicFiltering_3.png)
 
 In the event handler you can place some code that has to be executed when the data in the __RadGridView__ gets filtered. For example, try to change the background color of the filtered columns:
             
@@ -124,7 +124,7 @@ In the event handler you can place some code that has to be executed when the da
 	End Sub
 {{endregion}}
 
-Here is a snapshot of the final result.![](images/RadGridView_BasicFiltering_4.png)
+Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataGrid Basic Filtering 4](images/RadGridView_BasicFiltering_4.png)
 
 * In the __FieldFilterEditorCreated__ event you could get the current editor from the event args and change it appropriately.
             
@@ -156,7 +156,7 @@ Here is a snapshot of the final result.![](images/RadGridView_BasicFiltering_4.p
 
 Here is a snapshot of the changed filter operator:
 
-![Rad Grid View radgridview basicfiltering 5](images/RadGridView_radgridview_basicfiltering_5.png)
+![Telerik {{ site.framework_name }} DataGrid Telerik {{ site.framework_name }} DataGrid basicfiltering 5](images/RadGridView_radgridview_basicfiltering_5.png)
 
 ## Styling the Filtered Header
 

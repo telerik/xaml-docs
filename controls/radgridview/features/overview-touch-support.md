@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: Read this article to learn more about the touch gestures supported by RadGridView - Telerik's WPF DataGrid. 
+description: Read this article to learn more about the touch gestures supported by RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-overview-touch-support
 tags: touch,support
 published: True
@@ -63,6 +63,6 @@ In order to group RadGridView you can press and hold on Column's header and then
 
 This is shown on the following images:
 
-![gridview-overview-touch-support 05](images/gridview-overview-touch-support_05.png)
+![Telerik {{ site.framework_name }} DataGrid-overview-touch-support 05](images/gridview-overview-touch-support_05.png)
 
-![gridview-overview-touch-support 06](images/gridview-overview-touch-support_06.png)
+![Telerik {{ site.framework_name }} DataGrid-overview-touch-support 06](images/gridview-overview-touch-support_06.png)

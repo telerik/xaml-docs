@@ -1,7 +1,7 @@
 ---
 title: Expression Column
 page_title: Expression Column
-description: Find out how you can display various calculations in the grid itself using the Expression column in RadGridView - Telerik's WPF DataGrid.
+description: Find out how you can display various calculations in the grid itself using the Expression column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-expression-column
 tags: expression,column
 published: True

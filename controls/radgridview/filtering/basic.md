@@ -1,7 +1,7 @@
 ---
 title: Basic Filtering
 page_title: Basic Filtering
-description: Learn more about the filtering functionality of Telerik's WPF DataGrid that allows the user to easily filter data by one or more columns.
+description: Learn more about the filtering functionality of Telerik's {{ site.framework_name }} DataGrid that allows the user to easily filter data by one or more columns.
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True
@@ -38,7 +38,7 @@ Popup filtering is the default filtering mode offered by RadGridView. It is acti
 
 #### __Figure 1: The filtering popup__
 
-![The filtering popup](images/gridview_filtering_basic_01.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 01](images/gridview_filtering_basic_01.png)
 
 ### Distinct Values
 
@@ -76,7 +76,7 @@ The **FilterRow** filtering mode offers a filter built in the header cell of eac
 
 #### __Figure 2: The filter rows__
 
-![The filter rows](images/gridview_filtering_basic_02.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
 
 Initially all filters start as empty. Once a value has been entered in the editor, an operator has to be selected by clicking the funnel icon. The drop-down will list all available operators that are applicable to the column’s type. If you want to remove some of the available filter operators you can use the **FilterOperatorsLoading** event of RadGridView. Have in mind though that when in filter row mode, you cannot pre-define a default selected operator through the event arguments. When the mode is filter row it is the end user’s job to select the filter operator. There is one special operator in this list called **Clear Filter**. This is not a real filter operator. Instead it will clear and reset the column filter when selected.
 

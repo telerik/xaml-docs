@@ -1,7 +1,7 @@
 ---
 title: Enable\Disable Grid Elements
 page_title: Enable\Disable Grid Elements
-description: See how you can disable a whole column of the Telerik WPF DataGrid by changing the IsEnabled property of each one of its cells.
+description: See how you can disable a whole column of the Telerik {{ site.framework_name }} DataGrid by changing the IsEnabled property of each one of its cells.
 slug: gridview-enable-disable-grid-elements
 tags: enable\disable,grid,elements
 published: True
@@ -40,7 +40,7 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 
 The screenshot below illustrates RadGridView control with a few disabled cells along with the "CompanyName" column.
 
-![](images/RadGridView_EnableDisable_1.png)
+![Telerik {{ site.framework_name }} DataGrid EnableDisable 1](images/RadGridView_EnableDisable_1.png)
 
 To __disable all the rows__ you need to apply a Style targeting the __GridViewRow__ element.
 

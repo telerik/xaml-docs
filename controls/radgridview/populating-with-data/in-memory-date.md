@@ -1,7 +1,7 @@
 ---
 title: Using in-memory Data
 page_title: Using In-Memory Data
-description: Get started with Telerik's WPF DataGrid and learn how you can populate the grid with in-memory data.
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with in-memory data.
 slug: gridview-in-memory-date
 tags: using,in-memory,data
 published: True
@@ -148,7 +148,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 Run your demo, the result can be seen on the next picture:
 
-![](images/RadGridView_PopulatingWithDataLoadFromInMemoryData_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromInMemoryData 010](images/RadGridView_PopulatingWithDataLoadFromInMemoryData_010.PNG)
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

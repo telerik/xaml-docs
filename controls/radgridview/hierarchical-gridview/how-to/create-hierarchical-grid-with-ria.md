@@ -1,7 +1,7 @@
 ---
 title: How to Load data in a hierarchical grid with RIA Services
 page_title: How to Load data in a hierarchical grid with RIA Services
-description: Learn about the couple of options for filling up Telerik's WPF DataGrid when using RIA Services and domain data source.
+description: Learn about the couple of options for filling up Telerik's {{ site.framework_name }} DataGrid when using RIA Services and domain data source.
 slug: gridview-how-to-create-hierarchical-grid-with-ria
 tags: how,to,load,data,in,a,hierarchical,grid,with,ria,services
 published: True
@@ -85,7 +85,7 @@ Following this approach, you have to define the two RadDomainDataSource-s in the
 
 In both cases the RadGridView will be visualized as follows:
 
-![](images/RadGridView_Hierarchy_RIA1.png)
+![Telerik {{ site.framework_name }} DataGrid Hierarchy RIA1](images/RadGridView_Hierarchy_RIA1.png)
 
 
 
@@ -142,4 +142,4 @@ As it can be seen, all objects of type Order are displayed in the child grid. If
 
 In this case the RadGridView will be visualized like follows:
 
-![](images/RadGridView_Hierarchy_RIA2.png)
+![Telerik {{ site.framework_name }} DataGrid Hierarchy RIA2](images/RadGridView_Hierarchy_RIA2.png)

@@ -125,7 +125,7 @@ And finally, we need to set the DataContext of the MainWindow:
 If you run the application now, you should get a structure like in **Figure 1**:
 
 #### Figure 1: RadGridView and RadDiagram
-![drag-and-drop-from-radgridview-to-raddiagram](images/drag-and-drop-from-radgridview-to-raddiagram_0.png)
+![Telerik {{ site.framework_name }} DataGrid drag-and-drop-from-radgridview-to-raddiagram 0](images/drag-and-drop-from-radgridview-to-raddiagram_0.png)
 	
 You can observe that you still can't drag-drop a row from the RadGridView to the RadDiagram. This is expected as the drag-drop functionality is still not implemented. 
 

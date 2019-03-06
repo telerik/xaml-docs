@@ -1,7 +1,7 @@
 ---
 title: Resizing Columns
 page_title: Resizing Columns
-description: See examples of setting a column with fixed width and disabling resizing for all columns or a specific column within RadGridView - Telerik's WPF DataGrid.
+description: See examples of setting a column with fixed width and disabling resizing for all columns or a specific column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-resizing-columns
 tags: resizing,columns
 published: True
@@ -12,7 +12,7 @@ position: 12
 
 Columns inside the __RadGridView__ are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved.
 
-![](images/RadGridView_ResizingColumns_1.png)
+![Telerik {{ site.framework_name }} DataGrid Resizing Columns 1](images/RadGridView_ResizingColumns_1.png)
 
 To resize a column you can use its __Width__ property. For example:
 

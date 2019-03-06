@@ -1,7 +1,7 @@
 ---
 title: Modifying Group Panel
 page_title: Modifying Group Panel
-description: Learn how you can make basic modifications of the Group Panel by using the GroupPanelBackground and GroupPanelForeground properties of Telerik's WPF DataGrid.
+description: Learn how you can make basic modifications of the Group Panel by using the GroupPanelBackground and GroupPanelForeground properties of Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-modifying-group-panel
 tags: modifying,group,panel
 published: True
@@ -26,7 +26,7 @@ In the following example the group panel background is set to YellowGreen.
 	<telerik:RadGridView GroupPanelBackground="Coral" />
 {{endregion}}
 
-![](images/RadGridView_Grouping_ModifyingGroupPanel_010.png)
+![Telerik {{ site.framework_name }} DataGrid Grouping ModifyingGroupPanel 010](images/RadGridView_Grouping_ModifyingGroupPanel_010.png)
 
 ## Setting the GroupPanelForeground
 
@@ -40,7 +40,7 @@ Similarly to group panel's background you may also change the group panel's fore
 
 And the result is:
 
-![](images/RadGridView_Grouping_ModifyingGroupPanel_020.png)
+![Telerik {{ site.framework_name }} DataGrid Grouping ModifyingGroupPanel 020](images/RadGridView_Grouping_ModifyingGroupPanel_020.png)
 
 Check out the following topics which explain in great details the __RadGridView__'s grouping functionality.
 

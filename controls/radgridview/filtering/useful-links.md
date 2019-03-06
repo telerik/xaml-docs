@@ -1,7 +1,7 @@
 ---
 title: Useful Links
 page_title: Filtering - Useful Links
-description: Check out this list of useful links to online demos, how-to articles, examples on GitHub, etc. related to filtering in RadGridView - Telerik's WPF DataGrid.
+description: Check out this list of useful links to online demos, how-to articles, examples on GitHub, etc. related to filtering in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-filtering-useful-links
 tags: useful,links
 published: False

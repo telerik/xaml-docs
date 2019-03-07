@@ -8,19 +8,23 @@ published: True
 position: 0
 ---
 
-{% if site.framework_name == 'WPF' %}
 # Redistributing Telerik Assemblies
 
-This article describes the redistribution process for the Telerik UI for WPF binaries. 
+The Telerik UI for {{ site.framework_name }} suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to your end users who are not required to purchase a license from Telerik to access your solution.
 
-The Telerik UI for WPF assemblies can be used in __commercial applications__ deployed to Your End User (refer to the [License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)). In this case, you may deploy all the Telerik assemblies together with your application, with the exception of the assemblies providing the additional design-time support for the Telerik controls. 
+## Examples of Permitted Uses
 
-The design-time assemblies are located in the __Telerik UI for WPF installation folder/Binaries/WPF40/design__ folder and __it is forbidden to redistribute them__ with your commercial applications.
+* {{ site.framework_name }} applications for internal company use.
+            
+* Commercial {{ site.framework_name }} applications deployed to Your end users. __In this case, you may deploy the Telerik assemblies together with your application with the sole exception of the assemblies providing the additional design-time support for the Telerik controls. The design-time assemblies may not be deployed to end-users under any circumstance__.
 
->tip The location of the design-time assemblies may vary depending on the Xaml or NoXaml binaries usage and also the .NET version of the control dlls. For example, the [NoXaml]({%slug xaml-vs-noxaml%}), .NET 4.5 desing-time assemblies are located in  *Telerik UI for WPF installation folder/Binaries.NoXaml/WPF45/design*.
+	The design-time assemblies are located in the __Telerik UI for {{ site.framework_name }} installation folder/Binaries/{% if site.framework_name == 'WPF' %}WPF40/{% endif %}design__ folder.
+	
+	>tip The location of the design-time assemblies may vary depending on the Xaml or NoXaml binaries usage{% if site.framework_name == 'WPF' %} and also the .NET version of the control dlls{% endif %}. {% if site.framework_name == 'WPF' %}For example, the [NoXaml]({%slug xaml-vs-noxaml%}), .NET 4.5 desing-time assemblies are located in  *Telerik UI for WPF installation folder/Binaries.NoXaml/WPF45/design*.{% endif %}
 
->important The next sections in this article describe how to include additional protection to the Telerik assemblies redistributed with your application. The additional protection is not required to redistribute the Telerik dlls.
-{% endif %}. 
+* WPF applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using the method in the [Protecting Telerik UI Assemblies](#protecting-telerik-ui-assemblies) section of this article.__
+
+>important The next sections in this article describe how to include additional protection to the Telerik assemblies redistributed with your application when necessary.
 
 ## Protecting Telerik UI Assemblies
 

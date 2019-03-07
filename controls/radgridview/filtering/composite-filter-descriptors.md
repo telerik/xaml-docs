@@ -1,7 +1,7 @@
 ---
 title: Composite Filter Descriptors
 page_title: Composite Filter Descriptors
-description: Composite Filter Descriptors
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to apply composite filter descriptors.
 slug: radgridview-filtering-composite-filter-descriptors
 tags: composite,filter,descriptors
 published: False
@@ -55,7 +55,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 And here is the result:
 
-![](images/RadGridView_ProgrammingFiltering_1.png)
+![Telerik {{ site.framework_name }} DataGrid Programming Filtering 1](images/RadGridView_ProgrammingFiltering_1.png)
 
 As you can see, this filter returns all records that have their City field set either to "Berlin" or "Aachen".
 
@@ -131,7 +131,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 And here is the result:
 
-![](images/RadGridView_ProgrammingFiltering_2.png)
+![Telerik {{ site.framework_name }} DataGrid Programming Filtering 2](images/RadGridView_ProgrammingFiltering_2.png)
 
 As you can see, this filter returns all records that have their City field set to "Berlin" or "Aachen" and Country set to "Germany". 
 

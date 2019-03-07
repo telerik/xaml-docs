@@ -1,14 +1,14 @@
 ---
 title: Not auto-generate a column for a specific property
-page_title: Not auto-generate a column for a specific property
-description: Not auto-generate a column for a specific property
+page_title: Prevent Column Auto-Generation
+description: Learn about two ways of preventing auto-generation of a column for a specific property within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-prevent-column-autogenerate
 tags: not,auto-generate,a,column,for,a,specific,property
 published: True
 position: 9
 ---
 
-# Not auto-generate a column for a specific property
+# Prevent Column Auto-Generation
 
 As you know, if __AutoGenerateColumns="True"__ (which is by default), RadGridView creates a column for each property of the underlying business object. This article shows __how to not auto generate a column for a specific property__.
 

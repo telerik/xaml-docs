@@ -1,7 +1,7 @@
 ---
 title: Find a control in RowDetailsTemplate
 page_title: Find a control in RowDetailsTemplate
-description: Find a control in RowDetailsTemplate
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to find a control which is placed in the DataTemplate of the RowDetailsTemplate.
 slug: gridview-find-control-row-details
 tags: find,a,control,in,rowdetailstemplate
 published: True

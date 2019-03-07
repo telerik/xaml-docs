@@ -24,7 +24,7 @@ The Data in __RadPivotGrid__ can be filtered based on several conditions to give
 
 * __Top 10 filter__ - filters the report based on one of the aggregates used, but shows top/bottom results of applied filter.            
 
->Groups Filtering of QueryableDataProvider is applied on the local data - there isn't additional request sent to the server for group filtering.          
+>Groups Filtering of QueryableDataProvider, for the first grouping aggregate, will be performed on the server. Every other Groups Filtering will be executed on the local data.        
 
 ## Label Filter
 

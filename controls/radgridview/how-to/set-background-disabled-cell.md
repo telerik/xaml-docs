@@ -1,7 +1,7 @@
 ---
 title: Change Background for Disabled Cells
 page_title: Change Background for Disabled Cells
-description: Change Background for Disabled Cells
+description: Check out our tutorial showing you how to customize the look of disabled GridViewCell elements in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-set-background-disabled-cell
 tags: change,background,for,disabled,grid,elements
 published: True
@@ -225,7 +225,7 @@ In **Example 1** we've changed the control template so that all disabled cells h
 
 #### __Figure 1: Disabled GridViewCells with fully opaque background__
 
-![Disabled GridViewCells with fully opaque background](images/gridview-how-to-set-background-disabled-cell-1.png)
+![Telerik {{ site.framework_name }} DataGrid-how-to-set-background-disabled-cell-1](images/gridview-how-to-set-background-disabled-cell-1.png)
 
 Similarly, you can define the visual state in **Example 2** so that there's no visual difference between enabled and disabled cells.
 
@@ -246,7 +246,7 @@ Similarly, you can define the visual state in **Example 2** so that there's no v
 
 #### __Figure 2: Disabled GridViewCells with transparent background__
 
-![Disabled GridViewCells with transparent background](images/gridview-how-to-set-background-disabled-cell-2.png)
+![Telerik {{ site.framework_name }} DataGrid-how-to-set-background-disabled-cell-2](images/gridview-how-to-set-background-disabled-cell-2.png)
 
 ## See Also
 

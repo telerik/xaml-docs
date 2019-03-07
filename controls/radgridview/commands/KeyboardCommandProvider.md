@@ -1,7 +1,7 @@
 ---
 title: Keyboard Command Provider
 page_title: Keyboard Command Provider
-description: Keyboard Command Provider
+description: Learn how to implement your own custom logic by using the Keyboard Command Provider in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-commands-keyboardcommandprovider
 tags: keyboard,command,provider
 published: True

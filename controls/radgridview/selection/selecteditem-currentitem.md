@@ -1,7 +1,7 @@
 ---
 title: CurrentItem, SelectedItem and SelectedItems
 page_title: CurrentItem, SelectedItem and SelectedItems
-description: CurrentItem, SelectedItem and SelectedItems
+description: Read this article to learn how to use the CurrentItem, SelectedItem and SelectedItems properties of RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-selection-selecteditem-currentitem
 tags: currentitem,vs,selecteditem
 published: True

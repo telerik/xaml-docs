@@ -1,7 +1,7 @@
 ---
 title: Foreground color does not change in a custom header
 page_title: Foreground color does not change in a custom header
-description: Foreground color does not change in a custom header
+description: Learn how to troubleshoot within the Telerik {{ site.framework_name }} DataGrid when the Foreground color of the custom header does not change on mouse hover, sorting, etc.
 slug: gridview-troubleshooting-styling-custom-header
 tags: foreground,color,does,not,change,in,a,custom,header
 published: True
@@ -27,7 +27,7 @@ As a result, the __Foreground__ color of the custom header does not change on mo
 
 __Figure 1:__ The __Foreground__ color of the custom header does not change, when the column is hovered.
 
-![gridview-troubleshooting-styling-custom-header-Problem](images/gridview-troubleshooting-styling-custom-header-Problem.png)
+![Telerik {{ site.framework_name }} DataGrid-troubleshooting-styling-custom-header-Problem](images/gridview-troubleshooting-styling-custom-header-Problem.png)
 
 __CAUSE__
 
@@ -61,4 +61,4 @@ You can bind the __Foreground__ property of the custom header(in this example th
 {% endif %}
 
 __Figure 2:__ The __Foreground__ color of the custom header now changes, when the column is hovered.
-![gridview-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)
+![Telerik {{ site.framework_name }} DataGrid-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)

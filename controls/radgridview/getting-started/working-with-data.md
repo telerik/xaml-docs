@@ -1,7 +1,7 @@
 ---
 title: Working with Data
 page_title: Working with Data
-description: Working with Data
+description: Read this article explaining how you can load, display and manage data in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-working-with-data
 tags: working,with,data
 published: True

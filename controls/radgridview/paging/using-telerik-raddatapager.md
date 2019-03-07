@@ -1,7 +1,7 @@
 ---
 title: Using Telerik RadDataPager
 page_title: Using Telerik RadDataPager
-description: Using Telerik RadDataPager
+description: Learn how you can page the data of Telerik's {{ site.framework_name }} DataGrid through the integration with RadDataPager that provides plenty of features.
 slug: radgridview-paging-using-telerik-raddatapager
 tags: using,telerik,raddatapager
 published: True

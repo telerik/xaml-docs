@@ -1,21 +1,21 @@
 ---
 title: Building Hierarchical Grid View
-page_title: Building Hierarchical Grid View
-description: Building Hierarchical Grid View
+page_title: Building Hierarchical Grid
+description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
 published: True
 position: 1
 ---
 
-# Building Hierarchical Grid View
+# Building Hierarchical Grid
 
 
 This tutorial will walk you through the process of displaying hierarchical data in __RadGridView__. It will not cover the creation of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application, adding __RadGridView__ to your __UserControl__ or how to define columns. If you need information on any of these topics please read the [Getting Started]({%slug gridview-getting-started2%}) topic. 
 
 The final result should look like this:
 
-![](images/RadGridView_BuildingHierarchicalGrid_2.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 2](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
 Assuming that you have already created a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application and defined the __RadGridView__ control, it is time to prepare the sample data for it.
 
@@ -336,7 +336,7 @@ Set the __ItemsSource__ in the code-behind file of your UserControl.
 
 If you run the application at this stage you should see this.
 
-![](images/RadGridView_BuildingHierarchicalGrid_1.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 1](images/RadGridView_BuildingHierarchicalGrid_1.png)
 
 ## Defining ChildTableDefinitions
 
@@ -346,12 +346,14 @@ The next step is to make the __RadGridView__ display the collections of teams as
 
 {{region xaml-gridview-building-hierarchical-grid-view_9}}
 	<telerik:RadGridView AutoGenerateColumns="False">
-	    <telerik:RadGridView.ChildTableDefinitions>
+	    <telerik:RadGridView.ChildTableDefinitions>
+
 	        <telerik:GridViewTableDefinition>
 	            <telerik:GridViewTableDefinition.Relation>
 	                <telerik:PropertyRelation ParentPropertyName="Teams" />
 	            </telerik:GridViewTableDefinition.Relation>
-	        </telerik:GridViewTableDefinition>
+	        </telerik:GridViewTableDefinition>
+
 	    </telerik:RadGridView.ChildTableDefinitions>
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
@@ -364,7 +366,7 @@ The next step is to make the __RadGridView__ display the collections of teams as
 
 And here is the final result.
 
-![](images/RadGridView_BuildingHierarchicalGrid_2.png)
+![Telerik {{ site.framework_name }} DataGrid BuildingHierarchicalGrid 2](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
 To learn more about the Hierarchical Grids you can visit the [Hierarchical GridView]({%slug gridview-hierachy-overview%}) section.
 

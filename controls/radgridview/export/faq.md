@@ -1,14 +1,14 @@
 ---
 title: FAQ
-page_title: FAQ
-description: FAQ
+page_title: Data Export FAQ
+description: Check out the FAQ about exporting data from Telerik's {{ site.framework_name }} DataGrid and learn how to export paged data, how to modify the exported value and much more.
 slug: gridview-export-faq
 tags: export,faq
 published: True
 position: 7
 ---
 
-# FAQ
+# Data Export FAQ
 
 For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](https://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 

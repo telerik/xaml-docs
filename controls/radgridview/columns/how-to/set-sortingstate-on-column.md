@@ -1,7 +1,7 @@
 ---
 title: Set SortingState on Column
 page_title: Set SortingState on Column
-description: Set SortingState on Column
+description: Learn how to set a specific sorting state by defining a column's SortingState property within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-set-sortingstate-on-column
 tags: set,sortingstate,on,column
 published: True

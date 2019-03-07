@@ -1,7 +1,7 @@
 ---
 title: GroupFooterCellStyleSelector
 page_title: GroupFooterCellStyleSelector
-description: GroupFooterCellStyleSelector
+description: Learn how to style groups of grid footer cells differently by using the GroupFooterRowStyleSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-group-footer-cell-style-selector
 tags: groupfootercellstyleselector
 published: True
@@ -100,7 +100,7 @@ Finally, set the **GroupFooterCellStyleSelector** property of the chosen column:
 
 #### __Figure 1: The group footer cells styled using the GroupFooterCellStyleSelector property__
 
-![The group footer cells styled using the GroupFooterCellStyleSelector property](images/gridview-groupfootercell-styleselector.png)
+![Telerik {{ site.framework_name }} DataGrid-groupfootercell-styleselector](images/gridview-groupfootercell-styleselector.png)
 
 ## See Also
 

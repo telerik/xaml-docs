@@ -1,7 +1,7 @@
 ---
 title: External Row Details
 page_title: External Row Details
-description: External Row Details
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can display Row Details outside the control.
 slug: radgridview-row-details-external-row-details
 tags: external,row,details
 published: True
@@ -54,7 +54,7 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
 {{endregion}}
 
-![Setting the DetailsProvider](images/RadGridView_RowDetails_5.png)
+![Telerik {{ site.framework_name }} DataGrid RowDetails 5](images/RadGridView_RowDetails_5.png)
 
 >You can see that the __RowDetailsTemplate__ must be defined in the __RadGridView__ as it is passed by the __RowDetailsProvider__ to both the internal and the external presenter. The same applies for the __RowDetailsStyle__.
 

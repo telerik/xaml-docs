@@ -1,7 +1,7 @@
 ---
 title: Empty Cells in Combobox column
 page_title: Empty Cells in Combobox column
-description: Empty Cells in Combobox column
+description: Learn how to troubleshoot when you encounter empty cells in Combobox column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-blank-cells
 tags: empty,cells,in,combobox,column
 published: True
@@ -14,7 +14,7 @@ __PROBLEM__
 
 When you use the [GridViewComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) you might encounter empty cells in that column:
 
-![GridView Troubleshooting Blank Cells](images/gridview_troubleshoot_blank_cells.png)
+![Telerik {{ site.framework_name }} DataGrid troubleshoot blank cells](images/gridview_troubleshoot_blank_cells.png)
 
 __CAUSE__
 

@@ -1,7 +1,7 @@
 ---
 title: ComboBox Column
 page_title: ComboBox Column
-description: ComboBox Column
+description: Learn how to edit cell values with the RadComboBox editor available in the ComboBox column of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-column-types-combobox-column
 tags: combobox,column
 published: True
@@ -38,7 +38,7 @@ The following example assumes that you have data as shown in __Figure 1__:
 
 #### __Figure 1: Sample data structure of RadGridView:__
 
- ![](images/RadGridView_ColumnTypes_1.png)
+ ![ItemsSource for the ComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_1.png)
 
 #### __[XAML] Example 1: Define GridViewComboBoxColumn.__
 
@@ -102,7 +102,7 @@ The following example assumes that you have data as shown in __Figure 1__:
 The application result should be similar to __Figure 2__.:
 
 #### __Figure 2: ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties.__
-![](images/RadGridView_ColumnTypes_2.png)
+![Setting up the ComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_2.png)
 
 As illustrated in __Figure 2__ you can map __CountryId__ property of the business object to the respective value in Countries collection via configuring proper __DisplayMemberPath__.
       
@@ -112,7 +112,7 @@ The next example shows how to use __ItemsSourceBinding__. It allows you to bind 
 
 #### __Figure 3: Sample data structure of RadGridView.__
 
-![](images/RadGridView_ColumnTypes_3.png)
+![Binding the Telerik {{ site.framework_name }} DataGrid to a Collection of Objects](images/RadGridView_ColumnTypes_3.png)
 
 __RadGridView__ binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the editor. As in the previous example, it also exposes a __DriverID__ property that the column will later translate to an appropriate display value. 
 
@@ -133,13 +133,13 @@ __Figure 4.__ and __Figure 5.__ show the result of configuring __ItemsSourceBind
 
 #### __Figure 4. Appearance after setting ItemsSourceBinding property.__
 
-![](images/RadGridView_ColumnTypes_4.png)
+![ComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_4.png)
 
 
 #### __Figure 5. Appearance after setting ItemsSourceBinding property.__
 
 
-![](images/RadGridView_ColumnTypes_5.png)
+![ComboBox Column of RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_5.png)
 
 >When using __ItemsSourceBinding__ property, the values displayed in the column’s filtering control will be the values corresponding to the __DataMemberBinding__ (0, 1, 2). If you want to have the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set __GridViewComboBoxColumn__.[FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as __DisplayMemberPath__.
         
@@ -184,7 +184,7 @@ Start by defining the GridViewComboBoxColumn and its __ItemTemplate__:
 
 The multi-column ComboBoxColumn in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows the result when the customer tries to edit in a column.
 
-__Figure 6.__![](images/gridview_multi_column_combo.png)
+__Figure 6.__![MultiColumnComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_multi_column_combo.png)
 
 ## See Also
 

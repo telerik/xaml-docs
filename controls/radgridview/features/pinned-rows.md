@@ -1,7 +1,7 @@
 ---
 title: Pinned Rows
 page_title: Pinned Rows
-description: Pinned Rows
+description: Learn how you can pin particular rows to the top or bottom of your Telerik's {{ site.framework_name }} DataGrid so that they do not participate in the vertical scrolling.
 slug: radgridview-pinned-rows
 tags: pinned-rows
 published: True
@@ -63,7 +63,7 @@ Pressing the button will pin the respective row. Clicking on it again will remov
 
 #### __Figure 1: Pinning rows from the row indicator__
 
-![Pinning rows from the row indicator](images/radgridview-pinned-rows-1.png)
+![Telerik {{ site.framework_name }} DataGrid-pinned-rows-1](images/radgridview-pinned-rows-1.png)
 
 Another way to allow your users to pin rows with the click of a button is to define a **GridViewPinRowColumn**, which enables pinning and unpinning of the rows.
 
@@ -76,7 +76,7 @@ Another way to allow your users to pin rows with the click of a button is to def
 
 #### __Figure 2: Pinning rows from the GridViewPinRowColumn__
 
-![Pinning rows from the GridViewPinRowColumn](images/radgridview-pinned-rows-2.png)
+![Telerik {{ site.framework_name }} DataGrid-pinned-rows-2](images/radgridview-pinned-rows-2.png)
 
 ## Grouping
 

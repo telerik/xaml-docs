@@ -1,7 +1,7 @@
 ---
 title: Basic Sorting
 page_title: Basic Sorting
-description: RadGridView provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. 
+description: Learn about the built-in sorting functionality of Telerik's {{ site.framework_name }} DataGrid which allows the user to easily sort the data by one or several columns. 
 slug: gridview-sorting-basics
 tags: basic,sorting
 published: True
@@ -28,7 +28,7 @@ The data gets sorted as the user clicks the header of a column. When sorted you 
 
 #### Figure 1: RadGridView with applied sorting
 
-![RadGridView with applied sorting](images/RadGridView_BasicSorting_1.png)
+![Telerik {{ site.framework_name }} DataGrid BasicSorting 1](images/RadGridView_BasicSorting_1.png)
 
 By clicking on the header a second time, the sort direction is changed to descending and on the next click, the sorting will be cleared. The header goes into its normal state and the arrow disappears.
         

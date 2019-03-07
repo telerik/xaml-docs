@@ -1,7 +1,7 @@
 ---
 title: Paging Load operation failed for query...
-page_title: Paging Load operation failed for query...
-description: Paging Load operation failed for query...
+page_title: Paging - Load operation failed for query...
+description: Learn how to add an OrderBy clause in your query or define a SortDescriptor to avoid failed page load operation in Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-troubleshooting-paging
 tags: paging,load,operation,failed,for,query...
 published: True
@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# Paging: Load operation failed for query...
+# Paging - Load operation failed for query...
 
 __PROBLEM__
 
@@ -17,7 +17,7 @@ When you use [RadDataPager]({%slug radgridview-paging-using-telerik-raddatapager
 
 *System.ServiceModel.DomainServices.Client.DomainOperationException: Load operation failed for query 'GetOrder_Details_Extended'. The method 'Skip' is only supported for sorted input in LINQ to Entities. The method 'OrderBy' must be called before the method 'Skip'.*
 
-![](images/gridview_troubleshoot_paging.png)
+![Telerik {{ site.framework_name }} DataGrid troubleshoot paging](images/gridview_troubleshoot_paging.png)
 
 The Entity Framework can’t work with unsorted collections because the Skip() and Take() extension method expects an __OrderBy__ clause. 
 

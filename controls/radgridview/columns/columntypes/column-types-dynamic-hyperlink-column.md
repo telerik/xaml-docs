@@ -1,7 +1,7 @@
 ---
 title: Dynamic Hyperlink Column
 page_title: Dynamic Hyperlink Column
-description: Dynamic Hyperlink Column
+description: Check out the properties of the Dynamic Hyperlink Column in Telerik's {{ site.framework_name }} DataGrid and see how you can specify a URL for the hyperlink that hosts the content.
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
 published: True
@@ -50,7 +50,7 @@ You can also directly configure the navigate url to be a complete TeamUrl specif
 
 __Figure 1: Look of GridViewDynamicHyperlinkColumn represented in RadGridView__ 
 
-![](images/RadGridView_ColumnTypes_9.png)
+![Dynamic Hyperlink Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_9.png)
 
 ## See also
 * [Hyperlink Column]({%slug radgridview-columns-column-types-hyperlink-column%})

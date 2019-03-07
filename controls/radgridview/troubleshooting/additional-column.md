@@ -1,7 +1,7 @@
 ---
 title: Additional column appears
 page_title: Additional column appears
-description: Additional column added after all gridview columns
+description: Learn how to troubleshoot when an additional empty column appears after all columns within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-additional-column
 tags: additional,column,added,after,all,gridview,columns
 published: True
@@ -14,7 +14,7 @@ __PROBLEM__
 
 RadGridView adds an additional empty column after all gridview columns:
 
-![](images/troubleshooting_additional_column_gridview.png)
+![troubleshooting additional column Telerik {{ site.framework_name }} DataGrid](images/troubleshooting_additional_column_gridview.png)
 
 __CAUSE__
 
@@ -34,7 +34,7 @@ You can use either of the following methods:
 
 The result would be:
 
-![](images/troubleshooting_additional_column_gridview_fix1.png)
+![troubleshooting additional column Telerik {{ site.framework_name }} DataGrid fix1](images/troubleshooting_additional_column_gridview_fix1.png)
 
 * Set the __Width__ of any of the columns to "__*__"
 
@@ -48,7 +48,7 @@ The result would be:
 
 Now, the result would be:
 
-![](images/troubleshooting_additional_column_gridview_fix2.png)
+![troubleshooting additional column Telerik {{ site.framework_name }} DataGrid fix2](images/troubleshooting_additional_column_gridview_fix2.png)
 
 ## See Also
 * [Columns Overview]({%slug gridview-columns-overview%})

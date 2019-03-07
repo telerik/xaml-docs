@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Commands Overview
+description: Learn more about the commands built in Telerik's {{ site.framework_name }} DataGrid that allow you to easily handle the user interface actions.
 slug: gridview-commands-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Commands Overview
 
 RadGridView provides a set of built-in commands that enables you to easily handle the user interface actions, but still make your logic independent of the UI layout. Thus, you are not obliged to subscribe to a particular event in order to achieve the desired behavior. 
 

@@ -1,14 +1,14 @@
 ---
 title: Edit
-page_title: Edit
-description: Edit
+page_title: Edit Events
+description: Learn more about the edit events of Telerik's {{ site.framework_name }} DataGrid that occur when data is about to be edited or has been already edited by the user.
 slug: gridview-events-edit
 tags: edit
 published: True
 position: 2
 ---
 
-# Edit
+# Edit Events
 
 
 The edit events are ment to support the editing data process. They occur when the data in the __RadGridView__ is about to be edited or has been already edited by the user.

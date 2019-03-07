@@ -1,7 +1,7 @@
 ---
 title: Last row is not fully visible
 page_title: Last row is not fully visible
-description: Last row is not fully visible
+description: Learn how to troubleshoot when the last row's content of the Telerik {{ site.framework_name }} DataGrid has been cut as a result of the row's height becoming bigger.
 slug: gridview-troubleshooting-last-row-cut
 tags: last,row,is,not,fully,visible
 published: True

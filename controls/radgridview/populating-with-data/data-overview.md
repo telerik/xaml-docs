@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Populating with Data
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about all ways that can be used to populate the grid with data. 
 slug: gridview-data-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Populating with Data - Overview
 
 The Telerik __RadGridView__ can be populated with data in any of the following ways:
 {% if site.site_name == 'Silverlight' %}

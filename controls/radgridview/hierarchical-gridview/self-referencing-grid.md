@@ -1,7 +1,7 @@
 ---
 title: Self-Referencing GridView
 page_title: Self-Referencing GridView
-description: Self-Referencing GridView
+description: Learn how you can build a self-referencing hierarchy in Telerik's {{ site.framework_name }} DataGrid when the hierarchical data is build from one type of items.
 slug: gridview-self-referencing-grid
 tags: self-referencing,gridview
 published: True
@@ -361,7 +361,7 @@ In the child __RadGridView__ the entries of the __RadGridView's__ source are dis
 **Figure 1** demonstrates the result from **Example 3**:
 
 #### __Figure 1: Self-referencing RadGridView__
-![Self-referencing RadGridView](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_010.png)
+![Telerik {{ site.framework_name }} DataGrid HiarachicalGrid SelfRefencingGrid 010](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_010.png)
 
 You can specify more than one __FiledDescriptorNamePair__. For example, define a relation that specifies that the child objects should have the same title as the parent object.
 
@@ -394,7 +394,7 @@ You can specify more than one __FiledDescriptorNamePair__. For example, define a
 In **Figure 2** you can see that for the object with __Id__ equal to 3 only the employee with __ManagerId__ property equal to 3 and __Title__ equal to __Consultant__ is displayed.
 
 #### __Figure 2: Custom relation__
-![Self-referencing RadGridView](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_020.png)
+![Telerik {{ site.framework_name }} DataGrid HiarachicalGrid SelfRefencingGrid 020](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_020.png)
 
 > In order to hide the GridViewToggleButton that expands the hierarchy for items that do not have subitems, you can introduce a boolean property in the Employee class and use the [IsExpandableBinding]({%slug radgridview-isexpandedbinding-isexpandablebinding%}#isexpandablebinding) property of the RadGridView.
 

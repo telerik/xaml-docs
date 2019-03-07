@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title:  Overview
-description:  Overview
+page_title:  Data Export Overview
+description: Learn more about exporting data to various formats in Telerik's {{ site.framework_name }} DataGrid by utilizing the RadSpreadProcessing and RadSpreadStreamProcessing libraries.
 slug: gridview-export-overview
 tags: grid,export,overview
 published: True
 position: 0
 ---
 
-# Overview
+# Data Export Overview
 
 __RadGridView__ provides built-in methods for exporting its data to various formats. Underneath, the control utilizes the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) and [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) libraries for handling these operations. 
 

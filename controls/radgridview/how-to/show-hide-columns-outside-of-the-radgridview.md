@@ -1,7 +1,7 @@
 ---
 title: Show/Hide Columns outside of RadGridView
 page_title: Show/Hide Columns outside of RadGridView
-description: Show/Hide Columns outside of RadGridView
+description: Check out our tutorial showing you how to choose which columns to be visible from outside of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-how-to-show-hide-columns-outside-of-the-radgridview
 tags: show/hide,columns,outside,radgridview
 published: True
@@ -79,7 +79,7 @@ After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox.
 {{endregion}}
 
 Provide RadGridView with an appropriate data source and run your application. The result should be similar to this snapshot:
-![Rad Grid View radgridview how to column chooser 2](images/RadGridView_radgridview_how_to_column_chooser_2.png)
+![Telerik {{ site.framework_name }} DataGrid Telerik {{ site.framework_name }} DataGrid how to column chooser 2](images/RadGridView_radgridview_how_to_column_chooser_2.png)
 
 >tipYou can download a runnable project of the previous example from our online SDK repository: [ColumnChooser](https://github.com/telerik/xaml-sdk/tree/master/GridView/ColumnChooser).
           

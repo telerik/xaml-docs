@@ -1,7 +1,7 @@
 ---
 title: Warning message when opening the excel file
 page_title: Warning message when opening the excel file
-description: Warning message when opening the excel file
+description: Learn what to do when you get a warning message after opening excel file with data exprted from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-warning-message-excel
 tags: warning,message,when,opening,the,excel,file
 published: True
@@ -16,7 +16,7 @@ You [export]({%slug gridview-export%}) the data from RadGridView to Excel file a
 
 *The file you are trying to open, 'Filename.xls', is in a different format than specified by the file extension. Verify that the file is not corrupted and is from a trusted source before opening this file. Do you want to open the file now?*
 
-![](images/gridview_troubleshoot_export.png)
+![Telerik {{ site.framework_name }} DataGrid troubleshoot export](images/gridview_troubleshoot_export.png)
 
 __CAUSE__
 

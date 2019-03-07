@@ -1,7 +1,7 @@
 ---
 title: Have mixed CLR and DLR properties
 page_title: Have mixed CLR and DLR properties
-description: Have mixed CLR and DLR properties
+description: Learn how to include additional logic to your implementation so that Telerik's {{ site.framework_name }} DataGrid is able to work with your dynamic object.
 slug: gridview-how-to-use-mixed-clr-dlr-properties
 tags: have,mixed,clr,and,dlr,properties
 published: True

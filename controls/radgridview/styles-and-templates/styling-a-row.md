@@ -1,7 +1,7 @@
 ---
 title: Styling Rows
 page_title: Styling Rows
-description: Styling Rows
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to set the background of the selected row.
 slug: gridview-styling-a-row
 tags: styling,rows
 published: True
@@ -12,7 +12,7 @@ position: 14
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
-> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row. More information can be found in the [Selected Row Background]({%slug radgridview-rows-selected-background%}) article.
+> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row and as of __R1 2019 SP1__ it supports setting the __MouseOverBackground__ of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
 
 In this article we will discuss the following topics:
 
@@ -24,7 +24,7 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewRow template structure__
 
-![GridViewRow template structure](images/gridview-row-template.png)
+![Telerik {{ site.framework_name }} DataGrid-row-template](images/gridview-row-template.png)
 
 ## Targeting the GridViewRow Element
 
@@ -65,7 +65,7 @@ __RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of
 
 #### __Figure 2: RadGridView with styled rows__
 
-![RadGridView with styled cells](images/gridview-styled-row-and-alternaterow.png)
+![Telerik {{ site.framework_name }} DataGrid-styled-row-and-alternate-row](images/gridview-styled-row-and-alternaterow.png)
 
 ## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
 

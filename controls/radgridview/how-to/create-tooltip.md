@@ -1,14 +1,14 @@
 ---
 title: Add ToolTip for columns and headers
-page_title: Add ToolTip for columns and headers
-description: Add ToolTip for columns and headers
+page_title: Add ToolTip for Columns and Headers
+description: Check out our article demonstrating how to set the tooltip of the rows, columns and column headers of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-create-tooltip
 tags: add,tooltip,for,columns,and,headers
 published: True
 position: 4
 ---
 
-# Add ToolTip for columns and headers
+# Add ToolTip for Columns and Headers
 
 This article demonstrates how to set the tooltip of the gridview's rows, columns and column headers.
 
@@ -26,7 +26,7 @@ __ToolTip for column's cells__
 
 You can check the source code below on how to set a ToolTip for a specific column. The ToolTip will use a DataTemplate with TextBlocks and will show information from the currently hovered row. The final result should look like this:
 
-![](images/gridview_row_tooltip.png)
+![Telerik {{ site.framework_name }} DataGrid row tooltip](images/gridview_row_tooltip.png)
 
 
 To achive that you can define a ToolTipTemplate for the column:
@@ -90,7 +90,7 @@ Two of the options to do so are:
 
 The final result should look like this:
 
-![gridview header tooltip](images/gridview_header_tooltip.png)
+![Telerik {{ site.framework_name }} DataGrid header tooltip](images/gridview_header_tooltip.png)
 
 __ToolTip for a row__
 

@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Data Management Overview
+description: Get started with Telerik's {{ site.framework_name }} DataGrid that allows you to use Insert, Update and Delete operations, to validate data and to manage it in many more ways.
 slug: gridview-managing-data-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Data Management Overview
 
 Telerik's __RadGridView__ allows you not only to display sets of data, but also to manage them. You are able to use the standard operations - __Insert, Update and Delete__. You can also validate the data. Besides using this functionality, you are able to control it via the several events raised at the most important key points of the operation.
 

@@ -1,7 +1,7 @@
 ---
 title: Styling Row Details
 page_title: Styling Row Details
-description: Styling Row Details
+description: Learn how to create an appropriate style targeting the DetailsPresenter element in Telerik's {{ site.framework_name }} DataGrid in order to style all row details of your application.
 slug: gridview-styling-row-details
 tags: styling,row,details
 published: True
@@ -54,7 +54,7 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 #### __Figure 2: RadGridView with styled row details__
 
-![RadGridView with styled row details](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewRowDetails 03](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
 
 ## Setting RadGridView's RowDetailsStyleSelector
 

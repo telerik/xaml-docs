@@ -1,7 +1,7 @@
 ---
 title: Cancel Edit On LostFocus
 page_title:  Cancel Edit On LostFocus
-description: Cancel Edit On LostFocus
+description: Learn how to control what happens if the focus of a grid element is lost when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-cancel-edit-on-lost-focus
 tags: cancel,edit,lost,focus,actiononlostfocus
 published: True
@@ -36,7 +36,7 @@ Let's say, for example, that you want to have two buttons outside of your RadGri
 With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because RadGridView loses focus prior to the command being executed.
 
 #### __Figure 1: RadGridView with default ActionOnLostFocus__
-![RadGridView with default ActionOnLostFocus](images/action-on-lost-focus-commitedit.GIF)	
+![Telerik {{ site.framework_name }} DataGrid action-on-lost-focus-commitedit](images/action-on-lost-focus-commitedit.GIF)	
 
 To overcome this, you can simply set the ActionOnLostFocus property to **None**.
 
@@ -49,7 +49,7 @@ To overcome this, you can simply set the ActionOnLostFocus property to **None**.
 This way the "Cancel" button will work as expected as illustrated on **Figure 2**.
 
 #### __Figure 2: RadGridView with ActionOnLostFocus set to None__
-![RadGridView with ActionOnLostFocus set to None](images/action-on-lost-focus-none.GIF)
+![Telerik {{ site.framework_name }} DataGrid action-on-lost-focus-none](images/action-on-lost-focus-none.GIF)
 
 ## See Also
 

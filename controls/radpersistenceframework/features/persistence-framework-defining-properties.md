@@ -1,7 +1,7 @@
 ---
 title: Serialization Options
 page_title: Serialization Options
-description: Serialization Options
+description: The PersistenceManager class allows you to specify which properties of the UIElements to be saved. To take advantage of this feature you need to set the PersistenceManager.SerializationOptions attached property.
 slug: persistence-framework-defining-properties
 tags: serialization,options
 published: True
@@ -10,13 +10,11 @@ position: 1
 
 # Serialization Options
 
-## PersistenceManager SerializationOptions
+The __PersistenceManager__ class allows you to specify which properties of the __UIElements__ to be persisted. In order to take advantage of this feature you need to set the __PersistenceManager.SerializationOptions__ attached property. The property allows you to use the following element.
 
-The __PersistenceManager__ allows you to specify which properties of the __UIElements__ to be persisted. In order to take advantage of this feature you need to set the __PersistenceManager.SerializationOptions__ property. It allows you to define:		
+* __PropertyNameMetadata__: Determines the __UIElement__ properties to be persisted by the __PersistenceManager__
 
-* __PropertyNameMetadata__ - determines the __UIElement__ properties to be persisted by the __PersistenceManager__
-
-* __PropertyTypeMetadata__ - determines properties of what type to be persisted by the __PersistenceManager__
+* __PropertyTypeMetadata__: Determines properties of what type to be persisted by the __PersistenceManager__
 
 ## PropertyNameMetadata
 
@@ -26,8 +24,30 @@ The __PropertyNameMetadata__ class exposes the following members:
 	* __Only__ - states that only this property will be persisted.
 	* __Except__ - states that this property won't be persisted.
 
-* __Expression__ - this property allows you to define a regular expression that will be evaluated against the value of the __SearchType__ property.			
+* __Expression__: This property allows you to define a regular expression as a base for a Regex that is applied over the property names of the object that is being serialized. The Expression property also takes into account the value of the SearchType property. 
 
+	#### __[XAML] Example 1: Using Expression to serialize only the Width property of a RadButton__
+	{{region persistence-framework-defining-properties_0}}
+		 <telerik:RadButton>
+            <telerik:PersistenceManager.SerializationOptions>
+                <telerik:SerializationMetadataCollection>
+                    <telerik:PropertyNameMetadata Condition="Only" Expression="^\b(Width)\b$" SearchType="PropertyName" />
+                </telerik:SerializationMetadataCollection>
+            </telerik:PersistenceManager.SerializationOptions>
+        </telerik:RadButton>
+	{{endregion}}
+	
+	#### __[XAML] Example 2: Using Expression to serialize all properties (of RadButton) containing Width in their name - like Width, MinWidth and MaxWidth__
+	{{region persistence-framework-defining-properties_1}}
+		<telerik:RadButton>
+            <telerik:PersistenceManager.SerializationOptions>
+                <telerik:SerializationMetadataCollection>
+                    <telerik:PropertyNameMetadata Condition="Only" Expression="Width" SearchType="PropertyName" />
+                </telerik:SerializationMetadataCollection>
+            </telerik:PersistenceManager.SerializationOptions>
+        </telerik:RadButton>
+	{{endregion}}
+	
 * __IsRecursive__ - this property controls whether the __Expression__ will be evaluated in depth.			
 
 * __SearchType__ - this property controls against what the __Expression__ should be evaluated. It is a __MetadataSearchCriteria__ enumeration that allows you to choose between the following values:			
@@ -70,50 +90,52 @@ The __SerializationMetadataCollection__ class exposes the following methods:
 
 For example in the __RadTreeView__ definition we can define only the __IsExpanded__ and __IsSelected__ properties to be persisted:		
 
-#### __XAML__
-{{region persistence-framework-defining-properties_0}}
+#### __[XAML] Example 3: Serializing only the IsSelected and IsExpanding properties of RadTreeView__
+{{region persistence-framework-defining-properties_2}}
 	<telerik:RadTreeView x:Name="treeView">
-	 <telerik:PersistenceManager.SerializationOptions>
-	  <telerik:SerializationMetadataCollection Operator="Or">
-	   <telerik:PropertyNameMetadata Condition="Only" Expression="IsSelected" SearchType="PropertyName" />
-	   <telerik:PropertyNameMetadata Condition="Only" Expression="IsExpanded" SearchType="PropertyName" />
-	  </telerik:SerializationMetadataCollection>
-	 </telerik:PersistenceManager.SerializationOptions>
-	 <telerik:RadTreeViewItem Header="Beverages">
-	  <telerik:RadTreeViewItem Header="Chai" />
-	  <telerik:RadTreeViewItem Header="Chang" />
-	  <telerik:RadTreeViewItem Header="Ipoh Coffee" />
-	  <telerik:RadTreeViewItem Header="Chartreuse verte" />
-	  <telerik:RadTreeViewItem Header="Sasquatch Ale" />
-	 </telerik:RadTreeViewItem>
-	 <telerik:RadTreeViewItem Header="Condiments">
-	<telerik:RadTreeViewItem Header="Aniseed Syrup" />
-	  <telerik:RadTreeViewItem Header="Genen Shouyu" />
-	  <telerik:RadTreeViewItem Header="Gula Malacca" />
-	  <telerik:RadTreeViewItem Header="Louisiana Hot Spiced Okra" />
-	  <telerik:RadTreeViewItem Header="Louisiana Fiery Hot Pepper Sauce" />
-	 </telerik:RadTreeViewItem>
-	 <telerik:RadTreeViewItem Header="Confections">
-	  <telerik:RadTreeViewItem Header="Teatime Chocolate Biscuits" />
-	  <telerik:RadTreeViewItem Header="Sir Rodney's Marmalade" />
-	  <telerik:RadTreeViewItem Header="Zaanse koeken" />
-	  <telerik:RadTreeViewItem Header="Chocolade" />
-	  <telerik:RadTreeViewItem Header="Maxilaku" />
-	  <telerik:RadTreeViewItem Header="Valkoinen suklaa" />
-	 </telerik:RadTreeViewItem>
+		<telerik:PersistenceManager.SerializationOptions>
+			<telerik:SerializationMetadataCollection Operator="Or">
+				<telerik:PropertyNameMetadata Condition="Only" Expression="IsSelected" SearchType="PropertyName" />
+				<telerik:PropertyNameMetadata Condition="Only" Expression="IsExpanded" SearchType="PropertyName" />
+			</telerik:SerializationMetadataCollection>
+		</telerik:PersistenceManager.SerializationOptions>
+		<telerik:RadTreeViewItem Header="Beverages">
+			<telerik:RadTreeViewItem Header="Chai" />
+			<telerik:RadTreeViewItem Header="Chang" />
+			<telerik:RadTreeViewItem Header="Ipoh Coffee" />
+			<telerik:RadTreeViewItem Header="Chartreuse verte" />
+			<telerik:RadTreeViewItem Header="Sasquatch Ale" />
+		</telerik:RadTreeViewItem>
+		<telerik:RadTreeViewItem Header="Condiments">
+			<telerik:RadTreeViewItem Header="Aniseed Syrup" />
+			<telerik:RadTreeViewItem Header="Genen Shouyu" />
+			<telerik:RadTreeViewItem Header="Gula Malacca" />
+			<telerik:RadTreeViewItem Header="Louisiana Hot Spiced Okra" />
+			<telerik:RadTreeViewItem Header="Louisiana Fiery Hot Pepper Sauce" />
+		</telerik:RadTreeViewItem>
+		<telerik:RadTreeViewItem Header="Confections">
+			<telerik:RadTreeViewItem Header="Teatime Chocolate Biscuits" />
+			<telerik:RadTreeViewItem Header="Sir Rodney's Marmalade" />
+			<telerik:RadTreeViewItem Header="Zaanse koeken" />
+			<telerik:RadTreeViewItem Header="Chocolade" />
+			<telerik:RadTreeViewItem Header="Maxilaku" />
+			<telerik:RadTreeViewItem Header="Valkoinen suklaa" />
+		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
 {{endregion}}
 
-Or you can define all properties to be persisted except the __IsSelected__ property:		
-
-#### __XAML__
-{{region persistence-framework-defining-properties_1}}
+#### __[XAML] Example 4: Serializing all RadTreeView properties except the IsSelected__
+{{region persistence-framework-defining-properties_3}}
 	<telerik:RadTreeView x:Name="treeView" >
-	 <telerik:PersistenceManager.SerializationOptions>
-	  <telerik:SerializationMetadataCollection>
-	   <telerik:PropertyNameMetadata Condition="Except" Expression="IsSelected" SearchType="PropertyName" />
-	  </telerik:SerializationMetadataCollection>
-	 </telerik:PersistenceManager.SerializationOptions>
-	...
+		<telerik:PersistenceManager.SerializationOptions>
+			<telerik:SerializationMetadataCollection>
+				<telerik:PropertyNameMetadata Condition="Except" Expression="IsSelected" SearchType="PropertyName" />
+			</telerik:SerializationMetadataCollection>
+		</telerik:PersistenceManager.SerializationOptions>
 	</telerik:RadTreeView>
 {{endregion}}
+
+## See Also
+* [Getting Started]({%slug persistence-framework-getting-started%})
+* [Save in a Stream]({%slug persistence-framework-save-stream%})
+* [Cross-Version Support]({%slug persistence-framework-cross-version-support%})

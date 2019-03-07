@@ -1,7 +1,7 @@
 ---
 title: Loading Data from RIA Services
 page_title: Loading Data from RIA Services
-description: Loading Data from RIA Services
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from a .NET RIA Service.
 slug: gridview-loading-data-from-ria-services
 tags: loading,data,from,ria,services
 published: True
@@ -142,7 +142,7 @@ And here is the code handling the __Completed__ event of the load operation:
 
 Run your demo, the result can be seen on the next picture:
 
-![](images/RadGridView_PopulatingWithDataLoadFromRia_010.PNG)
+![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromRia 010](images/RadGridView_PopulatingWithDataLoadFromRia_010.PNG)
 
 >tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

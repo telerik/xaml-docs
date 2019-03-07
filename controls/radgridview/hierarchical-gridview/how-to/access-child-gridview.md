@@ -1,7 +1,7 @@
 ---
 title: How-to Set properties to the child gridview
-page_title: How-to Set properties to the child gridview
-description: How-to Set properties to the child gridview
+page_title: Set properties to the child gridview
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to access and set different properties to the child gridview.
 slug: gridview-how-to-access-child-gridview
 tags: how-to,set,properties,to,the,child,gridview
 published: True
@@ -15,7 +15,7 @@ Usually, you create the gridview hierarchy by using the __TableDefinition__ and 
 
 This article will show how to access and set different properties, in code behind, of the child gridview. Follow the steps below in order to achieve a child gridview which does not have a group panel and does not have auto-generated columns:
 
-![](images/gridview_how_to_child_grid.png)
+![Telerik {{ site.framework_name }} DataGrid how to child grid](images/gridview_how_to_child_grid.png)
 
 
 1. Subscribe to the __DataLoading__ event of the parent gridview 

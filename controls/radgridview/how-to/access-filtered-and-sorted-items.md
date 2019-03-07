@@ -1,7 +1,7 @@
 ---
 title: Access filtered and sorted items
-page_title:  Access filtered and sorted items
-description: How To Access Filter and Sorted Items
+page_title:  Access Filtered and Sorted items
+description: Get started with the Items property of the Telerik {{ site.framework_name }} DataGrid allowing you to access a newly created view after data operations have been applied.
 slug: gridview-how-to-access-filtered-and-sorted-items
 tags: sorted, filtered, items
 published: True
@@ -15,13 +15,13 @@ The RadGridView exposes an __Items__ property which represents a collection of t
 Lets assume we have a RadGridView which ItemsSource is an ObservableCollection of Club objects. The collection consists of 4 objects and the control has the following appearance:
 
 #### __Figure1: The original appearance of the RadGridView__ 
-![Default RadGridView](images/gridview-ItemsProperty.PNG)
+![Telerik {{ site.framework_name }} DataGrid-ItemsProperty](images/gridview-ItemsProperty.PNG)
 
 
 Eventually, we would like to filter and sort the RadGridView:
 
 #### __Figure2: The appearance of the RadGridView after applying the data operations__
-![Filtered and Sorted RadGridView](images/gridview-ItemsProperty_SortedFiltered.PNG)
+![Telerik {{ site.framework_name }} DataGrid-ItemsProperty SortedFiltered](images/gridview-ItemsProperty_SortedFiltered.PNG)
 
 
 You can access the newly created view through the __Items__ property as the __ItemsSource__ will remain unchanged. 

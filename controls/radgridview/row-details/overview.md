@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Row Details Overview
 description: Overview
 slug: radgridview-row-details-overview
 tags: overview
@@ -8,13 +8,13 @@ published: True
 position: 0
 ---
 
-# Overview
+# Row Details Overview
 
 Each __RadGridView__ row is capable of presenting additional information by means of a __Row Details__. The __Row Details__ is a __DataTemplate__ defined on the grid- or row-level and is used for displaying data without affecting the dimensions of the row and the cells within it.
 
 One of the advantages of using a __Row Details__ template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of __Row Details__ is the option of placing the __Details Presenter__ outside the __RadGridView__, which provides more room for traditional rows without depriving the user of the additional information.
 
-![](images/RadGridView_RowDetails_1.png)
+![Telerik {{ site.framework_name }} DataGrid RowDetails 1](images/RadGridView_RowDetails_1.png)
 
 >tipTo easily expand / collapse the __Row Details__ you can use the [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 	

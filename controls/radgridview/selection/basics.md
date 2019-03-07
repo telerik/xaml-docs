@@ -1,7 +1,7 @@
 ---
 title: Basic Selection
 page_title: Basic Selection
-description: This article describes the various selection modes and selection units provided by the RadGridView control.
+description: Read this article describing the various selection modes and selection units provided by RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-selection-basics
 tags: basic,selection
 published: True
@@ -26,13 +26,13 @@ Users can select an item in through the control's UI by clicking somewhere on th
 
 #### Figure 1: Row Selection
 
-![Row Selection](images/RadGridView_BasicSelection_1.png)
+![Telerik {{ site.framework_name }} DataGrid BasicSelection 1](images/RadGridView_BasicSelection_1.png)
 
 If enabled, users can also select a single cell or multiple cells as shown in **Figure 2**.
 
 #### Figure 2: Cell Selection
 
-![Cell Selection](images/RadGridView_BasicSelection_2.png)
+![Telerik {{ site.framework_name }} DataGrid BasicSelection 2](images/RadGridView_BasicSelection_2.png)
 
 To set the selection unit, use the __SelectionUnit__ enumeration property of the RadGridView. Setting it to __FullRow__ will enable the selection of rows (default) while setting it to __Cell__ will enable the cell selection.
 

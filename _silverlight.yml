@@ -114,13 +114,22 @@ controls/radchat,
 cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
 controls/radnavigationview,
-controls/raddiagram/extensions/diagramribbon]
+controls/raddiagram/extensions/diagramribbon,
+knowledge-base/]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"
+
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
 
 # Define any custom fields that you use in the site here
 framework_name: Silverlight
@@ -187,7 +196,7 @@ intro_columns:
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "DomainDataSource": "dds-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "GridView": "gridview-overview2"
+      "DataGrid": "gridview-overview2"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"
       "PropertyGrid": "radpropertygrid-overview"

@@ -1,7 +1,8 @@
 ---
 title: Styling Column Editor
 page_title: Styling Column Editor
-description: Styling Column Editor
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to apply an appropriate style to a column editor. 
+ tyling Column Editor
 slug: radgridview-styling-column-editor
 tags: styling,column,editor
 published: True
@@ -46,7 +47,7 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 #### __Figure 1: RadGridView with styled column edtior__
 
-![RadGridView with styled footer cells](images/gridview-styled-column-edtior.png)
+![Telerik {{ site.framework_name }} DataGrid-styled-column-edtior](images/gridview-styled-column-edtior.png)
 
 ## See Also
 

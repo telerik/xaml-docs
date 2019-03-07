@@ -1,7 +1,7 @@
 ---
 title: MultiColumnComboBox Column
 page_title: MultiColumnComboBox Column
-description: The MultiColumnComboBox column is represented by a standard TextBlock in view mode, and with RadMultiColumnComboBox control in edit mode.
+description: See examples of how you can define some data and set up the MultiColumnComboBox column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-column-types-multicolumncombobox-column
 tags: multicolumncombobox,column
 published: True
@@ -190,7 +190,7 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
 {{endregion}}
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
-![Defining the GridViewMultiColumnComboBoxColumn](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
+![Setting up the MultiColumnComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
 
 ## See Also
 

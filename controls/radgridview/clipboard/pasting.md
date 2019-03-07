@@ -1,7 +1,7 @@
 ---
 title: Pasting
 page_title: Pasting
-description: Pasting
+description: Find out how to work with pasting and the ClipboardPasteMode property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-pasting
 tags: pasting
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Mixed Selection
 page_title: Mixed Selection
-description: Mixed Selection
+description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing the user to select a cell as well as to select a row. 
 slug: gridview-mixed-selection
 tags: mixed,selection
 published: True
@@ -19,19 +19,19 @@ RadGridView provides three selection modes, which allow you to manipulate the ty
 
 * With Single Selection:              
 
-![Rad Grid View Mixed Selection 4](images/RadGridView_MixedSelection_4.png)
+![Telerik {{ site.framework_name }} DataGrid MixedSelection 4](images/RadGridView_MixedSelection_4.png)
 
 You can select only one unit at a time.
             
 * With Multiple Selection:
 
-![Rad Grid View Mixed Selection 3](images/RadGridView_MixedSelection_3.png)
+![Telerik {{ site.framework_name }} DataGrid MixedSelection 3](images/RadGridView_MixedSelection_3.png)
 
 You are able to select any cell and any row. Units are added to the selection when they are clicked and get removed when they are clicked again.
             
 * With Extended Selection:
 
-![Rad Grid View Mixed Selection 2](images/RadGridView_MixedSelection_2.png)
+![Telerik {{ site.framework_name }} DataGrid MixedSelection 2](images/RadGridView_MixedSelection_2.png)
 
 Units are added to the selection only by combining the mouse clicks with the Ctrl or Shift key.
             

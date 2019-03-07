@@ -1,7 +1,7 @@
 ---
 title: Trimmed Text Tooltips
 page_title: Trimmed Text Tooltips
-description: Trimmed Text Tooltips
+description: Learn how to specify whether or not a tooltip should be shown when the text of a RadGridView's cell exceeds its parent column's width.
 slug: gridview-trimmed-text-tooltips
 tags: trimmed,text,tooltips
 published: True
@@ -30,7 +30,7 @@ The ShowToolTipOnTrimmedText is applied to RadGridView's **GridViewHeaderCell**,
 
 #### __Figure 1: Tooltips for trimmed text__ 
 
-![Tooltips for trimmed text](images/trimmed-text-tooltips-1.png)
+![Telerik {{ site.framework_name }} DataGrid trimmed-text-tooltips-1](images/trimmed-text-tooltips-1.png)
 
 Setting the ShowToolTipOnTrimmedText of a column will show tooltips for trimmed text only for the given column. Setting the same property of a RadGridView instance will set the ShowToolTipOnTrimmedText for all of its columns.
 

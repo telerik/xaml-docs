@@ -1,7 +1,7 @@
 ---
 title: Column Filter Descriptors
 page_title: Column Filter Descriptors
-description: Column Filter Descriptors
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to apply column filter descriptors.
 slug: radgridview-filtering-icolumn-filter-descriptors
 tags: column,filter,descriptors
 published: True
@@ -95,11 +95,11 @@ The data is filtered by the "City" column and only these data items are displaye
 
 Here is a snapshot of the result.
 
-![](images/RadGridView_Filtering_Column_Filter_Descriptors_01.png)
+![Telerik {{ site.framework_name }} DataGrid Filtering Column Filter Descriptors 01](images/RadGridView_Filtering_Column_Filter_Descriptors_01.png)
 
 Notice that the programmatic filtering you have done, has been reflected in the UI.
 
-![](images/RadGridView_Filtering_Column_Filter_Descriptors_02.png)
+![Telerik {{ site.framework_name }} DataGrid Filtering Column Filter Descriptors 02](images/RadGridView_Filtering_Column_Filter_Descriptors_02.png)
 
 ## More Complex Example
 
@@ -152,7 +152,7 @@ Such a complex filtering expression might include filters for multiple fields, l
 
 And here is the result:
 
-![](images/RadGridView_Filtering_Column_Filter_Descriptors_03.png)
+![Telerik {{ site.framework_name }} DataGrid Filtering Column Filter Descriptors 03](images/RadGridView_Filtering_Column_Filter_Descriptors_03.png)
 
 ## See Also
 

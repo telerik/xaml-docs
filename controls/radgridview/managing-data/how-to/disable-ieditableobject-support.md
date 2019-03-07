@@ -1,7 +1,7 @@
 ---
 title: Disable IEditableObject Support through ShouldRespectIEditableObject Property
-page_title: Disable IEditableObject Support through ShouldRespectIEditableObject Property
-description: Disable IEditableObject Support in the RadGridView Data Engine through ShouldRespectIEditableObject Property
+page_title: Disable IEditableObject Support
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to disable IEditableObject support in the Data Engine through ShouldRespectIEditableObject property.
 slug: radgridview-managing-data-how-to-disable-ieditableobject-support
 tags: disable,ieditableobject,support,data,engine
 published: True

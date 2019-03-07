@@ -1,7 +1,7 @@
 ---
 title: Reevaluation of data operations
 page_title: Reevaluation of data operations
-description: Reevaluation of data operations
+description: Learn how to have items displayed in Telerik's {{ site.framework_name }} DataGrid updated correctly when a value is modified in code.
 slug: gridview-troubleshooting-reevaluation
 tags: filtering,grouping,sortng,not,updated
 published: True

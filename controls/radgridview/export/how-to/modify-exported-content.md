@@ -1,7 +1,7 @@
 ---
 title: Modify Content Before Exporting
 page_title: Modify Content Before Exporting
-description: This article describes RadGridView's ExportToWorkbook and ExportToRadFixedDocument extension methods which can be used to modify the exported documents.
+description: Read this article to learn how to modify content before exporting it from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-howto-modify-exported-content
 tags: modify,content,before,exporting
 published: True

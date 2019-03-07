@@ -1,7 +1,7 @@
 ---
 title: Filtering Popup Remains Opened
 page_title: Filtering Popup Remains Opened
-description: Filtering Popup Remains Opened
+description: Learn how to change the behavior of Telerik's {{ site.framework_name }} DataGrid when the filtering popup remains opened after users switch to another desktop app with the keyboard.
 slug: gridview-filtering-faq-popup-stays
 tags: filtering,popup,remains,opened
 published: True

@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Events Overview
+description: Learn more about the data, selection, edit, delete, sorting, filtering, grouping and other events exposed by RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-events-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Events Overview
 
 
 This topic covers the specific events exposed by the __RadGridView__ control and its sub elements __GridViewColumn__, __GridViewRow__ and __GridViewCell__. The events are first grouped by control and then by their general purpose.

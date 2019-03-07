@@ -1,7 +1,7 @@
 ---
 title: ExportToXlsx
 page_title: ExportFormat.Xlsx
-description: ExportFormat.Xlsx
+description: Learn how to export to XLSX format from Telerik's {{ site.framework_name }} DataGrid by using the ExportToXlsx method without any need for the user to make the integration manually.
 slug: gridview-export-xlsx
 tags: exportformat,xlsx
 published: True
@@ -80,7 +80,7 @@ RadGridView can be exported with its default styles by setting the __ExportDefau
 By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1).
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to “false” (default)__
-![ExportDefaultStyles false](../images/exportdefaultstyles.png)
+![Telerik {{ site.framework_name }} DataGrid export-default-styles](../images/exportdefaultstyles.png)
 
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
@@ -97,7 +97,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 {{endregion}}
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
-![ExportDefaultStyles false](../images/exportdefaultstyles2.png)
+![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)
 
 ## Disable Column Width Auto Fit
 
@@ -123,7 +123,7 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 {{endregion}}
 	
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
-![AutoFitColumnsWidth false](../images/autofitcolumnswidth.png)
+![Telerik {{ site.framework_name }} DataGrid autofit-columns-width](../images/autofitcolumnswidth.png)
 
 ## Disable GroupHeaderRow Aggregates
 

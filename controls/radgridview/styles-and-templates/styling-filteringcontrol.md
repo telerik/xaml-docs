@@ -1,7 +1,7 @@
 ---
 title: Styling FilteringControl and FilteringDropDown
 page_title: Styling FilteringControl and FilteringDropDown
-description: Styling FilteringControl and FilteringDropDown
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the FilteringControl and FilteringDropDown elements.
 slug: gridview-styling-filteringcontrol
 tags: styling,filteringcontrol
 published: True
@@ -20,7 +20,7 @@ In this topic we will discuss:
 
 #### __Figure 1: The FilteringControl & FilteringDropDown template structure__
 
-![FilteringControl and FilteringDropDown Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringControl Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
 
 >tipThe Template Structure of the controls is also available [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 
@@ -30,7 +30,7 @@ The filtering dropdown icon can be styled by creating an appropriate style targe
 
 #### __Figure 2: The default FilteringDropDown element__
 
-![FilteringControl](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringDropDown](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
 
 To learn how to modify the default FilteringDropDown style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
@@ -40,7 +40,7 @@ __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Styl
 
 #### __Figure 3: The default FilteringControl element__
 
-![FilteringControl](images/RadGridView_Styles_and_Templates_FilteringControl.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringControl](images/RadGridView_Styles_and_Templates_FilteringControl.png)
 
 You can modify it similarly to the FilteringDropDown style and set it as follows:
 

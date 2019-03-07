@@ -1,7 +1,7 @@
 ---
 title: Programmatic Selection
 page_title: Programmatic Selection
-description: Programmatic Selection
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to use a programmatic approach to data selection.  
 slug: radgridview-selection-programmatic-selection
 tags: programmatic,selection
 published: True
@@ -204,7 +204,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 #### __Figure 1: The selected region__
 
-![The selected region](images/programmatic-selection-select-single-region.jpg)
+![Telerik {{ site.framework_name }} DataGrid programmatic-selection-select-single-region](images/programmatic-selection-select-single-region.jpg)
 
 #### __[C#] Example 9: Selecting multiple cell regions__
 
@@ -229,7 +229,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 #### __Figure 2: The selected regions__
 
-![The selected regions](images/programmatic-selection-select-multiple-regions.jpg)
+![Telerik {{ site.framework_name }} DataGrid  programmatic-selection-select-multiple-regions](images/programmatic-selection-select-multiple-regions.jpg)
 
 ## Deselecting cell regions
 

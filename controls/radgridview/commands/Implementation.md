@@ -1,7 +1,7 @@
 ---
 title: Implementation
 page_title: Implementation
-description: Implementation
+description: Learn more about implementing the built-in commands in Telerik's {{ site.framework_name }} DataGrid by setting them directly to a particular RadButton.
 slug: gridview-commands-implementation
 tags: implementation
 published: True

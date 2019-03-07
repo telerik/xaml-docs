@@ -1,7 +1,7 @@
 ---
 title: Styling Column Groups
 page_title: Styling Column Groups
-description: Styling Column Groups
+description: Learn how to create styles targeting the CommonHeaderPresenter and CommonColumnHeader elements in order to style column groups in Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-styling-merged-column-headers
 tags: styling,merged,column,headers,groups
 published: True
@@ -27,7 +27,7 @@ This will result in a red background for the merged header cells.
 
 #### __Figure 1: The styled Column Groups__
 
-![The styled Column Groups](images/gridview-styling-column-groups.png)
+![Telerik {{ site.framework_name }} DataGrid-styling-column-groups](images/gridview-styling-column-groups.png)
 
 >importantAs of version Q2 2015, the __GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using a Custom Theme.
 

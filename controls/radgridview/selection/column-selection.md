@@ -1,7 +1,7 @@
 ---
 title: Column Selection
 page_title: Column Selection
-description: Column Selection
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the three approaches to adding entire columns to the grid's selection.
 slug: gridview-column-selection
 tags: column,selection
 published: True
@@ -40,7 +40,7 @@ RadGridView's new **CanUserSelectColumns** property determines whether users can
 
 #### __Figure 1: Selecting columns through the UI__
 
-![Selecting columns through the UI](images/gridview-columnselection.png)
+![Telerik {{ site.framework_name }} DataGrid column selection](images/gridview-columnselection.png)
 
 >If you do not want to display the column selection button, you can use RadGridView's **ColumnsSelectionButtonVisibility** property in order to hide it.
 

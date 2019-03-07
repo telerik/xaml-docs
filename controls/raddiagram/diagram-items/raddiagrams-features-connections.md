@@ -1,7 +1,7 @@
 ---
 title: Connections
 page_title: Connections
-description: Connections
+description: This article describes the connection item of the RadDiagram Framework.
 slug: raddiagrams-features-connections
 tags: connections
 published: True
@@ -23,7 +23,7 @@ This tutorial will walk you through the functionality and the main features of t
 * [Connection Selection State](#connection-selection-state)
 * [Connection ZIndex](#connection-zindex)
 * [Connection Bounds](#connection-bounds)
-
+* [Use Free Connectors](#use-free-connectors)
 
 >Before proceeding with this topic, it is recommended to get familiar with the [Visual Structure]({%slug raddiagram-structure%}) of the Diagramming Framework.
 
@@ -40,25 +40,25 @@ You can use its extensive API to configure its source and target points or shape
 
 You can configure the source and the target of a connection as a point or as a shape. The __RadDiagramConnection__ class exposes the following properties that allow you to control the start and end points of a connection:		
 
-* __StartPoint/EndPoint__ - these properties are of type __Point__ and they set or get the start/end point of a connection.			
+* __StartPoint/EndPoint__: These properties are of type __Point__ and they set or get the start/end point of a connection.			
 
-* __Source/Target__ - these properties get or set the source/target __RadDiagramShape__ of a connection.			
+* __Source/Target__: These properties get or set the source/target __RadDiagramShape__ of a connection.			
 
-* __SourceConnectorPosition/TargetConnectorPosition__ - both properties are of type __string__ and they get or set the source/target connector position.			
+* __SourceConnectorPosition/TargetConnectorPosition__: Both properties are of type __string__ and they get or set the source/target connector position.			
 
 	>You can find more information about the __RadDiagramShape__ connectors in the [DiagramShapes]({%slug raddiagrams-features-shapes%}) topic. 
 
 	There are five predefined strings that you can use to define where to position the connectors of the connection:			
 
-	* __Auto__ -  use it if you want to automatically determine the start/end point of a connection. This option will allow the connection to dynamically determine which shape connector to be used as a start/end point. Based on the end point position, the __SourceConnectorPosition__ will be set to the nearest shape connector. Alternatively, the __TargetConnectorPosition__ will be set to the nearest shape connector, based on the start point position of the connection.				
+	* __Auto__: Use it if you want to automatically determine the start/end point of a connection. This option will allow the connection to dynamically determine which shape connector to be used as a start/end point. Based on the end point position, the __SourceConnectorPosition__ will be set to the nearest shape connector. Alternatively, the __TargetConnectorPosition__ will be set to the nearest shape connector, based on the start point position of the connection.				
 
-	* __Left__ - use it to define the left connector of a shape as the source/target point of the connection				
+	* __Left__: Use it to define the left connector of a shape as the source/target point of the connection				
 
-	* __Top__ - use it to define the top connector of a shape as the source/target point of the connection				
+	* __Top__: Use it to define the top connector of a shape as the source/target point of the connection				
 
-	* __Right__ - use it to define the right connector of a shape as the source/target point of the connection				
+	* __Right__: Use it to define the right connector of a shape as the source/target point of the connection				
 
-	* __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection				
+	* __Bottom__: Use it to define the bottom connector of a shape as the source/target point of the connection				
 
 	>The __Diagramming Framework__ provides a __ConnectorPosition__ static class, which you can use to define the connector positions from code-behind:
 	>`using Telerik.Windows.Diagrams.Core;`
@@ -70,15 +70,15 @@ You can configure the source and the target of a connection as a point or as a s
 
 You can also attach a connection to a source and target shape using the __RadDiagramConnection.Attach()__ method. It defines the following parameters:		
 
-* __source of type IConnector__ - required parameter that sets the __Source__ of the connection.			
+* __source of type IConnector__: Required parameter that sets the __Source__ of the connection.			
 
-* __target of type IConnector__ - required parameter that sets the __Target__ of the connection.			
+* __target of type IConnector__: Required parameter that sets the __Target__ of the connection.			
 
 ## Connection Types
 
 You can control the connection type through the __ConnectionType__ property. As an enumeration of type  __Telerik.Windows.Diagrams.Core.ConnectionType__, it exposes the following members:		
 
-* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.			
+* __Polyline__: This connection type allows you to define multiple points, a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.			
 
 	#### __XAML__
 	{{region raddiagram-features-connections-6}}
@@ -167,7 +167,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 
 	>Please note that in the above example the __ConnectionPoints__ of the connections are added in runtime using the __Ctrl__ key and the mouse.			  
 
-* __Bezier__ - this connection type allows you to create a Bézier curve. The Bezier connection is a curve specified by four points: two end points (p1 and p2) - the source/start and target/end of the connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier __RadDiagramConnection__ along with its endpoints and handle points.			
+* __Bezier__: This connection type allows you to create a Bézier curve. The Bezier connection is a curve specified by four points: two end points (p1 and p2) - the source/start and target/end of the connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier __RadDiagramConnection__ along with its endpoints and handle points.			
 
 	Illustration of a Bezier connection definition points:
 	![Rad Diagram Connections Bezier Connection](images/RadDiagram_Connections_BezierConnection.png)
@@ -254,7 +254,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 	
 	>On the other hand, if you attach a __Bezier Connection__ to a custom connector which name doesn't indicate a direction, the handle points of the connection will match the start and end point of the connection.			  
 
-* __Spline__ - this connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set.
+* __Spline__: This connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set.
 
 	Sample of a Spline connection:
 	![Rad Diagram Connections Spline Connection](images/RadDiagram_Connections_SplineConnection.png)
@@ -646,13 +646,13 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 You can easily customize the visual appearance of the __RadDiagramConnection__ by using the following properties:
 
-* __Stroke__ - gets or sets the brush that specifies how the __RadDiagramConnection__ is painted.			
+* __Stroke__: Gets or sets the brush that specifies how the __RadDiagramConnection__ is painted.			
 
-* __StrokeDashArray__ - gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the __RadDiagramConnection__.			
+* __StrokeDashArray__: Gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the __RadDiagramConnection__.			
 
-* __StrokeThickness__ - gets or sets the width of the __RadDiagramConnection__ outline.			
+* __StrokeThickness__: Gets or sets the width of the __RadDiagramConnection__ outline.			
 
-* __Background__ - gets or sets the brush that specifies the __SourceCap__ and __TargetCap__ inner background.			
+* __Background__: Gets or sets the brush that specifies the __SourceCap__ and __TargetCap__ inner background.			
 
 >tip You can use the __RadDiagram.ConnectionStyle__ property to explicitely apply a style on all __RadDiagramConnections__ in a __RadDiagram__ instance. [Read more]({%slug raddiagram-styling-selectors%}#customize-the-raddiagramconnection-style).
 
@@ -708,22 +708,22 @@ If the __RadDiagramConnection.Content__ property is bound to a business item, yo
 
 The Connection Bridge is essentially what you see when two connections collide. The __RadDiagram__ allows you to define what kind of bridge to display through the __ConnectionBridge__ property. It is an enumeration of type __BridgeType__ that exposes the following members:
 
-* __None__ - there is no bridge to visualize the intersection of the connections
+* __None__: There is no bridge to visualize the intersection of the connections
 ![Rad Diagram Connections Bridge None](images/RadDiagram_Connections_BridgeNone.png)
 
-* __Bow__ - a half circle is displayed to indicate the intersection of the connections
+* __Bow__: A half circle is displayed to indicate the intersection of the connections
 ![Rad Diagram Connections Bridge Bow](images/RadDiagram_Connections_BridgeBow.png)
 
-* __Gap__ - a gap is displayed to indicate the intersection of the connections
+* __Gap__: A gap is displayed to indicate the intersection of the connections
 ![Rad Diagram Connections Bridge Gap](images/RadDiagram_Connections_BridgeGap.png)
 
 ## Connection Selection State
 
 The following properties allow you to track and control the selection state of a connection:
 
-* __IsSelected__ - gets or sets whether the connection is selected.			
+* __IsSelected__: Gets or sets whether the connection is selected.			
 
-* __IsSelectedInGroup__ - gets a value indicating whether this connection is selected in a group.			
+* __IsSelectedInGroup__: Gets a value indicating whether this connection is selected in a group.			
 
 ## Connection ZIndex
 
@@ -732,6 +732,12 @@ You can get or set the z-order rendering behavior of the __RadDiagramConnection_
 ## Connection Bounds
 
 You can get the bounds of a __RadDiagramConnection__ through the __Bounds__ property. It is of type __Rect__ and it describes the width, height and location of the connection's bounds.		
+
+## Use Free Connectors
+
+With the __R1 2019__ version of our controls __RadDiagramConnection__ now expose a __UseFreeConnectors__ property. This __Boolean__ property gets or sets whether the connection will choose free connectors when attaching to a shape. In the definition of free connectors means that no connections are outgoing or incoming for this connector of the shape.
+
+> The __UseFreeConnectors__ property require the __SourceConnectorPosition__ or __TargetConnectorPosition__ to be set to __Auto__ in order have effect.
 
 ## See Also
  * [Structure]({%slug raddiagram-structure%})

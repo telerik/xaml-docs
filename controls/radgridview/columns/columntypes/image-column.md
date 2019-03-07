@@ -1,7 +1,7 @@
 ---
 title: Image Column
 page_title: Image Column
-description: Image Column
+description: Check out how easily you can configure the height, width and stretch of an image with the Image column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-columntypes-image-column
 tags: image,column
 published: True
@@ -36,6 +36,6 @@ Here is a list of the most important properties.
 
 #### __Figure 1: The resulting RadGridView__
 
-![The resulting RadGridView](images/RadGridView_ColumnTypes_6.png)
+![Image Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_6.png)
 
 >You can have a look at the [Image Column Filtering](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) for a good example of how to override GridViewImageColumn's distinct values to be images and not a string path.

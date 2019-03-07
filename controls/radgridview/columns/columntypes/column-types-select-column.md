@@ -1,7 +1,7 @@
 ---
 title: Select Column
 page_title: Select Column
-description: Select Column
+description: See how you can select a given grid row via a checkbox provided by the Select Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-columns-column-types-select-column
 tags: select,column
 published: True
@@ -25,7 +25,7 @@ The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 #### __Figure 1: The GridViewSelectColumn__
 
-![The GridViewSelectColumn](images/selectcolumn-default.png)
+![Select Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/selectcolumn-default.png)
 
 If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%}) property to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired checkbox or to select all the rows by clicking on the checkbox in the header.
 
@@ -43,7 +43,7 @@ If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%
 
 #### __Figure 2: The GridViewSelectColumn with Extended SelectionMode__
 
-![The GridViewSelectColumn with Extended SelectionMode](images/selectcolumn-multiple-selection.png)
+![Multiple Selection in the Select Column of RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/selectcolumn-multiple-selection.png)
 
 ## CheckBoxStyle and HeaderCheckBoxStyle
 
@@ -72,7 +72,7 @@ GridViewSelectColumn exposes two properties of type style: **CheckBoxStyle** and
 
 #### __Figure 3: The styled GridViewSelectColumn__
 
-![The styled GridViewSelectColumn](images/selectcolumn-styled.png)
+![Styled Select Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/selectcolumn-styled.png)
 
 ## See Also
 

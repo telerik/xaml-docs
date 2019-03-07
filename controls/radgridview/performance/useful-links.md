@@ -1,14 +1,14 @@
 ---
 title: Useful Links
-page_title: Useful Links
-description: Useful Links
+page_title: Performance - Useful Links
+description: Check out our list of useful links to online demos, examples on GitHub and other resources related to the performance of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-performance-useful-links
 tags: useful,links
 published: True
 position: 2
 ---
 
-# Useful Links
+# Performance - Useful Links
 
 ## Online Demos
 

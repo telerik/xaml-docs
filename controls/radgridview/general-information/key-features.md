@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Key Features
+description: Read about data binding, grouping, sorting, filtering, in-place editing, frozen columns and many other key features of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-key-features
 tags: key,features
 published: True
@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
 
-![](images/RadGridView_KeyFeatures_1.png)
+![Telerik {{ site.framework_name }} DataGrid Key Features 1](images/RadGridView_KeyFeatures_1.png)
 
 This is a list with short descriptions of the top-of-the line features of __RadGridView__ control.
         

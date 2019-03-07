@@ -1,7 +1,7 @@
 ---
 title: Localize the Filtering UI
 page_title: Localize the Filtering UI
-description: Localize the Filtering UI
+description: Read this article to learn how to localize the strings used by the filtering UI in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-filtering-howto-localize-the-filtering-ui
 tags: localize,the,filtering,ui
 published: True

@@ -1,7 +1,7 @@
 ---
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
-description: EventToCommandBehavior
+description: Learn how to use the EventToCommandBehavior command in Telerik's {{ site.framework_name }} Datagrid to allow your events to fire and your code to respond accordingly.
 slug: gridview-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True

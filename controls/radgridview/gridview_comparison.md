@@ -1,7 +1,7 @@
 ---
 title: Tech Specs and Comparisons
 page_title: Tech Specs and Comparisons
-description: Tech Specs and Comparisons
+description: Get started with the technical specifications of Telerik's {{ site.framework_name }} DataGrid and see how it compares to the Microsoft DataGrid.
 slug: gridview_comparison
 tags: tech,specs,&,comparisons
 published: True

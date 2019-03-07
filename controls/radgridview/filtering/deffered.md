@@ -1,7 +1,7 @@
 ---
 title: Enable Deferred Filtering
 page_title: Enable Deferred Filtering
-description: Enable Deferred Filtering
+description: Learn how to make column filtering happen only when the user clicks the filter button within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: radgridview-filtering-deffered
 tags: enable,deferred,filtering
 published: False

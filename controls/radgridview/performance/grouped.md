@@ -1,7 +1,7 @@
 ---
 title: Grouped Scenario
 page_title: Grouped Scenario
-description: Grouped Scenario
+description: Check out our prefromance tips in grouped scenario so that you are able to increase the scrolling performance of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-performance-grouped
 tags: grouped,scenario
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Style Exported Html
 page_title: Style Exported Html
-description: Style Exported Html
+description: Learn how to export data in HTML format and to style the exported HTML when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-html
 tags: exportformat.html
 published: True

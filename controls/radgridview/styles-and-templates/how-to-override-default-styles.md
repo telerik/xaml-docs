@@ -1,7 +1,7 @@
 ---
 title: Override Default RadGridView Styles
 page_title: Override Default RadGridView Styles
-description: Override Default RadGridView Styles
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to override the default styles of the control.
 slug: how-to-override-default-gridview-styles
 tags: override,default,radgridview,styles
 published: False
@@ -20,11 +20,11 @@ This help article will show you how to override the default styles of __RadGridV
 
 This example shows how to change the background color and the border of the row when the mouse is over it:
 
-![](images/styling_row_background_mouseover.png)
+![Telerik {{ site.framework_name }} DataGrid styling row background mouseover](images/styling_row_background_mouseover.png)
 
 You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-a-row%}) explains the basics. You need to find the __Background_Over__ Border element:
 
-![](images/styling_row_background_mouseover2.png)
+![Telerik {{ site.framework_name }} DataGrid styling row background mouseover2](images/styling_row_background_mouseover2.png)
 
 #### __[XAML] Example 1: The Default Border When the Mouse Hovers GridViewRow__
 
@@ -62,7 +62,7 @@ Finally, you need to set the __RowStyle__ property of __RadGridView__ to the sty
 
 This example shows how to remove the border of the current cell (the one that has been clicked):
 
-![](images/styling_current_cell3.png)
+![Telerik {{ site.framework_name }} DataGrid styling current cell 3](images/styling_current_cell3.png)
 
 
 You need to edit the template of GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the template, search for the term "current". You will find a __VisualState__, __Trigger__ and __Border__ which you need to delete.

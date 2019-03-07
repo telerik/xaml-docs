@@ -1,7 +1,7 @@
 ---
 title: Merged Cells
 page_title: Merged Cells
-description: Merged Cells
+description: Learn how to merge cells with equal values vertically or horizontally when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-merged-cells
 tags: merged,cells
 published: True
@@ -57,7 +57,7 @@ __Example 1:__ Configure RadGridView to merge cells vertically
 
 __Figure 1:__ RadGridView with vertically merged cells
 
-![gridview merged cells 1](images/gridview_merged_cells_1.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 1](images/gridview_merged_cells_1.png)
 
 Similarly, you can set the cells to be merged horizontally configuring RadGridView with __MergedCellsDirection.Horizontal__.
         
@@ -76,7 +76,7 @@ __Example 2:__ Configure RadGridView to merge cells horizontally
 
 __Figure 2:__ RadGridView with horizontally merged cells
 
-![gridview merged cells 2](images/gridview_merged_cells_2.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 2](images/gridview_merged_cells_2.png)
 
 You can also configure merging for GridViewDataColumn through setting its __IsCellMergingEnabled__ property. For example:
         
@@ -100,7 +100,7 @@ __Example 3:__ Configure cell merging per column
 
 __Figure 3:__ RadGridView with configured cell merging per column
 
-![gridview merged cells 3](images/gridview_merged_cells_3.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 3](images/gridview_merged_cells_3.png)
 
 Merged cells are also supported when there is [RowDetails]({%slug radgridview-row-details-overview%})/[Hierarchy]({%slug gridview-hierachy-overview%}) defined for RadGridView.
 
@@ -141,11 +141,11 @@ __Example 5:__ Specify RowDetailsTemplate for RadGridView
 
 __Figure 4:__ RadGridView with merged cells and RowDetails defined
 
-![gridview merged cells 4](images/gridview_merged_cells_4.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 4](images/gridview_merged_cells_4.png)
 
 __Figure 5:__ RadGridView with merged cells and RowDetails expanded
 
-![gridview merged cells 5](images/gridview_merged_cells_5.png)
+![Telerik {{ site.framework_name }} DataGrid merged cells 5](images/gridview_merged_cells_5.png)
 
 >Once the row details are expanded, the merged cell will be separated into two different subsets. The particular cell that is part of the expanded row will be considered as a single one instead.
           

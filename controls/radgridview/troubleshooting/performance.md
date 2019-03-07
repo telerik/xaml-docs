@@ -1,7 +1,7 @@
 ---
 title: Degraded Performance
 page_title: Degraded Performance
-description: Degraded Performance
+description: Learn the possible reasons for reduced grid perfromance and how to troubleshoot when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-performance
 tags: degraded,performance
 published: True

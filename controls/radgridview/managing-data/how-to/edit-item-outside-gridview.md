@@ -1,7 +1,7 @@
 ---
 title: Edit an item outside RadGridView
 page_title: Edit an item outside RadGridView
-description: Edit an item outside RadGridView
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the few simple steps you should follow in order to edit an item outside the grid.
 slug: edit-item-outside-gridview
 tags: edit,an,item,outside,radgridview
 published: True

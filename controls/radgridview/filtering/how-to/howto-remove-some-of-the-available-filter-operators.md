@@ -1,7 +1,7 @@
 ---
 title: Remove Some of the Available Filter Operators
 page_title: Remove Some of the Available Filter Operators
-description: Remove Some of the Available Filter Operators
+description: Learn how to attach to the FilterOperatorsLoading event of Telerik's {{ site.framework_name }} DataGrid in order to hide some of the available filter operators.
 slug: gridview-filtering-howto-remove-some-of-the-available-filter-operators
 tags: remove,some,of,the,available,filter,operators
 published: True

@@ -1,7 +1,7 @@
 ---
 title: SpreadsheetStreamingExport
 page_title: SpreadsheetStreamingExport
-description: SpreadsheetStreamingExport
+description: Learn more about the SpreadsheetStreamingExport functionality of Telerik's {{ site.framework_name }} DataGrid that allows you to create big documents and export them to XLSX and CSV.
 slug: gridview-export-spreadsheetstreamingexport
 tags: export,spreadsheetstreamingexport
 published: True
@@ -87,6 +87,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **ShowColumnGroups**: Specifies whether common column headers should be included on export.
 - **ShowGroupHeaderRowAggregates**: Specifies whether group header aggregates should be included on export.
 - **HiddenColumnExportOption**: Gets or sets a value indicating how hidden columns are exported. The **HiddenColumnExportOptions** enumeration provides three possible options: **ExportAlways**, **DoNotExport** and **ExportAsHidden**.
+- **ColumnWidth**: Gets or sets the width of the columns that are exported.
 - **Items**: The collection of items to be exported.
 
 #### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
@@ -104,7 +105,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 {{endregion}}
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to True__
-![Export RadGridView with headers, footers and default styles](../images/exportdefaultstyles2.png)
+![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)
 
 ## Events
 

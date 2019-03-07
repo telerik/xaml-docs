@@ -1,7 +1,7 @@
 ---
 title: Custom Filtering Controls
 page_title: Custom Filtering Controls
-description: Custom Filtering Controls
+description: Learn how to easily craft any filtering control that you like by using the custom filtering controls feature of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-filtering-custom-filtering-controls
 tags: custom,filtering,controls
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Aggregates are not shown
 page_title: Aggregates are not shown
-description: Aggregates are not shown
+description: Learn how to solve the problem of not having aggregates shown at the bottom of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-aggregates-not-shown
 tags: aggregates,are,not,shown
 published: True

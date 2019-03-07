@@ -1,14 +1,14 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Hierarchy Overview
+description: Learn how you can display hierarchical data in the form of nested tables when working with RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
 slug: gridview-hierachy-overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Overview
+# Hierarchy Overview
 
 Besides the trivial tabular data visualization, the __RadGridView__ is capable of displaying hierarchical data in the form of nested tables. In this case the rows of the __RadGridView__ are represented by the __GridViewExpandableRow__ class. In the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic you can find information about the basics of building a hierarchical grid.
 

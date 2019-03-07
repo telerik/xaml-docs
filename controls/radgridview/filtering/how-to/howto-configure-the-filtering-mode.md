@@ -1,7 +1,7 @@
 ---
 title: Configure The Filtering Mode
 page_title: Configure The Filtering Mode
-description: Configure The Filtering Mode
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to configure the filtering mode.
 slug: gridview-filtering-howto-configure-the-filtering-mode
 tags: configure,the,filtering,mode
 published: True
@@ -25,7 +25,7 @@ To enable the popup filtering mode, set RadGridView’s FilteringMode property t
 
 Popup Filtering Mode
 
-![](images/gridview_filtering_basic_01.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 01](images/gridview_filtering_basic_01.png)
 
 ## Filter Row Mode
 
@@ -40,5 +40,5 @@ To enable the custom filter row mode, set RadGridView’s FilteringMode property
 
 Popup Filtering Mode
 
-![](images/gridview_filtering_basic_02.png)
+![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
 

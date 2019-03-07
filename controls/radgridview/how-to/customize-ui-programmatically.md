@@ -1,7 +1,7 @@
 ---
 title: Customize the UI programmatically
 page_title: Customize the UI programmatically
-description: Customize the UI programmatically
+description: Find out more about the two powerful extension methods which you can use to easily customize RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-how-to-customize-ui-programmatically
 tags: customize,the,ui,programmatically
 published: True

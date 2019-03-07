@@ -1,7 +1,7 @@
 ---
 title: Disable Filtering for a Specific Column
 page_title: Disable Filtering for a Specific Column
-description: Disable Filtering for a Specific Column
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to disable filtering for a specific column.
 slug: gridview-filtering-disable-filtering-for-a-specific-column
 tags: disable,filtering,for,a,specific,column
 published: True

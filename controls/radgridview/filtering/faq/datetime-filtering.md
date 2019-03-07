@@ -1,7 +1,7 @@
 ---
 title: Filtering column showing DateTime values
 page_title: Filtering column showing DateTime values
-description: Filtering column showing DateTime values
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to avoid filtering out items with DateTime values with different time parts.
 slug: gridview-filtering-faq-datetime-filtering
 tags: filtering,column,showing,datetime,values
 published: True

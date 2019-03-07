@@ -1,7 +1,7 @@
 ---
 title: Styling Group Panel
 page_title: Styling Group Panel
-description: Styling Group Panel
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the GroupPanel element.
 slug: radgridview-styles-and-templates-styling-the-group-panel
 tags: styling,group,panel
 published: True
@@ -26,15 +26,15 @@ In this article we will discuss the following topics:
 
 #### __Figure 1: GridViewGroupPanel template structure__
 
-![GridViewCell template structure](images/gridview-group-panel-template.png)
+![Telerik {{ site.framework_name }} DataGrid-group-panel-template](images/gridview-group-panel-template.png)
 
 #### __Figure 2: GridViewGroupPanelItem template structure__
 
-![GridViewCell template structure](images/gridview-group-panel-item-template.png)
+![Telerik {{ site.framework_name }} DataGrid-group-panel-item-template](images/gridview-group-panel-item-template.png)
 
 #### __Figure 3: GridViewGroupPanelCell template structure__
 
-![GridViewCell template structure](images/gridview-group-panel-cell-template.png)
+![Telerik {{ site.framework_name }} DataGrid-group-panel-cell-template](images/gridview-group-panel-cell-template.png)
 
 ## Targeting the GridViewGroupPanel Element
 
@@ -103,7 +103,7 @@ __RadGridView__ exposes two properties of type __Style__ - __GroupPanelStyle__ a
 
 #### __Figure 4: RadGridView with styled group panel__
 
-![RadGridView with styled group panel](images/RadGridView_Styles_and_Templates_Styling_RadGridView_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling Telerik {{ site.framework_name }} DataGrid 03](images/RadGridView_Styles_and_Templates_Styling_RadGridView_03.png)
 
 ## GroupPanelForeground and GroupPanelBackground
 

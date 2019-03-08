@@ -77,6 +77,8 @@ Below you can find the differences between the three color variations. Every bru
 |SemiBasicBrush|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46|<div class="theme-palette-color" style="background: #"></div>|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
 |HeaderBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF35496A|<div class="theme-palette-color" style="background: #35496A"></div>|
 |ComplementaryBrush|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
+|ReadOnlyBackgroundBrush|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
+|ReadOnlyBorderBrush|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
 |__Additional color__| | | | | | |		
 |DefaultForegroundColor*|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
 
@@ -192,5 +194,13 @@ This will be the final result:
 
 ![Common Styling Appearance VS 2013 Theme](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
+## ReadOnly Properties
+
+In the __R2 2019__ version, the following properties were introduced in the __VisualStudio2013Palette__ to control the look and feel of elements in their readonly state:
+
+* __ReadOnlyBackgroundBrush__ - Used as a background of elements that are in ReadOnly state.
+* __ReadOnlyBorderBrush__ -  Used in borders inside elements that are in ReadOnly state.
+* __ReadOnlyOpacity__ - Used for text in inputs when they are in a read-only state.
+ 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

@@ -190,6 +190,8 @@ And now if you run your application and hit the 'Equation' button, the backgroun
 
 __RadRibbonView__ allows you to additionally organize your buttons with common functionality (i.e. wrap Increase, Decrease Font buttons) in one panel. For this purpose you should use the __RadButtonGroup__ class. It will automatically apply a  __Small Size__ on all buttons wrapped in it. Furthermore, the __RadButtonGroup__ is designed to create a separator between every two buttons in it.		
 
+> Because the RadRibbonGroup sets the Size of all child RadRibbonButtons to Small, the CollapseToSmall and CollapseToMedium properties of the button won't be respected.
+
 The next example shows you how to use __RadButtonGroup__.		
 
 #### __XAML__

@@ -305,3 +305,4 @@ intro_columns:
 sdk_examples: "sdk_sl.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
+has_kb_portal: false

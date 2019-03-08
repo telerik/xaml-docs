@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-When a RadGridView column header is changed from a longer to a shorter string, the column header width doesn't change its size to autofit.
+When I change RadGridView column header from a longer to a shorter string, the column header width doesn't change its size to autofit.
 
 ## Solution
 
-To change make the header fit its content, reset the Width of the column when the Header changes.
+To make the header fit its content, reset the Width of the column when the Header changes.
 
 #### __[C#]__
 {{region kb-gridview-column-header-autofit-0}}

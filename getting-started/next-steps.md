@@ -16,10 +16,11 @@ If you are just getting started, you can find guidance in the following articles
 
 {% if site.site_name == 'WPF' %}
 * [First Steps]({%slug getting-started-first-steps%})
+* [Explore control features]({%slug getting-started-explore-control-features%})
 {% else %}
 * [First Steps]({%slug getting-started-first-steps-sl%})
+* [Explore control features]({%slug getting-started-explore-control-features-sl%})
 {% endif %}
-* [Explore control features]({%slug getting-started-explore-control-features%})
 * [Change control appearance]({%slug getting-started-change-control-appearance%})
 
 ### More Learning Resources
@@ -31,16 +32,18 @@ Video Tutorials
 
 Installation
 * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
+{% if site.site_name == 'WPF' %}
 * [Download Product Files]({%slug download-product-files-wpf%})
 * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})
-* [Adding the Telerik Controls to Your Project]({%slug installation-adding-to-application-create-application-and-adding-control%})
-{% if site.site_name == 'WPF' %}
 * [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
 {% else %}
+* [Download Product Files]({%slug download-product-files%})
+* [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
 * [Telerik Visual Studio Extensions]({%slug radcontrols-for-silverlight-vs-extensions-overview%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
 {% endif %}
+* [Adding the Telerik Controls to Your Project]({%slug installation-adding-to-application-create-application-and-adding-control%})
 
 Appearance
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
@@ -54,7 +57,9 @@ Common Information
 * [Consuming Data]({%slug consuming-data-overview%})
 * [Localization]({%slug common-localization%})
 * [UI Automation Support]({%slug common-ui-automation%})
+{% if site.site_name == 'WPF' %}
 * [Coded UI support]({%slug coded-ui-support%})
+{% endif %}
 * [Visual Tree Helpers]({%slug common-visual-tree-helpers%})
 
 MVVM Helpers

@@ -42,7 +42,7 @@ You can then create the Telerik UI for {{ site.framework_name }} project in one 
 >caption Figure 3: Go to Telerik > Telerik UI for {{ site.framework_name }} > Convert to Telerik {{ site.framework_name }} Application
 ![Run Convert Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuConvert.png "Run Convert Project Wizard")
 
-* If you prefer full manual control over your project, you can **copy** the **Telerik assemblies** to the `~/bin` and **add references** to them through the Visual Studio interface. The controls come packaged in several assemblies but to get started, you only need `Telerik.Windows.Controls.dll`.
+* If you prefer full manual control over your project, you can **copy** the **Telerik assemblies** to the **~/bin** and **add references** to them through the Visual Studio interface. The controls come packaged in several assemblies but to get started, you only need **Telerik.Windows.Controls.dll**.
 
 ## Add a Teleik Control to the Project
 
@@ -50,33 +50,33 @@ The final step is to actually [add a Telerik control to your application]({%slug
 
 1. [Add the Telerik namespace]({%slug installation-adding-application-namespace-declaration%}).
 
-#### __[XAML] Example 1: Telerik namespace definition__
+	#### __[XAML] Example 1: Telerik namespace definition__
 
-{{region installation-adding-application-namespace-declaration-0}}
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+	{{region installation-adding-application-namespace-declaration-0}}
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+	{{endregion}}
 
 2. **Add a Telerik control** to the page, for example, a [RadListBox]({%slug radlistbox-getting-started%}):
 
-#### __[XAML] Example 2: Adding RadListBoxItems__
-{{region xaml-radlistbox-getting-started_1}}
-	<telerik:RadListBox  Width="200" x:Name="radListBox">
-	    <telerik:RadListBoxItem Content="Australia" />
-	    <telerik:RadListBoxItem Content="Brazil" />
-	    <telerik:RadListBoxItem Content="Canada" />
-	    <telerik:RadListBoxItem Content="China" />
-	    <telerik:RadListBoxItem Content="England" />
-	    <telerik:RadListBoxItem Content="Germany" />
-	</telerik:RadListBox>
-{{endregion}}
+	#### __[XAML] Example 2: Adding RadListBoxItems__
+	{{region xaml-radlistbox-getting-started_1}}
+		<telerik:RadListBox  Width="200" x:Name="radListBox">
+			<telerik:RadListBoxItem Content="Australia" />
+			<telerik:RadListBoxItem Content="Brazil" />
+			<telerik:RadListBoxItem Content="Canada" />
+			<telerik:RadListBoxItem Content="China" />
+			<telerik:RadListBoxItem Content="England" />
+			<telerik:RadListBoxItem Content="Germany" />
+		</telerik:RadListBox>
+	{{endregion}}
 
-> You can also **drag** a control **from** the **Visual Studio Toolbox**. If you do not see the controls in the toolbox, examine the [Adding the Telerik Controls to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}) article.
+	> You can also **drag** a control **from** the **Visual Studio Toolbox**. If you do not see the controls in the toolbox, examine the [Adding the Telerik Controls to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}) article.
 
-3. **Run the project** by pressing `F5`. You should see something like this:
+3. **Run the project** by pressing **F5**. You should see something like this:
 
->caption Figure 4: The final result
+	>caption Figure 4: The final result
 
-![Main window with RadListBox](images/main-window-with-radlistbox.png "Main window with RadListBox")
+	![Main window with RadListBox](images/main-window-with-radlistbox.png "Main window with RadListBox")
 
 ## Next Steps
 

@@ -198,9 +198,9 @@ This will be the final result:
 
 In the __R2 2019__ version, the following properties were introduced in the __VisualStudio2013Palette__ to control the look and feel of elements in their readonly state:
 
-* __ReadOnlyBackgroundBrush__ - Used as a background of elements that are in ReadOnly state.
-* __ReadOnlyBorderBrush__ -  Used in borders inside elements that are in ReadOnly state.
-* __ReadOnlyOpacity__ - Used for text in inputs when they are in a read-only state.
+* __ReadOnlyBackgroundBrush__: Used as a background of elements that are in a read-only state.
+* __ReadOnlyBorderBrush__:  Used in borders inside elements that are in a read-only state.
+* __ReadOnlyOpacity__: Used for text in inputs when they are in a read-only state.
  
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

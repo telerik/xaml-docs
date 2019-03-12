@@ -64,6 +64,8 @@ __RadGridView__ provides several properties to get the data behind the selected 
 * __SelectedItems__: A collection of the business objects corresponding to the selected rows. If the **SelectionUnit** is **Cell** or no full rows have been selected, the collection is empty.
 * __SelectedCells__: A collection of __GridViewCellInfo__ objects which represent the corresponding business object(s) and the column(s) of the selected cell(s).
 
+>important When filtering is applied to the control, if a currently selected item does not pass the filtering criteria, it will be deselected.
+
 ## Disabling Selection
 
 To disable the selection functionality you can set the __CanUserSelect__ property to **False**.

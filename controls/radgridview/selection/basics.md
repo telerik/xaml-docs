@@ -14,14 +14,6 @@ __RadGridView__ provides you with selection functionality, which allows the user
 
 >tip The selection mechanism can be controlled programmatically too. For more information take a look at the [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%}) article.
 
-This article is split in the following sections:
-
-* [Selection Modes](#selection-modes)
-* [Selection Units](#selection-units)
-* [Selected Items](#selected-items)
-* [Disabling Selection](#disabling-selection)
-* [Events](#events)
-
 Users can select an item in through the control's UI by clicking somewhere on the desired row.
 
 #### Figure 1: Row Selection
@@ -91,6 +83,14 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 {{region vb-gridview-selection-basics_2}}
 	Me.radGridView.CanUserSelect = False
 {{endregion}}
+
+## DragElementAction
+
+When the __SelectionMode__ is __Extended__, you can set the __DragElementAction__ property of the RadGridView in order to specify the action that will be taken when the user performs a drag over the GridViewRows. This property is of type [DragAction](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.selection.dragaction) and has the following values:
+
+* __ExtendedSelect__: Performs selection without taking the drag unit selection state.
+* __None__: Does not execute any action. This is the default value. 
+* __Select__: Performs selection. This mode does not perform selection when dragging from a unit that is selected.
 
 ## Events
 

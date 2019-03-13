@@ -98,7 +98,6 @@ The extracted style will have the following content:
             VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
             MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
             MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}"/>
-    </Style>
 {{endregion}}
 
 You can now modify the styleselector and set it through RadScheduleView's GroupHeaderStyleSelector property as demonstrated in **Example 3**.

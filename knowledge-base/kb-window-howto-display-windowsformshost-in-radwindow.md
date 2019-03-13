@@ -13,6 +13,10 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
+		<td>Product Version</td>
+		<td>2019.1.220</td>
+	</tr>
+	<tr>
 		<td>Product</td>
 		<td>RadWindow for WPF and Silverlight</td>
 	</tr>

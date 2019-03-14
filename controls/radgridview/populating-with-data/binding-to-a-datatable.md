@@ -10,11 +10,11 @@ position: 11
 
 # Binding to the DataView of a DataTable
 
-This article will demonstrate how to bind a __RadGridView__ to the DataView of a DataTable. An important thing when using a DataTable as a datasource for a RadGridView is to make sure that the __ItemsSource__ property of the control is bound to the __DefaultView__ property of the DataTable, which is of type [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?view=netframework-4.7.2).
+This article will demonstrate how to bind a __RadGridView__ to the DataView of a DataTable. An important thing when using a DataTable as a data source for a RadGridView is to make sure that the __ItemsSource__ property of the control is bound to the __DefaultView__ property of the DataTable, which is of type [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?view=netframework-4.7.2).
 
 ## Binding to DataTable's DefaultView
 
-__Example 1__ demonstrates how you can set up a viewmodel containing a DataTable in order to bind it to the RadGridView.
+__Example 1__ demonstrates how you can set up a ViewModel containing a DataTable in order to bind it to the RadGridView.
 
 #### __[C#] Example 1: Setting up the ViewModel__
 
@@ -95,7 +95,7 @@ __Example 1__ demonstrates how you can set up a viewmodel containing a DataTable
 
 {{endregion}}
 
-__Example 2__ demonstrates how the RadGridView is set up in xaml. Please, pay attention to the fact that the ItemsSource is bound to the __DefaultView__ property of the DataTable.
+__Example 2__ demonstrates how the RadGridView is set up in XAML. Please, pay attention to the fact that the __ItemsSource__ is bound to the __DefaultView__ property of the DataTable.
 
 #### __[XAML] Example 2: Setting up the RadGridView__
 
@@ -120,7 +120,6 @@ __Example 2__ demonstrates how the RadGridView is set up in xaml. Please, pay at
 		
 	</Grid>
 {{endregion}}
-
 
 ## See Also
 

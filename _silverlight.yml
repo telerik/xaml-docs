@@ -115,7 +115,9 @@ cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
 controls/radnavigationview,
 controls/raddiagram/extensions/diagramribbon,
-knowledge-base/]
+knowledge-base/,
+getting-started/first-steps.md,
+getting-started/explore-control-features.md]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

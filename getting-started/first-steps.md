@@ -34,7 +34,7 @@ The Visual Studio Extensions can be accessed through the Telerik | Telerik UI fo
 
 You can then create the Telerik UI for {{ site.framework_name }} project in one of the 3 following ways:
 
-* If you **do not have a project**, run the [Create Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}).
+* If you **do not have a project**, run the [Create Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}).{% if site.framework_name == 'WPF' %} You can either create a new blank project or pick one of the available [predefined templates]({%slug visual-studio-templates%}).{% endif %}
 >caption Figure 2: Go to Telerik > Telerik  UI for {{ site.framework_name }} > Create New Telerik Project
 ![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png "Run Create Project Wizard")
 

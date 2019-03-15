@@ -13,15 +13,6 @@ published: True
 
 __RadRichTextBox__ exposes a full set of commands that provide an alternative to its API methods, exposed through its __Commands__ property. For each of the [Formatting API]({%slug radrichtextbox-features-formatting-api%}) methods there is a respective command. 
 
-This article describes the following topics related to commands:
-
-* [Binding Commands to UI Elements](#binding-commands-to-ui-elements)
-* [Modifying Default Application Commands Bindings](#modifying-default-application-commands-bindings)
-* [Command-related Events](#command-related-events)
-	* [CommandExecuting](#command-related-events-CommandExecuting)
-	* [CommandExecuted](#command-related-events-CommandExecuted)
-	* [CommandError](#command-related-events-CommandError)
-
 ## Binding Commands to UI Elements
 
 In order to use the command with a UI Element that supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.

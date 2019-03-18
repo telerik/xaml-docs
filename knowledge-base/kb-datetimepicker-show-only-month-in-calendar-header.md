@@ -1,0 +1,46 @@
+---
+title: How to Show Only Month in Calendar Header of RadDateTimePicker
+description: Display month without year in the RadDateTimePicker and RadDatePicker controls
+page_title: Show Selected Month in Calendar Part of DateTimePicker
+type: troubleshooting
+slug: kb-datetimepicker-show-only-month-in-calendar-header
+position: 
+tags: 
+ticketid: 497440
+res_type: kb
+---
+
+## Environment
+<table>
+	<tr>
+		<td>Product Version</td>
+		<td>2011.3 1220</td>
+	</tr>
+	<tr>
+		<td>Product</td>
+		<td>RadDateTimePicker for WPF</td>
+	</tr>
+</table>
+
+## Description
+
+How to show only the month of the selected date in the calendar's header of RadDateTimePicker.
+
+## Solution
+
+Set the MonthViewHeaderFormat property of the RadCalendar control. You can do this via the CalendarStyle property of RadDateTimePicker.
+
+#### __[XAML]__
+{{region kb-datetimepicker-show-only-month-in-calendar-header-0}}
+	<telerik:RadDateTimePicker>
+		<telerik:RadDateTimePicker.CalendarStyle>
+			<Style TargetType="telerik:RadCalendar">
+				<Setter Property="MonthViewHeaderFormat" Value="MMMM" />
+			</Style>
+		</telerik:RadDateTimePicker.CalendarStyle>
+	</telerik:RadDatePicker>
+{{endregion}}
+
+![Before and after the style](images/kb-datetimepicker-show-only-month-in-calendar-header-0.png)
+	
+> The same approach applies to RadDatePicker.

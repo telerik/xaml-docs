@@ -5,7 +5,7 @@ description: Explore Control Features
 slug: getting-started-explore-control-features-sl
 tags: Explore Control Features
 published: True
-position: 2
+position: 1
 ---
 
 # Explore Control Features

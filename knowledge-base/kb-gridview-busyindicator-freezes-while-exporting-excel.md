@@ -1,6 +1,6 @@
 ---
 title: RadBusyindicator Freezes when exporting RadGridView to Excel File
-description: Busy indicator not working while save DataGrid to .xls or .xlsx format. Minimize this with ExportToWorkbook() method and BackgroundWorker.
+description: Busy indicator not working while saving DataGrid to .xls or .xlsx format. Minimize this with ExportToWorkbook() method and BackgroundWorker.
 page_title: 
 type: troubleshooting
 slug: kb-gridview-busyindicator-freezes-while-exporting-excel

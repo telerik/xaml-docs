@@ -14,7 +14,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 ## Assembly references 
 
-In order to use__RadImageEditor__ in your projects, you have to add references to the following assemblies:	
+In order to use __RadImageEditor__ in your projects, you have to add references to the following assemblies:	
 
 * __Telerik.Windows.Controls__
 
@@ -24,7 +24,7 @@ In order to use__RadImageEditor__ in your projects, you have to add references t
 
 ## Adding RadImageEditor to the Project
 
-The next few code examples will demonstrate how a __RadImageEditor__ can be defined in xaml, a sample picture can be loaded and a command can be executed on that picture. __Example 1__ showcases a __RadImageEditor__ and a Button defined in xaml.
+The next few code examples will demonstrate how to add a __RadImageEditor__ in XAML, load a sample picture and execute a command on that picture. __Example 1__ showcases a __RadImageEditor__ and a Button defined in XAML.
 
 #### __[XAML] Example 1: Defining a RadImageEditor in xaml__
 
@@ -46,7 +46,7 @@ __Example 2__ shows the telerik namespace used in __Example 1__:
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
 {{endregion}}
 
-In order to show a picture, you can set the __Image__ property of the __RadImageEditor__. It is of type [RadBitMap](https://docs.telerik.com/devtools/wpf/api/telerik.windows.media.imaging.radbitmap). __Example 3__ demonstrates how you can use the [ImageExampleHelper](https://github.com/telerik/xaml-sdk/blob/master/ImageEditor/RadImageEditorUIFirstLook/ImageExampleHelper.cs) class in order to load an Image. It assumes that there is a folder named "SampleImages" with an image named "RadImageEditor.png" inside the project. 
+In order to show a picture, you can set the __Image__ property of the __RadImageEditor__. It is of type [RadBitmap](https://docs.telerik.com/devtools/wpf/api/telerik.windows.media.imaging.radbitmap). __Example 3__ demonstrates how you can use the [ImageExampleHelper](https://github.com/telerik/xaml-sdk/blob/master/ImageEditor/RadImageEditorUIFirstLook/ImageExampleHelper.cs) class in order to load an Image. It assumes that there is a folder named "SampleImages" with an image named "RadImageEditor.png" inside the project. 
 
 #### __[C#] Example 3: Load image in RadImageEditor__
 

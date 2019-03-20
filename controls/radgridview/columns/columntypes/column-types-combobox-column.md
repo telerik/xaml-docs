@@ -143,7 +143,7 @@ __Figure 4.__ and __Figure 5.__ show the result of configuring __ItemsSourceBind
 
 >When using __ItemsSourceBinding__ property, the values displayed in the column’s filtering control will be the values corresponding to the __DataMemberBinding__ (0, 1, 2). If you want to have the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set __GridViewComboBoxColumn__.[FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as __DisplayMemberPath__.
         
->tipYou can download a runnable project of the previous example from our online SDK repository:[ComboboxColumnItemsSourceBinding](https://github.com/telerik/xaml-sdk/GridView/ComboboxColumnItemsSourceBinding__).
+>tipYou can download a runnable project of the previous example from our online SDK repository:[ComboboxColumnItemsSourceBinding](https://github.com/telerik/xaml-sdk/tree/master/GridView/ComboboxColumnItemsSourceBinding).
         
 >If you are setting GridViewComboBoxColumn's __ItemsSource__ property you should specify a valid __Source__ for it. Please refer to this [troubleshooting article]({%slug gridview-troubleshooting-blank-cells%}).
 

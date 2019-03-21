@@ -1,8 +1,8 @@
 ---
-title: How to Display WindowsFormsHost in RadWindow
+title: WindowsFormsHost inсside RadWindow is not visible
 description: This article explains what you need to do to display a WindowsFormsHost element in RadWindow.
 type: how-to
-page_title: How to Display WindowsFormsHost in RadWindow
+page_title: How to Display WinForms controls in RadWindow
 slug: kb-window-howto-display-windowsformshost-in-radwindow
 position: 0
 tags: windowsformshost,radwindow,display

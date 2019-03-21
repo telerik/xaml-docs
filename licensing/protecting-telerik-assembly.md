@@ -1,14 +1,32 @@
 ---
-title: Protecting Telerik UI Assemblies
-page_title: Protecting Telerik UI Assemblies
-description: Protecting Telerik UI Assemblies
+title: Redistributing Telerik Assemblies
+page_title: Redistributing Telerik Assemblies
+description: This article describes the redistribution process for the Telerik UI for WPF and Silverlight binaries. 
 slug: protecting-telerik-radcontrols-assembly
-tags: protecting,telerik,ui,assembly
+tags: protecting,telerik,ui,assembly,redistribute
 published: True
 position: 0
 ---
 
-# Protecting Telerik UI Assemblies
+# Redistributing Telerik Assemblies
+
+The Telerik UI for {{ site.framework_name }} suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to your end users who are not required to purchase a license from Telerik to access your solution.
+
+## Examples of Permitted Uses
+
+* {{ site.framework_name }} applications for internal company use.
+            
+* Commercial {{ site.framework_name }} applications deployed to Your end users. __In this case, you may deploy the Telerik assemblies together with your application with the sole exception of the assemblies providing the additional design-time support for the Telerik controls. The design-time assemblies may not be deployed to end-users under any circumstance__.
+
+	The design-time assemblies are located in the __Telerik UI for {{ site.framework_name }} installation folder/Binaries/{% if site.framework_name == 'WPF' %}WPF40/{% endif %}design__ folder.
+	
+	>tip The location of the design-time assemblies may vary depending on the Xaml or NoXaml binaries usage{% if site.framework_name == 'WPF' %} and also the .NET version of the control dlls{% endif %}. {% if site.framework_name == 'WPF' %}For example, the [NoXaml]({%slug xaml-vs-noxaml%}), .NET 4.5 desing-time assemblies are located in  *Telerik UI for WPF installation folder/Binaries.NoXaml/WPF45/design*.{% endif %}
+
+* WPF applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using the method in the [Protecting Telerik UI Assemblies](#protecting-telerik-ui-assemblies) section of this article.__
+
+>important The next sections in this article describe how to include additional protection to the Telerik assemblies redistributed with your application when necessary.
+
+## Protecting Telerik UI Assemblies
 
 Technical guidelines for protecting **Telerik UI for {{ site.framework_name }} by Progress** binaries when redistributed with other applications.
      

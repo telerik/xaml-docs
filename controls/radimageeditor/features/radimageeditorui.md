@@ -102,9 +102,14 @@ The image to be used will be chosen depending on the Theme applied to the editor
 	</telerik:ImageToolItem>
 {{endregion}}
 
->You can see how the tools and commands can be declared in code-behind and modified on the fly in the CustomizingDefaultUI demo at [https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI).
+>You can see how the tools and commands can be declared in code-behind and modified on the fly in the __CustomizingDefaultUI__ demo 
+{% if site.site_name == 'WPF' %}in the [WPF demos application](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}at [https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI){% endif %}
 
->tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo CustomUI, which can be viewed here: [https://demos.telerik.com/silverlight/#ImageEditor/CustomUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomUI).
+.
+
+>tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo __CustomUI__, which can be viewed  
+{% if site.site_name == 'WPF' %}in the [WPF demos application](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}here: [https://demos.telerik.com/silverlight/#ImageEditor/CustomUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomUI){% endif %}
+.
 
 ## See Also
 

@@ -39,7 +39,7 @@ The control (like RadDiagram, RadButton, etc.) is missing when referencing the f
 
 ## Solution
 
-This happens because the referenced packages contain [NoXaml]({%slug xaml-vs-noxaml%}) dlls. To resolve this, reference the Xaml version of the dlls or the reference the theme dll and merge the required resource.
+This happens because the referenced packages contain [NoXaml]({%slug xaml-vs-noxaml%}) dlls. To resolve this, reference the Xaml version of the dlls or reference the theme dll and merge the required resources.
 
 ### Solution #1
 

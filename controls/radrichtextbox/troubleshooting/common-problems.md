@@ -77,6 +77,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    // dialogs
 	    typeof(AddNewBibliographicSourceDialog),
 	    typeof(ChangeEditingPermissionsDialog),
+	    typeof(CodeFormattingDialog),
 	    typeof(EditCustomDictionaryDialog),
 	    typeof(FindReplaceDialog),
 	    typeof(FloatingBlockPropertiesDialog),
@@ -95,6 +96,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    typeof(RadInsertHyperlinkDialog),
 	    typeof(RadInsertSymbolDialog),
 	    typeof(RadParagraphPropertiesDialog),
+	    typeof(SectionColumnsDialog),
 	    typeof(SetNumberingValueDialog),
 	    typeof(SpellCheckingDialog),
 	    typeof(StyleFormattingPropertiesDialog),

@@ -85,6 +85,58 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
     End Class
 {{endregion}}
 
+#### __[C#] Example 4: ImageExampleHelper used in Example 3__
+
+{{region cs-radimageeditor-getting-started-4}}
+    public class ImageExampleHelper
+    {
+        private static string SampleImageFolder = "SampleImages/";
+
+        public static void LoadSampleImage(RadImageEditorUI imageEditorUI, string image)
+        {
+            using (Stream stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder + image)).Stream)
+            {
+                imageEditorUI.Image = new Telerik.Windows.Media.Imaging.RadBitmap(stream);
+                imageEditorUI.ApplyTemplate();
+                imageEditorUI.ImageEditor.ScaleFactor = 0;
+            }
+        }
+
+        public static Uri GetResourceUri(string resource)
+        {
+            AssemblyName assemblyName = new AssemblyName(typeof(ImageExampleHelper).Assembly.FullName);
+            string resourcePath = "/" + assemblyName.Name + ";component/" + resource;
+            Uri resourceUri = new Uri(resourcePath, UriKind.Relative);
+
+            return resourceUri;
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 4: ImageExampleHelper used in Example 3__
+
+{{region vb-radimageeditor-getting-started-5}}
+    Public Class ImageExampleHelper
+	Private Shared SampleImageFolder As String = "SampleImages/"
+
+	Public Shared Sub LoadSampleImage(ByVal imageEditorUI As RadImageEditorUI, ByVal image As String)
+		Using stream As Stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder & image)).Stream
+			imageEditorUI.Image = New Telerik.Windows.Media.Imaging.RadBitmap(stream)
+			imageEditorUI.ApplyTemplate()
+			imageEditorUI.ImageEditor.ScaleFactor = 0
+		End Using
+	End Sub
+
+	Public Shared Function GetResourceUri(ByVal resource As String) As Uri
+		Dim assemblyName As New AssemblyName(GetType(ImageExampleHelper).Assembly.FullName)
+		Dim resourcePath As String = "/" & assemblyName.Name & ";component/" & resource
+		Dim resourceUri As New Uri(resourcePath, UriKind.Relative)
+
+		Return resourceUri
+	End Function
+    End Class
+{{endregion}}
+
 #### __Figure 1: Result from the above examples__
 ![RadImageEditor rotating image](images/RadImageEditor_GettingStarted.gif)
 

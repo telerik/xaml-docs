@@ -1,11 +1,11 @@
 ﻿---
 title: "Value cannot be null. Parameter name: Pages" exception opening a particular pdf
-description: This article explains the reasons for receiving an ArgumentNullException with message "Value cannot be null. Parameter name: Pages" when trying to show PDF document.
+description: Resolve ArgumentNullException when trying to show PDF document. Error message "Value cannot be null. Parameter name: "Pages"
 type: troubleshooting
 page_title: ArgumentNullException when importing document in PdfViewer
 slug: kb-pdfviewer-argumentnullexception-pages
-position: 
-tags: 
+position: 0
+tags: argumentnullexception, error, opening, open, import, pdf, pdfviewer
 ticketid: 1401132
 res_type: kb
 ---
@@ -22,11 +22,10 @@ res_type: kb
 ## Description
 An error is thrown with a message "Value cannot be null. Parameter name: Pages" when trying to show a PDF document. The document cannot be opened in RadPdfViewer.
 
-There is a request 
 
 ## Error Message
 System.ArgumentNullException: 'Value cannot be null.
-Parameter name: Pages'
+Parameter name: Pages' 
 
 Call Stack:
 Telerik.Windows.Documents.Core.dll!Telerik.Windows.Documents.Utilities.Guard.ThrowExceptionIfNull<Telerik.Windows.Documents.Fixed.FormatProviders.Old.Pdf.DocumentModel.Core.Trees.PageTreeNodeOld>(Telerik.Windows.Documents.Fixed.FormatProviders.Old.Pdf.DocumentModel.Core.Trees.PageTreeNodeOld param, string paramName) Line 84	

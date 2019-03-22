@@ -1,11 +1,11 @@
 ---
-title: CreateShell() method can't return RadWindow in Prism 7
-description: 
+title: CreateShell Method Can't Return RadWindow in Prism 7
+description: The return value of the CreateShell method is of type Shell. This breaks the application if the return type is not a sub class of WPF Window.
 type: troubleshooting
-page_title: 
+page_title: Using RadWindow with Prism 7
 slug: kb-radwindow-prismapplication-createshell
-position: 
-tags: 
+position: 0
+tags: radwindow, telerik, prism 7, prismapplication, createshell, telerikwindow
 ticketid: 1400280
 res_type: kb
 ---
@@ -25,28 +25,36 @@ res_type: kb
 
 ## Description
 
-In Prism 7 for WPF, the return value of CreateShell() method from class PrismApplication expects to be a subclass of a Window. With this in hand, returning an object of type RadWindow won't be possible as the control does not derive from a Window.
+Returning object of type RadWindow in the Prism 7 application CreateShell method causes an error.
 
 ## Solution
 
-Return null in CreateShell() method, and override OnInitialized() metho to show the RadWindow.
+Return null in CreateShell() method, and override OnInitialized() method to show the RadWindow.
 
 #### __[C#]__
-	protected override Window CreateShell()
+{{region kb-kb-radwindow-prismapplication-createshell-0}}
+	public partial class App
 	{
-		return null;
-	}
+		protected override Window CreateShell()
+		{
+		    return null;
+		}
+		protected override void OnInitialized()
+		{
+		    TelerikShell shellWindow = Container.Resolve<TelerikShell>();
+		    shellWindow.Show();
+		    MainWindow = shellWindow.ParentOfType<Window>();
 
-	protected override void OnInitialized()
-	{
-		TelerikShellRadWindow shellWindow = Container.Resolve<TelerikShellRadWindow>();
-		TelerikShellRadWindow.Show();
-		MainWindow = TelerikShellRadWindow.ParentOfType<Window>();
+		    // there lines was not executed because of null Shell - so must duplicate here. Originally called from 		PrismApplicationBase.Initialize
+		    RegionManager.SetRegionManager(MainWindow, Container.Resolve<IRegionManager>());
+		    RegionManager.UpdateRegions();
+		    InitializeModules();
+		    base.OnInitialized();
+		}
+		protected override void RegisterTypes(IContainerRegistry containerRegistry)
+		{
 
-		RegionManager.SetRegionManager(MainWindow, Container.Resolve<IRegionManager>());
-		RegionManager.UpdateRegions();
-		InitializeModules();
-		base.OnInitialized();
+		}
 	}
 {{endregion}}
 

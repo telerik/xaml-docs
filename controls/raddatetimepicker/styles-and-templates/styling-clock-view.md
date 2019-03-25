@@ -12,13 +12,33 @@ position: 4
 
 To style the clock in your __RadDateTimePicker__ you can do the following:
 
-* Create a __Style__ for it and set it to the __ClockStyle__ property of the __RadDateTimePicker__. To learn how to create a style that targets the __RadCalendar__ control read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
+* Create a __Style__ for it and set it to the __ClockStyle__ property of the __RadDateTimePicker__. 
 
 * Modify the default resources for the __DateTimePickerClock__, that are generated together with the __RadDateTimePicker's Style__.
 
 >tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the calendar, look [here]({%slug raddatetimepicker-styling-calendar%}).
 
-This topic will focus on the second approach.
+## Setting the ClockStyle property
+
+__Example 1__ demonstrates how the flow direction the __RadClock__ in the dropdown of the RadDateTimePicker can be switched:
+
+#### __[XAML] Example 1: RadDateTimePicker with ClockStyle__
+
+{{region xaml-raddatetimepicker-styling-clock-view-0}}
+	<Window.Resources>
+        <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
+        
+        <Style x:Key="ClockStyle" TargetType="telerik:RadClock" BasedOn="{StaticResource RadClockStyle}">
+            <Setter Property="FlowDirection" Value="RightToLeft" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <telerik:RadDateTimePicker VerticalAlignment="Center" HorizontalAlignment="Center"  ClockStyle="{StaticResource ClockStyle}" />
+    </Grid>
+{{endregion}}
+
+#### __Figure 1: Result from Example 1 in the Office2016 theme__
+![RadClock with RightToLeft FlowDirection](images/DateTimePicker_StylingTheClock.png)
 
 ## Modifying the default resources
 

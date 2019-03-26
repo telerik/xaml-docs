@@ -18,50 +18,35 @@ Furthermore, the API is extensible, so that you can implement a custom external 
 
 ## Methods and Commands
 
-__RadRichTextBox's__ API exposes a method and a command for each of the three actions that can be performed against the clipboard: Cut, Copy and Paste. They can be evoked as follows:
+__RadRichTextBox's__ API exposes a method and a command for each of the three actions that can be performed against the clipboard: Cut, Copy and Paste. 
         
 
-#### __C#__
+#### __[C#] Example 1: Using the exposed methods to interact with the clipboard__
 
 {{region radrichtextbox-features-clipboard-support_0}}
+
 	this.radRichTextBox.Copy();
 	this.radRichTextBox.Cut();
 	this.radRichTextBox.Paste();
 {{endregion}}
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Using the exposed methods to interact with the clipboard__
 
-{{region radrichtextbox-features-clipboard-support_0}}
+{{region radrichtextbox-features-clipboard-support_1}}
+
 	Me.radRichTextBox.Copy()
 	Me.radRichTextBox.Cut()
 	Me.radRichTextBox.Paste()
 {{endregion}}
 
 
-When building UI for the RichTextBox, the respective commands can be used:{% if site.site_name == 'Silverlight' %}
+When building UI for the RichTextBox, the respective commands can be used:
 
-#### __XAML__
+#### __[XAML] Example 2: Wiring UI to the commands related to the clipboard__
 
-{{region radrichtextbox-features-clipboard-support_0}}
-	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut" 
-	  		  	   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}"
-				   Text="Cut" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy"
-	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}"
-				   Text="Copy" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste"
-	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}"
-				   Text="Paste" />
-	</telerik:RadToolBar>
-{{endregion}}
+{{region radrichtextbox-features-clipboard-support_2}}
 
-{% endif %}{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
-{{region radrichtextbox-features-clipboard-support_1}}
 	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
 	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut"
 	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}" 
@@ -75,19 +60,23 @@ When building UI for the RichTextBox, the respective commands can be used:{% if 
 	</telerik:RadToolBar>
 {{endregion}}
 
-{% endif %}
-
 >Note that the attached __telerik:RadRichTextBoxRibbonUI.RichTextCommand__ property works only with Ribbon buttons. With regular RadButtons and other buttons, you should use their __Command__ property instead.
           
+## Key Bindings
+
+>tipIn order to copy, paste or cut, the standard keyboard shortcuts can also be used - __Ctrl + C__, __Ctrl + V__, __Ctrl + X__.
+          
+
+To learn more about the default key-bindings of the editor and ways to override them, you can refer to the [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}) article.
 
 ## Settings{% if site.site_name == 'WPF' %}
 
-By default the __PasteCommand__ of the editor uses its __RtfFormatProvider__ and __HtmlFormatProvider__ in order to create a RadDocument out of the document in the clipboard and insert it in the current document. That is why in order to be able to paste rich content, at least one of these two assemblies must be referenced:
+By default, the __PasteCommand__ of the editor uses its __RtfFormatProvider__ and __HtmlFormatProvider__ in order to create a RadDocument out of the document in the clipboard and insert it in the current document. That is why in order to be able to paste rich content, at least one of these two assemblies must be referenced:
           
 
-* Telerik.Windows.Documents.FormatProviders.Rtf.dll
+* **Telerik.Windows.Documents.FormatProviders.Rtf.dll**
 
-* Telerik.Windows.Documents.FormatProviders.Html.dll
+* **Telerik.Windows.Documents.FormatProviders.Html.dll**
 
 More information on the use of the format providers for importing text can be found here: [Format Providers]({%slug radrichtextbox-features-import-export%})
 
@@ -95,8 +84,6 @@ When the two format providers are referenced, the PasteCommand tries to create a
           
 
 You can customize this behavior by removing or reordering the clipboard handlers for the different formats.
-
-
 
 Each Clipboard Handler contains the following properties:
 
@@ -110,9 +97,10 @@ Each Clipboard Handler contains the following properties:
 For instance, here is how you can clear the default clipboard handlers and add only a handler which uses __TxtFormatProvider__. In this way only plain text will be pasted when you copy from a source such as another rich text editor or a browser.
           
 
-#### __C#__
+#### __[C#] Example 3: Change the ClipboardHandlers__
 
-{{region radrichtextbox-features-clipboard-support_1}}
+{{region radrichtextbox-features-clipboard-support_3}}
+
     ClipboardEx.ClipboardHandlers.Clear();
 
     ClipboardHandler clipboardHandler = new ClipboardHandler();
@@ -124,9 +112,10 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Change the ClipboardHandlers__
 
-{{region radrichtextbox-features-clipboard-support_1}}
+{{region radrichtextbox-features-clipboard-support_4}}
+
     ClipboardEx.ClipboardHandlers.Clear()
 
     Dim clipboardHandler As New ClipboardHandler()
@@ -138,17 +127,95 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 
 
-You can also reorder the clipboard handlers to use first HTML paste and fallback to RTF instead of the other way around, or attach to different events of the format providers.{% endif %}
+You can also reorder the clipboard handlers to use first HTML paste and fallback to RTF instead of the other way around, or attach to different events of the format providers.
 
-{% if site.site_name == 'Silverlight' %}In order to work around the limitation of the plain text only clipboard in Silverlight, we have exposed API for setting and getting the clipboard content of __RadRichTextBox__.
+## Working With the Content Inside the Clipboard
+
+The API allows you to customize the content which is being copied or pasted in RadRichTextBox. 
+
+>tipYou can handle the [CommandExecuting event]({%slug radrichtextbox-features-commands%}#command-related-events) so you can catch the moment of the operation's execution.
+
+### ClipboardEx Class
+ 
+This class provides you with methods allowing you to easily work with the framework's Clipboard. The ClipboardEx class is static and is located in the Telerik.Windows.Documents.Base namespace. It exposes the following members:
+
+* **ClipboardHandlers**: Collection of [ClipboardHandler](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.base.clipboardhandler)s that will be used when getting rich-text content from the clipboard.
+
+* **bool ContainsDocument()**: A method determining whether the clipboard contains supported rich-text data.
+
+* **bool ContainsText(KeyEventArgs pasteKeyEventArgs)**: A method determining whether the clipboard contains plain text. The method can be safely invoked with `null` parameter value.
+
+* **DocumentFragment GetDocument()**: Obtains a document from the clipboard using the registered **ClipboardHandlers**.
+
+* **DocumentFragment GetDocumentFromClipboard(string dataFormat, Func&lt;string, string&gt; clipboardStringFilter = null)**: Gets document from clipboard using the specified data format. The *clipboardStringFilter* parameter is optional and it can be used when the data must be filtered before creating a document from it.
+
+* **string StripHtmlClipboardFormatHeaders(string clipboardText)**: Skips all lines in the beginning containing ':' (HTML clipboard format header). It can be used as a value for the *clipboardStringFilter* parameter of **GetDocumentFromClipboard()**.
+
+* **string GetText()**: Gets plain text from the clipboard. 
+
+* **void SetDataObject(IDataObject dataObject)**: Places a specified data object on the system Clipboard.
+
+* **void SetDocument(DocumentFragment documentFragment)**: Sets a document represented by a [DocumentFragment](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.documentfragment) instance to the system clipboard.
+
+* **void SetText(string textData)**: Stores plain text data, specified as a string, in the system clipboard. 
+
+**Example 4** shows how you can interrupt the Paste command of RadRichTextBox to perform some changes before adding the content inside the clipboard to the control.
+
+
+#### **[C#] Example 4: Working with the content of the clipboard**
+
+{{region radrichtextbox-features-clipboard-support_7}}
+
+    private void RadRichTextBox_CommandExecuting(object sender, CommandExecutingEventArgs e)
+    {
+        if (e.Command is PasteCommand)
+        {
+            e.Cancel = true;
+            // Obtain the document inside the clipboard
+            RadDocument document = ClipboardEx.GetDocument().ToDocument();
+    
+            // Change it according to your needs
+            document.Selection.SelectAll();
+            RadDocumentEditor editor = new RadDocumentEditor(document);
+            editor.ChangeFontSize(Unit.PointToDip(12));
+    
+            // Insert it in RadRichTextBox
+            this.radRichTextBox.InsertFragment(new DocumentFragment(document));
+        }
+    }
+{{endregion}}
+    
+    
+#### **[VB.NET] Example 4: Working with the content of the clipboard**
+
+{{region radrichtextbox-features-clipboard-support_8}}
+
+    Private Sub RadRichTextBox_CommandExecuting(ByVal sender As Object, ByVal e As CommandExecutingEventArgs)
+        If TypeOf e.Command Is PasteCommand Then
+            e.Cancel = True
+            Dim document As RadDocument = ClipboardEx.GetDocument().ToDocument()
+            document.Selection.SelectAll()
+            Dim editor As RadDocumentEditor = New RadDocumentEditor(document)
+            editor.ChangeFontSize(Unit.PointToDip(12))
+            Me.radRichTextBox.InsertFragment(New DocumentFragment(document))
+        End If
+    End Sub
+{{endregion}}
+    
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}
+
+In order to work around the limitation of the plain text only clipboard in Silverlight, we have exposed API for setting and getting the clipboard content of __RadRichTextBox__.
           
 
 In that regard, we have introduced an interface – __IExternalClipboard__, which contains the following members:
           
 
-#### __C#__
+#### __[C#] Example 3: IExternalClipboard__
 
-{{region radrichtextbox-features-clipboard-support_2}}
+{{region radrichtextbox-features-clipboard-support_5}}
+
     public interface IExternalClipboard
     {
         bool ContainsFragment();
@@ -162,9 +229,10 @@ In that regard, we have introduced an interface – __IExternalClipboard__, whic
 Basically, you should implement the interface and set the static property of __ClipboardEx__ named __ExternalClipboard__:
           
 
-#### __C#__
+#### __[C#] Example 4: Setting external clipboard__
 
-{{region radrichtextbox-features-clipboard-support_3}}
+{{region radrichtextbox-features-clipboard-support_6}}
+
 	ClipboardEx.ExternalClipboard = new RichTextExternalClipboard();
 {{endregion}}
 
@@ -175,17 +243,19 @@ This will ensure that your methods will be used when the following operations ar
 * __Cut__ and __Copy__ – in these cases the __SetFragment(DocumentFragment fragment)__ method will be called. The fragment parameter includes the fragment that is currently copied, so that you can set it to the clipboard.
               
 
-* __Paste__ – here the methods used are __ContainsDocument()__ and __GetFragment()__. Basically, when the content of the clipboard is being set externally, a __DocumentFragment__ must be created out of it. When paste is initiated, this __DocumentFragment__ will be requested using the __GetFragment()__ method if the __ContainsFragment()__ method returns true.{% endif %}
+* __Paste__ – here the methods used are __ContainsDocument()__ and __GetFragment()__. Basically, when the content of the clipboard is being set externally, a __DocumentFragment__ must be created out of it. When paste is initiated, this __DocumentFragment__ will be requested using the __GetFragment()__ method if the __ContainsFragment()__ method returns true.
 
-## Key Bindings
+{% endif %}
 
->tipIn order to copy, paste or cut, the standard keyboard shortcuts can also be used - __Ctrl + C__, __Ctrl + V__, __Ctrl + X__.
-          
-
-To learn more about the default key-bindings of the editor and ways to override them, you can refer to this article: [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}).
 
 ## See Also
+ 
+ * [ClipboardEx API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.base.clipboardex)
+ 
+ * [ClipboardHandler Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.base.clipboardhandler)
 
+ * [Commands]({%slug radrichtextbox-features-commands%})
+ 
  * [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%})
 
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})

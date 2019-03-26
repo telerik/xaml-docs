@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Value cannot be null. Parameter name: Pages" exception opening a particular pdf
 description: Resolve ArgumentNullException when trying to show PDF document. Error message "Value cannot be null. Parameter name: "Pages"
 type: troubleshooting

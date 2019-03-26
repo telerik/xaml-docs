@@ -67,7 +67,7 @@ When building UI for the RichTextBox, the respective commands can be used:
 >tipIn order to copy, paste or cut, the standard keyboard shortcuts can also be used - __Ctrl + C__, __Ctrl + V__, __Ctrl + X__.
           
 
-To learn more about the default key-bindings of the editor and ways to override them, you can refer to this article: [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}).
+To learn more about the default key-bindings of the editor and ways to override them, you can refer to the [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}) article.
 
 ## Settings{% if site.site_name == 'WPF' %}
 

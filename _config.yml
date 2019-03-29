@@ -584,6 +584,8 @@ navigation:
         position: 13
     controls/raddiagram/performance:
         title: Performance
+    controls/raddiagram/extensions/settingspane:
+        title: SettingsPane
 ## X2 Controls End
 
 ## Centaur Controls Start

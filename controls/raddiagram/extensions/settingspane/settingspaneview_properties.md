@@ -1,6 +1,6 @@
 ---
-title: Extensions
-page_title: Extensions
+title: SettingsPaneView Extensions
+page_title: SettingsPaneView Extensions
 description: This article will get you familiar with the SettingsPaneView attached properties.
 slug: raddiagram-extensions-extensions-settingspaneview-attachedproperties
 tags: diagram,ribbon,extensions, settingspaneview, editoritemtype, editorpropertyname, editorvalue, containeredititemtype, currentedittype
@@ -10,21 +10,21 @@ position: 1
 
 # SettingsPaneView Attached Properties
 
-The __SettingsPaneView__ represents the default content of the RadDiagram SettingsPane. The bindings in the diagram's SettingsPane are created with a custom code used through attached properties. This is necessary because the pane is opened in a Popup which is in a different visual tree and the normal XAML bindings between the application's tree and the Popup's tree might not work as expected. The SettingsPaneView expose the following attached properties.
+The __SettingsPaneView__ represents the default content of the RadDiagram SettingsPane. The bindings in the diagram's SettingsPane are created with custom code used through attached properties. This is necessary because the pane is opened in a Popup which is in a different visual tree and the normal XAML bindings between the application's tree and the Popup's tree might not work as expected. The SettingsPaneView exposes the following attached properties.
 
 * __SettingsPaneView.EditorItemType__ : An enumeration property that determines on which item types this binding should be applied. It contains the following flags: __None, Shapes, Connections, Custom, All__
 
-* __SettingsPaneView.EditorPropertyName__: A string property that represents the property of the currently edited shape. For example, if you set the property to the "CustomText" string, the logic in the property changed callback of the attached property will use a reflection to find a property with the same name defined in the shape object.
+* __SettingsPaneView.EditorPropertyName__: A string property that represents the property of the currently edited shape. For example, if you set the property to the "CustomText" string, the logic in the property changed callback of the attached property will use reflection to find a property with the same name defined in the shape object.
 
 * __SettingsPaneView.EditorValue__:  A string property that defines the value of which property of the current control should be taken and applied on the currently edited shape.
 
 * __SettingsPaneView.ContainerEditItemType__: An enumeration property that determines on which item types this binding should be applied. It contains the following flags: __None, Shapes, Connections, Custom, All__
 
-* __SettingsPaneView.ContainerEditProperty__: An enumeration property that determines if the type set in __ContainerEditItemType__ should be disable or hiden. It contains the following flags: __IsEnabled, Visibility__
+* __SettingsPaneView.ContainerEditProperty__: An enumeration property that determines if the type set in __ContainerEditItemType__ should be disabled or hidden. It contains the following flags: __IsEnabled, Visibility__
 
-* __SettingsPaneView.CurrentEditType__: An enumeration property property that gets or set the currently edited type.
+* __SettingsPaneView.CurrentEditType__: An enumeration property property that gets or sets the currently edited type.
 
-In the following sections we will demonstrate how you can use the EditorItemType, EditorPropertyName and EditorValue attached properties. In the example will add custom __RadTabItem__ to the SettingsPaneView and binds it visibility property to a property of a business object. So that this __RadTabItem__ is visible for specific shapes. First, we need to create a Diagram and populate it with some shapes in MVVM scenario.
+In the following sections we will demonstrate how you can use the EditorItemType, EditorPropertyName and EditorValue attached properties. In the examples we will add custom __RadTabItem__ to the SettingsPaneView and bind its visibility property to a property of a business object. So that this __RadTabItem__ is visible for specific shapes. First, we need to create a Diagram and populate it with some shapes in an MVVM scenario.
 
 #### __[C#] Example 1: Creating ViewModels__
 {{region csharp-raddiagram-extensions-extensions-settingspaneview-attachedproperties-0}}

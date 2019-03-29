@@ -28,32 +28,33 @@ In the following sections we will demonstrate how you can use the EditorItemType
 
 #### __[C#] Example 1: Creating ViewModels__
 {{region csharp-raddiagram-extensions-extensions-settingspaneview-attachedproperties-0}}
-	public class Model : NodeViewModelBase
+public class Model : NodeViewModelBase
+{
+    public Model()
     {
-        public Model()
-        {
-            IsVisible = Visibility.Collapsed;
-        }
-        public Visibility IsVisible { get; set; }
+	Visibility = Visibility.Collapsed;
     }
-	public class Link : LinkViewModelBase<NodeViewModelBase> 
-	{ 
-	 
-	} 
-	public class DiagramGraphSource : ObservableGraphSourceBase<NodeViewModelBase, Link> 
-	{ 
-		public DiagramGraphSource() 
-		{ 
-			Model shape1 = new Model() { Content="Shape1",Position=new Point(100,100), Visibility = Visibility.Visible};
-            Model shape2 = new Model() { Content = "Shape2", Position = new Point(300, 100) };
+    public Visibility Visibility { get; set; }
+}
 
-            this.AddNode(shape1);
-            this.AddNode(shape2);
-		} 
-	} 
+public class Link : LinkViewModelBase<NodeViewModelBase>
+{
+}
+
+public class DiagramGraphSource : ObservableGraphSourceBase<NodeViewModelBase, Link>
+{
+    public DiagramGraphSource()
+    {
+	Model shape1 = new Model() { Content = "Shape1", Position = new Point(100, 100), Visibility = Visibility.Visible };
+	Model shape2 = new Model() { Content = "Shape2", Position = new Point(300, 100) };
+
+	this.AddNode(shape1);
+	this.AddNode(shape2);
+    }
+} 
 {{endregion}}
 
-Next, we can go ahead and define a __RadDiagram__ control in our View and __SettingsPane__:
+Next, we can go ahead and define a __RadDiagram__ and a __SettingsPane__ in our View:
 
 #### __[XAML] Example 2: Defining RadDiagram in XAML__
 {{region xaml-raddiagram-extensions-extensions-settingspaneview-attachedproperties-1}}
@@ -90,11 +91,11 @@ And finally, we need to set the RadDiagram GraphSource property:
 	} 
 {{endregion}}
 
-If you run the application now, the RadDiagram should display the two shapes. When you select one of shape, the __SettingsPane__ will appear on the right side. 
+If you run the application now, the RadDiagram should display the two shapes. When you select one of shapes, the __SettingsPane__ will appear on the right side. 
 
 ![Rad Diagram Settings Pane Overview](images/settingspane-image-one.PNG)
 
-Now we can add additional __RadTabItem__ to the __SettingsPaneView__. In order to do that we need to [extract and edit the default template]({%slug styling-apperance-editing-control-templates%}) of the __SettingsPaneView__. __Example 4__ contains the default template of the __SettingsPaneView__ based on the __Office2016__ theme and the custom __RadTabItem__.
+Now we can add an additional __RadTabItem__ to the __SettingsPaneView__. In order to do that we need to [extract and edit the default template]({%slug styling-apperance-editing-control-templates%}) of the __SettingsPaneView__. __Example 4__ contains the default template of the __SettingsPaneView__ based on the __Office2016__ theme and the custom __RadTabItem__.
 
 #### __[C#] Example 4: Modified template of the SettingsPaneView__
 {{region csharp-raddiagram-extensions-extensions-settingspaneview-attachedproperties-3}}
@@ -172,9 +173,9 @@ Now we can add additional __RadTabItem__ to the __SettingsPaneView__. In order t
 	</ResourceDictionary> 
 {{endregion}}
 
-To bind the Visibility property of the RadTabItem to a property of your Model you can use the __EditorItemType, EditorPropertyName, and EditorValue__ attached properties. The DataContext of the attached properties in the currently selected RadDiagramShape. The business object is held in the DataContext property. Using this information the EditorPropertyName attached property will be bound to the custom Visibility property. The __EditorItemType__ will specify to which elements to apply this functionality. In this example, we will set it to regular shapes and custom ones. Now one attached property left: EditorValue. As the DataContext is the RadDiagramShape, we can use RelativeSource Self-binding to bind to the __RadTabItem__ Visibility property. __Example 5__ sum up this.
+To bind the __Visibility__ property of the __RadTabItem__ to a property of your Model you can use the __EditorItemType, EditorPropertyName, and EditorValue__ attached properties. The DataContext of the attached properties in the currently selected RadDiagramShape. The business object is held in the DataContext property. Using this information the EditorPropertyName attached property will be bound to the custom Visibility property. The __EditorItemType__ will specify to which elements to apply this functionality. In this example, we will set it to regular shapes and custom ones. As for the final attached property - EditorValue, since the DataContext is the __RadDiagramShape__, we can use RelativeSource Self-binding to bind to the __RadTabItem__ Visibility property. __Example 5__ demonstrates this approach.
 
-#### __[C#] Example 5: Addd custom RadTabItem and set the SettingsPaneView attached properties__
+#### __[C#] Example 5: Add custom RadTabItem and set the SettingsPaneView attached properties__
 {{region csharp-raddiagram-extensions-extensions-settingspaneview-attachedproperties-3}}
 	<telerik:RadTabItem Header="Custom Tab"
 						extensions:SettingsPaneView.EditorPropertyName="DataContext.IsVisible"

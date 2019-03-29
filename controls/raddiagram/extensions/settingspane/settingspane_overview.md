@@ -1,6 +1,6 @@
 ---
-title: Overview
-page_title: Overview
+title: SettingsPane Overview
+page_title: SettingsPane Overview
 description: This article will get you familiar with the SettingsPane control that is part of Telerik Diagramming Framework.	  
 slug: raddiagram-extensions-settingspane-overview
 tags: settingspane,diagram,extensions
@@ -22,7 +22,7 @@ The __SettingsPane__ control allows the users to examine and modify the settings
 
 The __SettingsPane__ control is a standalone control that can be displayed as the content of any __ContentControl__. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of a single __RadDiagramItem (Shape or Connection)__. 	  
 
-In most __Diagramming__ examples you will find the __SettingsPane__ applied as an __AdditionalContent__ on the diagramming surface. This way the control is displayed next to a focused __RadDiagramItem__ thus allowing users to dynamically change the look and feel of the item.  In order to display the __SettingsPane__ this way in your application as well, you can add it through the __ItemInformationAdorner.AdditionalContent__ attached property as demonstrated in __Example 1__. Where the primitives namespace is defined like this:	
+In most __Diagramming__ examples you will find the __SettingsPane__ applied as an __AdditionalContent__ on the diagramming surface. This way the control is displayed next to a focused __RadDiagramItem__ thus allowing users to dynamically change the look and feel of the item.  In order to display the __SettingsPane__ this way in your application as well, you can add it through the __ItemInformationAdorner.AdditionalContent__ attached property as demonstrated in __Example 1__, where the primitives namespace is defined like this:	
 
 >tip xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 
@@ -46,15 +46,13 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 * __Add and remove tabs__ - in order to add or remove tabs from the default __SettingsPane__, you need to edit the __ControlTemplate__ of the __SettingsPaneView__ as this is the control that represents the content of the __SettingsPane__. Please take a look at the [SettingsPaneView ControlTemplate Structure](#settingspaneview-controltemplate-structure) section for more information.			
 
 * __Edit the content of an existing tab__ - The content of each of the four default __SettingsPane__ tabs – Home, Size, Style, Text, is represented by a different control:			
-	* __SettingsPaneHomeControl__ - representing the content of the __Home__ tab
+	* __SettingsPaneHomeControl__: Representing the content of the __Home__ tab
 	
-	* __SettingsPaneSizeControl__ - representing the content of the __Size__ tab				
+	* __SettingsPaneSizeControl__: Representing the content of the __Size__ tab				
 
-	* __SettingsPaneStyleControl__ - representing the content of the __Style__ tab
+	* __SettingsPaneStyleControl__: Representing the content of the __Style__ tab
 
-	* __SettingsPaneTextControl__ - representing the content of the __Text__ tab Furthermore, the content of each control is described in its __ControlTemplate__. This is why in order to change the existing content of a __SettingsPane__ tab, you need to edit the __ControlTemplate__ of the appropriate control.
-			
-Furthermore, the content of each control is described in its ControlTemplate. This is why in order to change the existing content of a SettingsPane tab, you need to edit the ControlTemplate of the appropriate control. 
+	* __SettingsPaneTextControl__: Representing the content of the __Text__ tab. Furthermore, the content of each control is described in its __ControlTemplate__. In order to change the existing content of a __SettingsPane__ tab, you need to edit the __ControlTemplate__ of the appropriate control.
 
 ## Events
 
@@ -131,10 +129,10 @@ The __SettingsPaneView__ represents the default content of the __RadDiagram Sett
 			* __SettingsPaneTextControl__ - a __SettingsPaneTextControl__ that represents the content of the __Text__ tab in the __SettingsPaneView__</td></tr></table>
 
 >Please note that the content of each tab is represented by a different control. And __Telerik Diagramming Framework__ comes with a predefined style for each of these controls. This means that in order to modify the content of each tab in a __SettingsPane__, you need to actually modify the default __ControlTemplate__ of the appropriate control:		  
->	- __SettingsPaneHomeControl__ - representing the content of the __Home__ tab
->	- __SettingsPaneSizeControl__ - representing the content of the __Size__ tab
->	- __SettingsPaneStyleControl__ - representing the content of the __Style__ tab
->	- __SettingsPaneTextControl__ - representing the content of the __Text__ tab
+>	- __SettingsPaneHomeControl__: Representing the content of the __Home__ tab
+>	- __SettingsPaneSizeControl__: Representing the content of the __Size__ tab
+>	- __SettingsPaneStyleControl__: Representing the content of the __Style__ tab
+>	- __SettingsPaneTextControl__: Representing the content of the __Text__ tab
 
 ## See Also
 

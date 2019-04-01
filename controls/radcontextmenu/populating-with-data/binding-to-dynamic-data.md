@@ -167,8 +167,7 @@ Finally, pass the generated collection to the __DataContext__.
 
 In order to visualize the data in the __RadContextMenu__ control you have to use a __ItemContainerStyle__. Here is a sample __Style__ that will be used to visualize the data in the __RadContextMenu__ control.
 
-#### __XAML__
-
+#### __XAML__  
 {{region xaml-radcontextmenu-populating-with-data-binding-to-dynamic-data_6}}
 	<Style x:Key="MenuItemContainer" TargetType="telerik:RadMenuItem">
 	    <Setter Property="Icon" Value="{Binding IconUrl}"/>
@@ -185,6 +184,8 @@ In order to visualize the data in the __RadContextMenu__ control you have to use
 	    <Setter Property="Command" Value="{Binding Command}"/>
 	</Style>
 {{endregion}}
+
+>tip If you use [NoXaml]({%slug xaml-vs-noxaml%}) assemblies, set the BasedOn property to the Style. `BasedOn="{StaticResource RadMenuItemStyle}"`
 
 >When setting the __ItemTemplate__ or __ItemContainerStyle__ properties of the __RadContextMenu__, they will get inherited in the hierarchy, unless they are not explicitly set.
 

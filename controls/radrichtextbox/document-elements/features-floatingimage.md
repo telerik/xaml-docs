@@ -39,7 +39,7 @@ FloatingImageBlock exposes members enabling you to control the image inside the 
     
 * **FloatingBlockVerticalPosition VerticalPosition**: Determines the vertical position of the block. The position is described using the following properties:
 
-    - **VerticalRelativeFrom RelativeFrom**: Determines the vertical object or edge the position should be relative from using the values of the [HorizontalRelativeFrom](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.floatingblocks.verticalrelativefrom) enumeration.
+    - **VerticalRelativeFrom RelativeFrom**: Determines the vertical object or edge the position should be relative from using the values of the [VerticalRelativeFrom](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.floatingblocks.verticalrelativefrom) enumeration.
     - **PositionValueType ValueType**: Determines whether the position should be moved with a specific offset or aligned to other elements. You can check the possible values in [PositionValueType API Reference](https://docs.telerik.com/devtools/WPF/api/telerik.windows.documents.model.floatingblocks.positionvaluetype).
     - **RadVerticalAlignment Alignment**: The alignment. You can check the possible values in [RadVerticalAlignment API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.layout.radverticalalignment).
     - **double Offset**: The offset.
@@ -71,8 +71,6 @@ FloatingImageBlock exposes members enabling you to control the image inside the 
     </telerik:RadRichTextBox>
 {{endregion}}
 
-
-
 ## Add in Code Behind
 
 You can work with FloatingImageBlock objects in code-behind as well. 
@@ -94,8 +92,6 @@ You can work with FloatingImageBlock objects in code-behind as well.
         return floatingBlock;
     }
 {{endregion}}
-
-
 
 #### __[VB.NET] Example 2: Define FloatingImageBlock in code-behind__
 
@@ -144,8 +140,6 @@ Once you have defined the image, you will need to insert it in the document. Two
 
 In case an existing document should be edited, you can add a floating image to it using the **InsertInline()** method exposed by the **RadRichTextBox** and **RadDocumentEditor** classes.
 
-
-
 #### __[C#] Example 4: Insert FloatingImageBlock using IDocumentEditor__
 {{region radrichtextbox-features-document-elements-floatingimage_4}}
 
@@ -162,20 +156,12 @@ In case an existing document should be edited, you can add a floating image to i
 
 ## See Also
 
- * [ImageInline]({%slug radrichtextbox-features-document-elements-inlineimage%})
-
- * [Editing Images]({%slug radrichtextbox-features-editing-images%})
- 
- * [Annotations]({%slug radrichtextbox-features-document-elements-annotations%})
-
+ * [ImageInline]({%slug radrichtextbox-features-document-elements-inlineimage%}) 
+ * [Editing Images]({%slug radrichtextbox-features-editing-images%})  
+ * [Annotations]({%slug radrichtextbox-features-document-elements-annotations%}) 
  * [FloatingBlock API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.floatingblock)
-
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
-
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
-
  * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
  * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
-
  * [Span]({%slug radrichtextbox-features-document-elements-span%})

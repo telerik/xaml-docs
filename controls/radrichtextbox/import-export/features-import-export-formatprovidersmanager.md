@@ -1,7 +1,7 @@
 ---
 title: Format Providers Manager
 page_title: Format Providers Manager
-description: Format Providers Manager
+description: Describes how to use the DocumentFormatProvidersManager class to register and obtain the format providers used by RadRichTextBox.
 slug: radrichtextbox-features-import-export-formatprovidersmanager
 tags: import/export
 published: True

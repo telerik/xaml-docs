@@ -27,7 +27,7 @@ Here is an example of an __ImageInline__ element used in XAML at design time.
 	    <telerik:RadDocument>
 	        <telerik:Section>
 	            <telerik:Paragraph>
-	                <telerik:ImageInline UriSource="/Silverlight.Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png" Width="236" Height="50" />
+	                <telerik:ImageInline UriSource="/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png" Width="236" Height="50" />
 	             </telerik:Paragraph>
 	        </telerik:Section>
 	    </telerik:RadDocument>
@@ -45,7 +45,7 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 {{region radrichtextbox-features-document-elements-inlineimage_1}}
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
-	Stream stream = Application.GetResourceStream(new Uri(@"/Silverlight.Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
+	Stream stream = Application.GetResourceStream(new Uri(@"/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
 	Size size = new Size(236, 50);
 	ImageInline image = new ImageInline(stream, size, "png");
 	paragraph.Inlines.Add(image);
@@ -58,9 +58,10 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 #### __VB.NET__
 
 {{region radrichtextbox-features-document-elements-inlineimage_2}}
+
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
-	Dim stream As Stream = Application.GetResourceStream(New Uri("/Silverlight.Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
+	Dim stream As Stream = Application.GetResourceStream(New Uri("/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
 	Dim size As New Size(236, 50)
 	Dim image As New ImageInline(stream, size, "png")
 	paragraph.Inlines.Add(image)
@@ -77,10 +78,10 @@ Here is an example of how to allow the user to select an image and add it to the
 #### __XAML__
 
 {{region radrichtextbox-features-document-elements-inlineimage_3}}
-	<StackPanel>
-	    <telerik:RadButton Content="Add Image" x:Name="ImageButton" Click="ImageButton_Click" />
-	    <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500" LayoutMode="Paged" />
-	</StackPanel>
+
+    <telerik:RadButton Content="Add Image" x:Name="ImageButton" Click="ImageButton_Click" />
+    <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500" LayoutMode="Paged" />
+
 {{endregion}}
 
 
@@ -88,19 +89,20 @@ Here is an example of how to allow the user to select an image and add it to the
 #### __C#__
 
 {{region radrichtextbox-features-document-elements-inlineimage_4}}
-	private void ImageButton_Click(object sender, RoutedEventArgs e)
-	{
-	    OpenFileDialog openDialog = new OpenFileDialog();
-	    openDialog.Filter = "Images|*.jpg;*.png";
-	    openDialog.Multiselect = false;
-	    bool? dialogResult = openDialog.ShowDialog();
-	    if (dialogResult == true)
-	    {
-	        Stream stream = openDialog.File.OpenRead();
-	        string extension = openDialog.File.Extension;
-	        this.radRichTextBox.InsertImage(stream, extension);
-	    }
-	}
+
+    private void ImageButton_Click(object sender, RoutedEventArgs e)
+    {
+        OpenFileDialog openDialog = new OpenFileDialog();
+        openDialog.Filter = "Images|*.jpg;*.png";
+        openDialog.Multiselect = false;
+        bool? dialogResult = openDialog.ShowDialog();
+        if (dialogResult == true)
+        {
+            Stream stream = openDialog.OpenFile();
+            string extension = Path.GetExtension(openDialog.FileName);
+            this.radRichTextBox.InsertImage(stream, extension);
+        }
+    }
 {{endregion}}
 
 
@@ -114,8 +116,8 @@ Here is an example of how to allow the user to select an image and add it to the
 	 openDialog.Multiselect = False
 	 Dim dialogResult As System.Nullable(Of Boolean) = openDialog.ShowDialog()
 	 If dialogResult = True Then
-	  Dim stream As Stream = openDialog.File.OpenRead()
-	  Dim extension As String = openDialog.File.Extension
+	  Dim stream As Stream = openDialog.OpenFile()
+	  Dim extension As String = Path.GetExtension(openDialog.FileName)
 	  Me.radRichTextBox.InsertImage(stream, extension)
 	 End If
 	End Sub
@@ -126,6 +128,8 @@ Here is an example of how to allow the user to select an image and add it to the
 ## See Also
 
  * [Editing Images]({%slug radrichtextbox-features-editing-images%})
+ 
+ * [Floating Images]({%slug radrichtextbox-features-document-elements-floatingimage%})
 
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
 

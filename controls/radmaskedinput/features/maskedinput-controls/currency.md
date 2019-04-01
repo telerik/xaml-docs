@@ -53,7 +53,7 @@ You can further customize the __RadMaskedCurrencyInput__ control's behavior by s
 
 ## Properties
 
-* __Value__: A property of type __decimal?__ that gets or set the current value of the control.
+* __Value__: A property of type __decimal?__ that gets or sets the current value of the control.
 * __AutoFillNumberGroupSeparators__: A boolean property that gets or sets whether number group separators are auto filled in the mask.
 * __AutoFillZeros__: A boolean property that gets or sets whether trailing zeros should be auto filled.
 * __AllowSkipPlaceholders__: A boolean property that gets or sets whether input can skip placeholders.

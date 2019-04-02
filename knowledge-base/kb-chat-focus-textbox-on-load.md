@@ -2,7 +2,7 @@
 title: Setting focus to RadChat on load
 description: How to focus RadChat textbox on load
 type: how-to
-page_title: Setting Focus to RadChat on load
+page_title: Providing Focus to RadChat
 slug: kb-chat-focus-textbox-on-load
 position: 0
 tags: chat, textbox, focus, load
@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-How to set focus to __RadChat__ on load.
+How to set focus to RadChat on load.
 
 ## Solution
 

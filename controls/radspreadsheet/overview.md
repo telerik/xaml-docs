@@ -60,7 +60,9 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * **Shapes and Images**: The UI enables you to work with images. [API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
 
+{% if site.site_name == 'WPF' %}
 * RadSpreadsheet enables you to show **Charts** and modify them as well: [Charts]({%slug radspreadsheet-ui-charts%}). 
+{% endif %}
 
 * **Document themes**
 

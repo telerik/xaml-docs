@@ -29,7 +29,7 @@ Telerik UI for WPF controls are not displayed correctly in x64 build platform.
 
 ## Cause\Possible Cause(s)
 
-Limitation in the Visual Studio designer. More information about this can be found in this [MSDN forum thread]({%https://social.msdn.microsoft.com/Forums/en-US/eab4fc3c-a77d-41d6-b3dd-48f636d70035/design-view-is-unavailable-for-x64-and-arm-target-platforms?forum=toolsforwinapps%}).
+Limitation in the Visual Studio designer. More information about this can be found in this [MSDN forum thread](https://social.msdn.microsoft.com/Forums/en-US/eab4fc3c-a77d-41d6-b3dd-48f636d70035/design-view-is-unavailable-for-x64-and-arm-target-platforms?forum=toolsforwinapps).
 
 ## Solution
 Set the build configuration to be Any CPU or x86.

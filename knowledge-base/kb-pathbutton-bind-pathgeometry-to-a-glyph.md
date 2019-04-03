@@ -28,7 +28,7 @@ How to bind the __PathGeometry__ property of a RadPathButton to a glyph.
 Create a custom [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netframework-4.7.2) that returns a geometry based on a glyph string and set it to the __Converter__ property of the __PathGeometry__ binding.
 
 #### __[C#]__
-{{region kb-kb-pathbutton-bind-pathgeometry-to-a-glyph-0}}
+{{region cs-kb-pathbutton-bind-pathgeometry-to-a-glyph-0}}
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -65,7 +65,7 @@ Create a custom [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/sy
 {{endregion}} 
 
 #### __[XAML]__
-{{region kb-kb-pathbutton-bind-pathgeometry-to-a-glyph-1}}
+{{region xaml-kb-pathbutton-bind-pathgeometry-to-a-glyph-1}}
 	<Grid>
         <Grid.Resources>
             <local:StringToGeometryConverter x:Key="StringToGeometryConverter" />

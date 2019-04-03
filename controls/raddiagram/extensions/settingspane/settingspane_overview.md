@@ -1,6 +1,6 @@
 ---
-title: SettingsPane Overview
-page_title: SettingsPane Overview
+title: Overview
+page_title: Overview
 description: This article will get you familiar with the SettingsPane control that is part of Telerik Diagramming Framework.	  
 slug: raddiagram-extensions-settingspane-overview
 tags: settingspane,diagram,extensions

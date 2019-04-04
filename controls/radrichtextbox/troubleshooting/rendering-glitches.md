@@ -16,7 +16,9 @@ RadRichTextBox supports two different rendering mechanisms. This topic explains 
 
 The default rendering mechanism of RadRichTextBox uses the **Direct2D** technology and the [FormattedText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.formattedtext) class. Although it is **faster**, it can sometimes lead to unexpected behavior when rendering the contents of a document.
 
-The legacy option is the **TextBlockWithPropertyCaching** rendering mechanism which uses draws a single [TextBlock](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock) per line. The advantage here is that this mechanism prevents some rendering glitches which might occur while using the **Direct2D** technology. Something to note is that the Direct2D option is faster and you might experience some performance diminishments in the rendering when using the **TextBlockWithPropertyCaching**.
+The legacy option is the **TextBlockWithPropertyCaching** rendering mechanism which uses draws a single [TextBlock](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock) per line. The advantage here is that this mechanism prevents some rendering glitches which might occur while using the **Direct2D** technology. 
+
+Something to note is that the Direct2D option is faster. You might experience some performance diminishments in the rendering when using the **TextBlockWithPropertyCaching**.
 
 ## Exposed Members
 

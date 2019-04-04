@@ -12,11 +12,15 @@ site_name: Silverlight
 # Installing UI for Silverlight from ZIP File
 
 The following topic describes what steps you should perform in order to install Telerik UI for Silverlight manually from a __ZIP__ file. The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used for manual (advanced) installs and upgrading/updating purposes.
+
+
       
 >tipFor more information about which installation package you need to install, read [here]({%slug installation-installing-which-file-do-i-need%}).
         
 >tipFor more information about the system requirements, read [here]({%slug installation-system-requirements%}).
     
+	
+	
 With the Q1 2014 release we no longer provide the full ZIP package. Instead you could download the Hotfix ZIP and if needed download the Themes separately. In the following sections we will go through the download process for Q1 2014 release as well as the previous versions.
 
 ## From Q1 2014 afterwards

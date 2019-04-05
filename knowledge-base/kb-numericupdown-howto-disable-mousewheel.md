@@ -66,7 +66,7 @@ You can then set this behavior via an implicit style to all instances in your ap
 	</Style>
 {{endregion}}
 
- ## See Also
+## See Also
 
 * [Attached Behavior]({%slug common-mvvm-attached-behavior%})
 * [RadNumericUpDown Key Properties]({%slug radnumericupdown-behavior%})

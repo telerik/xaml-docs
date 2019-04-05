@@ -25,11 +25,11 @@ res_type: kb
 
 ## Description
 
-How to bind RadGridView ItemsSource to a collection of strings. 
+Since RadGridView is designed to work with collections of business objects, a lot of the core functionality would not work when the ItemsSource of the control is set to a collection of strings.
 
 ## Solution
 
-Since RadGridView is designed to work with collections of business objects, a lot of the core functionality would not work with a collection of strings. In order to avoid that, we can create a simple wrapper class around the string data. 
+In order to avoid that, we can create a simple wrapper class around the string data. 
 
 #### __[C#]__
 {{region cs-kb-gridview-howto-bind-itemssource-to-a-collection-of-strings-0}}

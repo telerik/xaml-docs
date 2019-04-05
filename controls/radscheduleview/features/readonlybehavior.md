@@ -91,6 +91,8 @@ To implement a custom readonlybehavior, you have to create a class which inherit
 End Class
 {{endregion}}
 
+> Note, that by default the base class implementation of the ReadOnlyBehavior class works with the [ReadOnlySlots]({%slug radscheduleview-features-speacialslots%}) of the RadScheduleView. If you want to change the default behavior, you can introduce custom logic. For an example implementation, check out the [ReadOnlyBehavior](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomReadOnlyBehavior) SDK example.
+
 Then you need to set it to RadScheduleView's **ReadOnlyBehavior** property.
 
 #### __[XAML] Example 2: Setting ReadOnlyBehavior__

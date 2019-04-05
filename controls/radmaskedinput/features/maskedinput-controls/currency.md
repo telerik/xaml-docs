@@ -77,37 +77,37 @@ RadMaskedCurrencyInput's __Value__ property is of type __nullable decimal (decim
 		}
 		
 		public decimal? Amount
-        {
-            get { return this.amount; }
-            set
-            {
-                if(this.amount !=  value)
-                {
-                    this.amount = value;
-                    this.OnPropertyChanged("Amount");
-                }           
-            }
-        }	
+		{
+		    get { return this.amount; }
+		    set
+		    {
+			if(this.amount !=  value)
+			{
+			    this.amount = value;
+			    this.OnPropertyChanged("Amount");
+			}           
+		    }
+		}	
 	}
 {{endregion}}
 
 #### __[C#] Example 3: Binding the Value property__
 {{region radmaskedinput-features-controls-currency_2}}
 	<telerik:RadMaskedCurrencyInput Culture="en-US"
-								   InputBehavior="Replace"
-								   Mask="#9.2"
-								   TextMode="PlainText"
-								   UpdateValueEvent="LostFocus"
-								   Value="{Binding Amount,Mode=TwoWay}" />
+				   InputBehavior="Replace"
+				   Mask="#9.2"
+				   TextMode="PlainText"
+				   UpdateValueEvent="LostFocus"
+				   Value="{Binding Amount,Mode=TwoWay}" />
 {{endregion}}
 
 
-## FormatString property
+## FormatString
 
-You can further restrict the user input by setting the __FormatString__ property.It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric 
+You can further format the user input by setting the __FormatString__ property.It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric 
 Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.				
 
-### In Mask scenario
+### FormatString with Mask
 
 When __Mask__ property is set the __FormatString__ property will be applied to the __Text__ property of MaskedCurrencyInput control. 
 
@@ -134,7 +134,7 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 
 ![](images/radmaskedinput_currencyinput_format_string_withMask.png)
 
-### In No-Mask scenario
+### FormatString with No-Mask
 
 In __No-Mask__ scenario the __FormatString__ property will be applied to the __Value__ property of MaskedNumericInput control. 
 

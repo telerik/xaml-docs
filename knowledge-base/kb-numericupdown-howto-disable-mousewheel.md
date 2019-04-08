@@ -5,6 +5,7 @@ type: how-to
 page_title: Ignore the Effect of the Mouse Wheel in RadNumericUpDown
 slug: kb-numericupdown-howto-disable-mousewheel
 position: 0
+ticketid: 1401368
 tags: numericupdown,disable,mouse,scroll,wheel
 res_type: kb
 ---

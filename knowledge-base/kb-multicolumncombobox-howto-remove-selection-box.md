@@ -1,10 +1,10 @@
 ---
-title: Remove the selection boxes inside RadMultiColumnComboBox
-description: Example showing how to remove the selection boxes of RadMultiColumnComboBox
+title: Remove the Selection Boxes Inside RadMultiColumnComboBox
+description: How to remove the selection boxes of RadMultiColumnComboBox
 type: how-to
 page_title: Create consistent display with RadComboBox.
 slug: kb-multicolumncombobox-howto-remove-selection-box
-position: 
+position: 0
 tags: 
 ticketid: 1382797
 res_type: kb
@@ -23,4 +23,9 @@ res_type: kb
 The selection boxes of the RadMultiColumnComboBox is visible by default.
 
 ## Solution
-To hide the selection boxes, the SelectionBoxesVisibility property can be set to Hidden.
+To hide the selection boxes, the SelectionBoxesVisibility property can be set to Collapsed.
+
+	#### __[C#]__
+	{{region kb-multicolumncombobox-howto-remove-selection-box-1}}
+		<telerik:RadMultiColumnComboBox SelectionBoxesVisibility="Collapsed"/>
+	{{endregion}}

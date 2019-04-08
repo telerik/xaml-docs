@@ -26,7 +26,7 @@ The purpose of the LIB is to allow the users to test the latest bug fixes. So, i
 
 The LIB is __available as a NuGet__ package. Read how to get it in the {% if site.framework_name == 'WPF' %}[Installing Latest Internal Build NuGet Packages]({%slug installation-installing-from-nuget-wpf%}#installing-latest-internal-build-nuget-packages){% else %}[Installing Latest Internal Build NuGet Packages]({%slug installation-installing-from-nuget%}){% endif %} section of the documentation.
 
-Alternatively you can __download the LIB assemblies__ from your telerik.com account.
+Alternatively you can __download the LIB assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
 
 1. Open the Download page of your telerik.com account.
 2. Find the Telerik UI for WPF product and open its download page.
@@ -40,6 +40,14 @@ Alternatively you can __download the LIB assemblies__ from your telerik.com acco
 To get a specific version of the LIB, open the __Internal Bulds tab__ on the download page. And select a version from the list.
 
 ![](images/installation-installing-lib-2.png)
+
+## Version Number Breakdown
+
+The numbers in the name of the dlls are determined by the source code build date. In other words, the version number corresponds to the date when the dlls were built.
+
+The following image shows the name of the LIB dlls generated on 8th of April (4th month), after the R1 2019 release.
+
+![](images/installation-installing-lib-3.png)
             
 ## See Also  
  * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})

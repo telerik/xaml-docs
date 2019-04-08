@@ -1,8 +1,8 @@
 ---
-title: Get the topmost item in RadCarousel
+title: Get the Topmost Item in RadCarousel
 description: How to obtain the top CarouselItem
 type: how-to
-page_title: Find the top item in RadCarousel
+page_title: Find the top element in RadCarousel
 slug: kb-carousel-howto-get-topmost-item
 position: 0
 tags: carousel, top, item

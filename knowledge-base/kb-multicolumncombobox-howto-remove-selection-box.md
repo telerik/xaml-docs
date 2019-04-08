@@ -5,7 +5,7 @@ type: how-to
 page_title: Create consistent display with RadComboBox.
 slug: kb-multicolumncombobox-howto-remove-selection-box
 position: 0
-tags: 
+tags: mccb, multicolumncombobox, selectionbox, radcombobox, selecteditem, selection, consistent, remove, close, button
 ticketid: 1382797
 res_type: kb
 ---
@@ -26,6 +26,6 @@ The selection boxes of the RadMultiColumnComboBox is visible by default.
 To hide the selection boxes, the SelectionBoxesVisibility property can be set to Collapsed.
 
 	#### __[C#]__
-	{{region kb-multicolumncombobox-howto-remove-selection-box-1}}
+	{{region kb-multicolumncombobox-howto-remove-selection-box-0}}
 		<telerik:RadMultiColumnComboBox SelectionBoxesVisibility="Collapsed"/>
 	{{endregion}}

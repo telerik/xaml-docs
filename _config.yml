@@ -2,7 +2,7 @@
 url: "https://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
-exclude: [knowledge-base.html, README.md,Gemfile,Gemfile.lock,_assetsApi,
+exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 common-information/common-routed-events-support.md,
 common-information/common-command-support.md,
 common-information/upgrade-api-analyzer-sl.md,
@@ -3434,6 +3434,7 @@ intro_columns:
 sdk_examples: "sdk_wpf.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
+has_kb_portal: true
 
 ## Do not edit below this line
 skip_tabbed_code: true

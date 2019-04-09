@@ -1,6 +1,6 @@
 ---
 title: Remove MouseOver and Selected Overlay on Child Item
-description: Avoid mouse enter and selection backgrounds for child RadPanelBarItem when it selected or hovered
+description: Avoid mouse enter and selection backgrounds for child RadPanelBarItem when selected or hovered
 type: how-to
 page_title: Clear MouseOver and Selected Backgrounds from Child Item
 slug: kb-panelbar-remove-mouseover-and-selected-overlay-child-item
@@ -28,12 +28,12 @@ How to remove mouse over and selected background colors of a child RadPanelBarIt
 
 ## Solution
 
-Extract and modify the content of the Template property of RadPanelBarItem.
+Extract and modify the content of the RadPanelBarItem Template property.
 
 __To remove the mouse over overlay:__
 
 1. Extract the Style of the RadPanelBarItem. 
-2. Find the Setter that sets the Template property.
+2. Find the Setter that sets the Template property and go to the ControlTemplate in the setter.
 3. Find the VisualState with x:Name="MouseOver" in the template and remove it.
 4. Find the Border element with x:Name="MouseOverVisual" and remove it as well.
 
@@ -61,9 +61,9 @@ The following elements are the ones that should be removed from the template:
 __To remove the selected overlay:__
 
 1. Extract the Style of the RadPanelBarItem. 
-2. Find the Setter that sets the Template property.
-3. Find the VisualState with x:Name="MouseOver" in the template and remove it.
-4. Find the Border element with x:Name="MouseOverVisual" and remove it as well.
+2. Find the Setter that sets the Template property and go to the ControlTemplate in the setter.
+3. Find the VisualState with x:Name="Selected" in the ControlTemplate and remove it.
+4. Find the Border element with x:Name="SelectedVisual" and remove it as well.
 
 The following elements are the ones that should be removed from the template:
 
@@ -96,3 +96,9 @@ You can apply the custom style using an implicit style. This is a Style without 
 {{endregion}}
 
 Or you can apply the style via the __ItemContainerStyle__ property of the RadPanelBar control.
+
+> The ControlTemplate extracts shown in the code snippets of this topic were extracted from the Office_Black [theme]({%slug common-styling-appearance-available-themes%}). 
+
+## See Also
+
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

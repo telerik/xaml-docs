@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-Expanding or collapsing groups while new items are being added can cause the RadTimeline control to display no items at all.
+Expanding or collapsing groups, while new items are being added, can cause the RadTimeline control to display no items at all.
 
 ## Workaround
 

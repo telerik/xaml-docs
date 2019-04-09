@@ -11,6 +11,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product Version</td>
@@ -28,7 +29,7 @@ How to display multiple DoughnutSeries in a single pie chart, without overlappin
 
 ## Solution
 
-Adjust the series positions using their [RadiusFactor and InnerRadiusFactor]({%slug radchartview-series-doughnutseries%}#setting-the-doughnut-radius) properties.
+Adjust the positions of the series using their [RadiusFactor and InnerRadiusFactor]({%slug radchartview-series-doughnutseries%}#setting-the-doughnut-radius) properties.
 
 #### __[XAML]__
 {{region kb-chartview-display-multiple-donut-series-0}}

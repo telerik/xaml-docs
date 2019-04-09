@@ -2,7 +2,7 @@
 title: How to Preserve the Groups Expand State When New Item is Added
 description: Save the expanded state of the groups after new element is inserted in the ItemsSource of the RadTimeline control.
 type: how-to
-page_title: How to save expand/collaps state of grouped elements when a new item is added
+page_title: How to save expand/collapse state of grouped elements when a new item is added
 slug: kb-timeline-preserve-groups-expand-state
 position: 0
 tags: expand,collapse,grouping,timelineitemgroupcontrol
@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-How to preserve group collapse / expanded state when new items are added to the RadTimeline.
+How to preserve groups' collapsed/expanded state when new items are added to the RadTimeline.
 
 ## Solution
 
-Save the names of the TimelineItemGroupControl elements
+Save the names of the TimelineItemGroupControl elements.
 
 #### __[C#]__
 {{region kb-timeline-preserve-groups-expand-state-0}}

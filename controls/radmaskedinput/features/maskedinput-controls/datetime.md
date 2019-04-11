@@ -29,6 +29,8 @@ The __RadMaskedDateTimeInput__ represents the basic control that can be used to 
 >You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
 
+## Declaratively defined MaskedDateTimeInput
+
 Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
 #### __[XAML] Example 1: Define RadMaskedDateTimeInput in XAML__
@@ -46,10 +48,78 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
 ![](images/radmaskedinput_datetimeinput_default.png)
 
-You can further restrict the user input by setting the __FormatString__ property.
+## Data Binding
+
+RadMaskedDateTimeInput's __Value__ property is of type __DateTime__ and you have to bind it to ViewModel's property of type __DateTime__. 
+
+>important Binding to __object__ is not support and may result in unpredictable behavior.
+
+#### __[XAML] Example 2: Define the view model__
+{{region radmaskedinput-features-controls-datetime_1}}
+	public class ViewModel : ViewModelBase
+	{
+		private DateTime startDate;
+
+		public ViewModel()
+		{
+			this.StartDate = DateTime.Now;
+		}
+
+		public DateTime StartDate
+		{
+			get { return this.startDate; }
+			set
+			{
+				if (this.startDate != value)
+				{
+					this.startDate = value;
+					this.OnPropertyChanged("StartDate");
+				}
+			}
+		}
+	}
+{{endregion}}
+
+#### __[C#] Example 3: Binding the Value property__
+{{region radmaskedinput-features-controls-datetime_2}}
+	<telerik:RadMaskedDateTimeInput Width="200" x:Name="dateTime"
+	                        Margin="20 20 20 10"
+	                        Culture="en-US"
+	                        EmptyContent="Enter digits"
+	                        InputBehavior="Replace"
+	                        Mask="dd-MM-yyyy"
+	                        SelectionOnFocus="SelectAll"
+	                        TextMode="PlainText"                                    
+	                        UpdateValueEvent="LostFocus"
+                            Value="{Binding StartDate}"/>
+{{endregion}}
+
+## Change AM/PM
+
+With the built-in functionality of the control it is not necessary to type __AM__ or __PM__ in order to change the time period. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse. In order to display the time period simply add "t" or "tt" in the Mask property.
+
+#### __[C#] Example 3: Binding the Value property__
+{{region radmaskedinput-features-controls-datetime_2}}
+	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center" 
+	                                Culture="en-US"
+	                                FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}, {0:tt}"
+	                                InputBehavior="Replace"
+	                                Mask="dd-MM-yyyy tt"
+	                                SelectionOnFocus="SelectAll"
+	                                TextMode="PlainText"
+	                                UpdateValueEvent="LostFocus" />
+{{endregion}}
+
+#### Figure 2: Showing the time period
+![](images/radmaskedinput_datetimeinput_ampm.png)
+ 
+
+## FormatString
+
+You can further format the entered value by setting the __FormatString__ property.
 
 #### __[XAML] Example 2: Setting the FormatString property__
-{{region xaml-radmaskedinput-features-controls-datetime_1}}
+{{region xaml-radmaskedinput-features-controls-datetime_3}}
 	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center"
 	                                Culture="en-US"
 	                                FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}"
@@ -60,11 +130,11 @@ You can further restrict the user input by setting the __FormatString__ property
 	                                UpdateValueEvent="LostFocus" />
 {{endregion}}
 
-![](images/radmaskedinput_datetimeinput_format_string.png)
+#### Figure 2: Showing the text value when the control is focused
+![](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
-## Changing AM/PM
-
-With the built-in functionality of the control it is not necessary to type __AM__ or __PM__ in order to change the time period. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse. In order to display the time period simply add "t" or "tt" in the Mask property.
+#### Figure 3: Showing the text value when the control is unfocused
+![](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

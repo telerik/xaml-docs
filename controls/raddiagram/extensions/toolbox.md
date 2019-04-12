@@ -581,4 +581,4 @@ Due to this built-in __DragDropManager__ drag implementation, you can easily dra
  * [Thumbnail]({%slug raddiagram-extensions-thumbnail%})
  * [DiagramNavigationPane]({%slug raddiagram-extensions-navigationpane%})
  * [Ruler]({%slug raddiagram-extensions-ruler%})
- * [SettingsPane]({%slug raddiagram-extensions-settingspane%})
+ * [SettingsPane]({%slug raddiagram-extensions-settingspane-overview%})

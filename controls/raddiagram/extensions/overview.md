@@ -15,7 +15,7 @@ The __Telerik Diagramming Framework__ comes with a set of controls and features 
 * [RadDiagramThumbnail]({%slug raddiagram-extensions-thumbnail%})
 * [RadDiagramRuler]({%slug raddiagram-extensions-ruler%})
 * [RadDiagramToolbox]({%slug raddiagram-extensions-toolbox%})
-* [SettingsPane and SettingsPaneView]({%slug raddiagram-extensions-settingspane%})
+* [SettingsPane and SettingsPaneView]({%slug raddiagram-extensions-settingspane-overview%})
 * RadDiagramGeometryButtons
 * FileManager class
 {% if site.site_name == 'WPF' %}* [RadDiagramPrintPreview]({%slug raddiagram-features-printing%}#raddiagramprintpreview){% endif %}

@@ -44,8 +44,7 @@ Return null in CreateShell() method, and override OnInitialized() method to show
 		    TelerikShell shellWindow = Container.Resolve<TelerikShell>();
 		    shellWindow.Show();
 		    MainWindow = shellWindow.ParentOfType<Window>();
-
-		    // there lines was not executed because of null Shell - so must duplicate here. Originally called from 		PrismApplicationBase.Initialize
+	
 		    RegionManager.SetRegionManager(MainWindow, Container.Resolve<IRegionManager>());
 		    RegionManager.UpdateRegions();
 		    InitializeModules();

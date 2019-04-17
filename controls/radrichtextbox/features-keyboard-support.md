@@ -11,11 +11,13 @@ position: 10
 # Keyboard Support
 
 {% if site.site_name == 'Silverlight' %}
+Telerik __RichTextBox__ for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands.
 
-Telerik __RichTextBox__ for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands, namely:
-{% endif %}{% if site.site_name == 'WPF' %}
+>importantNote that the browser could handle some of the shortcuts and some of them cannot be even enabled. RadRichTextBox is not capable of modifying this behavior as it is up to the browser.
+{% endif %}
 
-Telerik __RichTextBox__ for WPF supports the commanding mechanism in WPF. There are default key-bindings defined for the most widely used commands, namely:
+{% if site.site_name == 'WPF' %}
+Telerik __RichTextBox__ for WPF supports the commanding mechanism in WPF. There are default key-bindings defined for the most widely used commands.
 {% endif %}
 
 ## 
@@ -41,6 +43,10 @@ Delete</td><td>
 
 Delete</td></tr><tr><td>
 
+Delete previous symbol</td><td>
+
+Back, Ctrl+Back, Shift+Back</td></tr><tr><td>
+
 Undo</td><td>
 
 Ctrl+Z</td></tr><tr><td>
@@ -56,6 +62,10 @@ Shift+Enter</td></tr><tr><td>
 InsertPageBreak</td><td>
 
 Ctrl+Enter</td></tr><tr><td>
+
+InsertColumnBreak</td><td>
+
+Ctrl+Enter, Shift+Enter</td></tr><tr><td>
 
 ToggleBold</td><td>
 
@@ -77,6 +87,10 @@ ToggleUnderline</td><td>
 
 Ctrl+U</td></tr><tr><td>
 
+ToggleFormattingSymbols</td><td>
+
+Ctrl+D8, Shift+D8</td></tr><tr><td>
+
 ClearFormatting</td><td>
 
 Ctrl+Space</td></tr><tr><td>
@@ -89,9 +103,17 @@ PasteFormatting</td><td>
 
 Ctrl+Shift+V</td></tr><tr><td>
 
-CancelFormatPainter</td><td>
+CancelFormatPainter or ExitHeaderFooterEditMode, depending on the current editing context</td><td>
 
-Esc</td></tr><tr><td>
+Esc</td></tr>{% if site.site_name == 'WPF' %}<tr><td>
+
+IncrementFontSize</td><td>
+
+Ctrl+Shift+OemPeriod</td></tr><tr><td>
+
+DecrementFontSize</td><td>
+
+Ctrl+Shift+OemComma</td></tr>{% endif %}<tr><td>
 
 ChangeTextAlignment with parameter RadTextAlignment.Justify</td><td>
 
@@ -108,6 +130,18 @@ Ctrl+L</td></tr><tr><td>
 ChangeTextAlignment with parameter RadTextAlignment.Center</td><td>
 
 Ctrl+E</td></tr><tr><td>
+
+TabForward</td><td>
+
+Tab</td></tr><tr><td>
+
+TabBackward</td><td>
+
+Shift+Tab</td></tr><tr><td>
+
+InsertText with parameter "\t"</td><td>
+
+Ctrl+Tab</td></tr><tr><td>
 
 SelectAll</td><td>
 
@@ -149,7 +183,7 @@ MoveCaret with parameter MoveCaretDirections.Home</td><td>
 
 Home</td></tr><tr><td>
 
-MoveCaret with parameter MoveCaretDirections.DocumentStart</td><td>
+MoveCaret with parameter MoveCaretDirections.DocumentStart. This moves the caret at the first position of the document.</td><td>
 
 Ctrl+Home</td></tr><tr><td>
 
@@ -185,9 +219,10 @@ Now these key bindings can be overridden and customized to the liking of the use
         
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Customize InputBindings__
 
 {{region radrichtextbox-features-keyboard-support_0}}
+
 	<telerik:RadRichTextBox Grid.Row="1" Name="editor">
 		<telerik:CommandManager.InputBindings>
 			<telerik:InputBindingCollection>
@@ -204,9 +239,10 @@ Now these key bindings can be overridden and customized to the liking of the use
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 1: Customize InputBindings__
 
 {{region radrichtextbox-features-keyboard-support_1}}
+
     <telerik:RadRichTextBox Name="radRichTextBox">
       <telerik:RadRichTextBox.InputBindings>
         <!-- Bind Spell Checking to Ctrl+Shift+S -->
@@ -219,20 +255,29 @@ Now these key bindings can be overridden and customized to the liking of the use
     </telerik:RadRichTextBox>
 {{endregion}}
 
-{% endif %}
-
 Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
 
-#### __XAML__
+#### __[XAML] Example 2: Namespace definition__
 {{region xaml-richtextbox-commands}}
+
 	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
 {{endregion}}
 
+#### __[C#] Example 3: Disable the shortcut for creating a new document__
+{{region radrichtextbox-features-keyboard-support_2}}
+    
+    this.radRichTextBox.RegisteredApplicationCommands.Remove(System.Windows.Input.ApplicationCommands.New);
+{{endregion}}
+{% endif %}
+
+>You can check the [Simulate Watermark SDK](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/SimulateWatermark) example which demonstrates how you can modify the **InputBindings** collection of RadRichTextBox in code-behind.
+
 Sometimes overriding the key bindings does not provide sufficient support, as depending on the language and the keyboard, different ModifierKeys are registered. For example, pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the __PreviewEditorKeyDown__ event in the following way:
 
-#### __C#__
+#### __[C#] Example 4: Customizing the behavior of a keyboard combination__
 
 {{region radrichtextbox-features-keyboard-support_0}}
+
 	  this.radRichTextBox.PreviewEditorKeyDown += (sender, args) =>
          {
              if (Keyboard.Modifiers.HasFlag(ModifierKeys.Alt) && Keyboard.Modifiers.HasFlag(ModifierKeys.Control) && args.Key == Key.E)
@@ -249,5 +294,5 @@ Sometimes overriding the key bindings does not provide sufficient support, as de
 ## See Also
 
  * [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%})
-
  * [Formatting API]({%slug radrichtextbox-features-formatting-api%})
+ * [Simulate Watermark SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/SimulateWatermark) 

@@ -41,6 +41,7 @@ Return null in CreateShell() method, and override OnInitialized() method to show
 		}
 		protected override void OnInitialized()
 		{
+		    // TelerikShell derives from RadWindow
 		    TelerikShell shellWindow = Container.Resolve<TelerikShell>();
 		    shellWindow.Show();
 		    MainWindow = shellWindow.ParentOfType<Window>();

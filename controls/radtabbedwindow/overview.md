@@ -24,7 +24,11 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 * __Data Binding__: You can bind the control's ItemsSource to any collection of objects and display the required information using the various templates it exposes.
 
-* __Rich API__: The control's [functionality](%slug radtabbedwindow-key-properties%) and [appearance](%slug radtabbedwindow-styles-and-templates%) can be easily customized through its rich API.
+* __Templates and Template Selectors__: The control allows for advanced modifications of the look and feel of its items.
+	 
+* __Styling and Appearance__: RadTabbedWindow comes with a variety of themes and properties that allow you to enhance the control's appearance.
+
+* __Rich API__: The control's rich API enables you to easily customize its functionality.
 
 >tip Get started with the control with its [Getting Started]({%slug radtabbedwindow-getting-started%}) help article that shows how to use it in a basic scenario.
 

@@ -505,6 +505,8 @@ navigation:
         position: 9
     controls/radsparkline:
         title: RadSparkLine
+    controls/radtabbedwindow:
+        title: RadTabbedWindow
     controls/radtabcontrol:
         title: RadTabControl
     controls/radtabcontrol/features/tab-item:

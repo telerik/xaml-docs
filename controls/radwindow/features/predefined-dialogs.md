@@ -1,7 +1,7 @@
 ---
 title: Predefined Dialogs
 page_title: Predefined Dialogs
-description: Predefined Dialogs
+description: This article describes the predefined modal dialogs, which can be used in order to alert, prompt or request confirmation from the user. 
 slug: radwindow-features-predefined-dialogs
 tags: predefined,dialogs
 published: True
@@ -58,6 +58,12 @@ Here is a list of the __DialogParameters__ class members:
 
 * __WindowStyle__
 
+{% if site.site_name == 'WPF' %}
+
+* __DefaultFocusedButton__
+
+{% endif %}
+
 For more info about the class read {% if site.site_name == 'Silverlight' %}[here](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.dialogparameters){% endif %}{% if site.site_name == 'WPF' %}[here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.dialogparameters){% endif %}.
 
 ## Alert
@@ -66,7 +72,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 * __DialogParameters dialogParameters__ - an object of type __DialogParameters__.
 
-#### __C#__
+#### __[C#] Example 1: Showing RadAlert with DialogParameters__
 
 {{region cs-radwindow-features-predefined-dialogs_0}}
 	RadWindow.Alert(new DialogParameters()
@@ -75,7 +81,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 	});
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Showing RadAlert with DialogParameters__
 
 {{region vb-radwindow-features-predefined-dialogs_1}}
 	Dim parameters As New DialogParameters()
@@ -85,13 +91,13 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 * __object content__ - an object that represents the content.
 
-#### __C#__
+#### __[C#] Example 2: Showing RadAlert without DialogParameters__
 
 {{region cs-radwindow-features-predefined-dialogs_2}}
 	RadWindow.Alert("Hello");
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Showing RadAlert without DialogParameters__
 
 {{region vb-radwindow-features-predefined-dialogs_3}}
 	RadWindow.Alert("Hello")
@@ -99,7 +105,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object, that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
 
-#### __C#__
+#### __[C#] Example 3: Handling RadAlert's Closed event__
 
 {{region cs-radwindow-features-predefined-dialogs_4}}
 	public void ShowAlert()
@@ -116,7 +122,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3: Handling RadAlert's Closed event__
 
 {{region vb-radwindow-features-predefined-dialogs_5}}
 	Public Sub ShowAlert()
@@ -130,7 +136,7 @@ The alert dialog window allows you to alert the user with a certain message. It 
 	End Sub
 {{endregion}}
 
-![](images/RadWindow_Features_Predefined_Windows_01.png)
+![RadAlert](images/RadWindow_Features_Predefined_Windows_01.png)
 
 >The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will always be **null**.
 
@@ -140,7 +146,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 * __DialogParameters dialogParameters__ - an object of type __DialogParameters__.
 
-#### __C#__
+#### __[C#] Example 4: Showing RadConfirm__
 
 {{region cs-radwindow-features-predefined-dialogs_12}}
 	DialogParameters parameters = new DialogParameters();
@@ -148,7 +154,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 	RadWindow.Confirm(parameters);
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 4: Showing RadConfirm__
 
 {{region vb-radwindow-features-predefined-dialogs_13}}
 	Dim parameters As New DialogParameters()
@@ -158,7 +164,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
 
-#### __C#__
+#### __[C#] Example 5: Handling RadConfirm's Closed event__
 
 {{region cs-radwindow-features-predefined-dialogs_14}}
 	public void ShowConfirm()
@@ -175,7 +181,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5: Handling RadConfirm's Closed event__
 
 {{region vb-radwindow-features-predefined-dialogs_15}}
 	Public Sub ShowConfirm()
@@ -189,7 +195,7 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 	End Sub
 {{endregion}}
 
-![](images/RadWindow_Features_Predefined_Windows_03.png)
+![RadConfirm](images/RadWindow_Features_Predefined_Windows_03.png)
 
 >The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK**, **False** if the user clicked **Cancel** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will always be **null**.
 
@@ -199,7 +205,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 * __DialogParameters dialogParameters__ - an object of type __DialogParameters__.
 
-#### __C#__
+#### __[C#] Example 6: Showing RadPrompt__
 
 {{region cs-radwindow-features-predefined-dialogs_6}}
 	DialogParameters parameters = new DialogParameters();
@@ -207,7 +213,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 	RadWindow.Prompt(parameters);
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 6: Showing RadPrompt__
 
 {{region vb-radwindow-features-predefined-dialogs_7}}
 	Dim parameters As New DialogParameters()
@@ -217,7 +223,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
 
-#### __C#__
+#### __[C#] Example 7: Handling RadPrompt's Closed event__
 
 {{region cs-radwindow-features-predefined-dialogs_8}}
 	public void ShowPrompt()
@@ -231,7 +237,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Handling RadPrompt's Closed event__
 
 {{region vb-radwindow-features-predefined-dialogs_9}}
 	Public Sub ShowPrompt()
@@ -245,7 +251,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed, string defaultPropmptResult__ - an object that represents the content, an event handler that should handle the __Closed__ event of the __RadWindow__ and a default result value.
 
-#### __C#__
+#### __[C#] Example 8: Showing RadPrompt with a default result__
 
 {{region cs-radwindow-features-predefined-dialogs_10}}
 	public void ShowPrompt()
@@ -259,7 +265,7 @@ The prompt dialog window allows the user to input information. It is shown by ca
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 8: Showing RadPrompt with a default result__
 
 {{region vb-radwindow-features-predefined-dialogs_11}}
 	Public Sub ShowPrompt()
@@ -273,11 +279,37 @@ The prompt dialog window allows the user to input information. It is shown by ca
 
 >The **DialogResult** of the WindowClosedEventArgs will be **True** if the user has pressed **OK**, **False** if the user clicked **Cancel** and **null** if the user clicked the **close button** of the window. The **PromptResult** property will hold the value entered by the user if they clicked **OK** and **null** otherwise.
 
-![](images/RadWindow_Features_Predefined_Windows_02.png)
+![RadPrompt](images/RadWindow_Features_Predefined_Windows_02.png)
 
-## Styling the predefined windows
+## Styling the Predefined Windows
 
 If you want to change the appearance of the predefined window, you have to show it by calling the overload that takes a __DialogParameters__ object as an argument. Create an appropriate style and set it to its __WindowStyle__ property. To learn more read [here]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%}).
+
+{% if site.site_name == 'WPF' %}
+
+## Setting the Default Focused Button
+
+Since the __2019.1.415__ internal build version and the __R2 2019__ official release, the DialogParameters expose a __DefaultFocusedButton__ property. It allows you to set the button that will be focused by default when the modal window is shown. This property is of type [ResponseButton](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.responsebutton).
+
+#### __[C#] Example 9: Setting the default focused button of a RadConfirm to Cancel__
+
+{{region cs-radwindow-features-predefined-dialogs_12}}
+    DialogParameters parameters = new DialogParameters();
+	parameters.Content = "Are you sure?";
+	parameters.DefaultFocusedButton = ResponseButton.Cancel;
+	RadWindow.Confirm(parameters);
+{{endregion}}
+
+#### __[VB.NET] Example 9: Setting the default focused button of a RadConfirm to Cancel__
+
+{{region vb-radwindow-features-predefined-dialogs_13}}
+	Dim parameters As New DialogParameters()
+	parameters.Content = "Are you sure?"
+	parameters.DefaultFocusedButton = ResponseButton.Cancel
+	RadWindow.Confirm(parameters)
+{{endregion}}
+
+{% endif %}
 
 ## See Also
 

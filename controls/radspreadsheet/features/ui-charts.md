@@ -19,7 +19,7 @@ The charts enable you to summarize the data in your spreadsheet document and mak
 
 RadSpreadsheet enables you working with charts through its UI. You can add a chart through the Insert Chart dialog  which can be opened from the Insert tab of [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}). The dialog shows all of the available types of charts along with a preview of how the chart would look like when filled with the selected data.
 
->noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case they don't contain any values, the charts will be shown empty. 
+>noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case the selected cells don't contain any values, the charts will be shown empty. 
 
 #### Figure 1: Insert Chart dialog
 ![](images/Features-Charts_15.png)
@@ -81,3 +81,7 @@ Area charts can be used to plot change over time and draw attention to the total
 ## Manipulating Charts in Code
 
 You can work with charts programmatically as well. For more information about the available API, refer to the documentation of the library used as a model of RadSpreadsheet - RadSpreadProcessing: [Charts API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/charts/overview).
+
+## Exporting Charts to PDF
+
+To export a chart element to PDF, you will need to implement an additional renderer which can draw the chart in the PDF document. For more details on how you can implement this renderer, refer to the [Export Chart to PDF](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/charts/pdf-export.html) topic for RadSpreadProcessing and the [Export Chart SDK example](https://github.com/telerik/document-processing-sdk/tree/master/SpreadProcessing/ExportChart).

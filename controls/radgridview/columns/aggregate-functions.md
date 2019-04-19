@@ -142,9 +142,9 @@ If you need to recalculate the aggregate results, you can call the **CalculateAg
 
 You can modify the default template of the displayed aggregates by setting the __Footer__ property of the column as per your specific requirements.
 
-#### __[C#] Example 6: Overriding GridViewDataColumn.Footer__
+#### __[XAML] Example 6: Overriding GridViewDataColumn.Footer__
 
-{{region cs-gridview-columns-aggregate-functions_5}}
+{{region xaml-gridview-columns-aggregate-functions_5}}
 	<telerik:GridViewDataColumn.Footer>
 		<StackPanel Orientation="Vertical"
 					Margin="0,10">

@@ -102,6 +102,11 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 	
 			return timeToSnap.AddTicks(-difference);
 		}
+		
+        	protected override Freezable CreateInstanceCore()
+        	{
+            		return new CustomSnapBehavior();
+        	}
 	}
 {{endregion}}
 

@@ -70,7 +70,7 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 #### __XAML__
 
 {{region radtabcontrol-populating-data-binding_3}}
-	<telerik:RadTabControl x:Name="radTabControl" DataContext="{Binding Persons}" DisplayMemberPath="Name" />
+	<telerik:RadTabControl x:Name="radTabControl" ItemsSource="{Binding Persons}" DisplayMemberPath="Name" />
 	{{endregion}}
 
 
@@ -79,7 +79,7 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 
 {{region radtabcontrol-populating-data-binding_4}}
 	RadTabControl radTabControl= new RadTabControl();
-	radTabControl.DataContext = new Collection<Person>();
+	radTabControl.ItemsSource = new Collection<Person>();
 	radTabControl.DisplayMemberPath = "Name";
 	{{endregion}}
 
@@ -89,7 +89,7 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 
 {{region radtabcontrol-populating-data-binding_5}}
 	Dim radTabControl As New RadTabControl()
-	radTabControl.DataContext = New Collection(Of Person)()
+	radTabControl.ItemsSource = New Collection(Of Person)()
 	radTabControl.DisplayMemberPath = "Name"
 	{{endregion}}
 

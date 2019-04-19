@@ -91,6 +91,6 @@ If you open the installation folder ( __C:\Program Files (x86)\Progress\Telerik 
 
  * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})
+ * [Latest Internal Build]({%slug installation-installing-lib%})
 
  * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})

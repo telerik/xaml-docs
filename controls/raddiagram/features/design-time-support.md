@@ -37,7 +37,7 @@ The design-time wizard lets you configure the following options:
     #### __Figure 2: Enabling the RadDiagram Toolbox__
     ![Enable the RadDiagram Toolbox](images/DiagramDesignWizardToolBox.png)
 
-* Enabling the [SettingsPane]({%slug raddiagram-extensions-settingspane%}) as demonstrated in __Figure 3__.
+* Enabling the [SettingsPane]({%slug raddiagram-extensions-settingspane-overview%}) as demonstrated in __Figure 3__.
 
     #### __Figure 3: Enabling the RadDiagram SettingsPane__
     ![Enable the RadDiagram SettingsPane](images/DiagramDesignWizardSettingsPane.png)

@@ -29,7 +29,7 @@ __RadDocking__'s key features include:
 
 * __Save/Load Layout__:  The control allows you easaly save load its layout. Read more about this in the [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%}) section of the documentation.
 
-* __Split Containers__: The RadSplitContainer allows you to use movable bars to divide the displayed area into resizable parts. Read more about this in the [Split Container]({%slug raddocking-raddocking-features-split-container%}) section of the documentation.
+* __Split Containers__: The RadSplitContainer allows you to use movable bars to divide the displayed area into resizable parts. Read more about this in the [Split Container]({%slug raddocking-features-split-container%}) section of the documentation.
 
 * __Tabbed Documents__: The control allows you to create TabControl layout so thаt the users can easily switch between different views. 
 

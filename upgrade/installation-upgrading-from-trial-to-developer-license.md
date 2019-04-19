@@ -31,7 +31,7 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 
 	* [ZIP file for manual (advanced) installation.]({%slug installation-installing-from-zip%})
 
-	* [DLL files only (a.k.a. HOTFIX).]({%slug installation-installing-hotfix%})
+	* [Latest Internal Build]({%slug installation-installing-lib%})
 
 >If you have installed the trial version of UI for Silverlight and try to install the developer version of the same release, you will receive the following message:
 >![Common Installing Already Installed](images/Common_Installing_AlreadyInstalled.png)

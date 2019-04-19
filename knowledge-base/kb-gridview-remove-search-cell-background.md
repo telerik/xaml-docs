@@ -1,6 +1,6 @@
 ---
 title: Remove Cell Background Highlighting When Searching as you Type
-description: Remove color of cell found when search as you type
+description: Remove the color of cell found when searching as you type
 type: how-to
 page_title: Change Background Color of Found GridViewCell When Search as you Type
 slug: kb-gridview-remove-search-cell-background

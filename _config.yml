@@ -3392,6 +3392,7 @@ intro_columns:
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
       "RibbonView": "radribbonview-overview"
+      "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
       "TreeView": "radtreeview-overview2"

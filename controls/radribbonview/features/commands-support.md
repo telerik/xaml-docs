@@ -36,7 +36,7 @@ You can find the following properties in the RibbonCommands class:
 * __RibbonCommands.CloseBackstage__ - executes when the application button is clicked in order to close the ribbon's backstage
 * __RibbonCommands.MinimizeRibbonCommand__ - executes when the minimize button is clicked in order to minimize the ribbon
 * __RibbonCommands.ToggleQATPositionCommand__ - executes when the position of the ribbon's QuickAccessToolBar is toggled by clicking on its toggle button
-* __RibbonCommands.ToggleRibbonLayoutCommand__ - executes when the __RibbonLayout__ of the control is changed
+* __RibbonCommands.ToggleLayoutModeCommand__ - executes when the __LayoutMode__ of the control is changed
 
 ## See Also
 * [Functional Structure]({%slug radribbonview-functional-structure%})

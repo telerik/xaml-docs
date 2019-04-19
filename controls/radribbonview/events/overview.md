@@ -36,7 +36,7 @@ __RadRibbonView__ provides a couple of useful events that can be used for custom
 	* The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
 	* A __RadRoutedEventArgs__ object.
 
-* __LayoutChanged__ - occurs when ribbon view layout state has changed. The __LayoutChanged__ event handler receives two arguments:
+* __LayoutModeChanged__ - occurs when ribbon view layout mode has changed. The __LayoutModeChanged__ event handler receives two arguments:
 	* The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
 	* A __RadRoutedEventArgs__ object.					
 

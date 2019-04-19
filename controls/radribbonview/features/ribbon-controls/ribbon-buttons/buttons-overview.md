@@ -48,10 +48,6 @@ As it was mentioned above all __RadRibbonButtons__ derive from the base button c
 
 * __LargeImage__ - gets or sets the image that is shown in __Large__ button state.
 
-* __SimplifiedImage__ - gets or sets the image that is shown when __RibbonLayout__ is __Simplified__.	
-
-* __IsSimplified__ - gets or sets a value indicating whether the button is in simplified state.
-
 * __Size__ - gets or sets the button initial size. This will be the maximum size of the button as well.			
 
 * __SplitText__ - enables or disables the text wrapping for the large-sized button. This property is available only for the __RadRibbonSplitButton, RadRibbonDropDownButton, RadRibbonButton__.			

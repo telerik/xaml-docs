@@ -2,7 +2,7 @@
 url: "https://docs.telerik.com/devtools/wpf"
 site_name: WPF
 # Exclude files which should not be in the output
-exclude: [knowledge-base.html, README.md,Gemfile,Gemfile.lock,_assetsApi,
+exclude: [README.md,Gemfile,Gemfile.lock,_assetsApi,
 common-information/common-routed-events-support.md,
 common-information/common-command-support.md,
 common-information/upgrade-api-analyzer-sl.md,
@@ -86,7 +86,9 @@ controls/raddomaindatasource,
 controls/radupload,
 controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
-cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb]
+cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
+getting-started/first-steps-sl,
+getting-started/explore-control-features-sl]
 
 exclude_navigation: [knowledge-base/*, controls/radchart/*]
 
@@ -584,6 +586,8 @@ navigation:
         position: 13
     controls/raddiagram/performance:
         title: Performance
+    controls/raddiagram/extensions/settingspane:
+        title: SettingsPane
 ## X2 Controls End
 
 ## Centaur Controls Start
@@ -997,6 +1001,8 @@ navigation:
         title: Messages
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
+    controls/radwebcam:
+        tile: RadWebCam
 ## X1 Controls End
 
 ## Common Start   
@@ -1080,10 +1086,10 @@ navigation:
         position: 0
     "getting-started/installation":
         title: "Installation"
-        position: 1
+        position: 5
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
-        position: 2
+        position: 6
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
@@ -3432,6 +3438,7 @@ intro_columns:
 sdk_examples: "sdk_wpf.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
+has_kb_portal: true
 
 ## Do not edit below this line
 skip_tabbed_code: true

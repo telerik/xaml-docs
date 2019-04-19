@@ -12,7 +12,7 @@ position: 1
 
 The __Row Details__ template is defined through the __RowDetailsTemplate__ property of the __RadGridView__.
 
->tipTo learn how to manage the displaying of the __Row Details__ read [this topic]({%slug radgridview-row-details-visibility%}).
+>tip To learn how to manage the displaying of the __Row Details__ read [this topic]({%slug radgridview-row-details-visibility%}).
 	
 ## Basic RowDetails Template
 
@@ -84,17 +84,12 @@ Here is an example for a complex row details template (__Example 2__). You can o
 	</Grid>
 {{endregion}}
 
-__Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.
+__Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.  
 ![Telerik {{ site.framework_name }} DataGrid-row-details-template-complex](images/gridview-row-details-template-complex.png)
 
-## See Also
-
- * [RowDetails Overview]({%slug radgridview-row-details-overview%})
-
+## See Also  
+ * [RowDetails Overview]({%slug radgridview-row-details-overview%})  
  * [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%})
-
  * [Row Details Visibility]({%slug radgridview-row-details-visibility%})
-
  * [External Row Details]({%slug radgridview-row-details-external-row-details%})
-
  * [Customizing the Row Details]({%slug radgridview-row-details-customizing-the-row-details%})

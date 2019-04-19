@@ -32,7 +32,7 @@ If you have a window-specific header, use the __Header__ property.
 	radWindow.Header = "My RadWindow"
 {{endregion}}
 
-If you want to share a common icon layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __IconTemplate__ property of the __RadWindow__.
+If you want to share a common icon layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __HeaderTemplate__ property of the __RadWindow__.
 
 #### __XAML__
 

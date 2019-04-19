@@ -5,7 +5,7 @@ description: Getting Started
 slug: common-faq
 tags: general, common, faq, getting, started
 published: True
-position: 0
+position: 4
 ---
 
 # Getting Started with XAML

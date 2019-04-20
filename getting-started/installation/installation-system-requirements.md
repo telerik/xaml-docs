@@ -65,6 +65,6 @@ In order to develop applications with Telerik UI for Silverlight you need to hav
 
  * [Installing Telerik UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
 
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
+ * [Latest Internal Build]({%slug installation-installing-lib%})
 
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})

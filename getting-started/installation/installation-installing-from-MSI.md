@@ -89,6 +89,6 @@ If you open the installation folder ( __C:\Program Files (x86)\Progress\Telerik 
 
  * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
 
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
+ * [Latest Internal Build]({%slug installation-installing-lib%})
 
  * [Trial License Limitations]({%slug installation-installing-license-limitations%})

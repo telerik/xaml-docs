@@ -191,7 +191,7 @@ Once defined, you will be able to use this custom TemplateSelector in XAML. You 
 	</Style>
 {{endregion}}
 
-The __ItemInformationAdorner__ control can also be used to visualize additional content for the diagram items. This can be done by using the __AdditionalContent__ attached property. This property is of type __object__ and gets or sets the content to be visualized. In order for this property to work  you should set it to the __RadDiagram__. What this means for your application is that all the shapes, containers and connections will visualize the same object whenever a __RadDiagramItem__ is selected. A bright example of taking advantage of this property is the button which opens the [SettingsPane]({%slug raddiagram-extensions-settingspane%}) extension control. Figure 2 visualizes the mentioned button.
+The __ItemInformationAdorner__ control can also be used to visualize additional content for the diagram items. This can be done by using the __AdditionalContent__ attached property. This property is of type __object__ and gets or sets the content to be visualized. In order for this property to work  you should set it to the __RadDiagram__. What this means for your application is that all the shapes, containers and connections will visualize the same object whenever a __RadDiagramItem__ is selected. A bright example of taking advantage of this property is the button which opens the [SettingsPane]({%slug raddiagram-extensions-settingspane-overview%}) extension control. Figure 2 visualizes the mentioned button.
 
 ##### __Figure 2:__
 ![Rad Diagram How To Customiza Item Information Adorner 2](images/RadDiagram_HowTo_Customiza_ItemInformationAdorner2.png)

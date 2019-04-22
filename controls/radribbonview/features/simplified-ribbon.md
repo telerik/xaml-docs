@@ -52,7 +52,7 @@ Before switching the layout, you have to define what will be shown in the simpli
     </telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure 1: Changing RadRibbonView layotu in the Office2016 theme__
+#### __Figure 1: Changing RadRibbonView layout in the Office2016 theme__
 ![RadRibbonView MVVM](images/RibbonView_LayoutMode_Change.gif)
 
 > The __SimplifiedResourses__ property of the __RadRibbonTab__ can be used in order to add any resources that should be applied when the LayoutMode is Simplified.

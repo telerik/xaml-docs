@@ -1,7 +1,7 @@
 ---
 title: Providers Overview
 page_title: Providers Overview
-description: Providers Overview
+description: This article describes the supported by the RadMap providers.
 slug: radmap-features-providers
 tags: providers,overview
 published: True
@@ -40,9 +40,9 @@ Here is a list of the most important common properties shared by all map provide
 
 The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingRestMapProvider__ (RESTful imagery service) class. In order to create an instance of the __BingRestMapProvider__ you can use the third overload of its constructor. This way you can easily pass the required parameters - map mode, labels visibility and __Bing Maps Key__. The most important of them is the __Bing Maps Key__. Without supplying a valid key you won't be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read the [Accessing the Control Using a Bing Maps Key](http://msdn.microsoft.com/en-us/library/ee681900.aspx) MSDN article.
 
-Here is an example of a __BingMapProvider__ definition:        
+    
 
-#### __XAML__
+#### __[XAML] Example 1: RadMap with BingMapProvider__
 {{region radmap-features-providers-0}}	
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
@@ -51,27 +51,26 @@ Here is an example of a __BingMapProvider__ definition:
 	</telerik:RadMap>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 2: BingMapProvider set in code__
 {{region radmap-features-providers-1}}	
 	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "key" );
 	this.radMap.Provider = bingMap;
 {{endregion}}
 
-#### __VB__
+#### __[VB] Example 2: BingMapProvider set in code__
 {{region radmap-features-providers-2}}
 	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "key")
 	Me.radMap.Provider = bingMap
 {{endregion}}
 
-Here is a snapshot of the map that appears:
-
+#### __Figure 1: Result from Examples 1 and 2__
 ![Rad Map Features Providers 01](images/RadMap_Features_Providers_01.png)
 
 ## OpenStreet Maps
 
 The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __OpenStreetMapProvider__ class.         
 
-#### __XAML__
+#### __[XAML] Example 3: RadMap with OpenStreetMapProvider__
 {{region radmap-features-providers-3}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
@@ -80,21 +79,43 @@ The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __Open
 	</telerik:RadMap>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 4: OpenStreetMapProvider set in code__
 {{region radmap-features-providers-4}}
 	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider();
 	this.radMap.Provider = openStreetMap;
 {{endregion}}
 	
-#### __VB__
+#### __[VB] Example 4: OpenStreetMapProvider set in code__
 {{region radmap-features-providers-5}}
 	Dim openStreetMap As New OpenStreetMapProvider()
 	Me.radMap.Provider = openStreetMap
 {{endregion}}
 
-Here is a snapshot of the map that appears:
-
+#### __Figure 2: Result from Examples 3 and 4__
 ![Rad Map Features Providers 02](images/RadMap_Features_Providers_02.png)
+
+Since the __R2 2019__ version, you have the option of passing an API key to the OpenStreetMapProvider class. This key is needed for the Transport and Cycle maps, which come from [ThunderForest](https://www.thunderforest.com/). You can check the [following page](https://www.thunderforest.com/docs/apikeys/) in order to learn how to obtain an API key.
+
+#### __[XAML] Example 4: OpenStreetMapProvider with API key in Xaml__
+{{region radmap-features-providers-6}}
+	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
+		<telerik:RadMap.Provider>
+			<telerik:OpenStreetMapProvider APIKey="your-api-key" />
+		</telerik:RadMap.Provider>
+	</telerik:RadMap>
+{{endregion}}
+
+#### __[C#] Example 5: OpenStreetMapProvider set in code__
+{{region radmap-features-providers-4}}
+	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider("your-api-key");
+	this.radMap.Provider = openStreetMap;
+{{endregion}}
+	
+#### __[VB] Example 5: OpenStreetMapProvider set in code__
+{{region radmap-features-providers-5}}
+	Dim openStreetMap As New OpenStreetMapProvider("your-api-key")
+	Me.radMap.Provider = openStreetMap
+{{endregion}}
 
 ## Empty Provider
 
@@ -119,7 +140,7 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 * Terrain
 * Topographic
 
-#### __XAML__
+#### __[XAML] Example 6: Radmap with ArcGisMapProvider__
 {{region radmap-features-providers-6}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
@@ -128,22 +149,21 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 	</telerik:RadMap>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 7: ArcGisMapProvider set in code__
 {{region radmap-features-providers-7}}
 	ArcGisMapProvider provider = new ArcGisMapProvider();
 	provider.Mode = ArcGisMapMode.Physical;
 	this.radMap.Provider = provider;
 {{endregion}}
 
-#### __VB__
+#### __[VB] Example 7: ArcGisMapProvider set in code__
 {{region radmap-features-providers-8}}
 	Dim provider As New ArcGisMapProvider ()
 	provider.Mode = ArcGisMapMode.Physical
 	Me.radMap.Provider = provider
 {{endregion}}
 
-Here is a snapshot of the map that appears:
-
+#### __Figure 3: Result from Examples 6 and 7__
 ![Rad Map Features Providers 04](images/RadMap_Features_Providers_04.png)
 
 ## See Also

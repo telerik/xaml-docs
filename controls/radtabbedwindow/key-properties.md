@@ -95,7 +95,7 @@ Setting the window's **AllowDragReorder** property to **True** or **False** to a
 #### [VB.NET] Example 6: Enable the reorder of tabs via drag and drop
 
 {{region vb-radtabbedwindow-key-properties_7}}
-    tabbedWindow.AllowDragReorder = true
+    tabbedWindow.AllowDragReorder = True
 {{endregion}}
 
 ## ScrollMode
@@ -128,6 +128,50 @@ You can determine whether users will be able to add new tabs through the UI be s
 
 {{region vb-radtabbedwindow-key-properties_11}}
     tabbedWindow.AddButtonVisibility = Visibility.Collapsed
+{{endregion}}
+
+## SelectedItemRemoveBehaviour
+
+The __SelectedItemRemoveBehaviour__ property allows you to choose which __RadTabItem__ should be selected next in case the currently selected __RadTabItem__ is removed. The property can have one of the following values:
+
+* __SelectNone__: No action is performed. Use it to set the __SelectedItem__ to **null**.
+
+* __SelectFirst__: The **first** non-disabled and visible item in the **Items** collection is selected.
+
+* __SelectLast__: The **last** non-disabled and visible item in the **Items** collection is selected.
+
+* __SelectPrevious__: The **previous** non-disabled and visible item in the **Items** collection is selected. If there is no such item, the **next** non-disabled and visible item is selected. If there is no such item, **no action** is performed.
+
+* __SelectNext__: The **next** non-disabled and visible item in the **Items** collection is selected. If there is no such item, the **previous** non-disabled and visible item is selected. If there is no such item, **no action** is performed.
+
+#### [C#] Example 9: Set SelectedItemRemoveBehaviour
+
+{{region cs-radtabbedwindow-key-properties_12}}
+    tabbedWindow.SelectedItemRemoveBehaviour = SelectedItemRemoveBehaviour.SelectLast;
+{{endregion}}
+
+#### [VB.NET] Example 9: Set SelectedItemRemoveBehaviour
+
+{{region vb-radtabbedwindow-key-properties_13}}
+    tabbedWindow.SelectedItemRemoveBehaviour = SelectedItemRemoveBehaviour.SelectLast
+{{endregion}}
+
+## IsContentPreserved
+
+For performance reasons the **ControlTemplate** of the **TabbedWindowTabControl** inside the RadTabbedWindow defines a single **ContentPresenter** which holds only the currently selected **RadTabItem**'s **Content**. Therefore each time the selection is changed, the content of the last active item is unloaded in order to load the content of the newly-selected item. Since the load/unload operations involve add/remove actions in the visual tree, the content does not keep its state.
+
+However, if you need to keep each **RadTabItem**'s content you can set the **IsContentPreserved** property to **True**.
+
+#### [C#] Example 10: Preserve tab item content
+
+{{region cs-radtabbedwindow-key-properties_14}}
+    tabbedWindow.IsContentPreserved = true;
+{{endregion}}
+
+#### [VB.NET] Example 10: Preserve tab item content
+
+{{region vb-radtabbedwindow-key-properties_15}}
+    tabbedWindow.IsContentPreserved = True
 {{endregion}}
 
 ## See Also

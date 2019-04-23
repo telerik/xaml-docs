@@ -53,17 +53,17 @@ Before switching the layout, you have to define what will be shown in the simpli
 {{endregion}}
 
 #### __Figure 1: Changing RadRibbonView layout in the Office2016 theme__
-![RadRibbonView MVVM](images/RibbonView_LayoutMode_Change.gif)
+![Changing RadRibbonView layout in the Office2016 theme](images/RibbonView_LayoutMode_Change.gif)
 
 > The __SimplifiedResourses__ property of the __RadRibbonTab__ can be used in order to add any resources that should be applied when the LayoutMode is Simplified.
 
->tip In an MVVM scenario, the __SimplifiedItemTemplate__ property of the RadRibbonView needs to be set instead. Read more about that in the [Use MVVM in RadRibbonView]({%slug howto-use-mvvm-in-radribbonview%}) article. 
+>tip In an MVVM scenario, the __SimplifiedItemTemplate__ property of the RadRibbonView needs to be set instead of the **ItemTemplate** property. Read more about that in the [Use MVVM in RadRibbonView]({%slug howto-use-mvvm-in-radribbonview%}) article. 
 
 ## LayoutMode
 
 In order to change the default layout mode, there are two options. Switch the layout through the UI or programmatically. 
 
-* __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowRibbonLayoutButton__ property to __True__ in order to show it. You can also set the __RibbonLayoutButtonContent__ in order to change the Content of the switch button.
+* __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowRibbonLayoutButton__ property to __True__ in order to show it. You can also set the __LayoutModeButtonContent__ property in order to change the Content of the switch button.
 
     #### __[XAML] Example 2: Showing the LayoutMode button and changing its Content__
     {{region xaml-radribbonview-simplified-ribbon-1}}
@@ -71,7 +71,7 @@ In order to change the default layout mode, there are two options. Switch the la
     {{endregion}}
 
     #### __Figure 2: LayoutMode button in the Office2016 theme__
-    ![RadRibbonView MVVM](images/RibbonView_LayoutModeButtonContent.png)
+    ![LayoutMode button in the Office2016 theme](images/RibbonView_LayoutModeButtonContent.png)
 
 * __Switch the layout programmatically__: In order to change the layout in code, you can set the __LayoutMode__ property to __Simplified__ or execute the __ToggleLayoutModeCommand__ command.
 
@@ -97,7 +97,7 @@ In order to change the default layout mode, there are two options. Switch the la
 
 The __SimplifiedItems__ property, described in the first section, gives you full control over what is displayed, when the layout mode of the RadRibbonView is simplified. Here are some tips on how to adapt the normal layout accordingly.
 
-* Remove elements (buttons, groups) that are not an integral part of your application. The idea of the simplified ribbon is to save vertical space, however it comes from the cost of the horizontal one. Keep in mind that, if a certain element is missing from the simplified layout, the user can always switch to the default one. 
+* Remove elements (buttons, groups) that are not an integral part of your application. The idea of the simplified ribbon is to save vertical space, however, it comes from the cost of the horizontal one. Keep in mind that, if a certain element is missing from the simplified layout, the user can always switch to the default one. 
 
 * Whenever possible, try to combine multiple elements inside the drop down of a single one. For example, if you have "Cut", "Copy" and "Paste" buttons in the default layout, you can combine them in a single [RadRibbonSplitButton]({%slug radribbonview-split-button%}) in the simplified layout, as demonstrated in __Example 1__.
 

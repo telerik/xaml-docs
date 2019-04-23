@@ -133,7 +133,7 @@ Unfortunately, WritableBitmap is not always very efficient when populated with a
 
 The exception occurs due to a leak of Dispatcher instances and their related infrastructure objects. When any DispatcherObject type is instantiated on a thread, a Dispatcher instance is associated with this thread. Even after the thread finishes successfully, its Dispatcher is not disposed. The described behavior is also reproducible with RadDocument, as it uses core WPF logic for some of its operations. For instance, using a Brush element on a thread automatically instantiates a Dispatcher object.
 
-The exception is reproducible only in scenarios with heavy usage of new threads. If you plan incorporating such solutions, we suggest that you use the workaround shown in **Example 2**, also recommended by Microsoft.
+The exception is reproducible only in scenarios with heavy usage of new threads. If you plan on incorporating such solutions, we suggest that you use the workaround shown in **Example 2**, also recommended by Microsoft.
 
 #### **[C#] Example 2: Shut down Dispatcher of a thread**
 

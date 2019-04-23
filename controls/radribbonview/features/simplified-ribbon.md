@@ -1,7 +1,7 @@
 ---
 title: Simplified Ribbon
 page_title: Simplified Ribbon
-description: The article describes how the layout of the RadRibbonView can be changed to a simplified version.
+description: The article describes how the layout of the RadRibbonView can be changed to a simplified one.
 slug: radribbonview-simplified-ribbon
 tags: simplified, ribbon
 published: True
@@ -14,11 +14,11 @@ Since the __R2 2019__ version, you have the option of changing the default layou
 
 ## SimplifiedItems
 
-Before switching the layout, you have to define what will be shown in the simplified state of the RadRibboonView. This is done through the new __SimplifiedItems__ property of the [RadRibbonTab]({%slug radribbonview-ribbon-tab%}). 
+Before switching the layout, you have to define what will be shown in the simplified state of the RadRibboonView. This is done through the new __SimplifiedItems__ property of the [RadRibbonTab]({%slug radribbonview-ribbon-tab%}). You can also set the __SimplifiedContentHeight__ property in order to control the Height while the layout is simplified.
 
 #### __[XAML] Example 1: Setting the SimplifiedItems property__
 {{region xaml-radribbonview-simplified-ribbon-0}}
-    <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example" Title="RibbonView" ShowLayoutModeButton="True">
+    <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example" Title="RibbonView" ShowLayoutModeButton="True" SimplifiedContentHeight="40">
         <telerik:RadRibbonView.Resources>
             <DataTemplate x:Key="IconTemplate">
                 <Image Stretch="Fill" Width="16" Height="16" Source="{Binding}" />
@@ -95,7 +95,7 @@ In order to change the default layout mode, there are two options. Switch the la
 
 ## Simplifying the Layout
 
-The __SimplifiedItems__ property, described in the first section, gives you full control over what is displayed, when the layout mode of the RadRibbonView is simplified. Here are some tips on how to adapt the normal layout accordingly.
+The __SimplifiedItems__ property, described in the first section, gives you full control over what is displayed, when the layout mode of the RadRibbonView is simplified. Here are some tips on how to adapt the default layout accordingly.
 
 * Remove elements (buttons, groups) that are not an integral part of your application. The idea of the simplified ribbon is to save vertical space, however, it comes from the cost of the horizontal one. Keep in mind that, if a certain element is missing from the simplified layout, the user can always switch to the default one. 
 

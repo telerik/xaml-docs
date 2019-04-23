@@ -63,7 +63,7 @@ Before switching the layout, you have to define what will be shown in the simpli
 
 In order to change the default layout mode, there are two options. Switch the layout through the UI or programmatically. 
 
-* __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowRibbonLayoutButton__ property to __True__ in order to show it. You can also set the __LayoutModeButtonContent__ property in order to change the Content of the switch button.
+* __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowLayoutModeButton__ property to __True__ in order to show it. You can also set the __LayoutModeButtonContent__ property in order to change the Content of the switch button.
 
     #### __[XAML] Example 2: Showing the LayoutMode button and changing its Content__
     {{region xaml-radribbonview-simplified-ribbon-1}}

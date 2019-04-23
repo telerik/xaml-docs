@@ -52,9 +52,9 @@ More often than not, this is sufficient to get everything working. RadRichTextBo
 However, there are some cases when MEF cannot find the assemblies and load the types. One example is if you have enabled Library Caching or you are using Prism. In these cases, you can pass the types that RadRichTextBox uses in a TypeCatalog to RadCompositionInitializer as shown below:
         
 
-#### __C#__
+#### __[C#] Example 1: Defining the catalog of types used by RadRichTextBox__
 
-{{region radrichtextbox-troubleshooting-troubleshooting-common-problems_3}}
+{{region radrichtextbox-troubleshooting-troubleshooting-common-problems_0}}
 	RadCompositionInitializer.Catalog = new TypeCatalog(
 	    // format providers
 	    typeof(XamlFormatProvider),
@@ -128,7 +128,23 @@ RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the o
 RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).{% endif %}
 
 Unfortunately, WritableBitmap is not always very efficient when populated with an extremely large image and on some occasions inserting or manipulating (for example, applying an effect to) such image might cause performance diminishment as well as an OutOfMemoryЕxception. At this point there is no workaround for the issue.
-        
+    
+## "Win32Exception (0x80004005): Not enough storage is available to process this command" is thrown when multiple RadDocument instances are created in background threads
+
+The exception occurs due to a leak of Dispatcher instances and their related infrastructure objects. When any DispatcherObject type is instantiated on a thread, a Dispatcher instance is associated with this thread. Even after the thread finishes successfully, its Dispatcher is not disposed. The described behavior is also reproducible with RadDocument, as it uses core WPF logic for some of its operations. For instance, using a Brush element on a thread automatically instantiates a Dispatcher object.
+
+The exception is reproducible only in scenarios with heavy usage of new threads. If you plan on incorporating such solutions, we suggest that you use the workaround shown in **Example 2**, also recommended by Microsoft.
+
+#### **[C#] Example 2: Shut down Dispatcher of a thread**
+
+{{region radrichtextbox-troubleshooting-common-problems_1}}
+
+    Thread thread = new Thread(() =>
+    {
+        // Thread logic
+        System.Windows.Threading.Dispatcher.CurrentDispatcher.BeginInvokeShutdown(System.Windows.Threading.DispatcherPriority.Normal);
+    });
+{{endregion}}
 
 ## See Also
 

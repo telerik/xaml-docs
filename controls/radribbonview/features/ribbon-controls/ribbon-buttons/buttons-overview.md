@@ -46,7 +46,7 @@ As it was mentioned above all __RadRibbonButtons__ derive from the base button c
 
 * __SmallImage__ - gets or sets the image that is shown in __Medium__ and __Small__ button state.			
 
-* __LargeImage__ - gets or sets the image that is shown in __Large__ button state.			
+* __LargeImage__ - gets or sets the image that is shown in __Large__ button state.
 
 * __Size__ - gets or sets the button initial size. This will be the maximum size of the button as well.			
 

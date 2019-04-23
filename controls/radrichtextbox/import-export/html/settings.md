@@ -83,6 +83,9 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
     htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
 {{endregion}}
 
+
+>important **Microsoft Office** does not support HTML that has multiple CSS class selectors applied on a single element. As we are aiming for compliance with the HTML standard, this syntax should be supported in RadDocument. In order to generate HTML that is compliant with MS Office, please use the **StylesExportMode.Inline** setting of HtmlExportSettings.
+
 >In order to achieve best compatibility of the generated HTML with __Telerik Reporting__, you should apply the following settings:  
 >* __DocumentExportLevel__: Fragment;  
 >* __StylesExportMode__: Inline;

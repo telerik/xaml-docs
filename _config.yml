@@ -750,19 +750,19 @@ navigation:
         position: 7    
     controls/radrichtextbox/import-export/docx:
         title: Docx	
-        position: 2
+        position: 3
     controls/radrichtextbox/import-export/html:
         title: Html	
-        position: 3
+        position: 4
     controls/radrichtextbox/import-export/pdf:
         title: Pdf
-        position: 4		
+        position: 5		
     controls/radrichtextbox/import-export/rtf:
         title: Rtf	
-        position: 5
+        position: 6
     controls/radrichtextbox/import-export/xaml:
         title: Xaml	 
-        position: 6
+        position: 7
     controls/radrichtextbox/import-export/plain-text:
         title: Plain Text	
         position: 7

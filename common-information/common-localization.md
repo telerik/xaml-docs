@@ -334,7 +334,7 @@ All that's left to do is to set our CustomLocalizationManager to the static Mana
 	InitializeComponent()
 {{endregion}}
 
-# LocalizableResourceExtension
+## LocalizableResourceExtension
 
 The LocalizableResourceExtension is a handy markup extension that returns a localization string based on a given key.
 

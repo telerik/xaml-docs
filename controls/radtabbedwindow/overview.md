@@ -32,6 +32,8 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 * __Rich API__: The control's rich API enables you to easily customize its functionality.
 
+* __Touch Support__: The RadTabbedWindow control also provides out-of-the-box touch support.
+
 >tip Get started with the control with its [Getting Started]({%slug radtabbedwindow-getting-started%}) help article that shows how to use it in a basic scenario.
 
 > Don't forget to also check out the online demos of the control at [demos.telerik.com](https://demos.telerik.com/wpf/).

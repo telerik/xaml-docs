@@ -221,7 +221,7 @@ Now these key bindings can be overridden and customized to the liking of the use
 
 #### __[XAML] Example 1: Customize InputBindings__
 
-{{region radrichtextbox-features-keyboard-support_0}}
+{{region xaml-radrichtextbox-features-keyboard-support_0}}
 
 	<telerik:RadRichTextBox Grid.Row="1" Name="editor">
 		<telerik:CommandManager.InputBindings>
@@ -241,7 +241,7 @@ Now these key bindings can be overridden and customized to the liking of the use
 
 #### __[XAML] Example 1: Customize InputBindings__
 
-{{region radrichtextbox-features-keyboard-support_1}}
+{{region xaml-radrichtextbox-features-keyboard-support_1}}
 
     <telerik:RadRichTextBox Name="radRichTextBox">
       <telerik:RadRichTextBox.InputBindings>
@@ -264,18 +264,18 @@ Please note that in the above code snippet the telerikDocs namespace is defined 
 {{endregion}}
 
 #### __[C#] Example 3: Disable the shortcut for creating a new document in code-behind__
-{{region radrichtextbox-features-keyboard-support}}
+{{region cs-radrichtextbox-features-keyboard-support_2}}
     
     this.radRichTextBox.RegisteredApplicationCommands.Remove(System.Windows.Input.ApplicationCommands.New);
 {{endregion}}
 
 Some of the key combinations included by default in RadRichTextBox pass different parameters to the commands so that they can execute according to the current context. An example of such commands are TabForward and TabBackward. 
-- By default , tab symbol can always be inserted with **Ctrl+Tab** shortcut.
+- By default, the tab symbol can always be inserted with **Ctrl+Tab** shortcut.
 
-- By default, Tab shortcut is bound to **TabForward** command - a command with more complex, context-dependent behavior. You can remap the shortcut to the InsertText command with tab symbol as parameter.
+- By default, the Tab shortcut is bound to the **TabForward** command - a command with more complex, context-dependent behavior. You can remap the shortcut to the InsertText command with the tab symbol as a parameter.
 
 #### __[XAML] Example 4: Remap the shortcut to different command__
-{{region radrichtextbox-features-keyboard-support}}
+{{region xaml-radrichtextbox-features-keyboard-support_3}}
 
     <telerik:RadRichTextBox >
         <telerik:RadRichTextBox.InputBindings>
@@ -287,7 +287,7 @@ Some of the key combinations included by default in RadRichTextBox pass differen
  You can fine-tune the behavior of the **TabForward** command, which is bound to the Tab shortcut by default using the exposed parameter values.
  
 #### __[XAML] Example 5: Customize command behavior through its parameters__
-{{region radrichtextbox-features-keyboard-support}}
+{{region xaml-radrichtextbox-features-keyboard-support_4}}
 
     <telerik:RadRichTextBox.InputBindings>
         <KeyBinding Gesture="Tab" Command="telerikDocs:RichTextBoxCommands.TabForward" CommandParameter="InsertTabSymbol, ChangeParagraphListLevel, ChangeParagraphLeftIndent, NavigateInTable, AppendTableRow" />
@@ -302,7 +302,7 @@ Sometimes overriding the key bindings does not provide sufficient support, as de
 
 #### __[C#] Example 6: Customizing the behavior of a keyboard combination__
 
-{{region radrichtextbox-features-keyboard-support_0}}
+{{region cs-radrichtextbox-features-keyboard-support_0}}
 
 	  this.radRichTextBox.PreviewEditorKeyDown += (sender, args) =>
          {

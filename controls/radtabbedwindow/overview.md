@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article lists the main features of the RadTabbedWindow control.
 slug: radtabbedwindow-overview
 tags: overview
 published: True

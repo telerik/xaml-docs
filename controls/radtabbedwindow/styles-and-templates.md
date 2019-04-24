@@ -1,7 +1,7 @@
 ---
 title: Styles and Templates
 page_title: Styles and Templates
-description: Styles and Templates
+description: This article explains how to modify the apperance of the RadTabbedWindow control.
 slug: radtabbedwindow-styles-and-templates
 tags: getting,started
 published: True
@@ -20,14 +20,14 @@ Via the **AddButtonStyle** property, you can control the appearance of the butto
 
 {{region xaml-radtabbedwindow-styles-and-templates_0}}
     <telerik:RadTabbedWindow.AddButtonStyle>
-        <Style TargetType="telerik:RadButton">
+        <Style TargetType="telerik:RadButton" BasedOn="{StaticResource AddItemsButtonStyle}">
             <Setter Property="MinWidth" Value="36" />
             <Setter Property="MinHeight" Value="36" />
         </Style>
     </telerik:RadTabbedWindow.AddButtonStyle>
 {{endregion}}
 
->importantIf you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism for theming the controls with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), you should base your style on the __AddItemsButtonStyle__.
+>importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **AddItemsButtonStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
 ## ItemContainerStyle
 
@@ -37,7 +37,7 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
 
 {{region xaml-radtabbedwindow-styles-and-templates_1}}
     <telerik:RadTabbedWindow.ItemContainerStyle>
-        <Style TargetType="telerik:RadTabItem">
+        <Style TargetType="telerik:RadTabItem" BasedOn="{StaticResource RadTabbedWindowTabItemStyle}">
             <Setter Property="MinHeight" Value="40" />
             <Setter Property="Background" Value="Red" />
             <Setter Property="FontWeight" Value="Bold" />
@@ -45,7 +45,7 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
     </telerik:RadTabbedWindow.ItemContainerStyle>
 {{endregion}}
 
->importantIf you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism for theming the controls with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), you should base your style on the __RadTabbedWindowTabItemStyle__.
+>importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **RadTabbedWindowTabItemStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
 ## ItemContainerStyleSelector
 

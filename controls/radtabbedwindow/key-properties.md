@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Key Properties
+description: This article lists the main properties exposed by the RadTabbedWindow control.
 slug: radtabbedwindow-key-properties
 tags: key, properties
 published: True
@@ -81,6 +81,10 @@ Through the ItemWidth and ItemMinWidth, you can control the default **Width** an
     tabbedWindow.ItemWidth = 120
     tabbedWindow.ItemMinWidth = 80
 {{endregion}}
+
+## PinnedItems
+
+The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs.
 
 ## AllowDragReorder
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: This article will walk you through the creation of a sample application that contains a RadTabbedWindow control.
 slug: radtabbedwindow-getting-started
 tags: getting,started
 published: True

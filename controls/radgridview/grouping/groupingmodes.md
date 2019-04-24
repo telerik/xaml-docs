@@ -16,7 +16,7 @@ __Nested__: This is the default value and it will nest __GridViewGroupRows__ int
 
 __Flat__: This mode represents our new virtualization mechanism with a completely new item container generator. It simply renders rows one below the other and there is no hierarchical nesting of UI elements - all rows are on the same level. The visual element representing the grouped row is __GroupHeaderRow__.
 
->tipFor compatibility reasons, the Nested render mode is also preserved, but it is recomnended to use the new Flat mode as it leads to better performance.
+>tipFor compatibility reasons, the Nested render mode is also preserved, but it is recommended to use the new Flat mode as it leads to better performance.
 
 >Please note that when you use the __Flat Mode__, you should work with __GroupHeaderRow__, not __GridViewGroupRow__.
 

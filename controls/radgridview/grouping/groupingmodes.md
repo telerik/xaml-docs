@@ -10,13 +10,17 @@ position: 1
 
 # Grouping Modes
 
-As of __Q3 2012__ we have introduced a new property of the RadGridView - __GroupRenderMode__. It has two options:
+As of __Q3 2012__ we have introduced a new property of the RadGridView control - __GroupRenderMode__. It has two possible values:
 
-__Nested Mode__: It is the default one and it will nest __GridViewGroupRows__ into one another when you have grouping on many levels. This may lead to a poor performance when the grid is grouped on several levels and has a lot of data. The visual element representing the grouped row is __GridViewGroupRow__.    
+__Nested__: This is the default value and it will nest __GridViewGroupRows__ into one another. With this group render mode every group is represented by its own UI container and groups are nested in a hierarchical manner. The visual element representing the grouped row is __GridViewGroupRow__.
 
-__Flat Mode__: This mode represents our new virtualization mechanism with a completely new item container generator. It simply renders rows one below the other.  This leads to a very good performance when the grid is grouped on several levels and has a lot of data. The visual element representing the grouped row is __GroupHeaderRow__.
-      
->tipFor compatibility reasons, the old render mode is also preserved, but it is recomended to use the new one.       
+__Flat__: This mode represents our new virtualization mechanism with a completely new item container generator. It simply renders rows one below the other and there is no hierarchical nesting of UI elements - all rows are on the same level. The visual element representing the grouped row is __GroupHeaderRow__.
+
+>tipFor compatibility reasons, the Nested render mode is also preserved, but it is recomnended to use the new Flat mode as it leads to better performance.
 
 >Please note that when you use the __Flat Mode__, you should work with __GroupHeaderRow__, not __GridViewGroupRow__.
-        
+
+## See also
+
+* [Basic Grouping]({%slug gridview-grouping-basics%})
+* [Programmatic Grouping]({%slug gridview-programmatic-grouping%})

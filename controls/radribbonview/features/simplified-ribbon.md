@@ -101,6 +101,8 @@ The __SimplifiedItems__ property, described in the first section, gives you full
 
 * Whenever possible, try to combine multiple elements inside the drop down of a single one. For example, if you have "Cut", "Copy" and "Paste" buttons in the default layout, you can combine them in a single [RadRibbonSplitButton]({%slug radribbonview-split-button%}) in the simplified layout, as demonstrated in __Example 1__.
 
+* If you do not want a particular __RadRibbonGroup__ to be collapsed when the LayoutMode is Simplified, you can utilize the [Variants]({%slug radribbonview-resizing%}#variants) property of the RadRibbonGroup. 
+
 ## See Also
 
 * [Getting Started]({%slug radribbonview-gettingstarted%})

@@ -18,8 +18,7 @@ In order to demonstrate how the RadRibbonView can be used in an MVVM scenario, w
 
 #### __[C#] Example 1: Defining the ViewModels__
 {{region cs-howto-use-mvvm-in-radribbonview-0}}
-
-   public class MainViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
         public ObservableCollection<TabViewModel> Tabs
         {

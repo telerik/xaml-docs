@@ -52,9 +52,26 @@ Bar charts are analogical to the column charts, except the orientation of the ba
 The line chart shows the category data distributed on the horizontal axis and all the values are distributed along the vertical axis. With this type of charts you can visualize continuous data over time on an evenly scaled axis. It is pretty helpful when you need to show trends in data at equal intervals, like months, years, or other periods.
 
 
-| Clustered line          | Stacked line   | 100% stacked line   |
+| Line                    | Stacked line   | 100% stacked line   |
 | ----------------------- |:--------------:| -------------------:|
 | ![](images/Features-Charts_7.png) | ![](images/Features-Charts_8.png) | ![](images/Features-Charts_9.png)|
+
+| Line with Markers       | Stacked line with Markers| 100% stacked line with Markers|
+| ----------------------- |:------------------------:| :----------------------------:
+| ![](images/Features-Charts_16.png) | ![](images/Features-Charts_17.png) | ![](images/Features-Charts_18.png)|
+
+### Scatter and Bubble Charts
+
+Scatter and bubble charts provide you with a convenient way to display a lot of related data in a single chart. In scatter charts, the x-axis displays one numeric field and the y-axis displays another. This type of plotting the data makes it easy to see the relationship between the two values for all the items in the chart.
+
+In a bubble chart, a third numeric field determines the size of the data points represented as bubbles.
+
+| Scatter     |Scatter with Smooth Lines | Scatter with Smooth Lines and Markers | 
+| ----------- |:------------------------ |:--------------------------------------| 
+| ![](images/Features-Charts_20.png) | ![](images/Features-Charts_22.png) | ![](images/Features-Charts_21.png) |
+| Scatter with Straight Lines     |Scatter with Straight Lines and Markers | Bubble | 
+| ![](images/Features-Charts_24.png) | ![](images/Features-Charts_23.png) | ![](images/Features-Charts_19.png) |
+
 
 
 

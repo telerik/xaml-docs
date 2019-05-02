@@ -1,6 +1,6 @@
 ---
 title: Remove the collapsed area of the RadDiagramContainerShape 
-description: Get rid of the body area when the RadDiagramContainerShape is collapsed
+description: Get Rid of the Body Area When the RadDiagramContainerShape is Collapsed
 type: how-to
 page_title: Hide the collapse area of the RadDiagramContainerShape
 slug: kb-diagram-remove-diagramcontainer-collapsearea
@@ -22,7 +22,6 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
 
 Remove the collapsed area when the RadDiagramContainerShape is collapsed.
@@ -39,6 +38,3 @@ Set the CollapsedContentTemplate property to empty DataTemplate.
 		</telerik:RadDiagramContainerShape.CollapsedContentTemplate>
 	</telerik:RadDiagramContainerShape>
 {{endregion}}
-
-
-

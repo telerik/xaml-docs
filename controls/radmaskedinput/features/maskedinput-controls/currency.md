@@ -53,7 +53,7 @@ You can further customize the __RadMaskedCurrencyInput__ control's behavior by s
 
 ## Properties
 
-* __Value__: A property of type __decimal?__ that gets or sets the current value of the control.
+* __Value__: A property of type __decimal?__ that gets or set the current value of the control.
 * __AutoFillNumberGroupSeparators__: A boolean property that gets or sets whether number group separators are auto filled in the mask.
 * __AutoFillZeros__: A boolean property that gets or sets whether trailing zeros should be auto filled.
 * __AllowSkipPlaceholders__: A boolean property that gets or sets whether input can skip placeholders.
@@ -73,38 +73,38 @@ RadMaskedCurrencyInput's __Value__ property is of type __nullable decimal (decim
 		
 		public ViewModel()
 		{
-			this.amount = 12345.67;
+			this.Amount = 12345.67;
 		}
 		
 		public decimal? Amount
-		{
-		    get { return this.amount; }
-		    set
-		    {
-			if(this.amount !=  value)
-			{
-			    this.amount = value;
-			    this.OnPropertyChanged("Amount");
-			}           
-		    }
-		}	
+        {
+            get { return this.amount; }
+            set
+            {
+                if(this.amount !=  value)
+                {
+                    this.amount = value;
+                    this.OnPropertyChanged("Amount");
+                }           
+            }
+        }	
 	}
 {{endregion}}
 
 #### __[C#] Example 3: Binding the Value property__
 {{region radmaskedinput-features-controls-currency_2}}
 	<telerik:RadMaskedCurrencyInput Culture="en-US"
-				   InputBehavior="Replace"
-				   Mask="#9.2"
-				   TextMode="PlainText"
-				   UpdateValueEvent="LostFocus"
-				   Value="{Binding Amount,Mode=TwoWay}" />
+								   InputBehavior="Replace"
+								   Mask="#9.2"
+								   TextMode="PlainText"
+								   UpdateValueEvent="LostFocus"
+								   Value="{Binding Amount,Mode=TwoWay}" />
 {{endregion}}
 
 
 ## FormatString
 
-You can further format the user input by setting the __FormatString__ property.It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric 
+You can further format the entered value by setting the __FormatString__ property. It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric 
 Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.				
 
 ### FormatString with Mask

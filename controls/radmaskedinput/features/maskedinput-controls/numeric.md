@@ -45,13 +45,6 @@ Here is a simple definition of a __RadMaskedNumericInput__ control:
 
 ![](images/radmaskedinput_numericinput_default.png)
 
-## Properties
-
-* __Value__: A property of type double? that gets or set the current value of the control.
-* __AutoFillNumberGroupSeparators__: A boolean property that gets or sets whether number group separators are auto filled in the mask.
-* __AutoFillZeros__: A boolean property that gets or sets whether trailing zeros should be auto filled.
-* __AllowSkipPlaceholders__: A boolean property that gets or sets whether input can skip placeholders.
-
 ## Data Binding
 
 RadMaskedNumericInput's __Value__ property is of type __nullable double (double?)__ and you have to bind it to ViewModel's property of type double or nullable double (if you need to set null). 
@@ -66,7 +59,7 @@ RadMaskedNumericInput's __Value__ property is of type __nullable double (double?
 		
 		public ViewModel()
 		{
-			this.amount = 12345;
+			this.Аmount = 12345;
 		}
 		
 		public double? Amount
@@ -96,7 +89,7 @@ RadMaskedNumericInput's __Value__ property is of type __nullable double (double?
 
 ## FormatString property
 
-You can further restrict the user input by setting the __FormatString__ property. It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.
+You can further format the entered value by setting the __FormatString__ property. It uses [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [Custom Numeric Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to further format the __Text__ property.
 
 ### In Mask scenario
 

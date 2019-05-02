@@ -50,9 +50,9 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
 ## Data Binding
 
-RadMaskedDateTimeInput's __Value__ property is of type __DateTime__ and you have to bind it to ViewModel's property of type __DateTime__. 
+RadMaskedDateTimeInput's __Value__ property is of type __DateTime__ and you can bind it to view model's property of type __DateTime__. 
 
->important Binding to __object__ is not support and may result in unpredictable behavior.
+>important Binding to the __object__ type is not supported and may result in unpredictable behavior.
 
 #### __[XAML] Example 2: Define the view model__
 {{region radmaskedinput-features-controls-datetime_1}}

@@ -298,6 +298,14 @@ The __RadRibbonGallery__ class allows you to set the visibility of the launch po
 
 ![](images/RibbonView_Gallery_disable_popup.png)
 
+{% if site.site_name == 'WPF' %}
+
+## Setting RadRibbonGallery's LayoutMode
+
+Since the __R2 2019__ version, the RadRibbonGallery exposes a __LayoutMode__ property, which is of type __RibbonLayout__. When this property is set to __Simplified__, the scroll buttons are collapsed and the RadRibbonGroup has a more streamlined look. This property is useful when the RadRibbonGroup is in the __SimplifiedItems__ of a RadRibbonTab. For more information about it, check out the [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%}) article.
+
+{% endif %}
+
 ## Working with Selection
 
 The __RadGallery__ derives directly from __ListBox__. So working with it is no different than using a standard __ListBox__ control. Here are the related properties regarding the selection:		

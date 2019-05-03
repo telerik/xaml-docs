@@ -24,6 +24,10 @@ The __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-pr
 
 >All the templates are prepared with the __[Office 2013 theme]({%slug common-styling-appearance-office2013-theme%})__ and use __[Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})__.
 
+<!-- -->
+
+>Since the __R2 2019__ version of UI for WPF, .NET Core versions of the Visual Studio Templates are available for __C#__ with __Visual Studio 2019__.
+
 In this article you will find more information on how to create a project from one of the available templates as well as more details regarding what controls each template contains.
 
 ## Getting Started

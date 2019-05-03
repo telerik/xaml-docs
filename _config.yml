@@ -996,7 +996,7 @@ navigation:
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
     controls/radwebcam:
-        tile: RadWebCam
+        title: RadWebCam
 ## X1 Controls End
 
 ## Common Start   

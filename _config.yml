@@ -507,6 +507,8 @@ navigation:
         position: 9
     controls/radsparkline:
         title: RadSparkLine
+    controls/radtabbedwindow:
+        title: RadTabbedWindow
     controls/radtabcontrol:
         title: RadTabControl
     controls/radtabcontrol/features/tab-item:
@@ -999,6 +1001,8 @@ navigation:
         title: Messages
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
+    controls/radwebcam:
+        tile: RadWebCam
 ## X1 Controls End
 
 ## Common Start   
@@ -3388,6 +3392,7 @@ intro_columns:
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
       "RibbonView": "radribbonview-overview"
+      "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
       "TreeView": "radtreeview-overview2"

@@ -50,9 +50,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __RibbonResources.resx__ and __RibbonResources.nl.resx__ files. For the __RibbonResources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
 
-	<SupportedCultures>en;nl</SupportedCultures>
-
-Here is how the localized __RadRibbonView__ looks like:				
+	<SupportedCultures>en;nl</SupportedCultures>				
 
 ## Localization Using Custom Localization Manager
 
@@ -144,3 +142,9 @@ RibbonWindowMinimize | Minimize
 RibbonWindowRestoreDown | Restore Down
 RibbonViewExpandRibbon | Expand the Ribbon
 RibbonViewHelp | Help
+RibbonViewLayoutModeButtonContent | Simplified Ribbon
+
+## See Also
+
+* [Localization]({%slug common-localization%})
+* [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%})

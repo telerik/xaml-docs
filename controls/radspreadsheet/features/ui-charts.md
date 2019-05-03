@@ -19,7 +19,7 @@ The charts enable you to summarize the data in your spreadsheet document and mak
 
 RadSpreadsheet enables you working with charts through its UI. You can add a chart through the Insert Chart dialog  which can be opened from the Insert tab of [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}). The dialog shows all of the available types of charts along with a preview of how the chart would look like when filled with the selected data.
 
->noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case they don't contain any values, the charts will be shown empty. 
+>noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case the selected cells don't contain any values, the charts will be shown empty. 
 
 #### Figure 1: Insert Chart dialog
 ![](images/Features-Charts_15.png)
@@ -52,9 +52,26 @@ Bar charts are analogical to the column charts, except the orientation of the ba
 The line chart shows the category data distributed on the horizontal axis and all the values are distributed along the vertical axis. With this type of charts you can visualize continuous data over time on an evenly scaled axis. It is pretty helpful when you need to show trends in data at equal intervals, like months, years, or other periods.
 
 
-| Clustered line          | Stacked line   | 100% stacked line   |
+| Line                    | Stacked line   | 100% stacked line   |
 | ----------------------- |:--------------:| -------------------:|
 | ![](images/Features-Charts_7.png) | ![](images/Features-Charts_8.png) | ![](images/Features-Charts_9.png)|
+
+| Line with Markers       | Stacked line with Markers| 100% stacked line with Markers|
+| ----------------------- |:------------------------:| :----------------------------:
+| ![](images/Features-Charts_16.png) | ![](images/Features-Charts_17.png) | ![](images/Features-Charts_18.png)|
+
+### Scatter and Bubble Charts
+
+Scatter and bubble charts provide you with a convenient way to display a lot of related data in a single chart. In scatter charts, the x-axis displays one numeric field and the y-axis displays another. This type of plotting the data makes it easy to see the relationship between the two values for all the items in the chart.
+
+In a bubble chart, a third numeric field determines the size of the data points represented as bubbles.
+
+| Scatter     |Scatter with Smooth Lines | Scatter with Smooth Lines and Markers | 
+| ----------- |:------------------------ |:--------------------------------------| 
+| ![](images/Features-Charts_20.png) | ![](images/Features-Charts_22.png) | ![](images/Features-Charts_21.png) |
+| Scatter with Straight Lines     |Scatter with Straight Lines and Markers | Bubble | 
+| ![](images/Features-Charts_24.png) | ![](images/Features-Charts_23.png) | ![](images/Features-Charts_19.png) |
+
 
 
 
@@ -81,3 +98,7 @@ Area charts can be used to plot change over time and draw attention to the total
 ## Manipulating Charts in Code
 
 You can work with charts programmatically as well. For more information about the available API, refer to the documentation of the library used as a model of RadSpreadsheet - RadSpreadProcessing: [Charts API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/charts/overview).
+
+## Exporting Charts to PDF
+
+To export a chart element to PDF, you will need to implement an additional renderer which can draw the chart in the PDF document. For more details on how you can implement this renderer, refer to the [Export Chart to PDF](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/charts/pdf-export.html) topic for RadSpreadProcessing and the [Export Chart SDK example](https://github.com/telerik/document-processing-sdk/tree/master/SpreadProcessing/ExportChart).

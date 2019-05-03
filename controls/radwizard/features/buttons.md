@@ -62,3 +62,7 @@ Here is an example of setting the __AllowHelp__ property to a __WizardPage__ (__
 {{endregion}}
 
 For more information on the default values of these properties for the different pages you can refer to the [Wizard Pages]({%slug wizard-pages%}) article.
+
+## Commands
+
+The button actions are implemented via commands. To customize an action, override the corresponding command. Read more about the commands in the [corresponding help article]({%slug wizard-features-commands%}).

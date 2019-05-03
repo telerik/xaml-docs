@@ -46,7 +46,7 @@ The following example shows how to use the method on a button click:
 	{
 	    string extension = "xlsx";
 	
-	    SaveFileDialog dialog = new SaveFileDialog()
+	    Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog()
 	    {
 	        DefaultExt = extension,
 	        Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),

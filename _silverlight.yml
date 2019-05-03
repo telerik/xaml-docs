@@ -68,7 +68,9 @@ controls/radpivotgrid/populating-with-data/data-queryable.md,
 controls/radpdfviewer/features/digital-signature.md,
 controls/radpdfviewer/default-ui.md,
 controls/radribbonview/features/ribbon-controls/ribbon-window-wpf.md,
+controls/radribbonview/features/simplified-ribbon.md,
 controls/radribbonview/styling-and-appearance/styling-contextualtab.md,
+controls/radrichtextbox/troubleshooting/rendering-glitches.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier-wpf.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel-wpf.md,
 controls/radslider/sdk-examples.md,
@@ -115,8 +117,11 @@ cloud-integration,
 controls/radwindow/how-to/host-webbrowser-in-radwindow.md,
 controls/radnavigationview,
 controls/raddiagram/extensions/diagramribbon,
+controls/radtabbedwindow,
 controls/radwebcam,
-knowledge-base/]
+knowledge-base/,
+getting-started/first-steps.md,
+getting-started/explore-control-features.md]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

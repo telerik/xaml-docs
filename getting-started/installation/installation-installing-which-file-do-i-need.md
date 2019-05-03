@@ -36,13 +36,9 @@ The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used to manual 
 
 For more information about how to install Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from ZIP file, read [here]{% if site.site_name == 'WPF' %}({%slug installation-installing-from-zip-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}({%slug installation-installing-from-zip%}).{% endif %}
 
-## DLL Files Only (HOTFIX)
+## Latest Internal Binaries (LIB)
 
-__DLL Files Only__ are used for updating/upgrading a product to a newer version. This is a bare-bones upgrade option for the Telerik UI controls. The hotfix contains only those files that you need to replace in your project to upgrade to the new version.
-
-For more information about how to use HOTFIX DLL Files, read [here]{% if site.site_name == 'WPF' %}({%slug installation-installing-hotfix-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}({%slug installation-installing-hotfix%}).{% endif %}
-
->tipThe latest __MSI__ and __ZIP__ packages available for download already have all updates/HOTFIXES applied. There is no need to update them further.
+The Latest Internal Build (LIB) is a weekly distribution of the UI for {{ site.framework_name }} assemblies, built against the latest development environment. It contains all the newest bug fixes. And it is released on a weekly basis. Read more about this in the [LIB]({%slug installation-installing-lib%}) article.
 
 ## Demos Application
 
@@ -57,6 +53,4 @@ The Demos Application ZIP package does not include the Telerik assemblies, so in
  * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
  
  * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
-
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
  {% endif %}

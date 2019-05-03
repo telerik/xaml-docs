@@ -502,10 +502,10 @@ This model is bound to a RadTreeView and a RadDiagram in XAML as demonstrated in
 {{endregion}}
 
 #### __Figure 2: Result from Example 10__
-[Two-Way MVVM RadDiagram](images/raddiagram-databindig-mvvm-2way1.png)
+![Two-Way MVVM RadDiagram](images/raddiagram-databindig-mvvm-2way1.png)
 
 #### __Figure 3: Selecting an item and pasting it into the diagram__
-[Selecting an item and pasting it into the diagram](images/raddiagram-databindig-mvvm-2way2.png)
+![Selecting an item and pasting it into the diagram](images/raddiagram-databindig-mvvm-2way2.png)
 
 An item has been created in the MVVM model (the empty treeview item) as a result of the changes in the diagram, as should be with a two-way MVVM source. The item has however an empty content since RadDiagram has thus far no knowledge of the Person data type to insert into the model. 
 

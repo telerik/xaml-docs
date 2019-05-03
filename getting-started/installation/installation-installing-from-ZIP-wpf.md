@@ -1,94 +1,45 @@
 ---
-title: Installing UI for WPF from ZIP File
-page_title: Installing UI for WPF from ZIP File
-description: Installing UI for WPF from ZIP File
+title: Installing Telerik UI from ZIP File
+page_title: Installing Telerik UI from ZIP File
+description: Installing Telerik UI from ZIP File
 slug: installation-installing-from-zip-wpf
-tags: installing,ui,for,wpf,from,zip,file
+tags: installing,ui,for,from,zip,file
 published: True
 position: 4
-site_name: WPF
 ---
 
-# Installing UI for WPF from ZIP File
+# Installing UI for {{ site.framework_name }} from ZIP File
 
-The following topic describes what steps you should perform in order to install Telerik UI for WPF manually from a __ZIP__ file. The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used for manual (advanced) installs and upgrading/updating purposes.
+This article describes how to install Telerik UI for {{ site.framework_name }} manually from a ZIP file. 
 
->tipFor more information about which installation package you need to install, read [here]({%slug installation-installing-which-file-do-i-need%}).
-      
->tipFor more information about the system requirements, read [here]({%slug installation-system-requirements-wpf%}).
+## Downloading ZIP Package
 
-With the Q1 2014 release we no longer provide the full ZIP package. Instead you could download the Hotfix ZIP and if needed download the Themes separately. In the following sections we will go through the download process for Q1 2014 release as well as the previous versions.
+1. __Open the UI for {{ site.framework_name }} download page__ following the instructions in the {% if site.framework_name == 'WPF' %}[Download Product Files]({%slug download-product-files-wpf%}){% else %}[Download Product Files]({%slug download-product-files%}){% endif %} article.
 
-## From Q1 2014 afterwards
+2. __Download the ZIP file__ and extract it in the desired location. This will give you the UI for {{ site.framework_name }} dlls along with some additional files.
 
-### Downloading ZIP Package
+## ZIP Content
 
-* Go to to the UI for WPF download page following the instructions in [Download Product Files]({%slug download-product-files-wpf%}) topic.
+When you download and unzip the archive you will get the following folders.
 
-* Download the ZIP file and extract it in the desired location.
+* __Binaries__: Contains the XAML version of the Telerik dlls.
 
-### Exploring the Extracted Folders
+* __Binaries.NoXaml__: Contains the the NoXaml verison of the Telerik dlls.
 
-Once the archived folders are extracted you will probably note the following folder structure:
+	Read more about this in the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
 
-* __Binaries__ - the standard binaries.              
+* __LicenseAgreements__: Contains the UI for {{ site.framework_name }} EULA, and the license agreements of any third party libraries used by UI for {{ site.framework_name }}.
 
-* __Binaries.NoXaml__ - binaries without XAML.              
+* __Themes.Implicit__: Contains .xaml resource files (ResourceDictionaries) holding all the styles and templates of the Telerik controls.
 
-* __LicenseAgreements__
+## Installing
 
-* __Themes.Implicit__ - implicit styles friendly XAML.
-              
->importantWith the Q1 2014 release we no longer provide the Themes and pdb files within the installation package. You could download them separately from the UI for WPF download page in your [Telerik account](http://www.telerik.com/account.aspx).
-              
->The WPF Demos application can be downloaded from the UI for WPF download page (in the [Telerik account](http://www.telerik.com/account.aspx)) as a separate ZIP file as well.
-              
-## Before Q1 2014
-
-### Downloading ZIP Package
-
-In order to download the ZIP file, follow the instructions below:
-
-* Log into your [Telerik account](http://www.telerik.com/account.aspx).
-              
-
-* Click __Products  & Subscriptions__ and then select UI for WPF from the dropdown (or Trial downloads if you are a trial user).
-
-![Common Installing FromMSIFiles 005 WPF](images/Common_InstallingFromMSIFiles_005_WPF.png)
-
->If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
->![Common Installing FromMSIFiles 005 Ultimate](images/Common_InstallingFromMSIFiles_005_Ultimate.png)
-
-* Click "Download Installer and other resources" button.![Common Installing Download Button](images/Common_Installing_Download_Button.png)
-
->Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite.
->Scroll to "UI for WPF" product. Click "Browse all product files" to go to the details download page.
->![Common Installing FromMSIFiles 009 WPF](images/Common_InstallingFromMSIFiles_009_WPF.png)
-
-* Click the "Manual installation" link.![Common Installing FromZIPFile 030 WPF](images/Common_InstallingFromZIPFile_030_WPF.png)
-
-* Download the ZIP file and extract it in the desired location.
-
-### Exploring the Extracted Folders
-
-Once the archived folders are extracted you will probably note the following folder structure:
-
-* __Binaries__ - the standard binaries.              
-
-* __Binaries.NoXaml__ - binaries without XAML.              
-
-* __LicenseAgreements__
-
-* __Themes__ - the standard styles for all Telerik themes.              
-
-* __Themes.Implicit__ - implicit styles friendly XAML.              
-
->You can install the Demos separately, downloading the 'Demos Automatic Installation" from your account.
+The manual installing using the files from the .ZIP is actually simply referencing the Telerik dlls in a {{ site.framework_name }} Visual Studio project. You can follow the instructions on the topic in [MSDN](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2017) and reference the Telerik assemblies.
 
 ## See Also
-
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix-wpf%})
-
- * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})
-
+{% if site.framework_name == 'WPF' %}* [System Requirements]({%slug installation-system-requirements-wpf%}){% else %}* [System Requirements]({%slug installation-system-requirements%}){% endif %}
+ * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
+ 
+ * [Latest Internal Build]({%slug installation-installing-lib%})
+{% if site.framework_name == 'WPF' %}* [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%}){% else %}* [Trial License Limitations]({%slug installation-installing-license-limitations%}){% endif %}
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})

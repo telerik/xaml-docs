@@ -23,7 +23,7 @@ To do so, first create a new class that inherits the **StyleSelector** class and
     {
         public override Style SelectStyle(object item, DependencyObject container)
         {
-            var group = item as CollectionViewGroup;
+            var group = item as QueryableCollectionViewGroup;
 
             if (group != null)
             {

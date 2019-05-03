@@ -182,7 +182,7 @@ Used to insert a symbol in the document.
 * \u: Specifies that the characters are Unicode. This switch can be controlled through the **IsUnicode** property of SymbolField.
 
 
-### TOC
+### TОC
 
 { TOC *[Switches]* }
 

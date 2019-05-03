@@ -12,13 +12,32 @@ position: 3
 
 To style the calendar in your __RadDateTimePicker__ you can do the following:
 
-* Create a __Style__ for it and set it to the __CalendarStyle__ property of the __RadDateTimePicker__. To learn how to create a style that targets the __RadCalendar__ control read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
+* Create a __Style__ for it and set it to the __CalendarStyle__ property of the __RadDateTimePicker__.
 
 * Modify the default resources for the __RadCalendar__, that are generated together with the __RadDateTimePicker's Style__.
 
 >tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the clock, look [here]({%slug raddatetimepicker-styling-clock-view%}).
 
-This topic will focus on the second approach.
+## Setting the CalendarStyle property
+
+__Example 1__ demonstrates how the week names of the __RadCalendar__ in the dropdown of the RadDateTimePicker can be removed:
+
+#### __[XAML] Example 1: RadDateTimePicker with CalendarStyle__
+
+{{region xaml-raddatetimepicker-styling-calendar-0}}
+	<Window.Resources>
+        <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
+        <Style x:Key="CalendarStyle" TargetType="telerik:RadCalendar" BasedOn="{StaticResource RadCalendarStyle}">
+            <Setter Property="AreWeekNamesVisible" Value="False" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <telerik:RadDateTimePicker VerticalAlignment="Center" HorizontalAlignment="Center" CalendarStyle="{StaticResource CalendarStyle}" />
+    </Grid>
+{{endregion}}
+
+#### __Figure 1: Result from Example 1 in the Office2016 theme__
+![RadCalendar with week names removed](images/DateTimePicker_StylingTheCalendar.png)
 
 ## Modifying the default resources
 

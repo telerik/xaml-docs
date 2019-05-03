@@ -157,6 +157,22 @@ It has two methods:
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
+## AutoExpandGroups
+
+As of **R2 2019**, the RadPropertyGrid control exposes a new boolean property - **AutoExpandGroups**. It controls whether groups should be expanded or not when loaded. The default value is **True** meaning that all groups are initially expanded.
+
+#### __[C#] Example 8: Set groups' initial state to collapsed__
+
+{{region cs-radpropertygrid-grouping_7}}
+	this.PropertyGrid1.AutoExpandGroups = false;
+{{endregion}}
+
+#### __[VB.NET] Example 8: Set groups' initial state to collapsed__
+
+{{region vb-radpropertygrid-grouping_8}}
+	this.PropertyGrid1.AutoExpandGroups = False
+{{endregion}}
+
 ## See Also
 
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})

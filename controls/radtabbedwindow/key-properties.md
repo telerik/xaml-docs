@@ -82,9 +82,9 @@ Through the ItemWidth and ItemMinWidth, you can control the default **Width** an
     tabbedWindow.ItemMinWidth = 80
 {{endregion}}
 
-## PinnedItems
+## Pinned Items
 
-The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs.
+The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs. To enable the pinning functionality, you should set the **PinButtonVisibility** of the tab items to **Visible** via the **ItemContainerStyle** property of the window as shown in [this article]({%slug radtabbedwindow-styles-and-templates%}#itemcontainerstyle).
 
 ## DragDropMode
 

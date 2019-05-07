@@ -154,6 +154,14 @@ In order to modify the search behavior, you can benefit from the following three
 	
 	![Telerik {{ site.framework_name }} DataGrid-textsearch-quotes-operator](images/gridview-textsearch-quotes-operator.png)
 
+
+## SearchMode
+
+With **R2 2019** we introduced a new **SearchMode** property which allows you to control how items are matched when search is executed. It has the following two possible values:
+
+* **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted in the search panel, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
+* **MatchAllTerms**: Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain **both** terms ("John" and "Terry") in any of their properties will be matched.
+
 ## Change the Label Text of the Search Panel
 
 By default, the value of the __TextBlock__ appearing before the __Search TextBox__ in the __SearchPanel__ is "__Full Text Search"__. It can be altered through the __Localization__ mechanism of __RadGridView__. The resource key that needs to be modified is __GridViewSearchPanelTopText__. More information can be found in the [Localization]({%slug gridview-localization2%}) topic.

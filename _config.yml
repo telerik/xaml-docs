@@ -1002,7 +1002,7 @@ navigation:
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
     controls/radwebcam:
-        tile: RadWebCam
+        title: RadWebCam
 ## X1 Controls End
 
 ## Common Start   
@@ -3378,6 +3378,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "WebCam": "radwebcam-overview"
 -
   categories:
   -

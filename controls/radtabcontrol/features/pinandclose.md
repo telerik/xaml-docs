@@ -18,7 +18,7 @@ The purpose of this article is to get you familiar with these functionalities.
 
 The pin button of the RadTabItem is collapsed by default. Pin functionality can be enabled by setting the __PinButtonVisibility__ Visibility property to Visible. To check if given tab item is pinned you can use its __IsPinned__ property. To get the current pinned tab items you can use the __PinnedItems__ collection.
 
-> The PinnedItems collection of the RadTabControl is __ReadOnlyCollection<RadTabItem>__ so not items can be add or removed. You can only use this collection for iteration or to get the current number of the pinned tabs by using its Count() method.
+> The PinnedItems collection of the RadTabControl is __ReadOnlyCollection<RadTabItem>__ so no items can be add or removed. You can only use this collection for iteration or to get the current number of the pinned tabs by using its __Count()__ method.
 
 #### __[XAML] Example 1: Show the Pin button__
 {{region radtabcontrol-features-pinandclose_0}}
@@ -29,7 +29,7 @@ The pin button of the RadTabItem is collapsed by default. Pin functionality can 
 
 When an item is pinned it will be moved to the lowest index which is not occupied. For example, when no items are pinned, the first pinned item will move it to index 0 of __PinnedItems__ collection. If there are 3 pinned items, they will be in indices: 0,1,2. Pinning another item will move it to position 3.
 
-Similar behavior is observed when an item is unpinned. Unpinning an item will move it to the first index possible which is not pinned. If items 0 1 2 are pinned. If you unpin 1 it will go to index 2. Unpinning removes the item from the __PinnedItems__ collection.
+Similar behavior is observed when an item is unpinned. Unpinning an item will move it to the first index possible which is not pinned. For example if items 0 1 2 are pinned. If you unpin 1 it will go to index 2. Unpinning removes the item from the __PinnedItems__ collection.
 
 > The pinned/unpinned item will be brought into the view.
 
@@ -76,7 +76,7 @@ RadTabControl exposes its pinned/unpinned functionality through two commands tha
 
 When executing the command on a given RadTabItem the item will be pinned/unpinned depending on its current state.
 
-#### __[C#] Example 3: Execute the TogglePint command__
+#### __[C#] Example 3: Execute the TogglePin command__
 
 {{region radtabcontrol-features-pinandclose_2}}
 	TabItemCommands.TogglePin.Execute(null,myRadTabItem);
@@ -86,7 +86,7 @@ When executing the command on a given RadTabItem the item will be pinned/unpinne
 
 When executing the command on a given RadTabItem the item will be close.
 
-#### __[C#] Example 3: Execute the TogglePint command__
+#### __[C#] Example 3: Execute the Close command__
 
 {{region radtabcontrol-features-pinandclose_2}}
 	TabItemCommands.Close.Execute(null,myRadTabItem);

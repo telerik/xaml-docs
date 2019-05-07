@@ -86,20 +86,24 @@ Through the ItemWidth and ItemMinWidth, you can control the default **Width** an
 
 The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs.
 
-## AllowDragReorder
+## DragDropMode
 
-Setting the window's **AllowDragReorder** property to **True** or **False** to allow/disallow the user to reorder the tab items of your tab control using Drag & Drop.
+By default, the RadTabbedWindow allows reordering of its tabs as well as creating new windows via drag and drop. This drag-drop behavior can be controlled via the **DragDropMode** property which can have any of the following values:
 
-#### [C#] Example 6: Enable the reorder of tabs via drag and drop
+* **None**: Drag drop is disabled.
+* **Reorder**: Reorder in tab strip is allowed only.
+* **Default**: DragReorder and drag out of TabControl is allowed (like in modern browsers).
+
+#### [C#] Example 6: Allow only the reorder of tabs via drag and drop
 
 {{region cs-radtabbedwindow-key-properties_6}}
-    tabbedWindow.AllowDragReorder = true;
+    tabbedWindow.DragDropMode = DragDropMode.Reorder;
 {{endregion}}
 
-#### [VB.NET] Example 6: Enable the reorder of tabs via drag and drop
+#### [VB.NET] Example 6: Allow only the reorder of tabs via drag and drop
 
 {{region vb-radtabbedwindow-key-properties_7}}
-    tabbedWindow.AllowDragReorder = True
+    tabbedWindow.DragDropMode = DragDropMode.Reorder
 {{endregion}}
 
 ## ScrollMode

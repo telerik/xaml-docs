@@ -21,9 +21,9 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 * **Cancel**: Gets or sets a value indicating whether adding the new tab via add button should be cancelled.
 * **Item**: This will be the **Header** (or **DataContext**, in a databinding scenario) of the RadTabItem which is being added.
 
-#### [XAML] Example 1: Handle the AddingNewTab event
+#### [C#] Example 1: Handle the AddingNewTab event
 
-{{region xaml-radtabbedwindow-events_1}}
+{{region cs-radtabbedwindow-events_1}}
     private void MainWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
     {
         if (this.TotalTabCount > this.MaxTabCount) // replace with your cancel condition
@@ -37,7 +37,56 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
     }
 {{endregion}}
 
+#### [VB.NET] Example 1: Handle the AddingNewTab event
+
+{{region vb-radtabbedwindow-events_1}}
+	Private Sub MainWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
+		If Me.TotalTabCount > Me.MaxTabCount Then ' replace with your cancel condition
+			e.Cancel = True
+		Else
+			e.Item = New Person("P " & Me.Items.Count)
+		End If
+	End Sub
+{{endregion}}
+
 >important If the provided Item's **type** does not match the data type of the current **ItemsSource** an exception will be thrown.
+
+## TabbedWindowCreating
+
+Occurs when a new RadTabbedWindow is created via drag and drop and is about to be shown. Its **TabbedWindowCreatingEventArgs** expose the following properties:
+
+* **Cancel**: Gets or sets a value indicating whether the creation of the new window should be cancelled.
+* **SourceWindow**: The source window from which the drag drop operation is started.
+* **NewWindow**: The new window created via drag drop operation.
+* **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
+
+#### [C#] Example 2: Handle the TabbedWindowCreating event
+
+{{region cs-radtabbedwindow-events_2}}
+    private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
+    {
+        if (e.DraggedTab.Header.ToString() == "Progress") // replace with your cancel condition
+        {
+            e.Cancel = true;
+        }
+        else
+        {
+            e.NewWindow.AddingNewTab += this.MainWindow_AddingNewTab; // the AddingNewTab handler of the main RadTabbedWindow
+        }
+    }
+{{endregion}}
+
+#### [VB.NET] Example 2: Handle the TabbedWindowCreating event
+
+{{region vb-radtabbedwindow-events_2}}
+	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
+		If e.DraggedTab.Header.ToString() = "Progress" Then ' replace with your cancel condition
+			e.Cancel = True
+		Else
+			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
+		End If
+	End Sub
+{{endregion}}
 
 ## PreviewTabClosed
 

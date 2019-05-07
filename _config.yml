@@ -3378,6 +3378,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "WebCam": "radwebcam-overview"
 -
   categories:
   -

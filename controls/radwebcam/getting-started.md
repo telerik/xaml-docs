@@ -5,7 +5,7 @@ description: This tutorial will walk you through the creation of a sample applic
 slug: radwebcam-getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 ---
 
 # Getting Started
@@ -18,8 +18,11 @@ In order to use __RadWebCam__, you will need to add references to the following 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Media__
 * __Telerik.Windows.MediaFoundation__
+* __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/MediaFoundation* folder.
+* __SharpDX__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/SharpDX* folder.
+* __SharpDX.Direct3D9__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/SharpDX* folder.
 
-You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})help article.
+You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ## Setting up the Control
 
@@ -37,62 +40,77 @@ To start using the control you only need to add it in the visual tree through XA
 
 From this point on, you can start using the control without any additional set up.
 
+#### Figure 1: RadWebCam
 ![](images/radwebcam-getting-started-0.png)
+
+## Auto Start
+
+By default the camera control will start automatically if a camera device is connected. You can change this by setting the __AutoStart__ property of RadWebCam to False.
+
+#### __[XAML] Example 3: Setting AutoStart in XAML__
+{{region radwebcam-getting-started-2}}
+	 <telerik:RadWebCam AutoStart="False"/>
+{{endregion}}
+
+#### __[C#] Example 4: Setting AutoStart in code__
+{{region radwebcam-getting-started-3}}
+	this.radWebCam.AutoStart = false;
+{{endregion}}
 
 ## Connect to the Webcam Manually
 
-To connect to a webcam manually, call the __Start__ method of the control.
+To connect to the webcam manually you can call the __Start__ method of the control. 
 
-#### __[C#] Example 3: __
-{{region radwebcam-getting-started-2}}
-	radWebCam.Start();
+#### __[C#] Example 5: Starting the camera__
+{{region radwebcam-getting-started-4}}
+	this.radWebCam.Start();
 {{endregion}}
 
-By default the control gets and connects to the first camera and microphone devices it finds. You can change this by calling the parameterized overload of the __Start__ method. This way you can provide different devices to the control. 
+To connect to a webcam manually, execute the following steps.
 
-#### __[C#] Example 3: __
-{{region radwebcam-getting-started-2}}
-	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();	
-	ReadOnlyCollection<MediaFoundationDeviceInfo> audioDevices = RadWebCam.GetAudioCaptureDevices();
-	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[1]);
-	
-	this.radWebCam.Start(videoDevices[1], videoFormats[1])
+1. __Get the camera__ device. To do this, use the RadWebCam __GetVideoCaptureDevices__ static method.
+2. __Get a video format__ from the camera. To do this, use the RadWebCam __GetVideoFormats__ static methods.
+3. __Initialize the camera device__ in the control. To do this, use the __Initialize__ method of the RadWebCam control.
+4. __Start the webcam__ control. To do this, use the __Start__ method of the control.
+
+#### __[C#] Example 6: Starting the camera with manually set device and video format__
+{{region radwebcam-getting-started-5}}
+	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();            
+	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
+	this.radWebCam.Initialize(videoDevices[0], videoFormats[0]);
+	this.radWebCam.Start();
 {{endregion}}
 
->tip Read more about the capture devices in the [Get Media Information]() article.
+>tip Read more about the capture devices in the [Media Information]({%slug radwebcam-features-media-information%}) article.
+
+## Stop the Camera Control
+
+To stop the stream between the camera device and the RadWebCam control, call the __Stop__ method.
+
+#### __[C#] Example 7: Stopping the camera__
+{{region radwebcam-getting-started-6}}
+	this.radWebCam.Stop();
+{{endregion}}
 
 ## Recording Video
 
 To record a video you need to set __RecordingFilePath__ before start the recording. This is requried in order to specify where the recording will be stored on the file system.
 
-#### __[C#] Example 3: Set the recording file path__
-{{region radwebcam-getting-started-2}}
-	videoFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "video.mp4");
-	radWebCam.RecordingFilePath = myFilePath
+To start recording, set the and press the "Start recording" button or call the __StartRecording__ method of RadWebCam. This will start writing the media stream to the corresponding file.
+
+#### __[XAML] Example 8: Set the recording file path in XAML__
+{{region radwebcam-getting-started-7}}
+	<telerik:RadWebCam RecordingFilePath="C:\\temp\\video.mp4"/>
 {{endregion}}
 
-To start recording, set the and press the "Record" button or call the __StartRecording__ method of RadWebCam. This will start writing the media stream to the corresponding file.
+> Read more about this in the [Recording Video]({%slug radwebcam-features-recording-video%}) article.
 
-#### __[C#] Example 3: Start capturing a video__
-{{region radwebcam-getting-started-2}}	
-	radWebCam.StartRecording();
-{{endregion}}
-
-To stop recording, press the "Stop" button or call the __StopRecording__ method of RadWebCam. This will stop the recording and close the file stream.
-
-#### __[C#] Example 3: Stop capturing a video__
-{{region radwebcam-getting-started-2}}
-	radWebCam.StopRecording();
-{{endregion}}
-
-You can indicate that the camera control is recording via its __IsRecording__ property.
-
-## Taking a Snapshot
+## Taking Snapshot
 
 A snapshot of the currently displayed video feed can be taken using the __TakeSnapshot__ method of the control, or by pressing the "Take snapshot button". This will fire the __SnapshotTaken__ event where you get access the current snapshot as a __BitmapSource__ object.
 
-#### __[C#] Example 3: Stop capturing a video__
-{{region radwebcam-getting-started-2}}
+#### __[C#] Example 9: Subscribing to the SnapshotTaken event__
+{{region radwebcam-getting-started-8}}
 	public MainWindow()
 	{
 		InitializeComponent();

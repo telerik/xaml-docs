@@ -5,7 +5,7 @@ description: RadWebCam exposes a single event that is specific for the control -
 slug: radwebcam-events
 tags: events, snapshottaken
 published: True
-position: 0
+position: 3
 ---
 
 # Events
@@ -35,4 +35,5 @@ The event arguments are of type __SnapshotTakenEventArgs__ which exposes a __Sna
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
+* [Visual Structure]({%slug radwebcam-visual-structure%})
 * [Snapshots]({%slug radwebcam-features-snapshots%})

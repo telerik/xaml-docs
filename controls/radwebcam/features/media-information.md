@@ -1,16 +1,16 @@
 ---
-title: Get Media Information
-page_title: Get Media Information
-description: 
-slug: radwebcam-features-get-media-information
+title: Media Information
+page_title: Media Information
+description: RadWebCam gives the ability to get information about the connected devices (cameras and microphones) and change the control's device and video format based on this.
+slug: radwebcam-features-media-information
 tags: mediafoundationdeviceinfo, mediafoundationvideoformatinfo
 published: True
-position: 1
+position: 2
 ---
 
-# Get Media Information
+# Media Information
 
-The RadWebCam API allows you to get information about the connected devices (cameras) and change the control's device and video format.
+The RadWebCam API allows you to get information about the connected devices (cameras) and change the control's device and video format based on this.
 
 ## MediaFoundationDeviceInfo
 
@@ -19,12 +19,6 @@ The __MediaFoundationDeviceInfo__ object provides information about the connecte
 ## MediaFoundationVideoFormatInfo
 
 The __MediaFoundationVideoFormatInfo__ object provides information about the video format used by the connected camera.
-
-## Video and Audio Capture Devices
-
-By default the control gets and connects to the first camera and microphone devices it finds. To change this you can set the __VideoCaptureDevice__ and __AudioCaptureDevice__ properties of RadWebCam. Or call the parameterized overload of the __Start__ method. 
-
-> See how to use the __Start__ method in the [Getting Started]({%slug radwebcam-getting-started%}#connect-to-the-webcam-manually) article.
 
 ## Get Video and Audio Capture Devices
 
@@ -55,3 +49,4 @@ To get the available video file formats for the connnected device you can use th
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
 * [SnapshotTaken]({%slug radwebcam-events%})
+* [Commands]({%slug radwebcam-events%})

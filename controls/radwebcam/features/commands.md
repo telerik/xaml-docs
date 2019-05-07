@@ -1,11 +1,11 @@
 ---
 title: Commands
 page_title: Commands
-description: 
+description: The actions in the UI of RadWebCam control are executed via commands from the RadWebCamCommands static class. 
 slug: radwebcam-features-commands
 tags: commands, radwebcamcommands
 published: True
-position: 0
+position: 5
 ---
 
 # Commands
@@ -18,6 +18,9 @@ The following commands are available:
 * __SaveSnapshot__: Fires the SnapshotTaken event where you can save the BitmapSource object.
 * __DiscardSnapshot__: Discargs the snapshot.
 * __ToggleRecording__: Toggles the video recording.
+* __ShowSettingsDialog__: Shows the settings dialog that allows you to adjust the camera options.
+* __Start__: Starts displaying the video feed from the camera.
+* __Stop__: Stops displaying the video feed from the camera.
 
 You can use the commands outside of the RadWebCam control or modify their default behavior.
 
@@ -31,7 +34,7 @@ The RadWebCamCommands can be attached to a button or another element supporting 
 	<telerik:RadButton Command="telerik:RadWebCamCommands.TakeSnapshot"  CommandTarget="{Binding ElementName=radWebCam}"/>
 {{endregion}}
 
-## Modify Command Behavior
+## Modifying Command Behavior
 
 The RadWebCamCommands uses RoutedUICommands, which means that you can override their behavior as any other [RoutedUICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.routeduicommand?view=netframework-4.7.2).
 
@@ -66,4 +69,5 @@ The RadWebCamCommands uses RoutedUICommands, which means that you can override t
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
-* [Snapshots]({%slug radwebcam-features-snapshots%})
+* [Events]({%slug radwebcam-events%})
+* [Recording Video]({%slug radwebcam-features-recording-video%})

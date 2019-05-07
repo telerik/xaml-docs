@@ -14,11 +14,11 @@ With the __R2 2019__ version of our controls, the RadTabControl now allows furth
 
 The purpose of this article is to get you familiar with these functionalities.
 
-## Pin
+## Pin/Unpin
 
 The pin button of the RadTabItem is collapsed by default. Pin functionality can be enabled by setting the __PinButtonVisibility__ Visibility property to Visible. To check if given tab item is pinned you can use its __IsPinned__ property. To get the current pinned tab items you can use the __PinnedItems__ collection.
 
-> The PinnedItems collection of the RadTabControl is __ReadOnlyCollection<RadTabItem>__ so no items can be add or removed. You can only use this collection for iteration or to get the current number of the pinned tabs by using its __Count()__ method.
+> The PinnedItems collection of the RadTabControl is __ReadOnlyCollection<RadTabItem>__ so no items can be added or removed. You can only use this collection for iteration or to get the current number of the pinned tabs by using its __Count()__ method.
 
 #### __[XAML] Example 1: Show the Pin button__
 {{region radtabcontrol-features-pinandclose_0}}

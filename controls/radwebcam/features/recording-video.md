@@ -24,6 +24,8 @@ To enable video recording set the __RecordingFilePath__ property of the control.
 #### __[C#] Example 2: Set the recording file path in code__
 {{region radwebcam-features-recording-video-1}}
 	string videoFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "video.mp4");
+	
+	// If there is no "video.mp4" file, such file will get created. If the file exists, it will get overridden.
 	radWebCam.RecordingFilePath = videoFileName
 	
 	radWebCam.StartRecording();

@@ -26,7 +26,7 @@ The __RadWebCam__ control allows you to display the stream provided by a web cam
 
 * __Image flip__: You can easily flip the video feed from the camera by setting the flip properties. Read more about this in the [Video Flip]({%slug radwebcam-features-video-flip%}) article.
 
-* __Unavailable camera content__: With RadWebCam you can define a custom content displayed when there is no camera attached or the camera is used by another application. Read more about this in the [Unavailable Camera Content]({%slug radwebcam-features-no-camera-content%}) article.
+* __Errors handling__: You can customize the content shown when there is no camera or the camera is unavailable using the __CameraErrorContentTemplate__ property and the __CameraError__ event. Read more about this in the [Errors]({%slug radwebcam-features-errors%}) article.
 
 >tip Get started with the control with its [Getting Started]({%slug radwebcam-getting-started%}) help article that shows how to use it in a basic scenario.
 

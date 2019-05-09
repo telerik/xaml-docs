@@ -16,7 +16,7 @@ The following commands are available:
 
 * __TakeSnapshot__: Takes a snapshot of the video feed. 
 * __SaveSnapshot__: Fires the SnapshotTaken event where you can save the BitmapSource object.
-* __DiscardSnapshot__: Discargs the snapshot.
+* __DiscardSnapshot__: Discards the snapshot.
 * __ToggleRecording__: Toggles the video recording.
 * __ShowSettingsDialog__: Shows the settings dialog that allows you to adjust the camera options.
 * __Start__: Starts displaying the video feed from the camera.

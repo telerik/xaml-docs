@@ -10,7 +10,7 @@ position: 4
 
 # Video Flip
 
-RadWebCam allows you to chanage the flip of the video feed from the attached camera. To do this, set the __FlipVertically__ and __FlipHorizontally__ properties of RadWebCam to __true__.
+RadWebCam allows you to change the flip of the video feed from the attached camera. To do this, set the __FlipVertically__ and __FlipHorizontally__ properties of RadWebCam to __true__.
 
 #### __[XAML] Example 1: Setting the flip in XAML__
 {{region radwebcam-features-video-flip-0}}
@@ -28,5 +28,5 @@ RadWebCam allows you to chanage the flip of the video feed from the attached cam
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
-* [Unavailable Camera Content]({%slug radwebcam-features-no-camera-content%})
 * [SnapshotTaken]({%slug radwebcam-events%})
+* [Errors]({%slug radwebcam-features-errors%})

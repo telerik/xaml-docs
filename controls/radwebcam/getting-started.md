@@ -96,7 +96,7 @@ To stop the stream between the camera device and the RadWebCam control, call the
 
 To record a video you need to set __RecordingFilePath__ before start the recording. This is requried in order to specify where the recording will be stored on the file system.
 
-To start recording, set the and press the "Start recording" button or call the __StartRecording__ method of RadWebCam. This will start writing the media stream to the corresponding file.
+To start recording, press the "Start recording" button or call the __StartRecording__ method of RadWebCam. This will start writing the media stream to the corresponding file.
 
 #### __[XAML] Example 8: Set the recording file path in XAML__
 {{region radwebcam-getting-started-7}}
@@ -127,4 +127,5 @@ A snapshot of the currently displayed video feed can be taken using the __TakeSn
 
 ## See Also  
 * [SnapshotTaken]({%slug radwebcam-events%})
+* [Visual Structure]({%slug radwebcam-visual-structure%})
 * [Snapshots]({%slug radwebcam-features-snapshots%})

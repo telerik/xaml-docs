@@ -19,35 +19,65 @@ Most of these events are inherited from the [RadWindow](%slug radwindow-events-o
 Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **AddingNewTabEventArgs** expose the following properties:
 
 * **Cancel**: Gets or sets a value indicating whether adding the new tab via add button should be cancelled.
-* **Item**: This will be the **Header** (or **DataContext**, in a databinding scenario) of the RadTabItem which is being added.
 
-#### [C#] Example 1: Handle the AddingNewTab event
+* **Item**: Gets or sets the newly added item. The type of the item depends on the scenario. 
 
-{{region cs-radtabbedwindow-events_1}}
-    private void MainWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
-    {
-        if (this.TotalTabCount > this.MaxTabCount) // replace with your cancel condition
-        {
-            e.Cancel = true;
-        }
-        else
-        {
-            e.Item = new Person("P " + this.Items.Count);
-        }
-    }
-{{endregion}}
+	If the RadTabbedWindow control is __populated directly with RadTabItem elements__, the Item property contains an object of type RadTabItem which you can customize or completely replace. 
+	
+	#### [C#] Example 1: Handle the AddingNewTab event in data binding scenario  
+	{{region cs-radtabbedwindow-events_1}}
+		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
+		{
+			if (this.TotalTabCount > this.MaxTabCount) // replace with your cancel condition
+			{
+				e.Cancel = true;
+			}
+			else
+			{
+				e.Item = new Person("P " + this.Items.Count);
+			}
+		}
+	{{endregion}}
 
-#### [VB.NET] Example 1: Handle the AddingNewTab event
+	#### [VB.NET] Example 1: Handle the AddingNewTab event  
+	{{region vb-radtabbedwindow-events_1}}
+		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
+			If Me.TotalTabCount > Me.MaxTabCount Then ' replace with your cancel condition
+				e.Cancel = True
+			Else
+				e.Item = New Person("P " & Me.Items.Count)
+			End If
+		End Sub
+	{{endregion}}
+	
+	If the __ItemsSource of the control is populated (data binding scenario)__, the Item property will be empty (*null*) and you should manually set it to an object of your business type. Otherwise, no tab will added.
+	
+	#### [C#] Example 2: Handle the AddingNewTab event
+	{{region cs-radtabbedwindow-events_2}}
+		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
+		{
+			RadTabItem tabItem = e.Item as RadTabItem;
+            if (tabItem != null)
+            {
+                tabItem.Header = "New tab";
+                tabItem.Content = "Empty tab";
+            } 
+		}
+	{{endregion}}
 
-{{region vb-radtabbedwindow-events_1}}
-	Private Sub MainWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
-		If Me.TotalTabCount > Me.MaxTabCount Then ' replace with your cancel condition
-			e.Cancel = True
-		Else
-			e.Item = New Person("P " & Me.Items.Count)
-		End If
-	End Sub
-{{endregion}}
+	#### [VB.NET] Example 2: Handle the AddingNewTab event
+	{{region vb-radtabbedwindow-events_2}}
+		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
+			Dim tabItem As RadTabItem = TryCast(e.Item, RadTabItem)
+
+			If tabItem IsNot Nothing Then
+				tabItem.Header = "New tab"
+				tabItem.Content = "Empty tab"
+			End If
+		End Sub
+	{{endregion}}
+	
+	>tip If the Item property is left empty (*null*), no tab will be added.
 
 >important If the provided Item's **type** does not match the data type of the current **ItemsSource** an exception will be thrown.
 
@@ -60,9 +90,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **NewWindow**: The new window created via drag drop operation.
 * **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
 
-#### [C#] Example 2: Handle the TabbedWindowCreating event
-
-{{region cs-radtabbedwindow-events_2}}
+#### [C#] Example 3: Handle the TabbedWindowCreating event  
+{{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
         if (e.DraggedTab.Header.ToString() == "Progress") // replace with your cancel condition
@@ -76,9 +105,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
     }
 {{endregion}}
 
-#### [VB.NET] Example 2: Handle the TabbedWindowCreating event
-
-{{region vb-radtabbedwindow-events_2}}
+#### [VB.NET] Example 3: Handle the TabbedWindowCreating event  
+{{region vb-radtabbedwindow-events_3}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		If e.DraggedTab.Header.ToString() = "Progress" Then ' replace with your cancel condition
 			e.Cancel = True

@@ -90,9 +90,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **NewWindow**: The new window created via drag drop operation.
 * **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
 
-#### [C#] Example 2: Handle the TabbedWindowCreating event
-
-{{region cs-radtabbedwindow-events_2}}
+#### [C#] Example 3: Handle the TabbedWindowCreating event  
+{{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
         if (e.DraggedTab.Header.ToString() == "Progress") // replace with your cancel condition
@@ -106,9 +105,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
     }
 {{endregion}}
 
-#### [VB.NET] Example 2: Handle the TabbedWindowCreating event
-
-{{region vb-radtabbedwindow-events_2}}
+#### [VB.NET] Example 3: Handle the TabbedWindowCreating event  
+{{region vb-radtabbedwindow-events_3}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		If e.DraggedTab.Header.ToString() = "Progress" Then ' replace with your cancel condition
 			e.Cancel = True

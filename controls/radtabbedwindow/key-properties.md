@@ -126,13 +126,13 @@ When the width of the window does not allow all tabs to be displayed, two scroll
 
 You can determine whether users will be able to add new tabs through the UI be specifying the **AddButtonVisibility** property.
 
-#### [C#] Example 8: Enable the reorder of tabs via drag and drop
+#### [C#] Example 8: Set AddButtonVisibility
 
 {{region cs-radtabbedwindow-key-properties_10}}
     tabbedWindow.AddButtonVisibility = Visibility.Collapsed;
 {{endregion}}
 
-#### [VB.NET] Example 8: Enable the reorder of tabs via drag and drop
+#### [VB.NET] Example 8: Set AddButtonVisibility
 
 {{region vb-radtabbedwindow-key-properties_11}}
     tabbedWindow.AddButtonVisibility = Visibility.Collapsed

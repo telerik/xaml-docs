@@ -102,7 +102,7 @@ If you run the application, you will see the RadTabbedWindow control illustrated
 
 {% figure 2, "Empty RadTabbedWindow", "tabbedwindow-getting-started-1.png" %}
 
->important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. You should add the following style after the merged dictionaries to fix this:
+>important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. In order for this to happen, you should add the following style after the merged dictionaries:
 
 #### __[XAML] Example 4: Adding the style for the new TabbedWindow__
 
@@ -123,7 +123,7 @@ If you run the application, you will see the RadTabbedWindow control illustrated
 
 You can add tabs to the window by directly defining them as its content.
 
-#### __[XAML] Example 5: Defining a RadTabbedWindow in XAML__
+#### __[XAML] Example 5: Adding Tabs to RadTabbedWindow in XAML__
 
 {{region xaml-radtabbedwindow-getting-started_6}}
     <telerik:RadTabbedWindow x:Class="GettingStarted.TabbedWindow"
@@ -185,7 +185,7 @@ Alternatively, you can set the **ItemsSource** property of the control or bind i
 
 In addition to the DisplayMemberPath you can also specify the **ContentTemplate** property as shown in **Example 7**.
 
-#### __[XAML] Example 7: Defining a RadTabbedWindow in XAML__
+#### __[XAML] Example 7: Setting RadTabbedWindow ContentTemplate in XAML__
 
 {{region xaml-radtabbedwindow-getting-started_8}}
     <telerik:RadTabbedWindow.ContentTemplate>
@@ -214,7 +214,7 @@ To change the theme, you can follow the steps below:
 	* __Telerik.Windows.Controls.xaml__
 	* __Telerik.Windows.Controls.Navigation.xaml__
 
-__Example 5__ demonstrates how to merge the resource dictionaries so that they are applied globally for the entire application.
+__Example 8__ demonstrates how to merge the resource dictionaries so that they are applied globally for the entire application.
 
 #### __[XAML] Example 8: Merge the ResourceDictionaries__  
 {{region xaml-radtabbedwindow-getting-started_9}}

@@ -225,6 +225,7 @@ __Example 8__ demonstrates how to merge the resource dictionaries so that they a
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
 				</ResourceDictionary.MergedDictionaries>
+	                <Style TargetType="local:TabbedWindow" BasedOn="{StaticResource RadTabbedWindowStyle}" />
 			</ResourceDictionary>
 		</Application.Resources>
 {{endregion}}

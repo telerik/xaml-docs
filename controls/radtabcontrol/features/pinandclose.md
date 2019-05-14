@@ -65,7 +65,7 @@ __RadTabControl__ provides several events in regards to its pinning and closing 
 * __PreviewTabPinned__: Occurs before the tab item is pinned. The type of the passed event arguments is __PreviewTabChangedEventArgs__. Pinning the tab can be canceled by setting the __Cancel__ property from the event arguments.
 * __TabPinned__:  Occurs after the tab item is pinned. The type of the passed event arguments is __TabChangedEventArgs__. You can get the currently pinned tab and its DataContext from the __TabItem__ and __DataContext__ properties from the event arguments.
 
-* __PreviewTabUnpinned__: Occurs before the tab item is unpinned. The type of the passed event arguments is __PreviewTabChangedEventArgs__. Pinning the tab can be canceled by setting the __Cancel__ property from the event arguments.
+* __PreviewTabUnpinned__: Occurs before the tab item is unpinned. The type of the passed event arguments is __PreviewTabChangedEventArgs__. Unpinning the tab can be canceled by setting the __Cancel__ property from the event arguments.
 * __TabUnpinned__: Occurs after the tab item is unpinned. The type of the passed event arguments is __TabChangedEventArgs__. You can get the current unpinned tab and its DataContext from the __TabItem__ and __DataContext__ properties from the event arguments.
 
 ## Commands

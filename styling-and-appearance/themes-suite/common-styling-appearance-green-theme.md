@@ -444,7 +444,7 @@ If you need to change the opacity of disabled elements, you can now easily do it
 #### __Figure 5: Changes in the disabled elements opacity__
 ![Green Theme Image 05](../images/Common_Styling_Appearance_Green_Theme_05.png)
 	
-The same is applicable for the ReadOnly state of controls by using the exposed __ReadOnlyOpacity__ property of GreenPalette. The default values are 0.2 and 1 for the __DisabledOpacity__ and the __ReadOnlyOpacity__ properties. 
+The same is applicable for the ReadOnly state of controls by using the exposed __ReadOnlyOpacity__ property of GreenPalette. The default values are 0.2 for the __DisabledOpacity__ and 1 for the __ReadOnlyOpacity__ property. 
 
 #### __[XAML] Example 10: The view of the example__		
 {{region styling-appearance-green-theme-15}}

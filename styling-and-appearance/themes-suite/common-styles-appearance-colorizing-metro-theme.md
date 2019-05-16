@@ -280,7 +280,7 @@ Figure 3: You can click a button to change FontSize.
 
 ## Changing Opacity 
 
-If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the **Windows8Palette**. Its default values is **0.5**. 
+If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the **Windows8Palette**. Its default value is **0.5**. 
 
 #### __[C#] Example 7: Changing the opacity__		
 {{region cs-common-styles-appearance-colorizing-metro-theme-7}}

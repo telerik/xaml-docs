@@ -182,7 +182,7 @@ This will be the final result:
 
 ## Changing Opacity 
 
-If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the Office2013Palette. Its default values is 0.3.
+If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the Office2013Palette. Its default value is 0.3.
 
 #### __[C#] Example 8: Changing the opacity__		
 {{region cs-common-styling-appearance-office2013-theme-5}}

@@ -10,7 +10,22 @@ position: 0
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![Rad Persistence Framework-WPF-Icon](images/RadPersistenceFramework-WPF-Icon.png){% endif %}
-{% if site.site_name == 'Silverlight' %}![Rad Persistence Framework-SL-Icon](images/RadPersistenceFramework-SL-Icon.png){% endif %}
+{% if site.site_name == 'WPF' %}![Rad Persistence Framework-WPF-Icon](images/RadPersistenceFramework-WPF-Icon.png){% else %}![Rad Persistence Framework-SL-Icon](images/RadPersistenceFramework-SL-Icon.png){% endif %}
 
-Have you ever wondered how to save the properties of your UI elements with just one line of code? Do you need to load a previous visual state of an UI element? The __PersistenceFramework__ allows you to implement such scenarios out-of-the-box. With its powerful save and load mechanism, it lets you save the UI related properties of your controls in a stream or an isolated storage so that you can retreive their values later. This way you can easily store the layout of your application thus keeping your users preferences.
+__PersistenceFramework__ allows you to easily save and restore your UI. The framework persists the properties of any {{ site.framework_name }} control in a memory stream or directly into a file, so that you can retrieve their values later. This way you can easily store the layout of your application thus keeping your users preferences.
+
+## Key Features
+
+* __Easy saving mechanism__: You can save or load the layout using a single method call. Read more about this in the [Isolated Storage]({%slug persistence-framework-isolated-storage%}) article.
+
+* __Fully customizable saving and loading__: Implement one of the property provider interfaces in order to write a custom logic for saving and loading properties. Read more about this in the [CustomPropertyProviders]({%slug persistence-framework-custom-property-provider%}) article.  
+
+* __Serialization options__: Use the PersistenceFramework attached properties to define a set of condition that can be used to restrict the serialization. Read more about this in the [Serialization Options]({%slug persistence-framework-defining-properties%}) article.
+
+>tip Get started with the PersistanceFramework with its [Getting Started]({%slug persistence-framework-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#PersistenceFramework/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+
+## See Also
+* [Data Binding Tips]({%slug persistence-framework-data-binding-tips%})
+* [Events]({%slug persistence-framework-events%})

@@ -64,7 +64,7 @@ In order to populate a RadGanttView control with sample data, you can create a c
 #### __[C#] Example 3: Creating a ViewModel__
 
 {{region cs-radganttview-getting-started_2}}
-	public class ViewModel : ViewModelBase
+    public class ViewModel : ViewModelBase
     {
         private DateRange visibleRange;
 

@@ -1,7 +1,7 @@
 ---
 title: Configure the Data Bindings
 page_title: Configure the Data Bindings
-description: Read this article demonstrating how to bind Telerik's {{ site.framework_name }} DataGrid to a collection of items and configure the data bindings for its columns.
+description: Read this article to understand how to bind Telerik's {{ site.framework_name }} DataGrid to a collection of items and configure the data bindings for its columns.
 slug: gridview-configuring-the-databindings
 tags: configure,the,data,bindings
 published: True
@@ -10,82 +10,99 @@ position: 1
 
 # Configure the Data Bindings
 
-This article is split into the following sections:
-
-* [Setting the ItemsSource](#setting-the-itemssource)
-* [Types of Sources](#types-of-sources)
-* [Binding the Columns](#binding-the-columns)
-
-## Setting the ItemsSource
-
-As a typical data control __RadGridView__ displays its data by binding to a source and generating visual elements for each item in it. The first thing you have to do is to set the __ItemsSource__ property of __RadGridView__ as shown in **Example 1**.
-
-#### __[C#] Example 1: Set RadGridView's ItemsSource__
-
-{{region cs-gridview-configuring-the-databindings_0}}
-	// In this example, GetData() is a static method of the SampleData class that returns a collection of items.
-	this.radGridView.ItemsSource = SampleData.GetData();
-{{endregion}}
-
-#### __[VB.NET] Example 1: Set RadGridView's ItemsSource__
-
-{{region vb-gridview-configuring-the-databindings_1}}
-	' In this example, GetData() is a static method of the SampleData class that returns a collection of items.
-	Me.radGridView.ItemsSource = SampleData.GetData()
-{{endregion}}
+This article will list the possible types of sources Telerik's {{ site.framework_name }} RadGridView can handle and guide you through the process of binding the control to a collection of items and configuring the data bindings for its columns.
 
 ## Types of Sources
 
-Unlike a standard items control, __RadGridView__'s __ItemsSource__ property is declared to be of type __System.Object__.
-Of course, standard .NET collections that implement the __IEnumerable__ interface are fully supported as well.
+__RadGridView__'s __ItemsSource__ property is declared to be of type __System.Object__ for compatibility reasons but it is recommended to use collections which implement the __IEnumerable__ interface.
 
->important When binding the **ItemsSource** to a **DataTable**, you should use its **DefaultView** property.
+>important When binding the **ItemsSource** to a **DataTable**, you should use its **DefaultView**.
 
-To avoid coupling in your code, it may be more convenient to manipulate data in the original source collection instead of using __RadGridView__'s API.
-__RadGridView__ listens for collection change events and reflects those changes in its visual representation.
-In {{ site.framework_name }} there is a built-in implementation of a data collection that exposes the __INotifyCollectionChanged__ interface – the __ObservableCollection&lt;T&gt;__ class.
+When bound to a collection which implements the **INotifyCollectionChanged** interface, __RadGridView__ will reflect any changes to this collection (due to add or remove operations, for example) in its UI. In {{ site.framework_name }} there is a built-in implementation of this interface – the __ObservableCollection&lt;T&gt;__ class.
 
-#### __[C#] Example 2: Set RadGridView's ItemsSource to an ObservableCollection__
+Implementations of the __System.ComponentModel.ICollectionView__ interface are fully supported as well. Moreover, when such a source is provided, __RadGridView__ will automatically pick up any group/sort/filter descriptions defined on the collection view and use those to display the data. With this said, it is recommended to pass in such a collection whenever possible. The Telerik UI for {{ site.framework_name }} suite provides such an implementation - the **QueryableCollectionView**. If you bind an instance of the QueryableCollectionView class to RadGridView, the control will automatically work with this instance which can improve performance as it will remove the need to synchronize the bound collection with its **Items** collection.
+
+Last but not least, if the bound source collection implements the **IEditableCollectionView** and/or **IEditableCollectionViewAddNewItem** interfaces, the implementations of their members will be invoked when performing editing operations on the collection via the RadGridView control.
+
+## Binding to an ObservableCollection
+
+For the purposes of this example we will assume that the control will be bound to a collection of **Player** objects. Please note that the class inherits from **ViewModelBase** which is the Telerik implementation of the **INotifyPropertyChanged** interface.
+
+#### __[C#] Example 1: The Player class__
 
 {{region cs-gridview-configuring-the-databindings_2}}
-	var players = new ObservableCollection<Player>();
-	players.Add(new Player() { Name = "Pepe Reina", Number = 25 });
-	players.Add(new Player() { Name = "Jamie Carragher", Number = 23 });
-	players.Add(new Player() { Name = "Steven Gerrard", Number = 8 });
-	players.Add(new Player() { Name = "Fernando Torres", Number = 9 });
-	this.playersGrid.ItemsSource = players;
+    public class Player : ViewModelBase
+    {
+        private string name;
+        private int number;
+
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (value != this.name)
+                {
+                    this.name = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        public int Number
+        {
+            get { return this.number; }
+            set
+            {
+                if (value != this.number)
+                {
+                    this.number = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+    }
 {{endregion}}
 
-#### __[VB.NET] Example 2: Set RadGridView's ItemsSource to an ObservableCollection__
+We will then create a ObservableCollection of Player objects in our viewmodel.
 
-{{region vb-gridview-configuring-the-databindings_3}}
-	Dim players = New ObservableCollection(Of Player)()
-	players.Add(New Player() With {
-		.Name = "Pepe Reina",
-		.Number = 25
-	})
-	players.Add(New Player() With {
-		.Name = "Jamie Carragher",
-		.Number = 23
-	})
-	players.Add(New Player() With {
-		.Name = "Steven Gerrard",
-		.Number = 8
-	})
-	players.Add(New Player() With {
-		.Name = "Fernando Torres",
-		.Number = 9
-	})
-	Me.playersGrid.ItemsSource = players
+#### __[C#] Example 2: Create an ObservableCollection in the viewmodel__
+
+{{region cs-gridview-configuring-the-databindings_2}}    
+	public class MainWindowViewModel : ViewModelBase
+    {
+        private ObservableCollection<Player> players;
+
+        public ObservableCollection<Player> Players
+        {
+            get
+            {
+                if (this.players == null)
+                {
+                    this.players = new ObservableCollection<Player>();
+                    this.players.Add(new Player() { Name = "Pepe Reina", Number = 25 });
+                    this.players.Add(new Player() { Name = "Jamie Carragher", Number = 23 });
+                    this.players.Add(new Player() { Name = "Steven Gerrard", Number = 8 });
+                    this.players.Add(new Player() { Name = "Fernando Torres", Number = 9 });
+                }
+
+                return this.players;
+            }
+        }
+    }
 {{endregion}}
 
->tip Consider using an __ObservableCollection&lt;T&gt;__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
+All that's left is to bind this collection to our RadGridView control.
 
-Implementations of the __System.ComponentModel.ICollectionView__ interface are fully supported as well. When such a source is provided, __RadGridView__ will automatically pick up group descriptions, sort descriptions, or filter settings defined on the collection view and use those to display data.
+#### __[XAML] Example 3: Bind the ItemsSource property__
+
+{{region xaml-gridview-configuring-the-databindings_3}}
+	<telerik:RadGridView ItemsSource="{Binding Players}" />
+{{endregion}}
 
 ## Binding the Columns
 
-The data in __RadGridView__ is separated in columns. There are different types of columns, displaying different types of data. Usually the data is displayed in __GridViewDataColumns__, which can be generated automatically or manually.
+By default, RadGridView will try to automatically generate columns based on the properties of the underlying data objects. If you would like to disable this functionality and manually define the columns yourself, you should set the control's **AutoGenerateColumns** property to **False** and manually populate the **Columns** collection.
 
 #### __[XAML] Example 3: Define a column in XAML__
 
@@ -106,5 +123,5 @@ The data in __RadGridView__ is separated in columns. There are different types o
 
 ## See Also
 
- * [Using in-memory Data]({%slug gridview-in-memory-date%})
+ * [Binding to Dynamic Data]({%slug gridview-binding-dynamic-data%})
  * [Loading Data from XML]({%slug gridview-loading-data-from-xml%})

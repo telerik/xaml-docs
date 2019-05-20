@@ -1,8 +1,8 @@
 ---
-title: Show desktop alert with message
-description: Display alert for sent message
+title: Show desktop alert with message in RadChat
+description: Display alert for sent message in RadChat
 type: how-to
-page_title: Create a popup for new message
+page_title: Create a popup for new message in ConversationalUI
 slug: kb-chat-showing-message-desktop-alert
 position: 0
 tags: chat, desktopalert, show, message
@@ -24,7 +24,7 @@ How to display alert, when a message is sent.
 
 ## Solution
 
-Handle the __SendMessage__ event of the RadChat, create a [RadDesktopAlert]({%slug raddesktopalert-getting-started%}) and set its Content to a new __MessageGroupViewModel__. We are going to use the __MessageGroup__ control to display the new message in the alert, however it can be replaced by a custom DataTemplate as well.
+Handle the __SendMessage__ event of the RadChat control, create a [RadDesktopAlert]({%slug raddesktopalert-getting-started%}) and set its Content to a new __MessageGroupViewModel__. We are going to use the __MessageGroup__ control to display the new message in the alert, however it can be replaced by a custom DataTemplate as well.
  
 #### __[XAML]__
 {{region kb-chat-showing-message-desktop-alert-0}}

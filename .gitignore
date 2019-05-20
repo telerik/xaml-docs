@@ -7,6 +7,8 @@
 .ruby-version
 /.asset-cache/
 /_assets/
+/_build/
+/_buildApi/
 /_common/root/
 /_data/
 /_includes/
@@ -28,6 +30,7 @@ Gemfile
 Gemfile.lock
 install-npm.sh
 knowledge-base.html
+modify-config.sh
 robots.txt
 search.html
 start-docs.sh

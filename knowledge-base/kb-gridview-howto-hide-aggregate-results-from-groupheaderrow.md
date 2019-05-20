@@ -20,11 +20,11 @@ res_type: kb
 
 ## Description
 
-By default, when the RadGridView is grouped, the GroupHeaderRow shows the aggregate results of the [AggregateFunctions]({%slug gridview-columns-aggregate-functions%}) defined for all columns. This is the default behavior of the __AggregateResultsList__, which resides in the GroupHeaderRow ControlTemplate. This article will demonstrate how this behavior can be changed. 
+How to hide the aggregate results from the GroupHeaderRow when RadGridView is grouped, and [AggregateFunctions]({%slug gridview-columns-aggregate-functions%}) are defined.
 
 ## Solution
 
-1. Handle the __Loaded__ event of the __AggregateResultsList__ through an implicit style.
+1. Handle the __Loaded__ event of the __AggregateResultsList__, which shows the aggregate results in the GroupHeaderRow, through an implicit style.
 
 	#### __[XAML]__
 	{{region kb-gridview-howto-hide-aggregate-results-from-groupheaderrow-0}}

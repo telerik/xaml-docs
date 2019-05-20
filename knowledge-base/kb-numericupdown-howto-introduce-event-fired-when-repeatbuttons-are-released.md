@@ -1,5 +1,5 @@
 ---
-title: Introduce Event That is Fired When RepeatButtons are Released
+title: Create Event That is Fired When RepeatButtons are Released
 description: Implement event which is thrown when RepeatButtons are released
 type: how-to
 page_title: Add event thrown when the up or down button is let go
@@ -20,7 +20,7 @@ res_type: kb
 
 ## Description
 
-By default, when the user holds down the up or down RepeatButtons of the RadNumericUpDown, its __Value__ property is continuosly updated and the __ValueChanged__ event is called each time. This article will demonstrate how to receive only one notification, when the user releases the RepeatButton.
+How to receive only one notification, when the user releases the RepeatButton in a RadNumericUpDown.
 
 ## Solution
 

@@ -43,8 +43,6 @@ The __SelectionOnFocus__ property of the __RadMaskedInput__ controls allows you 
 
 * __Unchanged__ - when a __RadMaskedInput__ control is focused, the position of the cursor won't be changed. This is the __default value__ for the __SelectionOnFocus__ property.					
 
-* __Default__ - when a __RadMaskedInput__ control is focused, the __SelectionOnFocus__ behavior depends on the type of the control. In the __RadMaskedDateTimeInput__ and __RadMaskedTextInput__ the __Default__ __SelectionOnFocus__ behavior won't change the position of the curser (the __Unchanged SelectionOnFocus__ behavior is applied). In the __RadMaskedNumericInput__ and the __RadMaskedCurrencyInput__ controls the __Default SelectionOnFocus__ behavior will place the curser before the decimal point.		
-
 * __Default__: When a __RadMaskedInput__ control is focused, the __SelectionOnFocus__ behavior depends on the type of the control.
 	* In the __RadMaskedDateTimeInput__ and __RadMaskedTextInput__ the __Default__ __SelectionOnFocus__ behavior will place the cursor at the beginning if the value of the control is still not set. Otherwise the control won't change the position of the cursor - the __Unchanged SelectionOnFocus__ behavior is applied.
 	* In the __RadMaskedNumericInput__ and the __RadMaskedCurrencyInput__ controls the __Default SelectionOnFocus__ behavior will place the cursor before the decimal point if the value of the control is still not set. Otherwise the control will behave as if in the Unchanged SelectionOnFocus mode.

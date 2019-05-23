@@ -46,7 +46,7 @@ Here are the __common properties__ for all kinds of axes:
 
 * __TickOrigin__ (available in LinearAxis and DateTimeContinuousAxis): Gets or sets a value that indicates where the ticks originate. The positions of the ticks are determined based on the combination of the __MajorStep__ and __TickOrigin__ values. The axis will generate the ticks and labels in a way so that a label is positioned at the given TickOrigin.
 
-* __DesiredTickCount__ (available for LinearAxis and LogarithmicAxis): This property specifies the desired number of ticks to be drawn on the axis. Note, that the actual number of ticks may be be slightly higher or lower, since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if theDesiredTickCount is 7, 6 or 8 ticks may be drawn, depending on the range of the axis.
+* __DesiredTickCount__ (available for LinearAxis and LogarithmicAxis): This property specifies the desired number of ticks to be drawn on the axis. Note, that the actual number of ticks may be be slightly higher or lower, since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if theDesiredTickCount is 7, than 6 or 8 ticks may be drawn, depending on the range of the axis.
 
 The axis supports arbitrary visualization of the ticks and labels through DataTemplate objects and also supports a dash array and a stroke color for the visualization of the axis line. For increased flexibility, the label templates can be selected dynamically with a template selector, as shown in __Examples 1 and 2__.        
 

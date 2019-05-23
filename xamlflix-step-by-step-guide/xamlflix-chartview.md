@@ -10,11 +10,11 @@ position: 2
 
 # RadChartView
 
-This tutorial will introduce the RadChartView, part of the Telerik suite of XAML controls.  RadChartView is the our next generation chart offering that builds upon our experience with the general-purpose RadChart control.
+This tutorial will introduce the RadChartView, part of the Telerik suite of XAML controls.  RadChartView is the next generation chart offering that builds upon our experience with the general-purpose RadChart control.
 
 We will show you how to get started with the two RadChartView charts: RadCartesianChart and RadPolarChart.
 
-This tutorial covers the same material as [these videos](http://blogs.telerik.com/evanhutnick/posts/12-01-26/introducing-xamlflix---starting-with-radchartview-for-silverlight-and-wpf.aspx), where you can also download source code. 
+This tutorial covers the same material as [these videos](https://www.telerik.com/blogs/introducing-xamlflix---starting-with-radchartview-for-silverlight-and-wpf), where you can also download the source code. 
 
 ## Setting Up The Project
 
@@ -212,7 +212,7 @@ Let’s start with a new project, setting it up and including the libraries as a
 #### __XAML__
 
 {{region xamlflix_chartview_10}}
-	<telerik:RadCartesianChart Name=�xCartesianChart�>
+	<telerik:RadCartesianChart Name="xCartesianChart">
 	    
 	</telerik:RadCartesianChart>
 {{endregion}}
@@ -226,7 +226,7 @@ This time however, rather than using the Gallery, we’ll hand tool our chart.  
 	</telerik:RadCartesianChart.Grid>
 {{endregion}}
 
-Within this element the only element available is CartesianChartGrid, which we will add and which we’ll use to set the characteristics of the grid, such as the MajorLinesVisiblity, etc.,
+Within this element the only element available is CartesianChartGrid, which we will add and use to set the characteristics of the grid, such as the MajorLinesVisiblity, etc.,
 
 #### __XAML__
 
@@ -238,7 +238,7 @@ Within this element the only element available is CartesianChartGrid, which we w
 	</telerik:RadCartesianChart.Grid>
 {{endregion}}
 
-The next step is to set up our axes. Intellisense is tremendously helpful here. Let’s begin by setting the vertical axis.
+The next step is to set up our axes. IntelliSense is tremendously helpful here. Let’s begin by setting the vertical axis.
 
 #### __XAML__
 
@@ -258,7 +258,7 @@ We’ll also set the horizontal axis to categorical (marking the categories for 
 	</telerik:RadCartesianChart.HorizontalAxis>	
 {{endregion}}
 
-The designer now informs us that we have no series. Intellisense will show us that we have a wide variety of series that we can choose from (BarSeries, AreaSeries, etc.).  We’ll choose SplineAreaSeries to create a spline chart.
+The designer now informs us that we have no series. IntelliSense will show us that we have a wide variety of series that we can choose from (BarSeries, AreaSeries, etc.).  We’ll choose SplineAreaSeries to create a spline chart.
 
 #### __XAML__
 
@@ -301,7 +301,7 @@ The action will take place in the page loaded event handler,
 	}
 {{endregion}}
 
-We’ve created 20 values, where the x value counts from 1 to 20 and the YValue is a random double. We want these values to be the itemssource for the first series (and in this case, the only series) in the chart, 
+We’ve created 20 values, where the x value counts from 1 to 20 and the YValue is a random double. We want these values to be the ItemsSource for the first series (and in this case, the only series) in the chart, 
 
 #### __C#__
 
@@ -309,7 +309,7 @@ We’ve created 20 values, where the x value counts from 1 to 20 and the YValue 
 	xCartesianChart.Series[0].ItemsSource = ChartDatas;
 {{endregion}}
 
-Let’s run the solution and see how our chart looks, you should see something that looks like the mountains of [Mordor](http://en.wikipedia.org/wiki/Mordor), as shown in figure 5.
+Let’s run the solution and see how our chart looks. You should see something that looks like the mountains of [Mordor](http://en.wikipedia.org/wiki/Mordor), as shown in figure 5.
 
 Figure 5
 ![ChartView Figure 5](images/xamlflix_chartview_5.png)
@@ -318,7 +318,7 @@ Figure 5
 
 If you modify the for loop in the previous example to count to 200 rather than to 20, you will get a very powerful overview, but the tick marks on the x axis will be unreadable and it won’t be possible to see a manageable number of points at any one time.		
 
-To solve this problem, you can add a behavior for Zoom and Pan.  This is shockingly easy to do, and Intellisense will guide you through it.
+To solve this problem, you can add a behavior for Zoom and Pan.  This is shockingly easy to do, and IntelliSense will guide you through it.
 
 #### __XAML__
 
@@ -448,7 +448,7 @@ It may be that you do not want to display the category or value in the default w
 	</telerik:AreaSeries>
 {{endregion}}
 
-Within these tags, place a AreaSeries.TrackBallInfoTemplate, which in turn takes a DataTemplate
+Within these tags, place an AreaSeries.TrackBallInfoTemplate, which in turn takes a DataTemplate
 
 #### __XAML__
 
@@ -542,7 +542,7 @@ With that in place we can create a method to generate the data for the diagram,
 	}
 {{endregion}}
 
-Finally, we are ready to return to the constructor, and to set the X and YValue Databinding and to set the datasource,
+Finally, we are ready to return to the constructor, and to set the XValue and YValue data binding and to set the data source,
 
 #### __C#__
 

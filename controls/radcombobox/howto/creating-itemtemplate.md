@@ -6,6 +6,7 @@ slug: radcombobox-creating-itemtemplate
 tags: creating,itemtemplate,and,selectionboxtemplate
 published: True
 position: 1
+include_in_navigation: False
 ---
 
 # Creating ItemTemplate and SelectionBoxTemplate

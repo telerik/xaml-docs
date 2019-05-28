@@ -12,7 +12,7 @@ position: 1
 
 As explained in the [External Row Details]({%slug radgridview-row-details-external-row-details%}) article, in order to display the row details outside of the RadGridView control, you need to place a **DetailsPresenter** control somewhere around RadGridView and wire them up. Well, it does not need to be around, really. This article will show how to place it in a [RadWindow]({%slug radwindow-getting-started%}) control and position it next to the selected row.
 
-#### __[C#] Example 1: Creating the RadWindow and setting a DetailsPresenter as its Content__
+#### __[C#] Example 1: Creating a RadWindow and setting a DetailsPresenter as its Content__
 
 {{region cs-gridview-how-to-display-row-details-window_0}}
 	private void Grid_Loaded(object sender, RoutedEventArgs e)
@@ -44,9 +44,9 @@ The DetailsPresenter cares about three things – what is the [DataTemplate](htt
 	}
 {{endregion}}
 
-As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface. Each time a row is selected in RadGridView, the DataContext of the DetailsProvider changes. The DetailsPresenter listens for these property changes and updates as needed. We can listen for a PropertyChanged ourselves and position the window accordingly.
+As you can see, it implements the [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface. Each time a row is selected in RadGridView, the DataContext of the DetailsProvider changes. The DetailsPresenter listens for these property changes and updates as needed. We can listen for a PropertyChanged ourselves and position the window accordingly.
 
-#### __[C#] Example 3:__
+#### __[C#] Example 3: Handling the PropertyChanged event__
 
 {{region cs-gridview-how-to-display-row-details-window_2}}
 	private void OnRowDetailsProviderPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

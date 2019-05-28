@@ -43,6 +43,8 @@ How to increase the CheckBox size of the GridViewSelectColumn.
         </Setter>
     </Style>
   {{endregion}}
+  
+>importantIf you're not using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism for theming the controls with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), you need to omit the BasedOn attribute.
 
 2. Set the style as the **CheckBoxStyle** of the [GridViewSelectColumn]({%slug radgridview-columns-column-types-select-column%}).
 

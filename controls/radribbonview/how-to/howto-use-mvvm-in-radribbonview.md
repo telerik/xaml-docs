@@ -176,7 +176,7 @@ Next we will define a RadRibbonView and set the DataContext to an instance of ou
 
 ## SimplifiedRibbon MVVM
 
-Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) scenario is as simple as setting the __SimplifiedItemTemplate__ property (along with the __ItemTemplate__) to the corresponding datatemplate and setting the __LayoutMode__ property to __Simplified__. 
+Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) scenario is as simple as setting the __SimplifiedItemTemplate__ property (along with the __ItemTemplate__) to the corresponding DataTemplate and setting the __LayoutMode__ property to __Simplified__. 
 
 #### __[XAML] Example 4: SimplifiedRibbon MVVM__
 {{region xaml-howto-use-mvvm-in-radribbonview-3}}

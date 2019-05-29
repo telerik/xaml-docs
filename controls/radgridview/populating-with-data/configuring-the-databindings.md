@@ -26,7 +26,7 @@ Last but not least, if the bound source collection implements the **IEditableCol
 
 ## Binding to an ObservableCollection
 
-For the purposes of this example we will assume that the control will be bound to a collection of **Player** objects. Please note that the class inherits from **ViewModelBase** which is the Telerik implementation of the **INotifyPropertyChanged** interface.
+For the purposes of this example the control will be bound to a collection of **Player** objects. Please note that the class inherits from **ViewModelBase** which is the Telerik implementation of the **INotifyPropertyChanged** interface.
 
 #### __[C#] Example 1: The Player class__
 
@@ -64,32 +64,32 @@ For the purposes of this example we will assume that the control will be bound t
     }
 {{endregion}}
 
-We will then create a ObservableCollection of Player objects in our viewmodel.
+The next step is to create an __ObservableCollection__ of Player objects in our viewmodel.
 
 #### __[C#] Example 2: Create an ObservableCollection in the viewmodel__
 
 {{region cs-gridview-configuring-the-databindings_2}}    
 	public class MainWindowViewModel : ViewModelBase
-    {
-        private ObservableCollection<Player> players;
+	{
+		private ObservableCollection<Player> players;
 
-        public ObservableCollection<Player> Players
-        {
-            get
-            {
-                if (this.players == null)
-                {
-                    this.players = new ObservableCollection<Player>();
-                    this.players.Add(new Player() { Name = "Pepe Reina", Number = 25 });
-                    this.players.Add(new Player() { Name = "Jamie Carragher", Number = 23 });
-                    this.players.Add(new Player() { Name = "Steven Gerrard", Number = 8 });
-                    this.players.Add(new Player() { Name = "Fernando Torres", Number = 9 });
-                }
+		public ObservableCollection<Player> Players
+		{
+		    get
+		    {
+			if (this.players == null)
+			{
+			    this.players = new ObservableCollection<Player>();
+			    this.players.Add(new Player() { Name = "Pepe Reina", Number = 25 });
+			    this.players.Add(new Player() { Name = "Jamie Carragher", Number = 23 });
+			    this.players.Add(new Player() { Name = "Steven Gerrard", Number = 8 });
+			    this.players.Add(new Player() { Name = "Fernando Torres", Number = 9 });
+			}
 
-                return this.players;
-            }
-        }
-    }
+			return this.players;
+		    }
+		}
+	}
 {{endregion}}
 
 All that's left is to bind this collection to our RadGridView control.
@@ -119,7 +119,7 @@ By default, RadGridView will try to automatically generate columns based on the 
 
 ![Telerik {{ site.framework_name }} DataGrid ObservableCollection ItemsSource](images/RadGridView_ObservableCollection_ItemsSource.png)
 
-> To learn more about defining columns and the different types of columns, take a look at the [Columns]({%slug gridview-columns-overview%}) section.
+> To learn more about defining columns and the different types of columns, you can take a look at the [Columns]({%slug gridview-columns-overview%}) section.
 
 ## See Also
 

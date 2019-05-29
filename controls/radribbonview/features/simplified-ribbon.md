@@ -57,7 +57,7 @@ Before switching the layout, you have to define what will be shown in the simpli
 
 > The __SimplifiedResourses__ property of the __RadRibbonTab__ can be used in order to add any resources that should be applied when the LayoutMode is Simplified.
 
-## Databinding
+## Data Binding
 
 In an MVVM scenario, the __SimplifiedItemTemplate__ property of the RadRibbonView needs to be set along with the __ItemTemplate__. Read more about that in the [Use MVVM in RadRibbonView]({%slug howto-use-mvvm-in-radribbonview%}) article. 
 

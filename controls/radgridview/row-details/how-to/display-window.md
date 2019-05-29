@@ -76,7 +76,7 @@ As you can see, it implements the [INotifyPropertyChanged](http://msdn.microsoft
 	private Point CalculateWindowLocation(GridViewRow row)
 	{
             var lastCell = row.Cells[row.Cells.Count - 1];
-            GeneralTransform generalTransform = lastCell.TransformToVisual(Application.Current.RootVisual);
+            GeneralTransform generalTransform = lastCell.TransformToVisual(this.LayoutRoot);
             return generalTransform.Transform(new Point(lastCell.ActualWidth + 10, 0));
 	}
 {{endregion}}

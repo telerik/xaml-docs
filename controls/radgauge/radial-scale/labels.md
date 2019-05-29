@@ -27,13 +27,13 @@ For the purpose of this tutorial the code snippet in __Example 1__ will be used.
 
 ## Label Location
 
-The location of the labels can be change using the __LabelLocation__. 
+You can change the location of the labels by using the __LabelLocation__. 
 
 ![](images/radial-scale-labels-labellocation.png)
 
 ## Label Rotation Mode
 
-You can control label rotation on radial scale using __LabelRotationMode__ property. It can have the following values:
+You can control the label rotation on the radial scale using __LabelRotationMode__ property. It can have the following values:
 
 ![](images/radial-scale-labels-label_rotation-mode.png)
 
@@ -66,7 +66,7 @@ You can use the GaugeRange element on a radial scale to re-color labels automati
 
 ## Label Format
 
-To change the format of the labels, you can use the __LabelFormat__ property. __Example 3__ demonstrate how you could add % symbol to the labels.
+To change the format of the labels, you can use the __LabelFormat__ property. __Example 3__ demonstrate how you could add a **%** symbol to the labels.
 
 #### __[XAML] Example 3: Set the LabelFormat property__
 {{region radial-scale-labels_1}}
@@ -83,7 +83,7 @@ To change the format of the labels, you can use the __LabelFormat__ property. __
 
 ## Label Offset
 
-In a scenario where you want to offset the labels in order to avoid overlap for example, you can set the __LabelOffset__ property.
+In a scenario where you want to offset the labels in order to avoid overlaps for example, you can set the __LabelOffset__ property.
 
 #### __[XAML] Example 3: Set the LabelOffset property__
 {{region radial-scale-labels_1}}
@@ -100,7 +100,7 @@ In a scenario where you want to offset the labels in order to avoid overlap for 
 
 ## Common Properties
 
-Other properties which can be used to further customized the labels are:
+Other properties which can be used to further customize the labels are:
 
 * LabelTemplate
 * LabelTooltipFormat

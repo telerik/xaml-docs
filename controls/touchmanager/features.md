@@ -1,9 +1,9 @@
 ---
 title: Features
 page_title: Features | TouchManager
-description: Features
+description: This article lists the main properties and methods exposed by the RadTabbedWindow control.
 slug: touchmanager-features
-tags: touch,manager,touchmanager,features
+tags: touch,manager,touchmanager,features,properties,methods,gestures,swipe,tap,distance,duration,
 published: True
 position: 1
 ---
@@ -20,7 +20,7 @@ Here you can find common information about the properties and methods of TouchMa
 
 TouchManager exposes the following public properties:
 
-* __IsTouchEnabled__: A static property of type __bool__ that indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the TouchManager.
+* __IsTouchEnabled__: A static property of type __bool__ that indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the TouchManager. The default value is __true__.
 
 * __TouchMode__: An attached property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration that gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-overview%}) help article.
 
@@ -45,23 +45,25 @@ TouchManager exposes the following public properties:
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
 	{{endregion}}
 
-* __ShouldSuspendMousePromotion__: An attached property of type __bool__ that indicates whether mouse events should be suspended during touch input.
+* __ShouldSuspendMousePromotion__: An attached property of type __bool__ that indicates whether mouse events should be suspended during touch input. The default value is __false__.
 		
-* __DragStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a drag. The distance is measured in pixels.
+* __DragStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a drag. The distance is measured in pixels. The default value is __5__.
 
-* __PinchStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a pinch. The distance is measured in pixels.
+* __PinchStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a pinch. The distance is measured in pixels. The default value is __5__.
 
-* __SwipeStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a swipe. The distance is measured in pixels.
+* __SwipeStartDistance__: A static property of type __double__ that gets or sets the minimum distance a touch point has to move before the action is considered a swipe. The distance is measured in pixels. The default value is __5__.
 
-* __SwipeInertiaDuration__: A static property of type __int__ that gets or sets the duration of the swipe inertia. The duration is measured in milliseconds.
+* __SwipeInertiaDuration__: A static property of type __int__ that gets or sets the duration of the swipe inertia. The duration is measured in milliseconds. The default value is 1000.
 
-* __TapTime__: A static property of type __int__ that gets or sets the time that can elapse between a touch down and a touch up for the action to be considered a tap. The time is measured in milliseconds.
+* __TapTime__: A static property of type __int__ that gets or sets the time that can elapse between a touch down and a touch up for the action to be considered a tap. The time is measured in milliseconds. The default value is __800__.
 
-* __TapVicinity__: A static property of type __double__ that gets or sets the maximum distance a touch point can move for the action to be considered a tab. The distance is measured in pixels.
+* __TapVicinity__: A static property of type __double__ that gets or sets the maximum distance a touch point can move for the action to be considered a tab. The distance is measured in pixels. The default value is __5__.
 
-* __MultiTapTime__: A static property of type __int__ that gets or sets the time that can elapse between two successive tap actions for the TouchManager to consider them as multiple taps. The time is measured in milliseconds.
+>When Tap and Swipe gestures are used, the TapVicinity property needs to be less than SwipeStartDistance, otherwise it will not have an effect.
 
-* __MultiTapVicinity__: A static property of type __int__ that gets or sets the distance between two successive tap actions for the TouchManager to consider them as multiple taps. The distance is measured in pixels.
+* __MultiTapTime__: A static property of type __int__ that gets or sets the time that can elapse between two successive tap actions for the TouchManager to consider them as multiple taps. The time is measured in milliseconds. The default value is __500__.
+
+* __MultiTapVicinity__: A static property of type __int__ that gets or sets the distance between two successive tap actions for the TouchManager to consider them as multiple taps. The distance is measured in pixels. The default value is __10__.
 
 * __DragStartTrigger__: An attached property of type __Telerik.Windows.Input.Touch.TouchDragStartTrigger__ enumeration that gets or sets the touch action that triggers the drag operation. The enumeration contains the following triggers.
 	* __TapHoldAndMove__: The drag operation will be triggered during a TouchMove event after a TapAndHold.

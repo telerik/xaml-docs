@@ -1,5 +1,5 @@
 ---
-title: How to an Create Implicit Style in Code
+title: How to Create Implicit Style in Code
 description: How to Add Implicit Style in code-behind
 type: how-to
 page_title: How to Define Implicit Style in Code
@@ -16,7 +16,7 @@ This is common information applicable to the WPF framework in general.
 
 ## Description
 
-How to an create implicit style in code.
+How to create an implicit style in code.
 
 ## Solution
 

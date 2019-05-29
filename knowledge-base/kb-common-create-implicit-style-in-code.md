@@ -24,8 +24,13 @@ Call the `Add` method of the corresponding `Resources` collection with the targe
 
 #### __[C#]__
 {{region kb-common-create-implicit-style-in-code}}
-	Style style = new Style(typeof(Button));
-	style.Setters.Add(new Setter(Button.ForegroundProperty, Brushes.Red));
-	
-	uiElement.Resources.Add(typeof(Button), style);
+	public MainWindow()
+	{
+		InitializeComponent();
+		
+		Style style = new Style(typeof(Button));
+		style.Setters.Add(new Setter(Button.ForegroundProperty, Brushes.Red));
+
+		this.Resources.Add(typeof(Button), style);
+	}
 {{endregion}}

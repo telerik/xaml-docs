@@ -29,9 +29,9 @@ How to define the minimum and maximum size for the CropTool in RadImageEditor.
 ## Solution 
 
 1. Create a custom tool deriving from `CropTool`.
-2. Create an parameterless constructor and use a reflection to get the `CropAdorner` control.
+2. Create a parameterless constructor and use reflection to get the `CropAdorner` control.
 3. Susbcribe to the `CropRectChanged` event of CropAdorner.
-4. In the event handler limit the of the adorner, by setting its `CropRect` property. You can expose additional properties on the custom crop tool class which can hold the min and max sizes.
+4. In the event handler limit the size of the adorner, by setting its `CropRect` property. You can expose additional properties on the custom crop tool class which can hold the min and max sizes.
 
 #### __[C#]__
 {{region kb-imageeditor-limi-croptool-size-0}}

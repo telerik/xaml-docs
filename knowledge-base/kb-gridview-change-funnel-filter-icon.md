@@ -1,6 +1,6 @@
 ---
 title: How to Change the Funnel Filter Icon in RadGridView
-description: Chaning the filter image of the column header with a RadGlyph element
+description: Changing the filter image of the column header with a RadGlyph element
 type: how-to
 page_title: How to Replace the Icon of FilteringDropDown in RadGridView
 slug: kb-gridview-change-funnel-filter-icon

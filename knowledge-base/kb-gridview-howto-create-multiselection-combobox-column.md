@@ -1,8 +1,8 @@
 ---
-title: Create Multi Select GridViewComboBoxColumn
+title: Create Multi-Select GridViewComboBoxColumn
 description: How to add a column with a RadComboBox editor which supports multiple selection
 type: howto
-page_title: MultiSelection ComboBox column for RadGridView
+page_title: Multiselection ComboBox column for RadGridView
 slug: kb-gridview-howto-create-multiselection-combobox-column
 position: 0
 tags: combobox,allowmultipleselection,editor
@@ -20,11 +20,11 @@ res_type: kb
 
 ## Description
 
-Create a column with a RadComboBox editor, which supports multiple selection. 
+Create a column with a RadComboBox editor which supports multiple selection. 
 
 ## Solution
 
-__1.__ First we are going to create some sample objects with which to populate the RadGridView. The grid will be populated with a collection of Pilot objects and the RadComboBox will contain Country objects.
+__1.__ First, we are going to create some sample objects with which to populate the RadGridView. The grid will be populated with a collection of Pilot objects and the RadComboBox will contain Country objects.
 
 #### __[C#]__
 {{region cs-kb-gridview-howto-create-multiselection-combobox-column-0}}
@@ -153,7 +153,7 @@ __1.__ First we are going to create some sample objects with which to populate t
     }
 {{endregion}}
 
-__2.__ Next, we will implement our custom column. We will inherit [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}) and override the __CreateCellElement__ and __CreateCellEditElement__ methods. Those are responsible for creating the TextBlock visible in view mode and the RadComboBox editor. We also define two custom properties, which will be transferred to the RadComboBox, when it is created. 
+__2.__ Next, we will implement our custom column. We will inherit [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}) and override the __CreateCellElement__ and __CreateCellEditElement__ methods. Those are responsible for creating the TextBlock visible in view mode and the RadComboBox editor. We also define two custom properties which will be transferred to the RadComboBox when it is created. 
 
 #### __[C#]__
 {{region cs-kb-gridview-howto-create-multiselection-combobox-column-1}}
@@ -162,13 +162,13 @@ __2.__ Next, we will implement our custom column. We will inherit [GridViewDataC
         public static readonly DependencyProperty ItemsSourceProperty =
             DependencyProperty.Register("ItemsSource",
                 typeof(IEnumerable),
-                typeof(GridViewComboBoxColumn),
+                typeof(MultiSelectionGridViewComboBoxColumn),
                 null);
        
         public static readonly DependencyProperty DisplayMemberPathProperty =
             DependencyProperty.Register("DisplayMemberPath",
                 typeof(string),
-                typeof(GridViewComboBoxColumn),
+                typeof(MultiSelectionGridViewComboBoxColumn),
                 new PropertyMetadata(string.Empty));
 
       
@@ -261,7 +261,7 @@ __2.__ Next, we will implement our custom column. We will inherit [GridViewDataC
     }
 {{endregion}}
 
-__3.__ Finally, we need to define our custom column and set the ItemsSource property to a collection, which will transferred to the RadComboBox.
+__3.__ Finally, we need to define our custom column and set the ItemsSource property to a collection which will be transferred to the RadComboBox.
 
  #### __[XAML]__
 {{region xaml-kb-gridview-howto-create-multiselection-combobox-column-2}}

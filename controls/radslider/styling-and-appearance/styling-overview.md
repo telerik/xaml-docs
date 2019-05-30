@@ -16,7 +16,7 @@ __RadSlider__ allows you to easily modify its appearance by providing some usefu
 
 ## ThumbStyle
 
-Via the ThumbStyle property, you can control the appearance of the thumb which is used control the Value.
+Via the ThumbStyle property you can control the appearance of the thumb which is used to control the **Value**.
 
 #### [XAML] Example 1: Specify ThumbStyle
 
@@ -46,7 +46,7 @@ Via the ThumbStyle property, you can control the appearance of the thumb which i
 
 ## SelectionMiddleThumbStyle
 
-Via the SelectionMiddleThumbStyle property, you can control the appearance of the middle thumb which is displayed when the __IsSelectionRangeEnabled__ property is True.
+Via the SelectionMiddleThumbStyle property you can control the appearance of the middle thumb which is displayed when the __IsSelectionRangeEnabled__ property is True.
 
 #### [XAML] Example 2: Specify SelectionMiddleThumbStyle
 
@@ -76,10 +76,9 @@ Via the SelectionMiddleThumbStyle property, you can control the appearance of th
 #### __Figure 2: RadSlider with custom SelectionMiddleThumbStyle__
 ![RadSlider with custom SelectionMiddleThumbStyle](images/radslider_styles_templates_selectionmiddlethumbstyle.png)
 
-
 ## DecreaseHandleStyle and IncreaseHandleStyle
 
-The DecreaseHandleStyle and IncreaseHandleStyle properties, allow you to modify the appearance of the two repeat buttons, which increase and decrease the Value. They are shown, when the __HandlesVisibility__ is True.
+The DecreaseHandleStyle and IncreaseHandleStyle properties allow you to modify the appearance of the two repeat buttons which increase and decrease the Value. They are shown when the __HandlesVisibility__ is True.
 
 #### [XAML] Example 3: Set DecreaseHandleStyle and IncreaseHandleStyle
 {{region xaml-radslider-styling-overview_2}}
@@ -114,7 +113,7 @@ The DecreaseHandleStyle and IncreaseHandleStyle properties, allow you to modify 
 
 ## TickBackStyle
 
-The TickBarStyle property, allows you to modify the appearance of the bottom and top tickbars - the control, which displays the ticks.
+The TickBarStyle property allows you to modify the appearance of the bottom and top tickbars - the controls which displays the ticks.
 
 #### [XAML] Example 4: Set TickBarStyle
 
@@ -145,7 +144,7 @@ The TickBarStyle property, allows you to modify the appearance of the bottom and
 
 ## TrackStyle
 
-The TrackStyle property, lets you modify the appearance RadSlider track.
+The TrackStyle property lets you modify the appearance of the RadSlider track.
 
 #### [XAML] Example 5: Set TrackStyle
 
@@ -174,6 +173,6 @@ The TrackStyle property, lets you modify the appearance RadSlider track.
 #### __Figure 5: RadSlider with custom TrackStyle__
 ![RadSlider with custom TrackStyle](images/radslider_styles_templates_trackstyle.png)
 
->tip The styles in the examples are based on the default styles for the theme. This is the correct approach when the [implicit styling]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) approach is used. If the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming mechanism is chosen, there is no need to base the custom styles on the default one. 
+>tip The styles in the examples are based on the default styles for the theme. This is the correct approach when the [implicit styling]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) approach is used. If the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming mechanism is chosen there is no need to base the custom styles on the default one. 
 
->tip In order to learn how to further modify any of the elements referenced in the article by extracting their ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
+>tip In order to learn how to further modify any of the elements referenced in the article by extracting their control template, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

@@ -14,7 +14,7 @@ This article shows how to use the Telerik Analytics API to implement a custom Go
 
 ## Setting up Google Analytics Dashboard
 
->important This information is relevant to June 2019 and it may not be up-to-date at the moment you read this article.
+>important This information is relevant at the time of writing of this article (June 2019) and it may not be up-to-date at the moment you read this article.
 
 1. Create a Google account and set up the [Analytics dashboard](https://analytics.google.com/analytics).
 
@@ -22,7 +22,7 @@ This article shows how to use the Telerik Analytics API to implement a custom Go
 
 	![](images/google-analytics-integration-0.png)
 	
-3. From the Admin menu click on __Create Property__ and create a new property that tracks a Website data. 
+3. From the Admin menu click on __Create Property__ and create a new property that tracks Website data. 
 
 	![](images/google-analytics-integration-1.png)
 	
@@ -50,7 +50,7 @@ To get access to the dashboard set up from the previous section of this article,
 
 3. Create a new WPF project (or use an existing one). Then reference __GoogleAnalytics.Core.dll__.
 
-4. Add reference to __Telerik.Windows.Controls.dll__.
+4. Add a reference to __Telerik.Windows.Controls.dll__.
 
 ## Implementing the Analytics Provider
 
@@ -285,7 +285,7 @@ You can then use this provider in your custom implementation of the `ITraceMonit
 	End Class
 {{endregion}}
 
-To apply the custom monitor set the static `TraceMonitor.AnalyticsMonitor` property, possibly in the constructor of your application.
+To apply the custom monitor, set the static `TraceMonitor.AnalyticsMonitor` property, possibly in the constructor of your application.
 
 #### __[C#] Example 3: Set TraceMonitor.AnalyticsMonitor__  
 {{region cs-google-analytics-integration_3}}
@@ -311,7 +311,7 @@ After the sucessfull set up of the custom Analytics monitor, the user interactio
 #### __Figure 1: Google Analytics Dashboard__  
 ![Google Analytics Dashboard](images/google-analytics-dashboard.png)
 
-Any actions created with the `HitBuilder.CreateCustomEvent` method will be shown in the __Real-Time-->Events__ menu of the Google Analytics dashboard, few seconds after the sending.
+Any actions created with the `HitBuilder.CreateCustomEvent` method will be shown in the __Real-Time-->Events__ menu of the Google Analytics dashboard, a few seconds after the sending.
 
 ![](images/google-analytics-integration-6.png)
 

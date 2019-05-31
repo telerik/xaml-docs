@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article provides general tips for styling the RadDocking control.
 slug: raddocking-styling-overview
 tags: overview
 published: True
@@ -10,23 +10,17 @@ position: 0
 
 # Overview
 
-This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadDocking__ control. There is also comprehensive information about its __ControlTemplates__. You will need this information if you want to customize their appearance.
+This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadDocking__ control. You will need this information if you want to customize its appearance.
 
 >tipTo learn how to style the controls from the __UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}__ suite read the common topics about Styling and Appearance. If you are new to the controls they will give you the basic knowledge about it.
 
-Some of the controls used in the __RadDocking__ are created dynamically. Such controls are the __PaneHeader__, the [RadPaneGroup]({%slug raddocking-features-pane-groups%}), the [ToolWindow]({%slug raddocking-features-tool-window%}) and the [RadSplitConatainer]({%slug raddocking-features-split-container%}). Since these controls are created dynamically you should place their styles in a theme. To learn more about theming the __RadDocking__ control take a look at the [Theming Overview]({%slug raddocking-theming-overview%}) topic.
-
->tipTo learn how to change the control's theme, please read the common [Theming](http://www.telerik.com/help/silverlight/common-styling-apperance-create-theme-overview.html) topic.
-
-Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadDocking__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. However, when changing the control template you should be careful to include all required parts.
+Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadDocking__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 
 >tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be subject to impact due to the omission of the required parts. The required parts are usually marked with the prefix "PART_".
 
 >tipTo learn more about templating of the controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite read the common topic regarding [templating]({%slug common-styling-appearance-edit-control-templates-blend%}).
 
-Read the following topics to learn:
-
-* [Templates Structure]({%slug raddocking-styles-and-templates-templates-structure%})
+The following topics demonstrate how a style can be created for the different elements in a RadDocking:
 
 * [Controlling Appearance]({%slug raddocking-styling-controlling-appearance%})
 
@@ -48,12 +42,8 @@ Read the following topics to learn:
 
 * [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%})
 
-* [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%})
-
 ## See Also
 
  * [Overview]({%slug raddocking-overview2%})
 
  * [Visual Structure]({%slug raddocking-visual-structure%})
-
- * [Templates Structure]({%slug raddocking-styles-and-templates-templates-structure%})

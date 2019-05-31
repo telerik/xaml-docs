@@ -1,7 +1,7 @@
 ---
 title: Styling the RadPaneGroup
 page_title: Styling the RadPaneGroup
-description: Styling the RadPaneGroup
+description: This article demonstrates how to create a style targeting RadPaneGroup.
 slug: raddocking-styling-the-radpanegroup
 tags: styling,the,radpanegroup
 published: True
@@ -10,47 +10,43 @@ position: 8
 
 # Styling the RadPaneGroup
 
->As the __RadPaneGroup__ is created dynamically, you cannot set the style for it declaratively. The easiest way to do this is to create a theme for your __RadDocking__ control, add the created style for the __RadPaneGroup__ in it and apply the theme to the control. To learn how to do it read [this]({%slug raddocking-theming-radpane-group%}) topic.
+The [RadPaneGroup]({%slug raddocking-features-pane-groups%}) control groups multiple RadPanes in a single contrainer. This article will demonstrate how you can style the control.
 
-To create the needed style for the __Theme__ you should use a dummy control. This will allow you to copy the default style for the __RadPaneGroup__ and modify it to your liking. To do so open the UserControl that hosts your __RadDocking__ in Expression Blend.
+## Targeting the RadPaneGroup Element
 
-From the 'Assets' tab select *Controls -> All -> RadPaneGroup*.
+In order to style all __RadPaneGroups__ in a RadDocking, you should create a style targeting __RadPaneGroup__.
 
-![](images/RadDocking_StylingRadPaneGroup_01.png)
+#### __[XAML] Example 1: Creating an implicit style targeting RadPaneGroup__
 
-Draw one dummy control of this type somewhere on the scene.
+{{region xaml-raddocking-styling-the-radpanegroup-0}}
+    <Application.Resources>
+        <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
+        <Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}">-->
 
-![](images/RadDocking_StylingRadPaneGroup_02.png)
+        <Style TargetType="telerik:RadPaneGroup">
+            <Setter Property="Background" Value="Red" />
+        </Style>
+    </Application.Resources>
 
->tipAfter drawing the __RadPaneGroup__, you won't be able to see it on the scene.
+    <Grid>
+        
+        <telerik:RadDocking>
+            <telerik:RadSplitContainer>
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="Pane 1" />
+                    <telerik:RadPane Header="Test 2"/>
+                    <telerik:RadPane Header="Test 3" />
+                    <telerik:RadPane Header="Test 4" />
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+        </telerik:RadDocking>
+    </Grid>
+{{endregion}}
 
-Select it and from the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed within your application.
+#### __Figure 1: Styled RadPaneGroup in the Office2016 theme__
+![Styled RadPaneGroup in the Office2016 theme](images/RadDocking_RadPaneGroup_Styling.png)
 
-After clicking OK, a style for your __RadPaneGroup__ control will be created.{% if site.site_name == 'Silverlight' %}
-
-Go to the 'Properties' pane and edit the desired properties. For example, select the __Background__ property and see to which local brush it is bound.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadDocking_StylingRadPaneGroup_05.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-Here is an example of the above resources modified:{% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadDocking_StylingRadPaneGroup_06.png){% endif %}{% if site.site_name == 'WPF' %}
-
-Go to the 'Properties' pane and edit the desired properties. For example, select the __Background__ property and modify its value.{% endif %}{% if site.site_name == 'WPF' %}
-
-![](images/RadDocking_StylingRadPaneGroup_05_06_WPF.png){% endif %}{% if site.site_name == 'WPF' %}
-
-Modify the __BorderBrush__ property too.{% endif %}{% if site.site_name == 'WPF' %}
-
-![](images/RadDocking_StylingRadPaneGroup_07_08_WPF.png){% endif %}
-
-After finishing with the modifications you have to add the created style to the theme for your __RadDocking__. To learn how take a look at the [Theming the RadPaneGroup]({%slug raddocking-theming-radpane-group%}) topic.
-
-After moving the style to the theme you can remove it from the resources of your UserControl. Also don't forget to delete the dummy control that you have created.
-
-Here is a snapshot of the final result.
-
-![](images/RadDocking_StylingRadPaneGroup_10.png)
+>tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
 ## See Also
 
@@ -59,7 +55,5 @@ Here is a snapshot of the final result.
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
 
  * [RadPane]({%slug raddocking-panes-radpane%})
-
- * [Theming the RadPaneGroup]({%slug raddocking-theming-radpane-group%})
 
  * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})

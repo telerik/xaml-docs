@@ -320,7 +320,9 @@ navigation:
         title: Styles and Templates
         position: 9
     controls/radchartview3d/features/behaviors:
-        title: Behaviors     
+        title: Behaviors  
+    controls/radchartview/howto:
+        title: How To 
     "*area-series":
         title: Area Series
     "*line-series":

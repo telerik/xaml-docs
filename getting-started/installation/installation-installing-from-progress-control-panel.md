@@ -26,7 +26,7 @@ To start, download the Progress Control Panel from the following [page](https://
 
 Afterwards, you will be presented with a screen containing sections for **All** products, **Purchased** products, **Trial** products, and **Free** products. These sections each have a split screen view - the left contains installed products that can be updated and the right contains products that can be installed.
 
-You can continue by selecting the **Telerik UI for WPF suite**. Once you click the checkbox, the option to proceed or cancel will be displayed.
+You can continue by selecting the **Telerik UI for {{ site.framework_name }} suite**. Once you click the checkbox, the option to proceed or cancel will be displayed.
 
 #### Figure 2: The Progress Control Panel List of Available Products
 

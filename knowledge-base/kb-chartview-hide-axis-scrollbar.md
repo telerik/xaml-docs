@@ -44,4 +44,4 @@ Define a Style that targets the PanZoomBar control and set it to the `PanZoomBar
 {{endregion}}
 
 ## See Also
-* [Axis]({%slug radchartview-axes-axis})
+* [Axis]({%slug radchartview-axes-axis%})

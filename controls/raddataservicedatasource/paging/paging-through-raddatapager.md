@@ -5,14 +5,10 @@ description: Paging through RadDataPager
 slug: raddataservicedatasource-paging-paging-through-raddatapager
 tags: paging,through,raddatapager
 published: True
-position: 1
+position: 0
 ---
 
 # Paging through RadDataPager
-
-
-
-## 
 
 If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side paging. The two controls will automatically communicate with each other thanks to the __IPagedCollectionView__ interface which both respect:
 
@@ -37,10 +33,6 @@ If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, yo
 	</Grid>
 {{endregion}}
 
-
-
 In this case on running the application the following will be visualized:
 
 ![](images/RadDataServiceDataSource_PagingThroughRadDataPager.png)
-
-

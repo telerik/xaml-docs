@@ -10,19 +10,19 @@ position: 7
 
 # Events
 
-Here is more detailed information about the events exposed by the __RadDateTimePicker__ control:
+This article provides more detailed information about the events exposed by the __RadDateTimePicker__ control. As it inherits from the **Control** class, it also inherits all of its public events. A full list of the inherited events can be found [here](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control#events). In addition, the RadDateTimePicker exposes a few useful events.
         
 ## ParseDateTimeValue
 
 The __ParseDateTimeValue__ event is raised in the following cases:            
 
-* On lost focus
+* When the control loses focus.
 
-* When you select a value from the drop-down pane
+* When you select a value from the drop-down pane.
 
-* When you type a character in the control's input box
+* When you type a character in the control's input box.
 
-The event handler receives two arguments:            
+The **ParseDateTimeEventHandler** receives two arguments:            
 
 * The sender argument contains the __RadDateTimePicker__ control.
 
@@ -32,19 +32,19 @@ The event handler receives two arguments:
 
 <!-- -->
 
->tipSee an example of having a custom parsing logic in your __RadDateTimePicker__ control [here]({%slug raddatetimepicker-how-to-implement-custom-parsing%}).
+>tipSee an example of implementing custom parsing logic in your __RadDateTimePicker__ control by using the ParseDateTimeValue event [here]({%slug raddatetimepicker-how-to-implement-custom-parsing%}).
 
 ## SelectionChanged
 
 The __SelectionChanged__ event is raised in the following cases:            
 
-* On lost focus
+* When the control loses focus.
 
-* When you  select a value from the drop-down pane
+* When you  select a value from the drop-down pane.
 
 * When you enter some text, which can be successfully parsed and hit the Enter key on your keyboard.
 
->tip The text you enter in the input box can be successfully parsed any time except when you see the __ErrorTooltip__. Hitting Enter in this cases will set the __RadDateTimePicker's SelectedValue__ property to the content visible in the [Preview Tooltip.]({%slug raddatetimepicker-features-preview-tooltip%})
+>tip If the text you enter in the input box can be successfully parsed, the [Preview Tooltip]({%slug raddatetimepicker-features-preview-tooltip%}) is shown. Hitting **Enter** in this case will set the RadDateTimePicker's __SelectedValue__ property to the content visible in the tooltip. If the input cannot be parsed, the content set as the __ErrorTooltipContent__ is displayed and the value is cleared upon pressing the Enter key.
 
 The event handler receives two arguments:
 

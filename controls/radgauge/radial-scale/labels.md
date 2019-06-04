@@ -33,7 +33,8 @@ You can change the location of the labels by using the __LabelLocation__.
 
 ## Label Rotation Mode
 
-You can control the label rotation on the radial scale using __LabelRotationMode__ property. It can have the following values:
+You can control the label rotation on the radial scale using __LabelRotationMode__ property. It can have the following values: __None__, 
+__Automatic__, __SurroundIn__, __SurroundOut__. 
 
 ![](images/radial-scale-labels-label_rotation-mode.png)
 

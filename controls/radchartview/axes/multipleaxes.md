@@ -1,7 +1,7 @@
 ---
 title: Multiple Axes
 page_title: Multiple Axes
-description: Multiple Axes
+description: RadCartesianChart allows you to define multiple horizontal and vertical axis.
 slug: radchartview-axes-multipleaxes
 tags: multiple,axes
 published: True

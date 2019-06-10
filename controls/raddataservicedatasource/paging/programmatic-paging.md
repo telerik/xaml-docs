@@ -37,7 +37,7 @@ Programmatic paging could be done with the help of the public paging API that __
 
 #### __[VB.NET] Example 1: The IPagedCollectionView interface__
 
-{{region vb-raddataservicedatasource-paging-programmatic-paging_0}}
+{{region vb-raddataservicedatasource-paging-programmatic-paging_1}}
 	Public Interface IPagedCollectionView
 		ReadOnly Property CanChangePage() As Boolean
 		ReadOnly Property IsPageChanging() As Boolean
@@ -57,11 +57,11 @@ Programmatic paging could be done with the help of the public paging API that __
 	End Interface
 {{endregion}}
 
-Here's an example of how to use the **DataView** in order to set the last page as the current page.
+__Example 2__ shows how to use the **DataView** in order to set the last page as the current page.
 
 #### __[C#] Example 2: Moving to the last page__
 
-{{region cs-raddataservicedatasource-paging-programmatic-paging_1}}
+{{region cs-raddataservicedatasource-paging-programmatic-paging_2}}
     private void MoveToLastPage(RadDataServiceDataSource dataSource)
     {
         dataSource.DataView.MoveToLastPage();
@@ -70,7 +70,7 @@ Here's an example of how to use the **DataView** in order to set the last page a
 
 #### __[VB.NET] Example 2: Moving to the last page__
 
-{{region vb-raddataservicedatasource-paging-programmatic-paging_1}}
+{{region vb-raddataservicedatasource-paging-programmatic-paging_3}}
 	Private Sub MoveToLastPage(ByVal dataSource As RadDataServiceDataSource)
 		dataSource.DataView.MoveToLastPage()
 	End Sub

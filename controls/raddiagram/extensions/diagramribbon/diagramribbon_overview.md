@@ -27,7 +27,7 @@ The control is a configured [RadRibbonView]({%slug radribbonview-overview%}) whi
 __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance.
 
 #### __[XAML] Example 1: Specify RadDiagramRibbon in XAML__
-{{region raddiagram-extensions-diagramribbon-overview-0}}
+{{region xaml-raddiagram-extensions-diagramribbon-overview-0}}
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
@@ -82,8 +82,8 @@ To add a new tab you can just call the __Add()__ method of the __AdditionalTabs_
 
 To add a new group to __Home__ tab for example first you can create a new __RadRibbonGroup__ and add a RadRibbonButton to that group. Then you need to specify to which tab you want to add the group. To do that you can set the __DiagramRibbonExtensions.RibbonTabHeader__ attached property. The last step is to add the new group to the __AdditionalGroups__ collection.
 
-#### __[XAML] Example 2: Add RadRibbonGroup in XAML__
-{{region raddiagram-extensions-diagramribbon-overview-1}}
+#### __[XAML] Example 4: Add RadRibbonGroup in XAML__
+{{region xaml-raddiagram-extensions-diagramribbon-overview-3}}
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
 		<telerik:RadDiagramRibbon.AdditionalGroups>
@@ -95,7 +95,7 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 {{endregion}}
 
 #### __[C#] Example 5: Add RadRibbonGroup programmatically__
-{{region raddiagram-extensions-diagramribbon-overview-2}}
+{{region cs-raddiagram-extensions-diagramribbon-overview-4}}
 	public void AddNewGroup()
 	{
 		RadRibbonButton button = new RadRibbonButton();
@@ -121,8 +121,8 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 
 __RadDiagramRibbon__ provides a keyboard navigation mechanism using key tips and the arrow keys. The key tips are enabled by default. This feature can be disabled by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadDiagramRibbon__ to __False__.
 
-#### __[XAML] Example 3: Disable DiagramRibbon KeyTips__
-{{region raddiagram-extensions-diagramribbon-overview-2}}
+#### __[XAML] Example 6: Disable DiagramRibbon KeyTips__
+{{region raddiagram-extensions-diagramribbon-overview-5}}
 	<telerik:RadDiagramRibbon telerik:KeyTipService.IsKeyTipsEnabled="False" />
 {{endregion}}
 
@@ -141,9 +141,9 @@ The __RadDiagramRibbon__ control provides built-in commands which can be used in
 
 * __HtmlExportButtonClicked__: This event is called when the HTML Export button is clicked. Plase note that there is no built-in logic which will export the RadDiagram in HTML file and this event is exposed so that you can handle it and call your exporting logic. More information on how to export RadDiagram in HTML can be found in the [Html Support]({%slug raddiagram-features-html-support%}) article.
 
-## SimplifiedLayout 
+## Simplified Layout 
 
-Since the __R2 2019 SP1__ version, you have the option of changing the default layout mode to a simplified one. This feature is enabled by the [SimplifiedLayout]({%slug radribbonview-simplified-ribbon%}) feature of the RadRibbonView. The following properties were introduced in the RadDiagramRibbon class:
+Since the __R2 2019 SP1__ version, you have the option of changing the default layout mode to a simplified one. This feature is enabled by the [Simplified Layout]({%slug radribbonview-simplified-ribbon%}) feature of the RadRibbonView. The following properties were introduced in the RadDiagramRibbon class:
 
 * __LayoutMode__: Gets or sets the LayoutMode of the RadDiagramRibbon. The property is of type __RibbonLayout__  and the possible values are __Default__ and __Simplified__.
 
@@ -151,8 +151,8 @@ Since the __R2 2019 SP1__ version, you have the option of changing the default l
 
 * __LayoutModeButtonContent__: Gets or sets the content of the LayoutMode button.
 
-#### __[XAML] Example 4: Setting the ShowLayoutModeButton property__
-{{region raddiagram-extensions-diagramribbon-overview-2}}
+#### __[XAML] Example 6: Setting the ShowLayoutModeButton property__
+{{region raddiagram-extensions-diagramribbon-overview-5}}
 	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ShowLayoutModeButton="True" />
 {{endregion}}
 

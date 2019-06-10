@@ -122,7 +122,7 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 __RadDiagramRibbon__ provides a keyboard navigation mechanism using key tips and the arrow keys. The key tips are enabled by default. This feature can be disabled by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadDiagramRibbon__ to __False__.
 
 #### __[XAML] Example 6: Disable DiagramRibbon KeyTips__
-{{region raddiagram-extensions-diagramribbon-overview-5}}
+{{region xaml-raddiagram-extensions-diagramribbon-overview-5}}
 	<telerik:RadDiagramRibbon telerik:KeyTipService.IsKeyTipsEnabled="False" />
 {{endregion}}
 
@@ -151,8 +151,8 @@ Since the __R2 2019 SP1__ version, you have the option of changing the default l
 
 * __LayoutModeButtonContent__: Gets or sets the content of the LayoutMode button.
 
-#### __[XAML] Example 6: Setting the ShowLayoutModeButton property__
-{{region raddiagram-extensions-diagramribbon-overview-5}}
+#### __[XAML] Example 7: Setting the ShowLayoutModeButton property__
+{{region xaml-raddiagram-extensions-diagramribbon-overview-6}}
 	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ShowLayoutModeButton="True" />
 {{endregion}}
 

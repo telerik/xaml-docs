@@ -31,7 +31,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		</Grid>
 	{{endregion}}
 
-	#### __[C#] Example 1: Setting a yellow background in code-behind__
+	#### __[C#] Example 2: Setting a yellow background in code-behind__
 	{{region cs-radprogressbar-changing-colors_1}}
 		RadProgressBar myProgressBar = new RadProgressBar();
 		// Set Background directly 
@@ -42,9 +42,9 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Style = myStyle;
 	{{endregion}}
 
-	#### __[VB.NET] Example 1: Setting a yellow background in code-behind__
+	#### __[VB.NET] Example 2: Setting a yellow background in code-behind__
 
-	{{region vb-radprogressbar-changing-colors_1}}
+	{{region vb-radprogressbar-changing-colors_2}}
 		Dim myProgressBar As New RadProgressBar()
 		' Set Background directly '
 		myProgressBar.Background = New SolidColorBrush(Colors.Yellow)
@@ -66,8 +66,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 
 * __Foreground__: Modifies the color of the progress indicator.						
 
-	#### __[XAML] Example 2: Setting a yellow indicator in XAML__
-	{{region xaml-radprogressbar-changing-colors_2}}
+	#### __[XAML] Example 3: Setting a yellow indicator in XAML__
+	{{region xaml-radprogressbar-changing-colors_3}}
 		<Style x:Key="myStyle2" TargetType="telerik:RadProgressBar">
 			<Setter Property="Foreground" Value="Yellow" />
 		</Style>
@@ -77,8 +77,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		<telerik:RadProgressBar Value="50" Foreground="Yellow" />
 	{{endregion}}
 
-	#### __[C#] Example 2: Setting a yellow indicator in code-behind__
-	{{region cs-radprogressbar-changing-colors_3}}
+	#### __[C#] Example 4: Setting a yellow indicator in code-behind__
+	{{region cs-radprogressbar-changing-colors_4}}
 		// Set Foreground directly
 		myProgressBar.Foreground = new SolidColorBrush(Colors.Yellow);
 		// Set Foreground using a Style
@@ -88,8 +88,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Style = myStyle2;
 	{{endregion}}
 
-	#### __[VB.NET] Example 2: Setting a yellow indicator in code-behind__
-	{{region vb-radprogressbar-changing-colors_3}}
+	#### __[VB.NET] Example 4: Setting a yellow indicator in code-behind__
+	{{region vb-radprogressbar-changing-colors_5}}
 		' Set Foreground directly'
 		myProgressBar.Foreground = New SolidColorBrush(Colors.Yellow)
 		' Set Foreground using a Style'
@@ -111,8 +111,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 
 * __BorderBrush__: Modifies the color of the RadProgressBar outer border.					
 
-	#### __[XAML] Example 3: Setting a red border brush in XAML__
-	{{region xaml-radprogressbar-changing-colors_4}}
+	#### __[XAML] Example 5: Setting a red border brush in XAML__
+	{{region xaml-radprogressbar-changing-colors_6}}
 		<Style x:Key="myStyle3" TargetType="telerik:RadProgressBar">
 			<Setter Property="BorderBrush" Value="Red" />
 		</Style>
@@ -122,8 +122,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		<telerik:RadProgressBar Value="50" BorderBrush="Red" />
 	{{endregion}}
 
-	#### __[C#] Example 3: Setting a red border brush in code-behind__
-	{{region cs-radprogressbar-changing-colors_5}}
+	#### __[C#] Example 6: Setting a red border brush in code-behind__
+	{{region cs-radprogressbar-changing-colors_7}}
 		// Set BorderBrush  directly
 		myProgressBar.BorderBrush = new SolidColorBrush(Colors.Red);
 		// Set BorderBrush using a Style
@@ -133,8 +133,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Style = myStyle3;
 	{{endregion}}
 
-	#### __[VB.NET] Example 3: Setting a red border brush in code-behind__
-	{{region vb-radprogressbar-changing-colors_5}}
+	#### __[VB.NET] Example 6: Setting a red border brush in code-behind__
+	{{region vb-radprogressbar-changing-colors_8}}
 		' Set BorderBrush  directly'
 		myProgressBar.BorderBrush = New SolidColorBrush(Colors.Red)
 		' Set BorderBrush using a Style'

@@ -215,7 +215,7 @@ You can, however, change this behavior by setting the **IsContentPreserved** pro
 #### __[C#] Example 8: Persist panes' content__
 
 {{region cs-raddocking-features-pane-groups_19}}
-    	Group1.IsContentPreserved = true;;
+    	Group1.IsContentPreserved = true;
 {{endregion}}
 
 #### __[VB.NET] Example 8: Persist panes' content__

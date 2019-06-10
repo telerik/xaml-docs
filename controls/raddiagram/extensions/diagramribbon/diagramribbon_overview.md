@@ -141,6 +141,24 @@ The __RadDiagramRibbon__ control provides built-in commands which can be used in
 
 * __HtmlExportButtonClicked__: This event is called when the HTML Export button is clicked. Plase note that there is no built-in logic which will export the RadDiagram in HTML file and this event is exposed so that you can handle it and call your exporting logic. More information on how to export RadDiagram in HTML can be found in the [Html Support]({%slug raddiagram-features-html-support%}) article.
 
+## SimplifiedLayout 
+
+Since the __R2 2019 SP1__ version, you have the option of changing the default layout mode to a simplified one. This feature is enabled by the [SimplifiedLayout]({%slug radribbonview-simplified-ribbon%}) feature of the RadRibbonView. The following properties were introduced in the RadDiagramRibbon class:
+
+* __LayoutMode__: Gets or sets the LayoutMode of the RadDiagramRibbon. The property is of type __RibbonLayout__  and the possible values are __Default__ and __Simplified__.
+
+* __ShowLayoutModeButton__: Gets or sets a value indicating whether the button for switching the LayoutMode will be visible.
+
+* __LayoutModeButtonContent__: Gets or sets the content of the LayoutMode button.
+
+#### __[XAML] Example 4: Setting the ShowLayoutModeButton property__
+{{region raddiagram-extensions-diagramribbon-overview-2}}
+	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ShowLayoutModeButton="True" />
+{{endregion}}
+
+#### __Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+![RadDiagramRibbon Simplified LayoutMode](images/RadDiagram_DiagramRibbon_SimplifiedLayoutMode.gif)
+
 ## See Also
 
 * [Getting Started]({%slug raddiagram-getting-started%})

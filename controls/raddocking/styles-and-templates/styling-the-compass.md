@@ -51,13 +51,8 @@ In order to style all __Compass__ elements in a RadDocking, you should create a 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
 ## See Also
-
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [Compass]({%slug raddocking-features-compass%})
-
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
-
  * [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%})
-
  * [Styling the Visual Cue]({%slug raddocking-styling-the-visual-cue%})

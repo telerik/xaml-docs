@@ -51,7 +51,5 @@ In order to style all __RadSplitContainers__ in a RadDocking, you should create 
 ## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [Split Container]({%slug raddocking-features-split-container%})
-
  * [Pane Groups]({%slug raddocking-features-pane-groups%})

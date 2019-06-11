@@ -50,15 +50,9 @@ In order to style all __RadPane__ elements in a RadDocking, you should create a 
 ## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [RadPane]({%slug raddocking-panes-radpane%})
-
  * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})
-
  * [Pinned/Unpinned Panes]({%slug raddocking-panes-pinned-unpinned-panes%})
-
  * [Controlling Appearance]({%slug raddocking-styling-controlling-appearance%})
-
  * [Styling the RadDocumentPane]({%slug raddocking-styling-the-raddocumentpane%})
-
  * [Styling the RadPaneGroup]({%slug raddocking-styling-the-radpanegroup%})

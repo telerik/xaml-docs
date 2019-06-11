@@ -58,7 +58,7 @@ __DropDownClosed__ occurs each time the drop-down pane gets hidden. The event ha
 
 * The sender argument contains the __RadDateTimePicker__ control.
 
-* A __RoutedEventArgs__ object
+* A __RoutedEventArgs__ object.
               
 ## DropDownOpened
 
@@ -66,16 +66,12 @@ __DropDownOpened__ occurs each time the drop-down pane gets shown. The event han
 
 * The sender argument contains the __RadDateTimePicker__ control.
 
-* A __RoutedEventArgs__ object
+* A __RoutedEventArgs__ object.
 
 ## See Also
 
  * [Overview]({%slug raddatetimepicker-overview%})
-
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
-
  * [Getting Started]({%slug raddatetimepicke-getting-started%})
-
  * [How to implement custom parsing]({%slug raddatetimepicker-how-to-implement-custom-parsing%})
-
  * [How to hide/show the pop-up pane in code]({%slug raddatetimepicker-how-to-hide-show-pop-up-in-code%})

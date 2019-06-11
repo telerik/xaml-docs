@@ -10,7 +10,7 @@ position: 8
 
 # Styling the RadPaneGroup
 
-The [RadPaneGroup]({%slug raddocking-features-pane-groups%}) control groups multiple RadPanes in a single contrainer. This article will demonstrate how you can style the control.
+The [RadPaneGroup]({%slug raddocking-features-pane-groups%}) control groups multiple RadPanes in a single container. This article will demonstrate how you can style the control.
 
 ## Targeting the RadPaneGroup Element
 
@@ -21,7 +21,7 @@ In order to style all __RadPaneGroups__ in a RadDocking, you should create a sty
 {{region xaml-raddocking-styling-the-radpanegroup-0}}
     <Application.Resources>
         <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-        <Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}">-->
+        <Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
 
         <Style TargetType="telerik:RadPaneGroup">
             <Setter Property="Background" Value="Red" />
@@ -49,11 +49,7 @@ In order to style all __RadPaneGroups__ in a RadDocking, you should create a sty
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
 ## See Also
-
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
-
  * [RadPane]({%slug raddocking-panes-radpane%})
-
  * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})

@@ -12,12 +12,7 @@ position: 2
 
 __SurfaceSeries3D__ visualizes three-dimensional data represented by a surface. Each data point is defined by X, Z and Y values which determines its position in the plot area.
 
-* [Declaratively defined series](#declaratively-defined-series)
-* [Data bound series](#data-bound-series)
-* [Colorizers](#colorizers)
-* [Display direction](#display-direction)
-* [Customizing surface triangulation	](#customizing-surface-triangulation)
-* [Customizing the data point visuals](#customizing-the-data-point-visuals)
+>tip The algorithm that connects the SurfaceSeries3D points into a surface expects that the X and Y values will form a grid-like layout. Otherwise, there may be points that are not connected. If your data requires a different setup you can implement custom logic that connects the points and creates triangles as shown in the [Customizing surface triangulation](#customizing-surface-triangulation) section of this article.
 
 ## Declaratively defined series
 

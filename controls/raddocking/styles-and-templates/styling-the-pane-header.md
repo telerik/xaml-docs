@@ -63,14 +63,11 @@ In order to style all __PaneHeader__ elements in a RadDocking, you should create
 #### __Figure 1: PaneHeader with Red Background in the Office2016 theme__
 ![PaneHeader with Red Background](images/RadDocking_PaneHeader_Styling.png)
 
->important You will notice that in __Figure 1__ the PaneHeader in the left group is red, however the PaneHeader in the right group is blue. This is due to the fact that the right pane is [active]({%slug raddocking-features-panes-activation-mode%}). Inside the ControlTemplate of the PaneHeader there are triggers/visual states, which set the Background when a pane becomes active and that value takes precedence over the value from the implicit style. In order to change this behavior, you can extract and modify the ControlTemplate of the Paneheader for the theme(s) that you are using. For more information on how to do that read, the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
+>important You will notice that in __Figure 1__ the PaneHeader in the left group is red, however the PaneHeader in the right group is blue. This is due to the fact that the right pane is [active]({%slug raddocking-features-panes-activation-mode%}). Inside the ControlTemplate of the PaneHeader there are triggers/visual states, which set the Background when a pane becomes active and that value takes precedence over the value from the implicit style. In order to change this behavior, you can extract and modify the ControlTemplate of the PaneHeader for the theme(s) that you are using. For more information on how to do that read, the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
 ## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [RadPane]({%slug raddocking-panes-radpane%})
-
  * [How to Add Buttons to the Pane Header]({%slug raddocking-how-to-add-buttons-to-the-pane-headers%})
-
  * [How to Add Icon to the RadPane's Header]({%slug raddocking-how-to-add-icon-pane-header%})

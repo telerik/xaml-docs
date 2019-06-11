@@ -53,9 +53,6 @@ In order to style all __ToolWindows__ in a RadDocking, you should create a style
 ## See Also
 
  * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [Tool Window]({%slug raddocking-features-tool-window%})
-
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
-
  * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})

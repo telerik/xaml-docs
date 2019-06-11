@@ -1,7 +1,7 @@
 ---
 title: Compass
 page_title: Compass
-description: Compass
+description: This article describes the Compass and RootCompass elements, which guide the user while the panes are rearranged.
 slug: raddocking-features-compass
 tags: compass
 published: True
@@ -87,7 +87,8 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 	
 	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
-	    e.Compass.Background = new SolidColorBrush(Colors.Red);
+	    e.Compass.IsLeftIndicatorVisible = false;
+		e.Compass.IsRightIndicatorVisible = false;
 	}
 {{endregion}}
 
@@ -101,26 +102,16 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 	End Sub
 	
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.Background = New SolidColorBrush(Colors.Red)
+		e.Compass.IsLeftIndicatorVisible = False
+		e.Compass.IsRightIndicatorVisible = False
 	End Sub
 {{endregion}}
 
-And the result:
-
-![](images/RadDocking_Features_Compass_030.png)
-
 ## See Also
-
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
-
  * [Split Container]({%slug raddocking-features-split-container%})
-
  * [Tool Window]({%slug raddocking-features-tool-window%})
-
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
-
  * [Document Host]({%slug raddocking-features-document-host%})
-
  * [Styling the Compass]({%slug raddocking-styling-the-compass%})
-
  * [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%})

@@ -6,6 +6,7 @@ slug: raddocking-styles-and-templates-templating-the-raddocking
 tags: templating,the,raddocking
 published: True
 position: 12
+include_in_navigation: False
 ---
 
 # Templating the RadDocking
@@ -20,28 +21,8 @@ After clicking the OK button, a style with target type __RadDocking__ will be cr
 
 >tipTo learn more about the structure of the __RadDocking__'s template take a look at [this]({%slug raddocking-styles-and-templates-templates-structure%}) topic.
 
-## Removing DocumentHost
-
-Depending on your case you can modify different things in the template. For example, if you don't use the [Document Host]({%slug raddocking-features-document-host%}), you can set its __Visibility__ to __Collapsed__ in the template.
-
-![](images/RadDocking_TemplatingRadDocking_04.png)
-
-For this purpose select it in the 'Objects and Timeline' pane.
-
-![](images/RadDocking_TemplatingRadDocking_05.png)
-
-Modify its __Visibility__ property, so it has its value set to "*Collapsed*".
-
-![](images/RadDocking_TemplatingRadDocking_06.png)
-
-Here is the result.
-
-![](images/RadDocking_TemplatingRadDocking_07.png)
-
 ## See Also
 
  * [Overview]({%slug raddocking-styling-overview%})
-
  * [Templates Structure]({%slug raddocking-styles-and-templates-templates-structure%})
-
  * [Document Host]({%slug raddocking-features-document-host%})

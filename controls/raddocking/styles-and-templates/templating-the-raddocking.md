@@ -24,7 +24,5 @@ After clicking the OK button, a style with target type __RadDocking__ will be cr
 ## See Also
 
  * [Overview]({%slug raddocking-styling-overview%})
-
  * [Templates Structure]({%slug raddocking-styles-and-templates-templates-structure%})
-
  * [Document Host]({%slug raddocking-features-document-host%})

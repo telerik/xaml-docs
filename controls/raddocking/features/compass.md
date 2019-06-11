@@ -108,17 +108,10 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 {{endregion}}
 
 ## See Also
-
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
-
  * [Split Container]({%slug raddocking-features-split-container%})
-
  * [Tool Window]({%slug raddocking-features-tool-window%})
-
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
-
  * [Document Host]({%slug raddocking-features-document-host%})
-
  * [Styling the Compass]({%slug raddocking-styling-the-compass%})
-
  * [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%})

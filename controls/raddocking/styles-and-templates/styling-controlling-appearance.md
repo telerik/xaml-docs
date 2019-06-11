@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: This article lists some ways in which the RadDocking appearance can be customized 
+description: This article lists some ways in which the RadDocking appearance can be customized.
 slug: raddocking-styling-controlling-appearance
 tags: controlling,appearance
 published: True
@@ -29,5 +29,4 @@ There are a number of ways to customize the look and feel of your __RadDocking__
 * Moreover you can change the look and feel of your __RadDocking__ controls completely using [styles]({%slug raddocking-styling-overview%}). 
 
 ## See Also
-
  * [Styles and Templates - Overview]({%slug raddocking-styling-overview%})

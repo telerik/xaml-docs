@@ -96,7 +96,7 @@ For more information you can refer to the [Basic Filtering]({%slug gridview-filt
 
 * __Group Expander__: Using this button, you can expand/collapse the groups.	
 
-* __Group Row__: This is the UI element that hosts and displays group records, represented by a __GroupHeaderRow__/__GridViewGroupRow__ object depending on the [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). The group row allows expanding and collapsing the records in the group.
+* __Group Row__: This is the UI element that hosts and displays group records, represented by a __GroupHeaderRow__/__GridViewGroupRow__ object depending on the [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). The group row allows for expanding and collapsing the records in the group.
 
 * __Indent Cell__: The __GridViewIndentCell__ appears when the grid data is grouped or has hierarchical structure, to facilitate the expand/collapse functionality. The expand cell is always placed in front of all other grid content columns and cannot be moved.
             

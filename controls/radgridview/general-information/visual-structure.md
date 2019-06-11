@@ -47,7 +47,7 @@ RadGridView is an essential user interface control used to display data in tabul
 * __Row Details__: Each row is capable of presenting additional information by means of a Row Details template. The Row Details template is a __DataTemplate__ defined on the grid- or row-level and is used for displaying row data without affecting the dimensions of the row and the cells within it.  			  
 One of the advantages of using a Row Details template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of Row Details is the option of placing the Details Presenter outside RadGridView, which provides more room for traditional rows without depriving the user of the additional information. [Read more]({%slug radgridview-row-details-overview%}).
 
-* __SearchPanel__: The search panel shows when you press the __Ctrl+F__ key combo. It allows you to search as you type. Read more about this in the [Search as you Type]({%slug radgridview-search-as-you-type%}) article.
+* __SearchPanel__: The search panel is shown when you press the __Ctrl+F__ key combo. It allows you to search as you type. Read more about this in the [Search as you Type]({%slug radgridview-search-as-you-type%}) article.
 
 * __ControlPanel__: The control panel allows you to define additional buttons with custom functionality in the header part of RadGridView. Read more about this in the [Control Panel]({%slug gridview-overview-controlpanel%}) article.
 
@@ -55,11 +55,11 @@ One of the advantages of using a Row Details template is that it can be displaye
 
 * __InvalidBorder__: The validation (red) border is shown when the cell value is invalid. When you hover the ribbon on the top right corner of the cell, an error tooltip is shown. Read more about this in the [Data Validation]({%slug gridview-managing-data-validation%}) article.
 
-* __ValidationErrorTooltip__: The validation error tooltip is shown when you hover the top right corner of the invalid cell.
+* __ValidationErrorTooltip__: The validation error tooltip is shown when you hover the top right corner of an invalid cell.
 
-* __SortIndicator__: The sort indicator shows in the column header when sorted. 
+* __SortIndicator__: The sort indicator is shown in the column header when it is sorted. 
 
-* __EditIndicator__: This a type of row indicator shown when the row is in edit mode.
+* __EditIndicator__: This is a type of row indicator shown when the row is in edit mode.
 
 ## Filtering Visual Structure
 
@@ -96,7 +96,7 @@ For more information you can refer to the [Basic Filtering]({%slug gridview-filt
 
 * __Group Expander__: Using this button, you can expand/collapse the groups.	
 
-* __Group Row__: This is the UI element that hosts and displays group records, represented by the __GridViewGroupRow__ object. __GridViewGroupRow__ allows expanding and collapsing the records in the group.
+* __Group Row__: This is the UI element that hosts and displays group records, represented by a __GroupHeaderRow__/__GridViewGroupRow__ object depending on the [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). The group row allows expanding and collapsing the records in the group.
 
 * __Indent Cell__: The __GridViewIndentCell__ appears when the grid data is grouped or has hierarchical structure, to facilitate the expand/collapse functionality. The expand cell is always placed in front of all other grid content columns and cannot be moved.
             

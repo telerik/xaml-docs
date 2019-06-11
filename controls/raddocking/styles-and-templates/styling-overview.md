@@ -23,27 +23,16 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 The following topics demonstrate how a style can be created for the different elements in a RadDocking:
 
 * [Controlling Appearance]({%slug raddocking-styling-controlling-appearance%})
-
 * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})
-
 * [Styling the Pane Header]({%slug raddocking-styling-the-pane-header%})
-
 * [Styling the Compass]({%slug raddocking-styling-the-compass%})
-
 * [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%})
-
 * [Styling the Visual Cue]({%slug raddocking-styling-the-visual-cue%})
-
 * [Styling the RadPaneGroup]({%slug raddocking-styling-the-radpanegroup%})
-
 * [Styling the RadDocumentPane]({%slug raddocking-styling-the-raddocumentpane%})
-
 * [Styling the ToolWindow]({%slug raddocking-styling-the-toolwindow%})
-
 * [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%})
 
 ## See Also
-
  * [Overview]({%slug raddocking-overview2%})
-
  * [Visual Structure]({%slug raddocking-visual-structure%})

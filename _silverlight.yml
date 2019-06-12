@@ -122,6 +122,9 @@ controls/radwebcam,
 knowledge-base/,
 getting-started/first-steps.md,
 getting-started/explore-control-features.md]
+
+exclude_navigation: [controls/raddocking/theming/*]
+
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	

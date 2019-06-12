@@ -63,7 +63,20 @@ Important properties of __ChartSeriesDescriptor__:
 
 * __Style__: A property of type __Style__ that gets or sets the style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of the style object is used to generate the desired series.  
 
-* __CollectionIndex__: A property of type __int__ that gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when, for example, a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.            
+* __CollectionIndex__: A property of type __int__ that gets or sets the index within the Source collection of data (view models) for which the current descriptor should be used. This property is useful when, for example, a BarSeries needs to be generated for the first data entry and LineSeries for the rest of the entries.
+
+* __ChartDataSourceStyle__: A property of type __Style__ that gets or sets the style of the [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) objects that are set as the ItemsSource of the created series. Through that style, you can set the properties of the ChartDataSource, which control the sampling logic as demonstrated in __Example 2__.
+
+#### __[XAML] Example 2: Setting the ChartDataSourceStyle property__
+{{region xaml-radchartview-features-chartseriesprovider_2}}
+    <telerik:CategoricalSeriesDescriptor>
+	<telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
+	    <Style TargetType="telerik:ChartDataSource">
+		<Setter Property="SamplingThreshold" Value="1" />
+	    </Style>
+	</telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
+    </telerik:CategoricalSeriesDescriptor>
+{{endregion}}
 
 Type-specific properties:        
 
@@ -99,8 +112,8 @@ The event arguments are of type __ChartSeriesCreatedEventArgs__ and expose the f
 
 In the following example, the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor which is responsible for creating BarSeries for the rest of the items in the collection.        
 
-#### __[XAML] Example 2: A sample chart definition with its SeriesProvider set__
-{{region radchartview-features-chartseriesprovider_02}}
+#### __[XAML] Example 3: A sample chart definition with its SeriesProvider set__
+{{region xaml-radchartview-features-chartseriesprovider_3}}
 	<telerik:RadCartesianChart Palette="Flower">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -131,8 +144,8 @@ In the following example, the chart is populated by a collection of 3 items, thu
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __[C#] Example 3: The chart's view models set up__
-{{region radchartview-features-chartseriesprovider_03}}
+#### __[C#] Example 4: The chart's view models set up__
+{{region cs-radchartview-features-chartseriesprovider_4}}
 	public class DataItem
     {
         public string Category { get; set; }
@@ -197,8 +210,8 @@ In the following example, the chart is populated by a collection of 3 items, thu
     }
 {{endregion}}
 
-#### __[VB.NET] Example 3: A sample chart definition with its SeriesProvider set__
-{{region radchartview-features-chartseriesprovider_04}}
+#### __[VB.NET] Example 4: A sample chart definition with its SeriesProvider set__
+{{region vb-radchartview-features-chartseriesprovider_04}}
 	Public Class DataItem
 		Public Property Category() As String
 

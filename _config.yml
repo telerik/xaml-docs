@@ -90,7 +90,7 @@ cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
 getting-started/first-steps-sl,
 getting-started/explore-control-features-sl]
 
-exclude_navigation: [knowledge-base/*, controls/radchart/*]
+exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -954,8 +954,7 @@ navigation:
     controls/raddataservicedatasource/sorting:
         title: Sorting
     controls/raddataservicedatasource/how-to:		
-        title: How To		
-        position: 9
+        title: How To	
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:

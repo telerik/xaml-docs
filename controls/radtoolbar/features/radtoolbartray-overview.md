@@ -1,69 +1,94 @@
 ---
-title: ToolBarTray Overview
-page_title: ToolBarTray Overview
-description: ToolBarTray Overview
+title: ToolBarTray
+page_title: ToolBarTray
+description: ToolBarTray
 slug: radtoolbartray-overview
 tags: toolbartray,overview
 published: True
-position: 1
+position: 0
 ---
 
-# ToolBarTray Overview
+# ToolBarTray
 
-RadToolBarTray is an __ItemsControl__ and handles multiple toolbars in the same tray. The __RadToolBarTray__ handles the position, sizing and the order of toolbars inside it. It is divided by __Bands__ and each __Band__ can contain multiple toolbars. The developer controls the layout by initializing the __Band__ and __BandIndex__ properties.
+The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
 
-![](images/toolbar4.png)
+![](images/radtoolbartray-overview-0.png)
 
-#### __XAML__
+## Defining ToolBarTray
 
-{{region radtoolbartray-overview_0}}
-	    <telerik:RadToolBarTray>
-	        <telerik:RadToolBar Band="0" BandIndex="0" />
-	        <telerik:RadToolBar Band="0" BandIndex="1" />
-	        <telerik:RadToolBar Band="1" BandIndex="0" />
-	    </telerik:RadToolBarTray>
+The following example shows a very basic definition of the `RadToolBarTray` control with two RadToolBars.
+
+#### __[XAML] Example 1: Define the tray in XAML__
+{{region radtoolbartray-overview-0}}
+	<telerik:RadToolBarTray VerticalAlignment="Center" Width="460">
+		<telerik:RadToolBar>
+			<telerik:RadButton Content="Button 1" />
+			<telerik:RadButton Content="Button 2 " />
+			<telerik:RadButton Content="Button 3" />
+		</telerik:RadToolBar>
+		<telerik:RadToolBar>
+			<telerik:RadButton Content="Button 1" />
+			<telerik:RadButton Content="Button 2 " />
+		</telerik:RadToolBar>          
+	</telerik:RadToolBarTray>
 {{endregion}}
 
-> The __telerik__ alias points to the following namespace: 'xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"'
+![](images/radtoolbartray-overview-1.png)
 
-#### __C#__
+## Setting Band and Band Position
 
-{{region radtoolbartray-overview_1}}
-	using Telerik.Windows.Controls;
-	
-	RadToolBarTray toolBarTray = new RadToolBarTray();
-	RadToolBar toolBar1 = new RadToolBar();
-	RadToolBar toolBar2 = new RadToolBar();
-	RadToolBar toolBar3 = new RadToolBar();
-	toolBar1.Band = 0;
-	toolBar1.BandIndex = 0;
-	toolBar2.Band = 0;
-	toolBar2.BandIndex = 1;
-	toolBar3.Band = 1;
-	toolBar3.BandIndex = 0;
-	this.LayoutRoot.Children.Add(toolBarTray);
-	toolBarTray.Items.Add(toolBar1);
-	toolBarTray.Items.Add(toolBar2);
-	toolBarTray.Items.Add(toolBar3);
+The `RadToolBar` control exposes `Band` property that can be used to define the row of the toolbar in the tray. The position (the order) in the current band is controlled via the `BandIndex` property of the toolbar.
+
+The following picture shows how the band and band index affect the positions of the toolbars in the tray.
+
+![](images/radtoolbartray-overview-2.png)
+
+> By default all `RadToolBar` elements hosted in the tray are positioned in the first band (Band=0). The default band index is the based on the collection index of the toolbar plus the current band position.
+
+#### __[XAML] Example 2: Setting Band and BandIndex manually__
+{{region radtoolbartray-overview-1}}
+	<telerik:RadToolBarTray>
+		<telerik:RadToolBar BandIndex="1">
+			<telerik:RadButton Content="Button 1" />
+			<telerik:RadButton Content="Button 2 " />
+			<telerik:RadButton Content="Button 3" />
+		</telerik:RadToolBar>
+		<telerik:RadToolBar>
+			<telerik:RadButton Content="Button 4" />
+			<telerik:RadButton Content="Button 5 " />
+			<telerik:RadButton Content="Button 6" />
+		</telerik:RadToolBar>
+		<telerik:RadToolBar Band="1">
+			<telerik:RadButton Content="Button 7" />
+			<telerik:RadButton Content="Button 8 " />
+		</telerik:RadToolBar>
+		<telerik:RadToolBar Band="2">
+			<telerik:RadButton Content="Button 9" />
+			<telerik:RadButton Content="Button 10 " />
+		</telerik:RadToolBar>
+	</telerik:RadToolBarTray>
 {{endregion}}
 
-#### __VB.NET__
+![](images/radtoolbartray-overview-3.png)
 
-{{region radtoolbartray-overview_1}}
-	Imports Telerik.Windows.Controls
+## Setting Orientation
 
-	Dim toolBarTray As New RadToolBarTray()
-	Dim toolBar1 As New RadToolBar()
-	Dim toolBar2 As New RadToolBar()
-	Dim toolBar3 As New RadToolBar()
-	toolBar1.Band = 0
-	toolBar1.BandIndex = 0
-	toolBar2.Band = 0
-	toolBar2.BandIndex = 1
-	toolBar3.Band = 1
-	toolBar3.BandIndex = 0
-	Me.LayoutRoot.Children.Add(toolBarTray)
-	toolBarTray.Items.Add(toolBar1)
-	toolBarTray.Items.Add(toolBar2)
-	toolBarTray.Items.Add(toolBar3)
+By default the `RadToolBarTray` will order the toolbars horizontally. Also, the RadToolBar controls will order its items horizontally. To switch the orientation of the tray and the toolbars set the `Orientation` property of `RadToolBarTray` to `Vertical`
+
+#### __[XAML] Example 3: Setting Orientation__
+{{region radtoolbartray-overview-2}}
+	<telerik:RadToolBarTray Orientation="Vertical" VerticalAlignment="Center" Width="460">
+		<telerik:RadToolBar>
+			<telerik:RadButton Content="B1" />
+			<telerik:RadButton Content="B2 " />
+			<telerik:RadButton Content="B3" />
+		</telerik:RadToolBar>
+		<telerik:RadToolBar>
+			<telerik:RadButton Content="B4" />
+			<telerik:RadButton Content="B5 " />
+			<telerik:RadButton Content="B6" />
+		</telerik:RadToolBar>           
+	</telerik:RadToolBarTray>
 {{endregion}}
+
+![](images/radtoolbartray-overview-4.png)

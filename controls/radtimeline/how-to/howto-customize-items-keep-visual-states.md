@@ -12,7 +12,7 @@ position: 1
 
 This article shows how to customize the timeline items and keep their visual states using `TimelineItemTemplate` and `TimelineInstantItemTemplate`. 
 
-> If you want to simply change the appearance of the items and don't mind to lose their highlighting (like mouse over color, selected color, pressed color, etc.), follow the steps in the [Customizing Items]({%slug radtimeline-customizing-items%}) article.
+> If you want to simply change the appearance of the items and don't mind losing their highlighting (like mouse-over color, selected color, pressed color, etc.), follow the steps in the [Customizing Items]({%slug radtimeline-customizing-items%}) article.
 
 ## Setting up the Models 
 
@@ -28,11 +28,11 @@ This section shows how to set up a very basic model that can be used to populate
 	}
 {{endregion}}
 
-The `Start` and `Duration` properties define the length of the item in the timeline. And `Title` holds text information about the item.
+The `Start` and `Duration` properties define the length of the item in the timeline and `Title` holds text information about the item.
 
 ## Setting up the Data
 
-This section shows how to populate a collection of `ItemModel` objects and assing it to the ItemsSource of the `RadTimeline` control. This is done via the `ItemsSource` property.
+This section shows how to populate a collection of `ItemModel` objects and assign it as the source of the `RadTimeline` control. This is done via the `ItemsSource` property.
 
 #### __[C#] Example 2: Setting up the data__
 {{region radtimeline-custom-items-selection-mouseover-visual-states-1}}
@@ -51,7 +51,7 @@ This section shows how to populate a collection of `ItemModel` objects and assin
 
 ## Modifying the Item Template
 
-This section shows how to create a custom item template and apply it to the control using the `TimelineItemTemplate` property. Then add Triggers to animate the background of the custom element when mouse is over and when the item is selected.
+This section shows how to create a custom item template and apply it to the control using the `TimelineItemTemplate` property. Then you can add triggers to animate the background of the custom element when the mouse is over and when the item is selected.
 
 #### __[C#] Example 3: Defining timeline control and an item template__
 {{region radtimeline-custom-items-selection-mouseover-visual-states-2}}
@@ -90,7 +90,7 @@ This example uses the `Triggers` collection of the `DataTemplate` in order to an
 
 ## Modifying the Instant Item Template
 
-This section shows how to create a custom instant item template and apply it to the control using the `TimelineInstantItemTemplate` property. Then add Triggers to animate the background of the custom element when mouse is over and when the item is selected.
+This section shows how to create a custom instant item template and apply it to the control using the `TimelineInstantItemTemplate` property. Then you can add triggers to animate the background of the custom element when the mouse is over and when the item is selected.
 
 #### __[C#] Example 4: Defining timeline control and an instant item template__
 {{region radtimeline-custom-items-selection-mouseover-visual-states-3}}
@@ -126,7 +126,7 @@ This section shows how to create a custom instant item template and apply it to 
 This example uses the `Triggers` collection of the `DataTemplate` in order to animate the elements in the template.
 
 #### Figure 1: Customize item and instant item templates
-![](images/radtimeline-custom-items-selection-mouseover-visual-states-0.png)
+![Customize item and instant item templates](images/radtimeline-custom-items-selection-mouseover-visual-states-0.png)
 
 ## See Also  
 * [Getting Started]({%slug radtimeline-getting-started%})

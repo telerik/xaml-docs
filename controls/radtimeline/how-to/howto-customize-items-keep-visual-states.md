@@ -3,7 +3,7 @@ title: Use Custom Items with Selection and Mouse Over Visual States
 page_title: Use Custom Items with Selection and Mouse Over Visual States
 description: This article shows how to customize the RadTimeline items and keep their visual states using TimelineItemTemplate and TimelineInstantItemTemplate.
 slug: radtimeline-custom-items-selection-mouseover-visual-states
-tags:customitems,timelineitemtemplate,timelineinstantitemtemplate
+tags: customitems,timelineitemtemplate,timelineinstantitemtemplate
 published: True
 position: 1
 ---

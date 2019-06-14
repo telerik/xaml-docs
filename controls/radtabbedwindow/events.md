@@ -90,6 +90,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **NewWindow**: The new window created via drag drop operation.
 * **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
 
+**Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window.
+
 #### [C#] Example 3: Handle the TabbedWindowCreating event  
 {{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
@@ -112,6 +114,58 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 			e.Cancel = True
 		Else
 			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
+		End If
+	End Sub
+{{endregion}}
+
+You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window.
+
+#### [C#] Example 4: Change the ItemsSource of the new window  
+{{region cs-radtabbedwindow-events_4}}
+    private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
+    {
+        if (e.DraggedTab.Header.ToString() == "Progress")
+        {
+            e.NewWindow.ItemsSource = null; 
+		}
+        else if (e.DraggedTab.Header.ToString() == "Microsoft")
+        {
+            var collection = e.NewWindow.ItemsSource as ObservableCollection<object>;
+            if (collection != null)
+            {
+                collection.Add(new Tab() { Header = "My tab 1" });
+                collection.Add(new Tab() { Header = "My tab 2" });
+            }
+		}
+        else
+        {
+            var collection = new ObservableCollection<Person>();
+			collection.Add(new Person() { Name = "John Doe", Age = 23 });
+            e.NewWindow.ItemsSource = collection;
+            e.NewWindow.DisplayMemberPath = "Name";
+        }
+    }
+{{endregion}}
+
+#### [VB.NET] Example 4: Change the ItemsSource of the new window
+{{region vb-radtabbedwindow-events_4}}
+	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
+		If e.DraggedTab.Header.ToString() = "Progress" Then
+			e.NewWindow.ItemsSource = Nothing
+		ElseIf e.DraggedTab.Header.ToString() = "Microsoft" Then
+			Dim collection = TryCast(e.NewWindow.ItemsSource, ObservableCollection(Of Object))
+			If collection IsNot Nothing Then
+				collection.Add(New Tab() With {.Header = "my tab 1"})
+				collection.Add(New Tab() With {.Header = "my tab 2"})
+			End If
+		Else
+			Dim collection = New ObservableCollection(Of Person)
+			collection.Add(New Person() With {
+				.Name = "John Doe",
+				.Age = 23
+			})
+			e.NewWindow.ItemsSource = collection
+			e.NewWindow.DisplayMemberPath = "Name"
 		End If
 	End Sub
 {{endregion}}

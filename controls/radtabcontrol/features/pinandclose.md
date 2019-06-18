@@ -50,7 +50,7 @@ The close button of the RadTabItem is collapsed by default. The button can be sh
 
 ![](images/tabcontrol-closebutton-tabitems.png)
 
-To prevent the tab from closing when the middle mouse button is pressed, set the __CloseTabsOnMouseMiddleButtonDown__ property of RadTabControl to True.
+To prevent the tab from closing when the middle mouse button is pressed, set the __CloseTabsOnMouseMiddleButtonDown__ property of RadTabControl to False.
 
 #### __[XAML] Example 3: Disable closing the tabs when the middle mouse button is pressed__
 {{region radtabcontrol-features-pinandclose_2}}

@@ -88,7 +88,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **Cancel**: Gets or sets a value indicating whether the creation of the new window should be cancelled.
 * **SourceWindow**: The source window from which the drag drop operation is started.
 * **NewWindow**: The new window created via drag drop operation.
-* **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
+* **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow. As of **R2 2019 SP1**, this property is **obsolete** and the **DraggedItem** property needs to be used instead.
+* **DraggedItem**: The dragged RadTabItem in an unbound scenario or the dragged item (viewmodel) in a databinding scenario.
 
 **Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window.
 
@@ -96,7 +97,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 {{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
-        if (e.DraggedTab.Header.ToString() == "Progress") // replace with your cancel condition
+		var tab = e.DraggedItem as RadTabItem;
+        if (tab != null && tab.Header.ToString() == "Progress") // replace with your cancel condition
         {
             e.Cancel = true;
         }
@@ -110,7 +112,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 #### [VB.NET] Example 3: Handle the TabbedWindowCreating event  
 {{region vb-radtabbedwindow-events_3}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
-		If e.DraggedTab.Header.ToString() = "Progress" Then ' replace with your cancel condition
+		Dim tab = TryCast(e.DraggedItem, RadTabItem)
+		If tab IsNot Nothing AndAlso tab.Header.ToString() = "Progress" Then ' replace with your cancel condition
 			e.Cancel = True
 		Else
 			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
@@ -124,17 +127,18 @@ You can also use the TabbedWindowCreating event to clear, update or replace the 
 {{region cs-radtabbedwindow-events_4}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
-        if (e.DraggedTab.Header.ToString() == "Progress")
+		var tabItem = e.DraggedItem as MyTabItem;
+        if (tabItem != null && tabItem.Header == "Progress")
         {
             e.NewWindow.ItemsSource = null; 
 		}
-        else if (e.DraggedTab.Header.ToString() == "Microsoft")
+        else if (tabItem != null && tabItem.Header == "Microsoft")
         {
             var collection = e.NewWindow.ItemsSource as ObservableCollection<object>;
             if (collection != null)
             {
-                collection.Add(new Tab() { Header = "My tab 1" });
-                collection.Add(new Tab() { Header = "My tab 2" });
+                collection.Add(new MyTabItem() { Header = "My tab 1" });
+                collection.Add(new MyTabItem() { Header = "My tab 2" });
             }
 		}
         else

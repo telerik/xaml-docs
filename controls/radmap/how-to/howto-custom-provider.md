@@ -1,76 +1,82 @@
 ---
-title: Implement custom map provider
-page_title: Implement custom map provider
-description: Implement custom map provider
+title: Implement Custom Map Provider
+page_title: Implement Custom Map Provider
+description: Implement Custom Map Provider
 slug: radmap-howto-custom-provider
 tags: implement,custom,map,provider
 published: True
 position: 1
 ---
 
-# Implement custom map provider
+# Implement Custom Map Provider
 
-Here is a list of all provider-related changes:
+If you need to consume a service which does not have a default provider, you can create a custom map provider and set it as the **Provider** property of the **RadMap** control.
 
-* The __IMapProvider__ interface no longer exists.
+## MapProviderBase
 
-* The __MapProviderBase__ class exists but it should not be used as a base class for custom providers any more. 
+The **MapProviderBase** is the base class for all map providers. Two widely-used implementations of the class are the __TiledProvider__ and __ImageProvider__.
 
-* All custom map providers should inherit either from __TiledProvider__, or __ImageProvider__.
+* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [BingMaps]({%slug radmap-features-providers-bing-rest-map%}), [OpenStreetMap]({%slug radmap-features-providers%})#openstreet-maps).
 
-* __TiledProvider__ is a base class for map providers that show map as a sequence of tiles (e.g. BingMaps, OpenStreetMap).
+* __ImageProvider__ is a base class for providers that show a map as a single image ([UriImageProvider]({%slug radmap-features-uriimageprovider%})). 
 
-* __ImageProvider__ is a base class for providers that show map as a single image (UriImageProvider). 
+Once you know the type of provider you require, you can create a custom class to inherit from it. In most cases this will be the __TiledProvider__ class. In addition, you need to override the **SpatialReference** property - it returns the actual projection used by the provider and most often returns an instance of the __MercatorProjection__ class.
 
-* Since all existing custom providers (prior to Q1 2011) show map as a sequence of tiles, they should be changed to inherit from the __TiledProvider__ class. The only property which must be overridden in these custom providers is __SpatialReference__ -- it should return the actual projection used by the provider (in all existing custom providers prior to Q1 2011 it should be __MercatorProjection__).
+#### __[C#] Example 1: Create a custom TiledProvider__
+{{region cs-radmap-howto-custom-provider_0}}
+	public class MyMapProvider : TiledProvider
+	{
+		/// <summary>
+		/// Initializes a new instance of the MyMapProvider class.
+		/// </summary>
+		public MyMapProvider()
+				: base()
+		{
+			MyMapSource source = new MyMapSource();
+			this.MapSources.Add(source.UniqueId, source);
+		}
 
-Here is a list of all map source-related changes:
+		/// <summary>
+		/// Returns the SpatialReference for the map provider.
+		/// </summary>
+		public override ISpatialReference SpatialReference
+		{
+			get
+			{
+				return new MercatorProjection();
+			}
+		}
+	}
+{{endregion}}
 
-* The map provider cannot be used as a map source by itself as it was allowed before.
+>The **MyMapSource** class is defined in **Example 2**.
 
-* The logic which provides tiles must be moved to separate class – map source.
+## MultiScaleTileSource
 
-* All map source classes should inherit either from __TiledMapSource__, or __ImageMapSource__ classes and override methods depending on the specific map source type. 
+As seen in **Example 1**, the next requirement is to add instances of the abstract [MultiScaleTileSource](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.controls.map.multiscaletilesource) class to the provider's **MapSources** collection. The class exposes two useful properties:
 
-* __TiledMapSource__ is a base class for map sources that return map tiles (that includes all BingMaps sources: aerial, road, birds eye, and all OpensStreetMap sources: Mapnik and Osmarenderer)
+**RequestCredentials**: Gets or sets credentials for downloading tiles.
+**WebHeaders**: Gets or sets the headers used in the get requests made to the tile servers via System.Net.WebClient. This property was introduced with **R2 2019 SP1**.
 
-* __ImageMapSource__ is a base class for map sources that return single map image.
+The two default implementations of this abstract class are the __TiledMapSource__ and the __ImageMapSource__.
 
-* Since all existing providers prior to Q1 2011 show map as a sequence of tiles, their new map source classes should inherit from the __TiledMapSource__ class and meet the following requirements:
+* __TiledMapSource__ is a base class for map sources that return map tiles (that includes all BingMaps sources: aerial, road, birds eye, and all OpensStreetMap sources: Mapnik and Osmarenderer).
+
+* __ImageMapSource__ is a base class for map sources that return a single map image.
+
+When creating a custom map provider, you can choose one of these sources and override their methods depending on the specific map source type. Most implementations will require the following set of actions:
 
 * Override the __Initialize__ method.
 
 * Override the __GetTile__ method and existing custom logic should be moved here.
 
-* Call __RaiseInitializeCompleted__ method when the respective custom provider is initialized (in case of simple providers it is enough to call this method from the override Initialize method).
+* Call the __RaiseInitializeCompleted__ method when the respective custom provider is initialized (in case of simple providers it is enough to call this method from the override Initialize method).
 
-Simple map provider that supports one map source can be as simple as following:
+**Example 2** demonstrates a possible implementation of a custom TiledMapSource.
 
-#### __C#__
-{{region radmap-howto-custom-provider_0}}
-	public class MyMapProvider : TiledProvider
-	{
-	       /// <summary>
-	       /// Initializes a new instance of the MyMapProvider class.
-	       /// </summary>
-	       public MyMapProvider()
-	             : base()
-	       {
-	             MyMapSource source = new MyMapSource();
-	             this.MapSources.Add(source.UniqueId, source);
-	       }
-	       /// <summary>
-	       /// Returns the SpatialReference for the map provider.
-	       /// </summary>
-	       public override ISpatialReference SpatialReference
-	       {
-	             get
-	             {
-	                    return new MercatorProjection();
-	             }
-	       }
-	}
-	public class MyMapSource : TiledMapSource
+#### __[C#] Example 2: Create a custom TiledMapSource__
+{{region radmap-howto-custom-provider_1}}
+	public cs-class MyMapSource : TiledMapSource
 	{
 	       /// <summary>
 	       /// Initializes a new instance of the MyMapSource class.
@@ -79,6 +85,7 @@ Simple map provider that supports one map source can be as simple as following:
 	             : base(1, 20, 256, 256)
 	       {
 	       }
+		   
 	       /// <summary>
 	       /// Initialize provider.
 	       /// </summary>
@@ -87,6 +94,7 @@ Simple map provider that supports one map source can be as simple as following:
 	             // Raise provider initialized event.
 	             this.RaiseIntializeCompleted();
 	       }
+
 	       /// <summary>
 	       /// Gets the image URI.
 	       /// </summary>
@@ -104,54 +112,73 @@ Simple map provider that supports one map source can be as simple as following:
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radmap-howto-custom-provider_1}}
-	Public Class MyMapProvider
-	 Inherits TiledProvider
-	 ''' <summary> '''
-	 ''' Initializes a new instance of the MyMapProvider class. '''
-	 ''' </summary> '''
-	 Public Sub New()
-	  MyBase.New()
-	  Dim source As New MyMapSource()
-	  Me.MapSources.Add(source.UniqueId, source)
-	 End Sub
-	 ''' <summary> '''
-	 ''' Returns the SpatialReference for the map provider. '''
-	 ''' </summary> '''
-	 Public Overrides ReadOnly Property SpatialReference() As ISpatialReference
-	  Get
-	   Return New MercatorProjection()
-	  End Get
-	 End Property
-	End Class
-	Public Class MyMapSource
-	 Inherits TiledMapSource
-	 ''' <summary> '''
-	 ''' Initializes a new instance of the MyMapSource class. '''
-	 ''' </summary> '''
-	 Public Sub New()
-	  MyBase.New(1, 20, 256, 256)
-	 End Sub
-	 ''' <summary> '''
-	 ''' Initialize provider. '''
-	 ''' </summary> '''
-	 Public Overrides Sub Initialize()
-	  ' Raise provider intialized event. '
-	  Me.RaiseIntializeCompleted()
-	 End Sub
-	 ''' <summary> '''
-	 ''' Gets the image URI. '''
-	 ''' </summary> '''
-	 ''' <param name="tileLevel">Tile level.</param> ''' 
-	 ''' <param name="tilePositionX">Tile X.</param> '''
-	 ''' <param name="tilePositionY">Tile Y.</param> '''
-	 ''' <returns>URI of image.</returns> '''
-	 Protected Overrides Function GetTile(tileLevel As Integer, tilePositionX As Integer, tilePositionY As Integer) As Uri
-	  Dim zoomLevel As Integer = ConvertTileToZoomLevel(tileLevel)
-	  ' Prepare tile url somehow ... '
-	  Dim url As String = CustomHelper.GetTileUrl(tileLevel, tilePositionX, tilePositionY)
-	  Return New Uri(url)
-	 End Function
-	End Class
+## Create an OpenStreetProvider Which Uses Https
+
+A common requirement when using the RadMap control is to use the OpenStreetMap service over **https**. **Examples 3-5** demonstrate how this can be achieved by creating a custom map provider.
+
+#### __[C#] Example 3: Create a custom TiledProvider and set up its commands__
+{{region cs-radmap-howto-custom-provider_2}}
+	public class HttpsOpenStreetProvider : TiledProvider
+    {
+        /// <summary>
+        /// Initializes a new instance of the MyMapProvider class.
+        /// </summary>
+        public HttpsOpenStreetProvider()
+              : base()
+        {
+            OsmTileMapSource source = new HttpsOpenStreetMapnikSource();
+			// required as the OSM service requires a non-stock User-Agent header
+            source.WebHeaders.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0");
+            this.MapSources.Add(source.UniqueId, source);
+ 
+            this.SetupCommands();
+        }
+
+        /// <summary>
+        /// Returns the SpatialReference for the map provider.
+        /// </summary>
+        public override ISpatialReference SpatialReference
+        {
+            get
+            {
+                return new MercatorProjection();
+            }
+        }
+ 
+        private void SetupCommands()
+        {
+            this.CommandBindingCollection.Clear();
+ 
+            string uriString = "/Telerik.Windows.Controls.DataVisualization;component/themes/road.png";
+ 
+            this.RegisterSetSourceCommand(
+                typeof(HttpsOpenStreetMapnikSource),
+                LocalizationManager.GetString("MapOsmStandardCommand"),
+                null,
+                new Uri(uriString, UriKind.RelativeOrAbsolute),
+                null,
+                null);
+        }
+    }
 {{endregion}}
+
+#### __[C#] Example 4: Create a custom OsmTileMapSource which uses an https url__
+{{region cs-radmap-howto-custom-provider_3}}
+    public class HttpsOpenStreetMapnikSource : OsmTileMapSource
+    {
+        public HttpsOpenStreetMapnikSource() : base(@"https://{prefix}.tile.openstreetmap.org/{zoom}/{x}/{y}.png")
+        {
+        }
+    }
+{{endregion}}
+
+#### __[C#] Example 5: Set the provider via RadMap's Provider property__
+{{region radmap-howto-custom-provider_1}}
+	this.map.Provider = new HttpsOpenStreetProvider();
+{{endregion}}
+
+## See Also
+
+* [OpenStreetMap]({%slug radmap-features-providers%})#openstreet-maps)
+* [BingMaps]({%slug radmap-features-providers-bing-rest-map%})
+* [UriImageProvider]({%slug radmap-features-uriimageprovider%})

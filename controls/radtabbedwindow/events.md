@@ -91,9 +91,9 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow. As of **R2 2019 SP1**, this property is **obsolete** and the **DraggedItem** property needs to be used instead.
 * **DraggedItem**: The dragged RadTabItem in an unbound scenario or the dragged item (viewmodel) in a databinding scenario.
 
-**Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window.
+**Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window in an **unbound scenario**.
 
-#### [C#] Example 3: Handle the TabbedWindowCreating event  
+#### [C#] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
 {{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
@@ -109,7 +109,7 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
     }
 {{endregion}}
 
-#### [VB.NET] Example 3: Handle the TabbedWindowCreating event  
+#### [VB.NET] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
 {{region vb-radtabbedwindow-events_3}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		Dim tab = TryCast(e.DraggedItem, RadTabItem)
@@ -121,9 +121,9 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 	End Sub
 {{endregion}}
 
-You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window.
+You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window. **Example 4** demonstrates how to do so in a **databound scenario**.
 
-#### [C#] Example 4: Change the ItemsSource of the new window  
+#### [C#] Example 4: Change the ItemsSource of the new window in a databinding scenario
 {{region cs-radtabbedwindow-events_4}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
@@ -151,7 +151,7 @@ You can also use the TabbedWindowCreating event to clear, update or replace the 
     }
 {{endregion}}
 
-#### [VB.NET] Example 4: Change the ItemsSource of the new window
+#### [VB.NET] Example 4: Change the ItemsSource of the new window in a databinding scenario
 {{region vb-radtabbedwindow-events_4}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		Dim tabItem = TryCast(e.DraggedItem, MyTabItem)

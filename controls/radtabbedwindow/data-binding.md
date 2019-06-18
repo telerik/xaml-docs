@@ -100,12 +100,15 @@ All that's left is to bind this collection to the RadTabbedWindow control. You a
     </telerik:RadTabbedWindow>
 {{endregion}}
 
+>important As of **R2 2019 SP1** the control's **Items** property (populated when setting the control's **ItemsSource**) is of type **IList**. Prior to this version of the controls, it was of type **ObservableCollection<RadTabitem>**.
+
+<!-- -->
+
 >important Please note that you need to replace the **DataBinding** namespace with your namespace.
 
-Upon running the application, your RadTabbedWindow should now be populated with tabs as shown on **Figure 1**.
+Upon running the application, your RadTabbedWindow will now be populated with tabs as shown on **Figure 1**.
 
 {% figure 1, "DataBound RadTabbedWindow", "tabbedwindow-getting-started-2.png" %}
-
 
 ## See Also
 

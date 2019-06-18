@@ -168,7 +168,7 @@ You can also add [aggregate functions on a column level](%slug gridview-columns-
 	</telerik:RadGridView>
 {{endregion}}
 
-In this case, you can show the aggregate results for a particular group in a special row just below the group header row. This row is divided into cells which are aligned with the repsective columns and show the aggregate results for the particular column.
+In this case, you can show the aggregate results for a particular group in a special row just below the group header row. This row is divided into cells which are aligned with the respective columns and show the aggregate results for the particular column.
 
 This feature can be controlled by applying a __Style__ targeting the **GroupHeaderRow** and setting its **ShowGroupHeaderColumnAggregates** property to **True**. As the GroupHeaderRow is only used in the **Flat** [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}) of the control, this feature is only available in this mode.
 

@@ -154,13 +154,14 @@ You can also use the TabbedWindowCreating event to clear, update or replace the 
 #### [VB.NET] Example 4: Change the ItemsSource of the new window
 {{region vb-radtabbedwindow-events_4}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
-		If e.DraggedTab.Header.ToString() = "Progress" Then
+		Dim tabItem = TryCast(e.DraggedItem, MyTabItem)
+		If tabItem IsNot Nothing AndAlso tabItem.Header = "Progress" Then
 			e.NewWindow.ItemsSource = Nothing
-		ElseIf e.DraggedTab.Header.ToString() = "Microsoft" Then
+		ElseIf tabItem IsNot Nothing AndAlso tabItem.Header = "Microsoft" Then
 			Dim collection = TryCast(e.NewWindow.ItemsSource, ObservableCollection(Of Object))
 			If collection IsNot Nothing Then
-				collection.Add(New Tab() With {.Header = "my tab 1"})
-				collection.Add(New Tab() With {.Header = "my tab 2"})
+				collection.Add(New MyTabItem() With {.Header = "My tab 1"})
+				collection.Add(New MyTabItem() With {.Header = "My tab 2"})
 			End If
 		Else
 			Dim collection = New ObservableCollection(Of Person)

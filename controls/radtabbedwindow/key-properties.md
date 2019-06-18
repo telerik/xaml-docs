@@ -184,5 +184,5 @@ However, if you need to keep each **RadTabItem**'s content you can set the **IsC
 
 ## See Also
 
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

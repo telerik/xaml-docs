@@ -12,7 +12,7 @@ position: 3
 
 The RadTabbedWindow control exposes a number of events to let you easily customize its behavior.
 
-Most of these events are inherited from the [RadWindow](%slug radwindow-events-overview%) control. As the RadTabbedWindow contains a **TabbedWindowTabControl** which inherits from **RadTabControl**, most of its [events](%slug radtabcontrol-features-pinandclose%#events) bubble to the window as well.
+Most of these events are inherited from the [RadWindow]({%slug radwindow-events-overview%}) control. As the RadTabbedWindow contains a **TabbedWindowTabControl** which inherits from **RadTabControl**, most of its [events]({%slug radtabcontrol-features-pinandclose%}#events) bubble to the window as well.
 
 ## AddingNewTab
 
@@ -209,5 +209,5 @@ Occurs when a change has been made to the selection.
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

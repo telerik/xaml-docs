@@ -40,7 +40,7 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 ## See Also
 
-* [Getting Started](%slug radtabbedwindow-getting-started%)
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Getting Started]({%slug radtabbedwindow-getting-started%})
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

@@ -187,6 +187,6 @@ __Figure 4__ shows __RadTabbedWindow__ with the **Windows8** theme applied.
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

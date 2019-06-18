@@ -112,6 +112,6 @@ Upon running the application, your RadTabbedWindow will now be populated with ta
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

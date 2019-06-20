@@ -28,21 +28,21 @@ __RadContextMenu__ provides the power to boost the existing navigation of your a
 
 ## Key Features      
 
-* __Multi-level Menu Items__ - __RadContextMenu__ supports the displaying of hierarchical data. You can build multiple levels of menu items as needed to achieve the navigation you’d like. [Read More]({%slug radcontextmenu-populating-with-data-overview%})
+* __Multi-level Menu Items__: The control supports displaying hierarchical data. You can build multiple levels of menu items as needed to achieve the navigation you’d like. [Read More]({%slug radcontextmenu-populating-with-data-overview%})
 
-* __Hierarchical Data Binding__ - the __RadContextMenu__ control allows you to bind and visualize sets of hierarchical data. You can also populate it by consuming data from XML files, WCF services, RIA services etc. [Read More]({%slug radcontextmenu-features-data-binding%})
+* __Hierarchical Data Binding__: The control allows you to bind and visualize sets of hierarchical data. You can also populate it by consuming data from XML files, WCF services, RIA services etc. [Read More]({%slug radcontextmenu-features-data-binding%})
 
-* __Opening on a Specific Event__ - you are able to specify the event that should trigger the __RadContextMenu__ opening. You can also specify a key, that should be pressed in combination with the event. [Read More]({%slug radcontextmenu-features-opening-on-specific-event%})
+* __Opening on a Specific Event__: You are able to specify the event that should trigger the __RadContextMenu__ opening. You can also specify a key, that should be pressed in combination with the event. [Read More]({%slug radcontextmenu-features-opening-on-specific-event%})
 
-* __Styling and Appearance__ - __RadContextMenu__ can be fully customized. There are also various pre-defined themes that can be used to style the control. [Read More]({%slug radcontextmenu-styles-and-templates-overview%})
+* __Styling and Appearance__: __RadContextMenu__ can be fully customized. There are also various pre-defined themes that can be used to style the control. [Read More]({%slug radcontextmenu-styles-and-templates-overview%})
 
 {% if site.site_name == 'Silverlight' %}
-* __Boundary Detection__ - __RadContextMenu__ detects the Silverlight plug-in boundaries and opens its child item-groups in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items’ position in order to make them visible whenever this is possible. [Read More]({%slug radcontextmenu-features-boundaries-detection%})
+* __Boundary Detection__: __RadContextMenu__ detects the Silverlight plug-in boundaries and opens its child item-groups in the opposite direction when the screen boundaries are to be crossed. When there is not enough space in both directions, the control will adjust its items’ position in order to make them visible whenever this is possible. [Read More]({%slug radcontextmenu-features-boundaries-detection%})
 {% endif %}
 
 * __UI Automation Support__: Check the [UI Automation Support]({%slug common-ui-automation%}) common article.
 
-* __Enhanced Routed Events Framework__: The events system of the control will help your code become even more elegant and concise.          
+* __Enhanced Routed Events Framework__: The events system of the control will help your code become even more elegant and concise.       
 
 >tip Get started with the control with its [Getting Started]({%slug contextmenu-getting-started%}) help article that shows how to use it in a basic scenario.
 

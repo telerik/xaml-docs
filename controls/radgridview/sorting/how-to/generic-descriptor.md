@@ -50,7 +50,7 @@ The __RadGridView__ control allows for ordering the data items by the result of 
 
 After that, when the button is clicked we will create a generic SortDescriptor and add it to the __SortDescriptors__ collection of the RadGridView. Note, that in __Example 2__ we are simply returning a property of the bound object, however we have the option of working with all of its properties in order to construct a SortingExpression. 
 
-#### __Example 2: Create a generic SortDescriptor__
+#### __[C#] Example 2: Create a generic SortDescriptor__
 
 {{region cs-gridview-howto-use-expression-descriptors_1}}
 	private void Button_Click(object sender, RoutedEventArgs e)

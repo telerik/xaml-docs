@@ -28,7 +28,7 @@ __RadColorPicker__ for {% if site.site_name == 'Silverlight' %}Silverlight{% end
 
 * __Set custom button content__: Change the content of the RadColorPicker button with its __ContentTemplate__ property. Find out more in the [Set Custom Content]({%slug radcolorpicker-how-to-set-custom-content%}) article.
 
-* __Command property__: You can easily react to user interaction with a command from the viewmodel. Check out the [Commands]({%slug radcolorpicker-commands%}) article for more information.
+* __Command property__: You can easily react to user interaction with a command from the ViewModel. Check out the [Commands]({%slug radcolorpicker-commands%}) article for more information.
 
 * __Styling and Appearance__: RadColorPicker comes with a variety of themes and properties that allows customizing the control's appearance.
 

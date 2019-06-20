@@ -16,7 +16,7 @@ If you need to consume a service which does not have a default provider, you can
 
 The **MapProviderBase** is the base class for all map providers. Two widely-used implementations of the class are the __TiledProvider__ and __ImageProvider__.
 
-* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [BingMaps]({%slug radmap-features-providers-bing-rest-map%}), [OpenStreetMap]({%slug radmap-features-providers%})#openstreet-maps).
+* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [BingMaps]({%slug radmap-features-providers-bing-rest-map%}), [OpenStreetMap]({%slug radmap-features-providers%}#openstreet-maps).
 
 * __ImageProvider__ is a base class for providers that show a map as a single image ([UriImageProvider]({%slug radmap-features-uriimageprovider%})). 
 
@@ -55,8 +55,8 @@ Once you know the type of provider you require, you can create a custom class to
 
 As seen in **Example 1**, the next requirement is to add instances of the abstract [MultiScaleTileSource](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.controls.map.multiscaletilesource) class to the provider's **MapSources** collection. The class exposes two useful properties:
 
-**RequestCredentials**: Gets or sets credentials for downloading tiles.
-**WebHeaders**: Gets or sets the headers used in the get requests made to the tile servers via System.Net.WebClient. This property was introduced with **R2 2019 SP1**.
+* **RequestCredentials**: Gets or sets credentials for downloading tiles.
+* **WebHeaders**: Gets or sets the headers used in the get requests made to the tile servers via System.Net.WebClient. This property was introduced with **R2 2019 SP1**.
 
 The two default implementations of this abstract class are the __TiledMapSource__ and the __ImageMapSource__.
 

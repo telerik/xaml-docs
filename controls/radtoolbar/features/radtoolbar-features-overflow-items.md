@@ -1,7 +1,7 @@
 ---
 title: Overflow Items
 page_title: Overflow Items
-description: Overflow Items
+description: The RadToolBar control automatically hides part of its items in the overflow area if there is not enough space to display all.
 slug: radtoolbar-features-overflow-items
 tags: overflowmode, autohide, events
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Overflow Items
 
-The RadToolBar control automatically hides part of its items in the overflow area if there is not enough space to display all.
+The RadToolBar control automatically hides part of its items in the overflow area when there is not enough space to display all.
 
 #### __[XAML] Example 1: Overflow area example__
 {{region radtoolbar-features-overflow-items-0}}
@@ -27,7 +27,7 @@ The RadToolBar control automatically hides part of its items in the overflow are
 
 By default the overflow button is always visible whether there are items in the overflow area or not. To change this, set the `AutoHideOverflowButton` property of `RadToolBar` to `True`.
 
-#### __[XAML] Example 2: Setting AutoHideOverflowButton_
+#### __[XAML] Example 2: Setting AutoHideOverflowButton__
 {{region radtoolbar-features-overflow-items-1}}
 	<telerik:RadToolBar AutoHideOverflowButton="True">
 		<telerik:RadButton Content="B1" />

@@ -5,7 +5,7 @@ description: Item Alignment
 slug: radtoolbar-features-itemalignment
 tags: item,alignment
 publish: True
-position: 4
+position: 3
 ---
 
 # Item Alignment

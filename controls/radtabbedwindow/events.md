@@ -12,7 +12,7 @@ position: 3
 
 The RadTabbedWindow control exposes a number of events to let you easily customize its behavior.
 
-Most of these events are inherited from the [RadWindow](%slug radwindow-events-overview%) control. As the RadTabbedWindow contains a **TabbedWindowTabControl** which inherits from **RadTabControl**, most of its [events](%slug radtabcontrol-features-pinandclose%#events) bubble to the window as well.
+Most of these events are inherited from the [RadWindow]({%slug radwindow-events-overview%}) control. As the RadTabbedWindow contains a **TabbedWindowTabControl** which inherits from **RadTabControl**, most of its [events]({%slug radtabcontrol-features-pinandclose%}#events) bubble to the window as well.
 
 ## AddingNewTab
 
@@ -88,13 +88,17 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **Cancel**: Gets or sets a value indicating whether the creation of the new window should be cancelled.
 * **SourceWindow**: The source window from which the drag drop operation is started.
 * **NewWindow**: The new window created via drag drop operation.
-* **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow.
+* **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow. As of **R2 2019 SP1**, this property is **obsolete** and the **DraggedItem** property needs to be used instead.
+* **DraggedItem**: The dragged RadTabItem in an unbound scenario or the dragged item (viewmodel) in a databinding scenario.
 
-#### [C#] Example 3: Handle the TabbedWindowCreating event  
+**Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window in an **unbound scenario**.
+
+#### [C#] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
 {{region cs-radtabbedwindow-events_3}}
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
-        if (e.DraggedTab.Header.ToString() == "Progress") // replace with your cancel condition
+		var tab = e.DraggedItem as RadTabItem;
+        if (tab != null && tab.Header.ToString() == "Progress") // replace with your cancel condition
         {
             e.Cancel = true;
         }
@@ -105,13 +109,68 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
     }
 {{endregion}}
 
-#### [VB.NET] Example 3: Handle the TabbedWindowCreating event  
+#### [VB.NET] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
 {{region vb-radtabbedwindow-events_3}}
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
-		If e.DraggedTab.Header.ToString() = "Progress" Then ' replace with your cancel condition
+		Dim tab = TryCast(e.DraggedItem, RadTabItem)
+		If tab IsNot Nothing AndAlso tab.Header.ToString() = "Progress" Then ' replace with your cancel condition
 			e.Cancel = True
 		Else
 			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
+		End If
+	End Sub
+{{endregion}}
+
+You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window. **Example 4** demonstrates how to do so in a **databound scenario**.
+
+#### [C#] Example 4: Change the ItemsSource of the new window in a databinding scenario
+{{region cs-radtabbedwindow-events_4}}
+    private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
+    {
+		var tabItem = e.DraggedItem as MyTabItem;
+        if (tabItem != null && tabItem.Header == "Progress")
+        {
+            e.NewWindow.ItemsSource = null; 
+		}
+        else if (tabItem != null && tabItem.Header == "Microsoft")
+        {
+            var collection = e.NewWindow.ItemsSource as ObservableCollection<object>;
+            if (collection != null)
+            {
+                collection.Add(new MyTabItem() { Header = "My tab 1" });
+                collection.Add(new MyTabItem() { Header = "My tab 2" });
+            }
+		}
+        else
+        {
+            var collection = new ObservableCollection<Person>();
+			collection.Add(new Person() { Name = "John Doe", Age = 23 });
+            e.NewWindow.ItemsSource = collection;
+            e.NewWindow.DisplayMemberPath = "Name";
+        }
+    }
+{{endregion}}
+
+#### [VB.NET] Example 4: Change the ItemsSource of the new window in a databinding scenario
+{{region vb-radtabbedwindow-events_4}}
+	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
+		Dim tabItem = TryCast(e.DraggedItem, MyTabItem)
+		If tabItem IsNot Nothing AndAlso tabItem.Header = "Progress" Then
+			e.NewWindow.ItemsSource = Nothing
+		ElseIf tabItem IsNot Nothing AndAlso tabItem.Header = "Microsoft" Then
+			Dim collection = TryCast(e.NewWindow.ItemsSource, ObservableCollection(Of Object))
+			If collection IsNot Nothing Then
+				collection.Add(New MyTabItem() With {.Header = "My tab 1"})
+				collection.Add(New MyTabItem() With {.Header = "My tab 2"})
+			End If
+		Else
+			Dim collection = New ObservableCollection(Of Person)
+			collection.Add(New Person() With {
+				.Name = "John Doe",
+				.Age = 23
+			})
+			e.NewWindow.ItemsSource = collection
+			e.NewWindow.DisplayMemberPath = "Name"
 		End If
 	End Sub
 {{endregion}}
@@ -150,5 +209,5 @@ Occurs when a change has been made to the selection.
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

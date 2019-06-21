@@ -153,5 +153,5 @@ If you wish to return different templates for the tab items' content, you can us
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})

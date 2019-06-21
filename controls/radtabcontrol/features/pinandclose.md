@@ -50,6 +50,13 @@ The close button of the RadTabItem is collapsed by default. The button can be sh
 
 ![](images/tabcontrol-closebutton-tabitems.png)
 
+To prevent the tab from closing when the middle mouse button is pressed, set the __CloseTabsOnMouseMiddleButtonDown__ property of RadTabControl to False.
+
+#### __[XAML] Example 3: Disable closing the tabs when the middle mouse button is pressed__
+{{region radtabcontrol-features-pinandclose_2}}
+	<telerik:RadTabControl CloseTabsOnMouseMiddleButtonDown="False" />
+{{endregion}}
+
 ## Events
 
 __RadTabControl__ provides several events in regards to its pinning and closing functionalities:
@@ -76,9 +83,8 @@ RadTabControl exposes its pinned/unpinned functionality through two commands tha
 
 When executing the command on a given RadTabItem the item will be pinned/unpinned depending on its current state.
 
-#### __[C#] Example 3: Execute the TogglePin command__
-
-{{region radtabcontrol-features-pinandclose_2}}
+#### __[C#] Example 4: Execute the TogglePin command__
+{{region radtabcontrol-features-pinandclose_3}}
 	TabItemCommands.TogglePin.Execute(null,myRadTabItem);
 {{endregion}}
 
@@ -86,9 +92,8 @@ When executing the command on a given RadTabItem the item will be pinned/unpinne
 
 When executing the command on a given RadTabItem the item will be close.
 
-#### __[C#] Example 3: Execute the Close command__
-
-{{region radtabcontrol-features-pinandclose_2}}
+#### __[C#] Example 5: Execute the Close command__
+{{region radtabcontrol-features-pinandclose_4}}
 	TabItemCommands.Close.Execute(null,myRadTabItem);
 {{endregion}}
 

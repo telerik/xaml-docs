@@ -3,106 +3,103 @@ title: Overflow Items
 page_title: Overflow Items
 description: Overflow Items
 slug: radtoolbar-features-overflow-items
-tags: 
+tags: overflowmode, autohide, events
 published: True
 position: 1
 ---
 
 # Overflow Items
 
+The RadToolBar control automatically hides part of its items in the overflow area if there is not enough space to display all.
 
-//AutoHideOverflowButton
-//OverflowButtonVisibility
-//OverflowItems
-//IsOverflowOpen
-//HasOverflowItems
-//RadToolBar.OverflowMode attached property
-
-//GripVisibility
-
-OverflowAreaClosed
-OverflowAreaOpened
-
-===============================
-The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
-
-![](images/radtoolbartray-overview-0.png)
-
-## Defining ToolBarTray
-
-The following example shows a very basic definition of the `RadToolBarTray` control with two RadToolBars.
-
-#### __[XAML] Example 1: Define the tray in XAML__
-{{region radtoolbartray-overview-0}}
-	<telerik:RadToolBarTray VerticalAlignment="Center" Width="460">
-		<telerik:RadToolBar>
-			<telerik:RadButton Content="Button 1" />
-			<telerik:RadButton Content="Button 2 " />
-			<telerik:RadButton Content="Button 3" />
-		</telerik:RadToolBar>
-		<telerik:RadToolBar>
-			<telerik:RadButton Content="Button 1" />
-			<telerik:RadButton Content="Button 2 " />
-		</telerik:RadToolBar>          
-	</telerik:RadToolBarTray>
+#### __[XAML] Example 1: Overflow area example__
+{{region radtoolbar-features-overflow-items-0}}
+	<telerik:RadToolBar Width="80">
+		<telerik:RadButton Content="B1" />
+		<telerik:RadButton Content="B2 " />
+		<telerik:RadButton Content="B3" />
+	</telerik:RadToolBar>
 {{endregion}}
 
-![](images/radtoolbartray-overview-1.png)
+![](images/radtoolbar-features-overflow-items-0.png)
 
-## Setting Band and Band Position
+## Overflow Button Visibility
 
-The `RadToolBar` control exposes `Band` property that can be used to define the row of the toolbar in the tray. The position (the order) in the current band is controlled via the `BandIndex` property of the toolbar.
+By default the overflow button is always visible whether there are items in the overflow area or not. To change this, set the `AutoHideOverflowButton` property of `RadToolBar` to `True`.
 
-The following picture shows how the band and band index affect the positions of the toolbars in the tray.
-
-![](images/radtoolbartray-overview-2.png)
-
-> By default all `RadToolBar` elements hosted in the tray are positioned in the first band (Band=0). The default band index is the based on the collection index of the toolbar plus the current band position.
-
-#### __[XAML] Example 2: Setting Band and BandIndex manually__
-{{region radtoolbartray-overview-1}}
-	<telerik:RadToolBarTray>
-		<telerik:RadToolBar BandIndex="1">
-			<telerik:RadButton Content="Button 1" />
-			<telerik:RadButton Content="Button 2 " />
-			<telerik:RadButton Content="Button 3" />
-		</telerik:RadToolBar>
-		<telerik:RadToolBar>
-			<telerik:RadButton Content="Button 4" />
-			<telerik:RadButton Content="Button 5 " />
-			<telerik:RadButton Content="Button 6" />
-		</telerik:RadToolBar>
-		<telerik:RadToolBar Band="1">
-			<telerik:RadButton Content="Button 7" />
-			<telerik:RadButton Content="Button 8 " />
-		</telerik:RadToolBar>
-		<telerik:RadToolBar Band="2">
-			<telerik:RadButton Content="Button 9" />
-			<telerik:RadButton Content="Button 10 " />
-		</telerik:RadToolBar>
-	</telerik:RadToolBarTray>
+#### __[XAML] Example 2: Setting AutoHideOverflowButton_
+{{region radtoolbar-features-overflow-items-1}}
+	<telerik:RadToolBar AutoHideOverflowButton="True">
+		<telerik:RadButton Content="B1" />
+		<telerik:RadButton Content="B2 " />
+		<telerik:RadButton Content="B3" />
+	</telerik:RadToolBar>
 {{endregion}}
 
-![](images/radtoolbartray-overview-3.png)
+![](images/radtoolbar-features-overflow-items-1.png)
 
-## Setting Orientation
+To manually control the overflow button visibility, set the `OverflowButtonVisibility` property.
 
-By default the `RadToolBarTray` will order the toolbars horizontally. Also, the RadToolBar controls will order its items horizontally. To switch the orientation of the tray and the toolbars set the `Orientation` property of `RadToolBarTray` to `Vertical`
-
-#### __[XAML] Example 3: Setting Orientation__
-{{region radtoolbartray-overview-2}}
-	<telerik:RadToolBarTray Orientation="Vertical" VerticalAlignment="Center" Width="460">
-		<telerik:RadToolBar>
-			<telerik:RadButton Content="B1" />
-			<telerik:RadButton Content="B2 " />
-			<telerik:RadButton Content="B3" />
-		</telerik:RadToolBar>
-		<telerik:RadToolBar>
-			<telerik:RadButton Content="B4" />
-			<telerik:RadButton Content="B5 " />
-			<telerik:RadButton Content="B6" />
-		</telerik:RadToolBar>           
-	</telerik:RadToolBarTray>
+#### __[XAML] Example 3: Setting OverflowButtonVisibility__
+{{region radtoolbar-features-overflow-items-2}}
+	<telerik:RadToolBar OverflowButtonVisibility="Collapsed">
+		<telerik:RadButton Content="B1" />
+		<telerik:RadButton Content="B2 " />
+		<telerik:RadButton Content="B3" />
+	</telerik:RadToolBar>
 {{endregion}}
 
-![](images/radtoolbartray-overview-4.png)
+![](images/radtoolbar-features-overflow-items-2.png)
+
+## Open Overflow Area Manually
+
+To open or close the over flow area manually, set the `IsOverflowOpen` property of `RadToolBar`.
+
+#### __[C#] Example 4: Open the overflow area manually__
+{{region radtoolbar-features-overflow-items-3}}
+	private void Button_Click(object sender, RoutedEventArgs e)
+	{
+		this.radToolbar.IsOverflowOpen = true;
+	}
+{{endregion}}
+
+## Overflow Items
+
+The items that are in the overflow area can be accessed through the `OverflowItems` property of `RadToolBar`.
+
+#### __[C#] Example 5: Getting the first item from the overflow area__
+{{region radtoolbar-features-overflow-items-4}}	
+	object element = this.radToolbar.OverflowItems[0];
+{{endregion}}
+
+> Adding items in the `OverflowItems` collection manually is not supported.
+
+To manually determine what controls from the toolbar should be added in the toolbar use the `RadToolBar.OverflowMode` attached property. The property allows setting the following modes:
+
+* `AsNeeded`: The item can be shown in the overflow area if there is not enough space in the toolbar. This is the default mode of the items.
+* `Always`: The item will always be shown in the overflow area.
+* `Never`: The item will never be shown in the overflow area.
+
+#### __[XAML] Example 6: Setting OverflowMode__
+{{region radtoolbar-features-overflow-items-5}}
+	<telerik:RadToolBar>
+		<telerik:RadButton Content="B1" telerik:RadToolBar.OverflowMode="Always"/>
+		<telerik:RadButton Content="B2 " />
+		<telerik:RadButton Content="B3" />
+	</telerik:RadToolBar>
+{{endregion}}
+
+![](images/radtoolbar-features-overflow-items-3.png)
+
+## Events
+
+`RadToolBar` expose two events related to the overflow feature. 
+
+* `OverflowAreaOpened`: It fires when the overflow area gets opened.
+
+* `OverflowAreaClosed`: It fires when the overflow area gets closed.
+
+The events are useful to indicated the current state of the overflow area.
+
+## See Also
+* [Getting Started]({%slug radtoolbar-getting-started%})

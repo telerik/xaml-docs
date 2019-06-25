@@ -305,6 +305,19 @@ Here are all of the predefined chart palettes:
 			<div style="width:20px;height:20px;background: #FF9933;display: inline-block;"></div>
 		</td>
   </tr>
+   <tr>
+    <td>VisualStudio2019</td>
+    <td>
+			<div style="width:20px;height:20px;background: #40508D;display: inline-block;"></div> 
+			<div style="width:20px;height:20px;background: #40778D;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #508D40;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #B3CD2B;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #E5C909;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #8D7D40;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #8D4077;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #57408D;display: inline-block;"></div>
+		</td>
+  </tr>
 </table>
 
 A palette can be set via the __Palette__ property of the chart. The property is of type __System.Windows.Media.Media3D.MaterialCollection__ so you can easily create a [custom palette](#create-a-custom-palette).

@@ -111,6 +111,7 @@ By default, the groups of timeline items are collapsed when GroupExpandMode is s
 
 #### __XAML__
 {{region radtimeline-features-grouping-3}}
+	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="True" />
 	</Style>
@@ -120,6 +121,7 @@ In order to change the default state of specific groups of timeline items, you c
 
 #### __XAML__
 {{region radtimeline-features-grouping-4}}
+	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}}" />
 	</Style>

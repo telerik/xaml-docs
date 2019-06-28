@@ -331,6 +331,10 @@ If the customization provided by these properties does not cover your requiremen
 
 The InflatedRectRouter is a simple connection router whos goal is to create a route with least bends. This router doesn't try go around shapes except the start and end shape.
 
+## ReflexiveRouter
+
+The ReflexiveRouter is responsible for creating connections when the source and the target is the same shape. In order to learn how to prevent such connections, read the [How to Prevent Shapes from Being Connected to Themselves]({%slug kb-diagrams-prevent-shape-from-being-contected-to-itself%}) KB article.
+
 ## Custom Router
 
 In the following section we will create a custom Router. This way we will be able to set the routing points of our Polyline Connections.

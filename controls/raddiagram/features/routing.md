@@ -333,7 +333,7 @@ The InflatedRectRouter is a simple connection router whos goal is to create a ro
 
 ## ReflexiveRouter
 
-The ReflexiveRouter is responsible for creating connections when the source and the target are the same shape. In order to learn how to prevent such connections, read the [How to Prevent Shapes from Being Connected to Themselves]({%slug kb-diagrams-prevent-shape-from-being-contected-to-itself%}) KB article.
+The ReflexiveRouter is responsible for creating connections when the source and the target is the same shape. In order to learn how to prevent such connections, read the [How to Prevent Shapes from Being Connected to Themselves]({%slug kb-diagrams-prevent-shape-from-being-contected-to-itself%}) KB article.
 
 ## Custom Router
 

@@ -20,7 +20,7 @@ The content of each cell within the column is treated as string due to the forma
 
 __SOLUTION 1__
 
-When an element is exported through the [ExportToXlsx]({%slug gridview-export-xlsx%}), [ExportToWorkbook]({%slug gridview-export-workbook%}) or [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%}) methods, the arguments of the [ElementExportingToDocument]({%slug gridview-export-events-elementexporting-elementexported-todocument%}) event can be used to modify the visual appearance of the exported values and specify how they should be [formatted]({%slug https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes%}) in Excel. This is achieved through the **VisualParameters** property of the **GridViewCellExportingEventArgs**.
+When an element is exported through the [ExportToXlsx]({%slug gridview-export-xlsx%}), [ExportToWorkbook]({%slug gridview-export-workbook%}) or [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%}) methods, the arguments of the [ElementExportingToDocument]({%slug gridview-export-events-elementexporting-elementexported-todocument%}) event can be used to modify the visual appearance of the exported values and specify how they should be [formatted](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes) in Excel. This is achieved through the **VisualParameters** property of the **GridViewCellExportingEventArgs**.
 
 **Example 1** illustrates the approach:
 

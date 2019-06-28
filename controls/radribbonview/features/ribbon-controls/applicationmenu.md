@@ -60,11 +60,6 @@ In order to add an application menu to your __RadRibbonView__ control you need t
 	Me.radRibbonView.ApplicationMenu = New ApplicationMenu()
 {{endregion}}
 
-## Setting an Application Button Image
-
-The default look of the application button is an empty circular button similar to the next snapshot.
-![](images/RibbonView_ApplicationMenu_DefaultAppImage.png)
-
 ## Adding Menu Items
 
 When you want to add menu items to your __RadRibbonView__'s application menu, you need to populate the __ApplicationMenu__'s __Items__ collection. It is handy to use the __RadRibbonButton__, __RadRibbonSplitButton__, __RadRibbonDropDownButton__ and __Separator__ controls.				
@@ -353,28 +348,9 @@ The last element of the application menu is the __Footer Content__. This is the 
 In this example, it is assumed that you are familiar with initializing the menu items and content of the application menu. If not, check out the previous two sections where the process of adding [menu items](#adding-menu-items) and [content](#adding-content) is described. The result of the last example is shown on the snapshot below. 
 ![](images/RibbonView_ApplicationMenu_Footer.png)
 
-## Hiding the Application Menu
+## Customizing the Application Menu Button
 
-Whenever you want to prevent the end-user from using the application menu, you should set the __RadRibbonView__'s __ApplicationButtonVisibility__ property to __Visibility.Collapsed__. On the contrary, if you want run-time to enable (show) again the application menu, then set the __ApplicationButtonVisibility__ property to __Visibility.Visible__.				
-
->tip The default value of the __RadRibbonView__'s __ApplicationButtonVisibility__ property is __Visibility.Visible__.				
-
-#### __XAML__
-{{region radribbonview-applicationmenu_6}}
-	<telerik:RadRibbonView x:Name="ribbonView" ApplicationButtonVisibility="Collapsed">
-	 ...
-	</telerik:RadRibbonView>
-{{endregion}}
-
-#### __C#__
-{{region radribbonview-applicationmenu_7}}
-	ribbonView.ApplicationButtonVisibility = Visibility.Collapsed;
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-applicationmenu_8}}
-	ribbonView.ApplicationButtonVisibility = Visibility.Collapsed
-{{endregion}}
+In order to learn how to customize the application menu button, disable it or hide it, read the [Customize the Application Menu Button]({%slug radribbonview-howto-style-app-button%}) article.
 
 ## Events
 

@@ -53,7 +53,7 @@ To manually control the overflow button visibility, set the `OverflowButtonVisib
 
 ## Open Overflow Area Manually
 
-To open or close the over flow area manually, set the `IsOverflowOpen` property of `RadToolBar`.
+To open or close the overflow area manually, set the `IsOverflowOpen` property of `RadToolBar`.
 
 #### __[C#] Example 4: Open the overflow area manually__
 {{region radtoolbar-features-overflow-items-3}}

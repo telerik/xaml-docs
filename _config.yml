@@ -1129,10 +1129,7 @@ navigation:
         position: 9
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 10
-    "xamlflix-step-by-step-guide":
-        title: "XAMLflix Step-by-Step Guide"
-        position: 11
+        position: 10   
 ## Common End
 
 ## Api Reference Start

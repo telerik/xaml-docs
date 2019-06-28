@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-description: This article will demonstrate the Grouping feature of the RadTimeline in an MVVM scenario. 
+description: This article demonstrates the Grouping feature of the RadTimeline in an MVVM scenario. 
 slug: radtimeline-features-grouping
 tags: grouping
 published: True
@@ -12,7 +12,7 @@ position: 7
 
 The timeline items in a RadTimeline control can be displayed in groups. Additionally, groups of timeline items can be made expandable/collapsible.
 
-## Setting up the RadTimeline in an MVVM scenario
+## Setting up the RadTimeline
  
 In order to demonstrate the Grouping feature of the control, we will define a model and a viewmodel as demonstrated in __Example 1__.
 
@@ -221,9 +221,11 @@ By default, the groups of timeline items are collapsed when the __GroupExpandMod
 #### __[XAML] Example 5: Setting the IsExpanded property of the TimelineItemGroupControl through a style__
 {{region xaml-radtimeline-features-grouping-4}}
 	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
+    <Window.Resources>
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="True" />
 	</Style>
+    </Window.Resources>
 {{endregion}}
 
 In order to change the default state of specific groups of timeline items, you can use a converter:        
@@ -231,9 +233,11 @@ In order to change the default state of specific groups of timeline items, you c
 #### __[XAML] Example 6: Setting the IsExpanded property of the TimelineItemGroupControl with a converter__
 {{region xaml-radtimeline-features-grouping-5}}
 	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
+    <Window.Resources>
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}}" />
 	</Style>
+    </Window.Resources>
 {{endregion}}
 
 #### __[C#] Example 7: Defining the GroupKeyToIsExpandedConverter__

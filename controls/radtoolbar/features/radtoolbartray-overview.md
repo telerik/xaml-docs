@@ -10,7 +10,7 @@ position: 0
 
 # ToolBarTray
 
-The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
+The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size, and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
 
 ![](images/radtoolbartray-overview-0.png)
 
@@ -73,7 +73,7 @@ The following picture shows how the band and band index affect the positions of 
 
 ## Setting Orientation
 
-By default the `RadToolBarTray` will order the toolbars horizontally. Also, the RadToolBar controls will order its items horizontally. To switch the orientation of the tray and the toolbars set the `Orientation` property of `RadToolBarTray` to `Vertical`
+By default, the `RadToolBarTray` will order the toolbars horizontally. Also, the RadToolBar controls will order its items horizontally. To switch the orientation of the tray and the toolbars set the `Orientation` property of `RadToolBarTray` to `Vertical`.
 
 #### __[XAML] Example 3: Setting Orientation__
 {{region radtoolbartray-overview-2}}

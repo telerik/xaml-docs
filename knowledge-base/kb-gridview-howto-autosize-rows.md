@@ -23,7 +23,6 @@ res_type: kb
     </tbody>
 </table>
 
-
 ## Description
 
 How to auto-size the rows of the RadGridView control based on its height.
@@ -36,28 +35,31 @@ How to auto-size the rows of the RadGridView control based on its height.
 	{{region kb-gridview-howto-autosize-rows-0}}
     private void AdjustRowHeight()
     {
-        var scrollViewer = this.Grid.ChildrenOfType<GridViewScrollViewer>().First();
-        double rowHeight = (scrollViewer.ActualHeight - scrollViewer.HeaderRow.ActualHeight) / this.Grid.Items.Count;
+        var scrollViewer = this.radGridView.ChildrenOfType<GridViewScrollViewer>().First();
+        double rowHeight = (scrollViewer.ActualHeight - scrollViewer.HeaderRow.ActualHeight) / this.radGridView.Items.Count;
         if (rowHeight > 0)
         {
-            this.Grid.RowHeight = rowHeight;
+            this.radGridView.RowHeight = rowHeight;
         }
     }
 	{{endregion}}
 
-What this does is to get the actual height of the **GridViewScrollViewer** - which is the element which holds all the rows of the control - and subtract from it the height of the header row element. This height is then divided by the total row count.
+What this does is to get the actual height of the **GridViewScrollViewer** - which is the element that holds all the rows of the control - and subtract from it the height of the header row element. This height is then divided by the total row count.
 
 2. Call the **AdjustRowHeight** method in the **Loaded** and **SizeChanged** events of the RadGridView control:
 
 	#### __[C#]__
 	{{region kb-gridview-howto-autosize-rows-1}}
-    private void Grid_Loaded(object sender, RoutedEventArgs e)
+    private void RadGridView_Loaded(object sender, RoutedEventArgs e)
     {
         this.AdjustRowHeight();
     }
 
-    private void Grid_SizeChanged(object sender, SizeChangedEventArgs e)
+    private void RadGridView_SizeChanged(object sender, SizeChangedEventArgs e)
     {
         this.AdjustRowHeight();
     }
 	{{endregion}}
+
+## See Also
+* [ChildrenOfType]({%slug common-visual-tree-helpers%})

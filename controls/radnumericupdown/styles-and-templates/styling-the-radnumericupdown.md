@@ -1,7 +1,7 @@
 ---
 title: Styling the RadNumericUpDown
 page_title: Styling the RadNumericUpDown
-description: This article demonstrates how to style the RadNumericUpDown control. 
+description: This article demonstrates how to Style the RadNumericUpDown control. 
 slug: styling-the-radnumericupdown
 tags: styling, radnumericupdown
 published: True
@@ -10,11 +10,11 @@ position: 0
 
 # Styling the RadNumericUpDown
 
-This article will demonstrate how to create a style targeting the __RadNumericUpDown__ control.
+This article will demonstrate how to create a Style targeting the __RadNumericUpDown__ control.
 
 ## Targeting the RadNumericUpDown Element
 
-In order to style the RadNumericUpDown, you can create a style targeting __RadNumericUpDown__.
+In order to style the RadNumericUpDown, you can create a Style targeting __RadNumericUpDown__.
 
 #### __[XAML] Example 1: Creating a style targeting the RadNumericUpDown control__
 

@@ -97,7 +97,7 @@ There are few layout group controls which can be used with __RadLayoutControl__.
 
 ## ScrollViewer Root Element
 
-The RadLayoutControl and its groups wrap their content in a ScrollViewer. The ScrollViewer control measures its children with infinity. This behavior disables the virtualization of some controls placed inside. You can easily disable the ScrollViewer functionality and delegate the scrolling to the child framework element inside. To do that you can set the __ScrollViewer.VerticalScrollBarVisibility__ / __ScrollViewer.HorizontalScrollBarVisibility__ attached properties to the RadLayoutControl and to the groups you want this property applied.
+The RadLayoutControl and its groups wrap their content in a ScrollViewer. The ScrollViewer control measures its children with infinity. This behavior disables the virtualization of all controls placed inside. You can easily disable the ScrollViewer functionality and delegate the scrolling to the child framework element inside. To do that you can set the __ScrollViewer.VerticalScrollBarVisibility__ / __ScrollViewer.HorizontalScrollBarVisibility__ attached properties to the RadLayoutControl and to the groups you want this property applied.
 
 ## Enable Edit Mode
 

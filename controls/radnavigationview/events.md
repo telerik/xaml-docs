@@ -31,7 +31,7 @@ __RadNavigationView__ inherits the __Selector__ class. Almost all of the exposed
 
 	* A __RoutedEventArgs__ object. 
 
-* __SelectionChanged__: Occurs when the selected RadNavigationViewItem gets changed. The event arguments are of type __ System.Windows.Controls.SelectionChangedEventArgs__ which can be used to get the new and the old selection via the __AddedItems__ and __RemovedItems__ properties.	
+* __SelectionChanged__: Occurs when the selected RadNavigationViewItem gets changed. The event arguments are of type __System.Windows.Controls.SelectionChangedEventArgs__ which can be used to get the new and the old selection via the __AddedItems__ and __RemovedItems__ properties.	
 
 ## See Also 
 

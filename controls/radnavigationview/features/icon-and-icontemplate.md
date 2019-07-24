@@ -11,7 +11,7 @@ position: 2
 
 The __RadNavigationViewItem__ allows you to display a custom icon in its template. To show an icon, you can use either the Icon, or the IconTemplate properties.
 
-## RadNavigationViewItem Icon
+## Icon
 
 Since the __Icon__ property is of type object, you can set it to an image, glyph or any custom control. __Example 1__ demonstrates how you can set the Icon of __RadNavigationViewItem__ to a [RadGlyph]({%slug common-styling-appearance-radglyph%}).
 
@@ -27,7 +27,7 @@ Since the __Icon__ property is of type object, you can set it to an image, glyph
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadNaviationViewItem Icon](images/NavigationViewItem_Icon.png)
 
-## RadNavigationViewItem IconTemplate
+## IconTemplate
 
 The __IconTemplate__ property is useful, because a single DataTemplate can be set to many __RadNavigationViewItems__. 
 This section will demonstrate how this property can be used in a databinding scenario.
@@ -122,8 +122,84 @@ After that we can setup our __RadNavigationView__ and set its ItemsSource to an 
 
 >For a more extensive databinding example check out the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.
 
+## IconTemplateSelector
+
+With the **2019.2.715** [latest internal build]({%slug installation-installing-lib%}) the RadNavigationViewItem exposes an **IconTemplateSelector** property which allows you to specify a different datatemplate based on the value of the **Icon** property. For example, you may display the icons by using multiple font families as shown in **Examples 4 and 5**. The examples demonstrate how to switch between the [TelerikWebUI]({%slug common-styling-appearance-glyphs-reference-sheet%}) and **Wingdings** fonts.
+
+>For the purposes of this example, let's assume that the last string of the **glyphStrings** array from **Example 2** is changed to **&#x00fc**.
+
+#### __[C#] Example 4: Defining the IconTemplateSelector__
+{{region cs-radnavigationview-item-icon-4}}
+    public class IconTemplateSelector : DataTemplateSelector
+    {
+        public DataTemplate TelerikWebUITemplate { get; set; }
+        public DataTemplate WingdingsTemplate { get; set; }
+
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+            var icon = item.ToString();
+            if (icon.StartsWith("&#xe"))
+            {
+                return this.TelerikWebUITemplate;
+            }
+            else
+            {
+                return this.WingdingsTemplate;
+            }
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 4: Defining the IconTemplateSelector__
+{{region vb-radnavigationview-item-icon-4}}
+    Public Class IconTemplateSelector
+        Inherits DataTemplateSelector
+
+            Public Property TelerikWebUITemplate() As DataTemplate
+            Public Property WingdingsTemplate() As DataTemplate
+
+            Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+                Dim icon = item.ToString()
+                If icon.StartsWith("&#xe") Then
+                    Return Me.TelerikWebUITemplate
+                Else
+                    Return Me.WingdingsTemplate
+                End If
+            End Function
+    End Class
+{{endregion}}
+
+#### __[XAML] Example 5: Using the IconTemplateSelector in XAML__
+{{region xaml-radnavigationview-item-icon-5}}
+    <Window.Resources>
+        <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
+        <Style TargetType="telerik:RadNavigationViewItem" BasedOn="{StaticResource RadNavigationViewItemStyle}">
+            <Setter Property="Content" Value="{Binding Title}" />
+            <Setter Property="Icon" Value="{Binding IconGlyph}" />
+            <Setter Property="IconTemplateSelector">
+                <Setter.Value>
+                    <local:IconTemplateSelector>
+                        <local:IconTemplateSelector.TelerikWebUITemplate>
+                            <DataTemplate>
+                                <telerik:RadGlyph Glyph="{Binding Converter={StaticResource StringToGlyphConverter}}" />
+                            </DataTemplate>
+                        </local:IconTemplateSelector.TelerikWebUITemplate>
+                        <local:IconTemplateSelector.WingdingsTemplate>
+                            <DataTemplate>
+                                <telerik:RadGlyph Font="Wingdings" Width="16" Height="16" Glyph="{Binding}" />
+                            </DataTemplate>
+                        </local:IconTemplateSelector.WingdingsTemplate>
+                    </local:IconTemplateSelector>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+{{endregion}}
+
+#### __Figure 3: Result from Example 5 in the Office2016 theme__
+![RadNavigationViewItems with Icons set through an IconTemplateSelector](images/NavigationViewItem_IconTemplateSelector.png)
+
 ## See Also
 
 * [DataBinding]({%slug radnavigationview-populating-with-data-databinding%})
 * [Display Mode]({%slug radnavigationview-display-mode%})
-* [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%})

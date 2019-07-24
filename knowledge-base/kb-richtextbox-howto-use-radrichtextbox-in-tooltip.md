@@ -31,7 +31,7 @@ To bind content to a RadRichTextBox, you need to use one of the available [data 
 
 ## Solution
 
-To have this binding work, you can pass the data through the **Content** property, which value will serve as a **DataContext** to the controls that are placed in the **ConteTemplate**. Here is how you can achieve that for a Grid's ToolTip:
+To have this binding work, you can pass the data through the **Content** property, the value of which will serve as a **DataContext** to the controls that are placed in the **ContentTemplate**. Here is how you can achieve that for a Grid's ToolTip:
 
 #### __[XAML]__
 {{region kb-richtextbox-howto-use-radrichtextbox-in-tooltip}}

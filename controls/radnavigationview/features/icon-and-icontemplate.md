@@ -124,7 +124,7 @@ After that we can setup our __RadNavigationView__ and set its ItemsSource to an 
 
 ## IconTemplateSelector
 
-With the **2019.2.715** [latest internal build]({%slug installation-installing-lib%}), the RadNavigationViewItem exposes an **IconTemplateSelector** property which allows you to specify a different icon based on the value of the **Icon** property. For example, you may display the icons by using multiple font families as shown in **xamples 4 and 5**. The examples demonstrate how to switch between the [TelerikWebUI]({%slug common-styling-appearance-glyphs-reference-sheet%}) and **Wingdings** fonts.
+With the **2019.2.715** [latest internal build]({%slug installation-installing-lib%}) the RadNavigationViewItem exposes an **IconTemplateSelector** property which allows you to specify a different datatemplate based on the value of the **Icon** property. For example, you may display the icons by using multiple font families as shown in **Examples 4 and 5**. The examples demonstrate how to switch between the [TelerikWebUI]({%slug common-styling-appearance-glyphs-reference-sheet%}) and **Wingdings** fonts.
 
 >For the purposes of this example, let's assume that the last string of the **glyphStrings** array from **Example 2** is changed to **&#x00fc**.
 

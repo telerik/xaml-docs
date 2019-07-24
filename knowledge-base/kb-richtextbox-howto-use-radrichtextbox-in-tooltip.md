@@ -2,7 +2,7 @@
 title: Use RadRichTextBox in Tooltip
 description: Shows how you can bind the content of RadRichTextBox to HTML when the control is defined in a ToolTip.
 type: how-to
-page_title: Use RadRichTextBox in a tooltip for an item in an ItemTemplate to show HTML content
+page_title: Use RadRichTextBox in a tooltip to show HTML content
 slug: kb-richtextbox-howto-use-radrichtextbox-in-tooltip
 position: 0
 tags: bind, binding, tooltip, richtextbox, datatemplate, html
@@ -26,12 +26,12 @@ res_type: kb
 
 
 ## Description
-To bind content to a RadRichTextBox, you need to use one of the available [data providers]({%slug radrichtextbox-features-data-providers%}). However, **the ToolTip is not part of the main visual tree** and the binding to a property from the DataContext of the page should be performed in the **ContentTemplate** of the **ToolTip** to ensure that the content and the provider are bound as expected.
-
+To bind content to a RadRichTextBox, you need to use one of the available [data providers]({%slug radrichtextbox-features-data-providers%}). However, popups have their separate visual tree and name scope, so binding outside of it is not possible with ElementName/RelativeSource. However, in this case, the binding is within the name scope, so we believe that this is a framework issue. 
 
 
 ## Solution
-Ensure the binding is performed in the **ContentTemplate** of the **ToolTip** and the content is transferred to the control by binding its **Content** property. Here is how you can achieve that for a Grid's ToolTip:
+
+To have this binding work, you can pass the data through the **Content** property, which value will serve as a **DataContext** to the controls that are placed in the **ConteTemplate**. Here is how you can achieve that for a Grid's ToolTip:
 
 #### __[XAML]__
 {{region kb-richtextbox-howto-use-radrichtextbox-in-tooltip}}

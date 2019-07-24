@@ -26,12 +26,14 @@ res_type: kb
 
 
 ## Description
-To bind content to a RadRichTextBox, you need to use one of the available [data providers]({%slug radrichtextbox-features-data-providers%}). However, popups have their separate visual tree and name scope, so binding outside of it is not possible with ElementName/RelativeSource. However, in this case, the binding is within the name scope, so we believe that this is a framework issue. 
+To bind content to a RadRichTextBox, you need to use one of the available [data providers]({%slug radrichtextbox-features-data-providers%}). However, popups have their separate visual tree and name scope, so binding outside of it is not possible with ElementName/RelativeSource, due to a limitation in the framework. 
 
 
 ## Solution
 
 To have this binding work, you can pass the data through the **Content** property, the value of which will serve as a **DataContext** to the controls that are placed in the **ContentTemplate**. Here is how you can achieve that for a Grid's ToolTip:
+
+>The *Name* is a property of the object used as a DataContext for the ToolTip.
 
 #### __[XAML]__
 {{region kb-richtextbox-howto-use-radrichtextbox-in-tooltip}}

@@ -18,9 +18,11 @@
 /docs-watcher/
 /favicon.ico
 /fonts/
+/LICENSE
 /styles/
 _site
 _site_SL
+_tempconfig.yml
 bs-config.js
 build-docs.sh
 copy_content.sh
@@ -36,5 +38,3 @@ search.html
 start-docs.sh
 start-docs-sl.sh
 watch.sh
-_tempconfig.yml
-/LICENSE

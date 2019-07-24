@@ -37,3 +37,4 @@ start-docs.sh
 start-docs-sl.sh
 watch.sh
 _tempconfig.yml
+/LICENSE

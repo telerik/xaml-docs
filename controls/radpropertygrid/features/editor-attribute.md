@@ -10,17 +10,7 @@ position: 17
 
 # Editor Attribute
 
-In this article, the following topics will be discussed:
-
-* [General Information](#general-information)
-
-* [Constructors](#constructors)
-
-* [Define Data](#define-data)
-
-## General Information
-
-__RadPropertyGrid now provides support for the new Telerik attribute EditorAttribute__ that enables the user to define an editor for each property directly in its definition.
+RadPropertyGrid provides support for the Telerik attribute __EditorAttribute__ that enables the user to define an editor for each property directly in its definition.
 
 __EditorAttribute__ is placed in __Telerik.Windows.Controls.Data binary in Telerik.Windows.Controls.Data.PropertyGrid namespace__. You need to have a reference to the assembly and add a using for the namespace. You can check the [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) article for more basic information.
 
@@ -838,6 +828,56 @@ The definition of the __Player business object__ used for the example is:
 	End Class
 {{endregion}}
 
+## Position the Modal Editor
+
+As of the **2019.2.722** [latest internal build]({%slug installation-installing-lib%}), you can control the position of the modal window when using the **Modal EditorStyle** via the new **WindowStartupLocation**, **WindowTop** and **WindowLeft** properties of the **ModalEditor** control.
+
+>important The **WindowStartupLocation** property must be set to **Manual** for the WindowTop and WindowLeft values to have any effect.
+
+These properties can be set either through a style targeting the ModalEditor control or by handling the **FieldLoaded** event in code-behind.
+
+#### __[XAML] Example 14: Positioning the ModalEditor through a style for the ModalEditor__
+	
+{{region xaml-radpropertygrid-editor-attribute_13}}
+	<Style TargetType="telerik:ModalEditor">
+		<Setter Property="WindowStartupLocation" Value="Manual"/>
+		<Setter Property="WindowTop" Value="500"/>
+		<Setter Property="WindowLeft" Value="250"/>
+	</Style>
+{{endregion}}
+
+#### __[C#] Example 15: Positioning the ModalEditor in the FieldLoaded event__
+	
+{{region cs-radpropertygrid-editor-attribute_14}}
+	private void PropertyGrid_FieldLoaded(object sender, Telerik.Windows.Controls.Data.PropertyGrid.FieldEventArgs e)
+	{
+		var modalEditor = e.Field.Content as ModalEditor;
+
+		if (modalEditor != null)
+		{
+			modalEditor.WindowStartupLocation = WindowStartupLocation.Manual;
+			modalEditor.WindowTop = 500;
+			modalEditor.WindowLeft = 250;
+		}
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 15: Positioning the ModalEditor in the FieldLoaded event__
+	
+{{region vb-radpropertygrid-editor-attribute_14}}
+	Private Sub PropertyGrid_FieldLoaded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Data.PropertyGrid.FieldEventArgs)
+		Dim modalEditor = TryCast(e.Field.Content, ModalEditor)
+
+		If modalEditor IsNot Nothing Then
+			modalEditor.WindowStartupLocation = WindowStartupLocation.Manual
+			modalEditor.WindowTop = 500
+			modalEditor.WindowLeft = 250
+		End If
+	End Sub
+{{endregion}}
+
 ## See Also
 
+ * [Edit Modes]({%slug radpropertygrid-edit-modes%})
+ * [FlagEnumEditor]({%slug radpropertygrid-radenumeditor%})
  * [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%})

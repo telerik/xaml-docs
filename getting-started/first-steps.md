@@ -10,7 +10,7 @@ position: 0
 
 # First Steps
 
-This article explains how to get the Telerik UI for {{ site.framework_name }} controls in your project and start using them quickly.
+This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 
 Once you have your first simple control up and running, take a look at the [next steps](#next-steps) section to start exploring the control functionality in more details.
 
@@ -30,15 +30,15 @@ The easiest way to get the controls to your development machine is to use the [P
 
 ## Creating Application with Telerik Visual Studio Extensions
 
-The easiest way to create a Telerik UI for {{ site.framework_name }} project is to use **Visual Studio Extensions** which are distributed with the Telerik UI for {{ site.framework_name }} installer.
+The easiest way to create a Telerik UI for WPF project is to use **Visual Studio Extensions** which are distributed with the Telerik UI for WPF installer.
 
-The Visual Studio Extensions can be accessed through the Telerik | Telerik UI for {{ site.framework_name }} menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a {{ site.framework_name }} Application as well.
+The Visual Studio Extensions can be accessed through the Telerik | Telerik UI for WPF menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WPF Application as well.
 
-1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% endif %}{% if site.site_name == 'WPF' %}({%slug installation-system-requirements-wpf%}){% endif %}.
+1. Open [Microsoft Visual Studio]({%slug installation-system-requirements-wpf%}).
 
-2. Create new Telerik {{ site.site_name }} application.
+2. Create new Telerik WPF application.
 
-	#### __Figure 2: Go to Telerik > Telerik  UI for {{ site.framework_name }} > Create New Telerik Project__
+	#### __Figure 2: Go to Telerik > Telerik  UI for WPF > Create New Telerik Project__
 	![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png "Run Create Project Wizard")
 	
 	#### __Figure 3: Creating new Telerik application__	
@@ -84,7 +84,7 @@ The Visual Studio Extensions can be accessed through the Telerik | Telerik UI fo
 
 ## Next Steps
 
-Now that you have the Telerik UI for {{ site.framework_name }} controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
+Now that you have the Telerik UI for WPF controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
 
 * [Explore control features]({%slug getting-started-explore-control-features%})
 * [Change control appearance]({%slug getting-started-change-control-appearance%})

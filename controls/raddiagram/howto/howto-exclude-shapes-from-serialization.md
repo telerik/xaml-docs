@@ -15,11 +15,11 @@ The following article will demonstrate how to exclude shapes from serialization.
  
 For the purpose of this example, we will create the following view models.
 
-* __Node__: A class deriving from the [NodeViewModelBase]({%slug %}) class that represents a node. The class will implement two additional properties: bool __IsStatic__ and Guid __ID__. The serialization of the shapes will depends on the first property. The __Guid__ property will be returned in the __GetNodeUniqueId()__ to cache the serialized shapes and connections.
+* __Node__: A class deriving from the [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%}) class that represents a node. The class will implement two additional properties: bool __IsStatic__ and Guid __ID__. The serialization of the shapes will depends on the first property. The __Guid__ property will be returned in the __GetNodeUniqueId()__ to cache the serialized shapes and connections.
 
-* __Link__: A class deriving from the [LinkViewModelBase]({%slug %}) that represent a connection.
+* __Link__: A class deriving from the [LinkViewModelBase]({%slug raddiagram-data-linkviewmodel%}) that represent a connection.
 
-* __MyGraphSource__: A class deriving from the __SerializableGraphSourceBase__ class that represent the RadDiagram GraphSource.
+* __MyGraphSource__: A class deriving from the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class that represent the RadDiagram GraphSource.
 
 #### __[C#] Example 1: Creating view models__
 {{region cs-raddiagrams-howto-exclude-shape-from-serialization-0}}

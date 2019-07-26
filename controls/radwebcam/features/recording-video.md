@@ -10,7 +10,7 @@ position: 0
 
 # Recording Video
 
-To start recording a video you can press the "Start recording"  button or call the __StartRecording__ method of RadWebCam control. 
+To start recording a video you can press the "Start recording" button or call the __StartRecording__ method of RadWebCam control. 
 
 ![](images/radwebcam-features-recording-video-0.png)
 

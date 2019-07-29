@@ -35,6 +35,7 @@ This is achieved through the usage of the following two events in conjunction.
 	- __FontFamily__: Sets the FontFamily of the cell.
 	- __FontSize__: Sets the FontSize of the cell.
 	- __Foreground__: Sets the Brush for the Foreground of the cell.
+	- __CellTextAlignment__: Sets the cell's text alignment.
 
 #### __[C#] Applying conditional styling through the CellDecorationsNeeded event__
 
@@ -50,10 +51,12 @@ This is achieved through the usage of the following two events in conjunction.
             {
                 e.Background = Brushes.Yellow;
                 e.Foreground = Brushes.Red;
-                e.FontSize = 18;
+                e.CellTextAlignment = TextAlignment.Right;
             }
         }
 {{endregion}}
+
+>For the effects of the **CellTextAlignment** property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to **True**.
 
 #### __Figure 1: RadVirtualGrid with conditional styling applied__
 
@@ -62,5 +65,3 @@ This is achieved through the usage of the following two events in conjunction.
 ## See also
 
 * [Styling and Appearance]({%slug virtualgrid-styling-and-appearance%})
-
-

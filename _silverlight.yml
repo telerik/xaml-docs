@@ -122,6 +122,9 @@ controls/radwebcam,
 knowledge-base/,
 getting-started/first-steps.md,
 getting-started/explore-control-features.md]
+
+exclude_navigation: [controls/raddocking/theming/*]
+
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	
@@ -220,8 +223,7 @@ intro_columns:
     title: "Data Visualization"
     items:
       "Barcode": "radbarcode-overview"
-      "BulletGraph": "radbulletgraph_overview"
-      "Chart": "radchart-overview"
+      "BulletGraph": "radbulletgraph_overview"      
       "ChartView": "radchartview-overview"
       "DataBar": "raddatabar-overview"
       "Diagram Framework": "raddiagram-overview"

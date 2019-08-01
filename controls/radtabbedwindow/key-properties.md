@@ -82,24 +82,28 @@ Through the ItemWidth and ItemMinWidth, you can control the default **Width** an
     tabbedWindow.ItemMinWidth = 80
 {{endregion}}
 
-## PinnedItems
+## Pinned Items
 
-The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs.
+The control also exposes a **PinnedItems** property of type **ReadOnlyObservableCollection<RadTabItem>**. You can use it to get ahold of all the pinned tabs. To enable the pinning functionality, you should set the **PinButtonVisibility** of the tab items to **Visible** via the **ItemContainerStyle** property of the window as shown in [this article]({%slug radtabbedwindow-styles-and-templates%}#itemcontainerstyle).
 
-## AllowDragReorder
+## DragDropMode
 
-Setting the window's **AllowDragReorder** property to **True** or **False** to allow/disallow the user to reorder the tab items of your tab control using Drag & Drop.
+By default, the RadTabbedWindow allows reordering of its tabs as well as creating new windows via drag and drop. This drag-drop behavior can be controlled via the **DragDropMode** property which can have any of the following values:
 
-#### [C#] Example 6: Enable the reorder of tabs via drag and drop
+* **None**: Drag drop is disabled.
+* **Reorder**: Reorder in tab strip is allowed only.
+* **Default**: DragReorder and drag out of TabControl is allowed (like in modern browsers).
+
+#### [C#] Example 6: Allow only the reorder of tabs via drag and drop
 
 {{region cs-radtabbedwindow-key-properties_6}}
-    tabbedWindow.AllowDragReorder = true;
+    tabbedWindow.DragDropMode = DragDropMode.Reorder;
 {{endregion}}
 
-#### [VB.NET] Example 6: Enable the reorder of tabs via drag and drop
+#### [VB.NET] Example 6: Allow only the reorder of tabs via drag and drop
 
 {{region vb-radtabbedwindow-key-properties_7}}
-    tabbedWindow.AllowDragReorder = True
+    tabbedWindow.DragDropMode = DragDropMode.Reorder
 {{endregion}}
 
 ## ScrollMode
@@ -122,13 +126,13 @@ When the width of the window does not allow all tabs to be displayed, two scroll
 
 You can determine whether users will be able to add new tabs through the UI be specifying the **AddButtonVisibility** property.
 
-#### [C#] Example 8: Enable the reorder of tabs via drag and drop
+#### [C#] Example 8: Set AddButtonVisibility
 
 {{region cs-radtabbedwindow-key-properties_10}}
     tabbedWindow.AddButtonVisibility = Visibility.Collapsed;
 {{endregion}}
 
-#### [VB.NET] Example 8: Enable the reorder of tabs via drag and drop
+#### [VB.NET] Example 8: Set AddButtonVisibility
 
 {{region vb-radtabbedwindow-key-properties_11}}
     tabbedWindow.AddButtonVisibility = Visibility.Collapsed
@@ -180,5 +184,5 @@ However, if you need to keep each **RadTabItem**'s content you can set the **IsC
 
 ## See Also
 
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

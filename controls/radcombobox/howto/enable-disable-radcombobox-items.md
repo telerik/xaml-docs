@@ -18,8 +18,6 @@ The purpose of this tutorial is to show you how to enable and disable __RadCombo
 
 * [Enable\disable items using ItemContainerStyleSelector](#enabledisable-items-using-itemcontainerstyleselector)
 
-* [Using MVVM approach and ContainerBindingCollection](#using-mvvm-approach-and-containerbindingcollection)
-
 * [Using style binding](#using-style-binding)
 
 ## Enable\Disable RadComboBox with Static Data
@@ -111,37 +109,6 @@ And the result is that every odd item is disabled.
 
 ![](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
-## Using MVVM Approach and ContainerBindingCollection
-
-{% if site.site_name == 'Silverlight' %}
-Using __ItemContainerStyle__ is a good solution, however, it is not the best. Imagine that your business object has a boolean property named __IsEnabled__. Even more flexible solution is to directly bind the __RadComboBoxItem__'s __IsEnabled__ property to the __IsEnabled__ property exposed by your domain object. You can do this through the __ContainerBindingCollection__ class exposed by the Telerik UI for Silverlights' API.
-{% endif %}
-
-#### __XAML__
-
-{{region radcombobox-howto-enable-disable-radcombobox-items_4}}
-	<UserControl.Resources>
-	    <telerik:ContainerBindingCollection x:Name="BindingsCollection">
-	        <telerik:ContainerBinding PropertyName="IsEnabled" Binding="{Binding IsEnabled, Mode=TwoWay}" />
-	    </telerik:ContainerBindingCollection>
-	
-	    <DataTemplate x:Key="CustomItemTemplate"
-	         telerik:ContainerBinding.ContainerBindings="{StaticResource BindingsCollection}">
-	        <TextBlock Text="{Binding Text}"/>
-	    </DataTemplate>
-	</UserControl.Resources>
-	 ...
-	<telerik:RadComboBox x:Name="radComboBox"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Items}"
-	    ItemTemplate="{StaticResource CustomItemTemplate}"/>
-{{endregion}}
-
-{% if site.site_name == 'Silverlight' %}
-In this case every even item is disabled and the logic about that is enclosed in the model.
-
-![](images/RadComboBox_HowTo_EnableDisableItems_040.png)
-{% endif %}
-
 ## Using Style Binding
 
 {% if site.site_name == 'WPF' %}
@@ -169,8 +136,6 @@ Two things should be mentioned here. First, note how the __IsEnabled__ property 
 ![](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 
-## See Also
-
- * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})
-
+## See Also  
+ * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%}) 
  * [Setting up AutoComplete]({%slug radcombobox-setting-up-autocomplete%})

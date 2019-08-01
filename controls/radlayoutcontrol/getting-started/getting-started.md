@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check out our tutorial that will walk you through the creation of a sample application containing RadLayoutControl.
 slug: radlayoutcontrol-getting-started
 tags: getting, started, tutorial
 published: True
@@ -94,6 +94,10 @@ You can nest LayoutControlGroups into one another which allows you to separate t
 ## Layout Groups
 
 There are few layout group controls which can be used with __RadLayoutControl__. Each group has different appearance. You can read more about this in the [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) section in the documentation. Additionally, the [Code Example](#code-example) section of this help article demonstrates the different layout groups.
+
+## ScrollViewer Root Element
+
+The RadLayoutControl and its groups wrap their content in a ScrollViewer. The ScrollViewer control measures its children with infinity. This behavior disables the virtualization of all controls placed inside. You can easily disable the ScrollViewer functionality and delegate the scrolling to the child framework element inside. To do that you can set the __ScrollViewer.VerticalScrollBarVisibility__ / __ScrollViewer.HorizontalScrollBarVisibility__ attached properties to the RadLayoutControl and to the groups you want this property applied.
 
 ## Enable Edit Mode
 

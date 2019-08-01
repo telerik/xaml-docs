@@ -20,7 +20,7 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 * __Pin and Unpin Tabs__: You can pin the tabs of the control to the left and unpin them using the respective pin/unpin button.
 
-* __Reorder Tabs__: The RadTabbedWindow control supports reordering its tab items via drag an drop.
+* __DragDrop Support__: Users can reorder tabs in a single window, drag out tabs to create new windows, or drag drop tabs from one window to another.
 
 * __Add New Tabs__: New tabs can be added to the window via the "+" button or in code-behind.
 
@@ -40,7 +40,7 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 ## See Also
 
-* [Getting Started](%slug radtabbedwindow-getting-started%)
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Getting Started]({%slug radtabbedwindow-getting-started%})
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

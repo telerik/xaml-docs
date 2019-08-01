@@ -27,7 +27,7 @@ Additional features that change the scroll offset and zoom level:
 
 __ScrollOnly__
 
-The ScrollIOnly value indicates that only scrolling is enabled for the RadTimeBar instance. The Slider of the RadTimeBar control is visible, but the resize handles of the slider selection are collapsed. The horizontal scroll offset can be changed either with the mouse wheel or by dragging the selection of the slider.
+The ScrollOnly value indicates that only scrolling is enabled for the RadTimeBar instance. The Slider of the RadTimeBar control is visible, but the resize handles of the slider selection are collapsed. The horizontal scroll offset can be changed either with the mouse wheel or by dragging the selection of the slider.
 ![Rad Timebar-features-Scroll Mode-1-Scroll Onlyjpg](images/RadTimebar-features-ScrollMode-1-ScrollOnly.jpg)
 
 __None__

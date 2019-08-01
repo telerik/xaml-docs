@@ -73,6 +73,15 @@ In order to run the project in OOB you need to install it:
 Then you should get the final result:
 ![](images/RibbonView_RibbonWindowSL_Example.png)
 
+## Icon
+
+In order to provide a custom icon for the RadRibbonWindow, you have to set its __Icon__ property as demonstrated in the following code snippet. 
+
+#### __XAML__
+{{region xaml-radribbonview-ribbon-window-wpf-3}}
+	<telerik:RadRibbonWindow Icon="Images/application-icon.ico">
+{{endregion}}
+
 ## Themes
 
 __RadRibbonWindow__ comes with full support for all our predefined Telerik themes and you can choose the most suitable for your needs.

@@ -22,8 +22,6 @@ This article lists some of the popular features available in Microsoft Office Op
 
 * Tables;
 
-* Charts;
-
 * Grouping;
 
 * Conditional formatting;

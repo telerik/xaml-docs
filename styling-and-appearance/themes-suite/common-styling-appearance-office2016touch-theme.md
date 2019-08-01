@@ -240,7 +240,7 @@ In the Office2016Touch theme there are two brushes that define background and bo
 
 ## Changing DisbledOpacity
 
-If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of __Office2016TouchPalette__. The default value of the property is 0.5.
+If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of the __Office2016TouchPalette__. The default value of the property is 0.5.
 
 #### __[XAML] Example 8: Changing the disabled opacity__
 {{region styling-appearance-office2016touch-7}}

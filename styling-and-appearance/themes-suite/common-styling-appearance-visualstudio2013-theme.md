@@ -201,6 +201,18 @@ In the __R2 2019__ version, the following properties were introduced in the __Vi
 * __ReadOnlyBackgroundBrush__: Used as a background of elements that are in a read-only state.
 * __ReadOnlyBorderBrush__:  Used in borders inside elements that are in a read-only state.
 * __ReadOnlyOpacity__: Used for text in inputs when they are in a read-only state.
+
+## Changing DisbledOpacity
+
+If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of the __VisualStudio2013Palette__. The default value of the property is 0.2.
+
+#### __[XAML] Example 8: Changing the disabled opacity__
+{{region common-styling-appearance-visualstudio2013-theme-3}}
+	VisualStudio2013Palette.Palette.DisabledOpacity = 0.4;
+{{endregion}}
+
+#### __Figure 7: Setting the disabled opacity__ 
+![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
  
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

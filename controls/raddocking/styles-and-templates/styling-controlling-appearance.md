@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Controlling Appearance
+description: This article lists some ways in which the RadDocking appearance can be customized.
 slug: raddocking-styling-controlling-appearance
 tags: controlling,appearance
 published: True
@@ -26,12 +26,7 @@ There are a number of ways to customize the look and feel of your __RadDocking__
 
 * Specify the [size](#Setting_the_Initial_FloatingSize_of_the_RadSplitContainer) and [location](#Setting_the_Initial_FloatingLocation_of_the_RadSplitContainer) of your [floating panes](#Floating_Panes) using the attached properties __RadDocking.FloatingSize__ and __RadDocking.FloatingPosition__. 
 
-* Moreover you can change the look and feel of your __RadDocking__ controls completely using [styles]({%slug raddocking-styling-overview%}), [themes]({%slug raddocking-theming-overview%}) and [templates]({%slug raddocking-styles-and-templates-templates-structure%}). 
+* Moreover you can change the look and feel of your __RadDocking__ controls completely using [styles]({%slug raddocking-styling-overview%}). 
 
 ## See Also
-
  * [Styles and Templates - Overview]({%slug raddocking-styling-overview%})
-
- * [Theming - Overview]({%slug raddocking-theming-overview%})
-
- * [Templates Structure]({%slug raddocking-styles-and-templates-templates-structure%})

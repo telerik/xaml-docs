@@ -37,7 +37,7 @@ In order to add a __RadContextMenu__ control to your __UserControl__ you have to
 #### __XAML__
 
 {{region xaml-contextmenu-getting-started_0}}
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 {{endregion}}
 
 This tutorial will show you how to attach a __RadContextMenu__ to a TextBox control. Here is the TextBox control definition.

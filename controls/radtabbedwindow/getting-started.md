@@ -38,6 +38,8 @@ After this, replace the generated Window declaration with the following XAML cod
     </telerik:RadTabbedWindow>
 {{endregion}}
 
+>important Please note that you need to replace the **GettingStarted** namespace with your namespace.
+
 Also in the code-behind file you should inherit the __RadTabbedWindow__ instead of the standard MS __Window__.
 
 #### __[C#] Example 2: Inherit from RadTabbedWindow__
@@ -102,7 +104,7 @@ If you run the application, you will see the RadTabbedWindow control illustrated
 
 {% figure 2, "Empty RadTabbedWindow", "tabbedwindow-getting-started-1.png" %}
 
->important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. You should add the following style after the merged dictionaries to fix this:
+>important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. In order for this to happen, you should add the following style after the merged dictionaries:
 
 #### __[XAML] Example 4: Adding the style for the new TabbedWindow__
 
@@ -123,7 +125,7 @@ If you run the application, you will see the RadTabbedWindow control illustrated
 
 You can add tabs to the window by directly defining them as its content.
 
-#### __[XAML] Example 5: Defining a RadTabbedWindow in XAML__
+#### __[XAML] Example 5: Adding Tabs to RadTabbedWindow in XAML__
 
 {{region xaml-radtabbedwindow-getting-started_6}}
     <telerik:RadTabbedWindow x:Class="GettingStarted.TabbedWindow"
@@ -142,62 +144,11 @@ You can add tabs to the window by directly defining them as its content.
     </telerik:RadTabbedWindow>
 {{endregion}}
 
-Alternatively, you can set the **ItemsSource** property of the control or bind it to a collection in your viewmodel. In this case you may want to specify the [DisplayMemberPath]({%slug radtabbedwindow-key-properties%}#displaymemberpath) property to point to the property of your business objects which you want to be displayed in the tabs.
-
-#### __[C#] Example 6: Set the window's ItemsSource__
-
-{{region cs-radtabbedwindow-getting-started_6}}
-    public TabbedWindow()
-    {
-        InitializeComponent();
-        this.DisplayMemberPath = "Header";
-        this.ItemsSource = new ObservableCollection<Tab>()
-        {
-               new Tab() { Header = "Microsoft", Content = "Microsoft Content" },
-               new Tab() { Header = "Google", Content = "Google Content" },
-               new Tab() { Header = "Progress", Content = "Progress Content" },
-        };
-    }
-{{endregion}}
-
-#### __[VB.NET] Example 6: Set the window's ItemsSource__
-
-{{region vb-radtabbedwindow-getting-started_7}}
-	Public Sub New()
-		InitializeComponent()
-		Me.DisplayMemberPath = "Header"
-		Me.ItemsSource = New ObservableCollection(Of Tab)() From {
-			New Tab() With {
-				.Header = "Microsoft",
-				.Content = "Microsoft Content"
-			},
-			New Tab() With {
-				.Header = "Google",
-				.Content = "Google Content"
-			},
-			New Tab() With {
-				.Header = "Progress",
-				.Content = "Progress Content"
-			}
-		}
-	End Sub
-{{endregion}}
-
-In addition to the DisplayMemberPath you can also specify the **ContentTemplate** property as shown in **Example 7**.
-
-#### __[XAML] Example 7: Defining a RadTabbedWindow in XAML__
-
-{{region xaml-radtabbedwindow-getting-started_8}}
-    <telerik:RadTabbedWindow.ContentTemplate>
-        <DataTemplate>
-            <TextBlock Text="{Binding Content}" />
-        </DataTemplate>
-    </telerik:RadTabbedWindow.ContentTemplate>
-{{endregion}}
-
-Upon running the application, your RadTabbedWindow should now be populated with tabs as shown on __Figure 3__. 
+Upon running the application, your RadTabbedWindow should now be populated with tabs as shown on **Figure 3**.
 
 {% figure 3, "RadTabbedWindow with tabs", "tabbedwindow-getting-started-2.png" %}
+
+Alternatively, you can set the **ItemsSource** property of the control or bind it to a collection in your viewmodel. You can find an example of how to do this in the [Data Binding]({%slug radtabbedwindow-data-binding%}) article.
 
 ## Setting a Theme
 
@@ -214,10 +165,10 @@ To change the theme, you can follow the steps below:
 	* __Telerik.Windows.Controls.xaml__
 	* __Telerik.Windows.Controls.Navigation.xaml__
 
-__Example 5__ demonstrates how to merge the resource dictionaries so that they are applied globally for the entire application.
+__Example 6__ demonstrates how to merge the resource dictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 8: Merge the ResourceDictionaries__  
-{{region xaml-radtabbedwindow-getting-started_9}}
+#### __[XAML] Example 6: Merge the ResourceDictionaries__  
+{{region xaml-radtabbedwindow-getting-started_7}}
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -225,16 +176,17 @@ __Example 5__ demonstrates how to merge the resource dictionaries so that they a
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
 	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
 				</ResourceDictionary.MergedDictionaries>
+	                <Style TargetType="local:TabbedWindow" BasedOn="{StaticResource RadTabbedWindowStyle}" />
 			</ResourceDictionary>
 		</Application.Resources>
 {{endregion}}
 
-__Figure 3__ shows __RadTabbedWindow__ with the **Windows8** theme applied.
+__Figure 4__ shows __RadTabbedWindow__ with the **Windows8** theme applied.
 	
-{% figure 3, "RadTabbedWindow with the Windows8 theme", "tabbedwindow-getting-started-3.png" %}
+{% figure 4, "RadTabbedWindow with the Windows8 theme", "tabbedwindow-getting-started-3.png" %}
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
-* [Styles and Templates](%slug radtabbedwindow-styles-and-templates%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})
+* [Styles and Templates]({%slug radtabbedwindow-styles-and-templates%})

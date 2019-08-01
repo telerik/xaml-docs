@@ -162,6 +162,19 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 
 ![](images/RadButtons_Getting_Started_05.png)
 
+## RadToggleSwitchButton
+
+Here is an example of a __RadToggleSwitchButton__ that switch between __ON__ and __OFF__.
+
+#### __[XAML] Example 9: Defining a toggle switch button__
+{{region xaml-radbuttons-getting-started_7}}
+	<Grid>
+		<telerik:RadToggleSwitchButton ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" />
+	</Grid>
+{{endregion}}
+
+![](images/RadButtons_Getting_Started_06.png)
+
 ## See Also  
  * [Visual Structure]({%slug radbuttons-visual-structure%})
  * [Commands]({%slug radbuttons-features-commands%})

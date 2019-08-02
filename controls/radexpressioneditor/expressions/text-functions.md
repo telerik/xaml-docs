@@ -35,9 +35,28 @@ Here is a full list of the available functions:
 * **Replace**: Returns a copy of String1, in which SubString2 has been replaced with String3.
 * **StartsWith**: Determines whether the beginning of this string instance matches the specified string.
 * **EndsWith**: Determines whether the end of this string instance matches the specified string.
-* **Contains**: Returns a value indicating whether the* cified System.String object occurs within this string.
+* **Contains**: Returns a value indicating whether the specified System.String object occurs within this string.
+
+**Figure 2** demonstrates a possible use of the text functions for filtering a RadGridView control similarly to the example in the [Getting Started article]({%slug radexpressioneditor-getting-started%}).
+
+{% figure 2, "Filtering RadGridView via the text functions", "text-functions-example1.png" %}
+
+The same can be achieved via code-behind as well by using the code from **Example 1**.
+
+#### __[C#] Example 1: Creating the expression in code-behind__
+
+{{region cs-radexpressioneditor-expressions-text-functions-1}}
+    this.ExpressionEditor.ExpressionText = @"Name.EndsWith(""l"")";
+{{endregion}}
+
+#### __[VB.NET] Example 1: Creating the expression in code-behind__
+
+{{region vb-radexpressioneditor-expressions-text-functions-1}}
+    Me.ExpressionEditor.ExpressionText = "Name.EndsWith(""l"")"
+{{endregion}}
 
 ## See Also
 
+* [Getting Started]({%slug radexpressioneditor-getting-started%})
 * [Constants]({%slug radexpressioneditor-expressions-constants%})
 * [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%})

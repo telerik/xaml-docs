@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This topic lists the events specific for the __RadComboBox__ control and it shows how to subscribe to an event.
 slug: radcombobox-events-overview
 tags: overview
 published: True

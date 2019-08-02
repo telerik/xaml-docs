@@ -16,7 +16,7 @@ This article shows how to stop the audio recording when a video is captured.
 
 	#### __[XAML] Example 1: Defining RadWebCam__
 	{{region radwebcam-disable-audio-recording-0}}
-		<telerik:RadWebCam x:Name="radWebCam" Loaded="RadWebcam_Loaded"/>
+		<telerik:RadWebCam x:Name="radWebCam" AutoStart="False" Loaded="RadWebcam_Loaded"/>
 	{{endregion}}
 
 2. In the event handler, get the camera device and video format, and call the __Initialize__ method of the control. To disable the audio, set the last parameter ("audioDevice") of the Initialize method to __null__. Then start the camera.

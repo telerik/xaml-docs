@@ -26,7 +26,7 @@ The __MediaFoundationVideoFormatInfo__ object provides information about the vid
 
 To get the available audio capture devices (microphones), use the __RadWebCam.GetAudioCaptureDevices__ static method.
 
-#### __[C#] Example 1: Getting the available cameras__
+#### __[C#] Example 1: Getting the available microphones__
 {{region radwebcam-features-get-media-information-0}}
 	ReadOnlyCollection<MediaFoundationDeviceInfo> recordingDevices = RadWebCam.GetAudioCaptureDevices();
 {{endregion}}

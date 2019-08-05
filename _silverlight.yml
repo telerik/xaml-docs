@@ -223,8 +223,7 @@ intro_columns:
     title: "Data Visualization"
     items:
       "Barcode": "radbarcode-overview"
-      "BulletGraph": "radbulletgraph_overview"
-      "Chart": "radchart-overview"
+      "BulletGraph": "radbulletgraph_overview"      
       "ChartView": "radchartview-overview"
       "DataBar": "raddatabar-overview"
       "Diagram Framework": "raddiagram-overview"

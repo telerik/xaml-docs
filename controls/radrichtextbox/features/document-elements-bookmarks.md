@@ -59,7 +59,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 	{
 	    BookmarkRangeStart bookmark = this.radRichTextBox.Document.GetBookmarkByName(bookmarkName);
 	    this.radRichTextBox.Document.Selection.SelectAnnotationRange(bookmark);
-	    this.radRichTextBox.Document.Delete(false);
+	    this.radRichTextBox.Delete(false);
 	    this.radRichTextBox.Insert(bookmarksToContent[bookmarkName]);
 	}
 {{endregion}}

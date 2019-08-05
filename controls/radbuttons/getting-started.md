@@ -164,7 +164,7 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 
 ## RadToggleSwitchButton
 
-Here is an example of a __RadToggleSwitchButton__ that switch between __ON__ and __OFF__.
+Here is an example of a __RadToggleSwitchButton__ that switches between __ON__ and __OFF__ state.
 
 #### __[XAML] Example 9: Defining a toggle switch button__
 {{region xaml-radbuttons-getting-started_7}}

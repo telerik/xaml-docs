@@ -41,7 +41,7 @@ You can instantiate __RadToggleSwitchButton__ in both XAML and code as shown in 
 
 ## Content Position
 
-The RadToggleSwitchButton allows you to control the position of its CheckedContent and UncheckedContent. You can do that using its __ContentPosition__ property. This property is enumeration of type __SwitchButtonContentPosition__ and expose the following values.
+The RadToggleSwitchButton allows you to control the position of its CheckedContent and UncheckedContent. You can do that using its __ContentPosition__ property. This property is an enumeration of type __SwitchButtonContentPosition__ and exposes the following values.
 
 * __Both__	
 * __Right (default)__
@@ -51,9 +51,9 @@ The RadToggleSwitchButton allows you to control the position of its CheckedConte
 
 Create image after fix.
  
-## Enable Three State Mode
+## Enable Three-State Mode
 
-To make __RadToggleSwitchButton__ to go into a three state mode you can just set its __IsThreeState__ property to __True__.
+To make __RadToggleSwitchButton__ to go into a three-state mode you can just set its __IsThreeState__ property to __True__.
 
 #### __[XAML] Example 5: Enabling the three-state mode__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}
@@ -64,8 +64,8 @@ To make __RadToggleSwitchButton__ to go into a three state mode you can just set
 
 The button provides a set of events that are fired when you toggle it. 
 
-* __Checked__: This event is fired when the button is switch on.
-* __Unchecked__: This event is fired when the button is switch off.
+* __Checked__: This event is fired when the button is switched on.
+* __Unchecked__: This event is fired when the button is switched off.
 * __Activate__: This event is fired when the button is switch on or off.
 
 >tip As any other button, RadToggleSwitchButton exposes a __Click__ event, too. Additionally, the control has __PreviewClick__ event.

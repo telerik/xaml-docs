@@ -32,6 +32,8 @@ If you want to bind to the __RadTreeViewItem__'s __IsSelected__ property when yo
 	</telerik:RadTreeView>
 	{{endregion}}
 
+> When using __NoXaml__ dlls, the __Style__ set to the __ItemContainerStyle__ property should have its __BasedOn__ property set to __{StaticResource RadTreeViewItemStyle}__.
+
 ## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})
  * [Add Context Menu]({%slug radtreeview-how-to-add-context-menu%})

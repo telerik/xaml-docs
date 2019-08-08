@@ -6,6 +6,7 @@ slug: radribbonview-how-to-change-the-image-of-the-application-button
 tags: change,the,image,of,the,application,button
 published: True
 position: 2
+include_in_navigation: False
 ---
 
 # Change The Image Of The Application Button

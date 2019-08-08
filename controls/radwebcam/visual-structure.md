@@ -1,34 +1,28 @@
 ---
-title: Overview
-page_title: Overview
-description: The RadWebCam control allows you to display the stream provided by a web camera
-slug: radwebcam-overview
+title: Visual Structure
+page_title: Visual Structure
+description: This article shows the visual structure of RadWebCam.
+slug: radwebcam-visual-structure
 tags: overview
 published: True
-position: 0
+position: 1
 ---
 
-# Overview
+# Visual Structure
 
-![](images/radwebcam-overview-0.png)
+This article shows the main UI structure of the RadWebCam control.
 
-The __RadWebCam__ control allows you to display the stream provided by a web camera. You can easily start recording or take snapshot of the stream and save it to a file.
+#### Figure 1: RadWebCam - Initial State
+![](images/radwebcam-visual-structure-0.png)
 
-![](images/radwebcam-overview-1.png)
+#### Figure 2: RadWebCam - Recording State
+![](images/radwebcam-visual-structure-1.png)
 
-## Key Features
-
-* __Recording Capabilities__: RadWebCam allows you to easily capture the media stream from the connected camera.
-
-* __Snapshot Support__: You can take a snapshot of the current moment of the camera stream, and save it for later.
-
-* __Customizeable Commands__: The control gives you the ability to customize the available commands.
-
->tip Get started with the control with its [Getting Started]({%slug radwebcam-getting-started%}) help article that shows how to use it in a basic scenario.
-
-> Check out the [WPF Demo application](https://demos.telerik.com/wpf/) for examples with RadWebCam.
+#### Figure 3: RadWebCam - Settings Dialog
+![](images/radwebcam-visual-structure-2.png)
 
 ## See Also
+* [Getting Started]({%slug radwebcam-getting-started%})
+* [SnapshotTaken]({%slug radwebcam-events%})
+* [Recording Video]({%slug radwebcam-features-recording-video%})
 
-* [Events]({%slug %})
-* [Commands]({%slug %})

@@ -4,7 +4,7 @@ page_title: Clipboard Overview
 description: Learn more about the fine-grained control over copying and pasting provided by RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-clipboard-overview
 tags: overview
-published: True
+published: False
 position: 0
 ---
 

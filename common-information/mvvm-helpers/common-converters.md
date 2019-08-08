@@ -201,6 +201,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 	<telerik:RadGlyph Glyph="{Binding GlyphString, Converter={StaticResource StringToGlyphConverter}}" />	
 {{endregion}}
 
+> StringToGlyphConverter is available since R1 2019. If you use a previous version you can implement the converter on your own. See its implementation in the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}#binding-glyphs) article.
+
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})
 * [Attached Behavior]({%slug common-mvvm-attached-behavior%})

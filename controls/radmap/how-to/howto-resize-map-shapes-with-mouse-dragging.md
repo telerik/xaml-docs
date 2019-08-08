@@ -119,6 +119,8 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 					break;
 				}
 			}
+			e.Handled = true;
+
 		}
 	{{endregion}}
 
@@ -142,6 +144,7 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 						Exit For
 					End If
 				Next i
+			        e.Handled = True
 		End Sub
 	{{endregion}}
 

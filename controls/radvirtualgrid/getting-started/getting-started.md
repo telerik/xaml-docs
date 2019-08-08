@@ -91,7 +91,7 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 
 ## MeasureTextOnRender
 
-This property indicates whether the text is measured on rendering. Its default value is __False. When set to __True__, the usage of the __FitColumnWidthToContent__ and __CellTextAlignment__ mechanisms is enabled. Note, that this may affect the performance of the control.
+This property indicates whether the text is measured on rendering. Its default value is __False__. When set to __True__, the usage of the __FitColumnWidthToContent__ and __CellTextAlignment__ mechanisms is enabled. Note, that this may affect the performance of the control.
 
 ## See also
 

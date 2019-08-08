@@ -12,12 +12,6 @@ position: 3
 
 The article lists the most important properties and methods of __RadMultiColumnComboBox__.
 
-* [Text Change Without Delay](#text-change-without-delay)
-* [Disable Items Highlighting](#disable-items-highlighting)
-* [Setting Text for an Empty Selection](#setting-text-for-an-empty-selection)
-* [Open,Close and Toggle the DropDown](#open,close-and-toggle-the-dropdown)
-* [DropDownElementStyle](#dropdownelementstyle)
-
 ## Text Change Without Delay
 
 By default, the reaction of __RadMultiColumnComboBox__ to a text change will be deferred. In case when updating needs to be done immediately, the __DeferTextChange__ property can be set to __False__.
@@ -56,6 +50,13 @@ The following set of methods is provided for manipulating the visibility of the 
 Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle__ property. Through it, you can get or set a Style that will be applied to the dropdown element.
 
 > The TargetType of the Style should match the type of the dropdown element.
+
+## Search Mode
+
+With **R2 2019** we introduced a new **SearchMode** property which allows you to control how items are matched when search is executed. It has the following two possible values:
+
+* **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted in the search panel, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
+* **MatchAllTerms**: Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain **both** terms ("John" and "Terry") in any of their properties will be matched.
 
 ## See Also
 

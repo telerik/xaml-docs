@@ -415,6 +415,22 @@ __Example 10__ demonstrates how the __ScrollBarMode__ property of the palette ca
 	FluentPalette.Palette.ScrollBarMode = FluentPalette.ScrollViewerScrollBarsMode.Compact;
 {{endregion}}
 
+## Changing Opacity 
+
+If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the FluentPalette. The default values are 0.3 and 0.5 respectively. 
+
+#### __[C#] Example 11: Changing the opacity__		
+{{region cs-styling-appearance-fluent-theme-13}}
+	CrystalPalette.Palette.DisabledOpacity = 0.5;
+	CrystalPalette.Palette.ReadOnlyOpacity = 0.4;
+{{endregion}}
+	
+#### __[VB.NET] Example 11: Changing the opacity__		
+{{region vb-styling-appearance-material-theme-14}}
+	CrystalPalette.Palette.DisabledOpacity = 0.5
+	CrystalPalette.Palette.ReadOnlyOpacity = 0.4
+{{endregion}}
+
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})

@@ -101,12 +101,12 @@ __ItemsLoading__ event will be raised if you try to access some item by index an
 >important When you provide IQueryable in the VirtualQueryableCollectionView you do not need to handle the ItemsLoading event.
                
 {% if site.site_name == 'WPF' %}
-Check out the WPF Demos [here.](https://demos.telerik.com/wpf/)
+Check out the DataVirtualization demos in our [WPF Demos application]({%slug installing-wpf-demos%}).
 
 You can also check this [blog.](http://blogs.telerik.com/vladimirenchev/posts/10-10-20/data-virtualization-for-your-silverlight-and-wpf-applications.aspx){% endif %}
 {% if site.site_name == 'Silverlight' %}
 
-Check out the online demo [here.](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
+Check out the online demo [here](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook).
 
 You can also check those additional blogs:
 

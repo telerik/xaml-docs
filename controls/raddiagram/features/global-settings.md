@@ -53,6 +53,8 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __SelectionHitTestRadius__: Gets or sets the radius of the area around each item which is considered selectable. The default value of this constant is 10px.			
 
+* __SelectionRectInflationValue__: Gets of sets the margin around the selected shapes. The default value of this constant is 7px.
+
 * __StartDragDelta__: Gets or sets the minimum distance that a mouse move operation has to cover to start a drag action. The default value of this constant is 4px.		
 
 * __MinimumAdornerSize__: Gets or sets a __double__ value that determines the minimum size of the diagram items adorner.

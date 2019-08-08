@@ -1,0 +1,37 @@
+---
+title: Camera Settings Control
+page_title: Camera Settings Control
+description: This article describes the settings dialog and the CameraSettingsControl of RadWebCam.
+slug: radwebcam-features-camera-settings-control
+tags: camerasettingscontrol,dialog
+published: True
+position: 6
+---
+
+# Camera Settings Control
+
+The RadWebCam component allows you to control the settings of the connected camera. You can do this using the settings dialog which opens when you press the [Open settings dialog]({%slug radwebcam-visual-structure%}) button.
+
+#### Figure 1: Settings dialog
+![](images/radwebcam-features-camera-settings-control-0.png)
+
+>important The changes applied via the settings controls reflect the settings of the camera device. This means that when you close the application, the setting will still apply to the device.
+
+You can also use the __CameraSettingsControl__ as a stand alone element.
+
+#### __[XAML] Example 1: Using CameraSettingsControl__
+{{region radwebcam-features-camera-settings-control-0}}
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<telerik:RadWebCam x:Name="radWebCam" />
+		<telerik:CameraSettingsControl WebCam="{Binding ElementName=radWebCam}" Grid.Column="1"/>
+	</Grid>
+{{endregion}}
+
+## See Also  
+* [Getting Started]({%slug radwebcam-getting-started%})
+* [SnapshotTaken]({%slug radwebcam-events%})
+* [Recording Video]({%slug radwebcam-features-recording-video%})

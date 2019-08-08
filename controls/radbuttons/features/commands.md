@@ -22,7 +22,7 @@ The __RadButtons__ provide you with a standard __ICommandSource__ implementation
 
 ## Example
 
-Here is an example of a command usage in a MVVM scenario. The command is located in the __SampleViewModel__ class.		
+Here is an example of a command usage in an MVVM scenario. The command is located in the __SampleViewModel__ class.		
 
 #### __[C#] Example 1: Defining a command__
 {{region cs-radbuttons-features-commands_0}}

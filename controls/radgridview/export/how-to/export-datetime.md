@@ -80,7 +80,7 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 * [Export String Value]({%slug gridview-export-troubleshooting-export-string%})
 
-* [Export Numeric Value]({%slug gridview-export-numeric-value%})
+* [Export Numeric Value]({%slug gridview-export-numeric-values%})
 
 * [Format Codes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
 

@@ -9,7 +9,7 @@ position: 0
 
 # Overview
 
-![RadFilePathPicker](images/NavigationView_Overview_Small.png)
+![RadFilePathPicker](images/FilePathPickerOverviewIcon.png)
 
 RadFilePathPicker is a control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
 

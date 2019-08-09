@@ -90,7 +90,7 @@ cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
 getting-started/first-steps-sl,
 getting-started/explore-control-features-sl]
 
-exclude_navigation: [knowledge-base/*, controls/radchart/*]
+exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -320,7 +320,9 @@ navigation:
         title: Styles and Templates
         position: 9
     controls/radchartview3d/features/behaviors:
-        title: Behaviors     
+        title: Behaviors  
+    controls/radchartview/howto:
+        title: How To 
     "*area-series":
         title: Area Series
     "*line-series":
@@ -954,8 +956,7 @@ navigation:
     controls/raddataservicedatasource/sorting:
         title: Sorting
     controls/raddataservicedatasource/how-to:		
-        title: How To		
-        position: 9
+        title: How To	
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -1004,7 +1005,7 @@ navigation:
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
     controls/radwebcam:
-        tile: RadWebCam
+        title: RadWebCam
 ## X1 Controls End
 
 ## Common Start   
@@ -1130,10 +1131,7 @@ navigation:
         position: 9
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 10
-    "xamlflix-step-by-step-guide":
-        title: "XAMLflix Step-by-Step Guide"
-        position: 11
+        position: 10   
 ## Common End
 
 ## Api Reference Start
@@ -3342,8 +3340,7 @@ intro_columns:
     title: "Data Visualization"
     items:
       "Barcode": "radbarcode-overview"
-      "BulletGraph": "radbulletgraph_overview"
-      "Chart": "radchart-overview"
+      "BulletGraph": "radbulletgraph_overview"      
       "ChartView": "radchartview-overview"
       "ChartView3D": "radchartview3d-overview"
       "DataBar": "raddatabar-overview"
@@ -3380,6 +3377,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "WebCam": "radwebcam-overview"
 -
   categories:
   -

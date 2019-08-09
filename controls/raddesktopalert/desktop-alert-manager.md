@@ -44,7 +44,7 @@ This article will provide some detailed information about the following properti
 
 * [AlertsReorderAnimationDuration](#alertsreorderanimationduration)
 
-+and the following methods of __RadDesktopAlertManager__:
+And the following methods of __RadDesktopAlertManager__:
 
 * [ShowAlert](#showalert)
 

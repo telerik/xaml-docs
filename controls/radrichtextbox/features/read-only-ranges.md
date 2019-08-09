@@ -51,7 +51,7 @@ When the document is measured (for example, shown in a __RadRichTextBox__), you 
 {{endregion}}
 
 
-Generally, editing the content of a read only range is not possible through the UI and through __RadRichtextBox__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored.
+>tipGenerally, editing the content of a read only range is not possible through the UI and through __RadRichtextBox__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored.
       
 ### Insert in Non-measured Document
 

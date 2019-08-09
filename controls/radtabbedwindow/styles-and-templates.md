@@ -41,6 +41,8 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
             <Setter Property="MinHeight" Value="40" />
             <Setter Property="Background" Value="Red" />
             <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="PinButtonVisibility" Value="Visible" />
+		    <Setter Property="CloseButtonVisibility" Value="Visible"/>
         </Style>
     </telerik:RadTabbedWindow.ItemContainerStyle>
 {{endregion}}
@@ -151,5 +153,5 @@ If you wish to return different templates for the tab items' content, you can us
 
 ## See Also
 
-* [Key Properties](%slug radtabbedwindow-key-properties%)
-* [Events](%slug radtabbedwindow-events%)
+* [Key Properties]({%slug radtabbedwindow-key-properties%})
+* [Events]({%slug radtabbedwindow-events%})

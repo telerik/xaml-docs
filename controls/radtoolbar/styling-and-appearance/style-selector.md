@@ -270,4 +270,3 @@ To change a predefined style of a given control the __TypeName__ property of the
 ## See Also
 
 * [Overview]({%slug radtoolbar-overview%})
-* [Template Structure]({%slug radtoolbar-template-parts%})

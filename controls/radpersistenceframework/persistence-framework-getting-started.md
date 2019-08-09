@@ -5,7 +5,7 @@ description: Getting Started
 slug: persistence-framework-getting-started
 tags: getting,started
 published: True
-position: 3
+position: 2
 ---
 
 # Getting Started

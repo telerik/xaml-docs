@@ -39,7 +39,7 @@ As it is deployed as a ClickOnce application it requires the following component
 
 If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
 
-> Lauching the ClickOnce application is possible only in Internet Explorer.
+> Lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer.
 
 Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 

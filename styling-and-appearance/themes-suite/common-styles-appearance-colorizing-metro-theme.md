@@ -216,7 +216,7 @@ __Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Wind
 
 #### __C#__
 
-{{region common-styles-appearance-colorizing-metro-theme_1}}
+{{region common-styles-appearance-colorizing-metro-theme_4}}
 	//Windows8 Resources
 	Windows8Palette.Palette.FontSizeXS = 10;
 	Windows8Palette.Palette.FontSizeS = 11;
@@ -246,7 +246,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 
 #### __XAML__
 
-{{region common-styles-appearance-colorizing-metro-theme_2}}
+{{region common-styles-appearance-colorizing-metro-theme_5}}
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*"/>
@@ -259,7 +259,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 
 #### __C#__
 
-{{region common-styles-appearance-colorizing-metro-theme_2}}
+{{region common-styles-appearance-colorizing-metro-theme_6}}
 	public MainPage()
 	{
 	    StyleManager.ApplicationTheme = new Windows8Theme();
@@ -277,6 +277,20 @@ __Figure 3__ shows a comparison of the application before and after the button i
         
 Figure 3: You can click a button to change FontSize.
 ![Common Windows 8 Font Change 01](../images/Common_Windows8_FontChange_01.png)
+
+## Changing Opacity 
+
+If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the **Windows8Palette**. Its default value is **0.5**. 
+
+#### __[C#] Example 7: Changing the opacity__		
+{{region cs-common-styles-appearance-colorizing-metro-theme-7}}
+	Windows8Palette.Palette.DisabledOpacity = 0.2;
+{{endregion}}
+	
+#### __[VB.NET] Example 7: Changing the opacity__		
+{{region vb-common-styles-appearance-colorizing-metro-theme-8}}
+	Windows8Palette.Palette.DisabledOpacity = 0.2
+{{endregion}}
 
 ## See Also
 

@@ -180,5 +180,19 @@ This will be the final result:
 
 ![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_04.png)
 
+## Changing Opacity 
+
+If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the Office2013Palette. Its default value is 0.3.
+
+#### __[C#] Example 8: Changing the opacity__		
+{{region cs-common-styling-appearance-office2013-theme-5}}
+	Office2013Palette.Palette.DisabledOpacity = 0.5;
+{{endregion}}
+	
+#### __[VB.NET] Example 8: Changing the opacity__		
+{{region vb-common-styling-appearance-office2013-theme-6}}
+	Office2013Palette.Palette.DisabledOpacity = 0.5
+{{endregion}}
+
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

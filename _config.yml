@@ -1004,6 +1004,8 @@ navigation:
         title: Cards
     controls/radwebcam:
         title: RadWebCam
+    controls/radsyntaxedtior:
+        title: RadSyntaxEditor
 ## X1 Controls End
 
 ## Common Start   
@@ -3370,6 +3372,7 @@ intro_columns:
       "Slider": "radslider-overview"
       "SpellChecker": "radspellchecker-overview"
       "Spreadsheet": "radspreadsheet-overview"
+      "SyntaxEditor": "radsyntaxeditor-overview"
       "WatermarkTextBox": "radwatermarktextbox-overview"
   -
     title: "Media"

@@ -133,6 +133,23 @@ The linear and categorical 3D axes share some common features which you can find
 	
 	#### __Figure 10: Smart labels mode__
 	![](images/radchartview-3d-axes-9.png)
+
+* __Line style__: You can modify the appearance of the lines drawn for the axes by creating a style which targets the **Path** type and set it as the **LineStyle** property of the axis.
+
+	#### __[XAML] Example 10: Enabling the axis smart labels__
+	{{region xaml-radchartview-3d-axes-13}}	
+		<telerik:LinearAxis3D>
+			<telerik:LinearAxis3D.LineStyle>
+				<Style TargetType="Path">
+					<Setter Property="Stroke" Value="Red" />
+					<Setter Property="StrokeThickness" Value="3" />
+				</Style>
+			</telerik:LinearAxis3D.LineStyle>
+		</telerik:LinearAxis3D>
+	{{endregion}}
+	
+	#### __Figure 11: Styled lines of the Z axis__
+	![Styled lines of the Z axis](images/radchartview-3d-axes-13.png)
 	
 ## LinearAxis3D
 
@@ -140,39 +157,39 @@ This type of axis has a notion of range which means that it has minimum, maximum
 
 * __Desired tick count__: You can use the __DesiredTickCount__ property of the axis to set the number of the desired ticks that will be displayed on the axis. Note that the property doesn’t set a fixed number of ticks, but it defines the preferred count and the chart tries to calculate them accordingly.
 
-	#### __[XAML] Example 10: Setting the desired tick count__
+	#### __[XAML] Example 11: Setting the desired tick count__
 	{{region xaml-radchartview-3d-axes-9}}	
 		<telerik:LinearAxis3D DesiredTickCount="3" />
 	{{endregion}}		
 
 * __Manual range__: You can use the __Minimum__ and __Maximum__ properties of the axis to set the range manually. To control the step between the ticks you can use the __MajorStep__ property.
 
-	#### __[XAML] Example 11: Setting manual range__
+	#### __[XAML] Example 12: Setting manual range__
 	{{region xaml-radchartview-3d-axes-10}}	
 		<telerik:LinearAxis3D Minimum=”0” Maximum=”10” MajorStep="2.5" />
 	{{endregion}}
 	
-	#### __Figure 11: Manual range__
+	#### __Figure 12: Manual range__
 	![](images/radchartview-3d-axes-10.png)
 
 * __Tick origin__: The axis tick positions are determined by the __MajorStep__ and the __TickOrigin__ properties. The ticks will be generated such that a tick is positioned at the given TickOrigin. 
 
-	#### __[XAML] Example 12: Setting the axis title__
+	#### __[XAML] Example 13: Setting the axis title__
 	{{region xaml-radchartview-3d-axes-11}}	
 		<telerik:LinearAxis3D Minimum="0" Maximum="10" MajorStep="2.5" TickOrigin="5"/>
 	{{endregion}}
 		
-	#### __Figure 12: Tick origin__
+	#### __Figure 13: Tick origin__
 	![](images/radchartview-3d-axes-11.png)	
 
 * __Label format__: You can use the LabelFormat property to format the values of the axis labels.
 
-	#### __[XAML] Example 13: Setting the axis title__
+	#### __[XAML] Example 14: Setting the axis title__
 	{{region xaml-radchartview-3d-axes-12}}	
 		<telerik:LinearAxis3D LabelFormat="P0"/>
 	{{endregion}}
 	
-	#### __Figure 13: Label format__
+	#### __Figure 14: Label format__
 	![](images/radchartview-3d-axes-12.png)	
 
 ## See Also

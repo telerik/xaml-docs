@@ -35,5 +35,6 @@ As every control from UI for WPF, RadFilePathPicker comes with a set of pre-defi
 
 ## See Also
 
+* [Getting Started]({%slug radfilepathpicker-getting-started%})
 * [Events]({%slug radfilepathpicker-events%})
-* [WatermarkTextbox Properties]({%slug radfilepathpicker-watermarktextbox-properties%})
+* [WatermarkTextBox Properties]({%slug radfilepathpicker-watermarktextbox-properties%})

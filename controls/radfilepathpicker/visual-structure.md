@@ -19,7 +19,7 @@ The following table lists the elements that make up a RadFilePathPicker:
 
 * __Icon__: It changes dynamically depending on the current __FilePath__. In order to learn how to customize the shown icon, visit the [IconTemplateSelector]({%slug radfilepathpicker-icontemplateselector%}) article.
 
-* __WatermarkBox__: The [RadWatermarkTextBox]({%slug watermarktextbox-getting-started%}) that visualizes the Text. Check the [Watermarktextbox Properties]({%slug radfilepathpicker-watermarktextbox-properties%}) article to learn about the API that the __RadFilePathPicker__ exposes for modifying it.
+* __WatermarkBox__: The [RadWatermarkTextBox]({%slug watermarktextbox-getting-started%}) that visualizes the Text. Check the [WatermarkTextBox Properties]({%slug radfilepathpicker-watermarktextbox-properties%}) article to learn about the API that the __RadFilePathPicker__ exposes for modifying it.
 
 * __ClearButton__: This button is shown only when some Text is inputted and allows the user to clear it.  
 

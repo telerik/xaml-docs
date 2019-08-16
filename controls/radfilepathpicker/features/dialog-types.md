@@ -23,12 +23,12 @@ When the __DialogType__ is __OpenFolder__, a [RadOpenFolderDialog]({%slug radfil
 
 When the __DialogType__ is __SaveFile__, a [RadSaveFileDialog]({%slug radfiledialogs-radsavefiledialog%}) is opened.
 
-## Open Native Windows Dialog
+## Open а Native Windows Dialog
 
 In order to open a native windows dialog instead of the RadFileDialogs, you can handle the __DialogOpening__ event as demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Defining RadFilePathPicker__
-{{region xaml-radfilepathpicker-dialog-types-0}}
+#### __[C#] Example 1: Defining RadFilePathPicker__
+{{region cs-radfilepathpicker-dialog-types-0}}
     private void RadFilePathPicker_DialogOpening(object sender, Telerik.Windows.Controls.FileDialogs.DialogOpeningEventArgs e)
     {
         e.Cancel = true;

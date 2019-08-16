@@ -37,7 +37,7 @@ __Example 1__ demonstrates how you can define a RadFilePathPicker in xaml.
 
 Even at this point, you are ready to start using the control. The following few sections will demonstrate some of the features of the __RadFilePathPicker__.
 
-## IsReadonly
+## IsReadOnly
 
 By default the RadFilePathPicker is read-only, which means that you cannot input text in the RadWatermarkTextBox inside it. In order to change this, you can set the __IsReadOnly__ property to __False__ as demonstrated in __Example 2__.
 

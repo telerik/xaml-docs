@@ -1,13 +1,13 @@
 ---
-title: WatermarkTextbox Properties
-page_title: WatermarkTextbox Properties
+title: WatermarkTextBox Properties
+page_title: WatermarkTextBox Properties
 description: The article will list the properties that the RadFilePathPicker control exposes for controlling the behavior of the RadWatermarkTextBox inside it.
 slug: radfilepathpicker-watermarktextbox-properties
 tags: watermarktextbox, properties
 position: 3
 ---
 
-# Watermarktextbox Properties
+# WatermarkTextBox Properties
 
 The __RadFilePathPicker__ has a [RadWatermarkTextBox]({%slug watermarktextbox-getting-started%}) element inside it, which is responsible for holding the text. This article will list the properties that the control exposes for working with the RadWatermarkTextBox.
 
@@ -49,7 +49,7 @@ The __WatermarkTemplate__ property of the control sets the [WatermarkTemplate]({
 
 The __WatermarkVisibility__ property controls the __Visibility__ of the RadWatermarkTextbox. 
 
-#### __[XAML] Example 2: Setting the WatermarkTemplate property__
+#### __[XAML] Example 3: Setting the WatermarkTemplate property__
 {{region xaml-radfilepathpicker-watermarktextbox-properties_2}}
 
     <telerik:RadFilePathPicker WatermarkVisibility="Collapsed" />

@@ -5,7 +5,7 @@ description: This article shows how to flip the video using the FlipHorizontally
 slug: radwebcam-features-video-flip
 tags: vertical,horizontal,flip
 published: True
-position: 4
+position: 5
 ---
 
 # Video Flip

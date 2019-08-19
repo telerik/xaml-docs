@@ -5,7 +5,7 @@ description: This article describes the settings dialog and the CameraSettingsCo
 slug: radwebcam-features-camera-settings-control
 tags: camerasettingscontrol,dialog
 published: True
-position: 6
+position: 7
 ---
 
 # Camera Settings Control

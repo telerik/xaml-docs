@@ -5,7 +5,7 @@ description: This article shows how to record a video using the RadWebCam contro
 slug: radwebcam-features-recording-video
 tags: startrecording,capture
 published: True
-position: 0
+position: 1
 ---
 
 # Recording Video
@@ -65,3 +65,4 @@ The control allows you to replace the default elapsed date-time format. To do th
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
 * [Commands]({%slug radwebcam-features-commands%})
+* [Events]({%slug radwebcam-events%})

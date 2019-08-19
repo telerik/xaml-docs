@@ -5,7 +5,7 @@ description: This article demonstrates how to customize the error content shown 
 slug: radwebcam-features-errors
 tags: nocameracontent,busycameracontent,datatemplate,errorcontenttemplate,cameraerror,event
 published: True
-position: 3
+position: 4
 ---
 
 # Errors
@@ -30,6 +30,10 @@ There are few expected errors that could appear using the control.
 
 	![](images/radwebcam-features-errors-2.png)
 	
+* __Access to the camera is denied__. This error appears when the access to the camera device is forbidden by the OS settings or any third party software.
+
+	![](images/radwebcam-features-errors-3.png)
+	
 ## Replacing the Error Message
 	
 To replace the error message use the __CameraError__ event of RadWebCam. The __CameraErrorEventArgs__ give access to an __ErrorInfo__ object, which contains information about the error state and message. Use the event to replace the default message with a custom one.
@@ -53,7 +57,7 @@ To replace the error message use the __CameraError__ event of RadWebCam. The __C
 {{endregion}}
 
 #### Figure 1: Customized error message
-![](images/radwebcam-features-errors-3.png)
+![](images/radwebcam-features-errors-4.png)
 
 ## Customizing the Error Content Template
 
@@ -74,7 +78,7 @@ By default the error message is displayed in a simple content presenter. To cust
 {{endregion}}
 
 #### Figure 2: Custom error template
-![](images/radwebcam-features-errors-4.png)
+![](images/radwebcam-features-errors-5.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

@@ -10,7 +10,7 @@ position: 3
 
 # Events
 
-__RadWebCam__ exposes the following events, specific for the control
+__RadWebCam__ exposes the following events, specific for the control.
 
 ## SnapshotTaken
 
@@ -37,7 +37,7 @@ The event arguments are of type __SnapshotTakenEventArgs__ which exposes a __Sna
 
 ## CameraError
 
-The CameraError event fires when one of the [expected camera errors]({%slug radwebcam-features-errors%}#error-types) appears.
+The __CameraError__ event fires when one of the [expected camera errors]({%slug radwebcam-features-errors%}#error-types) appears.
 
 The event can be used to notify you about the corresponding error, or to replace the error message shown in the control.
 
@@ -63,6 +63,10 @@ The event arguments are of type __CameraErrorEventArgs__ and they expose an __Er
 
 #### Figure 1: Customized error message
 ![](features/images/radwebcam-features-errors-3.png)
+
+## RecordingStarted/Ended
+
+The __RecordingStarted__ and __RecordingEnded__ events fire when the camera control starts and ends recording a video. Read more about the video capturing in the [Recording Video]({%slug radwebcam-features-recording-video%}) article.
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

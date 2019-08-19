@@ -35,7 +35,33 @@ The easiest way to hide the minimize or maximize buttons is to set the __HideMin
 
 ## Use the ResizeMode property
 
-By setting the __ResizeMode__ property to __CanMinimize__ only the __Minimize__ button will be visible. The resize button will get hidden and the resizing will get disabled. By setting the __ResizeMode__ property to __NoResize__ both the Minimize and the Maximize buttons will get hidden, the resizing will also get disabled. 
+By setting the __ResizeMode__ property to __CanMinimize__ only the __Minimize__ button will be visible. The resize button will get hidden and the resizing will get disabled. This is demonstrated in __Example 2__.
+
+#### __[XAML] Example 2: Showing only the Minimize Button__
+
+{{region xaml-radwindow-how-to-hide-minimize-maximize-buttons-0}}
+	<telerik:RadWindow 
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    	ResizeMode="CanMinimize"
+		Header="MainWindow" />
+{{endregion}}
+
+#### __Figure 2: Result from Example 2 in the Office2016 theme__
+![RadWindow with just Minimize button](images/RadWindow_Show_Only_Minimize.png)
+
+ By setting the __ResizeMode__ property to __NoResize__ both the Minimize and the Maximize buttons will get hidden, the resizing will also get disabled. This is demonstrated in __Example 3__.
+
+#### __[XAML] Example 3: Showing only the Close button__
+
+{{region xaml-radwindow-how-to-hide-minimize-maximize-buttons-0}}
+	<telerik:RadWindow 
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        ResizeMode="NoResize"
+		Header="MainWindow" />
+{{endregion}}
+
+#### __Figure 3: Result from Example 3 in the Office2016 theme__
+![RadWindow with just the Close button](images/RadWindow_Disable_Minimize_And_Maximize.png)
 
 To learn more about resizing the __RadWindow__ read [here]({%slug radwindow-features-resizing%}).
 

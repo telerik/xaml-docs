@@ -1,7 +1,7 @@
 ---
 title: ScrollMode
 page_title: ScrollMode
-description: This article described ScrollMode property.
+description: This article describes the ScrollMode property.
 slug: radtabcontrol-features-tabs-scrollmode
 tags: scrollmode, tabs
 published: True
@@ -39,19 +39,19 @@ __RadTabControl__ exposes the __ScrollMode__ property which allows you to contro
 
 When set, the tab items will be scrolled 16 pixels per button click.
 
-![](images/radtabcontrol-features-tabs-scrollmode_pixel_0_1.gif)
+![RadTabControl with ScrollMode Pixel](images/radtabcontrol-features-tabs-scrollmode_pixel_0_1.gif)
 	
 ### __Item__
 
 When set, the tab items will be scrolled one item per button click.
 
-![](images/radtabcontrol-features-tabs-scrollmode_item_1_1.gif)
+![RadTabControl with ScrollMode Item](images/radtabcontrol-features-tabs-scrollmode_item_1_1.gif)
 	
 ###__Viewport__
 
 When set, the tab items will be scrolled an amount equal to the available viewport width.
 
-![](images/radtabcontrol-features-tabs-scrollmode_viewport_2_1.gif)
+![RadTabControl with ScrollMode Viewport](images/radtabcontrol-features-tabs-scrollmode_viewport_2_1.gif)
 	
 ## See Also
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})

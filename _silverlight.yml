@@ -121,7 +121,8 @@ controls/radtabbedwindow,
 controls/radwebcam,
 knowledge-base/,
 getting-started/first-steps.md,
-getting-started/explore-control-features.md]
+getting-started/explore-control-features.md,
+controls/radfilepathpicker]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

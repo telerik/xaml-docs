@@ -54,6 +54,8 @@ RadDocking	|	Telerik.Windows.Controls.Docking, Telerik.Windows.Controls.Navigati
 RadEntityFrameworkDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.EntityFramework
 RadExpander	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadExpressionEditor	|	Telerik.Windows.Controls.Expressions, Telerik.Windows.Data, Telerik.Windows.Documents, Telerik.Windows.Controls.Navigation
+RadFileDialogs | Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.FileDialogs, Telerik.Windows.Data
+RadFilePathPicker | Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.FileDialogs, Telerik.Windows.Data
 RadGanttView	|	Telerik.Windows.Controls.GanttView, Telerik.Windows.Scheduling.Core
 RadGauge	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadGridView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input

@@ -13,8 +13,8 @@ position: 0
 
 RadFilePathPicker is a control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
 
-#### __Figure 1: RadFilePathPicker in the Office 2016 theme__
-![RadFilePathPicker Overview](images/NavigationView_Overview.png)
+#### __Figure 1: RadFilePathPicker in the Office2016 theme__
+![RadFilePathPicker Overview](images/FilePathPicker_Overview.png)
 
 As every control from UI for WPF, RadFilePathPicker comes with a set of pre-defined themes. Of course, if you choose to do so, you can design your own templates for a completely custom look.
 

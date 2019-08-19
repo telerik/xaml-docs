@@ -9,7 +9,7 @@ position: 3
 
 # Events
 
-__RadFilePathPicker__ inherits the [Control](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control?view=netframework-4.8) class. In addition to the events that it inherits, the control exposes the following additional ones:            
+__RadFilePathPicker__ inherits the [Control](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control?view=netframework-4.8) class. In addition to the events that it inherits, the control exposes the following ones:            
 
 * __FilePathChanging__: Occurs when a new file path is about to be selected. The event handler receives two arguments:
 

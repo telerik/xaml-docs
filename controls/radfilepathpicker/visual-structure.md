@@ -12,8 +12,8 @@ position: 1
 
 This topic defines terms and concepts related to __RadFilePathPicker__ that you have to get familiar with before you continue reading this help. 
 
-#### __Figure 1: RadFilePathPicker in the Office2016 theme__
-![RadFilePathPicker Visual Structure](images/NavigationViewVisualStructure.png)
+#### __Figure 1: RadFilePathPicker Visual Stucture__
+![RadFilePathPicker Visual Structure](images/FilePathPicker_VisualStructure.png)
 
 The following table lists the elements that make up a RadFilePathPicker:
 

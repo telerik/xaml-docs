@@ -62,4 +62,4 @@ The __Clear__ command can be set to the Command property of another element such
 ## See Also
 
 * [Dialog Types]({%slug radfilepathpicker-dialog-types%})
-* [Commands]({%slug radfilepathpicker-events%})
+* [Events]({%slug radfilepathpicker-events%})

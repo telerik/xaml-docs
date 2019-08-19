@@ -51,12 +51,11 @@ The event arguments are of type __CameraErrorEventArgs__ and they expose an __Er
 		this.radWebCam.CameraError += RadWebCam_CameraError;
 	}
 
-	private void RadWebCam_CameraError(object sender, RoutedEventArgs e)
+	private void RadWebCam_CameraError(object sender, CameraErrorEventArgs e)
 	{
-		var args = (CameraErrorEventArgs)e;
-		if (args.Error.ErrorState == CameraErrorState.NoCamera)
+		if (e.Error.ErrorState == CameraErrorState.NoCamera)
 		{
-			args.Error.Message = "Cannot detect a camera device.";
+			e.Error.Message = "Cannot detect a camera device.";
 		}           
 	}
 {{endregion}}
@@ -66,7 +65,28 @@ The event arguments are of type __CameraErrorEventArgs__ and they expose an __Er
 
 ## RecordingStarted/Ended
 
-The __RecordingStarted__ and __RecordingEnded__ events fire when the camera control starts and ends recording a video. Read more about the video capturing in the [Recording Video]({%slug radwebcam-features-recording-video%}) article.
+The __RecordingStarted__ event fires just before the camera control starts recording. 
+
+The event arguments are of type __RecordingStartedEventArgs__ and can be used to cancel the recording start. To do this, set the __Cancel__ property to True.
+
+#### __[C#] Example 3: Canceling the start recording action__
+{{region radwebcam-events-2}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.radWebCam.RecordingStarted += RadWebCam_RecordingStarted;
+	}
+
+	private void RadWebCam_RecordingStarted(object sender, RecordingStartedEventArgs e)
+	{
+		MessageBoxResult result = MessageBox.Show("The video will be recorded at " + this.webCam.RecordingFilePath + "\n\rDo you want to start recording?", "Start Video Recording", MessageBoxButton.YesNo, MessageBoxImage.Question);
+		e.Cancel = result != MessageBoxResult.Yes;
+	}
+{{endregion}}
+
+The __RecordingEnded__ event fires when the camera control stops recording. 
+
+>tip Read more about the video capturing in the [Recording Video]({%slug radwebcam-features-recording-video%}) article.
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

@@ -14,9 +14,115 @@ The __RadContextMenu__ and the __RadMenuItem__ controls come with a set of selec
 
 Here is a list of the selectors provided by the __RadContextMenu__ control:
 
-* __ItemTemplateSelector__- used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.
+* __ItemTemplateSelector__: Used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.
+
+#### __[C#] Example 1: Define the ItemTemplateSelector__
+
+{{region radcontextmenu-populating-with-data-template-and-style-selectors_1}}
+	public class MyTemplateSelector : DataTemplateSelector
+    {
+        public DataTemplate CutTemplate { get; set; }
+        public DataTemplate DefaultTemplate { get; set; }
+
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+            if (item.ToString() == "Cut")
+            {
+                return this.CutTemplate;
+            }
+            return this.DefaultTemplate;
+        }
+    }
+	{{endregion}}
+
+#### __[XAML] Example 2: Using the ItemTemplateSelector in XAML__
+
+	{{region radcontextmenu-populating-with-data-template-and-style-selectors_0}}
+		<Grid.Resources>
+            <local:MyTemplateSelector x:Key="MyTemplateSelector">
+                <local:MyTemplateSelector.CutTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="10" Height="10" Fill="Red"/>
+                            <TextBlock Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </local:MyTemplateSelector.CutTemplate>
+                <local:MyTemplateSelector.DefaultTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </local:MyTemplateSelector.DefaultTemplate>
+            </local:MyTemplateSelector>
+        </Grid.Resources>
+
+        <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
+            <telerik:RadContextMenu.ContextMenu>
+                <telerik:RadContextMenu x:Name="contextMenu" 
+                                        ItemsSource="{Binding}" 
+                                        ItemContainerStyle="{StaticResource MenuItemContainer}"
+                                        ItemTemplateSelector="{StaticResource MyTemplateSelector}"/>
+            </telerik:RadContextMenu.ContextMenu>
+        </TextBox>
+    {{endregion}}
+
+#### __Picture 1: Result of Example 1 and Example 2__ 
+![](images/RadContextMenu_TemplateAndStyleSelectors_ItemTemplateSelector.PNG)
 
 * __ItemContainerStyleSelector -__ used to select the __Style__ that is applied to the child __RadMenuItems__.
+
+#### __[C#] Example 3: Define the ItemContainerStyleSelector__
+
+{{region radcontextmenu-populating-with-data-template-and-style-selectors_3}}
+	public class MyStyleSelector : StyleSelector
+    {
+        public Style CutStyle { get; set; }
+        public Style DefaultStyle { get; set; }
+
+        public override Style SelectStyle(object item, DependencyObject container)
+        {
+            var menuItem = item as MenuItem;
+            if (menuItem.Text == "Cut")
+            {
+                return this.CutStyle;
+            }
+            return this.DefaultStyle;
+        }
+    }
+	{{endregion}}
+
+#### __[XAML] Example 4: Using the ItemContainerStyleSelector in XAML__
+
+	{{region radcontextmenu-populating-with-data-template-and-style-selectors_2}}
+		<Grid.Resources>
+            <local:MyTemplateSelector x:Key="MyTemplateSelector">
+                <local:MyTemplateSelector.CutTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="Green" Width="5" Height="5" />
+                            <TextBlock Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </local:MyTemplateSelector.CutTemplate>
+                <local:MyTemplateSelector.DefaultTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </local:MyTemplateSelector.DefaultTemplate>
+            </local:MyTemplateSelector>
+        </Grid.Resources>
+
+        <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
+            <telerik:RadContextMenu.ContextMenu>
+                <telerik:RadContextMenu x:Name="contextMenu"
+                                        ItemsSource="{Binding}"  
+                                        ItemContainerStyleSelector="{StaticResource MyStyleSelector}"/>
+            </telerik:RadContextMenu.ContextMenu>
+        </TextBox>
+    {{endregion}}
+
+#### __Picture 2: Result of Example 3 and Example 4__ 
+![](images/RadContextMenu_TemplateAndStyleSelectors_ItemContainerStyleSelector.PNG)
 
 And a list of the selectors provided by the __RadMenuItem__ control:
 

@@ -16,9 +16,9 @@ In this article you will learn how to use a QueryableDateTimeGroupDescription wi
 
 __QueryableDateTimeGroupDescription__ is used when you want to group your data by a property of type *DateTime* or *DateTimeOffset*. It has the following properties:      
 
-* __PropertyName__ - defines the name of the property by which the data will be grouped. It is mandatory to set a value.            
+* __PropertyName__ : defines the name of the property by which the data will be grouped. It is mandatory to set a value.            
 
-* __Step__ - defines the grouping interval. Default value is Year, but you can change it to one of the following: Quarter, Month, Day, Week Hour, Minute, Second (The Week, Hour, Minute and Second steps are available since the __2019.2.729__ version). 
+* __Step__ : defines the grouping interval. Default value is Year, but you can change it to one of the following: Quarter, Month, Day, Week Hour, Minute, Second (The Week, Hour, Minute and Second steps are available since the __2019.2.729__ version). 
 
 >tip If you have the following dates: 01-01-2013 and 20-02-2013 and you set Step to Year, the two values will be in one group - 2013. But if you change the step to Month, the values will be in two different groups - January and February.            
 

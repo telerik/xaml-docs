@@ -285,7 +285,7 @@ So the last step is to register a persistence provider and implement the logic t
 
 ## Persist custom types
 
-If you have implemented your own custom types, for example CustomGroupDescription, and you want to serialize your data, you have to do the following:        
+If you have implemented your own custom types, for example CustomGroupDescription, and you want to persist your data, you have to do the following:        
 
 * Set the DataContract attribute on each of your custom classes.            
 
@@ -336,12 +336,12 @@ So if you have implemented a custom group description, it should be similar to t
 	End Class
 {{endregion}}
 
-And here's the change in *LocalDataSourceSerializer* class:        
+And here's the change in *LocalDataSourceValueProvider* class:        
 
 #### __C#__
 
 {{region radpivotgrid-features-serialization_5}}
-	public class LocalDataSourceSerializer : DataProviderSerializer
+	public class LocalDataSourceValueProvider : DataProviderValueProvider
 	{
 	    private IEnumerable<Type> myKnownTypes = PivotSerializationHelper.KnownTypes.Concat<Type>(new List<Type>() { typeof(CustomGroupDescription) });
 	        
@@ -358,8 +358,8 @@ And here's the change in *LocalDataSourceSerializer* class:
 #### __VB.NET__
 
 {{region radpivotgrid-features-serialization_5}}
-	Public Class LocalDataSourceSerializer
-		Inherits DataProviderSerializer
+	Public Class LocalDataSourceValueProvider
+		Inherits DataProviderValueProvider
 	
 		Private myKnownTypes As IEnumerable(Of Type) = PivotSerializationHelper.KnownTypes.Concat(New List(Of Type)() From {GetType(CustomGroupDescription)})
 	

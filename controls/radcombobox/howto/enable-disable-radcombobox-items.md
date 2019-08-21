@@ -34,8 +34,6 @@ In the simplest scenario you will have a __RadComboBox__ populated with static d
 	</telerik:RadComboBox>
 {{endregion}}
 
-
-
 The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __IsEnabled__. Set this property to __False__, when you want to disable either the whole __RadComboBox__ or specific __RadComboBoxItems__. The next code-snippet shows you how to do that.
 
 #### __[XAML] Example 2: Disabling specific RadComboBoxItems using the IsEnabled property__
@@ -48,14 +46,14 @@ The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __Is
 	</telerik:RadComboBox>
 {{endregion}}
 
-#### __Picture 1: Result of Example 2__
+#### __Figure 1: Result of Example 2__
 ![](images/RadComboBox_HowTo_EnableDisableItems_010.png)
 
 ## Enable\Disable Items Using ItemContainerStyle
 
 Using __RadComboBox__ with static data is the simplest scenario. However, in most of the cases you will have a __RadComboBox__ [populated with a collection of business objects]({%slug radcombobox-populating-with-data-binding-to-object%}). In this case you have no other options except for using either the __ItemContainerStyle__ or the __ItemContainerStyleSelector__.
 
-#### __[C#] Example 3: Create a collection of objects.__
+#### __[C#] Example 3: Create a collection of objects__
 
 {{region radcombobox-howto-enable-disable-radcombobox-items_2}}
 	public class Item : ViewModelBase
@@ -65,7 +63,7 @@ Using __RadComboBox__ with static data is the simplest scenario. However, in mos
     }
 {{endregion}}
 
-#### __[C#] Example 4: Create the ViewModel.__
+#### __[C#] Example 4: Create the ViewModel__
 
 {{region radcombobox-howto-enable-disable-radcombobox-items_3}}
 	public class MainViewModel : ViewModelBase
@@ -93,12 +91,15 @@ Using __RadComboBox__ with static data is the simplest scenario. However, in mos
 #### __[XAML] Example 5: Set the ItemContainerStyle of a RadComboBox__
 
 {{region radcombobox-howto-enable-disable-radcombobox-items_4}}
+	<Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
 	<UserControl.Resources>
 	    <Style x:Key="ItemContainerStyle" TargetType="telerik:RadComboBoxItem">
 	        <Setter Property="IsEnabled" Value="False"/>
 	    </Style>
 	</UserControl.Resources>
-	 ...
+
 	<telerik:RadComboBox x:Name="radComboBox"
 		Width="200"
 	    ItemsSource="{Binding Items}"
@@ -108,7 +109,7 @@ Using __RadComboBox__ with static data is the simplest scenario. However, in mos
 
 Note that in this case all __RadComboBoxItems__ will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#enabledisable-items-using-itemcontainerstyleselector) the next section to see the solution.
 
-#### __Picture 2: Result of Example 5__
+#### __Figure 2: Result of Example 5__
 ![](images/RadComboBox_HowTo_EnableDisableItems_020.png)
 
 ## Enable\Disable Items Using ItemContainerStyleSelector
@@ -150,7 +151,7 @@ The next example demonstrates you how to achieve this.
 	    <example:EnableDisableSelector x:Key="StyleSelector" EnableStyle="{StaticResource EnableStyle}"
 	        DisableStyle="{StaticResource DisableStyle}"/>
 	</UserControl.Resources>
-	 ...
+
 	<telerik:RadComboBox x:Name="radComboBox"
 		Width="200"
 	    ItemsSource="{Binding Items}"
@@ -158,7 +159,7 @@ The next example demonstrates you how to achieve this.
 	    ItemContainerStyleSelector="{StaticResource StyleSelector}"/>
 {{endregion}}
 
-#### __Picture 3: The result is that every odd item is disabled.__
+#### __Figure 3: The result is that every odd item is disabled__
 
 ![](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
@@ -176,7 +177,7 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 	        <Setter Property="IsEnabled" Value="{Binding IsEnabled}"/>
 	    </Style>
 	</UserControl.Resources>
-	 ...
+
 	<telerik:RadComboBox x:Name="radComboBox"
 		Width="200"
 	    ItemsSource="{Binding Items}"
@@ -187,7 +188,7 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 {% if site.site_name == 'WPF' %}
 Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.
 
-#### __Picture 4: Result of Example 5.__
+#### __Picture 4: Result of Example 5__
 ![](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 

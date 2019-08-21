@@ -10,7 +10,7 @@ position: 4
 
 # Toggle Switch Button
 
-__RadToggleSwitchButton__ inherits from our __RadToggleButton__ control which implements the [ICommandSource](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. Because of the inheritance, it has all of the features of the __RadToggleButton__ control. The __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
+__RadToggleSwitchButton__ is a control design to display two exclusive choices. The control is represented by a track in which the thumb is smoothly sliding left and right. The two states content can be customized along with their position. The button derives from our __RadToggleButton__ control. Because of the inheritance, it has all of the features of the __RadToggleButton__ control. 
 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
@@ -48,60 +48,53 @@ The RadToggleSwitchButton allows you to control the position of its CheckedConte
 * __Left__ 
 
 #### __Figure 2: ContentPosition property__
-
-Create image after fix.
+![](images/radbuttons-features-toggle-switch-button-1.png)
  
 ## Enable Three-State Mode
 
 To make __RadToggleSwitchButton__ to go into a three-state mode you can just set its __IsThreeState__ property to __True__.
 
-#### __[XAML] Example 5: Enabling the three-state mode__
+#### __[XAML] Example 3: Enabling the three-state mode__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}
 	<telerik:RadToggleSwitchButton IsThreeState="True" ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" />
 {{endregion}}
 
-## Toggle Events
-
-The button provides a set of events that are fired when you toggle it. 
-
-* __Checked__: This event is fired when the button is switched on.
-* __Unchecked__: This event is fired when the button is switched off.
-* __Activate__: This event is fired when the button is switch on or off.
-
->tip As any other button, RadToggleSwitchButton exposes a __Click__ event, too. Additionally, the control has __PreviewClick__ event.
-
-The toggle state of the button can be manually controlled via its __IsChecked__ property.
-
-Here is an example of handling the __Checked__ event of a button.
-
-#### __[XAML] Example 3: Subscribing to the Checked event__
-{{region xaml-radbuttons-features-toggle-button_3}}
-	<telerik:RadToggleSwitchButton ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" Checked="RadToggleSwitchButton_Checked" />
-{{endregion}}
-
-#### __[C#] Example 4: Defining a Checked event handler__
-{{region cs-radbuttons-features-toggle-button_4}}
-	private void RadToggleSwitchButton_Checked(object sender, RoutedEventArgs e)
-	{
-	    //implement your logic here
-	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining a Checked event handler__
-{{region vb-radbuttons-features-toggle-button_5}}
-	Private Sub RadToggleSwitchButton_Checked(sender As Object, e As RoutedEventArgs)
-	    'implement your logic here'
-	End Sub
-{{endregion}}
-
 ## RadToggleSwitchButton Properties
 
-* __CheckedContent__: This property controls the check content of the button.
-* __UncheckedContent__: This property controls the uncheck content of the button.
-* __TrackHeight__: This property controls the height of the track.
-* __TrackWidth__: This property controls the width of the track.
-* __ThumbHeight__: This property controls the height of the thumb.
-* __ThumbWidth__: This property controls the width of the thumb.
+The ToggleSwitchButton expose several properties which can be used to customized its appearance.
+
+### __CheckedContent__ and __UncheckedContent__
+
+Nevertheless the RadToggleSwitchButton derives from RadToggleButton, the Content property here is not respected. Two new properties are created. These properties set the check and uncheck content state of the ToggleSwitchButton. Their position depends on the __ContentPosition__ property.
+
+#### __[XAML] Example 3: Setting Check/UncheckContent property__
+{{region xaml-radbuttons-features-toggle-switch-button_6}}
+	<telerik:RadToggleSwitchButton CheckedContent="Red" UncheckedContent="Green" />
+{{endregion}}
+
+### __TrackHeight__ and __TrackWidth__
+
+These properties customize the size of the ToggleSwitchButton track.
+
+#### __[XAML] Example 4: Setting Check/UncheckContent property__
+{{region xaml-radbuttons-features-toggle-switch-button_6}}
+	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" />
+{{endregion}}
+
+#### __Figure 3: Change Track Height/Width__
+![](images/radbuttons-features-toggle-switch-button-2.png)
+
+### __ThumbHeight__ and __ThumbWidth__
+
+These properties customize the size of the ToggleSwitchButton track.
+
+#### __[XAML] Example 5: Setting Thumb Height/Width property__
+{{region xaml-radbuttons-features-toggle-switch-button_6}}
+	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" ThumbHeight="15" ThumbWidth="50"/>
+{{endregion}}
+
+#### __Figure 3: Change Thumb Height/Width__
+![](images/radbuttons-features-toggle-switch-button-3.png)
 
 ## See Also 
  * [Button]({%slug radbuttons-features-button%})

@@ -161,7 +161,7 @@ Next, create a collection of Profile objects in the MainWindow and set the RadGr
 
 Now that you have prepared the needed sample data, you need to bind it to each column in XAML as shown in the Example 4 below.
 
-#### __[XAML] Example 4: Bind RadGridView collection in XAML__
+#### __[XAML] Example 4: Define RadGridView in XAML__
 
 {{region xaml-gridview-getting-started2_1}}
 	<Grid>
@@ -177,9 +177,9 @@ Now that you have prepared the needed sample data, you need to bind it to each c
     </Grid>
 {{endregion}}
 
-Run the project by pressing **F5**. You should see something like this:
+Run the project and you should see something like this:
 
->caption Figure 7: The final result
+#### __Figure 7: The final result__
 
 ![Main window with RadGridView](images/main-window-with-radgridview.png "Main window with RadGridView")
 

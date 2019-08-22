@@ -29,12 +29,12 @@ How to autofit the content area of RadRibbonView to the elements in the selected
 
 To make the content height stretch based on the size of the elements in the selected tab, you can set the ContentHeight property of RadRibbonView to double.NaN.
 
-#### XAML
+#### __[XAML]__
 {{region kb-ribbonview-contentheight-nan-autofit-0}}
     <telerik:RadRibbonView ContentHeight="NaN" />
 {{endregion}}
 
-#### C#
+#### __[C#]__
 {{region kb-ribbonview-contentheight-nan-autofit-1}}
      this.radRibbonView.ContentHeight = double.NaN;
 {{endregion}}

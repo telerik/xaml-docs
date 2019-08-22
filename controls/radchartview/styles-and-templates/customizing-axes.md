@@ -16,10 +16,10 @@ RadChartView supports several types of axes. All of them are represented by the 
 
 This relates the UI in the following way – there is simply no separate Style for each axis type. Instead all axes are BasedOn one and the same style with x:Key AxisStyle. Each time you want to customize your axis you should inherit this style in XAML. 
 
-For the purpose of this tutorial, we will create a sample chart with LineSeries. Then to customize the horizontal and vertical axis we will create two implicit styles which target the axis correspondingly. __Example 1__ demonstrate the full XAML code.
+For the purpose of this tutorial, we will create a sample chart with LineSeries. Then to customize the horizontal and vertical axes we will create two implicit styles which target the axes correspondingly. __Example 1__ demonstrates the full XAML code.
 
-#### __XAML__	
-{{region radchartview-styles-and-templates-customizing-axes-0}}
+#### __[XAML] Example 1: Customizing axes by using implicit styles__	
+{{region xaml-radchartview-styles-and-templates-customizing-axes-0}}
 	<Window.Resources>
 		<Style TargetType="telerik:CategoricalAxis" BasedOn="{StaticResource AxisStyle}">         
 			<Setter Property="FontSize" Value="16" />
@@ -71,8 +71,8 @@ For the purpose of this tutorial, we will create a sample chart with LineSeries.
 	</Grid>
 {{endregion}}
 
-#### __Figure 1: Customizing Axes by Using Implicit Styles__
-![](images/radchartview-styles-and-templates-customizing-axes-0.png)
+#### __Figure 1: Customizing axes by using implicit styles__
+![Customizing axes by using implicit styles](images/radchartview-styles-and-templates-customizing-axes-0.png)
 
 ## See Also
  * [Axis]({%slug radchartview-axes-axis%})

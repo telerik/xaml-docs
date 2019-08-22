@@ -14,7 +14,7 @@ The RadWebCam control automatically connects to the first camera and recording d
 
 ## Disable Auto Start
 
-To disable the automatic start of the camera, set the __AutoStart__ property to __False__. The default value is True.
+To disable the automatic start of the camera, set the __AutoStart__ property to __False__. The default value is **True**.
 
 #### __[XAML] Example 1: Disable auto start__
 {{region radwebcam-radwebcam-features-initialize-camera-0}}
@@ -66,7 +66,7 @@ Passing an empty recording device (__null__) to the __Initialize__ method will d
 
 To stop the camera manually call the __Stop__ method of RadWebCam. 
 
-To disconnect from the camera call the __ShutDown__ method.
+To disconnect from the camera, call the __ShutDown__ method.
 
 #### __[C#] Example 5: Stopping the camera__
 {{region radwebcam-radwebcam-features-initialize-camera-4}}

@@ -18,7 +18,7 @@ The SnapshotTaken event fires when the "Take snapshot" button is pressed or when
 
 The purpose of the event is to notify you that a snapshot has been taken and you need to take action, like saving it to a file.
 
-The event arguments are of type __SnapshotTakenEventArgs__ which exposes a __Snapshot__ property (of type BitmapSource).
+The event arguments are of type __SnapshotTakenEventArgs__ which expose a __Snapshot__ property (of type BitmapSource).
 
 #### __[C#] Example 1: Subscribing to the SnapshotTaken event__
 {{region radwebcam-events-0}}

@@ -2,10 +2,10 @@
 title: TextBoxStyle
 page_title: TextBoxStyle
 description: TextBoxStyle
-slug: radautocompletebox-features-textboxstyle
+slug: radautocompletebox-textboxstyle
 tags: textboxstyle
 published: True
-position: 9
+position: 4
 ---
 
 # TextBoxStyle
@@ -115,8 +115,6 @@ You can see the final result on __Figure 2__.
 
 ## See Also
 
- * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Customizing the BoxesItemTemplate]({%slug radautocompletebox-customizing-boxes-itemtemplate%})
 
- * [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%})
-
- * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
+ * [BoxesItemStyle]({%slug radautocompletebox-boxesitemstyle%})

@@ -5,7 +5,7 @@ description: RadWebCam gives the ability to get information about the connected 
 slug: radwebcam-features-media-information
 tags: mediafoundationdeviceinfo, mediafoundationvideoformatinfo
 published: True
-position: 2
+position: 3
 ---
 
 # Media Information
@@ -49,6 +49,8 @@ To get the available video file formats for the connected device, you can use th
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
 {{endregion}}
+
+> The RadWebCam.GetVideoCaptureDevices call will throw an __UnauthorizedAccessException__ if the access to the camera device is forbidden by the OS settings or any third party software.
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

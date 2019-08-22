@@ -1,14 +1,14 @@
 ---
-title: Migarting to .NET Core
-page_title: Migarting to .NET Core
+title: Migrаting to .NET Core
+page_title: Migrаting to .NET Core
 description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET Core one.
 slug: netcore-support-migration
 tags: get,started,first,steps
 published: True
-position: 0
+position: 1
 ---
 
-# Migarting to .NET Core
+# Migrаting to .NET Core
 
 This article shows how to migrate from an existing WPF .NET Framework project to a .NET Core one.
 
@@ -110,6 +110,8 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	{{endregion}}
 	
 ## See Also
+
+* [Deploy WPF .NET Core Application]({%slug netcore-support-deploy-using-visual-studio%})
 
 	
 

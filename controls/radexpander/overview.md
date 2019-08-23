@@ -25,11 +25,11 @@ __RadExpander__ is a flexible control that helps you save space and achieve easi
 
 ## Key Features
 
-This is a list with short descriptions of the top-of-the-line features of Telerik's __RadExpander__ controls.
+This is a list with short descriptions of the top-of-the-line features of Telerik's __RadExpander__ control.
 
 * __Expand Direction__: The control allows you to change the direction in which the content will expand. You can find more about this in the [Expand Direction]({%slug radexpander-features-expand_direction%}) article.
 
-* __Content Alignment__: The expander control allows you to chanhe the alignment its content in different posstions. You can find more about this in the [Alignment]({%slug radexpander-features-alignment%}) article.
+* __Content Alignment__: The expander control allows you to align its content in different positions. You can find more about this in the [Alignment]({%slug radexpander-features-alignment%}) article.
 
 >tip Get started with the control with its [Getting Started]({%slug expander-getting-started%}) help article that shows how to use it in a basic scenario.
 

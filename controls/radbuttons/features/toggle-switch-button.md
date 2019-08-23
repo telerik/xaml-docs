@@ -67,7 +67,7 @@ The ToggleSwitchButton expose several properties which can be used to customized
 
 Nevertheless the RadToggleSwitchButton derives from RadToggleButton, the Content property here is not respected. Two new properties are created. These properties set the check and uncheck content state of the ToggleSwitchButton. Their position depends on the __ContentPosition__ property.
 
-#### __[XAML] Example 3: Setting Check/UncheckContent property__
+#### __[XAML] Example 4: Setting Check/UncheckContent property__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}
 	<telerik:RadToggleSwitchButton CheckedContent="Red" UncheckedContent="Green" />
 {{endregion}}
@@ -76,7 +76,7 @@ Nevertheless the RadToggleSwitchButton derives from RadToggleButton, the Content
 
 These properties customize the size of the ToggleSwitchButton track.
 
-#### __[XAML] Example 4: Setting Check/UncheckContent property__
+#### __[XAML] Example 5: Setting Check/UncheckContent property__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}
 	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" />
 {{endregion}}
@@ -88,12 +88,12 @@ These properties customize the size of the ToggleSwitchButton track.
 
 These properties customize the size of the ToggleSwitchButton track.
 
-#### __[XAML] Example 5: Setting Thumb Height/Width property__
+#### __[XAML] Example 6: Setting Thumb Height/Width property__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}
 	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" ThumbHeight="15" ThumbWidth="50"/>
 {{endregion}}
 
-#### __Figure 3: Change Thumb Height/Width__
+#### __Figure 4: Change Thumb Height/Width__
 ![](images/radbuttons-features-toggle-switch-button-3.png)
 
 ## See Also 

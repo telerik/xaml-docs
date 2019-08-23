@@ -30,13 +30,15 @@ The __ExportToXlsx__ method uses additional libraries so you need to add referen
 
 2. __ExportToXlsx(Stream stream, GridViewDocumentExportOptions options)__ - Expects the specified stream to which you are exporting data to and parameter of type GridViewDocumentExportOptions. The latter is used to set the following export options:
 
-* Culture
-* Items
-* ShowColumnFooters
-* ShowGroupFooters
-* ShowColumnHeaders
-* ExportDefaultStyles  
-* ExcludedColumns
+- **Culture**: 
+- **Items**: The collection of items to be exported.
+- **ShowColumnFooters**: Specifies whether column footers should be included on export.
+- **ShowGroupFooters**: Specifies whether group footers should be included on export.
+- **ShowGroupHeaders**: Specifies whether group headers should be included on export.
+- **ExportDefaultStyles**: Specifies whether the GridViewDataControl will be exported with its default styles.  
+- **ExcludedColumns**: Choose which columns to export. 
+- **ShowGroupRows**: Specifies whether the groups' items should be exported (this property was introduced in **R3 2019**).
+- **IgnoreCollapsedGroups**: Specifies whether the collapsed groups' items should be exported (this property was introduced in **R3 2019**).
 
 The following example shows how to use the method on a button click:
 

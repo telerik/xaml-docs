@@ -76,6 +76,15 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 * __Button Part__ - represents the active part of the control.
 
+## RadToggleSwitchButton
+
+* __CheckContent__: Represents the check content of the button.
+* __UncheckContent__: Represents the uncheck content of the button.
+* __Thumb__: Represents the thumb part of the control.
+* __Track__: Represents the track part of the control.
+
+![](images/RadButtons_Visual_Structure_06.png)
+
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})
  * [Appearance]({%slug radbuttons-features-appearance%})

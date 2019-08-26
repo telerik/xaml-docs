@@ -39,7 +39,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 
 ## Tips
 
-* If your project has images with __Build Action__ set to Resource, change it to Embeded Resource or Content.
+* If your project has images with [__Build Action__](https://docs.microsoft.com/en-us/visualstudio/ide/build-actions?view=vs-2019) set to Resource, change it to Embeded Resource or Content.
 
 * If you use the __AssemblyInfo__ or __App.manifest__ files from your original project, add them manually in the .NET Core project. The new project template uses a different approach and generates the same assembly attributes as part of the build process.
 	

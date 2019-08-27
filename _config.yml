@@ -1018,10 +1018,7 @@ navigation:
         position: 2
     "*changes-and-backward-compatibility":
         title: Changes and Backward Compatibility
-        position: 3
-    "*changes-and-backwards-compatibility":
-        title: Changes and Backward Compatibility
-        position: 3
+        position: 3    
     "*features":
         title: Features
         position: 4
@@ -1043,6 +1040,9 @@ navigation:
     "*events":
         title: Events
         position: 80
+    netcore:
+        title: .NET Core Support
+        position: 8
     "api-reference":
         title: "Api Reference"
         position: 23

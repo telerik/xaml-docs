@@ -40,5 +40,3 @@ There are a number of ways you can control the layout of your __RadTabControl__ 
  * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 
  * [Getting Started]({%slug radtabcontrol-getting-started%})
-
- * [How to Create Multi-line Tabs]({%slug radtabcontrol-how-to-create-multi-line-tabs%})

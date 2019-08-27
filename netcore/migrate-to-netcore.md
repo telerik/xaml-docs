@@ -50,7 +50,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	
 * If you have referred to some references which are still not available in .NET Core as Windows.Composition, you can Include the [Windows.Compatibility Pack](https://docs.microsoft.com/en-us/dotnet/core/porting/windows-compat-pack) with the command below executed via the Command Prompt from Visual Studio.
 	 
-	#### __Example 2: Windows.Compatibility pack installation command__
+	#### __[Command Prompt] Example 2: Windows.Compatibility pack installation command__
 	{{region netcore-support-migration-1}}
 		dotnet add package Microsoft.Windows.Compatibility
 	{{endregion}}

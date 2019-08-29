@@ -90,7 +90,8 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **ColumnWidth**: Gets or sets the width of the columns that are exported.
 - **Items**: The collection of items to be exported.
 - **ShowGroupRows**: Specifies whether the groups' items should be exported (this property was introduced in **R3 2019**).
-- **Culture**:  (this property was introduced in **R3 2019**).
+- **Culture**: Sets a specific Culture (this property was introduced in **R3 2019**).
+- **IgnoreCollapsedGroups**: Specifies whether the collapsed groups' items should be exported (this property was introduced in **R3 2019**).
 
 #### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
 

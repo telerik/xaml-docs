@@ -1,7 +1,7 @@
 ---
 title: How To Change Header Background
 page_title: How To Change Header Background
-description: How To Change Header Background
+description: You can change RadWindow header background by extracting its default template
 slug: radwindow-styles-and-templates-how-to-change-header-background
 tags: styling,the,windows, header, default,template, change,extract
 published: True
@@ -14,11 +14,11 @@ position: 4
 
 This article explains how you could customize the header of the RadWindow control by extracting its default template.
 
->tipThis article showcases Office2016 theme.
+>tipThis article showcases the Office2016 theme.
 
-To change the header background of the RadWindow you will need to extract and edit the default template of the control. __Example 1__ hold the default template of the RadWindow based on the Office2016 theme. We will place all resources in a separate ResourceDictionary which we will merged in the App.xaml file.
+To change the header background of the RadWindow you will need to extract and edit the default template of the control. __Example 1__ holds the default template of the RadWindow based on the Office2016 theme. We will place all resources in a separate ResourceDictionary which we will merge in the App.xaml file.
 
-#### __[XAML] Example 1: Default RadWindow template based on Office2016 theme__
+#### __[XAML] Example 1: Default RadWindow template based on the Office2016 theme__
 {{region xaml-radwindow-styles-and-templates-how-to-change-header-background_0}}
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 						xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -355,7 +355,7 @@ Next step is to locate a __Border__ element with x:Name="Header" which hold the 
 	. . . . 	
 {{endregion}}
 
-Now we need to merged the custom ResourceDictionary in the App.xaml file, so that the modified style will be applied to all RadWindow elements inside the application. In case you are using RadWindow as MainWindow, please refer to the [Use RadWindow as User Control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) for more information how to apply the custom style to the main window.
+Now we need to merge the custom ResourceDictionary in the App.xaml file, so that the modified style will be applied to all RadWindow elements inside the application. In case you are using RadWindow as MainWindow, please refer to the [Use RadWindow as User Control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) for more information on how to apply the custom style to the main window.
 
 #### __[C#] Example 3: Merged the custom ResourceDictionary__
 
@@ -372,8 +372,6 @@ Now we need to merged the custom ResourceDictionary in the App.xaml file, so tha
 		</Application.Resources>
 	</Application>
 {{endregion}}
-
-__Figure 1__ shows the final result.
 
 #### __Figure 1: RadWindow with custom style__
 ![](images/RadWindow_Styles_and_Templates_HowTo_Change_Header_Background.png)

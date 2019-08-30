@@ -62,6 +62,46 @@ __Figure 2__ shows the result.
 
 ![](images/RadPasswordBox_GettingStarted_1.png)
 
+## Working with RadPasswordBox
+
+The Text property of the RadPasswordBox actually contains only the sequence of masking characters set by the PasswordChar property. The actual input can be reached through the Password and SecurePassword properties. These properties are not dependency properties (cannot be bound) due to security reasons. To get these properties in MVVM you can pass the RadPasswordBox element to a command from your view model. Let's demonstrates this with some code.
+
+First we will declare the RadPasswordBox in XAML and bind a RadButton control Command property to a command from your view model.
+
+#### __[XAML] Example 3: Setting a watermark__
+
+{{region passwordbox-getting-started_2}}
+	<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
+		<telerik:RadPasswordBox x:Name="passwordBox" WatermarkContent="enter a password" Width="150" Margin="0 0 10 0" />
+		<telerik:RadButton Content="Log in" Command="{Binding LoadCommand}" CommandParameter="{Binding ElementName=passwordBox}"/>
+	</StackPanel>
+{{endregion}}
+
+Now we just need to create our view model.
+
+#### __[C#] Example 3: Create ViewModel__
+
+{{region passwordbox-getting-started_2}}
+	public  class ViewModel
+	{
+		public System.Windows.Input.ICommand LoadCommand { get; set; }
+		public ViewModel()
+		{
+			LoadCommand = new DelegateCommand(OnLoadCommand_Executed);
+		}
+
+		private void OnLoadCommand_Executed(object obj)
+		{
+			var passwordBox = obj as RadPasswordBox;
+			if(passwordBox != null)
+			{
+				// actual entered password
+				var password = passwordBox.Password;
+			}
+		}
+	}
+{{endregion}}
+
 ## See Also
 
  * [Overview]({%slug radpasswordbox-overview%})

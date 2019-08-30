@@ -161,8 +161,8 @@ The default values of the brushes in the theme are listed below.
 
 ## Other Properties
 
-* **DisabledOpacity**: Used for text when they are disabled. Backgrounds usually use the  **ComplementaryBrush** when disabled.
-* **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
+* **DisabledOpacity**: Used for controls when they are in a disabled state. Backgrounds usually use the  **ComplementaryBrush** when disabled.
+* **ReadOnlyOpacity**: Used for controls when they are in a **read-only** state.
 
 ## Font Family and Font Size
 
@@ -172,7 +172,7 @@ The **FontSize** and **FontFamily** properties are public so you can easily modi
 
 The default font used in the theme is **Segoe UI**.
 
->important For complex scenarios we strongly recommend setting the **FontSize** properties only **before the application is initialized**. 
+>important For complex scenarios we strongly recommend setting the **FontSize** properties **only before the application is initialized**. 
 
 __Example 1__ shows the default font sizes and families.
 
@@ -211,9 +211,9 @@ The **MaterialAssist** static class that comes from the Material theme is reused
 
 * **MouseOverBrush:** Sets the value of the background Brush applied when the mouse is over the control. 
 * **PressedBrush:** Sets the value of the background Brush applied when the control is pressed.
-* **CheckedBrush:** Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(ToggleButton, RadListBoxItem, etc.)
+* **CheckedBrush:** Sets the value of the background Brush applied when the element is in the Checked state. It will have an effect when used on elements that expose a "checked" state (ToggleButton, RadListBoxItem, etc.)
 * **FocusBrush:** Sets the value of the background Brush applied when the element is focused.
-* **CornerRadius:** Used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.).
+* **CornerRadius:** Used to set the corner radius of commonly-used basic controls that could need corner radius customizations but don't expose such a property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.).
 
 **Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
 
@@ -236,7 +236,7 @@ The **MaterialAssist** static class that comes from the Material theme is reused
 
 ## Changing Opacity 
 
-If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the VisualStudio2019Palette. The default values are 0.3 and 0.6 respectively. 
+If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the VisualStudio2019Palette. The default values are **0.3** and **0.6** respectively. 
 
 #### __[C#] Example 5: Changing the opacity__		
 {{region cs-styling-appearance-visualstudio2019-theme-5}}

@@ -64,11 +64,11 @@ __Figure 2__ shows the result.
 
 ## Working with RadPasswordBox
 
-The Text property of the RadPasswordBox actually contains only the sequence of masking characters set by the PasswordChar property. The actual input can be reached through the Password and SecurePassword properties. These properties are not dependency properties (cannot be bound) due to security reasons. To get these properties in MVVM you can pass the RadPasswordBox element to a command from your view model. Let's demonstrates this with some code.
+The Text property of the RadPasswordBox contains only the sequence of masking characters set by the PasswordChar property. The actual input can be reached through the Password and SecurePassword properties. These properties are not dependency properties (cannot be bound) due to security reasons. To get these properties in MVVM, you can pass the RadPasswordBox element to a command from your view model. Let's demonstrates this with some code.
 
 First we will declare the RadPasswordBox in XAML and bind a RadButton control Command property to a command from your view model.
 
-#### __[XAML] Example 3: Setting a watermark__
+#### __[XAML] Example 3: Declare the RadPasswordBox in XAML__
 
 {{region passwordbox-getting-started_2}}
 	<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
@@ -101,6 +101,8 @@ Now we just need to create our view model.
 		}
 	}
 {{endregion}}
+
+Voilà! Now when you click on the Login button, the __LoadCommand.Execute()__ method will be called. Inside the method you can get the __RadPasswordBox__ from the parameter and see the entered password from the __Password__ property.
 
 ## See Also
 

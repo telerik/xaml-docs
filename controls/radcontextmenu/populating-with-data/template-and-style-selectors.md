@@ -16,7 +16,7 @@ The __RadContextMenu__ and the __RadMenuItem__ controls come with a set of selec
 
 Here is a list of the selectors provided by the __RadContextMenu__ control:
 
-* __ItemTemplateSelector__: Used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.
+* __ItemTemplateSelector:__ Used to select the __DataTemplate__ that is set as the __HeaderTemplate__ property of the child __RadMenuItems__.
 
 #### __[C#] Example 1: Define the ItemTemplateSelector__
 
@@ -41,6 +41,7 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
 	{{region radcontextmenu-populating-with-data-template-and-style-selectors_0}}
 		<Grid.Resources>
+	    <!-- ... -->
             <local:MyTemplateSelector x:Key="MyTemplateSelector">
                 <local:MyTemplateSelector.CutTemplate>
                     <DataTemplate>
@@ -71,7 +72,7 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 #### __Picture 1: Result of Example 1 and Example 2__ 
 ![](images/RadContextMenu_TemplateAndStyleSelectors_ItemTemplateSelector.PNG)
 
-* __ItemContainerStyleSelector -__ used to select the __Style__ that is applied to the child __RadMenuItems__.
+* __ItemContainerStyleSelector:__ Used to select the __Style__ that is applied to the child __RadMenuItems__.
 
 #### __[C#] Example 3: Define the ItemContainerStyleSelector__
 
@@ -97,21 +98,14 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
 	{{region radcontextmenu-populating-with-data-template-and-style-selectors_2}}
 		<Grid.Resources>
-            <local:MyTemplateSelector x:Key="MyTemplateSelector">
-                <local:MyTemplateSelector.CutTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Rectangle Fill="Green" Width="5" Height="5" />
-                            <TextBlock Text="{Binding}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </local:MyTemplateSelector.CutTemplate>
-                <local:MyTemplateSelector.DefaultTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding}" />
-                    </DataTemplate>
-                </local:MyTemplateSelector.DefaultTemplate>
-            </local:MyTemplateSelector>
+            <!-- ... -->
+	    <local:MyStyleSelector x:Key="MyStyleSelector" DefaultStyle="{StaticResource MenuItemContainer}">
+                <local:MyStyleSelector.CutStyle>
+                    <Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource MenuItemContainer}">
+                        <Setter Property="Background" Value="Red"/>
+                    </Style>
+                </local:MyStyleSelector.CutStyle>
+            </local:MyStyleSelector>
         </Grid.Resources>
 
         <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
@@ -128,11 +122,11 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
 And a list of the selectors provided by the __RadMenuItem__ control:
 
-* __HeaderTemplateSelector__ - used to select the __DataTemplate__ that is set to its __HeaderTemplate__ property.
+* __HeaderTemplateSelector:__ Used to select the __DataTemplate__ that is set to its __HeaderTemplate__ property.
 
-* __ItemContainerStyleSelector -__ used to select the __Style__ that is applied to the child __RadMenuItems__.
+* __ItemContainerStyleSelector:__ Used to select the __Style__ that is applied to the child __RadMenuItems__.
 
-* __ItemTemplateSelector__- used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.
+* __ItemTemplateSelector:__ Used to select the __DataTemplate__ that is set as the __HeaderTemplate__ property of the child __RadMenuItems__.
 
 >tipThese properties of the __RadMenuItem__ should be set through the __ItemContainerStyle__ of the parent item. If you set the __ItemContainerStyle__ property of the __RadContextMenu__ only (valid for [dynamic data scenarios]({%slug radcontextmenu-populating-with-data-binding-to-dynamic-data%})), it will get inherited in the hierarchy, unless it is not explicitly set somewhere.
 

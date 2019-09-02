@@ -14,7 +14,7 @@ published: True
 
 Furthermore, the API is extensible, so that you can implement a custom external clipboard, provided that you have the ability to obtain rich text from the clipboard.{% endif %}
 
-{% if site.site_name == 'WPF' %}__RadRichTextBox__ takes advantage of the clipboard support in WPF. As the clipboard keeps content in several formats, it is possible to choose which input to use and further customize the way the text will look when pasted. {% endif %}
+{% if site.site_name == 'WPF' %}__RadRichTextBox__ takes advantage of the clipboard support in WPF. As the clipboard keeps content in several formats, it is possible to choose which input to use and further customize the way the text will look when pasted. Selecting different options concerning how the styles are merged is also available. For more information about this functionality, check the **[Paste Options]({%slug radrichtextbox-features-paste-options%})** help topic.{% endif %}
 
 ## Methods and Commands
 
@@ -147,7 +147,11 @@ This class provides you with methods allowing you to easily work with the framew
 
 * **DocumentFragment GetDocument()**: Obtains a document from the clipboard using the registered **ClipboardHandlers**.
 
+* **DocumentFragment GetDocument(out PasteSource? pasteSource)**: In addition to the previous oveload, this one allows you to obtain information about the source that is resolved during the processing of the clipboard data. For more information about the different sources you can refer to the [Paste Options]({%slug radrichtextbox-features-paste-options%}) help topic.
+
 * **DocumentFragment GetDocumentFromClipboard(string dataFormat, Func&lt;string, string&gt; clipboardStringFilter = null)**: Gets document from clipboard using the specified data format. The *clipboardStringFilter* parameter is optional and it can be used when the data must be filtered before creating a document from it.
+
+* **DocumentFragment GetDocumentFromClipboard(string dataFormat, out PasteSource? pasteSource, Func&lt;string, string&gt; clipboardStringFilter = null)**: In addition to the previous oveload, this one allows you to obtain information about the source that is resolved during the processing of the clipboard data. For more information about the different sources you can refer to the [Paste Options]({%slug radrichtextbox-features-paste-options%}) help topic.
 
 * **string StripHtmlClipboardFormatHeaders(string clipboardText)**: Skips all lines in the beginning containing ':' (HTML clipboard format header). It can be used as a value for the *clipboardStringFilter* parameter of **GetDocumentFromClipboard()**.
 

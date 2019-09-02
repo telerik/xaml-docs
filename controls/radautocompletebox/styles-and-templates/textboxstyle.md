@@ -91,7 +91,7 @@ You have to create a custom __Style__ with __TargetType__ __RadAutoCompleteBox__
     </Grid.Resources>
 {{endregion}}
 
->If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default TextBoxStyle of RadAutoCompleteBox named RadAutoCompleteTextBoxStyle.
+>If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default TextBoxStyle of RadAutoCompleteBox named **RadAutoCompleteTextBoxStyle**.
 
 The last step would be to simply set the custom style as __TextBoxStyle__ of __RadAutoCompleteBox__:
 

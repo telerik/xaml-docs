@@ -12,6 +12,8 @@ position: 4
 
 The __RadContextMenu__ and the __RadMenuItem__ controls come with a set of selector properties. Typically, you use a template or style selector when you have more than one data template or style defined for the same type of objects.
 
+>The following example is based on the [Populating with Data - Binding to Dynamic Data]({%slug radcontextmenu-populating-with-data-binding-to-dynamic-data%}) article.
+
 Here is a list of the selectors provided by the __RadContextMenu__ control:
 
 * __ItemTemplateSelector__: Used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.

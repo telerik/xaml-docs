@@ -10,14 +10,14 @@ position: 3
 
 # Change PageSize dynamically
 
-Generally, the page size of a __RadDataPager__ can be set by the corresponding __PageSize__ property. However, in some cases you may require it to be changed dynamically in run time. 
+Generally, the page size of a __RadDataPager__ can be set via the corresponding __PageSize__ property. However, in some cases you may require it to be changed dynamically during runtime. 
 
-So, if for example you want to use a __RadComboBox__ for changing the size and you want it defined in the template of the __RadDataPager__, you need to do a couple of things;
+So, if you want to use a __RadComboBox__, for example, for changing the size and you want it defined in the template of the __RadDataPager__, you need to follow a few steps:
 
 * Define an __IValueConverter__ responsible for adding items in the __RadComboBox__ depending on the number of data items in __RadGridView__:
 
-#### __C#__
-{{region raddatapager-change-page-size-dynamically_0}}
+#### __[C#] Example 1: The IValueConverter responsible for generating the list of page sizes__
+{{region cs-raddatapager-change-page-size-dynamically_0}}
 
 	public class CountConverter : IValueConverter
     {
@@ -41,10 +41,8 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
     }
 {{endregion}}
 
-
-
-#### __VB.NET__
-{{region raddatapager-change-page-size-dynamically_1}}
+#### __[VB.NET] Example 1: The IValueConverter responsible for generating the list of page sizes__
+{{region vb-raddatapager-change-page-size-dynamically_1}}
 
 	Public Class CountConverter
 	 Implements IValueConverter
@@ -66,11 +64,9 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
 	End Class
 {{endregion}}
 
+* Predefine the template of the __DataPagerPresenter__ control and bind the __ItemsSource__ of the __RadComboBox__ to the __ItemCount__ property of the __RadDataPager__:
 
-
-* Predefine the template of the __DataPagerPresenterTemplate__ and bind the __ItemsSource__ of the __RadComboBox__ to the __ItemCount__ property of the __RadDataPager__:
-
-#### __XAML__
+#### __[XAML] Example 2: Modify the control template of the DataPagerPresenter__
 {{region raddatapager-change-page-size-dynamically_2}}
 
 	<Application.Resources>
@@ -212,11 +208,9 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
     </Application.Resources>
 {{endregion}}
 
+* Define the __RadDataPager__ in XAML if you have not done so already:
 
-
-* Set the updates style to the __RadDataPager__:
-
-#### __XAML__
+#### __[XAML] Example 3: Define the RadDataPager__
 {{region raddatapager-change-page-size-dynamically_3}}
 
 	<Grid x:Name="LayoutRoot" >
@@ -230,13 +224,15 @@ So, if for example you want to use a __RadComboBox__ for changing the size and y
     </Grid>
 {{endregion}}
 
-
-
 Once you created all the necessary elements, your application should be displayed as follows:
 
+#### Figure 1: RadDataPager with dynamic PageSize
 
-![](images/RadDataPager_ChangePageSizeDynamically.png)
-
-
+![RadDataPager with dynamic PageSize](images/RadDataPager_ChangePageSizeDynamically.png)
 
 >tip You may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).
+
+## See Also:
+
+* [Page Size]({%slug raddatapager-features-page-size%})
+* [Current Page]({%slug raddatapager-features-current-page%})

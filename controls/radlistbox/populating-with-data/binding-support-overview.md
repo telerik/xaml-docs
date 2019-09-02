@@ -22,10 +22,81 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
 
 >tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
 
+#### __[C#] Exmaple 1: Create an objects class__
+
+{{region cs-radlistbox-populating-with-data-binding-support-overview_1}}
+	public class Customer
+	{
+		public string Name { get; set; }
+		public string City { get; set; }
+	}
+{{endregion}}
+
+#### __[C#] Exmaple 2: Create the ViewModel__
+
+{{region cs-radlistbox-populating-with-data-binding-support-overview_2}}
+	public class MyViewModel : ViewModelBase
+    {
+        private ObservableCollection<Country> countries;
+        public ObservableCollection<Country> Countries
+        {
+            get
+            {
+                if (this.countries == null)
+                {
+                    this.countries = new ObservableCollection<Country>();
+                    this.countries.Add(new Country() { Name = "Australia", Capital = "Canberra" });
+                    this.countries.Add(new Country() { Name = "Bulgaria", Capital = "Sofia" });
+                    this.countries.Add(new Country() { Name = "Canada", Capital = "Ottawa" });
+                    this.countries.Add(new Country() { Name = "Denmark", Capital = "Copenhagen" });
+                    this.countries.Add(new Country() { Name = "France", Capital = "Paris" });
+                    this.countries.Add(new Country() { Name = "Germany", Capital = "Berlin" });
+                    this.countries.Add(new Country() { Name = "India", Capital = "New Delhi" });
+                    this.countries.Add(new Country() { Name = "Italy", Capital = "Rome" });
+                    this.countries.Add(new Country() { Name = "Norway", Capital = "Oslo" });
+                    this.countries.Add(new Country() { Name = "Russia", Capital = "Moscow" });
+                    this.countries.Add(new Country() { Name = "Spain", Capital = "Madrid" });
+                    this.countries.Add(new Country() { Name = "United Kingdom", Capital = "London" });
+                    this.countries.Add(new Country() { Name = "United States", Capital = "Washington, D.C." });
+                }
+                return countries;
+            }
+        }
+    }
+{{endregion}}
+
+#### __[XAML] Example 3: Create the RadListBox and set its ItemsSource__
+{{region cs-radlistbox-populating-with-data-binding-support-overview_3}}
+	<Window.DataContext>
+        <local:MyViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <telerik:RadListBox x:Name="listBox"
+                            Width="200" Height="100"
+                            ItemsSource="{Binding Countries}"/>
+    </Grid>
+{{endregion}}
+
 ## Data Templates
 
 The __ItemsSource__ property allows the __RadListBox__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadListBoxItem__ is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
 
 Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
+
+#### __[XAML] Example 4: Set DisplayMemberPath to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
+{{region cs-radlistbox-populating-with-data-binding-support-overview_3}}
+	<Window.DataContext>
+        <local:MyViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <telerik:RadListBox x:Name="listBox"
+                            Width="200" Height="100"
+                            ItemsSource="{Binding Countries}"
+                            DisplayMemberPath="Capital"/>
+    </Grid>
+{{endregion}}
+
+#### __Figure 1: Result after ItemsSource and DisplayMemberPath are set__
+![Rad List Box ItemsSource DisplayMemberPath 01](images/RadListBox_PopulatingWithData_DataBindingSupportOverview_01.png)
 
 >tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.

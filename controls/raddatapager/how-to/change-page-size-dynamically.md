@@ -45,22 +45,21 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
 {{region vb-raddatapager-change-page-size-dynamically_1}}
 
 	Public Class CountConverter
-	 Implements IValueConverter
-	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object
-	  Dim items = TryCast(TryCast(value, DataPagerPresenter).DataContext, SampleDataSource)
-	  Dim i As Integer = 1
-	  Dim result As New List(Of Integer)()
-	  For Each item As var In items.Collection
-	   If i Mod 5 = 0 Then
-	    result.Add(i)
-	   End If
-	   i += 1
-	  Next
-	  Return result
-	 End Function
-	 Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object
-	  Return value
-	 End Function
+	Implements IValueConverter
+
+		Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
+			Dim itemCount = DirectCast(value, Integer)
+			Dim result As New List(Of Integer)()
+			For i As Integer = 1 To itemCount - 1
+				If i Mod 5 = 0 Then
+					result.Add(i)
+				End If
+			Next i
+			Return result
+		End Function
+		Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As CultureInfo) As Object
+			Return value
+		End Function
 	End Class
 {{endregion}}
 
@@ -230,7 +229,9 @@ Once you created all the necessary elements, your application should be displaye
 
 ![RadDataPager with dynamic PageSize](images/RadDataPager_ChangePageSizeDynamically.png)
 
->tip You may download a full runnable sample project illustrating the approach described in this [Code Library](http://www.telerik.com/community/code-library/silverlight/datapager/dynamically-change-the-pagesize-of-raddatapager.aspx).
+>tip You can download a runnable project on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/DataPager/ChangePageSizeDynamically).
+
+>You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) which provides a more convenient approach in exploring and executing the examples in the Telerik xaml-sdk repository.
 
 ## See Also:
 

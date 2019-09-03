@@ -40,10 +40,6 @@ This tutorial will combine in itself the following:
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
 	{{endregion}}
 
-	![](images/RadTreeView_HowToWindowsExplorerTree_010_WPF.PNG)
-
-	The treeview has an initial item with Header "MyComputer". When the user expands the "MyComputer" node, then all available drives will be displayed. When the user expands any drive, then all sub folders and files will be displayed. The same should happen when the user expands any sub directory.
-
 2. Create three business objects: __File__, __Directory__ and __Drive__. Here is their structure:		
 	
 	#### __[C#] Example 2: File__
@@ -253,7 +249,7 @@ This tutorial will combine in itself the following:
 		End Class
 	{{endregion}}
 
-	The __Drive__ business object has a reference to an __ObservableCollection__ of objects. These are the childs' elements. In fact this collection will store all directories and files for the drive.
+	The __Drive__ business object has a reference to an __ObservableCollection__ of objects. These are the child elements. In fact this collection will store all directories and files for the drive.
 
 	The next step is to create the model for the application.
 
@@ -320,7 +316,7 @@ This tutorial will combine in itself the following:
 		End Class
 	{{endregion}}
 
-	For better convenience, the __ServiceFacade__ class is an implementation of the [Singleton](http://en.wikipedia.org/wiki/Singleton_pattern) pattern. When the only one instance of the class is created, the __Drives__ collection needs to be populated with all drives on your machine. This will happen in the __Initialize()__ method. Here is a sample code how this can be achieved:
+	For better convenience, the __ServiceFacade__ class is an implementation of the [Singleton](http://en.wikipedia.org/wiki/Singleton_pattern) pattern. When only one instance of the class is created, the __Drives__ collection needs to be populated with all drives on your machine. This will happen in the __Initialize()__ method. __Example 6__ demonstrates how this can be achieved.
 
 	#### __[C#] Example 6: Populate all drives in the Initialize() method__
 
@@ -349,7 +345,7 @@ This tutorial will combine in itself the following:
 		End Sub
 	{{endregion}}
 
-4. Go back to your treeview declaration and bind the control to the just created model. Here it is shown how this can be done:
+4. Go back to your treeview declaration and bind the control to the just created model. __Example 7__ shows how this can be done:
 
 	#### __[XAML] Example 7: Bind RadTreeView__
 
@@ -660,8 +656,7 @@ This tutorial will combine in itself the following:
 		End Sub
 	{{endregion}}
 
-	The final step is to add __HierarchicalDataTemplate__(DataTemplate) and __Styles__ for the __Directory__ object and the __File__ object.  	
- 
+	The final step is to add __Styles__ for the __Directory__ object and the __File__ object.  	 
 
 7. Add two additional styles - one for the __Directory__ object and one for the __File__ object. Update your __ItemStyleSelector__ declaration - set the __DirectoryStyle__ and __FileStyle__ properties:
 

@@ -214,10 +214,10 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
 
 	<Grid x:Name="LayoutRoot" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="&#42;"/>
+            <RowDefinition Height="\*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <telerik:RadGridView  x:Name="grid" ColumnWidth="&#42;" ItemsSource="{Binding Employees}" />
+        <telerik:RadGridView  x:Name="grid" ColumnWidth="\*" ItemsSource="{Binding Employees}" />
         <telerik:RadDataPager Grid.Row="1" Source="{Binding Items, ElementName=grid}" PageSize="10"  
                               IsTotalItemCountFixed="True"  />
     </Grid>

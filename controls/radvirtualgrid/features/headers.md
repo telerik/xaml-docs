@@ -16,7 +16,7 @@ __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more
 
 >important If the default __DataProvider__ is used for populating the control with data, it handles the __HeaderValueNeeded__ event. In order the default behavior to be altered, a [Custom Data Provider]({%slug virtualgrid-custom-dataprovider%}) can be utilized.
 
-* __HeaderOrientation__: Enumeration which has two values: __Horizontal__ and __Vertical__. If the HeaderOrientation is Horizontal, the event is thrown for a Row Header, whereas if it is Vertical it is thrown for a Column Header.
+* __HeaderOrientation__: Enumeration which has two values: __Horizontal__ and __Vertical__. If the HeaderOrientation is Horizontal, the event is thrown for a Row Header, whereas if it is Vertical, it is thrown for a Column Header.
 
 * __Index__: Provides information regarding the index of the Header.
 

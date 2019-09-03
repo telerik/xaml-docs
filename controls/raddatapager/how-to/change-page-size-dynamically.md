@@ -1,14 +1,14 @@
 ---
-title: Change PageSize dynamically
-page_title: Change PageSize dynamically
-description: Change PageSize dynamically
+title: Change PageSize Dynamically
+page_title: Change PageSize Dynamically
+description: This article demonstrates how to dynamically change the PageSize of the RadDataPager control.
 slug: raddatapager-change-page-size-dynamically
 tags: change,pagesize,dynamically
 published: True
 position: 3
 ---
 
-# Change PageSize dynamically
+# Change PageSize Dynamically
 
 Generally, the page size of a __RadDataPager__ can be set via the corresponding __PageSize__ property. However, in some cases you may require it to be changed dynamically during runtime. 
 
@@ -214,10 +214,10 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
 
 	<Grid x:Name="LayoutRoot" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="&#42;"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <telerik:RadGridView  x:Name="grid" ColumnWidth="*" ItemsSource="{Binding Employees}" />
+        <telerik:RadGridView  x:Name="grid" ColumnWidth="&#42;" ItemsSource="{Binding Employees}" />
         <telerik:RadDataPager Grid.Row="1" Source="{Binding Items, ElementName=grid}" PageSize="10"  
                               IsTotalItemCountFixed="True"  />
     </Grid>

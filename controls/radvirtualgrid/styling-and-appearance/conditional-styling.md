@@ -12,13 +12,13 @@ position: 1
 
 This topic will demonstrate how the cells of __RadVirtualGrid__ can be styled conditionally.
 
-This is achieved through the usage of the following two events in conjunction.
+This is achieved through the usage of the following three events in conjunction.
 
 * __OverlayBrushesNeeded__: The event arguments expose a __Brushes__ collection which can be populated with the Brushes that will be conditionally applied further. When they are preliminarily known, the respective Geometry can be easily drawn at once, instead of applying a style for each cell individually. Thus, the rendering performance of the control is kept unaffected.
 
 #### __[C#] Example 1: Adding Brushes through the OverlayBrushesNeeded event__
 
-{{region radvirtualgrid-styling_conditionalstyling_0}}
+{{region cs-radvirtualgrid-styling_conditionalstyling_0}}
 	private void VirtualGrid_OverlayBrushesNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.OverlayBrushesEventArgs e)
         {
@@ -29,7 +29,7 @@ This is achieved through the usage of the following two events in conjunction.
 
 * __CellDecorationsNeeded__: This is the event through which the actual styling of the cells can be applied. The event arguments expose the following properties:
 
-	- __Background__: Its value must be set to be one of the Brushes provided by the __Brushesh__ collection populated through the __OverlayBrushesNeeded__ event.
+	- __Background__: Its value must be set to be one of the Brushes provided by the __Brushes__ collection populated through the __OverlayBrushesNeeded__ event.
 	- __ColumnIndex__: The column the given cell corresponds to.
 	- __RowIndex__: The row the given cell corresponds to.
 	- __FontFamily__: Sets the FontFamily of the cell.
@@ -39,7 +39,7 @@ This is achieved through the usage of the following two events in conjunction.
 
 #### __[C#] Applying conditional styling through the CellDecorationsNeeded event__
 
-{{region radvirtualgrid-styling_conditionalstyling_1}}
+{{region cs-radvirtualgrid-styling_conditionalstyling_1}}
 	private void VirtualGrid_CellDecorationsNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs e)
         {
@@ -61,6 +61,8 @@ This is achieved through the usage of the following two events in conjunction.
 #### __Figure 1: RadVirtualGrid with conditional styling applied__
 
 ![RadVirtualGrid with conditional styling applied](images/RadVirtualGrid_Styling_02.png)
+
+* __HeaderCellDecorationsNeeded__: This event was exposed in the __R3 2019__ version of the control. It allows for the styling of the header cells. Its event arguments are the same as the ones for the __CellDecorationsNeeded__ event.
 
 ## See also
 

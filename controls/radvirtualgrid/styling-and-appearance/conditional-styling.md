@@ -62,7 +62,7 @@ This is achieved through the usage of the following three events in conjunction.
 
 ![RadVirtualGrid with conditional styling applied](images/RadVirtualGrid_Styling_02.png)
 
-* __HeaderCellDecorationsNeeded__: This event was exposed in the __R3 2019__ version of the control. It allows for styling of the header cells. Its event arguments are the same as the ones for the __CellDecorationsNeeded__ event.
+* __HeaderCellDecorationsNeeded__: This event was exposed in the __R3 2019__ version of the control. It allows for the styling of the header cells. Its event arguments are the same as the ones for the __CellDecorationsNeeded__ event.
 
 ## See also
 

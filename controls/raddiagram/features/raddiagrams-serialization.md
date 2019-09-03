@@ -20,8 +20,8 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __[XAML] Example 1: RadDiagram defined in Xaml__
-{{region xaml-raddiagrams_features_serialization_1}}
+#### __XAML__
+{{region raddiagrams_features_serialization_1}}
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -56,8 +56,8 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 1: RadDiagram Xaml__
-{{region xaml-raddiagrams_features_serialization_0}}
+#### __XAML__
+{{region raddiagrams_features_serialization_0}}
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -89,8 +89,8 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 {% endif %}
 
-#### __[C#] Example 2: Save-Load logic__
-{{region cs-raddiagrams_features_serialization_2}}
+#### __C#__
+{{region raddiagrams_features_serialization_0}}
 	private string diagramXMLString;       
 	
 	public MainWindow()
@@ -118,8 +118,8 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: Save-Load logic__
-{{region vb-raddiagrams_features_serialization_3}}
+#### __VB.NET__
+{{region raddiagrams_features_serialization_0}}
 	Private diagramXMLString As String
 	
 	Public MainWindow()
@@ -142,14 +142,13 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 	End Sub
 {{endregion}}
 
-#### __Figure 1: RadDiagram Serialization__
 ![raddiagrams features serialization](images/raddiagrams_features_serialization.png)
 
 >Please note that the Content of the Shapes and the Connections is serialized as String. This means that if you have control like ListBox or TreeView as a Content , it will be not serialized successfully.					
 
 ## Extending RadDiagram Serialization
 
-By default, not every property of the RadDiagramItem is serialized. Below is the list of the properties that are automatically serialized:		
+By default, not every property of the RadDiagramItem is serialized. Below is the list of the properties that are automatically serialized:				
 
 >important These properties are serialized in scenarios where data bindings are __not__ involved. If you are using Binding in styles targeting any of the diagram items, you need to manually serialise and deserialize all the properties that are bound. This is demonstrated in the [Manual Serialization/Deserialization]({%slug raddiagrams-features-serialization%}#manual-serializationdeserialization) section of this article.
 
@@ -254,14 +253,14 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* ZIndex
 	* UseFreeConnectors 
 
-For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialize the Opacity of the shapes:			
+For every other property that you need to be part of the Serialization/Deserialization process, you have to use the __RadDiagram.ShapeDeserialized__ and __RadDiagram.ShapeSerialized__ or __RadDiagram.ConnectionDeserialized__ and __RadDiagram.ConnectionSerialized__ events. Below is shown how you can serialized the Opacity of the Shapes:			
 
 ## Manual Serialization/Deserialization
 
 >If you are using MVVM approach and need to serialize databound properties you can take a look at our [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%}) article.
 
-#### __[C#] Example 3: Handling the ShapeSerialized and ShapeDeserialized events__
-{{region raddiagrams-features-serialization-4}}
+#### __C#__
+{{region raddiagrams-features-serialization-2}}
 	void diagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)
 	{
 		 // load the saved property
@@ -275,8 +274,8 @@ For every other property that you need to be part of the Serialization/Deseriali
 	}		  
 {{endregion}}
 
-#### __[VB.NET] Example 3: Handling the ShapeSerialized and ShapeDeserialized events__		
-{{region raddiagrams-features-serialization-5}}  
+#### __VB.NET__		
+{{region raddiagrams-features-serialization-3}}  
 	Private Sub diagram_ShapeDeserialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
 		 ' load the saved property'
 		 TryCast(e.Shape, RadDiagramShape).Opacity = Convert.ToDouble(e.SerializationInfo("Opacity"), CultureInfo.InvariantCulture)
@@ -299,10 +298,9 @@ If you have a binding between a RadDiagramItem property that is [automatically s
 In order to preserve the binding you can remove the value of the property from the serialization info and use another key to serialize/deserialize it.
 
 For example, if you have a binding to the Position property you can use the following approach for saving the binding:
-
 * Override the __SerializeNode()__ method of the diagram’s __GraphSource__ and set the value of the bound property to *null* in the __SerializationInfo__. Then add the value with a new key in the serialization info. 
-	#### __[C#] Example 4: SerializeNode override__
-	{{region cs-raddiagrams-features-serialization-6}}
+	#### __C#__
+	{{region raddiagrams-features-serialization-4}}
 		public override void SerializeNode(NodeViewModelBase node, SerializationInfo info)
 		{
 			   var position = info["Position"];
@@ -312,8 +310,8 @@ For example, if you have a binding to the Position property you can use the foll
 		}	
 	{{endregion}}
 	
-	#### __[VB.NET] Example 4: SerializeNode override__
-	{{region vb-raddiagrams-features-serialization-7}}
+	#### __VB.NET__
+	{{region raddiagrams-features-serialization-5}}
 		public Overrides Sub SerializeNode(node As NodeViewModelBase, info As SerializationInfo)
 			Dim position = info("Position")
 			info("Position") = Nothing
@@ -323,8 +321,8 @@ For example, if you have a binding to the Position property you can use the foll
 	{{endregion}}
 	
 * Override the __DeserializeNode()__ method of the diagram’s __GraphSource__ and get the value of the bound property. Then assign it to the property of the view model.
-	#### __[C#] Example 5: DeserializeNode override__
-	{{region cs-raddiagrams-features-serialization-8}}
+	#### __C#__
+	{{region raddiagrams-features-serialization-6}}
 		public override NodeViewModelBase DeserializeNode(IShape shape, Telerik.Windows.Diagrams.Core.SerializationInfo info)
 		{
 			var node = base.DeserializeNode(shape, info);
@@ -337,8 +335,8 @@ For example, if you have a binding to the Position property you can use the foll
 		}
 	{{endregion}}
 	
-	#### __[VB.NET] Example 5: DeserializeNode override__
-	{{region vb-raddiagrams-features-serialization-9}}
+	#### __VB.NET__
+	{{region raddiagrams-features-serialization-7}}
 		Public Overrides Function DeserializeNode(shape As IShape, info As Telerik.Windows.Diagrams.Core.SerializationInfo) As NodeViewModelBase
 			Dim node = MyBase.DeserializeNode(shape, info)
 			If info("MyPosition") IsNot Nothing Then
@@ -350,17 +348,6 @@ For example, if you have a binding to the Position property you can use the foll
 	{{endregion}}
 		
 > The code snippets above demonstrate how to preserve the bindings in an __MVVM__ scenario with a custom __GraphSource__. If you have statically declared shapes you can use the __ShapeSerialized__ and __ShapeDeserialized__ events of the diagram.
-
->important If you are using the [RadDiagramToolbox]({%slug raddiagram-extensions-toolbox%}) in order to drag and drop shapes and you have bindings declared in a style, make sure that the style is added in the Application's Resources as in __Example 6__. 
-
-#### __[XAML] Example 4: Style containing Position binding in Application's Resources__
-{{region xaml-raddiagrams-features-serialization-10}}
-	<Application.Resources>
-        <Style TargetType="telerik:RadDiagramShape">
-            <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-        </Style>
-    </Application.Resources>
-{{endregion}}
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

@@ -45,14 +45,14 @@ The __WatermarkTemplate__ property of the control sets the [WatermarkTemplate]({
 #### __Figure 2: RadFilePathPicker with WatermarkTemplate__
 ![RadFilePathPicker with WatermarkTemplate](images/FilePathPicker_WatermarkTemplate.png)
 
-## WatermarkVisibility
+## EditorVisibility
 
-The __WatermarkVisibility__ property controls the __Visibility__ of the RadWatermarkTextbox. 
+The __EditorVisibility__ property controls the __Visibility__ of the RadWatermarkTextbox. 
 
 #### __[XAML] Example 3: Setting the WatermarkTemplate property__
 {{region xaml-radfilepathpicker-watermarktextbox-properties_2}}
 
-    <telerik:RadFilePathPicker WatermarkVisibility="Collapsed" />
+    <telerik:RadFilePathPicker EditorVisibility="Collapsed" />
 {{endregion}}
 
 ## See Also

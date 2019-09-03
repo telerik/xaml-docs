@@ -35,9 +35,9 @@ The __ExportToXlsx__ method uses additional libraries so you need to add referen
 - **ShowColumnFooters**: Specifies whether column footers should be included on export.
 - **ShowGroupFooters**: Specifies whether group footers should be included on export.
 - **ShowColumnHeaders**: Specifies whether column headers should be included on export.
-- **ExportDefaultStyles**: Specifies whether the GridViewDataControl will be exported with its  
-- **ExcludedColumns**: Choose which columns to export.
-- **ShowGroupRows**: Specifies whether the groups' items should be included on export (this property was introduced in **R3 2019**).
+- **ExportDefaultStyles**: Specifies whether the GridViewDataControl will be exported with its default styles.  
+- **ExcludedColumns**: Choose which columns exclude on export.
+- **ShowGroupRows**: Specifies whether the group rows should be included on export (this property was introduced in **R3 2019**).
 
 The following example shows how to use the method on a button click:
 

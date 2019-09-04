@@ -13,16 +13,21 @@ position: 0
 {% if site.site_name == 'Silverlight' %}![progressbar sl icon](images/progressbar_sl_icon.png){% endif %}
 {% if site.site_name == 'WPF' %}![progressbar wpf icon](images/progressbar_wpf_icon.png){% endif %}
 
-Thank you for choosing Telerik __RadProgressBar__!				
+Telerik __RadProgressBar__ is an advanced component allowing you to completely convey the progress of various tasks. The control ships with several pre-defined themes and animations.
 
-![](images/RadProgressBar.png)
+![](images/radprogressbar-overview-0.png)
 
-Telerik __RadProgressBar__ is an advanced component allowing you to completely convey the progress of various tasks. The control’s appearance can be fully customized via __ControlTemplates__. The control ships with several pre-defined themes and animation.				
+## Key Features
 
-__Key Features:__
+* __Orientation__: Set the orientation of the control to either vertical or horizontal. Read more about this in the [Orientation]({%slug orientation%}) article.
 
-* __Orientation__ - Set the orientation of the control to either vertical or horizontal by changing the value of a single property called Orientation						
+* __Easy range and value configuration__: Configure the behavior of the RadProgressBar control by defining the minimum and maximum value of the range element. You can also define the “step size” incrementing the value.
 
-* __Configuration__ - Configure the behavior of the RadProgressBar control by defining the minimum and maximum value of the range element. You can also define the “step size” incrementing the value						
+* __Indeterminate state support__: A mode that displays an animation indicating an unspecified amount of waiting time. Read more about this in the [IsIndeterminate]({%slug isindeterminate%}) article.
 
-* __Styling and Appearance__ - Use __ControlTemplates__ to customize the look and feel of the control in your very custom manner. Along with the ControlTemplates you can use animation effects to enrich the appearance of __RadProgressBar__.						
+>tip Get started with the control with its [Getting Started]({%slug getting_started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ProgressBar/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+
+## See Also 
+ * [Visual Structure]({%slug radprogressbar-structure%})

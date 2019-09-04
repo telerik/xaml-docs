@@ -1,11 +1,11 @@
 ---
-title: How to replace ContextMenu with RadContextMenu in RadDateTimePicker
-description: Replacing ContextMenu with RadContextMenu in RadDateTimePicker
+title: How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker
+description: Using RadContextMenu instead of ContextMenu RadDateTimePicker
 type: how-to
-page_title: Replacing ContextMenu with RadContextMenu in RadDateTimePicker
+page_title: Initialize RadContextMenu rather than ContextMenu in RadDateTimePicker
 slug: kb-datetimepicker-replace-contextmenu-with-radcontextmenu
 position: 
-tags: 
+tags: contextmenu, radcontextmenu, raddatetimepicker, datetimepicker
 ticketid: 1427861
 res_type: kb
 ---
@@ -13,10 +13,6 @@ res_type: kb
 ## Environment
 <table>
     <tbody>
-	    <tr>
-	    	<td>Product Version</td>
-	    	<td>2018.3.911</td>
-	    </tr>
 	    <tr>
 	    	<td>Product</td>
 	    	<td>RadDateTimePicker for WPF</td>
@@ -26,20 +22,45 @@ res_type: kb
 
 
 ## Description
-How to replace ContextMenu with RadContextMenu in RadDateTimePicker.
+How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker.
 
 ## Solution
-To replace the ContextMenu with RadContextMenu to disable the ContextMenu that comes from the RadWatermarkTextBox in the ControlTemplate of the RadDateTimePicker and add a RadContextMenu instead with the EventName="PreviewMouseRightButtonDown" property set.
+1. Add the RadContextMenu as a StaticResource in MainWindow.xaml.
+2. Handle the Loaded event of the RadDateTimePicker.
+3. In the Loaded event use the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to find the RadWatermarkTextBox inside the RadDateTimePicker and set the ContextMenu to null.
+4. Set the RadContextMenu using the RadContextMenu.SetContextMenu() method.
 
 #### __[XAML]__
 {{region kb-datetimepicker-replace-contextmenu-with-radcontextmenu-0}}
-	<telerik:RadWatermarkTextBox ContextMenu="{x:Null}">
-        <telerik:RadContextMenu.ContextMenu>
-            <telerik:RadContextMenu EventName="PreviewMouseRightButtonDown">
+	<Grid x:Name="grid">
+        <Grid.Resources>
+            <telerik:RadContextMenu x:Key="ContextMenu">
                 <telerik:RadMenuItem Command="ApplicationCommands.Cut" />
                 <telerik:RadMenuItem Command="ApplicationCommands.Copy"  />
                 <telerik:RadMenuItem Command="ApplicationCommands.Paste" />
             </telerik:RadContextMenu>
-        </telerik:RadContextMenu.ContextMenu>
-    </telerik:RadWatermarkTextBox>
+        </Grid.Resources>
+        <telerik:RadDateTimePicker  Width="200" Height="25" Foreground="Green" Loaded="RadDateTimePicker_Loaded" /> 
+    </Grid>
 {{endregion}}
+
+#### __[C#]__
+{{region kb-datetimepicker-replace-contextmenu-with-radcontextmenu-1}}
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void RadDateTimePicker_Loaded(object sender, RoutedEventArgs e)
+        {
+            var waterMarkTextBox = (sender as RadDateTimePicker).ChildrenOfType<RadWatermarkTextBox>().FirstOrDefault();
+
+            waterMarkTextBox.ContextMenu = null;
+            var contextMenu = this.grid.FindResource("ContextMenu") as RadContextMenu;
+            RadContextMenu.SetContextMenu(waterMarkTextBox, contextMenu);
+        }
+    }
+{{endregion}}
+>As an alternative approach, you can also [Edit the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the RadDateTimePicker.

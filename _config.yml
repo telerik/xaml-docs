@@ -835,6 +835,8 @@ navigation:
     controls/radfiledialogs/dialog-controls:
         title: Dialog Controls
         position: 4
+    controls/radfilepathpicker:
+        title: RadFilePathPicker    
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
@@ -3418,6 +3420,7 @@ intro_columns:
     items:
       "CloudUpload": "radcloudupload-overview"
       "FileDialogs": "radfiledialogs-overview"
+      "FilePathPicker": "radfilepathpicker-overview"
       "PdfProcessing": "radpdfprocessing-overview"
       "PdfViewer": "radpdfviewer-overview"
       "SpreadProcessing": "radspreadprocessing-overview"

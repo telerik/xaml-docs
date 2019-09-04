@@ -5,7 +5,7 @@ description: RadWebCam allows you to snapshot the currently displayed video feed
 slug: radwebcam-features-snapshots
 tags: takesnapshot,snapshottaken
 published: True
-position: 1
+position: 2
 ---
 
 # Snapshots

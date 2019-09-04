@@ -27,6 +27,7 @@ __Example 1__ demonstrates how you can define a RadSyntaxEditor in XAML.
 
 #### __[XAML] Example 1: Defining RadSyntaxEditor__
 {{region xaml-radsyntaxeditor-getting-started-0}}
+
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" />
 {{endregion}}
 
@@ -38,7 +39,8 @@ __Example 1__ demonstrates how you can define a RadSyntaxEditor in XAML.
 To load a file in the RadSyntaxEditor you need to use its **Document** property.
 
 #### __[C#] Example 2: Opening a File__
-{{region cs-RadSyntaxEditor-getting-started-1}}
+{{region cs-radsyntaxeditor-getting-started-1}}
+
     public MainWindow()
     {
         InitializeComponent();
@@ -50,8 +52,22 @@ To load a file in the RadSyntaxEditor you need to use its **Document** property.
     }
 {{endregion}}
 
-#### __Figure 2: RadSyntaxEditor with a loaded CS file__
+#### __Figure 2: RadSyntaxEditor with a loaded C# file__
 ![RadSyntaxEditor with a loaded CS file](images/syntaxeditor_getting-started-2.png)
+
+## Enable Syntax Highlighting
+
+Once you have loaded the code, you need to register an appropriate tagger to enable syntax highlighting for the particular language.
+
+#### __[C#] Example 3: Enable C# code highlighting__
+{{region cs-radsyntaxeditor-getting-started-2}}
+
+    var cSharptagger = new CSharpTagger(this.syntaxEditor);
+    this.syntaxEditor.TaggersRegistry.RegisterTagger(cSharptagger);
+{{endregion}}
+
+#### __Figure 3: RadSyntaxEditor with C# code highlighting__
+![RadSyntaxEditor with C# code highlighting](images/syntaxeditor_getting-started-3.png)
 
 ## See Also 
 

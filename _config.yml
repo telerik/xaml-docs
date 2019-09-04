@@ -1004,8 +1004,11 @@ navigation:
         title: Cards
     controls/radwebcam:
         title: RadWebCam
-    controls/radsyntaxedtior:
+    controls/radsyntaxeditor:
         title: RadSyntaxEditor
+    controls/radsyntaxeditor/features:
+        title: Features
+        position: 5
 ## X1 Controls End
 
 ## Common Start   

@@ -74,60 +74,7 @@ Once the ADO.NET data service is added all needed assemblies will be included in
 
 __NorthwindEntities__ represents the runtime context of a given data service. While data services themselves are stateless, the context is not, so state on the client is maintained between interactions in order to support features such as identity resolution and optimistic concurrency.  
 
-## Making Asynchronous Call to the Service and Consuming the Result{% if site.site_name == 'Silverlight' %}
-
-In Silverlight all service calls are performed asynchronously. In order to make an asynchronous call to your service you need to do the following steps:
-
-* Create a new __DataServiceQuery.__
-
-* Execute the __DataServiceQuery__ asynchronously.
-
-Here is a sample code showing how this can be achieved:
-
-#### __C#__
-
-{{region consuming-data-ado-net-data-service_2}}
-	public static void BeginLoadingProducts( Categories category )
-	{
-	    DataServiceQuery<Products> categoryProducts = northwindEntity
-	        .CreateQuery<Products>( string.Format( "Categories({0})/Products", category.CategoryID ) )
-	        .Expand( "Suppliers" )
-	        .Expand( "Categories" );
-	    categoryProducts.BeginExecute(
-	        ( IAsyncResult result ) => EntitiesLoaded<Products>( result, category.Products ),
-	        categoryProducts );
-	}
-	private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
-	{
-	    DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
-	    foreach ( T entity in query.EndExecute( result ) )
-	    {
-	        entities.Add( entity );
-	    }
-	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-ado-net-data-service_3}}
-	Public Shared Sub BeginLoadingProducts(ByVal category As Categories)
-	    Dim categoryProducts As DataServiceQuery(Of Products) = northwindEntity.CreateQuery(Of Products)(String.Format("Categories({0})/Products", category.CategoryID)).Expand("Suppliers").Expand("Categories")
-	
-	    categoryProducts.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, category.Products), categoryProducts)
-	End Sub
-	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
-	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
-	    For Each entity As T In query.EndExecute(result)
-	        entities.Add(entity)
-	    Next
-	End Sub
-	{{endregion}}
-
-
- 
-Practically all the work about the consuming the result is done in the __EntitesLoaded<T>__ method.{% endif %}{% if site.site_name == 'WPF' %}
+## Making Asynchronous Call to the Service and Consuming the Result
 
 Making a call to an ADO.NET Data Service is a simple process. Here is a sample code, demonstrating how to load all categories from the Categories table in the Northwind database: 
 
@@ -167,5 +114,3 @@ Making a call to an ADO.NET Data Service is a simple process. Here is a sample c
 		End Sub
 	End Class
 {{endregion}}
-
-{% endif %}

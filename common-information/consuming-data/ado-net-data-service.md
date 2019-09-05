@@ -1,7 +1,7 @@
 ---
 title: Consuming WCF Data Service
 page_title: Consuming WCF Data Service
-description: Consuming WCF Data Service
+description: This article will demonstrate how to consume data from a WCF Data Service
 slug: consuming-data-ado-net-data-service
 tags: consuming,wcf,data,service
 published: True
@@ -28,26 +28,26 @@ The purpose of this tutorial is to show you how to make a call to an ADO.NET Dat
 
 ## Adding Reference
 
-The first step is to add a new service reference to your application. In order to do that you will need to add [OData Connected Service](https://marketplace.visualstudio.com/items?itemName=laylaliu.ODataConnectedService) Visual Studio extension. After adding this extension you can follow the steps below.
+The first step is to add a new connected service to your application. In order to add the needed connected service, you will need to add the [OData Connected Service](https://marketplace.visualstudio.com/items?itemName=laylaliu.ODataConnectedService) Visual Studio extension. After adding this extension you can follow the steps below.
 
 >tipThe __OData Connected Service__ tool works only with __Visual Studio 2017__.
 
 #### __Figure 1: Select the "__References__" folder, right click with your mouse button and choose "__Add Connected Service__"__ 
 ![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
 
-#### __Figure 2: New tab will be open with the available conntected services. Click on the OData Connected Service. __
+#### __Figure 2: A new tab will be opened with the available conntected services. Click on the OData Connected Service. __
 ![Common Consuming Data Wcf Service 020](images/Common_ConsumingDataWcfService_020.png)
 
-#### __Figure 3: A popup window appears. In the __Address__ TextBox, type the Northwind URL address and click on the Finish button below. __
+#### __Figure 3: A popup window will appear. In the __Address__ TextBox, type the Northwind URL address and click on the Finish button below. __
 ![Common Consuming Data Wcf Service 030](images/Common_ConsumingDataWcfService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. 
 
 Once the ADO.NET data service is added all needed assemblies will be included in your project automatically.
 
-## Creating New Instance of the Exposed Entity
+## Creating New Instance of the exposed Entities
 
-#### __[C#] Example 1: Create new instance of the service__
+#### __[C#] Example 1: Create new instance of the NorthwindEntities__
 
 {{region consuming-data-ado-net-data-service_0}}
 	public partial class MainWindow : Window
@@ -60,7 +60,7 @@ Once the ADO.NET data service is added all needed assemblies will be included in
     }
 {{endregion}}
 	
-#### __[VB.NET] Example 1: Create new instance of the service__
+#### __[VB.NET] Example 1: Create new instance of the NorthwindEntities__
 {{region consuming-data-ado-net-data-service_1}}
 	Public Partial Class MainWindow
 		Inherits Window

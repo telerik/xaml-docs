@@ -35,9 +35,9 @@ RadWebCam allows you to snapshot the currently displayed video feed. This can be
 	}
 {{endregion}}
 
-To discard the snapshot preview, call the __DiscardSnapshot__ method of RadWebCam. The method works only when a snapshot is taken and currently being previewed.
+To discard the snapshot preview, call the __DiscardSnapshot__ method of RadWebCam. The method works only when a snapshot is taken and is currently being previewed.
 
-Additionally, there is a __SaveSnapshot__ method which fires the SnapshotTaken event. The method works only when a snapshot is taken and currently being previewed.
+Additionally, there is a __SaveSnapshot__ method which fires the SnapshotTaken event. The method works only when a snapshot is taken and is currently being previewed.
 
 ## Preview Snapshots
 

@@ -19,7 +19,7 @@ __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and it
 	                AutoGenerateColumns="False"
 					ItemsSource="{Binding Items}">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
+	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsSelected}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -46,7 +46,7 @@ Here are the possible cases:
 	                AutoGenerateColumns="False"
 					ItemsSource="{Binding Items}">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" AutoSelectOnEdit="True" EditTriggers="CellClick"/>
+	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsSelected}" AutoSelectOnEdit="True" EditTriggers="CellClick"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}

@@ -96,7 +96,7 @@ The following topic explains the specifics of the theme's palette and features.
 * [VisualStudio2019Palette Properties](#visualstudio2019palette-properties)
 * [Changing Fonts](#font-family-and-font-size)
 * [Glyphs](#glyphs)
-* [Material Assist](#material-assist)
+* [Theme Helper](#theme-helper)
 
 ## Default Theme Colors
 
@@ -205,30 +205,24 @@ The **VisualStudio2019 Theme** also uses the **Telerik Web UI** [font glyphs](({
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-## Material Assist
+## Theme Helper
 
-The **MaterialAssist** static class that comes from the Material theme is reused in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of some of the dependency properties which can be set directly in XAML:
+The [ThemeHelper]({%slug styling-apperance-theme-helper%}) class that comes with the **R3 2019** release is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
-* **MouseOverBrush:** Sets the value of the background Brush applied when the mouse is over the control. 
-* **PressedBrush:** Sets the value of the background Brush applied when the control is pressed.
-* **CheckedBrush:** Sets the value of the background Brush applied when the element is in the Checked state. It will have an effect when used on elements that expose a "checked" state (ToggleButton, RadListBoxItem, etc.)
-* **FocusBrush:** Sets the value of the background Brush applied when the element is focused.
-* **CornerRadius:** Used to set the corner radius of commonly-used basic controls that could need corner radius customizations but don't expose such a property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.).
+**Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
 
-**Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
-
-#### __[XAML] Example 3: Declare the namespace for the Material components__
+#### __[XAML] Example 3: Declare the namespace for the theming helper components__
 {{region xaml-styling-appearance-visualstudio2019-theme-3}}
-	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
+	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Example 4: Set RadToggleButton's visual appearance through the MaterialAssist class__
+#### __[XAML] Example 4: Set RadToggleButton's visual appearance through the ThemeHelper class__
 {{region xaml-styling-appearance-visualstudio2019-theme-4}}
-	  <telerik:RadToggleButton Content="RadButton" 
-                               Margin="10"
-                               mat:MaterialAssist.MouseOverBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMouseOverBrush}"
-                               mat:MaterialAssist.PressedBrush="{telerik:VisualStudio2019Resource ResourceKey=ValidationBrush}"
-							   mat:MaterialAssist.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
+	<telerik:RadToggleButton Content="RadButton" 
+							 Margin="10"
+							 helpers:ThemeHelper.MouseOverBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMouseOverBrush}"
+							 helpers:ThemeHelper.PressedBrush="{telerik:VisualStudio2019Resource ResourceKey=ValidationBrush}"
+							 helpers:ThemeHelper.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
 {{endregion}}
 
 #### **Figure 3: Appearance of the RadToggleButton in the different states**  

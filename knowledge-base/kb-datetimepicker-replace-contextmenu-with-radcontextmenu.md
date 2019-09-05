@@ -1,8 +1,8 @@
 ---
 title: How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker
-description: Using RadContextMenu instead of ContextMenu RadDateTimePicker
+description: Using RadContextMenu instead of ContextMenu in RadDateTimePicker
 type: how-to
-page_title: Initialize RadContextMenu rather than ContextMenu in RadDateTimePicker
+page_title: Show RadContextMenu rather than ContextMenu in RadDateTimePicker
 slug: kb-datetimepicker-replace-contextmenu-with-radcontextmenu
 position: 
 tags: contextmenu, radcontextmenu, raddatetimepicker, datetimepicker
@@ -25,10 +25,10 @@ res_type: kb
 How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker.
 
 ## Solution
-1. Add the RadContextMenu as a StaticResource in MainWindow.xaml.
+1. Add the RadContextMenu as a StaticResource in xaml.
 2. Handle the Loaded event of the RadDateTimePicker.
-3. In the Loaded event use the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to find the RadWatermarkTextBox inside the RadDateTimePicker and set the ContextMenu to null.
-4. Set the RadContextMenu using the RadContextMenu.SetContextMenu() method.
+3. In the Loaded event, use the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to find the RadWatermarkTextBox inside the RadDateTimePicker and set its ContextMenu property to null.
+4. Set the RadContextMenu to the RadWatermarkTextBox using the RadContextMenu.SetContextMenu() method.
 
 #### __[XAML]__
 {{region kb-datetimepicker-replace-contextmenu-with-radcontextmenu-0}}
@@ -63,4 +63,5 @@ How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker.
         }
     }
 {{endregion}}
+
 >As an alternative approach, you can also [Edit the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the RadDateTimePicker.

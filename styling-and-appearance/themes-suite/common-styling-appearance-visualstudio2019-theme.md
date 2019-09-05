@@ -207,19 +207,15 @@ The **VisualStudio2019 Theme** also uses the **Telerik Web UI** [font glyphs](({
 
 ## Theme Helper
 
-The [ThemeHelper]({%slug styling-apperance-theme-helper%}) class that comes with the **R3 2019** release is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
+The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the **R3 2019** release is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
 **Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
 
-#### __[XAML] Example 3: Declare the namespace for the theming helper components__
+#### __[XAML] Example 3: Set RadToggleButton's visual appearance through the ThemeHelper class__
 {{region xaml-styling-appearance-visualstudio2019-theme-3}}
-	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
-{{endregion}}
-
-#### __[XAML] Example 4: Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-visualstudio2019-theme-4}}
 	<telerik:RadToggleButton Content="RadButton" 
 							 Margin="10"
+							 xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 							 helpers:ThemeHelper.MouseOverBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMouseOverBrush}"
 							 helpers:ThemeHelper.PressedBrush="{telerik:VisualStudio2019Resource ResourceKey=ValidationBrush}"
 							 helpers:ThemeHelper.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
@@ -232,14 +228,14 @@ The [ThemeHelper]({%slug styling-apperance-theme-helper%}) class that comes with
 
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the VisualStudio2019Palette. The default values are **0.3** and **0.6** respectively. 
 
-#### __[C#] Example 5: Changing the opacity__		
-{{region cs-styling-appearance-visualstudio2019-theme-5}}
+#### __[C#] Example 4: Changing the opacity__		
+{{region cs-styling-appearance-visualstudio2019-theme-4}}
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5;
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 5: Changing the opacity__		
-{{region vb-styling-appearance-visualstudio2019-theme-5}}
+#### __[VB.NET] Example 4: Changing the opacity__		
+{{region vb-styling-appearance-visualstudio2019-theme-4}}
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}

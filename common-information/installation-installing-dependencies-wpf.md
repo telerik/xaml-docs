@@ -91,6 +91,7 @@ RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
+RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
 RadTabbedWindow	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTileList	|	Telerik.Windows.Controls

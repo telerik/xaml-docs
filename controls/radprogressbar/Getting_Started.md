@@ -10,52 +10,98 @@ position: 2
 
 # Getting Started
 
->In order to use __RadProgressBar__ control in your projects you have to add a reference to the __Telerik.Windows.Controls__ assembly.<br/>You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
+This tutorial will walk you through the creation of a sample application that contains __RadProgressBar__.
 
-Getting started with the __RadProgressBar__ control is pretty straightforward. To begin with, you should include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadProgressBar__ control in *C#*, *VB.NET* and *XAML* code:
+## Assembly References
 
-#### __[C#] Example 1: Create RadProgressBar in code__
-{{region cs-Getting_Started_0}}
+In order to use __RadProgressBar__, you will need to add references to the __Telerik.Windows.Controls__ dll.
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+## Defining RadProgressBar
+
+To set up a RadProgressBar, set its __Minimum__, __Maximum__ and __Value__ properties. They control the value range of the control and the current position of the [progress indicator]({%slug radprogressbar-structure%}).
+
+#### __[XAML] Example 1: Defining RadProgressBar in XAML__
+{{region radprogressbar-getting-started-0}}
+	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10"/>
+{{endregion}}
+
+#### __[C#] Example 2: Defining RadProgressBar in code__
+{{region radprogressbar-getting-started-1}}
 	RadProgressBar progressBar = new RadProgressBar();
+	progressBar.Minimum = -50;
+	progressBar.Maximum = 50;
+	progressBar.Value = 10;
 {{endregion}}
 
-#### __[VB.NET] Example 1: Create RadProgressBar in code__
-{{region vb-Getting_Started_1}}
-	Dim progressBar As New RadProgressBar()
+#### __[VB.NET] Example 2: Defining RadProgressBar in code__
+{{region radprogressbar-getting-started-2}}
+	Dim progressBar = New RadProgressBar()
+	progressBar.Minimum = -50
+	progressBar.Maximum = 50
+	progressBar.Value = 10
 {{endregion}}
 
-#### __[XAML] Example 2: Create RadProgressBar in XAML__
-{{region xaml-Getting_Started_2}}
-	<telerik:RadProgressBar x:Name="progressBar" />
+![](images/radprogressbar-getting-started-0.png)
+
+## Changing Orientation
+
+The default orientation of RadProgressBar is horizontal. To change this, set the __Orientation__ property to __Vertical__.
+
+#### __[XAML] Example 3: Setting orientation in XAML__
+{{region radprogressbar-getting-started-3}}
+	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10" 
+							Width="8" Height="200"
+							Orientation="Vertical"/>
 {{endregion}}
 
-You may need to change the __Minimum__ and __Maximum__ values of the control by setting the corresponding properties. The default values are 0 and 100.
-
-#### __[C#] Example 3: Set Minimum and Maximum properties in code__
-{{region cs-Getting_Started_3}}
-	progressBar.Minimum = 10;
-	progressBar.Maximum = 20;
+#### __[C#] Example 4: Setting orientation in code__
+{{region radprogressbar-getting-started-4}}
+	RadProgressBar progressBar = new RadProgressBar();
+	progressBar.Minimum = -50;
+	progressBar.Maximum = 50;
+	progressBar.Value = 10;
+	progressBar.Width = 8;
+	progressBar.Height = 200;
+	progressBar.Orientation = Orientation.Vertical;
 {{endregion}}
 
-#### __[VB.NET] Example 3: Set Minimum and Maximum properties in code__
-{{region vb-Getting_Started_4}}
-	progressBar.Minimum = 10
-	progressBar.Maximum = 20
+#### __[VB.NET] Example 4: Setting orientation in code__
+{{region radprogressbar-getting-started-5}}
+	Dim progressBar = New RadProgressBar()
+	progressBar.Minimum = -50
+	progressBar.Maximum = 50
+	progressBar.Value = 10
+	progressBar.Width = 8
+	progressBar.Height = 200
+	progressBar.Orientation = Orientation.Vertical
 {{endregion}}
 
-#### __[XAML] Example 4: Set Minimum and Maximum properties in XAML__
-{{region xaml-Getting_Started_5}}
-	<telerik:RadProgressBar x:Name="progressBar" Minimum="10" Maximum="20" />
+![](images/radprogressbar-getting-started-1.png)
+
+## Indeterminate State
+
+This state presents a visualization of an unspecified waiting time. To enable it, set the the __IsIndeterminate__ property of RadProgressBar to __True__.
+
+#### __[XAML] Example 5: Enabling intereminate state in XAML__
+{{region radprogressbar-getting-started-6}}
+	<telerik:RadProgressBar IsIndeterminate="True" />
 {{endregion}}
 
-You can fill the RadProgressBar during runtime by changing its __Value__ property.
-
-#### __[C#] Example 5: Change RadProgressBar value__
-{{region cs-Getting_Started_6}}
-	progressBar.Value += 5;
+#### __[C#] Example 6: Enabling intereminate state in code__
+{{region radprogressbar-getting-started-7}}
+	RadProgressBar progressBar = new RadProgressBar();
+	progressBar.IsIndeterminate = true;
 {{endregion}}
 
-#### __[VB.NET] Example 5: Change RadProgressBar value__
-{{region vb-Getting_Started_7}}
-	progressBar.Value += 5
+#### __[VB.NET] Example 6: Enabling intereminate state in code__
+{{region radprogressbar-getting-started-8}}
+	Dim progressBar = New RadProgressBar()
+	progressBar.IsIndeterminate = True
 {{endregion}}
+
+![](images/radprogressbar-getting-started-2.gif)
+
+## See Also  
+* [Changing Colors]({%slug radprogressbar-changing-colors%})

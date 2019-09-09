@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: This will demonstrate how to create a sample application containing a RadSlider.
+description: This article demonstrates how to create a sample application containing a RadSlider.
 slug: radslider-declaration
 tags: getting,started
 published: True

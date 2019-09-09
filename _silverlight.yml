@@ -123,7 +123,8 @@ knowledge-base/,
 getting-started/first-steps.md,
 getting-started/explore-control-features.md,
 controls/radsyntaxeditor,
-controls/radfilepathpicker]
+controls/radfilepathpicker,
+netcore/]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

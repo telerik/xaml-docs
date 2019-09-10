@@ -12,7 +12,7 @@ position: 1
 
 You can customize the appearance of a __RadColorPicker__ by choosing which of the parts to be visible.        
 
-__1. You can set the NoColorVisibility property to Visibility.Visible to view the NoColorField, otherwise you should set it to false__            
+1. __You can set the NoColorVisibility property to Visibility.Visible to view the NoColorField, otherwise you should set it to false__            
 
 #### __XAML__
 {{region radcolorpicker-appearance_1}}
@@ -35,7 +35,7 @@ __1. You can set the NoColorVisibility property to Visibility.Visible to view th
 
 ![No Color Field](images/NoColorField.png)
 
-__2. You can use StandardPaletteVisibility and HeaderPaletteVisibility in order to set the visibility of the corresponding palettes__            
+2. __You can use StandardPaletteVisibility and HeaderPaletteVisibility in order to set the visibility of the corresponding palettes__            
 
 * __StandardPaletteVisibility__
 
@@ -82,7 +82,7 @@ __2. You can use StandardPaletteVisibility and HeaderPaletteVisibility in order 
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}
 {% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
 
-__3. You can set different text for StandardPalette header text, MainPalette header text and NoColorText__           
+3. __You can set different text for StandardPalette header text, MainPalette header text and NoColorText__           
 
 * __StandardPaletteHeaderText__
 
@@ -132,11 +132,11 @@ __3. You can set different text for StandardPalette header text, MainPalette hea
 	{{endregion}}
 
 
-__4. RadColorPicker is a stylable control. You can customize the look of the RadSplitButton. In order to do this you should use SplitButtonStyle property__
+4. __RadColorPicker is a stylable control. You can customize the look of the RadSplitButton. In order to do this you should use SplitButtonStyle property__
 
 * __SplitButtonStyle__ - this property should be used to control the style of the split button.
 
-__5. The ColorSelectorStyle gets or sets the color selector style__
+5. __The ColorSelectorStyle property gets or sets the color selector style. It is used to apply a custom Style to the RadColorSelector control. This is the element shown in the popup opened when you click on the RadColorPicker__
 
 #### __XAML__
 	{{region radcolorpicker-appearance_11}}

@@ -89,6 +89,9 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **HiddenColumnExportOption**: Gets or sets a value indicating how hidden columns are exported. The **HiddenColumnExportOptions** enumeration provides three possible options: **ExportAlways**, **DoNotExport** and **ExportAsHidden**.
 - **ColumnWidth**: Gets or sets the width of the columns that are exported.
 - **Items**: The collection of items to be exported.
+- **ShowGroupRows**: Specifies whether the group rows should be exported (this property was introduced in **R3 2019**).
+- **Culture**: Sets a specific Culture (this property was introduced in **R3 2019**).
+- **IgnoreCollapsedGroups**: Specifies whether the collapsed groups should be exported (this property was introduced in **R3 2019**).
 
 #### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
 

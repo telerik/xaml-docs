@@ -1,7 +1,7 @@
 ---
 title: Features
 page_title: Features
-description: Features
+description: This article lists the most important features of the RadWatermarkTextBox.
 slug: radwatermarktextbox-features
 tags: features
 published: True
@@ -30,6 +30,10 @@ The most important properties of the __RadWatermarkTextBox__ control are:
 
 	* __CaretToEnd:__ The caret will be moved at the end of the text.
 
+* __AdditionalContent:__ Gets or sets an object which is rendered in ContentPresenter in the right part of the control. Implemented in __R3 2019__.
+
+* __AdditionalContentTemplate:__ Gets or sets the System.Windows.DataTemplate used for the AdditionalContent object. Implemented in __R3 2019__.
+
 >tipThe __RadWatermarkTextBox__ control is part of the __Telerik.Windows.Controls.dll__ assembly.
 
 ## Using the WatermarkContent Property
@@ -40,7 +44,7 @@ In the following example, the user is asked to enter four digits:
 
 #### __[XAML] Example 1: Setting the WatermarkContent property__
 
-{{region xaml-radwatermarktextbox-overview_0}}
+{{region xaml-radwatermarktextbox-features_0}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" WatermarkContent="Please Enter Four Digits:" />
 {{endregion}}
 
@@ -50,7 +54,7 @@ The __WatermarkContent__ property is of type object. Which means that you can se
 
 #### __[XAML] Example 2: Defining custom content for the WatermarkContent property__
 
-{{region xaml-radwatermarktextbox-overview_1}}
+{{region xaml-radwatermarktextbox-features_1}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox1">
 	    <telerik:RadWatermarkTextBox.WatermarkContent>
 	        <StackPanel Orientation="Horizontal">
@@ -69,7 +73,7 @@ Similarly, you can use the __WatermarkTemplate__ property for the same sort of s
 
 #### __[XAML] Example 3: Defining the WatermarkTemplate__
 
-{{region xaml-radwatermarktextbox-overview_2}}
+{{region xaml-radwatermarktextbox-features_2}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox2">
 	    <telerik:RadWatermarkTextBox.WatermarkTemplate>
 	        <DataTemplate>
@@ -90,7 +94,7 @@ The __SelectionOnFocus__ property of __RadWatermarkTextBox__ allows you to speci
 
 #### __[XAML] Example 4: Setting the SelectionOnFocus property__
 
-{{region xaml-radwatermarktextbox-overview_3}}
+{{region xaml-radwatermarktextbox-features_3}}
 	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox3" 
 	                             SelectionOnFocus="SelectAll"
 	                             WatermarkContent="Please Enter Four Digits:" />
@@ -114,7 +118,7 @@ Examples 5 and 6 demonstrate how to set these properties in XAML and figures 4 a
 
 #### __[XAML] Example 5: Setting the DisabledBackground property__
 
-{{region xaml-radwatermarktextbox-overview_4}}
+{{region xaml-radwatermarktextbox-features_4}}
         <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsEnabled="False" DisabledBackground="DarkGray" />
 {{endregion}}
 
@@ -122,7 +126,7 @@ Examples 5 and 6 demonstrate how to set these properties in XAML and figures 4 a
 
 #### __[XAML] Example 6: Setting the ReadOnlyBackground property__
 
-{{region xaml-radwatermarktextbox-overview_5}}
+{{region xaml-radwatermarktextbox-features_5}}
         <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsReadOnly="True" ReadOnlyBackground="DarkGray" />
 {{endregion}}
 
@@ -130,6 +134,40 @@ Examples 5 and 6 demonstrate how to set these properties in XAML and figures 4 a
 
 >Please note that the read-only visual is drawn over the disabled visual so the ReadOnlyBackground will take precedence over the DisabledBackground if the control is in both the disabled and read-only states.
 
+## Clear Command
+
+As of R3 2019, a __Clear__ command was introduced in the __RadWatermarkTextBoxCommands__ class, which clears the content of the textbox. 
+
+#### __[XAML] Example 7: Using the Clear Command__
+{{region xaml-radwatermarktextbox-features_6}}
+	<StackPanel>
+        <telerik:RadWatermarkTextBox x:Name="watermarkTextBox" />
+
+        <telerik:RadButton Command="telerik:RadWatermarkTextBoxCommands.Clear"
+                           CommandTarget="{Binding ElementName=watermarkTextBox}">
+            <telerik:RadGlyph Glyph="&#xe11b;"  />
+        </telerik:RadButton>
+    </StackPanel>
+{{endregion}}
+
+## AdditionalContent and AdditionalContentTemplate
+
+As of R3 2019, the __RadWatermarkTextBox__ control exposes two new properties, which allow for displaying additional content on its right side. Those are __AdditionalContent__ and __AdditionalContentTemplate__. __Example 8__ demonstrates the __AdditionalContent__ property along with the __Clear__ command.
+
+#### __[XAML] Example 8: Setting the AdditionalContent property__
+{{region xaml-radwatermarktextbox-features_7}}
+	<telerik:RadWatermarkTextBox>
+		<telerik:RadWatermarkTextBox.AdditionalContent>
+			<telerik:RadButton Focusable="False"
+							   IsBackgroundVisible="False"
+							   Command="telerik:RadWatermarkTextBoxCommands.Clear"
+							   CommandTarget="{Binding ElementName=watermarkTextBox}">
+				<telerik:RadGlyph Glyph="&#xe11b;"  />
+			</telerik:RadButton>
+		</telerik:RadWatermarkTextBox.AdditionalContent>
+	</telerik:RadWatermarkTextBox>
+{{endregion}}
+
 ## See also
 
-[Overview]({%slug radwatermarktextbox-overview%})
+* [Overview]({%slug radwatermarktextbox-overview%})

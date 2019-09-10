@@ -5,7 +5,7 @@ description: The actions in the UI of RadWebCam control are executed via command
 slug: radwebcam-features-commands
 tags: commands, radwebcamcommands
 published: True
-position: 5
+position: 6
 ---
 
 # Commands

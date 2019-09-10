@@ -5,7 +5,7 @@ description: This article shows how to flip the video using the FlipHorizontally
 slug: radwebcam-features-video-flip
 tags: vertical,horizontal,flip
 published: True
-position: 4
+position: 5
 ---
 
 # Video Flip
@@ -28,5 +28,5 @@ RadWebCam allows you to change the flip of the video feed from the attached came
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})
-* [SnapshotTaken]({%slug radwebcam-events%})
+* [Events]({%slug radwebcam-events%})
 * [Errors]({%slug radwebcam-features-errors%})

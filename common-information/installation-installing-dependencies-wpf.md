@@ -54,6 +54,8 @@ RadDocking	|	Telerik.Windows.Controls.Docking, Telerik.Windows.Controls.Navigati
 RadEntityFrameworkDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.EntityFramework
 RadExpander	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadExpressionEditor	|	Telerik.Windows.Controls.Expressions, Telerik.Windows.Data, Telerik.Windows.Documents, Telerik.Windows.Controls.Navigation
+RadFileDialogs | Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.FileDialogs, Telerik.Windows.Data
+RadFilePathPicker | Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.FileDialogs, Telerik.Windows.Data
 RadGanttView	|	Telerik.Windows.Controls.GanttView, Telerik.Windows.Scheduling.Core
 RadGauge	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadGridView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input
@@ -89,6 +91,7 @@ RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
+RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
 RadTabbedWindow	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTileList	|	Telerik.Windows.Controls

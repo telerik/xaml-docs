@@ -39,7 +39,7 @@ Here are the possible cases:
 
 3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick"__ - only one click is needed to change the value of the __CheckBox__. 
 
-#### __[XAML] Example 2: Change the value of the CheckBox with one click.__
+#### __[XAML] Example 2: Change the value of the CheckBox with one click__
 
 {{region xaml-gridview-checkbox-column_1}}
 	<telerik:RadGridView x:Name="radGridView"

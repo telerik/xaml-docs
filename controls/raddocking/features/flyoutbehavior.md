@@ -16,20 +16,20 @@ The flyout behavior controls how and when the flyout of the __auto hide area__ i
 
 This is the default behavior. It opens the flyout on hover (mouse over) or activation of a pane inside the auto hide area. The flyout closes when the mouse leaves it.
 
-![](images/raddocking-features-panes-flyoutbehavior-0.gif).
+![RadDocking with HoverFlyoutBehavior](images/raddocking-features-panes-flyoutbehavior-0.gif).
 
 ## ClickFlyoutBehavior
 
 It opens the flyout on click or activation of a pane inside the auto hide area. The flyout closes on second click on the pane or when the pane gets deactived.
 
-![](images/raddocking-features-panes-flyoutbehavior-1.gif).
+![RadDocking with ClickFlyoutBehavior](images/raddocking-features-panes-flyoutbehavior-1.gif).
 
 ## Setting Flyout Behavior
 
 To set or get the current flyout behavior use the __FlyoutBehavior__ property of RadDocking.
 
 #### __[XAML] Example 1: Setting flyout behavior__
-{{region raddocking-features-panes-flyoutbehavior-0}}
+{{region xaml-raddocking-features-panes-flyoutbehavior-0}}
 	<telerik:RadDocking.FlyoutBehavior>
         <telerik:ClickFlyoutBehavior/>
     </telerik:RadDocking.FlyoutBehavior>
@@ -56,7 +56,7 @@ To create a custom flyout behavior, implement the __IFlyoutBehavior__ interface.
 The following example shows how to implement a __custom behavior__ that opens the flyout on click and animates the opening and closing.
 
 #### __[C#] Example 2: Custom flyout behavior__
-{{region raddocking-features-panes-flyoutbehavior-1}}
+{{region cs-raddocking-features-panes-flyoutbehavior-1}}
 	public class AnimatedFlyoutBehavior : IFlyoutBehavior
     {
         void IFlyoutBehavior.OnPaneActivated(IFlyoutHost host, RadPane targetPane)
@@ -114,4 +114,4 @@ The following example shows how to implement a __custom behavior__ that opens th
     </telerik:RadDocking.FlyoutBehavior>
 {{endregion}}
 
->tip Runnable project with this example can be found in the [ClickFlyoutBehaviorWithAnimation](https://github.com/telerik/xaml-sdk/tree/master/Docking/ClickFlyoutBehaviorWithAnimation) SDK example.
+>tip A runnable project with this example can be found in the [ClickFlyoutBehaviorWithAnimation](https://github.com/telerik/xaml-sdk/tree/master/Docking/ClickFlyoutBehaviorWithAnimation) SDK example.

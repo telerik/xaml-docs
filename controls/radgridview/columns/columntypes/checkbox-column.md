@@ -12,14 +12,14 @@ position: 3
 
 __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and its content is represented by a __CheckBox__ for each row. The difference between it and __GridViewSelectColumn__ is that this one is meant to be bound. As opposed, __GridViewSelectColumn__ allows you to select the row through the CheckBox that it utilizes.
 
-#### __[XAML] Example 1: Declare a column of type GridViewCheckBoxColumn.__
+#### __[XAML] Example 1: Declare a column of type GridViewCheckBoxColumn__
 
 {{region xaml-gridview-checkbox-column_0}}
 	<telerik:RadGridView x:Name="radGridView"
 	                AutoGenerateColumns="False"
 					ItemsSource="{Binding Items}">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsSelected}" />
+	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -39,7 +39,7 @@ Here are the possible cases:
 
 3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick"__ - only one click is needed to change the value of the __CheckBox__. 
 
-#### __[XAML] Example 2: Change the value of the CheckBox with one click.__
+#### __[XAML] Example 2: Change the value of the CheckBox with one click__
 
 {{region xaml-gridview-checkbox-column_1}}
 	<telerik:RadGridView x:Name="radGridView"

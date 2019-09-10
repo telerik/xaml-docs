@@ -63,8 +63,6 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 
  * [Events]({%slug raddatapager-events-overview%})
 
- * [Page RadGridView]({%slug raddatapager-how-to-page-radgridview%})
-
  * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
 
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})

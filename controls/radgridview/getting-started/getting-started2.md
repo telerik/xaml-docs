@@ -331,7 +331,7 @@ You can read more about data binding [here]({%slug gridview-overview-data-bindin
 
 ## Columns
 
-The __RadGridView__ from the examples above contains three columns, one for each of the properties of the Club class.__RadGridView__ automatically generates these columns. If you want to stop the columns auto generation and define the columns that you want to be visible manually, set the property __AutoGenerateColumns__ to __False__.
+The __RadGridView__ from the examples above contains three columns, one for each of the properties of the Club class. __RadGridView__ automatically generates these columns. If you want to stop the columns auto generation and define the columns that you want to be visible manually, set the property __AutoGenerateColumns__ to __False__.
 
 __Example 7__ demonstrates how you can manually prevent the automatic generation and define columns. 
         

@@ -51,17 +51,10 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 * If you have referred to some references which are still not available in .NET Core as Windows.Composition, you can Include the [Windows.Compatibility Pack](https://docs.microsoft.com/en-us/dotnet/core/porting/windows-compat-pack) with the command below executed via the Command Prompt from Visual Studio.
 	 
 	<div class='tabbedCode'><pre>dotnet add package Microsoft.Windows.Compatibility</pre></div>
-	
-* The getting started experience in RadRichTextBox for .NET Core has been improved compared to its .NET Framework alternative. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
 
+* The getting started experience in RadRichTextBox for .NET Core has been improved compared to its .NET Framework alternative. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
 
 ## See Also
 
 * [Deploy WPF .NET Core Application]({%slug netcore-support-deploy-using-visual-studio%})
 * [Using RadRichTextBox in .NET Core]({%slug radrichtextbox-getting-started-net-core-support%})
-
-	
-
-
-
-

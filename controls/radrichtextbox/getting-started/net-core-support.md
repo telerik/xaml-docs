@@ -104,7 +104,7 @@ Due to the merging of the assemblies, the resources' paths are modified as well.
     pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/RichTextBoxUI/*
 {{endregion}}
 
-## Reogranized Resource Dictionaries 
+## Reorganized Resource Dictionaries 
 
 When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET Core needs the following resources:
 

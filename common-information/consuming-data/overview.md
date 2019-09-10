@@ -13,10 +13,6 @@ position: 0
 
 Telerik __Telerik UI for {{ site.framework_name }}__ can be populated with data in any of the following ways:
 
-{% if site.site_name == 'WPF' %} 
-* Populating with data from __WCF Service__. [Read more]({%slug consuming-data-wcf-service%})
-{% endif %}
-
 * Populating with data from __ADO.NET Data Service__. [Read more]({%slug consuming-data-ado-net-data-service%})
 
 {% if site.site_name == 'Silverlight' %} 

@@ -45,15 +45,24 @@ For each of the [PasteSource](#paste-sources) values, there is defined a specifi
 
 You can change these settings using the [PasteSettings](#pastesettings-members) class and the methods it exposes.
 
-## Turning Paste Options On/Off and Setting Default Behavior
+## Turning Paste Options On/Off 
+
+The **IsPasteOptionsPopupEnabled** dependency property of RadRichTextBox enables you to control whether the popup shown when pasting will be enabled or not. The default value of the property is `true`.
+
+#### [XAML] Example 1: Turn off the popup providing paste options
+{{region radrichtextbox-features-paste-options_0}}
+
+    <telerik:RadRichTextBox x:Name="radRichTextBox" IsPasteOptionsPopupEnabled="False" />
+{{endregion}}
+
+
+## Setting Default Behavior
 
 The **RadRichTextBox** class exposes the **PasteSettings** property to enable you specify whether you would like to use the Paste Options functionality and how you would like it to behave. The property is of type **PasteSettings** and you can use the members of the class to adjust the settings according to your needs.
 
 ### PasteSettings Members
 
 In addition to enabling or disabling the functionality, the members of this class enable you to set how the paste options should behave depending on the source the content has been copied from.
-
-- **EnablePasteOptions**: This property turns the feature on and off. If you would like to stick to the legacy paste mode and disable the paste options, you can set it to `false`. With this setting, the old paste functionality which doesn't provide different options will be used and the popup in the UI will be disabled. The default value of EnablePasteOptions is `true`.
 
 - **GetDefaultPasteOptionForPasteSource(PasteSource pasteSource)**: Gets the default PasteOption which will be executed when content from a given PasteSource is pasted.
 
@@ -65,14 +74,16 @@ In addition to enabling or disabling the functionality, the members of this clas
 
 - **SetAvailablePasteOptions(PasteSource pasteSource, IEnumerable&lt;PasteOption&gt; pasteOptions)**: Sets a list of available PasteOptions for a given PasteSource.
 
+In case you would like to stick to the legacy behavior of the paste functionality, you would need to set the available paste options for each of the PasteSource values to `null`.
+
 ## Executing Paste in Code
 
 You can invoke the paste with specific options through the RadRichTextBox/RadDocumentEditor class. In addition to the normal paste functionality, invoked using the Paste() method, the interface common for both classes exposes one more overload which enables you to specify the option wich will be used during the paste - **Paste(PasteOption pasteOption)**.
 
 >important The method exposed by **RadRichTextBox** executes the paste and shows the popup for the user to choose another paste option if they would like to. If you would like to paste from the code without showing any UI, you can use the method of **RadDocumentEditor**.
 
-#### [C#] Example 1: Paste with Specific Settings
-{{region radrichtextbox-features-paste-options_0}}
+#### [C#] Example 2: Paste with Specific Settings
+{{region radrichtextbox-features-paste-options_1}}
     this.radRichTextBox.Paste(PasteOption.MergeFormatting);
 {{endregion}}
 

@@ -644,97 +644,10 @@ navigation:
         position: 3
     "*radspreadprocessing":
         title: RadSpreadProcessing
-    controls/radspreadprocessing/working-with-worksheets:
-        title: Worksheets
-        position: 4
-    controls/radspreadprocessing/working-with-rows-and-columns:
-        title: Rows and Columns
-        position: 5
-    controls/radspreadprocessing/working-with-cells:
-        title: Cells
-        position: 6
-    controls/radspreadprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 7
-    controls/radspreadprocessing/features:
-        title: Features
-        position: 8
-    controls/radspreadprocessing/formats-and-conversion/xlsx:
-        title: Xlsx
-        position: 2
-    controls/radspreadprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 3
-    controls/radspreadprocessing/formats-and-conversion/csv:
-        title: Csv
-        position: 4
-    controls/radspreadprocessing/formats-and-conversion/txt:
-        title: Txt
-        position: 5
-    controls/radspreadprocessing/features/fill-data-automatically:
-        title: Fill Data Automatically
-        position: 0
-    controls/radspreadprocessing/features/formulas:
-        title: Formulas
-        position: 1
-    controls/radspreadprocessing/features/protection:
-        title: Protection
-        position: 2
-    controls/radspreadprocessing/features/styling:
-        title: Styling
-        position: 3
     "*radwordsprocessing":
         title: RadWordsProcessing
-    controls/radwordsprocessing/model:
-        title: Model
-        position: 4
-    controls/radwordsprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 5
-    controls/radwordsprocessing/editing:
-        title: Features
-        position: 6
-    controls/radwordsprocessing/concepts:
-        title: Concepts
-        position: 7
-    controls/radwordsprocessing/formats-and-conversion/docx:
-        title: Docx
-        position: 1
-    controls/radwordsprocessing/formats-and-conversion/rtf:
-        title: Rtf
-        position: 2
-    controls/radwordsprocessing/formats-and-conversion/html:
-        title: Html
-        position: 3
-    controls/radwordsprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 4	
-    controls/radwordsprocessing/formats-and-conversion/plain-text:
-        title: Plain text
-        position: 5
-    controls/radwordsprocessing/concepts/fields:
-        title: Fields
-        position: 0
     "*radpdfprocessing":
         title: RadPdfProcessing
-    controls/radpdfprocessing/model:
-        title: Model
-        position: 4
-    controls/radpdfprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 5
-    controls/radpdfprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 0
-    controls/radpdfprocessing/formats-and-conversion/plain-text:
-        title: Plain text
-        position: 0
-    controls/radpdfprocessing/editing:
-        title: Editing
-        position: 6
-    controls/radpdfprocessing/concepts:
-        title: Concepts
-        position: 7
     "*radrichtextbox":
         title: RadRichTextBox		
     controls/radrichtextbox/getting-started:
@@ -1006,6 +919,11 @@ navigation:
         title: Cards
     controls/radwebcam:
         title: RadWebCam
+    controls/radsyntaxeditor:
+        title: RadSyntaxEditor
+    controls/radsyntaxeditor/features:
+        title: Features
+        position: 5
 ## X1 Controls End
 
 ## Common Start   
@@ -1045,6 +963,9 @@ navigation:
     "*events":
         title: Events
         position: 80
+    "netcore":
+        title: .NET Core Support
+        position: 8
     "api-reference":
         title: "Api Reference"
         position: 23
@@ -3372,6 +3293,7 @@ intro_columns:
       "Slider": "radslider-overview"
       "SpellChecker": "radspellchecker-overview"
       "Spreadsheet": "radspreadsheet-overview"
+      "SyntaxEditor": "radsyntaxeditor-overview"
       "WatermarkTextBox": "radwatermarktextbox-overview"
   -
     title: "Media"

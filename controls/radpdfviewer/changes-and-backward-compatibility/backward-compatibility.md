@@ -14,6 +14,13 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2019 R3
+
+### Changed
+
+Telerik.Windows.Documents.Fixed.Model.Navigation.**BookmarkItemStyle** class is renamed to Telerik.Windows.Documents.Fixed.Model.Navigation.**BookmarkItemStyles**.
+
+
 ## What's Different in 2016 R3 - 2016.3.0914
 
 ### Changed

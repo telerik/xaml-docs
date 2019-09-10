@@ -72,6 +72,7 @@ controls/radribbonview/features/simplified-ribbon.md,
 controls/radribbonview/styling-and-appearance/styling-contextualtab.md,
 controls/radrichtextbox/troubleshooting/rendering-glitches.md,
 controls/radrichtextbox/features/paste-options.md,
+controls/radrichtextbox/getting-started/net-core-support.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier-wpf.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-viewmodel-wpf.md,
 controls/radslider/sdk-examples.md,
@@ -123,7 +124,9 @@ controls/radwebcam,
 knowledge-base/,
 getting-started/first-steps.md,
 getting-started/explore-control-features.md,
-controls/radfilepathpicker]
+controls/radsyntaxeditor,
+controls/radfilepathpicker,
+netcore/]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

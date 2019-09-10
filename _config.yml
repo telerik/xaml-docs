@@ -1050,6 +1050,9 @@ navigation:
     "*events":
         title: Events
         position: 80
+    "netcore":
+        title: .NET Core Support
+        position: 8
     "api-reference":
         title: "Api Reference"
         position: 23

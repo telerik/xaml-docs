@@ -97,7 +97,7 @@ For versions **prior R3 2019**, __RadRichTextBox__ still uses MEF to load additi
 
 Due to the merging of the assemblies, the resources' paths are modified as well. For example, the .NET Framework version uses paths like the following one: *pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/**. The alternative for using RadRichTextBox in .NET Core environment is:
 
-#### [XAML]
+#### __[XAML]__
 
 {{region xaml-radrichtextbox-getting-started-net-core-support-2}}
 
@@ -108,7 +108,7 @@ Due to the merging of the assemblies, the resources' paths are modified as well.
 
 When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET Core needs the following resources:
 
-#### [XAML]
+#### __[XAML]__
 {{region xaml-radrichtextbox-getting-started-net-core-support-3}}
     
     <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/System.Windows.xaml" />

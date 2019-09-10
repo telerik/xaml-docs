@@ -52,63 +52,13 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	 
 	<div class='tabbedCode'><pre>dotnet add package Microsoft.Windows.Compatibility</pre></div>
 	
-* The __RadRichTextBox__ control uses MEF to load additional UI components (like dialogs and document format providers dependencies). This implementation uses the Assembly.ReflectionOnlyLoadFrom method to inspect the assemblies for suitable parts. This method is not available in .NET Core. To work this around, provide a predefined type catalog at the startup of the application.
-	
-	#### __[C#] Example 3: Creating type catalog manually__
-	{{region netcore-support-migration-2}}
-		RadCompositionInitializer.Catalog = new TypeCatalog(
-			// format providers
-			typeof(XamlFormatProvider),
-			typeof(RtfFormatProvider),
-			typeof(DocxFormatProvider),
-			typeof(PdfFormatProvider),
-			typeof(HtmlFormatProvider),
-			typeof(TxtFormatProvider),
+* The getting started experience in RadRichTextBox for .NET Core has been improved compared to its .NET Framework alternative. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
 
-			// mini toolbars
-			typeof(SelectionMiniToolBar),
-			typeof(ImageMiniToolBar),
 
-			// context menu
-			typeof(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
-
-			// the default English spell checking dictionary
-			typeof(RadEn_USDictionary),
-
-			// dialogs
-			typeof(AddNewBibliographicSourceDialog),
-			typeof(ChangeEditingPermissionsDialog),
-			typeof(EditCustomDictionaryDialog),
-			typeof(FindReplaceDialog),
-			typeof(FloatingBlockPropertiesDialog),
-			typeof(FontPropertiesDialog),
-			typeof(ImageEditorDialog),
-			typeof(InsertCaptionDialog),
-			typeof(InsertCrossReferenceWindow),
-			typeof(InsertDateTimeDialog),
-			typeof(InsertTableDialog),
-			typeof(InsertTableOfContentsDialog),
-			typeof(ManageBibliographicSourcesDialog),
-			typeof(ManageBookmarksDialog),
-			typeof(ManageStylesDialog),
-			typeof(NotesDialog),
-			typeof(ProtectDocumentDialog),
-			typeof(RadInsertHyperlinkDialog),
-			typeof(RadInsertSymbolDialog),
-			typeof(RadParagraphPropertiesDialog),
-			typeof(SetNumberingValueDialog),
-			typeof(SpellCheckingDialog),
-			typeof(StyleFormattingPropertiesDialog),
-			typeof(TableBordersDialog),
-			typeof(TablePropertiesDialog),
-			typeof(TabStopsPropertiesDialog),
-			typeof(UnprotectDocumentDialog),
-			typeof(WatermarkSettingsDialog));
-	{{endregion}}
-	
 ## See Also
 
 * [Deploy WPF .NET Core Application]({%slug netcore-support-deploy-using-visual-studio%})
+* [Using RadRichTextBox in .NET Core]({%slug radrichtextbox-getting-started-net-core-support%})
 
 	
 

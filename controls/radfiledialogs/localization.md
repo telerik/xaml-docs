@@ -12,9 +12,9 @@ position: 8
 
 > More detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 
-This topic will go available resource keys for localizing __RadFileDialogs__.
+This topic goes over the available resource keys for localizing the __RadFileDialogs__.
 
-Below is the list of supported languages.
+Below is the list of the supported languages.
 
 * **English**
 
@@ -32,7 +32,7 @@ Below is the list of supported languages.
 
 ## Resource Keys
 
-__RadFileDialogs__ provides strings for localizing various of its elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
+The __RadFileDialogs__ provide strings for localizing various of their elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
 
 ![RadFileDialogs Localization](images/FileDialogs_Localization.png)
 

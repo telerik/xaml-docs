@@ -29,7 +29,7 @@ It only takes a few simple steps to use the tool.
 
 4. Go through all available controls from the tab on the right to see how each control looks.
 
-5. When satisfied with the results, click the **Copy Settings to Clipboard** button to copy the code of the generated palette settngs to the clipboard.
+5. When satisfied with the results, click the **Copy Settings to Clipboard** button to copy the code of the generated palette settings to the clipboard.
 
 6. Paste the palette settings code in your application. The recommended place for this code is in the App class. Or anywhere before the InitializeComponent call of the main window or user control.
 

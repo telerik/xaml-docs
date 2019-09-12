@@ -1,5 +1,5 @@
 ---
-title: "Deployment and Application Do Not Have Matching Security Zones" Error When Launching Demos
+title: Deployment and Application Do Not Have Matching Security Zones - Error When Launching Demos
 page_title: Deployment Error When Starting WPF Demo Application
 description: Cannot install Color Theme Generator solution because of no matching security zones error occurs.
 type: troubleshooting
@@ -28,7 +28,8 @@ res_type: kb
 
 "Deployment and Application Do Not Have Matching Security Zones" appears when launching Telerik WPF demos. This error may occur when launching the WPF Demos application, the ColorThemeGenerator, or any other ClickOnce packaged application from the Telerik UI for WPF suite.
 
-ERROR SUMMARY
+ERROR SUMMARY  
+
 Below is a summary of the errors, details of these errors are listed later in the log.
 - Activation of C:\Users\<user>\Downloads\ColorThemeGenerator.application resulted in exception. Following failure messages were detected:
 - Deployment and application do not have matching security zones.

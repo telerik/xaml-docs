@@ -1,8 +1,8 @@
 ---
-title: Change Windows Handedness Settings in code behind
-description: Change Windows Handedness settings in code
-type: how-to
+title: Change Windows Handedness Settings in Code Behind
 page_title: How to change Windows Tablet PC Handedness Settings
+description: Change where the Popup menus appear on the screen by setting SystemParameters.MenuDropAlignment
+type: how-to
 slug: kb-common-change-windows-handedness-settings
 position: 0
 tags: windows,tablet,settings,left-handed,right-handed,handedness,pc
@@ -24,34 +24,33 @@ res_type: kb
     </tbody>
 </table>
 
-
 ## Description
+
+How to change windows handedness settings in code behind.
+
+## Solution
 
 To change the Windows Handedness settings in code, you can set the __SystemParameters.MenuDropAlignment__ property. The method need to be called after the InitializeComponent() method.
 
 #### __[C#]__
 {{region kb-common-change-windows-handedness-settings-0}}
-	public partial class Window1 : Window
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
 		{
-			public Window1()
-			{
-				InitializeComponent();
-				this.SetAlignment();
-			}
+			InitializeComponent();
+			this.SetAlignment();
 		}
+	}
 
 	public static void SetAlignment()
 	{
-		var ifLeft = SystemParameters.MenuDropAlignment;
-	  
+		var ifLeft = SystemParameters.MenuDropAlignment;	  
 		if (ifLeft)
 		{
-			// change to false
 			var t = typeof(SystemParameters);
 			var field = t.GetField("_menuDropAlignment", BindingFlags.NonPublic | BindingFlags.Static);
 			field.SetValue(null, false);
-	  
-			ifLeft = SystemParameters.MenuDropAlignment;
 		}
 	}
 {{endregion}}

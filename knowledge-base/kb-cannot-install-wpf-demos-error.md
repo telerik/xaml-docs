@@ -5,7 +5,7 @@ description: Cannot install Color Theme Generator solution because of no matchin
 type: troubleshooting
 slug: kb-cannot-install-wpf-demos-error
 position: 0
-tags: error,cannot,install,colorthemegenrator
+tags: error,cannot,install,colorthemegenerator
 ticketid: 1423997
 res_type: kb
 ---

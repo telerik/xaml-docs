@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-Rows are blank when sorting or scrolling the RadGridView control. This can be observed also when in child rows when hierarchy is used.
+Rows are blank when sorting or scrolling the RadGridView control. This can also be observed for child rows when hierarchy is used.
 
 ## Solution 1
 
@@ -43,6 +43,6 @@ Also, similar issues can occur when setting properties of the GridViewRow contro
 
 GridViewRow row = GetRowMethod();  
 
-row.Visibility = Visibility.Collpased; // or similar
+row.Visibility = Visibility.Collapsed; // or similar
 
-To resolve this, avoid direct settings of GridViewRow properties. Instead use the __RowStyle__ property of RadGridView and data bind any properties you want.
+To resolve this, avoid setting GridViewRow properties directly. Instead use the __RowStyle__ property of RadGridView and data bind any properties you want.

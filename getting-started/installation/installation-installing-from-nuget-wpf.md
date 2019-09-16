@@ -21,13 +21,13 @@ We provide separate packages for the different assemblies from the UI for WPF su
 
 * Nuget packages with the individual UI for WPF assemblies:
 
-    These packages can be downloaded by [using the telerik NuGet server](#using-the-telerik-nuget-server) or by [using a local package source](#using-a-local-package-source) and they only download the references that the assembly depends on. Additionally, the separate nuget packages will detect the __Target Framework__ of your project and download the UI for WPF dlls with the correct version (.Net Framework dlls or .Net Core dlls (available, since __R1 2019__)).
+    These packages can be downloaded by [using the telerik NuGet server](#using-the-telerik-nuget-server) or by [using a local package source](#using-a-local-package-source) and they only download the references that the assembly depends on. Additionally, the separate nuget packages will detect the __Target Framework__ of your project and download the UI for WPF dlls with the correct version (.NET Framework dlls or .NET Core dlls (available, since __R1 2019__)).
 
 * Nuget packages with all of the UI for WPF assemblies: 
 
     These packages are not available for download from the Telerik Nuget Server. To use them, check out the [using a local package source](#using-a-local-package-source) section.
 
-    > The NuGet packages containing all of the UI for WPF dlls are available for the supported .Net Framework versions. Since __R1 2019__, a .NET Core 3 UI for WPF NuGet Package is also available.
+    > The NuGet packages containing all of the UI for WPF dlls are available for the supported .NET Framework versions. Since __R1 2019__, a .NET Core 3 UI for WPF NuGet Package is also available.
     >![Common Installing From NuGet NetCore](images/Common_InstallingFromNuGet_NetCore.png)
 
 ## Using the Telerik NuGet Server
@@ -50,7 +50,7 @@ Through the Telerik NuGet Server users can easily include the Telerik UI for WPF
 
 ![](images/Common_InstallingFromNuGet_08_wpf.png)
 
-5.Set the Telerik Server as a package source. Enter user credentials(from your telerik account) when prompted and search for the needed package.
+5.Set the Telerik Server as a package source. Enter user credentials (from your Telerik account) when prompted and search for the needed package.
 
 ![](images/Common_InstallingFromNuGet_09_wpf.png)
 
@@ -62,7 +62,7 @@ In order to set up a local package source, you can follow these steps:
 
 * Go to to the [UI for WPF Downloads](https://www.telerik.com/account/product-download?product=RCWPF) page.
 
-> You have 4 options when downloading the NuGet packages from your account. The files named __Telerik_UI_for_WPF_{version}_NuGet_{Xaml/NoXaml}_Dev.zip__ contain the NuGets for all asseblies for the support .Net versions. The files named __Telerik_UI_for_WPF_{version}_NuGet_Separate_Packages_{Xaml/NoXaml}_Dev.zip__ contain the separate NuGet packages for all UI for WPF assemblies.
+> You have 4 options when downloading the NuGet packages from your account. The files named __Telerik_UI_for_WPF_{version}_NuGet_{Xaml/NoXaml}_Dev.zip__ contain the NuGets for all asseblies for the support .NET versions. The files named __Telerik_UI_for_WPF_{version}_NuGet_Separate_Packages_{Xaml/NoXaml}_Dev.zip__ contain the separate NuGet packages for all UI for WPF assemblies.
 
 * Download the needed NuGet .zip file(s) depending on whether you're using [Xaml or NoXaml]({%slug xaml-vs-noxaml%}) binaries and extract it into the folder where your Telerik NuGet packages are located.
 
@@ -79,7 +79,7 @@ Click the “Install” button and the references will be automatically added to
   
 ## Installing Latest Internal Build NuGet Packages
 
-You can install and test the Latest Internal Build (LIB) dlls provided on a weekly basis, via the Nuget Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source](#using-a-local-package-source) and copy the files there. You __cannot__ download LIB dlls via the online telerik nuget server (https://nuget.telerik.com/nuget), because they are not available there.
+You can install and test the Latest Internal Build (LIB) dlls provided on a weekly basis, via the Nuget Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source](#using-a-local-package-source) and copy the files there. You __cannot__ download LIB dlls via the online Telerik nuget server (https://nuget.telerik.com/nuget), because they are not available there.
 
 When you set up the package source and place the NuGet files there, you can find them in the Nuget Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 

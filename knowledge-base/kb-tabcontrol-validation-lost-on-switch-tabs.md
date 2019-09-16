@@ -1,6 +1,6 @@
 ---
 title: Data Validation Lost on Switch Tabs 
-description: Validation Gone When Change Tabs in RadTabControl and LayoutControl
+description: Validation Gone When Changing Tabs in RadTabControl and LayoutControl
 page_title: Red Validation Borders Missing When Changing the Selected Tab of RadTabControl or LayoutControlTabGroup.
 type: troubleshooting
 slug: tabcontrol-validation-lost-on-switch-tabs
@@ -19,7 +19,7 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Product</td>
-			<td>RadWizard for WPF</td>
+			<td>RadTabControl for WPF</td>
 		</tr>
 	</tbody>
 </table>

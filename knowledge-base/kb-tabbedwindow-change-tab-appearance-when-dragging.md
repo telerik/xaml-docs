@@ -1,7 +1,7 @@
 ---
 title: Changing the Appearance of RadTabbedWindow Tab During Drag
 page_title: Customizing Dragged RadTabItem When Dragging in RadTabbedWindow
-description: Add border of the tab item's drag visual while dragging from RadTabbedWindow.
+description: Add a border of the tab item's drag visual while dragging from RadTabbedWindow.
 type: how-to
 slug: kb-tabbedwindow-change-tab-appearance-when-dragging
 position: 0

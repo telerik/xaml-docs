@@ -4,7 +4,7 @@ description: Change Windows Handedness settings in code
 type: how-to
 page_title: How to change Windows Tablet PC Handedness Settings
 slug: kb-common-change-windows-handedness-settings
-position: 1
+position: 0
 tags: windows,tablet,settings,left-handed,right-handed,handedness,pc
 ticketid: 1429407
 res_type: kb
@@ -19,7 +19,7 @@ res_type: kb
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
-	    	<td>UI for WPF</td>
+	    	<td>Progress® Telerik® UI for WPF</td>
 	    </tr>
     </tbody>
 </table>

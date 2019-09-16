@@ -1,6 +1,6 @@
 ---
-title: Exception Thrown Attempting to set StrokeDashArray on CartesianChartGrid
-description: Specified value of type System.Windows.Media.DoubleCollection must have IsFrozen set to false to modify - occur if set StrokeDashArray property in MajorXLineStyle or MajorYLineStyle.
+title: Exception Thrown Attempting to Set StrokeDashArray on CartesianChartGrid
+description: Specified value of type System.Windows.Media.DoubleCollection must have IsFrozen set to false to modify - occurs if you set StrokeDashArray property in MajorXLineStyle or MajorYLineStyle.
 type: troubleshooting
 page_title: InvalidOperationException Thrown When Setting CartesianChartGrid Line StrokeDashArray Property
 slug: kb-chartview-invalid-operation-exception-strokedasharray

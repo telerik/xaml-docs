@@ -1,11 +1,11 @@
 ---
 title: InvalidOperationException When Using RadDocking on Different UI Threads
-page_title: InvalidOperationException Thrown If RadDocking Used on Multithreads
-description: The calling thread cannot access this object because a different thread owns it - message shown when RadDocking shown on a separate UI thread.
+page_title: InvalidOperationException Thrown If RadDocking Used on Multi threads
+description: The calling thread cannot access this object because a different thread owns it - message shown when RadDocking is shown on a separate UI thread.
 type: troubleshooting
 slug: kb-docking-invalidoperationexception-multi-threading
 position: 0
-tags: multithreading,invalidoperationexception
+tags: multithreading,invalidoperationexception,docking,pane
 ticketid: 1425680
 res_type: kb
 ---
@@ -30,7 +30,7 @@ res_type: kb
 
 ## Solution
 
-Define a custom Style targeting the PaneHeader control. Preferably, the Style be defined in the Resources of the Window or UserControl that shows the RadDocking on the separate thread. The Style should re-define the mouse right click input binding of the header.
+Define a custom Style targeting the PaneHeader control. Preferably, the Style is defined in the Resources of the Window or UserControl that shows the RadDocking on the separate thread. The Style should re-define the mouse right-click input binding of the header.
 
 #### __[XAML]__
 {{region kb-docking-invalidoperationexception-multi-threading-0}}

@@ -100,7 +100,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
 
 * **Validating**: Occurs when new content is about to be commited. Through the **PropertyGridValidatingEventArgs**, you can access the following properties:
-    * **Field**: Gets or sets the field of the current context.
+    * **Field**: Gets or sets the field of the current context. 
 
     * **IsValid**: Gets or sets a boolean value that indicates whether the changes are valid.
 
@@ -116,13 +116,16 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 * **PreparedEditor**: Occurs when the field editor gets prepared. Through the **PropertyGridPreparedEditorEventHandler**, you can access the following properties:
     * **Field**: Gets or sets the field of the current context.
 
-    * **Editor**: 
+    * **Editor**: Gets or sets the editor of the current context.
 
 
 * **FieldLoaded**: Occurs when a new field is loaded. Through the **FieldEventArgs**, you can access the **Field** property which gets or sets the field of the current context.
 
 
-* **Sorted**: Occurs after the property definitions are sorted alphabetically by clicking the [Sort button](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/visualstructure). (link vs).
+* **Sorted**: Occurs after the property definitions are sorted alphabetically by clicking the [Sort button](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/visualstructure).
+
+
+* **Grouped**: Occurs after the property definitions are grouped alphabetically by clicking the [Group button](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/visualstructure).
 
 
 * **SelectionChanged**: Occurs when the selected property definition has changed. Through the **SelectionChangeEventArgs**, you can access the following properties:
@@ -131,9 +134,6 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
     * **AddedItems**: Gets a list that contains the items that were selected.
 
     >Both properties are of type **ReadOnlyCollection**.
-
-
-* **Grouped**: Occurs after the property definitions are grouped alphabetically by clicking the [Group button](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/visualstructure) (link vs).
 
 
 ## See Also

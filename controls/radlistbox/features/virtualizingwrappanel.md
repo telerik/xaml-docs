@@ -26,6 +26,8 @@ The VirtualizingWrapPanel also suports the following attached properties from th
 * __VirtualizingPanel.IsVirtualizingWhenGrouping__ : Set this property to __True__ to enable virtualizing when grouping. 
 * __VirtualizingPanel.VirtualizationMode__: Specifies the method the panel will use to manage virtualizing its child items. The possible values are __Standard__ (create and discard the item containers) and __Recycling__ (reuse the item containers).
 
+>important Since the __R3 2019__ version, the __VirtualizingPanel.ScrollUnit__ property is respected for __.Net 4.5__ and above. Its default value is __Item__, which means that the default scrolling will be by item. In order to have pixel based scrolling you can set this property to __Pixel__.
+
 ## VirtualizingWrapPanel
 
 In order to demonstrate how the VirtualizingWrapPanel can be used, we will setup some sample data as demonstrated in __Example 1__.
@@ -211,7 +213,7 @@ __Example 3__ demonstrates how you can apply grouping to the data by setting the
 
 ## Grouping and Virtualization
 
-Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for **.Net 4.5** and above. In order to turn on this feature, you have to set the **VirtualizingPanel.IsVirtualizingWhenGrouping** attached property to **True**. Additionally, you have to set the **VirtualizingPanel.ScrollUnit** to **Pixel**, since **VirtualizingPanel.ScrollUnit="Item"** is not supported while grouping. Optionally, you can also set the __VirtualizingPanel.VirtualizationMode__ property to __Recycling__ in order for the item containers to be recycled during scrolling.
+Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for __.Net 4.5__ and above. In order to turn on this feature, you have to set the __VirtualizingPanel.IsVirtualizingWhenGrouping__ attached property to __True__. Additionally, you have to set the __VirtualizingPanel.ScrollUnit__ to __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported while grouping. Optionally, you can also set the __VirtualizingPanel.VirtualizationMode__ property to __Recycling__ in order for the item containers to be recycled during scrolling.
 
 #### __[XAML] Example 4: Turning on virtualization while grouping__
 {{region xaml-radlistbox-features-virtualizingwrappanel-4}}
@@ -219,6 +221,8 @@ Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel suppor
 						VirtualizingPanel.IsVirtualizingWhenGrouping="True"
 						VirtualizingPanel.VirtualizationMode="Recycling" />
 {{endregion}}
+
+>important When the __VirtualizingPanel.IsVirtualizingWhenGrouping__ property is set to __True__, the __VirtualizingPanel.ScrollUnit__ needs to be __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported.
 
 ## See Also
 

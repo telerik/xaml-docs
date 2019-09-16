@@ -43,7 +43,7 @@ To apply this globally to all RadTreeViewItems in the treeview, use the ItemCont
 	</telerik:RadTreeView.ItemContainerStyle>
 {{endregion}}
 
-To apply it per item set the property directly to the RadTreeViewItem
+To apply it per item set the property directly on the RadTreeViewItem.
 
 #### __[XAML]__
 {{region kb-treeview-stretch-item-content-horizontally-1}}

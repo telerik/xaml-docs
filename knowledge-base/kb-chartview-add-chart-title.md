@@ -5,7 +5,7 @@ description: Add a caption on top of RadCartesianChart using a TextBlock.
 type: how-to
 slug: kb-chartview-add-chart-title
 position: 0
-tags: title,header
+tags: title,header,chartview
 ticketid: 1425857
 res_type: kb
 ---
@@ -33,7 +33,7 @@ How to add a title to RadCartesianChart.
 To add a title, add the chart and a TextBlock in a Grid panel with two RowDefinitions.
 
 #### __[XAML]__
-{{region }}
+{{region kb-chartview-add-chart-title-0}}
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>

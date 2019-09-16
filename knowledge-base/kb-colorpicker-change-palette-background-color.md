@@ -38,7 +38,7 @@ How to change the Background Color of RadColorPicker's palette Headers.
 
 	#### __[XAML]__
 	{{region kb-colorpicker-change-palette-background-color-0}}
-		 <!--If you use NoXaml dlls set Based="{StaticResource RadColorSelectorStyle}"-->
+		 <!--If you use NoXaml dlls set BasedOn="{StaticResource RadColorSelectorStyle}"-->
 		 <Style x:Key="CustomRadColorSelectorStyle" TargetType="telerik:RadColorSelector">           
 			<Setter Property="Template">
 				<Setter.Value>

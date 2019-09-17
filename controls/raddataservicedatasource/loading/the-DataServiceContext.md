@@ -10,8 +10,6 @@ position: 0
 
 # The DataServiceContext
 
-
-
 __RadDataServiceDataSource__ requires a __DataServiceContext__ and a __DataServiceQuery&lt;T&gt;__ in order to connect to a remote server. 
 
 ## The DataServiceContext
@@ -33,16 +31,12 @@ A typical auto-generated __DataServiceContext__ class will look like this:
 	public partial class NorthwindEntities : global::System.Data.Services.Client.DataServiceContext
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region raddataservicedatasource-loading-the-DataServiceContext_1}}
 
 	Partial Public Class NorthwindEntities Inherits Global.System.Data.Services.Client.DataServiceContext
 {{endregion}}
-
-
 
 ## Setting DataServiceContext in code-behind
 
@@ -68,10 +62,6 @@ In order to create an instance of the DataServiceContext class, you need to spec
 	Me.radDataServiceDataSource.DataServiceContext = northwindContextSetting DataServiceContext in XAML
 {{endregion}}
 
-
-
-
-
 ## Setting DataServiceContext in XAML
 
 Since the __DataServiceContext__ class does not have a parameterless constructor, it cannot be directly instantiated in XAML. This can be worked around by creating another class with a parameterless constructor that derives from it and then hard-coding the __Uri__ in the call to the base constructor:
@@ -86,8 +76,6 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region raddataservicedatasource-loading-the-DataServiceContext_5}}
@@ -99,8 +87,6 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 	 End Sub
 	End Class
 {{endregion}}
-
-
 
 Once you have a context class with a parameterless constructor, you can easily instantiate it in XAML:
 

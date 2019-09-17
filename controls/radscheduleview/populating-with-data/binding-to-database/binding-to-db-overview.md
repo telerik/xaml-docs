@@ -10,20 +10,16 @@ position: 0
 
 # Overview
 
-The walkthrough in this section is intended for users who are familiar with developing applications for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} by using Visual Studio and know how to work with Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. You need the following components to complete this walkthrough:
+The section is aimed at giving you a general understanding of how you can bind the RadScheduleView control to data coming from a database.
 
-* Visual Studio 2010
+The next articles in this section will explain the types and sources which the RadScheduleView control uses, the interfaces which are needed for the control to function as expected, the relationships between these interfaces and how you can implement them to work with Entity Framework.
 
-* [ADO.NET Entity Framework 4.1](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=26825){% if site.site_name == 'Silverlight' %}
+You can find two fully-functioning examples in our [SDK Samples Browser]({%slug sdk-samples-browser%}) which demonstrate two approaches for setting up your project by using **Entity Framework** - with a database-first and a code-first approach. The source code of these examples can also be found in our GitHub repository:
 
-* [RIA Services for Visual Studio 2010](http://www.microsoft.com/en-us/download/details.aspx?id=28357){% endif %}
-
-Prior knowledge of the following concepts is also helpful, but not required to complete the walkthrough:{% if site.site_name == 'Silverlight' %}
-
-* [WCF RIA Services](http://msdn.microsoft.com/en-us/library/ee707344%28v=VS.91%29.aspx){% endif %}
-
-* Entity Data Models and the ADO.NET Entity Framework. For more information, see [Entity Data Model](http://msdn.microsoft.com/en-us/library/ee382825.aspx) and [Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx).      		
+[Database-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/Database)
+[Code-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/DatabaseEntityFramework)
 
 ## See Also
 
  * [RadScheduleView Types and Sources]({%slug radscheduleview-populating-with-data-binding-to-db-sources%})
+ * [Table Definitions and Relationships]({%slug radscheduleview-populating-with-data-binding-to-db-datatier%})

@@ -14,7 +14,14 @@ You can utilize all CRUD operations by working with the __DataView__ property of
 
 #### __[XAML] Example 1: Bind the DataView collection to RadGridView's ItemsSource__
 {{region raddataservicedatasource-crud_1}}
-    <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=customersDataSource}" IsBusy="{Binding IsBusy, ElementName=customersDataSource}" />
+    <Grid>
+        <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
+            <telerik:RadDataServiceDataSource.DataServiceContext>
+                <local:MyNorthwindContext/>
+            </telerik:RadDataServiceDataSource.DataServiceContext>
+        </telerik:RadDataServiceDataSource>
+        <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=customersDataSource}" IsBusy="{Binding IsBusy, ElementName=customersDataSource}" />
+    </Grid>
 {{endregion}}
 
 Once you're ready to submit the changes you can call the __SubmitChanges__ method of the control.
@@ -52,5 +59,6 @@ In order to reject the changes and reload the original data from the server you 
 {{endregion}}
 
 ## See Also
+* [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})
 * [MVVM Support]({%slug raddataservicedatasource-mvvm%})
 * [Paging through RadDataPager]({%slug raddataservicedatasource-paging-paging-through-raddatapager%})

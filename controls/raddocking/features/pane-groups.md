@@ -312,6 +312,8 @@ As can be seen on **Figure 2**, even when pane groups with fixed sizes are prese
 
 * __EnumeratePanes()__- returns __IEnumeratble__ of __RadPane__ objects. These are all the panes that currently belonging to the group.
 
+* __PropagateItemDataContextToContent__- Specifies whether the DataContext of the RadPane should be assigned as the DataContext of its content when the selection changes. The default value of this property is __True__.
+
 ## Styling the RadPaneGroup
 
 To learn how to style the __RadPaneGroup__ in your applications take a look at the [Styling the RadPaneGroup]({%slug raddocking-styling-the-radpanegroup%}) topic.

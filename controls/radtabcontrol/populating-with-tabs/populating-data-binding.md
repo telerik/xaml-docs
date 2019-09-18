@@ -44,6 +44,8 @@ The purpose of the __DataContext__ is to hold the data that will be bound (like 
 
 
 >The __DataContext__ is inherited in the visual tree, which means that the child controls of the __RadTabControl__ will have the same __DataContext__, if it is not explicitly changed.
+
+>important The __PropagateItemDataContextToContent__ property of the RadTabControl specifies whether the DataContext of the RadTabItem should be assigned as the DataContext of its content when the selection changes. The default value of this property is __True__.
 						
 
 ## Item Source

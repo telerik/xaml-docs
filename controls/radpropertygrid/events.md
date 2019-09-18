@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: This article lists and explains the events exposed by the RadPropertyGrid control.
 slug: radpropertygrid-events
 tags: events
 published: True
@@ -41,7 +41,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
     * **ShouldUpdateContent**: Gets or sets a boolean value that indicates whether the change of the item should force an update on the list of property definitions.
 
 
-* **AutoGeneratingPropertyDefinition**: Occurs when a property definition is being generated. Through the **AutoGeneratingPropertyDefinitionEventArgs**, you can access the **PropertyDefiniton** property which is of type [PropertyDefinition](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertydefinition). It gets or sets the property definition for each of the properties. You may edit the following properties of each property definition:
+* **AutoGeneratingPropertyDefinition**: Occurs when a property definition is being generated. Through the **AutoGeneratingPropertyDefinitionEventArgs**, you can access the **PropertyDefinition** property which is of type [PropertyDefinition](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertydefinition). It gets or sets the property definition for each of the properties. You may edit the following properties of each property definition:
 
 	* **Binding**: Points to the data member to display/edit in the field.
 	
@@ -73,7 +73,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
         }
     {{endregion}}
 
-    >The**BeginningEdit** event is raised only if the [EditMode](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/features/edit-modes) property of the **RadPropertyGrid** is set to **Single**. 
+    >The **BeginningEdit** event is raised only if the [EditMode](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/features/edit-modes) property of the **RadPropertyGrid** is set to **Single**. 
 
 
 * **EditEnded**: Occurs when an edit operation is finished. Through the **PropertyGridEditEndedEventArgs**, you can access the following properties:
@@ -96,21 +96,21 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
     
     * **NewValue**: Gets the new value.
 
-    >The**EditEnded** event is raised only if the [EditMode](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/features/edit-modes) property of the **RadPropertyGrid** is set to **Single**. 
+    >The **EditEnded** event is raised only if the [EditMode](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/features/edit-modes) property of the **RadPropertyGrid** is set to **Single**. 
 
 
-* **Validating**: Occurs when new content is about to be commited. Through the **PropertyGridValidatingEventArgs**, you can access the following properties:
+* **Validating**: Occurs when new content is about to be committed. Through the **PropertyGridValidatingEventArgs**, you can access the following properties:
     * **Field**: Gets or sets the field of the current context. 
 
     * **IsValid**: Gets or sets a boolean value that indicates whether the changes are valid.
 
-    * **ValidationResults**: Gets a collection of validation results which contains user friendly message.
+    * **ValidationResults**: Gets a collection of validation results which contain user-friendly а message.
 
 
-* **Validated**: Occurs when new content is commited. Through the **PropertyGridValidatedEventArgs**, you can access the following properties:
+* **Validated**: Occurs when new content is committed. Through the **PropertyGridValidatedEventArgs**, you can access the following properties:
     * **Field**: Gets or sets the field of the current context.
 
-    * **ValidationResults**: Gets a collection of validation results which contains user friendly message.
+    * **ValidationResults**: Gets a collection of validation results which contain user-friendly а message.
 
 
 * **PreparedEditor**: Occurs when the field editor gets prepared. Through the **PropertyGridPreparedEditorEventHandler**, you can access the following properties:

@@ -104,13 +104,13 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
     * **IsValid**: Gets or sets a boolean value that indicates whether the changes are valid.
 
-    * **ValidationResults**: Gets a collection of validation results which contain user-friendly а message.
+    * **ValidationResults**: Gets a collection of validation results which contain а user-friendly message.
 
 
 * **Validated**: Occurs when new content is committed. Through the **PropertyGridValidatedEventArgs**, you can access the following properties:
     * **Field**: Gets or sets the field of the current context.
 
-    * **ValidationResults**: Gets a collection of validation results which contain user-friendly а message.
+    * **ValidationResults**: Gets a collection of validation results which contain а user-friendly message.
 
 
 * **PreparedEditor**: Occurs when the field editor gets prepared. Through the **PropertyGridPreparedEditorEventHandler**, you can access the following properties:

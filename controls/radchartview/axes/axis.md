@@ -20,7 +20,11 @@ Here are the __common properties__ for all kinds of axes:
 
 * __LabelInterval__: Specifies the value indicating that only one out of n-axis labels should be visible, where n is the value of the property.        
 
-* __LabelFormat__: Format the text in the axis labels by specified [Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).        
+* __LabelFormat__: Format the text in the axis labels by specified [Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).  
+
+* __LabelTemplate__: The System.Windows.DataTemplate used to visualize axis labels.
+
+* __LabelStyle__: The System.Windows.Style to be applied to the default System.Windows.Controls.TextBlock instance created when the __LabelTemplate__ property is not set. The __TargetType__ of this style should be __TextBlock__.
 
 * __MajorStep__ (available for LinearAxis): Specify a step for the major ticks that determines at which values will major ticks be displayed. It is most commonly used with __Minimum__ and __Maximum__ properties.        
 
@@ -29,7 +33,6 @@ Here are the __common properties__ for all kinds of axes:
 * __MajorTickOffset__: As its name implies, __MajorTickOffset__ offsets the major ticks with n where n is the value of the property. For example, a LinearAxis with MajorStep="2" and MajorTickOffset="3" will have its values start at 6. (6, 8, 10 ... etc.)        
 
 * __MajorTickInterval__ (available for CategoricalAxis and DateTimeCategoricalAxis): Defines a value indicating that one axis label will be common for n number of Ticks where n is the value of the property.        
-
 * __LabelRotationAngle__: Specifies the value indicating the rotation angle for the X-axis labels. Use when label texts are long and are overlapping each other.        
 
 * __LastLabelVisibility__: Specifies whether the last label should be Clipped, Visible or Hidden.        

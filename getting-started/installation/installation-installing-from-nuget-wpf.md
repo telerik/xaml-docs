@@ -15,8 +15,6 @@ The following topic describes how you can install Telerik UI for WPF from a [NuG
 
 ## Available Packages
 
->importantFor each NuGet package we provide two options. The Nuget packages that have __Xaml__ in their name will download the [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls and the ones that don't, will download the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls. Mixing Xaml and NoXaml dlls in your projects is __not__ recommended.  
-
 We provide separate packages for the different assemblies from the UI for WPF suite and a common NuGet package containing all the dlls. Below you can find some information about the different packages. 
 
 * Nuget packages with the individual UI for WPF assemblies:
@@ -53,6 +51,8 @@ Through the Telerik NuGet Server users can easily include the Telerik UI for WPF
 5.Set the Telerik Server as a package source. Enter user credentials (from your Telerik account) when prompted and search for the needed package.
 
 ![](images/Common_InstallingFromNuGet_09_wpf.png)
+
+>importantFor each NuGet package we provide two options. The Nuget packages that have __Xaml__ in their name will download the [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls and the ones that don't, will download the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls. Mixing Xaml and NoXaml dlls in your projects is __not__ recommended.  
 
 >Using this approach you can only use versions from **2016.3.1024** and later. If you need to use a previous version of the suite you will need to create a local package source as described in the next section.
 

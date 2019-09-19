@@ -62,7 +62,7 @@ In order to set up a local package source, you can follow these steps:
 
 * Go to to the [UI for WPF Downloads](https://www.telerik.com/account/product-download?product=RCWPF) page.
 
-> You have 4 options when downloading the NuGet packages from your account. The files named __Telerik_UI_for_WPF_{version}_NuGet_{Xaml/NoXaml}_Dev.zip__ contain the NuGets for all asseblies for the support .NET versions. The files named __Telerik_UI_for_WPF_{version}_NuGet_Separate_Packages_{Xaml/NoXaml}_Dev.zip__ contain the separate NuGet packages for all UI for WPF assemblies.
+> You have 4 options when downloading the NuGet packages from your account. The files named __Telerik_UI_for_WPF_{version}_NuGet_{Xaml/NoXaml}_Dev.zip__ are available for the supported .NET versions and combine all UI for WPF assemblies in one NuGet. The files named __Telerik_UI_for_WPF_{version}_NuGet_Separate_Packages_{Xaml/NoXaml}_Dev.zip__ contain the separate NuGet packages of all UI for WPF assemblies.
 
 * Download the needed NuGet .zip file(s) depending on whether you're using [Xaml or NoXaml]({%slug xaml-vs-noxaml%}) binaries and extract it into the folder where your Telerik NuGet packages are located.
 

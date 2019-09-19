@@ -107,12 +107,12 @@ Here is how the localized __RadScheduleView__ looks like:
 
 ##  Localization Using Custom Localization Manager
 
-The other way to localize your __RadScheduleView__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below:
+The other way to localize your __RadScheduleView__ control is to create a class that derives from the __ScheduleViewLocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below:
 
 #### __C#__
 
 {{region radscheduleview-localization_4}}
-	public class CustomLocalizationManager : LocalizationManager
+	public class CustomLocalizationManager : ScheduleViewLocalizationManager
 	{
 	   public override string GetStringOverride( string key )
 	   {
@@ -142,7 +142,7 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 
 {{region radscheduleview-localization_5}}
 	Public Class CustomLocalizationManager
-	    Inherits LocalizationManager
+	    Inherits ScheduleViewLocalizationManager
 	    Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	        Select Case key
 	            Case "Timeline"
@@ -164,6 +164,8 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 	    End Function
 	End Class
 {{endregion}}
+
+> It is important for the custom localization manager to derive from __ScheduleViewLocalizationManager__ and not from __LocalizationManager__. 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 
@@ -403,9 +405,6 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 	   {
 	       System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo( "nl" );
 	       System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo( "nl" );
-	       this.Startup += this.Application_Startup;
-	       this.Exit += this.Application_Exit;
-	       this.UnhandledException += this.Application_UnhandledException;
 	       InitializeComponent();
 	   }
 	}

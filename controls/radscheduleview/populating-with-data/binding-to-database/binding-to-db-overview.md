@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The section is aimed at giving you a general understanding of how you can bind the RadScheduleView control to data coming from a database.
+The section aims to give you a general understanding of how you can bind the RadScheduleView control to data coming from a database.
 
 The next articles in this section will explain the types and sources which the RadScheduleView control uses, the interfaces which are needed for the control to function as expected, the relationships between these interfaces and how you can implement them to work with Entity Framework.
 

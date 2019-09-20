@@ -15,7 +15,6 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 ## RadGridView
 
-
 * ### Data Events
             
 
@@ -67,7 +66,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
     * __PreparedCellForEdit__: Occurs after the PreparingCellForEdit event.
 
-[Read more]({%slug gridview-events-edit%})            
+    [Read more]({%slug gridview-events-edit%})            
 
 * ### Delete Event 
 [Read more]({%slug gridview-events-delete%})
@@ -90,7 +89,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
     * __Sorted__: Occurs when the grid data has been sorted. The type of the passed event arguments is __GridViewSortedEventArgs__.
 
-[Read more]({%slug gridview-sorting-basics%})
+    [Read more]({%slug gridview-sorting-basics%})
 
 
 * ### Grouping 
@@ -102,7 +101,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
     * __ChildTableDefinitionAdded__: Occurs when a new child table definition has been added. The type of the passed event arguments is __TableDefinitionCreatedEventArgs__.
 
-[Read more]({%slug gridview-grouping-basics%})
+    [Read more]({%slug gridview-grouping-basics%})
 
 * ### Exporting Events 
           
@@ -115,7 +114,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
     * __ElementExportedToDocument__: Occurs after the ElementExportingToDocument event. Within it you can access the StreamWriter and write additional data to the stream.
 
-[Read more]({%slug gridview-export-events%})          
+    [Read more]({%slug gridview-export-events%})          
 
 * ### Row Details Events
         
@@ -136,7 +135,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
     * __ColumnWidthChanged__: Occurs after the resize is complete. The type of the passed event arguments is __ColumnWidthChangedEventArgs__
 
-[Read more]({%slug gridview-column-resize-event%})
+    [Read more]({%slug gridview-column-resize-event%})
 
 * ### Other
 
@@ -166,9 +165,9 @@ This topic covers the specific events exposed by the __RadGridView__ control and
             }
         {{endregion}}
 
-    * >Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy](gridview-hierachy-overview) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
+    >Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy](gridview-hierachy-overview) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
 
-* ## GridViewColumn
+## GridViewColumn
 
 
 * ### Sorting
@@ -177,7 +176,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
     * __SortingStateChanged__: Occurs when the sorting state of the column is changed. The type of the passed event arguments is __RadRoutedPropertyChangedEventArgs<SortingState>__.
             
 
-* ## GridViewRow
+## GridViewRow
 
 
 * ### Data Events
@@ -203,7 +202,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
     * __IsExpandedChanged__: Occurs when __GridViewRow__ changes its __IsExpanded__ state. The type of the passed event arguments is __RoutedEventArgs__.
             
 
-* ## GridViewCell
+## GridViewCell
 
 
 * ### Data Events

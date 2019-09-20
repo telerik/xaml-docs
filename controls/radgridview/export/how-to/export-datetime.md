@@ -32,13 +32,11 @@ __CAUSE__
 
 __SOLUTION__
 
-When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ methods, the arguments of the __ElementExportingToDocument__ event can be used to modify the visual appearance of the exported values and specify how they should be formatted in Excel. This is achieved through the  **VisualParameters** property of the **GridViewCellExportingEventArgs**.
-
-**Example 1** illustrates the approach:
+When an element is exported through the [ExportToXlsx]({%slug gridview-export-xlsx%}), [ExportToPdf]({%slug gridview-export-pdf%}), [ExportToWorkbook]({%slug gridview-export-workbook%}) or [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%}) methods, the arguments of the [ElementExportingToDocument]({%slug gridview-export-events-elementexporting-elementexported-todocument%}) event can be used to modify the visual appearance of the exported values and specify how they should be [formatted](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes#date-and-time-formatting) in Excel. This is achieved through the  **VisualParameters** property of the **GridViewCellExportingEventArgs**.
 
 #### __[C#] Example 1: Exporting DateTime Values to Excel__
 
-	{{region cs-gridview-export-how-to-export-datetime-1}}
+{{region cs-gridview-export-how-to-export-datetime-1}}
 	this.radGridView.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -58,7 +56,7 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 
 #### __[VB.NET] Example 1: Exporting DateTime Values to Excel__
 
-	{{region vb-gridview-export-how-to-export-datetime-2}}
+{{region vb-gridview-export-how-to-export-datetime-2}}
 	AddHandler Me.radGridView.ElementExportingToDocument, Sub(s, e)
 	                                                          If e.Element = ExportElement.Cell Then
 	                                                              Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -69,8 +67,6 @@ When an element is exported through the __ExportToXlsx__ or __ExportToPdf__ meth
 	                                                          End If
 	                                                      End Sub
 {{endregion}}
-
-**Figure 3** shows the final result in Excel:
 
 #### __Figure 3: Exporting DateTime values with ElementExportingToDocument__
 

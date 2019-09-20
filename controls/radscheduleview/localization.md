@@ -165,7 +165,7 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 	End Class
 {{endregion}}
 
-> It is important for the custom localization manager to derive from __ScheduleViewLocalizationManager__ and not from __LocalizationManager__. 
+>important It is important for the custom localization manager to derive from __ScheduleViewLocalizationManager__ and not from __LocalizationManager__. 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 

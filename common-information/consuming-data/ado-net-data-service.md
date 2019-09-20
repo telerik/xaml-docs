@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you how to make a call to an ADO.NET Dat
 
 >The process of developing an ADO.NET Data Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/cc907912.aspx).
 
->This tutorial will use the __Northwind__ database, which can be downloaded from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/Northwind/Northwind.svc)
+>This tutorial will use the __Northwind__ database, which can be downloaded from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
 
 >tipThe Telerik __OpenAccess__ ORM also supports excellent integration with ADO.NET Data Services.
 

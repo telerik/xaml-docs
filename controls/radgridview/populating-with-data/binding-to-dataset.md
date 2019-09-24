@@ -95,14 +95,14 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataSet i
     Public Class MainViewModel
 	Inherits ViewModelBase
 
-		Private _dataSet As DataSet
-		Public ReadOnly Property DataSet() As DataSet
+		Private set As DataSet
+		Public Property DataSet() As DataSet
 			Get
-				If Me._dataSet Is Nothing Then
-					Me._dataSet = Me.CreateDataSet()
+				If Me.set Is Nothing Then
+					Me.set = Me.CreateDataSet()
 				End If
 
-				Return Me._dataSet
+				Return set
 			End Get
 		End Property
 

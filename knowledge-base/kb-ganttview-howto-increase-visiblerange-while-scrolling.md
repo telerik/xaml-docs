@@ -1,10 +1,10 @@
 ---
-title: How to have infinite horizontal scrolling
+title: How to Have Infinite Horizontal Scrolling
 description: How to increase VisibleRange while scrolling the TimeRuler part
 type: how-to
-page_title: Add to the VisibleRange while scrolling
+page_title: Add to the VisibleRange While Scrolling
 slug: kb-ganttview-howto-increase-visiblerange-while-scrolling
-position: 
+position: 0
 tags: ganttview, infinite, scrolling, timeruler, horizontal
 ticketid: 1426000
 res_type: kb
@@ -19,7 +19,6 @@ res_type: kb
 		</tr>
 	</tbody>
 </table>
-
 
 ## Description
 

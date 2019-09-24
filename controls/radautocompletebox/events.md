@@ -20,7 +20,7 @@ The __RadAutoCompleteBox__ exposes almost all of the **TextBox** events. Additio
 
 * __Populated__: Occurs after RadAutoCompleteBox populates its popup with items. The type of the passed arguments is __EventArgs__.
 
-* __ItemsFound__: Occurs when the items' search is completed. It is an event for [AsyncFilteringBehavior](https://docs.telerik.com/devtools/wpf/controls/radautocompletebox/features/filteringbehavior). The type of the passed arguments is __AsyncItemSearchEventArgs__.
+* __ItemsFound__: Occurs when the items' search is completed. It is an event of [AsyncFilteringBehavior](https://docs.telerik.com/devtools/wpf/controls/radautocompletebox/features/filteringbehavior). The type of the passed arguments is __AsyncItemSearchEventArgs__.
 
 #### __[C#] Example 1: Modify the collection with the found results from the event arguments__
 

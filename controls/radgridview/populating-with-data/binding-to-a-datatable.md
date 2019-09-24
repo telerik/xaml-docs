@@ -105,9 +105,7 @@ __Example 2__ demonstrates how the RadGridView is set up in XAML. Please, pay at
             <!-- The namespace "my" refers to the namespace where the MyViewModel class is defined-->
             <my:MyViewModel />
         </Grid.DataContext>
-        <telerik:RadGridView Grid.Row="0" 
-                             Name="clubsGrid" 
-                             ItemsSource="{Binding DataTable.DefaultView}"
+        <telerik:RadGridView ItemsSource="{Binding DataTable.DefaultView}"
                              AutoGenerateColumns="False"
                              GroupRenderMode="Flat"
                              Margin="5">

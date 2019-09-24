@@ -2,7 +2,7 @@
 title: Virtualization of GridView in RowDetails
 description: How to turn on virtualization in RowDetails RadGridView
 type: how-to
-page_title: Nested RadGridView performance
+page_title: Improve Nested RadGridView Performance
 slug: kb-gridview-howto-rowdetails-virtualization
 position: 0
 tags: slow, scrolling, performance, rowdetails, radgridview
@@ -20,14 +20,13 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 How to make sure that the virtualization of a RadGridView inside the [RowDetailsTemplate]({%slug radgridview-row-details-template%}) of another RadGridView is enabled.
 
 ## Solution 
 
-Set the __Height__ property of the RowDetails RadGridView. This will ensure that it is not measured with infinity and enable the virtualization. Since the element that hosts the RowDetails is inside a RowDefinition with its Height set to Auto, by default the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) will be disabled.
+Set the __Height__ property of the RadGridView in the RowDetails. This will ensure that it is not measured with infinity and enable the virtualization. Since the element that hosts the RowDetails is inside a RowDefinition with its Height set to Auto, by default the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) will be disabled.
 
 #### __[C#]__
 {{region kb-gridview-howto-rowdetails-virtualization-0}}

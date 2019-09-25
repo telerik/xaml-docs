@@ -39,7 +39,7 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 		}
 	{{endregion}}
   
-  #### __[VB.NET]__
+	#### __[VB.NET]__
 	{{region vb-kb-propertygrid-set-collection-editor-grid-properties-0}}
 		Private Sub RadPropertyGrid_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim editorPicker = rpg.ChildrenOfType(Of CollectionEditorPicker)().First()
@@ -56,12 +56,12 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 		{
 			var collectionEditor = sender as CollectionEditor;
 			var propertyGrid = collectionEditor.ChildrenOfType<RadPropertyGrid>().First();
-      propertyGrid.LabelColumnWidth = new GridLength(50);
-      // set any other properties
+      			propertyGrid.LabelColumnWidth = new GridLength(50);
+      			// set any other properties
 		}
 	{{endregion}}
   
-  #### __[VB.NET]__
+  	#### __[VB.NET]__
 	{{region vb-kb-propertygrid-set-collection-editor-grid-properties-1}}
 		Private Sub CollectionEditor_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim collectionEditor = TryCast(sender, CollectionEditor)

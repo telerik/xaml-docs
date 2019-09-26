@@ -1,49 +1,53 @@
 ---
-title: View specific properties
-page_title: View specific properties
-description: View specific properties
+title: View Specific Properties
+page_title: View Specific Properties
+description: View Specific Properties
 slug: radscheduleview-viewdefinitions-specificproperties
 tags: view,specific,properties
 published: True
 position: 2
 ---
 
-# View specific properties
+# View Specific Properties
 
 >You can check the [Configuration]({%slug radscheduleview-viewdefinitions-configuration%}) article for more information about the properties that are common for all views.              
 
-## DayView and WeekView specific properties
+## DayView and WeekView Specific Properties
 
 Some ViewDefinitions have specific properties. Here is a list of specific properties for DayView and WeekView:       
 
-* __EnableSmallAppointmentRendering__ - gets or sets whether appointments with duration smaller than MinorTickLength will be rounded to MinorTickLength. 
+* __EnableSmallAppointmentRendering__: Gets or sets whether appointments with duration smaller than MinorTickLength will be rounded to MinorTickLength. 
 
 >When __EnableSmallAppointmentRendering__ is enabled, RadScheduleView will display the appointments with zero duration inside DayViewDefinition and WeekViewDefinition.
 
-* __ShowWeekGroupHeaders__ – gets or sets whether the WeekHeaders should be visible.
+* __ShowWeekGroupHeaders__: Gets or sets whether the WeekHeaders should be visible.
 
-* __WeekGroupHeaderStringFormat__ – gets or sets the format that will be applied to the WeekHeaders. After setting the __ShowWeekGroupHeaders__ to __True__ you can customize the string format of the week numbers displayed in the Header.        
+* __WeekGroupHeaderStringFormat__: Gets or sets the format that will be applied to the WeekHeaders. After setting the __ShowWeekGroupHeaders__ to __True__ you can customize the string format of the week numbers displayed in the Header.        
 
-The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:        
+	The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:        
 
-#### __XAML__
-{{region radscheduleview-viewdefinition-specificproperties_1}}
-	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-{{endregion}}
+	#### __XAML__
+	{{region radscheduleview-viewdefinition-specificproperties_1}}
+		<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+			<telerik:RadScheduleView.ViewDefinitions>
+				<telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
+			</telerik:RadScheduleView.ViewDefinitions>
+		</telerik:RadScheduleView>
+	{{endregion}}
 
-#### __C#__
-{{region radscheduleview-viewdefinition-specificproperties_2}}
-	weekDefinition.ShowWeekGroupHeaders = true;
-	weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
-{{endregion}}
+	#### __C#__
+	{{region radscheduleview-viewdefinition-specificproperties_2}}
+		weekDefinition.ShowWeekGroupHeaders = true;
+		weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
+	{{endregion}}
 
-Here is the end result:
+	Here is the end result:
 
-![scheduleview features specific properties 1](images/scheduleview_features_specific_properties_1.png)
+	![RadScheduleView with Week Headers](images/scheduleview_features_specific_properties_1.png)
+
+* __ShowAllDayArea__: Gets or sets a value indicating whether the all-day area is visible or not. This area displays appointments which have their **IsAllDayEvent** property set to **True**.
+
+	![RadScheduleView AllDayArea](images/scheduleview_features_specific_properties_4.png)
 
 ## MonthView specific properties
 

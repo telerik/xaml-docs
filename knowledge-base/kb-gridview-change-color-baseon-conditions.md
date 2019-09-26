@@ -1,11 +1,11 @@
 ---
-title: Change the color of GridViewCell Based on value when using DataTable
-description: Using a converter to change the background of a GridViewCell
+title: Change the Color of GridViewCell Based on a Property's Value
+description: Using a Property's Value to Change the Background of a GridViewCell
 type: how-to
-page_title: Change the color of GridView elements using a converter
+page_title: Apply a Different Background on the GridViewCell Based on a Condition
 slug: kb-gridview-change-color-baseon-conditions
 position: 
-tags: 
+tags: background, condition, cell, gridview, converter
 ticketid: 1431006
 res_type: kb
 ---
@@ -56,10 +56,11 @@ To achieve the desired result, you need to create a converter with multiple cond
 {{endregion}}
 
 #### __[XAML]__
-{{region kb-gridview-change-color-baseon-conditions-0}}
+{{region kb-gridview-change-color-baseon-conditions-1}}
     <Grid.Resources>
         <local:ValueToColorConverter x:Key="ColorConverter"/>
-        <Style TargetType="telerik:GridViewCell">
+	<!-- If you are using the StyleManager theming mechanism with the XAML binaries, remove the BasedOn attributes -->
+        <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
             <Setter Property="Background" Value="{Binding Value, Converter={StaticResource ColorConverter}}"/>
         </Style>
     </Grid.Resources>

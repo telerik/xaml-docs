@@ -34,21 +34,21 @@ To remove the backround of a RadPane, add the following Styles:
 
 #### __[XAML]__
 {{region kb-docking-howto-set-pane-background-to-transparent-0}}
-<Application.Resources>
-  <!-- If you are using the StyleManager theming mechanism, remove the BasedOn attributes -->
-	<Style TargetType="telerik:RadPane" BasedOn="{StaticResource RadPaneStyle}">
-		<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
-		<Setter Property="Background" Value="Transparent"/>
-	</Style>
-	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}">
-		<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
-		<Setter Property="Background" Value="Transparent"/>
-	</Style>
-	<Style TargetType="telerik:AutoHideArea" BasedOn="{StaticResource AutoHideAreaStyle}">
-		<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
-		<Setter Property="Background" Value="Transparent"/>
-	</Style>
-</Application.Resources>
+	<Application.Resources>
+  		<!-- If you are using the StyleManager theming mechanism with the XAML binaries, remove the BasedOn attributes -->
+		<Style TargetType="telerik:RadPane" BasedOn="{StaticResource RadPaneStyle}">
+			<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}">
+			<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+		<Style TargetType="telerik:AutoHideArea" BasedOn="{StaticResource AutoHideAreaStyle}">
+			<Setter Property="mat:MaterialAssist.IsShadowDisabled" Value="True"/>
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+	</Application.Resources>
 {{endregion}}
 
 > The setters for the **mat:MaterialAssist.IsShadowDisabled** properties are only needed for the **Crystal**, **Fluent** and **Material** themes.

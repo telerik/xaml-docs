@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-How to change the background color of a GridViewCell using a converter.
+How to change the color of a GridViewCell based on the value of a property of the underlying data item.
 
 ## Solution
 To achieve the desired result, you need to create a converter with multiple conditions.

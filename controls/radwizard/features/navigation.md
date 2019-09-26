@@ -54,6 +54,9 @@ Here's an example of handling the **SelectionChanged** event to jump to a partic
 	End Sub
 {{endregion}}
 
+>tipThe __SelectedPage__ property is of type __WizardPage__ and gets the page from which it was invoked.
+The __SelectedPageIndex__ property is of type __int__ and gets the page with the corresponding index.
+
 **Example 2** in turn demonstrates how to use the **Finish** event to return to the starting page once the user clicks **Finish**.
 
 #### __[C#] Example 2: Restart the wizard when the Finish button is clicked__

@@ -54,3 +54,13 @@ To achieve the desired result, you need to create a converter with multiple cond
         }
     }
 {{endregion}}
+
+#### __[XAML]__
+{{region kb-gridview-change-color-baseon-conditions-0}}
+    <Grid.Resources>
+        <local:ValueToColorConverter x:Key="ColorConverter"/>
+        <Style TargetType="telerik:GridViewCell">
+            <Setter Property="Background" Value="{Binding Value, Converter={StaticResource ColorConverter}}"/>
+        </Style>
+    </Grid.Resources>
+{{endregion}}

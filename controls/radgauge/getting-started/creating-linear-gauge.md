@@ -38,10 +38,10 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 	                    Max="20"
 	                    RelativeHeight="1"
 	                    RelativeY="0"
-	                    MiddleTickRelativeWidth="0.05*"
-	                    MiddleTickRelativeHeight="0.003*"
-	                    MinorTickRelativeHeight="0.003*"
-	                    MajorTickRelativeHeight="0.003*">
+	                    MiddleTickRelativeWidth="0.05\*"
+	                    MiddleTickRelativeHeight="0.003\*"
+	                    MinorTickRelativeHeight="0.003\*"
+	                    MajorTickRelativeHeight="0.003\*">
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
@@ -65,14 +65,14 @@ The __LinearScale__ control allows you to display different types of indicators 
 	                         Max="20"
 	                         RelativeHeight="1"
 	                         RelativeY="0"
-	                         MiddleTickRelativeWidth="0.05*"
-	                         MiddleTickRelativeHeight="0.003*"
-	                         MinorTickRelativeHeight="0.003*"
-	                         MajorTickRelativeHeight="0.003*">
+	                         MiddleTickRelativeWidth="0.05\*"
+	                         MiddleTickRelativeHeight="0.003\*"
+	                         MinorTickRelativeHeight="0.003\*"
+	                         MajorTickRelativeHeight="0.003\*">
 	        <telerik:VerticalLinearScale.Indicators>
 	            <telerik:Marker telerik:LinearScale.RotateForVertical="True"
-	                            telerik:ScaleObject.RelativeWidth="0.08*"
-	                            telerik:ScaleObject.RelativeHeight="0.03*" 
+	                            telerik:ScaleObject.RelativeWidth="0.08\*"
+	                            telerik:ScaleObject.RelativeHeight="0.03\*" 
 	                            telerik:ScaleObject.Location="OverCenter" />
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
@@ -94,15 +94,15 @@ To make the indicator point to a certain value on the scale, you have to use the
 	                         Max="20"
 	                         RelativeHeight="1"
 	                         RelativeY="0"
-	                         MiddleTickRelativeWidth="0.05*"
-	                         MiddleTickRelativeHeight="0.003*"
-	                         MinorTickRelativeHeight="0.003*"
-	                         MajorTickRelativeHeight="0.003*">
+	                         MiddleTickRelativeWidth="0.05\*"
+	                         MiddleTickRelativeHeight="0.003\*"
+	                         MinorTickRelativeHeight="0.003\*"
+	                         MajorTickRelativeHeight="0.003\*">
 	        <telerik:VerticalLinearScale.Indicators>
 	            <telerik:Marker Value="5"
 	                            telerik:LinearScale.RotateForVertical="True"
-	                            telerik:ScaleObject.RelativeWidth="0.08*"
-	                            telerik:ScaleObject.RelativeHeight="0.03*" 
+	                            telerik:ScaleObject.RelativeWidth="0.08\*"
+	                            telerik:ScaleObject.RelativeHeight="0.03\*" 
 	                            telerik:ScaleObject.Location="OverCenter" />
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>

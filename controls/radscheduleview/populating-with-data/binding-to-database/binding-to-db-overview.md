@@ -16,8 +16,8 @@ The next articles in this section will explain the types and sources which the R
 
 You can find two fully-functioning examples in our [SDK Samples Browser]({%slug sdk-samples-browser%}) which demonstrate two approaches for setting up your project by using **Entity Framework** - with a database-first and a code-first approach. The source code of these examples can also be found in our GitHub repository:
 
-[Database-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/Database)
-[Code-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/DatabaseEntityFramework)
+* [Database-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/Database)
+* [Code-First Approach](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/DatabaseEntityFramework)
 
 ## See Also
 

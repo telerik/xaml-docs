@@ -32,9 +32,9 @@ As the DataContext of the **GridViewHeaderCell** is different than the one of it
 
 #### __[XAML]__
 {{region xaml-kb-gridview-howto-bind-header-cell-content-radgridview-datacontext-0}}
-  <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
-    <telerik:GridViewDataColumn.Header>
-        <TextBlock Text="{Binding DataContext.NamePropertyString, RelativeSource={RelativeSource AncestorType=telerik:RadGridView}}" />
-    </telerik:GridViewDataColumn.Header>
-  </telerik:GridViewDataColumn>
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
+		<telerik:GridViewDataColumn.Header>
+			<TextBlock Text="{Binding DataContext.NamePropertyString, RelativeSource={RelativeSource AncestorType=telerik:RadGridView}}" />
+		</telerik:GridViewDataColumn.Header>
+	</telerik:GridViewDataColumn>
 {{endregion}}

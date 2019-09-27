@@ -41,7 +41,7 @@ Such behavior can be observed only when there are elements with greater width th
 
 > The recommended Width value in the above style depends on the application theme that you use, plus the default **Culture** and the default **FontSize** of the RadGridView.
 
-The table below contains all of the [available themes]({%slug common-styling-appearance-list-of-themes%}), their default font sizes and the recommended width values for the FilteringControl.
+The table below contains all of the [available themes]({%slug common-styling-appearance-available-themes%}), their default font sizes and the recommended width values for the FilteringControl.
 
 |Theme name|Default FontSize|Recommended Width|
 |----------|-----------|---|
@@ -79,5 +79,5 @@ The table below contains all of the [available themes]({%slug common-styling-app
 If you need  to apply bigger font sizes for a theme, different than the default or the max ones, you will need to match them with an appropriate width value.
 
 ## See Also
-* [Available Themes]({%slug common-styling-appearance-list-of-themes%})
+* [Available Themes]({%slug common-styling-appearance-available-themes%})
 * [Popup Filtering]({%slug gridview-filtering-basic%}#popup-filtering)

@@ -341,6 +341,15 @@ navigation:
         title: RadFluidContentControl
     controls/radcloudupload:
         title: RadCloudUpload
+    controls/radcloudupload/features:
+        title: Features
+        position: 5
+    controls/radcloudupload/styles-and-templates:
+        title: Styles and Templates
+        position: 6
+    controls/radcloudupload/how-to:
+        title: How To
+        position: 7
     controls/radcoloreditor:
         title: RadColorEditor
     controls/radcoloreditor/overview:

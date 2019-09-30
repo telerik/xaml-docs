@@ -1,8 +1,8 @@
 ---
 title: Localization
 page_title: Localization
-description: This article lists the resource keys which can be used to localize the RadCouldUpload control.
-slug: radcouldupload-localization
+description: This article lists the resource keys which can be used to localize the RadCloudUpload control.
+slug: radcloudupload-localization
 tags: localization
 published: True
 position: 4
@@ -10,7 +10,7 @@ position: 4
 
 # Localization
 
-This article will go over available resource keys for localizing the RadCouldUpload control.
+This article will go over the available resource keys for localizing the RadCloudUpload control.
 
 > A more detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 
@@ -32,7 +32,7 @@ Below is the list of the supported languages.
 
 ## Resource Keys
 
-RadCouldUpload provides strings for localizing various of its elements. In order to be able to distinguish these resources, a unique identifier, called a __resource key__, is assigned to each localizable string.
+RadCloudUpload provides strings for localizing many of its elements. In order to be able to distinguish these resources, a unique identifier, called a __resource key__, is assigned to each localizable string.
 
 Here is a list of all of the available __resources__ and their default values:
 

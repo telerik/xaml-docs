@@ -57,7 +57,7 @@ You can apply a string format to the header of the different views through the f
 * __YearViewHeaderFormat__: Gets or sets the format for the header of the year view of the calendar.
 * __CenturyViewHeaderFormat__: Gets or sets the format for the header of the century view of the calendar.
 
-## Controling the MoveRight and MoveLeft buttons visibility
+## Controling the MoveRight and MoveLeft Buttons Visibility
 
 * __PreviousButtonVisibility__: Gets or sets the visibility of the __MoveLeft__ button.
 * __NextButtonVisibility__: Gets or sets the visibility of the __MoveRight__ button.

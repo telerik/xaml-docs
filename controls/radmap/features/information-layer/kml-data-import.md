@@ -20,6 +20,16 @@ This topic will explain the following:
 
 * [Manual Shape Reading](#manual-shape-reading)
 
+#### Supported KML elements:
+
+1. Point
+2. LineString
+3. Polygon (including outerBoundaryIs and innerBoundaryIs)
+4. Styles: IconStyle (including HotSpot), LineStyle, PolyStyle
+5. BalloonStyle (partially)
+6. ExtendedData
+7. Partial support for MultiGeometry tag.
+
 ## Reading KML files with RadMap
 
 To read your data you have to use the __MapShapeReader__ class. To learn more about its general usage read the [Shape Reader]({%slug radmap-features-information-layer-shape-reder%}) topic.

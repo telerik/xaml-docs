@@ -14,9 +14,9 @@ The __RadMap__ provides support for stunning map overlays through its KML-import
 
 >tip To learn more about the __KML__ you can read [here](http://code.google.com/apis/kml/documentation/).
 
-## Supported KML Elements:
+## Supported KML Elements
 
-List of supported KML elements by __RadMap__: 
+List of supported KML elements by the __RadMap__ control: 
 
 1. Point
 2. LineString

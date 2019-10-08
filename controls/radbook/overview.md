@@ -1,8 +1,8 @@
 ---
 title: Overview
-page_title: Use animated flipping of pages or a hard-cover effect to recreate the physical book experience.
+page_title: This article gives a general overview and lists the key features of the RadBook control.
 description: Overview
-slug: radbook-visual-structure
+slug: radbook-overview
 tags: overview, radbook
 published: True
 position: 0
@@ -33,7 +33,7 @@ Thank you for choosing Telerik __RadBook__!
 
 >tip Get started with the control with its [Getting Started]({%slug radbook-getting-started%}) help article that shows how to use it in a basic scenario.
 
->Check out the online demos at [demos.telerik.com](https://demos.telerik.com/wpf/).
+>Check out the online demos in the {% if site.framework_name == 'Silverlight' %}[UI for Silverlight Controls Examples](https://demos.telerik.com/silverlight/#ComboBox/FirstLook/){% endif %}{% if site.framework_name == 'WPF' %}[UI for WPF Controls Examples](https://demos.telerik.com/wpf/){% endif %} application.
 
 ## See Also
 

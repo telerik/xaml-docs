@@ -14,13 +14,9 @@ The __RadMap__ provides support for stunning map overlays through its KML-import
 
 >tip To learn more about the __KML__ you can read [here](http://code.google.com/apis/kml/documentation/).
 
-This topic will explain the following:
+## Supported KML Elements:
 
-* [Reading KML files with RadMap](#reading-kml-files-with-radmap)
-
-* [Manual Shape Reading](#manual-shape-reading)
-
-#### Supported KML elements:
+List of supported KML elements by __RadMap__: 
 
 1. Point
 2. LineString
@@ -29,6 +25,8 @@ This topic will explain the following:
 5. BalloonStyle (partially)
 6. ExtendedData
 7. Partial support for MultiGeometry tag.
+
+>If unsupported elements are present in the source KML file, they are ignored by the KML layer and won't appear in the map or scene display.
 
 ## Reading KML files with RadMap
 

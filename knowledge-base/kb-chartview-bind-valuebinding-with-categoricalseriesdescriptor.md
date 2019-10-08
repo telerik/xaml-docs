@@ -4,7 +4,7 @@ description: How to Bind ValueBinding Property of a Series by Using CategoricalS
 type: how-to
 page_title: How to DataBind ValuePath of CategoricalSeriesDescriptor 
 slug: kb-chartview-bind-valuebinding-with-categoricalseriesdescriptor
-position: 
+position: 0
 tags: ValuePath, IValueConverter, CategoricalSeriesDescriptor, ValueBinding
 ticketid: 1431542
 res_type: kb
@@ -24,10 +24,9 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
-How to DataBind ValuePath of CategoricalSeriesDescriptor
+How to DataBind ValuePath of CategoricalSeriesDescriptor.
 
 ## Solution
 

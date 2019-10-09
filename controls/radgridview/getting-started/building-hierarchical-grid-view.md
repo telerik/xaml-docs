@@ -14,7 +14,7 @@ This tutorial will walk you through the process of displaying hierarchical data 
 
 The final result should look like the one displayed on **Figure 1**.
 
-#### Figure 1: RadGridView without a hierarchy
+#### Figure 1: Hierarchical RadGridView
 
 ![Telerik {{ site.framework_name }} DataGrid Building Hierarchical Grid](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
@@ -144,7 +144,7 @@ The class that represents a single division will contain a collection of Team ob
 	End Class
 {{endregion}}
 
->Note that if you want to support two way binding your classes should implement the __INotifyPropertyChanged__ interface and rise the __PropertyChanged__ event every time a property value changes.
+>Note that if you want to support two way binding your classes should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
 
 Create a __DivisionsService__ class and implement a static method __GetDivisions.__ For the purpose of this tutorial it will return an observable collection containing several hard-coded divisions.
 
@@ -374,7 +374,7 @@ If you need to set properties of the child RadGridView instances, you can use th
 #### __[XAML] Example 7: Setting the control's HierarchyChildTemplate__
 
 {{region xaml-gridview-building-hierarchical-grid-view_10}}
-	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False">
+	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False" GroupRenderMode="Flat">
 		<telerik:RadGridView.ChildTableDefinitions>
 			<telerik:GridViewTableDefinition>
 				<telerik:GridViewTableDefinition.Relation>
@@ -390,7 +390,7 @@ If you need to set properties of the child RadGridView instances, you can use th
 		</telerik:RadGridView.Columns>
 		<telerik:RadGridView.HierarchyChildTemplate>
 			<DataTemplate>
-				<telerik:RadGridView ShowGroupPanel="False" AutoGenerateColumns="False" ItemsSource="{Binding Teams}">
+				<telerik:RadGridView ShowGroupPanel="False" AutoGenerateColumns="False" ItemsSource="{Binding Teams}" GroupRenderMode="Flat">
 					<telerik:RadGridView.Columns>
 						<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" 
 							Header="Name" />
@@ -405,7 +405,7 @@ If you need to set properties of the child RadGridView instances, you can use th
 
 The final result is observed on **Figure 4**.
 
-#### Figure 3: Customized child grids
+#### Figure 4: Customized child grids
 
 ![Telerik {{ site.framework_name }} DataGrid with Customized Child Grids](images/RadGridView_BuildingHierarchicalGrid_2.png)
 

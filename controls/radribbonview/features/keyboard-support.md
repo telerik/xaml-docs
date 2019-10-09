@@ -3,7 +3,7 @@ title: Keyboard Support
 page_title: Keyboard Support
 description: Keyboard Support
 slug: radribbonview-keyboard-support
-tags: keyboard,support
+tags: keyboard,support,keytips,iskeytipsenabled,iskeyboardnavigationenabled
 published: True
 position: 8
 ---
@@ -12,7 +12,7 @@ position: 8
 
 __RadRibbonView__ provides a keyboard navigation mechanisms using key tips{% if site.site_name == 'WPF' %} and the arrow keys{% endif %}. You can enable this feature by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadRibbonView__ control to __True__.
 
-#### __XAML__
+#### __[XAML] Example 1: Enabling RibbonView Key Tips__
 {{region radribbonview-keyboard-support_0}}
     <telerik:RadRibbonView x:Name="radRibbonView" 
                            ApplicationName="RibbonViewApplication"
@@ -21,7 +21,7 @@ __RadRibbonView__ provides a keyboard navigation mechanisms using key tips{% if 
 
 You can attach *key tip* text to every component in the __RadRibbonView__ using the __KeyTipSerive.AccessText__ attached property:	  
 
-#### __XAML__
+#### __[XAML] Example 2: Setting access text to a particular control__
 {{region radribbonview-keyboard-support_1}}
     <telerik:RadRibbonView x:Name="radRibbonView" 
                            ApplicationName="RibbonViewApplication"
@@ -57,7 +57,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 * __AccessKey:__ Gets/sets the combination of keys to be used for displaying the key tips. By default the key tips are displayed by pressing {% if site.site_name == 'Silverlight' %}CTRL+Q{% endif %}{% if site.site_name == 'WPF' %}ALT{% endif %}. This property should be defined in the __RadRibbonView__ definition:			
 
-	#### __XAML__
+	#### __[XAML] Example 3: Setting combination of access keys__
 	{{region radribbonview-keyboard-support_2}}
 		<telerik:RadRibbonView x:Name="radRibbonView" 
 							   ApplicationName="RibbonViewApplication"
@@ -75,7 +75,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 * __Activation:__ Used to define additional logic that can be implemented when using the keyboard navigation.
 
-	#### __XAML__
+	#### __[XAML] Example 4: Subscribe to the Activated event__
 	{{region radribbonview-keyboard-support_3}}
 		<telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H">
 			<telerik:RadRibbonGroup Header="Group 1.1" telerik:KeyTipService.AccessText="A">
@@ -93,7 +93,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 		</telerik:RadRibbonTab>
 	{{endregion}}
 
-	#### __C#__
+	#### __[C#] Example 5: Showing MessageBox in the Activated event handler__
 	{{region radribbonview-keyboard-support_4}}
 		private void KeyTipActivation_Activated(object sender, Telerik.Windows.RadRoutedEventArgs e)
 		{
@@ -105,7 +105,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 		}
 	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 5: Showing MessageBox in the Activated event handler__
 	{{region radribbonview-keyboard-support_5}}
 		Private Sub KeyTipActivation_Activated(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 			MessageBox.Show("The key tip of the " & TryCast(e.OriginalSource, RadRibbonButton).Text.ToString() & "was activated.")
@@ -118,9 +118,40 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 	In the example above, the __KeyTipActivation.Activated()__ event handler will fire as soon as the __HomeButton1__ key tip is activated. This means that you can implement custom logic that will be executed before the button's __Click()__ event is fired.
 
+{% if site.site_name == 'WPF' %}
+
+* __IsKeyboardNavigationEnabled__: Gets or sets if keyboard navigation is enabled for a particular control. Setting this property to false to a UIElement, the element will be skipped while navigating using the keyboard Up/Down/Right/Left keys. 
+
+	#### __[XAML] Example 4: Allowing to navigate through RadRibbonComboBox items using keyboard Up/Down keys__
+	{{region radribbonview-keyboard-support_6}}
+		<telerik:RadRibbonView telerik:KeyTipService.IsKeyTipsEnabled="True" telerik:KeyTipService.ActivationMode="PreviewKeyDown">
+			<telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H">
+				<telerik:RadRibbonGroup Header="My Group">
+					<telerik:RadRibbonComboBox telerik:KeyTipService.AccessText="T" telerik:KeyTipService.IsKeyboardNavigationEnabled="False">
+						<telerik:RadRibbonComboBoxItem Content="Test 1" />
+						<telerik:RadRibbonComboBoxItem Content="Test 2" />
+						<telerik:RadRibbonComboBoxItem Content="Test 3" />
+						<telerik:RadRibbonComboBoxItem Content="Test 4" />
+					</telerik:RadRibbonComboBox>
+				</telerik:RadRibbonGroup>
+			</telerik:RadRibbonTab>
+		</telerik:RadRibbonView>		
+	{{endregion}}
+	{% endif %}
+
+ >Specific behaviors of IsKeyboardNavigationEnabled property when to false:
+ >* Setting this property to __RadRibbonView__: The attached property will not work for this control.
+ >* Setting this property to __RadRibbonTab__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys but still can be accessed using key tips behavior.
+ >* Setting this property to __RadRibbonGroup__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys.. Elements inside the group will not inherit this property by default.
+ >* Setting this property to __RadRibbonButton__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys.
+ >* Setting this property to __Application Menu/ Backstage__: The application button will be skipped from the navigation using Up/Down/Right/Left keyboard keys.
+ >* Setting this property to __Quick Access Toolbar__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys. Elements inside the group will not inherit this property by default.
+ >* Setting this property to __Items Controls__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys. There's no need to set this property to the child elements.
+
+
 ## Activating key tips
 
-#### __XAML__
+#### __[XAML] Example 5: Activating key tips behavior__
 {{region radribbonview-keyboard-support_6}}
     <telerik:RadRibbonView x:Name="radRibbonView" telerik:KeyTipService.IsKeyTipsEnabled="True">
         <telerik:RadRibbonView.Backstage>
@@ -186,7 +217,7 @@ When a control's keytip is activated, the action associated with the control wil
 
 The keytips are themeable and any built-in Telerik theme can be applied to them. However, if you need to further customize their appearance, you can edit the __KeyTipControl ControlTemplate__:
 
-#### __XAML__
+#### __[XAML] Example 6: Customizing KeyTipControl__
 
 {{region radribbonview-keyboard-support_7}}
     <SolidColorBrush x:Key="RibbonBarKeyTips_OuterBorderBrush" Color="#FF848484" />

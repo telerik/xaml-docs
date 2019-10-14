@@ -23,14 +23,28 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 
 #### __[C#] Example 1: Show a open folder dialog__
 {{region cs-radfiledialogs-radopenfolderdialog-0}}
-	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-	openFolderDialog.Owner = theHostWindowInstance;            
-	openFolderDialog.ShowDialog();
-	if (openFolderDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string folderName = openFolderDialog.FileName;
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFolderDialog();
+		}
+
+		private void ShowOpenFolderDialog()
+		{
+			RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
+			openFolderDialog.Owner = this;
+			openFolderDialog.ShowDialog();
+			if (openFolderDialog.DialogResult == true)
+			{
+				string folderName = openFolderDialog.FileName;
+			}
+		}
 	}
 {{endregion}}
+
+> The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set. 
 
 ## Enabling Multiple Selection
 
@@ -38,9 +52,22 @@ The dialog supports single and multiple selection modes. By default you can sele
 
 #### __[C#] Example 3: Enable multiple selection__
 {{region cs-radfiledialogs-radopenfolderdialog-1}}
-	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-	openFolderDialog.Owner = theHostWindowInstance;
-	openFolderDialog.Multiselect = true;
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFolderDialog();
+		}
+
+		private void ShowOpenFolderDialog()
+		{
+			RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
+			openFolderDialog.Owner = this;
+			openFolderDialog.Multiselect = true;
+			openFolderDialog.ShowDialog();        
+		}
+	}
 {{endregion}}
 
 #### __Figure 2: Multiple selection__ 
@@ -54,14 +81,26 @@ You can get only the name of the selected folders, without the full path, via th
 
 #### __[C#] Example 3: Get the selected folder names__
 {{region cs-radfiledialogs-radopenfolderdialog-2}}
-	RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-	openFolderDialog.Owner = theHostWindowInstance;                  
-	openFolderDialog.ShowDialog();
-	if (openFolderDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string folderPath = openFolderDialog.FileName;
-		IEnumerable<string> folderPaths = openFolderDialog.FileNames;
-		IEnumerable<string> folderNames = openFolderDialog.SafeFileNames;
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFolderDialog();
+		}
+
+		private void ShowOpenFolderDialog()
+		{
+			RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
+			openFolderDialog.Owner = this;
+			openFolderDialog.ShowDialog();
+			if (openFolderDialog.DialogResult == true)
+			{
+				string folderPath = openFolderDialog.FileName;
+				IEnumerable<string> folderPaths = openFolderDialog.FileNames;
+				IEnumerable<string> folderNames = openFolderDialog.SafeFileNames;
+			}
+		}
 	}
 {{endregion}}
 

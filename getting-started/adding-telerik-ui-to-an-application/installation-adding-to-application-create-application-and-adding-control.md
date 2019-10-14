@@ -56,7 +56,7 @@ The following topic describes what steps you should perform in order to add the 
 	
 	* Manually reference the Telerik dlls from the UI for {{ site.site_name }} installation folder.	The binaries are located in the *UI for {{ site.site_name }} installation folder/Binaries/ or *UI for {{ site.site_name }} installation folder/Binaries.NoXaml/*. To learn about the differences between the dlls in the **Binaries** and the **Binaries.NoXaml** folders, check out the [Xaml vs NoXaml]({%slug xaml-vs-noxaml%}) article.
 	
-### Dragging Controls from Visual Studio Toolbox
+## Dragging Controls from Visual Studio Toolbox
 
 * Add the Telerik {{ site.site_name }} controls to the [Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}).
 

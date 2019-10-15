@@ -16,30 +16,26 @@ The purpose of this tutorial is to show you how to customize the __RadPane__ men
 
 ## Customizing RadPane's Menu 
 
-In order to add custom commands to the __RadPane's__ menu, you should perform the following steps:
+To add custom commands to the __RadPane's__ menu, you should perform the following steps:
 
-1. You can create a custom class CustomRadDockingCommands. Inside you can create a singleton property of type __Telerik.Windows.Controls.RoutedUICommand__. __Example 1__ demonstrates how you can do that.
+1. You can create a custom class CustomRadDockingCommands. Inside, you can create a singleton property of type __Telerik.Windows.Controls.RoutedUICommand__. __Example 1__ demonstrates how you can do that.
 	
 	#### __[C#] Example 1: Create Singleton command property__
 	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_0}}
 		public class CustomRadDockingCommands
 		{
-			public static class RadDockingCommands
+			private static RoutedUICommand closeAllPanesButThisCommand;			
+			public static RoutedUICommand CloseAllPanesButThisCommand
 			{
-				private static RoutedUICommand closeAllPanesButThisCommand;
-			
-				public static RoutedUICommand CloseAllPanesButThisCommand
+				get
 				{
-					get
+					if (closeAllPanesButThisCommand == null)
 					{
-						if (closeAllPanesButThisCommand == null)
-						{
-							closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
-						}
-						return closeAllPanesButThisCommand;
+						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
 					}
+					return closeAllPanesButThisCommand;
 				}
-			}
+			}			
 		}
 	{{endregion}}
 
@@ -65,8 +61,8 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 						Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
 			
 					<telerik:RadMenuItem 
-						Command="telerik:RadDockingCommands.CloseAllPanesButThisCommand"
-			CommandParameter="{Binding}" 
+						Command="local:CustomRadDockingCommands.CloseAllPanesButThisCommand"
+						CommandParameter="{Binding}" 
 						CommandTarget="{Binding}"
 						Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
 				</telerik:RadContextMenu>
@@ -90,39 +86,35 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 		</Grid>
 	{{endregion}}
 
-1. You should implement your custom logic in the __OnCloseAllPanesButThis__ and __OnCloseAllPanesButThisCanExecute__ methods. They specify whether the command can be executed and what action is performed, when it is executed. __Example 3__ demonstrate sample logic for the command methods. 
+1. You should implement your custom logic in the __OnCloseAllPanesButThis__ and __OnCloseAllPanesButThisCanExecute__ methods. They specify whether the command can be executed and what action is performed, when it is executed. __Example 3__ demonstrates sample logic for the command methods. 
           
 	#### __[C#] Example 3: Implement Execute and CanExecute methods__
 	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_4}}
-		public static class RadDockingCommands
+		public class CustomRadDockingCommands
 		{
-			public static class RadDockingCommands
+			private static RoutedUICommand closeAllPanesButThisCommand;
+			public static RoutedUICommand CloseAllPanesButThisCommand
 			{
-				private static RoutedUICommand closeAllPanesButThisCommand;
-			
-				public static RoutedUICommand CloseAllPanesButThisCommand
+				get
 				{
-					get
+					if (closeAllPanesButThisCommand == null)
 					{
-						if (closeAllPanesButThisCommand == null)
-						{
-							closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
-						}
-						return closeAllPanesButThisCommand;
+						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
 					}
+					return closeAllPanesButThisCommand;
 				}
 			}
-			
+
 			public static void OnCloseAllPanesButThis(object sender, ExecutedRoutedEventArgs e)
 			{
-				var pane = e.Parameter as RadPane;
+				RadPane pane = e.Parameter as RadPane;
 				if (pane != null)
 				{
-					var paneGroup = pane.PaneGroup;
+					RadPaneGroup paneGroup = pane.PaneGroup;
 					if (paneGroup != null)
 					{
-						var panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
-						foreach (var paneToClose in panesToClose)
+						System.Collections.Generic.IEnumerable<RadPane> panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
+						foreach (RadPane paneToClose in panesToClose)
 						{
 							if (paneToClose != pane)
 							{
@@ -132,15 +124,15 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 					}
 				}
 			}
-		
+
 			public static void OnCloseAllPanesButThisCanExecute(object sender, CanExecuteRoutedEventArgs e)
 			{
 				e.CanExecute = false;
-				var paneGroup = sender as RadPaneGroup;
+				RadPaneGroup paneGroup = sender as RadPaneGroup;
 				if (paneGroup != null)
 				{
 					int childrenCount = paneGroup.EnumeratePanes().Count(x => !x.IsHidden && x.IsPinned);
-		
+
 					if (childrenCount > 1)
 					{
 						e.CanExecute = true;
@@ -161,18 +153,18 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 		public class CustomRadDockingCommands
 		{
 			private static RoutedUICommand closeAllPanesButThisCommand;
+
 			public static RoutedUICommand CloseAllPanesButThisCommand
 			{
 				get
 				{
 					if (closeAllPanesButThisCommand == null)
 					{
-						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
+						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
 					}
 					return closeAllPanesButThisCommand;
 				}
 			}
-
 			static CustomRadDockingCommands()
 			{
 				CommandManager.RegisterClassCommandBinding(typeof(RadPaneGroup), new CommandBinding(CustomRadDockingCommands.CloseAllPanesButThisCommand, OnCloseAllPanesButThis, OnCloseAllPanesButThisCanExecute));
@@ -180,14 +172,14 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 
 			public static void OnCloseAllPanesButThis(object sender, ExecutedRoutedEventArgs e)
 			{
-				var pane = e.Parameter as RadPane;
+				RadPane pane = e.Parameter as RadPane;
 				if (pane != null)
 				{
-					var paneGroup = pane.PaneGroup;
+					RadPaneGroup paneGroup = pane.PaneGroup;
 					if (paneGroup != null)
 					{
-						var panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
-						foreach (var paneToClose in panesToClose)
+						System.Collections.Generic.IEnumerable<RadPane> panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
+						foreach (RadPane paneToClose in panesToClose)
 						{
 							if (paneToClose != pane)
 							{
@@ -201,7 +193,7 @@ In order to add custom commands to the __RadPane's__ menu, you should perform th
 			public static void OnCloseAllPanesButThisCanExecute(object sender, CanExecuteRoutedEventArgs e)
 			{
 				e.CanExecute = false;
-				var paneGroup = sender as RadPaneGroup;
+				RadPaneGroup paneGroup = sender as RadPaneGroup;
 				if (paneGroup != null)
 				{
 					int childrenCount = paneGroup.EnumeratePanes().Count(x => !x.IsHidden && x.IsPinned);
@@ -245,13 +237,13 @@ In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __Co
 	</telerik:RadDocking>
 {{endregion}}
 
-#### __C#__
+#### __[C#] Example 6: Set ContextMenuTemplate property to null in code behind__
 
 {{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_6}}
 	radPane.ContextMenuTemplate = null;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Set ContextMenuTemplate property to null in code behind__
 
 {{region vb-raddocking-how-to-add-menu-items-to-the-radpanes-menu_7}}
 	radPane.ContextMenuTemplate = Nothing

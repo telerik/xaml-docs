@@ -120,9 +120,9 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 {% if site.site_name == 'WPF' %}
 
-* __IsKeyboardNavigationEnabled__: Gets or sets if keyboard navigation is enabled for a particular control. Setting this property to false to a UIElement, the element will be skipped while navigating using the keyboard Up/Down/Right/Left keys. 
+* __IsKeyboardNavigationEnabled__: Gets or sets whether keyboard navigation is enabled for a particular control. Setting this property to false on a UIElement will lead to the element being skipped while navigating using the keyboard's Up/Down/Right/Left keys. 
 
-	#### __[XAML] Example 4: Allowing to navigate through RadRibbonComboBox items using keyboard Up/Down keys__
+	#### __[XAML] Example 4: Disabling navigation through RadRibbonComboBox items using the Up/Down keys__
 	{{region radribbonview-keyboard-support_6}}
 		<telerik:RadRibbonView telerik:KeyTipService.IsKeyTipsEnabled="True" telerik:KeyTipService.ActivationMode="PreviewKeyDown">
 			<telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H">
@@ -139,14 +139,14 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 	{{endregion}}
 	{% endif %}
 
- >Specific behaviors of IsKeyboardNavigationEnabled property when to false:
- >* Setting this property to __RadRibbonView__: The attached property will not work for this control.
- >* Setting this property to __RadRibbonTab__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys but still can be accessed using key tips behavior.
- >* Setting this property to __RadRibbonGroup__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys.. Elements inside the group will not inherit this property by default.
- >* Setting this property to __RadRibbonButton__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys.
- >* Setting this property to __Application Menu/ Backstage__: The application button will be skipped from the navigation using Up/Down/Right/Left keyboard keys.
- >* Setting this property to __Quick Access Toolbar__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys. Elements inside the group will not inherit this property by default.
- >* Setting this property to __Items Controls__: The control will be skipped from navigation using Up/Down/Right/Left keyboard keys. There's no need to set this property to the child elements.
+ >Specific behaviors of IsKeyboardNavigationEnabled property when set to false:
+ >* When set on __RadRibbonView__: The attached property will not work for this control.
+ >* When set on __RadRibbonTab__: The control will be skipped from navigation using the Up/Down/Right/Left keyboard keys but will be accessable through the key tips behavior.
+ >* When set on __RadRibbonGroup__: The control will be skipped from navigation using the Up/Down/Right/Left keyboard keys. Elements inside the group will not inherit this property.
+ >* When set on __RadRibbonButton__: The control will be skipped from navigation using the Up/Down/Right/Left keyboard keys.
+ >* When set on __Application Menu/ Backstage__: The application button will be skipped from the navigation using the Up/Down/Right/Left keyboard keys.
+ >* When set on __Quick Access Toolbar__: The control will be skipped from navigation using the Up/Down/Right/Left keyboard keys. Elements inside the group will not inherit this property.
+ >* When set on __Items Controls__: The control will be skipped from navigation using the Up/Down/Right/Left keyboard keys. There's no need to set this property to the child elements.
 
 
 ## Activating key tips

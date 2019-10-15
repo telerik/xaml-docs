@@ -6,7 +6,6 @@ slug: radtoolbar-structure
 tags: structure
 published: True
 position: 1
-site_name: Silverlight
 ---
 
 # Structure

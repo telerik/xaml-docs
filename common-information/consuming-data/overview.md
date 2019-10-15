@@ -13,7 +13,7 @@ position: 0
 
 Telerik __Telerik UI for {{ site.framework_name }}__ can be populated with data in any of the following ways:
 
-* Populating with data from __ADO.NET Data Service__. [Read more]({%slug consuming-data-ado-net-data-service%})
+* Populating with data from __ADO.NET Data Service__. [Read more](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/cc907912(v=msdn.10))
 
 {% if site.site_name == 'Silverlight' %} 
 * Populating with data from __Web (asmx) Service__. [Read more]({%slug consuming-data-web-asmx-service%})

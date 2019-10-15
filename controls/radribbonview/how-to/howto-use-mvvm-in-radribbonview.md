@@ -188,7 +188,6 @@ Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) sce
 
 > Note, that __Example 4__ uses exactly the same setup as __Example 3__.
 
-{% endif %}
-
 ## See Also
 * [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%})
+{% endif %}

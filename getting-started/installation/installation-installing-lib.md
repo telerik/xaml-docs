@@ -48,9 +48,16 @@ The numbers in the name of the dlls are determined by the source code build date
 The following image shows the name of the LIB dlls generated on 8th of April (4th month), after the R1 2019 release.
 
 ![](images/installation-installing-lib-3.png)
-            
+ 
 ## See Also  
+{% if site.framework_name == 'WPF' %}       
  * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})
+{% else %}
+ * [Trial License Limitations]({%slug installation-installing-license-limitations%})
+ * [Adding UI for Silverlight to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%})
+ * [Creating an Application and Adding UI for Silverlight]({%slug installation-adding-to-application-create-application-and-adding-control%})
+ * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})
+ {% endif %}

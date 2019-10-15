@@ -67,8 +67,8 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 {% endif %}
 {% if site.site_name == 'WPF' %}
 * __Rich-text clipboard__
-    The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc.{% endif %} For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article. 
-    * Different **[Paste Options]({%slug radrichtextbox-features-paste-options%})** are supported as well.
+    The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc. For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article. 
+    * Different **[Paste Options]({%slug radrichtextbox-features-paste-options%})** are supported as well.{% endif %}
 
 * __Import/export__
 	Telerik RadRichTextBox allows you to load XAML, HTML, RTF, DOCX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats. The control also supports export to PDF. For more information, see the [Import/Export]({%slug radrichtextbox-features-import-export%}) article.

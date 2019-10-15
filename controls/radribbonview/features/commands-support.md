@@ -44,4 +44,4 @@ You can find the following properties in the RibbonCommands class:
 * [RibbonCommands class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.ribboncommands)
 * [Ribbon Backstage]({%slug radribbonview-ribbon-backstage%})
 * [Use Commands with RadRibbonView Buttons]({%slug radribbonview-howto-use-commands-with-radribbonview-buttons%})
-* [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%})
+{% if site.framework_name == 'WPF' %}* [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%}){% endif %}

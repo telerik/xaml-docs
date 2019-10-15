@@ -164,21 +164,21 @@ Now you need to specify different styles for the different types of shapes. For 
 			</DataTemplate>
 			<local:ShapeStyleSelector x:Key="shapeStyleSelector" >
 				<local:ShapeStyleSelector.ContainerStyle>
-					<Style TargetType="telerik:RadDiagramContainerShape">
+					<Style TargetType="telerik:RadDiagramContainerShape" BasedOn="{StaticResource RadDiagramContainerShapeStyle">
 						<Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
 						<Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}" />
 						<Setter Property="EditTemplate" Value="{StaticResource editTemplate}" />
 					</Style>
 				</local:ShapeStyleSelector.ContainerStyle>
 				<local:ShapeStyleSelector.ShapeStyle>
-					<Style TargetType="telerik:RadDiagramShape">
+					<Style TargetType="telerik:RadDiagramShape" BasedOn="{StaticResource RadDiagramShapeStyle">
 						<Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
 						<Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}" />
 						<Setter Property="EditTemplate" Value="{StaticResource editTemplate}" />
 					</Style>
 				</local:ShapeStyleSelector.ShapeStyle>
 				<local:ShapeStyleSelector.TextToolShape>
-					<Style TargetType="telerik:RadDiagramTextShape">
+					<Style TargetType="telerik:RadDiagramTextShape" BasedOn="{StaticResource RadDiagramTextShapeStyle">
 						<Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
 						<Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}"/>
 						<Setter Property="EditTemplate" Value="{StaticResource editTemplate}"/>

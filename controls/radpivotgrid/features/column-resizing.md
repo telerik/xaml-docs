@@ -66,4 +66,4 @@ The control now also exposes two new properties to control the width of the resi
 ## See Also
 
 * [Layouts]({%slug radpivotgrid-features-layouts%})
-* [Selection]({%slug radpivotgrid-features-selection%})
+{% if site.framework_name == 'WPF' %}* [Selection]({%slug radpivotgrid-features-selection%}){% endif %}

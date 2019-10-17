@@ -43,9 +43,7 @@ Here is a snapshot of the result.
 
 >tipTo learn more about this way of populating the __RadMenu__ with dynamic data take a look at the [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}) topic.
 
-When using dynamic items, you have to bind the __Icon__ property to a property of the data item. To see how to do this read [here](#Using_ContainerBindings).
-
-The specific here is that your data item should expose a property of type __Image__, so the __Icon__ property can be bound properly. In most of the cases you will use this property with the __RadMenuItem__, so you can make it read-only property, that wraps another property of your data item. For example, here is an __ImageUrl__ property of type __Uri__, that is wrapped inside an __Icon__ property of type __Image__.
+When using dynamic items, you have to bind the __Icon__ property to a property of the data item. The specific here is that your data item should expose a property of type __Image__, so the __Icon__ property can be bound properly. In most of the cases you will use this property with the __RadMenuItem__, so you can make it read-only property, that wraps another property of your data item. For example, here is an __ImageUrl__ property of type __Uri__, that is wrapped inside an __Icon__ property of type __Image__.
 
 #### __C#__
 

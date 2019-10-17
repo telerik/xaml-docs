@@ -12,7 +12,9 @@ position: 14
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
+{% if site.site_name == 'WPF' %}
 > As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row and as of __R1 2019 SP1__ it supports setting the __MouseOverBackground__ of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
+{% endif %}
 
 In this article we will discuss the following topics:
 

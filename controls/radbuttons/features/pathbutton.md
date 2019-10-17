@@ -106,6 +106,7 @@ In addition to all customizing options that are inherited from the __RadButton__
 
 Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type __Thickness__ and determines the margin around its content. This allows users to adjust size of the Path that the button hosts. For adjusting the position of the Path itself users can use the __RadPathButton.Padding__ property.
 
+{% if site.site_name == 'WPF' %}
 ## RadPathButton and RadGlyph
 
 The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appearance-radglyph%}).
@@ -118,6 +119,7 @@ The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appear
 
 #### __Figure 5: RadPathButton with RadGlyph__
 ![RadPathButton with RadGlyph](images/radbuttons-features-pathbutton-4.png)
+{% endif %}
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})

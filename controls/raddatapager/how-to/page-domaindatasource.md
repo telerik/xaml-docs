@@ -58,4 +58,4 @@ Note that both the __ListBox__ and the __RadDataPager__ are bound to the __Data_
 
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})
 
- * [Page RadGridView]({%slug raddatapager-how-to-page-radgridview%})
+ * [Page RadGridView]({%slug raddatapager-getting-started%})

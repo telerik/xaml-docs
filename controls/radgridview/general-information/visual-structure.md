@@ -47,7 +47,9 @@ RadGridView is an essential user interface control used to display data in tabul
 * __Row Details__: Each row is capable of presenting additional information by means of a Row Details template. The Row Details template is a __DataTemplate__ defined on the grid- or row-level and is used for displaying row data without affecting the dimensions of the row and the cells within it.  			  
 One of the advantages of using a Row Details template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of Row Details is the option of placing the Details Presenter outside RadGridView, which provides more room for traditional rows without depriving the user of the additional information. [Read more]({%slug radgridview-row-details-overview%}).
 
+{% if site.site_name == 'WPF' %}
 * __SearchPanel__: The search panel is shown when you press the __Ctrl+F__ key combo. It allows you to search as you type. Read more about this in the [Search as you Type]({%slug radgridview-search-as-you-type%}) article.
+{% endif %}
 
 * __ControlPanel__: The control panel allows you to define additional buttons with custom functionality in the header part of RadGridView. Read more about this in the [Control Panel]({%slug gridview-overview-controlpanel%}) article.
 

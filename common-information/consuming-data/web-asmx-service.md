@@ -98,6 +98,7 @@ Here is a sample code showing how this can be achieved:
 
 ## See Also
 
+{% if site.site_name == 'WPF' %}
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
-
+{% endif %}
  * [Consuming .NET RIA Service]({%slug consuming-data-net-ria-service%})

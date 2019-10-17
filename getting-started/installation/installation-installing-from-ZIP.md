@@ -89,8 +89,8 @@ Once the archived folders are extracted you will probably note the following fol
 
 ## See Also
 
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-hotfix%})
+ * [Using the Hotfix (DLLs Only)]({%slug installation-installing-lib%})
 
  * [Trial License Limitations]({%slug installation-installing-license-limitations%})
 
- * [Adding UI for Silverlight to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox%})
+ * [Adding UI for Silverlight to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%})

@@ -38,7 +38,9 @@ __RadRibbonView__ is an easy-to-use implementation of the MS Office “ribbon”
 
 * __Localization Support__: Localization is the translation of application resources into localized versions for the specific cultures that the application supports. Read more about this in the [ribbon specific]({%slug radribbonview-localization%}) and [common]({%slug common-localization%}) Localization articles.
 
+{% if site.site_name == 'WPF' %}
 * __Simplified Layout__: The ribbon allows you to define a more compact, simplified layout, using less space. Read more about this in the [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%}) article.
+{% endif %}
 
 A complete list of all the key features can be found in the [Key Features]({%slug radribbonview-key-features%}) article.
 

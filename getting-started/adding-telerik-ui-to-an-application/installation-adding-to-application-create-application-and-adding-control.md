@@ -58,7 +58,7 @@ The following topic describes what steps you should perform in order to add the 
 	
 ## Dragging Controls from Visual Studio Toolbox
 
-* Add the Telerik {{ site.site_name }} controls to the [Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}).
+* Add the Telerik {{ site.site_name }} controls to the {% if site.framework_name == 'WPF' %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}){% else %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%}){% endif %}.
 
 	>tip See the assemblies required by each Telerik control in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} article.
 

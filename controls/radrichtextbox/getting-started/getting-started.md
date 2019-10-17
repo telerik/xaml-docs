@@ -24,7 +24,9 @@ __RadRichTextBox__ is a control that allows you to display and edit rich text co
 
 ## Assembly References
 
+{% if site.framework_name == 'WPF' %}
 >The references required to use RadRichTextBox in a **.NET Core** project have been united. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
+{% endif %}
 
 The minimal set of references you need to have in your application in order to have a **RadRichTextBox** are as follows:
 

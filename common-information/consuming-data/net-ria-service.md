@@ -116,7 +116,8 @@ Once the load operation is completed accessing the result is an extremely simple
 
 
 ## See Also
-
+{% if site.site_name == 'WPF' %} 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
-
+{% else %}
  * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
+{% endif %}

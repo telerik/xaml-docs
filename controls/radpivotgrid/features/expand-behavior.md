@@ -98,4 +98,4 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
 	End Sub
 {{endregion}}
 
-> You can download the [ExpandBehavior](https://github.com/telerik/xaml-sdk/tree/master/PropertyGrid/ReadOnlyPropertyDefinition) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
+> You can download the [ExpandBehavior](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/ExpandBehavior) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).

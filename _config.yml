@@ -936,6 +936,9 @@ navigation:
     controls/radsyntaxeditor/features:
         title: Features
         position: 5
+    controls/radsyntaxeditor/features/taggers:
+        title: Taggers
+        position: 9
 ## X1 Controls End
 
 ## Common Start   

@@ -1,7 +1,7 @@
 ---
 title: Folding Taggers
 page_title: Folding Taggers
-description: This article explains the use of folding taggers the RadSyntaxEditor control.
+description: This article explains the use of folding taggers in the RadSyntaxEditor control.
 slug: radsyntaxeditor-features-folding-taggers
 tags: folding,taggers,radsyntaxeditor
 position: 2
@@ -17,7 +17,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 ## FoldingTaggerBase
 
-**FoldingTaggerBase** the class responsible for generating the collapsible code regions. You can override this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
+**FoldingTaggerBase** the class responsible for generating the collapsible code regions. You can inherit this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
 
 #### __[C#] Example 1: Adding FoldingRegionDefinitions__
 {{region cs-radsyntaxeditor-features-folding-taggers-1}}

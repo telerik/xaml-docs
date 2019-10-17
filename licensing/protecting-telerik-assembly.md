@@ -40,27 +40,37 @@ There are a couple of approaches that you can take:
 
 ## Use the PowerShell Scripts
 
-Telerik UI source code provides two power shell scripts that will allow you to easily apply the modifications needed to protect the Telerik assemblies without the need to open and edit any files. The scrips are located in the **Build\BuildInstructions\AssemblyProtection** folder of the suite's source code which can be downloaded as explained in {% if site.framework_name == 'WPF' %}[this article]({%slug download-product-files-wpf%}){% else %}[this article]({%slug download-product-files%}){% endif %}. 
+In order to protect the dlls with the powershell scripts you can follow these general steps (the __Instructions__ section below goes into more depth about the steps): 
 
-The available scripts are: 
-
-* **ApplicationNameModifier.ps1**: Uncomments the **ValidatePassPhrase()** method call and changes the **ApplicationName** in the **Core\Controls\Common\AssemblyProtection.cs** file with the provided one. 
-
-* **ApplicationNameModifier - DPL.ps1**: Uncomments the **ValidatePassPhrase()** method call and changes the ApplicationName in the **Documents\Licensing\AssemblyProtection.cs** file with the provided one.
+__1.__	Execute the __AssemblyProtection.ps1__ and __AssemblyProtectionDocumentProcessing.ps1__ (if you are using the Documents Processing library) scripts.  
+__2.__	Take the generated Telerik.Windows.Controls and Telerik.Windows.Documents.Core dlls (or their corresponding NuGet packages) and download all of the other assemblies that you need from your [telerik account](https://www.telerik.com/account/my-downloads).  
+__3.__	Distribute the dll/NuGet files with your application.  
 
 ### Instructions
 
-1. Right click on the needed script and click Run with **PowerShell** menu item
+The Telerik UI source code provides two power shell scripts located in the __Build\BuildInstructions\AssemblyProtection__ folder that will allow you to easily build the Telerik.Windows.Controls and Telerik.Windows.Documents.Core (necessary only if you use the Document Processing library) dlls and include your application name in them. Those assemblies are the only ones that contain the assembly protection mechanism and they are the only ones that need to be built in order to protect the Telerik UI assemblies. After building them, you can download the other dlls that you need from your [telerik account](https://www.telerik.com/account/my-downloads).  
+* __AssemblyProtection.ps1__: Changes the ApplicationName in the Core\Controls\Common\AssemblyProtection.cs file with the provided one. Builds the Telerik.Windows.Controls dll and its NuGet package (optionally).  
+* __AssemblyProtectionDocumentProcessing.ps1__: Changes the ApplicationName in the Documents\Licensing\AssemblyProtection.cs file with the provided one. Builds the Telerik.Windows.Documents.Core dll and its NuGet package (optionally).  
 
+__1.__	Right click on the needed script and click Run with PowerShell menu item:  
 	![run script with PowerShell](images/installation-powershell-image1.png)
+> If you don’t have the “Run with PowerShell” option, you can also open the PowerShell console, navigate to the BuildInstructions directory and execute the script(s).
 
-2. Enter the new **ApplicationName** when prompted: 
+__2.__	When running the scripts, you will be asked to enter the following:
 
-	![change the application name](images/installation-powershell-image2.png)
+* __Application Name__: This should be the name of your application in which the Telerik UI dlls will be distributed.
+* __Target Framework__: You should specify whether you want to build the WPF or the Silverlight dll and Nuget (optionally). Type “wpf” for WPF and “sl” for Silverlight.
+* __Binary Type (Xaml or NoXaml)__: The type of dlls that you want to use. For more information about the differences, read the following article: [Xaml vs NoXaml]({%slug xaml-vs-noxaml%}).  
 
-3. Rebuild the Telerik UI assemblies using one of the approaches explained in the source code build instructions (located in the **Build\BuildInstructions** folder). 
+> This option will not be available when building the Telerik.Windows.Documents.Core dll with the __AssemblyProtectionDocumentProcessing.ps1__ script.  
 
-4. In your application resources **App.xaml** create a string resource with key __"Telerik.Windows.Controls.Key"__ and value equal to the value of the ApplicationName defined in **step 2**:
+* __Release Date__: You should specify a release date in the following format (MM/DD/YYYY) that matches the release date of the Telerik UI dlls that you are going to distribute. For example, if the version of the dlls is 2019.3.917, you should use 09/17/2019. You can find out how to extract a release date from the version number [here]({%slug installation-installing-lib%}#version-number-breakdown).  
+
+> The version of the Telerik.Windows.Controls dll and the version of the Telerik.Windows.Documents.Core dll can be different. Before building each one, download these dlls from your [telerik account](https://www.telerik.com/account/my-downloads) and check their versions.  
+
+* __Build Nuget package__: If you are distributing NuGet packages, you can build them using the scripts. The nuget packages will be created in the BuildInstructions\AssemblyProtection\NugetOutput directory. Type “y” to create the package and “n” to skip this. 
+
+__3.__	In your application’s resources (App.xaml) create a string resource with key "Telerik.Windows.Controls.Key" and value equal to the value of the Application Name defined in step 2:  
 
 #### __[XAML] Example 1: Merging the application key resource__ 	
 {{region protecting-telerik-radcontrols-assembly_5}}
@@ -74,6 +84,19 @@ The available scripts are:
 	        </Application.Resources>
 	</Application>
 {{endregion}}
+
+__4.__	Once you have executed the script(s) you can take the assemblies generated in the __Binaries__ directory. Here are the locations based on whether WPF/SL and xaml/noxaml was chosen.
+* __WPF and xaml__ -> Binaries\WPF40\Dev and Binaries\WPF45\Dev
+* __WPF and noxaml__ -> Binaries\WPF40.NoXaml\Dev and Binaries\WPF45.NoXaml\Dev
+
+> Both the .Net 40 and .Net 45 versions will be available when running the AssemblyProtection.ps1 script that builds the Telerik.Windows.Controls dll.
+
+* __Silverlight and xaml__ -> Binaries\Silverlight5\Dev
+* __Silverlight and noxaml__ -> Binaries\Silverlight5.NoXaml\Dev
+
+> If you have also rebuilt the NuGet package(s), you can find them in the __BuildInstructions\AssemblyProtection\NugetOutput__ directory.
+
+You can distribute the __Telerik.Windows.Controls__ and __Telerik.Windows.Documents.Core__ dlls after running the scripts along with the other Telerik UI dlls that you need. You can download the other dlls from your [telerik account](https://www.telerik.com/account/my-downloads).  
 
 ## Building Telerik Assemblies from Source Code 
 

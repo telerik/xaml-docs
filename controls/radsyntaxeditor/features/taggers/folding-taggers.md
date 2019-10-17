@@ -17,7 +17,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 ## FoldingTaggerBase
 
-**FoldingTaggerBase** the class responsible for generating the collapsible code regions. You can inherit this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
+**FoldingTaggerBase** is the class responsible for generating the collapsible code regions. You can inherit this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
 
 #### __[C#] Example 1: Adding FoldingRegionDefinitions__
 {{region cs-radsyntaxeditor-features-folding-taggers-1}}

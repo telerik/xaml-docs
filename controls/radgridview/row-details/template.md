@@ -12,28 +12,33 @@ position: 1
 
 The __Row Details__ template is defined through the __RowDetailsTemplate__ property of the __RadGridView__.
 
->tip To learn how to manage the displaying of the __Row Details__ read [this topic]({%slug radgridview-row-details-visibility%}).
+>tip To learn how to manage the displaying of the __Row Details__, read [this topic]({%slug radgridview-row-details-visibility%}).
 	
 ## Basic RowDetails Template
 
-Here is an example for a basic row details template (__Example 1__). You can observe the result in __Figure 1__.
+__Example 1__ shows a basic row details template. You can observe the result in __Figure 1__.
 		
+> The next examples use the __Team__, __Division__ and __DivisionService__ classes defined in Examples 1, 2 and 3 in the following [article]({%slug gridview-building-hierarchical-grid-view%}). The setting of the ItemsSource in Examples 1 and 2 is shown in __Example 3__.
 
-#### __[XAML] Example 1: Definition of Basic RowDetails Template__
+#### __[XAML] Example 1: Basic RowDetails Template__
 
 {{region xaml-radgridview-row-details-template_0}}
-	<telerik:RadGridView x:Name="radGridView"
-	                 RowDetailsVisibilityMode="VisibleWhenSelected">
-	    <telerik:RadGridView.RowDetailsTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal"
-	                Margin="10,10,10,10">
-	                <TextBlock Text="Stadium Capacity: " />
-	                <TextBlock Text="{Binding StadiumCapacity}" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:RadGridView.RowDetailsTemplate>
-	    <!--...-->
+	<telerik:RadGridView Name="rowTemplateRadGridView"
+						 AutoGenerateColumns="False"
+						 GroupRenderMode="Flat"
+						 RowDetailsVisibilityMode="VisibleWhenSelected">
+		<telerik:RadGridView.Columns>
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
+		</telerik:RadGridView.Columns>
+
+		<telerik:RadGridView.RowDetailsTemplate>
+			<DataTemplate>
+				<StackPanel Orientation="Horizontal" Margin="10">
+					<TextBlock Text="ID: " />
+					<TextBlock Text="{Binding Id}" />
+				</StackPanel>
+			</DataTemplate>
+		</telerik:RadGridView.RowDetailsTemplate>
 	</telerik:RadGridView>
 {{endregion}}
 
@@ -43,49 +48,61 @@ __Figure 1:__ Displays the result of the applied __Basic RowDetails Template__.
 
 ## Complex RowDetails Template
 
-Here is an example for a complex row details template (__Example 2__). You can observe the result in __Figure 1__.
+__Example 2__ shows a complex row details template, which contains another RadGridView. You can observe the result in __Figure 2__.
 
 #### __[XAML] Example 2: Definition of Complex RowDetails Template__
 
 {{region xaml-radgridview-row-details-template_1}}
-	<Grid>
-	    <Grid.Resources>
-	        <my:MyViewModel x:Key="MyViewModel"/>
-	        <DataTemplate x:Key="RowDetailsTemplate">
-	            <telerik:RadGridView Name="playersGrid" 
-	                        ItemsSource="{Binding Players}" 
-	                        AutoGenerateColumns="False">
-	                <telerik:RadGridView.Columns>
-	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}"/>
-	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Position}"/>
-	                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}"/>
-	                </telerik:RadGridView.Columns>
-	            </telerik:RadGridView>
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadGridView Grid.Row="0" 
-	                Name="clubsGrid" 
-	                ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"
-	                AutoGenerateColumns="False"
-	                RowDetailsTemplate="{StaticResource RowDetailsTemplate}"
-	                Margin="5">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewToggleRowDetailsColumn/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-	                            Header="Est." 
-	                            DataFormatString="{}{0:yyyy}"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-	                            Header="Stadium" 
-	                            DataFormatString="{}{0:N0}"/>
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	</Grid>
+	<telerik:RadGridView Name="rowTemplateRadGridView"
+							AutoGenerateColumns="False"
+							GroupRenderMode="Flat"
+							RowDetailsVisibilityMode="VisibleWhenSelected">
+		<telerik:RadGridView.Columns>
+			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
+		</telerik:RadGridView.Columns>
+
+		<telerik:RadGridView.RowDetailsTemplate>
+			<DataTemplate>
+				<telerik:RadGridView Name="playersGrid" 
+									 ItemsSource="{Binding Teams}" 
+									 AutoGenerateColumns="False"
+									 Height="200">
+					<telerik:RadGridView.Columns>
+						<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"/>
+						<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
+						<telerik:GridViewDataColumn DataMemberBinding="{Binding Place}"/>
+					</telerik:RadGridView.Columns>
+				</telerik:RadGridView>
+			</DataTemplate>
+		</telerik:RadGridView.RowDetailsTemplate>
+	</telerik:RadGridView>
 {{endregion}}
+
+>important You should specify a Height for the RadGridView in the RowDetailsTemplate. Otherwise the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
 
 __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.  
 ![Telerik {{ site.framework_name }} DataGrid-row-details-template-complex](images/gridview-row-details-template-complex.png)
+
+#### __[C#] Example 3: Setting the ItemsSource for Examples 1 and 2__
+
+{{region cs-radgridview-row-details-template_2}}
+	public MainWindow()
+	{
+		InitializeComponent();
+
+		this.rowTemplateRadGridView.ItemsSource = DivisionsService.GetDivisions();
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 3: Setting the ItemsSource for Examples 1 and 2__
+
+{{region vb-radgridview-row-details-template_1}}
+	Public Sub New()
+		InitializeComponent()
+
+		Me.rowTemplateRadGridView.ItemsSource = DivisionsService.GetDivisions()
+	End Sub
+{{endregion}}
 
 ## See Also  
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})  

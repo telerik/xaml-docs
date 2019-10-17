@@ -10,13 +10,13 @@ position: 0
 
 # How to Customize or Remove RadPane's Menu
 
-The purpose of this tutorial is to show you how to customize the __RadPane__ menu.
+The purpose of this tutorial is to show you how to customize __RadPane's__ menu.
       
->tipFor more information about the __RadPane__ structure, read [here]({%slug raddocking-panes-radpane%}) or read [this one]({%slug raddocking-features-panes-panes-menu%}) if you want to learn more about the __RadPane's__ menu.
+>tipFor more information about the __RadPane__ structure, read [here]({%slug raddocking-panes-radpane%}). If you want to learn more about __RadPane's__ menu, read [this one]({%slug raddocking-features-panes-panes-menu%}).
 
 ## Customizing RadPane's Menu 
 
-To add custom commands to the __RadPane's__ menu, you should perform the following steps:
+To add custom commands to __RadPane's__ menu, you should perform the following steps:
 
 1. You can create a custom class CustomRadDockingCommands. Inside, you can create a singleton property of type __Telerik.Windows.Controls.RoutedUICommand__. __Example 1__ demonstrates how you can do that.
 	
@@ -146,7 +146,7 @@ To add custom commands to the __RadPane's__ menu, you should perform the followi
 		}
 	{{endregion}}
 
-1. Your menu command is ready and you have a custom __DataTemplate__, which is set to the __ContextMenuTemplate__ property. The next step is to register your custom command by using the __Telerik.Windows.Controls.CommandManager__ class in the __CustomRadDockingCommands__ constructor class. __Example 4__ shows the final structure of the __CustomRadDockingCommands__ class.
+1. Your menu command is ready and you have a custom __DataTemplate__, which is set to the __ContextMenuTemplate__ property. The next step is to register your custom command by using the __Telerik.Windows.Controls.CommandManager__ class in the __CustomRadDockingCommands__ constructor. __Example 4__ shows the final structure of the __CustomRadDockingCommands__ class.
 	
 	#### __[C#] Example 4: Register CloseAllPanesButThisCommand custom command__
 	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_3}}
@@ -211,13 +211,13 @@ To add custom commands to the __RadPane's__ menu, you should perform the followi
 		}
 	{{endregion}}
 
-Run your demo. The __RadPane__'s menu should look like the snapshot below.
+Run your demo. __RadPane__'s menu should look like the snapshot below.
 
-![Customize or Remove the RadPane's Menu](images/RadDocking_HowTo_Customize_Or_Remove_The_RadPanes_Menu.png)
+![Customize or Remove RadPane's Menu](images/RadDocking_HowTo_Customize_Or_Remove_The_RadPanes_Menu.png)
 	
-## Removing the RadPane's Menu
+## Removing RadPane's Menu
 
-In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __ContextMenuTemplate__ property to __null__ (respectively __{x:Null}__ in XAML).
+In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMenuTemplate__ property to __null__ (respectively __{x:Null}__ in XAML).
 
 #### __[XAML] Example 5: Set ContextMenuTemplate property to null__
 
@@ -243,7 +243,7 @@ In order to remove the __RadPane__'s Menu, you should set the __RadPane__'s __Co
 	radPane.ContextMenuTemplate = null;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Set ContextMenuTemplate property to null in code behind__
+#### __[VB.NET] Example 6: Set ContextMenuTemplate property to null in code behind__
 
 {{region vb-raddocking-how-to-add-menu-items-to-the-radpanes-menu_7}}
 	radPane.ContextMenuTemplate = Nothing

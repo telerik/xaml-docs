@@ -68,15 +68,17 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 
 ## CurrentItem
 
-The **CurrentItem** property of the RadGridView corresponds to the CurrentItem of the bound **ICollectionView**. It may or may not coincide with the selected row and SelectedItem respectively.
+The **CurrentItem** property of the RadGridView corresponds to the CurrentItem of the bound **ICollectionView** (the control's **Items** collection). It may or may not coincide with the selected row and SelectedItem respectively.
 
->Prior to **Q2 2010** version, the current item was synchronized with the selected item. As a result, the first row of the GridView was selected initially. To prevent this, you would simply need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to False. In Q2 2010 version, the IsSynchronizedWithCurrentItem is **null** by default. In this case, SelectedItem is synchronized with the CurrentItem only if **CollectionView** is used as **ItemsSource**.
+>Prior to **R2 2010** version, the current item was synchronized with the selected item. As a result, the first row of the GridView was selected initially. To prevent this, you need to set the __IsSynchronizedWithCurrentItem__ property of RadGridView to **False**. Since the R2 2010 version, the IsSynchronizedWithCurrentItem is **null** by default. In this case, SelectedItem is synchronized with the CurrentItem only if a **CollectionView** is used as an **ItemsSource**.
 
 ## SelectedItems
 
 The __SelectedItems__ property is a collection of data items, which holds the currently selected items. With this said, you can add and remove items from this collection in order to select and deselect the corresponding rows. 
 
 You can use the SelectedItems collection only when the [SelectionUnit]({%slug gridview-selection-basics%}#selection-units) is set to **FullRow** (the default value), otherwise it is **null**. It contains more than one item only when the [SelectionMode]({%slug gridview-selection-basics%}#selection-modes) is either **Multiple** or **Extended**.
+
+>An example of how to bind the SelectedItems collection to a collection in your viewmodel can be found in our [SDK Samples Browser]({%slug sdk-samples-browser%}). The source code of the demo is also available in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingSelectedItemsFromViewModel).
 
 ## See Also
 

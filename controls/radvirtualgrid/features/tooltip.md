@@ -20,7 +20,7 @@ __RadVirtualGrid__ provides a cell tooltip behavior which can be used to visuali
 
 ## Setting the CellToolTip while RadVirtualGrid is populated through DataProvider
 
->important If the default __DataProvider__ is used for populating the control with data, it handles the __OnCellToolTipNeeded__ event. In order the default behavior to be altered, a [Custom Data Provider]({%slug virtualgrid-custom-dataprovider%}) can be utilized. The properties that the event argument expose are listed below.
+>important If the default __DataProvider__ is used for populating the control with data, it handles the __OnCellToolTipNeeded__ event. In order for the default behavior to be altered, a [Custom Data Provider]({%slug virtualgrid-custom-dataprovider%}) can be utilized. The properties that the event arguments expose are listed below.
 
 * __Value__: A property of type __object__ which can be used to get or set the content of the cell tooltip.
 
@@ -64,7 +64,7 @@ The following example demonstrates how we can modify the default cell tooltip of
 
 In this case, while RadVirtualGrid is manually populated, the control provides a __CellToolTipNeeded__ event for setting the value of the cell tooltip on demand. 
 
-> In order the __RadVirtualGrid__ to be populated with data, its __InitialRowCount__ and __InitialColumnCount__ properties need to be set.
+> In order for the __RadVirtualGrid__ to be populated with data, its __InitialRowCount__ and __InitialColumnCount__ properties need to be set.
 
 #### __[XAML] Example 1: Setting the InitialRowCount and InitialColumnCount properties__
 	{{region radvirtualgrid-celltooltip-2}}
@@ -95,7 +95,7 @@ You can set the CellToolTip content with a similar code by subscribing to the __
 
 ## CellToolTipTemplate
 
-You can customize the CellToolTip through CellToolTipTemplate property of the RadVirtualGrid.
+You can customize the CellToolTip through the CellToolTipTemplate property of the RadVirtualGrid.
 
 #### __[C#] Example 4: Setting CellTooltipTemplate property to custom DataTemplate__
 	{{region radvirtualgrid-celltooltip-5}}

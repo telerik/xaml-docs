@@ -83,13 +83,13 @@ The control populates its data through the CellValueNeeded event. In our case, w
 		}  
 	{{endregion}}
 
-You can set the CellToolTip content with a similar code by subscribing to the __ToolTipNeeded__ event.
+You can set the CellToolTip content with a similar code by subscribing to the __CellToolTipNeeded__ event.
 
 #### __[C#] Example 3: Setting the Value of the ToolTip__
 	{{region radvirtualgrid-celltooltip-4}}
 		private void virtualGrid_CellToolTipNeeded(object sender,Telerik.Windows.Controls.VirtualGridToolTipEventArgs e) 
 		{ 
-			e.Value = String.Format("Row:{0},Col:{1}", e.RowIndex, e.ColumnIndex); 
+			e.Value = String.Format("ToolTip Row:{0},Col:{1}", e.RowIndex, e.ColumnIndex); 
 		}  
 	{{endregion}}
 
@@ -105,9 +105,11 @@ You can customize the CellToolTip through the CellToolTipTemplate property of th
 			</DataTemplate>
 		</Window.Resources>
 		<Grid>
-			<telerik:RadVirtualGrid x:Name="VirtualGrid" InitialColumnCount="5" InitialRowCount="5" 
-									CellToolTipTemplate="{StaticResource CustomToolTipTemplate}" 
-									ShowCellToolTip="True" />   
+			<telerik:RadVirtualGrid x:Name="VirtualGrid" InitialColumnCount="5" InitialRowCount="5"
+						CellValueNeeded="virtualGrid_CellValueNeeded" 		
+						CellToolTipNeeded="virtualGrid_CellToolTipNeeded" 
+						CellToolTipTemplate="{StaticResource CustomToolTipTemplate}" 
+						ShowCellToolTip="True" />   
 		</Grid>
 	{{endregion}}
 

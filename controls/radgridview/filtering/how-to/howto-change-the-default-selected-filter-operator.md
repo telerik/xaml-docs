@@ -10,7 +10,7 @@ position: 5
 
 # Change the Default Selected Filter Operators
 
-To change the default selected filter operators, you have to attach to the FilterOperatorsLoading event of RadGridView and set them in the event arguments. When in Filter Row mode you only need to set the first operator.
+To change the default selected filter operators, you have to handle the __FilterOperatorsLoading__ event of RadGridView and set them in the event arguments. When the [FilteringMode]({%slug gridview-filtering-howto-configure-the-filtering-mode%}) is __FilterRow__, you only need to set the first operator.
 
 #### __C#__
 
@@ -36,5 +36,4 @@ To change the default selected filter operators, you have to attach to the Filte
 	End Sub
 {{endregion}}
 
->Please note that you cannot reorder the available operators.
-
+>Please, note that you cannot reorder the available operators.

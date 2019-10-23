@@ -66,7 +66,7 @@ __Example 2__ shows a complex row details template, which contains another RadGr
 				<telerik:RadGridView Name="playersGrid" 
 									 ItemsSource="{Binding Teams}" 
 									 AutoGenerateColumns="False"
-									 Height="200">
+									 MaxHeight="200">
 					<telerik:RadGridView.Columns>
 						<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"/>
 						<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
@@ -78,7 +78,7 @@ __Example 2__ shows a complex row details template, which contains another RadGr
 	</telerik:RadGridView>
 {{endregion}}
 
->important You should specify a Height for the RadGridView in the RowDetailsTemplate. Otherwise the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
+>important You should specify fixed dimensions for the RadGridView in the RowDetailsTemplate (Height/MaxHeight and Width/MaxWidth). Otherwise the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
 
 __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.  
 ![Telerik {{ site.framework_name }} DataGrid-row-details-template-complex](images/gridview-row-details-template-complex.png)

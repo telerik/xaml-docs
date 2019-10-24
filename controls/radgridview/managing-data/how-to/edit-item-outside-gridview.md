@@ -10,7 +10,7 @@ position: 2
 
 # Edit an item outside RadGridView
 
-When you [edit an item]({%slug gridview-managing-data-updating-entry%}) from the collection bound to the RadGridView and the business object implements the __INotifyPropertyChanged__ interface - the changes immediately reflect in RadGridView. However, this does not update the filtering, grouping and sorting of the control. In order to reapply those operations, you can replace the desired item in the collection bound the ItemsSource of the RadGridView (provided that the collection implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=netframework-4.8)) with a new object. 
+When you [edit an item]({%slug gridview-managing-data-updating-entry%}) from the collection bound to the RadGridView and the business object implements the __INotifyPropertyChanged__ interface - the changes immediately reflect in the grid. However, this does not update the filtering, grouping and sorting of the control. In order to reapply those operations, you can replace the desired item in the collection bound the ItemsSource of the RadGridView (provided that the collection implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=netframework-4.8)) with a new object. This approach is demonstrated in __Example 1__.
 
 #### __[C#] Example 1: Replace an item in the collection bound to the RadGridView__
 

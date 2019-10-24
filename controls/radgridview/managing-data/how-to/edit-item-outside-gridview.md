@@ -1,7 +1,7 @@
 ---
-title: Edit an item outside RadGridView
-page_title: Edit an item outside RadGridView
-description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the few simple steps you should follow in order to edit an item outside the grid.
+title: Reapply data operations when property changes
+page_title: Reapply data operations when property changes
+description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to reapply the filtering, sorting and grouping when a property of the data item is changed.
 slug: edit-item-outside-gridview
 tags: edit,an,item,outside,radgridview
 published: True
@@ -10,40 +10,22 @@ position: 2
 
 # Edit an item outside RadGridView
 
-As you probably know, if you [edit an item]({%slug gridview-managing-data-updating-entry%}) in RadGridView and the business object implements the __INotifyPropertyChanged__ interface - the changes immediately reflect in RadGridView. To achieve the same result when editing an item outside the user interface of RadGridView you should follow a few simple steps:
+When you [edit an item]({%slug gridview-managing-data-updating-entry%}) from the collection bound to the RadGridView and the business object implements the __INotifyPropertyChanged__ interface - the changes immediately reflect in RadGridView. However, this does not update the filtering, grouping and sorting of the control. In order to reapply those operations, you can replace the desired item in the collection bound the ItemsSource of the RadGridView (provided that the collection implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=netframework-4.8)) with a new object. 
 
-1. Before editing the item, find it in the Items collection of the gridview and call the __EditItem__(item) method of the Items collection:
-
-#### __C#__
+#### __[C#] Example 1: Replace an item in the collection bound to the RadGridView__
 
 {{region cs-edit-item-outside-gridview_0}}
-	Club selectedItem = this.clubsGrid.SelectedItem as Club;
-	this.clubsGrid.Items.EditItem(selectedItem);
+	var newClub = new Club("New Club");
+	
+	// In the context of this example this.Clubs is a collection of Club objects, which is bound to the ItemsSource of the RadGridView
+    	this.Clubs[0] = newClub;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Replace an item in the collection bound to the RadGridView__
 
 {{region vb-edit-item-outside-gridview_1}}
-	Dim selectedItem As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
-	Me.clubsGrid.Items.EditItem(selectedItem)
+	Dim newClub = New Club("New Club")
+
+	' In the context of this example this.Clubs is a collection of Club objects, which is bound to the ItemsSource of the RadGridView
+	Me.Clubs(0) = newClub
 {{endregion}}
-
-2. Modify the object and then call the __CommitEdit()__ method of the Items collection:
-
-#### __C#__
-
-{{region cs-edit-item-outside-gridview_2}}
-	selectedItem.Name = "new Name of the item";
-	this.clubsGrid.Items.CommitEdit();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-edit-item-outside-gridview_3}}
-	selectedItem.Name = "new Name of the item"
-	Me.clubsGrid.Items.CommitEdit()
-{{endregion}}
-
-That's it - the RadGridView will show the updated data immediately. 
-
-

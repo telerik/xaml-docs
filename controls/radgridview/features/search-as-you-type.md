@@ -132,6 +132,14 @@ A common scenario where you can use this event is when you want to clear the sea
 	End Sub
 {{endregion}}
 
+In **R1 2019**, we introduced the **Searching** and **Searched** events.
+
+The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs**.
+
+The **Searched** event will be raised when the grid data has been searched. It's arguments are of type **GridViewSearchedEventArgs**.
+
+>tipFor more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
+
 ## Modifying the Searching Criteria
 
 In order to modify the search behavior, you can benefit from the following three search operators:

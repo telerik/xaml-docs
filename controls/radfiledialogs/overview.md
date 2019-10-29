@@ -49,6 +49,8 @@ Here are a few of the controls' main features:
 * **Environment variables**: The dialogs support the usage of all system and user-defined enviroment variables.
 
 * **Network Locations**: The controls allow you to display network locations by setting the **ShowNetworkLocations** property.
+
+* **Localization Support**: The control supports localization that allows you to use it with different culture settings. Read more, in the [Localization]({%slug radfiledialogs-localization%}) article.
  
 The file dialogs also support many other features of the native Windows file dialogs.
 

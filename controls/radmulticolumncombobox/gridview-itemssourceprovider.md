@@ -59,6 +59,16 @@ The visibility of the column headers and footers can be controlled through the f
 
 Since __R1 2019 SP1__, the GridViewItemsSourceProvider exposes the __IsReadOnly__ property through which you can control the __IsReadOnly__ property of the RadGridView control in the dropdown.
 
+## RowIndicatorVisibility
+
+> More information can be found in the [Hiding the Row Indicator]({%slug gridview-customizing-rows%}) topic.
+
+By default the first cell of a row represents row indicator, which appears when the row is set as current. Since __R2 2019__, the __GridViewItemsSourceProvider__ exposes the __RowIndicatorVisibility__ property which controls the visibility of the row indicator.
+
+## ContextMenu
+
+In __R2 2019__, we introduced the __ContextMenu__ property of the __GridViewItemsSourceProvider__ which allows you to set a custom ContextMenu.
+
 ## See Also
 
 * [Getting Started]({%slug multicolumncombobox-getting-started%})

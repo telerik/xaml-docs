@@ -3,7 +3,7 @@ title: Events
 page_title: Events
 description: This article lists the events that the RadTransitionControl exposes. 
 slug: radtransition-events-overview
-tags: events
+tags: events, radtransition, triggeringtransion, transitionstatuschanged, istransitionidle
 published: True
 position: 4
 ---
@@ -12,11 +12,11 @@ position: 4
 
 The RadTransitionControl raises the following specific events:
 
-* __TriggeringTransion__ - this event is fired before a transition is started. The event handler receives two arguments:
+* __TriggeringTransion__: This event is fired before a transition is started. The event handler receives two arguments:
 
-    * The __sender__ argument contains the RadTransitionControl. This argument is of type object, but can be cast to the RadTransitionControl type.
+    * The __sender__ argument contains the RadTransitionControl. This argument is of type object but can be cast to the RadTransitionControl type.
 
-    * A TriggeringTransitionEventArgs object. It exposes only the __Cancel__ property, which allows you to cancel the transition as demonstrated in __Example 1__. Note, that even if the transition is cancelled, the Content will still be changed. 
+    * A __TriggeringTransitionEventArgs__ object. It exposes only the __Cancel__ property, which allows you to cancel the transition, as demonstrated in __Example 1__. Note, that even if the transition is cancelled, the Content will still be changed. 
 
     #### __[C#] Example 1: Canceling the TriggeringTransion event__ 	
     {{region cs-radtransition-events-overview_0}}
@@ -35,7 +35,7 @@ The RadTransitionControl raises the following specific events:
         End Sub
     {{endregion}}
 
-* __TransitionStatusChanged__ - this event is fired anytime there is a change in the content and the transition animation. The event handler receives two arguments:
+* __TransitionStatusChanged__: This event is fired anytime there is a change in the content and the transition animation. The event handler receives two arguments:
 
     * The __sender__ argument contains the RadTransitionControl. This argument is of type object, but can be cast to the RadTransitionControl type.
 
@@ -79,13 +79,13 @@ The RadTransitionControl raises the following specific events:
 
 ## When Does a Transition Start?
 
-To check if new content is available or whether a transition has started, you should take care to handle __both__ cases: __Started__ and __Interrupted__. They both indicate that a new transition has started/new content is available with the difference being whether the RadTransitionControl has been playing another transition or not.    	
+To check if new content is available or whether a transition has started, you should take care to handle __both__ cases: __Started__ and __Interrupted__. They both indicate that a new transition has started/new content is available, with the difference being whether the RadTransitionControl has been playing another transition or not.    	
 
 ## Is There a Transition Currently Playing?
 
 If you want to do some UI related logic, like disabling buttons, while a transition is in progress, you could use the __Started__ and __Interrupted__ states to set the buttons to disabled and the __Completed__ state to reset them back to enabled.    	
 
-You can also use the __IsTransitionIdle__ property. It allows you to bind the __IsEnabled__ of a UIElement to the __IsTransitionIdle__ property as demonstrated in __Example 3__.
+You can also use the __IsTransitionIdle__ property. It allows you to bind the __IsEnabled__ of a UIElement to the __IsTransitionIdle__ property, as demonstrated in __Example 3__.
 
 #### __[XAML] Example 3: Using the IsTransitionIdle property__ 	
 {{region xaml-radtransition-events-overview_4}}

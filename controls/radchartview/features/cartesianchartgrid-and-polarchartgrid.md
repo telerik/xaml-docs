@@ -10,7 +10,7 @@ position: 3
 
 # Chart Grid
 
-In order to improve the readiness of the chart you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. Depending on the chart that you use (RadCartesianChart or RadPolarChart) there are two types __CartesianChartGrid__ and __PolarChartGrid__ that you can play with to add a decoration over the plot area.
+In order to improve the readiness of the chart you may want to add grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. Depending on the chart that you use (RadCartesianChart or RadPolarChart) there are two types: __CartesianChartGrid__ and __PolarChartGrid__ that you can play with to add a decoration over the plot area.
 
 ![Rad Chart View grid overview](images/radchartview-features-grid-13.png)
 

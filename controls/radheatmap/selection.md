@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: This article describes the selection functionality that the RadHeatMap exposes.
 slug: radheatmap-selection
 tags: Selection
 published: True
@@ -10,23 +10,23 @@ position: 5
 
 # Selection
 
-The RadHeatMap control allows you to select its cells visually. A border around the cell represents this functionality, and it is disabled by default. To enable it, you need to set SelectionMode, SelectedCellBorderColor, SelectedCellBorderThickness properties of the RadHeatMap.  
+The RadHeatMap control allows you to select its cells visually. A border around the cell represents this functionality, and it is disabled by default. To enable it, you need to set the __SelectionMode__, __SelectedCellBorderColor__ and __SelectedCellBorderThickness__ properties of the RadHeatMap.  
 
 >You need to set all three properties (SelectionMode, SelectedCellBorderColor, SelectedCellBorderThickness) otherwise, the visual selection of the cells won't appear.
 
-The __SelecitionMode__ property is an enumeration of type __HeatMapSelectionMode__ which provides the following values:
+The __SelectionMode__ property is an enumeration of type __HeatMapSelectionMode__ which provides the following values:
 
-* __None__: When set the selection is disable. (default)
-* __SingleDataItem__: When set only a single data item can be selected with interaction.
-* __MultipleDataItems__: When set multiple data items can be selected with interaction.
+* __None__: The selection is disabled. (default)
+* __SingleDataItem__: Only a single data item can be selected with interaction.
+* __MultipleDataItems__: Multiple data items can be selected with interaction.
 
 The __SelectedCellBorderColor__ property is of type __Color__ that gets or sets the color of the selection border.
 
 The __SelectedCellBorderThickness__ property is of type __Thickness__ that gets or sets the thickness of the selection border.
 
-#### __[C#] Example 1: Enabling the selection behavior of the RadHeatMap__
+#### __[XAML] Example 1: Enabling the selection behavior of the RadHeatMap__
 
-{{region radheatmap-selection_0}}
+{{region xaml-radheatmap-selection_0}}
 	 <telerik:RadHeatMap SelectionMode="MultipleDataItems" SelectedCellBorderColor="Red" SelectedCellBorderThickness="2" />
 {{endregion}}
 

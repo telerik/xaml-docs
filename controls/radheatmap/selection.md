@@ -17,10 +17,12 @@ The RadHeatMap control allows you to select its cells visually. A border around 
 The __SelecitionMode__ property is an enumeration of type __HeatMapSelectionMode__ which provides the following values:
 
 * __None__: When set the selection is disable. (default)
-* __SingleDataItem__: When set only a single data item can be selection with interaction.
+* __SingleDataItem__: When set only a single data item can be selected with interaction.
 * __MultipleDataItems__: When set multiple data items can be selected with interaction.
 
-The SelectedCellBorderColor and SelectedCellBorderThickness are properties of type Color and Thikness which customize the selection Border around the cell.
+The __SelectedCellBorderColor__ property is of type __Color__ that gets or sets the color of the selection border.
+
+The __SelectedCellBorderThickness__ property is of type __Thickness__ that gets or sets the thickness of the selection border.
 
 #### __[C#] Example 1: Enabling the selection behavior of the RadHeatMap__
 

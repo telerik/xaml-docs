@@ -30,7 +30,7 @@ You can change the value of the __DateSelectionMode__ property in XAML as shown 
 	<telerik:RadDateTimePicker x:Name="dateTimePicker" InputMode="DatePicker" DateSelectionMode="Month"/>
 {{endregion}}
 
-__Example 2__ demonstrate how you can change it in code.
+__Example 2__ demonstrates how you can change it in code.
 
 #### __[C#] Example 2: Setting the DateSelectionMode property programmatically__
 {{region raddatetimepicker-features-date-selection-modes-1}}

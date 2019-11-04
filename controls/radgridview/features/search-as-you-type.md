@@ -132,11 +132,32 @@ A common scenario where you can use this event is when you want to clear the sea
 	End Sub
 {{endregion}}
 
-In **R1 2019**, we introduced the **Searching** and **Searched** events.
+In **R1 2019**, the **Searching** and **Searched** events were introduced.
 
 The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs**.
 
+A common scenario for the use of this event is when you want to cancel the search based on a condition:
+
+#### __[C#] Example 5: Stop the searching based on a condition__
+{{region cs-radgridview-search-as-you-type-5}}
+	public MainWindow()
+    {
+        InitializeComponent();
+        this.RadGridView.Searching += RadGridView_Searching;
+    }
+
+    void RadGridView_Searching(object sender, Telerik.Windows.Controls.GridView.GridViewSearchingEventArgs e)
+    {
+        if (e.SearchText.ToString() == "SomeText")
+        {
+            e.Cancel = true;
+        }
+    }
+{{endregion}}
+
 The **Searched** event will be raised when the grid data has been searched. It's arguments are of type **GridViewSearchedEventArgs**.
+
+>**GridViewSearchedEventArgs** has a **SearchText** property which gets the text which was entered in the search panel **TextBox**. 
 
 >tipFor more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
 
@@ -189,8 +210,8 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 
 >important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterwards, it was included in __R1 2018__ official release of the __Telerik UI for WPF__ suite.
 
-#### __[XAML] Example 5: Setting CanUserSearchInHiddenColumns property in XAML__
-{{region xaml-radgridview-search-as-you-type-5}}
+#### __[XAML] Example 6: Setting CanUserSearchInHiddenColumns property in XAML__
+{{region xaml-radgridview-search-as-you-type-6}}
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
 

@@ -67,7 +67,34 @@ By default the first cell of a row represents row indicator, which appears when 
 
 ## ContextMenu
 
-In __R2 2019__, we introduced the __ContextMenu__ property of the __GridViewItemsSourceProvider__ which allows you to set a custom ContextMenu.
+The __ContextMenu__ property of the __GridViewItemsSourceProvider__ allows you to set a custom context menu.
+
+>This feature was introduced in __R2 2019__.
+
+The example below shows how to set the **ContextMenu** property of **GridVIewItemsSourceProvider**:
+
+#### __[XAML] Example 1: Set custom context menu__
+{{region xaml-radmulticolumncombobox--gridview-itemssourceprovider-0}}
+	<Window.Resources>
+        <local:MyModel x:Key="MyModel"/>
+        <ContextMenu x:Key="contextMenu">
+            <MenuItem Header="Menu item 1" />
+            <MenuItem Header="Menu item 2" />
+            <Separator />
+            <MenuItem Header="Menu item 3" />
+        </ContextMenu>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource MyModel}">
+        <telerik:RadMultiColumnComboBox VerticalAlignment="Top" OpenDropDownOnFocus="True">
+            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+                <telerik:GridViewItemsSourceProvider ContextMenu="{StaticResource contextMenu}" ItemsSource="{Binding MyObjects}"/>
+            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+        </telerik:RadMultiColumnComboBox>
+    </Grid>
+{{endregion}}
+
+#### __Figure 1: Result of Example 1__
+![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
 
 ## See Also
 

@@ -8,19 +8,11 @@ published: True
 position: 0
 ---
 
+# Basic Grouping
+
 __RadGridView__ provides a built-in grouping functionality, which allows the user to easily group the data by one or more columns.
- 
-* [Basic Grouping](#basic-grouping)
-* [GroupMemberPath](#groupmemberpath)
-* [Grouping Modes](#grouping-modes)
-* [Reorder Columns when Ungrouping](#reorder-columns-when-ungrouping)
-* [Disabling Grouping](#disabling-grouping)
-* [Events](#events)
-* [Styling and Appearance](#styling-and-appearance)
 
 >The groups of RadGridView can be programmatically expanded and collapsed. This is demonstrated in the [Programmatic Grouping]({%slug gridview-programmatic-grouping%}) topic.
-
-# Basic Grouping
 
 In order to group data the user has to just drag the desired column to __GridViewGroupPanel__ located at the top of __RadGridView__. If __RadGridView__ is not grouped, a hint is shown in __GridViewGroupPanel__.
 

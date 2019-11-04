@@ -45,7 +45,7 @@ The __RadGridView__ control provides three selection modes, which allow you to m
 __RadGridView__ also provides three selection units, which allow you to manipulate what units are selected when you interact with the grid. This is controlled by the __SelectionUnit__ enumeration property which has the following values:
 
 * __FullRow__: This is the default value. Clicking within the cells will select the whole row.    
-* __Cell__: Only te clicked cell is selected. Depending on the value of the __SelectionModes__ property you can have more than one selected cell. 
+* __Cell__: Only the clicked cell is selected. Depending on the value of the __SelectionMode__ property you can have more than one selected cell. 
 * __Mixed__: You can select both cells and rows. To select a row you should click either on the **row indicator** or outside any cells in the row.
 
 ## Selected items
@@ -64,7 +64,7 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 
 >This will only disable the selection. The user will still be able to change the current item.
 
->This will disable the selection for only the end-user. It still will be possible to manipulate the selection programmatically.
+>This will disable the selection only for the end-user. It will still be possible to manipulate the selection programmatically.
           
 #### __[XAML] Example 1: Set the CanUserSelect property in XAML__
 

@@ -53,6 +53,8 @@ __RadGridView__ API allows you to tweak your application for optimal performance
 * __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
 
 * As of __R2 2016__ GridViewComboBoxColumn exposes a new property - __IsLightweightModeEnabled__. Setting it to __true__ significantly increases the lookup logic of __GridViewComboBoxColumn__. Thus, the overall performance of RadGridView will be improved as well.
+
+* When you have child RadGridViews placed in [RowDetails]({%slug radgridview-row-details-template%}) or a [Hierarchy structure]({%slug gridview-basic-hierarchies%}), make sure to specify fixed dimensions for them (Height/MaxHeight and Width/MaxWidth). Otherwise their [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
             
 ## See Also
 

@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: This article goes over the selection feature of the RadTabControl.
 slug: radtabcontrol-features-selection
 tags: selection
 published: True
@@ -10,28 +10,25 @@ position: 2
 
 # Selection
 
-__RadTabControl__ exposes several useful properties and events, which can help you to work with items selections.
-
-* [Properties](#properties)
-* [Events](#events)
+__RadTabControl__ exposes several useful properties and events, which can help you to work with items selection.
         
 ## Properties
 
-* By using __SelectedIndex__ property you can get or set the index of the currently selected tab item.
+* By using the __SelectedIndex__ property, you can get or set the index of the currently selected tab item.
 
-* By using __SelectedItem__ property you can get or set the currently selected tab item. The reference you are passing should be to an instance of __RadTabItem__ that has already been added to the tab control items collection.
+* By using the __SelectedItem__ property, you can get or set the currently selected tab item. The reference you are passing should be to an instance of __RadTabItem__ that has already been added to the Items collection of the RadTabControl.
 
->If your tab control is bound to a custom collection, then the property __SelectedItem__ will not return __RadTabItem__ as you might expect, but item of the type the source collection contains i.e. __Person__, __TabModel__ etc.
+>If your tab control is bound to a custom collection, then the property __SelectedItem__ will not return __RadTabItem__ as you might expect, but an item of the type the source collection contains i.e. __Person__, __TabModel__ etc.
 
-* Another way to make certain tab item selected is by using the __RadTabItem__’s property __IsSelected__. This is a Boolean property and when set to __True__, that specific tab item is selected, while the previous one gets deselected.
+* Another way to select a certain tab item is by using the __RadTabItem__’s __IsSelected__ property. This is a Boolean property and when set to __True__, that specific tab item is selected, while the previous one gets deselected.
 
-* Use the __SelectedContent__ property to get or set the content of the currently selected tab item. Please note that, when you set value to this property you will replace the content of the currently selected tab item, but the selected tab item will not change, it will stay the same.
+* Use the __SelectedContent__ property to get or set the content of the currently selected tab item. Please note that, when you set this property you will replace the content of the currently selected tab item, but the selected tab item will stay the same.
 
 >__The items counting is zero based, meaning that the index of the first tab items is 0, the index of the second item is 1 and so on.__ If you want to clear the selection just set the property __SelectedIndex to -1__.
 
 ## Events
 
-__RadTabControl__ provides two events in regards to its selection: the __PreviewSelectionChanged__ and __SelectionChanged__ ones. The first one is raised before the selection is complete. Marking the event as handled will basically revert the selection.
+__RadTabControl__ provides two events in regards to its selection: __PreviewSelectionChanged__ and __SelectionChanged__. The first one is raised before the selection is complete. Marking the event as handled will basically revert the selection.
 
 #### __[XAML] Example 1: Subscribing to the PreviewSelectionChanged Event__
 
@@ -43,7 +40,7 @@ __RadTabControl__ provides two events in regards to its selection: the __Preview
 #### __[C#] Example 2: Handling the PreviewSelectionChanged Event__
 
 {{region radtabcontrol-features-selection_1}}
-	 private void radTabControl_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
+	private void radTabControl_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
         {
             e.Handled = true;
         }

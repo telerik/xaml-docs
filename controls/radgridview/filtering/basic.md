@@ -70,6 +70,10 @@ The default behavior of the filtering control is to apply the filter as soon as 
 
 This behavior can be controlled by adjusting the **IsFilteringDeferred** property of the respective column. This property makes sense and is used only when the FiltertingMode of the grid is Popup. When IsFilteringDeferred is set to **True** no filtering will occur until the user explicitly clicks the Filter button. This mode is very useful when filtering is performed on a remote server and each trip to the server is costly. Clicking the **Clear** button will always clear all of the column’s filters immediately in one batch operation. This operation cannot be deferred and will always be executed immediately.
 
+### Keep Filter Popup Open
+
+In **R3 2019 SP1** we introduced the new **FilteringDropDownStaysOpen** property. It controls whether the filtering dropdown should stay open when a click outside of the popup occurs. It has a default value of **False**. If set to **True**, the popup will only close on a click on either the **Close** button or the **Filter** icon.
+
 ## Filter Row
 
 The **FilterRow** filtering mode offers a filter built in the header cell of each filterable column. This mode is simpler and does not support the notion of distinct values. In fact, the field filter editor that is displayed in the header cell is exactly the same as either of the two field filter editors from the Popup filtering control. You can think of this as an oversimplified version of the Popup mode where the user sees only one of the two field filter editors of the Popup filtering control and the editor is always visible.

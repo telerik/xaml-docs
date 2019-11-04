@@ -134,7 +134,7 @@ A common scenario where you can use this event is when you want to clear the sea
 
 In **R1 2019**, the **Searching** and **Searched** events were introduced.
 
-The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs**.
+The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs** and contain the value of the text which was entered in the search panel **TextBox** - **SearchText**. They also contain a boolean property which indicates whether the event should be canceled - **Cancel**.
 
 A common scenario for the use of this event is when you want to cancel the search based on a condition:
 
@@ -155,9 +155,7 @@ A common scenario for the use of this event is when you want to cancel the searc
     }
 {{endregion}}
 
-The **Searched** event will be raised when the grid data has been searched. It's arguments are of type **GridViewSearchedEventArgs**.
-
->**GridViewSearchedEventArgs** has a **SearchText** property which gets the text which was entered in the search panel **TextBox**. 
+The **Searched** event will be raised when the grid data has been searched. It's arguments are of type **GridViewSearchedEventArgs** and contain the value of the text which was entered in the search panel **TextBox** - **SearchText**.
 
 >tipFor more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
 

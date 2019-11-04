@@ -20,7 +20,7 @@ The RadHeatMap control provides a tooltip behavior which can be used to visualiz
 
 ## Customizing the Tooltip
 
-To customize the apperance of the tooltip you can use the __HeatMapToolTipSettings__ property. For demonstration purposes we will use a simple class that will represent one cell of the RadHeatMap control. This class will expose three properties:
+To customize the apperance of the tooltip you can use the __HeatMapToolTipSettings__ propertyo of __RadHeatMap__. For demonstration purposes we will use a simple class that will represent one cell of the RadHeatMap control. This class will expose three properties:
 
  * __Row:__ А string property which gets or sets the row name of the corresponding cell.
  * __Column:__ А string property which gets or sets the column name of the corresponding cell.
@@ -45,7 +45,7 @@ To customize the apperance of the tooltip you can use the __HeatMapToolTipSettin
 	End Class
 {{endregion}}
 
-To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objects and set it as DataContext of the control. 
+To fill the RadHeatMap with sample data we can create a list of *TempInfo* objects and set it as DataContext of the control. 
 
 #### __[C#] Example 3: Populating the RadHeatMap control__
 {{region radheatmap-tooltip-3}}
@@ -73,7 +73,7 @@ To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objec
 				}
 			}
 
-			this.categoricalDefinition.ItemsSource = source;
+			this.DataContext = source;
 		}
     } 
 {{endregion}}
@@ -106,7 +106,7 @@ To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objec
 				Next
 			Next
 
-			Me.categoricalDefinition.ItemsSource = source
+			Me.DataContext = source
 		End Sub
 	End Class
 {{endregion}}
@@ -129,7 +129,7 @@ After having the sample data ready, we can go in the XAML code and define the Ra
 			</telerik:HeatMapToolTipSettings>
 		</telerik:RadHeatMap.ToolTipSettings>
 		<telerik:RadHeatMap.Definition>
-			<telerik:CategoricalDefinition x:Name="categoricalDefinition" 
+			<telerik:CategoricalDefinition x:Name="categoricalDefinition" ItemsSource="{Binding}"
 									RowGroupMemberPath="Year" 
 									ColumnGroupMemberPath="Month" 
 									ValuePath="Temperature" />

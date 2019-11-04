@@ -14,20 +14,48 @@ If you want to modify the representation of the items located in the Calendar vi
 
 The __DateSelectionMode__ specifies whether the calendar in the __RadDateTimePicker__ control will select days, months or years. The possible values are correspondingly:
 
-* __Day__ - this is the default value and will let you select a day. Using this selection mode you can still browse the calendar - selecting the month you will go into another view where you can directly select another month. The behavior is the same for years, too. 
+* __Day__: This is the default value and will let you select a day. Using this selection mode you can still browse the calendar - selecting the month you will go into another view where you can directly select another month. The behavior is the same for years, too. 
 
-* __Month__ - lets you select a specific month. Using this selection mode you will limit the input to a single month only. This means that you will not be able to browse through a specific month's days.
+* __Month__: Lets you select a specific month. Using this selection mode you will limit the input to a single month only. This means that you will not be able to browse through a specific month's days. Still, the user can change the date by typing it manually.
 
-* __Year__ - lets you select a year. This selection mode limits the input to years only, i.e. you will not be able to browse months and days.
+* __Year__: Lets you select a year. This selection mode limits the input to years only, i.e. you will not be able to browse months and days from the dropdown. Still, the user can change the date by typing it manually.
 
 >These date selection modes are only for the control's Calendar view and don't refer in any way to the Clock view. The default __RadDateTimePicker__ control will include both of the views and if you prefer to have only one of them you can do that by changing the control's input mode. [Read more here.]({%slug raddatetimepicker-features-input-modes%})
 
-You can change the value of the __DateSelectionMode__ property in XAML as shown in this snippet:
+You can change the value of the __DateSelectionMode__ property in XAML as shown in __Example 1__:
 
-#### __XAML__
+#### __[XAML] Example 1: Setting the DateSelectionMode property__
 
 {{region xaml-raddatetimepicker-features-date-selection-modes_0}}
-	<telerik:RadDateTimePicker InputMode="DatePicker" DateSelectionMode="Month"/>
+	<telerik:RadDateTimePicker x:Name="dateTimePicker" InputMode="DatePicker" DateSelectionMode="Month"/>
+{{endregion}}
+
+__Example 2__ demonstrate how you can change it in code.
+
+#### __[C#] Example 2: Setting the DateSelectionMode property programmatically__
+{{region raddatetimepicker-features-date-selection-modes-1}}
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.dateTimePicker.DateSelectionMode = Telerik.Windows.Controls.Calendar.DateSelectionMode.Month;
+		}
+	   
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 2: Setting the DateSelectionMode property programmatically__
+{{region raddatetimepicker-features-date-selection-modes-1}}
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.dateTimePicker.DateSelectionMode = Telerik.Windows.Controls.Calendar.DateSelectionMode.Month;
+		}
+	   
+	}
 {{endregion}}
 
 This example will achieve the following:
@@ -38,6 +66,7 @@ This example will achieve the following:
 
 Here is the result:
 
+#### __Figure 1: DateTimePicker with selection mode set to Month__
 ![](images/dateTimePicker_features_date_selection_modes_010.png)
 
 ## See Also

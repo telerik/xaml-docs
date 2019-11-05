@@ -111,7 +111,7 @@ To fill the RadHeatMap with sample data we can create a list of *TempInfo* objec
 	End Class
 {{endregion}}
 
-After having the sample data ready, we can go in the XAML code and define the RadHeatMap and the CellLabelSettings.
+After having the sample data ready, we can go in the XAML code and define the RadHeatMap and the __ToolTipSettings__.
 
 #### __[XAML] Example 4: Customizing the ToolTip__
 {{region radheatmap-labels-5}}

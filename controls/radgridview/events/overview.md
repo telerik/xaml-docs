@@ -93,9 +93,9 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 
 * ### Searching Events
-    * __Searching__: Occurs when the grid data is about to be searched. The type of the passed event arguments is __GridViewSearchingEventArgs__.
+    * __Searching__: Occurs when the grid data is about to be searched. The type of the passed event arguments is __GridViewSearchingEventArgs__ which contains the value of the text which was entered in the search panel **TextBox** - **SearchText**. They also contain a boolean property which indicates whether the event should be canceled - **Cancel**.
 
-    * __Searched__: Occurs when the grid data has been searched. The type of the passed event arguments is __GridViewSearchedEventArgs__.
+    * __Searched__: Occurs when the grid data has been searched. The type of the passed event arguments is __GridViewSearchedEventArgs__ which contains the value of the text which was entered in the search panel **TextBox** - **SearchText**.
 
 
 * ### Grouping 

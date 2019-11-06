@@ -101,13 +101,7 @@ A common scenario where you can use this event is when you want to clear the sea
 
 #### __[C#] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 {{region cs-radgridview-search-as-you-type-3}}
-	public MainWindow()
-    {
-        InitializeComponent();
-        this.RadGridView.SearchPanelVisibilityChanged += RadGridView_SearchPanelVisibilityChanged;
-    }
-
-    void RadGridView_SearchPanelVisibilityChanged(object sender, VisibilityChangedEventArgs e)
+    private void RadGridView_SearchPanelVisibilityChanged(object sender, VisibilityChangedEventArgs e)
     {
         if (e.NewVisibility == Visibility.Collapsed)
         {
@@ -119,11 +113,6 @@ A common scenario where you can use this event is when you want to clear the sea
 
 #### __[VB.NET] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 {{region vb-radgridview-search-as-you-type-4}}
-	Public Sub New()
-		InitializeComponent()
-		AddHandler Me.RadGridView.SearchPanelVisibilityChanged, AddressOf RadGridView_SearchPanelVisibilityChanged
-	End Sub
-	
 	Private Sub RadGridView_SearchPanelVisibilityChanged(sender As Object, e As VisibilityChangedEventArgs)
 		If e.NewVisibility = Visibility.Collapsed Then
 			Dim clearSearchValue = TryCast(GridViewSearchPanelCommands.ClearSearchValue, RoutedUICommand)
@@ -140,13 +129,7 @@ A common scenario for the use of this event is when you want to cancel the searc
 
 #### __[C#] Example 5: Stop the searching based on a condition__
 {{region cs-radgridview-search-as-you-type-5}}
-	public MainWindow()
-    {
-        InitializeComponent();
-        this.RadGridView.Searching += RadGridView_Searching;
-    }
-
-    void RadGridView_Searching(object sender, Telerik.Windows.Controls.GridView.GridViewSearchingEventArgs e)
+    private void RadGridView_Searching(object sender, Telerik.Windows.Controls.GridView.GridViewSearchingEventArgs e)
     {
         if (e.SearchText.ToString() == "SomeText")
         {

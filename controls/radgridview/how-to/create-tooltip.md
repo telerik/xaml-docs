@@ -12,7 +12,7 @@ position: 4
 
 This article demonstrates how to set the tooltip of the gridview's rows, columns and column headers.
 
->If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base your Style to the default style of our controls.
+>If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) approach for theming the controls with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), you need to base your styles on the default styles for the controls.
 
 First you should add a GridView to the user control and bind it to some data.
 
@@ -21,7 +21,7 @@ First you should add a GridView to the user control and bind it to some data.
 	<telerik:RadGridView x:Name="gridView" ItemsSource="{Binding}" />
 {{endregion}}
 
-## ToolTip for column's cells
+## ToolTip for Column's Cells
 
 You can check the source code below on how to set a ToolTip for a specific column. The ToolTip will use a __DataTemplate__ with TextBlocks and will show information from the currently hovered row. The final result should look like this:
 
@@ -53,7 +53,7 @@ Here you can add any arbitrary controls if you want.
 
 To add a __ToolTip__ to the header cells you can set a custom style to the __HeaderCellStyle__ property. Or you can use the __Header__ property of the column. 
 
->If you're using NoXAML binaries, you should base your style on the __GridViewHeaderCellStyle__.
+>If you're using the NoXAML binaries, you need to base your style on the __GridViewHeaderCellStyle__.
 
 * Predefine the HeaderCellStyle for the column. 
 
@@ -90,9 +90,9 @@ The final result should look like this:
 
 ## ToolTip for a GridViewRow
 
-To add a ToolTip to the grid view row, you can create an implicit style that targeted GridViewRow and set the ToolTipService.ToolTip attached property.
+To add a ToolTip to the grid view row, you can create an implicit style that targets GridViewRow and set the __ToolTipService.ToolTip__ attached property.
 
->If you're using NoXAML binaries, you should base your style on the __GridViewRowStyle__.
+>If you're using the NoXAML binaries, you need to base your style on the __GridViewRowStyle__.
 
 #### __[XAML] Example 5: Adding ToolTip to the GridViewRow__
 
@@ -105,4 +105,3 @@ To add a ToolTip to the grid view row, you can create an implicit style that tar
 ## See Also
 
 * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
-

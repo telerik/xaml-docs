@@ -10,7 +10,7 @@ position: 2
 
 # IsExpandedBinding and IsExpandableBinding
 
-Since __Q1 2013__ release, __RadTreeListView__ has two new properties: __IsExpandedBinding__ and __IsExpandableBinding__ which can be used to synchronize its expanded and expandable states with your view-model.
+Since __Q1 2013__ release, __RadTreeListView__ has two new properties - __IsExpandedBinding__ and __IsExpandableBinding__ - which can be used to synchronize its expanded and expandable states with your view-model.
 
 >caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
 
@@ -20,7 +20,7 @@ __IsExpandedBinding__ property can be used to show you whether a __TreeListView'
 
 Follow these steps to accomplish the task:
 
-1. For the purpose of this tutorial we will add a boolean property : __IsExpanded__ to our __WarehouseItem__ collection:  
+1. For the purpose of this tutorial we will add a boolean property - __IsExpanded__ - to our __WarehouseItem__ collection:  
 	>Please, note that our __WarehouseItem__ class implements the __INotifyPropertyChanged__ interface.        
 
 #### __[C#] Example 1: Create WarehouseItem model__

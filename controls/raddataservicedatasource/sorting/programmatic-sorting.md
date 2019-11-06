@@ -10,10 +10,6 @@ position: 0
 
 # Programmatic Sorting
 
-
-
-## 
-
 Programmatic sorting is performed by adding a __SortDescriptor__ object to the __SortDescriptors__ collection of the control. 
 
 For example: 
@@ -28,8 +24,6 @@ For example:
 	this.customersDataSource.SortDescriptors.Add(sd);
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region raddataservicedatasource-sorting-programmatic-sorting_1}}
@@ -40,12 +34,7 @@ For example:
 	Me.customersDataSource.SortDescriptors.Add(sd)
 {{endregion}}
 
-
-
 Once the application is loaded, the __RadGridView__ will be visualized as follows:
 ![](images/RadDataServiceDataSource_ProgrammaticSorting.png)
 
-
-
 >caution Adding several __SortDescriptors__ to the collection will perform the sorting in the respective order.
-

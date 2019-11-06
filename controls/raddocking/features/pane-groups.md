@@ -302,15 +302,17 @@ As can be seen on **Figure 2**, even when pane groups with fixed sizes are prese
 
 ## Other Properties and Methods Exposed by the RadPaneGroup class
 
-* __IsInDocumentHost__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}).
+* __IsInDocumentHost__: Read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}).
 
-* __IsInToolWindow__- read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}).
+* __IsInToolWindow__: Read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}).
 
-* __IsPaneHeaderVisible__- read-only boolean property. Returns whether the pane's header is visible.
+* __IsPaneHeaderVisible__: Read-only boolean property. Returns whether the pane's header is visible.
 
-* __SelectedPane__- returns the currently selected pane within the group.
+* __SelectedPane__: Returns the currently selected pane within the group.
 
-* __EnumeratePanes()__- returns __IEnumeratble__ of __RadPane__ objects. These are all the panes that currently belonging to the group.
+* __EnumeratePanes()__: Returns __IEnumeratble__ of __RadPane__ objects. These are all the panes that currently belonging to the group.
+
+* __PropagateItemDataContextToContent__: Specifies whether the DataContext of the RadPane should be assigned as the DataContext of its content when the selection changes. The default value of this property is __True__.
 
 ## Styling the RadPaneGroup
 

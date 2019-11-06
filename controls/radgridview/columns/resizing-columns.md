@@ -14,7 +14,7 @@ Columns inside the __RadGridView__ are resizable by default. The user is able to
 
 ![Telerik {{ site.framework_name }} DataGrid Resizing Columns 1](images/RadGridView_ResizingColumns_1.png)
 
-To resize a column you can use its __Width__ property. For example:
+To resize a column in code, you can use its __Width__ property. For example:
 
 #### __[XAML] Example 1: Setting a column with fixed width__
 
@@ -26,8 +26,8 @@ To resize a column you can use its __Width__ property. For example:
 
 ## Disabling Resizing
 
-There are two ways to disable the resizing. 
-1. The first one is by setting the __CanUserResize__ columns to __False__.
+There are two ways to disable the resizing.  
+__1.__ The first one is by setting the __CanUserResizeColumns__ property to __False__.
 
 #### __[XAML] Example 2: Disable resizing for all columns within a RadGridView__
 
@@ -40,9 +40,9 @@ There are two ways to disable the resizing.
 
 This will disable resizing on __RadGridView__ level, which means that all of the columns won't be resizable. 
 
-2. If you want to disable resizing only for a particular column use the __IsResizable__ property of the column.
+__2.__ If you want to disable resizing only for a particular column, use the __IsResizable__ property of the column.
 
-#### __[XAML] Example 3: Disalbe resizing for a specific column__
+#### __[XAML] Example 3: Disable resizing for a specific column__
 
 {{region xaml-gridview-columns-resizing-columns_2}}
 	<telerik:GridViewDataColumn Header="ID"
@@ -53,7 +53,7 @@ This will disable resizing on __RadGridView__ level, which means that all of the
 
 ## Resizing Events
 
-When the user resizes the column the __ColumnWidthChanging__ event is fired and if it is not canceled the __ColumnWidthChanged__ event fires after the resize is completed. Read more [here]({%slug gridview-column-resize-event%}).
+When the user resizes a column, the __ColumnWidthChanging__ event is fired and if it is not canceled the __ColumnWidthChanged__ event fires after the resize is completed. Read more [here]({%slug gridview-column-resize-event%}).
 
 >The user can resize columns only if __CanUserResizeColumns__ is set to __True__ (this is its default value).
 

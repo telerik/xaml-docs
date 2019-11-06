@@ -341,6 +341,15 @@ navigation:
         title: RadFluidContentControl
     controls/radcloudupload:
         title: RadCloudUpload
+    controls/radcloudupload/features:
+        title: Features
+        position: 5
+    controls/radcloudupload/styles-and-templates:
+        title: Styles and Templates
+        position: 6
+    controls/radcloudupload/how-to:
+        title: How To
+        position: 7
     controls/radcoloreditor:
         title: RadColorEditor
     controls/radcoloreditor/overview:
@@ -852,24 +861,27 @@ navigation:
         position: 26
     controls/raddataservicedatasource:
         title: RadDataServiceDataSource
-    controls/raddataservicedatasource/crud:
-        title: CRUD
-    controls/raddataservicedatasource/faq:
-        title: FAQ
+    controls/raddataservicedatasource/getting-started:
+        title: Getting Started
+        position: 1
     controls/raddataservicedatasource/filtering:
         title: Filtering
-    controls/raddataservicedatasource/grouping:
-        title: Grouping
-    controls/raddataservicedatasource/loading:
-        title: Loading
-    controls/raddataservicedatasource/mvvm:
-        title: MVVM
-    controls/raddataservicedatasource/paging:
-        title: Paging
+        position: 7
     controls/raddataservicedatasource/sorting:
         title: Sorting
+        position: 8
+    controls/raddataservicedatasource/paging:
+        title: Paging
+        position: 9
+    controls/raddataservicedatasource/loading:
+        title: Loading
+        position: 10
+    controls/raddataservicedatasource/faq:
+        title: FAQ
+        position: 11
     controls/raddataservicedatasource/how-to:		
-        title: How To	
+        title: How To
+        position: 12
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -924,6 +936,9 @@ navigation:
     controls/radsyntaxeditor/features:
         title: Features
         position: 5
+    controls/radsyntaxeditor/features/taggers:
+        title: Taggers
+        position: 9
 ## X1 Controls End
 
 ## Common Start   

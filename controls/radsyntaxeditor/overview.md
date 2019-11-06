@@ -17,7 +17,7 @@ position: 0
 
 ## Key Features
 
-* **Syntax highlighting**: Provides syntax highlighting for procedural programming and markup languages. Also allows users to customize built-in languages.
+* **Syntax highlighting**: Provides syntax highlighting for procedural programming and markup languages. Also allows users to customize built-in languages or create highlighting for their own [custom language]({%slug radsyntaxeditor-features-custom-language%}).
 
 * **Code outlining**: Displays code blocks in tree structure and allows users to expand and collapse the code blocks interactively for readability. RadSyntaxEditor automatically chooses where to create outlines for built-in languages. It also allows users to create outlining for their own syntax highlighting.
 

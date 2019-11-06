@@ -1,20 +1,24 @@
 ---
-title: Series and Axes
-page_title: Series and Axes
-description: Series and Axes
+title: Series to Axes Dependencies
+page_title: Series to Axes Dependencies
+description: The purpose of this topic is to make you familiar with the axes supported by each series in RadChartView.
 slug: radchartview-series-and-axes
 tags: series,and,axes
 publish: True
 position: 3
 ---
 
-# Series and Axes
+# Series to Axes Dependencies
 
-The RadChartView series works with different combinations of axes. The purpose of this topic is to make you familiar with the axes supported by each series. To learn more about series, refer to the [Chart Series]({%slug radchartview-series-chartseries%}) topic. 
+The RadChartView series works with different combinations of axes. The purpose of this topic is to make you familiar with the axes supported by each series. 
+
+>important To learn more about series, refer to the [Chart Series]({%slug radchartview-series-chartseries%}) articles. To learn more about axes, see the [Axis]({%slug radchartview-axes-axis%}) articles. Those articles cover the __how to setup a chart__ topic using also code examples.
 
 If you use a combination of axes that is not supported by the specific series, the series data won't be displayed properly.
 
 ### RadCartesianChart Series
+
+> The axes used as Horizontal Axis and Vertical Axis could be switched. For example the AreaSeries works with two axes - one CategoricalAxis (or date time axes) and one LinearAxis (or logarithmic). In this case you can set the CategoricalAxis as a Horizontal Axis and the LinearAxis as Vertical Axis. Or you can switch them and set the Categorical Axis as a Vertical Axis and the LinearAxis as a Horizontal Axis.
 
 | Series | Horizontal Axis | Vertical Axis |
 |---------|---------|---------|
@@ -38,8 +42,6 @@ If you use a combination of axes that is not supported by the specific series, t
 | Spline Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Step Area Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Step Line Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
-
-> The axes used as Horizontal Axis and Vertical Axis could be switched. For example the AreaSeries works with two axes - one CategoricalAxis (or date time axes) and one LinearAxis (or logarithmic). In this case you can set the CategoricalAxis as a Horizontal Axis and the LinearAxis as Vertical Axis. Or you can switch them and set the Categorical Axis as a Vertical Axis and the LinearAxis as a Horizontal Axis.
 
 ### RadPolarChart Series
 

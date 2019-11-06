@@ -12,7 +12,7 @@ position: 3
 
 Now that we are ready with the service reference and the __DataServiceContext__, let's configure __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__.
 
-1.	Add references to the following Telerik assemblies:          
+**1.** Add references to the following Telerik assemblies:          
 
 * __Telerik.Windows.Controls__ (core assembly)
 
@@ -26,7 +26,7 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 
 * __Telerik.Windows.Controls.Data__ (RadDataPager)
 
-2.	Now add the __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__ controls to the __MainWindow__. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below: 
+**2.**	Now add the __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__ controls to the __MainWindow__. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below: 
 
 {% if site.site_name == 'WPF' %}
 #### __XAML__
@@ -103,14 +103,8 @@ There are several important things to notice here:
 
 * __IsBusy__ [optional] - bind the __IsBusy__ property of __RadGridView__ to the __IsBusy__ property of the __RadDataServiceDataSource__ so you get a loading indicator during the load operation.
 
+**3.** Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to navigate across pages. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
 
-
-3.   Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to navigate across pages. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
-
-## See Also #
-
-[Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
-
-[Creating the Client Application]({%slug raddataservicedatasource-getting-started-creating-the-client-application%})
-
-
+## See Also
+* [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
+* [Creating the Client Application]({%slug raddataservicedatasource-getting-started-creating-the-client-application%})

@@ -12,9 +12,15 @@ position: 14
 
 RadPropertyGrid supports validation through [IDataErrorInfo](#validating-through-idataerrorinfo), [INotifyDataErrorInfo](#validating-through-inotifydataerrorinfo) and through [DataAnnotations](#validating-through-dataannotations) as well as validating [PropertySets](#validating-property-sets).
 
+>Complete examples of the implementation of the validation mechanisms in the RadPropertyGrid control can be found in our GitHub repository:
+* [IDataErrorInfo and Data Annotations Validation](https://github.com/telerik/xaml-sdk/tree/master/PropertyGrid/Validation)
+* [INotifyDataErrorInfo Validation](https://github.com/telerik/xaml-sdk/tree/master/PropertyGrid/ValidationINotifyDataErrorInfo)
+
+>You can run these examples through the [SDK Samples Browser]({%slug sdk-samples-browser%}).
+
 ## Validating through IDataErrorInfo
 
-In order to have the validation rules defined through the IDataErrorInfo interface, you will have to implement additional code which sets the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the Binding to __"true"__. Please note, that the default binding generated for auto-generated PropertyDefinition have those properties set to __"false"__. 
+In order to have the validation rules defined through the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo) interface, you will have to implement additional code which sets the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the Binding to __"true"__. Please note, that the default binding generated for auto-generated PropertyDefinition have those properties set to __"false"__. 
 
 #### __[C#] Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
 
@@ -82,7 +88,7 @@ You can define the validation rules like so:
 
 ## Validating through INotifyDataErrorInfo
 
-Provided your business objects correctly implement the **INotifyDataErrorInfo** interface, such validation is supported out of the box. **Example 3** and **Example 4** demonstrate a sample implementation.
+Provided your business objects correctly implement the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo) interface, such validation is supported out of the box. **Example 3** and **Example 4** demonstrate a sample implementation.
 
 #### __[C#] Example 3: Defining the validation method__
 
@@ -153,7 +159,7 @@ Provided your business objects correctly implement the **INotifyDataErrorInfo** 
 
 ## Validating through DataAnnotations
 
-In order to have the validation rules defined through DataAnnotations respected, you will have to set the ValidatesOnExceptions property of the Binding to true. Please note, that the default binding generated for auto-generated PropertyDefinition does not have this property set to true. 
+In order to have the validation rules defined through [DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) respected, you will have to set the ValidatesOnExceptions property of the Binding to true. Please note, that the default binding generated for auto-generated PropertyDefinition does not have this property set to true. 
 
 #### __[C#] Example 5: Setting ValidatesOnExceptions of Binding__
 

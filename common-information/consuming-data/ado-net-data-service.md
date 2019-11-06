@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you how to make a call to an ADO.NET Dat
 
 >The process of developing an ADO.NET Data Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/cc907912.aspx).
 
->This tutorial will use the __Northwind__ database, which can be downloaded from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/Northwind/Northwind.svc)
+>This tutorial will use the __Northwind__ database, which can be downloaded from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
 
 >tipThe Telerik __OpenAccess__ ORM also supports excellent integration with ADO.NET Data Services.
 
@@ -32,13 +32,13 @@ The first step is to add a new connected service to your application. In order t
 
 >tipThe __OData Connected Service__ tool works only with __Visual Studio 2017__.
 
-#### __Figure 1: Select the "__References__" folder, right click with your mouse button and choose "__Add Connected Service__"__ 
+#### __Figure 1: Select the "References" folder, right click with your mouse button and choose "Add Connected Service"__ 
 ![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
 
-#### __Figure 2: A new tab will be opened with the available conntected services. Click on the OData Connected Service. __
+#### __Figure 2: A new tab will be opened with the available conntected services. Click on the OData Connected Service.__
 ![Common Consuming Data Wcf Service 020](images/Common_ConsumingDataWcfService_020.png)
 
-#### __Figure 3: A popup window will appear. In the __Address__ TextBox, type the Northwind URL address and click on the Finish button below. __
+#### __Figure 3: A popup window will appear. In the Address TextBox, type the Northwind URL address and click on the Finish button below.__
 ![Common Consuming Data Wcf Service 030](images/Common_ConsumingDataWcfService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. 

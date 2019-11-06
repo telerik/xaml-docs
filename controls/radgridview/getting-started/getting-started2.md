@@ -39,7 +39,18 @@ You can add __RadGridView__ manually by writing the XAML code in __Example 1__. 
 #### __[XAML] Example 1: Adding RadGridView in XAML__
 
 {{region xaml-gridview-getting-started2_0}}
-	<telerik:RadGridView />
+	<Window x:Class="WpfApp1.Window1"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			mc:Ignorable="d"
+			Title="Window1" Height="450" Width="800">
+		<Grid>
+			<telerik:RadGridView/>
+		</Grid>
+	</Window>
 {{endregion}}
 
 
@@ -298,10 +309,22 @@ __Example 5__ demonstrates how you can bind the ItemsSource collection in XAML. 
 #### __[XAML] Example 5: Bind RadGridView__
 
 {{region xaml-gridview-getting-started2_1}}
-	<Grid.Resources>
-	    <local:MyViewModel x:Key="MyViewModel" />
-	</Grid.Resources>
-	<telerik:RadGridView x:Name="gridView" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Clubs}"/>
+	<Window x:Class="WpfApp1.Window1"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			mc:Ignorable="d"
+			xmlns:local="clr-namespace:WpfApp1"
+			Title="Window1" Height="450" Width="800">
+		<Grid>
+			<Grid.Resources>
+				<local:MyViewModel x:Key="MyViewModel" />
+			</Grid.Resources>
+			<telerik:RadGridView x:Name="gridView" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Clubs}"/>
+		</Grid>
+	</Window>
 {{endregion}}
 
 
@@ -311,13 +334,27 @@ Alternatively, you can set the ItemsSource property in code-behind, as demonstra
 #### __[C#] Example 6: Set ItemsSource in code__
 
 {{region cs-gridview-getting-started2_2}}
-	this.gridView.ItemsSource = new MyViewModel().Clubs;
+	public partial class Window1 : Window
+    {
+        public Window1()
+        {
+            InitializeComponent();
+            this.gridView.ItemsSource = new MyViewModel().Clubs;
+        }
+    }
 {{endregion}}
 
 #### __[VB.NET] Example 6: Set ItemsSource in code__
 
 {{region vb-gridview-getting-started2_2}}
-	Me.gridView.ItemsSource = New MyViewModel().Clubs
+	Public Partial Class Window1
+		Inherits Window
+
+		Public Sub New()
+			InitializeComponent()
+			Me.gridView.ItemsSource = New MyViewModel().Clubs
+		End Sub
+	End Class
 {{endregion}}
 
 

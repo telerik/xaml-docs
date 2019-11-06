@@ -40,7 +40,7 @@ If you have used RadRichTextBox in .NET Framework, you most probably know that i
 For versions **prior R3 2019**, __RadRichTextBox__ still uses MEF to load additional UI components (like dialogs and document format providers dependencies). This implementation uses the `Assembly.ReflectionOnlyLoadFrom()` method to inspect the assemblies for suitable parts. This method is not available in .NET Core. To work this around, provide a predefined type catalog at the startup of the application.
 	
 #### __[C#] Example 1: Creating type catalog manually__
-{{region radrichtextbox-net-core-support}}
+{{region cs-radrichtextbox-getting-started-net-core-support-1}}
 
 	RadCompositionInitializer.Catalog = new TypeCatalog(
 		// format providers
@@ -97,9 +97,9 @@ For versions **prior R3 2019**, __RadRichTextBox__ still uses MEF to load additi
 
 Due to the merging of the assemblies, the resources' paths are modified as well. For example, the .NET Framework version uses paths like the following one: *pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/**. The alternative for using RadRichTextBox in .NET Core environment is:
 
-#### [XAML]
+#### __[XAML]__
 
-{{region}}
+{{region xaml-radrichtextbox-getting-started-net-core-support-2}}
 
     pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/RichTextBoxUI/*
 {{endregion}}
@@ -108,8 +108,8 @@ Due to the merging of the assemblies, the resources' paths are modified as well.
 
 When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET Core needs the following resources:
 
-#### [XAML]
-{{region}}
+#### __[XAML]__
+{{region xaml-radrichtextbox-getting-started-net-core-support-3}}
     
     <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/System.Windows.xaml" />
     <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.xaml" />

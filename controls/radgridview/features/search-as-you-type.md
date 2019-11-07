@@ -101,7 +101,13 @@ A common scenario where you can use this event is when you want to clear the sea
 
 #### __[C#] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 {{region cs-radgridview-search-as-you-type-3}}
-    private void RadGridView_SearchPanelVisibilityChanged(object sender, VisibilityChangedEventArgs e)
+	public MainWindow()
+    {
+        InitializeComponent();
+        this.RadGridView.SearchPanelVisibilityChanged += RadGridView_SearchPanelVisibilityChanged;
+    }
+
+    void RadGridView_SearchPanelVisibilityChanged(object sender, VisibilityChangedEventArgs e)
     {
         if (e.NewVisibility == Visibility.Collapsed)
         {
@@ -113,6 +119,11 @@ A common scenario where you can use this event is when you want to clear the sea
 
 #### __[VB.NET] Example 4: Clearing search criteria on SearchPanelVisibilityChanged__
 {{region vb-radgridview-search-as-you-type-4}}
+	Public Sub New()
+		InitializeComponent()
+		AddHandler Me.RadGridView.SearchPanelVisibilityChanged, AddressOf RadGridView_SearchPanelVisibilityChanged
+	End Sub
+	
 	Private Sub RadGridView_SearchPanelVisibilityChanged(sender As Object, e As VisibilityChangedEventArgs)
 		If e.NewVisibility = Visibility.Collapsed Then
 			Dim clearSearchValue = TryCast(GridViewSearchPanelCommands.ClearSearchValue, RoutedUICommand)
@@ -120,27 +131,6 @@ A common scenario where you can use this event is when you want to clear the sea
 		End If
 	End Sub
 {{endregion}}
-
-In **R1 2019**, the **Searching** and **Searched** events were introduced.
-
-The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs** and contain the value of the text which was entered in the search panel **TextBox** - **SearchText**. They also contain a boolean property which indicates whether the event should be canceled - **Cancel**.
-
-A common scenario for the use of this event is when you want to cancel the search based on a condition:
-
-#### __[C#] Example 5: Stop the searching based on a condition__
-{{region cs-radgridview-search-as-you-type-5}}
-    private void RadGridView_Searching(object sender, Telerik.Windows.Controls.GridView.GridViewSearchingEventArgs e)
-    {
-        if (e.SearchText.ToString() == "SomeText")
-        {
-            e.Cancel = true;
-        }
-    }
-{{endregion}}
-
-The **Searched** event will be raised when the grid data has been searched. It's arguments are of type **GridViewSearchedEventArgs** and contain the value of the text which was entered in the search panel **TextBox** - **SearchText**.
-
->tipFor more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
 
 ## Modifying the Searching Criteria
 
@@ -191,8 +181,8 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 
 >important This feature was first introduced with the non-official version __2017.3.1127__ of __R3 2017__. Afterwards, it was included in __R1 2018__ official release of the __Telerik UI for WPF__ suite.
 
-#### __[XAML] Example 6: Setting CanUserSearchInHiddenColumns property in XAML__
-{{region xaml-radgridview-search-as-you-type-6}}
+#### __[XAML] Example 5: Setting CanUserSearchInHiddenColumns property in XAML__
+{{region xaml-radgridview-search-as-you-type-5}}
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
 

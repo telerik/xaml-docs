@@ -12,9 +12,9 @@ position: 0
 
 This article will show you how to resolve the issue where the Telerik controls are missing from the UI. In specific cases some or all the Telerik controls could be missing from the application. In other words they are not displayed. This could happen in the following cases:
 
-* When you set up a project for the first time.
+* When you set up a project for the fisrt time.
 
-* After upgrade to a newer version of UI for {{ site.framework_name }}.
+* After updrade to a newer version of UI for {{ site.framework_name }}.
 
 * When you create a custom style that targets a Telerik control.
 

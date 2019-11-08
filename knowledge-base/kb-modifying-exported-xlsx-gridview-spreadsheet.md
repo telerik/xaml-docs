@@ -2,7 +2,7 @@
 title: Modifying GridView Exported XLSX Spreadsheet
 description: Apply custom changes to the spreadsheet document when exporting GridView to Excel xlsx.
 type: how-to
-page_title: Customize Excel XLSX Spreadhseet After Exporting From GridView
+page_title: Customize Excel XLSX Spreadsheet When Exporting From RadGridView
 slug: kb-modifying-gridview-exported-xlsx-spreadsheet
 position: 
 tags: WPF, GridView, RadGridView, Export, Exporting, Excel, Spreadsheet, xlsx, Customizing

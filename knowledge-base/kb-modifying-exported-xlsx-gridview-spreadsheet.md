@@ -1,6 +1,6 @@
 ---
 title: Modifying GridView Exported XLSX Spreadsheet
-description: How to make cusomt changes to exported spreadsheet document when exporting GridView to Excel xlsx.
+description: Apply custom changes to the spreadsheet document when exporting GridView to Excel xlsx.
 type: how-to
 page_title: Customize Excel XLSX Spreadhseet After Exporting From GridView
 slug: kb-modifying-gridview-exported-xlsx-spreadsheet
@@ -85,7 +85,7 @@ if (dialog.ShowDialog() == true)
 
 ## Resources
 
-For more settings and to gain an better understanding of what the  linker does, visit the following documentation article:
+For more information, visit the following documentation articles:
 
 * [GridView ExportToWorkbook](https://docs.telerik.com/devtools/wpf/controls/radgridview/export/excel/export-workbook)
 * [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/)

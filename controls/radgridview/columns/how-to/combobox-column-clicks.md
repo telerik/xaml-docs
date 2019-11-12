@@ -14,7 +14,7 @@ position: 3
 
 If you have a __GridViewComboBoxColumn__ in your gridview, then by default, you need to click three times in order to show the combobox dropdown. The first click selects the current cell, the second enters edit mode and the last one will open the list.
 
-The following solutions shows how to open the dropdown in less steps.
+The following solutions show how to open the dropdown in less steps.
 
 ## SOLUTION 1
 

@@ -1,6 +1,6 @@
 ---
-title: Number of clicks in GridViewComboBoxColumn
-page_title: Clicks in the ComboBox Column
+title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
+page_title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
 description: Check out how you can control the number of clicks needed to change the value of the ComboBox Column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-combobox-column-clicks
 tags: number,of,clicks,in,combobox,column
@@ -8,46 +8,44 @@ published: True
 position: 3
 ---
 
-# Number of clicks in the ComboBox column
+# Number of Clicks to Open ComboBox in GridViewComboBoxColumn
 
-__PROBLEM__
+## PROBLEM
 
-If you have a __GridViewComboBoxColumn__ in your gridview, then by default, you need to click three times in order to show the dropdown - the first click selects the current cell, the second enters edit mode and the last one will opens the list.
+If you have a __GridViewComboBoxColumn__ in your gridview, then by default, you need to click three times in order to show the combobox dropdown. The first click selects the current cell, the second enters edit mode and the last one will open the list.
 
-The following solution will give you options to control the number of clicks needed to change the value of the combobox column.
+The following solutions shows how to open the dropdown in less steps.
 
-__SOLUTION__
+## SOLUTION 1
 
 __2 clicks solution__
 
 By configuring __EditTriggers="CellClick"__ property of GridViewComboBoxColumn the cells will enter edit mode with a single click only. Now you will need one more click to show the drop down and select a value.
 
+## SOLUTION 2
+
 __1 clicks solution__
 
-In addition to configuring __EditTriggers="CellClick"__ property, you can set __OpenDropDownOnFocus__ property of the editor (RadComboBox). 
+In addition to configuring __EditTriggers="CellClick"__ property, you can set __OpenDropDownOnFocus__ property of the editor (RadComboBox). To do this, use the __EditorStyle__ property of the column. 
 
-This could be done in __XAML__ by applying a Style targeting RadComboBox element as an EditorStyle of the column. For example:
-
-#### __XAML__
-
+#### __XAML__  
 {{region xaml-gridview-combobox-column-clicks_0}}
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
-	                            SelectedValueMemberPath="ID"
-	                            EditTriggers="CellClick"
-	                            DisplayMemberPath="Name"
-	                            ItemsSource="{Binding Clubs}">
+					SelectedValueMemberPath="ID"
+					EditTriggers="CellClick"
+					DisplayMemberPath="Name"
+					ItemsSource="{Binding Clubs}">
 	    <telerik:GridViewComboBoxColumn.EditorStyle>
-	        <Style TargetType="telerik:RadComboBox">
-	            <Setter Property="OpenDropDownOnFocus" Value="True"/>
-	        </Style>
+		<Style TargetType="telerik:RadComboBox">
+		    <Setter Property="OpenDropDownOnFocus" Value="True"/>
+		</Style>
 	    </telerik:GridViewComboBoxColumn.EditorStyle>
 	</telerik:GridViewComboBoxColumn>
 {{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadComboBoxStyle__.
 
-## See Also
-
+## See Also  
  * [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%}) 
 
 

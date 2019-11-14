@@ -1,6 +1,6 @@
 ---
-title: UpdateSourceTrigger property is ignored
-page_title: UpdateSourceTrigger property is ignored
+title: UpdateSourceTrigger Property is Ignored
+page_title: UpdateSourceTrigger Property is Ignored
 description: Read this article about Telerik's {{ site.framework_name }} DataGrid to learn what to do when the UpdateSourceTrigger property of the column's DataMemberBinding is ignored.
 slug: gridview-troubleshooting-updatesourcetrigger-ignored
 tags: the,updatesourcetrigger,property,is,ignored
@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# UpdateSourceTrigger property is ignored
+# UpdateSourceTrigger Property is Ignored
 
 __PROBLEM__
 
@@ -20,9 +20,9 @@ The reason for this behaviour is that the RadGridView overrides and changes the 
         
 __SOLUTION__
 
-You can overcome that by using the __CellEditTemplate__ property of the column and setting the __UpdateSourceTrigger__ of the binding applied to the element in edit mode (for example the editing element for GridViewDataColumn is TextBox). This approach is demonstrated in __Example 1__.
+You can overcome that by using the __CellEditTemplate__ property of the column and setting the __UpdateSourceTrigger__ of the binding applied to the element in edit mode (for example the editing element for GridViewDataColumn is a TextBox). This approach is demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Setting the UpdateSourceTrigger of a Binding to a Property of the Element in the CellEditTemplate__
+#### __[XAML] Example 1: Setting the UpdateSourceTrigger of a binding to a Property of the element in the CellEditTemplate__
 
 {{region xaml-gridview-troubleshooting-updatesourcetrigger-ignored_0}}
 	<!-- In this example we have a column bound to the Name property of our model-->

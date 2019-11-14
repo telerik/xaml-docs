@@ -130,7 +130,7 @@ With the Q1 2013 release, __RadDiagram__ supports pages preview canvas. The page
 
 * __BackgroundPageGrid.LineStrokeThickness__ - this property is of type __double__ and it gets or sets the thickness of the lines that visualize the pages.			
 
->tip The __BackgroundPageGrid__ attached properties are defined in the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace. This is why in order to use them you need to add a using statement for that namespace in code-behind or define an alias in XAML: `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams".`
+>tip The __BackgroundPageGrid__ attached properties are defined in the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace. This is why in order to use them you need to add a using statement for that namespace in code-behind or define an alias in XAML: `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"`
 
 The default look and size of the page preview canvas is demonstrated in the next snapshot:		
 

@@ -935,7 +935,7 @@ navigation:
         title: RadSyntaxEditor
     controls/radsyntaxeditor/features:
         title: Features
-        position: 5
+        position: 7
     controls/radsyntaxeditor/features/taggers:
         title: Taggers
         position: 9

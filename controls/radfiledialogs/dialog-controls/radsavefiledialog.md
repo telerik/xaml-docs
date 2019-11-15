@@ -23,14 +23,28 @@ To show the dialog call its __ShowDialog__ method. If a valid file is selected w
 
 #### __[C#] Example 1: Show a save file dialog__
 {{region radfiledialogs-radsavefiledialog-0}}
-	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
-	saveFileDialog.Owner = theHostWindowInstance;	
-	saveFileDialog.ShowDialog();
-	if (saveFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string selectedFileName = saveFileDialog.FileName;
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowSaveFileDialog();
+		}
+
+		private void ShowSaveFileDialog()
+		{
+			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
+			saveFileDialog.Owner = this;
+			saveFileDialog.ShowDialog();
+			if (saveFileDialog.DialogResult == true)
+			{
+				string selectedFileName = saveFileDialog.FileName;
+			}
+		}
 	}
 {{endregion}}
+
+> The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set. 
 
 ## Creating a stream for the selected file
 
@@ -38,12 +52,24 @@ You can open a read-write file stream for the selected file using the __OpenFile
 
 #### __[C#] Example 2: Open a file stream__
 {{region radfiledialogs-radsavefiledialog-1}}
-	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
-	saveFileDialog.Owner = theHostWindowInstance;	
-	saveFileDialog.ShowDialog();
-	if (saveFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		Stream fileStream = saveFileDialog.OpenFile();
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowSaveFileDialog();
+		}
+
+		private void ShowSaveFileDialog()
+		{
+			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
+			saveFileDialog.Owner = this;
+			saveFileDialog.ShowDialog();
+			if (saveFileDialog.DialogResult == true)
+			{
+				Stream fileStream = saveFileDialog.OpenFile();
+			}
+		}
 	}
 {{endregion}}
 
@@ -55,11 +81,23 @@ The __FileName__ property can be set manually. This will change the value displa
 
 #### __[C#] Example 3: Set the file name__
 {{region radfiledialogs-radsavefiledialog-2}}
-	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
-	saveFileDialog.Owner = theHostWindowInstance;	
-	 saveFileDialog.InitialDirectory = @"C:\Program Files\Internet Explorer\";
-	saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\filetosave.txt";
-	saveFileDialog.ShowDialog();
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowSaveFileDialog();
+		}
+
+		private void ShowSaveFileDialog()
+		{
+			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
+			saveFileDialog.Owner = this;
+			saveFileDialog.InitialDirectory = @"C:\Program Files\Internet Explorer\";
+			saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\filetosave.txt";
+			saveFileDialog.ShowDialog();
+		}
+	}
 {{endregion}}
 
 #### __Figure 2: Setting the file name__

@@ -10,23 +10,22 @@ position: 3
 
 # Number of Clicks in the ComboBox Column
 
-If you have a __GridViewComboBoxColumn__ in your RadGridView, then by default, you need to click three times in order to show the dropdown - the first click selects the current cell, the second enters edit mode and the last one opens the dropdown.
+If you have a __GridViewComboBoxColumn__ in your RadGridView, then by default, you need to click three times to show the dropdown - the first click selects the current cell, the second enter edit mode and the last one opens the dropdown.
 
 The following solutions allow you to control the number of clicks needed to change the value of the combobox column.
 
 ## 2 Clicks Solution
 
-By configuring __EditTriggers="CellClick"__ property of GridViewComboBoxColumn the cells will enter edit mode with a single click only. Now you will need one more click to show the drop down and select a value.
+By configuring __EditTriggers="CellClick"__ property of GridViewComboBoxColumn the cells will enter edit mode with a single click only. Now you will need one more click to show the drop-down and select a value.
 
 ## 1 Click Solution
 
 In addition to configuring the __EditTriggers__ property, you can set __OpenDropDownOnFocus__ property of the RadComboBox editor. 
 
-This could be done in __XAML__ by applying a Style targeting RadComboBox element as an **EditorStyle** of the column. **Example 1** demonstrates how this can be done.
+This could be done in __XAML__ by applying a Style targeting the RadComboBox element as an **EditorStyle** of the column. **Example 1** demonstrates how this can be done.
 
 #### __[XAML] Example 1: Setting the OpenDropDownOnFocus through the EditorStyle property__
 
-#### __XAML__  
 {{region xaml-gridview-combobox-column-clicks_0}}
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
 					SelectedValueMemberPath="ID"
@@ -43,7 +42,7 @@ This could be done in __XAML__ by applying a Style targeting RadComboBox element
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __RadComboBoxStyle__.
 
-You can also achieve this in code-behind by handling the [PreparingCellForEdit]({%slug gridview-events-edit%}#preparingcellforedit-event) event of the RadGridView control as shown in **Example 2**.
+You can also achieve this in code-behind by handling the [PreparingCellForEdit]({%slug gridview-events-edit%}#preparingcellforedit-event) event of the RadGridView control, as shown in **Example 2**.
 
 #### __[C#] Example 2: Handling the PreparingCellForEdit event__
 
@@ -60,7 +59,7 @@ You can also achieve this in code-behind by handling the [PreparingCellForEdit](
 
 #### __[VB.NET] Example 2: Handling the PreparingCellForEdit event__
 
-{{region vb-gridview-combobox-column-clicks_1}}
+{{region vb-gridview-combobox-column-clicks_2}}
 	Private Sub GridView_PreparingCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
 		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
 		If comboBox IsNot Nothing Then
@@ -75,7 +74,7 @@ In addition, you can have the cell leave edit mode when a selection in the dropd
 
 #### __[C#] Example 3: Handling the PreparedCellForEdit event__
 
-{{region cs-gridview-combobox-column-clicks_2}}
+{{region cs-gridview-combobox-column-clicks_3}}
 	private void GridView_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 		var comboBox = e.EditingElement as RadComboBox;
@@ -94,7 +93,7 @@ In addition, you can have the cell leave edit mode when a selection in the dropd
 
 #### __[VB.NET] Example 3: Handling the PreparedCellForEdit event__
 
-{{region vb-gridview-combobox-column-clicks_2}}
+{{region vb-gridview-combobox-column-clicks_4}}
 	Private Sub GridView_PreparedCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
 		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
 		If comboBox IsNot Nothing Then

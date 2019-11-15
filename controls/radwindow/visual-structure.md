@@ -14,19 +14,19 @@ This section defines the terms and concepts used in the scope of __RadWindow__ y
 
 ![Rad Window Visual Structure 02](images/RadWindow_VisualStructure_02.png)
 
-* __Content__ - represents the inner content. [Read more]({%slug radwindow-features-working-with-radwindow%})
+* __Content__: Represents the inner content. [Read more]({%slug radwindow-features-working-with-radwindow%})
 
-* __Window Icon__ - represents the container for the icon image of the __RadWindow__. [Read more]({%slug radwindow-features-window-icon%})
+* __Window Icon__: Represents the container for the icon image of the __RadWindow__. [Read more]({%slug radwindow-features-window-icon%})
 
-* __Window Header__ - represents the header of the __RadWindow__. [Read more]({%slug radwindow-features-window-header%})
+* __Window Header__: Represents the header of the __RadWindow__. [Read more]({%slug radwindow-features-window-header%})
 
-* __Minimize__ - represents the button that minimizes the __RadWindow__ whenever it is clicked. [Read more]({%slug radwindow-features-minimizingmaximazing%})
+* __Minimize__: Represents the button that minimizes the __RadWindow__ whenever it is clicked. [Read more]({%slug radwindow-features-minimizingmaximazing%})
 
-* __Maximize__ - represents the button that maximizes the __RadWindow__. [Read more]({%slug radwindow-features-minimizingmaximazing%})
+* __Maximize__: Represents the button that maximizes the __RadWindow__. [Read more]({%slug radwindow-features-minimizingmaximazing%})
 
-* __Close__ - represents the button that closes the __RadWindow__. [Read more]({%slug radwindow-features-closing%})
+* __Close__: Represents the button that closes the __RadWindow__. [Read more]({%slug radwindow-features-closing%})
 
-* __Resizable Border__ - resizes the __RadWindow__ along the X and Y axes. [Read more]({%slug radwindow-features-resizing%})
+* __Resizable Border__: Resizes the __RadWindow__ along the X and Y axes. [Read more]({%slug radwindow-features-resizing%})
 
 ## See Also
 

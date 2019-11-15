@@ -10,7 +10,7 @@ position: 3
 
 # Number of Clicks in the ComboBox Column
 
-If you have a __GridViewComboBoxColumn__ in your RadGridView, then by default, you need to click three times to show the dropdown - the first click selects the current cell, the second enter edit mode and the last one opens the dropdown.
+If you have a __GridViewComboBoxColumn__ in your RadGridView, then by default, you need to click three times to show the dropdown - the first click selects the current cell, the second enters edit mode and the last one opens the dropdown.
 
 The following solutions allow you to control the number of clicks needed to change the value of the combobox column.
 

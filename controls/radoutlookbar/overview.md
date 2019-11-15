@@ -17,18 +17,19 @@ Thank you for choosing Telerik __RadOutlookBar__!
 
 Telerik __RadOutlookBar__ control lets you deliver Outlook's navigational bar to your applications just as easy as adding a single control. You can take advantage of the group data templates, overflow menu, defining items position (define whether the items will appear in the main navigation bar or in the overflow menu by simply dragging the main navigation bars horizontal splitter).				
 
-![RadOutlookBAr](images/outlook_overview.png)
+![RadOutlookBAr](images/outlook_overview2.PNG)
 
-__RadOutlookBar__ key features list:				
+## Key Features
 
-* __Dynamic Layout__
+* __Minimize Area__: The control expose a minimization behavior, which creates create more user-friendly and "MS Outlook look and feel" applications. Read more about this in the [Populating With Data]({%slug radoutlookbar-features-minimization%}) article.
 
-* __Minimize Area__
+* __Selection__: The control provides selection of its items. Read more about this in the [Selection]({%slug radoutlookbar-selection%}) article.
 
-* __Overflow Area__
+* __Overflow Area__: The __RadOutlookBar__ can display its items in accompanying (pop-up) overflow area if the available area is too small.
 
-* __Integration with Telerik controls - ContextMenu, ComboBox, DropDown buttons__
+* __Customization__: To customize the appearance, the control exposes a bunch of properties that you can use to modify its parts. Read more about this in the [Templates]({%slug radoutlookbar-templates%}) article.
 
-* __All Telerik controls for Silverlight support styling with Expression Blend__{% if site.site_name == 'Silverlight' %}
+>tip Get started with the control with its [Getting Started]({%slug radoutlookbar-getting-started%}) help article that shows how to use it in a basic scenario.
 
-Check out the online demo at: [https://demos.telerik.com/silverlight/#OutlookBar/FirstLook](https://demos.telerik.com/silverlight/#OutlookBar/FirstLook){% endif %}
+> Check out the online demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#OutlookBar/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+

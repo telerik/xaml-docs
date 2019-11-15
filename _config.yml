@@ -954,6 +954,9 @@ navigation:
     "*changes-and-backward-compatibility":
         title: Changes and Backward Compatibility
         position: 3    
+    "*changes-and-backwards-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3    
     "*features":
         title: Features
         position: 4

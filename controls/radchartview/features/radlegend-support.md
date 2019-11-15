@@ -14,7 +14,7 @@ This topic will give you an overview of the RadLegend support that RadChartView 
 
 > Read more about the RadLegend control in its [documentation section]({%slug radlegend-overview%}).
 
-The chart exposes a __LegendItems__ property which is to be passed to the RadLegend's Items property. The LegendItems collection is empty by default and no legend items will be generated for a series unless the __LegendSettings__ property of the series is set. This will generate and add __LegendItem__ objects in the LegendItems collection of the chart. The chart will automatically set the Title, MarkerStroke, MarkerFill and MarkerGeometry properties of the LegendItem object, based on the LegendSettings and the default visuals of the chart series.
+The chart exposes a __LegendItems__ property which is to be passed to the RadLegend's Items property. The LegendItems collection is empty by default and no legend items will be generated for a series unless the __LegendSettings__ property of the series is set. This will generate and add [LegendItem]({%slug radlegend-getting-started%}#defining-radlegend-and-adding-items) objects in the LegendItems collection of the chart. The chart will automatically set the Title, MarkerStroke, MarkerFill and MarkerGeometry properties of the LegendItem object, based on the LegendSettings and the default visuals of the chart series.
 
 ## LegendSetting
 

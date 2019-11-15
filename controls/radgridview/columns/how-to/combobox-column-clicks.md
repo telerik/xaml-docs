@@ -1,6 +1,6 @@
 ---
-title: Number of Clicks in GridViewComboBoxColumn
-page_title: Clicks in the ComboBox Column
+title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
+page_title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
 description: Check out how you can control the number of clicks needed to change the value of the ComboBox Column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-combobox-column-clicks
 tags: number,of,clicks,in,combobox,column
@@ -26,16 +26,17 @@ This could be done in __XAML__ by applying a Style targeting RadComboBox element
 
 #### __[XAML] Example 1: Setting the OpenDropDownOnFocus through the EditorStyle property__
 
+#### __XAML__  
 {{region xaml-gridview-combobox-column-clicks_0}}
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
-	                            SelectedValueMemberPath="ID"
-	                            EditTriggers="CellClick"
-	                            DisplayMemberPath="Name"
-	                            ItemsSource="{Binding Clubs}">
+					SelectedValueMemberPath="ID"
+					EditTriggers="CellClick"
+					DisplayMemberPath="Name"
+					ItemsSource="{Binding Clubs}">
 	    <telerik:GridViewComboBoxColumn.EditorStyle>
-	        <Style TargetType="telerik:RadComboBox">
-	            <Setter Property="OpenDropDownOnFocus" Value="True"/>
-	        </Style>
+		<Style TargetType="telerik:RadComboBox">
+		    <Setter Property="OpenDropDownOnFocus" Value="True"/>
+		</Style>
 	    </telerik:GridViewComboBoxColumn.EditorStyle>
 	</telerik:GridViewComboBoxColumn>
 {{endregion}}

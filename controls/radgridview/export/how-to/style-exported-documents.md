@@ -10,7 +10,24 @@ position: 7
 
 # Style Exported XLSX and PDF Documents
 
-If you need to style the exported RadGridView differently from its default style when exporting using the [ExportToXlsx]({%slug gridview-export-xlsx%}) & [ExportToPdf]({%slug gridview-export-pdf%}) methods, you can use the [ElementExportingToDocument]({%slug gridview-export-events%}#elementexportingtodocument) event and through the  **GridViewElementExportingToDocumentEventArgs** set the VisualParameters property to a new instance of the **CellSelectionStyle** class.
+If you need to style the exported RadGridView differently from its default style when exporting using the [ExportToXlsx]({%slug gridview-export-xlsx%}) & [ExportToPdf]({%slug gridview-export-pdf%}) methods, you can use the [ElementExportingToDocument]({%slug gridview-export-events%}#elementexportingtodocument) event and through the  **GridViewElementExportingToDocumentEventArgs** set the VisualParameters property to a new instance of the [CellSelectionStyle](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.cellselectionstyle) class.
+
+The class provides the following useful properties:
+* **CellBorders**: Gets or sets the borders of the cells.
+* **Fill**: Gets or sets the fill of the cells.
+* **FontFamily**: Gets or sets the font family of the text of the cells.
+* **FontSize**: Gets or sets the font size of the text.
+* **ForeColor**: Gets or sets the foreground of the text of the cells.
+* **Format**: Gets or sets the format of the text.
+* **HorizontalAlignment**: Gets or sets the horizontal alignment.
+* **Indent**: Gets or sets the intent of the cells.
+* **IsBold**: Gets or sets the IsBold property of the cells.
+* **IsItalic**: Gets or sets the isItalic property of the cells.
+* **IsLocked**: Gets or sets the isLocked property of the cells.
+* **IsWrapped**: Gets or sets the IsWrapped property of the cells.
+* **StyleName**: Gets or sets the StyleName property of the cells.
+* **Underline**: Gets or sets the Underline of the text in the cells.
+* **VerticalAlignment**: Gets or sets the vertical alignment.
 
 #### __[C#] Example 1: Style exported XLSX/PDF document__
 

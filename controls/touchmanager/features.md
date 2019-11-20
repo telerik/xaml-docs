@@ -22,7 +22,7 @@ TouchManager exposes the following public properties:
 
 * __IsTouchEnabled__: A static property of type __bool__ that indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the TouchManager. The default value is __true__.
 
-* __TouchMode__: An attached property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration that gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-overview%}) help article.
+* __TouchMode__: An attached property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration that gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-touch-modes%}) help article.
 
 * __ScrollViewerSwipeMode__: An attached property of type __Telerik.Windows.Input.Touch.ScrollViewerSwipeMode__ enumeration that gets or sets the mode that defines the additional swipe logic for a ScrollViewer or an element in a ScrollViewer. The enumeration contains the following modes.
 	* __None__ (default): The element does not have additional logic for swiping.

@@ -32,7 +32,7 @@ The customization of the row headers is possible through  the __RowHeaderSetting
 
 ## Column Headers
 
-The customization of the column headers is possible through the __ColumnHeaderSettings__ property of the RadHeatMap. This property is of type __HeatMapColumnHeaderSettings__ object. Except for exposing the common properties for styling the labels, the __HeatMapColumnHeaderSettings__ expose two additional properties to change the position of the column headers and to rotate the labels.
+The customization of the column headers is possible through the __ColumnHeaderSettings__ property of the RadHeatMap. This property is of type __HeatMapColumnHeaderSettings__ object. Except exposing the common properties (LabelStyle, HoveredLabelStyle, LabelFormat, etc.) for styling the labels, the __HeatMapColumnHeaderSettings__ provide two additional properties to change the position of the column headers and to rotate the labels.
 
  * __LabelsPanelPosition__: A property of type __HeatMapColumnLabelsPanelPosition__ that gets or sets the column headers position. This is an enumeration and it allows the following values:
 	* __Top__: The column headers will be position at the top of the RadHeatMap. (Default value)

@@ -32,9 +32,13 @@ The __RadHeatMap__ control can be used to visualize numeric data in a matrix lik
 	
 	Read more about this in the [Colorizers]({%slug radheatmap-colorizers%}) article.
 
-* __Tooltips__: RadHeatMap supports tooltips for its items. You can specify a tooltip template and display the details of the item itself. 
+* __Selection__: The control provides a visual selection of items. Read more about this in the [Selection]({%slug radheatmap-selection%}) article.
 
-* __Labels__: You can show labels in the cells generated for the plotted data. Read more about thsi in the [Labels]({%slug radheatmap-labels%}) article.
+* __Tooltips__: RadHeatMap supports tooltips for its items. You can specify a tooltip template and display the details of the item itself. Read more about this in the [ToolTip]({%slug radheatmap-tooltip%}) article.
+
+* __Row/Column Headers customization__: You can easily customize the labels inside the row/column headers. Read more about this in the [Labels]({%slug radheatmap-row-column-headers%}) article.
+
+* __Labels__: You can show labels in the cells generated for the plotted data. Read more about this in the [Labels]({%slug radheatmap-labels%}) article.
 
 * __Customizable templates__: The control allows you to customize the appearance of the control as well as its elements.
 

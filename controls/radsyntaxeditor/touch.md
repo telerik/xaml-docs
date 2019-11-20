@@ -45,6 +45,8 @@ If you wish to implement your own touch logic, you can override the **Initialize
         }
 {{endregion}}
 
+> You can read the [following article]({%slug touchmanager-events%}) article, which describes all of the events exposed by the TouchManager.
+
 ## Increase Markers Drag Area
 
 By default, dragging the markers is possible if the swipe occurs up to **30 pixels** from their center. This area can be controlled via the **TouchMarkerDragDistance** property of the **SyntaxEditorPresenter**.

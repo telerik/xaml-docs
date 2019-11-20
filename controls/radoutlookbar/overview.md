@@ -21,7 +21,7 @@ Telerik __RadOutlookBar__ control lets you deliver Outlook's navigational bar to
 
 ## Key Features
 
-* __Minimize Area__: The control expose a minimization behavior, which creates create more user-friendly and "MS Outlook look and feel" applications. Read more about this in the [Populating With Data]({%slug radoutlookbar-features-minimization%}) article.
+* __Minimize Area__: The control exposes a minimization behavior, which creates more user-friendly applications that have the "MS Outlook look and feel". Read more about this in the [Populating With Data]({%slug radoutlookbar-features-minimization%}) article.
 
 * __Selection__: The control provides selection of its items. Read more about this in the [Selection]({%slug radoutlookbar-selection%}) article.
 

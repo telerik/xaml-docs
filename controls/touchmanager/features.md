@@ -20,7 +20,7 @@ Here you can find common information about the properties and methods of TouchMa
 
 TouchManager exposes the following public properties:
 
-* __IsEnabled__: A static property of type __bool__ that indicates whether the TouchManager subscribes to any input events. The property should be set at startup of the application. Also, it doesn't support changing its value run-time, after setting it to False. 
+* __IsEnabled__: A static property of type __bool__ that indicates whether the TouchManager subscribes to any input events. The property has to be set at the startup of the application. Note that changing its value run-time after setting it to **False** is not supported. 
 
 	#### __[C#] Example 1: Setting IsEnabled__
 	{{region touchmanager-features-0}}
@@ -46,7 +46,7 @@ TouchManager exposes the following public properties:
 		End Class
 	{{endregion}}
 	
-	The property can be set also before the InitializeComponent call in the main window.
+	The property can be set also before the **InitializeComponent** call of the main window.
 	
 	Disabling the TouchManager will decrease the memory footprint of the application.
 

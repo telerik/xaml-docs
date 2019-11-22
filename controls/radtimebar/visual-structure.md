@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: This article defines the terms and concepts used in the scope of the __RadTimeBar__ control.
 slug: radtimebar-visual-structure
 tags: visual,structure
 published: True
@@ -26,7 +26,7 @@ __SelectionThumb__: The Selection thumb is a visual element, which is used to ha
 
 ![](images/radtimebar_ThumbLeftHandle_fluent.png)
 
-__Selection Visibility Indicator__: This visual element indicates (as its name implies) where is the SelectionThumb if it is not in the visible period of the time span.
+__Selection Visibility Indicator__: This visual element indicates (as its name implies) where the SelectionThumb is and whether it is in the visible period of the time span.
 
 __Selection Indicator__: Indicates whether the Selected range is on the right or left side of the current visible time span.
 

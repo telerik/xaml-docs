@@ -14,9 +14,9 @@ The purpose of this tutorial is to show you how to implement drag and drop betwe
 
 >Please note that the examples in this tutorial are showcasing the Telerik [Fluent theme]({%slug common-styling-appearance-fluent-theme%}). In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article, you can find more information on how to set an application-wide theme.
 
-First, we will specify the following ViewModels and custom drag-drop behaviors, which are going to be used to populate the RadGridView and RadTreeView controls. 
+First, we will specify the following classes, which are going to be used to populate the RadGridView and RadTreeView controls. 
 
-* __Product__: A class that will be our business object. The RadGridView will be bound to an ObservableCollection of Product.
+* __Product__: A class that will be our business object. The RadGridView will be bound to an ObservableCollection of Products.
 * __Category__: A class that will be used as a group for the Product. This class will have a collection of Products. It will be used to show hierarchy in the RadTreeView. 
 * __MainViewModel__: The main ViewModel class of the application.
 * __DropIndicationDetails__: A helper class that will hold information for the current dragged item, current drag over item and current drop position.
@@ -134,7 +134,7 @@ First, we will specify the following ViewModels and custom drag-drop behaviors, 
 	
 Next, we can go ahead and define the __RadGridView__ and __RadTreeView__ controls in our view:
 
-#### __[XAML] Example 2: Defining RadDiagram and RadGridView in XAML__
+#### __[XAML] Example 2: Defining RadTreeView and RadGridView in XAML__
 
 {{region dragdropmanager-behaviors-gridviewandtreeview_1}}
 	<Grid>
@@ -820,7 +820,7 @@ We will use a custom behavior to define the RadGridView and RadTreeView DragDrop
 
 The final XAML should look like in Example 7.
 
-#### __[XAML] Example 2: Final XAML__
+#### __[XAML] Example 7: Final XAML__
 
 {{region dragdropmanager-behaviors-gridviewandtreeview_1}}
 	<Grid>

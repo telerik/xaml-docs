@@ -15,9 +15,10 @@ This tutorial describes how to implement a drag/drop operation from a data-bound
 >Please note that the examples in this tutorial are showcasing the Telerik Windows8 theme. In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article you can find more information on how to set an application-wide theme.
 
 First we will specify the following ViewModels which are going to be used to populate the RadGridView and RadDiagram controls.
-	* __Employee:__ A class that will be the DataContext of the RadGridView rows.
-	* __EmployeeGraphSource:__ A class deriving from the __ObservableGraphSourceBase__ ViewModel that represents the RadDiagram __GraphSource__.
-	* __MainViewModel:__ The main ViewModel class of the application.
+
+* __Employee:__ A class that will be the DataContext of the RadGridView rows.
+* __EmployeeGraphSource:__ A class deriving from the __ObservableGraphSourceBase__ ViewModel that represents the RadDiagram __GraphSource__.
+* __MainViewModel:__ The main ViewModel class of the application.
 	
 #### __[C#] Example 1: Creating ViewModels__
 	{{region drag-and-drop-from-radgridview-to-raddiagram_0}}	

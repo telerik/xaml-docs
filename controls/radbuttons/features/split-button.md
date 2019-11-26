@@ -144,7 +144,7 @@ You can easily customize RadSplitButton by using the following properties:
 ![Customized RadSplitButton](images/radbuttons-features-split-button-3.png)
 
 ## See Also
-* {% if site.site_name == 'WPF' %}[RadSplitButton API Reference](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html){% else %}[RadSplitButton API Reference](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html){% endif %}  
+ * {% if site.site_name == 'WPF' %}[RadSplitButton API Reference](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html){% else %}[RadSplitButton API Reference](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html){% endif %}
  * [Button]({%slug radbuttons-features-button%})
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Commands]({%slug radbuttons-features-commands%})

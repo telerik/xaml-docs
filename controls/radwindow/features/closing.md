@@ -1,7 +1,7 @@
 ---
 title: Closing
 page_title: Closing
-description: Closing
+description: This article demonstrates how a RadWindow can be closed and also how the closing can be prevented.
 slug: radwindow-features-closing
 tags: closing
 published: True
@@ -14,7 +14,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 
 ![](images/RadWindow_Features_Closing_01.png)
 
-#### __C#__
+#### __[C#] Example 1: Closing a RadWindow__
 
 {{region cs-radwindow-features-closing_0}}
 	RadWindow radWindow = new RadWindow();
@@ -23,7 +23,7 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 	radWindow.Close();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Closing a RadWindow__
 
 {{region vb-radwindow-features-closing_1}}
 	Dim radWindow As New RadWindow()
@@ -32,20 +32,20 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 	radWindow.Close()
 {{endregion}}
 
->tipWhen the __RadWindow__ gets closed the __Closed__ event is raised. More about events can be found [here]({%slug radwindow-events-overview%}).
+>tipWhen the __RadWindow__ gets closed, the __Closed__ event is raised. More about events can be found [here]({%slug radwindow-events-overview%}).
 
-To disable the closing of the __RadWindow__ via the UI you have to set the __CanClose__ property to __False__.
+## Prevent Closing
 
->The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
+To disable the closing of the __RadWindow__ via the UI you can set the __CanClose__ property to __False__.
 
-#### __C#__
+#### __[C#] Example 2: Setting the CanClose property__
 
 {{region cs-radwindow-features-closing_2}}
 	RadWindow radWindow = new RadWindow();
 	radWindow.CanClose = false;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Setting the CanClose property__
 
 {{region vb-radwindow-features-closing_3}}
 	Dim radWindow As New RadWindow()
@@ -53,6 +53,25 @@ To disable the closing of the __RadWindow__ via the UI you have to set the __Can
 {{endregion}}
 
 ![](images/RadWindow_Features_Closing_02.png)
+
+Alternatively, you can also handle the __PreviewClosed__ event and set the __Cancel__ property of the event arguments to True. 
+
+#### __[C#] Example 3: Canceling the PreviewClosed event__
+
+{{region cs-radwindow-features-closing_4}}
+	private void RadWindow_PreviewClosed(object sender, WindowPreviewClosedEventArgs e)
+	{
+		e.Cancel = true;
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 3: Canceling the PreviewClosed event__
+
+{{region vb-radwindow-features-closing_5}}
+	Private Sub RadWindow_PreviewClosed(ByVal sender As Object, ByVal e As WindowPreviewClosedEventArgs)
+		e.Cancel = True
+	End Sub
+{{endregion}}
 
 ## See Also
 

@@ -27,6 +27,7 @@ Here is a list of events exposed by the RadSyntaxEditor control:
 * **CommandExecuting**: Occurs when a command is about to be executed.
 * **CommandExecuted**: Occurs when a command has been executed.
 * **CommandError**: Occurs when a command has been canceled due to an error.
+* **FoldingChanged**: Occurs when a folding region is created, removed, opened or closed.
 
 ## See Also
 

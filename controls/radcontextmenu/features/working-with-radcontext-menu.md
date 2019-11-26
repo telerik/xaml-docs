@@ -133,8 +133,6 @@ For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, a
 
  * [Placement]({%slug radcontextmenu-features-placement%})
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Events - Overview]({%slug radcontextmenu-events-overview%})
 
  * [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%})

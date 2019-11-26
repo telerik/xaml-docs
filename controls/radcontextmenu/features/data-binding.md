@@ -16,10 +16,8 @@ __RadContextMenu__ supports data binding to various data sources and services. M
 
 * __Manual mode__ - add your items manually to the __RadContextMenu.Items__ collection. 
 
-For more information take a look at the [Populating with Data]({%slug radcontextmenu-populating-with-data-overview%}) topics.
+For more information take a look at the [Populating with Data]({%slug radcontextmenu-populating-with-data-data-binding-support-overview%}) topics.
 
 ## See Also
 
  * [Working with the RadContextMenu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
-
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})

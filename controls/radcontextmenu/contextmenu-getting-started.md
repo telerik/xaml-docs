@@ -186,8 +186,6 @@ In order to learn how to use the __RadContextMenu__ and what capabilities it hol
 
  * [Visual Structure]({%slug radcontextmenu-visual-structure%})
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Events - Overview]({%slug radcontextmenu-events-overview%})
 
  * [Styles and Templates - Overview]({%slug radcontextmenu-styles-and-templates-overview%})

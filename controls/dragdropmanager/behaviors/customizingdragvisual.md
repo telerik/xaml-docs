@@ -15,8 +15,8 @@ This article demonstrates how to create a custom drag visual element for the [Dr
 The interface exposes the following members.
 
 * __UseDefaultCursors__: A property that determines whether the drag/drop effects will change the mouse cursor or not.
-* __CreateDragVisual__: A method that recieves information about the dragged items and returns a FrameworkElement used as the drag visual.
-* __GetDragVisualOffset__: A method that recieves information about the dragged items and returns the drag visual offset relative to the mouse position, as a Point structure.
+* __CreateDragVisual__: A method that receives information about the dragged items and returns a FrameworkElement used as the drag visual.
+* __GetDragVisualOffset__: A method that receives information about the dragged items and returns the drag visual offset relative to the mouse position, as a Point structure.
 
 ## Implementing IDragVisualProvider
 

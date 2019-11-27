@@ -96,8 +96,7 @@ The example below shows how to set the **ContextMenu** property of **GridVIewIte
 #### __Figure 1: Result of Example 1__
 ![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
 
-## See Also
-
+## See Also  
 * [Getting Started]({%slug multicolumncombobox-getting-started%})
 * [DropDown Properties]({%slug multicolumncombobox-dropdown-properties%})
 * [Key Properties and Methods]({%slug multicolumncombobox-dropdown-key-properties-and-methods%})

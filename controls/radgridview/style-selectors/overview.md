@@ -4,7 +4,7 @@ page_title: Style Selectors Overview
 description: Learn how to apply grid styles based on custom logic with the help of the style selector within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-style-selectors-overview
 tags: overview
-published: True
+published: False
 position: 0
 ---
 

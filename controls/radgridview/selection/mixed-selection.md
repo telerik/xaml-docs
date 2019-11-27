@@ -10,38 +10,35 @@ position: 2
 
 # Mixed Selection
 
-Since Q3 2012 SP1 release, __RadGridView__ allows the user to select a cell as well as to select a row. By default this functionality is disabled and to turn it on you have to set the __SelectionUnit__ property to __Mixed__.
+__RadGridView__ allows the user to select a cell or a row. By default this functionality is disabled and to turn it on you have to set the __SelectionUnit__ property to __Mixed__.
 
->In order to select a full row, you must click on it, but not on its cell.
+>In order to select a full row when the SelectionUnit is Mixed, you can click somewhere on it outside of its cells.
 
-RadGridView provides three selection modes, which allow you to manipulate the type of selection. You can combine them with SelectionUnit - Mixed:
-        
+## SelectionMode and SelectionUnit
 
-* With Single Selection:              
+RadGridView provides three selection modes, which allow you to manipulate the type of selection. The following bullets describe the results when they are combined with SelectionUnit - Mixed:   
 
-![Telerik {{ site.framework_name }} DataGrid MixedSelection 4](images/RadGridView_MixedSelection_4.png)
+* __SelectionMode - Single__: You can select only one unit at a time.             
 
-You can select only one unit at a time.
+    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 4](images/RadGridView_MixedSelection_4.png)
             
-* With Multiple Selection:
+* __SelectionMode - Multiple__: You are able to select any cell and any row. Units are added to the selection when they are clicked and get removed when they are clicked again.
 
-![Telerik {{ site.framework_name }} DataGrid MixedSelection 3](images/RadGridView_MixedSelection_3.png)
+    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 3](images/RadGridView_MixedSelection_3.png)
+       
+* __SelectionMode - Extended__: Units are added to the selection only by combining the mouse clicks with the __Ctrl__ or __Shift__ key.
 
-You are able to select any cell and any row. Units are added to the selection when they are clicked and get removed when they are clicked again.
+    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 2](images/RadGridView_MixedSelection_2.png)
             
-* With Extended Selection:
-
-![Telerik {{ site.framework_name }} DataGrid MixedSelection 2](images/RadGridView_MixedSelection_2.png)
-
-Units are added to the selection only by combining the mouse clicks with the Ctrl or Shift key.
-            
-For more information take a look at the [Basic Selection]({%slug gridview-selection-basics%}) topic.
+> For more information take a look at the [Basic Selection]({%slug gridview-selection-basics%}) topic.
 
 ## See Also
 
  * [Basic Selection]({%slug gridview-selection-basics%})
 
  * [Programmatic Selection]({%slug radgridview-selection-programmatic-selection%})
+
+ * [Copying]({%slug gridview-copying%})
 
  * [Basic Filtering]({%slug gridview-filtering-basic%})
 

@@ -85,11 +85,15 @@ Here is how to define a column of this type.
 
 #### __[XAML] Example 1: Define GridViewColumn in XAML:__
 {{region xaml-radgridview-columns-column-types-basic-column_0}}
-	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewColumn TextWrapping="Wrap" Header="My Column" />
-	    </telerik:RadGridView.Columns>
+	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
+		<telerik:RadGridView.Resources>
+			<DataTemplate x:Key="gridViewColumCellTemplate">
+			    <telerik:RadButton Content="More Details"/>
+			</DataTemplate>
+		</telerik:RadGridView.Resources>
+		<telerik:RadGridView.Columns>
+			<telerik:GridViewColumn Header="My Column" CellTemplate="{StaticResource gridViewColumCellTemplate}"/>
+		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
          
@@ -97,8 +101,8 @@ Here is how to define a column of this type.
 
 {{region cs-radgridview-columns-column-types-basic-column_1}}
 	GridViewColumn column = new GridViewColumn();
-	column.TextWrapping = TextWrapping.Wrap;
 	column.Header = "My Column";
+	column.CellTemplate= this.radGridView.Resources["gridViewColumCellTemplate"] as DataTemplate;
 	this.radGridView.Columns.Add(column);
 {{endregion}}
 
@@ -106,7 +110,7 @@ Here is how to define a column of this type.
 
 {{region vb-radgridview-columns-column-types-basic-column_2}}
 	Dim column As New GridViewColumn()
-	column.TextWrapping = TextWrapping.Wrap
-    column.Header = "My Column"
+        column.Header = "My Column"
+	column.CellTemplate = TryCast(Me.radGridView.Resources("gridViewColumCellTemplate"), System.Windows.DataTemplate)
 	Me.radGridView.Columns.Add(column)
 {{endregion}}

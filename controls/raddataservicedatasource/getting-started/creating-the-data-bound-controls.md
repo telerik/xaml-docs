@@ -103,7 +103,7 @@ There are several important things to notice here:
 
 * __IsBusy__ [optional] - bind the __IsBusy__ property of __RadGridView__ to the __IsBusy__ property of the __RadDataServiceDataSource__ so you get a loading indicator during the load operation.
 
-**3.** Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to navigate across pages. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
+**3.** Click __Ctrl + F5__ to run the application. After a short pause __RadGridView__ will be populated with data from the public __OData__ service. Use __RadDataPager__ to perform server-side paging. Use __RadGridView’s__ filtering and sorting UI to perform these actions on the server.
 
 ## See Also
 * [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})

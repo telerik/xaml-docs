@@ -20,7 +20,7 @@ The split button control implements the __ICommandSource__ interface, which allo
 
 ## Instantiating RadSplitButton
 
-> In order to use the RadSplitButton class, you will need to add reference to __Telerik.Windows.Controls.dll__.
+> In order to use the RadSplitButton class, you will need to add а reference to __Telerik.Windows.Controls.dll__.
 
 You can instantiate __RadSplitButton__ both in XAML and code.
 
@@ -46,7 +46,7 @@ You can instantiate __RadSplitButton__ both in XAML and code.
 
 ## Adding DropDown Content
 
-In order to add content to the drop down area of RadSplitButton, use its __DropDownContent__ property.
+In order to add content to the drop-down area of RadSplitButton, use its __DropDownContent__ property.
 
 #### __[XAML] Example 3: Adding ListBox as a drop down content__
 {{region xaml-radbuttons-features-split-button_3}}
@@ -68,7 +68,7 @@ In order to add content to the drop down area of RadSplitButton, use its __DropD
 
 ## Toggling the RadSplitButton
 
-The ButtonPart of the split button can behave as a toggle button. To enable this, set the __IsToggle__ property of RadSplitButton to True.
+The Button part of the split button can behave as a toggle button. To enable this, set the __IsToggle__ property of RadSplitButton to True.
 
 #### __[XAML] Example 4: Enable toggle mode__
 {{region xaml-radbuttons-features-split-button_4}}
@@ -82,7 +82,7 @@ The ButtonPart of the split button can behave as a toggle button. To enable this
 
 You can allow the RadSplitButton to automatically display its DropDownContent, when you __mouse over the button__. This behaviour is controlled via the __AutoOpenDelay__ property of RadSplitButton. The property specifies the time, after which the drop down content is displayed. 
 
-To disable the auto opening feature of the control, set the __AutoOpenDelay__ to __"0"__.
+To disable the auto-opening feature of the control, set the __AutoOpenDelay__ to __"0"__.
 
 #### __[XAML] Example 5: Setting the AutoOpenDelay property__
 {{region xaml-radbuttons-features-split-button_5}}
@@ -97,15 +97,15 @@ You can easily customize RadSplitButton by using the following properties:
 
 * __IsChecked__: Specifies the checked state of the button when its ButtonPart behaves like a toggle button.
 
-* __CloseOnEscape__: Specifies whether the drop down should be closed when the __Esc__ key gets pressed. The default value is True.
+* __CloseOnEscape__: Specifies whether the drop-down should be closed when the __Esc__ key gets pressed. The default value is True.
 
-* __ButtonPartStyle__: Allows you to define a Style for the ButtonPart of the RadSplitButton. The TargetType expected by the Style is RadButton.
+* __ButtonPartStyle__: Allows you to define a Style for the button part of the RadSplitButton. The TargetType expected by the Style is RadButton.
 
 * __TogglePartStyle__: Allows you to define a Style for the ButtonPart of RadSplitButton when it is in toggle button mode. The TargetType expected by the Style is RadToggleButton.
 
 * __CornerRadius__: Specifies the corner radius of RadSplitButton.
 
-* __ToggleCornerRadius__ : Specifies the corner radius of the ButtonPart, when it behaves like a toggle button.
+* __ToggleCornerRadius_ _: Specifies the corner radius of the ButtonPart, when it behaves like a toggle button.
 
 * __IsBackgroundVisible__: Controls the visibility of the background and the border of the RadSplitButton control in normal state.
 
@@ -113,17 +113,17 @@ You can easily customize RadSplitButton by using the following properties:
 
 * __DropDownButtonPosition__: Specifies the position of the drop down arrow. The possible values are __Bottom__, __Left__, __Right__ (default), __Top__.
 
-* __DropDownIndicatorVisibility__: Specifies whether the drop down arrow should be visible. The default value is __Visible__.
+* __DropDownIndicatorVisibility__: Specifies whether the drop-down arrow should be visible. The default value is __Visible__.
 
 * __DropDownPlacement__: Specifies where the drop down area should be placed - __Absolute__, __Bottom__, __Center__, __Left__, __Right__, __Top__.
 
-* __DropDownWidth__: Specifies the width of the drop down area.
+* __DropDownWidth__: Specifies the width of the drop-down area.
 
-* __DropDownHeight__: Specifies the height of the drop down area.
+* __DropDownHeight__: Specifies the height of the drop-down area.
 
-* __DropDownMaxHeight__: Specifies the maximal height of the drop down area.
+* __DropDownMaxHeight__: Specifies the maximal height of the drop-down area.
 
-* __DropDownMaxWidth__: Specifies the maximal width of the drop down area.
+* __DropDownMaxWidth__: Specifies the maximal width of the drop-down area.
 
 #### __[XAML] Example 6: Customizing RadSplitButton__
 {{region xaml-radbuttons-features-split-button_6}}

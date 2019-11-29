@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: This article lists the events exposed by the controls in the RadChartView suite.
 slug: radchartview-events
 tags: events
 publish: True
@@ -47,7 +47,7 @@ The following events will be fired only for __RadCartesianChart__:
 
 ## Series events
 
-All chart series exposes the following events:
+All chart series expose the following events:
 
 * __DataBindingComplete__: Occurs when a databinding operation has been successfully completed. 
 * __SeriesAnimationCompleted__:  This event is fired when the animation for all datapoints of the series is completed.
@@ -76,9 +76,9 @@ The __LinearAxis, LogarithmicAxis, DateTimeContinuousAxis__ continuous axes of t
 		}
 	{{endregion}}
 
-The __LinearAxis__ have additional event which will be fired when MajorStep property is changed.
+The __LinearAxis__ has an additional event which will be fired when the MajorStep property is changed.
 
-* __ActualMajorStepChanged__: Occurs when the axis major step gets changed.
+* __ActualMajorStepChanged__: Occurs when the major step of the axis gets changed.
 	
 > You can find more information about the axes events in the [Axis]({%slug radchartview-axes-axis%}#common-events) help article.
 	
@@ -132,10 +132,10 @@ The __LinearAxis__ have additional event which will be fired when MajorStep prop
 	
 ## Provider events
 
-* __ChartSeriesProvider__: The series provider expose the following events:
+* __ChartSeriesProvider__: The series provider exposes the following events:
 
 	* __SeriesCreated__: Occurs when a series is created. Allows for the series to be additionally set up or completely replaced.  	
-	#### __[C#] Example 8: SelectionChanged event arguments__
+	#### __[C#] Example 8: SeriesCreated event arguments__
 	{{region radchartview-events_7}}	
 		private void ChartSeriesProvider_SeriesCreated(object sender, ChartSeriesCreatedEventArgs e)
 		{
@@ -144,9 +144,9 @@ The __LinearAxis__ have additional event which will be fired when MajorStep prop
 		}
 	{{endregion}}
 	
-* __ChartAnnotationsProvider__: The annotations provider expose the following events:
+* __ChartAnnotationsProvider__: The annotations provider exposes the following events:
 	* __AnnotationCreated__: Occurs when an annotation is created. Allows for the annotation to be additionally set up or completely replaced.  
-	#### __[C#] Example 9: SelectionChanged event arguments__
+	#### __[C#] Example 9: AnnotationCreated event arguments__
 	{{region radchartview-events_8}}	
 		private void ChartAnnotationsProvider_AnnotationCreated(object sender, ChartAnnotationCreatedEventArgs e)
 		{

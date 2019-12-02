@@ -89,7 +89,6 @@ When __IsSearchingDeferred__ is set to __True__, the filtering will be executed 
 Three new commands have been exposed for the text search functionality. 
 
 - __Search__: Executed in order to show the search panel.
-
 - __SearchByText__: Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
 - __CloseSearchPanel__: Executed in order to hide the search panel.
 
@@ -121,7 +120,7 @@ A common scenario where you can use this event is when you want to clear the sea
 	End Sub
 {{endregion}}
 
-In **R1 2019**, the **Searching** and **Searched** events were introduced.
+In **R1 2020**, the **Searching** and **Searched** events were introduced.
 
 The **Searching** event will be raised when the grid data is about to be searched. It's arguments are of type **GridViewSearchingEventsArgs** and contain the value of the text which was entered in the search panel **TextBox** - **SearchText**. They also contain a boolean property which indicates whether the event should be canceled - **Cancel**.
 

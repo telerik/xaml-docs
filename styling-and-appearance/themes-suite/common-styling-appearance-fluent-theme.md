@@ -421,14 +421,14 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 
 #### __[C#] Example 11: Changing the opacity__		
 {{region cs-styling-appearance-fluent-theme-13}}
-	CrystalPalette.Palette.DisabledOpacity = 0.5;
-	CrystalPalette.Palette.ReadOnlyOpacity = 0.4;
+	FluentPalette.Palette.DisabledOpacity = 0.5;
+	FluentPalette.Palette.ReadOnlyOpacity = 0.4;
 {{endregion}}
 	
 #### __[VB.NET] Example 11: Changing the opacity__		
 {{region vb-styling-appearance-material-theme-14}}
-	CrystalPalette.Palette.DisabledOpacity = 0.5
-	CrystalPalette.Palette.ReadOnlyOpacity = 0.4
+	FluentPalette.Palette.DisabledOpacity = 0.5
+	FluentPalette.Palette.ReadOnlyOpacity = 0.4
 {{endregion}}
 
 ## See Also  

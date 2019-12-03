@@ -5,7 +5,7 @@ description: See examples of how you can display or add an aggregate function fo
 slug: gridview-columns-aggregate-functions
 tags: aggregate,functions
 published: True
-position: 1
+position: 2
 ---
  
 # Aggregate Functions

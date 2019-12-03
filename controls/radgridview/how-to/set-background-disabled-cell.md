@@ -12,7 +12,7 @@ position: 7
 
 The goal of this tutorial is to show you how to customize the look of disabled **GridViewCell** elements.
 
-In order to do so, you need to [edit the control template of the GridViewCell]({%slug styling-apperance-editing-control-templates%}). You can then modify the **Disabled visual state** as well as the **Background_Disabled** Border element to your liking.
+In order to do so, you need to [extract the control template of the GridViewCell]({%slug styling-apperance-editing-control-templates%}). You can then modify the **Disabled visual state** as well as the **Background_Disabled** Border element to your liking.
 
 In **Example 1** we've changed the control template so that all disabled cells have a fully opaque red background as illustrated in **Figure 1**.
 

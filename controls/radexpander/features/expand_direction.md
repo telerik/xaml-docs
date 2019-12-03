@@ -1,7 +1,7 @@
 ---
 title: Expand Direction
 page_title: Expand Direction
-description: You can change the expander direction throught its ExpandDirection property.
+description: You can change the expander direction through its ExpandDirection property.
 slug: radexpander-features-expand_direction
 tags: expand,direction
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Expand Direction
 
-The __ExpandDirection__ property gets or sets the direction in which the content would expand. This property is an enumeration which expose four values: __Down, Left, Right, Up__.
+The __ExpandDirection__ property gets or sets the direction in which the content would expand. This property is an enumeration which exposes four values: __Down, Left, Right, Up__.
 
 #### __[XAML] Example 1: Setting ExpandDirection property__
 {{region radexpander-features-expand_direction_0}}

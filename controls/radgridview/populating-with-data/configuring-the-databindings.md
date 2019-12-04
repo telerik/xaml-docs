@@ -107,7 +107,7 @@ By default, RadGridView will try to automatically generate columns based on the 
 #### __[XAML] Example 3: Define a column in XAML__
 
 {{region xaml-gridview-configuring-the-databindings_4}}
-	<telerik:RadGridView x:Name="playersGrid" AutoGenerateColumns="False">
+	<telerik:RadGridView x:Name="playersGrid" ItemsSource="{Binding Players}" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" Header="Number" />

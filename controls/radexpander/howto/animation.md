@@ -31,12 +31,19 @@ To disable or enable the animation, set the __AnimationManager.IsAnimationEnable
 
 ## Customize Animations
 
-To customize RadExpander animations, use the __AnimationManager.AnimationSelector__ property. The supported animation class is ExpanderExpandCollapseAnimation which exposes few properties to customize the animation.
+To customize RadExpander animations, use the __AnimationManager.AnimationSelector__ property. The supported animation class is __ExpanderExpandCollapseAnimation__ which exposes few properties to customize the animation.
 
-#### __[XAML] Example 3: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Up or Down)__
+* __Direction__: A enumeration property of type __AnimationDirection__ which specify the direction of the animation which targeted.
+* __TargetElementName__: A property of type __string__ that gets or sets the name of the element that should be animated.
+* __AnimationName__: A property of type __string__ that gets or sets the name of the animation. For example:
+	* __ExpandDirection is set to Up or Down:__ To modify the animation the AnimationName needs to be set to __Expand or Collapse__.
+	* __ExpandDirection is set to Right or Left:__ To modify the animation the AnimationName needs to be set to __ExpandHorizontal or CollapseHorizontal__.
+* __SpeedRatio__: A property of type __double__ that gets or sets the speed of the animation.
+
+#### __[XAML] Example 3: Modify the animations when ExpandDirection is Up or Down__
 {{region radexpander-howto-animation_3}}
 	<telerik:RadExpander>
-		<telerik:RadExpander.Content >
+		<telerik:RadExpander.Content>
 			<Grid>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="20"/>
@@ -63,11 +70,7 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 	</telerik:RadExpander>
 {{endregion}}
 
-> The previous code snippet is applicable only when the __ExpandDirection__ property of __RadExpander__ is set to Up or Down. The default value is __Down__.
-
-When the __ExpandDirection__ property is set to Right or Left you need to use different __AnimationNames__ for the __ExpanderExpandCollapseAnimation__ objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
-
-#### __[XAML] Example 4: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Right or Left)__
+#### __[XAML] Example 4: Modify the animations when ExpandDirection is Right or Left__
 {{region radexpander-howto-animation_4}}
 	<telerik:RadExpander ExpandDirection="Left">
 		<telerik:RadExpander.Content >

@@ -64,9 +64,4 @@ You can then bind RadNumericUpDown's **Value** to a property of your view model 
 
 * [Properties]({%slug radnumericupdown-behavior%})
 
-{% if site.site_name == 'Silverlight' %}
-* [Events]({%slug radnumericupdown-howto-events%})
-{% endif %}
-{% if site.site_name == 'WPF' %}
-* [Events]({%slug radnumericupdown-howto-events-wpf%})
-{% endif %}
+* [Events]({%slug radnumericupdown-events%})

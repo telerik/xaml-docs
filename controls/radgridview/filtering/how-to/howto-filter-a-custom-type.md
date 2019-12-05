@@ -10,10 +10,9 @@ position: 11
 
 # Filter a Custom Type
 
+If you want to filter a column that is data-bound to a custom type, you need to make sure that your custom type meets certain criteria. We will use the type **Person** as an example.
 
-If you want to filter a column that is data-bound to a custom type, you need to make sure that your custom type meets certain criteria. We will use the type Person as an example.
-
-#### __C#__
+#### __[C#] Example 1: The Person class__
 
 {{region cs-gridview-filtering-howto-filter-a-custom-type_0}}
 	public class Person
@@ -39,7 +38,7 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: The Person class__
 
 {{region vb-gridview-filtering-howto-filter-a-custom-type_0}}
 	Public Class Person
@@ -67,9 +66,11 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 	End Class
 {{endregion}}
 
-The first thing that you need to do is implement the generic IEquatable interface. It has a single method called Equals. Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN states that if you implement generic IEquatable, you should also override the base class implementations of Object.Equals(Object) and Object.GetHashCode so that their behavior is consistent with that of the generic IEquatable.Equals method. If you do override Object.Equals(Object), your overridden implementation is also called in calls to the static Equals(System.Object, System.Object) method on your class. This ensures that all invocations of the Equals method return consistent results. Furthermore, the GetHashCode method will be used by the framework when the distinct values need to be discovered. Next you need to override the ToString method of your type so that distinct values and grid cells display a friendly representation of your class. Here is what the class might look like:
+The first thing that you need to do is implement the generic **IEquatable** interface. It has a single method called **Equals**. Next, you need to override **Object.Equals(Object)** and **Object.GetHashCode**. MSDN states that if you implement generic **IEquatable**, you have to also override the base class implementations of Object.Equals(Object) and Object.GetHashCode so that their behavior is consistent with that of the generic IEquatable.Equals method.
 
-#### __C#__
+## Implement IEquatable
+
+#### __[C#] Example 2: IEquatable implementation__
 
 {{region cs-gridview-filtering-howto-filter-a-custom-type_1}}
 	public class Person : IEquatable<Person>
@@ -102,21 +103,10 @@ The first thing that you need to do is implement the generic IEquatable interfac
 	
 	        return StringComparer.Ordinal.Equals(this.Name, other.Name);
 	    }
-	
-	    public override bool Equals(object obj)
-	    {
-	        return ((IEquatable<Person>)this).Equals(obj as Person);
-	    }
-	
-	    public override int GetHashCode()
-	    {
-	        return this.Name.GetHashCode() ^ this.Age.GetHashCode();
-	    }
 	}
 {{endregion}}
 
-
-#### __VB.NET__
+#### __[VB.NET] Example 2: IEquatable implementation__
 
 {{region vb-gridview-filtering-howto-filter-a-custom-type_1}}
 	Public Class Person
@@ -150,22 +140,67 @@ The first thing that you need to do is implement the generic IEquatable interfac
 	
 	        Return StringComparer.Ordinal.Equals(Me.Name, other.Name)
 	    End Function
-	
-	    Public Overrides Function Equals(obj As Object) As Boolean
-	        Return DirectCast(Me, IEquatable(Of Person)).Equals(TryCast(obj, Person))
-	    End Function
-	
-	    Public Overrides Function GetHashCode() As Integer
-	        Return Me.Name.GetHashCode() Xor Me.Age.GetHashCode()
-	    End Function
 	End Class
 {{endregion}}
 
-Next you will need to define a TypeConverter for string conversions. When RadGridView encounters a custom type it will use a plain TextBox for the field filter editors. The strings that user enters have to be converted to your custom type and vice versa. This can be achieved by specifying a TypeConverter on your class. Do not forget to add the TypeConverter attribute on your class definition and point it to the TypeConverter that you just created.
+## Override Object.Equals(Object) and Object.GetHashCode
 
-#### __C#__
+If you do override Object.Equals(Object), your overridden implementation is also called in calls to the static Equals(System.Object, System.Object) method on your class. This ensures that all invocations of the Equals method return consistent results. Furthermore, the GetHashCode method will be used by the framework when the distinct values need to be discovered.
+
+#### __[C#] Example 3: Equals and GetHashCode overrides__
 
 {{region cs-gridview-filtering-howto-filter-a-custom-type_2}}
+	public override bool Equals(object obj)
+	{
+		return ((IEquatable<Person>)this).Equals(obj as Person);
+	}
+
+	public override int GetHashCode()
+	{
+		return this.Name.GetHashCode() ^ this.Age.GetHashCode();
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 3: Equals and GetHashCode overrides__
+
+{{region vb-gridview-filtering-howto-filter-a-custom-type_2}}	
+	Public Overrides Function Equals(obj As Object) As Boolean
+		Return DirectCast(Me, IEquatable(Of Person)).Equals(TryCast(obj, Person))
+	End Function
+
+	Public Overrides Function GetHashCode() As Integer
+		Return Me.Name.GetHashCode() Xor Me.Age.GetHashCode()
+	End Function
+{{endregion}}
+
+## Override ToString
+
+Next, you need to override the **ToString** method of your type so that distinct values and grid cells display a friendly representation of your class. Here is what the class might look like:
+
+#### __[C#] Example 4: ToString override__
+
+{{region cs-gridview-filtering-howto-filter-a-custom-type_3}}
+	public override string ToString()
+	{
+		return this.Name;
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 4: ToString override__
+
+{{region vb-gridview-filtering-howto-filter-a-custom-type_3}}	
+	Public Overrides Function ToString() As String
+		Return Me.Name
+	End Function
+{{endregion}}
+
+## Define a TypeConverter for String Conversions
+
+Next you will need to define a **TypeConverter** for string conversions. When RadGridView encounters a custom type it will use a plain TextBox for the field filter editors. The strings that user enters have to be converted to your custom type and vice versa. This can be achieved by specifying a TypeConverter on your class.
+
+#### __[C#] Example 5: Custom TypeConverter__
+
+{{region cs-gridview-filtering-howto-filter-a-custom-type_4}}
 	public class PersonConverter : System.ComponentModel.TypeConverter
 	{
 	    public override bool CanConvertFrom(System.ComponentModel.ITypeDescriptorContext context, Type sourceType)
@@ -211,10 +246,9 @@ Next you will need to define a TypeConverter for string conversions. When RadGri
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 5: Custom TypeConverter__
 
-#### __VB.NET__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_2}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_4}}
 	Public Class PersonConverter
 	    Inherits System.ComponentModel.TypeConverter
 	    Public Overrides Function CanConvertFrom(context As System.ComponentModel.ITypeDescriptorContext, sourceType As Type) As Boolean
@@ -252,13 +286,38 @@ Next you will need to define a TypeConverter for string conversions. When RadGri
 	End Class
 {{endregion}}
 
-If the plain TextBox does not suit your needs, you can provide your own field filter editor by overriding the GridViewDataColumn.CreateFieldFilterEditor method as described [here]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}).
+Do not forget to add the **TypeConverter** attribute on your class definition and point it to the custom TypeConverter that you just created.
 
-If you want to see the comparison filter operators (Is Less Than, etc.) you should override your custom type’s comparison operators.
+#### __[C#] Example 6: Adding the TypeConverter attribute__
 
-#### __C#__
+{{region cs-gridview-filtering-howto-filter-a-custom-type_5}}
+	[TypeConverter(typeof(PersonConverter))]
+    public class Person : IEquatable<Person>
+    {
+        // ...
+    }
+{{endregion}}
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_3}}
+#### __[VB.NET] Example 6: Adding the TypeConverter attribute__
+
+{{region cs-gridview-filtering-howto-filter-a-custom-type_5}}
+	<TypeConverter(GetType(PersonConverter))>
+	Public Class Person
+		Implements IEquatable(Of Person)
+
+		' ...
+	End Class
+{{endregion}}
+
+If the plain TextBox does not suit your needs, you can provide your own field filter editor by overriding the **GridViewDataColumn.CreateFieldFilterEditor** method as described [here]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). You will no longer need a TypeConverter if your custom field filter editor is able to produce instances of your custom type.
+
+## Override the Comparison Operators (Optional)
+
+If you want to see the comparison filter operators (**Is Less Than**, etc.) you should override your custom type's comparison operators.
+
+#### __[C#] Example 7: Comparison operators override__
+
+{{region cs-gridview-filtering-howto-filter-a-custom-type_4}}
 	public static bool operator <(Person left, Person right)
 	{
 	    return left.Age < right.Age;
@@ -280,9 +339,9 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 7: Comparison operators override__
 
-{{region vb-gridview-filtering-howto-filter-a-custom-type_3}}
+{{region vb-gridview-filtering-howto-filter-a-custom-type_4}}
 	Public Shared Operator <(left As Person, right As Person) As Boolean
 	    Return left.Age < right.Age
 	End Operator
@@ -300,4 +359,8 @@ If you want to see the comparison filter operators (Is Less Than, etc.) you shou
 	End Operator
 {{endregion}}
 
-This will make your Type filterable by RadGridView.
+## See Also
+
+* [Basic Filtering]({%slug gridview-filtering-basic%})
+* [Create a Custom Field Filter Editor]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%})
+* [Customize the Default Field Filter Editor]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%})

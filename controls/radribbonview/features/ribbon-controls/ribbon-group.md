@@ -181,7 +181,7 @@ For more information and explanations about the __Variants__ and __Priorities__,
 
 When a __RibbonGroup__ is in __Collapsed__ state only __Header__ and __Icon__ (image) are shown. To set the image source for the collapsed icon you need to set the __RadRibbonGroup__'s __Icon__ property.		
 
->The collapsed icon is displayed inside an __Image__ element with Width/Height set to __16__ and __Stretch__ set to __None__. If your image is not displayed as intended, resize it to 16x16 or edit the ControlTemplate of the RadRibbonDropDownButton inside the RadRibbonGroup, which hosts the Image. 
+>The collapsed state icon is displayed inside an __Image__ element with Width/Height set to __16__ and __Stretch__ set to __None__. If your image is not displayed as intended, resize it to 16x16 or edit the ControlTemplate of the RadRibbonDropDownButton inside the RadRibbonGroup, which hosts the Image. 
 
 ## Events
 

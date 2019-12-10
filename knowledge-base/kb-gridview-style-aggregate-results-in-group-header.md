@@ -1,5 +1,5 @@
 ---
-title: Style aggregate results displayed in the GroupHeaderRow
+title: Style Aggregate Results Displayed in the GroupHeaderRow
 description: Update the style of aggregate function representation based on the result
 type: how-to
 page_title: Conditionally style aggregate results shown in the header of the group

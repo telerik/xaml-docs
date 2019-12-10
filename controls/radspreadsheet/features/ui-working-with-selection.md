@@ -80,10 +80,12 @@ The RadWorksheetEditor class exposes a __Selection__ property of type __Selectio
             
 
 * __IsCellSelection__: Gets a value indicating whether the active selection at the moment is cell selection or shape selection.
-            
+
+
+* __FillSelection__: Gets the fill selection.
+
 
 * __ShapeSelection__: Returns an object that represents the shapes contained in the selection.
-            
 
 The cell selection and the properties related to it can be accessed and used, even if the current active selection is shape selection. In such case, while the shape selection is the one which is visible, the underlying cell selection continues to exist.
         
@@ -380,7 +382,7 @@ The following example makes a single CellRange selection and saves it in a Selec
 The automatic filling of data in RadSpreadsheet can also be performed through the selection to ease the access to the feature. This is done by using the fill handle, which can be found at the bottom right corner of the current selection, provided that this selection consists of only one range.
         
 
->tipMore information concerning automatically filling data is available in RadSpreadProcessing's documentation that represents the model of RadSpreadsheet. Check the [Repeat Values](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/repeat-values) and [Series](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/series) articles.
+>tipMore information concerning automatically filling data is available in RadSpreadProcessing`s documentation that represents the model of RadSpreadsheet. Check the [Repeat Values](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/repeat-values) and [Series](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/fill-data-automatically/series) articles.
           
 
 In order to use the fill handle, select the initial set of data, click and hold the handle and drag it in the desired direction.
@@ -392,6 +394,43 @@ The initially selected area will remain marked while the part of selection you a
 Once you've selected the desired range, you can drop the selection. The selected range will be filled with data the same way as it would be if you had used the autofill data series.
         ![Rad Spreadsheet UI Selection 09](images/RadSpreadsheet_UI_Selection_09.png)
 
+
+With the RadSpreadsheet API you have the ability to listen and to manipulate the automatic filling of data process.
+
+**FillSelection** properties:
+* **IsEnabled**: Gets or sets a value indicating whether to enable or disable the Fill Handle feature.
+* **IsStarted**: Gets or sets a value indicating whether the fill selection is started or not.
+* **SelectedRange**: Gets a value returning the selected CellRange.
+* **LastActivePosition**: Gets a value returning the cell index of the last active position of the pointer.
+
+and events: 
+* **FillSelectionChanged**: Occurs when the FillSelection is changed.
+* **IsEnabledChanged**: Occurs when the IsEnabled is changed.
+
+The following example set the IsEnabled property of the FillSelection to false and this disable the fill selection.
+        
+
+#### __C#__
+
+{{region radspreadsheet-ui-working-with-selection_9}}
+
+    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
+
+    FillSelection fillSelection = selection.FillSelection;
+    fillSelection.IsEnabled = false;
+{{endregion}}
+
+
+
+#### __VB__
+
+{{region radspreadsheet-ui-working-with-selection_9}}
+
+    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
+    
+    Dim fillSelection As FillSelection = selection.FillSelection
+    fillSelection.IsEnabled = False
+{{endregion}}
 
 ## Using Selection to Complete Formulas
 

@@ -141,7 +141,7 @@ You can add multiple functions to the __AggregateFunctions__ collection and they
         
 ## Show Group Header Aggregates
 
-You can also add [aggregate functions on a column level](%slug gridview-columns-aggregate-functions%).
+You can also add [aggregate functions on a column level]({%slug gridview-columns-aggregate-functions%}).
 
 #### __[XAML] Example 5: Aggregate functions on a column level__
 

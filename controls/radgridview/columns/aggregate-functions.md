@@ -195,3 +195,4 @@ If you need to have a default aggregate function for the custom column which is 
  * [Group Footers]({%slug gridview-group-footers%})
  * [Aggregates are not shown]({%slug gridview-troubleshooting-aggregates-not-shown%})
  * [Aggregates are not updated]({%slug gridview-troubleshooting-aggregates-not-updated%})
+ * [Style aggregate results displayed in the GroupHeaderRow]({%slug kb-gridview-style-aggregate-results-in-group-header%})

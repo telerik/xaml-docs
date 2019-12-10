@@ -56,6 +56,4 @@ The __RadContextMenu__ control raises the following specific event:
 
  * [Working with the RadContextMenu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Handle Item Clicks]({%slug radcontextmenu-how-to-handle-item-clicks%})

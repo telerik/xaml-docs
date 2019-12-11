@@ -778,7 +778,7 @@ navigation:
         position: 5		
     controls/radgridview/columns/columntypes:
         title: Column Types
-        position: 6
+        position: 1
     controls/radgridview/commands:
         title: Commands
         position: 7

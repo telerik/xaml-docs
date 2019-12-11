@@ -33,7 +33,7 @@ To disable or enable the animation, set the __AnimationManager.IsAnimationEnable
 
 To customize RadExpander animations, use the __AnimationManager.AnimationSelector__ property. The supported animation class is __ExpanderExpandCollapseAnimation__ which exposes few properties to customize the animation.
 
-* __Direction__: A enumeration property of type __AnimationDirection__ which specify the direction of the animation which targeted.
+* __Direction__: An enumeration property of type __AnimationDirection__ which specifies the direction of the animation.
 * __TargetElementName__: A property of type __string__ that gets or sets the name of the element that should be animated.
 * __AnimationName__: A property of type __string__ that gets or sets the name of the animation. For example:
 	* __ExpandDirection is set to Up or Down:__ To modify the animation the AnimationName needs to be set to __Expand or Collapse__.

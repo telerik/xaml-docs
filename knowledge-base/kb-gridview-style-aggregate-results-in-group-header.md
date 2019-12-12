@@ -355,4 +355,4 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
 ## See Also
 
 * [Aggregate Functions]({%slug gridview-columns-aggregate-functions%})
-* [Group Aggregates]({%slug gridview-grouping-aggregates})
+* [Group Aggregates]({%slug gridview-grouping-aggregates%})

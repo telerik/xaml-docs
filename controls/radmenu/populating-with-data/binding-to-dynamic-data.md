@@ -189,7 +189,7 @@ In order to visualize the data in __RadMenu__ you can use *ItemContainerStyle* p
 	    <Setter Property="IconTemplate" >
 	        <Setter.Value>
 	            <DataTemplate>
-	                <Image Source="{Binding}" Stretch="None"/>
+	                <Image Source="{Binding}" Stretch="UniformToFill"/>
 	            </DataTemplate>
 	        </Setter.Value>
 	    </Setter>

@@ -26,9 +26,9 @@ __RadRadialMenu__ is a circular menu that comes with support for selection, comm
 
 * __Nested Items__: RadRadialMenuItems can have nested items. This way you can easily implement more complex layouts.
 
-* __Selection__:  The control support selection functionality that allows you to highlight items upon click or setting a property. 
+* __Selection__:  The control supports selection functionality that allows you to highlight items upon click or setting a property. 
 
-* __Commands__: The control gives you the ability to customize the available commands.
+* __Commands__: RadRadialMenu gives you the ability to customize the available commands.
 
 * __Data Binding Support__: The control can be easily data bound to your business data, either by setting its properties directly, or by using a binding declaration. Read more about this in the [Binding to Object]({%slug radradialmenu-populating-with-data-binding-to-object%}) section.
 

@@ -61,4 +61,3 @@ In order to reject the changes and reload the original data from the server you 
 ## See Also
 * [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})
 * [MVVM Support]({%slug raddataservicedatasource-mvvm%})
-* [Paging through RadDataPager]({%slug raddataservicedatasource-paging-paging-through-raddatapager%})

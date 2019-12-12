@@ -30,5 +30,5 @@ Read the following topics to learn more:
  * [Item Edit Template]({%slug radtreeview-populating-with-data-item-edit-template%})
  * [Item Edit Template Selector]({%slug radtreeview-populating-with-data-item-edit-template-selector%})
  * [Item Container Style Selector]({%slug radtreeview-populating-with-data-item-container-style-selector%})
- * [Hierarchical Data Templates]({%slug radtreeview-features-hierarchical-data-templates%})
+ * [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%})
  * [Visual Structure]({%slug radtreeview-visual-structure%})

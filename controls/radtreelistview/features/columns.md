@@ -32,7 +32,7 @@ As the __RadTreeListView__ directly inherits the __RadGridView,__ it makes use o
 
 * [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%})
 
-You can also reorder, resize or freeze the columns, manage their headers and footers, and customize their appearance. To learn more read the [respective topics]({%slug gridview-columns-overview %}) in the __RadGridView's__ documentation.
+You can also reorder, resize or freeze the columns, manage their headers and footers, and customize their appearance. To learn more read the [respective topics]({%slug gridview-columns-defining-columns %}) in the __RadGridView's__ documentation.
 
 
 

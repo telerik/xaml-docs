@@ -10,26 +10,41 @@ position: 3
 
 # Custom DataProvider
 
-The __DataProvider__ functionality of __RadVirtualGrid__ exposes various mechanisms for extending the default behavior. This can be achieved by inheriting the __DataProvider__ object and overriding its methods or properties.
+The __DataProvider__ class exposes various methods and properties for extending and customizing the default behavior of its respective **RadVirtualGrid** control. **Examples 1 and 2** demonstrate how you can create and apply a custom DataProvider.
 
 #### __[C#] Example 1: Defining a Custom DataProvider__
 
-{{region radvirtualgrid-features_customdataprovider_0}}
+{{region cs-radvirtualgrid-features_customdataprovider_0}}
 	public class CustomDataProvider: DataProvider
     {
-        public CustomDataProvider(IEnumerable source)
-            :base(source)
+        public CustomDataProvider(IEnumerable source) : base(source)
         {
- 
         }
     }
 {{endregion}}
 
+#### __[VB.NET] Example 1: Defining a Custom DataProvider__
+
+{{region vb-radvirtualgrid-features_customdataprovider_0}}
+	Public Class CustomDataProvider
+		Inherits DataProvider
+
+		Public Sub New(ByVal source As IEnumerable)
+			MyBase.New(source)
+		End Sub
+	End Class
+{{endregion}}
+
 #### __[C#] Example 2: Applying the Custom DataProvider__
 
-{{region radvirtualgrid-features_customdataprovider_1}}
-	this.VirtualGrid.DataProvider = 
-                new CustomDataProvider(Club.GetClubs());
+{{region cs-radvirtualgrid-features_customdataprovider_1}}
+	this.VirtualGrid.DataProvider = new CustomDataProvider(Club.GetClubs());
+{{endregion}}
+
+#### __[VB.NET] Example 2: Applying the Custom DataProvider__
+
+{{region vb-radvirtualgrid-features_customdataprovider_1}}
+    Me.VirtualGrid.DataProvider = New CustomDataProvider(Club.GetClubs())
 {{endregion}}
 
 #### __Figure 1: RadVirtualGrid with applied custom DataProvider__
@@ -38,17 +53,21 @@ The __DataProvider__ functionality of __RadVirtualGrid__ exposes various mechani
 
 By inheriting the default __DataProvider__, the following methods and properties are exposed for customization.
 
+>A good example of how to override some of these members can be found in the "MVVM" demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser). The source code of the demo is also available in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/VirtualGrid/MVVM).
+
 ### Properties
 
-* __InitialRowCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
+* __InitialRowCount__: If not overridden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
 
-* __InitialColumnCount__: If not overriden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
+* __InitialColumnCount__: If not overridden, gets the value that is set to the __InitialRowCount__ property of __RadVirtualGrid__.
 
-* __ShouldPushEditValueToGrid__: When an editor is provided for the [Editing]({%slug virtualgrid-editing%}) operation, its edited value needs to be manually pushed to underlying source and to the grid through its __PushCellValue__ method. If the __ShouldPushEditValueToGrid__ property is overriden and returns a __True__ value, updating the control with the edited property value will be done automatically.
+* __ShouldPushEditValueToGrid__: When an editor is provided for the [Editing]({%slug virtualgrid-editing%}) operation, its edited value needs to be manually pushed to underlying source and to the grid through its __PushCellValue__ method. If the __ShouldPushEditValueToGrid__ property is overridden and returns a __True__ value, updating the control with the edited property value will be done automatically.
 
 * __DistinctValuesLimit__: By default, its value is set to 1000. Through it, the maximum count of distinct values in the __FilteringControl__ can be manipulated.
 
 ### Methods
+
+You can override each of the following methods in order to customize the behavior of the control when a certain operation is perfrormed either through the UI or programmatically. 
 
 * __OnCellEditEnded__: The method that is called when the __CellEditEnded__ event is raised.
 
@@ -89,7 +108,5 @@ By inheriting the default __DataProvider__, the following methods and properties
 ## See Also
 
 * [Editing]({%slug virtualgrid-editing%})
-
 * [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%})
-
 * [Pinned Rows and Columns]({%slug virtualgrid-pinned-rows-and-columns%})

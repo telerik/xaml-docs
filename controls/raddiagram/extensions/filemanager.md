@@ -79,4 +79,4 @@ Then we can subscribe to the Click event of the Save/Load buttons. The next step
 * [RadDiagramThumbnail]({%slug raddiagram-extensions-thumbnail%})
 * [RadDiagramRuler]({%slug raddiagram-extensions-ruler%})
 * [RadDiagramToolbox]({%slug raddiagram-extensions-toolbox%})
-* [RadDiagramRibbon]({%slug raddiagram-extensions-diagramribbon-overview%})
+{% if site.framework_name == 'WPF' %}* [RadDiagramRibbon]({%slug raddiagram-extensions-diagramribbon-overview%}){% endif %}

@@ -16,7 +16,7 @@ position: 1
 
 There are a number of ways you can control the layout of your __RadTabControl__ control.
 				
-* If you need to group your tab items in different rows, separating them by some specific criteria, just use the __Boolean__ property __IsBreak.__ This property belongs to the __RadTabItem__ class and once set, all tab items that are after this one will be placed on a new row. [Read more]({%slug radtabcontrol-how-to-create-multi-line-tabs%})
+* If you need to group your tab items in different rows, separating them by some specific criteria, just use the __Boolean__ property __IsBreak.__ This property belongs to the __RadTabItem__ class and once set, all tab items that are after this one will be placed on a new row. [Read more]({%slug radtabcontrol-features-multiline-tabs%})
 ![](images/RadTabControl_Figure_00255.png)
 
 * You can control the orientation of the tab items by using the property __TabOrientation.__ You can choose one of these  options: to display them horizontally (__Orientation.Horizontal__) or vertically (__Orientation.Vertical__). [Read more]({%slug radtabcontrol-getting-started%}#Set_Tab_Orientation)
@@ -40,5 +40,3 @@ There are a number of ways you can control the layout of your __RadTabControl__ 
  * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 
  * [Getting Started]({%slug radtabcontrol-getting-started%})
-
- * [How to Create Multi-line Tabs]({%slug radtabcontrol-how-to-create-multi-line-tabs%})

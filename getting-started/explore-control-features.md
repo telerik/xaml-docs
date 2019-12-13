@@ -28,7 +28,7 @@ You can **explore** the available properties, events and inner tags of any contr
 
 >caption Figure 2: Explore Inetllisense in the code-behind
 
-![Explore Inetllisense in the code-behind](adding-telerik-ui-to-an-application/images/installation-adding-application-using-intellisense-vs-wpf-2.png "Explore Inetllisense in the code-behind")
+![Explore Intellisense in the code-behind](adding-telerik-ui-to-an-application/images/installation-adding-application-using-intellisense-vs-wpf-2.png "Explore Inetllisense in the code-behind")
 
 ## Documentation
 

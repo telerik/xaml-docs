@@ -1,7 +1,7 @@
 ---
 title: In Code Behind
 page_title: In Code Behind
-description: In Code Behind
+description: This article demonstrates how to populate the RadListBox with items in code. 
 slug: radlistbox-populating-with-data-in-code-behind
 tags: in,code,behind
 published: True
@@ -10,11 +10,9 @@ position: 2
 
 # In Code Behind
 
-This tutorial will walk you through the common tasks of adding and removing __RadListBoxItems__ programmatically.		
+This tutorial will walk you through the common tasks of adding and removing __RadListBoxItems__ programmatically.	
 
-Here is a regular __RadListBox__ declaration without items:
-
-#### __[XAML]  Declaring RadListBox__
+#### __[XAML] Example 1: RadListBox without Items__
 
 {{region xaml-radlistbox-populating-with-data-in-code-behind_0}}
 	<telerik:RadListBox x:Name="radListBox" Width="200">			
@@ -23,40 +21,37 @@ Here is a regular __RadListBox__ declaration without items:
 
 ## Adding RadListBoxItems
 
-In order to add new listbox items to a __RadListBox__ control, you have to perform several simple steps:		
+In order to add items to a __RadListBox__, you can create new __RadListBoxItems__ and add them to the __Items__ collection of the control.
 
-* Create an instance of the RadListBoxItem class.
-
-* Set its properties such as Content, Foreground, etc.
-
-* Add it to the RadListBox's Items collection.
-
-#### __[C#]  Populating RadListBox with items from code-behind__
+#### __[C#] Example 2: Populating RadListBox with items from code-behind__
 
 {{region cs-radlistbox-populating-with-data-in-code-behind_1}}
-	var item1 = new RadListBoxItem() { Content = "Australia" };
-	radListBox.Items.Add(item1);
-	var item2 = new RadListBoxItem() { Content = "Brazil" };
-	radListBox.Items.Add(item2);
+	public MainWindow()
+	{
+		InitializeComponent();
+
+		var item1 = new RadListBoxItem() { Content = "Australia" };
+		radListBox.Items.Add(item1);
+		var item2 = new RadListBoxItem() { Content = "Brazil" };
+		radListBox.Items.Add(item2);
+	}
 {{endregion}}
 
-The result is shown on the image below:
-
+#### __Figure 1: RadListBox populated in code__
 ![radlistbox populatingwithdata incodebehind](images/radlistbox_populatingwithdata_incodebehind.png)
 
 ## Removing RadListBoxItems
 
 In order to remove a specific __RadListBoxItem__, you should remove it from the __RadListBox__'s __Items__ collection.
 
-#### __[C#]  Removing RadListBoxItems__
-
+#### __[C#] Example 3: Removing RadListBoxItems__
 {{region cs-radlistbox-populating-with-data-in-code-behind_2}}
-	private void RemoveListBoxItem(RadListBoxItem itemToRemove)
+	private void RemoveFirstItem()
 	{
-	    this.radListBox.Items.Remove(itemToRemove);
+	    this.radListBox.Items.Remove(this.radListBox.Items[0]);
 	}
 {{endregion}}
 
 ## See Also
 
- * [Getting Started]({%slug radlistbox-getting-started%})
+* [Getting Started]({%slug radlistbox-getting-started%})

@@ -284,7 +284,7 @@ You can now easily change the read-only background and border brush of all text 
 
 ## Changing DisabledOpacity
 
-If you need to change the opacity of disabled elements, you can easily do it via the __DisabledOpacity__ property of __Office2016Palette__. The default value of the property is 0.5.
+If you need to change the opacity of disabled elements, you can easily do it via the __DisabledOpacity__ property of the __Office2016Palette__. The default value of the property is 0.5.
 
 #### __[C#] Example 10: Setting the disabled opacity__
 {{region styling-appearance-office2016-9}}

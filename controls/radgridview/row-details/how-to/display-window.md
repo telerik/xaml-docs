@@ -10,28 +10,29 @@ position: 1
 
 # Display Row Details in RadWindow
 
-As you know, in order to display Row Details outside [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx), you need to place a [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) control somewhere around [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx) and wire them up. Well, it does not need to be around, really. This article will show how to place it in Telerik’s [RadWindow](https://demos.telerik.com/silverlight/#Window/FirstLook): 
+As explained in the [External Row Details]({%slug radgridview-row-details-external-row-details%}) article, in order to display the row details outside of the RadGridView control, you need to place a **DetailsPresenter** control somewhere around RadGridView and wire them up. Well, it does not need to be around, really. This article will show how to place it in a [RadWindow]({%slug radwindow-getting-started%}) control and position it next to the selected row.
 
-#### __C#__
+#### __[C#] Example 1: Creating a RadWindow and setting a DetailsPresenter as its Content__
 
 {{region cs-gridview-how-to-display-row-details-window_0}}
-	this.DataContext = new FootballViewModel();
-	
-	this.window = new RadWindow();
-	this.window.Content = new DetailsPresenter()
+	private void Grid_Loaded(object sender, RoutedEventArgs e)
 	{
-	    // Link the external details presenter to our RadGridView.
-	    DetailsProvider = this.clubsGrid.RowDetailsProvider
-	};
-	this.window.WindowStartupLocation = WindowStartupLocation.Manual;
-	this.window.Header = "Players";
-	this.window.ResizeMode = ResizeMode.NoResize;
-	this.clubsGrid.RowDetailsProvider.PropertyChanged += this.OnRowDetailsProviderPropertyChanged;
+	    this.window = new RadWindow();
+	    this.window.Content = new DetailsPresenter()
+	    {
+		// Link the external details presenter to our RadGridView.
+		DetailsProvider = this.clubsGrid.RowDetailsProvider
+	    };
+	    this.window.WindowStartupLocation = Telerik.Windows.Controls.WindowStartupLocation.Manual;
+	    this.window.Header = "Row Details";
+	    this.window.ResizeMode = ResizeMode.NoResize;
+	    this.Grid.RowDetailsProvider.PropertyChanged += this.OnRowDetailsProviderPropertyChanged;
+	}
 {{endregion}}
 
-The [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) cares about three things – what is the [DataTemplate](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) it needs to load, whether it is visible or not, and what is its [DataContext](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.datacontext.aspx). All this information comes through its [DetailsProvider](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter-detailsprovider.html) property which is assigned from [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx)’s respective property [RowDetailsProvider](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.gridviewdatacontrol-rowdetailsprovider.html). This means that this particular [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) will be fed by this particular [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx). Let’s take a look at the interface:
+The DetailsPresenter cares about three things – what is the [DataTemplate](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) it needs to load, whether it is visible or not, and what is its [DataContext](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.datacontext.aspx). All this information comes through its **DetailsProvider** property which is assigned from RadGridView's respective property **RowDetailsProvider**. This means that this particular DetailsPresenter will be fed by this particular RadGridView. Let’s take a look at the interface:
 
-#### __C#__
+#### __[C#] Example 2: The IDetailsProvider interface__
 
 {{region cs-gridview-how-to-display-row-details-window_1}}
 	public interface IDetailsProvider : INotifyPropertyChanged
@@ -43,9 +44,9 @@ The [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.c
 	}
 {{endregion}}
 
-As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface. Each time a row is selected in [RadGridView](http://www.telerik.com/products/silverlight/gridview.aspx), the [DataContext](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.datacontext.aspx) of the [DetailsProvider](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter-detailsprovider.html) changes. The [DetailsPresenter](http://www.telerik.com/help/silverlight/telerik.windows.controls.gridview-telerik.windows.controls.gridview.detailspresenter.html) listens for these property changes and updates as needed. We can listen for a [PropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) ourselves and position the window accordingly:
+As you can see, it implements the [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface. Each time a row is selected in RadGridView, the DataContext of the DetailsProvider changes. The DetailsPresenter listens for these property changes and updates as needed. We can listen for a PropertyChanged ourselves and position the window accordingly.
 
-#### __C#__
+#### __[C#] Example 3: Handling the PropertyChanged event__
 
 {{region cs-gridview-how-to-display-row-details-window_2}}
 	private void OnRowDetailsProviderPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -53,11 +54,11 @@ As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.micros
 	    if (e.PropertyName == "DataContext")
 	    {
 	        // This indicates that selection has changed in RadGridView.
-	        Club currentClub = this.clubsGrid.RowDetailsProvider.DataContext as Club;
-	        if (currentClub != null)
+	        var currentItem = this.clubsGrid.RowDetailsProvider.DataContext;
+	        if (currentItem != null)
 	        {
 	            // A row is selected.
-	            var row = this.clubsGrid.ItemContainerGenerator.ContainerFromItem(currentClub) as GridViewRow;
+	            var row = this.Grid.ItemContainerGenerator.ContainerFromItem(currentItem) as GridViewRow;
 	            Point newLocation = this.CalculateWindowLocation(row);
 	            // Show the window next to the row on the right
 	            this.window.Left = newLocation.X;
@@ -74,12 +75,15 @@ As you can see, it inherits from the [INotifyPropertyChanged](http://msdn.micros
 	
 	private Point CalculateWindowLocation(GridViewRow row)
 	{
-	    throw new NotImplementedException();
+            var lastCell = row.Cells[row.Cells.Count - 1];
+            GeneralTransform generalTransform = lastCell.TransformToVisual(this.LayoutRoot);
+            return generalTransform.Transform(new Point(lastCell.ActualWidth + 10, 0));
 	}
 {{endregion}}
 
-That’s about all you need to do. You can download a sample project from [here](http://blogs.telerik.com/Libraries/RossenHristov/RowDetailsInRadWindowSources.sflb).
+That's about all you need to do to display the row details in a separate window.
 
 ## See Also
 
- * [RowDetails - Overview]({%slug radgridview-row-details-overview%})[RadWindow - Overview](B911CE0E-1A02-44B8-BA96-5FCDF57E0E9B)
+* [RowDetails - Overview]({%slug radgridview-row-details-overview%})
+* [External Row Details]({%slug radgridview-row-details-external-row-details%})

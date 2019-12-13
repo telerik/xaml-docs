@@ -114,5 +114,5 @@ Here is an example that shows how the default input bindings can be cleared and 
 {{region radpdfviewer-keyboard-support_0}}
 	this.pdfViewer.Clear();
 	this.pdfViewer.KeyBindings.Add(new KeyBinding(this.pdfViewer.Commands.PageUpCommand, new KeyGesture(Key.PageUp)));
-	this.pdfViewer.KeyBindings.RegisterCommand(this.pdfViewer.Commands.PageDownCommand, Key.PageDown);
+	this.pdfViewer.KeyBindings.RegisterCommandDescriptor(this.pdfViewer.CommandDescriptors.PageDownCommandDescriptor, Key.PageDown);
 {{endregion}}

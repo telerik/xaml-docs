@@ -36,6 +36,18 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 #### __[XAML] Example 3: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Up or Down)__
 {{region radexpander-howto-animation_3}}
 	<telerik:RadExpander>
+		<telerik:RadExpander.Content >
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="20"/>
+					<RowDefinition Height="20"/>
+					<RowDefinition Height="20"/>
+				</Grid.RowDefinitions>
+				<TextBox Grid.Row="0">My content</TextBox>
+				<TextBox Grid.Row="1">My content</TextBox>
+				<TextBox Grid.Row="2">My content</TextBox>
+			</Grid>
+		</telerik:RadExpander.Content>
 		<telerik:AnimationManager.AnimationSelector>
 			<telerik:AnimationSelector>
 				<telerik:ExpanderExpandCollapseAnimation AnimationName="Expand" 
@@ -51,13 +63,25 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 	</telerik:RadExpander>
 {{endregion}}
 
-> The previous code snippet is applicable only when the ExpandState property of RadExpander is set to Up or Down.
+> The previous code snippet is applicable only when the __ExpandDirection__ property of __RadExpander__ is set to Up or Down. The default value is __Down__.
 
-When the ExpandState property is set to Right or Left you need to use different AnimationNames for the ExpanderExpandCollapseAnimation objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
+When the __ExpandDirection__ property is set to Right or Left you need to use different __AnimationNames__ for the __ExpanderExpandCollapseAnimation__ objects. The expand AnimationName is "ExpandHorizontal" and the collapse AnimationName is "CollapseHorizontal".
 
 #### __[XAML] Example 4: Change the speed of the animations using the SpeedRatio property (when ExpandDirection is Right or Left)__
 {{region radexpander-howto-animation_4}}
-	<telerik:RadExpander>
+	<telerik:RadExpander ExpandDirection="Left">
+		<telerik:RadExpander.Content >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="20"/>
+						<RowDefinition Height="20"/>
+						<RowDefinition Height="20"/>
+					</Grid.RowDefinitions>
+					<TextBox Grid.Row="0">My content</TextBox>
+					<TextBox Grid.Row="1">My content</TextBox>
+					<TextBox Grid.Row="2">My content</TextBox>
+				</Grid>
+		</telerik:RadExpander.Content>
 		<telerik:AnimationManager.AnimationSelector>
 			<telerik:AnimationSelector>
 				<telerik:ExpanderExpandCollapseAnimation AnimationName="ExpandHorizontal" 

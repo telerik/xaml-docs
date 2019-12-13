@@ -31,13 +31,13 @@ RadChartView provides a group of scatter series that can be plotted on two linea
 	         </DataTemplate>
 	      </telerik:ScatterPointSeries.PointTemplate>
 	
-	      <telerik:ScatterDataPoint.DataPoints>
+	      <telerik:ScatterPointSeries.DataPoints>
 		      <telerik:ScatterDataPoint XValue="2" YValue="1"/>
 		      <telerik:ScatterDataPoint XValue="5" YValue="2"/>
 		      <telerik:ScatterDataPoint XValue="6" YValue="4"/>
 		      <telerik:ScatterDataPoint XValue="3" YValue="2"/>
 		      <telerik:ScatterDataPoint XValue="4" YValue="3"/>
-	      </telerik:ScatterDataPoint.DataPoints>
+	      </telerik:ScatterPointSeries.DataPoints>
 	   </telerik:ScatterPointSeries>
 	</telerik:RadCartesianChart>
 {{endregion}}

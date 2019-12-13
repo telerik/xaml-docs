@@ -1,7 +1,7 @@
 ---
 title: Multiple Selection
 page_title: Multiple Selection
-description: Multiple Selection
+description: This article will describe the Multiple Selection feature of the RadComboBox. 
 slug: radcombobox-features-multiple-selection
 tags: multiple, selection
 published: True
@@ -10,19 +10,7 @@ position: 4
 
 # Multiple Selection
 
-With the R3 2016 release version of UI for WPF, multiple items can be selected from __RadComboBox__. 
-
-To enable this functionality, you have to set the  __AllowMultipleSelection__  property to __True__.
-
-This article will provide some detailed information about the available properties, commands and other features that are available when multiple selection is allowed:
-
-* [Properties](#properties)
-
-* [Commands](#commands)
-
-* [MultipleSelectionBoxTemplate](#multipleselectionboxtemplate)
-
-* [Keyboard support](#keyboard-support)
+With the R3 2016 release version of UI for WPF, multiple items can be selected from __RadComboBox__. To enable this functionality, you have to set the  __AllowMultipleSelection__  property to __True__. This article will provide some detailed information about the available properties, commands and other features that are available when multiple selection is allowed.
 
 ## Properties
 
@@ -38,7 +26,7 @@ This section will provide information about the following properties connected w
 
 ### AllowMultipleSelection
 
-Using the __AllowMultipleSelection__ you can enable or disable the multiple selection functionality of __RadComboBox__. This property is of type bool.It can be set either to __True__ or __False__. The default value is __False__. To enable the multiple selection the __AllowMultipleSelection__ should be set to __True__ as shown in __Example 1__:
+Using the __AllowMultipleSelection__ property you can enable or disable the multiple selection functionality of __RadComboBox__. The default value of this property is __False__. To enable the multiple selection, set the __AllowMultipleSelection__ property to __True__ as shown in __Example 1__.
 
 #### __[XAML] Example 1: Allowing multiple selection__
 
@@ -48,7 +36,7 @@ Using the __AllowMultipleSelection__ you can enable or disable the multiple sele
 
 ### MultipleSelectionSeparator
 
-When multiple items are selected in __RadComboBox__ they are separated from each other with a specific separator - the default separator is comma. To change that separator, the __MultipleSelectionSeparator__ property is used. This property is of type char, so any character could be set as a separator.  
+When multiple items are selected in __RadComboBox__ they are separated from each other with a specific separator: the default separator is a comma. To change that separator, use the __MultipleSelectionSeparator__ property. This property is of type char, so any character could be set as a separator.  
 
 __Example 2__ demonstrates how to change the default separator to a dash.
 
@@ -71,9 +59,9 @@ __Example 2__ demonstrates how to change the default separator to a dash.
 
 ### MultipleSelectionSeparatorStringFormat
 
-You can use the __MultipleSelectionSeparatorStringFormat__ string property for formatting the representation of the char that separates the selected items. By using it the current format of the char separator could easily be changed.
+You can use the __MultipleSelectionSeparatorStringFormat__ string property for formatting the representation of the char that separates the selected items. By using it, the current format of the char separator could easily be changed.
 
->important If the provided __MultipleSelectionSeparatorStringFormat__ is not a valid format a __FormatException__ will be thrown.
+>important If the provided __MultipleSelectionSeparatorStringFormat__ is not a valid format, a __FormatException__ will be thrown.
 
 __Example 3__ demonstrates how to set the __MultipleSelectionSeparatorStringFormat__ property.
 
@@ -93,19 +81,21 @@ __Example 3__ demonstrates how to set the __MultipleSelectionSeparatorStringForm
 
 ![](images/RadComboBox_Features_MultipleSelection_02.png)
 
->If __RadComboBox__ is __Editable__ the __MultipleSelectionSeparatorStringFormat__ will be applied only when the focus is not inside the input area of the control. If the input area is focused only the __MultipleSelectionSeparator__ will be applied and visualized.
+>If __RadComboBox__ is __Editable__, the __MultipleSelectionSeparatorStringFormat__ will be applied only when the focus is not inside the input area of the control. If the input area is focused, only the __MultipleSelectionSeparator__ will be applied and visualized.
 
 ### SelectedItems
 
-Using the __SelectedItems__ property you could get a collection of all the items that are currently selected - the property is read-only. This property is provided by the [__MultiSelector__](https://msdn.microsoft.com/en-us/library/system.windows.controls.primitives.multiselector.selecteditems(v=vs.110).aspx) class that is inherited by __RadComboBox__. 
+Using the __SelectedItems__ property, you could get a collection of all the items that are currently selected - the property is read-only. This property is provided by the [__MultiSelector__](https://msdn.microsoft.com/en-us/library/system.windows.controls.primitives.multiselector.selecteditems(v=vs.110).aspx) class that is inherited by __RadComboBox__. 
+
+> To learn how to bind the SelectedItems collection to a property in your ViewModel, check out the [SelectedItemsBinding](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/SelectedItemsBinding) SDK example.
 
 When multiple selection is allowed the __SelectedItem__, __SelectedValue__ and __SelectedIndex__ properties are being set as explained below:
 
-* __SelectedItem__ - The first item in the current selection that you could get or set. If there is no selection the returned value is null.
+* __SelectedItem__: The first item in the current selection that you could get or set. If there is no selection the returned value is null.
 
-* __SelectedValue__ - It gets or sets the value of the __SelectedItem__ that is obtained using the __SelectedValuePath__.
+* __SelectedValue__: It gets or sets the value of the __SelectedItem__ that is obtained using the __SelectedValuePath__.
 
-* __SelectedIndex__ - This is the index of the first item of the current selection. If the selection is empty negative one (-1) is returned.
+* __SelectedIndex__: This is the index of the first item of the current selection. If the selection is empty, negative one (-1) is returned.
 
 ## Commands
 
@@ -119,7 +109,7 @@ With multiple selection the following commands could be executed:
 
 ### SelectAll
 
-The __SelectAll__ command is part of the static class __RadComboBoxCommands__. After executing it all items in __RadComboBox__ will be selected. 
+The __SelectAll__ command is part of the static class __RadComboBoxCommands__. After executing it, all items in __RadComboBox__ will be selected. 
 
 In __Example 4__ a __Button__ is linked to the __RadComboBoxCommands.SelectAll__ command - after execution all items in __RadComboBox__ get selected:
 
@@ -169,9 +159,9 @@ __Example 5__ demonstrates how __UnselectAll__ command could be attached to the 
 
 ### ToggleSelectAll
 
-Using the __ToggleSelectAll__ command you could switch between selection and deselection of the items - it selects/deselects all of the items in the multiple selection __RadComboBox__ depending on the command parameter.
+Using the __ToggleSelectAll__ command, you could switch between selection and deselection of the items - it selects/deselects all of the items in the multiple selection __RadComboBox__ depending on the command parameter.
 
-__Example 6__ demonstrates how __ToggleSelectAll__ command could be attached and executed through __CheckBox__.
+__Example 6__ demonstrates how __ToggleSelectAll__ command could be attached and executed through a __CheckBox__.
 
 #### __[XAML] Example 6: ToggleSelectAll command__
 
@@ -187,23 +177,23 @@ __Example 6__ demonstrates how __ToggleSelectAll__ command could be attached and
 	</telerik:RadComboBox>
 {{endregion}}
 
-#### __Figure 5: After checking the CheckBox with ToggleSelectAll command__
+#### __Figure 6: After checking the CheckBox with ToggleSelectAll command__
 
 ![](images/RadComboBox_Features_MultipleSelection_06.png)
 
-#### __Figure 6: After unchecking the CheckBox with ToggleSelectAll command__
+#### __Figure 7: After unchecking the CheckBox with ToggleSelectAll command__
 
 ![](images/RadComboBox_Features_MultipleSelection_07.png)
 
 ## MultipleSelectionBoxTemplate
 
-The __MultipleSelectionBoxTemplate__ gives you the ability to define a separate template for the selected items of __Non-Editable RadComboBox__ when multiple selection is allowed.
+The __MultipleSelectionBoxTemplate__ gives you the ability to define a separate template for the selected items of a __Non-Editable RadComboBox__ when multiple selection is allowed.
 
->important The __MultipleSelectionBoxTemplate__ is used only in __Non-Editable RadComboBox__.
+>important The __MultipleSelectionBoxTemplate__ is used only in a __Non-Editable RadComboBox__.
 
-The following steps demonstrate how to apply the __MultipleSelectionBoxTemplate__ to __RadComboBox__.
+The following steps demonstrate how to apply the __MultipleSelectionBoxTemplate__ to a __RadComboBox__.
 
-You need to create a custom __DataTemplate__ as shown in __Example 7__:
+You can create a custom __DataTemplate__ as shown in __Example 7__.
 
 #### __[XAML] Example 7: Custom DataTemplate__
 
@@ -215,7 +205,7 @@ You need to create a custom __DataTemplate__ as shown in __Example 7__:
 	</UserControl.Resources>
 {{endregion}}
 
-The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate__ property of __RadComboBox__ as demonstrated in __Example 8__:
+The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate__ property of __RadComboBox__ as demonstrated in __Example 8__.
 
 #### __[XAML] Example 8: Set the MultipleSelectionBoxTemplate__
 
@@ -229,7 +219,7 @@ The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate
 	</telerik:RadComboBox>
 {{endregion}}
 
-#### __Figure 7: RadComboBox after applying MultipleSelectionBoxTemplate__
+#### __Figure 8: RadComboBox after applying MultipleSelectionBoxTemplate__
 
 ![](images/RadComboBox_Features_MultipleSelection_08.png)
 
@@ -239,11 +229,11 @@ The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate
 
 This section describes the specific keyboard shortcuts used by __RadComboBox__ when multiple selection is allowed.
 
-* Space - Selects the current highlighted item when __RadComboBox__ is __Non-Editable__.
+* Space:  Selects the current highlighted item when __RadComboBox__ is __Non-Editable__.
 
-* Enter - Selects the current highlighted item both when __RadComboBox__ is __Editable__ or __Non-Editable__.
+* Enter:  Selects the current highlighted item both when __RadComboBox__ is __Editable__ or __Non-Editable__.
 
-* Back - Deselects the current highlighted item when __RadComboBox__ is __Non-Editable__.
+* Back: Deselects the current highlighted item when __RadComboBox__ is __Non-Editable__.
 
 ## See Also
 

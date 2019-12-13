@@ -35,6 +35,8 @@ __Example 1__ demonstrates how to navigate to another view in the RadRadialMenu 
 
 When the command executes the RadialMenu will navigate to the item passed as a parameter to the constructor of the NavigateContext class.
 
+>tip When the RadRadialMenu is defined as a context menu, you can use the commands exposed through the [RadialMenuCommands]({%slug radradialmenu-features-contextmenu%}#using-the-static-radialmenucommands-class) class to show/close it.
+
 ## Custom Commands
 
 __RadRadialMenu__ exposes a commands collection that allows you to register custom commands with each control's instance through the __RadRadialMenu.Commands__ property.        
@@ -86,7 +88,7 @@ The next example will show how to implement custom command that will be executed
 
 	#### __[XAML] Example 3: Setting the custom command__
 
-	{{region xaml-radradialmenu-commands-radialmenu_0}}
+	{{region xaml-radradialmenu-commands-radialmenu_3}}
 		<telerik:RadRadialMenu>
 		    <telerik:RadRadialMenu.Commands>
 		        <local:CustomMenuCommand />

@@ -12,17 +12,17 @@ position: 5
 
 __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more detailed look over the visual elements of the control can be found in the [Styling and Appearance]({%slug virtualgrid-styling-and-appearance%}) topic. The API of the control provides the __HeaderValueNeeded__ and __HeaderSizeNeeded__ events for setting the values and size of its headers. The properties that the event arguments expose are listed below.
 
-### HeaderValueNeeded
+## HeaderValueNeeded
 
 >important If the default __DataProvider__ is used for populating the control with data, it handles the __HeaderValueNeeded__ event. In order the default behavior to be altered, a [Custom Data Provider]({%slug virtualgrid-custom-dataprovider%}) can be utilized.
 
-* __HeaderOrientation__: Enumeration through which has two values: __Horizontal__ and __Vertical__. The first one sets the value to the Row Header, whereas the second one sets the value to the Column Header.
+* __HeaderOrientation__: Enumeration which has two values: __Horizontal__ and __Vertical__. If the HeaderOrientation is Horizontal, the event is thrown for a Row Header, whereas if it is Vertical, it is thrown for a Column Header.
 
 * __Index__: Provides information regarding the index of the Header.
 
 * __Value__: The actual value to be applied to the Header.
 
-### HeaderSizeNeeded
+## HeaderSizeNeeded
 
 * __HeaderOrientation__: Enumeration similar to the one provided from the event arguments of the __HeaderValueNeeded__ event.
 
@@ -54,6 +54,8 @@ __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more
 #### __Figure 1: RadVirtualGrid with custom size for the headers__
 
 ![RadVirtualGrid with custom size for the headers](images/RadVirtualGrid_Features_Headers01.png)
+
+>tip To learn how to conditionally style the cells (including the header cells), you can read the [Conditional Styling]({%slug virtualgrid-conditional-styling%}).
 
 ## See Also
 

@@ -142,9 +142,9 @@ RibbonWindowMinimize | Minimize
 RibbonWindowRestoreDown | Restore Down
 RibbonViewExpandRibbon | Expand the Ribbon
 RibbonViewHelp | Help
-RibbonViewLayoutModeButtonContent | Simplified Ribbon
+{% if site.site_name == 'WPF' %}RibbonViewLayoutModeButtonContent | Simplified Ribbon{% endif %}
 
 ## See Also
 
 * [Localization]({%slug common-localization%})
-* [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%})
+{% if site.site_name == 'WPF' %}* [Simplified Ribbon]({%slug radribbonview-simplified-ribbon%}){% endif %}

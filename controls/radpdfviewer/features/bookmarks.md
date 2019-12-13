@@ -49,6 +49,12 @@ The PDF format allows you to specify how the document should be displayed when o
 * **UseNone**: Nothing additional except the document is visible. 
 * **UseBookmarks**: Document bookmarks are visible.
 
+## Obtaining Bookmarks
+
+You have access to the bookmarks in a document through the Bookmarks collection exposed by RadFixedDocument. This collection can be used to iterate the bookmarks and find a specific one.
+
+>If you need to modify the collection of bookmarks or a particular bookmark, you can use the [API exposed by PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/bookmarks).
+
 
 ## Commands
 

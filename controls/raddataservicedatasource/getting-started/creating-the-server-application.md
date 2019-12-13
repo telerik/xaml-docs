@@ -24,6 +24,5 @@ Creating and configuring __WCF Data Services__ is the beyond the scope of the cu
 
 ## See Also
 
-[Creating the Client Application]({%slug raddataservicedatasource-getting-started-creating-the-client-application%})
-
-[Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})
+* [Creating the Client Application]({%slug raddataservicedatasource-getting-started-creating-the-client-application%})
+* [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})

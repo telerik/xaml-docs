@@ -90,7 +90,7 @@ cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
 getting-started/first-steps-sl,
 getting-started/explore-control-features-sl]
 
-exclude_navigation: [knowledge-base/*, controls/radchart/*]
+exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
 navigation:
 ## List your directory names and order here, like this:
@@ -320,7 +320,9 @@ navigation:
         title: Styles and Templates
         position: 9
     controls/radchartview3d/features/behaviors:
-        title: Behaviors     
+        title: Behaviors  
+    controls/radchartview/howto:
+        title: How To 
     "*area-series":
         title: Area Series
     "*line-series":
@@ -339,6 +341,15 @@ navigation:
         title: RadFluidContentControl
     controls/radcloudupload:
         title: RadCloudUpload
+    controls/radcloudupload/features:
+        title: Features
+        position: 5
+    controls/radcloudupload/styles-and-templates:
+        title: Styles and Templates
+        position: 6
+    controls/radcloudupload/how-to:
+        title: How To
+        position: 7
     controls/radcoloreditor:
         title: RadColorEditor
     controls/radcoloreditor/overview:
@@ -642,97 +653,10 @@ navigation:
         position: 3
     "*radspreadprocessing":
         title: RadSpreadProcessing
-    controls/radspreadprocessing/working-with-worksheets:
-        title: Worksheets
-        position: 4
-    controls/radspreadprocessing/working-with-rows-and-columns:
-        title: Rows and Columns
-        position: 5
-    controls/radspreadprocessing/working-with-cells:
-        title: Cells
-        position: 6
-    controls/radspreadprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 7
-    controls/radspreadprocessing/features:
-        title: Features
-        position: 8
-    controls/radspreadprocessing/formats-and-conversion/xlsx:
-        title: Xlsx
-        position: 2
-    controls/radspreadprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 3
-    controls/radspreadprocessing/formats-and-conversion/csv:
-        title: Csv
-        position: 4
-    controls/radspreadprocessing/formats-and-conversion/txt:
-        title: Txt
-        position: 5
-    controls/radspreadprocessing/features/fill-data-automatically:
-        title: Fill Data Automatically
-        position: 0
-    controls/radspreadprocessing/features/formulas:
-        title: Formulas
-        position: 1
-    controls/radspreadprocessing/features/protection:
-        title: Protection
-        position: 2
-    controls/radspreadprocessing/features/styling:
-        title: Styling
-        position: 3
     "*radwordsprocessing":
         title: RadWordsProcessing
-    controls/radwordsprocessing/model:
-        title: Model
-        position: 4
-    controls/radwordsprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 5
-    controls/radwordsprocessing/editing:
-        title: Features
-        position: 6
-    controls/radwordsprocessing/concepts:
-        title: Concepts
-        position: 7
-    controls/radwordsprocessing/formats-and-conversion/docx:
-        title: Docx
-        position: 1
-    controls/radwordsprocessing/formats-and-conversion/rtf:
-        title: Rtf
-        position: 2
-    controls/radwordsprocessing/formats-and-conversion/html:
-        title: Html
-        position: 3
-    controls/radwordsprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 4	
-    controls/radwordsprocessing/formats-and-conversion/plain-text:
-        title: Plain text
-        position: 5
-    controls/radwordsprocessing/concepts/fields:
-        title: Fields
-        position: 0
     "*radpdfprocessing":
         title: RadPdfProcessing
-    controls/radpdfprocessing/model:
-        title: Model
-        position: 4
-    controls/radpdfprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 5
-    controls/radpdfprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 0
-    controls/radpdfprocessing/formats-and-conversion/plain-text:
-        title: Plain text
-        position: 0
-    controls/radpdfprocessing/editing:
-        title: Editing
-        position: 6
-    controls/radpdfprocessing/concepts:
-        title: Concepts
-        position: 7
     "*radrichtextbox":
         title: RadRichTextBox		
     controls/radrichtextbox/getting-started:
@@ -833,6 +757,8 @@ navigation:
     controls/radfiledialogs/dialog-controls:
         title: Dialog Controls
         position: 4
+    controls/radfilepathpicker:
+        title: RadFilePathPicker    
     controls/radgridview:
         title: RadGridView
     controls/radgridview/changes-and-backward-compability:
@@ -935,25 +861,27 @@ navigation:
         position: 26
     controls/raddataservicedatasource:
         title: RadDataServiceDataSource
-    controls/raddataservicedatasource/crud:
-        title: CRUD
-    controls/raddataservicedatasource/faq:
-        title: FAQ
+    controls/raddataservicedatasource/getting-started:
+        title: Getting Started
+        position: 1
     controls/raddataservicedatasource/filtering:
         title: Filtering
-    controls/raddataservicedatasource/grouping:
-        title: Grouping
-    controls/raddataservicedatasource/loading:
-        title: Loading
-    controls/raddataservicedatasource/mvvm:
-        title: MVVM
-    controls/raddataservicedatasource/paging:
-        title: Paging
+        position: 7
     controls/raddataservicedatasource/sorting:
         title: Sorting
-    controls/raddataservicedatasource/how-to:		
-        title: How To		
+        position: 8
+    controls/raddataservicedatasource/paging:
+        title: Paging
         position: 9
+    controls/raddataservicedatasource/loading:
+        title: Loading
+        position: 10
+    controls/raddataservicedatasource/faq:
+        title: FAQ
+        position: 11
+    controls/raddataservicedatasource/how-to:		
+        title: How To
+        position: 12
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -1002,7 +930,15 @@ navigation:
     controls/radchat/chat-items/messages/card-messages:
         title: Cards
     controls/radwebcam:
-        tile: RadWebCam
+        title: RadWebCam
+    controls/radsyntaxeditor:
+        title: RadSyntaxEditor
+    controls/radsyntaxeditor/features:
+        title: Features
+        position: 7
+    controls/radsyntaxeditor/features/taggers:
+        title: Taggers
+        position: 9
     controls/radtaskboard:
         tile: RadTaskBoard
     controls/radtaskboard/features/column:
@@ -1027,10 +963,7 @@ navigation:
         position: 2
     "*changes-and-backward-compatibility":
         title: Changes and Backward Compatibility
-        position: 3
-    "*changes-and-backwards-compatibility":
-        title: Changes and Backward Compatibility
-        position: 3
+        position: 3    
     "*features":
         title: Features
         position: 4
@@ -1052,6 +985,9 @@ navigation:
     "*events":
         title: Events
         position: 80
+    "netcore":
+        title: .NET Core Support
+        position: 8
     "api-reference":
         title: "Api Reference"
         position: 23
@@ -1138,10 +1074,7 @@ navigation:
         position: 9
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 10
-    "xamlflix-step-by-step-guide":
-        title: "XAMLflix Step-by-Step Guide"
-        position: 11
+        position: 10   
 ## Common End
 
 ## Api Reference Start
@@ -3350,8 +3283,7 @@ intro_columns:
     title: "Data Visualization"
     items:
       "Barcode": "radbarcode-overview"
-      "BulletGraph": "radbulletgraph_overview"
-      "Chart": "radchart-overview"
+      "BulletGraph": "radbulletgraph_overview"      
       "ChartView": "radchartview-overview"
       "ChartView3D": "radchartview3d-overview"
       "DataBar": "raddatabar-overview"
@@ -3383,11 +3315,13 @@ intro_columns:
       "Slider": "radslider-overview"
       "SpellChecker": "radspellchecker-overview"
       "Spreadsheet": "radspreadsheet-overview"
+      "SyntaxEditor": "radsyntaxeditor-overview"
       "WatermarkTextBox": "radwatermarktextbox-overview"
   -
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "WebCam": "radwebcam-overview"
 -
   categories:
   -
@@ -3424,6 +3358,7 @@ intro_columns:
     items:
       "CloudUpload": "radcloudupload-overview"
       "FileDialogs": "radfiledialogs-overview"
+      "FilePathPicker": "radfilepathpicker-overview"
       "PdfProcessing": "radpdfprocessing-overview"
       "PdfViewer": "radpdfviewer-overview"
       "SpreadProcessing": "radspreadprocessing-overview"

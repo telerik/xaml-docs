@@ -239,6 +239,26 @@ To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties o
 	</telerik:RadCartesianChart>
 {{endregion}}
 
+## Style the PanZoomBar
+
+You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBar__. The applied style is individual for each axis.
+
+#### __[XAML] Example 13: Style the PanZoomBar on the VerticalAxis__
+{{region radchart-features-scrollandzoom_12}}
+	<telerik:RadCartesianChart.VerticalAxis>
+        <telerik:LinearAxis>
+            <telerik:LinearAxis.PanZoomBarStyle>
+                <Style TargetType="telerik:PanZoomBar">
+                    <Setter Property="Background" Value="GreenYellow"/>
+                </Style>
+            </telerik:LinearAxis.PanZoomBarStyle>
+        </telerik:LinearAxis>
+    </telerik:RadCartesianChart.VerticalAxis>
+{{endregion}}
+
+#### __Figure 4: Stylized PanZoomBar on the VerticalAxis__
+![](images/radchart-features-scrollandzoom-4.png)
+
 ## See Also 
 
 * [Getting Started]({%slug radchartview-introduction%})

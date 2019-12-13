@@ -381,3 +381,6 @@ You can also invoke the execution method of the command from code-behind:
 {{region raddiagram-features-image-export-24}}
 	Telerik.Windows.Controls.Diagrams.DiagramCommands.Export.Execute("bmp", Nothing)		  
 {{endregion}}
+
+## See Also
+* [Export to High Quality Image Example](https://github.com/telerik/xaml-sdk/tree/master/Diagram/ExportToHighQualityImage)

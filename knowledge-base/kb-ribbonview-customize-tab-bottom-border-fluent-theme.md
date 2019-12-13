@@ -35,7 +35,7 @@ To customize RadRibbonTab in code, follow the next few steps:
 3. Call the FirstOrDefault() method (from the System.Linq namespace) to find the Border with x:Name="SelectedVisual". This is the element presenting the border around the selected tab.
 4. Set the BorderBrush and BorderThicknes properties of the Border control.
 
-#### XAML
+#### __[XAML]__
 {{region kb-ribbonview-customize-tab-bottom-border-fluent-theme-0}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonTab Header="Home" Loaded="RadRibbonTab_Loaded" />
@@ -44,7 +44,7 @@ To customize RadRibbonTab in code, follow the next few steps:
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### C#
+#### __[C#]__
 {{region kb-ribbonview-customize-tab-bottom-border-fluent-theme-1}}
 	private void RadRibbonTab_Loaded(object sender, RoutedEventArgs e)
 	{

@@ -25,7 +25,7 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 #### __[C#] Example 1: Import HTML file__
 
 {{region cs-radrichtextbox-import-export-html-htmlformatprovider_0}}
-    using (Stream input = File.Create(@"Sample.html"))
+    using (Stream input = File.OpenRead(@"Sample.html"))
     {
         HtmlFormatProvider provider = new HtmlFormatProvider();
         RadDocument document = provider.Import(input);

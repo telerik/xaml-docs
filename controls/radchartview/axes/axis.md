@@ -1,7 +1,7 @@
 ---
 title: Axis
 page_title: Axis
-description: Axis
+description: This article outlines the common functionality for the different types of axes available in the RadChartView suite.
 slug: radchartview-axes-axis
 tags: axis
 published: True
@@ -20,7 +20,11 @@ Here are the __common properties__ for all kinds of axes:
 
 * __LabelInterval__: Specifies the value indicating that only one out of n-axis labels should be visible, where n is the value of the property.        
 
-* __LabelFormat__: Format the text in the axis labels by specified [Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).        
+* __LabelFormat__: Format the text in the axis labels by specified [Standard](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) or [Custom Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx).  
+
+* __LabelTemplate__: The System.Windows.DataTemplate used to visualize axis labels.
+
+* __LabelStyle__: The System.Windows.Style to be applied to the default System.Windows.Controls.TextBlock instance created when the __LabelTemplate__ property is not set. The __TargetType__ of this style should be __TextBlock__.
 
 * __MajorStep__ (available for LinearAxis): Specify a step for the major ticks that determines at which values will major ticks be displayed. It is most commonly used with __Minimum__ and __Maximum__ properties.        
 
@@ -29,7 +33,6 @@ Here are the __common properties__ for all kinds of axes:
 * __MajorTickOffset__: As its name implies, __MajorTickOffset__ offsets the major ticks with n where n is the value of the property. For example, a LinearAxis with MajorStep="2" and MajorTickOffset="3" will have its values start at 6. (6, 8, 10 ... etc.)        
 
 * __MajorTickInterval__ (available for CategoricalAxis and DateTimeCategoricalAxis): Defines a value indicating that one axis label will be common for n number of Ticks where n is the value of the property.        
-
 * __LabelRotationAngle__: Specifies the value indicating the rotation angle for the X-axis labels. Use when label texts are long and are overlapping each other.        
 
 * __LastLabelVisibility__: Specifies whether the last label should be Clipped, Visible or Hidden.        
@@ -46,10 +49,12 @@ Here are the __common properties__ for all kinds of axes:
 
 * __TickOrigin__ (available in LinearAxis and DateTimeContinuousAxis): Gets or sets a value that indicates where the ticks originate. The positions of the ticks are determined based on the combination of the __MajorStep__ and __TickOrigin__ values. The axis will generate the ticks and labels in a way so that a label is positioned at the given TickOrigin.
 
-The axis supports arbitrary visualization of the ticks and labels through DataTemplate objects and also supports a dash array and a stroke color for the visualization of the axis line. For increased flexibility, the label templates can be selected dynamically with a template selector, as shown in the following code snippets.        
+* __DesiredTickCount__ (available for LinearAxis and LogarithmicAxis): This property specifies the desired number of ticks to be drawn on the axis. Note, that the actual number of ticks may be be slightly higher or lower, since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if theDesiredTickCount is 7, then 6 or 8 ticks may be drawn, depending on the range of the axis.
 
-#### __XAML__
-{{region radchart-axes-axis_0}}
+The axis supports arbitrary visualization of the ticks and labels through DataTemplate objects and also supports a dash array and a stroke color for the visualization of the axis line. For increased flexibility, the label templates can be selected dynamically with a template selector, as shown in __Examples 1 and 2__.        
+
+#### __[XAML] Example 1: Setting LabelTemplateSelector of a LinearAxis__
+{{region xaml-radchart-axes-axis_0}}
 	<Grid.Resources>
 	   <DataTemplate x:Key="GrayTemplate">
 	       <Border BorderThickness="2"
@@ -64,7 +69,7 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 	       </Border>
 	   </DataTemplate>
 	
-	   <local:BinaryTemplateSelector x:Name="Selector"
+	   <local:BinaryTemplateSelector x:Key="Selector"
 	                                 Template1="{StaticResource GrayTemplate}"
 	                                 Template2="{StaticResource WhiteTemplate}"/>
 	</Grid.Resources>
@@ -90,8 +95,8 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __C#__
-{{region radchart-axes-axis_1}}
+#### __[C#] Example 2: BinaryTemplateSelector Definition__
+{{region cs-radchart-axes-axis_1}}
 	public class BinaryTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate Template1
@@ -114,8 +119,8 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radchart-axes-axis_2}}
+#### __[VB.NET] Example 2: BinaryTemplateSelector Definition__
+{{region vb-radchart-axes-axis_2}}
 	Public Class BinaryTemplateSelector
 	    Inherits DataTemplateSelector
 	    Private _template1 As DataTemplate
@@ -148,7 +153,8 @@ The axis supports arbitrary visualization of the ticks and labels through DataTe
 	End Class
 {{endregion}}
 
-![](images/radchartview-chart_axes_axisconfig.png)
+#### __Figure 1: Result from Examples 1 and 2__
+![RadChartView Horizontal Axis with LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
 
 The linear axis is a plain numerical axis, that is, the LinearAxis class inherits from __NumericalAxis__ and NumericalAxis itself inherits from Axis. NumericalAxis defines only a few features on top of the abstract Axis class.
 

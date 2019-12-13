@@ -51,6 +51,8 @@ You can also refer to the documentation on [Implicit Styles and NoXaml binaries]
 
 >tipYou can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
 
+* When you have child RadGridViews placed in [RowDetails]({%slug radgridview-row-details-template%}) or a [Hierarchy structure]({%slug gridview-basic-hierarchies%}), make sure to specify fixed dimensions for them (Height/MaxHeight and Width/MaxWidth). Otherwise their [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
+
 ## See Also
 
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})

@@ -176,11 +176,11 @@ Next we will define a RadRibbonView and set the DataContext to an instance of ou
 
 ## SimplifiedRibbon MVVM
 
-Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) scenario is as simple as setting the __SimplifiedItemTemplate__ property (instead of the __ItemTemplate__) to the corresponding datatemplate and setting the __LayoutMode__ property to __Simplified__. 
+Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) scenario is as simple as setting the __SimplifiedItemTemplate__ property (along with the __ItemTemplate__) to the corresponding DataTemplate and setting the __LayoutMode__ property to __Simplified__. 
 
 #### __[XAML] Example 4: SimplifiedRibbon MVVM__
 {{region xaml-howto-use-mvvm-in-radribbonview-3}}
-      <telerik:RadRibbonView ApplicationName="MVVM Example"  Title="SimplifiedRibbon" ItemsSource="{Binding Tabs}" SimplifiedItemTemplate="{StaticResource TabTemplate}" LayoutMode="Simplified"/>
+      <telerik:RadRibbonView ApplicationName="MVVM Example"  Title="SimplifiedRibbon" ItemsSource="{Binding Tabs}" ItemTemplate="{StaticResource TabTemplate}" SimplifiedItemTemplate="{StaticResource TabTemplate}" LayoutMode="Simplified"/>
 {{endregion}}
 
 #### __Figure 2: SimplifiedRibbon MVVM in the Office2016 theme__
@@ -188,7 +188,6 @@ Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) sce
 
 > Note, that __Example 4__ uses exactly the same setup as __Example 3__.
 
-{% endif %}
-
 ## See Also
 * [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%})
+{% endif %}

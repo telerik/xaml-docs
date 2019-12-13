@@ -103,7 +103,7 @@ LayoutControls	|	Telerik.Windows.Controls
 
 ## See Also
 
- * [Adding UI for Silverlight to the Visual Studio 2012 Toolbox]({%slug installation-adding-to-vs-2012-toolbox%})
+ * [Adding UI for Silverlight to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%})
 
  * [Creating an Application and Adding UI for Silverlight]({%slug installation-adding-to-application-create-application-and-adding-control%})
 

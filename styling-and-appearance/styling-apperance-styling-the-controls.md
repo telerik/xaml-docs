@@ -10,7 +10,9 @@ position: 1
 
 # Styling the Controls 
 
-Customizing the look and feel of the **Telerik** controls is easy and intuitive due to the provided **theming** mechanism. An important step to remember is to always [base your custom styles](#basing-a-custom-style-on-a-theme-default-style) on the theme default one when using the **NoXAML** binary files. 
+Customizing the look and feel of the **Telerik** controls, when using the **NoXAML** binary files, is easy and intuitive due to the provided **theming** mechanism. An important step to remember is to always [base your custom styles](#basing-a-custom-style-on-a-theme-default-style) on the default one for the theme. 
+
+>important This article is relevant, if you are using [implicit styling]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) with the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) binaries. If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach with [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls, check out the following articles: {% if site.site_name == 'WPF' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}), [Setting a Theme on a Custom Control]({%slug styling-apperance-custom-control%}).{% endif %}{% if site.site_name == 'Silverlight' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme%}), [Setting a Theme on a Custom Control]({%slug styling-apperance-custom-control%}).{% endif %}
 
 ## Basing a Custom Style on a Theme Default Style
 
@@ -72,8 +74,6 @@ You will then need to set the control's **DefaultStyleKey**.
         End Sub
     End Class
 {{endregion}}
-
->You might also have a look at the [Setting a Theme on a Custom Control](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/styling-apperance-custom-control) article.
 
 ## Control Styles Dependencies
 

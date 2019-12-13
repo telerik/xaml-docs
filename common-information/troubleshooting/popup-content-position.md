@@ -46,11 +46,9 @@ To change the handedness in code you can use the SystemParameters static class a
 		var ifLeft = SystemParameters.MenuDropAlignment;
 		if (ifLeft)
 		{
-			// change to false
 			var t = typeof(SystemParameters);
 			var field = t.GetField("_menuDropAlignment", BindingFlags.NonPublic | BindingFlags.Static);
 			field.SetValue(null, false);
-			ifLeft = SystemParameters.MenuDropAlignment;
 		}
 	}
 {{endregion}}

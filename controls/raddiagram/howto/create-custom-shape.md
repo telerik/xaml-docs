@@ -20,7 +20,7 @@ Let's take this step by step:
 
 * First you need to create a custom control. In order to do so you can use the __Visual Studio -> Add New Item...__ dialog to add {% if site.site_name == 'Silverlight' %}__Silverlight Templated Control__{% endif %}{% if site.site_name == 'WPF' %}__WPF Custom Control__{% endif %}
 
-	![Rad Diagram How To Custom Shape New Item](images/RadDiagram_HowTo_CustomShape_NewItem.png)
+	![Rad Diagram How To Custom Shape New Item](images/RadDiagram_HowTo_CustomShape_NewItem_V2.png)
 
 	Name the new control *CustomShape* and click OK. This action will create two new files in your application - a class file and a Generic.xaml file with the default style of your custom control.
 	

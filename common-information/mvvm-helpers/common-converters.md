@@ -178,9 +178,10 @@ The converter applies __Thickness__ to a property of type __Thickness__ based on
 		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
 	{{endregion}}	
 
+{% if site.framework_name == 'WPF' %}
 ## StringToGlyphConverter
 
-The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts it to the corresponding `char` represantation. The converter is useful when you store the glyph string value in your model and want to data bind it to the UI.
+The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts it to the corresponding `char` representation. The converter is useful when you store the glyph string value in your model and want to data bind it to the UI.
 
 > See all available glyphs in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
@@ -200,6 +201,9 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 {{region xaml-common-converters_8}}
 	<telerik:RadGlyph Glyph="{Binding GlyphString, Converter={StaticResource StringToGlyphConverter}}" />	
 {{endregion}}
+
+> StringToGlyphConverter is available since R1 2019. If you use a previous version you can implement the converter on your own. See its implementation in the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}#binding-glyphs) article.
+{% endif %}
 
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

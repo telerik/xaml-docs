@@ -46,4 +46,4 @@ __To resolve this__ you can use the following steps.
 
 ## See Also
 * [Missing Controls in the UI]({%slug troubleshooting-invisible-controls%})
-* [Popup Content Position]({%slug troubleshooting-popup-content-position%})
+{% if site.framework_name == 'WPF' %}* [Popup Content Position]({%slug troubleshooting-popup-content-position%}){% endif %}

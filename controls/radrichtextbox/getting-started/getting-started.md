@@ -24,13 +24,16 @@ __RadRichTextBox__ is a control that allows you to display and edit rich text co
 
 ## Assembly References
 
+{% if site.framework_name == 'WPF' %}
+>The references required to use RadRichTextBox in a **.NET Core** project have been united. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
+{% endif %}
+
 The minimal set of references you need to have in your application in order to have a **RadRichTextBox** are as follows:
 
 * **Telerik.Windows.Controls**
 * **Telerik.Windows.Data**
 * **Telerik.Windows.Documents**
 * **Telerik.Windows.Documents.Core**
-{% if site.site_name == 'WPF' %}* **Telerik.Windows.Documents.Flow**{% endif %}
 * **System.ComponentModel.Composition**
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
@@ -225,7 +228,7 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
 {{region radrichtextbox-getting-started_4}}
 
     RadDocument document;
-    DocxFormatProvider provider = new DocxFormatProvider();
+    Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.new DocxFormatProvider();
 
     using (Stream stream = Application.GetResourceStream(GetResourceUri("sampleDocument.docx")).Stream)
     {
@@ -241,7 +244,7 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
 {{region radrichtextbox-getting-started_5}}
 
 	Dim document As RadDocument
-	Dim provider As New DocxFormatProvider()
+	Dim provider As New Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider()
 
 	Using stream As Stream = Application.GetResourceStream(GetResourceUri("sampleDocument.docx")).Stream
 		document = provider.Import(stream)

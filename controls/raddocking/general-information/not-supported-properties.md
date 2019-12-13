@@ -88,6 +88,8 @@ Properties that are __not supported__:
 
 * __ItemContainerStyleSelector__
 
+* __CloseTabsOnMouseMiddleButtonDown__
+
 * __DisplayMemberPath__
 
 __Description__: These properties are directly inherited from __ItemsControl__ property and the use of __ItemsSource__ property is __not supported__.

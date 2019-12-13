@@ -30,7 +30,7 @@ By default, when not all items in the __ToolBar__ are visible, the __OverflowBut
 
 The __RadToolBar__ also enables you to apply conditional styling to its items. The [ToolBarContainerStyleSelector](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.toolbarcontainerstyleselector) class allows you to easily specify different styles for the different control types by providing a collection of [ToolBarContainerStyle](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.toolbarcontainerstyle) objects.
 
-There are also pre-defined styles for many of the standart controls – Button, RadButton, ToggleButton, RadToggleButton, CheckBox, RadioButton, RadRadioButton, RadDropDownButton, TextBox, TextBlock, RadToolBarSeparator{% if site.site_name == 'Silverlight' %}, RadSeparator{% endif %}.
+There are also pre-defined styles for many of the standard controls – Button, RadButton, ToggleButton, RadToggleButton, CheckBox, RadioButton, RadRadioButton, RadDropDownButton, TextBox, TextBlock, RadToolBarSeparator{% if site.site_name == 'Silverlight' %}, RadSeparator{% endif %}.
 
 ## See Also  
  * [Getting Started]({%slug radtoolbar-getting-started%})

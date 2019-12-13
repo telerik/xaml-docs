@@ -12,7 +12,7 @@ position: 9
 
 
 
-__RadChart__ supports format expressions, which you can use to format the series items labels, axes labels and tooltip texts. Besides the [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx), the [custom](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) numeric and the [date/time](http://msdn.microsoft.com/en-us/library/97x6twsz.aspx) format strings, __RadChart__ supports chart specific format mechanism that allows you to insert context-specific data. To do that, use one of the following tokens:
+__RadChart__ supports format expressions, which you can use to format the series items labels, axes labels and tooltip texts. Besides the [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx), the [custom](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) numeric and the [date/time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) format strings, __RadChart__ supports chart specific format mechanism that allows you to insert context-specific data. To do that, use one of the following tokens:
 
 |Token|    Use for|    Value|
 |-----|-----------|---------|

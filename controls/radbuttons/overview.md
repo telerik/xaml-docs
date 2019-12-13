@@ -20,7 +20,7 @@ Thank you for choosing Telerik __RadButtons__!
 
 __RadButtons__ for {{ site.framework_name }} is a set of customizable buttons allowing you to build complex forms and to easily manage the user input.  You can style the control consistently with the other controls from UI for {{ site.framework_name }} and get advantage of the Command support that RadButtons provide.
 
-![](images/ButtonsOverview_01.png)
+![](images/ButtonsOverview_02.png)
 
 # Key Features
 
@@ -31,6 +31,8 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 * __Split Button__: Extends the __DropDown Button's__ functionality with an action area like in a standard button. The button implements the __IsChecked__ state, too. Read more about this in the [Split Button]({%slug radbuttons-features-split-button%}) article.
 
 * __Toggle Button__: Mimics the functionality of a check box, but has more flexibility in its design. It offers state management based on the check state of the control. Read more about this in the [Toggle Button]({%slug radbuttons-features-toggle-button%}) article.
+
+* __Toggle Switch Button__: Mimics the functionality of a Toggle button, but has more flexibility in its design. You can specify two states Check/Uncheck, On/Off. Every state can be customized with different content. Read more about this in the [Toggle Switch Button]({%slug radbuttons-features-toggle-switch-button%}) article.
 
 * __Radio Button__: Mimics the functionality of the radio button, but has more flexibility in its design. Read more about this in the [Radio Button]({%slug radbutton-features-radio-button%}) article.
 

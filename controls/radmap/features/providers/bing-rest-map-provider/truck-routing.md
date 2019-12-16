@@ -10,7 +10,7 @@ position: 4
 
 # Truck Routing
 
-RadMap provides an infrastructure which allows you to use the [Bing Maps Truck Routing API](https://docs.microsoft.com/en-us/bingmaps/rest-services/routes/calculate-a-truck-route) to get a set of locations that can be plotted on the map. 
+RadMap provides an infrastructure that allows you to use the [Bing Maps Truck Routing API](https://docs.microsoft.com/en-us/bingmaps/rest-services/routes/calculate-a-truck-route) to get a set of locations that can be plotted on the map. 
 
 The truck routing API is accessed via the __BingRestMapProvider__ provider, and it is used to calculate a route between different locations on the map.
 
@@ -94,7 +94,7 @@ To listen for errors returned by the Bing Maps service, use the __CalculateTruck
 
 ## Truck Routing Settings
 
-BingRestTruckRouteRequest provides several different options that can be used to adjust the request. Those options are based on the parameters described by the [Bing Maps Truck Routing API](https://docs.microsoft.com/en-us/bingmaps/rest-services/routes/calculate-a-truck-route) documentation.
+__BingRestTruckRouteRequest__ provides several different options that can be used to adjust the request. Those options are based on the parameters described by the [Bing Maps Truck Routing API](https://docs.microsoft.com/en-us/bingmaps/rest-services/routes/calculate-a-truck-route) documentation.
 
 The settings can be used via the __Options__ property of __BingRestTruckRouteRequest__. The property is of type __BingRestTruckRouteOptions__ and it provides the following settings:
 

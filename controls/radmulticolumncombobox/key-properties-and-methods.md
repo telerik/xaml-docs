@@ -55,8 +55,10 @@ Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle
 
 With **R2 2019** we introduced a new **SearchMode** property which allows you to control how items are matched when search is executed. It has the following two possible values:
 
-* **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted in the search panel, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
+* **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
 * **MatchAllTerms**: Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain **both** terms ("John" and "Terry") in any of their properties will be matched.
+
+>important The SearchMode property takes effect only if the **AutoCompleteMode** of the control is **Search**.
 
 ## See Also
 

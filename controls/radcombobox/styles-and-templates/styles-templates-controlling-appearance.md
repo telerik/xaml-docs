@@ -12,10 +12,6 @@ position: 1
 
 The __RadComboBox__ control gives you a number of [properties](#available-properties) to customize its look and feel. If you need to further modify the appearance, you can modify its [control templates](#editing-control-templates) to your liking.
 
-## Available Properties
-
-Here's a list of the key properties you can use.
-
 ### ClearSelectionButtonVisibility
 
 If you want to show the button clearing the selection of the __RadComboBox__, just set the __ClearSelectionButtonVisibility__ property to __Visibility.Visible__. In addition you need to set the **ClearSelectionButtonContent** property to a string of your choice.

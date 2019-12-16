@@ -104,7 +104,7 @@ Depending on the underlying data you cab select which style to apply.
 #### __[XAML] Example 2: Set the different styles for the style selector__
 
 {{region xaml-gridview-rowstyleselector_2}}
-	<Grid.Resources>
+	<Window.Resources>
 	    <my:StadiumCapacityStyle x:Key="StadiumCapacityStyle">
 	        <my:StadiumCapacityStyle.BigStadiumStyle>
 	            <Style TargetType="telerik:GridViewRow">
@@ -117,7 +117,7 @@ Depending on the underlying data you cab select which style to apply.
 	            </Style>
 	        </my:StadiumCapacityStyle.SmallStadiumStyle>
 	    </my:StadiumCapacityStyle>
-	</Grid.Resources>
+	</Window.Resources>
 {{endregion}}
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__

@@ -59,8 +59,44 @@ The visibility of the column headers and footers can be controlled through the f
 
 Since __R1 2019 SP1__, the GridViewItemsSourceProvider exposes the __IsReadOnly__ property through which you can control the __IsReadOnly__ property of the RadGridView control in the dropdown.
 
-## See Also
+## RowIndicatorVisibility
 
+> More information can be found in the [Hiding the Row Indicator]({%slug gridview-customizing-rows%}) topic.
+
+By default the first cell of a row represents row indicator, which appears when the row is set as current. Since __R2 2019__, the __GridViewItemsSourceProvider__ exposes the __RowIndicatorVisibility__ property which controls the visibility of the row indicator.
+
+## ContextMenu
+
+The __ContextMenu__ property of the __GridViewItemsSourceProvider__ allows you to set a custom context menu.
+
+>This feature was introduced in __R2 2019__.
+
+The example below shows how to set the **ContextMenu** property of **GridVIewItemsSourceProvider**:
+
+#### __[XAML] Example 1: Set custom context menu__
+{{region xaml-radmulticolumncombobox--gridview-itemssourceprovider-0}}
+	<Window.Resources>
+        <local:MyModel x:Key="MyModel"/>
+        <ContextMenu x:Key="contextMenu">
+            <MenuItem Header="Menu item 1" />
+            <MenuItem Header="Menu item 2" />
+            <Separator />
+            <MenuItem Header="Menu item 3" />
+        </ContextMenu>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource MyModel}">
+        <telerik:RadMultiColumnComboBox VerticalAlignment="Top" OpenDropDownOnFocus="True">
+            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+                <telerik:GridViewItemsSourceProvider ContextMenu="{StaticResource contextMenu}" ItemsSource="{Binding MyObjects}"/>
+            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+        </telerik:RadMultiColumnComboBox>
+    </Grid>
+{{endregion}}
+
+#### __Figure 1: Result of Example 1__
+![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
+
+## See Also  
 * [Getting Started]({%slug multicolumncombobox-getting-started%})
 * [DropDown Properties]({%slug multicolumncombobox-dropdown-properties%})
 * [Key Properties and Methods]({%slug multicolumncombobox-dropdown-key-properties-and-methods%})

@@ -23,45 +23,45 @@ The following rules apply to the children of the __LayoutPanel__ with a __horizo
 * All __right aligned__ items will be stacked at the right side of the panel. The panel will give each item only as much size as it needs.
 
 	#### __Figure 1: Left and right aligned items__
-	![](images/layoutcontrol-getting-started-layoutpanel-01.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-01.png)  
 	[Example 1](#example-01) demonstrates the items setup demonstrated in __Figure 1__.	
 	
 * After positioning the left and right aligned elements the panel will divide the remaining space between the __stretched__ items. The positions of the stretched items varies based on the left/right and the center aligned items, and also on the index  of the item in the panel's children collection.
 
 	#### __Figure 2: Stretched items with different sizes__  
-	![](images/layoutcontrol-getting-started-layoutpanel-02.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-02.png)  
 	[Example 2](#example-02) demonstrates the items setup demonstrated in __Figure 2__.	
 	
 	#### __Figure 3: Stretched and left/rigth aligned items with different sizes__  
-	![](images/layoutcontrol-getting-started-layoutpanel-03.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-03.png)  
 	[Example 3](#example-03) demonstrates the items setup demonstrated in __Figure 3__.	
 
 * All __center aligned__ items will be stacked in the center of the panel's available space. 
 	
 	#### __Figure 4: Centered items__  
-	![](images/layoutcontrol-getting-started-layoutpanel-04.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-04.png)  
 	[Example 4](#example-04) demonstrates the items setup demonstrated in __Figure 4__.	
 	
 	#### __Figure 5: Centered and left/right aligned items__  
-	![](images/layoutcontrol-getting-started-layoutpanel-05.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-05.png)  
 	[Example 5](#example-05) demonstrates the items setup demonstrated in __Figure 5__.	
 	
 	In case there are stretched items in the panel, the center items might look like they are stacked left or right. The positions of the centered items will depend on the collection index of the stretched items.
 	
 	#### __Figure 6: Centered items and a single stretched item inserted at the end of the children collection__  
-	![](images/layoutcontrol-getting-started-layoutpanel-06.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-06.png)  
 	[Example 6](#example-06) demonstrates the items setup demonstrated in __Figure 6__.	
 	
 	#### __Figure 7: Centered items and a single stretched item inserted at the beginning of the children collection__  
-	![](images/layoutcontrol-getting-started-layoutpanel-07.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-07.png)  
 	[Example 7](#example-07) demonstrates the items setup demonstrated in __Figure 7__.	
 	
 	#### __Figure 8: Centered items and a single stretched item inserted around the middle of the children collection__  
-	![](images/layoutcontrol-getting-started-layoutpanel-08.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-08.png)  
 	[Example 8](#example-08) demonstrates the items setup demonstrated in __Figure 8__.	
 	
 	#### __Figure 9: Centered, stretched and left/right aligned items__  
-	![](images/layoutcontrol-getting-started-layoutpanel-09.png)
+	![](images/layoutcontrol-getting-started-layoutpanel-09.png)  
 	[Example 9](#example-09) demonstrates the items setup demonstrated in __Figure 9__.	
 
 In summary, the panel allocates space for the left and right aligned items first. Then the available space that is left is given to the center aligned and the stretched items.

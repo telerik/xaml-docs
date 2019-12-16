@@ -18,13 +18,13 @@ When you use the [GridViewComboBoxColumn]({%slug radgridview-columns-column-type
 
 __CAUSE__
 
-First you need to check:
+First, you need to check:
 
-* The Output for Binding exceptions
+* The Output for Binding exceptions.
+* If the types are of the same type.
+* If the __DisplayMemberPath__ property is set correctly.
 
-* If the types are of the same type
-
-If you do not encounter any of the above mentioned problems, then you probably use ElementName binding for that column, e.g.
+If you do not encounter any of the above-mentioned problems, then you probably use ElementName binding for that column, e.g.
 
 #### __[XAML] Example 1: Binding with ElementName__
 
@@ -85,16 +85,11 @@ There are two ways of solving the issue :
 
 ## Setting the IsLightWeightModeEnabled property
 
-As of __R2 2016__ GridViewComboBoxColumn exposes the IsLightWeightModeEnabled. When set to True, a completely new lookup logic is used which improves the performance of the column and could be a solution for a scenario when having empty cells in it. More information can be found in the [ComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) topic.
+As of __R2 2016__ GridViewComboBoxColumn exposes the IsLightWeightModeEnabled. When set to True, a completely new lookup logic is used, which improves the performance of the column and could be a solution for a scenario when having empty cells in it. More information can be found in the [ComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%}) topic.
 
 ## See also
-
- * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%})
- 
- * [Handle SelectionChanged for ComboBoxColumn]({%slug gridview-columns-howto-selectionchanged-comboboxcolumn%})
-  
+ * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%}) 
+ * [Handle SelectionChanged for ComboBoxColumn]({%slug gridview-columns-howto-selectionchanged-comboboxcolumn%})  
  * [Filter items in ComboboxColumn]({%slug gridview-columns-how-to-filter-the-items-in-comboboxcolumn%})
-
  * [Number of clicks in the ComboBoxColumn]({%slug gridview-combobox-column-clicks%})
-
  * [ComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%})

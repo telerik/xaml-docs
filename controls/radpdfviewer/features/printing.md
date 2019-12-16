@@ -37,7 +37,7 @@ The button shown in the above picture is actually bound to the __PrintPdfDocumen
 >tipMore about command descriptors you can find [here]({%slug radpdfviewer-command-descriptors%}).
           
 
-## Printing Programatically
+## Printing Programmatically
 
 Additionally, to using the UI, you can print by taking advantage of the __Print()__ and __Print(PrintSettings printSettings)__ methods of __RadPdfViewer__. 
 

@@ -40,235 +40,112 @@ The following example demonstrates how to create a hierarchical data source and 
 
 >tip The {% if site.site_name == 'Silverlight' %}Telerik {% endif %}__HierarchicalDataTemplate__ offers two properties - __ItemContainerStyle__ and __ItemContainerStyleSelector__, which allows you to make your hierarchy quite flexible.An interesting point here is the precedence over what should be set. As always, local values are stronger than styles. But what happens when you have both an __ItemContainerStyle__ set in the __ItemsControl__ and the __HierarchicalDataTemplate__. Also what happens when you have an __ItemContainerStyle__ set in the two above __and__ in the __ItemContainerStyle__ as well. The rule is that the __ItemContainerStyle__ from the __HierarchicalDataTemplate__ is applied to the first level of containers that has a style which is the same as the parent's. The last __ItemContainerStyle__ to be actively set is inherited from them on. The same rule applies for selectors.For more information see the example below.
 
-* Create a new class and name it __MyViewModel__, which implements the __INotifyPropertyChanged__ interface.
+## Example
 
-	#### __C#__
+We will specify the following classes, which are going to be used to the RadTreeView control.
+
+* __MyItem:__ A class that will be our business object. This class will have a collection of MyItems. It will be used to show hierarchy in the RadTreeView.
+* __MyViewModel:__ The main ViewModel class of the application.
+
+	#### __[C#] Example 1: Creating ViewModels__
 
 	{{region radtreeview-populating-with-data-hierarchical-data-templates_0}}
-		public class MyViewModel : INotifyPropertyChanged
+		public class MyItem
 		{
-			private String title;
-			private DateTime dateCreated;
-			private double price;
+			public string Title { get; set; }
+			public MyItem()
+			{
+				SubItems = new ObservableCollection<MyItem>();
+			}
+			public ObservableCollection<MyItem> SubItems { get; set; }
+		}
+		
+		public class MyViewModel : ViewModelBase
+		{
+			public ObservableCollection<MyItem> Data { get; set; }
 			public MyViewModel()
 			{
-				RelatedItems = new ObservableCollection<object>();
+				Data = new ObservableCollection<MyItem>();
+				GetData();
 			}
-			public double Price
+
+			private void GetData()
 			{
-				get
+				foreach (var num in Enumerable.Range(1, 5))
 				{
-					return this.price;
+					var item = new MyItem();
+					item.Title = string.Format("{0} {1}", "Item", num);
+					for (int i = 0; i < 5; i++)
+					{
+						var child = new MyItem();
+						child.Title = string.Format("{0} {1}'s {2}", "Item", num, i);
+						item.SubItems.Add(child);
+						for (int j = 0; j < 3; j++)
+						{
+							var grandChild = new MyItem();
+							grandChild.Title = string.Format("{0} {1} : {2}'s {3}", "Item", num, i, j);
+							child.SubItems.Add(grandChild);
+						}
+					}
+					Data.Add(item);
 				}
-				set
-				{
-					if ( this.Price == value )
-						return;
-					this.price = value;
-					OnPropertyChanged( "Price" );
-				}
-			}
-			public DateTime DateCreated
-			{
-				get
-				{
-					return this.dateCreated;
-				}
-				set
-				{
-					if ( this.DateCreated == value )
-						return;
-					this.dateCreated = value;
-					OnPropertyChanged( "DateCreated" );
-				}
-			}
-			public String Title
-			{
-				get
-				{
-					return this.title;
-				}
-				set
-				{
-					if ( this.Title == value )
-						return;
-					this.title = value;
-					OnPropertyChanged( "Title" );
-				}
-			}
-			public IList<object> RelatedItems
-			{
-				get;
-				set;
-			}
-			public event PropertyChangedEventHandler PropertyChanged;
-			protected virtual void OnPropertyChanged( string info )
-			{
-				PropertyChangedEventHandler temp = this.PropertyChanged;
-				if ( temp != null )
-					temp( this, new PropertyChangedEventArgs( info ) );
 			}
 		}
-		{{endregion}}
+	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 1: Creating ViewModels__
 
 	{{region radtreeview-populating-with-data-hierarchical-data-templates_1}}
-		Public Class MyViewModel
-			Implements INotifyPropertyChanged
-			Private m_title As [String]
-			Private m_dateCreated As DateTime
-			Private m_price As Double
-		
+		Public Class MyItem
+			Public Property Title As String
+
 			Public Sub New()
-				RelatedItems = New ObservableCollection(Of Object)()
+				SubItems = New ObservableCollection(Of MyItem)()
 			End Sub
-		
-			Public Property Price() As Double
-				Get
-					Return Me.m_price
-				End Get
-				Set(ByVal value As Double)
-					If Me.Price = value Then
-						Return
-					End If
-		
-					Me.m_price = value
-					OnPropertyChanged("Price")
-				End Set
-			End Property
-		
-			Public Property DateCreated() As DateTime
-				Get
-					Return Me.m_dateCreated
-				End Get
-				Set(ByVal value As DateTime)
-					If Me.DateCreated = value Then
-						Return
-					End If
-		
-					Me.m_dateCreated = value
-					OnPropertyChanged("DateCreated")
-				End Set
-			End Property
-		
-			Public Property Title() As [String]
-				Get
-					Return Me.m_title
-				End Get
-				Set(ByVal value As [String])
-					If Me.Title = value Then
-						Return
-					End If
-		
-					Me.m_title = value
-					OnPropertyChanged("Title")
-				End Set
-			End Property
-		
-		Private _RelatedItems As IList(Of Object)
-			Public Property RelatedItems() As IList(Of Object)
-				Get
-					Return _RelatedItems
-				End Get
-				Set(ByVal value As IList(Of Object))
-					_RelatedItems = value
-				End Set
-			End Property
-		
-			Public Event PropertyChanged As PropertyChangedEventHandler
-		
-			Protected Overridable Sub OnPropertyChanged(ByVal info As String)
-				Dim temp As PropertyChangedEventHandler = Me.PropertyChanged
-				RaiseEvent temp(Me, New PropertyChangedEventArgs(info))
-			End Sub
+
+			Public Property SubItems As ObservableCollection(Of MyItem)
 		End Class
-		{{endregion}}
 
-	The class has four properties:
+		Public Class MyViewModel
+			Inherits ViewModelBase
 
-	* Property __Price__ which is of type double. 
-	* Property __CreatedOn__ which is of type DateTime. 
-	* Property __Title__ which is of type string. 
-	* Property __RelatedItems__ which is a collection of objects. These are the child items.
+			Public Property Data As ObservableCollection(Of MyItem)
 
-* Add a static method to the class which aims to create some mock-up data:
+			Public Sub New()
+				Data = New ObservableCollection(Of MyItem)()
+				GetData()
+			End Sub
 
-	#### __C#__
+			Private Sub GetData()
+				For Each num In Enumerable.Range(1, 5)
+					Dim item = New MyItem()
+					item.Title = String.Format("{0} {1}", "Item", num)
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_2}}
-		public static IList<object> GetItems( string name )
-		{
-			var result = new ObservableCollection<object>();
-			foreach ( var num in Enumerable.Range( 1, 5 ) )
-			{
-				var item = new MyViewModel();
-				item.DateCreated = DateTime.Today.AddDays( -num % 15 );
-				item.Price = num * 100 + Convert.ToDouble( num ) / 100;
-				item.Title = String.Format( "{0} {1}", name, num );
-				for ( int i = 0; i < 5; i++ )
-				{
-					var child = new MyViewModel();
-					child.DateCreated = DateTime.Today.AddDays( -num % 5 - i );
-					child.Price = num * 100 + Convert.ToDouble( num + i ) / 100;
-					child.Title = String.Format( "{0} {1}'s {2}", name, num, i );
-					item.RelatedItems.Add( child );
-					for ( int j = 0; j < 3; j++ )
-					{
-						var grandChild = new MyViewModel();
-						grandChild.DateCreated = DateTime.Today.AddDays( -num % 5 - i + 2 );
-						grandChild.Price = num * 100 + Convert.ToDouble( num + i ) / 100;
-						grandChild.Title = String.Format( "{0} {1} : {2}'s {3}", name, num, i, j );
-						child.RelatedItems.Add( grandChild );
-					}
-				}
-				result.Add( item );
-			}
-			return result;
-		}
-		{{endregion}}
-		
-	#### __VB.NET__
+					For i As Integer = 0 To 5 - 1
+						Dim child = New MyItem()
+						child.Title = String.Format("{0} {1}'s {2}", "Item", num, i)
+						item.SubItems.Add(child)
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_3}}
-		Public Shared Function GetItems(ByVal name As String) As IList(Of Object)
-			Dim result = New ObservableCollection(Of Object)()
-			For Each num In Enumerable.Range(1, 5)
-				Dim item = New MyViewModel()
-				item.DateCreated = DateTime.Today.AddDays(-num Mod 15)
-				item.Price = num * 100 + Convert.ToDouble(num) / 100
-				item.Title = [String].Format("{0} {1}", name, num)
-		
-				For i As Integer = 0 To 4
-					Dim child = New MyViewModel()
-					child.DateCreated = DateTime.Today.AddDays(-num Mod 5 - i)
-					child.Price = num * 100 + Convert.ToDouble(num + i) / 100
-					child.Title = [String].Format("{0} {1}'s {2}", name, num, i)
-		
-					item.RelatedItems.Add(child)
-		
-					For j As Integer = 0 To 2
-						Dim grandChild = New MyViewModel()
-						grandChild.DateCreated = DateTime.Today.AddDays(-num Mod 5 - i + 2)
-						grandChild.Price = num * 100 + Convert.ToDouble(num + i) / 100
-						grandChild.Title = [String].Format("{0} {1} : {2}'s {3}", name, num, i, j)
-		
-						child.RelatedItems.Add(grandChild)
+						For j As Integer = 0 To 3 - 1
+							Dim grandChild = New MyItem()
+							grandChild.Title = String.Format("{0} {1} : {2}'s {3}", "Item", num, i, j)
+							child.SubItems.Add(grandChild)
+						Next
 					Next
+
+					Data.Add(item)
 				Next
-		
-				result.Add(item)
-			Next
-			Return result
-		End Function
-		{{endregion}}
+			End Sub
+		End Class	
+	{{endregion}}
+
 
 	Now consider both of the background notes at the beginning of the topic and take a look at the following code snippet. It declares a __HierarchicalDataTemplate__ and uses the __ItemContainerStyle__ property of both the __RadTreeView__ and the __HierarchicalDataTemplate__.{% if site.site_name == 'Silverlight' %}
 
-	#### __XAML__
+	#### __[XAML] Example 2: Defining RadTreeView in XAML__
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_4}}
-		<UserControl.Resources>
+	{{region radtreeview-populating-with-data-hierarchical-data-templates_2}}
+		<Window.Resources>
 		
 			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
 				<Setter Property="Background" Value="Red" />
@@ -285,31 +162,26 @@ The following example demonstrates how to create a hierarchical data source and 
 				<Setter Property="Background" Value="Green" />
 			</Style>
 		
-		</UserControl.Resources>
+		</Window.Resources>
 		<Grid x:Name="LayoutRoot" Background="White">
 		
-			<telerik:RadTreeView x:Name="radTreeView" Margin="8"
-				ItemContainerStyle="{StaticResource redStyle}">
-				<telerik:RadTreeView.ItemTemplate>
-		
-					<telerik:HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}"
-			 ItemContainerStyle="{StaticResource greenStyle}">
+			<telerik:RadTreeView Margin="8" ItemsSource="{Binding Data}" ItemContainerStyle="{StaticResource redStyle}">
+				<telerik:RadTreeView.ItemTemplate>		
+					<telerik:HierarchicalDataTemplate ItemsSource="{Binding SubItems}" ItemContainerStyle="{StaticResource greenStyle}">
 						<TextBlock Text="{Binding Title}" />
-					</telerik:HierarchicalDataTemplate>
-		
+					</telerik:HierarchicalDataTemplate>		
 				</telerik:RadTreeView.ItemTemplate>
-			</telerik:RadTreeView>
-		
+			</telerik:RadTreeView>		
 		</Grid>
-		{{endregion}}
+	{{endregion}}
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
-	#### __XAML__
+	#### __[XAML] Example 2: Defining RadTreeView in XAML__
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_7}}
-		<UserControl.Resources>
+	{{region radtreeview-populating-with-data-hierarchical-data-templates_3}}
+		<Window.Resources>
 		
 			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
 				<Setter Property="Background" Value="Red" />
@@ -326,15 +198,13 @@ The following example demonstrates how to create a hierarchical data source and 
 				<Setter Property="Background" Value="Green" />
 			</Style>
 		
-		</UserControl.Resources>
+		</Window.Resources>
 		<Grid x:Name="LayoutRoot" Background="White">
 		
-			<telerik:RadTreeView x:Name="radTreeView" Margin="8"
-				ItemContainerStyle="{StaticResource redStyle}">
+			<telerik:RadTreeView  Margin="8" ItemsSource="{Binding Data}" ItemContainerStyle="{StaticResource redStyle}">
 				<telerik:RadTreeView.ItemTemplate>
 		
-					<HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}"
-			 ItemContainerStyle="{StaticResource greenStyle}">
+					<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" ItemContainerStyle="{StaticResource greenStyle}">
 						<TextBlock Text="{Binding Title}" />
 					</HierarchicalDataTemplate>
 		
@@ -342,23 +212,28 @@ The following example demonstrates how to create a hierarchical data source and 
 			</telerik:RadTreeView>
 		
 		</Grid>
-		{{endregion}}
-
+	{{endregion}}
 	{% endif %}
 
-* Set the __ItemsSource__ property of the __RadTreeView__.
+And finally, we need to set the DataContext of the MainWindow:
 
-	#### __C#__
+	#### __[C#] Example 3: Setting DataContext__
+	{{region radtreeview-populating-with-data-hierarchical-data-templates_4}}
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.DataContext = new MyViewModel();
+		}
+	{{endregion}}
 
-		{{region radtreeview-populating-with-data-hierarchical-data-templates_5}}
-			this.radTreeView.ItemsSource = MyViewModel.GetItems( "Item" );
-			{{endregion}}
-
-	#### __VB.NET__
-
-		{{region radtreeview-populating-with-data-hierarchical-data-templates_6}}
-			Me.radTreeView.ItemsSource = MyViewModel.GetItems("Item")
-			{{endregion}}
+	#### __[VB.NET] Example 3: Setting DataContext__
+	{{region radtreeview-populating-with-data-hierarchical-data-templates_5}}
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.DataContext = new MyViewModel();
+		}
+	{{endregion}}
 
 Here is the final result: 
 ![](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)

@@ -30,6 +30,8 @@ The __RadRichTextBox__ control raises the following specific events:
 * __CommandExecuting__ - occurs before a command gets executed. The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
     * A __CommandExecutingEventArgs__ object. This arguments allows you to access the command to be executed and its command parameter and to cancel the command execution.
+    
+    >There is an SDK example demonstrating how you can customize the behavior of the commands using the above-listed events: [Customize Commands SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands)
 
 * __CurrentEditingStyleChanged__ - occurs when the current editing style changes. The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.

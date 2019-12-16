@@ -40,5 +40,4 @@ The same behavior can be enabled/disabled in the code-behind.
 {{endregion}}
 
 ## See Also 
- * [How to Add New Tab Item]({%slug radtabcontrol-how-to-add-new-tab-item%})
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})

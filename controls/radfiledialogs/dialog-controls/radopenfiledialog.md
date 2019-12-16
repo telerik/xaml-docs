@@ -24,14 +24,28 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 
 #### __[C#] Example 1: Show a open file dialog__
 {{region cs-radfiledialogs-radopenfiledialog-0}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.ShowDialog();
-	if (openFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string fileName = openFileDialog.FileName;
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFileDialog();
+		}
+
+		private void ShowOpenFileDialog()
+		{
+			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+			openFileDialog.Owner = this;
+			openFileDialog.ShowDialog();
+			if (openFileDialog.DialogResult == true)
+			{
+				string fileName = openFileDialog.FileName;
+			}
+		}
 	}
 {{endregion}}
+
+> The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set.   
 
 ## Opening the Selected File
 
@@ -39,12 +53,24 @@ You can open a read-only file stream for the selected file using the __OpenFile_
 
 #### __[C#] Example 2: Open a file stream__
 {{region cs-radfiledialogs-radopenfiledialog-1}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.ShowDialog();
-	if (openFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		Stream fileStream = openFileDialog.OpenFile();
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFileDialog();
+		}
+
+		private void ShowOpenFileDialog()
+		{
+			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+			openFileDialog.Owner = this;
+			openFileDialog.ShowDialog();
+			if (openFileDialog.DialogResult == true)
+			{
+				Stream fileStream = openFileDialog.OpenFile();
+			}
+		}
 	}
 {{endregion}}
 
@@ -54,9 +80,13 @@ The dialog supports single and multiple selection modes. By default you can sele
 
 #### __[C#] Example 3: Enable multiple selection__
 {{region cs-radfiledialogs-radopenfiledialog-2}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.Multiselect = true;
+	private void ShowOpenFileDialog()
+    {
+        RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+        openFileDialog.Owner = this;
+        openFileDialog.Multiselect = true;
+        openFileDialog.ShowDialog();       
+    }
 {{endregion}}
 
 #### __Figure 2: Multiple selection__ 
@@ -71,15 +101,27 @@ You can get only the name of the selected files, without the full path, via the 
 
 #### __[C#] Example 3: Get the selected file names__
 {{region cs-radfiledialogs-radopenfiledialog-3}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.Multiselect = true;
-	openFileDialog.ShowDialog();
-	if (openFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string filePath = openFileDialog.FileName;
-		IEnumerable<string> filePaths = openFileDialog.FileNames;
-		IEnumerable<string> fileNames = openFileDialog.SafeFileNames;
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFileDialog();
+		}
+
+		private void ShowOpenFileDialog()
+		{
+			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+			openFileDialog.Owner = this;
+			openFileDialog.Multiselect = true;
+			openFileDialog.ShowDialog();
+			if (openFileDialog.DialogResult == true)
+			{
+				string filePath = openFileDialog.FileName;
+				IEnumerable<string> filePaths = openFileDialog.FileNames;
+				IEnumerable<string> fileNames = openFileDialog.SafeFileNames;
+			}
+		}
 	}
 {{endregion}}
 
@@ -101,11 +143,23 @@ You can display a checkbox to control whether the file should be opened in reado
 
 #### __[C#] Example 4: Enabling the ReadOnly CheckBox__
 {{region cs-radfiledialogs-radopenfiledialog-4}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.ShowReadOnly = true;
-	openFileDialog.ReadOnlyChecked = true;
-	openFileDialog.ShowDialog();
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFileDialog();
+		}
+
+		private void ShowOpenFileDialog()
+		{
+			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+			openFileDialog.Owner = this;
+			openFileDialog.ShowReadOnly = true;
+			openFileDialog.ReadOnlyChecked = true;
+			openFileDialog.ShowDialog();
+		}
+	}
 {{endregion}}
 
 #### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
@@ -117,16 +171,28 @@ As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** prop
 
 #### __[C#] Example 5: Using the DereferenceLinks property__
 {{region cs-radfiledialogs-radopenfiledialog-5}}
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = theHostWindowInstance;
-	openFileDialog.DereferenceLinks = true;
-	openFileDialog.ShowDialog();
-	if (openFileDialog.DialogResult == true)
+	public partial class MainWindow : Window
 	{
-		string filePath = openFileDialog.FileName;
-		// If the selected file was C:\Users\\<user>\Desktop\Shortcut.lnk, for example,
-		// the FileName property will now contain the actual location of the file,
-		// for example - C:\Program Files\Program\Shortcut.exe.
+		public MainWindow()
+		{
+			InitializeComponent();
+			ShowOpenFileDialog();
+		}
+
+		private void ShowOpenFileDialog()
+		{
+			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+			openFileDialog.Owner = this;
+			openFileDialog.DereferenceLinks = true;
+			openFileDialog.ShowDialog();
+			if (openFileDialog.DialogResult == true)
+			{
+				string filePath = openFileDialog.FileName;
+				// If the selected file was C:\Users\\<user>\Desktop\Shortcut.lnk, for example,
+				// the FileName property will now contain the actual location of the file,
+				// for example - C:\Program Files\Program\Shortcut.exe.
+			}
+		}
 	}
 {{endregion}}
 

@@ -85,7 +85,7 @@ In the XAML file, define the style selector as a resource and set the properties
 #### __[XAML] Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
 	{{region xaml-gridview-styling-group-row-5}}
-	<Grid.Resources>
+	<Window.Resources>
 	    <my:GroupRowStyleSelector x:Key="GroupRowStyleSelector">
 	        <my:GroupRowStyleSelector.BigGroupStyle>
 	            <Style TargetType="telerik:GroupHeaderRow">
@@ -98,7 +98,7 @@ In the XAML file, define the style selector as a resource and set the properties
 	            </Style>
 	        </my:GroupRowStyleSelector.SmallGroupStyle>
 	    </my:GroupRowStyleSelector>
-	</Grid.Resources>
+	</Window.Resources>
 {{endregion}}
 
 >If you're using **GroupRenderMode="Nested"** the style should target the **GridViewGroupRow** element.

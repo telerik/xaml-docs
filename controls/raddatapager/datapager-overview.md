@@ -46,13 +46,6 @@ Telerik __RadDataPager__ provides the user with a navigation interface to page t
 * __WCF Data Services and DataServicesDataSource support:__ __RadDataPager__ can be easily integrated with the __DataServicesDataSource__ control and consume server data through __WCF Services__.
 {% endif %}
 
-## Related Videos
-
- In [this video](images/datapager_introduction_video.png) we will look at some of the features and functionality of __RadDataPager__ and how you can start using it in your Silverlight or WPF applications today. (Runtime: 03:01)
-
-[![RadDataPager Introduction Video](images/datapager_introduction_video.png)](http://tv.telerik.com/watch/silverlight/introduction-to-raddatapager)
-        
-
 ## See Also
 
  * [Visual Structure]({%slug raddatapager-visual-structure%})

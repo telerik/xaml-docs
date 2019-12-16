@@ -394,7 +394,7 @@ The code in __Example 7__ is shown in __Figure 3__. The XAML declaration of the 
 
 ![Telerik {{ site.framework_name }} DataGrid-getting-started2 6](images/gridview-getting-started2_6.png)
 
-You can read more about __RadGridView__ columns [here]({%slug gridview-columns-overview%}).
+You can read more about __RadGridView__ columns [here]({%slug gridview-columns-defining-columns%}).
 
 ## Sorting, Grouping and Filtering 
       

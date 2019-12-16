@@ -168,4 +168,3 @@ There are few controls that don't support changing the theme using StyleManager 
 	
 ## See Also
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Setting a Theme on a Custom Control]({%slug styling-apperance-custom-control%})

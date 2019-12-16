@@ -134,8 +134,6 @@ The __HierarchicalDataTemplate__ used with the __RadContextMenu__ also exposes _
 
 ## See Also
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Data Binding Support Overview]({%slug radcontextmenu-populating-with-data-data-binding-support-overview%})
 
  * [Using Static Items]({%slug radcontextmenu-populating-with-data-using-static-items%})

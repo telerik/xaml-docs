@@ -96,8 +96,7 @@ Both radial and linear scales have a Distribution property which specifies the v
 #### __[XAML] Example 3: RadialScale with RegularDistribution__
 {{region xaml-radgauge-features-linear-and-radial-scales-basics_3}}
 	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="1"
-							 Max="100">
+		<telerik:RadialScale Min="1" Max="100">
 			<telerik:RadialScale.Distribution>
 				<telerik:RegularDistribution />
 			</telerik:RadialScale.Distribution>
@@ -108,8 +107,7 @@ Both radial and linear scales have a Distribution property which specifies the v
 #### __[XAML] Example 4: RadialScale with RangeLogarithmicDistribution__
 {{region xaml-radgauge-features-linear-and-radial-scales-basics_4}}
 	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="-10"
-							 Max="100">
+		<telerik:RadialScale Min="-10" Max="100">
 			<telerik:RadialScale.Distribution>
 				<telerik:RangeLogarithmicDistribution />
 			</telerik:RadialScale.Distribution>
@@ -120,8 +118,7 @@ Both radial and linear scales have a Distribution property which specifies the v
 #### __[XAML] Example 5: RadialScale with ClassicLogarithmicDistribution__
 {{region xaml-radgauge-features-linear-and-radial-scales-basics_5}}
 	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="1"
-							 Max="100">
+		<telerik:RadialScale Min="1" Max="100">
 			<telerik:RadialScale.Distribution>
 				<telerik:ClassicLogarithmicDistribution />
 			</telerik:RadialScale.Distribution>
@@ -134,7 +131,7 @@ Both radial and linear scales have a Distribution property which specifies the v
 
 ## Reversed Scale
 
-The scales allow you to reverse the direction, in which it displays its values. To do it, just set the __IsReversed__ property to __False__ as demonstrated in __Example 6__.
+The scales allow you to reverse the direction, in which it displays its values. To do it, just set the __IsReversed__ property to __True__ as demonstrated in __Example 6__.
 
 #### __[XAML] Example 6: Create reversed scale__
 {{region xaml-radgauge-features-linear-and-radial-scales-basics_6}}
@@ -180,11 +177,11 @@ The __RadGauge__ control allows you to define ranges for your scales. The range 
 
 ## Labels
 
-The __GraphicScale__ class allows you to modify and configure the labels displayed next to the ticks of the scales. This is done by using the set of the __LabelXXXX__ properties (i.e. *LabelLocation*, *LabelOffset*, *LabelTemplate* and so on) of the scale. To learn more about configuring the labels, read the [Labels]({%slug radgauge-features-labels-basics%}) section of the documentation.
+The __GraphicScale__ class allows you to modify and configure the labels displayed next to the ticks of the scales. This is done by using the set of the __Label*__ properties (i.e. *LabelLocation*, *LabelOffset*, *LabelTemplate* and so on) of the scale. To learn more about configuring the labels, read the [Labels]({%slug radgauge-features-labels-basics%}) section of the documentation.
 
 ## Ticks
 
-The __GraphicScale__ class exposes three sets of properties - __MajorTickXXXX__, __MiddleTickXXXX__, __MinorTickXXXX__. They are used to configure the displaying of the different tick types on the scale. To learn more about configuring the ticks read the [Ticks]({%slug radgauge-features-ticks-basics%}) section of the documentation.
+The __GraphicScale__ class exposes three sets of properties - __MajorTick*__, __MiddleTick*__, __MinorTick*__. They are used to configure the displaying of the different tick types on the scale. To learn more about configuring the ticks read the [Ticks]({%slug radgauge-features-ticks-basics%}) section of the documentation.
 
 ## See also
 

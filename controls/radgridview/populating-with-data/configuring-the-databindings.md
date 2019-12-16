@@ -119,7 +119,7 @@ By default, RadGridView will try to automatically generate columns based on the 
 
 ![Telerik {{ site.framework_name }} DataGrid ObservableCollection ItemsSource](images/RadGridView_ObservableCollection_ItemsSource.png)
 
-> To learn more about defining columns and the different types of columns, you can take a look at the [Columns]({%slug gridview-columns-overview%}) section.
+> To learn more about defining columns and the different types of columns, you can take a look at the [Columns]({%slug gridview-columns-defining-columns%}) section.
 
 ## See Also
 

@@ -82,5 +82,5 @@ How to remove the default cell background highlighting when search as you type a
 ## See Also 
 
 * [Search as you Type]({%slug radgridview-search-as-you-type%})
-* [Columns]({%slug gridview-columns-overview%})
+* [Defining Columns]({%slug gridview-columns-defining-columns%})
 * [Custom Column]({%slug gridview-how-to-create-custom-column-editor%})

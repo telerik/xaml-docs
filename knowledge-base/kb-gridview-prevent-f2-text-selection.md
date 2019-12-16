@@ -59,5 +59,5 @@ How to disable the text selection when a cell enters edit mode by pressing the F
 
 ## See Also
 * [Keyboard Support]({%slug gridview-overview-keyboard-support%})
-* [Columns]({%slug gridview-columns-overview%})
+* [Defining Columns]({%slug gridview-columns-defining-columns%})
 * [Custom Column]({%slug gridview-how-to-create-custom-column-editor%})

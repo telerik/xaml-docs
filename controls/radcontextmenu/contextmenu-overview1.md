@@ -28,7 +28,7 @@ __RadContextMenu__ provides the power to boost the existing navigation of your a
 
 ## Key Features      
 
-* __Multi-level Menu Items__: The control supports displaying hierarchical data. You can build multiple levels of menu items as needed to achieve the navigation you’d like. [Read More]({%slug radcontextmenu-populating-with-data-overview%})
+* __Multi-level Menu Items__: The control supports displaying hierarchical data. You can build multiple levels of menu items as needed to achieve the navigation you’d like. [Read More]({%slug radcontextmenu-populating-with-data-data-binding-support-overview%})
 
 * __Hierarchical Data Binding__: The control allows you to bind and visualize sets of hierarchical data. You can also populate it by consuming data from XML files, WCF services, RIA services etc. [Read More]({%slug radcontextmenu-features-data-binding%})
 

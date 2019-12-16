@@ -26,7 +26,7 @@ RadGridView is an essential user interface control used to display data in tabul
 
 ![Telerik {{ site.framework_name }} DataGrid Visual Structure 2 new](images/gridview-visual-structure-0.png)
 
-* __Columns__: Essential building block, represented by the base class __GridViewColumn__. There is a lot of functionality coming out-of-the-box for the grid columns. They can be data bound, frozen, reordered, hidden, renamed or auto generated based on the underlying data source. Moreover you can sort, filter or group your data by one or more of the columns. You can customize their look and feel in numerous ways. [Read more]({%slug gridview-columns-overview%}).
+* __Columns__: Essential building block, represented by the base class __GridViewColumn__. There is a lot of functionality coming out-of-the-box for the grid columns. They can be data bound, frozen, reordered, hidden, renamed or auto generated based on the underlying data source. Moreover you can sort, filter or group your data by one or more of the columns. You can customize their look and feel in numerous ways. [Read more]({%slug gridview-columns-defining-columns%}).
 
 * __Frozen Columns__: By using the frozen columns you will be able to stop your columns from horizontally  scrolling. Just drag and drop the splitter to your right or left and freeze/unfreeze the columns you like. It is represented by the __FrozenColumnsSplitter__ object. [Read more]({%slug gridview-columns-frozen-columns%}).
 

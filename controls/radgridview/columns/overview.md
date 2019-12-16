@@ -4,7 +4,7 @@ page_title: Columns Overview
 description: Learn more about defining, customizing, resizing, reordering, freezing and unfreezing columns in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-columns-overview
 tags: overview
-published: True
+published: False
 position: 0
 ---
 

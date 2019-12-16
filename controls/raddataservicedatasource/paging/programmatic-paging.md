@@ -80,5 +80,5 @@ When a page change is requested, a trip to the server will be made regardless of
 
 ## See Also
 
-* [Paging through RadDataPager]({%slug raddataservicedatasource-paging-paging-through-raddatapager%})
+* [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})
 * [Manual vs. Auto Loading]({%slug raddataservicedatasource-loading-manual-auto-loading%})

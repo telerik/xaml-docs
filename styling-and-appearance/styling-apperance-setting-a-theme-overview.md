@@ -165,3 +165,4 @@ All Themes are specifically designed to style **Telerik** controls. However, the
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
+* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})

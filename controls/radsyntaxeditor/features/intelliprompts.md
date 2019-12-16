@@ -32,6 +32,8 @@ Through the **CompletionListWindow** you can show a collection of items when the
 #### Figure 1: Code completion
 ![Code completion](images/syntaxeditor-intelliprompts-completion.png)
 
+>The code completion popup can also be shown using the **Ctrl + Space** key combination.
+
 ## Overload List
 
 Through the **OverloadListWindow** you can show a collection of overloads when the user tries to invoke a certain method. To do so, you need to first populate its presenter's **OverloadListItems** collection.
@@ -56,3 +58,4 @@ Through the **OverloadListWindow** you can show a collection of overloads when t
 
 * [Caret]({%slug radsyntaxeditor-features-caret%})
 * [Selection]({%slug radsyntaxeditor-features-selection%})
+* [Events]({%slug radsyntaxeditor-events%})

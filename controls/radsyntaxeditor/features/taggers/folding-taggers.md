@@ -9,7 +9,13 @@ position: 2
 
 # Folding Taggers
 
-The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. The base class responsible for this functionality is the **FoldingTaggerBase** class with concrete implementations provided out of the box being the **BracketFoldingTagger**, **CSharpFoldingTagger** and **VisualBasicFoldingTagger**.
+The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. The base class responsible for this functionality is the **FoldingTaggerBase** class with concrete implementations provided out of the box being the **BracketFoldingTagger**, **CSharpFoldingTagger**, **VisualBasicFoldingTagger** and **XMLFoldingTagger**.
+
+#### __[C#] Example 1: Registering a folding tagger__
+{{region cs-radsyntaxeditor-features-folding-taggers-1}}
+    this.foldingTagger = new CSharpFoldingTagger(this.syntaxEditor);
+    this.syntaxEditor.TaggersRegistry.RegisterTagger(this.foldingTagger);
+{{endregion}}
 
 #### Figure 1: RadSyntaxEditor with a registered CSharpFoldingTagger
 
@@ -19,8 +25,8 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 **FoldingTaggerBase** is the class responsible for generating the collapsible code regions. You can inherit this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
 
-#### __[C#] Example 1: Adding FoldingRegionDefinitions__
-{{region cs-radsyntaxeditor-features-folding-taggers-1}}
+#### __[C#] Example 2: Adding FoldingRegionDefinitions__
+{{region cs-radsyntaxeditor-features-folding-taggers-2}}
     public CustomFoldingTagger(ITextDocumentEditor editor) : base(editor)
     {
         this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("FUNCTION", "END"));
@@ -30,8 +36,8 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 In addition, you may also want to override the **BuildStartRegionBlockPattern** and **BuildEndRegionBlockPattern** and return a custom regular expression to match the start and end.
 
-#### __[C#] Example 2: Default implementation of the BuildStartRegionBlockPattern and BuildEndRegionBlockPattern methods__
-{{region cs-radsyntaxeditor-features-folding-taggers-2}}
+#### __[C#] Example 3: Default implementation of the BuildStartRegionBlockPattern and BuildEndRegionBlockPattern methods__
+{{region cs-radsyntaxeditor-features-folding-taggers-3}}
     protected override string BuildStartRegionBlockPattern(Dictionary<string, string> startToEndMap)
     {
         // returns \bFUNCTION\b|\bIF\b
@@ -54,6 +60,19 @@ Here's a full list of the overridable methods which you can use in order to crea
 * **string Span CoerceFoldingSpan(Span defaultFoldingSpan)**: Coerces the default provided folding span - span starting from the start of the region's start text and ending in the end of the region's end text.
 * **string void RebuildFoldingRegions**: Rebuilds the list of all collapsible (folding) regions.
 * **void InvalidateFoldingRegions**: Clears all collapsible (folding) regions and rebuilds them.
+
+## Styling the Folding Button
+
+If you want to change the appearance of the folding buttons which appear next to each folding region, you can create an appropriate style targeting the **FoldingToggleButton** element.
+
+#### __[XAML] Example 1: Styling the FoldingToggleButton__
+{{region xaml-radsyntaxeditor-features-palettes-2}}
+    <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
+    <Style TargetType="syntaxEditor:FoldingToggleButton" BasedOn="{StaticResource FoldingToggleButtonStyle}">--> 
+    <Style xmlns:syntaxEditor="clr-namespace:Telerik.Windows.Controls.SyntaxEditor.UI;assembly=Telerik.Windows.Controls.SyntaxEditor" TargetType="syntaxEditor:FoldingToggleButton">
+        <Setter Property="Foreground" Value="Red" />
+    </Style>
+{{endregion}}
 
 ## See Also
 

@@ -57,4 +57,4 @@ As the TextBox becomes read-only as well the value of the control could no longe
 ## See Also
 
 * [Keyboard Support]({%slug radnumericupdown-navigation%})
-{% if site.framework_name == 'WPF' %}* [Events]({%slug radnumericupdown-howto-events-wpf%}){% endif %}
+* [Events]({%slug radnumericupdown-events%})

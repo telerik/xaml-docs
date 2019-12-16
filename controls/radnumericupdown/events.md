@@ -18,9 +18,9 @@ Here is a brief list of all events exposed by __RadNumericUpDown__.
 
 * __GotFocus__: Occurs when the control receives focus. Inherited from **UIElement**.
 
-* __KeyDown__: Occurs when a key is pressed while focus is on this element. Inherited from **UIElement**.
+* __KeyDown__: Occurs when a key is pressed while the focus is on this element. Inherited from **UIElement**.
 
-* __KeyUp__: Occurs when a key is released while focus is on this element. Inherited from **UIElement**.
+* __KeyUp__: Occurs when a key is released while the focus is on this element. Inherited from **UIElement**.
 
 * __LayoutUpdated__: Occurs when the layout of the various visual elements associated with the current Dispatcher changes. Inherited from **FrameworkElement**.
 

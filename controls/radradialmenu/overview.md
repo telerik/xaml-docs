@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: RadRadialMenu is a circular menu that comes with support for selection, commands, events and many customization options.
 slug: radradialmenu-overview
 tags: overview
 published: True
@@ -22,30 +22,23 @@ __RadRadialMenu__ is a circular menu that comes with support for selection, comm
 
 ![Rad Radial Menu Overview 03](images/RadRadialMenu_Overview_03.png)
 
-## Key Features
+## Key Features:       
 
-__RadRadialMenu__ key features list:        
+* __Nested Items__: RadRadialMenuItems can have nested items. This way you can easily implement more complex layouts.
 
-* __Nested Items__
+* __Selection__:  The control supports selection functionality that allows you to highlight items upon click or setting a property. 
 
-* __Selection__
+* __Commands__: RadRadialMenu gives you the ability to customize the available commands.
 
-* __Commands__
+* __Data Binding Support__: The control can be easily data bound to your business data, either by setting its properties directly, or by using a binding declaration. Read more about this in the [Binding to Object]({%slug radradialmenu-populating-with-data-binding-to-object%}) section.
 
-* __Events__
+* __Can be use as a ContextMenu__: The control can be used as a context menu for another __FrameworkElement__. Read more about this in the [RadRadialMenu as a ContextMenu]({%slug radradialmenu-features-contextmenu%}) section.
 
-* __Can be used as a ContextMenu__
+>tip Get started with the control with its [Getting Started]({%slug radradialmenu-getting-started%}) help article that shows how to use it in a basic scenario.
 
-* __Positioning relative to the target element__
-
-* __API for showing on different events__
-
-* __Fully Customizable Appearance__
-
-You can check __RadRadialMenu__ demos at: {% if site.site_name == 'Silverlight' %}[RadRadialMenu FirstLook](https://demos.telerik.com/silverlight/#RadialMenu/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf](https://demos.telerik.com/wpf). {% endif %}
+> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#RadialMenu){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 
  * [Getting Started]({%slug radradialmenu-getting-started%})
-
  * [Visual Structure]({%slug radradialmenu-visual-structure%})

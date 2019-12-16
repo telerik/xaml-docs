@@ -209,8 +209,6 @@ Here is a snapshot of the result.
 
 ## See Also
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Data Binding Support Overview]({%slug radcontextmenu-populating-with-data-data-binding-support-overview%})
 
  * [Using Static Items]({%slug radcontextmenu-populating-with-data-using-static-items%})

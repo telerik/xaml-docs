@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article gives an overview of the RadExpressionEditor control.
 slug: radexpressioneditor-overview
 tags: overview
 published: True
@@ -12,20 +12,28 @@ position: 0
 
 {% if site.site_name == 'Silverlight' %}![](images/RadExpressionEditor_LogoSL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadExpressionEditor_LogoWPF.png){% endif %}
 
-Thank you for choosing Telerik RadExpressionEditor!
+Thank you for choosing **RadExpressionEditor**!
 
 __RadExpressionEditor__ allows your users to build powerful LINQ expressions using a simple Domain Specific Language, reminiscent of formulas in many popular spreadsheet applications.
 
-__RadExpressionEditor__ key features list:
+![RadExpressionEditor Overview](images/RadExpressionEditor_Overview.png)
 
-* __Easy to use interface__
+## Key Features
 
-* __Syntax highlighting__
+* __Easy to Use Interface__: The user-friendly interface of the control makes it easy to generate the desired expression with just a few clicks and key strokes.
 
-* __Error reporting__
+* __Syntax Highlighting__: The RadExpressionEditor also supports highlighting for the fields, functions and literals as can be observed in the image above.
 
-* __Rich set of built-in functions__
+* __Error Reporting__: Whenever an invalid expression is entered, this is immediately highlighted by a curly underline.
 
-* __Resulting expressions can be used in any API that works with LINQ expressions__
+* __Rich Set of Built-In Functions__: The RadExpressionEditor provides a variety of functions to choose from such as mathematical and logical operations, functions for working with text and many more.
 
-Check out our online demo at {% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}
+* __Reusable Expressions__: The resulting expressions can be used in any API that works with LINQ expressions.
+
+>tip Get started with the control with its [Getting Started]({%slug radexpressioneditor-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out our online demos at {% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook](https://demos.telerik.com/silverlight/#ExpressionEditor/FirstLook){% endif %}.
+
+## See Also
+ * [Visual Structure]({%slug radexpressioneditor-visualstructure%})
+ * [Expressions]({%slug radexpressioneditor-expressions-overview%})

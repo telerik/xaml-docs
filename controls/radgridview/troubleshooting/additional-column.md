@@ -51,6 +51,4 @@ Now, the result would be:
 ![troubleshooting additional column Telerik {{ site.framework_name }} DataGrid fix2](images/troubleshooting_additional_column_gridview_fix2.png)
 
 ## See Also
-* [Columns Overview]({%slug gridview-columns-overview%})
- 
-
+* [Defining Columns]({%slug gridview-columns-defining-columns%})

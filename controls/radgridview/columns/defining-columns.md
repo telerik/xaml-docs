@@ -5,7 +5,7 @@ description: See examples of how you can define, either automatically or manuall
 slug: gridview-columns-defining-columns
 tags: defining,columns
 published: True
-position: 9
+position: 0
 ---
 
 # Defining Columns
@@ -16,9 +16,8 @@ __RadGridView__ provides two mechanisms for defining its columns:
 
 * [Manual columns definition](#manual-columns-definition) in XAML or code-behind. 
 
-* [Copying properties from another column](#copying-properties-from-another-column)
-
-This help article explains how to do both with code examples.
+This help article explains how to do both with code examples. You can also 
+[copy properties from one column to another](#copying-properties-from-another-column).
 
 ## Automatic Columns Generation
 
@@ -30,9 +29,7 @@ Specific editors will be generated for the following types:
 * **Boolean**: **CheckBox** editor accompanied by **GridViewCheckBox** element displayed in view mode 
 * **DateTime**: **RadDatePicker** editor
 
-However, if you wish to explicitly specify the column name for certain property of your data class or to prevent the creation of a column for it, use the __System.ComponentModel.DataAnnotations.DisplayAttribute__, as it is shown in the sample below.
-
-__Example 1: RadGridView__ generates columns automatically.
+However, if you wish to explicitly specify the column name for certain property of your data class or to prevent the creation of a column for it, use the __System.ComponentModel.DataAnnotations.DisplayAttribute__, as it is shown in **Example 1**.
 
 #### __[C#] Example 1: Defining the business object__
 
@@ -97,7 +94,7 @@ __Example 1: RadGridView__ generates columns automatically.
 	End Class
 {{endregion}}
 
-__Figure 1:__ The result of letting __RadGridView__ automatically generate two columns. 
+__Figure 1:__ The result of letting __RadGridView__ automatically generate the two columns. 
 
 ![Telerik {{ site.framework_name }} DataGrid defining columns 1](images/RadGridView_definingcolumns_1.png)
 
@@ -107,18 +104,21 @@ Using the built-in auto generation of columns does not fit all scenarios. In suc
 
 *  [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) 
 *  [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%})
-*  [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%})
-*  [GridViewHyperlinkColumn]({%slug radgridview-columns-column-types-hyperlink-column%}) 
-*  [GridViewDynamicHyperlinkColumn]({%slug radgridview-columns-column-types-dynamic-hyperlink-column%})
-*  [GridViewImageColumn]({%slug radgridview-columns-columntypes-image-column%})
-*  [GridViewSelectColumn]({%slug radgridview-columns-column-types-select-column%})
-*  [GridViewComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%})
+*  [Data Column]({%slug radgridview-columns-column-types-data-column%})
+*  [Hyperlink Column]({%slug radgridview-columns-column-types-hyperlink-column%}) 
+*  [Dynamic Hyperlink Column]({%slug radgridview-columns-column-types-dynamic-hyperlink-column%})
+*  [Expression Column]({%slug gridview-expression-column%})
+*  [Image Column]({%slug radgridview-columns-columntypes-image-column%})
+*  [Select Column]({%slug radgridview-columns-column-types-select-column%})
+*  [CheckBox Column]({%slug gridview-checkbox-column%})
+*  [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
+*  [MultiColumnComboBox Column]({%slug radgridview-columns-column-types-multicolumncombobox-column%})
 *  [Masked Input Column]({%slug radgridview-columns-column-types-masked-input-column%})
-*  [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
+*  [Toggle Row Details Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 
-You must add the columns to the __Columns__ collection of __RadGridView__. Later on in the application lifecycle, you can easily access them via the __UniqueName__ property of __GridViewColumn__, or by the index of the column. To see this sequence unfold, look at the following step-by-step example.
+You must add the columns to the __Columns__ collection of __RadGridView__. Later on in the application lifecycle, you can easily access them via the **Columns** indexer by specifying the name of the property the column is bound to or the index of the column.
 
-* Define a column of type __GridViewDataColumn__.
+Examples 2 and 3 demonstrate how to define a column both in XAML and code-behind.
 
 #### __[XAML] Example 2: Defining a GridViewDataColumn declaratively__
 
@@ -140,18 +140,15 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 	Dim column As New GridViewDataColumn()
 {{endregion}}
 
-* Set __Header__ property and add the column to the __Columns__ collection. The __default Header__ will be the property specified as __DataMemberBinding__. 
-		  
-
->importantYou can utilize the __UniqueName__ property of a column only when you have also configured the __DataMemberBinding__ for it. Otherwise, please define __GridViewColumn__ and use its __Header__ property instead of  the __UniqueName__ one. 
+You can then set the column's __Header__ property and add the column to the __Columns__ collection. The __default Header__ will be the property specified as __DataMemberBinding__.
 			  
-#### __[XAML] Example 4: Defining a column declaratively with UniqueName property set__
+#### __[XAML] Example 4: Defining a column declaratively with DataMemberBinding property set__
 
 {{region xaml-gridview-columns-defining-columns_5}}
 	<telerik:RadGridView x:Name="radGridView"
 	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" Header="First Name" UniqueName="FirstName" />
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" Header="First Name" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
@@ -162,7 +159,6 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 	GridViewDataColumn column = new GridViewDataColumn();
 	column.DataMemberBinding = new Binding("FirstName");
 	column.Header = "My Column";
-	column.UniqueName = "MyColumn";
 	this.radGridView.AutoGenerateColumns = false;
 	this.radGridView.Columns.Add(column);
 {{endregion}}
@@ -173,13 +169,13 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 	Dim column As New GridViewDataColumn()
 	column.DataMemberBinding = New Binding("FirstName")
 	column.Header = "My Column"
-	column.UniqueName = "MyColumn"
 	Me.radGridView.AutoGenerateColumns = False
 	Me.radGridView.Columns.Add(column)
 {{endregion}}
 
-* To access the column later, use the __UniqueName__ value or its __column index__ as a key for the __Columns__ collection.
-		  
+Similarly, you can set any of the column's other properties or [copy them from another column](#copying-properties-from-another-column).
+
+To access the column later, use the string used for the DataMemberBinding value or its __column index__ as a key for the __Columns__ collection.
 
 #### __[C#] Example 6: Accessing a column by index__
 
@@ -188,7 +184,6 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 	myColumn = this.radGridView.Columns[0];
 {{endregion}}
 
-
 #### __[VB] Example 6: Accessing a column by index__
 
 {{region vb-gridview-columns-defining-columns_9}}
@@ -196,41 +191,12 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 	myColumn = Me.radGridView.Columns(0)
 {{endregion}}
 
-* In order to set a __CellTemplate__ of __GridViewDataColumn__ in code-behind you can store a defined __DataTemplate__ within __Resources collection__ as follows:
 
-#### __[XAML] Example 7: Defining a DataTemplate__
-
-{{region xaml-gridview-columns-defining-columns_10}}
-	<Grid.Resources>
-	    <DataTemplate x:Key="dataTemplate1">
-	        <TextBlock Text="Text"/>
-	    </DataTemplate>
-	</Grid.Resources>
-{{endregion}}
-
-Then reference it in code-behind as demonstrated below:
-        
-#### __[C#] Example 8: Applying the defined DataTemplate through the CellTemplate property__
-
-{{region cs-gridview-columns-defining-columns_12}}
-	GridViewDataColumn column = new GridViewDataColumn();
-	column.CellTemplate = (DataTemplate)this.Resources["dataTemplate1"];
-	radGridView.Columns.Add(column);
-{{endregion}}
-
-#### __[VB] Example 8: Applying the defined DataTemplate through the CellTemplate property__
-
-{{region vb-gridview-columns-defining-columns_13}}
-	Dim column As New GridViewDataColumn()
-	column.CellTemplate = CType(Me.Resources("dataTemplate1"), DataTemplate)
-	radGridView.Columns.Add(column)
-{{endregion}}
-
-## Copying Properties from another Column
+## Copying Properties from Another Column
 
 __RadGridView__ provides a mechanism for easily fetching the properties of one column to another. This can be done through the __CopyPropertiesFrom__ method of __GridViewColumn__. 
 
-#### __[C#] Example 9: Copying the properties of one column to another__
+#### __[C#] Example 7: Copying the properties of one column to another__
 
 {{region cs-gridview-columns-defining-columns_14}}
 	GridViewDataColumn col = new GridViewDataColumn();
@@ -238,7 +204,7 @@ __RadGridView__ provides a mechanism for easily fetching the properties of one c
 	this.clubsGrid.Columns.Add(col);
 {{endregion}}
 
-#### __[VB] Example 9: Copying the properties of one column to another__
+#### __[VB] Example 7: Copying the properties of one column to another__
 
 {{region cs-gridview-columns-defining-columns_14}}
 	Dim col As GridViewDataColumn = New GridViewDataColumn()

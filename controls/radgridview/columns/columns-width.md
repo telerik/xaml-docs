@@ -33,7 +33,7 @@ There are several values that you can assign to the property:
 
 * **SizeToCells**: The width is set according to the longest text from the cells.
 
-* **SizeToHeader**: The width is set according to the length of the column's header.
+* **SizeToHeader**: The width is set according to the length of the column's header. This is the default value. 
 
 * **Auto**: The width is set according to the longest value(might be the header or a value within the cell).
 
@@ -60,7 +60,7 @@ The values that could be assigned to the property are enumerated below:
 
 * **SizeToHeader**: The width is set according to the length of the column's header.
 
-* **Auto**: The width is set according to the longest value(might be the header or a value within the cell).
+* **Auto**: The width is set according to the longest value(might be the header or a value within the cell). This is the default value. 
 
 * __* (Star)__: The column would take as much space as there is available.
 

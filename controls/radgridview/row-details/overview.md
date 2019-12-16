@@ -56,7 +56,7 @@ If you want to learn more about the __Row Details__ and how to implement them in
 
  * [Grid Rows Overview]({%slug gridview-rows-overview%})
 
- * [Grid Columns Overview]({%slug gridview-columns-overview%})
+ * [Defining Columns]({%slug gridview-columns-defining-columns%})
 
  * [Populating with Data Overview]({%slug gridview-data-overview%})
 

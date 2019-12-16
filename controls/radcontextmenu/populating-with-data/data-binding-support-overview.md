@@ -42,8 +42,6 @@ Besides the __RadContextMenu's ItemTemplate__ property, you could use the __Disp
 
 ## See Also
 
- * [Populating with Data - Overview]({%slug radcontextmenu-populating-with-data-overview%})
-
  * [Using Static Items]({%slug radcontextmenu-populating-with-data-using-static-items%})
 
  * [Binding to Dynamic Data]({%slug radcontextmenu-populating-with-data-binding-to-dynamic-data%})

@@ -10,12 +10,9 @@ position: 9
 
 # How to Add Close and Create Buttons to the Tab Headers using MVVM approach
 
-
+>important Since R2 2019 the RadTabItem supports built-in close and pin buttons. Read more about this in the [Pin and Close]({%slug radtabcontrol-features-pinandclose%}) article.
 
 The goal of this tutorial is to create a __RadTabControl__ with closable tab items using an MVVM approach.
-	  
-
-## 
 
 It demonstrates how to close and create new items using *close* and *add* buttons placed in the tab header as shown on the snapshot bellow:
 ![Rad Tab Control How To Add Close Buttons MVVM](images/RadTabControl_HowTo_AddCloseButtons_MVVM.png)
@@ -28,7 +25,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 * Then we need to define our __ViewModels__. We can start by creating a class to describe the __RadTabItems__ - __TabViewModel__ exposing a __Header__ property. As we're taking an MVVM approach to implement the Add and Close buttons functionality, we'll also have to set up Add and Close commands in the __TabViewModel__.
 			
 
-#### __C#__
+#### __[C#] Example 1: Create ViewModels__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-0}}
     public class MainViewModel
@@ -71,7 +68,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Create ViewModels__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-0}}
     Public Class MainViewModel
@@ -115,7 +112,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 * After that we can go ahead and create a __MainViewModel__ to define the collection of *TabViewModel* items which we will use to populate the __RadTabControl.ItemsSource__. Please note that as the add/close logic will change the __RadTabControl.ItemsSource__ collection, it's best to implement the commands execution methods in this ViewModel as well:
 			
 
-#### __C#__
+#### __[C#] Example 2: Creating TabViewModel__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-1}}
     public class TabViewModel : INotifyPropertyChanged, IDisposable
@@ -200,7 +197,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Creating TabViewModel__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-1}}
     Public Class TabViewModel
@@ -281,13 +278,12 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 	{{endregion}}
 
 
-
 * Now that our ViewModels are all in place, we can proceed with the definition of our view. In order to take full advantage of the implemented commands we have to bind the Add/Close __Buttons Command__ properties to the appropriate __DelegateCommands__ definitions.
 			
 
 * Here is how the __Resources__ section of our view looks like: {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 3: Binding buttons Command property__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-0}}
       <Style x:Key="CloseButton"
@@ -400,7 +396,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 3: Binding buttons Command property__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-0-sl}}
     <Style x:Key="CloseButton" TargetType="Button">
@@ -565,10 +561,9 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 
 {% endif %}
 
-* And here is the __RadTabControl__ definition:
-			
+* And here is the __RadTabControl__ definition:			
 
-#### __XAML__
+#### __[XAML] Example 4: Defining RadTabControl__
 
 {{region radtabcontrol-how-to-add-close-button-mvvm-1}}
     <telerik:RadTabControl x:Name="tabControl"
@@ -581,9 +576,8 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 	{{endregion}}
 
 
-
 >Please note that in the above sample we have defined custom styles for the __Button__ controls which you can remove or modify accordignly to your requirements.
-		  
+	  
 
 ## See Also
 

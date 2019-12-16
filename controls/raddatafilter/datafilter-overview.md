@@ -15,7 +15,7 @@ position: 0
 
 Thank you for choosing __RadDataFilter__!        
 
-Building complex filter expressions in a breeze with Telerik __DataFilter__. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
+Build complex filter expressions in a breeze with Telerik __DataFilter__. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
         
 ![](images/datafilter_overview.jpg)
 
@@ -23,7 +23,7 @@ Building complex filter expressions in a breeze with Telerik __DataFilter__. The
 
 * __Visual Expression Building__: With the extremely intuitive UI, __RadDataFilter__ is very user-friendly. Select your filter options with a simple point-and-click. The control allows specifying expressions based on the data and collection type of the source. You can build complex expressions on multiple fields with And/Or operators and a myriad of filter functions.
 
-* __Seamless Integration__: __RadDataFilter__ can communicate with any kind of collections (even a plain IEnumerable). The control can then be bound to any ItemsControls (RadGridView, RadTreeListView, RadComboBox, RadTreeView etc.) to the filtered endpoint called __FilteredSource__. This allows extreme flexibility and loose coupling.
+* __Seamless Integration__: __RadDataFilter__ can communicate with any kind of collection (even a plain IEnumerable). An ItemsControl (RadGridView, RadTreeListView, RadComboBox, RadTreeView etc.) can then be bound to the filtered endpoint called __FilteredSource__. This allows extreme flexibility and loose coupling.
 
 * __Unbound Mode__: The RadDataFilter control allows you to use its UI without passing any data to it. Read more about this in the [Unbound Mode]({%slug raddatafilter-features-unbound-mode%}) article.
 

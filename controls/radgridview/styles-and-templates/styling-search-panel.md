@@ -5,7 +5,7 @@ description: Get started with Telerik's {{ site.framework_name }} DataGrid and l
 slug: gridview-styling-search-panel
 tags: styling,search,panel
 published: True
-position: 23
+position: 24
 ---
 
 # Styling Search Panel

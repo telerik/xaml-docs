@@ -53,7 +53,7 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
 	AddHandler Me.radGridView.Sorting, AddressOf Me.radGridView_Sorting
 {{endregion}}
 
->When performing a custom sorting, you need to set the __IsCustomSortingEnabled__ property of the column to True.
+>When performing a custom sorting, you need to set the __IsCustomSortingEnabled__ property of the column to True. This is required in order to preserve the sorting direction of the column when another data operation (such as sorting, filtering or grouping) is performed.
 
 Take a look at the __GridViewSortingEventArgs__ argument of the event handler. There are a few properties that require your attention:
         

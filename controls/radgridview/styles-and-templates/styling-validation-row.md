@@ -12,19 +12,17 @@ position: 22
 
 > Before reading this topic, you might find it useful to get familiar with RadGridView’s [validation]({%slug gridview-managing-data-validation%}) functionality.
 
-__RadGridView's__ invalid styles are located in __Themes.Implicit\OfficeBlack\Themes\Telerik.Windows.Controls.GridView.xaml__ file.
+__RadGridView's__ styles are located in __Themes.Implicit\{your theme}\Themes\Telerik.Windows.Controls.GridView.xaml__ file.
 
-To edit the default invalid row style, you can extract the default __ControlTemplate__ of the __GridViewRow__. You can check the [Edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) help article which describes how you can get the default template of the controls. In the extracted templated, you can navigate to a __Border__ element with x:Name="Background_Invalid" and modify its properties as desired.
+To edit the default invalid row style, you can extract the __ControlTemplate__ of the __GridViewRow__. You can check the [Edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) help article which describes how you can get the default template of the controls. In the extracted template, you can navigate to the __Border__ element with x:Name="Background_Invalid" and modify its properties as desired.
 
->tip In a case you use different themes and the user can changed them runtime, you will have to extract the default template of the GridViewRow for each theme that you are using. So when the user change the theme, the modified style for respectful theme need to be used.
+>tip In case you use different themes and the user can change them at runtime, you will have to extract and modify the default template of the GridViewRow for each theme that you are using.
 
 #### __Figure 1: The default invalid row__
 
 ![Telerik {{ site.framework_name }} DataGrid Invalid-Row-](images/styling-invalid-row.PNG)
 
 > To learn how to customize any Telerik theme, see the [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) article.
-
-* Manually 
 
 #### __[XAML] Example 1: Invalid row in the Office_Black theme__
 {{region styling-validation-tooltip-in-gridview-0}}

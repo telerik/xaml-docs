@@ -49,12 +49,12 @@ If you wish to implement your own touch logic, you can override the **Initialize
 
 ## Increase Markers Drag Area
 
-By default, dragging the markers is possible if the swipe occurs up to **30 pixels** from their center. This area can be controlled via the **TouchMarkerDragDistance** property of the **SyntaxEditorPresenter**.
+By default, dragging the markers is possible if the swipe occurs up to **30 pixels** from their center. This area can be controlled via the **TouchMarkerDragDistance** property of the **RadSyntaxEditor** control.
 
 #### __[C#] Example 2: Increase markers drag area__
 {{region cs-radsyntaxeditor-touch-1}}
 
-    this.syntaxEditor.EditorPresenter.TouchMarkerDragDistance = 40;
+    this.syntaxEditor.TouchMarkerDragDistance = 40;
 {{endregion}}
 
 ## See Also

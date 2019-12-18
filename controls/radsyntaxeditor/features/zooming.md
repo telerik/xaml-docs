@@ -57,4 +57,4 @@ If you wish to disallow your users to zoom through the control's UI, you can set
 
 ## See Also
 
-* [IntelliSense]({%slug radsyntaxeditor-visual-structure%})
+* [IntelliPrompts]({%slug radsyntaxeditor-features-intelliprompts%})

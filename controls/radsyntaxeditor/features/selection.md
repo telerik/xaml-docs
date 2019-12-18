@@ -110,4 +110,4 @@ If you want to disable selection for your users, you can set the **IsSelectionEn
 ## See Also
 
 * [Find and Replace]({%slug radsyntaxeditor-features-find-replace%})
-* [IntelliSense]({%slug radsyntaxeditor-visual-structure%})
+* [IntelliPrompts]({%slug radsyntaxeditor-features-intelliprompts%})

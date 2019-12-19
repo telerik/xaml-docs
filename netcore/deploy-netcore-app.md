@@ -31,7 +31,7 @@ This article shows how to deploy a WPF .NET Core Application using Visual Studio
 
 ## Deploy the Application
 
->important The approach shown here is available with the official Visual Studio 2019 and later versions. If you use a previous build of VS, check the [Deploy .NET Core apps with Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs?tabs=vs156) MSDN article.
+>important The approach shown here is available with Visual Studio 2019.
 
 1. Right click the project in Visual Studio and select the __Publish__ option. This will open the __Pick a publish taget__ dialog.
 

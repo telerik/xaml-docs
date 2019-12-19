@@ -1,12 +1,12 @@
 ---
-title: Binding to Object
-page_title: Binding to Object
-description: Binding to Object
-slug: radtaskboard-populating-with-data-data-binding-to-object
-tags: binding,to,object
+title: Binding to CollectionViewSource
+page_title: Binding to CollectionViewSource
+description: Binding to CollectionViewSource
+slug: radtaskboard-populating-with-data-data-binding-to-collectionviewsource
+tags: binding,to,collectionviewsource
 published: True
 position: 5
 ---
 
-# Binding to Object
+# Binding to CollectionViewSource
 

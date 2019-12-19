@@ -22,7 +22,7 @@ position: 6
 	background: #0000E6;
 }
 .keywordColor-dark{
-	background: #8000FF;
+	background: #B266FF;
 }
 .keywordColor-neutral{
 	background: #0080FF;
@@ -100,7 +100,7 @@ position: 6
 	background: #A35C15;
 }
 .xmlElementColor-dark{
-	background: #565CD6;
+	background: #569CD6;
 }
 .xmlElementColor-neutral{
 	background: #C91919;
@@ -145,7 +145,7 @@ position: 6
 	background: #8000FF;
 }
 .xmlStringColor-neutral-dark{
-	background: #A64CFF;
+	background: #B266FF;
 }
 /* XmlTagColor */
 .xmlTagColor-light{

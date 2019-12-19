@@ -32,7 +32,7 @@ Let's define the following class which will be responsible for classifying the w
 
         private static readonly string[] Operators = new string[]
         {
-            "+", "-",  "*", "/"
+            "+", "-",  "\*", "/"
         };
 
         public static readonly ClassificationType FruitsClassificationType = new ClassificationType("Fruits");

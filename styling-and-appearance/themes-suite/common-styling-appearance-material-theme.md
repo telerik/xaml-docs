@@ -123,7 +123,7 @@ The default values of the brushes in the theme are listed below:
 #### __Figure 1: Theme colors represented in RadOutlookBar__
 ![material theme colors](images/materialOutlook.PNG)	
 
-## MaterialPalette Brushes
+## MaterialPalette Properties
 
 Below you can find more details about each brush and where it is usually applied. They can be divided in 4 groups based on their color:
 
@@ -131,6 +131,7 @@ Below you can find more details about each brush and where it is usually applied
 * [Primary Brushes](#primary-brushes)
 * [Accent Brushes](#primary-brushes)
 * [Special Brushes](#special-brushes)
+* [Other Properties](#other-properties)
 
 ### **Neutral Brushes**
 White, Gray, Black 
@@ -166,6 +167,11 @@ Amber
 
 * **ValidationBrush**: A bright red brush used for indicating validation errors - for the underline of the invalid control and as a background for the error tooltip, background for invalid rows and cells as well as for clear buttons' mouse over states.
 * **RippleBrush**: A white by default brush which is used for the ripple effect of the MaterialControl. By itself it is a solid color, the opacity of the ripple comes from the MaterialControl’s RippleOpacity property.
+
+## Other Properties
+
+* **DisabledOpacity**: Used for text when they are disabled. Backgrounds usually use the  **AlternativeBrush** when disabled.
+* **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
 
 ## Font Family and Font Size
 
@@ -246,6 +252,22 @@ The **Material Theme** exposes an easy way to modify the corner radius of many e
 #### __Figure 3: Apperance of a RadButton control after changing the default corner radius__
 ![corner radius](images/materialtheme-corner-radius.png)	
 
+## Changing Opacity 
+
+If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the MaterialPalette. The default values are 0.26 and 1 respectively. 
+
+#### __[C#] Example 7: Changing the opacity__		
+{{region cs-styling-appearance-material-theme-6}}
+	MaterialPalette.Palette.DisabledOpacity = 0.5;
+	MaterialPalette.Palette.ReadOnlyOpacity = 0.5;
+{{endregion}}
+	
+#### __[VB.NET] Example 7: Changing the opacity__		
+{{region vb-styling-appearance-material-theme-7}}
+	MaterialPalette.Palette.DisabledOpacity = 0.5
+	MaterialPalette.Palette.ReadOnlyOpacity = 0.5
+{{endregion}}
+
 ## Material Assist
 
 The **Material Assist** static class exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of the dependency properties which can be set directly in XAML:
@@ -260,13 +282,13 @@ The **Material Assist** static class exposes a set of attached properties and ca
 
 **Example 8** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
 
-#### __[XAML] Example 7: Declare the namespace for the Material components__
-{{region styling-appearance-material-theme-6}}
+#### __[XAML] Example 8: Declare the namespace for the Material components__
+{{region styling-appearance-material-theme-8}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Example 8: Set RadToggleButton's visual appearance through the MaterialAssist class__
-{{region styling-appearance-material-theme-7}}
+#### __[XAML] Example 9: Set RadToggleButton's visual appearance through the MaterialAssist class__
+{{region styling-appearance-material-theme-9}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
                                mat:MaterialAssist.MouseOverBrush="{telerik:MaterialResource ResourceKey=AccentHoverBrush}"
@@ -281,14 +303,14 @@ The **Material Assist** static class exposes a set of attached properties and ca
 
 ## Shadow 
 
-The **Shadow** is one of the newly introduced elements designed specifically for the needs of the **Material Theme**. It is used to add a shadow effect around another control or element. 
+The **Shadow** is one of the newly introduced elements designed specifically for the needs of the **Material Theme**. It is used to add a shadow effect around another control or element.
 
 >important The Shadow element **is not intended to directly host other elements** as the WPF drop shadow effect affects any nested texts and results in blurry characters. 
 
 If you would like to use it separately in your application, you should work with its Width/Height properties so that it appears around the desired element as shown in **Example 9**.
 
-#### **[XAML] Example 9: Using a Shadow component separately**
-{{region styling-appearance-material-theme-8}}
+#### **[XAML] Example 10: Using a Shadow component separately**
+{{region styling-appearance-material-theme-10}}
 	 <Grid>
                 <mat:Shadow Background="White" Width="150" Height="30" ShadowDepth="Depth5"/>
                 <TextBlock Text="Some Text"
@@ -323,8 +345,8 @@ Another element specifically designed for the Material theme and used to display
 
 The following code snippets show how you can integrate the Material Control with a RadButton  
 
-#### **[XAML] Example 10: Declaration of the Button element with a glyph as text**
-{{region styling-appearance-material-theme-9}}
+#### **[XAML] Example 11: Declaration of the Button element with a glyph as text**
+{{region styling-appearance-material-theme-11}}
 		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
                 <TextBlock FontFamily="{StaticResource TelerikWebUI}"
                            FontSize="32" FontWeight="Normal" FontStyle="Normal"
@@ -332,8 +354,8 @@ The following code snippets show how you can integrate the Material Control with
          </Button>
 {{endregion}}
   					
-#### **[XAML] Example 11: Button's Style declaration**
-{{region styling-appearance-material-theme-10}}
+#### **[XAML] Example 12: Button's Style declaration**
+{{region styling-appearance-material-theme-12}}
 	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FF2196F3" />
             <Setter Property="Foreground" Value="{telerik:MaterialResource ResourceKey=MarkerInvertedBrush}" />
@@ -375,8 +397,8 @@ The following code snippets show how you can integrate the Material Control with
 
 It is possible to disable the ripple effect of the MaterialControl through a style. __Example 12__ demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
 
-#### **[XAML] Example 12: Disabling the Ripple effect**
-{{region styling-appearance-material-theme-11}}
+#### **[XAML] Example 13: Disabling the Ripple effect**
+{{region styling-appearance-material-theme-13}}
 	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
         <Style TargetType="mat:MaterialControl" BasedOn="{StaticResource MaterialControlStyle}" > 
         -->

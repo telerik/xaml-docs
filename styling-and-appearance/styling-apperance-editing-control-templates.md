@@ -31,6 +31,8 @@ When you have the file open in an editor you need to find the default style for 
 
 After you locate the style you have to navigate to the value of its **Template** property setter which will point you to the control template. Once you have copied the template you can easily modify it and apply it either to a single instance of the control or throughout your application by creating the appropriate style and setting its **Template** property.
 
+>importantWhen changing a __Control Template__ you must include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+
 For example, if you want to add a rounded red border around the **RadListBox** control you need to extract the respective control template and modify it as demonstrated in **Example 1**.
 
 #### __[XAML] Example 1: Adding a border around the RadListBox control__

@@ -13,17 +13,14 @@ position: 1
 Another important note is that the Silverlight plug-in that hosts the control has to be Windowless enabled. For example, if the Silverlight control is hosted in an .aspx page, then:
 
 #### [ASPX] Example 1: Setting the windowless parameter in ASPX page
-{{region radhtmlplaceholder-getting-started_0}}
     <div style="height: 100%;">
         <asp:silverlight id="Xaml1" windowless="true" runat="server" source="~/ClientBin/RadHtmlPlachoderDemo.xap"
             minimumversion="2.0.31005.0" width="100%" height="100%" />
     </div>
-{{endregion}}
 
 If hosted in .html page then:
 
 #### [HTML] Example 2: Setting the windowless parameter in HTML page
-{{region radhtmlplaceholder-getting-started_1}}
     <div id="silverlightControlHost">
         <object data="data:application/x-silverlight-2," type="application/x-silverlight-2"
             width="100%" height="100%">
@@ -40,7 +37,6 @@ If hosted in .html page then:
         </object>
         <iframe style='visibility: hidden; height: 0; width: 0; border: 0px'></iframe>
     </div>
-{{endregion}}
 
 Once the Silverlight plug-in is Windowless enabled, then adding RadHtmlPlaceholder is pretty simple:
 

@@ -6,6 +6,7 @@ slug: raddataform-styles-and-templates-templates-structure
 tags: templates,structure
 published: True
 position: 1
+include_in_navigation: False
 ---
 
 # Templates Structure

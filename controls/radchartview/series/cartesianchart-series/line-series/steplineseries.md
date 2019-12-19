@@ -1,7 +1,7 @@
 ---
 title: StepLineSeries
 page_title: StepLineSeries
-description: StepLineSeries
+description: This article describes the StepLineSeries component from the RadChartView suite.
 slug: radchartview-series-steplineseries
 tags: steplineseries
 published: True
@@ -10,12 +10,7 @@ position: 2
 
 # StepLineSeries
 
-This series is visualized on the screen as a horizontal and vertical line instead of straight line which connects all data points. This series changes its value with a step.      
-
-* [Declaratively Defined Series](#declaratively-defined-series)
-* [Properties](#properties)
-* [Data Binding](#data-binding)
-* [Styling the Series](#styling-the-series)
+This series is visualized on the screen as a horizontal and vertical line instead of straight line which connects all data points. This series changes its value with a step.
 
 ## Declaratively defined series
 
@@ -60,6 +55,9 @@ You can use the following definition to display a simple StepLineSeries
 	* __Default__: The risers position depends on the plot mode of the axes.
 	* __OnTicks__: The risers will be plotted over each tick.
 	* __BetweenTicks__: The risers are plotted in the middle of the range, defined between each two ticks.
+
+#### __Figure 2: BetweenTicks and OnTicks RisersPosition values based on Example 1__
+![StepLineSeries with BetweenTicks and OnTicks RisersPosition](images/radchartview-series-risersposition.png)
 
 ## Data Binding
 

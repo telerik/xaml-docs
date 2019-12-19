@@ -6,7 +6,6 @@ slug: radtoolbar-declaration
 tags: getting,started
 published: True
 position: 2
-site_name: Silverlight
 ---
 
 # Getting Started

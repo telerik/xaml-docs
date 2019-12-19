@@ -1,33 +1,54 @@
 ---
-title: Filter on Date value only
-page_title: Filter on Date value only
-description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to filter on date value only.
-slug: gridview-filtering-howto-filter-date-value
-tags: filter,on,date,value,only
+title: Filter on Date and Time
+page_title: Filter on Date and Time
+description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to filter on both the date and time portion.
+slug: gridview-filtering-howto-filter-date-time-value
+tags: filter,on,date,and,time
 published: True
 position: 13
 ---
 
-# Filter on Date value only
+# Filter on Date and Time
 
-Most probably your __DateTime data contains a time part which is different from 00:00:00__. When you filter and select a DateTime value, this selected DateTime will have its time part equal to zero if you forget to enter the time part.
-        
->Since DateTime’s with different time parts are not equal for the .NET Framework, you will have no match.
-          
-A possible solution would be to __trim the time part__ of your DateTimes. __Alternatively, you may instruct the user to enter both the date and time parts__ of the date when filtering.
-        
+By default, when a GridViewDataColumn is bound to a property of type **DateTime** the generated field filter editor is a [RadDateTimePicker]({%slug raddatetimepicke-getting-started%}). It's [InputMode]({%slug raddatetimepicker-features-input-modes%}), however, is DatePicker which means that only the **Date** portion of the DateTime object can be selected through the UI.
 
-An even better approach would be to __bind your column directly to the Date (or Year) property__ of the DateTime object.
-        
+Most probably, however, your __DateTime data contains a time part which is different than 00:00:00__. When you filter and select a DateTime value, this selected DateTime will have its time part equal to zero. Since DateTime objects with different time parts are not equal for the .NET Framework, you will have no match.
 
->tipFor example: DataMemberBinding="{Binding BirthDate.Date}"
+A possible approach in the case when you also wish to filter out the **Time** portion is to handle the [FieldFilterEditorCreated]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}) event and set the InputMode of the RadDateTimePicker editor to **DateTimePicker**. **Example 1** demonstrates how this can be achieved.
 
-As alternative solution, you can benefit from a property called __FilterMemberPath__. You can use it to tell the column to __filter on a property different from the one it displays__ in its cells.
-        
+#### __[C#] Example 1: Change the InputMode of the RadDateTimePicker filter editor to DateTimePicker__
 
->tipFor example: FilterMemberPath="BirthDate.Date". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
-          
+{{region cs-gridview-filtering-howto-filter-date-time-value_0}}
+	private void GridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
+	{
+	    if (e.Column.UniqueName == "HireDate")
+	    {
+	        Telerik.Windows.Controls.RadDateTimePicker picker = e.Editor as Telerik.Windows.Controls.RadDateTimePicker;
+	        if (picker != null)
+	        {
+	            picker.InputMode = Telerik.Windows.Controls.InputMode.DateTimePicker;
+	        }
+	    }
+	}
+{{endregion}}
+
+Another approach, if you want to filter only on the Date portion of the DateTime objects would be to __bind your column directly to the Date (or Year) property__ of the DateTime object.
+
+#### __[XAML] Example 2: Bind the column to the Date portion of the property__
+
+{{region xaml-gridview-filtering-howto-filter-date-time-value_1}}
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding HireDate.Date}" />
+{{endregion}}
+
+As an alternative solution, you can benefit from the [FilterMemberPath]({%slug gridview-filtering-basic%}#filtermemberpath) property of the column. You can use it to __filter the column on a property different from the one it displays__ in its cells.
+
+#### __[XAML] Example 3: Filter only on the Date portion of the property with FilterMemberPath__
+
+{{region xaml-gridview-filtering-howto-filter-date-time-value_2}}
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding HireDate}" FilterMemberPath="HireDate.Date" />
+{{endregion}}
 
 ## See Also
 
- * [Basic Filtering]({%slug gridview-filtering-basic%})
+* [Basic Filtering]({%slug gridview-filtering-basic%})
+* [Customize the Default Field Filter Editor]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%})

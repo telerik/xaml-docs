@@ -25,7 +25,7 @@ The files uploaded through the __RadUpload__ are separated in chunks, which get 
 
  If this is the case, you would have to configure your server to be able to accept larger chunks of data. You can do this from the __web.config__ file by setting a larger __maxRequestLength__ with the following code :
 
-#### __[ASPX] Example 2: Setting up the server__  
+#### __[XML] Example 2: Setting up the server__  
 {{region radupload-features-buffering_1}}
 	<configuration>
 		<system.web>

@@ -21,5 +21,3 @@ In order to use __Telerik.Windows.Controls.RadTabControl__ in your projects, you
  * [How to Change the Position of the Tab Strip of RadTabControl]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%})
 
  * [How to Select Control in Expression Blend]({%slug radtabcontrol-how-to-select-control-in-expression-blend%})
-
- * [How to Create Multi-line Tabs]({%slug radtabcontrol-how-to-create-multi-line-tabs%})

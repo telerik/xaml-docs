@@ -17,8 +17,8 @@ This information is for our own purposes and do not sell or otherwise provide th
 
 ## How I can see what data about me is stored?
 
-You can see the information stored for your account by sending request to us via the following form [GDPR Data Subject Access Rights Request](https://app.onetrust.com/app/#/webform/65e969b1-9755-4cb6-adbb-0ae5939fb132)
+You can see the information stored for your account by sending request to us via the following form [GDPR Data Subject Access Rights Request](https://app.onetrust.com/app/#/webform/7897e80a-b8a4-4797-883a-bdacfe1ab8e4)
 
 ## How I can delete the data stored about me?
 
-You can request deletion of the information stored for your account by sending request to us via the following form [GDPR Data Subject Access Rights Request](https://app.onetrust.com/app/#/webform/65e969b1-9755-4cb6-adbb-0ae5939fb132)
+You can request deletion of the information stored for your account by sending request to us via the following form [GDPR Data Subject Access Rights Request](https://app.onetrust.com/app/#/webform/7897e80a-b8a4-4797-883a-bdacfe1ab8e4)

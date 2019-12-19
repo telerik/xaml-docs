@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: This article demonstrates how to create a sample application containing a RadSlider.
 slug: radslider-declaration
 tags: getting,started
 published: True
@@ -11,11 +11,6 @@ position: 1
 # Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains a __RadSlider__. 
-
-* [Assembly References](#assembly-references)
-* [Adding RadSlider to the Project](#adding-radslider-to-the-project)
-* [Key Properties](#key-properties)
-
 
 ## Assembly References
 
@@ -31,7 +26,7 @@ You can add __RadSlider__ in XAML or in code as demonstrated in examples 1 and 2
 
 #### __[XAML] Example 1: Adding RadSlider in XAML__
 {{region xaml-radslider-declaration_0}}
-	<telerik:RadSlider Value="5" Minimum="0" SmallChange="1" Maximum="100"/>
+	<telerik:RadSlider Value="5" Minimum="0" Maximum="100" SmallChange="1" />
 {{endregion}}
 
 #### __[C#] Example 2: Adding RadSlider in code__
@@ -54,6 +49,8 @@ You can add __RadSlider__ in XAML or in code as demonstrated in examples 1 and 2
 
 #### Figure 1: Result from Examples 1 and 2
 ![RadSlider](images/radslider_gettingstarted.png)
+
+> By default the __Value__ of the RadSlider will be constantly updated while the thumb is dragged. If you want the value to be updated only once, when the thumb is released, you can set the __IsDeferredDraggingEnabled__ property to __True__.
 
 ## See Also
 * [Visual Structure]({%slug radslider-visual-structure%})

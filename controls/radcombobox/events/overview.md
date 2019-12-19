@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This topic lists the events specific for the __RadComboBox__ control and it shows how to subscribe to an event.
 slug: radcombobox-events-overview
 tags: overview
 published: True
@@ -10,34 +10,56 @@ position: 0
 
 # Overview
 
-This topic covers the specific events exposed by the __RadComboBox__ control.
+This topic lists the events specific for the __RadComboBox__ control and it shows how to subscribe to an event.
 
-The __RadComboBox__ is an __ItemsControl__. Almost all of the exposed events are inherited from the __ItemsControl__ class. __RadComboBox__ adds two additional events for the developer.
+## Subscribing to Event
 
-* __DropDownOpened__ - occurs when the drop-down list of the combo box opens. The __DropDownOpened__ event handler receives two arguments:
+Subcribing to an event can be done in Xaml or in code behind.
 
-	* The sender argument contains the __RadComboBox__. This argument is of type object, but can be cast to the __RadComboBox__ type.
+#### __[XAML] Example 1: Subscribing to an event in Xaml__
+{{region radcombobox-events-overview-0}}	
+	<telerik:RadComboBox x:Name="radComboBox" DropDownOpened="RadComboBox_DropDownOpened" />
+{{endregion}}
 
-	* An __EventArgs__ object.
+#### __[C#] Example 2: Subscribing to an event in code__
+{{region radcombobox-events-overview-1}}
+	 this.radComboBox.DropDownOpened += RadComboBox_DropDownOpened;
+{{endregion}}
 
-* __DropDownClosed__ - occurs when the drop-down list of the ComboBox closes. The __DropDownClosed__ event handler receives two arguments:
+## Events
 
-	* The sender argument contains the __RadComboBox__. This argument is of type object, but can be cast to the __RadComboBox__ type.
+* __DropDownOpened__: Occurs when the drop-down list of the combobox opens. 
 
-	* An __EventArgs__ object.
+	#### __[C#] Example 3: DropDownOpened event handler__
+	{{region radcombobox-events-overview-2}}
+		private void RadComboBox_DropDownOpened(object sender, EventArgs e)
+        {
+            var radComboBox = (RadComboBox)sender;
+        }
+	{{endregion}}
 
-* __SelectionChanged -__ occurs when the selected item is changed. The SelectionChanged event handler receives two arguments:
+* __DropDownClosed__: Occurs when the drop-down list of the combobox closes. 
 
-	* The sender argument contains the __RadComboBox__. This argument is of type object, but can be cast to the __RadComboBox__ type.
+	#### __[C#] Example 4: DropDownClosed event handler__
+	{{region radcombobox-events-overview-3}}
+		private void RadComboBox_DropDownClosed(object sender, EventArgs e)
+        {
+            var radComboBox = (RadComboBox)sender;
+        }
+	{{endregion}}
 
-	* A __SelectionChangedEventArgs__ object which has the following properties:
+* __SelectionChanged__: Occurs when the selected item is changed. The event arguments are of type __SelectionChangedEventArgs__ and expose the __AddedItems__ and __RemovedItems__ properties which contain the newly selected and the unselected items.
 
-		1. AddedItems - gets a list that contains the items that were selected. 
+	#### __[C#] Example 5: SelectionChanged event handler__
+	{{region radcombobox-events-overview-4}}
+		private void RadComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var radComboBox = (RadComboBox)sender;
+            IList selectedItems = e.AddedItems;
+            IList unselectedItems = e.RemovedItems;
+        }
+	{{endregion}}
 
-		1. RemovedItems - gets a list that contains the items that were unselected.
-		
 ## See Also
-
  * [Visual Structure]({%slug radcombobox-general-information-visual-structure%})
-
  * [Getting Started]({%slug radcombobox-getting-started%})

@@ -16,30 +16,6 @@ Each __RadPane__ can be grouped along with other __RadPanes__ inside of a single
 
 >In order to group your panes, you should use the __Telerik.Windows.Controls.RadPaneGroup__ class.
 
-The following cases will be examined:
-
-* [Grouping panes run-time](#grouping-panes-run-time)
-
-* [Grouping panes programmatically](#grouping-panes-programmatically)
-
-* [Removing panes run-time](#removing-panes-run-time)
-
-* [Removing panes programmatically](#removing-panes-programmatically)
-
-* [Hiding all panes](#hiding-all-panes)
-
-* [Showing all panes](#showing-all-panes)
-
-* [Pinning all panes](#pinning-all-panes)
-
-* [Unpining all panes](#unpining-all-panes)
-
-* [Set relative size to the RadPaneGroup](#set-relative-size-to-the-radpanegroup)
-
-* [Set (Min/Max)Width and (Min/Max)Height](#set-minmaxwidth-and-minmaxheight)
-
-* [Other useful properties and methods exposed by the RadPaneGroup class](#other-properties-and-methods-exposed-by-the-radpanegroup-class)
-
 ## Grouping Panes Run-time
 
 You can group panes during run-time by simply [dragging]({%slug raddocking-features-drag-and-drop%}) the pane to the desired container.
@@ -230,11 +206,29 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 
 >tipIf you need information about the events fired when pinning and unpining panes, take a look at the [Events]({%slug raddocking-events-overview%}) topic.
 
+## Persist Content with the IsContentPreserved Property
+
+For performance optimization, the control template of the RadPaneGroup defines a single **ContentPresenter** which holds only the currently selected RadPane's content. Therefore each time the selection is changed, the content of the last active pane is unloaded in order to load the content of the newly-selected pane. Since the load/unload operations involve add/remove actions in the visual tree, the content does not keep its state.
+
+You can, however, change this behavior by setting the **IsContentPreserved** property of the RadPaneGroup to **True**.
+
+#### __[C#] Example 8: Persist panes' content__
+
+{{region cs-raddocking-features-pane-groups_19}}
+    	Group1.IsContentPreserved = true;
+{{endregion}}
+
+#### __[VB.NET] Example 8: Persist panes' content__
+
+{{region vb-raddocking-features-pane-groups_20}}
+	Group1.IsContentPreserved = True
+{{endregion}}
+
 ## Set Relative Size to the RadPaneGroup
 
 The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking__ control, are set relatively. You can set relative size to a __RadPaneGroup__ by setting the __PropertionalStackPanel.RelativeSize__ attached property. By using this property you can proportionally divide the width or the hight occupied by two or more __RadPaneGroups__ docked to the same position. For example, if you have two pane groups docked to the top, the first one should occupy 1/3 of the available width and the second - the remaining 2/3, you have to set this proportion (1:2) in their widths as it is shown in the code snippet below.
 
-#### __[XAML] Example 8: Set relative size__
+#### __[XAML] Example 9: Set relative size__
 
 {{region xaml-raddocking-features-pane-groups_17}}
 	<telerik:RadDocking x:Name="radDocking1">
@@ -273,7 +267,7 @@ Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by sett
 
 * **ElementMaxHeight**
 
-#### __[XAML] Example 9: Setting ProportionalStackPanel.ElementWidth__
+#### __[XAML] Example 10: Setting ProportionalStackPanel.ElementWidth__
 
 {{region xaml-raddocking-features-pane-groups_18}}
 	<telerik:RadSplitContainer>
@@ -308,15 +302,17 @@ As can be seen on **Figure 2**, even when pane groups with fixed sizes are prese
 
 ## Other Properties and Methods Exposed by the RadPaneGroup class
 
-* __IsInDocumentHost__ - read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}).
+* __IsInDocumentHost__: Read-only boolean property. Returns whether the current __RadPaneGroup__ is placed in [DocumentHost]({%slug raddocking-features-document-host%}).
 
-* __IsInToolWindow__- read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}).
+* __IsInToolWindow__: Read-only boolean property. Returns whether the current __RadPaneGroup__ is in [Tool Window]({%slug raddocking-features-tool-window%}).
 
-* __IsPaneHeaderVisible__- read-only boolean property. Returns whether the pane's header is visible.
+* __IsPaneHeaderVisible__: Read-only boolean property. Returns whether the pane's header is visible.
 
-* __SelectedPane__- returns the currently selected pane within the group.
+* __SelectedPane__: Returns the currently selected pane within the group.
 
-* __EnumeratePanes()__- returns __IEnumeratble__ of __RadPane__ objects. These are all the panes that currently belonging to the group.
+* __EnumeratePanes()__: Returns __IEnumeratble__ of __RadPane__ objects. These are all the panes that currently belonging to the group.
+
+* __PropagateItemDataContextToContent__: Specifies whether the DataContext of the RadPane should be assigned as the DataContext of its content when the selection changes. The default value of this property is __True__.
 
 ## Styling the RadPaneGroup
 

@@ -49,6 +49,6 @@ Once the user has commited the pending edit, if there are no validation errors, 
 
 ## See Also
 
-* [Selection]({%slug radpivotgrid-features-selection%})
+{% if site.framework_name == 'WPF' %}* [Selection]({%slug radpivotgrid-features-selection%}){% endif %}
 * [Export]({%slug radpivotgrid-features-export%})
 * [Expand Behavior]({%slug radpivotgrid-features-expand-behavior%})

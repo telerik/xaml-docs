@@ -39,7 +39,7 @@ As it is deployed as a ClickOnce application it requires the following component
 
 If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
 
-> Lauching the ClickOnce application is possible only in Internet Explorer.
+> Lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer.
 
 Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 
@@ -74,7 +74,7 @@ __Figure 1: Exception when trying to install WPF Demos__
 ![](images/wpf_demos_0.png)
 
 Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: 
-C:\Users\\<your_user>\AppData\Local\Apps\2.0
+C:\Users\\&lt;your_user&gt;\AppData\Local\Apps\2.0
 
 * SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
 

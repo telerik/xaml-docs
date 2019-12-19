@@ -5,7 +5,7 @@ description: Formatting via a Sample UI
 slug: radrichtextbox-getting-started-formatting-via-a-sample-ui
 tags: getting,started, formatting, UI
 published: True
-position: 3
+position: 4
 ---
 
 # Formatting via a Sample UI

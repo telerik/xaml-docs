@@ -10,7 +10,7 @@ position: 2
 
 # Visual Structure
 
-This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
+This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continuing with the rest of the article. They can also be helpful in order to describe your issue better when contacting our support service. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
 
 ## RadButton
 
@@ -75,6 +75,15 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 * __Content__ - represents the content of the button.
 
 * __Button Part__ - represents the active part of the control.
+
+## RadToggleSwitchButton
+
+* __CheckContent__: Represents the check content of the button.
+* __UncheckContent__: Represents the uncheck content of the button.
+* __Thumb__: Represents the thumb part of the control.
+* __Track__: Represents the track part of the control.
+
+![](images/RadButtons_Visual_Structure_06.png)
 
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})

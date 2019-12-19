@@ -47,7 +47,7 @@ As every control from UI for {{ site.framework_name }},  RadTabControl comes wit
 
 * __Enhanced Routed Events Framework__: The events system of the control will help your code become even more elegant and concise.
 
-A complete list with all key features can be found in the [Key Features]({%slug radtabcontrol-key-features%}) help article.
+* __Pin and Close__: The tab items of the RadTabControl allows pin and close out of the box.
 
 >tip Get started with the control with its [Getting Started]({%slug radtabcontrol-getting-started%}) help article that shows how to use it in a basic scenario.
 

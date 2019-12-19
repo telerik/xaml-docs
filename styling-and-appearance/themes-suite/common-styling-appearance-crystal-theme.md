@@ -418,6 +418,22 @@ In accordance to the MacOS design, by default the minimize, maximize, restore an
 #### **Figure 5: Appearance of the RadWindow with the different alignments**  
 ![RadToggleButton States](images/crystal-theme-window-buttons-alignment.png)
 
+## Changing Opacity 
+
+If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the CrystalPalette. The default values are 0.35 and 0.55 respectively. 
+
+#### __[C#] Example 8: Changing the opacity__		
+{{region cs-styling-appearance-crystal-theme-7}}
+	CrystalPalette.Palette.DisabledOpacity = 0.5;
+	CrystalPalette.Palette.ReadOnlyOpacity = 0.5;
+{{endregion}}
+	
+#### __[VB.NET] Example 8: Changing the opacity__		
+{{region vb-styling-appearance-material-theme-8}}
+	CrystalPalette.Palette.DisabledOpacity = 0.5
+	CrystalPalette.Palette.ReadOnlyOpacity = 0.5
+{{endregion}}
+
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})

@@ -62,6 +62,48 @@ __Figure 2__ shows the result.
 
 ![](images/RadPasswordBox_GettingStarted_1.png)
 
+## Working with RadPasswordBox
+
+The Text property of the RadPasswordBox contains only the sequence of masking characters set by the PasswordChar property. The actual input can be reached through the Password and SecurePassword properties. These properties are not dependency properties (cannot be bound) due to security reasons. To get these properties in MVVM, you can pass the RadPasswordBox element to a command from your view model. Let's demonstrate this with some code.
+
+First we will declare the RadPasswordBox in XAML and bind a RadButton's Command property to a command from our view model.
+
+#### __[XAML] Example 3: Declare the RadPasswordBox in XAML__
+
+{{region passwordbox-getting-started_2}}
+	<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
+		<telerik:RadPasswordBox x:Name="passwordBox" WatermarkContent="enter a password" Width="150" Margin="0 0 10 0" />
+		<telerik:RadButton Content="Log in" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=passwordBox}"/>
+	</StackPanel>
+{{endregion}}
+
+Now we just need to create our view model.
+
+#### __[C#] Example 3: Create ViewModel__
+
+{{region passwordbox-getting-started_2}}
+	public  class ViewModel
+	{
+		public System.Windows.Input.ICommand LoginCommand { get; set; }
+		public ViewModel()
+		{
+			LoginCommand = new DelegateCommand(OnLoginCommand_Executed);
+		}
+
+		private void OnLoginCommand_Executed(object obj)
+		{
+			var passwordBox = obj as RadPasswordBox;
+			if(passwordBox != null)
+			{
+				// actual entered password
+				var password = passwordBox.Password;
+			}
+		}
+	}
+{{endregion}}
+
+Voilà! Now when you click on the Login button, the __LoginCommand.Execute()__ method will be called. Inside the method you can get the __RadPasswordBox__ from the parameter and see the entered password from the __Password__ property.
+
 ## See Also
 
  * [Overview]({%slug radpasswordbox-overview%})

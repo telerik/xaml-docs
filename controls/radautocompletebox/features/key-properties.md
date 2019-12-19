@@ -36,7 +36,7 @@ The __TextSearchMode__ property represents the behavior by which items in the It
 
 ## Changing the SelectionMode
 
-The __SelectionMode__ property represents the behavior by which items will be selected in RadAutoCompleteBox control. This property can be set to two values - __Single__, __Multiple__. By default the SelectionMode property is set to Multiple.
+The __SelectionMode__ property represents the behavior by which items will be selected in RadAutoCompleteBox control. This property can be set to two values - __Single__, __Multiple__. By default the SelectionMode property is set to Multiple. For more information, have a look at the [Selection]({%slug radautocompletebox-features-selection%}) article.
 
 ## Setting the Style and Template properties
 
@@ -107,5 +107,5 @@ There are some other key properties in RadAutoCompleteBox:
 ## See Also
 
  * [Overview]({%slug radautocompletebox-overview%})
- 
  * [Getting Started]({%slug radautocompletebox-getting-started%})
+ * [Selection]({%slug radautocompletebox-features-selection%})

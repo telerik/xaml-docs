@@ -17,7 +17,7 @@ In order to run the __RadUpload__ in Medium Trust level you should do only one t
 
 2. In the "handlers" section append your upload handler.
 
-	#### __[ASPX] Registering the upload handlers__
+	#### __[XML] Registering the upload handlers__
 	{{region radupload-how-to-use-radupload-in-medium-trust_0}}
 		<system.WebServer>
 			<handlers>

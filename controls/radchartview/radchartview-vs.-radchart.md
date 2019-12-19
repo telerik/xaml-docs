@@ -10,7 +10,7 @@ position: 2
 
 # RadChart vs. RadChartView
 
-Since Q3 2011 we ship two separate charting controls - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of user case scenarios.			
+Since Q3 2011 we ship two separate charting controls - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of use cases.			
 
 On the other hand, __RadChartView__ is a control that addresses some of the limitations and deficiencies that we have identified in the RadChart implementation over the years. Our [Overview]({%slug radchartview-overview%}) topic can walk you through all specifics of the __RadChartView__ control.			
 
@@ -30,11 +30,11 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 * We have a stand-alone visualization layer that presents the chart view model. Every view model is presented by the simplest possible SL visual – e.g. __Rectangle__, __Line__, __Polyline__, etc. Still, every single aspect is fully customizable by specifying __DataTemplates__ or __Styles__.								
 
-* We use __Canvas__ – the only XAML panel that does not invalidate measure automatically. When a redraw of some charting part is required, we simply update the __Width__, __Height__ and __Canvas.Left__, __Canvas.Top__ properties of the corresponding visual. A simple test proved that calling __InvalidateMeasure__ of the canvas upon a change in the ViewModel degrades performance about 10 times.								
+* We use __Canvas__ – the only XAML panel that does not invalidate measure automatically. When a redraw of some charting part is required, we simply update the __Width__, __Height__, __Canvas.Left__, and __Canvas.Top__ properties of the corresponding visual. A simple test proved that calling __InvalidateMeasure__ of the canvas upon a change in the ViewModel degrades performance about 10 times.								
 
 ##### 2. __Architecture__- a number of chart controls built for a specific purpose vs one monolith control (provides cleaner, simpler, and relevant API)						
 
-* __DataBinding__ - The presentation of the data itself in both controls is achieved by declaring chart series and filling these series with data points. The significant difference is that in __RadChartView__ the chart __Series__ utilize different visualization techiques based on the data points it represents. This is why in __RadChartView__ the Series expose an __ItemsSource__ property which has to be used to populate each __Series__ with data.								
+* __DataBinding__ - The presentation of the data itself in both controls is achieved by declaring chart series and filling these series with data points. The significant difference is that in __RadChartView__ the chart __Series__ utilize different visualization techniques based on the data points it represents. This is why in __RadChartView__ the Series expose an __ItemsSource__ property which has to be used to populate each __Series__ with data.								
 
 * __Axes__
 
@@ -50,27 +50,27 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 	* Radar and Polar axis - in order to display __Radar__ and __Polar Series RadChartView__ exposes these two axes. They have no alternative in __RadChart__. More details can be found in the [Polar Axis]({%slug radchartview-axes-polaraxis%}) topic as well as in the __Series__ section of this documentation.										
 
-	* Automatic Range - In __RadChart__ you had to manually set all three range properties - __MinValue__, __MaxValue__ and __Step__ of the axis whenever you needed to customize the automatically generated range. However, the __RadChartView__ implementation allows you to set only two of the above properties as it can calculate the last one internally based on the custom settings you applied.										
+	* Automatic Range - In __RadChart__ you had to manually set all three range properties - __MinValue__, __MaxValue__, and __Step__ of the axis whenever you needed to customize the automatically generated range. However, the __RadChartView__ implementation allows you to set only two of the above properties as it can calculate the last one internally based on the custom settings you applied.										
 
 * __Series__ - __RadChartView__ supports almost all [Series]({%slug radchartview-series-chartseries%}) types known from __RadChart__ to help you create rich, visually-appealing presentations. However, there are several new features added:								
 
 	* Financial Indicators - __RadChartView__ supports 20 of the most common financial indicators to complement the data visualization for all Cartesian Series types.										
 
-	* Polar and Radar Series - a two-dimensional charts presented in radial plot area in polar coordinates.										
+	* Polar and Radar Series - two-dimensional charts presented in radial plot area in polar coordinates.										
 
 	* Combined Series - uniform __RadCartesianChart Series__ can be combined in either __Stacks__ or __Clusters__. Combinations are formed when multiple __DataPoints__ from different __Series__ fall within the same category. You can read more about this in the [Chart Series]({%slug radchartview-series-chartseries%}) topic.										
 
-	* Series Orientation - both controls allow you to have horizontally or vertically oriented series. However, while in __RadChart__ you have to specify different series types - __BarSeriesDefinition__ vs. __HorizontalBarSeriesDefinition__, in __RadChartView__ this concept is changed to facilitate usage of horizontal and vertical series. For instance, in order to display __BarSeries__ vertically in a __RadChartView__, you only need to set the __CategoricalAxis__ as an __Y-axis__ without having to change the series definition.
+	* Series Orientation - both controls allow you to have horizontally or vertically oriented series. However, while in __RadChart__ you have to specify different series types - __BarSeriesDefinition__ vs. __HorizontalBarSeriesDefinition__, in __RadChartView__ this concept is changed to facilitate the usage of horizontal and vertical series. For instance, in order to display __BarSeries__ vertically in a __RadChartView__, you only need to set the __CategoricalAxis__ as a __Y-axis__ without having to change the series definition.
 
 	All supported __RadChartView Series__ types are presented in the [Series Overview]({%slug radchartview-series-chartseries%}) topic.								
 
-	* __Chart Legend__ - __RadChartView__ does not ship with a built-in legend. However, you can easily integrate the __RadLegend__ control in it.[Read More]({%slug radchartview-features-radlegend-support%})
+	* __Chart Legend__ - __RadChartView__ does not ship with a built-in legend. However, you can easily integrate the __RadLegend__ control in it. [Read More]({%slug radchartview-features-radlegend-support%})
 
 ##### 3. __Behaviors__ - both __RadChartView__ and __RadChart__ support *Selection*, *Tooltip* and *Scroll and Zoom* behaviors. However, on top of that the __RadChartView__ exposes a __TrackBall__ behavior:						
 
 * [TrackBall Behavior]({%slug radchartview-features-trackball%}) (or also known as a current value indicator) is a behavior available only within the __RadChartView__. It displays a vertical line across the charting plot area that comes with visual indicators (circles by default) at the points where the trackball line crosses the visualization of a __Series__ objects.								
 
-* [Selection]({%slug radchartview-features-selection%}) - this behavior exposes a *SelectionChanged* event that you can use to easily determine the __DataPoint__ that is selected and the __Series__ it belongs to. The behavior is avilable in both __RadChart__ and __RadChartView__ controls.								
+* [Selection]({%slug radchartview-features-selection%}) - this behavior exposes a *SelectionChanged* event that you can use to easily determine the __DataPoint__ that is selected and the __Series__ it belongs to. The behavior is available in both __RadChart__ and __RadChartView__ controls.								
 
 * [Scroll and Zoom]({%slug radchartview-features-panzoom%}) - this behavior is available in both __RadChart__ and __RadChartView__ controls. It allows horizontal and vertical zooming and scrolling. However, the approach implemented in the __RadChartView ZoomScroll__ behavior is brand new and it allows users to simultaneously set the zoom factor for both the X and Y axes.								
 
@@ -78,7 +78,7 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 ##### 4. __Sampling__ 
 
-When the chart is populated with thousands of business items, the visual representation might not be that clear. It is possible that there are two or more DataPoints shown with a very close Y and X values. This is when sampling comes in handy. The sampling engine visualizes a subset of the original data. By combining the items, so that the __DataPoints__ are limited to a certain number (200 by default). In a data-bound __RadChart__ sampling is turned on by default and is activated as soon as the __DataPoints__ number exceeds 200. However, in some cases you might have to implement a custom sampling function that determines how to combine the values of two __DataPoints__. __RadChartView__ takes that idea on another level. Instead of providing a sampling mechanism after plotting the data, the control allows you to use a [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component to sample the business data beforehand. The [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component supports both index-based and __DateTime__ sampling.						
+When the chart is populated with thousands of business items, the visual representation might not be that clear. It is possible that there are two or more DataPoints shown with very close Y and X values. This is when sampling comes in handy. The sampling engine visualizes a subset of the original data. By combining the items, so that the __DataPoints__ are limited to a certain number (200 by default). In a data-bound __RadChart__ sampling is turned on by default and is activated as soon as the __DataPoints__ number exceeds 200. However, in some cases you might have to implement a custom sampling function that determines how to combine the values of two __DataPoints__. __RadChartView__ takes that idea on another level. Instead of providing a sampling mechanism after plotting the data, the control allows you to use a [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component to sample the business data beforehand. The [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) component supports both index-based and __DateTime__ sampling.						
 
 ##### 5. __Appearance__. 
 

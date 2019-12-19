@@ -10,10 +10,6 @@ position: 2
 
 # Creating the Client Application
 
-
-
-## 
-
 Once you have created the _Server Application_, you may start developing the _Client_ one. {% if site.site_name == 'WPF' %}
 
 To display the data from the __WCF Data Service__, create a new WPF application with a data source that is based on the service. Later in this walk-through, you will add data-bound controls to the application.
@@ -58,8 +54,6 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 	}
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region raddataservicedatasource-getting-started-creating-the-client-application_1}}
@@ -72,7 +66,7 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 	End Class
 {{endregion}}
 
-
+>important If you're using a version of Visual Studio latter than **2015**, to add the service you need to follow the steps listed in [this article](https://carldesouza.com/odata-connected-service-visual-studio-2017/) instead.
 
 When we added the ___Service Reference___, __Visual Studio__ generated a hidden file that contains all client-side proxy classes. You can find this file if you tell the ___Solution Explorer___ to ___“Show All Files”___ and then drill-down in the ___Service References___ node all the way to the file called ___Reference___. When you use the ___Add Service Reference___ dialog to add a data service to an application, an entity container class is created that inherits from the __DataServiceContext__ class. This class includes properties that return typed __DataServiceQuery__ instances. In this case this class is called ___NorthwindEntities___ and we have further derived from it in order to specify the __Uri__ where it should get its data from. This was done so we can easily declare __RadDataServiceDataSource.DataServiceContext__ in XAML later on.{% endif %}{% if site.site_name == 'WPF' %}
 
@@ -144,12 +138,6 @@ When we added the ___Service Reference___, __Visual Studio__ generated a hidden 
 
 ![](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
 
-
-
 ## See Also
-
-[Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
-
-[Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%}){% if site.site_name == 'Silverlight' %}
-
-{% endif %}
+* [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})
+* [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})

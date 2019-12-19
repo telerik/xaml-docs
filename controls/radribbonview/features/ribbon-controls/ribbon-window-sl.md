@@ -73,6 +73,15 @@ In order to run the project in OOB you need to install it:
 Then you should get the final result:
 ![](images/RibbonView_RibbonWindowSL_Example.png)
 
+## Icon
+
+In order to provide a custom icon for the RadRibbonWindow, you have to set its __Icon__ property as demonstrated in the following code snippet. 
+
+#### __XAML__
+{{region xaml-radribbonview-ribbon-window-wpf-3}}
+	<telerik:RadRibbonWindow Icon="Images/application-icon.ico">
+{{endregion}}
+
 ## Themes
 
 __RadRibbonWindow__ comes with full support for all our predefined Telerik themes and you can choose the most suitable for your needs.
@@ -81,8 +90,9 @@ In order to apply a Telerik style on the __RadRibbonWindow__, it is best to use 
 
 Please note that the default __RadRibbonWindow__ implicit style cannot be applied on derived controls as their __Type__ is different than the one defined as a __TargetType__ in the implicit style. This is why in order to apply a Telerik predefined style on a __UserControl__ deriving from __RadRibbonWindow__ you need to define a __Style__ targeting the __UserControl__ type in the __Resources__ of the application. Make sure to define that style after merging the Telerik __ResourseDictionaries__ so that you can base it on the predefined __"RadRibbonWindowStyle"__.		
 
-#### __App.xaml__
+#### __XAML__
 {{region radribbonview-ribbon-window-wpf-2}}
+	<!-- In App.xaml -->
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 						xmlns:local="clr-namespace:RibbonWindow_ImplicitStylesDemo">

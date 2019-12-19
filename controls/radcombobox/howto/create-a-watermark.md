@@ -1,65 +1,56 @@
 ---
-title: Create a Watermark
-page_title: Create a Watermark
-description: Create a Watermark
+title: Show an Empty Text Placeholder
+page_title: Show an Empty Text Placeholder
+description: This article demonstrates how to customize what is shown when there is no selection in a RadComboBox.
 slug: radcombobox-create_a_watermark
 tags: create,a,watermark
 published: True
 position: 9
 ---
 
-# Create a Watermark
+## EmptyText 
 
->Before proceeding further with this tutorial, be sure that you are familiar with how to bind a __RadComboBox__ to a collection of business objects. For more information take a look at the [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%}) topic. __This tutorial will use exactly the same example as in the aforemendoned topic.__
+The __EmptyText__ property allows you to specify a string that will be shown when there is no selection. 
 
-## EmptyText property
+#### __[XAML] Example 1: Setting the EmptyText property__
 
-If you have a RadComboBox which is populated to a collection of business objects, then to set the __EmptyText__ property all we need to do is to define the ComboBox in xaml:
-
-#### __XAML__
-
-{{region radcombobox-Create_a_Watermark_0}}
-	<telerik:RadComboBox ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" DisplayMemberPath="Name" IsEditable="True" EmptyText="Please select an agency" />
+{{region xaml-radcombobox-create_a_watermark_0}}
+	<telerik:RadComboBox Width="200"
+						 ItemsSource="12345"
+						 EmptyText="Select an item">
+	</telerik:RadComboBox>
 {{endregion}}
 
-The result is shown on the image below.
+#### __Figure 1: RadComboBox with IsEditable property set to True and EmptyText in the Office2016 theme__
+![Editable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText.png)
 
-![](images/ComboBox_EmptyText.jpg)
+#### __Figure 2: RadComboBox with IsEditable property set to False(default) and EmptyText in the Office2016 theme__
 
-If the __IsEditable__ property is __false__ the result would be like this:
+![NonEditable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText_2.png)
 
-![](images/ComboBox_EmptyText_2.jpg)
-
->tipIf the __IsEditable__ property of the ComboBox is set to __True__ and the control is on focus the __EmptyText__ is not displayed.
+>tipIf the __IsEditable__ property of the RadComboBox is set to __True__ and the control has focus the __EmptyText__ is not displayed.
 
 ## EmptySelectionBoxTemplate
 
-The __EmptySelectionBoxTemplate__ gives you the ability to define a separate template when there is no selected item. The purpose of this tutorial is to show you how to create and apply EmptySelectionBoxTemplate.
+The __EmptySelectionBoxTemplate__ gives you the ability to define a separate DataTemplate to be shown when there is no selected item. __Example 2__ demonstrates how to create and apply an __EmptySelectionBoxTemplate__.
 
-If we use the aforementioned RadComboBox, it gives you the ability to define a separate template for the empty selection box. In order to do that, you will have to perform two simple steps:
+#### __[XAML] Example 2: Set the EmptySelectionBoxTemplate property__
 
-* Create a custom __DataTemplate__
-
-#### __XAML__
-
-{{region radcombobox-Create_a_Watermark_1}}
-	<UserControl.Resources>
-	  <DataTemplate x:Key="EmptyTemplate">
-	      <TextBlock FontWeight="Bold" FontFamily="Comic Sans" FontStyle="Italic" Text="Please select an agency" />
-	  </DataTemplate>
-	</UserControl.Resources>
+{{region xaml-radcombobox-create_a_watermark_1}}
+	<StackPanel>
+        <StackPanel.Resources>
+            <DataTemplate x:Key="EmptyTemplate">
+                <TextBlock FontWeight="Bold" FontFamily="Comic Sans" FontStyle="Italic" Text="Please select an agency" />
+            </DataTemplate>
+        </StackPanel.Resources>
+        <telerik:RadComboBox Width="200"
+                             ItemsSource="12345"
+                             EmptySelectionBoxTemplate="{StaticResource EmptyTemplate}">
+        </telerik:RadComboBox>
+    </StackPanel>
 {{endregion}}
 
-* Set the declared __DataTemplate__ to the RadComboBox's __EmptySelectionBoxTemplate__ property. 
+#### __Figure 2: RadComboBox with EmptySelectionBoxTemplate in the Office2016 theme__
+![RadComboBox with EmptySelectionBoxTemplate](images/ComboBox_EmptySelectionBoxTemplate.png)
 
-#### __XAML__
-
-{{region radcombobox-Create_a_Watermark_2}}
-	<telerik:RadComboBox ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" DisplayMemberPath="Name" EmptySelectionBoxTemplate="{StaticResource EmptyTemplate}" IsEditable="False" />
-{{endregion}}
-
-The result is shown on the image below. Note how there is a text displayed without an item is being selected.
-
-![](images/ComboBox_EmptySelectionBoxTemplate.jpg)
-
->tipThe __EmptySelectionBoxTemplate__ property only works if the RadComboBox is in non-editable mode, i.e its __IsEditable__ property is set to __False__. Otherwise, it is applied the __EmptyText__ property.
+>tipThe __EmptySelectionBoxTemplate__ property only works if the RadComboBox is in non-editable mode, i.e its __IsEditable__ property is set to __False__. Otherwise, the __EmptyText__ will be applied.

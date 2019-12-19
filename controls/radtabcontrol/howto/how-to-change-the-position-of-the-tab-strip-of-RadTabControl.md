@@ -57,5 +57,4 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 
 ## See Also
  * [How to Select Control in Expression Blend]({%slug radtabcontrol-how-to-select-control-in-expression-blend%})
- * [How to Create Multi-line Tabs]({%slug radtabcontrol-how-to-create-multi-line-tabs%})
  * [How to Add Close Button to the Tab Headers]({%slug radtabcontrol-how-to-add-close-button-to-the-tab-headers%})

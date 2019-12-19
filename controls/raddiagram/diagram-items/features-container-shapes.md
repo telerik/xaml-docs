@@ -16,17 +16,17 @@ This tutorial will walk you through the functionality and the main features of t
 
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the{% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
 
-The __RadDiagramContainerShape__ allows you to place multiple shapes into one container shape. The __RadDiagramContainerShapes__ are, much like [groups]({%slug raddiagram-features-grouping%}) , a way to logically combine other shapes but add to this the capability to have a visual wrapper including a header. You can drag shapes in and out of a __ContainerShape__ in runtime and take advantage of its built-in auto-sizing logic that can extend the size of a container to wrap  a shape. The __Diagramming Framework__ provides a visual feedback when a shape is being dragged over a __RadDiagramContainerShape__ and even if part of the shape is outside the bounds of the container, the framework internally handles the drop and expands the size of the container to place the shape inside the content area of the container.		
-
-Illustration of the ContainerShape auto-sizing capabilities
+The __RadDiagramContainerShape__ allows you to place multiple shapes into one container shape. The __RadDiagramContainerShapes__ are, much like [groups]({%slug raddiagram-features-grouping%}), a way to logically combine other shapes but add to this the capability to have a visual wrapper including a header. You can drag shapes in and out of a __ContainerShape__ during runtime and take advantage of its built-in auto-sizing logic that can extend the size of a container to wrap a shape. The __Diagramming Framework__ provides a visual feedback when a shape is being dragged over a __RadDiagramContainerShape__ and even if part of the shape is outside the bounds of the container, the framework internally handles the drop and expands the size of the container to place the shape inside the content area of the container.		
 
 ![Rad Diagram Container Shape Overview](images/RadDiagram_ContainerShape_Overview.png)
+
+>Please note the position and size of the containers takes into account the positions and sizes of all of its child shapes. In other words, even if fixed Position, Height and Width are set for the container, they will be coerced to cover all child shapes which is positioned outside the bounds of the container.
 
 A container can be compared with a __HeaderedItemsControl__ but is also a true diagramming shape which can be connected and handled like other shapes. 		
 
 >The __RadDiagramContainerShape__ derives from the __DiagramShapeBase__ class and this is why it exposes similar properties to those of the __RadDiagramShape__. To get familiar with the __RadDiagramShape__ features and properties, please refer to the [Diagram Shapes]({%slug raddiagrams-features-shapes%}) tutorial.		
 
-### Setting a header
+## Setting a header
 
 The __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
@@ -58,13 +58,13 @@ If you bind the __Content__ property to a business property, you can use the __C
     </Grid>
 {{endregion}}
 
-### Edit Mode
+## Edit Mode
 
 By default you can edit the header of the __RadDiagramContainerShape__ out-of-the-box by double-clicking on the container or by hitting F2. If you'd like to disable the editing functionality, you can set the __IsEditable__ property to __False__.
 
 You can manually put the  __RadDiagramContainerShape__ in an edit mode by setting its __IsInEditMode__ property to __True__. This is the property that gets and sets the edit mode of the container.
 
-### Populating with items
+## Populating with Items
 
 The main purpose of the __RadDiagramContainerShape__ is to allow you to drop shapes on it thus grouping them in one container. This is why dragging and dropping shapes onto the container is the main approach for populating its __Items__collection. 
 
@@ -178,7 +178,7 @@ You can display that collection in a __RadDiagramContainerShape__:
 
 ![Rad Diagram Container Shape Items Source](images/RadDiagram_ContainerShape_ItemsSource.png)
 
-### Container Bounds
+## Container Bounds
 
 You can get the bounds of the __RadDiagramContainerShape__ through the __ContainerBounds__ property, which is of type __Rect__ and it gets the width, height and location of the container’s bounds.			
 
@@ -215,7 +215,7 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
 
 * __IsCollapsible__: A property of type __bool__ that controls the collapsible state of a __RadDiagramContainerShape__.			
 
-* __IsCollapsed__: A property of type __bool__ that controls whether a collapsible __RadDiagramContainerShape__ is currently collapsed.			
+* __IsCollapsed__: A property of type __bool__ that controls whether a collapsible __RadDiagramContainerShape__ is currently collapsed.
 
 * __CollapsedContent__: A property of type __object__ that gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.		  
 
@@ -276,14 +276,14 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
 
 The __ContainerService__ is a static class which can be used to manipulate the container shapes. This static class expose the following methods.
 
-* __CompleteManipulation__: A void method that completes given manipulation. Accept parameter of type __CompositeAsyncStateCommand__.
+* __CompleteManipulation__: A void method that completes a given manipulation. Accepts a parameter of type __CompositeAsyncStateCommand__.
 * __DetachItemsFromContainer__: A void method that detaches items from a container.
-* __GetChildrenBounds__: This method returns Rect element which wraps the items inside the container.
-* __GetContainerChildrenRecursively__: This method search recursively and return all children of the container.
-* __GetFloatingChildren__: This method return all shapes and connection which are not attched to shapes.
-* __GetParentContainersRecursively__: This method search recursively and return all parent containers.
-* __GetRootItems__: A void method the return all root containers if any exist. 
-* __UpdateContainerLayout__: A void method thats update the container layout. Accept parameter of type __IDragDropAware__.
+* __GetChildrenBounds__: This method returns a Rect element which wraps the items inside the container.
+* __GetContainerChildrenRecursively__: This method searches recursively and returns all children of the container.
+* __GetFloatingChildren__: This method returns all shapes and connections which are not attached to shapes.
+* __GetParentContainersRecursively__: This method searches recursively and returns all parent containers.
+* __GetRootItems__: A void method that returns all root containers if any exist. 
+* __UpdateContainerLayout__: A void method that updates the container layout. Accepts a parameter of type __IDragDropAware__.
 
 ## Prevent Dropping Shape in Container
 

@@ -10,10 +10,6 @@ position: 2
 
 # Manual vs. Auto Loading
 
-
-
-## 
-
 You can load data manually by calling the ___RadDataServiceDataSource.Load___ method or you can let the control perform an automatic load when a change affecting the query occurs. If you set the __AutoLoad__ property to ___true___, an automatic load will be initiated each time one of the following happens:
 
 * When a __filter__ descriptor is added, removed or edited in the __FilterDescriptors__ collection of the control.
@@ -26,12 +22,6 @@ You can load data manually by calling the ___RadDataServiceDataSource.Load___ me
 
 * When the __PageIndex__ changes.
 
-
-
 >When the __PageIndex__ changes, a load request will be sent to the server even if the __AutoLoad__ property is ___false___.
 
-
-
 >While the control is asynchronously waiting for the server to respond, it is in a loading state (__IsLoading__ is ___true___ and __CanLoad__ is ___false___). Calling the __Load__ method or triggering an __AutoLoad__ while the control is in this state will be ignored and will have absolutely no effect. You need to cancel a pending load with the __CancelLoad__ method before executing a new one.
-
-

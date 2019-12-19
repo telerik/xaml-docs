@@ -267,7 +267,5 @@ To change a predefined style of a given control the __TypeName__ property of the
 	</telerik:RadToolBar>
 {{endregion}}
 
-## See Also
-
+## See Also  
 * [Overview]({%slug radtoolbar-overview%})
-* [Template Structure]({%slug radtoolbar-template-parts%})

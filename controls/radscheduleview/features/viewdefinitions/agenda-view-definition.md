@@ -12,9 +12,7 @@ position: 5
 
 __AgendaViewDefinition__ allows you to display a set of appointments for a specific period of time.
 
-[image]
-
->tip See the [Common Features] article to see the functionality that is shared accross the different views.
+>tip See the [Configuration]({%slug radscheduleview-viewdefinitions-configuration%}) article to see the functionality that is shared accross the different views.
 
 ## Setting up the View
 
@@ -55,13 +53,13 @@ To set the number of visible days, set the __VisibleDays__ property of AgendaVie
 #### __[XAML] Example 3: Setting visible days number__
 {{region radscheduleview-viewdefinitions-agenda-2}}
 	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:AgendaViewDefinition VisibleDays="3" />
+		<telerik:AgendaViewDefinition VisibleDays="2" />
 	</telerik:RadScheduleView.ViewDefinitions>
 {{endregion}}
 
 The default value of VisibleDays is 7.
 
-#### Figure 2: AgendaViewDefinition with 3 visible days
+#### Figure 2: AgendaViewDefinition with 2 visible days
 ![](images/radscheduleview-viewdefinition-agenda-1.png)
 
 ## Hide Empty Days

@@ -1,7 +1,7 @@
 ---
 title: Splash Screen Manager
 page_title: Splash Screen Manager
-description: 
+description: RadSplashScreenManager is the class that is used to control the splash screen. The manager allows you to change the splash screen settings and show/hide it.
 slug: radsplashscreen-features-splashscreenmanager
 tags: progress,bar,splashscreen,busyindicator
 published: True

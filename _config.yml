@@ -140,6 +140,8 @@ navigation:
         title: RadTimePicker
     controls/radpasswordbox:
         title: RadPasswordBox
+    controls/radsplashscreen:
+        title: RadSplashScreen
     controls/radtimespanpicker:
         title: RadTimeSpanPicker
     controls/radtransitioncontrol:
@@ -939,6 +941,16 @@ navigation:
     controls/radsyntaxeditor/features/taggers:
         title: Taggers
         position: 9
+    controls/radtaskboard:
+        tile: RadTaskBoard
+    controls/radtaskboard/features/column:
+        tile: Column
+    controls/radtaskboard/features/indicator-color:
+        tile: Indicator Color
+    controls/radtaskboard/features/drag-drop:
+        tile: Drag Drop
+    controls/radtaskboard/features/selection:
+        tile: Selection
 ## X1 Controls End
 
 ## Common Start   
@@ -3329,10 +3341,11 @@ intro_columns:
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
       "RibbonView": "radribbonview-overview"
+      "SplashScreen": "radsplashscreen-overview"
       "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
-      "TreeView": "radtreeview-overview2"
+      "TreeView": "radtreeview-overview2"      
   -
     title: "Interactivity & UX"
     items:

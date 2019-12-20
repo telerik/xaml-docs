@@ -51,4 +51,4 @@ Through the **CaretBrush** property, you can change the caret's color to a color
 
 ## See Also
 
-* [IntelliSense]({%slug radsyntaxeditor-visual-structure%})
+* [IntelliPrompts]({%slug radsyntaxeditor-features-intelliprompts%})

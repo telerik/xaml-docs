@@ -21,8 +21,8 @@ Gesture | - | Description
 ![Common Touch Support 01](images/Common_TouchSupport_01.png) | Swipe | The user presses and holds on the screen and then drags the finger / stylus in any direction.
 ![Common Touch Support 02](images/Common_TouchSupport_02.png)	|	Pinch	|	The user touches the screen with two (or more) fingers and moves them inwards or outwards.
 ![Common Touch Support 03](images/Common_TouchSupport_03.png)	|	Tap	|	The user touches the screen. 
-![Common Touch Support 04](images/Common_TouchSupport_04.png)	|	Tap and Move	|	The user presses and holds the screen for few seconds (between 600ms and 1500ms) and drags his finger / stylus in any direction.
-![Common Touch Support 05](images/Common_TouchSupport_05.png)	|	Tap and Hold	|	The user presses and holds the screen for a few seconds (more than 1500ms).
+![Common Touch Support 04](images/Common_TouchSupport_04.png)	|	Tap and Move	|	The user presses and holds the screen for a short period of time (between **600ms** and **800ms**) and drags his finger / stylus in any direction.
+![Common Touch Support 05](images/Common_TouchSupport_05.png)	|	Tap and Hold	|	The user presses and holds the screen for a short period of time (more than **800ms**).
 
 >As of version __Q2 2015__, the __TouchIndicator is represented by a single circle__. 
 
@@ -55,12 +55,34 @@ RadTreeListView | Scroll	|	-	|	Click	|	-	|	Shows a circle to be dragged	|	-
 RadTreeMap | -	|	-	|	Selection	|	-	|	Shows tooltip	|	-
 RadTreeView | Scroll with Inertia	|	-	|	Click/Selection/Expand	|	-	|	Shows touch Indicator	|	Tap and Hold and Move will Start Drag operation
 RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
+RadSyntaxEditor | Scroll | Zoom | Click (move caret to position) | Selection markers to extend the selection | - | - |
 
 ## TouchManager States
 
-As of version __Q2 2014__, we have introduced a new __IsTouchEnabled__ property, which controls the state of TouchManager on application level. Setting it to False will prevent any touch events to be fired.
-        
->important The property is of boolean type and its Default value is True.         
+As of version __Q2 2014__, we have introduced a new __IsTouchEnabled__ property, which controls the state of TouchManager on application level. It is enabled by default, but setting it to **False** will prevent any touch events to be fired.
 
-> You can also take a look at the [Touch Modes]({%slug touchmanager-touch-modes%}) help article
- 
+#### __[C#] Example 1: Disable touch support__
+
+{{region cs-touch-support-1}}       
+    public App()
+    {
+        TouchManager.IsTouchEnabled = false;
+        this.InitializeComponent();
+    }
+{{endregion}}
+		
+#### __[VB.NET] Example 1: Disable touch support__
+
+{{region vb-touch-support-1}}	
+    Public Sub New()
+		TouchManager.IsTouchEnabled = False
+		Me.InitializeComponent()
+	End Sub
+{{endregion}}
+
+>Disabling the IsTouchEnabled setting will unsubscribe only from the events provided by the TouchManager. The native events will still be triggered.
+
+## See Also
+
+* [TouchManager Features]({%slug touchmanager-features%})
+* [Touch Modes]({%slug touchmanager-touch-modes%})

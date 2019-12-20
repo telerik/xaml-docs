@@ -36,7 +36,7 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 	RadSplashScreenManager.Close();
 {{endregion}}
 
-![](images/radsplashscreen-features-progress-bar.png)
+![](images/radsplashscreen-features-progress-bar-0.png)
 
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})

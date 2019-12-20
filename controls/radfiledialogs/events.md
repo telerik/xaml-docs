@@ -67,6 +67,23 @@ This article lists the events specific to all of the RadFileDialog controls.
             }
 		}
 	{{endregion}}	
+	
+* __ShellContextMenuOpening__: This event occurs when the context menu is about to open. You can use it to cancel the menu opening or to add/remove options from the short menu (the one opened when the cursors is on an empty space in the explorer).
+	
+	#### __[C#] Example 5: Canceling context menu opening and adding only New Folder and Paste options in the short menu__
+	{{region cs-radfiledialogs-events-4}}
+		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		{
+			if (e.SelectedFiles.Count > 0 && e.SelectedFiles[0].Path == "C:\\\\Program Files")
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                e.ShortContextMenuOptions = ShortContextMenuOptions.Paste | ShortContextMenuOptions.NewFolder;
+            }
+		}
+	{{endregion}}	
 
 ## See Also
 * [Getting Started]({%slug radfiledialogs-getting-started%})

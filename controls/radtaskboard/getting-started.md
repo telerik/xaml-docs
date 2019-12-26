@@ -28,7 +28,7 @@ You can find the required assemblies for each control from the suite in the [Con
 > * Binding to a __CollectionView__ collection with predifined groups. 
 > For the purpose of this tutorial we are going to use the first one. The other approaches and more complex one can be found in the __Populating With Data__ section.
 
-First, we can go ahead and create our ViewModel with some tasks. The control API provides out of the __TaskBoardItemModel__ class which expose most needed properties to start organized your tasks.
+First, we can go ahead and create our ViewModel with some tasks. The control API provides build-in __TaskBoardItemModel__ model class which exposes most needed properties to start organizing your tasks.
 
 #### __[C#] Example 1: Defining ViewModel
 {{region xaml-radtaskboard-getting-started-1}}

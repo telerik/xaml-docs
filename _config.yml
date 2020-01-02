@@ -673,6 +673,8 @@ navigation:
     controls/radrichtextbox/features:
         title: Features
         position: 6
+    controls/radrichtextbox/features/content-controls:
+        title: Content Controls
     controls/radrichtextbox/import-export:
         title: Import/Export
         position: 7    

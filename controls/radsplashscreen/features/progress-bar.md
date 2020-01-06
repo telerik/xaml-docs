@@ -1,7 +1,7 @@
 ---
 title: Progress Bar
 page_title: Progress Bar
-description: By default the RadSplashScreen shows a busy indicator that notifies the user something is loading. 
+description: By default the RadSplashScreen shows an indeterminate RadProgressBar which notifies the user that something is loading. 
 slug: radsplashscreen-features-progress-bar
 tags: progress,bar,splashscreen,busyindicator
 published: True
@@ -10,9 +10,9 @@ position: 1
 
 # Progress Bar
 
-By default the RadSplashScreen shows a busy indicator that notifies the user something is loading. 
+By default the RadSplashScreen shows an indeterminate [RadProgressBar]({%slug getting_started%}#indeterminate-state) which notifies the user that something is loading. 
 
-You change this visualization and show a progress bar instead, by setting the __IsIndeterminate__ property of the __SplashScreenDataContext__ to __False__. This will show a progress bar with minimum value of 0, maximum of 100 and a current value of 1. 
+You can change this visualization and indicate some progress instead, by setting the __IsIndeterminate__ property of the __SplashScreenDataContext__ to __False__. This will show a progress bar with minimum value of 0 and maximum of 100. 
 
 To control the range and progress of the bar, set the __MinValue__, __MaxValue__ and __ProgressValue__ properties of __SplashScreenDataContext__.
 
@@ -37,6 +37,8 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 {{endregion}}
 
 ![](images/radsplashscreen-features-progress-bar-0.png)
+
+> You can hide the progress bar by setting the __IsProgressBarVisible__ property of the SplashScreenDataContext to __False__.
 
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})

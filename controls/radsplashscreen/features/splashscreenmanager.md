@@ -25,19 +25,19 @@ Find more examples in the [Getting Started]({%slug radsplashscreen-getting-start
 
 ## Settings
 
-RadSplashScreenManager provides several properties that allows you to set up the screen.
+RadSplashScreenManager provides several properties that allow you to set up the splash screen.
 
-* __StartupPosition__: A property of type Point that enables you to set the startup position of the splash screen window. If left empty, the splash screen is positioned centered to the application.
+* __StartupPosition__: A property of type Point that enables you to set the startup position of the splash screen window. If left empty, the splash screen is positioned in the center of the screen.
 
-* __ShowAnimation__: A property of type RadAnimation that allows you to set the animation used when the window is opening.
+* __ShowAnimation__: A property of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) that allows you to set the animation used when the window is opening.
 
-* __HideAnimation__: A property of type RadAnimation that allows you to set the animation used when the window is closing.
+* __HideAnimation__: A property of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) that allows you to set the animation used when the window is closing.
 
 	>tip Read more about this in the [Animations]({%slug radsplashscreen-features-animations%}) article.
 
-* __IsSplashScreenActive__: A read-only property of type bool that indicates if the splash screen is active (opened). If you intend to open splash screen a second time, double check if the property is __False__ otherwise an exception is thrown. 
+* __IsSplashScreenActive__: A read-only property of type bool that indicates if the splash screen is active (opened). If you intend to show the splash screen a second time, check if the property is __False__ otherwise an exception is thrown. 
 
-* __SplashScreenDataContext__: A property of type object that is passed to the control shown in the splash screen window. You can use it to get the default __SplashScreenDataContext__ object or replace it with any other object. 
+* __SplashScreenDataContext__: A property of type object that is set as the DataContext of the control shown in the splash screen window. You can use it to get the default __SplashScreenDataContext__ object or replace it with any other object. 
 
 > All those settings should be set __before the Show method__ call.
 
@@ -56,7 +56,7 @@ RadSplashScreenManager provides several properties that allows you to set up the
 
 ## SplashScreenDataContext
 
-The default value of the `RadSplashScreenManager.SplashScreenDataContext` property is an object of type __SplashScreenDataContext__. This model contains information about the screen's UI and it is passed as a DataContext of the __RadSplashScreen__ control. You can use it to alter the RadSplashScreen settings.
+The default value of the `RadSplashScreenManager.SplashScreenDataContext` property is an object of type __SplashScreenDataContext__. This model contains information about the screen's UI and it is passed as a DataContext to the __RadSplashScreen__ control. You can use it to alter the RadSplashScreen settings.
 
 #### __[C#] Example 3: Applying splash screen settings__
 {{region radsplashscreen-features-splashscreenmanager-2}}		

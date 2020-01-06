@@ -20,9 +20,9 @@ RadSplashScreen allows you to display a Telerik themed control that notifies the
 
 * __Customizable image content__: The control allows you to easily set the splash screen image.
 
-* __Built-in progress bar__: By default the control shows a busy indicator. You can easily change this and show a progress bar. Read more in the []() article.
+* __Built-in progress bar__: By default the control shows an indeterminate [RadProgressBar]({%slug getting_started%}#indeterminate-state). You can easily change this and indicate some loading progress. Read more in the [Progress Bar]({%slug radsplashscreen-features-progress-bar%}) article.
 
-* __Customizable footer UI__: You can customize the footer of the splash screen by defining a template or by only setting the Footer property.
+* __Customizable content/footer UI__: You can customize the content/footer of the splash screen by defining a template or by only setting the Content/Footer properties.
 
 >tip Get started with the control with its [Getting Started]({%slug radsplashscreen-getting-started%}) help article that shows how to use it in a basic scenario.
 

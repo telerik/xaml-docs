@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: This tutorial will walk you through the creation of a sample application that shows RadSplashScreen using RadSplashScreenManager.
+description: This tutorial will walk you through the creation of a sample application that shows a RadSplashScreen using RadSplashScreenManager.
 slug: radsplashscreen-getting-started
 tags: getting,started,splashscreen,busyindicator
 published: True
@@ -23,11 +23,11 @@ You can find the required assemblies for each control from the suite in the [Con
 
 ## Showing Splash Screen
 
-To shows a splash screen, use the __RadSplashScreenManager__ class. This allows you to display the default RadSplashScreen control.
+To show a splash screen, use the __RadSplashScreenManager__ class. This allows you to display the default RadSplashScreen control or a custom control.
 
 > Note that the splash screen window is running on a separate UI thread.
 
-You can start the splash screen anywhere you need to show a busy indication. The following example shows how to open the screen before the MainWindow is shown. To do this, call the __RadSplashScreenManager.Show__ method. This displays a screen hosting a __RadSplashScreen__ control.
+You can start the splash screen anytime you need to indicate that some work is performed. The following example demonstrates how to show it before the MainWindow is loaded. To do this, call the __RadSplashScreenManager.Show__ method. This displays a window hosting a __RadSplashScreen__ control.
 
 #### __[C#] Example 1: Starting the splash screen on application startup__
 {{region radsplashscreen-getting-started-0}}

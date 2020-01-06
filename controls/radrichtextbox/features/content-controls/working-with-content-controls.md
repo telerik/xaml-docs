@@ -20,7 +20,7 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
 #### __C#__
 
 {{region radrichtextbox-features-content-controls_0}}
-    var content_controls = radRichTextBox.Document.GetAnnotationMarkersOfType<SdtStart>();
+    var content_controls = radRichTextBox.Document.GetAnnotationMarkersOfType<SdtRangeStart>();
     foreach (var item in content_controls)
     {
         Console.WriteLine("Type: {0} ID:{1}", item.SdtProperties.Type, item.SdtProperties.ID);

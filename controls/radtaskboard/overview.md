@@ -10,25 +10,25 @@ position: 0
 
 # Overview
 
-## ICON Here
+![TaskBoard for WPF icon](images/taskboard_wpf_46_text.png)
 
-Thank you for coosing __Telerik RadTaskBoard__ control!
+Thank you for choosing __Telerik RadTaskBoard__ control!
 
 RadTaskBoard is a simple, visual way to keep track of things that need to be done. The control provide clean interface to a functional and minimal application for keeping track of tasks.
 
-# Image Here
+![RadTaskBoard in the Fluent theme](images/taskboard_overview.png)
 
 ## Key Features:
 
-* __Indicator Color__: Using colors is a quick way to make tasks stand out on the board. It helps users to easily identify priority, type of work or an assignee as well as to group tasks for further reporting using the color criteria.   
+* __Indicator Color__: Using colors is a quick way to make tasks stand out on the board. It helps users to quickly identify priority, type of work or an assignee as well as to group tasks for further reporting using the color criteria.
 
-* __Selection__: The control provide selection of its task.
+* __Tags__: You can highlight given tasks by adding tags to their Tags collection. Adding tags can be a great way to associate items with a release, sub-tasks to a story, feature, or project, etc. 
 
-* __Drag-Drop Support__: Users can easily reorder tasks between their life cycle.
+* __Drag-Drop Support__: Users can easily reorder tasks between their life cycle.  
+
+* __Selection__: The control provides a selection of its task. 
 
 * __Styling and Appearance__: RadTaskBoard comes with a variety of themes and properties that allow you to enhance the control's appearance.
-
-* __Rich API__: The control's rich API enables you to easily customize its functionality.
 
 * __Touch Support__: The RadTaskBoard control also provides out-of-the-box touch support.
 

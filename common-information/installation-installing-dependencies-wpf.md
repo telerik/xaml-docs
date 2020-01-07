@@ -94,6 +94,7 @@ RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
 RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
 RadTabbedWindow	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
+RadTaskBoard |	Telerik.Windows.Controls
 RadTileList	|	Telerik.Windows.Controls
 RadTileView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTimeBar	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data

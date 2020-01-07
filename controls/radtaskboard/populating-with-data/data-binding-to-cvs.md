@@ -34,36 +34,47 @@ First, we will initialize a CollectionViewSource property, which are going to be
             TaskBoardCardModel task = new TaskBoardCardModel()
             {
                 Assignee = "Bella",
-                Title = "Unit Test: RadDocking",
+                Title = "RadDocking: Unit Test",
                 Description = "Add Unit Tests",
                 State = "Not Done",
-                CategoryName = "Red"                
+                CategoryName = "Low",
+				IconPath= @"/Project_NameSpace;component/Images/Bella.jpg",
+				ShowIndicatorColor= true,
+                
             };
             task.Tags.Add("Important");
             task.Tags.Add(2);
             task.Tags.Add(DateTime.Now);
             tasks.Add(task);
+			
             task = new TaskBoardCardModel()
             {
                 Assignee = "Tomas",
-                Title = "Bug RadPanelBar",
+                Title = "RadPanelBar: IsExpanded property is not respected",
                 Description = "Fix Bug",
                 State = "In Progress",
-                CategoryName = "Green"
+                CategoryName = "Medium",
+				IconPath= @"/Project_NameSpace;component/Images/Tomas.jpg",
+				ShowIndicatorColor= false,
             };
-
+			task.Tags.Add("R1");
             tasks.Add(task);
+			
             task = new TaskBoardCardModel()
             {
                 Assignee = "Peter",
                 Title = "RadChartView: Implement Animation Feature",
                 Description = "Implement animmations for all series in RadChartView.",
                 State = "Done",
-                CategoryName = "Blue"
+                CategoryName = "High"
+				IconPath= @"/Project_NameSpace;component/Images/Peter.jpg",
+				ShowIndicatorColor= true,
             };
-            tasks.Add(task);
+			task.Tags.Add("Complex");
+            tasks.Add(task);		
+
             return tasks;
-        }       
+        }        
     }
 {{endregion}}
 
@@ -80,16 +91,18 @@ What's left is to set the DataContext of the Window and declare RadTaskBoard con
 	}
 {{endregion}}
 
+>The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
+>`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
 #### __[XAML] Example 3: Defining RadTaskBoard in XAML__
 {{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-2}}
     <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding CollectionView.View}" >   
 		<telerik:RadTaskBoard.Categories>
-			<taskboard:CategoryCollection>
-				<taskboard:CategoryModel CategoryBrush="Red" CategoryName="Red" />
-				<taskboard:CategoryModel CategoryBrush="Green" CategoryName="Green" />
-				<taskboard:CategoryModel CategoryBrush="Blue" CategoryName="Blue" />
-			</taskboard:CategoryCollection>
+			<taskBoard:CategoryCollection>
+				<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
+				<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
+				<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
+			</taskBoard:CategoryCollection>
 		</telerik:RadTaskBoard.Categories>
 	</telerik:RadTaskBoard>
 {{endregion}}

@@ -10,11 +10,12 @@ position: 0
 
 # Selection
 
-RadTaskBoard provides you with selection functionality, which allows the user to select RadTaskBoardItem from the data displayed in the columns. 
+RadTaskBoard provides you with selection functionality, which allows the user to select RadTaskBoardCard from the data displayed in the columns. 
 
 Users can select an item in through the control's UI by clicking somewhere on a given task.
 
-// image
+## Figure 1: RadTaskBoard Selection
+![Telerik TaskBoard Selection 0](images/taskboard_selected_task_0.png)
 
 ## Disabling Selection
 
@@ -25,8 +26,7 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 #### __[XAML] Example 1: Set the CanUserSelect property in XAML__
 
 {{region xaml-radtaskboard-features-selection_0}}
-	<telerik:RadTaskBoard x:Name="radTaskBoard" CanUserSelect="False">
-	</telerik:RadTaskBoard>
+	<telerik:RadTaskBoard x:Name="radTaskBoard" CanUserSelect="False" />	
 {{endregion}}
 
 #### __[C#] Example 1: Set the CanUserSelect property in code-behind__
@@ -62,3 +62,4 @@ The control expose __SelectionChanged__ which is fired each time after an item h
 		Dim selectedItem = e.AddedItems(0)
 	End Sub
 {{endregion}}
+

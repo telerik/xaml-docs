@@ -3335,6 +3335,7 @@ intro_columns:
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
       "TreeView": "radtreeview-overview2"
+      "TaskBoard": "radtaskboard-overview"
   -
     title: "Interactivity & UX"
     items:

@@ -16,7 +16,7 @@ __Telerik UI for WPF__ comes with __.NET Core__ support. There is a set of dlls 
 
 To work with the Telerik .NET Core dlls you will need to have the following installed.
 
-* The latest [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+* The latest [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update. The minimum version of Visual Studio is __v16.4__. 
 

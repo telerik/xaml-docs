@@ -88,6 +88,7 @@ RadScheduleView	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navig
 RadSlider	|	Telerik.Windows.Controls
 RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
+RadSplashScreen	|	Telerik.Windows.Controls.Navigation
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
@@ -120,4 +121,3 @@ LayoutControls	|	Telerik.Windows.Controls
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
  * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
-

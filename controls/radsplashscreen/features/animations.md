@@ -27,7 +27,35 @@ You can set the properties to any animation object that derives from [RadAnimati
 	}
 {{endregion}}
 
-![](images/radsplashscreen-features-progress-bar-0.png)
+## Disable  Animations
+
+To disable the animations, set the corresponding property (__ShowAnimation__ or __HideAnimation__) to null.
+
+#### __[C#] Example 2: Disabling animations__
+{{region radsplashscreen-features-animations-1}}	
+	RadSplashScreenManager.ShowAnimation = null;
+	RadSplashScreenManager.HideAnimation = null;
+	
+	if (!RadSplashScreenManager.IsSplashScreenActive)
+	{
+		RadSplashScreenManager.Show();
+	}
+{{endregion}}
+
+## Change Animations Speed
+
+To change the speed of the show and hide animations, set the __SpeedRatio__ property of the RadAnimation object. 
+
+#### __[C#] Example 3: Changing the speed of the animations__
+{{region radsplashscreen-features-animations-2}}	
+	RadSplashScreenManager.ShowAnimation = new FadeAnimation { SpeedRatio = 0.2d }; 
+	RadSplashScreenManager.HideAnimation = new FadeAnimation { SpeedRatio = 0.8d };
+	
+	if (!RadSplashScreenManager.IsSplashScreenActive)
+	{
+		RadSplashScreenManager.Show();
+	}
+{{endregion}}
 
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})

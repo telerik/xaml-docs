@@ -21,9 +21,9 @@ The control provides two mechanisms for defining its columns:
 ## Key Features and Properties
 
 * __DisplayIndex__: A property of type nullable __int?__ that gets or sets the display index of the column.
-* __GroupName__: A property of type __string__ that gets or sets the group name used to categorized the items in columns.
+* __GroupName__: A property of type __string__ that gets or sets the group name used to categorize the items in columns.
 * __Header__: A property of type __string__ that gets or sets the content inside the header of the columns.
-* __HeaderTemplate__: A property of type __string__ that gets or sets the content template inside the header of the columns. This property can be used to further customized the column header.
+* __HeaderTemplate__: A property of type __string__ that gets or sets the content template inside the header of the columns. This property can be used to further customize the column header.
 * __IsExpanded__: A __Boolean__ property that gets or sets if a given column is expanded or not.
 * __Width__: A property of type __double__ that gets or sets the column width.
 * __CollapsedWidth__: A property of type __double__ that gets or sets the width of a collapsed column.
@@ -79,18 +79,18 @@ By default, __RadTaskBoard__ will generate its columns automatically based on th
     <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" />
 {{endregion}}
 
-## Figure 1: RadTaskBoard with automatically generate columns
+#### Figure 1: RadTaskBoard with automatically generated columns
 ![Telerik TaskBoard Column 0](images/taskboard_column_0.png)
 
 ## Manual Columns Definition
 
-In a case the built-in order of the auto generation of columns does not fit in your case, you can manually define the needed columns in the correct order. You must add the columns to the __Columns__ collection of __RadTaskBoard__.
+When the built-in order of the auto generation of columns does not fit in your case, you can manually define the needed columns in the correct order. You must add the columns to the __Columns__ collection of __RadTaskBoard__.
 
 To declare custom columns you can set the __AutoGenerateColumns__ property of the RadTaskBoard to False. Then you can populate the Columns collection property of the control.
 
-> If the __Header__ property is not set of the TaskBoardColumn, the GroupName property will be used as a Header.
+> If the __Header__ property of the TaskBoardColumn is not set, the GroupName property will be used as a Header.
 
-#### __[XAML] Example 3: Define TaskBoardColumn with custom columns__
+#### __[XAML] Example 3: Define RadTaskBoard with custom columns__
 {{region xaml-radtaskboard-features-column_2}}
 	<telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
 		<telerik:RadTaskBoard.Columns>
@@ -101,7 +101,7 @@ To declare custom columns you can set the __AutoGenerateColumns__ property of th
 	</telerik:RadTaskBoard>
 {{endregion}}
 
-#### __[C#] Example 4: Define TaskBoardColumn in code__
+#### __[C#] Example 4: Define TaskBoardColumns in code__
 {{region cs-radtaskboard-features-column_3}}
 	public MainWindow()
 	{
@@ -113,7 +113,7 @@ To declare custom columns you can set the __AutoGenerateColumns__ property of th
 	}
 {{endregion}}
 
-## Figure 2: RadTaskBoard with manually generated columns
+#### Figure 2: RadTaskBoard with manually generated columns
 ![Telerik TaskBoard Column 1](images/taskboard_column_1.png)
 
 

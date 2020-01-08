@@ -14,7 +14,7 @@ position: 0
 
 Thank you for choosing __Telerik RadTaskBoard__ control!
 
-RadTaskBoard is a simple, visual way to keep track of things that need to be done. The control provide clean interface to a functional and minimal application for keeping track of tasks.
+RadTaskBoard is a simple, visual way to keep track of things that need to be done. The control provides a clean interface to a functional and minimal application for keeping track of tasks.
 
 ![RadTaskBoard in the Fluent theme](images/taskboard_overview.png)
 
@@ -26,7 +26,7 @@ RadTaskBoard is a simple, visual way to keep track of things that need to be don
 
 * __Drag-Drop Support__: Users can easily reorder tasks between their life cycle.  
 
-* __Selection__: The control provides a selection of its task. 
+* __Selection__: The control supports task selection. 
 
 * __Styling and Appearance__: RadTaskBoard comes with a variety of themes and properties that allow you to enhance the control's appearance.
 
@@ -34,4 +34,4 @@ RadTaskBoard is a simple, visual way to keep track of things that need to be don
 
 >tip Get started with the control with its [Getting Started]({%slug radtaskboard-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#TaskBoard){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+> Check out the online demos at [demos.telerik.com](https://demos.telerik.com/wpf/).

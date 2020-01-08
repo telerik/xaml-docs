@@ -12,11 +12,11 @@ position: 1
 
 To bind the __RadTaskBoard__ to a collection with custom objects you can use its __ItemsSource__ property. 
 
-The following tutorial will guide you how to bind a __RadTaskBoard____ to a collection of custom business objects.
+The following tutorial will guide you how to bind a __RadTaskBoard__ to a collection of custom business objects.
 
 First, we will specify the following classes, which are going to be used to populate the RadTaskBoard control.
 
-#### __[C#] Example 1:  Creating ViewModels__
+#### __[C#] Example 1: Creating ViewModels__
 {{region cs-radtaskboard-populating-with-data-data-binding-to-object-0}}
     public class Task
     {
@@ -106,9 +106,9 @@ Next, we can go ahead and define the RadTaskBoard in our view:
     <telerik:RadTaskBoard ItemsSource="{Binding Tasks}" GroupMemberPath="State" />
 {{endregion}}
 
-Since the control is bound a collection of custom objects, you need to declare ItemTemplate property. You have two options here. 
+Since the control is bound a collection of custom objects, you need to declare the ItemTemplate property. You have two options here. 
 
-* If you want to use the default look of the card, you can just bind your properties. You can place in the DataTemplate __RadTaskBoardCard __ element and bind its properties to the properties from the business object.
+* If you want to use the default look of the card, you can just bind your properties. You can place a __RadTaskBoardCard__ element in the DataTemplate and bind its properties to the properties from the business object.
 
 >The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`

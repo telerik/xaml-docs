@@ -10,12 +10,12 @@ position: 2
 
 # Binding to TaskBoardCardModel
 
-The RadTaskBoardControl provides __TaskBoardCardModel__ ViewModel class designed to serves as a base ViewModel for __RadTaskBoardCard__ element. The class is defined to expose most required properties that allow you to track your task life cycle. More information about this class can be found in the [TaskBoardCardModel]({%slug radtaskboard-getting-started%}) help article.
+The RadTaskBoardControl provides a __TaskBoardCardModel__ ViewModel class designed to serve as a base ViewModel for a __RadTaskBoardCard__ element. The class is defined to expose the most required properties that allow you to track your task life cycle. More information about this class can be found in the [TaskBoardCardModel]({%slug radtaskboard-getting-started%}) help article.
 
 ## Key Properties
 
 * __Title__: A property of type __string__ that gets or sets the title of the task.
-* __Assignee__: A property of type __object__ that gets or sets to whom this task is assignee.
+* __Assignee__: A property of type __object__ that gets or sets to whom this task is assigned.
 * __Id__: A property of type __string__ that gets or sets the id of the task.
 * __Description__: A property of type __string__ that gets or sets the description of the task.
 * __State__: A property of type __string__ that gets or sets the current state of the task. The purpose of this property is to be set to the __GroupMemberPath__ of the RadTaskBoard.
@@ -24,13 +24,13 @@ The RadTaskBoardControl provides __TaskBoardCardModel__ ViewModel class designed
 * __IconPath__: A property of type __string__ that gets or sets the icon path of the task.
 * __Tags__: A collection property of __objects__ that gets the tags added to the task. To populate the collection, you can use its __Add()__ method.
 
-The following tutorial will guide you how to bind a __RadTaskBoard____ to a collection of __TaskBoardCardModel__.
+The following tutorial will guide you how to bind a __RadTaskBoard__ to a collection of __TaskBoardCardModel__.
 
-First, we will create our data, which are going to be used to populate the RadTaskBoard control.
+First, we will create our data, which is going to be used to populate the RadTaskBoard control.
 
 #### __[C#] Example 1: Creating ViewModel
 {{region cs-radtaskboard-populating-with-data-binding-taskboardcardmodel-0}}
-    public  class MainViewModel: ViewModelBase
+    public class MainViewModel: ViewModelBase
     {
         public ObservableCollection<TaskBoardCardModel> Data { get; set; }
 		

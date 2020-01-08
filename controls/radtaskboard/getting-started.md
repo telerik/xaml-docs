@@ -28,7 +28,7 @@ You can find the required assemblies for each control from the suite in the [Con
 > * Binding to a __CollectionView__ collection with predifined groups. 
 > For the purpose of this tutorial we are going to use the first one. The other approaches and more complex one can be found in the __Populating With Data__ section.
 
-First, we can go ahead and create our ViewModel with some tasks. The control API provides build-in __TaskBoardCardModel__ model class which exposes most needed properties to start organizing your tasks.
+First, we can go ahead and create our ViewModel with some tasks. The control API provides a built-in __TaskBoardCardModel__ model class which exposes the most needed properties to start organizing your tasks.
 
 #### __[C#] Example 1: Defining ViewModel
 {{region csharp-radtaskboard-getting-started-1}}
@@ -67,7 +67,7 @@ First, we can go ahead and create our ViewModel with some tasks. The control API
 	}
 {{endregion}}
 
-Next we need to define RadTaskBoard in XAML and bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property represent which property from your model will be used to group the tasks.
+Next we need to define RadTaskBoard in XAML, bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property indicates which property from your model will be used to group the tasks.
 
 #### __[XAML] Example 2: Binding RadTaskBoard
 {{region xaml-radtaskboard-getting-started-0}}

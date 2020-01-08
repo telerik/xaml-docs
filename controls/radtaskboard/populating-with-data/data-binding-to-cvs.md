@@ -10,11 +10,11 @@ position: 3
 
 # Binding to CollectionViewSource
 
-__RadTaskBoard__ accepts __CollectionViewSource__ as data source, it will evaluate its __GroupDescriptions__ and generate corresponding columns based on that.
+__RadTaskBoard__ accepts __CollectionViewSource__ as data source and it will evaluate its __GroupDescriptions__ and generate corresponding columns based on that.
 
-The following tutorial will guide you how to bind a __RadTaskBoard____ to a CollectionViewSource of __TaskBoardCardModel__.
+The following tutorial will guide you how to bind a __RadTaskBoard__ to a CollectionViewSource of __TaskBoardCardModel__.
 
-First, we will initialize a CollectionViewSource property, which are going to be used to populate the RadTaskBoard control. Next, we can create our data and set __PropertyGroupDescription__ to the State property. This property will be used to group the __CollectionViewSource__.
+First, we will initialize a CollectionViewSource, which is going to be used to populate the RadTaskBoard control. Next, we can create our data and set __PropertyGroupDescription__ to the State property. This property will be used to group the __CollectionViewSource__.
 
 #### __[C#] Example 1:  Creating ViewModel
 {{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-0}}
@@ -80,7 +80,7 @@ First, we will initialize a CollectionViewSource property, which are going to be
 
 What's left is to set the DataContext of the Window and declare RadTaskBoard control in XAML.
 
-> You don't need to set the GroupMemberPath property of the RadTaskBoard when the control ItemsSource is bound to CollectionViewSource collection. The first PropertyGroupDescription will be used by the RadTaskBoard to group the items.
+> You don't need to set the GroupMemberPath property of the RadTaskBoard when the control's ItemsSource is bound to a CollectionViewSource collection. The first PropertyGroupDescription will be used by the RadTaskBoard to group the items.
 
 #### __[XAML] Example 3: Set the ViewModel as DataContext__
 {{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-1}}
@@ -107,7 +107,7 @@ What's left is to set the DataContext of the Window and declare RadTaskBoard con
 	</telerik:RadTaskBoard>
 {{endregion}}
 
-## Figure 1: RadTaskBoard bind to custom object 
+#### Figure 1: RadTaskBoard bind to custom object 
 // image here
 
 ## See Also

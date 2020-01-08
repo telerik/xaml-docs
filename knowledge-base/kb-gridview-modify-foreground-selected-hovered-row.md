@@ -29,7 +29,7 @@ How to change the Foreground of а GridViewRow that is selected or hovered.
 
 > __Example 1__ uses the model and viewmodel defined in the [Getting Started]({%slug gridview-getting-started2%}) article of the RadGridView.
  
-#### __[XAML] Example 1: Custom style targeting __
+#### __[XAML] Example 1: Custom style targeting__
 {{region kb-gridview-modify-foreground-selected-hovered-row-0}}
 	<Grid>
         <Grid.Resources>

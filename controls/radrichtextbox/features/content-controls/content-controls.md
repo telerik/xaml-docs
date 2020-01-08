@@ -13,11 +13,11 @@ Structured Document Tags (sdt) enable users to add specific semantics to part of
 
 >note Currently, RadRichTextBox only visualizes the value of the content controls and there is no UI that allow you to interact with them. The import and export operations will work with Office Open XML (docx) and XAML formats. When exporting to other formats the content controls will be lost, however their content (current value) will be exported.
 
-## Content controls inside the document
+## Content Controls Inside the Document
 
 The contented controls can be defined on __Block__, __Inline__, __Row__ or __Cell__ level. They can be nested inside each other as well. In addition, one can modify the editing behavior of the content controls. This means that you can lock the content of the content control, the entire content control or both.
 
-## Supported content controls 
+## Supported Content Controls 
 
 * __Bibliography__
 * __CheckBox__
@@ -61,7 +61,7 @@ The above content controls share the following properties:
 
 
 
-## Content controls with specific properties. 
+## Content Controls with Specific Properties
 
 ### CheckBox
 
@@ -80,7 +80,6 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 * __LanguageId:__ Allows you to get/set the CultureInfo object for the date format.
 * __DateTime:__ The current selected date, stored as string. 
 * __Calendar:__ Allows you to select the calendar type.     
-
 
 
 # See Also

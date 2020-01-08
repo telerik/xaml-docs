@@ -9,13 +9,13 @@ published: True
 
 # Working with Content Controls
 
-This article shows some examples of how you can access a content control and modify their properties from the code. In general, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available here: [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
+This article shows some examples of how you can access the content controls and modify their properties from the code. In general, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available here: [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
 
-### Get the content controls. 
+### Get the Content Controls 
 
-The content controls can be retrieved by using the __GetAnnotationMarkersOfType__ method. This is demonstrated in the following example. 
+The content controls can be retrieved by using the __GetAnnotationMarkersOfType__ method.
 
-#### Example 1: Get all Content Controls
+#### Example 1: Get all content controls
 
 #### __C#__
 
@@ -27,7 +27,7 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
     }
 {{endregion}}
 
-### Set content controls properties.
+### Set Content Controls Properties
 
 This example show how one can iterate the items and add an item to to a existing ComboBox content control. 
 
@@ -52,3 +52,4 @@ This example show how one can iterate the items and add an item to to a existing
 
 # See Also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})
+* [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 

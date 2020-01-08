@@ -39,7 +39,7 @@ This library enables you to work with spreadsheet documents – create ones from
 
 * [**Resizing**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/resizing): Auto fit or resize rows and columns.
 
-* [**Number Formats**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/number-formats): Enable you to format the data in the cells so it can be easily readable.
+* [**Number Formats**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/number-formats): Enable you to format the data in the cells so it can be easily readable. The document model exposes the following categories of predefined formats: **General**, **Number**, **Currency**, **Accounting**, **Date**, **Time**, **Percentage**, **Fraction**, **Scientific**, **Text**, **Special** and also allows you to create **custom** formats.
 
 * **Copy/Paste**: Add or [copy worksheets](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-worksheets/copy-worksheet) within or across workbooks. Of course, [copying and pasting of cells](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/clipboard-support) is supported as well.
 

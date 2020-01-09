@@ -16,7 +16,7 @@ __RadPdfViewer__ allows flexible searching in a loaded PDF document. The followi
 
 >importantOther than the default needed [assemblies]({%slug radpdfviewer-getting-started%}), in order to take advantage of the Find dialog functionality in __RadPdfViewer__ you need to add to your project a reference to __Telerik.Windows.Controls.Navigation.dll__.
 
->note Find Programmatically is described in details in [Find]({%slug radpdfviewer-find%}) article.
+>note Find Programmatically is described in detail in the [Find]({%slug radpdfviewer-find%}) article.
         
 
 ## Using the UI

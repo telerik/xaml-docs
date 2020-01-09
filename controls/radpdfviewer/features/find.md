@@ -12,7 +12,7 @@ position: 6
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available find methods, as well as how to use the respective for the feature API.
 
->note Using the UI of the **Find** functionality is described in details in [Find Dialog]({%slug radpdfviewer-find-dialog%}) article.
+>note Using the UI of the **Find** functionality is described in detail in the [Find Dialog]({%slug radpdfviewer-find-dialog%}) article.
 
 ## Find Programmatically
 
@@ -80,12 +80,12 @@ The **FindPrevious** method has two overloads:
     Dim searchResult As SearchResult = Me.pdfViewer.FindPrevious(sampleText, textSearchOptions)
 {{endregion}}
 
-## SearchResult
+### SearchResult
 
 The **SearchResult** class holds the result from a specific search command. This class exposes several properties and methods:
 * **NotFound**: A static property which gets a default SearchResult instance when there is no search result found.
 * **Range**: Gets the result text range position.
-* **Result**: Gets the result as text.
+* **Result**: Gets a [TextRange](https://docs.telerik.com/devtools/document-processing/api/Telerik.Windows.Documents.Fixed.Text.TextRange.html) object describing the start and end positions of the match.
 * **ToString**: Returns a string that represents the current object.
 
 #### __[C#] Example 4: Check if a match was found__
@@ -109,9 +109,9 @@ The **SearchResult** class holds the result from a specific search command. This
     End If
 {{endregion}}
 
-## TextSearchOptions
+### TextSearchOptions
 
-The **TextSearchOptions** class holds all possible search options when invoking finding. The class has various constructors that can be used depending on the necessities. Their main difference is they are receiving different amount of parameters according to the selected options.
+The **TextSearchOptions** class holds all possible search options when invoking one of the Find methods. The class has various constructors that can be used depending on the necessities. Their main difference is they are receiving different amount of parameters according to the selected options.
 * **TextSearchOptions(bool caseSensitive)**
 * **TextSearchOptions(bool caseSensitive, bool useRegularExpression)**
 * **TextSearchOptions(bool caseSensitive, bool useRegularExpression, bool wholeWordsOnly)**
@@ -135,9 +135,9 @@ This class exposes a static property:
     {{endregion}}
 
 several non-static boolean properties:
-* **UseRegularExpression**: Gets or sets the value indication whether the regular expression option is enabled.
-* **CaseSensitive**: Gets or sets the value indication whether the case sensitive option is enabled.
-* **WholeWordsOnly**: Gets or sets the value indication whether the whole words only option is enabled.
+* **UseRegularExpression**: Gets or sets a value indicating whether a regular expression should be used for searching.
+* **CaseSensitive**: Gets or sets a value indicating whether the search should be case sensitive.
+* **WholeWordsOnly**: Gets or sets a value indicating whether only whole words should be matched.
 
 and events:
 * **PropertyChanged**: Occurs when a property value changes.

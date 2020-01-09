@@ -18,9 +18,9 @@ In order to use __RadWebCam__, you will need to add references to the following 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Media__
 * __Telerik.Windows.MediaFoundation__
-* __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/MediaFoundation* folder.
-* __SharpDX__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/SharpDX* folder.
-* __SharpDX.Direct3D9__: This dll is located in the *UI for WPF installation folder/Binaries/WPF40/SharpDX* folder.
+* __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/MediaFoundation* folder.
+* __SharpDX__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/SharpDX* folder.
+* __SharpDX.Direct3D9__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/SharpDX* folder.
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 

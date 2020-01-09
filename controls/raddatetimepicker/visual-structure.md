@@ -37,5 +37,3 @@ When the drop down button is selected:
  * [Overview]({%slug raddatetimepicker-overview%})
 
  * [Getting Started]({%slug raddatetimepicke-getting-started%})
-
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})

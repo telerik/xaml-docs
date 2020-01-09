@@ -121,8 +121,6 @@ Here is the result:
 
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
 
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
  * [Features - Date Items]({%slug raddatetimepicker-features-date-items%})
 
  * [Styling RadDateTimePicker]({%slug raddatetimepicker-styling-raddatetimepicker%})

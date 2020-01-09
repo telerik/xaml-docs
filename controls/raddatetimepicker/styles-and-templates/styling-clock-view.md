@@ -82,8 +82,6 @@ Here is the result:
 
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
 
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
  * [Features - Clock Items]({%slug raddatetimepicker-features-clock-items%})
 
  * [Styling RadDateTimePicker]({%slug raddatetimepicker-styling-raddatetimepicker%})

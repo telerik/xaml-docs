@@ -10,7 +10,7 @@ position: 1
 
 # Configuration
 
-RadScheduleView's four predefined ViewDefinitions have various properties, which can be set in order the views to be configured best. Some of them are common for all views, others are specific for each view. In the following section we will go through all common properties.      
+RadScheduleView's predefined ViewDefinitions have various properties, which can be set in order the views to be configured best. Some of them are common for all views, others are specific for each view. In the following section we will go through all common properties.      
 
 >For more information about the view specific properties, check [here]({%slug radscheduleview-viewdefinitions-specificproperties%}).
 

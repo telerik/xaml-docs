@@ -68,4 +68,4 @@ Invoking the **OpenFileDialog** method opens the dialog from **Figure 1** with t
 ## See Also
 
 * [Selection]({%slug radsyntaxeditor-features-selection%})
-* [IntelliSense]({%slug radsyntaxeditor-visual-structure%})
+* [IntelliPrompts]({%slug radsyntaxeditor-features-intelliprompts%})

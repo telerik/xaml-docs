@@ -5,7 +5,7 @@ description: Elevation
 slug: radmap-features-providers-bing-rest-map-provider-elevation
 tags: bing,map,provider,rest,elevation
 published: True
-position: 4
+position: 5
 ---
 
 # Elevation

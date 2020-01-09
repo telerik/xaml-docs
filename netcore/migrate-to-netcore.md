@@ -14,14 +14,12 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 
 >tip Before proceeding with this topic you can check if your application's code is compatible with .NET Core using the [Microsoft Portability Analyzer](https://devblogs.microsoft.com/dotnet/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/) tool.
 
-1. Create a new __.NET Core 3.0__ application using Visual Studio. 
+1. Create a new __.NET Core 3.1__ application using Visual Studio. 
 	
 	#### Figure 1: Creating new project
-	![](images/netcore-support-migration-0.png)
-
-	> This VisualStudio template is available only with Visual Studio 2019. Otherwise, you will need to use the VS Command Prompt in order to create the project. This approach is shown in the [following blog post](https://www.telerik.com/blogs/how-to-update-wpf-winforms-app-to-dotnet-core-3).
+	![](images/netcore-support-migration-0.png)	
 	
-	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) section of the documentation.
+	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) section of the documentation.
 	
 2. Add the existing files from the original project as linked files to the .NET Core project.
 	
@@ -30,11 +28,11 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	
 	![](images/netcore-support-migration-2.png)
  
-3. Reference the Telerik assemblies built against .NET Core 3.0.
+3. Reference the Telerik assemblies built against .NET Core 3.1.
 	
 	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NetCore*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug installation-installing-from-nuget-wpf%}).
 	
-	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.0
+	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1
 	![](images/netcore-support-migration-3.png)
 
 ## Tips

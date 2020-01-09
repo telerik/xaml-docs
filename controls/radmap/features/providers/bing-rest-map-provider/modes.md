@@ -5,7 +5,7 @@ description: This article describes the BingRestMapProvdider imagery sets.
 slug: radmap-features-providers-bing-rest-map-modes
 tags: bing,map,provider,rest,mode,road,birdseye,canvaslight,canvasdark,canvasgray, aerialondemand, roadondemand,ondemand
 published: True
-position: 4
+position: 1
 ---
 
 # Imagery sets

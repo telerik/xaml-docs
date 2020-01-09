@@ -5,7 +5,7 @@ description: This article lists the resource keys which can be used to localize 
 slug: radsyntaxeditor-localization
 tags: localization
 published: True
-position: 3
+position: 4
 ---
 
 # Localization

@@ -20,6 +20,36 @@ Here you can find common information about the properties and methods of TouchMa
 
 TouchManager exposes the following public properties:
 
+* __IsEnabled__: A static property of type __bool__ that indicates whether the TouchManager subscribes to any input events. The property has to be set at the startup of the application. Note that changing its value run-time after setting it to **False** is not supported. 
+
+	#### __[C#] Example 1: Setting IsEnabled__
+	{{region touchmanager-features-0}}
+		public partial class App : Application
+		{
+			protected override void OnStartup(StartupEventArgs e)
+			{
+				TouchManager.IsEnabled = false;
+				base.OnStartup(e);
+			}
+		}
+	{{endregion}}
+	
+	#### __[VB.NET] Example 1: Setting IsEnabled__
+	{{region touchmanager-features-1}}
+		Public Partial Class App
+			Inherits Application
+
+			Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+				TouchManager.IsEnabled = False
+				MyBase.OnStartup(e)
+			End Sub
+		End Class
+	{{endregion}}
+	
+	The property can be set also before the **InitializeComponent** call of the main window.
+	
+	Disabling the TouchManager will decrease the memory footprint of the application.
+
 * __IsTouchEnabled__: A static property of type __bool__ that indicates whether the TouchManager will respond to any touch events. It can be used to enable or disable the touch interactions with the elements that use the TouchManager. The default value is __true__.
 
 * __TouchMode__: An attached property of type __Telerik.Windows.Input.Touch.TouchMode__ enumeration that gets or sets the touch mode of the control. You can read more about the property in the [Touch Modes]({%slug touchmanager-touch-modes%}) help article.
@@ -30,18 +60,18 @@ TouchManager exposes the following public properties:
 		> The element on which this value is set should be a ScrollViewer. Otherwise, an exception will be thrown.
 	* __Parent__: If an unhandled swipe gesture occurs for this element, the first ScrollViewer parent will get panned.
 	
-	#### __[XAML] Example 1: Setting ScrollViewerSwipeMode in XAML__
-	{{region touchmanager-features-0}}
+	#### __[XAML] Example 2: Setting ScrollViewerSwipeMode in XAML__
+	{{region touchmanager-features-2}}
 		<ListBox x:Name="element" telerik:TouchManager.ScrollViewerSwipeMode="Parent">
 	{{endregion}}
 		
-	#### __[C#] Example 2: Setting ScrollViewerSwipeMode in code__
-	{{region touchmanager-features-1}}
+	#### __[C#] Example 3: Setting ScrollViewerSwipeMode in code__
+	{{region touchmanager-features-3}}
 		TouchManager.SetScrollViewerSwipeMode(this.element, ScrollViewerSwipeMode.Parent);
 	{{endregion}}
 		
-	#### __[VB.NET] Example 2: Setting ScrollViewerSwipeMode in code__
-	{{region touchmanager-features-2}}
+	#### __[VB.NET] Example 3: Setting ScrollViewerSwipeMode in code__
+	{{region touchmanager-features-4}}
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
 	{{endregion}}
 
@@ -70,18 +100,18 @@ TouchManager exposes the following public properties:
 	* __TouchMove__: The drag operation will be triggered during a TouchMove, regardless of whether a TapAndHold event has occured or not.
 	* __TapAndHold__ (default): The drag operation will be triggered during a TapAndHold event.
 
-	#### __[XAML] Example 3: Setting DragStartTrigger in XAML__
-	{{region touchmanager-features-3}}
+	#### __[XAML] Example 4: Setting DragStartTrigger in XAML__
+	{{region touchmanager-features-5}}
 		<Border x:Name="element" telerik:TouchManager.DragStartTrigger="TapHoldAndMove">
 	{{endregion}}
 		
-	#### __[C#] Example 4: Setting DragStartTrigger in code__
-	{{region touchmanager-features-4}}
+	#### __[C#] Example 5: Setting DragStartTrigger in code__
+	{{region touchmanager-features-6}}
 		TouchManager.SetDragStartTrigger(this.element, TouchDragStartTrigger.TapHoldAndMove);
 	{{endregion}}
 		
-	#### __[VB.NET] Example 4: Setting DragStartTrigger in code__
-	{{region touchmanager-features-5}}
+	#### __[VB.NET] Example 5: Setting DragStartTrigger in code__
+	{{region touchmanager-features-7}}
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
 	{{endregion}}
 

@@ -33,5 +33,3 @@ Take a look at the following topics to learn more:
  * [Overview]({%slug raddatetimepicker-overview%})
 
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
-
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})

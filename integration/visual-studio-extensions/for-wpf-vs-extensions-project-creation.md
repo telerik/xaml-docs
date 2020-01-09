@@ -41,6 +41,7 @@ The fastest way to have such a project is by using the Telerik Visual Studio Ext
 
 You can also start the Telerik's __Create New Project Wizard__ (see step 2) from the Visual Studio's New Project Wizard.
 
+#### Figure 4: Visual Studio New Project Wizard
 ![](images/radcontrols-for-wpf-vs-extensions-project-creation-5.png)
 
 >tip The __Create New Project Wizard__ allows you to download a Telerik version that is not available on your machine.

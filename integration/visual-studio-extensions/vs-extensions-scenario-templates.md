@@ -4,7 +4,7 @@ page_title: Add Scenario
 description: Add Scenario
 slug: radcontrols-vs-extensions-scenario-templates
 tags: scenario,templates
-published: True
+published: False
 position: 5
 ---
 

@@ -23,7 +23,7 @@ The control provides two mechanisms for defining its columns:
 * __DisplayIndex__: A property of type nullable __int?__ that gets or sets the display index of the column.
 * __GroupName__: A property of type __string__ that gets or sets the group name used to categorize the items in columns.
 * __Header__: A property of type __string__ that gets or sets the content inside the header of the columns.
-* __HeaderTemplate__: A property of type __string__ that gets or sets the content template inside the header of the columns. This property can be used to further customize the column header.
+* __HeaderTemplate__: A property of type __DataTemplate__ that gets or sets the content template inside the header of the columns. This property can be used to further customize the column header.
 * __IsExpanded__: A __Boolean__ property that gets or sets if a given column is expanded or not.
 * __Width__: A property of type __double__ that gets or sets the column width.
 * __CollapsedWidth__: A property of type __double__ that gets or sets the width of a collapsed column.
@@ -31,7 +31,7 @@ The control provides two mechanisms for defining its columns:
 
 ## Automatic Columns Generation
 
-By default, __RadTaskBoard__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadTaskBoard__ to a collection of employees (see code in __Example 1__ and the result in __Figure 1__), the control will create a separate column for each value of the property set to the __GroupMemberPath__ of the RadTaskBoard.
+By default, __RadTaskBoard__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadTaskBoard__ to a collection of TaskBoardCardModel (see code in __Example 1__ and the result in __Figure 1__), the control will create a separate column for each value of the property set to the __GroupMemberPath__ of the RadTaskBoard.
 
 #### __[C#] Example 1: Defining the data__
 {{region csharp-radtaskboard-features-column_0}}
@@ -84,38 +84,60 @@ By default, __RadTaskBoard__ will generate its columns automatically based on th
 
 ## Manual Columns Definition
 
-When the built-in order of the auto generation of columns does not fit in your case, you can manually define the needed columns in the correct order. You must add the columns to the __Columns__ collection of __RadTaskBoard__.
+When the built-in order of the auto generation of columns does not fit in your case, you have two options to change that.
 
-To declare custom columns you can set the __AutoGenerateColumns__ property of the RadTaskBoard to False. Then you can populate the Columns collection property of the control.
+#### You can manually define the needed columns in the correct order.
 
-> If the __Header__ property of the TaskBoardColumn is not set, the GroupName property will be used as a Header.
+	To declare custom columns you can set the __AutoGenerateColumns__ property of the RadTaskBoard to False. Then you can populate the Columns collection property of the control.
 
-#### __[XAML] Example 3: Define RadTaskBoard with custom columns__
-{{region xaml-radtaskboard-features-column_2}}
-	<telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
-		<telerik:RadTaskBoard.Columns>
-			<telerik:TaskBoardColumn GroupName="Not Done"/>
-			<telerik:TaskBoardColumn GroupName="In Progress"/>
-			<telerik:TaskBoardColumn GroupName="Done"/>
-		</telerik:RadTaskBoard.Columns>
-	</telerik:RadTaskBoard>
-{{endregion}}
+	> If the __Header__ property of the TaskBoardColumn is not set, the GroupName property will be used as a Header.
 
-#### __[C#] Example 4: Define TaskBoardColumns in code__
-{{region cs-radtaskboard-features-column_3}}
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Not Done" });
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "In Progress" });
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Done" });
-		this.taskBoard.ItemsSource = this.GetTasks();            
-	}
-{{endregion}}
+	#### __[XAML] Example 3: Define RadTaskBoard with custom columns__
+	{{region xaml-radtaskboard-features-column_2}}
+		<telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
+			<telerik:RadTaskBoard.Columns>
+				<telerik:TaskBoardColumn GroupName="Not Done"/>
+				<telerik:TaskBoardColumn GroupName="In Progress"/>
+				<telerik:TaskBoardColumn GroupName="Done"/>
+			</telerik:RadTaskBoard.Columns>
+		</telerik:RadTaskBoard>
+	{{endregion}}
 
-#### Figure 2: RadTaskBoard with manually generated columns
-![Telerik TaskBoard Column 1](images/taskboard_column_1.png)
+	#### __[C#] Example 4: Define TaskBoardColumns in code__
+	{{region cs-radtaskboard-features-column_3}}
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Not Done" });
+			this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "In Progress" });
+			this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Done" });
+			this.taskBoard.ItemsSource = this.GetTasks();            
+		}
+	{{endregion}}
 
+	#### Figure 2: RadTaskBoard with manually generated columns
+	![Telerik TaskBoard Column 1](images/taskboard_column_1.png)
+	
+#### You can subscribe to the __AutoGeneratingColumn__ event. In the event handler, you can get the currently generated column and change its DisplayIndex property to arrange the columns per your needs.
+
+	#### __[C#] Example 5: Set DisplayIndex of the columns__
+	{{region cs-radtaskboard-features-column_4}}
+		private void RadTaskBoard_AutoGeneratingColumn(object sender, TaskBoardAutoGeneratingColumnEventArgs e)
+		{
+			if(e.Column.GroupName == "Not Done")
+			{
+				e.Column.DisplayIndex = 0;
+			}
+			else if(e.Column.GroupName == "In Progress")
+			{
+				e.Column.DisplayIndex = 1;
+			}
+			else if (e.Column.GroupName == "Done")
+			{
+				e.Column.DisplayIndex = 2;
+			}
+		}
+	{{endregion}}
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

@@ -20,6 +20,8 @@ RadTaskBoard is a simple, visual way to keep track of things that need to be don
 
 ## Key Features:
 
+* __TaskBoardCardModel__: RadTaskBoard control provides build-in ViewModel class which exposes the most required properties that allow you to track your task life cycle. This class can serve as a base class for the __RadTaskBoardCard__ element.
+
 * __Indicator Color__: Using colors is a quick way to make tasks stand out on the board. It helps users to quickly identify priority, type of work or an assignee as well as to group tasks for further reporting using the color criteria.
 
 * __Tags__: You can highlight given tasks by adding tags to their Tags collection. Adding tags can be a great way to associate items with a release, sub-tasks to a story, feature, or project, etc. 

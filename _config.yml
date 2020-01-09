@@ -3268,6 +3268,7 @@ intro_columns:
       "PropertyGrid": "radpropertygrid-overview"
       "TreeListView": "radtreelistview-overview"
       "MultiColumnComboBox": "multicolumncombobox-overview"
+      "TaskBoard": "radtaskboard-overview"
   -
     title: "Scheduling"
     items:
@@ -3339,8 +3340,7 @@ intro_columns:
       "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
-      "TreeView": "radtreeview-overview2"
-      "TaskBoard": "radtaskboard-overview"
+      "TreeView": "radtreeview-overview2"      
   -
     title: "Interactivity & UX"
     items:

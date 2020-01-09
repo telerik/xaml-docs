@@ -12,10 +12,6 @@ position: 1
 
 This section defines terms and concepts used in the scope of the __RadTaskBoard__ control with which you have to get familiar before you continue to read its documentation. They can also be helpful when contacting our support service in order to describe your issue better.
 
-
-# Image here
-
-
 ## See Also
 
 * [Getting Started]({%slug radtaskboard-getting-started%})

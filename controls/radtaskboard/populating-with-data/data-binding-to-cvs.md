@@ -107,9 +107,6 @@ What's left is to set the DataContext of the Window and declare RadTaskBoard con
 	</telerik:RadTaskBoard>
 {{endregion}}
 
-#### Figure 1: RadTaskBoard bind to custom object 
-// image here
-
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
  * [Binding to Object]({%slug radtaskboard-populating-with-data-data-binding-to-object%})

@@ -19,7 +19,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	#### Figure 1: Creating new project
 	![](images/netcore-support-migration-0.png)	
 	
-	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) section of the documentation.
+	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) section of the documentation.
 	
 2. Add the existing files from the original project as linked files to the .NET Core project.
 	

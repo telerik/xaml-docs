@@ -38,7 +38,15 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 
 ![](images/radsplashscreen-features-progress-bar-0.png)
 
-> You can hide the progress bar by setting the __IsProgressBarVisible__ property of the SplashScreenDataContext to __False__.
+## Hiding Progress Bar
+
+To hide the progress bar, set the __IsProgressBarVisible__ property of the [SplashScreenDataContext]({%slug radsplashscreen-features-splashscreenmanager%}#) object to __False__.
+
+#### __[C#] Example 2: Hiding the progress bar__
+{{region radsplashscreen-features-progress-bar-1}}
+	var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
+	dataContext.IsProgressBarVisible = false;
+{{endregion}}
 
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})

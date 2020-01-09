@@ -84,8 +84,8 @@ The **FindPrevious** method has two overloads:
 
 The **SearchResult** class holds the result from a specific search command. This class exposes several properties and methods:
 * **NotFound**: A static property which gets a default SearchResult instance when there is no search result found.
-* **Range**: Gets the result text range position.
-* **Result**: Gets a [TextRange](https://docs.telerik.com/devtools/document-processing/api/Telerik.Windows.Documents.Fixed.Text.TextRange.html) object describing the start and end positions of the match.
+* **Range**: Gets a [TextRange](https://docs.telerik.com/devtools/document-processing/api/Telerik.Windows.Documents.Fixed.Text.TextRange.html) object describing the start and end positions of the match.
+* **Result**: Gets the result as text.
 * **ToString**: Returns a string that represents the current object.
 
 #### __[C#] Example 4: Check if a match was found__

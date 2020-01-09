@@ -195,6 +195,19 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
 {{endregion}}
 
+## Search With Accent Insensitive
+
+With **R1 2020** we introduced a new boolean **IsSearchWithAccentEnabled** property of __SearchStateManager__ which allows you to search with accent insensitive. This behavior is turned of default. To enable this functionality you can subscribre to the Loaded event of the RadGridView. In the event handler you can set this property to true. 
+
+#### __[XAML] Example 7: Setting IsSearchWithAccentEnabled property__
+{{region xaml-radgridview-search-as-you-type-6}}
+	private void GridView_Loaded(object sender, RoutedEventArgs e)
+	{
+		var gridView = sender as RadGridView;
+		gridView.SearchStateManager.IsSearchWithAccentEnabled = true;
+	}
+{{endregion}}
+
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

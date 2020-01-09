@@ -4,7 +4,7 @@ page_title: Drag-Drop
 description: Drag-Drop
 slug: radtaskboard-features-drag-drop
 tags: drag, drop, reorder
-published: True
+published: False
 position: 0
 ---
 

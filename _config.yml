@@ -944,15 +944,7 @@ navigation:
         title: Taggers
         position: 9
     controls/radtaskboard:
-        tile: RadTaskBoard
-    controls/radtaskboard/features/column:
-        tile: Column
-    controls/radtaskboard/features/indicator-color:
-        tile: Indicator Color
-    controls/radtaskboard/features/drag-drop:
-        tile: Drag Drop
-    controls/radtaskboard/features/selection:
-        tile: Selection
+        title: RadTaskBoard
 ## X1 Controls End
 
 ## Common Start   
@@ -3276,6 +3268,7 @@ intro_columns:
       "PropertyGrid": "radpropertygrid-overview"
       "TreeListView": "radtreelistview-overview"
       "MultiColumnComboBox": "multicolumncombobox-overview"
+      "TaskBoard": "radtaskboard-overview"
   -
     title: "Scheduling"
     items:

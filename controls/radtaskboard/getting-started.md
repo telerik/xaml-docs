@@ -23,69 +23,61 @@ You can find the required assemblies for each control from the suite in the [Con
 ## Defining RadTaskBoard
 
 > The control can be populated in three different ways. 
-> * Binding to a collection of __TaskBoardItemModel__.
+> * Binding to a collection of __TaskBoardCardModel__.
 > * Binding to a collection of __custom objects__.
 > * Binding to a __CollectionView__ collection with predifined groups. 
 > For the purpose of this tutorial we are going to use the first one. The other approaches and more complex one can be found in the __Populating With Data__ section.
 
-First, we can go ahead and create our ViewModel with some tasks. The control API provides out of the __TaskBoardItemModel__ class which expose most needed properties to start organized your tasks.
+First, we can go ahead and create our ViewModel with some tasks. The control API provides a built-in __TaskBoardCardModel__ model class which exposes the most needed properties to start organizing your tasks.
 
 #### __[C#] Example 1: Defining ViewModel
-{{region xaml-radtaskboard-getting-started-1}}
-    public  class MainViewModel 
-    {
-        public ObservableCollection<TaskBoardItemModel> Data { get; set; }
-        public MainViewModel()
-        {
-            Data = GetTasks();
-        }
-        public  ObservableCollection<TaskBoardItemModel> GetTasks()
-        {
-            ObservableCollection<TaskBoardItemModel> tasks = new ObservableCollection<TaskBoardItemModel>();
+{{region csharp-radtaskboard-getting-started-1}}
+    public class MainViewModel
+	{
+		public ObservableCollection<TaskBoardCardModel> Data { get; set; }
+		public MainViewModel()
+		{
+			Data = GetTasks();
+		}
+		public ObservableCollection<TaskBoardCardModel> GetTasks()
+		{
+			ObservableCollection<TaskBoardCardModel> tasks = new ObservableCollection<TaskBoardCardModel>
+			{
+				new TaskBoardCardModel() { Assignee = "Nancy Davolio", Description = "Task Description", State = "In Progress", Title = "Task Title" },
 
-            TaskBoardItemModel task;
-            task = new TaskBoardItemModel() { Assignee = "Nancy Davolio", Description = "This is a nice description", Id = "3", State = "In Progress", Title = "This is a Title" };
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Andrew Fuller", Description = "This is a nice description", Id = "1", State = "Not Done", Title = "This is a Title" };
-            task.Tags.Add("Tag1");
-            task.Tags.Add("Tag2");
-            task.Tags.Add("Tag3");
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Janet Leverling", Description = "This is a nice description", Id = "2", State = "Not Done", Title = "This is a Title" };
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Margaret Peacock", Description = "This is a nice description", Id = "3", State = "Not Done", Title = "This is a Title" };
-            tasks.Add(task);
+				new TaskBoardCardModel() { Assignee = "Andrew Fuller", Description = "Task Description", State = "Not Done", Title = "Task Title" },
 
-            task = new TaskBoardItemModel() { Assignee = "Steven Buchanan", Description = "This is a nice description", Id = "2", State = "Done", Title = "This is a Title" };
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Michael Suyama", Description = "This is a nice description", Id = "2", State = "Done", Title = "This is a Title" };
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Robert King", Description = "This is a nice description", Id = "2", State = "Done", Title = "This is a Title" };
-            tasks.Add(task);
+				new TaskBoardCardModel() { Assignee = "Janet Leverling", Description = "Task Description", State = "Not Done", Title = "Task Title" },
 
+				new TaskBoardCardModel() { Assignee = "Margaret Peacock", Description = "Task Description", State = "Not Done", Title = "Task Title" },
 
-            task = new TaskBoardItemModel() { Assignee = "Laura Callahan", Description = "This is a nice description", Id = "3", State = "In Progress", Title = "This is a Title" };
-            tasks.Add(task);
-            task = new TaskBoardItemModel() { Assignee = "Anne Dodsworth", Description = "This is a nice description", Id = "3", State = "In Progress", Title = "This is a Title" };
-            tasks.Add(task);
+				new TaskBoardCardModel() { Assignee = "Steven Buchanan", Description = "Task Description", State = "Done", Title = "Task Title" },
 
-            return tasks;
-        }
-    }	
+				new TaskBoardCardModel() { Assignee = "Michael Suyama", Description = "Task Description", State = "Done", Title = "Task Title" },
+
+				new TaskBoardCardModel() { Assignee = "Robert King", Description = "Task Description", State = "Done", Title = "Task Title" },
+
+				new TaskBoardCardModel() { Assignee = "Laura Callahan", Description = "Task Description", State = "In Progress", Title = "Task Title" },
+
+				new TaskBoardCardModel() { Assignee = "Anne Dodsworth", Description = "Task Description", State = "In Progress", Title = "Task Title" }
+			};
+
+			return tasks;
+		}
+	}
 {{endregion}}
 
-Next we need to define RadTaskBoard in XAML and bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property represent which property from your model will be used to group the tasks.
+Next we need to define RadTaskBoard in XAML, bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property indicates which property from your model will be used to group the tasks.
 
 #### __[XAML] Example 2: Binding RadTaskBoard
 {{region xaml-radtaskboard-getting-started-0}}
-    <telerik:RadTaskBoard ItemsSource="{Binding Data}" 
-                        GroupMemberPath="State" />
+    <telerik:RadTaskBoard ItemsSource="{Binding Data}" GroupMemberPath="State" />
 {{endregion}}
 
 And finally, we need to set the DataContext of the MainWindow:
 
 #### __[C#] Example 3: Setting DataContext
-{{region xaml-radtaskboard-getting-started-0}}
+{{region csharp-radtaskboard-getting-started-0}}
     public MainWindow() 
     { 
         InitializeComponent(); 
@@ -94,7 +86,10 @@ And finally, we need to set the DataContext of the MainWindow:
 {{endregion}}
 
 If you run the application now, you should get a structure like in Figure 1:
-#### Figure 1: RadGridView and RadTreeView
-![Telerik {{ site.framework_name }} TaskBoard getting-started 0](images/ .PNG)
+#### Figure 1: RadTaskBoard with sample data
+![Telerik TaskBoard Getting-Started 0](images/getting_started_1.png)
 
-
+## See Also
+ * [Column]({%slug radtaskboard-features-column%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Indicator Color]({%slug radtaskboard-features-indicator-color%})

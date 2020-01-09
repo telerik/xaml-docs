@@ -63,7 +63,7 @@ The PropertyNameMetadata class provides the following properties:
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
-				<!--  Searching (and serializing) all properties of RadButton, except Background --> 
+				<!-- Searching (and serializing) all properties of RadButton, except Background --> 
 				<telerik:PropertyNameMetadata Condition="Except" Expression="^\b(Background)\b$" SearchType="PropertyName" />
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
@@ -95,7 +95,7 @@ The PropertyTypeMetadata class exposes the following properties:
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
-				<!--  Searching (and serializing) only properties of type Thickness--> 
+				<!-- Searching (and serializing) only properties of type Thickness --> 
 				<telerik:PropertyTypeMetadata Condition="Only" Type="{x:Type Thickness}"/>    
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
@@ -107,7 +107,7 @@ The PropertyTypeMetadata class exposes the following properties:
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
-				<!--  Searching (and serializing) only properties of type Thickness--> 				 
+				<!-- Searching (and serializing) only properties of type Thickness --> 				 
 				<telerik:PropertyTypeMetadata Condition="Only" TypeString="System.Windows.Thickness"/>
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
@@ -127,7 +127,7 @@ The __SerializationMetadataCollection__ class allows you to define what operator
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 				<telerik:SerializationMetadataCollection Operator="And">
-					<!--  Searching (and serializing) only properties of type Double that don't contain the string "Width" in their names-->
+					<!-- Searching (and serializing) only properties of type Double that don't contain the string "Width" in their names -->
 					<telerik:PropertyTypeMetadata Condition="Only" TypeString="System.Double"/>
 					<telerik:PropertyNameMetadata Condition="Except" Expression="Width" SearchType="PropertyName" />
 				</telerik:SerializationMetadataCollection>

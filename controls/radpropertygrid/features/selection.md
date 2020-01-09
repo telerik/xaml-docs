@@ -48,9 +48,9 @@ RadPropertyGrid provides three selection modes, which allow you to manipulate th
 
 RadPropertyGrid provides two properties to get the data behind the selected items - __SelectedPropertyDefinition__ and __SelectedPropertyDefinitions__.
         
-* __SelectedPropertyDefinition__ - the business object that sits behind the selected Property Definition.
+* __SelectedPropertyDefinition__: The business object that sits behind the selected Property Definition.
 
-* __SelectedPropertyDefinitions__ - a collection of the business objects that sits behind the selected Property Definitions. It will contain more than one item when the __SelectionMode__ is either __Multiple__ or __Extended__.
+* __SelectedPropertyDefinitions__: A collection of the business objects that sits behind the selected Property Definitions. It will contain more than one item when the __SelectionMode__ is either __Multiple__ or __Extended__.
 
 #### __[XAML] Example 3: Binding to SelectedPropertyDefinition__
 {{region xaml-radpropertygrid-selection_3}}

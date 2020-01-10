@@ -5,7 +5,7 @@ description: Binding to CollectionViewSource
 slug: radtaskboard-populating-with-data-data-binding-to-collectionviewsource
 tags: binding,to,collectionviewsource
 published: True
-position: 3
+position: 2
 ---
 
 # Binding to CollectionViewSource

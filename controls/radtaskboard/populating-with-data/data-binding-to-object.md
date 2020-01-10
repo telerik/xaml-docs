@@ -5,7 +5,7 @@ description: Binding to Object
 slug: radtaskboard-populating-with-data-data-binding-to-object
 tags: binding,to,object
 published: True
-position: 1
+position: 3
 ---
 
 # Binding to Object
@@ -157,5 +157,5 @@ Since the control is bound a collection of custom objects, you need to declare t
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
- * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})
  * [Binding to CollectionViewSource]({%slug radtaskboard-populating-with-data-data-binding-to-collectionviewsource%})

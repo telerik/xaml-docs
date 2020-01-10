@@ -1,23 +1,23 @@
 ---
-title: Indicator Color
-page_title: Indicator Color
-description: Indicator Color
-slug: radtaskboard-features-indicator-color
-tags: indicator color
+title: Category Indicator
+page_title: Category Indicator
+description: Category Indicator
+slug: radtaskboard-features-category-indicator
+tags: category, indicator, color
 published: True
 position: 0
 ---
 
-# Indicator Color
+# Category Indicator
 
-There are different ways to organize your RadTaskBoard cards. The control provides indicator-color functionality, which allows you to apply different colors to its tasks. Using colors is a quick way to make tasks stand out on the board. 
+There are different ways to organize your RadTaskBoard cards. The control provides category indicator color functionality, which allows you to apply different colors to its tasks. Using colors is a quick way to make tasks stand out on the board. 
 
 The purpose of this tutorial is to show you how to set different colors to your RadTaskBoard tasks.
 
-First, we can go ahead and create some sample data and apply it directly to the ItemSource of the RadTaskBoard. The RadTaskBoard control will be populated with a collection of __TaskBoardCardModel__. The color functionality uses the __CategoryName__ property of the TaskBoardCardModel to match the item with the color.
+First, we can go ahead and create some sample data and apply it directly to the ItemSource of the RadTaskBoard. The RadTaskBoard control will be populated with a collection of __TaskBoardCardModel__. The category indicator functionality uses the __CategoryName__ property of the TaskBoardCardModel to match the item with the color.
 
 #### __[C#] Example 1: Defining ViewModel__
-{{region cs-radtaskboard-features-indicator-color-0}}
+{{region cs-radtaskboard-features-category-indicator-0}}
     public MainWindow()
 	{
 		InitializeComponent();  
@@ -66,8 +66,7 @@ The next step is to declare our colors. The __Categories__ collection property o
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
 #### __[XAML] Example 2: Specifying custom colors__
-{{region xaml-radtaskboard-features-indicator-color-1}}
-
+{{region xaml-radtaskboard-features-category-indicator-1}}
    <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
 		<telerik:RadTaskBoard.Categories>
 			<taskBoard:CategoryCollection>
@@ -80,17 +79,17 @@ The next step is to declare our colors. The __Categories__ collection property o
 {{endregion}}
 
 If you run the application now, you should get a structure like in Figure 1:
-#### Figure 1: Tasks with different Indicator Color
-![Telerik TaskBoard Indicator Color 0](images/taskboard_indicator_color_0.png)
+#### Figure 1: Tasks with different categories Color
+![Telerik TaskBoard Category Indicator 0](images/taskboard_indicator_color_0.png)
 
-## Hide indicator color
+## Hide Categories Color
 
 When you don't want a given task to have a color, you can set the __ShowCategoryIndicator__ property of the TaskBoardCardModel to false. We are going to set this property to false to the second TaskBoardCardModel element from __Example 1__. __Figure 2__ demonstrates this change.
 
 #### Figure 2: A task with no color
-![Telerik TaskBoard Indicator Color 1](images/taskboard_indicator_color_1.png)
+![Telerik TaskBoard categories Color 1](images/taskboard_indicator_color_1.png)
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
- * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})
  * [Binding to CollectionViewSource]({%slug radtaskboard-populating-with-data-data-binding-to-collectionviewsource%})

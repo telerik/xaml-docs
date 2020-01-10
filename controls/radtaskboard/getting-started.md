@@ -92,4 +92,4 @@ If you run the application now, you should get a structure like in Figure 1:
 ## See Also
  * [Column]({%slug radtaskboard-features-column%})
  * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
- * [Indicator Color]({%slug radtaskboard-features-indicator-color%})
+ * [Indicator Color]({%slug radtaskboard-features-category-indicator%})

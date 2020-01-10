@@ -140,6 +140,8 @@ navigation:
         title: RadTimePicker
     controls/radpasswordbox:
         title: RadPasswordBox
+    controls/radsplashscreen:
+        title: RadSplashScreen
     controls/radtimespanpicker:
         title: RadTimeSpanPicker
     controls/radtransitioncontrol:
@@ -671,6 +673,8 @@ navigation:
     controls/radrichtextbox/features:
         title: Features
         position: 6
+    controls/radrichtextbox/features/content-controls:
+        title: Content Controls
     controls/radrichtextbox/import-export:
         title: Import/Export
         position: 7    
@@ -935,10 +939,12 @@ navigation:
         title: RadSyntaxEditor
     controls/radsyntaxeditor/features:
         title: Features
-        position: 5
+        position: 7
     controls/radsyntaxeditor/features/taggers:
         title: Taggers
         position: 9
+    controls/radtaskboard:
+        title: RadTaskBoard
 ## X1 Controls End
 
 ## Common Start   
@@ -3262,6 +3268,7 @@ intro_columns:
       "PropertyGrid": "radpropertygrid-overview"
       "TreeListView": "radtreelistview-overview"
       "MultiColumnComboBox": "multicolumncombobox-overview"
+      "TaskBoard": "radtaskboard-overview"
   -
     title: "Scheduling"
     items:
@@ -3329,10 +3336,11 @@ intro_columns:
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
       "RibbonView": "radribbonview-overview"
+      "SplashScreen": "radsplashscreen-overview"
       "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"
-      "TreeView": "radtreeview-overview2"
+      "TreeView": "radtreeview-overview2"      
   -
     title: "Interactivity & UX"
     items:

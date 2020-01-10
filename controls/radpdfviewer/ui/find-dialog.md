@@ -34,6 +34,10 @@ There are three possible input parameters that determine the results of the sear
 This is how the Find Dialog looks:
 ![Rad Pdf Viewer Find Dialog](images/RadPdfViewer_Find_Dialog.png)
 
+## Find Programmatically
+
+Find Programmatically is described in details in [Find]({%slug radpdfviewer-find%}) article.
+
 ## Adding the FindDialog to a project
 
 In a few simple steps the FindDialog could be added to a project.
@@ -88,4 +92,8 @@ In order to achieve this, should be created a class which inherits the __IFindDi
 
 
 >tipFind a runnable project example demonstrating this functionality in our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomFindDialog__.
+
+## See Also
+
+ * [Find Programmatically]({%slug radpdfviewer-find%})
           

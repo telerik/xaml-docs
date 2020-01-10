@@ -420,9 +420,18 @@ $(function () {
           // Scroll to active item
           var top = 0;
           $('#toc a.active').parents('li').each(function (i, e) {
-              $(e).addClass(active).addClass(expanded);
-              $(e).children('a').addClass(active);
-              top += $(e).position().top;
+            $(e).addClass(active).addClass(expanded);
+            $(e).children('a').addClass(active);
+            var selectedChild = $(e).children('ul').children('li.active.in');
+            var childTop = 0;
+            if (selectedChild.length) {
+              childTop = selectedChild.position().top;
+              if (selectedChild.offset().top - $(e).position().top > $('.sidetoc').height()) {
+                  top += childTop;
+              }
+            }
+            
+            top += $(e).position().top;
           })
           $('.sidetoc').scrollTop(top - 50);
 

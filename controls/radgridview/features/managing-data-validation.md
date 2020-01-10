@@ -244,18 +244,19 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	End Sub
 {{endregion}}
 
-Two things worth mentioning here:
+A few things worth mentioning here:
 
 * In order to access the new values, you should grab the row's __DataContext__ (in this case, it is an __Order__). For the old values, use the __OldValues__ property.
 
 * The __GridViewCellValidationResult__ object is used for displaying error messages when the user enters wrong data.
 
-__Figure 4__ shows the result from a failed validation.
+* The RowValidating event fires each time a GridViewRow gets loaded into the viewport, whether in edit mode or not. You can avoid executing any custom logic defined in your event handler by checking the __EditOperationType__ property of the GridViewRowValidatingEventArgs. 
 
 #### __Figure 4: RadGridView's appearance after validation on row level was applied__
 ![Telerik {{ site.framework_name }} DataGrid Validation 040](images/RadGridView_Validation_040.png)
 
-Once you have added such errors, you will have to explicitly clear them when needed. Please check this [help article]({%slug gridview-troubleshooting-validation-stays%}) for information about how to clear user defined errors.
+Once you have added such errors, you will have to explicitly clear them when needed. Read this [help article]({%slug gridview-troubleshooting-validation-stays%}) for information about how to clear user defined errors.
+
 
 ## Validating Data Through Data Annotations
 

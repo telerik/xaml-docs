@@ -36,12 +36,12 @@ The fastest way to have such a project is by using the Telerik Visual Studio Ext
 		
 	Creating a new .NET Core project allows you to automatically add nuget package references in the newly created project. To do this, choose a version with "NuGet" in its name from the __Create New Project Wizard__. 
 
-	#### Figure 3: Create New Project Wizard - NuGet options
+	#### Figure 4: Create New Project Wizard - NuGet options
 	![](images/radcontrols-for-wpf-vs-extensions-project-creation-4.png)
 
 You can also start the Telerik's __Create New Project Wizard__ (see step 2) from the Visual Studio's New Project Wizard.
 
-#### Figure 4: Visual Studio New Project Wizard
+#### Figure 5: Visual Studio New Project Wizard
 ![](images/radcontrols-for-wpf-vs-extensions-project-creation-5.png)
 
 >tip The __Create New Project Wizard__ allows you to download a Telerik version that is not available on your machine.

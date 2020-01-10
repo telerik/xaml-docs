@@ -5,7 +5,7 @@ description: Binding to TaskBoardCardModel
 slug: radtaskboard-populating-with-data-binding-taskboardcardmodel
 tags: binding,to,taskboardcardmodel
 published: True
-position: 2
+position: 1
 ---
 
 # Binding to TaskBoardCardModel

@@ -91,7 +91,7 @@ To restrict the user from selecting / reordering the tasks, or collapsing the co
 
 ## Categories
 	
-The control exposes a __Categories__ property of type __IEnumerable__. You can use it to specify different indicator color for your task. More information can be found in the  [Indicator Color]({%slug radtaskboard-features-indicator-color%}) help article.
+The control exposes a __Categories__ property of type __IEnumerable__. You can use it to specify different category indicator color for your task. More information can be found in the  [Category Indicator]({%slug radtaskboard-features-category-indicator%}) help article.
 
 ## ItemHeight
 

@@ -91,5 +91,5 @@ When you don't want a given task to have a color, you can set the __ShowCategory
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
- * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})
  * [Binding to CollectionViewSource]({%slug radtaskboard-populating-with-data-data-binding-to-collectionviewsource%})

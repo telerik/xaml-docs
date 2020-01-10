@@ -158,5 +158,5 @@ In case you want to have static columns that will be always available, you can m
 	
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
- * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})
  * [Binding to CollectionViewSource]({%slug radtaskboard-populating-with-data-data-binding-to-collectionviewsource%})

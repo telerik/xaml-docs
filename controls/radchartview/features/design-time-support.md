@@ -1,7 +1,7 @@
 ---
 title: Design-Time Support
 page_title: Design-Time Support
-description: Design-Time Support
+description: This article demonstrates the Design-Time Support feature of the RadChartView.
 slug: radchartview-features-design-time-support
 tags: rendering
 published: True
@@ -10,7 +10,7 @@ position: 12
 
 # Design-Time Support
 
-RadChartView comes with an additional design-time feature that helps generating different types of visualization easily.
+RadChartView comes with an additional design-time feature that helps generating different types of visualizations easily.
 
 The feature allows you to define an empty chart control and automatically generate XAML with some sample contents with few clicks in the Visual Studio designer.
 

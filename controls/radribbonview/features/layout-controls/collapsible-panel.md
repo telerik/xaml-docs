@@ -10,107 +10,87 @@ position: 1
 
 # Collapsible Panel
 
-One of the most important features of the __RadRibbonView__ is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API makes your life easier by providing you with two built-in layout containers - [RadOrderedWrapPanel]({%slug radribbonview-ordered-wrap-panel%}) and __RadCollapsiblePanel__. You should use one of these panels to specify how you would like the resizing to occur.	  
+RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 
-The purpose of this tutorial is to introduce you the __RadCollapsiblePanel__.	  
+This feature is enabled with the __RadCollapsiblePanel__ (described in this article) and the [RadOrderedWrapPanel]({%slug radribbonview-ordered-wrap-panel%}).
 
->tip Consider reading the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the __RadCollapsiblePanel__.		
+>tip Read the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the RadCollapsiblePanel behavior.
 
-## RadCollapsiblePanel - Fundamentals
+RadCollapsiblePanel behaves similarly to the UniformGrid panel. You can define the number of buttons per column (3 by default) and also the vertical spacing between them. The child buttons are ordered in columns when in **Small** and **Medium** size. Each button with **Large** size will be positioned alone in a separate column. 
 
-The __RadCollapsiblePanel__ is very similar to the __StackPanel__. However, it has one distinctive feature - this panel is not aware about the active size variant. Instead, it always tries to lay out its children in the small space provided. If it is not possible, it lays them horizontally.		
+If there is not enough height to draw the buttons in the corresponding number of rows (buttons per column), the panel will try to order to buttons in less rows. For example, if you define the rows to be 3, but there is only space for 2 rows, then 2 rows will be used. The minimum number of rows that can be reached is 1, after this the buttons will start clipping.
 
->tip __RadCollapsiblePanel__ arranges itself automatically according to the __RibbonGroup__ size.		  
+>tip The height of the panel can be changed by changing the height of the RadRibbonView's content. To do this, set the __ContentHeight__ property of RadRibbonView.
 
-The panel has three states, which are quite self-explanatory:
-
-* __Large__
-	![](images/RibbonView_CollapsiblePanel_Large.png)
-
-* __Medium__
-	![](images/RibbonView_CollapsiblePanel_Medium.png)
-	
-* __Small__
-	![](images/RibbonView_CollapsiblePanel_Small.png)
-
->tip If you refer to the Microsoft Office Word product, you will note that a similar layout behavior is used at the "Insert" tab. It is full of groups of three large buttons (e.g. the "Illustrations" group), laid out horizontally, which then become small buttons laid out vertically, when the group is shrunk. You could use the __RadRibbonCollapsible__ panel to achieve such an effect, combined with the resizing characteristics of the [RadRibbonButtons]({%slug radribbonview-buttons-overview%}).		  
-
-### Buttons per Column in Small and Medium State
-
-By default the __RadCollapsiblePanel__ displays 3 buttons while in __Medium__ or __Small__ state. However, you can change that number through the __RadCollapsiblePanel.SmallButtonsPerColumn__ attached property.			
-
-#### __XAML__
+#### __[XAML] Example 1: Setting up RadRibbonView with RadCollapsiblePanel__
 {{region radribbonview-collapsible-panel-0}}
-    <telerik:RadRibbonView Title="Sample"
-                           ApplicationButtonImageSource="AppIcon.png"
-                           telerik:RadCollapsiblePanel.SmallButtonsPerColumn="2">
-        <telerik:RadRibbonTab Header="Home">
-            <telerik:RadRibbonGroup Header="Clipboard">
-                <telerik:RadCollapsiblePanel>
-                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-                                             CollapseToSmall="WhenGroupIsSmall"
-                                             SmallImage="/Images/RibbonView/FirstLook/cut.png"
-                                             Text="Cut" />
-                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-                                             CollapseToSmall="WhenGroupIsSmall"
-                                             SmallImage="/Images/RibbonView/FirstLook/copy.png"
-                                             Text="Copy" />
-                    <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium"
-                                             CollapseToSmall="WhenGroupIsSmall"
-                                             SmallImage="/Images/RibbonView/FirstLook/formatpainter.png"
-                                             Text="Format Painter" />
-                </telerik:RadCollapsiblePanel>
-            </telerik:RadRibbonGroup>
-        </telerik:RadRibbonTab>
-    </telerik:RadRibbonView>
-{{endregion}}
-
-![Rad Ribbon View Collapsible Panel Buttons Per Column](images/RadRibbonView_CollapsiblePanel_ButtonsPerColumn.png)
-
->Please have in mind that this property should be applied in the __RadRibbonView__ definition and therefore it affects all __RadCollapsiblePanels__ throughout your ribbon UI.  
-
-It is important to note that if the height of the __RibbonView__ cannot display the number of buttons indicated by the __RadCollapsiblePanel.SmallButtonsPerColumn__ property, the property will be disregarded. In this case the __RadCollapsiblePanel__ will display as many buttons as the __RibbonView Height__ allows.
-
-### ItemSpacing
-
-In __RadRibbonView__ you can also control the space between every two buttons in the __RadCollapsiblePanel__ while they are in __Small__ or __Medium__ states. This can be done through the __RadCollapsiblePanel.ItemSpacing__ attached property. It is of type __Int__ and its default value is 0.
-![Rad Ribbon View Collapsible Panel Item Spacing](images/RadRibbonView_CollapsiblePanel_ItemSpacing.png)
-
-## Using RadCollapsiblePanel
-
-The next example demonstrates the usage of the __RadCollapsiblePanel__.
-
-#### __XAML__
-{{region radribbonview-collapsible-panel-1}}
-	<telerik:RadRibbonView x:Name="radRibbonView" 
-	                        Title="My Title"
-	                        ApplicationButtonContent="File"
-	                        ApplicationName="My Application">
-	    <telerik:RadRibbonTab Header="Insert">
-	        <telerik:RadRibbonGroup Header="Illustrations">
-	            <telerik:RadCollapsiblePanel>
-	                <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium" 
-	                                            CollapseToSmall="WhenGroupIsSmall"
-	                                            LargeImage="/RadRibbonViewSample;component/Images/IconMSOffice/32/Shapes.png"
-	                                            Size="Large"
-	                                            Text="Shapes" />
-	                <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium" 
-	                                            CollapseToSmall="WhenGroupIsSmall"
-	                                            LargeImage="/RadRibbonViewSample;component/Images/IconMSOffice/32/SmartArt.png"
-	                                            Size="Large"
-	                                            Text="SmartArt" />
-	                <telerik:RadRibbonButton CollapseToMedium="WhenGroupIsMedium" 
-	                                            CollapseToSmall="WhenGroupIsSmall"
-	                                            LargeImage="/RadRibbonViewSample;component/Images/IconMSOffice/32/chart.png"
-	                                            Size="Large"
-	                                            Text="Chart" />
-	            </telerik:RadCollapsiblePanel>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
+	<telerik:RadRibbonView>
+		<telerik:RadRibbonTab Header="Home">
+			<telerik:RadRibbonGroup Header="Options">
+				<telerik:RadCollapsiblePanel>
+					<telerik:RadRibbonButton Text="Save"
+											 Size="Large"
+											 SmallImage="Images/save16.png" 
+											 LargeImage="Images/save32.png" 
+											 CollapseToSmall="WhenGroupIsSmall" 
+											 CollapseToMedium="WhenGroupIsMedium" />
+					<telerik:RadRibbonButton Text="Paste"
+											 SmallImage="Images/paste16.png" 
+											 LargeImage="Images/paste16.png"
+											 CollapseToSmall="WhenGroupIsSmall" 
+											 CollapseToMedium="WhenGroupIsMedium"/>
+					<telerik:RadRibbonButton Text="Open" 
+											 SmallImage="Images/open16.png" 
+											 LargeImage="Images/open16.png"
+											 CollapseToSmall="WhenGroupIsSmall" 
+											 CollapseToMedium="WhenGroupIsMedium"/>
+					<telerik:RadRibbonButton Text="Help" 
+											 SmallImage="Images/help16.png" 
+											 LargeImage="Images/help16.png"
+											 CollapseToSmall="WhenGroupIsSmall" 
+											 CollapseToMedium="WhenGroupIsMedium"/>
+					<telerik:RadRibbonButton Text="Change Style" 
+											 SmallImage="Images/change-style16.png" 
+											 LargeImage="Images/change-style16.png"
+											 CollapseToSmall="WhenGroupIsSmall" 
+											 CollapseToMedium="WhenGroupIsMedium"/>
+				</telerik:RadCollapsiblePanel>
+			</telerik:RadRibbonGroup>
+			<!-- add other groups here -->
+		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RibbonView_CollapsiblePanel_Sample.png)
+#### Figure 1: Comparison between the different group sizes (variants)
+![Comparison between the different group sizes (variants)](images/radribbonview-collapsible-panel-0.png)
+
+## Defining Number of Rows
+
+By default the RadCollapsiblePanel is using __3 rows__. To change this behavior, set the __RadCollapsiblePanel.SmallButtonsPerColumn__ attached property on the RadRibbonView element.
+
+#### __[XAML] Example 2: Setting the number of rows__
+{{region radribbonview-collapsible-panel-1}}
+	<telerik:RadRibbonView RadCollapsiblePanel.SmallButtonsPerColumn="2"/>
+{{endregion}}
+
+#### Figure 2: Collapsible panel with 2 rows
+![Collapsible panel with 2 rows](images/radribbonview-collapsible-panel-1.png)
+
+> This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.
+
+## Defining Items Vertical Spacing
+
+By default the RadCollapsiblePanel does not apply additional vertical spacing between the buttons. To change this and increase the distance between the rows, set the __RadCollapsiblePanel.ItemSpacing__ attached property on the RadRibbonView element.
+
+#### __[XAML] Example 3: Setting the vertical spacing__
+{{region radribbonview-collapsible-panel-2}}
+	<telerik:RadRibbonView ContentHeight="110" Margin="10" telerik:RadCollapsiblePanel.ItemSpacing="10" />
+{{endregion}}
+
+#### Figure 3: Collapsible panel with a vertical spacing of 10 between the buttons
+![](images/radribbonview-collapsible-panel-2.png)
+
+> This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.
 
 ## See Also
  * [Application Menu]({%slug radribbonview-applicationmenu%})

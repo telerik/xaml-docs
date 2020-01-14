@@ -73,8 +73,11 @@ The agenda view displays empty days by default. You can alter this behavior and 
 	</telerik:RadScheduleView.ViewDefinitions>
 {{endregion}}
 
-#### Figure 3: AgendaViewDefinition with shown and hidden empty days (comparison)
+#### Figure 3: Setting ShowEmptyDays with appointments (comparison)
 ![](images/radscheduleview-viewdefinition-agenda-2.png)
+
+#### Figure 4: Setting ShowEmptyDays without appointments (comparison)
+![](images/radscheduleview-viewdefinition-agenda-3.png)
 
 ## See Also
 * [Getting Started]({%slug radscheduleview-getting-started%})

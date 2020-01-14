@@ -10,9 +10,9 @@ position: 0
 
 # Ordered Wrap Panel
 
-RadRibbonView dynamic layout resizing allows you to optimize the layout depending on the available space. 
+RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 
-This feature is enabled with the the __RadOrderedWrapPanel__ (describe in this article) and the [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}).
+This feature is enabled with the __RadOrderedWrapPanel__ (described in this article) and the [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}).
 
 >tip Read the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the RadOrderedWrapPanel behavior.
 

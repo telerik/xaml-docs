@@ -10,13 +10,13 @@ position: 1
 
 # Collapsible Panel
 
-RadRibbonView dynamic layout resizing allows you to optimize the layout depending on the available space. 
+RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 
-This feature is enabled with the the __RadCollapsiblePanel__ (describe in this article) and the [RadOrderedWrapPanel]({%slug radribbonview-ordered-wrap-panel%}).
+This feature is enabled with the __RadCollapsiblePanel__ (described in this article) and the [RadOrderedWrapPanel]({%slug radribbonview-ordered-wrap-panel%}).
 
 >tip Read the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the RadCollapsiblePanel behavior.
 
-RadCollapsiblePanel behaves similiarly to the UniformGrid panel. You can define the number of buttons per column (3 by default) and also vertical spacing between them. The child buttons are ordered in columns when in Small and Medimum size. Each button with Large size will be positioned alone in a separate column. 
+RadCollapsiblePanel behaves similarly to the UniformGrid panel. You can define the number of buttons per column (3 by default) and also the vertical spacing between them. The child buttons are ordered in columns when in **Small** and **Medium** size. Each button with **Large** size will be positioned alone in a separate column. 
 
 If there is not enough height to draw the buttons in the corresponding number of rows (buttons per column), the panel will try to order to buttons in less rows. For example, if you define the rows to be 3, but there is only space for 2 rows, then 2 rows will be used. The minimum number of rows that can be reached is 1, after this the buttons will start clipping.
 
@@ -62,7 +62,7 @@ If there is not enough height to draw the buttons in the corresponding number of
 {{endregion}}
 
 #### Figure 1: Comparison between the different group sizes (variants)
-![](images/radribbonview-collapsible-panel-0.png)
+![Comparison between the different group sizes (variants)](images/radribbonview-collapsible-panel-0.png)
 
 ## Defining Number of Rows
 
@@ -74,13 +74,13 @@ By default the RadCollapsiblePanel is using __3 rows__. To change this behavior,
 {{endregion}}
 
 #### Figure 2: Collapsible panel with 2 rows
-![](images/radribbonview-collapsible-panel-1.png)
+![Collapsible panel with 2 rows](images/radribbonview-collapsible-panel-1.png)
 
 > This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.
 
 ## Defining Items Vertical Spacing
 
-By default the RadCollapsiblePanel is not applying an addition vertical spacing between the buttons. To change this and increase the distance between the rows, set the __RadCollapsiblePanel.ItemSpacing__ attached property on the RadRibbonView element.
+By default the RadCollapsiblePanel does not apply additional vertical spacing between the buttons. To change this and increase the distance between the rows, set the __RadCollapsiblePanel.ItemSpacing__ attached property on the RadRibbonView element.
 
 #### __[XAML] Example 3: Setting the vertical spacing__
 {{region radribbonview-collapsible-panel-2}}

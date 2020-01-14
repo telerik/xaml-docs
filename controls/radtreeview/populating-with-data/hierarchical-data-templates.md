@@ -239,6 +239,5 @@ Here is the final result:
 ![](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
 
 ## See Also
- * [Templating - Overview]({%slug radtreeview-styles-and-templates-tesmplates-structure%})
  * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

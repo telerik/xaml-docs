@@ -4,7 +4,7 @@ page_title: Templates Structure
 description: Templates Structure
 slug: radtreeview-styles-and-templates-tesmplates-structure
 tags: templates,structure
-published: True
+published: False
 position: 1
 ---
 

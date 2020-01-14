@@ -14,7 +14,7 @@ This article will list the key properties provided by the RadTaskBoard control.
 
 ## AutoGenerateColumns
 
-This is a boolean property which determens whether the control auto generate its columns or not. By default this property is true. You can disable the auto generation of the columns by setting the __AutoGenerateColumns__ property to false. Then you will need to define them manually.
+This is a boolean property which determines whether the control will auto generate its columns or not. By default this property is true. You can disable the auto generation of the columns by setting the __AutoGenerateColumns__ property to false. Then you will need to define them manually.
 
 #### __[XAML] Example 1: Manually defined columns__	
 	{{region xaml-radtaskboard-key-properties_0}}		

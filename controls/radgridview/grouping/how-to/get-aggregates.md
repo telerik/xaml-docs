@@ -1,7 +1,7 @@
 ---
 title: Get aggregates from a group
 page_title: Get aggregates from a group
-description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to access aggregates in a specific group.
+description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to access the aggregates in a specific group.
 slug: gridview-grouping-how-to-get-aggregates
 tags: get,aggregates,from,a,group
 published: True
@@ -10,11 +10,11 @@ position: 0
 
 # Get aggregates from a group
 
-__This article shows how to obtain aggregates from a specific group in RadGridView.__
+This article shows how to obtain aggregates from a specific group in RadGridView.
 
-In some cases when you define aggregates in RadGridView you need to access aggregates in a specific group. You may do this very easily through iterating over the groups in RadGridView check for a specific group key value and get the aggregate result as shown below:
+In some cases when you define aggregates in RadGridView you need to access the ones in a specific group. You may do this very easily by iterating over the RadGridView groups, checking for a specific group key value and getting the aggregate result(s) as shown in __Example 1__.
 
-#### __C#__
+#### __[C#] Example 1: Obtaining Group Aggregates__
 
 {{region cs-gridview-grouping-how-to-get-aggregates_0}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
@@ -29,7 +29,7 @@ In some cases when you define aggregates in RadGridView you need to access aggre
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Obtaining Group Aggregates__
 
 {{region vb-gridview-grouping-how-to-get-aggregates_1}}
 	Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)
@@ -41,5 +41,8 @@ In some cases when you define aggregates in RadGridView you need to access aggre
 	End Sub
 {{endregion}}
 
-The __QueryableCollectionViewGroup__ class represents a wrapper over an __AggregateFunctionsGroup__ that allows adding and removing of child items/groups.  The snippet above simply checks for a key value equal to 24 and gets the formatted value of the first aggregate result.
-        
+The [QueryableCollectionViewGroup](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryablecollectionviewgroup) class represents a wrapper over an __AggregateFunctionsGroup__ that allows for adding and removing of child items/groups. The snippet above simply checks for a key value equal to 24 and gets the formatted value of the first aggregate result.
+
+## See Also
+
+ * [Group Aggregates]({%slug gridview-grouping-aggregates%})

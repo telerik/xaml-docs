@@ -12,7 +12,7 @@ position: 0
 
 This article shows how to obtain aggregates from a specific group in RadGridView.
 
-In some cases when you define aggregates in RadGridView you need to access the ones in a specific group. You may do this very easily through iterating over the RadGridView groups, checking for a specific group key value and getting the aggregate result(s) as shown in __Example 1__.
+In some cases when you define aggregates in RadGridView you need to access the ones in a specific group. You may do this very easily by iterating over the RadGridView groups, checking for a specific group key value and getting the aggregate result(s) as shown in __Example 1__.
 
 #### __[C#] Example 1: Obtaining Group Aggregates__
 

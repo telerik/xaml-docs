@@ -10,7 +10,7 @@ position: 3
 
 # Getting Started
 
-The __RadDataPager__ is a control that allows you to split your data into pages and display it in a user friendly way. This topic will help you quickly get started using the control.
+The __RadDataPager__ is a control that allows you to split your data into pages and display it in a user-friendly way. This topic will help you quickly get started using the control.
 
 >To learn more about the concepts behind the __RadDataPager__ you can read the [Paging Essentials]({%slug raddapager-features-paging-essentials%}) topic first.
 

@@ -10,7 +10,7 @@ position: 3
 
 # Reordering the Items
 
-You easaly move one item to a different groupd by using build-in drag-drop functionality. The reordering of the items is enable by default. To disable it you can set the __IsDragDropEnabled__ property of the __RadTaskBoard__ to false.
+You can move one item to a different group by using build-in drag-drop functionality. The reordering of the items is enabled by default. To disable it you can set the __IsDragDropEnabled__ property of the __RadTaskBoard__ to false.
 
 #### __[XAML] Example 1: Disable Reordering of the Items__
 	{{region xaml-radtaskboard-key-properties_6}}

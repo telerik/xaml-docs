@@ -61,4 +61,4 @@ How to change the Foreground of а GridViewRow that is selected or hovered.
 
 ## See Also
 * [Styling a Cell]({%slug gridview-styling-cell%})
-* [Styling a row]({%slug  gridview-styling-a-row%})
+* [Styling a Row]({%slug  gridview-styling-a-row%})

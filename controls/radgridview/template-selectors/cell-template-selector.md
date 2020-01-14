@@ -1,16 +1,16 @@
 ---
-title: CellTemplateSelector
-page_title: CellTemplateSelector
-description: Learn how to apply different data templates to grid cells by using the CellTemplateSelector property of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+title: CellTemplateSelector and CellEditTemplateSelector
+page_title: CellTemplateSelector and CellEditTemplateSelector
+description: Learn how to apply different data templates to grid cells by using the CellTemplateSelector and CellEditTemplateSelector properties of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-cell-template-selector
 tags: celltemplateselector
 published: True
 position: 1
 ---
 
-# CellTemplateSelector
+# CellTemplateSelector and CellEditTemplateSelector
 
-This article will show you how to conditionally apply a different data template to RadGridView cells using the __CellTemplateSelector__ property.
+This article will show you how to conditionally apply a different data template to RadGridView cells using the __CellTemplateSelector__ and **CellEditTemplateSelector** properties.
 
 >tipTo learn the basics about __TemplateSelectors__ please check [this article]({%slug gridview-template-selectors-overview%}).
 
@@ -125,7 +125,11 @@ In this case we have two different DataTemplates that could be applied - bigStad
 	DataFormatString="{}{0:N0}"/>
 {{endregion}}
 
->Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectTemplate method__. Please check this [help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
+You can use the **CellEditTemplateSelector** property in a similar manner with the only difference that the custom controls you define in the template will be displayed only once it enters edit mode.
+
+>Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. __You should not set properties of the GridViewCell inside the SelectTemplate method__. Please check [this help article]({%slug radgridview-features-ui-virtualization%}) for a reference.
 		  
 ## See Also
- * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
+
+* [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
+* [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

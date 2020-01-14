@@ -112,7 +112,7 @@ If you want to set these properties in code-behind, you can check [this help art
 
 >tipHaving DataMemberBinding set to StartingDate, the aggregation, sorting, grouping and filtering operations on this column will be done based on the StartingDate property.
 
->In case the user do not need to perform any aggregation, sorting, grouping or filtering operations for the column, then you can use a [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) instead.
+>In case the user does not need to perform any aggregation, sorting, grouping or filtering operations for the column, then you can use a [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) instead.
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when committing an edit. To get the right value in __e.NewValue__, you can create your own [Custom Column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.
 

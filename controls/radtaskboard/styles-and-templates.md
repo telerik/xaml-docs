@@ -10,7 +10,7 @@ position: 8
 
 # Styles and Templates
 
-RadTaskBoard allows you to easily modify its appearance by providing some useful properties.
+__RadTaskBoard__ allows you to easily modify its appearance by providing some useful properties.
 
 ## ItemTemplate and ItemTemplateSelector
 
@@ -47,7 +47,7 @@ To further customize the headers of all columns, you can create your own DataTem
 		</telerik:RadTaskBoard>
 	{{endregion}}
 
-## ItemContainerStyle
+## ItemContainerStyle and ItemContainerStyleSelectior
 
 The task inside the __RadTaskBoard__ control are represented by a __RadTaskBoardItem__ elements. You can use the **ItemContainerStyle** property to style these individual elements.
 

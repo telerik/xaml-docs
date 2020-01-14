@@ -14,9 +14,9 @@ This article will list the key properties provided by the RadTaskBoard control.
 
 ## AutoGenerateColumns
 
-You can disable the auto generation of the columns by setting the __AutoGenerateColumns__ property to false. Then you will need to define them manually.
+This is a boolean property which determens whether the control auto generate its columns or not. By default this property is true. You can disable the auto generation of the columns by setting the __AutoGenerateColumns__ property to false. Then you will need to define them manually.
 
-#### __[XAML] Example 1: Manually define columns__	
+#### __[XAML] Example 1: Manually defined columns__	
 	{{region xaml-radtaskboard-key-properties_0}}		
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
 			<telerik:RadTaskBoard.Columns>
@@ -29,10 +29,9 @@ You can disable the auto generation of the columns by setting the __AutoGenerate
 
 ## GroupMemberPath
 
-Allows you to specify the property, whose value will be used to group the task items.
+It allows you to specify the property, whose value will be used to group the task items. 
 
 #### __[XAML] Example 2: Set GroupMemberPath__
-
 	{{region xaml-radtaskboard-key-properties_1}}
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" />
 	{{endregion}}
@@ -53,7 +52,7 @@ To change the default height of the headers inside the columns you can use the _
 
 #### __[C#] Example 4: Set ColumnHeaderHeight__
 	{{region cs-radtaskboard-key-properties_3}}
-	   this.taskBoard.ColumnHeaderHeight = 44; 
+	   this.taskBoard.ColumnHeaderHeight = 40; 
 	{{endregion}}
 
 ## ColumnHeaderTemplate
@@ -80,13 +79,13 @@ To increase the space between the columns, you can set the __ColumnOffset__ prop
 	   this.taskBoard.ColumnOffset = 10; 
 	{{endregion}}
 
-## CanUserSelect, CanUserReorderItems, and CanUserCollapseColumns
+## CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns
 
-To restrict the user from selecting / reordering the tasks, or collapsing the column you can use the corresponding properties: __CanUserSelect, CanUserReorderItems, and CanUserCollapseColumns__
+To restrict the user from selecting / reordering the tasks, or collapsing the column you can use the corresponding properties: __CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns__
 	
-#### __[XAML] Example 7: Set CanUserSelect, CanUserReorderItems, and CanUserCollapseColumns__
+#### __[XAML] Example 7: Set CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns__
 	{{region xaml-radtaskboard-key-properties_6}}
-	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" CanUserCollapseColumns="False" CanUserSelect="False" CanUserReorderItems="False" />
+	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" CanUserCollapseColumns="False" CanUserSelect="False" IsDragDropEnabled="False" />
 	{{endregion}}
 
 ## Categories

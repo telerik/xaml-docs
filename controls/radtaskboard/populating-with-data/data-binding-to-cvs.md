@@ -110,4 +110,4 @@ What's left is to set the DataContext of the Window and declare RadTaskBoard con
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})
  * [Binding to Object]({%slug radtaskboard-populating-with-data-data-binding-to-object%})
- * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel%})
+ * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})

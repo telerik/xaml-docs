@@ -66,17 +66,17 @@ The next step is to declare our colors. The __Categories__ collection property o
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
 #### __[XAML] Example 2: Specifying custom colors__
-{{region xaml-radtaskboard-features-category-indicator-1}}
-   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
-		<telerik:RadTaskBoard.Categories>
-			<taskBoard:CategoryCollection>
-				<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
-				<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
-				<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
-			</taskBoard:CategoryCollection>
-		</telerik:RadTaskBoard.Categories>
-	</telerik:RadTaskBoard>
-{{endregion}}
+	{{region xaml-radtaskboard-features-category-indicator-1}}
+	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
+			<telerik:RadTaskBoard.Categories>
+				<taskBoard:CategoryCollection>
+					<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
+					<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
+					<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
+				</taskBoard:CategoryCollection>
+			</telerik:RadTaskBoard.Categories>
+		</telerik:RadTaskBoard>
+	{{endregion}}
 
 If you run the application now, you should get a structure like in Figure 1:
 #### Figure 1: Tasks with different categories Color
@@ -84,7 +84,54 @@ If you run the application now, you should get a structure like in Figure 1:
 
 ## Hide Categories Color
 
-When you don't want a given task to have a color, you can set the __ShowCategoryIndicator__ property of the TaskBoardCardModel to false. We are going to set this property to false to the second TaskBoardCardModel element from __Example 1__. __Figure 2__ demonstrates this change.
+When you don't want a given task to have a color, you can set the __ShowCategoryIndicator__ property of the TaskBoardCardModel to false. We are going to set this property to false to the second TaskBoardCardModel element from __Example 1__. 
+
+#### __[C#] Example 3: Hide Category Indicator on the second item__
+{{region cs-radtaskboard-features-category-indicator-0}}
+    public MainWindow()
+	{
+		InitializeComponent();  
+		taskBoard.ItemsSource = GetTasks();
+	}
+
+	public ObservableCollection<TaskBoardCardModel> GetTasks()
+	{
+		ObservableCollection<TaskBoardCardModel> tasks = new ObservableCollection<TaskBoardCardModel>
+		{
+			new TaskBoardCardModel()
+			{
+				Assignee = "Bella",
+				Title = "RadDocking: Create Unit Test ",
+				Description = "Add Unit Tests",
+				State = "Done",
+				CategoryName = "Low"
+			},
+
+			new TaskBoardCardModel()
+			{
+				Assignee = "Tomas",
+				Title = "RadPanelBar: IsExpanded property is not respected",
+				Description = "Fix Bug",
+				State = "Not Done",
+				CategoryName = "Medium",
+				ShowCategoryIndicator = false
+			},
+
+			new TaskBoardCardModel()
+			{
+				Assignee = "Smith",
+				Title = "RadChartView: Implement Animation Feature",
+				Description = "Implement animations for all series in RadChartView",
+				State = "In Progress",
+				CategoryName = "High",
+			}
+		};
+
+		return tasks;
+	}
+{{endregion}}
+
+__Figure 2__ demonstrates this change.
 
 #### Figure 2: A task with no color
 ![Telerik TaskBoard categories Color 1](images/taskboard_indicator_color_1.png)

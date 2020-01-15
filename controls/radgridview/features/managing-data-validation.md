@@ -54,9 +54,6 @@ RadGridView exposes a property - ValidatesOnDataErrors - that controls the way t
 
 * __Default__: This is the default value. It combines the two previous ones - InViewMode | InEditMode. 
 
->Setting the __ValidatesOnDataErrors__ property will not affect the UI validation provided by the __CellValidating__ and __RowValidating__ events.
-
-
 {% if site.site_name == 'WPF' %}
 >*Telerik.Windows.Data.INotifyDataErrorInfo* interface was created for WPF 4.0. version since *System.ComponentModel.INotifyDataErrorInfo* was available for Silverlight only. If using WPF 4.5, please reference *System.ComponentModel.INotifyDataErrorInfo* instead.
 {% endif %}

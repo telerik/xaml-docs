@@ -12,13 +12,11 @@ position: 6
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available find methods, as well as how to use the respective for the feature API.
 
-## Using UI
-
-Using the UI of the **Find** functionality is described in details in [Find Dialog]({%slug radpdfviewer-find-dialog%}) article.
+>note Using the UI of the **Find** functionality is described in detail in the [Find Dialog]({%slug radpdfviewer-find-dialog%}) article.
 
 ## Find Programmatically
 
-You can search by taking advantage of the **Find**, **FindAll** and **FindPrevious** methods (with their overloads) of the RadPdfViewer.
+You can search by taking advantage of the **Find**, **FindAll** and **FindPrevious** methods with their overloads exposed by RadPdfViewer. These methods could receive  [TextSearchOptions](#textsearchoptions) as optional parameter in their constructor. The result of the search is hold by an instance of [SearchResult](#searchresult) class.
 
 The **Find** method has two overloads:
 * **Find(string text)**: Finds next mach for the specified text in the current document.
@@ -82,14 +80,15 @@ The **FindPrevious** method has two overloads:
     Dim searchResult As SearchResult = Me.pdfViewer.FindPrevious(sampleText, textSearchOptions)
 {{endregion}}
 
-The **SearchResult** class holds the result from a specific search command. This class exposes several properties:
+### SearchResult
+
+The **SearchResult** class holds the result from a specific search command. This class exposes several properties and methods:
 * **NotFound**: A static property which gets a default SearchResult instance when there is no search result found.
-* **Range**: Gets the text range.
+* **Range**: Gets a [TextRange](https://docs.telerik.com/devtools/document-processing/api/Telerik.Windows.Documents.Fixed.Text.TextRange.html) object describing the start and end positions of the match.
 * **Result**: Gets the result as text.
-and methods:
 * **ToString**: Returns a string that represents the current object.
 
-#### __[C#] Example 4: Check if search result is different from NotFound__
+#### __[C#] Example 4: Check if a match was found__
 
 {{region radpdfviewer-find_3}}
 
@@ -100,7 +99,7 @@ and methods:
     }
 {{endregion}}
 
-#### __[VB.NET] Example 4: Check if search result is different from NotFound__
+#### __[VB.NET] Example 4: Check if a match was found__
 
 {{region radpdfviewer-find_3}}
 
@@ -110,8 +109,9 @@ and methods:
     End If
 {{endregion}}
 
-The **TextSearchOptions** class holds all possible search options when invoking finding. The class has various constructors that can be used depending on the necessities. Their main difference is they are receiving different amount of parameters according to the selected options. 
-constructors:
+### TextSearchOptions
+
+The **TextSearchOptions** class holds all possible search options when invoking one of the Find methods. The class has various constructors that can be used depending on the necessities. Their main difference is they are receiving different amount of parameters according to the selected options.
 * **TextSearchOptions(bool caseSensitive)**
 * **TextSearchOptions(bool caseSensitive, bool useRegularExpression)**
 * **TextSearchOptions(bool caseSensitive, bool useRegularExpression, bool wholeWordsOnly)**
@@ -134,10 +134,10 @@ This class exposes a static property:
             New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=False)
     {{endregion}}
 
-several non-static properties: 
-* **UseRegularExpression**: Gets or sets the use regular expression option.
-* **CaseSensitive**: Gets or sets the case sensitive option.
-* **WholeWordsOnly**: Gets or sets the whole words only.
+several non-static boolean properties:
+* **UseRegularExpression**: Gets or sets a value indicating whether a regular expression should be used for searching.
+* **CaseSensitive**: Gets or sets a value indicating whether the search should be case sensitive.
+* **WholeWordsOnly**: Gets or sets a value indicating whether only whole words should be matched.
 
 and events:
 * **PropertyChanged**: Occurs when a property value changes.

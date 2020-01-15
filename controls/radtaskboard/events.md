@@ -26,7 +26,7 @@ Here is a list of events exposed by the RadTaskBoard control:
 
 	#### __[C#] Example 2: Get generated task__
 		{{region cs-radtaskboard-events_1}}
-			private void TaskBoard_AutoGeneratingColumn(object sender, Telerik.Windows.Controls.TaskBoardAutoGeneratingItemEventArgs e)
+			private void TaskBoard_AutoGeneratingItem(object sender, Telerik.Windows.Controls.TaskBoardAutoGeneratingItemEventArgs e)
 			{
 				var cardModel = e.Item;
 			}

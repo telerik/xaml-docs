@@ -231,6 +231,8 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 	End Class
 {{endregion}}
 
+> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so "<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />", otherwise a "No data to plot" message will be shown.
+
 The result is below:
 ![Rad Chart View-chart chartdatasource 01](images/RadChartView-chart_chartdatasource_01.PNG)
 

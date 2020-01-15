@@ -29,6 +29,8 @@ When there are no axes defined and if the corresponding charting component uses 
 
 When the axes are properly set but there is no series defined all charting components notify you with the “No series added” message. If the series are defined but the data of the series is not set, the message is “No data to plot”.
 
+> You can receive a "No data to plot" message, if you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls and you have created a custom series. In that case, you should make sure to base the style of the custom series on the default one. For example, if you have defined a class named MyBarSeries, which inherits BarSeries, you can add the following style "<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />".
+
 You are allowed to customize the visualized content by using the following properties:
         
 

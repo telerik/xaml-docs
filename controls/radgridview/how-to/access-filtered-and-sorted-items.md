@@ -31,7 +31,7 @@ You can access the items that remain after the data operations are applied throu
 
 ## See Also
 
-* [RadGridView - Data Binding]({%slug gridview-overview-data-binding%})
+* [RadGridView - Configure the Data Bindings]({%slug gridview-configuring-the-databindings%})
 
 * [RadGridView - Sorting]({%slug gridview-sorting-basics%})
 

@@ -129,6 +129,6 @@ You can attach to the other keyboard events in the same way.
 
  * [Keyboard Command Provider]({%slug gridview-commands-keyboardcommandprovider%})
 
- * [Data Binding]({%slug gridview-overview-data-binding%})
+ * [Configure the Data Bindings]({%slug gridview-configuring-the-databindings%})
 
  * [Managing Data]({%slug gridview-overview-managing-data%})

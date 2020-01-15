@@ -34,35 +34,51 @@ You have two options:
 
 >To learn how to modify the default GridViewHeaderCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
+The style in **Example 1** will style all the column headers in your application.
+
 #### __[XAML] Example 1: Styling all header cells of an application__
 
-	{{region xaml-gridview-styling-headercell_0}}
-	<Style TargetType="telerik:GridViewHeaderCell">
-	    <Setter Property="VerticalContentAlignment" Value="Top"/>
-	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
-	</Style>
+{{region xaml-gridview-styling-headercell_0}}
+	<Application.Resources>
+		<Style TargetType="telerik:GridViewHeaderCell">
+			<Setter Property="Foreground" Value="Red"/>
+			<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		</Style>
+	</Application.Resources>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewHeaderCellStyle__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __GridViewHeaderCellStyle__.
 
 ## Setting a Column's HeaderCellStyle
 
 __RadGridView__ header cells can also be styled by creating an appropriate __Style__ for the **GridViewHeaderCell** element and setting it as the __HeaderCellStyle__ property of the respective __GridView Column__. 
 
+The style from **Example 2** will only be applied to the **Number** column as we've set its HeaderCellStyle property.
+
 #### __[XAML] Example 2: Setting a column's HeaderCellStyle__
 
-	{{region xaml-gridview-styling-headercell_1}}
-	<telerik:GridViewDataColumn Header="ID"
-	             DataMemberBinding="{Binding EmployeeID}"
-	             HeaderCellStyle="{StaticResource GridViewHeaderCellStyle}" />
+{{region xaml-gridview-styling-headercell_1}}
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="CustomGridViewHeaderCellStyle" TargetType="telerik:GridViewHeaderCell" BasedOn="{StaticResource GridViewHeaderCellStyle}">
+                <Setter Property="Foreground" Value="Red"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+        </Grid.Resources>
+        <telerik:RadGridView ItemsSource="{Binding Players}" AutoGenerateColumns="False">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" HeaderCellStyle="{StaticResource CustomGridViewHeaderCellStyle}" />
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+    </Grid>
 {{endregion}}
 
-#### __Figure 2: RadGridView with styled header cells__
+#### __Figure 2: RadGridView with styled header cell__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewHeaderCell 03](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
+![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewHeaderCell](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 
 ## See Also
 
- * [Styling a Cell]({%slug gridview-styling-cell%})
-
- * [Styling the Column Footers]({%slug gridview-styling-column-footers%})
+* [Styling a Cell]({%slug gridview-styling-cell%})
+* [Styling the Column Footers]({%slug gridview-styling-column-footers%})

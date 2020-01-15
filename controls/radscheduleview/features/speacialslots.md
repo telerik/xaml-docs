@@ -161,6 +161,8 @@ Let's for example have the following Resource Type defined:
 	ReadOnlySlots.Add(readOnlyslot);
 {{endregion}}
 
+> The types of objects added to the Resources collection of the Slot and to the ResourceType object in the ResourceTypesSource should match. This is important in scenarios where the __IResource__ interface is implemented.
+
 * And assign it to the ScheduleView's SpecialSlotsSource property:            
 
 #### __XAML__

@@ -5,12 +5,12 @@ description: Selection
 slug: radtaskboard-features-selection
 tags: selection
 published: True
-position: 0
+position: 2
 ---
 
 # Selection
 
-RadTaskBoard provides you with selection functionality, which allows the user to select a RadTaskBoardCard from the data displayed in the columns. 
+RadTaskBoard provides you with selection functionality, which allows the user to select an item from the data displayed in the columns. 
 
 Users can select an item through the control's UI by clicking somewhere on a given task.
 

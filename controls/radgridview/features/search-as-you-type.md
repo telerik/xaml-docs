@@ -208,6 +208,9 @@ With **R1 2020** we introduced a new boolean **IsSearchWithAccentEnabled** prope
 	}
 {{endregion}}
 
+__Figure 4: Using Search With Accent Insensitive__
+![radgridview search-as-you-type accent insensitive](images/radgridview-search-asyoutype-accent.PNG)
+
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})
 * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

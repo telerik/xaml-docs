@@ -16,7 +16,7 @@ This is a list with short descriptions of the top-of-the line features of __RadG
         
 * __WPF/Silverlight Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Grid shares a common code-base and API with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your grid logic if you have parallel Silverlight/WPF development.
             
-* __Powerful DataBinding__: RadGridView can be bound to various data source types, such as Objects, Collections, XML, WCF and RIA services and LINQ. [Read more]({%slug gridview-overview-data-binding%}).
+* __Powerful DataBinding__: RadGridView can be bound to various data source types, such as Objects, Collections, XML, WCF and RIA services and LINQ. [Read more]({%slug gridview-configuring-the-databindings%}).
 
 * __Outstanding Performance__: A major advantage of __RadGridView__ is its outstanding performance – it can handle hundreds of thousands of records at a time, without hurting the user experience. Featuring a revolutionary LINQ-based data engine, __RadGridView__ allows for manipulating data sources that are otherwise impossible to load and process. Data is processed with LINQ queries that offer unrivaled performance characteristics and extensibility. Moreover it delivers row and column virtualization utilizing a container reuse and recycling for further improving the grid performance as well as the memory footprint. [Read more]({%slug radgridview-features-ui-virtualization%}).
 

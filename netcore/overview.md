@@ -16,19 +16,19 @@ __Telerik UI for WPF__ comes with __.NET Core__ support. There is a set of dlls 
 
 To work with the Telerik .NET Core dlls you will need to have the following installed.
 
-* The latest [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+* The latest [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-* The latest [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version. You can also use Visual Studio 2017 Update 15.8 or higher with .Net Desktop Development workload and the following options checked: .NET Framework 4.7.2 and .NET Core 2.1 development tools. In this case you will need to manually [enable the .NET Core tooling](https://devblogs.microsoft.com/dotnet/net-core-tooling-update-for-visual-studio-2017-version-15-9/).
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update. The minimum version of Visual Studio is __v16.4__. 
 
 >important Read more about the .NET Core requirements in the [Prerequisites for .NET Core on Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x) MSDN article.
-
->tip Read the [Bring Your WPF and WinForms Apps to .NET Core 3 with Telerik UI for WPF and WinForms](https://www.telerik.com/blogs/how-to-update-wpf-winforms-app-to-dotnet-core-3) blog post. 
 
 ## Design-Time Support
 
 The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET Core you will need to [reference the Telerik dlls via nuget]({%slug installation-installing-from-nuget-wpf%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
 
 Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), [theme changing]({%slug styling-apperance-swiching-themes-design-time%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
+
+>tip Creating a project via the [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}), allows you to select a NuGet version and automatically add the packages in the project when created, thus adding the Telerik .NET Core controls into the Visual Studio Toolbox.
 
 ## See Also
 

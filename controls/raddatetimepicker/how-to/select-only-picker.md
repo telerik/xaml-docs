@@ -30,8 +30,6 @@ This will achieve the desired behavior. However, a specific grey visual element 
 
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
 
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
  * [Watermark]({%slug raddatetimepicker-features-watermark%})
 
  * [How to set the first day of the week]({%slug raddatetimepicker-how-to-set-first-day-calendar%})

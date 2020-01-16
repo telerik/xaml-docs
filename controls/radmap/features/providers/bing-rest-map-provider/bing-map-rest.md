@@ -5,7 +5,7 @@ description: Bing Rest Map Provider
 slug: radmap-features-providers-bing-rest-map
 tags: bing,map,provider,rest
 published: True
-position: 1
+position: 0
 ---
 
 # Bing Map Rest Provider

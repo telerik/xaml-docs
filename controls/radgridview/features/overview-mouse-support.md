@@ -99,6 +99,6 @@ The RadGridView actually uses and handles many of the mouse events. If you would
 
  * [Keyboard Support]({%slug gridview-overview-keyboard-support%})
 
- * [Data Binding]({%slug gridview-overview-data-binding%})
+ * [Configure the Data Bindings]({%slug gridview-configuring-the-databindings%})
 
  * [Managing Data]({%slug gridview-overview-managing-data%})

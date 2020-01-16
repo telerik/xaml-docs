@@ -32,7 +32,7 @@ RadCarousel	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadChart	|	Telerik.Windows.Controls.Charting
 RadChartView	|	Telerik.Windows.Controls.Chart, Telerik.Windows.Data
 	|	
-	|	Note: Additionally the Direct2D Rendering feature requires the SharpDX, SharpDX.Direct2D1, SharpDX.Direct2D10, SharpDX.Direct2D9, SharpDX.DXGI and Telerik.Windows.Controls.Chart.Direct2D assemblies. The SharpDX binaries are located under the SharpDX folder in the UI for WPF installation directory.
+	|	Note: Additionally the Direct2D Rendering feature requires the SharpDX, SharpDX.Direct2D1, SharpDX.Direct2D10, SharpDX.Direct2D9, SharpDX.DXGI and Telerik.Windows.Controls.Chart.Direct2D assemblies. The SharpDX binaries are located in a SharpDX folder with the other dlls for the specific .NET version in the UI for WPF installation directory.
 RadChartView3D	|	Telerik.Windows.Controls.Chart, Telerik.Windows.Data
 RadChat(ConversationalUI)	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.ConversationalUI
 RadCloudUpload	|	Telerik.Windows.Cloud, Telerik.Windows.Cloud.Controls
@@ -88,12 +88,14 @@ RadScheduleView	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navig
 RadSlider	|	Telerik.Windows.Controls
 RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
+RadSplashScreen	|	Telerik.Windows.Controls.Navigation
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
 RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
 RadTabbedWindow	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
+RadTaskBoard |	Telerik.Windows.Controls
 RadTileList	|	Telerik.Windows.Controls
 RadTileView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTimeBar	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
@@ -119,4 +121,3 @@ LayoutControls	|	Telerik.Windows.Controls
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
  * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
-

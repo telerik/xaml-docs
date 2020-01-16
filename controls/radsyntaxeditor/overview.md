@@ -13,7 +13,7 @@ position: 0
 
  **RadSyntaxEditor** is a useful text editor control which provides built-in syntax highlighting and code editing experience for popular languages. It allows users to create custom syntax highlighting of keywords and operators of their own language.
 
-![RadSyntaxEditor in the Office 2016 theme](images/syntaxeditor_overview.png)
+![RadSyntaxEditor in the Fluent theme](images/syntaxeditor_overview.png)
 
 ## Key Features
 

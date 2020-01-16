@@ -20,8 +20,6 @@ You can modify the look of the __RadDateTimePicker__ control either by changing 
 
 Take a look at the following topics to learn more:
 
-* [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
 * [Styling the RadDateTimePicker]({%slug raddatetimepicker-styling-raddatetimepicker%})
 
 * [Styling the Calendar]({%slug raddatetimepicker-styling-calendar%})
@@ -33,5 +31,3 @@ Take a look at the following topics to learn more:
  * [Overview]({%slug raddatetimepicker-overview%})
 
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
-
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})

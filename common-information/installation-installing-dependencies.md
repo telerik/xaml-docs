@@ -80,6 +80,7 @@ RadScheduleView	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navig
 RadSlider	|	Telerik.Windows.Controls
 RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
+RadSplashScreen	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation
 RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	System.Windows.Controls, Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadTabControl	|	Telerik.Windows.Controls.Navigation

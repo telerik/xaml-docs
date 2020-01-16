@@ -25,14 +25,18 @@ Direct 2D is hardware accelerated two dimensional graphics API, designed by Micr
 >important In order to enable this API in your project, you need to make sure that your GPU supports at least Direct3D 10.1 Feature Level 9.1. You can use the __Boolean Direct2DRenderOptions.IsHardwareDeviceAvailable()__ method to check if the necessary hardware is available on your system. If it returns __True__, you will be able to use the __Direct2D__ rendering option, otherwise you should use one of the other available rendering options. You can perform this check right after the call to __InitializeComponent()__ method in your main view.
 
 In order to use the Direct2DRenderOptions, you will need to reference the following binaries in your project:
-* __SharpDX.dll (version 2.5.0)__
-* __SharpDX.Direct2D1.dll (version 2.5.0)__
-* __SharpDX.Direct3D10.dll (version 2.5.0)__
-* __SharpDX.Direct3D9.dll (version 2.5.0)__
-* __SharpDX.DXGI.dll (version 2.5.0)__
+* __SharpDX.dll__
+* __SharpDX.Direct2D1.dll__
+* __SharpDX.Direct3D10.dll__
+* __SharpDX.Direct3D9.dll__
+* __SharpDX.DXGI.dll__
 * __Telerik.Windows.Controls.Chart.Direct2D.dll__
 
->The SharpDX binaries can be found under the SharpDX folder of your Telerik's installation directory.
+>The SharpDX binaries can be found in the __SharpDX__ folder along with the other binaries for the specific .NET version inside your Telerik's installation directory.
+
+<!-- -->
+
+>If your project is targeting .NET Core, you should also add a reference to the __SharpDX.Mathematics.dll__ along with the references listed above. 
 
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 

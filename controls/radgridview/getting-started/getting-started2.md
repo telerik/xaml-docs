@@ -364,7 +364,7 @@ Running the application containing the code from Examples 1 - 6 will result in a
 
 ![Telerik {{ site.framework_name }} DataGrid-getting-started2 5](images/gridview-getting-started2_5.png)
 
-You can read more about data binding [here]({%slug gridview-overview-data-binding%}).
+You can read more about configuring the data bindings [here]({%slug gridview-configuring-the-databindings%}).
 
 ## Columns
 
@@ -450,6 +450,6 @@ __Figure 4__ shows __RadGridView__ with the **Windows8** theme applied.
 
  * [Styling and Appearance]({%slug gridview-stylines-and-templates-overview%})
 
- * [Data Binding]({%slug gridview-overview-data-binding%})
+ * [Configure the Data Bindings]({%slug gridview-configuring-the-databindings%})
 
  * [Defining Columns]({%slug gridview-columns-defining-columns%})

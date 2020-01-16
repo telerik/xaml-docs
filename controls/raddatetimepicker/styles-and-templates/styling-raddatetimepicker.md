@@ -76,8 +76,6 @@ Here is the result:
 
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
 
- * [Templates Structure]({%slug raddatetimepicker-styling-template-structure%})
-
  * [Styling the Calendar]({%slug raddatetimepicker-styling-calendar%})
 
  * [Styling the Clock]({%slug raddatetimepicker-styling-clock-view%})

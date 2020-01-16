@@ -10,11 +10,12 @@ position: 0
 
 # Ordered Wrap Panel
 
-One of the most important features of the __RadRibbonView__ is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API makes your life easier by providing you with two built-in layout containers - __RadOrderedWrapPanel__ and [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}). You should use one of these panels to specify how you would like the resizing to occur.
+RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 
-The purpose of this tutorial is to introduce the __RadOrderedWrapPanel__.
+This feature is enabled with the __RadOrderedWrapPanel__ (described in this article) and the [RadCollapsiblePanel]({%slug radribbonview-collapsible-panel%}).
 
->tip Consider reading the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the __RadOrderedWrapPanel__.			
+>tip Read the [Resizing]({%slug radribbonview-resizing%}) topic, which is tightly connected with the RadOrderedWrapPanel behavior.
+
 
 ## RadOrderedWrapPanel - Fundamentals
 

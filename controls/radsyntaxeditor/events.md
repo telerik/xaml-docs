@@ -27,8 +27,36 @@ Here is a list of events exposed by the RadSyntaxEditor control:
 * **CommandExecuting**: Occurs when a command is about to be executed.
 * **CommandExecuted**: Occurs when a command has been executed.
 * **CommandError**: Occurs when a command has been canceled due to an error.
-* **FoldingChanged**: Occurs when a folding region is created, removed, opened or closed.
+* **SelectionChanged**: Occurs when the selection of the control changes.
+
+## Other
+
+As of **R1 2020**, the **CompletionListWindow** which is of type **CompletionListPopup** exposes a **TextInserting** event. Its arguments are of type **CompletionListTextInsertingEventArgs** and provide the following properties:
+
+* **Cancel**: Gets or sets a value indication whether the text insertion should be cancelled.
+* **SpanToReplace**: Gets or sets the span which will be replaced with the inserted text.
+* **TextToInsert**: Gets or sets the text that is selected from the CompletionListPopup.
+
+**Example 1** demonstrates how to use this event to replace the text which was entered before an item from the completion list was selected.
+
+#### __[C#] Example 1: Handle the TextInserting event__
+{{region cs-radsyntaxeditor-events-1}}
+
+    private void CompletionListWindow_TextInserting(object sender, CompletionListTextInsertingEventArgs e)
+    {
+        string lineText = this.syntaxEditor.Document.CurrentSnapshot.GetLineFromPosition(this.syntaxEditor.CaretPosition.Index).GetText();
+        string[] splitted = lineText.Split(new char[] { ' ' });
+        string lastWord = splitted.Last();
+        if (e.TextToInsert.ToLower().StartsWith(lastWord.ToLower()))
+        {
+            int wordLength = lastWord.Length;
+            int spanEnd = e.SpanToReplace.Start;
+            e.SpanToReplace = Telerik.Windows.SyntaxEditor.Core.Text.Span.FromBounds(spanEnd - wordLength, spanEnd);
+        }
+    }
+{{endregion}}
 
 ## See Also
 
 * [Commands]({%slug radsyntaxeditor-commands%})
+* [IntelliPrompts]({%slug radsyntaxeditor-features-intelliprompts%})

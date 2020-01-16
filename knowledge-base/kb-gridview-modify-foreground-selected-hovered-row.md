@@ -25,7 +25,7 @@ How to change the Foreground of а GridViewRow that is selected or hovered.
 
 ## Solution
 
-1. Add a style targeting __GridViewRow__ with Triggers that check the __IsSelected__ and __IsMouseOver__ properties and change its __Foreground__. 
+Add a style targeting __GridViewRow__ with Triggers that check the __IsSelected__ and __IsMouseOver__ properties and change its __Foreground__. 
 
 > __Example 1__ uses the model and viewmodel defined in the [Getting Started]({%slug gridview-getting-started2%}) article of the RadGridView.
  
@@ -56,9 +56,12 @@ How to change the Foreground of а GridViewRow that is selected or hovered.
     </Grid>
 {{endregion}}
 
+> The demonstrated approach may not be relevant for all UI for WPF themes. 
+
 #### __Figure 1: Selected and Hovered GridViewRows with changed Foreground in the Fluent theme__
 ![Selected and Hovered GridViewRows with changed Foreground in the Fluent theme](images/kb-gridview-row-modify-foreground.png)
 
 ## See Also
 * [Styling a Cell]({%slug gridview-styling-cell%})
 * [Styling a Row]({%slug  gridview-styling-a-row%})
+* [Editing ControlTemplates]({%slug styling-apperance-editing-control-templates%})

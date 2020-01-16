@@ -4,7 +4,7 @@ page_title: Modify Foreground Color of Selected/Hovered Row
 description: Get started with the Telerik {{ site.framework_name }} DataGrid and learn how to change the foreground color of all GridViewCells when their parent row is hovered or selected.
 slug: gridview-how-to-modify-foreground-row
 tags: modify,foreground,color,of,selected/hovered,row
-published: True
+published: False
 position: 14
 ---
 

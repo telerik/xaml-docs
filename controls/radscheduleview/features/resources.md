@@ -98,6 +98,10 @@ Once we've created the __ResourceType__, we should create and assign __Resources
 
 >If you want to be able to set an appointment to multiple resources you need to set the __AllowMultipleSelection__ property of the __ResourceType__ to __true__.
 
+<!-- -->
+
+> The order in which the Resource objects are added to the ResourceType determines the order in which the groups will be generated in the view. 
+
 ## Grouping appointments by Resources
 
 Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:        

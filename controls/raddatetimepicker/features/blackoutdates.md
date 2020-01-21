@@ -1,6 +1,6 @@
 ---
-title: BlackoutDates
-page_title: BlackoutDates
+title: Blackout Dates
+page_title: Blackout Dates
 description: BlackoutDates
 slug: raddatetimepicker-features-blackoutdates
 tags: blackoutdates
@@ -8,12 +8,79 @@ published: True
 position: 9
 ---
 
-# BlackoutDates
+# Blackout Dates
 
-With the Q2 SP1 2012 release we introduced an easier way to disable dates in __RadDateTimePicker__ control. Now all that is needed to disable certain dates in the calendar of the control  is to bind the __BlackoutDates__ property of the control to a collection of dates.
+RadDateTimePicker allows you to disable certain dates in the [calendar part]({%slug raddatetimepicke-visual-structure%}) of the control. To do this, set the __BlackoutDates__ property of RadDateTimePicker to a collection of DateTime objects.
 
-## Disable certain dates
+>tip RadDateTimePicker control uses RadCalendar to show its calendar. The feature shown in this article is the same as the [blackout dates of RadCalendar]({%slug radcalendar-features-blackoutdates%}).
 
-RadDateTimePicker control uses RadCalendar to show its calendar and the approach on using BlackoutDates property in the two controls is the same. For detailed information on how to set up and use BlackoutDates read the help article about {% if site.site_name == 'Silverlight' %}[BlackoutDates in RadCalendar](http://www.telerik.com/help/silverlight/radcalendar-features-blackoutdates.html){% endif %}{% if site.site_name == 'WPF' %}[BlackoutDates in RadCalendar](http://www.telerik.com/help/wpf/radcalendar-features-blackoutdates.html){% endif %}.
+>important In order for a date from the BlackoutDates collection to get disabled in the calendar, its time portion should be set to the start of the day (usually `00:00:00.00` which is 12:00:00AM). Otherwise, the date won't get reflect in the UI.
 
->importantYou can download a runnable example project that demonstrates how to use the __BlackoutDates__, __SelectableDateStart__ and __SelectableDateEnd__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __DateTimePicker / AllowedDates__.
+## Setting BlackoutDates
+
+This section shows how to set the BlackoutDates in code behind.
+
+#### __[XAML] Example 1: Defining RadDateTimePicker__
+{{region raddatetimepicker-features-blackoutdates-0}}
+	<telerik:RadDateTimePicker x:Name="radDateTimePicker" />
+{{endregion}}
+
+#### __[C#] Example 2: Setting the BlackoutDates property in code behind__
+{{region raddatetimepicker-features-blackoutdates-1}}	
+	public MainWindow()
+	{		
+		InitializeComponent();
+
+		DateTime startDate = DateTime.Today; // note that this will return a date with its hours set to the start of the day (00:00:00). Example: 21.01.2020 00:00:00.00
+		var blackoutDates = new ObservableCollection<DateTime>()
+		{
+			startDate,
+			startDate.AddDays(1),
+			startDate.AddDays(2),
+			startDate.AddDays(3),
+		};
+		this.radDateTimePicker.BlackoutDates = blackoutDates;
+	}
+{{endregion}}
+
+## Data Binding BlackoutDates
+
+This section shows how to data bind the BlackoutDates property.
+
+#### __[C#] Example 3: Setting up the model__
+{{region raddatetimepicker-features-blackoutdates-2}}
+	public class MainViewModel
+    {
+        public ObservableCollection<DateTime> BlackoutDates { get; set; }
+
+        public MainViewModel()
+        {
+            DateTime startDate = DateTime.Today; // note that this will return a date with its hours set to the start of the day (00:00:00). Example: 21.01.2020 00:00:00.00
+            this.BlackoutDates = new ObservableCollection<DateTime>()
+            {
+                startDate,
+                startDate.AddDays(1),
+                startDate.AddDays(2),
+                startDate.AddDays(3),
+            };
+        }
+    }
+{{endregion}}
+
+#### __[C#] Example 4: Setting the data context__
+{{region raddatetimepicker-features-blackoutdates-3}}
+	public MainWindow()
+	{		
+		InitializeComponent();
+		this.DataContext = new MainViewModel();		
+	}
+{{endregion}}
+
+#### __[XAML] Example 5: Data binding the BlackoutDates property__
+{{region raddatetimepicker-features-blackoutdates-4}}
+	<telerik:RadDateTimePicker BlackoutDates="{Binding BlackoutDates}" />
+{{endregion}}
+
+![](images/raddatetimepicker-features-blackoutdates-0.png)
+
+>tip Find a runnable project that demonstrates how to use BlackoutDates in the [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/DateTimePicker/AllowedDates).

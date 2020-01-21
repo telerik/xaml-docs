@@ -1,7 +1,7 @@
 ---
 title: ItemContainerStyle
 page_title: ItemContainerStyle
-description: ItemContainerStyle
+description: This article describes the ItemContainerStyle property of the RadTreeView.
 slug: radtreeview-styling-and-appearance-item-container-style
 tags: itemcontainerstyle
 published: True
@@ -10,15 +10,13 @@ position: 5
 
 # ItemContainerStyle
 
-The Telerik __RadTreeView__ supports __ItemContainerStyle__. The __ItemContainerStyle__ property gives you the ability to change the treeview items' header. The container created by the __RadTreeView__ for each item in the collection is of type __RadTreeViewItem__. The style defined for the __ItemContainerStyle__ property should have as __TargetType__ the __RadTreeViewItem__ class.
+The Telerik __RadTreeView__ supports __ItemContainerStyle__. The container created by the __RadTreeView__ for each item in the collection is of type __RadTreeViewItem__. The style defined for the __ItemContainerStyle__ property should have the __RadTreeViewItem__ class as __TargetType__.
 
 >The __ItemContainerStyle__ clashes with the theming. You cannot have both an __ItemContainerStyle__ and a non-application theme for the __RadTreeView__. The reason is that they both set a style. If you want to __use a different theme and ItemContainerStyle__ you need to set the theme as an application theme (which sets a __DefaultStyle__ rather than __Style__).
 
-For the purpose of this tutorial will be used the following treeview declaration: 
-
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+#### __[XAML] Example 1: RadTreeView definition__
 
 {{region radtreeview-styling-and-appearance-item-container-style_0}}
 	<UserControl.Resources>
@@ -53,7 +51,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+#### __[XAML] Example 1: RadTreeView definition__
 
 {{region radtreeview-styling-and-appearance-item-container-style_3}}
 	<UserControl.Resources>
@@ -88,22 +86,29 @@ For the purpose of this tutorial will be used the following treeview declaration
 {% endif %}
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
-![](images/RadTreeView_TemplatingItemContainerStyle.PNG)
 
->tip Defining the style in the resources of the control or in the resources of the application, makes it reusable.
+#### __Figure 1: Result from Example 1__
+![RadTreeView populated with sample data](images/RadTreeView_TemplatingItemContainerStyle.PNG)
 
-__RadTreeViewItem HeaderTemplate__
+>tip Defining the style in the resources of the control or in the resources of the application makes it reusable.
 
-#### __XAML__
+## ItemContainerStyle Definition
+
+__Example 2__ demonstrates how to create an ItemContainerStyle, which sets the Foreground and IsExpanded properties of the items. 
+
+#### __[XAML] Example 2: ItemContainerStyle Definition__
 
 {{region radtreeview-styling-and-appearance-item-container-style_1}}
+ 	<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
+	<Style x:Key="myItemContainerStyle" TargetType="telerik:RadTreeViewItem" BasedOn="{StaticResource RadTreeViewItemStyle}">-->
+
 	<Style x:Key="myItemContainerStyle" TargetType="telerik:RadTreeViewItem">
 	    <Setter Property="Foreground" Value="Red"/>
 	    <Setter Property="IsExpanded" Value="True"/>
 	</Style>
-	{{endregion}}
+{{endregion}}
 
-#### __XAML__
+#### __[XAML] Example 3: Setting the ItemContainerStyle property__
 
 {{region radtreeview-styling-and-appearance-item-container-style_2}}
 	<telerik:RadTreeView x:Name="radTreeView"
@@ -112,9 +117,18 @@ __RadTreeViewItem HeaderTemplate__
 	   ItemContainerStyle="{StaticResource myItemContainerStyle}"/>
 	{{endregion}}
 
-![](images/RadTreeView_TemplatingItemContainerStyle_010.PNG)
+#### __Figure 2: Result from Example 3__
+![RadTreeView with custom ItemContainerStyle](images/RadTreeView_TemplatingItemContainerStyle_010.PNG)
 
-If you have different items and/or you prefer to display items with different styles, then you should use the [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%}) property.
+>When using __ItemContainerStyle__ with static items, it will get applied only to the direct children of the __RadTreeView__ - the top-level items. If you want their child items to have the same style, you have to manually set the __ItemContainerStyle__ property of the __RadTreeViewItems__.
+
+<!-- -->
+
+>When using the __ItemContainerStyle__ with dynamic items, its value gets inherited through the hierarchy thanks to the __HierarchicalDataTemplate__. You are free to break the inheritance, when needed, by using multiple nested __HierarchicalDataTemplates__ and by setting the __ItemContainerStyle__ property of each of them.
+
+<!-- -->
+
+> If you have different items and/or you prefer to display items with different styles, you should use the [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%}) property.
 
 ## See Also
  * [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%})

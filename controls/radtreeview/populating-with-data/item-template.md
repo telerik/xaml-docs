@@ -311,4 +311,3 @@ The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ 
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})
  * [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
- * [Templates Structure]({%slug radtreeview-styles-and-templates-tesmplates-structure%})

@@ -1,7 +1,7 @@
 ---
 title: Blackout Dates
 page_title: Blackout Dates
-description: BlackoutDates
+description: RadDateTimePicker allows you to disable certain dates via the BlackoutDates property.
 slug: raddatetimepicker-features-blackoutdates
 tags: blackoutdates
 published: True
@@ -14,7 +14,7 @@ RadDateTimePicker allows you to disable certain dates in the [calendar part]({%s
 
 >tip RadDateTimePicker control uses RadCalendar to show its calendar. The feature shown in this article is the same as the [blackout dates of RadCalendar]({%slug radcalendar-features-blackoutdates%}).
 
->important In order for a date from the BlackoutDates collection to get disabled in the calendar, its time portion should be set to the start of the day (usually `00:00:00.00` which is 12:00:00AM). Otherwise, the date won't get reflect in the UI.
+>important In order for a date from the BlackoutDates collection to get disabled in the calendar, its time portion should be set to the start of the day (usually `00:00:00.00` which is 12:00:00AM). Otherwise, the date won't get reflected in the UI.
 
 ## Setting BlackoutDates
 
@@ -43,12 +43,27 @@ This section shows how to set the BlackoutDates in code behind.
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 2: Setting the BlackoutDates property in code behind__
+{{region raddatetimepicker-features-blackoutdates-2}}	
+	Public Sub New()
+	    InitializeComponent()
+	    Dim startDate As DateTime = DateTime.Today
+	    Dim blackoutDates = New ObservableCollection(Of DateTime)() From {
+		startDate,
+		startDate.AddDays(1),
+		startDate.AddDays(2),
+		startDate.AddDays(3)
+	    }
+	    Me.radDateTimePicker.BlackoutDates = blackoutDates
+	End Sub
+{{endregion}}
+
 ## Data Binding BlackoutDates
 
 This section shows how to data bind the BlackoutDates property.
 
 #### __[C#] Example 3: Setting up the model__
-{{region raddatetimepicker-features-blackoutdates-2}}
+{{region raddatetimepicker-features-blackoutdates-3}}
 	public class MainViewModel
     {
         public ObservableCollection<DateTime> BlackoutDates { get; set; }
@@ -67,13 +82,38 @@ This section shows how to data bind the BlackoutDates property.
     }
 {{endregion}}
 
+#### __[VB.NET] Example 3: Setting up the model__
+{{region raddatetimepicker-features-blackoutdates-4}}
+	Public Class MainViewModel
+		Public Property BlackoutDates As ObservableCollection(Of DateTime)
+
+		Public Sub New()
+			Dim startDate As DateTime = DateTime.Today
+			Me.BlackoutDates = New ObservableCollection(Of DateTime)() From {
+			    startDate,
+			    startDate.AddDays(1),
+			    startDate.AddDays(2),
+			    startDate.AddDays(3)
+			}
+		End Sub
+	End Class
+{{endregion}}
+
 #### __[C#] Example 4: Setting the data context__
-{{region raddatetimepicker-features-blackoutdates-3}}
+{{region raddatetimepicker-features-blackoutdates-5}}
 	public MainWindow()
 	{		
 		InitializeComponent();
 		this.DataContext = new MainViewModel();		
 	}
+{{endregion}}
+
+#### __[VB.NET] Example 4: Setting the data context__
+{{region raddatetimepicker-features-blackoutdates-6}}
+	Public Sub New()
+		InitializeComponent()
+		Me.DataContext = New MainViewModel()
+	End Sub
 {{endregion}}
 
 #### __[XAML] Example 5: Data binding the BlackoutDates property__

@@ -91,7 +91,7 @@ Aggregate functions can be added in xaml or in code behind. __Examples 1 and 2__
 
 <!-- -->
 
-> If ommitted, the __SourceField__ property of the aggregate functions is automatically set to the __DataMemberBinding__ of the column.
+> If omitted, the __SourceField__ property of the aggregate functions is automatically set to the __DataMemberBinding__ of the column.
             
 <!-- -->
             

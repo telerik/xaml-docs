@@ -14,7 +14,7 @@ RadGridView allows you to display additional information which applies to the co
 
 By default, column footers are hidden and in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
-#### __[XAML] Example 1: __
+#### __[XAML] Example 1: Show column footers__
 {{region xaml-gridview-columns-column-footers_1}}
 	<telerik:RadGridView ShowColumnFooters="True">
 	  <!-- ... -->
@@ -23,7 +23,7 @@ By default, column footers are hidden and in order to make them visible you have
 
 To set the value of the footer cells, you can use the __Footer__ property of the columns.
 
-#### __[XAML] Example 2: __
+#### __[XAML] Example 2: Set the content of the footer cells__
 
 {{region xaml-gridview-columns-column-footers_2}}
 	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}" Footer="Footer cell" />

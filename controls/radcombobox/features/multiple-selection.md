@@ -16,13 +16,13 @@ With the R3 2016 release version of UI for WPF, multiple items can be selected f
 
 This section will provide information about the following properties connected with the multiple selection functionality of __RadComboBox__:
 
-* [AllowMultipleSelection](#properties-AllowMultipleSelection)
+* AllowMultipleSelection
 
-* [MultipleSelectionSeparator](#properties-MultipleSelectionSeparator)
+* MultipleSelectionSeparator
 
-* [MultipleSelectionSeparatorStringFormat](#properties-MultipleSelectionSeparatorStringFormat)
+* MultipleSelectionSeparatorStringFormat
 
-* [SelectedItems](#properties-SelectedItems)
+* SelectedItems
 
 ### AllowMultipleSelection
 

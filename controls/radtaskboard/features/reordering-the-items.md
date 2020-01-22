@@ -24,10 +24,10 @@ The __DragVisualProvider__ enriches the drag-drop functionality of __RadTaskBoar
 #### __[XAML] Example 2: Set DragVisualProvider__
 	{{region xaml-radtaskborad-features-reordering-items_1}}
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" ItemsSource="{Binding Data}">
-		<telerik:RadTaskBoard.DragVisualProvider>
-			<telerik:ScreenshotDragVisualProvider />
-		</telerik:RadTaskBoard.DragVisualProvider>
-	    </telerik:RadTaskBoard>
+			<telerik:RadTaskBoard.DragVisualProvider>
+				<telerik:ScreenshotDragVisualProvider />
+			</telerik:RadTaskBoard.DragVisualProvider>
+	   </telerik:RadTaskBoard>
 	{{endregion}}
 
 * __ScreenshotDragVisualProvider__: Provides the exact visual representation of the dragged item. This provider is set by default to the __DragVisualProvider__ property.

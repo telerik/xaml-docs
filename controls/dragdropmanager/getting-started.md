@@ -12,7 +12,9 @@ position: 2
 
 This article will demonstrate a basic implementation of the DragDropManager by dragging between two ListBoxes. 
 
->tipIn order to use DragDropManager you have to add reference to __Telerik.Windows.Controls__ assembly.          
+>tipIn order to use DragDropManager you have to add reference to __Telerik.Windows.Controls__ assembly.
+
+>To learn how to use the DragDropManager in a more MVVM-friendly matter though commands, have a look at the "DragDrop Using Commands" demo from our [SDK Samples Browser](https://github.com/telerik/xaml-sdk/). The source code of the demo is also available in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingCommands).
 
 Firstly, for the purpose of this tutorial we will create a business object ApplicationInfo, which will expose a couple of properties as well as a sample collection for populating the ListBoxes. The structure of the class used in this example is shown on the next code snippets:
 

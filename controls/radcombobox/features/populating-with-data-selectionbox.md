@@ -1,6 +1,6 @@
 ---
-title: SelectionBoxTemplate
-page_title: SelectionBoxTemplate
+title: Selection Box Template
+page_title: Selection Box Template
 description: SelectionBoxTemplate
 slug: radcombobox-populating-with-data-selectionbox
 tags: selectionboxtemplate
@@ -8,58 +8,103 @@ published: True
 position: 8
 ---
 
-# SelectionBoxTemplate
+# Selection Box Template
 
-The __SelectionBoxTemplate__ gives you the ability to define a separate template for the selected item of Non-Editable __RadComboBox__. The purpose of this tutorial is to show you how to create and apply __SelectionBoxTemplate__.
+The selection box template allows you to define a DataTemplate for the selected item, thus customizing the [Selection Box]({%slug radcombobox-general-information-visual-structure%}) part of RadComboBox. 
 
->important The __SelectionBoxTemplate__ is used only by the non-editable __RadComboBox__. However, if you want to customize the TextBox part of ab editable __RadComboBox__ you could use the [TextBoxStyle]({%slug radcombobox-features-textboxstyle%}) property.
+>important This feature is available only with Non-Editable RadComboBox. This is when the IsEditable property of the control is set to False (default value). To customize the [Input Area]({%slug radcombobox-general-information-visual-structure%}) part of an editable RadComboBox, use the [TextBoxStyle]({%slug radcombobox-features-textboxstyle%}) property.
 
-<!-- -->
+To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of RadComboBox. The following example shows how to set up a combobox and define a selection box template.
 
->important If you're using a RadComboBox with [multiple selection]({%slug radcombobox-features-multiple-selection%}) you should use the [MultipleSelectionBoxTemplate]({%slug radcombobox-features-multiple-selection%}#multipleselectionboxtemplate) property instead of the __SelectionBoxTemplate__.
-
->Before proceeding further with this tutorial, be sure that you are familiar with how to bind a __RadComboBox__ to a collection of business objects. For more information take a look at the [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%}) topic. __This tutorial will use exactly the same example as in the aforementioned topic.__
-
-If you have a __RadComboBox__ which is populated to a collection of business objects, then all items (including the item in the selection box) will look identically.
-
-#### __XAML__
-
-{{region radcombobox-populating-with-data-selectionbox_0}}
-	<telerik:RadComboBox x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" ItemTemplate="{StaticResource ComboBoxCustomTemplate}"/>
+#### __[C#] Example 1: Setting up the model__
+{{region radcombobox-populating-with-data-selectionbox-0}}
+	public class DataItem
+    {
+        public string Name { get; set; }
+    }
 {{endregion}}
 
-![](images/RadComboBox_PopulatingWithData_SelectionBoxItemTemplate_010.png)
-
-__RadComboBox__ gives you the ability to define a separate template for the selected item. In order to do that, you have to perform two simple steps:
-
-* Create a custom __DataTemplate__
-
-#### __XAML__
-
-{{region radcombobox-populating-with-data-selectionbox_1}}
-	<UserControl.Resources>
-	    <DataTemplate x:Key="SelectionBoxTemplate">
-	        <TextBlock Text="{Binding Name}" Foreground="Green" FontWeight="Bold"/>
-	    </DataTemplate>
-	</UserControl.Resources>
+#### __[VB.NET] Example 1: Setting up the model__
+{{region radcombobox-populating-with-data-selectionbox-1}}
+	Public Class DataItem
+		Public Property Name As String
+	End Class
 {{endregion}}
 
-* Set the declared __DataTemplate__ to the __RadComboBox__'s __SelectionBoxTemplate__ property.
+#### __[C#] Example 2: Setting up the data__
+{{region radcombobox-populating-with-data-selectionbox-2}}
+	public MainWindow()
+	{         
+		InitializeComponent();
 
-#### __XAML__
-
-{{region radcombobox-populating-with-data-selectionbox_2}}
-	<telerik:RadComboBox x:Name="radComboBox" SelectionBoxTemplate="{StaticResource SelectionBoxTemplate}"/>
+		var source = new ObservableCollection<DataItem>()
+		{
+			new DataItem() { Name = "Item 1" },
+			new DataItem() { Name = "Item 2" },
+			new DataItem() { Name = "Item 3" },
+		};
+		this.DataContext = source;            
+	}
 {{endregion}}
 
-The result is shown on the image below. Note how the template of the selected item differs from the items in the drop-down.
+#### __[VB.NET] Example 2: Setting up the data__
+{{region radcombobox-populating-with-data-selectionbox-3}}
+	Public Sub New()
+		InitializeComponent()
+		Dim source = New ObservableCollection(Of DataItem)() From {
+			New DataItem() With {
+				.Name = "Item 1"
+			},
+			New DataItem() With {
+				.Name = "Item 2"
+			},
+			New DataItem() With {
+				.Name = "Item 3"
+			}
+		}
+		Me.DataContext = source
+	End Sub
+{{endregion}}
 
-![](images/RadComboBox_PopulatingWithData_SelectionBoxItemTemplate_020.png)
+#### __[XAML] Example 3: Setting the SelectionBoxTemplate__
+{{region radcombobox-populating-with-data-selectionbox-4}}
+	<telerik:RadComboBox ItemsSource="{Binding}" DisplayMemberPath="Name">
+		<telerik:RadComboBox.SelectionBoxTemplate>
+			<DataTemplate>
+				<Grid>
+					<Rectangle Width="10" Height="10" Fill="Red" HorizontalAlignment="Left" />
+					<TextBlock Text="{Binding Name}" FontStyle="Italic" Foreground="#3399FF" Margin="15 0 0 0"/>
+				</Grid>
+			</DataTemplate>
+		</telerik:RadComboBox.SelectionBoxTemplate>
+	</telerik:RadComboBox>
+{{endregion}}
 
-## See Also
+![](images/radcombobox-populating-with-data-selectionbox-0.png)
 
- * [Binding to WCF Service]({%slug radcombobox-populating-with-data-binding-to-wcf%})
+## Multiple Selection Box Template
 
- * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%})
+To customize the Selection Box part of RadComboBox when multiple selection is enabled, set the __MultipleSelectionBoxTemplate__ property, instead of SelectionBoxTemplate. Read more about this in the [Multiple Selection]({%slug radcombobox-features-multiple-selection%}#multipleselectionboxtemplate) article.
 
- * [Binding to ADO.NET Data Service]({%slug radcombobox-populating-with-data-binding-adonet%})
+## Empty Selection Box Template
+
+To customize the Selection Box when there is no selected item, set the __EmptySelectionBoxTemplate__
+
+#### __[XAML] Example 4: Setting the EmptySelectionBoxTemplate__
+{{region radcombobox-populating-with-data-selectionbox-6}}
+	<telerik:RadComboBox ItemsSource="{Binding}" DisplayMemberPath="Name">
+		<telerik:RadComboBox.EmptySelectionBoxTemplate>
+			<DataTemplate>
+				<TextBlock Text="Select an item" />
+			</DataTemplate>
+		</telerik:RadComboBox.EmptySelectionBoxTemplate>
+	</telerik:RadComboBox>
+{{endregion}}
+
+![](images/radcombobox-populating-with-data-selectionbox-1.png)
+
+>important The SelectionBoxTemplate, MultipleSelectionBoxTemplate and EmptySelectionBoxTemplate properties are applied only when the ItemsSource property of RadComboBox is set.
+
+## See Also  
+ * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%}) 
+ * [Using DataTemplate in Code]({%slug using-datatemplate-in-code%}) 

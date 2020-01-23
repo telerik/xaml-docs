@@ -202,10 +202,6 @@ Finally set the property in XAML:
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 
-## See Also
-
+## See Also  
  * [Enable\Disable RadComboBoxItems]({%slug radcombobox-howto-enable-disable-radcombobox-items%})
-
- * [Open the DropDown When the Control Gets Focus]({%slug radcombobox-howto-open-dropdown-get-focus%})
-
- * [Get a Grid Like Dropdown]({%slug radcombobox-grid-like-dropdown%})
+ * [Open the DropDown When the Control Gets Focus]({%slug radcombobox-howto-open-dropdown-get-focus%}) 

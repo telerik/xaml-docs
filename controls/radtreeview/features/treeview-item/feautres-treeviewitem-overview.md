@@ -14,7 +14,7 @@ The __RadTreeView__ control provides a way to display information in a hierarchi
 
 Here is a list of the most important treeview item features:
 
-* __Styling and Appearance__: The appearance of a treeview items can be changed using either [styling]({%slug radtreeview-styling-and-appearance-overview2%}) or [templates]({%slug radtreeview-styles-and-templates-tesmplates-structure%}). You can set the specific templates using the properties __HeaderTemplate__ or __Template__.
+* __Styling and Appearance__: The appearance of a treeview items can be changed using either [styling]({%slug radtreeview-styling-and-appearance-overview2%}) or templates. You can set the specific templates using the properties __HeaderTemplate__ or __Template__.
 
 * __Populating with Data__: RadTreeView supports [Populating with Data]({%slug radtreeview-getting-started-populating-with-data%}) using one of the following approaches: [declaratively]({%slug radtreeview-populating-with-data-declaratively%}), [programmatically]({%slug radtreeview-populating-with-data-in-code-behind%}) or using [data binding]({%slug radtreeview-populating-with-data-data-binding-to-xml%}). 
 

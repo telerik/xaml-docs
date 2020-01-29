@@ -14,7 +14,7 @@ The __RadTreeListView__ inherits the __RadGridView__. In this way, it has the sa
 
 Here is a list of events exposed by the RadTreeListView control:
 
-* **PreviewDragEnded**: Occurs before the drag has been ended. The type of the passed event arguments is __RadTreeListViewDragEndedEventHandler__.
+* **PreviewDragEnded**: Occurs before the drag has ended. The type of the passed event arguments is __RadTreeListViewDragEndedEventHandler__.
 
 	#### __[C#] Example 1: Get the Dragged Items in PreviewDragEnded event handler__
 		{{region cs-radtreelistview-events-events_0}}

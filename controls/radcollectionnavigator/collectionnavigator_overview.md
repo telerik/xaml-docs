@@ -28,7 +28,7 @@ As every control from UI for {{ site.framework_name }},  RadCollectionNavigator 
 
 ## Key Features
 
-* __Easily customizable UI__: You can choose which buttons are visibile by using the __CommandButtonsVisibility__ property. For more info, check out the [Key properties]({%slug collectionnavigator_key_properties%}#commandbuttonsvisibility) article.
+* __Easily customizable UI__: You can choose which buttons are visible by using the __CommandButtonsVisibility__ property. For more info, check out the [Key properties]({%slug collectionnavigator_key_properties%}#commandbuttonsvisibility) article.
 
 * __Styling and Appearance__: RadCollectionNavigator comes with a variety of themes and properties that allow you to customize the control's appearance.
 

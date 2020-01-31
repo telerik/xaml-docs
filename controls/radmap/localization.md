@@ -38,6 +38,20 @@ Here is a list of all of the __Resources__ available and their default values:
 |MapPresetZoomLevelRegion|Region|
 |MapPresetZoomLevelCity|City|
 |MapPresetZoomLevelNeighborhood|Neighborhood|
+|MapNorthChar|N|
+|MapSouthChar|S|
+|MapWestChar|W|
+|MapEastChar|E|
+|MapMapScaleMeterFormat|{0} m|
+|MapOsmStandardCommand|Standard|
+|MapOsmCycleCommand|Cycle Map|
+|MapOsmTransportCommand|Transport Map|
+|MapOsmHumanitarianCommand|Humanitarian|
+|MapPhysicalCommand|Physical View|
+|MapShadedReliefCommand|Shaded Relief View|
+|MapTerrainBaseCommand|Terrain Base View|
+|MapTopographicCommand|Topographic View|
+|MapOsmMapQuestOpenCommand|MapQuest Open|
 
 ## See Also
  * [Getting Started]({%slug radmap-getting-started%})

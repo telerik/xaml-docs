@@ -20,7 +20,7 @@ The **FloatingImageBlock** class is used to insert floating images in a document
 
 FloatingImageBlock exposes members enabling you to control the image inside the container and its positioning.
 
-- **ImageInline ImageInline**: Represents the image inside the floating block. For more informationabout this object, refer to the [ImageInline]({%slug radrichtextbox-features-document-elements-inlineimage%}) topic.
+- **ImageInline ImageInline**: Represents the image inside the floating block. For more information about this object, refer to the [ImageInline]({%slug radrichtextbox-features-document-elements-inlineimage%}) topic.
 
 - **bool AffectsLayout**: Gets a value indicating whether the block affects the layout of the document. The layout is not affected in the cases when the **WrappingStyle** property of the block is set to WrappingStyle.**BehindText** or WrappingStyle.**InFrontOfText**.
 

@@ -124,7 +124,8 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(TablePropertiesDialog), 
     typeof(TabStopsPropertiesDialog), 
     typeof(UnprotectDocumentDialog), 
-    typeof(WatermarkSettingsDialog) 
+    typeof(WatermarkSettingsDialog),
+    typeof(PasteOptionsPopup)
 {{endregion}}
 
 You could remove all the types you won’t need in your application.

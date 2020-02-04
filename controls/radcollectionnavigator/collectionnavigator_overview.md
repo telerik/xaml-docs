@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article provides an overview for the RadCollectionNavigator control.
 slug: collectionnavigator_overview
 tags: overview
 published: True
@@ -12,16 +12,32 @@ position: 1
 
 {% if site.site_name == 'WPF' %}
 
-![collectionsnavigator wpf 46 text](images/collectionsnavigator_wpf_46_text.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![RadCollectionNavigator icon](images/collectionsnavigator_wpf_46_text.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
-![collectionsnavigator sl 46 text](images/collectionsnavigator_sl_46_text.png){% endif %}
+![RadCollectionNavigator icon](images/collectionsnavigator_sl_46_text.png){% endif %}
 
-RadCollectionNavigator was initially introduced within the RadDataForm control. However, the need of greater flexibility for custom solutions provided the conception of standalone collection-navigator control.
-      
+Thank you for choosing __RadCollectionNavigator__!				
 
-It displays two sets of buttons, separated into two groups according to the purpose of their commands: Navigation and Editing. 
-     
+__RadCollectionNavigator__ provides UI for seemless editing and navigation of а given data collection.
 
+RadCollectionNavigator is part of the powerful UI for WPF data management framework, which includes components as [RadDataFilter]({%slug datafilter-overview%}), [RadDataForm]({%slug raddataform-overview%}), [RadDataPager]({%slug datapager-overview%}), [RadGridView]({%slug gridview-overview2%}), [RadPivotGrid]({%slug radpivotgrid-overview%}) and more.				
 
+![RadCollectionNavigator](images/collectionnavigator_01.png)
 
-![collectionnavigator 01](images/collectionnavigator_01.png)
+As every control from UI for {{ site.framework_name }},  RadCollectionNavigator comes with a set of pre-defined themes. Alternatively you can also design your own templates for a completely custom look.
+
+## Key Features
+
+* __Easily customizable UI__: You can choose which buttons are visible by using the __CommandButtonsVisibility__ property. For more info, check out the [Key properties]({%slug collectionnavigator_key_properties%}#commandbuttonsvisibility) article.
+
+* __Styling and Appearance__: RadCollectionNavigator comes with a variety of themes and properties that allow you to customize the control's appearance.
+
+* __UI Automation Support__: Check the [UI Automation Support]({%slug common-ui-automation%}) common article.
+
+>tip Get started with the control with its [Getting Started]({%slug collectionnavigator_getting_started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online examples at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#CollectionNavigator/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+
+## See Also
+ * [Key Properties]({%slug collectionnavigator_key_properties%})
+ * [Visual Structure]({%slug collectionnavigator_visual_struture%})

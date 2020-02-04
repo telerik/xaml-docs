@@ -32,7 +32,7 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Clear Cashed of the Diagram__: When an item (node) is removed from GraphSource, its corresponding UI container (RadDiagramShape) is stored in collection of 'recycled' shapes for future use. This aims to speed up the diagram performance in extensive undo-redo and container generation operations (loadin process). However, in a scenario where large number of Add/Remove operation are performed, the therecycled collection store in memory every operation which could lead to a possible memory issues. What can be done here is to manually clear this collection at some moment by calling the __ClearCache()__ method.
 
-#### __[C#] Example 1: Clear Cashed of RadDiagram__
+#### __[C#] Example 1: Clear Cashed of the RadDiagram__
 {{region raddiagram-performance-tips-tricks_0}}
 	(this.xDiagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
 {{endregion}}
@@ -78,7 +78,7 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Disable Selection__: Copying and pasting hundreds of shapes could lead to performance issues. This is because thousands of visual elements are added in a Canvas (every shape has borders, resizing / rotation thumbs, many other visuals in its control template). What you can do to optimize the process is to disable the selection behavior of the paste shapes. In order to do that you can create a custom class which derives from RadDiagram control and override the __Paste()__ method. Then you can create a dummy boolean value which RadDiagram are going to use to handle the selection of the control in its __PreviewSelectionChanged__ event handler.
 
-#### __[XAML] Example 4: Simplify Shapes Template__
+#### __[XAML] Example 4: Suppress selection while pasting__
 {{region raddiagram-performance-tips-tricks_3}}
 	public class CustomDiagram : RadDiagram
 	{

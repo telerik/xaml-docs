@@ -57,8 +57,8 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
         {
             InitializeComponent();
 
-            currentAuthor = new Author("1") { Name = "Peter" };
-            otherAuthor = new Author("2") { Name = "Steven" };
+            currentAuthor = new Author("Peter");
+            otherAuthor = new Author("Steven");
             this.chat.CurrentAuthor = currentAuthor;
         }
     }
@@ -94,14 +94,3 @@ This setup will have the following result.
 
 * [Overview]({%slug chat-overview%})
 * [Messages Overview]({%slug chat-items-messages-overview%})
-
-
-
-
-
-
-
-
-
-
-

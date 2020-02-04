@@ -73,6 +73,8 @@ The linear and categorical 3D axes share some common features which you can find
 
 	#### __Figure 5: Label template__
 	![](images/radchartview-3d-axes-4.png)
+	
+	> The data context passed to the LabelTemplate is an object of type `System.Double` when the axis is LinearAxis3D. In case CategoricalAxis3D is used, the data context is `System.Object` which contains the corresponding category provided by the series' items.
  
 * __Ticks length__: You can define the length of the axis ticks using the __MajorTickLength__ property.
 

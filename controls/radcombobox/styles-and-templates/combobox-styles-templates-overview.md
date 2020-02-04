@@ -28,7 +28,7 @@ The [Selection Box]({%slug radcombobox-general-information-visual-structure%}) p
 
 ## Editing the Control Template
 
-You can edit the control template of RadComboBox in order to achieve visualization and functionality that is not provided out of the box or via the built-in API. To do this, extract the ControlTemplate of the control and modify the elements in it. Read more about extracting template in the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
+You can edit the control template of RadComboBox in order to achieve visualization and functionality that is not provided out of the box or via the built-in API. To do this, extract the ControlTemplate of the control and modify the elements in it. Read more about extracting templates in the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
 To apply the customized ControlTemplate, use the __NonEditableTemplate__ and __EditableTemplate__ properties of RadComboBox. NonEditableTemplate is applied when the __IsEditable__ property of the control is set to False (default). EditableTemplate is applied when IsEditable is True.
 

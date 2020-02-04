@@ -3255,7 +3255,7 @@ defaults:
     scope:
         path: controls/radchartview3d
     values:
-        title_prefix: WPF ChartView3d
+        title_prefix: WPF ChartView3D
 -
     scope:
         path: controls/radchat
@@ -3395,7 +3395,7 @@ defaults:
     scope:
         path: controls/radhtmlplaceholder
     values:
-        title_prefix: WPF HtmlPlaceHolder
+        title_prefix: WPF HtmlPlaceholder
 -
     scope:
         path: controls/radimageeditor
@@ -3440,7 +3440,7 @@ defaults:
     scope:
         path: controls/radmulticolumncombobox
     values:
-        title_prefix: WPF MultiColumnCombobox
+        title_prefix: WPF MultiColumnComboBox
 -
     scope:
         path: controls/radnavigationview
@@ -3550,7 +3550,7 @@ defaults:
     scope:
         path: controls/radspreadsheet
     values:
-        title_prefix: WPF SpreadSheet
+        title_prefix: WPF Spreadsheet
 -
     scope:
         path: controls/radspreadstreamprocessing

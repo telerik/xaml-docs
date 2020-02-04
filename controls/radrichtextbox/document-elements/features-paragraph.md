@@ -1,7 +1,7 @@
 ---
 title: Paragraph
 page_title: Paragraph
-description: Paragraph
+description: Check our "Paragraph" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-paragraph
 tags: paragraph
 published: True

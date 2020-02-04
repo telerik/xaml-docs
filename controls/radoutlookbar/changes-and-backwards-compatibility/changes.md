@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-changes
 tags: changes
 published: True

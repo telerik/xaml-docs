@@ -1,7 +1,7 @@
 ---
 title: Custom Gestures
 page_title:  Custom Gestures | Gestures | TouchManager
-description: Custom Gestures
+description: Check our "Custom Gestures" documentation article for the TouchManager WPF control.
 slug: touchmanager-custom-gestures-overview
 tags: gestures,custom,touch,manager,touchmanager,overview
 published: True

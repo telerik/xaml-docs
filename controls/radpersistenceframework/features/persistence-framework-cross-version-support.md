@@ -1,7 +1,7 @@
 ---
 title: Cross-Version Support
 page_title: Cross-Version Support
-description: Cross-Version Support
+description: Check our "Cross-Version Support" documentation article for the RadPersistenceFramework WPF control.
 slug: persistence-framework-cross-version-support
 tags: allowcrossversion,
 published: True

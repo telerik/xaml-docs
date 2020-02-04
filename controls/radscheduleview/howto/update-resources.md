@@ -1,7 +1,7 @@
 ---
 title: Update the Resources
 page_title: Update the Resources
-description: Update the Resources
+description: Check our "Update the Resources" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-update-resources
 tags: update,the,resources
 published: True

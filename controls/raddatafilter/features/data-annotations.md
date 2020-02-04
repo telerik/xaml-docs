@@ -1,7 +1,7 @@
 ---
 title: Data Annotations
 page_title: Data Annotations
-description: Data Annotations
+description: Check our "Data Annotations" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-features-data-annotations
 tags: data,annotations
 published: True

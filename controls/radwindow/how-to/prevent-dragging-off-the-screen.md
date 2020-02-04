@@ -1,7 +1,7 @@
 ---
 title: Prevent Dragging Off the Screen
 page_title: Prevent Dragging Off the Screen
-description: Prevent Dragging Off the Screen
+description: Check our "Prevent Dragging Off the Screen" documentation article for the RadWindow WPF control.
 slug: radwindow-how-to-prevent-dragging-off-the-screen
 tags: prevent,dragging,off,the,screen
 published: True

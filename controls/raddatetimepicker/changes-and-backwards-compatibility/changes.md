@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-changes
 tags: changes
 published: True

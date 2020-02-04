@@ -1,7 +1,7 @@
 ---
 title: DragReorder of Tabs
 page_title: DragReorder of Tabs
-description: DragReorder of Tabs
+description: Check our "DragReorder of Tabs" documentation article for the RadDocking WPF control.
 slug: raddocking-features-dragreorder
 tags: dragreorder,of,tabs
 published: True

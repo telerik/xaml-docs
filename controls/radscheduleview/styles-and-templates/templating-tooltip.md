@@ -1,7 +1,7 @@
 ---
 title: Templating the ToolTip
 page_title: Templating the ToolTip
-description: Templating the ToolTip
+description: Check our "Templating the ToolTip" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-templating-tooltip
 tags: templating,the,tooltip
 published: True

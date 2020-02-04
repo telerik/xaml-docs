@@ -1,7 +1,7 @@
 ---
 title: Tabstrip alignment
 page_title: Tabstrip alignment
-description: Tabstrip alignment
+description: Check our "Tabstrip alignment" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-fetures-tabstrip-alignment
 tags: tabstrip,alignment
 published: True

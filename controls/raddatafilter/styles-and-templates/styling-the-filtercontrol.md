@@ -1,7 +1,7 @@
 ---
 title: Styling FilterControl
 page_title: Styling FilterControl
-description: Styling FilterControl
+description: Check our "Styling FilterControl" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-styles-and-templates-styling-the-filtercontrol
 tags: styling,the,filtercontrol
 published: True

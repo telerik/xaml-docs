@@ -1,7 +1,7 @@
 ---
 title: ObservableGraphSourceBase
 page_title: ObservableGraphSourceBase
-description: ObservableGraphSourceBase
+description: Check our "ObservableGraphSourceBase" documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-observablegraphsource
 tags: observablegraphsourcebase
 published: True

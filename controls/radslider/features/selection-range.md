@@ -1,7 +1,7 @@
 ---
 title: Selection Range
 page_title: Selection Range
-description: Selection Range
+description: Check our "Selection Range" documentation article for the RadSlider WPF control.
 slug: radslider-selection-range
 tags: selection,range
 published: True

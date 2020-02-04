@@ -1,7 +1,7 @@
 ---
 title: ReadOnlyBehavior
 page_title: ReadOnlyBehavior
-description: ReadOnlyBehavior
+description: Check our "ReadOnlyBehavior" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-readonly-behavior
 tags: readonlybehavior
 published: True

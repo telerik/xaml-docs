@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadBook WPF control.
 slug: radbook-changes
 tags: changes
 published: True

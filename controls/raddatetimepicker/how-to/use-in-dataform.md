@@ -1,7 +1,7 @@
 ---
 title: How to use RadDateTimePicker in a DataForm
 page_title: How to use RadDateTimePicker in a DataForm
-description: How to use RadDateTimePicker in a DataForm
+description: Check our "How to use RadDateTimePicker in a DataForm" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-how-to-use-in-dataform
 tags: how,to,use,raddatetimepicker,in,a,dataform
 published: True

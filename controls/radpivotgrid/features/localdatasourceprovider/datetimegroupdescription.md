@@ -1,7 +1,7 @@
 ---
 title: DateTimeGroupDescription
 page_title: DateTimeGroupDescription
-description: DateTimeGroupDescription
+description: Check our "DateTimeGroupDescription" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-datetimegroupdescription
 tags: datetimegroupdescription
 published: True

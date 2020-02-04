@@ -1,7 +1,7 @@
 ---
 title: Plot Area
 page_title: Plot Area
-description: Plot Area
+description: Check our "Plot Area" documentation article for the RadChartView WPF control.
 slug: radchartview-features-plot-area
 tags: plotarea, plotareaclip, plotareastyle
 published: True

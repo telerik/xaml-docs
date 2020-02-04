@@ -1,7 +1,7 @@
 ---
 title: Create Windows Explorer Like WPF TreeView
 page_title: Create Windows Explorer Like WPF TreeView
-description: Create Windows Explorer Like WPF TreeView
+description: Check our "Create Windows Explorer Like WPF TreeView" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-wpf-windowsexplorer-like-treeview
 tags: create,windows,explorer,like,wpf,treeview
 published: True

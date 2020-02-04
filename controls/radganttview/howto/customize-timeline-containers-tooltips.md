@@ -1,7 +1,7 @@
 ---
 title: Customize the Tooltips for TimeLine Containers
 page_title: Customize the Tooltips for TimeLine Containers
-description: Customize the Tooltips for TimeLine Containers
+description: Check our "Customize the Tooltips for TimeLine Containers" documentation article for the RadGanttView WPF control.
 slug: radganttview-howto-customize-tooltips-timeline-containers
 tags: customize,tooltips,timeline,containers
 published: True

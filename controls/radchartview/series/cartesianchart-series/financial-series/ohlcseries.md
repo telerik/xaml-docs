@@ -1,7 +1,7 @@
 ---
 title: OhlcSeries
 page_title: OhlcSeries
-description: OhlcSeries
+description: Check our "OhlcSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-ohlcseries
 tags: ohlcseries
 published: True

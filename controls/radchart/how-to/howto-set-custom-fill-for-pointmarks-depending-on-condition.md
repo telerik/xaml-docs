@@ -1,7 +1,7 @@
 ---
 title: Set Custom Fill For PointMarks Depending On Condition
 page_title: Set Custom Fill For PointMarks Depending On Condition
-description: Set Custom Fill For PointMarks Depending On Condition
+description: Check our "Set Custom Fill For PointMarks Depending On Condition" documentation article for the RadChart WPF control.
 slug: radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition
 tags: set,custom,fill,for,pointmarks,depending,on,condition
 published: True

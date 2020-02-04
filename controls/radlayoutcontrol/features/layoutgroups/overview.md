@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-layoutgroups-overview
 tags: feature, displaymode, display, mode, overivew, layoutcontrolgroup, layoutcontroltabgroup, layoutcontrolexpandergroup
 published: True

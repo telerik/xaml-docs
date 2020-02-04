@@ -1,7 +1,7 @@
 ---
 title: Styling the RadUploadItem
 page_title: Styling the RadUploadItem
-description: Styling the RadUploadItem
+description: Check our "Styling the RadUploadItem" documentation article for the RadUpload WPF control.
 slug: radupload-styles-and-templates-styling-the-raduploaditem
 tags: styling,the,raduploaditem
 published: True

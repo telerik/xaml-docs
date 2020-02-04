@@ -1,7 +1,7 @@
 ---
 title: Commands and Tools
 page_title: Commands and Tools
-description: Commands and Tools
+description: Check our "Commands and Tools" documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-features-commands-and-tools
 tags: commands,and,tools
 published: True

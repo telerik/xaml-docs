@@ -1,7 +1,7 @@
 ---
 title: AnnotationsProvider
 page_title: AnnotationsProvider
-description: AnnotationsProvider
+description: Check our "AnnotationsProvider" documentation article for the RadChartView WPF control.
 slug: radchartview-annotations-annotationsprovider
 tags: annotations, provider, annotation, annotationsprovider, annotationprovider, chartannotationsprovider, chartannotationdescriptor, annotationcreated, created,
 published: True

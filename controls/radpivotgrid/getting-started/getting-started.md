@@ -1,7 +1,7 @@
 ---
 title: Working with RadPivotGrid
 page_title: Working with RadPivotGrid
-description: Working with RadPivotGrid
+description: Check our "Working with RadPivotGrid" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-getting-started
 tags: getting,started
 published: True

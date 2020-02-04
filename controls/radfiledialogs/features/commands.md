@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Commands
+description: Check our "Commands" documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-commands
 tags: filtering,features,radopenfiledialog,radsavefiledialog
 published: True

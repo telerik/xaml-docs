@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Check our "Templates Structure" documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-templates-structure
 tags: templates,structure
 published: True

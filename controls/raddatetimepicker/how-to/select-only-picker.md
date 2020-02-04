@@ -1,7 +1,7 @@
 ---
 title: How to create a select-only RadDateTimePicker
 page_title: How to create a select-only RadDateTimePicker
-description: How to create a select-only RadDateTimePicker
+description: Check our "How to create a select-only RadDateTimePicker" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-how-to-select-only-picker
 tags: how,to,create,a,select-only,raddatetimepicker
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styles and Templates
 page_title: Styles and Templates
-description: Styles and Templates
+description: Check our "Styles and Templates" documentation article for the RadTreeMap WPF control.
 slug: radtreemap-styles-and-templates
 tags: styles,and,templates
 published: True

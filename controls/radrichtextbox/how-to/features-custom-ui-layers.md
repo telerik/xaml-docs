@@ -1,7 +1,7 @@
 ---
 title: Customize Presentation through UI Layers
 page_title: Customize Presentation through UI Layers
-description: Customize Presentation through UI Layers
+description: Check our "Customize Presentation through UI Layers" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-custom-ui-layers
 tags: customize,presentation,through,ui,layers
 published: True

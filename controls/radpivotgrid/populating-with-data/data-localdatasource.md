@@ -1,7 +1,7 @@
 ---
 title: Using LocalDataSourceProvider
 page_title: Using LocalDataSourceProvider
-description: Using LocalDataSourceProvider
+description: Check our "Using LocalDataSourceProvider" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-data-localdatasource
 tags: using,localdatasourceprovider
 published: True

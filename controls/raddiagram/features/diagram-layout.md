@@ -1,7 +1,7 @@
 ---
 title: Layout
 page_title: Layout
-description: Layout
+description: Check our "Layout" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-diagram-layout
 tags: layout
 published: True

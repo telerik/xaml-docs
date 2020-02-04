@@ -1,7 +1,7 @@
 ---
 title: Axes
 page_title: Axes
-description: Axes
+description: Check our "Axes" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-axes
 tags: axes, 3d, chartview, linearaxis3d, categoricalaxis3d
 published: True

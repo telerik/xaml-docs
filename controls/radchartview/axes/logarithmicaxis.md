@@ -1,7 +1,7 @@
 ---
 title: Logarithmic Axis
 page_title: Logarithmic Axis
-description: Logarithmic Axis
+description: Check our "Logarithmic Axis" documentation article for the RadChartView WPF control.
 slug: radchartview-axes-logarithmicaxis
 tags: logarithmic,axis
 published: True

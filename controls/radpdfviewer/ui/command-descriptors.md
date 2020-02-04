@@ -1,7 +1,7 @@
 ---
 title: Command Descriptors
 page_title: Command Descriptors
-description: Command Descriptors
+description: Check our "Command Descriptors" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-command-descriptors
 tags: command,descriptors
 published: True

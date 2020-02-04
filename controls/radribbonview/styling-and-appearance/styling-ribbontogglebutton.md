@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonToggleButton
 page_title: Styling the RadRibbonToggleButton
-description: Styling the RadRibbonToggleButton
+description: Check our "Styling the RadRibbonToggleButton" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbontogglebutton
 tags: styling,the,radribbontogglebutton
 published: True

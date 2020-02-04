@@ -1,7 +1,7 @@
 ---
 title: DoubleGroupDescription
 page_title: DoubleGroupDescription
-description: DoubleGroupDescription
+description: Check our "DoubleGroupDescription" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-doublegroupdescription
 tags: doublegroupdescription
 published: True

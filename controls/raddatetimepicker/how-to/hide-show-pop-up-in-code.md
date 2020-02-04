@@ -1,7 +1,7 @@
 ---
 title: How to hide/show the pop-up pane in code
 page_title: How to hide/show the pop-up pane in code
-description: How to hide/show the pop-up pane in code
+description: Check our "How to hide/show the pop-up pane in code" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-how-to-hide-show-pop-up-in-code
 tags: how,to,hide/show,the,pop-up,pane,in,code
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Hidden Rows and Columns
 page_title: Hidden Rows and Columns
-description: Hidden Rows and Columns
+description: Check our "Hidden Rows and Columns" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-features-hiding
 tags: hiding,hidden,rows,and,columns
 published: True

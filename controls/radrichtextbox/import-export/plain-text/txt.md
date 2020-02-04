@@ -1,7 +1,7 @@
 ---
 title: Plain Text
 page_title: Plain Text
-description: Plain Text
+description: Check our "Plain Text" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-plain-text
 tags: Plain Text
 published: True

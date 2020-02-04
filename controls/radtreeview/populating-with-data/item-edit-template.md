@@ -1,7 +1,7 @@
 ---
 title: ItemEditTemplate
 page_title: ItemEditTemplate
-description: ItemEditTemplate
+description: Check our "ItemEditTemplate" documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-item-edit-template
 tags: itemedittemplate
 published: True

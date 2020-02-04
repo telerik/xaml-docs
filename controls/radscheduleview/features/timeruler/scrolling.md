@@ -1,7 +1,7 @@
 ---
 title: Scrolling the TimeRuler
 page_title: Scrolling the TimeRuler
-description: Scrolling the TimeRuler
+description: Check our "Scrolling the TimeRuler" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-timeruler-scrolling
 tags: scrolling,the,timeruler
 published: True

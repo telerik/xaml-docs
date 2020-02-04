@@ -1,7 +1,7 @@
 ---
 title: Understanding Appointments
 page_title: Understanding Appointments
-description: Understanding Appointments
+description: Check our "Understanding Appointments" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-getting-started-add-edit-delete-appointment
 tags: understanding,appointments
 published: True

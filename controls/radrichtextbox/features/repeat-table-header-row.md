@@ -1,7 +1,7 @@
 ---
 title: Repeat Table Header Row
 page_title: Repeat Table Header Row
-description: Repeat Table Header Row
+description: Check our "Repeat Table Header Row" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
 published: True

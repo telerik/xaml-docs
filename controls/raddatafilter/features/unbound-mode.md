@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
 page_title: Unbound Mode
-description: Unbound Mode
+description: Check our "Unbound Mode" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-features-unbound-mode
 tags: unbound,mode
 published: True

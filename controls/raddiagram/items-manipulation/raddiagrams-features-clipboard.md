@@ -1,7 +1,7 @@
 ---
 title: Clipboard Operations
 page_title: Clipboard Operations
-description: Clipboard Operations
+description: Check our "Clipboard Operations" documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-clipboard
 tags: clipboard,operations
 published: True

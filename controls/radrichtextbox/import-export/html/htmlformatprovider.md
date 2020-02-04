@@ -1,7 +1,7 @@
 ---
 title: Using HtmlFormatProvider
 page_title: Using HtmlFormatProvider
-description: Using HtmlFormatProvider
+description: Check our "Using HtmlFormatProvider" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-html-htmlformatprovider
 tags: using-htmlFormatProvider
 published: True

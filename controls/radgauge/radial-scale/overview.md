@@ -1,7 +1,7 @@
 ---
 title: Radial Scale Overview
 page_title: Radial Scale Overview
-description: Radial Scale Overview
+description: Check our "Radial Scale Overview" documentation article for the RadGauge WPF control.
 slug: radial-scale-overview
 tags: radial,scale,overview
 published: True

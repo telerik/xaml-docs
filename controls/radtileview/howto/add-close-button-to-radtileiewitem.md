@@ -1,7 +1,7 @@
 ---
 title: Add a Close Button to a RadTileViewItem
 page_title: Add a Close Button to a RadTileViewItem
-description: Add a Close Button to a RadTileViewItem
+description: Check our "Add a Close Button to a RadTileViewItem" documentation article for the RadTileView WPF control.
 slug: radtileview-howto-add-close-button-to-radtileiewitem
 tags: add,a,close,button,to,a,radtileviewitem
 publish: True

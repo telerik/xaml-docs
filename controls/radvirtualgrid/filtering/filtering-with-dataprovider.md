@@ -1,7 +1,7 @@
 ---
 title: Filtering with DataProvider
 page_title: Filtering with DataProvider
-description: Filtering with DataProvider
+description: Check our "Filtering with DataProvider" documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-filtering-dataprovider
 tags: filtering, dataprovider
 published: True

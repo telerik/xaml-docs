@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-populating
 tags: getting,started
 publish: True

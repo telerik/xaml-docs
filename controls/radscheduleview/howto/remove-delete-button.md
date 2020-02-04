@@ -1,7 +1,7 @@
 ---
 title: Remove the Delete Button
 page_title: Remove the Delete Button
-description: Remove the Delete Button
+description: Check our "Remove the Delete Button" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-remove-delete-button
 tags: remove,the,delete,button
 published: True

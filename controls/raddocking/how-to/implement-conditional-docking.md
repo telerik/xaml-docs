@@ -1,7 +1,7 @@
 ---
 title: How to Implement Conditional Docking
 page_title: How to Implement Conditional Docking
-description: How to Implement Conditional Docking
+description: Check our "How to Implement Conditional Docking" documentation article for the RadDocking WPF control.
 slug: raddocking-how-to-implement-conditional-docking
 tags: how,to,implement,conditional,docking
 published: True

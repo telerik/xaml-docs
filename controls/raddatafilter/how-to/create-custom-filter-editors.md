@@ -1,7 +1,7 @@
 ---
 title: Create Custom Filter Editors
 page_title: Create Custom Filter Editors
-description: Create Custom Filter Editors
+description: Check our "Create Custom Filter Editors" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-how-to-create-custom-filter-editors
 tags: create,custom,filter,editors
 published: True

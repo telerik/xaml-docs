@@ -1,7 +1,7 @@
 ---
 title: How to Hide the Minimized Area
 page_title: How to Hide the Minimized Area
-description: How to Hide the Minimized Area
+description: Check our "How to Hide the Minimized Area" documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-how-to-hide-the-minimized-area
 tags: how,to,hide,the,minimized,area
 published: True

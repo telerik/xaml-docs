@@ -1,7 +1,7 @@
 ---
 title: Perform Selection Only On Lost Focus or Enter Key Press
 page_title: Perform Selection Only On Lost Focus or Enter Key Press
-description: Perform Selection Only On Lost Focus or Enter Key Press
+description: Check our "Perform Selection Only On Lost Focus or Enter Key Press" documentation article for the RadComboBox WPF control.
 slug: radcombobox-how-to-perform-selection-only-lost-focus
 tags: how,to,perform,selection,only,lost,focus,enter,key
 published: True

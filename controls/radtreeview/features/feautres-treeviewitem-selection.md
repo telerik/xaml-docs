@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: Check our "Selection" documentation article for the RadTreeView WPF control.
 slug: radtreeview-feautres-treeviewitem-selection
 tags: selection
 published: True

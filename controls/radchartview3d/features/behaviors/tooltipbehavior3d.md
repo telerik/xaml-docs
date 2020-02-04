@@ -1,7 +1,7 @@
 ---
 title: Tooltip
 page_title: Tooltip
-description: Tooltip
+description: Check our "Tooltip" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-behaviors-tooltip
 tags: 3d, chartview, tooltip, behaviors, chart3dtooltipbehavior
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Split Button
 page_title: Split Button
-description: Split Button
+description: Check our "Split Button" documentation article for the RadButtons WPF control.
 slug: radbuttons-features-split-button
 tags: split,button
 published: True

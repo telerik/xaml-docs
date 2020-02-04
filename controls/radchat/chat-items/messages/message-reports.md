@@ -1,7 +1,7 @@
 ---
 title: Message Reports
 page_title: Message Reports
-description: Message Reports
+description: Check our "Message Reports" documentation article for the RadChat WPF control.
 slug: chat-items-message-reports
 tags: messages, reports
 published: True

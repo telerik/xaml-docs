@@ -1,7 +1,7 @@
 ---
 title: Keyboard and Mouse Navigation
 page_title: Keyboard and Mouse Navigation
-description: Keyboard and Mouse Navigation
+description: Check our "Keyboard and Mouse Navigation" documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-keyboard-and-mouse-navigation
 tags: keyboard, mouse, navigation
 published: True

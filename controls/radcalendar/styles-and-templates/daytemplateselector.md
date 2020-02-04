@@ -1,7 +1,7 @@
 ---
 title: Using DayTemplateSelector
 page_title: Using DayTemplateSelector
-description: Using DayTemplateSelector
+description: Check our "Using DayTemplateSelector" documentation article for the RadCalendar WPF control.
 slug: radcalendar-styles-and-templates-using-daytemplateselector
 tags: how,to,customize,the,calendar,buttons,template,selector
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Custom GanttTask
 page_title: Custom GanttTask
-description: Custom GanttTask
+description: Check our "Custom GanttTask" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-custom-gantttask
 tags: custom,gantttask
 published: True

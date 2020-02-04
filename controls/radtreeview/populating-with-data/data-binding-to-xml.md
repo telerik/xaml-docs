@@ -1,7 +1,7 @@
 ---
 title: Binding to XML
 page_title: Binding to XML
-description: Binding to XML
+description: Check our "Binding to XML" documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-data-binding-to-xml
 tags: binding,to,xml
 published: True

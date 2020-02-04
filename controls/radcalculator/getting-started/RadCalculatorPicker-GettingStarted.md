@@ -1,7 +1,7 @@
 ---
 title: RadCalculatorPicker
 page_title: RadCalculatorPicker
-description: RadCalculatorPicker
+description: Check our "RadCalculatorPicker" documentation article for the RadCalculator WPF control.
 slug: radcalculatorpicker-gettingstarted
 tags: radcalculatorpicker
 published: True

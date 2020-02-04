@@ -1,7 +1,7 @@
 ---
 title: Read Only PropertyDefinition
 page_title: Read Only PropertyDefinition
-description: Read Only PropertyDefinition
+description: Check our "Read Only PropertyDefinition" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-howto-readonly-propertydefinitions
 tags: read,only,propertydefinition
 published: True

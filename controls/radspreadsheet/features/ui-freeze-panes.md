@@ -1,7 +1,7 @@
 ---
 title: Freeze Panes
 page_title: Freeze Panes
-description: Freeze Panes
+description: Check our "Freeze Panes" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-freeze-panes
 tags: freeze,panes
 published: True

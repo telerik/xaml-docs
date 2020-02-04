@@ -1,7 +1,7 @@
 ---
 title: Highlight Behavior
 page_title: Highlight Behavior
-description: Highlight Behavior
+description: Check our "Highlight Behavior" documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-features-highlightbehavior
 tags: highlight,behavior
 published: True

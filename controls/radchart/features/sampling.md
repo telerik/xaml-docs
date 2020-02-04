@@ -1,7 +1,7 @@
 ---
 title: Sampling
 page_title: Sampling
-description: Sampling
+description: Check our "Sampling" documentation article for the RadChart WPF control.
 slug: radchart-features-sampling
 tags: sampling
 published: True

@@ -1,7 +1,7 @@
 ---
 title: LineSeries
 page_title: LineSeries
-description: LineSeries
+description: Check our "LineSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-lineseries
 tags: lineseries
 published: True

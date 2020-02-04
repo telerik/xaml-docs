@@ -1,7 +1,7 @@
 ---
 title: Enable Only Drop Inside
 page_title: Enable Only Drop Inside
-description: Enable Only Drop Inside
+description: Check our "Enable Only Drop Inside" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-enabled-drop-inside-only
 tags: enable,only,drop,inside
 published: True

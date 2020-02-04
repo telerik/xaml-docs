@@ -1,7 +1,7 @@
 ---
 title: Negative Values
 page_title: Negative Values
-description: Negative Values
+description: Check our "Negative Values" documentation article for the RadChart WPF control.
 slug: radchart-features-negative-values
 tags: negative,values
 published: True

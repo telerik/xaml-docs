@@ -1,7 +1,7 @@
 ---
 title: Toggle Button
 page_title: Toggle Button
-description: Toggle Button
+description: Check our "Toggle Button" documentation article for the RadButtons WPF control.
 slug: radbuttons-features-toggle-button
 tags: toggle,button
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Keyboard and Mouse support
 page_title: Keyboard and Mouse support
-description: Keyboard and Mouse support
+description: Check our "Keyboard and Mouse support" documentation article for the RadSlider WPF control.
 slug: radslider-keyboard-mouse-support
 tags: keyboard,and,mouse,support
 published: True

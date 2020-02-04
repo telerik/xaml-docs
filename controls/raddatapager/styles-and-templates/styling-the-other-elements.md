@@ -1,7 +1,7 @@
 ---
 title: Styling the Other Elements
 page_title: Styling the Other Elements
-description: Styling the Other Elements
+description: Check our "Styling the Other Elements" documentation article for the RadDataPager WPF control.
 slug: raddatapager-styles-and-templates-styling-the-other-elements
 tags: styling,the,other,elements
 published: True

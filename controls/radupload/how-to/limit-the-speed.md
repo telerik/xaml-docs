@@ -1,7 +1,7 @@
 ---
 title: Limit the Upload Speed
 page_title: Limit the Upload Speed
-description: Limit the Upload Speed
+description: Check our "Limit the Upload Speed" documentation article for the RadUpload WPF control.
 slug: radupload-how-to-limit-the-upload-speed
 tags: limit,the,upload,speed
 published: True

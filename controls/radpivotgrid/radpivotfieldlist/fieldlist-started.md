@@ -1,7 +1,7 @@
 ---
 title: Adding RadPivotFieldList to your project
 page_title: Adding RadPivotFieldList to your project
-description: Adding RadPivotFieldList to your project
+description: Check our "Adding RadPivotFieldList to your project" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-fieldlist-started
 tags: adding,radpivotfieldlist,to,your,project
 published: True

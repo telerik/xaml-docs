@@ -1,7 +1,7 @@
 ---
 title: Styling the Items and Groups
 page_title: Styling the Items and Groups
-description: Styling the Items and Groups
+description: Check our "Styling the Items and Groups" documentation article for the RadTimeBar WPF control.
 slug: radtimebar-styling-the-items-and-groups
 tags: styling,the,items,and,groups
 published: True

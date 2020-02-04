@@ -1,7 +1,7 @@
 ---
 title: Cross-Reference
 page_title: Cross-Reference
-description: Cross-Reference
+description: Check our "Cross-Reference" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-cross-reference
 tags: cross-reference
 published: True

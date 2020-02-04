@@ -1,7 +1,7 @@
 ---
 title: Reordering the Items
 page_title: Reordering the Items
-description: Reordering the Items
+description: Check our "Reordering the Items" documentation article for the RadTaskBoard WPF control.
 slug: radtaskborad-features-reordering-items
 tags: reordering,the,task,drag-drop
 published: True

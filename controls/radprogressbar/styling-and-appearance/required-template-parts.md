@@ -1,7 +1,7 @@
 ---
 title: Required Parts
 page_title: Required Parts
-description: Required Parts
+description: Check our "Required Parts" documentation article for the RadProgressBar WPF control.
 slug: radprogressbar-required-template-parts
 tags: required,parts
 published: True

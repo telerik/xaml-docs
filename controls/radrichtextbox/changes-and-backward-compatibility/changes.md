@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-changes
 tags: changes
 published: True

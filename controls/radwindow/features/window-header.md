@@ -1,7 +1,7 @@
 ---
 title: Window Header
 page_title: Window Header
-description: Window Header
+description: Check our "Window Header" documentation article for the RadWindow WPF control.
 slug: radwindow-features-window-header
 tags: window,header
 published: True

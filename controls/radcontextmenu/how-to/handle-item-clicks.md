@@ -1,7 +1,7 @@
 ---
 title: Handle Item Clicks
 page_title: Handle Item Clicks
-description: Handle Item Clicks
+description: Check our "Handle Item Clicks" documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-how-to-handle-item-clicks
 tags: handle,item,clicks
 published: True

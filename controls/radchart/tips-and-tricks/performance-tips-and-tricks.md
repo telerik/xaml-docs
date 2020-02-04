@@ -1,7 +1,7 @@
 ---
 title: Performance Tips and Tricks
 page_title: Performance Tips and Tricks
-description: Performance Tips and Tricks
+description: Check our "Performance Tips and Tricks" documentation article for the RadChart WPF control.
 slug: radchart-performance-tips-and-tricks
 tags: performance,tips,and,tricks
 published: True

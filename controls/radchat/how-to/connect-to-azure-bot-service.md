@@ -1,7 +1,7 @@
 ---
 title: Connect to Azure Bot Service 
 page_title: Connect to Azure Bot Service 
-description: Connect to Azure Bot Service 
+description: Check our "Connect to Azure Bot Service" documentation article for the RadChat WPF control.
 slug: chat-azure-bot-service
 tags: azure, service
 published: True

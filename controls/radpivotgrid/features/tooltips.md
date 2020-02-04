@@ -1,7 +1,7 @@
 ---
 title: ToolTips
 page_title: ToolTips
-description: ToolTips
+description: Check our "ToolTips" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-tooltips
 tags: tooltips
 published: True

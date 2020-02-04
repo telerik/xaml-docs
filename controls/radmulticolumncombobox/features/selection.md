@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: Check our "Selection" documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-selection
 tags: selection
 published: True

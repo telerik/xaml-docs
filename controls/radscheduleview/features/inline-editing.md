@@ -1,7 +1,7 @@
 ---
 title: Inline Editing
 page_title: Inline Editing
-description: Inline Editing
+description: Check our "Inline Editing" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-inline-editing
 tags: inline,editing
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-changes
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: End User Manual
 page_title: End User Manual
-description: End User Manual
+description: Check our "End User Manual" documentation article for the RadDataFilter WPF control.
 slug: datafilter-end-user-manual
 tags: end,user,manual
 published: True

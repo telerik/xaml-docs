@@ -1,7 +1,7 @@
 ---
 title: Filtering through RadGridView
 page_title: Filtering through RadGridView
-description: Filtering through RadGridView
+description: Check our "Filtering through RadGridView" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-filtering-filtering-through-radgridview
 tags: filtering,through,radgridview
 published: True

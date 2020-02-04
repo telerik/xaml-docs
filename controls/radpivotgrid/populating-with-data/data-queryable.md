@@ -1,7 +1,7 @@
 ---
 title: Using QueryableDataProvider
 page_title: Using QueryableDataProvider
-description: Using QueryableDataProvider
+description: Check our "Using QueryableDataProvider" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-data-queryable
 tags: using,queryabledataprovider
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Retain Pane Size
 page_title: Retain Pane Size
-description: Retain Pane Size
+description: Check our "Retain Pane Size" documentation article for the RadDocking WPF control.
 slug: raddocking-features-retain-pane-size
 tags: retain,size,pane
 published: True

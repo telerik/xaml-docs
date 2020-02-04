@@ -1,7 +1,7 @@
 ---
 title: Creating a Custom Theme for the RadChart
 page_title: Creating a Custom Theme for the RadChart
-description: Creating a Custom Theme for the RadChart
+description: Check our "Creating a Custom Theme for the RadChart" documentation article for the RadChart WPF control.
 slug: radchart-styles-and-templates-creating-custom-theme-for-radchart
 tags: creating,a,custom,theme,for,the,radchart
 published: True

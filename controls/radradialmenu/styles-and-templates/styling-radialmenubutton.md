@@ -1,7 +1,7 @@
 ---
 title: Styling the RadialMenuButton
 page_title: Styling the RadialMenuButton
-description: Styling the RadialMenuButton
+description: Check our "Styling the RadialMenuButton" documentation article for the RadRadialMenu WPF control.
 slug: radradialmenu-styles-and-templates-styling-radialmenubutton
 tags: styling,the,radialmenubutton
 published: True

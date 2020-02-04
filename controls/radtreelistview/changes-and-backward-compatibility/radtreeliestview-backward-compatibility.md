@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Backward Compatibility
+description: Check our "Backward Compatibility" documentation article for the RadTreeListView WPF control.
 slug: radtreeliestview-backward-compatibility
 tags: backward,compatibility
 published: True

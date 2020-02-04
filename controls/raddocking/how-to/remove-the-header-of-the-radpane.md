@@ -1,7 +1,7 @@
 ---
 title: How to Remove the Header of the RadPane
 page_title: How to Remove the Header of the RadPane
-description: How to Remove the Header of the RadPane
+description: Check our "How to Remove the Header of the RadPane" documentation article for the RadDocking WPF control.
 slug: raddocking-how-to-remove-the-header-of-the-radpane
 tags: how,to,remove,the,header,of,the,radpane
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Quick Access Toolbar
 page_title: Quick Access Toolbar
-description: Quick Access Toolbar
+description: Check our "Quick Access Toolbar" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-qat
 tags: quick,access,toolbar
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Click Modes
 page_title: Click Modes
-description: Click Modes
+description: Check our "Click Modes" documentation article for the RadMap WPF control.
 slug: radmap-features-click-modes
 tags: click,modes
 published: True

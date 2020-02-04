@@ -1,7 +1,7 @@
 ---
 title: Scrolling into View
 page_title: Scrolling into View
-description: Scrolling into View
+description: Check our "Scrolling into View" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-scrolling
 tags: scrolling,into,view
 published: True

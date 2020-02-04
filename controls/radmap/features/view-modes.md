@@ -1,7 +1,7 @@
 ---
 title: View Modes
 page_title: View Modes
-description: View Modes
+description: Check our "View Modes" documentation article for the RadMap WPF control.
 slug: radmap-features-view-modes
 tags: view,modes
 published: False

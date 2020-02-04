@@ -1,7 +1,7 @@
 ---
 title: Animations
 page_title: Animations
-description: Animations
+description: Check our "Animations" documentation article for the RadChartView WPF control.
 slug: radchartview-features-animations
 tags: Animations
 published: True

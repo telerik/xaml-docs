@@ -1,7 +1,7 @@
 ---
 title: Hide the Buttons
 page_title: Hide the Buttons
-description: Hide the Buttons
+description: Check our "Hide the Buttons" documentation article for the RadUpload WPF control.
 slug: radupload-how-to-hide-the-buttons
 tags: hide,the,buttons
 published: True

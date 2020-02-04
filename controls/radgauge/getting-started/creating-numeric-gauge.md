@@ -1,7 +1,7 @@
 ---
 title: Creating Numeric Gauge
 page_title: Creating Numeric Gauge
-description: Creating Numeric Gauge
+description: Check our "Creating Numeric Gauge" documentation article for the RadGauge WPF control.
 slug: radgauge-getting-started-creating-numeric-gauge
 tags: creating,numeric,gauge
 published: True

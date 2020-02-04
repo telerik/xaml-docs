@@ -1,7 +1,7 @@
 ---
 title: Enable\Disable RadComboBoxItems
 page_title: Enable\Disable RadComboBoxItems
-description: Enable\Disable RadComboBoxItems
+description: Check our "Enable\Disable RadComboBoxItems" documentation article for the RadComboBox WPF control.
 slug: radcombobox-howto-enable-disable-radcombobox-items
 tags: enable\disable,radcomboboxitems
 published: True

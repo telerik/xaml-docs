@@ -1,7 +1,7 @@
 ---
 title: Current Page
 page_title: Current Page
-description: Current Page
+description: Check our "Current Page" documentation article for the RadDataPager WPF control.
 slug: raddatapager-features-current-page
 tags: current,page
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Ribbon ToggleButton
 page_title: Ribbon ToggleButton
-description: Ribbon ToggleButton
+description: Check our "Ribbon ToggleButton" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-toggle-button
 tags: ribbon,togglebutton
 published: True

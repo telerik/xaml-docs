@@ -1,7 +1,7 @@
 ---
 title: Mouse Tools
 page_title: Mouse Tools
-description: Mouse Tools
+description: Check our "Mouse Tools" documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-mouse-tools
 tags: mouse,tools
 published: True

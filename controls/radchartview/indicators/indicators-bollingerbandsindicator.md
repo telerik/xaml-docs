@@ -1,7 +1,7 @@
 ---
 title: BollingerBandsIndicator
 page_title: BollingerBandsIndicator
-description: BollingerBandsIndicator
+description: Check our "BollingerBandsIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-bollingerbandsindicator
 tags: financial, indicators, bollingerbandsindicator
 publish: True

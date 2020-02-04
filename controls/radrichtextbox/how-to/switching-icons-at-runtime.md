@@ -1,7 +1,7 @@
 ---
 title:  Switching Icons at Runtime
 page_title:  Switching Icons at Runtime
-description:  Switching Icons at Runtime
+description: Check our "Switching Icons at Runtime" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-how-to-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True

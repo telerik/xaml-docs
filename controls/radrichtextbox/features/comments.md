@@ -1,7 +1,7 @@
 ---
 title: Comments
 page_title: Comments
-description: Comments
+description: Check our "Comments" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-comments
 tags: comments
 published: True

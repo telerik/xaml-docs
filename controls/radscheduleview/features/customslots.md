@@ -1,7 +1,7 @@
 ---
 title: Custom Slots
 page_title: Custom Slots
-description: Custom Slots
+description: Check our "Custom Slots" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-customslots
 tags: custom,slots
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Save/Load Settings
 page_title: Save/Load Settings
-description: Save/Load Settings
+description: Check our "Save/Load Settings" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-how-to-filter-save-load
 tags: datafilter, save, load, settings
 published: True

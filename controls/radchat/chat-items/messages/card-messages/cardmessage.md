@@ -1,7 +1,7 @@
 ---
 title: CardMessage
 page_title: CardMessage
-description: CardMessage
+description: Check our "CardMessage" documentation article for the RadChat WPF control.
 slug: chat-items-cardmessage
 tags: messages,cardmessage
 published: True

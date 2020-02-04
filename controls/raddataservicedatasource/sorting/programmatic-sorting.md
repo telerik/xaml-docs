@@ -1,7 +1,7 @@
 ---
 title: Programmatic Sorting
 page_title: Programmatic Sorting
-description: Programmatic Sorting
+description: Check our "Programmatic Sorting" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-sorting-programmatic-sorting
 tags: programmatic,sorting
 published: True

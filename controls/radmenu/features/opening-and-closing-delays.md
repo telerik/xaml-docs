@@ -1,7 +1,7 @@
 ---
 title: Opening and Closing Delays
 page_title: Opening and Closing Delays
-description: Opening and Closing Delays
+description: Check our "Opening and Closing Delays" documentation article for the RadMenu WPF control.
 slug: radmenu-features-opening-and-closing-delays
 tags: opening,and,closing,delays
 published: True

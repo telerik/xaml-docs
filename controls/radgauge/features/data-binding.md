@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Data Binding
+description: Check our "Data Binding" documentation article for the RadGauge WPF control.
 slug: radgauge-features-data-binding
 tags: data,binding
 published: True

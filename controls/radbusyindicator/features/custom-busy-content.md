@@ -1,7 +1,7 @@
 ---
 title: Custom Busy Content
 page_title: Custom Busy Content
-description: Custom Busy Content
+description: Check our "Custom Busy Content" documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-features-custom-busy-content
 tags: custom,busy,content
 published: True

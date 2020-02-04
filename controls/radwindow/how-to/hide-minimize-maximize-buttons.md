@@ -1,7 +1,7 @@
 ---
 title: Hide the Maximize and Minimize buttons
 page_title: Hide the Maximize and Minimize buttons
-description: Hide the Maximize and Minimize buttons
+description: Check our "Hide the Maximize and Minimize buttons" documentation article for the RadWindow WPF control.
 slug: radwindow-how-to-hide-minimize-maximize-buttons
 tags: hide,the,maximize,and,minimize,buttons
 published: True

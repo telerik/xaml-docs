@@ -1,7 +1,7 @@
 ---
 title: Creating Linear Gauge
 page_title: Creating Linear Gauge
-description: Creating Linear Gauge
+description: Check our "Creating Linear Gauge" documentation article for the RadGauge WPF control.
 slug: radgauge-getting-started-creating-linear-gauge
 tags: creating,linear,gauge
 published: True

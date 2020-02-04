@@ -1,7 +1,7 @@
 ---
 title: Navigation
 page_title: Navigation
-description: Navigation
+description: Check our "Navigation" documentation article for the RadChart WPF control.
 slug: radchart-features-drill-down-navigation
 tags: navigation
 published: True

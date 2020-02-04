@@ -1,7 +1,7 @@
 ---
 title: Styling RadDataPager
 page_title: Styling RadDataPager
-description: Styling RadDataPager
+description: Check our "Styling RadDataPager" documentation article for the RadDataPager WPF control.
 slug: raddatapager-styles-and-templates-styling-the-raddatapager
 tags: styling,the,raddatapager
 published: True

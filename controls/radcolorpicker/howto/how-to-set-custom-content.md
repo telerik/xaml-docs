@@ -1,7 +1,7 @@
 ---
 title: Set Custom Content
 page_title: Set Custom Content
-description: Set Custom Content
+description: Check our "Set Custom Content" documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-how-to-set-custom-content
 tags: set,custom,content
 published: True

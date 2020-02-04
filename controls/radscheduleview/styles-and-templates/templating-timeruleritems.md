@@ -1,7 +1,7 @@
 ---
 title: Templating the TimeRulerItems
 page_title: Templating the TimeRulerItems
-description: Templating the TimeRulerItems
+description: Check our "Templating the TimeRulerItems" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-templating-timeruleritems
 tags: templates,timeruleritems
 published: True

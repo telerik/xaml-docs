@@ -1,7 +1,7 @@
 ---
 title: Template Structure
 page_title: Template Structure
-description: Template Structure
+description: Check our "Template Structure" documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-styles-and-templates-template-structure
 tags: template,structure
 published: True

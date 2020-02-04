@@ -1,7 +1,7 @@
 ---
 title: Defining Custom DataFields
 page_title: Defining Custom DataFields
-description: Defining Custom DataFields
+description: Check our "Defining Custom DataFields" documentation article for the RadDataForm WPF control.
 slug: raddataform-defining-custom-datafields
 tags: defining,custom,datafields
 published: True

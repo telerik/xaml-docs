@@ -1,7 +1,7 @@
 ---
 title: PathButton
 page_title: PathButton
-description: PathButton
+description: Check our "PathButton" documentation article for the RadButtons WPF control.
 slug: radbuttons-features-pathbutton
 tags: pathbutton
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our "Events" documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-events
 tags: events
 published: True

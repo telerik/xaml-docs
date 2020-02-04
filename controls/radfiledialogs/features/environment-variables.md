@@ -1,7 +1,7 @@
 ---
 title: Environment Variables Support
 page_title: Environment Variables Support
-description: Environment Variables Support
+description: Check our "Environment Variables Support" documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-environment-variables
 tags: environment,variables
 published: True

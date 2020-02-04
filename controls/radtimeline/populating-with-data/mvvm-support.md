@@ -1,7 +1,7 @@
 ---
 title: MVVM support
 page_title: MVVM support
-description: MVVM support
+description: Check our "MVVM support" documentation article for the RadTimeline WPF control.
 slug: radtimeline-mvvm-support
 tags: mvvm,support
 published: True

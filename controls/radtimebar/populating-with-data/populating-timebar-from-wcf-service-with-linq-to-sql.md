@@ -1,7 +1,7 @@
 ---
 title: Populating TimeBar from WCF service with LINQ to SQL
 page_title: Populating TimeBar from WCF service with LINQ to SQL
-description: Populating TimeBar from WCF service with LINQ to SQL
+description: Check our "Populating TimeBar from WCF service with LINQ to SQL" documentation article for the RadTimeBar WPF control.
 slug: radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql
 tags: populating,timebar,from,wcf,service,with,linq,to,sql
 published: True

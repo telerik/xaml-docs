@@ -1,7 +1,7 @@
 ---
 title: Ribbon SplitButton
 page_title: Ribbon SplitButton
-description: Ribbon SplitButton
+description: Check our "Ribbon SplitButton" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-split-button
 tags: ribbon,splitbutton
 published: True

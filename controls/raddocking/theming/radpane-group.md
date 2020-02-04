@@ -1,7 +1,7 @@
 ---
 title: Theming the RadPaneGroup
 page_title: Theming the RadPaneGroup
-description: Theming the RadPaneGroup
+description: Check our "Theming the RadPaneGroup" documentation article for the RadDocking WPF control.
 slug: raddocking-theming-radpane-group
 tags: theming,the,radpanegroup
 published: True

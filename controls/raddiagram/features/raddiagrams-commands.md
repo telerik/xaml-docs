@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Commands
+description: Check our "Commands" documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-commands
 tags: commands
 published: True

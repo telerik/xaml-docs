@@ -1,7 +1,7 @@
 ---
 title: Data Binding to Many Chart Areas
 page_title: Data Binding to Many Chart Areas
-description: Data Binding to Many Chart Areas
+description: Check our "Data Binding to Many Chart Areas" documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-data-binding-to-many-chart-areas
 tags: data,binding,to,many,chart,areas
 published: True

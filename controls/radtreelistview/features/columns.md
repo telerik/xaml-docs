@@ -1,7 +1,7 @@
 ---
 title: Columns
 page_title: Columns
-description: Columns
+description: Check our "Columns" documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-columns
 tags: columns
 published: True

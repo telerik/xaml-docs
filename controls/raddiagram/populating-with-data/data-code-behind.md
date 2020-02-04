@@ -1,7 +1,7 @@
 ---
 title: In Code-Behind
 page_title: In Code-Behind
-description: In Code-Behind
+description: Check our "In Code-Behind" documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-code-behind
 tags: in,code-behind
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Fullscreen
 page_title: Fullscreen
-description: Fullscreen
+description: Check our "Fullscreen" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-fullscreen
 tags: fullscreen
 publish: True

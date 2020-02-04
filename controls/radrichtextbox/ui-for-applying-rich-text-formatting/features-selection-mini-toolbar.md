@@ -1,7 +1,7 @@
 ---
 title: Selection Mini Tool Bar
 page_title: Selection Mini Tool Bar
-description: Selection Mini Tool Bar
+description: Check our "Selection Mini Tool Bar" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-selection-mini-toolbar
 tags: selection,mini,tool,bar
 published: True

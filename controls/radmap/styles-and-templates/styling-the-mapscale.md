@@ -1,7 +1,7 @@
 ---
 title: Styling the MapScale
 page_title: Styling the MapScale
-description: Styling the MapScale
+description: Check our "Styling the MapScale" documentation article for the RadMap WPF control.
 slug: radmap-styles-and-templates-styling-the-mapscale
 tags: styling,the,mapscale
 published: True

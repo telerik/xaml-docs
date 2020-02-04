@@ -1,7 +1,7 @@
 ---
 title: Customize the Rotation Step
 page_title: Customize the Rotation Step
-description: Customize the Rotation Step
+description: Check our "Customize the Rotation Step" documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-customize-rotation
 tags: customize,the,rotation,step
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Key Features
+description: Check our "Key Features" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-key-features
 tags: key,features
 published: True

@@ -1,7 +1,7 @@
 ---
 title:  Update Current Color in UI
 page_title:  Update Current Color in UI
-description:  Update Current Color in UI
+description: Check our "Update Current Color in UI" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-how-to-update-current-color-in-ui
 tags: update,current,color,in,ui
 published: True

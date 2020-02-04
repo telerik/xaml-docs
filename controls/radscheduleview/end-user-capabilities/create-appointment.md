@@ -1,7 +1,7 @@
 ---
 title: Create Appointment
 page_title: Create Appointment
-description: Create Appointment
+description: Check our "Create Appointment" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-end-user-capabilities-create-appointment
 tags: create,appointment
 published: True

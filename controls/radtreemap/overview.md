@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadTreeMap WPF control.
 slug: radtreemap-overview
 tags: overview
 published: True

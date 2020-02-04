@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Controlling Appearance
+description: Check our "Controlling Appearance" documentation article for the RadComboBox WPF control.
 slug: radcombobox-styles-templates-controlling-appearance
 tags: controlling,appearance
 published: True

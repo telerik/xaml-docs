@@ -1,7 +1,7 @@
 ---
 title: Throwing Validation Exceptions
 page_title: Throwing Validation Exceptions
-description: Throwing Validation Exceptions
+description: Check our "Throwing Validation Exceptions" documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-validation
 tags: throwing,validation,exceptions
 published: True

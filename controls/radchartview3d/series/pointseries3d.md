@@ -1,7 +1,7 @@
 ---
 title: PointSeries3D
 page_title: PointSeries3D
-description: PointSeries3D
+description: Check our "PointSeries3D" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-pointseries3d
 tags: axes, 3d, chartview, pointseries, sphere
 published: True

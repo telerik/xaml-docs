@@ -1,7 +1,7 @@
 ---
 title: Get the Resource of the Clicked Slot/Appointment
 page_title: Get the Resource of the Clicked Slot/Appointment
-description: Get the Resource of the Clicked Slot/Appointment
+description: Check our "Get the Resource of the Clicked Slot/Appointment" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-get-resource-from-clicked-slot
 tags: get,the,resource,of,the,clicked,slot/appointment
 published: True

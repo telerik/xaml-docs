@@ -1,7 +1,7 @@
 ---
 title: Iterate Through TreeViewItems
 page_title: Iterate Through TreeViewItems
-description: Iterate Through TreeViewItems
+description: Check our "Iterate Through TreeViewItems" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-iterate-through-treeviewitems
 tags: iterate,through,treeviewitems
 published: True

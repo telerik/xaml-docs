@@ -1,7 +1,7 @@
 ---
 title: Integration with Content Controls
 page_title: Integration with Content Controls
-description: Integration with Content Controls
+description: Check our "Integration with Content Controls" documentation article for the RadTransitionControl WPF control.
 slug: radtransition-features-integration-with-content-controls
 tags: integration,with,content,controls
 published: True

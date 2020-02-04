@@ -1,7 +1,7 @@
 ---
 title: Commands Support
 page_title: Commands Support
-description: Commands Support
+description: Check our "Commands Support" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-features-commands-support
 tags: commands,support
 published: True

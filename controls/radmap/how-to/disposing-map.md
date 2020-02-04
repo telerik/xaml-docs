@@ -1,7 +1,7 @@
 ---
 title: Disposing RadMap
 page_title: Disposing RadMap
-description: Disposing RadMap
+description: Check our "Disposing RadMap" documentation article for the RadMap WPF control.
 slug: radmap-how-to-dispose-radmap
 tags: dispose,release,memory,clear,resources
 published: True

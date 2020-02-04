@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadUpload WPF control.
 slug: radupload-changes
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customize the TreeViewDragVisual
 page_title: Customize the TreeViewDragVisual
-description: Customize the TreeViewDragVisual
+description: Check our "Customize the TreeViewDragVisual" documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-customize-treeviewdragvisual
 tags: radtreeview,customize,treeviewdragvisual,drag,visual,treeview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling
 page_title: Styling
-description: Styling
+description: Check our "Styling" documentation article for the RadTimePicker WPF control.
 slug: radtimepicker-styling
 tags: styling
 published: False

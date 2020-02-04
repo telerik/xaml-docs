@@ -1,7 +1,7 @@
 ---
 title: Camera
 page_title: Camera
-description: Camera
+description: Check our "Camera" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-camera
 tags: camera, chartview, 3d, scene
 published: True

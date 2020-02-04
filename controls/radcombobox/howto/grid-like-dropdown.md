@@ -1,7 +1,7 @@
 ---
 title: Get a Grid Like Dropdown
 page_title: Get a Grid Like Dropdown
-description: Get a Grid Like Dropdown
+description: Check our "Get a Grid Like Dropdown" documentation article for the RadComboBox WPF control.
 slug: radcombobox-grid-like-dropdown
 tags: get,a,grid,like,dropdown
 published: False

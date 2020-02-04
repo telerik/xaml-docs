@@ -1,7 +1,7 @@
 ---
 title: Appointment Template
 page_title: Appointment Template
-description: Appointment Template
+description: Check our "Appointment Template" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-appointment-template
 tags: appointment,template
 published: True

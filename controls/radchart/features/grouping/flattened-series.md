@@ -1,7 +1,7 @@
 ---
 title: Flattened Series
 page_title: Flattened Series
-description: Flattened Series
+description: Check our "Flattened Series" documentation article for the RadChart WPF control.
 slug: radchart-features-flattened-series
 tags: flattened,series
 published: True

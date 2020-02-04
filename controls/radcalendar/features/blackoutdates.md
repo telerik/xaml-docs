@@ -1,7 +1,7 @@
 ---
 title: BlackoutDates
 page_title: BlackoutDates
-description: BlackoutDates
+description: Check our "BlackoutDates" documentation article for the RadCalendar WPF control.
 slug: radcalendar-features-blackoutdates
 tags: blackoutdates
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Use MVVM in RadDiagram
 page_title: Use MVVM in RadDiagram
-description: Use MVVM in RadDiagram
+description: Check our "Use MVVM in RadDiagram" documentation article for the RadDiagram WPF control.
 slug: raddiagrams-howto-mvvm
 tags: use,mvvm,in,raddiagram
 published: True

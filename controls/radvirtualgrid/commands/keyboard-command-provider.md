@@ -1,7 +1,7 @@
 ---
 title: Keyboard Command Provider
 page_title: Keyboard Command Provider
-description: Keyboard Command Provider
+description: Check our "Keyboard Command Provider" documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-commands-keyboard-command-provider
 tags: commands, keyboard, command, provider
 published: True

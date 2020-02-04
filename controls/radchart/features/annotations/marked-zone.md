@@ -1,7 +1,7 @@
 ---
 title: Marked Zone
 page_title: Marked Zone
-description: Marked Zone
+description: Check our "Marked Zone" documentation article for the RadChart WPF control.
 slug: radchart-features-annotations-marked-zone
 tags: marked,zone
 published: True

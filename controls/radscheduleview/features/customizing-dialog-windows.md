@@ -1,7 +1,7 @@
 ---
 title: Customizing Dialog Windows
 page_title: Customizing Dialog Windows
-description: Customizing Dialog Windows
+description: Check our "Customizing Dialog Windows" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-customizing-dialog-windows
 tags: customizing,dialog,windows
 published: True

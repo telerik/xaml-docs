@@ -1,7 +1,7 @@
 ---
 title: Aggregate Functions
 page_title: Aggregate Functions
-description: Aggregate Functions
+description: Check our "Aggregate Functions" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-aggregation-functions
 tags: aggregate,functions
 published: True

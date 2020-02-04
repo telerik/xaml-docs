@@ -1,7 +1,7 @@
 ---
 title: Open File Dialog
 page_title: Open File Dialog
-description: Open File Dialog
+description: Check our "Open File Dialog" documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-custom-open-file-dialog
 tags: open,file,dialog
 published: True

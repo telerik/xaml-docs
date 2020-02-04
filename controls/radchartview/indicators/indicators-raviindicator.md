@@ -1,7 +1,7 @@
 ---
 title: RaviIndicator
 page_title: RaviIndicator
-description: RaviIndicator
+description: Check our "RaviIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-raviindicator
 tags: financial, indicators, raviindicator
 publish: True

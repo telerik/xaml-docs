@@ -1,7 +1,7 @@
 ---
 title: Groups
 page_title: Groups
-description: Groups
+description: Check our "Groups" documentation article for the RadGauge WPF control.
 slug: radgauge-features-groups
 tags: groups
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadWatermarkTextBox WPF control.
 slug: watermarktextbox-getting-started
 tags: getting,started
 published: True

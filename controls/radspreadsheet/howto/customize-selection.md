@@ -1,7 +1,7 @@
 ---
 title: Customize Selection
 page_title: Customize Selection
-description: Customize Selection
+description: Check our "Customize Selection" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-howto-customize-selection
 tags: customize,selection
 published: True

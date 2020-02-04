@@ -1,7 +1,7 @@
 ---
 title: Backwards Compatibility
 page_title: Backwards Compatibility
-description: Backwards Compatibility
+description: Check our "Backwards Compatibility" documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-changes-backward-compatibility
 tags: backwards,compatibility
 published: True

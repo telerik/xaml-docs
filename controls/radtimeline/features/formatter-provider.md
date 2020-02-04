@@ -1,7 +1,7 @@
 ---
 title: Formatter Provider
 page_title: Formatter Provider
-description: Formatter Provider
+description: Check our "Formatter Provider" documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-formatter-provider
 tags: formatter,provider
 published: True

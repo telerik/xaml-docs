@@ -1,7 +1,7 @@
 ---
 title: DataBinding Support Overview
 page_title: DataBinding Support Overview
-description: DataBinding Support Overview
+description: Check our "DataBinding Support Overview" documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-binding-support-overview
 tags: databinding,support,overview
 published: True

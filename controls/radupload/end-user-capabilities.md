@@ -1,7 +1,7 @@
 ---
 title: End-User Capabilities
 page_title: End-User Capabilities
-description: End-User Capabilities
+description: Check our "End-User Capabilities" documentation article for the RadUpload WPF control.
 slug: radupload-end-user-capabilities
 tags: end-user,capabilities
 published: True

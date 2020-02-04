@@ -1,7 +1,7 @@
 ---
 title: Personalize the File Storage
 page_title: Personalize the File Storage
-description: Personalize the File Storage
+description: Check our "Personalize the File Storage" documentation article for the RadUpload WPF control.
 slug: radupload-how-to-personalize-the-file-storage
 tags: personalize,the,file,storage
 published: True

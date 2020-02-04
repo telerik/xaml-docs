@@ -1,7 +1,7 @@
 ---
 title: RadCloudUploadListItem
 page_title: RadCloudUploadListItem
-description: RadCloudUploadListItem
+description: Check our "RadCloudUploadListItem" documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-radclouduploadlistitem
 tags: radclouduploadlistitem
 published: True

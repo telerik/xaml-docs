@@ -1,7 +1,7 @@
 ---
 title: BarSeries3D
 page_title: BarSeries3D
-description: BarSeries3D
+description: Check our "BarSeries3D" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-barseries3d
 tags: axes, 3d, chartview, barseries, column, columnseries
 published: True

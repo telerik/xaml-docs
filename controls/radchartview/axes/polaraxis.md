@@ -1,7 +1,7 @@
 ---
 title: Polar Axis
 page_title: Polar Axis
-description: Polar Axis
+description: Check our "Polar Axis" documentation article for the RadChartView WPF control.
 slug: radchartview-axes-polaraxis
 tags: polar,axis
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Indicators Overview
 page_title: Indicators Overview
-description: Indicators Overview
+description: Check our "Indicators Overview" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-overview
 tags: financial, indicators
 publish: True

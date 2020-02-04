@@ -1,7 +1,7 @@
 ---
 title: NodeViewModelBase
 page_title: NodeViewModelBase
-description: NodeViewModelBase
+description: Check our "NodeViewModelBase" documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-nodeviewmodel
 tags: nodeviewmodelbase
 published: True

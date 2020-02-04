@@ -1,7 +1,7 @@
 ---
 title: Customize Chart Legend - Add ScrollViewer
 page_title: Customize Chart Legend - Add ScrollViewer
-description: Customize Chart Legend - Add ScrollViewer
+description: Check our "Customize Chart Legend - Add ScrollViewer" documentation article for the RadChart WPF control.
 slug: radchart-howto-customize-chart-legend-add-scrollviewer
 tags: customize,chart,legend,-,add,scrollviewer
 published: True

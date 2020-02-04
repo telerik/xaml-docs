@@ -1,7 +1,7 @@
 ---
 title: Orientation
 page_title: Orientation
-description: Orientation
+description: Check our "Orientation" documentation article for the RadProgressBar WPF control.
 slug: orientation
 tags: orientation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadNumericUpDown WPF control.
 slug: radnumericupdown-drag-and-drop
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Multiple Chart Areas
 page_title: Multiple Chart Areas
-description: Multiple Chart Areas
+description: Check our "Multiple Chart Areas" documentation article for the RadChart WPF control.
 slug: radchart-features-multiple-cahrt-areas
 tags: multiple,chart,areas
 published: True

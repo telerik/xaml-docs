@@ -1,7 +1,7 @@
 ---
 title: Intervals Formatters
 page_title: Intervals Formatters
-description: Intervals Formatters
+description: Check our "Intervals Formatters" documentation article for the RadTimeBar WPF control.
 slug: radtimebar-intervals-formatters
 tags: intervals,formatters
 published: True

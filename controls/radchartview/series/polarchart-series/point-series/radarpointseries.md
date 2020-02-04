@@ -1,7 +1,7 @@
 ---
 title: RadarPointSeries
 page_title: RadarPointSeries
-description: RadarPointSeries
+description: Check our "RadarPointSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-radarpointseries
 tags: radarpointseries
 published: True

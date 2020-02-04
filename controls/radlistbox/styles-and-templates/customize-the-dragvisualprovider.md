@@ -1,7 +1,7 @@
 ---
 title: How to customize the DragVisualProvider
 page_title: How to customize the DragVisualProvider
-description: How to customize the DragVisualProvider
+description: Check our "How to customize the DragVisualProvider" documentation article for the RadListBox WPF control.
 slug: radlistbox-styles-and-templates-customize-the-dragvisualprovider
 tags: how,to,customize,the,dragvisualprovider
 published: True

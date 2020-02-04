@@ -1,7 +1,7 @@
 ---
 title: Working with UI Selection
 page_title: Working with UI Selection
-description: Working with UI Selection
+description: Check our "Working with UI Selection" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True

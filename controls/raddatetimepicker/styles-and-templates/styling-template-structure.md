@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Check our "Templates Structure" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-styling-template-structure
 tags: templates,structure
 published: False

@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-changes
 tags: changes
 published: True

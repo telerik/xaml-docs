@@ -1,7 +1,7 @@
 ---
 title: RadWindowManager
 page_title: RadWindowManager
-description: RadWindowManager
+description: Check our "RadWindowManager" documentation article for the RadWindow WPF control.
 slug: radwindow-features-radiwindowmanager
 tags: radwindowmanager
 published: True

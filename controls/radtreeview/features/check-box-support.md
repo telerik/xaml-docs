@@ -1,7 +1,7 @@
 ---
 title: CheckBox Support
 page_title: CheckBox Support
-description: CheckBox Support
+description: Check our "CheckBox Support" documentation article for the RadTreeView WPF control.
 slug: check-box-support
 tags: checkbox,support
 published: True

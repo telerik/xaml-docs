@@ -1,7 +1,7 @@
 ---
 title: Buffering
 page_title: Buffering
-description: Buffering
+description: Check our "Buffering" documentation article for the RadUpload WPF control.
 slug: radupload-features-buffering
 tags: buffering
 published: True

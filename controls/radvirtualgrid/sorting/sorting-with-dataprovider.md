@@ -1,7 +1,7 @@
 ---
 title: Sorting with DataProvider
 page_title: Sorting with DataProvider
-description: Sorting with DataProvider
+description: Check our "Sorting with DataProvider" documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-sorting-dataprovider
 tags: sorting, dataprovider
 published: True

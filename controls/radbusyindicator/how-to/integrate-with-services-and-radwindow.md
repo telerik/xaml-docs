@@ -1,7 +1,7 @@
 ---
 title: Integrate with services and a RadWindow
 page_title: Integrate with services and a RadWindow
-description: Integrate with services and a RadWindow
+description: Check our "Integrate with services and a RadWindow" documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-how-to-integrate-with-services-and-radwindow
 tags: integrate,with,services,and,a,radwindow
 published: True

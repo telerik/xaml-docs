@@ -1,7 +1,7 @@
 ---
 title: Styling the Clock
 page_title: Styling the Clock
-description: Styling the Clock
+description: Check our "Styling the Clock" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-styling-clock-view
 tags: styling,the,clock
 published: True

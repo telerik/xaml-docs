@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Key Properties
+description: Check our "Key Properties" documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-key-properties
 tags: key,properties
 published: True

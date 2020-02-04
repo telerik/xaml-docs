@@ -1,7 +1,7 @@
 ---
 title: Printing
 page_title: Printing
-description: Printing
+description: Check our "Printing" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-printing
 tags: printing
 published: True

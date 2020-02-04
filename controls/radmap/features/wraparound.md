@@ -1,7 +1,7 @@
 ---
 title: Wraparound
 page_title: Wraparound
-description: Wraparound
+description: Check our "Wraparound" documentation article for the RadMap WPF control.
 slug: radmap-features-wraparound
 tags: wraparound, continuous, panning, horizontal, infinite
 published: True

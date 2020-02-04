@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadRating WPF control.
 slug: populating-overview
 tags: overview
 published: True

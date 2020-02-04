@@ -1,7 +1,7 @@
 ---
 title: Appointment Extensions
 page_title: Appointment Extensions
-description: Appointment Extensions
+description: Check our "Appointment Extensions" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-appointment-extensions
 tags: appointment,extensions
 published: True

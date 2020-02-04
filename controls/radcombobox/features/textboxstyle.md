@@ -1,7 +1,7 @@
 ---
 title: TextBoxStyle
 page_title: TextBoxStyle
-description: TextBoxStyle
+description: Check our "TextBoxStyle" documentation article for the RadComboBox WPF control.
 slug: radcombobox-features-textboxstyle
 tags: textboxstyle
 published: True

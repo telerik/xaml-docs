@@ -1,7 +1,7 @@
 ---
 title: Multiple Y axes
 page_title: Multiple Y axes
-description: Multiple Y axes
+description: Check our "Multiple Y axes" documentation article for the RadChart WPF control.
 slug: radchart-features-axes-multiple-y-axes
 tags: multiple,y,axes
 published: True

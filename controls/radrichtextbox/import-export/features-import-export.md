@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-import-export
 tags: import/export
 published: True

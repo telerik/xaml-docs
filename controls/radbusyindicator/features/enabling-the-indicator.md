@@ -1,7 +1,7 @@
 ---
 title: Enabling the Indicator
 page_title: Enabling the Indicator
-description: Enabling the Indicator
+description: Check our "Enabling the Indicator" documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-features-enabling-the-indicator
 tags: enabling,the,indicator
 published: True

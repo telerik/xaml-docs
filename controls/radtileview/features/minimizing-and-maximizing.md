@@ -1,7 +1,7 @@
 ---
 title: Minimizing And Maximizing
 page_title: Minimizing And Maximizing
-description: Minimizing And Maximizing
+description: Check our "Minimizing And Maximizing" documentation article for the RadTileView WPF control.
 slug: radtileview-minimizing-and-maximizing
 tags: minimizing,and,maximizing
 published: True

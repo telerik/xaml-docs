@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadDocking WPF control.
 slug: raddocking-getting-started2
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization
-description: UI Virtualization
+description: Check our "UI Virtualization" documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-ui-virtualization
 tags: ui,virtualization
 published: True

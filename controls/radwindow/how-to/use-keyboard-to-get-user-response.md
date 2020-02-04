@@ -1,7 +1,7 @@
 ---
 title: Use Keyboard to Get User Response
 page_title: Use Keyboard to Get User Response
-description: Use Keyboard to Get User Response
+description: Check our "Use Keyboard to Get User Response" documentation article for the RadWindow WPF control.
 slug: radwindow-how-to-use-keyboard-to-get-user-response
 tags: use,keyboard,to,get,user,response
 published: True

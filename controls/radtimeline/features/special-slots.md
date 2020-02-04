@@ -1,7 +1,7 @@
 ---
 title: Special Slots
 page_title: Special Slots
-description: Special Slots
+description: Check our "Special Slots" documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-special-slots
 tags: special,slots
 published: True

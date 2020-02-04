@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the TouchManager WPF control.
 slug: touchmanager-overview
 tags: overview,touch,manager,touchmanager
 published: True

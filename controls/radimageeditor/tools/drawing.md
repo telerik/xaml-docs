@@ -1,7 +1,7 @@
 ---
 title: Drawing
 page_title: Drawing
-description: Drawing
+description: Check our "Drawing" documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-tools-drawing
 tags: drawing
 published: True

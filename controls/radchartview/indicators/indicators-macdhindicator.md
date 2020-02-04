@@ -1,7 +1,7 @@
 ---
 title: MacdhIndicator
 page_title: MacdhIndicator
-description: MacdhIndicator
+description: Check our "MacdhIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-macdhindicator
 tags: financial, indicators, macdhindicator
 publish: True

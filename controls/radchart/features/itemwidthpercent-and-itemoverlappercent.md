@@ -1,7 +1,7 @@
 ---
 title: ItemWidthPercent and ItemOverlapPercent
 page_title: ItemWidthPercent and ItemOverlapPercent
-description: ItemWidthPercent and ItemOverlapPercent
+description: Check our "ItemWidthPercent and ItemOverlapPercent" documentation article for the RadChart WPF control.
 slug: radchart-features-itemwidthpercent-and-itemoverlappercent
 tags: itemwidthpercent,and,itemoverlappercent
 published: True

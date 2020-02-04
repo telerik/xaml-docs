@@ -1,7 +1,7 @@
 ---
 title: Use RadUpload in Medium Trust
 page_title: Use RadUpload in Medium Trust
-description: Use RadUpload in Medium Trust
+description: Check our "Use RadUpload in Medium Trust" documentation article for the RadUpload WPF control.
 slug: radupload-how-to-use-radupload-in-medium-trust
 tags: use,radupload,in,medium,trust
 published: True

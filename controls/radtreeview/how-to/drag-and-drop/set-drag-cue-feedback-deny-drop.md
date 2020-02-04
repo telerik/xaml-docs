@@ -1,7 +1,7 @@
 ---
 title: Set DragCue Feedback for Denying a Drop
 page_title: Set DragCue Feedback for Denying a Drop
-description: Set DragCue Feedback for Denying a Drop
+description: Check our "Set DragCue Feedback for Denying a Drop" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-set-drag-cue-feedback-deny-drop
 tags: set,dragcue,feedback,for,denying,a,drop
 published: True

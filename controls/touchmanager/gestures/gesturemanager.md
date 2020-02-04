@@ -1,7 +1,7 @@
 ---
 title: GestureManager
 page_title:  GestureManager | Gestures | TouchManager
-description: GestureManager
+description: Check our "GestureManager" documentation article for the TouchManager WPF control.
 slug: touchmanager-gesturemanager
 tags: gestures,touch,manager,touchmanager,gesturemanager
 published: True

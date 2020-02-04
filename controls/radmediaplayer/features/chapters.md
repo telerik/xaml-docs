@@ -1,7 +1,7 @@
 ---
 title: Chapters
 page_title: Chapters
-description: Chapters
+description: Check our "Chapters" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-chapters
 tags: chapters
 publish: True

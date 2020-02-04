@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check our "Visual Structure" documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-structure
 tags: visual,structure
 published: True

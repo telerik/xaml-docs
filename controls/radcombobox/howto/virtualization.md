@@ -1,7 +1,7 @@
 ---
 title: RadComboBox Virtualization
 page_title: RadComboBox Virtualization
-description: RadComboBox Virtualization
+description: Check our "RadComboBox Virtualization" documentation article for the RadComboBox WPF control.
 slug: radcombobox-howto-virtualization
 tags: radcombobox,virtualization
 published: True

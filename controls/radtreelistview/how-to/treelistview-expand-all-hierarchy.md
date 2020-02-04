@@ -1,7 +1,7 @@
 ---
 title: Expand all rows
 page_title: Expand all rows
-description: Expand all rows
+description: Check our "Expand all rows" documentation article for the RadTreeListView WPF control.
 slug: treelistview-expand-all-hierarchy
 tags: expand,all,rows
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Backward Compatibility
+description: Check our "Backward Compatibility" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-backward-compatibility
 tags: backward,compatibility
 publish: True

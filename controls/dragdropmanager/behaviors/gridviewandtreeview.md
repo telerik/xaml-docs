@@ -1,7 +1,7 @@
 ---
 title: Drag-drop between GridView and TreeView
 page_title: Drag-drop between GridView and TreeView
-description: Drag-drop between GridView and TreeView
+description: Check our "Drag-drop between GridView and TreeView" documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-behaviors-gridviewandtreeview
 tags: drag-drop,between,gridview,and,treeview
 published: True

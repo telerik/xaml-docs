@@ -1,7 +1,7 @@
 ---
 title: Filter Descriptors
 page_title: Filter Descriptors
-description: Filter Descriptors
+description: Check our "Filter Descriptors" documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-features-filter-descriptors
 tags: filter,descriptors
 published: True

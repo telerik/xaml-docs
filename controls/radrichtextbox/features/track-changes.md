@@ -1,7 +1,7 @@
 ---
 title: Track Changes
 page_title: Track Changes
-description: Track Changes
+description: Check our "Track Changes" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-track-changes
 tags: track,changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check our "Visual Structure" documentation article for the RadCollectionNavigator WPF control.
 slug: collectionnavigator_visual_struture
 tags: visual,structure
 published: True

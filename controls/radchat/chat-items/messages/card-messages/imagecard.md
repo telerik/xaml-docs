@@ -1,7 +1,7 @@
 ---
 title: ImageCard
 page_title: ImageCard
-description: ImageCard
+description: Check our "ImageCard" documentation article for the RadChat WPF control.
 slug: chat-items-imagecard
 tags: messages,imagecard
 published: True

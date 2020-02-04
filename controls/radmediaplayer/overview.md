@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-overview
 tags: overview
 publish: True

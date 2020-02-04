@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Title
 page_title: Styling the Axis Title
-description: Styling the Axis Title
+description: Check our "Styling the Axis Title" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axis-title
 tags: styling,the,axis,title
 published: True

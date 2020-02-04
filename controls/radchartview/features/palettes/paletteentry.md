@@ -1,7 +1,7 @@
 ---
 title: Palette Entry
 page_title: Palette Entry
-description: Palette Entry
+description: Check our "Palette Entry" documentation article for the RadChartView WPF control.
 slug: radchartview-features-palettes-paletteentry
 tags: palette,entry
 published: True

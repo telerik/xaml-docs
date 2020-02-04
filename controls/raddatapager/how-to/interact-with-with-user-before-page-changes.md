@@ -1,7 +1,7 @@
 ---
 title: Interact with the User before the Page Changes
 page_title: Interact with the User before the Page Changes
-description: Interact with the User before the Page Changes
+description: Check our "Interact with the User before the Page Changes" documentation article for the RadDataPager WPF control.
 slug: raddatapager-how-to-interact-with-with-user-before-page-changes
 tags: interact,with,the,user,before,the,page,changes
 published: True

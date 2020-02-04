@@ -1,7 +1,7 @@
 ---
 title: Left/Top/Right/Bottom Templates
 page_title: Left/Top/Right/Bottom Templates
-description: Left/Top/Right/Bottom Templates
+description: Check our "Left/Top/Right/Bottom Templates" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-left-top-right-bottom-templates
 tags: left/top/right/bottom,templates
 published: False

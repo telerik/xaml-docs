@@ -1,7 +1,7 @@
 ---
 title: How to Display Hierarchical Data
 page_title: How to Display Hierarchical Data
-description: How to Display Hierarchical Data
+description: Check our "How to Display Hierarchical Data" documentation article for the RadPanelBar WPF control.
 slug: howto-display-hierarchical-data
 tags: how,to,display,hierarchical,data
 published: True

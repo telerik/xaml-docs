@@ -1,7 +1,7 @@
 ---
 title: UriImageProvider
 page_title: UriImageProvider
-description: UriImageProvider
+description: Check our "UriImageProvider" documentation article for the RadMap WPF control.
 slug: radmap-features-uriimageprovider
 tags: uriimageprovider
 published: True

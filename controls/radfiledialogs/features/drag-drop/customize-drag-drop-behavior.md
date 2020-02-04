@@ -1,7 +1,7 @@
 ---
 title: Customizing Drag Drop Behavior
 page_title: Customizing Drag Drop Behavior
-description: Customizing Drag Drop Behavior
+description: Check our "Customizing Drag Drop Behavior" documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-dragdrop-customizing-drag-drop-behavior
 tags: features,dragdropbehavior,custom
 published: True

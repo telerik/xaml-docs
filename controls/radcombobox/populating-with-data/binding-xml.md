@@ -1,7 +1,7 @@
 ---
 title: Binding to XML
 page_title: Binding to XML
-description: Binding to XML
+description: Check our "Binding to XML" documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-binding-xml
 tags: binding,to,xml
 published: True

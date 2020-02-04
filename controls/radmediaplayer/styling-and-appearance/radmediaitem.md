@@ -1,7 +1,7 @@
 ---
 title: RadMediaItem
 page_title: RadMediaItem
-description: RadMediaItem
+description: Check our "RadMediaItem" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-radmediaitem
 tags: radmediaitem
 publish: True

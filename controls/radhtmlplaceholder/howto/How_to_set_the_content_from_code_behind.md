@@ -1,7 +1,7 @@
 ---
 title: How to set the content from code behind
 page_title: How to set the content from code behind
-description: How to set the content from code behind
+description: Check our "How to set the content from code behind" documentation article for the RadHtmlPlaceholder WPF control.
 slug: how_to_set_the_content_from_code_behind
 tags: how,to,set,the,content,from,code,behind
 published: True

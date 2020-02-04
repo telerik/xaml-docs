@@ -1,7 +1,7 @@
 ---
 title: Row Details
 page_title: Row Details
-description: Row Details
+description: Check our "Row Details" documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-row-details
 tags: row,details
 published: True

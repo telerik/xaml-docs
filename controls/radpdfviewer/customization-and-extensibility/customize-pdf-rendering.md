@@ -1,7 +1,7 @@
 ---
 title: Customize PDF Rendering
 page_title: Customize PDF Rendering
-description: Customize PDF Rendering
+description: Check our "Customize PDF Rendering" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-customize-pdf-rendering
 tags: customize,pdf,rendering
 published: True

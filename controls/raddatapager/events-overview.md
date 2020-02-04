@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our "Events" documentation article for the RadDataPager WPF control.
 slug: raddatapager-events-overview
 tags: events
 published: True

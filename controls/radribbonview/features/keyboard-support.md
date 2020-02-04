@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Keyboard Support
+description: Check our "Keyboard Support" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-keyboard-support
 tags: keyboard,support,keytips,iskeytipsenabled,iskeyboardnavigationenabled
 published: True

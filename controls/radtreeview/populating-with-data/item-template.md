@@ -1,7 +1,7 @@
 ---
 title: ItemTemplate
 page_title: ItemTemplate
-description: ItemTemplate
+description: Check our "ItemTemplate" documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-item-template
 tags: itemtemplate
 published: True

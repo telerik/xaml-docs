@@ -1,7 +1,7 @@
 ---
 title: SelectionBoxTemplate
 page_title: SelectionBoxTemplate
-description: SelectionBoxTemplate
+description: Check our "SelectionBoxTemplate" documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-selectionbox
 tags: selectionboxtemplate
 published: True

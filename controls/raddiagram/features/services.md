@@ -1,7 +1,7 @@
 ---
 title: Services
 page_title: Services
-description: Services
+description: Check our "Services" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-services
 tags: services
 published: True

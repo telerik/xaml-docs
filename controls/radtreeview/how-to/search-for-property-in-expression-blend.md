@@ -1,7 +1,7 @@
 ---
 title: Search for a Property in Expression Blend
 page_title: Search for a Property in Expression Blend
-description: Search for a Property in Expression Blend
+description: Check our "Search for a Property in Expression Blend" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-search-for-property-in-expression-blend
 tags: search,for,a,property,in,expression,blend
 published: False

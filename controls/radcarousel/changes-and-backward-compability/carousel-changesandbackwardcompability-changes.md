@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadCarousel WPF control.
 slug: carousel-changesandbackwardcompability-changes
 tags: changes
 published: True

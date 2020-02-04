@@ -1,7 +1,7 @@
 ---
 title: QuickStyle
 page_title: QuickStyle
-description: QuickStyle
+description: Check our "QuickStyle" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-styles-and-templates-quickstyles
 tags: quickstyle
 published: True

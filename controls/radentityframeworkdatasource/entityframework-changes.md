@@ -1,7 +1,7 @@
 ---
 title: Changes and Backward Compatibility
 page_title: Changes and Backward Compatibility
-description: Changes and Backward Compatibility
+description: Check our "Changes and Backward Compatibility" documentation article for the RadEntityFrameworkDataSource WPF control.
 slug: entityframework-changes
 tags: changes,and,backward,compatibility
 published: True

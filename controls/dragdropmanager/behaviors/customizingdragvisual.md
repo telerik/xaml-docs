@@ -1,7 +1,7 @@
 ---
 title: Customizing the DragVisual
 page_title: Customizing the DragVisual
-description: Customizing the DragVisual
+description: Check our "Customizing the DragVisual" documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-behaviors-customizingdragvisual
 tags: customizing,the,dragvisual
 published: True

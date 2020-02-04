@@ -1,7 +1,7 @@
 ---
 title: Populating with Data
 page_title: Populating with Data
-description: Populating with Data
+description: Check our "Populating with Data" documentation article for the RadTreeView WPF control.
 slug: radtreeview-getting-started-populating-with-data
 tags: populating,with,data
 published: True

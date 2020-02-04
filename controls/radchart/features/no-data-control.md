@@ -1,7 +1,7 @@
 ---
 title: NoData Control
 page_title: NoData Control
-description: NoData Control
+description: Check our "NoData Control" documentation article for the RadChart WPF control.
 slug: radchart-features-no-data-control
 tags: nodata,control
 published: True

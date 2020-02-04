@@ -1,7 +1,7 @@
 ---
 title: X-Axis
 page_title: X-Axis
-description: X-Axis
+description: Check our "X-Axis" documentation article for the RadChart WPF control.
 slug: radchart-features-axes-x-axis
 tags: x-axis
 published: True

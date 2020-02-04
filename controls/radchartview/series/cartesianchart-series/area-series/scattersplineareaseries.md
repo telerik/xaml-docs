@@ -1,7 +1,7 @@
 ---
 title: ScatterSplineAreaSeries
 page_title: ScatterSplineAreaSeries
-description: ScatterSplineAreaSeries
+description: Check our "ScatterSplineAreaSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-scattersplineareaseries
 tags: scattersplineareaseries
 published: True

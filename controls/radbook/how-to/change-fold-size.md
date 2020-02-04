@@ -1,7 +1,7 @@
 ---
 title: How To Change the Fold Size
 page_title: How To Change the Fold Size
-description: How To Change the Fold Size
+description: Check our "How To Change the Fold Size" documentation article for the RadBook WPF control.
 slug: radbook-how-to-change-fold-size
 tags: how,to,change,the,fold,size
 published: True

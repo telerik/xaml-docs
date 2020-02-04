@@ -1,7 +1,7 @@
 ---
 title: Loading Data
 page_title: Loading Data
-description: Loading Data
+description: Check our "Loading Data" documentation article for the RadDomainDataSource WPF control.
 slug: domaindatasource-loading-data
 tags: loading,data
 published: True

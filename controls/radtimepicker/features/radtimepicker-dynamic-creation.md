@@ -1,7 +1,7 @@
 ---
 title: Dynamic Creation
 page_title: Dynamic Creation
-description: Dynamic Creation
+description: Check our "Dynamic Creation" documentation article for the RadTimePicker WPF control.
 slug: radtimepicker-radtimepicker-dynamic-creation
 tags: dynamic,creation
 published: True

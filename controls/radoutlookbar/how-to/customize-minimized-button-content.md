@@ -1,7 +1,7 @@
 ---
 title: How to Customize the Minimized Button Content
 page_title: How to Customize the Minimized Button Content
-description: How to Customize the Minimized Button Content
+description: Check our "How to Customize the Minimized Button Content" documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-how-to-customize-minimized-button-content
 tags: how,to,customize,the,minimized,button,content
 published: True

@@ -1,7 +1,7 @@
 ---
 title: MacdIndicator
 page_title: MacdIndicator
-description: MacdIndicator
+description: Check our "MacdIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-macdindicator
 tags: financial, indicators, macdindicator
 publish: True

@@ -1,7 +1,7 @@
 ---
 title: Work With Selection
 page_title: Work With Selection
-description: Work With Selection
+description: Check our "Work With Selection" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-howto-work-with-selection
 tags: work,with,selection
 published: True

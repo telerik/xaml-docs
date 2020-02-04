@@ -1,7 +1,7 @@
 ---
 title: Multilanguage Support
 page_title: Multilanguage Support
-description: Multilanguage Support
+description: Check our "Multilanguage Support" documentation article for the RadSpellChecker WPF control.
 slug: radspellchecker-multilanguage-support
 tags: multilanguage,support
 published: True

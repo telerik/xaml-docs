@@ -1,7 +1,7 @@
 ---
 title: DataBinding
 page_title: DataBinding
-description: DataBinding
+description: Check our "DataBinding" documentation article for the RadSparkLine WPF control.
 slug: radsparkline_databinding
 tags: databinding
 published: True

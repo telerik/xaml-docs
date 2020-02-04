@@ -1,7 +1,7 @@
 ---
 title: In Code-Behind
 page_title: In Code-Behind
-description: In Code-Behind
+description: Check our "In Code-Behind" documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-in-code-behind
 tags: in,code-behind
 published: True

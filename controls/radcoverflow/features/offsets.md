@@ -1,7 +1,7 @@
 ---
 title: Offsets
 page_title: Offsets
-description: Offsets
+description: Check our "Offsets" documentation article for the RadCoverflow WPF control.
 slug: coverflow-offsets
 tags: offsets
 published: True

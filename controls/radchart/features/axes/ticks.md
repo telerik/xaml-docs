@@ -1,7 +1,7 @@
 ---
 title: Ticks
 page_title: Ticks
-description: Ticks
+description: Check our "Ticks" documentation article for the RadChart WPF control.
 slug: radchart-features-axes-ticks
 tags: ticks
 published: True

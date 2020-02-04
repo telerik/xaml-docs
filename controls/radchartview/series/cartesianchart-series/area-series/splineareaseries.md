@@ -1,7 +1,7 @@
 ---
 title: SplineAreaSeries
 page_title: SplineAreaSeries
-description: SplineAreaSeries
+description: Check our "SplineAreaSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-splineareaseries
 tags: splineareaseries
 published: True

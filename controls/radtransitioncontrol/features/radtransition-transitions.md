@@ -1,7 +1,7 @@
 ---
 title: Transitions
 page_title: Transitions
-description: Transitions
+description: Check our "Transitions" documentation article for the RadTransitionControl WPF control.
 slug: radtransition-features-transitions
 tags: transitions
 published: True

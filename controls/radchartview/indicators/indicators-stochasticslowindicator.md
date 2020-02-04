@@ -1,7 +1,7 @@
 ---
 title: StochasticSlowIndicator
 page_title: StochasticSlowIndicator
-description: StochasticSlowIndicator
+description: Check our "StochasticSlowIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-stochasticslowindicator
 tags: financial, indicators, stochasticslowindicator
 publish: True

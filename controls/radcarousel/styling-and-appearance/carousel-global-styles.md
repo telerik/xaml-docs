@@ -1,7 +1,7 @@
 ---
 title: Global Styles
 page_title: Global Styles
-description: Global Styles
+description: Check our "Global Styles" documentation article for the RadCarousel WPF control.
 slug: carousel-global-styles
 tags: global,styles
 published: True

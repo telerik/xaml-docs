@@ -1,7 +1,7 @@
 ---
 title: Wizard Buttons
 page_title: Wizard Buttons
-description: Wizard Buttons
+description: Check our "Wizard Buttons" documentation article for the RadWizard WPF control.
 slug: wizard-buttons
 tags: wizard, buttons
 published: True

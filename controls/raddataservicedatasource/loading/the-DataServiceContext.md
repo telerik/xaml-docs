@@ -1,7 +1,7 @@
 ---
 title: The DataServiceContext
 page_title: The DataServiceContext
-description: The DataServiceContext
+description: Check our "The DataServiceContext" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-loading-the-dataservicecontext
 tags: the,dataservicecontext
 published: True

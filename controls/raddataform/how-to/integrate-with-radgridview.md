@@ -1,7 +1,7 @@
 ---
 title: Integrate RadDataForm with RadGridView
 page_title: Integrate RadDataForm with RadGridView
-description: Integrate RadDataForm with RadGridView
+description: Check our "Integrate RadDataForm with RadGridView" documentation article for the RadDataForm WPF control.
 slug: raddataform-integrate-with-radgridview
 tags: integrate,raddataform,with,radgridview
 published: True

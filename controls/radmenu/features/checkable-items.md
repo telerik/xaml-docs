@@ -1,7 +1,7 @@
 ---
 title: Checkable Items
 page_title: Checkable Items
-description: Checkable Items
+description: Check our "Checkable Items" documentation article for the RadMenu WPF control.
 slug: radmenu-features-checkable-items
 tags: checkable,items
 published: True

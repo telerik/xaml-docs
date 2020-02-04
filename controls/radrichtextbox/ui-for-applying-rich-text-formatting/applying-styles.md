@@ -1,7 +1,7 @@
 ---
 title: Applying Styles
 page_title: Applying Styles
-description: Applying Styles
+description: Check our "Applying Styles" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-ui-for-applying-rich-text-formatting-applying-styles
 tags: applying,styles
 published: True

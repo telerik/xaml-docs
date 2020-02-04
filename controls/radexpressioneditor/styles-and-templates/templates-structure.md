@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Check our "Templates Structure" documentation article for the RadExpressionEditor WPF control.
 slug: radexpressioneditor-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Resizing
 page_title: Resizing
-description: Resizing
+description: Check our "Resizing" documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-resizing
 tags: resizing
 published: True

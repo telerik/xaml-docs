@@ -1,7 +1,7 @@
 ---
 title: Styling the Ribbon GroupChrome
 page_title: Styling the Ribbon GroupChrome
-description: Styling the Ribbon GroupChrome
+description: Check our "Styling the Ribbon GroupChrome" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-groupchrome
 tags: styling,the,ribbon,groupchrome
 published: True

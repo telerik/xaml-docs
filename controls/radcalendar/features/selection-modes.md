@@ -1,7 +1,7 @@
 ---
 title: Selection Modes
 page_title: Selection Modes
-description: Selection Modes
+description: Check our "Selection Modes" documentation article for the RadCalendar WPF control.
 slug: radcalendar-selection-modes
 tags: selection,modes
 published: True

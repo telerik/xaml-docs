@@ -1,7 +1,7 @@
 ---
 title: Bind to a Selected Item
 page_title: Bind to a Selected Item
-description: Bind to a Selected Item
+description: Check our "Bind to a Selected Item" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-bind-selected-item
 tags: bind,to,a,selected,item
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Interactivity Effects
 page_title: Interactivity Effects
-description: Interactivity Effects
+description: Check our "Interactivity Effects" documentation article for the RadChart WPF control.
 slug: radchart-features-interactivity-effects
 tags: interactivity,effects
 published: True

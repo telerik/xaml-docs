@@ -1,7 +1,7 @@
 ---
 title: Serialize XmlaDataProvider
 page_title: Serialize XmlaDataProvider
-description: Serialize XmlaDataProvider
+description: Check our "Serialize XmlaDataProvider" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-serialization-xmla
 tags: serialize,xmladataprovider
 published: True

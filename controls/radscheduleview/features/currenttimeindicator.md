@@ -1,7 +1,7 @@
 ---
 title: CurrentTimeIndicator
 page_title: CurrentTimeIndicator
-description: CurrentTimeIndicator
+description: Check our "CurrentTimeIndicator" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-currenttimeindicator
 tags: currenttimeindicator
 published: True

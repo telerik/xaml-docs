@@ -1,7 +1,7 @@
 ---
 title: Export Support
 page_title: Export Support
-description: Export Support
+description: Check our "Export Support" documentation article for the RadMap WPF control.
 slug: radmap-features-export-support
 tags: export,support,image,screenshot,picture,save,stream
 published: True

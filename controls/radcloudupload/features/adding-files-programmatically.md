@@ -1,7 +1,7 @@
 ---
 title: Adding Files Programmatically
 page_title: Adding Files Programmatically
-description: Adding Files Programmatically
+description: Check our "Adding Files Programmatically" documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-adding-files-programmatically
 tags: adding, items, files, manually, programmatically, code, code-behind
 published: True

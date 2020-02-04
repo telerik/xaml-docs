@@ -1,7 +1,7 @@
 ---
 title: Calendar Basics
 page_title: Calendar Basics
-description: Calendar Basics
+description: Check our "Calendar Basics" documentation article for the RadCalendar WPF control.
 slug: radcalendar-basics
 tags: calendar,basics
 published: True

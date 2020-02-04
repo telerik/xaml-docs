@@ -1,7 +1,7 @@
 ---
 title: Annotations
 page_title: Annotations
-description: Annotations
+description: Check our "Annotations" documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-annotations
 tags: annotations
 published: True

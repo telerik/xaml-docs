@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Filtering
+description: Check our "Filtering" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-filtering
 tags: filtering
 published: True

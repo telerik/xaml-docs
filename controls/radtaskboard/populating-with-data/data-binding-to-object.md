@@ -1,7 +1,7 @@
 ---
 title: Binding to Object
 page_title: Binding to Object
-description: Binding to Object
+description: Check our "Binding to Object" documentation article for the RadTaskBoard WPF control.
 slug: radtaskboard-populating-with-data-data-binding-to-object
 tags: binding,to,object
 published: True

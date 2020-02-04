@@ -1,7 +1,7 @@
 ---
 title: HTML Support
 page_title: HTML Support
-description: HTML Support
+description: Check our "HTML Support" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-html-support
 tags: html,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadButtons WPF control.
 slug: radbuttons-getting-started
 tags: getting,started
 published: True

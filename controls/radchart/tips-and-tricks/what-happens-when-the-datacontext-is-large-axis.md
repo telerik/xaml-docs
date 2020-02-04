@@ -1,7 +1,7 @@
 ---
 title: What happens when you have more than 200 items?
 page_title: What happens when you have more than 200 items?
-description: What happens when you have more than 200 items?
+description: Check our "What happens when you have more than 200 items?" documentation article for the RadChart WPF control.
 slug: radchart-tips-and-tricks-what happens when-the-datacontext-is-large-axis
 tags: what,happens,when,you,have,more,than,200,items?
 published: True

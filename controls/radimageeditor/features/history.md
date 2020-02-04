@@ -1,7 +1,7 @@
 ---
 title: History
 page_title: History
-description: History
+description: Check our "History" documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-features-history
 tags: history
 published: True

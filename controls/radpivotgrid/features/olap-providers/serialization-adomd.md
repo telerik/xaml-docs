@@ -1,7 +1,7 @@
 ---
 title: Serialize AdomdDataProvider
 page_title: Serialize AdomdDataProvider
-description: Serialize AdomdDataProvider
+description: Check our "Serialize AdomdDataProvider" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-serialization-adomd
 tags: serialize,adomddataprovider
 published: True

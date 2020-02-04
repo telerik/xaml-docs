@@ -1,7 +1,7 @@
 ---
 title: Mouse Support
 page_title: Mouse Support
-description: Mouse Support
+description: Check our "Mouse Support" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-mouse-support
 tags: mouse,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Developer Focused Examples
+description: Check our "Developer Focused Examples" documentation article for the RadTreeMap WPF control.
 slug: radtreemap-sdk-examples
 tags: sdk,examples
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Icons
 page_title: Icons
-description: Icons
+description: Check our "Icons" documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-features-icons
 tags: icons
 published: True

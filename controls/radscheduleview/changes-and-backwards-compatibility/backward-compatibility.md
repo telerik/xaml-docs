@@ -1,7 +1,7 @@
 ---
 title: Backwards Compatibility
 page_title: Backwards Compatibility
-description: Backwards Compatibility
+description: Check our "Backwards Compatibility" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-backward-compatibility
 tags: backwards,compatibility
 published: True

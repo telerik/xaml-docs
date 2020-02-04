@@ -1,7 +1,7 @@
 ---
 title: Dynamic Number of Series (ChartSeriesProvider)
 page_title: Dynamic Number of Series (ChartSeriesProvider)
-description: Dynamic Number of Series (ChartSeriesProvider)
+description: Check our "Dynamic Number of Series (ChartSeriesProvider)" documentation article for the RadChartView WPF control.
 slug: radchartview-features-chartseriesprovider
 tags: dynamic,number,of,series,(chartseriesprovider)
 published: True

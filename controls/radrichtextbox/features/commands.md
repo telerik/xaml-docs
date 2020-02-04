@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Commands
+description: Check our "Commands" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-commands
 tags: commands
 published: True

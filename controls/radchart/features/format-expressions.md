@@ -1,7 +1,7 @@
 ---
 title: Format Expressions
 page_title: Format Expressions
-description: Format Expressions
+description: Check our "Format Expressions" documentation article for the RadChart WPF control.
 slug: radchart-features-format-expressions
 tags: format,expressions
 published: True

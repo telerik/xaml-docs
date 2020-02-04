@@ -1,7 +1,7 @@
 ---
 title: RadRibbonView Template Structure
 page_title: RadRibbonView Template Structure
-description: RadRibbonView Template Structure
+description: Check our "RadRibbonView Template Structure" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-templatestructure
 tags: radribbonview,template,structure
 published: True

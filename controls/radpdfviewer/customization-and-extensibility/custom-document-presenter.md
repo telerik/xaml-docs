@@ -1,7 +1,7 @@
 ---
 title: Custom Document Presenter
 page_title: Custom Document Presenter
-description: Custom Document Presenter
+description: Check our "Custom Document Presenter" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-customization-and-extensibility-custom-document-presenter
 tags: custom,document,presenter
 published: True

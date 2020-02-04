@@ -1,7 +1,7 @@
 ---
 title: Item Alignment
 page_title: Item Alignment
-description: Item Alignment
+description: Check our "Item Alignment" documentation article for the RadToolBar WPF control.
 slug: radtoolbar-features-itemalignment
 tags: item,alignment
 publish: True

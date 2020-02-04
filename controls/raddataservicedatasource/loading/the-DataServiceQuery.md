@@ -1,7 +1,7 @@
 ---
 title: The DataServiceQuery
 page_title: The DataServiceQuery
-description: The DataServiceQuery
+description: Check our "The DataServiceQuery" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-loading-the-dataservicequery
 tags: the,dataservicequery
 published: True

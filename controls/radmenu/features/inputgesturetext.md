@@ -1,7 +1,7 @@
 ---
 title: InputGestureText
 page_title: InputGestureText
-description: InputGestureText
+description: Check our "InputGestureText" documentation article for the RadMenu WPF control.
 slug: radmenu-features-inputgesturetext
 tags: inputgesturetext
 published: True

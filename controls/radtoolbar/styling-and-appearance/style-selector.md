@@ -1,7 +1,7 @@
 ---
 title: Styling RadToolBar
 page_title: Styling RadToolBar
-description: Styling RadToolBar
+description: Check our "Styling RadToolBar" documentation article for the RadToolBar WPF control.
 slug: radtoolbar-style-selector
 tags: style,selector
 published: True

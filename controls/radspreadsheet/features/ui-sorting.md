@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Sorting
+description: Check our "Sorting" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-sorting
 tags: sorting
 published: True

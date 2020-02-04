@@ -1,7 +1,7 @@
 ---
 title: Styling RadCalculator
 page_title: Styling RadCalculator
-description: Styling RadCalculator
+description: Check our "Styling RadCalculator" documentation article for the RadCalculator WPF control.
 slug: radcalculator-styleandtemplates-stylingradcalculator
 tags: styling,radcalculator
 published: True

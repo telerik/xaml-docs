@@ -1,7 +1,7 @@
 ---
 title: Styling the MapNavigation
 page_title: Styling the MapNavigation
-description: Styling the MapNavigation
+description: Check our "Styling the MapNavigation" documentation article for the RadMap WPF control.
 slug: radmap-styles-and-templates-styling-the-mapnavigation
 tags: styling,the,mapnavigation
 published: True

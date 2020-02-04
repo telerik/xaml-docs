@@ -1,7 +1,7 @@
 ---
 title: Text Search
 page_title: Text Search
-description: Text Search
+description: Check our "Text Search" documentation article for the RadComboBox WPF control.
 slug: radcombobox-features-textsearch
 tags: textsearch
 published: True

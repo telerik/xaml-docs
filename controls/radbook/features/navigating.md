@@ -1,7 +1,7 @@
 ---
 title: Navigating
 page_title: Navigating
-description: Navigating
+description: Check our "Navigating" documentation article for the RadBook WPF control.
 slug: radbook-navigating
 tags: navigating
 published: True

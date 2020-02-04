@@ -1,7 +1,7 @@
 ---
 title: Declaratively
 page_title: Declaratively
-description: Declaratively
+description: Check our "Declaratively" documentation article for the RadRating WPF control.
 slug: populating-declaratively
 tags: declaratively
 published: True

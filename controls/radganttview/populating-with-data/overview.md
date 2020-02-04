@@ -1,7 +1,7 @@
 ---
 title: Data Binding Support Overview
 page_title: Data Binding Support Overview
-description: Data Binding Support Overview
+description: Check our "Data Binding Support Overview" documentation article for the RadGanttView WPF control.
 slug: radganttview-populating-with-data-overview
 tags: data,binding,support,overview
 published: True

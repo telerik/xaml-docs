@@ -1,7 +1,7 @@
 ---
 title: How to Move Tabs Using Drag and Drop
 page_title: How to Move Tabs Using Drag and Drop
-description: How to Move Tabs Using Drag and Drop
+description: Check our "How to Move Tabs Using Drag and Drop" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-move-tab-using-drag-and-drop
 tags: how,to,move,tabs,using,drag,and,drop
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ReadOnlyEditorState
 page_title: ReadOnlyEditorState
-description: ReadOnlyEditorState
+description: Check our "ReadOnlyEditorState" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-features-readonlyeditorstate
 tags: readonlyeditorstate
 published: True

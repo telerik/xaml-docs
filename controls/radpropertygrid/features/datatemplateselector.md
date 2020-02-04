@@ -1,7 +1,7 @@
 ---
 title: DataTemplateSelector Support
 page_title: DataTemplateSelector Support
-description: DataTemplateSelector Support
+description: Check our "DataTemplateSelector Support" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-datatemplateselector
 tags: datatemplateselector,support
 published: True

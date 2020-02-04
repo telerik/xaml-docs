@@ -1,7 +1,7 @@
 ---
 title: Handling SelectionChanged event for DataFormComboBoxField
 page_title: Handling SelectionChanged event for DataFormComboBoxField
-description: Handling SelectionChanged event for DataFormComboBoxField
+description: Check our "Handling SelectionChanged event for DataFormComboBoxField" documentation article for the RadDataForm WPF control.
 slug: raddataform-howto-selectionchanged-comboboxfield
 tags: handling,selectionchanged,event,for,the,dataformcomboboxfield
 published: True

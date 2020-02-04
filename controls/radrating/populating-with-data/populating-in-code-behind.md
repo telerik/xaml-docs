@@ -1,7 +1,7 @@
 ---
 title: In Code-Behind
 page_title: In Code-Behind
-description: In Code-Behind
+description: Check our "In Code-Behind" documentation article for the RadRating WPF control.
 slug: populating-in-code-behind
 tags: in,code-behind
 published: True

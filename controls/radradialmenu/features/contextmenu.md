@@ -1,7 +1,7 @@
 ---
 title: RadRadialMenu as a ContextMenu
 page_title: RadRadialMenu as a ContextMenu
-description: RadRadialMenu as a ContextMenu
+description: Check our "RadRadialMenu as a ContextMenu" documentation article for the RadRadialMenu WPF control.
 slug: radradialmenu-features-contextmenu
 tags: radradialmenu,as,a,contextmenu
 published: True

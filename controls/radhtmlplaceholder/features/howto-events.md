@@ -1,7 +1,7 @@
 ---
 title: RadHtmlPlaceholder Events
 page_title: RadHtmlPlaceholder Events
-description: RadHtmlPlaceholder Events
+description: Check our "RadHtmlPlaceholder Events" documentation article for the RadHtmlPlaceholder WPF control.
 slug: radhtmlplaceholder-howto-events
 tags: radhtmlplaceholder,events
 published: True

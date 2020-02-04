@@ -1,7 +1,7 @@
 ---
 title: Sampling
 page_title: Sampling
-description: Sampling
+description: Check our "Sampling" documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-populating-data-sampling
 tags: sampling,3d,chartview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Active Sections
 page_title: Active Sections
-description: Active Sections
+description: Check our "Active Sections" documentation article for the RadColorEditor WPF control.
 slug: radcoloreditor-activesections
 tags: active,sections
 published: True

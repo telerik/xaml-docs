@@ -1,7 +1,7 @@
 ---
 title: How to Change the Position of the Tab Strip of RadTabControl
 page_title: How to Change the Position of the Tab Strip of RadTabControl
-description: How to Change the Position of the Tab Strip of RadTabControl
+description: Check our "How to Change the Position of the Tab Strip of RadTabControl" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol
 tags: how,to,change,the,position,of,the,tab,strip,of,radtabcontrol
 published: True

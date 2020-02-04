@@ -1,7 +1,7 @@
 ---
 title: Declaratively
 page_title: Declaratively
-description: Declaratively
+description: Check our "Declaratively" documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-declaratively
 tags: declaratively
 published: True

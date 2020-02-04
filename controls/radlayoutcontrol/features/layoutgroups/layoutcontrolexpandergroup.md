@@ -1,7 +1,7 @@
 ---
 title: LayoutControlExpanderGroup
 page_title: LayoutControlExpanderGroup
-description: LayoutControlExpanderGroup
+description: Check our "LayoutControlExpanderGroup" documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup
 tags: feature, displaymode, display, mode, layoutcontrolexpandergroup, expander, expand, collapse
 published: True

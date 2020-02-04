@@ -1,7 +1,7 @@
 ---
 title: Time Break
 page_title: Time Break
-description: Time Break
+description: Check our "Time Break" documentation article for the RadChat WPF control.
 slug: chat-items-time-break
 tags: time, break
 published: True

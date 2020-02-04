@@ -1,7 +1,7 @@
 ---
 title: Configuring the TimeRuler
 page_title: Configuring the TimeRuler
-description: Configuring the TimeRuler
+description: Check our "Configuring the TimeRuler" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-timeruler-configuring
 tags: configuring,the,timeruler
 published: True

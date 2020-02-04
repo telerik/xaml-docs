@@ -1,7 +1,7 @@
 ---
 title: Required parts
 page_title: Required parts
-description: Required parts
+description: Check our "Required parts" documentation article for the RadNumericUpDown WPF control.
 slug: radnumericupdown-required-parts
 tags: required,parts
 published: True

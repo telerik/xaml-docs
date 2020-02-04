@@ -1,7 +1,7 @@
 ---
 title: RadSaveFileDialog
 page_title: RadSaveFileDialog
-description: RadSaveFileDialog
+description: Check our "RadSaveFileDialog" documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-radsavefiledialog
 tags: save,file,dialog
 published: True

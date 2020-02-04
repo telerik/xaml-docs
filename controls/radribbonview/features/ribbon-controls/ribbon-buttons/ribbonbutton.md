@@ -1,7 +1,7 @@
 ---
 title: Ribbon Button
 page_title: Ribbon Button
-description: Ribbon Button
+description: Check our "Ribbon Button" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbonbutton
 tags: ribbon,button
 published: True

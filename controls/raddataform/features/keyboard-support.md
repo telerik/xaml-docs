@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Keyboard Support
+description: Check our "Keyboard Support" documentation article for the RadDataForm WPF control.
 slug: raddataform-features-keyboard-support
 tags: keyboard,support
 published: True

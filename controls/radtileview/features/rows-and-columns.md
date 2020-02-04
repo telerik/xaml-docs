@@ -1,7 +1,7 @@
 ---
 title: Rows and Columns
 page_title: Rows and Columns
-description: Rows and Columns
+description: Check our "Rows and Columns" documentation article for the RadTileView WPF control.
 slug: radtileview-rows-and-columns
 tags: rows,and,columns
 published: True

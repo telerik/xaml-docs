@@ -1,7 +1,7 @@
 ---
 title: Context Menu
 page_title: Context Menu
-description: Context Menu
+description: Check our "Context Menu" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-context-menu
 tags: context,menu
 published: True

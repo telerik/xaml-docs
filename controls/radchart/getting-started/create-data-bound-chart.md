@@ -1,7 +1,7 @@
 ---
 title: Create Data Bound Chart
 page_title: Create Data Bound Chart
-description: Create Data Bound Chart
+description: Check our "Create Data Bound Chart" documentation article for the RadChart WPF control.
 slug: radchart-getting-started-create-data-bound-chart
 tags: create,data,bound,chart
 published: True

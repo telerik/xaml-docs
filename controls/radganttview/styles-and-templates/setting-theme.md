@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme
 page_title: Setting a Theme
-description: Setting a Theme
+description: Check our "Setting a Theme" documentation article for the RadGanttView WPF control.
 slug: radganttview-styles-and-templates-setting-theme
 tags: setting,a,theme
 published: True

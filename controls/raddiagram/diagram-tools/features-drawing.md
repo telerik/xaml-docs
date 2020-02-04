@@ -1,7 +1,7 @@
 ---
 title: Drawing Tools
 page_title: Drawing Tools
-description: Drawing Tools
+description: Check our "Drawing Tools" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-drawing
 tags: drawing,tools
 published: True

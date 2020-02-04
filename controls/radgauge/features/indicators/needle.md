@@ -1,7 +1,7 @@
 ---
 title: Needle
 page_title: Needle
-description: Needle
+description: Check our "Needle" documentation article for the RadGauge WPF control.
 slug: radgauge-features-indicators-needle
 tags: needle
 published: True

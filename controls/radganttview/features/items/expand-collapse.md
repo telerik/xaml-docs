@@ -1,7 +1,7 @@
 ---
 title: Expand and Collapse
 page_title: Expand and Collapse
-description: Expand and Collapse
+description: Check our "Expand and Collapse" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-expand-collapse
 tags: expand,and,collapse
 published: True

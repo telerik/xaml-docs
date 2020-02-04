@@ -1,7 +1,7 @@
 ---
 title: Exception Handling 
 page_title: Exception Handling 
-description: Exception Handling 
+description: Check our "Exception Handling" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-document-model-exceptionhandling
 tags: exception,handling,
 published: True

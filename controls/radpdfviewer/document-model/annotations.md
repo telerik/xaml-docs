@@ -1,7 +1,7 @@
 ---
 title: Annotations
 page_title: Annotations
-description: Annotations
+description: Check our "Annotations" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-document-model-annotations
 tags: annotations
 published: True

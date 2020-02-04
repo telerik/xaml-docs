@@ -1,7 +1,7 @@
 ---
 title: How to Make the Tab Headers Editable
 page_title: How to Make the Tab Headers Editable
-description: How to Make the Tab Headers Editable
+description: Check our "How to Make the Tab Headers Editable" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-make-the-tab-headers-editable
 tags: how,to,make,the,tab,headers,editable
 published: True

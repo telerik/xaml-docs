@@ -1,7 +1,7 @@
 ---
 title: Page Size
 page_title: Page Size
-description: Page Size
+description: Check our "Page Size" documentation article for the RadDataPager WPF control.
 slug: raddatapager-features-page-size
 tags: page,size
 published: True

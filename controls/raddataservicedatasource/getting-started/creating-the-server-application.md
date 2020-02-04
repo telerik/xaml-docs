@@ -1,7 +1,7 @@
 ---
 title: Creating the Server Application
 page_title: Creating the Server Application
-description: Creating the Server Application
+description: Check our "Creating the Server Application" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-getting-started-creating-the-server-application
 tags: creating,the,server,application
 published: True

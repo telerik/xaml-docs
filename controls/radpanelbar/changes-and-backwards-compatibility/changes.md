@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadPanelBar WPF control.
 slug: radpanelbar-changes
 tags: changes
 published: True

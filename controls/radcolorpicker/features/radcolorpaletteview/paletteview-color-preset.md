@@ -1,7 +1,7 @@
 ---
 title: Color Preset
 page_title: Color Preset
-description: Color Preset
+description: Check our "Color Preset" documentation article for the RadColorPicker WPF control.
 slug: paletteview-color-preset
 tags: color,preset
 published: True

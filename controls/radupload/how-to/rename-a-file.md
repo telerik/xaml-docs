@@ -1,7 +1,7 @@
 ---
 title: Rename a File
 page_title: Rename a File
-description: Rename a File
+description: Check our "Rename a File" documentation article for the RadUpload WPF control.
 slug: radupload-how-to-rename-a-file
 tags: rename,a,file
 published: True

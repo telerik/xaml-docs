@@ -1,7 +1,7 @@
 ---
 title: Styling Numeric Buttons
 page_title: Styling Numeric Buttons
-description: Styling Numeric Buttons
+description: Check our "Styling Numeric Buttons" documentation article for the RadDataPager WPF control.
 slug: raddatapager-styles-and-templates-styling-the-numeric-buttons
 tags: styling,the,numeric,buttons
 published: True

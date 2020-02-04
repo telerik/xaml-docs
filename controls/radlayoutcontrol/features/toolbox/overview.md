@@ -1,7 +1,7 @@
 ---
 title: ToolBox Overview
 page_title: ToolBox Overview
-description: ToolBox Overview
+description: Check our "ToolBox Overview" documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-toolbox-overview
 tags: layout, toolbox, toolboxview, layoutcontroltoolbox, layoutcontroltoolboxview
 published: True

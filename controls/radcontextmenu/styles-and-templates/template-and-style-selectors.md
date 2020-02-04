@@ -1,7 +1,7 @@
 ---
 title: Template and Style Selectors
 page_title: Template and Style Selectors
-description: Template and Style Selectors
+description: Check our "Template and Style Selectors" documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-populating-with-data-template-and-style-selectors
 tags: template,and,style,selectors
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Colorizers
 page_title: Colorizers
-description: Colorizers
+description: Check our "Colorizers" documentation article for the RadHeatMap WPF control.
 slug: radheatmap-colorizers
 tags: colorizers
 published: True

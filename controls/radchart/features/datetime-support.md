@@ -1,7 +1,7 @@
 ---
 title: DateTime Support
 page_title: DateTime Support
-description: DateTime Support
+description: Check our "DateTime Support" documentation article for the RadChart WPF control.
 slug: radchart-features-datetime-support
 tags: datetime,support
 published: True

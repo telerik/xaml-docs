@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: Check our "Selection" documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-features-selection
 tags: selection
 published: True

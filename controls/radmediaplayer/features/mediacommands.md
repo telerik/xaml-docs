@@ -1,7 +1,7 @@
 ---
 title: MediaCommands
 page_title: MediaCommands
-description: MediaCommands
+description: Check our "MediaCommands" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-mediacommands
 tags: mediacommands
 publish: True

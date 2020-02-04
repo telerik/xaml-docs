@@ -1,7 +1,7 @@
 ---
 title: SpellChecking Modes
 page_title: SpellChecking Modes
-description: SpellChecking Modes
+description: Check our "SpellChecking Modes" documentation article for the RadSpellChecker WPF control.
 slug: radspellchecker-spellchecking-modes
 tags: spellchecking,modes
 published: True

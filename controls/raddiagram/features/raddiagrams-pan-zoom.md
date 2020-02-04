@@ -1,7 +1,7 @@
 ---
 title: Pan and Zoom
 page_title: Pan and Zoom
-description: Pan and Zoom
+description: Check our "Pan and Zoom" documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-pan-zoom
 tags: pan,and,zoom
 published: True

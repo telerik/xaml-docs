@@ -1,7 +1,7 @@
 ---
 title: Styling the RadSplitButton
 page_title: Styling the RadSplitButton
-description: Styling the RadSplitButton
+description: Check our "Styling the RadSplitButton" documentation article for the RadButtons WPF control.
 slug: radbuttons-styles-and-templates-styling-the-radsplitbutton
 tags: styling,the,radsplitbutton
 published: True

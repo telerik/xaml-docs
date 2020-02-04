@@ -1,7 +1,7 @@
 ---
 title: Styling the Chart Legend
 page_title: Styling the Chart Legend
-description: Styling the Chart Legend
+description: Check our "Styling the Chart Legend" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-chart-legend
 tags: styling,the,chart,legend
 published: True

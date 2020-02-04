@@ -1,7 +1,7 @@
 ---
 title: Configuring the TimeRuler ticks
 page_title: Configuring the TimeRuler ticks
-description: Configuring the TimeRuler ticks
+description: Check our "Configuring the TimeRuler ticks" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-timeruler-ticks-configuration
 tags: configuring,the,timeruler,ticks
 published: True

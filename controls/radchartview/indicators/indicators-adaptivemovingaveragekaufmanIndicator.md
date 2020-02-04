@@ -1,7 +1,7 @@
 ---
 title: AdaptiveMovingAverageKaufmanIndicator
 page_title: AdaptiveMovingAverageKaufmanIndicator
-description: AdaptiveMovingAverageKaufmanIndicator
+description: Check our "AdaptiveMovingAverageKaufmanIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-adaptivemovingaveragekaufmanindicator
 tags: financial, indicators, adaptivemovingaveragekaufmanindicator
 publish: True

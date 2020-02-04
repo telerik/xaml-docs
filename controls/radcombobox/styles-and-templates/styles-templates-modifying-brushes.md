@@ -1,7 +1,7 @@
 ---
 title: Modifying Brushes
 page_title: Modifying Brushes
-description: Modifying Brushes
+description: Check our "Modifying Brushes" documentation article for the RadComboBox WPF control.
 slug: radcombobox-styles-templates-modifying-brushes
 tags: modifying,brushes
 published: True

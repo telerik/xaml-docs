@@ -1,7 +1,7 @@
 ---
 title: Relative Measurements
 page_title: Relative Measurements
-description: Relative Measurements
+description: Check our "Relative Measurements" documentation article for the RadGauge WPF control.
 slug: radgauge-features-relative-measurements
 tags: relative,measurements
 published: True

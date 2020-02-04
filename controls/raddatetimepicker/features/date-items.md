@@ -1,7 +1,7 @@
 ---
 title: Date Items
 page_title: Date Items
-description: Date Items
+description: Check our "Date Items" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-date-items
 tags: date,items
 published: True

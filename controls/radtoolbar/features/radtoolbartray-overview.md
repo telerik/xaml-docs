@@ -1,7 +1,7 @@
 ---
 title: ToolBarTray
 page_title: ToolBarTray
-description: ToolBarTray
+description: Check our "ToolBarTray" documentation article for the RadToolBar WPF control.
 slug: radtoolbartray-overview
 tags: toolbartray,overview
 published: True

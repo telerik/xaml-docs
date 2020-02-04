@@ -1,7 +1,7 @@
 ---
 title: Vertical Position of the RadTimeline Items
 page_title: Vertical Position of the RadTimeline Items
-description: Vertical Position of the RadTimeline Items
+description: Check our "Vertical Position of the RadTimeline Items" documentation article for the RadTimeline WPF control.
 slug: radtimeline-howto-control-vertical-position-of-timeline-items
 tags: vertical,position,of,the,radtimeline,items
 publish: True

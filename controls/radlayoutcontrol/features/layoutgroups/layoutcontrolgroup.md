@@ -1,7 +1,7 @@
 ---
 title: LayoutControlGroup
 page_title: LayoutControlGroup
-description: LayoutControlGroup
+description: Check our "LayoutControlGroup" documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-layougroups-layoutcontrolgroup
 tags: feature, displaymode, display, mode, layoutcontrolgroup
 published: True

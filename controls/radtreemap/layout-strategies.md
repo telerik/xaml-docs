@@ -1,7 +1,7 @@
 ---
 title: Layout Strategies
 page_title: Layout Strategies
-description: Layout Strategies
+description: Check our "Layout Strategies" documentation article for the RadTreeMap WPF control.
 slug: radtreemap-layout-strategies
 tags: layout,strategies
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRichTextBox
 page_title: Styling the RadRichTextBox
-description: Styling the RadRichTextBox
+description: Check our "Styling the RadRichTextBox" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-styles-and-templates-styling-radrichtextbox
 tags: styling,the,radrichtextbox
 published: True

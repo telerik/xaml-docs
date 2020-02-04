@@ -1,7 +1,7 @@
 ---
 title: Customizing PolarChart Series
 page_title: Customizing PolarChart Series
-description: Customizing PolarChart Series
+description: Check our "Customizing PolarChart Series" documentation article for the RadChartView WPF control.
 slug: radchartview-styles-and-templates-customizing-polarchart-series
 tags: customizing,polarchart,series
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Digital Signature
 page_title: Digital Signature
-description: Digital Signature
+description: Check our "Digital Signature" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-features-digital-signature
 tags: digital, signature
 published: True

@@ -1,7 +1,7 @@
 ---
 title: DesktopAlertManager
 page_title: DesktopAlertManager
-description: DesktopAlertManager
+description: Check our "DesktopAlertManager" documentation article for the RadDesktopAlert WPF control.
 slug: raddesktopalert-desktop-alert-manager
 tags: desktopalertmanager,alert
 published: True

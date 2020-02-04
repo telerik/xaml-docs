@@ -1,7 +1,7 @@
 ---
 title: Bring Into View and Auto Fit Support
 page_title:  Bring Into View and Auto Fit Support
-description:  Bring Into View and Auto Fit Support
+description: Check our "Bring Into View and Auto Fit Support" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-bring-into-view-auto-fit
 tags: bring,into,view,bringintoview,autofit,auto,fit,viewport
 published: True

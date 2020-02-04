@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop with RadScheduleView
 page_title: Drag and Drop with RadScheduleView
-description: Drag and Drop with RadScheduleView
+description: Check our "Drag and Drop with RadScheduleView" documentation article for the RadGanttView WPF control.
 slug: radganttview-dragdrop-radscheduleview
 tags: drag,and,drop,with,radscheduleview
 published: True

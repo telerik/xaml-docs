@@ -1,7 +1,7 @@
 ---
 title: Implement Search, Filter and Sort
 page_title: Implement Search, Filter and Sort
-description: Implement Search, Filter and Sort
+description: Check our "Implement Search, Filter and Sort" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-implement-search-filter-sort
 tags: implement,search,,filter,and,sort
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the ButtonChrome
 page_title: Styling the ButtonChrome
-description: Styling the ButtonChrome
+description: Check our "Styling the ButtonChrome" documentation article for the RadButtons WPF control.
 slug: radbuttons-styles-and-templates-styling-buttonchrome
 tags: styling,the,buttonchrome
 published: True

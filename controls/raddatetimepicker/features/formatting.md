@@ -1,7 +1,7 @@
 ---
 title: Formatting
 page_title: Formatting
-description: Formatting
+description: Check our "Formatting" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-formatting
 tags: formatting
 published: True

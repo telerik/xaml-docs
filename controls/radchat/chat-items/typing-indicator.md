@@ -1,7 +1,7 @@
 ---
 title: Typing Indicator
 page_title: Typing Indicator
-description: Typing Indicator
+description: Check our "Typing Indicator" documentation article for the RadChat WPF control.
 slug: chat-items-typing-indicator
 tags: typing, indicator
 published: True

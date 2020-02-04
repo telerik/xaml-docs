@@ -1,7 +1,7 @@
 ---
 title: Time Markers
 page_title: Time Markers
-description: Time Markers
+description: Check our "Time Markers" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-timemarkers
 tags: time,markers
 published: True

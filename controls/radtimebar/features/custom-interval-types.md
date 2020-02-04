@@ -1,7 +1,7 @@
 ---
 title: Custom Interval Types
 page_title: Custom Interval Types
-description: Custom Interval Types
+description: Check our "Custom Interval Types" documentation article for the RadTimeBar WPF control.
 slug: radtimebar-features-custom-interval-types
 tags: interval,types,custom
 published: True

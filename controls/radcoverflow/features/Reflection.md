@@ -1,7 +1,7 @@
 ---
 title: Loading animation
 page_title: Loading animation
-description: Loading animation
+description: Check our "Loading animation" documentation article for the RadCoverflow WPF control.
 slug: coverflow-reflection
 tags: loading,animation
 published: True

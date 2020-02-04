@@ -1,7 +1,7 @@
 ---
 title: Customizing the CellHighlightTemplate
 page_title: Customizing the CellHighlightTemplate
-description: Customizing the CellHighlightTemplate
+description: Check our "Customizing the CellHighlightTemplate" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-columns-highlight-template
 tags: customizing,the,cellhighlighttemplate
 published: True

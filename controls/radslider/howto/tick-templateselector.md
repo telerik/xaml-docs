@@ -1,7 +1,7 @@
 ---
 title: How to customize the look of the tick marks using TickTemplateSelector
 page_title: How to customize the look of the tick marks using TickTemplateSelector
-description: How to customize the look of the tick marks using TickTemplateSelector
+description: Check our "How to customize the look of the tick marks using TickTemplateSelector" documentation article for the RadSlider WPF control.
 slug: radslider-tick-templateselector
 tags: how,to,customize,the,look,of,the,tick,marks,using,ticktemplateselector
 published: True

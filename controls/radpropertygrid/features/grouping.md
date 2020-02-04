@@ -1,7 +1,7 @@
 ---
 title: Grouping Support
 page_title: Grouping Support
-description: Grouping Support
+description: Check our "Grouping Support" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-grouping
 tags: grouping,support
 published: True

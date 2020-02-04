@@ -1,7 +1,7 @@
 ---
 title: Exporting Support
 page_title: Exporting Support
-description: Exporting Support
+description: Check our "Exporting Support" documentation article for the RadGanttView WPF control.
 slug: radganttview-exportingsupport
 tags: exporting,support
 published: True

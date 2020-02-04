@@ -1,7 +1,7 @@
 ---
 title: Exporting Fixed Page to Image
 page_title: Exporting Fixed Page to Image
-description: Exporting Fixed Page to Image
+description: Check our "Exporting Fixed Page to Image" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-exporting-fixedpage-to-image
 tags: save,saving,exporting,radfixedpage,image,export,to
 published: True

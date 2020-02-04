@@ -1,7 +1,7 @@
 ---
 title: CRUD operations
 page_title: CRUD operations
-description: CRUD operations
+description: Check our "CRUD operations" documentation article for the RadDomainDataSource WPF control.
 slug: domaindatasource-crud
 tags: crud,operations
 published: True

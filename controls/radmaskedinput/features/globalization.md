@@ -1,7 +1,7 @@
 ---
 title: Globalization Support
 page_title: Globalization Support
-description: Globalization Support
+description: Check our "Globalization Support" documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-globalization
 tags: globalization,support
 published: True

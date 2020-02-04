@@ -1,7 +1,7 @@
 ---
 title: Highlighting Items
 page_title: Highlighting Items
-description: Highlighting Items
+description: Check our "Highlighting Items" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-highlighting
 tags: highlighting,items
 published: True

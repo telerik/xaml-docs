@@ -1,7 +1,7 @@
 ---
 title: Manual vs. Auto Loading
 page_title: Manual vs. Auto Loading
-description: Manual vs. Auto Loading
+description: Check our "Manual vs. Auto Loading" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-loading-manual-auto-loading
 tags: manual,vs.,auto,loading
 published: True

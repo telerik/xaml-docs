@@ -1,7 +1,7 @@
 ---
 title: Implementation
 page_title: Implementation
-description: Implementation
+description: Check our "Implementation" documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-commands-implementation
 tags: commands, implementation
 published: True

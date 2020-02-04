@@ -1,7 +1,7 @@
 ---
 title: Information Layer
 page_title: Information Layer
-description: Information Layer
+description: Check our "Information Layer" documentation article for the RadMap WPF control.
 slug: radmap-features-information-layer
 tags: information,layer
 published: True

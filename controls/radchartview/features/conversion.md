@@ -1,7 +1,7 @@
 ---
 title: Conversion API
 page_title: Conversion API
-description: Conversion API
+description: Check our "Conversion API" documentation article for the RadChartView WPF control.
 slug: radchartview-features-conversion
 tags: conversion,api
 published: True

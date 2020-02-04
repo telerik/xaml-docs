@@ -1,7 +1,7 @@
 ---
 title: Moving
 page_title: Moving
-description: Moving
+description: Check our "Moving" documentation article for the RadDesktopAlert WPF control.
 slug: raddesktopalert-moving
 tags: moving
 published: True

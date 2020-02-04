@@ -1,7 +1,7 @@
 ---
 title: Populate ColorPicker with Business Data
 page_title: Populate ColorPicker with Business Data
-description: Populate ColorPicker with Business Data
+description: Check our "Populate ColorPicker with Business Data" documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-howto-binding-to-object
 tags: populate,colorpicker,with,business,data
 published: True

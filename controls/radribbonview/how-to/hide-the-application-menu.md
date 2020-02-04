@@ -1,7 +1,7 @@
 ---
 title: Hide The Application Menu
 page_title: Hide The Application Menu
-description: Hide The Application Menu
+description: Check our "Hide The Application Menu" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-how-to-hide-the-application-menu
 tags: hide,the,application,menu
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Smart Labels
 page_title: Smart Labels
-description: Smart Labels
+description: Check our "Smart Labels" documentation article for the RadChart WPF control.
 slug: radchart-features-smart-labels
 tags: smart,labels
 published: True

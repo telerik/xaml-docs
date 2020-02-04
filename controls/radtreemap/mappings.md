@@ -1,7 +1,7 @@
 ---
 title: Mappings
 page_title: Mappings
-description: Mappings
+description: Check our "Mappings" documentation article for the RadTreeMap WPF control.
 slug: radtreemap-mappings
 tags: mappings
 published: True

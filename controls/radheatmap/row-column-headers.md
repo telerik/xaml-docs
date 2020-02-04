@@ -1,7 +1,7 @@
 ---
 title: Row/Column Headers
 page_title: Row/Column Headers
-description: Row/Column Headers
+description: Check our "Row/Column Headers" documentation article for the RadHeatMap WPF control.
 slug: radheatmap-row-column-headers
 tags: tooltip, heatmap, row, columnheader, celltooltip, heatmaprowheadersettings, heatmapcolumnheadersettings
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Paging through RadDataPager
 page_title: Paging through RadDataPager
-description: Paging through RadDataPager
+description: Check our "Paging through RadDataPager" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-paging-paging-through-raddatapager
 tags: paging,through,raddatapager
 published: False

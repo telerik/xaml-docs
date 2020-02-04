@@ -1,7 +1,7 @@
 ---
 title: Styling the RibbonScrollViewer
 page_title: Styling the RibbonScrollViewer
-description: Styling the RibbonScrollViewer
+description: Check our "Styling the RibbonScrollViewer" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbonscrollviewer
 tags: styling,the,ribbonscrollviewer
 published: True

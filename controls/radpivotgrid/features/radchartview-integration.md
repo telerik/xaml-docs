@@ -1,7 +1,7 @@
 ---
 title: ChartView Integration
 page_title: ChartView Integration
-description: ChartView Integration
+description: Check our "ChartView Integration" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-radchartview-integration
 tags: chartview,integration
 published: True

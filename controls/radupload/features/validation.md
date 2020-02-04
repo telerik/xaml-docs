@@ -1,7 +1,7 @@
 ---
 title: Upload Validation
 page_title: Upload Validation
-description: Upload Validation
+description: Check our "Upload Validation" documentation article for the RadUpload WPF control.
 slug: radupload-features-upload-validation
 tags: upload,validation
 published: True

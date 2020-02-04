@@ -1,7 +1,7 @@
 ---
 title: Minimization
 page_title: Minimization
-description: Minimization
+description: Check our "Minimization" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-minimization
 tags: minimization
 published: True

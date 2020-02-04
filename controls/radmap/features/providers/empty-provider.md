@@ -1,7 +1,7 @@
 ---
 title: Empty provider
 page_title: Empty provider
-description: Empty provider
+description: Check our "Empty provider" documentation article for the RadMap WPF control.
 slug: radmap-features-empty-provider
 tags: empty,provider
 published: True

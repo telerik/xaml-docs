@@ -1,7 +1,7 @@
 ---
 title: Printing
 page_title: Printing
-description: Printing
+description: Check our "Printing" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-printing
 tags: printing
 published: True

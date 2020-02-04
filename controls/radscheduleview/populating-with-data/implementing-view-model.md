@@ -1,7 +1,7 @@
 ---
 title: Implementing View-ViewModel 
 page_title: Implementing View-ViewModel 
-description: Implementing View-ViewModel 
+description: Check our "Implementing View-ViewModel" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-populating-with-data-implementing-view-model
 tags: implementing,view-viewmodel,
 published: True

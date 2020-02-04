@@ -1,7 +1,7 @@
 ---
 title: How to Customize the Calendar Buttons
 page_title: How to Customize the Calendar Buttons
-description: How to Customize the Calendar Buttons
+description: Check our "How to Customize the Calendar Buttons" documentation article for the RadCalendar WPF control.
 slug: radcalendar-styling-and-appearance-daybuttonstyleselector
 tags: how,to,customize,the,calendar,buttons
 published: True

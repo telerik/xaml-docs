@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadDocking WPF control.
 slug: raddocking-features-save-load-layout-overview
 tags: save/load,layout
 published: True

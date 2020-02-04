@@ -1,7 +1,7 @@
 ---
 title: Styling the No Data Control
 page_title: Styling the No Data Control
-description: Styling the No Data Control
+description: Check our "Styling the No Data Control" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-no-data-control
 tags: styling,the,no,data,control
 published: True

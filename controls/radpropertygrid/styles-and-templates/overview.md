@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-styles-and-templates-overview
 tags: overview
 published: True

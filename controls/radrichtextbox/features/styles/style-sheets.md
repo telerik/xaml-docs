@@ -1,7 +1,7 @@
 ---
 title: Style Sheets
 page_title: Style Sheets
-description: Style Sheets
+description: Check our "Style Sheets" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-style-sheets
 tags: style,sheets
 published: True

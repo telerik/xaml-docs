@@ -1,7 +1,7 @@
 ---
 title: Function Invocation
 page_title: Function Invocation
-description: Function Invocation
+description: Check our "Function Invocation" documentation article for the RadExpressionEditor WPF control.
 slug: radexpressioneditor-expressions-function-invocation
 tags: function,invocation
 published: True

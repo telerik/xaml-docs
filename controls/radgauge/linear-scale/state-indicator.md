@@ -1,7 +1,7 @@
 ---
 title: State Indicator
 page_title: State Indicator
-description: State Indicator
+description: Check our "State Indicator" documentation article for the RadGauge WPF control.
 slug: linear-scale-state-indicator
 tags: state,indicator
 published: True

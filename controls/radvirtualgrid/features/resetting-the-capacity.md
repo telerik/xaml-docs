@@ -1,7 +1,7 @@
 ---
 title: Resetting the Capacity
 page_title: Resetting the Capacity
-description: Resetting the Capacity
+description: Check our "Resetting the Capacity" documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-resetting-the-capacity
 tags: resetting, capacity
 published: True

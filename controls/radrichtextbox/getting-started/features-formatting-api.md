@@ -1,7 +1,7 @@
 ---
 title: Formatting API
 page_title: Formatting API
-description: Formatting API
+description: Check our "Formatting API" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-formatting-api
 tags: formatting,api
 published: True

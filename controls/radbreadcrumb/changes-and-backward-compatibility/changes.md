@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadBreadcrumb WPF control.
 slug: radbreadcrumb-changes
 tags: changes
 published: True

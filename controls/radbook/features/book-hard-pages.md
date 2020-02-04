@@ -1,7 +1,7 @@
 ---
 title: Hard Pages
 page_title: Hard Pages
-description: Hard Pages
+description: Check our "Hard Pages" documentation article for the RadBook WPF control.
 slug: book-hard-pages
 tags: hard,pages
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Crosshair
 page_title: Crosshair
-description: Crosshair
+description: Check our "Crosshair" documentation article for the RadChartView WPF control.
 slug: radchartview-features-crosshair
 tags: crosshair
 published: True

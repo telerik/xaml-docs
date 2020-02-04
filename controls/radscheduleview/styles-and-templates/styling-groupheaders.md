@@ -1,7 +1,7 @@
 ---
 title: Styling the GroupHeaders
 page_title: Styling the GroupHeaders
-description: Styling the GroupHeaders
+description: Check our "Styling the GroupHeaders" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-styling-groupheaders
 tags: styling,the,groupheaders
 published: True

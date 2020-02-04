@@ -1,7 +1,7 @@
 ---
 title: Animation
 page_title: Animation
-description: Animation
+description: Check our "Animation" documentation article for the RadMenu WPF control.
 slug: radmenu-features-animation
 tags: animation
 published: True

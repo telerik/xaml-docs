@@ -1,7 +1,7 @@
 ---
 title: Document Host
 page_title: Document Host
-description: Document Host
+description: Check our "Document Host" documentation article for the RadDocking WPF control.
 slug: raddocking-features-document-host
 tags: document,host
 published: True

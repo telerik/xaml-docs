@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check our "Visual Structure" documentation article for the RadNumericUpDown WPF control.
 slug: radnumericupdown-structure
 tags: structure
 published: True

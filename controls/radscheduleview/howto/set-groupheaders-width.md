@@ -1,7 +1,7 @@
 ---
 title: Set GroupHeaders Width
 page_title: Set GroupHeaders Width
-description: Set GroupHeaders Width
+description: Check our "Set GroupHeaders Width" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-set-groupheaders-width
 tags: set,custom,groupheaders,width
 published: True

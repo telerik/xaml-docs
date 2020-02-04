@@ -1,7 +1,7 @@
 ---
 title: Report Progress Value
 page_title: Report Progress Value
-description: Report Progress Value
+description: Check our "Report Progress Value" documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-features-report-progress-value
 tags: report,progress,value
 published: True

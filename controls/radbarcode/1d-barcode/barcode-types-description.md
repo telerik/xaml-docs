@@ -1,7 +1,7 @@
 ---
 title: Types Description
 page_title: Types Description
-description: Types Description
+description: Check our "Types Description" documentation article for the RadBarcode WPF control.
 slug: radbarcode-barcode-types-description
 tags: types,description
 published: True

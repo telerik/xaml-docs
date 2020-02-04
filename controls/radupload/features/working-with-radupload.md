@@ -1,7 +1,7 @@
 ---
 title: Working with RadUpload
 page_title: Working with RadUpload
-description: Working with RadUpload
+description: Check our "Working with RadUpload" documentation article for the RadUpload WPF control.
 slug: radupload-features-working-with-radupload
 tags: working,with,radupload
 published: True

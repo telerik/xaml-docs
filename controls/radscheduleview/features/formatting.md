@@ -1,7 +1,7 @@
 ---
 title: Formatting
 page_title: Formatting
-description: Formatting
+description: Check our "Formatting" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-formatting
 tags: formatting
 published: True

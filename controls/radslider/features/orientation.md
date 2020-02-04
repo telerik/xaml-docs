@@ -1,7 +1,7 @@
 ---
 title: Orientation
 page_title: Orientation
-description: Orientation
+description: Check our "Orientation" documentation article for the RadSlider WPF control.
 slug: radslider-orientation
 tags: orientation
 published: True

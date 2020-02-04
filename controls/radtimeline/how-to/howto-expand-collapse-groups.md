@@ -1,7 +1,7 @@
 ---
 title: Expand and Collapse Timeline groups
 page_title: Expand and Collapse Timeline groups
-description: Expand and Collapse Timeline groups
+description: Check our "Expand and Collapse Timeline groups" documentation article for the RadTimeline WPF control.
 slug: radtimeline-howto-expand-collapse-groups
 tags: expand,and,collapse,timeline,groups
 published: True

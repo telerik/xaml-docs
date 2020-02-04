@@ -1,7 +1,7 @@
 ---
 title: Global Settings
 page_title: Global Settings
-description: Global Settings
+description: Check our "Global Settings" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-global-settings
 tags: global,settings
 published: True

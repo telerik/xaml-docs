@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Developer Focused Examples
+description: Check our "Developer Focused Examples" documentation article for the RadWindow WPF control.
 slug: radwindow-sdk-examples
 tags: sdk,examples
 published: True

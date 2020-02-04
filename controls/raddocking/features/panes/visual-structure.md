@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check our "Visual Structure" documentation article for the RadDocking WPF control.
 slug: raddocking-panes-visual-structure
 tags: visual,structure
 published: True

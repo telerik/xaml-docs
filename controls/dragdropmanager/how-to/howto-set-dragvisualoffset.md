@@ -1,7 +1,7 @@
 ---
 title: Set Drag Visual Offset
 page_title: Set Drag Visual Offset
-description: Set Drag Visual Offset
+description: Check our "Set Drag Visual Offset" documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-howto-set-dragvisualoffset
 tags: set,drag,visual,offset
 published: True

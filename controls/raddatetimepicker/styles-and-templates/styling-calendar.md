@@ -1,7 +1,7 @@
 ---
 title: Styling the Calendar
 page_title: Styling the Calendar
-description: Styling the Calendar
+description: Check our "Styling the Calendar" documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-styling-calendar
 tags: styling,the,calendar
 published: True

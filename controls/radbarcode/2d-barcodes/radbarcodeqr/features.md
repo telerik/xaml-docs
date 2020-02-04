@@ -1,7 +1,7 @@
 ---
 title: Features
 page_title: Features
-description: Features
+description: Check our "Features" documentation article for the RadBarcode WPF control.
 slug: radbarcodeqr-features
 tags: features
 published: True

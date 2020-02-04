@@ -1,7 +1,7 @@
 ---
 title: Marker Geometry
 page_title: Marker Geometry
-description: Marker Geometry
+description: Check our "Marker Geometry" documentation article for the RadLegend WPF control.
 slug: radlegend-marker-geometry
 tags: marker,geometry
 published: True

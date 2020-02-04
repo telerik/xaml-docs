@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the TouchManager WPF control.
 slug: touchmanager-getting-started
 tags: getting,started,touch,manager,touchmanager
 published: True

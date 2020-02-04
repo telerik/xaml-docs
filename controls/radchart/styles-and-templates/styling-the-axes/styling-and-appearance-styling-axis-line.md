@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Line
 page_title: Styling the Axis Line
-description: Styling the Axis Line
+description: Check our "Styling the Axis Line" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axis-line
 tags: styling,the,axis,line
 published: True

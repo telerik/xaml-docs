@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadToolBar WPF control.
 slug: radtoolbar-getting-started
 tags: overview
 published: True

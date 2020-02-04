@@ -1,7 +1,7 @@
 ---
 title: CameraViewPoint
 page_title: CameraViewPoint
-description: CameraViewPoint
+description: Check our "CameraViewPoint" documentation article for the RadCoverflow WPF control.
 slug: coverflow-camera
 tags: cameraviewpoint
 published: True

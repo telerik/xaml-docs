@@ -1,7 +1,7 @@
 ---
 title: Section Columns
 page_title: Section Columns
-description: Section Columns
+description: Check our "Section Columns" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-section-columns
 tags: section, columns
 published: True

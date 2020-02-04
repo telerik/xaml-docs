@@ -1,7 +1,7 @@
 ---
 title: Import/Export
 page_title: Import/Export
-description: Import/Export
+description: Check our "Import/Export" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-import-export
 tags: import, export, save, open
 published: True

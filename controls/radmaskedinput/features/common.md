@@ -1,7 +1,7 @@
 ---
 title: Common
 page_title: Common
-description: Common
+description: Check our "Common" documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-common
 tags: common
 published: True

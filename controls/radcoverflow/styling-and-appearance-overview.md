@@ -1,7 +1,7 @@
 ---
 title: Styling and Appearance
 page_title: Styling and Appearance
-description: Styling and Appearance
+description: Check our "Styling and Appearance" documentation article for the RadCoverflow WPF control.
 slug: coverflow-styling-and-appearance-overview
 tags: styling,and,appearance
 published: True

@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
 page_title: AutoComplete
-description: AutoComplete
+description: Check our "AutoComplete" documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-autocomplete
 tags: autocomplete
 published: True

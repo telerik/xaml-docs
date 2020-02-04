@@ -1,7 +1,7 @@
 ---
 title: Appearance
 page_title: Appearance
-description: Appearance
+description: Check our "Appearance" documentation article for the RadButtons WPF control.
 slug: radbuttons-features-appearance
 tags: appearance
 published: True

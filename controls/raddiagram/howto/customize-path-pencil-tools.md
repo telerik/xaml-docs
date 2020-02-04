@@ -1,7 +1,7 @@
 ---
 title: Customize the Path and Pencil tools
 page_title: Customize the Path and Pencil tools
-description: Customize the Path and Pencil tools
+description: Check our "Customize the Path and Pencil tools" documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-customize-path-pencil-tools
 tags: how,to,customize,path,pencil,tools
 published: True

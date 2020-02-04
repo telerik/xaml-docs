@@ -1,7 +1,7 @@
 ---
 title: Save As
 page_title: Save As
-description: Save As
+description: Check our "Save As" documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-save-as
 tags: save
 published: True

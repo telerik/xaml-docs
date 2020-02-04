@@ -1,7 +1,7 @@
 ---
 title: In Multiple Chart Areas
 page_title: In Multiple Chart Areas
-description: In Multiple Chart Areas
+description: Check our "In Multiple Chart Areas" documentation article for the RadChart WPF control.
 slug: radchart-features-drill-down-in-multiple-chart-areas
 tags: in,multiple,chart,areas
 published: True

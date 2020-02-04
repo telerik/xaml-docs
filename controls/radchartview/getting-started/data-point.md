@@ -1,7 +1,7 @@
 ---
 title: Data Point
 page_title: Data Point
-description: Data Point
+description: Check our "Data Point" documentation article for the RadChartView WPF control.
 slug: radchartview-getting-started-data-point
 tags: getting, started, datapoint,data,point,categorical,scatter,pie,polar,bubble,range
 published: True

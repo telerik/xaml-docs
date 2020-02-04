@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: Touch Support
+description: Check our "Touch Support" documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-touch-support
 tags: touch,support
 published: True

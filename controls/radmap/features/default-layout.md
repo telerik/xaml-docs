@@ -1,7 +1,7 @@
 ---
 title: Default Layout
 page_title: Default Layout
-description: Default Layout
+description: Check our "Default Layout" documentation article for the RadMap WPF control.
 slug: radmap-features-default-layout
 tags: default,layout
 published: True

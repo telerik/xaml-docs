@@ -1,7 +1,7 @@
 ---
 title: Printing
 page_title: Printing
-description: Printing
+description: Check our "Printing" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-printing
 tags: printing
 published: True

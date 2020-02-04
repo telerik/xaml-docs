@@ -1,7 +1,7 @@
 ---
 title: Table Styles Gallery
 page_title: Table Styles Gallery
-description: Table Styles Gallery
+description: Check our "Table Styles Gallery" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-ui-for-applying-formatting-table-styles-gallery
 tags: table,styles,gallery
 published: True

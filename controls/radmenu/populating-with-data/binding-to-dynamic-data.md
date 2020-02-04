@@ -1,7 +1,7 @@
 ---
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
-description: Binding to Dynamic Data
+description: Check our "Binding to Dynamic Data" documentation article for the RadMenu WPF control.
 slug: radmenu-populating-with-data-binding-to-dynamic-data
 tags: binding,to,dynamic,data
 published: True

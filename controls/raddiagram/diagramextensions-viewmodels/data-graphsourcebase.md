@@ -1,7 +1,7 @@
 ---
 title: GraphSourceBase
 page_title: GraphSourceBase
-description: GraphSourceBase
+description: Check our "GraphSourceBase" documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-graphsourcebase
 tags: graphsourcebase
 published: True

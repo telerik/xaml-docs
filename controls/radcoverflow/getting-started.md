@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadCoverflow WPF control.
 slug: coverflow-getting-started
 tags: getting,started
 published: True

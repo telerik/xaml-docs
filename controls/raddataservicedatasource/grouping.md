@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-description: Grouping
+description: Check our "Grouping" documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-grouping
 tags: grouping
 published: True

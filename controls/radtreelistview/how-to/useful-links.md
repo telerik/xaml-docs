@@ -1,7 +1,7 @@
 ---
 title: Useful Links
 page_title: Useful Links
-description: Useful Links
+description: Check our "Useful Links" documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-how-to-useful-links
 tags: useful,links
 published: True

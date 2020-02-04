@@ -1,7 +1,7 @@
 ---
 title: SlotSelectionBehavior
 page_title: SlotSelectionBehavior
-description: SlotSelectionBehavior
+description: Check our "SlotSelectionBehavior" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-slot-selection-behavior
 tags: slotselectionbehavior
 published: True

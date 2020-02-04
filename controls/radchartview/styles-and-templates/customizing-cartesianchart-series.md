@@ -1,7 +1,7 @@
 ---
 title: Customizing CartesianChart Series
 page_title: Customizing CartesianChart Series
-description: Customizing CartesianChart Series
+description: Check our "Customizing CartesianChart Series" documentation article for the RadChartView WPF control.
 slug: radchartview-styles-and-templates-customizing-cartesianchart-series
 tags: customizing,cartesianchart,series
 published: True

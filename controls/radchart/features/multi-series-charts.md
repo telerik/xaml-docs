@@ -1,7 +1,7 @@
 ---
 title: Multi-series Charts
 page_title: Multi-series Charts
-description: Multi-series Charts
+description: Check our "Multi-series Charts" documentation article for the RadChart WPF control.
 slug: radchart-features-multi-series-charts
 tags: multi-series,charts
 published: True

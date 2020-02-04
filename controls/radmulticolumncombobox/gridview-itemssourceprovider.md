@@ -1,7 +1,7 @@
 ---
 title: GridView ItemsSourceProvider
 page_title: GridView ItemsSourceProvider
-description: GridView ItemsSourceProvider
+description: Check our "GridView ItemsSourceProvider" documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-gridview-itemssourceprovider
 tags: gridview, itemssource, provider
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Display HTML string in RadHtmlPlaceholder
 page_title: Display HTML string in RadHtmlPlaceholder
-description: Display HTML string in RadHtmlPlaceholder
+description: Check our "Display HTML string in RadHtmlPlaceholder" documentation article for the RadHtmlPlaceholder WPF control.
 slug: radhtmlplaceholder-howto-displayhtml
 tags: display,html,string,in,radhtmlplaceholder
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Disable Drop at Specific Location
 page_title: Disable Drop at Specific Location
-description: Disable Drop at Specific Location
+description: Check our "Disable Drop at Specific Location" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-disable-drop-specific-location
 tags: disable,drop,at,specific,location
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Change the Default Height of a TreeViewItem
 page_title: Change the Default Height of a TreeViewItem
-description: Change the Default Height of a TreeViewItem
+description: Check our "Change the Default Height of a TreeViewItem" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-change-default-height-treeviewitem
 tags: change,the,default,height,of,a,treeviewitem
 published: True

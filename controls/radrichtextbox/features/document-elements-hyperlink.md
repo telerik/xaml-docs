@@ -1,7 +1,7 @@
 ---
 title: Hyperlink
 page_title: Hyperlink
-description: Hyperlink
+description: Check our "Hyperlink" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
 published: True

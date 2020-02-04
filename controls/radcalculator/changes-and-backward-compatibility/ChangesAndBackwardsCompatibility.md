@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our "Changes" documentation article for the RadCalculator WPF control.
 slug: radcalculator-changesandbackwardscompatibility
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Basics
 page_title: Basics
-description: Basics
+description: Check our "Basics" documentation article for the RadGauge WPF control.
 slug: radgauge-features-labels-basics
 tags: basics
 published: True

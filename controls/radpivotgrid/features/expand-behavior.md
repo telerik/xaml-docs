@@ -1,7 +1,7 @@
 ---
 title: Expand Behavior
 page_title: Expand Behavior
-description: Expand Behavior
+description: Check our "Expand Behavior" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-expand-behavior
 tags: expand,behavior
 published: True

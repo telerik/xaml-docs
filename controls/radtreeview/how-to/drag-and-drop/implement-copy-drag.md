@@ -1,7 +1,7 @@
 ---
 title: Implement Copy Drag
 page_title: Implement Copy Drag
-description: Implement Copy Drag
+description: Check our "Implement Copy Drag" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-implement-copy-drag
 tags: implement,copy,drag
 published: True

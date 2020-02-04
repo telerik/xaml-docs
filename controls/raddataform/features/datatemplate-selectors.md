@@ -1,7 +1,7 @@
 ---
 title: DataTemplate Selectors
 page_title: DataTemplate Selectors
-description: DataTemplate Selectors
+description: Check our "DataTemplate Selectors" documentation article for the RadDataForm WPF control.
 slug: raddataform-datatemplate-selectors
 tags: datatemplate,selectors
 published: True

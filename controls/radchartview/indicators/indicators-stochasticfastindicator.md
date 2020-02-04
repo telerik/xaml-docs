@@ -1,7 +1,7 @@
 ---
 title: StochasticFastIndicator
 page_title: StochasticFastIndicator
-description: StochasticFastIndicator
+description: Check our "StochasticFastIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-stochasticfastindicator
 tags: financial, indicators, stochasticfastindicator
 publish: True

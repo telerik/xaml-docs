@@ -1,7 +1,7 @@
 ---
 title: Bind RadTreeView to Self-Referencing Data
 page_title: Bind RadTreeView to Self-Referencing Data
-description: Bind RadTreeView to Self-Referencing Data
+description: Check our "Bind RadTreeView to Self-Referencing Data" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-bind-to-self-referencing-data
 tags: bind,radtreeview,to,self-referencing,data
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our "Getting Started" documentation article for the RadRadialMenu WPF control.
 slug: radradialmenu-getting-started
 tags: getting,started
 published: True

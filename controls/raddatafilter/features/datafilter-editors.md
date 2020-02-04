@@ -1,7 +1,7 @@
 ---
 title: Filter Editors
 page_title: Filter Editors
-description: Filter Editors
+description: Check our "Filter Editors" documentation article for the RadDataFilter WPF control.
 slug: datafilter-editors
 tags: filter,editors
 published: True

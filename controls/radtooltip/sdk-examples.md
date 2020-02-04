@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Developer Focused Examples
+description: Check our "Developer Focused Examples" documentation article for the RadToolTip WPF control.
 slug: radtooltip-sdk-examples
 tags: sdk,examples
 published: False

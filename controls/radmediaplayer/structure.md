@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Structure
+description: Check our "Structure" documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-structure
 tags: structure
 publish: True

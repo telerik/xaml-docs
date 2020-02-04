@@ -1,7 +1,7 @@
 ---
 title: Inverse Axis
 page_title: Inverse Axis
-description: Inverse Axis
+description: Check our "Inverse Axis" documentation article for the RadChart WPF control.
 slug: radchart-features-axes-inverse-axis
 tags: inverse,axis
 published: True

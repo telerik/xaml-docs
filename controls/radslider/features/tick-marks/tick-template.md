@@ -1,7 +1,7 @@
 ---
 title: Tick template
 page_title: Tick template
-description: Tick template
+description: Check our "Tick template" documentation article for the RadSlider WPF control.
 slug: radslider-tick-template
 tags: tick,template
 published: True

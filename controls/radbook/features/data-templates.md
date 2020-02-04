@@ -1,7 +1,7 @@
 ---
 title: Data Binding and Data Templates
 page_title: Data Binding and Data Templates
-description: Data Binding and Data Templates
+description: Check our "Data Binding and Data Templates" documentation article for the RadBook WPF control.
 slug: radbook-data-templates
 tags: data,binding,and,data,templates
 published: True

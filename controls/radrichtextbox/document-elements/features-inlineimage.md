@@ -1,7 +1,7 @@
 ---
 title: ImageInline
 page_title: ImageInline
-description: ImageInline
+description: Check our "ImageInline" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-inlineimage
 tags: Image,Inline
 published: True

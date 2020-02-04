@@ -1,7 +1,7 @@
 ---
 title: DropDown Button
 page_title: DropDown Button
-description: DropDown Button
+description: Check our "DropDown Button" documentation article for the RadButtons WPF control.
 slug: radbuttons-features-dropdown-button
 tags: dropdown,button
 published: True

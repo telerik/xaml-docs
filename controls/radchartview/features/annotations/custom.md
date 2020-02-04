@@ -1,7 +1,7 @@
 ---
 title: Custom Annotations
 page_title: Custom Annotations
-description: Custom Annotations
+description: Check our "Custom Annotations" documentation article for the RadChartView WPF control.
 slug: radchartview-annotations-custom
 tags: custom,annotations
 published: True

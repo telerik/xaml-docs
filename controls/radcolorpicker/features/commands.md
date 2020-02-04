@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Commands
+description: Check our "Commands" documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-commands
 tags: commands
 published: True

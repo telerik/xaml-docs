@@ -1,7 +1,7 @@
 ---
 title: Events Overview
 page_title: Events Overview
-description: Events Overview
+description: Check our "Events Overview" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-events-overview
 tags: events,overview
 published: True

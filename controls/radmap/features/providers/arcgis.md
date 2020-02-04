@@ -1,7 +1,7 @@
 ---
 title: ArcGIS Online Map Provider
 page_title: ArcGIS Online Map Provider
-description: ArcGIS Online Map Provider
+description: Check our "ArcGIS Online Map Provider" documentation article for the RadMap WPF control.
 slug: radmap-features-providers-arcgis
 tags: arcgis,online,map,provider
 published: True

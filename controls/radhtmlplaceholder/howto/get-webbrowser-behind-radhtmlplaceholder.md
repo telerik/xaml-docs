@@ -1,7 +1,7 @@
 ---
 title: Get the WebBrowser behind the RadHtmlPlaceholder control
 page_title: Get the WebBrowser behind the RadHtmlPlaceholder control
-description: Get the WebBrowser behind the RadHtmlPlaceholder control
+description: Check our "Get the WebBrowser behind the RadHtmlPlaceholder control" documentation article for the RadHtmlPlaceholder WPF control.
 slug: radhtmlplaceholder-howto-get-webbrowser
 tags: get,radhtmlplaceholder,behind,webbrowser,browser,web
 published: True

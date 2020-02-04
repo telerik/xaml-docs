@@ -1,7 +1,7 @@
 ---
 title: TimeSpanComponents
 page_title: TimeSpanComponents
-description: TimeSpanComponents
+description: Check our "TimeSpanComponents" documentation article for the RadTimeSpanPicker WPF control.
 slug: radtimespanpicker-timespancomponents
 tags: visual,structure
 published: True

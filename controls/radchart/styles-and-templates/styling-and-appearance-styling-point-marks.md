@@ -1,7 +1,7 @@
 ---
 title: Styling the Point Marks
 page_title: Styling the Point Marks
-description: Styling the Point Marks
+description: Check our "Styling the Point Marks" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-point-marks
 tags: styling,the,point,marks
 published: True

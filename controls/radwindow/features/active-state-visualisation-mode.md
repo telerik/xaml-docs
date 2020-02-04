@@ -1,7 +1,7 @@
 ---
 title: Active State Visualization Mode
 page_title: Active State Visualization Mode
-description: Active State Visualization Mode
+description: Check our "Active State Visualization Mode" documentation article for the RadWindow WPF control.
 slug: radwindow-features-active-state-visualisation-mode
 tags: state, active, visualisation 
 published: True

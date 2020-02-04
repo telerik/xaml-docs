@@ -1,7 +1,7 @@
 ---
 title: Tips and Tricks
 page_title: Tips and Tricks
-description: Tips and Tricks
+description: Check our "Tips and Tricks" documentation article for the RadDiagram WPF control.
 slug: raddiagram-performance-tips-tricks
 tags: tips,and,tricks
 published: True

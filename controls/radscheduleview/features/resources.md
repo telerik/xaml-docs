@@ -1,7 +1,7 @@
 ---
 title: Resources
 page_title: Resources
-description: Resources
+description: Check our "Resources" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-resources
 tags: resources
 published: True

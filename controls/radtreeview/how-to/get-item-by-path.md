@@ -1,7 +1,7 @@
 ---
 title: Get Item by Path
 page_title: Get Item by Path
-description: Get Item by Path
+description: Check our "Get Item by Path" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-get-item-by-path
 tags: get,item,by,path
 published: True

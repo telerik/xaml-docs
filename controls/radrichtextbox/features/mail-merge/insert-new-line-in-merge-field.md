@@ -1,7 +1,7 @@
 ---
 title: Insert a New Line in Merge Field
 page_title: Insert a New Line in Merge Field
-description: Insert a New Line in Merge Field
+description: Check our "Insert a New Line in Merge Field" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-mail-merge-insert-new-line-in-merge-field
 tags: mail,merge,vertical,tab,line
 published: True

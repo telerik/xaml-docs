@@ -1,7 +1,7 @@
 ---
 title: Chart Point-marks
 page_title: Chart Point-marks
-description: Chart Point-marks
+description: Check our "Chart Point-marks" documentation article for the RadChart WPF control.
 slug: radchart-features-chart-point-marks
 tags: chart,point-marks
 published: True

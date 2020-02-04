@@ -1,7 +1,7 @@
 ---
 title: Model
 page_title: Model
-description: Model
+description: Check our "Model" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-model
 tags: model
 published: True

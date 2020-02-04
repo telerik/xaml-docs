@@ -1,7 +1,7 @@
 ---
 title: Working with Selection
 page_title: Working with Selection
-description: Working with Selection
+description: Check our "Working with Selection" documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-selection
 tags: working,with,selection
 published: True

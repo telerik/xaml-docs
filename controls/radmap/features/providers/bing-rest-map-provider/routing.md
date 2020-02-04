@@ -1,7 +1,7 @@
 ---
 title: Routing
 page_title: Routing
-description: Routing
+description: Check our "Routing" documentation article for the RadMap WPF control.
 slug: radmap-features-providers-bing-rest-map-provider-routing
 tags: bing,map,provider,rest,routing
 published: True

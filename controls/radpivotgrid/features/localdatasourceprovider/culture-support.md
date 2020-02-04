@@ -1,7 +1,7 @@
 ---
 title: Culture Support
 page_title: Culture Support
-description: Culture Support
+description: Check our "Culture Support" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-culture-support
 tags: culture,support
 published: True

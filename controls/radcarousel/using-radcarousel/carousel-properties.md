@@ -1,7 +1,7 @@
 ---
 title: Controlling RadCarousel Appearance
 page_title: Controlling RadCarousel Appearance
-description: Controlling RadCarousel Appearance
+description: Check our "Controlling RadCarousel Appearance" documentation article for the RadCarousel WPF control.
 slug: carousel-properties
 tags: controlling,radcarousel,appearance
 published: True

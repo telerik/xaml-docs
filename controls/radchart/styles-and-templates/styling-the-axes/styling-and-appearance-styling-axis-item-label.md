@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Item Label
 page_title: Styling the Axis Item Label
-description: Styling the Axis Item Label
+description: Check our "Styling the Axis Item Label" documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axis-item-label
 tags: styling,the,axis,item,label
 published: True

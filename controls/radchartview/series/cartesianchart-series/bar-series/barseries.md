@@ -1,7 +1,7 @@
 ---
 title: BarSeries
 page_title: BarSeries
-description: BarSeries
+description: Check our "BarSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-barseries
 tags: barseries
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Virtualization Layer
 page_title: Virtualization Layer
-description: Virtualization Layer
+description: Check our "Virtualization Layer" documentation article for the RadMap WPF control.
 slug: radmap-features-virtualization-layer
 tags: virtualization,layer
 published: True

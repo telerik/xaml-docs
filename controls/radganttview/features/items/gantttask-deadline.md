@@ -1,7 +1,7 @@
 ---
 title: GanttTask Deadline
 page_title: GanttTask Deadline
-description: GanttTask Deadline
+description: Check our "GanttTask Deadline" documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-gantttask-deadline
 tags: gantttask,deadline
 published: True

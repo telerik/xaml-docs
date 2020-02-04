@@ -1,7 +1,7 @@
 ---
 title: Memory Functionality
 page_title: Memory Functionality
-description: Memory Functionality
+description: Check our "Memory Functionality" documentation article for the RadCalculator WPF control.
 slug: radcalculator_memoryfunctionality
 tags: memory,functionality
 published: True

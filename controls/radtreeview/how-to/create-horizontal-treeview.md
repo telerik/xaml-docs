@@ -1,7 +1,7 @@
 ---
 title: Create Horizontal TreeView
 page_title: Create Horizontal TreeView
-description: Create Horizontal TreeView
+description: Check our "Create Horizontal TreeView" documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-create-horizontal-treeview
 tags: create,horizontal,treeview
 published: True

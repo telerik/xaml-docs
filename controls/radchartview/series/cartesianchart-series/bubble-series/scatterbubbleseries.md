@@ -1,7 +1,7 @@
 ---
 title: ScatterBubbleSeries
 page_title: ScatterBubbleSeries
-description: ScatterBubbleSeries
+description: Check our "ScatterBubbleSeries" documentation article for the RadChartView WPF control.
 slug: radchartview-series-scatterbubbleseries
 tags: ScatterBubbleSeries
 published: True

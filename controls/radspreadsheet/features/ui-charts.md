@@ -1,7 +1,7 @@
 ---
 title: Charts
 page_title: Charts
-description: Charts
+description: Check our "Charts" documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-charts
 tags: charts
 published: True

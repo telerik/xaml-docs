@@ -1,7 +1,7 @@
 ---
 title: Backwards compatibility
 page_title: Backwards compatibility
-description: Backwards compatibility
+description: Check our "Backwards compatibility" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-backwards-compatibility
 tags: backwards,compatibility
 published: True

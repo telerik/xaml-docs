@@ -1,7 +1,7 @@
 ---
 title: WeightedMovingAverageIndicator
 page_title: WeightedMovingAverageIndicator
-description: WeightedMovingAverageIndicator
+description: Check our "WeightedMovingAverageIndicator" documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-weightedmovingaverageindicator
 tags: financial, indicators, weightedmovingaverageindicator
 publish: True

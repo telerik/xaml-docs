@@ -1,7 +1,7 @@
 ---
 title: Group Filtering
 page_title: Group Filtering
-description: Group Filtering
+description: Check our "Group Filtering" documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-filtering-olap
 tags: group,filtering
 published: True

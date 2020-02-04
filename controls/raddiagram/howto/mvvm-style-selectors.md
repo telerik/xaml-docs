@@ -1,7 +1,7 @@
 ---
 title: Use StyleSelectors in an MVVM Diagramming Application
 page_title: Use StyleSelectors in an MVVM Diagramming Application
-description: Use StyleSelectors in an MVVM Diagramming Application
+description: Check our "Use StyleSelectors in an MVVM Diagramming Application" documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-mvvm-style-selectors
 tags: use,styleselectors,in,an,mvvm,diagramming,application
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our "Events" documentation article for the TouchManager WPF control.
 slug: touchmanager-events
 tags: events,touch,manager,touchmanager,touchenter,touchdown,touchleave,touchup,touchmove
 published: True

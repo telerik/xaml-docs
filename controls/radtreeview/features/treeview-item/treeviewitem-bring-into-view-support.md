@@ -1,7 +1,7 @@
 ---
 title: BringIntoView Support
 page_title: BringIntoView Support
-description: BringIntoView Support
+description: Check our "BringIntoView Support" documentation article for the RadTreeView WPF control.
 slug: radtreeview-features-treeviewitem-bring-into-view-support
 tags: bringintoview,support
 published: True

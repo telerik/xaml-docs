@@ -1,7 +1,7 @@
 ---
 title: Ribbon Group
 page_title: Ribbon Group
-description: Ribbon Group
+description: Check our "Ribbon Group" documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-group
 tags: ribbon,group
 published: True

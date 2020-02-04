@@ -1,7 +1,7 @@
 ---
 title: Restrict the Draggable Area
 page_title: Restrict the Draggable Area
-description: Restrict the Draggable Area
+description: Check our "Restrict the Draggable Area" documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-customize-dragging
 tags: restrict,the,draggable,area
 published: True

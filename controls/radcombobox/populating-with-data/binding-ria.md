@@ -1,7 +1,7 @@
 ---
 title: Binding to RIA Service
 page_title: Binding to RIA Service
-description: Binding to RIA Service
+description: Check our "Binding to RIA Service" documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-binding-ria
 tags: binding,to,ria,service
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the Lines
 page_title: Styling the Lines
-description: Styling the Lines
+description: Check our "Styling the Lines" documentation article for the RadTreeView WPF control.
 slug: radtreeview-styling-appearance-styling-line
 tags: styling,the,lines
 published: True

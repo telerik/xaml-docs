@@ -1,7 +1,7 @@
 ---
 title: Choose Header Template by Custom Logic
 page_title: Choose Header Template by Custom Logic
-description: Choose Header Template by Custom Logic
+description: Check our "Choose Header Template by Custom Logic" documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-templating-custom-header-template
 tags: choose,header,template,by,custom,logic
 published: True

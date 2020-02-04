@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our "Overview" documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-overview
 tags: overview
 published: True

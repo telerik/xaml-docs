@@ -1,7 +1,7 @@
 ---
 title: Editing Images
 page_title: Editing Images
-description: Editing Images
+description: Check our "Editing Images" documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-editing-images
 tags: editing,images
 published: True

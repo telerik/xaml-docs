@@ -1,7 +1,7 @@
 ---
 title: How to configure the VisibleRange
 page_title: How to configure the VisibleRange
-description: How to configure the VisibleRange
+description: Check our "How to configure the VisibleRange" documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-viewdefinitions-configure-visiblerange
 tags: how,to,configure,the,visiblerange
 published: True

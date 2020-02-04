@@ -1,7 +1,7 @@
 ---
 title: KML Data Import
 page_title: KML Data Import
-description: KML Data Import
+description: Check our "KML Data Import" documentation article for the RadMap WPF control.
 slug: radmap-features-kml-data-import
 tags: kml,data,import
 published: True

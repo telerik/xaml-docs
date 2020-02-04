@@ -1,7 +1,7 @@
 ---
 title: Templated Nodes
 page_title: Templated Nodes
-description: Templated Nodes
+description: Check our "Templated Nodes" documentation article for the RadTreeView WPF control.
 slug: radtreeview-styles-and-templates-templated-nodes
 tags: templated,nodes
 published: True

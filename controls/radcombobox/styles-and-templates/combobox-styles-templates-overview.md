@@ -1,7 +1,7 @@
 ---
 title: Customizing Appearance
 page_title: Customizing Appearance
-description: Overview
+description: This article points to the RadComboBox API that can be used to customize its appearance using styles and templates.
 slug: combobox-styles-templates-overview
 tags: textboxstyle,selectionboxtemplate
 published: True
@@ -32,7 +32,7 @@ You can edit the control template of RadComboBox in order to achieve visualizati
 
 To apply the customized ControlTemplate, use the __NonEditableTemplate__ and __EditableTemplate__ properties of RadComboBox. NonEditableTemplate is applied when the __IsEditable__ property of the control is set to False (default). EditableTemplate is applied when IsEditable is True.
 
->All elements in the ControlTemplate that contains "PART_" in their Name should be presented in the template. Those are required elements used in code by the control. Removing the required elements will lead to missing functionality or runtime errors.
+>All elements in the ControlTemplate that contains "PART_" in their Name should be present in the template. Those are required elements used in code by the control. Removing the required elements will lead to missing functionality or runtime errors.
 
 ## See Also
 * [Edit Modes]({%slug radcombobox-features-edit-modes%})

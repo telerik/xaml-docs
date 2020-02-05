@@ -1,7 +1,7 @@
 ---
 title: Formatting
 page_title: Formatting
-description: Formatting
+description: Check our &quot;Formatting&quot; documentation article for the RadNumericUpDown WPF control.
 slug: radnumericupdown-formatting
 tags: formatting
 published: True

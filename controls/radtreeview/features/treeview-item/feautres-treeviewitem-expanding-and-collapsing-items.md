@@ -1,7 +1,7 @@
 ---
 title: Expanding and Collapsing Items
 page_title: Expanding and Collapsing Items
-description: Expanding and Collapsing Items
+description: Check our &quot;Expanding and Collapsing Items&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-feautres-treeviewitem-expanding-and-collapsing-items
 tags: expanding,and,collapsing,items
 published: True

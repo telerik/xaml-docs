@@ -1,7 +1,7 @@
 ---
 title: Scrolling
 page_title: Scrolling
-description: Scrolling
+description: Check our &quot;Scrolling&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-scrolling
 tags: scrolling, auto-scrolling
 published: True

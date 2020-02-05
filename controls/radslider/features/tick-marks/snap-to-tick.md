@@ -1,7 +1,7 @@
 ---
 title: Snap to Tick
 page_title: Snap to Tick
-description: Snap to Tick
+description: Check our &quot;Snap to Tick&quot; documentation article for the RadSlider WPF control.
 slug: radslider-snap-to-tick
 tags: snap,to,tick
 published: True

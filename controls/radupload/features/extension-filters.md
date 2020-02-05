@@ -1,7 +1,7 @@
 ---
 title: Extension Filters
 page_title: Extension Filters
-description: Extension Filters
+description: Check our &quot;Extension Filters&quot; documentation article for the RadUpload WPF control.
 slug: radupload-features-extension-filters
 tags: extension,filters
 published: True

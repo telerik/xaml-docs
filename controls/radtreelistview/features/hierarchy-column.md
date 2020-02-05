@@ -1,7 +1,7 @@
 ---
 title: Hierarchy Column
 page_title: Hierarchy Column
-description: Hierarchy Column
+description: Check our &quot;Hierarchy Column&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-hierarchy-column
 tags: hierarchy,column
 published: True

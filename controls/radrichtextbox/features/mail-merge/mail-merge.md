@@ -1,7 +1,7 @@
 ---
 title: Mail Merge
 page_title: Mail Merge
-description: Mail Merge
+description: Check our &quot;Mail Merge&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-mail-merge
 tags: mail,merge
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Implement Drag and Drop Between TreeViews
 page_title: Implement Drag and Drop Between TreeViews
-description: Implement Drag and Drop Between TreeViews
+description: Check our &quot;Implement Drag and Drop Between TreeViews&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-implement-drag-and-drop-between-two-treeviews
 tags: implement,drag,and,drop,between,treeviews
 published: True

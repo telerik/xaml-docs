@@ -1,7 +1,7 @@
 ---
 title: Spreadsheet UI
 page_title: Spreadsheet UI
-description: Spreadsheet UI
+description: Check our &quot;Spreadsheet UI&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-getting-started-spreadsheet-ui
 tags: spreadsheet, ribbon, ui, context menu, default look
 published: True

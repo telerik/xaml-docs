@@ -1,7 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: ItemTemplateSelector
-description: ItemTemplateSelector
+description: Check our &quot;ItemTemplateSelector&quot; documentation article for the RadTileList WPF control.
 slug: radtilelist-itemtemplateselector
 tags: itemtemplateselector
 published: True

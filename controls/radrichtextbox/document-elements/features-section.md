@@ -1,7 +1,7 @@
 ---
 title: Section
 page_title: Section
-description: Section
+description: Check our &quot;Section&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-section
 tags: section, column
 published: True

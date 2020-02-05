@@ -1,7 +1,7 @@
 ---
 title: AutoBind Attached Behavior
 page_title: AutoBind Attached Behavior
-description: AutoBind Attached Behavior
+description: Check our &quot;AutoBind Attached Behavior&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-autobind
 tags: autobind,attached,behavior
 published: True

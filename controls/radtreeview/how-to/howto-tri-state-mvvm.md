@@ -1,7 +1,7 @@
 ---
 title: Implement a Tri-State CheckBox logic using MVVM
 page_title: Implement a Tri-State CheckBox logic using MVVM
-description: Implement a Tri-State CheckBox logic using MVVM
+description: Check our &quot;Implement a Tri-State CheckBox logic using MVVM&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-tri-state-mvvm
 tags: implement,a,tri-state,checkbox,logic,using,mvvm
 published: True

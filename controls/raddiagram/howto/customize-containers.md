@@ -1,7 +1,7 @@
 ---
 title: Customize a ContainerShape
 page_title: Customize a ContainerShape
-description: Customize a ContainerShape
+description: Check our &quot;Customize a ContainerShape&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-customize-containers
 tags: customize,a,containershape
 published: True

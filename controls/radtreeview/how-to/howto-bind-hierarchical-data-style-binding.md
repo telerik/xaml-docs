@@ -1,7 +1,7 @@
 ---
 title: Bind RadTreeView to Hierarchical Data and Use Style Binding
 page_title: Bind RadTreeView to Hierarchical Data and Use Style Binding
-description: Bind RadTreeView to Hierarchical Data and Use Style Binding
+description: Check our &quot;Bind RadTreeView to Hierarchical Data and Use Style Binding&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-bind-hierarchical-data-style-binding
 tags: bind,radtreeview,to,hierarchical,data,and,use,style,binding
 published: True

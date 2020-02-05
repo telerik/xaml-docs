@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Tick
 page_title: Styling the Axis Tick
-description: Styling the Axis Tick
+description: Check our &quot;Styling the Axis Tick&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axis-tick
 tags: styling,the,axis,tick
 published: True

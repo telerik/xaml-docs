@@ -1,7 +1,7 @@
 ---
 title: Using RadCarouselPanel with Items Controls
 page_title: Using RadCarouselPanel with Items Controls
-description: Using RadCarouselPanel with Items Controls
+description: Check our &quot;Using RadCarouselPanel with Items Controls&quot; documentation article for the RadCarousel WPF control.
 slug: carousel-radcarouselpanel-items-controls
 tags: using,radcarouselpanel,with,items,controls
 published: True

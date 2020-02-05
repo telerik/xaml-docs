@@ -1,7 +1,7 @@
 ---
 title: Percent Combo Box
 page_title: Percent Combo Box
-description: Percent Combo Box
+description: Check our &quot;Percent Combo Box&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-percent-combo-box
 tags: percent,combo,box
 published: False

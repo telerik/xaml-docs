@@ -1,7 +1,7 @@
 ---
 title: Create Compass
 page_title: Create Compass
-description: Create Compass
+description: Check our &quot;Create Compass&quot; documentation article for the RadGauge WPF control.
 slug: chart-customize-radialgauge-layout
 tags: create,compass
 published: True

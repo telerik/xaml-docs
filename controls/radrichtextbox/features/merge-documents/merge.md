@@ -1,7 +1,7 @@
 ---
 title: Insert Document at Caret Position
 page_title: Insert Document at Caret Position
-description: Insert Document at Caret Position
+description: Check our &quot;Insert Document at Caret Position&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-merge-insert-document
 tags: raddocumentmerger, merge, insert, documents
 published: True

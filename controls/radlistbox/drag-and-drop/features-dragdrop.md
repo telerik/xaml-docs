@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadListBox WPF control.
 slug: radlistbox-features-dragdrop
 tags: overview
 published: True

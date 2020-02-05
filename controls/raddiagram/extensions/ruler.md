@@ -1,7 +1,7 @@
 ---
 title: Ruler
 page_title: Ruler
-description: Ruler
+description: Check our &quot;Ruler&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-extensions-ruler
 tags: ruler
 published: True

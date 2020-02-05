@@ -1,7 +1,7 @@
 ---
 title: Events Overview
 page_title: Events Overview
-description: Events Overview
+description: Check our &quot;Events Overview&quot; documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-events-overview
 tags: events,overview
 publish: True

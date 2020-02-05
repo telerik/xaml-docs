@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-changes
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Edit Lookup Values with RadComboBox
 page_title: Edit Lookup Values with RadComboBox
-description: Edit Lookup Values with RadComboBox
+description: Check our &quot;Edit Lookup Values with RadComboBox&quot; documentation article for the RadDataForm WPF control.
 slug: raddatafor-edit-lookup-values-with-radcombobox
 tags: edit,lookup,values,with,radcombobox
 published: True

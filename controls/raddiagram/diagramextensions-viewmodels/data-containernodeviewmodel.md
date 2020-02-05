@@ -1,7 +1,7 @@
 ---
 title: ContainerNodeViewModelBase
 page_title: ContainerNodeViewModelBase
-description: ContainerNodeViewModelBase
+description: Check our &quot;ContainerNodeViewModelBase&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-containernodeviewmodel
 tags: containernodeviewmodelbase
 published: True

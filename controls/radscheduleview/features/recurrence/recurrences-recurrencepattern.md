@@ -1,7 +1,7 @@
 ---
 title: RecurrencePattern
 page_title: RecurrencePattern
-description: RecurrencePattern
+description: Check our &quot;RecurrencePattern&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-recurrences-recurrencepattern
 tags: recurrencepattern
 published: True

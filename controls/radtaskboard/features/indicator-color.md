@@ -1,7 +1,7 @@
 ---
 title: Category Indicator
 page_title: Category Indicator
-description: Category Indicator
+description: Check our &quot;Category Indicator&quot; documentation article for the RadTaskBoard WPF control.
 slug: radtaskboard-features-category-indicator
 tags: category, indicator, color
 published: True

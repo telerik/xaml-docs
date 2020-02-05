@@ -1,7 +1,7 @@
 ---
 title: GifMessage
 page_title: GifMessage
-description: GifMessage
+description: Check our &quot;GifMessage&quot; documentation article for the RadChat WPF control.
 slug: chat-items-gifmessage
 tags: messages,gifmessage
 published: True

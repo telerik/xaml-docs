@@ -1,7 +1,7 @@
 ---
 title: FlightCard
 page_title: FlightCard
-description: FlightCard
+description: Check our &quot;FlightCard&quot; documentation article for the RadChat WPF control.
 slug: chat-items-flightcard
 tags: messages,flightcard
 published: True

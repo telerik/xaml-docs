@@ -1,7 +1,7 @@
 ---
 title: Find
 page_title: Find
-description: Find
+description: Check our &quot;Find&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-find
 tags: find, findall, findprevious
 published: True

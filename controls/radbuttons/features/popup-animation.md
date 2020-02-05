@@ -1,7 +1,7 @@
 ---
 title: Popup Animation
 page_title: Popup Animation
-description: Popup Animation
+description: Check our &quot;Popup Animation&quot; documentation article for the RadButtons WPF control.
 slug: radbuttons-features-popup-animation
 tags: popup,animation,button,dropdown,split,fade,scroll,none,slide
 published: True

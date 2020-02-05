@@ -1,7 +1,7 @@
 ---
 title: Removing Items
 page_title: Removing Items
-description: Removing Items
+description: Check our &quot;Removing Items&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-delete
 tags: removing,items
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Read-Only Diagram
 page_title: Read-Only Diagram
-description: Read-Only Diagram
+description: Check our &quot;Read-Only Diagram&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-read-only
 tags: read-only,diagram
 published: True

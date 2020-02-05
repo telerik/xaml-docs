@@ -1,7 +1,7 @@
 ---
 title: Command Support
 page_title: Command Support
-description: Command Support
+description: Check our &quot;Command Support&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-features-command-support
 tags: command,support
 published: True

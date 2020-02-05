@@ -1,7 +1,7 @@
 ---
 title: Use with Prism
 page_title: Use with Prism
-description: Use with Prism
+description: Check our &quot;Use with Prism&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-how-to-use-with-prism
 tags: use,with,prism
 published: True

@@ -1,7 +1,7 @@
 ---
 title: DataBinding
 page_title: DataBinding
-description: DataBinding
+description: Check our &quot;DataBinding&quot; documentation article for the RadTileView WPF control.
 slug: radtileview-populating-with-data-databinding
 tags: databinding,binding,data,radtileview
 published: True

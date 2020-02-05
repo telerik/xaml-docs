@@ -1,7 +1,7 @@
 ---
 title: Ordered Wrap Panel
 page_title: Ordered Wrap Panel
-description: Ordered Wrap Panel
+description: Check our &quot;Ordered Wrap Panel&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ordered-wrap-panel
 tags: ordered,wrap,panel
 published: True

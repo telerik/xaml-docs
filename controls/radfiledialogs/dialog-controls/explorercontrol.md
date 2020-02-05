@@ -1,7 +1,7 @@
 ---
 title: ExplorerControl
 page_title: ExplorerControl
-description: ExplorerControl
+description: Check our &quot;ExplorerControl&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-explorercontrol
 tags: open,folder,dialog
 published: True

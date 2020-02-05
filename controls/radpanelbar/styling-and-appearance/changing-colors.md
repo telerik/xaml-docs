@@ -1,7 +1,7 @@
 ---
 title: Colors
 page_title: Colors
-description: Colors
+description: Check our &quot;Colors&quot; documentation article for the RadPanelBar WPF control.
 slug: radpanelbar-changing-colors
 tags: colors
 published: True

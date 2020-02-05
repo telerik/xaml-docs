@@ -1,7 +1,7 @@
 ---
 title: Drill-Down
 page_title: Drill-Down
-description: Drill-Down
+description: Check our &quot;Drill-Down&quot; documentation article for the RadExpressionEditor WPF control.
 slug: radexpressioneditor-expressions-drill-down
 tags: drill,down
 published: True

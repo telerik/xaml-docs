@@ -1,7 +1,7 @@
 ---
 title: Viewer Modes
 page_title: Viewer Modes
-description: Viewer Modes
+description: Check our &quot;Viewer Modes&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-viewer-modes
 tags: viewer,modes
 published: True

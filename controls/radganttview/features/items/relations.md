@@ -1,7 +1,7 @@
 ---
 title: Items Relations
 page_title: Items Relations
-description: Items Relations
+description: Check our &quot;Items Relations&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-relations
 tags: items,relations
 published: True

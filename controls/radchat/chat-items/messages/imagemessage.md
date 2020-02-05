@@ -1,7 +1,7 @@
 ---
 title: ImageMessage
 page_title: ImageMessage
-description: ImageMessage
+description: Check our &quot;ImageMessage&quot; documentation article for the RadChat WPF control.
 slug: chat-items-imagemessage
 tags: messages,imagemessage
 published: True

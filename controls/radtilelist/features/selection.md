@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Selection
+description: Check our &quot;Selection&quot; documentation article for the RadTileList WPF control.
 slug: radtilelist-features-selection
 tags: radtilelist, selection
 published: True

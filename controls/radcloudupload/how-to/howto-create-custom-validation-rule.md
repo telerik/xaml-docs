@@ -1,7 +1,7 @@
 ---
 title: Create Custom Validaton Rule
 page_title: Create Custom Validaton Rule
-description: Create Custom Validaton Rule
+description: Check our &quot;Create Custom Validaton Rule&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-howto-create-custom-validation-rule
 tags: create,custom,validaton,rule
 published: True

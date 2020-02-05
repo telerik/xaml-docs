@@ -1,7 +1,7 @@
 ---
 title: Separator
 page_title: Separator
-description: Separator
+description: Check our &quot;Separator&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-separator
 tags: separator
 published: True

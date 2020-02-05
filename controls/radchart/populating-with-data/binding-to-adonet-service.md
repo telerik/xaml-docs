@@ -1,7 +1,7 @@
 ---
 title: Data Binding to ADO.NET Data Service
 page_title: Data Binding to ADO.NET Data Service
-description: Data Binding to ADO.NET Data Service
+description: Check our &quot;Data Binding to ADO.NET Data Service&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-binding-to-adonet-service
 tags: data,binding,to,ado.net,data,service
 published: True

@@ -1,7 +1,7 @@
 ---
 title: 3D Charts
 page_title: 3D Charts
-description: 3D Charts
+description: Check our &quot;3D Charts&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-types-3d-charts
 tags: 3d,charts
 published: True

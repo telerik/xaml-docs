@@ -1,7 +1,7 @@
 ---
 title: Orientation and DropDownPlacement
 page_title: Orientation and DropDownPlacement
-description: Orientation and DropDownPlacement
+description: Check our &quot;Orientation and DropDownPlacement&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-orientation
 tags: orientation,and,dropdownplacement
 published: True

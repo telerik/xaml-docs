@@ -1,7 +1,7 @@
 ---
 title: Shapefiles Support
 page_title: Shapefiles Support
-description: Shapefiles Support
+description: Check our &quot;Shapefiles Support&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-shapefiles-support
 tags: shapefiles,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Data Validation
 page_title: Data Validation
-description: Data Validation
+description: Check our &quot;Data Validation&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-data-validation
 tags: data,validation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Key Modifiers
 page_title: Key Modifiers
-description: Key Modifiers
+description: Check our &quot;Key Modifiers&quot; documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-key-modifiers
 tags: key,modifiers
 published: True

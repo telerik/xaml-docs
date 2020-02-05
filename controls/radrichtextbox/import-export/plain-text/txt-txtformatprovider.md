@@ -1,7 +1,7 @@
 ---
 title: Using TxtFormatProvider
 page_title: Using TxtFormatProvider
-description: Using TxtFormatProvider
+description: Check our &quot;Using TxtFormatProvider&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-txt-txtformatprovider
 tags: using-txtFormatProvider
 published: True

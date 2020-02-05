@@ -1,7 +1,7 @@
 ---
 title: Scrolling
 page_title: Scrolling
-description: Scrolling
+description: Check our &quot;Scrolling&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-scrolling
 tags: scrolling
 published: True

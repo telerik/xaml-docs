@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Row Details Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadGridView WPF control.
 slug: radgridview-row-details-overview
 tags: overview
 published: True

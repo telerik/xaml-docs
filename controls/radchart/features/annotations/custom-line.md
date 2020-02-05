@@ -1,7 +1,7 @@
 ---
 title: Custom Line
 page_title: Custom Line
-description: Custom Line
+description: Check our &quot;Custom Line&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-annotations-custom-line
 tags: custom,line
 published: True

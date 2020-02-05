@@ -1,7 +1,7 @@
 ---
 title: Visual States
 page_title: Visual States
-description: Visual States
+description: Check our &quot;Visual States&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-styles-and-templates-visual-states
 tags: visual,states
 published: True

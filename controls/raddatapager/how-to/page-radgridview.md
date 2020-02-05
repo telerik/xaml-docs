@@ -1,7 +1,7 @@
 ---
 title: Page RadGridView
 page_title: Page RadGridView
-description: Page RadGridView
+description: Check our &quot;Page RadGridView&quot; documentation article for the RadDataPager WPF control.
 slug: raddatapager-how-to-page-radgridview
 tags: page,radgridview
 published: False

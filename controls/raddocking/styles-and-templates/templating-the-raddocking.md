@@ -1,7 +1,7 @@
 ---
 title: Templating the RadDocking
 page_title: Templating the RadDocking
-description: Templating the RadDocking
+description: Check our &quot;Templating the RadDocking&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-styles-and-templates-templating-the-raddocking
 tags: templating,the,raddocking
 published: True

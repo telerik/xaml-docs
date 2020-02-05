@@ -1,7 +1,7 @@
 ---
 title: Integrating RadHtmlPlaceholder and RadWindow
 page_title: Integrating RadHtmlPlaceholder and RadWindow
-description: Integrating RadHtmlPlaceholder and RadWindow
+description: Check our &quot;Integrating RadHtmlPlaceholder and RadWindow&quot; documentation article for the RadHtmlPlaceholder WPF control.
 slug: radhtmlplaceholder-howto-radwindowintegration
 tags: integrating,radhtmlplaceholder,and,radwindow
 published: True

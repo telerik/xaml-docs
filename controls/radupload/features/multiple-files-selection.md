@@ -1,7 +1,7 @@
 ---
 title: Multiple Files Selection
 page_title: Multiple Files Selection
-description: Multiple Files Selection
+description: Check our &quot;Multiple Files Selection&quot; documentation article for the RadUpload WPF control.
 slug: radupload-features-multiple-files-selection
 tags: multiple,files,selection
 published: True

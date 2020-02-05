@@ -1,7 +1,7 @@
 ---
 title: Custom Shapefile
 page_title: Custom Shapefile
-description: Custom Shapefile
+description: Check our &quot;Custom Shapefile&quot; documentation article for the RadMap WPF control.
 slug: radmap-how-to-custom-shape-file
 tags: custom,shapefile
 published: True

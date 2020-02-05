@@ -1,7 +1,7 @@
 ---
 title: Load on demand with RadScheduleView
 page_title: Load on demand with RadScheduleView
-description: Load on demand with RadScheduleView
+description: Check our &quot;Load on demand with RadScheduleView&quot; documentation article for the RadScheduleView WPF control.
 slug: scheduleview-features-loadondemand
 tags: load,on,demand,with,radscheduleview
 published: True

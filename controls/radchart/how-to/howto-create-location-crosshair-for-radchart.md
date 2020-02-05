@@ -1,7 +1,7 @@
 ---
 title: Create Location Crosshair for RadChart
 page_title: Create Location Crosshair for RadChart
-description: Create Location Crosshair for RadChart
+description: Check our &quot;Create Location Crosshair for RadChart&quot; documentation article for the RadChart WPF control.
 slug: radchart-howto-create-location-crosshair-for-radchart
 tags: create,location,crosshair,for,radchart
 published: True

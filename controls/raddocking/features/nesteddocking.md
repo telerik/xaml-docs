@@ -1,7 +1,7 @@
 ---
 title: Nested RadDocking Support
 page_title: Nested RadDocking Support
-description: Nested RadDocking Support
+description: Check our &quot;Nested RadDocking Support&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-nesteddocking
 tags: nested,raddocking,support
 published: True

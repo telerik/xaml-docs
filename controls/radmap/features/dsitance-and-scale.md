@@ -1,7 +1,7 @@
 ---
 title: Distance and Scale
 page_title: Distance and Scale
-description: Distance and Scale
+description: Check our &quot;Distance and Scale&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-dsitance-and-scale
 tags: distance,and,scale
 published: True

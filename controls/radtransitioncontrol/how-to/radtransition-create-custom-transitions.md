@@ -1,7 +1,7 @@
 ---
 title: Create Custom Transitions
 page_title: Create Custom Transitions
-description: Create Custom Transitions
+description: Check our &quot;Create Custom Transitions&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-how-to-create-custom-transitions
 tags: create,custom,transitions
 published: True

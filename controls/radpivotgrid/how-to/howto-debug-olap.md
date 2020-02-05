@@ -1,7 +1,7 @@
 ---
 title: Debugging XMLA problems
 page_title: Debugging XMLA problems
-description: Debugging XMLA problems
+description: Check our &quot;Debugging XMLA problems&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-howto-debug-olap
 tags: debugging,xmla,problems
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the RadDocumentPane
 page_title: Styling the RadDocumentPane
-description: Styling the RadDocumentPane
+description: Check our &quot;Styling the RadDocumentPane&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-styling-the-raddocumentpane
 tags: styling,the,raddocumentpane
 published: True

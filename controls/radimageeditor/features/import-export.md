@@ -1,7 +1,7 @@
 ---
 title: Import/Export
 page_title: Import/Export
-description: Import/Export
+description: Check our &quot;Import/Export&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-features-import-export
 tags: import/export
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonSplitButton
 page_title: Styling the RadRibbonSplitButton
-description: Styling the RadRibbonSplitButton
+description: Check our &quot;Styling the RadRibbonSplitButton&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbonsplitbutton
 tags: styling,the,radribbonsplitbutton
 published: True

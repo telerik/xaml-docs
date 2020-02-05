@@ -1,7 +1,7 @@
 ---
 title: Editor Attribute
 page_title: Editor Attribute
-description: Editor Attribute
+description: Check our &quot;Editor Attribute&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-editor-attribute
 tags: editor,attribute
 published: True

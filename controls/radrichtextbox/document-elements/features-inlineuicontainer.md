@@ -1,7 +1,7 @@
 ---
 title: InlineUIContainer
 page_title: InlineUIContainer
-description: InlineUIContainer
+description: Check our &quot;InlineUIContainer&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-inlineuicontainer
 tags: inlineuicontainer
 published: True

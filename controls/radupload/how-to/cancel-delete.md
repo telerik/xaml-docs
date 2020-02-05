@@ -1,7 +1,7 @@
 ---
 title: Cancel RadUploadItem Deletion
 page_title: Cancel RadUploadItem Deletion
-description: Cancel RadUploadItem Deletion
+description: Check our &quot;Cancel RadUploadItem Deletion&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-cancel-delete
 tags: cancel,raduploaditem,deletion
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme
 page_title: Setting a Theme
-description: Setting a Theme
+description: Check our &quot;Setting a Theme&quot; documentation article for the RadDesktopAlert WPF control.
 slug: raddesktopalert-styles-and-templates-setting-theme
 tags: setting,a,theme
 published: True

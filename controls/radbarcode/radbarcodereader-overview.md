@@ -1,7 +1,7 @@
 ---
 title: RadBarcodeReader 
 page_title: RadBarcodeReader 
-description: RadBarcodeReader 
+description: Check our &quot;RadBarcodeReader&quot; documentation article for the RadBarcode WPF control.
 slug: radbarcodereader-overview
 tags: radbarcodereader,
 published: True

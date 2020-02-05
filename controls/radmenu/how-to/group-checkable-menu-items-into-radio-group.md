@@ -1,7 +1,7 @@
 ---
 title: Group Checkable Menu Items into Radio Group
 page_title: Group Checkable Menu Items into Radio Group
-description: Group Checkable Menu Items into Radio Group
+description: Check our &quot;Group Checkable Menu Items into Radio Group&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-how-to-group-checkable-menu-items-into-radio-group
 tags: group,checkable,menu,items,into,radio,group
 published: True

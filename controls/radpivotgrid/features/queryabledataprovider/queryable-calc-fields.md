@@ -1,7 +1,7 @@
 ---
 title: Calculated Fields
 page_title: Calculated Fields
-description: Calculated Fields
+description: Check our &quot;Calculated Fields&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-queryable-calc-fields
 tags: calculated,fields
 published: True

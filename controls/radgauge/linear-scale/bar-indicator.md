@@ -1,7 +1,7 @@
 ---
 title: Bar Indicator
 page_title: Bar Indicator
-description: Bar Indicator
+description: Check our &quot;Bar Indicator&quot; documentation article for the RadGauge WPF control.
 slug: linear-scale-bar-indicator
 tags: bar,indicator
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Performance
 page_title: Performance
-description: Performance
+description: Check our &quot;Performance&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-performance
 tags: performance
 published: True

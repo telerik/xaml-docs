@@ -1,7 +1,7 @@
 ---
 title: Plot Mode
 page_title: Plot Mode
-description: Plot Mode
+description: Check our &quot;Plot Mode&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-axes-plotmode
 tags: plot,mode
 published: True

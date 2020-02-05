@@ -1,7 +1,7 @@
 ---
 title: Declaratively
 page_title: Declaratively
-description: Declaratively
+description: Check our &quot;Declaratively&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-declaratively
 tags: declaratively
 published: True

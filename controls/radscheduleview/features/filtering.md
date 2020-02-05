@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Filtering
+description: Check our &quot;Filtering&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-filtering
 tags: filtrering
 published: True

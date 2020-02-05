@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Localization
+description: Check our &quot;Localization&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-localization
 tags: localization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Expand and Select Item with Load on Demand Enabled RadTreeView
 page_title: Expand and Select Item with Load on Demand Enabled RadTreeView
-description: Expand and Select Item with Load on Demand Enabled RadTreeView
+description: Check our &quot;Expand and Select Item with Load on Demand Enabled RadTreeView&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-exapand-select-item-with-lod-enabled-treeview
 tags: expand,and,select,item,with,load,on,demand,enabled,radtreeview
 published: True

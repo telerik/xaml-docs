@@ -1,7 +1,7 @@
 ---
 title: Attaching input events to the map shapes
 page_title: Attaching input events to the map shapes
-description: Attaching input events to the map shapes
+description: Check our &quot;Attaching input events to the map shapes&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-input-events
 tags: attaching,input,events,to,the,map,shapes
 published: True

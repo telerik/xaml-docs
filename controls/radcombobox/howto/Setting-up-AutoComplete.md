@@ -1,7 +1,7 @@
 ---
 title: Setting up AutoComplete
 page_title: Setting up AutoComplete
-description: Setting up AutoComplete
+description: Check our &quot;Setting up AutoComplete&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-setting-up-autocomplete
 tags: setting,up,autocomplete
 published: True

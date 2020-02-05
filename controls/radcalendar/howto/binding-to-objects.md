@@ -1,7 +1,7 @@
 ---
 title: Binding to Objects
 page_title: Binding to Objects
-description: Binding to Objects
+description: Check our &quot;Binding to Objects&quot; documentation article for the RadCalendar WPF control.
 slug: radcalendar-binding-to-objects
 tags: binding,to,objects
 published: True

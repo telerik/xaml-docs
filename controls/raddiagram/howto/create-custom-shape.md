@@ -1,7 +1,7 @@
 ---
 title: Create Custom Shape
 page_title: Create Custom Shape
-description: Create Custom Shape
+description: Check our &quot;Create Custom Shape&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-create-custom-shape
 tags: create,custom,shape
 published: True

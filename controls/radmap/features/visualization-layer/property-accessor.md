@@ -1,7 +1,7 @@
 ---
 title: Property Accessor
 page_title: Property Accessor
-description: Property Accessor
+description: Check our &quot;Property Accessor&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-property-accessor
 tags: property,accessor
 published: True

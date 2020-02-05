@@ -10,7 +10,7 @@ position: 2
 
 # Styling the ButtonChrome
 
-The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version fo the RadControl, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version of the RadControls, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
 ## Create an empty implicit style and set it up on your own. 
 
@@ -22,7 +22,7 @@ The __ButtonChrome__ control was part of the template of the __RadButtons__. It 
 		<Style TargetType="chromes:ButtonChrome">
 			<Setter Property="Opacity" Value="0.5"/>
 			<Setter Property="BorderBrush" Value="Red"/>
-            <Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderThickness" Value="1"/>
 		</Style>
 	</Window.Resources>
 	<Grid>
@@ -32,13 +32,11 @@ The __ButtonChrome__ control was part of the template of the __RadButtons__. It 
 
 ## Edit the default template of the control
 
-If you prefer, you can manually extract the needed style from the respective XAML file in the **Themes.Implicit** folder of your **UI for WPF** installation and modify its code to suit your needs.
+If you prefer, you can [manually extract the needed style from the respective XAML file]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) in the **Themes.Implicit** folder of your **Telerik UI** installation and modify its code to suit your needs.
 
->tip If you choose to define the style in App.xaml file, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in the App.xaml file, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-The process is similar to [manually extracting the Control Template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of a given control.
-
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>importantNote that when changing a __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 
 ## See Also

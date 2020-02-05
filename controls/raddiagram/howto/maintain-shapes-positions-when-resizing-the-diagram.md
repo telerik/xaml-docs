@@ -1,7 +1,7 @@
 ---
 title: Maintain the Items' Positions When the Diagram is Resized
 page_title: Maintain the Items' Positions When the Diagram is Resized
-description: Maintain the Items' Positions When the Diagram is Resized
+description: Check our &quot;Maintain the Items' Positions When the Diagram is Resized&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram
 tags: maintain,the,items',positions,when,the,diagram,is,resized
 published: True

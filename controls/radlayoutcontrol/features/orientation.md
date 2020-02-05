@@ -1,7 +1,7 @@
 ---
 title: Orientation
 page_title: Orientation
-description: Orientation
+description: Check our &quot;Orientation&quot; documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-orientation
 tags: orientation, vertical, horizontal
 published: True

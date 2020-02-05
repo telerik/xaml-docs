@@ -1,7 +1,7 @@
 ---
 title: AppointmentSelectionBehavior
 page_title: AppointmentSelectionBehavior
-description: AppointmentSelectionBehavior
+description: Check our &quot;AppointmentSelectionBehavior&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-appointment-selection-behavior
 tags: appointmentselectionbehavior
 published: True

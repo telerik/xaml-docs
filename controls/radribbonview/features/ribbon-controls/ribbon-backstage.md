@@ -1,7 +1,7 @@
 ---
 title: Ribbon Backstage
 page_title: Ribbon Backstage
-description: Ribbon Backstage
+description: Check our &quot;Ribbon Backstage&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-backstage
 tags: ribbon,backstage
 published: True

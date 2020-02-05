@@ -1,7 +1,7 @@
 ---
 title: FieldList ContextMenuBehavior
 page_title: FieldList ContextMenuBehavior
-description: FieldList ContextMenuBehavior
+description: Check our &quot;FieldList ContextMenuBehavior&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-contextmenubehavior
 tags: fieldlist,contextmenubehavior
 published: True

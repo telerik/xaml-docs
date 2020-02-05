@@ -1,7 +1,7 @@
 ---
 title: Empty Values
 page_title: Empty Values
-description: Empty Values
+description: Check our &quot;Empty Values&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-empty-values
 tags: empty,values
 published: True

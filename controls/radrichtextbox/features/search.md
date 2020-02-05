@@ -1,7 +1,7 @@
 ---
 title: Search
 page_title: Search
-description: Search
+description: Check our &quot;Search&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-search
 tags: search
 published: True

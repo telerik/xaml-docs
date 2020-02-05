@@ -1,7 +1,7 @@
 ---
 title: How to Remove the DocumentHost
 page_title: How to Remove the DocumentHost
-description: How to Remove the DocumentHost
+description: Check our &quot;How to Remove the DocumentHost&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-how-to-remove-the-documenthost
 tags: how,to,remove,the,documenthost
 published: True

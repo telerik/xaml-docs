@@ -1,7 +1,7 @@
 ---
 title: AutoCommit Settings
 page_title: AutoCommit Settings
-description: AutoCommit Settings
+description: Check our &quot;AutoCommit Settings&quot; documentation article for the RadDataForm WPF control.
 slug: raddataform-auto-commit
 tags: autocommit,settings
 published: True

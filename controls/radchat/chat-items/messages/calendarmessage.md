@@ -1,7 +1,7 @@
 ---
 title: CalendarMessage
 page_title: CalendarMessage
-description: CalendarMessage
+description: Check our &quot;CalendarMessage&quot; documentation article for the RadChat WPF control.
 slug: chat-items-calendarmessage
 tags: messages,calendarmessage
 published: True

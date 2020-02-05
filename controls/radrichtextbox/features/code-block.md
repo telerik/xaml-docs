@@ -1,7 +1,7 @@
 ---
 title: Code Block
 page_title: Code Block
-description: Code Block
+description: Check our &quot;Code Block&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-code-block
 tags: code,block
 published: True

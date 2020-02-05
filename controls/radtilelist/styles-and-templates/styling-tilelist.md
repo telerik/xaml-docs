@@ -1,7 +1,7 @@
 ---
 title: Styling TileList
 page_title: Styling TileList
-description: Styling TileList
+description: Check our &quot;Styling TileList&quot; documentation article for the RadTileList WPF control.
 slug: tilelist-styling
 tags: styling
 published: True

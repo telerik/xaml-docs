@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our &quot;Events&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-events-overview
 tags: events
 published: True

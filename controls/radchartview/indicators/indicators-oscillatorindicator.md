@@ -1,7 +1,7 @@
 ---
 title: OscillatorIndicator
 page_title: OscillatorIndicator
-description: OscillatorIndicator
+description: Check our &quot;OscillatorIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-oscillatorindicator
 tags: financial, indicators, oscillatorindicator
 publish: True

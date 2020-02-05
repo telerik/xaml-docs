@@ -1,7 +1,7 @@
 ---
 title: Filtering through RadDataFilter
 page_title: Filtering through RadDataFilter
-description: Filtering through RadDataFilter
+description: Check our &quot;Filtering through RadDataFilter&quot; documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-filtering-filtering-through-raddatafilter
 tags: filtering,through,raddatafilter
 published: True

@@ -1,7 +1,7 @@
 ---		
 title: Error Handling		
 page_title: Error Handling		
-description: Error Handling		
+description: Check our &quot;Error Handling&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-error-handling		
 tags: error,handle,handling,exception,raised		
 published: True		

@@ -1,7 +1,7 @@
 ---
 title: Palettes
 page_title: Palettes
-description: Palettes
+description: Check our &quot;Palettes&quot; documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-features-palettes
 tags: 3d,chartview,cartesianchart3d,palette,materialgroup,material,color,brush
 published: True

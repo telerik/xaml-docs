@@ -1,7 +1,7 @@
 ---
 title: Customizing Items
 page_title: Customizing Items
-description: Customizing Items
+description: Check our &quot;Customizing Items&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-customizing-items
 tags: customizing,items
 published: True

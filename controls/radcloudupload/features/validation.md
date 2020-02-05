@@ -1,7 +1,7 @@
 ---
 title: Validation
 page_title: Validation
-description: Validation
+description: Check our &quot;Validation&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-validation
 tags: validation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Header Template
 page_title: Header Template
-description: Header Template
+description: Check our &quot;Header Template&quot; documentation article for the RadTimePicker WPF control.
 slug: radtimepicker-header-template
 tags: header,template
 published: True

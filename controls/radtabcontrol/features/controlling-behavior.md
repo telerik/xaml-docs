@@ -1,7 +1,7 @@
 ---
 title: Controlling Behavior
 page_title: Controlling Behavior
-description: Controlling Behavior
+description: Check our &quot;Controlling Behavior&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-features-controlling-behavior
 tags: controlling,behavior
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Html
 page_title: Html
-description: Html
+description: Check our &quot;Html&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-Html
 tags: Html
 published: True

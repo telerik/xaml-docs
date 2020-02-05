@@ -1,7 +1,7 @@
 ---
 title: Customizing Drag Visual
 page_title: Customizing Drag Visual
-description: Customizing Drag Visual
+description: Check our &quot;Customizing Drag Visual&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-dragdrop-customize-drag-visual
 tags: features,dragdrop
 published: True

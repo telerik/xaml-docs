@@ -1,7 +1,7 @@
 ---
 title: Templating Headers and Cells
 page_title: Templating Headers and Cells
-description: Templating Headers and Cells
+description: Check our &quot;Templating Headers and Cells&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-styles-and-templates-templating-cells
 tags: templating,headers,and,cells
 published: True

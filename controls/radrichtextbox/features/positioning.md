@@ -1,7 +1,7 @@
 ---
 title: Positioning
 page_title: Positioning
-description: Positioning
+description: Check our &quot;Positioning&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-positioning
 tags: positioning
 published: True

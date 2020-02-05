@@ -1,7 +1,7 @@
 ---
 title: Preview ToolTip
 page_title: Preview ToolTip
-description: Preview ToolTip
+description: Check our &quot;Preview ToolTip&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-preview-tooltip
 tags: preview,tooltip
 published: True

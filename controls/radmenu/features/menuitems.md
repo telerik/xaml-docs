@@ -1,7 +1,7 @@
 ---
 title: Menu Items
 page_title: Menu Items
-description: Menu Items
+description: Check our &quot;Menu Items&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-menuitems
 tags: menu,items
 published: True

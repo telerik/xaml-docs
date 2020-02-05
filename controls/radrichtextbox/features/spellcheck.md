@@ -1,7 +1,7 @@
 ---
 title: Spellcheck
 page_title: Spellcheck
-description: Spellcheck
+description: Check our &quot;Spellcheck&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-spellcheck
 tags: spellcheck
 published: True

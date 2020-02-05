@@ -1,7 +1,7 @@
 ---
 title: No Initial Animation
 page_title: No Initial Animation
-description: No Initial Animation
+description: Check our &quot;No Initial Animation&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-how-to-no-initial-animation
 tags: no,initial,animation
 published: True

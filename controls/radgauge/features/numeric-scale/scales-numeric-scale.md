@@ -1,7 +1,7 @@
 ---
 title: Numeric Scale
 page_title: Numeric Scale
-description: Numeric Scale
+description: Check our &quot;Numeric Scale&quot; documentation article for the RadGauge WPF control.
 slug: radgauge-features-scales-numeric-scale
 tags: numeric,scale
 published: True

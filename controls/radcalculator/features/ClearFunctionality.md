@@ -1,7 +1,7 @@
 ---
 title: Clear Functionality
 page_title: Clear Functionality
-description: Clear Functionality
+description: Check our &quot;Clear Functionality&quot; documentation article for the RadCalculator WPF control.
 slug: radcalculator-clearfunctionality
 tags: clear,functionality
 published: True

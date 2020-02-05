@@ -1,7 +1,7 @@
 ---
 title: Create a Custom Tool
 page_title: Create a Custom Tool
-description: Create a Custom Tool
+description: Check our &quot;Create a Custom Tool&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-howto-custom-tool
 tags: create,a,custom,tool
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Place RadControls in Diagram Shapes
 page_title: Place RadControls in Diagram Shapes
-description: Place RadControls in Diagram Shapes
+description: Check our &quot;Place RadControls in Diagram Shapes&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-radcontrols-in-shape
 tags: place,radcontrols,in,diagram,shapes
 published: True

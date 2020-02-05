@@ -1,7 +1,7 @@
 ---
 title: Overwrite Existing Files
 page_title: Overwrite Existing Files
-description: Overwrite Existing Files
+description: Check our &quot;Overwrite Existing Files&quot; documentation article for the RadUpload WPF control.
 slug: radupload-features-overwrite-existing-files
 tags: overwrite,existing,files
 published: True

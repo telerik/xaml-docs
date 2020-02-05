@@ -1,7 +1,7 @@
 ---
 title: Shape Reader
 page_title: Shape Reader
-description: Shape Reader
+description: Check our &quot;Shape Reader&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-information-layer-shape-reder
 tags: shape,reader
 published: True

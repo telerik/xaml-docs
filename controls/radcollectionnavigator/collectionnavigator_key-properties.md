@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Key Properties
+description: Check our &quot;Key Properties&quot; documentation article for the RadCollectionNavigator WPF control.
 slug: collectionnavigator_key_properties
 tags: key,properties
 published: True

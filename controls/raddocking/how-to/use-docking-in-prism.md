@@ -1,7 +1,7 @@
 ---
 title: How to Use RadDocking in Prism
 page_title: How to Use RadDocking in Prism
-description: How to Use RadDocking in Prism
+description: Check our &quot;How to Use RadDocking in Prism&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-how-to-use-raddocking-in-prism
 tags: how,to,prism
 published: True

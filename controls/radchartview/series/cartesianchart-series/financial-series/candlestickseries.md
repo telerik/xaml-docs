@@ -1,7 +1,7 @@
 ---
 title: CandlestickSeries
 page_title: CandlestickSeries
-description: CandlestickSeries
+description: Check our &quot;CandlestickSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-candlestickseries
 tags: candlesticseries
 published: True

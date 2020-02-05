@@ -1,7 +1,7 @@
 ---
 title: Automatic Upload
 page_title: Automatic Upload
-description: Automatic Upload
+description: Check our &quot;Automatic Upload&quot; documentation article for the RadUpload WPF control.
 slug: radupload-features-automatic-upload
 tags: automatic,upload
 published: True

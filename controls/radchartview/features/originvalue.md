@@ -1,7 +1,7 @@
 ---
 title: OriginValue
 page_title: OriginValue
-description: OriginValue
+description: Check our &quot;OriginValue&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-originvalue
 tags: radchartview,origin, value
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the RadBusyIndicator
 page_title: Styling the RadBusyIndicator
-description: Styling the RadBusyIndicator
+description: Check our &quot;Styling the RadBusyIndicator&quot; documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-styles-and-templates-styling-radbusyindicator
 tags: styling,the,radbusyindicator
 published: True

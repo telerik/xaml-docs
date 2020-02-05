@@ -1,7 +1,7 @@
 ---
 title: Chart Area
 page_title: Chart Area
-description: Chart Area
+description: Check our &quot;Chart Area&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-area
 tags: chart,area
 published: True

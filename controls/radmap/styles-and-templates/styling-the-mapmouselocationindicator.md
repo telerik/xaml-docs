@@ -1,7 +1,7 @@
 ---
 title: Styling the MapMouseLocationIndicator
 page_title: Styling the MapMouseLocationIndicator
-description: Styling the MapMouseLocationIndicator
+description: Check our &quot;Styling the MapMouseLocationIndicator&quot; documentation article for the RadMap WPF control.
 slug: radmap-styles-and-templates-styling-the-mapmouselocationindicator
 tags: styling,the,mapmouselocationindicator
 published: True

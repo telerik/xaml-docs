@@ -1,7 +1,7 @@
 ---
 title: Map Shapes Virtualization
 page_title: Map Shapes Virtualization
-description: Map Shapes Virtualization
+description: Check our &quot;Map Shapes Virtualization&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-visualization-layer-shapes-virtualization
 tags: map,shapes,virtualization
 published: True

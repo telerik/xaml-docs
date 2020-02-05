@@ -1,7 +1,7 @@
 ---
 title: Prevent Dialogs from Opening
 page_title: Prevent Dialogs from Opening
-description: Prevent Dialogs from Opening
+description: Check our &quot;Prevent Dialogs from Opening&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-prevent-dialogs-from-opening
 tags: prevent,dialogs,from,opening
 published: True

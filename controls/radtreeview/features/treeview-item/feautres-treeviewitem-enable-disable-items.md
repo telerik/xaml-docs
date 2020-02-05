@@ -1,7 +1,7 @@
 ---
 title: Enable and Disable Items
 page_title: Enable and Disable Items
-description: Enable and Disable Items
+description: Check our &quot;Enable and Disable Items&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-feautres-treeviewitem-enable-disable-items
 tags: enable,and,disable,items
 published: True

@@ -1,7 +1,7 @@
 ---
 title: XAML
 page_title: XAML
-description: XAML
+description: Check our &quot;XAML&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-xaml
 tags: XAML
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Cell ToolTip
 page_title: Cell ToolTip
-description: Cell ToolTip
+description: Check our &quot;Cell ToolTip&quot; documentation article for the RadVirtualGrid WPF control.
 slug: radvirtualgrid-celltooltip
 tags: celltooltip,virtualgrid,
 published: True

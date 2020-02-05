@@ -1,7 +1,7 @@
 ---
 title: RadDocumentEditor
 page_title: RadDocumentEditor
-description: RadDocumentEditor
+description: Check our &quot;RadDocumentEditor&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-raddocumenteditor
 tags: raddocumenteditor
 published: True

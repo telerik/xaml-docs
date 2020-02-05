@@ -1,7 +1,7 @@
 ---
 title: Managing Docking Controls Dynamically
 page_title: Managing Docking Controls Dynamically
-description: Managing Docking Controls Dynamically
+description: Check our &quot;Managing Docking Controls Dynamically&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-managing-docking-controls-dynamically
 tags: managing,docking,controls,dynamically
 published: True

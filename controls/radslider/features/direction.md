@@ -1,7 +1,7 @@
 ---
 title: Direction
 page_title: Direction
-description: Direction
+description: Check our &quot;Direction&quot; documentation article for the RadSlider WPF control.
 slug: radslider-direction
 tags: direction
 published: True

@@ -1,7 +1,7 @@
 ---
 title: LinkViewModelBase
 page_title: LinkViewModelBase
-description: LinkViewModelBase
+description: Check our &quot;LinkViewModelBase&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-linkviewmodel
 tags: linkviewmodelbase
 published: True

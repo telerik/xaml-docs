@@ -1,7 +1,7 @@
 ---
 title: RadMediaPlayer Template Structure
 page_title: RadMediaPlayer Template Structure
-description: RadMediaPlayer Template Structure
+description: Check our &quot;RadMediaPlayer Template Structure&quot; documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-styling-template-structure
 tags: radmediaplayer,template,structure
 publish: True

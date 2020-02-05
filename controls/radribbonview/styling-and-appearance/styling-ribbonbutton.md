@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonButton
 page_title: Styling the RadRibbonButton
-description: Styling the RadRibbonButton
+description: Check our &quot;Styling the RadRibbonButton&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbonbutton
 tags: styling,the,radribbonbutton
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Parsing Without Separators
 page_title: Parsing Without Separators
-description: Parsing Without Separators
+description: Check our &quot;Parsing Without Separators&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-parsing-without-separators
 tags: parsing,without,separators
 published: True

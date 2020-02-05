@@ -1,7 +1,7 @@
 ---
 title: Tools Customization
 page_title: Tools Customization
-description: Tools Customization
+description: Check our &quot;Tools Customization&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-tools-customization
 tags: tools,customization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RecurrencePatternHelper
 page_title: RecurrencePatternHelper
-description: RecurrencePatternHelper
+description: Check our &quot;RecurrencePatternHelper&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-recurrences-recurrencepatternhelper
 tags: recurrencepatternhelper
 published: True

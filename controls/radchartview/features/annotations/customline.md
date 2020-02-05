@@ -1,7 +1,7 @@
 ---
 title: CustomLine Annotations
 page_title: CustomLine Annotations
-description: CustomLine Annotations
+description: Check our &quot;CustomLine Annotations&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-annotations-customline
 tags: customline,annotations
 published: True

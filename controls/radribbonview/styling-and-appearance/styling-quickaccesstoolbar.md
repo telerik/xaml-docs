@@ -1,7 +1,7 @@
 ---
 title: Styling the QuickAccessToolbar
 page_title: Styling the QuickAccessToolbar
-description: Styling the QuickAccessToolbar
+description: Check our &quot;Styling the QuickAccessToolbar&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-quickaccesstoolbar
 tags: styling,the,quickaccesstoolbar
 published: True

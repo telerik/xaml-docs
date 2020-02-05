@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadListBox WPF control.
 slug: radlistbox-changes
 tags: changes
 published: True

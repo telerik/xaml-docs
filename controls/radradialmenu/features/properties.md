@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Properties
+description: Check our &quot;Properties&quot; documentation article for the RadRadialMenu WPF control.
 slug: radradialmenu-features-properties
 tags: properties
 published: False

@@ -1,7 +1,7 @@
 ---
 title: RadWindowInteropHelper
 page_title: RadWindowInteropHelper
-description: RadWindowInteropHelper
+description: Check our &quot;RadWindowInteropHelper&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-features-radwindowinterophelper
 tags: radwindowinterophelper
 published: True

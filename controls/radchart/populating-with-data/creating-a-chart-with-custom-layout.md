@@ -1,7 +1,7 @@
 ---
 title: Creating a Chart With Custom Layout
 page_title: Creating a Chart With Custom Layout
-description: Creating a Chart With Custom Layout
+description: Check our &quot;Creating a Chart With Custom Layout&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-creating-a-chart-with-custom-layout
 tags: creating,a,chart,with,custom,layout
 published: True

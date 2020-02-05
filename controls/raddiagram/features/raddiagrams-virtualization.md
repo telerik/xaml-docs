@@ -1,7 +1,7 @@
 ---
 title: Virtualization
 page_title: Virtualization
-description: Virtualization
+description: Check our &quot;Virtualization&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-virtualization
 tags: virtualization
 published: True

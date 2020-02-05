@@ -1,7 +1,7 @@
 ---
 title: Items Editing
 page_title: Items Editing
-description: Items Editing
+description: Check our &quot;Items Editing&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-edit
 tags: items,editing
 published: True

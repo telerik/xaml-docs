@@ -1,7 +1,7 @@
 ---
 title: Integration with RadGridView
 page_title: Integration with RadGridView
-description: Integration with RadGridView
+description: Check our &quot;Integration with RadGridView&quot; documentation article for the RadChart WPF control.
 slug: radchart-how-to-integration-with-rad-grid-view
 tags: integration,with,radgridview
 published: True

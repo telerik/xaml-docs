@@ -1,7 +1,7 @@
 ---
 title: Custom Appointment
 page_title: Custom Appointment
-description: Custom Appointment
+description: Check our &quot;Custom Appointment&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-appointments-custom-appointment
 tags: custom,appointment
 published: True

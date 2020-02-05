@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-description: Grouping
+description: Check our &quot;Grouping&quot; documentation article for the RadTileList WPF control.
 slug: radtilelist-grouping
 tags: grouping
 published: True

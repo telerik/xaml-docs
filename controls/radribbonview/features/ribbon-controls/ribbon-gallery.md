@@ -1,7 +1,7 @@
 ---
 title: Ribbon Gallery
 page_title: Ribbon Gallery
-description: Ribbon Gallery
+description: Check our &quot;Ribbon Gallery&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-gallery
 tags: ribbon,gallery
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Show First Page On The Right
 page_title: Show First Page On The Right
-description: Show First Page On The Right
+description: Check our &quot;Show First Page On The Right&quot; documentation article for the RadBook WPF control.
 slug: radbook-show-first-page-on-the-right
 tags: show,first,page,on,the,right
 published: True

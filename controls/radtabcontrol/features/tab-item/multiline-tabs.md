@@ -1,7 +1,7 @@
 ---
 title: Create Multi-Line Tabs
 page_title: Create Multi-Line Tabs
-description: Create Multi-Line Tabs
+description: Check our &quot;Create Multi-Line Tabs&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-features-multiline-tabs
 tags: create,multi-line,tabs
 published: True

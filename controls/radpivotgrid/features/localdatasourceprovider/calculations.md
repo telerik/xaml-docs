@@ -1,7 +1,7 @@
 ---
 title: Calculations
 page_title: Calculations
-description: Calculations
+description: Check our &quot;Calculations&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-calculations
 tags: calculations
 published: True

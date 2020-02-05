@@ -1,7 +1,7 @@
 ---
 title: Set Custom Appointment Height
 page_title: Set Custom Appointment Height
-description: Set Custom Appointment Height
+description: Check our &quot;Set Custom Appointment Height&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-howto-set-custom-appointment-height
 tags: set,custom,appointment,height
 published: True

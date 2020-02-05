@@ -1,7 +1,7 @@
 ---
 title: Table
 page_title: Table
-description: Table
+description: Check our &quot;Table&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-tables
 tags: table
 published: True

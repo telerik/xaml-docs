@@ -1,7 +1,7 @@
 ---
 title: PointSeries
 page_title: PointSeries
-description: PointSeries
+description: Check our &quot;PointSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-point
 tags: pointseries
 published: True

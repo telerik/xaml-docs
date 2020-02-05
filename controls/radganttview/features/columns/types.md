@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-features-columns-types
 tags: overview
 published: True

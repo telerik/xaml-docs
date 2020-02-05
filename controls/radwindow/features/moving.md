@@ -1,7 +1,7 @@
 ---
 title: Moving
 page_title: Moving
-description: Moving
+description: Check our &quot;Moving&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-features-moving
 tags: moving
 published: True

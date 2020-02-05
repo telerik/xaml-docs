@@ -1,7 +1,7 @@
 ---
 title: Elements Hierarchy
 page_title: Elements Hierarchy
-description: Elements Hierarchy
+description: Check our &quot;Elements Hierarchy&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-hierarchy
 tags: elements,hierarchy
 published: True

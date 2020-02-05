@@ -1,7 +1,7 @@
 ---
 title: Customized Property Definitions
 page_title: Customized Property Definitions
-description: Customized Property Definitions
+description: Check our &quot;Customized Property Definitions&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-gettingstarted-customized-property-definitions
 tags: customized,property,definitions
 published: True

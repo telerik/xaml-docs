@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-changes
 tags: changes
 published: True

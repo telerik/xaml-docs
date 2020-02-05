@@ -1,7 +1,7 @@
 ---
 title: Modify the default placement
 page_title: Modify the default placement
-description: Modify the default placement
+description: Check our &quot;Modify the default placement&quot; documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-how-to-modify-default-placement
 tags: modify,the,default,placement
 published: True

@@ -1,7 +1,7 @@
 ---
 title: TypeConverter Support
 page_title: TypeConverter Support
-description: TypeConverter Support
+description: Check our &quot;TypeConverter Support&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-features-typeconverter-support
 tags: typeconverter,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Radio Button
 page_title: Radio Button
-description: Radio Button
+description: Check our &quot;Radio Button&quot; documentation article for the RadButtons WPF control.
 slug: radbutton-features-radio-button
 tags: radio,button
 published: True

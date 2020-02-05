@@ -1,7 +1,7 @@
 ---
 title: MomentumIndicator
 page_title: MomentumIndicator
-description: MomentumIndicator
+description: Check our &quot;MomentumIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-momentumindicator
 tags: financial, indicators, momentumindicator
 publish: True

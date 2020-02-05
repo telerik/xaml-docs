@@ -1,7 +1,7 @@
 ---
 title: DragDropPayloadManager
 page_title: DragDropPayloadManager
-description: DragDropPayloadManager
+description: Check our &quot;DragDropPayloadManager&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-dragdroppayloadmanager
 tags: dragdroppayloadmanager
 published: True

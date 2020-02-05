@@ -1,7 +1,7 @@
 ---
 title: Customizing the MouseOver and SelectionHighlight
 page_title: Customizing the MouseOver and SelectionHighlight
-description: Customizing the MouseOver and SelectionHighlight
+description: Check our &quot;Customizing the MouseOver and SelectionHighlight&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-customizing-mouseover-selection-highlight
 tags: customizing,the,mouseover,and,selectionhighlight
 published: True

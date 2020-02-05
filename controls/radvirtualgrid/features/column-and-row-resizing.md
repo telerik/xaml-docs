@@ -1,7 +1,7 @@
 ---
 title: Column and Row Resizing 
 page_title: Column and Row Resizing
-description: Column and Row Resizing
+description: Check our &quot;Column and Row Resizing&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-column-and-row-resizing
 tags: column, row, resizing
 published: True

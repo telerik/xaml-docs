@@ -1,7 +1,7 @@
 ---
 title: How to Add Close and Create Buttons to the Tab Headers using MVVM approach
 page_title: How to Add Close and Create Buttons to the Tab Headers using MVVM approach
-description: How to Add Close and Create Buttons to the Tab Headers using MVVM approach
+description: Check our &quot;How to Add Close and Create Buttons to the Tab Headers using MVVM approach&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-add-close-button-to-the-tab-headers-mvvm
 tags: how,to,add,close,and,create,buttons,to,the,tab,headers,using,mvvm,approach
 published: True

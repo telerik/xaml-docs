@@ -1,7 +1,7 @@
 ---
 title: RadCalculator Template Structure
 page_title: RadCalculator Template Structure
-description: RadCalculator Template Structure
+description: Check our &quot;RadCalculator Template Structure&quot; documentation article for the RadCalculator WPF control.
 slug: radcalculator-stylesandtemplates-templatestructure
 tags: radcalculator,template,structure
 published: True

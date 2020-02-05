@@ -1,7 +1,7 @@
 ---
 title: Interactive Forms
 page_title: Interactive Forms
-description: Interactive Forms
+description: Check our &quot;Interactive Forms&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-features-interactive-forms
 tags: interactive, forms, filling
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Common
 page_title: Common
-description: Common
+description: Check our &quot;Common&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-common
 tags: common,features
 published: True

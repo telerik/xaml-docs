@@ -1,7 +1,7 @@
 ---
 title: Redirect To a Page From the Server Side
 page_title: Redirect To a Page From the Server Side
-description: Redirect To a Page From the Server Side
+description: Check our &quot;Redirect To a Page From the Server Side&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-redirect-to-page-from-server
 tags: redirect,to,a,page,from,the,server,side
 published: True

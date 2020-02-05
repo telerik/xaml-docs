@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Commands
+description: Check our &quot;Commands&quot; documentation article for the RadWizard WPF control.
 slug: wizard-features-commands
 tags: commands
 published: True

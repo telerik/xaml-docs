@@ -1,7 +1,7 @@
 ---
 title: RecurrenceRule
 page_title: RecurrenceRule
-description: RecurrenceRule
+description: Check our &quot;RecurrenceRule&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-recurrences-recurrencerule
 tags: recurrencerule
 published: True

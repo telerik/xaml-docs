@@ -1,7 +1,7 @@
 ---
 title: Break
 page_title: Break
-description: Break
+description: Check our &quot;Break&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-break
 tags: Break
 published: True

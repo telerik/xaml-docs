@@ -1,7 +1,7 @@
 ---
 title: Shape Tool
 page_title: Shape Tool
-description: Shape Tool
+description: Check our &quot;Shape Tool&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-tools-shape-tool
 tags: shape, tool
 published: True

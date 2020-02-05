@@ -1,7 +1,7 @@
 ---
 title: Host WebBrowser in RadWindow
 page_title: Host WebBrowser in RadWindow
-description: Host WebBrowser in RadWindow
+description: Check our &quot;Host WebBrowser in RadWindow&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-how-to-host-webbrowser-in-radwindow
 tags: host, webbrowser
 published: True

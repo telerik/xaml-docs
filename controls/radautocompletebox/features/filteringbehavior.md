@@ -1,7 +1,7 @@
 ---
 title: Filtering Behavior
 page_title: Filtering Behavior
-description: Filtering Behavior
+description: Check our &quot;Filtering Behavior&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-features-filteringbehavior
 tags: filtering,behavior
 published: True

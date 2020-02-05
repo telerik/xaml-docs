@@ -1,7 +1,7 @@
 ---
 title: Custom Item Style
 page_title: Custom Item Style
-description: Custom Item Style
+description: Check our &quot;Custom Item Style&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-custom-item-style
 tags: custom,item,style
 published: True

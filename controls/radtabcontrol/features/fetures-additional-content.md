@@ -1,7 +1,7 @@
 ---
 title: Additional content
 page_title: Additional content
-description: Additional content
+description: Check our &quot;Additional content&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-fetures-additional-content
 tags: additional,content
 published: False

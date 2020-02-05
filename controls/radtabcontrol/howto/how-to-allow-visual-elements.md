@@ -1,7 +1,7 @@
 ---
 title: Configure the RadTabControl when Bound to a Collection of Visual Elements
 page_title: Configure the RadTabControl when Bound to a Collection of Visual Elements
-description: Configure the RadTabControl when Bound to a Collection of Visual Elements
+description: Check our &quot;Configure the RadTabControl when Bound to a Collection of Visual Elements&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-allow-visual-elements
 tags: configure,the,radtabcontrol,when,bound,to,a,collection,of,visual,elements
 published: True

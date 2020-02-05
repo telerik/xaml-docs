@@ -1,7 +1,7 @@
 ---
 title: Drag between RadScheduleView and ListBox
 page_title: Drag between RadScheduleView and ListBox
-description: Drag between RadScheduleView and ListBox
+description: Check our &quot;Drag between RadScheduleView and ListBox&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager_-howto-drag-between-radscheduleview-and-listbox
 tags: drag,between,radscheduleview,and,listbox
 published: False

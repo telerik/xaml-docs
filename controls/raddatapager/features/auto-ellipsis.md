@@ -1,7 +1,7 @@
 ---
 title: Auto Ellipsis
 page_title: Auto Ellipsis
-description: Auto Ellipsis
+description: Check our &quot;Auto Ellipsis&quot; documentation article for the RadDataPager WPF control.
 slug: raddatapager-features-auto-ellipsis
 tags: auto,ellipsis
 published: True

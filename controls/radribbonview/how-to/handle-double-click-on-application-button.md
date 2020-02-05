@@ -1,7 +1,7 @@
 ---
 title: Handle Double Click On Application Button
 page_title: Handle Double Click On Application Button
-description: Handle Double Click On Application Button
+description: Check our &quot;Handle Double Click On Application Button&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-how-to-handle-double-click-on-application-button
 tags: handle,double,click,on,application,button
 published: True

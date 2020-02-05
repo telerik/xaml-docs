@@ -1,7 +1,7 @@
 ---
 title: Format Painter
 page_title: Format Painter
-description: Format Painter
+description: Check our &quot;Format Painter&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-format-painter
 tags: format, painter
 published: True

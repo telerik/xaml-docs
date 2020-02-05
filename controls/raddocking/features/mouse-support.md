@@ -1,7 +1,7 @@
 ---
 title: Mouse Support
 page_title: Mouse Support
-description: Mouse Support
+description: Check our &quot;Mouse Support&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-mouse-support
 tags: mouse,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Localization
+description: Check our &quot;Localization&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-localization
 tags: localization
 published: True

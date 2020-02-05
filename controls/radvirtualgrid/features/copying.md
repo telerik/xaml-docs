@@ -1,7 +1,7 @@
 ---
 title: Copying
 page_title: Copying
-description: Copying
+description: Check our &quot;Copying&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-copying
 tags: copying
 published: True

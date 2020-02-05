@@ -1,7 +1,7 @@
 ---
 title: Network Locations Support
 page_title: Network Locations Support
-description: Network Locations Support
+description: Check our &quot;Network Locations Support&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-features-network-locations
 tags: network,locations
 published: True

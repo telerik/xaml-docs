@@ -1,7 +1,7 @@
 ---
 title: Bind RadTreeViewItem CheckState Property
 page_title: Bind RadTreeViewItem CheckState Property
-description: Bind RadTreeViewItem CheckState Property
+description: Check our &quot;Bind RadTreeViewItem CheckState Property&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-bind-checkstate-property
 tags: bind,radtreeviewitem,checkstate,property
 published: False

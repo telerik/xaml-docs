@@ -1,7 +1,7 @@
 ---
 title: Paging Essentials
 page_title: Paging Essentials
-description: Paging Essentials
+description: Check our &quot;Paging Essentials&quot; documentation article for the RadDataPager WPF control.
 slug: raddapager-features-paging-essentials
 tags: paging,essentials
 published: True

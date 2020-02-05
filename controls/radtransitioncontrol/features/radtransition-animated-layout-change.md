@@ -1,7 +1,7 @@
 ---
 title: Animated Layout Change
 page_title: Animated Layout Change
-description: Animated Layout Change
+description: Check our &quot;Animated Layout Change&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-features-animated-layout-change
 tags: animated,layout,change
 published: True

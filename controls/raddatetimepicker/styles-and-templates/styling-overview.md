@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-styling-overview
 tags: overview
 published: True

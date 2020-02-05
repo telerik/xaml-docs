@@ -1,7 +1,7 @@
 ---
 title: RadOpenFolderDialog
 page_title: RadOpenFolderDialog
-description: RadOpenFolderDialog
+description: Check our &quot;RadOpenFolderDialog&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-radopenfolderdialog
 tags: open,folder,dialog
 published: True

@@ -1,7 +1,7 @@
 ---
 title: VisualStructure
 page_title: VisualStructure
-description: VisualStructure
+description: Check our &quot;VisualStructure&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-visualstructure
 tags: visualstructure
 published: True

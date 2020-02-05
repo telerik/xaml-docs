@@ -1,7 +1,7 @@
 ---
 title: Display ScrollViewer Inside the Diagram
 page_title: Display ScrollViewer Inside the Diagram
-description: Display ScrollViewer Inside the Diagram
+description: Check our &quot;Display ScrollViewer Inside the Diagram&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-display-scroll
 tags: display,scrollviewer,inside,the,diagram
 published: True

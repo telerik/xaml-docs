@@ -1,7 +1,7 @@
 ---
 title: UpdateValueEvent
 page_title: UpdateValueEvent
-description: UpdateValueEvent
+description: Check our &quot;UpdateValueEvent&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-update-value
 tags: updatevalueevent
 published: True

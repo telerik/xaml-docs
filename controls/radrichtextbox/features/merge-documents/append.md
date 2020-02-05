@@ -1,7 +1,7 @@
 ---
 title: Append Documents
 page_title: Append Documents
-description: Append Documents
+description: Check our &quot;Append Documents&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-merge-append-documents
 tags: raddocumentmerger, merge, insert, documents
 published: True

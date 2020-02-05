@@ -1,7 +1,7 @@
 ---
 title: UploadItem Events
 page_title: UploadItem Events
-description: UploadItem Events
+description: Check our &quot;UploadItem Events&quot; documentation article for the RadUpload WPF control.
 slug: radupload-events-uploaditem-events
 tags: uploaditem,events
 published: True

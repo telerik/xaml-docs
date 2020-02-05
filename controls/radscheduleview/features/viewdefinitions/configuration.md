@@ -1,7 +1,7 @@
 ---
 title: Configuration
 page_title: Configuration
-description: Configuration
+description: Check our &quot;Configuration&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-viewdefinitions-configuration
 tags: configuration
 published: True

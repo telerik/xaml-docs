@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Data Binding
+description: Check our &quot;Data Binding&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-data-binding
 tags: data,binding
 published: True

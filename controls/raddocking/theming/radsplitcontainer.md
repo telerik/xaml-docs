@@ -1,7 +1,7 @@
 ---
 title: Theming the RadSplitContainer
 page_title: Theming the RadSplitContainer
-description: Theming the RadSplitContainer
+description: Check our &quot;Theming the RadSplitContainer&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-theming-radsplitcontainer
 tags: theming,the,radsplitcontainer
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Use MVVM in RadToolbar
 page_title: Use MVVM in RadToolbar
-description: Use MVVM in RadToolbar
+description: Check our &quot;Use MVVM in RadToolbar&quot; documentation article for the RadToolBar WPF control.
 slug: use-mvvm-in-radtoolbar
 tags: mvvm,support
 published: True

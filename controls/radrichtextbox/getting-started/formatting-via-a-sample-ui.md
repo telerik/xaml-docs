@@ -1,7 +1,7 @@
 ---
 title: Formatting via a Sample UI
 page_title: Formatting via a Sample UI
-description: Formatting via a Sample UI
+description: Check our &quot;Formatting via a Sample UI&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-getting-started-formatting-via-a-sample-ui
 tags: getting,started, formatting, UI
 published: True

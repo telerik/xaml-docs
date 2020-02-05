@@ -1,7 +1,7 @@
 ---
 title: DataFormMessage
 page_title: DataFormMessage
-description: DataFormMessage
+description: Check our &quot;DataFormMessage&quot; documentation article for the RadChat WPF control.
 slug: chat-items-dataformmessage
 tags: messages,dataformmessage
 published: True

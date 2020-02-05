@@ -1,7 +1,7 @@
 ---
 title: Create Custom Upload Handler
 page_title: Create Custom Upload Handler
-description: Create Custom Upload Handler
+description: Check our &quot;Create Custom Upload Handler&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-create-custom-upload-handler
 tags: create,custom,upload,handler
 published: True

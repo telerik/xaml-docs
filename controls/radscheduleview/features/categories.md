@@ -1,7 +1,7 @@
 ---
 title: Categories
 page_title: Categories
-description: Categories
+description: Check our &quot;Categories&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-categories
 tags: categories
 published: True

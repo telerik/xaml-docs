@@ -1,7 +1,7 @@
 ---
 title: Special Slots
 page_title: Special Slots
-description: Special Slots
+description: Check our &quot;Special Slots&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-specialslots
 tags: special,slots
 published: True

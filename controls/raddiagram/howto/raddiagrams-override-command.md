@@ -1,7 +1,7 @@
 ---
 title: Override Diagram Command
 page_title: Override Diagram Command
-description: Override Diagram Command
+description: Check our &quot;Override Diagram Command&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-howto-override-command
 tags: override,delete,diagram,command,diagramcommands
 published: True

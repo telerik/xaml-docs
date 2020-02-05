@@ -1,7 +1,7 @@
 ---
 title: Date Selection Modes
 page_title: Date Selection Modes
-description: Date Selection Modes
+description: Check our &quot;Date Selection Modes&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-date-selection-modes
 tags: date,selection,modes
 published: True

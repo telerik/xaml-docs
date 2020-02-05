@@ -1,7 +1,7 @@
 ---
 title: Customizing the Resize and DragDropHighlight
 page_title: Customizing the Resize and DragDropHighlight
-description: Customizing the Resize and DragDropHighlight
+description: Check our &quot;Customizing the Resize and DragDropHighlight&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-customizing-resize-drag-highlight
 tags: customizing,the,resize,and,dragdrophighlight
 published: True

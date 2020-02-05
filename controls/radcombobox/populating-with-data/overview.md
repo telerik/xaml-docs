@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-populating-with-data-overview
 tags: overview
 published: True

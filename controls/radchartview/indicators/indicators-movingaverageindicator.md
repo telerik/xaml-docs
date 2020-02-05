@@ -1,7 +1,7 @@
 ---
 title: MovingAverageIndicator
 page_title: MovingAverageIndicator
-description: MovingAverageIndicator
+description: Check our &quot;MovingAverageIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-movingaverageindicator
 tags: financial, indicators, movingaverageindicator
 publish: True

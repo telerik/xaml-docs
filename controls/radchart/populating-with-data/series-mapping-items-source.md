@@ -1,7 +1,7 @@
 ---
 title: Multiple Datasources
 page_title: Multiple Datasources
-description: Multiple Datasources
+description: Check our &quot;Multiple Datasources&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-series-mapping-items-source
 tags: multiple,datasources
 published: True

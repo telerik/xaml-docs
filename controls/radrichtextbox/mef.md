@@ -1,7 +1,7 @@
 ---
 title: MEF
 page_title: MEF
-description: MEF
+description: Check our &quot;MEF&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-mef
 tags: mef
 published: True
@@ -124,7 +124,8 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(TablePropertiesDialog), 
     typeof(TabStopsPropertiesDialog), 
     typeof(UnprotectDocumentDialog), 
-    typeof(WatermarkSettingsDialog) 
+    typeof(WatermarkSettingsDialog),
+    typeof(PasteOptionsPopup)
 {{endregion}}
 
 You could remove all the types you won’t need in your application.

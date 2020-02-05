@@ -1,7 +1,7 @@
 ---
 title: Styling the StripLine
 page_title: Styling the StripLine
-description: Styling the StripLine
+description: Check our &quot;Styling the StripLine&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-stripline
 tags: styling,the,stripline
 published: True

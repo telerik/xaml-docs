@@ -1,7 +1,7 @@
 ---
 title: Creating ItemTemplate and SelectionBoxTemplate
 page_title: Creating ItemTemplate and SelectionBoxTemplate
-description: Creating ItemTemplate and SelectionBoxTemplate
+description: Check our &quot;Creating ItemTemplate and SelectionBoxTemplate&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-creating-itemtemplate
 tags: creating,itemtemplate,and,selectionboxtemplate
 published: True

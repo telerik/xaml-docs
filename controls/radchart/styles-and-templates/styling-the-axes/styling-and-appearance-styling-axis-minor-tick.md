@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Minor Tick
 page_title: Styling the Axis Minor Tick
-description: Styling the Axis Minor Tick
+description: Check our &quot;Styling the Axis Minor Tick&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axis-minor-tick
 tags: styling,the,axis,minor,tick
 published: True

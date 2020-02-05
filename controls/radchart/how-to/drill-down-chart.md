@@ -1,7 +1,7 @@
 ---
 title: Drill Down Chart
 page_title: Drill Down Chart
-description: Drill Down Chart
+description: Check our &quot;Drill Down Chart&quot; documentation article for the RadChart WPF control.
 slug: radchart-how-to-drill-down-chart
 tags: drill,down,chart
 published: True

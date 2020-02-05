@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Localization
+description: Check our &quot;Localization&quot; documentation article for the RadDataPager WPF control.
 slug: raddatapager-localization
 tags: localization
 published: True

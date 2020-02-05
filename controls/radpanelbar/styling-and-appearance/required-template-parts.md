@@ -1,7 +1,7 @@
 ---
 title: Required Parts
 page_title: Required Parts
-description: Required Parts
+description: Check our &quot;Required Parts&quot; documentation article for the RadPanelBar WPF control.
 slug: radpanelbar-required-template-parts
 tags: required,parts
 published: True

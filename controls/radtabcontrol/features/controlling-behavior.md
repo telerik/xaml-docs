@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Key Properties
+description: This article describes the key features of Progress Telerik RadTabControl.
 slug: radtabcontrol-features-controlling-behavior
 tags: controlling,behavior
 published: True

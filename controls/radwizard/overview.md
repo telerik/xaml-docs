@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadWizard WPF control.
 slug: wizard-overview
 tags: overview
 published: True

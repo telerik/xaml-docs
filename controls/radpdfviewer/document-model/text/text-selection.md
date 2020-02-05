@@ -1,7 +1,7 @@
 ---
 title: Text Selection
 page_title: Text Selection
-description: Text Selection
+description: Check our &quot;Text Selection&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-text-text-selection
 tags: text,selection
 published: True

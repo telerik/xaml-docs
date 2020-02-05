@@ -1,7 +1,7 @@
 ---
 title: How to apply multiple animations for showing and hiding RadDesktopAlert
 page_title: How to apply multiple animations for showing and hiding RadDesktopAlert
-description: How to apply multiple animations for showing and hiding RadDesktopAlert
+description: Check our &quot;How to apply multiple animations for showing and hiding RadDesktopAlert&quot; documentation article for the RadDesktopAlert WPF control.
 slug: raddesktopalert-how-to-apply-multiple-animations-for-showing-and-hiding-raddesktopalert
 tags: how,to,apply,aniamtion,group
 published: True

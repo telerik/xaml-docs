@@ -1,7 +1,7 @@
 ---
 title: Shape Appearance
 page_title: Shape Appearance
-description: Shape Appearance
+description: Check our &quot;Shape Appearance&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-shape-appearance
 tags: shape,appearance
 published: True

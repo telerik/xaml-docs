@@ -1,7 +1,7 @@
 ---
 title: SelectedItemsSource
 page_title: SelectedItemsSource
-description: SelectedItemsSource
+description: Check our &quot;SelectedItemsSource&quot; documentation article for the RadListBox WPF control.
 slug: radlistbox-features-selecteditemssource
 tags: selecteditemssource
 published: True

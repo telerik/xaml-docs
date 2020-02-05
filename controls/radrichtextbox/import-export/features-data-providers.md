@@ -1,7 +1,7 @@
 ---
 title: Data Providers
 page_title: Data Providers
-description: Data Providers
+description: Check our &quot;Data Providers&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-data-providers
 tags: data,providers
 published: True

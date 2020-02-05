@@ -1,7 +1,7 @@
 ---
 title: Types of Items
 page_title: Types of Items
-description: Types of Items
+description: Check our &quot;Types of Items&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-features-items-types
 tags: types,of,items
 published: True

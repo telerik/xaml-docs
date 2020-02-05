@@ -1,7 +1,7 @@
 ---
 title: PlotBand Annotations
 page_title: PlotBand Annotations
-description: PlotBand Annotations
+description: Check our &quot;PlotBand Annotations&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-annotations-plotband
 tags: plotband,annotations
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Ribbon DropDownButton
 page_title: Ribbon DropDownButton
-description: Ribbon DropDownButton
+description: Check our &quot;Ribbon DropDownButton&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-dropdown-button
 tags: ribbon,dropdownbutton
 published: True

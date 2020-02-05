@@ -1,7 +1,7 @@
 ---
 title: Select an Item in Expression Blend
 page_title: Select an Item in Expression Blend
-description: Select an Item in Expression Blend
+description: Check our &quot;Select an Item in Expression Blend&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-select-item-in-expression-blend
 tags: select,an,item,in,expression,blend
 published: False

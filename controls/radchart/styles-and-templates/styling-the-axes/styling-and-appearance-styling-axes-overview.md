@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-axes-overview
 tags: overview
 published: True

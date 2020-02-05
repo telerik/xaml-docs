@@ -1,7 +1,7 @@
 ---
 title: Input Modes
 page_title: Input Modes
-description: Input Modes
+description: Check our &quot;Input Modes&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-input-modes
 tags: input,modes
 published: True

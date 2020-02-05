@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 page_title: Prerequisites
-description: Prerequisites
+description: Check our &quot;Prerequisites&quot; documentation article for the RadEntityFrameworkDataSource WPF control.
 slug: entityframework-prerequisites
 tags: prerequisites
 published: True

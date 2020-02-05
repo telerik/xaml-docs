@@ -1,7 +1,7 @@
 ---
 title: Layout Support
 page_title: Layout Support
-description: Layout Support
+description: Check our &quot;Layout Support&quot; documentation article for the RadTimePicker WPF control.
 slug: radtimepicker-layout-support
 tags: layout,support
 published: True

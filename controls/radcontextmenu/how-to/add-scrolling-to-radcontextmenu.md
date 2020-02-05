@@ -1,7 +1,7 @@
 ---
 title: Add Scrolling to RadContextMenu
 page_title: Add Scrolling to RadContextMenu
-description: Add Scrolling to RadContextMenu
+description: Check our &quot;Add Scrolling to RadContextMenu&quot; documentation article for the RadContextMenu WPF control.
 slug: radcontextmenu-how-to-add-scrolling-to-radcontextmenu
 tags: add,scrolling,to,radcontextmenu
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Add Custom Element in the ToolBox
 page_title: Add Custom Element in the ToolBox
-description: Add Custom Element in the ToolBox
+description: Check our &quot;Add Custom Element in the ToolBox&quot; documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-how-to-add-custom-element-in-toolbox
 tags: layoutcontrolhierarchicalnodeproxy,toolbox,newitems
 published: True

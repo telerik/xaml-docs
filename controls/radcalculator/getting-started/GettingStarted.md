@@ -1,7 +1,7 @@
 ---
 title: RadCalculator
 page_title: RadCalculator
-description: RadCalculator
+description: Check our &quot;RadCalculator&quot; documentation article for the RadCalculator WPF control.
 slug: radcalculator-gettingstarted
 tags: radcalculator
 published: True

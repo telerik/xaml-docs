@@ -1,7 +1,7 @@
 ---
 title: XML Binding
 page_title: XML Binding
-description: XML Binding
+description: Check our &quot;XML Binding&quot; documentation article for the RadCalendar WPF control.
 slug: radcalendar-xml-binding
 tags: xml,binding
 published: True

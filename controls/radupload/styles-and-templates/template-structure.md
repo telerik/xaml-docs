@@ -1,7 +1,7 @@
 ---
 title: Template Structure
 page_title: Template Structure
-description: Template Structure
+description: Check our &quot;Template Structure&quot; documentation article for the RadUpload WPF control.
 slug: radupload-styles-and-templates-template-structure
 tags: template,structure
 published: True

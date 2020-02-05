@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonView TitleBar
 page_title: Styling the RadRibbonView TitleBar
-description: Styling the RadRibbonView TitleBar
+description: Check our &quot;Styling the RadRibbonView TitleBar&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-titlebar
 tags: styling,the,radribbonview,titlebar
 published: True

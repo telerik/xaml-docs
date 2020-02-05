@@ -1,7 +1,7 @@
 ---
 title: Event Cycles
 page_title: Event Cycles
-description: Event Cycles
+description: Check our &quot;Event Cycles&quot; documentation article for the RadUpload WPF control.
 slug: radupload-events-event-cycles
 tags: event,cycles
 published: True

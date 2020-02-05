@@ -1,7 +1,7 @@
 ---
 title: Value Mode
 page_title: Value Mode
-description: Value Mode
+description: Check our &quot;Value Mode&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-value-mode
 tags: value,mode
 published: True

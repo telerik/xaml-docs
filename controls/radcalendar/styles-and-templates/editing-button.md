@@ -1,7 +1,7 @@
 ---
 title: Editing the CalendarButton Style
 page_title: Editing the CalendarButton Style
-description: Editing the CalendarButton Style
+description: Check our &quot;Editing the CalendarButton Style&quot; documentation article for the RadCalendar WPF control.
 slug: radcalendar-editing-button
 tags: editing,the,calendarbutton,style
 published: True

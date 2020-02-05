@@ -1,7 +1,7 @@
 ---
 title: Conversion between Pixels and PixelLength
 page_title: Conversion between Pixels and PixelLength
-description: Conversion between Pixels and PixelLength
+description: Check our &quot;Conversion between Pixels and PixelLength&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-features-timeruler-conversion
 tags: conversion,between,pixels,and,pixellength
 published: True

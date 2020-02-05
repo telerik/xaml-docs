@@ -1,7 +1,7 @@
 ---
 title: Color History
 page_title: Color History
-description: Color History
+description: Check our &quot;Color History&quot; documentation article for the RadColorEditor WPF control.
 slug: radcoloreditor-features-color-history
 tags: color,history
 published: True

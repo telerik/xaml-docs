@@ -1,7 +1,7 @@
 ---
 title: Linear Scale
 page_title: Linear Scale
-description: Linear Scale
+description: Check our &quot;Linear Scale&quot; documentation article for the RadGauge WPF control.
 slug: radgauge-features-scales-linear-scale
 tags: linear,scale
 published: True

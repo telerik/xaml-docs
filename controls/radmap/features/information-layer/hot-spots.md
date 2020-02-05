@@ -1,7 +1,7 @@
 ---
 title: Hot Spots
 page_title: Hot Spots
-description: Hot Spots
+description: Check our &quot;Hot Spots&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-hot-spots
 tags: hot,spots
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Use IsRecentColorsActive property
 page_title: Use IsRecentColorsActive property
-description: Use IsRecentColorsActive property
+description: Check our &quot;Use IsRecentColorsActive property&quot; documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-howto-use-isrecentcolorsactive
 tags: use,isrecentcolorsactive,property
 published: True

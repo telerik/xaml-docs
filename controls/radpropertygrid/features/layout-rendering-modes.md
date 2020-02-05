@@ -1,7 +1,7 @@
 ---
 title: Layout Rendering Modes
 page_title: Layout Rendering Modes
-description: Layout Rendering Modes
+description: Check our &quot;Layout Rendering Modes&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-features-layout-rendering-modes
 tags: layout,rendering,modes
 published: True

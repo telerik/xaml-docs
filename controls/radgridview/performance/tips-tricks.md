@@ -10,60 +10,54 @@ position: 1
 
 # Tips and Tricks
 
-__RadGridView__ API allows you to tweak your application for optimal performance. You should be familiar with the following performance tips:
+__RadGridView__'s API allows you to tweak your application for optimal performance. To get the best out of the control you have to be familiar with the following performance tips.
 
-* RadGridView API supports __UI Virtualization__, which processes only information loaded in the viewable area, which reduces the memory footprint of the application and speeds up loading time thus enhancing additionally the UI performance. [Read more]({%slug radgridview-features-ui-virtualization%}).
+* RadGridView supports [UI virtualization]({%slug radgridview-features-ui-virtualization%}) which processes only these visual elements that are loaded in its viewable area. This reduces the memory footprint of the application and speeds up the loading time, thus enhancing the UI performance.
           
-* Try not to place RadGridView in controls/panels which will measure it with infinity. For example, __ScrollViewer__, __StackPanel__ and __Grid__ with __Row.Height=Auto__ or __Column.Width=Auto__ will measure with infinity. When the control is measured with infinity the [virtualization]({%slug radgridview-features-ui-virtualization%}) turns off.  
-
-* Binding large dataset to the control is a time consuming task that can at times test the user’s patience. To provide better user experience RadGridView exposes __IsBusy property__.
+* Placing RadGridView in panels/controls which measure it with infinity disables the UI virtualization mechanism of the control and can greatly impact performance when dealing with large amounts of data. Examples of such panels include __ScrollViewer__, __StackPanel__ and __Grid__ with a definition with **Width/Height** set to **Auto**.
             
-* RadGridView offers an excellent integration with Telerik's __RadDataPager__. [Read more]({%slug radgridview-paging-using-telerik-raddatapager%}).
+* It is recommended to use the **Flat** [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). Configuring it involves rendering rows one below the other, which leads to better performance results as opposed to the.
 
-* In general, the fastest performance can be achieved if you bind the columns to a simple property because we will use lambda to get the value. If you bind to complex property (sub property) we have to use bindings to get the value for the cell, which is much slower then lambdas.            
+* You can also speed up the performance of the control by using the [lightweight templates]({%slug gridview-overview-lightweight-template%}) for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates of the rows and cells and reduce the amount of time it takes to render them.
 
-* Set __fixed Width__ for the columns. 
-	* Configuring __RadGridView.ColumnWidth to a specific width__ (like 100) will increase both horizontal and vertical scrolling performance. 
-	* __Auto__ is a little bit slower 
-	* __Star__ is the slowest (this is most noticeable when you have a lot of columns).
-
-* Disable validation in view mode through configuring [ValidatesOnDataErrors="InEditMode"]({%slug gridview-managing-data-validation%}).
-
-* Avoid using converters. Calling a converter is a time-consuming operation and this will slow down the performance.
-
-* Avoid applying a __RowStyle__ and/or an __AlternateRowStyle__ that modifies the default GridViewRow ControlTemplate. This will result in a performance hit.
+* If applicable, you can also __turn off the generation of automation peers__ through the new global __AutomationMode__ property of the __AutomationManager__. By setting it to **Disabled** you can greatly improve the performance of the control in certain scenarios.
             
-* __DataLoadMode="Asynchronous"__ - using this mode is __not recommended__, it leads to potential problems. Please do not use it.        
+* Another optimization would be to __disable__ the [touch support]({%slug touch-support%}) which will prevent any touch events to be fired. 
 
-* If applicable, try to stick to the default templates and avoid overriding templates of rows and cells.
+* When using [combobox columns]({%slug radgridview-columns-column-types-combobox-column%}) in your RadGridView instance, you can set their __IsLightweightModeEnabled__ property to __true__ which will significantly increase the performance of their lookup logic. Thus, the overall performance of RadGridView will be improved as well.
+
+* When you have child RadGridViews placed in [row details]({%slug radgridview-row-details-template%}) or a [hierarchy structure]({%slug gridview-basic-hierarchies%}), make sure to specify fixed dimensions for them (**Height/MaxHeight** and **Width/MaxWidth**). Otherwise their [UI virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
+
+* Binding large datasets to the control is a time consuming task that can at times test the users' patience. To provide better user experience RadGridView exposes an __IsBusy__ property through which you can display a [busy indicator]({%slug gridview-busy-indicator%}) while the data is loading.
             
-* As of __Q1 2012 SP1__ you have the option to disable the Telerik StyleManager and to style the controls using Implicit Styles. There are a number of benefits of using implicit styles over the Telerik StyleManager. For more information, please refer to the respective [help article]({%slug styling-apperance-implicit-styles-overview%}).
+* RadGridView offers excellent integration with the [RadDataPager control]({%slug radgridview-paging-using-telerik-raddatapager%}) which can be extremely helpful when working with large collections of data.
+
+* In general, the fastest performance can be achieved if you bind the columns to simple properties because, in this case, lambda expressions are used to get the values. If you bind to nested (sub) properties the control uses bindings to get the values for the cells, which is a much slower operation.            
+
+* Set а __fixed Width__ for the columns. Here's a list of the different options when setting the column widths, ordered from best to worst performance.
+	* __Fixed__: Providing a fixed valued (such as 100) for the columns' width increases both horizontal and vertical scrolling performance. 
+	* __Auto__: Setting a width size of **Auto** provides similar, but worse performance.
+	* __Star__: Providing a star-based width results in the slowest performance. This is most noticeable when you have a lot of columns.
+
+* Disable validation in view-mode by setting the [ValidatesOnDataErrors]({%slug gridview-managing-data-validation%}) property to **InEditMode**.
+
+* Avoid using [converters](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter) for the bindings. Calling a converter is a time-consuming operation and this will slow down the performance.
+
+* Avoid applying a __RowStyle__ and/or an __AlternateRowStyle__ which modify the default control template of the GridViewRow element. This will result in a significant performance hit.
             
-* As of __Q3 2012__ we introduced a new rendering mode - Flat. Configuring it involves rendering rows one below the other, which leads to better performance results. You can also refer to the [GroupingModes]({%slug gridview-grouping-groupingmodes%}) article.
-              
-* As of __2013 Q2 SP__ we introduced __Lightweight Templates__ for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates in order to speed up the performance of the control. [Read more]({%slug gridview-overview-lightweight-template%}).
+* If possible, try not to modify to the default cell templates and avoid overriding them by setting the [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) properties unless really necessary.
 
->tipYou can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).
+* Using the __DataLoadMode="Asynchronous"__ is __not recommended__ as it can lead to potential problems.
 
-* RadGridView with applied __Windows8, Windows8Touch or Office2013 Theme__
-                - Telerik controls in these themes use resources, which are linked to one major singleton that contains the colors used in them. Such an approach slows down the performance of virtualized components, such as RadGridView. You can consider applying the __Lightweight Templates__ in order to speed up the performance. Please check [this detailed article]({%slug gridview-overview-lightweight-template%}), which explain the purpose of these styles.
-              
-* As of __Q2 2014 SP__ release, we introduced the option to __turn off generating of automation peers through the new global AutomationMode property of the AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article on how to set the AutomationMode property to Disabled.
-            
-* __TouchManager__ -  another optimization would be to __disable the Touch Support__. You can refer to the [Touch Support]({%slug touch-support%}) article.
-
-* As of __R2 2016__ GridViewComboBoxColumn exposes a new property - __IsLightweightModeEnabled__. Setting it to __true__ significantly increases the lookup logic of __GridViewComboBoxColumn__. Thus, the overall performance of RadGridView will be improved as well.
-
-* When you have child RadGridViews placed in [RowDetails]({%slug radgridview-row-details-template%}) or a [Hierarchy structure]({%slug gridview-basic-hierarchies%}), make sure to specify fixed dimensions for them (Height/MaxHeight and Width/MaxWidth). Otherwise their [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
+* It is also recommended to set the **IsPropertyChangedAggregationEnabled** property to **False**. Its default value is **True**, meaning that the occurrence of the PropertyChanged event will be handled on a fixed time period using a DispatcherTimer, which improves the rendering performance when there are a large number of value updates in a short period of time. If this is not the case in your application, you can disable this property so that the resources taken by the aforementioned DispatcherTimer will be freed, thus improving the overall performance of the control.
             
 ## See Also
 
- * [Degraded Performance]({%slug gridview-troubleshooting-performance%})
-
- * [Lightweight Templates]({%slug gridview-overview-lightweight-template%})
-
- * [Sorting]({%slug gridview-overview-sorting%})
-
- * [Grouping]({%slug gridview-overview-grouping%})
-
- * [Filtering]({%slug gridview-overview-filtering%})
+* [UI Virtualization]({%slug radgridview-features-ui-virtualization%})
+* [Grouping Modes]({%slug gridview-grouping-groupingmodes%})
+* [Busy Indicator]({%slug gridview-busy-indicator%})
+* [RadDataPager Integration]({%slug radgridview-paging-using-telerik-raddatapager%})
+* [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
+* [Lightweight Templates]({%slug gridview-overview-lightweight-template%})
+* [Managing Data Validation]({%slug gridview-managing-data-validation%})
+* [UI Automation Support]({%slug common-ui-automation%})

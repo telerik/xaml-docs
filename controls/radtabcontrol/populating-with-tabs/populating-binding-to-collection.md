@@ -1,7 +1,7 @@
 ---
 title: Binding To Collection
 page_title: Binding To Collection
-description: Binding To Collection
+description: Check our &quot;Binding To Collection&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-populating-binding-to-collection
 tags: binding,to,collection
 published: True

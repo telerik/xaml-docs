@@ -1,7 +1,7 @@
 ---
 title: Clustering
 page_title: Clustering
-description: Clustering
+description: Check our &quot;Clustering&quot; documentation article for the RadMap WPF control.
 slug: radmap-heatures-visualization-layer-clustering
 tags: clustering
 published: True

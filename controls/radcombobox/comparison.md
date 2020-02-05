@@ -1,7 +1,7 @@
 ---
 title: Tech Specs and Comparisons
 page_title: Tech Specs and Comparisons
-description: Tech Specs and Comparisons
+description: Check our &quot;Tech Specs and Comparisons&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-comparison
 tags: tech,specs,comparisons
 published: True

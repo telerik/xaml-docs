@@ -1,7 +1,7 @@
 ---
 title: Zooming and Scrolling
 page_title: Zooming and Scrolling
-description: Zooming and Scrolling
+description: Check our &quot;Zooming and Scrolling&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-zooming-and-scrolling
 tags: zooming,and,scrolling
 published: True

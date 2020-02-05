@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Structure
+description: Check our &quot;Structure&quot; documentation article for the RadColorPicker WPF control.
 slug: radcolorpicker-structure
 tags: structure
 published: True

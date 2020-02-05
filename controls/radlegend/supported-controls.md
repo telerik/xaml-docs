@@ -1,7 +1,7 @@
 ---
 title: Supported Controls
 page_title: Supported Controls
-description: Supported Controls
+description: Check our &quot;Supported Controls&quot; documentation article for the RadLegend WPF control.
 slug: radlegend-supported-controls
 tags: supported,controls
 published: True

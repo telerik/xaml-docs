@@ -1,7 +1,7 @@
 ---
 title: Label Connectors
 page_title: Label Connectors
-description: Label Connectors
+description: Check our &quot;Label Connectors&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-label-connectors
 tags: label,connectors,settings
 published: True

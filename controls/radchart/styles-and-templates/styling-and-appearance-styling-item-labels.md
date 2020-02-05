@@ -1,7 +1,7 @@
 ---
 title: Styling the Item Labels
 page_title: Styling the Item Labels
-description: Styling the Item Labels
+description: Check our &quot;Styling the Item Labels&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-item-labels
 tags: styling,the,item,labels
 published: True

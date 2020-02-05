@@ -1,7 +1,7 @@
 ---
 title: RateOfChangeIndicator
 page_title: RateOfChangeIndicator
-description: RateOfChangeIndicator
+description: Check our &quot;RateOfChangeIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-rateofchangeindicator
 tags: financial, indicators, rateofchangeindicator
 publish: True

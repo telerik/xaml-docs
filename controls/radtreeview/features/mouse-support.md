@@ -1,7 +1,7 @@
 ---
 title: Mouse Support
 page_title: Mouse Support
-description: Mouse Support
+description: Check our &quot;Mouse Support&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-features-mouse-support
 tags: mouse,support
 published: True

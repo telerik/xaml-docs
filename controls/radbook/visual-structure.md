@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: This section defines terms and concepts used in the scope of RadBook you have to get familiar with prior to continue reading this help
-description: Visual Structure
+description: Check our &quot;Visual Structure&quot; documentation article for the RadBook WPF control.
 slug: radbook-visual-structure
 tags: visual,structure
 published: True

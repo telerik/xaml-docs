@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop
 page_title: Drag and Drop
-description: Drag and Drop
+description: Check our &quot;Drag and Drop&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-drag-and-drop
 tags: drag,and,drop
 published: True

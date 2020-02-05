@@ -1,7 +1,7 @@
 ---
 title: CloudUploadFile
 page_title: CloudUploadFile
-description: CloudUploadFile
+description: Check our &quot;CloudUploadFile&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-cloud-upload-file
 tags: clouduploadfile
 published: True

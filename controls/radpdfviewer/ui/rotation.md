@@ -1,7 +1,7 @@
 ---
 title: Rotation
 page_title: Rotation
-description: Rotation
+description: Check our &quot;Rotation&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-rotation
 tags: rotation
 published: True

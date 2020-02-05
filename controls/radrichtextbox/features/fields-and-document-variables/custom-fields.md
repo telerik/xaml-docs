@@ -1,7 +1,7 @@
 ---
 title: Custom Fields
 page_title: Custom Fields
-description: Custom Fields
+description: Check our &quot;Custom Fields&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-custom-fields
 tags: custom,fields
 published: True

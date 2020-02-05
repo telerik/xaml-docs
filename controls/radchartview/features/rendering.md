@@ -1,7 +1,7 @@
 ---
 title: Rendering
 page_title: Rendering
-description: Rendering
+description: Check our &quot;Rendering&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-rendering
 tags: rendering
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Ribbon RadioButton
 page_title: Ribbon RadioButton
-description: Ribbon RadioButton
+description: Check our &quot;Ribbon RadioButton&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-radio-button
 tags: ribbon,radiobutton
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Alternation
 page_title: Alternation
-description: Alternation
+description: Check our &quot;Alternation&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-alternation
 tags: alternation
 published: True

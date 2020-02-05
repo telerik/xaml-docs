@@ -1,7 +1,7 @@
 ---
 title: Change Title
 page_title: Change Title
-description: Change Title
+description: Check our &quot;Change Title&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-howto-change-title
 tags: change,title
 published: True

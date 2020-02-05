@@ -1,7 +1,7 @@
 ---
 title: AverageTrueRangeIndicator
 page_title: AverageTrueRangeIndicator
-description: AverageTrueRangeIndicator
+description: Check our &quot;AverageTrueRangeIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-averagetruerangeindicator
 tags: financial, indicators, averagetruerangeindicator
 publish: True

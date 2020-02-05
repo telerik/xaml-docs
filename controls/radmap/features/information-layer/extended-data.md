@@ -1,7 +1,7 @@
 ---
 title: Extended Data
 page_title: Extended Data
-description: Extended Data
+description: Check our &quot;Extended Data&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-extended-data
 tags: extended,data
 published: True

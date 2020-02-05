@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadSpellChecker WPF control.
 slug: radspellchecker-overview
 tags: overview
 published: True

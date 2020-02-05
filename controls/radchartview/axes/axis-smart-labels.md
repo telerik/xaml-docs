@@ -1,7 +1,7 @@
 ---
 title: Axis Smart Labels
 page_title: Axis Smart Labels
-description: Axis Smart Labels
+description: Check our &quot;Axis Smart Labels&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-axis-smart-labels
 tags: smart,labels,axis,mode,smartlabelsmode,issteprecalculationonzoomenabled
 published: True

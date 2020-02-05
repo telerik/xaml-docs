@@ -1,7 +1,7 @@
 ---
 title: Text Position
 page_title: Text Position
-description: Text Position
+description: Check our &quot;Text Position&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-text-text-position
 tags: text,position
 published: True

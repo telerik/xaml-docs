@@ -1,7 +1,7 @@
 ---
 title: Source and Filtered Source
 page_title: Source and Filtered Source
-description: Source and Filtered Source
+description: Check our &quot;Source and Filtered Source&quot; documentation article for the RadDataFilter WPF control.
 slug: raddatafilter-features-source-and-filtered-source
 tags: source,and,filtered,source
 published: True

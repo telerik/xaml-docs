@@ -1,7 +1,7 @@
 ---
 title: Logarithmic Scale
 page_title: Logarithmic Scale
-description: Logarithmic Scale
+description: Check our &quot;Logarithmic Scale&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-axes-logarithmic-scale
 tags: logarithmic,scale
 published: True

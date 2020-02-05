@@ -1,7 +1,7 @@
 ---
 title: CarouselMessage
 page_title: CarouselMessage
-description: CarouselMessage
+description: Check our &quot;CarouselMessage&quot; documentation article for the RadChat WPF control.
 slug: chat-items-carouselmessage
 tags: messages,carouselmessage
 published: True

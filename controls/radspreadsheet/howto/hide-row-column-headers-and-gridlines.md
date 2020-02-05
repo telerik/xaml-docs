@@ -1,7 +1,7 @@
 ---
 title: Hide Row and Column Headers and Gridlines
 page_title: Hide Row and Column Headers and Gridlines
-description: Hide Row and Column Headers and Gridlines
+description: Check our &quot;Hide Row and Column Headers and Gridlines&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-howto-hide-row-column-headers-and-gridlines
 tags: hide,row,and,column,headers,and,gridlines
 published: True

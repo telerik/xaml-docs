@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Visual Structure
+description: Check our &quot;Visual Structure&quot; documentation article for the RadTileView WPF control.
 slug: radtileview-visual-structure
 tags: visual,structure
 published: True

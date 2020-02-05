@@ -1,7 +1,7 @@
 ---
 title: Use DataFormValidationSummary outside RadDataForm
 page_title: Use DataFormValidationSummary outside RadDataForm
-description: Check our "Use DataFormValidationSummary outside RadDataForm" documentation article for the RadDataForm WPF control.
+description: Check our &quot;Use DataFormValidationSummary outside RadDataForm&quot; documentation article for the RadDataForm WPF control.
 slug: validationsummary-outside-raddataform
 tags: validationsummary,outside,raddataform
 published: True

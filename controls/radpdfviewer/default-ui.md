@@ -1,7 +1,7 @@
 ---
 title: Default UI
 page_title: Default UI
-description: Check our "Default UI" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Default UI&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-default-ui
 tags: default, ui, radpdfviewertoolbar
 published: True

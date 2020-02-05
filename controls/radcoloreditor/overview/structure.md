@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Check our "Structure" documentation article for the RadColorEditor WPF control.
+description: Check our &quot;Structure&quot; documentation article for the RadColorEditor WPF control.
 slug: radcoloreditor-structure
 tags: structure
 published: True

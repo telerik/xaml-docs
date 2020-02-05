@@ -1,7 +1,7 @@
 ---
 title: Autostart
 page_title: Autostart
-description: Check our "Autostart" documentation article for the RadCloudUpload WPF control.
+description: Check our &quot;Autostart&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-autostart
 tags: autostart
 published: True

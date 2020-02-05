@@ -1,7 +1,7 @@
 ---
 title: Implement Semantic Zoom on a Shape level
 page_title: Implement Semantic Zoom on a Shape level
-description: Check our "Implement Semantic Zoom on a Shape level" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Implement Semantic Zoom on a Shape level&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-howto-semantic-zoom
 tags: implement,semantic,zoom,on,a,shape,level
 published: True

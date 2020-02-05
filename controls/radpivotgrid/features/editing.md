@@ -1,7 +1,7 @@
 ---
 title: Editing
 page_title: Editing
-description: Check our "Editing" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Editing&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-editing
 tags: editing
 published: True

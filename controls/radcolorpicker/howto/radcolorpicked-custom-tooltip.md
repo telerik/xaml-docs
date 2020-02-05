@@ -1,7 +1,7 @@
 ---
 title: Customize the PaletteViewItem's ToolTip
 page_title: Customize the PaletteViewItem's ToolTip
-description: Check our "Customize the PaletteViewItem's ToolTip" documentation article for the RadColorPicker WPF control.
+description: Check our &quot;Customize the PaletteViewItem's ToolTip&quot; documentation article for the RadColorPicker WPF control.
 slug: radcolorpicked-howto-custom-tooltip
 tags: customize,the,paletteviewitem's,tooltip
 published: True

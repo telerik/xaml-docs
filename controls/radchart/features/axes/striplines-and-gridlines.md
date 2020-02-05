@@ -1,7 +1,7 @@
 ---
 title: Striplines and Gridlines
 page_title: Striplines and Gridlines
-description: Check our "Striplines and Gridlines" documentation article for the RadChart WPF control.
+description: Check our &quot;Striplines and Gridlines&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-axes-striplines-and-gridlines
 tags: striplines,and,gridlines
 published: True

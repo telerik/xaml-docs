@@ -1,7 +1,7 @@
 ---
 title: Serialization
 page_title: Serialization
-description: Check our "Serialization" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Serialization&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-serialization
 tags: serialization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Templates
 page_title: Templates
-description: Check our "Templates" documentation article for the RadOutlookBar WPF control.
+description: Check our &quot;Templates&quot; documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-templates
 tags: templates
 published: True

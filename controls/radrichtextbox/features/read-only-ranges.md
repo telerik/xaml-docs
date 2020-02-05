@@ -1,7 +1,7 @@
 ---
 title: Read Only Ranges
 page_title: Read Only Ranges
-description: Check our "Read Only Ranges" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Read Only Ranges&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-read-only-ranges
 tags: read,only,ranges
 published: True

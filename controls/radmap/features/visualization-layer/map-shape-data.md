@@ -1,7 +1,7 @@
 ---
 title: Map Shape Data
 page_title: Map Shape Data
-description: Check our "Map Shape Data" documentation article for the RadMap WPF control.
+description: Check our &quot;Map Shape Data&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-map-shape-data
 tags: map,shape,data
 published: True

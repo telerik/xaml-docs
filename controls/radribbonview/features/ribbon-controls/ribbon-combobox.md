@@ -1,7 +1,7 @@
 ---
 title: Ribbon ComboBox
 page_title: Ribbon ComboBox
-description: Check our "Ribbon ComboBox" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Ribbon ComboBox&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-combobox
 tags: ribbon,combobox
 published: True

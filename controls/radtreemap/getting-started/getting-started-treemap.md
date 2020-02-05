@@ -1,7 +1,7 @@
 ---
 title: Getting Start with RadTreeMap
 page_title: Getting Start with RadTreeMap
-description: Check our "Getting Start with RadTreeMap" documentation article for the RadTreeMap WPF control.
+description: Check our &quot;Getting Start with RadTreeMap&quot; documentation article for the RadTreeMap WPF control.
 slug: radtreemap-getting-started-treemap
 tags: getting-started, treemap
 published: True

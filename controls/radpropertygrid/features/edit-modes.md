@@ -1,7 +1,7 @@
 ---
 title: Edit Modes
 page_title: Edit Modes
-description: Check our "Edit Modes" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Edit Modes&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-edit-modes
 tags: edit,modes
 published: True

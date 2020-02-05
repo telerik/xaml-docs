@@ -1,7 +1,7 @@
 ---
 title: Providers
 page_title: Providers
-description: Check our "Providers" documentation article for the RadCloudUpload WPF control.
+description: Check our &quot;Providers&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-providers
 tags: providers
 published: True

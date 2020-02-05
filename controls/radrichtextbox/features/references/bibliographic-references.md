@@ -1,7 +1,7 @@
 ---
 title: Bibliographic References
 page_title: Bibliographic References
-description: Check our "Bibliographic References" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Bibliographic References&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-bibliographic-references
 tags: bibliographic,references
 published: True

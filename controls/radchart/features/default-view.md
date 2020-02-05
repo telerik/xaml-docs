@@ -1,7 +1,7 @@
 ---
 title: DefaultView
 page_title: DefaultView
-description: Check our "DefaultView" documentation article for the RadChart WPF control.
+description: Check our &quot;DefaultView&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-default-view
 tags: defaultview
 published: True

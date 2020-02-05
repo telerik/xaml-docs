@@ -1,7 +1,7 @@
 ---
 title: Styling RadDateTimePicker
 page_title: Styling RadDateTimePicker
-description: Check our "Styling RadDateTimePicker" documentation article for the RadDateTimePicker WPF control.
+description: Check our &quot;Styling RadDateTimePicker&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-styling-raddatetimepicker
 tags: styling,raddatetimepicker
 published: True

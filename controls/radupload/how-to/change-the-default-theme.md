@@ -1,7 +1,7 @@
 ---
 title: Change the Default Theme
 page_title: Change the Default Theme
-description: Check our "Change the Default Theme" documentation article for the RadUpload WPF control.
+description: Check our &quot;Change the Default Theme&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-change-the-default-theme
 tags: change,the,default,theme
 published: True

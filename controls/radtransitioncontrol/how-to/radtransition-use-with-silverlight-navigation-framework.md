@@ -1,7 +1,7 @@
 ---
 title: Use with Silverlight Navigation Framework
 page_title: Use with Silverlight Navigation Framework
-description: Check our "Use with Silverlight Navigation Framework" documentation article for the RadTransitionControl WPF control.
+description: Check our &quot;Use with Silverlight Navigation Framework&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-how-to-use-with-silverlight-navigation-framework
 tags: use,with,silverlight,navigation,framework
 published: True

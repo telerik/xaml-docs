@@ -1,7 +1,7 @@
 ---
 title: Lambdas
 page_title: Lambdas
-description: Check our "Lambdas" documentation article for the RadExpressionEditor WPF control.
+description: Check our &quot;Lambdas&quot; documentation article for the RadExpressionEditor WPF control.
 slug: radexpressioneditor-expressions-lambdas
 tags: lambdas
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadCalculatorPicker Template Structure
 page_title: RadCalculatorPicker Template Structure
-description: Check our "RadCalculatorPicker Template Structure" documentation article for the RadCalculator WPF control.
+description: Check our &quot;RadCalculatorPicker Template Structure&quot; documentation article for the RadCalculator WPF control.
 slug: radcalculatorpicker-stylesandtemplates-templatestructure
 tags: radcalculatorpicker,template,structure
 published: True

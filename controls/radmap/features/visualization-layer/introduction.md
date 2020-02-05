@@ -1,7 +1,7 @@
 ---
 title: Introduction
 page_title: Introduction
-description: Check our "Introduction" documentation article for the RadMap WPF control.
+description: Check our &quot;Introduction&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-introduction
 tags: introduction
 published: True

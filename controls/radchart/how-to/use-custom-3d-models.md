@@ -1,7 +1,7 @@
 ---
 title: Use Custom 3D Models
 page_title: Use Custom 3D Models
-description: Check our "Use Custom 3D Models" documentation article for the RadChart WPF control.
+description: Check our &quot;Use Custom 3D Models&quot; documentation article for the RadChart WPF control.
 slug: radchart-how-to-use-custom-3d-models
 tags: use,custom,3d,models
 published: True

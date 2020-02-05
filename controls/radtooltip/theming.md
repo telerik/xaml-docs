@@ -1,7 +1,7 @@
 ---
 title: Theming
 page_title: Theming
-description: Check our "Theming" documentation article for the RadToolTip WPF control.
+description: Check our &quot;Theming&quot; documentation article for the RadToolTip WPF control.
 slug: radtooltip-theming
 tags: theming
 published: True

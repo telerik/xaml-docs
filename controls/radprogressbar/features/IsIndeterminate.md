@@ -1,7 +1,7 @@
 ---
 title: IsIndeterminate
 page_title: IsIndeterminate
-description: Check our "IsIndeterminate" documentation article for the RadProgressBar WPF control.
+description: Check our &quot;IsIndeterminate&quot; documentation article for the RadProgressBar WPF control.
 slug: isindeterminate
 tags: isindeterminate
 published: True

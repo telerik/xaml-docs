@@ -1,7 +1,7 @@
 ---
 title: BubbleSeries
 page_title: BubbleSeries
-description: Check our "BubbleSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;BubbleSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-bubbleseries
 tags: BubbleSeries
 published: True

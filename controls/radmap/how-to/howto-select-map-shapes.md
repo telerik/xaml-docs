@@ -1,7 +1,7 @@
 ---
 title: Select Map Shapes
 page_title: Select Map Shapes
-description: Check our "Select Map Shapes" documentation article for the RadMap WPF control.
+description: Check our &quot;Select Map Shapes&quot; documentation article for the RadMap WPF control.
 slug: radmap-howto-select-map-shapes
 tags: select,map,shapes
 published: True

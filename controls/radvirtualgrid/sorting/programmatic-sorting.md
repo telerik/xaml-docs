@@ -1,7 +1,7 @@
 ---
 title: Programmatic Sorting
 page_title: Programmatic Sorting
-description: Check our "Programmatic Sorting" documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Programmatic Sorting&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-sorting-programmatic-sorting
 tags: sorting, programmatic
 published: True

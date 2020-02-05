@@ -1,7 +1,7 @@
 ---
 title: Handle MouseLeftButtonDown Event
 page_title: Handle MouseLeftButtonDown Event
-description: Check our "Handle MouseLeftButtonDown Event" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Handle MouseLeftButtonDown Event&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-howto-handle-mouse-left-button-dwn
 tags: handle,mouseleftbuttondown,event
 published: False

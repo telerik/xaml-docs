@@ -1,7 +1,7 @@
 ---
 title: Reload Data
 page_title: Reload Data
-description: Check our "Reload Data" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Reload Data&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-howto-reload-data
 tags: reload,data
 published: True

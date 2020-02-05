@@ -1,7 +1,7 @@
 ---
 title: Icons
 page_title: Icons
-description: Check our "Icons" documentation article for the RadMenu WPF control.
+description: Check our &quot;Icons&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-icons
 tags: icons
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Expand and Collapse Items
 page_title: Expand and Collapse Items
-description: Check our "Expand and Collapse Items" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Expand and Collapse Items&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-expand-and-collapse-items
 tags: expand,and,collapse,items
 published: True

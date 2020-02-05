@@ -1,7 +1,7 @@
 ---
 title: Multiple Times File Selection
 page_title: Multiple Times File Selection
-description: Check our "Multiple Times File Selection" documentation article for the RadUpload WPF control.
+description: Check our &quot;Multiple Times File Selection&quot; documentation article for the RadUpload WPF control.
 slug: radupload-features-multiple-times-file-selection
 tags: multiple,times,file,selection
 published: True

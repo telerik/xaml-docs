@@ -1,7 +1,7 @@
 ---
 title: Document Variables
 page_title: Document Variables
-description: Check our "Document Variables" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Document Variables&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-variables
 tags: document,variables
 published: True

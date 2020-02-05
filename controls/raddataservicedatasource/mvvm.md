@@ -1,7 +1,7 @@
 ---
 title: MVVM Support
 page_title: MVVM Support
-description: Check our "MVVM Support" documentation article for the RadDataServiceDataSource WPF control.
+description: Check our &quot;MVVM Support&quot; documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-mvvm
 tags: mvvm,support
 published: True

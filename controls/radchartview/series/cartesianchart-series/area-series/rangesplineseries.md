@@ -1,7 +1,7 @@
 ---
 title: RangeSplineSeries
 page_title: RangeSplineSeries
-description: Check our "RangeSplineSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;RangeSplineSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-areaseries-rangesplineseries
 tags: rangesplineseries
 published: True

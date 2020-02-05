@@ -1,7 +1,7 @@
 ---
 title: Fields
 page_title: Fields
-description: Check our "Fields" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Fields&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-fields
 tags: fields
 published: True

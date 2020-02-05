@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Check our "Controlling Appearance" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Controlling Appearance&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-controlling-appearance
 tags: controlling,appearance
 published: True

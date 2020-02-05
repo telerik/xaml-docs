@@ -1,7 +1,7 @@
 ---
 title: Table Definitions and Relationships
 page_title: Table Definitions and Relationships
-description: Check our "Table Definitions and Relationships" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Table Definitions and Relationships&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-populating-with-data-binding-to-db-datatier
 tags: table,definitions,and,relationships
 published: True

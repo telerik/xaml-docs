@@ -1,7 +1,7 @@
 ---
 title: RadarLineSeries
 page_title: RadarLineSeries
-description: Check our "RadarLineSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;RadarLineSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-radarlineseries
 tags: radarlineseries
 published: True

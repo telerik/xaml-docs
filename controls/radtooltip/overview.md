@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our "Overview" documentation article for the RadToolTip WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadToolTip WPF control.
 slug: radtooltip-overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadFixedDocument
 page_title: RadFixedDocument
-description: Check our "RadFixedDocument" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;RadFixedDocument&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-document-model-radfixeddocument
 tags: radfixeddocument
 published: True

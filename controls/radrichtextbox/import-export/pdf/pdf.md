@@ -1,7 +1,7 @@
 ---
 title: Pdf
 page_title: Pdf
-description: Check our "Pdf" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Pdf&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-pdf
 tags: Pdf
 published: True

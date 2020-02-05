@@ -1,7 +1,7 @@
 ---
 title: Marker
 page_title: Marker
-description: Check our "Marker" documentation article for the RadGauge WPF control.
+description: Check our &quot;Marker&quot; documentation article for the RadGauge WPF control.
 slug: radial-scale-marker
 tags: marker
 published: True

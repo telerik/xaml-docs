@@ -1,7 +1,7 @@
 ---
 title: Customize default ControlTemplate
 page_title: Customize default ControlTemplate
-description: Check our "Customize default ControlTemplate" documentation article for the RadSlider WPF control.
+description: Check our &quot;Customize default ControlTemplate&quot; documentation article for the RadSlider WPF control.
 slug: radslider-customize-control-template
 tags: control,template,customize,edit
 published: True

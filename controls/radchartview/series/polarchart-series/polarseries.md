@@ -1,7 +1,7 @@
 ---
 title: Polar Series
 page_title: Polar Series
-description: Check our "Polar Series" documentation article for the RadChartView WPF control.
+description: Check our &quot;Polar Series&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-polarseries
 tags: polar,series
 published: False

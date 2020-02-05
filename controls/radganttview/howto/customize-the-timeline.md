@@ -1,7 +1,7 @@
 ---
 title: Customize the TimeLine Data and Containers
 page_title: Customize the TimeLine Data and Containers
-description: Check our "Customize the TimeLine Data and Containers" documentation article for the RadGanttView WPF control.
+description: Check our &quot;Customize the TimeLine Data and Containers&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-howto-customize-the-timeline
 tags: customize,the,timeline,data,and,containers
 published: True

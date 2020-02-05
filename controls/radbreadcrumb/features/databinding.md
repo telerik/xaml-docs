@@ -1,7 +1,7 @@
 ---
 title: Databinding 
 page_title: Databinding 
-description: Check our "Databinding" documentation article for the RadBreadcrumb WPF control.
+description: Check our &quot;Databinding&quot; documentation article for the RadBreadcrumb WPF control.
 slug: radbreadcrumb-databinding
 tags: databinding,
 published: True

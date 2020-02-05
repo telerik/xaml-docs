@@ -1,7 +1,7 @@
 ---
 title: Specifications
 page_title: Specifications
-description: Check our "Specifications" documentation article for the RadBarcode WPF control.
+description: Check our &quot;Specifications&quot; documentation article for the RadBarcode WPF control.
 slug: radbarcode-barcode-specifications
 tags: specifications
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Layout Mode
 page_title: Layout Mode
-description: Check our "Layout Mode" documentation article for the RadChart WPF control.
+description: Check our &quot;Layout Mode&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-layout-mode
 tags: layout,mode
 published: True

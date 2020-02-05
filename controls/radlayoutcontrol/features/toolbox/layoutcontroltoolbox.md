@@ -1,7 +1,7 @@
 ---
 title: LayoutControlToolBox
 page_title: LayoutControlToolBox
-description: Check our "LayoutControlToolBox" documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;LayoutControlToolBox&quot; documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-features-toolbox-layoutcontroltoolbox
 tags: layout, toolbox, layoutcontroltoolbox, layoutcontroltoolboxview
 published: True

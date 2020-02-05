@@ -1,7 +1,7 @@
 ---
 title: Lightweight Templates
 page_title: Lightweight Templates
-description: Check our "Lightweight Templates" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Lightweight Templates&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-lightweight-templates
 tags: lightweight,templates
 published: True

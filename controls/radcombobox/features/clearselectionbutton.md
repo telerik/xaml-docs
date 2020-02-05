@@ -1,7 +1,7 @@
 ---
 title: Clear Selection Button
 page_title: Clear Selection Button
-description: Check our "Clear Selection Button" documentation article for the RadComboBox WPF control.
+description: Check our &quot;Clear Selection Button&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-features-clearselectionbutton
 tags: clear,selection,button
 published: True

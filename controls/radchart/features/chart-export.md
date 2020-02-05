@@ -1,7 +1,7 @@
 ---
 title: Chart Export
 page_title: Chart Export
-description: Check our "Chart Export" documentation article for the RadChart WPF control.
+description: Check our &quot;Chart Export&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-export
 tags: chart,export
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our "Getting Started" documentation article for the RadBarcode WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadBarcode WPF control.
 slug: radbarcodeqr-getting-started
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ListBoxDragDropBehavior
 page_title: ListBoxDragDropBehavior
-description: Check our "ListBoxDragDropBehavior" documentation article for the DragDropManager WPF control.
+description: Check our &quot;ListBoxDragDropBehavior&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-behaviors-listboxdragdropbehavior
 tags: listboxdragdropbehavior
 published: True

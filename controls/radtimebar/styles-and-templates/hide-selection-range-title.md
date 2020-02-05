@@ -1,7 +1,7 @@
 ---
 title: Hide Selection Range Title
 page_title: Hide Selection Range Title
-description: Check our "Hide Selection Range Title" documentation article for the RadTimeBar WPF control.
+description: Check our &quot;Hide Selection Range Title&quot; documentation article for the RadTimeBar WPF control.
 slug: radtimebar-hide-selection-range-title
 tags: hide,selection,range,title
 published: True

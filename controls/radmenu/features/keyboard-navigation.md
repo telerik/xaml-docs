@@ -1,7 +1,7 @@
 ---
 title: Keyboard Navigation
 page_title: Keyboard Navigation
-description: Check our "Keyboard Navigation" documentation article for the RadMenu WPF control.
+description: Check our &quot;Keyboard Navigation&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-keyboard-navigation
 tags: keyboard,navigation
 published: True

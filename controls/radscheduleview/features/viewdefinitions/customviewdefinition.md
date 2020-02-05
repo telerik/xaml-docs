@@ -1,7 +1,7 @@
 ---
 title: Define a Custom ViewDefinition
 page_title: Define a Custom ViewDefinition
-description: Check our "Define a Custom ViewDefinition" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Define a Custom ViewDefinition&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-viewdefinitions-define-custom-viewdefinition
 tags: custom, viewdefinition
 published: True

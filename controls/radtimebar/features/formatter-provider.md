@@ -1,7 +1,7 @@
 ---
 title: Formatter Provider
 page_title: Formatter Provider
-description: Check our "Formatter Provider" documentation article for the RadTimeBar WPF control.
+description: Check our &quot;Formatter Provider&quot; documentation article for the RadTimeBar WPF control.
 slug: radtimebar-features-formatter-provider
 tags: formatter,provider
 published: True

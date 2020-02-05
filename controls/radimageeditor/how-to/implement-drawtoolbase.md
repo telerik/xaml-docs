@@ -1,7 +1,7 @@
 ---
 title: Implement DrawToolBase Class
 page_title: Implement DrawToolBase Class
-description: Check our "Implement DrawToolBase Class" documentation article for the RadImageEditor WPF control.
+description: Check our &quot;Implement DrawToolBase Class&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-howto-implement-drawtoolbase
 tags: draw, tool
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Conversion API
 page_title: Conversion API
-description: Check our "Conversion API" documentation article for the RadTimeBar WPF control.
+description: Check our &quot;Conversion API&quot; documentation article for the RadTimeBar WPF control.
 slug: radtimebar-features-conversion-api
 tags: conversion,api,convertpointtodatetime
 published: True

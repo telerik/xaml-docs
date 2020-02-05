@@ -1,7 +1,7 @@
 ---
 title: Creating a Chart in Code-behind
 page_title: Creating a Chart in Code-behind
-description: Check our "Creating a Chart in Code-behind" documentation article for the RadChart WPF control.
+description: Check our &quot;Creating a Chart in Code-behind&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-creating-chart-in-code-behind
 tags: creating,a,chart,in,code-behind
 published: True

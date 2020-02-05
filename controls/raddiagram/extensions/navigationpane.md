@@ -1,7 +1,7 @@
 ---
 title: DiagramNavigationPane
 page_title: DiagramNavigationPane
-description: Check our "DiagramNavigationPane" documentation article for the RadDiagram WPF control.
+description: Check our &quot;DiagramNavigationPane&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-extensions-navigationpane
 tags: diagramnavigationpane
 published: True

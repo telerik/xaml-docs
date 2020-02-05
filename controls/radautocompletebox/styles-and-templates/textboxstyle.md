@@ -1,7 +1,7 @@
 ---
 title: TextBoxStyle
 page_title: TextBoxStyle
-description: Check our "TextBoxStyle" documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;TextBoxStyle&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-textboxstyle
 tags: textboxstyle
 published: True

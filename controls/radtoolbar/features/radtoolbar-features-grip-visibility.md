@@ -1,7 +1,7 @@
 ---
 title: Grip Visibility
 page_title: Grip Visibility
-description: Check our "Grip Visibility" documentation article for the RadToolBar WPF control.
+description: Check our &quot;Grip Visibility&quot; documentation article for the RadToolBar WPF control.
 slug: radtoolbar-features-grip-visibility
 tags: gripvisibility,visibility,collapsed
 published: True

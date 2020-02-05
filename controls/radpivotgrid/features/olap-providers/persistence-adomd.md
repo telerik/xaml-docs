@@ -1,7 +1,7 @@
 ---
 title: Persist AdomdDataProvider
 page_title: Persist AdomdDataProvider
-description: Check our "Persist AdomdDataProvider" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Persist AdomdDataProvider&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-persistence-adomd
 tags: persist,adomddataprovider
 published: True

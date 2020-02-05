@@ -1,7 +1,7 @@
 ---
 title: Isolated Storage
 page_title: Isolated Storage
-description: Check our "Isolated Storage" documentation article for the RadPersistenceFramework WPF control.
+description: Check our &quot;Isolated Storage&quot; documentation article for the RadPersistenceFramework WPF control.
 slug: persistence-framework-isolated-storage
 tags: isolated,storage
 published: True

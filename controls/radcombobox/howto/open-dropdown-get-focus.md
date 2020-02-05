@@ -1,7 +1,7 @@
 ---
 title: Open the DropDown When the Control Gets Focus
 page_title: Open the DropDown When the Control Gets Focus
-description: Check our "Open the DropDown When the Control Gets Focus" documentation article for the RadComboBox WPF control.
+description: Check our &quot;Open the DropDown When the Control Gets Focus&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-howto-open-dropdown-get-focus
 tags: open,the,dropdown,when,the,control,gets,focus
 published: True

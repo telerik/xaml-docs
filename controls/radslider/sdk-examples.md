@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Check our "Developer Focused Examples" documentation article for the RadSlider WPF control.
+description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadSlider WPF control.
 slug: radslider-sdk-examples
 tags: sdk,examples
 published: True

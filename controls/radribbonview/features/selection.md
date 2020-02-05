@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Check our "Selection" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Selection&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-selection
 tags: selection
 published: True

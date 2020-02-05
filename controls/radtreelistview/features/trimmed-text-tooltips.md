@@ -1,7 +1,7 @@
 ---
 title: Trimmed Text Tooltips
 page_title: Trimmed Text Tooltips
-description: Check our "Trimmed Text Tooltips" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Trimmed Text Tooltips&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-trimmed-text-tooltips
 tags: trimmed,text,tooltips
 published: True

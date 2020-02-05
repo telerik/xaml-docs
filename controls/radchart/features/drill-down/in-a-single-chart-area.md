@@ -1,7 +1,7 @@
 ---
 title: In a Single Chart Area
 page_title: In a Single Chart Area
-description: Check our "In a Single Chart Area" documentation article for the RadChart WPF control.
+description: Check our &quot;In a Single Chart Area&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-drill-down-in-a-single-chart-area
 tags: in,a,single,chart,area
 published: True

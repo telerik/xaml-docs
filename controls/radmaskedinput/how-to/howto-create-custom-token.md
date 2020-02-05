@@ -1,7 +1,7 @@
 ---
 title: How to Create Custom Mask Tokens
 page_title: How to Create Custom Mask Tokens
-description: Check our "How to Create Custom Mask Tokens" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;How to Create Custom Mask Tokens&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-howto-create-custom-token
 tags: how,to,create,custom,mask,tokens
 published: True

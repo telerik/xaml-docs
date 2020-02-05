@@ -1,7 +1,7 @@
 ---
 title: Item Images
 page_title: Item Images
-description: Check our "Item Images" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Item Images&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-feautres-treeviewitem-item-images
 tags: item,images
 published: True

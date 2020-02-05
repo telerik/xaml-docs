@@ -1,7 +1,7 @@
 ---
 title: Known Limitations
 page_title: Known Limitations
-description: Check our "Known Limitations" documentation article for the RadDomainDataSource WPF control.
+description: Check our &quot;Known Limitations&quot; documentation article for the RadDomainDataSource WPF control.
 slug: domaindatasource-known-limitations
 tags: known,limitations
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Dragging a Recurrent Appointment
 page_title: Dragging a Recurrent Appointment
-description: Check our "Dragging a Recurrent Appointment" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Dragging a Recurrent Appointment&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-recurrences-draggingrecurrentappointment
 tags: dragging,a,recurrent,appointment
 published: True

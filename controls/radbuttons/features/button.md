@@ -1,7 +1,7 @@
 ---
 title: Button
 page_title: Button
-description: Check our "Button" documentation article for the RadButtons WPF control.
+description: Check our &quot;Button&quot; documentation article for the RadButtons WPF control.
 slug: radbuttons-features-button
 tags: button
 published: True

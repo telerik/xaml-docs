@@ -1,7 +1,7 @@
 ---
 title: Animation
 page_title: Animation
-description: Check our "Animation" documentation article for the RadTileView WPF control.
+description: Check our &quot;Animation&quot; documentation article for the RadTileView WPF control.
 slug: radtileview-animation
 tags: animation
 published: True

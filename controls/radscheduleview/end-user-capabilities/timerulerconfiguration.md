@@ -1,7 +1,7 @@
 ---
 title: TimeRuler Configuration
 page_title: TimeRuler Configuration
-description: Check our "TimeRuler Configuration" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;TimeRuler Configuration&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-end-user-capabilities-timerulerconfiguration
 tags: timeruler,configuration
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Creating Radial Gauge
 page_title: Creating Radial Gauge
-description: Check our "Creating Radial Gauge" documentation article for the RadGauge WPF control.
+description: Check our &quot;Creating Radial Gauge&quot; documentation article for the RadGauge WPF control.
 slug: radgauge-getting-started-creating-radial-gauge
 tags: creating,radial,gauge
 published: True

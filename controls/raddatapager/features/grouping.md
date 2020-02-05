@@ -1,7 +1,7 @@
 ---
 title: Paging before Grouping
 page_title: Paging before Grouping
-description: Check our "Paging before Grouping" documentation article for the RadDataPager WPF control.
+description: Check our &quot;Paging before Grouping&quot; documentation article for the RadDataPager WPF control.
 slug: raddatapager-features-grouping
 tags: paging,before,grouping
 published: True

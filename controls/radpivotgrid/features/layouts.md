@@ -1,7 +1,7 @@
 ---
 title: Layouts
 page_title: Layouts
-description: Check our "Layouts" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Layouts&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-layouts
 tags: layouts
 published: True

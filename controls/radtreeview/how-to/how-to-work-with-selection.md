@@ -1,7 +1,7 @@
 ---
 title: Work with Selection
 page_title: Work with Selection
-description: Check our "Work with Selection" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Work with Selection&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-how-to-work-with-selection
 tags: work,with,selection
 published: False

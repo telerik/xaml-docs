@@ -1,7 +1,7 @@
 ---
 title: Custom Annotations
 page_title: Custom Annotations
-description: Check our "Custom Annotations" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Custom Annotations&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-custom-annotations
 tags: custom,annotations
 published: True

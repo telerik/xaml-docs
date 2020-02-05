@@ -1,7 +1,7 @@
 ---
 title: Models
 page_title: Models
-description: Check our "Models" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Models&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-populating-with-data-binding-to-db-models
 tags: models
 published: True

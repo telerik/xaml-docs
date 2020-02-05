@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Check our "Keyboard Support" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Keyboard Support&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-keyboard-support
 tags: keyboard,support
 published: True

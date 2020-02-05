@@ -1,7 +1,7 @@
 ---
 title: Working with MouseLeftButtonDown Event
 page_title: Working with MouseLeftButtonDown Event
-description: Check our "Working with MouseLeftButtonDown Event" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Working with MouseLeftButtonDown Event&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-events-working-mouse-left-button-down-event
 tags: working,with,mouseleftbuttondown,event
 published: True

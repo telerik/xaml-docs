@@ -1,7 +1,7 @@
 ---
 title: Limiting the Simultaneous Uploads
 page_title: Limiting the Simultaneous Uploads
-description: Check our "Limiting the Simultaneous Uploads" documentation article for the RadCloudUpload WPF control.
+description: Check our &quot;Limiting the Simultaneous Uploads&quot; documentation article for the RadCloudUpload WPF control.
 slug: radcloudupload-features-limiting-simultaneous-uploads
 tags: limiting, limit, simultaneous, upload, uploads, count, maximum, max, maximumsimultaneousuploadscount
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Items Virtualization
 page_title: Items Virtualization
-description: Check our "Items Virtualization" documentation article for the RadMap WPF control.
+description: Check our &quot;Items Virtualization&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-virtualization
 tags: items,virtualization
 published: True

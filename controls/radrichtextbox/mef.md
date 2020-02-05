@@ -1,7 +1,7 @@
 ---
 title: MEF
 page_title: MEF
-description: Check our "MEF" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;MEF&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-mef
 tags: mef
 published: True

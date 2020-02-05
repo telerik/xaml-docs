@@ -1,7 +1,7 @@
 ---
 title: RelativeStrengthIndexIndicator
 page_title: RelativeStrengthIndexIndicator
-description: Check our "RelativeStrengthIndexIndicator" documentation article for the RadChartView WPF control.
+description: Check our &quot;RelativeStrengthIndexIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-relativestrengthindexindicator
 tags: financial, indicators, relativestrengthindexindicator
 publish: True

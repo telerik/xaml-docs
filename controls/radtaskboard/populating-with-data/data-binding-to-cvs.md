@@ -1,7 +1,7 @@
 ---
 title: Binding to CollectionViewSource
 page_title: Binding to CollectionViewSource
-description: Check our "Binding to CollectionViewSource" documentation article for the RadTaskBoard WPF control.
+description: Check our &quot;Binding to CollectionViewSource&quot; documentation article for the RadTaskBoard WPF control.
 slug: radtaskboard-populating-with-data-data-binding-to-collectionviewsource
 tags: binding,to,collectionviewsource
 published: True

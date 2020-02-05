@@ -1,7 +1,7 @@
 ---
 title: Scroll Item into View
 page_title: Scroll Item into View
-description: Check our "Scroll Item into View" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Scroll Item into View&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-how-to-scrollintoview
 tags: scroll,item,into,view
 published: True

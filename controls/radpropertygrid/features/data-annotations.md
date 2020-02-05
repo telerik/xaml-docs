@@ -1,7 +1,7 @@
 ---
 title: Data Annotations
 page_title: Data Annotations
-description: Check our "Data Annotations" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Data Annotations&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-data-annotations
 tags: data,annotations
 published: True

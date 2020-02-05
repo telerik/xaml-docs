@@ -1,7 +1,7 @@
 ---
 title: Mouse Support
 page_title: Mouse Support
-description: Check our "Mouse Support" documentation article for the RadComboBox WPF control.
+description: Check our &quot;Mouse Support&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-features-mouse-support
 tags: mouse,support
 published: True

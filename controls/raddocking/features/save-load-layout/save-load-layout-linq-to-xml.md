@@ -1,7 +1,7 @@
 ---
 title: Save/load Layout with LINQ to XML
 page_title: Save/load Layout with LINQ to XML
-description: Check our "Save/load Layout with LINQ to XML" documentation article for the RadDocking WPF control.
+description: Check our &quot;Save/load Layout with LINQ to XML&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-save-load-layout-linq-to-xml
 tags: save/load,layout,with,linq,to,xml
 published: True

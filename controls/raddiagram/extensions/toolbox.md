@@ -1,7 +1,7 @@
 ---
 title: DiagramToolbox
 page_title: DiagramToolbox
-description: Check our "DiagramToolbox" documentation article for the RadDiagram WPF control.
+description: Check our &quot;DiagramToolbox&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-extensions-toolbox
 tags: diagramtoolbox
 published: True

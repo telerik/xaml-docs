@@ -1,7 +1,7 @@
 ---
 title: Get the Underlying TreeView Item on MouseMove
 page_title: Get the Underlying TreeView Item on MouseMove
-description: Check our "Get the Underlying TreeView Item on MouseMove" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Get the Underlying TreeView Item on MouseMove&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-how-to-get-underlying-on-mouse-move
 tags: get,the,underlying,treeview,item,on,mousemove
 published: False

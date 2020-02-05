@@ -1,7 +1,7 @@
 ---
 title: Source and Paged Source
 page_title: Source and Paged Source
-description: Check our "Source and Paged Source" documentation article for the RadDataPager WPF control.
+description: Check our &quot;Source and Paged Source&quot; documentation article for the RadDataPager WPF control.
 slug: raddatapager-features-source-and-paged-source
 tags: source,and,paged,source
 published: True

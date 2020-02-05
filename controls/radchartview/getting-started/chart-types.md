@@ -1,7 +1,7 @@
 ---
 title: Chart Types
 page_title: Chart Types
-description: Check our "Chart Types" documentation article for the RadChartView WPF control.
+description: Check our &quot;Chart Types&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-chart-types
 tags: chart,types
 published: True

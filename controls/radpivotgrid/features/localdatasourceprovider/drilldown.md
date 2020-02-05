@@ -1,7 +1,7 @@
 ---
 title: Drill Down
 page_title: Drill Down
-description: Check our "Drill Down" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Drill Down&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-localdatasourceprovider-drilldown
 tags: culture,support
 published: True

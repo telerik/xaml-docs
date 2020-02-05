@@ -1,7 +1,7 @@
 ---
 title: Screen Tips
 page_title: Screen Tips
-description: Check our "Screen Tips" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Screen Tips&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-screentips
 tags: screen,tips
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Unsupported Features
 page_title: Unsupported Features
-description: Check our "Unsupported Features" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Unsupported Features&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-unsupported-features
 tags: unsupported,features
 published: True

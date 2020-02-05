@@ -1,7 +1,7 @@
 ---
 title: Styling Validation Tooltips
 page_title: Styling Validation Tooltips
-description: Check our "Styling Validation Tooltips" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Styling Validation Tooltips&quot; documentation article for the RadTreeListView WPF control.
 slug: styling-validation-tooltip-in-treelistview
 tags: styling,validation,tooltips,treelistview
 published: True

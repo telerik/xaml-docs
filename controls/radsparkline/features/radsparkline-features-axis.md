@@ -1,7 +1,7 @@
 ---
 title: Axis
 page_title: Axis
-description: Check our "Axis" documentation article for the RadSparkLine WPF control.
+description: Check our &quot;Axis&quot; documentation article for the RadSparkLine WPF control.
 slug: radsparkline-features-axis
 tags: axis,origin,value
 published: True

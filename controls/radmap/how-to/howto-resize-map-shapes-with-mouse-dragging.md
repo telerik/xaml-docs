@@ -1,7 +1,7 @@
 ---
 title: Resize Map Shapes With Mouse Dragging
 page_title: Resize Map Shapes With Mouse Dragging
-description: Check our "Resize Map Shapes With Mouse Dragging" documentation article for the RadMap WPF control.
+description: Check our &quot;Resize Map Shapes With Mouse Dragging&quot; documentation article for the RadMap WPF control.
 slug: radmap-howto-resize-map-shapes-with-mouse-dragging
 tags: resize,map,shapes,with,mouse,dragging
 published: True

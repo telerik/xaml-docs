@@ -1,7 +1,7 @@
 ---
 title: Controlling Layout
 page_title: Controlling Layout
-description: Check our "Controlling Layout" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Controlling Layout&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-controlling-layout
 tags: controlling,layout
 published: True

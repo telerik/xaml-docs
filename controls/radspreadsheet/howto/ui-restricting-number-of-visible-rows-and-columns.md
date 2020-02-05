@@ -1,7 +1,7 @@
 ---
 title: Restrict the Number of Visible Rows and Columns
 page_title: Restrict the Number of Visible Rows and Columns
-description: Check our "Restrict the Number of Visible Rows and Columns" documentation article for the RadSpreadsheet WPF control.
+description: Check our &quot;Restrict the Number of Visible Rows and Columns&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-restricting-number-of-visible-rows-and-columns
 tags: restrict,the,number,of,visible,rows,and,columns
 published: True

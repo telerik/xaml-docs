@@ -1,7 +1,7 @@
 ---
 title: How to Change the Tab Items Orientation
 page_title: How to Change the Tab Items Orientation
-description: Check our "How to Change the Tab Items Orientation" documentation article for the RadTabControl WPF control.
+description: Check our &quot;How to Change the Tab Items Orientation&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-how-to-change-the-tab-items-orientation
 tags: how,to,change,the,tab,items,orientation
 published: True

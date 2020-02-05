@@ -1,7 +1,7 @@
 ---
 title: Orientation
 page_title: Orientation
-description: Check our "Orientation" documentation article for the RadToolBar WPF control.
+description: Check our &quot;Orientation&quot; documentation article for the RadToolBar WPF control.
 slug: radtoolbar-orientation
 tags: orientation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Drag-drop between ListBox and TreeView
 page_title: Drag-drop between ListBox and TreeView
-description: Check our "Drag-drop between ListBox and TreeView" documentation article for the DragDropManager WPF control.
+description: Check our &quot;Drag-drop between ListBox and TreeView&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-from-treeview-to-listbox-behaviour
 tags: drag-drop,between,listbox,and,treeview
 published: True

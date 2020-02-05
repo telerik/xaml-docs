@@ -1,7 +1,7 @@
 ---
 title: RadDocumentMerger
 page_title: RadDocumentMerger
-description: Check our "RadDocumentMerger" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;RadDocumentMerger&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-merge-raddocumentmerger
 tags: raddocumentmerger, merge, insert, append, documents
 published: True

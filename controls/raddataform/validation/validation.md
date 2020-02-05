@@ -1,7 +1,7 @@
 ---
 title: Property level validation
 page_title: Property level validation
-description: Check our "Property level validation" documentation article for the RadDataForm WPF control.
+description: Check our &quot;Property level validation&quot; documentation article for the RadDataForm WPF control.
 slug: raddataform-validation
 tags: property,level,validation
 published: True

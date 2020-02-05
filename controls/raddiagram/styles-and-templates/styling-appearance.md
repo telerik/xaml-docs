@@ -1,7 +1,7 @@
 ---
 title: Customize Appearance
 page_title: Customize Appearance
-description: Check our "Customize Appearance" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Customize Appearance&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-styling-appearance
 tags: customize,appearance
 published: True

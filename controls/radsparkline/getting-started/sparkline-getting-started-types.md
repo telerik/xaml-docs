@@ -1,7 +1,7 @@
 ---
 title: Sparkline Types
 page_title: Sparkline Types
-description: Check our "Sparkline Types" documentation article for the RadSparkLine WPF control.
+description: Check our &quot;Sparkline Types&quot; documentation article for the RadSparkLine WPF control.
 slug: radsparkline-getting-started-types
 tags: visualization,types
 published: True

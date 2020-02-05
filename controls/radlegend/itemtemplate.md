@@ -1,7 +1,7 @@
 ---
 title: ItemTemplate
 page_title: ItemTemplate
-description: Check our "ItemTemplate" documentation article for the RadLegend WPF control.
+description: Check our &quot;ItemTemplate&quot; documentation article for the RadLegend WPF control.
 slug: radlegend-itemtemplate
 tags: itemtemplate
 published: True

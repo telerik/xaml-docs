@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonDropDownButton
 page_title: Styling the RadRibbonDropDownButton
-description: Check our "Styling the RadRibbonDropDownButton" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the RadRibbonDropDownButton&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbondropdownbutton
 tags: styling,the,radribbondropdownbutton
 published: True

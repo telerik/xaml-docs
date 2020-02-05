@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Check our "Data Binding" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Data Binding&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-features-data-binding
 tags: data,binding
 published: True

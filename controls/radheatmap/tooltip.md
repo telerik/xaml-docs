@@ -1,7 +1,7 @@
 ---
 title: ToolTip
 page_title: ToolTip
-description: Check our "ToolTip" documentation article for the RadHeatMap WPF control.
+description: Check our &quot;ToolTip&quot; documentation article for the RadHeatMap WPF control.
 slug: radheatmap-tooltip
 tags: tooltip, heatmap, tooltipcell, celltooltip, heatmaptooltipsettings
 published: True

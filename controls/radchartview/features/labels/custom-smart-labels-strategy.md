@@ -1,7 +1,7 @@
 ---
 title: Custom Smart Label Strategy
 page_title: Custom Smart Label Strategy
-description: Check our "Custom Smart Label Strategy" documentation article for the RadChartView WPF control.
+description: Check our &quot;Custom Smart Label Strategy&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-labels-custom-smart-labels-strategy
 tags: custom, smart,labels, strategy, chartsmartlabelsstrategy, chartsmartlabelsstrategybase
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Add Screen Tips in the Code Behind
 page_title: Add Screen Tips in the Code Behind
-description: Check our "Add Screen Tips in the Code Behind" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Add Screen Tips in the Code Behind&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-howto-add-screentips-code-behind
 tags: add,screen,tips,in,the,code,behind
 published: True

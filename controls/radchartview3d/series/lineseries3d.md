@@ -1,7 +1,7 @@
 ---
 title: LineSeries3D
 page_title: LineSeries3D
-description: Check our "LineSeries3D" documentation article for the RadChartView3D WPF control.
+description: Check our &quot;LineSeries3D&quot; documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-lineseries3d
 tags: 3d, chartview, diameter, linevisual
 published: True

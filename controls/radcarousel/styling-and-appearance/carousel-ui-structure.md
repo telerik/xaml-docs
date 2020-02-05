@@ -1,7 +1,7 @@
 ---
 title: UI Structure
 page_title: UI Structure
-description: Check our "UI Structure" documentation article for the RadCarousel WPF control.
+description: Check our &quot;UI Structure&quot; documentation article for the RadCarousel WPF control.
 slug: carousel-ui-structure
 tags: ui,structure
 published: True

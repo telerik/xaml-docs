@@ -1,7 +1,7 @@
 ---
 title: Modify foreground color of Selected/Hovered row
 page_title: Modify foreground color of Selected/Hovered row
-description: Check our "Modify foreground color of Selected/Hovered row" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Modify foreground color of Selected/Hovered row&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-how-to-modify-foreground-row
 tags: modify,foreground,color,of,selected/hovered,row
 published: True

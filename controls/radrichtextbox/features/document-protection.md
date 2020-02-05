@@ -1,7 +1,7 @@
 ---
 title: Document Protection
 page_title: Document Protection
-description: Check our "Document Protection" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Document Protection&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-protection
 tags: document,protection
 published: True

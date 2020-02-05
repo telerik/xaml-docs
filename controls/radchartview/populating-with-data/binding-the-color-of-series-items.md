@@ -1,7 +1,7 @@
 ---
 title: Binding the Color of Series Items
 page_title: Binding the Color of Series Items
-description: Check our "Binding the Color of Series Items" documentation article for the RadChartView WPF control.
+description: Check our &quot;Binding the Color of Series Items&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-populating-with-data-binding-the-color-of-series-items
 tags: binding,the,color,of,series,items
 published: True

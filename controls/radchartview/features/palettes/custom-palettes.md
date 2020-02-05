@@ -1,7 +1,7 @@
 ---
 title: Creating Custom palettes
 page_title: Creating Custom palettes
-description: Check our "Creating Custom palettes" documentation article for the RadChartView WPF control.
+description: Check our &quot;Creating Custom palettes&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-palettes-custom-palettes
 tags: creating,custom,palettes
 published: True

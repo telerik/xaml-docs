@@ -1,7 +1,7 @@
 ---
 title: PolarAreaSeries
 page_title: PolarAreaSeries
-description: Check our "PolarAreaSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;PolarAreaSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-polarareaseries
 tags: polarareaseries
 published: True

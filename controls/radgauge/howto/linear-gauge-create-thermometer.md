@@ -1,7 +1,7 @@
 ---
 title: Create Thermometer
 page_title: Create Thermometer
-description: Check our "Create Thermometer" documentation article for the RadGauge WPF control.
+description: Check our &quot;Create Thermometer&quot; documentation article for the RadGauge WPF control.
 slug: linear-gauge-create-thermometer
 tags: create,thermometer
 published: True

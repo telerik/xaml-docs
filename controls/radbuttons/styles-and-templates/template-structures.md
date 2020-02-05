@@ -1,7 +1,7 @@
 ---
 title: Template Structures
 page_title: Template Structures
-description: Check our "Template Structures" documentation article for the RadButtons WPF control.
+description: Check our &quot;Template Structures&quot; documentation article for the RadButtons WPF control.
 slug: radbuttons-styles-and-templates-template-structures
 tags: template,structures
 published: True

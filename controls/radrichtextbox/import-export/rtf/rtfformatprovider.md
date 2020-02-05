@@ -1,7 +1,7 @@
 ---
 title: Using RtfFormatProvider
 page_title: Using RtfFormatProvider
-description: Check our "Using RtfFormatProvider" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Using RtfFormatProvider&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-rtf-rtfformatprovider
 tags: using-rtfFormatProvider
 published: True

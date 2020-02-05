@@ -1,7 +1,7 @@
 ---
 title: Find Dialog
 page_title: Find Dialog
-description: Check our "Find Dialog" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Find Dialog&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-find-dialog
 tags: find,dialog
 published: True

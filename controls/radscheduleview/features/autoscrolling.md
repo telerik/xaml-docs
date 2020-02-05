@@ -1,7 +1,7 @@
 ---
 title: AutoScrolling
 page_title: AutoScrolling
-description: Check our "AutoScrolling" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;AutoScrolling&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-autoscrolling
 tags: autoscrolling
 published: True

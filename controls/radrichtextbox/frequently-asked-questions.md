@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 page_title: Frequently Asked Questions
-description: Check our "Frequently Asked Questions" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Frequently Asked Questions&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-frequently-asked-questions
 tags: frequently,asked,questions
 published: True

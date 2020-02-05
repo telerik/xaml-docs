@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Check our "Templates Structure" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Templates Structure&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

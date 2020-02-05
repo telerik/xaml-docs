@@ -1,7 +1,7 @@
 ---
 title: ItemViewModelBase
 page_title: ItemViewModelBase
-description: Check our "ItemViewModelBase" documentation article for the RadDiagram WPF control.
+description: Check our &quot;ItemViewModelBase&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-data-itemviewmodels
 tags: itemviewmodelbase
 published: True

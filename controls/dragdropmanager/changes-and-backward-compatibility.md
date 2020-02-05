@@ -1,7 +1,7 @@
 ---
 title: Changes and Backward Compatibility
 page_title: Changes and Backward Compatibility
-description: Check our "Changes and Backward Compatibility" documentation article for the DragDropManager WPF control.
+description: Check our &quot;Changes and Backward Compatibility&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-changes-and-backward-compatibility
 tags: changes,and,backward,compatibility
 published: True

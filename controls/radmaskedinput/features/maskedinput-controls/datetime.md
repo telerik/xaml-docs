@@ -1,7 +1,7 @@
 ---
 title: MaskedDateTimeInput
 page_title: MaskedDateTimeInput
-description: Check our "MaskedDateTimeInput" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;MaskedDateTimeInput&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-controls-datetime
 tags: maskeddatetimeinput
 published: True

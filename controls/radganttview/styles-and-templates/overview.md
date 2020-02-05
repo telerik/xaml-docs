@@ -1,7 +1,7 @@
 ---
 title: GanttView Styles
 page_title: GanttView Styles
-description: Check our "GanttView Styles" documentation article for the RadGanttView WPF control.
+description: Check our &quot;GanttView Styles&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-styles-and-templates-overview
 tags: ganttview,styles
 published: True

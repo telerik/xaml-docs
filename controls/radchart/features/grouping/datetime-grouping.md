@@ -1,7 +1,7 @@
 ---
 title: DateTime Grouping
 page_title: DateTime Grouping
-description: Check our "DateTime Grouping" documentation article for the RadChart WPF control.
+description: Check our &quot;DateTime Grouping&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-datetime-grouping
 tags: datetime,grouping
 published: True

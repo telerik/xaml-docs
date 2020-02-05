@@ -1,7 +1,7 @@
 ---
 title: Customizing the CellTemplate
 page_title: Customizing the CellTemplate
-description: Check our "Customizing the CellTemplate" documentation article for the RadGanttView WPF control.
+description: Check our &quot;Customizing the CellTemplate&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-features-columns-cell-template
 tags: customizing,the,celltemplate
 published: True

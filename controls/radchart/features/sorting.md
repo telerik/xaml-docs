@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Check our "Sorting" documentation article for the RadChart WPF control.
+description: Check our &quot;Sorting&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-sorting
 tags: sorting
 published: True

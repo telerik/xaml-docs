@@ -1,7 +1,7 @@
 ---
 title: Ticks and Tick frequency
 page_title: Ticks and Tick frequency
-description: Check our "Ticks and Tick frequency" documentation article for the RadSlider WPF control.
+description: Check our &quot;Ticks and Tick frequency&quot; documentation article for the RadSlider WPF control.
 slug: radslider-ticks-and-tick-frequency
 tags: ticks,and,tick,frequency
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Reordering the Tiles
 page_title: Reordering the Tiles
-description: Check our "Reordering the Tiles" documentation article for the RadTileList WPF control.
+description: Check our &quot;Reordering the Tiles&quot; documentation article for the RadTileList WPF control.
 slug: radtilelist-reordering-tiles
 tags: reordering,the,tiles
 published: True

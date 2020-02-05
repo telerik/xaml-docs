@@ -1,7 +1,7 @@
 ---
 title: Ribbon Window
 page_title: Ribbon Window
-description: Check our "Ribbon Window" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Ribbon Window&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-window-sl
 tags: ribbon,window
 published: True

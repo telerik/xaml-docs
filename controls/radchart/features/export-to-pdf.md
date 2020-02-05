@@ -1,7 +1,7 @@
 ---
 title: Export To PDF
 page_title: Export To PDF
-description: Check our "Export To PDF" documentation article for the RadChart WPF control.
+description: Check our &quot;Export To PDF&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-export-to-pdf
 tags: export,to,pdf
 published: True

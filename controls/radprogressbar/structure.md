@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Check our "Structure" documentation article for the RadProgressBar WPF control.
+description: Check our &quot;Structure&quot; documentation article for the RadProgressBar WPF control.
 slug: radprogressbar-structure
 tags: structure
 published: True

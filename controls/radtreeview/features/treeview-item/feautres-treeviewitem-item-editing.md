@@ -1,7 +1,7 @@
 ---
 title: How to Edit An Item
 page_title: How to Edit An Item
-description: Check our "How to Edit An Item" documentation article for the RadTreeView WPF control.
+description: Check our &quot;How to Edit An Item&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-feautres-treeviewitem-item-editing
 tags: how,to,edit,an,item
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Programmatic Selection
 page_title: Programmatic Selection
-description: Check our "Programmatic Selection" documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Programmatic Selection&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-programmatic-selection
 tags: programmatic, selection
 published: True

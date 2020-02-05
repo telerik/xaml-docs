@@ -1,7 +1,7 @@
 ---
 title: ToolTips
 page_title: ToolTips
-description: Check our "ToolTips" documentation article for the RadChart WPF control.
+description: Check our &quot;ToolTips&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-tooltips
 tags: tooltips
 published: True

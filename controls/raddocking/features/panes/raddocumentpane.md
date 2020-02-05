@@ -1,7 +1,7 @@
 ---
 title: RadDocumentPane
 page_title: RadDocumentPane
-description: Check our "RadDocumentPane" documentation article for the RadDocking WPF control.
+description: Check our &quot;RadDocumentPane&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-panes-raddocumentpane
 tags: raddocumentpane
 published: True

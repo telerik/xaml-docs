@@ -1,7 +1,7 @@
 ---
 title: Templating the GroupHeaders
 page_title: Templating the GroupHeaders
-description: Check our "Templating the GroupHeaders" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Templating the GroupHeaders&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-templating-groupheaders
 tags: templating,the,groupheaders
 published: True

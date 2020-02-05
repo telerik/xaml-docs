@@ -1,7 +1,7 @@
 ---
 title: Reordering Tiles
 page_title: Reordering Tiles
-description: Check our "Reordering Tiles" documentation article for the RadTileView WPF control.
+description: Check our &quot;Reordering Tiles&quot; documentation article for the RadTileView WPF control.
 slug: radtileview-features-reordering-tiles
 tags: reordering, dragging, drop, tiles
 published: True

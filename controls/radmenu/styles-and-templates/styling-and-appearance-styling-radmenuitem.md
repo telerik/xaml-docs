@@ -1,7 +1,7 @@
 ---
 title: Styling the RadMenuItem
 page_title: Styling the RadMenuItem
-description: Check our "Styling the RadMenuItem" documentation article for the RadMenu WPF control.
+description: Check our &quot;Styling the RadMenuItem&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-styling-and-appearance-styling-radmenuitem
 tags: styling,the,radmenuitem
 published: True

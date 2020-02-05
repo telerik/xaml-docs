@@ -1,7 +1,7 @@
 ---
 title: Use RadWindow as User Control
 page_title: Use RadWindow as User Control
-description: Check our "Use RadWindow as User Control" documentation article for the RadWindow WPF control.
+description: Check our &quot;Use RadWindow as User Control&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-how-to-use-radwindow-as-user-control
 tags: use,radwindow,as,user,control
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Page Flip Mode
 page_title: Page Flip Mode
-description: Check our "Page Flip Mode" documentation article for the RadBook WPF control.
+description: Check our &quot;Page Flip Mode&quot; documentation article for the RadBook WPF control.
 slug: radbook-page-flip-mode
 tags: page,flip,mode
 published: True

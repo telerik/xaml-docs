@@ -1,7 +1,7 @@
 ---
 title: Change The Image Of The Application Button
 page_title: Change The Image Of The Application Button
-description: Check our "Change The Image Of The Application Button" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Change The Image Of The Application Button&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-how-to-change-the-image-of-the-application-button
 tags: change,the,image,of,the,application,button
 published: True

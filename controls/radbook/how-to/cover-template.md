@@ -1,7 +1,7 @@
 ---
 title: How to apply different templates for front and back cover page.
 page_title: How to apply different templates for front and back cover page.
-description: Check our "How to apply different templates for front and back cover page." documentation article for the RadBook WPF control.
+description: Check our &quot;How to apply different templates for front and back cover page.&quot; documentation article for the RadBook WPF control.
 slug: radbook-cover-template
 tags: how,to,apply,different,templates,for,front,and,back,cover,page.
 published: True

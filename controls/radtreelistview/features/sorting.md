@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Check our "Sorting" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Sorting&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-sorting
 tags: sorting
 published: True

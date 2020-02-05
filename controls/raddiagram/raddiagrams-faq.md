@@ -1,7 +1,7 @@
 ---
 title: FAQ
 page_title: FAQ
-description: Check our "FAQ" documentation article for the RadDiagram WPF control.
+description: Check our &quot;FAQ&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-faq
 tags: faq
 published: True

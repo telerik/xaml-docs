@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Check our "Properties" documentation article for the RadDataBar WPF control.
+description: Check our &quot;Properties&quot; documentation article for the RadDataBar WPF control.
 slug: raddatabar-main_properties
 tags: properties
 published: True

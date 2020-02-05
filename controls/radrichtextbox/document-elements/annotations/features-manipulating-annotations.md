@@ -1,7 +1,7 @@
 ---
 title: Manipulating Annotations
 page_title: Manipulating Annotations
-description: Check our "Manipulating Annotations" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Manipulating Annotations&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-manipulating-annotations
 tags: manipulating,annotations
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Pane's Menu
 page_title: Pane's Menu
-description: Check our "Pane's Menu" documentation article for the RadDocking WPF control.
+description: Check our &quot;Pane's Menu&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-panes-panes-menu
 tags: pane's,menu
 published: True

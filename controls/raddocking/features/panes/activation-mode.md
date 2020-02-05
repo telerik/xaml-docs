@@ -1,7 +1,7 @@
 ---
 title: Pane Activation
 page_title: Pane Activation
-description: Check our "Pane Activation" documentation article for the RadDocking WPF control.
+description: Check our &quot;Pane Activation&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-panes-activation-mode
 tags: paneactivationmode
 published: True

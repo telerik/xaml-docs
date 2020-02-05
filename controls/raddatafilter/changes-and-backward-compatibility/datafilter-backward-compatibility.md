@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Check our "Backward Compatibility" documentation article for the RadDataFilter WPF control.
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadDataFilter WPF control.
 slug: datafilter-backward-compatibility
 tags: backward,compatibility
 published: True

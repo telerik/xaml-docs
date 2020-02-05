@@ -1,7 +1,7 @@
 ---
 title: Implement Custom Map Provider
 page_title: Implement Custom Map Provider
-description: Check our "Implement Custom Map Provider" documentation article for the RadMap WPF control.
+description: Check our &quot;Implement Custom Map Provider&quot; documentation article for the RadMap WPF control.
 slug: radmap-howto-custom-provider
 tags: implement,custom,map,provider
 published: True

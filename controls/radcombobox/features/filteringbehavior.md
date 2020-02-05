@@ -1,7 +1,7 @@
 ---
 title: Filtering Behavior
 page_title: Filtering Behavior
-description: Check our "Filtering Behavior" documentation article for the RadComboBox WPF control.
+description: Check our &quot;Filtering Behavior&quot; documentation article for the RadComboBox WPF control.
 slug: radcombobox-features-filteringbehavior
 tags: filteringbehavior
 published: True

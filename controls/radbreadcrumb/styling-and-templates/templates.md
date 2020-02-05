@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Check our "Templates Structure" documentation article for the RadBreadcrumb WPF control.
+description: Check our &quot;Templates Structure&quot; documentation article for the RadBreadcrumb WPF control.
 slug: radbreadcrumb-templates
 tags: templates,structure
 published: True

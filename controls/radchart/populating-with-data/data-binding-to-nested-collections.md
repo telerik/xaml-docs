@@ -1,7 +1,7 @@
 ---
 title: Data Binding to Nested Collections
 page_title: Data Binding to Nested Collections
-description: Check our "Data Binding to Nested Collections" documentation article for the RadChart WPF control.
+description: Check our &quot;Data Binding to Nested Collections&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-data-binding-to-nested-collections
 tags: data,binding,to,nested,collections
 published: True

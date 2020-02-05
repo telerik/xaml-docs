@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our "Changes" documentation article for the RadDataForm WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadDataForm WPF control.
 slug: dataform-changes
 tags: changes
 published: True

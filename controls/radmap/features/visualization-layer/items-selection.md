@@ -1,7 +1,7 @@
 ---
 title: Items Selection
 page_title: Items Selection
-description: Check our "Items Selection" documentation article for the RadMap WPF control.
+description: Check our &quot;Items Selection&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-visualization-layer-items-selection
 tags: items,selection
 published: True

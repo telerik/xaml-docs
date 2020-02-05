@@ -1,7 +1,7 @@
 ---
 title: ScrollBar Functionality
 page_title: ScrollBar Functionality
-description: Check our "ScrollBar Functionality" documentation article for the RadLegend WPF control.
+description: Check our &quot;ScrollBar Functionality&quot; documentation article for the RadLegend WPF control.
 slug: radlegend-scrollbar-functionality
 tags: scrollbar,functionality
 published: True

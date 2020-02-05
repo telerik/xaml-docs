@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our "Localization" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-localization
 tags: localization
 published: True

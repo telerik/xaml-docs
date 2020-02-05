@@ -1,7 +1,7 @@
 ---
 title: Tooltips
 page_title: Tooltips
-description: Check our "Tooltips" documentation article for the RadTimeline WPF control.
+description: Check our &quot;Tooltips&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-tooltips
 tags: tooltips
 published: True

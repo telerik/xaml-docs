@@ -1,7 +1,7 @@
 ---
 title: TrixIndicator
 page_title: TrixIndicator
-description: Check our "TrixIndicator" documentation article for the RadChartView WPF control.
+description: Check our &quot;TrixIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-trixindicator
 tags: financial, indicators, trixindicator
 publish: True

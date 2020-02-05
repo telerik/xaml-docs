@@ -1,7 +1,7 @@
 ---
 title: RangeBarSeries
 page_title: RangeBarSeries
-description: Check our "RangeBarSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;RangeBarSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-barseries-rangebarseries
 tags: rangebarseries
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop within RadGridView
 page_title: Drag and Drop within RadGridView
-description: Check our "Drag and Drop within RadGridView" documentation article for the DragDropManager WPF control.
+description: Check our &quot;Drag and Drop within RadGridView&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-howto-draganddrop-within-radgridview
 tags: drag,and,drop,within,radgridview
 published: True

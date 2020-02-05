@@ -1,7 +1,7 @@
 ---
 title: Change the Size of the RadUpload
 page_title: Change the Size of the RadUpload
-description: Check our "Change the Size of the RadUpload" documentation article for the RadUpload WPF control.
+description: Check our &quot;Change the Size of the RadUpload&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-change-the-size-of-the-radupload
 tags: change,the,size,of,the,radupload
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Check our "Structure" documentation article for the RadPanelBar WPF control.
+description: Check our &quot;Structure&quot; documentation article for the RadPanelBar WPF control.
 slug: radpanelbar-structure
 tags: structure
 published: True

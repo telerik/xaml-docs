@@ -1,7 +1,7 @@
 ---
 title: Globalization
 page_title: Globalization
-description: Check our "Globalization" documentation article for the RadDateTimePicker WPF control.
+description: Check our &quot;Globalization&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-globalization
 tags: globalization
 published: True

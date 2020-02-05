@@ -1,7 +1,7 @@
 ---
 title: Pane Groups
 page_title: Pane Groups
-description: Check our "Pane Groups" documentation article for the RadDocking WPF control.
+description: Check our &quot;Pane Groups&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-pane-groups
 tags: pane,groups
 published: True

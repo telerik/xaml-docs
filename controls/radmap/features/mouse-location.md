@@ -1,7 +1,7 @@
 ---
 title: Mouse Location
 page_title: Mouse Location
-description: Check our "Mouse Location" documentation article for the RadMap WPF control.
+description: Check our &quot;Mouse Location&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-mouse-location
 tags: mouse,location
 published: True

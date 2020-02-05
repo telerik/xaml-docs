@@ -1,7 +1,7 @@
 ---
 title: Populating playlist
 page_title: Populating playlist
-description: Check our "Populating playlist" documentation article for the RadMediaPlayer WPF control.
+description: Check our &quot;Populating playlist&quot; documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-populating-playlist
 tags: populating,playlist
 publish: True

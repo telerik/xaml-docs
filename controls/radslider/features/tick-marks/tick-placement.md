@@ -1,7 +1,7 @@
 ---
 title: Tick placement
 page_title: Tick placement
-description: Check our "Tick placement" documentation article for the RadSlider WPF control.
+description: Check our &quot;Tick placement&quot; documentation article for the RadSlider WPF control.
 slug: radslider-tick-placement
 tags: tick,placement
 published: True

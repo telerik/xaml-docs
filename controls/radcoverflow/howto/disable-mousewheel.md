@@ -1,7 +1,7 @@
 ---
 title: Disable the MouseWheel
 page_title: Disable the MouseWheel
-description: Check our "Disable the MouseWheel" documentation article for the RadCoverflow WPF control.
+description: Check our &quot;Disable the MouseWheel&quot; documentation article for the RadCoverflow WPF control.
 slug: coverflow-disable-mousewheel
 tags: disable,the,mousewheel
 published: True

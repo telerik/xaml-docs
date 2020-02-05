@@ -1,7 +1,7 @@
 ---
 title: DropDown Properties
 page_title: DropDown Properties
-description: Check our "DropDown Properties" documentation article for the RadMultiColumnComboBox WPF control.
+description: Check our &quot;DropDown Properties&quot; documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-dropdown-properties
 tags: dropdown,properties
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Breaking Changes
 page_title: Breaking Changes
-description: Check our "Breaking Changes" documentation article for the RadGauge WPF control.
+description: Check our &quot;Breaking Changes&quot; documentation article for the RadGauge WPF control.
 slug: radgauge-breaking-changes
 tags: breaking,changes
 published: True

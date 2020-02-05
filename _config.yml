@@ -3253,7 +3253,7 @@ defaults:
         title_prefix: "WPF ChartView"
 -
     scope:
-        path: "controls/radchartview"3d
+        path: "controls/radchartview3d"
     values:
         title_prefix: "WPF ChartView3D"
 -

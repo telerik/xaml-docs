@@ -1,7 +1,7 @@
 ---
 title: DragDropBehavior
 page_title: DragDropBehavior
-description: Check our "DragDropBehavior" documentation article for the DragDropManager WPF control.
+description: Check our &quot;DragDropBehavior&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-behaviors-dragdropbehavior
 tags: dragdropbehavior
 published: True

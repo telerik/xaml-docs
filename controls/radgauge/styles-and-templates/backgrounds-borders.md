@@ -1,7 +1,7 @@
 ---
 title: Backgrounds and Borders
 page_title: Backgrounds and Borders
-description: Check our "Backgrounds and Borders" documentation article for the RadGauge WPF control.
+description: Check our &quot;Backgrounds and Borders&quot; documentation article for the RadGauge WPF control.
 slug: radgauge-styles-and-templates-backgrounds-borders
 tags: styles, templates, background, border, 
 published: True

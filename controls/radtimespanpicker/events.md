@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Check our "Events" documentation article for the RadTimeSpanPicker WPF control.
+description: Check our &quot;Events&quot; documentation article for the RadTimeSpanPicker WPF control.
 slug: radtimespanpicker-events-overview
 tags: Events
 published: True

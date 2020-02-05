@@ -1,7 +1,7 @@
 ---
 title: Docx
 page_title: Docx
-description: Check our "Docx" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Docx&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-docx
 tags: docx
 published: True

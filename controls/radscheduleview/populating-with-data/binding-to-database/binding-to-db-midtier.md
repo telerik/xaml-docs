@@ -1,7 +1,7 @@
 ---
 title: Entity Model, DomainContext
 page_title: Entity Model, DomainContext
-description: Check our "Entity Model, DomainContext" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Entity Model, DomainContext&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-populating-with-data-binding-to-db-midtier
 tags: entity,model,,domaincontext
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the RadWindow
 page_title: Styling the RadWindow
-description: Check our "Styling the RadWindow" documentation article for the RadWindow WPF control.
+description: Check our &quot;Styling the RadWindow&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-styles-and-templates-styling-the-radwindow
 tags: styling,the,radwindow
 published: True

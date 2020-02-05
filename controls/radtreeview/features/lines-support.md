@@ -1,7 +1,7 @@
 ---
 title: Lines Support
 page_title: Lines Support
-description: Check our "Lines Support" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Lines Support&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-features-lines-support
 tags: lines,support
 published: True

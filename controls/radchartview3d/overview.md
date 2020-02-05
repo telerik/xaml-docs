@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our "Overview" documentation article for the RadChartView3D WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadChartView3D WPF control.
 slug: radchartview3d-overview
 tags: overview, chartview, 3d
 published: True

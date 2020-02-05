@@ -1,7 +1,7 @@
 ---
 title: Drag Reorder
 page_title: Drag Reorder
-description: Check our "Drag Reorder" documentation article for the RadGanttView WPF control.
+description: Check our &quot;Drag Reorder&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-dragdrop-drag-reorder
 tags: drag,reorder
 published: True

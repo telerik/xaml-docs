@@ -1,7 +1,7 @@
 ---
 title: Clock Items
 page_title: Clock Items
-description: Check our "Clock Items" documentation article for the RadDateTimePicker WPF control.
+description: Check our &quot;Clock Items&quot; documentation article for the RadDateTimePicker WPF control.
 slug: raddatetimepicker-features-clock-items
 tags: clock,items
 published: True

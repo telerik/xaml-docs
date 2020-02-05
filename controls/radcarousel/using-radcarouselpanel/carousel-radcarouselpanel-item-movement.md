@@ -1,7 +1,7 @@
 ---
 title: RadCarouselPanel Item Movement
 page_title: RadCarouselPanel Item Movement
-description: Check our "RadCarouselPanel Item Movement" documentation article for the RadCarousel WPF control.
+description: Check our &quot;RadCarouselPanel Item Movement&quot; documentation article for the RadCarousel WPF control.
 slug: carousel-radcarouselpanel-item-movement
 tags: radcarouselpanel,item,movement
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Setting the OverlayStyle
 page_title: Setting the OverlayStyle
-description: Check our "Setting the OverlayStyle" documentation article for the RadBusyIndicator WPF control.
+description: Check our &quot;Setting the OverlayStyle&quot; documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-styles-and-templates-setting-the-overlay-style
 tags: setting,the,overlaystyle
 published: True

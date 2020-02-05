@@ -1,7 +1,7 @@
 ---
 title: 2D Charts
 page_title: 2D Charts
-description: Check our "2D Charts" documentation article for the RadChart WPF control.
+description: Check our &quot;2D Charts&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-types-2d-charts
 tags: 2d,charts
 published: True

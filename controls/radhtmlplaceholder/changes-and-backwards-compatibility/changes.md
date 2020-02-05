@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our "Changes" documentation article for the RadHtmlPlaceholder WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadHtmlPlaceholder WPF control.
 slug: radhtmlplaceholder-changes
 tags: changes
 published: True

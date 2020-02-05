@@ -1,7 +1,7 @@
 ---
 title: Guidelines for Printing with RadDocument
 page_title: Guidelines for Printing with RadDocument
-description: Check our "Guidelines for Printing with RadDocument" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Guidelines for Printing with RadDocument&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-guidelines-for-printing-with-raddocument
 tags: guidelines,for,printing,with,raddocument
 published: True

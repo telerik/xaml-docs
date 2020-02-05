@@ -1,7 +1,7 @@
 ---
 title: Create Custom Drag Arrow
 page_title: Create Custom Drag Arrow
-description: Check our "Create Custom Drag Arrow" documentation article for the DragDropManager WPF control.
+description: Check our &quot;Create Custom Drag Arrow&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-howto-create-custom-drag-arrow
 tags: create,custom,drag,arrow
 published: True

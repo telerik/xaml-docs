@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: This article gives a general overview and lists the key features of the RadBook control.
-description: Check our "Overview" documentation article for the RadBook WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadBook WPF control.
 slug: radbook-overview
 tags: overview, radbook
 published: True

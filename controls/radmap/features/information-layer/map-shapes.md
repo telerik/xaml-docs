@@ -1,7 +1,7 @@
 ---
 title: Map Shapes
 page_title: Map Shapes
-description: Check our "Map Shapes" documentation article for the RadMap WPF control.
+description: Check our &quot;Map Shapes&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-map-shapes
 tags: map,shapes
 published: True

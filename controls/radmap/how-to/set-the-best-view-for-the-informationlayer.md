@@ -1,7 +1,7 @@
 ---
 title: Set the Best View for the InformationLayer
 page_title: Set the Best View for the InformationLayer
-description: Check our "Set the Best View for the InformationLayer" documentation article for the RadMap WPF control.
+description: Check our &quot;Set the Best View for the InformationLayer&quot; documentation article for the RadMap WPF control.
 slug: radmap-how-to-set-the-best-view-for-the-informationlayer
 tags: set,the,best,view,for,the,informationlayer
 published: True

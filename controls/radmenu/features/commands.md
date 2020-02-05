@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Check our "Commands" documentation article for the RadMenu WPF control.
+description: Check our &quot;Commands&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-commands
 tags: commands
 published: True

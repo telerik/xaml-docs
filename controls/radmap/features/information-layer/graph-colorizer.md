@@ -1,7 +1,7 @@
 ---
 title: Graph Colorizer
 page_title: Graph Colorizer
-description: Check our "Graph Colorizer" documentation article for the RadMap WPF control.
+description: Check our &quot;Graph Colorizer&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-graph-colorizer
 tags: graph,colorizer
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Validation Support
 page_title: Validation Support
-description: Check our "Validation Support" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Validation Support&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-features-validation
 tags: validation,support
 published: True

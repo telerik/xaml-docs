@@ -1,7 +1,7 @@
 ---
 title: Custom Categories and Functions
 page_title: Custom Categories and Functions
-description: Check our "Custom Categories and Functions" documentation article for the RadExpressionEditor WPF control.
+description: Check our &quot;Custom Categories and Functions&quot; documentation article for the RadExpressionEditor WPF control.
 slug: radexpressioneditor-expressions-custom-functions-and-categories
 tags: custom,functions,categories
 published: True

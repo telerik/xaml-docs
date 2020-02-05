@@ -1,7 +1,7 @@
 ---
 title: Pane States
 page_title: Pane States
-description: Check our "Pane States" documentation article for the RadDocking WPF control.
+description: Check our &quot;Pane States&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-panes-pane-states
 tags: pane,states
 published: True

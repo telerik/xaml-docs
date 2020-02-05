@@ -1,7 +1,7 @@
 ---
 title: Creating a Chart Declaratively
 page_title: Creating a Chart Declaratively
-description: Check our "Creating a Chart Declaratively" documentation article for the RadChart WPF control.
+description: Check our &quot;Creating a Chart Declaratively&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-creating-chart-declaratively
 tags: creating,a,chart,declaratively
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Resizing
 page_title: Resizing
-description: Check our "Resizing" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Resizing&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-resizing
 tags: resizing
 published: True

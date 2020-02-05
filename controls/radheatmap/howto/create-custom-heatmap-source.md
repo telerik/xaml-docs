@@ -1,7 +1,7 @@
 ---
 title: Create Custom HeatMap Source
 page_title: Create Custom HeatMap Source
-description: Check our "Create Custom HeatMap Source" documentation article for the RadHeatMap WPF control.
+description: Check our &quot;Create Custom HeatMap Source&quot; documentation article for the RadHeatMap WPF control.
 slug: radheatmap-how-to-custom-heatmap-source
 tags: performance, fast, heatmapdefinition, iheatmapsource
 published: True

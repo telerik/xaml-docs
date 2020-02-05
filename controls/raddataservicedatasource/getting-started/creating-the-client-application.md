@@ -1,7 +1,7 @@
 ---
 title: Creating the Client Application
 page_title: Creating the Client Application
-description: Check our "Creating the Client Application" documentation article for the RadDataServiceDataSource WPF control.
+description: Check our &quot;Creating the Client Application&quot; documentation article for the RadDataServiceDataSource WPF control.
 slug: raddataservicedatasource-getting-started-creating-the-client-application
 tags: creating,the,client,application
 published: True

@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization
-description: Check our "UI Virtualization" documentation article for the RadSpreadsheet WPF control.
+description: Check our &quot;UI Virtualization&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-ui-virtualization
 tags: ui,virtualization
 published: True

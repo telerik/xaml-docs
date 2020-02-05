@@ -1,7 +1,7 @@
 ---
 title: Using AdomdDataProvider
 page_title: Using AdomdDataProvider
-description: Check our "Using AdomdDataProvider" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Using AdomdDataProvider&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-data-adomd
 tags: using,adomddataprovider
 published: True

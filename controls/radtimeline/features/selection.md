@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Check our "Selection" documentation article for the RadTimeline WPF control.
+description: Check our &quot;Selection&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-selection
 tags: selection
 published: True

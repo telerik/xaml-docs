@@ -1,7 +1,7 @@
 ---
 title: Nested Properties
 page_title: Nested Properties
-description: Check our "Nested Properties" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Nested Properties&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-nested-properties
 tags: nested,properties
 published: True

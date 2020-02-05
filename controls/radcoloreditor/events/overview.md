@@ -1,7 +1,7 @@
 ---
 title: Events Overview
 page_title: Events Overview
-description: Check our "Events Overview" documentation article for the RadColorEditor WPF control.
+description: Check our &quot;Events Overview&quot; documentation article for the RadColorEditor WPF control.
 slug: radcoloreditor-events-overview
 tags: events,overview
 published: True

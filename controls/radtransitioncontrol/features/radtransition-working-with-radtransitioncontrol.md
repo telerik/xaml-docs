@@ -1,7 +1,7 @@
 ---
 title: Working with the RadTransitionControl
 page_title: Working with the RadTransitionControl
-description: Check our "Working with the RadTransitionControl" documentation article for the RadTransitionControl WPF control.
+description: Check our &quot;Working with the RadTransitionControl&quot; documentation article for the RadTransitionControl WPF control.
 slug: radtransition-features-working-with-radtransitioncontrol
 tags: working,with,the,radtransitioncontrol
 published: True

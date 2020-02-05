@@ -1,7 +1,7 @@
 ---
 title: Change the periods strip lines background
 page_title: Change the periods strip lines background
-description: Check our "Change the periods strip lines background" documentation article for the RadTimeline WPF control.
+description: Check our &quot;Change the periods strip lines background&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-howto-change-striplines-background
 tags: change,timeline,background, striplines, strip, lines
 published: True

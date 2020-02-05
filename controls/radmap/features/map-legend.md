@@ -1,7 +1,7 @@
 ---
 title: Map Legend
 page_title: Map Legend
-description: Check our "Map Legend" documentation article for the RadMap WPF control.
+description: Check our &quot;Map Legend&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-map-legend
 tags: map,legend
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Layout Modes
 page_title: Layout Modes
-description: Check our "Layout Modes" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Layout Modes&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-layout-modes
 tags: layout,modes
 published: True

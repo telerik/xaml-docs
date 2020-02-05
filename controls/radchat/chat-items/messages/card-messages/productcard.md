@@ -1,7 +1,7 @@
 ---
 title: ProductCard
 page_title: ProductCard
-description: Check our "ProductCard" documentation article for the RadChat WPF control.
+description: Check our &quot;ProductCard&quot; documentation article for the RadChat WPF control.
 slug: chat-items-productcard
 tags: messages,productcard
 published: True

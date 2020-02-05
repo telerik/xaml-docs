@@ -1,7 +1,7 @@
 ---
 title: Tools Overview
 page_title: Tools Overview
-description: Check our "Tools Overview" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Tools Overview&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-tools-overview
 tags: tools,overview
 published: True

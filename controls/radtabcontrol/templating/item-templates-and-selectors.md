@@ -1,7 +1,7 @@
 ---
 title: Item Template and Template Selectors
 page_title: Item Template and Template Selectors
-description: Check our "Item Template and Template Selectors" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Item Template and Template Selectors&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-item-templates-and-selectors
 tags: item,template,and,template,selectors
 published: True

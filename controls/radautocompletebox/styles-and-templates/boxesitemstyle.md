@@ -1,7 +1,7 @@
 ---
 title: BoxesItemStyle
 page_title: BoxesItemStyle
-description: Check our "BoxesItemStyle" documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;BoxesItemStyle&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-boxesitemstyle
 tags: customizing,the,boxesitemstyle
 published: True

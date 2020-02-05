@@ -1,7 +1,7 @@
 ---
 title: Implement Simple Authentication
 page_title: Implement Simple Authentication
-description: Check our "Implement Simple Authentication" documentation article for the RadUpload WPF control.
+description: Check our &quot;Implement Simple Authentication&quot; documentation article for the RadUpload WPF control.
 slug: radupload-how-to-implement-simple-authentication
 tags: implement,simple,authentication
 published: True

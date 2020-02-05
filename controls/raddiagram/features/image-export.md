@@ -1,7 +1,7 @@
 ---
 title: Image Export
 page_title: Image Export
-description: Check our "Image Export" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Image Export&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-features-image-export
 tags: image,export
 published: True

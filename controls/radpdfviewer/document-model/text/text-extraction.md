@@ -1,7 +1,7 @@
 ---
 title: Text Extraction
 page_title: Text Extraction
-description: Check our "Text Extraction" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Text Extraction&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-text-text-extraction
 tags: text,extraction
 published: False

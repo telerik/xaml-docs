@@ -1,7 +1,7 @@
 ---
 title: Footnotes and Endnotes
 page_title: Footnotes and Endnotes
-description: Check our "Footnotes and Endnotes" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Footnotes and Endnotes&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-footnotes-endnotes
 tags: footnotes,and,endnotes
 published: True

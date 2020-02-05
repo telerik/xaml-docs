@@ -1,7 +1,7 @@
 ---
 title: UltimateOscillatorIndicator
 page_title: UltimateOscillatorIndicator
-description: Check our "UltimateOscillatorIndicator" documentation article for the RadChartView WPF control.
+description: Check our &quot;UltimateOscillatorIndicator&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-indicators-ultimateoscillatorindicator
 tags: financial, indicators, ultimateoscillatorindicator
 publish: True

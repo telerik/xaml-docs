@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our "Getting Started" documentation article for the RadBusyIndicator WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadBusyIndicator WPF control.
 slug: radbusyindicator-getting-started
 tags: getting,started
 published: True

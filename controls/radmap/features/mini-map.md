@@ -1,7 +1,7 @@
 ---
 title: Mini Map
 page_title: Mini Map
-description: Check our "Mini Map" documentation article for the RadMap WPF control.
+description: Check our &quot;Mini Map&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-mini-map
 tags: mini,map
 published: True

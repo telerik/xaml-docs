@@ -1,7 +1,7 @@
 ---
 title: Data Binding to WCF Service
 page_title: Data Binding to WCF Service
-description: Check our "Data Binding to WCF Service" documentation article for the RadChart WPF control.
+description: Check our &quot;Data Binding to WCF Service&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-binding-to-wcf
 tags: data,binding,to,wcf,service
 published: True

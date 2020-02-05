@@ -1,7 +1,7 @@
 ---
 title: CustomPropertyProviders
 page_title: CustomPropertyProviders
-description: Check our "CustomPropertyProviders" documentation article for the RadPersistenceFramework WPF control.
+description: Check our &quot;CustomPropertyProviders&quot; documentation article for the RadPersistenceFramework WPF control.
 slug: persistence-framework-custom-property-provider
 tags: custompropertyproviders
 published: True

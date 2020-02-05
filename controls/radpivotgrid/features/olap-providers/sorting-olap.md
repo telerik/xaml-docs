@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Check our "Sorting" documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Sorting&quot; documentation article for the RadPivotGrid WPF control.
 slug: radpivotgrid-features-sorting-olap
 tags: sorting
 published: True

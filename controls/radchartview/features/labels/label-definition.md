@@ -1,7 +1,7 @@
 ---
 title: Label Definition
 page_title: Label Definition
-description: Check our "Label Definition" documentation article for the RadChartView WPF control.
+description: Check our &quot;Label Definition&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-label-definition
 tags: label,definition
 published: True

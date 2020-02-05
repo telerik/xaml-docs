@@ -1,7 +1,7 @@
 ---
 title: Populating with Tabs
 page_title: Populating with Tabs
-description: Check our "Populating with Tabs" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Populating with Tabs&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-populating-with-tabs
 tags: populating,with,tabs
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our "Overview" documentation article for the RadPanelBar WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadPanelBar WPF control.
 slug: radpanelbar-events-overview
 tags: overview
 published: True

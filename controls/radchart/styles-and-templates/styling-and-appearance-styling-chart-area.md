@@ -1,7 +1,7 @@
 ---
 title: Styling the Chart Area
 page_title: Styling the Chart Area
-description: Check our "Styling the Chart Area" documentation article for the RadChart WPF control.
+description: Check our &quot;Styling the Chart Area&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-chart-area
 tags: styling,the,chart,area
 published: True

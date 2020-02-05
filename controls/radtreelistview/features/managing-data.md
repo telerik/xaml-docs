@@ -1,7 +1,7 @@
 ---
 title: Managing Data
 page_title: Managing Data
-description: Check our "Managing Data" documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Managing Data&quot; documentation article for the RadTreeListView WPF control.
 slug: radtreelistview-features-managing-data
 tags: managing,data
 published: True

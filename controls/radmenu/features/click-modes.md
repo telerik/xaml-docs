@@ -1,7 +1,7 @@
 ---
 title: Click Modes
 page_title: Click Modes
-description: Check our "Click Modes" documentation article for the RadMenu WPF control.
+description: Check our &quot;Click Modes&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-click-modes
 tags: click,modes
 published: True

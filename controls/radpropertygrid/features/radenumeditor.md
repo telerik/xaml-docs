@@ -1,7 +1,7 @@
 ---
 title: FlagEnumEditor
 page_title: FlagEnumEditor
-description: Check our "FlagEnumEditor" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;FlagEnumEditor&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-radenumeditor
 tags: flagenumeditor
 published: True

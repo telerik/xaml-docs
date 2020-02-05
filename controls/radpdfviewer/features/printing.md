@@ -1,7 +1,7 @@
 ---
 title: Printing
 page_title: Printing
-description: Check our "Printing" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Printing&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-printing
 tags: printing
 published: True

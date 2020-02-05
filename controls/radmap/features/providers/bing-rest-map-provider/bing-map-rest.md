@@ -1,7 +1,7 @@
 ---
 title: Bing Rest Map Provider
 page_title: Bing Rest Map Provider
-description: Check our "Bing Rest Map Provider" documentation article for the RadMap WPF control.
+description: Check our &quot;Bing Rest Map Provider&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-providers-bing-rest-map
 tags: bing,map,provider,rest
 published: True

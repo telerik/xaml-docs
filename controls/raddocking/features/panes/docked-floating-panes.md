@@ -1,7 +1,7 @@
 ---
 title: Docked/Floating Panes
 page_title: Docked/Floating Panes
-description: Check our "Docked/Floating Panes" documentation article for the RadDocking WPF control.
+description: Check our &quot;Docked/Floating Panes&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-features-panes-docked-floating-panes
 tags: docked/floating,panes
 published: True

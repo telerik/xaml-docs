@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Check our "Backward Compatibility" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-backward-compatibility
 tags: backward,compatibility
 published: True

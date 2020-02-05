@@ -1,7 +1,7 @@
 ---
 title: Boundaries Detection
 page_title: Boundaries Detection
-description: Check our "Boundaries Detection" documentation article for the RadMenu WPF control.
+description: Check our &quot;Boundaries Detection&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-boundaries-detection
 tags: boundaries,detection
 published: True

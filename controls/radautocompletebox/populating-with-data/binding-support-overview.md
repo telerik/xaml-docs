@@ -1,7 +1,7 @@
 ---
 title: Data Binding Support Overview
 page_title: Data Binding Support Overview
-description: Check our "Data Binding Support Overview" documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;Data Binding Support Overview&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-populating-with-data-binding-support-overview
 tags: data,binding,support,overview
 published: True

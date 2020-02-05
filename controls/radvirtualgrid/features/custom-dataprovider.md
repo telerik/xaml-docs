@@ -1,7 +1,7 @@
 ---
 title: Custom DataProvider
 page_title: Custom DataProvider
-description: Check our "Custom DataProvider" documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Custom DataProvider&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-custom-dataprovider
 tags: dataprovider
 published: True

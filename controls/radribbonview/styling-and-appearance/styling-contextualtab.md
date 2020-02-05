@@ -1,7 +1,7 @@
 ---
 title: Styling the ContextualTabs
 page_title: Styling the ContextualTabs
-description: Check our "Styling the ContextualTabs" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the ContextualTabs&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-contextualtab
 tags: styling,the,contextualtabs
 published: True

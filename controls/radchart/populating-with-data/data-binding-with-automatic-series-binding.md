@@ -1,7 +1,7 @@
 ---
 title: Data Binding with Automatic Series Mappings
 page_title: Data Binding with Automatic Series Mappings
-description: Check our "Data Binding with Automatic Series Mappings" documentation article for the RadChart WPF control.
+description: Check our &quot;Data Binding with Automatic Series Mappings&quot; documentation article for the RadChart WPF control.
 slug: radchart-populating-with-data-data-binding-with-automatic-series-binding
 tags: data,binding,with,automatic,series,mappings
 published: True

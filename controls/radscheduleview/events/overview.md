@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our "Overview" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-events-overview
 tags: overview
 published: True

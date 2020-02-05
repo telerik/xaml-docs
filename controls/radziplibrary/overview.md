@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our "Overview" documentation article for the RadZipLibrary WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadZipLibrary WPF control.
 slug: radziplibrary-overview
 tags: overview
 published: True

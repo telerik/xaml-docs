@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonComboBox
 page_title: Styling the RadRibbonComboBox
-description: Check our "Styling the RadRibbonComboBox" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the RadRibbonComboBox&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribboncombobox
 tags: styling,the,radribboncombobox
 published: True

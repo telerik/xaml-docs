@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our "Localization" documentation article for the RadSpreadsheet WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-localization
 tags: localization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Colorizer
 page_title: Colorizer
-description: Check our "Colorizer" documentation article for the RadMap WPF control.
+description: Check our &quot;Colorizer&quot; documentation article for the RadMap WPF control.
 slug: radmap-visualization-layer-colorizer
 tags: colorizer
 published: True

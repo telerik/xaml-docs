@@ -1,7 +1,7 @@
 ---
 title: Ribbon Tab
 page_title: Ribbon Tab
-description: Check our "Ribbon Tab" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Ribbon Tab&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-ribbon-tab
 tags: ribbon,tab
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Implement ToolBase Class
 page_title: Implement ToolBase Class
-description: Check our "Implement ToolBase Class" documentation article for the RadImageEditor WPF control.
+description: Check our &quot;Implement ToolBase Class&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-howto-implement-toolbase
 tags: implement,toolbase
 published: True

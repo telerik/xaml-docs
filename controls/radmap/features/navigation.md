@@ -1,7 +1,7 @@
 ---
 title: Navigation
 page_title: Navigation
-description: Check our "Navigation" documentation article for the RadMap WPF control.
+description: Check our &quot;Navigation&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-navigation
 tags: navigation
 published: True

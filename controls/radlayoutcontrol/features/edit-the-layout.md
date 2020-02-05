@@ -1,7 +1,7 @@
 ---
 title: Edit the Layout
 page_title: Edit the Layout
-description: Check our "Edit the Layout" documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;Edit the Layout&quot; documentation article for the RadLayoutControl WPF control.
 slug: radlayoutcontrol-edit-the-layout
 tags: edit, layout, arrange, arranging, update, runtime
 published: True

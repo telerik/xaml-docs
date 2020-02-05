@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our "Localization" documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-localization
 tags: localization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Smooth Streaming
 page_title: Smooth Streaming
-description: Check our "Smooth Streaming" documentation article for the RadMediaPlayer WPF control.
+description: Check our &quot;Smooth Streaming&quot; documentation article for the RadMediaPlayer WPF control.
 slug: radmediaplayer-smoothstreaming
 tags: smooth,streaming
 publish: True

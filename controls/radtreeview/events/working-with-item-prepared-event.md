@@ -1,7 +1,7 @@
 ---
 title: Working with ItemPrepared Event
 page_title: Working with ItemPrepared Event
-description: Check our "Working with ItemPrepared Event" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Working with ItemPrepared Event&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-events-working-with-item-prepared-event
 tags: working,with,itemprepared,event
 published: True

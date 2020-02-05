@@ -1,7 +1,7 @@
 ---
 title: Bind to Objects
 page_title: Bind to Objects
-description: Check our "Bind to Objects" documentation article for the RadCoverflow WPF control.
+description: Check our &quot;Bind to Objects&quot; documentation article for the RadCoverflow WPF control.
 slug: coverflow-databinding-overview
 tags: bind,to,objects
 published: True

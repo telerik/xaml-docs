@@ -1,7 +1,7 @@
 ---
 title: Styling the Chart Title
 page_title: Styling the Chart Title
-description: Check our "Styling the Chart Title" documentation article for the RadChart WPF control.
+description: Check our &quot;Styling the Chart Title&quot; documentation article for the RadChart WPF control.
 slug: radchart-styling-and-appearance-styling-chart-title
 tags: styling,the,chart,title
 published: True

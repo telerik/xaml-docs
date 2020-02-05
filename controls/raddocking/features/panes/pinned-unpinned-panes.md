@@ -1,7 +1,7 @@
 ---
 title: Pinned/Unpinned Panes
 page_title: Pinned/Unpinned Panes
-description: Check our "Pinned/Unpinned Panes" documentation article for the RadDocking WPF control.
+description: Check our &quot;Pinned/Unpinned Panes&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-panes-pinned-unpinned-panes
 tags: pinned/unpinned,panes
 published: True

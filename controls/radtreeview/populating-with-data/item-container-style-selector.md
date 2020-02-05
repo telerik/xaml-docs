@@ -1,7 +1,7 @@
 ---
 title: ItemContainerStyleSelector
 page_title: ItemContainerStyleSelector
-description: Check our "ItemContainerStyleSelector" documentation article for the RadTreeView WPF control.
+description: Check our &quot;ItemContainerStyleSelector&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-item-container-style-selector
 tags: itemcontainerstyleselector
 published: True

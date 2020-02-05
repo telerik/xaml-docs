@@ -1,7 +1,7 @@
 ---
 title: Template Structure
 page_title: Template Structure
-description: Check our "Template Structure" documentation article for the RadSlider WPF control.
+description: Check our &quot;Template Structure&quot; documentation article for the RadSlider WPF control.
 slug: radslider-template-structure
 tags: template,structure
 published: True

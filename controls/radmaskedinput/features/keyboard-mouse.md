@@ -1,7 +1,7 @@
 ---
 title: Keyboard and Mouse Support
 page_title: Keyboard and Mouse Support
-description: Check our "Keyboard and Mouse Support" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Keyboard and Mouse Support&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-keyboard-mouse
 tags: keyboard,and,mouse,support
 published: True

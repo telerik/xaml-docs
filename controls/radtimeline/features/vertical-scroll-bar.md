@@ -1,7 +1,7 @@
 ---
 title: Vertical ScrollBar
 page_title: Vertical ScrollBar
-description: Check our "Vertical ScrollBar" documentation article for the RadTimeline WPF control.
+description: Check our &quot;Vertical ScrollBar&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-vertical-scroll-bar
 tags: vertical,scrollbar
 published: True

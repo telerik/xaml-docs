@@ -1,7 +1,7 @@
 ---
 title: Regex Validation
 page_title: Regex Validation
-description: Check our "Regex Validation" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Regex Validation&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-validation-regex-validation
 tags: using,dataannotation,attributes,regex,radmaskedtextinput
 published: True

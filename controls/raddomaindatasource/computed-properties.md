@@ -1,7 +1,7 @@
 ---
 title: Add Computed Properties on the Client
 page_title: Add Computed Properties on the Client
-description: Check our "Add Computed Properties on the Client" documentation article for the RadDomainDataSource WPF control.
+description: Check our &quot;Add Computed Properties on the Client&quot; documentation article for the RadDomainDataSource WPF control.
 slug: domaindatasource-computed-properties
 tags: add,computed,properties,on,the,client
 published: True

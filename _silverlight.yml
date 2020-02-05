@@ -229,9 +229,9 @@ defaults:
         title_prefix: "Silverlight ChartView"
 -
     scope:
-        path: "controls/radchartview"3d
+        path: "controls/radchartview3d"
     values:
-        title_prefix: "Silverlight ChartView"3d
+        title_prefix: "Silverlight ChartView3D"
 -
     scope:
         path: "controls/radchat"

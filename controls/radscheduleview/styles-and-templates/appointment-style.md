@@ -1,7 +1,7 @@
 ---
 title: Appointment Style
 page_title: Appointment Style
-description: Check our "Appointment Style" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Appointment Style&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-styles-and-templates-appointment-style
 tags: appointment,style
 published: True

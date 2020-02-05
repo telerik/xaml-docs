@@ -1,7 +1,7 @@
 ---
 title: Framework Elements
 page_title: Framework Elements
-description: Check our "Framework Elements" documentation article for the RadMap WPF control.
+description: Check our &quot;Framework Elements&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-information-layer-framework-elements
 tags: framework,elements
 published: True

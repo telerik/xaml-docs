@@ -1,7 +1,7 @@
 ---
 title: Thumbnail
 page_title: Thumbnail
-description: Check our "Thumbnail" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Thumbnail&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagram-extensions-thumbnail
 tags: thumbnail
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Check our "Commands" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Commands&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-commands
 tags: commands
 published: True

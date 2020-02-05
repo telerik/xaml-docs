@@ -1,7 +1,7 @@
 ---
 title: Separator Items
 page_title: Separator Items
-description: Check our "Separator Items" documentation article for the RadMenu WPF control.
+description: Check our &quot;Separator Items&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-features-separator-items
 tags: separator,items
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Resizing
 page_title: Resizing
-description: Check our "Resizing" documentation article for the RadWindow WPF control.
+description: Check our &quot;Resizing&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-features-resizing
 tags: resizing
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Check our "Filtering" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Filtering&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-filtering
 tags: filtering
 published: True

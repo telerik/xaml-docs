@@ -1,7 +1,7 @@
 ---
 title: Make the RadRating read only
 page_title: Make the RadRating read only
-description: Check our "Make the RadRating read only" documentation article for the RadRating WPF control.
+description: Check our &quot;Make the RadRating read only&quot; documentation article for the RadRating WPF control.
 slug: howto-make-readonly
 tags: make,the,radrating,read,only
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Precision
 page_title: Precision
-description: Check our "Precision" documentation article for the RadRating WPF control.
+description: Check our &quot;Precision&quot; documentation article for the RadRating WPF control.
 slug: rating-features-precision
 tags: precision
 published: True

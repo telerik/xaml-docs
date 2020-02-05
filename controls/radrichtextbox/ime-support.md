@@ -1,7 +1,7 @@
 ---
 title: IME Support
 page_title: IME Support
-description: Check our "IME Support" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;IME Support&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-ime-support
 tags: ime, support
 published: True

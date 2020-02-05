@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Check our "Visual Structure" documentation article for the RadMenu WPF control.
+description: Check our &quot;Visual Structure&quot; documentation article for the RadMenu WPF control.
 slug: radmenu-visual-structure
 tags: visual,structure
 published: True

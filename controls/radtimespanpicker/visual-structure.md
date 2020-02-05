@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Check our "Visual Structure" documentation article for the RadTimeSpanPicker WPF control.
+description: Check our &quot;Visual Structure&quot; documentation article for the RadTimeSpanPicker WPF control.
 slug: radtimespanpicker-visual-structure
 tags: visual,structure
 published: True

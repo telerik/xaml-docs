@@ -1,7 +1,7 @@
 ---
 title: Binding to WCF Service
 page_title: Binding to WCF Service
-description: Check our "Binding to WCF Service" documentation article for the RadTreeView WPF control.
+description: Check our &quot;Binding to WCF Service&quot; documentation article for the RadTreeView WPF control.
 slug: radtreeview-populating-with-data-databinding-to-wcf-service
 tags: binding,to,wcf,service
 published: True

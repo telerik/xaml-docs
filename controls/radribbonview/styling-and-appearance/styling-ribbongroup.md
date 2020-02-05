@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonGroup
 page_title: Styling the RadRibbonGroup
-description: Check our "Styling the RadRibbonGroup" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the RadRibbonGroup&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-styling-ribbongroup
 tags: styling,the,radribbongroup
 published: True

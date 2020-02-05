@@ -1,7 +1,7 @@
 ---
 title: Indexer Support
 page_title: Indexer Support
-description: Check our "Indexer Support" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Indexer Support&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-features-indexer-support
 tags: indexer,support
 published: True

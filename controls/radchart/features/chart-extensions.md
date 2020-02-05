@@ -1,7 +1,7 @@
 ---
 title: Chart Extensions
 page_title: Chart Extensions
-description: Check our "Chart Extensions" documentation article for the RadChart WPF control.
+description: Check our &quot;Chart Extensions&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-extensions
 tags: chart,extensions
 published: True

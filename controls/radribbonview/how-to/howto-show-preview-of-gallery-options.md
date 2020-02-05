@@ -1,7 +1,7 @@
 ---
 title: Show Preview of the Gallery Options
 page_title: Show Preview of the Gallery Options
-description: Check our "Show Preview of the Gallery Options" documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Show Preview of the Gallery Options&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-howto-show-preview-of-gallery-options
 tags: show,preview,of,the,gallery,options
 published: True

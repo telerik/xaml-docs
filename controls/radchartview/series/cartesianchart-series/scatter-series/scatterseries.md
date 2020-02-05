@@ -1,7 +1,7 @@
 ---
 title: Scatter Series
 page_title: Scatter Series
-description: Check our "Scatter Series" documentation article for the RadChartView WPF control.
+description: Check our &quot;Scatter Series&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-scatterseries
 tags: scatter,series
 published: True

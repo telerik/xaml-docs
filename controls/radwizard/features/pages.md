@@ -1,7 +1,7 @@
 ---
 title: Wizard Pages
 page_title: Wizard Pages
-description: Check our "Wizard Pages" documentation article for the RadWizard WPF control.
+description: Check our &quot;Wizard Pages&quot; documentation article for the RadWizard WPF control.
 slug: wizard-pages
 tags: wizard, pages
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Supported Fields
 page_title: Supported Fields
-description: Check our "Supported Fields" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Supported Fields&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-fields-supported-fields
 tags: fields
 published: True

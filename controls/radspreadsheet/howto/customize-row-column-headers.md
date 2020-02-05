@@ -1,7 +1,7 @@
 ---
 title: Customize Row and Column Headers
 page_title: Customize Row and Column Headers
-description: Check our "Customize Row and Column Headers" documentation article for the RadSpreadsheet WPF control.
+description: Check our &quot;Customize Row and Column Headers&quot; documentation article for the RadSpreadsheet WPF control.
 slug: radspreadsheet-howto-customize-row-column-headers
 tags: customize,row,and,column,headers
 published: True

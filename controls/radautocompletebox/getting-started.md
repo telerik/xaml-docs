@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our "Getting Started" documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-getting-started
 tags: getting,started
 published: True

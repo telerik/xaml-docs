@@ -1,7 +1,7 @@
 ---
 title: Modifying TileList view
 page_title: Modifying TileList view
-description: Check our "Modifying TileList view" documentation article for the RadTileList WPF control.
+description: Check our &quot;Modifying TileList view&quot; documentation article for the RadTileList WPF control.
 slug: radtilelist-modifying-tilelist-view
 tags: modifying,tilelist,view
 published: True

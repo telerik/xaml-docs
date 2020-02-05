@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our "Localization" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-localization
 tags: localization
 published: True

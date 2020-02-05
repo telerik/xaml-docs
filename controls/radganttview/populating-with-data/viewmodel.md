@@ -1,7 +1,7 @@
 ---
 title: Implementing View-ViewModel
 page_title: Implementing View-ViewModel
-description: Check our "Implementing View-ViewModel" documentation article for the RadGanttView WPF control.
+description: Check our &quot;Implementing View-ViewModel&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-populating-with-data-viewmodel
 tags: implementing,view-viewmodel
 published: True

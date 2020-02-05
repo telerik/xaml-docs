@@ -1,7 +1,7 @@
 ---
 title: Binding to a DataTable
 page_title: Binding to a DataTable
-description: Check our "Binding to a DataTable" documentation article for the RadChartView WPF control.
+description: Check our &quot;Binding to a DataTable&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-populating-with-data-binding-to-data-table
 tags: binding,to,a,datatable
 published: True

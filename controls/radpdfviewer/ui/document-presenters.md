@@ -1,7 +1,7 @@
 ---
 title: Document Presenters
 page_title: Document Presenters
-description: Check our "Document Presenters" documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Document Presenters&quot; documentation article for the RadPdfViewer WPF control.
 slug: radpdfviewer-ui-document-presenters
 tags: document,presenters
 published: True

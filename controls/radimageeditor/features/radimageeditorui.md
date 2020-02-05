@@ -1,7 +1,7 @@
 ---
 title: RadImageEditorUI
 page_title: RadImageEditorUI
-description: Check our "RadImageEditorUI" documentation article for the RadImageEditor WPF control.
+description: Check our &quot;RadImageEditorUI&quot; documentation article for the RadImageEditor WPF control.
 slug: radimageeditor-features-radimageeditorui
 tags: radimageeditorui
 published: True

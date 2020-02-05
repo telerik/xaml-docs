@@ -1,7 +1,7 @@
 ---
 title: Bind to XML
 page_title: Bind to XML
-description: Check our "Bind to XML" documentation article for the RadCoverflow WPF control.
+description: Check our &quot;Bind to XML&quot; documentation article for the RadCoverflow WPF control.
 slug: coverflow-xml-databanding
 tags: bind,to,xml
 published: True

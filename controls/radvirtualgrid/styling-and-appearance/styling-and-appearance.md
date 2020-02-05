@@ -1,7 +1,7 @@
 ---
 title: Styling and Appearance
 page_title: Styling and Appearance
-description: Check our "Styling and Appearance" documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Styling and Appearance&quot; documentation article for the RadVirtualGrid WPF control.
 slug: virtualgrid-styling-and-appearance
 tags: styling,appearance
 published: True

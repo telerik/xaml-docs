@@ -1,7 +1,7 @@
 ---
 title: Theming the ToolWindow
 page_title: Theming the ToolWindow
-description: Check our "Theming the ToolWindow" documentation article for the RadDocking WPF control.
+description: Check our &quot;Theming the ToolWindow&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-theming-toolwindow
 tags: theming,the,toolwindow
 published: True

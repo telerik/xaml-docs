@@ -1,7 +1,7 @@
 ---
 title: MarkedZone Annotations
 page_title: MarkedZone Annotations
-description: Check our "MarkedZone Annotations" documentation article for the RadChartView WPF control.
+description: Check our &quot;MarkedZone Annotations&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-annotations-markedzone
 tags: markedzone,annotations
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Close RadPane Instances
 page_title: Close RadPane Instances
-description: Check our "Close RadPane Instances" documentation article for the RadDocking WPF control.
+description: Check our &quot;Close RadPane Instances&quot; documentation article for the RadDocking WPF control.
 slug: raddocking-how-to-close-panes
 tags: how,to,close,panes
 published: True

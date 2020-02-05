@@ -1,7 +1,7 @@
 ---
 title: MaskedCurrencyInput
 page_title: MaskedCurrencyInput
-description: Check our "MaskedCurrencyInput" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;MaskedCurrencyInput&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-features-controls-currency
 tags: maskedcurrencyinput
 published: True

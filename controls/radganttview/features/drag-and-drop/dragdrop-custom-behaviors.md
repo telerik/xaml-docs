@@ -1,7 +1,7 @@
 ---
 title: Custom Drag and Drop Behaviors
 page_title: Custom Drag and Drop Behaviors
-description: Check our "Custom Drag and Drop Behaviors" documentation article for the RadGanttView WPF control.
+description: Check our &quot;Custom Drag and Drop Behaviors&quot; documentation article for the RadGanttView WPF control.
 slug: radganttview-dragdrop-custom-behaviors
 tags: custom,drag,and,drop,behaviors
 published: True

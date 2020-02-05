@@ -1,7 +1,7 @@
 ---
 title: Declaration
 page_title: Declaration
-description: Check our "Declaration" documentation article for the RadColorPicker WPF control.
+description: Check our &quot;Declaration&quot; documentation article for the RadColorPicker WPF control.
 slug: colorselector-populating
 tags: declaration
 published: True

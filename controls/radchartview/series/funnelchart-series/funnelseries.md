@@ -1,7 +1,7 @@
 ---
 title: FunnelSeries
 page_title: FunnelSeries
-description: Check our "FunnelSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;FunnelSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-funnelchart-funnelseries
 tags: funnelseries
 published: True

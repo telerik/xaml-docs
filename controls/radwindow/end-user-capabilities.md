@@ -1,7 +1,7 @@
 ---
 title: End-User Capabilities
 page_title: End-User Capabilities
-description: Check our "End-User Capabilities" documentation article for the RadWindow WPF control.
+description: Check our &quot;End-User Capabilities&quot; documentation article for the RadWindow WPF control.
 slug: radwindow-end-user-capabilities
 tags: end-user,capabilities
 published: True

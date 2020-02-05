@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Check our "Key Properties" documentation article for the RadCalendar WPF control.
+description: Check our &quot;Key Properties&quot; documentation article for the RadCalendar WPF control.
 slug: radcalendar-key-properties
 tags: key,properties
 published: True

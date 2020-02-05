@@ -1,7 +1,7 @@
 ---
 title: Using PdfFormatProvider
 page_title: Using PdfFormatProvider
-description: Check our "Using PdfFormatProvider" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Using PdfFormatProvider&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-pdf-pdfformatprovider
 tags: using-pdfFormatProvider
 published: True

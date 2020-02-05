@@ -1,7 +1,7 @@
 ---
 title: Span
 page_title: Span
-description: Check our "Span" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Span&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-span
 tags: span
 published: True

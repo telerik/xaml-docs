@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our "Changes" documentation article for the RadTabControl WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadTabControl WPF control.
 slug: radtabcontrol-changes
 tags: changes
 published: True

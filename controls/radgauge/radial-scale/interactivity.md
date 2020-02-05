@@ -1,7 +1,7 @@
 ---
 title: Interactivity
 page_title: Interactivity
-description: Check our "Interactivity" documentation article for the RadGauge WPF control.
+description: Check our &quot;Interactivity&quot; documentation article for the RadGauge WPF control.
 slug: radial-scale-interactivity
 tags: interactivity
 published: True

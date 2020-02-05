@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Check our "Selection" documentation article for the RadChartView WPF control.
+description: Check our &quot;Selection&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-features-selection
 tags: selection
 published: True

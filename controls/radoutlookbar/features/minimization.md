@@ -1,7 +1,7 @@
 ---
 title: Minimization
 page_title: Minimization
-description: Check our "Minimization" documentation article for the RadOutlookBar WPF control.
+description: Check our &quot;Minimization&quot; documentation article for the RadOutlookBar WPF control.
 slug: radoutlookbar-features-minimization
 tags: minimization
 published: True

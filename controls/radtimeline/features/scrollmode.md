@@ -1,7 +1,7 @@
 ---
 title: ScrollMode
 page_title: ScrollMode
-description: Check our "ScrollMode" documentation article for the RadTimeline WPF control.
+description: Check our &quot;ScrollMode&quot; documentation article for the RadTimeline WPF control.
 slug: radtimeline-features-scrollmode
 tags: scrollmode
 published: True

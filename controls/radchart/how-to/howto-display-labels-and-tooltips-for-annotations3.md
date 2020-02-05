@@ -1,7 +1,7 @@
 ---
 title: Display Labels And Tooltips For Annotations
 page_title: Display Labels And Tooltips For Annotations
-description: Check our "Display Labels And Tooltips For Annotations" documentation article for the RadChart WPF control.
+description: Check our &quot;Display Labels And Tooltips For Annotations&quot; documentation article for the RadChart WPF control.
 slug: radchart-howto-display-labels-and-tooltips-for-annotations3
 tags: display,labels,and,tooltips,for,annotations
 published: True

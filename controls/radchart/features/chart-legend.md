@@ -1,7 +1,7 @@
 ---
 title: Chart Legend
 page_title: Chart Legend
-description: Check our "Chart Legend" documentation article for the RadChart WPF control.
+description: Check our &quot;Chart Legend&quot; documentation article for the RadChart WPF control.
 slug: radchart-features-chart-legend
 tags: chart,legend
 published: True

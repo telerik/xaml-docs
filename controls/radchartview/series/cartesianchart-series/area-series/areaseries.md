@@ -1,7 +1,7 @@
 ---
 title: AreaSeries
 page_title: AreaSeries
-description: Check our "AreaSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;AreaSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-areaseries
 tags: areaseries
 published: True

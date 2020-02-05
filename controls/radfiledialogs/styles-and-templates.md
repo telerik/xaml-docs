@@ -1,7 +1,7 @@
 ---
 title: Styles and Templates
 page_title: Styles and Templates
-description: Check our "Styles and Templates" documentation article for the RadFileDialogs WPF control.
+description: Check our &quot;Styles and Templates&quot; documentation article for the RadFileDialogs WPF control.
 slug: radfiledialogs-styles-and-templates
 tags: styles,templates
 published: True

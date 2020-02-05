@@ -1,7 +1,7 @@
 ---
 title: Using DataAnnotation Attributes
 page_title: Using DataAnnotation Attributes
-description: Check our "Using DataAnnotation Attributes" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Using DataAnnotation Attributes&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-validation-regex
 tags: using,dataannotation,attributes
 published: True

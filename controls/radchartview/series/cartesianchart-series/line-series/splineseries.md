@@ -1,7 +1,7 @@
 ---
 title: SplineSeries
 page_title: SplineSeries
-description: Check our "SplineSeries" documentation article for the RadChartView WPF control.
+description: Check our &quot;SplineSeries&quot; documentation article for the RadChartView WPF control.
 slug: radchartview-series-splineseries
 tags: splineseries
 published: True

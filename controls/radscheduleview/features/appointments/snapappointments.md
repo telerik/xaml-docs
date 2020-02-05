@@ -1,7 +1,7 @@
 ---
 title: Snapping Appointments
 page_title: Snapping Appointments
-description: Check our "Snapping Appointments" documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Snapping Appointments&quot; documentation article for the RadScheduleView WPF control.
 slug: radscheduleview-features-snapappointments
 tags: snapping,appointments
 published: True

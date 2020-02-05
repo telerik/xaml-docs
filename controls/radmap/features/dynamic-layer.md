@@ -1,7 +1,7 @@
 ---
 title: Dynamic Layer
 page_title: Dynamic Layer
-description: Check our "Dynamic Layer" documentation article for the RadMap WPF control.
+description: Check our &quot;Dynamic Layer&quot; documentation article for the RadMap WPF control.
 slug: radmap-features-dynamic-layer
 tags: dynamic,layer
 published: True

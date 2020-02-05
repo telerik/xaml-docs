@@ -1,7 +1,7 @@
 ---
 title: RadDocument
 page_title: RadDocument
-description: Check our "RadDocument" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;RadDocument&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-document-elements-raddocument
 tags: raddocument
 published: True

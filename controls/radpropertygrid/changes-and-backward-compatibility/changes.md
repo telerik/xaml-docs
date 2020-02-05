@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our "Changes" documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadPropertyGrid WPF control.
 slug: radpropertygrid-changes
 tags: changes
 published: True

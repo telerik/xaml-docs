@@ -1,7 +1,7 @@
 ---
 title: Create a Line Chart with Static Data
 page_title: Create a Line Chart with Static Data
-description: Check our "Create a Line Chart with Static Data" documentation article for the RadChart WPF control.
+description: Check our &quot;Create a Line Chart with Static Data&quot; documentation article for the RadChart WPF control.
 slug: radchart-getting-started-create-a-line-chart-with-static-data
 tags: create,a,line,chart,with,static,data
 published: True

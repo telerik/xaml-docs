@@ -1,7 +1,7 @@
 ---
 title: Binding To Object
 page_title: Binding To Object
-description: Check our "Binding To Object" documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;Binding To Object&quot; documentation article for the RadAutoCompleteBox WPF control.
 slug: radautocompletebox-populating-with-data-binding-to-object
 tags: binding,to,object
 published: True

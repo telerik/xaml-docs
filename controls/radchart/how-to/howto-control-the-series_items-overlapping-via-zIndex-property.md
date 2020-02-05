@@ -1,7 +1,7 @@
 ---
 title: Control the Series Items overlapping via ZIndex property
 page_title: Control the Series Items overlapping via ZIndex property
-description: Check our "Control the Series Items overlapping via ZIndex property" documentation article for the RadChart WPF control.
+description: Check our &quot;Control the Series Items overlapping via ZIndex property&quot; documentation article for the RadChart WPF control.
 slug: radchart-howto-control-the-series_items-overlapping-via-zindex-property
 tags: control,the,series,items,overlapping,via,zindex,property
 published: True

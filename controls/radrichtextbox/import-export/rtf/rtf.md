@@ -1,7 +1,7 @@
 ---
 title: Rtf
 page_title: Rtf
-description: Check our "Rtf" documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Rtf&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-import-export-rtf
 tags: Rtf
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Undo and Redo
 page_title: Undo and Redo
-description: Check our "Undo and Redo" documentation article for the RadDiagram WPF control.
+description: Check our &quot;Undo and Redo&quot; documentation article for the RadDiagram WPF control.
 slug: raddiagrams-features-undo-redo
 tags: undo,and,redo
 published: True

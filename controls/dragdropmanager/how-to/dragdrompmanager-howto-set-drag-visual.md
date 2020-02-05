@@ -1,7 +1,7 @@
 ---
 title: Set Drag Visual
 page_title: Set Drag Visual
-description: Check our "Set Drag Visual" documentation article for the DragDropManager WPF control.
+description: Check our &quot;Set Drag Visual&quot; documentation article for the DragDropManager WPF control.
 slug: dragdrompmanager-howto-set-drag-visual
 tags: set,drag,visual
 published: True

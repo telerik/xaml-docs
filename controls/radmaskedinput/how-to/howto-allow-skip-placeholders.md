@@ -1,7 +1,7 @@
 ---
 title: How to Define Consecutive Input
 page_title: How to Define Consecutive Input
-description: Check our "How to Define Consecutive Input" documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;How to Define Consecutive Input&quot; documentation article for the RadMaskedInput WPF control.
 slug: radmaskedinput-howto-allow-skip-placeholders
 tags: how,to,define,consecutive,input
 published: True

@@ -10,11 +10,11 @@ position: 5
 
 # Set Drag Visual Offset
 
-Drag visual offset is the offset of the drag visual relative to the drag source element.
+The drag visual offset is the offset of the drag visual relative to the drag source element.
 
 The offset can be set in the __DragDropManager.DragInitialize__ event handler, via the __DragVisualOffset__ property of DragInitializeEventArgs.
 
-The DragVisualOffset property can be used in combination with the __RelativeStartPoint__ property of DragInitializeEventArgs in order to calculate and set a proper offset. RelativeStartPoint property gives you the relative coordinates of the mouse cursor when starting a drag operation.
+The DragVisualOffset property can be used in combination with the __RelativeStartPoint__ property of DragInitializeEventArgs in order to calculate and set a proper offset. The RelativeStartPoint property gives you the relative coordinates of the mouse cursor when starting a drag operation.
 
 #### __[XAML] Example 1: Setting up the view__
 {{region dragdropmanager-howto-set-dragvisualoffset-0}}

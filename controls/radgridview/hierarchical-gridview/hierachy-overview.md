@@ -10,7 +10,7 @@ position: 0
 
 # Hierarchy Overview
 
-Besides the trivial tabular data visualization, the __RadGridView__ is capable of displaying hierarchical data in the form of nested tables. In this case the rows of the __RadGridView__ are represented by the __GridViewExpandableRow__ class. In the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic you can find information about the basics of building a hierarchical grid.
+Besides the trivial tabular data visualization, the __RadGridView__ is capable of displaying hierarchical data in the form of nested tables. In the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic you can find information about the basics of building a hierarchical grid.
 
 #### __Figure 1: Basic Hierarchies__
 ![GridView Basic Hierarchies](images/gridview-basic-hierarchies.PNG)

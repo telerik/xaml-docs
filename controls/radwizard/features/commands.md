@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description: Check our &quot;Commands&quot; documentation article for the RadWizard WPF control.
+description: This article goes over the predefined commands exposed by the RadWizard. 
 slug: wizard-features-commands
 tags: commands
 published: True
@@ -20,17 +20,18 @@ All supported commands are defined in the __RadWizardCommands__ class and are li
 * __MoveCurrentToPrevious__
 * __MoveCurrentToNext__
 
-## Implementation ##
+## Using The RadWizardCommands
 
-Fast and quite easy approach for implementing the built-in commands in __RadWizard__ is to set them directly to a particular __RadButton__. Thus, once you click a single button, the predefined command will be executed.  
+In order to utilize the built-in __RadWizard__ commands, you can set them directly to the __Command__ property of a button. Thus, once you click the button, the predefined command will be executed.  
 
-There are two major scenarios to define a __RadButton__ – inside and outside __RadWizard__. The definition will be as follows:
+There are two major scenarios to define a __RadButton__ – inside and outside __RadWizard__. The wizard namespace definition is as follows:
+
 #### __[XAML] Definition of the namespace needed to use the built-in commands of RadWizard__
 {{region radwizard-features-commands-0}}
 	xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"
 {{endregion}}
 
-The following example illustrates how to add a __RadButton__ within the __FooterTemplate__ of __RadWizard__ (__Example 1__).
+__Example 1__ illustrates how to add a __RadButton__ within the __FooterTemplate__ of __RadWizard__.
 
 #### __[XAML] Example 1: Demonstrates how you can use the built-in commands inside RadWizard__
 {{region radwizard-features-commands-1}}
@@ -44,9 +45,10 @@ The following example illustrates how to add a __RadButton__ within the __Footer
 	</telerik:WizardPage.FooterTemplate>
 {{endregion}}
 
-Once the source object is defined up in the tree as a __DataContext__, you can set the source for the __CommandParameter__ Property's Binding to be the entire object.
+Once the source object is defined up in the tree as a __DataContext__, you can set the source for the __CommandParameter__ property's binding to be the entire object.
 
-The other approach is to define the __RadButton__ beyond the boundaries of __RadWizard__ (__Example 2__).
+The other approach is to define the __RadButton__ beyond the boundaries of __RadWizard__.
+
 #### __[XAML] Example 2: Demonstrates how you can use the built-in commands outside RadWizard__
 {{region radwizard-features-commands-2}}
 	<telerik:RadButton Content="Back" 
@@ -56,4 +58,84 @@ The other approach is to define the __RadButton__ beyond the boundaries of __Rad
 	                   CommandTarget="{Binding ElementName=myWizard}" />
 {{endregion}}
 
-In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ Property, specifying the __RadWizard__ towards which the command has to be executed. This specific command will be automatically disabled until a change in any of the items in the __RadWizard__ is made.
+In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ property, specifying the __RadWizard__ towards which the command has to be executed. This specific command will be automatically disabled until a change in any of the items in the __RadWizard__ is made.
+
+## Custom CommandProvider
+
+RadWizard also exposes a __CommandProvider__ property, which allows you to customize the behavior of the commands in an MVVM-friendly way. Each of the commands listed in the beginning of the article can be customized by overriding its corresponding __Execute__/__CanExecute__ method. __Examples 3 and 4__ demonstrate a custom CommandProvider implementation. 
+
+#### __[C#] Example 3: Creating a custom WizardCommandProvider__
+{{region cs-radwizard-features-commands-3}}
+	public class CustomCommandProvider : WizardCommandProvider
+    {
+        public CustomCommandProvider() : base(null)
+        {
+        }
+
+        public CustomCommandProvider(RadWizard wizard) : base(wizard)
+        {
+        }
+
+        protected override void Finish()
+        {
+            if (MessageBox.Show("Are you sure?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                // prevent finish
+            }
+            else
+            {
+                base.Finish();
+            }
+            
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 3: Creating a custom WizardCommandProvider__
+{{region vb-radwizard-features-commands-4}}
+	Public Class CustomCommandProvider
+		Inherits WizardCommandProvider
+
+			Public Sub New()
+				MyBase.New(Nothing)
+			End Sub
+
+			Public Sub New(ByVal wizard As RadWizard)
+				MyBase.New(wizard)
+			End Sub
+
+			Protected Overrides Sub Finish()
+				If MessageBox.Show("Are you sure?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) = MessageBoxResult.No Then
+					' prevent finish
+				Else
+					MyBase.Finish()
+				End If
+
+			End Sub
+	End Class
+{{endregion}}
+
+#### __[XAML] Example 4: RadWizard with custom CommandProvider implementation__
+{{region xaml-radwizard-features-commands-5}}
+	<Grid>
+        <Grid.Resources>
+            <local:CustomCommandProvider x:Key="CommandProvider"/>
+        </Grid.Resources>
+		<telerik:RadWizard CommandProvider="{StaticResource CommandProvider}">
+			<telerik:RadWizard.WizardPages>
+                <telerik:WizardPage ButtonsVisibilityMode="All" NextButtonContent="Continue" CancelButtonContent="Stop">
+                    <TextBox Text="Wizard Page 1" />
+                   
+                </telerik:WizardPage>
+                <telerik:WizardPage ButtonsVisibilityMode="Cancel,Finish" NextButtonContent="Finish" CancelButtonContent="Stop">
+                    <TextBlock Text="Wizard Page 2" />
+                </telerik:WizardPage>
+            </telerik:RadWizard.WizardPages>
+		</telerik:RadWizard>
+    </Grid>
+{{endregion}}
+
+## See also 
+
+* [Navigation]({%slug wizard-navigation%})
+* [Wizard Pages]({%slug wizard-pages%})

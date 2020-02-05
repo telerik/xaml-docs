@@ -31,4 +31,3 @@ The structure of a __RadTreeView__ is pretty simple. It consists of the followin
 ## See Also
  * [Getting Started]({%slug radtreeview-getting-started%})
  * [Populating with Data]({%slug radtreeview-populating-with-data-databinding-overview%})
- * [Templates Structure]({%slug radtreeview-styles-and-templates-tesmplates-structure%})

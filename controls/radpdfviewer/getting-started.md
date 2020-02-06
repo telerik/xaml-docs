@@ -40,7 +40,7 @@ You can also take advantage of some RadPdfViewer-specific controls such as FindD
 
 * **Telerik.Windows.Controls.Input.dll**
 * **Telerik.Windows.Controls.Navigation.dll**        
-* **Telerik.Windows.Controls.FixedDocumentViewersUI**
+* **Telerik.Windows.Controls.FixedDocumentViewersUI.dll**
             
 
 ## Adding RadPdfViewer to a Page

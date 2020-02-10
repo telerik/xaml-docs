@@ -1,7 +1,7 @@
 ---
 title: Auto Expand on Drag Over
 page_title: Auto Expand on Drag Over
-description: Check our &quot;Auto Expand on Drag Over&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Auto Expand on Drag Over&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-how-to-enable-auto-expand-drag-over
 tags: auto,expand,on,drag,over
 published: True

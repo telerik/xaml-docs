@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadDataBar WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
 slug: raddatabar-overview
 tags: overview
 published: True

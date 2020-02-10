@@ -1,7 +1,7 @@
 ---
 title: Create your own navigation
 page_title: Create your own navigation
-description: Check our &quot;Create your own navigation&quot; documentation article for the RadCoverflow WPF control.
+description: Check our &quot;Create your own navigation&quot; documentation article for the RadCoverflow {{ site.framework_name }} control.
 slug: coverflow-navigation
 tags: create,your,own,navigation
 published: True

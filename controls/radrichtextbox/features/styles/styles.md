@@ -1,7 +1,7 @@
 ---
 title: Styles
 page_title: Styles
-description: Check our &quot;Styles&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Styles&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-styles
 tags: styles
 published: True

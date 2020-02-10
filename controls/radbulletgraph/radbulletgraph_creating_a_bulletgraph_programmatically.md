@@ -1,7 +1,7 @@
 ---
 title: Creating a BulletGraph Programmatically
 page_title: Creating a BulletGraph Programmatically
-description: Check our &quot;Creating a BulletGraph Programmatically&quot; documentation article for the RadBulletGraph WPF control.
+description: Check our &quot;Creating a BulletGraph Programmatically&quot; documentation article for the RadBulletGraph {{ site.framework_name }} control.
 slug: radbulletgraph_creating_a_bulletgraph_programmatically
 tags: creating,a,bulletgraph,programmatically
 published: True

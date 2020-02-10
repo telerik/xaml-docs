@@ -1,7 +1,7 @@
 ---
 title: Date Time Axes
 page_title: Date Time Axes
-description: Check our &quot;Date Time Axes&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Date Time Axes&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-axes-datetimeaxes
 tags: date,time,axes
 published: True

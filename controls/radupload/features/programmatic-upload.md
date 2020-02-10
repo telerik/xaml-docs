@@ -1,7 +1,7 @@
 ---
 title: Programmatic Upload
 page_title: Programmatic Upload
-description: Check our &quot;Programmatic Upload&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;Programmatic Upload&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-programmatic-upload
 tags: programmatic,upload
 published: True

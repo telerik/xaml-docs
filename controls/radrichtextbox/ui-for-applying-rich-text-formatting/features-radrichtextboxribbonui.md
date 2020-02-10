@@ -1,7 +1,7 @@
 ---
 title: RadRichTextBoxRibbonUI
 page_title: RadRichTextBoxRibbonUI
-description: Check our &quot;RadRichTextBoxRibbonUI&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;RadRichTextBoxRibbonUI&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-radrichtextboxribbonui
 tags: radrichtextboxribbonui
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Check our &quot;Key Properties&quot; documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;Key Properties&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
 slug: radautocompletebox-features-key-properties
 tags: key,properties
 published: True

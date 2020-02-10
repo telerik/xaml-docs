@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Check our &quot;Keyboard Support&quot; documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Keyboard Support&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-features-keyboard-support
 tags: keyboard,support
 published: True

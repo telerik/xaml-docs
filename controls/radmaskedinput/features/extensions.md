@@ -1,7 +1,7 @@
 ---
 title: MaskedInputExtensions
 page_title: MaskedInputExtensions
-description: Check our &quot;MaskedInputExtensions&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;MaskedInputExtensions&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-features-extensions
 tags: maskedinputextensions
 published: True

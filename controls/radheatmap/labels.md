@@ -1,7 +1,7 @@
 ---
 title: Labels
 page_title: Labels
-description: Check our &quot;Labels&quot; documentation article for the RadHeatMap WPF control.
+description: Check our &quot;Labels&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
 slug: radheatmap-labels
 tags: Labels
 published: True

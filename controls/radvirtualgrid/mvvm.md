@@ -1,7 +1,7 @@
 ---
 title: MVVM Support
 page_title: MVVM Support
-description: Check our &quot;MVVM Support&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;MVVM Support&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-mvvm
 tags: virtualgrid,mvvm
 published: True

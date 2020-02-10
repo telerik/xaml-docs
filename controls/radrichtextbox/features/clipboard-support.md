@@ -1,7 +1,7 @@
 ---
 title: Clipboard Support
 page_title: Clipboard Support
-description: Check our &quot;Clipboard Support&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Clipboard Support&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-clipboard-support
 tags: clipboard,support
 published: True

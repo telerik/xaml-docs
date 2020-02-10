@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-changes
 tags: changes
 published: True

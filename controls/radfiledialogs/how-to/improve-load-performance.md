@@ -1,7 +1,7 @@
 ---
 title: Improve Load Performance
 page_title: Improve Load Performance
-description: Check our &quot;Improve Load Performance&quot; documentation article for the RadFileDialogs WPF control.
+description: Check our &quot;Improve Load Performance&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
 slug: radfiledialogs-how-to-improve-load-performance
 tags: performance, load
 published: True

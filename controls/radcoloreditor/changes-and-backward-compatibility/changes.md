@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadColorEditor WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
 slug: radcoloreditor-changes
 tags: changes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-overview
 tags: overview
 published: True

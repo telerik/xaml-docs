@@ -1,7 +1,7 @@
 ---
 title: Center the Header of the RadWindow
 page_title: Center the Header of the RadWindow
-description: Check our &quot;Center the Header of the RadWindow&quot; documentation article for the RadWindow WPF control.
+description: Check our &quot;Center the Header of the RadWindow&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-center-the-header-of-the-content
 tags: center,the,header,of,the,radwindow
 published: True

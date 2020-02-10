@@ -1,7 +1,7 @@
 ---
 title: Globalization
 page_title: Globalization
-description: Check our &quot;Globalization&quot; documentation article for the RadCalendar WPF control.
+description: Check our &quot;Globalization&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
 slug: radcalendar-globalization
 tags: globalization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: LayoutControlTabGroup
 page_title: LayoutControlTabGroup
-description: Check our &quot;LayoutControlTabGroup&quot; documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;LayoutControlTabGroup&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-features-layoutgroups-layoutcontroltabgroup
 tags: feature, displaymode, display, mode, layoutcontroltabgroup, layoutcontroltabgroupitem, tab 
 published: True

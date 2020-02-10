@@ -1,7 +1,7 @@
 ---
 title: Tick marks
 page_title: Tick marks
-description: Check our &quot;Tick marks&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Tick marks&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radial-scale-tick-marks
 tags: tick,marks
 published: True

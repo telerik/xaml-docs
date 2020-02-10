@@ -1,7 +1,7 @@
 ---
 title: Marker
 page_title: Marker
-description: Check our &quot;Marker&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Marker&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radgauge-features-indicators-marker
 tags: marker
 published: True

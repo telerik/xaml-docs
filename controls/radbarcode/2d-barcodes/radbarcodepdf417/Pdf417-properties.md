@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Check our &quot;Properties&quot; documentation article for the RadBarcode WPF control.
+description: Check our &quot;Properties&quot; documentation article for the RadBarcode {{ site.framework_name }} control.
 slug: radbarcode-pdf417-properties
 tags: properties
 published: True

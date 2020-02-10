@@ -1,7 +1,7 @@
 ---
 title: Special and ReadOnly slots
 page_title: Special and ReadOnly slots
-description: Check our &quot;Special and ReadOnly slots&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Special and ReadOnly slots&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-features-speacialslots
 tags: special,and,readonly,slots
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadialMenu Commands
 page_title: RadialMenu Commands
-description: Check our &quot;RadialMenu Commands&quot; documentation article for the RadRadialMenu WPF control.
+description: Check our &quot;RadialMenu Commands&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
 slug: radradialmenu-commands-radialmenu
 tags: radialmenu,commands
 published: True

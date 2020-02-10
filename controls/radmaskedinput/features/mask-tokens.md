@@ -1,7 +1,7 @@
 ---
 title: Mask Tokens
 page_title: Mask Tokens
-description: Check our &quot;Mask Tokens&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Mask Tokens&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-features-mask-tokens
 tags: mask,tokens
 published: True

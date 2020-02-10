@@ -1,7 +1,7 @@
 ---
 title: Active Document Editor
 page_title: Active Document Editor
-description: Check our &quot;Active Document Editor&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Active Document Editor&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-getting-started-activedocumenteditor
 tags: idocumenteditor,activedocumenteditor,activedocumenteditorchanged
 published: True

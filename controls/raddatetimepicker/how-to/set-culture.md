@@ -1,7 +1,7 @@
 ---
 title: How to set different culture
 page_title: How to set different culture
-description: Check our &quot;How to set different culture&quot; documentation article for the RadDateTimePicker WPF control.
+description: Check our &quot;How to set different culture&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-how-to-set-culture
 tags: how,to,set,different,culture
 published: True

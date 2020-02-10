@@ -1,7 +1,7 @@
 ---
 title: Modal Windows
 page_title: Modal Windows
-description: Check our &quot;Modal Windows&quot; documentation article for the RadWindow WPF control.
+description: Check our &quot;Modal Windows&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-features-modal-windows
 tags: modal,windows
 published: True

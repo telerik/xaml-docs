@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Check our &quot;Properties&quot; documentation article for the RadTimeBar WPF control.
+description: Check our &quot;Properties&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
 slug: radtimebar-properties
 tags: properties
 published: True

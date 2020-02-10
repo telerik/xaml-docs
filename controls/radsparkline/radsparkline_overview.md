@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadSparkLine WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
 slug: radsparkline_overview
 tags: overview
 published: True

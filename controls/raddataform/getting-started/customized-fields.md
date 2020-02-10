@@ -1,7 +1,7 @@
 ---
 title: Customized Fields
 page_title: Customized Fields
-description: Check our &quot;Customized Fields&quot; documentation article for the RadDataForm WPF control.
+description: Check our &quot;Customized Fields&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
 slug: raddataform-customized-fields
 tags: customized,fields
 published: True

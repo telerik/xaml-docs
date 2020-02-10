@@ -1,7 +1,7 @@
 ---
 title: Create Chart With Static Data
 page_title: Create Chart With Static Data
-description: Check our &quot;Create Chart With Static Data&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Create Chart With Static Data&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-populating-with-data-static-data
 tags: create,chart,with,static,data
 published: True

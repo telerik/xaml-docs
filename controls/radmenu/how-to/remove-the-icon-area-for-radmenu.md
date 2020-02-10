@@ -1,7 +1,7 @@
 ---
 title: How to remove and modify the Icon area for RadMenu
 page_title: How to remove and modify the Icon area for RadMenu
-description: Check our &quot;How to remove and modify the Icon area for RadMenu&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;How to remove and modify the Icon area for RadMenu&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-how-to-remove-the-icon-area-for-radmenu
 tags: how,to,remove,and,modify,the,icon,area,for,radmenu
 published: True

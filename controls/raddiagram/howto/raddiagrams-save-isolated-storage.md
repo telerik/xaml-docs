@@ -1,7 +1,7 @@
 ---
 title: Save the Diagram in Isolated Storage
 page_title: Save the Diagram in Isolated Storage
-description: Check our &quot;Save the Diagram in Isolated Storage&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Save the Diagram in Isolated Storage&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-howto-save-isolated-storage
 tags: save,the,diagram,in,isolated,storage
 published: True

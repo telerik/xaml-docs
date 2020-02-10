@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-events-overview
 tags: overview
 published: True

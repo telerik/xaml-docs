@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Check our &quot;Key Features&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Key Features&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-key-features
 tags: key,features
 published: True

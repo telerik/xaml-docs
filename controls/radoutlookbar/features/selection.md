@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Check our &quot;Selection&quot; documentation article for the RadOutlookBar WPF control.
+description: Check our &quot;Selection&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
 slug: radoutlookbar-selection
 tags: selection
 published: True

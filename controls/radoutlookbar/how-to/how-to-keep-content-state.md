@@ -1,7 +1,7 @@
 ---
 title: How to Keep the Content State
 page_title: How to Keep the Content State
-description: Check our &quot;How to Keep the Content State&quot; documentation article for the RadOutlookBar WPF control.
+description: Check our &quot;How to Keep the Content State&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
 slug: radoutlookbar-how-to-keep-the-content-state
 tags: how,to,keep,content,state,iscontentpreserved
 published: True

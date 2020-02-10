@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
 page_title: Unbound Mode
-description: Check our &quot;Unbound Mode&quot; documentation article for the RadDataPager WPF control.
+description: Check our &quot;Unbound Mode&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-features-unbound-mode
 tags: unbound,mode
 published: True

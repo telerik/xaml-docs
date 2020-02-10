@@ -1,7 +1,7 @@
 ---
 title: Quadrant-style gauge
 page_title: Quadrant-style gauge
-description: Check our &quot;Quadrant-style gauge&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Quadrant-style gauge&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radial-scale-quadrant-style-gauge
 tags: quadrant-style,gauge
 published: True

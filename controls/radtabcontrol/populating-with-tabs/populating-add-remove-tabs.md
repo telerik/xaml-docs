@@ -1,7 +1,7 @@
 ---
 title: Add and Remove Tabs
 page_title: Add and Remove Tabs
-description: Check our &quot;Add and Remove Tabs&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;Add and Remove Tabs&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-populating-add-remove-tabs
 tags: add,and,remove,tabs
 published: True

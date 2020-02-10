@@ -1,7 +1,7 @@
 ---
 title: Layout Panel
 page_title: Layout Panel
-description: Check our &quot;Layout Panel&quot; documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;Layout Panel&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-getting-started-layoutpanel
 tags: getting, started, layoutpanel, panel, layout
 published: True

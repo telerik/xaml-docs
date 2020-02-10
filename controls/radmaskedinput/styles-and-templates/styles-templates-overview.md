@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-styles-templates-overview
 tags: overview
 published: True

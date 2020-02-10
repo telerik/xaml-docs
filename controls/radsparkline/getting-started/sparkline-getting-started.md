@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadSparkLine WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
 slug: radsparkline-getting-started
 tags: databinding,mvvm,getting,started
 published: True

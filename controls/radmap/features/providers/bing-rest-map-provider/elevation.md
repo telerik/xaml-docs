@@ -1,7 +1,7 @@
 ---
 title: Elevation
 page_title: Elevation
-description: Check our &quot;Elevation&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Elevation&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-providers-bing-rest-map-provider-elevation
 tags: bing,map,provider,rest,elevation
 published: True

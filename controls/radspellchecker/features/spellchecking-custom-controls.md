@@ -1,7 +1,7 @@
 ---
 title: SpellChecking Custom Controls
 page_title: SpellChecking Custom Controls
-description: Check our &quot;SpellChecking Custom Controls&quot; documentation article for the RadSpellChecker WPF control.
+description: Check our &quot;SpellChecking Custom Controls&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
 slug: radspellchecker-spellchecking-custom-controls
 tags: spellchecking,custom,controls
 published: True

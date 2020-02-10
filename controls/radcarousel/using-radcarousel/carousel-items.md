@@ -1,7 +1,7 @@
 ---
 title: Carousel Items
 page_title: Carousel Items
-description: Check our &quot;Carousel Items&quot; documentation article for the RadCarousel WPF control.
+description: Check our &quot;Carousel Items&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
 slug: carousel-items
 tags: carousel,items
 published: True

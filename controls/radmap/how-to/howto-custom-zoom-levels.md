@@ -1,7 +1,7 @@
 ---
 title: Implement custom zoom levels for MapZoomBar UI
 page_title: Implement custom zoom levels for MapZoomBar UI
-description: Check our &quot;Implement custom zoom levels for MapZoomBar UI&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Implement custom zoom levels for MapZoomBar UI&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-howto-custom-zoom-levels
 tags: implement,custom,zoom,levels,for,mapzoombar,ui
 published: True

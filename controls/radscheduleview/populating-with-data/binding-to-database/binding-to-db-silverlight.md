@@ -1,7 +1,7 @@
 ---
 title: Silverlight Part
 page_title: Silverlight Part
-description: Check our &quot;Silverlight Part&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Silverlight Part&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-silverlight
 tags: silverlight,part
 published: True

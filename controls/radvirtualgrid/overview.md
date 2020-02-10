@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-overview
 tags: overview
 published: True

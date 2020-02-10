@@ -1,7 +1,7 @@
 ---
 title: Wraparound with Virtualization in VisualizationLayer
 page_title: Wraparound with Virtualization in VisualizationLayer
-description: Check our &quot;Wraparound with Virtualization in VisualizationLayer&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Wraparound with Virtualization in VisualizationLayer&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-howto-wraparound-virtualization-visualizationlayer
 tags: wraparound,virtualization,visualizationlayer,map
 published: True

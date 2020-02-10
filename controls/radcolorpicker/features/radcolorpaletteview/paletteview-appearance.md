@@ -1,7 +1,7 @@
 ---
 title: Appearance
 page_title: Appearance
-description: Check our &quot;Appearance&quot; documentation article for the RadColorPicker WPF control.
+description: Check our &quot;Appearance&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
 slug: paletteview-appearance
 tags: appearance
 published: True

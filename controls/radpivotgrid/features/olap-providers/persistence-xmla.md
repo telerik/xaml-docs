@@ -1,7 +1,7 @@
 ---
 title: Persist XmlaDataProvider
 page_title: Persist XmlaDataProvider
-description: Check our &quot;Persist XmlaDataProvider&quot; documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Persist XmlaDataProvider&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-persistence-xmla
 tags: persist,xmladataprovider
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ExponentialMovingAverageIndicator
 page_title: ExponentialMovingAverageIndicator
-description: Check our &quot;ExponentialMovingAverageIndicator&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;ExponentialMovingAverageIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-modifiedexponentialmovingaverageindicator
 tags: financial, indicators, modifiedexponentialmovingaverageindicator
 publish: True

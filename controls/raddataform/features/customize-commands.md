@@ -1,7 +1,7 @@
 ---
 title: Customizing Commands
 page_title: Customizing Commands
-description: Check our &quot;Customizing Commands&quot; documentation article for the RadDataForm WPF control.
+description: Check our &quot;Customizing Commands&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
 slug: raddataform-customize-commands
 tags: customizing,commands
 published: True

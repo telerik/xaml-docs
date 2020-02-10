@@ -1,7 +1,7 @@
 ---
 title: Styling the Chart Series
 page_title: Styling the Chart Series
-description: Check our &quot;Styling the Chart Series&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Styling the Chart Series&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-appearance-styling-chart-series
 tags: styling,the,chart,series
 published: True

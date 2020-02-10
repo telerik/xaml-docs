@@ -1,7 +1,7 @@
 ---
 title: SelectionBox Styles And Templates
 page_title: SelectionBox Styles And Templates
-description: Check our &quot;SelectionBox Styles And Templates&quot; documentation article for the RadMultiColumnComboBox WPF control.
+description: Check our &quot;SelectionBox Styles And Templates&quot; documentation article for the RadMultiColumnComboBox {{ site.framework_name }} control.
 slug: multicolumncombobox-gridview-selectionbox-styles-and-templates
 tags: selectionbox, styles, templates
 published: True

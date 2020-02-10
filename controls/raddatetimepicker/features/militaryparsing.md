@@ -1,7 +1,7 @@
 ---
 title: Military DateTime Parsing
 page_title: Military DateTime Parsing
-description: Check our &quot;Military DateTime Parsing&quot; documentation article for the RadDateTimePicker WPF control.
+description: Check our &quot;Military DateTime Parsing&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-features-militaryparsing
 tags: military,datetime,parsing
 published: True

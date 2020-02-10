@@ -1,7 +1,7 @@
 ---
 title: Selection Behavior
 page_title: Selection Behavior
-description: Check our &quot;Selection Behavior&quot; documentation article for the RadGanttView WPF control.
+description: Check our &quot;Selection Behavior&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-selectionbehavior
 tags: selectionbehavior
 published: True

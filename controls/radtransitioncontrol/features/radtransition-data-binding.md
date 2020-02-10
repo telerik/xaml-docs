@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Check our &quot;Data Binding&quot; documentation article for the RadTransitionControl WPF control.
+description: Check our &quot;Data Binding&quot; documentation article for the RadTransitionControl {{ site.framework_name }} control.
 slug: radtransition-features-data-binding
 tags: data,binding
 published: True

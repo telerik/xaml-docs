@@ -1,7 +1,7 @@
 ---
 title: File Size and Count Limitation
 page_title: File Size and Count Limitation
-description: Check our &quot;File Size and Count Limitation&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;File Size and Count Limitation&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-file-size-and-count-limitation
 tags: file,size,and,count,limitation
 published: True

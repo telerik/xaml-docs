@@ -1,7 +1,7 @@
 ---
 title: FlyoutBehavior
 page_title: FlyoutBehavior
-description: Check our &quot;FlyoutBehavior&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;FlyoutBehavior&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-panes-flyoutbehavior
 tags: flyoutbehavior
 published: True

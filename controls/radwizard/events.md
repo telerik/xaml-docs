@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Check our &quot;Events&quot; documentation article for the RadWizard WPF control.
+description: Check our &quot;Events&quot; documentation article for the RadWizard {{ site.framework_name }} control.
 slug: wizard-events
 tags: events
 published: True

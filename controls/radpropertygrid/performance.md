@@ -1,7 +1,7 @@
 ---
 title: Performance
 page_title: Performance
-description: Check our &quot;Performance&quot; documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;Performance&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-performance
 tags: performance
 published: True

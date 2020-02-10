@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Check our &quot;Properties&quot; documentation article for the RadTimeline WPF control.
+description: Check our &quot;Properties&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-properties
 tags: properties
 published: True

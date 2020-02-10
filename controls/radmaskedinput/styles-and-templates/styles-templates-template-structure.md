@@ -1,7 +1,7 @@
 ---
 title: Template Structure
 page_title: Template Structure
-description: Check our &quot;Template Structure&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Template Structure&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-styles-templates-template-structure
 tags: template,structure
 published: True

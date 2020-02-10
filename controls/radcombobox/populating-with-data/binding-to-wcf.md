@@ -1,7 +1,7 @@
 ---
 title: Binding to WCF Service
 page_title: Binding to WCF Service
-description: Check our &quot;Binding to WCF Service&quot; documentation article for the RadComboBox WPF control.
+description: Check our &quot;Binding to WCF Service&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-populating-with-data-binding-to-wcf
 tags: binding,to,wcf,service
 published: True

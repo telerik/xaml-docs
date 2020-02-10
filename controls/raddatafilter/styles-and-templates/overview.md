@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadDataFilter WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: raddatafilter-styles-and-templates-overview
 tags: overview
 published: True

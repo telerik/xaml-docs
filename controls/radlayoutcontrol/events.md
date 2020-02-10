@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Check our &quot;Events&quot; documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;Events&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-events
 tags: events, selectionchanged
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Tool Window
 page_title: Tool Window
-description: Check our &quot;Tool Window&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Tool Window&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-tool-window
 tags: tool,window
 published: True

@@ -1,7 +1,7 @@
 ---
 title: List Styles
 page_title: List Styles
-description: Check our &quot;List Styles&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;List Styles&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-list-styles
 tags: list,styles
 published: True

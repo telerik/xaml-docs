@@ -1,7 +1,7 @@
 ---
 title: Insert and Remove Data
 page_title: Insert and Remove Data
-description: Check our &quot;Insert and Remove Data&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Insert and Remove Data&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-insert-data-and-remove-data
 tags: insert,remove,data
 published: True

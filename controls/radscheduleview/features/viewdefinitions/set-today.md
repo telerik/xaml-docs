@@ -1,7 +1,7 @@
 ---
 title: Set Today
 page_title: Set Today
-description: Check our &quot;Set Today&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Set Today&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-viewdefinitions-set-today
 tags: settoday, todaybuttonvisibility
 published: True

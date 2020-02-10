@@ -1,7 +1,7 @@
 ---
 title: Display external page in RadHtmlPlaceholder
 page_title: Display external page in RadHtmlPlaceholder
-description: Check our &quot;Display external page in RadHtmlPlaceholder&quot; documentation article for the RadHtmlPlaceholder WPF control.
+description: Check our &quot;Display external page in RadHtmlPlaceholder&quot; documentation article for the RadHtmlPlaceholder {{ site.framework_name }} control.
 slug: radhtmlplaceholder-howto-displayexternalpage
 tags: display,external,page,in,radhtmlplaceholder
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Set Cursor to Arrow while Dragging
 page_title: Set Cursor to Arrow while Dragging
-description: Check our &quot;Set Cursor to Arrow while Dragging&quot; documentation article for the DragDropManager WPF control.
+description: Check our &quot;Set Cursor to Arrow while Dragging&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-howto-set-cursor-to-arrow-while-dragging
 tags: set,cursor,to,arrow,while,dragging
 published: True

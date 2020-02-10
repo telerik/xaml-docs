@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Check our &quot;Keyboard Support&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Keyboard Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-shortcuts
 tags: keyboard,support
 published: True

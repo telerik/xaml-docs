@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadExpander WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadExpander {{ site.framework_name }} control.
 slug: radexpander-changes
 tags: changes
 published: True

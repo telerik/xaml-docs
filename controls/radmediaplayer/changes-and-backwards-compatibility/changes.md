@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadMediaPlayer WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-changes
 tags: changes
 publish: True

@@ -1,7 +1,7 @@
 ---
 title: Not Supported Properties
 page_title: Not Supported Properties
-description: Check our &quot;Not Supported Properties&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Not Supported Properties&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: not-supported-properties
 tags: not,supported,properties
 published: True

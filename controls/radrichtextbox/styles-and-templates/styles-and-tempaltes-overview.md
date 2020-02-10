@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-styles-and-tempaltes-overview
 tags: overview
 published: True

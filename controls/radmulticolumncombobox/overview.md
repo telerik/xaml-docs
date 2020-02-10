@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadMultiColumnComboBox WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadMultiColumnComboBox {{ site.framework_name }} control.
 slug: multicolumncombobox-overview
 tags: overview
 published: True

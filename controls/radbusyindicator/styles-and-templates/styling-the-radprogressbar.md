@@ -1,7 +1,7 @@
 ---
 title: Styling the RadProgressBar
 page_title: Styling the RadProgressBar
-description: Check our &quot;Styling the RadProgressBar&quot; documentation article for the RadBusyIndicator WPF control.
+description: Check our &quot;Styling the RadProgressBar&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
 slug: radbusyindicator-styles-and-templates-styling-the-radprogressbar
 tags: styling,the,radprogressbar
 published: True

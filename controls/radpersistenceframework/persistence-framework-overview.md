@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadPersistenceFramework WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadPersistenceFramework {{ site.framework_name }} control.
 slug: persistence-framework-overview
 tags: overview
 published: True

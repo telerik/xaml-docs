@@ -1,7 +1,7 @@
 ---
 title: How to Add New Tab Item
 page_title: How to Add New Tab Item
-description: Check our &quot;How to Add New Tab Item&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;How to Add New Tab Item&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-how-to-add-new-tab-item
 tags: how,to,add,new,tab,item
 published: False

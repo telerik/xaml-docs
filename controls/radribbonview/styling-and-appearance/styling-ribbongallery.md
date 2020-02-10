@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRibbonGallery
 page_title: Styling the RadRibbonGallery
-description: Check our &quot;Styling the RadRibbonGallery&quot; documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the RadRibbonGallery&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-styling-ribbongallery
 tags: styling,the,radribbongallery
 published: True

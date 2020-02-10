@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadButtons WPF control.
+description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-sdk-examples
 tags: sdk,examples
 published: True

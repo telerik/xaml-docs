@@ -1,7 +1,7 @@
 ---
 title: Step size
 page_title: Step size
-description: Check our &quot;Step size&quot; documentation article for the RadSlider WPF control.
+description: Check our &quot;Step size&quot; documentation article for the RadSlider {{ site.framework_name }} control.
 slug: radslider-step-size
 tags: step,size
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadExpressionEditor WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
 slug: radexpressioneditor-changes
 tags: changes
 published: True

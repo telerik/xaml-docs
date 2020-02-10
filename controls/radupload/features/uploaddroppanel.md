@@ -1,7 +1,7 @@
 ---
 title: RadUploadDropPanel
 page_title: RadUploadDropPanel
-description: Check our &quot;RadUploadDropPanel&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;RadUploadDropPanel&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-uploaddroppanel
 tags: uploaddroppanel, upload, drop, panel, drag
 published: True

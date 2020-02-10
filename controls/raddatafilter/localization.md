@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadDataFilter WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: raddatafilter-localization
 tags: localization
 published: True

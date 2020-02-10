@@ -1,7 +1,7 @@
 ---
 title: Custom Gridline
 page_title: Custom Gridline
-description: Check our &quot;Custom Gridline&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Custom Gridline&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-annotations-custom-gridline
 tags: custom,gridline
 published: True

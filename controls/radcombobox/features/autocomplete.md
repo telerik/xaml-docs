@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
 page_title: AutoComplete
-description: Check our &quot;AutoComplete&quot; documentation article for the RadComboBox WPF control.
+description: Check our &quot;AutoComplete&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-features-autocomplete
 tags: autocomplete
 published: True

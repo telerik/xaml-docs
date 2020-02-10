@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export
-description: Check our &quot;Export&quot; documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Export&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelistview-features-export
 tags: export
 published: True

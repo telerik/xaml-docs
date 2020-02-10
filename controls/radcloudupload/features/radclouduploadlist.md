@@ -1,7 +1,7 @@
 ---
 title: RadCloudUploadList
 page_title: RadCloudUploadList
-description: Check our &quot;RadCloudUploadList&quot; documentation article for the RadCloudUpload WPF control.
+description: Check our &quot;RadCloudUploadList&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
 slug: radcloudupload-radclouduploadlist
 tags: radclouduploadlist
 published: True

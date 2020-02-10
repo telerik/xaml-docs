@@ -1,7 +1,7 @@
 ---
 title: Text Tool
 page_title: Text Tool
-description: Check our &quot;Text Tool&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Text Tool&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-tools-text-tool
 tags: text,tool
 published: True

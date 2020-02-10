@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop Support
 page_title: Drag and Drop Support
-description: Check our &quot;Drag and Drop Support&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Drag and Drop Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-drag-drop
 tags: drag,and,drop,support
 published: True

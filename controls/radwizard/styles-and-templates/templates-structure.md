@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Check our &quot;Templates Structure&quot; documentation article for the RadWizard WPF control.
+description: Check our &quot;Templates Structure&quot; documentation article for the RadWizard {{ site.framework_name }} control.
 slug: wizard-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

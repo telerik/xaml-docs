@@ -1,7 +1,7 @@
 ---
 title: Delete Appointment
 page_title: Delete Appointment
-description: Check our &quot;Delete Appointment&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Delete Appointment&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-end-user-capabilities-delete-appointment
 tags: delete,appointment
 published: True

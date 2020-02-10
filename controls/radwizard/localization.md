@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadWizard WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadWizard {{ site.framework_name }} control.
 slug: wizard-localization
 tags: localization
 published: True

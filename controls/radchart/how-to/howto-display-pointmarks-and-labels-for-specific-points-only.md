@@ -1,7 +1,7 @@
 ---
 title: Display PointMarks and Labels for Specific points only 
 page_title: Display PointMarks and Labels for Specific points only 
-description: Check our &quot;Display PointMarks and Labels for Specific points only&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Display PointMarks and Labels for Specific points only&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-display-pointmarks-and-labels-for-specific-points-only
 tags: display,pointmarks,and,labels,for,specific,points,only,
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Check our &quot;Backward Compatibility&quot; documentation article for the RadSpreadsheet WPF control.
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-backward-compatibility
 tags: backward,compatibility
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadColorPicker WPF control.
+description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
 slug: radcolorpicker-sdk-examples
 tags: sdk,examples
 published: True

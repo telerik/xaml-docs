@@ -1,7 +1,7 @@
 ---
 title: Styling the RadButton
 page_title: Styling the RadButton
-description: Check our &quot;Styling the RadButton&quot; documentation article for the RadButtons WPF control.
+description: Check our &quot;Styling the RadButton&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-styles-and-templates-styling-the-radbutton
 tags: styling,the,radbutton
 published: True

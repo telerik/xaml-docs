@@ -1,7 +1,7 @@
 ---
 title: RadialMenuItems
 page_title: RadialMenuItems
-description: Check our &quot;RadialMenuItems&quot; documentation article for the RadRadialMenu WPF control.
+description: Check our &quot;RadialMenuItems&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
 slug: radradialmenu-features-radialmenuitems
 tags: radialmenuitems
 published: True

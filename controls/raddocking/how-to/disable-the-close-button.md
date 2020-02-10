@@ -1,7 +1,7 @@
 ---
 title: How to Disable the Close Button
 page_title: How to Disable the Close Button
-description: Check our &quot;How to Disable the Close Button&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;How to Disable the Close Button&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-how-to-disable-the-close-button
 tags: how,to,disable,the,close,button
 published: True

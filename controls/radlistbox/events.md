@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Check our &quot;Events&quot; documentation article for the RadListBox WPF control.
+description: Check our &quot;Events&quot; documentation article for the RadListBox {{ site.framework_name }} control.
 slug: radlistbox-events
 tags: events
 published: True

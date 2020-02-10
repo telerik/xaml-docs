@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadDesktopAlert WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
 slug: raddesktopalert-getting-started
 tags: getting,started
 published: True

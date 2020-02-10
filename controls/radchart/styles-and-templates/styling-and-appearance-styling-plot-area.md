@@ -1,7 +1,7 @@
 ---
 title: Styling the Plot Area
 page_title: Styling the Plot Area
-description: Check our &quot;Styling the Plot Area&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Styling the Plot Area&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-appearance-styling-plot-area
 tags: styling,the,plot,area
 published: True

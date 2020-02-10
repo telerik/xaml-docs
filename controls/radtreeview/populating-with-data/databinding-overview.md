@@ -1,7 +1,7 @@
 ---
 title: DataBinding - Overview
 page_title: DataBinding - Overview
-description: Check our &quot;DataBinding - Overview&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;DataBinding - Overview&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-databinding-overview
 tags: databinding,-,overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Unified Color
 page_title: Unified Color
-description: Check our &quot;Unified Color&quot; documentation article for the RadColorEditor WPF control.
+description: Check our &quot;Unified Color&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
 slug: radcoloreditor-features-unified-color
 tags: unified,color
 published: True

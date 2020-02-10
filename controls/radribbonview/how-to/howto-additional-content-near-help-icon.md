@@ -1,7 +1,7 @@
 ---
 title: Add Additional Content near the Help button
 page_title: Add Additional Content near the Help button
-description: Check our &quot;Add Additional Content near the Help button&quot; documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Add Additional Content near the Help button&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-howto-additional-content-near-help-icon
 tags: add,additional,content,near,the,help,button
 published: True

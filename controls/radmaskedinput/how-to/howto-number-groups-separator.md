@@ -1,7 +1,7 @@
 ---
 title: How to Remove the Thousands Separator
 page_title: How to Remove the Thousands Separator
-description: Check our &quot;How to Remove the Thousands Separator&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;How to Remove the Thousands Separator&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-howto-number-groups-separator
 tags: how,to,remove,the,thousands,separator
 published: True

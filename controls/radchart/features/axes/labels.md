@@ -1,7 +1,7 @@
 ---
 title: Labels
 page_title: Labels
-description: Check our &quot;Labels&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Labels&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-axes-labels
 tags: labels
 published: True

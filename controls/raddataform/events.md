@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Check our &quot;Events&quot; documentation article for the RadDataForm WPF control.
+description: Check our &quot;Events&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
 slug: raddataform-events
 tags: events
 published: True

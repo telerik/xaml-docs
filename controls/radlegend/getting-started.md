@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadLegend WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadLegend {{ site.framework_name }} control.
 slug: radlegend-getting-started
 tags: getting,started,legend
 published: True

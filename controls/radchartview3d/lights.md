@@ -1,7 +1,7 @@
 ---
 title: Lights
 page_title: Lights
-description: Check our &quot;Lights&quot; documentation article for the RadChartView3D WPF control.
+description: Check our &quot;Lights&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
 slug: radchartview3d-lights
 tags: lights, chartview, 3d, scene, illuminate
 published: True

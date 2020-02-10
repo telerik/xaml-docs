@@ -1,7 +1,7 @@
 ---
 title: Data Binding Support Overview
 page_title: Data Binding Support Overview
-description: Check our &quot;Data Binding Support Overview&quot; documentation article for the RadContextMenu WPF control.
+description: Check our &quot;Data Binding Support Overview&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 slug: radcontextmenu-populating-with-data-data-binding-support-overview
 tags: data,binding,support,overview
 published: True

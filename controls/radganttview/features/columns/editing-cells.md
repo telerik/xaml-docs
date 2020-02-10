@@ -1,7 +1,7 @@
 ---
 title: Customizing the CellEditTemplate
 page_title: Customizing the CellEditTemplate
-description: Check our &quot;Customizing the CellEditTemplate&quot; documentation article for the RadGanttView WPF control.
+description: Check our &quot;Customizing the CellEditTemplate&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-features-columns-editing-cells
 tags: customizing,the,celledittemplate
 published: True

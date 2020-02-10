@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadBreadcrumb WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
 slug: radbreadcrumb-overvew
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadGanttView WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-changes
 tags: changes
 published: True

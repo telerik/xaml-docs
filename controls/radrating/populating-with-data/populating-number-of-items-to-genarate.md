@@ -1,7 +1,7 @@
 ---
 title: Using the NumberOfItemsToGenarate property
 page_title: Using the NumberOfItemsToGenarate property
-description: Check our &quot;Using the NumberOfItemsToGenarate property&quot; documentation article for the RadRating WPF control.
+description: Check our &quot;Using the NumberOfItemsToGenarate property&quot; documentation article for the RadRating {{ site.framework_name }} control.
 slug: populating-number-of-items-to-genarate
 tags: using,the,numberofitemstogenarate,property
 published: True

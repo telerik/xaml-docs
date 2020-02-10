@@ -1,7 +1,7 @@
 ---
 title: Binding to TaskBoardCardModel
 page_title: Binding to TaskBoardCardModel
-description: Check our &quot;Binding to TaskBoardCardModel&quot; documentation article for the RadTaskBoard WPF control.
+description: Check our &quot;Binding to TaskBoardCardModel&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
 slug: radtaskboard-populating-with-data-binding-taskboardcardmodel
 tags: binding,to,taskboardcardmodel
 published: True

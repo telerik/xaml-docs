@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-getting-started
 tags: getting,started
 published: True

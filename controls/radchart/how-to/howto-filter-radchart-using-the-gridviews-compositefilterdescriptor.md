@@ -1,7 +1,7 @@
 ---
 title: Filter RadChart Using The GridView's CompositeFilterDescriptor
 page_title: Filter RadChart Using The GridView's CompositeFilterDescriptor
-description: Check our &quot;Filter RadChart Using The GridView's CompositeFilterDescriptor&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Filter RadChart Using The GridView's CompositeFilterDescriptor&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor
 tags: filter,radchart,using,the,gridview's,compositefilterdescriptor
 published: True

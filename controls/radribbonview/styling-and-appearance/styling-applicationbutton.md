@@ -1,7 +1,7 @@
 ---
 title: Styling the ApplicationButton
 page_title: Styling the ApplicationButton
-description: Check our &quot;Styling the ApplicationButton&quot; documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Styling the ApplicationButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-styling-applicationbutton
 tags: styling,the,applicationbutton
 published: True

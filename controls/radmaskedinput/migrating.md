@@ -1,7 +1,7 @@
 ---
 title: Migration from RadMaskedTextBox
 page_title: Migration from RadMaskedTextBox
-description: Check our &quot;Migration from RadMaskedTextBox&quot; documentation article for the RadMaskedInput WPF control.
+description: Check our &quot;Migration from RadMaskedTextBox&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-migrating
 tags: migration,from,radmaskedtextbox
 published: True

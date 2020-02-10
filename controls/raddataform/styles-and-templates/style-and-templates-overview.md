@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadDataForm WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
 slug: raddataform-style-and-templates-overview
 tags: overview
 published: True

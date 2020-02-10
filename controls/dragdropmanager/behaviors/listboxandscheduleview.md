@@ -1,7 +1,7 @@
 ---
 title: Drag-drop between ListBox and ScheduleView
 page_title: Drag-drop between ListBox and ScheduleView
-description: Check our &quot;Drag-drop between ListBox and ScheduleView&quot; documentation article for the DragDropManager WPF control.
+description: Check our &quot;Drag-drop between ListBox and ScheduleView&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-behaviors-listboxandscheduleview
 tags: drag-drop,between,listbox,and,scheduleview
 published: True

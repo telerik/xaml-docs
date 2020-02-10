@@ -1,7 +1,7 @@
 ---
 title: Custom Places
 page_title: Custom Places
-description: Check our &quot;Custom Places&quot; documentation article for the RadFileDialogs WPF control.
+description: Check our &quot;Custom Places&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
 slug: radfiledialogs-features-customplaces
 tags: custom,places,favorites
 published: True

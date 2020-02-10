@@ -1,7 +1,7 @@
 ---
 title: Hierarchical Data Templates
 page_title: Hierarchical Data Templates
-description: Check our &quot;Hierarchical Data Templates&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Hierarchical Data Templates&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-hierarchical-data-templates
 tags: hierarchical,data,templates
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Upload Handler
 page_title: Upload Handler
-description: Check our &quot;Upload Handler&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;Upload Handler&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-upload-handler
 tags: upload,handler
 published: True

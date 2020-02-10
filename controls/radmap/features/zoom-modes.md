@@ -1,7 +1,7 @@
 ---
 title: Zoom Modes
 page_title: Zoom Modes
-description: Check our &quot;Zoom Modes&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Zoom Modes&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-zoom-modes
 tags: zoom,modes
 published: True

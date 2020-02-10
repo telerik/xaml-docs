@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Check our &quot;Backward Compatibility&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-backward-compatibility
 tags: backward,compatibility
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Settings
 page_title: Settings
-description: Check our &quot;Settings&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Settings&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-import-export-pdf-settings
 tags: settings
 published: True

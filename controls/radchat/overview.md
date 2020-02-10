@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadChat WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-overview
 tags: overview
 published: True

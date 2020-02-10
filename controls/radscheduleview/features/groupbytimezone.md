@@ -1,7 +1,7 @@
 ---
 title: Grouping By TimeZone
 page_title: Grouping By TimeZone
-description: Check our &quot;Grouping By TimeZone&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Grouping By TimeZone&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-features-groupbytimezone
 tags: grouping,by,timezone
 published: True

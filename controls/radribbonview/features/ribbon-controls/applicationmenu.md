@@ -1,7 +1,7 @@
 ---
 title: Application Menu
 page_title: Application Menu
-description: Check our &quot;Application Menu&quot; documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Application Menu&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-applicationmenu
 tags: application,menu
 published: True

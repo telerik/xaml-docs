@@ -1,7 +1,7 @@
 ---
 title: Conversion API
 page_title: Conversion API
-description: Check our &quot;Conversion API&quot; documentation article for the RadTimeline WPF control.
+description: Check our &quot;Conversion API&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-features-conversion-api
 tags: conversion,api,convertpointtodatetime
 published: True

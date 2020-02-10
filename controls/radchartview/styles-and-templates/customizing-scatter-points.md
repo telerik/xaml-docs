@@ -1,7 +1,7 @@
 ---
 title: Customizing Scatter Points
 page_title: Customizing Scatter Points
-description: Check our &quot;Customizing Scatter Points&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Customizing Scatter Points&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-styles-and-templates-customizing-scatter-points
 tags: customizing,scatter,points
 published: True

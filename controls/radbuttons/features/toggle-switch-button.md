@@ -1,7 +1,7 @@
 ---
 title: Toggle Switch Button
 page_title: Toggle Switch Button
-description: Check our &quot;Toggle Switch Button&quot; documentation article for the RadButtons WPF control.
+description: Check our &quot;Toggle Switch Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-features-toggle-switch-button
 tags: toggle,button,switch
 published: True

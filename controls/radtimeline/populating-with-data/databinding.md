@@ -1,7 +1,7 @@
 ---
 title: DataBinding
 page_title: DataBinding
-description: Check our &quot;DataBinding&quot; documentation article for the RadTimeline WPF control.
+description: Check our &quot;DataBinding&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-databinding
 tags: databinding
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Hide The Title
 page_title: Hide The Title
-description: Check our &quot;Hide The Title&quot; documentation article for the RadRibbonView WPF control.
+description: Check our &quot;Hide The Title&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-howto-hide-title
 tags: hide,the,title
 published: True

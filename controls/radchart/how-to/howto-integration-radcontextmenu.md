@@ -1,7 +1,7 @@
 ---
 title: Integration with RadContextMenu
 page_title: Integration with RadContextMenu
-description: Check our &quot;Integration with RadContextMenu&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Integration with RadContextMenu&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-integration-radcontextmenu
 tags: integration,with,radcontextmenu
 published: True

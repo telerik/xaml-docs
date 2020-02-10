@@ -1,7 +1,7 @@
 ---
 title: Delayed Display
 page_title: Delayed Display
-description: Check our &quot;Delayed Display&quot; documentation article for the RadBusyIndicator WPF control.
+description: Check our &quot;Delayed Display&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
 slug: radbusyindicator-features-delayed-display
 tags: delayed,display
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Panning
 page_title: Panning
-description: Check our &quot;Panning&quot; documentation article for the RadImageEditor WPF control.
+description: Check our &quot;Panning&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
 slug: radimageeditor-tools-panning
 tags: panning,tool,pan
 published: True

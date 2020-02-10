@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadChat WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-localization
 tags: localization
 published: True

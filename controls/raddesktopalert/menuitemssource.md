@@ -1,7 +1,7 @@
 ---
 title: MenuItemsSource 
 page_title: MenuItemsSource 
-description: Check our &quot;MenuItemsSource&quot; documentation article for the RadDesktopAlert WPF control.
+description: Check our &quot;MenuItemsSource&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
 slug: raddesktopalert-menuitemssource 
 tags: menu,items,source,menuitemssource 
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Headers
 page_title: Headers
-description: Check our &quot;Headers&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Headers&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-headers
 tags: headers
 published: True

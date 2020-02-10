@@ -1,7 +1,7 @@
 ---
 title: Interactivity
 page_title: Interactivity
-description: Check our &quot;Interactivity&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Interactivity&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-interactivity
 tags: interactivity
 published: True

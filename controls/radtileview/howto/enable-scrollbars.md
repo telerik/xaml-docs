@@ -1,7 +1,7 @@
 ---
 title: Enable the Horizontal and Vertical ScrollBars
 page_title: Enable the Horizontal and Vertical ScrollBars
-description: Check our &quot;Enable the Horizontal and Vertical ScrollBars&quot; documentation article for the RadTileView WPF control.
+description: Check our &quot;Enable the Horizontal and Vertical ScrollBars&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-howto-enable-scrollbars
 tags: enable,the,horizontal,and,vertical,scrollbars
 published: True

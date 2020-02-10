@@ -1,7 +1,7 @@
 ---
 title: Video size
 page_title: Video size
-description: Check our &quot;Video size&quot; documentation article for the RadMediaPlayer WPF control.
+description: Check our &quot;Video size&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-video-size
 tags: video,size
 publish: True

@@ -1,7 +1,7 @@
 ---
 title: In Code-Behind
 page_title: In Code-Behind
-description: Check our &quot;In Code-Behind&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;In Code-Behind&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-in-code-behind
 tags: in,code-behind
 published: True

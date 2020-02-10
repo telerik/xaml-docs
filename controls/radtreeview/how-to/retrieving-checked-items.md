@@ -1,7 +1,7 @@
 ---
 title: Retrieve All Checked Items
 page_title: Retrieve All Checked Items
-description: Check our &quot;Retrieve All Checked Items&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Retrieve All Checked Items&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-retrieving-checked-items
 tags: retrieve,all,checked,items
 published: False

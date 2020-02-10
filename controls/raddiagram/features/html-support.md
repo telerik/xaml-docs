@@ -1,7 +1,7 @@
 ---
 title: Html Support
 page_title: Html Support
-description: Check our &quot;Html Support&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Html Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-html-support
 tags: html,support
 published: True

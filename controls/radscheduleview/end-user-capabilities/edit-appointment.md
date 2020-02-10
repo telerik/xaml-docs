@@ -1,7 +1,7 @@
 ---
 title: Edit Appointment
 page_title: Edit Appointment
-description: Check our &quot;Edit Appointment&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Edit Appointment&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-end-user-capabilities-edit-appointment
 tags: edit,appointment
 published: True

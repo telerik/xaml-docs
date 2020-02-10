@@ -1,7 +1,7 @@
 ---
 title: Infinite Paging
 page_title: Infinite Paging
-description: Check our &quot;Infinite Paging&quot; documentation article for the RadDataPager WPF control.
+description: Check our &quot;Infinite Paging&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-features-infinite-paging
 tags: infinite,paging
 published: True

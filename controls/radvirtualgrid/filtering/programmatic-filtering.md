@@ -1,7 +1,7 @@
 ---
 title: Programmatic Filtering
 page_title: Programmatic Filtering
-description: Check our &quot;Programmatic Filtering&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Programmatic Filtering&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-filtering-programmatic-filtering
 tags: filtering, programmatic
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 page_title: Bookmarks
-description: Check our &quot;Bookmarks&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Bookmarks&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-document-elements-bookmarks
 tags: bookmarks
 published: True

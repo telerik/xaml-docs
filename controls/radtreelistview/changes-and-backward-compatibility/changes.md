@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Check our &quot;Changes&quot; documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Changes&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelistview-changes
 tags: changes
 published: True

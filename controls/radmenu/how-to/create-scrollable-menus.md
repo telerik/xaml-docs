@@ -1,7 +1,7 @@
 ---
 title: Create Scrollable Menus
 page_title: Create Scrollable Menus
-description: Check our &quot;Create Scrollable Menus&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;Create Scrollable Menus&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-how-to-create-scrollable-menus
 tags: create,scrollable,menus
 published: True

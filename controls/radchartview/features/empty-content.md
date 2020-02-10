@@ -1,7 +1,7 @@
 ---
 title: Empty Content
 page_title: Empty Content
-description: Check our &quot;Empty Content&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Empty Content&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-empty-content
 tags: empty,content
 published: True

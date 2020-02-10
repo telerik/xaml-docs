@@ -1,7 +1,7 @@
 ---
 title: Change the RadTileViewItem Header Background
 page_title: Change the RadTileViewItem Header Background
-description: Check our &quot;Change the RadTileViewItem Header Background&quot; documentation article for the RadTileView WPF control.
+description: Check our &quot;Change the RadTileViewItem Header Background&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-howto-change-the-headers-background
 tags: change,the,radtileviewitem,header,background
 published: True

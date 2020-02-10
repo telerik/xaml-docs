@@ -1,7 +1,7 @@
 ---
 title: DragDropMode
 page_title: DragDropMode
-description: Check our &quot;DragDropMode&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;DragDropMode&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-dragdropmode
 tags: dragdropmode
 published: True

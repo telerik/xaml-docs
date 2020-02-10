@@ -1,7 +1,7 @@
 ---
 title: ToolTip
 page_title: ToolTip
-description: Check our &quot;ToolTip&quot; documentation article for the RadSlider WPF control.
+description: Check our &quot;ToolTip&quot; documentation article for the RadSlider {{ site.framework_name }} control.
 slug: radslider-tooltip
 tags: tooltip
 published: True

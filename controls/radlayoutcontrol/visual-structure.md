@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Check our &quot;Visual Structure&quot; documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;Visual Structure&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-visual-structure
 tags: visual, structure, radlayoutcontrol
 published: True

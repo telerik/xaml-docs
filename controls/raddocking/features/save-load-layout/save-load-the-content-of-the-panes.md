@@ -1,7 +1,7 @@
 ---
 title: Save/Load the Content of the Panes
 page_title: Save/Load the Content of the Panes
-description: Check our &quot;Save/Load the Content of the Panes&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Save/Load the Content of the Panes&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-save-load-the-content-of-the-panes
 tags: save/load,the,content,of,the,panes
 published: True

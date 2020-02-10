@@ -1,7 +1,7 @@
 ---
 title: Selection Tool
 page_title: Selection Tool
-description: Check our &quot;Selection Tool&quot; documentation article for the RadImageEditor WPF control.
+description: Check our &quot;Selection Tool&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
 slug: radimageeditor-tools-selection-tool
 tags: shape, tool, selection
 published: True

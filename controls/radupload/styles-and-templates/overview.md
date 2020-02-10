@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-styles-and-templates-overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadHeatMap WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
 slug: radheatmap-getting-started
 tags: getting,started
 published: True

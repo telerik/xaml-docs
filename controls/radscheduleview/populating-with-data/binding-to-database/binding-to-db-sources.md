@@ -1,7 +1,7 @@
 ---
 title: RadScheduleView Types and Sources
 page_title: RadScheduleView Types and Sources
-description: Check our &quot;RadScheduleView Types and Sources&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;RadScheduleView Types and Sources&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-sources
 tags: radscheduleview,types,and,sources
 published: True

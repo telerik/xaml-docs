@@ -1,7 +1,7 @@
 ---
 title: ItemsPanel
 page_title: ItemsPanel
-description: Check our &quot;ItemsPanel&quot; documentation article for the RadLegend WPF control.
+description: Check our &quot;ItemsPanel&quot; documentation article for the RadLegend {{ site.framework_name }} control.
 slug: radlegend-itemspanel
 tags: itemspanel
 published: True

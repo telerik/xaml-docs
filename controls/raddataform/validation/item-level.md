@@ -1,7 +1,7 @@
 ---
 title: Validating Data Through Data Annotations
 page_title: Validating Data Through Data Annotations
-description: Check our &quot;Validating Data Through Data Annotations&quot; documentation article for the RadDataForm WPF control.
+description: Check our &quot;Validating Data Through Data Annotations&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
 slug: raddataform-validation-item-level
 tags: item,level,attribute-based,validation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Programmatic Filtering
 page_title: Programmatic Filtering
-description: Check our &quot;Programmatic Filtering&quot; documentation article for the RadDataServiceDataSource WPF control.
+description: Check our &quot;Programmatic Filtering&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-filtering-programmatic-filtering
 tags: programmatic,filtering
 published: True

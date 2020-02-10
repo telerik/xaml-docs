@@ -1,7 +1,7 @@
 ---
 title: Styling the RadContextMenu
 page_title: Styling the RadContextMenu
-description: Check our &quot;Styling the RadContextMenu&quot; documentation article for the RadContextMenu WPF control.
+description: Check our &quot;Styling the RadContextMenu&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 slug: radcontextmenu-styles-and-templates-styling-the-context-menu
 tags: styling,the,radcontextmenu
 published: True

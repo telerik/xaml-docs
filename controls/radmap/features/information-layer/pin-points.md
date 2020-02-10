@@ -1,7 +1,7 @@
 ---
 title: Pin Points
 page_title: Pin Points
-description: Check our &quot;Pin Points&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Pin Points&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-information-layer-pin-points
 tags: pin,points
 published: True

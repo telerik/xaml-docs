@@ -1,7 +1,7 @@
 ---
 title: Styling the Expander
 page_title: Styling the Expander
-description: Check our &quot;Styling the Expander&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Styling the Expander&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-styling-and-appearance-styling-expander
 tags: styling,the,expander
 published: True

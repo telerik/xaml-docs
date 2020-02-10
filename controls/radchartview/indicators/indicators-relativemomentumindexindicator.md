@@ -1,7 +1,7 @@
 ---
 title: RelativeMomentumIndexIndicator
 page_title: RelativeMomentumIndexIndicator
-description: Check our &quot;RelativeMomentumIndexIndicator&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;RelativeMomentumIndexIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-relativemomentumindexindicator
 tags: financial, indicators, relativemomentumindexindicator
 publish: True

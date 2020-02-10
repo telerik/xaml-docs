@@ -1,7 +1,7 @@
 ---
 title: Using Themes
 page_title: Using Themes
-description: Check our &quot;Using Themes&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;Using Themes&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-using-themes
 tags: using,themes
 published: True

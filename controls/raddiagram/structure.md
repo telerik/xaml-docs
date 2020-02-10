@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Check our &quot;Structure&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Structure&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-structure
 tags: structure
 published: True

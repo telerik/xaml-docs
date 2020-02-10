@@ -1,7 +1,7 @@
 ---
 title: Changes and Backwards Compatibility
 page_title: Changes and Backwards Compatibility
-description: Check our &quot;Changes and Backwards Compatibility&quot; documentation article for the RadCoverflow WPF control.
+description: Check our &quot;Changes and Backwards Compatibility&quot; documentation article for the RadCoverflow {{ site.framework_name }} control.
 slug: radcoverflow-changes-and-backwards-compatibility
 tags: changes,and,backwards,compatibility
 published: False

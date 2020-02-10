@@ -1,7 +1,7 @@
 ---
 title: Nesting TileViews
 page_title: Nesting TileViews
-description: Check our &quot;Nesting TileViews&quot; documentation article for the RadTileView WPF control.
+description: Check our &quot;Nesting TileViews&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-nesting-tile-views
 tags: nesting,tileviews
 published: True

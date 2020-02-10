@@ -1,7 +1,7 @@
 ---
 title: Suggested Actions
 page_title: Suggested Actions
-description: Check our &quot;Suggested Actions&quot; documentation article for the RadChat WPF control.
+description: Check our &quot;Suggested Actions&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-suggested-actions
 tags: suggested, actions
 published: True

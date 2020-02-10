@@ -1,7 +1,7 @@
 ---
 title: Editing
 page_title: Editing
-description: Check our &quot;Editing&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Editing&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-editing
 tags: editing
 published: True

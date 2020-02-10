@@ -1,7 +1,7 @@
 ---
 title: Radar Series
 page_title: Radar Series
-description: Check our &quot;Radar Series&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Radar Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-radarseries
 tags: radar,series
 published: False

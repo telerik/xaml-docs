@@ -1,7 +1,7 @@
 ---
 title: HoverMode
 page_title: HoverMode
-description: Check our &quot;HoverMode&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;HoverMode&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-hovermode
 tags: radchartview,hover, mode
 published: True

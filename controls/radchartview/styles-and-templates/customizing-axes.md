@@ -1,7 +1,7 @@
 ---
 title: Customizing Axes by Using Implicit Styles
 page_title: Customizing Axes by Using Implicit Styles
-description: Check our &quot;Customizing Axes by Using Implicit Styles&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Customizing Axes by Using Implicit Styles&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-styles-and-templates-customizing-axes
 tags: customizing,axes,by,using,implicit,styles
 publish: True

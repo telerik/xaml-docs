@@ -1,7 +1,7 @@
 ---
 title: How to group items
 page_title: How to group items
-description: Check our &quot;How to group items&quot; documentation article for the RadListBox WPF control.
+description: Check our &quot;How to group items&quot; documentation article for the RadListBox {{ site.framework_name }} control.
 slug: radlistbox-how-to-group-items
 tags: how,to,group,items
 published: True

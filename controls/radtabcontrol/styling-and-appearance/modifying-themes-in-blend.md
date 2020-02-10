@@ -1,7 +1,7 @@
 ---
 title: Modifying Themes in Blend
 page_title: Modifying Themes in Blend
-description: Check our &quot;Modifying Themes in Blend&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;Modifying Themes in Blend&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-modifying-themes-in-blend
 tags: modifying,themes,in,blend
 published: True

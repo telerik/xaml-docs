@@ -1,7 +1,7 @@
 ---
 title: Styling and Style Selectors
 page_title: Styling and Style Selectors
-description: Check our &quot;Styling and Style Selectors&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Styling and Style Selectors&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-styling-selectors
 tags: styling,and,style,selectors
 published: True

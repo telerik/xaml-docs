@@ -1,7 +1,7 @@
 ---
 title: WeatherCard
 page_title: WeatherCard
-description: Check our &quot;WeatherCard&quot; documentation article for the RadChat WPF control.
+description: Check our &quot;WeatherCard&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-weathercard
 tags: messages,weathercard
 published: True

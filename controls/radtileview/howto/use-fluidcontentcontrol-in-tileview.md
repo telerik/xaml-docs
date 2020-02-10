@@ -1,7 +1,7 @@
 ---
 title: Use RadFluidContentControl in RadTileView
 page_title: Use RadFluidContentControl in RadTileView
-description: Check our &quot;Use RadFluidContentControl in RadTileView&quot; documentation article for the RadTileView WPF control.
+description: Check our &quot;Use RadFluidContentControl in RadTileView&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-howto-use-fluidcontentcontrol-in-tileview
 tags: use,radfluidcontentcontrol,in,radtileview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Set MaxLength Property of the Input Area
 page_title: Set MaxLength Property of the Input Area
-description: Check our &quot;Set MaxLength Property of the Input Area&quot; documentation article for the RadComboBox WPF control.
+description: Check our &quot;Set MaxLength Property of the Input Area&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-howto-set-max-length-input-area
 tags: set,maxlength,property,of,the,input,area
 published: True

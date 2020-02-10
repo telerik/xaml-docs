@@ -1,7 +1,7 @@
 ---
 title: CollectionEditors
 page_title: CollectionEditors
-description: Check our &quot;CollectionEditors&quot; documentation article for the RadPropertyGrid WPF control.
+description: Check our &quot;CollectionEditors&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-collectioneditor
 tags: collectioneditors
 published: True

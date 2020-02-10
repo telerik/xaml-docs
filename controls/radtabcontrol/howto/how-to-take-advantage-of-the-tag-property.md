@@ -1,7 +1,7 @@
 ---
 title: How to Take Advantage of the Tag Property
 page_title: How to Take Advantage of the Tag Property
-description: Check our &quot;How to Take Advantage of the Tag Property&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;How to Take Advantage of the Tag Property&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-how-to-take-advantage-of-the-tag-property
 tags: how,to,take,advantage,of,the,tag,property
 published: False

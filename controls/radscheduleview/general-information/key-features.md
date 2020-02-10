@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Check our &quot;Key Features&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Key Features&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-key-features
 tags: key,features
 published: True

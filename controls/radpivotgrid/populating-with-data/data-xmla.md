@@ -1,7 +1,7 @@
 ---
 title: Using XmlaDataProvider
 page_title: Using XmlaDataProvider
-description: Check our &quot;Using XmlaDataProvider&quot; documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Using XmlaDataProvider&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-data-xmla
 tags: using,xmladataprovider
 published: True

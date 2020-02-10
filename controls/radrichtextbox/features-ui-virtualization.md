@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization
-description: Check our &quot;UI Virtualization&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;UI Virtualization&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-ui-virtualization
 tags: ui,virtualization
 published: True

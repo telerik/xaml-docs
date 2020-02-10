@@ -1,7 +1,7 @@
 ---
 title: Aggregates
 page_title: Aggregates
-description: Check our &quot;Aggregates&quot; documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Aggregates&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelistview-features-aggregates
 tags: aggregates
 published: True

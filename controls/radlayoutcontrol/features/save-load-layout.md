@@ -1,7 +1,7 @@
 ---
 title: Save/Load Layout
 page_title: Save/Load Layout
-description: Check our &quot;Save/Load Layout&quot; documentation article for the RadLayoutControl WPF control.
+description: Check our &quot;Save/Load Layout&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-features-save-load-layout
 tags: serialization, save, load, saving, loading, layout
 published: True

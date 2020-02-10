@@ -1,7 +1,7 @@
 ---
 title: Create Scatter ErrorBars and BoxPlot Series
 page_title: Create Scatter ErrorBars and BoxPlot Series
-description: Check our &quot;Create Scatter ErrorBars and BoxPlot Series&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Create Scatter ErrorBars and BoxPlot Series&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-create-scatter-errorbars-and-boxplot-series
 tags: create,scatter,errorbars,and,boxplot,series
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadCalendar WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
 slug: radcalendar-overview
 tags: overview
 published: True

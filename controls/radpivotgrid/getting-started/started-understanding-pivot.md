@@ -1,7 +1,7 @@
 ---
 title: Understanding RadPivotGrid
 page_title: Understanding RadPivotGrid
-description: Check our &quot;Understanding RadPivotGrid&quot; documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Understanding RadPivotGrid&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-started-understanding-pivot
 tags: understanding,radpivotgrid
 published: True

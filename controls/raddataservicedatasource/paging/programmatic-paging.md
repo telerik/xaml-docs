@@ -1,7 +1,7 @@
 ---
 title: Programmatic Paging
 page_title: Programmatic Paging
-description: Check our &quot;Programmatic Paging&quot; documentation article for the RadDataServiceDataSource WPF control.
+description: Check our &quot;Programmatic Paging&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-paging-programmatic-paging
 tags: programmatic,paging
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Cancel Drag Start
 page_title: Cancel Drag Start
-description: Check our &quot;Cancel Drag Start&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Cancel Drag Start&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-how-cancel-drag-start
 tags: drag,drop,cancel,start,draginitialize
 published: True

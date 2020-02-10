@@ -1,7 +1,7 @@
 ---
 title: Opening Modes
 page_title: Opening Modes
-description: Check our &quot;Opening Modes&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;Opening Modes&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-features-opening-modes
 tags: opening,modes
 published: True

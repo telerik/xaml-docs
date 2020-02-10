@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Check our &quot;Visual Structure&quot; documentation article for the RadBarcode WPF control.
+description: Check our &quot;Visual Structure&quot; documentation article for the RadBarcode {{ site.framework_name }} control.
 slug: radbarcode-pdf417-structure
 tags: visual,structure
 published: True

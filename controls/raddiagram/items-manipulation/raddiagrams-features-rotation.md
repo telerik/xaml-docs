@@ -1,7 +1,7 @@
 ---
 title: Rotation
 page_title: Rotation
-description: Check our &quot;Rotation&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Rotation&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-rotation
 tags: rotation
 published: True

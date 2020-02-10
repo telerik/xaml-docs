@@ -1,7 +1,7 @@
 ---
 title: Combine Mode
 page_title: Combine Mode
-description: Check our &quot;Combine Mode&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Combine Mode&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-combinemode
 tags: series, combinemode, barseries
 published: True

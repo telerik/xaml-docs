@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop with RadListBox
 page_title: Drag and Drop with RadListBox
-description: Check our &quot;Drag and Drop with RadListBox&quot; documentation article for the RadGanttView WPF control.
+description: Check our &quot;Drag and Drop with RadListBox&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-dragdrop-radlistbox
 tags: drag,and,drop,with,radlistbox
 published: True

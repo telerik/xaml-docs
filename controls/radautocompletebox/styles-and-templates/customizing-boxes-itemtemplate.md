@@ -1,7 +1,7 @@
 ---
 title: Customizing the BoxesItemTemplate
 page_title: Customizing the BoxesItemTemplate
-description: Check our &quot;Customizing the BoxesItemTemplate&quot; documentation article for the RadAutoCompleteBox WPF control.
+description: Check our &quot;Customizing the BoxesItemTemplate&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
 slug: radautocompletebox-customizing-boxes-itemtemplate
 tags: customizing,the,boxesitemtemplate
 published: True

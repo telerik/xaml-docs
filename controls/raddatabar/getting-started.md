@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadDataBar WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
 slug: databar-getting-started2
 tags: getting,started
 published: True

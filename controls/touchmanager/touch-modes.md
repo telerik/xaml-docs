@@ -1,7 +1,7 @@
 ---
 title: Touch Modes
 page_title: Touch Modes
-description: Check our &quot;Touch Modes&quot; documentation article for the TouchManager WPF control.
+description: Check our &quot;Touch Modes&quot; documentation article for the TouchManager {{ site.framework_name }} control.
 slug: touchmanager-touch-modes
 tags: touchmode,modes,touch,manager,touchmanager
 published: True

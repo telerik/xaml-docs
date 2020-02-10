@@ -1,7 +1,7 @@
 ---
 title: MVVM approach to Telerik Domain Services
 page_title: MVVM approach to Telerik Domain Services
-description: Check our &quot;MVVM approach to Telerik Domain Services&quot; documentation article for the RadDomainDataSource WPF control.
+description: Check our &quot;MVVM approach to Telerik Domain Services&quot; documentation article for the RadDomainDataSource {{ site.framework_name }} control.
 slug: domaindatasource-mvvm
 tags: mvvm,approach,to,telerik,domain,services
 published: True

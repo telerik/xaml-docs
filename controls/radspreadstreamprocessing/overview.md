@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadSpreadStreamProcessing WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadSpreadStreamProcessing {{ site.framework_name }} control.
 slug: radspreadstreamprocessing-overview
 tags: overview
 published: True

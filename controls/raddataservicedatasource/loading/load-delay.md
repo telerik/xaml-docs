@@ -1,7 +1,7 @@
 ---
 title: Load Delay
 page_title: Load Delay
-description: Check our &quot;Load Delay&quot; documentation article for the RadDataServiceDataSource WPF control.
+description: Check our &quot;Load Delay&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-loading-load-delay
 tags: load,delay
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-description: Check our &quot;Grouping&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;Grouping&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-grouping
 tags: grouping
 published: True

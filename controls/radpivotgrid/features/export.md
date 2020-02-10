@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export
-description: Check our &quot;Export&quot; documentation article for the RadPivotGrid WPF control.
+description: Check our &quot;Export&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-export
 tags: export
 published: True

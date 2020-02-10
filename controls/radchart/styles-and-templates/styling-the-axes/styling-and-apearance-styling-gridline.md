@@ -1,7 +1,7 @@
 ---
 title: Styling the GridLine
 page_title: Styling the GridLine
-description: Check our &quot;Styling the GridLine&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Styling the GridLine&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-apearance-styling-gridline
 tags: styling,the,gridline
 published: True

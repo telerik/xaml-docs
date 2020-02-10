@@ -1,7 +1,7 @@
 ---
 title: Upload Service Parameters
 page_title: Upload Service Parameters
-description: Check our &quot;Upload Service Parameters&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;Upload Service Parameters&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-upload-service-parameters
 tags: upload,service,parameters
 published: True

@@ -1,7 +1,7 @@
 ---
 title: SpellChecking GridCell
 page_title: SpellChecking GridCell
-description: Check our &quot;SpellChecking GridCell&quot; documentation article for the RadSpellChecker WPF control.
+description: Check our &quot;SpellChecking GridCell&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
 slug: radspellchecker-spellchecking-gridcell
 tags: spellchecking,gridcell
 published: True

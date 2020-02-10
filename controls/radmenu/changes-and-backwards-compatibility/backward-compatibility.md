@@ -1,7 +1,7 @@
 ---
 title: Backwards Compatibility
 page_title: Backwards Compatibility
-description: Check our &quot;Backwards Compatibility&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;Backwards Compatibility&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-backward-compatibility
 tags: backwards,compatibility
 published: True

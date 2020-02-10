@@ -1,7 +1,7 @@
 ---
 title: Labels
 page_title: Labels
-description: Check our &quot;Labels&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Labels&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: linear-scale-labels
 tags: labels
 published: True

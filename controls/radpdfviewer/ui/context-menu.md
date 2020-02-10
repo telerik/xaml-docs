@@ -1,7 +1,7 @@
 ---
 title: Context Menu
 page_title: Context Menu
-description: Check our &quot;Context Menu&quot; documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Context Menu&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-context-menu
 tags: context,menu
 published: True

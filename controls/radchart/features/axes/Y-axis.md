@@ -1,7 +1,7 @@
 ---
 title: Y-Axis
 page_title: Y-Axis
-description: Check our &quot;Y-Axis&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Y-Axis&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-axes-y-axis
 tags: y-axis
 published: True

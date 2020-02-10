@@ -1,7 +1,7 @@
 ---
 title: Enable and Disable Tabs
 page_title: Enable and Disable Tabs
-description: Check our &quot;Enable and Disable Tabs&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;Enable and Disable Tabs&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-enable-disable-tabs
 tags: enable,and,disable,tabs
 published: True

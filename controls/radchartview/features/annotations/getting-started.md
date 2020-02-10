@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-annotations-getting-started
 tags: getting,started
 published: True

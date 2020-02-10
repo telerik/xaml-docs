@@ -1,7 +1,7 @@
 ---
 title: RadMediaChapter
 page_title: RadMediaChapter
-description: Check our &quot;RadMediaChapter&quot; documentation article for the RadMediaPlayer WPF control.
+description: Check our &quot;RadMediaChapter&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-radmediachapter
 tags: radmediachapter
 publish: True

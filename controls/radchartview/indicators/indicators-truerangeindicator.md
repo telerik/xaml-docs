@@ -1,7 +1,7 @@
 ---
 title: TrueRangeIndicator
 page_title: TrueRangeIndicator
-description: Check our &quot;TrueRangeIndicator&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;TrueRangeIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-truerangeindicator
 tags: financial, indicators, truerangeindicator
 publish: True

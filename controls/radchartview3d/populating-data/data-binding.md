@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Check our &quot;Data Binding&quot; documentation article for the RadChartView3D WPF control.
+description: Check our &quot;Data Binding&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
 slug: radchartview3d-populating-data-databinding
 tags: axes,3d,chartview,data,binding,itemssource,valuebinding,
 published: True

@@ -1,7 +1,7 @@
 ---
 title: How To Databind RadToolBar 
 page_title: How To Databind RadToolBar 
-description: Check our &quot;How To Databind RadToolBar&quot; documentation article for the RadToolBar WPF control.
+description: Check our &quot;How To Databind RadToolBar&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
 slug: toolbar-databinding
 tags: how,to,databind,radtoolbar,
 published: True

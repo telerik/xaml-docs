@@ -1,7 +1,7 @@
 ---
 title: Member Access
 page_title: Member Access
-description: Check our &quot;Member Access&quot; documentation article for the RadExpressionEditor WPF control.
+description: Check our &quot;Member Access&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
 slug: radexpressioneditor-expressions-member-access
 tags: member,access
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Alignment
 page_title: Alignment
-description: Check our &quot;Alignment&quot; documentation article for the RadExpander WPF control.
+description: Check our &quot;Alignment&quot; documentation article for the RadExpander {{ site.framework_name }} control.
 slug: radexpander-features-alignment
 tags: alignment
 published: True

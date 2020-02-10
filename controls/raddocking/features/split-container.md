@@ -1,7 +1,7 @@
 ---
 title: Split Container
 page_title: Split Container
-description: Check our &quot;Split Container&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Split Container&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-split-container
 tags: split,container
 published: True

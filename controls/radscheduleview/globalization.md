@@ -1,7 +1,7 @@
 ---
 title: Globalization
 page_title: Globalization
-description: Check our &quot;Globalization&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Globalization&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-globalization
 tags: globalization
 published: True

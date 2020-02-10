@@ -1,7 +1,7 @@
 ---
 title: Data Binding with Manual Series Mapping
 page_title: Data Binding with Manual Series Mapping
-description: Check our &quot;Data Binding with Manual Series Mapping&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Data Binding with Manual Series Mapping&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-populating-with-data-data-binding-with-manual-series-mapping
 tags: data,binding,with,manual,series,mapping
 published: True

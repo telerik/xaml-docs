@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-description: Check our &quot;Selection&quot; documentation article for the RadListBox WPF control.
+description: Check our &quot;Selection&quot; documentation article for the RadListBox {{ site.framework_name }} control.
 slug: radlistbox-features-selection
 tags: selection
 published: True

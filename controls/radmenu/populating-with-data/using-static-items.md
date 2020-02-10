@@ -1,7 +1,7 @@
 ---
 title: Using Static Items
 page_title: Using Static Items
-description: Check our &quot;Using Static Items&quot; documentation article for the RadMenu WPF control.
+description: Check our &quot;Using Static Items&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-populating-with-data-using-static-items
 tags: using,static,items
 published: True

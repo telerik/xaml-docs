@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Check our &quot;Key Properties&quot; documentation article for the RadTimeSpanPicker WPF control.
+description: Check our &quot;Key Properties&quot; documentation article for the RadTimeSpanPicker {{ site.framework_name }} control.
 slug: radtimespanpicker-features-key-properties
 tags: properties,features,key,properties
 published: True

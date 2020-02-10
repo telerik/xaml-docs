@@ -1,7 +1,7 @@
 ---
 title: Chart Grid
 page_title: Chart Grid
-description: Check our &quot;Chart Grid&quot; documentation article for the RadChartView3D WPF control.
+description: Check our &quot;Chart Grid&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
 slug: radchartview3d-chartgrid
 tags: grid, 3d, chartview, cartesianchart3d, cartesianchart3dgrid
 published: True

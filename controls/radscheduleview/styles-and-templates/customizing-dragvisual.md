@@ -1,7 +1,7 @@
 ---
 title: Customizing the DragVisual
 page_title: Customizing the DragVisual
-description: Check our &quot;Customizing the DragVisual&quot; documentation article for the RadScheduleView WPF control.
+description: Check our &quot;Customizing the DragVisual&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-styles-and-templates-customizing-dragvisual
 tags: customizing,the,dragvisual
 published: True

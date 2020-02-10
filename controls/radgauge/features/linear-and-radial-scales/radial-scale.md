@@ -1,7 +1,7 @@
 ---
 title: Radial Scale
 page_title: Radial Scale
-description: Check our &quot;Radial Scale&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Radial Scale&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radgauge-features-radial-scale
 tags: radial,scale
 published: True

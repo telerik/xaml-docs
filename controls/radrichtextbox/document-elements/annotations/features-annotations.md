@@ -1,7 +1,7 @@
 ---
 title: Annotations Overview
 page_title: Annotations Overview
-description: Check our &quot;Annotations Overview&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Annotations Overview&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-document-elements-annotations
 tags: annotations,overview
 published: True

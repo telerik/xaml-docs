@@ -1,7 +1,7 @@
 ---
 title: Using XamlFormatProvider
 page_title: Using XamlFormatProvider
-description: Check our &quot;Using XamlFormatProvider&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Using XamlFormatProvider&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-import-export-using-xamlformatprovider
 tags: using-xamlFormatProvider
 published: True

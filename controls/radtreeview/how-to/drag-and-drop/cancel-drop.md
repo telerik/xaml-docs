@@ -1,7 +1,7 @@
 ---
 title: Cancel Drop
 page_title: Cancel Drop
-description: Check our &quot;Cancel Drop&quot; documentation article for the RadTreeView WPF control.
+description: Check our &quot;Cancel Drop&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-how-cancel-drop
 tags: drag,drop,cancel,drop
 published: True

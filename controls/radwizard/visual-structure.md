@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: Check our &quot;Visual Structure&quot; documentation article for the RadWizard WPF control.
+description: Check our &quot;Visual Structure&quot; documentation article for the RadWizard {{ site.framework_name }} control.
 slug: wizard-visual-structure
 tags: visual,structure
 published: True

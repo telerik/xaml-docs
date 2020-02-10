@@ -1,7 +1,7 @@
 ---
 title: Paste Options
 page_title: Paste Options
-description: Check our &quot;Paste Options&quot; documentation article for the RadRichTextBox WPF control.
+description: Check our &quot;Paste Options&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-paste-options
 tags: clipboard,support, paste, styles, options
 published: True

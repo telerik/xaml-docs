@@ -1,7 +1,7 @@
 ---
 title: Chart Series Label Strategy
 page_title: Chart Series Label Strategy
-description: Check our &quot;Chart Series Label Strategy&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;Chart Series Label Strategy&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-labels-shart-series-labels-strategy
 tags: Chart, Series,labels, strategy, chartlabelsstrategy,
 published: True

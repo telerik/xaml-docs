@@ -1,7 +1,7 @@
 ---
 title: Populating With Data RadTreeMap
 page_title: Populating With Data RadTreeMap
-description: Check our &quot;Populating With Data RadTreeMap&quot; documentation article for the RadTreeMap WPF control.
+description: Check our &quot;Populating With Data RadTreeMap&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
 slug: radtreemap-populating-with-data-radtreemap
 tags: populating,with,data,radtreemap
 published: True

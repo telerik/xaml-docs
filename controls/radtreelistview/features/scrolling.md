@@ -1,7 +1,7 @@
 ---
 title: Scrolling
 page_title: Scrolling
-description: Check our &quot;Scrolling&quot; documentation article for the RadTreeListView WPF control.
+description: Check our &quot;Scrolling&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelistview-features-scrolling
 tags: scrolling
 published: True

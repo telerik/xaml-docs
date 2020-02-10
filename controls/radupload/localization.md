@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadUpload WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-localization
 tags: localization
 published: True

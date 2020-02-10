@@ -1,7 +1,7 @@
 ---
 title: Display Modes
 page_title: Display Modes
-description: Check our &quot;Display Modes&quot; documentation article for the RadDataPager WPF control.
+description: Check our &quot;Display Modes&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-features-display-modes
 tags: display,modes
 published: True

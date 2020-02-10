@@ -1,7 +1,7 @@
 ---
 title: Numeric Indicator
 page_title: Numeric Indicator
-description: Check our &quot;Numeric Indicator&quot; documentation article for the RadGauge WPF control.
+description: Check our &quot;Numeric Indicator&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radial-scale-numeric-indicator
 tags: numeric,indicator
 published: True

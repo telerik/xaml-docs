@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-localization
 tags: localization
 published: True

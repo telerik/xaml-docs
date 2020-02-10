@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-description: Check our &quot;Filtering&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Filtering&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-filtering
 tags: filtering
 published: True

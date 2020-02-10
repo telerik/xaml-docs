@@ -1,7 +1,7 @@
 ---
 title: Column
 page_title: Column
-description: Check our &quot;Column&quot; documentation article for the RadTaskBoard WPF control.
+description: Check our &quot;Column&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
 slug: radtaskboard-features-column
 tags: Column
 published: True

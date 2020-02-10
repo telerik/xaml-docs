@@ -1,7 +1,7 @@
 ---
 title: Conditional Styling
 page_title: Conditional Styling
-description: Check our &quot;Conditional Styling&quot; documentation article for the RadVirtualGrid WPF control.
+description: Check our &quot;Conditional Styling&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-conditional-styling
 tags: conditional,styling
 published: True

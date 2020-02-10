@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadGanttView WPF control.
+description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-sdk-examples
 tags: sdk,examples
 published: True

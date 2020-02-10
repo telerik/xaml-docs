@@ -1,7 +1,7 @@
 ---
 title: How to Add Close Button to the Tab Headers
 page_title: How to Add Close Button to the Tab Headers
-description: Check our &quot;How to Add Close Button to the Tab Headers&quot; documentation article for the RadTabControl WPF control.
+description: Check our &quot;How to Add Close Button to the Tab Headers&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-how-to-add-close-button-to-the-tab-headers
 tags: how,to,add,close,button,to,the,tab,headers
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadTimePicker WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadTimePicker {{ site.framework_name }} control.
 slug: radtimepicker-overview
 tags: overview
 published: True

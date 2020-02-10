@@ -1,7 +1,7 @@
 ---
 title: Chart Title
 page_title: Chart Title
-description: Check our &quot;Chart Title&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Chart Title&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-chart-title
 tags: chart,title
 published: True

@@ -1,7 +1,7 @@
 ---
 title: HierarchicalNodeViewModel
 page_title: HierarchicalNodeViewModel
-description: Check our &quot;HierarchicalNodeViewModel&quot; documentation article for the RadDiagram WPF control.
+description: Check our &quot;HierarchicalNodeViewModel&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-data-hierarchicalnodeviewmodel
 tags: hierarchicalnodeviewmodel
 published: True

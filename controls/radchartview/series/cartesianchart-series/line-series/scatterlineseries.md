@@ -1,7 +1,7 @@
 ---
 title: ScatterLineSeries
 page_title: ScatterLineSeries
-description: Check our &quot;ScatterLineSeries&quot; documentation article for the RadChartView WPF control.
+description: Check our &quot;ScatterLineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-scatterlineseries
 tags: scatterlineseries
 published: True

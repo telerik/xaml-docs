@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Check our &quot;Data Binding&quot; documentation article for the RadMap WPF control.
+description: Check our &quot;Data Binding&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-data-binding
 tags: data,binding
 published: True

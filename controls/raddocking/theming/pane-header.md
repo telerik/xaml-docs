@@ -1,7 +1,7 @@
 ---
 title: Theming the Pane Header
 page_title: Theming the Pane Header
-description: Check our &quot;Theming the Pane Header&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Theming the Pane Header&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-theming-pane-header
 tags: theming,the,pane,header
 published: True

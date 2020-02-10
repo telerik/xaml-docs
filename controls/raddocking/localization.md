@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadDocking WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-localization
 tags: localization
 published: True

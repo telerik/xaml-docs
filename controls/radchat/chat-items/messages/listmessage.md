@@ -1,7 +1,7 @@
 ---
 title: ListMessage
 page_title: ListMessage
-description: Check our &quot;ListMessage&quot; documentation article for the RadChat WPF control.
+description: Check our &quot;ListMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-listmessage
 tags: messages,listmessage
 published: True

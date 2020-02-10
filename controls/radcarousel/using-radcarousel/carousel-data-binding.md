@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-description: Check our &quot;Data Binding&quot; documentation article for the RadCarousel WPF control.
+description: Check our &quot;Data Binding&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
 slug: carousel-data-binding
 tags: data,binding
 published: True

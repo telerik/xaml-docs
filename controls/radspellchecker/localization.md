@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for the RadSpellChecker WPF control.
+description: Check our &quot;Localization&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
 slug: radspellchecker-localization
 tags: localization
 published: True

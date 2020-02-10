@@ -1,7 +1,7 @@
 ---
 title: Categorical Charts
 page_title: Categorical Charts
-description: Check our &quot;Categorical Charts&quot; documentation article for the RadChart WPF control.
+description: Check our &quot;Categorical Charts&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-categorical-charts
 tags: categorical,charts
 published: True

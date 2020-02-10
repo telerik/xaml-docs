@@ -1,7 +1,7 @@
 ---
 title: Wiring UI
 page_title: Wiring UI
-description: Check our &quot;Wiring UI&quot; documentation article for the RadPdfViewer WPF control.
+description: Check our &quot;Wiring UI&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-wiring-ui
 tags: wiring,ui
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadHtmlPlaceholder WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadHtmlPlaceholder {{ site.framework_name }} control.
 slug: radhtmlplaceholder-overview
 tags: overview
 published: True

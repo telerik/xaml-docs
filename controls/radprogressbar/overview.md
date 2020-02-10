@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadProgressBar WPF control.
+description: Check our &quot;Overview&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
 slug: radprogressbar-overview
 tags: overview
 published: True

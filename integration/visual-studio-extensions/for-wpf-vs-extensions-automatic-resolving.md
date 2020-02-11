@@ -1,7 +1,7 @@
 ---
 title: Automatic Dependency Resolving
 page_title: Automatic Dependency Resolving
-description: Automatic Dependency Resolving
+description: Using Progress Telerik UI for WPF Extension to select only the required Telerik dlls for your project.
 slug: radcontrols-for-wpf-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
 published: True
@@ -11,19 +11,15 @@ site_name: WPF
 
 # Automatic Dependency Resolving
 
-
-
-## 
-
-To improve the experience of your clients and reduce your application’s size it is crucial to use only the subset of Telerik UI for WPF assemblies you really need, as described in the Installation and Deployment Section.
+To improve the experience of your clients and reduce your application’s size it is crucial to use only the subset of Telerik UI for WPF assemblies you really need.
 
 Some controls require multiple assemblies and mistakes are likely to happen. For example, in the urge to optimize, you could remove an assembly the project needs, thus breaking the application compilation. 
 
-When using the __New Project Wizard__ or __Project Configuration Wizard__, the possibility to make such mistakes is lowered to a minimum, thanks to the dependency analysis in the Visual Studio Extensions. 
+When using the __New Project Wizard__ or __Project Configuration Wizard__, the possibility to make such mistakes is lowered to a minimum, thanks to the dependency analysis in the Progress Telerik UI for WPF Extension. 
 
 ![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
 
-The VSExtensions assembly list control is controlled by the dependency analyzer, which will not let you select Telerik UI for WPF assemblies without selecting the assemblies they depend on. Both the aspects are covered: 
+The Progress Telerik UI for WPF Extension assembly list control is controlled by the dependency analyzer, which will not let you select Telerik UI for WPF assemblies without selecting the assemblies they depend on. Both the aspects are covered: 
 
 * Selecting a __Telerik UI__ assembly will also select the additional assemblies it depends on as well. 
 
@@ -31,10 +27,7 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 
 >Note that not all assemblies are listed.
 
-## See Also
-
+## See Also  
  * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
-
  * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
-
  * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

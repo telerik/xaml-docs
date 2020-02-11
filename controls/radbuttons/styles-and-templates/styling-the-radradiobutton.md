@@ -37,8 +37,6 @@ If you prefer, you can [manually extract the needed style from the respective XA
 
 >importantNote that when changing a __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
-* __RadRadioButtonStyle__ - the default __Style__ for the __RadRadioButton__.
-
 ## See Also
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})

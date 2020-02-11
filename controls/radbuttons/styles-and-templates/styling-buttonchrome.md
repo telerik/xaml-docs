@@ -16,7 +16,7 @@ The __ButtonChrome__ control was part of the template of the __RadButtons__. It 
 
 > The ButtonChrome is located in the following namespace: xmlns:chromes="clr-namespace:Telerik.Windows.Controls.Chromes;assembly=Telerik.Windows.Controls"
 
-#### **[C#] Example 1: Create custom implicit style**:
+#### __[C#] Example 1: Create custom implicit style__
 {{region radbuttons-styles-and-templates-styling-buttonchrome-0}}
 	<Window.Resources>
 		<Style TargetType="chromes:ButtonChrome">

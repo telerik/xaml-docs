@@ -126,7 +126,7 @@ The __IsolatedStorageProvider__ exposes the following members:
 * __QuotaRequested event__: When the application requests a larger quota from the isolated storage, the user is prompted to allow or deny the request. The __QuotaRequested__ event is fired when the user makes a choice. The event receives two arguments:			
 	* A __sender__ argument that receives the __IsolatedStorageProvider__ that is requesting the additional quota.
 	* A __QuotaRequestedEventArgs__ object that gives access to:
-        * __FileStreams__: A dictionary that contains the names of the isolated storage files as keys, and the filestreams as values.
+        * __FileStreams__: A dictionary that contains the names of the isolated storage files as keys, and the file streams as values.
         * __IsSuccess__: A property of type bool that indicates whether the user has allowed the quota increase.
         * __RequestedBytes__ - A property of type __long__ that represents the size of the requested quota.
 
@@ -135,6 +135,6 @@ The __IsolatedStorageProvider__ exposes the following members:
 * __GetIsolatedStoreOverride()__: A __protected__ method, which returns an [IsolatedStorageFile](https://docs.microsoft.com/en-us/dotnet/api/system.io.isolatedstorage.isolatedstoragefile?view=netframework-4.8). It allows you to work with the physical representation of the isolated storage files. You can inherit the IsolatedStorageProvider in order to access it. 
 
 >When you are using the __IsolatedStorageProvider__, you can check the persistence storage and the controls that are persisted using the __PersistenceManager.GetStorage()__ static method. It returns an object of type __ObjectStorage__ that exposes the following properties:	  
->   - __Count__ - this property is of type __int__ and it gets the number of persisted objects.  
->   - __Items__ - this property gets the collection of persisted objects.  
->   - __Keys__ - this property gets the collection of the persisted objects' __StorageId__ values.			  
+>   - __Count__: This property is of type __int__ and it gets the number of persisted objects.  
+>   - __Items__: This property gets the collection of persisted objects.  
+>   - __Keys__: This property gets the collection of the persisted objects' __StorageId__ values.			  

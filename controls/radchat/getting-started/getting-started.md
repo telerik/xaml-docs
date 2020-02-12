@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadChat {{ site.framework_name }} control.
+description: This article demonstrates how to setup a sample application containing a Progress Telerik RadChat. 
 slug: chat-getting-started
 tags: getting,started
 published: True
@@ -11,10 +11,6 @@ position: 0
 # Getting Started
 
 This topic will guide you through the process of creating a sample application containing __RadChat__.
-
-* [Assembly References](#assembly-references)
-* [Adding RadChat to the Project](#adding-radchat-to-the-project)
-* [Adding Authors to RadChat](#adding-authors-to-radchat)
 
 ## Assembly References
 
@@ -32,7 +28,7 @@ You can add __Conversational UI__ manually by writing the XAML code in __Example
 #### __[XAML] Example 1: Adding RadChat in XAML__
 
 {{region xaml-chat-getting-started_0}}
-	<telerik:RadChat />
+	<telerik:RadChat x:Name="chat" />
 {{endregion}}
 
 Running the application at this state will result in an empty chat.
@@ -64,31 +60,67 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
     }
 {{endregion}}
 
+#### __[VB.NET] Example 3: Adding Authors to RadChat__
+
+{{region vb-chat-getting-started_3}}
+	Partial Public Class MainWindow
+        Inherits Window
+
+            Private currentAuthor As Author
+            Private otherAuthor As Author
+
+            Public Sub New()
+                InitializeComponent()
+
+                currentAuthor = New Author("Peter")
+                otherAuthor = New Author("Steven")
+                Me.chat.CurrentAuthor = currentAuthor
+            End Sub
+    End Class
+{{endregion}}
+
 ## Handling the Sent Message
 
 The user's input can be handled by hooking up to the __SendMessage__ event of __RadChat__. The event arguments are of type __RoutedEventArgs__ which are extended by the __Message__ property.
 
 #### __[C#] Example 4: Subscribing to the SendMessage event__
+{{region xaml-chat-getting-started_4}}
+	<telerik:RadChat x:Name="chat" SendMessage="RadChat_SendMessage" />
+{{endregion}}
 
-{{region cs-chat-getting-started_3}}
-	 private void Chat_SendMessage_(object sender, SendMessageEventArgs e)
-        {
-            var author = e.Message.Author;
-            if (author == this.chat.CurrentAuthor)
-            {
-                this.chat.AddMessage(this.currentAuthor, (e.Message as TextMessage).Text);
-                this.chat.AddMessage(this.otherAuthor, (e.Message as TextMessage).Text);
 
-                e.Handled = true;
-            }
-        }
+#### __[C#] Example 5: SendMessage event handler__
+
+{{region cs-chat-getting-started_5}}
+
+    private void RadChat_SendMessage(object sender, SendMessageEventArgs e)
+    {
+        // We will handle the event in order to add a new message manually
+        e.Handled = true;
+
+        var updatedMessageText = "[Updated from event handler] " + (e.Message as TextMessage).Text;
+        this.chat.AddMessage(this.chat.CurrentAuthor, updatedMessageText);
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 5: SendMessage event handler__
+
+{{region vb-chat-getting-started_6}}
+
+    Private Sub RadChat_SendMessage(ByVal sender As Object, ByVal e As SendMessageEventArgs)
+		' We will handle the event in order to add a new message manually
+		e.Handled = True
+
+		Dim updatedMessageText = "[Updated from event handler] " & (TryCast(e.Message, TextMessage)).Text
+		Me.chat.AddMessage(Me.chat.CurrentAuthor, updatedMessageText)
+    End Sub
 {{endregion}}
 
 This setup will have the following result.
 
 #### __Figure 2: RadChat with Messages__
 
-![RadChat with Messages](images/RadChat_GettingStarted_02.png)
+![RadChat with Messages](images/RadChatSendMessage.gif)
 
 ## See Also
 

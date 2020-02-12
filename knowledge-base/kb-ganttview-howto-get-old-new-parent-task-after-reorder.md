@@ -35,15 +35,15 @@ For the purpose you can define a [custom GanttDragDropBehavior]({%slug radganttv
 
 #### __[C#]__
 {{region cs-kb-ganttview-howto-get-old-new-parent-task-after-reorder-1}}
-  protected override void Drop(SchedulingDragDropState state)
-  {
-      var task = state.DraggedItem as GanttTask;
-      var item = this.Gantt.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
-      var previousParent = item.Parent;
-      base.Drop(state);
-      var newItem = this.Gantt.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
-      var newParent = newItem.Parent;
-  }
+  	protected override void Drop(SchedulingDragDropState state)
+  	{
+    	var task = state.DraggedItem as GanttTask;
+    	var item = this.Gantt.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
+    	var previousParent = item.Parent;
+    	base.Drop(state);
+    	var newItem = this.Gantt.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
+    	var newParent = newItem.Parent;
+  	}
 {{endregion}}
 
 ## See Also

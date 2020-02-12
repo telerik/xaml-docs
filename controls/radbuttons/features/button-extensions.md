@@ -1,7 +1,7 @@
 ---
 title: Button Extensions
 page_title: Button Extensions
-description: Button Extensions
+description: This article lists the built-in extensions that can change different behaviors of the button controls.
 slug: radbuttons-features-button-extensions
 tags: button, extensions, dropdown, attached, property,
 published: True
@@ -10,13 +10,13 @@ position: 13
 
 # Button Extensions
 
-Telerik suite provides build-in extensions that can change different behaviors of the button controls. This article will go through these extensions.
+The Telerik suite provides built-in extensions that can change different behaviors of the button controls. This article will go through these extensions.
 
-## DropDownExtensions extension class
+## DropDownExtensions
 
-* __HandleMouseWheelWhenOpen:__ A boolean property that gets or sets if MouseWheel event is handled while a drop-down content of DropDownButton is open. Setting this property to true you won't be able to scroll your page while the drop-down content is open. The default value is false.
+* __HandleMouseWheelWhenOpen:__ A boolean property that gets or sets if the **MouseWheel** event is handled while a drop-down content of a drop-down button is open. By setting this property to **true** you won't be able to scroll your page while the drop-down content is open. The default value is **false**.
 
->This property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__ 
+>importantThis property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__.
 
 #### __[XAML] Example 1: Set HandleMouseWheelWhenOpen attached property__
 {{region xaml-radbuttons-features-button-extensions_0}}
@@ -40,11 +40,11 @@ Telerik suite provides build-in extensions that can change different behaviors o
 	</ScrollViewer>
 {{endregion}}
 
->This property is not supported when the control (for example, RadDropDownButton) has __KeepOpen__ property set to __True__.
+>importantThis property is not supported when the control (for example, RadDropDownButton) has its __KeepOpen__ property set to __True__.
 
-## DropDownButtonExtensions extension class
+## DropDownButtonExtensions
 
-* __FocusContentOnOpen:__ A boolean property that gets or sets if the drop-down content of DropDownButton control should be focused when its drop-down content is open. The default value is false.
+* __FocusContentOnOpen:__ A boolean property that gets or sets if the drop-down content of a drop-down button control should be focused when its drop-down content is open. The default value is **false**.
 
 #### __[XAML] Example 2: Set FocusContentOnOpen attached property__
 {{region xaml-radbuttons-features-button-extensions_1}}

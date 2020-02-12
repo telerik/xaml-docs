@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-changes
 tags: changes
 published: True

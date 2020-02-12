@@ -1,7 +1,7 @@
 ---
 title: Features
 page_title: Features
-description: Features
+description: Check our &quot;Features&quot; documentation article for the RadBarcode {{ site.framework_name }} control.
 slug: radbarcodeqr-features
 tags: features
 published: True

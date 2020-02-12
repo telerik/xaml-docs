@@ -1,7 +1,7 @@
 ---
 title: Aggregate Functions
 page_title: Aggregate Functions
-description: Aggregate Functions
+description: Check our &quot;Aggregate Functions&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-aggregation-functions
 tags: aggregate,functions
 published: True

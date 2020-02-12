@@ -1,7 +1,7 @@
 ---
 title: Span
 page_title: Span
-description: Span
+description: Check our &quot;Span&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-document-elements-span
 tags: span
 published: True

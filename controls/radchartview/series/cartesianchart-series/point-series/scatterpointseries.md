@@ -1,7 +1,7 @@
 ---
 title: ScatterPointSeries
 page_title: ScatterPointSeries
-description: ScatterPointSeries
+description: Check our &quot;ScatterPointSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-scatterpointseries
 tags: scatterpointseries
 published: True

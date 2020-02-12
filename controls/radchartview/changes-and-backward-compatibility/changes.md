@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-changes
 tags: changes
 published: True

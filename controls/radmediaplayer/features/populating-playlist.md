@@ -1,7 +1,7 @@
 ---
 title: Populating playlist
 page_title: Populating playlist
-description: Populating playlist
+description: Check our &quot;Populating playlist&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-populating-playlist
 tags: populating,playlist
 publish: True

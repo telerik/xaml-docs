@@ -1,7 +1,7 @@
 ---
 title: Bring Into View and Auto Fit Support
 page_title:  Bring Into View and Auto Fit Support
-description:  Bring Into View and Auto Fit Support
+description: Check our &quot;Bring Into View and Auto Fit Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-bring-into-view-auto-fit
 tags: bring,into,view,bringintoview,autofit,auto,fit,viewport
 published: True

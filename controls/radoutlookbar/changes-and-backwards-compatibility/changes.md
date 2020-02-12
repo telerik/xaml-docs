@@ -1,7 +1,7 @@
 ---
 title: Changes
 page_title: Changes
-description: Changes
+description: Check our &quot;Changes&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
 slug: radoutlookbar-changes
 tags: changes
 published: True

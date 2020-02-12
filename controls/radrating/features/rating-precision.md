@@ -1,7 +1,7 @@
 ---
 title: Precision
 page_title: Precision
-description: Precision
+description: Check our &quot;Precision&quot; documentation article for the RadRating {{ site.framework_name }} control.
 slug: rating-features-precision
 tags: precision
 published: True

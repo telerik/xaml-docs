@@ -1,7 +1,7 @@
 ---
 title: Add / Remove Items
 page_title: Add / Remove Items
-description: Add / Remove Items
+description: Check our &quot;Add / Remove Items&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-features-items-addremove
 tags: add,/,remove,items
 published: True

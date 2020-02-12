@@ -1,7 +1,7 @@
 ---
 title: BarSeries3D
 page_title: BarSeries3D
-description: BarSeries3D
+description: Check our &quot;BarSeries3D&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
 slug: radchartview3d-barseries3d
 tags: axes, 3d, chartview, barseries, column, columnseries
 published: True

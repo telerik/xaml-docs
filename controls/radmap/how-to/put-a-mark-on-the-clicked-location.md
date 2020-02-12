@@ -1,7 +1,7 @@
 ---
 title: Put a Mark on the clicked Location
 page_title: Put a Mark on the clicked Location
-description: Put a Mark on the clicked Location
+description: Check our &quot;Put a Mark on the clicked Location&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-how-to-put-a-mark-on-the-clicked-location
 tags: put,a,mark,on,the,clicked,location
 published: True

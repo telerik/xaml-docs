@@ -1,7 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: ItemTemplateSelector
-description: ItemTemplateSelector
+description: Check our &quot;ItemTemplateSelector&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-item-template-selector
 tags: itemtemplateselector
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadChart vs. RadChartView
 page_title: RadChart vs. RadChartView
-description: RadChart vs. RadChartView
+description: Check our &quot;RadChart vs. RadChartView&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-radchartview-vs-radchart
 tags: radchart,vs.,radchartview
 published: True

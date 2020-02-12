@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization
-description: UI Virtualization
+description: Check our &quot;UI Virtualization&quot; documentation article for the RadBook {{ site.framework_name }} control.
 slug: virtualization
 tags: ui,virtualization
 published: True

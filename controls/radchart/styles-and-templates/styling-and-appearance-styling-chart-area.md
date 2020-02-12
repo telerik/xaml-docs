@@ -1,7 +1,7 @@
 ---
 title: Styling the Chart Area
 page_title: Styling the Chart Area
-description: Styling the Chart Area
+description: Check our &quot;Styling the Chart Area&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-appearance-styling-chart-area
 tags: styling,the,chart,area
 published: True

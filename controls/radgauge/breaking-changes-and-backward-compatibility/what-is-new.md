@@ -1,7 +1,7 @@
 ---
 title: What Is New
 page_title: What Is New
-description: What Is New
+description: Check our &quot;What Is New&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radgauge-what-is-new
 tags: what,is,new
 published: True

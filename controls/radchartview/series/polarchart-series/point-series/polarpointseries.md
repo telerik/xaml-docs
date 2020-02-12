@@ -1,7 +1,7 @@
 ---
 title: PolarPointSeries
 page_title: PolarPointSeries
-description: PolarPointSeries
+description: Check our &quot;PolarPointSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-polarpointseries
 tags: polarpointseries
 published: True

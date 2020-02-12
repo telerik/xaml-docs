@@ -1,7 +1,7 @@
 ---
 title: DiagramNavigationPane
 page_title: DiagramNavigationPane
-description: DiagramNavigationPane
+description: Check our &quot;DiagramNavigationPane&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-extensions-navigationpane
 tags: diagramnavigationpane
 published: True

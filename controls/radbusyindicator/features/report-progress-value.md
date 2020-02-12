@@ -1,7 +1,7 @@
 ---
 title: Report Progress Value
 page_title: Report Progress Value
-description: Report Progress Value
+description: Check our &quot;Report Progress Value&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
 slug: radbusyindicator-features-report-progress-value
 tags: report,progress,value
 published: True

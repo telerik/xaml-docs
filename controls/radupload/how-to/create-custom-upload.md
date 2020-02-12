@@ -1,7 +1,7 @@
 ---
 title: Create Custom RadUpload Control
 page_title: Create Custom RadUpload Control
-description: Create Custom RadUpload Control
+description: Check our &quot;Create Custom RadUpload Control&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: how-to-create-custom-upload
 tags: create,custom,radupload,control
 published: True

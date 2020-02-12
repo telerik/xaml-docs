@@ -1,7 +1,7 @@
 ---
 title: Implement Drag and Drop Between TreeView and GridView
 page_title: Implement Drag and Drop Between TreeView and GridView
-description: Implement Drag and Drop Between TreeView and GridView
+description: Check our &quot;Implement Drag and Drop Between TreeView and GridView&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls
 tags: implement,drag,and,drop,between,treeview,and,gridview
 published: False

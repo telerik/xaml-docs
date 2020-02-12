@@ -1,7 +1,7 @@
 ---
 title: Repeat Table Header Row
 page_title: Repeat Table Header Row
-description: Repeat Table Header Row
+description: Check our &quot;Repeat Table Header Row&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
 published: True

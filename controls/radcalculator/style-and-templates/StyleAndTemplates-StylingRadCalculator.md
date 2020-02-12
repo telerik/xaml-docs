@@ -1,7 +1,7 @@
 ---
 title: Styling RadCalculator
 page_title: Styling RadCalculator
-description: Styling RadCalculator
+description: Check our &quot;Styling RadCalculator&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
 slug: radcalculator-styleandtemplates-stylingradcalculator
 tags: styling,radcalculator
 published: True

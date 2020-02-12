@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-getting-started
 tags: getting,started
 published: True
@@ -11,12 +11,6 @@ position: 4
 # Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains __RadComboBox__. 
-
-* [Assembly References](#assembly-references)
-* [Adding RadComboBox to the Project](#adding-radcombobox-to-the-project)
-* [Populating with Data](#populating-with-data)
-* [Working with AutoComplete](#working-with-autocomplete)
-* [Working with Edit Modes](#working-with-edit-modes)
 
 ## Assembly References
 
@@ -206,10 +200,25 @@ __AutoComplete__ is a feature provided by many browsers, programs and controls. 
 
 The __RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read only in order to keep the editable look but prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes. [Read more]({%slug radcombobox-features-edit-modes%})
 
-## See Also
+## Opening and Closing DropDown Manually
 
- * [Populating With Data]({%slug radcombobox-populating-with-data-overview%})
+To open or close the dropdown content of RadComboBox manually, set its __IsDropDownOpen__ property.
 
- * [AutoComplete]({%slug radcombobox-features-autocomplete%})
- 
+#### __[XAML] Example 7: Open dropdown manually__
+{{region combobox-getting-started-5}}
+	<telerik:RadComboBox IsDropDownOpen="True" />
+{{endregion}}
+
+## Setting DropDown Size
+
+RadComboBox allows you to set the width and the max height of the dropdown content. To do this, set the __DropDownWidth__ and __MaxDropDownHeight__ properties of RadComboBox.
+
+#### __[XAML] Example 8: Set dropdown content size__
+{{region combobox-getting-started-6}}
+	<telerik:RadComboBox MaxDropDownHeight="200" DropDownWidth="150" />
+{{endregion}}
+
+## See Also  
+ * [Populating With Data]({%slug radcombobox-populating-with-data-overview%}) 
+ * [AutoComplete]({%slug radcombobox-features-autocomplete%}) 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

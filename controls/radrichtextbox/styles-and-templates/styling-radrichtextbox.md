@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRichTextBox
 page_title: Styling the RadRichTextBox
-description: Styling the RadRichTextBox
+description: Check our &quot;Styling the RadRichTextBox&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-styles-and-templates-styling-radrichtextbox
 tags: styling,the,radrichtextbox
 published: True

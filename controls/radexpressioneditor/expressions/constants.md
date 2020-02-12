@@ -1,7 +1,7 @@
 ---
 title: Constants
 page_title: Constants
-description: Constants
+description: Check our &quot;Constants&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
 slug: radexpressioneditor-expressions-constants
 tags: constants
 published: True

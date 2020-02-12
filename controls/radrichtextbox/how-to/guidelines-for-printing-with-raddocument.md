@@ -1,7 +1,7 @@
 ---
 title: Guidelines for Printing with RadDocument
 page_title: Guidelines for Printing with RadDocument
-description: Guidelines for Printing with RadDocument
+description: Check our &quot;Guidelines for Printing with RadDocument&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-guidelines-for-printing-with-raddocument
 tags: guidelines,for,printing,with,raddocument
 published: True

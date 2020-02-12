@@ -1,7 +1,7 @@
 ---
 title: Animations
 page_title: Animations
-description: Animations
+description: Check our &quot;Animations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-animations
 tags: Animations
 published: True

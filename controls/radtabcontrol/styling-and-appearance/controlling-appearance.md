@@ -1,7 +1,7 @@
 ---
 title: Controlling Appearance
 page_title: Controlling Appearance
-description: Controlling Appearance
+description: Check our &quot;Controlling Appearance&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-controlling-appearance
 tags: controlling,appearance
 published: True

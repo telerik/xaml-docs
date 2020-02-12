@@ -1,7 +1,7 @@
 ---
 title: Models
 page_title: Models
-description: Models
+description: Check our &quot;Models&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-models
 tags: models
 published: True

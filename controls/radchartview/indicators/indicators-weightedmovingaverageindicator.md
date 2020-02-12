@@ -1,7 +1,7 @@
 ---
 title: WeightedMovingAverageIndicator
 page_title: WeightedMovingAverageIndicator
-description: WeightedMovingAverageIndicator
+description: Check our &quot;WeightedMovingAverageIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-weightedmovingaverageindicator
 tags: financial, indicators, weightedmovingaverageindicator
 publish: True

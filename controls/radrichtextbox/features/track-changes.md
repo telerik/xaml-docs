@@ -1,7 +1,7 @@
 ---
 title: Track Changes
 page_title: Track Changes
-description: Track Changes
+description: Check our &quot;Track Changes&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-track-changes
 tags: track,changes
 published: True

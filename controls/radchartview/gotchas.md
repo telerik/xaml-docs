@@ -1,7 +1,7 @@
 ---
 title: Gotchas
 page_title: Gotchas
-description: Gotchas
+description: Check our &quot;Gotchas&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-gotchas
 tags: gotchas
 published: True

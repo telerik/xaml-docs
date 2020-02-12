@@ -1,7 +1,7 @@
 ---
 title: Formatter Provider
 page_title: Formatter Provider
-description: Formatter Provider
+description: Check our &quot;Formatter Provider&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-features-formatter-provider
 tags: formatter,provider
 published: True

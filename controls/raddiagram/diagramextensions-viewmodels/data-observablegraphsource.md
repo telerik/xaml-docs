@@ -1,7 +1,7 @@
 ---
 title: ObservableGraphSourceBase
 page_title: ObservableGraphSourceBase
-description: ObservableGraphSourceBase
+description: Check our &quot;ObservableGraphSourceBase&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-data-observablegraphsource
 tags: observablegraphsourcebase
 published: True

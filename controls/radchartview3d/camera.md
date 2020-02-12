@@ -1,7 +1,7 @@
 ---
 title: Camera
 page_title: Camera
-description: Camera
+description: Check our &quot;Camera&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
 slug: radchartview3d-camera
 tags: camera, chartview, 3d, scene
 published: True

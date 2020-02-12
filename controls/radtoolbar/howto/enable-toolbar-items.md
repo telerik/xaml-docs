@@ -1,7 +1,7 @@
 ---
 title: Enable / Disable items state
 page_title: Enable / Disable items state
-description: Enable / Disable items state
+description: Check our &quot;Enable / Disable items state&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
 slug: radtoolbar-enable-toolbar-items
 tags: enable,/,disable,items,state
 published: True

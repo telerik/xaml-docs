@@ -1,7 +1,7 @@
 ---
 title: LayoutControlToolBox
 page_title: LayoutControlToolBox
-description: LayoutControlToolBox
+description: Check our &quot;LayoutControlToolBox&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
 slug: radlayoutcontrol-features-toolbox-layoutcontroltoolbox
 tags: layout, toolbox, layoutcontroltoolbox, layoutcontroltoolboxview
 published: True

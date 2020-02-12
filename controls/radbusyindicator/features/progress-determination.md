@@ -1,7 +1,7 @@
 ---
 title: Progress Determination
 page_title: Progress Determination
-description: Progress Determination
+description: Check our &quot;Progress Determination&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
 slug: radbusyindicator-features-progress-determination
 tags: progress,determination
 published: True

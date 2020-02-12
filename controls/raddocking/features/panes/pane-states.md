@@ -1,7 +1,7 @@
 ---
 title: Pane States
 page_title: Pane States
-description: Pane States
+description: Check our &quot;Pane States&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-panes-pane-states
 tags: pane,states
 published: True

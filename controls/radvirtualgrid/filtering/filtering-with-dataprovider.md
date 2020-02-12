@@ -1,7 +1,7 @@
 ---
 title: Filtering with DataProvider
 page_title: Filtering with DataProvider
-description: Filtering with DataProvider
+description: Check our &quot;Filtering with DataProvider&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-filtering-dataprovider
 tags: filtering, dataprovider
 published: True

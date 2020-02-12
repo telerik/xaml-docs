@@ -1,7 +1,7 @@
 ---
 title: View Modes
 page_title: View Modes
-description: View Modes
+description: Check our &quot;View Modes&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-view-modes
 tags: view,modes
 published: False

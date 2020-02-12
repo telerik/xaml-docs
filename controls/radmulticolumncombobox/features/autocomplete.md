@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
 page_title: AutoComplete
-description: AutoComplete
+description: Check our &quot;AutoComplete&quot; documentation article for the RadMultiColumnComboBox {{ site.framework_name }} control.
 slug: multicolumncombobox-autocomplete
 tags: autocomplete
 published: True

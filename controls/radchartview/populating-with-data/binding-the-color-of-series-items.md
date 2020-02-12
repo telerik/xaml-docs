@@ -1,7 +1,7 @@
 ---
 title: Binding the Color of Series Items
 page_title: Binding the Color of Series Items
-description: Binding the Color of Series Items
+description: Check our &quot;Binding the Color of Series Items&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-populating-with-data-binding-the-color-of-series-items
 tags: binding,the,color,of,series,items
 published: True

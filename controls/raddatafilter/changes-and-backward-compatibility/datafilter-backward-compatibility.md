@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Backward Compatibility
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: datafilter-backward-compatibility
 tags: backward,compatibility
 published: True

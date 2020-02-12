@@ -1,7 +1,7 @@
 ---
 title: Layouts
 page_title: Layouts
-description: Layouts
+description: Check our &quot;Layouts&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-layouts
 tags: layouts
 published: True

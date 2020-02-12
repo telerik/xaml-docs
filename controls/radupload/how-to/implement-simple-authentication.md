@@ -1,7 +1,7 @@
 ---
 title: Implement Simple Authentication
 page_title: Implement Simple Authentication
-description: Implement Simple Authentication
+description: Check our &quot;Implement Simple Authentication&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-how-to-implement-simple-authentication
 tags: implement,simple,authentication
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling the MapZoomBar
 page_title: Styling the MapZoomBar
-description: Styling the MapZoomBar
+description: Check our &quot;Styling the MapZoomBar&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-styles-and-templates-styling-the-mapzoombar
 tags: styling,the,mapzoombar
 published: True

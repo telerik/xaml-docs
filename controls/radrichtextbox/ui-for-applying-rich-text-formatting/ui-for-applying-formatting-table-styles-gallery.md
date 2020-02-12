@@ -1,7 +1,7 @@
 ---
 title: Table Styles Gallery
 page_title: Table Styles Gallery
-description: Table Styles Gallery
+description: Check our &quot;Table Styles Gallery&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-ui-for-applying-formatting-table-styles-gallery
 tags: table,styles,gallery
 published: True

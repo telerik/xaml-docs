@@ -1,7 +1,7 @@
 ---
 title: Templating the Point Marks
 page_title: Templating the Point Marks
-description: Templating the Point Marks
+description: Check our &quot;Templating the Point Marks&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-templating-point-marks
 tags: templating,the,point,marks
 published: True

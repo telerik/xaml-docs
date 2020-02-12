@@ -50,6 +50,10 @@ __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%s
 
 * __CloseDropDownAfterSelectionInput__: Get or sets the [CloseDropDownAfterSelectionInput]({%slug multicolumncombobox-dropdown-properties%}#closing-the-dropdown-when-selecting) of the __RadMultiColumnComboBox__ editor.
 
+* __AutoGenerateColumns__: Gets or sets a value indicating whether columns in the editor's popup are created automatically when the ItemsSource property is set. The default value is **true**. This property was introduced with **R1 2020 SP1**.
+
+* __Columns__: Gets the collection of GridViewColumns for the grid view in the editor's popup. This property was introduced with **R1 2020 SP1**.
+
 ## Setting up GridViewMultiColumnComboBoxColumn
 
 __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a GridViewMultiColumnComboBoxColumn. The RadGridView is populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection is set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.
@@ -171,18 +175,22 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
 
 #### __[XAML] Example 2: Defining the xaml__
 {{region xaml-radmulticolumncombobox-dropdown-properties-2}}
-    <Window.Resources>
-		<my:MyViewModel x:Key="MyViewModel"/>
-	</Window.Resources>
-    <Grid DataContext="{StaticResource MyViewModel}">
-        <telerik:RadGridView Grid.Row="0" 
-                             Name="DepartmentsGrid" 
-                             ItemsSource="{Binding Departments}"
-                             AutoGenerateColumns="False"
-                             GroupRenderMode="Flat"
-                             Margin="5">
+	<Window.DataContext>
+		<my:MyViewModel />
+	</Window.DataContext>
+    <Grid>
+        <telerik:RadGridView Name="DepartmentsGrid"  
+                         ItemsSource="{Binding Departments}" 
+                         AutoGenerateColumns="False" 
+                         GroupRenderMode="Flat">
             <telerik:RadGridView.Columns>
-                <telerik:GridViewMultiColumnComboBoxColumn DataMemberBinding="{Binding EmployeeID}" ItemsSourceBinding="{Binding Employees}" DisplayMemberPath="Name" SelectedValuePath="ID" Width="325" />
+                <telerik:GridViewMultiColumnComboBoxColumn AutoGenerateColumns="False" DataMemberBinding="{Binding EmployeeID}" ItemsSourceBinding="{Binding Employees}" DisplayMemberPath="Name" SelectedValuePath="ID" Width="325">
+                    <telerik:GridViewMultiColumnComboBoxColumn.Columns>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding City}" />
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}" />
+                    </telerik:GridViewMultiColumnComboBoxColumn.Columns>
+                </telerik:GridViewMultiColumnComboBoxColumn>
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
@@ -194,4 +202,6 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
 
 ## See Also
 
-* [GridViewComboBoxColumn]({%slug radgridview-columns-column-types-combobox-column%})
+* [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
+* [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%})
+* [Select Column]({%slug radgridview-columns-column-types-select-column%})

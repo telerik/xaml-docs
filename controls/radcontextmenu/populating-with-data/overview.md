@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 slug: radcontextmenu-populating-with-data-overview
 tags: overview
 published: False

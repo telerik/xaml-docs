@@ -1,7 +1,7 @@
 ---
 title: Item Size
 page_title: Item Size
-description: Item Size
+description: Check our &quot;Item Size&quot; documentation article for the RadCoverflow {{ site.framework_name }} control.
 slug: coverflow-item_size
 tags: item,size
 published: True

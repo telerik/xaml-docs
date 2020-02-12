@@ -1,7 +1,7 @@
 ---
 title: Set Custom Fill For PointMarks Depending On Condition
 page_title: Set Custom Fill For PointMarks Depending On Condition
-description: Set Custom Fill For PointMarks Depending On Condition
+description: Check our &quot;Set Custom Fill For PointMarks Depending On Condition&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition
 tags: set,custom,fill,for,pointmarks,depending,on,condition
 published: True

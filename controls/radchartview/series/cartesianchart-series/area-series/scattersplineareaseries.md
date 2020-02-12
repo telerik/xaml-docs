@@ -1,7 +1,7 @@
 ---
 title: ScatterSplineAreaSeries
 page_title: ScatterSplineAreaSeries
-description: ScatterSplineAreaSeries
+description: Check our &quot;ScatterSplineAreaSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-scattersplineareaseries
 tags: scattersplineareaseries
 published: True

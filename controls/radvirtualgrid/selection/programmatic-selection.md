@@ -1,7 +1,7 @@
 ---
 title: Programmatic Selection
 page_title: Programmatic Selection
-description: Programmatic Selection
+description: Check our &quot;Programmatic Selection&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-programmatic-selection
 tags: programmatic, selection
 published: True

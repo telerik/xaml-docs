@@ -1,7 +1,7 @@
 ---
 title: Execute Undoable Action
 page_title: Execute Undoable Action
-description: Execute Undoable Action
+description: Check our &quot;Execute Undoable Action&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-howto-execute-undoable-action
 tags: undo,redo,stack,undoablgedelegatecommand,rotate,rotationangle,shape
 published: True

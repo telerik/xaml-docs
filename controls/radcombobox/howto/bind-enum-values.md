@@ -1,7 +1,7 @@
 ---
 title: Bind a RadComboBox to Enum Values
 page_title: Bind a RadComboBox to Enum Values
-description: Bind a RadComboBox to Enum Values
+description: Check our &quot;Bind a RadComboBox to Enum Values&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-howto-bind-enum-values
 tags: bind,a,radcombobox,to,enum,values
 published: True

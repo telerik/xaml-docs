@@ -1,7 +1,7 @@
 ---
 title: Pane Groups
 page_title: Pane Groups
-description: Pane Groups
+description: Check our &quot;Pane Groups&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-pane-groups
 tags: pane,groups
 published: True

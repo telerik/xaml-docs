@@ -1,7 +1,7 @@
 ---
 title: MVVM support
 page_title: MVVM support
-description: MVVM support
+description: Check our &quot;MVVM support&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-mvvm-support
 tags: mvvm,support
 published: True

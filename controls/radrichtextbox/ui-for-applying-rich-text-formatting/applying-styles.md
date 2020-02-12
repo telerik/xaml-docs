@@ -1,7 +1,7 @@
 ---
 title: Applying Styles
 page_title: Applying Styles
-description: Applying Styles
+description: Check our &quot;Applying Styles&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-ui-for-applying-rich-text-formatting-applying-styles
 tags: applying,styles
 published: True

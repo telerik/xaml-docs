@@ -1,7 +1,7 @@
 ---
 title: Map Shapes
 page_title: Map Shapes
-description: Map Shapes
+description: Check our &quot;Map Shapes&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-map-shapes
 tags: map,shapes
 published: True

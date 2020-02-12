@@ -1,7 +1,7 @@
 ---
 title: Reload Data
 page_title: Reload Data
-description: Reload Data
+description: Check our &quot;Reload Data&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-howto-reload-data
 tags: reload,data
 published: True

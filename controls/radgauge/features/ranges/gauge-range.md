@@ -1,7 +1,7 @@
 ---
 title: Gauge Range
 page_title: Gauge Range
-description: Gauge Range
+description: Check our &quot;Gauge Range&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radgauge-features-ranges-gauge-range
 tags: gauge,range
 published: True

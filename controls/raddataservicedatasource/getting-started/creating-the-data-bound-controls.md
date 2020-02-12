@@ -1,7 +1,7 @@
 ---
 title: Creating the Data-bound Controls
 page_title: Creating the Data-bound Controls
-description: Creating the Data-bound Controls
+description: Check our &quot;Creating the Data-bound Controls&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-getting-started-creating-the-data-bound-controls
 tags: creating,the,data-bound,controls
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Indicators
 page_title: Indicators
-description: Indicators
+description: Check our &quot;Indicators&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
 slug: radsparkline-features-indicators
 tags: indicators, markers, highpoint, lowpoint,
 published: True

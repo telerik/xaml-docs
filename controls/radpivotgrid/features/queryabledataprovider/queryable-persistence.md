@@ -1,7 +1,7 @@
 ---
 title: Persistence
 page_title: Persistence
-description: Persistence
+description: Check our &quot;Persistence&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-queryable-persistence
 tags: queryable, dataprovider, persistence
 published: True

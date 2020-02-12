@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-description: Key Features
+description: Check our &quot;Key Features&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-overview-key-features
 tags: key,features
 published: True

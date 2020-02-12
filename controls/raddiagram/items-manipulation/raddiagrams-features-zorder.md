@@ -1,7 +1,7 @@
 ---
 title: ZOrder
 page_title: ZOrder
-description: ZOrder
+description: Check our &quot;ZOrder&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-zorder
 tags: zorder
 published: True

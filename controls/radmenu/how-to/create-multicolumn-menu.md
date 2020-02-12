@@ -1,7 +1,7 @@
 ---
 title: Create Multicolumn Menu
 page_title: Create Multicolumn Menu
-description: Create Multicolumn Menu
+description: Check our &quot;Create Multicolumn Menu&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-how-to-create-multicolumn-menu
 tags: create,multicolumn,menu
 published: True

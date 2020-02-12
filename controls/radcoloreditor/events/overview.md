@@ -1,7 +1,7 @@
 ---
 title: Events Overview
 page_title: Events Overview
-description: Events Overview
+description: Check our &quot;Events Overview&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
 slug: radcoloreditor-events-overview
 tags: events,overview
 published: True

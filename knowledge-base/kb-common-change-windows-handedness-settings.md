@@ -39,7 +39,7 @@ To change the Windows Handedness settings in code, you can set the __SystemParam
 		public MainWindow()
 		{
 			InitializeComponent();
-			this.SetAlignment();
+			SetAlignment();
 		}
 	}
 

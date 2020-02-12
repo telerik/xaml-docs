@@ -1,7 +1,7 @@
 ---
 title: Styling the TimeRulerItems
 page_title: Styling the TimeRulerItems
-description: Styling the TimeRulerItems
+description: Check our &quot;Styling the TimeRulerItems&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-styles-and-templates-styling-timeruleritems
 tags: styling,the,timeruleritems
 published: True

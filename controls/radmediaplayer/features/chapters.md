@@ -1,7 +1,7 @@
 ---
 title: Chapters
 page_title: Chapters
-description: Chapters
+description: Check our &quot;Chapters&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-chapters
 tags: chapters
 publish: True

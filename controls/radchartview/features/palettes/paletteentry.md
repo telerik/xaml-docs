@@ -1,7 +1,7 @@
 ---
 title: Palette Entry
 page_title: Palette Entry
-description: Palette Entry
+description: Check our &quot;Palette Entry&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-palettes-paletteentry
 tags: palette,entry
 published: True

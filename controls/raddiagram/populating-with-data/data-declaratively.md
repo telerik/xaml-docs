@@ -1,7 +1,7 @@
 ---
 title: Declaratively
 page_title: Declaratively
-description: Declaratively
+description: Check our &quot;Declaratively&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-data-declaratively
 tags: declaratively
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Introduction
 page_title: Introduction
-description: Introduction
+description: Check our &quot;Introduction&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-palettes-introduction
 tags: introduction
 published: True

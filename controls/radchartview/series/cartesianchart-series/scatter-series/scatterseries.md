@@ -1,7 +1,7 @@
 ---
 title: Scatter Series
 page_title: Scatter Series
-description: Scatter Series
+description: Check our &quot;Scatter Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-scatterseries
 tags: scatter,series
 published: True

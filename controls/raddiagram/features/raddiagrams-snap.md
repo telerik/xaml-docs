@@ -1,7 +1,7 @@
 ---
 title: Align and Snap 
 page_title: Align and Snap 
-description: Align and Snap 
+description: Check our &quot;Align and Snap&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-snap
 tags: align,and,snap,
 published: True

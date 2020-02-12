@@ -1,7 +1,7 @@
 ---
 title: Styling the ButtonChrome
 page_title: Styling the ButtonChrome
-description: Styling the ButtonChrome
+description: Check our &quot;Styling the ButtonChrome&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-styles-and-templates-styling-buttonchrome
 tags: styling,the,buttonchrome
 published: True
@@ -10,25 +10,34 @@ position: 2
 
 # Styling the ButtonChrome
 
-The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version fo the RadControl, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version of the RadControls, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 
-You have two options:
+## Create an empty implicit style and set it up on your own. 
 
-* To create an empty style and set it up on your own. 
+> The ButtonChrome is located in the following namespace: xmlns:chromes="clr-namespace:Telerik.Windows.Controls.Chromes;assembly=Telerik.Windows.Controls"
 
-* To copy the default style of the control and modify it.
+#### **[C#] Example 1: Create custom implicit style**:
+{{region radbuttons-styles-and-templates-styling-buttonchrome-0}}
+	<Window.Resources>
+		<Style TargetType="chromes:ButtonChrome">
+			<Setter Property="Opacity" Value="0.5"/>
+			<Setter Property="BorderBrush" Value="Red"/>
+			<Setter Property="BorderThickness" Value="1"/>
+		</Style>
+	</Window.Resources>
+	<Grid>
+		<chromes:ButtonChrome Width="200" Height="200"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+	</Grid>
+{{endregion}}
 
-This topic will show you how to perform the second one.
+## Edit the default template of the control
 
-## Modifying the Default Style
+If you prefer, you can [manually extract the needed style from the respective XAML file]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) in the **Themes.Implicit** folder of your **Telerik UI** installation and modify its code to suit your needs.
 
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadButton__. Edit its template and in the 'Objects and Timeline' pane select the __ButtonChrome__. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
+>tip If you choose to define the style in the App.xaml file, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
->tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>importantNote that when changing a __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
-After clicking 'OK', Expression Blend will generate the default style of the __ButtonChrome__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
-
-{% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ButtonChrome__. Their names indicate to which part of the __RadButton__ appearance they are assigned.{% endif %}
 
 ## See Also
  * [Template Structures]({%slug radbuttons-styles-and-templates-template-structures%})

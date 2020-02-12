@@ -1,7 +1,7 @@
 ---
 title: Styling RadDateTimePicker
 page_title: Styling RadDateTimePicker
-description: Styling RadDateTimePicker
+description: Check our &quot;Styling RadDateTimePicker&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-styling-raddatetimepicker
 tags: styling,raddatetimepicker
 published: True

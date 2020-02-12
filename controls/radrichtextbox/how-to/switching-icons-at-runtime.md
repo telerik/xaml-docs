@@ -1,7 +1,7 @@
 ---
 title:  Switching Icons at Runtime
 page_title:  Switching Icons at Runtime
-description:  Switching Icons at Runtime
+description: Check our &quot;Switching Icons at Runtime&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-how-to-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True

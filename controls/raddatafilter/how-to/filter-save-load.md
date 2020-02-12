@@ -1,7 +1,7 @@
 ---
 title: Save/Load Settings
 page_title: Save/Load Settings
-description: Save/Load Settings
+description: Check our &quot;Save/Load Settings&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: raddatafilter-how-to-filter-save-load
 tags: datafilter, save, load, settings
 published: True

@@ -1,7 +1,7 @@
 ---
 title: CustomPropertyProviders
 page_title: CustomPropertyProviders
-description: CustomPropertyProviders
+description: Check our &quot;CustomPropertyProviders&quot; documentation article for the RadPersistenceFramework {{ site.framework_name }} control.
 slug: persistence-framework-custom-property-provider
 tags: custompropertyproviders
 published: True

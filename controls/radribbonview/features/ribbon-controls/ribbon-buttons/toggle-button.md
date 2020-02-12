@@ -1,7 +1,7 @@
 ---
 title: Ribbon ToggleButton
 page_title: Ribbon ToggleButton
-description: Ribbon ToggleButton
+description: Check our &quot;Ribbon ToggleButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-toggle-button
 tags: ribbon,togglebutton
 published: True

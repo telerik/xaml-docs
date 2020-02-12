@@ -1,7 +1,7 @@
 ---
 title: What is the difference between OData and WCF Data Services ?
 page_title: What is the difference between OData and WCF Data Services ?
-description: What is the difference between OData and WCF Data Services ?
+description: Check our &quot;What is the difference between OData and WCF Data Services ?&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-faq-difference-between-odata-and-wcfdataservices
 tags: what,is,the,difference,between,odata,and,wcf,data,services,?
 published: True

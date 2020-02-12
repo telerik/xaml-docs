@@ -1,7 +1,7 @@
 ---
 title: IsIndeterminate
 page_title: IsIndeterminate
-description: IsIndeterminate
+description: Check our &quot;IsIndeterminate&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
 slug: isindeterminate
 tags: isindeterminate
 published: True

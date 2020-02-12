@@ -1,7 +1,7 @@
 ---
 title: Commands and Tools
 page_title: Commands and Tools
-description: Commands and Tools
+description: Check our &quot;Commands and Tools&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
 slug: radimageeditor-features-commands-and-tools
 tags: commands,and,tools
 published: True

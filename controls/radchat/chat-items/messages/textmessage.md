@@ -1,7 +1,7 @@
 ---
 title: TextMessage
 page_title: TextMessage
-description: TextMessage
+description: Check our &quot;TextMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-textmessage
 tags: messages,textmessage
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Highlight Behavior
 page_title: Highlight Behavior
-description: Highlight Behavior
+description: Check our &quot;Highlight Behavior&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
 slug: radautocompletebox-features-highlightbehavior
 tags: highlight,behavior
 published: True

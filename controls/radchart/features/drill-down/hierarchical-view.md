@@ -1,7 +1,7 @@
 ---
 title: Hierarchical View
 page_title: Hierarchical View
-description: Hierarchical View
+description: Check our &quot;Hierarchical View&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-drill-down-hierarchical-view
 tags: hierarchical,view
 published: True

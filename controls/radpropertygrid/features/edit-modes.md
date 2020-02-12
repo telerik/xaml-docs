@@ -1,7 +1,7 @@
 ---
 title: Edit Modes
 page_title: Edit Modes
-description: Edit Modes
+description: Check our &quot;Edit Modes&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-edit-modes
 tags: edit,modes
 published: True

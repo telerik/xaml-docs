@@ -1,7 +1,7 @@
 ---
 title: Binding to Object
 page_title: Binding to Object
-description: Binding to Object
+description: Check our &quot;Binding to Object&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
 slug: radradialmenu-populating-with-data-binding-to-object
 tags: binding,to,object
 published: True

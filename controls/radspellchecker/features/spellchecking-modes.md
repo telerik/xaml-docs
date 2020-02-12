@@ -1,7 +1,7 @@
 ---
 title: SpellChecking Modes
 page_title: SpellChecking Modes
-description: SpellChecking Modes
+description: Check our &quot;SpellChecking Modes&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
 slug: radspellchecker-spellchecking-modes
 tags: spellchecking,modes
 published: True

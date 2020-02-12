@@ -1,7 +1,7 @@
 ---
 title: Calculated Items
 page_title: Calculated Items
-description: Calculated Items
+description: Check our &quot;Calculated Items&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-queryable-calc-items
 tags: calculated,items
 published: True

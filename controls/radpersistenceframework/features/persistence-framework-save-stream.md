@@ -1,7 +1,7 @@
 ---
 title: Save in a Stream
 page_title: Save in a Stream
-description: Save in a Stream
+description: Check our &quot;Save in a Stream&quot; documentation article for the RadPersistenceFramework {{ site.framework_name }} control.
 slug: persistence-framework-save-stream
 tags: save,in,a,stream
 published: True

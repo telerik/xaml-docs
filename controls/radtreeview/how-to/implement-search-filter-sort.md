@@ -1,7 +1,7 @@
 ---
 title: Implement Search, Filter and Sort
 page_title: Implement Search, Filter and Sort
-description: Implement Search, Filter and Sort
+description: Check our &quot;Implement Search, Filter and Sort&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-how-to-implement-search-filter-sort
 tags: implement,search,,filter,and,sort
 published: True

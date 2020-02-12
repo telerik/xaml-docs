@@ -1,7 +1,7 @@
 ---
 title: Multiple Selection
 page_title: Multiple Selection
-description: Multiple Selection
+description: Check our &quot;Multiple Selection&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-multiple-selection
 tags: multiple, selection
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Change the predefined scroll buttons
 page_title: Change the predefined scroll buttons
-description: Change the predefined scroll buttons
+description: Check our &quot;Change the predefined scroll buttons&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
 slug: radcarousel-how-to-change-scroll-buttons
 tags: change,the,predefined,scroll,buttons
 published: True

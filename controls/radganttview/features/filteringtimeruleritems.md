@@ -1,7 +1,7 @@
 ---
 title: Filtering TimeRulerItems
 page_title: Filtering TimeRulerItems
-description: Filtering TimeRulerItems
+description: Check our &quot;Filtering TimeRulerItems&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-filteringtimeruleritems
 tags: filtering,timeruleritems
 published: True

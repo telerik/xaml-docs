@@ -1,7 +1,7 @@
 ---
 title: ReadOnlyEditorState
 page_title: ReadOnlyEditorState
-description: ReadOnlyEditorState
+description: Check our &quot;ReadOnlyEditorState&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-features-readonlyeditorstate
 tags: readonlyeditorstate
 published: True

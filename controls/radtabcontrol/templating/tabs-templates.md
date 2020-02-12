@@ -1,7 +1,7 @@
 ---
 title: Templates
 page_title: Templates
-description: Templates
+description: Check our &quot;Templates&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-templating-tabs-templates
 tags: templates
 published: True

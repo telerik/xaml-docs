@@ -1,7 +1,7 @@
 ---
 title: Data Binding to Nested Collections
 page_title: Data Binding to Nested Collections
-description: Data Binding to Nested Collections
+description: Check our &quot;Data Binding to Nested Collections&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-populating-with-data-data-binding-to-nested-collections
 tags: data,binding,to,nested,collections
 published: True

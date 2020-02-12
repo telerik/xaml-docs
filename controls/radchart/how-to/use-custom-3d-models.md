@@ -1,7 +1,7 @@
 ---
 title: Use Custom 3D Models
 page_title: Use Custom 3D Models
-description: Use Custom 3D Models
+description: Check our &quot;Use Custom 3D Models&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-how-to-use-custom-3d-models
 tags: use,custom,3d,models
 published: True

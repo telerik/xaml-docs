@@ -1,7 +1,7 @@
 ---
 title: Chart Legend
 page_title: Chart Legend
-description: Chart Legend
+description: Check our &quot;Chart Legend&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-chart-legend
 tags: chart,legend
 published: True

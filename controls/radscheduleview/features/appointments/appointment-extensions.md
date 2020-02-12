@@ -1,7 +1,7 @@
 ---
 title: Appointment Extensions
 page_title: Appointment Extensions
-description: Appointment Extensions
+description: Check our &quot;Appointment Extensions&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-features-appointment-extensions
 tags: appointment,extensions
 published: True

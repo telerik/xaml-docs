@@ -1,7 +1,7 @@
 ---
 title: Styling Numeric Buttons
 page_title: Styling Numeric Buttons
-description: Styling Numeric Buttons
+description: Check our &quot;Styling Numeric Buttons&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-styles-and-templates-styling-the-numeric-buttons
 tags: styling,the,numeric,buttons
 published: True

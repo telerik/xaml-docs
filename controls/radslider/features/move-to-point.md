@@ -1,7 +1,7 @@
 ---
 title: Move to point
 page_title: Move to point
-description: Move to point
+description: Check our &quot;Move to point&quot; documentation article for the RadSlider {{ site.framework_name }} control.
 slug: radslider-move-to-point
 tags: move,to,point
 published: True

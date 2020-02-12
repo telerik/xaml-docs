@@ -1,7 +1,7 @@
 ---
 title: Chart Extensions
 page_title: Chart Extensions
-description: Chart Extensions
+description: Check our &quot;Chart Extensions&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-chart-extensions
 tags: chart,extensions
 published: True

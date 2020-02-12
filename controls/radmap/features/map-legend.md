@@ -1,7 +1,7 @@
 ---
 title: Map Legend
 page_title: Map Legend
-description: Map Legend
+description: Check our &quot;Map Legend&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-map-legend
 tags: map,legend
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Databinding 
 page_title: Databinding 
-description: Databinding 
+description: Check our &quot;Databinding&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
 slug: radbreadcrumb-databinding
 tags: databinding,
 published: True

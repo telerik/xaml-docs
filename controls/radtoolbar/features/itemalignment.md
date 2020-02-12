@@ -1,7 +1,7 @@
 ---
 title: Item Alignment
 page_title: Item Alignment
-description: Item Alignment
+description: Check our &quot;Item Alignment&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
 slug: radtoolbar-features-itemalignment
 tags: item,alignment
 publish: True

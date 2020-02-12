@@ -1,7 +1,7 @@
 ---
 title: Properties
 page_title: Properties
-description: Properties
+description: Check our &quot;Properties&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
 slug: raddatabar-main_properties
 tags: properties
 published: True

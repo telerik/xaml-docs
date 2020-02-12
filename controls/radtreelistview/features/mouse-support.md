@@ -1,7 +1,7 @@
 ---
 title: Mouse Support
 page_title: Mouse Support
-description: Mouse Support
+description: Check our &quot;Mouse Support&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelistview-features-mouse-support
 tags: mouse,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Set MaxLength Property of the Input Area
 page_title: Set MaxLength Property of the Input Area
-description: Set MaxLength Property of the Input Area
+description: Check our &quot;Set MaxLength Property of the Input Area&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-howto-set-max-length-input-area
 tags: set,maxlength,property,of,the,input,area
 published: True
@@ -202,10 +202,6 @@ Finally set the property in XAML:
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 
-## See Also
-
+## See Also  
  * [Enable\Disable RadComboBoxItems]({%slug radcombobox-howto-enable-disable-radcombobox-items%})
-
- * [Open the DropDown When the Control Gets Focus]({%slug radcombobox-howto-open-dropdown-get-focus%})
-
- * [Get a Grid Like Dropdown]({%slug radcombobox-grid-like-dropdown%})
+ * [Open the DropDown When the Control Gets Focus]({%slug radcombobox-howto-open-dropdown-get-focus%}) 

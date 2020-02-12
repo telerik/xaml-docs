@@ -1,7 +1,7 @@
 ---
 title: Dynamic Layer
 page_title: Dynamic Layer
-description: Dynamic Layer
+description: Check our &quot;Dynamic Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-dynamic-layer
 tags: dynamic,layer
 published: True

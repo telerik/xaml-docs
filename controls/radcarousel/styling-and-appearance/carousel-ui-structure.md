@@ -1,7 +1,7 @@
 ---
 title: UI Structure
 page_title: UI Structure
-description: UI Structure
+description: Check our &quot;UI Structure&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
 slug: carousel-ui-structure
 tags: ui,structure
 published: True

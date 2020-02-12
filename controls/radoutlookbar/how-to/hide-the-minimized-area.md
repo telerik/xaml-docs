@@ -1,7 +1,7 @@
 ---
 title: How to Hide the Minimized Area
 page_title: How to Hide the Minimized Area
-description: How to Hide the Minimized Area
+description: Check our &quot;How to Hide the Minimized Area&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
 slug: radoutlookbar-how-to-hide-the-minimized-area
 tags: how,to,hide,the,minimized,area
 published: True

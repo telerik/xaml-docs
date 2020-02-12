@@ -1,7 +1,7 @@
 ---
 title: Comments
 page_title: Comments
-description: Comments
+description: Check our &quot;Comments&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-comments
 tags: comments
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Focus Input Controls In Header
 page_title: Focus Input Controls In Header
-description: Focus Input Controls In Header
+description: Check our &quot;Focus Input Controls In Header&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-focus-input-controls-in-header
 tags: focus,input,controls,in,header
 published: True

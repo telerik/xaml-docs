@@ -1,7 +1,7 @@
 ---
 title: Serialization
 page_title: Serialization
-description: Serialization
+description: Check our &quot;Serialization&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-serialization
 tags: serialization
 published: True

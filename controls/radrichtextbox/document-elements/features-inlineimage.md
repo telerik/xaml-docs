@@ -1,7 +1,7 @@
 ---
 title: ImageInline
 page_title: ImageInline
-description: ImageInline
+description: Check our &quot;ImageInline&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-document-elements-inlineimage
 tags: Image,Inline
 published: True

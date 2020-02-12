@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: This article demonstrates how to setup a sample application containing a RadChat. 
+description: This article demonstrates how to setup a sample application containing a Progress Telerik RadChat. 
 slug: chat-getting-started
 tags: getting,started
 published: True

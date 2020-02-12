@@ -1,7 +1,7 @@
 ---
 title: Tick placement
 page_title: Tick placement
-description: Tick placement
+description: Check our &quot;Tick placement&quot; documentation article for the RadSlider {{ site.framework_name }} control.
 slug: radslider-tick-placement
 tags: tick,placement
 published: True

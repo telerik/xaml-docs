@@ -1,7 +1,7 @@
 ---
 title: Styling the RadRadioButton
 page_title: Styling the RadRadioButton
-description: Styling the RadRadioButton
+description: Check our &quot;Styling the RadRadioButton&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-styles-and-templates-styling-the-radradiobutton
 tags: styling,the,radradiobutton
 published: True

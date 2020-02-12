@@ -1,7 +1,7 @@
 ---
 title: Select  the clicked Item of a RadTreeView
 page_title: Select  the clicked Item of a RadTreeView
-description: Select  the clicked Item of a RadTreeView
+description: Check our &quot;Select  the clicked Item of a RadTreeView&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 slug: radcontextmenu-how-to-select-the-clicked-item-of-radtreeview
 tags: select,,the,clicked,item,of,a,radtreeview
 published: True

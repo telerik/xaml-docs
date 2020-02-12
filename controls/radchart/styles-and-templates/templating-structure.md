@@ -1,7 +1,7 @@
 ---
 title: Template Structure
 page_title: Template Structure
-description: Template Structure
+description: Check our &quot;Template Structure&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-templating-structure
 tags: template,structure
 published: True

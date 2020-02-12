@@ -1,7 +1,7 @@
 ---
 title: Orientation
 page_title: Orientation
-description: Orientation
+description: Check our &quot;Orientation&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
 slug: orientation
 tags: orientation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Keyboard Navigation
 page_title: Keyboard Navigation
-description: Keyboard Navigation
+description: Check our &quot;Keyboard Navigation&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-keyboard-navigation
 tags: keyboard,navigation
 published: True

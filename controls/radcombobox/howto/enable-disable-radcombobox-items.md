@@ -1,7 +1,7 @@
 ---
 title: Enable\Disable RadComboBoxItems
 page_title: Enable\Disable RadComboBoxItems
-description: Enable\Disable RadComboBoxItems
+description: Check our &quot;Enable\Disable RadComboBoxItems&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-howto-enable-disable-radcombobox-items
 tags: enable\disable,radcomboboxitems
 published: True

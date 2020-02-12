@@ -1,7 +1,7 @@
 ---
 title: Fullscreen
 page_title: Fullscreen
-description: Fullscreen
+description: Check our &quot;Fullscreen&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-fullscreen
 tags: fullscreen
 publish: True

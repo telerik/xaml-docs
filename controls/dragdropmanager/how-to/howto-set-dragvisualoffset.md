@@ -1,7 +1,7 @@
 ---
 title: Set Drag Visual Offset
 page_title: Set Drag Visual Offset
-description: Set Drag Visual Offset
+description: Check our &quot;Set Drag Visual Offset&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-howto-set-dragvisualoffset
 tags: set,drag,visual,offset
 published: True
@@ -10,23 +10,50 @@ position: 5
 
 # Set Drag Visual Offset
 
-The DragVisualOffset property gets or sets the mouse offset relative to the drag source. You can use it in combination with the RelativeStartPoint properties of the DragInitializeEventArgs in order to calculate and set your own offset.
+The drag visual offset is the offset of the drag visual relative to the drag source element.
 
-The RelativeStartPoint property gives you the relative coordinates of the mouse pointer when starting a drag operation. If you need an additional offset you can use the relative point, create a new one that has the necessary values. And then you can assign it to the DragVisualOffset property, like so: 
+The offset can be set in the __DragDropManager.DragInitialize__ event handler, via the __DragVisualOffset__ property of DragInitializeEventArgs.
 
-#### __C#__
+The DragVisualOffset property can be used in combination with the __RelativeStartPoint__ property of DragInitializeEventArgs in order to calculate and set a proper offset. The RelativeStartPoint property gives you the relative coordinates of the mouse cursor when starting a drag operation.
 
-{{region dragdropmanager-howto-set-dragvisualoffset_0}}
-	private void OnDragInitialize(object sender, DragInitializeEventArgs args)
-	{     
-	  args.DragVisualOffset = new Point(args.RelativeStartPoint.X - 25, args.RelativeStartPoint.Y - 25);              
+#### __[XAML] Example 1: Setting up the view__
+{{region dragdropmanager-howto-set-dragvisualoffset-0}}
+	<Border x:Name="element" Background="#27A306" Width="100" Height="100" telerik:DragDropManager.AllowDrag="True" AllowDrop="True" />
+{{endregion}}
+
+#### __[C#] Example 2: Setting DragVisualOffset__
+{{region dragdropmanager-howto-set-dragvisualoffset-1}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		DragDropManager.AddDragInitializeHandler(this.element, OnElementDragInitialize);
+	}
+
+	private void OnElementDragInitialize(object sender, DragInitializeEventArgs e)
+	{
+		e.AllowedEffects = DragDropEffects.All;
+		e.DragVisual = new TextBlock() { Text = "Dragging...", Background = Brushes.Bisque };
+
+		e.DragVisualOffset = new Point(e.RelativeStartPoint.X - 25, e.RelativeStartPoint.Y - 25);
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2: Setting DragVisualOffset__
+{{region dragdropmanager-howto-set-dragvisualoffset-2}}	
+    Public Sub New()
+        InitializeComponent()
+        DragDropManager.AddDragInitializeHandler(Me.element, AddressOf OnElementDragInitialize)
+    End Sub
 
-{{region dragdropmanager-howto-set-dragvisualoffset_1}}
-	Private Sub OnDragInitialize(sender As Object, args As DragInitializeEventArgs)
-		args.DragVisualOffset = New Point(args.RelativeStartPoint.X - 25, args.RelativeStartPoint.Y - 25)
-	End Sub
+    Private Sub OnElementDragInitialize(ByVal sender As Object, ByVal e As DragInitializeEventArgs)
+        e.AllowedEffects = DragDropEffects.All
+        e.DragVisual = New TextBlock() With {
+            .Text = "Dragging...",
+            .Background = Brushes.Bisque
+        }
+		
+        e.DragVisualOffset = New Point(e.RelativeStartPoint.X - 25, e.RelativeStartPoint.Y - 25)
+    End Sub
 {{endregion}}
+
+![](images/dragdropmanager-howto-set-dragvisualoffset-0.png)

@@ -1,7 +1,7 @@
 ---
 title: FAQ
 page_title: FAQ
-description: FAQ
+description: Check our &quot;FAQ&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-faq
 tags: faq
 published: True

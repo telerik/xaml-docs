@@ -1,7 +1,7 @@
 ---
 title: Getting Start with RadPivotMap
 page_title: Getting Start with RadPivotMap
-description: Getting Start with RadPivotMap
+description: Check our &quot;Getting Start with RadPivotMap&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
 slug: radtreemap-getting-started-pivotmap
 tags: getting-started, pivotmap
 published: True

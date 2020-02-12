@@ -1,7 +1,7 @@
 ---
 title: Entity Model
 page_title: Entity Model
-description: Entity Model
+description: Check our &quot;Entity Model&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-midtier-wpf
 tags: entity,model
 published: True

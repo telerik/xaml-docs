@@ -1,7 +1,7 @@
 ---
 title: Styling the RadSplitButton
 page_title: Styling the RadSplitButton
-description: Styling the RadSplitButton
+description: Check our &quot;Styling the RadSplitButton&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-styles-and-templates-styling-the-radsplitbutton
 tags: styling,the,radsplitbutton
 published: True

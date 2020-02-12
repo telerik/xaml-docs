@@ -1,7 +1,7 @@
 ---
 title: Multiple Times File Selection
 page_title: Multiple Times File Selection
-description: Multiple Times File Selection
+description: Check our &quot;Multiple Times File Selection&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-features-multiple-times-file-selection
 tags: multiple,times,file,selection
 published: True

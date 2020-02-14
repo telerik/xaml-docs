@@ -12,7 +12,7 @@ position: 6
 
 With the Progress Telerik UI for {{ site.framework_name }} Extension you keep your projects in an up-to-date state. The __Latest Version Acquirer__ tool automatically retrieves the most fresh Telerik UI for {{ site.framework_name }} distribution, available on the Telerik website. Running the {% if site.site_name == 'Silverlight' %}[Upgrade Wizard]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%}){% else %}[Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}){% endif %} as a next step makes the task of latest Telerik UI for {{ site.framework_name }} package utilization extremely easy.
 
-{% if site.site_name == 'Silverlight' %}Once a day, upon Visual Studio launch, the Telerik Silverlight{% else %}When a solution containing an Telerik UI for WPF project is loaded in Visual Studio, the Progress Telerik UI for WPF{% endif %} Extension queue the Telerik website for a new version of Telerik UI for {{ site.framework_name }}. A dialog gets displayed when a new version is discovered:
+{% if site.site_name == 'Silverlight' %}Once a day, upon Visual Studio launch, the Telerik Silverlight{% else %}When a solution containing a Telerik UI for WPF project is loaded in Visual Studio, the Progress Telerik UI for WPF{% endif %} Extension queue the Telerik website for a new version of Telerik UI for {{ site.framework_name }}. A dialog gets displayed when a new version is discovered:
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 1](images/extensions_acquirertool_sl_1.png){% else %}![extensions acquirertool wpf 1](images/extensions_acquirertool_wpf_1.png){% endif %}
 

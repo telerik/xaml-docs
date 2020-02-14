@@ -74,7 +74,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 ## Use Native ToolWindow Drag
 
-As of **R1 2020 SP1**, the RadDocking control exposes a **UseNativeInitialToolWindowDrag** property through which you can set to **True** to use of the native Windows drag operation when first undocking a pane/group. This is useful if you wish to be able to use the [Windows Snap Assist feature](https://support.microsoft.com/en-us/help/4027324/windows-10-snap-your-windows) or take into account the "Show window contents while dragging" Windows setting.
+As of **R1 2020 SP1**, the RadDocking control exposes a **UseNativeInitialToolWindowDrag** property through which you can set to **True** to use the native Windows drag operation when first undocking a pane/group. This is useful if you wish to be able to use the [Windows Snap Assist feature](https://support.microsoft.com/en-us/help/4027324/windows-10-snap-your-windows) or take into account the "Show window contents while dragging" Windows setting.
 
 #### __[XAML] Example 1: Enable Native ToolWindow Drag__
 

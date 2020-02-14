@@ -10,13 +10,15 @@ position: 1
 
 # Creating an Application and Adding Telerik Controls
 
-The following topic describes what steps you should perform in order to add the Telerik UI for {{ site.site_name }} in your application. There are two ways to do this - first one is to install Telerik Extensions for VisualStudio. The second one is by adding the necessary assemblies as references in your application manually. No matter which of the two manners you will choose, you will be able to use the Toolbox to create your application.
+The following topic describes what steps you should perform in order to add the Telerik UI for {{ site.site_name }} in your application. 
 
-## Creating Application with Telerik Visual Studio Extensions
+There are two ways to do this - the first one is to install [Progress Telerik WPF Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) for VisualStudio. The second one is to add the necessary assemblies as [references in your application manually](https://docs.microsoft.com/en-us/visualstudio/ide/managing-references-in-a-project?view=vs-2019). No matter which of the two manners you will choose, you will be able to use the Visual Studio Toolbox to create your application.
 
-1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% endif %}{% if site.site_name == 'WPF' %}({%slug installation-system-requirements-wpf%}){% endif %}.
+## Creating Application with the Telerik Visual Studio Extension
 
-2. Create new Telerik {{ site.site_name }} application. {% if site.site_name == 'WPF' %}For more information, check out the [Create Project]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) article.{% endif %}
+1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% else %}({%slug installation-system-requirements-wpf%}){% endif %}.
+
+2. Create new Telerik {{ site.site_name }} application. {% if site.site_name == 'WPF' %}Read more in the [Create Project]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) article.{% endif %}
 	
 	#### __Figure 1: Creating new Telerik application__	
 	{% if site.site_name == 'Silverlight' %}
@@ -24,17 +26,17 @@ The following topic describes what steps you should perform in order to add the 
 	{% else %}
 	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)
 
-	>You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application.
+	>You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application. Also there is a separate project template for __.Net Core__.
 	{% endif %}
 
-3. Choose the application template. The options are a blank template or one of the MS Office inspired application templates. Choose the Blank option.
+3. Choose the project template. The options are a blank template or one of the MS Office inspired project templates. Choose the Blank option.
 	
-	#### __Figure 2: Choosing an application template__
+	#### __Figure 2: Choosing a project template__
 	![Choosing an application template](images/installation-adding-to-application-create-application-and-adding-control-2.png)
 
 	At this point the project references only the common Telerik.Windows.Controls.dll. 
 
-4. {% if site.site_name == 'WPF' %}[Configure the project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% endif %}{% if site.site_name == 'Silverlight' %}[Configure the project]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the  control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
+4. {% if site.site_name == 'WPF' %}[Configure the project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% else' %}[Configure the project]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
 
 	#### __Figure 3: Adding references to the charting controls__
 	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
@@ -47,8 +49,14 @@ The following topic describes what steps you should perform in order to add the 
           	
 2. Create a new {{ site.site_name }} application.
 	
-	#### __Figure 4: Creating new {{ site.site_name }} application__
+	#### __Figure 4: Creating new {{ site.site_name }} application__  	
 	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-4.png)
+	
+	{% if site.site_name == 'WPF' %}
+	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-5.png)
+	{% else %}
+	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-6.png)
+	{% endif %}
 
 3. Add references to the Telerik assemblies. There are two options to do this.
 	
@@ -58,46 +66,50 @@ The following topic describes what steps you should perform in order to add the 
 	
 ## Dragging Controls from Visual Studio Toolbox
 
-* Add the Telerik {{ site.site_name }} controls to the {% if site.framework_name == 'WPF' %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}){% else %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%}){% endif %}.
+1. Add the Telerik {{ site.site_name }} controls to the {% if site.framework_name == 'WPF' %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}){% else %}[Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%}){% endif %}.
 
 	>tip See the assemblies required by each Telerik control in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} article.
 
-* Open {% if site.site_name == 'WPF' %}MainWindow.xaml{% else %}MainPage.xaml{% endif %} of the project you have previously created (in the [Creating Application and Manually Referencing the Telerik Assemblies](#creating-application-and-manually-referencing-the-telerik-assemblies) section).
+2. Open {% if site.site_name == 'WPF' %}MainWindow.xaml{% else %}MainPage.xaml{% endif %} of the project you have previously created (in the [Creating Application and Manually Referencing the Telerik Assemblies](#creating-application-and-manually-referencing-the-telerik-assemblies) section).
 
-* Select any Telerik control in the Visual Studio Toolbox.
+3. Select any Telerik control in the Visual Studio Toolbox.
 
-* Drag and drop the control in the Visual Studio XAML designer. 
+	#### __Figure 5: Telerik controls in the Visual Studio Toolbox__  	
+	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-7.png)
+
+4. Drag and drop the control in the Visual Studio XAML designer. 
 
 	{% if site.site_name == 'WPF' %}
 	#### __[XAML] Example 1: RadButton XAML automatically generated by dropping the control onto the Visual Studio designer__
 	{{region installation-adding-to-application-create-application-and-adding-control-0}}
 		<Window x:Class="WpfApplication1.Window1"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-			Title="Window1" Height="300" Width="300">
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 			<Grid>
-				<telerik:RadButton></telerik:RadButton>
+				<telerik:RadButton Content="Button" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto"/>
 			</Grid>
 		</Window>
 	{{endregion}}
 	{% else %}
 	#### __[XAML] Example 1: RadButton XAML automatically generated by dropping the control onto the Visual Studio designer__
 	{{region installation-adding-to-application-create-application-and-adding-control-1}}
-		<UserControl 
-			x:Class="Test.MainPage"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"    
-			mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+		<UserControl x:Class="Test.MainPage"
+					 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+					 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+					 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"    
+					 mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
 		  <Grid x:Name="LayoutRoot">
-				<telerik:RadTreeView></telerik:RadTreeView>
+				<telerik:RadButton Content="Button" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto"/>
 		  </Grid>
 		</UserControl>
 	{{endregion}}
 	{% endif %}
+	
+	#### __Figure 6: RadButton dragged from the Visual Studio toolbox__  	
+	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-8.png)
 
 > After dropping a control, Visual Studio automatically creates a namespace that points to the appropriate assembly. If you want to manually set up a namespace take a look at the [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%}) topic.
 

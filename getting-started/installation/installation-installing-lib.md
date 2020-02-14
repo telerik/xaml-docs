@@ -1,7 +1,7 @@
 ---
 title: Latest Internal Build (LIB)
 page_title: Using Latest Internal Build Assemblies
-description: Use LIB to test latest bug fixes.
+description: This article describes what is Telerik WPF LIB and how to download it to get the lastest bug fixes.
 slug: installation-installing-lib
 tags: using,the,hotfix,(dlls,only), lib, latest, internal, build
 published: True

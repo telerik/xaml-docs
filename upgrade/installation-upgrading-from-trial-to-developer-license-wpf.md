@@ -15,7 +15,7 @@ The purpose of this topic is to explain you how to upgrade Telerik UI Trial to T
 
 ## Automatic Upgrade to newer version of UI for WPF
 
-Utilize the VS Extensions wizards for this purpose:
+Utilize the __Progress Telerik UI for WPF Extension__ wizards for this purpose:
 
 * [Latest Version Acquirer Tool]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
 

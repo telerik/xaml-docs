@@ -11,9 +11,9 @@ site_name: WPF
 
 # Create Project
 
-Telerik Visual Studio Extensions for WPF allows you to quickly create an application pre-configured to use Telerik UI for WPF. 
+__Progress Telerik UI for WPF Extension__ allows you to quickly create an application pre-configured to use Telerik UI for WPF. 
 
-The fastest way to have such a project is by using the Telerik Visual Studio Extensions menu. The following steps show how create a new project with Telerik dlls referenced.
+The fastest way to have such a project is by using the Progress Telerik UI for WPF Extension menu. The following steps show how create a new project with Telerik dlls referenced.
 
 1. Find the Telerik extensions menu in Visual Studio. The menu can appear on different places based on the Visual Studio version. With versions prior to VS 2019, the Telerik option is found as a separate option in the horizontal file menu. In VS 2019 the menu is hidden in the Extensions Visual Studio menu. __Figure 1__ shows where to find the extensions in the different Visual Studio versions.
 

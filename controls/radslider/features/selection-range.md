@@ -84,24 +84,22 @@ The RadSlider control also exposes properties to control the minimum and maximum
 
 Through the **IsCoercionSuppressed** property you can control whether the slider should coerce the setting of related properties like **Selection**, **SelectionStart**, **SelectionEnd**, **MinimumRangeSpan** and **MaximumRangeSpan**.
 
-#### __[XAML] Example 6: Setting IsSelectionRangeEnabled in XAML__
+#### __[XAML] Example 6: Setting IsCoercionSuppressed in XAML__
 
 {{region xaml-radslider-selection-range_6}}
-	<telerik:RadSlider IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
+	<telerik:RadSlider IsCoercionSuppressed="True" IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
 {{endregion}}
 
-#### __[C#] Example 7: Setting IsSelectionRangeEnabled in code-behind__
+#### __[C#] Example 7: Setting IsCoercionSuppressed in code-behind__
 
 {{region cs-radslider-selection-range_7}}            
-	slider.MinimumRangeSpan = 5;
-    slider.MaximumRangeSpan = 30;
+	slider.IsCoercionSuppressed = true;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Setting IsSelectionRangeEnabled in code-behind__
+#### __[VB.NET] Example 7: Setting IsCoercionSuppressed in code-behind__
 
 {{region vb-radslider-selection-range_7}}	
-	slider.MinimumRangeSpan = 5
-    slider.MaximumRangeSpan = 30
+	slider.IsCoercionSuppressed = true
 {{endregion}}
 
 If set to **True**, the coercion is done only when the user manipulates the slider and not if the related properties are set in code or through bindings.

@@ -19,7 +19,7 @@ When using the __New Project Wizard__ or __Project Configuration Wizard__, the p
 
 ![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
 
-The Progress Telerik UI for WPF Extension assembly list control is controlled by the dependency analyzer, which will not let you select Telerik UI for WPF assemblies without selecting the assemblies they depend on. Both the aspects are covered: 
+The Progress Telerik UI for WPF Extension assembly list control is controlled by the dependency analyzer, which will not let you select Telerik UI for WPF assemblies without selecting the assemblies they depend on. Both aspects are covered: 
 
 * Selecting a __Telerik UI__ assembly will also select the additional assemblies it depends on as well. 
 

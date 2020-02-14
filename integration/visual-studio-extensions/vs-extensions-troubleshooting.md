@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 page_title: Troubleshooting
-description: Troubleshooting
+description: Progress Telerik UI Extension troubleshooting list.
 slug: radcontrols-vs-extensions-troubleshooting
 tags: troubleshooting 
 published: True
@@ -12,11 +12,11 @@ position: 11
 
 ## Missing Telerik menu in Visual Studio
 
-*Reason:*
+__REASON:__
 
-Telerik Visual Studio Extensions are disabled or not installed correctly.
+Progress Telerik UI for {{ site.framework_name }} Extension are disabled or not installed correctly.
 
-*Suggested solution 1 (Extension is Disabled):*
+__Solution 1 - extension is disabled__
 
 * Open Visual Studio
 
@@ -24,11 +24,11 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 
 * Open the **Installed** tab on the left
 
-* Search for **Telerik WPF VSExtensions** and make sure they are **Enabled**
+* Search for **Telerik {{ site.framework_name }} VSExtensions** and make sure they are **Enabled**
 
 ![vsextensions-disabled](images/VSExtensions_disabled.png)
 
-*Suggested solution 2 (Extension is not installed):*
+__Solution 2 - extension is not installed__
 
 * Open Visual Studio
 
@@ -36,7 +36,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 
 * Open the **Online** tab on the left
 
-* Search for **Telerik WPF VSExtensions**
+* Search for **Telerik {{ site.framework_name }} VSExtensions**
 
 * Download and install the extensions
 

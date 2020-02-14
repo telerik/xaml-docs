@@ -17,11 +17,11 @@ The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://
 The __Export with SpreadsheetStreamingExport__ functionality uses additional libraries so you need to add references to the following assemblies:
 
 * Telerik.Windows.Controls.dll
-* Telerik.Windows.Controls.Data.dll
 * Telerik.Windows.Controls.Input.dll
 * Telerik.Windows.Controls.GridView.dll
 * Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
 * Telerik.Documents.SpreadsheetStreaming.dll
+* Telerik.Windows.Data.dll
 * Telerik.Windows.Zip.dll
 
 > __Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll__ is a new binary introduced in __R1 2019__. 

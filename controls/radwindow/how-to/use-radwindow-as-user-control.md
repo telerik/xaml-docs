@@ -69,10 +69,24 @@ As this is an user control of type __RadWindow__ you can use any of the features
 	window.Show()
 {{endregion}}
 
-If you want to use RadWindow as the main window of the application, remove the __StartupUri__ setting in the App.xaml file. Then create a new instance of the custom RadWindow and show it in the __OnStartup__ method override of the __App__ class.
+If you want to use RadWindow as the main window of the application, remove the __StartupUri__ setting in the App.xaml file.
+
+#### __XAML__  
+{{region xaml-radwindow-how-to-use-radwindow-as-user-control_5}}
+	<Application x:Class="RadWindowSamples.App"
+				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+				 <!--StartupUri="MainWindow.xaml"-->
+		<Application.Resources>
+			 
+		</Application.Resources>
+	</Application>
+{{endregion}}
+
+Then create a new instance of the custom RadWindow and show it in the __OnStartup__ method override of the __App__ class.
 
 #### __C#__  
-{{region vb-radwindow-how-to-use-radwindow-as-user-control_5}}
+{{region vb-radwindow-how-to-use-radwindow-as-user-control_6}}
 	public partial class App : Application
 	{
 		protected override void OnStartup(StartupEventArgs e)
@@ -84,7 +98,7 @@ If you want to use RadWindow as the main window of the application, remove the _
 {{endregion}}
 
 #### __VB.NET__  
-{{region vb-radwindow-how-to-use-radwindow-as-user-control_6}}
+{{region vb-radwindow-how-to-use-radwindow-as-user-control_7}}
 	Public Partial Class App
 	    Inherits Application
 	    Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
@@ -97,7 +111,7 @@ If you want to use RadWindow as the main window of the application, remove the _
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, note that the newly created user control will not receive automatically the Window style. You should add the following style after the merged dictionaries to fix this:
 
 #### __XAML__  
-{{region xaml-radwindow-how-to-use-radwindow-as-user-control_7}}
+{{region xaml-radwindow-how-to-use-radwindow-as-user-control_8}}
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>

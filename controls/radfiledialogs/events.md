@@ -92,9 +92,9 @@ This article lists the events specific to all of the RadFileDialog controls.
 		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
 		{
 			if (e.IsOpeningOnEmptySpace)
-            {
-                // do something
-            }
+           		{
+              			  // do something
+            		}
 		}
 	{{endregion}}	
 

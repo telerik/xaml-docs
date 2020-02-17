@@ -224,6 +224,7 @@ The following topic explains the specifics of the theme's palette and features.
 * [Changing Corner Radius](#set-corner-radius)
 * [Material Assist](#material-assist)
 * [Window Buttons Alignment](#window-buttons-alignment)
+* [Change ScrollBarsMode](#change-scrollbarsmode)
 
 ## Default Theme Colors
 
@@ -418,18 +419,38 @@ In accordance to the MacOS design, by default the minimize, maximize, restore an
 #### **Figure 5: Appearance of the RadWindow with the different alignments**  
 ![RadToggleButton States](images/crystal-theme-window-buttons-alignment.png)
 
+## Change ScrollBarsMode
+
+By default, the scrollbars in the Crystal theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Crystal palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to one of the following values: 
+
+*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+
+*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
+
+*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+
+#### **Figure 6: ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode**  
+![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)
+
+__Example 8__ demonstrates how the __ScrollBarsMode__ property of the palette can be set.
+
+#### **[C#] Example 8: Setting the __ScrollBarsMode__ property of the palette to Compact**
+{{region styling-appearance-crystal-theme-7}}	
+	CrystalPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
+{{endregion}}
+
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the CrystalPalette. The default values are 0.35 and 0.55 respectively. 
 
-#### __[C#] Example 8: Changing the opacity__		
-{{region cs-styling-appearance-crystal-theme-7}}
+#### __[C#] Example 9: Changing the opacity__		
+{{region cs-styling-appearance-crystal-theme-8}}
 	CrystalPalette.Palette.DisabledOpacity = 0.5;
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 8: Changing the opacity__		
-{{region vb-styling-appearance-material-theme-8}}
+#### __[VB.NET] Example 10: Changing the opacity__		
+{{region vb-styling-appearance-material-theme-9}}
 	CrystalPalette.Palette.DisabledOpacity = 0.5
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}

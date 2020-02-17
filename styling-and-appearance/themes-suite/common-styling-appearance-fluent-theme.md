@@ -397,7 +397,7 @@ It is possible to disable the ripple effect of the FluentControl through a style
 
 ## Change ScrollBarsMode
 
-By default scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Fluent palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to the following values: 
+By default, the scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Fluent palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to one of the following values: 
 
 *  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
 

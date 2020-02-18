@@ -214,18 +214,6 @@ article table
 
 With the **R3 2018** release of the **UI for WPF** suite we have introduced the brand new **Crystal theme**. Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
 
-The following topic explains the specifics of the theme's palette and features.
-
-* [Default Theme Colors](#default-theme-colors)
-* [CrystalPalette Properties](#crystalpalette-properties)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Changing Fonts](#font-family-and-font-size)
-* [Glyphs](#glyphs)
-* [Changing Corner Radius](#set-corner-radius)
-* [Material Assist](#material-assist)
-* [Window Buttons Alignment](#window-buttons-alignment)
-* [Change ScrollBarsMode](#change-scrollbarsmode)
-
 ## Default Theme Colors
 
 The **Crystal Theme** is designed to be easily modified via the exposed colors in the theme palette.
@@ -423,11 +411,13 @@ In accordance to the MacOS design, by default the minimize, maximize, restore an
 
 By default, the scrollbars in the Crystal theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Crystal palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to one of the following values: 
 
-*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+*  **ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
 
-*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
+*  **ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
 
-*  **Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+*  **ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+
+>important The __ScrollViewerScrollBarsMode__ enumeration of the CrystalPalette can be found under the __Telerik.Windows.Controls.Theming__ namespace.
 
 #### **Figure 6: ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode**  
 ![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)

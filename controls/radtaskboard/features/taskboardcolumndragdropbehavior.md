@@ -70,7 +70,7 @@ To get the dragged items you can use the __DraggedItems__ collection property. T
 		{         
 			public override bool CanStartDrag(DragDropState state)
 			{
-				var draggedItem = (state.DraggedItems as List<object>)[0] as TaskBoardCardModel;
+				var draggedItem = state.DraggedItems.Cast<TaskBoardCardModel>().ToList()[0];
 				if (draggedItem.State == "Done")
 				{
 					return false;

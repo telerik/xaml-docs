@@ -61,11 +61,11 @@ Visual Studio solution containing the source code of the examples is available i
 
 	![](images/installing-wpf-demos-3.png)
 
->tip The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version as the downlaoded demos. 
+>tip The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version as the downloaded demos. 
 
 ## Common Issues
 
-In this section we will review the most common issues experiencing when running the WPF Demos application.
+In this section we will review the most common issues experienced when running the WPF Demos application.
 
 ### "Could not load file or assembly" error when running an example from the demos application
 

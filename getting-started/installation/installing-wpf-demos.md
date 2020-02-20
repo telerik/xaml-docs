@@ -9,25 +9,23 @@ position: 9
 site_name: WPF
 ---
 
-# Installing WPF Demos application
+# Installing WPF Demos Application
 
-__Telerik WPF Demos application__ provides a bunch of examples showcasing all the important features of Telerik UI for WPF controls.
+__Telerik WPF Demos application__ provides a rich list of examples showcasing all the important features of Telerik UI for WPF.
 
 In this topic we will go through the following sections:
 
-* [How to run WPF Demos application](#how-to-run-wpf-demos-application)
+* [How to Run WPF Demos Application](#how-to-run-wpf-demos-application)
 
-* [How to get the solution](#how-to-get-the-solution)
+* [How to Get the Source Code](#how-to-get-the-source-code)
 
-* [Common issues](#common-issues)
+* [Common Issues](#common-issues)
 
-## How to run WPF Demos application
+## How to Run WPF Demos Application
 
 WPF Demos application could be accessed from the following link: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
-You can also download the application from the Windows Store: 
-
-[<img style="width:125px;height:50px" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>] (https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
+You can also download the application from the Windows Store: [<img style="width:125px;height:50px" alt="Get it from Microsoft" src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png"/>](https://www.microsoft.com/store/apps/9PB1M527GK9C?ocid=badge)
 
 As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
 
@@ -37,55 +35,53 @@ As it is deployed as a ClickOnce application it requires the following component
 
 * SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
 
-If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. 
+>tip If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. Note that lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer. Otherwise, you will need to [install](https://demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 
-> Lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer.
+>important If you have a previous installation of WPF Demos, make sure to uninstall it before installing a newer version.
 
-Otherwise, you will need to [install](demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
+## How to Get the Source Code
 
->If you have a previous installation of WPF Demos, make sure to uninstall it before installing a newer version.
+Visual Studio solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Follow the next steps in order to download it:
 
-## How to get the solution
+1. Go to your [account page at telerik.com](https://www.telerik.com/account/) and log in, if necessary.
 
-The solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Follow the next steps in order to download it:
+2. Click on the __DOWNLOADS__ button. This will open the list with all available products for your account.
 
-* Log in at [www.telerik.com](http://www.telerik.com/account.aspx).
+	![](images/installing-wpf-demos-0.png)
 
-* Click Products & Subscriptions tab and then select Telerik UI for WPF from the dropdown (or Trials if you have a trial license).
+3. Click on the __Progress Telerik UI for WPF__ item in the products list. This will open the page with all available downloads for the WPF product.
 
->If you've purchased Telerik DevCraft Complete/Ultimate bundle, you will see it in the Products & Subscriptions dropdown.
+	![](images/installing-wpf-demos-1.png)
 
-* Click "Download Installer and other resources" button. 
+4. Find the __Telerik_UI_for_WPF_[version]_Demos.zip__ file and click on it in order to download the .zip.
 
->Again, if you've purchased Telerik DevCraft Complete/Ultimate bundle, you will be redirected to a page with all the products in the suite. Locate "Telerik UI for WPF" product and follow "Browse all product files" to go to the detailed download page.
+	![](images/installing-wpf-demos-2.png)
 
-* Under the Resources section, you should see the archive file containing the source code of the examples. Its name is __Telerik_UI_for_WPF_[version]_Demos.zip__.
+5. Unzip the file and run the __ExamplesCS_WPF.sln__ file.
 
->tipThe zip does not contain the assemblies so that it's smaller in size. Building and running the Demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version. 
+	![](images/installing-wpf-demos-3.png)
 
-## Common issues
+>tip The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version as the downloaded demos. 
 
-In this section we will review the most common issues experiencing when running the WPF Demos application.
+## Common Issues
 
-* Receiving an exception as in __Figure 1__.
+In this section we will review the most common issues experienced when running the WPF Demos application.
 
-__Figure 1: Exception when trying to install WPF Demos__
+### "Could not load file or assembly" error when running an example from the demos application
 
 ![](images/wpf_demos_0.png)
 
-Issues like this are caused by some files left from previous installations. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: 
-C:\Users\\&lt;your_user&gt;\AppData\Local\Apps\2.0
+Issues like this are caused by cached files left from a previous installation. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: `C:\Users\\&lt;your_user&gt;\AppData\Local\Apps\2.0`	
 
-* SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
+### SQL version mismatch **(not relevant with R3 2017 SP1 and later)**
 
 If you receive an error about the SQL version, for example:
 
-_Prerequisite check for system component SQL Server 2008 Express failed with the following error message:
-"SQL Server 2008 Express Service Pack 1 (x64) cannot upgrade the existing instance of SQL Server 2005 Express (x64 WoW) named 'SQLEXPRESS'. Uninstall this instance of SQL Server 2005 Express and retry installing SQL Server 2008 Express Service Pack 1 (x64)."_
+`Prerequisite check for system component SQL Server 2008 Express failed with the following error message: "SQL Server 2008 Express Service Pack 1 (x64) cannot upgrade the existing instance of SQL Server 2005 Express (x64 WoW) named 'SQLEXPRESS'. Uninstall this instance of SQL Server 2005 Express and retry installing SQL Server 2008 Express Service Pack 1 (x64)."`
 
 You should either uninstall the older SQL Server or change the instances names, so that the default “SQLEXPRESS” refers to the SQL Server 2008 Express.
 
-* Receiving a System.Deployment.Application.InvalidDeploymentException.
+### Receiving a System.Deployment.Application.InvalidDeploymentException
 
 This exception is thrown when trying to open a ClickOnce application in a browser different than Internet Explorer. In order to open a ClickOnce application in another browser, you can look for an extension in the corresponding browser store. 
 

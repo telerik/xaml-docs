@@ -5,6 +5,7 @@ description: Repeat Table Header Row
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
 published: True
+position: 4
 ---
 
 # Repeat Table Header Row
@@ -27,6 +28,7 @@ __RadRichTextBox__ allows you to set a repeating header row for a table. You are
 When the table header row is visible, a new (the same as the header row) row is visualized on the top of every slice of the table. This is only a visual change of the table representation – actually, a new row hasn’t been added to the table. __Figure 1__ shows what a table divided that spans over two pages looks like when its first row is configured to repeat on each page.
 
 __Figure 1: Table with repeat header row applied__
+
 ![RadRichTextBox Features Repeat Table Header Row 02](images/RadRichTextBox_Features_Repeat_Table_Header_Row_02.png)
 
 >The feature is visible only in Paged layout mode and when printing (Print Preview). Repeating table rows was introduced in Q1 2016.

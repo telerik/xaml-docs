@@ -5,10 +5,14 @@ description: UI for Working with Tables
 slug: radrichtextbox-tables-ui
 tags: table
 published: True
-position: 1
+position: 2
 ---
 
 # Using the Built-in UI to work with Tables
+
+* [Creating a Table](#creating-a-table)
+
+* [Formatting a Table](#formatting-a-table)
 
 ## Creating a Table
 

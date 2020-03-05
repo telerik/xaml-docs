@@ -11,7 +11,7 @@ position: 0
 # Table
 
 
-The __RadRichTextBox__ is capable of displaying and editing tables. The following articles describe how you can create edit and style tables inside RadRichTextBox:
+__RadRichTextBox__ is capable of displaying and editing tables. The following articles describe how you can create edit and style the tables.
       
 
 * [__Working with Tables in Code__]({%slug radrichtextbox-working-with-tables%})

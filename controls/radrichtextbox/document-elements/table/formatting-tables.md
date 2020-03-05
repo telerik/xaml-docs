@@ -10,7 +10,7 @@ position: 3
 
 # Formatting Tables 
 
-__RadRichTextBox__ exposes a API allowing you to use various methods to add, modify or delete elements from [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. __RadRichTextBox__ exposes the following methods in regard to modifying of a table. To learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
+__RadRichTextBox__ exposes an API that allows you to use various methods to style the tables. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. To learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 
 All methods that allow you to interact with Tables are listed here: [Tables Properties and Methods]({%slug radrichtextbox-features-api%}).
 
@@ -144,4 +144,5 @@ You can use the __StyleName__ property to set one of the predefined table styles
 
 >caption Figure 2: Use predefined styles
 
-![formatting-tables001](images/formatting-tables001.png)
+![formatting-tables002](images/formatting-tables002.png)
+

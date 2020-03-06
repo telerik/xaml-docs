@@ -36,3 +36,6 @@ Theme name | Appearance
 **Expression Dark** | ![Expression Dark](images/ExpressionDarkTheme.png)
 
 *Themes marked with * have different color variations out of the box.*
+
+## See Also  
+* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

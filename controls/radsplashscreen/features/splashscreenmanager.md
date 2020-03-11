@@ -122,3 +122,4 @@ SplashScreenDataContext provides the following settings:
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})
 * [Progress Bar]({%slug radsplashscreen-features-progress-bar%})
+* [Latest Internal Build (LIB)]({%slug installation-installing-lib%})

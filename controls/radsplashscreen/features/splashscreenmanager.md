@@ -91,7 +91,7 @@ SplashScreenDataContext provides the following settings:
 
 * __ImageStretch__: Allows you to set the Stretch of the image. Available since the __2020.1.316__ latest internal build version.
 
-* ___ImageWidth__: Allows you to set the Width of the image. Available since the __2020.1.316__ latest internal build version.
+* __ImageWidth__: Allows you to set the Width of the image. Available since the __2020.1.316__ latest internal build version.
 
 * __ImageHeight__: Allows you to set the Height of the image. Available since the __2020.1.316__ latest internal build version.
 

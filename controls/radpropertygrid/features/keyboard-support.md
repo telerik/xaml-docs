@@ -12,25 +12,25 @@ position: 12
 
 RadPropertyGrid  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
 
->Please note that the keyboard navigation is supported only when RadpropertyGrid's property - RenderMode is set to Flat.
+>Please note that the keyboard navigation is supported only when RadpropertyGrid's property - __RenderMode__ is set to __Flat__.
 
 Here is the list of the keys that are supported:
 
-* __Tab / Shift + Tab__ - navigates through the items.
+* __Tab / Shift + Tab__: Navigates through the items.
 
-* __Ctrl + Shift + O__ - sorts by OrderIndex and DisplayName.
+* __Ctrl + Shift + O__: Sorts by OrderIndex and DisplayName.
 
-* __Ctrl + Shift + C__ - groups by GroupName.
+* __Ctrl + Shift + C__: Groups by GroupName.
 
-* __Ctrl + Shift + Space__ - expands the field that represents the current property definition.
+* __Ctrl + Shift + Space__: Expands the field that represents the current property definition.
 
-* __Ctrl + End__ - moves to the last field.
+* __Ctrl + End__: Moves to the last field.
 
-* __Ctrl + Home__ - moves to the first field.
+* __Ctrl + Home__: Moves to the first field.
 
-* __PageDown__ - moves a page down.
+* __PageDown__: Moves a page down.
 
-* __PageUp__ - moves a page up.
+* __PageUp__: Moves a page up.
 
 ## Custom Keyboard Command Provider
 
@@ -42,7 +42,7 @@ The class responsible for customizing the keyboard navigation should be similar 
 
 #### __[C#] Example 1: Creating custom command provider__
 
-	{{region cs-radpropertygrid-features-keyboard-support_1}}
+	{{region cs-radpropertygrid-features-keyboard-support_0}}
 	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProvider()
@@ -119,7 +119,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 #### __[XAML]Example 2: Defining the custom command provider in XAML__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_0}}
+	{{region xaml-radpropertygrid-features-keyboard-support_2}}
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid">
 	    <telerik:RadPropertyGrid.CommandProvider>
 	        <my:CustomKeyboardCommandProvider PropertyGrid="{Binding ElementName=PropertyGrid1}" />
@@ -129,15 +129,29 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 #### __[C#] Example 3: Set the custom command provider to RadPropertyGrid__
 
-	{{region cs-radpropertygrid-features-keyboard-support_2}}
+	{{region cs-radpropertygrid-features-keyboard-support_3}}
 	this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);
 {{endregion}}
 
 #### __[VB.NET] Example 3: Set the custom command provider to RadPropertyGrid__
 
-	{{region vb-radpropertygrid-features-keyboard-support_2}}
+	{{region vb-radpropertygrid-features-keyboard-support_4}}
 	Me.RadPropertyGrid.CommandProvider = New CustomKeyboardCommandProvider
 {{endregion}}
+
+## Keyboard Search Navigation
+
+With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to a specific property using by pressing their first letter from the keyboard or starting to type the first couple letters from their name. This functionality is disabled by default. To enable it you need to set the __IsKeyboardSearchNavigationEnabled__ property to __true__.
+
+> Searching for a property by typing its first letter requires the __RadPropertyGrid control to be focused__.
+
+#### __[XAML]Example 4: Enabling keyboard search navigation__
+
+	{{region xaml-radpropertygrid-features-keyboard-support_5}}
+	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsKeyboardSearchNavigationEnabled="True"/>
+{{endregion}}
+
+In a scenario with a larger text for a property name, you will need more time to type more letters. The keyboard search navigation functionality allows you to increase the timeout for resetting the typed text. This can be done through the __KeyboardSearchNavigationTimeout__ property of the RadPropertyGrid. This property is of type __double__, and its default value is __300__.
 
 ## Disabling Navigation
 

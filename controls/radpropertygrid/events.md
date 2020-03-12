@@ -136,7 +136,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
     >Both properties are of type **ReadOnlyCollection**.
 
 * **PropertySetValueChanged**: This event occurs when the value of a property from the PropertySet is changed. Through the **PropertySetValueChangedEventArgs**, you can access the following properties:	
-	* **Items**: Gets a list that contains the items which property have been changed.
+	* **Items**: Gets a list that contains the items which properties have been changed.
 	* **PropertyName**: A property of type string that gets or sets the name of the property.
 	* **Value**: A property of type object that gets or sets the name of the property.
 	

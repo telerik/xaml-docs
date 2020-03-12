@@ -141,7 +141,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 ## Keyboard Search Navigation
 
-With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to a specific property using by pressing their first letter from the keyboard or starting to type the first couple letters from their name. This functionality is disabled by default. To enable it you need to set the __IsKeyboardSearchNavigationEnabled__ property to __true__.
+With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to a specific property by pressing its first letter from the keyboard or starting to type the first couple letters from its name. This functionality is disabled by default. To enable it you need to set the __IsKeyboardSearchNavigationEnabled__ property to __true__.
 
 > Searching for a property by typing its first letter requires the __RadPropertyGrid control to be focused__.
 

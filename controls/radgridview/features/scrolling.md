@@ -125,5 +125,5 @@ RadGridView scrolls 3 rows with each scroll step of the mouse wheel. To change t
 
 #### __[XAML] Example 7: Setting MouseWheelScrollLines
 {{region xaml-gridview-scrolling_6}}
-  <telerik:RadGridView MouseWheelScrollLines="20" />
+	<telerik:RadGridView MouseWheelScrollLines="20" />
 {{endregion}}

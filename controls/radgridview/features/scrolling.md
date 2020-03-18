@@ -121,9 +121,9 @@ This property determines the time between each scroll step. It has no default va
 
 ## Number of Scrolled Rows
 
-RadGridView scrolls 3 rows with each scroll step of the mouse wheel. To change the number of rows that are scrolled, set the __MouseWheelScrollLines__ property.
+RadGridView scrolls 3 rows with each scroll step of the mouse wheel. To change the number of rows that are scrolled, set the __MouseWheelScrollDelta__ property.
 
-#### __[XAML] Example 7: Setting MouseWheelScrollLines
+#### __[XAML] Example 7: Setting MouseWheelScrollDelta__
 {{region xaml-gridview-scrolling_6}}
-	<telerik:RadGridView MouseWheelScrollLines="20" />
+	<telerik:RadGridView MouseWheelScrollDelta="20" />
 {{endregion}}

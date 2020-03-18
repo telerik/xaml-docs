@@ -151,15 +151,21 @@ With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to 
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsKeyboardSearchNavigationEnabled="True"/>
 {{endregion}}
 
-In a scenario with a larger text for a property name, you will need more time to type more letters. The keyboard search navigation functionality allows you to increase the timeout for resetting the typed text. This can be done through the __KeyboardSearchNavigationTimeout__ property of the RadPropertyGrid. This property is of type __double__, and its default value is __300__.
+In a scenario with a larger text for a property name, you may need to increase the time for typing more letters. The keyboard search navigation functionality allows you to increase the timeout for resetting the typed text. This can be done through the __KeyboardSearchNavigationTimeout__ property of the RadPropertyGrid. This property is of type __double__, and its default value is __300__.
+
+#### __[XAML]Example 5: Increase the timeout for resetting the typed text__
+
+	{{region xaml-radpropertygrid-features-keyboard-support_6}}
+	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" KeyboardSearchNavigationTimeout="600"/>
+{{endregion}}
 
 ## Disabling Navigation
 
 As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBuiltInNavigation__. By default its value is set to "True". In order to disable the navigation which comes from "Flat" RenderMode, you can set its value to "False".
 
-#### __[C#] Example 4: Disabling navigation__
+#### __[C#] Example 6: Disabling navigation__
 
-	{{region cs-radpropertygrid-features-keyboard-support_3}}
+	{{region cs-radpropertygrid-features-keyboard-support_7}}
 	public class CustomKeyboardCommandProviderWithoutNavigation : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProviderWithoutNavigation()
@@ -175,9 +181,9 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: Disabling navigation__
+#### __[VB.NET] Example 6: Disabling navigation__
 
-	{{region vb-radpropertygrid-features-keyboard-support_3}}
+	{{region vb-radpropertygrid-features-keyboard-support_8}}
 	Public Class CustomKeyboardCommandProviderWithoutNavigation
 	    Inherits PropertyGridCommandProvider
 	    Public Sub New()

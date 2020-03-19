@@ -12,4 +12,4 @@ position: 10
 
 __RadTreeListView__ provides several scrolling options that can be used to adjust the scrolling experience of the control. 
 
-As RadTreeListView inherits the __RadGridView__ control, it shares most of its features, including the scrolling mechanism. You can see the avilable features in the RadGridView's [Scrolling]({%slug gridview-scrolling%}) article.
+As RadTreeListView inherits the __RadGridView__ control, it shares most of its features, including the scrolling mechanism. You can see the available features in the RadGridView's [Scrolling]({%slug gridview-scrolling%}) article.

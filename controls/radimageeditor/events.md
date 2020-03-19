@@ -18,12 +18,12 @@ RadImageEditor raises the following events:
 
 	* **Exception**: Gets the currently thrown exception.               
 
-* __CommandExecuted__: Occurs when a command gets executed. Through the __ImageCommandExecutedEventArgs__, you can access the following property:
+* __CommandExecuted__: Occurs when a command gets executed. Through the __ImageCommandExecutedEventArgs__, you can access the following properties:
            
 	* **Command**: Gets the current executed command.         
 	* **CommandParameter**: Gets the current executed command parameter.  	
 		   
-* __CommandExecuting__: Occurs before a command gets executed. Through the __ImageCommandExecutingEventArgs__, you can access the following property:
+* __CommandExecuting__: Occurs before a command gets executed. Through the __ImageCommandExecutingEventArgs__, you can access the following properties:
            
 	* **Command**: Gets the current executed command.         
 	* **CommandParameter**: Gets the current executed command parameter.  		                
@@ -36,7 +36,7 @@ RadImageEditor raises the following events:
 
 * __ScaleFactorChanged__: Occurs when the ScaleFactor value has changed.                 
 
-* __ToolCommitted__: Occurs when a tool is committed. Through the __ToolCommittedEventArgs__, you can access the following property:      
+* __ToolCommitted__: Occurs when a tool is committed. Through the __ToolCommittedEventArgs__, you can access the following properties:      
       
 	* **Tool**: Gets the current executed tool.
 	* **ExecuteSameToolAfterCommit**: Gets or sets a value indicating whether the tool is preserved as a current executing tool. If set to false, the current executing tool will be deactivated.

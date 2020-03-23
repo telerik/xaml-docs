@@ -17,7 +17,7 @@ __RadUploadHandler__ expects a web request that provides the file location of th
 
 >tip Version `2020.1.330` is [LIB]({%slug installation-installing-lib%}) but it is considered stable which means that we approve it for production use too.
 
-If you don't plan to upgrade to version `2020.1.330` or later, we recommend you to manually ensure that the file paths recieved by the upload handler are sanitized. The following example shows how to do this.
+If you don't plan to upgrade to version `2020.1.330` or later, we recommend you to manually ensure that the file paths received by the upload handler are sanitized. The following example shows how to do this.
 
 #### __[C#] Example 1: Custom UploadHandler__
 {{region radupload-how-to-sanitize-upload-file-paths-0}}

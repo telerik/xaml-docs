@@ -12,7 +12,7 @@ position: 12
 
 RadPropertyGrid  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
 
->Please note that the keyboard navigation is supported only when RadpropertyGrid's property - __RenderMode__ is set to __Flat__.
+>Please note that the keyboard navigation is supported only when RadPropertyGrid's property - __RenderMode__ is set to __Flat__.
 
 Here is the list of the keys that are supported:
 

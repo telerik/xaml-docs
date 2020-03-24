@@ -298,7 +298,7 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 
 >In order to use DataAnnotations you should add a reference to the __System.ComponentModel.DataAnnotations__ assembly.       
 
->tip The following __Validation Attributes__ are available:
+The following __Validation Attributes__ are available:
 
 * __RequiredAttribute__: Specifies that a value must be provided for a property.
 
@@ -312,12 +312,14 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 
 * __CustomValidationAttribute__: Designates a customized method to execute to validate the entity member.
 
+>tip A full list of all available validation attributes can be found in [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=netframework-4.8).
+
 You can see the result in __Figure 5__.
 
 #### __Figure 5: Appearance of RadGridView after DataAnnotations valididation is applied__
 ![Telerik {{ site.framework_name }} DataGrid managing data validation 050](images/radgridview_managing_data_validation_050.png)
 
->tipOnce the UI and Data validation is passed (i.e., the Binding tried to update the value for the bound property), the __CellValidated__ event is raised. The ValidationResult can be valid or not. Here you can also add a custom logic like changing the visual state of the editor (through the e.EditorElement).
+>tip Once the UI and Data validation is passed (i.e., the Binding tried to update the value for the bound property), the __CellValidated__ event is raised. The ValidationResult can be valid or not. Here you can also add a custom logic like changing the visual state of the editor (through the e.EditorElement).
 
 ## Examples
 

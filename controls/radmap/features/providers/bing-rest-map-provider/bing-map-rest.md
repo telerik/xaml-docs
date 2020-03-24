@@ -50,14 +50,14 @@ Here is a list of the key properties which are used by __BingRestMapProvider__:
 #### __Figure 1: Aerial mode with labels__
 ![Rad Map Features Rest Providers 01](images/RadMap_Features_Rest_Providers_01.png)
 
-You can the disable labels using the __IsLabelVisible__ property. When you set it to *False* the labels disappear. __Figure 2__ is a snapshot of the Aerial mode for Bing Map Rest Provider when the labels are not visible:
+You can disable labels using the __IsLabelVisible__ property. When you set it to *False* the labels disappear. __Figure 2__ is a snapshot of the Aerial mode for Bing Rest Map Provider when the labels are not visible:
 
 #### __Figure 2: Aerial mode without labels__
 ![Rad Map Features Rest Providers 01 nolabels](images/RadMap_Features_Rest_Providers_02_nolabels.png)
 
 ## Language	
 
-Bing Rest Service provides culture parameter inside its url address. This parameter can be used to specify a culture for your request. To change the current culture of the labels shown on the BingRestMapProvider, the __Language__ property of the RadMap control can be used.
+Bing Rest Service provides culture parameter in its url address. This parameter can be used to specify a culture for your request. To change the current culture of the labels shown on the BingRestMapProvider, the __Language__ property of the RadMap control can be used.
 
 > For a list of supported cultures, see [Supported Culture Codes](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes?redirectedfrom=MSDN).
 

@@ -19,7 +19,7 @@ __RadUploadHandler__ expects a web request that provides the file location of th
 
 If you don't plan to upgrade to version `2020.1.330` or later, we recommend you to manually ensure that the file paths received by the upload handler are sanitized. The following example shows how to do this.
 
-#### __[C#] Example 1: Custom UploadHandler__
+#### __[C#] Example 1: Custom RadUploadHandler__
 {{region radupload-how-to-sanitize-upload-file-paths-0}}
 	public class SampleUploadHandler : RadUploadHandler
 	{
@@ -36,19 +36,18 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend you 
 				return null;
 			}
 
-			string securedFolderPath = this.SecureFilePath(targetFolder);
-			string securedFileName = this.SecureFilePath(fileName);
-			return System.IO.Path.Combine(securedFolderPath, System.IO.Path.GetFileName(securedFileName));
+			string sanitizedFolderPath = this.SanitizeFilePath(targetFolder);
+			string sanitizedFileName = this.SanitizeFilePath(fileName);
+			return System.IO.Path.Combine(sanitizedFolderPath, System.IO.Path.GetFileName(sanitizedFileName));
 		}
 
 		public override string GetTargetFolder()
 		{
 			var targetFolder = base.GetTargetFolder();
-			string securedFolderPath = this.SecureFilePath(targetFolder);
-			return securedFolderPath;
+			return this.SanitizeFilePath(targetFolder);
 		}
 
-		private string SecureFilePath(string filePath)
+		private string SanitizeFilePath(string filePath)
 		{
 			int startIndex = 0;
 
@@ -64,8 +63,7 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend you 
 				break;
 			}
 
-			string securedPath = filePath.Substring(startIndex);
-			return securedPath;
+			return filePath.Substring(startIndex);
 		}
 	}
 {{endregion}}

@@ -29,7 +29,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 * __FoldingRegionDefinitions__: An __IList__ collection property of __FoldingRegionDefinition__ that gets the definitions that this tagger will use for matching the collapsible regions in the document.
 
-* __IsMatchingCaseSensitive__: A __boolean__ property that gets or sets the matching between the start and end folding tags is case sensitive.
+* __IsMatchingCaseSensitive__: A __boolean__ property that gets or sets whether the matching between the start and end folding tags is case sensitive.
 
 #### __[C#] Example 2: Adding FoldingRegionDefinitions__
 {{region cs-radsyntaxeditor-features-folding-taggers-2}}

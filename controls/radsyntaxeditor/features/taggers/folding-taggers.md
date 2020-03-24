@@ -25,6 +25,12 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 **FoldingTaggerBase** is the class responsible for generating the collapsible code regions. You can inherit this class and add **FoldingRegionDefinitions** to define the start and end matching rules of a collapsible section.
 
+### Key Properties
+
+* __FoldingRegionDefinitions__: An __IList__ collection property of __FoldingRegionDefinition__ that gets the definitions that this tagger will use for matching the collapsible regions in the document.
+
+* __IsMatchingCaseSensitive__: A __boolean__ property that gets or sets whether the matching between the start and end folding tags is case sensitive.
+
 #### __[C#] Example 2: Adding FoldingRegionDefinitions__
 {{region cs-radsyntaxeditor-features-folding-taggers-2}}
     public CustomFoldingTagger(ITextDocumentEditor editor) : base(editor)

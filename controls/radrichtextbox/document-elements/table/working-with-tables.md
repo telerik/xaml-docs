@@ -126,6 +126,8 @@ __Figure 1__ shows the result of the code in __Example 1__.
 
 In order to merge cells in the table you can use the __RowSpan__ and __ColumnSpan__ properties of the __TableCell__. The below code shows how you can use these properties to create a complex table header.
 
+>note Please note that when using __RowSpan__ and __ColumnSpan__ the cells are not merged. The cells are only resized and they will be on top of the other cells.  
+
 #### __[C#] Example 2: Use RowSpan and ColumnSpan Properties__
 
 {{region radrichtextbox-document-elements-working-with-tables_0}}   

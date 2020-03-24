@@ -1,7 +1,7 @@
 ---
 title: Backward Compatibility
 page_title: Backward Compatibility
-description: Backward Compatibility
+description: Check our &quot;Backward Compatibility&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-backward-compatibility
 tags: backward,compatibility
 published: True

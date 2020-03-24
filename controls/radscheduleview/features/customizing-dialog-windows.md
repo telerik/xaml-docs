@@ -1,7 +1,7 @@
 ---
 title: Customizing Dialog Windows
 page_title: Customizing Dialog Windows
-description: Customizing Dialog Windows
+description: Check our &quot;Customizing Dialog Windows&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-features-customizing-dialog-windows
 tags: customizing,dialog,windows
 published: True

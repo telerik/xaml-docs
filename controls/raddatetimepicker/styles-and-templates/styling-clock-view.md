@@ -1,7 +1,7 @@
 ---
 title: Styling the Clock
 page_title: Styling the Clock
-description: Styling the Clock
+description: Check our &quot;Styling the Clock&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-styling-clock-view
 tags: styling,the,clock
 published: True

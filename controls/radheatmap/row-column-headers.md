@@ -1,7 +1,7 @@
 ---
 title: Row/Column Headers
 page_title: Row/Column Headers
-description: Row/Column Headers
+description: Check our &quot;Row/Column Headers&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
 slug: radheatmap-row-column-headers
 tags: tooltip, heatmap, row, columnheader, celltooltip, heatmaprowheadersettings, heatmapcolumnheadersettings
 published: True

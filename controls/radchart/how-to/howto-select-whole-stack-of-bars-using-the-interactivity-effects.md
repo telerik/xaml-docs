@@ -1,7 +1,7 @@
 ---
 title: Select Whole Stack Of Bars Using The Interactivity Effects
 page_title: Select Whole Stack Of Bars Using The Interactivity Effects
-description: Select Whole Stack Of Bars Using The Interactivity Effects
+description: Check our &quot;Select Whole Stack Of Bars Using The Interactivity Effects&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects
 tags: select,whole,stack,of,bars,using,the,interactivity,effects
 published: True

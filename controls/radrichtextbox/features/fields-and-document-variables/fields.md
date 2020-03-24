@@ -1,7 +1,7 @@
 ---
 title: Fields
 page_title: Fields
-description: Fields
+description: Check our &quot;Fields&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-fields
 tags: fields
 published: True

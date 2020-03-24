@@ -1,7 +1,7 @@
 ---
 title: Environment Variables Support
 page_title: Environment Variables Support
-description: Environment Variables Support
+description: Check our &quot;Environment Variables Support&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
 slug: radfiledialogs-features-environment-variables
 tags: environment,variables
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Navigation
 page_title: Navigation
-description: Navigation
+description: Check our &quot;Navigation&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-drill-down-navigation
 tags: navigation
 published: True

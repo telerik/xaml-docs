@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
 slug: radmaskedinput-getting-started
 tags: getting,started
 published: True

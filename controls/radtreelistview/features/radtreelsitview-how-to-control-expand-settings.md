@@ -1,7 +1,7 @@
 ---
 title: IsExpandedBinding and IsExpandableBinding
 page_title: IsExpandedBinding and IsExpandableBinding
-description: IsExpandedBinding and IsExpandableBinding
+description: Check our &quot;IsExpandedBinding and IsExpandableBinding&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelsitview-how-to-control-expand-settings
 tags: isexpandedbinding,and,isexpandablebinding
 published: True

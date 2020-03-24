@@ -1,7 +1,7 @@
 ---
 title: ScrollMode
 page_title: ScrollMode
-description: ScrollMode
+description: Check our &quot;ScrollMode&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-features-scrollmode
 tags: scrollmode
 published: True

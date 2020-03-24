@@ -1,7 +1,7 @@
 ---
 title: Hide the Buttons
 page_title: Hide the Buttons
-description: Hide the Buttons
+description: Check our &quot;Hide the Buttons&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-how-to-hide-the-buttons
 tags: hide,the,buttons
 published: True

@@ -1,10 +1,10 @@
 ---
 title: Get a Grid Like Dropdown
 page_title: Get a Grid Like Dropdown
-description: Get a Grid Like Dropdown
+description: Check our &quot;Get a Grid Like Dropdown&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
 slug: radcombobox-grid-like-dropdown
 tags: get,a,grid,like,dropdown
-published: True
+published: False
 position: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Persist AdomdDataProvider
 page_title: Persist AdomdDataProvider
-description: Persist AdomdDataProvider
+description: Check our &quot;Persist AdomdDataProvider&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-persistence-adomd
 tags: persist,adomddataprovider
 published: True

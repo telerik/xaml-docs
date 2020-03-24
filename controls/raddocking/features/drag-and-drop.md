@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop
 page_title: Drag and Drop
-description: Drag and Drop
+description: Check our &quot;Drag and Drop&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-drag-and-drop
 tags: drag,and,drop
 published: True
@@ -26,7 +26,7 @@ Below you can find several step-by-step tutorials for the most common operations
 
 1. Drop the pane and see how it is docked in the highlighted area.
 
-	![](images/RadDocking_Features_Drag_and_Drop_010.png)
+	![Docking Panes to a Container](images/RadDocking_Features_Drag_and_Drop_010.png)
 
 As you can see you have dragged your pane over the Compass' right indicator which leads to highlighting the respective dropping area inside the underlying container.
 
@@ -42,7 +42,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Drop the pane and see how it is docked in the highlighted area.
 
-	![](images/RadDocking_Features_Drag_and_Drop_020.png)
+	![Docking Panes to the Root Container](images/RadDocking_Features_Drag_and_Drop_020.png)
 
 >Note that the [Root Compass](#Root_Compass) always marks the possible docking positions only for the root container.
 
@@ -56,7 +56,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Drop the pane and see how it is docked as a new tab.
 
-	![](images/RadDocking_Features_Drag_and_Drop_030.png)
+	![Adding Panes to Tabbed Documents](images/RadDocking_Features_Drag_and_Drop_030.png)
 
 >tipTo dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the [Compass](#Compass).
 
@@ -68,14 +68,26 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 1. Drop the pane and notice that it is undocked and placed as a separate window ([ToolWindow]({%slug raddocking-features-tool-window%})).
 
-	![](images/RadDocking_Features_Drag_and_Drop_040.png)
+	![Undocking Panes](images/RadDocking_Features_Drag_and_Drop_040.png)
 
 >tipTo undock a pane and make it floatable, just drag it out of its current place and drop it outside any compass indicator.
 
+## Use Native ToolWindow Drag
+
+As of **R1 2020 SP1**, the RadDocking control exposes a **UseNativeInitialToolWindowDrag** property through which you can set to **True** to use the native Windows drag operation when first undocking a pane/group. This is useful if you wish to be able to use the [Windows Snap Assist feature](https://support.microsoft.com/en-us/help/4027324/windows-10-snap-your-windows) or take into account the "Show window contents while dragging" Windows setting.
+
+#### __[XAML] Example 1: Enable Native ToolWindow Drag__
+
+{{region xaml-raddocking-features-document-host_0}}
+	<telerik:RadDocking x:Name="radDocking" UseNativeInitialToolWindowDrag="True">
+		<!-- ... -->
+	</telerik:RadDocking>
+{{endregion}}
+
+![Use Native ToolWindow Drag](images/RadDocking_Features_Drag_and_Drop_050.png)
+
 ## See Also
 
- * [Tool Window]({%slug raddocking-features-tool-window%})
-
- * [Compass]({%slug raddocking-features-compass%})
-
- * [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})
+* [Tool Window]({%slug raddocking-features-tool-window%})
+* [Compass]({%slug raddocking-features-compass%})
+* [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%})

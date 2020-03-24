@@ -1,7 +1,7 @@
 ---
 title: Axis
 page_title: Axis
-description: Axis
+description: Check our &quot;Axis&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
 slug: radsparkline-features-axis
 tags: axis,origin,value
 published: True

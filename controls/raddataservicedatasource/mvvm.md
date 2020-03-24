@@ -1,7 +1,7 @@
 ---
 title: MVVM Support
 page_title: MVVM Support
-description: MVVM Support
+description: Check our &quot;MVVM Support&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-mvvm
 tags: mvvm,support
 published: True

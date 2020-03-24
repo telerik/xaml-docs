@@ -1,7 +1,7 @@
 ---
 title: Bibliographic References
 page_title: Bibliographic References
-description: Bibliographic References
+description: Check our &quot;Bibliographic References&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-bibliographic-references
 tags: bibliographic,references
 published: True

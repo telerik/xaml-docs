@@ -1,7 +1,7 @@
 ---
 title: RadarPointSeries
 page_title: RadarPointSeries
-description: RadarPointSeries
+description: Check our &quot;RadarPointSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-series-radarpointseries
 tags: radarpointseries
 published: True

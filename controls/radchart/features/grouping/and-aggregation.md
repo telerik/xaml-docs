@@ -1,7 +1,7 @@
 ---
 title: Grouping and Aggregation
 page_title: Grouping and Aggregation
-description: Grouping and Aggregation
+description: Check our &quot;Grouping and Aggregation&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-grouping-and-aggregation
 tags: grouping,and,aggregation
 published: True

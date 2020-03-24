@@ -1,7 +1,7 @@
 ---
 title: Wraparound
 page_title: Wraparound
-description: Wraparound
+description: Check our &quot;Wraparound&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-wraparound
 tags: wraparound, continuous, panning, horizontal, infinite
 published: True

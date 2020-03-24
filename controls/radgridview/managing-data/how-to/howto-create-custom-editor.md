@@ -98,16 +98,20 @@ There are several methods you should override:
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
 	    {
-	        Border cellElement = new Border();
-	        var valueBinding = new System.Windows.Data.Binding(this.DataMemberBinding.Path.Path)
-	        {
-	            Mode = BindingMode.OneTime,
-	            Converter = new ColorToBrushConverter()
-	        };
-	        cellElement.SetBinding(Border.BackgroundProperty, valueBinding);
-	        cellElement.Width = 45;
-	        cellElement.Height = 20;
-	        cellElement.CornerRadius = new CornerRadius(5);
+	        Border cellElement = cell.Content as Border;
+		if (cellElement == null) 
+        	{ 
+			cellElement = new Border();			
+		}	
+		var valueBinding = new System.Windows.Data.Binding(this.DataMemberBinding.Path.Path)
+			{
+			    Mode = BindingMode.OneTime,
+			    Converter = new ColorToBrushConverter()
+			};
+		cellElement.SetBinding(Border.BackgroundProperty, valueBinding);
+		cellElement.Width = 45;
+		cellElement.Height = 20;
+		cellElement.CornerRadius = new CornerRadius(5);
 	        return cellElement;
 	    }
 	}
@@ -118,21 +122,25 @@ There are several methods you should override:
 	{{region vb-radgridview-howto-create-custom-editor_3}}
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
-	
+
 	    Public Overrides Function CreateCellElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
-	        Dim cellElement As New Border()
-	        Dim valueBinding = New System.Windows.Data.Binding(Me.DataMemberBinding.Path.Path) With {
-	            .Mode = BindingMode.OneTime,
-	            .Converter = New ColorToBrushConverter()
-	        }
-	        cellElement.SetBinding(Border.BackgroundProperty, valueBinding)
-	        cellElement.Width = 45
-	        cellElement.Height = 20
-	        cellElement.CornerRadius = New CornerRadius(5)
-	        Return cellElement
+		Dim cellElement As Border = TryCast(cell.Content, Border)
+
+		If cellElement Is Nothing Then
+		    cellElement = New Border()		   
+		End If
+		Dim valueBinding = New System.Windows.Data.Binding(Me.DataMemberBinding.Path.Path) With {
+			.Mode = BindingMode.OneTime,
+			.Converter = New ColorToBrushConverter()
+		    }
+	    	cellElement.SetBinding(Border.BackgroundProperty, valueBinding)
+	   	cellElement.Width = 45
+	   	cellElement.Height = 20
+	   	cellElement.CornerRadius = New CornerRadius(5)
+		Return cellElement
 	    End Function
 	End Class
-{{endregion}}
+	{{endregion}}
 
 You should note two things here: first, a border with bound background to the color from data item is created and second, a custom converter is used. The next code snippet shows you the code for the __ColorToBrushConverter__.
 

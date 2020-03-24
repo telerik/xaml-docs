@@ -1,7 +1,7 @@
 ---
 title: Toggle Button
 page_title: Toggle Button
-description: Toggle Button
+description: Check our &quot;Toggle Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-features-toggle-button
 tags: toggle,button
 published: True

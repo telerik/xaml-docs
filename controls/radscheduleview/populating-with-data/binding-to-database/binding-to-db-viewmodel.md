@@ -1,7 +1,7 @@
 ---
 title: View and ViewModel
 page_title: View and ViewModel
-description: View and ViewModel
+description: Check our &quot;View and ViewModel&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-populating-with-data-binding-to-db-viewmodel
 tags: view,and,viewmodel
 published: True

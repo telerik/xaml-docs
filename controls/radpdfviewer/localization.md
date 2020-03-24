@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Localization
+description: Check our &quot;Localization&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-localization
 tags: localization
 published: True

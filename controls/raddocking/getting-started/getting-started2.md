@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-getting-started2
 tags: getting,started
 published: True

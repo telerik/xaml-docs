@@ -1,7 +1,7 @@
 ---
 title: Data Binding Support Overview
 page_title: Data Binding Support Overview
-description: Data Binding Support Overview
+description: Check our &quot;Data Binding Support Overview&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
 slug: radautocompletebox-populating-with-data-binding-support-overview
 tags: data,binding,support,overview
 published: True

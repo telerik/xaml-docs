@@ -1,7 +1,7 @@
 ---
 title: Highlight PointMark On Click
 page_title: Highlight PointMark On Click
-description: Highlight PointMark On Click
+description: Check our &quot;Highlight PointMark On Click&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-howto-highlight-pointmark-on-click
 tags: highlight,pointmark,on,click
 published: True

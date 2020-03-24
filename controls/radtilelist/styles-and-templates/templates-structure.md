@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Check our &quot;Templates Structure&quot; documentation article for the RadTileList {{ site.framework_name }} control.
 slug: tilelist-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

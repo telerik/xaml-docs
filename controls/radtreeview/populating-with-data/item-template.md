@@ -1,7 +1,7 @@
 ---
 title: ItemTemplate
 page_title: ItemTemplate
-description: ItemTemplate
+description: Check our &quot;ItemTemplate&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-item-template
 tags: itemtemplate
 published: True
@@ -311,4 +311,3 @@ The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ 
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})
  * [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})
- * [Templates Structure]({%slug radtreeview-styles-and-templates-tesmplates-structure%})

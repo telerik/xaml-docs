@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Title
 page_title: Styling the Axis Title
-description: Styling the Axis Title
+description: Check our &quot;Styling the Axis Title&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-appearance-styling-axis-title
 tags: styling,the,axis,title
 published: True

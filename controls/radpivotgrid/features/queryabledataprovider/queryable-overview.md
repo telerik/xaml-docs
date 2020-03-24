@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-queryable-overview
 tags: queryabledataprovider
 published: True

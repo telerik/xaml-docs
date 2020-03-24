@@ -1,7 +1,7 @@
 ---
 title: Unsupported Features
 page_title: Unsupported Features
-description: Unsupported Features
+description: Check our &quot;Unsupported Features&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True

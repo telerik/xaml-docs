@@ -1,7 +1,7 @@
 ---
 title: Disable the MouseWheel
 page_title: Disable the MouseWheel
-description: Disable the MouseWheel
+description: Check our &quot;Disable the MouseWheel&quot; documentation article for the RadCoverflow {{ site.framework_name }} control.
 slug: coverflow-disable-mousewheel
 tags: disable,the,mousewheel
 published: True

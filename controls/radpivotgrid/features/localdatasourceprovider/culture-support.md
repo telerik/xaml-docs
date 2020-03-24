@@ -1,7 +1,7 @@
 ---
 title: Culture Support
 page_title: Culture Support
-description: Culture Support
+description: Check our &quot;Culture Support&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-features-culture-support
 tags: culture,support
 published: True

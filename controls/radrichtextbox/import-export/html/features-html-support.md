@@ -1,7 +1,7 @@
 ---
 title: HTML Support
 page_title: HTML Support
-description: HTML Support
+description: Check our &quot;HTML Support&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-html-support
 tags: html,support
 published: True

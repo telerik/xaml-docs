@@ -1,7 +1,7 @@
 ---
 title: Docked/Floating Panes
 page_title: Docked/Floating Panes
-description: Docked/Floating Panes
+description: Check our &quot;Docked/Floating Panes&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-features-panes-docked-floating-panes
 tags: docked/floating,panes
 published: True

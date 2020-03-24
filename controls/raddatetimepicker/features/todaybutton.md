@@ -1,7 +1,7 @@
 ---
 title: Today Button
 page_title: Today Button
-description: Today Button
+description: Check our &quot;Today Button&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-todaybutton
 tags: today,button
 published: True

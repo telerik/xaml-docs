@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadNumericUpDown {{ site.framework_name }} control.
 slug: radnumericupdown-drag-and-drop
 tags: getting,started
 published: True

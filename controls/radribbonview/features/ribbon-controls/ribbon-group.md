@@ -1,7 +1,7 @@
 ---
 title: Ribbon Group
 page_title: Ribbon Group
-description: Ribbon Group
+description: Check our &quot;Ribbon Group&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-ribbon-group
 tags: ribbon,group
 published: True

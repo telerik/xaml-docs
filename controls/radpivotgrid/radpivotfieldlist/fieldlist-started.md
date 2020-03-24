@@ -1,7 +1,7 @@
 ---
 title: Adding RadPivotFieldList to your project
 page_title: Adding RadPivotFieldList to your project
-description: Adding RadPivotFieldList to your project
+description: Check our &quot;Adding RadPivotFieldList to your project&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-fieldlist-started
 tags: adding,radpivotfieldlist,to,your,project
 published: True

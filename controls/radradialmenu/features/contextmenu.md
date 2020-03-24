@@ -1,7 +1,7 @@
 ---
 title: RadRadialMenu as a ContextMenu
 page_title: RadRadialMenu as a ContextMenu
-description: RadRadialMenu as a ContextMenu
+description: Check our &quot;RadRadialMenu as a ContextMenu&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
 slug: radradialmenu-features-contextmenu
 tags: radradialmenu,as,a,contextmenu
 published: True

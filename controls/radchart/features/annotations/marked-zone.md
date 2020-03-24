@@ -1,7 +1,7 @@
 ---
 title: Marked Zone
 page_title: Marked Zone
-description: Marked Zone
+description: Check our &quot;Marked Zone&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-annotations-marked-zone
 tags: marked,zone
 published: True

@@ -10,15 +10,40 @@ position: 7
 
 # Change Background for Disabled Grid Elements
 
-The goal of this tutorial is to show you how to customize the look of disabled **GridViewCell** elements.
+The goal of this tutorial is to show you how to customize the look of disabled __GridViewCell__ elements. The approaches for doing so differ depending on whether you are using the older themes (which use visual states) or the newer ones (which use triggers).
 
-In order to do so, you need to [extract the control template of the GridViewCell]({%slug styling-apperance-editing-control-templates%}). You can then modify the **Disabled visual state** as well as the **Background_Disabled** Border element to your liking.
+## Changing the Background for Disabled GridViewCells in Newer Themes
 
-In **Example 1** we've changed the control template so that all disabled cells have a fully opaque red background as illustrated in **Figure 1**.
+In the newer themes, you can create a style targeting GridViewCell and add a trigger, which sets its __Background__ when the cell is disabled. A sample style is demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Modifying the Disabled visual state and Background_Disabled element__
+#### __[XAML] Example 1: Styling Disabled GridViewCells__
 
-{{region gridview-how-to-set-background-disabled-cell_0}}
+{{region xaml-gridview-how-to-set-background-disabled-cell_0}}
+	<Application.Resources>
+        <!--If you are using the NoXaml dlls, you will have to base the style on the default one like so-->
+        <!--<Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">-->
+
+        <Style TargetType="telerik:GridViewCell">
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="Red" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Application.Resources>
+{{endregion}}
+
+## Changing the Background for Disabled GridViewCells in Older Themes
+
+In older themes, you need to [extract the ControlTemplate of the GridViewCell]({%slug styling-apperance-editing-control-templates%}). You can then modify the __Disabled VisualState__ as well as the __Background_Disabled__ Border element to your liking.
+
+In __Example 2__ we've changed the ControlTemplate so that all disabled cells have a fully opaque red background as illustrated in __Figure 1__. 
+
+> You should make sure to extract the ControlTemplate for the theme that you are using.
+
+#### __[XAML] Example 2: Modifying the Disabled visual state and Background_Disabled element__
+
+{{region gridview-how-to-set-background-disabled-cell_1}}
 	<ControlTemplate x:Key="GridViewCellTemplate" TargetType="telerik:GridViewCell">
 		<Grid>
 			<VisualStateManager.VisualStateGroups>
@@ -219,6 +244,8 @@ In **Example 1** we've changed the control template so that all disabled cells h
 	</ControlTemplate>
 	<Style BasedOn="{StaticResource GridViewCellStyle}" TargetType="telerik:GridViewCell">
 		<Setter Property="Template" Value="{StaticResource GridViewCellTemplate}"/>
+
+		<!-- The IsEnabled property of the GridViewCell is bound to the IsChampion property of the model -->
 		<Setter Property="IsEnabled" Value="{Binding IsChampion}" />
 	</Style>
 {{endregion}}
@@ -227,11 +254,11 @@ In **Example 1** we've changed the control template so that all disabled cells h
 
 ![Telerik {{ site.framework_name }} DataGrid-how-to-set-background-disabled-cell-1](images/gridview-how-to-set-background-disabled-cell-1.png)
 
-Similarly, you can define the visual state in **Example 2** so that there's no visual difference between enabled and disabled cells.
+Similarly, you can define the visual state in __Example 3__ so that there's no visual difference between enabled and disabled cells.
 
-#### __[XAML] Example 2: No visual difference between enabled and disabled cells__
+#### __[XAML] Example 3: No visual difference between enabled and disabled cells__
 
-{{region xaml-gridview-how-to-set-background-disabled-cell_1}}
+{{region xaml-gridview-how-to-set-background-disabled-cell_2}}
 	<VisualState x:Name="Disabled">
 		<Storyboard>
 			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_CellBorder" Storyboard.TargetProperty="Opacity">

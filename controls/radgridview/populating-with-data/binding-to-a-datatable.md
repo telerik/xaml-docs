@@ -1,7 +1,7 @@
 ---
 title: Binding to the DataView of a DataTable
 page_title: Binding to the DataView of a DataTable
-description: This article demonstrates how to bind Telerik's WPF DataGrid to the DataView of a DataTable.
+description: This article demonstrates how to bind Telerik's {{ site.framework_name }} DataGrid to the DataView of a DataTable.
 slug: gridview-binding-to-the-dataview-of-a-datatable
 tags: binding, datatable, defaultview, dataview
 published: True

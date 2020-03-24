@@ -1,7 +1,7 @@
 ---
 title: Theming the RadPaneGroup
 page_title: Theming the RadPaneGroup
-description: Theming the RadPaneGroup
+description: Check our &quot;Theming the RadPaneGroup&quot; documentation article for the RadDocking {{ site.framework_name }} control.
 slug: raddocking-theming-radpane-group
 tags: theming,the,radpanegroup
 published: True

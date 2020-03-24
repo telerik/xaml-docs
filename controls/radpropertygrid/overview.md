@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
 slug: radpropertygrid-overview
 tags: overview
 published: True

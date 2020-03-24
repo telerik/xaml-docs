@@ -1,7 +1,7 @@
 ---
 title: ProductCard
 page_title: ProductCard
-description: ProductCard
+description: Check our &quot;ProductCard&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-productcard
 tags: messages,productcard
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Formatting API
 page_title: Formatting API
-description: Formatting API
+description: Check our &quot;Formatting API&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-formatting-api
 tags: formatting,api
 published: True

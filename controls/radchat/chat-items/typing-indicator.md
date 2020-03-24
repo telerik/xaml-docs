@@ -1,7 +1,7 @@
 ---
 title: Typing Indicator
 page_title: Typing Indicator
-description: Typing Indicator
+description: Check our &quot;Typing Indicator&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-typing-indicator
 tags: typing, indicator
 published: True

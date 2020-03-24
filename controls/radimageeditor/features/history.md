@@ -1,7 +1,7 @@
 ---
 title: History
 page_title: History
-description: History
+description: Check our &quot;History&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
 slug: radimageeditor-features-history
 tags: history
 published: True

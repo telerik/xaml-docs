@@ -1,7 +1,7 @@
 ---
 title: RadMediaItem
 page_title: RadMediaItem
-description: RadMediaItem
+description: Check our &quot;RadMediaItem&quot; documentation article for the RadMediaPlayer {{ site.framework_name }} control.
 slug: radmediaplayer-radmediaitem
 tags: radmediaitem
 publish: True

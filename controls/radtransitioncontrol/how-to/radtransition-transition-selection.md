@@ -1,7 +1,7 @@
 ---
 title: Transition Selection
 page_title: Transition Selection
-description: Transition Selection
+description: Check our &quot;Transition Selection&quot; documentation article for the RadTransitionControl {{ site.framework_name }} control.
 slug: radtransition-how-to-transition-selection
 tags: transition,selection
 published: True

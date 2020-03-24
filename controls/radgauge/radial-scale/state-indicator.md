@@ -1,7 +1,7 @@
 ---
 title: State Indicator
 page_title: State Indicator
-description: State Indicator
+description: Check our &quot;State Indicator&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radial-scale-state-indicator
 tags: state,indicator
 published: True

@@ -1,7 +1,7 @@
 ---
 title: CRUD operations
 page_title: CRUD operations
-description: CRUD operations
+description: Check our &quot;CRUD operations&quot; documentation article for the RadDomainDataSource {{ site.framework_name }} control.
 slug: domaindatasource-crud
 tags: crud,operations
 published: True

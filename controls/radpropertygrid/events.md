@@ -19,7 +19,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
 	* **Cancel**: A boolean value indicating whether the event should be canceled.
 
-        #### __[C#]__
+        #### __[C#] Example 1: Filtering event__
         {{region cs-propertygrid-events_0}}
             private void PropertyGrid_Filtering(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridFilteringEventArgs e)
             {
@@ -64,7 +64,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
 * **BeginningEdit**: Occurs when a new edit operation is initiated. Through the **PropertyGridBeginningEditEventArgs**, you can access the **Field** property which is of type [PropertyGridField](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertygridfield). It gets or sets the field of the current context.
 
-    #### __[C#]__
+    #### __[C#] Example 2: BeginningEdit event__
 
     {{region cs-propertygrid-events_1}}
         private void PropertyGrid_BeginningEdit(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridBeginningEditEventArgs e)
@@ -79,7 +79,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 * **EditEnded**: Occurs when an edit operation is finished. Through the **PropertyGridEditEndedEventArgs**, you can access the following properties:
     * **EditAction**: Gets the edit action. It is of type [PropertyGridEditEndedAction](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertygrideditendedaction) and has a **Cancel** and **Commit** actions.
 
-    #### __[C#]__
+    #### __[C#] Example 3: EditEnded event__
     {{region cs-propertygrid-events_2}}
         private void PropertyGrid_EditEnded(object sender,Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedEventArgs e)
         {
@@ -135,7 +135,23 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
     >Both properties are of type **ReadOnlyCollection**.
 
+* **PropertySetValueChanged**: This event occurs when the value of a property from the PropertySet is changed. Through the **PropertySetValueChangedEventArgs**, you can access the following properties:	
+	* **Items**: Gets a list that contains the items which properties have been changed.
+	* **PropertyName**: A property of type string that gets or sets the name of the property.
+	* **Value**: A property of type object that gets or sets the name of the property.
+	
+#### __[C#] Example 4: PropertySetValueChanged event__
+    {{region cs-propertygrid-events_3}}
+        private void RadPropertyGrid_PropertySetValueChanged(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertySetValueChangedEventArgs e)
+        {
+            var items = e.Items;
+            var name = e.PropertyName;
+            var newValue = e.Value;
+        }
+    {{endregion}}
 
+  >The **PropertySetValueChanged** event is raised only if the [PropertySetMode]({%slug radpropertygrid-defining-propertysets%}) property of the **RadPropertyGrid** is set to **Union** or **Intersection**.
+	
 ## See Also
 
  * [Getting Started]({%slug radpropertygrid-getting-started-getting-started%})

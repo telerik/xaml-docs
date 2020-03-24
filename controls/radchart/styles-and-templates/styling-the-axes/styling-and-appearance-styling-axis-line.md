@@ -1,7 +1,7 @@
 ---
 title: Styling the Axis Line
 page_title: Styling the Axis Line
-description: Styling the Axis Line
+description: Check our &quot;Styling the Axis Line&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-styling-and-appearance-styling-axis-line
 tags: styling,the,axis,line
 published: True

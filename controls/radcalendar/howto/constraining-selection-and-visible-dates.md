@@ -1,7 +1,7 @@
 ---
 title: Constraining Selection and Visible Dates
 page_title: Constraining Selection and Visible Dates
-description: Constraining Selection and Visible Dates
+description: Check our &quot;Constraining Selection and Visible Dates&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
 slug: radcalendar-constraining-selection-and-visible-dates
 tags: constraining,selection,and,visible,dates
 published: True

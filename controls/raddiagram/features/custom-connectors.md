@@ -1,7 +1,7 @@
 ---
 title: Custom Connectors
 page_title: Custom Connectors
-description: Custom Connectors
+description: Check our &quot;Custom Connectors&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-custom-connectors
 tags: custom,connectors
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Changes and Backward Compatibility
 page_title: Changes and Backward Compatibility
-description: Changes and Backward Compatibility
+description: Check our &quot;Changes and Backward Compatibility&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-changes-and-backward-compatibility
 tags: changes,and,backward,compatibility
 published: True

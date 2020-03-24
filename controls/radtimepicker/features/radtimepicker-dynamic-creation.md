@@ -1,7 +1,7 @@
 ---
 title: Dynamic Creation
 page_title: Dynamic Creation
-description: Dynamic Creation
+description: Check our &quot;Dynamic Creation&quot; documentation article for the RadTimePicker {{ site.framework_name }} control.
 slug: radtimepicker-radtimepicker-dynamic-creation
 tags: dynamic,creation
 published: True

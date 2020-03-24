@@ -1,7 +1,7 @@
 ---
 title: Headers and Footers
 page_title: Headers and Footers
-description: Headers and Footers
+description: Check our &quot;Headers and Footers&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-headers-and-footers
 tags: headers,and,footers
 published: True

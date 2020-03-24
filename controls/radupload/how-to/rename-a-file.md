@@ -1,7 +1,7 @@
 ---
 title: Rename a File
 page_title: Rename a File
-description: Rename a File
+description: Check our &quot;Rename a File&quot; documentation article for the RadUpload {{ site.framework_name }} control.
 slug: radupload-how-to-rename-a-file
 tags: rename,a,file
 published: True

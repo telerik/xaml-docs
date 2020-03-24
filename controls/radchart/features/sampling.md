@@ -1,7 +1,7 @@
 ---
 title: Sampling
 page_title: Sampling
-description: Sampling
+description: Check our &quot;Sampling&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-sampling
 tags: sampling
 published: True

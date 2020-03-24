@@ -123,18 +123,6 @@ article table
 
 With the **R1 2018** release of the **UI for WPF** suite we have introduced the brand new **Fluent theme**. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and beautiful interpretation of the Fluent design system.
 
-The following topic explains the specifics of the theme's palette and features.
-
-* [Default Theme Colors](#default-theme-colors)
-* [FluentPalette Brushes](#fluentpalette-brushes)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Changing Fonts](#font-family-and-font-size)
-* [Glyphs](#glyphs)
-* [Changing Corner Radius](#set-corner-radius)
-* [Visual Helpers](#visual-effects-helpers)
-* [Fluent Control](#fluent-control)
-* [Change ScrollBarMode](#change-scrollbarmode)
-
 ## Default Theme Colors
 
 The **Fluent Theme** has two color variations, that are designed to be easily modified via the exposed colors in the theme palette.
@@ -395,24 +383,26 @@ It is possible to disable the ripple effect of the FluentControl through a style
 	</Style>
 {{endregion}}
 
-## Change ScrollBarMode
+## Change ScrollBarsMode
 
-By default scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __2019.1.121__ version of our dlls, you have the option of setting the __ScrollBarMode__ property of the Fluent palette in order to control this behavior. It is ot type __ScrollViewerScrollBarsMode__ and can be set to the following values: 
+By default, the scrollbars in the Fluent theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Fluent palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to one of the following values: 
 
-*  **FluentPalette.ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+*  **ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
 
-*  **FluentPalette.ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
+*  **ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
 
-*  **FluentPalette.ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+*  **ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
 
-#### **Figure 7: ScrollBar behavior in Auto, Compact and Normal ScrollBarMode**  
-![ScrollBar in Auto, Compact and Normal ScrollBarMode](images/fluent-light-scrollbarmode.gif)
+>important The __ScrollBarMode__ property and the __ScrollViewerScrollBarsMode__ enumeration of the FluentPalette, introduced with the  __2019.1.121__ version of our dlls, are __obsolete__ and __replaced__ by the __ScrollBarsMode__ property of the palette and the __ScrollViewerScrollBarsMode__ enum under the __Telerik.Windows.Controls.Theming__ namespace.
 
-__Example 10__ demonstrates how the __ScrollBarMode__ property of the palette can be set.
+#### **Figure 7: ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode**  
+![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/fluent-light-scrollbarmode.gif)
 
-#### **[C#] Example 10: Setting the __ScrollBarMode__ property of the palette to Compact**
+__Example 10__ demonstrates how the __ScrollBarsMode__ property of the palette can be set.
+
+#### **[C#] Example 10: Setting the __ScrollBarsMode__ property of the palette to Compact**
 {{region styling-appearance-fluent-theme-12}}	
-	FluentPalette.Palette.ScrollBarMode = FluentPalette.ScrollViewerScrollBarsMode.Compact;
+	FluentPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
 {{endregion}}
 
 ## Changing Opacity 

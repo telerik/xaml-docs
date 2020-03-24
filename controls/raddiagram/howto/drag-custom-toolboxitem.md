@@ -1,7 +1,7 @@
 ---
 title: Drag Items from a Custom Databound DiagramToolbox
 page_title: Drag Items from a Custom Databound DiagramToolbox
-description: Drag Items from a Custom Databound DiagramToolbox
+description: Check our &quot;Drag Items from a Custom Databound DiagramToolbox&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-howto-drag-custom-toolboxitem
 tags: drag,items,from,a,custom,databound,diagramtoolbox
 published: True

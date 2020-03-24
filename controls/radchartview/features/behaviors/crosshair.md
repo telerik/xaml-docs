@@ -1,7 +1,7 @@
 ---
 title: Crosshair
 page_title: Crosshair
-description: Crosshair
+description: Check our &quot;Crosshair&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-crosshair
 tags: crosshair
 published: True

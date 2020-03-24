@@ -1,7 +1,7 @@
 ---
 title: ToolBar Commands
 page_title: ToolBar Commands
-description: ToolBar Commands
+description: Check our &quot;ToolBar Commands&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-toolbar-commands
 tags: suggested, actions
 published: True

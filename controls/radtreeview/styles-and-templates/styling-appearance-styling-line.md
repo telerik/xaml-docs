@@ -1,7 +1,7 @@
 ---
 title: Styling the Lines
 page_title: Styling the Lines
-description: Styling the Lines
+description: Check our &quot;Styling the Lines&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-styling-appearance-styling-line
 tags: styling,the,lines
 published: True

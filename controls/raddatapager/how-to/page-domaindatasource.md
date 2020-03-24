@@ -1,7 +1,7 @@
 ---
 title: Page DomainDataSource
 page_title: Page DomainDataSource
-description: Page DomainDataSource
+description: Check our &quot;Page DomainDataSource&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-how-to-page-domaindatasource
 tags: page,domaindatasource
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Plot Area
 page_title: Plot Area
-description: Plot Area
+description: Check our &quot;Plot Area&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-plot-area
 tags: plotarea, plotareaclip, plotareastyle
 published: True

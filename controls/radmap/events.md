@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our &quot;Events&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-events
 tags: events
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customize Appearance
 page_title: Customize Appearance
-description: Customize Appearance
+description: Check our &quot;Customize Appearance&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-styling-appearance
 tags: customize,appearance
 published: True

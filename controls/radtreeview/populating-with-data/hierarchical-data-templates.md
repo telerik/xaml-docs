@@ -1,7 +1,7 @@
 ---
 title: Hierarchical Data Templates
 page_title: Hierarchical Data Templates
-description: Hierarchical Data Templates
+description: Check our &quot;Hierarchical Data Templates&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-populating-with-data-hierarchical-data-templates
 tags: hierarchical,data,templates
 published: True
@@ -239,6 +239,5 @@ Here is the final result:
 ![](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
 
 ## See Also
- * [Templating - Overview]({%slug radtreeview-styles-and-templates-tesmplates-structure%})
  * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

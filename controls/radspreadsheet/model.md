@@ -1,7 +1,7 @@
 ---
 title: Model
 page_title: Model
-description: Model
+description: Check our &quot;Model&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-model
 tags: model
 published: True

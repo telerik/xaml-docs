@@ -1,7 +1,7 @@
 ---
 title: Basics
 page_title: Basics
-description: Basics
+description: Check our &quot;Basics&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: radgauge-features-linear-and-radial-scales-basics
 tags: basics
 published: True

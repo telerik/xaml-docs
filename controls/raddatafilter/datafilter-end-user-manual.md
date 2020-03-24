@@ -1,7 +1,7 @@
 ---
 title: End User Manual
 page_title: End User Manual
-description: End User Manual
+description: Check our &quot;End User Manual&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: datafilter-end-user-manual
 tags: end,user,manual
 published: True

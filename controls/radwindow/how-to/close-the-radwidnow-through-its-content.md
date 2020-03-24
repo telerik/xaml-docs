@@ -1,7 +1,7 @@
 ---
 title: Close the RadWindow Through its Content
 page_title: Close the RadWindow Through its Content
-description: Close the RadWindow Through its Content
+description: Check our &quot;Close the RadWindow Through its Content&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-close-the-radwidnow-through-its-content
 tags: close,the,radwindow,through,its,content
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ToolTips
 page_title: ToolTips
-description: ToolTips
+description: Check our &quot;ToolTips&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-tooltips
 tags: tooltips
 published: True

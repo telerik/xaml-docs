@@ -1,7 +1,7 @@
 ---
 title: Appearance
 page_title: Appearance
-description: Appearance
+description: Check our &quot;Appearance&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-features-appearance
 tags: appearance
 published: True

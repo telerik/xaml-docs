@@ -1,7 +1,7 @@
 ---
 title: Inverse Axis
 page_title: Inverse Axis
-description: Inverse Axis
+description: Check our &quot;Inverse Axis&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-axes-inverse-axis
 tags: inverse,axis
 published: True

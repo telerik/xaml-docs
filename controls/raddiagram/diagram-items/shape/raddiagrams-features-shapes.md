@@ -1,7 +1,7 @@
 ---
 title: Diagram Shape
 page_title: Diagram Shape
-description: Telerik RadDiagram for WPF Shapes
+description: Telerik RadDiagram for {{ site.framework_name }} Shapes
 slug: raddiagrams-features-shapes
 tags: shapes
 published: True

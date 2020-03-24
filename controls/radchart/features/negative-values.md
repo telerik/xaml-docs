@@ -1,7 +1,7 @@
 ---
 title: Negative Values
 page_title: Negative Values
-description: Negative Values
+description: Check our &quot;Negative Values&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-negative-values
 tags: negative,values
 published: True

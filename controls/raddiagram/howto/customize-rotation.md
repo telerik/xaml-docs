@@ -1,7 +1,7 @@
 ---
 title: Customize the Rotation Step
 page_title: Customize the Rotation Step
-description: Customize the Rotation Step
+description: Check our &quot;Customize the Rotation Step&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-howto-customize-rotation
 tags: customize,the,rotation,step
 published: True

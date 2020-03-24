@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-description: Sorting
+description: Check our &quot;Sorting&quot; documentation article for the RadChart {{ site.framework_name }} control.
 slug: radchart-features-sorting
 tags: sorting
 published: True

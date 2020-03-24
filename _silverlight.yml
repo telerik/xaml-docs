@@ -31,7 +31,6 @@ styling-and-appearance/themes-suite/common-styling-appearance-visualstudio2019-t
 styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf.md,
 styling-and-appearance/theme-helper.md,
 styling-and-appearance/troubleshooting/common-styles-appearance-metro-theme.md,
-integration/visual-studio-extensions/for-wpf-vs-extensions-overview-wpf.md,
 integration/visual-studio-extensions/for-wpf-vs-extensions-project-configuration.md,
 integration/visual-studio-extensions/for-wpf-vs-extensions-automatic-resolving.md,
 integration/visual-studio-extensions/for-wpf-vs-extensions-upgrading.md,
@@ -156,6 +155,507 @@ defaults:
     values:
         layout: "documentation"
         category: "default"
+
+-
+    scope:
+        path: "controls/radgridview"
+    values:
+        title_prefix: "Silverlight DataGrid"
+-
+    scope:
+        path: "controls/dragdropmanager"
+    values:
+        title_prefix: "Silverlight DragDropManager"
+-
+    scope:
+        path: "controls/radautocompletebox"
+    values:
+        title_prefix: "Silverlight AutoCompleteBox"
+-
+    scope:
+        path: "controls/radbarcode"
+    values:
+        title_prefix: "Silverlight Barcode"
+-
+    scope:
+        path: "controls/radbook"
+    values:
+        title_prefix: "Silverlight Book"
+-
+    scope:
+        path: "controls/radbreadcrumb"
+    values:
+        title_prefix: "Silverlight Breadcrumb"
+-
+    scope:
+        path: "controls/radbulletgraph"
+    values:
+        title_prefix: "Silverlight BulletGraph"
+-
+    scope:
+        path: "controls/radbusyindicator"
+    values:
+        title_prefix: "Silverlight BusyIndicator"
+-
+    scope:
+        path: "controls/radbuttons"
+    values:
+        title_prefix: "Silverlight Buttons"
+-
+    scope:
+        path: "controls/radcalculator"
+    values:
+        title_prefix: "Silverlight Calculator"
+-
+    scope:
+        path: "controls/radcalendar"
+    values:
+        title_prefix: "Silverlight Calendar"
+-
+    scope:
+        path: "controls/radcarousel"
+    values:
+        title_prefix: "Silverlight Carousel"
+-
+    scope:
+        path: "controls/radchart"
+    values:
+        title_prefix: "Silverlight Chart"
+-
+    scope:
+        path: "controls/radchartview"
+    values:
+        title_prefix: "Silverlight ChartView"
+-
+    scope:
+        path: "controls/radchartview3d"
+    values:
+        title_prefix: "Silverlight ChartView3D"
+-
+    scope:
+        path: "controls/radchat"
+    values:
+        title_prefix: "Silverlight Chat"
+-
+    scope:
+        path: "controls/radcloudupload"
+    values:
+        title_prefix: "Silverlight CloudUpload"
+-
+    scope:
+        path: "controls/radcollectionnavigator"
+    values:
+        title_prefix: "Silverlight CollectionNavigator"
+-
+    scope:
+        path: "controls/radcoloreditor"
+    values:
+        title_prefix: "Silverlight ColorEditor"
+-
+    scope:
+        path: "controls/radcolorpicker"
+    values:
+        title_prefix: "Silverlight ColorPicker"
+-
+    scope:
+        path: "controls/radcombobox"
+    values:
+        title_prefix: "Silverlight ComboBox"
+-
+    scope:
+        path: "controls/radcontextmenu"
+    values:
+        title_prefix: "Silverlight ContextMenu"
+-
+    scope:
+        path: "controls/radcoverflow"
+    values:
+        title_prefix: "Silverlight CoverFlow"
+-
+    scope:
+        path: "controls/raddatabar"
+    values:
+        title_prefix: "Silverlight DataBar"
+-
+    scope:
+        path: "controls/raddatafilter"
+    values:
+        title_prefix: "Silverlight DataFilter"
+-
+    scope:
+        path: "controls/raddataform"
+    values:
+        title_prefix: "Silverlight DataForm"
+-
+    scope:
+        path: "controls/raddatapager"
+    values:
+        title_prefix: "Silverlight DataPager"
+-
+    scope:
+        path: "controls/raddataservicedatasource"
+    values:
+        title_prefix: "Silverlight DataServiceDataSource"
+-
+    scope:
+        path: "controls/raddatetimepicker"
+    values:
+        title_prefix: "Silverlight DateTimePicker"
+-
+    scope:
+        path: "controls/raddesktopalert"
+    values:
+        title_prefix: "Silverlight DesktopAlert"
+-
+    scope:
+        path: "controls/raddiagram"
+    values:
+        title_prefix: "Silverlight Diagram"
+-
+    scope:
+        path: "controls/raddocking"
+    values:
+        title_prefix: "Silverlight Docking"
+-
+    scope:
+        path: "controls/raddomaindatasource"
+    values:
+        title_prefix: "Silverlight DomainDataSource"
+-
+    scope:
+        path: "controls/radentityframeworkdatasource"
+    values:
+        title_prefix: "Silverlight EntityFrameworkDataSource"
+-
+    scope:
+        path: "controls/radexpander"
+    values:
+        title_prefix: "Silverlight Expander"
+-
+    scope:
+        path: "controls/radexpressioneditor"
+    values:
+        title_prefix: "Silverlight ExpressionEditor"
+-
+    scope:
+        path: "controls/radfiledialogs"
+    values:
+        title_prefix: "Silverlight FileDialogs"
+-
+    scope:
+        path: "controls/radfilepathpicker"
+    values:
+        title_prefix: "Silverlight FilePathPicker"
+-
+    scope:
+        path: "controls/radfluidcontentcontrol"
+    values:
+        title_prefix: "Silverlight FluidContentControl"
+-
+    scope:
+        path: "controls/radganttview"
+    values:
+        title_prefix: "Silverlight GanttView"
+-
+    scope:
+        path: "controls/radgauge"
+    values:
+        title_prefix: "Silverlight Gauge"
+-
+    scope:
+        path: "controls/radheatmap"
+    values:
+        title_prefix: "Silverlight HeatMap"
+-
+    scope:
+        path: "controls/radhtmlplaceholder"
+    values:
+        title_prefix: "Silverlight HtmlPlaceHolder"
+-
+    scope:
+        path: "controls/radimageeditor"
+    values:
+        title_prefix: "Silverlight ImageEditor"
+-
+    scope:
+        path: "controls/radlayoutcontrol"
+    values:
+        title_prefix: "Silverlight LayoutControl"
+-
+    scope:
+        path: "controls/radlegend"
+    values:
+        title_prefix: "Silverlight Legend"
+-
+    scope:
+        path: "controls/radlistbox"
+    values:
+        title_prefix: "Silverlight ListBox"
+-
+    scope:
+        path: "controls/radmap"
+    values:
+        title_prefix: "Silverlight Map"
+-
+    scope:
+        path: "controls/radmaskedinput"
+    values:
+        title_prefix: "Silverlight MaskedInput"
+-
+    scope:
+        path: "controls/radmediaplayer"
+    values:
+        title_prefix: "Silverlight MediaPlayer"
+-
+    scope:
+        path: "controls/radmenu"
+    values:
+        title_prefix: "Silverlight Menu"
+-
+    scope:
+        path: "controls/radmulticolumncombobox"
+    values:
+        title_prefix: "Silverlight MultiColumnCombobox"
+-
+    scope:
+        path: "controls/radnavigationview"
+    values:
+        title_prefix: "Silverlight NavigationView"
+-
+    scope:
+        path: "controls/radnumericupdown"
+    values:
+        title_prefix: "Silverlight NumericUpDown"
+-
+    scope:
+        path: "controls/radoutlookbar"
+    values:
+        title_prefix: "Silverlight OutlookBar"
+-
+    scope:
+        path: "controls/radpanelbar"
+    values:
+        title_prefix: "Silverlight PanelBar"
+-
+    scope:
+        path: "controls/radpasswordbox"
+    values:
+        title_prefix: "Silverlight PasswordBox"
+-
+    scope:
+        path: "controls/radpdfprocessing"
+    values:
+        title_prefix: "Silverlight PdfProcessing"
+-
+    scope:
+        path: "controls/radpdfviewer"
+    values:
+        title_prefix: "Silverlight PdfViewer"
+-
+    scope:
+        path: "controls/radpersistenceframework"
+    values:
+        title_prefix: "Silverlight PersistenceFramework"
+-
+    scope:
+        path: "controls/radpivotgrid"
+    values:
+        title_prefix: "Silverlight PivotGrid"
+-
+    scope:
+        path: "controls/radprogressbar"
+    values:
+        title_prefix: "Silverlight ProgressBar"
+-
+    scope:
+        path: "controls/radpropertygrid"
+    values:
+        title_prefix: "Silverlight PropertyGrid"
+-
+    scope:
+        path: "controls/radradialmenu"
+    values:
+        title_prefix: "Silverlight RadialMenu"
+-
+    scope:
+        path: "controls/radrating"
+    values:
+        title_prefix: "Silverlight Rating"
+-
+    scope:
+        path: "controls/radribbonview"
+    values:
+        title_prefix: "Silverlight RibbonView"
+-
+    scope:
+        path: "controls/radrichtextbox"
+    values:
+        title_prefix: "Silverlight RichTextBox"
+-
+    scope:
+        path: "controls/radscheduleview"
+    values:
+        title_prefix: "Silverlight ScheduleView"
+-
+    scope:
+        path: "controls/radslider"
+    values:
+        title_prefix: "Silverlight Slider"
+-
+    scope:
+        path: "controls/radsparkline"
+    values:
+        title_prefix: "Silverlight Sparkline"
+-
+    scope:
+        path: "controls/radspellchecker"
+    values:
+        title_prefix: "Silverlight SpellChecker"
+-
+    scope:
+        path: "controls/radsplashscreen"
+    values:
+        title_prefix: "Silverlight SplashScreen"
+-
+    scope:
+        path: "controls/radspreadprocessing"
+    values:
+        title_prefix: "Silverlight SpreadProcessing"
+-
+    scope:
+        path: "controls/radspreadsheet"
+    values:
+        title_prefix: "Silverlight SpreadSheet"
+-
+    scope:
+        path: "controls/radspreadstreamprocessing"
+    values:
+        title_prefix: "Silverlight SpreadStreamProcessing"
+-
+    scope:
+        path: "controls/radsyntaxeditor"
+    values:
+        title_prefix: "Silverlight SyntaxEditor"
+-
+    scope:
+        path: "controls/radtabbedwindow"
+    values:
+        title_prefix: "Silverlight TabbedWindow"
+-
+    scope:
+        path: "controls/radtabcontrol"
+    values:
+        title_prefix: "Silverlight TabControl"
+-
+    scope:
+        path: "controls/radtaskboard"
+    values:
+        title_prefix: "Silverlight TaskBoard"
+-
+    scope:
+        path: "controls/radtilelist"
+    values:
+        title_prefix: "Silverlight TileList"
+-
+    scope:
+        path: "controls/radtileview"
+    values:
+        title_prefix: "Silverlight TileView"
+-
+    scope:
+        path: "controls/radtimebar"
+    values:
+        title_prefix: "Silverlight TimeBar"
+-
+    scope:
+        path: "controls/radtimeline"
+    values:
+        title_prefix: "Silverlight Timeline"
+-
+    scope:
+        path: "controls/radtimepicker"
+    values:
+        title_prefix: "Silverlight TimePicker"
+-
+    scope:
+        path: "controls/radtimespanpicker"
+    values:
+        title_prefix: "Silverlight TimeSpanPicker"
+-
+    scope:
+        path: "controls/radtoolbar"
+    values:
+        title_prefix: "Silverlight ToolBar"
+-
+    scope:
+        path: "controls/radtooltip"
+    values:
+        title_prefix: "Silverlight ToolTip"
+-
+    scope:
+        path: "controls/radtransitioncontrol"
+    values:
+        title_prefix: "Silverlight TransitionControl"
+-
+    scope:
+        path: "controls/radtreelistview"
+    values:
+        title_prefix: "Silverlight TreeListView"
+-
+    scope:
+        path: "controls/radtreemap"
+    values:
+        title_prefix: "Silverlight TreeMap"
+-
+    scope:
+        path: "controls/radtreeview"
+    values:
+        title_prefix: "Silverlight TreeView"
+-
+    scope:
+        path: "controls/radupload"
+    values:
+        title_prefix: "Silverlight Upload"
+-
+    scope:
+        path: "controls/radvirtualgrid"
+    values:
+        title_prefix: "Silverlight VirtualGrid"
+-
+    scope:
+        path: "controls/radwatermarktextbox"
+    values:
+        title_prefix: "Silverlight WatermarkTextBox"
+-
+    scope:
+        path: "controls/radwebcam"
+    values:
+        title_prefix: "Silverlight WebCam"
+-
+    scope:
+        path: "controls/radwindow"
+    values:
+        title_prefix: "Silverlight Window"
+-
+    scope:
+        path: "controls/radwizard"
+    values:
+        title_prefix: "Silverlight Wizard"
+-
+    scope:
+        path: "controls/radwordsprocessing"
+    values:
+        title_prefix: "Silverlight WordsProcessing"
+-
+    scope:
+        path: "controls/radziplibrary"
+    values:
+        title_prefix: "Silverlight ZipLibrary"
+-
+    scope:
+        path: "controls/touchmanager"
+    values:
+        title_prefix: "Silverlight TouchManager"
 
 # Define any custom fields that you use in the site here
 framework_name: Silverlight

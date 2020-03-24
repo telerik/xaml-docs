@@ -1,7 +1,7 @@
 ---
 title: .NET Core Support
 page_title: .NET Core Support
-description: .NET Core Support
+description: Check our &quot;.NET Core Support&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-getting-started-net-core-support
 tags: netcore,.net core
 published: True

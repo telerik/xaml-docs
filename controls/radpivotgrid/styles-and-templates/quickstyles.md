@@ -1,7 +1,7 @@
 ---
 title: QuickStyle
 page_title: QuickStyle
-description: QuickStyle
+description: Check our &quot;QuickStyle&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
 slug: radpivotgrid-styles-and-templates-quickstyles
 tags: quickstyle
 published: True

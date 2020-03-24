@@ -1,7 +1,7 @@
 ---
 title: Bind RadTreeView ImageSource Properties
 page_title: Bind RadTreeView ImageSource Properties
-description: Bind RadTreeView ImageSource Properties
+description: Check our &quot;Bind RadTreeView ImageSource Properties&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-howto-bind-treeview-image-source-property
 tags: bind,radtreeview,imagesource,properties
 published: True

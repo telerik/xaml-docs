@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization
-description: UI Virtualization
+description: Check our &quot;UI Virtualization&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-ui-virtualization
 tags: ui,virtualization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Check our &quot;Overview&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
 slug: raddatapager-styles-and-templates-overview
 tags: overview
 published: True

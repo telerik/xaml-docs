@@ -1,7 +1,7 @@
 ---
 title: Global Settings
 page_title: Global Settings
-description: Global Settings
+description: Check our &quot;Global Settings&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-global-settings
 tags: global,settings
 published: True

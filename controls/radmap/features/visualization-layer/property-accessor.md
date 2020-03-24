@@ -1,7 +1,7 @@
 ---
 title: Property Accessor
 page_title: Property Accessor
-description: Property Accessor
+description: Check our &quot;Property Accessor&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-visualization-layer-property-accessor
 tags: property,accessor
 published: True
@@ -29,6 +29,9 @@ The default property accessor uses the following set of rules:
 1. The first property which has __Telerik.Windows.Controls.Map.Location__ type will be considered as geographical position of the item.
 2. The first property which has __Telerik.Windows.Controls.Map.ZoomRange__ type will beconsidered as zoom range of the item.
 3. The first property which has __Telerik.Windows.Controls.HotSpot__ type will be considered as hotspot definition of the item.
+
+> If you have more than one property of those types, the one that is defined first will be used. 
+
 4. The property which is named __BaseZoomLevel__ and is of type double type will be considered as base zoom level definition.
 5. The property which is named __MaxScale__ and is of type double type will be considered as max scale of the item.
 6. The property which is named __MinScale__ and is of type double type will be considered as min scale of the item.

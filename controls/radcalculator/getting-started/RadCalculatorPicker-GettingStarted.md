@@ -1,7 +1,7 @@
 ---
 title: RadCalculatorPicker
 page_title: RadCalculatorPicker
-description: RadCalculatorPicker
+description: Check our &quot;RadCalculatorPicker&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
 slug: radcalculatorpicker-gettingstarted
 tags: radcalculatorpicker
 published: True

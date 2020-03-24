@@ -1,7 +1,7 @@
 ---
 title: Functional Structure
 page_title: Functional Structure
-description: Functional Structure
+description: Check our &quot;Functional Structure&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-functional-structure
 tags: functional,structure
 published: True

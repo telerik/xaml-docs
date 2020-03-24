@@ -1,7 +1,7 @@
 ---
 title: Change the Default Theme
 page_title: Change the Default Theme
-description: Change the Default Theme
+description: Check our &quot;Change the Default Theme&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-change-the-default-theme
 tags: change,the,default,theme
 published: True

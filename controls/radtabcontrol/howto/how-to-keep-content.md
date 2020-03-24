@@ -1,7 +1,7 @@
 ---
 title: How to Keep the Content State
 page_title: How to Keep the Content State
-description: How to Keep the Content State
+description: Check our &quot;How to Keep the Content State&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-how-to-keep-content
 tags: how,to,keep,the,content,state
 published: True

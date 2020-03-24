@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-getting-started
 tags: getting,started
 published: True
@@ -40,7 +40,7 @@ You can also take advantage of some RadPdfViewer-specific controls such as FindD
 
 * **Telerik.Windows.Controls.Input.dll**
 * **Telerik.Windows.Controls.Navigation.dll**        
-* **Telerik.Windows.Controls.FixedDocumentViewersUI**
+* **Telerik.Windows.Controls.FixedDocumentViewersUI.dll**
             
 
 ## Adding RadPdfViewer to a Page

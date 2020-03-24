@@ -1,7 +1,7 @@
 ---
 title: Information Layer
 page_title: Information Layer
-description: Information Layer
+description: Check our &quot;Information Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-information-layer
 tags: information,layer
 published: True

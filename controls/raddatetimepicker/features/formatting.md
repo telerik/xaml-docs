@@ -1,7 +1,7 @@
 ---
 title: Formatting
 page_title: Formatting
-description: Formatting
+description: Check our &quot;Formatting&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-features-formatting
 tags: formatting
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Styling Shapes When Using GraphSource 
 page_title: Styling Shapes When Using GraphSource
-description: Styling Shapes When Using GraphSource
+description: Check our &quot;Styling Shapes When Using GraphSource&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-styling-shapes-with-graphsource
 tags: customize,appearance,graphsource,mvvm,activetool,textshape,
 published: True

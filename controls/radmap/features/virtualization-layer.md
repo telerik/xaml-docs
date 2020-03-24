@@ -1,7 +1,7 @@
 ---
 title: Virtualization Layer
 page_title: Virtualization Layer
-description: Virtualization Layer
+description: Check our &quot;Virtualization Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-features-virtualization-layer
 tags: virtualization,layer
 published: True

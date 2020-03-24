@@ -1,7 +1,7 @@
 ---
 title: Create Thermometer
 page_title: Create Thermometer
-description: Create Thermometer
+description: Check our &quot;Create Thermometer&quot; documentation article for the RadGauge {{ site.framework_name }} control.
 slug: linear-gauge-create-thermometer
 tags: create,thermometer
 published: True

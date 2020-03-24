@@ -1,7 +1,7 @@
 ---
 title: Filter RadGridView
 page_title: Filter RadGridView
-description: Filter RadGridView
+description: Check our &quot;Filter RadGridView&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
 slug: raddatafilter-how-to-filter-radgridview
 tags: filter,radgridview
 published: True

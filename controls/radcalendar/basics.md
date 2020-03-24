@@ -1,7 +1,7 @@
 ---
 title: Calendar Basics
 page_title: Calendar Basics
-description: Calendar Basics
+description: Check our &quot;Calendar Basics&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
 slug: radcalendar-basics
 tags: calendar,basics
 published: True

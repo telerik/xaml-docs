@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support
-description: Keyboard Support
+description: Check our &quot;Keyboard Support&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
 slug: raddatetimepicker-features-keyboard-support
 tags: keyboard,support
 published: True

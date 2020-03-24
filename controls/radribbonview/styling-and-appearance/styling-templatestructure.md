@@ -1,7 +1,7 @@
 ---
 title: RadRibbonView Template Structure
 page_title: RadRibbonView Template Structure
-description: RadRibbonView Template Structure
+description: Check our &quot;RadRibbonView Template Structure&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-styling-templatestructure
 tags: radribbonview,template,structure
 published: True

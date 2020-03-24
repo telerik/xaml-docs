@@ -1,7 +1,7 @@
 ---
 title: Hyperlink
 page_title: Hyperlink
-description: Hyperlink
+description: Check our &quot;Hyperlink&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
 published: True

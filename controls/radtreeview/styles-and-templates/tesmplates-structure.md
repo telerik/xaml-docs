@@ -1,10 +1,10 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Templates Structure
+description: Check our &quot;Templates Structure&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-styles-and-templates-tesmplates-structure
 tags: templates,structure
-published: True
+published: False
 position: 1
 ---
 

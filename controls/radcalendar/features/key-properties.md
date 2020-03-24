@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: Key Properties
+description: Check our &quot;Key Properties&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
 slug: radcalendar-key-properties
 tags: key,properties
 published: True

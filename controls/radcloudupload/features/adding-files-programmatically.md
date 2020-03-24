@@ -1,7 +1,7 @@
 ---
 title: Adding Files Programmatically
 page_title: Adding Files Programmatically
-description: Adding Files Programmatically
+description: Check our &quot;Adding Files Programmatically&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
 slug: radcloudupload-features-adding-files-programmatically
 tags: adding, items, files, manually, programmatically, code, code-behind
 published: True

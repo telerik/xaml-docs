@@ -1,7 +1,7 @@
 ---
 title: Difference between RadDesktopAlert and RadAlert
 page_title: Difference between RadDesktopAlert and RadAlert
-description: Difference between RadDesktopAlert and RadAlert
+description: Check our &quot;Difference between RadDesktopAlert and RadAlert&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
 slug: raddesktopalert-difference-between-raddesktopalert-and-radalert
 tags: visual,structure,difference,alert
 published: True

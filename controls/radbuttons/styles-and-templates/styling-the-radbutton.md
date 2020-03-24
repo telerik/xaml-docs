@@ -1,7 +1,7 @@
 ---
 title: Styling the RadButton
 page_title: Styling the RadButton
-description: Styling the RadButton
+description: Check our &quot;Styling the RadButton&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-styles-and-templates-styling-the-radbutton
 tags: styling,the,radbutton
 published: True
@@ -10,65 +10,31 @@ position: 3
 
 # Styling the RadButton
 
-The __RadButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+The __RadButton__ can be styled by creating an appropriate __Style__ (or use Implicit Style) and setting it to the __Style__ property of the control. 
 
+## Create an empty implicit style and set it up on your own 
 
-You have two options:
+#### __[C#] Example 1: Create custom implicit style__
+{{region radbuttons-styles-and-templates-styling-the-radbutton-0}}
+	<Window.Resources>
+		<Style TargetType="telerik:RadButton">
+			<Setter Property="Opacity" Value="0.5"/>
+			<Setter Property="BorderBrush" Value="Red"/>
+			<Setter Property="BorderThickness" Value="1"/>
+		</Style>
+	</Window.Resources>
+	<Grid>
+		<telerik:RadButton Width="200" Height="200" Content="My Button" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+	</Grid>
+{{endregion}}
 
-* To create an empty style and set it up on your own. 
+## Edit the default template of the control
 
-* To copy the default style of the control and modify it.
+If you prefer, you can [manually extract the needed style from the respective XAML file]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) in the **Themes.Implicit** folder of your **Telerik UI** installation and modify its code to suit your needs.
 
-This topic will show you how to perform the second one.
+>tip If you choose to define the style in the App.xaml file, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-## Modifying the Default Style
-
-To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadButton__. In the 'Objects and Timeline' pane select the __RadButton__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-
-![](images/Buttons_Button_CreateStyle.png)
-
->tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
-
-After clicking 'OK', Expression Blend will generate the default style of the __RadButton__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
-
-{% if site.site_name == 'Silverlight' %}If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadButton.__ Their names indicate to which part of the __RadButton__ appearance they are assigned.{% endif %}
-{% if site.site_name == 'Silverlight' %}![](images/Buttons_Button_Resources.png){% endif %}
-
-* __ControlOuterBorder_Normal__ - a brush that represents the outer border color of the button, when it is in __Normal__ state.
-
-* __ControlBackground_Normal__ - a brush that represents the background color of the button, when it is in __Normal__ state.
-
-* __ControlForeground_Normal__ - a brush that represents the foreground color of the button, when it is in __Normal__ state.
-
-* __ControlOuterBorder_CornerRadius__ - represents the value for the radius of the button's corners.
-
-* __ControlInnerBorder_Normal__ -  a brush that represents the inner border color of the button, when it is in __Normal__ state.
-
-* __ControlOuterBorder_Focused__ -  a brush that represents the outer border color of the button, when it is focused.
-
-* __ControlBackground_Focused__ - a brush that represents the background color of the button, when it is focused.
-
-* __ControlInnerBorder_Focused__ - a brush that represents the inner border color of the button, when it is focused.
-
-* __ControlOuterBorder_MouseOver__ - a brush that represents the outer border color of the button, when the mouse is over it.
-
-* __ControlBackground_MouseOver__ - a brush that represents the background color of the button, when the mouse is over it.
-
-* __ControlInnerBorder_MouseOver__ - a brush that represents the inner border color of the button, when the mouse is over it.
-
-* __ControlOuterBorder_Pressed__ - a brush that represents the outer border color of the button, when it is pressed.
-
-* __ControlBackground_Pressed__ - a brush that represents the background color of the button, when it is pressed.
-
-* __ControlInnerBorder_Pressed__ - a brush that represents the inner border color of the button, when it is pressed.
-
-* __ControlOuterBorder_Disabled__ - a brush that represents the outer border color of the button, when it is disabled.
-
-* __ControlBackground_Disabled__ - a brush that represents the background color of the button, when it is disabled.
-
-* __ControlInnerBorder_Disabled__ - a brush that represents the inner border color of the button, when it is disabled.
-
-* __RadButtonStyle__ - the default Style for the __RadButton__.
+>importantNote that when changing a __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})

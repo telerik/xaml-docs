@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure
-description: Structure
+description: Check our &quot;Structure&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
 slug: radpanelbar-structure
 tags: structure
 published: True

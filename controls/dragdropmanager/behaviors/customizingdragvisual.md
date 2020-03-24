@@ -1,7 +1,7 @@
 ---
 title: Customizing the DragVisual
 page_title: Customizing the DragVisual
-description: Customizing the DragVisual
+description: Check our &quot;Customizing the DragVisual&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-behaviors-customizingdragvisual
 tags: customizing,the,dragvisual
 published: True

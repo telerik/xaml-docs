@@ -1,7 +1,7 @@
 ---
 title: Customize Selection
 page_title: Customize Selection
-description: Customize Selection
+description: Check our &quot;Customize Selection&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-howto-customize-selection
 tags: customize,selection
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Expand and Collapse Timeline groups
 page_title: Expand and Collapse Timeline groups
-description: Expand and Collapse Timeline groups
+description: Check our &quot;Expand and Collapse Timeline groups&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
 slug: radtimeline-howto-expand-collapse-groups
 tags: expand,and,collapse,timeline,groups
 published: True

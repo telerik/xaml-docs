@@ -1,7 +1,7 @@
 ---
 title: Items Editing
 page_title: Items Editing
-description: Items Editing
+description: Check our &quot;Items Editing&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagrams-features-edit
 tags: items,editing
 published: True

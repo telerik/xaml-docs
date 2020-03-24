@@ -1,7 +1,7 @@
 ---
 title: Pinned Rows and Columns
 page_title: Pinned Rows and Columns
-description: Pinned Rows and Columns
+description: Check our &quot;Pinned Rows and Columns&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
 slug: virtualgrid-pinned-rows-and-columns
 tags: pinned,rows,columns
 published: True

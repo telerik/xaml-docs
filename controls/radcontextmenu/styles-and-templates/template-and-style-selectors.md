@@ -1,7 +1,7 @@
 ---
 title: Template and Style Selectors
 page_title: Template and Style Selectors
-description: Template and Style Selectors
+description: Check our &quot;Template and Style Selectors&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 slug: radcontextmenu-populating-with-data-template-and-style-selectors
 tags: template,and,style,selectors
 published: True

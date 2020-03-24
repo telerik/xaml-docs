@@ -1,7 +1,7 @@
 ---
 title: Editing Images
 page_title: Editing Images
-description: Editing Images
+description: Check our &quot;Editing Images&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-editing-images
 tags: editing,images
 published: True

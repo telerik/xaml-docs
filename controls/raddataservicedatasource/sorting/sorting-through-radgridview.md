@@ -1,7 +1,7 @@
 ---
 title: Sorting through RadGridView
 page_title: Sorting through RadGridView
-description: Sorting through RadGridView
+description: Check our &quot;Sorting through RadGridView&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
 slug: raddataservicedatasource-sorting-sorting-through-radgridview
 tags: sorting,through,radgridview
 published: True

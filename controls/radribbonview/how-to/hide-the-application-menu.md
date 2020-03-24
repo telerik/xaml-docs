@@ -1,7 +1,7 @@
 ---
 title: Hide The Application Menu
 page_title: Hide The Application Menu
-description: Hide The Application Menu
+description: Check our &quot;Hide The Application Menu&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-how-to-hide-the-application-menu
 tags: hide,the,application,menu
 published: True

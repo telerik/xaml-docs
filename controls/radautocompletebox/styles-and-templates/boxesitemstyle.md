@@ -1,7 +1,7 @@
 ---
 title: BoxesItemStyle
 page_title: BoxesItemStyle
-description: BoxesItemStyle
+description: Check our &quot;BoxesItemStyle&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
 slug: radautocompletebox-boxesitemstyle
 tags: customizing,the,boxesitemstyle
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Document Presenters
 page_title: Document Presenters
-description: Document Presenters
+description: Check our &quot;Document Presenters&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
 slug: radpdfviewer-ui-document-presenters
 tags: document,presenters
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Specifications
 page_title: Specifications
-description: Specifications
+description: Check our &quot;Specifications&quot; documentation article for the RadBarcode {{ site.framework_name }} control.
 slug: radbarcode-barcode-specifications
 tags: specifications
 published: True

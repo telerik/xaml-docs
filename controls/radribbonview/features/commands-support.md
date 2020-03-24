@@ -1,7 +1,7 @@
 ---
 title: Commands Support
 page_title: Commands Support
-description: Commands Support
+description: Check our &quot;Commands Support&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
 slug: radribbonview-features-commands-support
 tags: commands,support
 published: True

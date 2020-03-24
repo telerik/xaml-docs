@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-getting-started
 tags: getting,started
 published: True
@@ -19,6 +19,8 @@ This tutorial will walk you through the creation of a __RadWindow__ and will sho
 * [Add content to the RadWindow](#add-content-to-the-radwindow)
 
 * [Use predefined windows](#use-predefined-windows)
+
+* [Using RadWindow with NoXaml assemblies](#using-radwindow-with-noxaml-assemblies)
 
 ## Assembly References
 
@@ -170,6 +172,24 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 {{endregion}}
 
 ![Figure 5: Result of Example 7](images/RadWindow_GettingStarted_05.png)
+
+## Using RadWindow with NoXaml assemblies
+
+If you are using [Implicit Styles]({%slug implicit-styles-styling-the-controls%}) to style the control, note that the newly created user control will not receive automatically the RadWindow style. The __BasedOn__ property of the custom style need to be set to the default style of RadWindow which is __RadWindowStyle__. You should add the following style after the merged dictionaries to fix this:
+
+#### __[XAML] Example 8: Custom Style targeting your RadWindow control__  
+{{region xaml-radwindow-getting-started_13}}
+	<Application.Resources>
+	    <ResourceDictionary>
+	        <ResourceDictionary.MergedDictionaries>
+	            <ResourceDictionary Source="Themes/System.Windows.xaml" />
+	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
+	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
+	        </ResourceDictionary.MergedDictionaries>
+	        <Style TargetType="local:RadWindowControl" BasedOn="{StaticResource RadWindowStyle}" />
+	    </ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
 
 ## See Also
 

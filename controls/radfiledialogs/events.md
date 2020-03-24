@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-description: Events
+description: Check our &quot;Events&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
 slug: radfiledialogs-events
 tags: events
 published: True
@@ -82,6 +82,19 @@ This article lists the events specific to all of the RadFileDialog controls.
             {
                 e.ShortContextMenuOptions = ShortContextMenuOptions.Paste | ShortContextMenuOptions.NewFolder;
             }
+		}
+	{{endregion}}	
+	
+	Additional feature of the ContextMenuOpeningEventArgs provided with the ShellContextMenuOpening event handler is the __IsOpeningOnEmptySpace__ property. You can use this to determine whether the mouse clicked on a file/folder or on empty space in the files list.
+	
+	#### __[C#] Example 6: Checking if the click was on an empty space__
+	{{region cs-radfiledialogs-events-5}}
+		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		{
+			if (e.IsOpeningOnEmptySpace)
+           		{
+              			  // do something
+            		}
 		}
 	{{endregion}}	
 

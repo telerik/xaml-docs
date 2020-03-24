@@ -1,7 +1,7 @@
 ---
 title: CardMessage
 page_title: CardMessage
-description: CardMessage
+description: Check our &quot;CardMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
 slug: chat-items-cardmessage
 tags: messages,cardmessage
 published: True

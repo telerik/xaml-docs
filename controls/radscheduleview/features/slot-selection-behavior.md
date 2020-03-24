@@ -1,7 +1,7 @@
 ---
 title: SlotSelectionBehavior
 page_title: SlotSelectionBehavior
-description: SlotSelectionBehavior
+description: Check our &quot;SlotSelectionBehavior&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 slug: radscheduleview-features-slot-selection-behavior
 tags: slotselectionbehavior
 published: True

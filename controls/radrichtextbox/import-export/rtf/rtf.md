@@ -1,7 +1,7 @@
 ---
 title: Rtf
 page_title: Rtf
-description: Rtf
+description: Check our &quot;Rtf&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-import-export-rtf
 tags: Rtf
 published: True

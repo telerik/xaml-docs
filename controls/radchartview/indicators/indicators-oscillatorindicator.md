@@ -1,7 +1,7 @@
 ---
 title: OscillatorIndicator
 page_title: OscillatorIndicator
-description: OscillatorIndicator
+description: Check our &quot;OscillatorIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-oscillatorindicator
 tags: financial, indicators, oscillatorindicator
 publish: True

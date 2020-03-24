@@ -1,7 +1,7 @@
 ---
 title: Populating with Tabs
 page_title: Populating with Tabs
-description: Populating with Tabs
+description: Check our &quot;Populating with Tabs&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-populating-with-tabs
 tags: populating,with,tabs
 published: True

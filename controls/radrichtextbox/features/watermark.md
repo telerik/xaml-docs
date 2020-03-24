@@ -1,7 +1,7 @@
 ---
 title: Watermark
 page_title: Watermark
-description: Watermark
+description: Check our &quot;Watermark&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-watermark
 tags: watermark
 published: True

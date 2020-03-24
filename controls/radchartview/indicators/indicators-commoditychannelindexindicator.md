@@ -1,7 +1,7 @@
 ---
 title: CommodityChannelIndexIndicator
 page_title: CommodityChannelIndexIndicator
-description: CommodityChannelIndexIndicator
+description: Check our &quot;CommodityChannelIndexIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-indicators-commoditychannelindexindicator
 tags: financial, indicators, commoditychannelindexindicator
 publish: True

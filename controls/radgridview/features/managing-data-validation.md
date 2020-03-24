@@ -298,7 +298,8 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 
 >In order to use DataAnnotations you should add a reference to the __System.ComponentModel.DataAnnotations__ assembly.       
 
->tip The following __Validation Attributes__ are available:
+
+The following __Validation Attributes__ are available:
 
 * __RequiredAttribute__: Specifies that a value must be provided for a property.
 
@@ -311,6 +312,8 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 * __DateTypeAttribute__: Specifies the name of an additional type to associate with an entity member.
 
 * __CustomValidationAttribute__: Designates a customized method to execute to validate the entity member.
+
+>tip A full list of all available validation attributes can be found in the this [MSDN article](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=netframework-4.8).
 
 You can see the result in __Figure 5__.
 

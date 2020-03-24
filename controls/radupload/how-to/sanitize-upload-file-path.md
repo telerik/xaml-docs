@@ -11,13 +11,13 @@ site_name: Silverlight
 
 # Sanitize Upload File Paths
 
-This article shows how to improve the security of the RadUploadHandler used with RadUpload. 
+This article shows how to improve the security of the RadUploadHandler used with RadUpload for Silverlight. 
 
-__RadUploadHandler__ expects a web request that provides the file location of the uploading file along with few other parameters. The uploading file location should be inside the directory where the upload handler class is defined. Before version `2020.1.330` you could use the web request to reach a folder defined in a directory that is up in the hierarchy relatively to the directory of the upload handler. To avoid this and allow only safe paths __upgrade to version `2020.1.330` or later__ of Telerik UI for Silverlight.
+__RadUploadHandler__ expects a web request that provides the file location of the uploading file along with few other parameters. The uploading file location should be inside the directory where the upload handler class is defined. Before version `2020.1.330` a specially crafted web request could result in uploads to arbitrary locations. To avoid this and allow only safe paths __[upgrade]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%}) to version `2020.1.330` or later__ of Telerik UI for Silverlight.
 
->tip Version `2020.1.330` is [LIB]({%slug installation-installing-lib%}) but it is considered stable which means that we approve it for production use too.
+>tip Version `2020.1.330` is a [LIB]({%slug installation-installing-lib%}) but it is considered stable which means that we approve it for production use.
 
-If you don't plan to upgrade to version `2020.1.330` or later, we recommend you to manually ensure that the file paths received by the upload handler are sanitized. The following example shows how to do this.
+If you don't plan to upgrade to version `2020.1.330` or later, we recommend to manually ensure that the file paths received by the upload handler are sanitized. The following example shows one way to do this through a [custom handler]({%slug radupload-features-upload-handler%}).
 
 #### __[C#] Example 1: Custom RadUploadHandler__
 {{region radupload-how-to-sanitize-upload-file-paths-0}}
@@ -67,6 +67,10 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend you 
 		}
 	}
 {{endregion}}
+
+### NOTES
+
+We would like to thank Markus Wulftange of [Code White GmbH](https://www.code-white.com/en/) for assisting with making the information public. 
 
 ## See Also
  * [Getting Started]({%slug radupload-getting-started%})

@@ -68,10 +68,6 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend to m
 	}
 {{endregion}}
 
-### NOTES
-
-We would like to thank Markus Wulftange of [Code White GmbH](https://www.code-white.com/en/) for assisting with making the information public. 
-
 ## See Also
  * [Getting Started]({%slug radupload-getting-started%})
  * [Upload Handler]({%slug radupload-features-upload-handler%})

@@ -38,6 +38,4 @@ When a menu item is selected it gets expanded and its sub items appear. See the 
 
  * [Overview]({%slug radmenu-overview%})
 
- * [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%})
-
  * [Getting Started]({%slug radmenu-getting-started%})

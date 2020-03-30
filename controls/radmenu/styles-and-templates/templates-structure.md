@@ -4,7 +4,7 @@ page_title: Templates Structure
 description: Check our &quot;Templates Structure&quot; documentation article for the RadMenu {{ site.framework_name }} control.
 slug: radmenu-styles-and-templates-templates-structure
 tags: templates,structure
-published: True
+published: False
 position: 1
 ---
 

@@ -61,5 +61,3 @@ If you are using __RadMenuGroupItem__ you can control the scrolling inside via S
 ## See Also
 
  * [Visual Structure]({%slug radmenu-visual-structure%})
-
- * [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%})

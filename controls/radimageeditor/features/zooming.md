@@ -17,6 +17,15 @@ You can zoom in the opened image by holding **Ctrl** and spinning the **mouse wh
 #### Figure 1: Default zoom capabilities 
 ![Default zoom capabilities](images/default-zoom.gif)
 
+## Disabling the MouseWheel Zooming
+
+In order to disable the zooming with the mouse wheel, you can set the __AllowMouseWheelScaling__ property to __False__ as demonstrated in __Example 1__. 
+
+#### __[XAML] Example 1: Setting the AllowMouseWheelScaling property__
+{{region xaml-radimageeditor-features-zooming-0}}
+	<telerik:RadImageEditor AllowMouseWheelScaling="False" />
+{{endregion}}
+
 ## Zoom to Mouse Cursor
 
 As can be seen in **Figure 1**, the default zooming mechanism does not take into account the position of the mouse cursor.
@@ -34,8 +43,8 @@ The minimum allowed scale factor is 0, which is the default value. Setting Scale
 
 The __value of 1__ means that the image is not zoomed-in and its original size is used. A value __less than 1__, zooms-out the image. A value __greater than 1__, zooms-in the image.
 
-#### __[XAML] Example 1: Setting ScaleFactor to zoom-in the image__
-{{region radimageeditor-features-zooming-0}}
+#### __[XAML] Example 2: Setting ScaleFactor to zoom-in the image__
+{{region xaml-radimageeditor-features-zooming-1}}
 	<telerik:RadImageEditor ScaleFactor="1.5" />
 {{endregion}}
 
@@ -43,13 +52,13 @@ To get the actual scale factor, when the picture is autoscaled, check the __Actu
 
 To listen for changes in the zoom level, use the __ScaleFactorChanged__ event of RadImageEditor.
 
-#### __[XAML] Example 2: Subscribing to the ScaleFactorChanged event__
-{{region radimageeditor-features-zooming-1}}
+#### __[XAML] Example 3: Subscribing to the ScaleFactorChanged event__
+{{region xaml-radimageeditor-features-zooming-2}}
 	<telerik:RadImageEditor ScaleFactorChanged="RadImageEditor_ScaleFactorChanged" />
 {{endregion}}
 
-#### __[C#] Example 3: Defining ScaleFactorChanged event handler__
-{{region radimageeditor-features-zooming-2}}
+#### __[C#] Example 4: Defining ScaleFactorChanged event handler__
+{{region cs-radimageeditor-features-zooming-3}}
 	private void RadImageEditor_ScaleFactorChanged(object sender, EventArgs e)
 	{
 	}
@@ -61,8 +70,8 @@ The [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) contro
 
 To use the control separately with __RadImageEditor__, you can define the __ZoomController__ element, and set its __ImageEditor__ control.
 
-#### __[XAML] Example 4: Using ZoomController__
-{{region radimageeditor-features-zooming-3}}
+#### __[XAML] Example 5: Using ZoomController__
+{{region xaml-radimageeditor-features-zooming-4}}
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition />

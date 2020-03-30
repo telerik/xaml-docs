@@ -5,7 +5,7 @@ description: Check our &quot;Change the Default Theme&quot; documentation articl
 slug: radupload-how-to-change-the-default-theme
 tags: change,the,default,theme
 published: True
-position: 0
+position: 1
 site_name: Silverlight
 ---
 

@@ -29,35 +29,36 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend to m
 	public class SampleUploadHandler : RadUploadHandler
 	{
 		public override string GetFilePath(string fileName)
-		{
-			if (string.IsNullOrEmpty(fileName))
-			{
-				return null;
-			}
+        {
+            if (string.IsNullOrEmpty(fileName))
+            {
+                return null;
+            }
 
-			string targetFolder = this.GetTargetFolder();
-			if (targetFolder == null)
-			{
-				return null;
-			}
+            string targetFolder = this.GetTargetFolder();
+            if (targetFolder == null)
+            {
+                return null;
+            }
 
-			string securedFolderPath = Path.GetFileNameWithoutExtension(this.Decode(targetFolder));
-			string securedFileName = Path.GetFileNameWithoutExtension(this.Decode(fileName));
-			return Path.Combine(securedFolderPath, Path.GetFileName(securedFileName));
-		}
+            string extension = Path.GetExtension(fileName);
+            string securedFileName = Path.GetFileNameWithoutExtension(this.Decode(fileName));
+            return string.Format("{0}{1}", Path.Combine(targetFolder, Path.GetFileName(securedFileName)), extension);
+        }
 
-		public override string GetTargetFolder()
-		{
-			string targetPhysicalFolder = this.TargetPhysicalFolder;
-			if (!string.IsNullOrEmpty(targetPhysicalFolder))
-			{
-				return Path.GetFileNameWithoutExtension(this.Decode(targetPhysicalFolder));
-			}
-
-			string targetFolder = this.Context.Server.MapPath(this.TargetFolder);
-			return Path.GetFileNameWithoutExtension(this.Decode(targetFolder));
-		}
-
+        public override string GetTargetFolder()
+        {
+            string targetPhysicalFolder = this.TargetPhysicalFolder;
+            if (!string.IsNullOrEmpty(targetPhysicalFolder))
+            {
+                return Path.GetFileNameWithoutExtension(this.Decode(targetPhysicalFolder));
+            }
+            
+            string decodedFolderPath = this.Decode(this.TargetFolder);
+            string sanitizedPath = Path.GetFileNameWithoutExtension(decodedFolderPath);
+            string targetFolder = this.Context.Server.MapPath(sanitizedPath);
+            return targetFolder;
+        }
 
 		private string Decode(string str)
 		{

@@ -1,5 +1,5 @@
 ---
-title: Sanitize Upload File Paths
+title: Secure Upload File Paths
 page_title: Sanitize Upload File Paths
 description: Secure the uploading file location when using RadUpload control and RadUploadHandler.
 slug: radupload-how-to-sanitize-upload-file-paths
@@ -9,7 +9,7 @@ position: 0
 site_name: Silverlight
 ---
 
-# Sanitize Upload File Paths
+# Secure Upload File Paths
 
 This article shows how to improve the security of the RadUploadHandler used with RadUpload for Silverlight. 
 
@@ -21,6 +21,11 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend to m
 
 #### __[C#] Example 1: Custom RadUploadHandler__
 {{region radupload-how-to-sanitize-upload-file-paths-0}}
+	using System.IO;
+	using System.Text;
+	using System.Web;
+	using Telerik.Windows;
+	
 	public class SampleUploadHandler : RadUploadHandler
 	{
 		public override string GetFilePath(string fileName)
@@ -36,34 +41,30 @@ If you don't plan to upgrade to version `2020.1.330` or later, we recommend to m
 				return null;
 			}
 
-			string sanitizedFolderPath = this.SanitizeFilePath(targetFolder);
-			string sanitizedFileName = this.SanitizeFilePath(fileName);
-			return System.IO.Path.Combine(sanitizedFolderPath, System.IO.Path.GetFileName(sanitizedFileName));
+			string securedFolderPath = Path.GetFileNameWithoutExtension(this.Decode(targetFolder));
+			string securedFileName = Path.GetFileNameWithoutExtension(this.Decode(fileName));
+			return Path.Combine(securedFolderPath, Path.GetFileName(securedFileName));
 		}
 
 		public override string GetTargetFolder()
 		{
-			var targetFolder = base.GetTargetFolder();
-			return this.SanitizeFilePath(targetFolder);
-		}
-
-		private string SanitizeFilePath(string filePath)
-		{
-			int startIndex = 0;
-
-			for (int i = 0; i < filePath.Length; i++)
+			string targetPhysicalFolder = this.TargetPhysicalFolder;
+			if (!string.IsNullOrEmpty(targetPhysicalFolder))
 			{
-				var ch = filePath[i];
-				if (ch == '.' || ch == '/' || ch == '\\')
-				{
-					continue;
-				}
-
-				startIndex = i;
-				break;
+				return Path.GetFileNameWithoutExtension(this.Decode(targetPhysicalFolder));
 			}
 
-			return filePath.Substring(startIndex);
+			string targetFolder = this.Context.Server.MapPath(this.TargetFolder);
+			return Path.GetFileNameWithoutExtension(this.Decode(targetFolder));
+		}
+
+
+		private string Decode(string str)
+		{
+			var urlDecoded = HttpUtility.UrlDecode(str);
+			var encoding = new UTF8Encoding();
+			var utfDecoded = encoding.GetString(encoding.GetBytes(urlDecoded));
+			return utfDecoded;
 		}
 	}
 {{endregion}}

@@ -64,6 +64,8 @@ To test the handler point your browser to the SampleUploadHandler.ashx file. You
 
 ![The ouput when navigating to the handler](images/RadUpload_GettingStarted_03.png)
 
+> In versions prior to `2020.1.330` RadUploadHandler doesn't implement decoding of the provided file paths. You can see how to do this in the [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%}) article.
+
 ## Configuring the client side
 
 The first thing you have to do on the client side is to declare a __RadUpload__ control in the appropriate UserControl.

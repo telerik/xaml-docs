@@ -10,7 +10,9 @@ position: 2
 
 # Snapshots
 
-RadWebCam allows you to snapshot the currently displayed video feed. This can be done via the "Take snapshot" button of the control, or the __TakeSnapshot__ method. This will fire the __SnapshotTaken__ event where you can get the __BitmapSource__ object with the image.
+RadWebCam allows you to snapshot the currently displayed video feed.
+
+This can be done via the "Take snapshot" button of the control, or the __TakeSnapshot__ method. This will fire the __SnapshotTaken__ event where you can get the __BitmapSource__ object with the image.
 
 #### Figure 1: Take snapshot button
 ![](images/radwebcam-features-snapshots-0.png)

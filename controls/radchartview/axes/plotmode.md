@@ -10,17 +10,11 @@ position: 5
 
 # Plot Mode
 
-
-
-## 
-
 RadChartView allows you to modify the layout of the Categorical and Date Time axes to improve the look and feel of the series presented. Depending on the selected plot mode, the axis's ticks and labels will be visualized differently.
-        
 
 >The default PlotMode property is BetweenTicks.
 
-You can set the PlotMode from XAML like this:
-        
+You can set the PlotMode from XAML like this:        
 
 #### __XAML__
 
@@ -37,32 +31,24 @@ You can set the PlotMode from XAML like this:
 		<telerik:RadCartesianChart.Series>
 			<telerik:BarSeries>
 				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Value="10"
-										  Category="1"/>
-					<telerik:CategoricalDataPoint Value="4"
-										  Category="2"/>
-					<telerik:CategoricalDataPoint Value="7"
-										  Category="3"/>
-					<telerik:CategoricalDataPoint Value="11"
-										  Category="4"/>
-					<telerik:CategoricalDataPoint Value="15"
-										  Category="5"/>
+					<telerik:CategoricalDataPoint Value="10" Category="1"/>
+					<telerik:CategoricalDataPoint Value="4" Category="2"/>
+					<telerik:CategoricalDataPoint Value="7" Category="3"/>
+					<telerik:CategoricalDataPoint Value="11" Category="4"/>
+					<telerik:CategoricalDataPoint Value="15" Category="5"/>
 				</telerik:BarSeries.DataPoints>
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-	{{endregion}}
+{{endregion}}
 
+The PlotMode property can be used with the following predefined values:        
 
-
-The PlotMode property can be used with the following predefined values:
-        
-
-* __OnTicks__ - in this mode, the ticks match labels. Best for Linear series.
+* __OnTicks__ - in this mode, the ticks match labels. Best for Linear series.  
             ![](images/RadChartView-chart_onticks.PNG)
 
-* __BetweenTicks__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for Bar series.
+* __BetweenTicks__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for Bar series.  
             ![](images/RadChartView-chart_betweenticks.PNG)
 
-* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recomended to be used with Scatter series.
+* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recomended to be used with Scatter series.  
             ![](images/RadChartView-chart_ontickspadded.PNG)

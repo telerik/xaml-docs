@@ -10,13 +10,7 @@ position: 2
 
 # Visual States
 
-Like most Silverlight controls, the __RadMenu__ and the __RadMenuItem__ use the __VisualStateManager__ to modify their appearance depending on a condition. This topic will explain the states of the both and will focus on the states of the __RadMenuItem__ and how they are used from the different templates.      
-
-To quickly navigate through the topic, use the following links:
-
-* [RadMenu Visual States](#radmenu-visual-states)
-
-* [RadMenuItem Visual States](#radmenuitem-visual-states)
+Like most {{ site.framework_name }} controls, the __RadMenu__ and the __RadMenuItem__ use the __VisualStateManager__ to modify their appearance depending on a condition. This topic will explain the states of the both and will focus on the states of the __RadMenuItem__ and how they are used from the different templates.
 
 ## RadMenu Visual States
 
@@ -63,9 +57,6 @@ The __RadMenuItem__ exposes several states, grouped as follows:
 >tipOnly one state of a group can be active. For example, if the control goes into the Checked state, it cannot be in the HideIcon state too. By default the Checked state should display a mark before the item, so it should hide the icon no matter if it is null or not. If the item is not checked and the icon is not defined, the HideIcon state will get activated and the empty icon will get hidden.
 
 The several templates of the __RadMenuItem__ don't handle all of the states, but only those, which they need. When generated through Expression Blend, the logic placed in these templates also gets generated. In the following table you can see which states the specific template makes use of.
-        
-
->tipTo learn more about the different types of templates for the __RadMenuItem__ take a look at the [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%}) topic.
 
 Templates\States	|	Normal	|	Highlighted	|	Disabled	|	Focused	|	Checked	|	HideIcon	|	Unchecked	|	Unfocused
 ---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---
@@ -84,8 +75,6 @@ The __Top-Level Templates__ make use of both of the states, depending on the ope
 ## See Also
 
  * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
-
- * [Templates Structure]({%slug radmenu-styles-and-templates-templates-structure%})
 
  * [Styling the RadMenu]({%slug radmenu-styling-and-templates-styling-radmenu%})
 

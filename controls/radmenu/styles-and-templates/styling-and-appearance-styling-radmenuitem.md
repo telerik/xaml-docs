@@ -52,7 +52,7 @@ In order to style all __RadMenuItem__ elements in the application, you can creat
 #### __Figure 1: RadMenuItems with red Background in the Fluent theme__
 ![RadMenuItems with red Background in the Fluent theme](images/RadMenuItem_Styling.png)
 
->tip In __Figure 1__ you can observe that the clicked menu item has a different background. Inside the ControlTemplate of the RadMenuItem there are triggers/visual states, which set the Background when an item is clicked and that value takes precedence over the value from the implicit style.In order to change this behavior, you can [extract and modify the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the RadMenuItem for the theme(s) that you are using.
+>tip In __Figure 1__ you can observe that the clicked menu item has a different background. Inside the ControlTemplate of the RadMenuItem there are triggers/visual states, which set the Background when an item is clicked and that value takes precedence over the value from the implicit style. In order to change this behavior, you can [extract and modify the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the RadMenuItem for the theme(s) that you are using.
 
 ## See Also
 

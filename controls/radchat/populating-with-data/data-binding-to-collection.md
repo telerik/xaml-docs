@@ -16,7 +16,7 @@ To data bind the messages list you can use the __DataSource__ and __MessageConve
 
 The __DataSource__ property expects a collection of business objects containing information about the messages. 
 
-The __MessageConverter__ allows you to use an implementation of the [IMessageConverter](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.conversationalui.imessageconverter) interface. This is used to convert between the busines objects models and the RadChat [message models]({%slug chat-items-messages-overview%}). The __ConvertItem__ method is converting a business object to a message object and __ConvertMessage__ is converting message object to a business object.
+The __MessageConverter__ allows you to use an implementation of the [IMessageConverter](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.conversationalui.imessageconverter) interface. This is used to convert between the business object models and the RadChat [message models]({%slug chat-items-messages-overview%}). The __ConvertItem__ method should convert a business object to a message object and __ConvertMessage__ should convert a message object to a business object.
 
 The following example shows how to define custom models and use the converter.
 
@@ -90,7 +90,7 @@ The following example shows how to define custom models and use the converter.
 
 ![](images/chat-populating-with-data-binding-to-collection-0.png)
 
-> The example demonstrates how to work with text messages, but the same approach is applicable also for the other message types. 
+> The example demonstrates how to work with text messages, but the same approach is also applicable for the other message types. 
 
 ## See Also  
 * [Getting Started]({%slug chat-getting-started%})

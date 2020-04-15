@@ -28,4 +28,5 @@ The __RadUpload__ control also lets users select single or multiple __RadUploadI
 * __Single__ - use it for a single selection. At this mode the user will be available to select only one item at once.
 
 * __Multiple__ and __Extended__ - use these values when you want the user to be able to select multiple items at one time by holding down the control key and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
+
 ![](images/upload_multiple_selection.png)

@@ -2,7 +2,7 @@
 title: Prepare New Custom Window
 page_title: Create New Custom Window
 description: Prepare a custom instance of RadTabbedWindow for WPF to be used as a host when you drag out a tab item from its original window.
-slug: radtabbedwindow-getting-started
+slug: radtabbedwindow-howto-prepare-custom-window
 tags: preparenewwindow,inherit,derive
 published: True
 position: 0

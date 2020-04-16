@@ -58,4 +58,3 @@ Here is a snapshot of the result.
  * [Change the Size of the RadUpload]({%slug radupload-how-to-change-the-size-of-the-radupload%})
  * [Rename a File]({%slug radupload-how-to-rename-a-file%})
  * [Template Structure]({%slug radupload-styles-and-templates-template-structure%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})

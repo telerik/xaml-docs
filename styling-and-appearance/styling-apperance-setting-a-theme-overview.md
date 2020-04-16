@@ -152,7 +152,7 @@ To change the theme via the StyleManager you will need to take the following few
 		InitializeComponent()
 	{{endregion}}
 
-Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}{% if site.site_name == 'WPF' %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %} help section.
+Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %} help section.
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
@@ -165,4 +165,4 @@ All Themes are specifically designed to style **Telerik** controls. However, the
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
-* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
+{% if site.site_name == 'WPF' %}* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}

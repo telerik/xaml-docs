@@ -38,7 +38,6 @@ The files uploaded through the __RadUpload__ are separated in chunks, which get 
 >tip To see how to limit the upload speed of the __RadUpload__ via the __BufferSize__ read [here]({%slug radupload-how-to-limit-the-upload-speed%}).		  
 
 ## See Also  
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})
  * [File Size and Count Limitation]({%slug radupload-features-file-size-and-count-limitation%})
  * [Limit the Upload Speed]({%slug radupload-how-to-limit-the-upload-speed%})

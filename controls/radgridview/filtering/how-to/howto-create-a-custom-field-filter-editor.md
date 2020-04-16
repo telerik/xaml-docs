@@ -104,4 +104,6 @@ __Example 1__ shows how to create a RadDateTimePicker and use it as a custom fie
 	End Class
 {{endregion}}
 
+{% if site.site_name == 'WPF' %}
 > You can check out a fully runnable example in the [Create a Custom TimeSpanPickerColumn]({%slug kb-gridview-howto-create-timespanpickercolumn%}) KB article. 
+{% endif %}

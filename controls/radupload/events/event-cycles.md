@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # Event Cycles
 
-
-
-## 
-
 This topic will explain the order in which the events described in the [Overview]({%slug radupload-events-overview%}) topic get fired.
 
 * __FileTooLarge__, __FileCountExceeded__, __UploadSizeExceeded__ - these events can get triggered if some of the selected files exceed the predefined criteria.
@@ -31,10 +27,6 @@ This topic will explain the order in which the events described in the [Overview
 
 * __UploadFinished__ - raises when all files in the list have been processed, no matter this has been successfully done or not.
 
-## See Also
-
+## See Also  
  * [Events - Overview]({%slug radupload-events-overview%})
-
  * [Programmatic Upload]({%slug radupload-features-programmatic-upload%})
-
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})

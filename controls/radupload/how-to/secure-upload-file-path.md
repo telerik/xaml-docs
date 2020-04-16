@@ -1,6 +1,6 @@
 ---
 title: Secure Upload File Paths
-page_title: Sanitize Upload File Paths
+page_title: Secure Upload File Paths
 description: Secure the uploading file location when using RadUpload control and RadUploadHandler.
 slug: radupload-how-to-sanitize-upload-file-paths
 tags: sanitize,upload,cloud,handler,relative,path,directory
@@ -21,7 +21,7 @@ In versions prior to `2020.1.413`, by default, the uploaded files go to the dire
 
 >tip Version `2020.1.413` is a [LIB]({%slug installation-installing-lib%}) but it is considered stable which means that we approve it for production use.
 
-If you don't plan to upgrade to version `2020.1.413` or later, we recommend to manually ensure that the file paths received by the upload handler are sanitized. The following example shows one way to do this through a [custom handler]({%slug radupload-features-upload-handler%}).
+If you don't plan to upgrade to version `2020.1.413` or later, we recommend to manually ensure that the file paths received by the upload handler are secured. The following example shows one way to do this through a [custom handler]({%slug radupload-features-upload-handler%}).
 
 #### __[C#] Example 1: Custom RadUploadHandler__
 {{region radupload-how-to-sanitize-upload-file-paths-0}}
@@ -68,7 +68,7 @@ If you don't plan to upgrade to version `2020.1.413` or later, we recommend to m
                     if (!Path.GetFullPath(mappedTargetFoler).StartsWith(Path.GetFullPath(appDataPath)))
                     {
                         mappedTargetFoler = null;
-                        throw new ArgumentException("Uploading to tolders outside 'AppData' special folder is not supported due to security restrictions.");
+                        throw new ArgumentException("Uploading to folders outside 'AppData' special folder is not supported due to security restrictions.");
                     }
                 }
                 else

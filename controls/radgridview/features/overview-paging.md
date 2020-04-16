@@ -81,7 +81,7 @@ Take a look at the following topics which are entirely dedicated to the __Paging
 
 Take a look at the following topics which explain in great details the various features of the __RadGridView__.
 
-* Using [Data Binding]({%slug gridview-overview-data-binding%}) mechanism to display data in __RadGridView__. 
+* Using [Data Binding]({%slug gridview-configuring-the-databindings%}) mechanism to display data in __RadGridView__. 
 
 
 * [Managing Data]({%slug gridview-overview-managing-data%})

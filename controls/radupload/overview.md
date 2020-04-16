@@ -16,6 +16,7 @@ site_name: Silverlight
 Thank you for choosing Telerik __RadUpload__!
 
 With __RadUpload__ you will save the end-user’s time and efforts, utilizing its multiple files upload and automatic upload function. With this dedicated file-upload control you can achieve fast performance, since it allocates a minimum amount of server memory, while enabling optimized and fully configurable single and multi-file uploads.
+
 ![](images/RadUpload_Overview_02.png)
 
 __RadUpload__ is a dedicated file-upload control. It allocates a minimum amount of server memory, while enabling optimized and fully configurable single and multi-file uploads.
@@ -40,7 +41,6 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 ## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
  * [Getting Started]({%slug radupload-getting-started%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Events - Overview]({%slug radupload-events-overview%})
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})
  * [End-User Capabilities]({%slug radupload-end-user-capabilities%})

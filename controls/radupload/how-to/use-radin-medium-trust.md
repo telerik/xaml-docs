@@ -35,7 +35,6 @@ In order to run the __RadUpload__ in Medium Trust level you should do only one t
 
 	![](images/RadUpload_How_To_Medium_Trust_01.png)
 
-## See Also
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
+## See Also  
  * [Limit the Upload Speed]({%slug radupload-how-to-limit-the-upload-speed%})
  * [Implement Simple Authentication]({%slug radupload-how-to-implement-simple-authentication%})

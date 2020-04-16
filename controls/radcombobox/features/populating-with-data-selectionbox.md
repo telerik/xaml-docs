@@ -82,9 +82,11 @@ To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of Rad
 
 ![](images/radcombobox-populating-with-data-selectionbox-0.png)
 
+{% if site.site_name == 'WPF' %}
 ## Multiple Selection Box Template
 
 To customize the Selection Box part of RadComboBox when multiple selection is enabled, set the __MultipleSelectionBoxTemplate__ property, instead of SelectionBoxTemplate. Read more about this in the [Multiple Selection]({%slug radcombobox-features-multiple-selection%}#multipleselectionboxtemplate) article.
+{% endif %}
 
 ## Empty Selection Box Template
 
@@ -103,7 +105,7 @@ To customize the Selection Box when there is no selected item, set the __EmptySe
 
 ![](images/radcombobox-populating-with-data-selectionbox-1.png)
 
->important The SelectionBoxTemplate, MultipleSelectionBoxTemplate and EmptySelectionBoxTemplate properties are applied only when the ItemsSource property of RadComboBox is set.
+>important The SelectionBoxTemplate, EmptySelectionBoxTemplate{% if site.site_name == 'WPF' %} and MultipleSelectionBoxTemplate{% endif %} properties are applied only when the ItemsSource property of RadComboBox is set.
 
 ## See Also  
  * [Binding to Object]({%slug radcombobox-populating-with-data-binding-to-object%}) 

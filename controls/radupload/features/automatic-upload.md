@@ -30,8 +30,7 @@ The __RadUpload__ allows the files to be uploaded automatically after the user s
 	radUpload.IsAutomaticUpload = True
 {{endregion}}
 
-## See Also  
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
+## See Also 
  * [File Size and Count Limitation]({%slug radupload-features-file-size-and-count-limitation%})
  * [Multiple Times File Selection]({%slug radupload-features-multiple-times-file-selection%})
  * [Multiple Files Selection]({%slug radupload-features-multiple-files-selection%})

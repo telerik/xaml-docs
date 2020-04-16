@@ -10,6 +10,8 @@ position: 4
 
 # Drag-drop between GridView and TreeView
 
+{% if site.site_name == 'WPF' %}
+
 The purpose of this tutorial is to show you how to implement drag and drop between RadGridView and RadTreeView, giving the user feedback where the dragged item will be dropped.
 
 >Please note that the examples in this tutorial are showcasing the Telerik [Fluent theme]({%slug common-styling-appearance-fluent-theme%}). In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article, you can find more information on how to set an application-wide theme.
@@ -892,8 +894,9 @@ The final XAML should look like in Example 7.
     </Grid>
 {{endregion}}
 
+{% endif %}
 
-Full implementation of __Drag and Drop between GridView and TreeView__ is available in {% if site.site_name == 'Silverlight' %} __Tree to Grid Drag__ [online demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %} the __Tree to Grid Drag__ [WPF demo](https://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid){% endif %}.  
+You can find a runnable example showing drag and drop between RadGridView and RadTreeView in the {% if site.site_name == 'WPF' %}[Tree to Grid Drag](https://demos.telerik.com/wpf){% else %}[Tree to Grid Drag](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %} demo.
 
 ## See Also
 * [DragDropManager]({%slug dragdropmanager-getting-started%})

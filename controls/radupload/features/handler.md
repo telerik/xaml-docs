@@ -11,7 +11,9 @@ site_name: Silverlight
 
 # Upload Handler
 
-The __RadUpload__ control must use an upload handler on the server in order to transfer its data. This handler is represented by a Generic (__ASHX__) Handler class that derives from the __RadUploadHandler__ class. This topic will make you familiar with the __RadUpload__ class and its most important members as follows.
+The __RadUpload__ control must use an upload handler on the server in order to transfer its data. 
+
+This handler is represented by a Generic (__ASHX__) Handler class that derives from the __RadUploadHandler__ class. This topic will make you familiar with the RadUploadHandler class and its most important members as follows.
 
 ## Uploading concepts
 
@@ -83,14 +85,11 @@ The __RadUploadHandler__ class provides you with virtual methods, which can get 
 
 * __TargetFolder__ - gets or sets the virtual path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__.
 
-* __TargetPhysicalFolder__ - gets or sets the physical path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__.
+* __TargetPhysicalFolder__ - gets or sets the physical path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__. 
 
-	>important After version `2020.1.330` (inclusive) of Telerik UI for Silverlight, the __TargetPhysicalFolder__ property behaves the same as __TargetFolder__. To get the same effect (avoid providing physical folder to the upload handler) in previous versions you can implement a custom [upload handler]({%slug radupload-features-upload-handler%}) as described in the [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%}) article.
-
->tip If both __TargetPhysicalFolder__ and __TargetFolder__ are set, the __TargetPhysicalFolder__ will take precedence.
+	>important After version [LIB]({%slug installation-installing-lib%}) `2020.1.413` (inclusive) of Telerik UI for Silverlight, the __TargetPhysicalFolder__ property is not used by the default implementation of RadUploadHandler due to security reasons. To get the same effect (avoid providing physical folder to the upload handler) in previous versions you can implement a custom [upload handler]({%slug radupload-features-upload-handler%}). One way to do this is described in the [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%}) article. To enable the TargetPhysicalFolder property in version `2020.1.413` and later see the [Use TargetPhysicalFolder]({%slug radupload-how-to-use-targetphysicalfolder-property%}) article.
 
 ## See Also  
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%})
  * [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
  * [Programmatic Upload]({%slug radupload-features-programmatic-upload%})

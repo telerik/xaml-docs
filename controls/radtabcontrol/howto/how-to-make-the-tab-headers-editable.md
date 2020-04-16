@@ -425,10 +425,6 @@ Open the appropriate __MainPage.xaml__ code behind class and paste the following
 
 
 
-## See Also
-
+## See Also  
 {% if site.framework_name == 'WPF' %} * [How to Take Advantage of the Tag Property]({%slug radtabcontrol-how-to-take-advantage-of-the-tag-property%}){% endif %}
-
- * [How to Add New Tab Item]({%slug radtabcontrol-how-to-add-new-tab-item%})
-
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})

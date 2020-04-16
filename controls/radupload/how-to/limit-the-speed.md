@@ -240,4 +240,3 @@ In it you have to stop the __timer__.
 ## See Also  
  * [Create Custom Upload Handler]({%slug radupload-how-to-create-custom-upload-handler%})
  * [Buffering]({%slug radupload-features-buffering%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})

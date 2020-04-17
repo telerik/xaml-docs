@@ -98,22 +98,22 @@ Let's us now define the actual tagger class which will be responsible for classi
 
         private static string PrepareRegexString()
         {
-            string keys = @"(?<key>\s*""([^\\""\n]|\\.)*""?\s*)(?=:)";
-            string stringLiterals = @"(?<stringLiteral>(?<=:)\s*""([^\\""\n]|\\.)*""?\s*)";
-            string numbers = @"(?<number>(-?)(0|([1-9][0-9]*))(\\.[0-9]+)?)";
+            string keys = @"(?<key>\s\*""([^\\""\n]|\\.)\*""?\s\*)(?=:)";
+            string stringLiterals = @"(?<stringLiteral>(?<=:)\s\*""([^\\""\n]|\\.)\*""?\s\*)";
+            string numbers = @"(?<number>(-?)(0|([1-9][0-9]\*))(\\.[0-9]+)?)";
             string trueFalseNulls = @"(?<TFN>(true|false|null))";
 
             string[] xamlClassifications = new string[] { numbers, trueFalseNulls, stringLiterals, keys };
 
             StringBuilder builder = new StringBuilder();
 
-            builder.Append(@"\s*");
+            builder.Append(@"\s\*");
             for (int i = 0; i < xamlClassifications.Count() - 1; i++)
             {
                 builder.AppendFormat("{0}|", xamlClassifications[i]);
             }
             builder.AppendFormat("{0}", xamlClassifications[xamlClassifications.Count() - 1]);
-            builder.Append(@"\s*");
+            builder.Append(@"\s\*");
 
             return builder.ToString();
         }

@@ -34,13 +34,12 @@ Installation
 * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
 {% if site.site_name == 'WPF' %}
 * [Download Product Files]({%slug download-product-files-wpf%})
-* [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
 {% else %}
 * [Download Product Files]({%slug download-product-files%})
-* [Telerik Visual Studio Extensions]({%slug radcontrols-for-silverlight-vs-extensions-overview%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
 {% endif %}
+* [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%})
 * [Latest Internal Build]({%slug installation-installing-lib%})
 * [Adding the Telerik Controls to Your Project]({%slug installation-adding-to-application-create-application-and-adding-control%})
 

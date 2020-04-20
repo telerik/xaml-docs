@@ -68,36 +68,10 @@ The [Bing Maps](http://www.bing.com/maps/) can be used via the __BingRestMapProv
 
 ## OpenStreet Maps
 
-The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __OpenStreetMapProvider__ class.         
+The [Open Street Maps](http://www.openstreetmap.org/) can be used via the __OpenStreetMapProvider__ class. Since the __R2 2019__ version, you have the option of passing an API key to it. This key is needed for the Transport and Cycle maps, which come from [ThunderForest](https://www.thunderforest.com/). You can check the [following page](https://www.thunderforest.com/docs/apikeys/) in order to learn how to obtain an API key.
 
-#### __[XAML] Example 3: RadMap with OpenStreetMapProvider__
+#### __[XAML] Example 3: OpenStreetMapProvider with API key in Xaml__
 {{region radmap-features-providers-3}}
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-{{endregion}}
-
-#### __[C#] Example 4: OpenStreetMapProvider set in code__
-{{region radmap-features-providers-4}}
-	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider();
-	this.radMap.Provider = openStreetMap;
-{{endregion}}
-	
-#### __[VB] Example 4: OpenStreetMapProvider set in code__
-{{region radmap-features-providers-5}}
-	Dim openStreetMap As New OpenStreetMapProvider()
-	Me.radMap.Provider = openStreetMap
-{{endregion}}
-
-#### __Figure 2: Result from Examples 3 and 4__
-![Rad Map Features Providers 02](images/RadMap_Features_Providers_02.png)
-
-Since the __R2 2019__ version, you have the option of passing an API key to the OpenStreetMapProvider class. This key is needed for the Transport and Cycle maps, which come from [ThunderForest](https://www.thunderforest.com/). You can check the [following page](https://www.thunderforest.com/docs/apikeys/) in order to learn how to obtain an API key.
-
-#### __[XAML] Example 4: OpenStreetMapProvider with API key in Xaml__
-{{region radmap-features-providers-6}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider APIKey="your-api-key" />
@@ -105,22 +79,22 @@ Since the __R2 2019__ version, you have the option of passing an API key to the 
 	</telerik:RadMap>
 {{endregion}}
 
-#### __[C#] Example 5: OpenStreetMapProvider set in code__
-{{region radmap-features-providers-7}}
+#### __[C#] Example 4: OpenStreetMapProvider set in code__
+{{region radmap-features-providers-4}}
 	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider("your-api-key");
 	this.radMap.Provider = openStreetMap;
 {{endregion}}
 	
-#### __[VB] Example 5: OpenStreetMapProvider set in code__
-{{region radmap-features-providers-8}}
+#### __[VB] Example 4: OpenStreetMapProvider set in code__
+{{region radmap-features-providers-5}}
 	Dim openStreetMap As New OpenStreetMapProvider("your-api-key")
 	Me.radMap.Provider = openStreetMap
 {{endregion}}
 
-Since the __R1 2020__ version, you have the option of passing a User-Agent header, which will be used in the web request for downloading the tiles from the Standard tile layer. This allows for compliance with the [OpenStreetMaps Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/). __Examples 6 and 7__ demonstrate how you can pass such a User-Agent.
+Since the __R1 2020__ version, you have the option of passing a User-Agent header, which will be used in the web request for downloading the tiles from the Standard tile layer. This allows for compliance with the [OpenStreetMaps Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/). __Examples 5 and 6__ demonstrate how you can pass such a User-Agent.
 
-#### __[XAML] Example 6: Setting StandardModeUserAgent in Xaml__
-{{region radmap-features-providers-9}}
+#### __[XAML] Example 5: Setting StandardModeUserAgent in Xaml__
+{{region radmap-features-providers-6}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider APIKey="your-api-key" StandardModeUserAgent="your custom user agent string" />
@@ -128,20 +102,20 @@ Since the __R1 2020__ version, you have the option of passing a User-Agent heade
 	</telerik:RadMap>
 {{endregion}}
 
-#### __[C#] Example 7: Setting StandardModeUserAgent in code__
-{{region radmap-features-providers-10}}
+#### __[C#] Example 6: Setting StandardModeUserAgent in code__
+{{region radmap-features-providers-7}}
 	OpenStreetMapProvider openStreeMapProvider = new OpenStreetMapProvider("your-api-key")
 	{
 		StandardModeUserAgent = "your custom user agent string"
 	};
 {{endregion}}
 	
-#### __[VB] Example 7: Setting StandardModeUserAgent in code__
-{{region radmap-features-providers-11}}
+#### __[VB] Example 6: Setting StandardModeUserAgent in code__
+{{region radmap-features-providers-7}}
 	Dim openStreeMapProvider As New OpenStreetMapProvider("your-api-key") With {.StandardModeUserAgent = "your custom user agent string"}
 {{endregion}}
 
-> If a User-Agent is not passed, the Standard layer tiles will not be downloaded.
+> If a User-Agent is not provided, the Standard layer tiles will not be downloaded.
 
 ## Empty Provider
 
@@ -166,8 +140,8 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 * Terrain
 * Topographic
 
-#### __[XAML] Example 8: Radmap with ArcGisMapProvider__
-{{region radmap-features-providers-12}}
+#### __[XAML] Example 7: Radmap with ArcGisMapProvider__
+{{region radmap-features-providers-8}}
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:ArcGisMapProvider Mode="Physical" />
@@ -175,21 +149,21 @@ The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/ma
 	</telerik:RadMap>
 {{endregion}}
 
-#### __[C#] Example 9: ArcGisMapProvider set in code__
-{{region radmap-features-providers-13}}
+#### __[C#] Example 8: ArcGisMapProvider set in code__
+{{region radmap-features-providers-9}}
 	ArcGisMapProvider provider = new ArcGisMapProvider();
 	provider.Mode = ArcGisMapMode.Physical;
 	this.radMap.Provider = provider;
 {{endregion}}
 
-#### __[VB] Example 9: ArcGisMapProvider set in code__
-{{region radmap-features-providers-14}}
+#### __[VB] Example 8: ArcGisMapProvider set in code__
+{{region radmap-features-providers-10}}
 	Dim provider As New ArcGisMapProvider ()
 	provider.Mode = ArcGisMapMode.Physical
 	Me.radMap.Provider = provider
 {{endregion}}
 
-#### __Figure 3: Result from Examples 8 and 9__
+#### __Figure 3: Result from Examples 7 and 8__
 ![Rad Map Features Providers 04](images/RadMap_Features_Providers_04.png)
 
 ## See Also

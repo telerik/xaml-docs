@@ -11,21 +11,15 @@ site_name: Silverlight
 
 # Upload Handler
 
+The __RadUpload__ control must use an upload handler on the server in order to transfer its data. 
 
-
-The __RadUpload__ control must use an upload handler on the server in order to transfer its data. This handler is represented by a Generic (__ASHX__) Handler class that derives from the __RadUploadHandler__ class. This topic will make you familiar with the __RadUpload__ class and its most important members as follows:
-
-* [Uploading concepts](#Uploading_concepts)
-
-* [Methods](#Methods)
-
-* [Properties](#Properties)
+This handler is represented by a Generic (__ASHX__) Handler class that derives from the __RadUploadHandler__ class. This topic will make you familiar with the RadUploadHandler class and its most important members as follows.
 
 ## Uploading concepts
 
-When a file is being uploaded, it gets separated in chunks. Each chunk gets transferred via the upload handler. The size of the chunks depends on the size of the buffer of the __RadUpload__ control. To learn more about the __Buffering__ feature of the __RadUpload__ read [here]({%slug radupload-features-buffering%}).
+When a file is being uploaded, it gets separated in chunks. Each chunk gets transferred via the upload handler. The size of the chunks depends on the size of the buffer of the RadUpload control. See how to set this up in the [Buffering]({%slug radupload-features-buffering%}) article.
 
-Each time a chunk gets transferred, a set of methods get executed on the server. If the chunk is the last from a file, the client is notified when the chunk is saved and the __FileUploaded__ event gets raised by the __RadUpload__ control. When the chunk is the last for the upload, the __UploadFinished__ event gets raised, too.
+Each time a chunk gets transferred, a set of methods get executed on the server. If the chunk is the last from a file, the client is notified when the chunk is saved and the __FileUploaded__ event gets raised by the RadUpload control. When the chunk is the last for the upload, the __UploadFinished__ event gets raised, too.
 
 The __RadUploadHandler__ class provides you with virtual methods, which can get overridden in order to customize the behavior of the handler. Read the rest of the topic to learn more about the methods and the properties of the class.
 
@@ -69,14 +63,13 @@ The __RadUploadHandler__ class provides you with virtual methods, which can get 
 
 * __SaveChunkData__ - saves the chunk's data in a file with the given name. The method can be __overridden__.
 
-
->tipOverride this method in order to implement a custom logic inside the handler.
+>tip Override this method in order to implement a custom logic inside the handler.
 
 * __SendResponse__ - writes all the return parameters to the Response stream.
 
 ## Properties
 
-* __Context__ - a __HttpContext__ object that provides references to the intrinsic server objects (Request, Response, etc.) used to service HTTP requests.
+* __Context__ - __HttpContext__ object that provides references to the intrinsic server objects (Request, Response, etc.) used to service HTTP requests.
 
 * __FormChunkTag__ - gets the Chunk-tag value sent by the client.
 
@@ -92,21 +85,14 @@ The __RadUploadHandler__ class provides you with virtual methods, which can get 
 
 * __TargetFolder__ - gets or sets the virtual path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__.
 
-* __TargetPhysicalFolder__ - gets or sets the physical path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__.
+* __TargetPhysicalFolder__ - gets or sets the physical path of the folder, where __RadUpload__ will automatically save the valid files after the upload completes. The property can be __overridden__. 
 
->tipIf both __TargetPhysicalFolder__ and __TargetFolder__ are set, the __TargetPhysicalFolder__ will take precedence.
-                
-              
-## See Also
+	>important After version [LIB]({%slug installation-installing-lib%}) `2020.1.413` (inclusive) of Telerik UI for Silverlight, the __TargetPhysicalFolder__ property is not used by the default implementation of RadUploadHandler due to security reasons. To get the same effect (avoid providing physical folder to the upload handler) in previous versions you can implement a custom [upload handler]({%slug radupload-features-upload-handler%}). One way to do this is described in the [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%}) article. To enable the TargetPhysicalFolder property in version `2020.1.413` and later see the [Use TargetPhysicalFolder]({%slug radupload-how-to-use-targetphysicalfolder-property%}) article.
 
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
+## See Also  
+ * [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%})
  * [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
-
  * [Programmatic Upload]({%slug radupload-features-programmatic-upload%})
-
  * [Create Custom Upload Handler]({%slug radupload-how-to-create-custom-upload-handler%})
-
  * [Limit the Upload Speed]({%slug radupload-how-to-limit-the-upload-speed%})
-
  * [Implement Simple Authentication]({%slug radupload-how-to-implement-simple-authentication%})

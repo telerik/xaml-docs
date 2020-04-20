@@ -26,7 +26,7 @@ To work with the Telerik .NET Core dlls you will need to have the following inst
 
 The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET Core you will need to [reference the Telerik dlls via nuget]({%slug installation-installing-from-nuget-wpf%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
 
-Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), [theme changing]({%slug styling-apperance-swiching-themes-design-time%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
+Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
 
 >tip Creating a project via the [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}), allows you to select a NuGet version and automatically add the packages in the project when created, thus adding the Telerik .NET Core controls into the Visual Studio Toolbox.
 

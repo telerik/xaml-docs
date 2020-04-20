@@ -112,7 +112,7 @@ Using the built-in auto generation of columns does not fit all scenarios. In suc
 *  [Select Column]({%slug radgridview-columns-column-types-select-column%})
 *  [CheckBox Column]({%slug gridview-checkbox-column%})
 *  [ComboBox Column]({%slug radgridview-columns-column-types-combobox-column%})
-*  [MultiColumnComboBox Column]({%slug radgridview-columns-column-types-multicolumncombobox-column%})
+{% if site.site_name == 'WPF' %}*  [MultiColumnComboBox Column]({%slug radgridview-columns-column-types-multicolumncombobox-column%}){% endif %}
 *  [Masked Input Column]({%slug radgridview-columns-column-types-masked-input-column%})
 *  [Toggle Row Details Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 

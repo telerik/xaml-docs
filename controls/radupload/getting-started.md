@@ -11,7 +11,9 @@ site_name: Silverlight
 
 # Getting Started
 
-To use the __RadUpload__ control you have to configure both the client and the server side part of your application. The client side is executed entirely in the browser using the Silverlight platform. The server side requires a handler on the server for processing the files that are submitted from the client side. This topic will explain the basics of:
+To use the __RadUpload__ control you have to configure both the client and the server side part of your application. 
+
+The client side is executed entirely in the browser using the Silverlight platform. The server side requires a handler on the server for processing the files that are submitted from the client side. This topic will explain the basics of:
 
 * [Configuring the server side](#Configuring_the_server_side)
 
@@ -24,15 +26,13 @@ In order to use __RadUpload__ control in your projects you have to add reference
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 
-{% if site.site_name == 'WPF' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.{% endif %}
-{% if site.site_name == 'Silverlight' %}You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.{% endif %}
+You can find more information about the different assemblies and their dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies%}) article.
 
 ## Configuring the server side
 
 The first thing you have to do is to add a reference to the __Telerik.Windows.RadUploadHandler__ assembly in the ASP.NET application that hosts your Silverlight application. It is located in the __ServerSide__ folder of your UI for Silverlight installation. After that create a Generic (__ASHX__) Handler, that derives from the __RadUploadHandler__ class.
 
-#### Figure 1: The generic RadUploadHandler
-
+#### Figure 1: The generic RadUploadHandler  
 ![The generic RadUploadHandler](images/RadUpload_GettingStarted_01.png)
 
 #### __[C#] Example 1: Create a generic handler__
@@ -42,7 +42,6 @@ The first thing you have to do is to add a reference to the __Telerik.Windows.Ra
 	}
 {{endregion}}
 
-
 #### __[VB.NET] Example 1: Create a generic handler__
 {{region vb-radupload-getting-started_1}}
 	Public Class SampleUploadHandler
@@ -50,18 +49,18 @@ The first thing you have to do is to add a reference to the __Telerik.Windows.Ra
 	End Class
 {{endregion}}
 
-Next, create a folder, in which the uploaded files will be stored.
+>important In version prior [LIB]({%slug installation-installing-lib%}) `2020.1.413` of Telerik UI for Silverilght by default the files are uploaded in the directory on the server where the RadUploadHandler class is located. In later versions this behavior was changed due to security reasons. Currently, the defaul upload directory of the handler is the __App_Data__ folder of the web project. If you use an older version, we strongly recommend to add logic in your handler  to secure the file path and avoid uploading in forbiden directories on the server. See one way to do this in the [Secure Upload File Paths]({%slug radupload-how-to-sanitize-upload-file-paths%}) article.
 
-#### Figure 2: The UserUploads folder
+Next, create a folder, in which the uploaded files will be stored. The folder should be in the __App_Data__ directory of the web project. If the folder doesn't exist the handler will try to create it. 
 
-![The UserUploads folder](images/RadUpload_GettingStarted_02.png)
+#### Figure 2: UploadFiles folder where the files will be added
+![UploadFiles folder where the files will be added](images/RadUpload_GettingStarted_02.png)
 
->Please note that the target folder should be in the same folder as the upload handler.
+If you skip this step, the handler will try to automatically create the __App_Data/UserUploads__ folder and upload there.
 
 To test the handler point your browser to the SampleUploadHandler.ashx file. You should see the following output if everything is done correctly.
 
-#### Figure 3: The ouput when navigating to the handler
-
+#### Figure 3: The ouput when navigating to the handler  
 ![The ouput when navigating to the handler](images/RadUpload_GettingStarted_03.png)
 
 ## Configuring the client side
@@ -70,14 +69,7 @@ The first thing you have to do on the client side is to declare a __RadUpload__ 
 
 #### __[XAML] Example 2: RadUpload definition__
 {{region xaml-radupload-getting-started_2}}
-	<UserControl x:Class="RadUploadSamples.GettingStarted"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot" Background="White">
-	        <telerik:RadUpload />
-	    </Grid>
-	</UserControl>
+	<telerik:RadUpload />
 {{endregion}}
 
 Next you have to set the __UploadServiceUrl__ property of the __RadUpload__. The value can be an absolute or relative url that points to the upload handler.		
@@ -99,43 +91,41 @@ If you prefer the relative path then pay attention to the following things:
 	<telerik:RadUpload UploadServiceUrl="/SampleUploadHandler.ashx" />
 {{endregion}}
 
-The last thing to do is to set the __TargetFolder__ property. The __TargetFolder__ should point to the folder that is configured to accept the uploaded files. In our case the __TargetFolder__ should be set to "UserUploads".		
+The last thing to do is to set the __TargetFolder__ property. The __TargetFolder__ should point to the folder that is configured to accept the uploaded files. In our case the __TargetFolder__ should be set to "UploadedFiles".		
 
->Please note that the __TargetFolder__ property represents the path relative to the upload handler.		  
+>The __TargetFolder__ property represents a path relative to the __App_Data__ folder of the web project. The path should point to a directory inside App_Data, otherwise the upload won't succeed.	  
 
 #### __[XAML] Example 4: Setting the target folder__
 {{region xaml-radupload-getting-started_4}}
 	<telerik:RadUpload UploadServiceUrl="/SampleUploadHandler.ashx"
-					   TargetFolder="UserUploads" />
+					   TargetFolder="UploadedFiles" />
 {{endregion}}
 
-This is enough to make the __RadUpload__ work. To fine tune the upload to match your application requirements, read the following topics.		
+This is enough to make the RadUpload work.
 
-* [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
+## Restricting the User from Certain Actions
 
-* [Upload Handler]({%slug radupload-features-upload-handler%})
+You can use the following properties to restrict the user actions against the __RadUpload__ control:		
 
-* [Automatic Upload]({%slug radupload-features-automatic-upload%})
+* __IsDeleteEnabled__ - when set to __False__ the user is not able to remove files from the selected file list. The default value is __True__.			
 
-* [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
+* __IsPauseEnabled__ - when set to __False__ the user is not able to pause the upload process. The default value is __True__.
 
-* [File Size and Count Limitations]({%slug radupload-features-file-size-and-count-limitation%})
+To fine tune the upload to match your application requirements, read the following topics.		
 
-* [Multiple Times File Selection]({%slug radupload-features-multiple-times-file-selection%})
-
-* [Multiple Files Selection]({%slug radupload-features-multiple-files-selection%})
-
-* [Extension Filters]({%slug radupload-features-extension-filters%})
-
-* [Overwriting Existing Files]({%slug radupload-features-overwrite-existing-files%})
-
-* [Buffering]({%slug radupload-features-buffering%})
-
+* [Upload Handler]({%slug radupload-features-upload-handler%})  
+* [Automatic Upload]({%slug radupload-features-automatic-upload%})  
+* [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})  
+* [File Size and Count Limitations]({%slug radupload-features-file-size-and-count-limitation%})  
+* [Multiple Times File Selection]({%slug radupload-features-multiple-times-file-selection%})  
+* [Multiple Files Selection]({%slug radupload-features-multiple-files-selection%})  
+* [Extension Filters]({%slug radupload-features-extension-filters%})  
+* [Overwriting Existing Files]({%slug radupload-features-overwrite-existing-files%})  
+* [Buffering]({%slug radupload-features-buffering%})  
 * [Programmatic Upload]({%slug radupload-features-programmatic-upload%})
 
 ## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Events - Overview]({%slug radupload-events-overview%})
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})
  * [Localization]({%slug radupload-localization%})

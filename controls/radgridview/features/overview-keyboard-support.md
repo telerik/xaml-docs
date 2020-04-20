@@ -27,7 +27,7 @@ __RadGridView__ exposes several useful properties and events, which can help you
 
 * __Delete existing row__ - users can delete (if supported by the grid __ItemsSource__) selected items using __DELETE__ key. This feature can be controlled with __RadGridView__'s __CanUserDeleteRows__ property.
 
->In case you require to utilize different commands corresponding to the keyboard interaction, you may take advantage of the IKeyboardCommandProvider Interface and implement your custom logic. Please check  [this article]({%slug gridview-commands-keyboardcommandprovider%}) for a further information.
+>In case you require to __utilize different commands corresponding to the keyboard interaction__, you may take advantage of the IKeyboardCommandProvider interface and implement your custom logic. Please check  [this article]({%slug gridview-commands-keyboardcommandprovider%}) for further information.
 
 In the following table you can find some of the actions and the respective combination that invokes them:
 

@@ -66,5 +66,4 @@ Here is an example:
 ## See Also
  * [Create Custom Upload Handler]({%slug radupload-how-to-create-custom-upload-handler%})
  * [Hide the Buttons]({%slug radupload-how-to-hide-the-buttons%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Personalize the File Storage]({%slug radupload-how-to-personalize-the-file-storage%})

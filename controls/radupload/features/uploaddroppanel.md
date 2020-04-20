@@ -39,5 +39,5 @@ The drop panel have the following properties:
 ![](images/radupload-features-uploaddroppanel-0.png)
 
 ## See Also
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
+ * [Getting Started]({%slug radupload-getting-started%})
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})

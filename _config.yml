@@ -669,6 +669,9 @@ navigation:
     controls/radrichtextbox/document-elements:
         title: Document Elements
         position: 5
+    controls/radrichtextbox/document-elements/table:
+        title: Table
+        position: 13
     controls/radrichtextbox/features:
         title: Features
         position: 6

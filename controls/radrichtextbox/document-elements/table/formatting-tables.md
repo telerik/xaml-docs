@@ -19,7 +19,7 @@ All methods that allow you to interact with Tables are listed here: [Tables Prop
 
 The bellow code shows how you can create a table in the code behind and set its styles:
 
-#### __[C#] Generate a table and set its borders and background__
+#### [C#] Example 1: Generate a table and set its borders and background
 
 {{region radrichtextbox-document-elements-formatting-tables_0}}   
 
@@ -70,7 +70,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 {{endregion}}
 
-#### __[VB.NET] Generate a table and set its borders and background__
+#### __[VB.NET] Example 1: Generate a table and set its borders and background
 
 {{region radrichtextbox-document-elements-formatting-tablesVB_0}}   
 
@@ -115,7 +115,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 {{endregion}}
 
->caption Figure 1: Merge cells in code
+>caption Figure 1: Generate a table and set its borders and background
 
 ![formatting-tables001](images/formatting-tables001.png)
 
@@ -124,7 +124,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 You can use the __StyleName__ property to set one of the predefined table styles.
 
-#### __[C#] Set the StyleName__
+#### __[C#] Example 2: Set the StyleName__
 
 {{region radrichtextbox-document-elements-formatting-tables_1}}   
 
@@ -133,7 +133,7 @@ You can use the __StyleName__ property to set one of the predefined table styles
 
 {{endregion}}
 
-#### __[VB.NET] Set the StyleName__
+#### __[VB.NET] Example 2: Set the StyleName__
 
 {{region radrichtextbox-document-elements-formatting-tablesVB_1}}   
     

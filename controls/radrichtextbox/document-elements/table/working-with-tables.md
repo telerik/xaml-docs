@@ -14,7 +14,7 @@ This article shows you can create or retrieve tables in the code behind.
 
 ## Creating a Table Programmatically
 
-The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
+The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). Information about the table properties and methods can be found here: [Properties and Methods]({%slug radrichtextbox-features-api%})
 
 #### __[C#] Example 1: Create a Table in Code-Behind__
 
@@ -284,7 +284,7 @@ The result is demonstrated in the following image.
 
 ## Get and Iterate Tables from existing document
 
-In order to iterate a table you need to get it firs. You can use the __EnumerateChildrenOfType__ method to get all tables in the document.
+In order to iterate a table you need to get it first. You can use the __EnumerateChildrenOfType__ method to get all tables in the document.
 
 
 

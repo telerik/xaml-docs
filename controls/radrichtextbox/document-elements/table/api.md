@@ -12,13 +12,31 @@ position: 5
 
 |__Property__|__Description__|
 |---|---|
-|__LayoutMode__|Gets or sets then table layout mode.|
+|__LayoutMode__|Gets or sets the table layout mode.|
 |__PreferredWidth__|Gets or sets the preferred width of the table.|
 |__FlowDirection__|Gets or sets the flow direction of the table contents.|
 |__CellPadding__| Gets or sets the cell padding.|
 |__Background__|Gets or sets the table background.|
 |__TableIndent__|Gets or sets the table indent.|
 |__CellSpacing__|Gets or sets the cell spacing.|
+
+#### __[C#] Example 1: Set Table Properties__
+
+{{region radrichtextbox-features-document-elements-tables-api_1}}
+    Table table = new Table();
+    table.LayoutMode = TableLayoutMode.AutoFit;
+    table.CellPadding = new Telerik.Windows.Documents.Layout.Padding(5);
+    table.CellSpacing = 10;
+{{endregion}}
+
+#### __[VB.NET] Example 1: Set Table Properties__
+
+{{region radrichtextbox-features-document-elements-tables-api_1}}
+    Dim table As New Table()
+	table.LayoutMode = TableLayoutMode.AutoFit
+	table.CellPadding = New Telerik.Windows.Documents.Layout.Padding(5)
+	table.CellSpacing = 10
+{{endregion}}
 
 ### Methods for adding or Inserting Rows
 
@@ -28,10 +46,27 @@ position: 5
 |__AddRowAbove(TableRow existingRow)__|Copies a specified TableRow and adds the copy above it.|
 |__AddRowAtIndex__| Adds a TableRow at a specific index.|
 |__AddRowBelow(TableRow existingRow)__|Copies a specified Telerik.Windows.Documents.Model.TableRow and adds the copy below it.|
-|__DeleteRow(TableRow row)__| Deletes a TableRow|
+|__DeleteRow(TableRow row)__| Deletes a TableRow.|
  
+#### __[C#] Example 2: Add Rows__
 
-### RadRichTextBox exposes the following methods that regard the creation or deletion of a table:
+{{region radrichtextbox-features-document-elements-tables-api_2}}
+    Table table = new Table();
+
+    var row = table.AddRow();
+    var row2 = table.AddRowAtIndex(5);
+{{endregion}}
+
+#### __[VB.NET] Example 2: Add Rows__
+
+{{region radrichtextbox-features-document-elements-tables-api_2}}
+    Dim table As New Table()
+
+	Dim row = table.AddRow()
+	Dim row2 = table.AddRowAtIndex(5)
+{{endregion}}
+
+### Inserting and Deleting a Table
 
 |__Method__|__Description__|
 |---|---|
@@ -46,6 +81,20 @@ position: 5
 |__InsertTableRowAbove__|Inserts a row above the selected one.|
 |__InsertTableRowBelow__|Inserts a row below the selected one.|
  
+#### __[C#] Example 3: Add or Delete Table__
+
+{{region radrichtextbox-features-document-elements-tables-api_3}}
+    radRichTextBox.DeleteTable();
+    radRichTextBox.InsertTable(table);
+{{endregion}}
+
+#### __[VB.NET] Example 3: Add or Delete Table__
+
+{{region radrichtextbox-features-document-elements-tables-api_3}}
+    radRichTextBox.DeleteTable()
+    radRichTextBox.InsertTable(table)
+{{endregion}}
+
 ### Methods for Formatting Tables
 
 |__Method__|__Description__|
@@ -65,5 +114,17 @@ position: 5
 |__ChangeTableRowHeight__|Changes the height of a table row.|
 |__MergeTableCells__|Merges the currently selected cells.|
 |__UnmergeTableCells__|Splits the currently selected table cell if it has been merged.|
- 
+
 >important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
+
+#### __[C#] Example 4: Change Existing Table Properties__
+{{region radrichtextbox-features-document-elements-tables-api_4}}
+    radRichTextBox.UnmergeTableCells();
+    radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.AutoFit);
+{{endregion}}
+
+#### __[VB.NET] Example 4: Change Existing Table Properties__
+{{region radrichtextbox-features-document-elements-tables-api_4}}
+    radRichTextBox.UnmergeTableCells()
+    radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.AutoFit)
+{{endregion}}

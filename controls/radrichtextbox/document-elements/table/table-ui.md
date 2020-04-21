@@ -54,4 +54,4 @@ Additionally, the built-in context menu of the __RadRichTextBox__ gives the user
 
 >tipTo wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextBox__ or the __ShowTablePropertiesCommand__.
 
-# See Also
+

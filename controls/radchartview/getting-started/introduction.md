@@ -47,8 +47,7 @@ For demonstration purposes, this tutorial will use the __RadCartesianChart__ com
 	<telerik:RadCartesianChart></telerik:RadCartesianChart>
 {{endregion}}
 
-> The `telerik` namespace points to the telerik schema. 
-> `"xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation"`
+> The `telerik` namespace points to the telerik schema. `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
 If you run the project at this stage, __RadCartesianChart__ will inform you that there are no axes defined, as seen in __Figure 1__.
 

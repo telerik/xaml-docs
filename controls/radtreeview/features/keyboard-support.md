@@ -140,6 +140,8 @@ To increase the time interval for typing before the text is reset, set the __Tex
 	} 
 {{endregion}}
 
+Note that this property is used in several other Telerik controls and setting it will affect them as well.
+
 ## See Also
  * [Mouse Support]({%slug radtreeview-features-mouse-support%})
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

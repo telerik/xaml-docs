@@ -14,7 +14,7 @@ position: 0
 
 Thank you for choosing __Telerik RadCallout__ control!
 
-Telerik’s Callout control for WPF is a ContentControl with an arrow that can be used to display additional information, warnings, hints, or to highlight relevant data. The RadCallout provides several different forms of its body and its arrow element. The appearance of the control can be fully customized to satisfy the needs of your scenarios. The control has two use cases: declare in XAML or placed inside a Popup element using the build-in [CalloutPopupService]({%slug radcallout-features-calloutpopupservice%}).
+Telerik’s Callout control for WPF is a ContentControl with an arrow that can be used to display additional information, warnings, hints, or to highlight relevant data. The RadCallout provides several different forms of its body and its arrow element. The appearance of the control can be fully customized to satisfy the needs of your scenarios. The control has two use cases: declared in XAML or placed inside a Popup element using the built-in [CalloutPopupService]({%slug radcallout-features-calloutpopupservice%}).
 
 ![RadCallout in the Fluent theme](images/)
 
@@ -26,7 +26,7 @@ Telerik’s Callout control for WPF is a ContentControl with an arrow that can b
 
 * __Animations__: As a Popup, the control supports different animations for its appearance. Read more about this in the [Animations]({%slug radcallout-features-animations%}) help article in our documentation.
 	
-* __Customizable layout__: The visual appearance of the control can be fully customized. The control provides several build-in forms for its body and arrow. Other than that, you can create your form by applying custom geometry to the control.
+* __Customizable layout__: The visual appearance of the control can be fully customized. The control provides several built-in forms for its body and arrow. Other than that, you can create your form by applying a custom geometry to the control.
 	
 * __Integration in other controls__: RadCallout can be easily integrated into with other controls. For example, maps, charts, tooltips, etc.
 

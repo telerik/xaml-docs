@@ -19,7 +19,7 @@ res_type: kb
 
 ## Description
 
-How to drag chart [annotations]({%slug radchartview-annotations-getting-started%})
+How to drag chart [annotations]({%slug radchartview-annotations-getting-started%}).
 
 ## Solution
 

@@ -26,7 +26,7 @@ The __VisualizationLayer__ exposes the following properties which are related to
 
 * __ClusteringEnabled__: Gets or sets a __boolean__ value which indicates whether the clustering is enabled.            
 
-* __ClusteringEnabledThreshold__: G property of type __int__ that gets or sets clustering enabled threshold. This value sets the max zoom level for clustering. If current zoom level of the control is greater than this value then clustering will be disabled.
+* __ClusteringEnabledThreshold__: A property of type __int__ that gets or sets clustering enabled threshold. This value sets the max zoom level for clustering. If current zoom level of the control is greater than this value then clustering will be disabled.
 
 >tipYou should set the __AutoCalculateClusteringThreshold__ to __False__ to allow the RadMap to respect the __ClusteringEnabledThreshold__. The default value of this property is __True__. This means that you need to explicitly set it to false in all cases when you need to predefine the clustering threshold.
 
@@ -44,9 +44,9 @@ In order to enable the __Clustering__ feature you can specify just the __Cluster
 
 More information about using of the __ItemTemplate__ property you can find in the [Data Binding]({%slug radmap-visualization-layer-data-binding%}) article.        
 
-## Clustering Invalidated Event
+## ClustersInvalidated Event
 
-To get notified when the cluster elements are created, the ClusteringInvalidated event of the VisualizationLayer can be utiliaze for this purpose.
+To get notified when the cluster elements are created, the __ClustersInvalidated__ event of the VisualizationLayer can be utilized.
 
 #### __[XAML] Example 1: Subscribe to ClustersInvalidated event__
 

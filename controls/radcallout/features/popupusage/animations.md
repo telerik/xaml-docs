@@ -10,20 +10,20 @@ position: 0
 
 # Animations
 
-When placed inside a Popup element, you can add animations. Through the __CalloutPopupSettings__ class, you can animate the showing and/or closing effect of the Popup. You can choose from a variety of built-in animations or create your custom animation effect so that you can add an additional look to the RadCallout. To add animation to the Popup, you just need to set the __ShowAnimationType__ and /or __CloseAnimationType__ property of the settings class.
+When the __RadCallout__ is placed inside a Popup element, you can add animations. Through the __CalloutPopupSettings__ class, you can animate the showing and/or closing effect of the Popup. You can choose from a variety of built-in animations or create your custom animation effect so that you can add an additional look to the RadCallout. To add animation to the Popup, you just need to set the __ShowAnimationType__ and /or __CloseAnimationType__ property of the settings class.
 
 The complete customization of the RadCallout animation is done from the __CalloutPopupSettings__ class. Several properties can be used for this purpose.
 
 * __ShowAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when shown, in seconds.
-* __CloseAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when close, in seconds.
+* __CloseAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when closed, in seconds.
 
-* __ShowAnimationEasing__: A property of type __IEasingFunction__ that gets or sets gets or sets the easing function of the shown animation.
-* __CloseAnimationEasing__: A property of type __IEasingFunction__ that gets or sets gets or sets the easing function of the close animation.
+* __ShowAnimationEasing__: A property of type __IEasingFunction__ that gets or sets the easing function of the shown animation.
+* __CloseAnimationEasing__: A property of type __IEasingFunction__ that gets or sets the easing function of the close animation.
 
 * __ShowAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when shown, in seconds.
-* __CloseAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when close, in seconds.
+* __CloseAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when closed, in seconds.
 
-For this tutorial, we are going to show the RadCallout inside a Popup on a button click and add animate its opening and closing state. First, we need to define our RadButton control and subscribe to its __Click__ event.
+For this tutorial, we are going to show the RadCallout inside a Popup on a button click and animate its opening and closing state. First, we need to define our RadButton control and subscribe to its __Click__ event.
 
 #### __[XAML] Example 1: Defining RadButton__
 {{region xaml-radcallout-features-animations-0}}
@@ -56,7 +56,7 @@ In the click event handler, we can declare our RadCallout control. To show the c
 
 ## Animation Types
 
-Several different built-in animations can be used to animate RadCallout placed inside Popup. You can add to each animation: duration, delay, and an easing function. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in WPF, and you are allowed to create custom ones, too.
+Several different built-in animations can be used to animate RadCallout placed inside Popup. You can customize the duration, delay and easing function of each animation. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in WPF, and you are allowed to create custom ones, too.
 
 >To learn more about the easing functions you can take a look at this [MSDN help article](
 https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPError=-2147217396).
@@ -115,7 +115,7 @@ The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing 
 
 ### Move Animation
 
-The __CalloutAnimation.Move__ animation adds moving effect opening/closing state of the Popup. 
+The __CalloutAnimation.Move__ animation adds a moving effect to the opening/closing state of the Popup. 
 
 #### __[C#] Example 5: Setting Move Animation__
 {{region csharp-radcallout-features-animations-6}}
@@ -143,7 +143,7 @@ The __CalloutAnimation.Move__ animation adds moving effect opening/closing state
 
 ### FadeAndMove Animation
 
-The __CalloutAnimation.FadeAndMove__ animation is represent by a combination of __Fade__ and __Move__ animations.
+The __CalloutAnimation.FadeAndMove__ animation is represented by a combination of __Fade__ and __Move__ animations.
 
 #### __[C#] Example 6: Setting FadeAndMove Animation__
 {{region csharp-radcallout-features-animations-7}}
@@ -171,7 +171,7 @@ The __CalloutAnimation.FadeAndMove__ animation is represent by a combination of 
 
 ### Reveal Animation
 
-The __CalloutAnimation.Reveal__ animation animate the clipping effect to the control.
+The __CalloutAnimation.Reveal__ animation animates the clipping effect to the control.
 
 #### __[C#] Example 7: Setting Reveal Animation__
 {{region csharp-radcallout-features-animations-8}}
@@ -199,7 +199,7 @@ The __CalloutAnimation.Reveal__ animation animate the clipping effect to the con
 
 ### FadeAndReveal Animation
 
-The __CalloutAnimation.FadeAndReveal__ animation is represent by a combination of __Fade__ and __Reveal__ animations.
+The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination of __Fade__ and __Reveal__ animations.
 
 #### __[C#] Example 8: Setting FadeAndReveal Animation__
 {{region csharp-radcallout-features-animations-9}}
@@ -255,7 +255,7 @@ The __CalloutAnimation.Scale__ animation controls the scale of the object. This 
 
 ### FadeAndScale Animation
 
-The __CalloutAnimation.FadeAndScale__ animation is represent by a combination of __Fade__ and __Scale__ animations.
+The __CalloutAnimation.FadeAndScale__ animation is represented by a combination of __Fade__ and __Scale__ animations.
 
 #### __[C#] Example 10: Setting FadeAndScale Animation__
 {{region csharp-radcallout-features-animations_11}}

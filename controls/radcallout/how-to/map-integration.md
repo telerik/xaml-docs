@@ -1,6 +1,6 @@
 ---
-title: How to integrate the RadCallout control inside RadMap
-page_title: How to integrate the RadCallout control inside RadMap
+title: Use Callout with RadMap
+page_title: Use Callout with RadMap
 description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
 slug: radcallout-howto-map-integration
 tags: map,callout,
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Integrate the RadCallout control inside RadMap
+# IUse Callout with RadMap
 
 This tutorial will walk you through the steps to integrate the RadCallout control inside the RadMap. In this example, we will show how to open a RadCallout with additional information regarding the clicked PushPin element on the map.
 

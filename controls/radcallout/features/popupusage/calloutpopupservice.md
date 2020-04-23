@@ -10,7 +10,7 @@ position: 0
 
 # CalloutPopupService
 
-The __CalloutPopupService__ class provides methods and events for showing the RadCallout in animated Popup. The service expose the following methods.
+The __CalloutPopupService__ class provides methods and events for showing the RadCallout in an animated Popup. The service exposes the following methods.
 
 > The events of the RadCallout are described in the [Events]({%slug radcallout-events%}) help article. 
 
@@ -27,7 +27,7 @@ To close the RadCallout control you can use the __Close()__ method of the Callou
 
 * **static void Close(RadCallout callout)**
 
-## Close All Shown RadCallout
+## Close All Shown RadCallouts
 
 To close all opened RadCallout controls you can use the __CloseAll()__ method of the CalloutPopupService. 
 

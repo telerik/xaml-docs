@@ -13,6 +13,7 @@ position: 11
 Many applications operate with collections of items which are placed close to others and it's uncomfortable to use them as separate objects for low zoom levels. The __VisualizationLayer__ supports the __Clustering__ feature. It allows grouping of items according to condition.      
 
 * [Using of the clustering](#using-of-the-clustering)
+* [Clustering Invalidated Event](#clustering-invalidated-event)
 * [Items Grouping Example](#items-grouping-example)
 * [DefaultClusterGenerator class](#defaultclustergenerator-class)
 * [The ClusterData object](#the-clusterdata-object)
@@ -21,27 +22,46 @@ Many applications operate with collections of items which are placed close to ot
 
 The __VisualizationLayer__ exposes the following properties which are related to the __Clustering__ feature:        
 
-* __ClusterGenerator__ - gets or sets an instance of the class which implements the __IClusterGenerator__ interface. It can be used when you want to define your own grouping algorithm. As default it uses the instance of the built-in __DefaultClusterGenerator__ class.            
+* __ClusterGenerator__: Gets or sets an instance of the class which implements the __IClusterGenerator__ interface. It can be used when you want to define your own grouping algorithm. As default it uses the instance of the built-in __DefaultClusterGenerator__ class.            
 
-* __ClusteringEnabled__ - gets or sets a __boolean__ value which indicates whether the clustering is enabled.            
+* __ClusteringEnabled__: Gets or sets a __boolean__ value which indicates whether the clustering is enabled.            
 
-* __ClusteringEnabledThreshold__ - a property of type __int__ that gets or sets clustering enabled threshold. This value sets the max zoom level for clustering. If current zoom level of the control is greater than this value then clustering will be disabled.
+* __ClusteringEnabledThreshold__: A property of type __int__ that gets or sets clustering enabled threshold. This value sets the max zoom level for clustering. If current zoom level of the control is greater than this value then clustering will be disabled.
 
 >tipYou should set the __AutoCalculateClusteringThreshold__ to __False__ to allow the RadMap to respect the __ClusteringEnabledThreshold__. The default value of this property is __True__. This means that you need to explicitly set it to false in all cases when you need to predefine the clustering threshold.
 
-* __ClusteringEnabledThresholdMinItems__ - a property of type __int__ that gets or sets the minimum number of items in the cluster for auto calculated clustering threshold. The clustering threshold will be set if number of the items in every cluster is less than this value.            
+* __ClusteringEnabledThresholdMinItems__: A property of type __int__ that gets or sets the minimum number of items in the cluster for auto calculated clustering threshold. The clustering threshold will be set if number of the items in every cluster is less than this value.            
 
-* __ClusterItemTemplate__ - gets or sets the data template which represents the cluster item.            
+* __ClusterItemTemplate__: Gets or sets the data template which represents the cluster item.            
 
-* __ClusterTemplateSelector__ - gets or sets the custom logic for choosing a template used to display each cluster.            
+* __ClusterTemplateSelector__: Gets or sets the custom logic for choosing a template used to display each cluster.            
 
-* __DefaultClusterTemplate__ - gets or sets the default cluster data template. It’s used when the __ClusterTemplateSelector__ and __ClusterItemTemplate__ properties are not specified.            
+* __DefaultClusterTemplate__: Gets or sets the default cluster data template. It’s used when the __ClusterTemplateSelector__ and __ClusterItemTemplate__ properties are not specified.            
 
-* __GenerateClustersOnZoom__ - a property of type __bool__ that gets or sets value which indicates whether clusters should be re-generated when the zoom level is changed. The default value of this property is __true__.            
+* __GenerateClustersOnZoom__: A property of type __bool__ that gets or sets value which indicates whether clusters should be re-generated when the zoom level is changed. The default value of this property is __true__.            
 
-In order to enable the __Clustering__ feature you can specify just the __ClusteringEnabled__ property to __true__. Also you can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties for customizing the appearance of the item and of the cluster.        
+In order to enable the __Clustering__ feature you can specify just the __ClusteringEnabled__ property to __true__. Also you can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties for customizing the appearance of the item and of the cluster.          
 
 More information about using of the __ItemTemplate__ property you can find in the [Data Binding]({%slug radmap-visualization-layer-data-binding%}) article.        
+
+## ClustersInvalidated Event
+
+To get notified when the cluster elements are created, the __ClustersInvalidated__ event of the VisualizationLayer can be utilized.
+
+#### __[XAML] Example 1: Subscribe to ClustersInvalidated event__
+
+{{region xaml-radmap-visualization-layer-clustering_0}}
+    <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClustersInvalidated="VisualizationLayer_ClustersInvalidated"/>
+{{endregion}}
+
+#### __[C#] Example 2: ClustersInvalidated event handler__
+
+{{region csharp-radmap-visualization-layer-clustering_1}}
+    private void VisualizationLayer_ClustersInvalidated(object sender, System.EventArgs e)
+	{
+		// custom logic		
+	}
+{{endregion}}
 
 ## Items Grouping Example
 
@@ -49,8 +69,8 @@ The following example demonstrates how to use the __Clustering__ feature to disp
 
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         
-#### __[XAML] Example 1: Displaying Airports of USA__
-{{region radmap-visualization-layer-clustering_0}}
+#### __[XAML] Example 3: Displaying Airports of USA__
+{{region radmap-visualization-layer-clustering_4}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -85,9 +105,9 @@ Such performance is a reason to use the __Clustering__ feature to improve the pe
 
 You can set the __ClusteringEnabled__ property to __true__ for enabling the feature.        
 
-#### __XAML__
+#### __[XAML] Example 4: Enable clustering functionality__
 
-{{region xaml-radmap-visualization-layer-clustering_1}}
+{{region xaml-radmap-visualization-layer-clustering_5}}
     <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClusteringEnabled="True">
         <telerik:VisualizationLayer.Reader>
             <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />
@@ -103,8 +123,8 @@ By default the cluster looks like above and it shows how many items it contains.
 
 You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to customize the appearance of the item and of the cluster.
         
-#### __[XAML] Example 2: Customizing the appearance of the cluster__
-{{region radmap-visualization-layer-clustering_2}}
+#### __[XAML] Example 5: Customizing the appearance of the cluster__
+{{region radmap-visualization-layer-clustering_6}}
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -205,31 +225,31 @@ The __DefaultClusterGenerator__ class also provides several methods which can be
 
 The __VisualizationLayer__ uses the __ClusterData__ object to visualize the cluster. The __ClusterData__ exposes the following properties which can be used in applications:        
 
-* __AutoCalculateBounds__ - gets or sets value which indicates whether bounding box of the cluster should be calculated automatically.            
+* __AutoCalculateBounds__: Gets or sets value which indicates whether bounding box of the cluster should be calculated automatically.            
 
-* __AutoExpandWhenSingle__ - gets or sets value which indicates whether cluster should be automatically expanded when it contains 1 data item only.            
+* __AutoExpandWhenSingle__: Gets or sets value which indicates whether cluster should be automatically expanded when it contains 1 data item only.            
 
-* __Bounds__ - gets or sets bounding box of the cluster.            
+* __Bounds__: Gets or sets bounding box of the cluster.            
 
-* __Children__ - gets data items which belong to this cluster.            
+* __Children__: Gets data items which belong to this cluster.            
 
-* __ClusterState__ - a property of type __ClusterState__ that gets or sets state of the cluster. It can be __Collapsed__, __Expanded__ and __ExpandedToPolygon__. The difference between expanded cluster and cluster expanded to polygon is as following: the expanded cluster uses original locations of the items to show them, the cluster which is expanded to polygon uses vertices of the regular polygon with center at the cluster’s center to show items.            
+* __ClusterState__: A property of type __ClusterState__ that gets or sets state of the cluster. It can be __Collapsed__, __Expanded__ and __ExpandedToPolygon__. The difference between expanded cluster and cluster expanded to polygon is as following: the expanded cluster uses original locations of the items to show them, the cluster which is expanded to polygon uses vertices of the regular polygon with center at the cluster’s center to show items.            
 
-* __Count__ - gets number of the items in the cluster.            
+* __Count__: Gets number of the items in the cluster.            
 
-* __Data__ - gets or sets additional cluster's data. This data can be used to pass extra information to the cluster's data template or by cluster generator when detecting belonging of the item to the particular cluster.            
+* __Data__: Gets or sets additional cluster's data. This data can be used to pass extra information to the cluster's data template or by cluster generator when detecting belonging of the item to the particular cluster.            
 
-* __DeleteWhenEmpty__ - gets or sets value which indicates whether cluster should be deleted if it is empty.            
+* __DeleteWhenEmpty__: Gets or sets value which indicates whether cluster should be deleted if it is empty.            
 
-* __ExpandRadius__ - gets or sets radius (in pixels) which will be used to calculate coordinates of the items when cluster is expanded to the polygon vertices.            
+* __ExpandRadius__: Gets or sets radius (in pixels) which will be used to calculate coordinates of the items when cluster is expanded to the polygon vertices.            
 
-* __HideExpanded__ - gets or sets value which indicates whether the expanded cluster should be hidden.            
+* __HideExpanded__: Gets or sets value which indicates whether the expanded cluster should be hidden.            
 
-* __Hotspot__ - gets or sets hotspot of the cluster.            
+* __Hotspot__: Gets or sets hotspot of the cluster.            
 
-* __Location__ - gets or sets center of the cluster.            
+* __Location__: Gets or sets center of the cluster.            
 
-* __ZIndex__ - gets or sets the Z-Index of the cluster.            
+* __ZIndex__: Gets or sets the Z-Index of the cluster.            
 
 Many of these properties are used by the cluster generator, only. It calculates them automatically during the process of generating clusters. Usually, applications use the __ClusterState__ property to expand the cluster’s items. The following example demonstrates how this can be achieved.        
 
@@ -237,8 +257,8 @@ Many of these properties are used by the cluster generator, only. It calculates 
 
 The __ClusterState__ property allows displaying the items of cluster without increasing of the zoom level. You can attach the mouse events in the cluster template like the XAML code below.
         
-#### __[XAML] Example 3: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
-{{region radmap-visualization-layer-clustering_3}}
+#### __[XAML] Example 6: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
+{{region radmap-visualization-layer-clustering_7}}
     <DataTemplate x:Key="ClusterTemplate">
         <Border Background="#af3f3f3f"
                 CornerRadius="3"
@@ -256,8 +276,8 @@ The __ClusterState__ property allows displaying the items of cluster without inc
 
 The following *MouseLeftButtonDown* event handler uses to expand the items of cluster to the polygon vertices:
         
-#### __[C#] Example 4: MouseLeftButtonDown event handler__
-{{region radmap-visualization-layer-clustering_4}}
+#### __[C#] Example 8: MouseLeftButtonDown event handler__
+{{region radmap-visualization-layer-clustering_9}}
 	private void ExpandClusterToPolygon(object sender, MouseButtonEventArgs e)
 	{
 	    FrameworkElement element = sender as FrameworkElement;
@@ -282,8 +302,8 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: MouseLeftButtonDown event handler__
-{{region radmap-visualization-layer-clustering_5}}
+#### __[VB.NET] Example 8: MouseLeftButtonDown event handler__
+{{region radmap-visualization-layer-clustering_10}}
     Private Sub ExpandClusterToPolygon(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
         If element IsNot Nothing Then
@@ -304,8 +324,8 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 
 The following *MouseRightButtonDown* event handler uses to expand the items of cluster to their original locations:
         
-#### __[C#] Example 5: MouseRightButtonDown event handler__
-{{region radmap-visualization-layer-clustering_6}}
+#### __[C#] Example 9: MouseRightButtonDown event handler__
+{{region radmap-visualization-layer-clustering_11}}
 	private void ExpandCluster(object sender, MouseButtonEventArgs e)
 	{
 	    FrameworkElement element = sender as FrameworkElement;
@@ -330,8 +350,8 @@ The following *MouseRightButtonDown* event handler uses to expand the items of c
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 5: MouseRightButtonDown event handler__
-{{region radmap-visualization-layer-clustering_7}}
+#### __[VB.NET] Example 9: MouseRightButtonDown event handler__
+{{region radmap-visualization-layer-clustering_12}}
     Private Sub ExpandCluster(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
         If element IsNot Nothing Then

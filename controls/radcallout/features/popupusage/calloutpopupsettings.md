@@ -14,11 +14,11 @@ The __CalloutPopupSettings__ class provides properties to control the display of
 
 This article will list the key properties provided by the __CalloutPopupSettings__ class.
 
-* __AutoClose__: A __boolean__ property that gets or sets a value indicating whether the host Popup of the callout will automatically close. By default, the control will capture the mouse, so clicking outside of the RadCallout, will close it. When this behavior is disabled, the control can be closed from the __CalloutPopupServiceClose() or CloseAll()__ method.
+* __AutoClose__: A __boolean__ property that gets or sets a value indicating whether the host Popup of the callout will automatically close. By default, the control will capture the mouse, so clicking outside of the RadCallout, will close it. When this behavior is disabled, the control can be closed from the __CalloutPopupService.Close() or CloseAll()__ method.
 
-* __ShowAnimationType__: A property of type __CalloutAnimation__ that gets or sets gets or sets the type of Telerik.Windows.Controls.Animation.AnimationManager shown animation. 
+* __ShowAnimationType__: A property of type __CalloutAnimation__ that gets or sets the type of shown animation. 
 	
-* __CloseAnimationType__: A property of type __CalloutAnimation__ that gets or sets gets or sets the type of Telerik.Windows.Controls.Animation.AnimationManager close animation.
+* __CloseAnimationType__: A property of type __CalloutAnimation__ that gets or sets the type of close animation.
 
 	The __CalloutAnimation__ is an enumeration and it allows the following values:
 	* __None__ 
@@ -32,15 +32,15 @@ This article will list the key properties provided by the __CalloutPopupSettings
 
 * __ShowAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when shown, in seconds.
 
-* __CloseAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when close, in seconds.
+* __CloseAnimationDuration__: A property of type __double__ that gets or sets a duration of the animation when closed, in seconds.
 
-* __ShowAnimationEasing__: A property of type __IEasingFunction__ that gets or sets gets or sets the easing function of the shown animation.
+* __ShowAnimationEasing__: A property of type __IEasingFunction__ that gets or sets the easing function of the shown animation.
 
-* __CloseAnimationEasing__: A property of type __IEasingFunction__ that gets or sets gets or sets the easing function of the close animation.
+* __CloseAnimationEasing__: A property of type __IEasingFunction__ that gets or sets the easing function of the close animation.
 
 * __ShowAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when shown, in seconds.
 
-* __CloseAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when close, in seconds.
+* __CloseAnimationDelay__: A property of type __double__ that gets or sets a delay of the animation when closed, in seconds.
 
 * __MoveWithPlacementTargetParentWindow__: A __boolean__ property that gets or sets a value indicating whether the host popup will move along with the parent window of the placement target. 
 
@@ -63,7 +63,7 @@ This article will list the key properties provided by the __CalloutPopupSettings
 	* __Top__ 
 	* __Custom__
 		
-* __AutoCenter__: A __boolean__ property that gets or sets a value indicating whether the Popup will be auto-centered to the placement target. By default, this behavior is enabled and will offset the control so that its center to its target. The RadCallout can be additionally offset by using the following properties.
+* __AutoCenter__: A __boolean__ property that gets or sets a value indicating whether the Popup will be auto-centered to the placement target. By default, this behavior is enabled and will offset the control so that it is centered to its target. The RadCallout can be additionally offset by using the following properties.
 
 * __VerticalOffset__: A __boolean__ property that gets or sets the vertical offset of the host Popup. Default value is 0.
 

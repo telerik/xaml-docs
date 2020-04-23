@@ -28,7 +28,7 @@ RadBusyIndicator	|	Telerik.Windows.Controls
 RadButtons	|	Telerik.Windows.Controls
 RadCalculator	|	Telerik.Windows.Controls.Input
 RadCalendar	|	Telerik.Windows.Controls.Input
-RadCallout  |  Telerik.Windows.Controls, Telerik.Windows.Controls.Input
+RadCallout  |  Telerik.Windows.Controls
 RadCarousel	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadChart	|	Telerik.Windows.Controls.Charting
 RadChartView	|	Telerik.Windows.Controls.Chart, Telerik.Windows.Data

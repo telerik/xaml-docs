@@ -46,8 +46,8 @@ This article will list the key properties provided by the RadCallout control.
 	* __Kaboom__: Kaboom geometry.
 	* __Custom__: Set custom geometry.	
 	
-#### Figure 1: RadCallout types
-![Telerik Callout Map Integration 0](images/radcallout-key-properties_1.png)
+	#### Figure 1: RadCallout types
+	![Telerik Callout Map Integration 0](images/radcallout-key-properties_1.png)
 
 * __ArrowType__: A property of type __CalloutArrowType__ that gets or sets gets or sets the arrow type of the callout control. The __ArrowType__ is an enumeration and it allows the following values:
 	* __None__: No arrow.
@@ -55,8 +55,8 @@ This article will list the key properties provided by the RadCallout control.
 	* __Circles__: Series of circles.
 	* __Ellipses__: Series of circles.
 	
-#### Figure 1: RadCallout arrow types
-![Telerik Callout Map Integration 0](images/radcallout-key-properties_2.png)
+	#### Figure 1: RadCallout arrow types
+	![Telerik Callout Map Integration 0](images/radcallout-key-properties_2.png)
 
 ## See Also
 

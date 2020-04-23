@@ -112,7 +112,7 @@ To change the search mode that is used to match the results, set the __TextSearc
 {% if site.site_name == 'WPF' %}
 You can also utilize the __IsTextSearchCaseSensitive__ property of RadTreeView in order to determinne if the search is case sensitive. 
 
->tip StartsWithCaseSensitive and ContainsCaseSensitive text search nodes have higher priority than the IsTextSearchCaseSensitive property.
+>tip __StartsWithCaseSensitive and ContainsCaseSensitive__ text search modes have higher priority than the IsTextSearchCaseSensitive property.
 {% endif %}
 
 #### __[XAML] Example 3: Setting up text search navigation__  
@@ -120,14 +120,14 @@ You can also utilize the __IsTextSearchCaseSensitive__ property of RadTreeView i
 	<telerik:RadTreeView IsTextSearchEnabled="True" TextSearchMode="Contains" />
 {{endregion}}
 
-When data binding the RadTreeView's ItemsSource property to a colleciton of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search. 
+When data binding the RadTreeView's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search. 
 
 #### __[XAML] Example 4: Setting TextPath__  
 {{region radtreeview-features-keyboard-support_4}}
 	<telerik:RadTreeView IsTextSearchEnabled="True" telerik:TextSearch.TextPath="MyProperty" />
 {{endregion}}
 
-In __Example 4__ `MyProperty` points a property defined in the view model of the treeview items. If the type text matches the value of this property the corresponding item will get selected.
+In __Example 4__ `MyProperty` points to a property defined in the view model of the treeview items. If the type text matches the value of this property, the corresponding item will get selected.
 
 To increase the time interval for typing before the text is reset, set the __TextSearch.AutoCompleteTimeout__ static property.
 

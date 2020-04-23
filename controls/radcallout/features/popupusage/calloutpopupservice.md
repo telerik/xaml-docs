@@ -1,7 +1,7 @@
 ---
 title: CalloutPopupService
 page_title: CalloutPopupService
-description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+description: Check our &quot;CalloutPopupService&quot; documentation article for the RadCallout {{ site.framework_name }} control.
 slug: radcallout-features-calloutpopupservice
 tags: calloutpopupservice, show, close
 published: True

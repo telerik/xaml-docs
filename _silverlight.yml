@@ -137,7 +137,8 @@ getting-started/explore-control-features.md,
 controls/radsyntaxeditor,
 controls/radfilepathpicker,
 netcore/,
-controls/radtaskboard,]
+controls/radtaskboard,
+controls/radnotifyicon,]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

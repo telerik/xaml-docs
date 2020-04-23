@@ -1,0 +1,126 @@
+---
+title: Getting Started
+page_title: Getting Started
+description: This article will walk you through the creation of a sample application that contains a RadNotifyIcon control.
+slug: radnotifyicon-getting-started
+tags: getting,started,radnotifyicon
+position: 2
+---
+
+# Getting Started
+
+This tutorial will walk you through the creation of a sample application that contains a __RadNotifyIcon__ control.
+			
+## Assembly References
+
+In order to use __RadNotifyIcon__, you will need to add references to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+
+You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
+
+## Defining RadNotifyIcon
+
+__Example 1__ demonstrates how you can define a RadNotifyIcon in xaml. You have to point the RadNotifyIcon to an ".ico" file that will be shown in the taskbar notification area. 
+You can either set the __TrayIconSource__ property which accepts an __ImageSource__/__string__ pointing to the file, or the __TrayIcon__ property, which accepts a __System.Drawing.Icon__ object. 
+
+#### __[XAML] Example 1: Defining RadNotifyIcon__
+{{region xaml-radnotifyicon-getting-started-0}}
+
+    <telerik:RadNotifyIcon x:Name="icon" TrayIconSource="YourIconPath.ico" GuidItem="00000001-0002-0003-0004-000000000005" />
+{{endregion}}
+
+>important You should replace the placeholder __GuidItem__ with your own Guid and use the same one for a given application. This will allow Windows to recognize the icon each time you show it in the tray. 
+
+> Each time you use a new __GuidItem__, Windows will register a new icon. To learn how to clear the icon cache, you can check out the following thread: [How to remove old notification icons from the Windows 10 system tray](https://answers.microsoft.com/en-us/windows/forum/all/how-to-remove-old-notification-icons-from-the/c66892b4-51a9-44fa-853f-b17cdff5ed2f).
+
+## Showing and Hiding the Icon
+
+By default the icon will be displayed in the tray area once the application is started. If you want to manually show the icon, you can initially set its __Visibility__ to __Collapsed__. __Example 3__ shows two options for showing and hiding the icon in code.
+
+#### __[XAML] Example 2: Hiding the icon by default__
+{{region xaml-radnotifyicon-getting-started-1}}
+
+    <telerik:RadNotifyIcon x:Name="icon" Visibility="Collapsed" />
+{{endregion}}
+
+#### __[C#] Example 3: Show/Hide the icon in code__
+{{region cs-radnotifyicon-getting-started-2}}
+
+    // Options for showing the icon
+    this.icon.Visibility = Visibility.Visible;
+    this.icon.AddIcon();
+
+
+    // Options for hiding the icon
+    this.icon.Visibility = Visibility.Collapsed;
+    this.icon.RemoveIcon();
+{{endregion}}
+
+#### __[VB.NET] Example 3: Show/Hide the icon in code__
+{{region vb-radnotifyicon-getting-started-3}}
+
+    ' Options for showing the icon
+    Me.icon.Visibility = Visibility.Visible
+    Me.icon.AddIcon()
+
+
+    ' Options for hiding the icon
+    Me.icon.Visibility = Visibility.Collapsed
+    Me.icon.RemoveIcon()
+{{endregion}}
+
+## Refreshing the Icon
+
+The __RadNotifyIcon__ allows for refreshing the icon through the __UpdateIcon__ method.
+
+#### __[C#] Example 4: Updating the icon__
+{{region cs-radnotifyicon-getting-started-4}}
+
+    this.icon.UpdateIcon();
+{{endregion}}
+
+#### __[VB.NET] Example 4: Updating the icon__
+{{region vb-radnotifyicon-getting-started-5}}
+
+    Me.icon.UpdateIcon()
+{{endregion}}
+
+## Interacting with the Icon
+
+The __RadNotifyIcon__ supports displaying a popup, tooltip, context menu and balloon notifications. You can learn more about each feature in its respective article:
+
+* [Tooltip]({%slug radnotifyicon-tooltip%})
+* [Popup]({%slug radnotifyicon-popup%})
+* [ContextMenu]({%slug radnotifyicon-contextmenu%})
+* [Balloon Notifications]({%slug radnotifyicon-balloon-notifications%})
+
+## GetUserNotificationState
+
+The __RadNotifyIcon__ exposes the __GetUserNotificationState__ static method, which allows you to check the state of the computer for the current user to determine whether sending a notification is appropriate. 
+
+#### __[C#] Example 5: Using the GetUserNotificationState method__
+{{region cs-radnotifyicon-getting-started-6}}
+
+    var state = RadNotifyIcon.GetUserNotificationState();
+
+    if(state == UserNotificationState.AcceptsNotifications)
+    {
+        // send notification
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 5: Using the GetUserNotificationState method__
+{{region vb-radnotifyicon-getting-started-7}}
+
+    Dim state = RadNotifyIcon.GetUserNotificationState()
+
+	If state Is UserNotificationState.AcceptsNotifications Then
+		' send notification
+	End If
+{{endregion}}
+
+
+## See Also 
+
+* [Events]({%slug radnotifyicon-events%})

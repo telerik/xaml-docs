@@ -10,7 +10,7 @@ position: 1
 
 # Integrate the RadCallout control inside RadMap
 
-This tutorial will walk you through the steps to integrate RadCallout control inside the RadMap. In this example, we will show how to open RadCallout with additional information regarding the clicked PushPin element on the map.
+This tutorial will walk you through the steps to integrate the RadCallout control inside the RadMap. In this example, we will show how to open a RadCallout with additional information regarding the clicked PushPin element on the map.
 
 First, we will set-up our RadMap control. We will create a collection of business objects, which represent the desired data and populate the visualization layer.
 
@@ -62,7 +62,7 @@ The next step is to define how we want to visualize our data items through the I
 		ZoomLevel="7" 
 		Center="42.7957539183824, 25.3427663758679">
 		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="You Application Key" Mode="Aerial" />
+			<telerik:BingRestMapProvider ApplicationId="Your Application Key" Mode="Aerial" />
 		</telerik:RadMap.Provider>
 		<telerik:VisualizationLayer x:Name="visualizationLayer"                                        
 								ItemSelectionMode="MouseClick"
@@ -195,5 +195,5 @@ We also need to specify the content of the RadCallout. This way, we can visualiz
 
 And we are ready. When you run the example, click on one of the visible PushPin elements on the map to see the name of the city and its location.
 
-#### Figure 1: RadCallout integrated in RadMap
+#### Figure 2: RadCallout integrated in RadMap
 ![Telerik Callout Map Integration 0](images/callout_howto_map_integration_2.png)

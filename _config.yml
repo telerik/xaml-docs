@@ -944,6 +944,10 @@ navigation:
         position: 9
     controls/radtaskboard:
         title: RadTaskBoard
+    controls/radcallout:
+        title: RadCallout
+    controls/radcallout/features/popupusage:
+        title: PopupUsage
 ## X1 Controls End
 
 ## Common Start   

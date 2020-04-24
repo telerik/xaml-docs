@@ -28,6 +28,7 @@ Here is a list of events exposed by the RadSyntaxEditor control:
 * **CommandExecuted**: Occurs when a command has been executed.
 * **CommandError**: Occurs when a command has been canceled due to an error.
 * **SelectionChanged**: Occurs when the selection of the control changes.
+* **TextSearched**: Occurs when text is searched in the document.
 
 ## Other
 

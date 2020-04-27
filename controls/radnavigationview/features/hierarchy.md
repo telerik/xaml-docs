@@ -1,7 +1,7 @@
 ---
 title: Hierarchy
 page_title: Hierarchical Navigation Menu
-description: adNaviationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
+description: RadNavigationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
 slug: radnavigationview-features-hierarchy
 tags: threshold, mode, display, pane, size
 position: 0
@@ -9,9 +9,9 @@ position: 0
 
 # Hierarchy
 
-RadNaviationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
+RadNavigationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
 
-Each RadNaviationViewItem element has an Items collection that can be populated with RadNavigationViewItem elements, thus allowing multiple number of levels to be defined in the hierarchy.
+Each RadNavigationViewItem element has an Items collection that can be populated with RadNavigationViewItem elements, thus allowing multiple levels of items to be defined in the hierarchy.
 
 #### __[XAML] Example 1: Setting up hierarchical navigation view in XAML__
 {{region radnavigationview-features-hierarchy-0}}
@@ -35,7 +35,7 @@ Each RadNaviationViewItem element has an Items collection that can be populated 
 	</telerik:RadNavigationView>
 {{endregion}}
 
-To control the current expand state of a RadNaviationViewItem, set its __IsExpanded__ property.
+To control the current expand state of a RadNavigationViewItem, set its __IsExpanded__ property.
 
 #### Figure 1: Hierarchical RadNavigationView
 ![](images/radnavigationview-features-hierarchy-0.png)
@@ -51,7 +51,7 @@ By default multiple RadNavigationViewItem elements with child items can be expan
 
 ## Child Items Indentation
 
-To change the default horizontal offset (indent) of the child items relative to their parent, set the __SubItemsIndentation__ property of RadNaviationView.
+To change the default horizontal offset (indent) of the child items relative to their parent, set the __SubItemsIndentation__ property of RadNavigationView.
 
 #### __[XAML] Example 3: Setting the indent of sub items__
 {{region radnavigationview-features-hierarchy-2}}
@@ -63,7 +63,7 @@ To change the default horizontal offset (indent) of the child items relative to 
 
 ## Expand and Collapse Icon
 
-RadNaviationViewItem has default expand and collapse icons shown in the right part of the item, when it has children. To replace the icons, set the __ExpandedIcon__ and __CollapsedIcon__ properties of RadNaviationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+RadNavigationViewItem has default expand and collapse icons shown in the right part of the item, when it has children. To replace the icons, set the __ExpandedIcon__ and __CollapsedIcon__ properties of RadNavigationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
 #### __[XAML] Example 4: Setting the expand and collapse icons__
 {{region radnavigationview-features-hierarchy-3}}
@@ -89,14 +89,14 @@ To change this behavior and use other UI for the icons like a customized RadGlyp
                                    CollapsedIconTemplate="{StaticResource ExpandedCollapsedIconTemplate}" />                    
 {{endregion}}
 
-#### Figure 4: RadNaviationViewItems with folder images as expand/collapse icons
+#### Figure 4: RadNavigationViewItems with folder images as expand/collapse icons
 ![](images/radnavigationview-features-hierarchy-3.png)
 
 In data binding scenarios or when there are many items, you can use the __ItemContainerStyle__ property to set the icon properties.
 
 ## Flyout 
 
-When RadNaviationView is collapsed and its [DisplayMode]({%slug radnavigationview-display-mode%}) is Expanded or Compact, you can display the nested menu items by clicking on the collapsed RadNaviationViewItems.
+When RadNavigationView is collapsed and its [DisplayMode]({%slug radnavigationview-display-mode%}) is Expanded or Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
 #### Figure 5: Sub menu flyout visualization
 ![](images/radnavigationview-features-hierarchy-4.png)
@@ -105,7 +105,7 @@ When RadNaviationView is collapsed and its [DisplayMode]({%slug radnavigationvie
 
 The expanding and collapsing actions fire the __ItemExpanded__ and __ItemCollapsed__ events of RadNavigationView. 
 
-Additionally, the RadNaviationViewItem exposes __Expanded__ and __Collapsed__ events.
+Additionally, the RadNavigationViewItem exposes __Expanded__ and __Collapsed__ events.
 
 #### __[XAML] Example 6: Subscribing to ItemExpanded event__
 {{region radnavigationview-features-hierarchy-5}}
@@ -120,7 +120,7 @@ Additionally, the RadNaviationViewItem exposes __Expanded__ and __Collapsed__ ev
 	}
 {{endregion}}
 
-> The Expanded/Collapsed event of RadNaviationViewItem is fired before the ItemExpanded/ItemCollapsed event of RadNavigationView.
+> The Expanded/Collapsed event of RadNavigationViewItem is fired before the ItemExpanded/ItemCollapsed event of RadNavigationView.
 
 ## Data Binding
 

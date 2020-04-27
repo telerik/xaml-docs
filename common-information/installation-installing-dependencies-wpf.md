@@ -69,6 +69,7 @@ RadMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadMaskedInput	|	Telerik.Windows.Controls.Input
 RadMenu	|	Telerik.Windows.Controls.Navigation
 RadNavigationView |	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
+RadNotifyIcon | Telerik.Windows.Controls.Navigation
 RadNumericUpDown	|	Telerik.Windows.Controls.Input
 RadOutlookBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPanelBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data

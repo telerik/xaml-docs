@@ -139,6 +139,7 @@ controls/radsyntaxeditor,
 controls/radfilepathpicker,
 netcore/,
 controls/radtaskboard,
+controls/radnotifyicon,
 controls/radcallout]
 
 exclude_navigation: [controls/raddocking/theming/*]

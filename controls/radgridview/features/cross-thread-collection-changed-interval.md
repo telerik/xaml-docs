@@ -14,6 +14,8 @@ RadGridView dispatches the ItemsSource collection changes made on a background t
 
 The __CrossThreadCollectionChangedInterval__ property allows you to control the time interval at which the CollectionChanged is dispatched to the UI thread. The default property value is `TimeSpan.Zero` and the updates happen on each CollectionChanged of the ItemsSource. 
 
+The CrossThreadCollectionChangedInterval was introduced with version R2 2020 of Telerik UI for WPF.
+
 #### __[XAML] Example 1: Setting CrossThreadCollectionChangedInterval to 3 seconds in XAML__
 {{region radgridview-features-ui-virtualization-0}}
 	<telerik:RadGridView CrossThreadCollectionChangedInterval="00:00:03.000" />

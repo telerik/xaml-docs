@@ -26,9 +26,11 @@ As every control from UI for WPF, RadNavigationView comes with a set of pre-defi
 
 * __Powerful Data Binding__: You can bind the control and its components to different sources such as Objects and Collections. Read more about this in the [Data Binding]({%slug radnavigationview-populating-with-data-databinding%}) section of the documentation.
 
+* __Sub Items Support__: This feature allows you to create a navigation menu with multiple levels of items in a tree-like structure. Read more about this in the [Hierarchy]({%slug radnavigationview-features-hierarchy%}) article.
+
 * __Flexible Header and Footer Content__: Customize your headers and footers any way you want using direct content or data templates. Read more about this in the [Header and Footer]({%slug radnavigationview-header-and-footer%}) section of the documentation.
 
-* __Keyboard support__: RadNavigationView allows you to perform navigation, selection and other tasks without using the mouse. Read more about this in the [Keyboard Support]({%slug radnavigationview-features-keyboard-support%}) article.
+* __Keyboard Support__: RadNavigationView allows you to perform navigation, selection and other tasks without using the mouse. Read more about this in the [Keyboard Support]({%slug radnavigationview-features-keyboard-support%}) article.
 
 * __UI Automation Support__: Check the [UI Automation Support]({%slug common-ui-automation%}) common article.
 

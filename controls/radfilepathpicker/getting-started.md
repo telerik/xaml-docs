@@ -112,6 +112,13 @@ To avoid showing a RadGlyph in the clear button, you can set the __ClearButtonTe
 #### __Figure 5: RadFilePathPicker with ClearButtonTemplate set in the Office2016 theme__
 ![RadFilePathPicker with ClearButtonTemplate](images/FilePathPicker_GettingStarted_ClearButtonTemplate.png)
 
+## Setting FilePath on Drop
+
+Since the __2020.1.316__ internal build version, the RadFilePathPicker automatically sets its __FilePath__ when a file is dropped over it. If multiple files are dropped, the first one will be used. In order to disable this functionality, you can set the __AllowDrop__ property of the control to __False__.
+ 
+#### __Figure 6: Dropping a file over the RadFilePathPicker__
+![Dropping a file over the RadFilePathPicker](images/FilePathPicker_GettingStarted_Drop.gif)
+
 ## See Also 
 
 * [Commands]({%slug radfilepathpicker-commands%})

@@ -12,7 +12,7 @@ position: 0
 
 Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This article will describe the difference and help you to choose a version. 
 
-Let's start with that both types of dlls contain the same source code. The only difference is that the Xaml assemblies embeds also all styles of the controls. 
+Let's start with that both types of dlls contain the same source code. The only difference is that the Xaml assemblies embed also all styles of the controls. 
 
 ## Assemblies location
 

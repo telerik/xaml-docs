@@ -71,6 +71,5 @@ To resume the upload the user has to click the __"Resume"__ button.
 
 ## See Also
  * [Visual Structure]({%slug radupload-visual-structure%})
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Events - Overview]({%slug radupload-events-overview%})
  * [Localization]({%slug radupload-localization%})

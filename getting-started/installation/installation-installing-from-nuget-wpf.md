@@ -11,6 +11,8 @@ site_name: WPF
 
 # Installing UI for WPF from a NuGet package
 
+<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The following topic describes how you can install Telerik UI for WPF from a [NuGet package](http://www.nuget.org/).
 
 ## Available Packages

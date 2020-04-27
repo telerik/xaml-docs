@@ -38,7 +38,7 @@ You can then create the Telerik UI for {{ site.framework_name }} project in one 
 >caption Figure 2: Go to Telerik > Telerik  UI for {{ site.framework_name }} > Create New Telerik Project
 ![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_SL_OverviewMenuCreate.png "Run Create Project Wizard")
 
-* If you already **have a {{ site.framework_name }} project**, run the [Convert Project Wizard]({%slug radcontrols-for-silverlight-vs-extensions-overview%}).
+* If you already **have a {{ site.framework_name }} project**, run the [Convert Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}).
 >caption Figure 3: Go to Telerik > Telerik UI for {{ site.framework_name }} > Convert to Telerik {{ site.framework_name }} Application
 ![Run Convert Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_SL_OverviewMenuConvert.png "Run Convert Project Wizard")
 

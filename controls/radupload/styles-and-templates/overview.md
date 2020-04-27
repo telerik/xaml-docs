@@ -11,10 +11,6 @@ site_name: Silverlight
 
 # Overview
 
-
-
-## 
-
 This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadUpload__ and the __RadUploadItem__. There is also comprehensive information about their __ControlTemplates__. You will need this information if you want to customize their appearance. 
 
 You can modify the look of the __RadUpload__ and the __RadUploadItem__ either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the control template you should be careful to include all required parts.
@@ -29,10 +25,6 @@ Read the following topics to learn more:
 
 * [Styling the RadUploadItem]({%slug radupload-styles-and-templates-styling-the-raduploaditem%})
 
-## See Also
-
+## See Also  
  * [Visual Structure]({%slug radupload-visual-structure%})
-
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
-
  * [Events - Overview]({%slug radupload-events-overview%})

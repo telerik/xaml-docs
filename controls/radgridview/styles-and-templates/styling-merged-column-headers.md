@@ -14,13 +14,20 @@ In order to style **Columng Groups** you will need to create two styles targetin
 
 #### __[XAML] Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-	{{region xaml-gridview-styling-column-groups_1}}
-	<Style TargetType="telerik:CommonHeaderPresenter">
-	    <Setter Property="Background" Value="Red"/>
-	</Style>
-	<Style TargetType="telerik:CommonColumnHeader">
-	    <Setter Property="Background" Value="Red"/>
-	</Style>
+{{region xaml-gridview-styling-column-groups_1}}
+	<UserControl.Resources>
+		<!-- If you use NoXaml dlls and the implicit styles theming you will need to set also the BasedOn property to the Style object-->
+
+		<!-- BasedOn="{StaticResource CommonHeaderPresenterStyle}" -->
+		<Style TargetType="telerik:CommonHeaderPresenter">
+		    <Setter Property="Background" Value="Red"/>
+		</Style>
+
+		<!-- BasedOn="{StaticResource CommonColumnHeaderStyle}" -->
+		<Style TargetType="telerik:CommonColumnHeader">
+		    <Setter Property="Background" Value="Red"/>
+		</Style>
+	</UserControl.Resources>
 {{endregion}}
 
 This will result in a red background for the merged header cells.
@@ -33,8 +40,6 @@ This will result in a red background for the merged header cells.
 
 >If you want to have your [**Row Indicator** visible]({%slug gridview-customizing-rows%}#hiding-the-row-indicator), you will also need to modify the **CommonHeaderIndent** element of the **GridViewHeaderRow**. You can look at the [Styling Header Row article]({%slug gridview-styling-header-row%}) for more information on how to achieve that.
 
-## See Also
-
- * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%})
- 
+## See Also  
+ * [Styles and Templates Overview]({%slug gridview-stylines-and-templates-overview%}) 
  * [Column Groups]({%slug gridview-column-groups%}).

@@ -32,7 +32,6 @@ If you need to define more than one filter, you concatenate the desired filters 
 >tip When having more than one filter, you can specify which to be the default by setting the __FilterIndex__ property to the index of the desired filter (the indexing starts from 1).
 
 ## See Also  
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})
  * [File Size and Count Limitation]({%slug radupload-features-file-size-and-count-limitation%})
  * [Overwrite Existing Files]({%slug radupload-features-overwrite-existing-files%})

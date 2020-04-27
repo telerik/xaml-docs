@@ -85,6 +85,16 @@ SplashScreenDataContext provides the following settings:
 
 * __ProgressValue__: Allows you to set the current value of the progress bar.
 
+* __HorizontalContentAlignment__: Allows you to set the HorizontalAlignment of the ContentPresenter that shows the Content. Available since the __2020.1.316__ latest internal build version.
+
+* __HorizontalFooterAlignment__: Allows you to set the HorizontalAlignment of the ContentPresenter that shows the footer. Available since the __2020.1.316__ latest internal build version.
+
+* __ImageStretch__: Allows you to set the Stretch of the image. Available since the __2020.1.316__ latest internal build version.
+
+* __ImageWidth__: Allows you to set the Width of the image. Available since the __2020.1.316__ latest internal build version.
+
+* __ImageHeight__: Allows you to set the Height of the image. Available since the __2020.1.316__ latest internal build version.
+
 >tip Read more about the progress visualization in the [Progress Bar]({%slug radsplashscreen-features-progress-bar%}) article.
 
 #### __[C#] Example 4: Applying splash screen settings__
@@ -112,3 +122,4 @@ SplashScreenDataContext provides the following settings:
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})
 * [Progress Bar]({%slug radsplashscreen-features-progress-bar%})
+* [Latest Internal Build (LIB)]({%slug installation-installing-lib%})

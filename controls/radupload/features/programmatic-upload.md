@@ -28,7 +28,6 @@ You can achieve programmatic upload by using the different methods exposed by th
 >tip You can use the __Items.Count__ property to see if any files have been selected for upload, before starting it.
 
 ## See Also  
- * [Working with RadUpload]({%slug radupload-features-working-with-radupload%})
  * [Upload Handler]({%slug radupload-features-upload-handler%})
  * [Upload Service Parameters]({%slug radupload-features-upload-service-parameters%})
  * [Rename a File]({%slug radupload-how-to-rename-a-file%})

@@ -89,6 +89,7 @@ controls/radtabcontrol/howto/how-to-make-the-tab-headers-editable-wpf.md,
 controls/radtreeview/features/command-support.md,
 controls/radtreeview/how-to/wpf-windowsexplorer-like-treeview.md,
 controls/radtreeview/how-to/howto-bind-treeview-wpf.md,
+controls/radgridview/features/cross-thread-collection-changed-interval.md,
 controls/radgridview/features/merged-cells.md,
 controls/radgridview/how-to-override-default-styles.md,
 controls/radgridview/rows/selected-row-background.md,
@@ -138,7 +139,8 @@ controls/radsyntaxeditor,
 controls/radfilepathpicker,
 netcore/,
 controls/radtaskboard,
-controls/radnotifyicon,]
+controls/radnotifyicon,
+controls/radcallout]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

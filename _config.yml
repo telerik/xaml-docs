@@ -946,6 +946,10 @@ navigation:
         position: 9
     controls/radtaskboard:
         title: RadTaskBoard
+    controls/radcallout:
+        title: RadCallout
+    controls/radcallout/features/popupusage:
+        title: PopupUsage
 ## X1 Controls End
 
 ## Common Start   
@@ -3843,6 +3847,7 @@ intro_columns:
     items:
       "BusyIndicator": "radbusyindicator-overview"
       "Chat (Conversational UI)": "chat-overview"
+      "Callout": "radcallout-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

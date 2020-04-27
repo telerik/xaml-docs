@@ -111,8 +111,6 @@ To change the search mode that is used to match the results, set the __TextSearc
 
 {% if site.site_name == 'WPF' %}
 You can also utilize the __IsTextSearchCaseSensitive__ property of RadTreeView in order to determinne if the search is case sensitive. 
-
->tip __StartsWithCaseSensitive and ContainsCaseSensitive__ text search modes have higher priority than the IsTextSearchCaseSensitive property.
 {% endif %}
 
 #### __[XAML] Example 3: Setting up text search navigation__  

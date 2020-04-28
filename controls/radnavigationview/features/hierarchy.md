@@ -46,7 +46,7 @@ By default multiple RadNavigationViewItem elements with child items can be expan
 
 #### __[XAML] Example 2: Disabling multiple expanded items at once__
 {{region radnavigationview-features-hierarchy-1}}
-	<telerik:RadNavigationView AllowMultipleExpandedItems="True" />
+	<telerik:RadNavigationView AllowMultipleExpandedItems="False" />
 {{endregion}}
 
 ## Child Items Indentation

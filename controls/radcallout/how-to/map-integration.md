@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# IUse Callout with RadMap
+# Use Callout with RadMap
 
 This tutorial will walk you through the steps to integrate the RadCallout control inside the RadMap. In this example, we will show how to open a RadCallout with additional information regarding the clicked PushPin element on the map.
 

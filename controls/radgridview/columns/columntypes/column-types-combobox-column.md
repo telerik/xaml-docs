@@ -181,14 +181,14 @@ Start by defining the GridViewComboBoxColumn and its __ItemTemplate__:
 	                                DisplayMemberPath="Name"
 	                                SelectedValueMemberPath="ID"
 	                                ItemsSource="{Binding Path=Cities, Source={StaticResource MyViewModel}}"
-	                                Width="*"
+	                                Width="\*"
 	                                DataMemberBinding="{Binding CityID}" >
 	    <telerik:GridViewComboBoxColumn.ItemTemplate>
 	        <DataTemplate>
 	            <Grid>
 	                <Grid.ColumnDefinitions>
 	                    <ColumnDefinition />
-	                    <ColumnDefinition Width="*"/>
+	                    <ColumnDefinition Width="\*"/>
 	                </Grid.ColumnDefinitions>
 	                <TextBlock Text="{Binding ID}"/>
 	                <TextBlock Text="{Binding Name}" Grid.Column="1"/>

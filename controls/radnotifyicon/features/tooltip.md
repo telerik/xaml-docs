@@ -28,6 +28,8 @@ To display a normal tooltip, set the __TooltipText__ property as demonstrated in
 
 ![RadNotifyIcon with tooltip](images/radnotifyicon_tooltip.png)
 
+> In order for theming to be applied, you should use the __CustomTooltipContent__ property.
+
 ## CustomTooltipContent and CustomTooltipContentTemplate
 
 In order to customize the look of the tooltip, use the __CustomTooltipContent__ and __CustomTooltipContentTemplate__ properties. The DataContext inside the __CustomTooltipContentTemplate__ property will be whatever is set to the __CustomTooltipContent__. If any of these properties are set, the value of the __TooltipText__ property will be ignored. 
@@ -37,7 +39,6 @@ In order to customize the look of the tooltip, use the __CustomTooltipContent__ 
     
     <telerik:RadNotifyIcon
         x:Name="icon"
-        TooltipText="This value will be ignored"
         CustomTooltipContent="My styled tooltip">
         <telerik:RadNotifyIcon.CustomTooltipContentTemplate>
             <DataTemplate>

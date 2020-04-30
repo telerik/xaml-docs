@@ -9,9 +9,9 @@ published: True
 
 # Content Controls (Structured Document Tags)
 
-Structured Document Tags (sdt) enable users to add specific semantics to part of the document: restricting input, modifying editing behavior etc. 
+Structured Document Tags (SDT) enable users to add specific semantics to part of the document: restricting input, modifying editing behavior etc. 
 
->note Currently, RadRichTextBox only visualizes the value of the content controls and there is no UI that allow you to interact with them. The import and export operations will work with Office Open XML (docx) and XAML formats. When exporting to other formats the content controls will be lost, however their content (current value) will be exported.
+>note Currently, RadRichTextBox import and export content controls from and to Office Open XML (docx) and XAML formats. When exporting to other formats the content controls will be lost, however their content (current value) will be exported.
 
 ## Content Controls Inside the Document
 
@@ -41,7 +41,9 @@ The following content controls are not supported by __Microsoft Word__:
 * __Equation__
 
 ## Common Content Controls Properties
- 
+
+>note Some of the content controls` properties are marked as **(Non-exportable)** which means they live only in the RadRichTextBox model.
+
 The above content controls share the following properties: 
 
 * __Type:__ The type of the current content control. 
@@ -53,13 +55,16 @@ The above content controls share the following properties:
     - __ContentLocked:__ The content control cannot be edited, the entire content control can be deleted.
     - __SdtContentLocked:__ The content control cannot be edited or deleted. 
 * __Alias:__ Gets or sets the name for the associated content control (this is necessary because the properties are stored in a separate object).
+* __Tag:__ Gets or sets a tag for the associated SDT.
+* __IsTemporary:__ Gets or sets a value that indicates whether this SDT will be removed after editing its content.
 * __OutlineColor:__ Gets or sets the color that is used for visualizing the outline.
 * __OutlineAppearance:__ Represents the different options for visualizing the outline of a content control.The possible values are:
     - __BoundingBoxes:__ The content is wrapped in a bounding box that may also contain a specific editor.
     - __Tags:__ The content is wrapped in design view tag.
     - __None:__ The content does not have outline visualization.
-
-
+* __Placeholder:__ Gets or set the associated placeholder object.
+    - __ShowPlaceholder:__ This property enables/disables the Placeholder editing behavior.
+    - __PlaceholderText:__ **(Non-exportable)** This property holds the Placeholder text.
 
 ## Content Controls with Specific Properties
 
@@ -72,6 +77,9 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 The __ComboBox__ and __DropDownList__ provide the user with options to choose from. The only difference is that when using ComboBox you can add a value that is not in the data source.
 * __Items:__ This property allows you to specify the predefined items. 
 * __LastValue:__ This property returns the currently selected value. 
+* __SelectedItem:__ **(Non-exportable)** This property holds the selected item.
+    - __DisplayText:__ **(Non-exportable)** This property holds the displayed in the ComboBox/DropdownList text.
+    - __Value:__ **(Non-exportable)** This property holds the value, which can be propagated through a data-binding relation.
 
 ### Date
 
@@ -79,8 +87,17 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 * __DateFormat:__ Allows you to get/set the format string of the date. If it is omitted the default date format for the language is used.
 * __LanguageId:__ Allows you to get/set the CultureInfo object for the date format.
 * __DateTime:__ The current selected date, stored as string. 
-* __Calendar:__ Allows you to select the calendar type.     
+* __Calendar:__ Allows you to select the calendar type.
 
+### Text
+
+The __Text__ content control allows you to enter plain text. The text content control has the following property:
+* __IsMultiline:__ Gets or sets a value that indicates whether the SDT supports new lines in its content.
+
+### RepeatingSection
+
+* __SectionTitle:__ Gets or sets the title of the section.
+* __AllowInsertAndDeleteSections:__ Gets or sets a value that indicates whether the underlying sections can be modified.
 
 # See Also
 * [Working with Content Controls]({%slug radrichtextbox-features-working-with-content-controls%})

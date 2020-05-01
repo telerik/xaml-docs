@@ -96,7 +96,7 @@ In data binding scenarios or when there are many items, you can use the __ItemCo
 
 ## Flyout 
 
-When RadNavigationView is collapsed and its [DisplayMode]({%slug radnavigationview-display-mode%}) is Expanded or Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
+When RadNavigationView is collapsed and its current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
 #### Figure 5: Sub menu flyout visualization
 ![](images/radnavigationview-features-hierarchy-4.png)

@@ -82,6 +82,19 @@ position: 6
 .operatorColor-neutral-dark{
 	background: #A8A8A8;
 }
+/* StringColor */
+.stringColor-light{
+	background: #FFAC2C2C;
+}
+.stringColor-dark{
+	background: #FFBE5B5B;
+}
+.stringColor-neutral{
+	background: #FFAC2C2C;
+}
+.stringColor-neutral-dark{ 
+	background: #FFBE5B5B;
+}
 /* XmlAttributeColor */
 .xmlAttributeColor-light{
 	background: #FF3333;
@@ -160,7 +173,6 @@ position: 6
 .xmlTagColor-neutral-dark{
 	background: #14CCCB;
 }
-
 article table
 {
     table-layout: auto;
@@ -180,6 +192,7 @@ Here is a list of all the colors in the palettes and their default values for ea
 |**CommentColor**|<div class="palette-color commentColor-light" color:></div>|<div class="palette-color commentColor-dark" color:></div>|<div class="palette-color commentColor-neutral" color:></div>|<div class="palette-color commentColor-neutral-dark" color:></div>|
 |**IdentifierColor**|<div class="palette-color identifierColor-light" color:></div>|<div class="palette-color identifierColor-dark" color:></div>|<div class="palette-color identifierColor-neutral" color:></div>|<div class="palette-color identifierColor-neutral-dark" color:></div>|
 |**OperatorColor**|<div class="palette-color operatorColor-light" color:></div>|<div class="palette-color operatorColor-dark" color:></div>|<div class="palette-color operatorColor-neutral" color:></div>|<div class="palette-color operatorColor-neutral-dark" color:></div>|
+|**StringColor**|<div class="palette-color stringColor-light" color:></div>|<div class="palette-color stringColor-dark" color:></div>|<div class="palette-color stringColor-neutral" color:></div>|<div class="palette-color stringColor-neutral-dark" color:></div>|
 |**XmlAttributeColor**|<div class="palette-color xmlAttributeColor-light" color:></div>|<div class="palette-color xmlAttributeColor-dark" color:></div>|<div class="palette-color xmlAttributeColor-neutral" color:></div>|<div class="palette-color xmlAttributeColor-neutral-dark" color:></div>|
 |**XmlElementColor**|<div class="palette-color xmlElementColor-light" color:></div>|<div class="palette-color xmlElementColor-dark" color:></div>|<div class="palette-color xmlElementColor-neutral" color:></div>|<div class="palette-color xmlElementColor-neutral-dark" color:></div>|
 |**XmlCommentColor**|<div class="palette-color xmlCommentColor-light" color:></div>|<div class="palette-color xmlCommentColor-dark" color:></div>|<div class="palette-color xmlCommentColor-neutral" color:></div>|<div class="palette-color xmlCommentColor-neutral-dark" color:></div>|

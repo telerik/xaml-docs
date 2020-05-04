@@ -8,6 +8,7 @@ published: True
 ---
 
 # Content Controls UI
+The easiest way to create a content control is through the user interface. You can also create them programmatically following the [Working with Content Controls Programmatically](%slug radrichtextbox-features-working-with-content-controls%)) article. 
 
 ## User Interface
 You can specify which type of content control you wish to insert from the predefined UI of RadRichTextBox. You can select it from the Developer Tab which is part of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) by default:
@@ -31,7 +32,7 @@ The following commands related to the content controls functionality are availab
 
     In order to successfully execute the InsertStructuredDocumentTagCommand you have to pass the wanted content control type (**SdtType**) as a CommandParameter:
 
-    #### [XAML] Example 2: Binding the command
+    #### [XAML] Example 1: Binding the command
     {{region radrichtextbox-features-commands_0}}
 
         <telerik:RadRibbonButton 
@@ -45,7 +46,7 @@ The following commands related to the content controls functionality are availab
 
 * **ShowContentControlPropertiesDialogCommand**
 
-    #### [XAML] Example 1: Binding the command
+    #### [XAML] Example 2: Binding the command
 
     {{region radrichtextbox-features-commands_1}}
 

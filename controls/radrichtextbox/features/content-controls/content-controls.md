@@ -72,7 +72,7 @@ The above content controls share the following properties:
 
 The __CheckBox__ content control exposes two properties __CheckedState__ and __UnCheckedState__. Both properties are of type __SdtCheckBoxState__ which allows you to set the respective character and its font. The __Checked__ property specifies whether the checkbox is checked.
 
-#### Example 1: Setting CheckBox Properties
+#### Example 1: Setting CheckBox properties
 
 #### __C#__
 
@@ -96,12 +96,12 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 
 The __ComboBox__ and __DropDownList__ provide the user with options to choose from. The only difference is that when using ComboBox you can add a value that is not in the data source.
 * __Items:__ This property allows you to specify the predefined items. 
-* __LastValue:__ This property returns the currently selected value. 
-* __SelectedItem:__ **(Non-exportable)** This property holds the selected item.
+* __LastValue:__ This property returns the currently selected value as string. 
+* __SelectedItem:__ **(Non-exportable)** This property holds the selected item object that gives access to its DisplayText and Value properties.
     - __DisplayText:__ **(Non-exportable)** This property holds the displayed in the ComboBox/DropdownList text.
     - __Value:__ **(Non-exportable)** This property holds the value, which can be propagated through a data-binding relation.
 
-#### Example 2: Setting ComboBox Properties
+#### Example 2: Setting ComboBox properties
 
 #### __C#__
 
@@ -123,9 +123,9 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 * __Language:__ Allows you to get/set the CultureInfo object for the date format.
 * __FullDate:__ The current selected date, stored as string.
 * __Calendar:__ Allows you to select the calendar type.
-* __DateMappingType:__ Gets or sets the data type that is used for storing mapped date time value.
+* __DateMappingType:__ Gets or sets the data type (e.g. Date, DateTime, and Text) that is used for storing mapped date time value. 
 
-#### Example 3: Setting Date Properties
+#### Example 3: Setting Date properties
 
 #### __C#__
 
@@ -136,6 +136,7 @@ The __Date__ content control allows you to enter a date by using a calendar. The
     properties.Language = new CultureInfo("bg-BG");
     properties.FullDate = DateTime.Now;
     properties.Calendar = SdtCalendar.Gregorian;
+    properties.DateMappingType = DateMappingType.DateTime;
 {{endregion}}
 
 ### Text
@@ -143,7 +144,7 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 The __Text__ content control allows you to enter plain text. The text content control has the following property:
 * __IsMultiline:__ Gets or sets a value that indicates whether the SDT supports new lines in its content.
 
-#### Example 4: Setting Text Properties
+#### Example 4: Setting Text properties
 
 #### __C#__
 
@@ -158,7 +159,7 @@ The __Text__ content control allows you to enter plain text. The text content co
 * __SectionTitle:__ Gets or sets the title of the section.
 * __AllowInsertAndDeleteSections:__ Gets or sets a value that indicates whether the underlying sections can be modified.
 
-#### Example 5: Setting RepeatingSection Properties
+#### Example 5: Setting RepeatingSection properties
 
 #### __C#__
 

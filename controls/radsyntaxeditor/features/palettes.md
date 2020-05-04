@@ -84,16 +84,16 @@ position: 6
 }
 /* StringColor */
 .stringColor-light{
-	background: #FFAC2C2C;
+	background: #AC2C2C;
 }
 .stringColor-dark{
-	background: #FFBE5B5B;
+	background: #BE5B5B;
 }
 .stringColor-neutral{
-	background: #FFAC2C2C;
+	background: #AC2C2C;
 }
 .stringColor-neutral-dark{ 
-	background: #FFBE5B5B;
+	background: #BE5B5B;
 }
 /* XmlAttributeColor */
 .xmlAttributeColor-light{

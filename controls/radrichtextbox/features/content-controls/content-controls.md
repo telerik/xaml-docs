@@ -11,7 +11,7 @@ published: True
 
 Structured Document Tags (SDT) enable users to add specific semantics to part of the document: restricting input, modifying editing behavior etc. 
 
->note Currently, RadRichTextBox import and export content controls from and to Office Open XML (docx) and XAML formats. When exporting to other formats the content controls will be lost, however their content (current value) will be exported.
+>note Currently, RadRichTextBox can import and export content controls from and to Office Open XML (DOCX) and XAML formats. When exporting to other formats the content controls will be lost, however, their content (current value) will be exported.
 
 ## Content Controls Inside the Document
 
@@ -42,7 +42,7 @@ The following content controls are not supported by __Microsoft Word__:
 
 ## Common Content Controls Properties
 
->note Some of the content controls` properties are marked as **(Non-exportable)** which means they live only in the RadRichTextBox model.
+>note Some of the content controls` properties are marked as **(Non-exportable)** which means they are specific only for RadRichTextBox and are not serialized to any of the supported document formats. These properties are included because they are considered useful and could enhance the experience using the content controls in a RadRichTextBox environment.
 
 The above content controls share the following properties: 
 
@@ -72,6 +72,26 @@ The above content controls share the following properties:
 
 The __CheckBox__ content control exposes two properties __CheckedState__ and __UnCheckedState__. Both properties are of type __SdtCheckBoxState__ which allows you to set the respective character and its font. The __Checked__ property specifies whether the checkbox is checked.
 
+#### Example 1: Setting CheckBox Properties
+
+#### __C#__
+
+{{region radrichtextbox-features-content-controls_0}}
+
+    SdtCheckBoxState checkedBoxState = new SdtCheckBoxState();
+    checkedBoxState.Font = new FontFamily("Arial");
+    checkedBoxState.CharacterCode = 0040;
+
+    SdtCheckBoxState uncheckedBoxState = new SdtCheckBoxState();
+    uncheckedBoxState.Font = new FontFamily("Arial");
+    uncheckedBoxState.CharacterCode = 0024;
+
+    CheckBoxProperties properties = new CheckBoxProperties();
+    properties.CheckedState = checkedBoxState;
+    properties.UncheckedState = uncheckedBoxState;
+    properties.Checked = true;
+{{endregion}}
+
 ### ComboBox and DropDownList
 
 The __ComboBox__ and __DropDownList__ provide the user with options to choose from. The only difference is that when using ComboBox you can add a value that is not in the data source.
@@ -81,23 +101,76 @@ The __ComboBox__ and __DropDownList__ provide the user with options to choose fr
     - __DisplayText:__ **(Non-exportable)** This property holds the displayed in the ComboBox/DropdownList text.
     - __Value:__ **(Non-exportable)** This property holds the value, which can be propagated through a data-binding relation.
 
+#### Example 2: Setting ComboBox Properties
+
+#### __C#__
+
+{{region radrichtextbox-features-content-controls_1}}
+
+    List<ListItem> items = new List<ListItem>();
+    items.Add(new ListItem() { DisplayText = "Choice 1", Value = "a" });
+    items.Add(new ListItem() { DisplayText = "Choice 2", Value = "b" });
+
+    ComboBoxProperties properties = new ComboBoxProperties();
+    properties.Items = items;
+    properties.SelectedItem = items.Where(li => li.Value == "a").FirstOrDefault();
+{{endregion}}
+
 ### Date
 
 The __Date__ content control allows you to enter a date by using a calendar. The date content control has the following properties:
 * __DateFormat:__ Allows you to get/set the format string of the date. If it is omitted the default date format for the language is used.
-* __LanguageId:__ Allows you to get/set the CultureInfo object for the date format.
-* __DateTime:__ The current selected date, stored as string. 
+* __Language:__ Allows you to get/set the CultureInfo object for the date format.
+* __FullDate:__ The current selected date, stored as string.
 * __Calendar:__ Allows you to select the calendar type.
+* __DateMappingType:__ Gets or sets the data type that is used for storing mapped date time value.
+
+#### Example 3: Setting Date Properties
+
+#### __C#__
+
+{{region radrichtextbox-features-content-controls_2}}
+
+    DateProperties properties = new DateProperties();
+    properties.DateFormat = "MM/dd/yyyy H:mm";
+    properties.Language = new CultureInfo("bg-BG");
+    properties.FullDate = DateTime.Now;
+    properties.Calendar = SdtCalendar.Gregorian;
+{{endregion}}
 
 ### Text
 
 The __Text__ content control allows you to enter plain text. The text content control has the following property:
 * __IsMultiline:__ Gets or sets a value that indicates whether the SDT supports new lines in its content.
 
+#### Example 4: Setting Text Properties
+
+#### __C#__
+
+{{region radrichtextbox-features-content-controls_3}}
+
+    TextProperties properties = new TextProperties();
+    properties.IsMultiline = true;
+{{endregion}}
+
 ### RepeatingSection
 
 * __SectionTitle:__ Gets or sets the title of the section.
 * __AllowInsertAndDeleteSections:__ Gets or sets a value that indicates whether the underlying sections can be modified.
 
+#### Example 5: Setting RepeatingSection Properties
+
+#### __C#__
+
+{{region radrichtextbox-features-content-controls_4}}
+
+    RepeatingSectionProperties properties = new RepeatingSectionProperties();
+    properties.SectionTitle = "Title";
+    properties.AllowInsertAndDeleteSections = true;
+{{endregion}}
+
 # See Also
+* [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
 * [Working with Content Controls]({%slug radrichtextbox-features-working-with-content-controls%})
+* [Working with Content Controls UI]({%slug radrichtextbox-features-working-with-content-controls-ui%})
+

@@ -7,11 +7,11 @@ tags: content controls, richtextbox
 published: True
 ---
 
-# Working with Content Controls
+# Working with Content Controls Programmatically
 
-This article shows some examples of how you can insert content controls or access existing and modify their properties from the code. In general, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available here: [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
+This article shows some examples of how you can insert content controls or access existing and modify their properties from the code. In RadRichTextBox, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available in the [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) topic.
 
-## Manipulate existing Content Controls
+## Manipulate Existing Content Controls
 
 ### Get the Content Controls 
 
@@ -21,7 +21,8 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_0}}
+{{region radrichtextbox-features-working-with-content-controls_0}}
+
     IEnumerable<SdtRangeStart> content_controls = this.radRichTextBox.Document.GetAnnotationMarkersOfType<SdtRangeStart>();
     foreach (SdtRangeStart item in content_controls)
     {
@@ -37,7 +38,8 @@ This example show how one can iterate the items and add an item to to a existing
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_1}}
+{{region radrichtextbox-features-working-with-content-controls_1}}
+
     foreach (SdtRangeStart item in content_controls)
     {
         if (item.SdtProperties.Type == SdtType.ComboBox)
@@ -52,15 +54,16 @@ This example show how one can iterate the items and add an item to to a existing
     }
 {{endregion}}
 
-## Insert new Content Controls
+## Insert New Content Controls
 
-New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument}) and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor}):
+New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor}):
 
 #### Example 3: Inserting a content control
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_2}}
+{{region radrichtextbox-features-working-with-content-controls_2}}
+
     this.radRichTextBox.InsertStructuredDocumentTag();
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
@@ -71,7 +74,8 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_3}}
+{{region radrichtextbox-features-working-with-content-controls_3}}
+
     this.radRichTextBox.InsertStructuredDocumentTag(SdtType.CheckBox);
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
@@ -82,7 +86,8 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_3}}
+{{region radrichtextbox-features-working-with-content-controls_4}}
+
     SdtProperties sdtProperties = new SdtProperties(SdtType.RichText)
     {
         Alias = "AliasName",
@@ -96,4 +101,5 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 # See Also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})
-* [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
+* [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%})
+* [Working with Content Controls UI]({%slug radrichtextbox-features-working-with-content-controls-ui%})

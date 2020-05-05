@@ -42,8 +42,6 @@ The following content controls are not supported by __Microsoft Word__:
 
 ## Common Content Controls Properties
 
->note Some of the content controls` properties are marked as **(Non-exportable)** which means they are specific only for RadRichTextBox and are not serialized to any of the supported document formats. These properties are included because they are considered useful and could enhance the experience using the content controls in a RadRichTextBox environment.
-
 The above content controls share the following properties: 
 
 * __Type:__ The type of the current content control. 
@@ -64,7 +62,7 @@ The above content controls share the following properties:
     - __None:__ The content does not have outline visualization.
 * __Placeholder:__ Gets or set the associated placeholder object.
     - __ShowPlaceholder:__ This property enables/disables the Placeholder editing behavior.
-    - __PlaceholderText:__ **(Non-exportable)** This property holds the Placeholder text.
+    - __PlaceholderText:__ This property holds the Placeholder text.
 
 ## Content Controls with Specific Properties
 
@@ -97,9 +95,9 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 The __ComboBox__ and __DropDownList__ provide the user with options to choose from. The only difference is that when using ComboBox you can add a value that is not in the data source.
 * __Items:__ This property allows you to specify the predefined items. 
 * __LastValue:__ This property returns the currently selected value as string. 
-* __SelectedItem:__ **(Non-exportable)** This property holds the selected item object that gives access to its DisplayText and Value properties.
-    - __DisplayText:__ **(Non-exportable)** This property holds the displayed in the ComboBox/DropdownList text.
-    - __Value:__ **(Non-exportable)** This property holds the value, which can be propagated through a data-binding relation.
+* __SelectedItem:__ This property holds the currently selected item object.
+    - __DisplayText:__ This property holds the displayed in the ComboBox/DropdownList text.
+    - __Value:__ This property holds the value, which can be propagated through a data-binding relation.
 
 #### Example 2: Setting ComboBox properties
 

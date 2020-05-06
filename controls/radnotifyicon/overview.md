@@ -15,6 +15,8 @@ Thank you for choosing __RadNotifyIcon__!
 
 __RadNotifyIcon__ is a control that can be used to display an icon in the Windows taskbar notification area. The icon can then respond to user interaction as well as display tooltips, popups and balloon notifications.
 
+![RadNotifyIcon in the Fluent theme](images/notifyicon_overview.png)
+
 ## Key Features
 
 * __Popup__: Display a popup upon user interaction with the icon or by manually calling the exposed methods. Learn more in the [Popup]({%slug radnotifyicon-popup%}) article. 

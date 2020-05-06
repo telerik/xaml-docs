@@ -9,7 +9,7 @@ position: 0
 
 # Hierarchy
 
-RadNavigationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
+RadNavigationView allows you to define sub-items in order to achieve hierarchical menu visualizаtion.
 
 Each RadNavigationViewItem element has an Items collection that can be populated with RadNavigationViewItem elements, thus allowing multiple levels of items to be defined in the hierarchy.
 
@@ -42,7 +42,7 @@ To control the current expand state of a RadNavigationViewItem, set its __IsExpa
 
 ## Multiple Expanded Items
 
-By default multiple RadNavigationViewItem elements with child items can be expanded at once. To change this and allow only a single expanded item, set the __AllowMultipleExpandedItems__ property of RadNavigationView to False. 
+By default, multiple RadNavigationViewItem elements with child items can be expanded at once. To change this and allow only a single expanded item, set the __AllowMultipleExpandedItems__ property of RadNavigationView to False. 
 
 #### __[XAML] Example 2: Disabling multiple expanded items at once__
 {{region radnavigationview-features-hierarchy-1}}
@@ -63,7 +63,7 @@ To change the default horizontal offset (indent) of the child items relative to 
 
 ## Expand and Collapse Icon
 
-RadNavigationViewItem has default expand and collapse icons shown in the right part of the item, when it has children. To replace the icons, set the __ExpandedIcon__ and __CollapsedIcon__ properties of RadNavigationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+RadNavigationViewItem has default expand and collapse icons shown in the right part of the item when it has children. To replace the icons, set the __ExpandedIcon__ and __CollapsedIcon__ properties of RadNavigationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
 #### __[XAML] Example 4: Setting the expand and collapse icons__
 {{region radnavigationview-features-hierarchy-3}}
@@ -96,7 +96,7 @@ In data binding scenarios or when there are many items, you can use the __ItemCo
 
 ## Flyout 
 
-When RadNavigationView is collapsed and its current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
+When RadNavigationView is collapsed and it's current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
 #### Figure 5: Sub menu flyout visualization
 ![](images/radnavigationview-features-hierarchy-4.png)
@@ -124,7 +124,7 @@ Additionally, the RadNavigationViewItem exposes __Expanded__ and __Collapsed__ e
 
 ## Data Binding
 
-RadNavigationViewItem exposes ItemsSource and few other data related properties that allows setting up the hiearchy in a data binding scenario. Read more about this in the [Hierarchical Data Binding]({%slug radnavigationview-populating-with-data-hierarchical-databinding%}) article.
+RadNavigationViewItem exposes ItemsSource and few other data related properties that allow setting up the hierarchy in a data binding scenario. Read more about this in the [Hierarchical Data Binding]({%slug radnavigationview-populating-with-data-hierarchical-databinding%}) article.
 
 ## See Also  
 * [Getting Started]({%slug radnavigationview-getting-started%})

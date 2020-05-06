@@ -56,7 +56,7 @@ This example show how one can iterate the items and add an item to to a existing
 
 ## Insert New Content Controls
 
-New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor}):
+New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}):
 
 #### Example 3: Inserting a content control
 

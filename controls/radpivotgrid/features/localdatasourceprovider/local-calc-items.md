@@ -12,6 +12,8 @@ position: 9
 
 A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. In this case, the calculated item’s formula references one or more items in the same field. By using Calculated Items you are able to extend __RadPivotGrid__ with additional items that are not part of the data source.      
 
+> You can check out the [LocalDataSourceCalculatedItems](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CalculatedItems/LocalDataSourceCalculatedItems) SDK example for a runnable project demonstrating this feature.
+
 ## Defining Calculated Item
 
 With __RadPivotGrid__ you are able to create different Groups that will be shown in Rows and Columns. But in some cases you may need to show additional items for specific group. In this case you may use Calculated Items. Calculated Items are added to a group description and they have access to different items from the same group. For example, lets say we want to calculate the average sales made by some of the salespeople, but not all of them. First we have to create a concrete class that implements the abstract *CalculatedItem* class. For this purpose the new class must implement GetValue method. In our scenario we'll show the average sales of four of the salespeople:        

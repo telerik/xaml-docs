@@ -36,24 +36,24 @@ You can either set the __TrayIconSource__ property which accepts an __ImageSourc
 
 ## Showing and Hiding the Icon
 
-By default the icon will be displayed in the tray area once the application is started. If you want to manually show the icon, you can initially set its __Visibility__ to __Collapsed__. __Example 3__ shows two options for showing and hiding the icon in code.
+By default the icon will be displayed in the tray area once the application is started. If you want to manually show the icon, you can initially set its __ShowTrayIcon__ to __False__. __Example 3__ shows two options for showing and hiding the icon in code.
 
 #### __[XAML] Example 2: Hiding the icon by default__
 {{region xaml-radnotifyicon-getting-started-1}}
 
-    <telerik:RadNotifyIcon x:Name="icon" Visibility="Collapsed" />
+    <telerik:RadNotifyIcon x:Name="icon" ShowTrayIcon="False" />
 {{endregion}}
 
 #### __[C#] Example 3: Show/Hide the icon in code__
 {{region cs-radnotifyicon-getting-started-2}}
 
     // Options for showing the icon
-    this.icon.Visibility = Visibility.Visible;
+    this.icon.ShowTrayIcon = true;
     this.icon.AddIcon();
 
 
     // Options for hiding the icon
-    this.icon.Visibility = Visibility.Collapsed;
+    this.icon.ShowTrayIcon = false;
     this.icon.RemoveIcon();
 {{endregion}}
 
@@ -61,12 +61,12 @@ By default the icon will be displayed in the tray area once the application is s
 {{region vb-radnotifyicon-getting-started-3}}
 
     ' Options for showing the icon
-    Me.icon.Visibility = Visibility.Visible
+    Me.icon.ShowTrayIcon = True
     Me.icon.AddIcon()
 
 
     ' Options for hiding the icon
-    Me.icon.Visibility = Visibility.Collapsed
+    Me.icon.ShowTrayIcon = False
     Me.icon.RemoveIcon()
 {{endregion}}
 

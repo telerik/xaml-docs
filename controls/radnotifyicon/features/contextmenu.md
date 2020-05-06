@@ -45,38 +45,6 @@ The __ContextMenuActivationMouseEvent__ property determines when the context men
     <telerik:RadNotifyIcon ContextMenuActivationMouseEvent="RightDoubleClick" />
 {{endregion}}
 
-## Programmatically Showing the ContextMenu
-
-The RadNotifyIcon allows for programmatically showing the context menu through the __ShowContextMenu__ method. It expects a __Point__ object specifying a screen location, where the context menu will be shown. 
-
-#### __[C#] Example 3: Using the ShowContextMenu method__
-{{region cs-radnotifyicon-popup-2}}
-
-    this.icon.ShowContextMenu(new System.Windows.Point(1700, 1000));
-{{endregion}}
-
-#### __[VB.NET] Example 3: Using the ShowContextMenu method__
-{{region vb-radnotifyicon-popup-3}}
-
-    Me.icon.ShowContextMenu(New System.Windows.Point(1700, 1000))
-{{endregion}}
-
-## Programmatically Hiding the ContextMenu
-
-You can manually hide the context menu through the __HideContextMenu__ method:
-
-#### __[C#] Example 5: Hide the ContextMenu__
-{{region cs-radnotifyicon-balloon-notifications-7}}
-    
-    this.icon.HideContextMenu();
-{{endregion}}
-
-#### __[VB.NET] Example 5: Hide the ContextMenu__
-{{region vb-radnotifyicon-balloon-notifications-8}}
-    
-    Me.icon.HideContextMenu()
-{{endregion}}
-
 ## See Also 
 
 * [Events]({%slug radnotifyicon-events%})

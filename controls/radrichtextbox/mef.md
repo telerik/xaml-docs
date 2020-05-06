@@ -125,7 +125,14 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(TabStopsPropertiesDialog), 
     typeof(UnprotectDocumentDialog), 
     typeof(WatermarkSettingsDialog),
-    typeof(PasteOptionsPopup)
+    typeof(PasteOptionsPopup),
+    typeof(CheckBoxPropertiesDialog),
+    typeof(DatePickerPropertiesDialog),
+    typeof(DropDownListPropertiesDialog),
+    typeof(PlainTextPropertiesDialog),
+    typeof(RichTextPropertiesDialog),
+    typeof(RepeatingSectionPropertiesDialog),
+    typeof(PicturePropertiesDialog)
 {{endregion}}
 
 You could remove all the types you won’t need in your application.

@@ -1,19 +1,19 @@
 ---
-title: DataBinding
-page_title: DataBinding
+title: Data Binding
+page_title: Data Binding
 description: This article demonstrates how the RadNavigationView can be bound to a collection of custom objects.
 slug: radnavigationview-populating-with-data-databinding
 tags: databinding, populating, data
 position: 0
 ---
 
-# DataBinding
+# Data Binding
 
 __RadNavigationView__ can be bound to a collection of objects through its ItemsSource property. This article will demonstrate how to data bind a collection of custom objects to RadNavigationView.
 
 >Note that for every business object from the data bound collection, RadNavigationView will generate a RadNavigationViewItem container representing this object.
 
-## Creating the model and viewmodel
+## Creating the Model and View Model
 
 For the purposes of this article, we will create a simple object and a view model which will hold a collection of our models. The IconGlyph property of the NavigationItemModel holds the string which will be set to the Icon property of the RadNavigationViewItem. For more information about it, check out the [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%}#radnavigationviewitem-icontemplate) article in our documentation.
 
@@ -123,6 +123,5 @@ After we have created the viewmodel, the next step is to create an instance and 
 >For another, more complicated, databinding example, check out the __First Look__ RadNavigationView example from the [WPF Controls Samples application](https://demos.telerik.com/wpf/).
 
 ## See Also 
-
 * [Getting Started]({%slug radnavigationview-getting-started%})
 * [Display Mode]({%slug radnavigationview-display-mode%})

@@ -17,31 +17,26 @@ The SelectedItem property is used for getting or setting the currently selected 
 
 * When the __RadNavigationView__ is populated with static data (declared in XAML), the SelectedItem property is of type RadNavigationViewItem.
 
-#### __[C#] Example 1: Getting the SelectedItem of type RadNavigationViewItem__
+	#### __[C#] Example 1: Getting the SelectedItem of type RadNavigationViewItem__  
+	{{region cs-radnavigationview-features-selection-0}}
+		var selectedItem = this.navigationView.SelectedItem as RadNavigationViewItem;
+	{{endregion}}
 
-{{region cs-radnavigationview-features-selection-0}}
-	var selectedItem = this.navigationView.SelectedItem as RadNavigationViewItem;
-{{endregion}}
+	#### __[VB.NET] Example 1: Getting the SelectedItem of type RadNavigationViewItem__  
+	{{region vb-radnavigationview-features-selection-1}}
+		Dim selectedItem = TryCast(Me.navigationView.SelectedItem, RadNavigationViewItem)
+	{{endregion}}
 
-#### __[VB.NET] Example 1: Getting the SelectedItem of type RadNavigationViewItem__
+* When your __RadNavigationView__ is [data bound to a collection of custom objects]({%slug radnavigationview-populating-with-data-databinding%}), the SelectedItem is of the type of the custom object.     	
+	#### __[C#] Example 2: Getting the SelectedItem of type custom object__  
+	{{region cs-radnavigationview-features-selection-2}}
+		var navigationModel = this.navigationView.SelectedItem as NavigationItemModel;
+	{{endregion}}
 
-{{region vb-radnavigationview-features-selection-1}}
-	Dim selectedItem = TryCast(Me.navigationView.SelectedItem, RadNavigationViewItem)
-{{endregion}}
-
-* When your __RadNavigationView__ is [data bound to a collection of custom objects]({%slug radnavigationview-populating-with-data-databinding%}), the SelectedItem is of the type of the custom object.     			
-
-#### __[C#] Example 2: Getting the SelectedItem of type custom object__
-
-{{region cs-radnavigationview-features-selection-2}}
-	var navigationModel = this.navigationView.SelectedItem as NavigationItemModel;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Getting the SelectedItem of type custom object__
-
-{{region vb-radnavigationview-features-selection-3}}
-	Dim navigationModel = TryCast(Me.navigationView.SelectedItem, NavigationItemModel)
-{{endregion}}
+	#### __[VB.NET] Example 2: Getting the SelectedItem of type custom object__  
+	{{region vb-radnavigationview-features-selection-3}}
+		Dim navigationModel = TryCast(Me.navigationView.SelectedItem, NavigationItemModel)
+	{{endregion}}
 
 ## Using SelectedValue and SelectedValuePath
 
@@ -126,6 +121,8 @@ Let's assume that you have a business object named NavigationItemModel with one 
 
 When you select a NavigationItemModel from the navigation view, the SelectedItem property returns the NavigationItemModel object. However, because the __SelectedValuePath__  is set to Title, the __SelectedValue__ property of the RadNavigationView is set to the Title property of the NavigationItemModel business object.   
 
+SelectedValue is supported for the root level items only.
+
 ## Using the SelectedIndex
 
 Using the __SelectedIndex__ property you can get or set the index of the selected item. For example, by using the __SelectedIndex__ property, you could specify which the default selected item is. 
@@ -135,6 +132,8 @@ Using the __SelectedIndex__ property you can get or set the index of the selecte
 {{region xaml-radnavigationview-features-selection-7}}
 	<telerik:RadNavigationView SelectedIndex="3" />
 {{endregion}}
+
+SelectedIndex is supported for the root level items only. Selecting a child item from the [hierarchy]({%slug radnavigationview-features-hierarchy%}) will set the property to -1.
 
 ## RadNavigationViewItem Selection Properties
 

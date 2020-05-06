@@ -129,6 +129,8 @@ navigation:
     controls/radnavigationview/populating-with-data:
         title: Populating With Data
         position: 5
+    controls/radnotifyicon:
+        title: RadNotifyIcon
     controls/radnumericupdown:
         title: RadNumericUpDown
     controls/radradialmenu:
@@ -947,6 +949,10 @@ navigation:
         position: 9
     controls/radtaskboard:
         title: RadTaskBoard
+    controls/radcallout:
+        title: RadCallout
+    controls/radcallout/features/popupusage:
+        title: PopupUsage
 ## X1 Controls End
 
 ## Common Start   
@@ -3829,6 +3835,7 @@ intro_columns:
       "ContextMenu": "contextmenu-overview1"
       "Menu": "radmenu-overview"
       "NavigationView (HamburgerMenu)": "radnavigationview-overview"
+      "NotifyIcon": "radnotifyicon-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"
@@ -3843,6 +3850,7 @@ intro_columns:
     items:
       "BusyIndicator": "radbusyindicator-overview"
       "Chat (Conversational UI)": "chat-overview"
+      "Callout": "radcallout-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

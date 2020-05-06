@@ -199,6 +199,15 @@ With the **2019.2.715** [latest internal build]({%slug installation-installing-l
 #### __Figure 3: Result from Example 5 in the Office2016 theme__
 ![RadNavigationViewItems with Icons set through an IconTemplateSelector](images/NavigationViewItem_IconTemplateSelector.png)
 
+## Icon Visibility
+
+To show or hide the icon of RadNaviationViewItem, set its __IconVisibility__ property.
+
+#### __[XAML] Example 6: Hiding the icon__
+{{region xaml-radnavigationview-item-icon-6}}
+    <telerik:RadNavigationViewItem IconVisibility="Collapsed" />
+{{endregion}}
+
 ## See Also
 
 * [DataBinding]({%slug radnavigationview-populating-with-data-databinding%})

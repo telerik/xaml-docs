@@ -67,7 +67,7 @@ The following model is defining a string property to serve as the content of the
 
 To assign the data collection to the RadNavigationView control, set its __ItemsSource__ property.
 
-To data bind, the content of the RadNavigationViewItem elements set the __DisplayMemberPath__ property of RadNavigationView. Alternatively, you can use the __ItemContainerStyle__ and set the __Content__ property of the RadNavigationViewItems.
+To data bind the content of the RadNavigationViewItem elements set the __DisplayMemberPath__ property of RadNavigationView. Alternatively, you can use the __ItemContainerStyle__ and set the __Content__ property of the RadNavigationViewItems.
 
 To customize the appearance of the RadNavigationViewItems and also allow sub-items to be shown, use the __ItemContainerStyle__ property of RadNavigationView. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
 
@@ -112,7 +112,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 #### Figure 1: RadNavigationView with sub items
 ![](images/radnavigationview-populating-with-data-hierarchical-databinding-0.png)
 
-Note that for every business object from the data-bound collection, RadNavigationView will generate a RadNavigationViewItem container representing this object.
+Note that for every business object from the data bound collection, RadNavigationView will generate a RadNavigationViewItem container representing this object.
 
 ## See Also 
 * [Getting Started]({%slug radnavigationview-getting-started%})

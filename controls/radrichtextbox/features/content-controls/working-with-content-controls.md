@@ -93,7 +93,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
         Alias = "AliasName",
         Lock = Lock.SdtContentLocked,
     };
-    this.radRichTextBox..InsertStructuredDocumentTag(sdtProperties);
+    this.radRichTextBox.InsertStructuredDocumentTag(sdtProperties);
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertStructuredDocumentTag(sdtProperties);

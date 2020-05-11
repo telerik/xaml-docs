@@ -56,8 +56,6 @@ The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after
     <telerik:RadNotifyIcon PopupShowDuration="10000" />
 {{endregion}}
 
-> To prevent the popup from automatically closing, you can set the __CanAutoClosePopup__ property to __False__.
-
 ## Popup animations
 
 You can control the opening and closing animation with the __PopupShowAnimation__ and __PopupHideAnimation__ properties respectively. They expect an animation of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) and by default [FadeAnimations](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.fadeanimation) are used.
@@ -122,25 +120,21 @@ You can manually hide the popup with the __HidePopup__ method as shown in __Exam
     Me.icon.HidePopup()
 {{endregion}}
 
-## IsPopupOpen and IsMouseOverPopup
+## IsPopupOpen
 
-The __IsPopupOpen__ and __IsMouseOverPopup__ properties allows you to check whether a popup is currently open and whether the mouse is over it respectively.
+The __IsPopupOpen__ property allows you to check whether a popup is currently open.
 
-#### __[C#] Example 7: Using IsPopupOpen and IsMouseOverPopup__
+#### __[C#] Example 7: Using IsPopupOpen__
 {{region cs-radnotifyicon-popup-8}}
 
     var isOpen = this.icon.IsPopupOpen;
-    var isMouseOverPopup = this.icon.IsMouseOverPopup;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Using IsPopupOpen and IsMouseOverPopup__
+#### __[VB.NET] Example 7: Using IsPopupOpen__
 {{region vb-radnotifyicon-popup-9}}
 
     Dim isOpen = Me.icon.IsPopupOpen
-    Dim isMouseOverPopup = Me.icon.IsMouseOverPopup
 {{endregion}}
-
-
 
 ## See Also 
 

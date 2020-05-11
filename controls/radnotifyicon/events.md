@@ -11,27 +11,6 @@ position: 3
 
 Here are the events exposed by the RadNotifyIcon control:
 
-## Tooltip
-
-* __PreviewTooltipOpened__: Occurs when a [styled tooltip]({%slug radnotifyicon-tooltip%}#tooltipcontent-and-tooltipcontenttemplate) is about to be opened. The event handler receives two arguments:
-
-	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type.              
-
-	* A __NotifyIconPopupOpeningEventArgs__ object. It exposes the following properties:
-
-		* __Cancel__: Allows for preventing the opening of the tooltip.
-		* __TaskbarEdge__: Gets the edge of the screen on which the taskbar is placed.
-		* __NotifyIconBounds__: Gets the bounding rectangle of the icon in the notification area.
-		* __Size__: Gets the size of the popup.
-		* __Location__: Gets or sets the __absolute__ location where the popup will be opened. 
-		* __PopupWindow__: Gets the window thат will be used to show the content of the popup.   
-		* __AnchorPoint__: Gets the location of the mouse at the moment of interaction. If the mouse was not involved the value is null.
-
-* __TooltipOpened__: Occurs when a [styled tooltip]({%slug radnotifyicon-tooltip%}#tooltipcontent-and-tooltipcontenttemplate) is opened. The event handler receives two arguments:
-
-	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type. 
-	* An __EventArgs__ object.
-
 ## Popup
 
 * __PopupOpening__: Occurs when a [popup]({%slug radnotifyicon-popup%}) is about to be opened. The event handler receives two arguments:

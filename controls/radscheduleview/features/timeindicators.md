@@ -18,7 +18,7 @@ The TimeIndicator class allows you to set __Offset__ and __Location__.
 
 * __Offset__ is a `TimeSpan` property which determines an offset relative to the current DateTime (DateTime.Now).
 * __Location__ is a `CurrentTimeIndicatorLocation` property which determines the location of the indicator. This can be set to the following locations:
-	* __TimeRulerAre__: The indicator is drawn only in the TimeRulerArea. 
+	* __TimeRulerArea__: The indicator is drawn only in the TimeRulerArea. 
 	* __AppointmentsArea__: The indicator is drawn only in the AppointmentsArea.
 	* __WholeArea__: The indicator is drawn in both areas - TimeRulerArea and AppointmentsArea.
 	
@@ -54,11 +54,11 @@ The __TimeIndicatorStyleSelector__ property of RadScheduleView is used to provid
 
 The default __TimeIndicatorStyleSelector__ class can be used to customize the time indicators in the different locations (TimeRulerArea, AppointmentsArea and WholeArea).
 
-Additionally, a class that derives from StyleSelector can created in order to provide custom style selection logic.
+Additionally, a class that derives from StyleSelector can be created in order to provide custom style selection logic.
 
 ## CurrentTimeIndicator
 
-This a special time indicator that is not in the TimeIndicatorsCollection, but it display in the same way, with the sole difference that it shows on the current DateTime (DateTime.Now). The offset of the TimeIndicator items is relative to the position of the current time indicator. Read more in the [CurrentTimeIndicator]({%slug radscheduleview-features-currenttimeindicator%}) article. 
+This a special time indicator that is not in the TimeIndicatorsCollection, but it is displayed in the same way, with the sole difference that it shows on the current DateTime (DateTime.Now). The offset of the TimeIndicator items is relative to the position of the current time indicator. Read more in the [CurrentTimeIndicator]({%slug radscheduleview-features-currenttimeindicator%}) article. 
 
 ## Custom TimeIndicator
 

@@ -1,14 +1,14 @@
 ---
-title: TimeIndicator
-page_title: TimeIndicator
+title: TimeIndicators
+page_title: TimeIndicators
 description: Telerik RadScheduleView for WPF provides the option to visually mark a specific time on the timeline, using TimeIndicator objects.
-slug: radscheduleview-features-timeindicator
+slug: radscheduleview-features-timeindicators
 tags: currenttimeindicator,timeindicator
 published: True
 position: 21
 ---
 
-# TimeIndicator
+# TimeIndicators
 
 __RadScheduleView__ provides the option to visually mark a specific time on the timeline.
 

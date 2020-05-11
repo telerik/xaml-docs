@@ -41,6 +41,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 	* [.NET 4.5.2](http://www.microsoft.com/en-us/download/details.aspx?id=42642)
 	* [.NET 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=48130)
 	* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Supported since R1 2020. Versions between R1 and R3 2019 support .NET Core 3.0.
+	* [.NET 5.0 Preview](https://dotnet.microsoft.com/download/dotnet-core/5.0). Supported since R2 2020.
           
 * __Microsoft Expression Blend__ (optional)
           

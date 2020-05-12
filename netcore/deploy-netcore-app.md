@@ -5,7 +5,7 @@ description: This article shows how to deploy Telerik WPF .NET Core Application 
 slug: netcore-support-deploy-using-visual-studio
 tags: get,started,first,steps,net,core,deploy
 published: True
-position: 2
+position: 3
 ---
 
 # Deploying WPF .NET Core Application

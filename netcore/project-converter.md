@@ -5,7 +5,7 @@ description: Telerik UI for WPF allows you to create .NET Core projects.
 slug: netcore-project-converter
 tags: netcore,standard,converter,migration,migrate
 published: True
-position: 0
+position: 2
 ---
 
 # .NET Core Project Converter

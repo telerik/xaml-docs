@@ -29,6 +29,20 @@ You can set RadGridView's **ColumnWidth** property which will affect all columns
                              ColumnWidth="*">	
 {{endregion}}
 
+#### **[C#] Example 2: Setting RadGridView's ColumnWidth in code**
+
+{{region cs-gridview-setting-columns-width_1}}
+
+	this.clubsGrid.ColumnWidth = new Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star);
+{{endregion}}
+
+#### **[VB.NET] Example 2: Setting RadGridView's ColumnWidth in code**
+
+{{region vb-gridview-setting-columns-width_2}}
+
+	Me.clubsGrid.ColumnWidth = New Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star)
+{{endregion}}
+
 There are several values that you can assign to the property:
 
 * **SizeToCells**: The width is set according to the longest text from the cells.
@@ -46,12 +60,26 @@ There are several values that you can assign to the property:
 
 Apart from setting the width for all the columns within the **RadGridView**, you can set the width for each individual column through its **Width** property. 
 
-#### **[XAML] Example 2: Setting the width of a specific column**
+#### **[XAML] Example 3: Setting the width of a specific column**
 
-{{region xaml-gridview-setting-columns-width_1}}
+{{region xaml-gridview-setting-columns-width_3}}
 
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                     Width="Auto" />	
+{{endregion}}
+
+#### **[C#] Example 4: Setting the width of a specific column in code**
+
+{{region cs-gridview-setting-columns-width_4}}
+
+	this.clubsGrid.Columns[0].Width = Telerik.Windows.Controls.GridViewLength.Auto;	
+{{endregion}}
+
+#### **[VB.NET] Example 4: Setting the width of a specific column in code**
+
+{{region vb-gridview-setting-columns-width_5}}
+
+	Me.clubsGrid.Columns(0).Width = Telerik.Windows.Controls.GridViewLength.Auto	
 {{endregion}}
 
 The values that could be assigned to the property are enumerated below:
@@ -65,7 +93,6 @@ The values that could be assigned to the property are enumerated below:
 * __* (Star)__: The column would take as much space as there is available.
 
 * **Fixed Width**: You can set a fixed width for each column.
-
 
 
 ## See Also

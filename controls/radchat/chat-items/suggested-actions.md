@@ -10,24 +10,36 @@ position: 2
 
 # Suggested Actions
 
-* [Adding SuggestedAction](#adding-suggested-action)
-* [Handling the SuggestedActionReported event](#handling-the-suggestedactionreported)
+__Conversational UI__ supports adding suggestions to the user. This can be done by adding __SuggestedAction__ items to the __SuggestedActions__ collection of __RadChat__.
 
 ## Adding the SuggestedAction
 
-__Conversational UI__ supports adding suggestions to the user. This can be done by adding __SuggestedAction__ items to the __SuggestedActions__ collection of __RadChat__.
+__Example 1__ demonstrates how to add a TextMessage and populate the __SuggestedActions__ collection of the RadChat. 
 
 #### __[C#] Example 1: Adding SuggestedAction__ 
-{{region radchat-messages-suggestedactions_01}}
-	 		var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
-            textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
+{{region cs-radchat-messages-suggestedactions_01}}
 
-            this.chat.AddMessage(textMessage);
+    private Author currentAuthor;
+    private Author otherAuthor;
 
-            this.chat.SuggestedActions.Add(new SuggestedAction("Hi there!"));
+    public MainWindow()
+    {
+        InitializeComponent();
+
+        currentAuthor = new Author("1") { Name = "Peter" };
+        otherAuthor = new Author("2") { Name = "Steven" };
+        this.chat.CurrentAuthor = currentAuthor;
+
+        var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
+        textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
+
+        this.chat.AddMessage(textMessage);
+
+        this.chat.SuggestedActions.Add(new SuggestedAction("Hi, there!"));
+    }
 {{endregion}}
 
-Adding the __SuggestedAction__ will be visualized as shown in the figure below.
+Adding the __SuggestedAction__ will be visualized as shown in __Figure 1__.
 
 #### __Figure 1: Adding a SuggestedAction__
 ![Adding a SuggestedAction](images/RadChat_Items_SuggestedActions_01.png)
@@ -43,20 +55,35 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 * __Text__: The text result.
 
 #### __[C#] Example 2: Handling the SuggestedActionReported event__ 
-{{region radchat-messages-suggestedactions_02}}
-	 private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventArgs e)
+{{region cs-radchat-messages-suggestedactions_02}}
+
+    private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventArgs e)
+    {
+        if (e.Text == "Hi, there!")
         {
-            if (e.Text == "Hi there!")
-            {
-                e.Text = this.otherAuthor.Name + ", " + e.Text;
-                e.CloseAfterReport = false;
-                e.PostResultInline = true;
-            }
+            e.CloseAfterReport = false;
+            e.PostResultInline = false;
+
+            this.chat.AddMessage(this.otherAuthor, e.Text);
         }
+    }
 {{endregion}}
 
-#### __Figure 1: Handling the SuggestedActionReported event__
+#### __Figure 2: Handling the SuggestedActionReported event__
 ![Handling the SuggestedActionReported event](images/RadChat_Items_SuggestedActions_02.png)
+
+## SuggestedActionsOrientation
+
+Since the __2020.2.525__ [internal build]({%slug installation-installing-lib%}) version, you have the option of setting the orientation in which the suggested actions are displayed. The default orientation is __Horizontal__.
+
+#### __[XAML] Example 3: Setting the SuggestedActionsOrientation__ 
+{{region xaml-radchat-messages-suggestedactions_3}}
+
+    <telerik:RadChat x:Name="chat" SuggestedActionsOrientation="Vertical"/>
+{{endregion}}
+
+#### __Figure 3: SuggestedActions with Vertical orientation__
+![SuggestedActions with Vertical orientation](images/RadChat_Items_SuggestedActions_03.png)
 
 ## See Also
 

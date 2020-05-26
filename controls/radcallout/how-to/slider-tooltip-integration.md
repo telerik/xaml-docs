@@ -32,6 +32,6 @@ The RadCallout can be easily used as a tooltip for the RadSlider control. To do 
 	{{endregion}}	
 	
 #### __Figure 1:  Callout as a ToolTip for RadSlider Thumb__
-![RadSlider ToolTip ThumbToolTipStyle Callout](images/RadSlider_ToolTip_ThumbToolTipStyle.png.png)
+![RadSlider ToolTip ThumbToolTipStyle Callout](images/RadSlider_ToolTip_ThumbToolTipStyle.png)
 
 

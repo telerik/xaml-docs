@@ -70,7 +70,12 @@
       <li>
         <a href="#" onclick="history.go(-1); return false;">Go back</a> and try another way</li>
       <li>Head to the
-        <a href="/devtools/wpf/">Documentation Homepage</a>
+		  {% if site.site_name == 'Silverlight' %}
+		   <a href="/devtools/silverlight/">Documentation Homepage</a>
+		  {% endif %}
+		  {% if site.site_name == 'WPF' %}
+		   <a href="/devtools/wpf/">Documentation Homepage</a>
+		  {% endif %}       
       </li>
       <li>Cheer up and
         <a href="http://www.telerik.com/download">try our products</a>. Some of them are free!</li>

@@ -70,17 +70,19 @@
       <li>
         <a href="#" onclick="history.go(-1); return false;">Go back</a> and try another way</li>
       <li>Head to the
-		  {% if site.site_name == 'Silverlight' %}
-		   <a href="/devtools/silverlight/">Documentation Homepage</a>
-		  {% endif %}
-		  {% if site.site_name == 'WPF' %}
-		   <a href="/devtools/wpf/">Documentation Homepage</a>
-		  {% endif %}       
+            <a id="link" href="/devtools/wpf/">Documentation Homepage</a>
       </li>
       <li>Cheer up and
         <a href="http://www.telerik.com/download">try our products</a>. Some of them are free!</li>
     </ul>
   </div>
+  <script>  
+        if (window.location.href.indexOf("silverlight") > -1 ) 
+        { 
+         alert("The URL of this page is: " + window.location.href);
+         document.getElementById("link").setAttribute('href', "/devtools/silverlight/");
+		}
+</script>
 </body>
 
 </html>

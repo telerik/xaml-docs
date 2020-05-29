@@ -17,7 +17,43 @@ position: 0
 <img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="Telerik UI for WPF logo" />
 {% endif %}-->
 
-Thank you for choosing Telerik &reg; UI for {{ site.framework_name }}.
+Thank you for choosing {% if site.site_name == 'Silverlight' %}[Telerik &reg; UI for Silverlight](https://www.telerik.com/products/silverlight/overview.aspx){% endif %}{% if site.site_name == 'WPF' %}[Telerik &reg; UI for WPF](https://www.telerik.com/products/wpf/overview.aspx){% endif %}.
+
+<style>
+/* download trial button */
+
+div#trial_button {	
+	color: #fff;
+	background-color: #e74b3c;
+	padding:.44em .9em .52em;
+	font-size: 20px;
+	font-weight:400;
+	letter-spacing:-.025em;
+	position:relative;
+	display:inline-block;
+	line-height:1.2;
+	-webkit-transition:color .2s ease,background-color .2s ease;
+	transition:color .2s ease,background-color .2s ease;
+	border-radius:2px;
+	-webkit-appearance:none;
+	font-family:Metric,Arial,Gadget,sans-serif;
+	text-align:center	
+}
+</style>
+
+{% if site.site_name == 'Silverlight' %}
+<div id="trial_button">
+<br />
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight">Download Free Trial</a>
+</div>
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
+<div id="trial_button">
+<br />
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf">Download Free Trial</a>
+</div>
+{% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
@@ -35,9 +71,26 @@ Telerik &reg; UI for {{ site.framework_name }} features the following controls:
 
 Throughout this article, you will find the following sections that describe all of the important aspects in depth:
 
-## Licensing
+## Trial Version and Commercial License
 
-License agreement and detailed information about different licenses and which one you should purchase is explained in the {% if site.site_name == 'WPF' %}[Licensing](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}[Licensing](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} section.				
+This UI for {{site.framework_name}} library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license]{% if site.site_name == 'WPF' %}(https://www.telerik.com/purchase/individual/wpf.aspx){% endif %}{% if site.site_name == 'Silverlight' %}(https://www.telerik.com/purchase/individual/silverlight.aspx){% endif %}. Feel free to review the Telerik UI for {{site.framework_name}} [License Agreement]{% if site.site_name == 'WPF' %}(http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% endif %}{% if site.site_name == 'Silverlight' %}(http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} to get acquainted with the full terms of use.	
+
+## Support Options
+
+For any issues you might encounter while working with UI for {{site.framework_name}}, use any of the available support channels:
+
+* License holders and active trialists can take advantage of our outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [dedicated support system]{% if site.site_name == 'WPF' %}(https://www.telerik.com/account/support-tickets?pid=601&q=&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false){% endif %}{% if site.site_name == 'Silverlight' %}(https://www.telerik.com/account/support-tickets?_ga=2.179992356.1411787990.1590474262-464467820.1568993725&supcId=7b77c362-2470-014e-c420-55ced82066d6&fbp=false&pid=571&q=){% endif %}.
+* Our [forums]{% if site.site_name == 'WPF' %}(https://www.telerik.com/forums/wpf){% endif %}{% if site.site_name == 'Silverlight' %}(https://www.telerik.com/forums/silverlight){% endif %} are part of the free support you can get from the community and from the team on all kinds of general issues.
+* Our [feedback portal]{% if site.site_name == 'WPF' %}(https://feedback.telerik.com/wpf){% endif %}{% if site.site_name == 'Silverlight' %}(https://feedback.telerik.com/silverlight){% endif %} provides information on the features/bugs in discussion and also the planned ones for release.
+* You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).
+
+{% if site.site_name == 'WPF' %}
+## Learning Resources
+
+* [Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+* [Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
+
+{% endif %}
 
 ## Installation and Deployment
 
@@ -50,8 +103,6 @@ To learn more about the different approaches for populating the Telerik &reg; UI
 ## Styling and Appearance
 
 To find how to customize the look of Telerik UI for {{ site.framework_name }} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
-
-If you need further assistance you can post your question in the {% if site.site_name == 'Silverlight' %}[Silverlight forums](http://www.telerik.com/community/forums/silverlight.aspx){% endif %}{% if site.site_name == 'WPF' %}[WPF forums](http://www.telerik.com/community/forums/wpf.aspx){% endif %} or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
 
 ## Related Links
 {% if site.site_name == 'Silverlight' %}

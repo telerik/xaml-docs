@@ -47,7 +47,6 @@ div#trial_button .trialLink {
 
 {% if site.site_name == 'Silverlight' %}
 <div id="trial_button">
-<br />
 <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" class="trialLink">Download Free Trial</a>
 </div>
 {% endif %}

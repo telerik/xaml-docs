@@ -22,7 +22,11 @@ Thank you for choosing {% if site.site_name == 'Silverlight' %}[Telerik &reg; UI
 <style>
 /* download trial button */
 
-div#trial_button {	
+div#trial_button {
+    text-align: center !important;
+}
+
+div#trial_button .trialLink {	
 	color: #fff;
 	background-color: #e74b3c;
 	padding:.44em .9em .52em;
@@ -44,14 +48,14 @@ div#trial_button {
 {% if site.site_name == 'Silverlight' %}
 <div id="trial_button">
 <br />
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight">Download Free Trial</a>
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" class="trialLink">Download Free Trial</a>
 </div>
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 <div id="trial_button">
 <br />
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf">Download Free Trial</a>
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf" class="trialLink">Download Free Trial</a>
 </div>
 {% endif %}
 

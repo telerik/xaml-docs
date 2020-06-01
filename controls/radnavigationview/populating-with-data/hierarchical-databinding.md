@@ -74,7 +74,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 #### __[XAML] Example 3: Setting up the view__
 {{region radnavigationview-populating-with-data-hierarchical-databinding-2}}	
 	<telerik:RadNavigationView x:Name="radNavigationView" 
-							   ItemsSource="{Binding Items}" 
+							   ItemsSource="{Binding}" 
 							   PaneHeader="Header"
 							   DisplayMemberPath="Title"
 							   DisplayMode="Expanded">

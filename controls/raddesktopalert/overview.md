@@ -20,22 +20,24 @@ __RadDesktopAlert__ is a WPF control that allows you to display notifications on
 
 ## Key Features
 
-* __Different positioning__ -  __RadDesktopAlertManager__ supports displaying __RadDesktopAlert__ from multiple predefined positions of the primary screen. An offset to these positions can be applied for more precise positioning.
+* __Different positioning__:  __RadDesktopAlertManager__ supports displaying __RadDesktopAlert__ from multiple predefined positions of the primary screen. An offset to these positions can be applied for more precise positioning.
 
-* __Multiple alerts__ - You can visualize unlimited number of __RadDesktopAlerts__ through a single __RadDesktopAlertManager__.
+* __Multiple alerts__: You can visualize unlimited number of RadDesktopAlerts through a single __RadDesktopAlertManager__.
 
-* __Animations__ - You are able to implement your custom animation for the showing and hiding of __RadDesktopAlert__.
+* __Animations__: You are able to implement your custom animation for the showing and hiding of RadDesktopAlert.
 
-* __Styling and Appearance__ - Provides an easy way to customize the appearance of the control.
+* __Sound__: The control allows you to play one of the sounds in the SystemSounds class or implement custom sound playing logic.
 
-* __Events__ - Support of routed events and some specific for the control events.
+* __Styling and Appearance__: Provides an easy way to customize the appearance of the control.
 
-* __Command__ - __RadDesktopAlert__ allows you to register a custom command and pass a parameter to it.
+* __Events__: Support of routed events and some specific for the control events.
 
-You can check __RadDesktopAlert__ demos at: [https://demos.telerik.com/wpf](https://demos.telerik.com/wpf).
+* __Command__: RadDesktopAlert allows you to register a custom command and pass a parameter to it.
 
-## See Also
+>tip Get started with the control with its [Getting Started]({%slug raddesktopalert-getting-started%}) help article that shows how to use it in a basic scenario.
 
+> Check out the demos at [demos.telerik.com](https://demos.telerik.com/wpf/). 
+
+## See Also  
  * [Getting Started]({%slug raddesktopalert-getting-started%})
-
  * [Visual Structure]({%slug raddesktopalert-visual-structure%})

@@ -10,12 +10,7 @@ position: 6
 
 # Dynamic Number of Series (ChartSeriesProvider)
 
-In this help topic, you will learn what mechanism ChartView provides for automatic series generation.      
-
-* [Overview](#overview)
-* [ChartSeriesDescriptor](#chartseriesdescriptor)
-* [Properties](#properties)
-* [Code Example](#code-example)
+In this help topic, you will learn what mechanism ChartView provides for automatic series generation.
 
 ## Overview
 
@@ -59,7 +54,9 @@ Important properties of __ChartSeriesDescriptor__:
 
 * __ItemsSourcePath__: A property of type __string__ that gets or sets the path to the collection property that will feed the generated series.            
 
-* __TypePath__: A property of type __string__ that gets or sets the path to the property that indicates the series type that needs to be created.            
+* __TypePath__: A property of type __string__ that gets or sets the path to the property that indicates the series type that needs to be created.     
+
+* __TypeConverter__: A property of type __IValueConverter__ that gets or sets a converter that can be used to provide the exact type of the series that should be created. The converter receives a Type object, if the __TypePath__ is set and the value can be extracted from the viewmodel of the series. Otherwise, the converter receives the entire viewmodel object. The __Convert__ method should return the series type that needs to be created.
 
 * __Style__: A property of type __Style__ that gets or sets the style that describes the appearance of the series that are to be created. If no __TypePath__ is specified, the TargetType property of the style object is used to generate the desired series.  
 
@@ -69,13 +66,14 @@ Important properties of __ChartSeriesDescriptor__:
 
 #### __[XAML] Example 2: Setting the ChartDataSourceStyle property__
 {{region xaml-radchartview-features-chartseriesprovider_2}}
+
     <telerik:CategoricalSeriesDescriptor>
-	<telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
-	    <Style TargetType="telerik:ChartDataSource">
-		<Setter Property="SamplingThreshold" Value="1" />
-	    </Style>
-	</telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
-    </telerik:CategoricalSeriesDescriptor>
+		<telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
+			<Style TargetType="telerik:ChartDataSource">
+				<Setter Property="SamplingThreshold" Value="1" />
+			</Style>
+		</telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
+	</telerik:CategoricalSeriesDescriptor>
 {{endregion}}
 
 Type-specific properties:        

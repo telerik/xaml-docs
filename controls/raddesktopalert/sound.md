@@ -1,7 +1,7 @@
 ---
 title: Sound
 page_title: Sound
-description: Check our &quot;Moving&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
+description: Check our &quot;Sound&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
 slug: raddesktopalert-sound
 tags: play, sound
 published: True

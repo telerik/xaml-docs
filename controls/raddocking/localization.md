@@ -47,7 +47,9 @@ Auto_hide	|	Auto hide
 Floating	|	Floating
 Dockable	|	Dockable
 Tabbed_document	|	Tabbed document
-
+Docking_ActivePanes | Active Panes
+Docking_ActiveDocuments | Active Documents
+Docking_PreviewHeader | Preview
 
 ## See Also
 

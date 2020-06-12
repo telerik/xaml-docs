@@ -12,12 +12,6 @@ position: 0
 
 __RadChartView__ is essentially a toolset of charting components designed to help you create a variety of rich data-visualization applications. This tutorial will walk you through the creation of a sample application that contains a RadChartView component.
 
-* [Chart Types](#chart-types)
-* [Assembly References](#assembly-references)
-* [Defining a Chart](#defining-a-chart)
-* [Defining a Series](#defining-a-series)
-* [Bind the Chart](#bind-the-chart)
-
 ## Chart Types 
 
 The RadChartView suite provides four different chart types.
@@ -166,6 +160,15 @@ In order to use the chartview components in code, you will need to add the requi
 ## Bind the Chart
 
 Although you can easily populate the __RadCartesianChart Series__ directly with DataPoint objects, in most real-life applications, you will populate the series with business data. This is why all series types expose an __ItemsSource__ property. You can bind that property to a collection of business items. And if you use a collection that implements the __INotifyCollectionChanged__ interface, then any changes within the business data will be immediately reflected in the appropriate __RadChartView__ components and vice versa. You can find more information in the [Populating with Data]({%slug radchartview-series-databinding%}) section of our documentation.
+
+## Categorical vs Numerical Data
+
+When choosing the correct series and axes to display your data, it is important to consider whether it is categorical or numerical. Here are some basic definitions for both types:
+
+* __Categorical Data__: A type of data that can be stored into groups or categories with the aid of names or labels.
+* __Numerical Data__: A type of data that is expressed in terms of numbers rather than natural language descriptions.
+
+The RadChartView suite provides series and axes to display both kinds of data. You can check out the [Series to Axes Dependencies]({%slug radchartview-series-and-axes%}) article, which lists the different types of series and the axes that they support. Most series require one categorical and one numerical axis, however the **Scatter** type series support two numerical axes. 
 
 ## See Also
 * [Overview]({%slug radchartview-overview%})

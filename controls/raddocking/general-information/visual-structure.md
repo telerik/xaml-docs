@@ -36,8 +36,6 @@ To create a fully featured layout you need the following controls:
 
 * __Auto-Hide Area__ - this is the area where the tabs of the [unpinned]({%slug raddocking-panes-pinned-unpinned-panes%}#unpinned-panes) documents are placed. An unpinned pane is shown when your mouse hovers over its tab.
 
-* __Split Container__ - this is [RadSplitContainer]({%slug raddocking-features-split-container%}) that can be hosted directly in the __RadDocking__ control, in a window in the [DocumentHost]({%slug raddocking-features-document-host%}) area or in a [ToolWindow]({%slug raddocking-features-tool-window%}). It is designed to hold series of pane groups or other split containers and arrange them one after another supporting proportional space, dividing between its items by showing splitters between them.
-
 * __Root Compass -__  this is the menu that marks the possible docking positions in the root docking container. It has four indicators: Left, Top, Right and Bottom, where each one of them points to the respective docking position within the root container.[Read more]({%slug raddocking-features-compass%}#root-compass)
 
 * __Compass Menu__ - this is the menu that marks the possible docking positions within a container. The Compass menu is always shown in the middle of the container you are dragging your panes over. It has five indicators: Left, Top, Right, Bottom and Center, where each one of them points to the respective docking position within this container. [Read more]({%slug raddocking-features-compass%}#compass)

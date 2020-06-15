@@ -32,7 +32,7 @@ How to get the clicked data point in RadCartesianChart.
 
 To get the clicked data point, you can use the MouseLeftButtonDown event of RadCartesianChart. In the event handler, get the mouse position and check if the LayoutSlot property of any [DataPoint]({%slug radchartview-getting-started-data-point%}) object contains the position. 
 
-The following example shows approach with BarSeries, but you can apply this with any series that has its default visual element shown.
+The following example shows this approach with BarSeries, but you can apply this with any series that has its default visual element shown.
 
 #### __[C#]__
 {{region kb-chartview-howto-get-clicked-data-point-0}}

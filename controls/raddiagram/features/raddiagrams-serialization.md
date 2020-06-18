@@ -147,6 +147,31 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 >Please note that the Content of the Shapes and the Connections is serialized as String. This means that if you have control like ListBox or TreeView as a Content , it will be not serialized successfully.					
 
+## Save/Load Diagram ViewPort
+
+When zooming with a mouse or pan the RadDiagram, the ViewPort position will be changed. The viewPort is not saved/load during serialization mechanism, thus you will have to manually restore it. The BringIntoView(position, zoom level) method can be used for this purpose. __Example 3__ demonstrates how you can preserve and restore the ViewPort position.
+
+#### __[C#] Example 3: Save-Load Diagram ViewPort__
+{{region cs-raddiagrams_features_serialization_4}}
+	private double savedZoomFactor;
+	Point savedDiagramPosition;
+	private void CommandBinding_Executed_Save(object sender, ExecutedRoutedEventArgs e) 
+	{ 
+		savedZoomFactor = this.diagram.Zoom;
+		savedDiagramPosition = this.diagram.Viewport.TopLeft;
+		diagramXMLString =  this.diagram.Save(); 
+	} 
+	 
+	private void CommandBinding_Executed_Open(object sender, ExecutedRoutedEventArgs e) 
+	{ 
+		if (diagramXMLString != null) 
+		{ 
+			this.diagram.Load(diagramXMLString);
+			this.diagram.BringIntoView(savedDiagramPosition, savedZoomFactor);			
+		} 
+	}
+{{endregion}}
+
 ## Extending RadDiagram Serialization
 
 By default, not every property of the RadDiagramItem is serialized. Below is the list of the properties that are automatically serialized:		
@@ -260,8 +285,8 @@ For every other property that you need to be part of the Serialization/Deseriali
 
 >If you are using MVVM approach and need to serialize databound properties you can take a look at our [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%}) article.
 
-#### __[C#] Example 3: Handling the ShapeSerialized and ShapeDeserialized events__
-{{region raddiagrams-features-serialization-4}}
+#### __[C#] Example 4: Handling the ShapeSerialized and ShapeDeserialized events__
+{{region raddiagrams-features-serialization-5}}
 	void diagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)
 	{
 		 // load the saved property
@@ -275,8 +300,8 @@ For every other property that you need to be part of the Serialization/Deseriali
 	}		  
 {{endregion}}
 
-#### __[VB.NET] Example 3: Handling the ShapeSerialized and ShapeDeserialized events__		
-{{region raddiagrams-features-serialization-5}}  
+#### __[VB.NET] Example 4: Handling the ShapeSerialized and ShapeDeserialized events__		
+{{region raddiagrams-features-serialization-6}}  
 	Private Sub diagram_ShapeDeserialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
 		 ' load the saved property'
 		 TryCast(e.Shape, RadDiagramShape).Opacity = Convert.ToDouble(e.SerializationInfo("Opacity"), CultureInfo.InvariantCulture)
@@ -301,8 +326,8 @@ In order to preserve the binding you can remove the value of the property from t
 For example, if you have a binding to the Position property you can use the following approach for saving the binding:
 
 * Override the __SerializeNode()__ method of the diagram’s __GraphSource__ and set the value of the bound property to *null* in the __SerializationInfo__. Then add the value with a new key in the serialization info. 
-	#### __[C#] Example 4: SerializeNode override__
-	{{region cs-raddiagrams-features-serialization-6}}
+	#### __[C#] Example 5: SerializeNode override__
+	{{region cs-raddiagrams-features-serialization-7}}
 		public override void SerializeNode(NodeViewModelBase node, SerializationInfo info)
 		{
 			   var position = info["Position"];
@@ -312,8 +337,8 @@ For example, if you have a binding to the Position property you can use the foll
 		}	
 	{{endregion}}
 	
-	#### __[VB.NET] Example 4: SerializeNode override__
-	{{region vb-raddiagrams-features-serialization-7}}
+	#### __[VB.NET] Example 5: SerializeNode override__
+	{{region vb-raddiagrams-features-serialization-8}}
 		public Overrides Sub SerializeNode(node As NodeViewModelBase, info As SerializationInfo)
 			Dim position = info("Position")
 			info("Position") = Nothing
@@ -323,8 +348,8 @@ For example, if you have a binding to the Position property you can use the foll
 	{{endregion}}
 	
 * Override the __DeserializeNode()__ method of the diagram’s __GraphSource__ and get the value of the bound property. Then assign it to the property of the view model.
-	#### __[C#] Example 5: DeserializeNode override__
-	{{region cs-raddiagrams-features-serialization-8}}
+	#### __[C#] Example 6: DeserializeNode override__
+	{{region cs-raddiagrams-features-serialization-9}}
 		public override NodeViewModelBase DeserializeNode(IShape shape, Telerik.Windows.Diagrams.Core.SerializationInfo info)
 		{
 			var node = base.DeserializeNode(shape, info);
@@ -337,8 +362,8 @@ For example, if you have a binding to the Position property you can use the foll
 		}
 	{{endregion}}
 	
-	#### __[VB.NET] Example 5: DeserializeNode override__
-	{{region vb-raddiagrams-features-serialization-9}}
+	#### __[VB.NET] Example 6: DeserializeNode override__
+	{{region vb-raddiagrams-features-serialization-10}}
 		Public Overrides Function DeserializeNode(shape As IShape, info As Telerik.Windows.Diagrams.Core.SerializationInfo) As NodeViewModelBase
 			Dim node = MyBase.DeserializeNode(shape, info)
 			If info("MyPosition") IsNot Nothing Then
@@ -353,8 +378,8 @@ For example, if you have a binding to the Position property you can use the foll
 
 >important If you are using the [RadDiagramToolbox]({%slug raddiagram-extensions-toolbox%}) in order to drag and drop shapes and you have bindings declared in a style, make sure that the style is added in the Application's Resources as in __Example 6__. 
 
-#### __[XAML] Example 4: Style containing Position binding in Application's Resources__
-{{region xaml-raddiagrams-features-serialization-10}}
+#### __[XAML] Example 7: Style containing Position binding in Application's Resources__
+{{region xaml-raddiagrams-features-serialization-11}}
 	<Application.Resources>
         <Style TargetType="telerik:RadDiagramShape">
             <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />

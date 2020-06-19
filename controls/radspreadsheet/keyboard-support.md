@@ -5,7 +5,7 @@ description:  Keyboard support
 slug: radspreadsheet-keyboard-support
 tags: customize, keyboard, shortcuts
 published: True
-position: 0
+position: 10
 ---
 
 # Keyboard Support
@@ -100,9 +100,9 @@ Please note that the above code will override the default enter command. In addi
 
 ## Registering a custom command
 
-#### __C# Associate a custom command with a shortcut__
-
 It is possible to register a a short that executes a custom command. All you need to do is pass the command when registering the shortcut. 
+
+#### __C# Associate a custom command with a shortcut__
 
 {{region radspreadsheet-keyboard-support_1}}
 

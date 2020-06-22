@@ -10,90 +10,63 @@ position: 0
 
 # Properties
 
-This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control:
+This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control.
 
-__ItemsSource__ - gets or sets the data source used to generate the content of the timeline control. Elements can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML - see the list of the supported data sources bellow.        
+## Supported Data Sources
 
-__Supported Data Sources__
-
-You can bind __RadTimeline__ to a data source that implements one of the following interfaces:        
+The control can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML - see the list of the supported data sources bellow.         
 
 * [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) - supports simple iteration of a collection. See the MSDN article for more on [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx).         
 * [ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx) - extends [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) and supports size, enumerator, and synchronization methods for collections.          
 * [IList](http://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx) - extends [ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx) and is the base class for lists.          
 
-__Change Notification Support__
+## Change Notification Support
 
 __RadTimeline__ also provides full support for change notifications - changes in data sources that implement the [INotifyCollectionChanged](http://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx), as well as [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(VS.95).aspx%20),  are properly tracked and reflected by the UI.        
+## Key Properties
 
-Some of the implementations of these interfaces include:
+* __StartPath__: Sets the name of the property from the underlying datasource, which will determine the start time for the data.
+* __DurationPath__: Sets the name of the property from the underlying datasource, which will determine the end time for the data.
+* __VisiblePeriodStart and VisiblePeriodEnd__: Set the names of the properties from the underlying datasource, which will determine the visible start and end time for the data.
+* __PeriodStart and PeriodEnd__: These properties determine the start and end time period in the Timeline control.
+* __Intervals__: Determines the displayed time intervals. The supported intevals are: __Century__, __Decade__, __Year__, __Quarter__, __Month__, __Week__, __Day__, __Hour__, __Minute__, __Second__, __Millisecond__.
 
-* [Array](http://msdn.microsoft.com/en-us/library/system.array.aspx)
-* [ArrayList](http://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx)
-* [CollectionBase](http://msdn.microsoft.com/en-us/library/system.collections.collectionbase.aspx) objects
-* [DataTable](http://msdn.microsoft.com/en-us/library/system.data.datatable.aspx)
-* [Generic Lists](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx)
-* [ObservableCollection](http://msdn.microsoft.com/en-us/library/ms668604.aspx)
+#### __[XAML] Example 1: Setting the RadTimeline Intervals__
 
-__StartPath__ - sets the name of the property from the underlying datasource, which will determine the start time for the data.
-        __DurationPath__ - sets the name of the property from the underlying datasource, which will determine the end time for the data.
-        __VisiblePeriodStart and VisiblePeriodEnd__ - set the names of the properties from the underlying datasource,
-        which will determine the visible start and end time for the data.
-        __PeriodStart and PeriodEnd__ – these properties determine the start and end time period in the Timeline control.
-        __Intervals__
-
-Currently the supported intervals are:
-
-* Century;
-* Decade;
-* Year;
-* Quarter;
-* Month;
-* Week;
-* Day;
-* Hour;
-* Minute;
-* Second;
-* Millisecond;
-
-A sample Intervals section may look like this:
-
-#### __XAML__
-
-{{region radtimeline-properties_0}}
+{{region xaml-radtimeline-properties_0}}
 	 <telerik:RadTimeline.Intervals>
 	       <telerik:CenturyInterval />
 	       <telerik:DecadeInterval />
 	       <telerik:YearInterval />
 	       <telerik:MonthInterval/>
 	  </telerik:RadTimeline.Intervals>
-	{{endregion}}
+{{endregion}}
 
-
-
-__IntervalSpans__ - this property can be used to group the given Interval Items Together. For example setting:
+* __IntervalSpans__:  It is used to group the given interval items together. __Example 2__ shows how you can group the seconds in groups of 10. __Example 3__ demonstrates that you can also set more than one *IntervalSpan* simultaneously by separating them with comma.
         
-
-#### __XAML__
+#### __[XAML] Example 2: Setting the IntervalSpans__
 
 {{region radtimeline-properties_1}}
 	<telerik:RadTimeline.Intervals>
 	   <telerik:YearInterval IntervalSpans="10"/>
 	</telerik:RadTimeline.Intervals>
-	{{endregion}}
+{{endregion}}   
 
-
-
-will make the years in groups with 10 each. You can also set more than one *IntervalSpan* simultaneously by separating them with comma:
-        
-
-#### __XAML__
+#### __[XAML] Example 3: Setting multiple IntervalSpans__
 
 {{region radtimeline-properties_2}}
 	<telerik:RadTimeline.Intervals>
 	   <telerik:YearInterval IntervalSpans="1,5" />
 	   <telerik:MonthInterval IntervalSpans="1,6" />
 	</telerik:RadTimeline.Intervals>
-	{{endregion}}
+{{endregion}}
 
+* __MinZoomRange__ and __MaxZoomRange__: These properties set the minimum and maximum range that the TimeLine can be zoomed.
 
+{% if site.framework_name == 'Silverlight' %}
+> The MinZoomRange cannot be set to lower than 30000 pixels. 
+{% endif %}
+
+## See Also
+
+* [Getting Started]({%slug radtimeline-getting-started%})

@@ -149,7 +149,7 @@ In the code below you can see how to save and load a __RadDiagram__ using Comman
 
 ## Save/Load Diagram ViewPort
 
-When zooming with a mouse or pan the RadDiagram, the ViewPort position will be changed. The viewPort is not saved/load during serialization mechanism, thus you will have to manually restore it. The BringIntoView(position, zoom level) method can be used for this purpose. __Example 3__ demonstrates how you can preserve and restore the ViewPort position.
+When zooming with a mouse or panning the RadDiagram, the ViewPort position will be changed. The viewPort is not saved/load during the serialization mechanism, thus you will have to manually restore it. The BringIntoView(position, zoom level) method can be used for this purpose. __Example 3__ demonstrates how you can preserve and restore the ViewPort position.
 
 #### __[C#] Example 3: Save-Load Diagram ViewPort__
 {{region cs-raddiagrams_features_serialization_4}}

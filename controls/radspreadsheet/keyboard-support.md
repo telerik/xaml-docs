@@ -10,7 +10,7 @@ position: 10
 
 # Keyboard Support
 
-By default RadSpreadSheet support keyboard shortcuts that allow you to perform various operations without touching the mouse. The bellow tables list all supported shortcuts.
+By default, __RadSpreadSheet__ supports keyboard shortcuts that allow you to perform various operations without touching the mouse. The bellow tables list all supported shortcuts.
 
 ## List of keys handled by RadSpreadSheet
 
@@ -79,7 +79,7 @@ By default RadSpreadSheet support keyboard shortcuts that allow you to perform v
 
 ## Customize Keyboard Shortcuts
 
-The above shortcuts can be customized. In order to change a shortcut you need to register it using the __RegisterCommand__ method. For example you can change the behavior of the Enter key and make it go to next column instead of the next row. , If the ActiveWorksheetEditor is changed you will need to register the command again. This is why it would be better to use the __ActiveSheetEditorChanged__ event for this.
+The above shortcuts can be customized. To change a shortcut you need to register it using the __RegisterCommand__ method. For example you can change the behavior of the Enter key and make it go to next column instead of the next row. If the ActiveWorksheetEditor is changed you will need to register the command again. This is why it would be better to use the __ActiveSheetEditorChanged__ event for this.
 
 #### __C# Change the behavior of the Enter key__
 {{region radspreadsheet-keyboard-support_0}}
@@ -96,11 +96,11 @@ The above shortcuts can be customized. In order to change a shortcut you need to
    
 {{endregion}}
 
-Please note that the above code will override the default enter command. In addition
+Please note that the above code will override the default enter command. 
 
 ## Registering a custom command
 
-It is possible to register a a short that executes a custom command. All you need to do is pass the command when registering the shortcut. 
+It is possible to register a a shortcut that executes a custom command. All you need to do is pass the command when registering the shortcut. 
 
 #### __C# Associate a custom command with a shortcut__
 

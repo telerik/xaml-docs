@@ -12,7 +12,7 @@ position: 10
 
 This article describes how you can get a cell index by using a specific location on the screen.
 
-In order to get the cell under the mouse you need the position related to the top left corner of the grid that contains all cells. This is why you need to get the position relative to the WorksheetEditorPresenter. Then you can use the __GetCellIndexFromViewPoint__ to get the cell under the mouse. 
+In order to get the cell under the mouse you need the position related to the top left corner of the grid that contains all cells. This is why you need to get the position relative to the WorksheetEditorPresenter. Then you can use the __GetCellIndexFromViewPoint__ method to get the cell under the mouse. 
 
 #### __C# Get the cell under the mouse__
 

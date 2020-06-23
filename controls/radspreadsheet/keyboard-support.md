@@ -100,7 +100,7 @@ Please note that the above code will override the default enter command.
 
 ## Registering a custom command
 
-It is possible to register a a shortcut that executes a custom command. All you need to do is pass the command when registering the shortcut. 
+It is possible to register a shortcut that executes a custom command. All you need to do is pass the command when registering the shortcut. 
 
 #### __C# Associate a custom command with a shortcut__
 

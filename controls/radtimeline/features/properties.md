@@ -10,7 +10,8 @@ position: 0
 
 # Properties
 
-This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control:
+This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control.
+
 
 * __AnnotationContentTemplate__: A property of type __DataTemplate__ that gets or sets the annotation content template.
 * __AnnotationContentPath__: A property of type __string__ that gets or sets the annotation content path.
@@ -33,9 +34,9 @@ This help topic will make you familiar with the most important properties, setti
 * __MinimumItemGap__: A property of type __TimeSpan__ that gets or sets the minimum gap between two items on the same row.
 * __AutoSort__: A property of type __bool__ that indicates if the timeline items will be ordered automatically by Start and Duration or not.
 * __VerticalScrollBarVisibility__: An enumeration property of type __ScrollBarVisibility__ that shows or hides the vertical ScrollBar.
-* __DataItems__: A property of type __IEnumerable<TimelineDataItem>__ that returns a collection of Timeline items.
-* __GroupedDataItems__: A property of type __IEnumerable<TimelineDataItemGroup>__ that returns a collection of the grouped items.
-* __DataGroups__: A property of type __List<TimelineGroupData>__ that returns a collection of a group of none intersecting items.
+* __DataItems__: A property of type __IEnumerable\<TimelineDataItem\>__ that returns a collection of Timeline items.
+* __GroupedDataItems__: A property of type __IEnumerable\<TimelineDataItemGroup\>__ that returns a collection of the grouped items.
+* __DataGroups__: A property of type __List\<TimelineGroupData\>__ that returns a collection of a group of none intersecting items.
 * __ItemRowIndexGenerator__: A property of type __IItemRowIndexGenerator__ that gets or sets IItemRowIndexGenerator instance that generates row indexes for the items based on custom logic.
 * __StartPath__: A property of type __string__ that gets or sets the name of the property from the underlying datasource, which will determine the start time for the data.
 * __DurationPath__: A property of type __string__ that gets or sets the name of the property from the underlying datasource, which will determine the end time for the data.
@@ -53,10 +54,42 @@ This help topic will make you familiar with the most important properties, setti
 	* Second
 	* Millisecond
 	
+#### __[XAML] Example 1: Setting the RadTimeline Intervals__
 
-	
-	
-	
+{{region xaml-radtimeline-properties_0}}
+	 <telerik:RadTimeline.Intervals>
+	       <telerik:CenturyInterval />
+	       <telerik:DecadeInterval />
+	       <telerik:YearInterval />
+	       <telerik:MonthInterval/>
+	  </telerik:RadTimeline.Intervals>
+{{endregion}}
 
+* __IntervalSpans__:  It is used to group the given interval items together. __Example 2__ shows how you can group the seconds in groups of 10. __Example 3__ demonstrates that you can also set more than one *IntervalSpan* simultaneously by separating them with comma.
+        
+#### __[XAML] Example 2: Setting the IntervalSpans__
 
+{{region radtimeline-properties_1}}
+	<telerik:RadTimeline.Intervals>
+	   <telerik:YearInterval IntervalSpans="10"/>
+	</telerik:RadTimeline.Intervals>
+{{endregion}}   
 
+#### __[XAML] Example 3: Setting multiple IntervalSpans__
+
+{{region radtimeline-properties_2}}
+	<telerik:RadTimeline.Intervals>
+	   <telerik:YearInterval IntervalSpans="1,5" />
+	   <telerik:MonthInterval IntervalSpans="1,6" />
+	</telerik:RadTimeline.Intervals>
+{{endregion}}
+
+* __MinZoomRange__ and __MaxZoomRange__: These properties set the minimum and maximum range that the TimeLine can be zoomed.
+
+{% if site.framework_name == 'Silverlight' %}
+> The MinZoomRange cannot be set to lower than 30000 pixels. 
+{% endif %}
+
+## See Also
+
+* [Getting Started]({%slug radtimeline-getting-started%})

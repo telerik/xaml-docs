@@ -10,11 +10,11 @@ position: 0
 
 # Properties
 
-> There is a required precedence of the __TimeBar's__ properties. This means that the __Start Time__ should always be set before the __End Time__. A required precedence of Properties is given in the code snippet below.
+When setting up the RadTimeBar you should keep in mind that the __Start Time__ properties should always be set before the __End Time__ ones. __Example 1__ shows the required precedence of the properties.
 
-#### __XAML__
+#### __[XAML] Example 1: RadTimeBar Properties Precedence__
 
-{{region xamlradtimebar-properties_0}}
+{{region xaml-radtimebar-properties_0}}
 	<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"      
 						PeriodStart="01-01-2011"
 						PeriodEnd="01/01/2012"
@@ -30,32 +30,18 @@ position: 0
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
 {{endregion}} 
+
+## Key Properties
 	
-__PeriodStart__: Gets or sets the timeline's start date
-__PeriodEnd__: Gets or sets the timeline's end data
-__VisiblePeriodStart__: Gets or sets the currently visible start date
-__VisiblePeriodEnd__: Gets or sets the the currently visible end date
-__Intervals__: Determines the displayed time intervals
+* __PeriodStart__: Gets or sets the timebar's start date.
+* __PeriodEnd__: Gets or sets the timebar's end date.
+* __VisiblePeriodStart__: Gets or sets the currently visible start date.
+* __VisiblePeriodEnd__: Gets or sets the currently visible end date.
+* __Intervals__: Determines the displayed time intervals. The supported intevals are: __Century__, __Decade__, __Year__, __Quarter__, __Month__, __Week__, __Day__, __Hour__, __Minute__, __Second__, __Millisecond__.
 
-Currently the supported intervals are:
+#### __[XAML] Example 2: Setting the RadTimeBar Intervals__
 
-* Century
-* Decade
-* Year
-* Quarter
-* Month
-* Week
-* Day
-* Hour
-* Minute
-* Second
-* Millisecond
-
-A sample Intervals section may look like this:
-
-#### __XAML__
-
-{{region radtimebar-properties_1}}
+{{region xaml-radtimebar-properties_1}}
 	<telerik:RadTimeBar.Intervals>
 	     <telerik:YearInterval />
 	     <telerik:MonthInterval/>
@@ -64,41 +50,43 @@ A sample Intervals section may look like this:
 	 </telerik:RadTimeBar.Intervals>
 {{endregion}}
 
-Every interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeBar automatically choses the appropriate string formatter according to the control size and visible range. For example year interval uses the following set of formatting strings:
+Every interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeBar automatically chooses the appropriate string formatter according to the control size and visible range. Learn more about that in the [Intervals Formatters]({%slug radtimebar-intervals-formatters%}) article.
 
-“yyyy”
+* __SelectionStart__ and __SelectionEnd__: These properties determine the beginning of the selected range in the TimeBar control.
 
-“yy”
+* __ActualSelectionStart__ and __ActualSelectionEnd__: When the user is dragging one of the selection thumbs, the SelectionStart and SelectionEnd properties are updated once the user releases the selection thumb. On the other hand, the ActualSelectionStart and ActualSelectionEnd properties are updated while the selection thumbs are moving.
 
-__SelectionStart__ and __SelectionEnd__: These properties determine the beginning of the selected range in the TimeBar control.
+* __IsSnapToIntervalEnabled__: This turns on the snapping functionality, which will restrict the moving of the selection thumb, so that it will snap to the items' lines.
 
-__ActualSelectionStart__ and __ActualSelectionEnd__: When the user is dragging one of the selection thumbs, the SelectionStart and SelectionEnd properties are updated once the user releases the selection thumb. On the other hand, the ActualSelectionStart and ActualSelectionEnd properties are updated while the selection thumbs are moving.
+* __MinSelectionRange__ and __MaxSelectionRange__: These properties define the selection range interval. You won't be able to select an interval lower than the MinSelectionRange and higher than MaxSelectionRange.
 
-__IsSnapToIntervalEnabled__: This turns on the snapping functionality, which will restrict the moving of the selection thumb, so that it will snap to the items' lines.
+* __IntervalSpans__: This property can be set from each Interval except Decade and Quarter. It is used to group the given interval items together. __Example 3__ shows how you can group the seconds in groups of 10. __Example 4__ demonstrates that you can also set more than one *IntervalSpan* simultaneously by separating them with comma.
 
-__MinSelectionRange__ and __MaxSelectionRange__: These properties define the Selection Range interval thus you won't be able to select interval lower than the MinSelectionRange and higher than MaxSelectionRange.
+#### __[XAML] Example 3: Setting the IntervalSpans__
 
-__IntervalSpans__: This property can be set from each Interval except Decade and Quarter. It is used to group the given Interval Items Together. For example setting:
-
-#### __XAML__
-
-{{region radtimebar-properties_2}}
+{{region xaml-radtimebar-properties_2}}
 	<telerik:RadTimeBar.Intervals>
 	   <telerik:SecondInterval IntervalSpans="10"/>
 	</telerik:RadTimeBar.Intervals>
 {{endregion}}
 
-will make the seconds in groups with 10 each. You can also set more than one *IntervalSpan* simultaneously by separating them with comma:
+#### __[XAML] Example 4: Setting multiple IntervalSpans__
 
-#### __XAML__
-
-{{region radtimebar-properties_3}}
+{{region xaml-radtimebar-properties_3}}
 	<telerik:RadTimeBar.Intervals>
 	   <telerik:SecondInterval IntervalSpans="10,15,30" />
 	   <telerik:MinuteInterval IntervalSpans="1,10,15,30" />
 	</telerik:RadTimeBar.Intervals>
 {{endregion}}
 
-__CurrentItemInterval__ and __CurrentGroupInterval__: These properties can be used in code-behind to take the current item respectively group interval span set.
+* __CurrentItemInterval__ and __CurrentGroupInterval__: These properties can be used in code-behind to take the current item respectively group interval span set.
 
-__MinZoomRange__ and __MaxZoomRange__: These properties set the minimal and maximum range of the TimeBar that can be zoomed.
+* __MinZoomRange__ and __MaxZoomRange__: These properties set the minimum and maximum range that the TimeBar can be zoomed.
+
+{% if site.framework_name == 'Silverlight' %}
+> The MinZoomRange cannot be set to 
+{% endif %}
+
+## See Also
+
+* [Getting Started]({%slug radtimebar-getting-started%})

@@ -17,7 +17,7 @@ This help topic will make you familiar with the most important properties, setti
 * __AnnotationDurationPath__: A property of type __string__ that gets or sets the duration of the annotation.
 * __AnnotationZIndexPath__: A property of type __string__ that gets or sets the annotation z-index path.
 * __AnnotationStartPath__: A property of type __string__ that gets or sets the annotation start path.
-* __Annotations__: A property of type __string__ that gets or sets the annotation start path.
+* __Annotations__: A property of type __string__ that gets or sets the annotations path.
 * __AnnotationsSource__: A property of type __IEnumerable__ that gets or sets the annotation source.
 * __TimelineInstantItemTemplate__: A property of type __DataTemplate__ that gets or sets the instant event template.
 * __TimelineItemTemplate__: A property of type __DataTemplate__ that gets or sets the event template.
@@ -26,13 +26,13 @@ This help topic will make you familiar with the most important properties, setti
 * __ToolTipPath__: A property of type __string__ that gets or sets the ToolTip path.
 * __SelectedItems__: A property of type __IList__ that gets the selected items.
 * __SelectedItem__: A property of type __object__ that gets or sets the selected item.
-* __SelectionMode_: An enumeration property of type __SelectionMode__ that gets or sets the selection mode of the control: __(Single, Multiple, and Extended)__
-* __IsSelectionEnabled__: A property of type __bool__ that disable or enable the selection functionality of the control.
-* __GroupExpandMode_: A enumeration property of type __GroupExpandMode__ that gets or sets the group expand mode of the groups: __(None, Single, and Multiple)__
+* __SelectionMode__: An enumeration property of type __SelectionMode__ that gets or sets the selection mode of the control: __(Single, Multiple, and Extended)__
+* __IsSelectionEnabled__: A property of type __bool__ that disables or enables the selection functionality of the control.
+* __GroupExpandMode__: A enumeration property of type __GroupExpandMode__ that gets or sets the group expand mode of the groups: __(None, Single, and Multiple)__
 * __GroupPath__: A property of type __string__ that gets or sets the group path.
 * __MinimumItemGap__: A property of type __TimeSpan__ that gets or sets the minimum gap between two items on the same row.
 * __AutoSort__: A property of type __bool__ that indicates if the timeline items will be ordered automatically by Start and Duration or not.
-* __VerticalScrollBarVisibility__: An enumeration property of type __ScrollBarVisibility__ that show or hide the vertical ScrollBar.
+* __VerticalScrollBarVisibility__: An enumeration property of type __ScrollBarVisibility__ that shows or hides the vertical ScrollBar.
 * __DataItems__: A property of type __IEnumerable<TimelineDataItem>__ that returns a collection of Timeline items.
 * __GroupedDataItems__: A property of type __IEnumerable<TimelineDataItemGroup>__ that returns a collection of the grouped items.
 * __DataGroups__: A property of type __List<TimelineGroupData>__ that returns a collection of a group of none intersecting items.

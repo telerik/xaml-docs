@@ -12,25 +12,48 @@ position: 0
 
 This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control.
 
-## Supported Data Sources
 
-The control can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML - see the list of the supported data sources bellow.         
-
-* [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) - supports simple iteration of a collection. See the MSDN article for more on [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx).         
-* [ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx) - extends [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) and supports size, enumerator, and synchronization methods for collections.          
-* [IList](http://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx) - extends [ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx) and is the base class for lists.          
-
-## Change Notification Support
-
-__RadTimeline__ also provides full support for change notifications - changes in data sources that implement the [INotifyCollectionChanged](http://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx), as well as [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(VS.95).aspx%20),  are properly tracked and reflected by the UI.        
-## Key Properties
-
-* __StartPath__: Sets the name of the property from the underlying datasource, which will determine the start time for the data.
-* __DurationPath__: Sets the name of the property from the underlying datasource, which will determine the end time for the data.
-* __VisiblePeriodStart and VisiblePeriodEnd__: Set the names of the properties from the underlying datasource, which will determine the visible start and end time for the data.
-* __PeriodStart and PeriodEnd__: These properties determine the start and end time period in the Timeline control.
-* __Intervals__: Determines the displayed time intervals. The supported intevals are: __Century__, __Decade__, __Year__, __Quarter__, __Month__, __Week__, __Day__, __Hour__, __Minute__, __Second__, __Millisecond__.
-
+* __AnnotationContentTemplate__: A property of type __DataTemplate__ that gets or sets the annotation content template.
+* __AnnotationContentPath__: A property of type __string__ that gets or sets the annotation content path.
+* __AnnotationDurationPath__: A property of type __string__ that gets or sets the duration of the annotation.
+* __AnnotationZIndexPath__: A property of type __string__ that gets or sets the annotation z-index path.
+* __AnnotationStartPath__: A property of type __string__ that gets or sets the annotation start path.
+* __Annotations__: A property of type __string__ that gets or sets the annotations path.
+* __AnnotationsSource__: A property of type __IEnumerable__ that gets or sets the annotation source.
+* __TimelineInstantItemTemplate__: A property of type __DataTemplate__ that gets or sets the instant event template.
+* __TimelineItemTemplate__: A property of type __DataTemplate__ that gets or sets the event template.
+* __ToolTipTemplate__: A property of type __DataTemplate__ that gets or sets the template of the __ToolTip__.
+* __ToolTipFormat__: A property of type __string__ that gets or sets the ToolTip format.
+* __ToolTipPath__: A property of type __string__ that gets or sets the ToolTip path.
+* __SelectedItems__: A property of type __IList__ that gets the selected items.
+* __SelectedItem__: A property of type __object__ that gets or sets the selected item.
+* __SelectionMode__: An enumeration property of type __SelectionMode__ that gets or sets the selection mode of the control: __(Single, Multiple, and Extended)__
+* __IsSelectionEnabled__: A property of type __bool__ that disables or enables the selection functionality of the control.
+* __GroupExpandMode__: A enumeration property of type __GroupExpandMode__ that gets or sets the group expand mode of the groups: __(None, Single, and Multiple)__
+* __GroupPath__: A property of type __string__ that gets or sets the group path.
+* __MinimumItemGap__: A property of type __TimeSpan__ that gets or sets the minimum gap between two items on the same row.
+* __AutoSort__: A property of type __bool__ that indicates if the timeline items will be ordered automatically by Start and Duration or not.
+* __VerticalScrollBarVisibility__: An enumeration property of type __ScrollBarVisibility__ that shows or hides the vertical ScrollBar.
+* __DataItems__: A property of type __IEnumerable\<TimelineDataItem\>__ that returns a collection of Timeline items.
+* __GroupedDataItems__: A property of type __IEnumerable\<TimelineDataItemGroup\>__ that returns a collection of the grouped items.
+* __DataGroups__: A property of type __List\<TimelineGroupData\>__ that returns a collection of a group of none intersecting items.
+* __ItemRowIndexGenerator__: A property of type __IItemRowIndexGenerator__ that gets or sets IItemRowIndexGenerator instance that generates row indexes for the items based on custom logic.
+* __StartPath__: A property of type __string__ that gets or sets the name of the property from the underlying datasource, which will determine the start time for the data.
+* __DurationPath__: A property of type __string__ that gets or sets the name of the property from the underlying datasource, which will determine the end time for the data.
+* __PeriodStart and PeriodEnd__: These properties are of type __DateTime__ and determine the start and end time period in the Timeline control.
+* __Intervals__: Currently the supported intervals are:
+	* Century
+	* Decade
+	* Year
+	* Quarter
+	* Month
+	* Week
+	* Day
+	* Hour
+	* Minute
+	* Second
+	* Millisecond
+	
 #### __[XAML] Example 1: Setting the RadTimeline Intervals__
 
 {{region xaml-radtimeline-properties_0}}

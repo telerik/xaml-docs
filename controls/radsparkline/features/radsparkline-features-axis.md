@@ -59,6 +59,20 @@ By default the axes of the sparkline will auto calculate their ranges based on t
 								MaxYValue="80"/>
 {{endregion}}
 
+## Bind Minimum and Maximum Values of the Axis
+
+As mentioned in the above section, you can adjust the Data range by setting the __MinXValue__,  __MaxXValue__, and __MinYValue__, __MaxYValue__ properties. These properties are of type __double__. Now, if you want to bind these properties to custom properties of type DateTime, we can use the Ticks property, which the DateTime object provides. This property is of type __long__ and represents a given date in numbers. __Example 4__ demonstrate how we can take advantage of this functionality and bind the __MinXValue__,  __MaxXValue__ and __MinYValue__, __MaxYValue__ properties.
+
+#### __[XAML] Example 4: Bind Minimum and Maximum Values of the Axis__
+{{region radsparkline-features-axis-3}}
+	<telerik:RadColumnSparkline AutoRange="False"
+								MinXValue="{Binding StartXDateTime.Ticks}"
+								MaxXValue="{Binding EndXDateTime.Ticks}"
+								MinYValue="{Binding StartYDateTime.Ticks}"
+								MaxYValue="{Binding StartYDateTime.Ticks}"/>
+{{endregion}}
+
+
 ## See Also
 * [Getting Started]({%slug radsparkline-getting-started%})
 * [Indicators]({%slug radsparkline-features-indicators%})

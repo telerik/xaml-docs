@@ -60,7 +60,7 @@ Now to increase the size of the period header, we can create custom style target
 
 > In a scenario when you have applied grouping, you have to keep in mind that when you change the height of the period header, you will also need to update the padding of the __TimelineItemGroupsPanel__ element. Otherwise, the first group will be overlapped by the period header Border element.
 
-To update the padding of the __TimelineItemGroupsPanel__ element, we can create a custom implicit style. __Example 2__ demonstrate this:
+To update the padding of the __TimelineItemGroupsPanel__ element, we can create a custom implicit style. __Example 2__ demonstrates this:
 
 #### __[XAML] Example 3: Update Padding of the TimelineItemGroupsPanel__
 {{region radtimeline-howto-change-striplines-background-1}}

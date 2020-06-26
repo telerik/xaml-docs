@@ -16,7 +16,7 @@ This help topic will demonstrate how to change the size of the RadTimeline' peri
 
 The period header zone can be customized by using __PeriodHeaderStyle__ property of the RadTimeline. This accept a Style targeting a native Border element that is used for drawing the period header. 
 
-You can use a custom Style to customize the period header. The following example demonstrates this approach. First we are going to declase our RadTimeline control.
+You can use a custom Style to customize the period header. The following example demonstrates this approach. First we are going to declare our RadTimeline control.
  
 #### __[XAML] Example 1: Declase RadTimeline control__
 {{region radtimeline-howto-change-size-periodheader-0}}

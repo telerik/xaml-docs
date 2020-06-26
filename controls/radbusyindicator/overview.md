@@ -19,7 +19,7 @@ position: 0
 
 Thank you for choosing __RadBusyIndicator__!
 
-__RadBusyIndicator__ enables you to display a notification whenever a longer-running process is being handled by the application. This makes the UI more informative and the user experience smoother.
+__RadBusyIndicator__ enables you to display a notification whenever a longer-running background process is being handled by the application. This makes the UI more informative and the user experience smoother.
 
 ![](images/radbusyindicator-overview-0.png)
 

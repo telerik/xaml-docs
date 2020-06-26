@@ -84,6 +84,10 @@ For example, if you want to add a rounded red border around the **RadListBox** c
 
 ## Extracting Control Templates Using Visual Studio
 
+{% if site.site_name == 'Silverlight' %}
+> Extracting control templates of the control using Visual Studio is only possible when the project reference XAML assemblies. In Silverlight, Visual Studio won't be able to obtain the default templates of the controls when the referenced DLLs are NoXAML.
+{% endif %}
+
 The other way to extract a control template is through the **Visual Studio designer** or **Expression Blend**. You have to right click on the desired control and navigate through the context menu to the __Edit Template__ option. Afterwards just click on the __Edit a Copy__ option as shown in **Figure 3**.
 
 #### __Figure 3: Visual Studio designer context menu__
@@ -109,8 +113,8 @@ Let's assume you just need to style one specific instance of the control and you
 #### __[XAML] Example 2: The generated XAML code__
 
 {{region styling-apperance-editing-control-templates_1}}
-	<Window>
-	    <Window.Resources>
+	<UserControl>
+	    <UserControl.Resources>
 	        <Style x:Key="RadListBoxStyle1" TargetType="{x:Type telerik:RadListBox}" BasedOn="{StaticResource RadListBoxStyle}">
 	            <Setter Property="Template">
 	                <Setter.Value>
@@ -120,12 +124,12 @@ Let's assume you just need to style one specific instance of the control and you
 	                </Setter.Value>
 	            </Setter>
 	        </Style>
-	    </Window.Resources>
+	    </UserControl.Resources>
 	
 	    <Grid>
 	        <telerik:RadListBox Style="{StaticResource RadListBoxStyle1}" ItemsSource="{Binding ListBoxItems}" />
 	    </Grid>
-	<Window>
+	<UserControl>
 {{endregion}}
 
 ## See Also

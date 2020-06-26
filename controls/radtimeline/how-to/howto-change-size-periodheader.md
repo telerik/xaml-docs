@@ -18,7 +18,7 @@ The period header zone can be customized by using __PeriodHeaderStyle__ property
 
 You can use a custom Style to customize the period header. The following example demonstrates this approach. First we are going to declare our RadTimeline control.
  
-#### __[XAML] Example 1: Declase RadTimeline control__
+#### __[XAML] Example 1: Declare RadTimeline control__
 {{region radtimeline-howto-change-size-periodheader-0}}
 	<telerik:RadTimeline PeriodStart="2019-2-24" PeriodEnd="2020-2-24" Height="200">
 		<telerik:RadTimeline.Intervals>

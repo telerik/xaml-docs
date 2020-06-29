@@ -228,7 +228,7 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
 {{region radrichtextbox-getting-started_4}}
 
     RadDocument document;
-    Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.new DocxFormatProvider();
+    Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
 
     using (Stream stream = Application.GetResourceStream(GetResourceUri("sampleDocument.docx")).Stream)
     {

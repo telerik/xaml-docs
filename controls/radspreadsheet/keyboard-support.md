@@ -81,7 +81,7 @@ By default, __RadSpreadSheet__ supports keyboard shortcuts that allow you to per
 
 The above shortcuts can be customized. To change a shortcut you need to register it using the __RegisterCommand__ method. For example you can change the behavior of the Enter key and make it go to next column instead of the next row. If the ActiveWorksheetEditor is changed you will need to register the command again. This is why it would be better to use the __ActiveSheetEditorChanged__ event for this.
 
-#### __C# Change the behavior of the Enter key__
+#### __C# Example 1: Change the behavior of the Enter key__
 {{region radspreadsheet-keyboard-support_0}}
 
     private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
@@ -98,11 +98,11 @@ The above shortcuts can be customized. To change a shortcut you need to register
 
 Please note that the above code will override the default enter command. 
 
-## Registering a custom command
+## Registering a Custom Command
 
 It is possible to register a shortcut that executes a custom command. All you need to do is pass the command when registering the shortcut. 
 
-#### __C# Associate a custom command with a shortcut__
+#### __C# Example 2: Associate a custom command with a shortcut__
 
 {{region radspreadsheet-keyboard-support_1}}
 
@@ -121,11 +121,11 @@ It is possible to register a shortcut that executes a custom command. All you ne
 
 {{endregion}}
 
-## Disable a command
+## Disable a Command
 
 To disable a specific shortcut you can register the same key combination and pass an empty command.
 
-#### __C# Disable a specific command__
+#### __C# Example 3: Disable a specific command__
 
 {{region radspreadsheet-keyboard-support_2}}
 

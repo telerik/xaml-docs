@@ -55,7 +55,7 @@ The selection feature supports several modes which you can set through the __Sel
 ## Related Properties
 
 __RadTreeMap__ and __RadPivotMap__ controls expose several properties which allow you to access the current selected item(s).
-* __SelectedItem__: Gets othe selected item.
+* __SelectedItem__: Gets the selected item.
 * __SelectedItems__: Gets a read-only collection that contains the selected items.
 * __SelectedValue__: Gets or sets a value from the SelectedItem.
 * __SelectedValuePath__: Gets or sets a path that is used to get the SelectedValue for the SelectedItem.

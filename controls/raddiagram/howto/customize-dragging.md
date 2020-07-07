@@ -134,7 +134,7 @@ Next, we need to add properties that will configure the dragging service from th
 	            if (this.isRestrictedToBounds != value)
 	            {
 	                this.isRestrictedToBounds = value;
-	                this.OnPropertyChaged("IsRestrictedToBounds");
+	                this.OnPropertyChanged("IsRestrictedToBounds");
 	            }
 	        }
 	    }
@@ -169,7 +169,7 @@ Next, we need to add properties that will configure the dragging service from th
 	        }
 	    }
 	
-	    private void OnPropertyChaged(string name)
+	    private void OnPropertyChanged(string name)
 	    {
 	        if (this.PropertyChanged != null)
 	        {

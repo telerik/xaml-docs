@@ -10,31 +10,32 @@ position: 10
 
 # Parsing Without Separators
 
-With the Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadDateTimePicker__ provides new parsing logic which will allow the end users to enter dates in the input field directly without separators - the entered date will be parsed following the same rules as in a [military format]({%slug raddatetimepicker-features-militaryparsing%}).
+__RadDateTimePicker__ provides parsing logic which allows the end users to enter dates in the input field directly without separators. This feature can be enabled by setting the __AllowParsingWithoutSeparator__ property of the control to __True__. (Its default value is __False__)
 
-This feature can be enabled by setting __AllowParsingWithoutSeparator__ property of the control to __True__:
+>important When this feature is enabled, the entered date will be parsed according to the [military format]({%slug raddatetimepicker-features-militaryparsing%}) rules and you have to set the DateTimeFormats to one of the supported ones listed in the article in order for this feature to work correctly. 
 
-#### __XAML__
+#### __[XAML] Example 1: Setting the AllowParsingWithoutSeparator in xaml__
 
 {{region xaml-raddatetimepicker-features-parsing-without-separators_0}}
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" AllowParsingWithoutSeparator="True" />
 {{endregion}}
 
-
-
-#### __C#__
+#### __[C#] Example 2: Setting the AllowParsingWithoutSeparator in code__
 
 {{region cs-raddatetimepicker-features-parsing-without-separators_1}}
 	this.radDateTimePicker.AllowParsingWithoutSeparator = true;
 {{endregion}}
 
->The default value of __AllowParsingWithoutSeparator__ is __False__.
+#### __[VB.NET] Example 2: Setting the AllowParsingWithoutSeparator in code__
 
-Check below how the entered text is handled in both cases:
+{{region vb-raddatetimepicker-features-parsing-without-separators_2}}
+	Me.radDateTimePicker.AllowParsingWithoutSeparator = True
+{{endregion}}
 
+__Figure 1__ shows how the entered text is handled in both cases. In the first case the text is parsed as a month and day while in the second case - as a year, since no separators are entered.
+
+#### __Figure 1: DateTime parsing__
 ![datetimeparsing allowparsing](images/datetimeparsing_allowparsing.png)
-
-In the first case the text is parsed as a month and day while in the second case - as a year as no separators are entered.
 
 ## Parsing the Date part
 

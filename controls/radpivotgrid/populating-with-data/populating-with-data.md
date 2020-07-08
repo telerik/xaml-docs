@@ -21,7 +21,9 @@ Both __RadPivotGrid__ and __RadPivotFieldList__ have DataProvider property that 
 
 * [XmlaDataProvider]({%slug radpivotgrid-data-xmla%}) - Provides Cube data access and operations using Xmla. An OLAP cube is a method of storing data in a multidimensional form, generally for reporting purposes.
 
-* [AdomdDataProvider]({%slug radpivotgrid-data-adomd%}) - this provider is designed to communicate with Microsoft SQL Server Analysis Services. ADOMD.NET uses the XML for Analysis protocol to communicate with analytical data sources by using either TCP/IP or HTTP connections to transmit and receive SOAP requests and responses that are compliant with the XML for Analysis specification.   		   			
+* [AdomdDataProvider]({%slug radpivotgrid-data-adomd%}) - this provider is designed to communicate with Microsoft SQL Server Analysis Services. ADOMD.NET uses the XML for Analysis protocol to communicate with analytical data sources by using either TCP/IP or HTTP connections to transmit and receive SOAP requests and responses that are compliant with the XML for Analysis specification.  
+
+> RadPivotGrid supports both multidimensional and tabular OLAP Cubes (except the __DirectQuery__ mode of the Tabular cubes).
 
 * [QueryableDataProvider]({%slug radpivotgrid-data-queryable%}) - this provider is designed to work with any class that implements IQueryable interface. The main idea is to be used when the data is in database. It performs all calculations and aggregations in the database and only the grouped results are transferred.
 {% endif %}

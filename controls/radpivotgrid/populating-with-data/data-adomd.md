@@ -17,7 +17,9 @@ In this article we will show how to use __AdomdDataProvider__ and use data from 
 
 ## ADOMD.NET
 
-__ADOMD.NET__ is a Microsoft .NET Framework data provider that is designed to communicate with Microsoft SQL Server Analysis Services. __ADOMD.NET__ uses the XML for Analysis protocol to communicate with analytical data sources. More information about ADOMD can be found [here](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx).      		
+__ADOMD.NET__ is a Microsoft .NET Framework data provider that is designed to communicate with Microsoft SQL Server Analysis Services. __ADOMD.NET__ uses the XML for Analysis protocol to communicate with analytical data sources. More information about ADOMD can be found [here](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx).   
+
+> RadPivotGrid supports both multidimensional and tabular OLAP Cubes (except the __DirectQuery__ mode of the Tabular cubes).
 
 ## AdomdDataProvider
 

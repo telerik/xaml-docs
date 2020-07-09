@@ -42,7 +42,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 * __MenuIconAreaBackground__ - a brush that represents the background of the menu icon area.
 
-* __RadContetntMenuStyle__ - the default Style generated for the __RadContextMenu__.
+* __RadContextMenuStyle__ - the default Style generated for the __RadContextMenu__.
 
 >tipChanging the value of the resources can be done by clicking on the color indicator or the icon next to them.
 

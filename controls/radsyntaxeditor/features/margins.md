@@ -13,7 +13,7 @@ The RadSyntaxEditor control contains several panels inside its ControlTemplate, 
 
 ## Margin Panels
 
-__Example 1__ demonstrates how you can add some custom elements around the RadSyntaxEditor and provides a vizualization of the default locations for all panels. It also demonstrates the line numbers and [folding taggger]({%slug radsyntaxeditor-features-folding-taggers%}) features, which are implemented with the help of the left scrollable margin.
+__Example 1__ demonstrates how you can add some custom elements around the RadSyntaxEditor and provides a visualization of the default locations for all panels. It also demonstrates the line numbers and [folding taggger]({%slug radsyntaxeditor-features-folding-taggers%}) features, which are implemented with the help of the left scrollable margin.
 
 #### __[XAML] Example 1: Defining the RadSyntaxEditor__
 {{region xaml-radsyntaxeditor-features-margins-0}}

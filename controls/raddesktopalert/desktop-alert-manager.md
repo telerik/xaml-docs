@@ -131,7 +131,8 @@ __Example 3__ demonstrates how to display an alert in a MVVM scenario:
 	    Content = "Hello, Here are two things that we noticed today on our front-end meeting",
 	    Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 },
 	    IconColumnWidth = 48,
-	    IconMargin = new Thickness(10, 0, 20, 0)
+	    IconMargin = new Thickness(10, 0, 20, 0),
+	    Sound = System.Media.SystemSounds.Beep
 	});
 {{endregion}}
 

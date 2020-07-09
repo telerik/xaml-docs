@@ -109,7 +109,7 @@ Next, we need to add properties that will configure the dragging service from th
 	{
 	    private bool isRestrictedToBounds;
 	    private bool isOn;
-	    private bool useRotaitonBounds;
+	    private bool useRotationBounds;
 	
 	    public MyDragging(RadDiagram graph)
 	        : base(graph as IGraphInternal)
@@ -117,7 +117,7 @@ Next, we need to add properties that will configure the dragging service from th
 	        //initialize the properties of the service
 	        this.DragAllowedArea = Rect.Empty;
 	        this.IsOn = true;
-	        this.UseRotaitonBounds = true;
+	        this.UseRotationBounds = true;
 	    }
 	
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -138,18 +138,18 @@ Next, we need to add properties that will configure the dragging service from th
 	            }
 	        }
 	    }
-	    public bool UseRotaitonBounds
+	    public bool UseRotationBounds
 	    {
 	        get
 	        {
-	            return this.useRotaitonBounds;
+	            return this.useRotationBounds;
 	        }
 	        set
 	        {
-	            if (this.useRotaitonBounds != value)
+	            if (this.useRotationBounds != value)
 	            {
-	                this.useRotaitonBounds = value;
-	                this.OnPropertyChaged("UseRotaitonBounds");
+	                this.useRotationBounds = value;
+	                this.OnPropertyChaged("UseRotationBounds");
 	            }
 	        }
 	    }

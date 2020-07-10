@@ -38,7 +38,7 @@ To re-apply the customized style, you can set the Style property of RadWindow.
 	radWindow.Style = (Style)this.Resources["CustomRadWindowStyle"];
 {{endregion}}
 
->tip If you remove the x:Key setting of the style, it will get applied implicitly to all RadWindow controls in the scope where the style is defined. In this case, you don't need to set the Style property explicitly. In this case, it is recommend to define such implicit style in the App.xaml Resources.
+>tip If you remove the x:Key setting of the style, it will get applied implicitly to all RadWindow controls in the scope where the style is defined. In this case, you don't need to set the Style property explicitly. For RadWindow, it is recommend to define such implicit style in the App.xaml Resources.
 
 You can also use the Template property directly instead of the Style property.
 

@@ -12,7 +12,7 @@ position: 2
 
 __AutoComplete__ is a feature provided by many browsers, programs and controls. It involves the program predicting a word or phrase that the user wants to type without the user actually typing it in completely. __RadComboBox__ has full autocomplete support - while you type into the input area, the combobox returns the relative match for the currently typed text.
 
-> When the __TextSearchMode__ property of the RadComboBox is set to __Contains__, the __AutoComplete__ functionality will be disable.
+> When the __TextSearchMode__ property of the RadComboBox is set to __Contains__, the __AutoComplete__ functionality will be disabled.
 
 The purpose of this tutorial is to show you how to configure the autocomplete feature. The following sections are included:
 

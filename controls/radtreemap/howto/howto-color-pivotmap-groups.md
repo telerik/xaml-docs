@@ -1,6 +1,6 @@
 ---
-title: How to change the color of PivotMap groups
-page_title: How to change the color of PivotMap groups
+title: How to Change the Color of PivotMap Groups
+page_title: How to Change the Color of PivotMap Groups
 description: Check our &quot;How to change the color of PivotMap groups&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
 slug: radpivotmap-howto-change-color-group
 tags: bind,color,pivotmap,background,itemstyle
@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to change the color of PivotMap groups
+# How to Change the Color of PivotMap Groups
 
 This topic will show you how to change the colors of the PivotMap groups. 
 

@@ -1,11 +1,11 @@
 ---
-title: Bind the Color of TreeMapItems
-page_title: How to data bind the color of the TreeMapItems
+title: How to Bind the Volor of the TreeMapItems
+page_title: How to Bind the Color of the TreeMapItems
 description: Check our &quot;How to bind the color of the TreeMapItems&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
 slug: radtreemap-howto-bind-color
 tags: bind,color,treemapitem,background,itemstyle
 published: True
-position: 6
+position: 1
 ---
 
 # How to Bind the Color of the TreeMapItems
@@ -24,7 +24,8 @@ For the purpose of this example, we will create the following model.
 		public ObservableCollection<ItemInfo> Children { get; set; }
 
 		public ItemInfo()
-		{				
+		{
+				
 			this.Children = new ObservableCollection<ItemInfo>();
 		}
 	}
@@ -35,52 +36,50 @@ Next, we can go ahead and create sample data.
 #### __[C#] Example 2: Create Sample Data__
 {{region radtreemap-howto-bind-color-1}}
 	public class ViewModel
-	{
-		Random rnd = new Random();
-		public ObservableCollection<ItemInfo> Data { get; set; }
-	
-		public ViewModel()
-		{
-		    Data = GetData();
-		}
-	
-		private ObservableCollection<ItemInfo> GetData()
-		{
-		    var source = new ObservableCollection<ItemInfo>();
-		    for (int i = 0; i < 2; i++)
-		    {
-			var level1Item = new ItemInfo()
-			{
-			    Value = rnd.Next(10, 100),
-			    Label = "Level 1 Item - " + i,
-			    Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
-			};
+    {
+        Random rnd = new Random();
+        public ObservableCollection<ItemInfo> Data { get; set; }
+        public ViewModel()
+        {
+            Data = GetData();
+        }
+        private ObservableCollection<ItemInfo> GetData()
+        {
+            var source = new ObservableCollection<ItemInfo>();
+            for (int i = 0; i < 2; i++)
+            {
+                var level1Item = new ItemInfo()
+                {
+                    Value = rnd.Next(10, 100),
+                    Label = "Level 1 Item - " + i,
+                    Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
+                };
 
-			for (int y = 0; y < 2; y++)
-			{
-			    var level2Item = new ItemInfo()
-			    {
-				Value = rnd.Next(10, 100),
-				Label = "Level 2 Item - " + y,
-				Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
-			    };
+                for (int y = 0; y < 2; y++)
+                {
+                    var level2Item = new ItemInfo()
+                    {
+                        Value = rnd.Next(10, 100),
+                        Label = "Level 2 Item - " + y,
+                        Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
+                    };
 
-			    for (int k = 0; k < 2; k++)
-			    {
-				level2Item.Children.Add(new ItemInfo()
-				{
-				    Value = rnd.Next(10, 100),
-				    Label = "Level 3 Item - " + k,
-				    Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
-				});
-			    }
-			    level1Item.Children.Add(level2Item);
-			}
-			source.Add(level1Item);
-		    }
-		    return source;
-		}
-	}
+                    for (int k = 0; k < 2; k++)
+                    {
+                        level2Item.Children.Add(new ItemInfo()
+                        {
+                            Value = rnd.Next(10, 100),
+                            Label = "Level 3 Item - " + k,
+                            Fill = new SolidColorBrush(Color.FromRgb((byte)rnd.Next(1, 255), (byte)rnd.Next(1, 255), (byte)rnd.Next(1, 233)))
+                        });
+                    }
+                    level1Item.Children.Add(level2Item);
+                }
+                source.Add(level1Item);
+            }
+            return source;
+        }
+    }
 {{endregion}}
 
 Now, we can declare our RadTreeMap control in XAML. To bind the color of the items, we can use the __ItemStyle__ of the TypeDefinition. This property is of type Style which targets RadTreeMapItem.
@@ -103,7 +102,7 @@ Now, we can declare our RadTreeMap control in XAML. To bind the color of the ite
 And finally, we need to set our DataContext to the ViewModel.
 
 #### __[C#] Example 4: Setting our DataContext__
-{{region radtreemap-selection-3}}
+{{region radtreemap-howto-bind-color-3}}
 	public partial class MainWindow : Window
 	{
 		public MainWindow()

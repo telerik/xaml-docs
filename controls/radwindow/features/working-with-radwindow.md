@@ -154,22 +154,14 @@ To modify the default appearance of the __RadWindow__ you can use the following 
 
 {% if site.site_name == 'Silverlight' %}
 * __ModalBackground__ - changes the color of the background behind the __RadWindow__ when it is opened as a modal dialog.
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
+{% else %}
 >important__ModalBackground__ property is not supported in __RadWindow__ for WPF. The property is available for cross platform compatibility with Silverlight where the __ModalBackground__ appears in the browser.
 {% endif %}
 
-Also you can create a style and apply it to the __RadWindow__ or modify the default template of the __RadWindow__ to change its overall look. To learn more read the [Styles and Templates]({%slug radwindow-styles-and-templates-overview%}) section.
+Also you can create a style and apply it to the __RadWindow__ or modify the default template of the __RadWindow__ to change its overall look. To learn more read the [Styles and Templates]({%slug  radwindow-styles-and-templates-styling-the-predefined-windows%}) section.
 
-## See Also
-
+## See Also  
  * [Visual Structure]({%slug radwindow-visual-structure%})
-
  * [Events]({%slug radwindow-events-overview%})
-
- * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})
-
  * [Predefined Dialogs]({%slug radwindow-features-predefined-dialogs%})
-
  * [RadWindowManager]({%slug radwindow-features-radiwindowmanager%})

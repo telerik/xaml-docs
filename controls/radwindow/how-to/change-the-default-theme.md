@@ -10,7 +10,7 @@ position: 1
 
 # Change the Default Theme
 
-You can easily change the theme of __RadWindow__ to one of the predefined themes for UI for {{ site.framework_name }} using the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) or {% if site.site_name == 'WPF' %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %}{% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}.
+You can easily change the theme of __RadWindow__ to one of the predefined themes for UI for {{ site.framework_name }} using the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) or {% if site.site_name == 'WPF' %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}.
 
 * [Using Implicit Styles](#using-implicit-styles)
 * [Using StyleManager](#using-stylemanager)
@@ -148,7 +148,5 @@ To change the theme via the StyleManager you will need to make few steps.
 The end result is the same as in [Figure 1](#figure-1).
 	
 ## See Also  
- * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})
- * [Template Structure]({%slug radwindow-styles-and-templates-template-structure%})
  * [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%})
  * [Styling the Predefined Windows]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%})

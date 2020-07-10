@@ -29,7 +29,7 @@ res_type: kb
 How to set a different font size in C# for themes which support palettes.
 
 ## Solution
-When using any of the [Telerik themes]({%slug common-styling-appearance-list-of-themes%}) which support palettes (the ones with the links from the list), you can dynamically change the FontSize and FontFamily properties of all components in the application.
+When using any of the [Telerik themes]({%slug common-styling-appearance-available-themes%}) which support palettes (the ones with the links from the list), you can dynamically change the FontSize and FontFamily properties of all components in the application.
 
 Most controls use the theme Palette's FontSize property, yet all themes support a different number of various font sizes. For example, if the Office2016Theme is applied to your application, you can change the following font size properties of its palette:
 
@@ -56,11 +56,11 @@ The values assigned to the Palette's font size properties are the default ones. 
 #### __Figure 1: Setting different FontSize and FontFamily__
 ![](../images/common-styling-appearance-office2016-theme-1.png)	
 
-The approach used in the above code snippets is applicable for the following themes - [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Office2013]({%slug common-styles-appearance-office2013-theme%}#changing-fonts), [VisualStudio2013]({%slug common-styles-appearance-visualstudio2013-theme%}#changing-fonts), [Office2016]({%slug common-styles-appearance-office2016-theme%}#changing-fonts), [Office2016Touch]({%slug common-styles-appearance-office2016touch-theme%}#changing-fonts), [Green]({%slug common-styles-appearance-green-theme%}#changing-fonts), [Fluent]({%slug common-styles-appearance-fluent-theme%}#changing-fonts), [Material]({%slug common-styles-appearance-material-theme%}#changing-fonts), [Crystal]({%slug common-styles-appearance-crystal-theme%}#changing-fonts) and [VisualStudio2019]({%slug common-styles-appearance-visualstudio2019-theme%}#changing-fonts).
+The approach used in the above code snippets is applicable for the following themes - [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Office2013]({%slug common-styling-appearance-office2013-theme%}#changing-fonts), [VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme%}#changing-fonts), [Office2016]({%slug common-styling-appearance-office2016-theme%}#changing-fonts), [Office2016Touch]({%slug common-styling-appearance-office2016touch-theme%}#changing-fonts), [Green]({%slug common-styling-appearance-green-theme%}#changing-fonts), [Fluent]({%slug common-styling-appearance-fluent-theme%}#changing-fonts), [Material]({%slug common-styling-appearance-material-theme%}#changing-fonts), [Crystal]({%slug common-styling-appearance-crystal-theme%}#changing-fonts) and [VisualStudio2019]({%slug common-styling-appearance-visualstudio2019-theme%}#changing-fonts).
 
 >If you are using a different theme, which does not have a palette, you can change the font size of the application through Application.Current.MainWindow.FontSize or apply it directly for the control you wish, e.g. this.dataGrid.FontSize = 20.
 
 ## See Also
-[Available Themes](%slug common-styling-appearance-list-of-themes%)
+[Available Themes](%slug common-styling-appearance-available-themes%)
 [Theme Helper](%slug styling-appearance-theme-helper%)
 [Switching Themes at Runtime](%slug styling-apperance-themes-runtime%)

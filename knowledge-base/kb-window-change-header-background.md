@@ -1,33 +1,40 @@
 ---
-title: How To Change Header Background
-page_title: How To Change Header Background
-description: You can change RadWindow header background by extracting its default template
-slug: radwindow-styles-and-templates-how-to-change-header-background
-tags: styling,the,windows, header, default,template, change,extract
-published: True
-position: 4
+title: Change Header Background of RadWindow
+description: Modify Color RadWindow Header Background
+page_title: Replace Window Header Brush in Office2016 Theme
+type: how-to
+slug: kb-window-change-header-background
+position: 0
+tags: window,close, mvvm, button, custom, template
+ticketid: 313798
+res_type: kb
 ---
 
-# How To Change Header Background
+## Environment
+<table>
+	<tr>
+		<td>Product Version</td>
+		<td>2019.1.116</td>
+	</tr>
+	<tr>
+		<td>Product</td>
+		<td>RadWindow for WPF</td>
+	</tr>
+</table>
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadWindow control]({%slug radwindow-styles-and-templates-template-structure%}).
+## Description
 
-This article explains how you could customize the header of the RadWindow control by extracting its default template.
+How to change the header background of the RadWindow control in the Office2016 theme.
 
->tipThis article showcases the Office2016 theme.
+## Solution
 
-To change the header background of the RadWindow you will need to extract and edit the default template of the control. __Example 1__ holds the default template of the RadWindow based on the Office2016 theme. We will place all resources in a separate ResourceDictionary which we will merge in the App.xaml file.
+This approach shows how to change the background in the Office2016 theme, but the basic principle is the same - extract the ControlTemplate of RadWindow for the corresponding theme and change the brush.
 
-#### __[XAML] Example 1: Default RadWindow template based on the Office2016 theme__
-{{region xaml-radwindow-styles-and-templates-how-to-change-header-background_0}}
-	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-						xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-						 xmlns:animation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls"
-						xmlns:telerik1="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-						xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-						xmlns:sys="clr-namespace:System;assembly=mscorlib"
-						xmlns:navigation="clr-namespace:Telerik.Windows.Controls.Navigation;assembly=Telerik.Windows.Controls.Navigation"
-						xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation">
+To change the background [extract the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of RadWindow and change the Background property of the Border control with x:Name set to Header.
+
+#### __[XAML] Example 1: Extracted default ControlTemplate of RadWindow for Office2016 theme__ 
+{{region kb-window-change-header-background-0}}
+	<Application.Resources>
 		<SolidColorBrush x:Key="WindowModalBackground" Color="#FFCCE4FC"/>
 		<sys:String x:Key="GlyphClose"></sys:String>
 		<sys:String x:Key="GlyphMinimize"></sys:String>
@@ -290,7 +297,7 @@ To change the header background of the RadWindow you will need to extract and ed
 				</MultiTrigger>
 			</ControlTemplate.Triggers>
 		</ControlTemplate>
-		
+
 		<Style TargetType="telerikNavigation:RadWindow">
 			<Setter Property="FontFamily" Value="{telerik1:Office2016Resource ResourceKey=FontFamily}"/>
 			<Setter Property="FontSize" Value="{telerik1:Office2016Resource ResourceKey=FontSize}"/>
@@ -337,49 +344,14 @@ To change the header background of the RadWindow you will need to extract and ed
 				</Trigger>
 			</Style.Triggers>
 		</Style>
-	</ResourceDictionary>
+	</Application.Resources>
 {{endregion}}
 
-Next step is to locate a __Border__ element with x:Name="Header" which hold the header part and change its __Background__ property.
-
-#### __[XAML] Example 2: Change Border background__
-
-{{region xaml-radwindow-styles-and-templates-how-to-change-header-background_1}}
-	. . . .
-	 <Grid.RowDefinitions>
-		<RowDefinition Height="Auto" MinHeight="30"/>
-		<RowDefinition Height="*"/>
-	</Grid.RowDefinitions>
+#### __[XAML] Example 2: Modification of the Border Background that is applied to the header__ 
+{{region kb-window-change-header-background-1}}
+	<!-- other XAML -->
 	<Border x:Name="Header" Background="Red" CornerRadius="{telerik1:Office2016Resource ResourceKey=CornerRadiusTop}">
-		<Grid>
-	. . . . 	
+	<!-- other XAML -->
 {{endregion}}
 
-Now we need to merge the custom ResourceDictionary in the App.xaml file, so that the modified style will be applied to all RadWindow elements inside the application. In case you are using RadWindow as MainWindow, please refer to the [Use RadWindow as User Control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) for more information on how to apply the custom style to the main window.
-
-#### __[C#] Example 3: Merged the custom ResourceDictionary__
-
-{{region cs-radwindow-styles-and-templates-how-to-change-header-background_2}}
-	<Application x:Class="Wpf_App1.App"
-				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="MyWindowStyleResourceDictionary.xaml"/>                
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-	</Application>
-{{endregion}}
-
-#### __Figure 1: RadWindow with custom style__
-![](images/RadWindow_Styles_and_Templates_HowTo_Change_Header_Background.png)
-
-## See Also
-
- * [Template Structure]({%slug radwindow-styles-and-templates-template-structure%})
-
- * [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%})
-
- * [Change the Default Theme]({%slug radwindow-how-to-change-the-default-theme%})
+![](images/kb-window-change-header-background-0.png)

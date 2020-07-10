@@ -30,7 +30,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Predefined Dialogs__: Telerik __RadWindow__ provides an easy way to replace the standard non-customizable dialog boxes (alert, confirm, and prompt) provided by the browser. With __RadWindow__ you can blend the popup into the application’s design to achieve better user experience. [Read more]({%slug radwindow-features-predefined-dialogs%})
 
-* __Styling and Appearance__: Telerik __RadWindow__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several built-in skins that can be customized if needed. [Read more]({%slug radwindow-styles-and-templates-overview%})
+* __Styling and Appearance__: Telerik __RadWindow__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several built-in skins that can be customized if needed. 
 
 * __Configuration__: Telerik __RadWindow__ can be easily configured to suit the needs of your application. You have a full control over determining the initial [state]({%slug radwindow-features-states%}) and [position]({%slug radwindow-features-positioning%}) of the window, whether it can be [resized]({%slug radwindow-features-resizing%}), [closed]({%slug radwindow-features-closing%}) or [moved]({%slug radwindow-features-moving%}).
 
@@ -38,11 +38,9 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
-## See Also
-
+## See Also  
  * [Visual Structure]({%slug radwindow-visual-structure%})
  * [Getting Started]({%slug radwindow-getting-started%})
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
  * [Events]({%slug radwindow-events-overview%})
  * [End-User Capabilities]({%slug radwindow-end-user-capabilities%})
- * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})

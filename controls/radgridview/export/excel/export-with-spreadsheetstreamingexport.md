@@ -92,7 +92,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **ShowGroupRows**: Specifies whether the group rows should be exported (this property was introduced in **R3 2019**).
 - **Culture**: Sets a specific Culture (this property was introduced in **R3 2019**).
 - **IgnoreCollapsedGroups**: Specifies whether the collapsed groups should be exported (this property was introduced in **R3 2019**).
-- **ExludedColumns**: Specifies which columns to be excluded while exporting the control.
+- **ExcludedColumns**: Specifies which columns to be excluded while exporting the control.
 
 #### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
 

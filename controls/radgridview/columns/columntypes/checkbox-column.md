@@ -51,7 +51,7 @@ Here are the possible cases:
 	</telerik:RadGridView>
 {{endregion}}
 
-> Since the __GridViewCheckBoxColumn__ is specially designed to dispay checkboxes, setting its __CellTemplate__, __CellEditTemplate__, __CellTemplateSelector__ and __CellEditTemplateSelector__ is not supported. For such requirements, you can use a [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}).
+> Since the __GridViewCheckBoxColumn__ is specially designed to dispay checkboxes, setting its __CellTemplate__, __CellEditTemplate__, __CellTemplateSelector__ and __CellEditTemplateSelector__ is not supported. For such requirements, you can use a [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}). How to style the templates is [described here](https://docs.telerik.com/devtools/wpf/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn).
 
 ## See Also
 

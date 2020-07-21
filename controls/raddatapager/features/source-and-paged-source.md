@@ -16,9 +16,9 @@ The one most important property of the __RadDataPager__ is its __Source__ proper
 
 More often your collection __will not be__ an [IPagedCollectionView](http://msdn.microsoft.com/en-us/library/system.componentmodel.ipagedcollectionview%28VS.95%29.aspx). It will either be a simple [List<T>](http://msdn.microsoft.com/en-us/library/6sh2ey19.aspx), or an [ObservableCollection<T>](http://msdn.microsoft.com/en-us/library/ms668604.aspx), or anything that is simply an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx). Unless you had paging in mind when you designed your project, it is almost certain that your data source will not be pageable out of the box. From here on you have two options:
 
-* [Wrap your collection in an ___IPagedCollectionView___ / ___QueryableCollectionView___](#Wrapping_a_collection_in_an_IPagedCollectionViewQueryableCollectionView)
+* [Wrap your collection in an ___IPagedCollectionView___ / ___QueryableCollectionView___](#wrapping-a-collection-in-an-ipagedcollectionviewqueryablecollectionview)
 
-* [Bind to the __PagedSource__ property of the __RadDataPager__](#Binding_to_the_PagedSource_property_of_the_RadDataPager)
+* [Bind to the __PagedSource__ property of the __RadDataPager__](#binding-to-the-PagedSource-property-of-the-raddatapager)
 
 ## Wrapping a collection in an IPagedCollectionView / QueryableCollectionView
 

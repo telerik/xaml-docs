@@ -31,12 +31,25 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 * __IsMatchingCaseSensitive__: A __boolean__ property that gets or sets whether the matching between the start and end folding tags is case sensitive.
 
-#### __[C#] Example 2: Adding FoldingRegionDefinitions__
+* __MatchingAlgorithm__: A property of type __FoldingMatchingAlgorithm__ which determines the folding matching algorithm used to match start and end tag couples in the document. It has the following possible values:
+    
+    * **Default**: Valid (balanced) start-end tags are expected like brackets in regular expressions. This algorithm is the fastest one and runs in linear time.
+    
+    * **FirstMatch**: The first matching end tag in document is used to match the current start tag. This algorithm is slower than the Default algorithm but can be used in non-balanced start-end tags structures.
+    
+    * **LastMatch**: The last matching end tag in document is used to match the current start tag. This algorithm is also slower than the Default algorithm but can be used in non-balanced start-end tags structures.
+
+#### __[C#] Example 2: Setting the custom folding tagger's properties__
 {{region cs-radsyntaxeditor-features-folding-taggers-2}}
-    public CustomFoldingTagger(ITextDocumentEditor editor) : base(editor)
+    public class CustomFoldingTagger : FoldingTaggerBase
     {
-        this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("FUNCTION", "END"));
-        this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("IF", "END IF"));
+        public CustomFoldingTagger(ITextDocumentEditor editor) : base(editor)
+        {
+            this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("FUNCTION", "END"));
+            this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("IF", "END IF"));
+            this.IsMatchingCaseSensitive = true;
+            this.MatchingAlgorithm = FoldingMatchingAlgorithm.FirstMatch;
+        }
     }
 {{endregion}}
 

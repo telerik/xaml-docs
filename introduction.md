@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Welcome to Telerik UI for {{ site.framework_name }}.
+# Welcome to Telerik UI for {{ site.framework_name }}
 
 <!--{% if site.site_name == 'Silverlight' %}
 <img src="images/UI_for_SL_logo.png" style="min-width:334px;width: 30%;" alt="Telerik UI for Silverlight logo" />

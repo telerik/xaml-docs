@@ -140,7 +140,8 @@ controls/radfilepathpicker,
 netcore/,
 controls/radtaskboard,
 controls/radnotifyicon,
-controls/radcallout]
+controls/radcallout,
+controls/radentityframeworkcoredatasource]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

@@ -890,6 +890,8 @@ navigation:
     controls/raddataservicedatasource/how-to:		
         title: How To
         position: 12
+    controls/radentityframeworkcoredatasource:
+        title: RadEntityFrameworkCoreDataSource
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -3763,6 +3765,7 @@ intro_columns:
       "DataPager": "datapager-overview"
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
+      "EntityFrameworkCoreDataSource": "entityframeworkcore-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
       "DataGrid": "gridview-overview2"
       "VirtualGrid": "virtualgrid-overview"

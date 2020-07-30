@@ -53,6 +53,7 @@ RadDesktopAlert	|	Telerik.Windows.Controls.Navigation
 RadDiagram	|	Telerik.Windows.Controls.Diagrams, Telerik.Windows.Diagrams.Core
 RadDocking	|	Telerik.Windows.Controls.Docking, Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadEntityFrameworkDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.EntityFramework
+RadEntityFrameworkCoreDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.EntityFrameworkCore (.NET Core version)
 RadExpander	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadExpressionEditor	|	Telerik.Windows.Controls.Expressions, Telerik.Windows.Data, Telerik.Windows.Documents, Telerik.Windows.Controls.Navigation
 RadFileDialogs | Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.FileDialogs, Telerik.Windows.Data

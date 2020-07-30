@@ -58,6 +58,23 @@ __Example 1__ demonstrates how you can set up the RadEntityFrameworkCoreDataSour
     <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkCoreDataSource}"/>
 {{endregion}}
 
+## RelatedObjects
+
+The __RelatedObjects__ property of the RadEntityFrameworkCoreDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders"  collection in case you want to get the related Orders for each Customer from the database. You can also specify several navigational property names separated by "/" characters and the control will use the ".ThenInclude()" method when retrieving them. 
+
+#### __[XAML] Example 2: Using the RelatedObjects__
+{{region xaml-entityframeworkcore-getting-started-1}}
+
+    <telerik:RadEntityFrameworkCoreDataSource x:Name="coreDataSource" QueryName="Customers">
+        <telerik:RadEntityFrameworkCoreDataSource.RelatedObjects>
+            <sys:String>Orders/OrderDetails</sys:String>
+        </telerik:RadEntityFrameworkCoreDataSource.RelatedObjects>
+        <telerik:RadEntityFrameworkCoreDataSource.DbContext>
+            <local:NorthwindContext />
+        </telerik:RadEntityFrameworkCoreDataSource.DbContext>
+    </telerik:RadEntityFrameworkCoreDataSource>
+{{endregion}}
+
 ## See also
 
 * [RadGridView]({%slug gridview-getting-started2%})

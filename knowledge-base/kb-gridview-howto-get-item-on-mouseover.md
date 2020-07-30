@@ -5,7 +5,7 @@ type: howto
 page_title: Access the model shown in the hovered GridViewRow 
 slug: kb-gridview-howto-get-item-on-mouseover
 position: 0
-tags: selection, datapager, persist, preserve, save
+tags: mouseover, item, model, row
 ticketid: 1445462
 res_type: kb
 ---

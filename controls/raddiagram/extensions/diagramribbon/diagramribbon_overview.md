@@ -159,6 +159,18 @@ Since the __R2 2019 SP1__ version, you have the option of changing the default l
 #### __Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
 ![RadDiagramRibbon Simplified LayoutMode](images/RadDiagram_DiagramRibbon_SimplifiedLayoutMode.gif)
 
+## Diagram Active Tool 
+
+The RadDiagramRibbon control allows you to set the currently active tool in the corresponding RadDiagram control. You can do this via the __Tools__ group in the ribbon's UI, or the __ActiveToolType__ property of RadDiagramRibbon.
+
+#### __[XAML] Example 8: Setting ActiveToolType to Text tool__
+{{region xaml-raddiagram-extensions-diagramribbon-overview-7}}
+	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ActiveToolType="Text" />
+{{endregion}}
+
+#### __Figure 5: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+![RadDiagramRibbon ActiveToolType](images/RadDiagram_DiagramRibbon_ActiveToolType.png)
+
 ## See Also
 
 * [Getting Started]({%slug raddiagram-getting-started%})

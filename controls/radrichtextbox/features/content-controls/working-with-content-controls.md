@@ -1,6 +1,6 @@
 ---
-title: Working with content controls
-page_title:  Working with content controls
+title: Working with Content Controls
+page_title:  Working with Content Controls
 description: This article show you you can access the content controls in code
 slug: radrichtextbox-features-working-with-content-controls
 tags: content controls, richtextbox
@@ -56,7 +56,7 @@ This example show how one can iterate the items and add an item to to a existing
 
 ## Insert New Content Controls
 
-New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor}):
+New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}):
 
 #### Example 3: Inserting a content control
 
@@ -93,7 +93,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
         Alias = "AliasName",
         Lock = Lock.SdtContentLocked,
     };
-    this.radRichTextBox..InsertStructuredDocumentTag(sdtProperties);
+    this.radRichTextBox.InsertStructuredDocumentTag(sdtProperties);
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertStructuredDocumentTag(sdtProperties);

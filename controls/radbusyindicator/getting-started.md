@@ -12,10 +12,7 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains __RadBusyIndicator__. 
 
-* [Assembly References](#assembly-references)
-* [Adding RadBusyIndicator to the Project](#adding-radbusyindicator-to-the-project)
-* [Enabling RadBusyIndicator](#enabling-radbusyindicator)
-* [Progress Determination, Custom BusyContent, Delaying of display](#progress-determination-custom-busycontent-delaying-of-display)
+> The __RadBusyIndicator__ is displayed on the UI thread. If this thread is blocked, the control will not be shown. It is meant to indicate to the user that there is a long running background task/process.
 
 ## Assembly References
 
@@ -120,3 +117,5 @@ You can notify the users about an ongoing process with a specific delay when __R
  * [Visual Structure]({%slug radbusyindicator-visual-structure%})
 
  * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
+
+ * [Integrate with services and a RadWindow]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})

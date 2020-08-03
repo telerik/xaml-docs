@@ -33,46 +33,47 @@ The following code snippet demonstrates how to get an image from the clipboard a
 
 #### __[C#]__
 {{region cs-kb-image-editor-paste-image-from-clipboard-0}}
-  this.ImageEditor.KeyUp += (s, e) =>
-  {
-      if (e.Key == Key.V && KeyboardModifiers.IsControlDown)
-      {
-          var image = Clipboard.GetImage();
-          if (image != null)
-          {
-              this.ImageEditor.Image = new RadBitmap(image);
-          }
-          else
-          {
-              var files = Clipboard.GetFileDropList();
 
-              if (files.Count > 0)
-              {
-                  var file = new FileStream(files[0], FileMode.Open);
-                  this.ImageEditor.Image = new RadBitmap(file);
-              }
-          }
-      }
-  };
+	this.ImageEditor.KeyUp += (s, e) =>
+	{
+		if (e.Key == Key.V && KeyboardModifiers.IsControlDown)
+		{
+			var image = Clipboard.GetImage();
+			if (image != null)
+			{
+				this.ImageEditor.Image = new RadBitmap(image);
+			}
+			else
+			{
+				var files = Clipboard.GetFileDropList();
+
+				if (files.Count > 0)
+				{
+				 	var file = new FileStream(files[0], FileMode.Open);
+				 	this.ImageEditor.Image = new RadBitmap(file);
+				}
+			}
+		}
+	};
 {{endregion}}
 
 #### __[VB.NET]__
 {{region vb-kb-image-editor-paste-image-from-clipboard-0}}
-  AddHandler Me.ImageEditor.KeyUp, Sub(s, e)
-    If e.Key = Key.V AndAlso KeyboardModifiers.IsControlDown Then
-      Dim image = Clipboard.GetImage()
-      If image IsNot Nothing Then
-        Me.ImageEditor.Image = New RadBitmap(image)
-      Else
-        Dim files = Clipboard.GetFileDropList()
 
-        If files.Count > 0 Then
-          Dim file = New FileStream(files(0), FileMode.Open)
-          Me.ImageEditor.Image = New RadBitmap(file)
-        End If
-      End If
-    End If
-  End Sub
+ 	AddHandler Me.ImageEditor.KeyUp, Sub(s, e)
+		If e.Key = Key.V AndAlso KeyboardModifiers.IsControlDown Then
+		  Dim image = Clipboard.GetImage()
+		  If image IsNot Nothing Then
+			Me.ImageEditor.Image = New RadBitmap(image)
+		  Else
+			Dim files = Clipboard.GetFileDropList()
+			If files.Count > 0 Then
+				Dim file = New FileStream(files(0), FileMode.Open)
+				Me.ImageEditor.Image = New RadBitmap(file)
+			End If
+		  End If
+		End If
+	End Sub
 {{endregion}}
 
 The first if statement checks whether an image was copied from another image. If this is not the case, we check whether a whole image file has been copied to the clipboard.

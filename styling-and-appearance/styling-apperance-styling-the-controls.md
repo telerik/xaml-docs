@@ -79,6 +79,8 @@ You will then need to set the control's **DefaultStyleKey**.
 
 **Example 4** lists the XAML files corresponding to the Telerik assemblies and the dependencies between them.
         
+>If you are using **.NET Core**, note that you have to use **Telerik.Windows.Controls.RichTextBox.xaml** instead of **Telerik.Windows.Documents.xaml** and **Telerik.Windows.Controls.RichTextBoxUI.xaml**.
+	
 #### __[XAML] Example 4: All XAML files corresponding to the Telerik assemblies__
 
 {{region styling-apperance-implicit-styles-overview_3}}

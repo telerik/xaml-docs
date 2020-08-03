@@ -311,7 +311,7 @@ To use the custom definition you can create a multidimensional array of CustomHe
 > The implementation shown in this example is merely a proof of concept. The main idea of the article is to show you the entry point that you can use in order to create a custom source and use it with the RadHeatMap control.
 <!-- -->
 {% if site.site_name == 'WPF' %}
->tip You can find a runnable example showing this approach in our [GitHub SDK Examples repository](https://github.com/telerik/xaml-sdk/tree/master/HeatMap/WPF/CustomHeatMapSourceAndDefinition).
+>tip You can find a runnable example showing this approach in our [GitHub SDK Examples repository](https://github.com/telerik/xaml-sdk/tree/master/HeatMap/WPF/CustomHeatMapSource).
 {% endif %}
 
 ## See Also

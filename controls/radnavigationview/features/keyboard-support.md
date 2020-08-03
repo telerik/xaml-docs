@@ -21,9 +21,9 @@ This section describes the keyboard shortcuts supported by __RadNavigationView__
 
 * __Down__: Highlights the next RadNavigationViewItem.
 
-* __Left__: Highlights the previous RadNavigationViewItem. If the currently, highlighted item has children and it is expanded, it will collapse it.
+* __Left__: Highlights the previous RadNavigationViewItem. If the currently highlighted item has children and it is expanded, it will collapse it.
 
-* __Right__: Highlights the next RadNavigationViewItem. If the currently, highlighted item has children and it is collapsed, it will expand it.
+* __Right__: Highlights the next RadNavigationViewItem. If the currently highlighted item has children and it is collapsed, it will expand it.
 
 * __PageUp__: Highlights the 10th item previous to the currently highlighted item or the first item if there are less than 10.
 

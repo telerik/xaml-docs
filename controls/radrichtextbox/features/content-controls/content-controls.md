@@ -32,7 +32,6 @@ The contented controls can be defined on __Block__, __Inline__, __Row__ or __Cel
 * __Picture__
 * __RichText__
 * __Text__
-* __PlaceHolder__
 * __RepeatingSection__
 * __RepeatingSectionItem__
 

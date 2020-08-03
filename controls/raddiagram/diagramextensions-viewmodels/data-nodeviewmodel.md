@@ -42,6 +42,10 @@ Inherited Properties
 |Content|Gets or sets an object that represents the content of a shape.|
 |IsSelected|Gets or sets a boolean value indicating whether the represented shape is selected.|
 
+## Serialize NodeViewModelBase With Custom Properties
+
+When specifying custom properties, the name of the properties must differ from the names declared in the __SerializationConstants.cs__ class. Otherwise, the serialization mechanism of the RadDiagram won't work as expected.
+
 ## See Also
  * [ItemViewModelBase]({%slug raddiagram-data-itemviewmodels%})
  * [ContainerNodeViewModelBase]({%slug raddiagram-data-containernodeviewmodel%})

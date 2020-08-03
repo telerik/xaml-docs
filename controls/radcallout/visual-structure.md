@@ -14,7 +14,9 @@ This section defines terms and concepts used in the scope of the __RadCallout__ 
 
 ![RadCallout visual structure](images/callout_visual_structure.png)
 
-* **Element**:  Description
+* **Body**:  Represent the type of control. You can change the type by setting __CalloutType__ property.
+* **Content**:  Represent the content of the element.
+* **Arrow**:  Represent the arrow of the control. The arrow can be customized through __ArrowType, ArrowAnchorPoint, ArrowBasePoint1, ArrowBasePoint2__ properties.
 
 ## See Also  
 * [Getting Started]({%slug radcallout-getting-started%})

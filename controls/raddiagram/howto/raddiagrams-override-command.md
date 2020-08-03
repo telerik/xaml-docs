@@ -44,7 +44,7 @@ The following steps describe how to override the __DiagramCommands.Delete__ comm
 	
 3. Implement the __OnExecute__ handle of the command. Here is implemented the behavior of the command. The following code shows how to create very basic delete operation.
 		
-	#### __[C#] Example 3: Implementing OnCanExecute__  
+	#### __[C#] Example 3: Implementing OnExecute__  
 	{{region raddiagrams-howto-override-command-2}}	
 		static void OnDiagramDeleteCommandExecute(object sender, ExecutedRoutedEventArgs e)
         {
@@ -73,7 +73,7 @@ The following steps describe how to override the __DiagramCommands.Delete__ comm
 
 You can use the __CommandExecuted__ event of RadDiagram to implement an additional action which will get invoked after the execution of a built-in command. The event arguments allows you to get the execute action and the command itself via the __Command__ and __ExecuteAction__ properties.
 
-#### __[C#] Example 4: Implementing OnCanExecute__  
+#### __[C#] Example 4: Implementing command execute handler__  
 {{region raddiagrams-howto-override-command-3}}	
 	private void RadDiagram_CommandExecuted(object sender, Telerik.Windows.Controls.Diagrams.CommandRoutedEventArgs e)
 	{            

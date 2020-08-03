@@ -12,6 +12,8 @@ position: 4
 
 The __TaskBoardColumnDragDropBehavior__ provides drag-drop capabilities for the standard RadTaskBoard control. It automatically recognizes its host control item type and automatically adds the dragged items that are of this type.
 
+The drag-drop behavior is available since __R1 2020 SP1__.
+
 >In some cases, the __TaskBoardColumnDragDropBehavior__ will be unable to recognize its host's item type correctly. The **ItemType** property is provided for such cases.
 
 #### __[C#] Example 1: Specified the typed of the dragged item__

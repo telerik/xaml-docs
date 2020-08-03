@@ -33,7 +33,7 @@ The purpose of this help article is to show you the key properties of the __RadC
 * __DisplayDate__: This property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
 
 #### __[XAML] Example 1: Setting DisplayDate__
-{{region radcalendar-keyproperties-0}}
+{{region xaml-radcalendar-keyproperties-0}}
 	<telerik:RadCalendar DisplayDate="4/1/2018"/>
 {{endregion}}
 
@@ -56,6 +56,13 @@ You can apply a string format to the header of the different views through the f
 * __DecadeViewHeaderFormat__: Gets or sets the format for the header of the decade view of the calendar.
 * __YearViewHeaderFormat__: Gets or sets the format for the header of the year view of the calendar.
 * __CenturyViewHeaderFormat__: Gets or sets the format for the header of the century view of the calendar.
+
+#### __[XAML] Example 2: Setting MonthViewHeaderFormat__
+{{region xaml-radcalendar-keyproperties-1}}
+	<telerik:RadCalendar MonthViewHeaderFormat="MMMM" />
+{{endregion}}
+
+> Check out the [Custom date and time format strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) article to learn about the possible format strings. 
 
 ## Controling the MoveRight and MoveLeft Buttons Visibility
 

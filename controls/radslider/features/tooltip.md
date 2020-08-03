@@ -51,7 +51,31 @@ When selection range is enabled, the tooltip will appear on the start thumb or t
 #### __Figure 4: ToolTip in range selection functionality__
 ![RadSlider ToolTip AutoToolTipPlacement RangeToolTip](images/RadSlider_AutoToolTipPlacement_RangeSelection_03.png)
 
+## ThumbToolTipStyle
+
+With the __R2 2020__ version of Telerik UI for WPF controls, the RadSlider control exposes a __ThumbToolTipStyle__ property which can be used to customize the thumb tooltip. __Example 4__ demonstrates how we can use this property to add RadCallout control inside the thumb tooltip.
+
+#### __[XAML] Example 4: Callout as a ToolTip for RadSlider Thumb__
+{{region  xaml-radslider-tooltip-04}}
+	<telerik:RadSlider AutoToolTipPlacement="TopLeft" Minimum="0" Maximum="100" LargeChange="5" SmallChange="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" > 
+		<telerik:RadSlider.ThumbToolTipStyle> 
+			<Style TargetType="ToolTip"> 
+				<Setter Property="BorderThickness" Value="0"/> 
+				<Setter Property="Background" Value="Transparent"/> 
+			</Style> 
+		</telerik:RadSlider.ThumbToolTipStyle> 
+		<telerik:RadSlider.AutoToolTipContentTemplate> 
+			<DataTemplate> 
+				<telerik:RadCallout  Margin="5 5 5 10" > 
+					<TextBlock Text="{Binding .,  StringFormat=N2}" /> 
+				</telerik:RadCallout> 
+			</DataTemplate> 
+		</telerik:RadSlider.AutoToolTipContentTemplate> 
+    </telerik:RadSlider>     
+{{endregion}}
+
 ## See Also
  * [Getting Started]({%slug radslider-declaration%})	
  * [Orientation]({%slug radslider-orientation%})
  * [Direction]({%slug radslider-direction%})
+ * [RadCallout Overview]({%slug radcallout-overview%})

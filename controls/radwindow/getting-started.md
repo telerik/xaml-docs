@@ -191,14 +191,8 @@ If you are using [Implicit Styles]({%slug implicit-styles-styling-the-controls%}
 	</Application.Resources>
 {{endregion}}
 
-## See Also
-
+## See Also  
  * [Visual Structure]({%slug radwindow-visual-structure%})
-
  * [Predefined Dialogs]({%slug radwindow-features-predefined-dialogs%})
-
  * [RadWindowManager]({%slug radwindow-features-radiwindowmanager%})
-
  * [Events]({%slug radwindow-events-overview%})
-
- * [Styles and Templates - Overview]({%slug radwindow-styles-and-templates-overview%})

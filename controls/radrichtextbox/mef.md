@@ -132,7 +132,7 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(PlainTextPropertiesDialog),
     typeof(RichTextPropertiesDialog),
     typeof(RepeatingSectionPropertiesDialog),
-    typeof(PicturePropertiesDialog)
+    typeof(PicturePropertiesDialog));
 {{endregion}}
 
 You could remove all the types you won’t need in your application.

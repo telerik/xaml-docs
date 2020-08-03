@@ -41,6 +41,7 @@ This tutorial demonstrates how you can build a self-referencing hierarchy.
 {{region cs-gridview-self-referencing-grid_1}}
 	public class MyViewModel
     {
+    	private ObservableCollection<Employee> employees;
         public ObservableCollection<Employee> Employees
         {
             get
@@ -379,9 +380,6 @@ You can specify more than one __FiledDescriptorNamePair__. For example, define a
 							<telerik:FieldDescriptorNamePair
 								ParentFieldDescriptorName="Id"
 								ChildFieldDescriptorName="ManagerId" />
-							<telerik:FieldDescriptorNamePair
-								ParentFieldDescriptorName="Title"
-								ChildFieldDescriptorName="Title" />
 						</telerik:TableRelation.FieldNames>
 					</telerik:TableRelation>
 				</telerik:GridViewTableDefinition.Relation>

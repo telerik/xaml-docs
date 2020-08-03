@@ -14,12 +14,12 @@ The __RadColorEditor__ control allows supports the most popular color models. Yo
 
 The __ColorMode__ property is an enumeration of type __ColorMode__ and it exposed the following members:				
 
-	#### __[XAML] Example 1: Set the color model to RGB__
-	{{region radcoloreditor-features-color-mode_0}}
-		<telerik:RadColorEditor x:Name="colorEditor" SelectedColor="Red" ColorMode="RGB"/>
-	{{endregion}}
+#### __[XAML] Example 1: Set the color model to RGB__
+{{region radcoloreditor-features-color-mode_0}}
+	<telerik:RadColorEditor x:Name="colorEditor" SelectedColor="Red" ColorMode="RGB"/>
+{{endregion}}
 
-* __RGB__: Sets the color model to[RGB(Red, Green and Blue)](http://en.wikipedia.org/wiki/RGB_color_model)  
+* __RGB__: Sets the color model to [RGB(Red, Green and Blue)](http://en.wikipedia.org/wiki/RGB_color_model)  
 	![radcoloreditor-features-rgb](images/radcoloreditor-features-rgb.png)
 
 	#### __[XAML] Example 2: Set the color model to HLS__

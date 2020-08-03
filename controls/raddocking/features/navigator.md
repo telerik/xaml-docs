@@ -43,9 +43,9 @@ The __DockingNavigator__ control consists of two listboxes allowing for the navi
 The __DockingNavigator__ exposes several attached properties which can be set on RadPane/RadDocumentPane instances in order to transfer information, which can be displayed while navigating. Those properties are used to prepare a __NavigatorItemViewModel__ object, which is the DataContext inside the __ItemTemplateSelector__.
 
 * __Icon__: Gets or sets an object that will represent the icon for that pane.
-* __Header__: Gets or sets a string that will represent the header for that pane. 
-* __Footer__: Gets or sets a string that will represent the footer for that pane. 
-* __Description__: Gets or sets a string that will represent the description for that pane. 
+* __Header__: Gets or sets a object that will represent the header for that pane. 
+* __Footer__: Gets or sets a object that will represent the footer for that pane. 
+* __Description__: Gets or sets a object that will represent the description for that pane. 
 
 ## Navigator Property 
 

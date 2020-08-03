@@ -1,21 +1,21 @@
 ---
-title: Working with UI Selection
-page_title: Working with UI Selection
-description: Check our &quot;Working with UI Selection&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+title: Working with Selection
+page_title: Working with Selection
+description: Check our &quot;Working with Selection&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True
 position: 0
 ---
 
-# Working with UI Selection
+# Working with Selection
 
 
 
 This article aims to present the API of the Selection class and demonstrate how to retrieve and change the current selection and also store and restore its state. 
       
 
-## What is UI Selection?
+## What is Selection?
 
 In order to interact with the working surface of RadSpreadsheet, the user creates a UI selection. The selection can be two types: cell selection and shape selection.
         
@@ -29,7 +29,7 @@ The shape selection can contain one or more shapes.
 
 ## Selection Properties
 
-The RadWorksheetEditor class exposes a __Selection__ property of type __Selection__ that provides rich API for retrieving and changing the UI Selection of the RadSpreadsheet. The class Selection exposes several properties that provide information about the current selection. The following list outlines the properties of Selection:
+The [RadWorksheetEditor](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.spreadsheet.worksheets.radworksheeteditor) class exposes a __Selection__ property of type __Selection__ that provides rich API for retrieving and changing the UI Selection of the RadSpreadsheet. The class Selection exposes several properties that provide information about the current selection. The following list outlines the properties of Selection:
         
 
 * __ActiveCell__: Returns a CellSelection instance containing the active cell.
@@ -91,7 +91,7 @@ The class Selection also exposes an **ActiveCell** property that designates the 
 
 
 
-#### __[VB] Example 1: Change ActiveCellMode to Edit__
+#### __[VB.NET] Example 1: Change ActiveCellMode to Edit__
 
 {{region radspreadsheet-ui-working-with-selection_0}}
 
@@ -126,7 +126,7 @@ One of the **Select()** overloads gets a **CellIndex** parameter that points to 
 
 
 
-#### __[VB] Example 2: Using the clearSelection parameter of Select()__
+#### __[VB.NET] Example 2: Using the clearSelection parameter of Select()__
 
 {{region radspreadsheet-ui-working-with-selection_1}}
 
@@ -149,7 +149,7 @@ The Selection class also offers a **Select()** method that takes a **CellRange**
 
 
 
-#### __[VB] Example 3: Select the C3:D4 cell region__
+#### __[VB.NET] Example 3: Select the C3:D4 cell region__
 
 {{region radspreadsheet-ui-working-with-selection_2}}
 
@@ -175,7 +175,7 @@ Another overload of the Select() method takes as input two **CellIndex** instanc
 
 
 
-#### __[VB] Example 4: Select a region with a specific active cell__
+#### __[VB.NET] Example 4: Select a region with a specific active cell__
 
 {{region radspreadsheet-ui-working-with-selection_3}}
 
@@ -202,8 +202,14 @@ The result from the image can be achieved with the sample code from **Example 5*
     selection.Select(image);
 {{endregion}}
 
+#### __[VB.NET] Example 5: Select a shape__
 
+{{region radspreadsheet-ui-working-with-selection_7}}
 
+    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
+    Dim image As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Shapes.First(), FloatingImage)
+    selection.[Select](image)
+{{endregion}}
 If you would like to select the second image while deselecting the first one, this can be achieved with the following code:
         
 
@@ -217,7 +223,14 @@ If you would like to select the second image while deselecting the first one, th
     selection.Select(image2, true);
 {{endregion}}
 
+#### __[VB.NET] Example 6: Select a shape and clear the previous selection____
 
+{{region radspreadsheet-ui-working-with-selection_8}}
+    
+    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
+    Dim image2 As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Shapes.ElementAt(1), FloatingImage)
+    selection.[Select](image2, True)
+{{endregion}}
 
 The result will be the following:
  
@@ -244,7 +257,7 @@ The **Selection** class also exposes a **SelectAll()** method that selects all c
 
 
 
-#### __[VB] Example 7: Using SelectAll() and UsedCellRange with the Select(CellRange) method__
+#### __[VB.NET] Example 7: Using SelectAll() and UsedCellRange with the Select(CellRange) method__
 
 {{region radspreadsheet-ui-working-with-selection_4}}
 
@@ -259,7 +272,7 @@ The **Selection** class also exposes a **SelectAll()** method that selects all c
 
 ## Selection Events
 
-RadSpreadsheet has several selection events you can subscribe to:
+RadSpreadsheet has several selection events exposed by ActiveWorksheetEditor you can subscribe to:
         
 
 * __SelectionUpdate__: Raised when the selection is updated in any way, this may mean that a change has only begun or it has finished.
@@ -278,12 +291,25 @@ RadSpreadsheet has several selection events you can subscribe to:
             
 
 * __SelectionTypeChanged__: Raised when the active selection changes between cell selection and shape selection.
-            
+
+#### __[C#] Example 8: Subscribe to SelectionChanged__
+
+{{region radspreadsheet-ui-working-with-selection_10}}
+
+    this.radSpreadsheet.ActiveWorksheetEditor.Selection.SelectionChanged += this.Selection_SelectionChanged;
+{{endregion}}
+
+#### __[VB.NET] Example 8: Subscribe to SelectionChanged__
+
+{{region radspreadsheet-ui-working-with-selection_10}}
+
+    Me.radSpreadsheet.ActiveWorksheetEditor.Selection.SelectionChanged += Me.Selection_SelectionChanged
+{{endregion}}
 
 In some scenarios when you make a complex selection and want an event to be fired only once (at the end of this complex selection) it is convenient to use __BeginUpdate()__ and __EndUpdate()__ methods.
         
 
-#### __[C#] Example 8: Make a complex selection from three parts while triggering SelectionChanged only once__
+#### __[C#] Example 9: Make a complex selection from three parts while triggering SelectionChanged only once__
 
 {{region radspreadsheet-ui-working-with-selection_5}}
 
@@ -299,7 +325,7 @@ In some scenarios when you make a complex selection and want an event to be fire
 
 
 
-#### __[VB] Example 8: Make a complex selection from three parts while triggering SelectionChanged only once__
+#### __[VB.NET] Example 9: Make a complex selection from three parts while triggering SelectionChanged only once__
 
 
 {{region radspreadsheet-ui-working-with-selection_5}}
@@ -316,7 +342,7 @@ In some scenarios when you make a complex selection and want an event to be fire
 
 
 
-## Saving and Restoring the UI Selection
+## Saving and Restoring the Selection
 
 With the RadSpreadsheet API you have the ability to save the current selection in a __SelectionState__ instance and later easily restore the selection with a single method call. For such scenarios the Selection class exposes two methods: __CreateSelectionState()__ and __RestoreSelectionState()__ that save and restore the selection, respectively.
         
@@ -324,7 +350,7 @@ With the RadSpreadsheet API you have the ability to save the current selection i
 The following example makes a single CellRange selection and saves it in a SelectionState instance. After adding some new cells to the selection the old selection is restored through the RestoreSelectionState() method.
         
 
-#### __[C#] Example 9: Save and restore Selection__
+#### __[C#] Example 10: Save and restore Selection__
 
 {{region radspreadsheet-ui-working-with-selection_6}}
 
@@ -341,7 +367,7 @@ The following example makes a single CellRange selection and saves it in a Selec
 
 
 
-#### __[VB] Example 9: Save and restore Selection__
+#### __[VB.NET] Example 10: Save and restore Selection__
 
 {{region radspreadsheet-ui-working-with-selection_6}}
 
@@ -394,7 +420,7 @@ With the RadSpreadsheet API you have the ability to listen and to manipulate the
 * **IsEnabledChanged**: Occurs when the IsEnabled is changed.
 
 
-#### __[C#] Example 10: Disable Fill Selection__
+#### __[C#] Example 11: Disable Fill Selection__
 
 {{region radspreadsheet-ui-working-with-selection_9}}
 
@@ -404,9 +430,7 @@ With the RadSpreadsheet API you have the ability to listen and to manipulate the
     fillSelection.IsEnabled = false;
 {{endregion}}
 
-
-
-#### __[VB] Example 10: Disable Fill Selection__
+#### __[VB.NET] Example 11: Disable Fill Selection__
 
 {{region radspreadsheet-ui-working-with-selection_9}}
 

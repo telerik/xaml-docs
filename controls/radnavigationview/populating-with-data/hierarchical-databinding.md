@@ -11,7 +11,7 @@ position: 1
 
 This article shows how to data bind hierarchical data to RadNavigationView.
 
-The control can be populate with business objects via its __ItemsSource__ property. Then the __DisplayMemberPath__ and __ItemContainerStyle__ properties can be used to further customize the items and allow sub items.
+The control can be populated with business objects via its __ItemsSource__ property. Then the __DisplayMemberPath__ and __ItemContainerStyle__ properties can be used to further customize the items and allow sub-items.
 
 ## Defining the Model
 
@@ -67,14 +67,14 @@ The following model is defining a string property to serve as the content of the
 
 To assign the data collection to the RadNavigationView control, set its __ItemsSource__ property.
 
-To data bind the content of the RadNavigationViewItem elements, set the __DisplayMemberPath__ property of RadNavigationView. Alternatively, you can use the __ItemContainerStyle__ and set the __Content__ property of the RadNavigationViewItems.
+To data bind the content of the RadNavigationViewItem elements set the __DisplayMemberPath__ property of RadNavigationView. Alternatively, you can use the __ItemContainerStyle__ and set the __Content__ property of the RadNavigationViewItems.
 
-To customize the appearance of the RadNavigationViewItems and also allow sub items to be shown, use the __ItemContainerStyle__ property of RadNavigationView. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
+To customize the appearance of the RadNavigationViewItems and also allow sub-items to be shown, use the __ItemContainerStyle__ property of RadNavigationView. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
 
 #### __[XAML] Example 3: Setting up the view__
 {{region radnavigationview-populating-with-data-hierarchical-databinding-2}}	
 	<telerik:RadNavigationView x:Name="radNavigationView" 
-							   ItemsSource="{Binding Items}" 
+							   ItemsSource="{Binding}" 
 							   PaneHeader="Header"
 							   DisplayMemberPath="Title"
 							   DisplayMode="Expanded">

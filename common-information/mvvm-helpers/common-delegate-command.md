@@ -1,7 +1,7 @@
 ---
 title: Delegate Command
 page_title: DelegateCommand
-description: DelegateCommand
+description: This article describes the DelegateCommand class, which provides a simple ICommand implementation.
 slug: common-mvvm-delegate-command-implementation
 tags: delegate,command
 published: True
@@ -19,28 +19,21 @@ The **DelegateCommand** class provides a simple **ICommand** implementation. It 
 
 The **DelegateCommand** constructor has two overloads. The first accepts just a Delegate to execute as a parameter. The second one accepts the **Delegate** to execute as well as a **Predicate** that allows/bans the execution.  
 
-#### **[C#] Example 1: DelegateCommand implementation in your ViewModel that accepts a delegate:**
-{{region common-mvvm-delegate-command-implementation-0}}
-	 	public ICommand CustomCommand { get; set; }
-
-        public MyViewModel()
-        {
-            this.CustomCommand = new DelegateCommand(onCustomCommandExecuted);
-        }
-		
-		private void onCustomCommandExecuted(object obj)
-        {
-            MessageBox.Show("Custom Command Executed!");
-        }
-{{endregion}}
+#### **[C#] Example 1: DelegateCommand implementation in your ViewModel that accepts a delegate and a predicate**
+{{region cs-common-mvvm-delegate-command-implementation-0}}
 	
-
-#### **[C#] Example 2: DelegateCommand implementation in your ViewModel that accepts a delegate and a predicate:**
-{{region common-mvvm-delegate-command-implementation-1}}
-		public bool CanExecuteCommand { get; set; }
+    public class ViewModel
+    {
+        public bool CanExecuteCommand
+        {
+            get
+            {
+                return true;
+            }
+        }
         public ICommand CustomCommand { get; set; }
 
-        public MyViewModel()
+        public ViewModel()
         {
             this.CustomCommand = new DelegateCommand(onCustomCommandExecuted, canBeExecuted);
         }
@@ -54,9 +47,21 @@ The **DelegateCommand** constructor has two overloads. The first accepts just a 
         {
             MessageBox.Show("Custom Command Executed!");
         }
+    }
 {{endregion}}
+	
 
+#### **[XAML] Example 2: Using the command in xaml**
+{{region xaml-common-mvvm-delegate-command-implementation-1}}
+		
+    <Grid>
+        <Grid.DataContext>
+            <my:ViewModel />
+        </Grid.DataContext>
 
+        <Button Command="{Binding CustomCommand}" Content="Execute command" VerticalAlignment="Bottom" />
+    </Grid>
+{{endregion}}
 
 ## See Also
 

@@ -22,16 +22,18 @@ To use RadRichTextBox, you need to add references to the following assemblies:
 * **Telerik.Windows.Controls.RichTextBox**
 * **Telerik.Windows.Data**
 * **Telerik.Windows.Documents.Core**
-* **System.ComponentModel.Composition** 
 
 In order to use the built-in UI, you should add references to the following assemblies:
 
 * **Telerik.Windows.Controls.Input**
 * **Telerik.Windows.Controls.Navigation**
+* **Telerik.Windows.Controls.ImageEditor**
 * **Telerik.Windows.Controls.RibbonView**
 
 The default en-US dictionary for SpellChecking is located in:
 * **Telerik.Windows.Documents.Proofing.Dictionaries.En-US**.
+
+>If you are migrating from .NET Framework, note that **Telerik.Windows.Documents.dll** and **Telerik.Windows.Controls.RichTextBoxUI.dll** that you have used in the .NET Framework version **have been unified** into a new, single one for the .NET Core version of the control. The associated .xaml files are changed respectively. The name of the new assembly is **Telerik.Windows.Controls.RichTextBox.dll**. 
 
 ## MEF Usage
 

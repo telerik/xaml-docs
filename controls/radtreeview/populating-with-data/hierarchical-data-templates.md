@@ -217,23 +217,23 @@ We will specify the following classes, which are going to be used to the RadTree
 
 And finally, we need to set the DataContext of the MainWindow:
 
-	#### __[C#] Example 3: Setting DataContext__
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_4}}
-		public MainWindow()
-		{
-			InitializeComponent();
-			this.DataContext = new MyViewModel();
-		}
-	{{endregion}}
+#### __[C#] Example 3: Setting DataContext__
+{{region radtreeview-populating-with-data-hierarchical-data-templates_4}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.DataContext = new MyViewModel();
+	}
+{{endregion}}
 
-	#### __[VB.NET] Example 3: Setting DataContext__
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_5}}
-		public MainWindow()
-		{
-			InitializeComponent();
-			this.DataContext = new MyViewModel();
-		}
-	{{endregion}}
+#### __[VB.NET] Example 3: Setting DataContext__
+{{region radtreeview-populating-with-data-hierarchical-data-templates_5}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.DataContext = new MyViewModel();
+	}
+{{endregion}}
 
 Here is the final result: 
 ![](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)

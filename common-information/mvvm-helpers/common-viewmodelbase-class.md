@@ -14,7 +14,8 @@ The **ViewModelBase** abstract class is designed to serve as a base class for al
 
 #### **[C#] Example 1: Custom ViewModel that inherits the abstract ViewModelBase class**
 {{region common-viewmodelbase-class-0}}
-	public class MyViewModel : ViewModelBase
+    using Telerik.Windows.Controls;
+    public class MyViewModel : ViewModelBase
     {
         private object selectedItem;
         public object SelectedItem

@@ -28,11 +28,13 @@ You can change the tooltip duration by setting the __ToolTipService.ShowDuration
 
 #### __[XAML] Example 1: Setting ToolTipService.ShowDuration__
 {{region xaml-kb-gridview-howto-change-cells-tooltip-duration-0}}
-
-    <!-- If you're using the NoXaml binaries, you need to add the BasedOn="{StaticResource GridViewCellStyle}" attribute -->
-    <Style TargetType="telerik:GridViewCell">
-        <Setter Property="ToolTipService.ShowDuration" Value="1000" />
-    </Style>
+    
+    <Window.Resources>
+	<!-- If you're using the NoXaml binaries, you need to add the BasedOn="{StaticResource GridViewCellStyle}" attribute -->
+        <Style TargetType="telerik:GridViewCell">
+	    <Setter Property="ToolTipService.ShowDuration" Value="1000" />
+	</Style>
+    </Window.Resources>
 {{endregion}}
 
 > If you do not want to apply this style to all GridViewCells in your application, you can use the [CellStyle]({%slug gridview-styling-cell%}) property of the columns to apply it only to a specific column.

@@ -5,7 +5,7 @@ page_title: Include text in the middle of the doughnut inside a doughnut series
 type: how-to
 slug: kb-chartview-howto-place-text-in-center-of-doughnutseries
 position: 0
-tags: label, doughnut, series, center, text
+tags: label, doughnut, series, center, text, pie, chart
 ticketid: 1449533
 res_type: kb
 ---

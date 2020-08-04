@@ -5,7 +5,7 @@ description: Check our &quot;Layout Modes&quot; documentation article for the Ra
 slug: radrichtextbox-features-layout-modes
 tags: layout,modes
 published: True
-position: 2
+position: 3
 ---
 
 # Layout Modes

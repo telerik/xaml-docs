@@ -5,7 +5,7 @@ description: Check our &quot;Use the RadRichTextBox as Rich Content Viewer&quot;
 slug: radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer
 tags: use,the,radrichtextbox,as,rich,content,viewer
 published: True
-position: 5
+position: 7
 ---
 
 # Use the RadRichTextBox as Rich Content Viewer

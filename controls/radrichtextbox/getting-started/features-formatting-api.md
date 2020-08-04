@@ -5,7 +5,7 @@ description: Check our &quot;Formatting API&quot; documentation article for the 
 slug: radrichtextbox-features-formatting-api
 tags: formatting,api
 published: True
-position: 3
+position: 4
 ---
 
 # Formatting API

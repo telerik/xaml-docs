@@ -127,7 +127,7 @@ You can use this event if you want to write additional data to the stream. A com
 
 The result is:
 
-![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_row_details_export.png)
+![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](../images/gridview_row_details_export.png)
 
 ## DataContext of the Export Elements
 

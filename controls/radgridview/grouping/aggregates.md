@@ -202,7 +202,7 @@ When using this feature, it is likely that you don't need the default group row 
 
 ## Align Aggregates in GroupHeaderRow
 
-The aggregate results are shown right next to the group key by default. Via the **ColumnAggregatesAlignment** property, you can place the results below the column for which they are defined. The property has the following possible values:
+The aggregate results are shown right next to the group key by default. Via the **ColumnAggregatesAlignment** property of the RadGridView, you can place the results below the column for which they are defined. The property has the following possible values:
 
 * __NoAlignment__: Aggregate results are not aligned to columns.
 

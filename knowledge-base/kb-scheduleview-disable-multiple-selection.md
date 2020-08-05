@@ -2,7 +2,7 @@
 title: Disable Multiple Appointments Selection in RadScheduleView
 description: Allow selecting only a single appointment in RadScheduleView with a custom AppointmentSelectionBehavior
 page_title: Cancel Multiselection Appointments in ScheduleView
-type: troubleshooting
+type: how-to
 slug: kb-scheduleview-disable-multiple-selection
 position: 0
 tags: getselectedappointments,appointmentselectionbehavior
@@ -31,7 +31,7 @@ Disable multiple appointments selection in RadScheduleView using a custom Appoin
 
 ## Solution
 
-To allow only a single appointment selection you can create a custom [AppointmentSelectionBehavior]({%slug radscheduleview-features-appointment-selection-behavior%}) and override its __GetSelectedAppointments__ method.
+To allow only a single appointment to be selected you can create a custom [AppointmentSelectionBehavior]({%slug radscheduleview-features-appointment-selection-behavior%}) and override its __GetSelectedAppointments__ method.
 
 #### __[C#]__
 {{region kb-scheduleview-disable-multiple-selection-0}}

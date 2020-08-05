@@ -61,5 +61,7 @@ To change the theme, you can follow the steps below:
 ## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
+ {% if site.framework_name == 'WPF' %}
  * [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%})
+ {% endif %}
  * [Import/Export]({%slug radrichtextbox-features-import-export%})

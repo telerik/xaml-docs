@@ -37,6 +37,11 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 
 * __Section Columns__
 	You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns UI]({%slug radrichtextbox-ui-for-applying-rich-text-formatting-section-columns%}) and [Section Columns API]({%slug radrichtextbox-features-section-columns%}) articles.
+	
+{% if site.framework_name == 'WPF' %}
+* __Content controls__
+    Allows you to view and edit the content controls in the document. For more information, see the [Content Controls]({%slug radrichtextbox-features-content-controls%}) article.
+{% endif %}
 
 * __Format Painter__
 	The Format Painter feature enables you to copy the formatting of a particular content and paste it on other elements, so you can easily achieve the desired format. For more information about this functionality, check the [Format Painter]({%slug radrichtextbox-features-format-painter%}) topic.
@@ -111,9 +116,6 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 
 * __Code blocks__
 	This feature allows you to add source code fragments in a document. For more information, see the [Code Block]({%slug radrichtextbox-features-code-block%}) article.
-
-* __Content controls__
-    Allows you to view and edit the content controls in the document. For more information, see the [Content Controls]({%slug radrichtextbox-features-content-controls%}) article.
 
 
 ## See Also

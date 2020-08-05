@@ -1,5 +1,5 @@
 ---
-title: Undocking a RadPane in WinfForms Hosted WPF UserControl, Text Cannot be Entered to a TextBox Inside the Pane
+title: Undocking a RadPane in WinForms Hosted WPF UserControl, Text Cannot be Entered to a TextBox Inside the Pane
 description: Keyboard input doesn't work in RadPane if hosted in WinForms application and if the pane is floating.
 page_title: Text Input Disabled When the Undocked RadDocking Pane is Hosted in WinForms Application
 type: troubleshooting

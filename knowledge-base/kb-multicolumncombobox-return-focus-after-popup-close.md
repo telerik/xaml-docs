@@ -6,7 +6,7 @@ type: how-to
 slug: kb-multicolumncombobox-return-focus-after-popup-close
 position: 0
 tags: loses,focus,dropdown,close
-ticketid: 1444803
+ticketid: 1449317
 res_type: kb
 ---
 

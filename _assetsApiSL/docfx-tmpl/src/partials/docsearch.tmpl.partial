@@ -33,7 +33,8 @@
          var gcsInstance = '001595215763381649090:aio0tnk2npy';
          var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
          isKbPage =  false ;
-         siteHasKbPortal = ''
+         siteHasKbPortal = '';
+         showSearchPopup = false;
       </script>
       <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
    </div>

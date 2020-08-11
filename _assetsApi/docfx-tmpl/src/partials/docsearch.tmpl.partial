@@ -34,7 +34,8 @@
          var gcsInstance = '001595215763381649090:jt1stbj813w';
          var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
          isKbPage =  false ;
-         siteHasKbPortal = ''
+         siteHasKbPortal = '';
+         showSearchPopup = false;
        </script>
        <script type="text/javascript" src="/devtools/wpf/assets/search-results.js"></script>
    </div>

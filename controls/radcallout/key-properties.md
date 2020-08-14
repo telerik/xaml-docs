@@ -12,11 +12,23 @@ position: 3
 
 This article will list the key properties provided by the RadCallout control.
 
-* __ArrowAnchorPoint__: A property of type __Point__ that gets or sets the anchor point of the arrow geometry. 
+### __Geometry customization__
 
-* __ArrowBasePoint1__: A property of type __Point__ that gets or sets the first base point of the arrow geometry.
+The RadCallout provides 3 properties for customizing the arrow of its geometry - ArrowBasePoint1 , ArrowBasePoint2 and ArrowAnchorPoint.
 
-* __ArrowBasePoint2__: A property of type __Point__ that gets or sets the second base point of the arrow geometry.
+* __ArrowAnchorPoint__: A property of type __Point__ that gets or sets the __anchor point__ of the arrow geometry. 
+* __ArrowBasePoint1__: A property of type __Point__ that gets or sets the __first base point__ of the arrow geometry.
+* __ArrowBasePoint2__: A property of type __Point__ that gets or sets the __second base point__ of the arrow geometry.
+
+The properties are of type Point and represent relative coordinates (between 0 and 1) where for example 
+X = 0 and Y = 0 means the topleft point of the callout body and X= 1, Y = 1 means the 'bottom-right'
+point. In the figures you can see the default values of the properties [0.25, 0.5], [0.75, 0.5] and [0.5, 1.25].
+
+> Important to note here is that the widht and height of the callout apply only to the body of the geometry 
+but not to the arrow. This way it is very easy to keep a fixed size of the main shape while making the big arrow exceeding the shape size.
+
+#### Figure 1: 
+![Telerik Callout Key Properties 1](images/radcallout-key-properties_3.png)
 
 * __MeasurePathWithInfinity__: A __boolean__ property that gets or sets a value indicating whether the path in the control template is measured with infinity or not.
 
@@ -46,17 +58,17 @@ This article will list the key properties provided by the RadCallout control.
 	* __Kaboom__: Kaboom geometry.
 	* __Custom__: Set custom geometry.	
 	
-	#### Figure 1: RadCallout types
-	![Telerik Callout Map Integration 0](images/radcallout-key-properties_1.png)
+	#### Figure 2: RadCallout types
+	![Telerik Callout Key Properties 2](images/radcallout-key-properties_1.png)
 
 * __ArrowType__: A property of type __CalloutArrowType__ that gets or sets gets or sets the arrow type of the callout control. The __ArrowType__ is an enumeration and it allows the following values:
 	* __None__: No arrow.
 	* __Triangle__: Triangle or line arrow consisted of 3 pivot points.
 	* __Circles__: Series of circles.
-	* __Ellipses__: Series of circles.
+	* __Ellipses__: Series of ellipses.
 	
-	#### Figure 1: RadCallout arrow types
-	![Telerik Callout Map Integration 0](images/radcallout-key-properties_2.png)
+	#### Figure 3: RadCallout arrow types
+	![Telerik Callout Key Properties 3](images/radcallout-key-properties_2.png)
 
 ## See Also
 

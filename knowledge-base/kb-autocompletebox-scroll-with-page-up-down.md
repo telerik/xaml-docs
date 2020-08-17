@@ -30,7 +30,7 @@ How to enable the scrolling of multiple items using the **Page Up** and **Page D
 
 ## Solution
 
-As of version **2020.3.917** the RadAutoCompleteBox exposes a protected **HighlightedIndex** property which can be used to set the highlighted item. This property can be used in the **HandleKeyDown** method of the control to enable [custom keyboard navigation]({%slug radautocompletebox-features-keyboard-support%}) with the **Page Up** and **Page Down** keys.
+As of version **2020.3.817** the RadAutoCompleteBox exposes a protected **HighlightedIndex** property which can be used to set the highlighted item. This property can be used in the **HandleKeyDown** method of the control to enable [custom keyboard navigation]({%slug radautocompletebox-features-keyboard-support%}) with the **Page Up** and **Page Down** keys.
 
 #### __[C#]__
 {{region cs-kb-autocompletebox-scroll-with-page-up-down-0}}

@@ -56,6 +56,8 @@ The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after
     <telerik:RadNotifyIcon PopupShowDuration="10000" />
 {{endregion}}
 
+> To prevent the popup from automatically closing, you can set the __CanAutoClosePopup__ property to __False__.
+
 ## Popup animations
 
 You can control the opening and closing animation with the __PopupShowAnimation__ and __PopupHideAnimation__ properties respectively. They expect an animation of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) and by default [FadeAnimations](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.fadeanimation) are used.

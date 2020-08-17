@@ -25,7 +25,7 @@ __RadNotifyIcon__ is a control that can be used to display an icon in the Window
 
 * __ContextMenu__: Show a popup to present the user with some options. Learn more in the [ContextMenu]({%slug radnotifyicon-contextmenu%}) article. 
 
-* __Tooltip__: Display a tooltip when the icon is hovered. Check out the [Tooltip]({%slug radnotifyicon-tooltip%}) article for more information. 
+* __Tooltip__: Display a tooltip when the icon is hovered and customize it. Check out the [Tooltip]({%slug radnotifyicon-tooltip%}) article for more information. 
 
 * __Balloon Notifications__: Show a notification to grab the user's attention. Check out the [Balloon Notifications]({%slug radnotifyicon-balloon-notifications%}) article for more information. 
 

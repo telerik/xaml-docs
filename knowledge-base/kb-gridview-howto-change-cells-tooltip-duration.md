@@ -41,4 +41,4 @@ You can change the tooltip duration by setting the __ToolTipService.ShowDuration
 
 ## See Also
 
-* [Add ToolTip for columns and headers]({%slug gridview-how-to-create-tooltip2%})
+* [Add ToolTip for columns and headers]({%slug gridview-how-to-create-tooltip%})

@@ -29,7 +29,7 @@ Here are the events exposed by the RadNotifyIcon control:
 * __PopupOpening__: Occurs when a [popup]({%slug radnotifyicon-popup%}) is about to be opened. The event handler receives two arguments:
 
 	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type.   
-	* A __NotifyIconPopupOpeningEventArgs__ object. Its properties are listed in the __CustomTooltipOpening__ description.
+	* A __NotifyIconPopupOpeningEventArgs__ object.
 
 * __PopupOpened__: Occurs when a [popup]({%slug radnotifyicon-popup%}) is opened. The event handler receives two arguments:
 

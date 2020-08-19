@@ -96,13 +96,15 @@ The **WatermarkContent** property specifies the text or any other content to be 
 
 There are some other key properties in RadAutoCompleteBox:
 
-* __MaxDropDownHeight__ - Gets or sets the maximum height of the dropdown portion of the AutoCompleteBox control.
+* __MaxDropDownHeight__: Gets or sets the maximum height of the dropdown portion of the AutoCompleteBox control.
 
-* __TextSearchPath__ - Gets or sets the property path that is used to get the autocomplete text to filter items.
+* __TextSearchPath__: Gets or sets the property path that is used to get the autocomplete text to filter items.
 
-* __SelectedItem__ - Gets or sets the currently selected item into RadAutoCompleteBox.
+* __SelectedItem__: Gets or sets the currently selected item into RadAutoCompleteBox.
 
-* __SelectedItems__ - Gets or sets a collection containing the currently selected items into RadAutoCompleteBox.
+* __SelectedItems__: Gets or sets a collection containing the currently selected items into RadAutoCompleteBox.
+
+* __HighlightedIndex__: Gets or sets the currently highlighted index in the dropdown portion of the control.
 
 ## See Also
 

@@ -15,7 +15,7 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>2020.3.617</td>
+			<td>2020.2.617</td>
 		</tr>
 		<tr>
 			<td>Product</td>
@@ -35,7 +35,7 @@ When a CellStyle or CellStyleSelector is applied, the background of the cells se
 To display the selection color instead of the custom background set for the cells, you can define a **DataTrigger** bound to the **IsSelected** property of the parent row.
 
 #### __[XAML]__
-{{region xaml-kb-gridview-style-filtered-column-header-cell-0}}
+{{region xaml-kb-gridview-selection-color-is-not-shown-with-cellstyleselector-0}}
     <Style x:Key="CellStyle" TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
         <Setter Property="Background" Value="Red" />
         <Style.Triggers>

@@ -3764,7 +3764,7 @@ intro_columns:
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "DataGrid (GridView)": "gridview-overview2"
+      "GridView (DataGrid)": "gridview-overview2"
       "VirtualGrid": "virtualgrid-overview"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"

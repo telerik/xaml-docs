@@ -39,6 +39,15 @@ By inheriting the WordTaggerBase class you can create a tagger for your own cust
 
 >A practical example of how to define a tagger for your own custom language can be found [here]({%slug radsyntaxeditor-features-custom-language%}).
 
+## Multiline Tags
+
+As of **R3 2020**, the WordTaggerBase class allows you to handle multiline tags by exposing the following members:
+
+* **EnableMultilineTags**: A boolean property indicating whether multiline tags are collected by this tagger instance. Its default value is **true**.
+* **MultilineTags**: A collection of type **IList&lt;TagSpan&lt;ClassificationTag&gt;&gt;** holding the multiline tags.
+* **RebuildMultilineTags**: A method which rebuilds the MultilineTags collection.
+* **InvalidateMultilineTags**: A method which clears all multiline tags and rebuilds them.
+
 ## See Also
 
 * [UI Layers]({%slug radsyntaxeditor-features-layers%})

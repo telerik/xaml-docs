@@ -33,7 +33,7 @@ By using the **RadPdfViewer**'s **ScaleFactor** property. The default value of t
     this.pdfViewer.ScaleFactor = 2;
 {{endregion}}
 
-#### **C# Example 1: Zoom out**
+#### **C# Example 2: Zoom out**
 
 {{region radspreadsheet-zoom-in-or-out-a-worksheet_1}}
 

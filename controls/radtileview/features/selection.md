@@ -96,7 +96,7 @@ Depending on the setup the SelectedItem property can contain different values. I
 
 ## Events
 
-The RadTileView control exposes several selection events.
+The RadTileView control exposes several selection events. Please note that these events should be used instead of the standard **SelectionChanged** event.
 
 * __PreviewTileSelectionChanged__: This event fires just before the selection state of the tile gets changed. You can use the event to cancel the selection of the tile by setting the __Handled__ property of the event arguments to __True__.
 

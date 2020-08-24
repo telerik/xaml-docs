@@ -10,7 +10,7 @@ published: True
 # Shapes
 
 **Shapes** enable users to wrap text in a container and visualize it in a specific manner. 
-There are different types of shapes determined by their visual appearance (shape, style, size, etc.). Their vary in shape and style makes them very useful for drawing attention to specific text. They could also be helpful to manipulate the text appearance (e.g. inline with text or with text wrapping) according to the rest of the document content.
+There are different types of shapes determined by their visual appearance (shape, style, size, etc.). Their variation in shape and style makes them very useful for drawing attention to specific text. They could also be helpful to manipulate the text appearance (e.g. inline with text or with text wrapping) according to the rest of the document content.
 
 >note Currently, RadRichTextBox supports the **import and export** of shapes from and to **Office Open XML (DOCX)**. When exporting to other formats the shapes will be lost.
 

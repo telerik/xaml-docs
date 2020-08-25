@@ -187,10 +187,9 @@ __RadGridView__ can be filtered through its __RadGridView.Items__ collection. Th
 	        <RowDefinition Height="Auto" />
 	        <RowDefinition />
 	    </Grid.RowDefinitions>
-	    <telerik:RadDataFilter x:Name="radDataFilter"
-	                           Source="{Binding Items, ElementName=radGridView}"/>
+	    <telerik:RadDataFilter x:Name="radDataFilter" />
 	    <telerik:RadGridView x:Name="radGridView"
-	                         ItemsSource="{Binding Employees}"
+	                         ItemsSource="{Binding FilteredSource, ElementName=radDataFilter}"
 	                         AutoGenerateColumns="False"
 	                         IsFilteringAllowed="False"
 	                         Grid.Row="1">

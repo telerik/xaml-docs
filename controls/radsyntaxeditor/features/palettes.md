@@ -206,6 +206,9 @@ The table below lists the recommended palettes for each of the [available themes
 
 |Theme|Palette|
 |---|---|
+|Office2019 Dark __*__|Dark|
+|Office2019 Gray|Light|
+|Office2019 Light|Light|
 |VisualStudio2019|Light|
 |Crystal Light|Light|
 |Crystal Dark __*__|Dark|

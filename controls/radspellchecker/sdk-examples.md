@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
+sdk_example: true
 slug: radspellchecker-sdk-examples
 tags: sdk,examples
 published: True

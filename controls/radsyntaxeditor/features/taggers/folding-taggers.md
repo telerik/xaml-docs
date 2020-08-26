@@ -65,6 +65,12 @@ Here's a full list of the overridable methods which you can use in order to crea
 * **string GetFoldingRegionToolTipContent(Span foldingSpan)**: Gets the folding region's tooltip content.
 * **string Span CoerceFoldingSpan(Span defaultFoldingSpan)**: Coerces the default provided folding span - span starting from the start of the region's start text and ending in the end of the region's end text.
 * **string void RebuildFoldingRegions**: Rebuilds the list of all collapsible (folding) regions.
+* **void ProcessNotMatchedTags(IEnumerable&lt;FoldingRegionMatch> startTags, IEnumerable&lt;FoldingRegionMatch> endTags)**: Tries to match the not matched start and end tags left from the standard stack matching algorithm. The two arguments contain collections of **FoldingRegionMatch** instances with each match holding the following information:
+    * **Index**: An **integer** corresponding to the index of the folding match.
+    * **Tag**: The tag (keyword) of the folding match represented as a **string**.
+    * **IsStart**: A **boolean** indicating whether the folding match is the start or the end of a folding region.
+    * **IsUsed**: A **boolean** indicating whether the folding match is already used in a folding region.
+* **void RefreshStartEndMap**: Prepares the start/end matches for use as key-value pairs.
 * **void InvalidateFoldingRegions**: Clears all collapsible (folding) regions and rebuilds them.
 
 ## Styling the Folding Button

@@ -11,12 +11,25 @@ position: 3
 
 Here are the events exposed by the RadNotifyIcon control:
 
+## Tooltip
+
+* __PreviewTooltipOpened__: Occurs when a [styled tooltip]({%slug radnotifyicon-tooltip%}#tooltipcontent-and-tooltipcontenttemplate) is about to be opened. The event handler receives two arguments:
+
+	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type.              
+
+	* A __CancelEventArgs__ object. It allows for preventing the opening by setting the __Cancel__ property.
+
+* __TooltipOpened__: Occurs when a [styled tooltip]({%slug radnotifyicon-tooltip%}#tooltipcontent-and-tooltipcontenttemplate) is opened. The event handler receives two arguments:
+
+	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type. 
+	* An __EventArgs__ object.
+
 ## Popup
 
 * __PopupOpening__: Occurs when a [popup]({%slug radnotifyicon-popup%}) is about to be opened. The event handler receives two arguments:
 
 	* The sender argument contains the __RadNotifyIcon__. This argument is of type object, but can be cast to the __RadNotifyIcon__ type.   
-	* A __NotifyIconPopupOpeningEventArgs__ object. Its properties are listed in the __CustomTooltipOpening__ description.
+	* A __NotifyIconPopupOpeningEventArgs__ object.
 
 * __PopupOpened__: Occurs when a [popup]({%slug radnotifyicon-popup%}) is opened. The event handler receives two arguments:
 

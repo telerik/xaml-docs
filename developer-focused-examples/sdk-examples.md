@@ -2,7 +2,6 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Developer Focused Examples
-sdk_example: true
 slug: common-sdk-examples
 tags: common,sdk,examples
 published: True

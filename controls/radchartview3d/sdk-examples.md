@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+sdk_example: true
 slug: radchartview3d-sdk-examples
 tags: sdk,examples
 published: True

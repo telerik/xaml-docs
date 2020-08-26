@@ -254,7 +254,7 @@ article table
 
 # Office2019 Theme
 
-With the **R3 2020** release of the **UI for WPF** suite we have introduced the brand new **Office2019 theme**. Inspired by the well-known Microsoft Office productivity suite and its latest version, the Office2019 theme is here to help re-creating and delivering that fresh and smooth look and feel to your WPF apps. Explore the Light, Gray and Dark built-in color variations of the Office2019 theme and get off to a flying with your WPF applications.
+With the **R3 2020** release of the **UI for WPF** suite we have introduced the brand new **Office2019 theme**. Inspired by the well-known Microsoft Office productivity suite and its latest version, the Office2019 theme is here to help re-creating and delivering that fresh and smooth look and feel to your WPF apps. Explore the Light, Gray and Dark built-in color variations of the Office2019 theme and get off to a flying start with your WPF applications.
 
 Jump to the following topics to learn about the specifics of the theme's palette and features.
 

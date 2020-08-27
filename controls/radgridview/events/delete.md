@@ -48,7 +48,7 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 #### __XAML__
 
 {{region xaml-gridview-events-delete_0}}
-	<telerik:RadGridView Deleting="gridView_Deleting" />
+	<telerik:RadGridView x:Name="gridView" Deleting="gridView_Deleting" />
 {{endregion}}
 
 
@@ -144,7 +144,7 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 #### __XAML__
 
 {{region xaml-gridview-events-delete_5}}
-	<telerik:RadGridView Deleted="gridView_Deleted" />
+	<telerik:RadGridView x:Name="gridView" Deleted="gridView_Deleted" />
 {{endregion}}
 
 #### __C#__

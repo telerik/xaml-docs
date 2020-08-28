@@ -44,7 +44,7 @@ The SliderThumb represents a single thumb which can be dragged by the user and e
 
 ## RangeSliderThumb
 
-The RangeSliderThumb on the other hand represents a control with two draggable thumbs (of type **SliderThumb**) as well as an extra thumb (of type **Thumb**) in between to drag the whole range.
+The RangeSliderThumb, on the other hand, represents a control with two draggable thumbs (of type **SliderThumb**) as well as an extra thumb (of type **Thumb**) in between to drag the whole range.
 
 #### Figure 3: The RangeSliderThumb
 
@@ -56,7 +56,7 @@ It exposes the following properties:
 - **RangeEnd**: The largest value of a specified range.
 - **MinimumRangeSpan**: The minimum value distance between SelectionStart and SelectionEnd.
 - **MaximumRangeSpan**: The maximum value distance between SelectionStart and SelectionEnd.
-- **SelectedRange**: A property of type **SelectionRange<double>** which can be used to set the **Start** an**End** of the range.
+- **SelectedRange**: A property of type **SelectionRange\<double>** which can be used to set the **Start** and **End** of the range.
 - **MiddleThumbStyle**: The style for the middle thumb of the RangeSliderThumb element. The style needs to target the Thumb type.
 - **AlternateThumbStyle**: The style for the right thumb of the RangeSliderThumb element. The style needs to target the SliderThumb type.
 

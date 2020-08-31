@@ -16,7 +16,6 @@ This tutorial will walk you through the creation of a sample application that co
 In order to use __RadAutoSuggestBox__, you will need to add references to the following assemblies:
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
-* __Telerik.Windows.Data__
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 

@@ -30,8 +30,7 @@ How to set a theme's color variation in Visual Studio's designer.
 
 ## Solution
 
-Visual Studio will run code for designer use if you have enabled the **Project Code** setting in the designer and have
-set the theme variant:
+Visual Studio will run code for designer use if you have enabled the **Project Code** setting in the designer and have set the theme variant:
 * Before the **InitializeComponent()** invocation - for a **UserControl**
 * In the **static constructor** - for a **custom control**
 

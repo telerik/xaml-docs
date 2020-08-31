@@ -129,7 +129,7 @@ In a scenario when the user selects all the text inside the TextBox then paste, 
 
 ## Tab Navigation
 
-__RadTimeSpanPicker__ control provides an easy way to navigate between its TimeSpan sections using the __Tab__ key. The build-in Tab navigation is control by the __TabNavigationMode__ property. The __TabNavigationMode__ property is an enumeration that exposed the following values:
+__RadTimeSpanPicker__ control provides an easy way to navigate between its TimeSpan sections using the __Tab__ key. The built-in Tab navigation is control by the __TabNavigationMode__ property. The __TabNavigationMode__ property is an enumeration that exposed the following values:
 
 > TabNavigationModes Once and Cycle require EditMode property to be set to __TextOnly/TextAndDropDown__.
 

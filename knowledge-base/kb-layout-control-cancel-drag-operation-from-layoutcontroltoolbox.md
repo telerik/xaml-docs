@@ -26,11 +26,11 @@ res_type: kb
 
 ## Description
 
-How to cancel the drop operation from the [LayoutControlToolBox]({%slug radlayoutcontrol-features-toolbox-layoutcontroltoolbox}) to the **RadLayoutControl**. 
+How to cancel the drop operation from the [LayoutControlToolBox]({%slug radlayoutcontrol-features-toolbox-layoutcontroltoolbox%}) to the **RadLayoutControl**. 
 
 ## Solution
 
-To disallow the drop of a particular item from the toolbox to the RadLayoutControl you need to **handle** the drag and drop events of the [DragDropManager]({%slug dragdropmanager-getting-started}) and more specifically, the **DragOver** event.
+To disallow the drop of a particular item from the toolbox to the RadLayoutControl you need to **handle** the drag and drop events of the [DragDropManager]({%slug dragdropmanager-getting-started%}) and more specifically, the **DragOver** event.
 
 The example below shows how to cancel the drop of a **LayoutControlExpanderGroup** but this can also be modified to work for any element.
 
@@ -56,5 +56,5 @@ The example below shows how to cancel the drop of a **LayoutControlExpanderGroup
 {{endregion}}
 
 ## See Also
-* [DragDropManager]({%slug dragdropmanager-getting-started})
-* [LayoutControlToolBox]({%slug radlayoutcontrol-features-toolbox-layoutcontroltoolbox})
+* [DragDropManager]({%slug dragdropmanager-getting-started%})
+* [LayoutControlToolBox]({%slug radlayoutcontrol-features-toolbox-layoutcontroltoolbox%})

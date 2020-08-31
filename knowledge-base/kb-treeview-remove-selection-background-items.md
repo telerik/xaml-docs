@@ -30,7 +30,7 @@ How to remove or change the selection and highlight appearance of the RadTreeVie
 
 ## Solution
 
-To change the appearance of the TreeView items when they are selected or hovered, you need to [extract and modify the control template]({%slug styling-apperance-editing-control-templates}) of the **RadTreeViewItem** element. 
+To change the appearance of the TreeView items when they are selected or hovered, you need to [extract and modify the control template]({%slug styling-apperance-editing-control-templates%}) of the **RadTreeViewItem** element. 
 
 Once you've extracted the respective template for the required theme(s), you need to find the needed triggers or visual states (depending on the theme) which are responsible for the selected and/or hovered state of the items.
 
@@ -59,5 +59,5 @@ The figure below shows the appearance of the items after this modification is ap
 ![RadTreeView items with modified selected and hovered states](images/kb-treeview-remove-selection-background-items-1.png)
 
 ## See Also
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates})
-* [Styling the RadTreeViewItem]({%slug radtreeview-styling-and-appearance-styling-radtreeviewitem})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Styling the RadTreeViewItem]({%slug radtreeview-styling-and-appearance-styling-radtreeviewitem%})

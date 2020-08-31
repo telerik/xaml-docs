@@ -116,7 +116,7 @@ The default styles and resources for each theme are shipped also in the **/Teler
 
 >caution You should not set application theme using the StyleManager when using implicit styles. 
 
->If you copy the XAML files in your project, please make sure that the .xaml files are with the proper **build action**. Generally it should be __Resource__, except for the __Telerik.Windows.Controls.RibbonView.xaml__ file where the build action should be __Page__. __Telerik.Windows.Controls.RichTextBoxUI.xaml__ also should be with build action __Page__ since it includes all RibbonView styles. This is caused by several x:Shared setters, which cannot be set in loose XAML. More information can be found in [MSDN](http://msdn.microsoft.com/en-us/library/aa970778%28v=vs.110%29.aspx).
+>If you copy the .xaml files in your project, please make sure that their [Build Action](https://docs.microsoft.com/en-us/visualstudio/ide/build-actions?view=vs-2019) is set to __Page__.  
 
 ## Setting a Theme Using StyleManager
 

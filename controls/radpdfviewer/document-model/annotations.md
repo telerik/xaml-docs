@@ -78,7 +78,7 @@ The bookmarks in terms of “docx bookmarks” are not explicitly saved in PDF f
 	}
 {{endregion}}
 
-In this way it would be possible to create some UI that contains all bookmarks. Then, you could implement the same action as the one being executed when a hyperlink is clicked, i.e. scroll the document to the specific place in the document where the destination of the link is placed. The following code can be used for this purpose – navigating to a specific destination:
+In this way it would be possible to create some UI that contains all bookmarks. Then, you could implement the same action as the one being executed when a hyperlink is clicked, i.e. [scroll]({%slug radpdfviewer-scrolling%}) the document to the specific place in the document where the destination of the link is placed. The following code can be used for this purpose – navigating to a specific destination:
 
 #### __C#__
 
@@ -97,7 +97,7 @@ This scenario is additionally extended by the option to create your own Destinat
 	Destination myDestination = new Location() { Page = this.pdfViewer.Document.Pages[2], Left = 0, Top = 0, Zoom = 1 };
 {{endregion}}
 
-If you invoke the method GoToDestination with parameter *myDestination*, this will scroll the document to bring the third page (indexing starts at 0) into view. The same scenario can be implemented using the GoToPage(int pageNumber) when pageNumber = 2, but with Destinations you have finer control in terms of the horizontal and vertical offsets.
+If you invoke the method GoToDestination with parameter *myDestination*, this will [scroll]({%slug radpdfviewer-scrolling%}) the document to bring the third page (indexing starts at 0) into view. The same scenario can be implemented using the GoToPage(int pageNumber) when pageNumber = 2, but with Destinations you have finer control in terms of the horizontal and vertical offsets.
         	 
 
 ## See Also

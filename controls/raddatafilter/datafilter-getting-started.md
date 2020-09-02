@@ -177,7 +177,7 @@ After the collection has been passed to the __Source__ property, the user will b
 
 ## Filter RadGridView
 
-__RadGridView__ can be filtered through its __RadGridView.Items__ collection. The collection in this example holds business objects of type Employee. You should pass it to the __ItemsSource__ property of __RadGridView__. After that, you can create your __RadDataFilter__ and bind its __RadDataFilter.Source__ property to the RadGridView.Items collection using ElementName Binding.        
+__RadGridView__ can be filtered through its __RadGridView.Items__ collection. The __Employees__ collection in this example holds business objects of type Employee and needs to be defined in the DataContext of the __LayoutRoot Grid__. You then need to pass it to the __ItemsSource__ property of __RadGridView__. After that, you can create your __RadDataFilter__ and bind its __RadDataFilter.Source__ property to the __RadGridView.Items__ collection using an __ElementName__ binding.        
 
 #### __[XAML] Example 6: Binding the RadDataFilter to the Items collection of the RadGridView__
 {{region datafilter-getting-started_7}}

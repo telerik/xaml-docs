@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check out the complete list of all SDK examples demonstrating specific use case scenarios of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+sdk_example: true
 slug: radgridview-sdk-examples
 tags: sdk,examples
 published: True

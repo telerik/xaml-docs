@@ -43,7 +43,7 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * The control comes with a **predefined UI** that is intuitive and provides the means for utilizing the features of the control. Different dialogs are available as well.
 
-* Using the UI you can easily **zoom in and out**.
+* Using the UI you can easily [zoom in and out]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}).
 
 * **Scroll** the document in the viewer. 
 

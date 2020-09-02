@@ -69,13 +69,63 @@ A possible scenario would be to select the highlighted item and move the focus t
 	End Class
 {{endregion}}
 
+## HighlightedIndex
+
+With the **2020.3.817** version of the controls the RadAutoCompleteBox exposes a new **HighlightedIndex** property which you can use to manually change the highlighted item. This property can be used along with the **HandleKeyDown** method to allow navigation using the **Page Up** and **Page Down** keys, for example.
+
+#### __[C#] Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
+
+{{region cs-radautocompletebox-features-keyboard-support-1}}
+    public class CustomAutoCompleteBox : RadAutoCompleteBox
+    {
+        protected override bool HandleKeyDown(Key systemKey)
+        {
+            if (systemKey == Key.PageDown)
+            {
+                this.HighlightedIndex += 10;
+                return true;
+            }
+
+            if (systemKey == Key.PageUp)
+            {
+                this.HighlightedIndex -= 10;
+                return true;
+            }
+
+            return base.HandleKeyDown(systemKey);
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
+
+{{region vb-radautocompletebox-features-keyboard-support-1}}
+	Public Class CustomAutoCompleteBox
+		Inherits RadAutoCompleteBox
+
+		Protected Overrides Function HandleKeyDown(ByVal systemKey As Key) As Boolean
+			If systemKey Is Key.PageDown Then
+				Me.HighlightedIndex += 10
+				Return True
+			End If
+
+			If systemKey Is Key.PageUp Then
+				Me.HighlightedIndex -= 10
+				Return True
+			End If
+
+			Return MyBase.HandleKeyDown(systemKey)
+		End Function
+	End Class
+{{endregion}}
+
 ## Tab Navigation
 
 __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAutoCompleteBox is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since **R3 2016**.
 
-#### __[XAML] Example 2: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
+#### __[XAML] Example 3: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
 
-{{region xaml-radautocompletebox-features-keyboard-support-0}}
+{{region xaml-radautocompletebox-features-keyboard-support-2}}
 	<telerik:RadAutoCompleteBox telerik:TabNavigationExtensions.IsTabStop="False" />
 {{endregion}}
 

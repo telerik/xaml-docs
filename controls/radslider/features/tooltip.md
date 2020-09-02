@@ -78,4 +78,6 @@ With the __R2 2020__ version of Telerik UI for WPF controls, the RadSlider contr
  * [Getting Started]({%slug radslider-declaration%})	
  * [Orientation]({%slug radslider-orientation%})
  * [Direction]({%slug radslider-direction%})
+ {% if site.site_name == 'WPF' %}
  * [RadCallout Overview]({%slug radcallout-overview%})
+ {% endif %}

@@ -10,29 +10,29 @@ position: 2
 
 # Property Accessor
 
-As it is described in the [Data Binding]({%slug radmap-visualization-layer-data-binding%}) article the Visualization Layer uses attached properties to position and display markers on their proper places. But evaluating data bindings and accessing values of properties from UI elements takes time and slows-down the visualization engine. The Visualization Layer provides a way to speed up accessing of the map-related properties from the data item without involving the UI engine.     
+As it is described in the [Data Binding]({%slug radmap-visualization-layer-data-binding%}) article the Visualization Layer uses attached properties to position and display markers on their proper places. But evaluating data bindings and accessing values of properties from UI elements takes time and slows down the visualization engine. The Visualization Layer provides a way to speed up the accessing of the map related properties from the data item without involving the UI engine.     
 
 You can do it using the __PropertyAccessor__ property of the VisualizationLayer object. There are 2 ways you can use it:      
 
-1. Use default property accessor.          
+1. Use the default property accessor.          
 
 2. Create your own class which implements the __IMapPropertyAccessor__ interface.          
 
->important Even if you use property accessor feature you still should bind the __MapLayer.Location__ property in the Data Template.        
+>important Even if you the use property accessor feature you should still bind the __MapLayer.Location__ property in the DataTemplate.        
 
 ## Using the default property accessor
 
-The visualization engine a provides default property accessor which uses heuristics to get map-related properties from the data item.        
+The visualization engine provides a default property accessor which uses heuristics to get map related properties from the data item.        
 
 The default property accessor uses the following set of rules:        
 
-1. The first property which has __Telerik.Windows.Controls.Map.Location__ type will be considered as geographical position of the item.
-2. The first property which has __Telerik.Windows.Controls.Map.ZoomRange__ type will beconsidered as zoom range of the item.
-3. The first property which has __Telerik.Windows.Controls.HotSpot__ type will be considered as hotspot definition of the item.
+1. The first property which is of the __Telerik.Windows.Controls.Map.Location__ type will be considered as the geographical position of the item.
+2. The first property which is of the __Telerik.Windows.Controls.Map.ZoomRange__ type will be considered as the zoom range of the item.
+3. The first property which is of the __Telerik.Windows.Controls.HotSpot__ type will be considered as the hotspot definition of the item.
 
 > If you have more than one property of those types, the one that is defined first will be used. 
 
-4. The property which is named __BaseZoomLevel__ and is of type double type will be considered as base zoom level definition.
+4. The property which is named __BaseZoomLevel__ and is of type double type will be considered as a base zoom level definition.
 5. The property which is named __MaxScale__ and is of type double type will be considered as max scale of the item.
 6. The property which is named __MinScale__ and is of type double type will be considered as min scale of the item.
 7. The property which is named __ZIndex__ and is of integer type will be considered as the Z-Index of the item.
@@ -210,17 +210,17 @@ If your business class satisfies these requirements you can use the default prop
 	End Class
 {{endregion}}
 
-If your data item is represented by this class then default property accessor can be used. It will use properties as following:        
+If your data item is represented by this class then the default property accessor can be used. It will use properties as following:        
 
 1. The Location property will be used as geographical position of the item.
 2. The BaseZoomLevel property will be used as base zoom level definition.
 3. The ZoomRange property will be used as zoom range definition.            
 
-Since this class has not __MaxScale__, __MinScale__ and __ZIndex__ properties then visualization engine will use default values for them.        
+Since this class does not have __MaxScale__, __MinScale__ and __ZIndex__ properties, the visualization engine will use default values for them.        
 
-## Create own class which implements IMapPropertyAccessor interface
+## Create your own class which implements the IMapPropertyAccessor interface
 
-Sometimes the default property accessor is not applicable because of the data source. For example, your data source items (comming from a WCF Data Service or an Entity Framework model) could have different data types or use a different naming convention. In this case you can implement your own property accessor.        
+Sometimes the default property accessor is not applicable because of the data source. For example, your data source items (coming from a WCF Data Service or an Entity Framework model) could have different data types or use a different naming convention. In this case you can implement your own property accessor.        
 
 First you should create a new class which implements the __IMapPropertyAccessor__ interface. For example:        
 

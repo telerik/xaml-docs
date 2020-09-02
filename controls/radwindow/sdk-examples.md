@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+sdk_example: true
 slug: radwindow-sdk-examples
 tags: sdk,examples
 published: True

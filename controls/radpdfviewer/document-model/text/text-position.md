@@ -81,7 +81,7 @@ The caret position of __RadFixedDocument__ is also a __TextPosition__ and all me
 {{endregion}}
 
 
-This will not only move the caret to the end of the document, but will also scroll the document to bring it into view, as the view port follows the caret.
+This will not only move the caret to the end of the document, but will also [scroll]({%slug radpdfviewer-scrolling%}) the document to bring it into view, as the view port follows the caret.
     		 
 
 ## See Also

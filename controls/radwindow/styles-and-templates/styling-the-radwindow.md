@@ -58,7 +58,10 @@ You can also use the Template property directly instead of the Style property.
 {{endregion}}
 
 ## See Also  
+
+{% if site.site_name == 'WPF' %}
  * [How to Change Header Background]({%slug kb-window-change-header-background%})
+{% endif %} 
  * [Styling the Predefined Windows]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%})
  * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
  * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})

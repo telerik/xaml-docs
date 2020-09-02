@@ -42,6 +42,11 @@ You can also take advantage of some RadPdfViewer-specific controls such as FindD
 * **Telerik.Windows.Controls.Navigation.dll**        
 * **Telerik.Windows.Controls.FixedDocumentViewersUI.dll**
             
+RadPdfViewer can also import and show documents containing predefined CMap tables. To enable this functionality with the default implementation, you will need to add a reference to: 
+
+* **Telerik.Windows.Documents.CMapUtils.dll**
+
+>Check the [CMap tables](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/cmaps) topic for more details on importing documents containing that feature.
 
 ## Adding RadPdfViewer to a Page
 

@@ -13,55 +13,53 @@ A mechanism using algorithms to make sure that the connections don't cross each 
 
 ## Default Routing
 	
-Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.		  
+Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections__ property is set to __True__.  Please note that its default value is __False__ and you need to explicitly declare you want to enable the routing features.
+
+> For optimal performance and better visual results, we recommend using the AStarRouter algorithm.    
 
 #### __[XAML] Example 1: Setting RouteConnections property in XAML__
 {{region xaml-raddiagram-features-routing-0}}
 	<Grid>
 		<Grid.Resources>
-			<Style TargetType="telerik:RadDiagramShape" >
+			<Style TargetType="telerik:RadDiagramShape" BasedOn="{StaticResource RadDiagramShapeStyle}">
 				<Setter Property="Width" Value="100"/>
 				<Setter Property="Height" Value="40"/>
 			</Style>
-			<Style TargetType="telerik:RadDiagramConnection">
+			<Style TargetType="telerik:RadDiagramConnection" BasedOn="{StaticResource RadDiagramConnectionStyle}">
 				<Setter Property="ConnectionType" Value="Polyline"/>
 			</Style>
 		</Grid.Resources>
-		<telerik:RadDiagram RouteConnections="True" ConnectionRoundedCorners="True">
-			
-			<telerik:RadDiagramShape x:Name="xShape1" 
-									 Content="Shape 1"
-									 Position="320,60"/>
+		<telerik:RadDiagram RouteConnections="True"  ConnectionRoundedCorners="True">
 
-			<telerik:RadDiagramShape x:Name="xShape2" 
-									 Content="Shape 2"
-									 Position="120,220"/>
+			<telerik:RadDiagramShape x:Name="xShape1"  
+							Content="Shape 1" 
+							Position="320,60"/>
 
-			<telerik:RadDiagramShape x:Name="xShape3" 
-									 Content="Shape 3"
-									 Position="520,220"/>
+			<telerik:RadDiagramShape x:Name="xShape2"  
+							Content="Shape 2" 
+							Position="120,220"/>
 
-			<telerik:RadDiagramShape x:Name="xShape4" Width="260" Height="25"
-									 Content="Shape 4"
-									 Position="240,160"/>
+			<telerik:RadDiagramShape x:Name="xShape3"  
+							Content="Shape 3" 
+							Position="520,220"/>
 
-			<telerik:RadDiagramConnection x:Name="xConnection1"
-										  Source="{Binding ElementName=xShape1}"
-										  SourceConnectorPosition="Bottom"
-										  TargetConnectorPosition="Top"
-										  Target="{Binding ElementName=xShape2}"/>
+			<telerik:RadDiagramShape x:Name="xShape4" Width="260" Height="25" 
+							Content="Shape 4" 
+							Position="240,160"/>
 
-			<telerik:RadDiagramConnection x:Name="xConnection2"
-										  SourceConnectorPosition="Bottom"
-										  TargetConnectorPosition="Top"
-										  Source="{Binding ElementName=xShape1}"
-										  Target="{Binding ElementName=xShape3}"/>									  
+			<telerik:RadDiagramConnection x:Name="xConnection1" 
+								Source="{Binding ElementName=xShape1}" 
+								Target="{Binding ElementName=xShape2}"/>
+
+			<telerik:RadDiagramConnection x:Name="xConnection2" 
+								Source="{Binding ElementName=xShape1}" 
+								Target="{Binding ElementName=xShape3}"/>
 		</telerik:RadDiagram>
-	</Grid>		  
+	</Grid>  
 {{endregion}}
 
 #### __Figure 1: Default routing__
-![raddiagram-features-routing 0](images/raddiagram-features-routing1.png)
+![raddiagram-features-routing 0](images/raddiagram-features-routing1_New.png)
 
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
 
@@ -75,7 +73,7 @@ If you want to __exclude/include__ a connection from the routing process, you ca
 {{endregion}}	
 
 #### __Figure 2: Route property set to False__
-![raddiagram-features-routing 1](images/raddiagram-features-routing2.png)	
+![raddiagram-features-routing 1](images/raddiagram-features-routing2_New.png)	
 	
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
 

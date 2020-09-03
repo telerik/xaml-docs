@@ -42,7 +42,7 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 		<telerik:RadDiagram primitives:BackgroundGrid.IsDynamic="True" />
 	{{endregion}}
 	
-* __BackgroundGrid.CellSize__ - this property is of type __Size__ and it controls the size of the cells in the __RadDiagram.GraphPaper__ surface. The default value of this property is a size of __20x20__ units.				
+* __BackgroundGrid.CellSize__ - this property is of type __Size__ and it controls the size of the cells in the __RadDiagram.BackgroundGrid__ surface. The default value of this property is a size of __20x20__ units.				
 
 	#### __XAML__
 	{{region raddiagram-styling-appearance-0}}
@@ -58,7 +58,7 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 	
 	![Rad Diagram Styling Line Stroke](images/RadDiagram_Styling_LineStroke.png)
 
-* __BackgroundGrid.LineStrokeDashArray__ - this property gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the cells in the __RadDiagram GraphPaper__.				
+* __BackgroundGrid.LineStrokeDashArray__ - this property gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the cells in the __RadDiagram BackgroundGrid__.				
 
 * __BackgroundGrid.LineStrokeThickness__ - this property is of type __double__ and it gets or sets the thickness of the __RadDiagram__ background grid lines.				
 

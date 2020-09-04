@@ -60,7 +60,7 @@ The Visual Studio Extensions can be accessed through the Telerik | Telerik UI fo
 
 	> This step is optional and you will only need it if you use controls that are not defined in Telerik.Windows.Controls.dll.
 
-## Add a Teleik Control to the Project
+## Add a Telerik Control to the Project
 
 For this example we will use [RadGridView]({%slug gridview-overview2%}).
 
@@ -73,7 +73,7 @@ In order to use the __RadGridView__ control in your projects, you have to add re
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
 	
-### Add a Teleik Control to the Project
+### Add a Telerik Control to the Project
 
 You can add __RadGridView__ manually by writing the XAML code in __Example 1__ or you can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 	

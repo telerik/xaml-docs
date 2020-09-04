@@ -10,7 +10,7 @@ position: 1
 
 # Exception Handling 
 
-
+{% if site.site_name == 'Silverlight' %}
 
 __RadPdfViewer__ provides an API for handling exceptions caused by documents which cannot be loaded correctly because of unsupported features of the control. More information about the unsupported features in __RadPdfViewer__ is available [here]({%slug radpdfviewer-unsupported-features%}).
       
@@ -75,4 +75,9 @@ The __Telerik.Windows.Documents.Fixed.OnExceptionEventArgs__ has an Exception pr
 
 * __NotSupportedXObjectTypeException__ – this exception is thrown if the document contains a XObject type which is not supported by RadPdfViewer.  
             
+{% else %}
+
+Since R3 2020 __RadPdfViewer__ uses the model of the [RadPdfProcessing] (https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. This means that the document loading is handled by the library and RadPdfViewer is no longer responsible for the exception handling. More information about the exception handling in RadPdfProcessing library is available here: [Handling Exceptions in RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions) 
+
+{% endif %}
 

@@ -12,8 +12,6 @@ position: 0
 
 __Telerik UI for WPF__ comes with __.NET Core__ support. There is a set of dlls built against the .NET Core framework which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrаting to .NET Core]({%slug netcore-support-migration%}) article.
 
-Note that since R2 2020, Telerik UI for WPF supports also .NET 5.0 Preview.
-
 ## Requirements
 
 To work with the Telerik .NET Core dlls you will need to have the following installed.
@@ -31,6 +29,10 @@ The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To 
 Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
 
 >tip Creating a project via the [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}), allows you to select a NuGet version and automatically add the packages in the project when created, thus adding the Telerik .NET Core controls into the Visual Studio Toolbox.
+
+## .NET 5 Support
+
+__Telerik UI for WPF__ provides also assemblies for __.NET 5.0 Preview__ (since R2 2020) and __.NET 5.0 Preview 8__ (since R3 2020).
 
 ## See Also
 

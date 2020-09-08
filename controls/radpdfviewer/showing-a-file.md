@@ -13,18 +13,11 @@ position: 4
 
 
 This help article discusses different ways of loading a document in __RadPdfViewer__ and their customization options.
-      
-
-* [Showing a PDF file](#showing-a-pdf-file)
-
-* [Binding the Document Source](#binding-the-documentsource-of-radpdfviewer)
-
-* [Specifying Reading Mode](#specifying-reading-mode)
 
 
 ## Showing a PDF file
 
-__RadPdfViewer__ exposes a __DocumentSource__ property of type [FixedDocumentStreamSource](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.fixeddocumentstreamsource) that can be used to pass a PDF file to the control. There are several ways to set the property.
+__RadPdfViewer__ exposes a __DocumentSource__ property of type {% if site.site_name == 'WPF' %}[FixedDocumentStreamSource](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.fixeddocumentstreamsource){% endif %}{% if site.site_name == 'Silverlight' %}[FixedDocumentStreamSource](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.fixed.fixeddocumentstreamsource){% endif %} that can be used to pass a PDF file to the control. There are several ways to set the property.
 
 ###  Setting the DocumentSource in XAML
 
@@ -50,10 +43,10 @@ After that, you can proceed to add the **PdfViewer** control to the user control
 {{endregion}}
 
 
-In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project will be shown when the page is loaded. PdfViewerDemo is the name of the {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project. 
+In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder in the {{ site.framework_name }} project will be shown when the page is loaded. PdfViewerDemo is the name of the project. 
 
-
-{% if site.site_name == 'Silverlight' %}You can also load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
+{% if site.site_name == 'Silverlight' %}
+You can also load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
 
 #### __XAML__
 
@@ -62,11 +55,13 @@ In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder i
 {{endregion}}
 
 
->PDF files can be opened as long as you can obtain a stream with their content that supports *Read and Seek operations*. Note that due to Silverlight's security policy, only files from a domain with permissive cross-domain policy can be loaded. Furthermore, if the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
+>PDF files can be opened as long as you can obtain a stream with their content that supports *Read and Seek operations*. Note that due to Silverlight's security policy, only files from a domain with permissive cross-domain policy can be loaded. Furthermore, if the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.
+{% endif %}
 
 
 {% if site.site_name == 'WPF' %}
->PDF files can be opened as long as you can obtain a stream with their content that supports *Read and Seek operations*. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.{% endif %}
+>PDF files can be opened as long as you can obtain a stream with their content that supports *Read and Seek operations*. If the stream supports only Read, its content should be copied to a MemoryStream, which will enable the Seek operation as well and will facilitate **RadPdfViewer** to show the document. Notice that the document is loaded **asynchronously** and the stream **shouldn't be closed**.
+{% endif %}
 
 
 ### Setting DocumentSource in Code-Behind
@@ -78,6 +73,7 @@ __Example 3__ shows how a PDF file can be loaded from a file embedded as a resou
 #### __[C#] Example 3: Load PDF from a stream__
 
 {{region radpdfviewer-showing-a-file_3}}
+
 	private void LoadFromStream(object sender, System.Windows.RoutedEventArgs e)
 	{
 	    Stream str = App.GetResourceStream(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)).Stream;
@@ -92,6 +88,7 @@ __Example 4__ shows how a PDF can be loaded from a file embedded as a resource b
 #### __[C#] Example 4: Load PDF from a URI__
 
 {{region radpdfviewer-showing-a-file_4}}
+
 	private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
 	{
 	    this.pdfViewer.DocumentSource = new PdfDocumentSource(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)); 
@@ -107,10 +104,32 @@ __Example 4__ shows how a PDF can be loaded from a file embedded as a resource b
 
 __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents directly using __PdfFormatProvider__ instead of __PdfDocumentSource__.
               
-
+{% if site.site_name == 'WPF' %}
 #### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
 
 {{region radpdfviewer-showing-a-file_5}}
+
+    string pdfFilePath = "Sample.pdf";
+    MemoryStream stream = new MemoryStream();
+    
+    using (Stream input = File.OpenRead(pdfFilePath))
+    {
+        input.CopyTo(stream);
+    }
+    
+    PdfFormatProvider provider = new PdfFormatProvider();
+    provider.ImportSettings = PdfImportSettings.ReadOnDemand;
+    RadFixedDocument doc = provider.Import(stream);
+    this.pdfViewer.Document = doc;
+{{endregion}}
+
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}
+#### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
+
+{{region radpdfviewer-showing-a-file_5}}
+
 	string pdfFilePath = "Sample.pdf";
 	MemoryStream stream = new MemoryStream();
 	
@@ -124,6 +143,8 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
 	RadFixedDocument doc = provider.Import();
 	this.pdfViewer.Document = doc;
 {{endregion}}
+
+{% endif %}
               
 
 ## Binding the DocumentSource of RadPdfViewer
@@ -174,10 +195,10 @@ Notice that regardless of the type of the property you choose to bind the Docume
 
 ## Specifying Reading Mode
 
-Starting with the release of R2 2016, you can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time (as done in versions prior R2 2016) or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it.
+You can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it. However, you will need to keep the stream to the document file open.
         
 
-You can control how the document is loaded by setting the __PdfViewer.DefaultFormatProviderSettings__ property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [FormatProviderSettings class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.formatproviders.formatprovidersettings):
+You can control how the document is loaded by setting the {% if site.site_name == 'WPF' %} **PdfViewer.DefaultImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}  **PdfViewer.DefaultFormatProviderSettings** {% endif %} property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the {% if site.site_name == 'WPF' %} [PdfImportSettings class](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/settings). {% endif %} {% if site.site_name == 'Silverlight' %}[FormatProviderSettings class](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.fixed.formatproviders.formatprovidersettings):
 
 * __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to memory. 
 
@@ -190,34 +211,65 @@ You can control how the document is loaded by setting the __PdfViewer.DefaultFor
 	this.pdfViewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadOnDemand;
 {{endregion}}
 
+{% endif %}  
 
+{% if site.site_name == 'WPF' %}
+#### __[C#] Example 10: Setting DefaultImportSettings__
 
-Another option to set the reading mode is through the constructors that accept __FormatProviderSettings__ when creating a new instance of the **PdfDocumentSource** class. The __FormatProviderSettings.ReadAllAtOnce__ predefined settings are used by default. The PdfDocumentSource used in combination with __ReadAllAtOnce__ will throw the **Loaded event** after applying the document to the PdfViewer.
+{{region radpdfviewer-showing-a-file_10}}
+	this.pdfViewer.DefaultImportSettings = PdfImportSettings.ReadOnDemand;
+{{endregion}}
 
-If you want to change this behavior to read the document pages when needed, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadOnDemand__ predefined settings.            
+{% endif %}
 
+Another option to set the reading mode is through the constructors that accept {% if site.site_name == 'WPF' %} **PdfImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}__FormatProviderSettings__{% endif %} when creating a new instance of the **PdfDocumentSource** class. The __ReadOnDemand__ predefined settings are used by default. The PdfDocumentSource used in combination with __ReadAllAtOnce__ will throw the **Loaded event** after applying the document to the PdfViewer.
 
+If you want to change this behavior to read all the document pages at the beginning of the import, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadAllAtOnce__ predefined settings.            
+
+{% if site.site_name == 'WPF' %}
+#### __[C#] Example 11: Setting PdfImportSettings__
+
+{{region radpdfviewer-showing-a-file_11}}
+
+	PdfDocumentSource source = new PdfDocumentSource(stream/uri, PdfImportSettings.ReadOnDemand);      
+{{endregion}} 
+
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}
 #### __[C#] Example 11: Setting FormatProviderSettings__
 
 {{region radpdfviewer-showing-a-file_11}}
+
 	PdfDocumentSource source = new PdfDocumentSource(stream/uri, FormatProviderSettings.ReadOnDemand);      
-{{endregion}}
+{{endregion}} 
+
+{% endif %}
 
 
-
-When you bind the __DocumentSource__ property of __RadPdfViewer__ and want to control the way bound documents are loaded, you can pass the desired __FormatProviderSettings__ as a ConverterParameter.
+When you bind the __DocumentSource__ property of __RadPdfViewer__ and want to control the way bound documents are loaded, you can pass the desired settings as a ConverterParameter.
             
 
-#### __[XAML] Example 11: Setting FormatProviderSettings__
+#### __[XAML] Example 11: Applying settings in binding scenario__
 
 {{region radpdfviewer-showing-a-file_12}}
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Uri, Converter={StaticResource PdfDocumentSourceValueConverter}, ConverterParameter=ReadOnDemand}" />
 {{endregion}}
 
-“*ReadAllAtOnce*” and “*ReadOnDemand*” are the valid values you can specify.
+`ReadAllAtOnce` and `ReadOnDemand` are the valid values you can specify.
+
+{% if site.site_name == 'WPF' %}
+## Handling Errors
+
+Sometimes, the loading of the document might not success due to different reasons and an exception might be thrown. You can handle the errors in a way suitable for your application using the [Exception Handling](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions) mechanism of the model of PdfViewer - **PdfProcessing**. 
+{% endif %}
 
 ## See Also
 
 * [Getting Started]({%slug radpdfviewer-getting-started%})
 
 * [Viewer Modes]({%slug radpdfviewer-viewer-modes%})
+
+{% if site.site_name == 'WPF' %}
+* [Exception Handling](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions)
+{% endif %}

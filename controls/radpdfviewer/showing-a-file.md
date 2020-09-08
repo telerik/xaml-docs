@@ -250,7 +250,7 @@ If you want to change this behavior to read all the document pages at the beginn
 When you bind the __DocumentSource__ property of __RadPdfViewer__ and want to control the way bound documents are loaded, you can pass the desired settings as a ConverterParameter.
             
 
-#### __[XAML] Example 11: Applying settings in binding scenario__
+#### __[XAML] Example 12: Applying settings in binding scenario__
 
 {{region radpdfviewer-showing-a-file_12}}
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Uri, Converter={StaticResource PdfDocumentSourceValueConverter}, ConverterParameter=ReadOnDemand}" />

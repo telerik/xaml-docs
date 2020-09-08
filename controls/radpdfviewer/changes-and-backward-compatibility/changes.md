@@ -10,10 +10,15 @@ position: 0
 
 # Changes
 
-
-
 This topic summarizes the new functionality introduced in the viewer with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
       
+{% if site.site_name == 'WPF' %}
+>This topic is obsolete. To find the latest updates for the control, please use the [Release History](https://www.telerik.com/support/whats-new/wpf/release-history).
+{% endif %}
+
+{% if site.site_name == 'Silverlight' %}
+>This topic is obsolete. To find the latest updates for the control, please use the [Release History](https://www.telerik.com/support/whats-new/silverlight/release-history).
+{% endif %}
 
 ## What's New in 2014 Q1 - 2014.1.0226
 

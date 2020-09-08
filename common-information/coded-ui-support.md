@@ -62,7 +62,7 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 Below you can find information about the supported level of CodedUI tests throughout our controls.     
 
-There is [Level 2 and Level 3 Coded UI test support](            http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across our controls. For exceptions see bellow.
+There is [Level 2 and Level 3 Coded UI test support](https://devblogs.microsoft.com/devops/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained/) across our controls. For exceptions see bellow.
         
 ## Q2 2015
 
@@ -79,7 +79,7 @@ Use RadChartView instead of RadChart. For more information, please go through th
 
 ## Q2 2014
 
-With __Q2 2014__ release of Telerik UI for WPF we have included [Level 4 Coded UI test support](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) for two of our controls. The following table gives more details on the controls as well as the supported actions:
+With __Q2 2014__ release of Telerik UI for WPF we have included [Level 4 Coded UI test support](https://devblogs.microsoft.com/devops/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained/) for two of our controls. The following table gives more details on the controls as well as the supported actions:
 
 Control	|	Action	|	Occurs	|	Action Property
 ---	|	---	|	---	|	---
@@ -88,7 +88,7 @@ RadDateTimePicker	|	SetValueAction	|	On SelectedValue changed	|	DateTimeText
 
 ## Q3 2012
 
-With __Q3 2012__ official release we have included [Level 1 Coded UI test support](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx) across all controls, except __RadChart__ control.  
+With __Q3 2012__ official release we have included [Level 1 Coded UI test support](https://devblogs.microsoft.com/devops/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained/) across all controls, except __RadChart__ control.  
 
 ## See Also 
 * [UI Automation Support]({%slug common-ui-automation%})

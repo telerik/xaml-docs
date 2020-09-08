@@ -15,7 +15,7 @@ position: 0
 __RadFixedDocument__ is the class representing a PDF document inside __RadPdfViewer__. 
 
 {% if site.site_name == 'WPF' %}
->importantSince R3 2020 RadPdfViewer uses [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) and its [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) as a model.
+>important Since R3 2020 RadPdfViewer uses [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) and its [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) as a model.
 {% endif %}
 
 

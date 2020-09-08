@@ -53,7 +53,7 @@ Obsolete constructors of PdfFormatProvider:
 
 ### What to do now
 
-Use **PdfFormatProvider()** constructor instead.
+Use the parameterless constructor and pass the stream to the Import(stream) method.
 
 ### Changed
 

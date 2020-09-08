@@ -42,7 +42,7 @@ Use the overloads that accept Telerik.Windows.Documents.Fixed.FormatProviders.Pd
 
 ### What to do now
 
-Use [**DocumentUnhandledException**] event instead.
+Use **DocumentUnhandledException** event instead.
 
 ### Changed
 

@@ -83,7 +83,7 @@ The event takes argument of type __GridViewElementExportedEventArgs__ which expo
 
 You can use this event if you want to write additional data to the stream. A common scenario is to add [Row Details]({%slug radgridview-row-details-overview%}) to the exported data :
 	
-#### __[C#] Example 4: Add row details to the exported data:__
+#### __[C#] Example 4: Add row details to the exported data with ExportFormat.Html__
 
 {{region cs-gridview-export-events-elementexporting-elementexported_3}}
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
@@ -106,7 +106,7 @@ You can use this event if you want to write additional data to the stream. A com
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 5: Add row details to the exported data:__
+#### __[VB.NET] Example 5: Add row details to the exported data with ExportFormat.Html__
 
 {{region vb-gridview-export-events-elementexporting-elementexported_4}}
 	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
@@ -127,7 +127,7 @@ You can use this event if you want to write additional data to the stream. A com
 
 The result is:
 
-![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_row_details_export.png)
+![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](../images/gridview_row_details_export.png)
 
 ## DataContext of the Export Elements
 

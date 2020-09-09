@@ -185,7 +185,7 @@ You should note two things here: first, a border with bound background to the co
 {{endregion}}
 
 * __CreateCellEditElement()__ – override this method to create custom editor element (according to type of the property or some other business logic). This method must be overridden otherwise __GridViewCell__ will have no content when enters into edit mode.
-*         
+
 #### __[C#] Example 4: Overriding the CreateCellEditElement method__
 
 	{{region cs-radgridview-howto-create-custom-editor_6}}

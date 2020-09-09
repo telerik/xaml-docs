@@ -34,7 +34,7 @@ There are scenarios where you have DateTime axes with many data points. ChartDat
 
 The following example demonstrates both properties in action. 
 
-We'll create BarSeries with DateTimeCategorical Horizontal Axis, bound via the ChartDataSource control:
+We'll create BarSeries and SplineSeries with DateTimeCategorical Horizontal Axis, bound via the ChartDataSource control:
 
 #### __[XAML] Example 2: Defining the chart and binding the sampling source__
 {{region radchart-chartdatasource_1}}
@@ -56,10 +56,11 @@ We'll create BarSeries with DateTimeCategorical Horizontal Axis, bound via the C
 							ValueBinding="Value"
 							ItemsSource="{Binding ElementName=ChartDataSource1}">
 		</telerik:BarSeries>
+		<telerik:SplineSeries CategoryBinding="Time" ValueBinding="Value"  ItemsSource="{Binding ElementName=ChartDataSource1}" />
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-Note how the ItemsSource property of the chart is bound to the ChartDataSource and not to the collection of business objects so called Data directly. 
+Note how the ItemsSource property of the series is bound to the ChartDataSource and not to the collection of business objects so called Data directly. 
 
 In code-behind create the collection of business objects and register it as DependencyProperty by inheriting the DependencyObject class:
 
@@ -166,7 +167,7 @@ In code-behind create the collection of business objects and register it as Depe
 	End Class
 {{endregion}}
 
-By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 bars, where each bar represents a period of 5 days. The result is shown on the image below:
+By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 categories, where each category represents a period of 5 days. The result is shown on the image below:
 ![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
 
 ## Use custom aggregate function
@@ -231,7 +232,7 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 	End Class
 {{endregion}}
 
-> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so "<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />", otherwise a "No data to plot" message will be shown.
+> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so `<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />`, otherwise a "No data to plot" message will be shown.
 
 The result is below:
 ![Rad Chart View-chart chartdatasource 01](images/RadChartView-chart_chartdatasource_01.PNG)

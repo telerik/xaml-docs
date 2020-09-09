@@ -3776,7 +3776,7 @@ intro_columns:
       "EntityFrameworkDataSource": "entityframework-overview"
       "EntityFrameworkCoreDataSource": "entityframeworkcore-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
-      "DataGrid": "gridview-overview2"
+      "GridView (DataGrid)": "gridview-overview2"
       "VirtualGrid": "virtualgrid-overview"
       "ListBox": "radlistbox-overview"
       "PivotGrid": "radpivotgrid-overview"

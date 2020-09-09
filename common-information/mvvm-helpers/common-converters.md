@@ -69,6 +69,10 @@ This converter converts __Boolean__ values to __Visibility__ enumeration values.
 
 This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the __Convert()__ method will return __Visibility.Collapsed__.
 
+## VisibilityToBooleanConverter
+
+This converter converts values from the __Visibility__ enumeration to __Boolean__ values. The __Convert()__ method returns __true__ if the passed value is __Visibility.Visible__ and __false__ otherwise.
+
 ## EnumToVisibilityConverter
 
 Converts an __Enum__ value to __Visibility__ enumeration values. If the enum value is one of the values specified in the converter parameter, the __Convert()__ method will return __Visibility.Visible__, otherwise it will return __Visibility.Collapsed__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.

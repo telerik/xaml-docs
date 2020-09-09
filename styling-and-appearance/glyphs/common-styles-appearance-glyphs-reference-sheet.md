@@ -6,7 +6,7 @@ slug: common-styling-appearance-glyphs-reference-sheet
 tags: glyphs,telerikwebui,office2016,fonts,foregrounds,text,icons,reference,sheet
 published: True
 position: 1
-glyphs_refence_sheet: True
+glyphs_reference_sheet: True
 ---
 
 # Glyphs Reference Sheet

@@ -49,38 +49,39 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 
 #### __[C#] Example 1: Exclude properties__
 {{region c#-radrichtextbox-import-export-html-settings_0}}
-	 HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-    htmlExportSettings.PropertiesToIgnore["span"].Add("color");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
-    htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
 
-    htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
-    htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
+	HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
+	htmlExportSettings.PropertiesToIgnore["span"].Add("color");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
+	htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
 
-    htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
-    htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
+	htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
 
-    htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
-    htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
-    htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
-    htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
-    htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
-    htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
+	htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
+
+	htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
+	htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
+	htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
+	htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
+	htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
+	htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
 {{endregion}}
 
 

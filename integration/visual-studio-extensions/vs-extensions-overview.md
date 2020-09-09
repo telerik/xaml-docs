@@ -58,7 +58,7 @@ When installed, the extensions add several project templates to the New Project 
 {% endif %}
 
 {% if site.framework_name == 'WPF' %}
->These are available in the language specific nodes of the dialog as well. New Project dialog contains Telerik WPF Application under both CSharp\Windows and Visual Basic\ Windows nodes.
+>These are available in the language specific nodes of the dialog as well. New Project dialog contains Telerik WPF Application under both CSharp\Windows and Visual Basic\Windows nodes.
 {% else %}
 >These are available in the language specific nodes of the dialog as well. New Project dialog contains Telerik Silverlight Application under both CSharp\Silverlight and Visual Basic\Silverlight nodes.
 {% endif %}

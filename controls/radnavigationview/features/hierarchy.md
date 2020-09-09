@@ -1,7 +1,7 @@
 ---
 title: Hierarchy
 page_title: Hierarchical Navigation Menu
-description: RadNavigationView allows you to define sub items in order to achieve hierarchical menu visualizаtion.
+description: RadNavigationView allows you to define sub items in order to achieve hierarchical menu visualization.
 slug: radnavigationview-features-hierarchy
 tags: threshold, mode, display, pane, size
 position: 0

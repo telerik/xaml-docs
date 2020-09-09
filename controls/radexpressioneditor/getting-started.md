@@ -21,20 +21,21 @@ This tutorial will walk your through the creation of a sample application contai
 * Create a new project;
 
 * Add references to the needed assemblies 
-	* __Telerik.Windows.Controls__,
-	* __Telerik.Windows.Data__,
-	* __Telerik.Windows.Controls.Navigation__,
-	* __Telerik.Windows.Documents__,
-	* __Telerik.Windows.Documents.Core__,
-    * __Telerik.Windows.Documents.Flow__,
-    * __Telerik.Windows.Controls.Expressions__.
+	* __Telerik.Windows.Controls__
+    	* __Telerik.Windows.Controls.Expressions__
+	* __Telerik.Windows.Controls.Navigation__
+	* __Telerik.Windows.Data__
+	* __Telerik.Windows.Documents__
+	* __Telerik.Windows.Documents.Core__
+	
+>importantIf you are using **.NET Core**, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 
 >In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  
 * System.Windows.xaml
 * Telerik.Windows.Controls.xaml
+* Telerik.Windows.Controls.Expressions.xaml
 * Telerik.Windows.Controls.Navigation.xaml
 * Telerik.Windows.Documents.xaml
-* Telerik.Windows.Controls.Expressions.xaml
 
 * Define __RadExpressionEditor__ as demonstrated below:
 

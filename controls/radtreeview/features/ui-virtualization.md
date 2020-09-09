@@ -113,6 +113,10 @@ When you use __VirtualizationMode__.__Hierarchical__, then items that are out of
 
 <!-- -->
 
+## ScrollViewer and Virtualization
+
+When using UI virtualization, RadTreeView does not create containers (visual elements) for each data item. Only containers for data items which should be visualized in the viewport are created. RadTreeView then figures out the size of a particular container by creating it and measuring it. With this said, if the container is not created (is virtualized) RadTreeView can only guess its size. As a result, you might experience changes in the sizes of the scrollbar thumbs when bringing new items into view which is expected and cannot be avoided.
+
 ## See Also
  * [Load on Demand]({%slug radtreeview-features-load-on-demand%})
  * [Data Binding]({%slug radtreeview-features-data-binding%})

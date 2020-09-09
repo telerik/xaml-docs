@@ -31,9 +31,11 @@ __RadDocking__'s key features include:
 
 * __Split Containers__: The RadSplitContainer allows you to use movable bars to divide the displayed area into resizable parts. Read more about this in the [Split Container]({%slug raddocking-features-split-container%}) section of the documentation.
 
-* __Tabbed Documents__: The control allows you to create TabControl layout so thаt the users can easily switch between different views. 
+* __Tabbed Documents__: The control allows you to create TabControl layout so that the users can easily switch between different views. 
 
 * __Pin/Unpin and Hide Panes__: Each RadPane provides built-in pin/unpin functionality. You can read more about this in the [Pinned/Unpinned Panes]({%slug raddocking-panes-pinned-unpinned-panes%}) section of the documentation.
+
+* __Docking Navigator__: Since the **R2 2020 SP1** release, RadDocking allows you to navigate through its panes with the help of the [DockingNavigator]({%slug raddocking-navigator}). Press the **Ctrl + Tab** or **Alt + F7** key combinations, use the arrow keys to navigate between panes and get a preview of their content.
 
 * __Dockable Windows__: Each pane can be undock and dock to a different place. This way the user can change the position of every pane for better visualization. 
 

@@ -11,11 +11,11 @@ position: 5
 # Set Custom Appointment Height
 
 
-With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadScheduleView__ provides brand new customization feature for the MonthViewDefinition. Now it is possible to set different heights of the appointments by using a custom [AppointmentStyleSelector]({%slug radscheduleview-styles-and-templates-appointment-style%}#create-a-custom-appointmentstyleselector).      
+With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% else %}Silverlight{% endif %}, __RadScheduleView__ provides brand new customization feature for the MonthViewDefinition. Now it is possible to set different heights of the appointments by using a custom [AppointmentStyleSelector]({%slug radscheduleview-styles-and-templates-appointment-style%}#create-a-custom-appointmentstyleselector).      
 
 ## Getting Started
 
-In order to be able to display appointments with different heights in the MonthViewDefinition you will first need to set the new __AllowCustomAppointmentSize__ property of MonthViewDefinition to __True__:        
+In order to be able to display appointments with different heights in the MonthViewDefinition you will first need to set the new __AllowCustomAppointmentSize__ property of MonthViewDefinition to __True__:
 
 #### __XAML__
 
@@ -143,10 +143,10 @@ You can see the final result in __Figure 1__:
 Figure 1: Appointments with different heights in MonthViewDefinition
 ![radscheduleview how to set custom appointment heights](images/radscheduleview_how to_set_custom_appointment_heights.png)
 
->tipYou can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
+>tip You can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
 
-## See Also
+> The __AppointmentItem__ in the __Windows8, Windows8Touch and Office2013__ themes has a small line visual container on the bottom or left part of the appointment (based on the currently applied view definition). If you need to remove this, [extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) (__AppointmentItemHorizontalControlTemplate__ and __AppointmentItemVerticalControlTemplate__) of the AppointmentItem control and remove the __Border__ control with x:Name set to __LineVisual__. Then set the customized templates to the __Template__ property of AppointmentItem via the Style objects of the __AppointmentStyleSelector__.
 
+## See Also  
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
-
  * [Appointment Style]({%slug radscheduleview-styles-and-templates-appointment-style%})

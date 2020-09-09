@@ -29,6 +29,8 @@ __RadNotifyIcon__ is a control that can be used to display an icon in the Window
 
 * __Balloon Notifications__: Show a notification to grab the user's attention. Check out the [Balloon Notifications]({%slug radnotifyicon-balloon-notifications%}) article for more information. 
 
+* __DPI Support__: The RadNotifyIcon provides support for high DPI environments.
+
 >tip Get started with the control with its [Getting Started]({%slug radnotifyicon-getting-started%}) help article that shows how to use it in a basic scenario.
 
 >Check out the online demos at [demos.telerik.com](https://demos.telerik.com/wpf/).

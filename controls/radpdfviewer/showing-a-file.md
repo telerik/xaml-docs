@@ -97,7 +97,10 @@ __Example 4__ shows how a PDF can be loaded from a file embedded as a resource b
 
 
 
->In __Example 3__ and __Example 4__, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
+In __Example 3__ and __Example 4__, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
+
+
+>note The **PdfDocumentSource** class exposes the **Loaded** event. This event is not related to the parsing of the content but is fired just after the document is being imported.
 
 
 ### Setting the Document in Code-Behind
@@ -125,7 +128,7 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
 
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}
+{% if site.site_name == 'Silverlight' %} 
 #### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
 
 {{region radpdfviewer-showing-a-file_5}}
@@ -192,7 +195,6 @@ Notice that regardless of the type of the property you choose to bind the Docume
 	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Source, Converter={StaticResource PdfDocumentSourceValueConverter}}" />
 {{endregion}}
 
-
 ## Specifying Reading Mode
 
 You can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it. However, you will need to keep the stream to the document file open.
@@ -222,7 +224,9 @@ You can control how the document is loaded by setting the {% if site.site_name =
 
 {% endif %}
 
-Another option to set the reading mode is through the constructors that accept {% if site.site_name == 'WPF' %} **PdfImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}__FormatProviderSettings__{% endif %} when creating a new instance of the **PdfDocumentSource** class. The __ReadOnDemand__ predefined settings are used by default. The PdfDocumentSource used in combination with __ReadAllAtOnce__ will throw the **Loaded event** after applying the document to the PdfViewer.
+Another option to set the reading mode is through the constructors that accept {% if site.site_name == 'WPF' %} **PdfImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}__FormatProviderSettings__{% endif %} when creating a new instance of the **PdfDocumentSource** class. 
+
+{% if site.site_name == 'Silverlight' %}The __ReadOnDemand__ predefined settings are used by default.{% endif %}{% if site.site_name == 'WPF' %}The default settings used by PdfViewer are `ReadingMode: OnDemand` and `CopyStream: true` to allow you parse only the needed content while you are not obligated to keep the stream to the document open.{% endif %} 
 
 If you want to change this behavior to read all the document pages at the beginning of the import, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadAllAtOnce__ predefined settings.            
 

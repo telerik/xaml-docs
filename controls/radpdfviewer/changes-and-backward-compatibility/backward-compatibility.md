@@ -27,10 +27,6 @@ Use Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.**PdfImportSettin
 
 ### Changed
 
-Telerik.Windows.Documents.Fixed.FixedDocumentStreamSource.**OnException** is obsolete.
-
-### Changed
-
 Obsolete constructors of Telerik.Windows.Documents.Fixed.**PdfDocumentSource**:
 
 * PdfDocumentSource(Uri uri, FormatProviderSettings settings)
@@ -39,6 +35,10 @@ Obsolete constructors of Telerik.Windows.Documents.Fixed.**PdfDocumentSource**:
 ### What to do now
 
 Use the overloads that accept Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.**PdfImportSettings** instead.
+
+### Changed
+
+Telerik.Windows.Documents.Fixed.FixedDocumentStreamSource.**OnException** is obsolete.
 
 ### What to do now
 

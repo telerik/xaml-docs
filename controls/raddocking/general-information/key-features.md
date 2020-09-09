@@ -22,7 +22,7 @@ This is a list with short descriptions of the top-of-the line features of Teleri
 
 * __Pin/Unpin and Hide Panes__ - to display content on demand, a docked window can be pinned, unpinned or hidden.  The pane is in an unpinned state by default.  When unpinned, the pane collapses down to a tab.  To pin, unpin or hide a given window you can use either the icons on the top of the window, the navigation menu or the context menu. The context menu is set to open on CTRL+MouseLeftButtonClick. [Read more]({%slug raddocking-panes-pinned-unpinned-panes%})
 
-* __Docking Navigator__: Since the **R2 2020 SP1** release, RadDocking allows you to navigate through its panes with the help of the **DockingNavigator**. Press the **Ctrl + Tab** or **Alt + F7** key combinations, use the arrow keys to navigate between panes and get a preview of their content. [Read more]({%slug raddocking-navigator})
+* __Docking Navigator__: Since the **R2 2020 SP1** release, RadDocking allows you to navigate through its panes with the help of the **DockingNavigator**. Press the **Ctrl + Tab** or **Alt + F7** key combinations, use the arrow keys to navigate between panes and get a preview of their content. [Read more]({%slug raddocking-navigator%})
 
 * __Dockable Windows__ - __RadDocking__ has a full drag-and-drop support including the docking compass and the docking hints for visual feedback. You are free to drag the dockable windows anywhere in the container to create customized layouts. You have a full control of which window can be docked and to which sides of the container. 
 Hierarchies of arbitrary complexity can be created, and once windows are docked together they can be resized independently with the splitters between them. [Read more]({%slug raddocking-features-tool-window%})

@@ -1,8 +1,8 @@
 ---
 title: How to Close the Active Pane with a Key Combination
-description: This article explains how to bind the CloseActivePane command to a key combination in order to close the currently active pane.
+description: This article explains how to bind the ClosePane command to a key combination in order to close the currently active pane.
 type: how-to
-page_title: Using the CloseActivePane Command to Close the Currently Active Pane
+page_title: Using the ClosePane Command to Close the Currently Active Pane
 slug: kb-docking-close-active-pane-command
 position: 0
 tags: docking, close, active, pane, command
@@ -30,27 +30,33 @@ How to close the active pane with a key combination.
 
 ## Solution
 
-As of **R3 2020**, you can use the new **CloseActivePane** command to close the currently active pane.
+As of **R3 2020**, you can use the new **ClosePane** command to close the currently active pane. The command accepts a parameter of type **ClosePaneMode** which has three possible values:
 
-#### __[XAML] Example 1: Binding the CloseActivePane to Ctrl+F4 for a single RadDocking instance__
+* **DocumentPanes**: The active document pane is closed or if there is no active, the first selected document pane is closed.
+* **NonDocumentPanes**: The active non-document pane is closed, if any.
+* **ActivePanes**: The active pane is closed, if any.
+
+If no parameter is passed, the command will close the currently active pane, if there is such.
+
+#### __[XAML] Example 1: Binding the ClosePane to Ctrl+F4 for a single RadDocking instance__
 
 {{region xaml-kb-docking-close-active-pane-command_1}}
     <telerik:RadDocking>
 		<!-- ... -->
 		<telerik:RadDocking.InputBindings>
-			<KeyBinding Command="telerik:RadDockingCommands.CloseActivePane" Key="F4" Modifiers="Ctrl" />
+			<KeyBinding Command="telerik:RadDockingCommands.ClosePane" CommandParameter="DocumentPanes" Key="F4" Modifiers="Ctrl" />
 		</telerik:RadDocking.InputBindings>
 	</telerik:RadDocking>
 {{endregion}}
 
 You can also bind the command for all RadDocking controls in your application by using the **CommandManager.RegisterClassInputBinding** method.
 
-#### __[C#] Example 2: Binding the CloseActivePane to Ctrl+F4 for all RadDocking controls in the application__
+#### __[C#] Example 2: Binding the ClosePane to Ctrl+F4 for all RadDocking controls in the application__
 
 {{region cs-kb-docking-close-active-pane-command_2}}
 	public App()
 	{
-		KeyBinding keyBinding = new KeyBinding(RadDockingCommands.CloseActivePane, new KeyGesture(Key.F4, ModifierKeys.Control));
+		KeyBinding keyBinding = new KeyBinding(RadDockingCommands.ClosePane, new KeyGesture(Key.F4, ModifierKeys.Control)) { CommandParameter = ClosePaneMode.DocumentPanes };
 		CommandManager.RegisterClassInputBinding(typeof(RadDocking), keyBinding);
 	}
 {{endregion}}

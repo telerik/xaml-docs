@@ -1,7 +1,7 @@
 ---
 title: Popup
 page_title: Popup
-description: This article allows demonstrates the popup feature of the RadNotifyIcon. 
+description: This article demonstrates the popup feature of the RadNotifyIcon. 
 slug: radnotifyicon-popup
 tags: Popup,notifyicon
 position: 1
@@ -56,33 +56,18 @@ The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after
     <telerik:RadNotifyIcon PopupShowDuration="10000" />
 {{endregion}}
 
-## Popup animations
+## PopupCloseMode
 
-You can control the opening and closing animation with the __PopupShowAnimation__ and __PopupHideAnimation__ properties respectively. They expect an animation of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) and by default [FadeAnimations](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.fadeanimation) are used.
+The __PopupCloseMode__ is a bitwise enumeration, which controls the actions that will close the popup. The possible values are:
 
-#### __[XAML] Example 4: Setting PopupShowAnimation and PopupHideAnimation__
+* **None**: The popup can only be closed in code (with the __HidePopup__ method) or by clicking on the notify icon. 
+* **Deactivate**: The popup can be closed by clicking outside of it or by deactivating it with a windows keyboard shortcut.
+* **Timeout**: The popup will be closed after the time specified by the __PopupShowDuration__ runs out. This is the default value.
+
+#### __[XAML] Example 4: Closing the popup on deactivation or timeout__
 {{region xaml-radnotifyicon-popup-3}}
-
-    <Grid>
-        <Grid.Resources>
-            <telerik:ScaleAnimation x:Key="showAnimation" MinScale="0.1" MaxScale="0.9" Duration="00:00:02" />
-            <telerik:ScaleAnimation x:Key="hideAnimation" MinScale="0.9" MaxScale="0.1" Duration="00:00:02" />
-        </Grid.Resources>
-        <telerik:RadNotifyIcon
-            x:Name="icon"
-            PopupContent="Hello, world!"
-            PopupActivationMouseEvent = "LeftDoubleClick"
-            PopupShowAnimation="{StaticResource showAnimation}"
-            PopupHideAnimation="{StaticResource hideAnimation}">
-            <telerik:RadNotifyIcon.PopupContentTemplate>
-                <DataTemplate>
-                    <Border Background="Bisque">
-                        <TextBlock Text="{Binding}" Padding="10"/>
-                    </Border>
-                </DataTemplate>
-            </telerik:RadNotifyIcon.PopupContentTemplate>
-        </telerik:RadNotifyIcon>
-    </Grid>
+    
+    <telerik:RadNotifyIcon PopupCloseMode="Deactivate, TimeOut"  />
 {{endregion}}
 
 ## Programmatically Showing the Popup
@@ -120,18 +105,47 @@ You can manually hide the popup with the __HidePopup__ method as shown in __Exam
     Me.icon.HidePopup()
 {{endregion}}
 
+## Popup animations
+
+You can control the opening and closing animation with the __PopupShowAnimation__ and __PopupHideAnimation__ properties respectively. They expect an animation of type [RadAnimation](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.radanimation) and by default [FadeAnimations](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.animation.fadeanimation) are used.
+
+#### __[XAML] Example 7: Setting PopupShowAnimation and PopupHideAnimation__
+{{region xaml-radnotifyicon-popup-8}}
+
+    <Grid>
+        <Grid.Resources>
+            <telerik:ScaleAnimation x:Key="showAnimation" MinScale="0.1" MaxScale="0.9" Duration="00:00:02" />
+            <telerik:ScaleAnimation x:Key="hideAnimation" MinScale="0.9" MaxScale="0.1" Duration="00:00:02" />
+        </Grid.Resources>
+        <telerik:RadNotifyIcon
+            x:Name="icon"
+            PopupContent="Hello, world!"
+            PopupActivationMouseEvent = "LeftDoubleClick"
+            PopupShowAnimation="{StaticResource showAnimation}"
+            PopupHideAnimation="{StaticResource hideAnimation}">
+            <telerik:RadNotifyIcon.PopupContentTemplate>
+                <DataTemplate>
+                    <Border Background="Bisque">
+                        <TextBlock Text="{Binding}" Padding="10"/>
+                    </Border>
+                </DataTemplate>
+            </telerik:RadNotifyIcon.PopupContentTemplate>
+        </telerik:RadNotifyIcon>
+    </Grid>
+{{endregion}}
+
 ## IsPopupOpen
 
 The __IsPopupOpen__ property allows you to check whether a popup is currently open.
 
-#### __[C#] Example 7: Using IsPopupOpen__
-{{region cs-radnotifyicon-popup-8}}
+#### __[C#] Example 8: Using IsPopupOpen__
+{{region cs-radnotifyicon-popup-9}}
 
     var isOpen = this.icon.IsPopupOpen;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Using IsPopupOpen__
-{{region vb-radnotifyicon-popup-9}}
+#### __[VB.NET] Example 8: Using IsPopupOpen__
+{{region vb-radnotifyicon-popup-10}}
 
     Dim isOpen = Me.icon.IsPopupOpen
 {{endregion}}

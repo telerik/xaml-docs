@@ -117,7 +117,6 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Code blocks__
 	This feature allows you to add source code fragments in a document. For more information, see the [Code Block]({%slug radrichtextbox-features-code-block%}) article.
 
-
 ## See Also
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  * [Events]({%slug radrichtextbox-events-overview%})

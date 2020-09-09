@@ -80,6 +80,7 @@ controls/radrichtextbox/features/content-controls/content-controls.md,
 controls/radrichtextbox/features/content-controls/working-with-content-controls.md,
 controls/radrichtextbox/features/content-controls/working-with-content-controls-ui.md,
 controls/radrichtextbox/features/paste-options.md,
+controls/radrichtextbox/features/shapes.md,
 controls/radrichtextbox/getting-started/net-core-support.md,
 controls/radrichtextbox/troubleshooting/rendering-glitches.md,
 controls/radscheduleview/populating-with-data/binding-to-database/binding-to-db-midtier-wpf.md,
@@ -106,6 +107,7 @@ controls/radtimespanpicker,
 controls/radlayoutcontrol,
 controls/radmap/features/export-support,
 controls/radpasswordbox,
+controls/radautosuggestbox,
 controls/radlistbox/how-to,
 controls/radlistbox/features/virtualizingwrappanel.md,
 integration/visual-studio-templates.md,
@@ -145,7 +147,8 @@ controls/radfilepathpicker,
 netcore/,
 controls/radtaskboard,
 controls/radnotifyicon,
-controls/radcallout]
+controls/radcallout,
+controls/radentityframeworkcoredatasource]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

@@ -98,6 +98,10 @@ navigation:
 ## X3 Controls Start
     controls/radautocompletebox:
         title: RadAutoCompleteBox		
+    controls/radautosuggestbox:
+        title: RadAutoSuggestBox
+    controls/radautosuggestbox/appearance:
+        title: Appearance
     controls/radpivotgrid:
         title: RadPivotGrid
     controls/raddatetimepicker:
@@ -890,6 +894,8 @@ navigation:
     controls/raddataservicedatasource/how-to:		
         title: How To
         position: 12
+    controls/radentityframeworkcoredatasource:
+        title: RadEntityFrameworkCoreDataSource
     controls/radentityframeworkdatasource:
         title: RadEntityFrameworkDataSource
     controls/radexpressioneditor:
@@ -3206,6 +3212,11 @@ defaults:
         title_prefix: "WPF AutoCompleteBox"
 -
     scope:
+        path: "controls/radautosuggestbox"
+    values:
+        title_prefix: "WPF AutoSuggestBox"
+-
+    scope:
         path: "controls/radbarcode"
     values:
         title_prefix: "WPF Barcode"
@@ -3763,6 +3774,7 @@ intro_columns:
       "DataPager": "datapager-overview"
       "DataServiceDataSource": "raddataservicedatasource-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
+      "EntityFrameworkCoreDataSource": "entityframeworkcore-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
       "GridView (DataGrid)": "gridview-overview2"
       "VirtualGrid": "virtualgrid-overview"
@@ -3806,6 +3818,7 @@ intro_columns:
     title: "Editors"
     items:
       "AutoCompleteBox": "radautocompletebox-overview"
+      "AutoSuggestBox": "radautosuggestbox-overview"
       "Calculator": "radcalculator-overview"
       "ColorEditor": "radcoloreditor-overview"
       "ColorPicker": "radcolorpicker-overview"

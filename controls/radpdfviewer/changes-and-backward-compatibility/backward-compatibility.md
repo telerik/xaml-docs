@@ -14,6 +14,68 @@ position: 1
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2020 R3
+
+{% if site.site_name == 'WPF' %}
+### Changed
+
+Telerik.Windows.Documents.Fixed.FormatProviders.**FormatProviderSettings** is obsolete.
+
+### What to do now
+
+Use Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.**PdfImportSettings** instead.
+
+### Changed
+
+Obsolete constructors of Telerik.Windows.Documents.Fixed.**PdfDocumentSource**:
+
+* PdfDocumentSource(Uri uri, FormatProviderSettings settings)
+* PdfDocumentSource(Stream stream, FormatProviderSettings settings)
+
+### What to do now
+
+Use the overloads that accept Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.**PdfImportSettings** instead.
+
+### Changed
+
+Telerik.Windows.Documents.Fixed.FixedDocumentStreamSource.**OnException** is obsolete.
+
+### What to do now
+
+Use **DocumentUnhandledException** event instead.
+
+### Changed
+
+Obsolete constructors of PdfFormatProvider:
+
+* PdfFormatProvider(Stream sourceStream)
+* PdfFormatProvider(Stream sourceStream, FormatProviderSettings settings)
+
+### What to do now
+
+Use the parameterless constructor and pass the stream to the Import(stream) method.
+
+### Changed
+
+Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.**PdfFormatProvider.Import()** is obsolete.
+
+### What to do now
+
+Use Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.**PdfFormatProvider.Import(Stream)** method instead.
+
+### Changed
+
+Telerik.Windows.Controls.FixedDocumentViewerBase.**DefaultFormatProviderSettings** is obsolete.
+
+### What to do now
+
+Use Telerik.Windows.Controls.FixedDocumentViewerBase.**DefaultImportSettings** instead.
+
+{% endif %}
+
+
+
+
 ## What's Different in 2019 R3
 
 ### Changed

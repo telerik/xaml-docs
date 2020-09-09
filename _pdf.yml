@@ -49,6 +49,7 @@ intro_columns:
     title: "Editors"
     items:
       "AutoCompleteBox": "radautocompletebox-overview"
+      "AutoSuggestBox": "radautosuggestbox-overview"
       "Calculator": "radcalculator-overview"
       "ColorEditor": "radcoloreditor-overview"
       "ColorPicker": "radcolorpicker-overview"

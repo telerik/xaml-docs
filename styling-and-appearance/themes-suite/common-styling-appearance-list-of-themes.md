@@ -15,6 +15,7 @@ The __UI for {{ site.framework_name }}__ suite comes with a variety of predefine
 
 Theme name | Appearance
 ---|---{% if site.site_name == 'WPF' %}
+**[Office 2019*]({%slug common-styling-appearance-Office2019-theme%})** | ![Office 2019](images/Office2019Theme.png)
 **[Visual Studio 2019]({%slug common-styling-appearance-visualstudio2019-theme%})** | ![Visual Studio 2019](images/VisualStudio2019Theme.png)
 **[Crystal*]({%slug common-styling-appearance-crystal-theme%})** | ![Crystal](images/CrystalTheme.png)
 **[Fluent*]({%slug common-styling-appearance-fluent-theme%})** | ![Fluent](images/FluentTheme.png)

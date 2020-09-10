@@ -5,7 +5,7 @@ description: Fluent Theme
 slug: common-styling-appearance-fluent-theme
 tags: fluent,theme,acrylic,glyphs,fontsize,fontfamily,shadow
 published: True
-position: 6
+position: 9
 ---
 
 <style>

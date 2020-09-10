@@ -5,7 +5,7 @@ description: Office2019 Theme
 slug: common-styling-appearance-Office2019-theme
 tags: Office2019,theme,glyphs,fontsize,fontfamily
 published: True
-position: 7
+position: 12
 ---
 
 <style>

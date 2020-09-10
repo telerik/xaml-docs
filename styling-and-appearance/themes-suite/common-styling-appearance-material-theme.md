@@ -5,7 +5,7 @@ description: Material Theme
 slug: common-styling-appearance-material-theme
 tags: material,theme,glyphs,fontsize,fontfamily,shadow
 published: True
-position: 6
+position: 8
 ---
 
 <style>

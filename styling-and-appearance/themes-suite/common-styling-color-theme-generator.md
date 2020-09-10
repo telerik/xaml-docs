@@ -5,11 +5,11 @@ description: Color Theme Generator
 slug: common-styling-color-theme-generator
 tags: theme, color, generator
 published: True
-position: 7
+position: 0
 ---
 # Color Theme Generator
 
-The **VisualStudio2019**, **Crystal**, **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** [themes]({%slug common-styling-appearance-available-themes%}) are fully customizable using the available brushes to adjust each color. 
+The [themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette are fully customizable using the available brushes to adjust each color. 
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the **Color Theme Generator**.
      

@@ -5,7 +5,7 @@ description: VisualStudio2019 Theme
 slug: common-styling-appearance-visualstudio2019-theme
 tags: visualstudio2019,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True
-position: 7
+position: 11
 ---
 
 <style>

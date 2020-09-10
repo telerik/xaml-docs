@@ -5,7 +5,7 @@ description: Crystal Theme
 slug: common-styling-appearance-crystal-theme
 tags: crystal,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True
-position: 7
+position: 10
 ---
 
 <style>

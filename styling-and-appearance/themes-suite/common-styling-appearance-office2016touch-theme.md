@@ -5,7 +5,7 @@ description: Office2016Touch Theme
 slug: common-styling-appearance-office2016touch-theme
 tags: office2016touch,theme,dynamic,fontsize,fontfamily
 published: True
-position: 5
+position: 7
 ---
 
 <style>

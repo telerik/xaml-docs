@@ -148,7 +148,8 @@ netcore/,
 controls/radtaskboard,
 controls/radnotifyicon,
 controls/radcallout,
-controls/radentityframeworkcoredatasource]
+controls/radentityframeworkcoredatasource,
+controls/radslider/features/multiple-thumbs]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

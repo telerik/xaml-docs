@@ -21,7 +21,7 @@ The __ShowDialog__ command can be set to the Command property of another element
 
         <telerik:RadFilePathPicker x:Name="filePathPicker" />
 
-        <Button Content="Clear" Command="{x:Static fileDialogs:RadFilePathPickerCommands.Clear}" CommandTarget="{Binding ElementName=filePathPicker}" />
+        <Button Content="Clear" Command="{x:Static fileDialogs:RadFilePathPickerCommands.ShowDialog}" CommandTarget="{Binding ElementName=filePathPicker}" />
     </StackPanel>
 {{endregion}}
 

@@ -24,6 +24,7 @@ This tutorial will walk you through the functionality and the main features of t
 * [Connection ZIndex](#connection-zindex)
 * [Connection Bounds](#connection-bounds)
 * [Use Free Connectors](#use-free-connectors)
+* [Custom Connection](#custom-connection)
 
 >Before proceeding with this topic, it is recommended to get familiar with the [Visual Structure]({%slug raddiagram-structure%}) of the Diagramming Framework.
 
@@ -80,8 +81,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 
 * __Polyline__: This connection type allows you to define multiple points, a connection has to pass through. By default such a connection have two points it has to pass through - its source connector (or __StartPoint__) and its target connector (or __EndPoint__). This is why by default the __Polyline ConnectionType__ visualizes a straight connection.			
 
-	#### __XAML__
-	{{region raddiagram-features-connections-6}}
+	#### __[XAML] Example 1:Polyline Connection__
+	{{region raddiagram-features-connections-0}}
 		<Grid>
 			<telerik:RadDiagram>
 				<telerik:RadDiagramShape x:Name="xShape1" Content="Shape1"  Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}" Position="250,100" />
@@ -97,8 +98,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 
 	If you want to change the route of the connection, you can add connection points in runtime while pressing the __Ctrl__ key and using the mouse to place points on the connection. You can move each point around the diagramming surface to create a curved connection. You can also explicitly define the connection points in code-behind through the __RadDiagramConnection.ConnectionPoints__ property. You can populate the __ConnectionPoints__ collection with objects of type __Point__:
 
-	#### __XAML__
-	{{region raddiagram-features-connections-7}}
+	#### __[XAML] Example 2: Add ConnectionPoints__
+	{{region raddiagram-features-connections-1}}
 		<telerik:RadDiagram>
 			<telerik:RadDiagramShape x:Name="xShape1"
 										Content="Shape1"
@@ -116,15 +117,15 @@ You can control the connection type through the __ConnectionType__ property. As 
 		</telerik:RadDiagram>
 	{{endregion}}
 	
-	#### __C#__
-	{{region raddiagram-features-connections-8}}
+	#### __[C#] Example 3: Add ConnectionPoints__
+	{{region raddiagram-features-connections-2}}
 		xConnection.ConnectionPoints.Add(new Point(300, 140));
 		xConnection.ConnectionPoints.Add(new Point(420, 200));
 		xConnection.ConnectionPoints.Add(new Point(440, 300));	
 	{{endregion}}
 	
-	#### __VB.NET__
-	{{region raddiagram-features-connections-9}}
+	#### __[VB.NET] Example 3: Add ConnectionPoints__
+	{{region raddiagram-features-connections-3}}
 		xConnection.ConnectionPoints.Add(New Point(300, 140))
 		xConnection.ConnectionPoints.Add(New Point(420, 200))
 		xConnection.ConnectionPoints.Add(New Point(440, 300))	
@@ -135,8 +136,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 
 	>tip You can use a default routing algorithm to automatically create connection points and route your connections. This basically ensures that the diagramming framework will use a routing algorithm to make sure that the path of the connection won't collide with any shapes. In order to use this feature, you can set the __RadDiagram RouteConnections__ property to __True__. Please refer to the [Routing]({%slug raddiagram-features-routing%}) tutorial for more information on the routing algorithm. If you want to use a rounded polyline connection, you can set the __RadDiagram ConnectionRoundedCorners__ to __True__.			
 
-	#### __XAML__
-	{{region raddiagram_features_connection_5}}
+	#### __[XAML] Example 4: Add rounded corners__
+	{{region raddiagram_features_connection_4}}
 		<telerik:RadDiagram x:Name="xDiagram" ConnectionRoundedCorners="True">
 			<telerik:RadDiagramShape x:Name="xShape1"
 									 Content="Shape1"
@@ -174,8 +175,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 
 	The __RadDiagramConnection.BezierTension__ parameter defines the curve that will be produced for a given set of end and handle points. The following illustration shows four Bezier connections defined by the same set of end and handle points:			
 
-	#### __XAML__
-	{{region raddiagram-features-connections-10}}
+	#### __[XAML] Example 5: Bezier Connection Type__
+	{{region raddiagram-features-connections-5}}
 		<telerik:RadDiagram x:Name="xDiagram" Margin="50">
 			<telerik:RadDiagramShape x:Name="xShape1"
 								Content="Shape1"
@@ -207,27 +208,27 @@ You can control the connection type through the __ConnectionType__ property. As 
 	
 	The offset between a Bezier connection handle point and its corresponding endpoint is controlled thorough the __BezierAutoOffset DiagramConstants__. Its default value is 30px, but you can change it to better fit your needs:				
 
-	#### __C#__
-	{{region raddiagram-features-connections-11}}
+	#### __[C#] Example 6: Set Bezier Offset__
+	{{region raddiagram-features-connections-6}}
 		DiagramConstants.BezierAutoOffset = 40;			  
 	{{endregion}}
 	
-	#### __VB.NET__
-	{{region raddiagram-features-connections-12}}
+	#### __[VB.NET] Example 6: Set Bezier Offset__
+	{{region raddiagram-features-connections-7}}
 		DiagramConstants.BezierAutoOffset = 40 
 	{{endregion}}
 	
 	When attaching a Bezier connection to a __RadDiagramShape__ you need to consider if it is attached to a built-in connector or to a custom connector. If the connection is attached to a custom connector, then you will have to manually set the position of the Bezier handle points. You can change the position of the points after you access them from the __RadDiagramConnection.ConnectionPoints__ collection, but you will also have to set the __RadDiagramConnection.IsModified__ property to __True__ to apply the changes:
 
-	#### __C#__
-	{{region raddiagram-features-connections-13}}
+	#### __[C#] Example 7: Add ConnectionPoints to Bezier connection type__
+	{{region raddiagram-features-connections-8}}
 		this.xDiagram.Connections[0].ConnectionPoints[0] = new Point(100, 100);
 		this.xDiagram.Connections[0].ConnectionPoints[1] = new Point(220, 200);
 		this.xDiagram.Connections[0].IsModified = true;			  
 	{{endregion}}
 	
-	#### __VB.NET__
-	{{region raddiagram-features-connections-14}}
+	#### __[VB.NET] Example 7: Add ConnectionPoints to Bezier connection type__
+	{{region raddiagram-features-connections-9}}
 		Me.xDiagram.Connections(0).ConnectionPoints(0) = New Point(100, 100)
 		Me.xDiagram.Connections(0).ConnectionPoints(1) = New Point(220, 200)
 		Me.xDiagram.Connections(0).IsModified = True	
@@ -235,13 +236,13 @@ You can control the connection type through the __ConnectionType__ property. As 
 	
 	If you don't want to manually traverse the __ConnectionPoints__ collection and then set the __IsModified__ property, you can use the __RadDiagramConnection.SetBezierHandles(Point,Point)__ method. It facilitates the definition of custom coordinates for the two handle points of a Bezier connection:
 
-	#### __C#__
-	{{region raddiagram-features-connections-15}}
+	#### __[C#] Example 8: Using SetBezierHandles() method__
+	{{region raddiagram-features-connections-10}}
 		(this.xDiagram.Connections[0] as RadDiagramConnection).SetBezierHandles(new Point(100, 100), new Point(220, 200));	  
 	{{endregion}}
 	
-	#### __VB.NET__
-	{{region raddiagram-features-connections-16}}
+	#### __[VB.NET] Example 8: Using SetBezierHandles() method__
+	{{region raddiagram-features-connections-11}}
 		TryCast(Me.xDiagram.Connections(0), RadDiagramConnection).SetBezierHandles(New Point(100, 100), New Point(220, 200))
 	{{endregion}}
 	
@@ -260,8 +261,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	![Rad Diagram Connections Spline Connection](images/RadDiagram_Connections_SplineConnection.png)
 	In order to set the array of points, you will have to populate the __RadDiagram.ConnectionPoints__ collection. You can do that manually in code-behind:				
 
-	#### __XAML__
-	{{region raddiagram-features-connections-17}}
+	#### __[XAML] Example 9: Spline Connection Type__
+	{{region raddiagram-features-connections-12}}
 		<telerik:RadDiagram x:Name="xDiagram" >
 			<telerik:RadDiagramShape x:Name="xShape1"
 									Content="Shape1"
@@ -277,15 +278,15 @@ You can control the connection type through the __ConnectionType__ property. As 
 		</telerik:RadDiagram>			  
 	{{endregion}}
 	
-	#### __C#__		
-	{{region raddiagram-features-connections-18}}
+	#### __[C#] Example 10: Add ConnectionPoints to Spline Connection__		
+	{{region raddiagram-features-connections-13}}
 		this.xDiagram.Connections[0].ConnectionPoints.Add(new Point(140, 20));
 		this.xDiagram.Connections[0].ConnectionPoints.Add(new Point(250, 150));
 		this.xDiagram.Connections[0].ConnectionPoints.Add(new Point(350, 50));			  			  
 	{{endregion}}
 	
-	#### __VB.NET__
-	{{region raddiagram-features-connections-19}}
+	#### __[VB.NET] Example 10: Add ConnectionPoints to Spline Connection__
+	{{region raddiagram-features-connections-14}}
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(140, 20))
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(250, 150))
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(350, 50))							  
@@ -300,8 +301,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__None__:
 	![Rad Diagram Features Cap Type None](images/RadDiagram_Features_CapType_None.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-20}}
+	#### __[XAML] Example 11: None Cap Type__
+	{{region raddiagram-features-connections-15}}
 		<telerik:RadDiagramConnection
 			SourceCapType="None"
 			TargetCapType="None"
@@ -312,8 +313,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow1__: 
 	![Rad Diagram Features Cap Type Arrow 1](images/RadDiagram_Features_CapType_Arrow1.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-21}}
+	#### __[XAML] Example 12: Arrow1 Cap Type__
+	{{region raddiagram-features-connections-16}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow1"
 			TargetCapType="Arrow1"
@@ -324,8 +325,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow1Filled___
 	 ![Rad Diagram Features Cap Type Arrow 1 Filled](images/RadDiagram_Features_CapType_Arrow1Filled.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-22}}
+	#### __[XAML] Example 13: Arrow1Filled Cap Type__
+	{{region raddiagram-features-connections-17}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow1Filled"
 			TargetCapType="Arrow1Filled"
@@ -336,8 +337,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow2__ 
 	![Rad Diagram Features Cap Type Arrow 2](images/RadDiagram_Features_CapType_Arrow2.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-23}}
+	#### __[XAML] Example 14: Arrow2 Cap Type__
+	{{region raddiagram-features-connections-18}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow2"
 			TargetCapType="Arrow2"
@@ -348,8 +349,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow2Filled__ 
 	![Rad Diagram Features Cap Type Arrow 2 Filled](images/RadDiagram_Features_CapType_Arrow2Filled.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-24}}
+	#### __[XAML] Example 15: Arrow2Filled Cap Type__
+	{{region raddiagram-features-connections-15}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow2Filled"
 			TargetCapType="Arrow2Filled"
@@ -360,8 +361,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow3__ 
 	![Rad Diagram Features Cap Type Arrow 3](images/RadDiagram_Features_CapType_Arrow3.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-25}}
+	#### __[XAML] Example 16: Arrow3 Cap Type__
+	{{region raddiagram-features-connections-16}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow3"
 			TargetCapType="Arrow3"
@@ -372,8 +373,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow4__
 	![Rad Diagram Features Cap Type Arrow 4](images/RadDiagram_Features_CapType_Arrow4.png)
 
-	#### __XAML__	
-	{{region raddiagram-features-connections-26}}
+	#### __[XAML] Example 17: Arrow4 Cap Type__	
+	{{region raddiagram-features-connections-17}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow4"
 			TargetCapType="Arrow4"
@@ -384,8 +385,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow4Filled__ 
 	![Rad Diagram Features Cap Type Arrow 4 Filled](images/RadDiagram_Features_CapType_Arrow4Filled.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-27}}
+	#### __[XAML] Example 18: Arrow4Filled Cap Type__	
+	{{region raddiagram-features-connections-18}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow4Filled"
 			TargetCapType="Arrow4Filled"
@@ -396,8 +397,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow5__ 
 	![Rad Diagram Features Cap Type Arrow 5](images/RadDiagram_Features_CapType_Arrow5.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-28}}
+	#### __[XAML] Example 19: Arrow5 Cap Type__
+	{{region raddiagram-features-connections-19}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow5"
 			TargetCapType="Arrow5"
@@ -408,8 +409,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow5Filled__ 
 	![Rad Diagram Features Cap Type Arrow 5 Filled](images/RadDiagram_Features_CapType_Arrow5Filled.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-29}}
+	#### __[XAML] Example 20: Arrow5Filled Cap Type__
+	{{region raddiagram-features-connections-20}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow5Filled"
 			TargetCapType="Arrow5Filled"
@@ -420,8 +421,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow6__ 
 	![Rad Diagram Features Cap Type Arrow 6](images/RadDiagram_Features_CapType_Arrow6.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-30}}
+	#### __[XAML] Example 21: Arrow6 Cap Type__
+	{{region raddiagram-features-connections-21}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow6"
 			TargetCapType="Arrow6"
@@ -432,8 +433,8 @@ You can control the connection type through the __ConnectionType__ property. As 
 	__Arrow6Filled__ 
 	![Rad Diagram Features Cap Type Arrow 6 Filled](images/RadDiagram_Features_CapType_Arrow6Filled.png)
 
-	#### __XAML__
-	{{region raddiagram-features-connections-31}}
+	#### __[XAML] Example 22: Arrow6Filled Cap Type__
+	{{region raddiagram-features-connections-22}}
 		<telerik:RadDiagramConnection
 			SourceCapType="Arrow6Filled"
 			TargetCapType="Arrow6Filled"
@@ -447,9 +448,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 * Label a connection with a sample string:
 
-	#### __XAML__
-
-	{{region raddiagram_features_connection_0}}
+	#### __[XAML] Example 23: Set Connection Content__
+	{{region raddiagram_features_connection_23}}
 		<Grid>
 			<telerik:RadDiagram>
 				<telerik:RadDiagramShape
@@ -482,9 +482,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 * Define __UIElements__ in the __Content__ of the connection:			
 
-	#### __XAML__
-
-	{{region raddiagram_features_connection_1}}
+	#### __[XAML] Example 24: Custom elements inside Connection Content__
+	{{region raddiagram_features_connection_24}}
 		<Grid>
 			<telerik:RadDiagram>
 				<telerik:RadDiagramShape x:Name="ConditionShape"
@@ -539,8 +538,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 * Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 
-	#### __C#__
-	{{region raddiagram-features-connections-32}}
+	#### __[C#] Example 25: Create business object__
+	{{region raddiagram-features-connections-25}}
 		 public class DataItem : ViewModelBase
 			{
 				private string ipAddress;
@@ -558,8 +557,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 		this.DataContext = new DataItem() { IpAddress = "192.168.92.0" };
 	{{endregion}}
 
-	#### __VB.NET__
-	{{region raddiagram-features-connections-33}}
+	#### __[VB.NET] Example 25: Create business object__
+	{{region raddiagram-features-connections-26}}
 		Public Class DataItem
 			Inherits ViewModelBase
 			Private m_ipAddress As String
@@ -577,9 +576,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 		Me.DataContext = New DataItem() With { .IpAddress = "192.168.92.0" }
 	{{endregion}}
 	
-	#### __XAML__
-
-	{{region raddiagram_features_connection_2}}
+	#### __[XAML] Example 25: Bind Connection Content property__
+	{{region raddiagram_features_connection_27}}
 		<Grid>
 			<telerik:RadDiagram>
 				<telerik:RadDiagramShape x:Name="ConditionShape"
@@ -606,9 +604,8 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 
 * If you want to customize the visual representation of the bound property, you can take advantage of the __RadDiagramConnection ContentTemplate__ property:
 
-	#### __XAML__
-
-	{{region raddiagram_features_connection_3}}
+	#### __[XAML] Example 26: Set ContentTemplate__
+	{{region raddiagram_features_connection_28}}
 		<Grid>
 			<telerik:RadDiagram>
 				<telerik:RadDiagramShape x:Name="ConditionShape"
@@ -663,9 +660,8 @@ You can set the __RadDiagramConnection__ in edit mode using the __IsInEditMode__
 
 If the __RadDiagramConnection.Content__ property is bound to a business item, you can set the connection __EditTemplate__ to define how the business item will be edited. For example if we use the __DataItem__ class, defined above, as a __DataContext__ of the __RadDiagram__, we can set up the following connection:
 
-#### __XAML__
-
-{{region raddiagram_features_connection_4}}
+#### __[XAML] Example 27: Set EditTemplate__
+{{region raddiagram_features_connection_29}}
     <Grid>
         <telerik:RadDiagram>
             <telerik:RadDiagramShape x:Name="ConditionShape"
@@ -738,6 +734,57 @@ You can get the bounds of a __RadDiagramConnection__ through the __Bounds__ prop
 With the __R1 2019__ version of our controls __RadDiagramConnection__ now expose a __UseFreeConnectors__ property. This __Boolean__ property gets or sets whether the connection will choose free connectors when attaching to a shape. In the definition of free connectors means that no connections are outgoing or incoming for this connector of the shape.
 
 > The __UseFreeConnectors__ property require the __SourceConnectorPosition__ or __TargetConnectorPosition__ to be set to __Auto__ in order have effect.
+
+## Custom Connection
+
+The __RadDiagramConnection__ element exposes the __CreateGeometry()__ method, which can be overridden to create a custom connection. In this section we will demonstrate how to use __CreateGeometry()__ method to create our own connection. 
+
+#### __[C#] Example 28: Create Custom Connection__
+{{region raddiagram_features_connection_30}}
+	public class CustomConnection : RadDiagramConnection
+	{
+		protected override System.Windows.Media.Geometry CreateGeometry(Telerik.Windows.Diagrams.Core.BridgeType bridgeType, bool roundedCorners)
+		{
+			var newGeometry = new GeometryGroup();
+
+			var startX = this.StartPoint.X;
+			var startY = this.StartPoint.Y;
+
+			var boundsLeft = Math.Min(this.StartPoint.X, this.EndPoint.X);
+			var boundsTop = Math.Min(this.StartPoint.Y, this.EndPoint.Y);
+
+			var offsetX = Math.Abs(this.EndPoint.X - this.StartPoint.X);
+			var offsetY = Math.Abs(this.EndPoint.Y - this.StartPoint.Y);
+			var segmentsCount = (int)Math.Max(3, Math.Max(offsetX / Math.Pow(offsetX, 0.5) / 3, offsetY / Math.Pow(offsetY, 0.5) / 3));
+
+			var xStep = (this.EndPoint.X - this.StartPoint.X) / Math.Pow(segmentsCount, 2) / 2;
+			var yStep = (this.EndPoint.Y - this.StartPoint.Y) / Math.Pow(segmentsCount, 2) / 2;
+
+			for (int i = 1; i <= segmentsCount; i++)
+			{
+
+				var center = new Point(startX + xStep * (2 * i * i - i) - boundsLeft, startY + yStep * (2 * i * i - i) - boundsTop);
+				newGeometry.Children.Add(new EllipseGeometry(center, Math.Max(2, Math.Abs(xStep) * i), Math.Max(2, Math.Abs(yStep) * i)));
+			}
+			return newGeometry;
+		}
+	}
+{{endregion}}
+
+#### __[XAML] Example 29: Declare Custom Connection__
+{{region raddiagram_features_connection_30}}
+    <telerik:RadDiagram x:Name="diagram">
+		<telerik:RadDiagramShape x:Name="shape1" Position="200 160" />
+		<telerik:RadDiagramShape x:Name="shape2"
+									Geometry="{telerik:CommonShape ShapeType=OctagonShape}"
+									Position="540 150" />
+		<local:CustomConnection Source="{Binding ElementName=shape1}" Target="{Binding ElementName=shape2}"
+								StrokeThickness="2"
+								Background="Blue"/>
+	</telerik:RadDiagram> 
+{{endregion}}
+
+![Rad Diagram Custom Connection](images/RadDiagram_Connections_CustomConnection.PNG)
 
 ## See Also
  * [Structure]({%slug raddiagram-structure%})

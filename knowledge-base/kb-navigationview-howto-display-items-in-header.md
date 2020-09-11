@@ -1,5 +1,5 @@
 ---
-title: How to Add Data Dource to PaneHeader
+title: How to add a data source to the PaneHeader
 description: Bind a collection of items to the pane header
 type: how-to
 page_title: Bind a Collection of Items to the PaneHeader
@@ -45,4 +45,5 @@ You can achieve the desired result by using the [PaneHeaderTemplate]({%slug radn
 {{endregion}}
 
 ## See Also
-[Header and Footer]({%slug radnavigationview-header-and-footer%})
+
+* [Header and Footer]({%slug radnavigationview-header-and-footer%})

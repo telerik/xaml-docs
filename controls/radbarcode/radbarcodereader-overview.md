@@ -78,7 +78,7 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 
 #### __[VB.NET] Example 2: Decoding an image with the BarcodeDecoder__
 
-{{region vb-radbarcodereader-overview-1}}
+{{region vb-radbarcodereader-overview-2}}
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim imageUri = New Uri("../../barcode.jpg", UriKind.Relative)
 		Dim imageSource = New BitmapImage(imageUri)

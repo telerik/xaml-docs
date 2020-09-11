@@ -44,4 +44,4 @@ To have the relations appear over the GanttView tasks, you need to set the **ZIn
 {{endregion}}
 
 ## See Also
-* [GanttView Styles]({%slug radganttview-styles-and-templates-overview})
+* [GanttView Styles]({%slug radganttview-styles-and-templates-overview%})

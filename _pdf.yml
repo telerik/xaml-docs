@@ -9,6 +9,7 @@ intro_columns:
       "DataForm": "raddataform-overview"
       "DataPager": "datapager-overview"
       "DataServiceDataSource": "raddataservicedatasource-overview"
+      "EntityFrameworkCoreDataSource": "entityframeworkcore-overview"
       "EntityFrameworkDataSource": "entityframework-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
       "DataGrid": "gridview-overview2"

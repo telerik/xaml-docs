@@ -3367,6 +3367,11 @@ defaults:
         title_prefix: "WPF DomainDataSource"
 -
     scope:
+        path: "controls/radentityframeworkcoredatasource"
+    values:
+        title_prefix: "WPF EntityFrameworkCoreDataSource"
+-
+    scope:
         path: "controls/radentityframeworkdatasource"
     values:
         title_prefix: "WPF EntityFrameworkDataSource"

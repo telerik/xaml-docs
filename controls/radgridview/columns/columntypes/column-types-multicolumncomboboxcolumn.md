@@ -54,6 +54,8 @@ __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%s
 
 * __Columns__: Gets the collection of GridViewColumns for the grid view in the editor's popup. This property was introduced with **R1 2020 SP1**.
 
+* __CanUserSearchInHiddenColumns__: Gets or sets value that indicates whether the search engine should search in hidden columns. This property was introduced with **R3 2020**.
+
 ## Setting up GridViewMultiColumnComboBoxColumn
 
 __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a GridViewMultiColumnComboBoxColumn. The RadGridView is populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection is set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.

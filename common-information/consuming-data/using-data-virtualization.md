@@ -17,15 +17,16 @@ As the case of handling a lot of data is quite common, the requirement for fast 
 When working with the UI components that enable UI virtualization, you may take advantage of the above mentioned technique by using __VirtualQueryableCollectionView__ class. It enables you to benefit from the on-demand data loading to smooth scrolling with UI virtual components.
 __VirtualQueryableCollectionView__ provides you with the following important members:
 
-* __LoadSize__ property: defines the maximum number of items requested at once;
+* __LoadSize__: Gets or sets a value that defines the maximum number of items requested at once.
             
-* __VirtualItemCount__ property: defines the total number of items available on the server-side;
-            
-* __ItemsLoading__ event : will be raised when the collection is requesting item at some index and this item is not already loaded. The arguments in this event are as follows:
+* __VirtualItemCount__: Gets or sets a value that defines the total number of items available on the server-side.
+
+* __ShouldEnumeratorLoadItems__: Gets or sets a value that indicates whether items that are not loaded yet should get loaded while the collection's enumerator is traversed. 
+
+* __ItemsLoading__: An event that will be raised when the collection is requesting item at some index and this item is not already loaded. The arguments in this event are as follows:
              
-* __StartIndex__ : requested item index;
-                
-* __ItemCount__ : number of requested items (can be less than or equal to the LoadSize).
+	* __StartIndex__: Requested item index.					
+	* __ItemCount__: Number of requested items (can be less than or equal to the LoadSize).
 
 {% if site.site_name == 'WPF' %}
 

@@ -32,7 +32,7 @@ Additionally, the Telerik controls introduce customized design-time support as u
 
 ## .NET 5 Support
 
-__Telerik UI for WPF__ also provides assemblies for __.NET 5.0 Preview__ (since R2 2020) and __.NET 5.0 Preview 8__ (since R3 2020).
+__Telerik UI for WPF__ also provides assemblies for __.NET 5.0 Preview__ (since R2 2020) and __.NET 5.0 Release Candidate 1 (RC1)__ (since R3 2020).
 
 ## See Also
 

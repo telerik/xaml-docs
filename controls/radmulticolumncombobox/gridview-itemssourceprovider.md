@@ -96,6 +96,30 @@ The example below shows how to set the **ContextMenu** property of **GridVIewIte
 #### __Figure 1: Result of Example 1__
 ![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
 
+## Can User Search In Hidden Columns
+
+Since __R3 2020__, the GridViewItemsSourceProvider exposes the __CanUserSearchInHiddenColumns__ property through which you can control whether the search engine should search in hidden columns.
+
+## Exclude Columns From Search
+
+With the __R3 2020__ version of our controls, you can exclude columns from the built-in search functionality. To exclude a column, you can set the IsSearchable property of the column to false.
+
+#### __[XAML] Example 2: Exclude second column from search__
+{{region xaml-radmulticolumncombobox--gridview-itemssourceprovider-1}}
+	<telerik:RadMultiColumnComboBox>
+		<telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+			<telerik:GridViewItemsSourceProvider ItemsSource="{Binding MyObjects}" AutoGenerateColumns="false">
+				<telerik:GridViewItemsSourceProvider.Columns>
+					<telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" />
+					<telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" IsSearchable="False"  /> 
+					<telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" />                       
+				</telerik:GridViewItemsSourceProvider.Columns>
+			</telerik:GridViewItemsSourceProvider>
+		</telerik:RadMultiColumnComboBox.ItemsSourceProvider>
+	</telerik:RadMultiColumnComboBox>
+{{endregion}}
+
+
 ## See Also  
 * [Getting Started]({%slug multicolumncombobox-getting-started%})
 * [DropDown Properties]({%slug multicolumncombobox-dropdown-properties%})

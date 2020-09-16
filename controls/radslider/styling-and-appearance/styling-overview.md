@@ -111,7 +111,7 @@ The DecreaseHandleStyle and IncreaseHandleStyle properties allow you to modify t
 #### __Figure 3: RadSlider with custom DecreaseHandleStyle and IncreaseHandleStyle__
 ![RadSlider with custom DecreaseHandleStyle and IncreaseHandleStyle](images/radslider_styles_templates_decreasethumbstyle_increasethumbstyle.png)
 
-## TickBackStyle
+## TickBarStyle
 
 The TickBarStyle property allows you to modify the appearance of the bottom and top tickbars - the controls which displays the ticks.
 

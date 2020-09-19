@@ -356,7 +356,7 @@ The following example demonstrates the ability to switch between the supported *
 	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Light);   
 	
 	//Gray color variation 
-	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Light);   
+	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Gray);   
 	
 	//Dark color variation 
 	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Dark); 

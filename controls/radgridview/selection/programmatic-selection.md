@@ -10,7 +10,7 @@ position: 3
 
 # Programmatic Selection
 
-Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties which allow you to manipulate the selected data.
+Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties that allow you to manipulate the selected data.
         
 ## SelectedItem
 

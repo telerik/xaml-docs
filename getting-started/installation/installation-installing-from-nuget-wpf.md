@@ -25,7 +25,7 @@ We provide separate packages for the different assemblies from the UI for WPF su
 
 * Nuget packages with all of the UI for WPF assemblies: 
 
-    These packages are not available for download from the Telerik Nuget Server. To use them, check out the [using a local package source](#using-a-local-package-source) section.
+ >tip These packages are not available for download from the Telerik Nuget Server. To use them, check out the [using a local package source](#using-a-local-package-source) section.
 
     > The NuGet packages containing all of the UI for WPF dlls are available for the supported .NET Framework versions. Since __R1 2019__, a .NET Core 3 UI for WPF NuGet Package is also available.
     >![Common Installing From NuGet NetCore](images/Common_InstallingFromNuGet_NetCore.png)

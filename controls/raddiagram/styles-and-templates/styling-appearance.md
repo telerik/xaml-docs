@@ -10,7 +10,7 @@ position: 1
 
 # Customize Appearance
 
-This article describes how to customize the appearance of the __RadDiagram__,__RadDrigramShape__ and __RadDiagramConnection__ through a set of properties exposed by their API.	  
+This article describes how to customize the appearance of the __RadDiagram__,__RadDiagramShape__ and __RadDiagramConnection__ through a set of properties exposed by their API.	  
 
 ## Customizing the RadDiagram Appearance
 
@@ -125,7 +125,7 @@ You can also control what visual information should be displayed on a __RadDiagr
 
 * __IsRotationEnabled__: A __Boolean__ property that controls the visibility of the rotation thumb as well as the rotation functionality of the shape. Its default value is __True__.			
 
-* __IsDraggingEnabled__: A __Boolean__ property that controls the dragging functionality of the shape, along with teh visibility of the dragging thumb. Its default value is __True__.			
+* __IsDraggingEnabled__: A __Boolean__ property that controls the dragging functionality of the shape, along with the visibility of the dragging thumb. Its default value is __True__.			
 
 ## Customizing the RadDiagramConnection Appearance
 
@@ -147,11 +147,11 @@ __RadDiagram__ supports pages preview canvas. The pages background is enabled by
 
 * __BackgroundPageGrid.PageSize__: A property of type __Size__ that determines the size that describes a single page in the __RadDiagram__ surface. The default value of the property is a size of 1092x763 units - the size of an A4 page format.			
 
-* __BackgroundPageGrid.LineStroke__: A property is of type __Brush__ that specifies how the pages outline is painted.			
+* __BackgroundPageGrid.LineStroke__: A property of type __Brush__ that specifies how the pages outline is painted.			
 
-* __BackgroundPageGrid.LineStrokeDashArray__: A property gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the pages.			
+* __BackgroundPageGrid.LineStrokeDashArray__: A property which gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the pages.			
 
-* __BackgroundPageGrid.LineStrokeThickness__: A property is of type __double__ that gets or sets the thickness of the lines that visualize the pages.			
+* __BackgroundPageGrid.LineStrokeThickness__: A property of type __double__ that gets or sets the thickness of the lines that visualize the pages.			
 
 >tip The __BackgroundPageGrid__ attached properties are defined in the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace. This is why in order to use them you need to add a using statement for that namespace in code-behind or define an alias in XAML: `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"`
 

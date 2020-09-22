@@ -121,7 +121,7 @@ A few things to double check to ensure correct setup:
 * The Service connection is using Basic Authentication and the URL is correct (`https://nuget.telerik.com/nuget` exactly, no trailing slash).
 * That Service Connection is selected as the credentials source.
 * The credentials being used have a UI for WPF license.
-* Make sure that you use the correct restore command (`dotnet restore` for .NET Core and .NET5 or `nuget restore` for msbuild+msbuild) in your pipeline step. See the [DevOpsExamples repo by Lance McCarthy] for live examples.
+* Make sure that you use the correct restore command (`dotnet restore` for .NET Core and .NET5 or `nuget restore` for msbuild+msbuild) in your pipeline step. See the [DevOpsExamples repo by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples) for live examples.
 
 #### GitHub Secrets
 

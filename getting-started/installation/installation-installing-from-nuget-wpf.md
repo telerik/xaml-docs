@@ -87,17 +87,16 @@ When you set up the package source and place the NuGet files there, you can find
 
 ![](images/Common_InstallingFromNuGet_10_wpf.png)
 
-## CI/CD
-
-### CI and CD Automated Builds
+## CI and CD Automated Builds
 
 Often enough, you would want to set up Continuous Integration and/or Continuous Delivery (CI/CD) pipelines or builds for your project that uses the Telerik components. This is a valid scenario and the "one license per developer" license does not prevent you from doing so. The Telerik components are commercial software and as such can only be distributed through channels that are private and/or behind authentication.
 
 There are a few common ways people implement CI/CD automated builds:
 
-* You can put your own credentials (or the credentials of the license holder, depending on how your licenses are set up) in the nuget.config of the build machine/pipeline. In many cases, when doing so, they will even be encrypted when you add the Telerik feed source through the CLI. Alternatively, you can copy an encrypted version from your own local config if you have one and if plain text is an issue.
-
-* Using a Local Package (seen above)
+* Use the licensed account's credentials in environment variables on the build machine/runner and reference those in the nuget.config file's `<packageSourceCredentials>` (see Azure DevOps nuget.config example below)
+* Add the package source, with credentials, using NuGet CLI's `nuget add source` command (before the restore or msbuild step).
+* Using a Local Package source (seen above)
+* Use a Service connection or Secrets storage system (see Azure DevOps and GitHub Actions below)
 
 You must protect your credentials and/or the Telerik packages and ensure they are used only by you and not by other developers, according to the [license-per-developer policy](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s). They can by such colleagues (like other developers, QAs, designers, front-end devs, DBAs and so on) for building and running a solution, provided they do not use the Telerik components to create functionality. Of course, you must ensure that such credentials or package sources are not available to the general public (for example, in public repositories). 
 
@@ -114,16 +113,15 @@ There are a couple of common questions and issues:
 * Telerik feed not being found
     * The most common reason for a problem is that the path to the `nuget.config` file is wrong (it should, by default, be at the root level). 
     * Make sure the URL to the server is correct `https://nuget.telerik.com/nuget` (HTTPS, no trailing slash)
-* '401 login failed' error. See the Troubleshooting section below
+* '401 login failed' error. See the **Troubleshooting** section below
 * An `index.json not found` error can occur from many root causes. If you have successfully authenticated, this error usually means that the feed wasn't able to be searched or connected to. A common reason is an incorrect feed URL, such as including a trailing slash - Correct: `https://nuget.telerik.com/nuget` and Incorrect: `https://nuget.telerik.com/nuget/`.
 
 A few things to double check to ensure correct setup:
 
 * The Service connection is using Basic Authentication and the URL is correct (`https://nuget.telerik.com/nuget` exactly, no trailing slash).
 * That Service Connection is selected as the credentials source.
-* The credentials being used have a UI for Blazor license.
-* Make sure that you use `dotnet restore` and not `nuget restore` in your pipeline step.
-
+* The credentials being used have a UI for WPF license.
+* Make sure that you use the correct restore command (`dotnet restore` for .NET Core and .NET5 or `nuget restore` for msbuild+msbuild) in your pipeline step. See the [DevOpsExamples repo by Lance McCarthy] for live examples.
 
 #### GitHub Secrets
 
@@ -203,11 +201,11 @@ Result:
 
 ### Networking Problems
 
-Another common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
+Another common problem is that your machine (PC, GitHub Actions runner or Azure DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 
-https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27Xamarin%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
+* https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27WPF%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
 
-After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
+After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.WPF packages available with your license.
           
 ## See Also
 

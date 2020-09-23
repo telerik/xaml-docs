@@ -55,15 +55,13 @@ If you run that in an example with a __RadRichTextBoxRibbonUI__ and/or __Selecti
 #### __[C#] Example 1: Applying default style settings on the document__
 
 {{region radrichtextbox-frequently-asked-questions_1}}
-    public void SetDefaultFontPropertiesToEditor(RadRichTextBox editor)
-    {
-        this.radRichTextBox1.FontFamily = new FontFamily("Comic Sans MS");
+
+    	this.radRichTextBox1.FontFamily = new FontFamily("Comic Sans MS");
         this.radRichTextBox1.FontSize = Unit.PointToDip(12);
         this.radRichTextBox1.FontStyle = FontStyles.Italic;
         this.radRichTextBox1.FontWeight = FontWeights.Bold;
-		this.radRichTextBox1.Foreground = Brushes.Red;
+	this.radRichTextBox1.Foreground = Brushes.Red;
         this.radRichTextBox1.DocumentInheritsDefaultStyleSettings = true;
-    }
 {{endregion}}
 
 

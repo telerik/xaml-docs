@@ -17,7 +17,7 @@ This topic defines terms and concepts related to __RadAutoSuggestBox__ that you 
 ![](images/radautosuggestbox-visual-structure-1.png)  
 ![](images/radautosuggestbox-visual-structure-2.png)
 
-The following table lists the elements that make up a RadNavigationView:
+The following table lists the elements that make up a RadAutoSuggestBox:
 
 * __Watermark Content__: Shows the empty content of RadAutoSuggestBox when there is no text enterted into the TextBox.
 

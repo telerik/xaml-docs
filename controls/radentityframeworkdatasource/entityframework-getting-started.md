@@ -97,6 +97,23 @@ Several important things to notice:
 
 * __DataView__ - the data that comes from the query is stored in the __DataView__ property, so we bind the __RadGridView__ to it.
 
+## RelatedObjects
+
+The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders"  collection in case you want to get the related Orders for each Customer from the database.
+
+#### __[XAML] Example 2: Using the RelatedObjects__
+{{region xaml-entityframework-getting-started-1}}
+
+    <telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
+        <telerik:RadEntityFrameworkDataSource.RelatedObjects>
+            <sys:String>Orders</sys:String>
+        </telerik:RadEntityFrameworkDataSource.RelatedObjects>
+        <telerik:RadEntityFrameworkDataSource.DbContext>
+			<local:MyEntityModel/>
+		</telerik:RadEntityFrameworkDataSource.DbContext>
+    </telerik:RadEntityFrameworkDataSource>
+{{endregion}}
+
 ## See also
 
 * [Create a simple data application with WPF and Entity Framework 6](https://docs.microsoft.com/en-us/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6)

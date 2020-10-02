@@ -99,11 +99,10 @@ Several important things to notice:
 
 ## RelatedObjects
 
-The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders"  collection in case you want to get the related Orders for each Customer from the database.
+The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders" collection in case you want to get the related Orders for each Customer from the database.
 
 #### __[XAML] Example 2: Using the RelatedObjects__
 {{region xaml-entityframework-getting-started-1}}
-
     <telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
         <telerik:RadEntityFrameworkDataSource.RelatedObjects>
             <sys:String>Orders</sys:String>

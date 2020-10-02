@@ -259,6 +259,23 @@ You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBa
 #### __Figure 4: Stylized PanZoomBar on the VerticalAxis__
 ![](images/radchart-features-scrollandzoom-4.png)
 
+## Style Drag Zoom Border
+
+You can use the DragZoomBorderStyle property of the RadCartesianChart in order to stylize the DragZoomBorder element. The applied style needs to target the __Border__ element.
+
+#### __[XAML] Example 14: Style the Drag Zoom Border__
+{{region radchart-features-scrollandzoom_13}}
+	<telerik:RadCartesianChart.DragZoomBorderStyle>
+		<Style TargetType="Border">
+			<Setter Property="BorderThickness" Value="3"/>
+			<Setter Property="BorderBrush" Value="Red"/>
+		</Style>
+	</telerik:RadCartesianChart.DragZoomBorderStyle>
+{{endregion}}
+
+#### __Figure 5: Stylized Drag Zoom Border__
+![](images/radchart-features-scrollandzoom-dragzoomborder-5.png)
+
 ## See Also 
 
 * [Getting Started]({%slug radchartview-introduction%})

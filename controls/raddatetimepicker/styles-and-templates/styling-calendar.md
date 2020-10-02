@@ -10,20 +10,13 @@ position: 3
 
 # Styling the Calendar
 
-To style the calendar in your __RadDateTimePicker__ you can do the following:
+This article shows how to customize the default Style of the RadCalendar control shown in the RadDateTimePicker's dropdown.
 
-* Create a __Style__ for it and set it to the __CalendarStyle__ property of the __RadDateTimePicker__.
+To style the RadDateTimePicker's calendar, define a __Style__ object __targeting the RadCalendar__ control and assign it to the __CalendarStyle__ property of RadDateTimePicker. 
 
-* Modify the default resources for the __RadCalendar__, that are generated together with the __RadDateTimePicker's Style__.
+If you use the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls, you will need to extract the whole style (including the ControlTemplate) of the RadCalendar control used in RadDateTimePicker. The original style can be found in the [Telerik.Windows.Controls.Input.xaml]({%slug styling-apperance-editing-control-templates%}) file. In the NoXaml scenario, you do not need this. Instead, you should base the custom Style on the default __RadCalendarStyle__ resource.
 
->tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the clock, look [here]({%slug raddatetimepicker-styling-clock-view%}).
-
-## Setting the CalendarStyle property
-
-__Example 1__ demonstrates how the week names of the __RadCalendar__ in the dropdown of the RadDateTimePicker can be removed:
-
-#### __[XAML] Example 1: RadDateTimePicker with CalendarStyle__
-
+#### __[XAML] Example 1: Hiding the week names from the calendar using the CalendarStyle property__  
 {{region xaml-raddatetimepicker-styling-calendar-0}}
 	<Window.Resources>
         <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
@@ -39,90 +32,27 @@ __Example 1__ demonstrates how the week names of the __RadCalendar__ in the drop
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadCalendar with week names removed](images/DateTimePicker_StylingTheCalendar.png)
 
-## Modifying the default resources
+The RadCalendar control consists of CalendarButton controls representing the days, months, weeks, etc. Those can be customized via the __DayButtonStyle__, __MonthButtonStyle__, __YearButtonStyle__ and __DecadeButtonStyle__ properties of RadCalendar. The data context passed to the CalendarButton controls is an object of type [CalendarButtonContent](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.calendar.calendarbuttoncontent) which contains information about the button type (day, week, month, etc.), date, selection state, and others.
 
-In order to see these resources you have to first generate the default style for the __RadDateTimePicker__ control. To learn how read this [topic]({%slug raddatetimepicker-styling-raddatetimepicker%}).
+#### __[XAML] Example 2: Setting a tooltip for the days in the calendar__  
+{{region xaml-raddatetimepicker-styling-calendar-1}}
+	<telerik:RadDatePicker>
+		<telerik:RadDatePicker.CalendarStyle>
+			<Style TargetType="telerik:RadCalendar">
+				<Setter Property="DayButtonStyle">
+					<Setter.Value>
+						<Style TargetType="calendar:CalendarButton">
+							<Setter Property="telerik:RadToolTipService.ToolTipContent" Value="{Binding Date}"/>
+						</Style>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</telerik:RadDatePicker.CalendarStyle>
+	</telerik:RadDatePicker>
+{{endregion}}
 
-Modifying some of the resources generated for the __RadDateTimePicker's__ style will allow you to change the appearance of the calendar. Here are some of the resources:
-
-![](images/dateTimePicker_styling_styling_the_calendar_010.png)
-
-* __PickerForeground_Normal__ - is the foreground brush used in the __RadDateTimePicker__.
-
-* __CalendarOuterBorder__ - is the calendar's content outer border brush which appears around the calendar view.
-
-* __CalendarViewBackground__ - is the calendar view's background brush.
-
-* __CalendarWeekHeaderVerticalOuterBorder__ - is the outer border brush used for the vertical line separating the week numbers from the dates in the calendar's month view.
-
-* __CalendarWeekHeaderHorizontalOuterBorder__ - is the outer border brush used for the horizontal line separating the days' names from the dates in the calendar's month view.
-
-* __CalendarWeekHeaderHorizontalBackground__ - is the background brush used in the calendar's month view, appearing behind the days of the week's names.
-
-* __CalendarWeekHeaderVerticalBackground__ - is the background brush used in the calendar's month view, appearing behind the days of the week's names.
-
-* __CalendarButtonButtonChromeMargin__ - is of type __Thickness__ and allows you to change the calendar view element's margin.
-
-* __RadCalendarDefaultStyleKey__ - defines the calendar's default style.
-
-![](images/dateTimePicker_styling_styling_the_calendar_011.png)
-
-The following resources describe the __RadDateTimePicker__ content's header:
-
-* __HeaderOuterBorder__ - represents the __RadDateTimePicker__ content's header outer border brush.
-
-* __HeaderBackground__ - corresponds to the __RadDateTimePicker__ content's header background.
-
-* __HeaderInnerBorder__ - represents the __RadDateTimePicker__ content's header inner border brush.
-
-* __HeaderTextBackground__ - is the foreground brush applied to the __RadDateTimePicker__ content's header.
-
-* __MoveLeftButtonStyle__ - is the style applied to the header's left button.
-
-* __MoveRightButtonStyle__ - is the style applied to the header's right button
-
-* __CalendarHeaderButton__ - is the style applied to the header's main button.
-
-In the Calendar view's header we can modify the default appearance of the left and right buttons. Each of them inherits a common __HeaderButtonChrome__ style, defining the following visual states:
-
-* __Normal__ - is the normal state of the corresponding element.
-
-* __MouseOver__ - is active when the mouse is over the corresponding visual element.
-
-* __Pressed__ - is active when you press the corresponding visual element.
-
-Each of the left and right buttons' default templates contain the following elements:
-
-* __ButtonChrome__ - a __ButtonChrome__ which default style is __HeaderButtonChrome__ style.
-
-* __BackgroundIcon__ - the background arrow pointing left or right.
-
-* __ForegroundIcon__ - the foreground arrow pointing left or right.
-
-For each of the described above common visual states, the following brushes are defined:
-
-* __HeaderButtonOuterBorder__ - is the element's outer border when it is in the corresponding state (from those described above).
-
-* __HeaderButtonInnerBorder__- is the element's inner border when it is in the corresponding state.
-
-* __HeaderButtonBackground__ - is the element's background when it is in the corresponding state.
-
-* __HeaderButtonIcon__ - defines the left and right icon's appearance through in the corresponding state (from those described above) including the __Disabled__ state.
-
-Here is an example of the above resources modified:
-
-![](images/dateTimePicker_styling_styling_the_calendar_020.png)
-
-Here is the result:
-
-![](images/dateTimePicker_styling_styling_the_calendar_030.png)
-
-## See Also
-
- * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})
-
+## See Also  
+ * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})  
  * [Features - Date Items]({%slug raddatetimepicker-features-date-items%})
-
  * [Styling RadDateTimePicker]({%slug raddatetimepicker-styling-raddatetimepicker%})
-
  * [Styling the Clock]({%slug raddatetimepicker-styling-clock-view%})

@@ -88,6 +88,8 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ![](images/radmaskedinput_features_tokens_numeric.png)
 
+>An explanation about the default numeric format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
+
 ## DateTime Tokens
 
 ### 1. Standard DateTime Format Codes
@@ -147,6 +149,8 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 {{endregion}}
 
 ![](images/radmaskedinput_features_tokens_datetime.png)
+
+>An explanation about the default DateTime format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 ### 2. Custom DateTime Format Codes
 

@@ -26,8 +26,8 @@ To add a numeric scale to any container (including RadialGauge and LinearGauge c
 	                    Foreground="#FF1E8D00"
 	                    telerik:ScaleObject.RelativeX="0"
 	                    telerik:ScaleObject.RelativeY="0"
-	                    telerik:ScaleObject.RelativeWidth="1*" 
-	                    telerik:ScaleObject.RelativeHeight="1*">
+	                    telerik:ScaleObject.RelativeWidth="1&ast;" 
+	                    telerik:ScaleObject.RelativeHeight="1&ast;">
 	                <telerik:NumericIndicator.Positions>
 	                    <telerik:HexagonalNumberPosition />
 	                    <telerik:HexagonalNumberPosition />

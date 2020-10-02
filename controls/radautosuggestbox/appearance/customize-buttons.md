@@ -15,7 +15,7 @@ You can customize those by setting the __ClearButtonContent__ and __QueryButtonC
 
 ## Changing Button Icons
 
-The default content template of the buttons contain a [RadGlyph]({%slug common-styling-appearance-radglyph%}) control, so you can use a [glyph code]({%slug common-styling-appearance-glyphs-reference-sheet%}) to easily change the default icons.
+The default content template of the buttons contains a [RadGlyph]({%slug common-styling-appearance-radglyph%}) control, so you can use a [glyph code]({%slug common-styling-appearance-glyphs-reference-sheet%}) to easily change the default icons.
 
 >tip See the default buttons appearance in the [Visual Structure]({%slug radautosuggestbox-visual-structure%}) article.
 

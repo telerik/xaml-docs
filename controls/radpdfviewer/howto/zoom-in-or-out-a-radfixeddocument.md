@@ -28,14 +28,14 @@ By using the **RadPdfViewer**'s **ScaleFactor** property. The default value of t
 
 #### **[C#] Example 1: Zoom in**
 
-{{region radspreadsheet-zoom-in-or-out-a-worksheet_0}}
+{{region radpdfviewer-zoom-in-or-out-a-radfixeddocument_0}}
 
     this.pdfViewer.ScaleFactor = 2;
 {{endregion}}
 
 #### **[C#] Example 2: Zoom out**
 
-{{region radspreadsheet-zoom-in-or-out-a-worksheet_1}}
+{{region radpdfviewer-zoom-in-or-out-a-radfixeddocument_1}}
 
     this.pdfViewer.ScaleFactor = 0.5;
 {{endregion}}

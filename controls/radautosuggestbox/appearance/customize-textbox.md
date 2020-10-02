@@ -11,7 +11,7 @@ position: 2
 
 The appearance of the TextBox part of RadAutoSuggestBox can be customized via the __TextBoxStyle__ property of the control.
 
-The TextBoxStyle property expects a Style object with a __TargetType__ set to __RadWaterMarkTextBox__.
+The TextBoxStyle property expects a Style object with a __TargetType__ set to __RadWatermarkTextBox__.
 
 #### __[XAML] Example 1: Setting TextBoxStyle__
 {{region radautosuggestbox-appearance-customize-textbox-0}}

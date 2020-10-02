@@ -10,27 +10,7 @@ position: 3
 
 # Programmatic Selection
 
-Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties which allow you to manipulate the selected data. You are able to:
-
-* [Set the Selected Item](#selecteditem)
-
-* [Set the Current Item](#currentitem)
-
-* [Add or Remove Items to/from the Selection](#selecteditems)
-
-* [Set the Selected Cell](#selectedcells)
-
-* [Select All of the Items](#selecting-all-items)
-
-* [Deselect All of the Items](#deselecting-all-items)
-
-* [Selecting Cell Regions](#selecting-cell-regions)
-
-* [Deselecting Cell Regions](#deselecting-cell-regions)
-
-* [Selecting Items Range](#selecting-range-of-items)
-
->tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
+Besides the built-in selection functionality, you are able to use a programmatic approach to select the data in the __RadGridView__. The __RadGridView__ exposes several properties that allow you to manipulate the selected data.
         
 ## SelectedItem
 
@@ -112,6 +92,8 @@ The __SelectedItems__ is a collection of data items, which holds the currently s
 
 >You can add or remove items to the __SelectedItems__ collection, but cannot change its instance because it is read only.
 
+>tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
+
 ## SelectedCells
 
 Represents a collection of __GridViewCellInfo__ objects which represent the business object and the column of the selected cell/cells. You can work with it when the __SelectionUnit__ is set to __Cell__, otherwise it will be null.
@@ -130,17 +112,33 @@ Represents a collection of __GridViewCellInfo__ objects which represent the busi
 	Me.radGridView.SelectedCells.Remove(New GridViewCellInfo(item, column, Me.radGridView))
 {{endregion}}
 
+## Select Method
+
+You can also select items by using the **Select** method which accepts a collection of items. This is a lot quicker than calling the **SelectedItems.Add()** method for each item.
+
+#### __[C#] Example 6: Selecting items__
+
+{{region cs-radgridview-selection-programmatic-selection_20}}
+	this.radGridView.Select(itemsToSelect);
+{{endregion}}
+
+#### __[VB.NET] Example 6: Selecting items__
+
+{{region vb-radgridview-selection-programmatic-selection_21}}
+	Me.radGridView.Select(itemsToSelect)
+{{endregion}}
+
 ## Selecting All Items
 
-The __RadGridView__ control exposes a __SelectAll()__ method, which allows you to select all items at once.
+The __RadGridView__ control also exposes a __SelectAll()__ method, which allows you to select all items at once.
 
-#### __[C#] Example 6: Selecting all items__
+#### __[C#] Example 7: Selecting all items__
 
 {{region cs-radgridview-selection-programmatic-selection_10}}
 	this.radGridView.SelectAll();
 {{endregion}}
 
-#### __[VB.NET] Example 6: Selecting all items__
+#### __[VB.NET] Example 7: Selecting all items__
 
 {{region vb-radgridview-selection-programmatic-selection_11}}
 	Me.radGridView.SelectAll()
@@ -150,13 +148,13 @@ The __RadGridView__ control exposes a __SelectAll()__ method, which allows you t
 
 There are two ways to remove the selection. The first one is to set the __SelectedItem__ property to null.
 
-#### __[C#] Example 7: Deselecting by setting SelectedItem to null__
+#### __[C#] Example 8: Deselecting by setting SelectedItem to null__
 
 {{region cs-radgridview-selection-programmatic-selection_12}}
 	this.radGridView.SelectedItem = null;
 {{endregion}}
 
-#### __[VB.NET] Example 7: Deselecting by setting SelectedItem to null__
+#### __[VB.NET] Example 8: Deselecting by setting SelectedItem to null__
 
 {{region vb-radgridview-selection-programmatic-selection_13}}
 	Me.radGridView.SelectedItem = Nothing
@@ -164,13 +162,13 @@ There are two ways to remove the selection. The first one is to set the __Select
 
 The second one is to call the __Clear()__ method of the __SelectedItems__ collection.
 
-#### __[C#] Example 8: Calling SelectedItem's Clear method__
+#### __[C#] Example 9: Calling SelectedItem's Clear method__
 
 {{region cs-radgridview-selection-programmatic-selection_14}}
 	this.radGridView.SelectedItems.Clear();
 {{endregion}}
 
-#### __[VB.NET] Example 8: Calling SelectedItem's Clear method__
+#### __[VB.NET] Example 9: Calling SelectedItem's Clear method__
 
 {{region vb-radgridview-selection-programmatic-selection_15}}
 	Me.radGridView.SelectedItems.Clear()
@@ -188,14 +186,14 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 * **Height**: The number of cells to select vertically.
 
-#### __[C#] Example 9: Selecting а single cell region__
+#### __[C#] Example 10: Selecting а single cell region__
 
 {{region radgridview-selection-programmatic-selection_16}}
 
 	this.radGridView.SelectCellRegion(new CellRegion(0, 0, 2, 2));
 {{endregion}}
 
-#### __[VB.NET] Example 9: Selecting а single cell region__
+#### __[VB.NET] Example 10: Selecting а single cell region__
 
 {{region radgridview-selection-programmatic-selection_17}}
 
@@ -206,7 +204,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
 
 ![Telerik {{ site.framework_name }} DataGrid programmatic-selection-select-single-region](images/programmatic-selection-select-single-region.jpg)
 
-#### __[C#] Example 9: Selecting multiple cell regions__
+#### __[C#] Example 11: Selecting multiple cell regions__
 
 {{region radgridview-selection-programmatic-selection_18}}
 
@@ -217,7 +215,7 @@ As of **R3 2016** RadGridView exposes a **SelectCellRegion** method which allows
     });
 {{endregion}}
 
-#### __[VB.NET] Example 9: Selecting multiple cell regions__
+#### __[VB.NET] Example 11: Selecting multiple cell regions__
 
 {{region radgridview-selection-programmatic-selection_19}}
 

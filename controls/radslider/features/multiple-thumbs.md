@@ -91,6 +91,7 @@ In the case of the RangeSliderThumb, this style is only applied to the left-most
 {{region xaml-radslider-multiple-thumbs_1}}
     <Grid>
         <Grid.Resources>
+            <!-- If you're not using the NoXaml binaries, you need to remove the BasedOn attributes of the styles -->
             <Style x:Key="RedThumbStyle" TargetType="Thumb" BasedOn="{StaticResource ThumbStyle}">
                 <Setter Property="Background" Value="Red" />
             </Style>
@@ -110,6 +111,8 @@ In the case of the RangeSliderThumb, this style is only applied to the left-most
     </Grid>
 {{endregion}}
 
+>importantPlease note that when using the [StyleManager theming approach]({%slug common-styling-apperance-setting-theme-wpf%}) you need to also define the **Height** for the middle thumb. This has been demonstrated in the following [knowledge base article]({%slug kb-slider-style-middle-thumb-style-manager%}).
+
 Alternatively, you can set the ThumbStyle, **SelectionMiddleThumbStyle** and AlternateThumbStyle properties on the RadSlider control itself and they will be passed onto all thumbs from the **Thumbs** collection.
 
 #### __[XAML] Example 3: Styling the thumbs through the properties of the RadSlider__
@@ -124,7 +127,7 @@ Alternatively, you can set the ThumbStyle, **SelectionMiddleThumbStyle** and Alt
 
 ![Styling the thumbs](images/multiple-thumbs-5.png)
 
->You can see more example of creating styles for the RadSlider control in the [Styling and Appearance]({%slug radslider-styling-overview%}) article.
+>You can see more examples of creating styles for the RadSlider control in the [Styling and Appearance]({%slug radslider-styling-overview%}) article.
 
 ## See Also
 

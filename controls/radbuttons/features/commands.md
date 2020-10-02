@@ -26,33 +26,33 @@ Here is an example of a command usage in an MVVM scenario. The command is locate
 
 #### __[C#] Example 1: Defining a command__
 {{region cs-radbuttons-features-commands_0}}
-	public class SampleViewModel
+public class SampleViewModel
+{
+	public SampleViewModel()
 	{
-	   public SampleViewModel()
-	   {
-	   }
-	   public ICommand MyCommand
-	   {
-	       get;
-	       set;
-	   }
+		MyCommand = new DelegateCommand(OnCommandExecuted);
 	}
+	public ICommand MyCommand { get; set; }
+
+	private void OnCommandExecuted(object obj)
+	{
+		MessageBox.Show("MyCommand Executed");
+	} 
+}
 {{endregion}}
 
 #### __[VB.NET] Example 1: Defining a command__
 {{region vb-radbuttons-features-commands_1}}
 	Public Class SampleViewModel
-	    Public Sub New()
-	    End Sub
-	    Public Property MyCommand() As ICommand
-	        Get
-	            Return m_MyCommand
-	        End Get
-	        Set(value As ICommand)
-	            m_MyCommand = Value
-	        End Set
-	    End Property
-	    Private m_MyCommand As ICommand
+		Public Sub New()
+			MyCommand = New DelegateCommand(AddressOf OnCommandExecuted)
+		End Sub
+
+		Public Property MyCommand As ICommand
+
+		Private Sub OnCommandExecuted(ByVal obj As Object)
+			MessageBox.Show("MyCommand Executed")
+		End Sub
 	End Class
 {{endregion}}
 

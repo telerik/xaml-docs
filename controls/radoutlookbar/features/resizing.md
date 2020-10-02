@@ -14,7 +14,7 @@ This article describes the resizing feature and the item areas of RadOutlookBar.
 
 RadOutlookBar has three areas where the RadOutlookBarItems can reside - __active__ area, __minimized__ area and __overflow__ area.
 
-#### __[XAML] Example 1: Setting the RadOutlookBar__
+#### __[XAML] Example 1: Defining the RadOutlookBar__
 {{region radoutlookbar-resizing-0}}
 	<telerik:RadOutlookBar>
 		<telerik:RadOutlookBarItem Header="Item 1" />
@@ -69,7 +69,7 @@ To set the current number of items in the active area, use the __ActiveItemsCoun
 
 ## Item Position Changed
 
-When the control is resized, the items positions can change from the active to the minimized and overflow areas and vice verca. This changed is reported via the __ItemPositionChanged__ event of RadOutlookBar. The event arguments provide the previous and the new positions of the corresponding item. To get this information, use the __OldPosition__ and __NewPosition__ properties of the event arguments.
+When the control is resized, the items positions can change from the active to the minimized and overflow areas and vice verca. This change is reported via the __ItemPositionChanged__ event of RadOutlookBar. The event arguments provide the previous and the new positions of the corresponding item. To get this information, use the __OldPosition__ and __NewPosition__ properties of the event arguments.
 
 #### __[XAML] Example 6: Subscribing to ItemPositionChanged__
 {{region radoutlookbar-resizing-5}}

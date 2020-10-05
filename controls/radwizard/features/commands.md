@@ -60,12 +60,25 @@ The other approach is to define the __RadButton__ beyond the boundaries of __Rad
 
 In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ property, specifying the __RadWizard__ towards which the command has to be executed. This specific command will be automatically disabled until a change in any of the items in the __RadWizard__ is made.
 
+## Execute RadWizardCommands Programmatically
+
+All RadWizardCommands are of type __RoutedUICommand__. So, for example, you may easily handle the __Click__ event of a button, and execute your command. However, when invoking the command in such a manner a second parameter should be added, pointing out the target UI Element as shown in Exapmle 3.
+
+#### __[C#] Example 3: Executing wizard command from code behind__
+{{region cs-radwizard-features-commands-3}}
+	private void RadButton_Click(object sender, RoutedEventArgs e)
+	{
+		var moveCurrentToNextCommand = RadWizardCommands.MoveCurrentToNext as RoutedUICommand; 
+		moveCurrentToNextCommand.Execute(null, this.wizard); 
+	}
+{{endregion}}
+
 ## Custom CommandProvider
 
 RadWizard also exposes a __CommandProvider__ property, which allows you to customize the behavior of the commands in an MVVM-friendly way. Each of the commands listed in the beginning of the article can be customized by overriding its corresponding __Execute__/__CanExecute__ method. __Examples 3 and 4__ demonstrate a custom CommandProvider implementation. 
 
-#### __[C#] Example 3: Creating a custom WizardCommandProvider__
-{{region cs-radwizard-features-commands-3}}
+#### __[C#] Example 4: Creating a custom WizardCommandProvider__
+{{region cs-radwizard-features-commands-4}}
 	public class CustomCommandProvider : WizardCommandProvider
     {
         public CustomCommandProvider() : base(null)
@@ -92,7 +105,7 @@ RadWizard also exposes a __CommandProvider__ property, which allows you to custo
 {{endregion}}
 
 #### __[VB.NET] Example 3: Creating a custom WizardCommandProvider__
-{{region vb-radwizard-features-commands-4}}
+{{region vb-radwizard-features-commands-5}}
 	Public Class CustomCommandProvider
 		Inherits WizardCommandProvider
 
@@ -115,8 +128,8 @@ RadWizard also exposes a __CommandProvider__ property, which allows you to custo
 	End Class
 {{endregion}}
 
-#### __[XAML] Example 4: RadWizard with custom CommandProvider implementation__
-{{region xaml-radwizard-features-commands-5}}
+#### __[XAML] Example 5: RadWizard with custom CommandProvider implementation__
+{{region xaml-radwizard-features-commands-6}}
 	<Grid>
         <Grid.Resources>
             <local:CustomCommandProvider x:Key="CommandProvider"/>

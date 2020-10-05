@@ -42,8 +42,8 @@ This method exports the associated RadGridView to a [Workbook](https://docs.tele
 
 			//Export the Workbook to an Excel file
             SaveFileDialog dialog = new SaveFileDialog();
-            dialog.DefaultExt = "*.xlsx";
-            dialog.Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", "xlsx", "Excel");
+            dialog.DefaultExt = "xlsx";
+            dialog.Filter = String.Format("{1} files (\*.{0})|\*.{0}|All files (\*.\*)|\*.\*", "xlsx", "Excel");
             dialog.FilterIndex = 1;
 
             if (dialog.ShowDialog() == true)
@@ -56,6 +56,8 @@ This method exports the associated RadGridView to a [Workbook](https://docs.tele
             }
         }
 {{endregion}}
+
+>As of **R3 2020**, you can also export the workbook to an **XLS** file using the [XlsFormatProvider](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xls/xlsformatprovider) similarly to the XlsxFormatProvider. For the purpose, you need to add a reference to the **Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll** assembly and change the extension of the exported file.
 
 #### __[C#] Example 2: Double the width of the exported columns:__
 {{region cs-gridview-export-workbook-1}}

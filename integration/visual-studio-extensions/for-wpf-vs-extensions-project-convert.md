@@ -51,6 +51,10 @@ When you click the Finish button:
 
 * A default application-wide theme gets set if you use theming based on implicit styles.
 
+## Convert Project from XAML to NoXAML or Vice Versa
+
+When converting a project from __XAML to NoXAML (or vice-versa),__ you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
+
 ## See Also  
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
  * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})

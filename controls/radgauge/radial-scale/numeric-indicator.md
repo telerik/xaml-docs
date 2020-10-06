@@ -23,8 +23,8 @@ To add numeric indicator to the scale you have to include NumericIndicator eleme
 	                                Format="{}{0:F1}"
 	                                telerik:ScaleObject.RelativeX="0.32"
 	                                telerik:ScaleObject.RelativeY="0.65"
-	                                telerik:ScaleObject.RelativeWidth="0.55*"
-	                                telerik:ScaleObject.RelativeHeight="0.16*"
+	                                telerik:ScaleObject.RelativeWidth="0.55\*"
+	                                telerik:ScaleObject.RelativeHeight="0.16\*"
 	                                Value="53.7">
 	                <telerik:NumericIndicator.Background>
 	                    <SolidColorBrush Color="#EEEEEE"/>

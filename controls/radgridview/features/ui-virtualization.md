@@ -14,7 +14,7 @@ __RadGridView's API__ supports __UI Virtualization__ which processes only these 
 
 The grid control utilizes **horizontal** and **vertical** virtualization and introduces container recycling for speed improvement and reduction in memory usage. This is of great importance when the control is bound to large data sets. The container recycling pushes further the speed of horizontal and vertical scrolling, allowing **RadGridView** to reuse the existing containers for the different data items from the source collection instead of creating new ones.
 
->important You should **not work** with the visual elements of **RadGridView**(GridViewCell, GridViewRow, etc.) directly as this will result in inconsistent behavior due to the containers recycling mechanism. Instead, you should use the underlying data items as explained in the [Style Selectors]({%slug gridview-style-selectors-overview%}) section.
+>important You should **not work** with the visual elements of **RadGridView**(GridViewCell, GridViewRow, etc.) directly as this will result in inconsistent behavior due to the containers recycling mechanism. Instead, you should use the underlying data items as explained in the [Style Selectors]({%slug gridview-cell-style-selector%}) section.
 
 These techniques, combined with the outstanding LINQ-based data engine, guarantee fast performance.
         

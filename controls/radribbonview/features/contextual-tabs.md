@@ -261,6 +261,16 @@ By default, scrolling the **mouse wheel** while the mouse is over the control wi
 	Me.ribbonView.IsMouseWheelTabScrollingEnabled = False
 {{endregion}}
 
+## Prevent the Selection of a Contextual Tab When It Is Activated
+
+By default, when a contextual tab is activated, the first tab element inside will be selected. To disable this behavior you can set the __SelectFirstTabOnActivation__ property of the __RadRibbonContextualGroup__ to __false__.
+
+#### __[XAML] Example 11: Disable selection of the first tab inside contextual tab__
+{{region xaml-radribbonview-contextual-tabs_12}}
+	<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1" SelectFirstTabOnActivation="False"/>
+{{endregion}}
+  
+
 ## See Also
  * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
  * [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})

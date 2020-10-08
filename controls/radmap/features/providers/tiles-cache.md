@@ -21,7 +21,7 @@ RadMap providers use the __FileSystemCache__ class to enable the tiles caching. 
 FileSystemCache saves the requested tiles to the file system and more specifically to the ApplicationData folder on the OS: `C:\Users\<username>\AppData\Local\TelerikMapCache\<providername>`. This type of cache allows you to define few settings like max size of the storage, an expiration date-time for the tiles and also the file system directory where the tiles are saved.
 
 #### __[XAML] Example 1: Setting FileSystemCache and changing the default path__
-{{region radmap-features-providers-tiles-cache-0}}
+{{region xaml-radmap-features-providers-tiles-cache-0}}
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
@@ -38,7 +38,7 @@ FileSystemCache saves the requested tiles to the file system and more specifical
 MemoryCache saves each tile in a byte array stored in memory.
 
 #### __[XAML] Example 2: Replacing the default FileSystemCache with MemoryCache__
-{{region radmap-features-providers-tiles-cache-1}}
+{{region xaml-radmap-features-providers-tiles-cache-1}}
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
@@ -55,7 +55,7 @@ MemoryCache saves each tile in a byte array stored in memory.
 IsolatedStorageCache saves the requested tiles into the [isolated storage](https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage).
 
 #### __[XAML] Example 3: Replacing the default FileSystemCache with IsolatedStorageCache__
-{{region radmap-features-providers-tiles-cache-2}}
+{{region xaml-radmap-features-providers-tiles-cache-2}}
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
@@ -72,7 +72,7 @@ IsolatedStorageCache saves the requested tiles into the [isolated storage](https
 Besides the built-in cache storages, a custom storage can be created by implementing the __ICacheStorage__ interface. This allows to introduce a saving mechanism different then the originally provided ones. The interface requests to implement __Load__, __LoadAsync__ and __Save__ methods.
 
 #### __[C#] Example 4: Creating custom cache storage__
-{{region radmap-features-providers-tiles-cache-3}}
+{{region cs-radmap-features-providers-tiles-cache-3}}
 	public class CustomCacheStorage : ICacheStorage
     {
         public Stream Load(string fileName)
@@ -99,7 +99,7 @@ Besides the built-in cache storages, a custom storage can be created by implemen
 {{endregion}}
 
 #### __[XAML] Example 5: Using the custom cache storage__
-{{region radmap-features-providers-tiles-cache-4}}
+{{region xaml-radmap-features-providers-tiles-cache-4}}
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
@@ -116,7 +116,7 @@ Besides the built-in cache storages, a custom storage can be created by implemen
 The RadMap control uses the [built-in .NET caching mechanism](https://docs.microsoft.com/en-us/dotnet/api/system.net.cache.requestcachelevel?view=netcore-3.1) for downloading map tiles. The tiled providers expose a __RequestCacheLevel__ property which is used to control the current caching level. The default level is __System.Net.Cache.RequestCacheLevel.CacheIfAvailable__. 
 
 #### __[XAML] Example 6: Setting the RequestCacheLevel__
-{{region radmap-features-providers-tiles-cache-5}}
+{{region xaml-radmap-features-providers-tiles-cache-5}}
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider RequestCacheLevel="Revalidate" />

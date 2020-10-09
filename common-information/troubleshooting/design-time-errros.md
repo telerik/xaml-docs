@@ -40,9 +40,13 @@ __To resolve this__ you can use the following steps.
 	
 7. Open your project's local folder and manually delete the *bin* and *obj* folders.
 
-8. Open the project in Visual Studio again.
+8. Open your solution's local folder and manually delete the *.vs* folder.
 
-9. [Clean and Rebuild](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2017) the project.
+	> Remember that deleting *.vs* folder you will lose local debug settings and startup project configuration. This can fix IntelliSense or build errors.
+
+9. Open the project in Visual Studio again.
+
+10. [Clean and Rebuild](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2017) the project.
 
 ## See Also
 * [Missing Controls in the UI]({%slug troubleshooting-invisible-controls%})

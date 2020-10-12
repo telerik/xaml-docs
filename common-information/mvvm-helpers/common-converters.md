@@ -12,25 +12,7 @@ position: 2
 
 The Telerik suite provides a set of built-in __IValueConverters__ which can be used to perform conversion between different types.
 
-The converters are located in the __Telerik.Windows.Controls.dll__.
-
-* [BooleanToOpacityConverter](#booleantoopacityconverter)
-* [InvertedBooleanToOpacityConverter](#invertedbooleantoopacityconverter)
-* [BooleanToVisibilityConverter](#booleantovisibilityconverter)
-* [InvertedBooleanToVisibilityConverter](#invertedbooleantovisibilityconverter)
-* [VisibilityToBooleanConverter](#visibilitytobooleanconverter)
-* [EnumToVisibilityConverter](#enumtovisibilityconverter)
-* [ColorToBrushConverter](#colortobrushconverter)
-* [NullToVisibilityConverter](#nulltovisibilityconverter)
-* [NumberToVisibilityConverter](#numbertovisibilityconverter)
-* [DateTimeTypeConverter](#datetimetypeconverter)
-* [UppercaseConverter](#uppercaseconverter)
-* [BinaryImageConverter](#binaryimageconverter)
-* [DoubleToThicknessConverter](#doubletothicknessconverter)
-* [OpacityConverter](#opacityconverter)
-* [StringToGlyphConverter](#stringtoglyphconverter)
-* [ThicknessToOrientedThicknessConverter](#thicknesstoorientedthicknessconverter)
-* [BrushToColorConverter](#brushtocolorconverter)
+The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 
 #### __[XAML] Example 1: Specifying converters in XAML__
 {{region xaml-common-converters_0}}
@@ -223,7 +205,7 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 
 ## BrushToColorConverter
 
-BrushToColorConverter converts a [SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1) to a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1). The returned color comes from the [Color property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush.color?view=netcore-3.1#System_Windows_Media_SolidColorBrush_Color) of the brush. The converter supports TwoWay binding. If an empty or invalid value is passed to the Convert() method, the returned result is `null`.
+The BrushToColorConverter converts a [SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1) to a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1). The returned color comes from the [Color property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush.color?view=netcore-3.1#System_Windows_Media_SolidColorBrush_Color) of the brush. The converter supports TwoWay bindings. If an empty or invalid value is passed to the Convert() method, the returned result is `null`.
 
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

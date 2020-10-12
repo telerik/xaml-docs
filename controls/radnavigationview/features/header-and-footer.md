@@ -94,15 +94,20 @@ RadNavigationView's footer can be customized with the following properties: __Pa
 
 With the **2019.2.715** [latest internal build]({%slug installation-installing-lib%}), the RadNavigationView also exposes a **PaneFooterTemplateSelector** property which allows you to specify a different data template based on the value of the **Footer** property.
 
-## Define Items in the Footer
+## Define Items and Subitems in the Footer
 
-As of **R3 2020**, you can also define RadNavigationViewItems in the footer section of the control. For the items to function as expected and be selectable, however, you need to place them inside of a **NavigationViewSubItemsHost**.
+As of **R3 2020**, you can also define RadNavigationViewItems in the footer section of the control. For the items to function as expected, participate in the selection of the control, and hold subitems, however, you need to place them inside of a **NavigationViewSubItemsHost**.
 
 #### __[XAML] Example 4: Place items in the footer__
 {{region xaml-radnavigationview-header-and-footer-3}}
     <DataTemplate x:Key="PaneFooterTemplate">
         <telerik:NavigationViewSubItemsHost>
-            <telerik:RadNavigationViewItem Content="Footer Item 1" />
+            <telerik:RadNavigationViewItem Content="Footer Item 1">
+                <telerik:RadNavigationViewItem.Items>
+                    <telerik:RadNavigationViewItem Content="Footer SubItem 1" />
+                    <telerik:RadNavigationViewItem Content="Footer SubItem 2" />
+                </telerik:RadNavigationViewItem.Items>
+            </telerik:RadNavigationViewItem>
             <telerik:RadNavigationViewItem Content="Footer Item 2" />
             <telerik:RadNavigationViewItem Content="Footer Item 3" />
         </telerik:NavigationViewSubItemsHost>

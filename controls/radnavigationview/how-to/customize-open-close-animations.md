@@ -22,13 +22,13 @@ By default __RadNavigationView__ defines three animations named __ResizePaneAnim
 
 #### __[XAML] Example 1: RadNavigationView Animations Default Values__
 {{region xaml-radnavigationview-how-to-customize-open-close-animations-0}}
-    <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PaneGrid" Duration="0:0:0.2" ResizeMode="Horizontal">
+    <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" ResizeMode="Horizontal">
         <animation:ResizeAnimation.Easing>
             <ExponentialEase EasingMode="EaseOut" />
         </animation:ResizeAnimation.Easing>
     </animation:ResizeAnimation>
-    <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PaneGrid" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
-    <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PaneGrid" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
+    <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
+    <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
 {{endregion}}
 
 ## Customizing Animations
@@ -45,13 +45,13 @@ In order to customize the animations supported by RadNavigationView, you can [ex
             <Setter Property="animation:AnimationManager.AnimationSelector">
                 <Setter.Value>
                     <animation:AnimationSelector>
-                        <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PaneGrid" Duration="0:0:3" ResizeMode="Horizontal">
+                        <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:3" ResizeMode="Horizontal">
                             <animation:ResizeAnimation.Easing>
                                 <ExponentialEase EasingMode="EaseOut" />
                             </animation:ResizeAnimation.Easing>
                         </animation:ResizeAnimation>
-                        <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PaneGrid" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
-                        <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PaneGrid" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
+                        <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
+                        <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
                     </animation:AnimationSelector>
                 </Setter.Value>
             </Setter>

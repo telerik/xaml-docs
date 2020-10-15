@@ -60,6 +60,26 @@ With **R2 2019** we introduced a new **SearchMode** property which allows you to
 
 >important The SearchMode property takes effect only if the **AutoCompleteMode** of the control is **Search**.
 
+## SelectionOnFocus
+
+With **R3 2020 1019 LIB version**, we introduced the __SelectionOnFocus__ property of the __RadMultiColumnComboBox__ control, which allows you to specify what will happen with the cursor when the control gets focus. 
+
+> This property will be respected when the SelectionBoxesVisibility property is set to Collapsed.
+
+The values for the __SelectionOnFocus__ property are predefined in the __SelectionOnFocus__ enumeration. It exposes the following members:				
+
+* __SelectAll__: Once the control is focused, it will select its whole text. 				
+
+* __CaretToBeginning__: Once the control is focused, the cursor will be positioned at its beginning.		
+
+* __CaretToEnd__: Once the control is focused, the cursor will be positioned at its end.
+
+* __ Unchanged __: Once the control is focused, the cursor's position won't be changed. This is the __default value__ for the __SelectionOnFocus__ property.					
+
+* __Default__: Once the control is focused, the cursor will be positioned at its end.
+
+* __DefaultSelectAll__: This property changes the __SelectionOnFocus__ behavior of the control depending on the source of the focus. If the control is focused on mouse click, the __Default__ __SelectionOnFocus__ behavior will be used. If, on the other hand, the control is focused using the __Tab__ key, the __SelectAll__ __SelectionOnFocus__ behavior will be used.
+
 ## See Also
 
 * [Getting Started]({%slug multicolumncombobox-getting-started%})

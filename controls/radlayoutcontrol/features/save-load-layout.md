@@ -16,14 +16,16 @@ __RadLayoutControl__ supports saving and loading the state of the layout. You ca
 
 In order to serialize a layout you will need to set the __RadLayoutControl.SerializationId__ attached property on the RadLayoutControl and all layout groups and UIElements that you want to save.
 
-> The __SerializationIds__ must be unique. If there are elements with matching __SerializationIds__ , this might lead to multiple operations performed on a single UI element resulting to an __ArgumentException__ with the following error message: "Element is already the child of another element".
+The __SerializationId must be unique__. If there are elements with matching __SerializationId__ , this might lead to multiple operations performed on a single UI element resulting to an __ArgumentException__ with the following error message: "Element is already the child of another element".
+
+If an element doesn't have __SerializationId__ property set, it will not be saved in the serialized XML file. So, it will be removed from the layout when the XML file loads.
 
 #### __[XAML] Example 1: Setting SerializationId in XAML__
 {{region layoutcontrol-features-serializaion-01}}
 	<telerik:RadLayoutControl telerik:RadLayoutControl.SerializationId="myLayoutControlID" />
 {{endregion}}
 
-> If an element doesn't have __SerializationId__ property set, it will not be saved in the serialized XML file. So, it will be removed from the layout when the XML file loads.
+When moving an element (via drag and drop) that doesn't have a LayoutControlGroup parent, the __element is automatically wrapped in a LayoutControlGroup__ which is added in the RadLayoutControl and marked as automatically generated.
  
 ## Saving the layout
 

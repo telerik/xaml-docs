@@ -94,12 +94,32 @@ RadNavigationView's footer can be customized with the following properties: __Pa
 
 With the **2019.2.715** [latest internal build]({%slug installation-installing-lib%}), the RadNavigationView also exposes a **PaneFooterTemplateSelector** property which allows you to specify a different data template based on the value of the **Footer** property.
 
+## Define Items and Subitems in the Footer
+
+As of **R3 2020**, you can also define RadNavigationViewItems in the footer section of the control. For the items to function as expected, participate in the selection of the control, and hold subitems, however, you need to place them inside of a **NavigationViewSubItemsHost**.
+
+#### __[XAML] Example 4: Place items in the footer__
+{{region xaml-radnavigationview-header-and-footer-3}}
+    <DataTemplate x:Key="PaneFooterTemplate">
+        <telerik:NavigationViewSubItemsHost>
+            <telerik:RadNavigationViewItem Content="Footer Item 1">
+                <telerik:RadNavigationViewItem.Items>
+                    <telerik:RadNavigationViewItem Content="Footer SubItem 1" />
+                    <telerik:RadNavigationViewItem Content="Footer SubItem 2" />
+                </telerik:RadNavigationViewItem.Items>
+            </telerik:RadNavigationViewItem>
+            <telerik:RadNavigationViewItem Content="Footer Item 2" />
+            <telerik:RadNavigationViewItem Content="Footer Item 3" />
+        </telerik:NavigationViewSubItemsHost>
+    </DataTemplate>
+{{endregion}}
+
 ## Customizing the Pane Toggle Button
 
 RadNavigationView has a RadToggleButton next to its header which allows for expanding or closing the navigation pane. This button is specially designed to show [RadGlyphs]({%slug common-styling-appearance-radglyph%}) ,since it has a RadGlyph in its ContentTemplate. You can easily change which glyph is displayed by setting the __PaneToggleButtonContent__ property to the desired [glyph string]({%slug common-styling-appearance-glyphs-reference-sheet%}). __Example 4__ demonstrates how this can be achieved.
 
-#### __[XAML] Example 4: Setting the PaneToggleButtonContent__
-{{region xaml-radnavigationview-header-and-footer-3}}
+#### __[XAML] Example 5: Setting the PaneToggleButtonContent__
+{{region xaml-radnavigationview-header-and-footer-4}}
      <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header" PaneToggleButtonContent="&#xe301;" />
 {{endregion}}
 
@@ -108,8 +128,8 @@ RadNavigationView has a RadToggleButton next to its header which allows for expa
 
 If do not want to show a RadGlyph as the Content of the toggle button, you can modify the __PaneToggleButtonContentTemplate__ as demosntrated in __Example 5__.
 
-#### __[XAML] Example 5: Setting the PaneToggleButtonContentTemplate__
-{{region xaml-radnavigationview-header-and-footer-4}}
+#### __[XAML] Example 6: Setting the PaneToggleButtonContentTemplate__
+{{region xaml-radnavigationview-header-and-footer-5}}
     <DataTemplate x:Key="PaneToggleButtonContentTemplate">
         <Rectangle Width="15" Height="15" Fill="White" />
     </DataTemplate>

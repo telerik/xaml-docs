@@ -78,7 +78,7 @@ The drag and drop feature of the control gives you the ability to rearrange the 
 #### __Figure 5: Dragging an element triggers the logic that displays the drop indicators.__
 ![](images/layoutcontrol-features-edit-the-layout-05.png)
 
-> Depending on the drop position the layout control can change a panel's orientation or include additional layout groups.
+> Depending on the drop position the layout control can change a panel's orientation or auto-generate additional layout groups.
 
 ## Resizing
 

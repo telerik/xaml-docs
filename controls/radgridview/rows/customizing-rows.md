@@ -38,7 +38,7 @@ Additionally, the rows content size can be limited via the __MinHeight__ and __M
 {{region xaml-gridview-customizing-rows_2}}
 	<telerik:RadGridView>
 		<telerik:RadGridView.RowStyle>
-			<!-- If you use NoXaml dlls add set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
+			<!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
 			<Style TargetType="telerik:GridViewRow">
 				<Setter Property="MaxHeight" Value="36" />
 			</Style>

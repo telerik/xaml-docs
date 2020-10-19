@@ -14,7 +14,7 @@ position: 0
 
 Thank you for choosing __RadDiagram__!		
 
-The __RadDiagram__ control and its components allow you to create flexible and interactive diagramming layouts for your richt data-visualization application. The diagram toolset enables you to:
+The __RadDiagram__ control and its components allow you to create flexible and interactive diagramming layouts for your rich data-visualization application. The diagram toolset enables you to:
 
 * Design workflows in which case shapes and connections are tightly bound to an underlying API.
 * Simulate processes and represent data logic.

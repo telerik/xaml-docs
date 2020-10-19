@@ -62,7 +62,7 @@ With **R2 2019** we introduced a new **SearchMode** property which allows you to
 
 ## SelectionOnFocus
 
-With the **R3 2020 1019 LIB version**, the __SelectionOnFocus__ property of the __RadMultiColumnComboBox__ control was introduced, which allows you to specify what will happen with the cursor when the control gets focus. 
+With the **R3 2020 SP1 version**, the __SelectionOnFocus__ property of the __RadMultiColumnComboBox__ control was introduced, which allows you to specify what will happen with the cursor when the control gets focus. 
 
 > This property is respected when the **SelectionBoxesVisibility** property is set to **Collapsed**.
 

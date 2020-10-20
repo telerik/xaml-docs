@@ -1,6 +1,6 @@
 ---
-title: The Type QueryableEntityCollectionView<T> Exists in Both Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 Error
-description: The type QueryableEntityCollectionView<T> exists in both Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 error appears when the nuget package with all Telerik WPF controls is added
+title: The Type QueryableEntityCollectionView&lt;T&gt; Exists in Both Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 Error
+description: The type QueryableEntityCollectionView&lt;T&gt; exists in both Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 error appears when the nuget package with all Telerik WPF controls is added
 page_title: QueryableEntityCollectionView Exists in Both Telerik.Windows.Controls.EntityFramework Assemblies Error When Nuget Package is Referenced
 type: troubleshooting
 slug: kb-nuget-queryableentitycollectionview-exists-in-both-dlls

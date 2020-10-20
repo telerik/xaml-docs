@@ -100,7 +100,7 @@ The default values of the brushes in the theme are listed below:
 
 |Brush name|Brush value||
 |----------|-----------|---|
-|**MainBrush**|#FFFFFFFF|<div class="theme-palette-color materialtheme-mainbrush" color:></div>|
+|**MainBrush**|#FFFFFFFF|<div class="theme-palette-color materialtheme-mainbrush"></div>|
 |**PrimaryBrush**|#FFFAFAFA|<div class="theme-palette-color materialtheme-primarybrush"></div>|
 |**ComplementaryBrush**|#FFE0E0E0|<div class="theme-palette-color materialtheme-complementarybrush"></div>|
 |**AlternativeBrush**|#FFF5F5F5|<div class="theme-palette-color materialtheme-alternativebrush"></div>|

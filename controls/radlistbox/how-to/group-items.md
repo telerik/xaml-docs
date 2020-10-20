@@ -14,7 +14,7 @@ In __RadListBox__ you can easily group the items based on their properties with 
 
 The following example will demonstrate how to bind the __ItemsSource__ property of __RadListBox__ to a __CollectionViewSource__ of custom objects grouped by one of their properties. In order for the scrolling of the grouped items to be possible, you must set the __IsScrollIntoViewEnabled__ property to "False".
 
->important The __IsScrollIntoViewEnabled__ was introduced with SP1 Q3 2015 and determines whether the selected item will automatically be scrolled into the view. When it is set to True (this is the default value) and an item gets selected, the item is brought into view by scrolling to it. Because that behavior is not expected when grouping is used, the property needs to be set to False – thus it will be allowed the selection of an item in a group without the need of scrolling to that group.<<COMMENT: This last phrase does not make sense. I think you can fix it if you say what selects the group.>>
+>important The __IsScrollIntoViewEnabled__ was introduced with SP1 Q3 2015 and determines whether the selected item will automatically be scrolled into the view. When it is set to True (this is the default value) and an item gets selected, the item is brought into view by scrolling to it. Because that behavior is not expected when grouping is used, the property needs to be set to False.
 
 In the example below, you create a new business object named Item. The implementation of the class is presented below:
 

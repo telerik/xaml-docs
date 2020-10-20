@@ -1,5 +1,5 @@
 ---
-title: RadGridView with ItemsSource of ObservableCollection<string> does not allow row additions or edits
+title: RadGridView with ItemsSource of ObservableCollection&lt;string&gt; does not allow row additions or edits
 description: How to set RadGridView ItemsSource to a collection of strings
 type: how-to
 page_title: Binding RadGridView ItemsSource to a string collection

@@ -105,7 +105,7 @@ The default values of the brushes in the theme are listed below.
 
 |Brush name|Brush value||
 |----------|-----------|---|
-|**AccentBrush**|#F5CC84|<div class="theme-palette-color visualstudio2019theme-accentbrush" color:></div>|
+|**AccentBrush**|#F5CC84|<div class="theme-palette-color visualstudio2019theme-accentbrush"></div>|
 |**AccentDarkBrush**|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-accentdarkbrush"></div>|
 |**AccentFocusedBrush**|#D2A85E|<div class="theme-palette-color visualstudio2019theme-accentfocusedbrush"></div>|
 |**AccentMainBrush**|#AAC0FF|<div class="theme-palette-color visualstudio2019theme-accentmainbrush"></div>|

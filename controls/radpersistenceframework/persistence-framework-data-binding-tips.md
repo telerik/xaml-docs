@@ -38,6 +38,7 @@ To avoid this, make sure that the load method is called after the data bindings 
 
 		private void MyUserControl_Loaded(object sender, RoutedEventArgs e)
 		{
+			PersistenceManager manager = new PersistenceManager();
 			manager.Load(myControl, mySavedStream);
 		}
 	}

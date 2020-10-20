@@ -186,22 +186,24 @@ Now you have to create the actual style resource labeled "__MyStyle__" and in or
 
 In effect the control template for the __Bar3D__ class is customized. Note that when customizing the template for a 3D control there are some required elements / element names that should be present or otherwise the control will not work correctly:
 
-<ControlTemplate __TargetType="{x:Type telerik:BarControl3D}"__>
- ...
- __<Grid x:Name="PART_Container" />__
- <Viewport3D __x:Name="PART_Viewport"__ ... >
-  <Viewport3D.Children>
-   __<ContainerUIElement3D x:Name="PART_ModelElement">__
-    <ContainerUIElement3D.Children>
-__<ModelVisual3D>
-     
-      <-- star model goes here -->
-     
-     </ModelVisual3D>__
-    </ContainerUIElement3D.Children>
-   </ContainerUIElement3D>
- </Viewport3D>
-</ControlTemplate>
+{{region xaml-radchart-how-to-use-custom-3d-models_5}}
+	<ControlTemplate TargetType="{x:Type telerik:BarControl3D}">
+	<!-- ... -->
+	<Grid x:Name="PART_Container" />
+	<Viewport3D x:Name="PART_Viewport" ... >
+		<Viewport3D.Children>
+			<ContainerUIElement3D x:Name="PART_ModelElement">
+				<ContainerUIElement3D.Children>
+					<ModelVisual3D>
+		
+						<!-- star model goes here -->
+		
+					</ModelVisual3D>
+				</ContainerUIElement3D.Children>
+			</ContainerUIElement3D>
+		</Viewport3D>
+	</ControlTemplate>
+{{endregion}}
 
 Here is the actual template that follows this pattern:
 

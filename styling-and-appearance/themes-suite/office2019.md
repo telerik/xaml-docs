@@ -272,7 +272,7 @@ The default values of the brushes in the theme are listed below.
 
 |Brush name|   |Light|   |Gray|   |Dark|
 |----------|---|-----|---|----|---|----|
-|**AccentBackgroundBrush**|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush" color:></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-gray" color:></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-dark" color:></div>|
+|**AccentBackgroundBrush**|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-dark"></div>|
 |**AccentBorderBrush**|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-dark"></div>|
 |**AccentMouseOverBackgroundBrush**|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-gray"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-dark"></div>|
 |**AccentMouseOverBorderBrush**|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-gray"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-dark"></div>|

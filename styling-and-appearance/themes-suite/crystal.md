@@ -222,7 +222,7 @@ The default values of the brushes in the theme are listed below. Please note tha
 
 |Color name|Light||Dark||
 |----------|-----------|---|-----------|---|
-|**AccentHighColor**|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor" color:></div>|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor-dark" color:></div>|
+|**AccentHighColor**|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor"></div>|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor-dark"></div>|
 |**AccentLowColor**|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor"></div>|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor-dark"></div>|
 |**AccentMouseOverHighColor**|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor"></div>|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor-dark"></div>|
 |**AccentMouseOverLowColor**|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor"></div>|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor-dark"></div>|

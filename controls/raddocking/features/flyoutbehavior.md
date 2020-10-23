@@ -115,3 +115,12 @@ The following example shows how to implement a __custom behavior__ that opens th
 {{endregion}}
 
 >tip A runnable project with this example can be found in the [ClickFlyoutBehaviorWithAnimation](https://github.com/telerik/xaml-sdk/tree/master/Docking/ClickFlyoutBehaviorWithAnimation) SDK example.
+
+## Flyout Min Length
+
+The flyout popup element has a default minimum length of 50px. To change this, set the __FlyoutMinLength__ property of RadDocking. The property value applies to the width of the left and right auto-hide area flyouts and to the height of the top and bottom auto-hide area flyouts. 
+
+#### __[XAML] Example 2: Setting the minimum size of the flyout popup__
+{{region raddocking-features-panes-flyoutbehavior-3}}
+	<telerik:RadDocking FlyoutMinLength="150">
+{{endregion}}

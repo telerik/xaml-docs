@@ -207,7 +207,22 @@ The __RotationService__ handles the rotation of one or more __DiagramItems__. Th
 
 * __Rotating__ - this event occurs during a rotation operation. It has an argument of type __RotatingEventArgs__ which provides both the new and old value of the rotation angle.			
 
-* __CompleteRotating__ - this event occurs when a rotation is over. It has an argument of type __RotatingEventArgs__ which provides both the new and old value of the rotation angle.			
+* __CompleteRotating__ - this event occurs when a rotation is over. It has an argument of type __RotatingEventArgs__ which provides both the new and old value of the rotation angle.
+
+## SegmentationService
+
+The __SegmentationService__ is responsible for the logical segmentation of the Diagram. This allows for iterating over only a portion of the "nearby" shapes in some scenarios instead of over the entire collection. The service implements the __ISegmentationService__ interface the following members:
+
+_Properties_:
+* __IsSegmentationEnabled__: Gets a value indicating whether segmentation enabled.
+
+_Methods_:
+* __void MapShapes(IEnumerable<IShape> shapes)__: Maps the collection of shapes to different segments.
+* __void MapShape(IShape shape)__: Maps the shape to its corresponding segment. 
+* __void MapShape(IShape shape, Rect bounds)__: Maps the shape according to the passed bounds. 
+* __void UnmapShape(IShape shape);__: Unmap the passed shape from the saved segments.
+* __IEnumerable<IShape> GetShapes(Point point, double delta);__: Get the shapes around a Point.
+* __IEnumerable<IShape> GetShapes(Rect rect);__: Get the shapes inside a Rectangle. 
 
 ## SelectionService
 

@@ -20,6 +20,7 @@ This topic will go through the key properties of __RadContextMenu__ as follows
 * [MousePosition](#mouseposition)
 * [UIElement](#uielement)
 * [VerticalOffset](#verticaloffset)
+* [InheritDataContext](#inheritdatacontext)
 
 ## IconColumnWidth
 
@@ -29,7 +30,9 @@ By default __RadContextMenu__ displays a column used for visualizing the icons o
 Its width can be controlled through the __IconColumnWidth__ property. For example, it can be entirely hidden by setting the property value to 0.
 
 #### __[XAML] Example 1: Setting the IconColumnWidth property__
+{{region radcontextmenu-key-properties_0}}
 	 <telerik:RadContextMenu IconColumnWidth="0"/>
+{{endregion}}
 
 #### __Figure 1: RadContextMenu with hidden icon column__
 ![RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_02.png)
@@ -43,8 +46,9 @@ Setting this property manipulates whether __RadContextMenu__ will close automati
 __RadContextMenu__ provides a mechanism for controlling the horizontal distance between the target origin and the popup alignment point through the __HorizontalOffset__ property.
 
 #### __[XAML] Example 2: Setting the HorizontalOffset property__
+{{region radcontextmenu-key-properties_1}}
 	<telerik:RadContextMenu HorizontalOffset="150"/>
-
+{{endregion}}
 
 #### __Figure 2: RadContextMenu with its HorizontalOffset property set__
 ![RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_03.png)
@@ -68,6 +72,10 @@ Returns the instance of the element to which __RadContextMenu__ is attached.
 ## VerticalOffset
 
 Similarly to the __HorizontalOffset__ property, the __VerticalOffset__ one provides a mechanism for setting the vertical distance between the target origin and the popup alignment point. 
+
+## InheritDataContext
+
+By default, the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the __InheritDataContext__ property to __False__.
 
 ## See Also
 

@@ -30,7 +30,7 @@ You can either set the __TrayIconSource__ property which accepts an __ImageSourc
     <telerik:RadNotifyIcon x:Name="icon" TrayIconSource="YourIconPath.ico" GuidItem="00000001-0002-0003-0004-000000000005" />
 {{endregion}}
 
->important You should replace the placeholder __GuidItem__ with your own Guid and use the same one for a given application. This will allow Windows to recognize the icon each time you show it in the tray. 
+>important You should replace the placeholder __GuidItem__ with your own Guid. Make sure to create two separate Guids for building in __Debug__ and __Release__ mode and use the same ones for a given application. This will allow Windows to recognize the icon each time you show it in the tray. 
 
 > Each time you use a new __GuidItem__, Windows will register a new icon. To learn how to clear the icon cache, you can check out the following thread: [How to remove old notification icons from the Windows 10 system tray](https://answers.microsoft.com/en-us/windows/forum/all/how-to-remove-old-notification-icons-from-the/c66892b4-51a9-44fa-853f-b17cdff5ed2f).
 

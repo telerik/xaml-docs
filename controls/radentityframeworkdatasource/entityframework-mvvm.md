@@ -10,7 +10,7 @@ position: 4
 
 # MVVM Usage
 
-This article shows how to create a database using the code first approach and display data with the help of RadEntityFrameworkDataSource and RadGridView.
+This article shows how to create a database using the code-first approach and display data with the help of RadEntityFrameworkDataSource and RadGridView.
 
 >important Before proceeding with this tutorial, you should follow the "Entity Framework" MSDN articles including the [Code First to a New Database](https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database) one. 
 
@@ -133,9 +133,9 @@ We will create a viewmodel that will populate our database and also hold an inst
 
 ## Displaying the Data
 
-All that is left is to declare our xaml and wire up the viewmodel. We will display the data in a RadGridView with a [Row Details Template]({%slug radgridview-row-details-template%}) and use a [RadDataPager]({%slug datapager-overview%}) to add paging functionality. 
+All that is left is to declare our XAML and wire up the viewmodel. We will display the data in a RadGridView with a [Row Details Template]({%slug radgridview-row-details-template%}) and use a [RadDataPager]({%slug datapager-overview%}) to add paging functionality. 
 
-#### __[XAML] Example 3: Seting up the xaml__
+#### __[XAML] Example 3: Seting up the XAML__
 {{region xaml-entityframework-mvvm-usage-2}}
 
 	 <Grid>

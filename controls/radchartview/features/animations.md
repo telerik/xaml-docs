@@ -23,6 +23,7 @@ With the __R2 2018__ version of our controls, you can now animate RadChartView s
 	* [Pie Chart Radius Factor Animation](#pie-chart-radius-factor-animation)
 * [Custom Animation](#custom-animation)
 * [Events](#events)
+* [Series Animations Support](#series-animations-support)
 * [Notes](#notes)
 
 #### __Figure 1: Chart Animations__
@@ -428,6 +429,52 @@ All built-in animation of the chart derives from __ChartAnimationBase__. In orde
 This section covers the events exposed for the animation.
 * __PointAnimationsCompleted:__ This event is fired when the animation for all datapoints of the series is completed.
 * __SeriesAnimationCompleted:__ This event is fired when the animation of the series is completed.
+
+## Series Animations Support
+
+The RadChartView series supports animations for its series and data points. Depending on the type of the series, the supported animation can be SeriesAnimation or PointAnimation, or as in some series, both.
+
+### RadCartesianChart Series	
+
+| Series | Series Animation | Point Animation |
+|---------|---------|---------|
+| Area Series | YES | YES |
+| Bar Series | NO | YES |
+| Bubble Series | NO | YES |
+| CandleStick Series | NO | YES |
+| Line Series | YES | YES |
+| OHLC Series  | NO | YES |
+| Point Series  | NO | YES |
+| Range Bar Series  | NO | YES |
+| Range Series  | YES | NO |
+| Range Spline Series | YES | NO |
+| Scatter Area Series | YES | YES |
+| Scatter Bubble Series | NO | YES |
+| Scatter Line Series | YES | YES |
+| Scatter Point Series | NO | YES |
+| Scatter Spline Area Series | YES | YES |
+| Scatter Spline Series | YES | YES |
+| Spline Area Series | YES | YES |
+| Spline Series | YES | YES |
+| Step Area Series | YES | YES |
+| Step Line Series | YES | YES |
+
+### RadPolarChart Series
+
+| Series | Series Animation  | Point Animation |
+|---------|---------|---------|
+| Polar Area Series | YES | YES |
+| Polar Line Series | YES | YES |
+| Polar Point Series | NO | YES |
+| Radar Area Series | YES | YES |
+| Radar Line Series | YES | YES |
+| Radar Point Series | NO | YES |
+
+### Funel Series
+| Series | Series Animation  | Point Animation |
+|---------|---------|---------|
+| FunnelSeries | NO | YES |
+	
 
 ## Notes
 

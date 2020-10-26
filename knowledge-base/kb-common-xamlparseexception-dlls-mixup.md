@@ -1,6 +1,6 @@
 ---
 title: Runtime Exception after adding a Telerik WPF control
-description: XamlParseException with message "Could not load file or assembly or one of its dependencies" is thrown when run the application.
+description: XamlParseException with message "Could not load file or assembly or one of its dependencies" is thrown when the application is run.
 type: troubleshooting
 page_title: XamlParseException Appears at Run-Time
 slug: kb-common-xamlparseexception-dlls-mixup

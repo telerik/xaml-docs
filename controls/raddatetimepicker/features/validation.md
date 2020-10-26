@@ -14,7 +14,7 @@ RadDateTimePicker supports data validation that can be implemented in the view m
 
 The data validation can be done through the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-validation-logic-on-custom-objects?view=netframeworkdesktop-4.8) interface implemented in the view model of RadDateTimePicker. The following example shows how to enable the validation.
 
-When the IDataErrorInfo interface is implemented, the validation logic when a property changes, which allows you to return an error message that will be displayed in the UI. 
+When the IDataErrorInfo interface is implemented, the validation logic executes when a property changes, which allows you to return an error message that will be displayed in the UI. 
 
 #### __[C#] Example 1: View model with validation logic implementation__
 {{region raddatetimepicker-features-validation-0}}

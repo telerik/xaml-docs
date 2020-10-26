@@ -75,7 +75,7 @@ Similarly to the __HorizontalOffset__ property, the __VerticalOffset__ one provi
 
 ## InheritDataContext
 
-By default the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the __InheritDataContext__ property to __False__.
+By default, the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the __InheritDataContext__ property to __False__.
 
 ## See Also
 

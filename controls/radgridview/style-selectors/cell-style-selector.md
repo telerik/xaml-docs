@@ -11,8 +11,6 @@ position: 1
 # CellStyleSelector
 
 This article will show you how to style conditionally RadGridView's cells applying __CellStyleSelector__.
-		
->tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 		  
 Assume we have RadGridView bound to a collection of Clubs. Each Club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow otherwise__:
 

@@ -434,7 +434,7 @@ This section covers the events exposed for the animation.
 
 The RadChartView series supports animations for its series and data points. Depending on the type of the series, the supported animation can be SeriesAnimation or PointAnimation, or as in some series, both.
 
-### RadCartesianChart Series	
+### CartesianChart Series	
 
 | Series | Series Animation | Point Animation |
 |---------|---------|---------|
@@ -459,7 +459,7 @@ The RadChartView series supports animations for its series and data points. Depe
 | Step Area Series | YES | YES |
 | Step Line Series | YES | YES |
 
-### RadPolarChart Series
+### PolarChart Series
 
 | Series | Series Animation  | Point Animation |
 |---------|---------|---------|
@@ -470,7 +470,7 @@ The RadChartView series supports animations for its series and data points. Depe
 | Radar Line Series | YES | YES |
 | Radar Point Series | NO | YES |
 
-### Funel Series
+### FunnelChart Series
 | Series | Series Animation  | Point Animation |
 |---------|---------|---------|
 | FunnelSeries | NO | YES |

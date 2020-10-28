@@ -16,7 +16,7 @@ This article lists the events specific to RadCarouselPanel.
 
 * __TopContainerChanged__: Occurs when Telerik.Windows.Controls.RadCarouselPanel.TopContainer property is changed. The TopContainer property returns the container that has the largest ZIndex. This event will be called, either changing the items via mouse or keyboard left and right / up and down arrow keys.
 	
-* __SelectedIsTopItem__: Occurs when [selected is top item]. This event will be called only when the selected item is changed.	
+* __SelectedIsTopItem__: Occurs when the selected element is the top item. This event will be called only when the selected item is changed.	
 
 * __IsAnimatingChanged__:  Occurs when Telerik.Windows.Controls.RadCarouselPanel.IsAnimating property is changed.
 
@@ -35,6 +35,21 @@ You can use the approach in __Example 1__ to subscrube to the RadCarouselPanel e
 			</ItemsPanelTemplate>
 		</telerik:RadCarousel.ItemsPanel>            
 	</telerik:RadCarousel>
+{{endregion}}
+
+#### __[C#] Example 2: Events Handlers__  
+{{region csharp-carousel-radcarouselpanel-events_1}}
+	private void MyCarousel_SelectedIsTopItem(object sender, RoutedEventArgs e)
+	{
+	}
+
+	private void RadCarouselPanel_TopContainerChanged(object sender, RoutedEventArgs e)
+	{
+	}
+
+	private void RadCarouselPanel_IsAnimatingChanged(object sender, RoutedEventArgs e)
+	{
+	}
 {{endregion}}
 	
 ## See Also  

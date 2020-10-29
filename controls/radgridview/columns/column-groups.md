@@ -11,14 +11,6 @@ position: 6
 # Column Groups
 
 Columns in RadGridView may be grouped in __column groups__ visually represented by common column headers.
-
-This article covers the following topics:
-
-* [Define Column Groups](#define-column-groups)
-* [Nested Column Groups](#nested-column-groups)
-* [Define Custom Header](#define-custom-header)
-* [Virtualization Modes](#virtualization-modes)
-* [Specific Scenarios](#specific-scenarios)
         
 ## Define Column Groups
 
@@ -99,13 +91,67 @@ This mode is especially useful in more complicated scenarios where additional fe
 
 >important When the column group virtualization feature is enabled, __column group names should be unique__.
 
+## Add or Remove Multiple Column Groups at Once
+
+As of **R3 2020 SP** the ColumnGroups property is of type **RadObservableCollection** which exposes the **AddRange** and **RemoveRange** methods that have to be used when adding or removing multiple groups at once to avoid performance issues.
+
+#### __[C#] Example 4: Add or remove multiple column groups at once__
+
+{{region cs-gridview-columns-column-headers_8}}
+	this.GridView.ColumnGroups.AddRange(groupsToAdd);
+	
+	this.GridView.ColumnGroups.RemoveRange(groupsToRemove);
+{{endregion}}
+
+#### __[VB.NET] Example 4: Add or remove multiple column groups at once__
+
+{{region vb-gridview-columns-column-headers_8}}
+	Me.GridView.ColumnGroups.AddRange(groupsToAdd)
+
+	Me.GridView.ColumnGroups.RemoveRange(groupsToRemove)
+{{endregion}}
+
+An alternative is to use the **SuspendNotifications** and **ResumeNotifications** methods prior and after adding or removing the groups.
+
+#### __[C#] Example 5: Suspend and resume notifications__
+
+{{region cs-gridview-columns-column-headers_9}}
+	this.GridView.ColumnGroups.SuspendNotifications();
+	foreach (var group in groupsToAdd)
+	{
+		this.GridView.ColumnGroups.Add(group);
+	}
+
+	foreach (var group in groupsToRemove)
+	{
+		this.GridView.ColumnGroups.Remove(group);
+	}
+
+	this.GridView.ColumnGroups.ResumeNotifications();
+{{endregion}}
+
+#### __[VB.NET] Example 5: Suspend and resume notifications__
+
+{{region vb-gridview-columns-column-headers_9}}
+	Me.GridView.ColumnGroups.SuspendNotifications()
+	For Each group In groupsToAdd
+		Me.GridView.ColumnGroups.Add(group)
+	Next group
+
+	For Each group In groupsToRemove
+		Me.GridView.ColumnGroups.Remove(group)
+	Next group
+
+	Me.GridView.ColumnGroups.ResumeNotifications()
+{{endregion}}
+
 ## Specific Scenarios
 
 This section will cover some specific scenarios when using column groups.
 
 For the purpose of this demonstration we will define the following groups.
 
-#### __[XAML] Example 4: Sample column groups setup__
+#### __[XAML] Example 6: Sample column groups setup__
 
 {{region xaml-gridview-columns-column-headers_7}}
 	<telerik:RadGridView.ColumnGroups>			

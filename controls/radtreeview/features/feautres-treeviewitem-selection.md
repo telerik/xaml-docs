@@ -166,7 +166,7 @@ The __PreviewSelected__ event occurs when the treeview item is about to be selec
 	End Sub
 {{endregion}}
 
->Note that the e.Source property in __Example 8__ from the event arguments will have a different value depending on if the RadTreeView is bound. In __Example 8__ e.Source property will be of type RadTreeViewitem if the RadTreeView is not data-bound (the RadTreeViewItem as declared in XAML or added in code). So when we bind the control the e.Source property will be RadTreeView. In this case, you can utilize the PreviewSelectionChanged and SelectionChanged events of the RadTreeView, explained below.
+>Note that the e.Source property in __Example 8__ from the event arguments will have a different value depending on if the RadTreeView is bound. In __Example 8__ the e.Source property will be of type RadTreeViewitem if the RadTreeView is not data-bound (the RadTreeViewItem is declared in XAML or added in code). When we bind the control the e.Source property will be the RadTreeView. In this case, you can utilize the PreviewSelectionChanged and SelectionChanged events of the RadTreeView, explained below.
 
 The __PreviewUnselected__ event is fired just before the currently selected item is unselected. The __Unselected__ event occurs when the treeview item is already unselected. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 

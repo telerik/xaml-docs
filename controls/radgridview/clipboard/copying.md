@@ -12,11 +12,11 @@ position: 1
 
 This article will give you a basic understanding on how to use:
 
-* [ClipboardCopyMode](#cliboardcopymode)
+* [ClipboardCopyMode](#clipboardcopymode)
 
 * [Copying Events](#events)
 
-## CliboardCopyMode
+## ClipboardCopyMode
 
 Copying to the Clipboard is controlled by the __ClipboardCopyMode__ property on __RadGridView__. It is a Flags Enumeration of type {% if site.site_name == 'Silverlight' %}[GridViewClipboardCopyMode](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_gridviewclipboardcopymode.html){% endif %}{% if site.site_name == 'WPF' %}[GridViewClipboardCopyMode](http://www.telerik.com/help/wpf/t_telerik_windows_controls_gridviewclipboardcopymode.html){% endif %}.
 
@@ -34,17 +34,23 @@ Here's a list of all the available values:
 
 Here is an example on how to copy column headers as well as selected data:
 
-#### __[C#] Example 1: Setting the ClipboardCopyMode__
+#### __[C#] Example 1: Setting the ClipboardCopyMode in code__
 
 {{region cs-gridview-copying_0}}
 	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells |
 	GridViewClipboardCopyMode.Header;
 {{endregion}}
 
-#### __[VB.NET] Example 1: Setting the ClipboardCopyMode__
+#### __[VB.NET] Example 1: Setting the ClipboardCopyMode in code__
 
 {{region vb-gridview-copying_1}}
 	Me.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells Or GridViewClipboardCopyMode.Header
+{{endregion}}
+
+#### __[XAML] Example 2: Setting the ClipboardCopyMode in xaml__
+
+{{region xaml-gridview-copying_2}}
+	<telerik:RadGridView ClipboardCopyMode="Cells, Header" />
 {{endregion}}
 
 ## Events
@@ -53,9 +59,9 @@ Here is an example on how to copy column headers as well as selected data:
 
 There are two events that allow you to control the copying operation: __Copying__ and __CopyingCellClipboardContent.__ The first allows you to cancel a copying operation, whereas the second event allows you to cancel copying for a single cell or override the value to be copied to the Clipboard. The latter is especially useful if you have columns with custom cell templates and you would like to be able to place their values in the clipboard. Here is an example of how you can accomplish that:
 
-#### __[C#] Example 2: The CopyingCellClipboardContent Event__
+#### __[C#] Example 3: The CopyingCellClipboardContent Event__
 
-{{region cs-gridview-copying_2}}
+{{region cs-gridview-copying_3}}
 	private void radGridView_CopyingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
 	{
 	    if (e.Cell.Column.UniqueName == "FullName")
@@ -66,9 +72,9 @@ There are two events that allow you to control the copying operation: __Copying_
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: The CopyingCellClipboardContent Event__
+#### __[VB.NET] Example 3: The CopyingCellClipboardContent Event__
 
-{{region vb-gridview-copying_3}}
+{{region vb-gridview-copying_4}}
 	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
 	    If e.Cell.Column.UniqueName = "FullName" Then
 	        Dim person = TryCast(e.Cell.Item, Person)

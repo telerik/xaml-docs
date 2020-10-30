@@ -14,23 +14,6 @@ position: 1
 A list represents a set of properties which are used to describe the appearance and behavior of a set of numbered paragraphs. All lists are kept in **ListManager**, accessible through **RadDocument’s ListManager** property.
 __RadRichTextBox__ has support for bulleted, numbered and multilevel lists. In addition, you have the ability to create custom list styles and add them to the list styles gallery.
 
-In this article you will find:
-
-* [User Interface](#user-interface)
-
-* [List Style Overview](#list-style-overview)
-
-* [List Level Style Overview](#list-level-style-overview)
-
-* [Document List Overview](#document-list-overview)
-
-* [List Manager Overview](#list-manager-overview)
-
-* [Predefined Lists in RadRichTextBox](#predefined-lists-in-radRichTextBox)
-
-* [Create List Programmatically](#create-list-programmatically)
-
-* [Apply List](#apply-list)
 
 ## User Interface
 

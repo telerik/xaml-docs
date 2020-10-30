@@ -16,7 +16,7 @@ In a scenario when the row/column index for the mouse position is needed, the __
 {{region radvirtualgrid-selection_programmatic-selection_0}}
 	private void VirtualGrid_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var border = e.OriginalSource as CanvasInputBorder;
+            var border = e.OriginalSource as Telerik.Windows.Controls.VirtualGrid.CanvasInputBorder;
             var columnIndex = this.VirtualGrid.GetColumnIndexAtMousePosition(border);
             var rowIndex = this.VirtualGrid.GetRowIndexAtMousePosition(border);
         }

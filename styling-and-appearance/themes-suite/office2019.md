@@ -259,7 +259,7 @@ With the **R3 2020** release of the **UI for WPF** suite we have introduced the 
 Jump to the following topics to learn about the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
-* [Office2019Palette Properties](#Office2019palette-properties)
+* [Office2019Palette Properties](#office2019palette-properties)
 * [Theme Variation Changing](#theme-variation-changing)
 * [Font Family and Font Size](#font-family-and-font-size)
 * [Glyphs](#glyphs)
@@ -348,7 +348,7 @@ The default values of the brushes in the theme are listed below.
 
 ## Theme Variation Changing
 
-The following example demonstrates the ability to switch between the supported **Light**, **Gray** and **Dark** color palettes by calling the **LoadPreset()** method as shown below:
+The Office2019 theme comes with three color variations, inspired by the colors used in MS Office. The **Light** variation corresponds to Microsoft's Colorful Office theme, the **Gray** - to the Dark Gray Office theme and the **Dark** - to the Black Office theme. The following example demonstrates the ability to switch between the supported **Light**, **Gray** and **Dark** color palettes by calling the **LoadPreset()** method as shown below:
 
 #### __[C#] Example 1: Changing the color variation of the theme__
 {{region cs-styling-appearance-Office2019-theme-1}}

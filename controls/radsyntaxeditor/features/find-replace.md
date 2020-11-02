@@ -65,6 +65,30 @@ Invoking the **OpenFileDialog** method opens the dialog from **Figure 1** with t
 * **void OpenFindDialog(string searchText)**
 * **void CloseFindDialog()**
 
+## SearchPanelWidth
+
+With the **2020.3.1109** [internal build]({%slug installation-installing-lib%}), the RadSyntaxEditor control exposes a **SearchPanelWidth** property which you can use to control the width of the Find Dialog from **Figure 1**.
+
+>Setting this property may be necessary if you've localized the control in a language other than English or have defined custom strings for the buttons of the dialog, which, in turn, clips their content.
+
+#### __[XAML] Example 1: Setting SearchPanelWidth__
+{{region xaml-radsyntaxeditor-features-find-replace-0}}
+
+    <telerik:RadSyntaxEditor x:Name="SyntaxEditor" SearchPanelWidth="600" />
+{{endregion}}
+
+#### __[C#] Example 1: Setting SearchPanelWidth__
+{{region cs-radsyntaxeditor-features-find-replace-0}}
+
+    this.SyntaxEditor.SearchPanelWidth = 600;
+{{endregion}}
+
+#### __[VB.NET] Example 1: Setting SearchPanelWidth__
+{{region vb-radsyntaxeditor-features-find-replace-0}}
+
+    Me.SyntaxEditor.SearchPanelWidth = 600
+{{endregion}}
+
 ## See Also
 
 * [Selection]({%slug radsyntaxeditor-features-selection%})

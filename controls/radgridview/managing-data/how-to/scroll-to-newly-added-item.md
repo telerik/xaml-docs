@@ -106,16 +106,16 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
             {
                 var scrollToNewItem = GetScrollToNewItem(d);
                 var behaviors = Interaction.GetBehaviors(d);
-                var singleClickEditBehavior = behaviors.SingleOrDefault(x => x is ScrollToNewItemBehavior);
+                var scrollToNewItemBehavior = behaviors.SingleOrDefault(x => x is ScrollToNewItemBehavior);
 
-                if (singleClickEditBehavior != null && !scrollToNewItem)
+                if (scrollToNewItemBehavior != null && !scrollToNewItem)
                 {
-                    behaviors.Remove(singleClickEditBehavior);
+                    behaviors.Remove(scrollToNewItemBehavior);
                 }
-                else if (singleClickEditBehavior == null && scrollToNewItem)
+                else if (scrollToNewItemBehavior == null && scrollToNewItem)
                 {
-                    singleClickEditBehavior = new ScrollToNewItemBehavior();
-                    behaviors.Add(singleClickEditBehavior);
+                    scrollToNewItemBehavior = new ScrollToNewItemBehavior();
+                    behaviors.Add(scrollToNewItemBehavior);
                 }
             }
         }
@@ -141,13 +141,13 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
 			If gridView IsNot Nothing Then
 				Dim scrollToNewItem = GetScrollToNewItem(d)
 				Dim behaviors = Interaction.GetBehaviors(d)
-				Dim singleClickEditBehavior = behaviors.SingleOrDefault(Function(x) TypeOf x Is ScrollToNewItemBehavior)
+				Dim scrollToNewItemBehavior = behaviors.SingleOrDefault(Function(x) TypeOf x Is ScrollToNewItemBehavior)
 
-				If singleClickEditBehavior IsNot Nothing AndAlso Not scrollToNewItem Then
-					behaviors.Remove(singleClickEditBehavior)
-				ElseIf singleClickEditBehavior Is Nothing AndAlso scrollToNewItem Then
-					singleClickEditBehavior = New ScrollToNewItemBehavior()
-					behaviors.Add(singleClickEditBehavior)
+				If scrollToNewItemBehavior IsNot Nothing AndAlso Not scrollToNewItem Then
+					behaviors.Remove(scrollToNewItemBehavior)
+				ElseIf scrollToNewItemBehavior Is Nothing AndAlso scrollToNewItem Then
+					scrollToNewItemBehavior = New ScrollToNewItemBehavior()
+					behaviors.Add(scrollToNewItemBehavior)
 				End If
 			End If
 		End Sub

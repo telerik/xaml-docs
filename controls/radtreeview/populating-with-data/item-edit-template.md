@@ -10,160 +10,98 @@ position: 10
 
 # ItemEditTemplate
 
-Telerik __RadTreeView__ also supports __ItemEditTemplate__. This tutorial will walk you through the common task of creating and applying __ItemEditTemplate__.
+Telerik __RadTreeView__ supports defining a DataTemplate that controls how the items can be edited through the __ItemEditTemplate__. This tutorial will walk you through the common task of creating and applying an __ItemEditTemplate__.
 
-For the purpose of this tutorial will be used the following __RadTreeView__ declaration: 
+> The definition of the __RadTreeViewSampleData__ class is the same as in the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) article. 
+
+## Defining a RadTreeView and an ItemEditTemplate
+
+__Example 1__ demonstrates how to define a RadTreeView in xaml and setup a DataTemplate that will be used for editing the items. This DataTemplate is displayed when an item enters edit mode (for example after pressing the __F2__ key).
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
-
+#### __[XAML] Example 1: Defining the ItemEditTemplate__
 {{region radtreeview-populating-with-data-item-edit-template_0}}
-	<UserControl.Resources>
-	
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	
-	    <DataTemplate x:Key="Team">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}"/>
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </DataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-	       ItemsSource="{Binding Teams}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}" />
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </telerik:HierarchicalDataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-	       ItemsSource="{Binding Divisions}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}" />
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </telerik:HierarchicalDataTemplate>
-	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">
-	
-	    <telerik:RadTreeView x:Name="radTreeView"
-	       IsEditable="True"
-	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	       ItemTemplate="{StaticResource League}" />
-	
-	</Grid>
-	{{endregion}}
 
-{% endif %}
-{% if site.site_name == 'WPF' %}
+	<Grid>
+        <Grid.Resources>
+            <sampleData:RadTreeViewSampleData x:Key="DataSource" />
 
-#### __XAML__
+            <DataTemplate x:Key="Team">
+                <TextBlock Text="{Binding Name}" />
+            </DataTemplate>
+            <telerik:HierarchicalDataTemplate x:Key="Division"
+                                      ItemTemplate="{StaticResource Team}"
+                                      ItemsSource="{Binding Teams}">
+                <TextBlock Text="{Binding Name}" />
+            </telerik:HierarchicalDataTemplate>
+            <telerik:HierarchicalDataTemplate x:Key="League"
+                                      ItemTemplate="{StaticResource Division}"
+                                      ItemsSource="{Binding Divisions}">
+                <TextBlock Text="{Binding Name}" />
+            </telerik:HierarchicalDataTemplate>
 
-{{region radtreeview-populating-with-data-item-edit-template_2}}
-	<UserControl.Resources>
-	
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	
-	    <DataTemplate x:Key="Team">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}"/>
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </DataTemplate>
-	
-	    <HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-	       ItemsSource="{Binding Teams}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}" />
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </HierarchicalDataTemplate>
-	
-	    <HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-	       ItemsSource="{Binding Divisions}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding Name}" />
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </HierarchicalDataTemplate>
-	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">
-	
-	    <telerik:RadTreeView x:Name="radTreeView"
-	       IsEditable="True"
-	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	       ItemTemplate="{StaticResource League}" />
-	
-	</Grid>
-	{{endregion}}
-
-{% endif %}
-
-![](images/RadTreeView_TemplatingItemEditTemplate_001.PNG)
-
-__ItemEditTemplate Property__
-
-In this tutorial an __ItemEditTemplate__ will be created with Expression Blend.
-
-* Open your application and select the treeview control.
-	![](images/RadTreeView_TemplatingItemEditTemplate_010.PNG)
-
-* Right-click on it or right-click in the scene explorer and choose EditAdditionalTemplates->Edit ItemEditTemplate->Create Empty. 
-	![](images/RadTreeView_TemplatingItemEditTemplate_020.PNG)
-
-* Choose a name for the data template and where to be defined in:
-	![](images/RadTreeView_TemplatingItemEditTemplate_030.PNG)
-
-	>Defining the template in the Application section makes it reusable from everywhere in the application.
-
-* Drag and drop the controls you need for the template and configure their properties. In the example are used a __TextBox__ and a __RadMaskedNumericInput__
-	![](images/RadTreeView_TemplatingItemEditTemplate_040.PNG)
-
-* Configure the binding for the __Text__ property of the __TextBox__, and for the __Value__ property of the __RadMaskedNumericInput__. 
-	![](images/RadTreeView_TemplatingItemEditTemplate_050.PNG)
-
-* Bind the __TextBox Text__ property to the __Name__ property of the business object and set the binding to be __TwoWay__. 
-	![](images/RadTreeView_TemplatingItemEditTemplate_060.PNG)
-
-* Do the same for the __Value__ property of the __RadMaskedNumericInput__.
-
-Here is the final XAML:
-
-#### __XAML__
-
-{{region radtreeview-populating-with-data-item-edit-template_1}}
-	<DataTemplate x:Key="LeagueItemEditTemplate">
-	 <Grid>
-	
-	  <StackPanel Orientation="Horizontal">
-	
-	   <TextBox Text="{Binding Name, Mode=TwoWay}"/>
-	   <telerik:RadMaskedNumericInput Mask="#" Value="{Binding Count, Mode=OneWay}"/>
-	
-	  </StackPanel>
-	
-	 </Grid>
-	</DataTemplate>
-	................
-	<telerik:RadTreeView x:Name="radTreeView"
+            <DataTemplate x:Key="LeagueItemEditTemplate">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding Name, Mode=TwoWay}"/>
+                        <TextBlock Margin="5 0 0 0" Text="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=telerik:RadTreeViewItem}, Mode=OneWay, StringFormat={}{0} children}"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+        <telerik:RadTreeView x:Name="radTreeView"
 	   IsEditable="True"
 	   ItemsSource="{Binding LeaguesDataSource, Source={StaticResource DataSource}}"
 	   ItemTemplate="{StaticResource League}" Margin="8" 
 	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
-	{{endregion}}
+    </Grid>
+{{endregion}}
 
-![](images/RadTreeView_TemplatingItemEditTemplate_070.PNG)
+{% endif %}
+{% if site.site_name == 'WPF' %}
+#### __[XAML] Example 1: Defining the ItemEditTemplate__
+{{region radtreeview-populating-with-data-item-edit-template_0}}
+
+	<Grid>
+        <Grid.Resources>
+            <sampleData:RadTreeViewSampleData x:Key="DataSource" />
+
+            <DataTemplate x:Key="Team">
+                <TextBlock Text="{Binding Name}" />
+            </DataTemplate>
+            <HierarchicalDataTemplate x:Key="Division"
+                                      ItemTemplate="{StaticResource Team}"
+                                      ItemsSource="{Binding Teams}">
+                <TextBlock Text="{Binding Name}" />
+            </HierarchicalDataTemplate>
+            <HierarchicalDataTemplate x:Key="League"
+                                      ItemTemplate="{StaticResource Division}"
+                                      ItemsSource="{Binding Divisions}">
+                <TextBlock Text="{Binding Name}" />
+            </HierarchicalDataTemplate>
+
+            <DataTemplate x:Key="LeagueItemEditTemplate">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding Name, Mode=TwoWay}"/>
+                        <TextBlock Margin="5 0 0 0" Text="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=telerik:RadTreeViewItem}, Mode=OneWay, StringFormat={}{0} children}"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+        <telerik:RadTreeView x:Name="radTreeView"
+	   IsEditable="True"
+	   ItemsSource="{Binding LeaguesDataSource, Source={StaticResource DataSource}}"
+	   ItemTemplate="{StaticResource League}" Margin="8" 
+	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
+    </Grid>
+{{endregion}}
+{% endif %}
+
+{% if site.site_name == 'WPF' %}
+#### __Figure 1: Result from Example 1 in the Fluent theme__
+![RadTreeView in edit mode](images/RadTreeView_TemplatingItemEditTemplate_070.PNG)
+{% endif %}
 
 >Don't forget to set the __IsEditable__ property of your __RadTreeView__ to __True__.
 

@@ -27,9 +27,9 @@ __RadBarcode__ is a set of components that can be used to create, show and read 
 |**Code 93**|(aka USS-93): Compressed form of Code 39|
 |**Code 93 Extended**|(aka USS-93): Compressed form of Code 39, supports full ASCII|
 |**Code 128**|Very dense code, used extensively worldwide|
-|**Code 128 A**|Subset of Code 128  \*(more info in 1D Barcodes)|
-|**Code 128 B**|Subset of Code 128  \*(more info in 1D Barcodes)|
-|**Code 128 C**|Subset of Code 128  \*(more info in 1D Barcodes)|
+|**Code 128 A**|Subset of Code 128  \* [more info in 1D Barcodes]({% slug radbarcode-barcode-types-description%})|
+|**Code 128 B**|Subset of Code 128  \* [more info in 1D Barcodes]({% slug radbarcode-barcode-types-description%})|
+|**Code 128 C**|Subset of Code 128  \* [more info in 1D Barcodes]({% slug radbarcode-barcode-types-description%})|
 |**MSI**|Variation of Plessey code, with similar applications|
 |**EAN 8**|Short version of EAN-13, 8 characters|
 |**EAN 13**|Used with consumer products internationally, 13 characters|

@@ -193,9 +193,26 @@ This type of axis has a notion of range which means that it has minimum, maximum
 	
 	#### __Figure 14: Label format__
 	![](images/radchartview-3d-axes-12.png)	
+	
+* __Actual range__: Use the __ActualRange__ property of LinearAxis3D to get the actual data range of the axis (auto-generated or coming from the Minimum and Maximum properties). 
 
-## See Also
+	#### __[C#] Example 15: Get the actual range of the axis__
+	{{region xaml-radchartview-3d-axes-14}}	
+		ValueRange<double> actualRange = this.linearAxis3D.ActualRange;
+	{{endregion}}
+	
+	When the range changes, the __ActualRangeChanged__ event fires.
+	
+	#### __[C#] Example 16: ActualRangeChanged event handler__
+	{{region xaml-radchartview-3d-axes-15}}	
+		private void LinearAxis3D_ActualRangeChanged(object sender, Telerik.Charting.NumericalRangeChangedEventArgs e)
+        {
+            ValueRange<double> oldRange = e.PreviousRange;
+            ValueRange<double> newRange = e.NewRange;
+        }
+	{{endregion}}
 
+## See Also  
 * [Getting Started]({%slug radchartview3d-getting-started%})
 * [Camera Behavior]({%slug radchartview3d-behaviors-camera%})
 * [PointSeries3D]({%slug radchartview3d-pointseries3d%})

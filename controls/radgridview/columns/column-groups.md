@@ -93,7 +93,7 @@ This mode is especially useful in more complicated scenarios where additional fe
 
 ## Add or Remove Multiple Column Groups at Once
 
-As of **R3 2020 SP** the ColumnGroups property is of type **RadObservableCollection** which exposes the **AddRange** and **RemoveRange** methods that have to be used when adding or removing multiple groups at once to avoid performance issues.
+As of **R3 2020 SP** the ColumnGroups property is of type [RadObservableCollection]({%slug consuming-data-radobservablecollection%}) which exposes the **AddRange** and **RemoveRange** methods that can be used when adding or removing multiple groups at once in order to improve performance. .
 
 #### __[C#] Example 4: Add or remove multiple column groups at once__
 

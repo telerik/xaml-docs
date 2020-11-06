@@ -10,28 +10,22 @@ position: 1
 
 # Use with Prism
 
-The __RadTransitionControl__ can be used together with __Prism__ for defining regions. As it derives directly from the __ContentControl__, it is used in the same way as the __ContentControl__. Just set its __RegionName__ attached property to mark it as a region.
+The __RadTransitionControl__ can be used together with __Prism__ for defining regions. As it derives directly from __ContentControl__, it can be used as a replacement for it.
 
-In order to access the __RegionName__ attached property you have to declare the following namespace:
+>tip Read some more about the __Prism__ library in its [github repository](https://github.com/PrismLibrary/Prism).
 
-#### __XAML__
-
-{{region xaml-radtransition-how-to-use-with-prism_0}}
-	xmlns:Regions="clr-namespace:Microsoft.Practices.Composite.Presentation.Regions;assembly=Microsoft.Practices.Composite.Presentation"
-{{endregion}}
-
-#### __XAML__
+#### __[XAML] Example 1: Setting the RegionName attached property__
 
 {{region xaml-radtransition-how-to-use-with-prism_1}}
-	<telerik:RadTransitionControl Grid.Column="1"
-	                        Regions:RegionManager.RegionName="MainRegion">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:MotionBlurredZoomTransition />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
+	<Grid xmlns:prism="http://prismlibrary.com/"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+        <telerik:RadTransitionControl prism:RegionManager.RegionName="ContentRegion">
+			<telerik:RadTransitionControl.Transition>
+				<telerikTransitions:MotionBlurredZoomTransition />
+			</telerik:RadTransitionControl.Transition>
+		</telerik:RadTransitionControl>
+	</Grid>
 {{endregion}}
-
->tipYou can find more about __Prism__ [here](http://compositewpf.codeplex.com/).
 
 ## See Also
 

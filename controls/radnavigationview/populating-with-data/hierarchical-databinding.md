@@ -69,7 +69,7 @@ To assign the data collection to the RadNavigationView control, set its __ItemsS
 
 To data bind the content of the RadNavigationViewItem elements set the __DisplayMemberPath__ property of RadNavigationView. Alternatively, you can use the __ItemContainerStyle__ and set the __Content__ property of the RadNavigationViewItems.
 
-To customize the appearance of the RadNavigationViewItems and also allow sub-items to be shown, use the __ItemContainerStyle__ property of RadNavigationView. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
+To customize the appearance of the RadNavigationViewItems and also allow sub-items to be shown, use an implicit style. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
 
 #### __[XAML] Example 3: Setting up the view__
 {{region radnavigationview-populating-with-data-hierarchical-databinding-2}}	
@@ -79,9 +79,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 							   DisplayMemberPath="Title"
 							   DisplayMode="Expanded">
 		<telerik:RadNavigationView.Resources>
-			<telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
-		</telerik:RadNavigationView.Resources>
-		<telerik:RadNavigationView.ItemContainerStyle>
+			<telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />				
 			<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 			<Style TargetType="telerik:RadNavigationViewItem" BasedOn="{StaticResource RadNavigationViewItemStyle}">-->
 			<Style TargetType="telerik:RadNavigationViewItem">
@@ -96,7 +94,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 					</Setter.Value>
 				</Setter>                   
 			</Style>
-		</telerik:RadNavigationView.ItemContainerStyle>
+		</telerik:RadNavigationView.Resources>
 		<telerik:RadNavigationView.Content>
 			<ContentControl Content="{Binding SelectedItem, ElementName=radNavigationView}">
 				<ContentControl.ContentTemplate>

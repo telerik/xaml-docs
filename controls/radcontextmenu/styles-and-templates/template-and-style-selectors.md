@@ -109,7 +109,7 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
         <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
             <telerik:RadContextMenu.ContextMenu>
-                <telerik:RadContextMenu x:Name="contextMenu"
+                <telerik:RadContextMenu x:Name="radContextMenu"
                                         ItemContainerStyleSelector="{StaticResource MyStyleSelector}"/>
             </telerik:RadContextMenu.ContextMenu>
         </TextBox>

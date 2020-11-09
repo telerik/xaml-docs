@@ -53,7 +53,7 @@ This tutorial uses the following sample class:
 	}
 {{endregion}}
 
-#### __[VB.NET]] Example 1: The MenuItem class__
+#### __[VB.NET] Example 1: The MenuItem class__
 
 {{region vb-radcontextmenu-populating-with-data-binding-to-dynamic-data_1}}
 	Public Class MenuItem
@@ -146,20 +146,15 @@ Finally, set the generated collection as the **ItemsSource** of the control.
 #### __[C#] Example 3: Setting RadContextMenu's ItemsSource__
 
 {{region cs-radcontextmenu-populating-with-data-binding-to-dynamic-data_4}}
-	public Default_Cs()
-	{
 	    InitializeComponent();
 	    this.radContextMenu.ItemsSource = this.GetMenuItems();
-	}
 {{endregion}}
 
 #### __[VB.NET] Example 3: Setting RadContextMenu's ItemsSource__
 
 {{region vb-radcontextmenu-populating-with-data-binding-to-dynamic-data_5}}
-	Public Sub New()
 	    InitializeComponent()
 	    Me.radContextMenu.ItemsSource = Me.GetMenuItems()
-	End Sub
 {{endregion}}
 
 ## Creating and Applying the ItemContainerStyle

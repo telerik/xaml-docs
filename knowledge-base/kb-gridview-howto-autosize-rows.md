@@ -18,7 +18,7 @@ res_type: kb
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
-	    	<td>RadListBox for WPF</td>
+	    	<td>RadGridView for WPF</td>
 	    </tr>
     </tbody>
 </table>

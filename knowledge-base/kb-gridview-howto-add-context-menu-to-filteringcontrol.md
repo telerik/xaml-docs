@@ -1,8 +1,8 @@
 ---
-title: How to add context menu to RadGridView FilteringControl 
+title: How to Add Context Menu to RadGridView FilteringControl 
 description: Implement a context menu for TextBox elements inside the FilteringControl 
 type: how-to
-page_title: Showing a context menu for elements inside the FilteringControl 
+page_title: Showing a Context Menu for Elements Inside the FilteringControl 
 slug: kb-gridview-howto-add-context-menu-to-filteringcontrol
 tags: contextmenu, filteringcontrol
 ticketid: 1122194
@@ -25,7 +25,7 @@ How to display a context menu for elements inside the FilteringControl of the Ra
 
 ## Solution
 
-Create a class that inherits from FilteringControl and handle the __PreviewMouseRightButton__ event. Inside the event handler, add the logic for displaying the context menu. 
+Create a class that inherits from FilteringControl and handle the __PreviewMouseRightButtonDown__ event. Inside the event handler, add the logic for displaying the context menu. 
 
 #### __[C#] Example 1: Creating a custom FilteringControl__
 {{region cs-kb-gridview-howto-add-context-menu-to-filteringcontrol-0}}
@@ -145,7 +145,7 @@ Then you have to set the __FilteringControl__ property of the columns which will
 
 <!-- -->
 
-> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls, you should [base the style for the custom FilteringControl on the default one for the theme]({%slug implicit-styles-styling-the-controls%}#basing-a-custom-style-on-a-theme-default-style). 
+> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies%}) dlls, you should [base the style for the custom FilteringControl on the default one for the theme]({%slug implicit-styles-styling-the-controls%}#basing-a-custom-style-on-a-theme-default-style%}). 
 
 ## See Also
 * [RadGridView Getting Started]({%slug gridview-getting-started2%})

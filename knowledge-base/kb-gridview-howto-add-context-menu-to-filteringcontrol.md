@@ -145,7 +145,7 @@ Then you have to set the __FilteringControl__ property of the columns which will
 
 <!-- -->
 
-> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies%}) dlls, you should [base the style for the custom FilteringControl on the default one for the theme]({%slug implicit-styles-styling-the-controls%}#basing-a-custom-style-on-a-theme-default-style%}). 
+> If you are using the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls, you should [base the style for the custom FilteringControl on the default one for the theme]({%slug implicit-styles-styling-the-controls%}#basing-a-custom-style-on-a-theme-default-style). 
 
 ## See Also
 * [RadGridView Getting Started]({%slug gridview-getting-started2%})

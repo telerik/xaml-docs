@@ -4,7 +4,7 @@ page_title: Template Structure
 description: Check our &quot;Template Structure&quot; documentation article for the RadExpander {{ site.framework_name }} control.
 slug: radexpander-styles-templates-template-structure
 tags: template,structure
-published: True
+published: False
 position: 0
 ---
 

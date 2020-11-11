@@ -6,6 +6,7 @@ slug: radpdfviewer-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadPdfViewer
 ---
 
 # Overview
@@ -16,6 +17,10 @@ position: 0
 Thank you for choosing Telerik __RadPdfViewer__!
 
 __RadPdfViewer__ is a control that can display PDF files natively in {{ site.framework_name }}. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadPdfViewer Overview](images/RadPdfViewer_radpdfviewer_overview_02.png)
 

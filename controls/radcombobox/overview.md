@@ -6,6 +6,7 @@ slug: radcombobox-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadComboBox
 ---
 
 # Overview
@@ -20,6 +21,10 @@ position: 0
 Thank you for choosing Progress® Telerik® __RadComboBox__!        
 
 The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadComboBox__ is not just another drop-down list control. The control has a number of advanced features such as several edit modes, autocomplete, filtering, a rich event and programming model, as well as full customization capabilities.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 #### __Figure 1: RadComboBox in different modes__
 

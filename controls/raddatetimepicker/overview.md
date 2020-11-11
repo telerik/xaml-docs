@@ -6,6 +6,7 @@ slug: raddatetimepicker-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDateTimePicker
 ---
 
 # Overview
@@ -19,9 +20,13 @@ position: 0
 
 Thank you for choosing __Telerik RadDateTimePicker__!        
 
-![Rad Date Time Picker Overview](images/RadDateTimePicker_Overview_02.png)
-
 __RadDateTimePicker__ is a convenient way to get rid of the boring date and time parsing and data validation. __RadDateTimePicker__ is an easy and simple, but yet essential way to improve end-user experience. By setting the **InputMode** property you can use __RadDateTimePicker__ as a __DatePicker__, __TimePicker__ or __both__. Moreover, you can control the layout of the popups that show time and/or date values as well as use the rich data model in {{ site.framework_name }} to populate content dynamically.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![Rad Date Time Picker Overview](images/RadDateTimePicker_Overview_02.png)
 
 ## Key Features
 

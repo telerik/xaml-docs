@@ -18,32 +18,6 @@ position: 0
 
 Thank you for choosing {% if site.site_name == 'Silverlight' %}[Telerik UI for Silverlight](https://www.telerik.com/products/silverlight/overview.aspx){% else %}[Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx){% endif %}.
 
-<style>
-/* download trial button */
-
-div#trial_button {
-    text-align: center !important;
-}
-
-div#trial_button .trialLink {	
-	color: #fff;
-	background-color: #e74b3c;
-	padding:.44em .9em .52em;
-	font-size: 20px;
-	font-weight:400;
-	letter-spacing:-.025em;
-	position:relative;
-	display:inline-block;
-	line-height:1.2;
-	-webkit-transition:color .2s ease,background-color .2s ease;
-	transition:color .2s ease,background-color .2s ease;
-	border-radius:2px;
-	-webkit-appearance:none;
-	font-family:Metric,Arial,Gadget,sans-serif;
-	text-align:center	
-}
-</style>
-
 {% if site.site_name == 'Silverlight' %}
 Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
 
@@ -59,16 +33,8 @@ To learn more please visit the [Telerik UI for WPF](https://www.telerik.com/prod
 
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}
-<div id="trial_button">
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" class="trialLink">Download Free Trial</a>
-</div>
-{% else %}
-
-<div id="trial_button">
-<br />
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf" class="trialLink">Download Free Trial</a>
-</div>
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
 {% endif %}
 
 Telerik UI for {{ site.framework_name }} features the following controls:

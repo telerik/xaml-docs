@@ -6,6 +6,7 @@ slug: dragdropmanager-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: DragDropManager
 ---
 
 # Overview
@@ -18,6 +19,10 @@ position: 0
 {% endif %}
 
 __DragDropManager__ offers intuitive API similar to the WPF native drag and drop behavior. The APi allows you to enable drag-drop in multiple scenarios.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/DragDropManager_DragBetweenListBoxes.png)
 

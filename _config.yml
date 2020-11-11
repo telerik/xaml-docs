@@ -3909,6 +3909,7 @@ sdk_examples: "sdk_wpf.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
 has_kb_portal: true
+has_cta_panels: true
 
 ## Do not edit below this line
 skip_tabbed_code: true

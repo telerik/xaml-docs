@@ -5,6 +5,7 @@ description: This article lists the main features of the RadFilePathPicker contr
 slug: radfilepathpicker-overview
 tags: overview, radfilepathpicker
 position: 0
+CTAControlName: RadFilePathPicker
 ---
 
 # Overview
@@ -12,6 +13,10 @@ position: 0
 ![RadFilePathPicker](images/FilePathPickerOverviewIcon.png)
 
 RadFilePathPicker is a control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 #### __Figure 1: RadFilePathPicker in the Office2016 theme__
 ![RadFilePathPicker Overview](images/FilePathPicker_Overview.png)

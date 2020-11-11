@@ -6,6 +6,7 @@ slug: radpasswordbox-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadPasswordBox
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadPasswordBox__!
 
 __RadPasswordBox__ is a control used for easily entering and handling passwords. It is essential to use this control whenever a user is prompted to enter a password.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadPasswordBox Overview](images/RadPasswordBox_Overview_1.png)
 

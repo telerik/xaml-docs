@@ -6,6 +6,7 @@ slug: radtabcontrol-overview2
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTabControl
 ---
 
 # Overview
@@ -22,6 +23,10 @@ Thank you for choosing __RadTabControl__!
 __RadTabControl__ is a flexible navigation component, used to build tabbed interfaces in {{ site.framework_name }} applications. Thanks to the related __RadTabItem__ control, you can organize your controls into different content pages, thus improving the overall user experience (UX) of your applications.				
 
 RabTabControl is part of the powerful UI for WPF navigation controls framework, which includes components as [RadToolBar]({%slug radtoolbar-overview%}), [RadTreeView]({%slug radtreeview-overview2%}), [RadPanelBar]({%slug radpanelbar-overview%}), [RadWindow]({%slug radwindow-overview%}), [RadMenu]({%slug radmenu-overview%}) and more.				
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radtabcontrol-overview-01.png)
 

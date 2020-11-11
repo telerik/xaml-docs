@@ -6,6 +6,7 @@ slug: raddataservicedatasource-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDataServiceDataSource
 ---
 
 # Overview
@@ -19,6 +20,10 @@ position: 0
 
 __RadDataServiceDataSource__ provides seamless integration between an user interface and data coming from a __WCF Data Service__. You can retrieve, shape and edit data using declarative XAML syntax only. __RadDataServiceDataSource__ provides extensive code-behind API for more advanced scenarios. The __QueryableDataServiceCollectionView &lt;T&gt;__ class, which is internally used by the control, is made publicly available for use in view models part of an __MVVM architecture__, where the usage of UI elements is not recommended. 
 __RadDataServiceDataSource__ uses a __DataServiceContext__ and a __DataServiceQuery__ to communicate with the server. Thanks to the fact that all controls are part of the Telerik family, __RadDataServiceDataSource__ can codelessly integrate with __RadGridView__, __RadDataPager__ and __RadDataFilter__ and perform paging, filtering and sorting directly on the server. __RadDataServiceDataSource__ can also be used as a standalone data source control since it provides the public API needed for loading, shaping and editing data.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
  ![](images/RadDataServiceDataSource_Overview.gif)
 

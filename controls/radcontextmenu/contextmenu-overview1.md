@@ -6,6 +6,7 @@ slug: contextmenu-overview1
 tags: overview
 published: True
 position: 1
+CTAControlName: RadContextMenu
 ---
 
 # Overview
@@ -22,9 +23,13 @@ Thank you for choosing __RadContextMenu__!
 
 Have you ever encountered the need of building a very complicated custom menu system, while still keeping it simple for the end user? It’s easy to save space and provide additional commands or features with the __RadContextMenu__.        
 
-![Rad Context Menu Overview 03](images/RadContextMenu_Overview_03.png)
-
 __RadContextMenu__ provides the power to boost the existing navigation of your application. Similar to RadMenu, __RadContextMenu__ allows you to combine the ability to display hierarchical views and the advanced styling mechanism, thus letting you build even the most complicated menu systems.   
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![Rad Context Menu Overview 03](images/RadContextMenu_Overview_03.png)
 
 ## Key Features      
 

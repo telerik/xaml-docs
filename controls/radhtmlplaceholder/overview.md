@@ -6,6 +6,7 @@ slug: radhtmlplaceholder-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadHtmlPlaceholder
 ---
 
 # Overview
@@ -18,12 +19,13 @@ position: 0
 
 Thank you for choosing Telerik __RadHtmlPlaceholder__!
 				
+__RadHtmlPlaceHolder__ is a powerful tool to show external web pages inside your Silverlight application, thus significantly increasing the overall user experience.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![htmlplaceholder-overview](images/htmlplaceholder-overview.png)
-
-__RadHtmlPlaceHolder__ is a powerful tool to show external web pages inside your Silverlight application, thus significantly increasing the overall user experience.
-				
-
 
 
 ## See Also[Getting Started with RadHtmlPlaceholder - Video Tutorial ](http://tv.telerik.com/watch/silverlight/video/introduction-radhtmlplaceholder-silverlight)

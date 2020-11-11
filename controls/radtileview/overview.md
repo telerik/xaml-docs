@@ -6,6 +6,7 @@ slug: radtileview-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTileView
 ---
 
 # Overview
@@ -15,6 +16,11 @@ position: 0
 Thank you for choosing Telerik __RadTileView__!			
 
 Create flexible and interactive layouts for your {% if site.site_name == 'Silverlight' %}rich web{% endif %}{% if site.site_name == 'WPF' %}desktop{% endif %} applications with __RadTileView__. The control enables you to architect immersive user experiences with its configurable content "tiles", support for drag-and-drop rearrangement, and adjustable position of the minimized items. __RadTileView__ comes with built-in item animations, which are also fully customize able to suit various scenarios.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
 ![Rad Tile View - overview](images/tileview_overview.png)
 
 ## See Also

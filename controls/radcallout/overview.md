@@ -6,6 +6,7 @@ slug: radcallout-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadCallout
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing __Telerik RadCallout__ control!
 
 Telerik’s Callout control for WPF is a ContentControl with an arrow that can be used to display additional information, warnings, hints, or to highlight relevant data. The RadCallout provides several different forms of its body and its arrow element. The appearance of the control can be fully customized to satisfy the needs of your scenarios. The control has two use cases: declared in XAML or placed inside a Popup element using the built-in [CalloutPopupService]({%slug radcallout-features-calloutpopupservice%}).
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadCallout in the Fluent theme](images/callout_overview.png)
 

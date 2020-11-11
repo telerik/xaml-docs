@@ -6,6 +6,7 @@ slug: raddocking-overview2
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDocking
 ---
 
 # Overview
@@ -20,6 +21,10 @@ position: 0
 Thank you for choosing Telerik ® RadDocking!
 
 Are you comfortable handling multiple windows in your application? Save yourself the hassle with __RadDocking__ for {{ site.framework_name }} – a docking system like the one in Microsoft Visual Studio. You get the dockable ToolWindows, a hidden DockingManager control, and a designer to make the creation of attractive layouts easy.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
         
 ![Rad Docking Overview](images/RadDocking_Overview2.png)
 

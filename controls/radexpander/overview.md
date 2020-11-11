@@ -6,6 +6,7 @@ slug: radexpander-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadExpander
 ---
 
 # Overview
@@ -19,9 +20,13 @@ position: 0
 
 Thank you for choosing Telerik __RadExpander__!				
 
-![RadExpander](images/RadExpander_Overview.png)
-
 __RadExpander__ is a flexible control that helps you save space and achieve easier navigation through your site. You can place the expander anywhere on your page and embed any content inside its drop-down area.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![RadExpander](images/RadExpander_Overview.png)
 
 ## Key Features
 

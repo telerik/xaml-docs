@@ -6,6 +6,7 @@ slug: radimageeditor-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadImageEditor
 ---
 
 # Overview
@@ -13,7 +14,11 @@ position: 0
 
 {% if site.site_name == 'Silverlight' %}![](images/RadImageEditor_Overview_sl.png){% else %}![](images/RadImageEditor_Overview_wpf.png){% endif %}
 
-__RadImageEditor__ is a control that can be used to preview and edit images in different file formats. It is meant to be used as a stand-alone control, but has also been integrated in __RadRichTextBox__.         
+__RadImageEditor__ is a control that can be used to preview and edit images in different file formats. It is meant to be used as a stand-alone control, but has also been integrated in __RadRichTextBox__.  
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}       
 
 ![](images/radimageeditor-overview-1.png)
 

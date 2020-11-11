@@ -6,6 +6,7 @@ slug: entityframeworkcore-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadEntityFrameworkCoreDataSource
 ---
 
 # Overview
@@ -13,6 +14,10 @@ position: 0
 ![Rad Entity Framework Core WPF](images/entityframeworkcoredatasource_wpf.png)
 
 __RadEntityFrameworkCoreDataSource__ is a WPF data control that provides seamless integration between an user interface and data coming from [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/).  __RadEntityFrameworkCoreDataSource__ generates [LINQ to Entities](http://msdn.microsoft.com/en-us/library/bb399367.aspx) queries to retrieve data from a [DbContext](https://docs.microsoft.com/en-us/ef/core/miscellaneous/configuring-dbcontext). The control can also perform basic CRUD operations on the database entities. __The QueryableEntityCoreCollectionView<T>__ class, which is internally used by the control is made publicly available for use in view models part of an MVVM architecture. Thanks to the fact that all controls are part of the Telerik family, __RadEntityFrameworkCoreDataSource__ can codelessly integrate with __RadGridView__, __RadDataPager__ and __RadDataFilter__ to perform paging, filtering, sorting and grouping directly on the database server. __RadEntityFrameworkCoreDataSource__ can also be used as a standalone data source control since it provides the public API needed for loading, shaping and editing data.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ## Key Features 
 

@@ -6,6 +6,7 @@ slug: radscheduleview-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadScheduleView
 ---
 
 # Overview
@@ -20,6 +21,10 @@ position: 0
 Thank you for choosing Telerik __RadScheduleView__.
 
 __RadScheduleView__ is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. RadScheduleView empowers the end user with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![scheduleview overview](images/scheduleview_overview.png)
 

@@ -6,6 +6,7 @@ slug: radbulletgraph_overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadBulletGraph
 ---
 
 # Overview
@@ -13,6 +14,10 @@ position: 0
 {% if site.site_name == 'Silverlight' %}![](images/RadBulletGraph_Overview_01.png){% else %}![](images/RadBulletGraph_Overview_01_WPF.png){% endif %}
 
 The __RadBulletGraph__ control is a variation of linear gauge. It combines a number of indicators, as well as the data indicator into one control, which is lightweight, easily customizable and straightforward to setup and use. The control is a great tool for creating dashboards that presents a lot of information in relatively small size.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radbulletgraph-overview-0.png)
 

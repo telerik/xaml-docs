@@ -6,6 +6,7 @@ slug: radtimeline-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTimeline
 ---
 
 # Overview
@@ -18,8 +19,12 @@ position: 0
 
 Thank you for choosing __RadTimeline__!
         
-
 The RadTimeline control is used to visualize a sequence of events over a specified period of time. Its main purpose is to allow intuitive visualization of the events, lightweight scrolling and navigating through the period.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
 ![](images/RadTimeLine_overview.jpg)
 
 __RadTimeline's__ key features list:

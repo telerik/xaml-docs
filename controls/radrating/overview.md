@@ -6,6 +6,7 @@ slug: radrating-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadRating
 ---
 
 # Overview
@@ -15,9 +16,13 @@ position: 0
 
 Thank you for choosing Telerik __RadRating__!	
 
-![](images/rating_default.png)
-
 __RadRating__ is a flexible UI component that allows users to intuitively rate by selecting number of items [stars] from a predefined number of items.		
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![](images/rating_default.png)
 
 ## Key Features
 

@@ -5,6 +5,7 @@ description: This article lists the main features of the RadNotifyIcon control.
 slug: radnotifyicon-overview
 tags: overview, radnotifyicon
 position: 0
+CTAControlName: RadNotifyIcon
 ---
 
 # Overview
@@ -14,6 +15,10 @@ position: 0
 Thank you for choosing __RadNotifyIcon__!			
 
 __RadNotifyIcon__ is a control that can be used to display an icon in the Windows taskbar notification area. The icon can then respond to user interaction as well as display tooltips, popups and balloon notifications.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadNotifyIcon in the Fluent theme](images/notifyicon_overview.png)
 

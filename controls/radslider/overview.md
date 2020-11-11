@@ -6,11 +6,10 @@ slug: radslider-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadSlider
 ---
 
 # Overview
-
-
 
 {% if site.site_name == 'Silverlight' %}![slider sl icon](images/slider_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![slider wpf icon](images/slider_wpf_icon.png){% endif %}
 
@@ -18,10 +17,13 @@ position: 0
 
 Thank you for choosing Telerik __RadSlider__ !
 
-![](images/RadSlider.png)
-
 __RadSlider__ is a flexible UI component that allows users to select a value from a defined range. The control is completely customizable in terms of appearance and offers numerous configuration options like orientation, small change, mouse wheel support, selection range, snap to tick, tick placement, tick template, etc.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 				
+![](images/RadSlider.png)
 
 __Key Features:__
 

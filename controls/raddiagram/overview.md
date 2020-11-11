@@ -6,6 +6,7 @@ slug: raddiagram-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDiagram
 ---
 
 # Overview
@@ -20,6 +21,10 @@ The __RadDiagram__ control and its components allow you to create flexible and i
 * Simulate processes and represent data logic.
 * Architect data-visualization and data analysis Diagramming structures.
 * Further enhance and customize your geographic maps solutions.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Diagram Overview](images/RadDiagram_Overview.png)
 

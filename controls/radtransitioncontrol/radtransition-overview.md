@@ -6,6 +6,7 @@ slug: radtransition-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTransitionControl
 ---
 
 # Overview
@@ -20,6 +21,10 @@ position: 0
 Thank you for choosing Telerik __RadTransitionControl__!
 
 The __RadTransitionControl__ allows you to create transition animations that will appear upon changing the content of the control. It also provides an extended animation framework that can be used to customize the animations of existing controls, such as __RadMenu__, __RadComboBox__, __RadDocking__, etc., allowing you to provide a more rich look-and-feel to your RIA with minimal effort.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 ![](images/RadTransition_Overview_02.png)

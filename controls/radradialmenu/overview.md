@@ -6,6 +6,7 @@ slug: radradialmenu-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadRadialMenu
 ---
 
 # Overview
@@ -19,6 +20,10 @@ position: 0
 Thank you for choosing Telerik __RadRadialMenu__!
 
 __RadRadialMenu__ is a circular menu that comes with support for selection, commands, events and many customization options. Using __RadRadialMenu__ the end-user can drill-down into different levels of items that provide variety of options to choose from.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Radial Menu Overview 03](images/RadRadialMenu_Overview_03.png)
 

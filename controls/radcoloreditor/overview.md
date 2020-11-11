@@ -6,6 +6,7 @@ slug: radcoloreditor-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadColorEditor
 ---
 
 # Overview
@@ -15,10 +16,13 @@ position: 0
 
 Thank you for choosing Telerik's __RadColorEditor__ control! 
 
-![radcoloreditor-overview](images/radcoloreditor-overview.png)
-
 __RadColorEditor__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} is a lightweight UI component that allows users to select a color from a custom palette of colors.
 
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![radcoloreditor-overview](images/radcoloreditor-overview.png)
 ## Key Features:
 
 * __Color Mode__: RadColorEditor control provides support for the most popular color models. [Read more]({%slug radcoloreditor-features-color-mode%})

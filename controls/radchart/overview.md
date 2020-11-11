@@ -6,6 +6,7 @@ slug: radchart-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadChartView
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 >important We encourage you to review our new control [RadChartView]({%slug radchartview-overview%}) for super-fast visualization of your data. The new RadChartView is a set of controls - RadCartesianChart,RadFunnelChart, RadPieChart and RadPolarChart. The new components have better implementation and improved performance. Furthermore, the new charts are also quite flexible and easier to set up. You can read about the differences between the charts in the [RadChart vs. RadChartView]({%slug radchartview-radchartview-vs-radchart%}) help article.
 
 __RadChart__ for {{ site.framework_name }} is the exact tool to transform various business scenarios into interactive, rich, animated charts that enable the end users to analyze complex data. Telerik {{ site.framework_name }} Chart is a 100% lookless control providing full support for Expression Blend.  All 2D series, charts and axis elements can be dropped independently in Blend and styled individually. Furthermore the control offers several pre-defined skins, which will help you to deliver a consistent look and feel in your application.application best.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/RadChart_Overview_02.png)
 

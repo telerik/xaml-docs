@@ -6,6 +6,7 @@ slug: radcloudupload-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadCloudUpload
 ---
 
 # Overview
@@ -13,6 +14,10 @@ position: 0
 ![cloudupload overview](images/cloudupload_wpf_46_text.png)
 
 The __RadCouldUpload__ control can be used in scenarios when our customers need to allow their users to upload files to a cloud storage provider. This control can be configured to upload files to different storage providers.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/cloudupload-overview-0.png)
 

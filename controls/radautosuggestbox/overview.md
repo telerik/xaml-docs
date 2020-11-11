@@ -5,6 +5,7 @@ description: This article lists the main features of the RadAutoSuggestBox contr
 slug: radautosuggestbox-overview
 tags: overview, autosuggestbox
 position: 0
+CTAControlName: RadAutoSuggestBox
 ---
 
 # Overview
@@ -12,6 +13,10 @@ position: 0
 ![RadAutoSuggestBox](images/radautosuggestbox-overview-0.png)
 
 __RadAutoSuggestBox__ is a text control that makes suggestions to the users as they type text in. When the text updates an event is fired where you can load suggestions into the drop down of the control.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radautosuggestbox-overview-1.png)
 

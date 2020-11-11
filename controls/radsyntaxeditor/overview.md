@@ -5,6 +5,7 @@ description: This article lists the main features of the RadSyntaxEditor control
 slug: radsyntaxeditor-overview
 tags: overview,radsyntaxeditor
 position: 0
+CTAControlName: RadSyntaxEditor
 ---
 
 # Overview
@@ -12,6 +13,10 @@ position: 0
 ![SyntaxEditor for WPF icon](images/syntaxeditor_wpf.png)
 
  **RadSyntaxEditor** is a useful text editor control which provides built-in syntax highlighting and code editing experience for popular languages. It allows users to create custom syntax highlighting of keywords and operators of their own language.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadSyntaxEditor in the Fluent theme](images/syntaxeditor_overview.png)
 

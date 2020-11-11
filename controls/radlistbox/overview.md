@@ -6,6 +6,7 @@ slug: radlistbox-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadListBox
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadListBox__!
 
 __RadListBox__ is a {{ site.framework_name }} control used to display a list of items from which the user can choose. The control has a number of advanced features like multiple selection, autocomplete, keyboard support, drag and drop, as well as rich customization capabilities.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad List Box Overview 02](images/RadListBox_Overview_02_WPF.png)
 

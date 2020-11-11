@@ -6,6 +6,7 @@ slug: radgauge-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadGauge
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing __RadGauge__!
 
 If you are building business dashboards or you just need graphical indicators, you will find the new __RadGauge__ control indispensable. With the rich assortment of circular, linear and numeric gauge types and the powerful customization capabilities of the control you are free to build the exact dynamic data visualization tool that you need.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/RadGauge_Overview_02.png)
 

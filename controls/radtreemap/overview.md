@@ -6,6 +6,7 @@ slug: radtreemap-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTreeMap
 ---
 
 # Overview
@@ -18,6 +19,10 @@ position: 0
 {% endif %}
 
 __RadTreeMap__ and __RadPivotMap__ are data visualization controls used to display hierarchical data as a set of nested rectangles. Each rectangle has an area proportional to a specified dimension on the data. Both controls are useful in scenarios where a lot of items have to be compared in a limited space. When the color and size dimensions are correlated in some way with the tree structure, you can easily see patterns that would be difficult to spot in other ways.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radtreemap_overview.png)
 

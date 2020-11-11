@@ -6,6 +6,7 @@ slug: radpivotgrid-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadPivotGrid
 ---
 
 # Overview
@@ -13,6 +14,10 @@ position: 0
 {% if site.site_name == 'Silverlight' %}![Rad Pivot Grid Overview SL 01](images/RadPivotGrid_Overview_SL01.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Pivot Grid Overview WPF 01](images/RadPivotGrid_Overview_WPF01.png){% endif %}
 
 Telerik __RadPivotGrid__ is a control used to aggregate millions of records in a concise tabular format. The data can be easily grouped, filtered, sorted and manipulated to create different reports.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 {% if site.site_name == 'Silverlight' %}![Rad Pivot Grid Overview SL 2](images/RadPivotGrid_Overview_SL2.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Pivot Grid Overview WPF 2](images/RadPivotGrid_Overview_WPF2.png){% endif %}
 

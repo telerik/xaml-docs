@@ -61,16 +61,15 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
         <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
             <telerik:RadContextMenu.ContextMenu>
-                <telerik:RadContextMenu x:Name="contextMenu" 
-                                        ItemsSource="{Binding}" 
-                                        ItemContainerStyle="{StaticResource MenuItemContainer}"
+                <telerik:RadContextMenu x:Name="radContextMenu" 
+                                        ItemContainerStyle="{StaticResource MenuItemStyle}"
                                         ItemTemplateSelector="{StaticResource MyTemplateSelector}"/>
             </telerik:RadContextMenu.ContextMenu>
         </TextBox>
     {{endregion}}
 
-#### __Picture 1: Result of Example 1 and Example 2__ 
-![](images/RadContextMenu_TemplateAndStyleSelectors_ItemTemplateSelector.PNG)
+#### __Figure 1: Result of Example 1 and Example 2__ 
+![RadContextMenu with ItemTemplateSelector](images/RadContextMenu_TemplateAndStyleSelectors_ItemTemplateSelector.PNG)
 
 * __ItemContainerStyleSelector:__ Used to select the __Style__ that is applied to the child __RadMenuItems__.
 
@@ -99,9 +98,9 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 	{{region radcontextmenu-populating-with-data-template-and-style-selectors_2}}
 		<Grid.Resources>
             <!-- ... -->
-	    <local:MyStyleSelector x:Key="MyStyleSelector" DefaultStyle="{StaticResource MenuItemContainer}">
+	    <local:MyStyleSelector x:Key="MyStyleSelector" DefaultStyle="{StaticResource MenuItemStyle}">
                 <local:MyStyleSelector.CutStyle>
-                    <Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource MenuItemContainer}">
+                    <Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource MenuItemStyle}">
                         <Setter Property="Background" Value="Red"/>
                     </Style>
                 </local:MyStyleSelector.CutStyle>
@@ -110,15 +109,14 @@ Here is a list of the selectors provided by the __RadContextMenu__ control:
 
         <TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
             <telerik:RadContextMenu.ContextMenu>
-                <telerik:RadContextMenu x:Name="contextMenu"
-                                        ItemsSource="{Binding}"  
+                <telerik:RadContextMenu x:Name="radContextMenu"
                                         ItemContainerStyleSelector="{StaticResource MyStyleSelector}"/>
             </telerik:RadContextMenu.ContextMenu>
         </TextBox>
     {{endregion}}
 
-#### __Picture 2: Result of Example 3 and Example 4__ 
-![](images/RadContextMenu_TemplateAndStyleSelectors_ItemContainerStyleSelector.PNG)
+#### __Figure 2: Result of Example 3 and Example 4__ 
+![RadContextMenu with ItemContainerStyleSelector](images/RadContextMenu_TemplateAndStyleSelectors_ItemContainerStyleSelector.PNG)
 
 And a list of the selectors provided by the __RadMenuItem__ control:
 

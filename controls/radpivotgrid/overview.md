@@ -13,7 +13,9 @@ CTAControlName: RadPivotGrid
 
 {% if site.site_name == 'Silverlight' %}![Rad Pivot Grid Overview SL 01](images/RadPivotGrid_Overview_SL01.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Pivot Grid Overview WPF 01](images/RadPivotGrid_Overview_WPF01.png){% endif %}
 
-Telerik __RadPivotGrid__ is a control used to aggregate millions of records in a concise tabular format. The data can be easily grouped, filtered, sorted and manipulated to create different reports.
+Thank you for choosing __RadPivotGrid__!	
+
+RadPivotGrid is a control used to aggregate millions of records in a concise tabular format. The data can be easily grouped, filtered, sorted and manipulated to create different reports.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -21,13 +23,14 @@ Telerik __RadPivotGrid__ is a control used to aggregate millions of records in a
 
 {% if site.site_name == 'Silverlight' %}![Rad Pivot Grid Overview SL 2](images/RadPivotGrid_Overview_SL2.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Pivot Grid Overview WPF 2](images/RadPivotGrid_Overview_WPF2.png){% endif %}
 
-__Key features__ list includes:
+As every control from UI for {{ site.framework_name }}, RadPivotGrid comes with a set of pre-defined themes. You can also design your own templates for a completely custom look.
 
-* __RadPivotGrid__ control provides features for filtering and sorting the data, so you can work with a small part of it.
-      			
+## Key Features
 
-* __RadPivotGrid__ provides support for multiple datasources:
-      			{% if site.site_name == 'WPF' %}
+* __Filtering and Sorting__  			
+
+* __Multiple Data Sources Support__:
+	{% if site.site_name == 'WPF' %}
 
 	* Support for XMLA access to OLAP Cube.
 
@@ -36,30 +39,33 @@ __Key features__ list includes:
 	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.
 
 	* QueryableDataProvider gives you the ability to execute all aggregations and calculations on the database server.
-                {% endif %}{% if site.site_name == 'Silverlight' %}
+	{% endif %}
+	{% if site.site_name == 'Silverlight' %}
 
 	* Support for XMLA access to OLAP Cube.
 
-	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.{% endif %}
+	* LocalDataSourceProvider with *ItemsSource* that implements *IEnumerable* interface.
+	{% endif %}
 
-* Built-in Aggregates: *Sum, Min, Max, Average, Count, etc.*
+* __Built-in Aggregates__: *Sum, Min, Max, Average, Count, etc.*
 
-* Grouping and showing hierarchical structure.
+* __Grouping__
 
-* Applying visual represenation (string formats) to the data: currency, numbers after the decimal point, etc.
+* __Data Formatting__: Currency, numbers after the decimal point, etc.
 
-* Parallel asynchronous data processing.
+* __Parallel Asynchronous Data Processing__
 
-* Different Pivot UI Layouts:  Compact, Outline, Tabular.
+* __Different Pivot UI Layouts__:  Compact, Outline, Tabular.
 
-* Built-in runtime configuration control - [RadPivotFieldList]({%slug radpivotgrid-fieldlist%}).
+* __Built-in Runtime Configuration Control__: [RadPivotFieldList]({%slug radpivotgrid-fieldlist%}).
 
-* Export to different formats - xlsx, docx, pdf, HTML.
+* __Export to Different Formats__: xlsx, docx, pdf, HTML.
 
-* Serialization of the DataProviders, so you can save the current state and load it later.
+* __DataProvider Serialization__: Save the current state and load it later.
 
-You can check __RadPivotGrid__ demos at:
-     	{% if site.site_name == 'Silverlight' %}[RadPivotGrid FirstLook](https://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[RadPivotGrid FirstLook](https://demos.telerik.com/wpf/#PivotGrid/FirstLook){% endif %}
+>tip Get started with the control with its [Getting Started]({%slug radpivotgrid-getting-started%}) help article that shows how to use it in a basic scenario.
+
+> Check out the online examples at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#PivotGrid/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
 ## See Also
 

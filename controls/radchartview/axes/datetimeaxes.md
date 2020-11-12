@@ -20,7 +20,7 @@ The __DateTimeContinuousAxis__ is like a numerical axis but the axis value range
 
 * __ActualRange__: A property of type __ValueRange<DateTime>__ that gets the actual range used by the axis to plot data points.
 * __ActualVisibleRange__: A property of type __ValueRange<DateTime>__ that gets the range that is actually visible on the plot area when the chart is zoomed in.
-* __GapLength__: A property of type __double__  that gets or sets the gap (in the range [0, 1]) to be applied when calculating each plotted Telerik.Windows.Controls.ChartView.ChartSeries position.
+* __GapLength__: A property of type __double__  that gets or sets the gap (in the range [0, 1]) to be applied when calculating each plotted Telerik.Windows.Controls.ChartView.ChartSeries position. More information regarding this property can be found in the [Gap Length]({%slug radchartview-axes-gap-length%}) help article.
 * __MajorStep__: A property of type __double__  that gets or sets  the user-defined step between two adjacent ticks on the axis. Specify TimeSpan.Zero to clear the value. If not specified, the step will be automatically determined, depending on the smallest difference between any two dates.
 * __MajorStepUnit__: A property of type __TimeInterval__ that gets or sets the unit that defines the custom major step of the axis. If no explicit step is defined, the axis will automatically calculate one, depending on the smallest difference between any two dates.
 * __Maximum__: A property of type __DateTime__ that gets or sets the maximum date of the axis

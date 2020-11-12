@@ -43,7 +43,7 @@ To get rid of the extra space surrounding the panes in the pane groups and the D
 
 #### Figure 1: DocumentHost with and without the default padding in the Crystal theme
 
-![](images/kb-docking-remove-space-around-panegroup-documenthost.png)
+![DocumentHost with and without the default padding in the Crystal theme](images/kb-docking-remove-space-around-panegroup-documenthost.png)
 
 ## See Also
 

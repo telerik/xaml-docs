@@ -1,61 +1,102 @@
 ---
-title: Change Control Appearance
-page_title: Change Control Appearance
-description: Change Control Appearance
-slug: getting-started-change-control-appearance
-tags: Change Control Appearance
+title: Using NuGet Installation
+page_title: Using NuGet Installation
+description: This article describes the lifecycle of a Telerik application when using nuget packages.
+slug: nuget-setup-lifecycle
+tags: nuget,lifecycle,application
 published: True
-position: 2
+position: 1
 ---
 
-# Change Control Appearance
+# Telerik Application Lifecyle Using Nuget Packages
 
-The UI for WPF controls use [Themes]({%slug styling-apperance-implicit-styles-overview%}) to change their appearance. The suite provides over 25 built-in themes that can fit in the majority of desktop application designs. A list of all the available themes can be found [here]({%slug common-styling-appearance-available-themes%}).
+This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing and upgrading an application with referenced Telerik dlls.
 
-There are two mechanisms that can be used to set a theme:
+The topic shows what is the lifecycle when using the Telerik __nuget packages__ to get dlls. As an alternative, you can use [MSI or Zip files]({%slug msi-or-zip-setup-lifecycle%}), or [Telerik UI for WPF Extension]({%slug vsx-setup-lifecycle%}) as shown in the corresponding articles in this documentation section.
 
-* [Using Implicit Styles](#setting-a-theme-using-implicit-styles)
-	In this case use NoXaml dlls.
-	
-* [Using StyleManager](#setting-a-theme-using-stylemanager)
-	In this case use Xaml dlls.
+## Creating a Project
 
-It is important to not mix the two approaches and always use the **correct assemblies** for the respective mechanism.
+To use the nuget packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
-## Custom Appearance
+![](images/msi-or-zip-setup-lifecyle-0.png)
 
-If you wish to simply change a few of the colors or font sizes of your controls, you can [define a new style]({%slug implicit-styles-styling-the-controls%}) for them and override the desired properties. 
+Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
 
-#### **[XAML] Example 1: Custom styles for RadListBox**
-{{region getting-started-change-control-appearance-0}}
-    <Style TargetType="telerik:RadListBox">
-        <Setter Property="Foreground" Value="Green" />
-        <Setter Property="FontSize" Value="22" />
-    </Style>
+![](images/msi-or-zip-setup-lifecyle-1.png)
+
+This will create an empty WPF project where you can install the nuget packages.
+
+![](images/msi-or-zip-setup-lifecyle-2.png)
+
+## Installing Nugets
+
+This article shows how to connect to the Telerik nuget server but you can also download the packages locally and use them offline. Read more in the [Installing UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%}) article.
+
+To setup the Telerik nuget server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/nuget` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section of the nuget article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to login with your *telerik.com* account.
+
+To install a Telerik dll, search for the name of the corresponding assembly in the search bar and then install it in the project.
+
+![](images/nuget-setup-lifecycle-0.png)
+
+There are two types of Telerik packages - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). If the package name ends with `.Xaml` then the dlls or of the Xaml type. If doesn't contain this the dlls are NoXaml.
+
+![](images/nuget-setup-lifecycle-1.png)
+
+If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles theming mechanism]({%slug styling-apperance-implicit-styles-overview%}) then you will need to install the package of the corresponding theme too. For example: `Telerik.Windows.Themes.Fluent`.
+
+![](images/nuget-setup-lifecycle-2.png)
+
+## Adding Telerik Controls
+
+After you create the WPF project and install the nugets, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
+
+#### __[XAML] Example 1: Adding Telerik control in the UI__
+{{region msi-or-zip-setup-lifecycle-0}}
+	<Window x:Class="TelerikWpfApplication.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:TelerikWpfApplication" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		mc:Ignorable="d"
+		Title="MainWindow" Height="450" Width="800">
+		<Grid>
+			<telerik:RadTabControl>
+				<telerik:RadTabItem Header="Home" />
+				<telerik:RadTabItem Header="Insert" />
+				<telerik:RadTabItem Header="View" />
+			</telerik:RadTabControl>
+		</Grid>
+	</Window>
 {{endregion}}
 
-If you wish to apply further customizations such as repositioning the building parts of a control, however, you will most probably need to [edit its control template]({%slug styling-apperance-editing-control-templates%}).
+![](images/msi-or-zip-setup-lifecyle-6.png)
 
-## Color Theme Generator
+## Deploying the Application
 
-The **Crystal**, **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
+To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
 
-For seamless color customization and faster palette creation that looks great and matches all controls, we created the [Color Theme Generator]({%slug common-styling-color-theme-generator%}).
+## Redistributing Telerik Application
 
-## Next Steps
+There are several rules that should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
 
-* [More Learning Resources]({%slug getting-started-next-steps%})
-{% if site.site_name == 'WPF' %}
-* [Start from the First Steps]({%slug getting-started-first-steps%})
-{% else %}
-* [Start from the First Steps]({%slug getting-started-first-steps-sl%})
-{% endif %}
+## Upgrading the Project
 
-## See Also
+To upgrade the project, open the Nuget package manager in Visual Studio and repeat the approach described in the [Installing Nugets](#installing-nugets) section. When you have the nugets already installed, you can select a newer (or older) version from the drop down menu and use the __Update__ button.
 
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
-* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
-* [Available Themes]({%slug common-styling-appearance-available-themes%})
-* [Color Theme Generator]({%slug common-styling-color-theme-generator%})
+![](images/nuget-setup-lifecycle-3.png)
+
+At this point, double check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
+
+![](images/msi-or-zip-setup-lifecyle-8.png)
+![](images/msi-or-zip-setup-lifecyle-9.png)
+
+Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
+
+![](images/msi-or-zip-setup-lifecyle-7.png)
+![](images/msi-or-zip-setup-lifecyle-10.png)
+
+## See Also  
+* [System Requirements]({%slug installation-system-requirements-wpf%})
+* [Download Product Files]({%slug download-product-files-wpf%})
+* [Installing WPF Demos Application]({%slug installing-wpf-demos%})

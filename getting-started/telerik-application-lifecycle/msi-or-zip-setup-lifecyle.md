@@ -1,26 +1,26 @@
 ---
 title: Using MSI or ZIP Installation
-page_title: Telerik Applicaiton Lifecyle Using MSI or ZIP Installation
-description: Telerik Applicaiton Lifecyle Using MSI or ZIP Installation
+page_title: Telerik Application Lifecyle Using MSI or ZIP Installation
+description: This article describes the lifecycle of a Telerik WPF application when using MSI or ZIP installation.
 slug: msi-or-zip-setup-lifecycle
 tags: pipeline,lifecycle
 published: True
-position: 2
+position: 0
 ---
 
-# Telerik Applicaiton Lifecyle Using MSI or ZIP Installation
+# Telerik Application Lifecyle Using MSI or ZIP Installation
 
-This article descibes the lifecycle of a Telerik application. This includes creating, deploying, redistributing and upgrading an application with referenced Telerik dlls.
+This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing and upgrading an application with referenced Telerik dlls.
 
-The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]() or [Telerik Visual Studio Extensions]() as shown in the corresponding articles in this documentation section.
+The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug vsx-setup-lifecycle%}) as shown in the corresponding articles in this documentation section.
 
 ## Creating a Project
 
-To use the Telerik dlls, create a new WPF project using the corresponding Visual Studio template from the __File --> New --> Project__ menu. 
+To use the Telerik dlls, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
 ![](images/msi-or-zip-setup-lifecyle-0.png)
 
-Set a __Project name__ and __Location__ for the project. For this example, we will use "TelerikWPFApplication" for the project's name.
+Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
 
 ![](images/msi-or-zip-setup-lifecyle-1.png)
 
@@ -81,13 +81,12 @@ To upgrade the project, download the new version of the .msi or the .zip file an
 ![](images/msi-or-zip-setup-lifecyle-8.png)
 ![](images/msi-or-zip-setup-lifecyle-9.png)
 
-Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then Clean, and Rebuild them. This will ensure that no older Telerik dlls are cached and used during the compilation.
+Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
 
 ![](images/msi-or-zip-setup-lifecyle-7.png)
 ![](images/msi-or-zip-setup-lifecyle-10.png)
 
 ## See Also  
-* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
-* [Available Themes]({%slug common-styling-appearance-available-themes%})
-* [Color Theme Generator]({%slug common-styling-color-theme-generator%})
+* [System Requirements]({%slug installation-system-requirements-wpf%})
+* [Download Product Files]({%slug download-product-files-wpf%})
+* [Installing WPF Demos Application]({%slug installing-wpf-demos%})

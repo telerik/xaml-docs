@@ -68,8 +68,7 @@ As the commands provided by __RadGridView__ are __ICommands__ at their core, the
 
 Using the __RadGridViewCommands__ class, you can set a sequence of commands to be performed one after another.  So, for example, you may easily handle the **Click** event of a button, move the focus down, select the current unit and then delete it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element as shown in **Exapmle 1**.
 
-#### __[C#] Example 1: Executing different commands__
-
+#### __[C#] Example 1: Executing different commands__  
 {{region cs-GridView-Commands-Overview_0}}
 	private void Button1_Click(object sender, RoutedEventArgs e)
     {
@@ -82,8 +81,7 @@ Using the __RadGridViewCommands__ class, you can set a sequence of commands to b
     }
 {{endregion}}
 
-#### __[VB.NET] Example 1: Executing different commands__
-
+#### __[VB.NET] Example 1: Executing different commands__  
 {{region vb-GridView-Commands-Overview_0}}
 	Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
         Dim moveDownCommand = TryCast(RadGridViewCommands.MoveDown, RoutedUICommand)
@@ -97,8 +95,7 @@ Using the __RadGridViewCommands__ class, you can set a sequence of commands to b
 
 In order to ensure that all commands will be executed in the correct sequence, it is advised to use RadGridView's **PendingCommands** collection as demonstrated in **Example 2**.
 
-#### __[C#] Example 2: Executing different commands with the ExecutePendingCommand method__
-
+#### __[C#] Example 2: Executing different commands with the ExecutePendingCommand method__  
 {{region cs-GridView-Commands-Overview_1}}
 	private void Button2_Click(object sender, RoutedEventArgs e)
 	{
@@ -109,8 +106,7 @@ In order to ensure that all commands will be executed in the correct sequence, i
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: Executing different commands with the ExecutePendingCommand method__
-
+#### __[VB.NET] Example 2: Executing different commands with the ExecutePendingCommand method__  
 {{region vb-GridView-Commands-Overview_1}}
 	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.clubsGrid.PendingCommands.Add(RadGridViewCommands.MoveDown)
@@ -119,3 +115,48 @@ In order to ensure that all commands will be executed in the correct sequence, i
 	    Me.clubsGrid.ExecutePendingCommand()
 	End Sub
 {{endregion}}
+
+## Using RadGridViewCommands in CellTemplate
+
+You can use the CellTemplate of the RadGridView columns to include a button in the data cells. The button can execute the one of the RadDiagramCommands. The following example shows how to add a delete button in one of the RadGridView columns.
+
+#### __[XAML] Example 3: Using RadDiagramCommands.Delete command in column CellTemplate__  
+{{region GridView-Commands-Overview_2}}
+	<telerik:GridViewColumn>
+	    <telerik:GridViewColumn.CellTemplate>
+	        <DataTemplate>
+	            <telerik:RadButton Content="Delete" Command="telerik:RadGridViewCommands.Delete" CommandParameter="{Binding}" />
+	        </DataTemplate>
+	    </telerik:GridViewColumn.CellTemplate>
+	</telerik:GridViewColumn>
+{{endregion}}
+
+The __CommandParameter__ is required in order for the Delete command to remove the concrete row model from the RadGridView's ItemsSource. The binding to the parameter points to the data context of the row.
+
+## Using RadDiagramCommands outside RadGridView
+
+The RadDiagramCommands class can be used also outside of RadGridView. The following example shows how to use the __RadDiagramCommands.CommitEdit__ command in a separate button which saves changes in the the editing cells. 
+
+#### __[XAML] Example 4: Using RadDiagramCommands.CommitEdit command outside of RadGridView__  
+{{region GridView-Commands-Overview_3}}
+	<telerik:RadButton Content="Save insert/edit" 
+					   Command="telerik:RadGridViewCommands.CommitEdit" 
+					   CommandTarget="{Binding ElementName=RadGridView1}" />
+{{endregion}}
+
+In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ property, specifying the __RadGridView__ towards which the command has to be applied. This specific command will be automatically disabled untill a change in any of the items in the grid is made. 
+{% if site.site_name == 'Silverlight' %}
+However, in both cases you will need to initialize the commands beforehand:
+
+#### __[C#] Example 5: Initializing RadDiagramCommands__  
+{{region GridView-Commands-Overview_4}}
+	public MainPage()
+	{
+	    ICommand deleteCommand = RadGridViewCommands.Delete;
+	    ICommand beginInsertCommand = RadGridViewCommands.BeginInsert;
+	    ICommand cancelRowEditCommand = RadGridViewCommands.CancelRowEdit;
+	    ICommand commitEditCommand = RadGridViewCommands.CommitEdit;
+	    InitializeComponent();
+	}
+{{endregion}}
+{% endif %}

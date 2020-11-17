@@ -21,7 +21,7 @@ We will create two classes, which will serve as our models: Customer and Order, 
 #### __[C#] Example 1: Defining the Models and DbContext__
 {{region cs-entityframeworkcore-mvvm-usage-0}}
 
-	public class Customer
+    public class Customer
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -49,8 +49,7 @@ We will create two classes, which will serve as our models: Customer and Order, 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // You might need to update the connection string to suit the setup on your machine
-            optionsBuilder
-   .UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=CustomerDB;Integrated security=true");
+            optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=CustomerDB;Integrated security=true");
         }
 
         public DbSet<Customer> Customers { get; set; }

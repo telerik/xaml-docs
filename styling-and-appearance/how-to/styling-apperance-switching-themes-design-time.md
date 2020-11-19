@@ -1,7 +1,7 @@
 ---
 title: Switching Themes at Design-time
 page_title: Switching Themes at Design-time
-description: Switching Themes at Design-time
+description: Switching Themes at Design-time.
 slug: styling-apperance-swiching-themes-design-time
 tags: styling,apperance,switch,switching,theme,themes,time,design,design-time,vs
 published: True

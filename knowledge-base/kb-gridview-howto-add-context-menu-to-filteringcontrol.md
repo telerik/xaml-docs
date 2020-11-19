@@ -1,6 +1,6 @@
 ---
 title: How to Add Context Menu to RadGridView FilteringControl 
-description: Implement a context menu for TextBox elements inside the FilteringControl 
+description: Implement a context menu for TextBox elements inside the FilteringControl. 
 type: how-to
 page_title: Showing a Context Menu for Elements Inside the FilteringControl 
 slug: kb-gridview-howto-add-context-menu-to-filteringcontrol

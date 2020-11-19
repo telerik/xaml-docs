@@ -1,6 +1,6 @@
 ---
 title: Show Clustering Bubble For Single Item in RadMap
-description: Display Single Item As Clustered
+description: Display Single Item As Clustered.
 type: how-to
 page_title: Create a group of one item
 slug: kb-map-howto-show-clustering-bubble-for-single-item

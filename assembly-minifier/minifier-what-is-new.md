@@ -1,7 +1,7 @@
 ---
 title: What is New
 page_title: What is New
-description: What is New
+description: What is New.
 slug: minifier-what-is-new
 tags: what,is,new
 published: True

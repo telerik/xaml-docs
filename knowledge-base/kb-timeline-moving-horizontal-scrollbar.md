@@ -1,6 +1,6 @@
 ---
 title: How to Control RadTimeline Horizontal Scroll Manually
-description: Scrolling timeline horizontal ScrollViewer ScrollBar programmatically
+description: Scrolling timeline horizontal ScrollViewer ScrollBar programmatically.
 page_title: Moving RadTimeLine Horizontal ScrollBar
 type: how-to
 slug: kb-timeline-moving-horizontal-scrollbar

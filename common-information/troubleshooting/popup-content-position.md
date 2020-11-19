@@ -1,7 +1,7 @@
 ---
 title: Popup Content Position
 page_title: Popup Content Position
-description: Popup Content Position
+description: Popup Content Position.
 slug: troubleshooting-popup-content-position
 tags: popup, ribbonview, content, position, troubleshooting
 published: True

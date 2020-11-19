@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: Touch Support
+description: Touch Support.
 slug: touch-support
 tags: touch,support
 published: True

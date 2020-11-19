@@ -1,7 +1,7 @@
 ---
 title: In-Memory Data
 page_title: In-Memory Data
-description: In-Memory Data
+description: In-Memory Data.
 slug: consuming-data-in-memory-data
 tags: in-memory,data
 published: True

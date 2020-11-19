@@ -1,7 +1,7 @@
 ---
 title: Office2016Touch Theme
 page_title: Office2016Touch Theme
-description: Office2016Touch Theme
+description: Office2016Touch Theme.
 slug: common-styling-appearance-office2016touch-theme
 tags: office2016touch,theme,dynamic,fontsize,fontfamily
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Persist the Selection of the RadGridView when it is Paged
-description: Prevent the Loss of the Selected Items of the RadGridView while Changing Pages
+description: Prevent the Loss of the Selected Items of the RadGridView while Changing Pages.
 type: howto
 page_title: Preserve the Selected Rows when a RadDataPager is Used
 slug: kb-gridview-howto-datapager-persist-selection

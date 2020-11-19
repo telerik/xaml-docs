@@ -1,6 +1,6 @@
 ---
 title: Missing Properties or Exception After Automatic Template Extraction
-description: Item Controls are Missing or Error is Thrown When Extracted Style is Used
+description: Item Controls are Missing or Error is Thrown When Extracted Style is Used.
 type: troubleshooting
 page_title: No Controls When Custom Template is Applied
 slug: kb-common-missing-properties-or-exception-after-template-extraction

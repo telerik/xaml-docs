@@ -1,7 +1,7 @@
 ---
 title: Dynamo DB 
 page_title: Dynamo DB 
-description: Dynamo DB
+description: Dynamo DB.
 slug: cloud-services/aws/dynamodb
 tags: cloud,aws,dynamodb
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Color Theme Generator
 page_title: Color Theme Generator
-description: Color Theme Generator
+description: Color Theme Generator.
 slug: common-styling-color-theme-generator
 tags: theme, color, generator
 published: True

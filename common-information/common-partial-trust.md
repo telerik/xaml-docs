@@ -1,7 +1,7 @@
 ---
 title: Partial Trust Support
 page_title: Partial Trust Support
-description: Partial Trust Support
+description: Partial Trust Support.
 slug: common-partial-trust
 tags: partial,trust
 published: True

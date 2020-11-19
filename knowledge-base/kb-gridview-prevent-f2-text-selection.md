@@ -1,6 +1,6 @@
 ---
 title: F2 Should not Select All Text in RadGridView Cell
-description: Disable the text selection when a cell enters edit mode by pressing the F2 key
+description: Disable the text selection when a cell enters edit mode by pressing the F2 key.
 type: how-to
 page_title: Prevent F2 Key Text Selection When Cell is in Edit Mode
 slug: kb-gridview-prevent-f2-text-selection

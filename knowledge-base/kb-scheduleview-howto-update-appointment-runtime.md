@@ -1,6 +1,6 @@
 ---
 title: How to change an appointment property during runtime
-description: Dynamically update appointment in RadScheduleView
+description: Dynamically update appointment in RadScheduleView.
 type: how-to
 page_title: Change the property of an appointment during runtime
 slug: kb-scheduleview-howto-update-appointment-runtime

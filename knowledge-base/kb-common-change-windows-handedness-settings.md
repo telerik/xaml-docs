@@ -1,7 +1,7 @@
 ---
 title: Change Windows Handedness Settings in Code Behind
 page_title: How to change Windows Tablet PC Handedness Settings
-description: Change where the Popup menus appear on the screen by setting SystemParameters.MenuDropAlignment
+description: Change where the Popup menus appear on the screen by setting SystemParameters.MenuDropAlignment.
 type: how-to
 slug: kb-common-change-windows-handedness-settings
 position: 0

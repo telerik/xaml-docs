@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Overview.
 slug: cloud-integration-azure-overview
 tags: crud,operations,radgridview,cosmosdb
 published: True

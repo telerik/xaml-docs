@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: This section defines terms and concepts used in the scope of RadBook you have to get familiar with prior to continue reading this help
+description: This section defines terms and concepts used in the scope of RadBook you have to get familiar with prior to continue reading this help.
 slug: radbook-visual-structure
 tags: visual,structure
 published: True

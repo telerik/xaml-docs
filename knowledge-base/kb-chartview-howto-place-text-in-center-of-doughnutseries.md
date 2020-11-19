@@ -1,6 +1,6 @@
 ---
 title: How to place text in doughnut series center
-description: Add a label in the center of a DoughnutSeries
+description: Add a label in the center of a DoughnutSeries.
 page_title: Include text in the middle of the doughnut inside a doughnut series
 type: how-to
 slug: kb-chartview-howto-place-text-in-center-of-doughnutseries

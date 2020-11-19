@@ -1,7 +1,7 @@
 ---
 title: Consuming Web (asmx) Service
 page_title: Consuming Web (asmx) Service
-description: Consuming Web (asmx) Service
+description: Consuming Web (asmx) Service.
 slug: consuming-data-web-asmx-service
 tags: consuming,web,(asmx),service
 published: True

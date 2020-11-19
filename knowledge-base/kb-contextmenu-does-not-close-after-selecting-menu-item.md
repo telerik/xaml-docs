@@ -1,6 +1,6 @@
 ---
 title: RadContextMenu Does not Close after Displaying Dialog Window
-description: After selecting an item from the RadContextMenu, it remains open
+description: After selecting an item from the RadContextMenu, it remains open.
 type: troubleshooting
 page_title: RadContextMenu Stays Open after Selecting a Menu Item
 slug: kb-contextmenu-does-not-close-after-selecting-menu-item

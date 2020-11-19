@@ -1,7 +1,7 @@
 ---
 title: How to Center the Zoom on the Selected Items
 page_title: Zoom in the region of the Selected Shapes
-description: How to Center the Zoom on the Selection
+description: How to Center the Zoom on the Selection.
 type: how-to
 slug: kb-diagram-howto-zoom-in-selection
 position: 0

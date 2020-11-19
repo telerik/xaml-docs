@@ -1,6 +1,6 @@
 ---
 title: How to Remove Empty Space in PropertyGrid
-description: Remove the white space and gray area showed on the bottom of RadPropertyGrid
+description: Remove the white space and gray area showed on the bottom of RadPropertyGrid.
 type: how-to
 page_title: Clear Empty Area on the Bottom of the Control
 slug: kb-propertygrid-remove-empty-space-on-bottom

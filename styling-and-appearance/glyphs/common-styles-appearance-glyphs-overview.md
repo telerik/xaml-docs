@@ -1,7 +1,7 @@
 ---
 title: Font Glyphs Overview
 page_title: Font Glyphs Overview
-description: Font Glyphs Overview
+description: Font Glyphs Overview.
 slug: common-styling-appearance-glyphs-overview
 tags: glyphs, telerikwebui, office2016, fonts, foregrounds, text, icons
 published: True

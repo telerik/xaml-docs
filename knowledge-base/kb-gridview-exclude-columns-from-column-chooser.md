@@ -1,6 +1,6 @@
 ---
 title: Exclude Columns from Column Chooser
-description: Remove columns from the column chooser in the control panel
+description: Remove columns from the column chooser in the control panel.
 type: how-to
 page_title: Provide a Limited Set of Columns in the Control Panel
 slug: kb-gridview-exclude-columns-from-column-chooser

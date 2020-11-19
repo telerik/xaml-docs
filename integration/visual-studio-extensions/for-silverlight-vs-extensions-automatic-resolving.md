@@ -1,7 +1,7 @@
 ---
 title: Automatic Dependency Resolving
 page_title: Automatic Dependency Resolving
-description: Automatic Dependency Resolving
+description: Automatic Dependency Resolving.
 slug: radcontrols-for-silverlight-vs-extensions-automatic-resolving
 tags: automatic,dependency,resolving
 published: True

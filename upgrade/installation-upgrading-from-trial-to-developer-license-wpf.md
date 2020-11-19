@@ -1,7 +1,7 @@
 ---
 title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
 page_title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
-description: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
+description: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version.
 slug: installation-upgrading-from-trial-to-developer-license-wpf
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
 published: True

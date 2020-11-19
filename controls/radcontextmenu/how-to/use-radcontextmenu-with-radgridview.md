@@ -1,7 +1,7 @@
 ---
 title: Use RadContextMenu within RadGridView
 page_title: Use RadContextMenu within RadGridView
-description: This article demonstrates how to use RadContextMenu within a RadGridView control
+description: This article demonstrates how to use RadContextMenu within a RadGridView control.
 slug: radcontextmenu-how-to-use-radcontextmenu-with-radgridview
 tags: use,radcontextmenu,with,a,radgridview
 published: True

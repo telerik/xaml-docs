@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export
-description: Export to PDF
+description: Export to PDF.
 slug: radchartview-export
 tags: export, pdf, radchartview, chartview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: How to Change RadColorPicker Palette Header Background Color
 page_title: Modify the Brush of RadColorPicker Palette Header Background
-description: Replace ColorPicker Palette Header Background Color
+description: Replace ColorPicker Palette Header Background Color.
 type: how-to
 slug: kb-colorpicker-change-palette-background-color
 position: 0

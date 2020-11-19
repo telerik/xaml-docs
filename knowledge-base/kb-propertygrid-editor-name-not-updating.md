@@ -1,6 +1,6 @@
 ---
 title: Propertygrid's collection editor name property not updating
-description: RadCollectionEditor name doesn't change at runtime when used in RadPropertyGrid
+description: RadCollectionEditor name doesn't change at runtime when used in RadPropertyGrid.
 page_title: Data binding collection editor name field to a property from view model
 type: troubleshooting
 slug: kb-propertygrid-editor-name-not-updating

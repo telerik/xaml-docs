@@ -1,6 +1,6 @@
 ---
 title: Remove the Selection Boxes Inside RadMultiColumnComboBox
-description: How to remove the selection boxes of RadMultiColumnComboBox
+description: How to remove the selection boxes of RadMultiColumnComboBox.
 type: how-to
 page_title: Create consistent display with RadComboBox.
 slug: kb-multicolumncombobox-howto-remove-selection-box

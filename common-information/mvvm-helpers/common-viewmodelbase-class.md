@@ -1,7 +1,7 @@
 ---
 title: ViewModelBase
 page_title: ViewModelBase Class
-description: ViewModelBase
+description: ViewModelBase.
 slug: common-viewmodelbase-class
 tags: ViewModelBase
 published: True

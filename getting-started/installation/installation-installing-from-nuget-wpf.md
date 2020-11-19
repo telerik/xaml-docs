@@ -1,7 +1,7 @@
 ---
 title: Installing UI for WPF from a NuGet package
 page_title: Installing UI for WPF from a NuGet package
-description: This article describes how to use the telerik NuGet server or setup a local package source to download UI for WPF dlls from NuGet packages
+description: This article describes how to use the telerik NuGet server or setup a local package source to download UI for WPF dlls from NuGet packages.
 slug: installation-installing-from-nuget-wpf
 tags: installing,ui,for,wpf,from,a,nuget,package
 published: True

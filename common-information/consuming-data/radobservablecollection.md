@@ -1,7 +1,7 @@
 ---
 title: RadObservableCollection and ObservableItemCollection
 page_title: RadObservableCollection and ObservableItemCollection
-description: RadObservableCollection and ObservableItemCollection
+description: RadObservableCollection and ObservableItemCollection.
 slug: consuming-data-radobservablecollection
 tags: radobservablecollection, observableitemcollection
 published: True

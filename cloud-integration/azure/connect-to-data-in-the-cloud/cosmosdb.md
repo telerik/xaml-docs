@@ -1,7 +1,7 @@
 ---
 title: Cosmos DB
 page_title: Cosmos DB
-description: Integration between Cosmos DB and RadGridView
+description: Integration between Cosmos DB and RadGridView.
 slug: cloud-integration-cosmosdb
 tags: cloud,integration,radgridview,cosmosdb
 published: True

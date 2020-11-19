@@ -1,6 +1,6 @@
 ---
 title: How to Show Only Month in Calendar Header of RadDateTimePicker
-description: Display month without year in the RadDateTimePicker and RadDatePicker controls
+description: Display month without year in the RadDateTimePicker and RadDatePicker controls.
 page_title: Show Selected Month in Calendar Part of DateTimePicker
 type: how-to
 slug: kb-datetimepicker-show-only-month-in-calendar-header

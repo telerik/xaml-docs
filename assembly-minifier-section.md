@@ -1,7 +1,7 @@
 ---
 title: Assembly Minifier
 page_title: Assembly Minifier
-description: Assembly Minifier
+description: Assembly Minifier.
 slug: assembly-minifier-section
 tags: assembly,minifier
 published: True

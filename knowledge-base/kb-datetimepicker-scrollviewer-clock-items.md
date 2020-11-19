@@ -1,6 +1,6 @@
 ---
 title: Show ScrollViewer for the Time Display Items of RadDateTimePicker
-description: Enable vertical scroll bar when no space for the clock items of RadDateTimePicker
+description: Enable vertical scroll bar when no space for the clock items of RadDateTimePicker.
 type: how-to
 page_title: Have a scrollbar in the time interval dropdown display 
 slug: kb-datetimepicker-show-scrollviewer-for-the-clock-items

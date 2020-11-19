@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Overview.
 slug: consuming-data-overview
 tags: overview
 published: True

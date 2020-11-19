@@ -1,7 +1,7 @@
 ---
 title: Which File Do I Need to Install?
 page_title: Which File Do I Need to Install?
-description: Which File Do I Need to Install?
+description: Which File Do I Need to Install?.
 slug: installation-installing-which-file-do-i-need
 tags: which,file,do,i,need,to,install?
 published: True

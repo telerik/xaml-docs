@@ -1,7 +1,7 @@
 ---
 title: Glyphs Reference Sheet
 page_title: Glyphs Reference Sheet
-description: Glyphs Reference Sheet
+description: Glyphs Reference Sheet.
 slug: common-styling-appearance-glyphs-reference-sheet
 tags: glyphs,telerikwebui,office2016,fonts,foregrounds,text,icons,reference,sheet
 published: True

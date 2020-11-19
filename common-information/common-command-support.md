@@ -1,7 +1,7 @@
 ---
 title: Command Support
 page_title: Command Support
-description: Command Support
+description: Command Support.
 slug: common-command-support
 tags: command,support
 published: True

@@ -26,7 +26,7 @@ Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButto
 
 ## Automatically Size the MenuItems
 
-Since the __R1 2021__ release, the RadRadialMenu can autosize its items. This enables the option of defining more than 
+Since the __R1 2021__ release, the RadRadialMenu can auto-size its items. This enables the option of defining more than 
 8 items per level. In order to turn on this feature, set the __AutoSizeMenuItems__ property of the RadRadialMenu to __True__.
 
 #### __[XAML] Example 2: Setting the AutoSizeMenuItems property__
@@ -53,7 +53,7 @@ Since the __R1 2021__ release, the RadRadialMenu can autosize its items. This en
 	</telerik:RadRadialMenu>
 {{endregion}}
 
-> When the __AutoSizeMenuItems__ property is __True__, menu items on all levels will be auto sized. If you want to dynamically control this, you can handle the [Navigating]({%slug radradialmenu-events-overview%}#navigating) event and set the __AutoSizeMenuItems__ property of the event arguments.
+> When the __AutoSizeMenuItems__ property is __True__, menu items on all levels will be auto-sized. If you want to dynamically control this, you can handle the [Navigating]({%slug radradialmenu-events-overview%}#navigating) event and set the __AutoSizeMenuItems__ property of the event arguments.
 
 #### __Figure 1: RadRadialMenu with Autosized Items__
 ![RadRadialMenu with autosized items](images/RadRadialMenu_AutoSizeMenuItems.png)

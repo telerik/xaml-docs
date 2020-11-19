@@ -46,7 +46,7 @@ Available, since the __R1 2021__ release and occurs before a menu level changes.
 
 * __RadialMenuNavigatingEventArgs__ object, which exposes the following properties:
 
-	* __IsNavigatingBack__: A boolean property, which indicates whether the user is navigating backwards. 
+	* __IsNavigatingBack__: A boolean property, which indicates whether the user is navigating backward. 
 
 	* __MenuItemSource__: Gets the menu item from which the navigation started, if there is one.
 
@@ -59,7 +59,7 @@ Available, since the __R1 2021__ release and occurs before a menu level changes.
 {{region cs-radradialmenu-events-overview_0}}
 	private void RadRadialMenu_Navigating(object sender, Controls.RadialMenuNavigatingEventArgs e)
 	{
-		// Autosize menu items only when they are more than 2
+		// Auto-size menu items only when they are more than 2
 		if (e.MenuItemTarget != null && e.MenuItemTarget.ChildItems.Count <= 2)
 		{
 			e.AutoSizeMenuItems = false;

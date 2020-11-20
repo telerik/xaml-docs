@@ -13,8 +13,9 @@ position: 1
 The __ExpandDirection__ property gets or sets the direction in which the content would expand. This property is an enumeration which exposes four values: __Down, Left, Right, Up__.
 
 #### __[XAML] Example 1: Setting ExpandDirection property__
-{{region radexpander-features-expand_direction_0}}
-   <Grid>
+
+{{region xaml-radexpander-features-expand_direction_0}}
+	<Grid>
 		<telerik:RadExpander Width="200" Height="200"
 							ExpandDirection="Down" Background="Bisque"
 							Header="ExpandDirection Down">

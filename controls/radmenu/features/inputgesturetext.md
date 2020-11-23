@@ -44,14 +44,11 @@ The following example demonstrates the use of the __InputGestureText__ property:
 	</telerik:RadMenu>
 {{endregion}}
 
-And here is a snapshot of the result.
-
 ![Rad Menu-Features-Input Gesture Text-01](images/RadMenu_Features_InputGestureText_01.png)
 
-## See Also
+The InputGestureText property __does not associate the input gesture with the menu item__. Instead it only includes text to the menu item. The project should implement the user input in order to execute an action. To make the described gesture work, you can add an [InputBinding](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keybinding?view=netframework-4.5) to the RadMenu with the same gesture as the one described with the InputGestureText. 
 
+## See Also  
  * [Commands]({%slug radmenu-features-commands%})
-
  * [Menu Items]({%slug radmenu-features-menuitems%})
-
  * [Icons]({%slug radmenu-features-icons%})

@@ -50,18 +50,18 @@ This article will list the key properties provided by the __CalloutPopupSettings
  
 * __Placement__: A property of type __PlacementMode__ that gets or sets the placement of the Popup host. The __PlacementMode__ is an enumeration and it allows the following values:
 
-	* __Absolute__: The Popup will be position in the top-left corner of the __screen__. If the screen edge obscures the Popup, the control then repositions itself to align with the edge.
-	* __Relative__: The Popup will be position in the top-left corner of the __PlacementTarget__ element.
+	* __Absolute__: The Popup will be positioned in the top-left corner of the __screen__. If the screen edge obscures the Popup, the control then repositions itself to align with the edge.
+	* __Relative__: The Popup will be positioned in the top-left corner of the __PlacementTarget__ element.
 	* __Bottom__: The Popup control will align its upper/left edge with the lower/left edge of the __PlacementTarget__ element.
 	* __Center__: The Popup control will be centered over the PlacementTarget element.
 	* __Right__: The Popup control will align its left/upper edge with the right/upper edge of the __PlacementTarget__ element.
-	* __AbsolutePoint__: The Popup will be position in the top-left corner of the __screen__. If the screen edge obscures the Popup, the control extends opposite the axis defined by the HorizontalOffset or VerticalOffset property.
+	* __AbsolutePoint__: The Popup will be positioned in the top-left corner of the __screen__. If the screen edge obscures the Popup, the control extends opposite the axis defined by the HorizontalOffset or VerticalOffset property.
 	* __RelativePoint__: The Popup control will align its upper/left edge with the lower/left edge of the __PlacementTarget__ element. If the screen edge obscures the Popup, the control extends opposite the axis defined by the HorizontalOffset or VerticalOffset property.
 	* __Mouse__: The Popup control will align with the lower edge of the mouse's bounding box and align its left edge with the left edge of the mouse's bounding box.
 	* __MousePoint__: The Popup control will be placed in position relative to the tip of the mouse cursor.
 	* __Left__: The Popup control will align its right edge with the left edge of the __PlacementTarget__ and align its upper edge with the upper edge of the __PlacementTarget__ element.
 	* __Top__: The Popup control will align its lower edge with the upper edge of the PlacementTarget and align its left edge with the left edge of the PlacementTarget.
-	* __Custom__: The Popup will be position and reposition depending on the CustomPopupPlacementCallback property of the Popup.
+	* __Custom__: The Popup will be positioned and repositioned depending on the __CustomPopupPlacementCallback__ property of the Popup.
 		
 * __AutoCenter__: A __boolean__ property that gets or sets a value indicating whether the Popup will be auto-centered to the placement target. By default, this behavior is enabled and will offset the control so that it is centered to its target. The RadCallout can be additionally offset by using the following properties.
 

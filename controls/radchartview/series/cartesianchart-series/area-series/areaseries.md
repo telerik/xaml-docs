@@ -104,7 +104,8 @@ You can see how to style area series using different properties in the [AreaSeri
 
 Additionally, you can use the Palette property of the chart to change the colors of the AreaSeries on a global scale. You can find more information about this feature in the [Palettes]({%slug radchartview-features-palettes-introduction%}) section in our help documentation.
 
-## See Also
+## See Also  
+ * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})
  * [Line Series Overview]({%slug radchartview-series-lineseries%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

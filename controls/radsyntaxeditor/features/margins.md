@@ -59,7 +59,7 @@ __Example 1__ demonstrates how you can add some custom elements around the RadSy
 
 With the **2020.3.1130** [internal build]({%slug installation-installing-lib%}), you can add **indicators** to particular lines of the RadSyntaxEditor control by using the new **IndicatorsMargin&lt;T&gt;** class.
 
-The generic type parameter **T** determines the type of the created object which must be a **FrameworkElement**. The class also exposes a **UpdateIndicator** method in which you can set the properties of the created indicator element. You can also conditionally style the element as the method also provides the **line number** for the corresponding to the line that the indicator is drawn on.
+The generic type parameter **T** determines the type of the created object which must be a **FrameworkElement**. The class also exposes a **UpdateIndicator** method in which you can set the properties of the created indicator element. You can also conditionally style the element as the method also provides the **line number** corresponding to the line that the indicator is drawn on.
 
 The class inherits from the abstract **IndicatorsMarginBase** class which defines the **IndicatorBrush** property used to control the background of the margin and the **Indicators** property which holds a **collection of integers** corresponding to the lines which include an indicator element.
 
@@ -141,7 +141,7 @@ You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
     this.syntaxEditor.Margins.ScrollableLeft.Insert(0, this.bookmarksMargin);
 {{endregion}}
 
-**Figure 2** shows the final result after some breakpoints have been added.
+**Figure 2** shows the final result after some bookmarks have been added.
 
 #### __Figure 2: The bookmarks margin__
 ![The bookmarks margin](images/syntaxeditor-margins-2.png)

@@ -307,6 +307,8 @@ The __ChartScaleAnimation__ animates the size of the series and their points. Yo
 
 ### Pie Chart Angle Range Animation
 
+> The __PieChartAngleRangeAnimation__ build-in animation will animate the __AngleRange__ property of the PieSeries and needs to be set to __SeriesAnimation__ property.
+
 The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the PieSeries. It animates simultaneously the __StartAngle__ and __SweepAngle__ properties of the __AngleRange__. The __StartAngle__ specifies the start angle from which the arc starts and the __SweepAngle__ specifies the angle that defines the length of the arc. Their default value is __(0,360)__. The first animation will animates the rotation of the pie starting from __InitialStartAngle(-90)__  to  __StartAngle(0)__  and second animation will animate the unroll of the series staring from __InitialSweepAngle(0)__  to __SweepAngle(360)__.
 
 * __InitialStartAngle:__ A property of type __double__ that gets or sets the initial value of the start angle. Default value is __-90__.
@@ -336,6 +338,8 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 ![](images/radchartview-features-animations-pie-angle-range-animation.gif)
 
 ### Pie Chart Radius Factor Animation
+
+>The __PieChartRadiusFactorAnimation__ build-in animation will animate the __RadiusFactor__ property of the PieSeries and needs to be set to __SeriesAnimation__ property.
 
 The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of the PieSeries. The animation stars from 0 to the value of the __RadiusFactor__ property.
 

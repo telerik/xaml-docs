@@ -12,7 +12,7 @@ position: 3
 
 The __DataTemplateSelector__ approach enables conditional selection of __DataTemplates__, based on information provided by the respective bound data item.
 
-{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/gridview-template-selectors-overview.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/gridview-template-selectors-overview.html){% endif %} is an article that provides some additional, more extensive information on __DataTemplateSelectors__.
+Read more about __DataTemplateSelectors__ in the [Template Selectors]({%slug gridview-template-selectors-overview%}) article.
 
 ## DataTemplateSelectors in RadPropertyGrid
 
@@ -20,7 +20,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 #### __[C#] Example 1: Creating custom DataTemplateSelector__
 
-	{{region cs-radpropertygrid-datatemplateselector_1}}
+{{region cs-radpropertygrid-datatemplateselector_1}}
 	public class Customer
 	{
 	    public string FirstName { get; set; }
@@ -52,7 +52,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 #### __[VB.NET] Example 1: Creating custom DataTemplateSelector__
 
-	{{region vb-radpropertygrid-datatemplateselector_1}}
+{{region vb-radpropertygrid-datatemplateselector_1}}
 	Public Class Customer
 	    Public Property FirstName() As String
 	    Public Property LastName() As String
@@ -94,7 +94,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 
 #### __[XAML] Example 2: Defining custom DataTemplateSelector__
 
-	{{region xaml-radpropertygrid-datatemplateselector_0}}
+{{region xaml-radpropertygrid-datatemplateselector_0}}
 			<Grid>
 			    <Grid.Resources>
 			        <local:FieldTemplateSelector x:Key="DataTemplateSelector">
@@ -114,7 +114,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 			    </Grid.Resources>
 			    <telerik:RadPropertyGrid x:Name="rpg" EditorTemplateSelector="{StaticResource DataTemplateSelector}" />
 			</Grid>
-	{{endregion}}
+{{endregion}}
 
 >You might wonder where these "telerik" and "local", in front of the tags RadPropertyGrid and __FieldTemplateSelector__, came from. Well, these are the names of the namespaces you give when you import the appropriate assembly or your custom __DataTemplateSelector__ class into the XAML file.
 

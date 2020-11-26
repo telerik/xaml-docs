@@ -31,7 +31,7 @@ Make it possible to add breakpoints to the RadSyntaxEditor control.
 
 **1.** Create a custom **IndicatorsMargin&lt;Ellipse&gt;** to hold the breakpoints collection as shown in **Example 1**.
 
-#### __[C#] Example 1: Creating a Custom CSharpTagger__
+#### __[C#] Example 1: Creating a Custom IndicatorsMargin__
 {{region cs-kb-syntaxeditor-how-to-add-breakpoints-margin-0}}
 
     public class BreakpointsMargin : IndicatorsMargin<Ellipse>

@@ -118,9 +118,9 @@ In order to ensure that all commands will be executed in the correct sequence, i
 
 ## Using RadGridViewCommands in CellTemplate
 
-You can use the CellTemplate of the RadGridView columns to include a button in the data cells. The button can execute the one of the RadDiagramCommands. The following example shows how to add a delete button in one of the RadGridView columns.
+You can use the CellTemplate of the RadGridView columns to include a button in the data cells. The button can execute one of the RadGridViewCommands. The following example shows how to add a delete button in one of the RadGridView columns.
 
-#### __[XAML] Example 3: Using RadDiagramCommands.Delete command in column CellTemplate__  
+#### __[XAML] Example 3: Using RadGridViewCommands.Delete command in column CellTemplate__  
 {{region GridView-Commands-Overview_2}}
 	<telerik:GridViewColumn>
 	    <telerik:GridViewColumn.CellTemplate>
@@ -133,11 +133,11 @@ You can use the CellTemplate of the RadGridView columns to include a button in t
 
 The __CommandParameter__ is required in order for the Delete command to remove the concrete row model from the RadGridView's ItemsSource. The binding to the parameter points to the data context of the row.
 
-## Using RadDiagramCommands outside RadGridView
+## Using RadGridViewCommands outside RadGridView
 
-The RadDiagramCommands class can be used also outside of RadGridView. The following example shows how to use the __RadDiagramCommands.CommitEdit__ command in a separate button which saves changes in the the editing cells. 
+The RadGridViewCommands class can be used also outside of RadGridView. The following example shows how to use the __RadGridViewCommands.CommitEdit__ command in a separate button which saves changes in the the editing cells. 
 
-#### __[XAML] Example 4: Using RadDiagramCommands.CommitEdit command outside of RadGridView__  
+#### __[XAML] Example 4: Using RadGridViewCommands.CommitEdit command outside of the RadGridView__  
 {{region GridView-Commands-Overview_3}}
 	<telerik:RadButton Content="Save insert/edit" 
 					   Command="telerik:RadGridViewCommands.CommitEdit" 

@@ -1,7 +1,7 @@
 ---
 title: Project Creation and Configuration
 page_title: Project Creation and Configuration
-description: Project Creation and Configuration
+description: With the new Visual Studio Extensions for Silverlight you can quickly create an application pre-configured to use Telerik UI for Silverlight. .
 slug: radcontrols-for-silverlight-vs-extensions-project-configuration
 tags: project,creation,and,configuration
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Next Steps
 page_title: Next Steps
-description: Next Steps
+description: This article lists some resources to help you better understand of how the controls from the Telerik UI for {{ site.framework_name }} suite work and help you get the most of them.
 slug: getting-started-next-steps
 tags: Next Steps
 published: True

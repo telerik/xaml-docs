@@ -1,7 +1,7 @@
 ---
 title: Analytics Support
 page_title: Analytics Support
-description: Analytics Support
+description: This article explains how to trace certain features of the Telerik UI for {{ site.framework_name }} controls and get statistics about their usage.
 slug: analytics-support
 tags: analytics,support
 published: True

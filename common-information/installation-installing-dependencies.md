@@ -1,7 +1,7 @@
 ---
 title: Controls Dependencies
 page_title: Controls Dependencies
-description: Controls Dependencies
+description: This article describes all the controls from the Telerik UI for Silverlight suite and the assemblies they require when deploying your application.
 slug: installation-installing-controls-dependencies
 tags: controls,dependencies
 published: True

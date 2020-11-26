@@ -1,7 +1,7 @@
 ---
 title: Change Control Appearance
 page_title: Change Control Appearance
-description: Change Control Appearance
+description: This article explains how to customize the appearance of the controls from the Telerik UI for {{ site.framework_name }} suite.
 slug: getting-started-change-control-appearance
 tags: Change Control Appearance
 published: True

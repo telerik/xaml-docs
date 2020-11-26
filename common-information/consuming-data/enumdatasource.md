@@ -1,7 +1,7 @@
 ---
 title: EnumDataSource
 page_title: EnumDataSource
-description: EnumDataSource
+description: The EnumDataSource utility provides an easy way to bind a control to an Enum.
 slug: consuming-data-enumdatasource
 tags: enumdatasource
 published: True

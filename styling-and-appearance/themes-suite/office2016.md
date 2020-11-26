@@ -1,7 +1,7 @@
 ---
 title: Office2016 Theme
 page_title: Office2016 Theme
-description: Office2016 Theme
+description: Achieve an appearance similar to the Microsoft Office 2016 productivity suite by using the Office2016 theme.
 slug: common-styling-appearance-office2016-theme
 tags: office2016,theme,dynamic,fontsize,fontfamily
 published: True

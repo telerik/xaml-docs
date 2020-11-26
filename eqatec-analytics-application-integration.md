@@ -1,7 +1,7 @@
 ---
 title: Telerik Analytics Integration
 page_title: Telerik Analytics Integration
-description: Telerik Analytics Integration
+description: Using Analytics enables you to trace certain features of the controls and get statistics about their usage.
 slug: eqatec-analytics-application-integration
 tags: telerik,analytics,integration
 navigation_visible: False

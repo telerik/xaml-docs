@@ -1,7 +1,7 @@
 ---
 title: Storage (S3) 
 page_title: Storage (S3) 
-description: Storage (S3)
+description: This article demonstrates how one can use the Amazon S3 service from a {{ site.framework_name }} application and manage the uploaded files.
 slug: cloud-services/aws/storage
 tags: cloud,aws,storage
 published: True

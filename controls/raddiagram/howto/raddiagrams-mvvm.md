@@ -31,7 +31,9 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 
 * [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%})
 
-* [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:						
+* [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})
+
+For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:						
 
 	#### __[C#] Example 1: Creating ViewModel__
 	{{region raddiagram-howto-mvvm-0}}

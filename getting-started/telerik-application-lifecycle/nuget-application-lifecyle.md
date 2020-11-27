@@ -10,13 +10,13 @@ position: 1
 
 # Telerik Application Lifecyle Using Nuget Packages
 
-This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing and upgrading an application with referenced Telerik dlls.
+This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 
 The topic shows what is the lifecycle when using the Telerik __nuget packages__ to get dlls. As an alternative, you can use [MSI or Zip files]({%slug msi-or-zip-setup-lifecycle%}), or [Telerik UI for WPF Extension]({%slug vsx-setup-lifecycle%}) as shown in the corresponding articles in this documentation section.
 
 ## Creating a Project
 
-To use the nuget packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
+To use the NuGet packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
 ![](images/msi-or-zip-setup-lifecyle-0.png)
 
@@ -24,15 +24,15 @@ Set a __Project name__ and __Location__ for the project. For this example, we wi
 
 ![](images/msi-or-zip-setup-lifecyle-1.png)
 
-This will create an empty WPF project where you can install the nuget packages.
+This will create an empty WPF project where you can install the NuGet packages.
 
 ![](images/msi-or-zip-setup-lifecyle-2.png)
 
 ## Installing Nugets
 
-This article shows how to connect to the Telerik nuget server but you can also download the packages locally and use them offline. Read more in the [Installing UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%}) article.
+This article shows how to connect to the Telerik NuGet server but you can also download the packages locally and use them offline. Read more in the [Installing UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%}) article.
 
-To setup the Telerik nuget server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/nuget` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section of the nuget article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to login with your *telerik.com* account.
+To setup, the Telerik NuGet server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/nuget` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section of the NuGet article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to login with your *telerik.com* account.
 
 To install a Telerik dll, search for the name of the corresponding assembly in the search bar and then install it in the project.
 
@@ -48,7 +48,7 @@ If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles themi
 
 ## Adding Telerik Controls
 
-After you create the WPF project and install the nugets, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
+After you create the WPF project and install the NuGets, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
 
 #### __[XAML] Example 1: Adding Telerik control in the UI__
 {{region msi-or-zip-setup-lifecycle-0}}
@@ -74,19 +74,19 @@ After you create the WPF project and install the nugets, add any UI and related 
 
 ## Deploying the Application
 
-To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
+To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce, or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
 
 ## Redistributing Telerik Application
 
-There are several rules that should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
+Several rules should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
 
 ## Upgrading the Project
 
-To upgrade the project, open the Nuget package manager in Visual Studio and repeat the approach described in the [Installing Nugets](#installing-nugets) section. When you have the nugets already installed, you can select a newer (or older) version from the drop down menu and use the __Update__ button.
+To upgrade the project, open the Nuget package manager in Visual Studio and repeat the approach described in the [Installing Nugets](#installing-nugets) section. When you have the NuGets already installed, you can select a newer (or older) version from the drop-down menu and use the __Update__ button.
 
 ![](images/nuget-setup-lifecycle-3.png)
 
-At this point, double check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
+At this point, double-check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right-click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
 
 ![](images/msi-or-zip-setup-lifecyle-8.png)
 ![](images/msi-or-zip-setup-lifecyle-9.png)

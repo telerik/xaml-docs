@@ -29,6 +29,8 @@ Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButto
 Since the __R1 2021__ release, the RadRadialMenu can auto-size its items. This enables the option of defining more than 
 8 items per level. In order to turn on this feature, set the __AutoSizeMenuItems__ property of the RadRadialMenu to __True__.
 
+> When the items are auto-sized, the start angle of the first item is automatically calculated. If you want the __StartAngle__ property to be respected in that case, you can set the __AutoCalculateStartAngle__ property to __False__.
+
 #### __[XAML] Example 2: Setting the AutoSizeMenuItems property__
 
 {{region xaml-radradialmenu-features-configuration_1}}

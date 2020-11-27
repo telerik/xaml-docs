@@ -1,7 +1,7 @@
 ---
 title: Use TargetPhysicalFolder
 page_title: Use TargetPhysicalFolder
-description: Use TargetPhysicalFolder
+description: Use TargetPhysicalFolder.
 slug: radupload-how-to-use-targetphysicalfolder-property
 tags: cancel,raduploaditem,deletion
 published: True

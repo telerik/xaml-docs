@@ -1,7 +1,7 @@
 ---
 title: Translation
 page_title: Translation
-description: Translation
+description: Translation.
 slug: cloud-integration-cognitive-services-google-translation
 tags: cloud,integration,google,cognitive,services,translation
 published: True

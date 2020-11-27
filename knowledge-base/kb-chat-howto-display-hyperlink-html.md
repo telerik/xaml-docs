@@ -1,6 +1,6 @@
 ---
 title: How to add a hyperlink in a text message
-description: This article demonstrates how to show HTML formatted text and hyperlinks in RadChat
+description: This article demonstrates how to show HTML formatted text and hyperlinks in RadChat.
 type: how-to
 page_title: Sending a clickable hyperlink in RadChat
 slug: kb-chat-howto-display-hyperlink-html

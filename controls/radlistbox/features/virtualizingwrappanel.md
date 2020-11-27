@@ -1,7 +1,7 @@
 ---
 title: VirtualizingWrapPanel
 page_title: VirtualizingWrapPanel
-description: This article will describe the VirtualizingWrapPanel and how it can be used as an ItemsPanel for a RadListBox
+description: This article will describe the VirtualizingWrapPanel and how it can be used as an ItemsPanel for a RadListBox.
 slug: radlistbox-features-virtualizingwrappanel
 tags: virtualizingwrappanel, itemspanel, listbox
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Telerik Analytics Integration
 page_title: Telerik Analytics Integration
-description: Telerik Analytics Integration
+description: Telerik Analytics Integration.
 slug: eqatec-analytics-application-integration
 tags: telerik,analytics,integration
 navigation_visible: False

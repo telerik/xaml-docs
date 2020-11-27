@@ -1,7 +1,7 @@
 ---
 title: First Steps
 page_title: First Steps
-description: First Steps
+description: First Steps.
 slug: getting-started-first-steps-sl
 tags: get,started,first,steps
 published: True

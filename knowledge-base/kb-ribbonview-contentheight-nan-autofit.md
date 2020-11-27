@@ -1,6 +1,6 @@
 ---
 title: Adjust ribbon view's height to its content
-description: Autofit RadRibbonView content height to the selected item content
+description: Autofit RadRibbonView content height to the selected item content.
 type: how-to
 page_title: Autosize RadRibbonView height to selected tab elements 
 slug: kb-ribbonview-contentheight-nan-autofit

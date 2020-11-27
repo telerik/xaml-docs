@@ -1,6 +1,6 @@
 ---
 title: Virtualization of GridView in RowDetails
-description: How to turn on virtualization in RowDetails RadGridView
+description: How to turn on virtualization in RowDetails RadGridView.
 type: how-to
 page_title: Improve Nested RadGridView Performance
 slug: kb-gridview-howto-rowdetails-virtualization

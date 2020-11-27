@@ -1,7 +1,7 @@
 ---
 title: Google Analytics Integration
 page_title: Google Analytics Integration
-description: Google Analytics Integration
+description: Google Analytics Integration.
 slug: google-analytics-integration
 tags: google,analytics,integration
 published: True

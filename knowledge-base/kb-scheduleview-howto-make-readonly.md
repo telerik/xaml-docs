@@ -1,6 +1,6 @@
 ---
 title: How To Make ScheduleView ReadOnly
-description: How to disable appointments manipulation
+description: How to disable appointments manipulation.
 type: how-to
 page_title: How To Prevent Modification of Appointments 
 slug: kb-scheduleview-howto-make-readonly

@@ -1,7 +1,7 @@
 ---
 title: Content Controls (Structured Document Tags) 
 page_title: Content Controls
-description: This article describes which content controls are supported in RadRichTextBox
+description: This article describes which content controls are supported in RadRichTextBox.
 slug: radrichtextbox-features-content-controls
 tags: content controls, richtextbox
 published: True

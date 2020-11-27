@@ -1,7 +1,7 @@
 ---
 title: Fluent Theme
 page_title: Fluent Theme
-description: Fluent Theme
+description: Fluent Theme.
 slug: common-styling-appearance-fluent-theme
 tags: fluent,theme,acrylic,glyphs,fontsize,fontfamily,shadow
 published: True

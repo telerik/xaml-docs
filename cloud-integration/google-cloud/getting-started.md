@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started
+description: Getting Started.
 slug: cloud-integration-google-getting-started
 tags: cloud,integration,google,getting,started
 published: True

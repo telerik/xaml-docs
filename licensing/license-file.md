@@ -1,7 +1,7 @@
 ---
 title: License File
 page_title: License File
-description: License File
+description: License File.
 slug: license-file
 tags: license
 published: True

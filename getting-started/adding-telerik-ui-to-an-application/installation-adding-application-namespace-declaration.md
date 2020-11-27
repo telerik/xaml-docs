@@ -1,7 +1,7 @@
 ---
 title: Namespace Declaration
 page_title: Namespace Declaration
-description: Namespace Declaration
+description: Namespace Declaration.
 slug: installation-adding-application-namespace-declaration
 tags: namespace,declaration
 published: True

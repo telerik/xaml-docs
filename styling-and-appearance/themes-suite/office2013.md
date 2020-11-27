@@ -1,7 +1,7 @@
 ---
 title: Office2013 Theme
 page_title: Office2013 Theme
-description: Office2013 Theme
+description: Office2013 Theme.
 slug: common-styling-appearance-office2013-theme
 tags: office2013,theme,dynamic,fontsize,fontfamily
 published: True

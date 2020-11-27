@@ -1,6 +1,6 @@
 ---
 title: How to Remove Cell Background Highlighting When Searching as you Type in RadGridView
-description: How to remove the default cell background highlighting when search as you type and replace it with a custom one
+description: How to remove the default cell background highlighting when search as you type and replace it with a custom one.
 type: how-to
 page_title: How to Color Only Found Text Background in RadGridView
 slug: kb-gridview-customize-search-as-you-type-highlighting

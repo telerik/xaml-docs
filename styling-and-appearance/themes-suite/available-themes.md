@@ -1,7 +1,7 @@
 ---
 title: Available Themes
 page_title: Available Themes
-description: Available Themes
+description: Available Themes.
 slug: common-styling-appearance-available-themes
 tags: themes, available
 published: True

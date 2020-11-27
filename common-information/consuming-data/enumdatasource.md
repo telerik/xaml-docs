@@ -1,7 +1,7 @@
 ---
 title: EnumDataSource
 page_title: EnumDataSource
-description: EnumDataSource
+description: EnumDataSource.
 slug: consuming-data-enumdatasource
 tags: enumdatasource
 published: True

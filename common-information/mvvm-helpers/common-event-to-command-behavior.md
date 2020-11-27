@@ -1,7 +1,7 @@
 ---
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
-description: EventToCommandBehavior
+description: EventToCommandBehavior.
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True

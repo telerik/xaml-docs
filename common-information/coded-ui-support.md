@@ -1,7 +1,7 @@
 ---
 title: Coded UI support
 page_title: Coded UI support
-description: Coded UI support
+description: Coded UI support.
 slug: coded-ui-support
 tags: coded,ui,support
 published: True

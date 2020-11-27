@@ -1,6 +1,6 @@
 ---
 title: How To Display 8-bit Grayscale BitmapImage
-description: this topic describes how to display 8-bit grayscale bitmapimage in RadImageEditor control
+description: this topic describes how to display 8-bit grayscale bitmapimage in RadImageEditor control.
 type: how-to
 page_title: Show 8-bit Grayscale BitmapImage Inside RadImageEditor
 slug: kb-imageeditor-show-8bit-grayscale-bitmap

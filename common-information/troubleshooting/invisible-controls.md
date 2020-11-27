@@ -1,7 +1,7 @@
 ---
 title: Missing Controls in the UI
 page_title: Missing Controls in the UI
-description: Missing Controls in the UI
+description: Missing Controls in the UI.
 slug: troubleshooting-invisible-controls
 tags: missing, controls, invisible, troubleshooting
 published: True

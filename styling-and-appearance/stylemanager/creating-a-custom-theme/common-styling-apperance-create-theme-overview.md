@@ -1,7 +1,7 @@
 ---
 title: How to Create a Custom Theme
 page_title: How to Create a Custom Theme
-description: How to Create a Custom Theme
+description: How to Create a Custom Theme.
 slug: common-styling-apperance-create-theme-overview
 tags: creating,a,custom,theme
 published: True

@@ -1,7 +1,7 @@
 ---
 title: UI Automation Support
 page_title: UI Automation Support
-description: UI Automation Support
+description: UI Automation Support.
 slug: common-ui-automation
 tags: ui,automation,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: License Agreement
 page_title: License Agreement
-description: License Agreement
+description: License Agreement.
 slug: license-agreement
 tags: license,agreement
 published: True

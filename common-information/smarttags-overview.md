@@ -1,7 +1,7 @@
 ---
 title: Smart Tags
 page_title: Smart Tags
-description: SmartTags
+description: SmartTags.
 slug: common-smart-tags
 tags: smart, tags
 published: True

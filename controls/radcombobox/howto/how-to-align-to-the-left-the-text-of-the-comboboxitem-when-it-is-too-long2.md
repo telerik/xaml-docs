@@ -1,7 +1,7 @@
 ---
 title: How to left align the text of the ComboBoxItem when it is too long
 page_title: How to align to the left the text of the ComboBoxItem when it is too long
-description: How to align to the left the text of the ComboBoxItem when it is too long
+description: How to align to the left the text of the ComboBoxItem when it is too long.
 slug: radcombobox-how-to-align-to-the-left-the-text-of-the-comboboxitem-when-it-is-too-long2
 tags: how,to,align,to,the,left,the,text,of,the,comboboxitem,when,it,is,too,long
 published: True

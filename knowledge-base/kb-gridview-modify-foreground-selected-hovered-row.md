@@ -1,6 +1,6 @@
 ---
 title: Modify Foreground of Selected/Hovered GridViewRow
-description: Change Foreground of the cells when a row is selected or mouseovered
+description: Change Foreground of the cells when a row is selected or mouseovered.
 type: how-to
 page_title: Update the Foreground of a row, which is Selected or Hovered
 slug: kb-gridview-modify-foreground-selected-hovered-row

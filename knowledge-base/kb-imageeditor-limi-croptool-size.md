@@ -1,6 +1,6 @@
 ---
 title: How to Set the Min and Max Crop Size for the Image in RadImageEditor
-description: How to define the minimum and maximum size for the CropTool
+description: How to define the minimum and maximum size for the CropTool.
 type: how-to
 page_title: How to Limit the crop tool size in RadImageEditor
 slug: kb-imageeditor-limi-croptool-size

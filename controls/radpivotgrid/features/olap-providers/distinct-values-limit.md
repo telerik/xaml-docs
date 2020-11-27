@@ -1,7 +1,7 @@
 ---
 title: Distinct Values Limit
 page_title: Distinct Values Limit
-description: This article shows how to change the distinct values limit in the OlapDataProviders of RadPivotGrid for {{ site.framework_name }}
+description: This article shows how to change the distinct values limit in the OlapDataProviders of RadPivotGrid for {{ site.framework_name }}.
 slug: radpivotgrid-features-distinct-values-limit
 tags: olap,distinct,values,limit,pivotlist
 published: True

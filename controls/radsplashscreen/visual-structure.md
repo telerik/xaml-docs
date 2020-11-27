@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: Visual Structure
-description: 
+description:. 
 slug: radsplashscreen-visual-structure-0
 tags: getting,started,splashscreen,busyindicator,visual,structure
 published: True

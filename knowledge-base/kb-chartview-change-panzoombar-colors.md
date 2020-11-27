@@ -1,6 +1,6 @@
 ---
 title: Change ChartView PanZoomBar Colors
-description: Modify the Style of RadCartesianChart PanZoomBar Brush and Border
+description: Modify the Style of RadCartesianChart PanZoomBar Brush and Border.
 type: how-to
 page_title: Customize the Colors of the Chart Scroller
 slug: kb-chartview-change-panzoombar-colors 

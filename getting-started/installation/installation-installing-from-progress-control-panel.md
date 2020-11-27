@@ -1,7 +1,7 @@
 ---
 title: Installing from Progress Control Panel
 page_title: Installing from Progress Control Panel
-description: Installing from Progress Control Panel
+description: Installing from Progress Control Panel.
 slug: installation-installing-from-progress-control-panel
 tags: installing,from,progress,control,panel
 published: True

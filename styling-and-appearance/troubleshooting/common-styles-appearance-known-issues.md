@@ -1,7 +1,7 @@
 ---
 title: General Known Issues
 page_title: General Known Issues
-description: General Known Issues
+description: General Known Issues.
 slug: common-styles-appearance-troubleshooting-known-issues
 tags: general,known,issues
 published: True

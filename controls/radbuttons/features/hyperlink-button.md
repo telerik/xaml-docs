@@ -1,7 +1,7 @@
 ---
 title: Hyperlink Button
 page_title: Hyperlink Button
-description: RadHyperlink Button
+description: RadHyperlink Button.
 slug: radbuttons-features-hyperlink-button
 tags: hyperlink,button
 published: True

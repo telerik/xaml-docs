@@ -1,6 +1,6 @@
 ---
 title: How to close RadRadialMenu with an outside click
-description: Close RadRadialMenu on lost focus
+description: Close RadRadialMenu on lost focus.
 type: how-to
 page_title: Hide RadRadialMenu if you click outside
 slug: kb-radialmenu-close-menu-when-clicked-outside

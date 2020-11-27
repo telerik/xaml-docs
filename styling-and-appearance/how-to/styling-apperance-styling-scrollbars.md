@@ -1,7 +1,7 @@
 ---
 title: Styling Scrollbars
 page_title: Styling Scrollbars
-description: Styling Scrollbars
+description: Styling Scrollbars.
 slug: styling-apperance-styling-scrollbars
 tags: styling,scrollbars
 published: True

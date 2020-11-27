@@ -1,7 +1,7 @@
 ---
 title: Visual Tree Helpers
 page_title: Visual Tree Helpers
-description: Visual Tree Helpers
+description: Visual Tree Helpers.
 slug: common-visual-tree-helpers
 tags: childrenoftype, parentoftype, visual, tree, helper
 published: True

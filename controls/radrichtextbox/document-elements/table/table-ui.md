@@ -1,7 +1,7 @@
 ---
 title: UI for Working with Tables
 page_title: UI for Working with Tables
-description: UI for Working with Tables
+description: UI for Working with Tables.
 slug: radrichtextbox-tables-ui
 tags: table
 published: True

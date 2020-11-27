@@ -1,7 +1,7 @@
 ---
 title: Switching Icons at Runtime
 page_title: Switching Icons at Runtime
-description: Switching Icons at Runtime
+description: Switching Icons at Runtime.
 slug: styling-apperance-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True

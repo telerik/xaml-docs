@@ -1,7 +1,7 @@
 ---
 title: Adding UI for Silverlight to Visual Studio 2015 Toolbox
 page_title: Adding UI for Silverlight to Visual Studio 2015 Toolbox
-description: Adding UI for Silverlight to Visual Studio 2015 Toolbox
+description: Adding UI for Silverlight to Visual Studio 2015 Toolbox.
 slug: installation-adding-to-vs-2015-toolbox-sl
 tags: adding,ui,for,silverlight,to,visual,studio,2015,toolbox
 published: True

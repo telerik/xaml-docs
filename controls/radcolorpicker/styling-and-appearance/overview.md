@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Styling and Appearance
-description: Styling and Appearance
+description: Styling and Appearance.
 slug: radcolorpicker-appearance-overview
 tags: styling,and,appearance
 published: True

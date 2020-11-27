@@ -1,6 +1,6 @@
 ---
 title: Show desktop alert with message in RadChat
-description: Display alert for sent message in RadChat
+description: Display alert for sent message in RadChat.
 type: how-to
 page_title: Create a popup for new message in ConversationalUI
 slug: kb-chat-showing-message-desktop-alert

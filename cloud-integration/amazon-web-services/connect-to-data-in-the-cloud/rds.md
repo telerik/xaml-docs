@@ -1,7 +1,7 @@
 ---
 title: Relational Database Service 
 page_title: Relational Database Service
-description: Relational Database Service
+description: Relational Database Service.
 slug: cloud-services/aws/rds
 tags: amazon,cloud,rds
 published: True

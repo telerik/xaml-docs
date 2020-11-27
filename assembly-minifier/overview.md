@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Overview.
 slug: assembly-minifier-overview
 tags: overview
 published: True

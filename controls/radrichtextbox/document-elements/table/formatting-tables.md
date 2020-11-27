@@ -1,7 +1,7 @@
 ---
 title: Formatting Tables
 page_title: Formatting Tables
-description: Formatting Tables
+description: Formatting Tables.
 slug: radrichtextbox-formatting-tables
 tags: table
 published: True

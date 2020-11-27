@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-An error with code XLS0503 and message "A Value of Type LineSeries Cannot be Added to Collection or Dictionary of Type PresenterCollection" shown during build of a project where a chart series is defined in XAML. 
+An error with code XLS0503 and message "A Value of Type LineSeries Cannot be Added to Collection or Dictionary of Type PresenterCollection" shown during the build of a project where a chart series is defined in XAML. 
 
 ![](images/kb-chartview-namespace-error-0.png)
 

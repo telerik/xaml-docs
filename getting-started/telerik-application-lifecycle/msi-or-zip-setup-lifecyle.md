@@ -10,7 +10,7 @@ position: 0
 
 # Telerik Application Lifecyle Using MSI or ZIP Installation
 
-This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing and upgrading an application with referenced Telerik dlls.
+This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 
 The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug vsx-setup-lifecycle%}) as shown in the corresponding articles in this documentation section.
 
@@ -42,7 +42,7 @@ If you need to set a [Telerik theme]({%slug common-styling-appearance-available-
 
 ## Adding Telerik Controls
 
-After you create the WPF project and reference the Telerik assemblies, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
+After you create the WPF project and reference the Telerik assemblies, add any UI and related code-behind, models, and styles. This example will show a fundamental setup, including a RadTabControl with few tabs defined in XAML.
 
 #### __[XAML] Example 1: Adding Telerik control in the UI__
 {{region msi-or-zip-setup-lifecycle-0}}
@@ -68,15 +68,15 @@ After you create the WPF project and reference the Telerik assemblies, add any U
 
 ## Deploying the Application
 
-To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
+To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce, or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
 
 ## Redistributing Telerik Application
 
-There are several rules that should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
+Several rules should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
 
 ## Upgrading the Project
 
-To upgrade the project, download the new version of the .msi or the .zip file and install it accordingly. Then remove the old Telerik references from the WPF project and [include the new ones](#referencing-telerik-assemblies). At this point, double check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
+To upgrade the project, download the new version of the .msi or the .zip file and install it accordingly. Then remove the old Telerik references from the WPF project and [include the new ones](#referencing-telerik-assemblies). At this point, double-check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right-click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
 
 ![](images/msi-or-zip-setup-lifecyle-8.png)
 ![](images/msi-or-zip-setup-lifecyle-9.png)

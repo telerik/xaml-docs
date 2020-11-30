@@ -4,7 +4,7 @@ page_title: UI freeze with deep nested grouping
 description: Learn how to troubleshoot a slow response or freeze of the UI when grouping by a number of columns within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-troubleshooting-nested-grouping
 tags: ui,freeze,with,deep,nested,grouping
-published: True
+published: False
 position: 9
 ---
 

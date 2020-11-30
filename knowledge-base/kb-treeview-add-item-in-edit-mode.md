@@ -1,6 +1,6 @@
 ---
 title: Add a new treeview item with a default name in edit mode
-description: Make sure that a newly added item is editable
+description: Make sure that a newly added item is editable.
 type: how-to
 page_title: Add new RadTreeViewItem in edit mode
 slug: kb-treeview-add-item-in-edit-mode

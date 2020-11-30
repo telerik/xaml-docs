@@ -1,6 +1,6 @@
 ---
 title: Selection Color is not Respected when CellStyle or CellStyleSelector is Applied
-description: The selection color of the row is not shown when using a CellStyle or CellStyleSelector
+description: The selection color of the row is not shown when using a CellStyle or CellStyleSelector.
 type: troubleshooting
 page_title: When Using a CellStyle or CellStyleSelector the Selection Color of the Row is not Shown
 slug: kb-gridview-selection-color-is-not-shown-with-cellstyleselector

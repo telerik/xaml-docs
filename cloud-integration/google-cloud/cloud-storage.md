@@ -1,7 +1,7 @@
 ---
 title: Cloud Storage
 page_title: Cloud Storage
-description: Cloud Storage
+description: Cloud Storage.
 slug: cloud-integration-google-cloud-storage
 tags: cloud,integration,google,storage
 published: True

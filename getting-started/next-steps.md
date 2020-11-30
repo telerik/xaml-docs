@@ -1,7 +1,7 @@
 ---
 title: Next Steps
 page_title: Next Steps
-description: Next Steps
+description: Next Steps.
 slug: getting-started-next-steps
 tags: Next Steps
 published: True

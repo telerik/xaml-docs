@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Developer Focused Examples
+description: Developer Focused Examples.
 slug: radnavigationview-sdk-examples
 tags: sdk,examples
 published: True

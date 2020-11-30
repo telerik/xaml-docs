@@ -1,7 +1,7 @@
 ---
 title: Speech-to-Text
 page_title: Speech-to-Text
-description: Speech-to-Text
+description: Speech-to-Text.
 slug: cloud-integration-cognitive-services-speech-to-text
 tags: cloud,integration,azure,cognitive,services,speech,to,text
 published: True

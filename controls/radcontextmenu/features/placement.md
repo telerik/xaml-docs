@@ -59,7 +59,7 @@ Here is an example:
 
 The __PlacementRectangle__ is of type __Rect__ and specifies the position of the __RadContextMenu__. It can be combined with the __Placement__ property.
 
->tipProperties of type __Rect__ cannot be declared in-line because this is not supported by Silverlight. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.          
+>tipProperties of type __Rect__ cannot be declared in-line because this is not supported. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.          
 
 #### __XAML__
 

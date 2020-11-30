@@ -1,7 +1,7 @@
 ---
 title: Using IntelliSense in Visual Studio
 page_title: Using IntelliSense in Visual Studio
-description: Using IntelliSense in Visual Studio
+description: Using IntelliSense in Visual Studio.
 slug: installation-adding-application-using-intellisense-vs
 tags: using,intellisense,in,visual,studio
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started with XAML
 page_title: Getting Started with XAML
-description: Getting Started
+description: Getting Started.
 slug: common-faq
 tags: general, common, faq, getting, started
 published: True

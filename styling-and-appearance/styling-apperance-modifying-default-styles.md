@@ -1,7 +1,7 @@
 ---
 title: Modifying Default Styles
 page_title: Modifying Default Styles
-description: Modifying Default Styles
+description: Modifying Default Styles.
 slug: styling-apperance-modifying-default-styles
 tags: modifying,default,styles
 published: True

@@ -26,7 +26,9 @@ The __NoXaml__ dlls can be found in the __Telerik UI for {{ site.framework_name 
 
 The Xaml dlls contain the same code as the NoXaml ones, but they hold also all the styles and templates of the UI controls, for all themes. This means that they are bigger in size compared to the NoXaml ones.
 
-Using Xaml dlls allows you to set up your project a bit easier and __change the controls UI theme very easily__ by setting a single property. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article.
+Using Xaml dlls allows you to set up your project a bit easier and __set the controls UI theme very easily__ by setting a single property. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article. 
+
+> Application theme change at run-time is supported only by the NoXaml assemblies and Implicit Styles theming mechanism. With Xaml and StyleManager, you can change the theme only per control during the run-time. This is done via the `StyleManager.Theme` attached property. 
 
 ## NoXaml assemblies
 

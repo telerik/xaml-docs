@@ -1,7 +1,7 @@
 ---
 title: Creating an Application and Adding Telerik Controls
 page_title: Creating an Application and Adding Telerik Controls
-description: Creating an Application and Adding Telerik Controls
+description: Creating an Application and Adding Telerik Controls.
 slug: installation-adding-to-application-create-application-and-adding-control
 tags: creating,an,application,and,adding,ui,for
 published: True

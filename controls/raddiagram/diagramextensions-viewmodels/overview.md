@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: DiagramExtensions ViewModels Overview
-description: DiagramExtensions ViewModels Overview
+description: DiagramExtensions ViewModels Overview.
 slug: raddiagram-data-extensionsviewmodels
 tags: diagramextensions,viewmodels
 published: True

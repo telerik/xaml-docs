@@ -1,6 +1,6 @@
 ---
 title: How To Data Bind PieSeries Color
-description: How to data bind a model property to a PieSeries slice color
+description: How to data bind a model property to a PieSeries slice color.
 type: how-to
 page_title: How To Data Bind PieSeries Color
 slug: kb-chartview-databind-pieseries-color

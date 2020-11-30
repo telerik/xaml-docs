@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: Overview.
 slug: radcontrols-for-wpf-vs-extensions-overview-wpf
 tags: overview
 published: True

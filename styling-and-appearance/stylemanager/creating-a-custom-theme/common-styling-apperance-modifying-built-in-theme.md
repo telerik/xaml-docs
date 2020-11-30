@@ -1,7 +1,7 @@
 ---
 title: Modifying a Built-In Theme
 page_title: Modifying a Built-In Theme
-description: Modifying a Built-In Theme
+description: Modifying a Built-In Theme.
 slug: common-styling-apperance-modifying-built-in-theme
 tags: modifying,a,built-in,theme
 published: True

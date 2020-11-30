@@ -1,6 +1,6 @@
 ---
 title: How to Have Infinite Horizontal Scrolling
-description: How to increase VisibleRange while scrolling the TimeRuler part
+description: How to increase VisibleRange while scrolling the TimeRuler part.
 type: how-to
 page_title: Add to the VisibleRange While Scrolling
 slug: kb-ganttview-howto-increase-visiblerange-while-scrolling

@@ -1,7 +1,7 @@
 ---
 title: Material Theme
 page_title: Material Theme
-description: Material Theme
+description: Material Theme.
 slug: common-styling-appearance-material-theme
 tags: material,theme,glyphs,fontsize,fontfamily,shadow
 published: True

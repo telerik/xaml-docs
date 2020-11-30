@@ -1,6 +1,6 @@
 ---
 title: How to Bind the Content in the Header Cell to RadGridView's DataContext
-description: Binding header cell's content to properties in the viewmodel
+description: Binding header cell's content to properties in the viewmodel.
 page_title: Bind Header Cell Content to Properties in the ViewModel
 type: how-to
 slug: kb-gridview-howto-bind-header-cell-content-radgridview-datacontext

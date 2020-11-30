@@ -1,7 +1,7 @@
 ---
 title: Getting Started 
 page_title: Getting Started 
-description: Getting Started
+description: Getting Started.
 slug: cloud-services/aws/getting-started
 tags: cloud, aws
 published: True

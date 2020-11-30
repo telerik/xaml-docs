@@ -1,7 +1,7 @@
 ---
 title: Green Theme
 page_title: Green Theme
-description: Green Theme
+description: Green Theme.
 slug: common-styling-appearance-green-theme
 tags: green,theme,dynamic,fontsize,fontfamily
 published: True

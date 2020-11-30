@@ -1,7 +1,7 @@
 ---
 title: Analytics Support
 page_title: Analytics Support
-description: Analytics Support
+description: Analytics Support.
 slug: analytics-support
 tags: analytics,support
 published: True

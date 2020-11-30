@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Templates
 page_title: Visual Studio Templates
-description: Visual Studio Templates
+description: Visual Studio Templates.
 slug: visual-studio-templates
 tags: visual,studio,templates
 published: True

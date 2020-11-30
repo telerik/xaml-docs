@@ -1,7 +1,7 @@
 ---
-title: Introduction
-page_title: Introduction
-description: Introduction
+title: Complete WPF Controls Documentation
+page_title: Complete WPF Controls Documentation
+description: Easily build next-generation applications with 140+ WPF controls from Telerik. Check the Telerik UI for WPF documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True

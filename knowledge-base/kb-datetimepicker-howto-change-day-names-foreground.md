@@ -1,6 +1,6 @@
 ---
 title: How to change the Foreground of the day short names
-description: Color the day short names differently in RadDateTimePicker or RadCalendar
+description: Color the day short names differently in RadDateTimePicker or RadCalendar.
 type: how-to
 page_title: Change the Foreground of specific calendar buttons
 slug: kb-datetimepicker-howto-change-day-names-foreground

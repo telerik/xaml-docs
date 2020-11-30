@@ -1,7 +1,7 @@
 ---
 title: Crystal Theme
 page_title: Crystal Theme
-description: Crystal Theme
+description: Crystal Theme.
 slug: common-styling-appearance-crystal-theme
 tags: crystal,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True

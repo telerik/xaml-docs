@@ -1,6 +1,6 @@
 ---
 title: How to set the Command property of the button part
-description: Disable only the button part when the CanExecute of the command returns false
+description: Disable only the button part when the CanExecute of the command returns false.
 type: how-to
 page_title: Enable the dropdown part when the CanExecute of the Command is False
 slug: kb-buttons-splitbutton-howto-bind-command-of-button-part

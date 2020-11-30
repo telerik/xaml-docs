@@ -1049,6 +1049,9 @@ navigation:
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
         position: 6
+    "getting-started/telerik-application-lifecycle":
+        title: "Telerik Application Lifecycle"
+        position: 7
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":

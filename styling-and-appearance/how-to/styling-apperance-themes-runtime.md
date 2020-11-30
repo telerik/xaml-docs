@@ -1,7 +1,7 @@
 ---
 title: Switching Themes at Runtime
 page_title: Switching Themes at Runtime
-description: Switching Themes at Runtime
+description: Switching Themes at Runtime.
 slug: styling-apperance-themes-runtime
 tags: switching,themes,at,runtime
 published: True

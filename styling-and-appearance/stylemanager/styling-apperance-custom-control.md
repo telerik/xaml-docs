@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme on a Custom Control
 page_title: Setting a Theme on a Custom Control
-description: Setting a Theme on a Custom Control
+description: Setting a Theme on a Custom Control.
 slug: styling-apperance-custom-control
 tags: setting,a,theme,on,a,custom,control
 published: True

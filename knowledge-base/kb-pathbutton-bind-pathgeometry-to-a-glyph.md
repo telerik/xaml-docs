@@ -1,6 +1,6 @@
 ---
 title: Binding PathGeometry of a RadPathButton to Glyph
-description: How to bind a Glyph to the PathGeometry property of a RadPathButton
+description: How to bind a Glyph to the PathGeometry property of a RadPathButton.
 type: how-to
 page_title: Setting RadPathButton PathGeometry to Glyph
 slug: kb-pathbutton-bind-pathgeometry-to-a-glyph

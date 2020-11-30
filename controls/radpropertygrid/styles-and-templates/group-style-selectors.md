@@ -1,7 +1,7 @@
 ---
 title: Group Style Selector
 page_title: GroupStyleSelector
-description: GroupStyleSelector
+description: GroupStyleSelector.
 slug: radpropertygrid-group-style-selector
 tags: group, style, selector, style-selector
 published: True

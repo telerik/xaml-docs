@@ -1,6 +1,6 @@
 ---
 title: Create Event That is Fired When RepeatButtons are Released
-description: Implement event which is thrown when RepeatButtons are released
+description: Implement event which is thrown when RepeatButtons are released.
 type: how-to
 page_title: Add event thrown when the up or down button is let go
 slug: kb-numericupdown-howto-introduce-event-fired-when-repeatbuttons-are-released

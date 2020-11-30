@@ -1,7 +1,7 @@
 --- 
 title: Properties and Methods
 page_title: Properties and Methods
-description: Properties and Methods
+description: Properties and Methods.
 slug: radrichtextbox-features-api
 tags: table, header, row, repeat
 published: True

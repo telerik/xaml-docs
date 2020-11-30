@@ -1,7 +1,7 @@
 ---
 title: Google Cloud Datastore
 page_title: Google Cloud Datastore
-description: Google Cloud Datastore(NoSQL database)
+description: Google Cloud Datastore(NoSQL database).
 slug: cloud-services-google-cloud-datastore
 tags: cloud,google,datastore
 published: True

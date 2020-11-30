@@ -1,6 +1,6 @@
 title: Events Overview
 page_title: Events Overview
-description: Events Overview
+description: Events Overview.
 slug: radbreadcrumb-events-overview
 tags: events,overview
 published: True

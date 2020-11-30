@@ -1,7 +1,7 @@
 ---
 title: Change Control Appearance
 page_title: Change Control Appearance
-description: Change Control Appearance
+description: Change Control Appearance.
 slug: getting-started-change-control-appearance
 tags: Change Control Appearance
 published: True

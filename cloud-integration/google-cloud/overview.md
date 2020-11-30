@@ -1,7 +1,7 @@
 ---
 title:  Overview
 page_title: Overview
-description: Overview
+description: Overview.
 slug: cloud-integration-google-overview
 tags: google, cloud, integration
 published: True

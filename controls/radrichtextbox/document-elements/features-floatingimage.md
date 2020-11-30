@@ -1,7 +1,7 @@
 ---
 title: Floating Images
 page_title: FloatingImage
-description: FloatingImage
+description: FloatingImage.
 slug: radrichtextbox-features-document-elements-floatingimage
 tags: Image,floating,FloatingImageBlock
 published: True

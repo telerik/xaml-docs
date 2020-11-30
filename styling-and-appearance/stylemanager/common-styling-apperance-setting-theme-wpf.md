@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme with StyleManager
 page_title: Setting a Theme with StyleManager
-description: Setting a Theme with StyleManager
+description: Setting a Theme with StyleManager.
 slug: common-styling-apperance-setting-theme-wpf
 tags: setting,a,theme,with,stylemanager
 published: True

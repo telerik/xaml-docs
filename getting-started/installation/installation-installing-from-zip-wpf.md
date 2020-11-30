@@ -1,7 +1,7 @@
 ---
 title: Installing Telerik UI from ZIP File
 page_title: Installing Telerik UI from ZIP File
-description: Installing Telerik UI from ZIP File
+description: Installing Telerik UI from ZIP File.
 slug: installation-installing-from-zip-wpf
 tags: installing,ui,for,from,zip,file
 published: True

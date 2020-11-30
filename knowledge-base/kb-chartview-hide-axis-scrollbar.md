@@ -1,6 +1,6 @@
 ---
 title: How to Hide the Horizontal/Vertical Scrollbar of RadCartesianChart Axis
-description: Hide the PanZoomBar (scrollbar) element of the RadChartView axis by changing its visibility
+description: Hide the PanZoomBar (scrollbar) element of the RadChartView axis by changing its visibility.
 type: how-to
 page_title: How to Hide the PanZoomBar ScrollBar of RadChartView axis
 slug: kb-chartview-hide-axis-scrollbar

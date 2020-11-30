@@ -1,7 +1,7 @@
 ---
 title: Image Analysis
 page_title: Image Analysis
-description: Image Analysis
+description: Image Analysis.
 slug: cloud-integration-cognitive-services-image-analysis
 tags: cloud,integration,azure,cognitive,services,image,analysis
 published: True

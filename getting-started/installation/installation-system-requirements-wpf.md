@@ -1,7 +1,7 @@
 ---
 title: System Requirements
 page_title: System Requirements
-description: System Requirements
+description: System Requirements.
 slug: installation-system-requirements-wpf
 tags: system,requirements
 published: True

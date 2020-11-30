@@ -1,7 +1,7 @@
 ---
 title: Blob Storage
 page_title: Blob Storage
-description: Blob Storage
+description: Blob Storage.
 slug: cloud-integration-azure-blob-storage
 tags: cloud,integration, radcloudupload,azureprovider
 published: True

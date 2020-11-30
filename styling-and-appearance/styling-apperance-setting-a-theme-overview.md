@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme
 page_title: Setting a Theme 
-description: Setting a Theme 
+description: Setting a Theme. 
 slug: styling-apperance-implicit-styles-overview
 tags: setting,a,theme,(using,implicit,styles)
 published: True

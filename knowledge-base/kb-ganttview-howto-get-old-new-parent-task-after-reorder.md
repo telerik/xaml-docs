@@ -1,6 +1,6 @@
 ---
 title: Get Old and New Parent of a Task after Reordering via Drag and Drop
-description: How to acquire the old and new parent of a task after reorder
+description: How to acquire the old and new parent of a task after reorder.
 type: how-to
 page_title: Acquire Old and New Parent of a GanttTask afer Drag-Drop
 slug: kb-ganttview-howto-get-old-new-parent-task-after-reorder

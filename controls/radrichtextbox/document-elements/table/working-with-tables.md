@@ -1,7 +1,7 @@
 ---
 title: Working with Tables in Code
 page_title: Working with Tables in Code
-description: Working with Tables in Code
+description: Working with Tables in Code.
 slug: radrichtextbox-working-with-tables
 tags: table
 published: True

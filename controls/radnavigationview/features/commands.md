@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description:
+description:.
 slug: radnavigationview-commands
 tags: commands, navigationviewitem
 position: 3

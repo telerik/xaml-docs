@@ -1,7 +1,7 @@
 ---
 title: Drag RadChartView Annotation
 page_title: Move RadCartesianChart GridLineAnnotation with Mouse
-description: Drag RadCartesianChart annotations, like line or area, using the mouse and Conversion API
+description: Drag RadCartesianChart annotations, like line or area, using the mouse and Conversion API.
 type: how-to
 slug: kb-chartview-drag-annotation
 position: 0

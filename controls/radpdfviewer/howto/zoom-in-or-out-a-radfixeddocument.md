@@ -1,7 +1,7 @@
 ---
 title: Zoom In or Out
 page_title: Zoom In or Out a RadFixedDocument
-description: Zoom In or Out a RadFixedDocument
+description: Zoom In or Out a RadFixedDocument.
 slug: radpdfviewer-zoom-in-or-out-a-radfixeddocument
 tags: pdfviewer, zoom, scale, scalefactor
 published: True

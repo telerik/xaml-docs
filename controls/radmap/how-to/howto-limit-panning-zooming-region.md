@@ -1,7 +1,7 @@
 ---
 title: How to restrict panning and zooming region in RadMap
 page_title: How to restrict panning and zooming region in RadMap
-description: Check how to restrict panning and zooming region in RadMap
+description: Check how to restrict panning and zooming region in RadMap.
 slug: radmap-howto-limit-panning-zooming-region
 tags: how,to,restrict,panning,and,zooming,region,in,radmap
 published: True

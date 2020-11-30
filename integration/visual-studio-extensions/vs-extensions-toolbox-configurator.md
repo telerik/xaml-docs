@@ -1,7 +1,7 @@
 ---
 title: Set Toolbox Version
 page_title: Set Toolbox Version
-description: Set Toolbox Version
+description: Set Toolbox Version.
 slug: radcontrols-vs-extensions-toolbox-configurator
 tags: toolbox,configurator
 published: True

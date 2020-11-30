@@ -1,7 +1,7 @@
 ---
 title: Explore Control Features
 page_title: Explore Control Features
-description: Explore Control Features
+description: Explore Control Features.
 slug: getting-started-explore-control-features
 tags: Explore Control Features
 published: True

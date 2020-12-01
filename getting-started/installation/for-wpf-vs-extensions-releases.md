@@ -1,7 +1,7 @@
 ---
 title: Major and Minor releases
 page_title: Major and Minor releases
-description: Major and Minor releases.
+description: This article explains the difference between major and minor releases.
 slug: radcontrols-for-wpf-vs-extensions-releases
 tags: major,and,minor,releases
 published: True

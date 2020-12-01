@@ -1,7 +1,7 @@
 ---
-title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
-page_title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
-description: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version.
+title: Upgrading from Trial to Developer License or to a Newer Version
+page_title: Upgrading from Trial to Developer License or to a Newer Version
+description: The purpose of this article is to explain you how to upgrade Telerik UI Trial to Telerik UI Developer License or a newer version.
 slug: installation-upgrading-from-trial-to-developer-license
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
 published: True
@@ -9,7 +9,7 @@ position: 0
 site_name: Silverlight
 ---
 
-# Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
+# Upgrading from Trial to Developer License or to a Newer Version
 
 The purpose of this topic is to explain you how to upgrade Telerik UI Trial to Telerik UI Developer License or a newer version.
 

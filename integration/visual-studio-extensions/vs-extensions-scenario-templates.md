@@ -1,7 +1,7 @@
 ---
 title: Add Scenario
 page_title: Add Scenario
-description: Add Scenario.
+description: The Scenario templates' purpose is to let you quickly start using Telerik UI for {{ site.framework_name }} in your existing projects.
 slug: radcontrols-vs-extensions-scenario-templates
 tags: scenario,templates
 published: False

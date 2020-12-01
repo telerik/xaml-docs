@@ -1,7 +1,7 @@
 ---
 title: Speech-to-Text
 page_title: Speech-to-Text
-description: Speech-to-Text.
+description: This article guides you through the process of integrating Azure's Bing Speech API with the controls from the UI for {{ site.framework_name }} suite.
 slug: cloud-integration-cognitive-services-speech-to-text
 tags: cloud,integration,azure,cognitive,services,speech,to,text
 published: True

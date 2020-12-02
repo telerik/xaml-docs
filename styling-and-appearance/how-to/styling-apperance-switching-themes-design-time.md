@@ -1,7 +1,7 @@
 ---
 title: Switching Themes at Design-time
 page_title: Switching Themes at Design-time
-description: Check out UI for WPF suite build-in design-time mechanism theme change.
+description: Check out UI for WPF suite built-in design-time mechanism theme change.
 slug: styling-apperance-swiching-themes-design-time
 tags: styling,apperance,switch,switching,theme,themes,time,design,design-time,vs
 published: True

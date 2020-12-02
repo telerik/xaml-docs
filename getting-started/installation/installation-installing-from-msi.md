@@ -1,7 +1,7 @@
 ---
 title: Installing UI for Silverlight from MSI File
 page_title: Installing UI for Silverlight from MSI File
-description: This article describes how you can install Telerik UI for Silverlight from a __MSI__ file.
+description: This article describes how you can install Telerik UI for Silverlight from a MSI file.
 slug: installation-installing-from-msi
 tags: installing,ui,for,silverlight,from,msi,file
 published: True

@@ -29,6 +29,8 @@ Here is a list of events exposed by the RadSyntaxEditor control:
 * **CommandError**: Occurs when a command has been canceled due to an error.
 * **SelectionChanged**: Occurs when the selection of the control changes.
 * **TextSearched**: Occurs when text is searched in the document.
+* **SearchPanelOpened**: Occurs when the search panel is opened. The event is fired by the protected **OnSearchPanelOpened** method of the RadSyntaxEditor which can in turn be overridden to invoke custom logic.
+* **SearchPanelClosed**: Occurs when the search panel is closed. The event is fired by the protected **OnSearchPanelClosed** method of the RadSyntaxEditor which can in turn be overridden to invoke custom logic.
 
 ## Other
 

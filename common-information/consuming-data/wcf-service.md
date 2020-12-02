@@ -1,7 +1,7 @@
 ---
 title: Consuming WCF Service
 page_title: Consuming WCF Service
-description: Consuming WCF Service.
+description: The article shows how to make a call to WCF service in the context of an {{ site.framework_name }} application.
 slug: consuming-data-wcf-service
 tags: consuming,wcf,service
 published: False
@@ -9,8 +9,6 @@ position: 1
 ---
 
 # Consuming WCF Service
-
-
 
 The purpose of this tutorial is to show you how to make a call to a WCF Service in the context of a WPF application. The following common tasks will be examined:
 

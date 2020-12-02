@@ -1,7 +1,7 @@
 ---
 title: Isolated Storage
 page_title: Isolated Storage
-description: Isolated Storage.
+description: The article demonstrates how to use the IsolatedStorageFile in your Silverlight project.
 slug: consuming-data-isolated-storage
 tags: isolated,storage
 published: False
@@ -10,8 +10,6 @@ site_name: Silverlight
 ---
 
 # Isolated Storage
-
-
 
 This tutorial will show you how to use the user isolated storage to read data for your Silverlight application.  
 
@@ -23,39 +21,27 @@ In order to read data for your application from the isolated storage, you need t
 
 * Obtain the user-scoped isolated storage:
 
-#### __C#__
-
+#### __C#__  
 {{region consuming-data-isolated-storage_0}}
 	IsolatedStorageFile isf = IsolatedStorageFile.GetUserStoreForApplication();
-	{{endregion}}
+{{endregion}}
 
-
-
-#### __VB.NET__
-
+#### __VB.NET__  
 {{region consuming-data-isolated-storage_1}}
 	Dim isf As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication()
-	{{endregion}}
-
-
+{{endregion}}
 
 * Create an instance of the __IsolatedStorageFileStream__class: 
 
 #### __C#__
-
 {{region consuming-data-isolated-storage_2}}
 	IsolatedStorageFileStream isfs = new IsolatedStorageFileStream( fileName, FileMode.Open, isf );
-	{{endregion}}
-
-
+{{endregion}}
 
 #### __VB.NET__
-
 {{region consuming-data-isolated-storage_3}}
 	Dim isfs As New IsolatedStorageFileStream(fileName, FileMode.Open, isf)
-	{{endregion}}
-
-
+{{endregion}}
 
 * Read the data: 
 

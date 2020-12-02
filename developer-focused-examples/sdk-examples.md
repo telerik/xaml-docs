@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples
-description: Developer Focused Examples.
+description: The developer focused examples (also SDK examples) are fully runnable code project showing the public API and different customizations.
 slug: common-sdk-examples
 tags: common,sdk,examples
 published: True

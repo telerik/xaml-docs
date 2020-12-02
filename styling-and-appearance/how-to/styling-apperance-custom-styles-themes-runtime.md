@@ -1,7 +1,7 @@
 ---
 title: Switching Custom Styles with Themes at Runtime
 page_title: Switching Custom Styles with Themes at Runtime
-description: Switching Custom Styles with Themes at Runtime.
+description: How to change custom Telerik styles and respect the applied theme at run-time.
 slug: styling-apperance-custom-styles-themes-runtime
 tags: switching,custom,styles,with,themes,at,runtime
 published: True

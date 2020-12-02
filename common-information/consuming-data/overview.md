@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview.
+description: The Telerik UI for {{ site.framework_name }} controls can be populated with various data sources.
 slug: consuming-data-overview
 tags: overview
 published: True
@@ -9,7 +9,6 @@ position: 0
 ---
 
 # Overview
-
 
 Telerik __Telerik UI for {{ site.framework_name }}__ can be populated with data in any of the following ways:
 

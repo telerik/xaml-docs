@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme on MS Controls
 page_title: Setting a Theme on MS Controls
-description: Setting a Theme on MS Controls.
+description: Telerik themes define styles also for few {{ site.framework_name }} native controls like TextBox, Button, ScrollViewer and more.
 slug: styling-apperance-themes-mscontrols
 tags: setting,a,theme,on,ms,controls
 published: True
@@ -10,13 +10,11 @@ position: 9
 
 # Setting a Theme on MS Controls
 
-The __Telerik themes__ are designed to work mainly with our controls and some native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls. Our theming mechanism cannot cover the full control list included in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
-	
+The __Telerik themes__ are designed to work mainly with our controls and some native  {{ site.framework_name }} controls. Our theming mechanism cannot cover the full control list included in {{ site.framework_name }}.
 
 ## Native controls supported by the Telerik theming mechanism
 
-Below is the full control list of native {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls supported by the Telerik theming mechanism:
-		
+Below is the full control list of native  {{ site.framework_name }} controls supported by the Telerik theming mechanism:		
 
 * System.Windows.Controls.Button
 
@@ -39,23 +37,18 @@ Below is the full control list of native {% if site.site_name == 'Silverlight' %
 * System.Windows.Documents.Hyperlink
 
 {% if site.site_name == 'WPF' %}
-
 * System.Windows.Controls.Primitives.StatusBar
 
 * System.Windows.Controls.GridSplitter
 
 * System.Windows.Controls.Separator
-
 {% endif %}
 
 For all of those controls you may __specify a Theme for them__ as you may for any Telerik control.
-		
 
 >Before proceeding with this tutorial, please check the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) topic.
-		  
 
-If you want to style those native controls based on the current application theme using [Implicit Styles and NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}), you should also merge the __System.Windows.xaml__ resource dictionary. For example:
-		
+If you want to style those native controls based on the current application theme using [Implicit Styles and NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}), you should also merge the __System.Windows.xaml__ resource dictionary. 		
 
 #### __[XAML] Example 1: Merging the System.Windows.xaml file__
 
@@ -68,14 +61,9 @@ If you want to style those native controls based on the current application them
 	    </ResourceDictionary.MergedDictionaries>
 	  </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
+{{endregion}}
 
-
-
-## See Also
-
+## See Also  
  * [Use StyleManager to Apply Theme on MS Controls]({%slug common-styling-themes-mscontrols%})
-
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
-
  * [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})

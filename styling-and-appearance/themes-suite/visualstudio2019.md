@@ -1,7 +1,7 @@
 ---
 title: VisualStudio2019 Theme
 page_title: VisualStudio2019 Theme
-description: VisualStudio2019 Theme.
+description: The article shows the Telerik WPF Material theme and its features and colors.
 slug: common-styling-appearance-visualstudio2019-theme
 tags: visualstudio2019,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True

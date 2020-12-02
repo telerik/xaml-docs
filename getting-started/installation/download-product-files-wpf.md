@@ -1,7 +1,7 @@
 ---
 title: Download Product Files
 page_title: Download Product Files
-description: Download Product Files.
+description: The article describes how to download Telerik WPF product files and list the available downloads.
 slug: download-product-files-wpf
 tags: download, files, installation
 published: True

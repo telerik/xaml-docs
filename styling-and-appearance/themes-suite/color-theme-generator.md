@@ -1,7 +1,7 @@
 ---
 title: Color Theme Generator
 page_title: Color Theme Generator
-description: Color Theme Generator.
+description: Color Theme Generator application contains most Telerik controls and allows changing the current theme and palette so you can test their looks.
 slug: common-styling-color-theme-generator
 tags: theme, color, generator
 published: True

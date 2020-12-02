@@ -1,7 +1,7 @@
 ---
 title: System Requirements
 page_title: System Requirements
-description: System Requirements.
+description: This article describes the system requirements needed by Telerik UI for WPF.
 slug: installation-system-requirements-wpf
 tags: system,requirements
 published: True

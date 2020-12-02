@@ -1,7 +1,7 @@
 ---
 title: Observable Collections
 page_title: RadObservableCollection and ObservableItemCollection
-description: RadObservableCollection and ObservableItemCollection.
+description: This article provides information about the RadObservableCollection and ObservableItemCollection classes.
 slug: consuming-data-radobservablecollection
 tags: radobservablecollection, observableitemcollection
 published: True

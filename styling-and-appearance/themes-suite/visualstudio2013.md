@@ -1,7 +1,7 @@
 ---
 title: VisualStudio2013 Theme
 page_title: VisualStudio2013 Theme
-description: VisualStudio2013 Theme.
+description: This article provides an overview of the VisualStudio2013 theme from the UI for {{ site.framework_name }} suite.
 slug: common-styling-appearance-visualstudio2013-theme
 tags: visualstudio2013,theme,dynamic,fontsize,fontfamily
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Using LINQ to ADO.NET Entity Data Model
 page_title: Using LINQ to ADO.NET Entity Data Model
-description: Using LINQ to ADO.NET Entity Data Model.
+description: The purpose of this article is to demonstrate how to use LINQ against an ADO.NET Entity Data Model.
 slug: consuming-data-linq-to-ado-net-entity-data-model
 tags: using,linq,to,ado.net,entity,data,model
 published: True

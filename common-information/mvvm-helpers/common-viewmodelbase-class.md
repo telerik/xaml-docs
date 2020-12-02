@@ -1,7 +1,7 @@
 ---
 title: ViewModelBase
 page_title: ViewModelBase Class
-description: ViewModelBase.
+description: This article provides information about the ViewModelBase class.
 slug: common-viewmodelbase-class
 tags: ViewModelBase
 published: True

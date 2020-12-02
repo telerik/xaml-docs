@@ -1,7 +1,7 @@
 ---
 title: Trial License Limitations
 page_title: Trial License Limitations
-description: Trial License Limitations.
+description: This article explains the main differences between the licenses available for the Telerik UI for Silverlight and the limitations of the Trial License.
 slug: installation-installing-license-limitations
 tags: trial,license,limitations
 published: True

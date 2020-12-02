@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview.
+description: This article provides an overview of the Progress Telerik UI for {{ site.framework_name }} Extension.
 slug: radcontrols-for-wpf-vs-extensions-overview-wpf
 tags: overview
 published: True

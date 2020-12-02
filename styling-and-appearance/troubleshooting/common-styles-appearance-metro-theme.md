@@ -1,7 +1,7 @@
 ---
 title: Windows8 Theme Brushes
 page_title: Windows8 Theme Brushes
-description: Windows8 Theme Brushes.
+description: This article goes over a problem that can be encountered while using the Windows8 theme brushes and its solution.
 slug: common-styles-appearance-troubleshooting-metro-theme
 tags: windows8,theme,brushes
 published: True

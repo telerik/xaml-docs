@@ -1,7 +1,7 @@
 ---
 title: Partial Trust Support
 page_title: Partial Trust Support
-description: Partial Trust Support.
+description: This topic provides an overview of the Partial Trust support across all the Telerik WPF controls.
 slug: common-partial-trust
 tags: partial,trust
 published: True

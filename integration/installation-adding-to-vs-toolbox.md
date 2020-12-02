@@ -1,7 +1,7 @@
 ---
 title: Adding UI for WPF to Visual Studio Toolbox
 page_title: Adding UI for WPF to Visual Studio Toolbox
-description: Adding UI for WPF to Visual Studio Toolbox.
+description: Check how you can add Telerik UI for WPF controls in Visual Studio Toolbox.
 slug: installation-adding-to-vs-2015-toolbox-wpf
 tags: adding,ui,for,wpf,to,visual,studio,toolbox
 published: True

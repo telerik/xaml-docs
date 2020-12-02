@@ -1,7 +1,7 @@
 ---
 title: Blob Storage
 page_title: Blob Storage
-description: Blob Storage.
+description: This article will demonstrate how one can use Azure Blob Storage from a {{ site.framework_name }} application and manage the uploaded files.
 slug: cloud-integration-azure-blob-storage
 tags: cloud,integration, radcloudupload,azureprovider
 published: True

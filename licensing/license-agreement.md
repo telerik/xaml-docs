@@ -1,7 +1,7 @@
 ---
 title: License Agreement
 page_title: License Agreement
-description: License Agreement.
+description: End User License Agreement for Telerik UI for {{ site.framework_name }}.
 slug: license-agreement
 tags: license,agreement
 published: True

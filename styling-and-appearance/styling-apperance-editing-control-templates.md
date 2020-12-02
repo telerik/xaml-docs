@@ -1,7 +1,7 @@
 ---
 title: Editing Control Templates
 page_title: Editing Control Templates
-description: Editing Control Templates.
+description: Check out how you can extract the default template of Telerik UI for {{ site.framework_name }} controls.
 slug: styling-apperance-editing-control-templates
 tags: editing,control,templates
 published: True

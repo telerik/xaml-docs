@@ -1,7 +1,7 @@
 ---
 title: UI Automation Support
 page_title: UI Automation Support
-description: UI Automation Support.
+description: This article will demonstrate the built-in Microsoft UI Automation of Telerik UI for {{ site.framework_name }}.
 slug: common-ui-automation
 tags: ui,automation,support
 published: True

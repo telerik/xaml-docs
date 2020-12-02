@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme with StyleManager
 page_title: Setting a Theme with StyleManager
-description: Setting a Theme with StyleManager.
+description: This article demonstrates how you can set the theme through StyleManager.
 slug: common-styling-apperance-setting-theme
 tags: setting,a,theme,with,stylemanager
 published: True

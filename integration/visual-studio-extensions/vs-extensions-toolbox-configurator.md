@@ -1,7 +1,7 @@
 ---
 title: Set Toolbox Version
 page_title: Set Toolbox Version
-description: Set Toolbox Version.
+description: This article will show you how to change the version of Telerik UI for {{ site.framework_name }} assemblies in VS Toolbox.
 slug: radcontrols-vs-extensions-toolbox-configurator
 tags: toolbox,configurator
 published: True

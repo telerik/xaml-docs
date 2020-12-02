@@ -1,7 +1,7 @@
 ---
 title: Using XML
 page_title: Using XML
-description: Using XML.
+description: This article will demonstrate how you can create in-memory data and use it in your {{ site.framework_name }} application.
 slug: consuming-data-using-xml
 tags: using,xml
 published: True
@@ -9,8 +9,6 @@ position: 5
 ---
 
 # Using XML
-
-
 
 The purpose of this tutorial is to show you how to read data from XML document and use it in the context of your {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
 

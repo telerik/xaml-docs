@@ -1,7 +1,7 @@
 ---
 title: What is New
 page_title: What is New
-description: What is New.
+description: This article describes the newest controls and functionalities added to Telerik UI for {{ site.framework_name }} suite.
 slug: minifier-what-is-new
 tags: what,is,new
 published: True

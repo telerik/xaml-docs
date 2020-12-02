@@ -1,7 +1,7 @@
 ---
 title: Controls Dependencies
 page_title: Controls Dependencies
-description: Controls Dependencies.
+description: The article will list all controls from UI for WPF suite and their required assemblies.
 slug: installation-installing-controls-dependencies-wpf
 tags: controls,dependencies
 published: True

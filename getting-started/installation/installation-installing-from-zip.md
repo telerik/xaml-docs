@@ -1,7 +1,7 @@
 ---
 title: Installing UI for Silverlight from ZIP File
 page_title: Installing UI for Silverlight from ZIP File
-description: Installing UI for Silverlight from ZIP File.
+description: This topic will show you how to install Telerik UI for Silverlight manually from a __ZIP__ file.
 slug: installation-installing-from-zip
 tags: installing,ui,for,silverlight,from,zip,file
 published: True

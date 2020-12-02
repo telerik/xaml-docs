@@ -1,7 +1,7 @@
 ---
 title: Relational Database Service 
 page_title: Relational Database Service
-description: Relational Database Service.
+description: This article will show you to create a {{ site.framework_name }} application and access data stored in the cloud by using the Amazon Relational Database Service.
 slug: cloud-services/aws/rds
 tags: amazon,cloud,rds
 published: True

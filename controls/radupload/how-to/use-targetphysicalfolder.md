@@ -1,7 +1,7 @@
 ---
 title: Use TargetPhysicalFolder
 page_title: Use TargetPhysicalFolder
-description: Use TargetPhysicalFolder.
+description: This article shows how to use the TargetPhysicalFolder property of RadUpload to set a physical path on the server where the file should be uploaded.
 slug: radupload-how-to-use-targetphysicalfolder-property
 tags: cancel,raduploaditem,deletion
 published: True

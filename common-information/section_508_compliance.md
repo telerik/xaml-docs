@@ -1,7 +1,7 @@
 ---
 title: Section 508 Compliance
 page_title: Section 508 Compliance
-description: Section 508 Compliance.
+description: This article lists the supported section 508 regulations.
 slug: section_508_compliance
 tags: section,508,compliance
 published: True

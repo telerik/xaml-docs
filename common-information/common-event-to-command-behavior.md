@@ -1,7 +1,7 @@
 ---
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
-description: EventToCommandBehavior.
+description: The EventToCommandBehavior class allows you to handle events in an MVVM-friendly manner.
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: False

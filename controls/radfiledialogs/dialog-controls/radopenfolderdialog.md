@@ -28,8 +28,13 @@ To show the dialog call its __ShowDialog__ method. If a valid folder is opened w
 		public MainWindow()
 		{
 			InitializeComponent();
-			ShowOpenFolderDialog();
+			this.Loaded += MainWindow_Loaded;			
 		}
+		
+		private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+		{
+ 			ShowOpenFolderDialog();
+        	}
 
 		private void ShowOpenFolderDialog()
 		{
@@ -57,8 +62,13 @@ The dialog supports single and multiple selection modes. By default you can sele
 		public MainWindow()
 		{
 			InitializeComponent();
-			ShowOpenFolderDialog();
+			this.Loaded += MainWindow_Loaded;			
 		}
+		
+		private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+		{
+ 			ShowOpenFolderDialog();
+        	}
 
 		private void ShowOpenFolderDialog()
 		{
@@ -86,8 +96,13 @@ You can get only the name of the selected folders, without the full path, via th
 		public MainWindow()
 		{
 			InitializeComponent();
-			ShowOpenFolderDialog();
+			this.Loaded += MainWindow_Loaded;			
 		}
+		
+		private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+		{
+ 			ShowOpenFolderDialog();
+        	}
 
 		private void ShowOpenFolderDialog()
 		{

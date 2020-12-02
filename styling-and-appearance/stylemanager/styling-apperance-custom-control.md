@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme on a Custom Control
 page_title: Setting a Theme on a Custom Control
-description: Setting a Theme on a Custom Control.
+description: This article explains how to apply a Theme for a control you have additionally extended by inheriting any of the MS controls.
 slug: styling-apperance-custom-control
 tags: setting,a,theme,on,a,custom,control
 published: True

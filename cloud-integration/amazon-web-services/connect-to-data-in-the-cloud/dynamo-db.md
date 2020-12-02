@@ -1,7 +1,7 @@
 ---
 title: Dynamo DB 
 page_title: Dynamo DB 
-description: Dynamo DB.
+description: This article demonstrates how to create a {{ site.framework_name }} application and access data stored in a DynamoDB table.
 slug: cloud-services/aws/dynamodb
 tags: cloud,aws,dynamodb
 published: True

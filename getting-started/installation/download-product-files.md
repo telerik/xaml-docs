@@ -1,7 +1,7 @@
 ---
 title: Download Product Files
 page_title: Download Product Files
-description: Download Product Files.
+description: This article will demonstrate how you can navigate through your account to download Telerik UI for Silverlight assemblies, examples, etc.
 slug: download-product-files
 tags: download, files, installation
 published: True

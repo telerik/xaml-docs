@@ -1,7 +1,7 @@
 ---
 title: Office2019 Theme
 page_title: Office2019 Theme
-description: Office2019 Theme.
+description: Familiarize yourself with the Office2019 theme, inspired by the well-known Microsoft Office productivity suite and its latest version.
 slug: common-styling-appearance-Office2019-theme
 tags: Office2019,theme,glyphs,fontsize,fontfamily
 published: True

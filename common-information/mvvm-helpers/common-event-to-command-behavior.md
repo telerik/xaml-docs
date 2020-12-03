@@ -1,7 +1,7 @@
 ---
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
-description: The event to command behavior enables to bound any control's routed event to an ICommand property of the view model.
+description: The EventToCommandBehavior enables you to bind any control's routed event to an ICommand property of the view model.
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True

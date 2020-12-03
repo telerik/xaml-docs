@@ -1,7 +1,7 @@
 ---
 title: Getting Started 
 page_title: Getting Started 
-description: This article shows how to setup an environment and start using Azure Web Services (AWS).
+description: This article shows how to set up an environment and start using Azure Web Services (AWS).
 slug: cloud-services/aws/getting-started
 tags: cloud, aws
 published: True

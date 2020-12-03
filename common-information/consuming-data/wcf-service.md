@@ -1,7 +1,7 @@
 ---
 title: Consuming WCF Service
 page_title: Consuming WCF Service
-description: The article shows how to make a call to WCF service in the context of an {{ site.framework_name }} application.
+description: The article shows how to make a call to a WCF service in the context of an {{ site.framework_name }} application.
 slug: consuming-data-wcf-service
 tags: consuming,wcf,service
 published: False

@@ -436,6 +436,20 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 	Office2019Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 
+## Setting White Color Variation
+
+The theme has a few built-in [color variations](#theme-variation-changing) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing several color properties of the [theme palette](#office2019palette-properties).
+
+To achieve this, first ensure that the Light [variation](#theme-variation-changing) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
+
+#### __[C#] Example 5: Applying palette colors__		
+{{region cs-styling-appearance-Office2019-theme-5}}
+	Office2019Palette.Palette.ButtonBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+	Office2019Palette.Palette.BaseBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+	Office2019Palette.Palette.AlternativeBackgroundColor = (Color)ColorConverter.ConvertFromString("#FAFAFA");
+	Office2019Palette.Palette.SecondaryBackgroundColor = (Color)ColorConverter.ConvertFromString("#F1F1F1");
+{{endregion}}
+
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})

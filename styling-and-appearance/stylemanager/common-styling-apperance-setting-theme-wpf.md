@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme with StyleManager
 page_title: Setting a Theme with StyleManager
-description: Setting a Theme with StyleManager.
+description: How to set a Telerik theme with StyleManager.
 slug: common-styling-apperance-setting-theme-wpf
 tags: setting,a,theme,with,stylemanager
 published: True
@@ -36,7 +36,9 @@ Telerik's __WPF controls__ support the following themes:
 * __Office2016__
 * __Office2016Touch__
 * __Office2013__
+* __Office2019__
 * __VisualStudio2013__
+* __VisualStudio2019__
 * __Green__
 * __Material__
 * __Fluent__

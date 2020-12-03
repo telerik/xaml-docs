@@ -1,7 +1,7 @@
 ---
 title: General Known Issues
 page_title: General Known Issues
-description: General Known Issues.
+description: The help article describes known issues related to theming in the Telerik controls suite.
 slug: common-styles-appearance-troubleshooting-known-issues
 tags: general,known,issues
 published: True
@@ -9,10 +9,6 @@ position: 1
 ---
 
 # General Known Issues
-
-
-
-## 
 
 Here is a list of the general issues that has been reported to us and also an information on how to resolve them:{% if site.site_name == 'WPF' %}
 

@@ -1,15 +1,14 @@
 ---
 title: License File
 page_title: License File
-description: License File.
+description: The license .licx file is generated automatically since 2015.
 slug: license-file
 tags: license
 published: True
 position: 2
 ---
 
-# License File
- 
+# License File 
 
 As of Q1 2015, the Telerik UI for WPF suite uses the standard .NET licensing mechanism, which means that using the controls in design-time may cause Visual Studio to add a [license.licx](https://docs.microsoft.com/en-us/dotnet/framework/tools/lc-exe-license-compiler) to the __Properties__ folder of the project. This file is used only in design-mode and is not needed for deployment explicitly. 
 

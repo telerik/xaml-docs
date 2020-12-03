@@ -438,7 +438,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 
 ## Setting White Color Variation
 
-The theme has a few built-in [color variations](#theme-variation-changing) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing a few color properties of the [theme palette](#office2019palette-properties).
+The theme has a few built-in [color variations](#theme-variation-changing) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing several color properties of the [theme palette](#office2019palette-properties).
 
 To achieve this, first ensure that the Light [variation](#theme-variation-changing) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
 

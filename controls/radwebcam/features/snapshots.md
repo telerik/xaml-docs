@@ -37,6 +37,23 @@ This can be done via the "Take snapshot" button of the control, or the __TakeSna
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 1: Taking a snapshot in code__
+{{region vb-radwebcam-features-snapshots-0}}
+	Public Sub New()
+        InitializeComponent()
+        Me.radWebCam.SnapshotTaken += AddressOf RadWebCam_SnapshotTaken
+    End Sub
+
+    Public Sub OnTakeSnapshot()
+        Me.radWebCam.TakeSnapshot()
+    End Sub
+
+    Private Sub RadWebCam_SnapshotTaken(ByVal sender As Object, ByVal e As SnapshotTakenEventArgs)
+        Dim snapshot As BitmapSource = e.Snapshot
+		' here you save the source to a file, in memory, or to show it in the UI
+    End Sub
+{{endregion}}
+
 To discard the snapshot preview, call the __DiscardSnapshot__ method of RadWebCam. The method works only when a snapshot is taken and is currently being previewed.
 
 Additionally, there is a __SaveSnapshot__ method which fires the SnapshotTaken event. The method works only when a snapshot is taken and is currently being previewed.
@@ -53,6 +70,11 @@ By default when you take a snapshot a preview of the image will be shown. To dis
 #### __[C#] Example 3: Disable snapshots preview in code__
 {{region radwebcam-features-snapshots-2}}
 	this.radWebCam.PreviewSnapshots = false;
+{{endregion}}
+
+#### __[VB.NET] Example 3: Disable snapshots preview in code__
+{{region vb-radwebcam-features-snapshots-2}}
+	Me.radWebCam.PreviewSnapshots = False
 {{endregion}}
 
 You can indicate if the snapshot preview is displayed via the __IsPreviewingSnapshot__ property of RadWebCam.

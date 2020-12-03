@@ -1,7 +1,7 @@
 ---
 title: Image Analysis
 page_title: Image Analysis
-description: Image Analysis.
+description: The article shows how to use Microsoft Azure Computer Vision API along with Telerik controls to determine if an image is a portrait.
 slug: cloud-integration-cognitive-services-image-analysis
 tags: cloud,integration,azure,cognitive,services,image,analysis
 published: True

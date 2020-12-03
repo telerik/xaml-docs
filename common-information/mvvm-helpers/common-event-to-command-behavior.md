@@ -1,7 +1,7 @@
 ---
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
-description: EventToCommandBehavior.
+description: The EventToCommandBehavior enables you to bind any control's routed event to an ICommand property of the view model.
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True
@@ -11,14 +11,6 @@ position: 4
 # EventToCommandBehavior
 
 When working in more advanced development scenarios we often find ourselves leaning towards the MVVM pattern for producing cleaner, loosely coupled, easier to test code, but along with this comes the responsibility of ensuring that all controls we are using can follow this pattern. While it is very easy to work with the event-based model that exists across the .Net framework, events do not play well into the mindset of reducing traditional code-behind and instead handling logic within a viewmodel. This is where the Telerik __EventToCommandBehavior__ comes into use to allow your events to fire and your code to respond accordingly, all in the ViewModel without touching the code-behind of the UserControls.
-
-* [Getting Started](#getting-started)
-* [RaiseOnHandledEvents](#raiseonhandledevents)
-* [Command Parameters](#command-parameters)
-* [CommandTarget](#commandtarget)
-* [Multiple Commands](#multiple-commands)
-* [Failing Bindings](#failing-bindings)
-
       
 ## Getting Started
 

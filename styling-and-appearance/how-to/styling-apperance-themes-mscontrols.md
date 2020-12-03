@@ -1,7 +1,7 @@
 ---
 title: Setting a Theme on MS Controls
 page_title: Setting a Theme on MS Controls
-description: Setting a Theme on MS Controls.
+description: Telerik themes define styles also for few {{ site.framework_name }} native controls like TextBox, Button, ScrollViewer and more.
 slug: styling-apperance-themes-mscontrols
 tags: setting,a,theme,on,ms,controls
 published: True
@@ -74,7 +74,7 @@ To set the theme seprately per control, you can merge the System.Windows.xaml re
 
 #### __[XAML] Example 2: Setting a theme per control using implicit styles__ 
 {{region styling-apperance-themes-mscontrols-1}}
-	<CheckBox>	
+	<CheckBox Content="CheckBox">	
 		<CheckBox.Resources>
 			<ResourceDictionary Source="/Telerik.Windows.Themes.Office2013;component/Themes/System.Windows.xaml"/>
 		</CheckBox.Resources>
@@ -85,7 +85,7 @@ To avoid applying the theme to a specific native control after the global themin
 
 #### __[XAML] Example 3: Disabling the default theming__ 
 {{region styling-apperance-themes-mscontrols-2}}
-	<CheckBox>	
+	<CheckBox Content="CheckBox">	
 		<CheckBox.Style>
 			<Style TargetType="CheckBox"/>
 		</CheckBox.Style>
@@ -94,7 +94,7 @@ To avoid applying the theme to a specific native control after the global themin
 
 ## Setting a Theme Using StyleManager
 
-When using StyleManager, the theme can be set only per control. There is no global that will apply to all native controls in the view. 
+When using StyleManager, the theme can be set only per control. There is no global setting that will apply to all native controls in the view. 
 
 To set the theme per control, use the __StyleManager.Theme__ attached property.
 

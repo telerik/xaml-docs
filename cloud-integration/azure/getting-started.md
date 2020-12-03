@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Getting Started.
+description: The article lists the main steps to get you started with Microsoft Azure.
 slug: cloud-integration-azure-getting-started
 tags: cloud,integration,azure,getting,started
 published: True

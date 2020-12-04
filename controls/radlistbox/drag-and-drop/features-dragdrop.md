@@ -70,6 +70,8 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 ## Features
 
+## DragVisualProvider
+
 The DragVisualProvider enriches the drag-drop functionality of RadListBox control by providing a different visual DragCue to the dragged item.
 
 In order to enable the visual DragCue the provider needs to be attached to the ListBox control:        
@@ -110,7 +112,13 @@ And when pointing the bottom part of an item, the DragCue indicates that the dra
 
 * __Custom DragVisualProvider__: More detailed information on how to create a custom DragVisualProvider can be found [here]({%slug radlistbox-styles-and-templates-customize-the-dragvisualprovider%}).            
 
-## Converting data
+### Multiple-Item Drag
+
+The drag-drop functionality also works out-of-the-box when the [SelectionMode]({%slug radlistbox-features-selection%}#setting-selectionmode) is **Multiple** or **Extended**.
+
+>When debugging, Visual Studio places the [debugger toolbar](https://docs.microsoft.com/en-us/visualstudio/xaml-tools/inspect-xaml-properties-while-debugging) on the drag visual, and if your mouse happens to be over the toolbar during the drag operation, dropping will not be allowed. To prevent this, you can either minimize or remove the toolbar before the drag, or run your project without the debugger.
+
+## Converting Data
 
 In scenarios with drag-drop between controls containing different item types the dragged data should be converted using a DataConverter. The following example shows how to create a custom DataConverter when converting data between two RadListBox controls, one of them containing items of type Product and the other - of type Order.
 
@@ -171,3 +179,4 @@ The end result:
 ## See Also
 
  * [Drag-Drop between RadListBox and RadScheduleView]({%slug radlistbox-features-dragdrop-scheduleview%})
+ * [SelectionMode]({%slug radlistbox-features-selection%}#setting-selectionmode)

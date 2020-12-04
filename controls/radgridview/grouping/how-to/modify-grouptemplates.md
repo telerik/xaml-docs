@@ -10,21 +10,17 @@ position: 1
 
 # Modify GroupRow
 
-This article explains how you can modify the default GroupRow's header and footer templates per RadGridView's level or per GridViewColumn's level.
+This article explains how you can modify the default header and footer templates of the group row. You can do that by predefining the __GroupHeaderTemplate__ and __GroupFooterTemplate__ properties. 
 
-Basically you can change the GroupRow Headers by predefining the GroupHeaderTemplate and you can change the Group Footers by predefining the GroupFooterTemplate. That way you can set a DataTemplate as per your preferences or reqirements.
-
->For visual modifications of the group row, you can refer to the documentation on [Styling GroupRow]({%slug gridview-visual-structure%}).
-
->tipFor a reference on the visual structure of the GridView you can follow [this article.]({%slug gridview-visual-structure%}).
+>tipLearn more about the GridView visual structure in [this article]({%slug gridview-visual-structure%}).
 
 >Please note that the DataContext of the group row is {% if site.site_name == 'WPF' %}[GroupViewModel](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.groupviewmodel){% endif %}{% if site.site_name == 'Silverlight' %}[GroupViewModel](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.gridview.groupviewmodel){% endif %}. As you can check in the API reference, this class contains properties like Group, Column, AggregateResults, etc. Having this in mind you can bind the TextBlock-s in the GroupHeaderTemplate to the values of the properties in the GroupViewModel.
         
 ## Overriding GroupHeaderTemplate
 
-Below you can find a sample code showing how to set a new __GroupHeaderTemplate for the GridViewDataColumn__:
+__Example 1__ demonstrates how to set the __GroupHeaderTemplate__ for a GridViewDataColumn.
 
-#### __XAML__
+#### __[XAML] Example 1: Setting the GridViewDataColumn GroupHeaderTemplate__
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_0}}
 	<telerik:GridViewDataColumn.GroupHeaderTemplate>
 	    <DataTemplate>
@@ -38,9 +34,9 @@ Below you can find a sample code showing how to set a new __GroupHeaderTemplate 
 	</telerik:GridViewDataColumn.GroupHeaderTemplate>
 {{endregion}}
 
-You could do the same for all the columns by defining a __GroupHeaderTemplate for the RadGridView__:
+You could do the same for all the columns by defining a __GroupHeaderTemplate__ for the RadGridView.
 
-#### __XAML__
+#### __[XAML] Example 2: Setting the RadGridView GroupHeaderTemplate __
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_1}}
 	<telerik:RadGridView.GroupHeaderTemplate>
 	    <DataTemplate>
@@ -54,23 +50,26 @@ You could do the same for all the columns by defining a __GroupHeaderTemplate fo
 	</telerik:RadGridView.GroupHeaderTemplate>
 {{endregion}}
 
-Note that if you have any AggregateFunctions defined, and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you will have to hide them. You can achieve this, like so:
+If you have any AggregateFunctions defined and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you can hide them as demonstrated in __Example 3__.
 
-#### __XAML__
+#### __[XAML] Example 3: Hiding the aggregates in the group row__
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_2}}
-	<Style TargetType="telerik:GridViewGroupRow">
-	    <Setter Property="ShowHeaderAggregates" Value="False"/>
+	<!--If you are using the NoXaml binaries, you should based the style on the default one like so-->
+	<!-- <Style TargetType="telerik:GroupHeaderRow" BasedOn="{StaticResource GroupHeaderRowStyle}">-->
+	<Style TargetType="telerik:GroupHeaderRow">
+		<Setter Property="ShowHeaderAggregates" Value="False" />
 	</Style>
 {{endregion}}
 
->As of __Q3 2012__ we have introduced a new rendering mode of RadGridView - Flat. When you set the Flat mode, the GridView will render rows one below the other. You can also refer to the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
+>The __GroupHeaderRow__ control is the default grouping visual element when the __GroupRenderMode__ of the RadGridView is set to __Flat__. You can learn more about this in the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
 ## Overriding GroupFooterTemplate
 
-A similar logic applies for the group footers and __GroupFooterTemplate__. For example, you can define such per column with the following sample DataTemplate:
+You can override the visual representation of the group footers by setting the __GroupFooterTemplate__ of the GridViewDataColumn.
 
-#### __XAML__
+#### __[XAML] Example 4: Setting the GridViewDataColumn GroupFooterTemplate__
 {{region xaml-gridview-grouping-how-to-modify-grouptemplates_3}}
+
     <telerik:GridViewDataColumn.GroupFooterTemplate>
        <DataTemplate>
           <telerik:AggregateResultsList ItemsSource="{Binding}">
@@ -88,6 +87,6 @@ A similar logic applies for the group footers and __GroupFooterTemplate__. For e
     </telerik:GridViewDataColumn.GroupFooterTemplate>
 {{endregion}}
 
->tip You can also check the implementation of {% if site.site_name == 'Silverlight' %} [Totals demo](https://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %} __Totals__ [WPF Demos](https://demos.telerik.com/wpf/#GridView/Totals){% endif %}.   
+>tip You can check the implementation of {% if site.site_name == 'Silverlight' %}the [Totals demo](https://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %}__Totals__ RadGridView example from the [WPF Demos](https://demos.telerik.com/wpf/){% endif %}.   
 
->For styling the appearance of the GroupRow via editing the template of the GridViewGroupRow, please follow this [this article.]({%slug gridview-styling-group-row%})
+>If you want to style the GroupHeaderRow further, you can check out [this article]({%slug gridview-styling-group-row%}).

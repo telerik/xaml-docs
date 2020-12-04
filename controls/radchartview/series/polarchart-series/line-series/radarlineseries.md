@@ -57,6 +57,7 @@ You can use the following definition to display a simple RadarLineSeries
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.
 * __ValueBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the value of the data point.
 * __PointSize__: A property of type __Size__ that get or sets the size of the points. This property will be ignored if __PointTemplate__ property is set.
+* __IsClosed__: A bolean property that gets or sets a value indicating whether the line curve will be closed. In other words, last point will be connected to the first one. The default value is __True__.
 
 ## Data Binding
 
@@ -64,7 +65,7 @@ You can use the ValueBinding and CategoryBinding properties of the PointSeries t
 
 #### __[C#] Example 2: Defining the view model__
 
-{{region radchartview-series-point_1}}
+{{region radchartview-series-radarlineseries_1}}
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -80,7 +81,7 @@ You can use the ValueBinding and CategoryBinding properties of the PointSeries t
 {{endregion}}
 
 #### __[XAML] Example 3: Specify a PointSeries in XAML__
-{{region radchartview-series-point_2}}	
+{{region radchartview-series-radarlineseries_2}}	
 	<telerik:RadPolarChart.Series>
 		<telerik:RadarLineSeries ItemsSource="{Binding Data}" ValueBinding="Value" CategoryBinding="Category"/>
 	</telerik:RadPolarChart.Series>

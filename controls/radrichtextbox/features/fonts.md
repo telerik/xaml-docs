@@ -57,18 +57,18 @@ To ensure the font you would like to use is registered and available for the con
     if (FontManager.HasRegisteredFontFamily(fontFamily))
     {
         Span span = new Span();
-        span.FontFamily = new FontFamily("Arial");
+        span.FontFamily = fontFamily;
     }
 {{endregion}}
 
-#### **[VB.NET] Example 2: Ensuring font is registered before using it**
+#### [VB.NET] Example 2: Ensuring font is registered before using it
 {{region radrichtextbox-features-fonts_3}}
 
      Dim fontFamily As FontFamily = New FontFamily("Arial")
 
     If FontManager.HasRegisteredFontFamily(fontFamily) Then
         Dim span As Span = New Span()
-        span.FontFamily = New FontFamily("Arial")
+        span.FontFamily = fontFamily
     End If 
 {{endregion}}
 
@@ -116,8 +116,9 @@ In case you need to remove a font so that it cannot be used in the control, RadR
     FontManager.UnregisterFont(new FontFamily("Helvetica"));
 {{endregion}}
 
-#### **[VB.NET] Example 5: Unregister font**
+#### [VB.NET] Example 5: Unregister font
 {{region radrichtextbox-features-fonts_9}}
+
     FontManager.UnregisterFont(New FontFamily("Helvetica"))
 {{endregion}}
 
@@ -130,5 +131,4 @@ In case you need to remove a font so that it cannot be used in the control, RadR
  * [FontManager class API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.layout.fontmanager)
  {% endif %}
 
- 
  * [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%})

@@ -136,9 +136,11 @@ In Figure 3 you can see some resource keys and the strings they are associated w
 
 >tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
+{% if site.site_name == 'WPF' %}
 <!-- -->
 
 >tipYou can find the ".resx" files containing the translations for the supported languages inside the "Core\Controls" directory of the [source code]({%slug download-product-files-wpf%}#source-code).
+{% endif %}
 
 ## Localization Using ResourceManager
 

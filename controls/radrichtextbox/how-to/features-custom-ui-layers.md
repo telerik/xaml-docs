@@ -12,7 +12,9 @@ position: 0
 
 
 
-__UILayers__ provide an extensible approach to showing different parts of __RadRichTextBox__’s Document. For example, there are separate layers showing the comments, the selection, the table borders, etc.
+__UILayers__ provide an extensible approach to showing different parts of __RadRichTextBox__’s Document. For example, there are separate layers showing the comments, the selection, the table borders, etc. 
+
+>note Information about all the different built-in layers you can find in the [UI Layers]({%slug radrichtextbox-features-ui-layers%}) help topic. 
       
 
 The existing layers can be removed and additional ones can be defined to customize the presentation of different parts of the document.
@@ -89,3 +91,6 @@ All that is left is to specify the place of your layer, i.e. which layers should
 
 All these steps have been implemented {% if site.site_name == 'Silverlight' %}at [https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation](https://demos.telerik.com/silverlight/#RichTextBox/CustomizePresentation){% endif %}{% if site.site_name == 'WPF' %}in the [ClickOnce demos](https://demos.telerik.com/wpf/) (Inside the application, choose RichTextBox / Customize Presentation){% endif %}, and in a developer-focused [CustomLayerAndCustomAnnotation](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomLayerAndCustomAnnotation) example in our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
      
+## See Also 
+
+* [Built-in UI Layers]({%slug radrichtextbox-features-ui-layers%})

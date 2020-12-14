@@ -41,9 +41,11 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 #### __[XAML] Example 2: RadListBoxItem Style__
 
 {{region xaml-radlistbox-features-dragdrop_1}}
-	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
-	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-	</Style>
+	<UserControl.Resources>
+		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
+	    		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+		</Style>
+	</UserControl.Resources>
 {{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadListBoxItem should be based on the default __RadListBoxItemStyle__.
@@ -51,9 +53,11 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 #### __[XAML] Example 3: RadListBoxItem Style in NoXAML__
 
 {{region xaml-radlistbox-features-dragdrop_2}}
-	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
-		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-	</Style>
+	<UserControl.Resources>
+		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
+			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+		</Style>
+	</UserControl.Resources>
 {{endregion}}
 
 * Attach the ListBoxDragDropBehavior behavior:

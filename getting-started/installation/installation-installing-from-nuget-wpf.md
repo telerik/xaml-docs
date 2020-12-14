@@ -68,14 +68,9 @@ In order to set up a local package source, you can follow these steps:
 
 * Download the needed NuGet .zip file(s) depending on whether you're using [Xaml or NoXaml]({%slug xaml-vs-noxaml%}) binaries and extract it into the folder where your Telerik NuGet packages are located.
 
-> If you haven’t set a Telerik NuGet folder, you can do it by clicking the __Settings__ button on the __“Manage NuGet Packages”__ dialog, then add the folder where you’ve extracted the .nupkg file (for example C://Telerik NuGet) as a new package source inside the __Options__ dialog:
->![Common Installing From Nu Get 03](images/Common_InstallingFromNuGet_03.png)
+* Follow steps 1-3 from the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section. In the 3rd step set the __Source__ field to the folder where you’ve extracted the .nupkg file (for example C://Telerik NuGet).
 
-Once you open the __“Manage NuGet Packages”__ dialog in Visual Studio (right-click Project References -> Manage NuGet Packages), you can select the Telerik NuGet option and the available packages there will be shown:
-![Common Installing From Nu Get 02 wpf](images/Common_InstallingFromNuGet_02_wpf.png)
-
-Click the “Install” button and the references will be automatically added to your project as shown below:
-![Common Installing From Nu Get 04 wpf](images/Common_InstallingFromNuGet_04_wpf.png)
+* Follow steps 4 and 5 from the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section. In the last step set your local folder as a package source. 
 
 >tip Additionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
   

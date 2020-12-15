@@ -29,7 +29,6 @@ This help topic describes the specific characteristics of the bar codes per type
 |**MSI**|Variation of Plessey code, with similar applications|
 |**EAN 8**|Short version of EAN-13, 8 characters|
 |**EAN 13**|Used with consumer products internationally, 13 characters|
-|**Intelligent Mail**|Used by U.S. Post Office as successor of POSTNET and PLANET barcodes.|
 |**PLANET**|Printed by U.S. Post Office on envelopes. Predecessor of Intelligent Mail barcode.|
 |**Postnet**|Printed by U.S. Post Office on envelopes|
 |**UPC A**|Used with consumer products in U.S., 12 characters|

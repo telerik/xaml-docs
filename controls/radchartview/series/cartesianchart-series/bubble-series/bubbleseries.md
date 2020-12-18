@@ -39,7 +39,7 @@ You can use the following definition to display a simple BubbleSeries:
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-The following image demonstrates the end result:
+The following image demonstrates the end result:  
 ![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_01.png)
 
 ## Data bound series

@@ -18,7 +18,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Optionsâ
 
 The __Options__ dialog contains two sets of options that affect the __Telerik UI for {{ site.framework_name }}__.
 
-![VSExtentions Options Dialog General](images/VSExtentions_OptionsDialogGeneral.png)
+![VSExtentions Options Dialog General](images/VSExtentions_GeneralSettings.PNG)
 
 The settings under the __General__ category affect all of the installed __Telerik Visual Studio Extensions__.
 
@@ -42,7 +42,7 @@ Configures the path where the extensions look for and store distributions.
 
 All settings under the Telerik UI for {{ site.framework_name }} category affect only the Telerik {{ site.framework_name }} projects.
 
-![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_OptionsDialog.png)
+![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_Settings.PNG)
 
 ## Latest Version Retrieval
 

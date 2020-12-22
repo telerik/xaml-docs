@@ -121,6 +121,7 @@ intro_columns:
     title: "Layout"
     items:
       "Book": "radbook-visual-structure"
+      "CardView": "radcardview-overview"
       "Carousel": "carousel-overview"
       "Docking": "raddocking-overview2"
       "Expander": "radexpander-overview"

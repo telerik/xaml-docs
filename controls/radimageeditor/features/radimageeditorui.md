@@ -5,7 +5,7 @@ description: Check our &quot;RadImageEditorUI&quot; documentation article for th
 slug: radimageeditor-features-radimageeditorui
 tags: radimageeditorui
 published: True
-position: 1
+position: 2
 ---
 
 # RadImageEditorUI

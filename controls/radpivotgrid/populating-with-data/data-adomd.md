@@ -13,7 +13,7 @@ site_name: WPF
 
 In this article we will show how to use __AdomdDataProvider__ and use data from OLAP Cube for __RadPivotGrid__.
 
->cautionWith the current release RadPivotGrid supports only Microsoft.AnalysisServices.AdomdClient version 10.0. You can download it from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30440). After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100.
+>cautionWith the current release RadPivotGrid supports only Microsoft.AnalysisServices.AdomdClient version 10.0. After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100.
 
 ## ADOMD.NET
 

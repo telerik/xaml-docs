@@ -242,7 +242,7 @@ The properties that are related with the same feature are:
 
 * __AutoLayout__ – Boolean property that controls whether the __RadDiagram__ should automatically layout the items hosted in it whenever a new item is added or removed.
 
->Note: If you need to change the settings that are used when the automatic layout is triggered you should ones call the __LayoutAsync()__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__. By default this feature is disabled.
+>Note: If you need to change the settings that are used when the automatic layout is triggered you should once call the __LayoutAsync()__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__. By default this feature is disabled.
 
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

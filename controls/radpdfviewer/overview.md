@@ -70,6 +70,8 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * The API provides different options for **extending** and **customizing** the control.
 
+* Type3 fonts (Available in R1 2021).
+
 ## See Also
 
  * [Getting Started]({%slug radpdfviewer-getting-started%})

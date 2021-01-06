@@ -37,7 +37,9 @@ __RadRadialMenu__ is a circular menu that comes with support for selection, comm
 
 * __Data Binding Support__: The control can be easily data bound to your business data, either by setting its properties directly, or by using a binding declaration. Read more about this in the [Binding to Object]({%slug radradialmenu-populating-with-data-binding-to-object%}) section.
 
-* __Can be use as a ContextMenu__: The control can be used as a context menu for another __FrameworkElement__. Read more about this in the [RadRadialMenu as a ContextMenu]({%slug radradialmenu-features-contextmenu%}) section.
+* __ContextMenu usage__: The control can be used as a context menu for another __FrameworkElement__. Read more about this in the [RadRadialMenu as a ContextMenu]({%slug radradialmenu-features-contextmenu%}) section.
+
+* __Autosized MenuItems__: Since the __R1 2021__ release, the control can [autosize]({%slug radradialmenu-features-configuration%}#automatically-size-the-menuitems) its items. 
 
 >tip Get started with the control with its [Getting Started]({%slug radradialmenu-getting-started%}) help article that shows how to use it in a basic scenario.
 

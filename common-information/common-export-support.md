@@ -1,7 +1,7 @@
 ---
 title: Export Support
 page_title: Export Support
-description: Export Support
+description: This article will get you familiar with the Telerik UI for {{ site.framework_name }} export functionality.
 slug: common-export-support
 tags: export,support
 published: True

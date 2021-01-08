@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Extensions Overview
-description: Telerik RadDiagram for {{ site.framework_name }} Extensions Overview article
+description: Telerik RadDiagram for {{ site.framework_name }} Extensions Overview article.
 slug: raddiagram-extensions
 tags: extensions
 published: True

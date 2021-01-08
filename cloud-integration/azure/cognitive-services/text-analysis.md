@@ -1,7 +1,7 @@
 ---
 title: Text Analysis
 page_title: Text Analysis
-description: Text Analysis
+description: This article guides you through the process of integrating Azure's Text Analytics API with the controls from the UI for {{ site.framework_name }} suite.
 slug: cloud-integration-cognitive-services-text-analysis
 tags: cloud,integration,azure,cognitive,services,text,analysis
 published: True

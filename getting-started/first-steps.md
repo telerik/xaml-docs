@@ -1,7 +1,7 @@
 ---
 title: First Steps
 page_title: First Steps
-description: First Steps
+description: This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 slug: getting-started-first-steps
 tags: get,started,first,steps
 published: True

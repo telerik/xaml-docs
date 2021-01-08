@@ -186,6 +186,8 @@ Now you have to create the actual style resource labeled "__MyStyle__" and in or
 
 In effect the control template for the __Bar3D__ class is customized. Note that when customizing the template for a 3D control there are some required elements / element names that should be present or otherwise the control will not work correctly:
 
+#### __XAML__
+
 {{region xaml-radchart-how-to-use-custom-3d-models_5}}
 	<ControlTemplate TargetType="{x:Type telerik:BarControl3D}">
 	<!-- ... -->

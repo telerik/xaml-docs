@@ -6,15 +6,12 @@ slug: radtooltip-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadToolTip
 ---
 
 # Overview
 
-
-
 {% if site.site_name == 'Silverlight' %}![tooltip sl 46 text](images/tooltip_sl_46_text.png){% endif %}{% if site.site_name == 'WPF' %}![tooltip wpf 46 text](images/tooltip_wpf_46_text.png){% endif %}
-
-## {% if site.site_name == 'Silverlight' %}![radtooltip sl](images/radtooltip_sl.png){% endif %}{% if site.site_name == 'WPF' %}![radtooltip wpf](images/radtooltip_wpf.png){% endif %}
 
 __RadToolTip__ is a set of controls that allows you to specify and show tooltips. It consists of:
 
@@ -25,3 +22,10 @@ __RadToolTip__ is a set of controls that allows you to specify and show tooltips
             
 
 * __RadToolTipContentView__ - a control that enables theming for __RadToolTip__[ (read more).]({%slug radtooltip-theming%})
+
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+## {% if site.site_name == 'Silverlight' %}![radtooltip sl](images/radtooltip_sl.png){% endif %}{% if site.site_name == 'WPF' %}![radtooltip wpf](images/radtooltip_wpf.png){% endif %}

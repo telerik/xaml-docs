@@ -1,7 +1,7 @@
 ---
 title: In-Memory Data
 page_title: In-Memory Data
-description: In-Memory Data
+description: This article will demonstrate how you can create in-memory data and use it in your {{ site.framework_name }} application.
 slug: consuming-data-in-memory-data
 tags: in-memory,data
 published: True
@@ -9,8 +9,6 @@ position: 8
 ---
 
 # In-Memory Data
-
-
 
 The purpose of this tutorial is to show you how to create in-memory data and use it in the context of your {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
 

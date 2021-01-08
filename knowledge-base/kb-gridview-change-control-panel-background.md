@@ -1,7 +1,7 @@
 ---
 title: How to Change RadGridView ControlPanel Background Color
 page_title: Modify Background Brush of Telerik DataGrid Control Panel
-description: Replace the Color of the GridView ControlPanel
+description: Replace the Color of the GridView ControlPanel.
 type: how-to
 slug: kb-gridview-change-control-panel-background
 position: 0

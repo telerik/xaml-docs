@@ -6,6 +6,7 @@ slug: radlegend-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadLegend
 ---
 
 # Overview
@@ -14,6 +15,10 @@ position: 0
 {% if site.site_name == 'WPF' %}![radlegend wpf](images/radlegend_wpf.png){% endif %}
 
 __RadLegend__ is a stand-alone control which visualizes a list of legend items. The control could be used to create a legend for a chart ot other type of data visualization.  
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radlegend-overview-0.png)
 

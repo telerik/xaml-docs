@@ -1,7 +1,7 @@
 ---
 title: Simple Email Service
 page_title: Simple Email Service
-description: Simple Email Service
+description: This article shows how one can use thе Simple Email Service from a {{ site.framework_name }} application and send an email to a specific address.
 slug: cloud-services/aws/ses
 tags: cloud,aws
 published: True

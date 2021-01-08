@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This topic provides an overview of the articles that demonstrate how to use the Telerik UI for {{ site.framework_name }} suite with different cloud services.
 slug: cloud-integration-overview
 tags: crud,operations,radgridview,cosmosdb
 published: True

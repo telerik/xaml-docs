@@ -1,7 +1,7 @@
 ---
 title: Consuming .NET RIA Service
 page_title: Consuming .NET RIA Service
-description: Consuming .NET RIA Service
+description: The purpose of this tutorial is to show you how to make a call to an .NET RIA Service in the context of a Silverlight application.
 slug: consuming-data-net-ria-service
 tags: consuming,.net,ria,service
 published: True
@@ -10,7 +10,6 @@ site_name: Silverlight
 ---
 
 # Consuming .NET RIA Service
-
 
 
 The purpose of this tutorial is to show you how to make a call to an .NET RIA Service in the context of a Silverlight application. The following common tasks will be examined:

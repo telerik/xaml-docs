@@ -1,3 +1,6 @@
+#Disable CTA panels for PDF
+has_cta_panels: false
+
 intro_columns:
 -
   categories:

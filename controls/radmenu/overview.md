@@ -6,6 +6,7 @@ slug: radmenu-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadMenu
 ---
 
 # Overview
@@ -19,7 +20,11 @@ position: 0
 
 Thank you for choosing Telerik __RadMenu__!        
 
-Telerik __RadMenu__ for {{ site.framework_name }} provides the power to build the entire navigation of your web application. Combining the ability to display hierarchical views and the advanced styling mechanism, RadMenu lets you build even the most complicated site-menu systems. The control provides a number of advanced features like hierarchical data binding, different opening modes, integration with commands and different type of items, as well as full layout and appearance customization capabilities.        
+Telerik __RadMenu__ for {{ site.framework_name }} provides the power to build the entire navigation of your web application. Combining the ability to display hierarchical views and the advanced styling mechanism, RadMenu lets you build even the most complicated site-menu systems. The control provides a number of advanced features like hierarchical data binding, different opening modes, integration with commands and different type of items, as well as full layout and appearance customization capabilities.  
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}      
 
 ![](images/radmenu-overview-0.png)
 

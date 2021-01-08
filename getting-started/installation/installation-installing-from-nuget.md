@@ -1,7 +1,7 @@
 ---
 title: Installing UI for Silverlight from a NuGet package
 page_title: Installing UI for Silverlight from a NuGet package
-description: Installing UI for Silverlight from a NuGet package
+description: This article describes what steps you should perform in order to install Telerik UI for Silverlight from a NuGet package.
 slug: installation-installing-from-nuget
 tags: installing,ui,for,silverlight,from,a,nuget,package
 published: True

@@ -6,6 +6,7 @@ slug: radtimepicker-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTimePicker
 ---
 
 # Overview
@@ -19,10 +20,14 @@ position: 0
 
 Thank you for choosing __Telerik RadTimePicker__! 
 
-![Rad Time Picker Overview 01](images/RadTimePicker_Overview_01.png)
-
 __RadTimePicker__ is a convenient way to get rid of boring time parsing and data validation. RadTimePicker is an easy and simple, but yet essential control to improve end-user experience. Moreover, you can control the layout of the popup that shows time values as well as to use the rich data model in {% if site.site_name == 'Silverlight' %} Silverlight {% endif %} {% if site.site_name == 'WPF' %} WPF
 {% endif %} to populate content dynamically.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![Rad Time Picker Overview 01](images/RadTimePicker_Overview_01.png)
 
 ## Key Features
 

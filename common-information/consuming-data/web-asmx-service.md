@@ -1,7 +1,7 @@
 ---
 title: Consuming Web (asmx) Service
 page_title: Consuming Web (asmx) Service
-description: Consuming Web (asmx) Service
+description: The purpose of this article is to demonstrate how to make a call to a Web Service in the context of a Silverlight application.
 slug: consuming-data-web-asmx-service
 tags: consuming,web,(asmx),service
 published: True

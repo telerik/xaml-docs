@@ -6,6 +6,7 @@ slug: raddatabar-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDataBar
 ---
 
 # Overview
@@ -24,6 +25,10 @@ position: 0
 Thank you for choosing __RadDataBar__!
 
 The __RadDataBar__ control is an information graphic, which is characterized by small size, excellent performance and lightweight. By definition, the RadDataBar is designed to visually represent numeric values. Unlike RadSparkLine its main power is to compare the data cell-by-cell when integrated in grid.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >The following references are required in order to use the control:             
 >	- Telerik.Windows.Controls.DataVisualization.dll

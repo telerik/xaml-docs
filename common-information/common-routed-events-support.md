@@ -1,7 +1,7 @@
 ---
 title: Routed Events Support
 page_title: Routed Events Support
-description: Routed Events Support
+description: Routed Events Support.
 slug: common-routed-events-support
 tags: routed,events,support
 published: True

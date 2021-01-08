@@ -121,5 +121,5 @@ All of the event handlers for these events receive two arguments and are execute
 {{endregion}}	
 	
 ## See Also  
- * [Getting Started]({%slug carousel-getting-started%})
+ * [Getting Started]({%slug wizard-getting-started%})
 	

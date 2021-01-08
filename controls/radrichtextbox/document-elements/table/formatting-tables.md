@@ -1,7 +1,7 @@
 ---
 title: Formatting Tables
 page_title: Formatting Tables
-description: Formatting Tables
+description: This article demonstrates how tables displayed in a RadRichTextBox can be styled.
 slug: radrichtextbox-formatting-tables
 tags: table
 published: True

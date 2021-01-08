@@ -1,7 +1,7 @@
 ---
 title: Using LINQ to SQL Classes
 page_title: Using LINQ to SQL Classes
-description: Using LINQ to SQL Classes
+description: This article demonstrates how you can use the LINQ to SQL classes.
 slug: consuming-data-linq-to-sql-classes
 tags: using,linq,to,sql,classes
 published: False

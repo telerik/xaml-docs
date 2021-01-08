@@ -1,6 +1,6 @@
 ---
 title: WPF Telerik controls not displayed correctly in x64 build platform
-description: Visual Studio design-time does not show Telerik UI elements when the platform is x64 bit
+description: Visual Studio design-time does not show Telerik UI elements when the platform is x64 bit.
 type: troubleshooting
 page_title: Setting the x64 build mode the designer does not display correctly the controls
 slug: kb-telerik-wpf-controls-build-platform

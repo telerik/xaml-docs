@@ -6,6 +6,7 @@ slug: radsparkline_overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadSparkLine
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 __RadSparkline__ is a set of controls that show an information graphic. The controls are characterized by small size, excellent performance and lightweight. By definition, the sparkline is mainly used to outline trends. However, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.
 
 In terms of data visualization, RadSparkline is comparable to [RadCartesianChart]({%slug radchartview-overview%}). However, in order to maximize performance, the spark lines do not utilize this many visual indicators. They also don't use an x or y axis, or multiple axes.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadSparkLine Overview](images/sparkline-overview-0.png)
 

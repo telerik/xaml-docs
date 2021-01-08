@@ -62,10 +62,10 @@ To close the panes of a **RadPaneGroup** on the click of the mouse middle button
 
 ## ClosePane Command
 
-As of **R3 2020**, you can use the new **ClosePane** command to close the currently active pane. An example of how to use the command can be found in [this article]({%slug kb-docking-close-active-pane-command%}).
+As of **R3 2020**, you can use the new **ClosePane** command to close the currently active pane.{% if site.site_name == 'WPF' %} An example of how to use the command can be found in [this article]({%slug kb-docking-close-active-pane-command%}).{% endif %}
 
 ## See Also
 
  * [How to Disable the Close Button]({%slug raddocking-how-to-disable-the-close-button%})
  * [How to Implement Conditional Docking]({%slug raddocking-how-to-implement-conditional-docking%})
- * [How to Close Active Pane]({%slug kb-docking-close-active-pane-command%})
+{% if site.site_name == 'WPF' %}* [How to Close Active Pane]({%slug kb-docking-close-active-pane-command%}){% endif %}

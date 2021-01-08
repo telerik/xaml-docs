@@ -92,13 +92,13 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
     {
         private static string SampleImageFolder = "SampleImages/";
 
-        public static void LoadSampleImage(RadImageEditorUI imageEditorUI, string image)
+        public static void LoadSampleImage(RadImageEditor imageEditor, string image)
         {
             using (Stream stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder + image)).Stream)
             {
-                imageEditorUI.Image = new Telerik.Windows.Media.Imaging.RadBitmap(stream);
-                imageEditorUI.ApplyTemplate();
-                imageEditorUI.ImageEditor.ScaleFactor = 0;
+                imageEditor.Image = new Telerik.Windows.Media.Imaging.RadBitmap(stream);
+                imageEditor.ApplyTemplate();
+                imageEditor.ScaleFactor = 0;
             }
         }
 
@@ -119,11 +119,11 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
     Public Class ImageExampleHelper
 	Private Shared SampleImageFolder As String = "SampleImages/"
 
-	Public Shared Sub LoadSampleImage(ByVal imageEditorUI As RadImageEditorUI, ByVal image As String)
+	Public Shared Sub LoadSampleImage(ByVal imageEditor As RadImageEditor, ByVal image As String)
 		Using stream As Stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder & image)).Stream
-			imageEditorUI.Image = New Telerik.Windows.Media.Imaging.RadBitmap(stream)
-			imageEditorUI.ApplyTemplate()
-			imageEditorUI.ImageEditor.ScaleFactor = 0
+			imageEditor.Image = New Telerik.Windows.Media.Imaging.RadBitmap(stream)
+			imageEditor.ApplyTemplate()
+			imageEditor.ScaleFactor = 0
 		End Using
 	End Sub
 

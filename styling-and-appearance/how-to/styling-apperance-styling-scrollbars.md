@@ -1,7 +1,7 @@
 ---
 title: Styling Scrollbars
 page_title: Styling Scrollbars
-description: Styling Scrollbars
+description: The article demonstrates how to modify the styles of the ScrollBar element to suit your requirements.
 slug: styling-apperance-styling-scrollbars
 tags: styling,scrollbars
 published: True

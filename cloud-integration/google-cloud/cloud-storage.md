@@ -1,7 +1,7 @@
 ---
 title: Cloud Storage
 page_title: Cloud Storage
-description: Cloud Storage
+description: Integrating Google Cloud storage to upload and retrieve data using the controls from the Telerik UI for {{ site.framework_name }} suite.
 slug: cloud-integration-google-cloud-storage
 tags: cloud,integration,google,storage
 published: True

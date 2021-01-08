@@ -1,7 +1,7 @@
 ---
 title: DomainDataSource Support
 page_title: DomainDataSource Support
-description: DomainDataSource Support
+description: The purpose of this tutorial is to demonstrate how to use DomainDataSource in the context of a Silverlight application.
 slug: consuming-data-domain-datasource-support
 tags: domaindatasource,support
 published: True

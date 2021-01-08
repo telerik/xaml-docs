@@ -1,7 +1,7 @@
 ---
 title: Upgrade Project
 page_title: Upgrade Project
-description: Upgrade Project
+description: Check how you can upgrade your Silverlight project using Telerik Visual Studio Extensions.
 slug: radcontrols-for-silverlight-vs-extensions-upgrading
 tags: upgrading,to,a,new,ui,for,silverlight,distribution, version
 published: True

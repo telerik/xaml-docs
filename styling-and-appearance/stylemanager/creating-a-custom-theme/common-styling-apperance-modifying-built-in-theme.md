@@ -1,7 +1,7 @@
 ---
 title: Modifying a Built-In Theme
 page_title: Modifying a Built-In Theme
-description: Modifying a Built-In Theme
+description: This topic will demonstrate how to modify and apply a built-in theme.
 slug: common-styling-apperance-modifying-built-in-theme
 tags: modifying,a,built-in,theme
 published: True
@@ -10,7 +10,6 @@ site_name: Silverlight
 ---
 
 # Modifying a Built-In Theme
-
 
 
 ## 

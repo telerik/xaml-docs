@@ -1,7 +1,7 @@
 ---
 title: Translation
 page_title: Translation
-description: Translation
+description: This article demonstrates how you can use Google's Translation API in a {{ site.framework_name }} application.
 slug: cloud-integration-cognitive-services-google-translation
 tags: cloud,integration,google,cognitive,services,translation
 published: True

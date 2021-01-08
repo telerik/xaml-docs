@@ -1,7 +1,7 @@
 ---
 title: Explore Control Features
 page_title: Explore Control Features
-description: Explore Control Features
+description: This article will show you the shortest way to get started with Telerik UI for {{ site.framework name }} control features.
 slug: getting-started-explore-control-features
 tags: Explore Control Features
 published: True

@@ -6,6 +6,7 @@ slug: radtoolbar-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadToolBar
 ---
 
 # Overview
@@ -20,9 +21,13 @@ position: 0
 
 Thank you for choosing Telerik __RadToolBar__!
 
-![RadToolBar](images/RadToolBar.png)
-
 __RadToolBar__ is an __ItemsControl__ that can contain a group of controls (items). The __RadToolBar__ can also display its items in accompanying (pop-up) overflow area if the available area is too small.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![RadToolBar](images/RadToolBar.png)
 
 The __RadToolBar__ mimics the functionality and behavior of the Visual Studio toolbar with its __Strip__ and __Overflow__ areas. All the items in the toolbar will jump between the strip and the overflow depending on the toolbar's size. In addition, the developer is able to stick items into one of these areas using the attached __OverflowMode__ property.
 

@@ -41,9 +41,11 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 #### __[XAML] Example 2: RadListBoxItem Style__
 
 {{region xaml-radlistbox-features-dragdrop_1}}
-	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
-	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-	</Style>
+	<UserControl.Resources>
+		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
+	    		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+		</Style>
+	</UserControl.Resources>
 {{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadListBoxItem should be based on the default __RadListBoxItemStyle__.
@@ -51,9 +53,11 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 #### __[XAML] Example 3: RadListBoxItem Style in NoXAML__
 
 {{region xaml-radlistbox-features-dragdrop_2}}
-	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
-		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-	</Style>
+	<UserControl.Resources>
+		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
+			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+		</Style>
+	</UserControl.Resources>
 {{endregion}}
 
 * Attach the ListBoxDragDropBehavior behavior:
@@ -69,6 +73,8 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 {{endregion}}
 
 ## Features
+
+## DragVisualProvider
 
 The DragVisualProvider enriches the drag-drop functionality of RadListBox control by providing a different visual DragCue to the dragged item.
 
@@ -110,7 +116,13 @@ And when pointing the bottom part of an item, the DragCue indicates that the dra
 
 * __Custom DragVisualProvider__: More detailed information on how to create a custom DragVisualProvider can be found [here]({%slug radlistbox-styles-and-templates-customize-the-dragvisualprovider%}).            
 
-## Converting data
+### Multiple-Item Drag
+
+The drag-drop functionality also works out-of-the-box when the [SelectionMode]({%slug radlistbox-features-selection%}#setting-selectionmode) is **Multiple** or **Extended**.
+
+>When debugging, Visual Studio places the [debugger toolbar](https://docs.microsoft.com/en-us/visualstudio/xaml-tools/inspect-xaml-properties-while-debugging) on the drag visual, and if your mouse happens to be over the toolbar during the drag operation, dropping will not be allowed. To prevent this, you can either minimize or remove the toolbar before the drag, or run your project without the debugger.
+
+## Converting Data
 
 In scenarios with drag-drop between controls containing different item types the dragged data should be converted using a DataConverter. The following example shows how to create a custom DataConverter when converting data between two RadListBox controls, one of them containing items of type Product and the other - of type Order.
 
@@ -171,3 +183,4 @@ The end result:
 ## See Also
 
  * [Drag-Drop between RadListBox and RadScheduleView]({%slug radlistbox-features-dragdrop-scheduleview%})
+ * [SelectionMode]({%slug radlistbox-features-selection%}#setting-selectionmode)

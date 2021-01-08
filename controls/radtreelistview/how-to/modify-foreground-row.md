@@ -10,11 +10,50 @@ position: 1
 
 # Modify foreground color of Selected/Hovered row
 
-This help article explains how to modify the foreground color of __TreeListViewRow__ on selecting it or hovering over it.
+This help article explains how to change the foreground color of the __TreeListViewRow__ upon selecting it or hovering over it.
 
-Every row shows a set of __GridViewCells__. In order to change the foreground of all the __GridViewCells__ when their parent row is hovered/selected you should predefine the template of __TreeListViewRow__ and access the part __DataCellsPresenter__. This element is a plain presenter used to display the cells contained in a row.
+## Creating a Style Targeting TreeListViewRow
 
-You should then add an additional animation to the default hover/selection states of a row and manipulate the Foreground property of **PART_DataCellsPresenter**.        
+In order to achieve this you can create a style targeting TreeListViewRow and add triggers that change its __Foreground__ as demonstrated in __Example 1__.
+
+> __Example 1__ uses the WarehouseViewModel and its dependencies defined in the [Getting Started]({%slug radtreeliestview-getting-started%}) article of the RadTreeListView.
+
+#### __[XAML] Example 1: Custom style targeting TreeListViewRow__
+{{region xaml-radtreelistview-how-to-modify-foreground-row-0}}
+
+    <Window.DataContext>
+        <my:WarehouseViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <!-- If you are using the NoXaml binaries, you should base the style on the default one for the theme like so-->
+        <!-- <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowStyle}"> -->
+        <Style TargetType="telerik:TreeListViewRow" >
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground" Value="Red" />
+                </Trigger>
+                <MultiTrigger >
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True"/>
+                        <Condition Property="IsSelected" Value="False"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Foreground" Value="Green" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <telerik:RadTreeListView x:Name="radTreeListView" 
+                            ItemsSource="{Binding WarehouseItems}">
+        <telerik:RadTreeListView.ChildTableDefinitions>
+            <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
+        </telerik:RadTreeListView.ChildTableDefinitions>
+    </telerik:RadTreeListView>
+{{endregion}}
+
+> The demonstrated approach may not be relevant for all UI for WPF themes. 
+
+#### __Figure 1: Result from Example 1 in the Fluent theme__
+![Selected and Hovered TreeListViewRows](images/TreeListView_Hovered_MouseOver_Row.png)
 
 ## See Also
  * [Templates Structure]({%slug radtreelistview-templates-structure%})

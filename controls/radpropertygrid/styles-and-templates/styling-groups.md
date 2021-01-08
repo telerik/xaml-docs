@@ -1,7 +1,7 @@
 ---
 title: Styling Groups
 page_title: Styling Groups
-description: GroupStyle
+description: GroupStyle.
 slug: radpropertygrid-groupstyle
 tags: group, style, group style
 published: True

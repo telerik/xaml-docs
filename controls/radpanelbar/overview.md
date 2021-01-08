@@ -6,6 +6,7 @@ slug: radpanelbar-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadPanelBar
 ---
 
 # Overview
@@ -16,6 +17,10 @@ position: 0
 Thank you for choosing Telerik __RadPanelBar__!  
 
 __RadPanelBar__ is a versatile component allowing you to build different navigation systems such as left/right side menus and Outlook style panels. The templating mechanism of the control provides the ability to customize it so that it can represent a site navigation system.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadPanelBar Overview](images/panelbar-overview-0.png)
 

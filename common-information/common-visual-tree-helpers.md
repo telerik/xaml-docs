@@ -1,7 +1,7 @@
 ---
 title: Visual Tree Helpers
 page_title: Visual Tree Helpers
-description: Visual Tree Helpers
+description: Telerik UI for {{ site.framework_name }} provides a few visual tree helper methods in the ChildrenOfTypeExtensions and ParentOfTypeExtensions classes.
 slug: common-visual-tree-helpers
 tags: childrenoftype, parentoftype, visual, tree, helper
 published: True

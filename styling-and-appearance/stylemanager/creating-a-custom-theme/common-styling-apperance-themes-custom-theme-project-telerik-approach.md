@@ -1,7 +1,7 @@
 ---
 title: Creating a Custom Theme Project - Using the Telerik Approach
 page_title: Creating a Custom Theme Project - Using the Telerik Approach
-description: Creating a Custom Theme Project - Using the Telerik Approach
+description: This article demonstrates the Telerik approach for creating a custom theme project.
 slug: common-styling-apperance-themes-custom-theme-project-telerik-approach
 tags: creating,a,custom,theme,project,-,using,the,telerik,approach
 published: True

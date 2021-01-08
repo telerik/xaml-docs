@@ -1,7 +1,7 @@
 ---
 title: Adding UI for Silverlight to Visual Studio 2015 Toolbox
 page_title: Adding UI for Silverlight to Visual Studio 2015 Toolbox
-description: Adding UI for Silverlight to Visual Studio 2015 Toolbox
+description: The article shows how to add Telerik UI for Silverlight to the Visual Studio ToolBox.
 slug: installation-adding-to-vs-2015-toolbox-sl
 tags: adding,ui,for,silverlight,to,visual,studio,2015,toolbox
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Overview
+description: This article provides an overview of the articles that demonstrate how to integrate the controls from the UI for {{ site.framework_name }} suite with Microsoft Azure.
 slug: cloud-integration-azure-overview
 tags: crud,operations,radgridview,cosmosdb
 published: True

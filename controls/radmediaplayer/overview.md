@@ -6,6 +6,7 @@ slug: radmediaplayer-overview
 tags: overview
 publish: True
 position: 0
+CTAControlName: RadMediaPlayer
 ---
 
 # Overview
@@ -15,6 +16,10 @@ Thank you for choosing __RadMediaPlayer__!
 ![RadMediaPlayer](images/mediaplayer_sl_icon.png)
 
 __RadMediaPlayer__ allows you to easily deliver audio and video content to your web site by using the great flexibility of the control. You can create and load playlists, set chapters, watch the video in a full-screen mode and completely customize the appearance of the control.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 __Key Features:__
 

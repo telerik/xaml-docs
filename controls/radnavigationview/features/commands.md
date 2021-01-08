@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-description:
+description: This article explains how to use commands in the context of the RadNavigationViewItems.
 slug: radnavigationview-commands
 tags: commands, navigationviewitem
 position: 3

@@ -1,7 +1,7 @@
 ---
 title: Working with Content Controls UI
 page_title: Working with Content Controls UI
-description: This article describes how to work with the Content Controls UI
+description: This article describes how to work with the Content Controls UI.
 slug: radrichtextbox-features-working-with-content-controls-ui
 tags: content controls, richtextbox
 published: True

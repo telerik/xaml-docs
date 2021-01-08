@@ -1,7 +1,7 @@
 ---
 title: Namespace Declaration
 page_title: Namespace Declaration
-description: Namespace Declaration
+description: The following topic will show you how to manually declare a Telerik WPF namespace in XAML.
 slug: installation-adding-application-namespace-declaration
 tags: namespace,declaration
 published: True

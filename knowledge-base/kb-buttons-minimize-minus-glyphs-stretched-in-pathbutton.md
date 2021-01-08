@@ -1,7 +1,7 @@
 ---
 title: Minimize and Minus Glyphs are Stretched When Shown in RadPathButton
 page_title: Minimize and Minus Glyph Icons not Displayed Properly in RadPathButton
-description: The Minimize and Minus font glyphs are stretched when hosted in PathButton
+description: The Minimize and Minus font glyphs are stretched when hosted in PathButton.
 type: troubleshooting
 slug: kb-buttons-minimize-minus-glyphs-stretched-in-pathbutton
 position: 0

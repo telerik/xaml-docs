@@ -11,31 +11,26 @@ position: 2
 # Getting Started
 
 Telerik __RadDiagrams__ are a powerful diagramming framework that can bring to life your rich data-visualization scenarios. This tutorial will walk you through the main concepts and tools of the diagramming framework and help you to create the flow diagram of an "if-else" operator.
- 
-* [Assembly References] (#assembly-references)
-* [Graph Object Model] (#graph-object-model)
-* [Setting up the drawing canvas] (#setting-up-the-drawing-canvas)
-* [Adding RadDiagramShapes] (#adding-raddiagramshapes)
-* [Adding RadDiagramConnections] (#adding-raddiagramconnections)
-* [RadDiagram Example - "if-else" operator flow diagram] (#raddiagram-example---if-else-operator-flow-diagram)
 
 #### __Figure 1: Flow diagram example__  
 ![Rad Diagram Getting Started Sample](images/RadDiagram_GettingStartedSample.png)
 
 ## Assembly References
 
-In order to use the __Telerik Diagramming Framework__ in your projects, you have to add references to the following assemblies:			
-
+In order to use the __Telerik Diagramming Framework__ in your projects, you have to add references to the following assemblies:  
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Diagrams__
 * __Telerik.Windows.Diagrams.Core__
 
+To use the RadDiagram [MVVM support]({%slug raddiagram-data-extensionsviewmodels%}) or one of the extensions tools like the [settings pane]({%slug raddiagram-extensions-settingspane-overview%}) or the [toolbox]({%slug raddiagram-extensions-toolbox%}) you will need to add reference also to the following assemblies:
+* __Telerik.Windows.Controls.Diagrams.Extensions__ 
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
+
+The following picture shows the interdependency between the RadDiagram main assemblies. Note that the Telerik.Windows.Controls.Diagrams.Extensions relies also on Telerik.Windows.Controls.Input and Telerik.Windows.Controls.Navigation.
+
 #### __Figure 2: Interdependency of the RadDiagram control main assemblies__  
 ![Rad Diagram Getting Started Dependancies](images/RadDiagram_GettingStarted_Dependancies.png)
-
-The interdependency of the main assemblies is quite straightforward. The only thing that is not obvious here is that the __Telerik.Windows.Controls.Diagrams.Extensions__ assembly also depends on the:	  
-* __Telerik.Windows.Controls.Input.dll__
-* __Telerik.Windows.Controls.Navigation.dll__
 
 >tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html) help article.
 

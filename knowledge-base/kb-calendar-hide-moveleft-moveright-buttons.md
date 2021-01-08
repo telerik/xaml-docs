@@ -1,6 +1,6 @@
 ---
 title: How to Hide the Forward and Backward Buttons in RadCalendar
-description: Controlling the visibility of the previous and next buttons in RadCalendar
+description: Controlling the visibility of the previous and next buttons in RadCalendar.
 type: how-to
 page_title: Change the Visibility of the Move Left and Move Right Buttons in the Calendar Header
 slug: kb-calendar-hide-moveleft-moveright-buttons

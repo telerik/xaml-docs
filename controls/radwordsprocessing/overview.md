@@ -6,6 +6,7 @@ slug: radwordsprocessing-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadWordsProcessing
 ---
 
 # Overview
@@ -15,7 +16,11 @@ position: 0
 
 **RadWordsProcessing** is a processing library that allows to create, modify and export documents to a variety of formats. Through the API, you can access each element in the document and modify, remove it or add a new one. The generated content you can save as a stream, as a file, or send it to the client browser.
 
-   ![RadWordsProcessing Overview image](images/RadWordsProcessing_Overview_01.png)
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![RadWordsProcessing Overview image](images/RadWordsProcessing_Overview_01.png)
 
 
 ## Model
@@ -41,6 +46,8 @@ The model of **RadWordsProcessing** includes:
 	* The document model includes a repository of Style objects which contain sets of character, paragraph or table style properties.
 	* The API allows you create custom styles and use them throughout the document.
 	* [List styles](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/concepts/lists).
+
+* [**Content Controls**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/model/content-controls/content-controls): Content controls or Structured Document Tags (SDT) enable users to add specific semantics to part of the document: restricting input, modifying editing behavior etc. This functionality allows adding of checkboxes, combo boxes and other controls to the document as well. 
 
 ## Features:
 

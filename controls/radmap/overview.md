@@ -6,6 +6,7 @@ slug: radmap-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadMap
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadMap__!        
 
 Visualize rich geographical information with Telerik __RadMap__, zoom and pan smoothly to any corner of the earth. If you want to give geographical context to your data – that’s easy. __RadMap__ allows adding any elements or shapes to it. The control supports items virtualization through web services to guarantee blazing fast performance.        
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/RadMap_Overview_02.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Hide Zero Values Labels in PieChart
 page_title: Remove Zero Values Labels in PieChart
-description: This article described how to hide zero segments labels in PieChart
+description: This article described how to hide zero segments labels in PieChart.
 slug: radchartview-troubleshooting-hide-zero-segments-labels
 tags: troubleshooting,howto,zero,piechart,label,pieseries,slice,hide,remove,segments
 published: True

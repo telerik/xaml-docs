@@ -6,6 +6,7 @@ slug: radbusyindicator-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadBusyIndicator
 ---
 
 # Overview
@@ -20,6 +21,10 @@ position: 0
 Thank you for choosing __RadBusyIndicator__!
 
 __RadBusyIndicator__ enables you to display a notification whenever a longer-running background process is being handled by the application. This makes the UI more informative and the user experience smoother.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/radbusyindicator-overview-0.png)
 

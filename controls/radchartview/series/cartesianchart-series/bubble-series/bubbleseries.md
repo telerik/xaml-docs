@@ -39,12 +39,12 @@ You can use the following definition to display a simple BubbleSeries:
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-The following image demonstrates the end result:
+The following image demonstrates the end result:  
 ![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_01.png)
 
 ## Data bound series
 
-You can use the ValueBinding, CategoryBinding and the BubbleSizeBinding properties of the BubbleSeries to bind the DataPoints’ properties to the properties from your view models.
+You can use the __ValueBinding__, __CategoryBinding__ and the __BubbleSizeBinding__ properties of the BubbleSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __C#__
 {{region radchartview-series-bubbleseries-1}}

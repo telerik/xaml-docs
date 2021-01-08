@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Messages Overview
-description: Messages Overview
+description: Messages Overview.
 slug: chat-items-messages-overview
 tags: messages, overview
 published: True

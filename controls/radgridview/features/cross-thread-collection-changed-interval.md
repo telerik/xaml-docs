@@ -1,7 +1,7 @@
 ---
 title: Cross Thread CollectionChanged Interval
 page_title: Cross Thread CollectionChanged Interval
-description: The CrossThreadCollectionChangedInterval property allows you to control the time interval at which the CollectionChanged is dispatched to the UI thread
+description: The CrossThreadCollectionChangedInterval property allows you to control the time interval at which the CollectionChanged is dispatched to the UI thread.
 slug: radgridview-features-cross-thread-collection-changed-inverval
 tags: cross,thread,async,itemssourcess
 published: True

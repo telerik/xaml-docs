@@ -30,9 +30,6 @@ styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apper
 integration/visual-studio-extensions/for-silverlight-vs-extensions-project-configuration.md,
 integration/visual-studio-extensions/for-silverlight-vs-extensions-automatic-resolving.md,
 integration/visual-studio-extensions/for-silverlight-vs-extensions-upgrading.md,
-assembly-minifier-section.md,
-assembly-minifier/minifier-what-is-new.md,
-assembly-minifier/overview.md,
 controls/radchart/chart-localization.md,
 controls/radchart/how-to/howto-integration-radcontextmenu.md,
 controls/radchart/how-to/howto-integrate-data-visualization-with-wcf-ria-services.md,
@@ -1049,6 +1046,9 @@ navigation:
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
         position: 6
+    "getting-started/telerik-application-lifecycle":
+        title: "Telerik Application Lifecycle"
+        position: 7
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
     "styling-and-appearance/troubleshooting":
@@ -3909,6 +3909,7 @@ sdk_examples: "sdk_wpf.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"
 sdk_cdn_path: "https://cdn.rawgit.com/telerik/xaml-sdk/master/"
 has_kb_portal: true
+has_cta_panels: true
 
 ## Do not edit below this line
 skip_tabbed_code: true

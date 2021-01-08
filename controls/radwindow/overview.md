@@ -6,6 +6,7 @@ slug: radwindow-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadWindow
 previous_url: http://www.telerik.com/help/wpf/radwindow-overview.html
 ---
 
@@ -21,6 +22,10 @@ previous_url: http://www.telerik.com/help/wpf/radwindow-overview.html
 Thank you for choosing Telerik __RadWindow__!
 
 With Telerik __RadWindow__ you can easily add modal popups to your application.  Draw attention to important information or receive user input. __RadWindow__ lets you create child and dialog Windows, which can have their appearance and content customized. The control provides a flexible API to easily control its behavior and makes possible the implementation of complex logic for a wide range of scenarios.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Window Overview 03](images/radwindow-overview.png)
 

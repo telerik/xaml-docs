@@ -1,7 +1,7 @@
 ---
 title: Create Custom Connection Cap
 page_title: Create Custom ConnectionCap
-description: Create Custom ConnectionCap
+description: Create Custom ConnectionCap.
 slug: raddiagram-howto-create-custom-connectioncap
 tags: create,custom,connectioncap
 published: True
@@ -164,7 +164,7 @@ After utilising this code you can go in XAML and use your custom connection like
 		</telerik:RadDiagram>
 {{endregion}}
 		
->"__local__" points to the namespace where the CustomConnection class is defined.
+>"__local__" points to the namespace where the CustomConnection class is defined. Note, that if you are using the NoXaml dlls, you should base the style for the CustomConnection on the [default one for the theme]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls).
 
 ![Custom Cap](images/RadDiagram_Features_CustomCapsFinal2.png)
 

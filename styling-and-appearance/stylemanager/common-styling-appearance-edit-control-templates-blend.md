@@ -1,7 +1,7 @@
 ---
 title: Editing Control Templates in Expression Blend
 page_title: Editing Control Templates in Expression Blend
-description: Editing Control Templates in Expression Blend
+description: This article explains how to extract and edit the controls' styles and templates in Microsoft Blend.
 slug: common-styling-appearance-edit-control-templates-blend
 tags: editing,control,templates,in,expression,blend
 published: True

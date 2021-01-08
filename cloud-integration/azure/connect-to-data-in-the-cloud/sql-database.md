@@ -1,7 +1,7 @@
 ---
 title: SQL Database
 page_title: SQL Database
-description: SQL Database
+description: This article demonstrates how to integrate an Azure's SQL Database and display the data in RadGridView.
 slug: cloud-integration-azure-sql-database
 tags: cloud,integration,azure,sql,database
 published: True

@@ -28,7 +28,7 @@ They are represented by several additional __simplified styles, which you can me
 >The performance on loading the visual elements will be increased __up to 25%__ when the lightweight templates are applied.
 {% endif %}
 
->Please note that the __row details/hierarchy__ option is __not supported__ with these templates.
+>Please note that the **row details** and **hierarchy** features are not supported for rows which use lightweight templates as the **PART_HierarchyChildPresenter** and **PART_DetailsPresenter** elements which are responsible for displaying the hierarchcal data are not defined in these templates. They can, however, still be used for the bottom-level RadGridView instances of the hierarchy (those which do not have any children).
 
 ## Core Styles
 

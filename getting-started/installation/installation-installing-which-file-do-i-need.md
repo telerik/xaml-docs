@@ -1,7 +1,7 @@
 ---
 title: Which File Do I Need to Install?
 page_title: Which File Do I Need to Install?
-description: Which File Do I Need to Install?
+description: This article describes the installation packages for the Telerik UI for {{ site.framework_name }} and for the Demos application.
 slug: installation-installing-which-file-do-i-need
 tags: which,file,do,i,need,to,install?
 published: True

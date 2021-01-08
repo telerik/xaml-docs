@@ -1,7 +1,7 @@
 ---
 title: SDK Samples Browser 
 page_title: SDK Samples Browser 
-description: SDK Samples Browser 
+description: Check our &SDK Samples Browser&quot; application, which allows for exploring the examples from the XAML SDK repository. 
 slug: sdk-samples-browser
 tags: sdk,samples,browser,
 published: True
@@ -12,7 +12,7 @@ position: 1
 
 ![sdk-samples-browser-1](images/sdk-samples-browser-1.png)
 
-Thank you for choosing Telerik SDK Samples Browser
+Thank you for choosing Telerik SDK Samples Browser.
             
 The SDK Samples Browser is an application that automatically connects to GitHub and downloads the XAML SDK repository locally to a location that could be set by the user. After download is complete the application gives a very convenient navigation between all the available examples and a search functionality which doesn’t simply search by control’s names but also through the example’s names and descriptions.
             

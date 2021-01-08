@@ -6,6 +6,7 @@ slug: raddesktopalert-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDesktopAlert
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadDesktopAlert__!
 
 __RadDesktopAlert__ is a WPF control that allows you to display notifications on the desktop if a specific event occurs in your application - new e-mail message, meeting request or task request is received. It is displayed as a small popup on a predetermined location for a short period of time and gets automatically closed after the elapsing of that time. By using __RadDesktopAlertManager__ multiple alerts could easily be displayed and managed. The manager also takes care of the proper positioning of the alerts.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Desktop Alert Overview 02](images/RadDesktopAlert_Overview_02.png)
 

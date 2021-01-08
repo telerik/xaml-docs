@@ -6,6 +6,7 @@ slug: radbook-overview
 tags: overview, radbook
 published: True
 position: 0
+CTAControlName: RadBook
 ---
 
 # Overview
@@ -18,6 +19,10 @@ position: 0
 {% endif %}
 
 Thank you for choosing Telerik __RadBook__!
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![RadBook Overview](images/book_overview.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Table Overview
 page_title: Table Overview
-description: Table Overview
+description: This article describes how you can create, edit and style the tables displayed by RadRichTextBox.
 slug: radrichtextbox-features-document-elements-tables
 tags: table
 published: True

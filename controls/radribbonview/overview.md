@@ -6,6 +6,7 @@ slug: radribbonview-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadRibbonView
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadRibbonView__!
 
 __RadRibbonView__ is an easy-to-use implementation of the MS Office “ribbon” UI, which allows you to codelessly organize the navigation functionality of your application into a single compact toolbar control. Its popup engine, dynamic resizing and powerful customization capabilities make the RibbonView your shortcut to creating powerful navigation systems.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![](images/ribbonview-overview-0.png)
 

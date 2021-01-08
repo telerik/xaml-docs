@@ -1,7 +1,7 @@
 ---
 title: Popup Content Position
 page_title: Popup Content Position
-description: Popup Content Position
+description: This article describes how to resolve the wrong position of a popup's content when it is not aligned as expected.
 slug: troubleshooting-popup-content-position
 tags: popup, ribbonview, content, position, troubleshooting
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Popup Content Position
 
-This article describes how to resolve the wrong position of popup content when it is not aligned as expected.
+This article describes how to resolve the wrong position of a popup's content when it is not aligned as expected.
 
 The Popup control in WPF is affected by the Windows OS menu settings. This can be noticed in controls that display its content in a popup. For example, the minimized content of RadRibbonView or the items of the RadComboBox control. You can see the popup element aligned to its placement target differently on different machines.
 

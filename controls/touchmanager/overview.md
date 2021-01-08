@@ -6,6 +6,7 @@ slug: touchmanager-overview
 tags: overview,touch,manager,touchmanager
 published: True
 position: 0
+CTAControlName: TouchManager
 ---
 
 # TouchManager Overview
@@ -20,6 +21,11 @@ position: 0
 __TouchManager__ is a framework that provides an intuitive API for handling the interaction on touch devices. The framework allows you to subscribe to touch events and control the touch hit test visibility of the elements in the visual tree. 
 
 > __TouchManager__ is used for implementing the touch support of the controls in the UI for WPF suite.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
 
 ## Features
 

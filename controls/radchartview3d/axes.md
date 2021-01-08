@@ -176,7 +176,7 @@ This type of axis has a notion of range which means that it has minimum, maximum
 
 * __Tick origin__: The axis tick positions are determined by the __MajorStep__ and the __TickOrigin__ properties. The ticks will be generated such that a tick is positioned at the given TickOrigin. 
 
-	#### __[XAML] Example 13: Setting the axis title__
+	#### __[XAML] Example 13: Setting the axis tick origin__
 	{{region xaml-radchartview-3d-axes-11}}	
 		<telerik:LinearAxis3D Minimum="0" Maximum="10" MajorStep="2.5" TickOrigin="5"/>
 	{{endregion}}
@@ -186,7 +186,7 @@ This type of axis has a notion of range which means that it has minimum, maximum
 
 * __Label format__: You can use the LabelFormat property to format the values of the axis labels.
 
-	#### __[XAML] Example 14: Setting the axis title__
+	#### __[XAML] Example 14: Setting the axis label format__
 	{{region xaml-radchartview-3d-axes-12}}	
 		<telerik:LinearAxis3D LabelFormat="P0"/>
 	{{endregion}}

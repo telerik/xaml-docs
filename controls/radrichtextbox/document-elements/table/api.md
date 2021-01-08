@@ -1,7 +1,7 @@
 --- 
 title: Properties and Methods
 page_title: Properties and Methods
-description: Properties and Methods
+description: This article describes the public API of the RadRichTextBox Table element.
 slug: radrichtextbox-features-api
 tags: table, header, row, repeat
 published: True

@@ -6,6 +6,7 @@ slug: radtimespanpicker-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTimeSpanPicker
 ---
 
 # Overview
@@ -15,6 +16,10 @@ position: 0
 Thank you for choosing Telerik __RadTimeSpanPicker__!
 
 __RadTimeSpanPicker__ is a UI component that provides a full control over picking a specific time span and duration using the built-in components for days, hours, minutes, seconds and milliseconds. You could easily define some minimum/maximum ranges and specific value step for the components. __RadTimeSpanPicker__ also provides the ability to create custom components to meet any specific user scenarios.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Time Span Picker Overview 02](images/RadTimeSpanPicker_Overview_02.png)
 

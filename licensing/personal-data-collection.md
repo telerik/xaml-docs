@@ -1,7 +1,7 @@
 ---
 title: Personal Data Collection
 page_title: Personal Data Collection
-description: Personal Data Collection
+description: This article provides information about the types of personal data that is collected.
 slug: common-personal-data-collection
 tags: personaldatacollection, gdpr
 position: 4

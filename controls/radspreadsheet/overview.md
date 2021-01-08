@@ -6,11 +6,10 @@ slug: radspreadsheet-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadSpreadsheet
 ---
 
 # Overview
-
-
 
 {% if site.site_name == 'Silverlight' %}![spreadsheet sl 46 text](images/spreadsheet_sl_46_text.png){% endif %}{% if site.site_name == 'WPF' %}![spreadsheet wpf 46 text](images/spreadsheet_wpf_46_text.png){% endif %}
 
@@ -19,6 +18,10 @@ position: 0
 Thank you for choosing Telerik __RadSpreadsheet__!
 
 __RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![Rad Spreadsheet Overview ](images/RadSpreadsheet_Overview.png)
 

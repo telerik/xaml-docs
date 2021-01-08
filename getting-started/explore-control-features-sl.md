@@ -1,7 +1,7 @@
 ---
 title: Explore Control Features
 page_title: Explore Control Features
-description: Explore Control Features
+description: The article provides an overview of how to find control feature information.
 slug: getting-started-explore-control-features-sl
 tags: Explore Control Features
 published: True

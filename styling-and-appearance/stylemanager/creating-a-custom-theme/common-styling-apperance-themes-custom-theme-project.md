@@ -1,7 +1,7 @@
 ---
 title: Creating a Custom Theme Project
 page_title: Creating a Custom Theme Project
-description: Creating a Custom Theme Project
+description: How to create a custom Telerik Silverlight theme for StyleManager.
 slug: common-styling-apperance-themes-custom-theme-project
 tags: creating,a,custom,theme,project
 published: True
@@ -10,10 +10,6 @@ site_name: Silverlight
 ---
 
 # Creating a Custom Theme Project
-
-
-
-## 
 
 The second option to create a custom theme is to create your own custom theme project, which doesn't follow the approach from the Telerik built-in themes. Basically, what you need to do is to create XAML files for the controls that you want to style and then to combine them in one file (like Generic.xaml) using __ResourceDictionary.MergedDictionaries__. Then create a new class, which derives from __Telerik.Windows.Controls.Theme__. In the constructor you should set the source to point to the Generic.xaml file (that merges all your XAML files from the theme project). The tricky part here is that you should have references to all assemblies that you are styling. Which means that if you have Style for __RadMenu__ in your theme project, you should have a reference to the __Telerik.Windows.Controls.Navigation.dll__ assembly in your application or you will get an exception.
 

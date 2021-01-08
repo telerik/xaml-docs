@@ -1,6 +1,6 @@
 ---
 title: How to Bind ValueBinding Property of a Series by Using CategoricalSeriesDescriptor
-description: How to Bind ValueBinding Property of a Series by Using CategoricalSeriesDescriptor
+description: This article demonstrates how to bind the ValueBinding property of a series using a CategoricalSeriesDescriptor.
 type: how-to
 page_title: How to DataBind ValuePath of CategoricalSeriesDescriptor 
 slug: kb-chartview-bind-valuebinding-with-categoricalseriesdescriptor

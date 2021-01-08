@@ -1,7 +1,7 @@
 ---
 title: Command Support
 page_title: Command Support
-description: Command Support
+description: This article describes the support for commands implemented by the Telerik UI for Silverlight controls.
 slug: common-command-support
 tags: command,support
 published: True

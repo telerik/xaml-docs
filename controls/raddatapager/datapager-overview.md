@@ -6,6 +6,7 @@ slug: datapager-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadDataPager
 ---
 
 # Overview
@@ -22,7 +23,11 @@ position: 0
 
 {% endif %}
 
-Telerik __RadDataPager__ provides the user with a navigation interface to page through any collection of data. The control provides paged data source to any data-bound controls. __RadDataPager__ is extremely helpful when working with large collections of data. 
+Telerik __RadDataPager__ provides the user with a navigation interface to page through any collection of data. The control provides paged data source to any data-bound controls. __RadDataPager__ is extremely helpful when working with large collections of data.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %} 
 
 ![](images/DataPager.jpg)
 

@@ -6,6 +6,7 @@ slug: radtabbedwindow-overview
 tags: overview
 published: True
 position: 0
+CTAControlName: RadTabbedWindow
 ---
 
 # Overview
@@ -13,6 +14,10 @@ position: 0
 ![RadTabbedWindow](images/tabbedwindow-icon.png)
 
 The RadTabbedWindow enables you to create browser-like interface which hosts its tabs in the title bar. The control also allows you to pin the tabs or reorder them via drag drop. Last but not least, RadTabbedWindow's functionality and appearance can be easily customized through its rich API.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 {% figure 1, "RadTabbedWindow in the Office2016 theme", "tabbedwindow-overview.png" %}
 

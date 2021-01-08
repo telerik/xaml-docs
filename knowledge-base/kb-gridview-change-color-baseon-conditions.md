@@ -1,6 +1,6 @@
 ---
 title: Change the Color of GridViewCell Based on a Property's Value
-description: Using a Property's Value to Change the Background of a GridViewCell
+description: Using a Property's Value to Change the Background of a GridViewCell.
 type: how-to
 page_title: Apply a Different Background on the GridViewCell Based on a Condition
 slug: kb-gridview-change-color-baseon-conditions

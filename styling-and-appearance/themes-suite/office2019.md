@@ -1,7 +1,7 @@
 ---
 title: Office2019 Theme
 page_title: Office2019 Theme
-description: Office2019 Theme
+description: Familiarize yourself with the Office2019 theme, inspired by the well-known Microsoft Office productivity suite and its latest version.
 slug: common-styling-appearance-Office2019-theme
 tags: Office2019,theme,glyphs,fontsize,fontfamily
 published: True
@@ -434,6 +434,20 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 {{region cs-styling-appearance-Office2019-theme-4}}
 	Office2019Palette.Palette.DisabledOpacity = 0.5;
 	Office2019Palette.Palette.ReadOnlyOpacity = 0.5;
+{{endregion}}
+
+## Setting White Color Variation
+
+The theme has a few built-in [color variations](#theme-variation-changing) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing several color properties of the [theme palette](#office2019palette-properties).
+
+To achieve this, first ensure that the Light [variation](#theme-variation-changing) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
+
+#### __[C#] Example 5: Applying palette colors__		
+{{region cs-styling-appearance-Office2019-theme-5}}
+	Office2019Palette.Palette.ButtonBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+	Office2019Palette.Palette.BaseBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+	Office2019Palette.Palette.AlternativeBackgroundColor = (Color)ColorConverter.ConvertFromString("#FAFAFA");
+	Office2019Palette.Palette.SecondaryBackgroundColor = (Color)ColorConverter.ConvertFromString("#F1F1F1");
 {{endregion}}
 
 ## See Also  

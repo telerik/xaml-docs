@@ -1,6 +1,6 @@
 ---
 title: How to replace the default ContextMenu with RadContextMenu in RadDateTimePicker
-description: Using RadContextMenu instead of ContextMenu in RadDateTimePicker
+description: Using RadContextMenu instead of ContextMenu in RadDateTimePicker.
 type: how-to
 page_title: Show RadContextMenu rather than ContextMenu in RadDateTimePicker
 slug: kb-datetimepicker-replace-contextmenu-with-radcontextmenu

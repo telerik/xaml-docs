@@ -1,9 +1,9 @@
 ---
-title: UI Automation Support
-page_title: UI Automation Support
-description: UI Automation Support
+title: UI Automation Support (UI Accessibility)
+page_title: UI Automation Support (UI Accessibility)
+description: UI Automation Support (UI Accessibility)
 slug: common-ui-automation
-tags: ui,automation,support
+tags: ui,automation,support, accessibility
 published: True
 position: 7
 ---
@@ -76,6 +76,11 @@ The UseDefaultHelpText can be set similarly to the **AutomationMode** as demonst
 {{endregion}}
 
 {% if site.site_name == 'WPF' %} 
+
+## UI Accessibility 
+
+Since the __R1 2021__ release we improved the accessibility of the UI for WPF controls by testing them with the [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/) tool. This application executes tests, which check whether the controls have the right UI Automation properties. We tested all of the controls from the UI for WPF suite to ensure that there weren't any failed tests.
+
 ## See Also
  
 * [Coded UI Support]({%slug coded-ui-support%})

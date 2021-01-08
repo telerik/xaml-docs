@@ -69,7 +69,7 @@ __Example 3__ demonstrates how to set the __MultipleSelectionSeparatorStringForm
 
 {{region radcombobox-features-multiple-selection_2}}
 	<telerik:RadComboBox AllowMultipleSelection="True" MultipleSelectionSeparator="-"
-						 MultipleSelectionSeparatorStringFormat="{}*{0}*">
+						 MultipleSelectionSeparatorStringFormat="{}&ast;{0}&ast;">
 		<telerik:RadComboBoxItem Content="Alapattah" />
 		<telerik:RadComboBoxItem Content="Brickell Avenue" />
 		<telerik:RadComboBoxItem Content="Downtown Miami" />

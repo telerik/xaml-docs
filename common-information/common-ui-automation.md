@@ -22,15 +22,15 @@ With Q2 2014 SP release of Telerik UI for {{ site.framework_name }} you will hav
 
 __AutomationMode__ property is of enum type and accepts the following values:
 
-* Disabled – this option will disable creating of automation peers of Telerik controls;
-* FrameworkOnly – this option will include only the base methods of AutomationPeers of MS classes;
+* **Disabled**: This option will disable creating of automation peers of Telerik controls;
+* **FrameworkOnly**: This option will include only the base methods of AutomationPeers of MS classes;
 {% if site.site_name == 'WPF' %}
-* Basic – will create the full AutomationPeer implementation for Telerik UI controls. It supports the most basic Coded UI tests;
-* Advanced - required for Coded UI tests with Level 2 and Level 3. This is the default value. 
+* **Basic**: Will create the full AutomationPeer implementation for Telerik UI controls. It supports the most basic Coded UI tests;
+* **Advanced**: Required for Coded UI tests with Level 2 and Level 3. This is the default value. 
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-* Advanced - will create the full AutomationPeer implementation for Telerik UI controls. This is the default value.
+* **Advanced:** Will create the full AutomationPeer implementation for Telerik UI controls. This is the default value.
 {% endif %}
 
 The next code snippet shows how the AutomationMode property can be set:
@@ -79,7 +79,7 @@ The UseDefaultHelpText can be set similarly to the **AutomationMode** as demonst
 
 ## UI Accessibility 
 
-Since the __R1 2021__ release we improved the accessibility of the UI for WPF controls by testing them with the [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/) tool. This application executes tests, which check whether the controls have the right UI Automation properties. We tested all of the controls from the UI for WPF suite to ensure that there weren't any failed tests.
+Since the __R1 2021__ release we improved the accessibility of the UI for WPF controls by testing them with the [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/) tool. This application executes tests, which check whether the controls have the right UI Automation properties. We've tested all of the controls from the UI for WPF suite to ensure that there aren't any failed tests.
 
 ## See Also
  

@@ -11,7 +11,7 @@ CTAControlName: RadCardView
 
 # Overview
 
-![](images/callout_wpf_46_text.png)
+![](images/radcardview-overview-0.png)
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

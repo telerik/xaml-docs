@@ -51,7 +51,7 @@ Through the **CaretBrush** property, you can change the caret's color to a color
 
 ## Auto-Scroll to Caret on Text Change
 
-With **R1 2021**, the RadSyntaxEditor exposes the **AutoScrollToCaretOnTextChange** which controls whether the document is automatically scrolled to the **CaretPosition** when the text inside the document is changed.
+With **R1 2021** release, the RadSyntaxEditor exposes the **AutoScrollToCaretOnTextChange** property which controls whether the document is automatically scrolled to the **CaretPosition** when the text inside the document is changed.
 
 Its default value is **True**, meaning that if the caret is placed in the end of the document, for example, and new text is added, the control will auto-scroll to the new position of the caret when the content changes.
 

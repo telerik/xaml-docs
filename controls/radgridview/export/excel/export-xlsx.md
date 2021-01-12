@@ -10,7 +10,7 @@ position: 1
 
 # ExportToXlsx
 
-The __ExportToXlsx__ method allows exporting to the XLSX format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
+The __ExportToXlsx__ extension method allows exporting the RadGridView to the XLSX format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 
 ## Assembly References
 

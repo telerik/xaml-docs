@@ -9,7 +9,7 @@ position: 5
 
 # Caret
 
-The caret of the RadSyntaxEditor is the vertical 'blinking' line that represents the current cursor position of a control that accepts text input. The appearance of the caret can be controlled by the **CaretDisplayMode** property. Its possible values as well as the resulting appearance can be observed in the following list:
+The caret of the RadSyntaxEditor is the vertical "blinking" line that represents the current cursor position of a control that accepts text input. The appearance of the caret can be controlled by the **CaretDisplayMode** property. Its possible values as well as the resulting appearance can be observed in the following list:
 
 * **Normal**: ![RadSyntaxEditor caret normal display mode](images/syntaxeditor-caret-normal.png)
 
@@ -48,6 +48,20 @@ Through the **CaretBrush** property, you can change the caret's color to a color
 ## Figure 1: RadSyntaxEditor caret with red color
 
 ![RadSyntaxEditor caret with red color](images/syntaxeditor-caret-red.png)
+
+## Auto-Scroll to Caret on Text Change
+
+With the **R1 2021** release, the RadSyntaxEditor exposes the **AutoScrollToCaretOnTextChange** property which controls whether the document is automatically scrolled to the **CaretPosition** when the text inside the document is changed.
+
+Its default value is **True**, meaning that if the caret is placed in the end of the document, for example, and new text is added, the control will auto-scroll to the new position of the caret when the content changes.
+
+To disable this behavior, you can set the AutoScrollToCaretOnTextChange property to **False**.
+
+#### __[XAML] Example 4: Setting the AutoScrollToCaretOnTextChange property__
+{{region xaml-radsyntaxeditor-features-caret-3}}
+
+    <telerik:RadSyntaxEditor AutoScrollToCaretOnTextChange="False" />
+{{endregion}}
 
 ## See Also
 

@@ -94,9 +94,39 @@ However, if you wish to explicitly specify the column name for certain property 
 	End Class
 {{endregion}}
 
-__Figure 1:__ The result of letting __RadGridView__ automatically generate the two columns. 
+If you wish to further customize the generated columns, you can handle the [AutoGeneratingColumn]({%slug gridview-column-resize-event%}#autogeneratingcolumn) event as shown in **Example 2**.
 
-![Telerik {{ site.framework_name }} DataGrid defining columns 1](images/RadGridView_definingcolumns_1.png)
+#### __[C#] Example 2: Customizing auto-generated columns__
+
+{{region cs-gridview-columns-defining-columns_15}}
+
+	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e) 
+	{ 
+		if((e.Column as GridViewDataColumn).DataMemberBinding.Path.Path == "Name")
+		{
+			var newColumn = new GridViewDataColumn();
+			newColumn.CopyPropertiesFrom(e.Column);
+			newColumn.Header = "Full Name";
+			newColumn.Width = 100;
+			e.Column = newColumn;
+		}
+	}
+{{endregion}}
+
+#### __[VB.NET] Example 2: Customizing auto-generated columns__
+
+{{region vb-gridview-columns-defining-columns_16}}
+
+	Private Sub gridView_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
+		If (TryCast(e.Column, GridViewDataColumn)).DataMemberBinding.Path.Path = "Name" Then
+			Dim newColumn = New GridViewDataColumn()
+			newColumn.CopyPropertiesFrom(e.Column)
+			newColumn.Header = "Full Name"
+			newColumn.Width = 100
+			e.Column = newColumn
+		End If
+	End Sub
+{{endregion}}
 
 ## Manual Columns Definition
 
@@ -120,7 +150,7 @@ You must add the columns to the __Columns__ collection of __RadGridView__. Later
 
 Examples 2 and 3 demonstrate how to define a column both in XAML and code-behind.
 
-#### __[XAML] Example 2: Defining a GridViewDataColumn declaratively__
+#### __[XAML] Example 3: Defining a GridViewDataColumn declaratively__
 
 {{region xaml-gridview-columns-defining-columns_2}}
 	<telerik:GridViewDataColumn/>
@@ -128,13 +158,13 @@ Examples 2 and 3 demonstrate how to define a column both in XAML and code-behind
 
 >You will find the column types in the same namespace (__Telerik.Windows.Controls__) and assembly (__Telerik.Windows.Controls.GridView.dll__) as __RadGridView__.
 
-#### __[C#] Example 3: Defining a GridViewDataColumn programmatically__
+#### __[C#] Example 4: Defining a GridViewDataColumn programmatically__
 
 {{region cs-gridview-columns-defining-columns_3}}
 	GridViewDataColumn column = new GridViewDataColumn();
 {{endregion}}
 
-#### __[VB] Example 3: Defining a GridViewDataColumn programmatically__
+#### __[VB] Example 4: Defining a GridViewDataColumn programmatically__
 
 {{region vb-gridview-columns-defining-columns_4}}
 	Dim column As New GridViewDataColumn()
@@ -142,7 +172,7 @@ Examples 2 and 3 demonstrate how to define a column both in XAML and code-behind
 
 You can then set the column's __Header__ property and add the column to the __Columns__ collection. The __default Header__ will be the property specified as __DataMemberBinding__.
 			  
-#### __[XAML] Example 4: Defining a column declaratively with DataMemberBinding property set__
+#### __[XAML] Example 5: Defining a column declaratively with DataMemberBinding property set__
 
 {{region xaml-gridview-columns-defining-columns_5}}
 	<telerik:RadGridView x:Name="radGridView"
@@ -153,7 +183,7 @@ You can then set the column's __Header__ property and add the column to the __Co
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __[C#] Example 5: Defining a column programmatically with UniqueName property set__
+#### __[C#] Example 6: Defining a column programmatically with UniqueName property set__
 
 {{region cs-gridview-columns-defining-columns_6}}
 	GridViewDataColumn column = new GridViewDataColumn();
@@ -163,7 +193,7 @@ You can then set the column's __Header__ property and add the column to the __Co
 	this.radGridView.Columns.Add(column);
 {{endregion}}
 
-#### __[VB] Example 5: Defining a column programmatically with UniqueName property set__
+#### __[VB] Example 6: Defining a column programmatically with UniqueName property set__
 
 {{region vb-gridview-columns-defining-columns_7}}
 	Dim column As New GridViewDataColumn()
@@ -177,14 +207,14 @@ Similarly, you can set any of the column's other properties or [copy them from a
 
 To access the column later, use the string used for the DataMemberBinding value or its __column index__ as a key for the __Columns__ collection.
 
-#### __[C#] Example 6: Accessing a column by index__
+#### __[C#] Example 7: Accessing a column by index__
 
 {{region cs-gridview-columns-defining-columns_8}}
 	var myColumn = this.radGridView.Columns["MyColumn"];
 	myColumn = this.radGridView.Columns[0];
 {{endregion}}
 
-#### __[VB] Example 6: Accessing a column by index__
+#### __[VB] Example 7: Accessing a column by index__
 
 {{region vb-gridview-columns-defining-columns_9}}
 	Dim myColumn = Me.radGridView.Columns("MyColumn")
@@ -196,7 +226,7 @@ To access the column later, use the string used for the DataMemberBinding value 
 
 __RadGridView__ provides a mechanism for easily fetching the properties of one column to another. This can be done through the __CopyPropertiesFrom__ method of __GridViewColumn__. 
 
-#### __[C#] Example 7: Copying the properties of one column to another__
+#### __[C#] Example 8: Copying the properties of one column to another__
 
 {{region cs-gridview-columns-defining-columns_14}}
 	GridViewDataColumn col = new GridViewDataColumn();
@@ -204,7 +234,7 @@ __RadGridView__ provides a mechanism for easily fetching the properties of one c
 	this.clubsGrid.Columns.Add(col);
 {{endregion}}
 
-#### __[VB] Example 7: Copying the properties of one column to another__
+#### __[VB] Example 8: Copying the properties of one column to another__
 
 {{region cs-gridview-columns-defining-columns_14}}
 	Dim col As GridViewDataColumn = New GridViewDataColumn()

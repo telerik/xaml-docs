@@ -65,7 +65,7 @@ CardViewFilterOr | Or
 CardViewFilterSelectAll | Select All
 CardViewFilterShowRowsWithValueThat | Show rows with value that
 CardViewFilterStartsWith | Starts with
-CardViewGroupPanelText | Drag a column header and drop it here to group by that column
+CardViewGroupPanelText | Drag a field header and drop it here to group by that field
 CardViewGroupPanelTopText | Group Header
 CardViewGroupPanelTopTextGrouped | Grouped by:
 

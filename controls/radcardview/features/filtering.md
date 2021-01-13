@@ -21,16 +21,18 @@ The data items can be filtered using the [filtering control]({%slug radcardview-
 #### Figure 1: RadCardView filtering control
 ![](images/radcardview-features-filtering-0.png)
 
-To disable user filtering, set the __IsFilteringAllowed__ property to __False__.
+To disable user filtering, set the __IsFilteringAllowed__ property to __False__. 
 
 #### __[XAML] Example 1: Setting the IsFilteringAllowed property__
 {{region radcardview-features-filtering-0}}
 	<telerik:RadCardView IsFilteringAllowed="False" />
 {{endregion}}
 
+Additionally, the filtering can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowFiltering__ property.
+
 ## Programmatic Filtering
 
-The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add GroupDescriptors in code.
+The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add FilterDescriptors in code.
 
 #### __[C#] Example 2: Defining the model__
 {{region radcardview-features-filtering-1}}
@@ -67,14 +69,19 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
             }
 
             CollectionView = new QueryableCollectionView(Items);
-            CollectionView.GroupDescriptors.Add(new GroupDescriptor() { Member = "Category" });
+            CollectionView.FilterDescriptors.Add(new FilterDescriptor()
+            {
+                Member = "Name", 
+                Operator = FilterOperator.Contains,
+                Value = "1"
+            });
         }
     }
 {{endregion}} 
 
->tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#filtering) to see how to use the GroupDescriptors collection of the QueryableCollectionView.
+>tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#filtering) to see how to use the FilterDescriptors collection of the QueryableCollectionView.
 
-#### __[XAML] Example 3: Setting the DataContext__
+#### __[C#] Example 3: Setting the DataContext__
 {{region radcardview-features-filtering-2}}
 	public MainWindow()
 	{
@@ -89,5 +96,31 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 {{endregion}}
 
 The filtering operations invoke several events that can be used to customize the filtering. Read more in the [Events]({%slug radcardview-events%}#filtering) article.
+
+## Filter Member Path
+
+The filtering uses the property bound to the __DataMemberBinding__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}). To change this, set the __FilterMemberPath__ property of the descriptor. The path should point to a property in the underlying data item.
+
+#### __[XAML] Example 5: Setting the FilterMemberPath property__
+{{region radcardview-features-filtering-4}}
+	<telerik:RadCardView.DataFieldDescriptors>
+		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" FilterMemberPath="Category" />
+	</telerik:RadCardView.DataFieldDescriptors>
+{{endregion}}
+
+## Deferred Filtering
+
+Selecting a filter in the filtering control will apply it immedietly to the items. To change this, set the __IsFilteringDeferred__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) to true. This will require press of the __Filter button__ in order to commit the filters.
+
+#### __[XAML] Example 6: Setting the IsFilteringDeferred property__
+{{region radcardview-features-filtering-5}}
+	<telerik:RadCardView.DataFieldDescriptors>
+		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" IsFilteringDeferred="True" />
+	</telerik:RadCardView.DataFieldDescriptors>
+{{endregion}}
+
+## Customizing Filtering UI
+
+The UI of the [filtering control]({%slug radcardview-visual-structure%}) can be customized using several properties of RadCardView and CardDataFieldDescriptor. Read more in the [Customizing Filtering Control]({%slug %}) article.-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug %}) article.
 
 ## See Also

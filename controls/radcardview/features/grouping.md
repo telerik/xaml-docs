@@ -80,7 +80,7 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#grouping) to see how to use the GroupDescriptors collection of the QueryableCollectionView.
 
-#### __[XAML] Example 3: Setting the DataContext__
+#### __[C#] Example 3: Setting the DataContext__
 {{region radcardview-features-grouping-2}}
 	public MainWindow()
 	{

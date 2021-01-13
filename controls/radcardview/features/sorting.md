@@ -74,7 +74,7 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#sorting) to see how to use the SortDescriptors collection of the QueryableCollectionView.
 
-#### __[XAML] Example 3: Setting the DataContext__
+#### __[C#] Example 3: Setting the DataContext__
 {{region radcardview-features-sorting-2}}
 	public MainWindow()
 	{

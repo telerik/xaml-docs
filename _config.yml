@@ -154,13 +154,15 @@ navigation:
         title: RadWindow
     controls/radcombobox/end-user-capabilities:
         title: End-User Capabilities
-        position: 9
+        position: 9      
     controls/radcombobox/features:
         title: Features
         position: 7
     controls/radcombobox/populating-with-data:
         title: Populating With Data
         position: 8
+    controls/radcardview:
+        title: RadCardView
     controls/radwindow/features:
         title: Features
         position: 6
@@ -3894,7 +3896,8 @@ intro_columns:
   -
     title: "Layout"
     items:
-      "Book": "radbook-visual-structure"
+      "Book": "radbook-visual-structure"      
+      "CardView": "radcardview-overview"
       "Carousel": "carousel-overview"
       "Docking": "raddocking-overview2"
       "Expander": "radexpander-overview"

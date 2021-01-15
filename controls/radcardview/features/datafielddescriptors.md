@@ -1,11 +1,11 @@
 ---
 title: Data Field Descriptor
 page_title: DataFieldDescriptors
-description: This article desribes the DataFieldDescriptors of RadCardView
+description: This article desribes the DataFieldDescriptors of RadCardView.
 slug: radcardview-features-datafielddescriptors
 tags: descriptor,data,field
 published: True
-position: 2
+position: 0
 ---
 
 # Data Field Descriptor
@@ -18,7 +18,7 @@ The descriptors are used to setup the property binding of the data field and to 
 
 By default the control will try to auto generated descriptors based on the public properties of the objects in the ItemsSource. This means that setting the ItemsSource of RadCardView is enough to use the control and display/edit data fields. 
 
-To interfere in the automatic generation of the CardDataFieldDescriptor objects, use the [AutoGeneratingDataFieldDescriptor]({%slug %}) event. The event handler can be used to cancel the generation of a descriptor, replacing it or customizing its properties.
+To interfere in the automatic generation of the CardDataFieldDescriptor objects, use the [AutoGeneratingDataFieldDescriptor]({%slug radcardview-events%}) event. The event handler can be used to cancel the generation of a descriptor, replacing it or customizing its properties.
 
 #### __[C#] Example 1: Canceling the generation of a descriptor for a property named "LastName"__
 {{region radcardview-features-datafielddescriptors-0}}
@@ -89,11 +89,11 @@ The display order of the data fields in a card is determined by the order of the
 
 The UI of RadCardView allows you to filter, sort and group the data in the ItemsSource. The descriptor element allows you to customize the corresponding settings.
 
-Read more about the filtering feature in the [Filtering]() article.
+Read more about the filtering feature in the [Filtering]({%slug radcardview-features-filtering%}) article.
 
-Read more about the filtering feature in the [Sorting]() article.
+Read more about the filtering feature in the [Sorting]({%slug radcardview-features-sorting%}) article.
 
-Read more about the filtering feature in the [Grouping]() article.
+Read more about the filtering feature in the [Grouping]({%slug radcardview-features-grouping%}) article.
 
  By default the property bound to the __DataMemberBinding__ is used for the filtering. To change this, set the __FilterMemberPath__ property which should point to the new property that will be used for the filtering.
 
@@ -101,6 +101,9 @@ The filtering from the UI can be disabled via the __AllowFiltering__ property.
 
 ## Customizing Data Fields UI
 
-The UI of the data field's value presenter can be customized using the __EditorTemplate__ property when the data field is in edit mode. To change the element when the data fiels is in normal state, then set the __ReadOnlyTemplate__. Read more in the [Customizing Cards]() article.
+The UI of the data field's value presenter can be customized using the __EditorTemplate__ property when the data field is in edit mode. To change the element when the data fiels is in normal state, then set the __ReadOnlyTemplate__. Read more in the [Customizing Cards]({%slug radcardview-appearance-customizing-groups%}) article.
 
 ## See Also
+* [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
+* [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) 
+* [Customizing Filtering Control]({%slug radcardview-appearance-customizing-filtering-control%}) 

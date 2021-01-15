@@ -97,7 +97,7 @@ To disable the automatic data field descriptor generation, set the __AutoGenerat
 #### Figure 2: RadCardView example
 ![](images/radcardview-populating-with-data-data-binding-1.png)
 
->tip Read more about the data field descriptor's settings in the []({%slug %}) article.
+>tip Read more about the data field descriptor's settings in the [Data Field Descriptor]({%slug radcardview-features-datafielddescriptors%}) article.
 
 ## Binding to CollectionView
 
@@ -131,6 +131,10 @@ In order to easily control the sorting, filtering and grouping, you can use `Que
 #### Figure 3: RadCardView grouping example
 ![](images/radcardview-populating-with-data-data-binding-2.png)
 
->tip Read more about the collection view descriptors in the [QueryableCollectionView or QueryableCollectionViewSource]({%slug %}) article.
+>tip Read more about the collection view descriptors in the [QueryableCollectionView or QueryableCollectionViewSource]({%slug consuming-data-queryablecollectionview%}) article.
 
 ## See Also
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Events]({%slug radcardview-events%})
+* [Data Field Descriptor]({%slug radcardview-features-datafielddescriptors%})
+* [Grouping]({%slug radcardview-features-grouping%})

@@ -5,7 +5,7 @@ description: The article describes the filtering feature of RadCardView.
 slug: radcardview-features-filtering
 tags: filtering,cardview
 published: True
-position: 2
+position: 7
 ---
 
 # Filtering
@@ -95,6 +95,8 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
 {{endregion}}
 
+## Events
+
 The filtering operations invoke several events that can be used to customize the filtering. Read more in the [Events]({%slug radcardview-events%}#filtering) article.
 
 ## Filter Member Path
@@ -121,6 +123,10 @@ Selecting a filter in the filtering control will apply it immedietly to the item
 
 ## Customizing Filtering UI
 
-The UI of the [filtering control]({%slug radcardview-visual-structure%}) can be customized using several properties of RadCardView and CardDataFieldDescriptor. Read more in the [Customizing Filtering Control]({%slug %}) article.-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug %}) article.
+The UI of the [filtering control]({%slug radcardview-visual-structure%}) can be customized using several properties of RadCardView and CardDataFieldDescriptor. Read more in the [Customizing Filtering Control]({%slug radcardview-appearance-customizing-filtering-control%}) article.
 
 ## See Also
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
+* [Grouping]({%slug radcardview-features-grouping%})
+* [Sorting]({%slug radcardview-features-sorting%})

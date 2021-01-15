@@ -5,7 +5,7 @@ description: The article describes the editing feature of RadCardView.
 slug: radcardview-features-editing
 tags: editing,cardview
 published: True
-position: 2
+position: 1
 ---
 
 # Editing
@@ -22,3 +22,6 @@ The editing action fires several events that can be used to interfere with the p
 The data fields editor visual element can be customized using the __EditorTemplate__ property of the [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}). To customize the entire card while a data field is in edit mode, use the __CardEditTemplate__ property of RadCardView. Read more in the [Customizing Cards]({%slug radcardview-appearance-customizing-cards%}) article.
 
 ## See Also
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Events]({%slug radcardview-events%})
+* [Visual Structure]({%slug radcardview-visual-structure%})

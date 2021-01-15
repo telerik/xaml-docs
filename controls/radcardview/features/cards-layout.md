@@ -5,7 +5,7 @@ description: The RadCardView control for WPF allows two different layout types -
 slug: radcardview-features-layout
 tags: layout,row,column
 published: True
-position: 2
+position: 3
 ---
 
 # Card Layout
@@ -29,4 +29,7 @@ The size of the cards is controlled with the __MajorLength__ and __MinorLength__
 
 >tip Read more about the MajorLength and MinorLength properties in the [Customizing Cards]({%slug radcardview-appearance-customizing-cards%}) article.
 
-## See Also
+## See Also  
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
+* [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) 

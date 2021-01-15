@@ -5,7 +5,7 @@ description: The article describes the localization feature of RadCardView.
 slug: radcardview-features-localization
 tags: globalization,cardview,localization
 published: True
-position: 2
+position: 4
 ---
 
 # Localization
@@ -27,13 +27,6 @@ Here is a list of the supported languages:
 ## Resource Keys
 
 The following list shows the resource keys (identifiers) used for the different parts of the RadCardView's UI. You can use the keys in case you want to [customize the localization feature]({%slug common-localization%}#localization-using-resourcemanager).
-
-The following picture shows resource keys and the strings they are associated with.
-
-#### Figure 1: RadCardView resource keys
-![](images/radcardview-features-localization-0.png)
-
-Here is the list of all of the resources available and their default (English) values.
 
 Key	|	Value
 ---	|	---	
@@ -65,8 +58,12 @@ CardViewFilterOr | Or
 CardViewFilterSelectAll | Select All
 CardViewFilterShowRowsWithValueThat | Show rows with value that
 CardViewFilterStartsWith | Starts with
-CardViewGroupPanelText | Drag a field header and drop it here to group by that field
+CardViewGroupPanelText | Drag a field and drop it here to group by that field
 CardViewGroupPanelTopText | Group Header
 CardViewGroupPanelTopTextGrouped | Grouped by:
 
-## See Also
+## See Also  
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Visual Structure]({%slug radcardview-visual-structure%})
+* [Filtering]({%slug radcardview-features-filtering%})
+* [Grouping]({%slug radcardview-features-grouping%})

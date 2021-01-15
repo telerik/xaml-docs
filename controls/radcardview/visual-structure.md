@@ -42,9 +42,10 @@ This section defines terms and concepts used in the scope of the __RadCardView__
 
 * __Filtering Control__: Displays a popup with the filters available for the corresponding data field descriptor.
 
-
 >tip Get started with the control with its [Getting Started]({%slug radcardview-getting-started%}) help article that shows how to use it in a basic scenario.
-
 
 ## See Also  
 * [Getting Started]({%slug radcardview-getting-started%})
+* [Filtering]({%slug radcardview-features-filtering%})
+* [Grouping]({%slug radcardview-features-grouping%})
+* [Sorting]({%slug radcardview-features-sorting%})

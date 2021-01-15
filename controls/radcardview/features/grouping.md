@@ -5,7 +5,7 @@ description: The article describes the grouping feature of RadCardView.
 slug: radcardview-features-grouping
 tags: grouping,cardview
 published: True
-position: 2
+position: 5
 ---
 
 # Grouping
@@ -33,6 +33,8 @@ The RadCardView groups support sorting by clicking onto the associated [group me
 {{region radcardview-features-grouping-0}}
 	<telerik:RadCardView CanUserSortGroups="False" />
 {{endregion}}
+
+Additionally, the grouping can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowGrouping__ property.
 
 ## Programmatic Grouping
 
@@ -94,9 +96,13 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
 {{endregion}}
 
+## Events
+
 The grouping operations invoke several events that can be used to customize the grouping. Read more in the [Events]({%slug radcardview-events%}#grouping) article.
 
-The [group panel area]({%slug radcardview-visual-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug %}) article.
+## Customizing Grouping UI
+
+The [group panel area]({%slug radcardview-visual-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) article.
 
 #### __[XAML] Example 5: Setting the ShowGroupPanel property__
 {{region radcardview-features-grouping-4}}
@@ -104,3 +110,7 @@ The [group panel area]({%slug radcardview-visual-structure%}) can be customized 
 {{endregion}}
 
 ## See Also
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
+* [Filtering]({%slug radcardview-features-filtering%})
+* [Sorting]({%slug radcardview-features-sorting%})

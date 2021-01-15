@@ -5,7 +5,7 @@ description: Check our &quotEvents&quot; documentation article for the RadCardVi
 slug: radcardview-events
 tags: events
 published: True
-position: 2
+position: 3
 ---
 
 # Events
@@ -333,4 +333,4 @@ This article lists the events specific for __RadCardView__.
 
 ## See Also  
 * [Getting Started]({%slug radcardview-getting-started%})
-* [Visual Structure]({%slug %})
+* [Visual Structure]({%slug radcardview-visual-structure%})

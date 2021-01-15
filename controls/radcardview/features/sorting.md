@@ -5,7 +5,7 @@ description: The article describes the sorting feature of RadCardView.
 slug: radcardview-features-sorting
 tags: sorting,cardview
 published: True
-position: 2
+position: 6
 ---
 
 # Sorting
@@ -27,6 +27,8 @@ To disable user sorting, set the __CanUserSortDescriptors__ property to __False_
 {{region radcardview-features-sorting-0}}
 	<telerik:RadCardView CanUserSortDescriptors="False" />
 {{endregion}}
+
+Additionally, the sorting can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowSorting__ property.
 
 ## Programmatic Sorting
 
@@ -88,6 +90,12 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
 	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
 {{endregion}}
 
+## Events
+
 The sorting operations invoke several events that can be used to customize the sort. Read more in the [Events]({%slug radcardview-events%}#sorting) article.
 
-## See Also
+## See Also  
+* [Getting Started]({%slug radcardview-getting-started%})
+* [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
+* [Filtering]({%slug radcardview-features-filtering%})
+* [Grouping]({%slug radcardview-features-grouping%})

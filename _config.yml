@@ -163,6 +163,8 @@ navigation:
         position: 8
     controls/radcardview:
         title: RadCardView
+    controls/radcardview/appearance:
+        title: Appearance
     controls/radwindow/features:
         title: Features
         position: 6

@@ -3777,6 +3777,7 @@ intro_columns:
   -
     title: "Data Management"  
     items:
+      "CardView": "radcardview-overview"
       "CollectionNavigator": "collectionnavigator_overview"
       "DataFilter": "datafilter-overview"
       "DataForm": "raddataform-overview"
@@ -3898,8 +3899,7 @@ intro_columns:
   -
     title: "Layout"
     items:
-      "Book": "radbook-visual-structure"      
-      "CardView": "radcardview-overview"
+      "Book": "radbook-visual-structure"
       "Carousel": "carousel-overview"
       "Docking": "raddocking-overview2"
       "Expander": "radexpander-overview"

@@ -18,7 +18,7 @@ The __RadWindow__ provides you with a set of predefined dialog windows that are 
 
 * Allow the user to confirm an action
 
-These windows can be shown using the respective methods of the static __RadWindow__ class:
+These windows can be shown using the respective static methods of the __RadWindow__ class:
 
 * __Alert()__ - 3 overloads
 
@@ -77,16 +77,35 @@ The alert dialog window allows you to alert the user with a certain message. It 
 {{region cs-radwindow-features-predefined-dialogs_0}}
 	RadWindow.Alert(new DialogParameters()
 	{
-	    Content = "Hello"
+		Content = "Hello",
+		Closed = this.OnClosed
 	});
+       
+
+	private void OnClosed(object sender, WindowClosedEventArgs e)
+	{
+		var result = e.DialogResult;
+		if (result == true)
+		{
+			// handle confirmation
+		}
+	}
 {{endregion}}
 
 #### __[VB.NET] Example 1: Showing RadAlert with DialogParameters__
 
 {{region vb-radwindow-features-predefined-dialogs_1}}
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Hello"
-	RadWindow.Alert(parameters)
+	RadWindow.Alert(New DialogParameters() With {
+		.Content = "Hello",
+		.Closed = AddressOf Me.OnClosed
+	})
+
+	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+	    Dim result = e.DialogResult
+		If result = True Then
+			' handle confirmation
+		End If
+	End Sub
 {{endregion}}
 
 * __object content__ - an object that represents the content.
@@ -149,17 +168,36 @@ The confirm dialog window allows the user to confirm an action. It is shown by c
 #### __[C#] Example 4: Showing RadConfirm__
 
 {{region cs-radwindow-features-predefined-dialogs_12}}
-	DialogParameters parameters = new DialogParameters();
-	parameters.Content = "Are you sure?";
-	RadWindow.Confirm(parameters);
+	RadWindow.Confirm(new DialogParameters()
+	{
+		Content = "Are you sure ?",
+		Closed = this.OnClosed
+	});
+
+	private void OnClosed(object sender, WindowClosedEventArgs e)
+	{
+		var result = e.DialogResult;
+		if (result == true)
+		{
+			// handle confirmation
+		}
+	}
 {{endregion}}
 
 #### __[VB.NET] Example 4: Showing RadConfirm__
 
 {{region vb-radwindow-features-predefined-dialogs_13}}
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Are you sure?"
-	RadWindow.Confirm(parameters)
+	RadWindow.Confirm(New DialogParameters() With {
+		.Content = "Are you sure ?",
+		.Closed = AddressOf Me.OnClosed
+	})
+
+	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+	    Dim result = e.DialogResult
+		If result = True Then
+			' handle confirmation
+		End If
+	End Sub
 {{endregion}}
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.
@@ -208,17 +246,31 @@ The prompt dialog window allows the user to input information. It is shown by ca
 #### __[C#] Example 6: Showing RadPrompt__
 
 {{region cs-radwindow-features-predefined-dialogs_6}}
-	DialogParameters parameters = new DialogParameters();
-	parameters.Content = "Enter your name:";
-	RadWindow.Prompt(parameters);
+	RadWindow.Prompt(new DialogParameters()
+	{
+		Content = "Enter your name:",
+		Closed = this.OnClosed
+	});
+
+	private void OnClosed(object sender, WindowClosedEventArgs e) 
+	{ 
+		var result = e.PromptResult; 
+		var message = "Hello " + result + "!"; 
+	} 
 {{endregion}}
 
 #### __[VB.NET] Example 6: Showing RadPrompt__
 
 {{region vb-radwindow-features-predefined-dialogs_7}}
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Enter your name:"
-	RadWindow.Prompt(parameters)
+	RadWindow.Prompt(New DialogParameters() With {
+		.Content = "Enter your name:",
+		.Closed = AddressOf Me.OnClosed
+	})
+
+	Private Sub OnClosed(sender As Object, e As WindowClosedEventArgs)
+		Dim result = e.PromptResult
+		Dim message = "Hello " & result & "!"
+	End Sub
 {{endregion}}
 
 * __object content, EventHandler\<WindowsClosedEventArgs\> closed__ - an object that represents the content and an event handler that should handle the __Closed__ event of the __RadWindow__.

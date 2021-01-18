@@ -56,7 +56,7 @@ CardViewFilterIsTrue | True
 CardViewFilterMatchCase | Match case
 CardViewFilterOr | Or
 CardViewFilterSelectAll | Select All
-CardViewFilterShowRowsWithValueThat | Show rows with value that
+CardViewFilterShowRowsWithValueThat | Show fields with value that
 CardViewFilterStartsWith | Starts with
 CardViewGroupPanelText | Drag a field and drop it here to group by that field
 CardViewGroupPanelTopText | Group Header

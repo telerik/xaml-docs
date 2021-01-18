@@ -12,7 +12,7 @@ position: 8
 
 The data fields of the RadCardView control support data validation of the user input. 
 
-The feature provides a visual feedback an invalid value is entered. This article shows how to implement custom validation logic.
+The feature provides visual feedback when an invalid value is entered. This article shows how to implement custom validation logic.
 
 ## Using Validation Events
 
@@ -96,7 +96,7 @@ The data binding validation can be enabled also by using the data annotation att
 
 In order to see the error visual when using data annotations, press the __Enter key__. This will add the error in the list at the bottom of the card.
 
-#### Figure 1: Data validation visual feedback when using data annotations
+#### Figure 2: Data validation visual feedback when using data annotations
 ![](images/radcardview-features-validation-1.png)
 
 ## See Also

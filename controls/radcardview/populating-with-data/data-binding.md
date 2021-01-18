@@ -16,7 +16,7 @@ This article shows how to prepare and set the ItemsSource, and data bind the car
 
 For each public property in the underlying objects of the ItemsSource a data field is auto-generated in the card.
 
-The control internally works with a QueryableCollectionView which handles the sorting, grouping and filtering operations. This said, the IEnumerable set as ItemsSource will get wrapped into QueryableCollectionView object.
+The control internally works with a QueryableCollectionView which handles the sorting, grouping and filtering operations. This said, if an IEnumerable is set as ItemsSource it will get wrapped into a QueryableCollectionView object.
 
 #### __[C#] Example 1: Defining the model__
 {{region radcardview-populating-with-data-data-binding-0}}

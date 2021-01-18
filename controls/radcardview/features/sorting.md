@@ -12,7 +12,7 @@ position: 6
 
 RadCardView supports sorting via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 
-The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. When the ItemsSource is set, and if different type than QueryableCollectionView is used, then the original collection is wrapped in a QueryableCollectionView instance. This way sorting is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
+The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. If you set the ItemsSource of the RadCardView that is not a QueryableCollectionView, then the original collection is wrapped in a QueryableCollectionView instance. This way sorting is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
  
 ## Sorting in the UI
 
@@ -32,7 +32,7 @@ Additionally, the sorting can be disabled per [CardDataFieldDescriptor]({%slug r
 
 ## Programmatic Sorting
 
-The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add SortDescriptors in code.
+The following example shows how to setup RadCardView, populate it with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add SortDescriptors in code.
 
 #### __[C#] Example 2: Defining the model__
 {{region radcardview-features-sorting-1}}

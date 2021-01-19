@@ -21,6 +21,8 @@ In order to achieve optimal load performance with RadFileDialogs controls, you s
 * Setting an [InitialDirectory]({%slug radfiledialogs-features-common%}#setting-initial-directory) that has fewer directories and files will reduce the loading time.
 
 * When developing an application that contains RadFileDialogs, run it in __Release__ mode, instead of in __Debug__ mode. This way you will avoid the caught exceptions while traversing the file system, which will improve performance.
+
+* Setting the __LoadDrivesInBackground__ property to __true__ will force the file dialogs to load all drives in a background thread. This will improve the loading time of the controls.
             
 ## See Also
 

@@ -12,13 +12,6 @@ position: 0
 
 This articles shows the features shared between all file dialogs controls - __RadOpenFileDialog, RadSaveFileDialog, RadOpenFolderDialog__ and __ExplorerControl__ .
 
-* [Setting Initial Directory](#setting-initial-directory)
-* [Setting the Initial Layout of the Tiles](#setting-the-initial-layout-of-the-tiles)
-* [New Folder Button](#new-folder-button)
-* [Edit Mode](#edit-mode)
-* [Disable the Automatic Expanding to Current Directory](#disable-the-automatic-expanding-to-current-directory)
-* [Show Hidden Files](#show-hidden-files)
-
 ## Setting Initial Directory
 
 All the dialog controls expose a __InitialDirectory__ property that determines the directory that will be opened when the dialog shows.
@@ -120,6 +113,18 @@ By default the file dialogs don't show hidden files and folders. To show them yo
 
 #### Figure 5: Showing hidden files  
 ![](images/radfiledialogs-features-common-0.png)
+
+## Load Drives in Background
+
+By default, when the file dialogs are shown, they will load all shared drives under the "This PC" node. There are scenarios when some drives are expected to load slower than normal. This could cause a delay in loading the file dialogs. In such scenarios, __LoadDrivesInBackground__ will get in handy. Setting this property to true will indicate the control to load the drives under the "This PC" node in a background thread. This way, we can reduce the loading time of the file dialogs and work with them while the engine is loading all drives.
+
+#### __[C#] Example 5: Load Drives in Background Thread__ 
+{{region radfiledialogs-features-common-4}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.Owner = this;
+	openFileDialog.LoadDrivesInBackground = true;
+	openFileDialog.ShowDialog();            
+{{endregion}}
 
 ## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})

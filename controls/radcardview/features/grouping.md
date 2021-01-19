@@ -15,7 +15,7 @@ RadCardView supports grouping via the UI or in code, in case you are using IColl
 #### Figure 1: RadCardView groups
 ![](images/radcardview-features-grouping-0.png)
 
-The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. When the ItemsSource is set, and if different type than QueryableCollectionView is used, then the original collection is wrapped in a QueryableCollectionView instance. This way grouping is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
+The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. If you set the ItemsSource of the RadCardView that is not a QueryableCollectionView, then the original collection is wrapped in a QueryableCollectionView instance. This way grouping is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
  
 ## Grouping in the UI
 

@@ -27,7 +27,7 @@ This article lists the events specific for __RadCardView__.
         }
 	{{endregion}}
 	
-* __CardDataFieldPreparedEditor__: Occurs when the editor control of card's data field is prepared, just before start editing the field. The event arguments are of type `CardDataFieldPreparedEditorEventArgs` which expose the following members:
+* __CardDataFieldPreparedEditor__: Occurs when the editor control of a card's data field is prepared, just before the editing of the field starts. The event arguments are of type `CardDataFieldPreparedEditorEventArgs` which expose the following members:
 	
 	* __FrameworkElement__: Gets the control rerpesenting the editor of the data field. 
 	* __DataField__: Gets the associated `DataFormDataField` object.
@@ -271,7 +271,7 @@ This article lists the events specific for __RadCardView__.
 	
 	* __OldSortingState__: Gets the old sorting direction.
 	* __NewSortingState__: Gets the new sorting direction.
-	* __IsMultipleDataFieldDescriptorSorting_: Indicates if the current sorting is applied over multiple data field descriptors.
+	* __IsMultipleDataFieldDescriptorSorting__: Indicates if the current sorting is applied over multiple data field descriptors.
 	* __DataFieldFilterDescriptor__: Gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	#### __[C#] Example 17: Sorting event handler__

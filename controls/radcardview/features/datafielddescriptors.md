@@ -16,7 +16,7 @@ The descriptors are used to setup the property binding of the data field and to 
 
 ## Auto Generating Descriptors
 
-By default the control will try to auto generated descriptors based on the public properties of the objects in the ItemsSource. This means that setting the ItemsSource of RadCardView is enough to use the control and display/edit data fields. 
+By default the control will try to auto generate descriptors based on the public properties of the objects in the ItemsSource. This means that setting the ItemsSource of RadCardView is enough to use the control and display/edit data fields. 
 
 To interfere in the automatic generation of the CardDataFieldDescriptor objects, use the [AutoGeneratingDataFieldDescriptor]({%slug radcardview-events%}) event. The event handler can be used to cancel the generation of a descriptor, replacing it or customizing its properties.
 

@@ -10,7 +10,7 @@ position: 1
 
 # Customizing Groups
 
-RadCardView group can be customized in order to match the expected design or functionality.
+A RadCardView group can be customized in order to match the expected design or functionality.
 
 >tip Read the [Grouping]({%slug radcardview-features-grouping%}) article to see how to setup the grouping.
 
@@ -42,7 +42,7 @@ To __disable the sorting__ of groups with the [group member button]({%slug radca
 #### Figure 2: Changed group panel background
 ![](images/radcardview-appearance-customizing-groups-1.png)
 
-Additionally, the element that represents the group panel can be customized using the __GroupPaneStyle__ property.
+Additionally, the element that represents the group panel can be customized using the __GroupPanelStyle__ property.
 
 #### __[XAML] Example 3: Customizing group panel style__
 {{region radcardview-appearance-customizing-groups-2}}

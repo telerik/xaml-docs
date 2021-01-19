@@ -14,7 +14,7 @@ RadCardView cards can be customized in order to match the expected design or fun
 
 ## Card Size
 
-The cards size is determined by the __MajorLength__ and __MinorLength__ properties of RadCardView. Each property relates to a different dimension (width or height) based on the applied [layout]({%slug radcardview-features-layout%}) (rows or columns).
+The card's size is determined by the __MajorLength__ and __MinorLength__ properties of RadCardView. Each property relates to a different dimension (width or height) based on the applied [layout]({%slug radcardview-features-layout%}) (rows or columns).
 
 When the __CardLayout__ property is set to __Rows__ the __MajorLength__ is applied to the card's __width__ and the __MinorLength__ to the card's __height__. 
 When the __CardLayout__ is __Columns__ the __MajorLength__ is applied to the card's __height__ and the __MinorLength__ to the card's __width__. 
@@ -57,7 +57,7 @@ To toggle the visibility of a data field, set the __IsVisible__ property of the 
 
 #### __[XAML] Example 3: Setting CardDataFieldDescriptor IsVisible property__
 {{region radcardview-appearance-customizing-cards-2}}
-   <telerik:RadCardView.DataFieldDescriptors>
+   	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" IsVisible="False"/>
 	</telerik:RadCardView.DataFieldDescriptors>
 {{endregion}}

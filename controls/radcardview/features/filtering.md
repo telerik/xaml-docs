@@ -12,7 +12,7 @@ position: 7
 
 RadCardView supports filtering via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 
-The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. When the ItemsSource is set, and if different type than QueryableCollectionView is used, then the original collection is wrapped in a QueryableCollectionView instance. This way filtering is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
+The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. If you set the ItemsSource of the RadCardView that is not a QueryableCollectionView, then the original collection is wrapped in a QueryableCollectionView instance. This way filtering is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
  
 ## Filtering in the UI
 
@@ -112,7 +112,7 @@ The filtering uses the property bound to the __DataMemberBinding__ property of t
 
 ## Deferred Filtering
 
-Selecting a filter in the filtering control will apply it immedietly to the items. To change this, set the __IsFilteringDeferred__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) to true. This will require press of the __Filter button__ in order to commit the filters.
+Selecting a filter in the filtering control will apply it immediately to the items. To change this, set the __IsFilteringDeferred__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) to true. This will require a press of the __Filter button__ in order to commit the filters.
 
 #### __[XAML] Example 6: Setting the IsFilteringDeferred property__
 {{region radcardview-features-filtering-5}}

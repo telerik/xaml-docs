@@ -37,7 +37,7 @@ __RadCardView__ allows you to display data in a card-like layout where you can s
 
 * __Customizeable elements__: The visualization of RadCardView's groups and cards can be easily customized using the control's API. Read more in the [Appearance]({%slug radcardview-appearance-customizing-cards%}) section of the documentation.
 
-* __Data Validation__: The control comes with a built-in data validation feature and a visual feedback for values that doesn't match the validation criteria. Read more in the [Data Validation]({%slug radcardview-features-validation%}) article.
+* __Data Validation__: The control comes with a built-in data validation feature and visual feedback for values that don't match the validation criteria. Read more in the [Data Validation]({%slug radcardview-features-validation%}) article.
 
 * __Localization support__: The text used in the settings areas of the controls is localized. Read more about the Telerik Localization support in the [Localization]({%slug radcardview-features-localization%}) article which lists also the supported languages.
 

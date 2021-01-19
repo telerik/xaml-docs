@@ -116,7 +116,7 @@ By default the file dialogs don't show hidden files and folders. To show them yo
 
 ## Load Drives in Background
 
-By default, when the file dialogs are shown, they will load all shared drives under the "This PC" node. There are scenarios when some drives are expected to load slower than normal. This could cause a delay in loading the file dialogs. In such scenarios, __LoadDrivesInBackground__ will get in handy. Setting this property to true will indicate the control to loads the drives under the "This PC" node in a background thread. This way, we can reduce the loading time of the file dialogs and work with them while the engine is loading all drives.
+By default, when the file dialogs are shown, they will load all shared drives under the "This PC" node. There are scenarios when some drives are expected to load slower than normal. This could cause a delay in loading the file dialogs. In such scenarios, __LoadDrivesInBackground__ will get in handy. Setting this property to true will indicate the control to load the drives under the "This PC" node in a background thread. This way, we can reduce the loading time of the file dialogs and work with them while the engine is loading all drives.
 
 #### __[C#] Example 5: Load Drives in Background Thread__ 
 {{region radfiledialogs-features-common-4}}

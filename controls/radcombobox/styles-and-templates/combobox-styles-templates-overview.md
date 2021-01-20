@@ -26,6 +26,26 @@ RadComboBox shows a text [input area]({%slug radcombobox-general-information-vis
 
 The [Selection Box]({%slug radcombobox-general-information-visual-structure%}) part of RadComboBox is customized via the __SelectionBoxTemplate__, __MultipleSelectionBoxTemplate__ and __EmptySelectionBoxTemplate__ properties. Read more, in the [Selection Box Template]({%slug radcombobox-populating-with-data-selectionbox%}) article.
 
+## Customize Empty Text
+
+When the RadComboBox control has no selected item, a text will appear. The empty text string can be changed through the __EmptyText__ and __EmptySelectionBoxTemplate__ properties of the __RadComboBox__ control. The __EmptyText__ property is of type string, and you can set custom string. If you want to customize the empty text style further, you can use the __EmptySelectionBoxTemplate__ property by applying custom __DataTemplate__.
+
+#### __[XAML] Example 1: Customize Empty Text__  
+{{region radribbonview-gettingstarted-01}}
+    <Grid>
+		<Grid.Resources>
+			<DataTemplate x:Key="EmptyTemplate">
+				<TextBlock FontWeight="Bold" FontFamily="Comic Sans" FontStyle="Italic" Text="{Binding}" />
+			</DataTemplate>
+		</Grid.Resources>
+		<telerik:RadComboBox ItemsSource="{Binding Agency}" DisplayMemberPath="Name" 
+								IsEditable="True" VerticalAlignment="Center" HorizontalAlignment="Center"
+								EmptyText="Some empty text"                            
+								EmptySelectionBoxTemplate="{StaticResource EmptyTemplate}">
+		</telerik:RadComboBox>
+	</Grid>
+{{endregion}}
+
 ## Editing the Control Template
 
 You can edit the control template of RadComboBox in order to achieve visualization and functionality that is not provided out of the box or via the built-in API. To do this, extract the ControlTemplate of the control and modify the elements in it. Read more about extracting templates in the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

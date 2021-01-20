@@ -1,5 +1,5 @@
 ---
-title: Label Definition
+title: Series Labels
 page_title: Label Definition
 description: Check our &quot;Label Definition&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-label-definition
@@ -8,105 +8,254 @@ published: True
 position: 0
 ---
 
-# Label Definition
+# Series Labels
 
-The series of the __RadChartView__ control expose mechanism for customizing the visualized labels. This article will introduce it to you.
+The __RadChartView__ control exposes a mechanism to display and customize series labels.
 
-If you wish to customize the default labels of the chart series, you could use Label Definition.
+To display labels for the data points in the chart series, set the series' __ShowLabels__ property to __True__.
 
->To see labels in the series you have to set __ShowLabels="True"__
+#### __[XAML] Example 1: Enabling Labels__
+{{region radchartview-features-label-definition-0}}
+	<telerik:BarSeries ShowLabels="True" />
+{{endregion}}
 
-All the properties of a __ChartSeriesLabelDefinition__ are listed here:
+#### Figure 1: Series labels
+![](images/radchartview-features-label-definition-0.png)
 
-* __Binding__ - Gets or sets the __DataPointBinding__ instance that will retrieve the content of each label.
-            
+## Customizing Labels
 
-* __Format__ - Gets or sets the string used to format the label content, using the __String.Format__ method.
-            
+To customize the labels of the chart series, you can use the __ChartSeriesLabelDefinition__ element. The definition describes the label settings and it is used in the __LabelDefinitions__ collection of the chart series. One series can contain multiple definitions. Each data point will get a label for each label definition in the collection. For example, if the collection contains 2 definitions, 2 labels will be displayed per a data point visual.
 
-* __Margin__ - Gets or sets the offset of each label from the four box edges.
-            
+The following example shows how to setup the chart in a data binding scenario and use ChartSeriesLabelDefinition to display custom labels.
 
-* __HorizontalAlignment__ - Gets or sets the horizontal alignment of each label relative to the __DataPoint__ it is associated with.
-            
+#### __[C#] Example 2: Defining data point model__
+{{region radchartview-features-label-definition-1}}
+	public class PlotInfo
+	{
+		public string Category { get; set; }
+		public double Value { get; set; }
+		public string Label { get; set; }
+	}
+{{endregion}}
 
-* __VerticalAlignment__ - Gets or sets the vertical alignmentof each label relative to the __DataPoint__ it is associated with.
-            
+#### __[C#] Example 3: Populating with data__
+{{region radchartview-features-label-definition-2}}
+	public MyUserControl()
+	{
+		InitializeComponent();
+		var source = new ObservableCollection<PlotInfo>();
+		source.Add(new PlotInfo() { Category = "A", Value = 10, Label = "Second Label A" });
+		source.Add(new PlotInfo() { Category = "B", Value = 5, Label = "Second Label B" });
+		source.Add(new PlotInfo() { Category = "C", Value = 14, Label = "Second Label C" });
+		this.DataContext = source;
+	}
+{{endregion}}
 
-* __Template__ - Gets or sets the __DataTemplate__ instance that may be used to define custom labels.
-            
-
-* __TemplateSelector__ - Gets or sets the __DataTemplateSelector__ instance that may be used to provide context-specific data templates, depending on the provided __DataPoint__.
-            
-
-* __DefaultVisualStyle__ - Gets or sets the __Style__ instance that defines the default appearance of the labels. The __Style__ should arget the __TextBlock__ type.
-            
-
-* __Strategy__ - Gets or sets a custom __ChartSeriesLabelStrategy__ instance that may be used to override the labels' appearance, content and layout.
-            
-
-The example below shows how to bind the label's content to a custom property from your business model. Two Label Definitions are added for each data item.
-
-#### __XAML__
-{{region radchartview-label-definition}}
-	<telerik:RadCartesianChart x:Name="myChart"
-							   Width="500"
-							   Height="300">
+#### __[XAML] Example 4: Defining two label definitions which add two label per data point__
+{{region radchartview-features-label-definition-3}}
+	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
+			<telerik:LinearAxis/>
 		</telerik:RadCartesianChart.VerticalAxis>
 		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
+			<telerik:CategoricalAxis/>
 		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:BarSeries ShowLabels="True" CategoryBinding="Category" ValueBinding="Value">
+		<telerik:BarSeries ShowLabels="True" 
+						   CategoryBinding="Category" 
+						   ValueBinding="Value" 
+						   ItemsSource="{Binding}">
 			<telerik:BarSeries.LabelDefinitions>
-				<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Center" >
-					<telerik:ChartSeriesLabelDefinition.Template>
-						<DataTemplate>
-							<TextBlock Foreground="DarkBlue" Text="{Binding DataItem.LabelProperty}" />
-						</DataTemplate>
-					</telerik:ChartSeriesLabelDefinition.Template>
-				</telerik:ChartSeriesLabelDefinition>
+			   
+			   <telerik:ChartSeriesLabelDefinition Binding="Label" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <telerik:ChartSeriesLabelDefinition.DefaultVisualStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Foreground" Value="White" />
+                            </Style>
+                        </telerik:ChartSeriesLabelDefinition.DefaultVisualStyle>
+                    </telerik:ChartSeriesLabelDefinition>
+					
 				<telerik:ChartSeriesLabelDefinition HorizontalAlignment="Center" VerticalAlignment="Top">
 					<telerik:ChartSeriesLabelDefinition.Template>
 						<DataTemplate>
-							<TextBlock Foreground="Black" Text="{Binding DataItem.Value}" />
+							<TextBlock Foreground="#5AA4D4" FontWeight="Bold" Text="{Binding DataItem.Value}" />
 						</DataTemplate>
 					</telerik:ChartSeriesLabelDefinition.Template>
 				</telerik:ChartSeriesLabelDefinition>
+				
 			</telerik:BarSeries.LabelDefinitions>
 		</telerik:BarSeries>
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __C#__
-{{region radchartview-label-definition_2}}
-    public class Data
+#### Figure 2: Customized labels
+![](images/radchartview-features-label-definition-1.png)
+
+The following list describes the properties available in the __ChartSeriesLabelDefinition__ class.
+
+* __Binding__: `DataPointBinding` instance that points to a property of the data point underlying data item which gets the content of each label.
+
+* __Format__: Format string used to format the label content, using the `String.Format` method.            
+
+* __Margin__: Determines the offset of each label from the four box edges.
+
+* __HorizontalAlignment__: Determines the horizontal alignment of each label relative to the data point it is associated with.            
+
+* __VerticalAlignment__: Determines the vertical alignment of each label relative to the data point it is associated with.            
+
+* __DefaultVisualStyle__: Sets a `Style` instance that defines the appearance of the default visual element representing the labels. The `TargetType` property of the `Style` should use the `TextBlock` type which is the default visual.
+
+* __Template__: Sets a `DataTemplate` instance that will be used to define the visual element of the labels. If the Template property is set, the DefaultVisualStyle doesn't take effect. This is because in this case the default visual element is replaced by a content presenter with the custom `DataTemplate`.
+
+* __TemplateSelector__: Sets a [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.5) instance that is used to provide context-specific data templates, depending on the provided data point.
+
+* __Strategy__: Allows you to define and set a custom `ChartSeriesLabelStrategy` instance that determines the labels' appearance, content and layout (size and position). Read more in the [Chart Series Label Strategy]({%slug radchartview-labels-shart-series-labels-strategy%}) article.
+	
+	The chart also support smart labels strategy which is slightly different than the label definition's strategy. Read more in the [Smart Labels]({%slug radchartview-features-smart-labels%}) article.
+	
+## Using LabelDefinitions and SeriesProvider
+
+In case the chart's [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) is used, the __LabelDefinitions__ collection is not accessible in XAML. In this case, there are two approaches that can be implemented. This section shows how to use them with a sample data binding setup.
+
+#### __[C#] Example 5: Defining series model (see Example 2 for the PlotInfo definition)__
+{{region radchartview-features-label-definition-4}}
+	public class SeriesInfo
     {
-        public string Category { get; set; }
-
-        public double Value { get; set; }
-
-        public string LabelProperty { get; set; }
-
-        public static List<Data> CreateData()
-        {
-            List<Data> collection = new List<Data>();
-            collection.Add(new Data { Category = "Apples", Value = 10, LabelProperty = "First Point" });
-            collection.Add(new Data { Category = "Oranges", Value = 8, LabelProperty = "Second Point" });
-            collection.Add(new Data { Category = "Pineapples", Value = 21, LabelProperty = "Third Point" });
-            return collection;
-        }
+        public ObservableCollection<PlotInfo> Items { get; set; }
     }
-
-	this.myChart.Series[0].ItemsSource = Data.CreateData();
-
 {{endregion}}
 
-The final result of this example should look similar to the next picture.
+#### __[C#] Example 6: Populating the data__
+{{region radchartview-features-label-definition-5}}
+	private static Random r = new Random();
+	public MyUserControl()
+	{
+		InitializeComponent();
+		var source = new ObservableCollection<SeriesInfo>();
+		for (int s = 0; s < 3; s++)
+		{
+			var seriesInfo = new SeriesInfo() { Items = new ObservableCollection<PlotInfo>() };
+			for (int i = 0; i < 5; i++)
+			{
+				var dpValue = r.Next(100, 300);
+				seriesInfo.Items.Add(new PlotInfo() { Category = "C" + i, Value = dpValue });
+			}
+			source.Add(seriesInfo);
+		}
+		this.DataContext = source;
+	}
+{{endregion}}
 
-![radchartview-features-labeldefinitions](images/radchartview-features-labeldefinitions.png)
+* __Using an attached property__
 
-## See Also
+	An attached property implementation will allow you to define a ChartSeriesLabelDefinition in XAML and then add it in code, using the PropertyChangedCallback of the property. The next example shows one way to implement this.
+	
+	#### __[C#] Example 7: Implementing the attached property__
+	{{region radchartview-features-label-definition-6}}
+		public static class ChartUtilities
+		{
+			public static readonly DependencyProperty LabelDefinitionProperty =
+				DependencyProperty.RegisterAttached(
+					"LabelDefinition", 
+					typeof(ChartSeriesLabelDefinition),
+					typeof(ChartUtilities), 
+					new PropertyMetadata(new ChartSeriesLabelDefinition(), OnLabelDefinitionChanged));
 
+			public static ChartSeriesLabelDefinition GetLabelDefinition(DependencyObject obj)
+			{
+				return (ChartSeriesLabelDefinition)obj.GetValue(LabelDefinitionProperty);
+			}
+
+			public static void SetLabelDefinition(DependencyObject obj, ChartSeriesLabelDefinition value)
+			{
+				obj.SetValue(LabelDefinitionProperty, value);
+			}
+
+			private static void OnLabelDefinitionChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+			{
+				var series = (CartesianSeries)d;
+				series.LabelDefinitions.Clear();
+				if (e.NewValue != null)
+				{
+					var labelDefinition = (ChartSeriesLabelDefinition)e.NewValue;
+					series.LabelDefinitions.Add(labelDefinition);
+				}
+			}
+		}
+	{{endregion}}
+	
+	#### __[XAML] Example 8: Adding label definition with an attached property__
+	{{region radchartview-features-label-definition-7}}
+		<telerik:RadCartesianChart Palette="Windows8">
+            <telerik:RadCartesianChart.VerticalAxis>
+                <telerik:LinearAxis/>
+            </telerik:RadCartesianChart.VerticalAxis>
+            <telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:CategoricalAxis/>
+            </telerik:RadCartesianChart.HorizontalAxis>
+            <telerik:RadCartesianChart.SeriesProvider>
+                <telerik:ChartSeriesProvider Source="{Binding}">
+                    <telerik:CategoricalSeriesDescriptor ValuePath="Value" CategoryPath="Category" ItemsSourcePath="Items">
+                        <telerik:CategoricalSeriesDescriptor.Style>
+                            <Style TargetType="telerik:BarSeries">
+                                <Setter Property="ShowLabels" Value="True"/>
+								<Setter Property="local:ChartUtilities.LabelDefinition">
+                                    <Setter.Value>
+                                        <telerik:ChartSeriesLabelDefinition Binding="Value" Margin="0 0 0 10"
+                                                                            HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </telerik:CategoricalSeriesDescriptor.Style>
+                    </telerik:CategoricalSeriesDescriptor>
+                </telerik:ChartSeriesProvider>
+            </telerik:RadCartesianChart.SeriesProvider>
+        </telerik:RadCartesianChart>
+	{{endregion}}
+
+* __Using the SeriesCreated event__
+
+	The [SeriesCreated]({%slug radchartview-features-chartseriesprovider%}#events) event gives access to the generated series, so the event handler can be used to create ChartSeriesLabelDefinition objects in code.
+	
+	#### __[XAML] Example 9: Adding label definition using the SeriesCreated event__
+	{{region radchartview-features-label-definition-8}}
+		  <telerik:RadCartesianChart Palette="Windows8">
+            <telerik:RadCartesianChart.VerticalAxis>
+                <telerik:LinearAxis/>
+            </telerik:RadCartesianChart.VerticalAxis>
+            <telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:CategoricalAxis/>
+            </telerik:RadCartesianChart.HorizontalAxis>
+            <telerik:RadCartesianChart.SeriesProvider>
+                <telerik:ChartSeriesProvider Source="{Binding}" SeriesCreated="ChartSeriesProvider_SeriesCreated">
+                    <telerik:CategoricalSeriesDescriptor ValuePath="Value" CategoryPath="Category" ItemsSourcePath="Items">
+                        <telerik:CategoricalSeriesDescriptor.Style>
+                            <Style TargetType="telerik:BarSeries">
+                                <Setter Property="ShowLabels" Value="True"/>
+                            </Style>
+                        </telerik:CategoricalSeriesDescriptor.Style>
+                    </telerik:CategoricalSeriesDescriptor>
+                </telerik:ChartSeriesProvider>
+            </telerik:RadCartesianChart.SeriesProvider>
+        </telerik:RadCartesianChart>
+	{{endregion}}
+	
+	#### __[C#] Example 10: Implement the SeriesCreated event handler__
+	{{region radchartview-features-label-definition-9}}
+		private void ChartSeriesProvider_SeriesCreated(object sender, Telerik.Windows.Controls.ChartView.ChartSeriesCreatedEventArgs e)
+		{
+			var labelDefinition = new ChartSeriesLabelDefinition()
+			{
+				Binding = new PropertyNameDataPointBinding("Value"),
+				VerticalAlignment = VerticalAlignment.Top,
+				HorizontalAlignment = HorizontalAlignment.Center,
+				Margin = new Thickness(0, 0, 0, 10),
+			};
+			e.Series.LabelDefinitions.Add(labelDefinition);
+		}
+	{{endregion}}
+	
+#### Figure 3: Customized labels with SeriesProvider
+![](images/radchartview-features-label-definition-2.png)
+
+## See Also  
  * [Smart Labels]({%slug radchartview-features-smart-labels%})

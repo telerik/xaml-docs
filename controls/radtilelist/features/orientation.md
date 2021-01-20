@@ -1,14 +1,14 @@
 ---
-title: Tiles Arranegment
-page_title: Tiles Arranegment
-description: Check our &quot;Orientation&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+title: Tiles Arrangement
+page_title: Tiles Arrangement - TileList - Features
+description: Check our &quot;Tiles Arrangement&quot; documentation article for the RadTileList {{ site.framework_name }} control.
 slug: radtilelist-tiles-arrangement
 tags: verticalalignment,horizontal,orietation
 published: True
 position: 4
 ---
 
-# Tiles Arranegment
+# Tiles Arrangement
 
 RadTileList allows you to control the order and alignment of the tiles in each group.
 

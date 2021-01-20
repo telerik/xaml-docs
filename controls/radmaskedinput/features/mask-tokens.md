@@ -16,17 +16,17 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ### 1. Standard format codes:
 
-* __A__ - Alphanumeric or a special character, required.		  
+* __A__: Alphanumeric or a special character, required.		  
 
-* __a__ - Alphanumeric or a special character, not required 
+* __a__: Alphanumeric or a special character, not required 
 
-* __L__ - Letter, required. Restrict input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.			  
+* __L__: Letter, required. Restrict input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.			  
 
-* __l__ - Letter, not required			  
+* __l__: Letter, not required			  
 
-* __\__ - Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.			  
+* __\\__: Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.			  
 
-* __Any other characters__ -  literals. All non-mask elements will appear as themselves within __RadMaskedTextInput__. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.			  
+* __Any other characters__: (literals) All non-mask elements will appear as themselves within __RadMaskedTextInput__. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.			  
 
 #### __[XAML] Example 1: Setting standard format codes__
 {{region xaml-radmaskedinput-features-mask-tokens_0}}
@@ -50,15 +50,15 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ### 2. Numeric format codes:
 
-* __c__ - Currency pattern, not required			  
+* __c__: Currency pattern, not required			  
 
-* __n__ - Decimal pattern, required			  
+* __n__: Decimal pattern, required			  
 
-* __p__ - Percentage, not required			  
+* __p__: Percentage, not required			  
 
-* __d__ - Digit pattern, required			  
+* __d__: Digit pattern, required			  
 
-* __#__ - Digit pattern, not required. If this position is blank in the mask, it will be rendered as the character in the Placeholder property. Plus (+) and minus (-) signs are allowed.			  
+* __#__: Digit pattern, not required. If this position is blank in the mask, it will be rendered as the character in the Placeholder property. Plus (+) and minus (-) signs are allowed.			  
 
 #### __[XAML] Example 2: Setting numeric format codes__
 {{region xaml-radmaskedinput-features-mask-tokens_1}}
@@ -94,27 +94,27 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 ### 1. Standard DateTime Format Codes
 
-* __d__ - Short date pattern.			  
+* __d__: Short date pattern.			  
 
-* __D__ - Long date pattern.			  
+* __D__: Long date pattern.			  
 
-* __f__ - Full date and time (long date and short time).			  
+* __f__: Full date and time (long date and short time).			  
 
-* __F__ - Full date time pattern (long date and long time).			  
+* __F__: Full date time pattern (long date and long time).			  
 
-* __g__ - General (short date and short time).			  
+* __g__: General (short date and short time).			  
 
-* __G__ - General (short date and long time).			  
+* __G__: General (short date and long time).			  
 
-* __m, M__ - Month day pattern.			  
+* __m, M__: Month day pattern.			  
 
-* __r, R__ - RFC1123 pattern.			  
+* __r, R__: RFC1123 pattern.			  
 
-* __s__ - Sortable DateTime pattern (based on ISO 8601) using local time.			  
+* __s__: Sortable DateTime pattern (based on ISO 8601) using local time.			  
 
-* __t__ - Short time pattern.			  
+* __t__: Short time pattern.			  
 
-* __T__ - Long time pattern.			  
+* __T__: Long time pattern.			  
 
 #### __[XAML] Example 3: Using defined tokens__
 {{region xaml-radmaskedinput-features-mask-tokens_2}}
@@ -156,39 +156,39 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 When standard date codes are too restrictive, you can create your own custom formats using the format patterns listed below:
 
-* __d__ - Day token			  
+* __d__: Day token			  
 
-* __dd__- The numeric day of the month.			  
+* __dd__: The numeric day of the month.			  
 
-* __ddd__- The abbreviated name of the day of the week.			  
+* __ddd__: The abbreviated name of the day of the week.			  
 
-* __M__ - The month name followed by the numeric day.			  
+* __M__: The month name followed by the numeric day.			  
 
-* __MM__ - The numeric month.			  
+* __MM__: The numeric month.			  
 
-* __MMM__ - The abbreviated name of the month.			  
+* __MMM__: The abbreviated name of the month.			  
 
-* __MMMM__ - The full name of the month.			  
+* __MMMM__: The full name of the month.			  
 
-* __y__ - The full month name and year numeric.			  
+* __y__: The full month name and year numeric.			  
 
-* __yy__- The year without the century.			  
+* __yy__: The year without the century.			  
 
-* __yyyy__- The year in four digits, including the century.			  
+* __yyyy__: The year in four digits, including the century.			  
 
-* __h, hh__ - The hour in a 12-hour clock.			  
+* __h, hh__: The hour in a 12-hour clock.			  
 
-* __H, HH__ - the hour in a 24-hour clock.			  
+* __H, HH__: the hour in a 24-hour clock.			  
 
-* __m, mm__ - Minute token			  
+* __ms, mm__: Minutes seconds, minutes token			  
 
-* __s__ __,ss__ - Second token			  
+* __s__,__ss__: Seconds token			  
 
-* __t__ - The first character in the AM/PM designator.			  
+* __t__: The first character in the AM/PM designator.			  
 
-* __tt__- The AM/PM designator.			  
+* __tt__: The AM/PM designator.			  
 
-* __f__ - Millisecond token			  
+* __f__: Millisecond token			  
 
 > The day time period can be changed using the keyboard arrows keys. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse.
 
@@ -256,9 +256,9 @@ When standard date codes are too restrictive, you can create your own custom for
 
 >When you customize a mask you should keep in mind that the Mask is basically structured like so:
 > __MaskTokenN.F__
->	- __MaskToken__ - MaskToken restricting the input characters
->	- __N__ - Number of input characters, not required
->	- __F__ - Number of input digits after the decimal point, not required			
+>	- __MaskToken__: MaskToken restricting the input characters
+>	- __N__: Number of input characters, not required
+>	- __F__: Number of input digits after the decimal point, not required			
 
 For instance: 
 

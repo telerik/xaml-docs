@@ -14,9 +14,9 @@ RadTileList allows you to control the order and alignment of the tiles in each g
 
 The tiles in a group can be arranged horizontally or vertically. This is controlled using the __Orientation__ property of RadTileList.
 
-* __Horizontal arrangement__: Tiles are arranged left to right and if a scrollbar is needed it is vertical.
+* __Horizontal orientation__: Tiles are arranged left to right and if a scrollbar is needed it is vertical.
 
-* __Vertical arrangement__: Tiles are arranged top to bottom and if a scrollbar is needed it is horizontal. This is the __default value__.
+* __Vertical orientation__: Tiles are arranged top to bottom and if a scrollbar is needed it is horizontal. This is the __default value__.
 
 #### __[XAML]Example 1: Setting tiles arrangement orientation__
 {{region radtilelist-tiles-arrangement-0}}

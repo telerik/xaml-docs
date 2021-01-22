@@ -15,7 +15,7 @@ The selection feature of RadCardView allows you to select cards by clicking onto
 #### Figure 1: Selected card 
 ![](images/radcardview-features-selection-0.png)
 
-Selecting an item udates the __SelectedItem__ property of RadCardView. The property can be used to control the selection in code. The __SelectedItem__ holds a reference to an item from the __ItemsSource__ of the control.
+Selecting an item updates the __SelectedItem__ property of RadCardView. The property can be used to control the selection in code. The __SelectedItem__ holds a reference to an item from the __ItemsSource__ of the control.
 
 #### __[C#] Example 1: Setting SelectedItem in code__
 {{region radcardview-features-selection-0}}

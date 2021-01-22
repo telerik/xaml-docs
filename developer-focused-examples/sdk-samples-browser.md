@@ -1,7 +1,7 @@
 ---
 title: SDK Samples Browser 
 page_title: SDK Samples Browser 
-description: Check our &SDK Samples Browser&quot; application, which allows for exploring the examples from the XAML SDK repository. 
+description: Check our &quot;SDK Samples Browser&quot; application, which allows for exploring the examples from the XAML SDK repository. 
 slug: sdk-samples-browser
 tags: sdk,samples,browser,
 published: True

@@ -12,6 +12,10 @@ position: 0
 
 This topic covers the specific events exposed by the __RadGridView__ control and its sub elements __GridViewColumn__, __GridViewRow__ and __GridViewCell__. The events are first grouped by control and then by their general purpose.
 
+{% if site.has_cta_panels == true %}
+{% include cta-panel-small.html %}
+{% endif %}
+
 ## RadGridView
 
 ### Data Events

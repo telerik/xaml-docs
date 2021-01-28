@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Selection - ChartView - Behaviors
 description: Check our &quot;Selection&quot; documentation article for the RadChartView {{ site.framework_name }} control.
 slug: radchartview-features-selection
 tags: selection
@@ -10,264 +10,190 @@ position: 3
 
 # Selection
 
-This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.        
+The chart selection behavior enables interactions with the data point visual elements.
 
-Here are the main properties that *ChartSelectionBehavior* exposes:        
+If the feature is enabled, clicking on a data point will select or deselect it, based on the selection mode and the current selection state of the point. There is no default visual feedback for the selection. This article shows how to use the selection behavior, enable the visual feedback and customize it.
 
-* __DataPointSelectionMode__ - to control single / multiple data point selection.          
+To enable the selection, add a __ChartSelectionBehavior__ element in the __Behaviors__ collection of the chart control. The following example shows how to create a sample data binding setup and enable the feature.
 
-* __HitTestMargin__ - to increase the hit-testable area around the data point (especially useful when visualizing small scatter points that can be selected).          
+#### __[C#] Example 1: Define the data point model__
+{{region radchartview-features-selection-0}}
+	public class PlotInfo
+    {
+        public string Category { get; set; }
+        public double Value { get; set; }
+    }
+{{endregion}}
 
-* __SelectionPoints__ - to detect the selection. You may also use the SelectionChanged event of the RadChartView for the same purpose.          
+#### __[C#] Example 2: Populating with data__
+{{region radchartview-features-selection-1}}
+	private static Random r = new Random();
+	public MyUserControl()
+	{
+		InitializeComponent();
+		var source = new ObservableCollection<PlotInfo>();
+		for (int i = 0; i < 10; i++)
+		{
+			source.Add(new PlotInfo() { Category = "C" + i, Value = r.Next(100, 300) });
+		}
+		this.DataContext = source;
+	}
+{{endregion}}
 
-* __SelectionPalette__ - to control the selected element appearance.          
-
-For the purpose of this section we'll create a Scatter Series and demonstrate selecting points and styling them.        
-
-You may read how to create a databound Series in [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) topic.          
-
-#### __XAML__
-{{region radchart-features-selection_0}}
-	<telerik:RadCartesianChart x:Name="RadChart1" Palette="Metro">
-	
-	    <telerik:RadCartesianChart.Behaviors>
-	        <telerik:ChartSelectionBehavior DataPointSelectionMode="Single" />
-	    </telerik:RadCartesianChart.Behaviors>
-	
-	    <telerik:ScatterPointSeries />
-	
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	        <telerik:LinearAxis />
-	    </telerik:RadCartesianChart.HorizontalAxis>
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis />
-	    </telerik:RadCartesianChart.VerticalAxis>
-	
+#### __[XAML] Example 3: Using the ChartSelectionBehavior__
+{{region radchartview-features-selection-2}}
+	<telerik:RadCartesianChart Palette="Windows8" SelectionPalette="VisualStudio2019Selected">
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartSelectionBehavior />
+		</telerik:RadCartesianChart.Behaviors>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>		
+		<telerik:PointSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}" />
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-#### __C#__
-{{region radchart-features-selection_1}}
-	    public MainWindow()
-	    {
-	        InitializeComponent();
-	        var series = RadChart1.Series[0] as ScatterPointSeries;
-	        series.XValueBinding = new PropertyNameDataPointBinding("XValue");
-	        series.YValueBinding = new PropertyNameDataPointBinding("YValue");
-	        series.ItemsSource = this.GetData();
-	    }
-	
-	    private List<ChartData> GetData()
-	    {
-	        Random rand = new Random();
-	        List<ChartData> data = new List<ChartData>();
-	
-	        for (int i = 1; i < 30; i++)
-	        {
-	            data.Add(new ChartData() { XValue = i, YValue = rand.Next(10, 100) });
-	        }
-	
-	        return data;
-	    }
-	}
-	
-	public class ChartData
+#### Figure 1: Selected data point
+![](images/radchartview-features-selection-0.png)
+
+The selected data points can be accessed using the __Selected
+
+## Visual Feedback
+
+By default selecting a data point doesn't highlight it on the plot area. To enable this, you can use the chart [palettes]({%slug radchartview-features-palettes-introduction%}). The __Palette__ property of the chart defines the fill color of the data points. The __SelectionPalette__ property defines the colors of the data points when selected.
+
+#### __[XAML] Example 4: Setting the selection palette__
+{{region radchartview-features-selection-3}}
+	<telerik:RadCartesianChart Palette="Green" SelectionPalette="GreenSelected">
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartSelectionBehavior />
+		</telerik:RadCartesianChart.Behaviors>
+		<!-- other elements here (see Examples 1 to 3)-->
+	</telerik:RadCartesianChart>
+{{endregion}}
+
+#### Figure 2: Palette based selection coloring
+![](images/radchartview-features-selection-1.png)
+
+To define selection colors different than the ones provided by the predefined palettes, you can create a [custom palette]({%slug radchartview-features-palettes-custom-palettes%}) and assign it to the SelectionPalette property of the chart. Or alternatively, use the [DefaultVisualStyle or PointTemplate]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the chart series. 
+
+The following example shows one way to change the selected point's background using a __PointTemplate__. In this case the palette won't be used so there is no need to set the palette propreties.
+
+#### __[XAML] Example 5: Customizing the data point visual__
+{{region radchartview-features-selection-4}}
+	<telerik:RadCartesianChart>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis/>
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Behaviors>
+			<telerik:ChartSelectionBehavior />
+		</telerik:RadCartesianChart.Behaviors>
+		<telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
+			<telerik:BarSeries.PointTemplate>
+				<DataTemplate>
+					<Border>
+						<Border.Style>
+							<Style TargetType="Border">
+								<Setter Property="Background" Value="#A8C6ED" />
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding IsSelected}" Value="True">
+										<Setter Property="Background" Value="#2E64D6" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Border.Style>
+					</Border>
+				</DataTemplate>
+			</telerik:BarSeries.PointTemplate>
+		</telerik:BarSeries>
+	</telerik:RadCartesianChart>
+{{endregion}}
+
+The __data context__ of the element in the __PointTemplate__ is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%})
+
+#### Figure 3: PointTemplate based selection coloring
+![](images/radchartview-features-selection-2.png)
+
+An additional way of customizing the selection's visual feedback is to data bind the color property of the default visual element (via DefaultVisualStyle) or the element in the PointTemplate. Then update the underlying property in case the selection changes, using the [SelectionChanged](#events) event of the ChartSelectionBehavior.
+
+## Selection Mode
+
+ChartSelectionBehavior supports two selection modes - __Single__ (default) and __Multiple__. Also, there is a __None__ selection mode which disables the selection.
+
+When the __Single__ mode is used, the click on a data point selects it. If a data point was previously selected, it gets deselected.
+
+When the __Multiple__ mode is used, the click on a data point includes it in the selection. Multiple data points are selected. A click on a selected data point will deselect it.
+
+The selection mode is controlled with the __DataPointSelectionMode__ property of ChartSelectionBehavior.
+
+#### __[XAML] Example 6: Setting DataPointSelectionMode__
+{{region radchartview-features-selection-5}}
+	<telerik:RadCartesianChart.Behaviors>
+		<telerik:ChartSelectionBehavior DataPointSelectionMode="Multiple"/>
+	</telerik:RadCartesianChart.Behaviors>
+{{endregion}}
+
+#### Figure 4: Multiple selection
+![](images/radchartview-features-selection-3.png)
+
+## Hit Test Area
+
+The hit test area is the space in the data point visual where you can click to select it. By default the area matches the layout slot (position and size) of the data point visual. 
+
+To change expand the size of the hit test area, set the __HitTestMargin__ property of ChartSelectionBehavior. This is useful when showing small data point visuals that are hard to click.
+
+#### __[XAML] Example 7: Setting HitTestMargin__
+{{region radchartview-features-selection-6}}
+	<telerik:RadCartesianChart.Behaviors>
+		<telerik:ChartSelectionBehavior HitTestMargin="30"/>
+	</telerik:RadCartesianChart.Behaviors>
+{{endregion}}
+
+## Events
+
+ChartSelectionBehavior exposes the __SelectionChanged__ event which is raised when a data point is selected or deselected.
+
+#### __[XAML] Example 8: Subscribing to SelectionChanged__
+{{region radchartview-features-selection-7}}
+	<telerik:RadCartesianChart.Behaviors>
+		<telerik:ChartSelectionBehavior SelectionChanged="ChartSelectionBehavior_SelectionChanged"/>
+	</telerik:RadCartesianChart.Behaviors>
+{{endregion}}
+
+#### __[C#] Example 9: SelectionChanged event handler__
+{{region radchartview-features-selection-8}}
+	private void ChartSelectionBehavior_SelectionChanged(object sender, Telerik.Windows.Controls.ChartView.ChartSelectionChangedEventArgs e)
 	{
-	    public double XValue
-	    {
-	        get;
-	        set;
-	    }
-	
-	    public double YValue
-	    {
-	        get;
-	        set;
-	    }
+		IList<DataPoint> selectedPoints = e.AddedPoints;
+		IList<DataPoint> deselectedPoints = e.RemovedPoints;
 	}
 {{endregion}}
 
-#### __VB.NET__
-{{region radchart-features-selection_2}}
-	public MainWindow()
-	   Public Sub New()
-			InitializeComponent()
-			Dim series = TryCast(RadChart1.Series(0), ScatterPointSeries)
-			series.XValueBinding = New PropertyNameDataPointBinding("XValue")
-			series.YValueBinding = New PropertyNameDataPointBinding("YValue")
-			series.ItemsSource = Me.GetData()
-	   End Sub
+## Programmatic Selection
 
-		Private Function GetData() As List(Of ChartData)
-			Dim rand As New Random()
-			Dim data As New List(Of ChartData)()
+To get the selected data points, use the __SelectedPoints__ collection of the chart control. The collection is read-only, so it cannot be replaced, data bound or modified.
 
-			For i As Integer = 1 To 29
-				data.Add(New ChartData() With {.XValue = i, .YValue = rand.Next(10, 100)})
-			Next i
-
-			Return data
-		End Function
-	}
-
-	Public Class ChartData
-		Public Property XValue() As Double
-
-		Public Property YValue() As Double
-	End Class
+#### __[C#] Example 10: Getting the selected data points__
+{{region radchartview-features-selection-9}}
+	ReadOnlyDataPointCollection currentSelection = this.radCartesianChart.SelectedPoints;
 {{endregion}}
 
-To be able to change the selected element(s) appearance we'll use Selection Palette:
+To select or deselect a data point, set the __IsSelected__ property of the corresponding [DataPoint]({%slug radchartview-getting-started-data-point%}) object. 
 
-#### __XAML__
-{{region radchart-features-selection_5}}
-	<telerik:RadCartesianChart.SelectionPalette>
-	    <telerik:ChartPalette>
-	        <telerik:ChartPalette.GlobalEntries>
-	            <telerik:PaletteEntry Fill="Red" />
-	        </telerik:ChartPalette.GlobalEntries>
-	    </telerik:ChartPalette>
-	</telerik:RadCartesianChart.SelectionPalette>
+#### __[C#] Example 11: Selecting a data point from a PointSeries__
+{{region radchartview-features-selection-10}}
+	var chartSeries = (PointSeries)this.radCartesianChart.Series[0];
+	CategoricalDataPoint dataPoint = chartSeries.DataPoints[0];
+	dataPoint.IsSelected = true;
 {{endregion}}
 
-A sample result can be seen below:
-![Rad Chart View-chart selection](images/RadChartView-chart_selection.PNG)
+>tip See how to implement a custom behavior allowing SelectedPoints data binding in the [BindingSelectedItemsToViewModel](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BindingSelectedItemsToViewModel) SDK example.
 
-Let's wire to __SelectionChanged__ event of the ChartSelectionBehavior where we can easily determine the data point clicked, the series it belongs to and was it selected or de-selected:        
-
-#### __C#__
-{{region radchart-features-selection_3}}
-	private void RadChart1_SelectionChanged(object sender, ChartSelectionChangedEventArgs e)
-	{
-	    //Handle selection of the current point
-	    if (e.AddedPoints.Count > 0)
-	    {
-	        // Get the data point.
-	        var addedPoint = e.AddedPoints[0];
-	        // Get the series.
-	        var series = addedPoint.Presenter as ScatterPointSeries;
-	
-	        //Your code here...
-	    }
-	
-	    //Handle de-selection of the current point
-	    if (e.RemovedPoints.Count > 0)
-	    {
-	        // Get the data point.
-	        var removedPoint = e.RemovedPoints[0];
-	        // Get the series.
-	        var series = removedPoint.Presenter as LineSeries;
-	
-	        //Your code here...
-	    }
-	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radchart-features-selection_4}}
-	Private Sub RadChart1_SelectionChanged(sender As Object, e As ChartSelectionChangedEventArgs)
-	    'Handle selection of the current point '
-	    If e.AddedPoints.Count > 0 Then
-	        ' Get the data point. '
-	        Dim addedPoint = e.AddedPoints(0)
-	        ' Get the series. '
-	        Dim series = TryCast(addedPoint.Presenter, ScatterPointSeries)
-	
-	        'Your code here... '
-			
-	    End If
-	
-	    'Handle de-selection of the current point '
-	    If e.RemovedPoints.Count > 0 Then
-	        ' Get the data point. '
-	        Dim removedPoint = e.RemovedPoints(0)
-	        ' Get the series. '
-	
-	        'Your code here... '
-			
-	        Dim series = TryCast(removedPoint.Presenter, LineSeries)
-	    End If
-	End Sub
-{{endregion}}
-
->For Line/Area/Spline/SplineArea series selection refers to selecting the pointmarks and is therefore triggered when clicking any of the corresponding pointmarks. You will need to define a PointMarkTemplate so the item can be selected. For example:          
-
-#### __XAML__
-{{region radchart-features-selection_6}}
-	<telerik:LineSeries>
-	    <telerik:LineSeries.PointTemplate>
-	        <DataTemplate>
-	            <Ellipse Height="8" Width="8" Fill="Yellow" Stroke="Black" />
-	        </DataTemplate>
-	    </telerik:LineSeries.PointTemplate>
-	</telerik:LineSeries>
-{{endregion}}
-
-In order distinguish the selected point from the not-selected one (for example to change the Ellipse color) in the SelectionChanged event you will have to get the series' ContentPresenter:        
-
-#### __C#__
-{{region radchart-features-selection_5}}
-	private void RadChart1_SelectionChanged(object sender, ChartSelectionChangedEventArgs e)
-	{
-		//Handle selection of the current point
-	    if (e.AddedPoints.Count > 0)
-	    {
-	        var addedPoint = e.AddedPoints[0];
-	        var series = addedPoint.Presenter as LineSeries;
-			
-			//Get the Content Presenter of the series
-	        var pointPresenter = series.
-	            ChildrenOfType<ContentPresenter>().
-	            Where(cp => cp.Tag == addedPoint).FirstOrDefault();
-	        var ellipseElement = pointPresenter.
-	            ChildrenOfType<Ellipse>().FirstOrDefault();
-	  
-	        //Do whatever you want with it :)
-	        ellipseElement.Fill = new SolidColorBrush(Colors.Red);
-	    }
-	
-	    //Handle de-selection of the current point
-	    if (e.RemovedPoints.Count > 0)
-	    {
-	        var removedPoint = e.RemovedPoints[0];
-	        var series = removedPoint.Presenter as LineSeries;
-	        var pointPresenter = series.
-	            ChildrenOfType<ContentPresenter>().
-	            Where(cp => cp.Tag == removedPoint).FirstOrDefault();
-	        var ellipseElement = pointPresenter.
-	            ChildrenOfType<Ellipse>().FirstOrDefault();
-	  
-	        //Do whatever you want with it :)
-	        ellipseElement.Fill = new SolidColorBrush(Colors.Yellow);
-	    }    
-	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radchart-features-selection_6}}
-	Private Sub RadChart1_SelectionChanged(sender As Object, e As ChartSelectionChangedEventArgs)   
-	    'Handle selection of the current point '
-	    If e.AddedPoints.Count > 0 Then
-	        Dim addedPoint = e.AddedPoints(0)
-	        Dim series = TryCast(addedPoint.Presenter, LineSeries)
-	        Dim pointPresenter = series.ChildrenOfType(Of ContentPresenter)().Where(Function(cp) cp.Tag = addedPoint).FirstOrDefault()
-	        Dim ellipseElement = pointPresenter.ChildrenOfType(Of Ellipse)().FirstOrDefault()
-	
-	        'Do whatever you want with it :) '
-	        ellipseElement.Fill = New SolidColorBrush(Colors.Red)
-	    End If
-		
-		'Handle de-selection of the current point '
-	    If e.RemovedPoints.Count > 0 Then
-	        Dim removedPoint = e.RemovedPoints(0)
-	        Dim series = TryCast(removedPoint.Presenter, LineSeries)
-	        Dim pointPresenter = series.ChildrenOfType(Of ContentPresenter)().Where(Function(cp) cp.Tag = removedPoint).FirstOrDefault()
-	        Dim ellipseElement = pointPresenter.ChildrenOfType(Of Ellipse)().FirstOrDefault()
-	
-	        'Do whatever you want with it :) '
-	        ellipseElement.Fill = New SolidColorBrush(Colors.Yellow)
-	    End If
-	End Sub
-	
-{{endregion}}
+## See Also  
+* [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) 

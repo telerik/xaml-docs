@@ -19,8 +19,6 @@ This help article will show you how to set a built-in theme to Telerik UI for WP
 
 * [Setting Application-Wide Built-in Theme in the Code-Behind](#setting-application-wide-built-in-theme-in-the-code-behind)
 
-* [Unsupported Controls](#unsupported-controls)
-
 Telerik's __WPF controls__ support the following themes:      
 
 * __Office_Black__
@@ -158,15 +156,6 @@ Changing the application theme is similar to changing the theme of single contro
 			End Sub
 		End Class
 	{{endregion}}
-
-## Unsupported controls
-
-There are few controls that don't support changing the theme using StyleManager and they should be used with the NoXaml dlls and the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism. Here is a list of those controls:
-
-* RadGanttView
-* RadLayoutControl
-* RadRadialMenu
-* RadCloudUpload
 	
 ## See Also
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

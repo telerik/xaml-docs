@@ -1,7 +1,7 @@
 ---
 title: Complete Silverlight Controls Documentation
 page_title: Complete Silverlight Controls Documentation
-description: Easily build next-generation applications with 140+ WPF controls from Telerik. Check the Telerik UI for WPF documentation for guidance and examples. 
+description: Easily build next-generation applications with 100+ Silverlight controls from Telerik. Check the Telerik UI for Silverlight documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True

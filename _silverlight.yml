@@ -150,8 +150,7 @@ controls/radcallout,
 controls/radentityframeworkcoredatasource,
 controls/radslider/features/multiple-thumbs,
 controls/radcardview,
-getting-started/telerik-application-lifecycle,
-introduction.md]
+getting-started/telerik-application-lifecycle]
 
 exclude_navigation: [controls/raddocking/theming/*]
 
@@ -169,7 +168,11 @@ defaults:
     values:
         layout: "documentation"
         category: "default"
-
+-
+    scope:
+        path: ""
+    values:
+        title_prefix: "Complete Silverlight"
 -
     scope:
         path: "controls/radgridview"

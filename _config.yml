@@ -84,8 +84,7 @@ controls/radgridview/troubleshooting/corrupted_extended-selection.md,
 cloud-integration/google-cloud/mysql-database,
 cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
 getting-started/first-steps-sl,
-getting-started/explore-control-features-sl,
-introduction_sl.md]
+getting-started/explore-control-features-sl]
 
 exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
@@ -3200,6 +3199,11 @@ defaults:
         path: "knowledge-base"
     values:
         res_type: "kb"
+-
+    scope:
+        path: ""
+    values:
+        title_prefix: "Complete WPF"
 -
     scope:
         path: "controls/radgridview"

@@ -10,28 +10,30 @@ position: 0
 
 # Font Glyphs Overview
 
-With the new Office2016 theme we introduced a new approach to add icons and icon-like images. We are providing font "glyphs" via the __TelerikWebUI__ font. The glyphs are vector symbols that can be used as information-carrying icons or interaction indicators. 
+With the Office2016 theme, we introduced a new approach to add icons and icon-like images. We are providing font *glyphs* via the __TelerikWebUI__ font. The glyphs are vector symbols that can be used as information-carrying icons or interaction indicators. This article explains the specifics of this approach, demonstrates usage with examples and provides a reference sheet for the available glyphs.
 
-> As of **R1 2018** we recommend using the new **RadGlyph** class and markup extension to visualize font glyphs. It has a number of advantages which are documented in [this article]({%slug common-styling-appearance-radglyph%}).
+> As of **R1 2018**, we recommend using the new **RadGlyph** class and markup extension to visualize font glyphs. It has many advantages that are documented in [the RadGlyph article]({%slug common-styling-appearance-radglyph%}).
 
-This article explains the specifics of this approach, demonstrates usage with examples and provides a reference sheet for the available glyphs.
+For a list with all available glyphs, see the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-> You can find a list with all available glyphs in the [reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+## Advantages
 
-The TelerikWebUI font provides over 400 individual glyphs. We have chosen this approach to define the icons in the Office2016 because it provides a number of advantages and benefits.
-* The glyphs are vector paths which are easily scalable without loss of quality.
+The TelerikWebUI font provides over 400 individual glyphs. We have chosen this approach to define the icons in the Office2016 because it provides a number of advantages and benefits:
+
+* The glyphs are vector paths that are easily scalable without loss of quality.
 
 * There is a wide range of different beautiful built-in glyphs to choose from.
 
-* They are easily colored – since they are text shapes. It is achieved by setting a Foreground color, which allows their usage in scenarios where the background of the control changes between light and dark color in different interaction states – e.g. buttons.
+* They are easily colored – since they are text shapes. You can change their color by setting a Foreground color, which allows their usage in scenarios where the background of the control changes between light and dark color in different interaction states – e.g. buttons.
 
-* They are all contained in the small font file and available for use with the inclusion of the Telerik.Windows.Controls assembly and merging the needed resource dictionary for easier referencing.
+* They are all contained in a small font file. To use them, include the Telerik.Windows.Controls assembly and merge the needed resource dictionary for easier referencing.
 
-* They are available for use in any of our themes, when the needed resources are included. They are __not__ specific for the Office2016.
+* They are available for use in any of our themes when the needed resources are included. They are __not__ specific for the Office2016.
 
-The __recommended size__ for the TelerikWebUI glyphs is 16 or any multiple of it (e.g. 32, 48, 64 etc.) since they are designed for 16px height. However, they are vector paths and, like any font, would look clean, distinguishable, non-pixelated and beautiful in almost any size, which is their advantage to raster images and icons.
+## Glyph Groups
 
 The available glyphs are separated in several groups, based on their usage:
+
 * __Navigation and Layout__
 * __Action__
 * __Media__
@@ -45,87 +47,99 @@ The available glyphs are separated in several groups, based on their usage:
 
 ## Using glyphs
 
-The glyphs are basically text shapes, so they need to be hosted in a control with a text contents. Recommended for this is a __TextBlock__ as it has no special styling.
+The __recommended size__ for the TelerikWebUI glyphs is 16 or any multiple of 16 (e.g. 32, 48, 64, etc.) since they are designed for 16px height. However, they are vector paths and, like any font, would look clean, distinguishable, non-pixelated and beautiful in almost any size, which is their advantage to raster images and icons.
 
-#### __[XAML] Example 1: Using glyphs__
-{{region common-styling-appearance-glyphs-overview-0}}
-	<TextBlock FontFamily=”{StaticResource TelerikWebUI}” 
-			   FontSize=”16” 
-			   Text=”{StaticResource GlyphHeart}” 
-			   FontWeight=”Normal” 
-			   Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”/>
-{{endregion}}
+The following list provides examples that demonstrate how to use glyphs:
 
-The content of the text-hosting element is set in a string with format *&#xe[3-digit number];*
+* Use controls with textual content.
 
-Since this string carries no meaning for the glyph it relates to, we are providing a dictionary with key-value pairs for all available glyphs. This enables the usage of more meaningful references for the needed glyphs.
+   The glyphs are basically text shapes, so they must be hosted in a control with textual content. We recommend the __TextBlock__ as it has no special styling:
 
-#### __[XAML] Example 2: Setting a glyph__
-{{region common-styling-appearance-glyphs-overview-1}}
-	<!-- Glyph string -->
-	<TextBlock Text="&#xe101;" /> 
-	
-	<!-- Meaningful reference name -->
-	<TextBlock Text="{StaticResource GlyphRedo}" /> 
-{{endregion}}
+	#### __[XAML] Example 1: Using glyphs__
+	{{region common-styling-appearance-glyphs-overview-0}}
+		<TextBlock FontFamily=”{StaticResource TelerikWebUI}” 
+				FontSize=”16” 
+				Text=”{StaticResource GlyphHeart}” 
+				FontWeight=”Normal” 
+				Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”/>
+	{{endregion}}
 
-Furthermore that allows inclusions to the __TelerikWebUI__ font as it is extended occasionally, sometimes shifting the numbers of some of the existing glyphs. The resource dictionary is updated and shipped with the font in the assembly with every change, without a need for changes in the already existing projects.
+* Set the content of the text-hosting element.
 
-In order to use the glyph references and the font as __StaticResources__ in a project, you need to include the __Telerik.Windows.Controls.dll__ and merge the required dictionary in the application resources.
+   The content of the text-hosting element is set in a string with format *&#xe[3-digit number];*. Since this string carries no meaning for the glyph it relates to, we provide a dictionary with key-value pairs for all available glyphs. This enables the usage of more meaningful references for the needed glyphs.
 
-#### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
-{{region common-styling-appearance-glyphs-overview-2}}
-	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-{{endregion}}
+	#### __[XAML] Example 2: Setting a glyph__
+	{{region common-styling-appearance-glyphs-overview-1}}
+		<!-- Glyph string -->
+		<TextBlock Text="&#xe101;" /> 
+		
+		<!-- Meaningful reference name -->
+		<TextBlock Text="{StaticResource GlyphRedo}" /> 
+	{{endregion}}
 
-In the UI for WPF controls the needed resources are provided, so this inclusion is required only in case you would like to use the font and the glyphs in your custom project.
+   >tip The dictionary approach allows us to continuously include new glyphs in the __TelerikWebUI__ font. Sometimes, the addition of a glyph shifts the numbers of some existing glyphs. With every change, we update the resource dictionary and ship it with the font in the assembly. This eliminates the need for any changes in the already existing projects.
 
-Changing the glyphs’ color is achieved by changing the foreground of the holding element, in the same manner as the foreground of a regular font. This is extremely useful in scenarios when the background of the control changes in different interaction states (see __Example 4__).
+* Include the required resources.
 
-#### __[XAML] Example 4: Setting glyph foreground__
-{{region common-styling-appearance-glyphs-overview-3}}
-	<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10">
-		<TextBlock Text="{StaticResource GlyphLock}" 
-		           FontFamily="{StaticResource TelerikWebUI}" 
-				   FontSize="16" 
-				   Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, 
-				   Path=(TextElement.Foreground)}" />
-	</telerik:RadToggleButton>
-{{endregion}}
+   To use the glyph references and the font as __StaticResources__ in a project, include the __Telerik.Windows.Controls.dll__ and merge the required dictionary in the application resources:
 
-#### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
-![](images/common-styling-appearance-glyphs-overview-0.png)
+	#### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
+	{{region common-styling-appearance-glyphs-overview-2}}
+		<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
+	{{endregion}}
 
-__Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or unchecked.
+   >tip The needed resources are available in the UI for WPF controls out-of-the-box. The approach demonstrated in **Example 3** above is required only if you use the font and the glyphs in your custom project.
 
-#### __[XAML] Example 5: Dynamic glyph change__
-{{region common-styling-appearance-glyphs-overview-4}}
-	<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
-		<TextBlock FontFamily="{StaticResource TelerikWebUI}" FontSize="16"
-			   Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Path=(TextElement.Foreground)}" />
-		<telerik:RadToggleButton.Resources>
-			<Style TargetType="TextBlock">
-				<Style.Triggers>
-					<DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type telerik:RadToggleButton}}, Path=IsChecked}" Value="True">
-						<Setter Property="Text" Value="{StaticResource GlyphUnlock}" />
-					</DataTrigger>
-					<DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type telerik:RadToggleButton}}, Path=IsChecked}" Value="False">
-						<Setter Property="Text" Value="{StaticResource GlyphLock}" />
-					</DataTrigger>
-				</Style.Triggers>
-			</Style>
-		</telerik:RadToggleButton.Resources>
-	</telerik:RadToggleButton>
-{{endregion}}
+* Change the glyphs’ color.
 
-#### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
-![](images/common-styling-appearance-glyphs-overview-1.png)
+   To change the glyphs’ color, change the foreground of the holding element in the same manner as the foreground of a regular font. This is extremely useful in scenarios when the background of the control changes in different interaction states (see __Example 4__).
+
+	#### __[XAML] Example 4: Setting glyph foreground__
+	{{region common-styling-appearance-glyphs-overview-3}}
+		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10">
+			<TextBlock Text="{StaticResource GlyphLock}" 
+					FontFamily="{StaticResource TelerikWebUI}" 
+					FontSize="16" 
+					Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, 
+					Path=(TextElement.Foreground)}" />
+		</telerik:RadToggleButton>
+	{{endregion}}
+
+	#### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
+	![](images/common-styling-appearance-glyphs-overview-0.png)
+
+* Change the glyph based on the state of the __RadToggleButton__.
+
+   __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or unchecked.
+
+	#### __[XAML] Example 5: Dynamic glyph change__
+	{{region common-styling-appearance-glyphs-overview-4}}
+		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
+			<TextBlock FontFamily="{StaticResource TelerikWebUI}" FontSize="16"
+				Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Path=(TextElement.Foreground)}" />
+			<telerik:RadToggleButton.Resources>
+				<Style TargetType="TextBlock">
+					<Style.Triggers>
+						<DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type telerik:RadToggleButton}}, Path=IsChecked}" Value="True">
+							<Setter Property="Text" Value="{StaticResource GlyphUnlock}" />
+						</DataTrigger>
+						<DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type telerik:RadToggleButton}}, Path=IsChecked}" Value="False">
+							<Setter Property="Text" Value="{StaticResource GlyphLock}" />
+						</DataTrigger>
+					</Style.Triggers>
+				</Style>
+			</telerik:RadToggleButton.Resources>
+		</telerik:RadToggleButton>
+	{{endregion}}
+
+	#### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
+	![](images/common-styling-appearance-glyphs-overview-1.png)
 
 ## Binding Glyphs
 
-If you wish to bind glyphs from your view model, you need to parse the code of the glyph to a **single character** for it that can be displayed as expected. Otherwise, all characters of the code will be displayed as-is. This can be achieved either by using a converter for your bindings, or by doing the conversion inside your viewmodel.
+To bind glyphs from your view model, you must parse the code of the glyph to a **single character**. Otherwise, all characters of the code will be displayed as-is. This can be achieved either by using a converter for your bindings or by doing the conversion inside your viewmodel.
 
-**Example 6** demonstrates how this can be done with an **IValueConverter** but the same approach can be used directly in your viewmodel.
+**Example 6** demonstrates how to do this with an **IValueConverter**, but you can use the same approach directly in your viewmodel.
 
 #### __[C#] Example 6: Using a converter to parse the glyph hex code__
 {{region cs-common-styling-appearance-glyphs-overview-6}}

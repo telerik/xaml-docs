@@ -10,7 +10,7 @@ position: 11
 
 # Select Column
 
-The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) and its content is represented by a **CheckBox** for each row. It differs from the __GridViewCheckBoxColumn__ as it **does not bind to data**. Instead, it allows you to select a given row via a checkbox, in other words - each CheckBox's **IsChecked** property is bound to the **IsSelected** property of the corresponding row.
+The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) and its content is represented by a **CheckBox** for each row. Contrary to __GridViewCheckBoxColumn__,  __GridViewSelectColumn__ does not bind to data. Instead, it allows you to select a given row via a checkbox. In other words, the **IsChecked** property of each CheckBox is bound to the **IsSelected** property of the corresponding row.
 
 #### __[XAML] Example 1: Defining GridViewSelectColumn in XAML__
 
@@ -27,7 +27,11 @@ The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 ![Select Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/selectcolumn-default.png)
 
-If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%}) property to either __Extended__ or __Multiple__, you will be able to select more than one row by clicking on the desired checkbox or to select all the rows by clicking on the checkbox in the header.
+If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%}) property to either __Extended__ or __Multiple__, you will be able to:
+
+* Select more than one row by clicking on the desired checkbox.
+
+* Select all the rows by clicking on the checkbox in the header.
 
 #### __[XAML] Example 2: Define GridViewDataColumn with Extended SelectionMode__
 
@@ -47,7 +51,11 @@ If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%
 
 ## CheckBoxStyle and HeaderCheckBoxStyle
 
-GridViewSelectColumn exposes two properties of type style: **CheckBoxStyle** and **HeaderCheckBoxStyle**. You can use them to style the respective checkboxes.
+To style the respective checkboxes, you can use the two properties of type __style__ that GridViewSelectColumn exposes:
+
+* **CheckBoxStyle**
+
+* **HeaderCheckBoxStyle**
 
 #### __[XAML] Example 3: Creating appropriate styles__
 

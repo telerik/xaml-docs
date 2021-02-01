@@ -10,11 +10,9 @@ position: 4
 
 # Styling Cells
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
+In this article, we discuss various approaches to style the RadGridView cells:
 
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewCell Element](#targeting-the-gridviewcell-element)
+* [Styling all RadGridView cells](#styling-all-radgridview-cells)
 
 * [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
 
@@ -26,21 +24,21 @@ In this article we will discuss the following topics:
 
 * [Setting the MouseOverBackground of the Cell](#setting-the-mouseoverbackground-of-the-cell)
 
+>tip To get the most of this article, make sure you are already familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
+
 #### __Figure 1: GridViewCell template structure__
 
 ![Telerik {{ site.framework_name }} DataGrid Cell Template](images/gridviewcell-template.png)
 
-## Targeting the GridViewCell Element
+## Styling all RadGridView cells
 
-In order to style all __RadGridView__ cells of an application, you should create an appropriate style targeting the __GridViewCell__ element.
+To style all __RadGridView__ cells of an application, create a style that targets the __GridViewCell__ element.
 
 You have two options:
 
 * To create an empty style and set it up on your own.
 
-* To copy the default style of the control and modify it.
-
->To learn how to modify the default GridViewCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+* To copy the default style of the control and [modify it]({%slug gridview-modifying-default-styles%}).
 
 #### __[XAML] Example 1: Styling all cells of an application__
 
@@ -52,7 +50,7 @@ You have two options:
 	</Style>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewCellStyle__.
+>If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), base your style on the __GridViewCellStyle__ that is defined for the corresponding theme.
 
 #### __Figure 2: RadGridView with styled cells in the Office2016 theme__
 
@@ -60,7 +58,7 @@ You have two options:
 
 ## Setting a Column's CellStyle
 
-__RadGridView Cells__ can also be styled by creating an appropriate __Style__ for the **GridViewCell** element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
+You can also style __RadGridView Cells__ by creating an appropriate __Style__ for the **GridViewCell** element and setting it as the __CellStyle__ property of the respective __GridView Column__. 
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 {{region xaml-gridview-styling-cell_1}}
@@ -71,11 +69,11 @@ __RadGridView Cells__ can also be styled by creating an appropriate __Style__ fo
 
 ## Setting a Column's CellStyleSelector
 
-You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. More details about how this can be achieved can be found in the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
+You could also use a column's **CellStyleSelector** property to style cells differently based on a specific condition. For more details about this approach, see the [CellStyleSelector article]({%slug gridview-cell-style-selector%}).
 
 ## Setting the SelectedBackground of the Cell
 
-As of __R3 2018 RadGridView__ supports setting the Background of the selected cell, by setting the **SelectedBackground** property of the GridViewCell.
+As of __RadGridView R3 2018__, you can set the Background of the selected cell by setting the **SelectedBackground** property of the GridViewCell.
 
 #### __[XAML] Example 3: Setting the SelectedBackground of the GridViewCell__
 {{region xaml-gridview-styling-cell_2}}
@@ -89,9 +87,9 @@ As of __R3 2018 RadGridView__ supports setting the Background of the selected ce
 
 ## Setting the BorderBrush of the CurrentCell
 
-As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell. 
+As of __RadGridView R3 2018__, you can set the BorderBrush of the current cell, by setting the **CurrentBorderBrush** property of the GridViewCell. 
 
-**Example 4** demonstrates how you can set the borderbrush of the current cell to transparent. You can compare **Figure 3** and **Figure 4** to notice that the border of the current cell is not visible.
+**Example 4** demonstrates how to set the BorderBrush of the current cell to transparent. You can compare **Figure 3** and **Figure 4** to notice that the border of the current cell is not visible.
 
 #### __[XAML] Example 4: Setting the CurrentBorderBrush of the GridViewCell__
 {{region xaml-gridview-styling-cell_3}}
@@ -107,7 +105,7 @@ As of __R3 2018 RadGridView__ supports setting the BorderBrush of the current ce
 
 ## Setting the MouseOverBackground of the Cell
 
-As of __R1 2019 SP1__ RadGridView supports changing the MouseOver Background of its cells, through the __MouseOverBackground__ property of the GridViewCell. This is demonstrated in __Example 5__.
+As of __RadGridView R1 2019 SP1__, you can change the MouseOver Background of the cells through the __MouseOverBackground__ property of the GridViewCell. This is demonstrated in __Example 5__.
 
 #### __[XAML] Example 5: Setting the MouseOverBackground of the GridViewCell__
 {{region xaml-gridview-styling-cell_4}}
@@ -119,7 +117,7 @@ As of __R1 2019 SP1__ RadGridView supports changing the MouseOver Background of 
 #### __Figure 5: Result from Example 5 in the Office2016 theme__
 ![RadGridView with MouseOverBackground for the cells](images/gridviewcell-mouseoverbackground.png)
 
-> In order for the MouseOverBackground of the cell to take effect, the [SelectionUnit]({%slug gridview-selection-basics%}#selection-units) of RadGridView should be __Mixed__ or __Cell__.
+> In order for the MouseOverBackground of the cell to take effect, set the [SelectionUnit]({%slug gridview-selection-basics%}#selection-units) of RadGridView to __Mixed__ or __Cell__.
 
 
 ## See Also

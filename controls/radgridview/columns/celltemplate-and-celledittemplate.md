@@ -10,33 +10,39 @@ position: 3
 
 # Setting CellTemplate and CellEditTemplate
 
-RadGridView provides a set of predefined column types like __GridViewCheckBoxColumn__, __GridViewComboBoxColumn__, __GridViewSelectColumn__, etc., which enable you to customize it according to the particular requirements and the type of properties exposed in your business object.
+This article describes how to customize the RadGridView columns by using predefined column types and how to extend the functionality of the columns by defining a non-default editor.
 
-In addition, when a standard **GridViewDataColumn** is used, the RadGridView control automatically generates controls for the cell when it is in both view and edit mode.
+## Using Predefined Column Types
 
-#### Default controls in view mode
+RadGridView provides a set of predefined column types like __GridViewCheckBoxColumn__, __GridViewComboBoxColumn__, __GridViewSelectColumn__, etc. that you can customize in accordance with the requirements and the type of properties exposed in your business object.
 
-* __TextBlock__: For **string**, **numeric** and **DateTime** properties
+When you use a standard **GridViewDataColumn**, the RadGridView control automatically generates controls for the cell's view and edit modes:
 
-* __CheckBox__: For **boolean** properties
+* Default controls in view mode:
 
-#### Default editors
+  * __TextBlock__: For **string**, **numeric** and **DateTime** properties
 
-* __TextBox__: For **string** and **numeric** properties
+  * __CheckBox__: For **boolean** properties
 
-* __CheckBox__: For **boolean** properties
+* Default controls in edit mode:
 
-* __RadDatePicker__: For **DateTime** properties
+  * __TextBox__: For **string** and **numeric** properties
 
-However, sometimes it may turn out that you want to extend the functionality of your columns and define a different editor, for example. This can be easily achieved by creating a __CellTemplate__ or __CellEditTemplate__ for a column.
+  * __CheckBox__: For **boolean** properties
+
+  * __RadDatePicker__: For **DateTime** properties
+
+## Creating CellTemplate and CellEditTemplate for a Column
+
+Sometimes you need to extend the functionality of a column and define a custom editor. To achieve this, create a __CellTemplate__ or __CellEditTemplate__ for the column:
 
 * __CellTemplate__: Gets or sets the data template for the cell in view mode.
 
 * __CellEditTemplate__: Gets or sets the data template for the cell in edit mode.
 
->You can also conditionally apply different templates for the different items by using the [CellTemplateSelector and CellEditTemplateSelector]({%slug gridview-cell-template-selector%}) properties.
+>tipYou can also conditionally apply different data templates to RadGridView cells by using the [CellTemplateSelector and CellEditTemplateSelector]({%slug gridview-cell-template-selector%}) properties.
 
-**Example 1** demonstrates how you can use both of these properties to customize your columns.
+**Example 1** demonstrates how to use both properties to customize your columns. We set the __RadDateTimePicker__ as a __CellEditTemplate__ for the __DateTime__ column type and the __RadNumericUpDown__ as a __CellTemplate__ for the **Salary** column.
 
 #### __[XAML] Example 1: Setting columns' CellTemplate and CellEditTemplate__
 
@@ -69,11 +75,9 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 ![Telerik {{ site.framework_name }} DataGrid Cell Template Cell Edit Template](images/RadGridView_CellTemplate_CellEditTemplate.png)
 
-As you can see, the editor for a column of type __DateTime__ is a __RadDateTimePicker__, while the template for the **Salary** column is now a __RadNumericUpDown__.
+>important When you define a __CellEditTemplate__ for a column, the __default validation__ mechanism is __bypassed__ as you're directly binding to the source property. If you require this validation, [create a custom column editor]({%slug radgridview-howto-create-custom-editor%}) instead.
 
->important When a __CellEditTemplate__ is defined for a column, the __default validation__ mechanism is __bypassed__ as you're directly binding to the source property. If you require this validation, you can create a custom column editor instead as demonstrated [here]({%slug radgridview-howto-create-custom-editor%}).
-
-Although the example above illustrates defining either a __CellTemplate__ or __CellEditTemplate__, it is possible to set them both for the same column. **Example 2** shows how this can be done.
+The first example illustrates how to define either a __CellTemplate__ or __CellEditTemplate__. In the next example, we demonstrate how to set them both for the same column.
 
 #### __[XAML] Example 2: Setting the CellTemplate and CellEditTemplate of a single column__
 
@@ -108,13 +112,13 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 ![Telerik {{ site.framework_name }} DataGrid Cell Template Cell Edit Template](images/RadGridView_CellTemplate_CellEditTemplate2.png)
 
-If you want to set these properties in code-behind, you can check [this help article]({%slug using-datatemplate-in-code%}).
+## Tips about CellTemplate and CellEditTemplate
 
->tipHaving DataMemberBinding set to StartingDate, the aggregation, sorting, grouping and filtering operations on this column will be done based on the StartingDate property.
+* You can set the __CellTemplate__ and __CellEditTemplate__ in the code behind. See the [Using DataTemplate in Code]({%slug using-datatemplate-in-code%}) article for details.
 
->In case the user does not need to perform any aggregation, sorting, grouping or filtering operations for the column, then you can use a [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) instead.
+* If you set DataMemberBinding set to StartingDate, the aggregation, sorting, grouping and filtering operations on the column will be done based on the StartingDate property. If the user does not need to perform any aggregation, sorting, grouping or filtering operations for the column, then you can use a [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) instead.
 
->In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when committing an edit. To get the right value in __e.NewValue__, you can create your own [Custom Column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.
+* In scenarios with a defined column.CellEditTemplate, the new value of the editor is not available in the arguments of the __CellEditEnded__ event that is raised when committing an edit. To get the right value in __e.NewValue__, create your own [Custom Column]({%slug radgridview-howto-create-custom-editor %}) and override its __GetNewValueFromEditor__ method.
 
 ## See Also
 

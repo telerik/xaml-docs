@@ -14,7 +14,7 @@ __RadGridView__ provides built-in methods for exporting its data to various form
 
 ## Export to Excel
 
-As of R1, though the new **GridViewSpreadStreamExport** class which utilizes the **RadSpreadStreamProcessing** library, you can export larger data sets more quickly. Asynchroneous export is supported as well. More information about this recommended approach of exporting the RadGridView control can be found [here]({%slug gridview-export-spreadsheetstreamingexport%}).
+As of **R1 2019**, though the new **GridViewSpreadStreamExport** class which utilizes the **RadSpreadStreamProcessing** library, you can export larger data sets more quickly. Asynchroneous export is supported as well. More information about this recommended approach of exporting the RadGridView control can be found [here]({%slug gridview-export-spreadsheetstreamingexport%}).
 
 Exporting to the __XLSX__  format can also be achieved by using the following two extension methods:
 

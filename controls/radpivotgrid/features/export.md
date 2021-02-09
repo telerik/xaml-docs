@@ -12,10 +12,6 @@ position: 2
 
 __RadPivotGrid__ allows you to export data to different formats using the **GenerateExport** method. In this article you will learn how to export __RadPivotGrid__ to the following formats: **XLSX** (Microsoft Excel), **DOCX** (Microsoft Word), **PDF** and **HTML**.
 
-* [GenerateExport Method](#generateexport-method)
-* [Export to Excel](#export-to-excel)
-* [Export to Word, Pdf and HTML](#export-to-word-pdf-and-html)
-
 ## GenerateExport Method
 
 __RadPivotGrid__'s **GenerateExport** method returns an object of type **PivotExportModel** which describes each cell of the control and can be used to export the control's data to the aforementioned formats. Through the **PivotExportModel** you can access the following properties:
@@ -1083,6 +1079,8 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		SaveFile(dialog, provider, document)
 	End Sub
 {{endregion}}
+
+> The [ExportPivotGrid](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/ExportPivotGrid) example shows how the RadPivotGrid can be exported to PDF via the [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. The approach that is used is similar to the one from the [ExportUIElement](https://github.com/telerik/document-processing-sdk/tree/master/PdfProcessing/ExportUIElement) example.  
 
 ### Export To HTML
 

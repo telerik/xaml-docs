@@ -16,7 +16,7 @@ position: 4
 
 ![Telerik {{ site.framework_name }} DataGrid Cell Template](images/gridviewcell-template.png)
 
-> The examples from this article assume that the RadGridView is setup as demonstrated in its [Getting Started]({%slug gridview-getting-started2%}) article.
+> The examples from this article assume that the RadGridView is set up as demonstrated in its [Getting Started]({%slug gridview-getting-started2%}) article.
 
 ## Targeting the GridViewCell Element
 

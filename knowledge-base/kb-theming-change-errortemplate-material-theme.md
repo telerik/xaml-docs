@@ -32,7 +32,7 @@ The data validation error visual is clipped if it goes outside of the element th
 
 To change this behavior you can create a custom error template or modify the default one. Then apply the template using the [Validation.ErrorTemplate attached property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.validation.errortemplate?view=netcore-3.1). 
 
-You can find the default data validation error template in the [Telerik.Windows.Controls.Input.xaml file for the Material theme]({%slug styling-apperance-editing-control-templates%}). The file contains ControlTemplates for the default error template (x:Key="StaticValidationTooltipTemplate") of the Material and also a version with the tooltip (x:Key="ValidationTooltipTemplate").
+You can find the default data validation error template in the [Telerik.Windows.Controls.Input.xaml file for the Material theme]({%slug styling-apperance-editing-control-templates%}). The file contains ControlTemplates for the default error template (x:Key="StaticValidationTooltipTemplate") of the Material theme and also a version with the tooltip (x:Key="ValidationTooltipTemplate").
 
 If you use [NoXaml dlls]({%slug xaml-vs-noxaml%}) you can directly access the "ValidationTooltipTemplate" ControlTemplate element using the StaticResource keyword and assign it to the `Validation.ErrorTemplate` property.
 

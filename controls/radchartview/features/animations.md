@@ -488,6 +488,10 @@ The RadChartView series supports animations for its series and data points. Depe
 
 * Internally in our code, there is Telerik.Windows.Controls.Animation.CircleEase function. When specifying __CircleEase__ function to the __Easing__ property of the animation you have to use the WPF predefined __Sysmtem.Windows.Media.Animation.CicleEase__ or exception will be thrown.
 
+* Labels in __PointAnimation__ are not animated.
+
+* When using __ScaleAnimation__ the __MaxScale__ property should not be set to a value bigger than 1. Value bigger than 1 will lead to potential misposition of chart elements.
+
 ## See Also
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})
 * [Dynamic Number of Series]({%slug radchartview-features-chartseriesprovider%})

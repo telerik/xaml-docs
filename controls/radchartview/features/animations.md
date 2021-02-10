@@ -490,7 +490,7 @@ The RadChartView series supports animations for its series and data points. Depe
 
 * Labels in __PointAnimation__ are not animated.
 
-* When using __ScaleAnimation__ the __MaxScale__ property should not be set to a value bigger than 1. Value bigger than 1 will lead to potential mispositions of chart elements.
+* When using __ScaleAnimation__ the __MaxScale__ property should not be set to a value bigger than 1. Value bigger than 1 will lead to potential misposition of chart elements.
 
 ## See Also
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})

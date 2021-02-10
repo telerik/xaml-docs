@@ -241,8 +241,6 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 #### __Figure 5: Data binding a RadTabControl__
 ![](images/radtabcontrol-getting-started-05.png)
 
-> You can see the [Templating]({%slug radtabcontrol-templating-overview%}) section in the help documentation that describes the RadTabControl templates and how to change the components' appearance.
-
 ## Setting the Tabs Orientation
 
 RadTabControl allows you to control whether to display the tabs horizontally or vertically. You can do that through the __Orientation__ property of the tab control. Its default value is __Horizontal__ and therefore the items are positioned horizontally. Setting the property to __Vertical__ will rotate the headers of the tab items at 90 degrees.

@@ -13,8 +13,7 @@ CTAControlName: RadTabControl
 
 {% if site.site_name == 'Silverlight' %}
 ![tabcontrol sl icon](images/tabcontrol_sl_icon.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
+{% else %}
 ![tabcontrol wpf icon](images/tabcontrol_wpf_icon.png)
 {% endif %}
 
@@ -34,7 +33,7 @@ As every control from UI for {{ site.framework_name }},  RadTabControl comes wit
 
 ## Key Features
 
-* __Templates and Template Selectors__:  The control allows you advanced customizations of the look and feel of its items. Read more about this in the [Templating]({%slug radtabcontrol-templating-overview%}) section of the documentation.
+* __Templates and Template Selectors__:  The control allows you advanced customizations of the look and feel of its items. Read more about this in the [Appearance] ({%slug radtabcontrol-appearance-customizing-tab-items%}) section of the documentation.
 
 * __Powerful Data Binding__: You can bind the control and its components to different sources as Objects, Collections, XML and WCF services. Read more about this in the [Data Binding]({%slug radtabcontrol-populating-data-binding%}) section of the documentation.
 

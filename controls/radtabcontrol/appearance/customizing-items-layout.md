@@ -1,7 +1,7 @@
 ---
 title: Customizing Items Layout
 page_title: Customizing Items Layout
-description: Check our &quot;Overview&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+description: Check our &quot;Customizing Items Layout&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-appearance-customizing-items-layout
 tags: overview
 published: True
@@ -42,7 +42,7 @@ The tab items can be separated in two different lines (rows). To create a new li
 #### Figure 2: Tab items on multiple rows
 ![](images/radtabcontrol-appearance-customizing-items-layout-1.png)
 
->tip The line whith the selected tab will be moved on the bottom row.
+>tip The line with the selected tab will be moved on the bottom row.
 
 To __align the tabs__ in the tabstrip area, set the __Align__ property of RadTabControl. The available alignments are __Left__ (default), __Right__, __Center__, __Justify__.
 

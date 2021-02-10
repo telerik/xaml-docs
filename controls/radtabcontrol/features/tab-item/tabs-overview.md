@@ -18,7 +18,7 @@ Here is a list of most important tab item features:
 
 * [Populate]({%slug radtabcontrol-populating-with-tabs%}) your tab control with tab items using one of the following approaches: declaratively, programmatically, using data binding or using Blend.		
 
-* Control the way the tab strip is positioned using the __TabStripPosition__ property of the __RadTabControl__ as shownin the [How To]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%}) section of the documentation.
+* Control the way the tab strip is positioned using the __TabStripPosition__ property of the __RadTabControl__ as shown in the [How To]({%slug radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-radtabcontrol%}) section of the documentation.
 
 * Control the way the tab items are oriented using the __TabOrientation__ property of the __RadTabControl__ as shown [here]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%}).				
 

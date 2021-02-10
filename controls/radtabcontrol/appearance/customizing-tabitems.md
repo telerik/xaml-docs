@@ -1,9 +1,9 @@
 ---
 title: Customizing Tab Items
 page_title: Customizing Tab Items
-description: Check our &quot;Overview&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+description: Check our &quot;Customizing Tab Items&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
 slug: radtabcontrol-appearance-customizing-tab-items
-tags: overview
+tags: customize, tab, items
 published: True
 position: 0
 ---

@@ -9,16 +9,16 @@ position: 2
 
 # Getting Started
 
-This tutorial will walk you through the creation of a sample application that contains a __RadNavigationView__ control.
+This tutorial walks you through the creation of a sample application that contains a __RadNavigationView__ control. We also demonstrate a few optional features.
 			
 ## Assembly References
 
-In order to use __RadNavigationView__, you will need to add references to the following assemblies:
+To use __RadNavigationView__, add references to the following assemblies:
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Data__
 
-You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
+>tip To find the required assemblies for each control, see the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.
 
 ## Defining RadNavigationView
 
@@ -31,7 +31,7 @@ __Example 1__ demonstrates how you can define a RadNavigationView in xaml.
 
 ## Populating with Items
 
-The control can either be populated by adding RadNavigationViewItems to its Items collection, or by its data binding support.
+Populate the control with items by adding RadNavigationViewItems to its Items collection:
 
 #### __[XAML] Example 2: Populating with Items in xaml__
 {{region xaml-radnavigationview-getting-started-1}}
@@ -59,32 +59,16 @@ The control can either be populated by adding RadNavigationViewItems to its Item
     </telerik:RadNavigationView>
 {{endregion}}
 
+Another way to populate RadNavigationView with items is to use data binding. See the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article for details.
+
 #### __Figure 1: Result from Example 1 in the Office 2016 theme__
 ![RadNavigationView populated with items](images/NavigationView_GettingStarted.png)
 
 >Check out the [Icon and IconTemplate]({%slug common-styling-appearance-radglyph%}) article for more information on those properties. 
 
-<!-- -->
-
->To learn how to set up the control in a data binding scenario, read the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.
-
-## DisplayMode
-
-The __RadNavigationView__ control dynamically changes its layout based on its size. It has three display modes: __Minimal__, __Compact__ and __Expanded__. You can read more about them in the [Display Mode]({%slug radnavigationview-display-mode%}) article.
-
-## PaneHeader and PaneFooter
-
-The __RadNavigationView__ control allows you to customize its header and footer. You can set them to simple strings or add a custom control. Check out the [Header and Footer]({%slug radnavigationview-header-and-footer%}) article for more information.
-
-## Navigation
-
-__RadNavigationView__ doesn't perform any navigation automatically. When a certain __RadNavigationViewItem__ is clicked, the __ItemClick__ event is raised. If the click results in a new item being selected, a __SelectionChanged__ event is also raised.
-
-Either of the above events can be handled to perform navigation related tasks or change the Content of the RadNavigationView control. Alternatively, the SelectedItem property can be used in order to change the content. This is demonstrated in the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.  
-
 ## Opening/Closing the NavigationPane in code
 
-The NavigationPane which hosts the RadNavigationViewItems is normally opened/closed by clicking the RadToggleButton. However, this can also be in code by setting the __IsPaneOpen__ property of the __RadNavigationView__ as demonstrated in __Examples 3 and 4__.
+By default, users can open or close the NavigationPane that hosts the RadNavigationViewItems by clicking the RadToggleButton. You can manage the state of the control programmatically by setting the __IsPaneOpen__ property of the __RadNavigationView__. This is demonstrated in __Examples 3 and 4__:
 
 #### __[XAML] Example 3: Setting the IsPaneOpen property in xaml__
 {{region cs-radnavigationview-getting-started-2}}
@@ -103,7 +87,11 @@ The NavigationPane which hosts the RadNavigationViewItems is normally opened/clo
 
 ## Changing the Width of the Navigation Pane
 
-The width of the NavigationPane when it is opened/closed can be controlled through the __CompactPaneWidth__ and __ExpandedPaneWidth__ properties. __Example 5__ demonstrates how you can set the __CompactPaneWidth__ property in order to increase the default width when the navigation pane is closed.
+* To control the width of the NavigationPane when it's opened, use the __ExpandedPaneWidth__ property.
+
+* To control the width of the NavigationPane when it's closed, use the __CompactPaneWidth__ property.
+
+__Example 5__ demonstrates how you can set the  property in order to increase the default width when the navigation pane is closed.
 
 #### __[XAML] Example 5: Setting the CompactPaneWidth property__
 {{region xaml-radnavigationview-getting-started-5}}
@@ -133,6 +121,28 @@ The width of the NavigationPane when it is opened/closed can be controlled throu
 
 #### __Figure 2: Result from Example 5 in the Office 2016 theme__
 ![RadNavigationView with CompactPaneWidth set](images/NavigationView_CompactPaneWidth.png)
+
+## Navigation
+
+__RadNavigationView__ doesn't perform any navigation automatically. To perform navigation-related tasks or change the content of the RadNavigationView control, you must handle either of the following events:
+
+* The __ItemClick__ event that is raised when a user clicks a __RadNavigationViewItem__.
+
+* The __SelectionChanged__ event that is raised when a user clicks a __RadNavigationViewItem__ and this results in the selection of a new item.
+
+Alternatively, you can use the __SelectedItem__ property to change the content. This is demonstrated in the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.  
+
+## More Features
+
+To further customize __RadNavigationView__, you can also control:
+
+* The DisplayMode.
+
+    The __RadNavigationView__ control dynamically changes its layout based on its size. It has three display modes: __Minimal__, __Compact__ and __Expanded__. You can read more about them in the [Display Mode]({%slug radnavigationview-display-mode%}) article.
+
+* The PaneHeader and PaneFooter.
+
+    The __RadNavigationView__ control allows you to customize its header and footer. You can set them to simple strings or add a custom control. Check out the [Header and Footer]({%slug radnavigationview-header-and-footer%}) article for more information.
 
 ## See Also 
 

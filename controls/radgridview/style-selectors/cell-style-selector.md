@@ -10,19 +10,27 @@ position: 1
 
 # CellStyleSelector
 
-This article will show you how to style conditionally RadGridView's cells applying __CellStyleSelector__.
-		  
-Assume we have RadGridView bound to a collection of Clubs. Each Club has a property __StadiumCapacity__. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow otherwise__:
+This article shows how to style RadGridView's cells conditionally by applying __CellStyleSelector__.
+
+>tipTo download a runnable project with the example from this article, visit [our SDK repository](https://github.com/telerik/xaml-sdk/). You can find the example in the __GridView/CellStyleSelector__ folder.
+
+Assume we have RadGridView bound to a collection of sports clubs. Each club has a __StadiumCapacity__ property. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow if the capacity < 50 000__:
 
 #### __Figure 1: The expected result__
 
 ![Telerik {{ site.framework_name }} DataGrid cellstyleselector](images/gridview_cellstyleselector.png)
 
-To do so follow these steps:
+Follow these steps to configure __CellStyleSelector__:
 
-1. Create a new class which inherits the __StyleSelector__ class.
+1. Create a new class that inherits the __StyleSelector__ class.
 
-2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (GridViewCell in our case).
+2. Override its default __SelectStyle__ method. Return the style that will be applied to the framework element (GridViewCell in our case).
+
+   In this example, we declare two styles that will be applied depending on the underlying data:
+
+   * __BigStadiumStyle__
+
+   * __SmallStadiumStyle__
 
 #### __[C#] Example 1: The StadiumCapacityStyle class__
 
@@ -87,14 +95,7 @@ To do so follow these steps:
 	End Class
 {{endregion}}
 
-In this case we have two different styles that could be applied:
-
-* __BigStadiumStyle__
-* __SmallStadiumStyle__. 
-
-Depending on the underlying data you can select which style to apply.
-
-3.In the XAML file define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
+3. In the XAML file, define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
 
 #### __[XAML] Example 2: Set the different styles for the style selector__
 
@@ -115,11 +116,11 @@ Depending on the underlying data you can select which style to apply.
 		</Grid.Resources>
 {{endregion}}
 
->The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
+>The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__.
 
-If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
+If you use our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), base the conditional style on the style that is defined for the corresponding theme:
 
-#### __[XAML] Example 3: Base the style when using implicit styles__
+#### __[XAML] Example 3: Set the style when using implicit styles__
 
 {{region gridview-cell-style-selector_4}}
 
@@ -128,7 +129,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 	</Style>
 {{endregion}}
 
-4.Finally, set the __CellStyleSelector__ property of the data column which represents the StadiumCapacity field:
+4. Finally, set the __CellStyleSelector__ property of the data column that represents the StadiumCapacity field:
 
 #### __[XAML] Example 4: Set CellStyleSelector for the column__
 
@@ -149,11 +150,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 	</telerik:RadGridView>
 {{endregion}}
 
->tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
-
 >Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. You should not set properties of GridViewCell inside SelectStyle method. [Read more on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the example is listed as __GridView/CellStyleSelector__.
           
 ## See Also
 

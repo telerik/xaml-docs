@@ -12,12 +12,6 @@ position: 1
 
 The __RadTransitionControl__ applies a transition effect to its content when it gets changed. There are several built-in effects, but you are able to create your own via the __HLSL__ language. 
 
-For more information read the following sections:
-
-* [Built-in Transition Effects](#built-in-transition-effects)
-
-* [Custom Transition Effects](#fadetransition)
-
 >tipYou are also capable of specifying the transition [duration]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-duration) and [an animation easing function]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-easing).
 
 ## Built-in Transition Effects
@@ -26,7 +20,7 @@ The built-in transition effects are:
 
 * [FadeTransition](#fadetransition)
 
-* [FlipWrapTransition](#flipwraptransition)
+* [FlipWarpTransition](#flipwarptransition)
 
 * [LinearFadeTransition](#linearfadetransition)
 
@@ -77,16 +71,16 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 
 ![](images/RadTransition_Features_Transitions_01.png)
 
-## FlipWrapTransition
+## FlipWarpTransition
 
-The __FlipWrapsTransition__ flips the old content from the bottom to the top and on the other side the new content is visualized. It has no properties for additional customization.
+The __FlipWarpTransition__ is a transition effect that makes zoom and slide transition. It has no properties for additional customization.
 
 #### __XAML__
 
 {{region xaml-radtransition-features-transitions_1}}
 	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
 	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:FadeTransition />
+	        <telerikTransitions:FlipWarpTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
 {{endregion}}

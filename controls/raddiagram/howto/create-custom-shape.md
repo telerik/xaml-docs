@@ -220,6 +220,8 @@ As a result you'll get the following custom shape:
 
 Please note that in case you need to bind the __RadDiagram__ control to a collection of business data and you need to display the business data in a custom shape, then you have to create a custom __RadDiagram__. In the custom diagram class you need to override the __IsItemItsOwnShapeContainerOverride__ and __GetShapeContainerForItemOverride__ methods to return the custom shape type:		
 
+> In scenarios where you want to create custom container shapes, you can override the GetShapeContainerForItemOverridem method of the RadDiagram. Inside the method, you can return your custom container shape.
+
 #### __C#__
 {{region raddiagram-howto-create-custom-shape-7}}
 	public class CustomDiagram : RadDiagram

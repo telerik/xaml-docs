@@ -1,7 +1,7 @@
 ---
-title: Complete WPF Controls Documentation
-page_title: Complete WPF Controls Documentation
-description: Easily build next-generation applications with 140+ WPF controls from Telerik. Check the Telerik UI for WPF documentation for guidance and examples. 
+title: Controls Documentation
+page_title: Controls Documentation
+description: Easily build next-generation applications with {% if site.site_name == 'Silverlight' %}100+ Silverlight{% else %}140+ WPF{% endif %} controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True

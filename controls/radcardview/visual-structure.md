@@ -14,7 +14,7 @@ This section defines terms and concepts used in the scope of the __RadCardView__
 
 ![](images/radcardview-visual-structure-0.png)
 
-* __Card__: A ment representing an item from the __ItemsSource__ of the control.
+* __Card__: An element representing an item from the __ItemsSource__ of the control.
 
 * __Card Header__: Displays the header of the card.
 

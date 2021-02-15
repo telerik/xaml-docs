@@ -34,6 +34,7 @@ The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 		  <telerik:ThicknessToOrientedThicknessConverter x:Key="ThicknessToOrientedThicknessConverter"/>
 		  <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter"/>
 		  <telerik:BrushToColorConverter x:Key="BrushToColorConverter"/>
+		  <telerik:ColorToBrushWithOpacityConverter x:Key="ColorToBrushWithOpacityConverter"/>
 	  </FrameworkElement.Resources>
 	</FrameworkElement>
 {{endregion}}
@@ -206,6 +207,11 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 ## BrushToColorConverter
 
 The BrushToColorConverter converts a [SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1) to a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1). The returned color comes from the [Color property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush.color?view=netcore-3.1#System_Windows_Media_SolidColorBrush_Color) of the brush. The converter supports TwoWay bindings. If an empty or invalid value is passed to the Convert() method, the returned result is `null`.
+
+## ColorToBrushWithOpacityConverter
+
+The ColorToBrushWithOpacityConverter converts a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1) with opacity to 
+[SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1). The opacity need to be pass as a parameter. This converter require the __Value__ parameter to by of type __Color__ and the __Parameter__ to be different from null.
 
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

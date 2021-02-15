@@ -281,6 +281,4 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 
 ## See Also
 
- * [Choose Header Template by Custom Logic]({%slug radtabcontrol-templating-custom-header-template%})
-
- * [Tab Item Templates]({%slug radtabcontrol-templating-tabs-templates%})
+ * [Customizing Appearance]({%slug radtabcontrol-appearance-customizing-tab-items%})

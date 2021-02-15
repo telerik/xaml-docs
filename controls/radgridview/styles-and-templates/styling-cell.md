@@ -30,7 +30,9 @@ In this article, we discuss various approaches to style the RadGridView cells:
 
 ![Telerik {{ site.framework_name }} DataGrid Cell Template](images/gridviewcell-template.png)
 
-## Styling all RadGridView cells
+## Styling all RadGridView Cells
+
+> The examples from this article assume that the RadGridView is set up as demonstrated in its [Getting Started]({%slug gridview-getting-started2%}) article.
 
 To style all __RadGridView__ cells of an application, create a style that targets the __GridViewCell__ element.
 
@@ -43,11 +45,15 @@ You have two options:
 #### __[XAML] Example 1: Styling all cells of an application__
 
 {{region xaml-gridview-styling-cell_0}}
-	<Style TargetType="telerik:GridViewCell">
-	    <Setter Property="VerticalContentAlignment" Value="Top"/>
-	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
-	    <Setter Property="Background" Value="#ffcc00"/>
-	</Style>
+	<Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="telerik:GridViewCell">
+                <Setter Property="VerticalContentAlignment" Value="Top"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Background" Value="#ffcc00"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 {{endregion}}
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), base your style on the __GridViewCellStyle__ that is defined for the corresponding theme.
@@ -62,9 +68,25 @@ You can also style __RadGridView Cells__ by creating an appropriate __Style__ fo
 
 #### __[XAML] Example 2: Setting a column's CellStyle__
 {{region xaml-gridview-styling-cell_1}}
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
+	<Grid>
+        <Grid.Resources>
+            <Style x:Key="GridViewCellStyle" TargetType="telerik:GridViewCell">
+                <Setter Property="VerticalContentAlignment" Value="Top"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Background" Value="#ffcc00"/>
+            </Style>
+        </Grid.Resources>
+
+        <telerik:RadGridView ItemsSource="{Binding Clubs}"
+                             AutoGenerateColumns="False"
+                             GroupRenderMode="Flat">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
 	                Header="Name"
 	                CellStyle="{StaticResource GridViewCellStyle}" />
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+    </Grid>
 {{endregion}}
 
 ## Setting a Column's CellStyleSelector
@@ -77,9 +99,13 @@ As of __RadGridView R3 2018__, you can set the Background of the selected cell b
 
 #### __[XAML] Example 3: Setting the SelectedBackground of the GridViewCell__
 {{region xaml-gridview-styling-cell_2}}
-	<Style TargetType="telerik:GridViewCell">
-		<Setter Property="SelectedBackground" Value="Bisque" />
-	</Style>
+	<Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="telerik:GridViewCell">
+                <Setter Property="SelectedBackground" Value="Bisque" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 {{endregion}}
 
 #### __Figure 3: Result from Example 3 in the Office2016 theme__
@@ -93,9 +119,13 @@ As of __RadGridView R3 2018__, you can set the BorderBrush of the current cell, 
 
 #### __[XAML] Example 4: Setting the CurrentBorderBrush of the GridViewCell__
 {{region xaml-gridview-styling-cell_3}}
-	<Style TargetType="telerik:GridViewCell">
-		<Setter Property="CurrentBorderBrush" Value="Transparent" />
-	</Style>
+	<Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="telerik:GridViewCell">
+                <Setter Property="CurrentBorderBrush" Value="Transparent" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 {{endregion}}
 
 #### __Figure 4: Result from Example 4 in the Office2016 theme__
@@ -109,16 +139,19 @@ As of __RadGridView R1 2019 SP1__, you can change the MouseOver Background of th
 
 #### __[XAML] Example 5: Setting the MouseOverBackground of the GridViewCell__
 {{region xaml-gridview-styling-cell_4}}
-	<Style TargetType="telerik:GridViewCell" >
-		<Setter Property="MouseOverBackground" Value="Pink" />
-	</Style>
+	<Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="telerik:GridViewCell" >
+                <Setter Property="MouseOverBackground" Value="Pink" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 {{endregion}}
 
 #### __Figure 5: Result from Example 5 in the Office2016 theme__
 ![RadGridView with MouseOverBackground for the cells](images/gridviewcell-mouseoverbackground.png)
 
 > In order for the MouseOverBackground of the cell to take effect, set the [SelectionUnit]({%slug gridview-selection-basics%}#selection-units) of RadGridView to __Mixed__ or __Cell__.
-
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
-title: Item Alignment
-page_title: Item Alignment
-description: Check our &quot;Item Alignment&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+title: Items Indent
+page_title: Items Indent
+description: Check our &quot;Items Indent&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-features-itemsindent
 tags: lines,support,itemsindent
 published: True
 position: 4
 ---
 
-# Item Alignment
+# Items Indent
 
 The __RadTreeView__ allows you to control the indent of its items. You can do that by changing the value of the __ItemsIndent__ property. The default value of this property is 20.
 

@@ -28,7 +28,7 @@ The available functions are:
 
 * __SumFunction__: Returns the Sum of all values for the group.
 
->tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates).
+>tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found {% if site.site_name == 'Silverlight' %} [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% else %}in the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/){% endif %}.
 
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 

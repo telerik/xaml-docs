@@ -122,7 +122,7 @@ With the **R1 2021 SP** release you can now more intuitively place the path elem
 		</telerik:RadPathButton.PathStyle>
 {{endregion}}
 
-#### __Figure 4: RadPathButton with different alignments__
+#### __Figure 5: RadPathButton with different alignments__
 ![RadPathButton with different alignments](images/radbuttons-features-pathbutton-path-alignment.gif)
 
 As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to align the content in the available space.

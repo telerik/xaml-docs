@@ -16,6 +16,22 @@ The __ImageInline__ class allows images to be displayed inside the document. The
 
 This topic will explain you how to use the __ImageInline__ element.
 
+## Supported Image Extensions
+
+With **RadRichTextBox**, you can work with images from the following file formats:
+
+ - JPG
+ - JPEG
+ - PNG
+ - BMP
+ - TIFF
+ - TIF
+ - GIF
+ - ICO
+ - ICON
+ - WMF 
+ - EMF
+
 ## Add in XAML
 
 Here is an example of an __ImageInline__ element used in XAML at design time.

@@ -534,10 +534,8 @@ navigation:
         title: Tab Item
     controls/radtabcontrol/populating-with-tabs:
         title: Populating with Tabs
-    controls/radtabcontrol/styling-and-appearance:
-        title: Styling and Appearance
-    controls/radtabcontrol/templating:
-        title: Templating
+    controls/radtabcontrol/appearance:
+        title: Appearance
     controls/radtileview:
         title: RadTileView
     controls/radtoolbar:

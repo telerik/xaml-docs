@@ -10,7 +10,8 @@ position: 1
 
 # Visual Structure
 
-Below you can see the structure of the standard tab control.![radtabcontrol visual-structure](images/radtabcontrol_visual-structure.png)
+Below you can see the structure of the standard tab control.
+![radtabcontrol visual-structure](images/radtabcontrol_visual-structure.png)
 
 The structure of a tab control is pretty simple; it consists of three main elements:
 
@@ -20,10 +21,7 @@ The structure of a tab control is pretty simple; it consists of three main eleme
 
 * __Content Area__ – each tab control has its own content area. This content area is only visible when the tab is selected. You can place any kind of controls inside your tab items, thus building complex and flexible tabbed user interfaces. [Read more]({%slug radtabcontrol-getting-started%}#Set_Tab_Content)
 
-## See Also
-
+## See Also  
  * [Getting Started with RadTabControl]({%slug radtabcontrol-getting-started%})
-
  * [Populating with Data]({%slug radtabcontrol-populating-with-tabs%})
-
- * [Templating]({%slug radtabcontrol-templating-overview%})
+ * [Customizing Appearance]({%slug radtabcontrol-appearance-customizing-tab-items%})

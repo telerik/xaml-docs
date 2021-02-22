@@ -160,6 +160,19 @@ position: 6
 .xmlStringColor-neutral-dark{
 	background: #B266FF;
 }
+/* XmlCharacterColor */
+.xmlCharacterColor-light{
+	background: #0073E5;
+}
+.xmlCharacterColor-dark{
+	background: #8F9CFF;
+}
+.xmlCharacterColor-neutral{
+	background: #8000FF;
+}
+.xmlCharacterColor-neutral-dark{
+	background: #B266FF;
+}
 /* XmlTagColor */
 .xmlTagColor-light{
 	background: #3333FF;
@@ -198,6 +211,7 @@ Here is a list of all the colors in the palettes and their default values for ea
 |**XmlCommentColor**|<div class="palette-color xmlCommentColor-light"></div>|<div class="palette-color xmlCommentColor-dark"></div>|<div class="palette-color xmlCommentColor-neutral"></div>|<div class="palette-color xmlCommentColor-neutral-dark"></div>|
 |**XmlContentColor**|<div class="palette-color xmlContentColor-light"></div>|<div class="palette-color xmlContentColor-dark"></div>|<div class="palette-color xmlContentColor-neutral"></div>|<div class="palette-color xmlContentColor-neutral-dark"></div>|
 |**XmlStringColor**|<div class="palette-color xmlStringColor-light"></div>|<div class="palette-color xmlStringColor-dark"></div>|<div class="palette-color xmlStringColor-neutral"></div>|<div class="palette-color xmlStringColor-neutral-dark"></div>|
+|**XmlCharacterDataColor**|<div class="palette-color xmlCharacterColor-light"></div>|<div class="palette-color xmlCharacterColor-dark"></div>|<div class="palette-color xmlCharacterColor-neutral"></div>|<div class="palette-color xmlCharacterColor-neutral-dark"></div>|
 |**XmlTagColor**|<div class="palette-color xmlTagColor-light"></div>|<div class="palette-color xmlTagColor-dark"></div>|<div class="palette-color xmlTagColor-neutral"></div>|<div class="palette-color xmlTagColor-neutral-dark"></div>|
 
 ## Palette Recommendations
@@ -304,6 +318,7 @@ If you want to customize the colors shown in your RadSyntaxEditor control, you c
     customPalette.XmlCommentColor = (Color)ColorConverter.ConvertFromString("#007b00");
     customPalette.XmlContentColor = (Color)ColorConverter.ConvertFromString("#474747");
     customPalette.XmlStringColor = (Color)ColorConverter.ConvertFromString("#0066cc");
+    customPalette.XmlCharacterDataColor = (Color)ColorConverter.ConvertFromString("#0066cc");
     customPalette.XmlTagColor = (Color)ColorConverter.ConvertFromString("#7070ff");
     this.syntaxEditor.Palette = customPalette;
 {{endregion}}

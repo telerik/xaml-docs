@@ -106,18 +106,39 @@ In addition to all customizing options that are inherited from the __RadButton__
 
 Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type __Thickness__ and determines the margin around its content. This allows users to adjust size of the Path that the button hosts. For adjusting the position of the Path itself users can use the __RadPathButton.Padding__ property.
 
+## Aligning the Path
+
+By default, the **Stretch** property of the **Path** element is set to **Fill**. As a result, when the **ContentPlacement** of the button is set to **Top** or **Bottom**, only the **HorizontalContentAlignment** takes effect. Respectively, when the **ContentPlacement** is **Left** or **Right**, only the **VerticalContentAlignment** takes effect.
+
+With the **R1 2021 SP** release you can now more intuitively place the path element of the button relatively to its content. For the purpose, you need to set the **Stretch** property of the **Path** to **None** and set the desired horizontal and vertical alignments.
+
+#### __[XAML] Example 6: Setting the path alignment in XAML__
+{{region xaml-radbuttons-features-path-button-12}}
+	<telerik:RadPathButton.PathStyle>
+			<Style TargetType="Path">
+				<Setter Property="Stretch" Value="None" />                            <Setter Property="HorizontalAlignment" Value="Right" />
+				<Setter Property="VerticalAlignment" Value="Bottom" />
+			</Style>
+		</telerik:RadPathButton.PathStyle>
+{{endregion}}
+
+#### __Figure 5: RadPathButton with different alignments__
+![RadPathButton with different alignments](images/radbuttons-features-pathbutton-path-alignment.gif)
+
+As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to align the content in the available space.
+
 {% if site.site_name == 'WPF' %}
 ## RadPathButton and RadGlyph
 
 The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appearance-radglyph%}).
 
-#### __[XAML] Set RadGlyph as PathGeometry__
+#### __[XAML] Example 7: Set RadGlyph as PathGeometry__
 {{region xaml-radbuttons-features-path-button-11}}
 	<telerik:RadPathButton Width="50" Height="50" Padding="10"
 							PathGeometry="{telerik:RadGlyph Glyph={StaticResource GlyphGlobe}}" />
 {{endregion}}
 
-#### __Figure 5: RadPathButton with RadGlyph__
+#### __Figure 6: RadPathButton with RadGlyph__
 ![RadPathButton with RadGlyph](images/radbuttons-features-pathbutton-4.png)
 {% endif %}
 

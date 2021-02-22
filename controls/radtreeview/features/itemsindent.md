@@ -46,7 +46,7 @@ In __Figure 1__, the roots, and their nodes are vertically aligned. In a case wh
 #### __Figure 2: Collapsed Expander Button__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_02.png)
 
-## TreeView Lines and Item Alignment
+## TreeView Lines and Item Indent
 
 The control allows you to show connected lines between the nodes and their root nodes. More information regarding this feature can be found in the [Lines Support]({%slug radtreeview-features-lines-support%}) topic.
 

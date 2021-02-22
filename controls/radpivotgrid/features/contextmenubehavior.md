@@ -131,4 +131,4 @@ And this will be the final result:
 
 >You can use exactly the same approach in order to modify the context menu of the other description types. You will need to check whether the dataContext object is a type of the desired group descripton (for example DoubleGroupDescription or AggregateDescriptionBase) and implement the required functionality.          
 
->tipYou can download a runnable project which demonstrates more complex example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomContextMenuBehavior__. 
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomContextMenuBehavior).

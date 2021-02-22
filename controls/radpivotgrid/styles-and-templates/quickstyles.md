@@ -139,7 +139,7 @@ Afterwards the custom __QuickStyle__ should be applied the following way:
 	<pivot:RadPivotGrid x:Name="pivot" QuickStyle="{StaticResource PivotGridQuickStyle}" />
 {{endregion}}
 
->tipYou can download a runnable sample project demonstrating how to implement a custom __QuickStyle__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / PivotGridQuickStyles__.          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/PivotGridQuickStyles).
 
 ## See Also
 

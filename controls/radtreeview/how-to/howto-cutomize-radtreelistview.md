@@ -143,4 +143,4 @@ To enhance the hierarchical visualization you can allow the __RadTreeListView__ 
 #### __Figure 3: Visible tree lines__
 ![Rad Tree View How To Customize Rad Tree List View Visible Tree Lines](images/RadTreeView_HowToCustomizeRadTreeListView_VisibleTreeLines.png)
 
->tipYou can download a runnable project which demonstrates similar structure from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/TreeListViewBringItemIntoView__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/TreeListViewBringItemIntoView).

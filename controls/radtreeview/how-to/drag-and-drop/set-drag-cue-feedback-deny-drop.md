@@ -170,7 +170,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	![Rad Tree View-DnDVisual Deny Drop](images/RadTreeView-DnDVisualDenyDrop.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DenyDropVisualFeedback__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/DenyDropVisualFeedback).
 
 ## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

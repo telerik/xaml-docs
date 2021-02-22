@@ -139,7 +139,7 @@ The following code snippet demonstrates an example implementation of a bubble si
     <telerik:ScatterBubbleSeries BubbleSizeSelector="{StaticResource selector}" >
 {{endregion}}
 
->tip You can find a runnable project demonstrating the BubbleSeries in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk), after navigating to __ChartView/BubbleSeriesAndNegativeValues__
+>tip You can find a runnable project demonstrating the BubbleSeries in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BubbleSeriesAndNegativeValues).
 
 ## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

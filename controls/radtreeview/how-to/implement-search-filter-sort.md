@@ -211,7 +211,7 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 		End Sub	
 {{endregion}}
 
->tipYou can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to __TreeView / FilterSearchSort__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/FilterSearchSort).
 
 ## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})

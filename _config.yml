@@ -554,6 +554,8 @@ navigation:
         title: RadTreeMap
     controls/radtreeview:
         title: RadTreeView
+    controls/radtreeview/features/dragdrop:
+        title: Drag and Drop
     controls/radtreeview/how-to/drag-and-drop:
         title: Drag and Drop
         position: 0

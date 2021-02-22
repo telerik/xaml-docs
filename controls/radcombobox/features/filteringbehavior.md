@@ -136,7 +136,7 @@ __Figure 1:__ The items whose length is bigger or equal to 10 are filtered and t
 __Figure 2:__ Again the items are filtered and because there isn’t an item that exactly matches the entered length the __FindFullMatchIndex()__ returns -1 and the first item is highlighted:
 ![radcombobox-features-filteringbehavior-2](images/RadComboBox_Features_FilteringBehavior_02.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as ComboBox/CustomFiltering.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/CustomFiltering).
 
 ## See Also
 

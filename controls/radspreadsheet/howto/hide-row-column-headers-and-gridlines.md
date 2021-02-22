@@ -38,10 +38,7 @@ If you want to show or hide the gridlines of __RadSpreadsheet__ just set the __S
 	            this.radSpreadsheet.ActiveWorksheetEditor.ShowGridlines = false;
 {{endregion}}
 
-
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / CustomRowAndColumnHeadings__.
-          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).          
 
 ## See Also
 

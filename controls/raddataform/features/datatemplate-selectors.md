@@ -178,5 +178,5 @@ As a result when __RadDataForm__ is in edit mode the background color of the *Sa
 
 >An analogical approach should be used to set a __ReadOnlyTemplateSelector__.
 
->You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __DataForm/DataTemplateSelector__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DataForm/DataTemplateSelector).
 		  

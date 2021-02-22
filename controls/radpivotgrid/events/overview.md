@@ -155,9 +155,9 @@ Figure 1: Custom folders in the FieldTree.
 
 * __AddingContainerNode (available only for the LocalDataSourceFieldDescriptionsProvider)__ - raised multiple times while the FieldTree is generated - each time a node is added. 
 
-The event can be used in order to add and/or remove nodes from the tree.            
+The event can be used in order to add and/or remove nodes from the tree.  
 
->tipFor more details on how to add/remove nodes from the FieldTree you can check the following example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples is listed as __PivotGrid / CustomizeFieldTree__.              
+>tipFor more details on how to add/remove nodes from the FieldTree you can check the CustomizeFieldTree example from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomizeFieldTree).              
 
 ## See Also
 

@@ -62,15 +62,17 @@ The crosshair behavior exposes the following events:
 	* __Data__ – an object of type `Telerik.Charting.DataTuple`. It holds the vertical and the horizontal value on the chart that corresponds to the crosshair position.
 	* __Position__ – an object of type Point. It holds the position of the mouse relative to the chart.
 
->tip You can find a runnable project demonstrating the crosshair behavior in our [GitHub repository](https://github.com/telerik/xaml-sdk), after navigating to __ChartView/Crosshair__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/Crosshair).
 	
 ## See Also	
 {% if site.site_name == 'WPF' %}
 * [ChartCrosshairBehavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.chartview.chartcrosshairbehavior)
 * [ChartCrosshairPositionChangedEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.chartview.chartcrosshairpositionchangedeventargs)
-* [DataTuple](https://docs.telerik.com/devtools/wpf/api/telerik.charting.datatuple){% endif %}{% if site.site_name == 'Silverlight' %}
+* [DataTuple](https://docs.telerik.com/devtools/wpf/api/telerik.charting.datatuple)
+{% else %}
 * [ChartCrosshairBehavior](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.chartview.chartcrosshairbehavior)
 * [ChartCrosshairPositionChangedEventArgs](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.chartview.chartcrosshairpositionchangedeventargs)
-* [DataTuple](https://docs.telerik.com/devtools/silverlight/api/telerik.charting.datatuple){% endif %}
+* [DataTuple](https://docs.telerik.com/devtools/silverlight/api/telerik.charting.datatuple)
+{% endif %}
 * [LabelDefinition]({%slug radchartview-features-label-definition%})
 * [Axes]({%slug radchartview-axes-axis%})

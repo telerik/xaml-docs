@@ -158,7 +158,7 @@ Finally, you can bind the command as demonstrated in __Example 4__.
 
 >tip In addition you can use the __HelpCommandParameter__ and the __HelpCommandTarget__ properties of the __RadRibbonView__ in order to pass additional data to the command.        
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to RibbonView/HelpFunctionality.          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RibbonView/HelpFunctionality).          
 
 ## See Also
  * [Show Help Button and Change its Image]({%slug radribbonview-howto-show-help-icon-and-change-its-image%})

@@ -374,7 +374,7 @@ And finally, we need to set the __RadDiagram GraphSource__ property:
 If you run the application now, the __RadDiagram__ should display the following structure:
 ![raddiagram-howto-mvvm-containers](images/raddiagram-howto-mvvm-containers.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.	
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/MVVM).
 
 ## Bind the source and target connector positions of the connection
 

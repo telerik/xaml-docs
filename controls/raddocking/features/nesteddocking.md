@@ -77,7 +77,7 @@ The nested __RadDocking__ layouts can be easily saved and loaded using the built
 
 >tipFor more details you can check the [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%}) article.
 
->tipYou can download a runnable sample project demonstrating Save/Load Nested Docking Layouts from our online SDK repository:[here](https://github.com/telerik/xaml-sdk), the example is listed as __Docking/NestedDockingSaveLoadLayout__.
+>tip You can download a runnable sample project demonstrating Save/Load Nested Docking Layouts from [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Docking/NestedDockingSaveLoadLayout).
 
 ## Not Supported Scenarios
 

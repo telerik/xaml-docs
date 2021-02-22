@@ -87,9 +87,7 @@ In order to achieve this, should be created a class which inherits the __IFindDi
 	    }
 {{endregion}}
 
-
-
->tipFind a runnable project example demonstrating this functionality in our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / CustomFindDialog__.
+>tip Find a runnable project showing this functionality in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomFindDialog).
 
 ## See Also
 

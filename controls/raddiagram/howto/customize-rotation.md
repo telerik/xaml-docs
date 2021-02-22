@@ -191,7 +191,7 @@ If you run the solution now, the __rotationStep__ will display a value of __45__
 And if you enter a __RotationStep__ of __90__, you will be able to rotate the __RadDiagramShapes__ with __90°__ on every step.
 ![raddiagram-howto-custom-rotation](images/raddiagram-howto-custom-rotation.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomServices__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomServices).
 
 ## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})

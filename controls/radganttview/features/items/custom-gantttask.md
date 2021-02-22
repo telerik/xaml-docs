@@ -186,7 +186,7 @@ The next code snippet shows a sample implementation of __IDependant__ interface:
 	}
 {{endregion}}
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __GanttView / CustomGanttTaskWithStatus__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/CustomGanttTaskWithStatus).
 
 ## See Also
 

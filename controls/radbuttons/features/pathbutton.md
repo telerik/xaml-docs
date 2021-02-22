@@ -108,7 +108,9 @@ Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type
 
 ## Aligning the Path
 
-With the **R1 2021 SP** release you can now more intuitively place the path element of the button relatively to its content. For the purpose, you need to set the **Fill** property of the **Path** to **None** and set the desired horizontal and vertical alignments.
+By default, the **Stretch** property of the **Path** element is set to **Fill**. As a result, when the **ContentPlacement** of the button is set to **Top** or **Bottom**, only the **HorizontalContentAlignment** takes effect. Respectively, when the **ContentPlacement** is **Left** or **Right**, only the **VerticalContentAlignment** takes effect.
+
+With the **R1 2021 SP** release you can now more intuitively place the path element of the button relatively to its content. For the purpose, you need to set the **Stretch** property of the **Path** to **None** and set the desired horizontal and vertical alignments.
 
 #### __[XAML] Example 6: Setting the path alignment in XAML__
 {{region xaml-radbuttons-features-path-button-12}}
@@ -123,7 +125,7 @@ With the **R1 2021 SP** release you can now more intuitively place the path elem
 #### __Figure 4: RadPathButton with different alignments__
 ![RadPathButton with different alignments](images/radbuttons-features-pathbutton-path-alignment.gif)
 
-As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to achieve the desired result.
+As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to align the content in the available space.
 
 {% if site.site_name == 'WPF' %}
 ## RadPathButton and RadGlyph

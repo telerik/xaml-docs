@@ -14,6 +14,22 @@ The floating images in RadRichTextBox are represented as inline images wrapped i
 
 This topic will explain you how to use the **FloatingImageBlock** element.
 
+## Supported Image Extensions
+
+With **RadRichTextBox**, you can work with images from the following file formats:
+
+ - JPG
+ - JPEG
+ - PNG
+ - BMP
+ - TIFF
+ - TIF
+ - GIF
+ - ICO
+ - ICON
+ - WMF 
+ - EMF
+
 ## FloatingImageBlock Class Overview
 
 The **FloatingImageBlock** class is used to insert floating images in a document. This class wraps an inline image in a floating block allowing the customer to position the image on the exact position they would like to. **FloatingImageBlock** derives from [**FloatingBlock**](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.floatingblock) whose base class is **AnnotationMarkerBase**. With that said, the floating blocks are implemented using annotations.

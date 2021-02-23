@@ -12,6 +12,8 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains __RadWebCam__.
 
+>important RadWebCam uses Microsoft Media Foundation which requires a __minimum OS version of Windows Vista or later__. Also, some versions of Windows 7 doesn't have the __Media Feature Package__ installed, so you may need to install it separately.  
+
 ## Assembly References
 
 In order to use __RadWebCam__, you will need to add references to the following assemblies:

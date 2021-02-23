@@ -49,7 +49,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
           
 * __SQL Server 2008 Express__ (optional). Download the latest version from [here](https://www.microsoft.com/en-us/sql-server/sql-server-2019).          
 
->caution We can no longer claim a dedicated support for XBAP applications. This is due to the fact that IE 9 disables XBAP by default (more info [here](http://blogs.msdn.com/b/ieinternals/archive/2011/03/09/internet-explorer-9-xbap-disabled-in-the-internet-zone.aspx)). We strongly recommend using ClickOnce deployment instead.
+>caution We can no longer claim a dedicated support for XBAP applications. This is due to the fact that, since Internet Explorer 9, XBAP is disabled by default. We strongly recommend using ClickOnce deployment instead. With this in mind, please note that some of the information in this article may be outdated. Please [contact our support team](https://www.telerik.com/account/support-tickets?pid=601) if you have an inquiry regarding the support for a given control.
       
 ## Hardware Enviroment
 

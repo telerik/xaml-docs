@@ -1,6 +1,6 @@
 ---
-title: Foreground color does not change in a custom header
-page_title: Foreground color does not change in a custom header
+title: Foreground Color Does not Change in a Custom Header
+page_title: Foreground Color Does not Change in a Custom Header
 description: Learn how to troubleshoot within the Telerik {{ site.framework_name }} DataGrid when the Foreground color of the custom header does not change on mouse hover, sorting, etc.
 slug: gridview-troubleshooting-styling-custom-header
 tags: foreground,color,does,not,change,in,a,custom,header
@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Foreground color does not change in a custom header
+# Foreground Color Does not Change in a Custom Header
 
 __PROBLEM__
 
@@ -18,8 +18,7 @@ You declare a custom header for a column (__Example 1__):
 
 {{region xaml-gridview-troubleshooting-styling-custom-header_0}}
 	<telerik:GridViewDataColumn.Header>
-	    <TextBlock Text="My Custom Header"
-	TextWrapping="Wrap" />
+	    <TextBlock Text="My Custom Header" TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
 
@@ -31,34 +30,56 @@ __Figure 1:__ The __Foreground__ color of the custom header does not change, whe
 
 __CAUSE__
 
-Your custom header is not automatically bound to the default theme's __Foreground__ color.
+Your custom header is not automatically bound to the header cell's default __Foreground__ color.
 		
 __SOLUTION__
 
-You can bind the __Foreground__ property of the custom header(in this example this is a __TextBlock__) to the __Foreground__ property of the control containing the content of the __GridViewHeaderCell__(__Example 2__ ). In this case the container is a __ContentControl__ with __x:Name="ContentPresenter"__, which is located in the default __GridViewHeaderCellTemplate__. You can observe the result in __Figure 2__.
+You can bind the __Foreground__ property of the custom header (in this example this is a __TextBlock__) to the __Foreground__ property of the control containing the content of the __GridViewHeaderCell__. In this case the container is a __ContentControl__ with __x:Name="ContentPresenter"__, which is located in the default __GridViewHeaderCellTemplate__. 
 
-{% if site.site_name == 'WPF' %}
-#### __[XAML] Example 2: Final declaration of a custom header__
+For this to also work when the [UI virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism of the control is enabled, however, you need to ensure that the TextBlock has been loaded when the binding is performed. For the purpose, you can create the following attached behavior.
+
+#### __[C#] Example 2: The custom attached behavior__
+{{region cs-gridview-troubleshooting-styling-custom-header_2}}
+    public static class HeaderInheritForegroundBehavior
+    {
+        public static bool GetIsEnabled(DependencyObject obj)
+        {
+            return (bool)obj.GetValue(IsEnabledProperty);
+        }
+
+        public static void SetIsEnabled(DependencyObject obj, bool value)
+        {
+            obj.SetValue(IsEnabledProperty, value);
+        }
+
+        public static readonly DependencyProperty IsEnabledProperty =
+            DependencyProperty.RegisterAttached("IsEnabled", typeof(bool), typeof(HeaderInheritForegroundBehavior), new PropertyMetadata(OnAttachedChanged));
+
+        private static void OnAttachedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var textBlock = d as TextBlock;
+            textBlock.Loaded += (s, a) =>
+            {
+                var parent = textBlock.ParentOfType<ContentControl>();
+                var binding = new Binding() { Source = parent, Path = new PropertyPath("Foreground") };
+
+                textBlock.SetBinding(TextBlock.ForegroundProperty, binding);
+            };
+        }
+    }
+{{endregion}}
+
+#### __[XAML] Example 3: Final declaration of a custom header__
 {{region xaml-gridview-troubleshooting-styling-custom-header_1}}
 	<telerik:GridViewDataColumn.Header>
-	    <TextBlock Foreground="{Binding Foreground,
-	                  RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
-	Text="My Custom Header"
-	TextWrapping="Wrap" />
+	    <TextBlock Text="My Custom Header" local:HeaderInheritForegroundBehavior.IsEnabled="True" TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
 {{endregion}}
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 2: Final declaration of a custom header__
-{{region gridview-troubleshooting-styling-custom-header_1}}
-	<telerik:GridViewDataColumn.Header>
-    <TextBlock Foreground="{Binding Foreground,
-               RelativeSource={RelativeSource AncestorType=UserControl}}"
-               Text="My Custom Header"
-               TextWrapping="Wrap" />
-	</telerik:GridViewDataColumn.Header>
-{{endregion}}
-{% endif %}
+
+>Please note that the "local" namespace needs to point to the namespace where the HeaderInheritForegroundBehavior is defined.
 
 __Figure 2:__ The __Foreground__ color of the custom header now changes, when the column is hovered.
 ![Telerik {{ site.framework_name }} DataGrid-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)
+
+## See Also
+* [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

@@ -54,7 +54,7 @@ To correctly adjust the nodes' lines, the __ItemsIndent__ and __ExpanderButtonMi
 
 > The expander path element has a different width in different themes.
 
-#### __Figure 2: Default Size of the Elements in Fluent Theme__
+#### __Figure 3: Default Size of the Elements in Fluent Theme__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_03.png)
 
 In the above case, we will reduce the space by using the __ItemsIndent__ and __ExpanderButtonMinWidth__ properties. The __ExpanderButtonMinWidth__ property can be set to an odd value bigger than the path's width. In our case, the minimum value will be 17. 
@@ -74,7 +74,7 @@ In the above case, we will reduce the space by using the __ItemsIndent__ and __E
 	</Grid>
 {{endregion}}
 
-#### __Figure 3: Compact TreeView Lines__
+#### __Figure 4: Compact TreeView Lines__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_04.png)
 
 ## See Also

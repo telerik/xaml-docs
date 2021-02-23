@@ -104,7 +104,7 @@ And when pointing the bottom part of an item, the DragCue indicates that the dra
 
 ![radlistbox features dragdrop 10](images/radlistbox_features_dragdrop_10.png)
 
->tipThe __ListBoxDragVisualProvider__ DragCue can be modified in order to have the old appearance. You can find a runnable project which demonstrates the exact approach to achieve that in our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __ListBox / ModifyListBoxDragVisualStyle__.              
+>tip The __ListBoxDragVisualProvider__ DragCue can be modified in order to have the old appearance. You can find a runnable project which demonstrates the exact approach to achieve that in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ListBox/ModifyListBoxDragVisualStyle).              
 
 * __ScreenshotDragVisualProvider__: Provides the exact visual representation of the dragged item.
 

@@ -195,7 +195,7 @@ Below you can see a possible result of the code so far (some additional styling 
 
 ![radidiagram-features-customconnectors 2](images/radidiagram-features-customconnectors2.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomConnectors__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomConnectors).
 
 ## Connectors Visibility 
 

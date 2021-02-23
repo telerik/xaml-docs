@@ -66,4 +66,4 @@ In both cases GetConvertToFormats() should return formats acceptable by the targ
 
 >The DataObjectHelper class provides helper methods for retrieving data from the provided DataObject, that work in both Full and Partial trust modes.
 
->tipYou can download some runnable projects from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the examples are listed bellow __DragDrop__ folder.
+>tip Find runnable projects in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop).

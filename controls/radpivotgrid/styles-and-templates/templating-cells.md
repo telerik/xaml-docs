@@ -158,7 +158,7 @@ You can see the final result on __Figure 2__.
 Figure 2: Cells with values below 1000 are colored in red and the other cells in green using CellTemplateSelector.
 ![Rad Pivot Grid Styles And Templates Templating Cells 01](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_01.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomCellTemplate__.          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomCellTemplate).          
 
 ## Using Custom HeaderTemplateSelectors
 
@@ -282,8 +282,7 @@ You can see the final result on __Figure 3__.
 Figure 3: Header cells with different images.
 ![Rad Pivot Grid Styles And Templates Templating Cells 02](images/RadPivotGrid_Styles_And_Templates_Templating_Cells_02.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PivotGrid / CustomHeaderTemplate__.          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomHeaderTemplate).    
 
-## See Also
-
+## See Also  
  * [QuickStyle]({%slug radpivotgrid-styles-and-templates-quickstyles%})

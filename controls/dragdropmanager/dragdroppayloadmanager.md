@@ -210,7 +210,7 @@ __Figure 2__ shows the final result. When the dragged item is dropped, it will b
 Figure 2: ListBox1 is on the left and ListBox2 is on the right. After the drop is completed the object is converted to string.
 ![Drag Drop Manager Payload Manager 02](images/DragDropManager_PayloadManager_02.png)
 
->tipYou can download a runnable project of the previous example from the online SDK repository [here](https://github.com/telerik/xaml-sdk). The example is listed as __DragDrop / UsingDragDropPayloadManager__.          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingDragDropPayloadManager).       
 
 ## See Also
 

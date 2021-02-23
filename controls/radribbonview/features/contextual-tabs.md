@@ -130,7 +130,7 @@ In order to data-bind the __ContextualGroups__ properties you can also use style
 	</Style>
 {{endregion}}
 
->tip You can download a runnable project demonstrating this approach from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/ContextualGroups-DataBinding.		  
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RibbonView/ContextualGroups-DataBinding).		  
 
 __RadRibbonView__ exposes two methods that allow you to work with the __ContextualGroups ContainerGenerator__:		
 

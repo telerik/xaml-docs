@@ -395,7 +395,7 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 Now let's see a possible use case with this set of Diagram configuration and ViewModels:
 ![raddiagram-features-serialization-serializable](images/raddiagram-features-serialization-serializable.png)
 
->tip You can download a runnable project demonstrating a similar approach from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/MVVM__.			  
+>tip You can download a runnable project demonstrating a similar approach from [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/MVVM).
 
 >important Please note that copy/pasting requires additional effort. Pasting a copied node, for example, means that you have to override the [AddNode](https://docs.telerik.com/devtools/wpf/api/telerik.windows.diagrams.core.iobservablegraphsource#Telerik_Windows_Diagrams_Core_IObservableGraphSource_AddNode_System_Object_) method of the [ObservableGraphSourceBase]({%slug raddiagram-data-observablegraphsource%}) and provide a new unique __Id__ for the new __NodeViewModel__.			  
 

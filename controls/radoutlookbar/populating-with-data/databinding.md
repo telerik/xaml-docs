@@ -275,11 +275,10 @@ To customize the project that we developed so far you can do the following:
 		                       MinimizedButtonContentTemplate="{StaticResource outlookBarMinimizedBtnContentTemplate}"
 		                       MinimizedButtonContent="{Binding SelectedItem}" />
 	{{endregion}}
+	
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/OutlookBar/DataBinding).
 
->tip You can download a runnable project of the demonstrated example from our online [SDK repository here](https://github.com/telerik/xaml-sdk), after navigating OutlookBar/DataBinding
-
-You can see the end result on the screenshots below
-
+You can see the end result on the screenshots below.  
 ![outlook databinding result 1](images/outlook_databinding_result1.png)
 
 ## See Also

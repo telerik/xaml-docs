@@ -143,7 +143,7 @@ Below you can find a sample custom interval implementation:
 	End Class
 {{endregion}}
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TimeBar/CustomIntervalTypes__. 
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TimeBar/WPF/CustomIntervalTypes).
 
 Using the sample custom interval above, you will get the following result:
 ![](images/radtimebar-features-custom-interval-types_01.jpg)

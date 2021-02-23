@@ -71,7 +71,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 * __AccessKeys:__ Property of type __IEnumerable<KeyGesture>__ and it gets/sets a collection of __KeyGestures__ that can be used to trigger the KeyTips display. Please note that the __AccessKeys__ property can only be set in code either in code-behind or in a __ViewModel__. This is because a __KeyGesture__ cannot be defined in XAML.
 
-	>If both __AcessKey__ and __AccessKeys__ properties are set, the value of the __AcessKey__ property will be ignored. You can download a runnable project demonstrating how to take advantage of the __KeyTipService.AccessKeys__ property from our online SDK repository. Please open [this link](https://github.com/telerik/xaml-sdk) and navigate to RibbonView/MultipleAccessKeys-KeyTips.
+	>If both __AcessKey__ and __AccessKeys__ properties are set, the value of the __AcessKey__ property will be ignored. You can download a runnable project demonstrating how to take advantage of the __KeyTipService.AccessKeys__ property from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/RibbonView/MultipleAccessKeys-KeyTips).
 
 * __Activation:__ Used to define additional logic that can be implemented when using the keyboard navigation.
 
@@ -193,8 +193,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 
 {% if site.site_name == 'WPF' %}
 ![](images/RibbonView_KeyTips_Sample_updated.png)
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
+{% else %}
 ![](images/RibbonView_KeyTips_Sample.png)
 {% endif %}
 

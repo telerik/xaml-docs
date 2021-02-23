@@ -106,7 +106,7 @@ __Figure 2:__ The last docked size is preserved when the Pane becomes floating:
 
 ![](images/raddocking-features-retain-pane-size-8.png)
 
->tipYou can download a runnable project that demonstrates all described above modes from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as Docking/RetainPaneSize.
+>tip Find a runnable project that demonstrates all described above modes in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Docking/RetainPaneSize).
 
 ## See Also
 

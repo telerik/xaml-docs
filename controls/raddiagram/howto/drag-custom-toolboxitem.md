@@ -171,7 +171,7 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 If you run the project now, you will be able to drag shapes from the toolbox and drop them in the diagram. The shapes will keep their __Geometry__ and they will display the original __Header__ data property as their __Content__.
 ![raddiagram-howto-customtoolboxdrop-content](images/raddiagram-howto-customtoolboxdrop-content.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/CustomToolboxDragDrop__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/CustomToolboxDragDrop).
 
 ## See Also
  * [Drag and Drop Support]({%slug raddiagrams-features-drag-drop%})

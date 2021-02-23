@@ -60,7 +60,7 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 	Me.AnimationGroupManager.HideAnimation = groupOut
 {{endregion}}
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as DesktopAlert/ShowingAndHidingUsingAnimationGroup.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DesktopAlert/ShowingAndHidingUsingAnimationGroup).
 
 ## See Also
 

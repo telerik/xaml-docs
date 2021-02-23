@@ -150,10 +150,8 @@ You can see the final result on __Figure 1__.
 __Figure 1__: __RadRadialMenu__ populated from the bound collection of CustomMenuItem objects
 ![Rad Radial Menu Populating with data 02](images/RadRadialMenu_Populating_with_data_02.png)
 
->tipYou can download a runnable project that demonstrates a more complex example of binding a collection of custom objects as __ItemsSource__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadialMenu / BindingItemsSource__.        
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/BindingItemsSource).      
 
-## See Also
-
- * [Populating With Data]({%slug radradialmenu-populating-with-data-overview%})
- 
+## See Also  
+ * [Populating With Data]({%slug radradialmenu-populating-with-data-overview%}) 
  * [RadialMenuItems]({%slug radradialmenu-features-radialmenuitems%})

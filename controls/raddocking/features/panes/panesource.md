@@ -247,4 +247,4 @@ Figure 2. As expected two of the RadPanes are added to the “bottom” RadPaneG
 
 ![raddocking-features-panes-panesource-2](images/raddocking-features-panes-panesource-2.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Docking / CustomDockingPanesFactory__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Docking/CustomDockingPanesFactory).

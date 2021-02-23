@@ -126,4 +126,4 @@ The following figure demonstrates the final result:
 
 ![radcalendar-styling-and-appearance-daytemplateselector-1](images/radcalendar-styling-and-appearance-daytemplateselector-1.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as RadCalendar/UsingDayTemplateSelector.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Calendar/UsingDayTemplateSelector).

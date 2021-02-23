@@ -667,7 +667,7 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 	End Sub
 {{endregion}}
 
->tip You can download a runnable project of the demonstrated example from our online [SDK repository](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DragDropBetweenTreeViews__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/DragDropBetweenTreeViews).
 
 ## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

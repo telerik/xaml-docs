@@ -129,7 +129,7 @@ In order to implement only drop inside you need to perform the following steps:
 
 	Please note that if you want the changes applied on the __TreeViewDragDropOptions__ object to affect the __DragVisual__ element, you have to invoke the __UpdateDragVisual()__ method.			
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/EnableOnlyDropInsideItem__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/EnableOnlyDropInsideItem).
 
 ## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

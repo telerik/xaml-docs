@@ -219,7 +219,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 {% endif %}
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __GanttView / PrintingAndExporting__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/PrintingAndExporting).
 
 The next screenshots show the final result:
 

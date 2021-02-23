@@ -216,7 +216,7 @@ Alternatively, we can also use a __VerticalDefinition__. We'll set the months as
 #### __Figure 2: RadHeatMap with VerticalDefinition__
 ![RadHeatMap with VerticalDefinition](images/RadHeatMap_databinding_02.PNG)
 
->tip You can find a runnable solution demonstrating population with data in our SDK Examples repository located on [GitHub](https://github.com/telerik/xaml-sdk), after navigating to __HeatMap/PopulatingWithData__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/HeatMap/WPF/PopulatingWithData).
 
 ## See Also
 

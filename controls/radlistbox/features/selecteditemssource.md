@@ -165,7 +165,7 @@ The final result is shown on the snapshot below:
 
 ![radlistbox-features-selecteditemssource-1](images/radlistbox_features_selecteditemssource_01.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as RadListBox/SelectedItemsSource.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ListBox/SelectedItemsSource).
 
 ## See Also
 

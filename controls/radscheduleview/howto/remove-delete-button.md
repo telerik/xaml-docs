@@ -150,7 +150,7 @@ If you also want to avoid the appearance of the delete confirm dialog, you will 
 	}
 {{endregion}}
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __ScheduleView/RemoveDeleteButton__.         
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/RemoveDeleteButton).         
 
 ## See Also
 

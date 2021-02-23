@@ -92,7 +92,7 @@ The __SelectedItems__ is a collection of data items, which holds the currently s
 
 >You can add or remove items to the __SelectedItems__ collection, but cannot change its instance because it is read only.
 
->tipYou can download a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel [here](https://github.com/telerik/xaml-sdk), the example is listed as __GridView/BindingSelectedItemsFromViewModel__.
+>tip Find a runnable project showing how to bind the __SelectedItems__ collection of the RadGridView to a property in your ViewModel in the [SDK examples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GridView/BindingSelectedItemsFromViewModel).
 
 ## SelectedCells
 

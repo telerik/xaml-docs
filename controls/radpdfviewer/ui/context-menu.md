@@ -40,9 +40,7 @@ The context menu can change dynamically. For example, when the Text Selection mo
 
 Additionally, you can easily add a custom menu item to the context menu by binding it to a custom command descriptors. More on how to create command descriptors you can find [here]({%slug radpdfviewer-command-descriptors%}).
         
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __PdfViewer / ContextMenu__.
-          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/ContextMenu).
 
 ## See Also
 [Command Descriptors]({%slug radpdfviewer-command-descriptors%}).

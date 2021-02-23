@@ -304,4 +304,4 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 
 ![raddiagram-howto-radcontrols-link](images/raddiagram-howto-radcontrols-link.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __Diagram/ControlShape__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Diagram/ControlShape).

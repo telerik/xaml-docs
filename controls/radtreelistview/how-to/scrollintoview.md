@@ -351,16 +351,10 @@ Clicking the second button will update the UI only when the bring operation is f
 	End Sub
 {{endregion}}
 
+>tipPlease have in mind that running the application without debugger (__Ctrl + F5__ when in VS) will result in faster user experience.		  
 
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/TreeListViewBringItemIntoView).		  
 
->tipPlease have in mind that running the application without debugger (__Ctrl + F5__ when in VS) will result in faster user experience.
-		  
-
->tipYou can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to ___TreeView/TreeListViewBringItemIntoView___.
-		  
-
-## See Also
-
+## See Also  
  * [RadGridView: Scroll to a particular row or column]({%slug gridview-scroll-item%})
-
  * [RadTreeView: How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%})

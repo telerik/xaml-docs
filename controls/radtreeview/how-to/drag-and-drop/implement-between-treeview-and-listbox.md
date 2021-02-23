@@ -1077,7 +1077,7 @@ If you take a closer look at the above code snippet, you'll notice that it basic
 With that last piece of code, our application is ready. It can now provide a fluent drag-drop operation between a __RadTreeView__ and a __ListBox__ control.
 ![Rad Tree View-DnDList To Tree](images/RadTreeView-DnDListToTree.png)
 
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TreeView/DragDropTreeViewToControls__.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/DragDropTreeViewToControls).
 		  
 
 ## See Also

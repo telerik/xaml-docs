@@ -70,10 +70,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	            };
 {{endregion}}
 
-
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __Spreadsheet / Localization__.
-          
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/Localization).          
 
 ## Localization Using Custom Localization Manager
 

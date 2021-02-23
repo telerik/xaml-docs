@@ -77,7 +77,7 @@ The following screenshots show the final result:
 
 ![radautocompletebox-customizing-boxes-itemtemplate-2](images/radautocompletebox-customizing-boxes-itemtemplate-2.png)
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as AutoCompleteBox/CustomBoxesItemTemplate.
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/CustomBoxesItemTemplate).
 
 ## See Also
 

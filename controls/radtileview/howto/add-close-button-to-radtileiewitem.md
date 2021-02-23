@@ -240,7 +240,7 @@ The __RadTileViewItem’s__ header is represented by __TileViewItemHeader__ cont
 	...........
 {{endregion}}
 
-> The code snippet above doesn't contain the complete definition of the __TileViewItemHeader.ControlTemplate__, but only the part of it that is changed. You can see the complete template in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk), after navigating to __TileView/AddCloseButton/Example.xaml__.          
+> The code snippet above doesn't contain the complete definition of the __TileViewItemHeader.ControlTemplate__, but only the part of it that is changed. You can see the complete template in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/TileView/AddCloseButton).          
 
 ## Implement the Close button’s command
 
@@ -428,7 +428,7 @@ The final stage of this tutorial is to implement the Close button’s command. W
 		End Class
 	{{endregion}}
 	
->tip You can download a runnable project of the demonstrated example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), after navigating to __TileView/AddCloseButton__.            
+>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TileView/AddCloseButton).       
 
 ## See Also
  * [Getting Started]({%slug radtileview-getting-started%})

@@ -12,7 +12,7 @@ position: 1
 
 The drag/drop operations in RadTreeView can be customized using the control's API or the DragDropManager.
 
-This article describes the customizaiton points available in the control.
+This article describes the customization points available in the control.
 
 ## Visual Elements of the Drag and Drop Operation 
 

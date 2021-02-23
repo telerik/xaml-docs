@@ -52,7 +52,7 @@ The following example shows a basic RadTreeView definition and enabled drag/drop
 	End Sub
 {{endregion}}
 
->tip In data binding scenario it is recommended to assign an INotifyCollectionChanged implementation (like ObservableCollection&lt;T&gt;) to the ItemsSource of RadTreeView. Otherwise, the drag/drop actions won't be reflected properly in the UI. Additionally, the __ItemsSource__ of the treeview items where drag/drop action will happen should be initialized. In case, the corresponding ItemsSource is null, the drop action won't get executed. Also, if the ItemsSource of RadTreeView or RadTreeViewIte is not an __IList__ implementation, then the drop operation is not allowed.
+>tip In data binding scenario it is recommended to assign an INotifyCollectionChanged implementation (like ObservableCollection&lt;T&gt;) to the ItemsSource of RadTreeView. Otherwise, the drag/drop actions won't be reflected properly in the UI. Additionally, the __ItemsSource__ of the treeview items where drag/drop action will happen should be initialized. In case, the corresponding ItemsSource is null, the drop action won't get executed. Also, if the ItemsSource of RadTreeView or RadTreeViewItem is not an __IList__ implementation, then the drop operation is not allowed.
 
 ## Enable Drag of Multiple Items
 
@@ -148,7 +148,7 @@ The following example shows how to use the feature with two RadTreeView instance
 #### Figure 3: Dragging items between two treeviews 
 ![Rad Tree View-Drag Drop-Tree To Tree](images/RadTreeView-DragDrop-TreeToTree.png)
 
-To enable __drag/drop between RadTreeView an another control__ (such as ListBox), you can customize the default drag/drop actions using the [DragDropManager]({%slug dragdropmanager-overview%}). Read more about this in the [How To Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%}) article.
+To enable __drag/drop between RadTreeView and another control__ (such as ListBox), you can customize the default drag/drop actions using the [DragDropManager]({%slug dragdropmanager-overview%}). Read more about this in the [How To Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%}) article.
 
 ## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

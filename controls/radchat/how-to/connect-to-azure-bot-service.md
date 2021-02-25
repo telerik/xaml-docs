@@ -50,7 +50,7 @@ Messages between the bot and the client application can be exchanged using **HTT
     this.webSocketClient.Connect();
 {{endregion}}
 
-> For an example implementation of connecting to Direct Line using **HTTP GET** and **HTTP POST** requests, check out the [Direct Line Bot Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLine) demo and for one using a websocket, check out the [Direct Line Bot Sample (using client WebSockets)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLineWebSockets) demo.
+> For an example implementation of connecting to Direct Line using **HTTP GET** and **HTTP POST** requests, check out the [Direct Line Bot Sample](https://github.com/microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLine) demo and for one using a websocket, check out the [Direct Line Bot Sample (using client WebSockets)](https://github.com/microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLineWebSockets) demo.
 
 ## Send and receive activities
 

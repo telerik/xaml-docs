@@ -69,10 +69,10 @@ In order to position the pin point more precisely you can use the __MapLayer.Hot
 	                Height="480">
 	    <telerik:InformationLayer>
 	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679">
-	            <telerik:MapPinPoint.HotSpot>
+	            <telerik:MapLayer.HotSpot>
 	                <telerik:HotSpot X="0.5"
 	                                    Y="1" />
-	            </telerik:MapPinPoint.HotSpot>
+	            </telerik:MapLayer.HotSpot>
 	        </telerik:MapPinPoint>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
@@ -95,10 +95,10 @@ Here is an example:
 	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
 	                                Text="Sofia"
 	                                ImageSource="/Resources/Images/flag_bg.png">
-	            <telerik:MapPinPoint.HotSpot>
+	            <telerik:MapLayer.HotSpot>
 	                <telerik:HotSpot X="0.5"
 	                                    Y="0" />
-	            </telerik:MapPinPoint.HotSpot>
+	            </telerik:MapLayer.HotSpot>
 	        </telerik:MapPinPoint>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
@@ -135,10 +135,10 @@ Here is an example:
 	                                BorderThickness="1"
 	                                Text="Sofia"
 	                                ImageSource="/Resources/Images/flag_bg.png">
-	            <telerik:MapPinPoint.HotSpot>
+	            <telerik:MapLayer.HotSpot>
 	                <telerik:HotSpot X="0.5"
 	                                    Y="1" />
-	            </telerik:MapPinPoint.HotSpot>
+	            </telerik:MapLayer.HotSpot>
 	        </telerik:MapPinPoint>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>

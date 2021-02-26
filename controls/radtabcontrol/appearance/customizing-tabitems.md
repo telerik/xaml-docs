@@ -143,3 +143,14 @@ The ItemTemplate is inherited by the __HeaderTemplate__ property of each RadTabI
 The ItemTemplate and HeaderTemplate have corresponding DataTemplateSelector alternatives - the __ItemTemplateSelector__ and __HeaderTemplateSelector__ properties - that allow you to choose the DataTemplate based on a custom condition. Read how to implement a `DataTemplateSelector` in the corresponding [MSDN article](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.5).
 
 >tip The template of the selected tab content can be customized using the [ContentTemplate]({%slug radtabcontrol-appearance-customizing-selected-tab-content%}) property of RadTabControl.
+
+## Tabstrip Background
+
+To change the background of the are behind the tab items (the [tabstrip]({%slug radtabcontrol-visual-structure%})), set the __HeaderBackground__ property of RadTabControl.
+
+#### __[XAML] Example 8: Setting HeaderBackground__
+{{region radtabcontrol-appearance-customizing-tab-items-7}}
+	<telerik:RadTabControl HeaderBackground="#F6DC9D" />
+{{endregion}} 
+
+![](images/radtabcontrol-appearance-customizing-tab-items-4.png)

@@ -510,4 +510,4 @@ Finally, we have to implement a logic that adds a new item when the *Add Item* b
 	End Sub
 {{endregion}}
 
->tip You can find a complete solution in [this blog post.](http://blogs.telerik.com/xamlteam/posts/11-01-12/treeview-bringintoview.aspx)
+>tip Find a complete solution showing this approach in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/BringIntoView)

@@ -146,7 +146,7 @@ The ItemTemplate and HeaderTemplate have corresponding DataTemplateSelector alte
 
 ## Tabstrip Background
 
-To change the background of the are behind the tab items (the [tabstrip]({%slug radtabcontrol-visual-structure%})), set the __HeaderBackground__ property of RadTabControl.
+To change the background of the area behind the tab items (the [tabstrip]({%slug radtabcontrol-visual-structure%})), set the __HeaderBackground__ property of RadTabControl.
 
 #### __[XAML] Example 8: Setting HeaderBackground__
 {{region radtabcontrol-appearance-customizing-tab-items-7}}

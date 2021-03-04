@@ -26,7 +26,7 @@ In __Suggest__ mode after one or more matches are found they are displayed in th
 
 The XAML should look like this:
 
-#### __[XAML] Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
+#### __[XAML] Example 1: Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
 
 {{region xaml-radautocompletebox-features-key-properties-0}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
@@ -51,7 +51,7 @@ In __Append__ mode after one or more matches are found the DropDown portion of t
 
 The XAML should look like this:
 
-#### __[XAML] Declaring RadAutoCompleteBox with Append AutoCompleteMode__
+#### __[XAML] Example 2: Declaring RadAutoCompleteBox with Append AutoCompleteMode__
 
 {{region xaml-radautocompletebox-features-key-properties-1}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
@@ -76,7 +76,7 @@ __SuggestAppend__ mode combines the behavior of the two previous modes.
 
 The XAML should look like this:
 
-#### __[XAML] Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
+#### __[XAML] Example 3: Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
 
 {{region xaml-radautocompletebox-features-key-properties-2}}
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
@@ -94,3 +94,24 @@ The next screenshots show how the control looks in SuggestAppend mode:
 ![radautocompletebox-features-autocomplete-6](images/radautocompletebox-features-autocomplete-6.png)
 
 ![radautocompletebox-features-autocomplete-4](images/radautocompletebox-features-autocomplete-4.png)
+
+## Using AutocompleteBehavior.AutoCompleteTimeout
+
+The __AutocompleteBehavior__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is **1 second**.
+
+#### __[C#] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
+
+{{region cs-radautocompletebox-features-autocomplete_0}}
+	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
+{{endregion}}
+
+#### __[VB.NET] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
+
+{{region vb-radautocompletebox-features-autocomplete_1}}
+	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
+{{endregion}}
+
+## See Also
+
+* [Filtering Behavior]({%slug radautocompletebox-features-filteringbehavior%})
+* [Highlight Behavior]({%slug radautocompletebox-features-highlightbehavior%})

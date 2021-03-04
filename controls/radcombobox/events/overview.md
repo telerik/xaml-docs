@@ -60,6 +60,10 @@ Subcribing to an event can be done in Xaml or in code behind.
         }
 	{{endregion}}
 
+{% if site.site_name == 'WPF' %}
+>The __SelectionChanged__ event is inherited from the [Selector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector?view=net-5.0) class. 
+{% endif %}
+
 ## See Also
  * [Visual Structure]({%slug radcombobox-general-information-visual-structure%})
  * [Getting Started]({%slug radcombobox-getting-started%})

@@ -8,7 +8,7 @@ published: True
 ---
 
 # Content Controls UI
-The easiest way to create a content control is through the user interface. You can also create them programmatically following the [Working with Content Controls Programmatically](%slug radrichtextbox-features-working-with-content-controls%)) article. 
+The easiest way to create a content control is through the user interface. You can also create them programmatically following the [Working with Content Controls Programmatically]({%slug radrichtextbox-features-working-with-content-controls%}) article. 
 
 ## User Interface
 You can specify which type of content control you wish to insert from the predefined UI of RadRichTextBox. You can select it from the Developer Tab which is part of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) by default:

@@ -22,11 +22,13 @@ This tutorial will walk your through the creation of a sample application contai
 
 * Add references to the needed assemblies 
 	* __Telerik.Windows.Controls__
-    	* __Telerik.Windows.Controls.Expressions__
+	* __Telerik.Windows.Controls.Data__
+	* __Telerik.Windows.Controls.Expressions__
 	* __Telerik.Windows.Controls.Navigation__
 	* __Telerik.Windows.Data__
 	* __Telerik.Windows.Documents__
 	* __Telerik.Windows.Documents.Core__
+	* __Telerik.Windows.Documents.Flow__
 	
 >importantIf you are using **.NET Core**, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 

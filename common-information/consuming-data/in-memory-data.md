@@ -14,107 +14,177 @@ The purpose of this tutorial is to show you how to create in-memory data and use
 
 * Creating in-memory data. 
 
-
 * Setting it as a data source/data context in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application.
-
->This tutorial will use objects and data from the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 ## Creating In-Memory Data
 
-Here is a sample code showing how to create in-memory data: 
+__Example 1__ shows how you can create some in-memory data.
 
-#### __C#__
+#### __[C#] Example 1: Creating in-memory data__
 
 {{region consuming-data-in-memory-data_0}}
-	public List<Categories> categories = new List<Categories>();
-	public void CreateCategories()
-	{
-	    Categories c = new Categories();
-	    c.CategoryID = 1;
-	    c.CategoryName = "Beverages";
-	    c.Description = "Soft drinks, coffees, teas, beers, and ales";
-	    categories.Add( c );
-	    c = new Categories();
-	    c.CategoryID = 2;
-	    c.CategoryName = "Condiments";
-	    c.Description = "Sweet and savory sauces, relishes, spreads, and seasonings";
-	    categories.Add( c );
-	    c = new Categories();
-	    c.CategoryID = 3;
-	    c.CategoryName = "Confections";
-	    c.Description = "Desserts, candies, and sweet breads";
-	    categories.Add( c );
-	}
-	{{endregion}}
+	public class Category
+    {
+        public string CategoryName { get; internal set; }
+        public int CategoryID { get; internal set; }
+        public string Description { get; internal set; }
+    }
+
+	public class ViewModel
+    {
+        private ObservableCollection<Category> categories;
+
+        public ObservableCollection<Category> Categories
+        {
+            get
+            {
+                if(this.categories == null)
+                {
+                    this.categories = this.CreateCategories();
+                }
+
+                return this.categories;
+            }
+        }
+
+        private ObservableCollection<Category> CreateCategories()
+        {
+            var categories = new ObservableCollection<Category>();
+            var c = new Category();
+            c.CategoryID = 1;
+            c.CategoryName = "Beverages";
+            c.Description = "Soft drinks, coffees, teas, beers, and ales";
+            categories.Add(c);
+            c = new Category();
+            c.CategoryID = 2;
+            c.CategoryName = "Condiments";
+            c.Description = "Sweet and savory sauces, relishes, spreads, and seasonings";
+            categories.Add(c);
+            c = new Category();
+            c.CategoryID = 3;
+            c.CategoryName = "Confections";
+            c.Description = "Desserts, candies, and sweet breads";
+            categories.Add(c);
+
+            return categories;
+        }
+    }
+{{endregion}}
 
 
 
-#### __VB.NET__
+#### __[VB.NET] Example 1: Creating in-memory data__
 
 {{region consuming-data-in-memory-data_1}}
-	Public categories As New List(Of Categories)()
-	Public Sub CreateCategories()
-	    Dim c As New Categories()
-	    c.CategoryID = 1
-	    c.CategoryName = "Beverages"
-	    c.Description = "Soft drinks, coffees, teas, beers, and ales"
-	    categories.Add(c)
-	    c = New Categories()
-	    c.CategoryID = 2
-	    c.CategoryName = "Condiments"
-	    c.Description = "Sweet and savory sauces, relishes, spreads, and seasonings"
-	    categories.Add(c)
-	    c = New Categories()
-	    c.CategoryID = 3
-	    c.CategoryName = "Confections"
-	    c.Description = "Desserts, candies, and sweet breads"
-	    categories.Add(c)
-	End Sub
-	{{endregion}}
+	Public Class Category
+		Private privateCategoryName As String
+		Public Property CategoryName() As String
+			Get
+				Return privateCategoryName
+			End Get
+			Friend Set(ByVal value As String)
+				privateCategoryName = value
+			End Set
+		End Property
+		Private privateCategoryID As Integer
+		Public Property CategoryID() As Integer
+			Get
+				Return privateCategoryID
+			End Get
+			Friend Set(ByVal value As Integer)
+				privateCategoryID = value
+			End Set
+		End Property
+		Private privateDescription As String
+		Public Property Description() As String
+			Get
+				Return privateDescription
+			End Get
+			Friend Set(ByVal value As String)
+				privateDescription = value
+			End Set
+		End Property
+	End Class
 
+	Public Class ViewModel
 
+		Private _categories As ObservableCollection(Of Category)
+
+		Public ReadOnly Property Categories() As ObservableCollection(Of Category)
+			Get
+				If Me._categories Is Nothing Then
+					Me._categories = Me.CreateCategories()
+				End If
+
+				Return Me._categories
+			End Get
+		End Property
+
+		Private Function CreateCategories() As ObservableCollection(Of Category)
+
+			Dim _categories = New ObservableCollection(Of Category)()
+			Dim c = New Category()
+			c.CategoryID = 1
+			c.CategoryName = "Beverages"
+			c.Description = "Soft drinks, coffees, teas, beers, and ales"
+			_categories.Add(c)
+			c = New Category()
+			c.CategoryID = 2
+			c.CategoryName = "Condiments"
+			c.Description = "Sweet and savory sauces, relishes, spreads, and seasonings"
+			_categories.Add(c)
+			c = New Category()
+			c.CategoryID = 3
+			c.CategoryName = "Confections"
+			c.Description = "Desserts, candies, and sweet breads"
+			_categories.Add(c)
+
+			Return _categories
+		End Function
+	End Class
+
+{{endregion}}
 
 ## Setting In-Memory Data as DataSource In {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application
 
-There are numerous ways to set in-memory data as data source:
+You can set the in-memory data as a data source in xaml or in code.
 
-* Using XAML. Here is a sample XAML code:
+* Using XAML. __Example 2__ shows some sample XAML.
 
-#### __XAML__
+#### __[XAML] Example 2: Setting the data source in xaml__
 
 {{region consuming-data-in-memory-data_2}}
-	<UserControl.Resources>
-	        <example:categories x:Key="DataSource"/>       
-	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Background="White">
-	        <telerikNavigation:RadTreeView x:Name="radTreeView"
-	           ItemsSource="{Binding Source={StaticResource DataSource}"/>
-	</Grid>
-	{{endregion}}
 
+    <Grid>
+	  	<Grid.DataContext>
+            <local:ViewModel />
+        </Grid.DataContext>
+        <telerik:RadTreeView x:Name="radTreeView" 
+                             ItemsSource="{Binding Categories}" 
+                             DisplayMemberPath="CategoryName"/>
+    </Grid>
+{{endregion}}
 
+*  In code-behind as shown in __Example 3__.
 
-*  In code-behind:
-
-#### __C#__
+#### __[C#] Example 3: Setting the data source in code__
 
 {{region consuming-data-in-memory-data_3}}
-	radTreeView.ItemsSource = categories;
-	// Or
-	radTreeView.DataContext = categories;
-	{{endregion}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.radTreeView.ItemsSource = new ViewModel().Categories;
+	}
+{{endregion}}
 
-
-
-#### __VB.NET__
+#### __[VB.NET] Example 3: Setting the data source in code__
 
 {{region consuming-data-in-memory-data_4}}
-	radTreeView.ItemsSource = categories
-	' Or'
-	radTreeView.DataContext = categories
-	{{endregion}}
-
-
+	Public Sub New()
+		InitializeComponent()
+		Me.radTreeView.ItemsSource = (New ViewModel()).Categories
+	End Sub
+{{endregion}}
 
 ## See Also
 

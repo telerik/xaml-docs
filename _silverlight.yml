@@ -170,7 +170,7 @@ defaults:
         category: "default"
 -
     scope:
-        path: "introduction.html"
+        path: "introduction.md"
     values:
         title_prefix: "Complete Silverlight"
 -

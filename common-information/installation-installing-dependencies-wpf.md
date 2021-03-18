@@ -20,6 +20,7 @@ Controls	|	Assembly
 TouchManager | Telerik.Windows.Controls
 DragDropManager	|	Telerik.Windows.Controls
 RadAutoCompleteBox	|	Telerik.Windows.Controls.Input
+RadAutoSuggestBox	|	Telerik.Windows.Controls.Input
 RadBarcode	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadBook	|	Telerik.Windows.Controls.Navigation
 RadBreadcrumb	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data

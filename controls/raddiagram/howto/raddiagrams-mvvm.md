@@ -34,61 +34,59 @@ To start, in a basic MVVM application we need ViewModels to describe the connect
 * [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%})
 
 For simplicity, in this first example we will use the __GraphSourceBase__ class and we will create a new ViewModel class deriving from it:						
-
-	#### __[C#] Example 1: Creating ViewModel__
-	{{region raddiagram-howto-mvvm-0}}
-		using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
-		public class DiagramViewModel : GraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
+#### __[C#] Example 1: Creating ViewModel__
+{{region raddiagram-howto-mvvm-0}}
+	using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
+	public class DiagramViewModel : GraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
+	{
+		public DiagramViewModel()
 		{
-			public DiagramViewModel()
+			var first = new NodeViewModelBase
 			{
-				var first = new NodeViewModelBase
-				{
-					Content = "First item",
-					Position = new Point(50, 100)
-				};
-				var second = new NodeViewModelBase
-				{
-					Content = "Second item",
-					Position = new Point(150, 100),
-					RotationAngle = 45
-				};
-				var third = new NodeViewModelBase
-				{
-					Content = "Third item",
-					Position = new Point(250, 100)
-				};
-				this.AddNode(first);
-				this.AddNode(second);
-				this.AddNode(third);
-				this.AddLink(new LinkViewModelBase<NodeViewModelBase>(first, second));
-				this.AddLink(new LinkViewModelBase<NodeViewModelBase>(second, third));
-			}
+				Content = "First item",
+				Position = new Point(50, 100)
+			};
+			var second = new NodeViewModelBase
+			{
+				Content = "Second item",
+				Position = new Point(150, 100),
+				RotationAngle = 45
+			};
+			var third = new NodeViewModelBase
+			{
+				Content = "Third item",
+				Position = new Point(250, 100)
+			};
+			this.AddNode(first);
+			this.AddNode(second);
+			this.AddNode(third);
+			this.AddLink(new LinkViewModelBase<NodeViewModelBase>(first, second));
+			this.AddLink(new LinkViewModelBase<NodeViewModelBase>(second, third));
 		}
-	{{endregion}}
+	}
+{{endregion}}
 
-	#### __[VB.NET] Example 1: Creating ViewModel__
+#### __[VB.NET] Example 1: Creating ViewModel__
+{{region raddiagram-howto-mvvm-1}}
+	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
+	Public Class DiagramViewModel
+		Inherits GraphSourceBase(Of NodeViewModelBase, LinkViewModelBase(Of NodeViewModelBase))
+		Public Sub New()
+			Dim first = New NodeViewModelBase With {.Content = "First item", .Position = New Point(50, 100)}
+			Dim second = New NodeViewModelBase With {.Content = "Second item", .Position = New Point(150, 100), .RotationAngle = 45}
+			Dim third = New NodeViewModelBase With {.Content = "Third item", .Position = New Point(250, 100)}
+			Me.AddNode(first)
+			Me.AddNode(second)
+			Me.AddNode(third)
+			Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(first, second))
+			Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(second, third))
+		End Sub
+	End Class
+{{endregion}}
 
-	{{region raddiagram-howto-mvvm-1}}
-		Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
-		Public Class DiagramViewModel
-			Inherits GraphSourceBase(Of NodeViewModelBase, LinkViewModelBase(Of NodeViewModelBase))
-			Public Sub New()
-				Dim first = New NodeViewModelBase With {.Content = "First item", .Position = New Point(50, 100)}
-				Dim second = New NodeViewModelBase With {.Content = "Second item", .Position = New Point(150, 100), .RotationAngle = 45}
-				Dim third = New NodeViewModelBase With {.Content = "Third item", .Position = New Point(250, 100)}
-				Me.AddNode(first)
-				Me.AddNode(second)
-				Me.AddNode(third)
-				Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(first, second))
-				Me.AddLink(New LinkViewModelBase(Of NodeViewModelBase)(second, third))
-			End Sub
-		End Class
-	{{endregion}}
+> It is important to add all nodes in the graph source __before__ the links that connect them. Otherwise, the connection could be missed when the visual elements are created (RadDiagramShape and RadDiagramConnection).
 
-	> It is important to add all nodes in the graph source __before__ the links that connect them. Otherwise, the connection could be missed when the visual elements are created (RadDiagramShape and RadDiagramConnection).
-
-	The __GraphSourceBase<TNode,TLink>__ class inherits __ViewModelBase__ and it also implements the __IGraphSource__ interface. This is why the class exposes   two __IEnumerable__ collections - one with the nodes -__Items__, and the other one with the links - __Links__.
+The __GraphSourceBase<TNode,TLink>__ class inherits __ViewModelBase__ and it also implements the __IGraphSource__ interface. This is why the class exposes   two __IEnumerable__ collections - one with the nodes -__Items__, and the other one with the links - __Links__.
 		
 ##### 2. __Configure the View__
 Once we have all __ViewModels__ in place, we can go ahead and define a __RadDiagram__ instance in our view to consume the business data. We can use style bindings and __DataTemplates__ to apply bindings on the __RadDiagramConnection__ and __RadDiagramShape__ properties.						

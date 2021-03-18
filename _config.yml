@@ -3201,7 +3201,7 @@ defaults:
         res_type: "kb"
 -
     scope:
-        path: ""
+        path: "introduction.html"
     values:
         title_prefix: "Complete WPF"
 -

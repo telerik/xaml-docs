@@ -132,11 +132,11 @@ You can observe that you still can't drag-drop a row from the RadGridView to the
 
 The next step is to make sure that the GridViewRows are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowCapturedDrag__ attached property to __True__ on every __GridViewRow__.
 
-#### __[XAML] Example 4: Setting AllowDrag attached property__
+#### __[XAML] Example 4: Setting AllowCapturedDrag attached property__
 {{region drag-and-drop-from-radgridview-to-raddiagram_3}}	
 	<telerik:RadGridView.RowStyle>
 		<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
-			<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
+			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 		</Style>
 	</telerik:RadGridView.RowStyle>	
 {{endregion}}
@@ -191,7 +191,7 @@ To create a visual clue that the user has started dragging a row, we can create 
 						 local:DragDropBehavior.IsEnabled="True">
 		<telerik:RadGridView.RowStyle>
 			<Style TargetType="telerik:GridViewRow">
-				<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
+				<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 			</Style>
 		</telerik:RadGridView.RowStyle>
 	</telerik:RadGridView>

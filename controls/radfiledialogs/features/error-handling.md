@@ -11,7 +11,7 @@ position: 2
 # Error Handling
 
 The file dialogs come with their own error handling mechanism so that you can deal with most exceptional situations that may occur while navigating through the file system.
-Here's a list of exceptions that get handled internally by the controls and can be analyzed and processed in the [ExceptionRaised](%slug radfiledialogs-events%) event.
+Here's a list of exceptions that get handled internally by the controls and can be analyzed and processed in the [ExceptionRaised]({%slug radfiledialogs-events%}) event.
 
 * **ArgumentException**: Selected file is empty string, contains only white space, contains one or more invalid characters, or refers to a non-file device.
 * **ArgumentNullException**: Selected file is null.
@@ -28,7 +28,7 @@ Here's a list of exceptions that get handled internally by the controls and can 
 
 ## See Also
 
-* [Events](%slug radfiledialogs-events%)
+* [Events]({%slug radfiledialogs-events%})
 * [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%})
 * [RadOpenFolderDialog]({%slug radfiledialogs-radopenfolderdialog%})
 * [RadSaveFileDialog]({%slug radfiledialogs-radsavefiledialog%})

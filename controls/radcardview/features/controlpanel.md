@@ -14,7 +14,7 @@ The control panel of RadGridView allows you to include additional settings UI ne
 
 The feature is useful in case you want to include custom settings panel and implement the corresponding actions.
 
-To use the control panel, use the __ControlPanelItems__ property of RadCardView. This allows you to define __CardViewControlPanelItem__ elements, which are proxies that holds information about the corresponding visual element that will be created.
+To enable the control panel, use the __ControlPanelItems__ property of RadCardView. This allows you to define __CardViewControlPanelItem__ elements, which are proxies that holds information about the corresponding visual element that will be created.
 
 The following example is an extended version of the sample from the [Getting Started]({%slug radcardview-getting-started%}) article.
 

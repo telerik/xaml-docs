@@ -18,7 +18,7 @@ This topic explains how to use the scrolling functionality both [Using UI](#usin
 
 The scroll bars are visible only when the scrolling is needed.
 
-![Scroll bars](images/RadPdfViewer_Scrolling_01) 
+![Scroll bars](images/RadPdfViewer_Scrolling_01.png) 
 
 The scrolling could be done by dragging the scroll bars and by using the keyboard arrows or the mouse wheel.
 

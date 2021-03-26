@@ -46,7 +46,11 @@ __Example 2__ shows how to use __XamlFormatProvider__ to export __RadDocument__ 
 	}
 {{endregion}}
 
+>tipHowever, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
+
 ## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  * [Settings]({%slug radrichtextbox-import-export-xaml-settings%})
+ * [DataProvider]({%slug radrichtextbox-features-data-providers%})
+ 

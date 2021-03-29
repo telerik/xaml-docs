@@ -65,7 +65,7 @@ You can access the predefined regular expressions via the __ValidationHelper__ c
 
 You can set the error that will be shown in the validation tooltip via the __ErrorMessage__ property of the RadMaskedInput control.
 
-#### __[C#] Example 4: Setting predefined regex in code__
+#### __[XAML] Example 4: Setting predefined error message in XAML__
 {{region cs-radmaskedinput-features-regex-validation-4}}
 	<telerik:RadMaskedTextInput ErrorMessage="Invalid email address"/>
 {{endregion}}

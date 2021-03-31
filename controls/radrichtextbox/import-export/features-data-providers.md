@@ -22,7 +22,7 @@ The __RadRichTextBox__ control allows you to export and import its documents int
 
 * [__RtfFormatProvider__]({%slug radrichtextbox-import-export-rtf-rtfformatprovider%})
 
-* [__PdfFormatProvider__ ]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})(export only)
+* [__PdfFormatProvider__]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})(export only)
           
 * [__TxtFormatProvider__]({%slug radrichtextbox-import-export-txt-txtformatprovider%})
 
@@ -53,9 +53,24 @@ However, the format providers cannot be used in XAML and you have to implement a
 The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, HTML, RTF or a plain text string. This is done only in XAML without the usage of any code-behind. Using a two way data binding, you can also keep the string up to date with the changes made to it through the __RadRichTextBox__. To implement a DataProvider class in your application, you'll have to create an instance and configure it via the following properties:
       
 
-* __RichTextBox__: Specifies which __RadRichTextBox__ instance this data provider is attached to.
+* **RichTextBox**: Specifies which **RadRichTextBox** instance this data provider is attached to.
           
-* __String Value__: Specifies the input/output of the __DataProvider__ in the respective format.  The name of the property is __Xaml__ for __XamlDataProvider__, __Html__ for __HtmlDataProvider__, __Text__ for __TxtDataProvider__ and __Rtf__ for __RtfDataProvider__. An exception to this rule is the __Docx__ property of __DocxDataProvider__ which is a byte array. 
+* **Value**: Specifies the input/output of the **DataProvider** in the respective format.
+
+	* **`String`**: For **XamlDataProvider**, **HtmlDataProvider**, **TxtDataProvider**, and **RtfDataProvider**. 
+
+	| Property    | Data Provider    |
+	| ----------- | -----------------|
+	| **Xaml**    | XamlDataProvider |
+	| **Html**    | HtmlDataProvider |
+	| **Text**    | TxtDataProvider  |
+	| **Rtf**     | RtfDataProvider  |
+
+	* **`IList<byte>`** or **`byte[]`**: For **DocxDataProvider**. 
+
+	| Property    | Data Provider    |
+	| ----------- | -----------------|
+	| **Docx**    | DocxDataProvider |
 
 {% if site.site_name == 'Silverlight' %}
 >tipIt is best to declare data providers in the visual tree, as this way the binding will be properly updated when the data context is changed. You don't have to worry about the place in the visual tree where the provider is, as it does not have a visual representation.{% endif %}
@@ -142,7 +157,7 @@ In the previous example, the document's __LayoutMode__ property is changed. Howe
 The __DataProviders__ can also be used in __DataTemplates__ to enable __DataContext__ binding.
         
 
-__Example 5__ shows using __RadRichTextBox__ in __ItemsControl__. For each item in the __ItemsSorce__ collection an expander is created. The content of the expander is __RadRichTextBox__ control bound to the __Body__ property of the __DataContext__ through __HtmlDataProvider__.
+__Example 5__ shows using __RadRichTextBox__ in __ItemsControl__. For each item in the __ItemsSource__ collection an expander is created. The content of the expander is __RadRichTextBox__ control bound to the __Body__ property of the __DataContext__ through __HtmlDataProvider__.
         
 
 #### __[XAML] Example 5: Binding with dynamic data__

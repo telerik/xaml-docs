@@ -62,7 +62,10 @@ You can also export the document to a byte array and preserve it in a database.
 
 The resulting documents can be opened in any application that supports DOCX documents.
 
+>tipHowever, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
+
 ## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  * [Settings] ({%slug radrichtextbox-import-export-docx-settings%})
+ * [DataProvider]({%slug radrichtextbox-features-data-providers%})

@@ -70,7 +70,10 @@ You can also export the document to a string and preserve it in a database.
     string output = provider.Export(document);
 {{endregion}}
 
+>tipHowever, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
+
 ## See Also
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  * [Plain Text]({%slug radrichtextbox-import-export-plain-text%})
+ * [DataProvider]({%slug radrichtextbox-features-data-providers%})

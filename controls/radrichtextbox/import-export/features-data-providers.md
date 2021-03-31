@@ -57,7 +57,7 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
           
 * **Value**: Specifies the input/output of the **DataProvider** in the respective format.
 
-	* **`String`**: For **XamlDataProvider**, **HtmlDataProvider**, and **RtfDataProvider**. 
+	* **`String`**: For **XamlDataProvider**, **HtmlDataProvider**, **TxtDataProvider**, and **RtfDataProvider**. 
 
 	| Property    | Data Provider    |
 	| ----------- | -----------------|

@@ -26,7 +26,7 @@ Telerik UI for WPF can be installed on any operating system that supports .NET 4
 * Windows XP SP2, SP3
 * Windows Server 2003 (excluding IA-64)
 
-Find a complete list with the Operating Systems supported by .NET in the MSDN documentation.
+You can find a complete list with the Operating Systems supported by .NET in the MSDN documentation.
 * [.NET 4.0 supported operating systems](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/8z6watww(v=vs.100))
 * [.NET 4.5 to 4.8 supported operating systems](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
 * [.NET Core supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md)

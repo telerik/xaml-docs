@@ -24,7 +24,25 @@ By default, when an item is matched by the text entered in an editable RadComboB
 	</telerik:RadComboBox>
 {{endregion}}
 
->important When the typed text does not match any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be set to **null**, and the **Text** property of the control will hold the typed text. When the control loses focus, the typed text won't be cleared.
+When the __UpdateSelectionOnLostFocus__ property is set to true, you have to take into account the following scenarios when the control loses focus or the __Enter__ key is pressed:
+
+* __When SelectedItem/SelectedValue property is null__: When the typed text matches any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be set to the first item.
+
+* __When SelectedItem/SelectedValue property is null__: When the typed text does not match any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be **null**, and the **Text** property of the control will hold the typed text.
+
+* __When SelectedItem/SelectedValue property is not null__ : When the typed text does not match any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be set to **null**, and the **Text** property of the control will be cleared.
+
+## UpdateSelectionOnLostFocus and UpdateTextOnLostFocus
+
+With the __2021 R1 LIB 322__ version of our controls, we have introduced the __UpdateTextOnLostFocus__ property to control whether the __Text__ property should be updated when the control loses focus. The default value of this property is __True__.
+
+When the __UpdateSelectionOnLostFocus__ property is set to true and __UpdateTextOnLostFocus__ property is set to false, you have to take into account the following scenarios when the control loses focus or the __Enter__ key is pressed:
+
+* __When SelectedItem/SelectedValue property is null__: When the typed text matches any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be set to the first item. The **Text** property will hold the text of the selected item.
+
+* __When SelectedItem/SelectedValue property is null__: When the typed text does not match any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be **null**, and the **Text** property of the control will hold the typed text.
+
+* __When SelectedItem/SelectedValue property is not null__: When the typed text does not match any of the items in the RadComboBox, the **SelectedItem/SelectedValue** property will be set to **null**, and the **Text** property of the control will hold the typed text.
 
 
 >You can have a look at the **Configurator** demo from the [{{ site.framework_name }} Controls Samples]({% if site.framework_name == 'Silverlight' %}https://demos.telerik.com/silverlight/#ComboBox/Configurator{% else %}https://demos.telerik.com/wpf{% endif %}) to get a better understanding of how the **UpdateSelectionOnLostFocus** property works.

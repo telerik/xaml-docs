@@ -191,6 +191,29 @@ Here is a sample snapshot:
 
 ![](images/RadRichTextBox_Features_DataProviders_01.png)
 
+## Settings
+
+The data provider classes expose access to the FormatProvider property that represents the format provider class internally used to import and export content. Through this property you can also change the import/export settings of the respective format provider.
+
+#### __[XAML] Example 6: Change import settings when using data provider__
+
+{{region radrichtextbox-features-data-providers_5}}
+
+    <telerik:HtmlDataProvider x:Name="HtmlProvider" 
+    	                        RichTextBox="{Binding ElementName=richTextBox}"
+    	                        Html="{Binding Body, Mode=TwoWay}" >
+        <telerik:HtmlDataProvider.FormatProvider>
+            <telerik:HtmlFormatProvider>
+                <telerik:HtmlFormatProvider.ImportSettings>
+                    <telerik:HtmlImportSettings UseHtmlHeadingStyles="False"/>
+                </telerik:HtmlFormatProvider.ImportSettings>
+            </telerik:HtmlFormatProvider>
+        </telerik:HtmlDataProvider.FormatProvider>
+    </telerik:HtmlDataProvider>
+    <telerik:RadRichTextBox x:Name="richTextBox" />
+{{endregion}}
+
+>Note that dependency properties in **data templates** might fall back to their default value unexpectedly according to the information provided on [MSDN](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms743230(v=vs.100)?redirectedfrom=MSDN). This might lead to inability to customize the format provider settings when using a data template. The solution is to use user control in the data template.
 
 ## Troubleshooting
 
@@ -204,7 +227,7 @@ To prevent this error, you will need to load the format provider without using M
 
 - Register the format provider with the **DocumentFormatProvidersManager**:
 
-#### __[C#] Example 6: Using DocumentFormatProvidersManager to manually load format provider__
+#### __[C#] Example 7: Using DocumentFormatProvidersManager to manually load format provider__
 {{region cs-radrichtextbox-features-data-providers_4}}
 	DocumentFormatProvidersManager.RegisterFormatProvider(new HtmlFormatProvider());
 {{endregion}}

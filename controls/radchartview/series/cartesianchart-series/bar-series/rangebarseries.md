@@ -55,7 +55,7 @@ You can use the definition from __Example 1__ to display a RangeBarSeries.
 * __HighBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the high value of the data point.
 * __LowBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the low value of the data point.
 * __LegendSettings__: A property of type ChartLegendSettings that gets or sets the legend setting.
-* __CombineMode__: A property of type ChartSeriesCombineMode that Gets or sets the combination mode to be used when data points are plotted. The combine mode is an enumeration and it allows the following values:
+* [CombineMode]({%slug radchartview-features-combinemode%}): A property of type ChartSeriesCombineMode that gets or sets the combination mode to be used when data points are plotted. The combine mode is an enumeration and it allows the following values:
 	* __None__: No combining. Each series is plotted independently.
 	* __Cluster__: When set all series are combined next to each other.
 	* __Stack__: When set all series form stacks.

@@ -26,7 +26,12 @@ Telerik UI for WPF can be installed on any operating system that supports .NET 4
 * Windows XP SP2, SP3
 * Windows Server 2003 (excluding IA-64)
 
->tip Find a complete list with the Operating Systems supported by .NET in the MSDN documentation. The following article shows OS [until .NET 4.0](http://msdn.microsoft.com/en-us/library/8z6watww%28v=vs.100%29.aspx). And here you can find information about the OS support [after .NET 4.5](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements). For .NET Core, see its [GitHub release notes](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md)
+You can find a complete list with the Operating Systems supported by .NET in the MSDN documentation.
+* [.NET 4.0 supported operating systems](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/8z6watww(v=vs.100))
+* [.NET 4.5 to 4.8 supported operating systems](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
+* [.NET Core supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md)
+* [.NET 5 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
+* [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md)
 
 ## Development Environment
 
@@ -42,8 +47,9 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 	* [.NET 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=48130)
 	* [.NET 4.7](https://dotnet.microsoft.com/download/dotnet-framework/net47)
 	* [.NET 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
-	* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Supported since R1 2020. Versions between R1 and R3 2019 support .NET Core 3.0.
-	* [.NET 5.0 Preview](https://dotnet.microsoft.com/download/dotnet-core/5.0). Supported since R2 2020.
+	* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+	* [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+	* [.NET 6.0 Preview 2](https://dotnet.microsoft.com/download/dotnet/6.0)
           
 * __Microsoft Expression Blend__ (optional)
           

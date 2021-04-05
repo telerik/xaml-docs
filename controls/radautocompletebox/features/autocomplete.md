@@ -95,22 +95,6 @@ The next screenshots show how the control looks in SuggestAppend mode:
 
 ![radautocompletebox-features-autocomplete-4](images/radautocompletebox-features-autocomplete-4.png)
 
-## Using AutocompleteBehavior.AutoCompleteTimeout
-
-The __AutocompleteBehavior__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is **1 second**.
-
-#### __[C#] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
-
-{{region cs-radautocompletebox-features-autocomplete_0}}
-	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
-
-{{region vb-radautocompletebox-features-autocomplete_1}}
-	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-{{endregion}}
-
 ## See Also
 
 * [Filtering Behavior]({%slug radautocompletebox-features-filteringbehavior%})

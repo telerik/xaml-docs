@@ -12,15 +12,7 @@ position: 1
 
 __RadListBox__ has full autocomplete support - while the control is focused, you can type certain keys and the listbox will select the relative match for the currently typed text.
 
-The purpose of this tutorial is to show you how to configure the autocomplete feature. The following sections are included:
-
-* [Using TextSearchMode property](#using-textsearchmode-property)
-
-* [Using TypedText property](#using-typedtext-property)
-
-* [Setting TextPath/TextBinding](#setting-textpathtextbinding)
-
-* [Disable autocomplete](#disable-autocomplete)
+The purpose of this tutorial is to show you how to configure the autocomplete feature.
 
 ## Using TextSearchMode property
 
@@ -81,4 +73,20 @@ By default the autocomplete feature of __RadListBox__ is always enabled. In orde
 
 {{region cs-radlistbox-features-autocomplete_1}}
 	radListBox.IsTextSearchEnabled = false;
+{{endregion}}
+
+## Using AutocompleteBehavior.AutoCompleteTimeout
+
+The __AutocompleteBehavior__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is **1 second**.
+
+#### __[C#] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
+
+{{region cs-radlistbox-features-autocomplete_3}}
+	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
+{{endregion}}
+
+#### __[VB.NET] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
+
+{{region vb-radlistbox-features-autocomplete_3}}
+	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
 {{endregion}}

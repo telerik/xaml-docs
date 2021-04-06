@@ -130,13 +130,13 @@ If you run the application now, you should get a structure like in **Figure 1**:
 	
 You can observe that you still can't drag-drop a row from the RadGridView to the RadDiagram. This is expected as the drag-drop functionality is still not implemented. 
 
-The next step is to make sure that the GridViewRows are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowCapturedDrag__ attached property to __True__ on every __GridViewRow__.
+The next step is to make sure that the GridViewRows are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowDrag__ attached property to __True__ on every __GridViewRow__.
 
-#### __[XAML] Example 4: Setting AllowCapturedDrag attached property__
+#### __[XAML] Example 4: Setting AllowDrag attached property__
 {{region drag-and-drop-from-radgridview-to-raddiagram_3}}	
 	<telerik:RadGridView.RowStyle>
 		<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
-			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+			<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
 		</Style>
 	</telerik:RadGridView.RowStyle>	
 {{endregion}}
@@ -173,12 +173,13 @@ To create a visual clue that the user has started dragging a row, we can create 
             }
         }
 
-        private static void OnGridViewRowDragInitialize(object sender, DragInitializeEventArgs args)
-        {
-            args.AllowedEffects = DragDropEffects.All;
-            args.DragVisualOffset = new Point(args.RelativeStartPoint.X, args.RelativeStartPoint.Y);
-            args.DragVisual = new TextBlock() { Margin = new Thickness(5),Background= Brushes.Bisque, Text = draggedRow.FirstName + " " + draggedRow.LastName };
-        }
+       private static void OnGridViewRowDragInitialize(object sender, DragInitializeEventArgs args)
+		{
+			args.AllowedEffects = DragDropEffects.All;
+			args.DragVisualOffset = new Point(args.RelativeStartPoint.X, args.RelativeStartPoint.Y);
+			var employee = (args.OriginalSource as FrameworkElement).DataContext as Employee;
+			args.DragVisual = new TextBlock() { Margin = new Thickness(5), Background = Brushes.Bisque, Text = employee.FirstName + " " + employee.LastName };
+		}
     }
 {{endregion}}
 
@@ -191,7 +192,7 @@ To create a visual clue that the user has started dragging a row, we can create 
 						 local:DragDropBehavior.IsEnabled="True">
 		<telerik:RadGridView.RowStyle>
 			<Style TargetType="telerik:GridViewRow">
-				<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
+				<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
 			</Style>
 		</telerik:RadGridView.RowStyle>
 	</telerik:RadGridView>

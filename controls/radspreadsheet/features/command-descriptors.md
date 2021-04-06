@@ -1,7 +1,7 @@
 ---
 title: Command Descriptors
 page_title: Command Descriptors
-description: Describes how you can override the default command descriptors and create custom commands 
+description: Describes how you can override the default command descriptors of RadSpreadsheet for WPF and create custom commands.
 slug: radspreadsheet-command-descriptors
 tags: command, descriptors
 published: True
@@ -25,7 +25,7 @@ The following section demonstrates how you can create a custom command along wit
 
 First you need to inherit the __WorksheetCommandDescriptors__ class. This will allow you to override the default commands properties and return your custom command. In this case, you will change the open file command with a custom one. If you want to override the key combination that triggers this command you should register the new command as well. 
 
-#### __C# Create a class that inherits WorksheetCommandDescriptors__
+#### __C# Example 1: Create a class that inherits WorksheetCommandDescriptors__
 
 {{region radspreadsheet-command-descriptors_0}}
 
@@ -67,15 +67,21 @@ First you need to inherit the __WorksheetCommandDescriptors__ class. This will a
 
 The second step is to set the newly created class to the active worksheet editor. This should be done each time the editor is changed, this is why you are going to use the __ActiveSheetEditorChanged__ event to set the new descriptors. 
 
-#### __C# Change the default command descriptors__
+#### __C# Example 2: Change the default command descriptors__
 
 {{region radspreadsheet-command-descriptors_1}}
 
     private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
     {
         RadWorksheetEditor editor = (RadWorksheetEditor)this.radSpreadsheet.ActiveSheetEditor;
-        editor.RadWorksheetCommandDescriptors = new CustomDescriptors(editor);
+        if (editor != null)
+        {
+            editor.RadWorksheetCommandDescriptors = new CustomDescriptors(editor);
+        }
+
     }
+
+
 
 {{endregion}}
 

@@ -18,7 +18,7 @@ This article will describe the [VirtualizingWrapPanel](https://docs.telerik.com/
 * __ItemWidth__: Gets or sets a value that specifies the Width of all items that are contained within a VirtualizingWrapPanel.
 * __ScrollStep__: Gets or sets a value for the amount that will be scrolled when using the mouse wheel or the scrollbar buttons (Not supported when grouping is enabled).
 
-> Scrolling with the __Page up__ and __Page down__ keys is not supported when grouping is enabled. 
+> Scrolling with the __Page up__ and __Page down__ keys and navigating with the __Left__ and __Right__ arrow keys is not supported when grouping is enabled. 
 
 The VirtualizingWrapPanel also suports the following attached properties from the [VirtualizingPanel](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.virtualizingpanel?view=netframework-4.8) class for __.Net 4.5__ and above:
 

@@ -149,7 +149,8 @@ controls/radnotifyicon,
 controls/radcallout,
 controls/radentityframeworkcoredatasource,
 controls/radslider/features/multiple-thumbs,
-getting-started/telerik-application-lifecycle]
+getting-started/telerik-application-lifecycle,
+controls/radbarcodenew]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

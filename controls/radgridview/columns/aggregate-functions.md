@@ -14,21 +14,27 @@ You can display aggregated information for the data in a column by adding aggreg
 
 ## Available Aggregate Functions
 
-* __AverageFunction__: Returns the **average** of the values in the column. 
+There are two main types of aggregate functions available which in turn serve as the base for the concrete implementations.
 
-* __CountFunction__: Returns the **number of all items** in the column. 
+* **EnumerableAggregateFunction**: Represents an AggregateFunction that uses aggregate extension methods provided in [Enumerable](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable).
 
-* __FirstFunction__: Returns the **first element** in the column according to the current sorting. 
+	* __CountFunction__: Returns the **number of all items** in the column.
 
-* __LastFunction__: Returns the **last element** in the column according to the current sorting. 
+	* __FirstFunction__: Returns the **first element** in the column according to the current sorting.
 
-* __MaxFunction__: Returns the **maximum** value of the cell values in the column. 
+	* __LastFunction__: Returns the **last element** in the column according to the current sorting.
 
-* __MinFunction__: Returns the **minimum** value of the cell values in the column. 
+* **EnumerableSelectorAggregateFunction**: Represents an AggregateFunction that uses aggregate extension methods provided in [Enumerable](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable) and uses its **SourceField** property as a member selector. If the SourceField property is not explicitly set, then the property specified for the **DataMemberBinding** of the column will be used.
 
-* __SumFunction__: Returns the **sum** of all cell values in the column. 
+	* __AverageFunction__: Returns the **average** of the values in the column.
 
->tipYou can also create a generic aggregate function to define some custom aggregate expressions. {% if site.site_name == 'WPF' %}For example implementations, check out the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/) and the [CustomAggregateFunctionEnumerableProperty](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomAggregateFunctionEnumerableProperty) SDK example{% endif %}{% if site.site_name == 'Silverlight' %}An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% endif %}.
+	* __MaxFunction__: Returns the **maximum** value of the cell values in the column.
+
+	* __MinFunction__: Returns the **minimum** value of the cell values in the column.
+
+	* __SumFunction__: Returns the **sum** of all cell values in the column.
+
+>tipYou can also create a generic aggregate function to define some custom aggregate expressions by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ or **EnumerableSelectorAggregateFunction** class. {% if site.site_name == 'WPF' %}For example implementations, check out the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/) and the [CustomAggregateFunctionEnumerableProperty](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomAggregateFunctionEnumerableProperty) SDK example{% endif %}{% if site.site_name == 'Silverlight' %}An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% endif %}.
 
 ## Adding an Aggregate Function
 

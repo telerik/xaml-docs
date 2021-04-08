@@ -21,6 +21,8 @@ The RadNotifyIcon exposes the following properties for controlling the look of t
 * __BalloonIconSource__: This property provides an alternative way of setting an icon by using an __ImageSource__ or a __string__ path pointing to the location of your icon.
 
 > If the __BalloonIconSource__ property is set, it should point to an __.ico__ file. 
+<!-- -->
+>tip Use an .ico file with bigger dimensions (Width/Height) as Windows can scale it down, however it will not be scaled up, if it is less than the default size. 
 
 #### __[XAML] Example 1: Setting up the RadNotifyIcon__
 {{region xaml-radnotifyicon-balloon-notifications-0}}

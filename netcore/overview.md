@@ -10,7 +10,7 @@ position: 0
 
 # .NET Core Support Overview 
 
-__Telerik UI for WPF__ comes with __.NET Core__ support. There is a set of dlls built against the .NET Core framework which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrаting to .NET Core]({%slug netcore-support-migration%}) article.
+__Telerik UI for WPF__ comes with __.NET Core__ support. There is a set of dlls built against the .NET Core framework which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
 ## Requirements
 

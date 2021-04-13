@@ -15,6 +15,8 @@ This article shows how to configure a Telerik project created with the Progress 
 
 You can access the Project Configuration Wizard through the Telerik menu when you need to configure your Telerik WPF application:
 
+> This wizard is currently not available for .NETCORE projects.
+
 ![VSExtentions WPF Overview Menu Configure](images/VSExtentions_WPF_OverviewMenuConfigure.png)
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert. 

@@ -20,23 +20,30 @@ When the __CardLayout__ property is set to __Rows__ the __MajorLength__ is appli
 When the __CardLayout__ is __Columns__ the __MajorLength__ is applied to the card's __height__ and the __MinorLength__ to the card's __width__. 
 
 #### Figure 1: MajorLength and MinorLength examples
-![](images/radcardview-appearance-customizing-cards-0.png)
+![MajorLength and MinorLength examples](images/radcardview-appearance-customizing-cards-0.png)
 
 Additionally, you can set the __CollapsedLength__ property in order to change the size of the cards while in collapsed state.
 
 #### __[XAML] Example 1: Setting cards sizes__
-{{region radcardview-appearance-customizing-cards-0}}
+{{region xaml-radcardview-appearance-customizing-cards-0}}
     <telerik:RadCardView MinorLength="200"
                          MajorLength="210"
 					     CollapsedLength="150"/>
+{{endregion}}
+
+You can also set the **CardMargin** property to control the margin around each card. The property is of type **Thickness**.
+
+#### __[XAML] Example 2: Setting CardMargin__
+{{region xaml-radcardview-appearance-customizing-cards-1}}
+    <telerik:RadCardView CardMargin="5 10 0 5"/>
 {{endregion}}
 
 ## Card Header
 
 The header content of a card is determined by the __CardHeaderBinding__ property. Read the [Data Binding]({%slug radcardview-populating-with-data-data-binding%}) article to see how to use this. Additionally, the header UI can be customized using the __CardHeaderTemplate__ property of RadCardView.
 
-#### __[XAML] Example 2: Setting card header template__
-{{region radcardview-appearance-customizing-cards-1}}
+#### __[XAML] Example 3: Setting card header template__
+{{region xaml-radcardview-appearance-customizing-cards-2}}
     <telerik:RadCardView CardHeaderBinding="{Binding MyHeaderProperty}">
 		<telerik:RadCardView.CardHeaderTemplate>
 			<DataTemplate>
@@ -47,7 +54,7 @@ The header content of a card is determined by the __CardHeaderBinding__ property
 {{endregion}}
 
 #### Figure 2: Custom card header
-![](images/radcardview-appearance-customizing-cards-1.png)
+![Custom card header](images/radcardview-appearance-customizing-cards-1.png)
 
 >tip The data context in the __CardHeaderTemplate__ comes from the property bound to the __CardHeaderBinding__.
 
@@ -55,8 +62,8 @@ The header content of a card is determined by the __CardHeaderBinding__ property
 
 To toggle the visibility of a data field, set the __IsVisible__ property of the associated [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}).
 
-#### __[XAML] Example 3: Setting CardDataFieldDescriptor IsVisible property__
-{{region radcardview-appearance-customizing-cards-2}}
+#### __[XAML] Example 4: Setting CardDataFieldDescriptor IsVisible property__
+{{region xaml-radcardview-appearance-customizing-cards-3}}
    	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" IsVisible="False"/>
 	</telerik:RadCardView.DataFieldDescriptors>
@@ -64,8 +71,8 @@ To toggle the visibility of a data field, set the __IsVisible__ property of the 
 
 To customize the field that shows the value, set the __EditorTemplate__ and __ReadOnlyTemplate__ of the CardDataFieldDescriptor. The __EditorTemplate__ property changes the editor element that is displayed when the data field enters edit mode. The __ReadOnlyTemplate__ changes the element that is displayed in the normal state of the data field.
 
-#### __[XAML] Example 4: Setting EditorTemplate and ReadOnlyTemplate__
-{{region radcardview-appearance-customizing-cards-3}}
+#### __[XAML] Example 5: Setting EditorTemplate and ReadOnlyTemplate__
+{{region xaml-radcardview-appearance-customizing-cards-4}}
 	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Number}">
 			<telerik:CardDataFieldDescriptor.ReadOnlyTemplate>
@@ -85,7 +92,7 @@ To customize the field that shows the value, set the __EditorTemplate__ and __Re
 {{endregion}}
 
 #### Figure 3: Custom read only and editor templates for one of the data fields
-![](images/radcardview-appearance-customizing-cards-2.png)
+![Custom read only and editor templates for one of the data fields](images/radcardview-appearance-customizing-cards-2.png)
 
 ## See Also  
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})

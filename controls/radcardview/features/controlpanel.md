@@ -10,11 +10,11 @@ position: 9
 
 # Control Panel
 
-The control panel of RadGridView allows you to include additional settings UI next to the [Data Field Descriptors Button]({%slug radcardview-visual-structure%}).
+The control panel of RadCardView allows you to include additional settings UI next to the [Data Field Descriptors Button]({%slug radcardview-visual-structure%}).
 
-The feature is useful in case you want to include custom settings panel and implement the corresponding actions.
+The feature is useful in case you want to include a custom settings panel and implement the corresponding actions.
 
-To enable the control panel, use the __ControlPanelItems__ property of RadCardView. This allows you to define __CardViewControlPanelItem__ elements, which are proxies that holds information about the corresponding visual element that will be created.
+To enable the control panel, use the __ControlPanelItems__ property of RadCardView. This allows you to define __CardViewControlPanelItem__ elements, which are proxies that hold information about the corresponding visual element that will be created.
 
 The following example is an extended version of the sample from the [Getting Started]({%slug radcardview-getting-started%}) article.
 
@@ -62,7 +62,7 @@ To set the content of the button, use the __ButtonContent__ property of CardView
 
 To set the drop down content of the button, use the __Content__ property of CardViewControlPanelItem.
 
-Both Content and ButtonContent are of type __object__ where you can use a business model or directly an UI element as in Example1. In addition to those properties, you can set the corresponding __ContentTemplate__ and __ButtonContentTemplate__ properties of CardViewControlPanelItem.
+Both Content and ButtonContent are of type __object__ where you can use a business model or directly an UI element as in Example 1. In addition to those properties, you can set the corresponding __ContentTemplate__ and __ButtonContentTemplate__ properties of CardViewControlPanelItem.
 
 ## Using Data Templates
 

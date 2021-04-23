@@ -277,9 +277,9 @@ The default font used in the theme is **Segoe UI**.
 
 >important For complex scenarios we strongly recommend setting the **FontSize** properties **only before the application is initialized**. 
 
-__Example 1__ shows the default font sizes and families.
+__Example 2__ shows the default font sizes and families.
 
-#### __[C#] Example 1: Default FontSize__
+#### __[C#] Example 2: Default FontSize__
 {{region cs-styling-appearance-visualstudio2019-theme-1}}
 	VisualStudio2019Palette.Palette.FontSizeXS = 10;
 	VisualStudio2019Palette.Palette.FontSizeS = 11;
@@ -288,9 +288,9 @@ __Example 1__ shows the default font sizes and families.
 	VisualStudio2019Palette.Palette.FontSizeXL = 20;
 {{endregion}}
 
-__Example 2__ shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from 12 to 16.
+__Example 3__ shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from 12 to 16.
 
-#### __[C#] Example 2: Changing the theme's FontSize and FontFamily__
+#### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
 {{region cs-styling-appearance-visualstudio2019-theme-2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -299,7 +299,7 @@ __Example 2__ shows how to change the default FontFamily from "Segoe UI" to "Cal
 	}
 {{endregion}}
 
-#### __Figure 2: Setting FontSize and FontFamily__
+#### __Figure 3: Setting FontSize and FontFamily__
 ![RadCalendar with modified FontSize and FontFamiliy](images/visualstudio2019-theme-calendar-font-change.png)	
 
 ## Glyphs
@@ -312,9 +312,9 @@ The **VisualStudio2019 Theme** also uses the **Telerik Web UI** [font glyphs](({
 
 The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the **R3 2019** release is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
-**Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
+**Example 4** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
 
-#### __[XAML] Example 3: Set RadToggleButton's visual appearance through the ThemeHelper class__
+#### __[XAML] Example 4: Set RadToggleButton's visual appearance through the ThemeHelper class__
 {{region xaml-styling-appearance-visualstudio2019-theme-3}}
 	<telerik:RadToggleButton Content="RadButton" 
 							 Margin="10"
@@ -324,20 +324,20 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes wit
 							 helpers:ThemeHelper.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
 {{endregion}}
 
-#### **Figure 3: Appearance of the RadToggleButton in the different states**  
+#### **Figure 4: Appearance of the RadToggleButton in the different states**  
 ![RadToggleButton States](images/visualstudio2019-theme-togglebutton-states.png)
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the VisualStudio2019Palette. The default values are **0.3** and **0.6** respectively. 
 
-#### __[C#] Example 4: Changing the opacity__		
+#### __[C#] Example 5: Changing the opacity__		
 {{region cs-styling-appearance-visualstudio2019-theme-4}}
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5;
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 4: Changing the opacity__		
+#### __[VB.NET] Example 5: Changing the opacity__		
 {{region vb-styling-appearance-visualstudio2019-theme-4}}
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5

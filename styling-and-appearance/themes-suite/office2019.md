@@ -363,7 +363,7 @@ The Office2019 theme comes with three color variations, inspired by the colors u
 {{endregion}}
 
 #### __Figure 2: Office2019 theme color variations__
-![Office2019 theme colors represented in RadOutlookBar](images/Office2019-theme-variations.PNG)
+![Office2019 theme colors represented in RadTaskBoard](images/Office2019-theme-variations.PNG)
 
 >important All variations of the theme are designed with a specific background in mind and it is recommended to use such a background in your application when working with it - it is represented by the theme palette's BaseBackgroundBrush.
 

@@ -363,7 +363,7 @@ The Office2019 theme comes with three color variations, inspired by the colors u
 {{endregion}}
 
 #### __Figure 2: Office2019 theme color variations__
-![Office2019 theme colors represented in RadOutlookBar](images/Office2019-theme-variations.PNG)
+![Office2019 theme colors represented in RadTaskBoard](images/Office2019-theme-variations.PNG)
 
 >important All variations of the theme are designed with a specific background in mind and it is recommended to use such a background in your application when working with it - it is represented by the theme palette's BaseBackgroundBrush.
 
@@ -411,9 +411,9 @@ The **Office2019 Theme** also uses the **Telerik Web UI** [font glyphs](({%slug 
 
 The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the **R3 2019** release is used in the Office2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
-**Example 3** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
+**Example 4** shows a **RadToggleButton** control with modified brushes for its different states through the **ThemeHelper** class:
 
-#### __[XAML] Example 3: Set RadToggleButton's visual appearance through the ThemeHelper class__
+#### __[XAML] Example 4: Set RadToggleButton's visual appearance through the ThemeHelper class__
 {{region xaml-styling-appearance-Office2019-theme-3}}
 	<telerik:RadToggleButton Content="RadToggleButton" 
 							 Margin="10"
@@ -423,14 +423,14 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes wit
 							 helpers:ThemeHelper.CheckedBrush="{telerik:Office2019Resource ResourceKey=AccentMainBrush}"/>
 {{endregion}}
 
-#### **Figure 3: Appearance of the RadToggleButton in the different states**  
+#### **Figure 4: Appearance of the RadToggleButton in the different states**  
 ![RadToggleButton States](images/Office2019-theme-togglebutton-states.png)
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the Office2019Palette. The default values are **0.3** and **0.6** respectively. 
 
-#### __[C#] Example 4: Changing the opacity__		
+#### __[C#] Example 5: Changing the opacity__		
 {{region cs-styling-appearance-Office2019-theme-4}}
 	Office2019Palette.Palette.DisabledOpacity = 0.5;
 	Office2019Palette.Palette.ReadOnlyOpacity = 0.5;
@@ -442,7 +442,7 @@ The theme has a few built-in [color variations](#theme-variation-changing) - Lig
 
 To achieve this, first ensure that the Light [variation](#theme-variation-changing) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
 
-#### __[C#] Example 5: Applying palette colors__		
+#### __[C#] Example 6: Applying palette colors__		
 {{region cs-styling-appearance-Office2019-theme-5}}
 	Office2019Palette.Palette.ButtonBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
 	Office2019Palette.Palette.BaseBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");

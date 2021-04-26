@@ -1,11 +1,11 @@
 ---
-title: Creating a ViewPort snapshot in RadPdfViewer
-description: Create a snapshot of the visible part of a PDF document in the RadPdfViewer.
+title: Creating a Viewport snapshot in RadPdfViewer
+description: Create a snapshot of the visible part of a PDF document in RadPdfViewer for WPF.
 type: how-to
-page_title: How to create a ViewPort snapshot in RadPdfViewer
+page_title: How to create a Viewport snapshot in RadPdfViewer
 slug: kb-pdfviewer-viewport-snapshot
 position: 0
-tags: pdf, pdfviewer, viewport, snapshot
+tags: pdf, pdfviewer, viewport, snapshot, image
 ticketid: 1512091
 res_type: kb
 ---
@@ -27,11 +27,11 @@ res_type: kb
 
 ## Description
 
-How to create a snapshot of the visible part (ViewPort) of a **PDF** document loaded in the **RadPdfViewer**.
+How to create a snapshot of the visible part (viewport) of a **PDF** document loaded in the **RadPdfViewer**.
 
 ## Solution
 
-The first step is to create a custom [IUILayer](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.layers.iuilayer), which will help us to obtain the ViewPort and store it in the _VisiblePagesToViewport_ dictionary.
+The first step is to create a custom [IUILayer](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.layers.iuilayer), which will help us to obtain the Viewport and store it in the _VisiblePagesToViewport_ dictionary.
 
 #### __[C#] Example 1: Creating the custom IUILayer__
 {{region kb-pdfviewer-viewport-snapshot-0}}
@@ -122,7 +122,7 @@ Using the ExtensibilityManager`s [RegisterLayersBuilder()](https://docs.telerik.
 		
 {{endregion}}
 
-Having the _VisiblePagesToViewport_ already, we can iterate its pages and using the [ThumbnailFactory](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.thumbnailfactory) class to export the snapshots in the desired image format (in this example to TIFF images).
+Now when we have the _VisiblePagesToViewport_, we can iterate its pages and export the snapshots to the desired image format using the [ThumbnailFactory](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.thumbnailfactory) class. For the purpose of the example, we will generate a TIFF image.
 
 #### __[C#] Example 4: Exporting the images using the ThumbnailFactory__
 {{region kb-pdfviewer-viewport-snapshot-3}}

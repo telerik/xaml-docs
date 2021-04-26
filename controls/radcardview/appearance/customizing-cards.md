@@ -87,6 +87,98 @@ To customize the field that shows the value, set the __EditorTemplate__ and __Re
 #### Figure 3: Custom read only and editor templates for one of the data fields
 ![](images/radcardview-appearance-customizing-cards-2.png)
 
+## Card Contents
+
+The default visual content of the cards can be replaced using the __CardReadOnlyTemplate__ and __CardEditTemplate__ of RadCardView. 
+
+__CardReadOnlyTemplate__ allows you to define the content while the card is in normal state.
+
+__CardEditTemplate__ allows you to define the content while the card is in edit state.
+
+To __enter edit state__, execute the __RadCardViewCommands.BeginEdit__ command. This affects the currently selected card.
+
+To __commit or cancel__ the edit, call execute  __RadCardViewCommands.CommitEdit__ or  __RadCardViewCommands.CancelEdit__ commands.
+
+Read more about RadCardView's commanding support in the [Commands]({%slug radcardview-features-commands%}) article.
+
+#### __[XAML] Example 5: Defining CardReadOnlyTemplate and CardEditTemplate__
+{{region radcardview-appearance-customizing-cards-4}}
+	<telerik:RadCardView x:Name="cardView"  CardHeaderBinding="{Binding Header}" MinorLength="150">
+		<telerik:RadCardView.CardReadOnlyTemplate>
+			<DataTemplate>
+				<Border Background="#7A7574">
+					<Grid VerticalAlignment="Center">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+						<telerik:RadGlyph Glyph="&#xe801;" Foreground="White" FontSize="32"/>
+						<StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" >
+							<TextBlock Text="{Binding Name}" Foreground="White" VerticalAlignment="Center"/>                               
+							<telerik:RadGlyph Glyph="&#xe10b;" Foreground="White" Cursor="Hand"
+											  Margin="4 0 0 0" MouseLeftButtonDown="OnCardBeginEdit"
+											  IsEnabled="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadCardViewItem}, Path=IsSelected}"/>
+						</StackPanel>
+					</Grid>
+				</Border>
+			</DataTemplate>
+		</telerik:RadCardView.CardReadOnlyTemplate>
+		<telerik:RadCardView.CardEditTemplate>
+			<DataTemplate>
+				<Border Background="#7A7574">
+					<Grid VerticalAlignment="Center" HorizontalAlignment="Center"  TextElement.Foreground="White">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="Header: " VerticalAlignment="Center"/>
+						<TextBox Text="{Binding Header, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5 0 0 0" Padding="5 3 5 3" Grid.Column="1"/>
+						<TextBlock Text="Name: " VerticalAlignment="Center"  Grid.Row="1" />
+						<TextBox Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5 2 0 0" Padding="5 3 5 3" Grid.Row="1" Grid.Column="1"/>
+						<TextBlock Text="Number: " VerticalAlignment="Center"  Grid.Row="2" />
+						<TextBox Text="{Binding Number, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5 2 0 0" Padding="5 3 5 3" Grid.Row="2" Grid.Column="1"/>
+						<telerik:RadGlyph Glyph="&#xe118;" Foreground="White" Cursor="Hand" Grid.Row="3"
+										  Grid.ColumnSpan="2" HorizontalAlignment="Right"
+										  Margin="4 4 0 0" MouseLeftButtonDown="OnCardCommitEdit"/>
+					</Grid>
+				</Border>
+			</DataTemplate>
+		</telerik:RadCardView.CardEditTemplate>
+		</telerik:RadCardView>
+{{endregion}}
+
+#### __[XAML] Example 6: Execute RadCardView commands__
+{{region radcardview-appearance-customizing-cards-5}}
+	private void OnCardBeginEdit(object sender, MouseButtonEventArgs e)
+	{
+		// start editing
+		this.cardView.PendingCommands.Add(Telerik.Windows.Controls.RadCardViewCommands.BeginEdit);
+		this.cardView.ExecutePendingCommand();
+	}
+
+	private void OnCardCommitEdit(object sender, MouseButtonEventArgs e)
+	{
+		// commit edit
+		this.cardView.PendingCommands.Add(Telerik.Windows.Controls.RadCardViewCommands.CommitEdit);
+		this.cardView.ExecutePendingCommand();
+	}
+{{endregion}}
+
+#### Figure 4: Custom card contents in read-only state
+![](images/radcardview-appearance-customizing-cards-3.png)
+
+
+#### Figure 5: Custom card contents in edit state
+![](images/radcardview-appearance-customizing-cards-4.png)
+
+> Always use both CardReadOnlyTemplate and CardEditTemplate properties together. 
+
 ## See Also  
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
 * [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) 

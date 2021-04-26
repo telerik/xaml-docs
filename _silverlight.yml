@@ -150,7 +150,8 @@ controls/radcallout,
 controls/radentityframeworkcoredatasource,
 controls/radslider/features/multiple-thumbs,
 controls/radcardview,
-getting-started/telerik-application-lifecycle]
+getting-started/telerik-application-lifecycle,
+testing]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

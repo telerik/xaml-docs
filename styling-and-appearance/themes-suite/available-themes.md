@@ -31,10 +31,10 @@ table th:nth-of-type(4) {
 Theme name | Appearance | Theme Palette | Variations 
 ---|---|---|---{% if site.site_name == 'WPF' %}
 **[Office 2019]({%slug common-styling-appearance-Office2019-theme%})** | ![Visual Studio 2019](images/Office2019Theme.png) | Yes | Light, Gray, Dark
-**[Visual Studio 2019]({%slug common-styling-appearance-visualstudio2019-theme%})** | ![Visual Studio 2019](images/VisualStudio2019Theme.png) | Yes | Light
+**[Visual Studio 2019]({%slug common-styling-appearance-visualstudio2019-theme%})** | ![Visual Studio 2019](images/VisualStudio2019Theme.png) | Yes | Blue, Dark
 **[Crystal]({%slug common-styling-appearance-crystal-theme%})** | ![Crystal](images/CrystalTheme.png) | Yes | Light, Dark
 **[Fluent]({%slug common-styling-appearance-fluent-theme%})** | ![Fluent](images/FluentTheme.png) | Yes | Light, Dark
-**[Material]({%slug common-styling-appearance-material-theme%})** | ![Material](images/MaterialTheme.png) | Yes | -
+**[Material]({%slug common-styling-appearance-material-theme%})** | ![Material](images/MaterialTheme.png) | Yes | Light, Dark
 **[Office 2016 Touch]({%slug common-styling-appearance-office2016touch-theme%})** | ![Office 2016 Touch](images/Office2016TouchTheme.png) | Yes | -
 **[Office 2016]({%slug common-styling-appearance-office2016-theme%})** | ![Office 2016](images/Office2016Theme.png) | Yes | -
 **[Green]({%slug common-styling-appearance-green-theme%})** | ![Green](images/GreenTheme.png)| Yes | Light, Dark{% endif %}

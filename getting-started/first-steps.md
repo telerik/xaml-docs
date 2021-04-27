@@ -44,8 +44,6 @@ The Visual Studio Extensions can be accessed through the Telerik | Telerik UI fo
 	#### __Figure 3: Creating new Telerik application__	
 	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)
 
-	>You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application.
-
 3. Choose the application template. The options are a blank template or one of the MS Office inspired application templates. Choose the Blank option.
 	
 	#### __Figure 4: Choosing an application template__

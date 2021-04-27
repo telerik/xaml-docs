@@ -39,7 +39,7 @@ Let's define the following class which will be responsible for classifying the w
 
         private static readonly string[] Fruits = new string[]
         {
-            "apple", "banana",  "cherry"
+            "apple", "banana", "blue_berry", "cherry"
         };
 
         private static readonly Dictionary<string, ClassificationType> WordsToClassificationType = new Dictionary<string, ClassificationType>();
@@ -91,10 +91,54 @@ Let's define the following class which will be responsible for classifying the w
 
             return base.TryGetClassificationType(word, out classificationType);
         }
+
+        protected override IList<string> SplitIntoWords(string value)
+        {
+            List<string> words = new List<string>();
+            string word;
+            int lastCharType = -1;
+            int startIndex = 0;
+            for (int i = 0; i < value.Length; i++)
+            {
+                int charType = GetCharType(value[i]);
+                if (charType != lastCharType)
+                {
+                    word = value.Substring(startIndex, i - startIndex);
+                    words.Add(word);
+                    startIndex = i;
+                    lastCharType = charType;
+                }
+            }
+
+            word = value.Substring(startIndex, value.Length - startIndex);
+            words.Add(word);
+
+            return words;
+        }
+
+        internal static int GetCharType(char c)
+        {
+            if (c == '#' || c == '_')
+            {
+                return 0;
+            }
+
+            if (char.IsWhiteSpace(c))
+            {
+                return 1;
+            }
+
+            if (char.IsPunctuation(c) || char.IsSymbol(c))
+            {
+                return 2;
+            }
+
+            return 0;
+        }
     }
 {{endregion}}
 
-The code above defines custom arrays of words which are then assigned a **Keyword**, **Comment**, **Operator** or the custom **Fruits** classification type. In addition, in the **TryGetClassificationType** method override we assign the **NumberLiteral** classification type to any word that can be parsed to an integer.
+The code above defines custom arrays of words which are then assigned a **Keyword**, **Comment**, **Operator** or the custom **Fruits** classification type. In addition, in the **TryGetClassificationType** method override we assign the **NumberLiteral** classification type to any word that can be parsed to an integer. Lastly, we override the **SplitIntoWords** method to correctly highlight `blue_berry` as by default it will be split by the **underscore (_)** character and not be matched as a classification type.
 
 We can then register the custom tagger in RadSyntaxEditor's **TaggersRegistry** just as we would with any other tagger. We also add custom **TextFormatDefinitions** with specific foregrounds for the **NumberLiteral**, **Operator** and the custom **FruitsClassificationType** which we created earlier.
 

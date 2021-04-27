@@ -98,7 +98,7 @@ The __Backstage__ control derives from the __RadTabControl__. That fact allows y
 		#### __Figure 3: BackstagePosition property set to Office2013__
 		![](images/RadRibbonView_Backstage_BackstagePosition_Office2013.PNG)
 
-	>Keep in mind that if the __BackstagePosition__ property is set to __Office2013__ the close  button of the backstage will be displayed only if one of the following themes is applied: {% if site.site_name == 'WPF' %}[Green]({%slug common-styling-appearance-green-theme%}),{% endif %}[Office2013]({%slug common-styling-appearance-office2013-theme%}),[VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme %})
+	>The recommended __BackstagePosition__ for the themes from OfficeBlack to Windows8Touch including from the [Available Themes]({%slug common-styling-appearance-available-themes%}) list is the __Office2010__.  If the property is set to __Office2013__ for any of these themes, the close button of the backstage will __not__ be displayed.
  
 ## BackstageItem Properties
 

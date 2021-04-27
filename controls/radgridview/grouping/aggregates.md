@@ -12,23 +12,27 @@ position: 4
 
 When you are using [programmatic grouping]({%slug gridview-programmatic-grouping%}), you can add aggregate functions to the group rows. These functions allow you to display information about the data in the group such as first item, last item, count of items etc. 
 
-The available functions are:
+There are two main types of aggregate functions available which in turn serve as the base for the concrete implementations.
 
-* __AverageFunction__: Returns the average of the values in a group. 
+* **EnumerableAggregateFunction**: Represents an AggregateFunction that uses aggregate extension methods provided in [Enumerable](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable).
 
-* __CountFunction__: Returns the number of all items in a group. 
+	* __CountFunction__: Returns the **number of all items** in the column.
 
-* __FirstFunction__: Returns first element from a group according to the current sorting. 
+	* __FirstFunction__: Returns the **first element** in the column according to the current sorting.
 
-* __LastFunction__: Returns last element from a group according to the current sorting. 
+	* __LastFunction__: Returns the **last element** in the column according to the current sorting.
 
-* __MaxFunction__: Returns the Max of the values in a group. 
+* **EnumerableSelectorAggregateFunction**: Represents an AggregateFunction that uses aggregate extension methods provided in [Enumerable](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable) and uses its **SourceField** property as a member selector. If the SourceField property is not explicitly set, then the property specified for the **DataMemberBinding** of the column will be used.
 
-* __MinFunction__: Returns the Min of the values in a group. 
+	* __AverageFunction__: Returns the **average** of the values in the column.
 
-* __SumFunction__: Returns the Sum of all values for the group.
+	* __MaxFunction__: Returns the **maximum** value of the cell values in the column.
 
->tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ class. An example can be found {% if site.site_name == 'Silverlight' %} [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% else %}in the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/){% endif %}.
+	* __MinFunction__: Returns the **minimum** value of the cell values in the column.
+
+	* __SumFunction__: Returns the **sum** of all cell values in the column.
+
+>tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ or **EnumerableSelectorAggregateFunction** class. An example can be found {% if site.site_name == 'Silverlight' %} [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% else %}in the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/){% endif %}.
 
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 

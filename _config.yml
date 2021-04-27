@@ -1082,6 +1082,8 @@ navigation:
         position: 4
     "styling-and-appearance/how-to":
         title: "How To"
+    "testing/justmock":
+        title: "JustMock"
     "getting-started":
         title: "Getting Started"
         position: 1
@@ -1106,9 +1108,12 @@ navigation:
     "cloud-integration":
         title: "Cloud Integration"
         position: 9
+    "testing":
+        title: "Testing"
+        position: 10
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 10   
+        position: 11     
 ## Common End
 
 ## Api Reference Start

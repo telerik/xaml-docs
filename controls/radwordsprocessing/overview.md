@@ -63,7 +63,7 @@ The model of **RadWordsProcessing** includes:
 
 * [**RadFlowDocumentEditor**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/editing/radflowdocumenteditor): It is intended to simplify the process of creating and modifying a document and achieve the same results as you would using the style properties and child collections of the document elements with less amount of code.
 
-* Formatting:
+* **Formatting**:
 
 	In addition to the styles, RadWordsProcessing provides support for different types of formatting so you can format any of the document elements:
 	* **Character formatting**: Font size, font color, font name, bold, italic, underline, etc.
@@ -76,7 +76,9 @@ The model of **RadWordsProcessing** includes:
 
 The library comes with support for the following document formats:
 
-* [**DOCX**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/formats-and-conversion/docx/docxformatprovider)
+* [**DOC & DOT**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/formats-and-conversion/word-file-formats/doc/docformatprovider) (import only)
+
+* [**DOCX**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/formats-and-conversion/word-file-formats/docx/docxformatprovider)
 
 * [**RTF**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/formats-and-conversion/rtf/rtfformatprovider)
 

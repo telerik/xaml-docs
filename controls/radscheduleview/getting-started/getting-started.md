@@ -174,11 +174,12 @@ __Example 5__ demonstrates how you can add a DayViewDefinition to the __RadSched
 	</telerik:RadScheduleView>
 {{endregion}}
 
->You can add more than one ViewDefinition. There are four view definitions available:
+>You can add more than one ViewDefinition. There are five view definitions available:
 >* DayViewDefinition
 >* WeekViewDefinition
 >* TimelineViewDefinition
 >* MonthViewDefinition
+>* AgendaViewDefinition
 > 
 >For additional details, see the [ViewDefinitions Overview]({%slug radscheduleview-viewdefinitions-overview%}) topic.
 

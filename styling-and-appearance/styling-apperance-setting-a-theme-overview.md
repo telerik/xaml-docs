@@ -156,12 +156,15 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
+> Switching the global theme at runtime by setting `StyleManager.ApplicationTheme` is not supported. To enable this feature, use the [NoXaml dlls and Implicit Styles](#setting-a-theme-using-implicit-styles) theming. Read more in the [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%}) article.
+
 ## Does a Theme Affect All {{ site.framework_name }} Controls?
 
 All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
 
 ## See Also  
 * [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
+* [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})

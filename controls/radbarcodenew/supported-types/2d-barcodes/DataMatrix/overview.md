@@ -5,7 +5,7 @@ description: Check our &quot;Overview&quot; documentation article for Telerik Ba
 position: 0
 published: True
 slug: barcode-data-matrix-overview
-permalink: /controls/radbarcode/supported-types/2d-barcodes/DataMatrix/datamatrix-overview
+permalink: /controls/radbarcode/supported-types/2d-barcodes/DataMatrix/overview
 ---
 
 # Overview

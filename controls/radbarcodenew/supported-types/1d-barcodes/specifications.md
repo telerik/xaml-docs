@@ -4,7 +4,7 @@ page_title: WPF Barcode Documentation | 1D Barcodes Specifications
 description: Check our &quot;Specifications&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 slug: barcode-1d-specifications
-permalink: /controls/radbarcode/supported-types/1d-barcodes/barcode-1d-specifications
+permalink: /controls/radbarcode/supported-types/1d-barcodes/specifications
 ---
 
 # 1D Barcode Specifications

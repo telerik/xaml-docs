@@ -5,7 +5,7 @@ description: Check our &quot;Settings&quot; documentation article for Telerik Ba
 position: 0
 published: True
 slug: barcode-data-matrix-settings
-permalink: /controls/radbarcode/supported-types/2d-barcodes/DataMatrix/datamatrix-settings
+permalink: /controls/radbarcode/supported-types/2d-barcodes/DataMatrix/settings
 ---
 
 # Settings

@@ -247,6 +247,14 @@ navigation:
         title: RadBarcode
     controls/radbarcodenew/supported-types:
         title: Supported Types
+    controls/radbarcodenew/supported-types/2d-barcodes/DataMatrix:
+        title: DataMatrix
+    controls/radbarcodenew/supported-types/2d-barcodes/PDF417:
+        title: PDF417
+    controls/radbarcodenew/supported-types/2d-barcodes/QRCode:
+        title: QRCode
+    controls/radbarcodenew/supported-types/2d-barcodes/SwissQRCode:
+        title: SwissQRCode
     controls/radbarcode:
         title: RadBarcode
     controls/radbarcode/supported-types:

@@ -1,5 +1,5 @@
 ---
-title: Suggested Actions
+title: Suggested Actions Menu
 page_title: Suggested Actions
 description: Suggested Actions give you access to common properties of a control selected within the new WPF XAML Designer.
 slug: netcore-suggested-actions
@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Suggested Actions
+# Suggested Actions Menu
 
 The new WPF XAML Designer includes a **Suggested Actions** menu that is similar to the [Smart Tags]({%slug common-smart-tags%}). The controls from the **Telerik.Windows.Controls** assembly support these actions for .NET Core projects.
 
@@ -16,7 +16,8 @@ The new WPF XAML Designer includes a **Suggested Actions** menu that is similar 
 
 Suggested Actions give you access to common properties of a control selected within the new WPF XAML Designer. To use this feature, first enable it through **Tools > Options > Preview Features > XAML Suggested Actions**. Once enabled, click on a supported control and use the lightbulb to expand and interact with the Suggested Actions UI.
 
-![](images/netcore-suggested-actions.png)
+#### Figure 1: Suggested actions menu displayed on RadCallout control
+![](images/netcore-suggested-actions-0.png)
 
 ## See Also
 

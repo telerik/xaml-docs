@@ -91,7 +91,7 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 When the __SelectionMode__ is __Extended__, you can set the __DragElementAction__ property of the RadGridView in order to specify the action that will be taken when the user performs a drag over the GridViewRows. This property is of type [DragAction](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.selection.dragaction) and has the following values:
 
 * __ExtendedSelect__: Performs selection without taking the drag unit selection state.
-* __None__: Does not execute any action. This is the default value. 
+* __None__: Does not execute any action.
 * __Select__: Performs selection. This mode does not perform selection when dragging from a unit that is selected.
 
 ## Events

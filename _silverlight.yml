@@ -151,7 +151,7 @@ controls/radentityframeworkcoredatasource,
 controls/radslider/features/multiple-thumbs,
 controls/radcardview,
 getting-started/telerik-application-lifecycle,
-controls/radbarcodenew,
+controls/radbarcode,
 testing]
 
 exclude_navigation: [controls/raddocking/theming/*]

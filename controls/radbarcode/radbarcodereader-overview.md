@@ -12,7 +12,7 @@ position: 4
 
 RadBarcodeReader is the newest addition to the Barcode suite. The aim of the control is to decode image representations of one of the supported barcode symbologies.
 
-Currently, all of the 1D barcodes, offered by Telerik are supported. The list is available [here]({%slug radbarcode-barcode-specifications%}).        
+Currently, all of the 1D barcodes, offered by Telerik are supported. The list is available [here]({%slug barcode-1d-specifications%}).        
 
 When decoding a barcode image, the control will either display the type and text encoded in the image, or a warning specifying that no known symbology has been detected. A typical layout for the barcode reader is shown below:  
 ![Rad Barcode Reader-overview](images/RadBarcodeReader-overview.png)

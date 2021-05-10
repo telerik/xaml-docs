@@ -4,7 +4,7 @@ page_title: WPF Barcode Documentation | PDF417 Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 slug: barcode-pdf417-overview
-permalink: /controls/radbarcode/supported-types/2d-barcodes/PDF417/barcode-pdf417-overview
+permalink: /controls/radbarcode/supported-types/2d-barcodes/PDF417/overview
 ---
 
 # Overview

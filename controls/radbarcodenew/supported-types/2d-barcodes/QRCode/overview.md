@@ -4,7 +4,7 @@ page_title: WPF Barcode Documentation | QRCode Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 slug: barcode-qrcode-overview
-permalink: /controls/radbarcode/supported-types/2d-barcodes/QRCode/barcode-qrcode-overview
+permalink: /controls/radbarcode/supported-types/2d-barcodes/QRCode/overview
 ---
 
 # Overview

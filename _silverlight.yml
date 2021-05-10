@@ -159,6 +159,20 @@ exclude_navigation: [controls/raddocking/theming/*]
 navigation:
     styling-and-appearance/stylemanager/creating-a-custom-theme:
         title: Creating a Custom Theme	
+    controls/radbarcodeold:
+        title: RadBarcode
+    controls/radbarcodeold/supported-types:
+        title: Supported Types
+    controls/radbarcodeold/supported-types:
+        title: Supported Types
+    controls/radbarcodeold/1d-barcode:
+        title: 1D Barcode
+    controls/radbarcodeold/2d-barcodes:
+        title: 2D Barcodes
+    controls/radbarcodeoldb/2d-barcodes/radbarcodepdf417:
+        title: RadBarcodePDF417
+    controls/radbarcodeold/2d-barcodes/radbarcodeqr:
+        title: RadBarcodeQR
 
 ## The application virtual path
 baseurl: "/devtools/silverlight"

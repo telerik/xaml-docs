@@ -24,7 +24,7 @@ Inline editing lets you edit the appointment's subject right where you see it in
 
 ![radscheduleview inline editing 01](images/radscheduleview_inline_editing_01.png)
 
-* Press __F12__ and type the changes:
+* Press __F2__ and type the changes:
 
 ![radscheduleview inline editing 02](images/radscheduleview_inline_editing_02.png)
 

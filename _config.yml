@@ -85,7 +85,7 @@ cloud-integration/google-cloud/mysql-database,
 cloud-integration/azure/connect-to-data-in-the-cloud/cosmosdb,
 getting-started/first-steps-sl,
 getting-started/explore-control-features-sl,
-controls/radbarcode/]
+controls/radbarcodeold/]
 
 exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
@@ -243,30 +243,28 @@ navigation:
 ## X3 Controls End
 
 ## X2 Controls Start
-    controls/radbarcodenew:
-        title: RadBarcode
-    controls/radbarcodenew/supported-types:
-        title: Supported Types
-    controls/radbarcodenew/supported-types/2d-barcodes/DataMatrix:
-        title: DataMatrix
-    controls/radbarcodenew/supported-types/2d-barcodes/PDF417:
-        title: PDF417
-    controls/radbarcodenew/supported-types/2d-barcodes/QRCode:
-        title: QRCode
-    controls/radbarcodenew/supported-types/2d-barcodes/SwissQRCode:
-        title: SwissQRCode
     controls/radbarcode:
         title: RadBarcode
+    controls/radbarcode/supported-types:
+        title: Supported Types
+    controls/radbarcode/supported-types/1d-barcodes:
+        title: 1D Barcodes
+    controls/radbarcode/supported-types/2d-barcodes:
+        title: 2D Barcodes 
+    controls/radbarcode/supported-types/2d-barcodes/DataMatrix:
+        title: DataMatrix
+    controls/radbarcode/supported-types/2d-barcodes/PDF417:
+        title: PDF417
+    controls/radbarcode/supported-types/2d-barcodes/QRCode:
+        title: QRCode
+    controls/radbarcode/supported-types/2d-barcodes/SwissQRCode:
+        title: SwissQRCode
     controls/radbarcode/supported-types:
         title: Supported Types
         position: 5
     controls/radbarcode/oldbarcode:
         title: Old Barcode
         position: 6
-    controls/radbarcode/supported-types/1d-barcodes:
-        title: 1D Barcodes
-    controls/radbarcode/supported-types/2d-barcodes:
-        title: 2D Barcodes 
     controls/radbarcode/oldbarcode/supported-types:
         title: Supported Types
     controls/radbarcode/oldbarcode/1d-barcode:

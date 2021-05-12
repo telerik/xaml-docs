@@ -9,10 +9,9 @@ published: True
 
 # Shapes
 
-**Shapes** enable users to wrap text in a container and visualize it in a specific manner. 
-There are different types of shapes determined by their visual appearance (shape, style, size, etc.). Their variation in shape and style makes them very useful for drawing attention to specific text. They could also be helpful to manipulate the text appearance (e.g. inline with text or with text wrapping) according to the rest of the document content.
+The Shapes feature allows you to easily insert shapes like circles, boxes, arrows, and many others directly in your documents. You can style the inserted shapes by using gradient fills and various patterns outlines, as well as changing the size of the shapes and rotating them. 
 
->note Currently, RadRichTextBox supports the **import and export** of shapes from and to **Office Open XML (DOCX)**. When exporting to other formats the shapes will be lost.
+>note Currently, RadRichTextBox supports the **import and export** of shapes from and to **Office Open XML (DOCX)**. When exporting to **PDF**, the shapes are converted to images. When exporting to other formats the shapes will be lost.
 
 ## Working with Shapes 
 
@@ -45,7 +44,8 @@ The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-r
 
 {{region radrichtextbox-features-shapes_0}}
 
-    IEnumerable<ShapeInline> shapes = this.radRichTextBox.Document.EnumerateChildrenOfType<ShapeInline>();
+    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
+    editor.InsertShape(ShapeType.Heart, new Size(100, 100));
 {{endregion}}
 
 ## Editing Shapes in Code
@@ -69,7 +69,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
 * **ChangeShapeOutlineWidth(ShapeInline shape, double width)**: Changes the width of the specified shape's outline.
 * **ChangeShapeFill(ShapeInline shape, IShapeFill fill)**: Changes the fill of the specified shape.
 
-#### [C#] Example 2: Insert and modify shape
+#### [C#] Example 3: Insert and modify shape
 
 {{region radrichtextbox-features-shapes_2}}
 
@@ -90,7 +90,7 @@ The fill colors related to shapes are defined by two interfaces: **IShapeFill** 
 
  ![Shape Fill definitions in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_04.png)
  
-#### [C#] Example 3: Create different fill types
+#### [C#] Example 4: Create different fill types
 
 {{region radrichtextbox-features-shapes_3}}
 

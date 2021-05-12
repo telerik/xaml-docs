@@ -26,9 +26,13 @@ In the Insert tab, you will find a list containing various predefined shapes you
     ![Rotate shape in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_02.png)
 
 - position
+
 - size
+
 - fill
+
 - borders
+
 - adjust values (to customize the geometry of the shape)
     
      ![Adjust shape in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_03.gif)

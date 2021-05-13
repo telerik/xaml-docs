@@ -118,7 +118,7 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
 
 ## ItemTemplate and ItemTemplateSelector
 
-When binding your **RadTabbedWindow** to a collection, you are able to configure the visualization of the data and the appearance of the tab items via the **ItemTemplate** and the **ItemTemplateSelectior** properties.
+When binding your **RadTabbedWindow** to a collection, you are able to configure the visualization of the data and the appearance of the tab items via the **ItemTemplate** and the **ItemTemplateSelector** properties.
 
 #### [XAML] Example 5: Define a custom ItemTemplate
 
@@ -133,11 +133,11 @@ When binding your **RadTabbedWindow** to a collection, you are able to configure
     </telerik:RadTabbedWindow.ItemTemplate>
 {{endregion}}
 
-If you wish to return different templates for the tab items, you can use the **ItemTemplateSelectior** property and pass a custom **DataTemplateSelector** to it.
+If you wish to return different templates for the tab items, you can use the **ItemTemplateSelector** property and pass a custom **DataTemplateSelector** to it.
 
-## ContentTemplate and ContentTemplateSelectior
+## ContentTemplate and ContentTemplateSelector
 
-Similarly, in a data-binding scenario you can control the appearance of the tabs' content via the **ContentTemplate** and the **ContentTemplateSelectior** properties.
+Similarly, in a data-binding scenario you can control the appearance of the tabs' content via the **ContentTemplate** and the **ContentTemplateSelector** properties.
 
 #### [XAML] Example 6: Define a custom ContentTemplate
 
@@ -149,7 +149,7 @@ Similarly, in a data-binding scenario you can control the appearance of the tabs
     </telerik:RadTabbedWindow.ContentTemplate>
 {{endregion}}
 
-If you wish to return different templates for the tab items' content, you can use the **ContentTemplateSelectior** property and pass a custom **DataTemplateSelector** to it.
+If you wish to return different templates for the tab items' content, you can use the **ContentTemplateSelector** property and pass a custom **DataTemplateSelector** to it.
 
 ## See Also
 

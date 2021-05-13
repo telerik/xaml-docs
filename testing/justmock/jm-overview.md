@@ -32,9 +32,8 @@ For the full list of what is supported please visit the Telerik [JustMock](https
 
 If you have the Telerik UI for WPF controls running in your project, you may want to explore how JustMock can be integrated in your unit testing project. Below you can find what are the requirements of using JustMock and how to test your WPF project:
 
-* [Requirements]({%slug justmock-requirements%})  
-
-* [Unit Testing Tutorial with JustMock]({%slug just-mock-tutorial%})
+* [Requirements]({%slug justmock-requirements%})
+* [Unit Testing Tutorial with JustMock]({%slug justmock-tutorial%})
 
 ## See Also  
 * [Requirements]({%slug justmock-requirements%})

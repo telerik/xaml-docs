@@ -41,8 +41,8 @@ Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) p
 |Visual Studio|2019, 2017, 2015, 2013, 2012|
 
 ## See Also  
-* [Overview]({%slug justmock-overview%})  
-* [Unit Testing Tutorial with JustMock]({%slug just-mocktutorial%})
+* [Overview]({%slug justmock-overview%})
+* [Unit Testing Tutorial with JustMock]({%slug justmock-tutorial%})
 
 
 

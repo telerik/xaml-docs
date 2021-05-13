@@ -50,14 +50,12 @@ When you are using __RadBusyIndicator__, you always have to set its __Content__ 
      <telerik:RadBusyIndicator x:Name="radBusyIndicator">
         <Grid>
             <telerik:RadListBox>
-                <telerik:RadListBox>
-                    <telerik:RadListBoxItem Content="Australia" />
-                    <telerik:RadListBoxItem Content="Brazil" />
-                    <telerik:RadListBoxItem Content="Canada" />
-                    <telerik:RadListBoxItem Content="China" />
-                    <telerik:RadListBoxItem Content="England" />
-                    <telerik:RadListBoxItem Content="Germany" />
-                </telerik:RadListBox>
+                <telerik:RadListBoxItem Content="Australia" />
+                <telerik:RadListBoxItem Content="Brazil" />
+                <telerik:RadListBoxItem Content="Canada" />
+                <telerik:RadListBoxItem Content="China" />
+                <telerik:RadListBoxItem Content="England" />
+                <telerik:RadListBoxItem Content="Germany" />
             </telerik:RadListBox>
         </Grid>
     </telerik:RadBusyIndicator>

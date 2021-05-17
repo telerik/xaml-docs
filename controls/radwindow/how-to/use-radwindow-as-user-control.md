@@ -1,18 +1,18 @@
 ---
-title: Use RadWindow as User Control
-page_title: Use RadWindow as User Control
-description: Check our &quot;Use RadWindow as User Control&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+title: Use RadWindow as Main Window or User Control
+page_title: Use RadWindow as Main Window or User Control
+description: Check our &quot;Use RadWindow as Main Window or User Control&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-use-radwindow-as-user-control
 tags: use,radwindow,as,user,control
 published: True
 position: 6
 ---
 
-# Use RadWindow as User Control
+# Use RadWindow as Main Window or User Control
 
-If you want to prepare the __RadWindow__ at design-time, you have to use it as a user control. To do this you have to create a standard user control using the __UserControl__ template in the Visual Studio. This example will use a __UserControl__ called "RadWindowControl".
+If you want to prepare the __RadWindow__ at design-time or use it as the {% if site.site_name == 'WPF' %}MainWindow{% else %}MainPage{% endif %} of your application, you have to use it as a user control. To do this you cancreate a standard user control or window using the templates provided in the Visual Studio or replace the default {% if site.site_name == 'WPF' %}MainWindow{% else %}MainPage{% endif %} created for the application.
 
-After creating it open the XAML file and replace the __UserControl__ declaration with a __RadWindow__ declaration. Here is a sample code:
+First open the XAML file and replace the generated declaration with a __RadWindow__ declaration. Here is a sample code:
 
 #### __XAML__
 
@@ -20,13 +20,14 @@ After creating it open the XAML file and replace the __UserControl__ declaration
 	<telerik:RadWindow x:Class="RadWindowSamples.MainWindow"
 	   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	   telerik:StyleManager.Theme="Vista"
-	   xmlns:local="clr-namespace:RadWindowSamples.How_To">
+	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation""
+	   xmlns:local="clr-namespace:RadWindowSamples">
 	</telerik:RadWindow>
 {{endregion}}
 
-Also in the code behind your user control should inherit the __RadWindow__ instead of the __UserControl__.
+>You need to replace RadWindowSamples with the namespace of the generated class.
+
+Also in the code behind your user control should inherit the __RadWindow__ instead of the __UserControl__ class.
 
 #### __C#__
 
@@ -119,7 +120,7 @@ Then create a new instance of the custom RadWindow and show it in the __OnStartu
 	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
 	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
 	        </ResourceDictionary.MergedDictionaries>
-	        <Style TargetType="local:RadWindowControl" BasedOn="{StaticResource RadWindowStyle}" />
+	        <Style TargetType="local:MainWindow" BasedOn="{StaticResource RadWindowStyle}" />
 	    </ResourceDictionary>
 	</Application.Resources>
 {{endregion}}

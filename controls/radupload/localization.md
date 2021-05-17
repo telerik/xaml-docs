@@ -11,10 +11,10 @@ site_name: Silverlight
 
 # Localization
 
-The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the standard __RadUpload__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything.
+The built-in localization mechanism in {{ site.framework_name }} allows you to localize any string resource used by the standard __RadUpload__ control. Once translated you might use your resources in {{ site.framework_name }} projects without changing anything.
 ![](images/RadUpload_Localization_01.png)
 
->tip To learn more about the ways in which to localize the RadControls please read the common topic about
+>tip To learn more about the ways in which to localize the Telerik UI for {{ site.framework_name }} controls, please read the common topic about [Localization]({%slug common-localization%}).
 
 ## Resource Keys
 

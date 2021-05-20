@@ -109,6 +109,8 @@ Here is the XAML declaration of the above docking structure. Notice that each [R
 
 You can also make a pane floatable programmatically by either calling __MakeFloatingDockable()__ or __MakeFloatingOnly()__. Both of these methods are doing one and the same thing - they undock your pane and host it in a separate ToolWindow.
 
+More specifically, when the pane is floated, it is removed from its RadPaneGroup and its RadSplitContainer. The original group and split container, however, are not removed from the docking control, they are just hidden. Then a new RadPaneGroup is created by the control and the floated RadPane is added to that new group. After that, a new RadSplitContainer is created and the new group is added to it. Next, a new ToolWindow instance is created and the new split container is added to it. Finally, the window is added to the RadDocking control.
+
 >Note that __MakeFloatingOnly(), MakeFloatingDockable()__ and __MakeDockable()__ methods work only when all objects are constructed and added to the object tree. Which means that you should invoke them after the __Loaded__ event of the __RadDocking__ control has been fired.
 
 #### __[C#] Example 5: Make a RadPane FloatingDockable__

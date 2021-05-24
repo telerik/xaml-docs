@@ -45,6 +45,5 @@ Here is a list of events exposed by the RadTaskBoard control:
 		}
 	{{endregion}}
 	
-## See Also
-
+## See Also  
 * [Getting Started]({%slug radtaskboard-getting-started%})

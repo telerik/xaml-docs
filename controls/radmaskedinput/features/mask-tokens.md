@@ -265,7 +265,16 @@ For instance:
 #### __[XAML] Example 6: Customize mask property__
 {{region xaml-radmaskedinput-features-mask-tokens_5}}
 	<telerik:RadMaskedNumericInput Mask="#3.2" />
-{{endregion}}  
+{{endregion}}
+
+## Allow Invalid Values
+
+In the __Mask__ scenario, the control will update its Value property only when its input passes the validation process. The validation rules are determined by the symbols set in the Mask property. Otherwise, the __ValueChanged__ event won't be triggered. To allow property change on every user input, you can set the __AllowInvalidValues__ property to True. 
+
+#### __[XAML] Example 7: Allow Invalid Values__
+{{region xaml-radmaskedinput-features-mask-tokens_5}}
+	<telerik:RadMaskedTextInput Mask="AAAAAA" AllowInvalidValues="true" />
+{{endregion}}
  
 ## See Also
  * [Common Features]({%slug radmaskedinput-features-common%})

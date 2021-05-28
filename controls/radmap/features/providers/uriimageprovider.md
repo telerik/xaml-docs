@@ -11,6 +11,8 @@ position: 5
 # UriImageProvider
 
 RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider.
+
+>important The UriImageProvider is suitable for showing images of city areas or cities. It is not designed to handle big geographical spaces (such as entire countries or continents) as this may result in a considerably big size of the created images which may cause an **OutOfMemoryException** on some machines.
       
 Assuming that images with names osm_10.png, osm_11.png, ..., osm_14.png are embedded as resources within the application assembly, you can initialize the UriImageProvider like this:        
 
@@ -32,7 +34,7 @@ Assuming that images with names osm_10.png, osm_11.png, ..., osm_14.png are embe
 
 The UriImageProvider provides support for the following specific properties:        
 
-* __Uri__ - Gets or sets the uniform resource identifier (URI) for the image location.
+* __Uri__: Gets or sets the uniform resource identifier (URI) for the image location.
 
 Example:
 [http://c.tile.openstreetmap.org/7/70/43.png](http://c.tile.openstreetmap.org/7/70/43.png)
@@ -47,8 +49,8 @@ the value of the __BaseAddress__ property.
 
 >tip If you have separate image for every zoom level then the URI string must contain *__{zoom}__* placeholder. This part will be replaced with the actual zoom level when the image is requested (e.g."/MyApplication;component/MapImages/image_{zoom}.png").
 
-* __BaseAddress__ - Gets or sets the uniform resource identifier (URI) of the base address for the image location. {% if site.site_name == 'Silverlight' %}In Silverlight the default value of this property points to the root of the HTML document on which the Silverlight plug-in is hosted (i.e. the web application root) and most probably you would not need to change this value.{% endif %}
+* __BaseAddress__: Gets or sets the uniform resource identifier (URI) of the base address for the image location. {% if site.site_name == 'Silverlight' %}In Silverlight the default value of this property points to the root of the HTML document on which the Silverlight plug-in is hosted (i.e. the web application root) and most probably you would not need to change this value.{% endif %}
 
-* __ZoomNumericFormat__ - Gets or sets numeric format string will be used to replace {zoom} placeholder. For example "D2" will replace {zoom} placeholder with 2 digits integer (01, 02, ..., 19). The default value is null and it produces simple integer without paddings (1, 2, ... 9, 10, ... 19).          
+* __ZoomNumericFormat__: Gets or sets numeric format string will be used to replace {zoom} placeholder. For example "D2" will replace {zoom} placeholder with 2 digits integer (01, 02, ..., 19). The default value is null and it produces simple integer without paddings (1, 2, ... 9, 10, ... 19).          
 
 >tipNote that the __UriImageProvider__ cannot be used as a master provider in a multi-provider scenario and always should be restricted within geographic region (i.e. you need to set the UriImageProvider.GeoBounds property).

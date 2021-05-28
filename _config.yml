@@ -1090,6 +1090,8 @@ navigation:
         title: "How To"
     "testing/justmock":
         title: "JustMock"
+    "testing/appium":
+        title: "Appium"
     "getting-started":
         title: "Getting Started"
         position: 1

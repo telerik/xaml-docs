@@ -89,7 +89,7 @@ Here is the place to mention that our sample test application consists of the **
 {{region xaml-appium-geting-started-2}}
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="\*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.DataContext>

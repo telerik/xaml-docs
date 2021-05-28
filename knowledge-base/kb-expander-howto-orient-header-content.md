@@ -5,7 +5,7 @@ type: how-to
 page_title: Rotate the header of the RadExpander when the ExpandDirection is Right or Left
 slug: kb-expander-howto-orient-header-content
 position: 0
-tags: expander, header, orienation, expand, direction
+tags: expander, header, orientation, expand, direction
 res_type: kb
 ---
 

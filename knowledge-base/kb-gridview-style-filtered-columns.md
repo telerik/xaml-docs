@@ -33,7 +33,7 @@ To style the header cells of a column after it has been filtered, you can handle
 #### __[C#] Example 1: Subscribe to the CollectionChanged event__
 
 {{region kb-gridview-style-filtered-columns-0}}
-	this.GridView.FilterDescriptors.CollectionChanged += FilterDescriptors_CollectionChanged;
+	this.GridView.FilterDescriptors.CollectionChanged += OnFilterDescriptorsCollectionChanged;
 {{endregion}}
 
 In the event handler, you can set the [HeaderCellStyle]({%slug gridview-styling-column-headers%}) property of the column which was affected by the filtering and remove the style once the filter is cleared.

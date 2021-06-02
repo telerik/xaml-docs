@@ -213,14 +213,39 @@ __Example 3__ demonstrates how you can apply grouping to the data by setting the
 
 ## Grouping and Virtualization
 
-Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for __.Net 4.5__ and above. In order to turn on this feature, you have to set the __VirtualizingPanel.IsVirtualizingWhenGrouping__ attached property to __True__. Additionally, you have to set the __VirtualizingPanel.ScrollUnit__ to __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported while grouping. Optionally, you can also set the __VirtualizingPanel.VirtualizationMode__ property to __Recycling__ in order for the item containers to be recycled during scrolling.
+Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for __.Net 4.5__ and above.
+
+In order to turn on this feature, you have to set the __VirtualizingPanel.IsVirtualizingWhenGrouping__ attached property to __True__.
+
+Additionally, you have to set the __VirtualizingPanel.ScrollUnit__ to __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported while grouping. Optionally, you can also set the __VirtualizingPanel.VirtualizationMode__ property to __Recycling__ in order for the item containers to be recycled during scrolling.
 
 #### __[XAML] Example 4: Turning on virtualization while grouping__
 {{region xaml-radlistbox-features-virtualizingwrappanel-4}}
 	<telerik:RadListBox VirtualizingPanel.ScrollUnit="Pixel"
 						VirtualizingPanel.IsVirtualizingWhenGrouping="True"
-						VirtualizingPanel.VirtualizationMode="Recycling" />
+						VirtualizingPanel.VirtualizationMode="Recycling">
+		<telerik:RadListBox.GroupStyle>
+			<GroupStyle>
+				<GroupStyle.HeaderTemplate> 
+					<DataTemplate> 
+						<TextBlock Text="{Binding Name}" Background="Green" /> 
+					</DataTemplate> 
+				</GroupStyle.HeaderTemplate> 
+				<GroupStyle.Panel>
+					<ItemsPanelTemplate>
+						<VirtualizingWrapPanel
+							VirtualizingPanel.IsVirtualizing="True"
+							VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+							VirtualizingPanel.ScrollUnit="Pixel"
+							VirtualizingPanel.VirtualizationMode="Recycling"/>
+					</ItemsPanelTemplate>
+				</GroupStyle.Panel>
+			</GroupStyle>
+		</telerik:RadListBox.GroupStyle>
+	</telerik:RadListBox>
 {{endregion}}
+
+>Note that you also need to set the attached properties on the panel in the **GroupStyle** as they will not be transferred automatically.
 
 >important When the __VirtualizingPanel.IsVirtualizingWhenGrouping__ property is set to __True__, the __VirtualizingPanel.ScrollUnit__ needs to be __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported.
 

@@ -18,14 +18,14 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 
 * Define a __RadOutlookBar__ in XAML.
 
-	#### __XAML__
+	#### __[XAML] Example 1: Defining RadOutlookBar in XAML__
 	{{region xaml-radoutlookbar-databinding-0}}
 		<telerik:RadOutlookBar x:Name="radOutlookBar"/>
 	{{endregion}}
 
 * Create a business object
 
-	#### __C#__
+	#### __[C#] Example 2: The MenuItem class__
 	{{region cs-radoutlookbar-databinding-1}}
 		public class MenuItem
 		{
@@ -35,7 +35,7 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 		}
 	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 2: The MenuItem class__
 	{{region vb-radoutlookbar-databinding-2}}
 		Public Class MenuItem
 		    Public Property Header() As String
@@ -70,7 +70,7 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 
 * Create a view model class which will contains only a collection business objects
 
-	#### __C#__
+	#### __[C#] Example 3: The MailMenuViewModel class__
 	{{region cs-radoutlookbar-databinding-3}}
 		public class MailMenuViewModel : ViewModelBase
 		{
@@ -102,7 +102,7 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 		}
 	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 3: The MailMenuViewModel class__
 	{{region vb-radoutlookbar-databinding-4}}
 		Public Class MailMenuViewModel
 		    Inherits ViewModelBase
@@ -154,7 +154,7 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 
 * Set the __DataContext__ of the __RadOutlookBar__ to a new instance of the created view model
 
-	#### __C#__
+	#### __[C#] Example 4: Setting the DataContext of the RadOutlookBar__
 	{{region cs-radoutlookbar-databinding-5}}
 		public MainWindow()
 		{
@@ -163,7 +163,7 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 		}
 	{{endregion}}
 
-	#### __VB.NET__
+	#### __[VB.NET] Example 4: Setting the DataContext of the RadOutlookBar__
 
 	{{region vb-radoutlookbar-databinding-6}}
 		Public Sub New()
@@ -172,12 +172,28 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 		End Sub
 	{{endregion}}
 
-* Then bind the __ItemsSource__ property to the collection of the view model
+* Then bind the __ItemsSource__ property to the collection of the view model and set the __ItemTemplate__, __ContentTemplate__ and __TitleTemplate__ to display the proper information.
 
-	#### __XAML__
+	#### __[XAML] Example 5: Configure the RadOutlookBar__
 
 	{{region xaml-radoutlookbar-databinding-7}}
-		<telerik:RadOutlookBar  ItemsSource="{Binding MenuItems}"/>
+		<telerik:RadOutlookBar x:Name="radOutlookBar" ItemsSource="{Binding MenuItems}">
+            <telerik:RadOutlookBar.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </telerik:RadOutlookBar.ItemTemplate>
+            <telerik:RadOutlookBar.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Content}" />
+                </DataTemplate>
+            </telerik:RadOutlookBar.ContentTemplate>
+            <telerik:RadOutlookBar.TitleTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </telerik:RadOutlookBar.TitleTemplate>
+        </telerik:RadOutlookBar>
 	{{endregion}}
 
 You can see the end result bellow:
@@ -186,7 +202,9 @@ You can see the end result bellow:
 
 ## Using Custom Templates
 
-The __RadOutlookBar__ has few properties of type __DataTemplate__ that can be used in order to control its items appearance. Each property accepts a DataTemplate as a value that determines the visual appearance of the __RadOutlookBarItems__ and the __RadOutlookBar__ itself. The properties that can be used are the following:
+The __RadOutlookBar__ has few properties of type __DataTemplate__ that can be used in order to control its items appearance.
+
+Each property accepts a DataTemplate as a value that determines the visual appearance of the __RadOutlookBarItems__ and the __RadOutlookBar__ itself. The properties that can be used are the following:
 
 * __ItemTemplate__
 * __ItemMinimizedTemplate__
@@ -197,18 +215,11 @@ The __RadOutlookBar__ has few properties of type __DataTemplate__ that can be us
 
 >There are also template selectors for all of the listed templates except for the __MinimizedButtonContentTemplate__.
 
-To customize the project that we developed so far you can do the following:
+In Example 5 we already set the __ItemTemplate__, __ContentTemplate__ and __TitleTemplate__ properties.
 
-* Create an __ItemTemplate__ - this is the __DataTemplate__ that describes the visual structure of a data obejct of each __RadOutlookBarItem__
+To customize the project that we developed so far you can also set the rest of the available templates:
 
-	#### __XAML__
-	{{region xaml-radoutlookbar-databinding-8}}
-		<DataTemplate x:Key="outlookBarItemTemplate">
-			<TextBlock Text="{Binding Header}" />
-		</DataTemplate>
-	{{endregion}}
-
-* Create an __ItemMinimizedTemplate__ - this is the __DataTemplate__ that describes each __RadOutlookBarItem__ that is placed in the minimized area of the __RadOutlookBar__
+* __ItemMinimizedTemplate__: This is the __DataTemplate__ that describes each __RadOutlookBarItem__ that is placed in the minimized area of the __RadOutlookBar__:
 
 	#### __XAML__
 	{{region xaml-radoutlookbar-databinding-9}}
@@ -217,7 +228,7 @@ To customize the project that we developed so far you can do the following:
 		</DataTemplate>
 	{{endregion}}
 
-* Create an __ItemDropDownContentTemplate__ - this is the __DataTemplate__ applied to the items in the drop down which contains the minimized items that cannot fit in the minimized area
+* __ItemDropDownContentTemplate__: This is the __DataTemplate__ applied to the items in the drop down which contains the minimized items that cannot fit in the minimized area:
 
 	#### __XAML__
 	{{region xaml-radoutlookbar-databinding-10}}
@@ -226,18 +237,7 @@ To customize the project that we developed so far you can do the following:
 		</DataTemplate>
 	{{endregion}}
 
-* Create a __TitleTemplate__ - this is the __DataTemplate__ that describes the title of the __RadOutlookBar__
-
-	#### __XAML__
-	{{region xaml-radoutlookbar-databinding-11}}
-		<DataTemplate x:Key="outlookBarTitleTemplate">
-			<TextBlock Text="{Binding Header}" 
-					   FontSize="16" 
-					   FontWeight="Bold" />
-		</DataTemplate>
-	{{endregion}}
-
-* Create a __MinimizedButtonContentTemplate__ - this is the __DataTemplate__ that describes the button which is displayed when you minimize the __RadOutlookBar__
+* __MinimizedButtonContentTemplate__: This is the __DataTemplate__ that describes the button which is displayed when you minimize the __RadOutlookBar__:
 
 	#### __XAML__
 	{{region xaml-radoutlookbar-databinding-12}}
@@ -248,7 +248,7 @@ To customize the project that we developed so far you can do the following:
 		</DataTemplate>
 	{{endregion}}
 
-* Create a __ContentTemplate__ - this is the __DataTemplate__ that describes the content of the selected item 
+* Let's also extend the __ContentTemplate__ from **Example 5**: This is the __DataTemplate__ that describes the content of the selected item:
 
 	#### __XAML__
 	{{region xaml-radoutlookbar-databinding-13}}
@@ -267,13 +267,23 @@ To customize the project that we developed so far you can do the following:
 	{{region xaml-radoutlookbar-databinding-14}}
 		 <telerik:RadOutlookBar SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 		                       ItemsSource="{Binding MenuItems}"                               
-		                       ItemTemplate="{StaticResource outlookBarItemTemplate}"
 		                       ItemMinimizedTemplate="{StaticResource outlookBarItemMinimizedTemplate}"
 		                       ItemDropDownContentTemplate="{StaticResource outlookBarItemDropDownTemplate}"
-		                       TitleTemplate="{StaticResource outlookBarTitleTemplate}"
 		                       ContentTemplate="{StaticResource outlookBarContentTemplate}"
 		                       MinimizedButtonContentTemplate="{StaticResource outlookBarMinimizedBtnContentTemplate}"
-		                       MinimizedButtonContent="{Binding SelectedItem}" />
+		                       MinimizedButtonContent="{Binding SelectedItem}">
+            <telerik:RadOutlookBar.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </telerik:RadOutlookBar.ItemTemplate>
+            <telerik:RadOutlookBar.TitleTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </telerik:RadOutlookBar.TitleTemplate>
+        </telerik:RadOutlookBar>
+
 	{{endregion}}
 	
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/OutlookBar/DataBinding).

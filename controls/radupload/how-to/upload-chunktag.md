@@ -1,25 +1,15 @@
 ---
 title: RadUpload ChunkTag
-description: RadUpload ChunkTag or how to deal with uploaded files by chunk.
-type: how-to
-page_title: How to deal with uploaded files by chunk.
-slug: kb-upload-chunktag
-position: 0
+page_title: RadUpload ChunkTag or how to deal with uploaded files by chunk.
+description: Check our &quot;RadUpload ChunkTag&quot; documentation article for the RadUpload {{ site.framework_name }} control.
+slug: radupload-how-to-upload-chunktag
 tags: upload, chunktag, formchunktag, resultchunktag
-ticketid:
-res_type: kb
+published: True
+position: 7
+site_name: Silverlight
 ---
 
-## Environment
-<table>
-	<tr>
-		<td>Product</td>
-		<td>RadUpload for Silverlight</td>
-	</tr>
-</table>
-
-
-## Description
+## RadUpload ChunkTag or How To Deal With Uploaded Files by Chunk
 
 Telerik RadUpload for Silverlight supports Chunk tagging. Thus, the __RadUploadHandler__ has the ability to tag the uploaded chain of chunks. For example, you can use the ChunkTag to save the uploaded files in a database by chunk and not wait for the whole file to be uploaded (and saved to disk by default). 
 
@@ -29,12 +19,10 @@ __Chunk-Tag__ rely on two properties in the RadUploadHandler class:
 
 __InitializeChunkStorage__ and __SaveChunkData__ are two main methods you should be aware of when you customize your upload handler.
 
-## Solution
-
 The following example demonstrate how you can create custom class and override the __InitializeChunkStorage__ and __SaveChunkData__ methods.
 
 #### __[C#]__
-{{region cs-kb-htmlplaceholder-howto-enable-scrollbars-0}}
+{{region cs-radupload-how-to-upload-chunktag-0}}
 	public class SampleUploadHandler : RadUploadHandler
 	{
 		int FileID = 0;

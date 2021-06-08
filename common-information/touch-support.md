@@ -55,6 +55,7 @@ RadTreeListView | Scroll	|	-	|	Click	|	-	|	Shows a circle to be dragged	|	-
 RadTreeMap | -	|	-	|	Selection	|	-	|	Shows tooltip	|	-
 RadTreeView | Scroll with Inertia	|	-	|	Click/Selection/Expand	|	-	|	Shows touch Indicator	|	Tap and Hold and Move will Start Drag operation
 RadTileList | Scroll	|	-	|	Selection	|	-	|	-	|	-
+RadTileView | Scroll    | 	-	|	Selection	|	-	|	On header - Drag and Drop	|	- 
 RadSyntaxEditor | Scroll | Zoom | Click (move caret to position) | Selection markers to extend the selection | - | - |
 
 ## TouchManager States

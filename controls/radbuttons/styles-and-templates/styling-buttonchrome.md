@@ -15,8 +15,8 @@ __ButtonChrome__ is a Control that has no input functionality. It was part of th
 ## Properties
 
 The Button chrome’s appearance is controlled by several Boolean typed properties:
-* __RenderMouseOver__: render as MouseOvered button;
-* __RenderPressed__: render as Pressed button;
+* __RenderMouseOver__: renders as MouseOvered button;
+* __RenderPressed__: renders as Pressed button;
 * __RenderEnabled__: default True. When set to False render as Disabled button;
 * __RenderNormal__: default True. When set to False render transparent as toolbar button;
 * __RenderChecked__: renders as checked ToggleButton;

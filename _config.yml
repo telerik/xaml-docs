@@ -1040,6 +1040,8 @@ navigation:
     "common-information/troubleshooting":
         title: "Troubleshooting"
         position: 14
+    "common-information/winforms-integration":
+        title: "WinForms Integration"
     "cloud-integration/amazon-web-services":
         title: "Amazon Web Services"
         position: 2

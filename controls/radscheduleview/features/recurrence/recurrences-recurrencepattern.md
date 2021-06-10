@@ -28,7 +28,7 @@ The purpose of this tutorial is to show you:
 
 	* [Interval](#interval)
 
-	* [DayOfMonth](#dayofmonth)
+	* [DaysOfMonth](#daysofmonth)
 
 	* [DayOrdinal](#dayordinal)
 
@@ -147,9 +147,9 @@ If you want to set the number of days between each recurrence, you need to speci
 
 >tipCombining the __Interval__ property with the __DaysOfWeekMask__ and __Frequency__ pattern gives you even more flexibility when creating recurring appointments. For more information take a look at the [Example](#examples) section at the end of the topic.
 
-## DayOfMonth
+## DaysOfMonth
 
-When you want to specify on which day of the month the appointment occurs, you need to set the __DayOfMonth__ property.
+When you want to specify on which day of the month the appointment occurs, you need to set the __DaysOfMonth__ property.
 
 ## DayOrdinal
 
@@ -163,9 +163,13 @@ When you want to specify on which month of the year the appointment occurs, you 
 
 When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. Check out the [example](#set-the-maximum-occurrences-of-the-appointment) at the end of the topic.
 
-## RepeatUntil
+## FirstDayOfWeek
 
-When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property. Check out the [example](#set-the-end-date-of-the-appointment's-occurrences) at the end of the topic.
+Gets or sets the day on which the week starts. This property is only meaningful when **RecurrenceFrequency** is set to **Weekly** and **Interval** is greater than **1**.
+
+## RecursUntil
+
+When you want to specify the end date of the appointment's occurrences, then you need to set the __RecursUntil__ property. Check out the [example](#set-the-end-date-of-the-appointment's-occurrences) at the end of the topic.
 
 ## Copy()
 
@@ -347,7 +351,7 @@ Executing the previous pattern will result in creating an appointment that occur
 
 For example, if you want to create an appointment that occurs on every __fifth__ day of the month and the interval between each recurrence is __two__ months, then you should perform the following steps:        
 
-* Set the __DayOfMonth__ property to 5.
+* Set the __DaysOfMonth__ property to 5.
           
 
 * Set the __Frequency__ property to __RecurrenceFrequency.Monthly__.
@@ -359,7 +363,7 @@ For example, if you want to create an appointment that occurs on every __fifth__
 
 {{region radscheduleview-features-recurrences-recurrencepattern_12}}
 	var pattern = new RecurrencePattern() {
-	    DayOfMonth = 5,
+	    DaysOfMonth = new int[] { 5 },
 	    Frequency = RecurrenceFrequency.Monthly,
 	    Interval = 2
 	};
@@ -370,7 +374,7 @@ For example, if you want to create an appointment that occurs on every __fifth__
 
 {{region radscheduleview-features-recurrences-recurrencepattern_13}}
 	Dim pattern = New RecurrencePattern() With {
-	     .DayOfMonth = 5,
+	     .DaysOfMonth = New int[] { 5 },
 	     .Frequency = RecurrenceFrequency.Monthly,  
 	     .Interval = 2
 	}
@@ -421,7 +425,7 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 
 * Set the __MonthOfYear__ to 11.          
 
-* Set the __DayOfMonth__ to 13.          
+* Set the __DaysOfMonth__ to 13.          
 
 #### __C#__
 
@@ -429,7 +433,7 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 	var pattern = new RecurrencePattern() {
 	    Frequency = RecurrenceFrequency.Yearly,
 	    MonthOfYear = 11,
-	    DayOfMonth = 13
+	    DaysOfMonth = new int[] { 13 }
 	};
 	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 {{endregion}}
@@ -440,7 +444,7 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 	Dim pattern = New RecurrencePattern() With {
 	    .Frequency = RecurrenceFrequency.Yearly,
 	    .MonthOfYear = 11,
-	    .DayOfMonth = 13
+	    .DaysOfMonth = New int[] { 13 }
 	}
 	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 {{endregion}}

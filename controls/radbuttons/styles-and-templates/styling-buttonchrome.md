@@ -10,7 +10,23 @@ position: 2
 
 # Styling the ButtonChrome
 
-The __ButtonChrome__ control was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version of the RadControls, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+__ButtonChrome__ is a Control that has no input functionality. It was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version of the RadControls, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
+
+## Properties
+
+The Button chrome’s appearance is controlled by several Boolean typed properties:
+* __RenderMouseOver__: renders as MouseOvered button;
+* __RenderPressed__: renders as Pressed button;
+* __RenderEnabled__: default True. When set to False render as Disabled button;
+* __RenderNormal__: default True. When set to False render transparent as toolbar button;
+* __RenderChecked__: renders as checked ToggleButton;
+* __RenderActive__: used in SplitButtons;
+* __RenderActive__: renders as MouseOvered ListBoxItem;
+* __RenderSelected__: renders as Selected ListBoxItem;
+* __RenderFocused__: renderes as Focused item;
+* __Orientation__: default Horizontal can be set to Vertical to rotate the gradients in some states;
+* __CornerRadius__: used to set the outer corners;
+* __InnerCornerRadius__: readonly. Computed as decreased CornerRadius.
 
 ## Create an empty implicit style and set it up on your own. 
 
@@ -29,6 +45,8 @@ The __ButtonChrome__ control was part of the template of the __RadButtons__. It 
 		<chromes:ButtonChrome Width="200" Height="200"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
 	</Grid>
 {{endregion}}
+
+![style buttonchrome](images/styling_buttonchrome_0.png)
 
 ## Edit the default template of the control
 

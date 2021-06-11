@@ -14,9 +14,9 @@ __RadPivotMap__ expects data in tabular format and displays a treemap with group
 
 Assuming that you have the following class:
 
-#### __C#__
+#### __[C#] Example 1__
 
-{{region radtreemap-populating-with-data-radpivotmap_0}}
+{{region cs-radtreemap-populating-with-data-radpivotmap_0}}
 	public class TestData
 	{
 	     public int Value { get; set; }
@@ -25,7 +25,7 @@ Assuming that you have the following class:
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 1__
 
 {{region radtreemap-populating-with-data-radpivotmap_1}}
 	Private _category As String
@@ -57,18 +57,57 @@ Assuming that you have the following class:
 	    End Property
 {{endregion}}
 
-To bind the __RadPivotMap__ you should use the *__GroupDefinition__* collection and add several __GroupDefinitions__ - one for each of the properties as presented in the class. The __ValuePath__ property specifies from where the data should be taken.
+Using the above class we can now create sample data.
 
-#### __XAML__
+#### __[C#] Example 2__
 
-{{region radtreemap-populating-with-data-radpivotmap_2}}
-	<telerik:RadPivotMap Name="treeMap1" ValuePath="Value">
+{{region radtreemap-populating-with-data-radpivotmap_0}}
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.DataContext = new List<TestData>()
+		{
+			new TestData { Category = "A", Subcategory = "100", Value = 10 },
+			new TestData { Category = "B", Subcategory = "100", Value = 25 },
+			new TestData { Category = "C", Subcategory = "200", Value = 40 },
+			new TestData { Category = "D", Subcategory = "200", Value = 15 },
+			new TestData { Category = "E", Subcategory = "200", Value = 30 },
+		};
+	}
+{{endregion}}
+
+To bind the __RadPivotMap__ you should use the *__GroupDefinition__* collection and add several __GroupDefinitions__ - one for each of the properties as presented in the class. The __ValuePath__ property specifies from where the data should be taken. We can also change the color of the groups using [Colorizer]({%slug radtreemap-mappings%}).
+
+#### __[XAML] Example 3__
+
+{{region xaml-radtreemap-populating-with-data-radpivotmap_2}}
+	<Window.Resources>
+		<telerik:PaletteBrushes x:Key="PivotMapBrushes">
+			<SolidColorBrush Color="#69C7D3" />
+			<SolidColorBrush Color="#B1E292" />
+			<SolidColorBrush Color="#D2B4E2" />
+			<SolidColorBrush Color="#A2D7F0" />
+			<SolidColorBrush Color="#E8D982" />
+			<SolidColorBrush Color="#BBDBC6" />
+			<SolidColorBrush Color="#B0BADB" />
+		</telerik:PaletteBrushes>        
+	</Window.Resources>
+	<telerik:RadPivotMap Name="treeMap1" 
+							ValuePath="Value" 
+							ItemsSource="{Binding}">
 		<telerik:RadPivotMap.GroupDefinitions>
-						<telerik:GroupDefinition Member="Category" />
-						<telerik:GroupDefinition Member="SubCategory" />
+			<telerik:GroupDefinition Member="Category">
+				<telerik:GroupDefinition.Mappings>
+					<telerik:PaletteColorizer Brushes="{StaticResource PivotMapBrushes}" />
+				</telerik:GroupDefinition.Mappings>               
+			</telerik:GroupDefinition>
+			<telerik:GroupDefinition Member="SubCategory" />
 		</telerik:RadPivotMap.GroupDefinitions>
 	</telerik:RadPivotMap>
 {{endregion}}
+
+#### __Figure 1__
+![Telerik {{ site.framework_name }} PivotMap](images/radpivotmap-databinding.png)
 
 You can bind the RadPivotMap to any source that implements one of the following interfaces:
 

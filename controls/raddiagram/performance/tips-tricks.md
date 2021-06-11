@@ -121,6 +121,32 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 	   }
 	}
 {{endregion}}
+
+## Dynamic GraphSource Change
+
+To use the diagram in a scenario with dynamic change of the graph source, you need to set the GraphSource property of the control in code behind. This allows you to make dynamic changes to the graph source. If you layout the diagram after the GraphSource change, you need to ensure that, e.g., layout roots are set correctly.
+
+#### __[C#] Example 6: Suppress selection while pasting__
+{{region raddiagram-performance-tips-tricks_4}}
+    MainViewModel viewModel;
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.viewModel = new MainViewModel();
+		this.diagram.GraphSource = this.viewModel.GraphSource;
+	}
+	private void LayoutButtonClicked(object sender, RoutedEventArgs e)
+	{         
+		this.diagram.GraphSource = null;
+		this.diagram.GraphSource = this.viewModel.GraphSource;
+	 
+	    // In a case you are using Diagram Layout
+		this.SetLayoutRoots(); // custom method to set again the roots
+		this.diagram.LayoutAsync(LayoutType.Tree, settings);
+	}
+{{endregion}}
+
+
 	   
 ## See Also
 

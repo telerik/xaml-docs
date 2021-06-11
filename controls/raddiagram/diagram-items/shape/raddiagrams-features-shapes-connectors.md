@@ -1,6 +1,6 @@
 ---
 title: Connectors
-page_title: Connectors
+page_title: Shape Connectors | WPF Diagram
 description: Telerik RadDiagram for {{ site.framework_name }} Shape Connectors.
 slug: raddiagrams-features-shapes-connectors
 tags: shapes,connectors
@@ -52,6 +52,25 @@ To hide the default connectors you can set the __UseDefaultConnectors__ property
 You can see how to use custom connectors in the [Custom Connectors]({%slug raddiagram-features-custom-connectors%}) article.
 
 Additionally, you can customize the default appearance of the connector points through the __ConnectorStyle__ property of RadDiagramShape which allows you to apply a custom style on them.
+
+## Undo Command When Using Custom Connectors
+
+The diagram doesn't support undo custom type connectors when __Undo command__ is executed. Executing the command will create the connectors of type __RadDiagramConnector__ by default. To Undo custom connectors, your custom class needs to implement the __ICloneable__ interface. Then you can implement its Clone() method and return your custom type.
+
+#### __{C#] Example 1: Undo Custom Connectors__
+
+{{region csharp-raddiagrams-features-shapes-connectors_0}}
+	public class CustomConnector : RadDiagramConnector, ICloneable
+	{
+		object ICloneable.Clone()
+		{
+			CustomConnector diagramConnector = new CustomConnector();
+			diagramConnector.Name = this.Name;
+			diagramConnector.Offset = this.Offset;
+			return diagramConnector;
+		}
+	}
+{{endregion}}
 
 ## See Also  
  * [Structure]({%slug raddiagram-structure%})

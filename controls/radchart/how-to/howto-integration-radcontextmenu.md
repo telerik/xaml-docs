@@ -26,7 +26,7 @@ Basically, the approach that will be demonstrated here combines the [MVVM suppor
 
 You will need several helper classes that will be used for the __RadChart__ and __RadContextMenu__ population.
 
-* Create a new class named __MenuItem__. The class represents a single item in the __RadContextMenu__. Note that the class has absolutely the same properties as the __RadMenuItem__ used in the context menu. The idea here is to bind the different properties of the __MenuItem__ business object to the corresponding properties of the __RadMenuItem__ using __ContainerBindingCollection__.
+* Create a new class named __MenuItem__. The class represents a single item in the __RadContextMenu__. Note that the class has absolutely the same properties as the __RadMenuItem__ used in the context menu. The idea here is to bind the different properties of the __MenuItem__ business object to the corresponding properties of the __RadMenuItem__ using a __Style__ object.
 
 #### __C#__
 

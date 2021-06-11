@@ -262,26 +262,6 @@ The __State__ property of the __RadFluidContentControl__ is databound to the __C
 {{endregion}}
 
 In order to change the content of each __RadTileViewItem__ accordingly to its state, the __RadTileViewItem's TileState__ property should be databound to the __ContentState__ business property:
-				
-{% if site.site_name == 'Silverlight' %}
-Using [ContainerBindingCollection](http://www.telerik.com/help/silverlight/radtreeview-how-to-bind-hierarchical-data-use-containerbindingcollection.html) to databind the __TileState__ property is a pretty simple action. For example, see the code snippet below. The only thing you should do is to define the __ContainerBinding__ and to attach the binding collection to the __ItemTemplate__:
-
-#### __XAML__
-
-{{region radtileview-howto-use-fluidcontentcontrol-in-tileview_8}}
-	<telerik:ContainerBindingCollection x:Key="ContainerBindingCollection">
-		<telerik:ContainerBinding PropertyName="TileState"
-				Binding="{Binding ContentState, Mode=TwoWay, Converter={StaticResource tileStateConverter}}" />
-	</telerik:ContainerBindingCollection>
-	<DataTemplate x:Key="ItemTemplate"
-			telerik:ContainerBinding.ContainerBindings="{StaticResource ContainerBindingCollection}">
-		<TextBlock Text="{Binding Header}" />
-	</DataTemplate>
-{{endregion}}
-
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
 
 Using  __Style__ to databind the __TileState__ property is a pretty simple action. For example, see the code snippet below. The only thing you should do is define a __RadTileViewItem Style__ and apply it to the __RadTileView__:
 
@@ -289,14 +269,10 @@ Using  __Style__ to databind the __TileState__ property is a pretty simple actio
 
 {{region radtileview-howto-use-fluidcontentcontrol-in-tileview_9}}
 	<Style TargetType="telerik:RadTileViewItem" x:Key="ItemContainerStyle">
-		<Setter Property="TileState"
-				Value="{Binding ContentState, Mode=TwoWay, Converter={StaticResource tileStateConverter}}" />
+		<Setter Property="TileState" Value="{Binding ContentState, Mode=TwoWay, Converter={StaticResource tileStateConverter}}" />
 	</Style>
-	<telerik:RadTileView x:Name="radTileView" ItemContainerStyle="{StaticResource ItemContainerStyle}">
-	</telerik:RadTileView>
+	<telerik:RadTileView x:Name="radTileView" ItemContainerStyle="{StaticResource ItemContainerStyle}" />
 {{endregion}}
-
-{% endif %}
 
 The definition of the __TileStateConverter__ class is:
 
@@ -305,7 +281,6 @@ The definition of the __TileStateConverter__ class is:
 {{region radtileview-howto-use-fluidcontentcontrol-in-tileview_10}}
 	public class TileStateConverter : IValueConverter
 	{
-	 #region IValueConverter Members
 	 public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	 {
 	  var contentState = (ContentState)value;
@@ -344,7 +319,6 @@ The definition of the __TileStateConverter__ class is:
 {{region radtileview-howto-use-fluidcontentcontrol-in-tileview_11}}
 	Public Class TileStateConverter
 	Implements IValueConverter
-	 #Region "IValueConverter Members"
 	 Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object Implements System.Windows.Data.IValueConverter.Convert
 	  Dim contentState = CType(value, ContentState)
 	  Select Case contentState
@@ -371,25 +345,10 @@ The definition of the __TileStateConverter__ class is:
 	    Return ContentState.NormalContent
 	  End Select
 	 End Function
-	 #End Region
 	End Class
 {{endregion}}
 
 Define the __RadTileView__:
-
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-{{region radtileview-howto-use-fluidcontentcontrol-in-tileview_12}}
-	<telerik:RadTileView x:Name="radTileView" ContentTemplate="{StaticResource ContentTemplate}"
-			ItemTemplate="{StaticResource ItemTemplate}" MinimizedColumnWidth="200" MinimizedItemsPosition="Right"
-			MinimizedRowHeight="200" />
-{{endregion}}
-
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
@@ -398,8 +357,6 @@ Define the __RadTileView__:
 			ItemContainerStyle="{StaticResource ItemContainerStyle}" ItemTemplate="{StaticResource ItemTemplate}"
 			MinimizedColumnWidth="200" MinimizedItemsPosition="Right" MinimizedRowHeight="200" />
 {{endregion}}
-
-{% endif %}
 
 Populate the __RadTileView ItemsSource__ collection using the __MyViewModel.GenerateItems()__ method:
 
@@ -463,50 +420,6 @@ Populate the __RadTileView ItemsSource__ collection using the __MyViewModel.Gene
 
 {% endif %}
 
-Here is the final __XAML__:
-				
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-{{region radtileview-howto-use-fluidcontentcontrol-in-tileview_18}}
-	<UserControl.Resources>
-		<local:FluidContentStateConverter x:Key="fluidContentStateConverter" />
-		<local:TileStateConverter x:Key="tileStateConverter" />
-		<telerik:ContainerBindingCollection x:Key="ContainerBindingCollection">
-			<telerik:ContainerBinding PropertyName="TileState"
-					Binding="{Binding ContentState, Mode=TwoWay, Converter={StaticResource tileStateConverter}}" />
-		</telerik:ContainerBindingCollection>
-		<DataTemplate x:Key="ItemTemplate"
-				telerik:ContainerBinding.ContainerBindings="{StaticResource ContainerBindingCollection}">
-			<TextBlock Text="{Binding Header}" />
-		</DataTemplate>
-		<DataTemplate x:Key="ContentTemplate">
-			<telerik:RadFluidContentControl ContentChangeMode="Manual"
-					State="{Binding ContentState, Converter={StaticResource fluidContentStateConverter}}">
-				<telerik:RadFluidContentControl.SmallContent>
-					<Image Source="{Binding SmallImage}" />
-				</telerik:RadFluidContentControl.SmallContent>
-				<telerik:RadFluidContentControl.Content>
-					<Image Source="{Binding Image}" />
-				</telerik:RadFluidContentControl.Content>
-				<telerik:RadFluidContentControl.LargeContent>
-					<Image Source="{Binding LargeImage}" />
-				</telerik:RadFluidContentControl.LargeContent>
-			</telerik:RadFluidContentControl>
-		</DataTemplate>
-	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Background="White">
-		<telerik:RadTileView x:Name="radTileView" ContentTemplate="{StaticResource ContentTemplate}"
-				ItemTemplate="{StaticResource ItemTemplate}" MinimizedColumnWidth="200" MinimizedItemsPosition="Right"
-				MinimizedRowHeight="200" />
-	</Grid>
-{{endregion}}
-
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
-
 #### __XAML__
 
 {{region radtileview-howto-use-fluidcontentcontrol-in-tileview_19}}
@@ -543,6 +456,4 @@ Here is the final __XAML__:
 	</Window>
 {{endregion}}
 
-{% endif %}
-
-You can find a project demonstrating the described approach {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/community/code-library/silverlight/general/how-to-use-radfluidcontentcontrol-inside-the-radtileview-control.aspx){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/community/code-library/wpf/general/how-to-use-the-radfluidcontentcontrol-in-radtileview.aspx){% endif %}.
+You can find a project demonstrating the described approach [here]({%slug radtileview-howto-use-fluidcontentcontrol-in-tileview%}).

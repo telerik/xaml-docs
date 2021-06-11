@@ -12,12 +12,6 @@ position: 4
 
 The __RadMap__ control allows you to display rich geographical information from various sources, including Microsoft Bing Maps, as well as to overlay the map with your own custom data. This topic will help you to quickly get started using the control. It will focus on the following:      
 
-* [Creating a RadMap](#creating-a-radmap)
-
-* [Specifying a Provider](#specifying-a-provider)
-
-* [Displaying Data](#displaying-data)
-
 ## Creating a RadMap
 
 >In order to use __RadMap__ in your projects you have to add references to the following assemblies:
@@ -29,7 +23,7 @@ The __RadMap__ control allows you to display rich geographical information from 
 After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        
 
 #### __[XAML] Example 1: Defining map in XAML__
-{{region radmap-getting-started_1}}
+{{region radmap-getting-started_0}}
    	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 		<Grid x:Name="LayoutRoot">
 			<telerik:RadMap x:Name="radMap" />
@@ -56,7 +50,7 @@ The __RadMap__ control doesn't display a map on itself, it needs a map provider 
 This example will use __Bing Maps__ as its provider. In order to do that you have to set the __Provider__ property of the __RadMap__ to the built-in __BingMapProvider__ class.        
 
 #### __[XAML] Example 2: Specifying provider to the RadMap control__
-{{region radmap-getting-started_4}}
+{{region radmap-getting-started_1}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 		<Grid x:Name="LayoutRoot">
 			<telerik:RadMap x:Name="radMap">
@@ -117,6 +111,41 @@ The major goals of the new engine are:
 * Support of items selection in the engine core.
 
 To learn more about the layers and how to display the different types of elements in them, please read the [Visualization layer]({%slug radmap-visualization-layer-introduction%}) section.
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Fluent.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#Map/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadMap__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Data__
+	* __Telerik.Windows.Controls.DataVisualization__
+
+__Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 4: Merge the ResourceDictionaries__  
+{{region radmap-getting-started_04}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.DataVisualization.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+__Figure 4__ shows __RadMap__ with the **Fluent** theme applied.
+	
+#### __Figure 4: RadMap with the Fluent theme__
+![Telerik {{ site.framework_name }} Map-fluent](images/radmap-fluent.png)
 
 ## See Also
 

@@ -12,15 +12,7 @@ position: 21
 
 This topic will show you how to style the __GridViewCheckBoxColumn__.
 
-* [Styling GridViewCheckBoxColumn in View Mode](#styling-gridviewcheckboxcolumn-in-view-mode)
-
-* [Styling GridViewCheckBoxColumn in Edit Mode](#styling-gridviewcheckboxcolumn-in-edit-mode)
-
-* [Applying the Styles to GridViewCheckBoxColumn explicitly](#applying-the-styles-to-gridviewcheckboxcolumn-explicitly)
-
-* [Centering GridViewCheckBoxColumn](#centering-gridviewcheckboxcolumn) 
-
-The cells of __RadGridView__ have two templates for their current state - when in __view mode__ and in __edit mode__. By default, __GridViewCheckBoxColumn__ uses a __GridViewCheckBox__ when in __view mode__ and the standard __CheckBox__ control as its __editor__. __GridViewCheckBox__ is an element that emulates the behavior of a __CheckBox__ and is especially designed for __RadGridView__. 
+The cells of __RadGridView__ have two different elements for their current state - when in __view mode__ and in __edit mode__. By default, the __GridViewCheckBoxColumn__ uses a __GridViewCheckBox__ when in __view mode__ and the standard __CheckBox__ control as its __editor__. The __GridViewCheckBox__ is an element that emulates the behavior of a __CheckBox__ and is especially designed for __RadGridView__ to improve its performance. 
 
 >In order to style the whole cell rather than the __GridViewCheckBox__ element only, you can set the __CellStyle__ property of the __GridViewCheckBoxColumn__. You can find more information in the [Styling Cells]({%slug gridview-styling-cell%}) topic. 
 
@@ -29,101 +21,50 @@ The cells of __RadGridView__ have two templates for their current state - when i
 #### __Figure 1: Default look of GridViewCheckBox__        
 ![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 01](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
 
-In order to modify the visual appearance of a cell in __view mode__, the __ControlTemplate__ of __GridViewCheckBox__ should be modified.
+In order to modify the visual appearance of a cell when in __view mode__ you need to create an appropriate style targeting the **GridViewCheckBox** element. You can also [edit its control template]({%slug styling-apperance-editing-control-templates%}) if you wish to apply further customizations.
 
-#### __[XAML] Example 1: Defining the ControlTemplate of GridViewCheckBox__
-{{region xaml-gridview-columns-styling-checkboxcolumn-0}}
-	<ControlTemplate x:Key="GridViewCheckBoxTemplate" TargetType="grid:GridViewCheckBox">
-            ...
-    </ControlTemplate>
-{{endregion}}
-
-After the needed __ControlTemplate__ is defined, it can be applied using the __Template__ property of __GridViewCheckBox__.
-
-#### __[XAML] Example 2: Applying the ControlTemplate to GridViewCheckBox__
+#### __[XAML] Example 2: Applying the style to the GridViewCheckBox__
 {{region xaml-gridview-columns-styling-checkboxcolumn-1}}
-	<Style x:Key="GridViewCheckBoxStyle" TargetType="grid:GridViewCheckBox">
-    	<Setter Property="Template" Value="{StaticResource GridViewCheckBoxTemplate}"/>
-	</Style>
+	<ControlTemplate x:Key="GridViewCheckBoxTemplate" TargetType="grid:GridViewCheckBox">
+		<!-- the default template for the theme -->
+    </ControlTemplate>
 
-	<Style TargetType="grid:GridViewCheckBox" BasedOn="{StaticResource GridViewCheckBoxStyle}"/>
+	<!-- If you're using the NoXaml binaries you need to set the BasedOn property of the two styles to the GridViewCellStyle and GridViewCheckBoxStyle static resources --> 
+	<Style TargetType="telerik:GridViewCell">
+		<Style.Resources>
+			<Style TargetType="telerik:GridViewCheckBox">
+				<Setter Property="Background" Value="Red" />
+				<Setter Property="Template" Value="{StaticResource GridViewCheckBoxTemplate}"/>
+			</Style>
+		</Style.Resources>
+	</Style>
 {{endregion}}
+
+>If you want to apply this style only to a particular column, you can assign it an x:Key value and set the **CellStyle** property of the respective column.
 
 ## Styling GridViewCheckBoxColumn in Edit Mode
 
-In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__, a __ControlTemplate__ targeting the __CheckBox__ control should be defined.
+In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__, you need to create an appropriate style targeting the __CheckBox__ control.
 
-#### __[XAML] Example 3: Defining the ControlTemplate of CheckBox__
+#### __[XAML] Example 3: Applying the style to the CheckBox__
 {{region xaml-gridview-columns-styling-checkboxcolumn-2}}
 	<ControlTemplate TargetType="CheckBox" x:Key="CheckBoxTemplate">
-            ...
+        <!-- the default template for the theme -->
     </ControlTemplate>
-{{endregion}}
 
-The customized __ControlTemplate__ can be applied as follows.
-
-#### __[XAML] Example 4: Applying the ControlTemplate to CheckBox__
-{{region xaml-gridview-columns-styling-checkboxcolumn-3}}
-	<Style x:Key="CheckBoxStyleGridViewColumn" TargetType="CheckBox">
-    	<Setter Property="Template" Value="{StaticResource CheckBoxTemplate}"/>
-    </Style>
-
-    <Style TargetType="CheckBox" BasedOn="{StaticResource CheckBoxStyleGridViewColumn}"/>
-{{endregion}}
-
-## Applying the Styles to GridViewCheckBoxColumn explicitly
-
-The aforementioned approach implies defining the styles __implicitly__. If you need to apply the modifications to a particular instance of __RadGridView__, you can apply these Styles __explicitly__ through the __Resources__ of __RadGridView__.
-
-#### __[XAML] Example 5: Opening Resources tag__
-{{region gridview-columns-styling-checkboxcolumn-4}}
-	<telerik:RadGridView.Resources>
-		...
-	</telerik:RadGridView.Resources>
-{{endregion}}
-
-## Centering GridViewCheckBoxColumn
-
-In order to center the __CheckBox__ in __GridViewCheckBoxColumn__, you can define a style targeting __GridViewCell__ and set the __HorizontalContentAlignment__ property to __"Center"__:
-
-####  __[XAML] Example 4: Centering the GridViewCheckBoxColumn__
-{{region xaml-gridview-checkbox-column-4}}
-	<Style x:Key="MyCheckBoxColumnCellStyle" TargetType="telerik:GridViewCell">
-	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	<!-- If you're using the NoXaml binaries you need to set the BasedOn property of the style to the CheckBoxStyle static resources --> 
+	<Style x:Key="MyCheckBoxStyle" TargetType="CheckBox">
+		<Setter Property="Background" Value="Red" />
+		<Setter Property="Template" Value="{StaticResource CheckBoxTemplate}"/>
 	</Style>
 {{endregion}}
 
-Now the __GridViewCheckBoxColumn__ will look like:
+You then need to set this style as the [EditorStyle]({%slug radgridview-styling-column-editor%}) property of the columns you wish to affect.
 
-#### __Figure 2: Centered GridViewCheckBoxColumn__     
-
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 03](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_03.PNG)
-
-However, there is a pixel offset when the __GridViewCheckBoxColumn__ goes into edit mode:
-
-#### __Figure 3: Centered GridViewCheckBoxColumn in edit mode__       
-
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 04](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_04.PNG)
-
-In order to align the default editor of __GridViewCheckBoxColumn__ correctly, you can specify a different __Margin__ for it by handling the __PreparingCellForEdit__ event of __RadGridView__:        
-
-#### __[C#] Example 6: Setting the Margin of the Editor GridViewCheckBoxColumn__
-{{region xaml-gridview-checkbox-column-5}}
-	private void RadGridView_PreparingCellForEdit(object sender, Telerik.Windows.Controls.GridViewPreparingCellForEditEventArgs e)
-	{
-	   if (e.Column.UniqueName == "GridViewCheckBoxColumn")
-	   {
-	       var checkBox = e.EditingElement as CheckBox;
-	       checkBox.Margin = new Thickness(4, 0, -3, 0);
-	   }
-	}
+#### __[XAML] Example 4: Applying the style to the CheckBox__
+{{region xaml-gridview-columns-styling-checkboxcolumn-3}}
+	<telerik:GridViewCheckBoxColumn EditorStyle="{StaticResource MyCheckBoxStyle}" />
 {{endregion}}
-
-Here is the result:
-
-#### __Figure 4 GridViewCheckBoxColumn with set margin__
-        
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 05](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_05.PNG)
 
 ## See Also
  * [CheckBox Column]({%slug gridview-checkbox-column%})

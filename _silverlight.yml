@@ -152,7 +152,8 @@ controls/radslider/features/multiple-thumbs,
 controls/radcardview,
 getting-started/telerik-application-lifecycle,
 controls/radbarcode/,
-testing]
+testing,
+common-information/winforms-integration]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

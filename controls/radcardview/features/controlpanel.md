@@ -20,36 +20,38 @@ The following example is an extended version of the sample from the [Getting Sta
 
 #### __[XAML] Example 1: Defining GridViewControlPanelItems__
 {{region radcardview-features-control-panel-0}}
-	<telerik:RadCardView x:Name="cardView"   
-						 CardHeaderBinding="{Binding Header}" 
-						 MinorLength="140">
+	<telerik:RadCardView x:Name="cardView" CardHeaderBinding="{Binding Header}" MinorLength="140">
 		<telerik:RadCardView.ControlPanelItems>
-			<telerik:CardViewControlPanelItem>
-				<telerik:CardViewControlPanelItem.ButtonContent>
-					<telerik:RadGlyph Glyph="&#xe401;" />
-				</telerik:CardViewControlPanelItem.ButtonContent>
-				<telerik:CardViewControlPanelItem.Content>
-					<TextBlock Text="Find more information about the control in the help documentation."
-							   MaxWidth="150" TextWrapping="Wrap" Padding="6" />
-				</telerik:CardViewControlPanelItem.Content>
-			</telerik:CardViewControlPanelItem>
-			<telerik:CardViewControlPanelItem ButtonTooltip="Descriptor Settings">
-				<telerik:CardViewControlPanelItem.ButtonContent>
-					<telerik:RadGlyph Glyph="&#xe13a;" />
-				</telerik:CardViewControlPanelItem.ButtonContent>
-				<telerik:CardViewControlPanelItem.Content>
-					<telerik:RadListBox ItemsSource="{Binding ElementName=cardView, Path=DataFieldDescriptors}">
-						<telerik:RadListBox.ItemTemplate>
-							<DataTemplate>
-								<CheckBox Content="{Binding Header}" IsChecked="{Binding IsVisible, Mode=TwoWay}" />
-							</DataTemplate>
-						</telerik:RadListBox.ItemTemplate>
-					</telerik:RadListBox>
-				</telerik:CardViewControlPanelItem.Content>
-			</telerik:CardViewControlPanelItem>               
+			<cardView:ControlPanelItemCollection>
+			    <cardView:CardViewControlPanelItem>
+				<cardView:CardViewControlPanelItem.ButtonContent>
+				    <telerik:RadGlyph Glyph="&#xe401;" />
+				</cardView:CardViewControlPanelItem.ButtonContent>
+				<cardView:CardViewControlPanelItem.Content>
+				    <TextBlock Text="Find more information about the control in the help documentation."
+						MaxWidth="150" TextWrapping="Wrap" Padding="6" />
+				</cardView:CardViewControlPanelItem.Content>
+			    </cardView:CardViewControlPanelItem>
+			    <cardView:CardViewControlPanelItem ButtonTooltip="Descriptor Settings">
+				<cardView:CardViewControlPanelItem.ButtonContent>
+				    <telerik:RadGlyph Glyph="&#xe13a;" />
+				</cardView:CardViewControlPanelItem.ButtonContent>
+				<cardView:CardViewControlPanelItem.Content>
+				    <telerik:RadListBox ItemsSource="{Binding ElementName=cardView, Path=DataFieldDescriptors}">
+					<telerik:RadListBox.ItemTemplate>
+					    <DataTemplate>
+						<CheckBox Content="{Binding Header}" IsChecked="{Binding IsVisible, Mode=TwoWay}" />
+					    </DataTemplate>
+					</telerik:RadListBox.ItemTemplate>
+				    </telerik:RadListBox>
+				</cardView:CardViewControlPanelItem.Content>
+			    </cardView:CardViewControlPanelItem>
+			</cardView:ControlPanelItemCollection>               
 		</telerik:RadCardView.ControlPanelItems>
 	</telerik:RadCardView>
 {{endregion}}
+
+>tip `cardView:` points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`. 
 
 #### Figure 1: CardView Control Panel
 ![](images/radcardview-features-control-panel-0.png)
@@ -87,14 +89,14 @@ The following example is an extended version of the sample from the [Getting Sta
                      CardHeaderBinding="{Binding Header}" 
                      MinorLength="140">
             <telerik:RadCardView.ControlPanelItems>
-                <telerik:CardViewControlPanelItem ButtonContent="&#xe401;" 
-                                                  Content="Find more information about the control in the help documentation."
-                                                  ButtonContentTemplate="{StaticResource ControlPanelItemButtonContentTemplate}"
-                                                  ContentTemplate="{StaticResource ControlPanelItemContentTemplate}"/>
-                <telerik:CardViewControlPanelItem ButtonContent="&#xe13a;" 
-                                                  Content="Define some custom UI in the template."
-                                                  ButtonContentTemplate="{StaticResource ControlPanelItemButtonContentTemplate}"
-                                                  ContentTemplate="{StaticResource ControlPanelItemContentTemplate}"/>
+                <cardView:CardViewControlPanelItem ButtonContent="&#xe401;" 
+                                                   Content="Find more information about the control in the help documentation."
+                                                   ButtonContentTemplate="{StaticResource ControlPanelItemButtonContentTemplate}"
+                                                   ContentTemplate="{StaticResource ControlPanelItemContentTemplate}"/>
+                <cardView:CardViewControlPanelItem ButtonContent="&#xe13a;" 
+                                                   Content="Define some custom UI in the template."
+                                                   ButtonContentTemplate="{StaticResource ControlPanelItemButtonContentTemplate}"
+                                                   ContentTemplate="{StaticResource ControlPanelItemContentTemplate}"/>
             </telerik:RadCardView.ControlPanelItems>
         </telerik:RadCardView>
     </Grid>

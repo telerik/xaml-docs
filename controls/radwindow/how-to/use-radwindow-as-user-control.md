@@ -126,3 +126,10 @@ Then create a new instance of the custom RadWindow and show it in the __OnStartu
 {{endregion}}
 
 The important part is setting __TargetType__ property to the type of the user control.
+
+>In addition, due to a change in the XAML Designer in Visual Studio version 16.9 (and newer), if the RadWindow is used as Main Window or UserControl, it will __not__ be displayed in design time. To display it, you need to apply the following explicit style:
+
+#### __XAML__  
+{{region xaml-radwindow-how-to-use-radwindow-as-user-control_9}}
+	<telerik:RadWindow (namespaces omitted) ... Style="{StaticResource RadWindowStyle}"/>
+{{endregion}}

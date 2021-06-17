@@ -23,6 +23,15 @@ In order to achieve optimal load performance with RadFileDialogs controls, you s
 * When developing an application that contains RadFileDialogs, run it in __Release__ mode, instead of in __Debug__ mode. This way you will avoid the caught exceptions while traversing the file system, which will improve performance.
 
 * Setting the __LoadDrivesInBackground__ property to __true__ will force the file dialogs to load all drives in a background thread. This will improve the loading time of the controls.
+
+* Disabling the animations in the dialogs also leads to better performance. This can be done via the attached **AnimationManager.IsAnimationEnabled** property:
+
+	#### __[C#] Example 1: Disable animations in the file dialogs__
+	{{region cs-radfiledialogs-how-to-improve-load-performance-0}}
+		AnimationManager.SetIsAnimationEnabled(fileDialog, false);
+	{{endregion}}
+
+* Due to the UI virtualization feature of the dialogs, the fewer elements which are loaded in the view, the faster the load time of the dialogs. Thus, you can reduce the default size of the dialogs or use a [layout type]({%slug radfiledialogs-features-common%}#setting-the-initial-layout-of-the-tiles) which renders fewer items in the view (LargeIcons or Tiles, for example) to improve performance.
             
 ## See Also
 

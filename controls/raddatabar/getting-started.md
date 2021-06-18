@@ -20,8 +20,25 @@ This tutorial will walk you through the required steps for using __RadDataBar__.
 
 In order to add __RadDataBar__ in your application, you need to add references to the following assemblies:
 
+* __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
+
+## Visualization Types
+
+The RadDataBar suite contains the following controls representing the different visualizations.
+
+* __RadDataBar__: Displays a single data bar representing a value. It is useful for comparing quantitative values of data. You can easily highlight negative values.   
+
+    ![](images/RadDataBar_databar.PNG)
+
+* __RadStackedDataBar__: Displays a set of stacked bars where each bar represents a value. The size of each bar is calculated in accordance to the set Minimum and Maximum properties.   
+
+    ![](images/RadDataBar_stackeddatabar.PNG)
+
+* __RadStacked100DataBar__: Displays a set of stacked bars where each value represents a percentage of the value. The percent is calculated based on the bar's value and the sum of all values in the stack.  
+
+    ![](images/RadDataBar_stacked100databar.PNG)
 
 ## Adding RadDataBar to the Project
 

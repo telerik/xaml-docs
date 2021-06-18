@@ -108,6 +108,41 @@ __RadBusyIndicator__ exposes a __BusyContentTemplate__ property of type DataTemp
 
 You can notify the users about an ongoing process with a specific delay when __RadBusyIndicator__ is used. By changing the __DisplayAfter__ property to a certain __TimeSpan__, __RadBusyIndicator__ will be shown after the corresponding amount of time elapses - the default value of this delay is 100 milliseconds. For detailed information about using a delay with __RadBusyIndicator__, look at [this article]({%slug radbusyindicator-features-delayed-display%}).
 
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Fluent.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#BusyIndicator/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadBreadcrumb__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+
+__Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 5: Merge the ResourceDictionaries__  
+{{region xaml-radbusyindicator-getting-started_5}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+>Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+
+__Figure 1__ shows a __RadBusyIndicator__ with the **Fluent** theme applied.
+	
+#### __Figure 1: RadBusyIndicator with the Fluent theme__
+![RadBusyIndicator with Fluent theme](images/radbusyindicator-setting-theme.png)
+
 ## See Also
 
  * [Overview]({%slug radbusyindicator-overview%})

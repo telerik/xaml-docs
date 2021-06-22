@@ -9,11 +9,7 @@ position: 4
 ---
 
 # Selection Mini Tool Bar
-
-
-
-## 
-
+ 
 __SelectionMiniToolBar__ is a floating toolbar that appears next to the current position after making a selection with the mouse in the document. It contains some useful commands for formatting text.
   
 
@@ -28,3 +24,15 @@ As __RadRichTextBox__ loads the default __SelectionMiniToolBar__ using [MEF](htt
 
 And of course, for those of you who don't need additional UI pop-ups, these can be disabled by setting the __IsSelectionMiniToolBarEnabled__ property of __RadRichTextBox__ to __False__.
         
+By default the __SelectionMiniToolBar__ has a transpareny effect. This effect can be disabled with the __IsTransparencyEnabled__ property.
+        
+#### __[C#] Example 1:  Disable the transparensy effect of the SelectionMiniToolBar__
+
+{{region cs-radrichtextbox-features-selection-mini-toolbar_0}}
+
+    var miniToolbar = radRichTextBox.SelectionMiniToolBar as SelectionMiniToolBar;
+    miniToolbar.IsTransparencyEnabled = false;
+
+{{endregion}}
+
+

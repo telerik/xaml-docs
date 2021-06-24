@@ -12,7 +12,7 @@ position: 9
 
 Categorical series in RadChartView have a mechanism which can be used for combining data points that reside in different series but have the same category. This mechanism can be triggered by setting the __CombineMode__ property of the series. It is an enumeration and it allows the following values: __None, Cluster, Stack, Stack100__.
 
->tip Categorical series which supports this mechanism are: __AreaSeries, BarSeries, LineSeries, PointSeries, RangeBarSeries__.
+>tip Categorical series which supports this mechanism are: __AreaSeries, BarSeries, LineSeries, PointSeries, RangeBarSeries, BoxPlotSeries__. RangeBarSeries and BoxPlotSeries support only None and Cluster modes.
 
 #### __[XAML] Example 1: Setting the CombineMode property__
 {{region xaml-radchartview-features-combinemode_0}}

@@ -16,7 +16,7 @@ This tutorial will walk you through the creation of a sample application that co
 * [Add RadAutoCompleteBox to the Project](#add-radautocompletebox-to-the-project)
 * [Populate with Data](#populate-with-data)
 * [Customize the Control](#customize-the-control)
-* [Set a Theme](#set-a-theme)
+* [Setting a Theme](#set-a-theme)
 
 ## Assembly References
 

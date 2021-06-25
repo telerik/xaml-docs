@@ -105,9 +105,45 @@ After selecting an item from the drop down list or click on the query icon, you 
 The drop down of the control can be opened or closed manually by setting its __IsDropDownOpen__ property.
 
 #### __[XAML] Example 2: Setting IsDropDownOpen__
-{{region radautosuggestbox-getting-started-}}
+{{region radautosuggestbox-getting-started-3}}
 	<telerik:RadAutoSuggestBox IsDropDownOpen="True" />
 {{endregion}}
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Fluent.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](https://demos.telerik.com/wpf/) application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadAutoSuggestBox__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Input__
+
+__Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 3: Merge the ResourceDictionaries__  
+{{region xaml-radautosuggestbox-getting-started_4}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+>Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
+
+__Figure 2__ shows a __RadAutoSuggestBox__ with the **Fluent** theme applied.
+	
+#### __Figure 2: RadAutoSuggestBox with the Fluent theme__
+![RadAutoSuggestBox with Fluent theme](images/radautosuggestbox-setting-theme.png)
 
 ## Customizing Appearance
 

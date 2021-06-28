@@ -13,8 +13,7 @@ CTAControlName: RadDataBar
 
 {% if site.site_name == 'Silverlight' %}
 ![](images/RadDataBar_overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
+{% else %}
 ![](images/RadDataBar_overview_01wpf.png)
 {% endif %}
 

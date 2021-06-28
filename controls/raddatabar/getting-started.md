@@ -40,27 +40,47 @@ The RadDataBar suite contains the following controls representing the different 
 
     ![](images/RadDataBar_stacked100databar.PNG)
 
-## Adding RadDataBar to the Project
+## Using RadDataBar
 
-#### __[XAML] Example 1: Defining RadDataBar Declaratively__
-{{region raddatabar-gettingstarted_0}}
-	     <telerik:RadDataBar Height="30" 
-                            BorderBrush="Gray"
-							BorderThickness="1"/>
+To display a data bar visualization, you can just add a RadDataBar control in the view and set its __Value__ property. This will create a horizontal bar measured according to the Value. The value range of the bar is defined by its __Minimum__ and __Maximum__ properties, which default values are 0 an 100 respectively.
+
+#### __[XAML] Example 1: Defining RadDataBar__
+{{region raddatabar-getting-started-0}}
+	<telerik:RadDataBar Value="30" Width="300" Height="30" Background="#F7F9FE" />
 {{endregion}}
 
-#### __Figure 1: Adding RadDataBar__
-![Adding RadDataBar](images/RadDataBar_GettingStarted_01.png)
+![](images/raddatabar-getting-started-0.png)
 
-By default the __Value__ property of the control will have a value of __0__. It can be bound to a property of the business model so the required data is displayed. This is covered in details in the [Data Binding]({%slug raddatabar-databinding%}) topic.
+## Using RadStackedDataBar and RadStacked100DataBar
 
-## Displaying collection of Bars
+To display a stacked data bar visualization, you can add a __RadStackedDataBar__ control in the view and set its __ItemsSource__ property. This will create a set of stacked horizontal bars measured according to the values in the ItemsSource. The value range of the bar is defined by its __Minimum__ and __Maximum__ properties, which default values are 0 an 100 respectively.
 
-__RadDataBar__ is intended to display a single value. When you need to display a collection of values, you can use the __RadStackedDataBar__ and __RadStacked100DataBar__ controls. They will both generate a bar for each value present in its __ItemsSource__. 
+#### __[XAML] Example 2: Defining RadStackedDataBar__
+{{region raddatabar-getting-started-1}}
+	<telerik:RadStackedDataBar x:Name="stackedDataBar" Height="30" Width="300" Background="#F7F9FE"/>
+{{endregion}}
 
-The difference between the controls is how the sizes of the bars are calculated. The size of each bar in the **RadStackedDataBar** is calculated in accordance to the set **Minimum** and **Maximum**. On the other hand, each bar's size in the **RadStacked100DataBar** corresponds to the percent of the bar's value compared to the sum of all values in the stack.
+#### __[C#] Example 3: Setting RadStackedDataBar ItemsSource__
+{{region raddatabar-getting-started-2}}
+	public MyUserControl()
+	{
+		InitializeComponent();
+		this.stackedDataBar.ItemsSource = new List<double>() { 16, 20, 12, 32 };
+	}
+{{endregion}}
 
-More information can be found in the [Data Binding]({%slug raddatabar-databinding%}) article.
+![](images/raddatabar-getting-started-1.png)
+
+The __RadStacked100DataBar__ works very similar to the RadStackedDataBar, but instead of using absolute values and relying on the predefined minimum and maximum values, it displays the bars as a percetange of the whole stack. For example, the sum of the values from __Example 3__ is `16 + 20 + 12 + 32 = 80` which will be the range's maximum. Then each value in the ItemsSource is turned to a value relative to the range and based on this information its bar's width is calculated. For example, 20 will be 0.25 which is 25% of the 80's range. This means that the bar for the value 20 will take 25% of the whole data bar.
+
+To define RadStacked100DataBar, use Example 2 and 3, but replace the RadStackedDataBar with RadStacked100DataBar.
+
+#### __[XAML] Example 4: Defining RadStacked100DataBar__
+{{region raddatabar-getting-started-3}}
+	<telerik:RadStacked100DataBar x:Name="stackedDataBar" Height="30" Width="300" Background="#F7F9FE"/>
+{{endregion}}
+
+![](images/raddatabar-getting-started-2.png)
 
 ## See Also
 

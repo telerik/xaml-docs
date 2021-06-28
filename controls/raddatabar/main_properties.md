@@ -10,12 +10,7 @@ position: 3
 
 # Properties
 
-This topic aims to get you familiar with the specific properties of each databar type.
-
-* [DataBinding](#databinding)
-* [RadDataBar](#raddatabar)
-* [RadStackedDataBar and RadStacked100DataBar](#radstackeddatabar-and-radstacked100databar)
-* [RadHorizontalAxis](#radhorizontalaxis)
+This topic aims to get you familiar with the specific properties of each data bar type.
 
 ## DataBinding
 
@@ -62,7 +57,6 @@ This topic aims to get you familiar with the specific properties of each databar
 		 <telerik:RadDataBar Height="20" Value="-100" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
 	{{endregion}}
 
-	The result is below:
 	![raddatabar-originvalue](images/raddatabar-originvalue.PNG)
 
 ## RadStackedDataBar and RadStacked100DataBar

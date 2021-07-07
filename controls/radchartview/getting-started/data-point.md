@@ -26,14 +26,129 @@ The __DataContext__ of most chart templates and styles, as [ToolTipTemplate]({%s
 
 The following table shows which data points are being used by the corresponding series.
 
-| Cartesian Chart Data Points | Pie Chart Data Points | Polar Chart Data Points | Funnel Chart Data Point
-| --- | --- | --- | --- |
-| __CategoricalDataPoint__<ul><li>LineSeries</li><li>StepLineSeries</li><li>SplineSeries</li><li>BarSeries</li><li>AreaSeries</li><li>SplineAreaSeries</li><li>StepAreaSeries</li><li>PointSeries</li</ul> | __PieDataPoint__<ul><li>PieSeries</li><li>DoughnutSeries</li></ul> | __PolarDataPoint__<ul><li>PolarLineSeries</li><li>PolarAreaSeries</li><li>PolarPointSeries</li><li>RadarLineSeries</li><li>RadarAreaSeries</li><li>RadarPointSeries</li></ul> | __FunnelDataPoint__<ul><li>FunnelSeries</li></ul>
-| __ScatterDataPoint__<ul><li>ScatterLineSeries</li><li>ScatterSplineSeries</li><li>ScatterAreaSeries</li><li>ScatterSplineAreaSeries</li><li>ScatterPointSeries</li></ul> |
-| __RangeDataPoint__<ul><li>RangeSeries</li><li>RangeBarSeries</li></ul> |
-| __OhlcDataPoint__<ul><li>OhlcSeries</li><li>CandlestickSeries</li></ul> |
-| __BubbleDataPoint__<ul><li>BubbleSeries</li></ul> |
-| __ScatterBubbleDataPoint__<ul><li>ScatterBubbleSeries</li></ul> |
+<table>
+	<thead>
+		<tr>
+			<th>Cartesian Chart Data Points</th>
+			<th>Pie Chart Data Points</th>
+			<th>Polar Chart Data Points</th>
+			<th>Funnel Chart Data Point</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>CategoricalDataPoint</strong>
+				<ul>
+					<li>LineSeries</li>
+					<li>StepLineSeries</li>
+					<li>SplineSeries</li>
+					<li>BarSeries</li>
+					<li>AreaSeries</li>
+					<li>SplineAreaSeries</li>
+					<li>StepAreaSeries</li>
+					<li>PointSeries</li
+				</ul> 
+			</td>
+			<td>
+				<strong>PieDataPoint</strong>
+				<ul>
+					<li>PieSeries</li>
+					<li>DoughnutSeries</li>
+				</ul>
+			</td>
+			<td>
+				<strong>PolarDataPoint</strong>
+				<ul>
+					<li>PolarLineSeries</li>
+					<li>PolarAreaSeries</li>
+					<li>PolarPointSeries</li>
+					<li>RadarLineSeries</li>
+					<li>RadarAreaSeries</li>
+					<li>RadarPointSeries</li>
+				</ul> 
+			</td>
+			<td>
+				<strong>FunnelDataPoint</strong>
+				<ul>
+					<li>FunnelSeries</li>
+				</ul>
+			</td>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>ScatterDataPoint</strong>
+				<ul>
+					<li>ScatterLineSeries</li>
+					<li>ScatterSplineSeries</li>
+					<li>ScatterAreaSeries</li>
+					<li>ScatterSplineAreaSeries</li>
+					<li>ScatterPointSeries</li>
+				</ul> 
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>RangeDataPoint</strong>
+				<ul>
+					<li>RangeSeries</li>
+					<li>RangeBarSeries</li>
+				</ul>
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>OhlcDataPoint</strong>
+				<ul>
+					<li>OhlcSeries</li>
+					<li>CandlestickSeries</li>
+				</ul>
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>BubbleDataPoint</strong>
+				<ul>
+					<li>BubbleSeries</li>
+				</ul> 
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>ScatterBubbleDataPoint</strong>
+				<ul>
+					<li>ScatterBubbleSeries</li>
+				</ul>
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>BoxPlotDataPoint</strong>
+				<ul>
+					<li>BoxPlotSeries</li>
+				</ul>
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+	</tbody>
+</table>
 
 ## DataPoint
 
@@ -62,6 +177,7 @@ Each different DataPoint inheritor implements properties that define the values 
 * [PieDataPoint](#piedatapoint)
 * [PolarDataPoint](#polardatapoint)
 * [FunnelDataPoint](#funneldatapoint)
+* [BoxPlotDataPoint](#boxplotdatapoint)
 
 ## CategoricalDataPoint
 
@@ -108,6 +224,10 @@ The __Angle__ property defines the angle of the data point on the radial (circul
 ## FunnelDataPoint
 
 This data point model is used in funnel chart series. To define the value of the data point the __Value__ property of the __FunnelDataPoint__ needs to be set. The funnel series data points also expose a __Label__ property which contains the associated label.
+
+## BoxPlotDataPoint
+
+The __BoxPlotDataPoint__ is a type of categorical data point, so it has a __Category__ property. But, instead of a single value it works with few additional values accessed via the following properties: __Minimum__, __Maximum__, __LowerQuartile__, __UpperQuartile__ and __Median__. This type of data point is used to describe a box plot element in the BoxPlotSeries.
 
 ## Sampling and DataItem
 

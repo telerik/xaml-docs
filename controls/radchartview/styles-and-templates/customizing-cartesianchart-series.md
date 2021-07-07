@@ -37,10 +37,11 @@ This article demonstrates how you can change the default look of the __RadCartes
 * [Customizing Financial Series](#customizing-financial-series)
 	* [OhlcSeries](#ohlcseries)
 	* [CandlestickSeries](#candlestickseries)	
+* [CandlestickSeries](#customizing-box-plot-series)	
 	
 ## Customizing Data Points Using DefaultVisualStyle
 
-The different chart series use different visual elements to display their data points - a bar, an ellipse, etc. You can apply a custom style for those elements via the __DefaultVisualStyle__ property. The property accepts a value of type __Style__ which targets the visual element of the corresponding series. There is an additional __DefaultVisualStyleSelector__ property which can be used to apply different style for the different data point visuals in a series.
+The different chart series use different visual elements to display their data points - a bar, an ellipse, etc. You can apply a custom style for those elements via the __DefaultVisualStyle__ property. The property accepts a value of type __Style__ which targets the visual element of the corresponding series. There is an additional __DefaultVisualStyleSelector__ property which can be used to apply different style for the different data point visuals in a series. The selector property is of type [StyleSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.styleselector?redirectedfrom=MSDN&view=net-5.0).
 
 #### __[XAML] Example 1: Setting DefaultVisualStyle of BarSeries__
 {{region radchartview-customizing-cartesianchart-series26}}
@@ -76,7 +77,7 @@ Since Q1 2016, all Cartesian series (excluding RangeSeries) are rendering defaul
 
 ## Customizing Data Points Using PointTemplate
 
-All series supported by the __RadCartesianChart__ expose a __PointTemplate__ property. It is of type __DataTemplate__ and gets or sets the template that describes the visual representation of the data points in a series. There is an additiona __PointTemplateSelector__ property which can be used to apply different visuals for the different data points in a series. 
+All series supported by the __RadCartesianChart__ expose a __PointTemplate__ property. It is of type __DataTemplate__ and gets or sets the template that describes the visual representation of the data points in a series. There is an additiona __PointTemplateSelector__ property which can be used to apply different visuals for the different data points in a series. The selector property is of type [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=net-5.0).
 
 >tip Using PointTemplate is recommended only when the __DefaultVisualStyle__ cannot be used. 
    
@@ -110,8 +111,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 	</telerik:PointSeries.DefaultVisualStyle>  
 {{endregion}}
 
->tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
-
 ![radchartview-styles-and-templates-pointseries-defaultvisualstyle](images/radchartview-styles-and-templates-pointseries-defaultvisualstyle.png)
 
 ### ScatterPointSeries
@@ -128,8 +127,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
         </Style>
     </telerik:ScatterPointSeries.DefaultVisualStyle>  
 {{endregion}}
-
->tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
 ![radchartview-styles-and-templates-scatterpointseries-defaultvisualstyle](images/radchartview-styles-and-templates-scatterpointseries-defaultvisualstyle.png)
 
@@ -236,8 +233,7 @@ This series expose the __StrokeShapeStyle__ property. It is of type __Style__ an
 
 ### AreaSeries
 
-This series expose the following styling properties:
-            
+This series expose the following styling properties:            
 
 * __StrokeShapeStyle__ - it is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component.
                 
@@ -485,8 +481,6 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 {{endregion}}
 
->tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
-
 ![radchartview-styles-and-templates-Bar Series-defaultvisualstyle](images/radchartview-styles-and-templates-BarSeries-defaultvisualstyle.png)
 
 ### RangeBarSeries
@@ -504,15 +498,13 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     </telerik:RangeBarSeries.DefaultVisualStyle>
 {{endregion}}
 
->tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
-
 ![radchartview-styles-and-templates-Range Bar Series-defaultvisualstyle](images/radchartview-styles-and-templates-RangeBarSeries-defaultvisualstyle.png)
 
 ## Customizing Financial Series
 
 ### OhlcSeries
 
-This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native {% if site.site_name == 'WPF' %}[OhlcStick](http://www.telerik.com/help/wpf/t_telerik_windows_controls_chartview_ohlcstick.html){% endif %}{% if site.site_name == 'Silverlight' %}[OhlcStick](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_chartview_ohlcstick.html){% endif %} component. 
+This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native {% if site.site_name == 'WPF' %}[OhlcStick](http://www.telerik.com/help/wpf/t_telerik_windows_controls_chartview_ohlcstick.html){% else %}[OhlcStick](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_chartview_ohlcstick.html){% endif %} component. 
             
 #### __[XAML] Example 26: Setting OhlcSeries DefaultVisualStyle__   
 {{region radchartview-customizing-cartesianchart-series23}}
@@ -526,13 +518,11 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     </telerik:OhlcSeries.DefaultVisualStyle>
 {{endregion}}
 
->tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
-
 ![radchartview-styles-and-templates-Ohlc Series-defaultvisualstyle](images/radchartview-styles-and-templates-OhlcSeries-defaultvisualstyle.png)
 
 ### CandlestickSeries
 
-This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native {% if site.site_name == 'WPF' %}[Candlestick](http://www.telerik.com/help/wpf/t_telerik_windows_controls_charting_candlestick.html){% endif %}{% if site.site_name == 'Silverlight' %}[Candlestick](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_charting_candlestick.html){% endif %} component.            
+This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native {% if site.site_name == 'WPF' %}[Candlestick](http://www.telerik.com/help/wpf/t_telerik_windows_controls_charting_candlestick.html){% else %}[Candlestick](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_charting_candlestick.html){% endif %} component.            
 
 #### __[XAML] Example 27: Setting CandlestickSeries DefaultVisualStyle__   
 {{region radchartview-customizing-cartesianchart-series24}}
@@ -546,9 +536,24 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     </telerik:CandlestickSeries.DefaultVisualStyle>
 {{endregion}}
 
->tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
-
 ![radchartview-styles-and-templates-Candlestick Series-defaultvisualstyle](images/radchartview-styles-and-templates-CandlestickSeries-defaultvisualstyle.png)
+
+## Customizing Box Plot Series
+
+The BoxPlotSeries exposes a __DefaultVisualStyle__ property that allows you to customize the visual elements representing the data points. The property accepts a Style targeting the __BoxPlotShape__ element. The style can be used to change the stroke and fill of the visual element.
+
+#### __[XAML] Example 28: Setting BoxPlotSeries DefaultVisualStyle__   
+{{region radchartview-customizing-cartesianchart-series-25}}
+	<telerik:BoxPlotSeries.DefaultVisualStyle>
+		<Style TargetType="telerik:BoxPlotShape">
+			<Setter Property="Fill" Value="#222DA68D" />
+			<Setter Property="Stroke" Value="#2DA68D" />
+			<Setter Property="StrokeThickness" Value="1" />
+		</Style>
+	</telerik:BoxPlotSeries.DefaultVisualStyle>
+{{endregion}}
+
+![radchartview-styles-and-templates-boxplot Series-defaultvisualstyle](images/radchartview-styles-and-templates-boxplotseries-defaultvisualstyle.png)
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})

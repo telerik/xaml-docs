@@ -10,7 +10,7 @@ position: 0
 
 # BoxPlotSeries
 
-This type of series visualizes its data points using box plot shapes. An alternative name for this visualiztion is box and whiskers. 
+This type of series visualizes its data points using box plot shapes. An alternative name for this visualization is box and whiskers. 
 
 The box plot shape allows you to display a summarized information containing five values - minimum, maximum, lower quartile (Q1), upper quartile (Q3) and median - plotted on the numeric axis of the chart.
 

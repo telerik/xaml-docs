@@ -38,7 +38,7 @@ The document elements that encapsulate the bookmarks functionality are __Bookmar
 * this.editor.Document.Selection.__SelectAnnotationRange(AnnotationRangeStartannotationStart)__ : Selects the annotation passed as parameter. Particularly useful, as most methods of RadRichTextBox and RadDocument operate on the selection. For example, if you invoke this.editor.Delete(false), the text of the Bookmark along with the Bookmark itself will be erased.
           
 
-* this.editor.__DeleteBookmark(string bookmarkName)__ <br/>this.editor.__DeleteBookmark(BookmarkRangeStart bookmarkRangeStart)__ : These two methods remove the bookmark. The text in the document between the BookmarkRangeStart and BookmarkRangeEnd is __not__deleted.
+* this.editor.__DeleteBookmark(string bookmarkName)__ <br/>this.editor.__DeleteBookmark(BookmarkRangeStart bookmarkRangeStart)__ : These two methods remove the bookmark. The text in the document between the BookmarkRangeStart and BookmarkRangeEnd is __not__ deleted.
           
 
 * this.editor.Document.__GetAllBookmarks()__: Returns an IEnumerable<BookmarkRangeStart> containing all BookmarkRangeStarts.

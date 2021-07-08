@@ -65,7 +65,8 @@ All these properties can be used to get or set the data template, respectfully, 
 >In order to use the built-in commands, you should define the following namespace:
 __xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"__
 
-__Figure 1:__ The wizard page defined in __Example 1__ will be displayed as follows:  
+__Figure 1:__ The wizard page defined in __Example 1__ will be displayed as follows:
+
 ![Pages SettingTemplates](images/pages-settingtemplates.png)
 
 {% if site.site_name == 'WPF' %}

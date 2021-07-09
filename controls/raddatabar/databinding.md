@@ -24,7 +24,7 @@ Find a runnable sample in the [Code Example](#code-example) section of this arti
 
 ## RadStackedDataBar and RadStacked100DataBar
 
-RadStackedDataBar and RadStacked100DataBar allows you to data bind their __ItemsSource__ property to any [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx). For each item in the ItemsSource a bar in the stack will be generated. 
+RadStackedDataBar and RadStacked100DataBar allow you to data bind their __ItemsSource__ property to any [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx). For each item in the ItemsSource a bar in the stack will be generated. 
 
 In case the ItemsSource is bound to a collection of numbers (like the `double` or `int` primitives), the data bars will be generated automatically. If the ItemsSource is bound to a collection of any other custom object type, you will need to provide the name of the property that should be used to access the data bar values. To do so, set the __ValuePath__ property of the data bar control. For example, if the collection contains items of type `MyItemInfo` which have a property named `MyValue`, the ValuePath property should hold the "MyValue" string.  
 

@@ -42,7 +42,7 @@ Each category has three important characteristics:
 
 1. __CategoryBrush__ - each category has a color brush assigned. It is used to mark all of the appointments of that category in your application. You can set it or get it using the property __Category.CategoryBrush__.
 
-1. __Ischecked__ - Used to identify whether or not this category is selected.
+1. __IsChecked__ - Used to identify whether or not this category is selected.
 
 The categories available in the RadScheduleView are defined in the CategoriesSource property (IEnumarable). Just add or remove categories to that collection in order to add or remove categories to the RadScheduleView itself.
 

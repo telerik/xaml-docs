@@ -43,15 +43,19 @@ Note that the cell you want to freeze have to be visible at the moment you freez
         
 
 If you want to freeze panes so there are only two panes you have to freeze using a cell index located at the top or left edge of the visible area. For example if you want to split visible area vertically like shown on the image below you have to freeze on cell F1:
+
 ![Rad Spreadsheet UI Freeze Panes 03](images/RadSpreadsheet_UI_Freeze_Panes_03.png)
 
 But if you want to split the visible area horizontally you like shown on the image bellow you have to freeze on cell A8:
+
 ![Rad Spreadsheet UI Freeze Panes 04](images/RadSpreadsheet_UI_Freeze_Panes_04.png)
 
 Here is an example showing what happens when frozen panes splits merged cells, cells with applied fill, cells with borders and images:
+
 ![Rad Spreadsheet UI Freeze Panes 05](images/RadSpreadsheet_UI_Freeze_Panes_05.png)
 
 Here is the same scenario but when scrolled with one cell to the right:
+
 ![Rad Spreadsheet UI Freeze Panes 06](images/RadSpreadsheet_UI_Freeze_Panes_06.png)
 
 ## Unfreeze Panes

@@ -23,9 +23,9 @@ The __RadBadge__ component is a visual indicator for UI elements. It enables you
 
 ## Key Features
 
-* __Position__: The control allows you to specify its relative position the element which is attached to. [Read more]({%slug radbadge-key-properties%}) article.
+* __Position__: The control allows you to specify its relative position to the element which is attached to. [Read more]({%slug radbadge-key-properties%}) article.
 
-* __Badge Types__: You can choose in between various predefined badge types. Also, you have the option to apply custom geometry to the control if none of the predefined types works for you. [Read More]({%slug radbadge-key-properties%}) article.
+* __Badge Types__: You can choose between various predefined badge types. Also, you have the option to apply a custom geometry to the control if none of the predefined types works for you. Read more in the [Key Properties]({%slug radbadge-key-properties%}) article.
 
 * __Animation__: You can choose whether to have an __Animation__ while displaying the badge.
 

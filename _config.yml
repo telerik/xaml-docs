@@ -240,6 +240,8 @@ navigation:
     controls/radpivotgrid/radpivotfieldlist:
         title: RadPivotFieldList
         position: 3
+    controls/radbadge:
+        title: RadBadge
 ## X3 Controls End
 
 ## X2 Controls Start
@@ -3908,6 +3910,7 @@ intro_columns:
   -
     title: "Interactivity & UX"
     items:
+      "Badge": "radbadge-overview"
       "BusyIndicator": "radbusyindicator-overview"
       "Chat (Conversational UI)": "chat-overview"
       "Callout": "radcallout-overview"

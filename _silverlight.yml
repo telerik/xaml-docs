@@ -153,7 +153,8 @@ controls/radcardview,
 getting-started/telerik-application-lifecycle,
 controls/radbarcode/,
 testing,
-common-information/winforms-integration]
+common-information/winforms-integration,
+controls/radbadge]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

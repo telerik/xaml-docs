@@ -319,7 +319,7 @@ Any actions created with the `HitBuilder.CreateException` method will be shown i
 
 ![](images/google-analytics-integration-7.png)
 
-Any actions created with the `HitBuilder.CreateTiming` method will be shown in the __Behaviour-->Events__ menu of the Google Analytics dashboard.
+Any actions created with the `HitBuilder.CreateTiming` method will be shown in the __Behaviour-->App Speed__ menu of the Google Analytics dashboard. In order to view the data make sure to provide some time for the dashboard to be refreshed and that you have selected a time range including the current date. 
 
 ![](images/google-analytics-integration-8.png)
 

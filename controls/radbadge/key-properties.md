@@ -1,7 +1,7 @@
 ---
 title: Key Properties
 page_title: Key Properties
-description: This article lists and explains the events exposed by the RadBadge control.
+description: This article lists and explains the key properties exposed by the RadBadge control.
 slug: radbadge-key-properties
 tags: radbadge, key, property, properties,badgetype,geometry,anchorposition
 published: True
@@ -39,7 +39,7 @@ This article will list the key properties provided by the RadBadge control.
 #### Figure 3: RadBadge Types
 ![Telerik Badge Types](images/radbadge-key-properties_1.PNG)
 
-* __Geometry__: A property of type __Geometry__ that gets or sets gets or sets the geometry of the badge control. You can apply one of the following geometry which our geometry extension markup provides.
+* __Geometry__: A property of type __Geometry__ that gets or sets the geometry of the badge control. You can apply one of the following geometries which our geometry markup extension provides.
 
 	* __Circle__
 	* __Ellipse__
@@ -56,7 +56,7 @@ This article will list the key properties provided by the RadBadge control.
 	* __Cloud__
 	* __Oval__
 	
-	>To set custom geometry of the RadBadge control, the BadgeType property needs to be set to __ContentOnly__.
+	>To set a custom geometry to the RadBadge control, the BadgeType property needs to be set to __ContentOnly__.
 
 	#### __[XAML] Example 1: Set Custom Geometry__
 	{{region xaml-radbadge-key-properties-0}}
@@ -67,7 +67,7 @@ This article will list the key properties provided by the RadBadge control.
 		</telerik:RadButton>
 	{{endregion}}
 
-	To apply custom geometry in code-behind, you can use the GeometryFactory.SetGeometry() method.
+	To apply a custom geometry in code-behind, you can use the GeometryFactory.SetGeometry() method.
 
 	#### __[C#] Example 1: Set Custom Geometry In Code__
 	{{region xaml-radbadge-key-properties-0}}

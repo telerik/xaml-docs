@@ -55,7 +55,7 @@ To change the theme you will need to take the following few steps.
 	* Telerik.Windows.Data.dll
 		
 	And then merge the dictionaries for the controls in the dlls as shown in __Example 1__.
-
+	
 	#### __[XAML] Example 1: Merging .xaml files for the Office_Black theme (from the theme dll)__
 	{{region styling-apperance-implicit-styles-overview-0}}
 		<Application>
@@ -79,7 +79,7 @@ To change the theme you will need to take the following few steps.
 <!-- -->
 
 >important Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
-	
+
 ### How to get the .xaml files required for merging
 
 You can find all required .xaml files in two places, respectively you can use two approaches to reference them in the project.
@@ -157,6 +157,27 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
 > Switching the global theme at runtime by setting `StyleManager.ApplicationTheme` is not supported. To enable this feature, use the [NoXaml dlls and Implicit Styles](#setting-a-theme-using-implicit-styles) theming. Read more in the [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%}) article.
+
+## Changing Color Variation
+
+Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different what color variations, which can be changed with the **LoadPreset** method.
+
+#### [C#] Example 5: Changing the color variation of the theme
+
+{{region styling-appearance-green-theme-6}}
+	//default color variation
+	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);
+
+{{endregion}}
+
+#### [VB.NET] Example 5: Changing the color variation of the theme
+
+{{region styling-appearance-green-theme-7}}
+	//default color variation
+	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
+{{endregion}}
+
+To see which themes support more than one color variation please check the [Available Themes]({%slug common-styling-appearance-available-themes%}) article.
 
 ## Does a Theme Affect All {{ site.framework_name }} Controls?
 

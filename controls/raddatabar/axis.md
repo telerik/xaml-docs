@@ -12,7 +12,7 @@ position: 4
 
 RadDataBar provides an additional component that allows you display a data axis.
 
-The __RadHorizontalDataAxis__ and __RadVerticalDataAxis__ are part of the data bar suite and allows you to display a stand alone axis control next to the data bar visualization. The axis size should be synced with the size of the data bar in order to correctly match the value range.
+The __RadHorizontalDataAxis__ and __RadVerticalDataAxis__ are part of the data bar suite and allow you to display a stand alone axis control next to the data bar visualization. The axis size should be synced with the size of the data bar in order to correctly match the value range.
 
 #### __[XAML] Example 1: Using RadHorizontalDataAxis__
 {{region databar-axis-0}}
@@ -72,7 +72,7 @@ The data axis control provides the following public properties that can be used 
 
 * __TicksDistance__: Specifies a value indicating that every axis tick should be placed at least `n` pixels away from the next one, where `n` is the value of the property. Use when you have too much data to display on the axis to control the number of ticks shown. 
 
-	> The TickDitance property has a smaller priority than Step. If both Step and TickDistance are set - the axis algorithm that distributes the ticks will only take into consideration the Step property. These two properties should not be used in conjunction.
+	> The TickDistance property has a smaller priority than Step. If both Step and TickDistance are set - the axis algorithm that distributes the ticks will only take into consideration the Step property. These two properties should not be used in conjunction.
 
 ## See Also  
 * [Properties]({%slug raddatabar-main_properties%})

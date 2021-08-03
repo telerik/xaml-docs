@@ -31,7 +31,7 @@ __RadTreeListView__ displays the data in the same way as __RadGridView__. The di
 Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
 
 
->important Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+>important Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}). Heterogeneous data means a source with different type of objects in it.
 
 >tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 

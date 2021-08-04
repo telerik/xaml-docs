@@ -94,6 +94,8 @@ Note that when using the generated expression, you would then need to pass the s
     }
 {{endregion}}
 
-# See also
+## See also
 
+* [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%})
+* [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%})
 * [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%})

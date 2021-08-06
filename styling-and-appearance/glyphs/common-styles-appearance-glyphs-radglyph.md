@@ -23,7 +23,16 @@ The RadGlyph can be used both standalone and as a markup extension. **Examples 1
 #### __[XAML] Example 1: Define a RadGlyph in XAML__
 
 {{region xaml-common-styling-appearance-glyphs-overview-1}}
-	<telerik:RadGlyph Glyph="&#xe91e;" Foreground="Black" FontSize="100" />
+	<Label x:Name="label">
+		<telerik:RadGlyph Glyph="&#xe91e;" Foreground="Black" FontSize="100" />
+	</Label>
+{{endregion}}
+
+#### __[C#] Example 1: Define a RadGlyph in code-behind__
+
+{{region cs-common-styling-appearance-glyphs-overview-1}}
+	var glyph = new RadGlyph() { Glyph = "\uE91E", Foreground = Brushes.Black, FontSize = 100 };
+	this.label.Content = glyph;
 {{endregion}}
 
 #### __[XAML] Example 2: Use the RadGlyph markup extension__

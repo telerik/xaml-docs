@@ -160,7 +160,7 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 ## Changing Color Variation
 
-Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different what color variations, which can be changed with the **LoadPreset** method.
+Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different color variations, which can be changed with the **LoadPreset** method.
 
 #### [C#] Example 5: Changing the color variation of the theme
 

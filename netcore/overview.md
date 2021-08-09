@@ -12,11 +12,11 @@ position: 0
 
 __Telerik UI for WPF__ comes with support for __.NET Core 3.1__, __.NET 5__ and __.NET 6__. 
 
-There is are sets of dlls built against the mentioned .NET versions which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
+There is are sets of DLLs built against the mentioned .NET versions which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
 ## .NET Core 3.1 Requirements
 
-To work with the Telerik `.NET Core 3.1` dlls you will need to have the following installed.
+To work with the Telerik `.NET Core 3.1` DLLs you will need to have the following installed.
 
 * The latest [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
@@ -26,7 +26,7 @@ To work with the Telerik `.NET Core 3.1` dlls you will need to have the followin
 
 ## .NET 5 Requirements
 
-To work with the Telerik `.NET 5` dlls you will need to have the following installed.
+To work with the Telerik `.NET 5` DLLs you will need to have the following installed.
 
 * The latest [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 
@@ -36,7 +36,7 @@ To work with the Telerik `.NET 5` dlls you will need to have the following insta
 
 ## .NET 6 Requirements
 
-To work with the Telerik `.NET 6` dlls you will need to have the following installed.
+To work with the Telerik `.NET 6` DLLs you will need to have the following installed.
 
 * The latest [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 

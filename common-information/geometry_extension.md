@@ -32,7 +32,7 @@ In **R3 2021** we introduced the **Geometry Extension** class which provides eas
 #### **Figure 1: Geometries** 
 ![Geometry Types](images/radbadge-key-properties_2.png)
 
-__Example 1 and Example 2 demonstrate how you can use this extension in XAML or code-behind. To apply a custom geometry in code-behind, you can use the GeometryFactory.SetGeometry() method.
+__Example 1 and Example 2__ demonstrate how you can use the extension in XAML and code-behind. To apply a custom geometry in code-behind, you can use the `GeometryFactory.SetGeometry()` method.
 
 #### __[XAML] Example 1: Set Custom Geometry in XAML__
 {{region xaml-radbadge-key-properties-0}}

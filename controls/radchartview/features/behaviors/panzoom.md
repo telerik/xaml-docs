@@ -205,7 +205,7 @@ You can use the __MouseWheelMode__ property of __ChartPanAndZoomBehavior__ to sp
 
 ## Restrict zooming 
 
-To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties of the chart. This defines a minimum and maximum scale values for chart axes. For example a __MaxZoom=new Size(50, 15)__ setting specifies that the maximum zoom level on the horizontal axis is 50, and the maximum zoom level on the vertical axis is 10.
+To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties of the chart. This defines a minimum and maximum scale values for chart axes. For example a __MaxZoom=new Size(50, 15)__ setting specifies that the maximum zoom level on the horizontal axis is 50, and the maximum zoom level on the vertical axis is 15.
 
 #### __[XAML] Example 12: Restrict zooming __
 {{region radchart-features-scrollandzoom_11}}

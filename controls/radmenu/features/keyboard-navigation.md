@@ -10,7 +10,6 @@ position: 12
 
 # Keyboard Navigation
 
-
 Along with its other features, __RadMenu__ supports keyboard navigation. You can easily navigate through the items by just pressing the arrow keys on your keyboard or you can use the access key functionality.
 
 ## Arrow Keys
@@ -21,7 +20,7 @@ When a RadMenuItem is selected you can navigate through its children using the a
 
 ## Access Keys
 
-The Access Keys allows you to reach a specific RadMenuItem inside a RadMenu control by holding down the __Alt__ or __F10__ key and then pressing another key on the keyboard. To define an Access Key of a RadMenuItem you need to place underscore before the letter in the Header property of the control. 
+The Access Keys allows you to reach a specific RadMenuItem inside a RadMenu control by holding down the __Alt__ or __F10__ key and then pressing another key on the keyboard. To define an Access Key of a RadMenuItem you need to place an underscore character before the letter in the Header property of the control. 
 
 #### __[C#] Example 1: Setting Access Keys__
 {{region radmenu-keyboard-navigation-0}}
@@ -45,7 +44,7 @@ The Access Keys allows you to reach a specific RadMenuItem inside a RadMenu cont
 	</telerik:RadMenu>
 {{endregion}}
 
-Default behavior requires holding the Alt+Key to navigate to a particular RadMenuItem. In a case, you want to avoid holding the Alt+Key, you can set the [IsMainMenu]({%slug radmenu-features-main-menu%}) property of the RadMenu control. This way you can navigate between the RadMenuItems without holding the Alt key. Keep in mind, that in this case, the first RadMenuItem will be focused.
+Default behavior requires holding the Alt key and pressing the first letter after the underscore character - for example, *Alt+F* to activate the item with Header "New" from __Example 1__. In case, you want to avoid holding the Alt key, you can set the [IsMainMenu]({%slug radmenu-features-main-menu%}) property of the RadMenu control. This way you can navigate between the RadMenuItems by pressing Alt once, which will display the available access keys. Keep in mind, that in this case, the first RadMenuItem will be focused.
 
 #### __[C#] Example 2: Main Menu__
 {{region radmenu-keyboard-navigation-1}}

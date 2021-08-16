@@ -22,9 +22,10 @@ It exposes the following methods which you can use to parse your expressions:
 * **bool TryParse(string expression, out LambdaExpression lambda)**
 
 {% if site.site_name == 'WPF' %}
->Check out the [ExpressionParser](https://demos.telerik.com/wpf) online demo to see the RadExpressionParser in action.{% endif %}
+>Check out the [ExpressionParser](https://demos.telerik.com/wpf) online demo to see the RadExpressionParser in action.
 {% else %}
->Check out the [ExpressionParser](https://demos.telerik.com/silverlight/#ExpressionEditor/ExpressionParser) online demo to see the RadExpressionParser in action.{% endif %}
+>Check out the [ExpressionParser](https://demos.telerik.com/silverlight/#ExpressionEditor/ExpressionParser) online demo to see the RadExpressionParser in action.
+{% endif %}
 
 ## Parse
 

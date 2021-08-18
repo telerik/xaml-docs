@@ -17,13 +17,15 @@ This article demonstrates two approaches on how to extract and edit the default 
 
 ## Extracting Control Templates Manually from the Theme XAML File
 
-The **XAML** files with the different themes for all controls are located in the __Themes.Implicit__ folder. You can find this folder in the Telerik UI for {{ site.framework_name }} installation directory, for example, `C:\Program Files (x86)\Progress\Telerik UI for WPF R1 2021\Themes.Implicit`.
+The **XAML** files with the different themes for all controls are located in the __Themes.Implicit__ folder. You can find this folder in the Telerik UI for {{ site.framework_name }} installation directory, for example, `C:\Program Files (x86)\Progress\Telerik UI for WPF R2 2021\Themes.Implicit`.
+
+> As of 2021 R2 release version, the folder **WPF40**'s name is changed to **WPF**. The .xaml files inside the folder are meant for **.Net Framework 4.0** and **.Net Framework 4.5** projects. A folder named **NetCore** was introduced, which targets **.Net Core 3.1**, **.Net 5** and **.Net 6** platforms. 
 
 The following example shows how to extract the **RadListBox** control template for the **Office_Black** theme:
 
-1. Navigate to the Telerik UI for {{ site.framework_name }} installation directory and open the **Themes.Implicit\WPF40\OfficeBlack\Themes** folder.
+1. Navigate to the Telerik UI for {{ site.framework_name }} installation directory and open the **Themes.Implicit\WPF\OfficeBlack\Themes** folder.
 
-   You can choose any of the available themes in the **WPF40** folder. The folder names correspond to the theme names.
+   You can choose any of the available themes in the **WPF** folder. The folder names correspond to the theme names.
 
 1. Locate the __Telerik.Windows.Controls.xaml__ file and open it with your favorite editor.
 
@@ -33,7 +35,7 @@ The following example shows how to extract the **RadListBox** control template f
 
    ![Navigating to the required XAML file](images/styling-apperance-editing-control-templates_1.png)
 
-   >important Always extract the desired control template from the theme that you use in your application. For example, if your application uses the **Office Black** theme, extract the control template from the **Themes.Implicit\WPF40\OfficeBlack\Themes** folder. The control templates are different for each theme. Using the wrong template may lead to errors or undesired behavior.
+   >important Always extract the desired control template from the theme that you use in your application. For example, if your application uses the **Office Black** theme, extract the control template from the **Themes.Implicit\WPF\OfficeBlack\Themes** folder. The control templates are different for each theme. Using the wrong template may lead to errors or undesired behavior.
 
 1. In the editor, find the default style for the **RadListBox** control. It is called **RadListBoxStyle**.
 

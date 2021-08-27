@@ -24,12 +24,12 @@ To add a __RadDiagramToolbox__ to the RadDiagramRibbon control, you can bind the
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="\*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="\*"/>
         </Grid.ColumnDefinitions>
         <telerik:RadDiagramRibbon Grid.ColumnSpan="2" Diagram="{Binding ElementName=diagram}" Toolbox="{Binding ElementName=toolBox}"/>
         <telerik:RadDiagram x:Name="diagram" Grid.Row="1" Grid.Column="1">
@@ -48,12 +48,12 @@ To add a __RadDiagramNavigationPane__ to the RadDiagramRibbon control, you can b
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="\*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="\*"/>
         </Grid.ColumnDefinitions>
         <telerik:RadDiagramRibbon Grid.ColumnSpan="2" 
                                   Diagram="{Binding ElementName=diagram}" 
@@ -74,12 +74,12 @@ To add a __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler__ and __Ho
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="*"/>
+				<RowDefinition Height="\*"/>
 				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="Auto"/>
-				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="\*"/>
 			</Grid.ColumnDefinitions>
 			<telerik:RadDiagramRibbon Grid.Column="1"
 									  Diagram="{Binding ElementName=diagram}"    
@@ -102,7 +102,7 @@ To add __QuickAccessToolBar__ to the DiagramRibbon you can bind the **QuickAcces
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="*"/>
+				<RowDefinition Height="\*"/>
 				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
@@ -131,7 +131,7 @@ To add a __Backstage__ to the DiagramRibbon you can use the __Backstage__ proper
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="*"/>
+			<RowDefinition Height="\*"/>
 			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 		<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}"   

@@ -12,18 +12,15 @@ position: 1
 
 This article describes the main features and properties of the __RadDiagramToolbox__ control. You can examine the behavior of the control in the {% if site.site_name == 'Silverlight' %}[Diagrams DesignToolbox demo](https://demos.telerik.com/silverlight/#Diagrams/DesignToolbox){% endif %}{% if site.site_name == 'WPF' %}[Diagrams DesignToolbox demo](https://demos.telerik.com/wpf/#Diagrams/DesignToolbox){% endif %}.            
 
->In order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
-{% if site.site_name == 'WPF' %}
->	- Telerik.Windows.Data
-{% endif %}
+> In order to use the __RadDiagramToolbox__ control in your projects you have to add references to the following assemblies:
+> + __Telerik.Windows.Controls__
+> + __Telerik.Windows.Controls.Diagrams__
+> + __Telerik.Windows.Controls.Diagrams.Extensions__
+> + __Telerik.Windows.Controls.Input__
+> + __Telerik.Windows.Controls.Navigation__
+> + {% if site.site_name == 'WPF' %}__Telerik.Windows.Data__{% endif%}
+> + __Telerik.Windows.Diagrams.Core__
 
-<!-- -->
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.                
 
 ## Visual Structure And Properties
@@ -61,62 +58,62 @@ You can use it directly in XAML:
 
 {{region raddiagram-extensions-toolbox-0}}
 	<Grid>
-		<Grid.DataContext>
-			<telerik:HierarchicalGalleryItemsCollection />
-		</Grid.DataContext>
-		<Grid.Resources>
-			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-			   <!--  ToolboxItemTemplate  -->
-	            <DataTemplate x:Key="ToolboxItemTemplate">
-	                <Grid Width="76"
-	                      Height="100"
-	                      Margin="0 1 1 0">
-	                    <Grid.RowDefinitions>
-	                        <RowDefinition Height="*" />
-	                        <RowDefinition Height="42" />
-	                    </Grid.RowDefinitions>
-	                    <Viewbox Margin="5 5 5 0"
-	                             HorizontalAlignment="Center"
-	                             VerticalAlignment="Bottom">
-	                        <ContentPresenter Margin="5"
-	                                          Content="{Binding Shape}"
-	                                          IsHitTestVisible="False" />
-	                    </Viewbox>
-	                    <TextBlock Grid.Row="1"
-	                               Margin="5"
-	                               HorizontalAlignment="Center"
-	                               VerticalAlignment="Top"
-	                               FontFamily="Segoe UI Semibold"
-	                               FontSize="12"
-	                               Text="{Binding Header}"
-	                               TextAlignment="Center"
-	                               TextWrapping="Wrap" />
-	                </Grid>
-	            </DataTemplate>
-	            <!--  ToolboxGroupTemplate  -->
-	            <HierarchicalDataTemplate x:Key="ToolboxTemplate"
-	                                      ItemTemplate="{StaticResource ToolboxItemTemplate}"
-	                                      ItemsSource="{Binding Items}">
-	                <TextBlock MinWidth="55" Text="{Binding Header}" />
-	            </HierarchicalDataTemplate>
-		</Grid.Resources>
-	
-		<Grid.ColumnDefinitions>
+			<Grid.DataContext>
+				<telerik:HierarchicalGalleryItemsCollection />
+			</Grid.DataContext>
+			<Grid.Resources>
+				<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+				<!--  ToolboxItemTemplate  -->
+					<DataTemplate x:Key="ToolboxItemTemplate">
+						<Grid Width="76"
+							Height="100"
+							Margin="0 1 1 0">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="\*" />
+								<RowDefinition Height="42" />
+							</Grid.RowDefinitions>
+							<Viewbox Margin="5 5 5 0"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Bottom">
+								<ContentPresenter Margin="5"
+												Content="{Binding Shape}"
+												IsHitTestVisible="False" />
+							</Viewbox>
+							<TextBlock Grid.Row="1"
+									Margin="5"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Top"
+									FontFamily="Segoe UI Semibold"
+									FontSize="12"
+									Text="{Binding Header}"
+									TextAlignment="Center"
+									TextWrapping="Wrap" />
+						</Grid>
+					</DataTemplate>
+					<!--  ToolboxGroupTemplate  -->
+					<HierarchicalDataTemplate x:Key="ToolboxTemplate"
+											ItemTemplate="{StaticResource ToolboxItemTemplate}"
+											ItemsSource="{Binding Items}">
+						<TextBlock MinWidth="55" Text="{Binding Header}" />
+					</HierarchicalDataTemplate>
+			</Grid.Resources>
+			<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="Auto" />
 	
+
 		</Grid.ColumnDefinitions>
-	
+		
 		<telerik:RadDiagramToolbox x:Name="toolbox"
-								   Title="Gallery"
-								   Width="330"
-								   HorizontalAlignment="Right"
-								   Header="{Binding SelectedItem.Header,
+								Title="Gallery"
+								Width="330"
+								HorizontalAlignment="Right"
+								Header="{Binding SelectedItem.Header,
 													RelativeSource={RelativeSource Self}}"
-								   ItemsSource="{Binding}"
-								   ItemTemplate="{StaticResource ToolboxTemplate}"
-								   Visibility="{Binding IsChecked,
+								ItemsSource="{Binding}"
+								ItemTemplate="{StaticResource ToolboxTemplate}"
+								Visibility="{Binding IsChecked,
 														ElementName=toolboxButton,
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
@@ -136,7 +133,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	    {
 	        this.GalleryItems = new HierarchicalGalleryItemsCollection();
 	    }
-	}	
+	}
 {{endregion}}
 
 #### __VB.NET__
@@ -175,7 +172,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	                      Height="100"
 	                      Margin="0 1 1 0">
 	                    <Grid.RowDefinitions>
-	                        <RowDefinition Height="*" />
+	                        <RowDefinition Height="\*" />
 	                        <RowDefinition Height="42" />
 	                    </Grid.RowDefinitions>
 	                    <Viewbox Margin="5 5 5 0"
@@ -204,9 +201,10 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	            </HierarchicalDataTemplate>
 		</Grid.Resources>
 	
+
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="\*" />
 			<ColumnDefinition Width="Auto" />
 	
 		</Grid.ColumnDefinitions>
@@ -508,7 +506,7 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the __D
 						Background="Transparent">
 					<Grid>
 						<Grid.RowDefinitions>
-							<RowDefinition Height="*" />
+							<RowDefinition Height="\*" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
 						<Viewbox Width="64"

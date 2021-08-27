@@ -13,15 +13,13 @@ position: 3
 This article describes the features of the __RadDiagramRuler__
 
 >In order to use the control in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
-{% if site.site_name == 'WPF' %}
->	- Telerik.Windows.Data
-{% endif %}
+> + __Telerik.Windows.Controls__
+> + __Telerik.Windows.Controls.Diagrams__
+> + __Telerik.Windows.Controls.Diagrams.Extensions__
+> + __Telerik.Windows.Controls.Input__
+> + __Telerik.Windows.Controls.Navigation__
+> + {% if site.site_name == 'WPF' %}__Telerik.Windows.Data__{% endif%}
+> + __Telerik.Windows.Diagrams.Core__
 
 The __RadDiagramRuler__ is used to provide visual indication about the diagram viewport coordinates. It resides in the  __Telerik.Windows.Controls.Diagrams.Extensions__ namespace. 
 

@@ -13,12 +13,12 @@ position: 0
 The __SettingsPane__ control allows the users to examine and modify the settings of the diagramming items in run-time.
 
 >In order to use the __SettingsPane__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
+> + __Telerik.Windows.Controls__
+> + __Telerik.Windows.Controls.Diagrams__
+> + __Telerik.Windows.Controls.Diagrams.Extensions__
+> + __Telerik.Windows.Controls.Input__
+> + __Telerik.Windows.Controls.Navigation__
+> + __Telerik.Windows.Diagrams.Core__
 
 The __SettingsPane__ control is a standalone control that can be displayed as the content of any __ContentControl__. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of a single __RadDiagramItem (Shape or Connection)__. 	  
 

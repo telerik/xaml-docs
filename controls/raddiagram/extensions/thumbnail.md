@@ -14,16 +14,14 @@ This article will get you familiar with the __RadDiagramThumbnail__ control that
 
 The __RadDiagramThumbnail__ control provides a preview of the overall layout of the __RadDiagram__. It allows you to easily keep track of your current viewport and its position in the __RadDiagram__
 
->In order to use the __RadDiagramThumbnail__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
-{% if site.site_name == 'WPF' %}
->	- Telerik.Windows.Data
-{% endif %}
+> In order to use the __RadDiagramThumbnail__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
+> + __Telerik.Windows.Controls__
+> + __Telerik.Windows.Controls.Diagrams__
+> + __Telerik.Windows.Controls.Diagram.Extensions__
+> + __Telerik.Windows.Controls.Input__
+> + __Telerik.Windows.Controls.Navigation__
+> + {% if site.site_name == 'WPF' %}__Telerik.Windows.Data__{% endif%}
+> + __Telerik.Windows.Diagrams.Core__  
 
 ## Define a RadDiagramThumbnail
 

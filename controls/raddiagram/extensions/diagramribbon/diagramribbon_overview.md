@@ -9,20 +9,20 @@ position: 0
 ---
 
 # Overview
- 
+
 With the __R1 2019__ version Telerik UI for WPF we have introduced the __RadDiagramRibbon__ control. It allows users to examine and modify the settings of the diagramming items in run-time.
 
 The control is a configured [RadRibbonView]({%slug radribbonview-overview%}) which is used as a top level navigation control for the RadDiagram. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of the RadDiagram. RadDiagramRibbon is fully customizable and scales its child widgets automatically based on the available area. 
 
 >In order to use the __RadDiagramRibbon__ control along with the __RadDiagram__ in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Controls.Diagrams.Ribbon
->	- Telerik.Windows.Controls.RibbonView
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
+>	+ __Telerik.Windows.Controls__
+>	+ __Telerik.Windows.Controls.Diagrams__
+>	+ __Telerik.Windows.Controls.Diagrams.Extensions__
+>	+ __Telerik.Windows.Controls.Diagrams.Ribbon__
+>	+ __Telerik.Windows.Controls.Input__
+>	+ __Telerik.Windows.Controls.Navigation__
+>	+ __Telerik.Windows.Controls.RibbonView__
+>	+ __Telerik.Windows.Diagrams.Core__
 
 __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance.
 
@@ -109,7 +109,7 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 		newGroup.Header = "Group Name";
 		newGroup.Items.Add(button);
 		newGroup.SetValue(DiagramRibbonExtensions.RibbonTabHeaderProperty, "Home");
-
+	
 		this.diagramRibbon.AdditionalGroups.Add(newGroup);
 	}
 {{endregion}}

@@ -74,7 +74,7 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 	    Dim extension As String = "xls"
 	    Dim dialog As New SaveFileDialog() With {
 	     .DefaultExt = extension,
-	     .Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
+	     .Filter = String.Format("{1} files (\*.{0})|\*.{0}|All files (*.*)|*.*", extension, "Excel"),
 	     .FilterIndex = 1
 	    }
 	    If dialog.ShowDialog() = True Then

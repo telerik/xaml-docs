@@ -28,7 +28,7 @@ Using the __ReorderTabRows__ property you can control how the tab item rows are 
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
 	{{endregion}}
-	
+
 #### __Figure 1:ReorderTabRows set to True__
 ![Telerik TabControl ReorderTabRows](images/tabcontrol_controlling_behavior_reordertabrows_1.png)
 
@@ -49,7 +49,7 @@ You can allow/disallow the user to reorder the tab items of your control through
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
 	{{endregion}}
-	
+
 ## Enable or Disable Tab Items
 
 You can set the  __IsEnabled__ property to prevent the user from interacting with the whole tab control or with certain tab items. You can find this property in both __RadTabControl__ and __RadTabItem__.
@@ -57,13 +57,13 @@ You can set the  __IsEnabled__ property to prevent the user from interacting wit
 #### __[XAML] Example 3: Disable tab item__	
 	{{region xaml-radtabcontrol-features-controlling-behavior_2}}		
 		<telerik:RadTabControl x:Name="radTabControl">
-            <telerik:RadTabItem Header="Calendar"/>
-            <telerik:RadTabItem Header="Colors" />
-            <telerik:RadTabItem Header="Disabled Item" IsEnabled="False"/>
-            <telerik:RadTabItem Header="Quote"/>
-        </telerik:RadTabControl>
+	        <telerik:RadTabItem Header="Calendar"/>
+	        <telerik:RadTabItem Header="Colors" />
+	        <telerik:RadTabItem Header="Disabled Item" IsEnabled="False"/>
+	        <telerik:RadTabItem Header="Quote"/>
+	    </telerik:RadTabControl>
 	{{endregion}}
-	
+
 #### __Figure 3: Disable tab item__
 ![Telerik TabControl Disabled Tab Item](images/tabcontrol_controlling_behavior_disableditem_3.png)
 
@@ -79,7 +79,7 @@ By default, the RadTabControl will display two arrows when the width of the tab 
 	{{region xaml-radtabcontrol-features-controlling-behavior_3}}		
 		<telerik:RadTabControl x:Name="radTabControl" OverflowMode="Wrap">
 		    <!-- large number of items -->
-        </telerik:RadTabControl>
+	    </telerik:RadTabControl>
 	{{endregion}}
 
 #### __Figure 4: Show all items in the ViewPort__
@@ -162,12 +162,33 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 	{{region xaml-radtabcontrol-features-controlling-behavior_7}}		
 		<telerik:RadTabControl x:Name="radTabControl" DropDownDisplayMode="Visible">
 		    <!-- large number of items -->
-        </telerik:RadTabControl>
+	    </telerik:RadTabControl>
 	{{endregion}}
 
 #### __Figure 7: Show DropDownMenu button__
 ![Telerik TabControl DropDownMenu Button](images/tabcontrol_controlling_behavior_dropdownmenu_7.png)		
 	
+## TabControl DropDownOpened event
+
+The __DropDownOpened__ event occurs when the drop down menu is opened and the type of the passed arguments is __DropDownEventArgs__.  The __DropDownItemsSource__ collection contains the items present in the drop down menu. And it can be used to modify the items, as well as adding new ones.
+
+#### __[C#] Example 9: Order menu items by descending__
+
+	{{region radtabcontrol-features-controlling-behavior_8}}
+	private void RadTabControl_DropDownOpened(object sender, DropDownEventArgs e)
+	{
+		e.DropDownItemsSource = e.DropDownItemsSource.Cast<string>().OrderByDescending(x => x).ToList<string>();
+	}
+	{{endregion}}
+
+#### __[VB.NET] Example 9: Order menu items by descending__
+
+	{{region radtabcontrol-features-controlling-behavior_9}}
+	Private Sub RadTabControl_DropDownOpened(ByVal sender As Object, ByVal e As DropDownEventArgs)
+		e.DropDownItemsSource = e.DropDownItemsSource.Cast(Of String)().OrderByDescending(Function(x) x).ToList(Of String)()
+	End Sub
+	{{endregion}}
+
 ## See Also
 
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})

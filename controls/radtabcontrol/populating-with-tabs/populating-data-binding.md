@@ -46,7 +46,7 @@ The purpose of the __DataContext__ is to hold the data that will be bound (like 
 >The __DataContext__ is inherited in the visual tree, which means that the child controls of the __RadTabControl__ will have the same __DataContext__, if it is not explicitly changed.
 
 >important The __PropagateItemDataContextToContent__ property of the RadTabControl specifies whether the DataContext of the RadTabItem should be assigned as the DataContext of its content when the selection changes. The default value of this property is __True__.
-						
+
 
 ## Item Source
 
@@ -54,7 +54,7 @@ The __ItemsSource__ property allows the __RadTabControl__ to be bound to any col
 				
 
 >When binding the __RadTabControl__ to a collection, the dynamically created __RadTabItems__ have the item they are bound to as __DataContext__.
-					
+
 
 ## Types of Sources
 
@@ -62,7 +62,7 @@ The __ItemsSource__ property can be bound to any collection that implements the 
 				
 
 >tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
-					
+
 
 ## DisplayMemberPath
 
@@ -98,7 +98,7 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 
 
 >If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the tab would be set to the value returned by the __ToString()__ method.
-					
+
 
 ## See Also
 

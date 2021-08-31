@@ -17,7 +17,7 @@ The __RadMaskedNumericInput__ represents the basic control that can be used to r
 >	- __Telerik.Windows.Controls__
 >	- __Telerik.Windows.Controls.Input__  
 
->You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
+>You can find more info [here]({%slug installation-installing-controls-dependencies%}).
 {% endif %}
 
 {% if site.site_name == 'WPF' %} 
@@ -26,7 +26,7 @@ The __RadMaskedNumericInput__ represents the basic control that can be used to r
 >	- __Telerik.Windows.Controls.Input__
 >	- __Telerik.Windows.Data__  
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+>You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).
 {% endif %}
 
 ## Declaratively defined MaskedNumericInput

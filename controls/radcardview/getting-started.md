@@ -74,6 +74,46 @@ By default the RadCardView cards will auto-generate [data fields]({%slug radcard
 
 There are several mechanisms to customize the displayed data. You can filter, sort or group it. Additionally, when a card is selected, you can edit its data fields using the built-in UI. Read more about those features in the [Features]({%slug radcardview-features-datafielddescriptors%}) section of the documentation.
 
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Material.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](https://demos.telerik.com/wpf/) application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadCardView__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Data__
+	* __Telerik.Windows.Controls.Input__
+	* __Telerik.Windows.Data__
+
+__Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 2: Merge the ResourceDictionaries__  
+{{region xaml-radcardview-getting-started_3}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+>Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
+
+__Figure 4__ shows a __RadCardView__ with the **Material** theme applied.
+	
+#### __Figure 4: RadCardView with the Material theme__
+![RadCardView with Material theme](images/radcardview-setting-theme.png)
+
 ## See Also  
 * [Events]({%slug radcardview-events%})
 * [Visual Structure]({%slug radcardview-visual-structure%})

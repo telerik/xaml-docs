@@ -1,9 +1,9 @@
 ---
-title: Set RadDesktopAlert control's background color
-page_title: Set RadDesktopAlert control's background color when creating new object of type RadDesktopAlert.
+title: Set RadDesktopAlert Control's Background Color
+page_title: Set RadDesktopAlert control's background color when showing a new object of type RadDesktopAlert.
 description: Change default background color of the RadDesktopAlert control when creating a new class instance.
 type: how-to
-slug: kb-desktop-alert-change-background-color
+slug: kb-desktopalert-change-background-color
 position: 0
 tags: desktop, alert, background
 ticketid: 1534079

@@ -707,6 +707,8 @@ navigation:
     controls/radrichtextbox/features:
         title: Features
         position: 6
+    controls/radrichtextbox/features/shapes:
+        title: Shapes
     controls/radrichtextbox/features/content-controls:
         title: Content Controls
     controls/radrichtextbox/import-export:

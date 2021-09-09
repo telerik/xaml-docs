@@ -4,6 +4,7 @@ page_title: Shapes
 description: Check our &quot;Shapes&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 slug: radrichtextbox-features-shapes
 tags: shapes, richtextbox
+position: 0
 published: True
 ---
 
@@ -34,7 +35,7 @@ In the Insert tab, you will find a list containing various predefined shapes you
 - borders
 
 - adjust values (to customize the geometry of the shape)
-    
+  
      ![Adjust shape in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_03.gif)
 
 
@@ -93,7 +94,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
 The fill colors related to shapes are defined by two interfaces: **IShapeFill** and **IShapeOutlineFill**. IShapeOutlineFill derives from IShapeFill. All fill colors implementing IShapeOutlineFill can be applied on shapes and on their outlines.
 
  ![Shape Fill definitions in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_04.png)
- 
+
 #### [C#] Example 4: Create different fill types
 
 {{region radrichtextbox-features-shapes_3}}

@@ -123,7 +123,7 @@ The other control template required by the __RadPanelBar__ control is the one fo
 	    <Grid x:Name="RootElement">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
-	            <RowDefinition Height="*" />
+	            <RowDefinition Height="\*" />
 	        </Grid.RowDefinitions>
 	        <VisualStateManager.VisualStateGroups>
 	            <VisualStateGroup x:Name="CommonStates">
@@ -216,7 +216,7 @@ The other control template required by the __RadPanelBar__ control is the one fo
 	                <ColumnDefinition Width="Auto" />
 	                <ColumnDefinition Width="Auto" />
 	                <ColumnDefinition Width="Auto" />
-	                <ColumnDefinition Width="*" />
+	                <ColumnDefinition Width="\*" />
 	                <ColumnDefinition Width="Auto" />
 	            </Grid.ColumnDefinitions>
 	            <Border x:Name="NormalVisual" 
@@ -303,14 +303,14 @@ The other control template required by the __RadPanelBar__ control is the one fo
 	    <Grid x:Name="RootElement" SnapsToDevicePixels="True">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
-	            <RowDefinition Height="*" />
+	            <RowDefinition Height="\*" />
 	        </Grid.RowDefinitions>
 	        <Grid x:Name="HeaderRow">
 	            <Grid.ColumnDefinitions>
 	                <ColumnDefinition Width="Auto" />
 	                <ColumnDefinition Width="Auto" />
 	                <ColumnDefinition Width="Auto" />
-	                <ColumnDefinition Width="*" />
+	                <ColumnDefinition Width="\*" />
 	                <ColumnDefinition Width="Auto" />
 	            </Grid.ColumnDefinitions>
 	            <Border x:Name="NormalVisual" 

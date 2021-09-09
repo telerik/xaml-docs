@@ -33,7 +33,7 @@ In order to modify these tooltips, you will need to predefine the **ToolTipTempl
         <Grid Margin="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*" MinWidth="130"/>
+                <ColumnDefinition Width="\*" MinWidth="130"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>

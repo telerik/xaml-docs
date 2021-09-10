@@ -97,8 +97,8 @@ The final result should look like the snapshot below:
 		<telerik:HierarchicalDataTemplate x:Key="League">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
 			 <Grid.ColumnDefinitions>
-			  <ColumnDefinition Width="0.323*"/>
-			  <ColumnDefinition Width="0.677*"/>
+			  <ColumnDefinition Width="0.323"/>
+			  <ColumnDefinition Width="0.677"/>
 			 </Grid.ColumnDefinitions>
 			 <Image Stretch="None"/>
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap"/>
@@ -163,8 +163,8 @@ The final result should look like the snapshot below:
 				ItemTemplate="{StaticResource Division}">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
 			 <Grid.ColumnDefinitions>
-			  <ColumnDefinition Width="0.323*"/>
-			  <ColumnDefinition Width="0.677*"/>
+			  <ColumnDefinition Width="0.323"/>
+			  <ColumnDefinition Width="0.677"/>
 			 </Grid.ColumnDefinitions>
 			 <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -182,8 +182,8 @@ The final result should look like the snapshot below:
 				ItemTemplate="{StaticResource Division}">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
 			 <Grid.ColumnDefinitions>
-			  <ColumnDefinition Width="0.323*"/>
-			  <ColumnDefinition Width="0.677*"/>
+			  <ColumnDefinition Width="0.323"/>
+			  <ColumnDefinition Width="0.677"/>
 			 </Grid.ColumnDefinitions>
 			 <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -210,8 +210,8 @@ Here is the final XAML:
 	    <DataTemplate x:Key="Team">
 	       <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -223,8 +223,8 @@ Here is the final XAML:
 	        ItemTemplate="{StaticResource Team}">
 	        <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -235,8 +235,8 @@ Here is the final XAML:
 	        ItemTemplate="{StaticResource Division}">
 	        <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -262,8 +262,8 @@ Here is the final XAML:
 	    <DataTemplate x:Key="Team">
 	       <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -275,8 +275,8 @@ Here is the final XAML:
 	        ItemTemplate="{StaticResource Team}">
 	        <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
@@ -287,8 +287,8 @@ Here is the final XAML:
 	        ItemTemplate="{StaticResource Division}">
 	        <Grid>
 	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323*"/>
-	                <ColumnDefinition Width="0.677*"/>
+	                <ColumnDefinition Width="0.323"/>
+	                <ColumnDefinition Width="0.677"/>
 	            </Grid.ColumnDefinitions>
 	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
 	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>

@@ -20,7 +20,7 @@ You can add text to a shape either by directly typing when the shape is selected
 
 ![Shape Context menu in RadRichTextBox](images/shapes-text001.png)
 
-Once the shape is inserted you change various properties from the format shape pane.
+Once the shape is inserted, you can change various properties from the format shape pane.
 
 ![Shape Properties in RadRichTextBox](images/shapes-text002.png)
 

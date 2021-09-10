@@ -38,9 +38,6 @@ In the Insert tab, you will find a list containing various predefined shapes you
   
      ![Adjust shape in Telerik RadRichTextBox for WPF](images/RadRichTextBox_Shapes_03.gif)
 
-
-> Shapes containing text are not supported in the current version.
-
 ## Inserting Shapes in Code
 
 The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) enables you to insert a shape object at the current caret position. The method accepts the shape type and the initial shape size values as parameters.

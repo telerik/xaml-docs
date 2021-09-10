@@ -168,27 +168,6 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 #### __Figure 7: Show DropDownMenu button__
 ![Telerik TabControl DropDownMenu Button](images/tabcontrol_controlling_behavior_dropdownmenu_7.png)		
 	
-## TabControl DropDownOpened event
-
-The __DropDownOpened__ event occurs when the drop down menu is opened and the type of the passed arguments is __DropDownEventArgs__.  The __DropDownItemsSource__ collection contains the items present in the drop down menu. And it can be used to modify the items, as well as adding new ones.
-
-#### __[C#] Example 9: Order menu items by descending__
-
-	{{region radtabcontrol-features-controlling-behavior_8}}
-	private void RadTabControl_DropDownOpened(object sender, DropDownEventArgs e)
-	{
-		e.DropDownItemsSource = e.DropDownItemsSource.Cast<string>().OrderByDescending(x => x).ToList<string>();
-	}
-	{{endregion}}
-
-#### __[VB.NET] Example 9: Order menu items by descending__
-
-	{{region radtabcontrol-features-controlling-behavior_9}}
-	Private Sub RadTabControl_DropDownOpened(ByVal sender As Object, ByVal e As DropDownEventArgs)
-		e.DropDownItemsSource = e.DropDownItemsSource.Cast(Of String)().OrderByDescending(Function(x) x).ToList(Of String)()
-	End Sub
-	{{endregion}}
-
 ## See Also
 
  * [Keyboard Support]({%slug radtabcontrol-features-keyboard-support%})

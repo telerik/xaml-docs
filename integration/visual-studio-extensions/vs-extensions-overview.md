@@ -22,7 +22,7 @@ The extensions handle the following major points in the development with Telerik
 
 * __Toolbox configuration__: Select what version of Telerik UI for {{ site.framework_name }} to be populated in the Visual Studio Toolbox.
 
-__Progress Telerik UI for {{ site.framework_name }} Extension__ is distributed with the Telerik UI for WPF {{ site.framework_name }} installer. It can be downloaded and installed as separate product from the [Visual Studio Gallery](https://marketplace.visualstudio.com/) for Visual Studio 2012 and later. The extension supports Visual Studio 2012, 2013, 2015, 2017, 2019 and 2022, and it handles .NET 4.0+ applications.
+__Progress Telerik UI for {{ site.framework_name }} Extension__ is distributed with the Telerik UI for {{ site.framework_name }} installer. It can be downloaded and installed as separate product from the [Visual Studio Gallery](https://marketplace.visualstudio.com/) for Visual Studio 2012 and later. The extension supports Visual Studio 2012, 2013, 2015, 2017, 2019 and 2022, and it handles .NET 4.0+ applications.
 
 Progress Telerik UI for {{ site.framework_name }} Extension can be accessed through the __Telerik | Telerik UI for WPF__ menu in versions prior to Visual Studio 2019 and in the __Extensions | Telerik | Telerik UI for {{ site.framework_name }}__ in Visual Studio 2019. The extensions show  different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of the application as well.
 

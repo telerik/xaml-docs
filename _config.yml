@@ -987,6 +987,8 @@ navigation:
         title: RadCallout
     controls/radcallout/features/popupusage:
         title: PopupUsage
+    controls/radwatermarktextbox/validation:
+        title: Validation
 ## X1 Controls End
 
 ## Common Start   

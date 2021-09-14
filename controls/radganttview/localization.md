@@ -10,9 +10,9 @@ position: 6
 
 # Localization
 
-The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the RadGanttView control. Once translated, you might use your resources in both Silverlight and WPF projects without changing anything.
+The built-in localization mechanism in {{site.framework_name}} allows you to localize any string resource used by the RadGanttView control. Once translated, you might use your resources in both {{site.framework_name}} projects without changing anything.
 
->tipTo learn more about the ways to localize the controls from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite please read the common topic about {% if site.site_name == 'Silverlight' %}[Localization](http://www.telerik.com/help/silverlight/common-localization.html){% endif %}{% if site.site_name == 'WPF' %}[Localization](http://www.telerik.com/help/wpf/common-localization.html){% endif %}.
+>tip To learn more about the ways to localize the controls from the UI for {{site.framework_name}} suite please read the common topic about [Localization]({%slug common-localization%}).
 
 In __RadGanttView__ you can localize the Start and End text in task tooltips:
 
@@ -22,7 +22,7 @@ The next image shows the tooltip localized in French:
 
 ![ganttview localization 2](images/ganttView_localization_2.png)
 
->tipYou can also localize the __RadDateTimePicker__  which is present when choosing a date. More information on how to achieve this can be found in the [DateTimePicker Localization]({%slug raddatetimepicker-localization%}) article. 
+>tip You can also localize the __RadDateTimePicker__  which is present when choosing a date. More information on how to achieve this can be found in the [DateTimePicker Localization]({%slug raddatetimepicker-localization%}) article. 
 
 ## Supported Languages
 

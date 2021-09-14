@@ -10,13 +10,35 @@ position: 5
 
 # Icons
 
-The __RadOutlookBarItems__ expose the __Icon__ and __SmallIcon__ properties. They are of type __BitmapSource__ and they define the source of the picture placed infront of the content of the __RadOutlookBarItem__.      
-
->tip As of __R3 2021__, the __RadOutlookBarItems__ expose an additional __IconMargin__ property. It is used to get or set the margin of the __Icon__ element inside of the item. 
+The __RadOutlookBarItems__ expose the __Icon__ and __SmallIcon__ properties. They are of type __BitmapSource__ and they define the source of the picture placed infront of the content of the __RadOutlookBarItem__. The bar items expose an additional __IconMargin__ property. It is used to get or set the margin of the __Icon__ element inside of the item. 
 
 The __Icon__ property gets or sets the icon of the __RadOutlookBarItem__ when it is in normal state – not minimized.
 
-#### __Figure 1 : Setting Icon property__
+#### __[XAML] Example 1: Setting Icon Property__
+{{region xaml-radoutlookbar-features-icons_0}}
+	<telerik:RadOutlookBar Width="250" Height="400">
+		<telerik:RadOutlookBarItem  Header="Mail" Icon="mailSmall.png">
+			<TextBlock Text="Mail"/>
+		</telerik:RadOutlookBarItem>
+		<telerik:RadOutlookBarItem  Header="Calendar" Icon="calendarSmall.png">
+			<TextBlock Text="Calendar"/>
+		</telerik:RadOutlookBarItem>
+		<telerik:RadOutlookBarItem  Header="Contacts" Icon="contactsSmall.png">
+			<TextBlock Text="Contacts"/>
+		</telerik:RadOutlookBarItem>
+		<telerik:RadOutlookBarItem  Header="Tasks" Icon="tasksSmall.png">
+			<TextBlock Text="Tasks"/>
+		</telerik:RadOutlookBarItem>
+		<telerik:RadOutlookBarItem  Header="Notes" Icon="notesSmall.png">
+			<TextBlock Text="Notes"/>
+		</telerik:RadOutlookBarItem>
+		<telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png">
+			<TextBlock Text="Notes"/>
+		</telerik:RadOutlookBarItem>
+	</telerik:RadOutlookBar>
+{{endregion}}
+
+#### __Figure 1 : Icon Property Result__
 ![outlookbar icons 01](images/outlookbar_features_icons_01.png)
 
 The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ when it is in the  [minimized area]({%slug radoutlookbar-visual-structure%}) or when it is in the __ItemDropDownContent__. The __ItemDropDownContent__ is the content of the pop up which is opened after you click the [overflow button]({%slug radoutlookbar-visual-structure%}) located in the lower right corner of the __RadOutlookBar__.
@@ -24,7 +46,31 @@ The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ wh
 #### __Figure 2 : Setting SmallIcon property__
 ![outlookbar icons 02](images/outlookbar_features_icons_02.png)
 
-#### __Figure 3: Setting IconMargin property__
+#### __[XAML] Example 2: Setting IconMargin Property__
+{{region xaml-radoutlookbar-features-icons_1}}
+	<telerik:RadOutlookBar Width="250" Height="400">
+            <telerik:RadOutlookBarItem  Header="Mail" Icon="mailSmall.png" IconMargin="10">
+                <TextBlock Text="Mail"/>
+            </telerik:RadOutlookBarItem>
+            <telerik:RadOutlookBarItem  Header="Calendar" Icon="calendarSmall.png" IconMargin="10">
+                <TextBlock Text="Calendar"/>
+            </telerik:RadOutlookBarItem>
+            <telerik:RadOutlookBarItem  Header="Contacts" Icon="contactsSmall.png" IconMargin="10">
+                <TextBlock Text="Contacts"/>
+            </telerik:RadOutlookBarItem>
+            <telerik:RadOutlookBarItem  Header="Tasks" Icon="tasksSmall.png" IconMargin="10">
+                <TextBlock Text="Tasks"/>
+            </telerik:RadOutlookBarItem>
+            <telerik:RadOutlookBarItem  Header="Notes" Icon="notesSmall.png" IconMargin="10">
+                <TextBlock Text="Notes"/>
+            </telerik:RadOutlookBarItem>
+            <telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png" IconMargin="10">
+                <TextBlock Text="Notes"/>
+            </telerik:RadOutlookBarItem>
+        </telerik:RadOutlookBar>
+{{endregion}} 
+
+#### __Figure 3: IconMargin Property Result__
 ![outlookbar icons 03](images/outlookbar_features_icons_03.png)
 
 >tip You can see how to bind the icon properties to e property of a business object in the [Data Binding example in the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/OutlookBar/DataBinding).

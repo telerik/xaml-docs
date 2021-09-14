@@ -16,26 +16,7 @@ The __Icon__ property gets or sets the icon of the __RadOutlookBarItem__ when it
 
 #### __[XAML] Example 1: Setting Icon Property__
 {{region xaml-radoutlookbar-features-icons_0}}
-	<telerik:RadOutlookBar Width="250" Height="400">
-		<telerik:RadOutlookBarItem  Header="Mail" Icon="mailSmall.png">
-			<TextBlock Text="Mail"/>
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem  Header="Calendar" Icon="calendarSmall.png">
-			<TextBlock Text="Calendar"/>
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem  Header="Contacts" Icon="contactsSmall.png">
-			<TextBlock Text="Contacts"/>
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem  Header="Tasks" Icon="tasksSmall.png">
-			<TextBlock Text="Tasks"/>
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem  Header="Notes" Icon="notesSmall.png">
-			<TextBlock Text="Notes"/>
-		</telerik:RadOutlookBarItem>
-		<telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png">
-			<TextBlock Text="Notes"/>
-		</telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
+	<telerik:RadOutlookBarItem Header="Folder List" Icon="foldersSmall.png" />
 {{endregion}}
 
 #### __Figure 1 : Icon Property Result__
@@ -47,27 +28,8 @@ The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ wh
 ![outlookbar icons 02](images/outlookbar_features_icons_02.png)
 
 #### __[XAML] Example 2: Setting IconMargin Property__
-{{region xaml-radoutlookbar-features-icons_1}}
-	<telerik:RadOutlookBar Width="250" Height="400">
-            <telerik:RadOutlookBarItem  Header="Mail" Icon="mailSmall.png" IconMargin="10">
-                <TextBlock Text="Mail"/>
-            </telerik:RadOutlookBarItem>
-            <telerik:RadOutlookBarItem  Header="Calendar" Icon="calendarSmall.png" IconMargin="10">
-                <TextBlock Text="Calendar"/>
-            </telerik:RadOutlookBarItem>
-            <telerik:RadOutlookBarItem  Header="Contacts" Icon="contactsSmall.png" IconMargin="10">
-                <TextBlock Text="Contacts"/>
-            </telerik:RadOutlookBarItem>
-            <telerik:RadOutlookBarItem  Header="Tasks" Icon="tasksSmall.png" IconMargin="10">
-                <TextBlock Text="Tasks"/>
-            </telerik:RadOutlookBarItem>
-            <telerik:RadOutlookBarItem  Header="Notes" Icon="notesSmall.png" IconMargin="10">
-                <TextBlock Text="Notes"/>
-            </telerik:RadOutlookBarItem>
-            <telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png" IconMargin="10">
-                <TextBlock Text="Notes"/>
-            </telerik:RadOutlookBarItem>
-        </telerik:RadOutlookBar>
+{{region xaml-radoutlookbar-features-icons_1}}	
+    <telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png" IconMargin="10">               
 {{endregion}} 
 
 #### __Figure 3: IconMargin Property Result__

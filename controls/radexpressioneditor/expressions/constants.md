@@ -10,32 +10,31 @@ position: 3
 
 # Constants
 
-__RadExpressionEditor__ allows you to use different constants for defining the expression you want. There are several types supported by the control:
+**RadExpressionEditor** allows you to use different constants for defining the expression you want. There are several types supported by the control:
 
-* __Numeric constants__ - you may define just a simple numeric expression like:
-        
-![](images/RadExpressionEditor_NumericConstants.png)
+* **Numeric**: You may define just a simple numeric expression like:
 
-	In case of __Double__ constant, you could use the exponential value: 0.0E+2. As a __Decimal__ constant you could use '0.0'. 
+![Numeric constants](images/RadExpressionEditor_NumericConstants.png)
 
-* __String constants__ - they need to be surrounded by double quotation marks:
-        
-![](images/RadExpressionEditor_StringConstants.png)
+In case of **Double** constant, you could use the exponential value: 0.0E+2. As a **Decimal** constant you could use '0.0'.
 
+![Numeric constants](images/RadExpressionEditor_NumericConstants.png)
+![Double constants](images/RadExpressionEditor_DoubleConstant.png)
+![Decimal constants](images/RadExpressionEditor_DecimalConstant.png)
 
-* __DateTime constants__ - they need to be surrounded by hashes:
-         
-![](images/RadExpressionEditor_DataTimeConstants.png)
+* **String**: They need to be surrounded by double quotation marks:
 
+![String constants](images/RadExpressionEditor_StringConstants.png)
 
-* __Boolean constants__ - they can be defined as __"True"__ / __"False"__ values. In the same way you may define null constant - __"null"__.
-         
-![](images/RadExpressionEditor_BooleanConstants.png)
+* **DateTime**: They need to be surrounded by hashes:
+
+![DateTime constants](images/RadExpressionEditor_DataTimeConstants.png)
+
+* **Boolean / Null**: They can be defined as **True** / **False** values. In the same way you may define the null constant - **null**.
+
+![Boolean constants](images/RadExpressionEditor_BooleanConstants.png)
+![null constant](images/RadExpressionEditor_NullConstant.png)
 
 # See also
 
 * [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%})
-
-
-
-

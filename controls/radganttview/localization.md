@@ -44,6 +44,10 @@ The resources of the control can be localized by using an unique identifier call
 		
 Key | Value
 ---|---
-Gantt_Week | Week
-Start | Start:
+DraggingItem | Dragging item:
+DrawRelationFrom | Draw relation from:
+DrawRelationTo | To:
 End | End:
+Gantt_Week | Week
+RelationToolTip | Drag to create relation
+Start | Start:

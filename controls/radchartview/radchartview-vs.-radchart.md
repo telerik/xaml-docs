@@ -16,7 +16,7 @@ On the other hand, __RadChartView__ is a control that addresses some of the limi
 
 This help topic aims to compare the two controls and get you familiar with what you need to know when migrating from __RadChart__ to __RadChartView__.			
 
->Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. For the purpose, you need to use the new **Telerik.Windows.Chart.dll** instead of the old Telerik.Windows.Charting.dll. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.				
+>Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. For the purpose, you need to use the new **Telerik.Windows.Controls.Chart.dll** instead of the old Telerik.Windows.Controls.Charting.dll. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.				
 
 ## Highlights of features and functionality
 

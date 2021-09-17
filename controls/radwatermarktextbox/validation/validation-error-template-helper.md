@@ -16,8 +16,8 @@ When the control has validation errors, the border around the control will turn 
 
 To make the validation message appears when the control is focused, you can set the __ValidationErrorTemplateHelper.ShowWhenFocused__ attached property to true. Its default value is false.
 
-#### __[C#] Example 1: Show Validation Message on Focus__
-{{region csharp-radwatermarktextbox-validation-helper_1}}
+#### __[XAML] Example 1: Show Validation Message on Focus__
+{{region xaml-radwatermarktextbox-validation-helper_1}}
 	<telerik:RadWatermarkTextBox telerik:ValidationErrorTemplateHelper.ShowWhenFocused="True" />
 {{endregion}}
 

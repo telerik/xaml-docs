@@ -21,12 +21,12 @@ __RadMaskedTextInput__ represents a control that can be used to restrict the inp
 {% endif %}
 
 {% if site.site_name == 'WPF' %} 
->In order to use the __RadMaskedCurrencyInput__ control in your projects you have to add references to the following assemblies:
+>In order to use the __RadMaskedTextInput__ control in your projects you have to add references to the following assemblies:
 >	- __Telerik.Windows.Controls__
 >	- __Telerik.Windows.Controls.Input__
 >	- __Telerik.Windows.Data__  
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+>You can find more info [here](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf).
 {% endif %}
 
 ## Declaratively defined MaskedTextInput

@@ -1,8 +1,8 @@
 ---
-title: Set ItemTemplate property of CollectionEditorPicker 
+title: Set Generic ItemTemplate Property of CollectionEditorPicker 
 description: Set in generic way the ItemTemplate property for all CollectionEditorPicker editors.
 type: how-to
-page_title: How to make a generic template to display the items in a CollectionEditorPicker
+page_title: How to Make a Generic Template to Display the Items in a CollectionEditorPicker
 slug: kb-propertygrid-collectioneditor-itemtemplate
 position: 0
 tags: collectioneditor, propertygrid, itemtemplate
@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-How to set the ItemTemplate property for all CollectionEditorPicker controls inside your RadPropertyGrid.
+How to set a generic ItemTemplate property for all CollectionEditorPicker controls inside your RadPropertyGrid.
 
 ## Solution
 

@@ -38,7 +38,7 @@ To install a Telerik dll, search for the name of the corresponding assembly in t
 
 ![](images/nuget-setup-lifecycle-0.png)
 
-There are two types of Telerik packages - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). If the package name ends with `.Xaml` then the dlls or of the Xaml type. If doesn't contain this the dlls are NoXaml.
+There are two types of Telerik packages - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). If the package name ends with `.Xaml` then the dlls are of the Xaml type. If doesn't contain this the dlls are NoXaml.
 
 ![](images/nuget-setup-lifecycle-1.png)
 

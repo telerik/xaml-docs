@@ -155,7 +155,7 @@ Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView
 	}).ToList();
 {{endregion}}
 
-The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead the HierarchicalDataTemplate will trigger the getter of its ItemsSource property whenever the expander is clicked. For demonstration purposes we will load fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
+The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead, the HierarchicalDataTemplate will trigger the getter of its ItemsSource property on load. For demonstration purposes, we will load a fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
 
 #### __C#__
 {{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_16}}

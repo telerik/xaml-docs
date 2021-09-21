@@ -1,8 +1,8 @@
 ---
-title: Loading a multipage Tiff file in a RadPdfViewer using TiffBitmapDecoder
+title: Loading a Multipage Tiff File in a RadPdfViewer Using TiffBitmapDecoder
 description: Create a PDF document from a multipage TIFF file and show it in the RadPdfViewer using TiffBitmapDecoder.
 type: how-to
-page_title: How to show a multipage Tiff file in the RadPdfViewer using TiffBitmapDecoder
+page_title: How to Show a Multipage Tiff File in the RadPdfViewer Using TiffBitmapDecoder
 slug: kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder
 position: 0
 tags: pdf, pdfviewer, tiff, tif, tiffbitmapdecoder

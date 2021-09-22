@@ -20,8 +20,6 @@ The article covers the following topics:
 
 ## How to generate and use GroupHeaderContentTemplateSelector
 
->Since Q2 2011 release the GroupHeaderContentTemplateSelector contains only two templates – HorizontalTemplate and VerticalTemplate.      		
-
 Choose one of the following approaches to obtain the source code of GroupHeaderContentTemplateSelector:
 
 * __Generate GroupHeaderContentTemplateSelector from installation folder__ - In the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderContentTemplateSelector and any needed resources that it uses.

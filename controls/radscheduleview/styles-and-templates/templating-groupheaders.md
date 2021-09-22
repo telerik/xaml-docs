@@ -229,4 +229,4 @@ Here is the result:
 
 ![](images/radscheduleview_groupheadercontenttemplate.png)
 
-Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate){% endif %}{% if site.site_name == 'WPF' %}GroupHeaderTemplate Example at [WPF demos](https://demos.telerik.com/wpf/){% endif %} to see the GroupHeaderContentTemplateSelector in action.
+>tip Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate){% else %}GroupHeaderTemplate Example at [WPF demos](https://demos.telerik.com/wpf/){% endif %} to see the GroupHeaderContentTemplateSelector in action.

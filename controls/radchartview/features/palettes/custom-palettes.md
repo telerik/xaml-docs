@@ -62,8 +62,8 @@ Notice the __SeriesFamily__ property, which is available for the collections in 
 {{region radchartview-palettes-custom-palettes_1}}
 	<Grid>
 	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="1*"/>
-	        <ColumnDefinition Width="2*"/>
+	        <ColumnDefinition Width="1\*"/>
+	        <ColumnDefinition Width="2\*"/>
 	    </Grid.ColumnDefinitions>
 	
 	    <telerik:RadPieChart Palette="{StaticResource customPalette}" Grid.Column="0">

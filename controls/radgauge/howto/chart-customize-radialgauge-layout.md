@@ -65,7 +65,7 @@ To make it look more like compass we'll need to customize the labels so that the
 
 		<Style x:Key="CustomNeedle" TargetType="telerik:Needle" >
 			<Setter Property="telerik:ScaleObject.Location" Value="Inside" />
-			<Setter Property="telerik:ScaleObject.RelativeWidth" Value="0.03*" />
+			<Setter Property="telerik:ScaleObject.RelativeWidth" Value="0.03\*" />
 			<Setter Property="Background">
 				<Setter.Value>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -92,13 +92,13 @@ To make it look more like compass we'll need to customize the labels so that the
 								LabelRotationMode="None"
 								LabelLocation="Outside"
 								MajorTickLocation="Inside"
-								MajorTickOffset="0.05*"
+								MajorTickOffset="0.05\*"
 								MiddleTickLocation="Inside"
 								MiddleTickRelativeHeight="0.03*"
 								MinorTicks="1"
 								MiddleTicks="6"
-								MiddleTickRelativeWidth="0.01*" 
-								MiddleTickOffset="0.05*" >
+								MiddleTickRelativeWidth="0.01\*" 
+								MiddleTickOffset="0.05\*" >
 				<telerik:RadialScale.Indicators>
 					<telerik:Needle x:Name="needle" Value="0"  Style="{StaticResource CustomNeedle}"/>
 					<telerik:Pinpoint Background="White" BorderBrush="#FF767676" BorderThickness="1" />
@@ -141,7 +141,7 @@ You may additionally customize the appearance of the compass. For example we can
 
 		<Style x:Key="CustomNeedle" TargetType="telerik:Needle" >
 			<Setter Property="telerik:ScaleObject.Location" Value="Inside" />
-			<Setter Property="telerik:ScaleObject.RelativeWidth" Value="0.03*" />
+			<Setter Property="telerik:ScaleObject.RelativeWidth" Value="0.03\*" />
 			<Setter Property="Background">
 				<Setter.Value>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -161,7 +161,7 @@ You may additionally customize the appearance of the compass. For example we can
 			<Setter Property="Stroke" Value="#FF767676" />
 			<Setter Property="Fill" Value="White" />
 			<Setter Property="telerik:ScaleObject.Location" Value="Outside" />
-			<Setter Property="telerik:ScaleObject.Offset" Value="0.01*" />
+			<Setter Property="telerik:ScaleObject.Offset" Value="0.01\*" />
 		</Style>
 	</UserControl.Resources>
 	<Grid >
@@ -177,13 +177,13 @@ You may additionally customize the appearance of the compass. For example we can
 								LabelRotationMode="None"
 								LabelLocation="Outside"
 								MajorTickLocation="Inside"
-								MajorTickOffset="0.05*"
+								MajorTickOffset="0.05\*"
 								MiddleTickLocation="Inside"
-								MiddleTickRelativeHeight="0.03*"
+								MiddleTickRelativeHeight="0.03\*"
 								MinorTicks="1"
 								MiddleTicks="6"
-								MiddleTickRelativeWidth="0.01*" 
-								MiddleTickOffset="0.05*" >
+								MiddleTickRelativeWidth="0.01\*" 
+								MiddleTickOffset="0.05\*" >
 				<telerik:RadialScale.Indicators>
 					<telerik:Needle x:Name="needle" Value="0"  Style="{StaticResource CustomNeedle}"/>
 					<telerik:Pinpoint Background="White" BorderBrush="#FF767676" BorderThickness="1" />

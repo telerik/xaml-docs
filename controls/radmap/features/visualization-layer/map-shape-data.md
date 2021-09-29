@@ -14,22 +14,24 @@ The previous visualization engine based on the InformationLayer class provides y
 
 The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.      
 
-You will be able to find equivalents to most of the Shapes available in WPF/Silverlight.      
+You will be able to find equivalents to most of the Shapes available in {{ site.framework_name }}.      
 
 >To learn more about the different ways of customizing the shape apperance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.        
 
 The map shape data can be used identically to their visual element counterparts. This topic will focus briefly on showing you how to use the most important of them:      
 
 1. EllipseData
-1. LineData
-1. PathData
-1. PolygonData
-1. PolylineData
-1. RectangleData
+2. LineData
+3. PathData
+4. PolygonData
+5. PolylineData
+6. RectangleData
+
+>tip Adding map shape data objects in the ItemsSource of VisualizationLayer is not recommended. This is especially valid if the same source collection is shared between multiple VisualizationLayer instances.
 
 ## EllipseData
 
->In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).          
+In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).          
 
 To use the EllipseData in your visualization layer you have to set the following of its properties:
         

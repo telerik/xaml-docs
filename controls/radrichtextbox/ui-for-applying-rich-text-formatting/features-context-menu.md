@@ -20,7 +20,10 @@ The __RadRichTextBox__ UI has a built-in context menu feature which can be used 
 The context menu is enabled by default. You can control this with the __IsContextMenuEnabled__ property. If you set the property to False, the [Selection Mini Tool Bar]({%slug radrichtextbox-features-selection-mini-toolbar%}) will be displayed when you click the mouse right button.
 
 #### __[XAML] Example 1: Disabling the context menu__
+
+{{region radrichtextbox-features-context-menu_0}}
 	<telerik:RadRichTextBox IsContextMenuEnabled="False"/>
+{{endregion}}
 
 The menu is accessible through the __ContextMenu__ property of __RadRichTextBox__ control.
 
@@ -36,10 +39,15 @@ The RichTextBox default context menu can be fully replaced by an object that imp
 You can customize the default context menu by subscribing for its __Showing__ event. The following example shows how to add menu items.
 
 #### __[C#] Example 2: Subscribing to the Showing event__
+{{region radrichtextbox-features-context-menu_1}}
+
 	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
 	contextMenu.Showing += RichTextBox_ContextMenuShowing;
+{{endregion}}
 	
 #### __[C#] Example 3: Adding and removing menu items__
+
+{{region radrichtextbox-features-context-menu_2}}
 	private void RichTextBox_ContextMenuShowing(object sender, Telerik.Windows.Controls.RichTextBoxUI.Menus.ContextMenuEventArgs e)
 	{
 		if (!this.radRichTextBox.Document.Selection.IsEmpty)
@@ -60,6 +68,7 @@ You can customize the default context menu by subscribing for its __Showing__ ev
 	{
 		this.radRichTextBox.ChangeTextForeColor(Colors.Red);
 	}
+{{endregion}}
 	
 The Showing event is not presented in the IContextMenu interface so you will need to cast the ContextMenu property to __Telerik.Windows.Controls.RichTextBoxUI.ContextMenu__.
 	
@@ -73,6 +82,8 @@ You can use this approach also to remove or modify menu groups and items. They c
 You can customize the default context menu by creating a custom content builder and assign it to the __ContentBuilder__ property of the __ContextMenu__. 
 
 #### __[C#] Example 4: Creating custom content builder__
+
+{{region radrichtextbox-features-context-menu_3}}
 	public class CustomContextMenuBuilder : ContextMenuContentBuilder
     {
         public override ContextMenuGroupCollection Construct()
@@ -98,10 +109,13 @@ You can customize the default context menu by creating a custom content builder 
             this.RadRichTextBox.ChangeTextForeColor(Colors.Red);
         }
     }
+{{endregion}}
 	
 #### __[C#] Example 5: Setting the content builder__
+{{region radrichtextbox-features-context-menu_4}}
 	Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
 	contextMenu.ContentBuilder = new CustomContextMenuBuilder();
+{{endregion}}
 			
 __Figure 2__ shows how this modification affects the context menu.
 
@@ -122,6 +136,19 @@ The __ContextMenuContentBuilder__ class exposes several method overrides which c
 * __`CreateTrackChangesCommands`__: This method creates the groups containing menu items with commands related to the track changes.
 
 > If you prefer, instead of deriving from the __ContextMenuContentBuilder__ class, the custom builder can implement the __IContextMenuContentBuilder__ interface and construct the groups from scratch.
+
+## Using Different Context Menus 
+
+By default, the context menu is cached and used by all instances of RadRichTextBox in the application. If you would like to use separate context menus for the different instances of RadRichTextBox, you can use the code from **Example 6** to reset that behavior.
+
+#### __[C#] Example 6: Use separate context menu for an instance of RadRichTextBox__
+{{region radrichtextbox-features-context-menu_5}}
+      
+    this.radRichTextBox.ContextMenu = new Telerik.Windows.Controls.RichTextBoxUI.ContextMenu();
+    Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
+    contextMenu.ContentBuilder = new CustomContextMenuBuilder();
+{{endregion}}
+
 
 ## See Also
 * [Getting Started]({%slug radrichtextbox-getting-started%})

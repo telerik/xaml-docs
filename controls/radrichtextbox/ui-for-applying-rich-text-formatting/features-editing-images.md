@@ -161,7 +161,7 @@ What is left to do is assign an instance of your class to the __ContentBuilder__
 #### __C#__
 
 {{region radrichtextbox-features-editing-images_4}}
-    ContextMenu contextMenu = (ContextMenu)this.radRichTextBox.ContextMenu;
+    Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
     contextMenu.ContentBuilder = new CustomMenuBuilder(this.radRichTextBox);
 {{endregion}}
 

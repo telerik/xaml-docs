@@ -69,7 +69,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    typeof(ImageMiniToolBar),
 	
 	    // context menu
-	    typeof(ContextMenu),
+	    typeof(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
 	
 	    // the default English spellchecking dictionary
 	    typeof(RadEn_USDictionary),

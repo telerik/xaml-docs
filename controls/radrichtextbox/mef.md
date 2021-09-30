@@ -89,7 +89,7 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(ImageMiniToolBar),
                 
     // context menu
-    typeof(ContextMenu),
+    typeof(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
                 
     // the default English spellchecking dictionary
     typeof(RadEn_USDictionary),

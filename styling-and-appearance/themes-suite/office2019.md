@@ -547,7 +547,7 @@ More information about each brush follows in the next topic.
 
 ## Theme Variation Changing
 
-The Office2019 theme comes with three color variations, inspired by the colors used in MS Office. The **Light** variation corresponds to Microsoft's Colorful Office theme, the **Gray** - to the Dark Gray Office theme and the **Dark** - to the Black Office theme. The following example demonstrates the ability to switch between the supported **Light**, **Gray** and **Dark** color palettes by calling the **LoadPreset()** method as shown below:
+The Office2019 theme comes with three color variations, inspired by the colors used in MS Office. The **Light** variation corresponds to Microsoft's Colorful Office theme, the **Gray** - to the Dark Gray Office theme and the **Dark** - to the Black Office theme. The following example demonstrates the ability to switch between the supported **Light**, **Gray**, **Dark** and **HighContrast** color palettes by calling the **LoadPreset()** method as shown below:
 
 #### __[C#] Example 1: Changing the color variation of the theme__
 {{region cs-styling-appearance-Office2019-theme-1}}

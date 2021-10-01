@@ -37,7 +37,7 @@ This article demonstrates how you can change the default look of the __RadCartes
 * [Customizing Financial Series](#customizing-financial-series)
 	* [OhlcSeries](#ohlcseries)
 	* [CandlestickSeries](#candlestickseries)	
-* [CandlestickSeries](#customizing-box-plot-series)	
+* [BoxPlotSeries](#customizing-box-plot-series)	
 	
 ## Customizing Data Points Using DefaultVisualStyle
 

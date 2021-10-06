@@ -1,6 +1,6 @@
 ---
-title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
-page_title: Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version
+title: Upgrading Telerik UI Trial to Developer License or Newer Version
+page_title: Upgrading Telerik UI Trial to Developer License or Newer Version
 description: Check how you can upgrade your Trial assemblies to Telerik UI Developer License or Newer Version.
 slug: installation-upgrading-from-trial-to-developer-license-wpf
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
@@ -73,6 +73,5 @@ If your dll files contain this message in the FileDescription then they are Tria
 >* Please make sure that all the assemblies you have referenced are with the same version. 
 >* If this does not help, delete the bin and obj folders of the project manually and Rebuild.
             
-## See Also
-
+## See Also  
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})

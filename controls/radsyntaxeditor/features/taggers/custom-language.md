@@ -118,7 +118,7 @@ Let's define the following class which will be responsible for classifying the w
 
         internal static int GetCharType(char c)
         {
-            if (c == '#' || c == '_')
+            if (c == '#' || c == '\_')
             {
                 return 0;
             }

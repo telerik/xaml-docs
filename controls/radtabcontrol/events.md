@@ -12,7 +12,7 @@ position: 3
 
 This article lists the events specific for the __RadTabControl__ control.
 
-* __PreviewTabClosed__: Occurs when a __RadTabItem__ is about to be closed. The event arguments are of type __PreviewTabChangedEventArgs__ and derive from the __TabChangedEventArgs__ class. The arguments provide access to the following properties:
+* __PreviewTabClosed__: Occurs when a __RadTabItem__ is about to be closed. The event arguments are of type __PreviewTabChangedEventArgs__ and provide access to the following properties:
 
 	* __TabItem__: The __RadTabItem__ that has been changed.
 	
@@ -46,7 +46,7 @@ This article lists the events specific for the __RadTabControl__ control.
 	
 * __PreviewTabUnpinned__: Occurs when a __RadTabItem__ is about to be unpinned. Event arguments are of of type __PreviewTabChangedEventArgs__.
 
-	#### __[C#] Example 3: PreviewTabUnpinned Event Handler__	
+	#### __[C#] Example 2: PreviewTabUnpinned Event Handler__	
 	{{region radtabcontrol-events-2}}
 		private void RadTabControl_PreviewTabUnpinned(object sender, Telerik.Windows.Controls.PreviewTabChangedEventArgs e)
 		{
@@ -54,7 +54,7 @@ This article lists the events specific for the __RadTabControl__ control.
 		}
 	{{endregion}}
 		
-	#### __[VB.NET] Example 3: PreviewTabUnpinned Event Handler__	
+	#### __[VB.NET] Example 2: PreviewTabUnpinned Event Handler__	
 	{{region radtabcontrol-events-3}}
 		Private Sub RadTabControl_PreviewTabUnpinned(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PreviewTabChangedEventArgs)
 			MessageBox.Show($"{e.TabItem.Header} is about to be unpinned.")
@@ -65,7 +65,7 @@ This article lists the events specific for the __RadTabControl__ control.
 
 * __PreviewTabPinned__:	Occurs when a __RadTabItem__ is about to be pinned. The event arguments are of type __PreviewTabChangedEventArgs__.
 
-	#### __[C#] Example 4: PreviewTabPinned Event Handler__	
+	#### __[C#] Example 3: PreviewTabPinned Event Handler__	
 	{{region radtabcontrol-events-4}}
 		private void RadTabControl_PreviewTabPinned(object sender, Telerik.Windows.Controls.PreviewTabChangedEventArgs e)
 		{
@@ -73,7 +73,7 @@ This article lists the events specific for the __RadTabControl__ control.
 		}
 	{{endregion}}
 	
-	#### __[VB.NET] Example 4: PreviewTabPinned Event Handler__	
+	#### __[VB.NET] Example 3: PreviewTabPinned Event Handler__	
 	{{region radtabcontrol-events-5}}
 		Private Sub RadTabControl_PreviewTabPinned(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PreviewTabChangedEventArgs)
 			e.Cancel = True
@@ -88,7 +88,7 @@ This article lists the events specific for the __RadTabControl__ control.
 	
 	* __RoutedEvent__: Gets or sets the RoutedEventAgs.RoutedEvent associated with this RoutedEventArgs instance.
 	
-		#### __[C#] Example 5: DropDownOpened Routed Event__	
+		#### __[C#] Example 4: DropDownOpened Routed Event__	
 		{{region radtabcontrol-events-6}}
 			private void RadTabControl_DropDownOpened(object sender, DropDownEventArgs e)
 			{
@@ -98,7 +98,7 @@ This article lists the events specific for the __RadTabControl__ control.
 			}
 		{{endregion}}
 			
-		#### __[VB.NET] Example 5: DropDownOpened Routed Event__
+		#### __[VB.NET] Example 4: DropDownOpened Routed Event__
 		{{region radtabcontrol-events-7}}
 			Private Sub RadTabControl_DropDownOpened(ByVal sender As Object, ByVal e As DropDownEventArgs)
 				Dim dropDownItems As List(Of String) = e.DropDownItemsSource.Cast(Of String)().ToList(Of String)()

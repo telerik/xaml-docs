@@ -63,7 +63,7 @@ This article lists the events specific for the __RadTabControl__ control.
 
 * __TabUnpinned__: Occurs when a __RadTabItem__ is unpinned. The event arguments are of type __TabChangedEventArgs__.
 
-* __PreviewTabPinned__:	Occurs when a __RadTabItem__ is about to be pinned. The event arguments are of type __PreviewTabChangedEventArgs__.
+* __PreviewTabPinned__: Occurs when a __RadTabItem__ is about to be pinned. The event arguments are of type __PreviewTabChangedEventArgs__.
 
 	#### __[C#] Example 3: PreviewTabPinned Event Handler__	
 	{{region radtabcontrol-events-4}}

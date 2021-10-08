@@ -36,18 +36,18 @@ You can add __RadColorEditor__ manually by writing the XAML code in __Example 1_
 The __RadColorEditor__ is a control that displays a custom palette from which users can select a single color. The control exposes a __SelectedColor__ property, which is of type __Color__ and is used to store the selected color value.						
 
 #### __[XAML] Example 2: Setting the SelectedColor property__
-{{region radcoloreditor-getting-started-1}}
+{{region radcoloreditor-getting-started_1}}
 	<telerik:RadColorEditor SelectedColor="Red" />
 {{endregion}}
 
 #### __[C#] Example 2: Setting the SelectedColor property in code behind__
-{{region radcoloreditor-getting-started-2}}
+{{region radcoloreditor-getting-started_2}}
 	RadColorEditor colorEditor = new RadColorEditor();
 	colorEditor.SelectedColor = Colors.Red;
 {{endregion}}
 
 #### __[VB.NET] Example 2: Setting the SelectedColor property in code behind__
-{{region radcoloreditor-getting-started-3}}
+{{region radcoloreditor-getting-started_3}}
 	Dim colorEditor As New RadColorEditor()
 	colorEditor.SelectedColor = Colors.Red
 {{endregion}}
@@ -55,12 +55,12 @@ The __RadColorEditor__ is a control that displays a custom palette from which us
 Whenever a color is selected the __SelectedColorChanged__ event is raised:						
 
 #### __[XAML] Example 3: Subscribing to SelectedColorChanged event__
-{{region radcoloreditor-getting-started-4}}
+{{region radcoloreditor-getting-started_4}}
 	<telerik:RadColorEditor x:Name="colorEditor" SelectedColorChanged="colorEditor_SelectedColorChanged " />
 {{endregion}}
 
 #### __[C#] Example 4: Subscribing to SelectedColorChanged event in code behind__
-{{region radcoloreditor-getting-started-5}}
+{{region radcoloreditor-getting-started_5}}
 	colorEditor.SelectedColorChanged += new EventHandler<ColorChangeEventArgs>(colorEditor_SelectedColorChanged);
 	
 	private void colorEditor1_SelectedColorChanged(object sender, ColorChangeEventArgs e)
@@ -69,13 +69,24 @@ Whenever a color is selected the __SelectedColorChanged__ event is raised:
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: Subscribing to SelectedColorChanged event in code behin__
+#### __[VB.NET] Example 4: Subscribing to SelectedColorChanged event in code behind__
 {{region radcoloreditor-getting-started-6}}
 	colorEditor.SelectedColorChanged += New EventHandler(Of ColorChangeEventArgs)(colorEditor_SelectedColorChanged)
 	
 	Private Sub colorEditor1_SelectedColorChanged(ByVal sender As Object, ByVal e As ColorChangeEventArgs)
 		Dim selectedColor As Color = e.Color
 	End Sub
+{{endregion}}
+
+## Set Color Palette Width
+
+Since __2021 R3__ release, the __RadColorEditor__ exposes the following property for setting the width of the __Color Palette__ visual element:
+
+* __ColorSettingsPanelWidth__: gets or sets the color settings panel width.
+
+#### __[XAML] Example 5: Setting the ColorSettingsPanelWidth property__
+{{region radcoloreditor-getting-started_7}}
+	<telerik:RadColorEditor x:Name="colorEditor" ColorSettingsPanelWidth="450" />
 {{endregion}}
 
 ## Setting a Theme
@@ -93,10 +104,10 @@ To change the theme, you can follow the steps below:
 	* __Telerik.Windows.Controls__
 	* __Telerik.Windows.Controls.Input__
 
-__Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+__Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region xaml-radcoloreditor-getting-started_7}}
+#### __[XAML] Example 6: Merge the ResourceDictionaries__  
+{{region radcoloreditor-getting-started_8}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>

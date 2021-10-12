@@ -1,5 +1,5 @@
 ---
-title: Conversion between Pixels and PixelLength
+title: Pixels and PixelLength Conversion
 page_title: Conversion between Pixels and PixelLength
 description: Check our &quot;Conversion between Pixels and PixelLength&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
 slug: radganttview-features-timeruler-conversion
@@ -8,58 +8,35 @@ published: True
 position: 1
 ---
 
-# Conversion between Pixels and PixelLength
+# Pixels and PixelLength Conversion 
 
-In this help article I will demonstrate how you could set real pixels to the __PixelLength__ property of the RadGanttView control which is of __TimeSpan__ type.
+This article demonstrates how to convert between screen size (in pixels) and TimeSpan value representing the PixelLength of RadGanttView.
 
-Usually you would be setting the PixelLength property to for example 1 hour and 30 minutes but in some cases it is more useful to be able to set the PixelLength to real pixels in order to be able to fill a specific area in your application. In those cases you could either test and see what TimeSpan is appropriate for you or use the approach that is discussed in this article to set it to exact pixel number. 
+The PixelLength property works with TimeSpan values, like 1 hour, 30 minutes and so on. In some cases it is more useful to be able to set the PixelLength based on screen size in order to be able to fill a specific area in the application. In those cases you can manually test and see what TimeSpan is appropriate by hardcoding values or you can use the approach that is discussed in this article to set it to exact pixel number. 
 
 ## Converting Pixels to PixelLength
 
-The PixelLength property of the RadGanttView control is responsible for setting the horizontal size of the TimeRuler and in order to set it to a value that represents pixels you will need to implement the following formula:
+The PixelLength property of the RadGanttView control is responsible for setting the horizontal size of the TimeRuler. In order to set it to a value that matches actual screen size you can use the following formula.
 
-__PixelLength = (Ticks of the VisibleRange) / (desired pixels)__
+`PixelLength = (Ticks of the VisibleRange) / (desired pixels)`
 
-The next code snippets shows how to implement the above formula in order to set the PixelLength to 760 pixels:
-
-#### __XAML__
-
-{{region xaml-radganttview-features-timeruler-conversion-1}}
-	<telerik:RadGanttView x:Name="GanttView">
-	    <!--...-->
-	</telerik:RadGanttView>
-{{endregion}}
-
-#### __C#__
-
-{{region cs-radganttview-features-timeruler-conversion-1}}
-	var maxTicks = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / 760;
-	
+#### __C#__  
+{{region cs-radganttview-features-timeruler-conversion-1}}	
+	double pixelsWidth = 760;
+	var maxTicks = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / pixelsWidth;	
 	this.GanttView.PixelLength = TimeSpan.FromTicks(maxTicks);
 {{endregion}}
 
 ## Converting PixelLength to Pixels
 
-The inverse conversion of PixelLength to pixels could be implemented by the following formula: 
+The inverse conversion of PixelLength to pixels could be implemented with the following formula: 
 
-__Pixels = (Ticks of the VisibleRange) / (desired PixelLength.Ticks)__
+`Pixels = (Ticks of the VisibleRange) / (desired PixelLength.Ticks)`
 
-The next code snippets show how to implement the described above formula in order to get the Pixels representation of desired TimeSpan:
-
-#### __XAML__
-
-{{region xaml-radganttview-features-timeruler-conversion-1}}
-	<telerik:RadGanttView x:Name="GanttView">
-	    <!--...-->
-	</telerik:RadGanttView>
-{{endregion}}
-
-#### __C#__
-
+#### __C#__  
 {{region cs-radganttview-features-timeruler-conversion-2}}
-	var maxTicks = this.GanttView.PixelLength.Ticks;
-	
+	var maxTicks = this.GanttView.PixelLength.Ticks;	
 	var pixels = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / maxTicks;
 {{endregion}}
 
->tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/PixelsToPixelLengthConversion).
+>tip Find a runnable project showing the previous methods in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/PixelsToPixelLengthConversion).

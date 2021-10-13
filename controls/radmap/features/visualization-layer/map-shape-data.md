@@ -31,7 +31,7 @@ The map shape data can be used identically to their visual element counterparts.
 
 ## EllipseData
 
-In contrast with MapEllipse which is used with InformationLayer the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of current distance unit (mile or kilometer).          
+In contrast with MapEllipse which is used with InformationLayer, the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of the current distance unit (mile or kilometer).          
 
 To use the EllipseData in your visualization layer you have to set the following of its properties:
         

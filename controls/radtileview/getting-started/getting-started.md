@@ -29,7 +29,7 @@ position: 0
 > You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 {% endif %}
 
-#### __XAML__
+#### __[XAML] Example 1__
 
 {{region radtileview-getting-started_0}}
 	<UserControl x:Class="RadTileViewHelpExamples.MainPage"
@@ -58,7 +58,7 @@ As you can see from the image below the items are in restored state by default.
 
 To set an item in maximized state you can use the __TileState__ property and set its value to __Maximized__.				
 
-#### __XAML__
+#### __[XAML] Example 2__
 
 {{region radtileview-getting-started_1}}
 	<telerik:RadTileView>
@@ -84,7 +84,7 @@ To set the minimized area positions use the __MinimizedItemsPosition__ property.
 * __Right__
 * __Bottom__
 
-#### __XAML__
+#### __[XAML] Example 3__
 
 {{region radtileview-getting-started_2}}
 	<telerik:RadTileView MinimizedItemsPosition="Bottom">
@@ -100,7 +100,45 @@ To set the minimized area positions use the __MinimizedItemsPosition__ property.
 	</telerik:RadTileView>
 {{endregion}}
 
+#### __Figure 1__
 ![Tile View - minimized items position](images/tileview_Step3.png)
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#TileView/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the RadTileView, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Navigation__
+
+__Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 4: Merge the ResourceDictionaries__  
+{{region radtileview-getting-started_7}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+>Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+
+__Figure 2__ shows a RadTileView with the **Windows8** theme applied.
+
+#### __Figure 2: RadTileView with the Windows8 theme__
+![RadTileView with Windows8 theme](images/RadTileView-setting-theme.png)
 
 ## See Also
  * [Visual Structure]({%slug radtileview-visual-structure%})

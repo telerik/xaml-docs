@@ -93,6 +93,40 @@ The control populates its data through the __CellValueNeeded__ event. It is rais
 
 This property indicates whether the text is measured on rendering. Its default value is __False__. When set to __True__, the usage of the __FitColumnWidthToContent__ and __CellTextAlignment__ mechanisms is enabled. Note, that this may affect the performance of the control.
 
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#GridView/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For RadVirtualGrid, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.VirtualGrid__
+
+__Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 4: Merge the ResourceDictionaries__  
+{{region radvirtualgrid-getting-started_08}}
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.VirtualGrid.xaml"/>
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+{{endregion}}
+
+__Figure 2__ shows RadVirtualGrid with the **Windows8** theme applied.
+	
+#### __Figure 2: RadVirtualGrid with the Windows8 theme__
+![Telerik {{ site.framework_name }} VirtualGrid-windows8](images/RadVirtualGrid-windows8.png)
+
 ## See also
 
 * [Editing]({%slug virtualgrid-editing%})

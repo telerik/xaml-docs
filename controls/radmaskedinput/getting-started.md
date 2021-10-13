@@ -122,6 +122,41 @@ You can set a watermark content to the __RadMaskedInput__ controls by using the 
 	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
 {{endregion}}
 
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#MaskedInput/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadMaskedInput__, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Input__
+
+__Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 4: Merge the ResourceDictionaries__  
+{{region radmaskedinput-getting-started_5}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>				
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+__Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
+	
+#### __Figure 1: RadMaskedInput with the Windows8 theme__
+![Telerik {{ site.framework_name }} MaskedInput-Windows8](images/radmaskedinput-windows8.png)
+
+
 ## See Also
  * [RadMaskedInput Controls Overview]({%slug radmaskedinput-overview%})
  * [Events Overview]({%slug radmaskedinput-events-overview%})

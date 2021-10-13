@@ -41,7 +41,7 @@ This tutorial will walk your through the creation of a sample application contai
 
 * Define __RadExpressionEditor__ as demonstrated below:
 
-#### __XAML__
+#### __[XAML] Example 1__
 {{region radexpressioneditor-getting-started_1}}
 	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
 {{endregion}}
@@ -54,7 +54,7 @@ Now, when running the application, __RadExpressionEditor__ will be displayed:
 
 The scenario we will try to create here would be to implement __RadExpressionEditor__ as an advanced manual filter for __RadGridView__. For that purpose, we will firstly create a new class __Employee__ with a couple of exposed properties and a method creating sample data:
 
-#### __C#__
+#### __[C#] Example 2__
 
 {{region radexpressioneditor-getting-started_3}}
 	public class Employee 
@@ -104,7 +104,7 @@ The scenario we will try to create here would be to implement __RadExpressionEdi
 	 }
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 2__
 
 {{region radexpressioneditor-getting-started_4}}
 	Public Class Employee
@@ -205,7 +205,7 @@ The scenario we will try to create here would be to implement __RadExpressionEdi
 
 In our case we will create a simple __ViewModel__ taking care for the connection between the model and view. It will be set as __DataContext__ of the application.
 
-#### __C#__
+#### __[C#] Example 3__
 
 {{region radexpressioneditor-getting-started_5}}
 	public class MyViewModel
@@ -225,7 +225,7 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	 }
 	{{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 3__
 
 {{region radexpressioneditor-getting-started_6}}
 	Public Class MyViewModel
@@ -243,7 +243,7 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 
 Once we declared the business object and the corresponding __ViewModel__, we can define __RadExpressionEditor__ and bind it appropriately. 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+#### __[XAML] Example 4__
 
 {{region radexpressioneditor-getting-started_7}}
 	<UserControl x:Class="RadExpressionEditor_SL.MainPage"
@@ -272,7 +272,7 @@ Once we declared the business object and the corresponding __ViewModel__, we can
 {{endregion}}
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+#### __[XAML] Example 4__
 
 {{region radexpressioneditor-getting-started_8}}
 	<Window x:Class="RadExpressionEditor_WPF.MainPage"
@@ -303,7 +303,7 @@ Once we declared the business object and the corresponding __ViewModel__, we can
 
 The functionality for defining a filter for __RadGridView__ will be implemented in the handler of __ExpressionChanged__ event:  
 
-#### __C#__
+#### __[C#] Example 5__
 
 {{region radexpressioneditor-getting-started_9}}
 	private FilterDescriptor<Employee> genericFilterDescriptor = new FilterDescriptor<Employee>();
@@ -327,7 +327,7 @@ The functionality for defining a filter for __RadGridView__ will be implemented 
 	  }
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Example 5__
 
 {{region radexpressioneditor-getting-started_10}}
 	    Private genericFilterDescriptor As New FilterDescriptor(Of Employee)()
@@ -362,7 +362,8 @@ You can edit the [template of the control]({%slug radexpressioneditor-styles-and
 ## Pasting
      
 By default pasting in the editor is not supported. This is the behavior as the inner ExpressionTextBox is configured to not accept returns. You can resolve this with the following approach ensuring the pasting will be executed in code:
-#### __C#__
+
+#### __[C#] Example 7__
 {{region radexpressioneditor-getting-started_11}}
     void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
@@ -385,3 +386,45 @@ By default pasting in the editor is not supported. This is the behavior as the i
         }
     }     
 {{endregion}}
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#Diagrams/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadExpressionEditor__, you will need to merge the following resources:
+
+	* __System.Windows.xaml__
+	* __Telerik.Windows.Controls.xaml__
+	* __Telerik.Windows.Controls.Expressions.xaml__
+	* __Telerik.Windows.Controls.Navigation.xaml__
+	* __Telerik.Windows.Documents.xaml__
+
+__Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 8: Merge the ResourceDictionaries__  
+{{region radexpressionEditor-getting-started_9}}
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Expressions.xaml"/>					
+				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Documents.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+{{endregion}}
+
+>Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+
+__Figure 14__ shows a __RadExpressionEditor__ with the **Windows8** theme applied.
+
+#### __Figure 14: RadExpressionEditor with the Windows8 theme__
+![RadExpressionEditor with Windows8 theme](images/radexpressionEditor-setting-theme.png)

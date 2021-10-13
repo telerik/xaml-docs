@@ -67,7 +67,7 @@ __Figure 2: RadGridView with horizontally merged cells__
 
 You can also configure merging for GridViewDataColumn through setting its __IsCellMergingEnabled__ property. For example:
         
-#### __[XAML] Example 3:__ Configure cell merging per column__
+#### __[XAML] Example 3: Configure cell merging per column__
 
 {{region xaml-gridview-merged-cells_4}}
 	<telerik:RadGridView ColumnWidth="*"

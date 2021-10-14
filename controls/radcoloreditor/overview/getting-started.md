@@ -80,7 +80,7 @@ Whenever a color is selected the __SelectedColorChanged__ event is raised:
 
 ## Set Color Settings Panel Width
 
-Since __2021 R3__ release, the __RadColorEditor__ exposes the __ColorSettingsPanelWidth__ property for setting the width of the __Color Settings Panel__ visual element.
+Since the 2021 R3 release, RadColorEditor exposes the __ColorSettingsPanelWidth__ property for setting the width of the color settings panel area.
 
 #### __[XAML] Example 5: Setting the ColorSettingsPanelWidth property__
 {{region radcoloreditor-getting-started_7}}

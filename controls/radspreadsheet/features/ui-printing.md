@@ -33,6 +33,8 @@ Using the __PrintWhatSettings__ class you can specify:
         
 
 * __ExportWhat__: An enumeration specifying whether to print the __Active Sheet__, the __Entire Workbook__ or the current __Selection__.
+
+* __IncludeHiddenSheets__: Bolean value indicating whether to include the hidden sheets or to skip them. Default value is `true`.
             
 
 * __IgnorePrintArea__: Boolean value indicating whether or not to ignore print area when printing worksheets. 

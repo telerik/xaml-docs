@@ -124,7 +124,6 @@ To change the theme, you can follow the steps below:
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadMap__, you will need to merge the following resources:
 
 	* __Telerik.Windows.Controls__
-	* __Telerik.Windows.Data__
 	* __Telerik.Windows.Controls.DataVisualization__
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.

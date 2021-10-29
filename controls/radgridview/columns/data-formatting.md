@@ -21,7 +21,7 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 	                DataFormatString="{} {0:dd, MMM, yyyy}" />
 {{endregion}}
 
->__{}__ is the XAML escape sequence which allows subsequent values in the attribute to be interpreted as a literal.. You can find more information in the MSDN [Escape Sequence](http://msdn.microsoft.com/en-us/library/ms744986.aspx) article.
+>__{}__ is the XAML escape sequence which allows subsequent values in the attribute to be interpreted as a literal. You can find more information in the MSDN [Escape Sequence](http://msdn.microsoft.com/en-us/library/ms744986.aspx) article.
 
 #### __[C#] Example 1: Set DataFormatString property of DateTime column__
 
@@ -43,7 +43,7 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 ![Telerik {{ site.framework_name }} DataGrid Data Formatting 1](images/RadGridView_DataFormatting_1.png)
 
->The DataFormatString property uses the __string.Format__ method. To learn more, check the [string.Format](http://msdn.microsoft.com/en-us/library/system.string.format.aspx) MSDN article.
+>The DataFormatString property uses the __string.Format__ method. To learn more, check the [string.Format](http://msdn.microsoft.com/en-us/library/system.string.format.aspx) MSDN article. The resulting string is also dependent on the [IsLocalizationLanguageRespected]({%slug gridview-how-to-custom-format%}) property.
 
 To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 

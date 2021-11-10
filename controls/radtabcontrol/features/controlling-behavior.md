@@ -28,7 +28,7 @@ Using the __ReorderTabRows__ property you can control how the tab item rows are 
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
 	{{endregion}}
-	
+
 #### __Figure 1:ReorderTabRows set to True__
 ![Telerik TabControl ReorderTabRows](images/tabcontrol_controlling_behavior_reordertabrows_1.png)
 
@@ -49,7 +49,7 @@ You can allow/disallow the user to reorder the tab items of your control through
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
 	{{endregion}}
-	
+
 ## Enable or Disable Tab Items
 
 You can set the  __IsEnabled__ property to prevent the user from interacting with the whole tab control or with certain tab items. You can find this property in both __RadTabControl__ and __RadTabItem__.
@@ -57,13 +57,13 @@ You can set the  __IsEnabled__ property to prevent the user from interacting wit
 #### __[XAML] Example 3: Disable tab item__	
 	{{region xaml-radtabcontrol-features-controlling-behavior_2}}		
 		<telerik:RadTabControl x:Name="radTabControl">
-            <telerik:RadTabItem Header="Calendar"/>
-            <telerik:RadTabItem Header="Colors" />
-            <telerik:RadTabItem Header="Disabled Item" IsEnabled="False"/>
-            <telerik:RadTabItem Header="Quote"/>
-        </telerik:RadTabControl>
+	        <telerik:RadTabItem Header="Calendar"/>
+	        <telerik:RadTabItem Header="Colors" />
+	        <telerik:RadTabItem Header="Disabled Item" IsEnabled="False"/>
+	        <telerik:RadTabItem Header="Quote"/>
+	    </telerik:RadTabControl>
 	{{endregion}}
-	
+
 #### __Figure 3: Disable tab item__
 ![Telerik TabControl Disabled Tab Item](images/tabcontrol_controlling_behavior_disableditem_3.png)
 
@@ -79,7 +79,7 @@ By default, the RadTabControl will display two arrows when the width of the tab 
 	{{region xaml-radtabcontrol-features-controlling-behavior_3}}		
 		<telerik:RadTabControl x:Name="radTabControl" OverflowMode="Wrap">
 		    <!-- large number of items -->
-        </telerik:RadTabControl>
+	    </telerik:RadTabControl>
 	{{endregion}}
 
 #### __Figure 4: Show all items in the ViewPort__
@@ -162,7 +162,7 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 	{{region xaml-radtabcontrol-features-controlling-behavior_7}}		
 		<telerik:RadTabControl x:Name="radTabControl" DropDownDisplayMode="Visible">
 		    <!-- large number of items -->
-        </telerik:RadTabControl>
+	    </telerik:RadTabControl>
 	{{endregion}}
 
 #### __Figure 7: Show DropDownMenu button__

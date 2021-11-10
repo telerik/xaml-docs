@@ -31,7 +31,7 @@ __RadTreeListView__ displays the data in the same way as __RadGridView__. The di
 Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}) are two different things. The first displays the data in a tree view manner in one and the same table. The second one displays the hierarchical data in nested __RadGridViews__. 
 
 
->important Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}).
+>important Use __RadTreeListView__ only when you need to display __homogeneous data__. For __heterogeneous data__ use the [Hierarchical RadGridView]({%slug gridview-hierachy-overview%}). Heterogeneous data means a source with different type of objects in it.
 
 >tip You can also check out the __RadGridView__'s [Getting Started section]({%slug gridview-getting-started2%}).
 
@@ -393,6 +393,42 @@ __Figure 2__ shows a snapshot of the result.
 __Figure 2: RadTreeListView with manually defined columns__
 
 ![](images/RadTreeListView_GettingStarted_01.png)
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#TreeListView/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For RadTreeListView, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+	* __Telerik.Windows.Controls.Input__
+	* __Telerik.Windows.Controls.GridView__
+
+__Example 9__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 9: Merge the ResourceDictionaries__  
+{{region radtreeview-getting-started_08}}
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+{{endregion}}
+
+__Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
+	
+#### __Figure 3: RadTreeListView with the Windows8 theme__
+![Telerik {{ site.framework_name }} TreeListView-windows8](images/RadTreeListView-windows8.png)
 
 ## See Also
  * [Data Binding]({%slug radtreelistview-features-data-binding%})

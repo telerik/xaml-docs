@@ -21,8 +21,8 @@ The __Telerik Diagramming Framework__ comes with a set of controls and features 
 {% if site.site_name == 'WPF' %}* [RadDiagramPrintPreview]({%slug raddiagram-features-printing%}#raddiagramprintpreview){% endif %}
 
 > In order to use the controls and features provided in the __Telerik.Windows.Controls.Diagrams.Extensions__ assembly in your projects you have to add references to the following assemblies as well:
->	- __Telerik.Windows.Controls.Navigation__
->	- __Telerik.Windows.Controls.Input__
-{% if site.site_name == 'WPF' %}>	- __Telerik.Windows.Data__ {% endif %}
+> + __Telerik.Windows.Controls.Navigation__
+> + __Telerik.Windows.Controls.Input__
+> + {% if site.site_name == 'WPF' %}__Telerik.Windows.Data__{% endif%}
 
 >tip The examples in this section are showcasing Telerik Windows8 theme. In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article you can find more information on how to set an application-wide theme.

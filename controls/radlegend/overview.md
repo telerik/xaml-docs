@@ -22,7 +22,7 @@ __RadLegend__ is a stand-alone control which visualizes a list of legend items. 
 
 ![](images/radlegend-overview-0.png)
 
-## Key Feautres
+## Key Features
 
 * __Default geometry visualization__: The visual items of legend come with a predefined template that contains a small rectangle geometry marking the color of the item and also a text title.
 

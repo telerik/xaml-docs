@@ -11,7 +11,7 @@ CTAControlName: RadFluidContentControl
 
 # Overview
 
-__RadFluidContentControl__ is a flexible content control used to built responsive layouts. In its nature the control is a ContentControl, but instead of a single content it can define three that can be switched under specific conditions. By default the condition is the size of the control. So, you can show different content based on the size of the application.
+__RadFluidContentControl__ is a flexible content control used to build responsive layouts. In its nature the control is a ContentControl, but instead of a single content it can define three that can be switched under specific conditions. By default the condition is the size of the control. So, you can show different content based on the size of the application.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

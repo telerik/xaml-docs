@@ -16,7 +16,7 @@ __RadGridView__'s API allows you to tweak your application for optimal performan
           
 * Placing RadGridView in panels/controls which measure it with infinity disables the UI virtualization mechanism of the control and can greatly impact performance when dealing with large amounts of data. Examples of such panels include __ScrollViewer__, __StackPanel__ and __Grid__ with a definition with **Width/Height** set to **Auto**.
             
-* It is recommended to use the **Flat** [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). Configuring it involves rendering rows one below the other, which leads to better performance results as opposed to the.
+* It is recommended to use the **Flat** [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). Configuring it involves rendering rows one below the other, which leads to better performance results as opposed to the Nested mode where rows are nested into one another in case nesting is required (grouping or hierarchy). The Flat mode also resolves few rendering issues related to the Nested mode.
 
 * You can also speed up the performance of the control by using the [lightweight templates]({%slug gridview-overview-lightweight-template%}) for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates of the rows and cells and reduce the amount of time it takes to render them.
 

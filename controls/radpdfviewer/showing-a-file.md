@@ -32,7 +32,9 @@ First, you need to declare the Telerik namespace as shown in __Example 1__.
 
 
 
-After that, you can proceed to add the **PdfViewer** control to the user control as shown in __Example 2__:
+After that, you can proceed to add the **PdfViewer** control to the user control as shown in __Example 2__.
+
+>Make sure to set the Build Action of the file to Resource so it can be accessed through URI.
 
 #### __[XAML] Example 2: Create RadPdfViewer__
 

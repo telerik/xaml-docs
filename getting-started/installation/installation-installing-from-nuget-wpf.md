@@ -32,7 +32,11 @@ We provide separate packages for the different assemblies from the UI for WPF su
 
 ## Using the Telerik NuGet Server
 
-Through the Telerik NuGet Server users can easily include the Telerik UI for WPF suite and update to the latest official version. The following steps will demonstrate how this can be done in Visual Studio:
+Through the Telerik NuGet Server [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json) users can easily include the Telerik UI for WPF suite and update to the latest official version. 
+
+> The old [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget) server will be deprecated and we encourage our clients to switch to the v3 API. The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients.
+
+The following steps will demonstrate how this can be done in Visual Studio:
 
 1.Navigate to the Package Manager Settings menu.
 

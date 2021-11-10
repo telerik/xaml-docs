@@ -20,15 +20,15 @@ Scale interactivity refers to the ability for the end-user to interact with the 
 	                    IsInteractive="True"
 	                    RelativeHeight="1"
 	                    RelativeY="0"
-	                    MiddleTickRelativeWidth="0.05*"
-	                    MiddleTickRelativeHeight="0.003*"
-	                    MinorTickRelativeHeight="0.003*"
-	                    MajorTickRelativeHeight="0.003*">
+	                    MiddleTickRelativeWidth="0.05\*"
+	                    MiddleTickRelativeHeight="0.003\*"
+	                    MinorTickRelativeHeight="0.003\*"
+	                    MajorTickRelativeHeight="0.003\*">
 	        <telerik:VerticalLinearScale.Indicators>
 	            <telerik:Marker Value="5"
 	                    telerik:LinearScale.RotateForVertical="True"
-	                    telerik:ScaleObject.RelativeWidth="0.08*"
-	                    telerik:ScaleObject.RelativeHeight="0.03*" 
+	                    telerik:ScaleObject.RelativeWidth="0.08\*"
+	                    telerik:ScaleObject.RelativeHeight="0.03\*" 
 	                    telerik:ScaleObject.Location="OverCenter" />
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
@@ -55,16 +55,16 @@ Using interactivity features of the scale you can create two-way binding between
 	        <telerik:VerticalLinearScale Min="0" Max="100"
 	                                     RelativeHeight="1"
 	                                     RelativeY="0"
-	                                     MiddleTickRelativeWidth="0.05*"
-	                                     MiddleTickRelativeHeight="0.003*"
-	                                     MinorTickRelativeHeight="0.003*"
-	                                     MajorTickRelativeHeight="0.003*"
+	                                     MiddleTickRelativeWidth="0.05\*"
+	                                     MiddleTickRelativeHeight="0.003\*"
+	                                     MinorTickRelativeHeight="0.003\*"
+	                                     MajorTickRelativeHeight="0.003\*"
 	                                     IsInteractive="True">
 	            <telerik:VerticalLinearScale.Indicators>
 	                <telerik:Marker Name="marker" 
 	                                telerik:LinearScale.RotateForVertical="True"
-	                                telerik:ScaleObject.RelativeWidth="0.08*"
-	                                telerik:ScaleObject.RelativeHeight="0.03*" 
+	                                telerik:ScaleObject.RelativeWidth="0.08\*"
+	                                telerik:ScaleObject.RelativeHeight="0.03\*" 
 	                                telerik:ScaleObject.Location="OverCenter"
 	                                Value="{Binding ElementName=markerValue, Path=Value, Mode=TwoWay}"  />
 	            </telerik:VerticalLinearScale.Indicators>

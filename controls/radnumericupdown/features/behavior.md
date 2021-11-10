@@ -36,6 +36,8 @@ __RadNumericUpDown__ comes with a couple of key properties which you can use to 
 
 * __CustomUnit__: Gets or sets an additional string to appear in the end of numeric values. For example, **kg**, **km/h**, etc.
 
+* __IsInteger__: Gets or sets a value indicating whether the format is integer. The expected value is of type __bool__.
+
 **Example 1** demonstrates how to set the **IsReadOnly** property of the control.
 
 #### __[XAML] Example 1: Make RadNumericUpDown read-only__

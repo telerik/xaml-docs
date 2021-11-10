@@ -14,17 +14,14 @@ __RadDiagramNavigationPane__ wraps the __RadDiagramThumbnail__ control and gives
 ![raddiagram-extensions-navigationpane](images/raddiagram-extensions-navigationpane.png)
 
 >In order to use the __RadDiagramNavigationPane__ control in your projects you have to add references to the following assemblies:
->	- Telerik.Windows.Controls.Diagrams
->	- Telerik.Windows.Diagrams.Core
->	- Telerik.Windows.Controls.Diagrams.Extensions
->	- Telerik.Windows.Controls
->	- Telerik.Windows.Controls.Navigation
->	- Telerik.Windows.Controls.Input
-{% if site.site_name == 'WPF' %}
->	- Telerik.Windows.Data
-{% endif %}
+> + __Telerik.Windows.Controls__
+> + __Telerik.Windows.Controls.Diagrams__
+> + __Telerik.Windows.Controls.Diagram.Extensions__
+> + __Telerik.Windows.Controls.Input__
+> + __Telerik.Windows.Controls.Navigation__
+> + {% if site.site_name == 'WPF' %}__Telerik.Windows.Data__{% endif%}
+> + __Telerik.Windows.Diagrams.Core__  
 
-<!-- -->
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find information on how to set an application-wide theme.
 
 ## Working with DiagramNavigationPane

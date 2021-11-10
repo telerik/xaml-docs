@@ -84,10 +84,6 @@ Set the List as datasource for the SparkLine using the *ItemsSource *property of
 	myLinearSparkline.ItemsSource = myData
 {{endregion}}
 
-The result is shown below:
-
-![](images/radsparkline_databound.PNG)
-
 __2.Binding To a List of Business Objects__
 
 If you have a list of business objects and you want to bind it to the RadSparkLine control here is how to do it:

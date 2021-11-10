@@ -112,7 +112,7 @@ Next you have to check the value of the current sorting direction. To do that us
 	{
 	    e.NewSortingState = SortingState.Ascending;
 	}
-	//If the sorting state is none, sort the items descending.
+	//If the sorting state is ascending, sort the items descending.
 	else if (e.OldSortingState == SortingState.Ascending)
 	{
 	    e.NewSortingState = SortingState.Descending;
@@ -130,7 +130,7 @@ Next you have to check the value of the current sorting direction. To do that us
 	'If the sorting state is none, sort the items ascending.
 	If e.OldSortingState = SortingState.None Then
 	    e.NewSortingState = SortingState.Ascending
-	    'If the sorting state is none, sort the items descending.
+	    'If the sorting state is ascending, sort the items descending.
 	ElseIf e.OldSortingState = SortingState.Ascending Then
 	    e.NewSortingState = SortingState.Descending
 	    'If the sorting state is descending, apply default sorting to the items.
@@ -205,7 +205,7 @@ Here is the final code that should represent __Sorting__ event handler.
 	                                                          .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
 	                                                          .GetValue(employee, null));
 	    }
-	    //If the sorting state is none, sort the items descending.
+	    //If the sorting state is ascending, sort the items descending.
 	    else if (e.OldSortingState == SortingState.Ascending)
 	    {
 	        e.NewSortingState = SortingState.Descending;
@@ -242,7 +242,7 @@ Here is the final code that should represent __Sorting__ event handler.
 	    If e.OldSortingState = SortingState.None Then
 	        e.NewSortingState = SortingState.Ascending
 	        employees = employees.OrderBy(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))
-	        'If the sorting state is none, sort the items descending.
+	        'If the sorting state is ascending, sort the items descending.
 	    ElseIf e.OldSortingState = SortingState.Ascending Then
 	        e.NewSortingState = SortingState.Descending
 	        employees = employees.OrderByDescending(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))

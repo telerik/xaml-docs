@@ -27,6 +27,24 @@ Telerik __RichTextBox__ for WPF supports the commanding mechanism in WPF. There 
 
 <b>Hotkey</b></th></tr><tr><td>
 
+Open new document</td><td>
+
+Ctrl+N</td></tr><tr><td>
+
+Open existing document</td><td>
+
+Ctrl+O</td></tr><tr><td>
+
+
+Save</td><td>
+
+Ctrl+S</td></tr><tr><td>
+
+Print</td><td>
+
+Ctrl+P</td></tr><tr><td>
+
+
 Copy</td><td>
 
 Ctrl+C</td></tr><tr><td>
@@ -143,6 +161,10 @@ InsertText with parameter "\t"</td><td>
 
 Ctrl+Tab</td></tr><tr><td>
 
+Insert non-breaking space</td><td>
+
+Ctrl+Space</td></tr><tr><td>
+
 SelectAll</td><td>
 
 Ctrl+A</td></tr><tr><td>
@@ -202,6 +224,10 @@ PageUp</td></tr><tr><td>
 MoveCaret with parameter MoveCaretDirections.PageDown</td><td>
 
 PageDown</td></tr><tr><td>
+
+ShowSpellCheckingDialog</td><td>
+
+F7</td></tr><tr><td>
 
 ShowFindReplaceDialog</td><td>
 

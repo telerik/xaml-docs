@@ -109,6 +109,40 @@ You can then add buttons, combo boxes, etc., bound to the respective command des
 ## 
 
 After you configure __RadPdfViewer__ in this way, the control is ready to use. Additional options, such as showing a PDF document when the viewer is loaded or binding the document, are described in the [Showing a File]({%slug radpdfviewer-showing-a-file%}) article.
+
+## Setting a Theme
+
+The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+
+To change the theme, you can follow the steps below:
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#GridView/Theming){% endif %} application.
+
+* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For RadPdfViewer, you will need to merge the following resources:
+
+	* __Telerik.Windows.Controls__
+
+> If you are using other controls like RadToolBar or RadPdfViewer-specific controls, you need also to merge the DLLs mentioned at the top of this article.	
+	
+__Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+
+#### __[XAML] Example 5: Merge the ResourceDictionaries__  
+{{region radpdfviewer-getting-started_08}}
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
+	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+{{endregion}}
+
+__Figure 1__ shows RadPdfViewer with the **Windows8** theme applied.
+	
+#### __Figure 1: RadPdfViewer with the Windows8 theme__
+![Telerik {{ site.framework_name }} PdfViewer-windows8](images/RadPdfViewer-windows8.png)
         
 
 ## See Also

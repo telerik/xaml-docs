@@ -40,6 +40,12 @@ To resolve this remove the *Telerik.Windows.Controls.Charting* assembly from the
 
 #### __XAML__
 {{region kb-chartview-namespace-error-0}}
+	<Window xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart">
+{{endregion}}
+
+#### __XAML__
+{{region kb-chartview-namespace-error-1}}
 <!-- chartView points to xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart" -->
 	<telerik:RadCartesianChart.Series>
 		<chartView:LineSeries Stroke="Orange" StrokeThickness="2">

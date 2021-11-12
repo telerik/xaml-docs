@@ -25,7 +25,13 @@ __RadSpellChecker__ is a control that allows you to spellcheck a number of contr
 
 ## Using RadSpellChecker with TextBox, RichTextBox or RadRichTextBox
 
->In order to use __RadSpellChecker__ in your project, you need to add a reference to the __Telerik.Windows.Documents.Proofing__ assembly.
+In order to use __RadSpellChecker__ in your project, you need to add a reference to the following assemblies: 
+
+* Telerik.Windows.Controls.dll
+* Telerik.Windows.Controls.Input.dll
+* Telerik.Windows.Controls.Navigation.dll
+* Telerik.Windows.Documents.Proofing.dll
+* Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll
 
 After adding reference to the aforementioned dlls, you can use the static class RadSpellChecker and its Check(Control controlToSpellCheck, SpellCheckingMode mode) method.
 

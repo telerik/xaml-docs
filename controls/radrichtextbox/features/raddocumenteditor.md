@@ -61,7 +61,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 		documentEditor.InsertTableRow();
 		documentEditor.Document.Selection.Clear();
 	}
-
+	
 	documentEditor.EndUndoGroup("Insert three table rows");
 {{endregion}}
 
@@ -98,7 +98,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 		documentEditor.InsertTableRow();
 		documentEditor.Document.Selection.Clear();
 	}
-
+	
 	documentEditor.CancelUndoGroup();
 {{endregion}}
 
@@ -122,7 +122,132 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 
 One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of __RadRichTextBox__.
-        
+    
+## RadDocuemtnEditor methods
+
+### Annotations realated
+
+|__Method__|__Description__|
+|---|---|
+|InsertBookmark(string bookmarkName)|Inserts a bookmark around the current selection. If the selection is empty, the bookmark is inserted at the caret position.|
+|InsertBookmark(string bookmarkName)|Deletes the bookmark with the specifies name.|
+|DeleteBookmark(BookmarkRangeStart bookmarkRangeStart)|Deletes the bookmark with the specifies start range|
+|InsertComment(Comment comment)|Inserts a comment around the current selection. If the selection is empty, the comment is inserted at the caret position.|
+|DeleteComment()|Deletes the comment at the caret postion.|
+|DeleteAllComments()|Deletes all comments in the document.|
+|InsertPermissionRange(IEnumerable<PermissionRangeInfo> permissionInfos)|Inserts a new permission range over the current selection. If the selection is empty, the permission range is inserted at the caret position.|
+|DeletePermissionRange(PermissionRangeStart permissionRangeStart)|Deletes a permission range.|
+|UpdatePermissionRanges(IEnumerable<PermissionRangeInfo> permissionsToAdd, IEnumerable<PermissionRangeInfo> permissionsToRemove)|Updates the permissions inside the current selection.|
+|InsertReadOnlyRange()|Inserts a read only range over the current selection. If the selection is empty noting is inserted.|
+|DeleteReadOnlyRange()|Deletes the read only range at the current caret position or inside the current selection.|
+|DeleteReadOnlyRange(ReadOnlyRangeStart readOnlyRangeStart)|Deletes read only range.|
+|InsertFootnote()|Inserts footnote at the current position.|
+|InsertFootnote(Note footnote)|Inserts the passed footnode.|
+|InsertEndnote()|Inserts endnote at the current position.|
+| InsertEndnote(Note endnote)|Inserts the passed endnode.|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+
+### Editing realated
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+### Fields realated
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+### SDT realated
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+### Shapes realated
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+### Styles realated
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
 
 ## See Also
 

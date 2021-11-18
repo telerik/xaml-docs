@@ -96,18 +96,17 @@ Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a si
 
 ## Using RadSpellChecker with Implicit Styles
 
-When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your applciation you need to merge the required dictionaries. RadSpellChecker has a dependency on the __Telerik.Windows.Controls.Navigation.dll__, which means that you should merge the __Telerik.Windows.Documents.Proofing.xaml__ as well as the __Telerik.Windows.Controls.Navigation.xaml__ file:
+When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your applciation you need to merge the required dictionaries. You should merge the following dictioanries:
 
 #### __XAML__
 
 {{region radspellchecker-getting-started_3}}
-     <ResourceDictionary>
-        <ResourceDictionary.MergedDictionaries> 
-            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.xaml"/>
-            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-            <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.Proofing.xaml" /> 
-        </ResourceDictionary.MergedDictionaries>
-    </ResourceDictionary>
+
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.Proofing.xaml"/>
+
 
 {{endregion}}

@@ -129,6 +129,10 @@ One thing to note here is that it is not possible to remove some actions from th
 
 |__Method__|__Description__|
 |---|---|
+|InsertAnnotationRange(AnnotationRangeStart rangeStart, AnnotationRangeEnd rangeEnd)| Inserts an annotation range over the current selection. If the selection is empty, the annotation range is inserted at the caret position.|
+|SplitAnnotationRange(AnnotationRangeStart rangeStart)|Splits an annotation range at the caret position, resulting in two new ranges.|
+|SplitAnnotationRange(AnnotationRangeStart rangeStart, DocumentPosition position)|Splits an annotation range at the specified position, resulting in two new ranges.|
+|DeleteAnnotationRange(AnnotationRangeStart rangeStart)|Deletes an annotation range.|
 |InsertBookmark(string bookmarkName)|Inserts a bookmark around the current selection. If the selection is empty, the bookmark is inserted at the caret position.|
 |InsertBookmark(string bookmarkName)|Deletes the bookmark with the specifies name.|
 |DeleteBookmark(BookmarkRangeStart bookmarkRangeStart)|Deletes the bookmark with the specifies start range|
@@ -144,29 +148,48 @@ One thing to note here is that it is not possible to remove some actions from th
 |InsertFootnote()|Inserts footnote at the current position.|
 |InsertFootnote(Note footnote)|Inserts the passed footnode.|
 |InsertEndnote()|Inserts endnote at the current position.|
-| InsertEndnote(Note endnote)|Inserts the passed endnode.|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|InsertEndnote(Note endnote)|Inserts the passed endnode.|
+|InsertHyperlink(HyperlinkInfo hyperlinkInfo)|Inserts a hyperlink in the document. The hyperlink will be created around the current selection.|
+|InsertHyperlink(HyperlinkInfo hyperlinkInfo, string hyperlinkText)|Inserts a hyperlink with spesific text into the document.|
+|DeleteHyperlink()|Deletes the current hyperlink.|
+|DeleteHyperlink(HyperlinkRangeStart hyperlinkRangeStart)|Deletes a hyperlink with the specifies start element.|
+|PreviewFirstMailMergeDataRecord()|Updates all fields in the document with the values evaluated using the first data record.|
+|PreviewLastMailMergeDataRecord()|Updates all fields in the document with the values evaluated using the last data record.|
+|PreviewPreviousMailMergeDataRecord()|Updates all fields in the document with the values evaluated using the previous data record.|
+|PreviewNextMailMergeDataRecord()|Updates all fields in the document with the values evaluated using the next data record.|
+|PreviewMailMergeDataRecordAtIndex(int index)| Updates all fields in the document with the values evaluated using a specified data record.|
+|MailMergeCurrentRecord()|Creates a new RadDocument" containing the result of merging the template with the values of the current data record.|
+|MailMerge(bool startEachRecordOnNewPage)|Produces a mail merged document containing the results for all data records.|
+|AcceptRevision(Revision revision)|Accepts a revision.|
+|RejectRevision(Revision revision)|Rejects a revision.|
+|AcceptAllRevisions()|Accepts all revisions in the document.|
+|RejectAllRevisions()|Rejects all revisions in the document.|
 
 
 ### Editing realated
 
 |Method|Description|
 |---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| InsertFragment(DocumentFragment documentFragment) | Inserts a fragment at the current caret position. |
+| InsertFragment(DocumentFragment documentFragment, DocumentPosition documentPosition) | Inserts a fragment at a specified position. Document selection should be cleared in advance. |
+| Insert(string text) | Inserts text into the document at the current caret position. |
+| InsertImage(Stream imageStream, string extension) | Inserts an inline image into the document at the current caret position. |
+| InsertInline(Inline inline) | Inserts inline element into the document at the current caret position. |
+| InsertInline(Inline inline, DocumentPosition documentPosition) | Inserts inline element into the document at a specified caret position. Document selection should be cleared in advance. |
+| InsertParagraph() | Inserts a new paragraph at the current caret position. |
+| InsertLine(string text) | Inserts text at the current caret position and adds a new paragraph after it. |
+| InsertLineBreak() | Inserts a line break into the document at the current caret position. |
+| InsertPageBreak() | Inserts a page break into the document at the current caret position. |
+| InsertColumnBreak() | Inserts a column break into the document at the current caret position. |
+| InsertNonBreakingSpace() | Inserts a non-breaking space into the document at the current caret position. |
+| InsertSectionBreak() | Inserts a section break into the document at the current caret position. |
+| InsertSectionBreak(SectionBreakType sectionBreakType) | Inserts a section break of the specified type into the document at the current caret position. |
+| InsertCodeBlock(string code, CodeFormattingSettings settings) | Inserts a code block at the caret position. If the caret position is in code block, replaces the current code block. |
+| Delete(bool deletePrevious) | Deletes content from the document. If the Selection is not empty, deletes the selected content. Otherwise, deletes the character next to the CaretPosition. |
+| DeleteTable() | Deletes the table the current caret position is in. |
+| DeleteTable(Table table) | Deletes a passed table instance. |
+| DeleteTableRow(TableRow row) | Deletes a table row. |
+| DeleteCodeBlock(CodeAnnotationRangeStart rangeStart) | Deletes a code block. |
 |   |   |
 |   |   |
 |   |   |

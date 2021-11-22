@@ -34,7 +34,7 @@ You can customize the spell checker by using the __SpellChecker__ property of __
 
 ## Dictionaries
 
-The dictionaries in __RadRichTextBox__ implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __RadDictionary__ class, which supports the loading of a dictionary directly from the *.tdf files, used with __RadSpell__. You can find TDF dictionaries for some languages [here](http://www.telerik.com/community/forums/aspnet-ajax/spell/147971-radspell-dictionaries.aspx#576503).
+The dictionaries in __RadRichTextBox__ implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __RadDictionary__ class, which supports the loading of a dictionary directly from the *.tdf files, used with __RadSpell__. You can find TDF dictionaries for some languages [here](https://www.telerik.com/forums/147971-radspell-dictionaries).
         
 
 Here is an example of a __RadDictionary__ loaded from a TDF file.

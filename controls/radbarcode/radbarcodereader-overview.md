@@ -98,3 +98,66 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 		End If
 	End Sub
 {{endregion}}
+
+## Decoded Types
+
+In some scenarios, to improve performance, you may want to specify the types of barcodes the reader will try to decode rather than have it iterate over all the available types.
+
+This can also be useful to avoid conflicts between symbologies whose symbols may overlap, for example, **Code39** and **Code39Extended**.
+
+For the purpose, you can use the **DecodeTypes** property of the RadBarcodeReader. It is a flags enumeration which holds the following types:
+
+* **Code11** 
+* **Code128** 
+* **Code25Interleaved** 
+* **Code25Standard** 
+* **Code39** 
+* **Code39Extended** 
+* **Code93** 
+* **Code93Extended** 
+* **Codebar** 
+* **CodeMSI** 
+* **EAN13** 
+* **EAN128** 
+* **EAN8** 
+* **Postnet** 
+* **Planet** 
+* **IntelligentMail** 
+* **UPCA** 
+* **UPCE** 
+* **UPCSupplement2** 
+* **UPCSupplement5** 
+* **QR** 
+* **PDF417** 
+* **DataMatrix**
+
+In addition, the following values can also be set:
+
+* **All**: Decode all barcode types. This is the **default value**.
+* **OneDimensional**: All 1D barcodes.
+* **WidthModulated1D**: All width-modulated 1D barcodes (39/93 Extended included).
+* **HeightModulated1D**: All height-modulated 1D barcodes.
+* **TwoDimensional**: All 2D barcodes.
+
+#### __[XAML] Example 3: Specify DecodeTypes of RadBarcodeReader__  
+{{region xaml-radbarcodereader-overview-3}}
+	<telerik:RadBarcodeReader DecodeTypes="Code11,Code39Extended,Codebar" />
+{{endregion}}
+
+If you're using the **BarcodeDecoder** class to decode the barcode, similarly, you can use its **DecodeTypes** property to predefine the barcode types to be decoded.
+
+#### __[C#] Example 4: Specify DecodeTypes of BarcodeDecoder__  
+{{region cs-radbarcodereader-overview-4}}
+	BarcodeDecoder decoder = new BarcodeDecoder();
+	decoder.DecodeTypes = BarcodeType.HeightModulated1D | BarcodeType.TwoDimensional;
+{{endregion}}
+
+#### __[VB.NET] Example 4: Specify DecodeTypes of BarcodeDecoder__  
+{{region vb-radbarcodereader-overview-4}}	
+	Dim decoder As New BarcodeDecoder()
+	decoder.DecodeTypes = BarcodeType.HeightModulated1D Or BarcodeType.TwoDimensional
+{{endregion}}
+
+## See Also
+
+* [Supported Types]({%slug barcode-supported-types-overview%})

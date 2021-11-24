@@ -123,9 +123,9 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of __RadRichTextBox__.
     
-## RadDocuemtnEditor methods
+## RadDocumetnEditor Methods
 
-### Annotations realated
+### Annotations Related
 
 |__Method__|__Description__|
 |---|---|
@@ -166,7 +166,7 @@ One thing to note here is that it is not possible to remove some actions from th
 |RejectAllRevisions()|Rejects all revisions in the document.|
 
 
-### Editing realated
+### Editing Related
 
 |Method|Description|
 |---|---|
@@ -185,57 +185,65 @@ One thing to note here is that it is not possible to remove some actions from th
 | InsertSectionBreak() | Inserts a section break into the document at the current caret position. |
 | InsertSectionBreak(SectionBreakType sectionBreakType) | Inserts a section break of the specified type into the document at the current caret position. |
 | InsertCodeBlock(string code, CodeFormattingSettings settings) | Inserts a code block at the caret position. If the caret position is in code block, replaces the current code block. |
+| InsertTable(int rows, int columns)|Inserts a new table with spesic row and column count.|
+| InsertTable(int rows, int columns, bool shouldInsertParagraphBeforeTable)|Inserts a new table in the document.Optioanly isnerts a new paragrpah before it.|
+| InsertTable(Table table)|Inserts a table in the document. The tale instance is copied before insertion.|
+| InsertTableColumn()|Inserts a table column in the table which is under the caret position.|
+| InsertTableColumnToTheLeft()|Inserts a table column to the left in the table which is under the caret position.|
+| InsertTableColumnToTheRight()|Inserts a table column to the right in the table which is under the caret position.|
+|InsertTableRow()|Inserts a new table row in the table under the caret position.|
+| InsertTableRowAbove() | Inserts a table row above the one under the caret position. |
+| InsertTableRowBelow() | Inserts a table row below the one under the caret position. |
+| MergeTableCells() | Merges the currently selected table cells into one. |
+| UnmergeTableCells() | Splits the currently selected table cell. |
 | Delete(bool deletePrevious) | Deletes content from the document. If the Selection is not empty, deletes the selected content. Otherwise, deletes the character next to the CaretPosition. |
 | DeleteTable() | Deletes the table the current caret position is in. |
 | DeleteTable(Table table) | Deletes a passed table instance. |
 | DeleteTableRow(TableRow row) | Deletes a table row. |
+| DeleteTableColumn()|Deletes the current table column which is under the caret position.|
+| ResizeTableColumn(Table table, int columnIndex, double columnWidth)|Changes the width of a table column. The specified width value will be applied with width type TableWidthUnitType.Fixed"|
+| ChangeTableGridColumnWidth(Table table, int columnIndex, TableWidthUnit width)|Changes the width of a table column.|
+| DeleteTableRow() | Deletes the table row under the caret position. |
 | DeleteCodeBlock(CodeAnnotationRangeStart rangeStart) | Deletes a code block. |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| Copy()|Copies the currently selected document elements into the clipboard.|
+| Cut()|Cuts the currently selected document elements into the clipboard.|
+| CopyFormatting()|Copies the formatting of the current selection.|
+| PasteFormatting()|Pastes the currently copied formatting on the current selection.|
+| MoveSelection(DocumentPosition movePosition, bool deleteSelection)|Moves the current selection along with the selected document elements to a specified position.|
+|RestartListNumbering()|Creates a new list from the current paragraph. The paragraph must be in a list, otherwise this method does nothing.|
+|ContinueListNumbering()|Removes all paragraphs from the current list and continues the first possible list before that paragraph. The paragraph must be in a list and should be first in the list, otherwise this method does nothing.|
+|SetListNumbering(int numbersToSkip)|Skips numbers and starts the counting of the current list from the specified value.|
+
+### Header Footer Related
+
+|Method|Description|
+|---|---|
+|ChangeSectionHeader(Section section, HeaderFooterType headerType, Header header)|Changes the section header.|
+|ChangeSectionFooter(Section section, HeaderFooterType footerType, Footer footer)| Changes the section footer.|
+|ChangeSectionHeaderLinkToPrevious(Section section, HeaderFooterType headerType, bool value)|Changes the value indicating whether the section header should be linked to the header of the previous section.|
+|ChangeSectionHeaderLinkToPrevious(Section section, HeaderFooterType headerType, bool value)|Changes the value indicating whether the section header should be linked to the header of the previous section.|
+|ChangeSectionFooterLinkToPrevious|Changes the value indicating whether the section footer should be linked to the footer of the previous section.|
 
 ### Fields realated
 
 |Method|Description|
 |---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|InsertField(Field field)|Inserts a field into the document at the current caret position.|
+|InsertField(Field field, FieldDisplayMode displayMode)|Inserts a field into the document at the current caret position in a specified display mode.|
+|ToggleFieldCodes(FieldRangeStart fieldStart)|Toggles the display mode of a field.|
+|ChangeFieldDisplayMode(FieldRangeStart fieldRangeStart, FieldDisplayMode displayMode)|Changes the display mode of a field.|
+|UpdateField(FieldRangeStart fieldStart)| Updates a field. |
+| UpdateAllFields() | Updates all fields in the document. |
+| UpdateAllFields(FieldDisplayMode displayMode) | Updates all fields in the document and displays them in the specified display mode. |
+| ChangeAllFieldsDisplayMode(FieldDisplayMode displayMode) | Changes the display mode of all fields in the document. |
+| ChangeBibliographicStyle(BibliographicReferenceStyleBase newBibliographicStyle) | Changes the bibliographic style of all bibliography related fields in the document. |
+| InsertCaption(CaptionDefinition captionDefinition, string caption, bool includeLabel, bool insertBelow) | Inserts a caption around the current selection. If the selection is empty, the caption is inserted at the current caret position. |
+| UpdateAllCaptions(CaptionDefinition captionDefinition) | Updates all captions in the document related to a caption definition. |
+| InsertCrossReferenceToBookmark(string bookmarkName, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a bookmark into the document at the current caret position. |
+| InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a paragraph with Heading style into the document at the current caret position. |
+| InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a caption into the document at the current caret position. |
 
-### SDT realated
-
-|Method|Description|
-|---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-
-### Shapes realated
+### SDT Related
 
 |Method|Description|
 |---|---|
@@ -253,7 +261,25 @@ One thing to note here is that it is not possible to remove some actions from th
 |   |   |
 |   |   |
 
-### Styles realated
+### Shapes Related
+
+|Method|Description|
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+### Styles Related
 
 |Method|Description|
 |---|---|

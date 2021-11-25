@@ -247,57 +247,136 @@ One thing to note here is that it is not possible to remove some actions from th
 
 |Method|Description|
 |---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|InsertStructuredDocumentTag()|Inserts a default structured document tag (Content Control). The default type is RichText.|
+|InsertStructuredDocumentTag(SdtType insertType)|Inserts a structured document tag (Content Control) of the given type.|
+|InsertStructuredDocumentTag(SdtProperties insertProperties)|nserts a structured document tag (Content Control) based on the provided properties.|
+
 
 ### Shapes Related
 
 |Method|Description|
 |---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|ChangeShapeSize(ShapeInline shape, Size size)|Changes the size of a shape.|
+|ChangeShapeRotateAngle(ShapeInline shape, double angle)|Changes the rotate angle of a shape.|
+|ChangeShapeOutlineDash(ShapeInline shape, LineDashType dashType)|Changes the dashing pattern of a shape outline.|
+|InsertShape(ShapeType shapeType, Size size)|Inserts an inline shape into the document at the current caret position.|
+|ChangeShapeOutlineFill(ShapeInline shape, IShapeOutlineFill lineFill)|Changes the fill of a shape outline.|
+|ChangeShapeFill(ShapeInline shape, IShapeFill fill)|Changes the fill of a shape.|
+|ChangeShapeOutlineWidth(ShapeInline shape, double width)|Changes the width a shape outline.|
+|ChangeShapeTextVerticalAlignment(ShapeInline shape, RadVerticalAlignment alignment)|Changes the vertical alignment of a shape text box element.|
+|ChangeShapeTextLeftMargin(ShapeInline shape, double margin)|Changes the left margin (inset) of the shape's text box element.|
+|ChangeShapeTextRightMargin(ShapeInline shape, double margin)|Changes the right margin (inset) of the shape's text box element.|
+|ChangeShapeTextTopMargin(ShapeInline shape, double margin)|Changes the top margin (inset) of the shape's text box element.|
+|ChangeShapeTextBottomMargin(ShapeInline shape, double margin)|Changes the bottom margin (inset) of the shape's text box element.|
+|ChangeShapeTextRotation(ShapeInline shape, TextRotation rotation)|Changes the rotation angle of the shape's text box element.|
+|ChangeRotateTextWithShape(ShapeInline shape, bool shouldRotate)|Changes a value that indicates whether shape's text box element will rotate when the shape is rotated.|
+|ChangeShapeTextWrap(ShapeInline shape, bool shouldWrap)|Changes a value that indicates whether shape's text box element should wrap text vertically.|
+|ChangeShapeAutoFitToText(ShapeInline shape, bool shouldAutoFit)| Changes a value that indicates whether the parent shape should be horizontally resized in accordance to the text box element's width.|
+|AddShapeTextBox(ShapeInline shape)|Initializes a text box element for a shape that does not have any.|
+|EditShapeTextBox(ShapeInline shape)|Initiates editing of a shape's text box element.|
+|InsertTextBox()|Inserts a placeholder text box element to the document. It comes with a default shape layout.|
+|ChangeShapeTextOutlineFill(ShapeInline shape, IShapeOutlineFill fill)|Changes the fill of a shape's text outline.|
+|ChangeShapeTextFill(ShapeInline shape, IShapeFill fill)|Changes the fill of a shape's text.|
+|ChangeShapeTextOutlineDash(ShapeInline shape, LineDashType dash)|Changes the dash of a shape's text outline dash.|
+|ChangeShapeTextOutlineWidth(ShapeInline shape, double width)|Changes the width of a shape's outline width.|
 
 ### Styles Related
 
 |Method|Description|
 |---|---|
+|ChangeStyleName(string styleName)|Applies style with a given name to the selected elements in the document.|
+|ChangeStyleName(string styleName, bool useLinkedStyle)|Applies style with a given name to the selected elements in the document.|
+|ChangeDocumentElementTag(DocumentElement element, string tag)|Changes the Tag property of a specified DocumentElement.|
+|ChangeFontWeight(FontWeight fontWeight)|Changes the font weight of the selected content. If selection is not present, the current editing style is updated.|
+|ChangeFontStyle(FontStyle fontStyle)|Changes the font style of the selected content.|
+|ChangeStrikethrough(bool isStriketrough)|Changes the strike-through of the selected content.|
+|ToggleBold()|Toggles the font weight of the selected content between FontWeights.Bold and FontWeights.Normal.|
+|ToggleItalic()|Toggles the font style of the selected content between FontStyles.Italic and FontStyles.Normal.|
+|ToggleStrikethrough()|Toggles the strike-through of the selected content.|
+|ChangeBaselineAlignment(BaselineAlignment baselineAlignment)|Changes the baseline alignment of the selected content.|
+|ChangeFontFamily(FontFamily fontFamily)|Changes the font family of the selected content.|
+|ChangeFontSize(double fontSize)|Changes the size of the font of the selected content.|
+|DecrementFontSize()|Decrements the size of the font of the selected content with 2 points.|
+|IncrementFontSize()|Increments the size of the font of the selected content with 2 points.|
+|ChangeSpanStyle(StyleDefinition styleInfo)|Changes the span style of the selected content.|
+|ChangeForeColor(Color color)|Changes the fore color of the selected content.|
+|ChangeHighlightColor(Color color)|Changes the highlight color of the selected content.|
+|ChangeUnderlineColor(Color color)|Changes the underline color of the selected content.|
+|ChangeUnderlineDecoration(IUnderlineUIDecorationProvider decoration)|Changes the underline decoration of the selected content.|
+|ClearFormatting()|Clears the character formatting of the selected content.|
+|ChangeImageSize(ImageInline image, Size size)|Changes the size of an image.|
+|ChangeImageRotateAngle(ImageInline image, double angle) | Changes the rotate angle of an image. |
+|ChangeParagraphStyle(StyleDefinition styleInfo) | Changes the paragraph style of the selected content. |
+|ChangeParagraphListStyle(ListStyle style, IEnumerable<Paragraph> paragraphs) | Changes the list style of the specified paragraphs. |
+|ChangeParagraphListStyle(ListStyle style) | Changes the paragraph list style of the selected paragraphs. |
+|ChangeParagraphTextAlignment(RadTextAlignment alignment) | Changes the text alignment of the selected paragraphs. |
+|ChangeParagraphBackground(Color color) | Changes the background of the selected paragraphs. |
+|ChangeParagraphFlowDirection(FlowDirection flowDirection) | Changes the flow direction of the selected paragraphs. |
+|ChangeParagraphLineSpacing(double lineSpacing) | Changes the line spacing of the selected paragraphs. |
+|ChangeParagraphLineSpacingType(LineSpacingType lineSpacingType) | Changes the type of the line spacing of the selected paragraphs. |
+|ChangeParagraphLineSpacing(double lineSpacing, LineSpacingType lineSpacingType) | Changes the line spacing of the selected paragraphs. |
+|IncreaseLeftIndent() | Increases the left indent of the selected paragraphs. The default step used for indentation is 24. |
+|DecreaseLeftIndent() | Decreases the left indent of the selected paragraphs. The default step used for indentation is 24. |
+|IncrementParagraphLeftIndent()|Increments the left indent of the selected paragraphs. The default step used for indentation is 24.|
+|DecrementParagraphLeftIndent()|Decrements the left indent of the selected paragraphs. The default step used for indentation is 24.|
+|ChangeParagraphLeftIndent(double leftIndent)|Changes the left indent of the selected paragraphs.|
+|ChangeParagraphRightIndent(double rightIndent)|Changes the right indent of the selected paragraphs.|
+|ChangeParagraphFirstLineIndent(double firstLineIndent)|Changes the first line indent of the selected paragraphs.|
+|ChangeParagraphSpacingBefore(double spacingBefore)|Changes the spacing before of the selected paragraphs.|
+|ChangeParagraphAutomaticSpacingBefore(bool value)|Changes the automatic spacing before of the selected paragraphs.|
+|ChangeParagraphSpacingAfter(double spacingAfter)|Changes the spacing after of the selected paragraphs.|
+|ChangeParagraphAutomaticSpacingAfter(bool value)|Changes the automatic spacing after of the selected paragraphs.|
+|ChangeParagraphListLevel(int listLevel)|Changes the list level of the selected paragraphs.|
+|IncrementParagraphListLevel(int value)|Increments the paragraph list level of the selected paragraphs.|
+|ReplaceTabStop(TabStop oldTabStop, TabStop newTabStop)|Replaces a tab stop inside the selected paragraphs.|
+|AddTabStop(TabStop tabStop)|Adds a tab stop to the current paragraph.|
+|AddTabStopRange(IEnumerable<TabStop> tabStops)|Adds a tab stop range to the current paragraph.|
+|RemoveTabStop(TabStop tabStop)|Removes a tab stop from the selected paragraphs.|
+|RemoveTabStopRange(IEnumerable<TabStop> tabStops)|Removes a collection of tab stops in the selected paragraphs.|
+|ClearTabStops()|Clears the tab stops inside the selected paragraphs.|
+|ClearParagraphFormatting()|Clears the paragraph formatting of the selected content.|
+|ClearAllFormatting()|Clears all the formatting (character and paragraph) from the selected content.|
+|ChangeParagraphIsLineBreakingRuleEnabled(bool value)|Changes the Paragraph.IsLineBreakingRuleEnabled property. This property indicates whether East Asian typography rules will be applied to determine which characters may begin and end each line.|
+|ChangeTableLayoutMode(Table table, TableLayoutMode tableLayoutMode)|Changes the layout mode of the selected tables.|
+|ChangeTableDefaultCellPadding(Padding padding)|Changes the default cell padding of the selected tables.|
+|ChangeTableFlowDirection(FlowDirection flowDirection)|Changes the flow direction of the selected tables.|
+|ChangeTableIndent(double indent)|Changes the indent of the selected tables.|
+|ChangeTableHorizontalAlignment(RadHorizontalAlignment alignment)|Changes the horizontal alignment of the selected tables.|
+|ChangeTablePreferredWidth(TableWidthUnit tableWidth)|Changes the preferred width of the selected tables.|
+|ChangeTableBorders(TableBorders tableBorders)|Changes the borders of the selected tables.|
+|ChangeTableCellSpacing(double cellSpacing)|Changes the cell spacing of the selected tables.|
+|ChangeTableLook(TableLook tableLook)|Changes the look of the selected tables.|
+|ChangeTableRowHeight(TableRow tableRow, double height)|Changes the height of a table row.|
+|ChangeTableRowRepeatOnEveryPage(TableRow tableRow)|Depending on the current value, enables or disables the repetition of a table row on every page.|
+|ChangeTableCellBackground(Color color)|Changes the background of the selected table cells.|
+|ChangeTableCellBorders(Border border)|Changes the borders of the selected table cells.|
+|ChangeTableCellBorders(TableCellBorders tableCellBorders)|Changes the borders of the selected table cells.|
+|ChangeTableCellContentAlignment(RadTextAlignment textAlignment, RadVerticalAlignment verticalAlignment)|Changes the content alignment of the selected table cells.|
+|hangeTableCellVerticalContentAlignment(RadVerticalAlignment verticalAlignment)|Changes the vertical content alignment of the selected table cells.|
+|ChangeTableCellHorizontalContentAlignment(RadTextAlignment textAlignment)|Changes the horizontal content alignment of the selected table cells.|
+|ChangeTableCellPadding(Padding padding)|Changes the padding of the selected table cells.|
+|ChangeSectionActualPageMargin(Padding sectionMargin)|Changes the page margin of the selected sections respecting their current orientation.|
+|ChangeSectionPageMargin(Padding sectionMargin)|Changes the page margin of the selected sections.|
+|ChangeSectionPageOrientation(PageOrientation sectionPageOrientation)|Changes the page orientation of the selected sections.|
+|ChangeSectionPageSize(Size newSize)|Changes the page size of the selected sections.|
+|ChangeDifferentFirstPageHeaderFooter(bool value)|Sets a value determining whether the headers and footers of the first page in the selected sections are different than the ones of the other pages.|
+|ChangeSectionHeaderTopMargin(int sectionHeaderTopMargin)|Changes the header top margin of the selected sections.|
+|ChangeSectionFooterBottomMargin(int sectionFooterBottomMargin)|Changes the footer bottom margin of the selected sections.|
+|ChangeSectionFootnotesNumberingFormat(ListNumberingFormat numberingFormat)|Changes the numbering format of the footnotes in the selected sections.|
+|ChangeSectionFootnotesFirstNumber(int firstNumber)|Changes the first number of the footnotes in the selected sections.|
+|ChangeSectionFootnotesNumberingRestartType(NumberingRestartType numberingRestartType)|Changes the type of numbering restart of the footnotes in the selected sections.|
+|ChangeSectionEndnotesNumberingFormat(ListNumberingFormat numberingFormat)|Changes the numbering format of the endnotes in the selected sections.|
+|ChangeSectionEndnotesFirstNumber(int firstNumber)|Changes the first number of the endnotes in the selected sections.|
+|ChangeSectionEndnotesNumberingRestartType(NumberingRestartType numberingRestartType)|Changes the type of numbering restart of the endnotes in the selected sections.|
+|SetWatermark(PredefinedWatermarkType predefinedType)|Sets a predefined watermark to the selected sections.|
+|SetWatermark(DocumentWatermarkSettings watermarkSettings)|Sets a watermark to the selected sections.|
+|ChangeSectionFirstPageNumber(int? firstPageNumber)|Changes the first page number of the selected sections.|
+|ChangeSectionColumns(SectionColumnCollection sectionColumns)|Changes the section columns for the selected sections.|
+|ChangeSectionColumns(SectionColumnsLayout sectionColumnsLayout)|Changes the section columns for a given collection of section elements.|
 |   |   |
 |   |   |
 |   |   |
 |   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-
-
 ## See Also
 
  * [History]({%slug radrichtextbox-features-history%})

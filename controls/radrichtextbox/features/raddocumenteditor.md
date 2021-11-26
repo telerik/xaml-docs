@@ -373,10 +373,23 @@ One thing to note here is that it is not possible to remove some actions from th
 |ChangeSectionFirstPageNumber(int? firstPageNumber)|Changes the first page number of the selected sections.|
 |ChangeSectionColumns(SectionColumnCollection sectionColumns)|Changes the section columns for the selected sections.|
 |ChangeSectionColumns(SectionColumnsLayout sectionColumnsLayout)|Changes the section columns for a given collection of section elements.|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|ChangeDifferentOddAndEvenPagesHeaderFooter(bool value) | Changes the value determining whether the sections should have different odd and even pages header/footer. |
+|ChangeDocumentFootnotesNumberingFormat(ListNumberingFormat numberingFormat) | Changes the numbering format of the footnotes in the document. |
+|ChangeDocumentFootnotesFirstNumber(int firstNumber) | Changes the first number of the footnotes in the document. |
+|ChangeDocumentFootnotesNumberingRestartType(NumberingRestartType numberingRestartType)|Changes the type of numbering restart of the endnotes in the document.|
+|ChangeDocumentFootnotesPosition(FootnotesPosition footnotesPosition)|Changes the position of the footnotes in the document.|
+|ChangeDocumentEndnotesNumberingFormat(ListNumberingFormat numberingFormat)|Changes the numbering format of the endnotes in the document.|
+|ChangeDocumentEndnotesFirstNumber(int firstNumber)|Changes the first number of the endnotes in the document.|
+|ChangeDocumentEndnotesNumberingRestartType(NumberingRestartType numberingRestartType)|Changes the type of numbering restart of the endnotes in the document.|
+|ChangeDocumentEndnotesPosition(EndnotesPosition endnotesPosition)|Changes the position of the endnotes in the document.|
+|ChangeDocumentDefaultTabWidth(double tabWidth)|Changes default tab stop width for the document.|
+|ChangeDocumentIsStrictLineBreakingRuleEnabled(bool value)|Sets a value determining whether the strict line breaking rule will be applied to Japanese text in this document.|
+|ChangeDocumentNoLineBreaksBeforeRule(LineBreakingRule lineBreakingCharacterRule)| Sets a rule determining which characters cannot start a line in East-Asian languages.|
+|ChangeDocumentNoLineBreaksAfterRule(LineBreakingRule lineBreakingCharacterRule)|Sets a rule determining which characters cannot end a line in East-Asian languages.|
+|ChangeDocumentLineBreakingRuleLanguage(LineBreakingRuleLanguage lineBreakingRuleLanguage)|Sets the language whose rules should be used for line breaking in the paragraphs.|
+
+
+
 ## See Also
 
  * [History]({%slug radrichtextbox-features-history%})

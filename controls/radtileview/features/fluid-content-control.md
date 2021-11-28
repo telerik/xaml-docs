@@ -57,7 +57,7 @@ To change the currently visible content manually, set the `ContentChangeMode` pr
 
 The following example shows how to use the `TileStateChanged` event of RadTileView in order to  update the `State` property of RadFluidContentControl.
 
-#### __[XAML] Example 2: Manual Content Changing__
+#### __[XAML] Example 2 (part 1): Manual Content Changing__
 {{region radtileview-fluid-content-control_2}}
 	<telerik:RadTileView TileStateChanged="RadTileView_TileStateChanged" Width="600" Height="400">
 		<telerik:RadTileViewItem Header="Item A">
@@ -104,7 +104,7 @@ The following example shows how to use the `TileStateChanged` event of RadTileVi
 	</telerik:RadTileView>
 {{endregion}}
 
-#### __[C#] Example 3: Handling the TileStateChanged event__  
+#### __[C#] Example 2 (part 2): Handling the TileStateChanged event__  
 {{region cs-radtileview-fluid-content-control_3}}
 	private void RadTileView_TileStateChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
@@ -125,7 +125,7 @@ The following example shows how to use the `TileStateChanged` event of RadTileVi
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: Handling the TileStateChanged event__  
+#### __[VB.NET] Example 2 (part 2): Handling the TileStateChanged event__  
 {{region vb-radtileview-fluid-content-control_3}}
 	Private Sub RadTileView_TileStateChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 		Dim item = CType(e.Source, RadTileViewItem)

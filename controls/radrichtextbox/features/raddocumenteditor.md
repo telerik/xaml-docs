@@ -123,7 +123,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of __RadRichTextBox__.
     
-## RadDocumetnEditor Methods
+## RadDocumentEditor Methods
 
 ### Annotations Related
 
@@ -243,7 +243,7 @@ One thing to note here is that it is not possible to remove some actions from th
 | InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a paragraph with Heading style into the document at the current caret position. |
 | InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a caption into the document at the current caret position. |
 
-### SDT Related
+### Content Controls Related
 
 |Method|Description|
 |---|---|

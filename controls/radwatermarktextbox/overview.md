@@ -30,6 +30,9 @@ __RadWatermarkTextBox__ control represents a TextBox that allows you to define a
 * __Selection on focus__: The control gives you the ability to select all text when it gets the focus.
 
 * __Different watermark behaviors__: You can tell the control when to hide the watermark content - on focus, on click or on text entered.
+{% if site.site_name == 'WPF' %}
+* __Embedded label support__: This allows you to provide a label describing the text input. Read more in the [Label]({%slug radwatermarktextbox-features-label%}) article.
+{% endif %}
 
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](http://demos.telerik.com/silverlight/#WatermarkTextBox/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](http://demos.telerik.com/wpf/){% endif %}
 

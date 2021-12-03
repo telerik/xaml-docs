@@ -80,6 +80,8 @@ To customize the apperance of the tooltip you can use the __TooltipTemplate__ pr
 #### __Figure 2: Custom tooltip example__
 ![Rad Chart View-Chart Tooltip Behavior 1](images/chartview-features-charttooltipbehavior-1.png)
 	
+The data context passed to the `TooltipTemplate` is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%}) which can be `CategoricalDataPoint`, `ScatterDataPoint`, etc. This means that you may need to use different property paths for the bindings, based on the series type and its `DataPoint` implementation.
+
 ## Example
 
 This section demonstrates how to create a custom tooltip that displays the growth or shrinking profits of a fictitious company for each quarter over one year. Even though it will be a bar chart and the bars are more than enough to clearly visualize the relative profits, the example is simple and highlights the usage of RadChartView's tooltip API.

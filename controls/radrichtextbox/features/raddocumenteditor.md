@@ -125,7 +125,7 @@ One thing to note here is that it is not possible to remove some actions from th
     
 ## RadDocumentEditor Methods
 
-### Annotations Related
+### [Annotations Related]({%slug radrichtextbox-features-document-elements-annotations%})
 
 |__Method__|__Description__|
 |---|---|
@@ -214,7 +214,7 @@ One thing to note here is that it is not possible to remove some actions from th
 |ContinueListNumbering()|Removes all paragraphs from the current list and continues the first possible list before that paragraph. The paragraph must be in a list and should be first in the list, otherwise this method does nothing.|
 |SetListNumbering(int numbersToSkip)|Skips numbers and starts the counting of the current list from the specified value.|
 
-### Header Footer Related
+### [Header Footer Related]({%slug radrichtextbox-features-headers-and-footers%})
 
 |Method|Description|
 |---|---|
@@ -224,7 +224,7 @@ One thing to note here is that it is not possible to remove some actions from th
 |ChangeSectionHeaderLinkToPrevious(Section section, HeaderFooterType headerType, bool value)|Changes the value indicating whether the section header should be linked to the header of the previous section.|
 |ChangeSectionFooterLinkToPrevious|Changes the value indicating whether the section footer should be linked to the footer of the previous section.|
 
-### Fields realated
+### [Fields realated]({%slug radrichtextbox-features-fields%})
 
 |Method|Description|
 |---|---|
@@ -243,7 +243,7 @@ One thing to note here is that it is not possible to remove some actions from th
 | InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a paragraph with Heading style into the document at the current caret position. |
 | InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a caption into the document at the current caret position. |
 
-### Content Controls Related
+### [Content Controls Related]({%slug radrichtextbox-features-content-controls%})
 
 |Method|Description|
 |---|---|
@@ -252,7 +252,7 @@ One thing to note here is that it is not possible to remove some actions from th
 |InsertStructuredDocumentTag(SdtProperties insertProperties)|nserts a structured document tag (Content Control) based on the provided properties.|
 
 
-### Shapes Related
+### [Shapes Related]({%slug radrichtextbox-features-shapes%})
 
 |Method|Description|
 |---|---|
@@ -280,7 +280,7 @@ One thing to note here is that it is not possible to remove some actions from th
 |ChangeShapeTextOutlineDash(ShapeInline shape, LineDashType dash)|Changes the dash of a shape's text outline dash.|
 |ChangeShapeTextOutlineWidth(ShapeInline shape, double width)|Changes the width of a shape's outline width.|
 
-### Styles Related
+### [Styles Related]({%slug radrichtextbox-features-styles%})
 
 |Method|Description|
 |---|---|

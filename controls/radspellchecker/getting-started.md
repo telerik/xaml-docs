@@ -96,7 +96,7 @@ Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a si
 
 ## Using RadSpellChecker with Implicit Styles
 
-When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your applciation you need to merge the required dictionaries. You should merge the following dictioanries:
+When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your application, you should merge the required dictionaries. The full list of dictionaries needed for RadSpellChecker is available in the following snippet:
 
 #### __XAML__
 

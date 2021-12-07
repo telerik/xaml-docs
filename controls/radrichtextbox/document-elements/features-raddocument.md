@@ -13,17 +13,6 @@ position: 1
 
 __RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also enables you to configure the appearance of its child elements.
       
-
-This article explains how you can customize the contents of RadDocument.
-
-* [Customizing a RadDocument](#customize-the-contents-of-raddocument)
-
-* [Specifics](#specifics)
-
-* [Adding Sections to a RadDocument](#adding-sections-to-raddocument)
-
-* [Creating a Document at Run Time](#creating-a-document-at-run-time)
-
 ## Work with the Contents of RadDocument Through its API
 
 The **RadDocument** class exposes numerous properties and methods enabling you to control settings and apply modifications related to the document. The next list shows several of the most used properties:
@@ -81,7 +70,7 @@ There are also members allowing you to control different features and functional
 -	Protection
 -	Selection
 
->For the full list of the members you can use, refer to the [RadDocument API Reference](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.documents.model.raddocument) page.
+>For the full list of the members refer to the [RadDocument API Reference](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.documents.model.raddocument) page.
 
 
 ## Specifics

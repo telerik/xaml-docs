@@ -15,15 +15,19 @@ position: 1
 __RadSpellChecker__ is a control that allows you to spellcheck a number of controls including __TextBox__, __RichTextBox__, __RadRichTextBox__, __RadGridView__, __DataGrid__ or any other control that complies with certain requirements.
 
 >tip__RadRichTextBox__ has a built-in spell checker (RadDocumentSpellChecker) that provides similar functionality and the benefit of underlining the incorrect words with a red curly line. If you would like to use __RadSpellChecker__ instead of the default spell checker you should disable the document spell checker by setting the property __IsSpellCheckingEnabled__ = ”False”. This can be done, for example, in order to create a similar look of the RadRichTextBoxes and the TextBoxes in your application.
-          
-
-* [Using RadSpellChecker with TextBox, RichTextBox or RadRichTextBox ](#using-radspellchecker-with-textbox,-richtextbox-or-radrichtextbox)
-
-* [Using RadSpellChecker with RadGridView or DataGrid ](#using-radspellchecker-with-radgridview-or-datagrid)
 
 ## Using RadSpellChecker with TextBox, RichTextBox or RadRichTextBox
 
->In order to use __RadSpellChecker__ in your project, you need to add a reference to the __Telerik.Windows.Documents.Proofing__ assembly.
+In order to use __RadSpellChecker__ in your project, you need to add a reference to the following assemblies: 
+
+* Telerik.Windows.Controls.dll
+* Telerik.Windows.Controls.Input.dll
+* Telerik.Windows.Controls.Navigation.dll
+* Telerik.Windows.Documents.Proofing.dll
+* Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll
+* Telerik.Windows.Documents.dll
+* Telerik.Windows.Documents.Core.dll
+* Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml.dll
 
 After adding reference to the aforementioned dlls, you can use the static class RadSpellChecker and its Check(Control controlToSpellCheck, SpellCheckingMode mode) method.
 
@@ -84,8 +88,25 @@ And the one for DataGrid is telerik:DataGridSpellCheckHelper.IsSpellCheckingEnab
 	      </sdk:DataGridTemplateColumn>
 	   </sdk:DataGrid.Columns>
 	</sdk:DataGrid>
-	{{endregion}}
-
+{{endregion}}
 
 
 Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a single control that can be spellchecked (implements IControlSpellChecker interface). [ReadMore]({%slug radspellchecker-spellchecking-gridcell%})
+
+
+## Using RadSpellChecker with Implicit Styles
+
+When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your application, you should merge the required dictionaries. The full list of dictionaries needed for RadSpellChecker is available in the following snippet:
+
+#### __XAML__
+
+{{region radspellchecker-getting-started_3}}
+
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.Proofing.xaml"/>
+
+
+{{endregion}}

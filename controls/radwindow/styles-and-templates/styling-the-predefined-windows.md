@@ -96,6 +96,36 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 #### __Figure 2: RadAlert with set IconTemplate__
 ![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
 
+## Modify WindowStyle
+
+You can also modify the appearance of the window which hosts the dialog content. For the purpose, set the **WindowStyle** property of the **DialogParameters** object.
+
+#### __[XAML] Example 5: Default RadAlertStyle__  
+{{region xaml-radwindow-styles-and-templates-styling-the-predefined-windows_4}}
+	<Style x:Key="RadAlertWindowStyle" TargetType="telerik:RadWindow">
+		<Setter Property="CornerRadius" Value="10"/>
+	</Style>
+{{endregion}}
+
+
+#### __[C#] Example 6: Applying the DataTemplate to the IconTemplate property__  
+{{region cs-radwindow-styles-and-templates-styling-the-predefined-windows_5}}
+	RadWindow.Alert(new DialogParameters()
+	{
+	    Content = "Hello",
+	    parameters.WindowStyle = App.Current.Resources["RadAlertWindowStyle"] as Style;
+	});
+{{endregion}}
+
+#### __[VB.NET] Example 6: Applying the DataTemplate to the IconTemplate property__  
+{{region vb-radwindow-styles-and-templates-styling-the-predefined-windows_5}}
+	RadWindow.Alert(New DialogParameters() With
+	{
+	    .Content = "Hello",
+	    .WindowStyle = TryCast(App.Current.Resources("RadAlertWindowStyle"), Style)
+	)})
+{{endregion}}
+
 ## See Also  
  * [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%})
  * [Change the Default Theme]({%slug radwindow-how-to-change-the-default-theme%})

@@ -65,7 +65,7 @@ Simply put, a RadObservableCollection represents an **ObservableCollection** tha
 
 * **NotificationsSuspended**: Gets a value indicating whether change notifications are suspended.
 
-* **ShouldResetOnResumeNotifications**: Gets a value that indicates whether RadObservableCollection would raise CollectionChanged event with **Reset** action, when a bulk add/remove operation takes place.
+There is also a public read-only property called `ShouldResetOnResumeNotifications`. It gets a value that indicates whether RadObservableCollection would raise CollectionChanged event with Reset action, when a bulk add/remove operation takes place. This API is internal and this behavior cannot be changed. The property value is set to `true` which means that calling `ResumeNotifications` will always use the Reset action.
 
 ## Events
 

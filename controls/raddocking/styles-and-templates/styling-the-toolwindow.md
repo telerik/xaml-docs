@@ -25,6 +25,7 @@ In order to style all __ToolWindows__ in a RadDocking, you should create a style
 
         <Style TargetType="telerik:ToolWindow">
             <Setter Property="CanClose" Value="False" />
+            <Setter Property="CornerRadius" Value="10" />
         </Style>
     </Application.Resources>
 

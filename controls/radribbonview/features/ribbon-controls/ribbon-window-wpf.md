@@ -179,3 +179,18 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 
 #### __Figure 4: RadRibbonWindow in the Office2016 theme__
 ![Rad Ribbon View Ribbon WindowWPF Office2016 Theme](images/radribbonview-features-controls-window-wpf-3.png)
+
+## Customize Appearance
+
+You can customize the window's appearance by setting its various properties via the appropriate style.
+
+#### __[XAML] Example 8: Adding a CornerRadius to the RadRibbonWindow__
+
+{{region xaml-radribbonview-ribbon-window-wpf-9}}
+	<!-- If you're using the StyleManager approach for styling the controls you need to remove the BasedOn attribute. -->
+	<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadRibbonWindowStyle}"
+		xmlns:shell="clr-namespace:Telerik.Windows.Controls.RibbonView.Shell;assembly=Telerik.Windows.Controls.RibbonView">
+		<Setter Property="CornerRadius" Value="20"/>
+		<Setter Property="shell:WindowChrome.WindowChromeCornerRadius" Value="20"/>
+	</Style>
+{{endregion}}

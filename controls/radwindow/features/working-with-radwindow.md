@@ -10,17 +10,7 @@ position: 0
 
 # Working with RadWindow
 
-This topic will explain you how to work with the __RadWindow__ in details. It will make you familiar with the following:
-
-* [Create a RadWindow](#create-a-radwindow)
-
-* [Show the RadWindow](#show-the-radwindow)
-
-* [Add content to the RadWindow](#add-content-to-the-radwindow)
-
-* [Program the RadWindow](#program-the-radwindow)
-
-* [Modify the appearance of the RadWindow](#modify-the-appearance-of-the-radwindow)
+This topic will explain you how to work with the __RadWindow__ in details.
 
 ## Create a RadWindow
 
@@ -138,27 +128,27 @@ If you want to share a common layout structure for the content of multiple windo
 
 The __RadWindow__ exposes a few methods, that allow you to programmatically control its behavior. Here is a list of them:
 
-* __BringToFront__ - attempts to bring the __RadWindow__ over any other __RadWindows__ except topmost. 
+* __BringToFront__: Attempts to bring the __RadWindow__ over any other __RadWindows__ except topmost. 
 
-* __Close__ - closes the __RadWindow__.
+* __Close__: Closes the __RadWindow__.
 
 ## Modify the appearance of the RadWindow
 
-To modify the default appearance of the __RadWindow__ you can use the following brushes:
+To modify the default appearance of the __RadWindow__ you can use the following properties:
 
-* __BorderBrush__ - changes the outer border of the __RadWindow__ and the outer border of its content area.
+* __BorderBrush__: Changes the outer border of the __RadWindow__ and the outer border of its content area.
 
-* __Background__ - changes the background of the content area.
+* __Background__: Changes the background of the content area.
 
-* __CaptionHeight__ - gets or sets the height of the extent of the top of the window threatened as the caption.
+* __CaptionHeight__: Gets or sets the height of the extent of the top of the window threatened as the caption.
+
+* __CornerRadius__: Gets or sets a value that represents the degree to which the corners of the window are rounded.
 
 {% if site.site_name == 'Silverlight' %}
-* __ModalBackground__ - changes the color of the background behind the __RadWindow__ when it is opened as a modal dialog.
-{% else %}
->important__ModalBackground__ property is not supported in __RadWindow__ for WPF. The property is available for cross platform compatibility with Silverlight where the __ModalBackground__ appears in the browser.
+* __ModalBackground__: Changes the color of the background behind the __RadWindow__ when it is opened as a modal dialog.
 {% endif %}
 
-Also you can create a style and apply it to the __RadWindow__ or modify the default template of the __RadWindow__ to change its overall look. To learn more read the [Styles and Templates]({%slug  radwindow-styles-and-templates-styling-the-predefined-windows%}) section.
+Also you can create a style and apply it to the __RadWindow__ or modify the default template of the __RadWindow__ to change its overall look. To learn more read the [Styles and Templates]({%slug radwindow-styles-and-templates-styling-the-predefined-windows%}) section.
 
 ## See Also  
  * [Visual Structure]({%slug radwindow-visual-structure%})

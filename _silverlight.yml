@@ -156,7 +156,8 @@ getting-started/telerik-application-lifecycle,
 controls/radbarcode/,
 testing,
 common-information/winforms-integration,
-controls/radbadge]
+controls/radbadge,
+controls/radwatermarktextbox/embedded-label.md]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

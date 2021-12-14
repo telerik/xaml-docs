@@ -102,7 +102,20 @@ The fill colors related to shapes are defined by two interfaces: **IShapeFill** 
     ShapeGradientFill gradientFill = new ShapeGradientFill(new RadialGradientBrush(Colors.White, Colors.Green));
 {{endregion}}
 
+## Getting the Content of a Shape
+
+The **ShapeInline** class exposes the **Body** property to enable you access the content of a shape. The property is of type [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) and you can perform mulitple operations on it.
+
+#### [C#] Example 5: Get the shape content
+
+{{region radrichtextbox-features-shapes_4}}
+
+    ShapeInline shape = new ShapeInline();
+    RadDocument doc = shape.Body;
+{{endregion}}
+
 ## See Also
+* [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
 * [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%})
 * [Content Controls]({%slug radrichtextbox-features-content-controls%})
 * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 

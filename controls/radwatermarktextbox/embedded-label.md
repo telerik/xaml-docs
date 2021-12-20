@@ -32,7 +32,7 @@ To keep the label always positioned on top of the text input area, set the __Kee
 	<telerik:RadWatermarkTextBox KeepLabelFloated="True" />
 {{endregion}}
 
-To get the current state of the label, use the __IsLabelFloated__ property of RadMaskedTextBox
+To get the current state of the label, use the __IsLabelFloated__ property of RadWatermarkTextBox.
 
 ####  __[C#] Getting the state of the label__
 {{region radwatermarktextbox-features-label-2}}

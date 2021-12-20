@@ -265,6 +265,8 @@ With the **Fluent** theme we are introducting a **ThemeEffectsHelper** static cl
 
 >important For the acrylic effect to properly apply, the control that it is used on needs to be **transparent** (i.e., the Window and Popup controls need to have their **AllowsTransparency** property set to True).
 
+>important The acrylic effect is **disabled** for windows which have their **CornerRadius** property set.
+
 > **ThemeEffectsHelper.IsAcrylicEnabled** is used to turn off globally the setting of the effect and set opaque backgrounds in our controls. You can detect the version of the OS that the application is currently running and disable the effect for versions prior to **Windows 10**. For more information about achieving that you can review the following MSDN articles: 
 [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) and [Targeting your application for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn481241.aspx) (if the application is not targeting Windows 10, the version number returned would be always 6.2)
 

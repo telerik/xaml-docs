@@ -1,7 +1,7 @@
 ---
 title: Notes
 page_title: Notes 
-slug: radspreadprocessing-features-notes
+slug: radspreadsheet-features-notes
 tags: notes, xlsx
 published: True
 position: 12
@@ -9,13 +9,13 @@ position: 12
 
 # Notes
 
-Since R1 2022 the Spreadsheet control supports working with notes. The Notes are used for making notes or annotations about the data. All notes can be found in the __NoteCollection__ of the worksheet. More information about using notes in code is available here: [SpreadProcessing Notes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/notes).
+Since R1 2022 the Spreadsheet control supports working with notes. The Notes are used for making notes or annotations about the data. All notes can be found in the __Notes__ collection of the worksheet. More information about using notes in code is available here: [SpreadProcessing Notes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/notes).
 
 #### Figure 1: Sample Note
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_03.png)
 
-### Using Notes in your  Application
+### Using Notes in your Application
 
 RadSpreadsheet enables working with notes through its UI. There are two ways for adding notes, via the context menu and from the Notes menu on the review tab.
 
@@ -36,7 +36,7 @@ As you can see in the above image, the notes menu allows you to perform the foll
 
 ### Editing Notes
 
-To edit a note select a cell that contains note and click "Edit Note" from the context menu.
+To edit a note select a cell that contains note and click "Edit Note" from the context menu or from the Note menu in the Review tab.
 
 #### Figure 4: Edit Note
 
@@ -44,7 +44,7 @@ To edit a note select a cell that contains note and click "Edit Note" from the c
 
 ### Deleting Notes
 
-To delete a note select it and click "Delete Note" from the context menu.
+To delete a note select it and click "Delete Note" from the context menu. You can apply the "Delete Note" command on a selection of cells and if there are notes included they will be deleted as well.
 
 #### Figure 4: Delete Note
 

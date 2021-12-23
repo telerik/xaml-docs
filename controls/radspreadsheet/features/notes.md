@@ -44,7 +44,7 @@ To edit a note select a cell that contains note and click "Edit Note" from the c
 
 ### Deleting Notes
 
-To delete a note select it an click "Delete Note" from the context menu.
+To delete a note select it and click "Delete Note" from the context menu.
 
 #### Figure 4: Delete Note
 

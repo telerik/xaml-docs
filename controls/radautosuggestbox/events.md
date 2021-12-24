@@ -27,7 +27,7 @@ This article lists the events specific for RadAutoSuggestBox.
 			}
 		{{endregion}}
 	
-* __QuerySubmitted__: Occurs when the user submits a query. This happens on the following occassions - Enter press while the control is focused, a click over the query button or choosing suggestion from the drop down list. The event arguments are of type __QuerySubmittedEventArgs__ and expose the following members:
+* __QuerySubmitted__: Occurs when the user submits a query. This happens on the following occassions - Enter press while the control is focused and the drop down is opened, a click over the query button or choosing suggestion from the drop down list. The event arguments are of type __QuerySubmittedEventArgs__ and expose the following members:
 
 	* __QueryText__: A property that holds the currently searched text.
 	* __Suggestion__: A property of type object, that holds a reference to the chosen suggestion. If no suggestion was selected the property value is `null`.

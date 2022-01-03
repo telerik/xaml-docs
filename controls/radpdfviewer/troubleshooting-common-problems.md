@@ -27,7 +27,7 @@ PDF files have to end with __%%EOF__ marker, so this essentially makes the docum
 
 In order to fix the issue, you can manually trim the additional (null) bytes. 
 
-## Document are not printed correctly - different sized text, tapered lines and contents out of position
+## Documents are not printed correctly - different sized text, tapered lines and contents out of position
 
 Silverlight 5's vector printing is not always executed correctly on postscript printers. This results in tapered document, only lines being shown or other visible changes in the printed document.
 

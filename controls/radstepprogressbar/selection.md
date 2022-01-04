@@ -59,7 +59,7 @@ __Disabled previous steps auto completion__
 
 ![](images/stepprogressbar-selection-3.png)
 
-The current state of a RadStepProgressBarItem can be get via its __Status__ property.
+The current state of a RadStepProgressBarItem can be got via its __Status__ property.
 
 ## Prevent User Selection
 

@@ -23,7 +23,7 @@ __RadStepProgressBar__ enables you to setup a visual element that displayes a mu
 
 ## Key Features
 
-* __Easily customizeable visuals__: The track bar and each step of the control can be customized by changing their default properties (like color and size) or by replacing the default visualization with a custom one. Read more it the [Appearance]({%slug stepprogressbar-appearance-step%}) section of the documentation.
+* __Easily customizable visuals__: The track bar and each step of the control can be customized by changing their default properties (like color and size) or by replacing the default visualization with a custom one. Read more it the [Appearance]({%slug stepprogressbar-appearance-step%}) section of the documentation.
 
 * __Data binding support__: RadStepProgressBar comes with built-in data binding support which allows you to provide a collection of any objects that can store information for each step. Read more in the [Data Binding]({%slug stepprogressbar-data-binding%}) article.
 
@@ -31,7 +31,7 @@ __RadStepProgressBar__ enables you to setup a visual element that displayes a mu
 
 * __Selection__: The steps in the progress bar can be selected in code or via click in the UI. Read more about the available API in the [Selection]({%slug stepprogressbar-selection%}) article.
 
-* __Additional content__: Each step can display content on top and bottom of its visual element. The contents are optional and fully customizeable. Read more in the [Step Item Contents]({%slug stepprogressbar-step-contents%}) article.
+* __Additional content__: Each step can display content on top and bottom of its visual element. The contents are optional and fully customizable. Read more in the [Step Item Contents]({%slug stepprogressbar-step-contents%}) article.
 
 >tip Get started with the control with its [Getting Started]({%slug stepprogressbar-getting-started%}) help article that shows how to use it in a basic scenario.
 

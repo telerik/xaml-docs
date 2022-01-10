@@ -243,6 +243,8 @@ One thing to note here is that it is not possible to remove some actions from th
 | InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a paragraph with Heading style into the document at the current caret position. |
 | InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a caption into the document at the current caret position. |
 
+{% if site.site_name == 'WPF' %}
+
 ### [Content Controls Related]({%slug radrichtextbox-features-content-controls%})
 
 |Method|Description|
@@ -279,6 +281,8 @@ One thing to note here is that it is not possible to remove some actions from th
 |ChangeShapeTextFill(ShapeInline shape, IShapeFill fill)|Changes the fill of a shape's text.|
 |ChangeShapeTextOutlineDash(ShapeInline shape, LineDashType dash)|Changes the dash of a shape's text outline dash.|
 |ChangeShapeTextOutlineWidth(ShapeInline shape, double width)|Changes the width of a shape's outline width.|
+
+{% endif %}
 
 ### [Styles Related]({%slug radrichtextbox-features-styles%})
 

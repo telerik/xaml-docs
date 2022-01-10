@@ -12,7 +12,7 @@ position: 4
 
 The RadStepProgressBar control can be used in a data binding scenario. 
 
-The component's __ItemsSource__ property can be assigned to a collection of any objects. A RadStepProgressBarItem will bre auto generated for each item in the ItemsSource. The following example shows how to setup the control in this scenario.
+The component's __ItemsSource__ property can be assigned to a collection of any objects. A RadStepProgressBarItem will be auto generated for each item in the ItemsSource. The following example shows how to setup the control in this scenario.
 
 #### __[XAML] Defining the models__
 {{region stepprogressbar-data-binding-0}}
@@ -95,7 +95,7 @@ __Data bound StepProgressBar control__
 
 The previous example shows how to data bind the ItemsSource and SelectedItem of the control. This will populate it with data. The SelectedItem binding can be used in a separate visual element if you need to connect the selected step with a separate view.
 
-The visualizaiton of the text at the bottom and top is customized via the ItemTemplate and ItemAdditionalContentTemplate properties. Alternative of the ItemTemplate setting is the __DisplayMemberPath__ that can point to a property from the model of the step.
+The visualization of the text at the bottom and top is customized via the ItemTemplate and ItemAdditionalContentTemplate properties. Alternative of the ItemTemplate setting is the __DisplayMemberPath__ that can point to a property from the model of the step.
 
 The __ItemContainerStyle__ property is used to customize the RadStepProgressBarItem elements created for each object in the ItemsSource. 
 

@@ -11,15 +11,15 @@ CTAControlName: RadStepProgressBar
 
 # Overview
 
-![stepprogressbar sl 46 text](images/stepprogressbar-overview-0.png)
+![RadStepProgressBar Icon](images/stepprogressbar-overview-0.png)
 
-__RadStepProgressBar__ enables you to setup a visual element that displayes a multi-step process via number of different steps and a progress track bar between each step. Selecting a step will animate a progress movement from the previously selected step to the new one.
+__RadStepProgressBar__ enables you to setup a visual element that displays a multi-step process via number of different steps and a progress track bar between each step. Selecting a step will animate a progress movement from the previously selected step to the new one.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![RadStepProgressBar Overview ](images/stepprogressbar-overview-1.png)
+![RadStepProgressBar Overview](images/stepprogressbar-overview-1.png)
 
 ## Key Features
 

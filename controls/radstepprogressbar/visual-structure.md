@@ -17,7 +17,7 @@ This article describes all the visual elements and terms used in __RadStepProgre
 
 * __Content__: Displays the element (text or other UI) positioned under the Step Item.
 
-* __Additional Content__: Displays an additiona element (text or other UI) positioned above the Step Item.
+* __Additional Content__: Displays an additional element (text or other UI) positioned above the Step Item.
 
 * __Track__: The line drawn between the steps. Selecting the next step will animate color change in the line.
 

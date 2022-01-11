@@ -102,6 +102,7 @@ intro_columns:
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"
       "ProgressBar": "radprogressbar-overview"
+      "StepProgressBar": "stepprogressbar-overview"
       "ToolTip": "radtooltip-overview"
       "TouchManager": "touchmanager-overview"
   -

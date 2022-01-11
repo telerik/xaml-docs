@@ -989,6 +989,10 @@ navigation:
         title: PopupUsage
     controls/radwatermarktextbox/validation:
         title: Validation
+    controls/radstepprogressbar:
+        title: RadStepProgressBar
+    controls/radstepprogressbar/appearance:
+        title: Appearance
 ## X1 Controls End
 
 ## Common Start   
@@ -3922,6 +3926,7 @@ intro_columns:
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"
       "ProgressBar": "radprogressbar-overview"
+      "StepProgressBar": "stepprogressbar-overview"
       "ToolTip": "radtooltip-overview"
       "TouchManager": "touchmanager-overview"
 -

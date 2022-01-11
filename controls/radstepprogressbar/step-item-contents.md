@@ -57,7 +57,7 @@ The different properties are used based on the current state of the step item - 
 										IndeterminateIndicatorContentTemplate="{StaticResource IndicatorContentTemplate}"/>           
 		<telerik:RadStepProgressBarItem NotStartedIndicatorContent="N/A"
 										CompletedIndicatorContent="Yes"
-										IndeterminateIndicatorContent="?"
+										IndeterminateIndicatorContent="..."
 										CompletedIndicatorContentTemplate="{StaticResource IndicatorContentTemplate}"
 										IndeterminateIndicatorContentTemplate="{StaticResource IndicatorContentTemplate}"/>
 	</telerik:RadStepProgressBar>

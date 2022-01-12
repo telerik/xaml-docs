@@ -46,7 +46,9 @@ The expanded length of the __RadPanelBarItem__ element can be controlled via its
 
 ## Enabling RadPanelBarItem Scrolling
 
-The __RadPanelBar__ control exposes an additional __IsScrollViewerInsideItemsEnabled__ property that allows to scroll the content of each __RadPanelBarItem__ element. The property controls the __ScrollBarVisibility__ of the __ScrollViewer__ control, which is present inside the __ControlTemplate__ of the __RadPanelBarItem__ control. To allow the __RadPanelBarItem__ control to scroll its content, set the __IsScrollViewerInsideItemsEnabled__ property to __True__.
+The __RadPanelBar__ control exposes an __IsScrollViewerInsideItemsEnabled__ property that allows to scroll the content of each __RadPanelBarItem__ element. The property controls the __ScrollBarVisibility__ of the __ScrollViewer__ control, which is present inside the __ControlTemplate__ of the __RadPanelBarItem__ control.
+
+To allow the __RadPanelBarItem__ control to scroll its content, set the __IsScrollViewerInsideItemsEnabled__ property to __True__.
 
 #### __[XAML] Example 4: Set IsScrollViewerInsideItemsEnabled Property__
 {{region radpanelbar-features-resize-items_4}}

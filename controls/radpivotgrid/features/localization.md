@@ -82,6 +82,8 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	        this.dictionary["PivotFieldList_Refresh"] = "Refresh";
 	        this.dictionary["PivotFieldList_ReportFilter"] = "Report Filter";
 	        this.dictionary["PivotFieldList_RowLabels"] = "Row Labels";
+			this.dictionary["PivotFieldList_Search"] = "Search";
+			this.dictionary["PivotFieldList_NoResult"] = "No Result";
 	        this.dictionary["PivotFieldList_SelectItem"] = "Select Item";
 	        this.dictionary["PivotFieldList_Show"] = "Show";
 	        this.dictionary["PivotFieldList_ShowItemsForWhich"] = "PivotFieldList_ShowItemsForWhich";
@@ -250,6 +252,8 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 			Me.dictionary("PivotFieldList_Refresh") = "Refresh"
 			Me.dictionary("PivotFieldList_ReportFilter") = "Report Filter"
 			Me.dictionary("PivotFieldList_RowLabels") = "Row Labels"
+			Me.dictionary("PivotFieldList_Search") = "Search";
+			Me.dictionary("PivotFieldList_NoResult") = "No Result";
 			Me.dictionary("PivotFieldList_SelectItem") = "Select Item"
 			Me.dictionary("PivotFieldList_Show") = "Show"
 			Me.dictionary("PivotFieldList_ShowItemsForWhich") = "PivotFieldList_ShowItemsForWhich"
@@ -449,6 +453,7 @@ PivotFieldList_MoreAggregateOptions	|	More Aggregate Options...	|	Used in drop-d
 PivotFieldList_MoreCalculationOptions	|	More Calculation Options...	|	Used in drop-down buttons of RadPivotFieldList. When this option is selected, a new dialog will be opened in which the user can select calculation function that will be used.
 PivotFieldList_MoreSortingOptions	|	More Sorting Options...	|	Used in drop-down buttons of RadPivotFieldList. When this option is selected, a new dialog will be opened in which the user can select how to sort RadPivotGrid.
 PivotFieldList_NoCalculation	|	No Calculation	|	Used in calculation dialog of RadPivotFieldList to indicate that a calculation will not be applied.
+PivotFieldList_NoResult	|	No Result	| Used in search TextBox element of RadPivotFieldList to display value when input does not match values.
 PivotFieldList_NumberFormat	|	Number Format	|	Used in drop-down buttons of RadPivotFieldList. When this option is selected, a new dialog will be opened in which the user can select the string format of the numbers shown in RadPivotGrid.
 PivotFieldList_PercentDifferenceFrom	|	% Difference From	|	Used in calculation dialog of RadPivotFieldList to indicate that for each value in RadPivotGrid a difference from another group (selected in the next ListBox) will be calculated and the value will be shown as percent.
 PivotFieldList_PercentOf	|	% Of	|	Used in calculation dialog of RadPivotFieldList to indicate that the values in RadPivotGrid will be shown as percent of another group (selected in the next ListBox).
@@ -465,6 +470,7 @@ PivotFieldList_RelativeToPrevious	|	(previous)	|	Used in calculation dialog of R
 PivotFieldList_ReportFilter	|	Report Filter	|	Used in RadPivotFieldList as a header of the area where FilterGroupDescriptions are added.
 PivotFieldList_RowLabels	|	Row Labels	|	Used in RadPivotFieldList as a header of the area where RowGroupDescriptions are added.
 PivotFieldList_RunningTotalIn	|	Running Total In	|	Used in calculation dialog of RadPivotFieldList to indicate that the values in RadPivotGrid will be calculated in the following way: the value shown in each cell is calculated as a sum of its own value and all of the values above. So the last cell will have the value of the Total (sum of all values).
+PivotFieldList_Search	|	Search	|	Used in search TextBox element of RadPivotFieldList. 
 PivotFieldList_SelectAll	|	(Select All)	|	Used in report filter dialog of RadPivotFieldList. When this option is selected, all items inside the dialog will be selected.
 PivotFieldList_SelectItem	|	Select Item	|	Used in report filter dialog of RadPivotFieldList to mark the area where you can choose which groups to see in RadPivotGrid.
 PivotFieldList_SelectItems	|	Select Items	|	Used in the drop-down button inside report filter box of RadPivotFieldList. When this option is selected, a new dialog will open.

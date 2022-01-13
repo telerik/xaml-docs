@@ -58,13 +58,32 @@ If you take a closer look at the generated code there are a few things that must
 
 By knowing that the UI is connected to the __RadRichTextBox__ via its __DataContext__, you can easily implement a scenario where you have more than one __RadRichTextBox__ controls ruled by one UI. You just have to change the __DataContext__ of the UI depending on which __RadRichTextBox__ is active. An example of this is availble in the following SDK example:  [ChangeRibbonUIDataContext](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/ChangeRibbonUIDataContext)
 
+### Adding the RadRichTextBoxRibbonBar   via the Design  Time  Wizard
+
+When adding RadRichTextBox from the toolbox a wizard appears an it allows you add the ribbon as well. To add the ribbon you should chose the "Word Processor" option.
+
+![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_02.png)
+
+In the next steps you can set several several settings including which tabs to be added.
+
+![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_03.png)
+
+![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_04.png)
+
+![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_05.png)
+
+When you are finished you will see the result in the window.
+
+![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_06.png)
 
 ### Customizing the Ribbon
 
 When the control is added at design time, the entire XAML for all elements is added as well. This allows you to customize the ribbon. For example you can delete tabs and other elements by selecting them and removing their XAML code. You can customize the elements actions by unbinding them from the default commands and adding custom event handlers. You can change any visual properties as well.
 
+### Manually adding the RadRichTextBoxRibbonBar   
 
-​        
+If you do not have an option to add the ribbon from the toolbox you can manually copy the entire XAML and paste it. The entire XAML is available in the following SDK repository: [Telerik Editor](https://github.com/telerik/xaml-sdk/blob/master/RichTextBox/TelerikEditor/TelerikEditor.xaml)        
+
 ### Alternatives
 
 If you do not wisht to use the ribbon there are other options for using the RichTextBox. For example you can use the toolbar or no UI at all. Examples are available in the following SDK repositories:

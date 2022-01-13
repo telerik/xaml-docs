@@ -82,8 +82,8 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	        this.dictionary["PivotFieldList_Refresh"] = "Refresh";
 	        this.dictionary["PivotFieldList_ReportFilter"] = "Report Filter";
 	        this.dictionary["PivotFieldList_RowLabels"] = "Row Labels";
-			this.dictionary["PivotFieldList_Search"] = "Search";
-			this.dictionary["PivotFieldList_NoResult"] = "No Result";
+		this.dictionary["PivotFieldList_Search"] = "Search";
+		this.dictionary["PivotFieldList_NoResult"] = "No Result";
 	        this.dictionary["PivotFieldList_SelectItem"] = "Select Item";
 	        this.dictionary["PivotFieldList_Show"] = "Show";
 	        this.dictionary["PivotFieldList_ShowItemsForWhich"] = "PivotFieldList_ShowItemsForWhich";

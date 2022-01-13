@@ -72,6 +72,11 @@ To disconnect from the camera, call the __ShutDown__ method.
 {{region radwebcam-radwebcam-features-initialize-camera-4}}
 	this.radWebCam.Stop();
 {{endregion}}
+	
+#### __[C#] Example 6: Shutdown the camera__
+{{region radwebcam-radwebcam-features-initialize-camera-5}}
+	this.radWebCam.ShutDown();
+{{endregion}}
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

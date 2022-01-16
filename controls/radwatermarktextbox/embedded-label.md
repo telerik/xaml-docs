@@ -44,7 +44,7 @@ To get the current state of the label, use the __IsLabelFloated__ property of Ra
 The label visual element is of type [Label](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.label?view=windowsdesktop-6.0). To customize its appearance, use the __LabelStyle__ property of RadWatermarkTextBox.
 
 ####  __[XAML] Customizing the label__
-{{region radwatermarktextbox-features-label-0}}
+{{region radwatermarktextbox-features-label-3}}
 	<telerik:RadWatermarkTextBox Label="First Name">
 		<telerik:RadWatermarkTextBox.LabelStyle>
 			<Style TargetType="Label">
@@ -57,6 +57,30 @@ The label visual element is of type [Label](https://docs.microsoft.com/en-us/dot
 
 #### Customized label  
 ![](images/radwatermarktextbox-features-label-2.png)
+
+## Animation
+
+The label comes with a built-in animation that moves the label on top of the input text and then return it back to the center when necessary. This feature is enabled using Telerik's `AnimationManager` class. To change the animation, set the attached `AnimationManager.AnimationSelector` property on the RadWatermarkTextBox control. The property allows you to define an `AnimationSelector` with two groups describing the two animations that appear - make the label floating and return it to the text input area (the center).
+
+The following example shows the default `AnimationSelector` used with the control but with slightly changed `Duration` of the animations.
+
+####  __[XAML] Customizing the label__
+{{region radwatermarktextbox-features-label-4}}
+	<telerik:RadWatermarkTextBox Label="First Name">         
+		<telerik:AnimationManager.AnimationSelector>
+			<telerik:AnimationSelector>
+				<telerik:AnimationGroup AnimationName="LabelFloatAnimation">
+					<telerik:LabelPositionAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="Out"  />
+					<telerik:FontSizeAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="Out" />                        
+				</telerik:AnimationGroup>
+				<telerik:AnimationGroup AnimationName="LabelCenterAnimation">
+					<telerik:LabelPositionAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="In"  />
+					<telerik:FontSizeAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="In" />
+				</telerik:AnimationGroup>
+			</telerik:AnimationSelector>
+		</telerik:AnimationManager.AnimationSelector>
+	</telerik:RadWatermarkTextBox>
+{{endregion}}
 
 ## See also  
 * [Overview]({%slug radwatermarktextbox-overview%})

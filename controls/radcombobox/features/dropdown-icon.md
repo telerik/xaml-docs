@@ -16,6 +16,7 @@ The __DropDownButtonIconContent__ and the __DropDownButtonIconContentTemplate__ 
 
 * __DropDownButtonIconContentTemplate__: Gets or sets the content template of the show dialog button.
 
+{% if site.site_name == 'WPF' %}
 ## Using RadGlyphs
 
 The __DropDownButtonIconContent__ and __DropDownButtonIconContentTemplate__ properties are fully compatible with our [RadGlyph]({%slug common-styling-appearance-radglyph%}) control. The following example shows how to set a RadGlyph as a drop-down button icon. 
@@ -33,7 +34,26 @@ The __DropDownButtonIconContent__ and __DropDownButtonIconContentTemplate__ prop
         </telerik:RadComboBox>
 {{endregion}}
 
-#### Figure 1: RadComboBox with RadGlyph as dropdown icon
+{% else %}
+## Using Images
+
+The __DropDownButtonIconContent__ and __DropDownButtonIconContentTemplate__ properties are fully compatible with the Image control. The following example shows how to set an Image as a drop-down button icon. 
+
+#### __[XAML] Example 1: Setting a Image as Drop-Down Button Icon__
+{{region xaml-radcombobox-features-dropdown-icon-0}}
+        <telerik:RadComboBox DropDownButtonIconContent="myImage.png">
+            <telerik:RadComboBox.DropDownButtonIconTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" />
+                </DataTemplate>
+            </telerik:RadComboBox.DropDownButtonIconTemplate>
+            <telerik:RadComboBoxItem Content="Item 1" />
+            <telerik:RadComboBoxItem Content="Item 2" />
+        </telerik:RadComboBox>
+{{endregion}}
+{% endif %}
+
+#### Figure 1: RadComboBox with customized dropdown icon
 ![RadComboBox with RadGlyph as dropdown icon](images/radcombobox-features-dropdown-button-icon-0.PNG)
 
 ## See Also

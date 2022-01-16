@@ -158,7 +158,8 @@ testing,
 common-information/winforms-integration,
 controls/radbadge,
 controls/radstepprogressbar,
-controls/radwatermarktextbox/embedded-label.md]
+controls/radwatermarktextbox/embedded-label.md,
+common-information/geometry_extension.md]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

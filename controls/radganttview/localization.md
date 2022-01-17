@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &qout;Localization&quot; documentation article for the RadGanttView {{site.framework_name}} control.
+description: Check our &quot;Localization&quot; documentation article for the RadGanttView {{site.framework_name}} control.
 slug: radganttview-localization
 tag: localization
 published: True

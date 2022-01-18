@@ -3850,7 +3850,7 @@ intro_columns:
       "TimePicker": "radtimepicker-overview"
       "TimeSpanPicker": "radtimespanpicker-overview"
   -
-   title: "Media"
+    title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
       "WebCam": "radwebcam-overview"

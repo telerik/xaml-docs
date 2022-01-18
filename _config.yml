@@ -3849,6 +3849,11 @@ intro_columns:
       "ScheduleView": "radscheduleview-overview"
       "TimePicker": "radtimepicker-overview"
       "TimeSpanPicker": "radtimespanpicker-overview"
+  -
+   title: "Media"
+    items:
+      "ImageEditor": "radimageeditor-overview"
+      "WebCam": "radwebcam-overview"
 -
   categories:
   -
@@ -3869,8 +3874,6 @@ intro_columns:
       "TimeBar": "radtimebar-overview"
       "Timeline": "radtimeline-overview"
       "TreeMap and PivotMap": "radtreemap-overview"
--
-  categories:
   -
     title: "Editors"
     items:
@@ -3890,11 +3893,6 @@ intro_columns:
       "Spreadsheet": "radspreadsheet-overview"
       "SyntaxEditor": "radsyntaxeditor-overview"
       "WatermarkTextBox": "radwatermarktextbox-overview"
-  -
-    title: "Media"
-    items:
-      "ImageEditor": "radimageeditor-overview"
-      "WebCam": "radwebcam-overview"
 -
   categories:
   -

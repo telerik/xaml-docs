@@ -159,7 +159,8 @@ common-information/winforms-integration,
 controls/radbadge,
 controls/radstepprogressbar,
 controls/radwatermarktextbox/embedded-label.md,
-common-information/geometry_extension.md]
+common-information/geometry_extension.md,
+controls/radpanelbar/features/resizeable_items.md]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

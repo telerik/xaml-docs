@@ -21,6 +21,7 @@ This topic will go through the key properties of __RadContextMenu__ as follows
 * [UIElement](#uielement)
 * [VerticalOffset](#verticaloffset)
 * [InheritDataContext](#inheritdatacontext)
+* [RestoreFocusToTargetElement](#restorefocustotargetelement)
 
 ## IconColumnWidth
 
@@ -77,12 +78,18 @@ Similarly to the __HorizontalOffset__ property, the __VerticalOffset__ one provi
 
 By default, the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the __InheritDataContext__ property to __False__.
 
-## See Also
+## RestoreFocusToTargetElement
 
+When opened the RadContextMenu automatically gets the focus. To automatically return the focus back to the parent element that opened the context menu when the menu gets closed, set the `RestoreFocusToTargetElement` property to`True`.
+
+#### __[XAML] Setting the RestoreFocusToTargetElement property__
+{{region radcontextmenu-key-properties_1}}
+	<telerik:RadContextMenu RestoreFocusToTargetElement="True"/>
+{{endregion}}
+
+## See Also  
  * [Key Modifiers]({%slug radcontextmenu-key-modifiers%})
-
  * [Opening on a Specific Event]({%slug radcontextmenu-features-opening-on-specific-event%})
-
  * [Placement]({%slug radcontextmenu-features-placement%})
-
  * [Opening and Closing Delays]({%slug radcontextmenu-features-opening-and-closing-delays%})
+ * [MultiColumnComboBox and RestoreFocusToTargetElement]({%slug kb-multicolumncombobox-auto-close-not-working-with-contextmenu%})

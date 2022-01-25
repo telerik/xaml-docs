@@ -307,7 +307,12 @@ With the __R1 2019__ version of __Telerik UI for WPF__, several properties were 
 * __SegmentOverlapPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections behavior will become very close to when __AvoidConnectionOverlap__ is set to __False__. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete 
 scenario. The default value is __0.5__.
 
-* __ShapeCrossPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. The default value is __1__;
+* __ShapeCrossPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram shape other than its start or end shape. This property has effect only when **AvoidShapes** is `true`. The default value is __1__.
+
+* __StartOrEndShapeWallPenalty__: A property of type double that indicates the penalty value for a connection which crosses its start or end shape. When decreasing this value, paths crossing the start/end shape become more likely to be chosen from the AStar algorithm for finding the optimal path. The default value is __3__.
+
+#### __Figure 8: Setting StartOrEndShapeWallPenalty property__
+![StartOrEndShapeWallPenalty property](images/raddiagram-features-routing6.png)
 
 * __SegmentOverlapDistance__: A property of type double that gets or sets the surrounding area of a segment in which an overlap is detected. This property require __AvoidConnectionOverlap__ to be set to __True__.
 

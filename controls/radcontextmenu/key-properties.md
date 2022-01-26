@@ -10,18 +10,7 @@ position: 4
 
 # Key Properties
 
-This topic will go through the key properties of __RadContextMenu__ as follows
-
-* [IconColumnWidth](#iconcolumnwidth)
-* [StaysOpen](#staysopen)
-* [HorizontalOffset](#horizontaloffset)
-* [EventName](#eventname)
-* [ModifierKey](#modifierkey)
-* [MousePosition](#mouseposition)
-* [UIElement](#uielement)
-* [VerticalOffset](#verticaloffset)
-* [InheritDataContext](#inheritdatacontext)
-* [RestoreFocusToTargetElement](#restorefocustotargetelement)
+This topic goes through the key properties of the __RadContextMenu__.
 
 ## IconColumnWidth
 
@@ -80,7 +69,7 @@ By default, the RadContextMenu inherits the DataContext of its parent element. I
 
 ## RestoreFocusToTargetElement
 
-When opened the RadContextMenu automatically gets the focus. To automatically return the focus back to the parent element that opened the context menu when the menu gets closed, set the `RestoreFocusToTargetElement` property to`True`.
+When opened the RadContextMenu automatically gets the focus. To automatically return the focus back to the parent element that opened the context menu when the menu gets closed, set the `RestoreFocusToTargetElement` property to `True`.
 
 #### __[XAML] Setting the RestoreFocusToTargetElement property__
 {{region radcontextmenu-key-properties_1}}

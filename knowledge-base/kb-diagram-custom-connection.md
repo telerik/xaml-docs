@@ -1,7 +1,7 @@
 ---
-title: Create Custom RadDiagramConnection
+title: Custom RadDiagramConnection With Additional Caps
 page_title: Custom RadDiagramConnection 
-description: Currently the RadDiagramConnection and Cap elements are represented by one Path object. To achieve further customization, extend the base implementation of the RadDiagramConnection element.
+description: Extend the base implementation of the RadDiagramConnection element, by adding additional Path elements for displaying Caps, to its ControlTemplate.
 type: how-to
 slug: kb-diagram-custom-connection-cap
 position: 0
@@ -31,17 +31,108 @@ With the current implementation of the __RadDiagram__ control applying propertie
 
 ## Solution
 
-To extend the base implementation of the __RadDiagramConnection__ element, extract its default control template, and add two additional __Path__ controls.
+To extend the base implementation of the __RadDiagramConnection__ element, [extract its default control template](https://docs.telerik.com/devtools/wpf/styling-and-appearance/styling-apperance-editing-control-templates), and add two additional __Path__ controls.
+
+The following example shows the extracted and modified control template of the __RadDiagramConnection__ element, from the __Office2016__ theme. The used version of the assemblies for this example is __NoXaml__, which allows for easier customization of the controls' templates.
 
 #### __[XAML]__
 
 {{region kb-diagram-custom-connection-cap_0}}
-	<Path x:Name="SourceConnectionCap" Fill="{TemplateBinding Background}" 
-      Stroke="{TemplateBinding Stroke}" 
-      StrokeThickness="{TemplateBinding StrokeThickness}"/>
-	<Path x:Name="TargetConnectionCap" Fill="{TemplateBinding Background}" 
-      Stroke="{TemplateBinding Stroke}" 
-      StrokeThickness="{TemplateBinding StrokeThickness}"/>
+	<ControlTemplate TargetType="telerik:RadDiagramConnection">
+	    <Grid x:Name="RootTemplate">
+	        <VisualStateManager.VisualStateGroups>
+	            <VisualStateGroup x:Name="SelectionStates">
+	                <VisualState x:Name="Selected"/>
+	                <VisualState x:Name="SelectedInGroup">
+	                    <Storyboard>
+	                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SelectedInGroupPath" Storyboard.TargetProperty="Visibility" Duration="0">
+	                            <DiscreteObjectKeyFrame KeyTime="0">
+	                                <DiscreteObjectKeyFrame.Value>
+	                                    <Visibility>Visible</Visibility>
+	                                </DiscreteObjectKeyFrame.Value>
+	                            </DiscreteObjectKeyFrame>
+	                        </ObjectAnimationUsingKeyFrames>
+	                    </Storyboard>
+	                </VisualState>
+	                <VisualState x:Name="Unselected"/>
+	                <VisualState x:Name="SelectedAsGroup"/>
+	            </VisualStateGroup>
+	            <VisualStateGroup x:Name="EditMode">
+	                <VisualState x:Name="NormalMode"/>
+	                <VisualState x:Name="NormalEditMode">
+	                    <Storyboard>
+	                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="NormalContent" Storyboard.TargetProperty="Visibility">
+	                            <DiscreteObjectKeyFrame KeyTime="0">
+	                                <DiscreteObjectKeyFrame.Value>
+	                                    <Visibility>Collapsed</Visibility>
+	                                </DiscreteObjectKeyFrame.Value>
+	                            </DiscreteObjectKeyFrame>
+	                        </ObjectAnimationUsingKeyFrames>
+	                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="EditContent" Storyboard.TargetProperty="Visibility">
+	                            <DiscreteObjectKeyFrame KeyTime="0">
+	                                <DiscreteObjectKeyFrame.Value>
+	                                    <Visibility>Visible</Visibility>
+	                                </DiscreteObjectKeyFrame.Value>
+	                            </DiscreteObjectKeyFrame>
+	                        </ObjectAnimationUsingKeyFrames>
+	                    </Storyboard>
+	                </VisualState>
+	                <VisualState x:Name="TextBoxEditMode">
+	                    <Storyboard>
+	                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="NormalContent" Storyboard.TargetProperty="Visibility">
+	                            <DiscreteObjectKeyFrame KeyTime="0">
+	                                <DiscreteObjectKeyFrame.Value>
+	                                    <Visibility>Collapsed</Visibility>
+	                                </DiscreteObjectKeyFrame.Value>
+	                            </DiscreteObjectKeyFrame>
+	                        </ObjectAnimationUsingKeyFrames>
+	                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="EditTextBox" Storyboard.TargetProperty="Visibility">
+	                            <DiscreteObjectKeyFrame KeyTime="0">
+	                                <DiscreteObjectKeyFrame.Value>
+	                                    <Visibility>Visible</Visibility>
+	                                </DiscreteObjectKeyFrame.Value>
+	                            </DiscreteObjectKeyFrame>
+	                        </ObjectAnimationUsingKeyFrames>
+	                    </Storyboard>
+	                </VisualState>
+	            </VisualStateGroup>
+	        </VisualStateManager.VisualStateGroups>
+	        <Path x:Name="DeferredPath"
+	                Stroke="{telerik:Office2016Resource ResourceKey=AccentPressedBrush}"
+	                Fill="{TemplateBinding Background}"
+	                StrokeThickness="{TemplateBinding StrokeThickness}"
+	                StrokeDashArray="2 2"/>
+	        <Path x:Name="SelectedInGroupPath"
+	                Visibility="Collapsed"
+	                Stroke="{telerik:Office2016Resource ResourceKey=AccentPressedBrush}"
+	                StrokeThickness="{TemplateBinding StrokeThickness}"/>
+	        <Path
+	                Stroke="{TemplateBinding Stroke}"
+	                Fill="{TemplateBinding Background}"
+	                StrokeThickness="{TemplateBinding StrokeThickness}"
+	                x:Name="GeometryPath"
+	                StrokeDashArray="{TemplateBinding StrokeDashArray}"/>
+			<!--Additional Path elements-->
+	        <Path x:Name="SourceConnectionCap" Fill="{TemplateBinding Background}" 
+	              Stroke="{TemplateBinding Stroke}" 
+	              StrokeThickness="{TemplateBinding StrokeThickness}"/>
+	        <Path x:Name="TargetConnectionCap" Fill="{TemplateBinding Background}" 
+	              Stroke="{TemplateBinding Stroke}" 
+	              StrokeThickness="{TemplateBinding StrokeThickness}"/>
+	        <Canvas>
+	            <Grid x:Name="EdittingElement">
+	                <Border Background="#00FFFFFF"/>
+	                <ContentPresenter x:Name="NormalContent"/>
+	                <ContentPresenter x:Name="EditContent" Visibility="Collapsed" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding EditTemplate}"/>
+	                <TextBox x:Name="EditTextBox" Visibility="Collapsed" Style="{StaticResource EditTextBoxStyle}">
+	                    <TextBox.InputBindings>
+	                        <KeyBinding Key="Enter" Command="ApplicationCommands.NotACommand"/>
+	                    </TextBox.InputBindings>
+	                </TextBox>
+	            </Grid>
+	        </Canvas>
+	    </Grid>
+	</ControlTemplate>
 {{endregion}}
 
 Create a class that derives from the __RadDiagramConnection__ class and implement the following logic for handling the two additional path elements.
@@ -193,7 +284,7 @@ The result is a custom connection element, which can be used both in Xaml and in
 	    <local:CustomConnection StartPoint="400, 100" 
 	                            EndPoint="200, 100"
 	                            SourceCapType="Arrow2" 
-	                            TargetCapType="Arrow2"                                     
+	                            TargetCapType="Arrow4Filled"                                     
 								SourceCapSize="6, 6" 
 	                            TargetCapSize="6, 6"/>
 	</telerik:RadDiagram>
@@ -205,7 +296,7 @@ The result is a custom connection element, which can be used both in Xaml and in
 	var connection = new CustomConnection() 
     {
         SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1,
-        TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2,
+        TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled,
         StartPoint = new Point(400, 100),
         EndPoint = new Point(200, 100)
     };
@@ -219,10 +310,14 @@ The result is a custom connection element, which can be used both in Xaml and in
     Dim connection = New CustomConnection() With
     {
         .SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1,
-        .TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2,
+        .TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled,
         .StartPoint = New Point(400, 100),
         .EndPoint = New Point(200, 100)
     }
 	
     diagram.Items.Add(connection)
 {{endregion}}
+
+#### __Figure 1: Result__
+
+![Custom ConnectionLine](images/kb-diagram-custom-connection-0.png)

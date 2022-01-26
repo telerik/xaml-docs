@@ -1,5 +1,5 @@
 ---
-title: Scroll Per Pixel
+title: Listbox Scroll Per Pixel
 page_title: Scroll RadListBox Items Per Pixel
 description: Scroll per pixel instead per item when scrolling the items of the RadListBox control.
 type: how-to
@@ -27,11 +27,11 @@ category: knowledge-base
 
 ## Description
 
-The default behavior of the RadListBox control, when scrolling, is to scroll per item. How to scroll the RadListBox items per pixel?
+The default behavior of the RadListBox control, when scrolling, is to scroll per item. This article shows how to scroll the content of the __ListBox__ control per pixel.
 
 ## Solution
 
-Set the __ScrollViewer.CanContentScroll__ attached property, onto the __RadListBox__ control, to __False__. This will allow the user to scroll per pixels rather than items.
+Set the [ScrollViewer.CanContentScroll](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.cancontentscroll?view=windowsdesktop-6.0) attached property, onto the __RadListBox__ control, to __False__. This will allow the user to scroll per pixels rather than per items.
 
 #### __[XAML]__
 

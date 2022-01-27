@@ -98,10 +98,18 @@ Let's define the following class which will be responsible for classifying the w
             string word;
             int lastCharType = -1;
             int startIndex = 0;
+
             for (int i = 0; i < value.Length; i++)
             {
                 int charType = GetCharType(value[i]);
                 if (charType != lastCharType)
+                {
+                    word = value.Substring(startIndex, i - startIndex);
+                    words.Add(word);
+                    startIndex = i;
+                    lastCharType = charType;
+                }
+                else if (value[i] == '#' && value[i - 1] == '#')
                 {
                     word = value.Substring(startIndex, i - startIndex);
                     words.Add(word);
@@ -120,7 +128,7 @@ Let's define the following class which will be responsible for classifying the w
         {
             if (c == '#' || c == '\_')
             {
-                return 0;
+                return 3;
             }
 
             if (char.IsWhiteSpace(c))

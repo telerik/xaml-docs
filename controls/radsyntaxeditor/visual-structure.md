@@ -26,3 +26,4 @@ This section defines terms and concepts used in the scope of the RadSyntaxEditor
 ## See Also
 
 * [Getting Started]({%slug radsyntaxeditor-getting-started%})
+* [RadSyntaxEditor API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radsyntaxeditor)

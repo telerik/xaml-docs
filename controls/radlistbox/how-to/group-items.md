@@ -116,3 +116,6 @@ Finally, all you need to do is to set the __ItemsSource__ and __GroupStyle__ pro
 The final result is shown on the snapshot below:
 
 ![radlistbox-how-to-group-items-1](images/radlistbox_how_to_group_items_01.png)
+	
+## See Also
+* [Get Started with UI for WPF]({%slug getting-started-first-steps%})

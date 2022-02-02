@@ -31,6 +31,7 @@ The TextBoxStyle property expects a Style object with a __TargetType__ set to __
 
 ## See Also  
  * [Getting Started]({%slug radautosuggestbox-getting-started%})
- * [Events]({%slug radautosuggestbox-events%})  
+ * [Events]({%slug radautosuggestbox-events%})
  * [Buttons]({%slug radautosuggestbox-appearance-customize-buttons%})
  * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

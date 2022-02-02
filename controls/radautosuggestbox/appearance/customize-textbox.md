@@ -15,11 +15,10 @@ The TextBoxStyle property expects a Style object with a __TargetType__ set to __
 
 #### __[XAML] Example 1: Setting TextBoxStyle__
 {{region radautosuggestbox-appearance-customize-textbox-0}}
-	<telerik:RadAutoSuggestBox>	
+	<telerik:RadAutoSuggestBox Foreground="Red">	
 		<telerik:RadAutoSuggestBox.TextBoxStyle>
-			<!-- The BasedOn property is required when using NoXaml dlls. Otherwise, you will need to extract and place the whole RadWatermarkTextBoxStyle here -->
-			<Style TargetType="telerik:RadWatermarkTextBox" BasedOn="{StaticResource RadWatermarkTextBoxStyle}">
-				<Setter Property="Foreground" Value="Red" />
+			<!-- The BasedOn property is required when using NoXaml dlls. Otherwise, remove the setting. -->
+			<Style TargetType="telerik:RadWatermarkTextBox" BasedOn="{StaticResource RadWatermarkTextBoxStyle}">				
 				<Setter Property="Opacity" Value="0.5" />
 				<Setter Property="FontWeight" Value="Bold" />                    
 			</Style>

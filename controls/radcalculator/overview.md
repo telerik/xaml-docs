@@ -11,48 +11,37 @@ CTAControlName: RadCalculator
 
 # Overview
 
-
-
-## 
-
 {% if site.site_name == 'Silverlight' %}
-![Rad Calculator Silverlight](images/RadCalculator_Silverlight.png){% endif %}{% if site.site_name == 'WPF' %}
+![Rad Calculator Silverlight](images/RadCalculator_Silverlight.png){% else %}
 ![Rad Calculator WPF](images/RadCalculator_WPF.png){% endif %}
 
 Thank you for choosing Telerik RadCalculator!
 
-__RadCalculator__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. The operations can be executed either by clicking the calculator buttons, or by using your keyboard. You can also use the numeric keypad to type numbers and operators by pressing Num Lock. Furthermore, all the Memory and Clear features are exposed as well.
+__RadCalculator__ for {{ site.framework_name }} has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. The operations can be executed either by clicking the calculator buttons, or by using your keyboard. You can also use the numeric keypad to type numbers and operators by pressing Num Lock. Furthermore, all the Memory and Clear features are exposed as well.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
-{% endif %}
-			  
+{% endif %}			  
 
 __![Rad Calculator-Overview](images/RadCalculator-Overview.png)__
 
-__RadCalculator__ key features list:
-			  
+>tip Get started with the control with its [Getting Started]({%slug radcalculator-gettingstarted%}) help article that shows how to use it in a basic scenario.
 
-*  Basic calculations - addition, subtraction, multiplication, division.
-				  
+> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Calculator/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
-*  Additional calculations like - negate, squate root, reciprocal.
-				  
+## Key Features		  
 
-*  Keyboard support.
-				  
+* __Basic calculations__&mdash;Addition, subtraction, multiplication, division.				  
 
-*  Memory functionality.
-				  
+*  __Additional calculations like__&mdash; - negate, squate root, reciprocal.				  
 
-*  Clear entry, clear all, delere functionality.
-				  
+*  __Keyboard support__				  
 
-*  Customized functions.
-				  
+*  __Memory functionality__				  
 
-*  UI Automation Support
-				  
+*  __Clear entry, clear all, delete functionality__				  
 
-*  All Telerik controls for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} support styling with Expression Blend					  
+*  __Customized functions__				  
+
+*  __UI Automation Support__				  
 				  

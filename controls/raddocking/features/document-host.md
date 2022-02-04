@@ -123,6 +123,28 @@ __Figure 2:__ __DocumentHost__ with visible __HorizontalScrollBar__ and drop dow
 
 ![](images/raddocking-features-document-host-6.png)
 
+## Removing Default Padding
+
+To remove the extra space around the panes in the pane groups and the `DocumentHost`, you need to create an appropriate style for the `RadPaneGroup` element and override the default `Padding`.
+
+> For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `DocumentHost` element's padding should be updated through a style trigger.
+
+#### __XAML__
+
+{{region xaml-raddocking-features-document-host_4}}
+	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+	<Style TargetType="telerik:RadPaneGroup">
+	    <Setter Property="Padding" Value="0" />
+	<!-- DocumentHost's padding should be update through style trigger for Fluent, Green, Material, Office2016 and Office2016Touch ->
+	        <Style.Triggers>
+	            <Trigger Property="IsInDocumentHost" Value="True">
+	                <Setter Property="Padding" Value="0" />
+	            </Trigger>
+	    </Style.Triggers>
+	</Style>
+{{endregion}}
+
 ## See Also
 
  * [Pane Groups]({%slug raddocking-features-pane-groups%})

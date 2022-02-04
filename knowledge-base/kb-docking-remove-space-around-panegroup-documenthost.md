@@ -30,14 +30,20 @@ How to remove the padding around the pane groups of the RadDocking control.
 
 ## Solution
 
-To get rid of the extra space surrounding the panes in the pane groups and the DocumentHost, you need to create an appropriate style for the RadPaneGroup and override the default **Padding**.
+To get rid of the extra space surrounding the panes in the pane groups and the `DocumentHost`, you need to create an appropriate style for the `RadPaneGroup` and override the default `Padding`. 
 
 #### __[XAML]__
 {{region kb-docking-remove-space-around-panegroup-documenthost-0}}
-    <!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
-    <Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
 	<Style TargetType="telerik:RadPaneGroup">
-		<Setter Property="Padding" Value="0" />
+	    <Setter Property="Padding" Value="0" />
+	<!-- DocumentHost's padding should be update through style trigger for Fluent, Green, Material, Office2016 and Office2016Touch ->
+	        <Style.Triggers>
+	            <Trigger Property="IsInDocumentHost" Value="True">
+	                <Setter Property="Padding" Value="0" />
+	            </Trigger>
+	    </Style.Triggers>
 	</Style>
 {{endregion}}
 

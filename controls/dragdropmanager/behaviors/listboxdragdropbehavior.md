@@ -42,6 +42,7 @@ In this article you can find information about the ListBoxDragDropBehavior class
 		</ListBox>
 	{{endregion}}
 
+
 ## Features
 
 The __ListBoxDragDropBehavior__ provides drag-drop capabilities for standard ListBox controls. It automatically recognizes its host control item Type and automatically adds the dragged items that are of this type. In some cases the __ListBoxDragDropBehavior__ will be unable to correctly recognize its host’s item Type. The ItemType property is provided for such cases {% if site.site_name == 'Silverlight' %}(Silverlight 5 example){% endif %}.

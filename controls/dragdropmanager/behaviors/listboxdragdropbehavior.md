@@ -63,7 +63,7 @@ By default the __ListBoxDragDropBehavior__ will allow reordering/inserting items
 	<drag:ListBoxDragDropBehavior AllowReorder="false" />
 {{endregion}}
 
-The __ListBoxDragDropBehavior__ supports copying the dragged items if the Control key is pressed. For that purpose the CopyDraggedItems method should be overridden:    	
+The __ListBoxDragDropBehavior__ supports copying the dragged items if the `Ctrl` key is pressed. When the copy drag functionality inside the same ListBox instance, the items won't be copied, unless you override the `CopyDraggedItems` method and return a collection with copies of the dragged items.
 
 #### __C#__
 {{region dragdropmanager-behaviors-listboxdragdropbehavior_5}}

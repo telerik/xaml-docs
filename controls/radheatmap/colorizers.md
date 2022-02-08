@@ -157,7 +157,7 @@ As you may have already noticed, there is no colorizer to be seen in the provide
 
 __HeatMapValueGradientColorizer__
 
-A colorizer, which contains a set of GradientStops. It chooses a color to be applied according to the values of the items in RadHeatMap and the colorizer’s gradient stops. Depending on the IsAbosulute property value,  each GradientStop.Offset value can be absolute or relative. A colorizer is relative when IsAbsolute is false, which is its default value. In this mode, the colorizer scans all values to find the smallest and greatest ones. In the same manner, these two correspond to GradientStop.Offsets 0 and 1. Also, by setting the RangeMinimum and RangeMaximum properties, you are specifying which are the actual minimum and maximum values , i.e. you are defining some values to correspond to offsets 0 and 1. In absolute mode, the offsets are set to the actual values, which are expected for the items in RadHeatMap        
+A colorizer, which contains a set of GradientStops. It chooses a color to be applied according to the values of the items in RadHeatMap and the colorizer’s gradient stops. Depending on the IsAbsolute property value,  each GradientStop.Offset value can be absolute or relative. A colorizer is relative when IsAbsolute is false, which is its default value. In this mode, the colorizer scans all values to find the smallest and greatest ones. In the same manner, these two correspond to GradientStop.Offsets 0 and 1. Also, by setting the RangeMinimum and RangeMaximum properties, you are specifying which are the actual minimum and maximum values , i.e. you are defining some values to correspond to offsets 0 and 1. In absolute mode, the offsets are set to the actual values, which are expected for the items in RadHeatMap        
 
 >When the same instance of any relative colorizer is applied to more than one row or column, the colorizer shares the minimum and maximum between all the assigned rows or columns.          
 
@@ -166,8 +166,8 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 #### __C#__
 {{region radheatmap-colorizers_2}}
 	HeatMapValueGradientColorizer ValueGradientColorizer1 = new HeatMapValueGradientColorizer();
-	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() {R = 217, G = 231, B = 241}, Offset = 0 });
-	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() { R = 1, G = 81, B = 140 }, Offset = 1 });
+	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() {R = 217, G = 231, B = 241, A = 255 }, Offset = 0 });
+	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() { R = 1, G = 81, B = 140, A = 255 }, Offset = 1 });
 	memberMapping1.Colorizer = ValueGradientColorizer1;
 {{endregion}}
 
@@ -178,7 +178,8 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 		Key .Color = New Color() With { _
 			Key .R = 217, _
 			Key .G = 231, _
-			Key .B = 241 _
+			Key .B = 241, _
+			Key .A = 255 _
 		}, _
 		Key .Offset = 0 _
 	})
@@ -186,7 +187,8 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 		Key .Color = New Color() With { _
 			Key .R = 1, _
 			Key .G = 81, _
-			Key .B = 140 _
+			Key .B = 140, _
+			Key .A = 255 _
 		}, _
 		Key .Offset = 1 _
 	})
@@ -226,11 +228,11 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 #### __C#__
 {{region radheatmap-colorizers_3}}
 	HeatMapRangeColorizer RangeColorizer1 = new HeatMapRangeColorizer() { IsAbsolute = true };
-	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 217, G = 231, B = 241 }, From = 19, To = 2224 });
-	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 164, G = 194, B = 216 }, From = 23, To = 26 });
-	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 110, G = 156, B = 191 }, From = 27, To = 30 });
-	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 55, G = 118, B = 165 }, From = 31, To = 34 });
-	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 1, G = 81, B = 140 }, From = 35, To = 40 });
+	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 217, G = 231, B = 241, A = 255 }, From = 19, To = 22 });
+	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 164, G = 194, B = 216, A = 255 }, From = 23, To = 26 });
+	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 110, G = 156, B = 191, A = 255 }, From = 27, To = 30 });
+	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 55, G = 118, B = 165, A = 255 }, From = 31, To = 34 });
+	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 1, G = 81, B = 140, A = 255 }, From = 35, To = 40 });
 	memberMapping2.Colorizer = RangeColorizer1;
 {{endregion}}
 
@@ -243,16 +245,18 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 		Key .Color = New Color() With { _
 			Key .R = 217, _
 			Key .G = 231, _
-			Key .B = 241 _
+			Key .B = 241, _
+			Key .A = 255 _
 		}, _
 		Key .From = 19, _
-		Key .[To] = 2224 _
+		Key .[To] = 22 _
 	})
 	RangeColorizer1.Colors.Add(New HeatMapRangeColor() With { _
 		Key .Color = New Color() With { _
 			Key .R = 164, _
 			Key .G = 194, _
-			Key .B = 216 _
+			Key .B = 216, _
+			Key .A = 255 _
 		}, _
 		Key .From = 23, _
 		Key .[To] = 26 _
@@ -261,7 +265,8 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 		Key .Color = New Color() With { _
 			Key .R = 110, _
 			Key .G = 156, _
-			Key .B = 191 _
+			Key .B = 191, _
+			Key .A = 255 _
 		}, _
 		Key .From = 27, _
 		Key .[To] = 30 _
@@ -270,7 +275,8 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 		Key .Color = New Color() With { _
 			Key .R = 55, _
 			Key .G = 118, _
-			Key .B = 165 _
+			Key .B = 165, _
+			Key .A = 255 _
 		}, _
 		Key .From = 31, _
 		Key .[To] = 34 _
@@ -279,7 +285,8 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 		Key .Color = New Color() With { _
 			Key .R = 1, _
 			Key .G = 81, _
-			Key .B = 140 _
+			Key .B = 140, _
+			Key .A = 255 _
 		}, _
 		Key .From = 35, _
 		Key .[To] = 40 _
@@ -315,7 +322,7 @@ This is how HeatMapDesaturationColorizer is defined and applied:
 {{region radheatmap-colorizers_4}}
 	HeatMapDesaturationColorizer DesaturationColorizer1 = new HeatMapDesaturationColorizer()
 	{
-	    StartColor = new Color() { R = 1, G = 81, B = 140 },
+	    StartColor = new Color() { R = 1, G = 81, B = 140, A = 255 },
 	    To = 0.1,
 	};
 	memberMapping3.Colorizer = DesaturationColorizer1;
@@ -327,7 +334,8 @@ This is how HeatMapDesaturationColorizer is defined and applied:
 		Key .StartColor = New Color() With { _
 			Key .R = 1, _
 			Key .G = 81, _
-			Key .B = 140 _
+			Key .B = 140, _
+			Key .A = 255 _
 		}, _
 		Key .[To] = 0.1 _
 	}

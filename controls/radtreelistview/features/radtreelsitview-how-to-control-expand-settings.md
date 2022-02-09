@@ -16,10 +16,10 @@ The RadTreeListView control allows you to control the state of its items both **
 
 There are four methods which you can use to programmatically control the state of the items:
 
-**ExpandHierarchyItem(object hierarchyItem)**: Expands the respective GridViewRow for the given item.
-**CollapseHierarchyItem(object hierarchyItem)**: Collapses the respective GridViewRow for the given item.
-**ExpandAllHierarchyItems()**: Expands all hierarchy items.
-**CollapseAllHierarchyItems()**: Collapses all hierarchy items.
+* **ExpandHierarchyItem(object hierarchyItem)**: Expands the respective GridViewRow for the given item.
+* **CollapseHierarchyItem(object hierarchyItem)**: Collapses the respective GridViewRow for the given item.
+* **ExpandAllHierarchyItems()**: Expands all hierarchy items.
+* **CollapseAllHierarchyItems()**: Collapses all hierarchy items.
 
 All four methods can also be given an additional boolean parameter (preserveLocalSettings) which determines if the **IsExpandable** state of the item set via the **RowStyle** or **RowStyleSelector** properties should be preserved.
 
@@ -37,7 +37,7 @@ The RadTreeListView also exposes the __IsExpandedBinding__ and __IsExpandableBin
 
 >caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported and that is why we recommend using the [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
 
-## IsExpandedBinding
+### IsExpandedBinding
 
 __IsExpandedBinding__ property can be used to control whether a row is expanded or not.
 
@@ -117,7 +117,7 @@ With this setup expanding or collapsing a row will result in the respective chec
 
 >tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](https://demos.telerik.com/wpf/){% endif %}.
 
-## IsExpandableBinding
+### IsExpandableBinding
 
 The use of __IsExpandableBinding__ is identical to that of the __IsExpandedBinding__ - you need to define a boolean property in your business class and bind it to the IsExpandableBinding property of the RadTreeListView control.
 

@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-How to expand and collapse items via the control's public methods in an MVVM-friendly manner.
+How to expand and collapse items via the RadTreeListView control's public methods in an MVVM-friendly manner.
 
 ## Solution
 

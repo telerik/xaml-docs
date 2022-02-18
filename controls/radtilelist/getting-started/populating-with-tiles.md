@@ -130,7 +130,8 @@ Once the class __Employee__ is defined, we will define an __EmployeeService__ cl
 #### __[VB.NET] Example 2: Defining the EmployeeService class__
 
 {{region vb-radtilelist-getting-started_7}}
-	Public Class EmployeeService
+	Public Class EmployeeService
+
 	    Public Sub New()
 	    End Sub
 	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
@@ -160,7 +161,8 @@ Once the class __Employee__ is defined, we will define an __EmployeeService__ cl
 	         .Salary = 2300 _
 	        })
 	        Return employees
-	    End Function
+	    End Function
+
 	End Class
 {{endregion}}
 
@@ -214,7 +216,6 @@ Afterwards, all you need to do is to set the __ItemsSource of__ the RadTileList:
 	    InitializeComponent();
 	    this.RadTileList.ItemsSource = EmployeeService.GetEmployees();
 	}
-	    }
 {{endregion}}
 
 

@@ -10,15 +10,18 @@ position: 1
 
 # Visual Structure
 
-This article shows the main UI structure of the RadWebCam control.
+This article shows the main UI structure of the `RadWebCam` control.
 
-#### Figure 1: RadWebCam - Initial State
+__RadWebCam - Initial State__
+
 ![](images/radwebcam-visual-structure-0.png)
 
-#### Figure 2: RadWebCam - Recording State
+__RadWebCam - Recording State__
+
 ![](images/radwebcam-visual-structure-1.png)
 
-#### Figure 3: RadWebCam - Settings Dialog
+__RadWebCam - Settings Dialog__
+
 ![](images/radwebcam-visual-structure-2.png)
 
 ## See Also

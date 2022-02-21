@@ -10,17 +10,17 @@ position: 3
 
 # Events
 
-__RadWebCam__ exposes the following events, specific for the control.
+`RadWebCam` exposes the following events, specific for the control.
 
 ## SnapshotTaken
 
-The SnapshotTaken event fires when the "Take snapshot" button is pressed or when you call the __TakeSnapshot__ method of RadWebCam.
+The SnapshotTaken event fires when the "Take snapshot" button is pressed or when you call the `TakeSnapshot` method of RadWebCam.
 
 The purpose of the event is to notify you that a snapshot has been taken and you need to take action, like saving it to a file.
 
-The event arguments are of type __SnapshotTakenEventArgs__ which expose a __Snapshot__ property (of type BitmapSource).
+The event arguments are of type `SnapshotTakenEventArgs` which expose a `Snapshot` property (of type BitmapSource).
 
-#### __[C#] Example 1: Subscribing to the SnapshotTaken event__
+#### __[C#] Subscribing to the SnapshotTaken event__
 {{region radwebcam-events-0}}
 	public MainWindow()
 	{
@@ -37,13 +37,13 @@ The event arguments are of type __SnapshotTakenEventArgs__ which expose a __Snap
 
 ## CameraError
 
-The __CameraError__ event fires when one of the [expected camera errors]({%slug radwebcam-features-errors%}#error-types) appears.
+The `CameraError` event fires when one of the [expected camera errors]({%slug radwebcam-features-errors%}#error-types) appears.
 
 The event can be used to notify you about the corresponding error, or to replace the error message shown in the control.
 
-The event arguments are of type __CameraErrorEventArgs__ and they expose an __Error__ property that contains information about the error. The Error property is of type __ErrorInfo__ which gives you access to the message and state of the error via the __Message__ and __ErrorState__ properties.
+The event arguments are of type `CameraErrorEventArgs` and they expose an `Error` property that contains information about the error. The Error property is of type `ErrorInfo` which gives you access to the message and state of the error via the `Message` and `ErrorState` properties.
 
-#### __[C#] Example 2: Subscribing to the CameraError event and replacing the no-camera error message__
+#### __[C#] Subscribing to the CameraError event and replacing the no-camera error message__
 {{region radwebcam-events-1}}
 	public MainWindow()
 	{
@@ -60,16 +60,17 @@ The event arguments are of type __CameraErrorEventArgs__ and they expose an __Er
 	}
 {{endregion}}
 
-#### Figure 1: Customized error message
+__Customized error message__
+
 ![](features/images/radwebcam-features-errors-3.png)
 
 ## RecordingStarted/Ended
 
-The __RecordingStarted__ event fires just before the camera control starts recording. 
+The `RecordingStarted` event fires just before the camera control starts recording. 
 
-The event arguments are of type __RecordingStartedEventArgs__ and can be used to cancel the recording start. To do this, set the __Cancel__ property to True.
+The event arguments are of type `RecordingStartedEventArgs` and can be used to cancel the recording start. To do this, set the `Cancel` property to True.
 
-#### __[C#] Example 3: Canceling the start recording action__
+#### __[C#] Canceling the start recording action__
 {{region radwebcam-events-2}}
 	public MainWindow()
 	{
@@ -84,7 +85,7 @@ The event arguments are of type __RecordingStartedEventArgs__ and can be used to
 	}
 {{endregion}}
 
-The __RecordingEnded__ event fires when the camera control stops recording. 
+The `RecordingEnded` event fires when the camera control stops recording. 
 
 >tip Read more about the video capturing in the [Recording Video]({%slug radwebcam-features-recording-video%}) article.
 

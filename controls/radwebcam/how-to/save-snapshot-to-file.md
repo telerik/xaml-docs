@@ -14,16 +14,16 @@ This article shows how to take and save a snapshot to a file.
 
 ## Setting up the Control
 
-Add the control to the logical tree of the view and subscribe to the __SnapshotTaken__ event.
+Add the control to the logical tree of the view and subscribe to the `SnapshotTaken` event.
 
-#### __[XAML] Example 1: Defining RadWebCam__
+#### __[XAML] Defining RadWebCam__
 {{region radwebcam-save-snapshot-to-file-0}}
 	<telerik:RadWebCam x:Name="radWebCam" SnapshotTaken="RadWebCam_SnapshotTaken"/>
 {{endregion}}
 
-In the event handler you get access to a BitmapSource object holding the snapshot. You can use this to save it to the file system. 
+In the event handler you get access to a `BitmapSource` object holding the snapshot. You can use this to save it to the file system. 
 
-#### __[C#] Example 2: Opening a file dialog in the SnapshotTaken event handler and saving it to a file__
+#### __[C#] Opening a file dialog in the SnapshotTaken event handler and saving it to a file__
 {{region radwebcam-save-snapshot-to-file-1}}
 	private void RadWebCam_SnapshotTaken(object sender, RoutedEventArgs e)
 	{
@@ -46,14 +46,15 @@ In the event handler you get access to a BitmapSource object holding the snapsho
 
 ## Taking Snapshot
 
-To take the snapshot press the "Take snapshot" button. Or call the __TakeSnapshot__ method. This will fire the __SnapshotTaken__ event.
+To take the snapshot press the "Take snapshot" button. Or call the `TakeSnapshot` method. This will fire the `SnapshotTaken` event.
 
-> By default a preview of the snapshot will be shown that allows you to choose if it should be saved or not. If you choose to save it the SnapshotTaken event will fire. To disable the preview set the __IsPreviewingSnapshot__ property of RadWebCam to False.
+> By default a preview of the snapshot will be shown that allows you to choose if it should be saved or not. If you choose to save it the SnapshotTaken event will fire. To disable the preview set the `IsPreviewingSnapshot` property of RadWebCam to `False`.
 
-#### Figure 1: Take snapshot button
+__Take snapshot button__
+
 ![](images/radwebcam-save-snapshot-to-file-0.png)
 
-#### __[C#] Example 3: __
+#### __[C#] Take Snapshot__
 {{region radwebcam-save-snapshot-to-file-2}}
 	this.radWebCam.TakeSnapshot();
 {{endregion}}

@@ -18,27 +18,27 @@ When one of the following errors appear, the camera buttons and player get repla
 
 There are few expected errors that could appear using the control.
 
-* __No camera detected__. This error appears when there is no camera device connected to the computer.
+* `No camera detected`&mdash;This error appears when there is no camera device connected to the computer.
 
 	![](images/radwebcam-features-errors-0.png)
 	
-* __The camera is unavailable__. This error appears when another application is using the camera device.
+* `The camera is unavailable`&mdash;This error appears when another application is using the camera device.
 
 	![](images/radwebcam-features-errors-1.png)
 	
-* __Video adapter does not support the D3DFMT_X8R8G8B8 format__. This error appears when the hardware that runs the RadWebCam control doesn't support the camera rendering engine.
+* `Video adapter does not support the D3DFMT_X8R8G8B8 format`&mdash;This error appears when the hardware that runs the RadWebCam control doesn't support the camera rendering engine.
 
 	![](images/radwebcam-features-errors-2.png)
 	
-* __Access to the camera is denied__. This error appears when the access to the camera device is forbidden by the OS settings or any third party software.
+* `Access to the camera is denied`&mdash;This error appears when the access to the camera device is forbidden by the OS settings or any third party software.
 
 	![](images/radwebcam-features-errors-3.png)
 	
 ## Replacing the Error Message
 	
-To replace the error message use the __CameraError__ event of RadWebCam. The __CameraErrorEventArgs__ give access to an __ErrorInfo__ object, which contains information about the error state and message. Use the event to replace the default message with a custom one.
+To replace the error message use the `CameraError` event of RadWebCam. The `CameraErrorEventArgs` give access to an `ErrorInfo` object, which contains information about the error state and message. Use the event to replace the default message with a custom one.
 
-#### __[C#] Example 1: Replacing the no-camera error message__
+#### __[C#] Replacing the no-camera error message__
 {{region radwebcam-features-errors-0}}
 	public MainWindow()
 	{
@@ -56,14 +56,15 @@ To replace the error message use the __CameraError__ event of RadWebCam. The __C
 	}
 {{endregion}}
 
-#### Figure 1: Customized error message
+__Customized error message__
+
 ![](images/radwebcam-features-errors-4.png)
 
 ## Customizing the Error Content Template
 
-By default the error message is displayed in a simple content presenter. To customize this, use the __CameraErrorContentTemplate__ property of RadWebCam.
+By default the error message is displayed in a simple content presenter. To customize this, use the `CameraErrorContentTemplate` property of RadWebCam.
 
-#### __[XAML] Example 2: Customizing the error template__
+#### __[XAML] Customizing the error template__
 {{region radwebcam-features-errors-1}}
 	<telerik:RadWebCam>
 		<telerik:RadWebCam.CameraErrorContentTemplate>
@@ -77,7 +78,8 @@ By default the error message is displayed in a simple content presenter. To cust
 	</telerik:RadWebCam>
 {{endregion}}
 
-#### Figure 2: Custom error template
+__Custom error template__
+
 ![](images/radwebcam-features-errors-5.png)
 
 ## See Also  

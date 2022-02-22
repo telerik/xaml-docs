@@ -146,11 +146,13 @@ Furthermore, if you need to apply this to all of the `RadPaneGroup` instances, c
 #### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_5}}
-	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
-	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
-	<Style TargetType="telerik:RadPaneGroup">
-	    <Setter Property="Padding" Value="10" />
-	</Style>
+	<Application.Resources>
+		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+		<Style TargetType="telerik:RadPaneGroup">
+		    <Setter Property="Padding" Value="10" />
+		</Style>
+	</Application.Resources>
 {{endregion}}
 
 > For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `RadPaneGroup` element's padding should be updated through a style trigger.
@@ -158,15 +160,17 @@ Furthermore, if you need to apply this to all of the `RadPaneGroup` instances, c
 #### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_6}}
-	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
-	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
-	<Style TargetType="telerik:RadPaneGroup">
-	    <Style.Triggers>
-	        <Trigger Property="IsInDocumentHost" Value="True">
-	            <Setter Property="Padding" Value="10" />
-	        </Trigger>
-	    </Style.Triggers>
-	</Style>
+	<Application.Resources>
+		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+		<Style TargetType="telerik:RadPaneGroup">
+		    <Style.Triggers>
+			<Trigger Property="IsInDocumentHost" Value="True">
+			    <Setter Property="Padding" Value="10" />
+			</Trigger>
+		    </Style.Triggers>
+		</Style>
+	</Application.Resources>
 {{endregion}}
 
 ## See Also

@@ -10,13 +10,13 @@ position: 5
 
 # Document Host
 
-The __DocumentHost__ is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the __RadDocking__ control and each newly added pane is docked as a new tab page inside of it.
+The `DocumentHost` is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the `RadDocking` control and each newly added pane is docked as a new tab page inside of it.
 
 ![](images/RadDocking_Features_DocumentHost_010.png)
 
 Here is the XAML declaration of the above structure.
 
-#### __XAML__
+#### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_0}}
 	<telerik:RadDocking x:Name="radDocking">
@@ -38,21 +38,21 @@ Here is the XAML declaration of the above structure.
 	</telerik:RadDocking>
 {{endregion}}
 
->tipSince the __DocumentHost__ is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
+>tipSince the DocumentHost is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
 
->Placing __RadPaneGroup__ directly in the __DocumentHost__ is not a supported scenario in the RadDocking control. The RadPaneGroup needs to be placed in a __RadSplitContainer__.
+>Placing `RadPaneGroup` directly in the DocumentHost is not a supported scenario in the Docking control. The RadPaneGroup needs to be placed in a `RadSplitContainer`.
 
 ## Modifying DocumentHost
 
-The __DocumentHost__ is part of the template of the __RadDocking__ control. To learn how to modify it, take a look at the [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%}) topic.
+The `DocumentHost` is part of the template of the Docking control. To learn how to modify it, take a look at the [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%}) topic.
 
 ## Setting the CloseButtonPosition
 
-You could easily set the close button position of the Panes that are placed in the DocumentHost by setting the __CloseButtonPosition__ property of the __RadDocking__ control to one of the three built-in predefined settings (InGroup, InPane and InPaneAndGroup).
+You could easily set the close button position of the Panes that are placed in the DocumentHost by setting the `CloseButtonPosition` property of the Docking control to one of the three built-in predefined settings (InGroup, InPane and InPaneAndGroup).
 
 The next code snippet shows how to set the CloseButtonPosition to InPane:
   
-#### __XAML__
+#### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_1}}
 	<telerik:RadDocking CloseButtonPosition="InPane">
@@ -76,52 +76,102 @@ The next code snippet shows how to set the CloseButtonPosition to InPane:
 
 The next descriptions describe the built-in predefined CloseButtonPosition settings and their visual representation when they are set:
 
-1. __InGroup__ – this is the default value of the CloseButtonPosition property which causes the close button of the currently active Pane in the PaneGroup to be visible in the top right corner of the PaneGroup
+1. `InGroup`&mdash;This is the default value of the CloseButtonPosition property which causes the close button of the currently active Pane in the PaneGroup to be visible in the top right corner of the PaneGroup
 
 	![raddocking-features-document-host-2](images/raddocking-features-document-host-2.png)
 
-1. __InPane__ – places separate close button for each Pane in their tab
+2. `InPane`&mdash;Places separate close button for each Pane in their tab
 
 	![raddocking-features-document-host-3](images/raddocking-features-document-host-3.png)
 
-1. __InPaneAndGroup__ – places separate close button for each Pane in their tab and a close button for the currently active Pane in the PaneGroup in the top right corner of the group.
+3. `InPaneAndGroup`&mdash;Places separate close button for each Pane in their tab and a close button for the currently active Pane in the PaneGroup in the top right corner of the group.
 
 	![raddocking-features-document-host-4](images/raddocking-features-document-host-4.png)
 	
 ## Showing Arrows and DropDown Button
 
-When the number of Panes inside the __DocumentHost__ increases and there is not enough space available inside the tabstrip they begun to shrink. In order to see the whole Headers of the Panes you can use the __ScrollViewer.HorizontalScrollBarVisibility__ attached property of the __PaneGroup__ inside the __DocumentHost__. Arrows will be visualized on both sides of the tabstrip:
+When the number of Panes inside the `DocumentHost` increases and there is not enough space available inside the tabstrip they begun to shrink. In order to see the whole Headers of the Panes you can use the `ScrollViewer.HorizontalScrollBarVisibility` attached property of the `PaneGroup` inside the DocumentHost. Arrows will be visualized on both sides of the tabstrip:
 
-#### __XAML__
+#### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_2}}
 	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
 {{endregion}}
 
-__Figure 1:__ __DocumentHost__ with a visible __HorizontalScrollBar__:
+__Figure 1:__ DocumentHost with a visible `HorizontalScrollBar`:
 
 ![](images/raddocking-features-document-host-5.png)
 
-By design the __HorizontalScrollBarVisibility__ property is disabled and can be visualized either by setting it to __Visible__ or __Auto__ (the arrow buttons will become visible when the space is not enough).
+By design the `HorizontalScrollBarVisibility` property is disabled and can be visualized either by setting it to `Visible` or `Auto` (the arrow buttons will become visible when the space is not enough).
 
-In addition to this you could also display the drop down menu button that contains a list of all Panes inside the __DocumentHost__. For that purpose the __DropDownDisplayMode__ property could be used:
+In addition to this you could also display the drop down menu button that contains a list of all Panes inside the DocumentHost. For that purpose the `DropDownDisplayMode` property could be used:
 
-#### __XAML__
+#### __[XAML]__
 
 {{region xaml-raddocking-features-document-host_3}}
 	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto" DropDownDisplayMode="Visible"/>
 {{endregion}}
 
-The __DropDownDisplayMode__ property could be set to any of the following values:
-* __Collapsed__ – the drop down will never be shown.
-* __Visible__ – the drop down will always be visible.
-* __WhenNeeded__ – the drop down will be shown only when there is not enough space the Tabs to be arranged. 
+The `DropDownDisplayMode` property could be set to any of the following values:
+* `Collapsed`&mdash;The drop down will never be shown.
+* `Visible`&mdash;The drop down will always be visible.
+* `WhenNeeded`&mdash;The drop down will be shown only when there is not enough space the Tabs to be arranged. 
 
-Figure 2 demonstrate the appearance of the __DocumentHost__ when both properties are set.
+Figure 2 demonstrate the appearance of the DocumentHost when both properties are set.
 
-__Figure 2:__ __DocumentHost__ with visible __HorizontalScrollBar__ and drop down menu button:
+__Figure 2:__ DocumentHost with visible `HorizontalScrollBar` and drop down menu button:
 
 ![](images/raddocking-features-document-host-6.png)
+
+## Controlling Content Margin
+
+To control the extra space around the content of the panes inside a certain pane group, which is defined inside a `DocumentHost`, utilize the `Padding` property of the desired `RadPaneGroup` element.
+
+#### __[XAML]__
+
+{{region xaml-raddocking-features-document-host_4}}
+	<telerik:RadDocking.DocumentHost>
+	    <telerik:RadSplitContainer>
+	        <telerik:RadPaneGroup Padding="10">
+	            <telerik:RadPane>
+	                <ScrollViewer/>
+	            </telerik:RadPane>
+	        </telerik:RadPaneGroup>
+	    </telerik:RadSplitContainer>
+	</telerik:RadDocking.DocumentHost>
+{{endregion}}
+
+Furthermore, if you need to apply this to all of the `RadPaneGroup` instances, create a new `Style` with a `Setter` for the `Padding` property.
+
+#### __[XAML]__
+
+{{region xaml-raddocking-features-document-host_5}}
+	<Application.Resources>
+		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+		<Style TargetType="telerik:RadPaneGroup">
+		    <Setter Property="Padding" Value="10" />
+		</Style>
+	</Application.Resources>
+{{endregion}}
+
+> For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `RadPaneGroup` element's padding should be updated through a style trigger.
+
+#### __[XAML]__
+
+{{region xaml-raddocking-features-document-host_6}}
+	<Application.Resources>
+		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
+		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
+		<Style TargetType="telerik:RadPaneGroup">
+		    <Style.Triggers>
+			<Trigger Property="IsInDocumentHost" Value="True">
+			    <Setter Property="Padding" Value="10" />
+			</Trigger>
+		    </Style.Triggers>
+		</Style>
+	</Application.Resources>
+{{endregion}}
 
 ## See Also
 

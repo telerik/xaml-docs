@@ -271,7 +271,7 @@ The DisplayMemberPath works well if the value you want to display is contained i
 	</UserControl.Resources>
 {{endregion}}
 
-#### __[XAML] Example 8: Set the RadComboBox's IteTemplate property__
+#### __[XAML] Example 8: Set the RadComboBox's ItemTemplate property__
 
 {{region xaml-radcombobox-populating-with-data-binding-to-object_8}}
 	<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource ComboBoxCustomTemplate}" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" />

@@ -11,24 +11,23 @@ site_name: WPF
 
 # Installing UI for WPF from a NuGet package
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
-
 The following topic describes how you can install Telerik UI for WPF from a [NuGet package](http://www.nuget.org/).
 
 ## Available Packages
 
 We provide separate packages for the different assemblies from the UI for WPF suite and a common NuGet package containing all the dlls. Below you can find some information about the different packages. 
 
-* Nuget packages with the individual UI for WPF assemblies:
+* NuGet packages with the individual UI for WPF assemblies:
 
-    These packages can be downloaded by [using the telerik NuGet server](#using-the-telerik-nuget-server) or by [using a local package source](#using-a-local-package-source) and they only download the references that the assembly depends on. Additionally, the separate nuget packages will detect the __Target Framework__ of your project and download the UI for WPF dlls with the correct version (.NET Framework dlls or .NET Core dlls (available, since __R1 2019__)).
+    These packages can be downloaded by [using the telerik NuGet server](#using-the-telerik-nuget-server) or by [using a local package source](#using-a-local-package-source) and they only download the references that the assembly depends on. Additionally, the separate nuget packages will detect the __Target Framework__ of your project and download the UI for WPF dlls with the correct version (.NET Framework dlls or .NET Core dlls (available since __R1 2019__)).
 
-* Nuget packages with all of the UI for WPF assemblies: 
+* NuGet packages with all of the UI for WPF assemblies:
 
- >tip These packages are not available for download from the Telerik Nuget Server. To use them, check out the [using a local package source](#using-a-local-package-source) section.
+    These packages make it easier to get started with the controls by installing just a single package. Note, however, that these packages are not available for download from the Telerik NuGet Server. To use them, check out the [using a local package source](#using-a-local-package-source) section. As these packages will not detect the __Target Framework__ automatically, you need to ensure you choose the correct version for your particular project.
+    
+    ![Common Installing From NuGet NetCore](images/Common_InstallingFromNuGet_NetCore.png)
 
-    > The NuGet packages containing all of the UI for WPF dlls are available for the supported .NET Framework versions. Since __R1 2019__, a .NET Core 3 UI for WPF NuGet Package is also available.
-    >![Common Installing From NuGet NetCore](images/Common_InstallingFromNuGet_NetCore.png)
+>importantFor each NuGet package we provide two options. The NuGet packages that have __Xaml__ in their name will download the [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls and the ones that don't, will download the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls. Mixing Xaml and NoXaml dlls in your projects is __not__ recommended.
 
 ## Using the Telerik NuGet Server
 
@@ -58,7 +57,7 @@ The following steps will demonstrate how this can be done in Visual Studio:
 
 ![](images/Common_InstallingFromNuGet_09_wpf.png)
 
->importantFor each NuGet package we provide two options. The Nuget packages that have __Xaml__ in their name will download the [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls and the ones that don't, will download the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls. Mixing Xaml and NoXaml dlls in your projects is __not__ recommended.  
+>importantFor each NuGet package we provide two options. The NuGet packages that have __Xaml__ in their name will download the [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls and the ones that don't, will download the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls. Mixing Xaml and NoXaml dlls in your projects is __not__ recommended.  
 
 >Using this approach you can only use versions from **2016.3.1024** and later. If you need to use a previous version of the suite you will need to create a local package source as described in the next section.
 
@@ -77,12 +76,16 @@ In order to set up a local package source, you can follow these steps:
 * Follow steps 4 and 5 from the [Using the Telerik NuGet Server]({%slug installation-installing-from-nuget-wpf%}#using-the-telerik-nuget-server) section. In the last step set your local folder as a package source. 
 
 >tip Additionally, you can create a private NuGet Feed and deploy the Telerik NuGet packages there - for more details refer to [this blog post](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
+
+You can also have a look at the following video which demonstrates how you can add the Telerik NuGet Feed to your NuGet Package Sources:
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
   
 ## Installing Latest Internal Build NuGet Packages
 
-You can install and test the Latest Internal Build (LIB) dlls provided on a weekly basis, via the Nuget Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source](#using-a-local-package-source) and copy the files there. You __cannot__ download LIB dlls via the online Telerik nuget server (https://nuget.telerik.com/nuget), because they are not available there.
+You can install and test the Latest Internal Build (LIB) dlls provided on a weekly basis, via the NuGet Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source](#using-a-local-package-source) and copy the files there. You __cannot__ download LIB dlls via the online Telerik nuget server (https://nuget.telerik.com/nuget), because they are not available there.
 
-When you set up the package source and place the NuGet files there, you can find them in the Nuget Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
+When you set up the package source and place the NuGet files there, you can find them in the NuGet Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 
 ![](images/Common_InstallingFromNuGet_10_wpf.png)
 
@@ -92,7 +95,7 @@ Often enough, you would want to set up Continuous Integration and/or Continuous 
 
 There are a few common ways people implement CI/CD automated builds:
 
-* Use the licensed account's credentials in environment variables on the build machine/runner and reference those in the nuget.config file's `<packageSourceCredentials>` (see Azure DevOps nuget.config example below)
+* Use the licensed account's credentials in environment variables on the build machine/runner and reference those in the `nuget.config` file's `<packageSourceCredentials>` (see Azure DevOps `nuget.config` example below)
 * Add the package source, with credentials, using NuGet CLI's `nuget add source` command (before the restore or msbuild step).
 * Using a Local Package source (seen above)
 * Use a Service connection or Secrets storage system (see Azure DevOps and GitHub Actions below)
@@ -140,7 +143,7 @@ jobs:
       TELERIK_PASSWORD: ${ { secrets.MyTelerikAccountPassword } }  # remove the space between the brackets
 
 ````
->tip Even though you are copying secrets into Environment Variables on the runner, Github Actions will continue to treat the values as protected string and mask the values in all output.
+>tip Even though you are copying secrets into Environment Variables on the runner, GitHub Actions will continue to treat the values as protected string and mask the values in all output.
 
 Finally, you need a `nuget.config` file that lists the Telerik server in the `packageSources`, as well as an accompanying `packageSourceCredentials` that uses those named environment variables for the `Username` and `ClearTextPassword` keys.
 
@@ -166,7 +169,7 @@ Finally, you need a `nuget.config` file that lists the Telerik server in the `pa
 
 ### '401 Logon failed' error
 
-If you're receiving this error when connecting to Telerik Nuget Server, you could try to update your NuGet credentials through the Windows Credential Manager. Please follow the steps below:
+If you're receiving this error when connecting to Telerik NuGet Server, you could try to update your NuGet credentials through the Windows Credential Manager. Please follow the steps below:
 
 1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped).
 2. Open the "Credential Manager" app on your PC.

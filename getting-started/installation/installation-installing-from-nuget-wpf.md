@@ -175,7 +175,7 @@ If you're receiving this error when connecting to Telerik NuGet Server, you coul
 2. Open the "Credential Manager" app on your PC.
 3. Scroll through all the entries until you find any that are for `nuget.telerik.com`.
 4. Once you find that entry, expand it and select "edit".
-5. Make sure the username and password are the same ones you use for your Telerik account and clisk
+5. Make sure the username and password are the same ones you use for your Telerik account:
     1. Use the email address in the place of username
     2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
     3. Click "Save" 

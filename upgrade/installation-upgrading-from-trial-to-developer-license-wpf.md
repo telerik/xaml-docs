@@ -37,7 +37,7 @@ In order to manually upgrade your controls to a newer version of the suite, you 
 
 * Back up your application.
 
-* Manually Telerik references in your project in Visual Studio to point to the new DLLs or use the [References Resolver](https://marketplace.visualstudio.com/items?itemName=DeyanYosifov.ReferencesResolverExtension) extension to achieve this automatically.
+* Manually update the Telerik references in your Visual Studio project to point to the new DLLs or use the [References Resolver](https://marketplace.visualstudio.com/items?itemName=DeyanYosifov.ReferencesResolverExtension) extension to achieve this automatically.
 
 * Clean the solution.
 

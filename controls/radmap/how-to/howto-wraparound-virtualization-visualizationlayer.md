@@ -24,9 +24,9 @@ In the next part of this article, we will display points of interest (POIs) over
 {{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_0}}
 	public class CityLocation : ViewModelBase
     {
-        private double _lattitude;
-        private double _longitude;
-        private string _cityName;
+        private double \_lattitude;
+        private double \_longitude;
+        private string \_cityName;
         public CityLocation(double latitude, double longitude, string cityName)
         {
             this.Latitude = latitude;
@@ -38,12 +38,12 @@ In the next part of this article, we will display points of interest (POIs) over
         {
             get
             {
-                return this._lattitude;
+                return this.\_lattitude;
             }
             set
             {
                 Location old = this.Location;
-                this._lattitude = value;
+                this.\_lattitude = value;
                 this.OnPropertyChanged("Latitude");
                 this.OnPropertyChanged("Location");
             }
@@ -53,13 +53,13 @@ In the next part of this article, we will display points of interest (POIs) over
         {
             get
             {
-                return this._longitude;
+                return this.\_longitude;
             }
             set
             {
                 Location old = this.Location;
 
-                this._longitude = value;
+                this.\_longitude = value;
                 this.OnPropertyChanged("Longitude");
                 this.OnPropertyChanged("Location");
             }
@@ -77,11 +77,11 @@ In the next part of this article, we will display points of interest (POIs) over
         {
             get
             {
-                return this._cityName;
+                return this.\_cityName;
             }
             set
             {
-                this._cityName = value;
+                this.\_cityName = value;
                 this.OnPropertyChanged("CityName");
             }
         }
@@ -170,35 +170,35 @@ In the ViewModel we shift the locations by shifting their longitudes using __Set
 			}
 		}
 
-		private int _zoomLevel;
+		private int \_zoomLevel;
 		public int ZoomLevel
 		{
 			get
 			{
-				return this._zoomLevel;
+				return this.\_zoomLevel;
 			}
 			set
 			{
-				if (this._zoomLevel != value)
+				if (this.\_zoomLevel != value)
 				{
-					this._zoomLevel = value;
+					this.\_zoomLevel = value;
 					this.OnPropertyChanged("ZoomLevel");
 				}
 			}
 		}
 
-		private Location _center;
+		private Location \_center;
 		public Location Center
 		{
 			get
 			{
-				return this._center;
+				return this.\_center;
 			}
 			set
 			{
-				if (this._center != value)
+				if (this.\_center != value)
 				{
-					this._center = value;
+					this.\_center = value;
 					this.OnPropertyChanged("Center");
 				}
 			}

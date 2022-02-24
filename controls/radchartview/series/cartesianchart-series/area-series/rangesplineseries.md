@@ -90,6 +90,30 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
+## Spline Tension
+
+The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The defualt tension is set to `0.5d`.
+
+#### __[XAML] Example 4: Setting SplineTension__
+{{region radchartview-series-rangesplineseries_3}}	
+	 <telerik:RangeSplineSeries SplineTension="0.4" />
+{{endregion}}
+
+__Spline tension 0.8 (left) and 0.4 (right)__
+
+![](images/splineseries-rangespline-tension.png)
+
+Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calcuated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.5. The default value is `0.03d`.
+
+#### __[XAML] Example 5: Setting SplinePointsDistanceFactor__
+{{region radchartview-series-rangesplineseries_4}}	
+	 <telerik:RangeSplineSeries SplinePointsDistanceFactor="0.18" />
+{{endregion}}
+
+__SplinePointsDistanceFactor set to 0.18__
+
+![](images/splineseries-rangespline-points-distance-factor.png)
+
 ## Styling the Series
 
 You can see how to style range series using different properties in the [RangeSplineSeries section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.

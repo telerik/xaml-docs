@@ -13,21 +13,9 @@ position: 1
 
 __RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also enables you to configure the appearance of its child elements.
       
+## Work with the Contents of RadDocument Through its API
 
-This article explains how you can customize the contents of RadDocument.
-
-* [Customizing a RadDocument](#customize-the-contents-of-raddocument)
-
-* [Specifics](#specifics)
-
-* [Adding Sections to a RadDocument](#adding-sections-to-raddocument)
-
-* [Creating a Document at Run Time](#creating-a-document-at-run-time)
-
-## Customize the contents of RadDocument
-
-__RadDocument__ exposes several properties that enables you to customize the layout of the elements placed underneath it. Here is a list of them:
-        
+The **RadDocument** class exposes numerous properties and methods enabling you to control settings and apply modifications related to the document. The next list shows several of the most used properties:
 
 * __LayoutMode__: Specifies whether the page should be in __Paged__, __Flow__ or __FlowNoWrap__ layout mode. To learn more about layout modes, read [here]({%slug radrichtextbox-features-layout-modes%}).
 
@@ -65,7 +53,25 @@ __RadDocument__ exposes several properties that enables you to customize the lay
 
 * __DefaultTabWidth__: Specifies the default tab width of the document.
           
->**RadDocument** exposes also the **IsEmpty** property allowing you to determine whether the document instance has any content.
+* **IsEmpty**: Allows you to determine whether the document instance has any content.
+
+There are also members allowing you to control different features and functionalities, like:
+
+-	Bibliographics
+-	Document variables and fields
+-	Captions
+-	Caret position
+-	Comments
+-	Endnotes and footnotes
+-	Revisions 
+-	Layout and styling settings
+-	Line breaking rules
+-	Mail merge 
+-	Protection
+-	Selection
+
+>For the full list of the members refer to the [RadDocument API Reference](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.documents.model.raddocument) page.
+
 
 ## Specifics
 

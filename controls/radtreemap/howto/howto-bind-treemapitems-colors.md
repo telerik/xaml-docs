@@ -1,5 +1,5 @@
 ---
-title: How to Bind the Volor of the TreeMapItems
+title: How to Bind the Color of the TreeMapItems
 page_title: How to Bind the Color of the TreeMapItems
 description: Check our &quot;How to bind the color of the TreeMapItems&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
 slug: radtreemap-howto-bind-color

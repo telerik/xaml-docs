@@ -116,11 +116,11 @@ There are two ways to do this - the first one is to install [Progress Telerik WP
 ## See Also  
  * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
  * [Xaml vs NoXaml]({%slug xaml-vs-noxaml%})
- * [Create Project with Visual Studio Extension)({%slug installation-adding-to-application-create-application-and-adding-control%})
- * [Convert Project with Visual Studio Extension)({%slug radcontrols-for-wpf-vs-extensions-project-convert%})
+ * [Create Project with Visual Studio Extension)({%slug installation-adding-to-application-create-application-and-adding-control%}) 
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})
  {% if site.site_name == 'WPF' %}
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%}) 
+ * [Convert Project with Visual Studio Extension)({%slug radcontrols-for-wpf-vs-extensions-project-convert%})
  {% else %}
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%}) 
  {% endif %}

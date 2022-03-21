@@ -1,60 +1,55 @@
 ---
-title: IsExpandedBinding and IsExpandableBinding
-page_title: IsExpandedBinding and IsExpandableBinding
-description: Check our &quot;IsExpandedBinding and IsExpandableBinding&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+title: Expanding and Collapsing Items
+page_title: Expanding and Collapsing Items
+description: Check our &quot;Expanding and Collapsing Items&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
 slug: radtreelsitview-how-to-control-expand-settings
-tags: isexpandedbinding,and,isexpandablebinding
+tags: isexpandedbinding,and,isexpandablebinding,expand,collapse
 published: True
 position: 2
 ---
 
-# IsExpandedBinding and IsExpandableBinding
+# Expanding and Collapsing Items
 
-Since __Q1 2013__ release, __RadTreeListView__ has two new properties - __IsExpandedBinding__ and __IsExpandableBinding__ - which can be used to synchronize its expanded and expandable states with your view-model.
+The RadTreeListView control allows you to control the state of its items both **programmatically** via its public methods and through the **IsExpandedBinding** and **IsExpandableBinding** properties.
 
->caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported. You can consider using [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
+## Expand and Collapse Items Programmatically
 
-## Use of IsExpandedBinding
+There are four methods which you can use to programmatically control the state of the items:
 
-__IsExpandedBinding__ property can be used to show you whether a __TreeListView's__ row is expanded or not.
+* **ExpandHierarchyItem(object hierarchyItem)**: Expands the respective GridViewRow for the given item.
+* **CollapseHierarchyItem(object hierarchyItem)**: Collapses the respective GridViewRow for the given item.
+* **ExpandAllHierarchyItems()**: Expands all hierarchy items.
+* **CollapseAllHierarchyItems()**: Collapses all hierarchy items.
 
-Follow these steps to accomplish the task:
+All four methods can also be given an additional boolean parameter (preserveLocalSettings) which determines if the **IsExpandable** state of the item set via the **RowStyle** or **RowStyleSelector** properties should be preserved.
 
-1. For the purpose of this tutorial we will add a boolean property - __IsExpanded__ - to our __WarehouseItem__ collection:  
-	>Please, note that our __WarehouseItem__ class implements the __INotifyPropertyChanged__ interface.        
-
-#### __[C#] Example 1: Create WarehouseItem model__
-{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_0}}
-
-	public class WarehouseItem : INotifyPropertyChanged
+#### __[C#] Example 1: Expand the third item after the control is loaded__
+{{region radtreelsitview-how-to-control-expand-settings_0}}
+	private void TreeListView_Loaded(object sender, RoutedEventArgs e)
 	{
-		public event PropertyChangedEventHandler PropertyChanged;
+		TreeListView.ExpandHierarchyItem(TreeListView.Items[2], true);
+	}
+{{endregion}}
+
+## IsExpandedBinding and IsExpandableBinding
+
+The RadTreeListView also exposes the __IsExpandedBinding__ and __IsExpandableBinding__ properties which you can use to synchronize its expanded and expandable states with your viewmodel.
+
+>caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported and that is why we recommend using the [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
+
+### IsExpandedBinding
+
+__IsExpandedBinding__ property can be used to control whether a row is expanded or not.
+
+First start by adding a boolean property to your business items as demonstrated in **Example 1**. For the purposes of this article, we will extend the WarehouseItem class from the [Getting Started article]({%slug radtreeliestview-getting-started%}).
+
+#### __[C#] Example 2: Extend the WarehouseItem class__
+{{region cs-radtreelsitview-how-to-control-expand-settings_1}}
+	public class WarehouseItem : ViewModelBase
+	{
+		// other members
 
 		private bool isExpanded;
-		private string name;
-		private int count;
-
-		public WarehouseItem(string name, int count, bool isExpanded = true)
-		{
-			this.Name = name;
-			this.IsExpanded = isExpanded;           
-		}
-
-		public string Name
-		{
-			get
-			{
-				return this.name;
-			}
-			set
-			{
-				if (value != this.name)
-				{
-					this.name = value;
-					this.OnPropertyChanged("Name");
-				}
-			}
-		}
 
 		public bool IsExpanded
 		{
@@ -71,51 +66,17 @@ Follow these steps to accomplish the task:
 				}
 			}
 		}
-		protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-		{
-			PropertyChangedEventHandler handler = this.PropertyChanged;
-			if (handler != null)
-			{
-				handler(this, args);
-			}
-		}
-
-		private void OnPropertyChanged(string propertyName)
-		{
-			this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-		}
 	}
 {{endregion}}
 
+#### __[VB.NET] Example 2: Extend the WarehouseItem class__
+{{region vb-radtreelsitview-how-to-control-expand-settings_1}}
+	Public Class WarehouseItem		
+		Inherits ViewModelBase
 
-
-#### __[VB.NET] Example 1: Create WarehouseItem model__
-{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_1}}
-
-	Public Class WarehouseItem
-		Implements INotifyPropertyChanged
-		Public Event PropertyChanged As PropertyChangedEventHandler
+		' other members
 
 		Private m_isExpanded As Boolean
-		Private m_name As String
-		Private count As Integer
-
-		Public Sub New(name As String, count As Integer, Optional isExpanded As Boolean = True)
-			Me.Name = name
-			Me.IsExpanded = isExpanded
-		End Sub
-
-		Public Property Name() As String
-			Get
-				Return Me.m_name
-			End Get
-			Set(value As String)
-				If value <> Me.m_name Then
-					Me.m_name = value
-					Me.OnPropertyChanged("Name")
-				End If
-			End Set
-		End Property
 
 		Public Property IsExpanded() As Boolean
 			Get
@@ -128,21 +89,15 @@ Follow these steps to accomplish the task:
 				End If
 			End Set
 		End Property
-		Protected Overridable Sub OnPropertyChanged(args As PropertyChangedEventArgs)
-			Dim handler As PropertyChangedEventHandler = Me.PropertyChanged
-			RaiseEvent handler(Me, args)
-		End Sub
-
-		Private Sub OnPropertyChanged(propertyName As String)
-			Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
-		End Sub
 	End Class
 {{endregion}}
 
-2. Add __RadTreeListView__ as demonstrated in __Example 2__:
+>Note that the class inherits from the [ViewModelBase]({%slug common-viewmodelbase-class%}) class which implements the __INotifyPropertyChanged__ interface.
 
-#### __[XAML] Example 2: Declare RadTreeListView in XAML__
-{{region radtreelsitview-how-to-use-of-IsExpandedBinding_and_IsExpandableBinding_2}}
+Then define the __RadTreeListView__ control as demonstrated in __Example 2__.
+
+#### __[XAML] Example 3: Declare RadTreeListView in XAML__
+{{region radtreelsitview-how-to-control-expand-settings_2}}
 	<telerik:RadTreeListView x:Name="radTreeListView"
 								 IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}"
 								 AutoGenerateColumns="False">
@@ -158,16 +113,16 @@ Follow these steps to accomplish the task:
 		</telerik:RadTreeListView>
 {{endregion}}
 
-3. Here is a snapshot of the result:
+With this setup expanding or collapsing a row will result in the respective checkbox from the IsExpanded column to be updated.
 
-![Rad Tree List View radtreelistview how-to-isexpanded 01png](images/RadTreeListView_radtreelistview_how-to-isexpanded_01png.PNG)
+>tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](https://demos.telerik.com/wpf/){% endif %}.
 
->tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](https://demos.telerik.com/silverlight/#TreeListView/IsExpanded){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's IsExpanded demo](https://demos.telerik.com/wpf/){% endif %}.
-          
+### IsExpandableBinding
 
-## Use of IsExpandableBinding
+The use of __IsExpandableBinding__ is identical to that of the __IsExpandedBinding__ - you need to define a boolean property in your business class and bind it to the IsExpandableBinding property of the RadTreeListView control.
 
-The use of __IsExpandableBinding__ would be similar as shown for the __IsExpandedBinding__.
+>tip A complete example of using __RadTreeListView's IsExpandableBinding__ property is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](https://demos.telerik.com/wpf/){% endif %}.
 
->tip A complete example of using __RadTreeListView's IsExpandedBinding__ property is available in {% if site.site_name == 'Silverlight' %}[ this online demo](https://demos.telerik.com/silverlight/#TreeListView/OnDemandDataLoading){% endif %}{% if site.site_name == 'WPF' %}[the TreeListView's OnDemandDataLoading demo](https://demos.telerik.com/wpf/){% endif %}.
-          
+## See Also
+
+* [Expand All Rows]({%slug treelistview-expand-all-hierarchy%})

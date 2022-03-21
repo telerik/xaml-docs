@@ -10,34 +10,34 @@ position: 0
 
 # Start the Camera
 
-The RadWebCam control automatically connects to the first camera and recording device it finds. Then it selects the highest available resolution and starts the video.
+The `RadWebCam` control automatically connects to the first camera and recording device it finds. Then it selects the highest available resolution and starts the video.
 
 ## Disable Auto Start
 
-To disable the automatic start of the camera, set the __AutoStart__ property to __False__. The default value is **True**.
+To disable the automatic start of the camera, set the `AutoStart` property to `False`. The default value is `True`.
 
-#### __[XAML] Example 1: Disable auto start__
+#### __[XAML] Disable auto start__
 {{region radwebcam-radwebcam-features-initialize-camera-0}}
 	<telerik:RadWebCam AutoStart="False"/>
 {{endregion}}}
 
-To start the camera at a later moment in time, call the __Start__ method of RadWebCam.
+To start the camera at a later moment in time, call the `Start` method of RadWebCam.
 
-#### __[C#] Example 2: Starting the camera__
+#### __[C#] Starting the camera__
 {{region radwebcam-radwebcam-features-initialize-camera-1}}
 	this.radWebCam.Start();
 {{endregion}}
 
 ## Start Camera Manually
 
-To start the camera manually, select a camera device, video format and recording device, and then call the __Initialize__ method of RadWebCam. The following steps describe how to do this.
+To start the camera manually, select a camera device, video format and recording device, and then call the `Initialize` method of RadWebCam. The following steps describe how to do this.
 
-1. __Get the camera devices__ by calling the __RadWebCam.GetVideoCaptureDevices__ static method.
-2. __Get the video formats__ supported by the camera device by calling the __RadWebCam.GetVideoFormats__ static methods.
-3. __Initialize the camera__ control using the collected settings. To do this, call the __Initialize__ method of RadWebCam.
-4. __Start the webcam__ control by calling the __Start__ method.
+1. __Get the camera devices__ by calling the `RadWebCam.GetVideoCaptureDevices` static method.
+2. __Get the video formats__ supported by the camera device by calling the `RadWebCam.GetVideoFormats` static methods.
+3. __Initialize the camera__ control using the collected settings. To do this, call the Initialize method of RadWebCam.
+4. __Start the webcam__ control by calling the `Start` method.
 
-#### __[C#] Example 3: Starting the camera with manually set device and video format__
+#### __[C#] Starting the camera with manually set device and video format__
 {{region radwebcam-radwebcam-features-initialize-camera-2}}
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();            
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
@@ -45,9 +45,9 @@ To start the camera manually, select a camera device, video format and recording
 	this.radWebCam.Start();
 {{endregion}}
 
-Optionally, you can select a different recording device by passing a new device to the __Initialize__ method.
+Optionally, you can select a different recording device by passing a new device to the Initialize method.
 
-#### __[C#] Example 4: Starting the camera with manually set device, video format and audio format__
+#### __[C#] Starting the camera with manually set device, video format and audio format__
 {{region radwebcam-radwebcam-features-initialize-camera-3}}
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();            
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
@@ -56,7 +56,7 @@ Optionally, you can select a different recording device by passing a new device 
 	this.radWebCam.Start();
 {{endregion}}
 
-Passing an empty recording device (__null__) to the __Initialize__ method will disable the audio recording.
+Passing an empty recording device (`null`) to the `Initialize` method will disable the audio recording.
 
 >tip Read more about the capture devices in the [Media Information]({%slug radwebcam-features-media-information%}) article.
 
@@ -64,13 +64,18 @@ Passing an empty recording device (__null__) to the __Initialize__ method will d
 
 ## Stop the Camera
 
-To stop the camera manually call the __Stop__ method of RadWebCam. 
+To stop the camera manually call the `Stop` method of RadWebCam. 
 
-To disconnect from the camera, call the __ShutDown__ method.
+To disconnect from the camera, call the `ShutDown` method.
 
-#### __[C#] Example 5: Stopping the camera__
+#### __[C#] Stopping the camera__
 {{region radwebcam-radwebcam-features-initialize-camera-4}}
 	this.radWebCam.Stop();
+{{endregion}}
+	
+#### __[C#] Shutdown the camera__
+{{region radwebcam-radwebcam-features-initialize-camera-5}}
+	this.radWebCam.ShutDown();
 {{endregion}}
 
 ## See Also  

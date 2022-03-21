@@ -35,7 +35,7 @@ Following is a list of the form field types supported in **RadPdfViewer**:
 
 - **Signature**: Represents a placeholder which preserves the digital signature information.
 
-- **TexBox**: Represents a TextBox data container.
+- **TextBox**: Represents a TextBox data container.
 
 
 ## Working with Interactive Forms in Code-Behind

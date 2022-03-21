@@ -18,8 +18,8 @@ This article is divided into the following topics:
 * [SortMemberPath](#sortmemberpath)
 * [Disable Sorting](#disable-sorting)
 * [Events](#events)
-	* [Sorting](#events-Sorting)
-	* [Sorted](#events-Sorted)
+	* [Sorting](#sorting)
+	* [Sorted](#sorted)
 * [Style the Sorted Header](#style-the-sorted-header)
 
 ## Overview

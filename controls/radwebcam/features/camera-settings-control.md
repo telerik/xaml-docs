@@ -12,14 +12,15 @@ position: 7
 
 The RadWebCam component allows you to control the settings of the connected camera. You can do this using the settings dialog which opens when you press the [Open settings dialog]({%slug radwebcam-visual-structure%}) button.
 
-#### Figure 1: Settings dialog
+__Settings dialog__
+
 ![](images/radwebcam-features-camera-settings-control-0.png)
 
 >important The changes applied via the settings controls reflect the settings of the camera device. This means that when you close the application, the setting will still apply to the device.
 
-You can also use the __CameraSettingsControl__ as a stand alone element.
+You can also use the `CameraSettingsControl` as a stand alone element.
 
-#### __[XAML] Example 1: Using CameraSettingsControl__
+#### __[XAML] Using CameraSettingsControl__
 {{region radwebcam-features-camera-settings-control-0}}
 	<Grid>
 		<Grid.ColumnDefinitions>
@@ -30,6 +31,21 @@ You can also use the __CameraSettingsControl__ as a stand alone element.
 		<telerik:CameraSettingsControl WebCam="{Binding ElementName=radWebCam}" Grid.Column="1"/>
 	</Grid>
 {{endregion}}
+
+## Showing Audio Settings
+
+The `ShowAudioSettings` property allows you to control the addition of the Audio tab inside the settings dialog. Through the included tab you can control the microphone's settings.
+
+>important The Audio tab will automatically appear if a microphone is provided during the initialization of the camera.
+
+#### __[XAML] Adding the Audio Tab__
+{{region radwebcam-features-camera-settings-control-1}}
+	<telerik:CameraSettingsControl WebCam="{Binding ElementName=radWebCam}" ShowAudioSettings="True"/>
+{{endregion}}
+
+__Audio Tab__
+
+![](images/radwebcam-features-camera-settings-control-1.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

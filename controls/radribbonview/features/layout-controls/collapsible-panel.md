@@ -70,7 +70,7 @@ By default the RadCollapsiblePanel is using __3 rows__. To change this behavior,
 
 #### __[XAML] Example 2: Setting the number of rows__
 {{region radribbonview-collapsible-panel-1}}
-	<telerik:RadRibbonView RadCollapsiblePanel.SmallButtonsPerColumn="2"/>
+	<telerik:RadRibbonView telerik:RadCollapsiblePanel.SmallButtonsPerColumn="2"/>
 {{endregion}}
 
 #### Figure 2: Collapsible panel with 2 rows

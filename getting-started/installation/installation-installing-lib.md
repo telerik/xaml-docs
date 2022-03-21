@@ -29,11 +29,11 @@ The LIB is __available as a NuGet__ package. Read how to get it in the {% if sit
 Alternatively you can __download the LIB assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
 
 1. Open the Download page of your telerik.com account.
-2. Find the Telerik UI for WPF product and open its download page.
+2. Find the Telerik UI for {{ site.framework_name }} product and open its download page.
 
 	![](images/installation-installing-lib-0.png)
 	
-3. Click on the __Latest internal build button__. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
+3. Click on the __Latest Internal Build__ button. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
 	
 	![](images/installation-installing-lib-1.png)
 	

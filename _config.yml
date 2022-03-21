@@ -3822,7 +3822,7 @@ intro_columns:
 -
   categories:
   -
-    title: "Data Management"  
+    title: "Data Management"
     items:
       "CardView": "radcardview-overview"
       "CollectionNavigator": "collectionnavigator_overview"
@@ -3830,32 +3830,38 @@ intro_columns:
       "DataForm": "raddataform-overview"
       "DataPager": "datapager-overview"
       "DataServiceDataSource": "raddataservicedatasource-overview"
-      "EntityFrameworkDataSource": "entityframework-overview"
       "EntityFrameworkCoreDataSource": "entityframeworkcore-overview"
+      "EntityFrameworkDataSource": "entityframework-overview"
       "ExpressionEditor": "radexpressioneditor-overview"
       "GridView (DataGrid)": "gridview-overview2"
-      "VirtualGrid": "virtualgrid-overview"
       "ListBox": "radlistbox-overview"
+      "MultiColumnComboBox": "multicolumncombobox-overview"
       "PivotGrid": "radpivotgrid-overview"
       "PropertyGrid": "radpropertygrid-overview"
-      "TreeListView": "radtreelistview-overview"
-      "MultiColumnComboBox": "multicolumncombobox-overview"
       "TaskBoard": "radtaskboard-overview"
+      "TreeListView": "radtreelistview-overview"
+      "VirtualGrid": "virtualgrid-overview"
   -
-    title: "Scheduling"
+    title: "File Upload & Management"
     items:
-      "Calendar": "radcalendar-overview"
-      "DateTimePicker": "raddatetimepicker-overview"
-      "ScheduleView": "radscheduleview-overview"
-      "TimePicker": "radtimepicker-overview"
-      "TimeSpanPicker": "radtimespanpicker-overview"
+      "CloudUpload": "radcloudupload-overview"
+      "FileDialogs": "radfiledialogs-overview"
+      "FilePathPicker": "radfilepathpicker-overview"
+      "PdfProcessing": "radpdfprocessing-overview"
+      "PdfViewer": "radpdfviewer-overview"
+      "SpreadProcessing": "radspreadprocessing-overview"
+      "SpreadStreamProcessing":
+        isLink: true
+        value: "https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview"
+      "WordsProcessing": "radwordsprocessing-overview"
+      "ZipLibrary": "radziplibrary-overview"
 -
   categories:
   -
     title: "Data Visualization"
     items:
       "Barcode": "radbarcode-overview"
-      "BulletGraph": "radbulletgraph_overview"      
+      "BulletGraph": "radbulletgraph_overview"
       "ChartView": "radchartview-overview"
       "ChartView3D": "radchartview3d-overview"
       "DataBar": "raddatabar-overview"
@@ -3869,6 +3875,54 @@ intro_columns:
       "TimeBar": "radtimebar-overview"
       "Timeline": "radtimeline-overview"
       "TreeMap and PivotMap": "radtreemap-overview"
+  -
+    title: "Interactivity & UX"
+    items:
+      "Badge": "radbadge-overview"
+      "BusyIndicator": "radbusyindicator-overview"
+      "Callout": "radcallout-overview"
+      "Chat (Conversational UI)": "chat-overview"
+      "DesktopAlert": "raddesktopalert-overview"
+      "DragDropManager": "dragdropmanager-overview"
+      "PersistenceFramework": "persistence-framework-overview"
+      "ProgressBar": "radprogressbar-overview"
+      "StepProgressBar": "stepprogressbar-overview"
+      "ToolTip": "radtooltip-overview"
+      "TouchManager": "touchmanager-overview"
+-
+  categories:
+  -
+    title: "Navigation"
+    items:
+      "Breadcrumb": "radbreadcrumb-overvew"
+      "Buttons": "radbuttons-overview"
+      "ContextMenu": "contextmenu-overview1"
+      "Menu": "radmenu-overview"
+      "NavigationView (HamburgerMenu)": "radnavigationview-overview"
+      "NotifyIcon": "radnotifyicon-overview"
+      "OutlookBar": "radoutlookbar-overview"
+      "PanelBar": "radpanelbar-overview"
+      "RadialMenu": "radradialmenu-overview"
+      "RibbonView": "radribbonview-overview"
+      "SplashScreen": "radsplashscreen-overview"
+      "TabbedWindow": "radtabbedwindow-overview"
+      "TabControl": "radtabcontrol-overview2"
+      "ToolBar": "radtoolbar-overview"
+      "TreeView": "radtreeview-overview2"
+  -
+    title: "Layout"
+    items:
+      "Book": "radbook-visual-structure"
+      "Carousel": "carousel-overview"
+      "Docking": "raddocking-overview2"
+      "Expander": "radexpander-overview"
+      "FluidContentControl": "fluidcontentcontrol-overview"
+      "LayoutControl": "radlayoutcontrol-overview"
+      "TileList": "radtilelist-overview"
+      "TileView": "radtileview-overview"
+      "TransitionControl": "radtransition-overview"
+      "Window": "radwindow-overview"
+      "Wizard": "wizard-overview"
 -
   categories:
   -
@@ -3891,74 +3945,18 @@ intro_columns:
       "SyntaxEditor": "radsyntaxeditor-overview"
       "WatermarkTextBox": "radwatermarktextbox-overview"
   -
+    title: "Scheduling"
+    items:
+      "Calendar": "radcalendar-overview"
+      "DateTimePicker": "raddatetimepicker-overview"
+      "ScheduleView": "radscheduleview-overview"
+      "TimePicker": "radtimepicker-overview"
+      "TimeSpanPicker": "radtimespanpicker-overview"
+  -
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
       "WebCam": "radwebcam-overview"
--
-  categories:
-  -
-    title: "Navigation"
-    items:
-      "Breadcrumb": "radbreadcrumb-overvew"
-      "Buttons": "radbuttons-overview"
-      "ContextMenu": "contextmenu-overview1"
-      "Menu": "radmenu-overview"
-      "NavigationView (HamburgerMenu)": "radnavigationview-overview"
-      "NotifyIcon": "radnotifyicon-overview"
-      "OutlookBar": "radoutlookbar-overview"
-      "PanelBar": "radpanelbar-overview"
-      "RadialMenu": "radradialmenu-overview"
-      "RibbonView": "radribbonview-overview"
-      "SplashScreen": "radsplashscreen-overview"
-      "TabbedWindow": "radtabbedwindow-overview"
-      "TabControl": "radtabcontrol-overview2"
-      "ToolBar": "radtoolbar-overview"
-      "TreeView": "radtreeview-overview2"      
-  -
-    title: "Interactivity & UX"
-    items:
-      "Badge": "radbadge-overview"
-      "BusyIndicator": "radbusyindicator-overview"
-      "Chat (Conversational UI)": "chat-overview"
-      "Callout": "radcallout-overview"
-      "DesktopAlert": "raddesktopalert-overview"
-      "DragDropManager": "dragdropmanager-overview"
-      "PersistenceFramework": "persistence-framework-overview"
-      "ProgressBar": "radprogressbar-overview"
-      "StepProgressBar": "stepprogressbar-overview"
-      "ToolTip": "radtooltip-overview"
-      "TouchManager": "touchmanager-overview"
--
-  categories:
-  -
-    title: "File Upload & Management"
-    items:
-      "CloudUpload": "radcloudupload-overview"
-      "FileDialogs": "radfiledialogs-overview"
-      "FilePathPicker": "radfilepathpicker-overview"
-      "PdfProcessing": "radpdfprocessing-overview"
-      "PdfViewer": "radpdfviewer-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
-      "SpreadStreamProcessing":
-        isLink: true
-        value: "https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview"
-      "WordsProcessing": "radwordsprocessing-overview"
-      "ZipLibrary": "radziplibrary-overview"
-  -
-    title: "Layout"
-    items:
-      "Book": "radbook-visual-structure"
-      "Carousel": "carousel-overview"
-      "Docking": "raddocking-overview2"
-      "Expander": "radexpander-overview"
-      "FluidContentControl": "fluidcontentcontrol-overview"
-      "LayoutControl": "radlayoutcontrol-overview"
-      "TileList": "radtilelist-overview"
-      "TileView": "radtileview-overview"
-      "TransitionControl": "radtransition-overview"
-      "Window": "radwindow-overview"
-      "Wizard": "wizard-overview"
 
 sdk_examples: "sdk_wpf.json"
 sdk_repo_path: "https://github.com/telerik/xaml-sdk/tree/master/"

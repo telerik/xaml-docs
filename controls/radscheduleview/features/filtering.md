@@ -39,7 +39,11 @@ The following filter will exclude all appointments whose start date is not today
 #### [XAML] Example 2: Set a definition's AppointmentFilter property
 
 {{region xaml-radscheduleview-features-filtering-2}}
-	<telerik:WeekViewDefinition AppointmentFilter="{Binding AppointmentFilter}"/>
+	<telerik:RadScheduleView x:Name="scheduleView">
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:WeekViewDefinition AppointmentFilter="{Binding DataContext.AppointmentFilter, ElementName=scheduleView}"/>
+		</telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>	
 {{endregion}}
 
 ## OccurenceFilter
@@ -71,7 +75,11 @@ The filter demonstrated in **examples 3 and 4** will exclude all occurences whos
 #### [XAML] Example 4: Set a definition's AppointmentFilter property
 
 {{region xaml-radscheduleview-features-filtering-4}}
-	<telerik:DayViewDefinition OccurrenceFilter="{Binding OccurenceFilter}"/>
+	<telerik:RadScheduleView x:Name="scheduleView">
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:WeekViewDefinition OccurrenceFilter="{Binding DataContext.OccurenceFilter, ElementName=scheduleView}"/>
+		</telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
 {{endregion}}
 
 ## See Also

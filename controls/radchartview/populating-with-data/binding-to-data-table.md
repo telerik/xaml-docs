@@ -18,8 +18,8 @@ For the basis of this article we will declare a Bar Chart which is represented b
 {{region radchartview-populating-with-data-binding-to-data-table_0}}
 	<Grid>
 	    <Grid.RowDefinitions>
-	        <RowDefinition Height="7*"/>
-	        <RowDefinition Height="1*"/>
+	        <RowDefinition Height="7\*"/>
+	        <RowDefinition Height="1\*"/>
 	    </Grid.RowDefinitions>
 	    
 		<!--ChartView-->

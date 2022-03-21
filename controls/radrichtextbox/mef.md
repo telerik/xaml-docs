@@ -71,6 +71,7 @@ When __RadRichTextBox__ is loaded, the MEF checks all the assemblies, which the 
 
 You can define a new __TypeCatalog__ with the necessary types and pass it to the Catalog property of __RadCompositionInitializer__ on application start-up before the __RadRichTextBox__ is instantiated. In this scenario, the MEF will know exactly which types to load and won’t search for other ones. __Example 4__ shows the full __TypeCatalog__ for the control.
 
+>The code in the next snippet requires a reference to System.ComponentModel.Composition.dll.
 
 #### __[C#] Example 4: Create TypeCatalog__
 {{region radrichtextbox-mef_3}}
@@ -135,6 +136,59 @@ You can define a new __TypeCatalog__ with the necessary types and pass it to the
     typeof(PicturePropertiesDialog));
 {{endregion}}
 
+#### __[VB.NET] Example 4: Create TypeCatalog__
+{{region radrichtextbox-mef_3}}
+
+       UI.Extensibility.RadCompositionInitializer.Catalog = New ComponentModel.Composition.Hosting.TypeCatalog(
+            GetType(XamlFormatProvider),
+            GetType(RtfFormatProvider),
+            GetType(DocxFormatProvider),
+            GetType(PdfFormatProvider),
+            GetType(HtmlFormatProvider),
+            GetType(TxtFormatProvider),
+            GetType(SelectionMiniToolBar),
+            GetType(ImageMiniToolBar),
+            GetType(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
+            GetType(RadEn_USDictionary),
+            GetType(AddNewBibliographicSourceDialog),
+            GetType(ChangeEditingPermissionsDialog),
+            GetType(CodeFormattingDialog),
+            GetType(EditCustomDictionaryDialog),
+            GetType(FindReplaceDialog),
+            GetType(FloatingBlockPropertiesDialog),
+            GetType(FontPropertiesDialog),
+            GetType(ImageEditorDialog),
+            GetType(InsertCaptionDialog),
+            GetType(InsertCrossReferenceWindow),
+            GetType(InsertDateTimeDialog),
+            GetType(InsertTableDialog),
+            GetType(InsertTableOfContentsDialog),
+            GetType(ManageBibliographicSourcesDialog),
+            GetType(ManageBookmarksDialog),
+            GetType(ManageStylesDialog),
+            GetType(NotesDialog),
+            GetType(ProtectDocumentDialog),
+            GetType(RadInsertHyperlinkDialog),
+            GetType(RadInsertSymbolDialog),
+            GetType(RadParagraphPropertiesDialog),
+            GetType(SectionColumnsDialog),
+            GetType(SetNumberingValueDialog),
+            GetType(SpellCheckingDialog),
+            GetType(StyleFormattingPropertiesDialog),
+            GetType(TableBordersDialog),
+            GetType(TablePropertiesDialog),
+            GetType(TabStopsPropertiesDialog),
+            GetType(UnprotectDocumentDialog),
+            GetType(WatermarkSettingsDialog),
+            GetType(PasteOptionsPopup),
+            GetType(CheckBoxPropertiesDialog),
+            GetType(DatePickerPropertiesDialog),
+            GetType(DropDownListPropertiesDialog),
+            GetType(PlainTextPropertiesDialog),
+            GetType(RichTextPropertiesDialog),
+            GetType(RepeatingSectionPropertiesDialog),
+            GetType(PicturePropertiesDialog))
+{{endregion}}
 You could remove all the types you won’t need in your application.
 
 >important The type catalog you set is going to be used from all instances of __RadRichTextBox__ in the application.

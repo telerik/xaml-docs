@@ -5,7 +5,7 @@ description: This article lists the main properties exposed by the RadDesktopAle
 slug: raddesktopalert-features-key-properties
 tags: properties,features,key,properties
 published: True
-position: 3
+position: 4
 ---
 
 # Key Properties

@@ -5,7 +5,7 @@ description: Check our &quot;Visual Structure&quot; documentation article for th
 slug: raddesktopalert-visual-structure
 tags: visual,structure
 published: True
-position: 2
+position: 3
 ---
 
 # Visual Structure

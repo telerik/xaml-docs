@@ -5,7 +5,7 @@ description: Check our &quot;Sound&quot; documentation article for the RadDeskto
 slug: raddesktopalert-sound
 tags: play, sound
 published: True
-position: 10
+position: 9
 ---
 
 # Sound

@@ -25,7 +25,9 @@ res_type: kb
 
 ## Description
 
-The `RadToolBar` control has predefined styles for the most commonly used controls as its content, however, it does not provide a style for the `RadComboBox` control. This article provides an example on how to set a style for the RadComboBox element, which is defined inside a RadToolBar element.
+The `RadToolBar` control has predefined styles for the most commonly used controls as its content. A list of these controls can be found in the [Styling RadToolBar article]({%slug radtoolbar-style-selector%}).
+
+However, you may want to use a control which is not styled out of the box, such as the `RadComboBox` control, for example. This article provides an example on how to set a style for the RadComboBox element, which is defined inside a RadToolBar element.
 
 ## Solution
 
@@ -87,3 +89,7 @@ Finally, set the created `Style` to the `ContainerStyle` property of the newly i
 	    <telerik:ToolBarContainerStyle TypeName="RadComboBox" ContainerStyle="{StaticResource ToolBarRadComboBoxStyle}" />
 	</telerik:ToolBarContainerStyleSelector>
 {{endregion}}
+
+## See Also
+
+* [Styling RadToolBar]({%slug radtoolbar-style-selector%})

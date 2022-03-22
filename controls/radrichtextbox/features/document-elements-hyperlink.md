@@ -156,6 +156,21 @@ By default, hyperlinks take a fixed string as a tool tip. The default format sho
 You have control over it using the __HyperlinkToolTipFormatString__ property of RadRichTextBox, which will set the format for all hyperlinks in the document.
         
 
+### __HyperlinkNavigationMode__
+
+This property allows you to control what action should trigger the opening of a hyperlink. The possible options are:
+
+- **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
+- **CtrlClick**: Triggers the hyperlink when users click on the hyperlink.
+
+
+#### [C#] Example 6: Change the default hyperlink navigation mode
+
+ {{region radrichtextbox-features-document-elements-hyperlink_6}}
+
+	this.radRichTextBox.HyperlinkNavigationMode = Telerik.Windows.Documents.UI.HyperlinkNavigationMode.Click;
+{{endregion}}
+
 ### __HyperlinkClicked__
 
 When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextBox__ is fired. The sender of the event is the document element, which the user has clicked on, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
@@ -170,7 +185,7 @@ By default, when the users insert a hyperlink in RadRichTextBox, it is styled wi
 
 >For more information about the styles in RadRichTextBox, check the [Styles]({%slug radrichtextbox-features-styles%}) topic.
 
-#### [C#] Example 6: Change the default hyperlink style
+#### [C#] Example 7: Change the default hyperlink style
 
 {{region radrichtextbox-features-document-elements-hyperlink_4}}
 	

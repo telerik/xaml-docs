@@ -34,6 +34,8 @@ The WordTaggerBase class exposes the following virtual methods:
 * **bool TryGetClassificationType(string word, out ClassificationType classificationType)**: Tries to get the classification type for the given string word.
 * **Dictionary&lt;string, ClassificationType> GetWordsToClassificationTypes()**: Gets a dictionary which assigns a classification type to a given word.
 * **IList&lt;string> SplitIntoWords(string value)**: Splits the current line into a collection of words. These processed words are then assigned proper classification types in the **GetTags** method.
+* **int GetCharType(char character)**: Defines the different char types which are used when splitting words. A word is considered a sequence of chars with the same type. By default, the types are as follows: 1 - whitespace, 2 - punctuation or symbol, 0 - letters and all other characters.
+* **void OnWordSplit(int wordCharType, string word)**: Called when a word is split during the processing of a line string. You can use this method to assign a classification type to the split word, for example.
 
 By inheriting the WordTaggerBase class you can create a tagger for your own custom language and specify custom words to be assigned to the list of available classification types. You can also define your own classification types if the default ones are not sufficient for you.
 

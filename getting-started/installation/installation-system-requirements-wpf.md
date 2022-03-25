@@ -17,6 +17,7 @@ The following topic describes the system requirements needed by Telerik UI for W
 
 Telerik UI for WPF can be installed on any operating system that supports .NET 4 and above. The following list shows some of the supported OS. 
 
+* Windows 11
 * Windows 10
 * Windows 8, 8.1
 * Windows 7
@@ -31,7 +32,8 @@ You can find a complete list with the Operating Systems supported by .NET in the
 * [.NET 4.5 to 4.8 supported operating systems](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
 * [.NET Core supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md)
 * [.NET 5 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
-* [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md)
+* [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md)
+* [.NET 7 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md)
 
 ## Development Environment
 
@@ -50,6 +52,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 	* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 	* [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
 	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+	* [.NET 7](https://dotnet.microsoft.com/download/dotnet/7.0)
           
 * __Microsoft Expression Blend__ (optional)
           

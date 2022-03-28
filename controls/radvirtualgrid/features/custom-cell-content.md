@@ -46,8 +46,6 @@ Here's an example of how you can display an image for one of the columns.
 {{endregion}}
 
 ![Display image as the content of the cells](images/radvirtualgrid-features-custom-cell-content-1.png)
-
->The first DataTemplate that is passed for a given cell will be cached and used from that point on. 
 	
 ## See Also
 

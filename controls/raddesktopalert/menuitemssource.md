@@ -5,7 +5,7 @@ description: Check our &quot;MenuItemsSource&quot; documentation article for the
 slug: raddesktopalert-menuitemssource 
 tags: menu,items,source,menuitemssource 
 published: True
-position: 11
+position: 10
 ---
 
 # MenuItemsSource 

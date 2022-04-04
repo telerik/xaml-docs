@@ -121,7 +121,7 @@ article table
 
 # Green Theme
 
-The official Q1 2016 release of __UI for WPF__ brought a brand new __Green__ theme with two color variations – __Light__ and __Dark__.
+The official Q1 2016 release of __UI for WPF__ brought a brand new `Green Theme` with two color variations – `Light` and `Dark`.
 
 The following topic explains the specifics of the theme's color variations.
 
@@ -137,7 +137,7 @@ The following topic explains the specifics of the theme's color variations.
 
 There are two palettes of colors which can be easily set by choosing one of the two default color variations:
 
-#### __[C#] Example 1: The ColorVariation enumeration that determines which color variation should be used__
+#### __[C#] The ColorVariation enumeration that determines which color variation should be used__
 {{region styling-appearance-green-theme-18}}
 	/// <summary>
 	/// Represents theme color variations.
@@ -156,18 +156,17 @@ There are two palettes of colors which can be easily set by choosing one of the 
 	}
 {{endregion}}
 
->The Dark variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
+>The `Dark` color variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it. 
 
-The next screenshot displays RadCalendar in its Light and Dark color variations:  
+__Light and Dark color variations demonstrated with RadCalendar__
 
-#### __Figure 1: Light and Dark color variations demonstrated with RadCalendar__
 ![Green Theme Image 01](../images/Common_Styling_Appearance_Green_Theme_01.png)
 
 ## Theme Variation Changing
 
-You can switch between the color palettes by calling the __LoadPreset__ method as shown below:
+You can switch between the color palettes by calling the `LoadPreset` method as shown below:
 
-#### __[C#] Example 2: Changing the color variantion of the theme__
+#### __[C#] Changing the color variantion of the theme__
 {{region styling-appearance-green-theme-0}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);	
@@ -176,7 +175,7 @@ You can switch between the color palettes by calling the __LoadPreset__ method a
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
 {{endregion}}
 	
-#### __[VB.NET] Example 2: Changing the color variantion of the theme__
+#### __[VB.NET] Changing the color variantion of the theme__
 {{region styling-appearance-green-theme-1}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
@@ -211,57 +210,56 @@ Below you can find the differences between the two color variations. Every brush
 | HighBrush | #FFECECEC | <div class="theme-palette-color green-highbrush-ligth"></div> | #FF131313 | <div class="theme-palette-color green-highbrush-dark"></div> |
 | ComplementaryBrush | #FFCACACA | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF444446 | <div class="theme-palette-color green-strongbrush-dark"></div> |
 
->The __ReadOnlyBackgroundBrush__ is available with version 2016.1.125.
-
 ## Theme Palette Brushes Description
 
 Below you can find more details about each brush and where it is usually applied.
 
 The first three colors have the same value in both color variations and are commonly used among all controls: 
-* __StrongBrush__ is gray by default and it is mainly used for filling paths in elements when they are in Normal state.
-* __ValidatonBrush__ is red by default and it is used for validation where such is applicable in our controls.
-* __FixedBrush__ is white by default and it is the main color for text or paths which are over elements with validation background.
+* `StrongBrush`&mdash;Gray by default and it is mainly used for filling paths in elements when they are in Normal state.
+* `ValidatonBrush`&mdash;Red by default and it is used for validation where such is applicable in our controls.
+* `FixedBrush`&mdash;White by default and it is the main color for text or paths which are over elements with validation background.
 
 The colors that have different HEX value can be ordered by purpose.
 
 First, we use four accent brushes which are green by default:
-* __AccentHighBrush__
-* __AccentLowBrush__
-* __SemiAccentLowBrush__: A Brush which has the same value as AccentLowBrush but with 35% alpha opacity.
-* __MouseOverBrush__: A Brush used as a background or border brush of controls or elements when they are in MouseOver state.
+* `AccentHighBrush`
+* `AccentLowBrush`
+* `SemiAccentLowBrush`&mdash;A Brush which has the same value as AccentLowBrush but with 35% alpha opacity.
+* `MouseOverBrush`&mdash;A Brush used as a background or border brush of controls or elements when they are in MouseOver state.
 
 The default brush used as foreground color is:
-* __MarkerBrush__
+* `MarkerBrush`
 
 Brush used for paths’ fill in elements that are in MouseOver, Pressed or Selected state:
-* __SelectedBrush__
+* `SelectedBrush`
 
 There are several brushes usually used as background color:
-* __MainBrush__: A Brush used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
-* __PrimaryBrush__: A Brush used as a background of controls when in their Normal state, excluding controls with direct input.
-* __AlternativeBrush__: A Brush used as an alternative background – i.e. for popups or where we want to distinguish one element from another.
-* __HighBrush__: A Brush rarely used as a background. For example, in RadMenu and RadTimeline.
-* __ComplementaryBrush__: A Brush very rarely used as a background. For example, in RadRadialMenu and RadScheduleView.
-* __ReadOnlyBackgroundBrush__ (available with 2016.1.125): A Brush used as a background brush of controls in their ReadOnly state. Its default value is Transparent.
+* `MainBrush`&mdash;A Brush used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
+* `PrimaryBrush`&mdash;A Brush used as a background of controls when in their Normal state, excluding controls with direct input.
+* `AlternativeBrush`&mdash;A Brush used as an alternative background – i.e. for popups or where we want to distinguish one element from another.
+* `HighBrush`&mdash;A Brush rarely used as a background. For example, in RadMenu and RadTimeline.
+* `ComplementaryBrush`&mdash;A Brush very rarely used as a background. For example, in RadRadialMenu and RadScheduleView.
+* `ReadOnlyBackgroundBrush`&mdash;A Brush used as a background brush of controls in their ReadOnly state. Its default value is Transparent.
 
 There are two brushes usually used as border brush:
-* __BasicBrush__: A Brush used as a border brush of controls in their Normal state.
-* __LowBrush__: A Brush used as a border brush of controls in their ReadOnly state.
+* `BasicBrush`&mdash;A Brush used as a border brush of controls in their Normal state.
+* `LowBrush`&mdash;A Brush used as a border brush of controls in their ReadOnly state.
 
-#### __Figure 2: The theme brushes demonstration__
+__The theme brushes demonstration__
+
 ![Green Theme Image 02](../images/Common_Styling_Appearance_Green_Theme_02.png)
 
 ## Changing Fonts 
 
-When using the Green theme you can dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013 and VisualStudio2013 themes.
+When using the `Green Theme` you can dynamically change the `FontSize` and `FontFamily_` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013 and VisualStudio2013 themes.
 
-The FontSize and FontFamily properties are public so you can easily modify the theme resources at one single point. The most commonly used font size in the theme is named __FontSize__ and its default value is __12__. Bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as RadRibbonView, RadGauge, RadGanttView, etc. As for the __FontFamily__ resource - its default value is __Segoe UI__.
+The FontSize and FontFamily properties are public so you can easily modify the theme resources at one single point. The most commonly used font size in the theme is named FontSize and its default value is __12__. Bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily resource - its default value is `Segoe UI`.
 
 > Please note that for complex scenarios we strongly recommend setting the FontSize property only initially before the application is initialized. Also, we recommend values between 11px and 19px for it.
 
-All available __FontSizes and FontFamily__ as well as their default values are:
+All available FontSizes and FontFamily as well as their default values are:
 
-#### __[C#] Example 2: Default FontFamily and FontSize values__
+#### __[C#] Default FontFamily and FontSize values__
 {{region styling-appearance-green-theme-2}}
 	GreenPalette.Palette.FontSizeXS = 10;
 	GreenPalette.Palette.FontSizeS = 11; 
@@ -271,7 +269,7 @@ All available __FontSizes and FontFamily__ as well as their default values are:
 	GreenPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 {{endregion}}
 	
-#### __[VB.NET] Example 2: Default FontFamily and FontSize values__
+#### __[VB.NET] Default FontFamily and FontSize values__
 {{region styling-appearance-green-theme-3}}
 	GreenPalette.Palette.FontSizeXS = 10
 	GreenPalette.Palette.FontSizeS = 11
@@ -282,13 +280,13 @@ All available __FontSizes and FontFamily__ as well as their default values are:
 {{endregion}}
 
 More details regarding the rarely used font sizes can be found below:  
-* GreenPalette.Palette.FontSizeXS is used in: 
+* `GreenPalette.Palette.FontSizeXS` is used in: 
 
 	* TimeBar's SelectionRangeStyle in Telerik.Windows.Controls.DataVisualization
 	* Map’s Scale and MouseLocationIndicator in Telerik.Windows.Controls.DataVisualization
 	* AggregateResultsList, GridViewHeaderCell and GridViewGroupPanel in Telerik.Windows.Controls.GridView
 	
-* GreenPalette.Palette.FontSizeS is used in: 
+* `GreenPalette.Palette.FontSizeS` is used in: 
 
 	* ChartBaseStyle and TrackBallInfoControlStyle in Telerik.Windows.Controls.Chart.xaml
 	* HorizontalBulletGraphStyle and VerticalBullerGraphStyle in Telerik.Windows.Controls.DataVisualization	
@@ -298,18 +296,18 @@ More details regarding the rarely used font sizes can be found below:
 	* ScheduleView TimeRulerItems' styles in Telerik.Windows.Controls.ScheduleView
 	* DiagramRulerStyle in Telerik.Windows.Controls.Diagrams.Extensions.xaml
 	
-* GreenPalette.Palette.FontSizeL is used in: 
+* `GreenPalette.Palette.FontSizeL` is used in: 
 
 	* GanttView's GanttDragResizeVisualCueTemplate in Telerik.Windows.Controls.GanntView 
 	* ScheduleView TimeRulerGroupItems' and TimeRulerMonthViewGroupItem’s styles in Telerik.Windows.Controls.ScheduleView 
 	
-* GreenPalette.Palette.FontSizeXL is used in: 
+* `GreenPalette.Palette.FontSizeXL` is used in: 
 
 	* ScheduleView TimeRulerMonthViewItem’s styles in Telerik.Windows.Controls.ScheduleView 
 
-As the following example shows, you can change the default __FontFamily__ from "Segoe UI" to "Comic Sans MS" and the __FontSize__ from 12 to 14 on a click of a button:
+As the following example shows, you can change the default FontFamily from "Segoe UI" to "Comic Sans MS" and the FontSize from __12__ to __14__ on a click of a button:
 
-#### __[XAML] Example 3: The view of the example__
+#### __[XAML] The view of the example__
 {{region styling-appearance-green-theme-4}}
 	<StackPanel> 
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/> 
@@ -320,7 +318,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 	</StackPanel>
 {{endregion}}
 
-#### __[C#] Example 4: Changing the FontSize and the FontFamily__
+#### __[C#] Changing the FontSize and the FontFamily__
 {{region styling-appearance-green-theme-5}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -329,7 +327,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: Changing the FontSize and the FontFamily__	
+#### __[VB.NET] Changing the FontSize and the FontFamily__	
 {{region styling-appearance-green-theme-6}}
 	Private Sub OnButtonChangeFontSizeClick(sender As Object, e As RoutedEventArgs)
 		GreenPalette.Palette.FontSize = 14
@@ -337,14 +335,15 @@ As the following example shows, you can change the default __FontFamily__ from "
 	End Sub
 {{endregion}}
 
-#### __Figure 3: Change in theme fonts__
+__Change in theme fonts__
+
 ![Green Theme Image 03](../images/Common_Styling_Appearance_Green_Theme_03.png)
 	
 ## Changing CornerRadius 
 
 A new feature of the Green theme is exposing an easy way to modify the corner radius of many elements in your application. You can use the five new palette properties with default values as shown below:
 
-#### __[C#] Example 5: Default CornerRadius values__	
+#### __[C#] Default CornerRadius values__	
 {{region styling-appearance-green-theme-7}}
 	GreenPalette.Palette.CornerRadius = new CornerRadius(1, 1, 1, 1);
 	GreenPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 1, 1);
@@ -353,7 +352,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 	GreenPalette.Palette.CornerRadiusTop = new CornerRadius(1, 1, 0, 0);
 {{endregion}}
 
-#### __[VB.NET] Example 5: Default CornerRadius values__	
+#### __[VB.NET] Default CornerRadius values__	
 {{region styling-appearance-green-theme-8}}
 	GreenPalette.Palette.CornerRadius = New CornerRadius(1, 1, 1, 1)
 	GreenPalette.Palette.CornerRadiusBottom = New CornerRadius(0, 0, 1, 1)
@@ -362,9 +361,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 	GreenPalette.Palette.CornerRadiusTop = New CornerRadius(1, 1, 0, 0)
 {{endregion}}
 
-As the following example shows, you can change the default __CornerRadius__ from 1 to 5 on a click of a button:
-
-#### __[XAML] Example 6: The view of the example__	
+#### __[XAML] The view of the example__	
 {{region styling-appearance-green-theme-9}}
 	<StackPanel>
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
@@ -376,7 +373,7 @@ As the following example shows, you can change the default __CornerRadius__ from
 	</StackPanel>
 {{endregion}}
 
-#### __[C#] Example 7: Changing the CornerRadius__	
+#### __[C#] Changing the CornerRadius__	
 {{region styling-appearance-green-theme-10}}
 	public MainWindow()
 	{
@@ -399,7 +396,7 @@ As the following example shows, you can change the default __CornerRadius__ from
 	}
 {{endregion}}
 	
-#### __[VB.NET] Example 7: Changing the CornerRadius__	
+#### __[VB.NET] Changing the CornerRadius__	
 {{region styling-appearance-green-theme-11}}
 	Public Sub New()
 		InitializeComponent()
@@ -419,34 +416,36 @@ As the following example shows, you can change the default __CornerRadius__ from
 	End Sub
 {{endregion}}
 
-#### __Figure 4: Changes in corner radius__	
+__Changes in corner radius__	
+
 ![Green Theme Image 04](../images/Common_Styling_Appearance_Green_Theme_04.png)
 
 ## Changing Opacity 
 
-If you need to change the opacity of disabled elements, you can now easily do it by using the __DisabledOpacity__ property of GreenPalette as follows: 
+If you need to change the opacity of disabled elements, you can now easily do it by using the `DisabledOpacity` property of GreenPalette as follows: 
 
-#### __[XAML]:Example 8: The view of the opacity__	
+#### __[XAML] The view of the opacity__	
 {{region styling-appearance-green-theme-12}}
 	<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10" IsEnabled="False"/>
 {{endregion}}
 
-#### __[C#] Example 9: Changing the DisabledOpacity__	
+#### __[C#] Changing the DisabledOpacity__	
 {{region styling-appearance-green-theme-13}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 9: Changing the DisabledOpacity__	
+#### __[VB.NET] Changing the DisabledOpacity__	
 {{region styling-appearance-green-theme-14}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
 {{endregion}}
 	
-#### __Figure 5: Changes in the disabled elements opacity__
+__Changes in the disabled elements opacity__
+
 ![Green Theme Image 05](../images/Common_Styling_Appearance_Green_Theme_05.png)
 	
-The same is applicable for the ReadOnly state of controls by using the exposed __ReadOnlyOpacity__ property of GreenPalette. The default values are 0.2 for the __DisabledOpacity__ and 1 for the __ReadOnlyOpacity__ property. 
+The same is applicable for the ReadOnly state of controls by using the exposed `ReadOnlyOpacity` property of GreenPalette. The default values are __0.2__ for the `DisabledOpacity` and __1__ for the `ReadOnlyOpacity` property. 
 
-#### __[XAML] Example 10: The view of the example__		
+#### __[XAML] The view of the example__		
 {{region styling-appearance-green-theme-15}}
 	<StackPanel Width="200" HorizontalAlignment="Center">
 		<TextBox Text="TextBox" Margin="5" />
@@ -455,20 +454,36 @@ The same is applicable for the ReadOnly state of controls by using the exposed _
 	</StackPanel>
 {{endregion}}
 
-#### __[C#] Example 11: Changing the opacity__		
+#### __[C#] Changing the opacity__		
 {{region styling-appearance-green-theme-16}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 11: Changing the opacity__		
+#### __[VB.NET] Changing the opacity__		
 {{region styling-appearance-green-theme-17}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
 
-#### __Figure 6: Changes in the readonly elements opacity__
+__Changes in the readonly elements opacity__
+
 ![Green Theme Image 06](../images/Common_Styling_Appearance_Green_Theme_06.png)	
+
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `GreenPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+
+#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
+{{region styling-appearance-green-theme-18}}
+	<Application.Resources> 
+	    <ResourceDictionary> 
+	        <ResourceDictionary.MergedDictionaries> 
+	            <telerik:GreenResourceDictionary/> 
+	        </ResourceDictionary.MergedDictionaries> 
+	    </ResourceDictionary> 
+	</Application.Resources>
+{{endregion}}
 
 ## See Also
 * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

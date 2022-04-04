@@ -212,93 +212,94 @@ article table
 
 # Crystal Theme
 
-With the **R3 2018** release of the **UI for WPF** suite we have introduced the brand new **Crystal theme**. Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
+With the __R3 2018__ release of the __UI for WPF__ suite we have introduced the brand new `Crystal theme`. Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
 
 ## Default Theme Colors
 
-The **Crystal Theme** is designed to be easily modified via the exposed colors in the theme palette.
+The `Crystal Theme` is designed to be easily modified via the exposed colors in the theme palette.
 
-The default values of the brushes in the theme are listed below. Please note that as the theme uses a number of gradients, most of the colors have a **low** and **high** value which indicates the colors at both stops of the gradient.
+The default values of the brushes in the theme are listed below. Please note that as the theme uses a number of gradients, most of the colors have a __low__ and __high__ value which indicates the colors at both stops of the gradient.
 
 |Color name|Light||Dark||
 |----------|-----------|---|-----------|---|
-|**AccentHighColor**|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor"></div>|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor-dark"></div>|
-|**AccentLowColor**|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor"></div>|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor-dark"></div>|
-|**AccentMouseOverHighColor**|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor"></div>|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor-dark"></div>|
-|**AccentMouseOverLowColor**|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor"></div>|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor-dark"></div>|
-|**AccentPressedColor**|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor"></div>|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor-dark"></div>|
-|**AccentFocusedColor**|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor"></div>|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor-dark"></div>|
-|**AccentSelectedColor**|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor"></div>|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor-dark"></div>|
-|**BasicHighColor**|#FFCCCCCC|<div class="theme-palette-color crystaltheme-basichighcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-basichighcolor-dark"></div>|
-|**BasicLowColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-basiclowcolor"></div>|#FF4F4F4F|<div class="theme-palette-color crystaltheme-basiclowcolor-dark"></div>|
-|**AccentBasicHighColor**|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor"></div>|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor-dark"></div>|
-|**AccentBasicLowColor**|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor"></div>|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor-dark"></div>|
-|**IconColor**|#FF505050|<div class="theme-palette-color crystaltheme-iconcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-iconcolor-dark"></div>|
-|**MainHighColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-mainhighcolor"></div>|#FF686868|<div class="theme-palette-color crystaltheme-mainhighcolor-dark"></div>|
-|**MainLowColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mainlowcolor"></div>|#FF5F5F5F|<div class="theme-palette-color crystaltheme-mainlowcolor-dark"></div>|
-|**MarkerColor**|#FF020202|<div class="theme-palette-color crystaltheme-markercolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markercolor-dark"></div>|
-|**ValidationColor**|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor"></div>|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor-dark"></div>|
-|**ComplementaryColor**|#FFDEDEDE|<div class="theme-palette-color crystaltheme-complementarycolor"></div>|#FF252525|<div class="theme-palette-color crystaltheme-complementarycolor-dark"></div>|
-|**ComplementaryBasicHighColor**|#FFADADAD|<div class="theme-palette-color crystaltheme-complementarybasichighcolor"></div>|#FF646464|<div class="theme-palette-color crystaltheme-complementarybasichighcolor-dark"></div>|
-|**ComplementaryBasicLowColor**|#FF8D8D8D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor-dark"></div>|
-|**MouseOverHighColor**|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mouseoverhighcolor"></div>|#FF898989|<div class="theme-palette-color crystaltheme-mouseoverhighcolor-dark"></div>|
-|**MouseOverLowColor**|#FFEEEEEE|<div class="theme-palette-color crystaltheme-mouseoverlowcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-mouseoverlowcolor-dark"></div>|
-|**PressedHighColor**|#FFDCDCDC|<div class="theme-palette-color crystaltheme-pressedhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-pressedhighcolor-dark"></div>|
-|**PressedLowColor**|#FFCDCDCD|<div class="theme-palette-color crystaltheme-pressedlowcolor"></div>|#FF4B4B4B|<div class="theme-palette-color crystaltheme-pressedlowcolor-dark"></div>|
-|**AlternativeColor**|#FFEAEAEA|<div class="theme-palette-color crystaltheme-alternativecolor"></div>|#FF3A3A3A|<div class="theme-palette-color crystaltheme-alternativecolor-dark"></div>|
-|**AlternativeBasicColor**|#FFD3D3D3|<div class="theme-palette-color crystaltheme-alternativebasiccolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-alternativebasiccolor-dark"></div>|
-|**MarkerInvertedColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor-dark"></div>|
-|**PrimaryBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-primarybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-primarybackgroundcolor-dark"></div>|
-|**HeaderHighColor**|#FFE8E6E6|<div class="theme-palette-color crystaltheme-headerhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-headerhighcolor-dark"></div>|
-|**HeaderLowColor**|#FFD4D0D0|<div class="theme-palette-color crystaltheme-headerlowcolor"></div>|#FF494949|<div class="theme-palette-color crystaltheme-headerlowcolor-dark"></div>|
-|**ReadOnlyBackgroundColor**|#FFFFFFFF|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor-dark"></div>|
-|**ReadOnlyBorderColor**|#FFA4A3A4|<div class="theme-palette-color crystaltheme-readonlybordercolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-readonlybordercolor-dark"></div>|
+|AccentHighColor|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor"></div>|#FF56A9FD|<div class="theme-palette-color crystaltheme-accenthighcolor-dark"></div>|
+|AccentLowColor|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor"></div>|#FF087EFF|<div class="theme-palette-color crystaltheme-accentlowcolor-dark"></div>|
+|AccentMouseOverHighColor|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor"></div>|#FF2590FB|<div class="theme-palette-color crystaltheme-accentmouseoverhighcolor-dark"></div>|
+|AccentMouseOverLowColor|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor"></div>|#FF0072EE|<div class="theme-palette-color crystaltheme-accentmouseoverlowcolor-dark"></div>|
+|AccentPressedColor|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor"></div>|#FF0060CF|<div class="theme-palette-color crystaltheme-accentpressedcolor-dark"></div>|
+|AccentFocusedColor|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor"></div>|#FF7CB7F9|<div class="theme-palette-color crystaltheme-accentfocusedcolor-dark"></div>|
+|AccentSelectedColor|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor"></div>|#FF1C83FF|<div class="theme-palette-color crystaltheme-accentselectedcolor-dark"></div>|
+|BasicHighColor|#FFCCCCCC|<div class="theme-palette-color crystaltheme-basichighcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-basichighcolor-dark"></div>|
+|BasicLowColor|#FFA4A3A4|<div class="theme-palette-color crystaltheme-basiclowcolor"></div>|#FF4F4F4F|<div class="theme-palette-color crystaltheme-basiclowcolor-dark"></div>|
+|AccentBasicHighColor|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor"></div>|#FF2390FD|<div class="theme-palette-color crystaltheme-accentbasichighcolor-dark"></div>|
+|AccentBasicLowColor|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor"></div>|#FF0052E6|<div class="theme-palette-color crystaltheme-accentbasiclowcolor-dark"></div>|
+|IconColor|#FF505050|<div class="theme-palette-color crystaltheme-iconcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-iconcolor-dark"></div>|
+|MainHighColor|#FFFFFFFF|<div class="theme-palette-color crystaltheme-mainhighcolor"></div>|#FF686868|<div class="theme-palette-color crystaltheme-mainhighcolor-dark"></div>|
+|MainLowColor|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mainlowcolor"></div>|#FF5F5F5F|<div class="theme-palette-color crystaltheme-mainlowcolor-dark"></div>|
+|MarkerColor|#FF020202|<div class="theme-palette-color crystaltheme-markercolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markercolor-dark"></div>|
+|ValidationColor|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor"></div>|#FFD40012|<div class="theme-palette-color crystaltheme-validationcolor-dark"></div>|
+|ComplementaryColor|#FFDEDEDE|<div class="theme-palette-color crystaltheme-complementarycolor"></div>|#FF252525|<div class="theme-palette-color crystaltheme-complementarycolor-dark"></div>|
+|ComplementaryBasicHighColor|#FFADADAD|<div class="theme-palette-color crystaltheme-complementarybasichighcolor"></div>|#FF646464|<div class="theme-palette-color crystaltheme-complementarybasichighcolor-dark"></div>|
+|ComplementaryBasicLowColor|#FF8D8D8D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-complementarybasiclowcolor-dark"></div>|
+|MouseOverHighColor|#FFF3F3F3|<div class="theme-palette-color crystaltheme-mouseoverhighcolor"></div>|#FF898989|<div class="theme-palette-color crystaltheme-mouseoverhighcolor-dark"></div>|
+|MouseOverLowColor|#FFEEEEEE|<div class="theme-palette-color crystaltheme-mouseoverlowcolor"></div>|#FF818181|<div class="theme-palette-color crystaltheme-mouseoverlowcolor-dark"></div>|
+|PressedHighColor|#FFDCDCDC|<div class="theme-palette-color crystaltheme-pressedhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-pressedhighcolor-dark"></div>|
+|PressedLowColor|#FFCDCDCD|<div class="theme-palette-color crystaltheme-pressedlowcolor"></div>|#FF4B4B4B|<div class="theme-palette-color crystaltheme-pressedlowcolor-dark"></div>|
+|AlternativeColor|#FFEAEAEA|<div class="theme-palette-color crystaltheme-alternativecolor"></div>|#FF3A3A3A|<div class="theme-palette-color crystaltheme-alternativecolor-dark"></div>|
+|AlternativeBasicColor|#FFD3D3D3|<div class="theme-palette-color crystaltheme-alternativebasiccolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-alternativebasiccolor-dark"></div>|
+|MarkerInvertedColor|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor"></div>|#FFFFFFFF|<div class="theme-palette-color crystaltheme-markerinvertedcolor-dark"></div>|
+|PrimaryBackgroundColor|#FFFFFFFF|<div class="theme-palette-color crystaltheme-primarybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-primarybackgroundcolor-dark"></div>|
+|HeaderHighColor|#FFE8E6E6|<div class="theme-palette-color crystaltheme-headerhighcolor"></div>|#FF5B5B5B|<div class="theme-palette-color crystaltheme-headerhighcolor-dark"></div>|
+|HeaderLowColor|#FFD4D0D0|<div class="theme-palette-color crystaltheme-headerlowcolor"></div>|#FF494949|<div class="theme-palette-color crystaltheme-headerlowcolor-dark"></div>|
+|ReadOnlyBackgroundColor|#FFFFFFFF|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor-dark"></div>|
+|ReadOnlyBorderColor|#FFA4A3A4|<div class="theme-palette-color crystaltheme-readonlybordercolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-readonlybordercolor-dark"></div>|
 
-#### __Figure 1: Theme colors represented in RadOutlookBar__
+__Theme colors represented in RadOutlookBar__
+
 ![Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)	
 
 ## CrystalPalette Properties
 
 ### Primary Brushes 
 
-* **PrimaryBackgroundBrush**: Used in backgrounds of inputs. 
-* **MainBrush**: Used for backgrounds of buttons. 
-* **AlternativeBrush**: Used for backgrounds of popups, windows, listboxes etc. 
-* **AlternativeBasicBrush**: Used for borders in the cases when several would overlap (in complex grid-structured controls) and is calculated automatically when the BasicBrush is changed by overlaying it on top of the PrimaryBackgroundBrush 
-* **BasicBrush**: Used in the majority of the normal state borders. 
-* **ComplementaryBrush**: Slightly darker than the alternative in case of collisions. Used for background of footers as well. 
-* **ComplementaryBasicBrush**: Used for borders of windows. 
-* **MarkerBrush**: Used for the majority of foregrounds which are black. 
-* **MarkerInvertedBrush**: Used for interactions states - white in both variations. 
-* **IconBrush**: Used for glyph and path icons, which should be 80% of black. 
-* **AccentBrush**: Used for backgrounds of radio, repeat, split, toggle buttons, as well as picker control buttons – DatePicker, DateTimePicker, CalculatorPicker, etc. 
-* **AccentBasicBrush**: Used for border of the above-mentioned controls, that have AccentBrush for their background. 
+* `PrimaryBackgroundBrush`&mdash;Used in backgrounds of inputs. 
+* `MainBrush`&mdash;Used for backgrounds of buttons. 
+* `AlternativeBrush`&mdash;Used for backgrounds of popups, windows, listboxes etc. 
+* `AlternativeBasicBrush`&mdash;Used for borders in the cases when several would overlap (in complex grid-structured controls) and is calculated automatically when the BasicBrush is changed by overlaying it on top of the PrimaryBackgroundBrush 
+* `BasicBrush`&mdash;Used in the majority of the normal state borders. 
+* `ComplementaryBrush`&mdash;Slightly darker than the alternative in case of collisions. Used for background of footers as well. 
+* `ComplementaryBasicBrush`&mdash;Used for borders of windows. 
+* `MarkerBrush`&mdash;Used for the majority of foregrounds which are black. 
+* `MarkerInvertedBrush`&mdash;Used for interactions states - white in both variations. 
+* `IconBrush`&mdash;Used for glyph and path icons, which should be 80% of black. 
+* `AccentBrush`&mdash;Used for backgrounds of radio, repeat, split, toggle buttons, as well as picker control buttons – DatePicker, DateTimePicker, CalculatorPicker, etc. 
+* `AccentBasicBrush`&mdash;Used for border of the above-mentioned controls, that have AccentBrush for their background. 
 
 ### Interaction State Brushes 
-* **AccentFocusedBrush**: Variation of the AccentBrush that is used for the focused states of primary accent elements.  
-* **AccentMouseOverBrush**: Variation of the AccentBrush that is used for the hovered states of primary accent elements. 
-* **AccentSelectedBrush**: Variation of the AccentBrush that is used for the selected states of primary accent elements. 
-* **AccentPressedBrush**: Variation of the AccentBrush that is used for the pressed states of primary accent elements. 
-* **MouseOverBrush**: Used in backgrounds for the hovered states of non-accent elements. 
-* **PressedBrush**: Used in backgrounds for the pressed states of non-accent elements. 
+* `AccentFocusedBrush`&mdash;Variation of the AccentBrush that is used for the focused states of primary accent elements.  
+* `AccentMouseOverBrush`&mdash;Variation of the AccentBrush that is used for the hovered states of primary accent elements. 
+* `AccentSelectedBrush`&mdash;Variation of the AccentBrush that is used for the selected states of primary accent elements. 
+* `AccentPressedBrush`&mdash;Variation of the AccentBrush that is used for the pressed states of primary accent elements. 
+* `MouseOverBrush`&mdash;Used in backgrounds for the hovered states of non-accent elements. 
+* `PressedBrush`&mdash;Used in backgrounds for the pressed states of non-accent elements. 
 
 ### Special Brushes
 
-* **HeaderBrush**: Used in backgrounds of header elements. 
-* **ValidationBrush**:  A bright red brush used for indicating validation errors - for the underline of the invalid control and as a background for the error tooltip, background for invalid rows and cells as well as for clear buttons' mouse over states. 
+* `HeaderBrush`&mdash;Used in backgrounds of header elements. 
+* `ValidationBrush`&mdash;A bright red brush used for indicating validation errors - for the underline of the invalid control and as a background for the error tooltip, background for invalid rows and cells as well as for clear buttons' mouse over states. 
 
 ## Other Properties
 
-* **DisabledOpacity**: Used for text when they are disabled. Backgrounds usually use the  **AlternativeBrush** when disabled.
-* **InputOpacity**: Used for text in masked input controls and watermark elements.
-* **ReadOnlyOpacity**: Used for text in inputs when they are in a **read-only** state.
-* **FocusThickness**: The default value is **2, 2, 2, 2**. It is used for the thickness of the focus border.
+* `DisabledOpacity`&mdash;Used for text when they are disabled. Backgrounds usually use the  `AlternativeBrush` when disabled.
+* `InputOpacity`&mdash;Used for text in masked input controls and watermark elements.
+* `ReadOnlyOpacity`&mdash;Used for text in inputs when they are in a `read-only` state.
+* `FocusThickness`&mdash;The default value is __2, 2, 2, 2__. It is used for the thickness of the focus border.
 
 ## Theme Variation Changing
 
-You can switch between the color palettes by calling the LoadPreset method as shown below:
+You can switch between the color palettes by calling the `LoadPreset` method as shown below:
 
-#### **[C#] Example 1: Changing the color variantion of the theme**
+#### __[C#] Changing the color variantion of the theme__
 {{region styling-appearance-crystal-theme-0}}	
 	//default color variation
 	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Light);  
@@ -307,21 +308,19 @@ You can switch between the color palettes by calling the LoadPreset method as sh
 	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Dark);
 {{endregion}}
 
->The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
+>The `Dark` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
 
 ## Font Family and Font Size
 
-When using the **Crystal theme** you can dynamically change the **FontSize** and **FontFamily** properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, **Office2016**, **Green**, **Material** and **Fluent** themes.
+When using the `Crystal theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, Office2016, Green, Material and Fluent themes.
 
-The **FontSize** and **FontFamily** properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value **13** and can be modified through the **CrystalPalette.Palette.FontSize** property in the same manner as in the other themes that support a theme palette. 
+The `FontSize` and `FontFamily` properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __13__ and can be modified through the `CrystalPalette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
 
 The default font used in the theme is [Roboto](https://fonts.google.com/specimen/Roboto).
 
->important For complex scenarios we strongly recommend setting the **FontSize** properties only **before the application is initialized**. 
+>important For complex scenarios we strongly recommend setting the FontSize properties only __before the application is initialized__. 
 
-__Example 1__ shows the default font sizes and families.
-
-#### __[C#] Example 2: Default FontSize__
+#### __[C#] Default FontSize__
 {{region cs-styling-appearance-crystal-theme-1}}
 	CrystalPalette.Palette.FontSizeXS = 11;
 	CrystalPalette.Palette.FontSizeS = 12;
@@ -330,9 +329,7 @@ __Example 1__ shows the default font sizes and families.
 	CrystalPalette.Palette.FontSizeXL = 15;
 {{endregion}}
 
-__Example 2__ shows how to change the default FontFamily from "Roboto" to "Calibri Italic" and the FontSize from 13 to 14.
-
-#### __[C#] Example 3: Changing the theme's FontSize and FontFamily__
+#### __[C#] Changing the theme's FontSize and FontFamily__
 {{region cs-styling-appearance-crystal-theme-2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -341,49 +338,47 @@ __Example 2__ shows how to change the default FontFamily from "Roboto" to "Calib
 	}
 {{endregion}}
 
-#### __Figure 2: Setting FontSize and FontFamily__
+__Setting FontSize and FontFamily__
+
 ![RadCalendar with modified FontSize and FontFamiliy](images/crystal-theme-calendar-font-change.png)	
 
 ## Glyphs
 
-The **Crystal Theme** also uses the **Telerik Web UI** [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The **RadGlyph** provides a lightweight, flexble and design-time-friendly implementation of our glyph font.  
+The `Crystal Theme` also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexble and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
 ## Set Corner Radius
 
-The **Crystal Theme** exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the **CornerRadius** value is **5**.
-	
-**Example 3** shows how to change the default corner radius from 5 to 0. Note that you don't have to explicitly change all 5 corner radius properties as they will inherit the value from the main **CornerRadius** property.
+The Crystal Theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __5__.
 
-#### __[C#] Example 4: Changing the default corner radius__
+#### __[C#] Changing the default corner radius__
 {{region cs-styling-appearance-crystal-theme-3}}
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 {{endregion}}
 
-#### __Figure 3: Apperance of a RadButton control after changing the default corner radius__
+__Apperance of a RadButton control after changing the default corner radius__
+
 ![RadButton with a CornerRadius of 0](images/crystal-theme-button-cornerradius.png)	
 
 ## Material Assist
 
-The **MaterialAssist** static class comes from the Material theme and it is reused in the Crystal theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of the dependency properties which can be set directly in XAML:
+The `MaterialAssist` static class comes from the Material theme and it is reused in the Crystal theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of the dependency properties which can be set directly in XAML:
 
-* **MouseOverBrush:** Sets the value of the background Brush applied when the mouse is over the control. 
-* **PressedBrush:** Sets the value of the background Brush applied when the control is pressed.
-* **CheckedBrush:** Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(ToggleButton, RadListBoxItem, etc.)
-* **FocusBrush:** Sets the value of the background Brush applied when the element is focused.
-* **ShadowDepth:** Enum property that indicates the depth of the shadow effect over the control. There are 5 values that can be selected.
-* **IsShadowDisabled:** The property is used to control the visibility of the shadow effect.
-* **CornerRadius:** Used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.).
+* `MouseOverBrush`&mdash;Sets the value of the background Brush applied when the mouse is over the control. 
+* `PressedBrush`&mdash;Sets the value of the background Brush applied when the control is pressed.
+* `CheckedBrush`&mdash;Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(`ToggleButton`, `RadListBoxItem`, etc.)
+* `FocusBrush`&mdash;Sets the value of the background Brush applied when the element is focused.
+* `ShadowDepth`&mdash;Enum property that indicates the depth of the shadow effect over the control. There are 5 values that can be selected.
+* `IsShadowDisabled`&mdash;The property is used to control the visibility of the shadow effect.
+* `CornerRadius`&mdash;Used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. `Button`, `RepeatButton`, `ListBox`, `RadComboBox`, etc.).
 
-**Example 6** shows a **RadToggleButton** control with modified brushes for its different states through the **MaterialAssist** class:
-
-#### __[XAML] Example 5: Declare the namespace for the Material components__
+#### __[XAML] Declare the namespace for the Material components__
 {{region xaml-styling-appearance-crystal-theme-4}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Example 6: Set RadToggleButton's visual appearance through the MaterialAssist class__
+#### __[XAML] Set RadToggleButton's visual appearance through the MaterialAssist class__
 {{region xaml-styling-appearance-crystal-theme-5}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
@@ -392,57 +387,71 @@ The **MaterialAssist** static class comes from the Material theme and it is reus
 							   mat:MaterialAssist.CheckedBrush="{telerik:CrystalResource ResourceKey=ValidationBrush}"/>
 {{endregion}}
 
-#### **Figure 4: Appearance of the RadToggleButton in the different states**  
+__Appearance of the RadToggleButton in the different states__
+
 ![RadToggleButton States](images/crystal-theme-togglebutton-states.png)
 
 ## Window Buttons Alignment
 
-In accordance to the MacOS design, by default the minimize, maximize, restore and close buttons of the RadWindow controls are displayed on the left of the window's title in the Crystal theme. This can be easily modified via the **WindowButtonsAlignment** property of the Crystal palette.
+In accordance to the MacOS design, by default the minimize, maximize, restore and close buttons of the RadWindow controls are displayed on the left of the window's title in the Crystal theme. This can be easily modified via the `WindowButtonsAlignment` property of the Crystal palette.
 
-#### __[C#] Example 7: Changing the WindowButtonsAlignment__
+#### __[C#] Changing the WindowButtonsAlignment__
 {{region cs-styling-appearance-crystal-theme-6}}
 	CrystalPalette.Palette.WindowButtonsAlignment = ButtonsAlignment.Right; 	
 {{endregion}}
 
-#### **Figure 5: Appearance of the RadWindow with the different alignments**  
+__Appearance of the RadWindow with the different alignments__
+
 ![RadToggleButton States](images/crystal-theme-window-buttons-alignment.png)
 
 ## Change ScrollBarsMode
 
-By default, the scrollbars in the Crystal theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. Since the __R1 2020 SP1__, you have the option of setting the __ScrollBarsMode__ property of the Crystal palette in order to control this behavior. It is of type __ScrollViewerScrollBarsMode__ and can be set to one of the following values: 
+By default, the scrollbars in the Crystal theme change their size depending on whether the mouse is currently over them. They are normally smaller in size to take less space and become wider when hovered. You have the option of setting the `ScrollBarsMode` property of the CrystalPalette in order to control this behavior. It is of type `ScrollViewerScrollBarsMode` and can be set to one of the following values: 
 
-*  **ScrollViewerScrollBarsMode.Auto**: The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+*  `ScrollViewerScrollBarsMode.Auto`&mdash;The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+*  `ScrollViewerScrollBarsMode.Compact`&mdash;The ScrollBars appear always as a narrow sliver.
+*  `ScrollViewerScrollBarsMode.Normal`&mdash;The ScrollBars appear always with their normal size.
 
-*  **ScrollViewerScrollBarsMode.Compact**:  The ScrollBars appear always as a narrow sliver.
+>important The `ScrollViewerScrollBarsMode` enumeration of the CrystalPalette can be found under the `Telerik.Windows.Controls.Theming` namespace.
 
-*  **ScrollViewerScrollBarsMode.Normal**:  The ScrollBars appear always with their normal size.
+__ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__ 
 
->important The __ScrollViewerScrollBarsMode__ enumeration of the CrystalPalette can be found under the __Telerik.Windows.Controls.Theming__ namespace.
-
-#### **Figure 6: ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode**  
 ![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)
 
-__Example 8__ demonstrates how the __ScrollBarsMode__ property of the palette can be set.
-
-#### **[C#] Example 8: Setting the __ScrollBarsMode__ property of the palette to Compact**
+#### __[C#] Setting the ScrollBarsMode property of the palette to Compact__
 {{region styling-appearance-crystal-theme-7}}	
 	CrystalPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
 {{endregion}}
 
 ## Changing Opacity 
 
-If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the __DisabledOpacity__ and __ReadOnlyOpacity__ properties of the CrystalPalette. The default values are 0.35 and 0.55 respectively. 
+If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the CrystalPalette. The default values are __0.35__ and __0.55__ respectively. 
 
-#### __[C#] Example 9: Changing the opacity__		
+#### __[C#] Changing the opacity__		
 {{region cs-styling-appearance-crystal-theme-8}}
 	CrystalPalette.Palette.DisabledOpacity = 0.5;
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
-#### __[VB.NET] Example 10: Changing the opacity__		
+#### __[VB.NET] Changing the opacity__		
 {{region vb-styling-appearance-material-theme-9}}
 	CrystalPalette.Palette.DisabledOpacity = 0.5
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5
+{{endregion}}
+
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `CrystalPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+
+#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
+{{region styling-appearance-crystal-theme-10}}
+	<Application.Resources> 
+	    <ResourceDictionary> 
+	        <ResourceDictionary.MergedDictionaries> 
+	            <telerik:CrystalResourceDictionary/> 
+	        </ResourceDictionary.MergedDictionaries> 
+	    </ResourceDictionary> 
+	</Application.Resources> 
 {{endregion}}
 
 ## See Also  

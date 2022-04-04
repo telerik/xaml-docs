@@ -19,7 +19,7 @@ position: 2
 
 # Windows8 and Windows8Touch Colors and Fonts
 
-This article will show you how to easily modify __Windows8__ and __Windows8Touch__ themes and how to change the font of your application at runtime.
+This article will show you how to easily modify `Windows8` and `Windows8Touch` themes and how to change the font of your application at runtime.
       
 ## Default Windows8 and Windows8Touch theme colors
 
@@ -55,16 +55,16 @@ The same is with Windows8Touch:
 When Telerik developed the *Windows8* theme, we needed as little as 6 brushes for our controls. Exceptions are the Charts, ScheduleView, etc., which use some additional colors for their chart series, time markers and categories.
         
 
-All Telerik controls use brushes that are linked to one major singleton object that contains the colors to be used for the __Windows8__ / __Windows8Touch__ themes. They are public so you can easily modify the colors of the theme at one single point.
+All Telerik controls use brushes that are linked to one major singleton object that contains the colors to be used for the Windows8 / Windows8Touch themes. They are public so you can easily modify the colors of the theme at one single point.
        
 
-You can change the __Windows8__ / __Windows8Touch__ colors by setting properties as shown in __Example 1__.
+You can change the Windows8 / Windows8Touch colors by setting properties as shown in the following example.
         
 
 __Example 1__: You can change colors in the Windows8 and Windows8Touch themes by setting the properties of the Palette object.
         
 
-#### __C#__
+#### __[C#] Changing the palette's default colors__
 
 {{region common-styles-appearance-colorizing-metro-theme_0}}
 	Windows8Palette.Palette.MainColor = Colors.Black;
@@ -85,7 +85,7 @@ __Example 1__: You can change colors in the Windows8 and Windows8Touch themes by
 
 
 
-The most important brush, __AccentColor__, controls the colors of headers and selected items. The __MainColor__ brush controls the backgrounds. Other brushes are used at various places but as long as you do not pick the same colors for different brushes, your design will be alright.
+The most important brush, `AccentColor`, controls the colors of headers and selected items. The `MainColor` brush controls the backgrounds. Other brushes are used at various places but as long as you do not pick the same colors for different brushes, your design will be alright.
         
 
 Since the PaletteInstance is a DependencyObject, you can also animate the colors at runtime.
@@ -93,73 +93,69 @@ Since the PaletteInstance is a DependencyObject, you can also animate the colors
 Figure 1: Some of the possible looks you will be able to easily achieve.
 ![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
 
-You can use the following brushes in your application to style your own interface using colors consistent with the __Windows8__ theme:
+You can use the following brushes in your application to style your own interface using colors consistent with the `Windows8` theme:
         
 
-* AccentBrush
+* `AccentBrush`
             
 
-* BasicBrush
+* `BasicBrush`
             
 
-* StrongBrush
+* `StrongBrush`
             
 
-* MainBrush
+* `MainBrush`
             
 
-* MarkerBrush
+* `MarkerBrush`
             
 
-* ValidationBrush
+* `ValidationBrush`
             
 
-You can also use the following brushes in your application to style your own interface using colors consistent with the __Windows8Touch__ theme:
+You can also use the following brushes in your application to style your own interface using colors consistent with the Windows8Touch theme:
         
 
-* AccentBrush
+* `AccentBrush`
             
 
-* EffectHighBrush
+* `EffectHighBrush`
             
 
-* EffectLowBrush
+* `EffectLowBrush`
             
 
-* HighBrush
+* `HighBrush`
             
 
-* InvertedBrush
+* `InvertedBrush`
             
 
-* InvertedForegroundBrush
+* `InvertedForegroundBrush`
             
 
-* InvertedGradientBrush
+* `InvertedGradientBrush`
             
 
-* LowBrush
+* `LowBrush`
             
 
-* MainBrush
+* `MainBrush`
             
 
-* MainForegroundBrush
+* `MainForegroundBrush`
             
 
-* MainGradientBrush
+* `MainGradientBrush`
             
 
-* MediumBrush
+* `MediumBrush`
             
 
-* ValidationBrush
-            
+* `ValidationBrush`
 
-__Example 2__ shows how to use the resources to achieve the style of the buttons in __Figure 2__.
-        
-
-#### __XAML__
+#### __[XAML] Using the resources in XAML__
 
 {{region common-styles-appearance-colorizing-metro-theme_1}}
 	<UserControl x:Class="Windows8ThemeColors.MainPage"
@@ -185,19 +181,20 @@ __Example 2__ shows how to use the resources to achieve the style of the buttons
 	</UserControl>
 	{{endregion}}
 
-Figure 2 shows the result of styling your own interface (Example 2).
+__Result of the used resources__
+
 ![Common Windows 8 Colors 01](../images/Common_Windows8_Colors_01.png)
 
 ## Changing Fonts
 
-All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for both themes. Those properties are public so you can easily modify those theme resources at one single point. The property for the most commonly used FontSize in both themes is named __FontSize__ and the property for most commonly used FontFamily resource is named __FontFamily__ and it is set to Segoe UI. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as __RibbonView__, __Gauge__, etc. 
+All Telerik controls use resources that are linked to one major singleton object that contains the `FontSize` and `FontFamily` properties used for both themes. Those properties are public so you can easily modify those theme resources at one single point. The property for the most commonly used FontSize in both themes is named FontSize and the property for most commonly used FontFamily resource is named FontFamily and it is set to `Segoe UI`. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as RibbonView, Gauge, etc. 
 
-__Example 3__, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
+The following example, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
 {% if site.site_name == 'WPF' %}
 >important When you change these resources, you should ensure that the __Windows8ResourceDictionary__ / __Windows8TouchResourceDictionary__ is merged to App.xaml in the following way:
              
 
-#### __XAML__
+#### __[XAML]__
 
 {{region common-styles-appearance-colorizing-metro-theme_3}}
 	<Application.Resources>
@@ -210,11 +207,9 @@ __Example 3__, shown after the note below, shows these resources and their defau
 	</Application.Resources>
 {{endregion}}
 
-{% endif %}
+{% endif %}     
 
-__Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Windows8 and Windows8Touch themes.        
-
-#### __C#__
+#### __[C#] Setting the FontSize and FontFamily properties of the themes' palettes__
 
 {{region common-styles-appearance-colorizing-metro-theme_4}}
 	//Windows8 Resources
@@ -240,11 +235,11 @@ __Example 3__: Setting __FontSize__ and __FontFamily__ properties to use in Wind
 	Windows8TouchPalette.Palette.FontFamilyStrong = new FontFamily("Segoe UI Semibold");
 {{endregion}}
 
-The Q1 2013 release of __Telerik UI {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components for __Windows8__ and __Windows8Touch__ themes. As __Example 4__ shows, you can change the default __FontFamily__ from "Segoe" to "Calibri" and the __FontSize__ from 12 to 22 on a click of a button.       
+The Q1 2013 release of __Telerik UI {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ introduced features that allow you to dynamically change the FontSize and FontFamily properties of all components for Windows8 and Windows8Touch themes.     
 
-__Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the click of a button.        
+This example shows how you can increase the __FontSize__ of a __RadCalendar__ with the click of a button.        
 
-#### __XAML__
+#### __[XAML]__
 
 {{region common-styles-appearance-colorizing-metro-theme_5}}
 	<Grid>
@@ -257,7 +252,7 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 	</Grid>
 {{endregion}}
 
-#### __C#__
+#### __[C#]__
 
 {{region common-styles-appearance-colorizing-metro-theme_6}}
 	public MainPage()
@@ -272,22 +267,21 @@ __Example 4__: You can increase the __FontSize__ of a __RadCalendar__ with the c
 	    Windows8Palette.Palette.FontFamily = new FontFamily("Calibri");
 	}
 {{endregion}}
-
-__Figure 3__ shows a comparison of the application before and after the button is clicked.
         
-Figure 3: You can click a button to change FontSize.
+__Result of clicking the button__
+
 ![Common Windows 8 Font Change 01](../images/Common_Windows8_FontChange_01.png)
 
 ## Changing Opacity 
 
-If you need to change the opacity of the disabled elements, you can now easily do so by using the __DisabledOpacity__ property of the **Windows8Palette**. Its default value is **0.5**. 
+If you need to change the opacity of the disabled elements, you can now easily do so by using the `DisabledOpacity` property of the `Windows8Palette`. Its default value is __0.5__. 
 
-#### __[C#] Example 7: Changing the opacity__		
+#### __[C#] Changing the opacity__		
 {{region cs-common-styles-appearance-colorizing-metro-theme-7}}
 	Windows8Palette.Palette.DisabledOpacity = 0.2;
 {{endregion}}
 	
-#### __[VB.NET] Example 7: Changing the opacity__		
+#### __[VB.NET] Changing the opacity__		
 {{region vb-common-styles-appearance-colorizing-metro-theme-8}}
 	Windows8Palette.Palette.DisabledOpacity = 0.2
 {{endregion}}

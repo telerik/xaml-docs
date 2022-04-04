@@ -439,7 +439,9 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
 
->important When modifying fonts, colors, or other resources from the `CrystalPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+## Merging Modified Palette Resources With StyleManager Theming Mechanism
+
+When modifying fonts, colors, or other resources from the `CrystalPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
 {{region styling-appearance-crystal-theme-10}}

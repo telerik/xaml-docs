@@ -108,7 +108,7 @@ __WatermarkBehavior__ is an enumeration property which specifies when the waterm
 * __HideOnClick__ - The watermark will be hidden when the the user clicks on the RadWatermarkTextBox
 * __HideOnTextEntered__ - The watermark will be hidden when the the user writes text into the RadWatermarkTextBox
 
-The default value is __HideOnTextEntered__.
+The default value is __HiddenWhenFocused__.
 
 ## ReadOnlyBackground and DisabledBackground
 

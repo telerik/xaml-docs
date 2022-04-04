@@ -581,7 +581,7 @@ The default font used in the theme is `Segoe UI`.
 
 >important For complex scenarios it is strongly recommend to set the FontSize properties __only before the application is initialized__. 
 
-__Example 2__ shows the default font sizes and families.
+The following example shows the default font sizes and families.
 
 #### __[C#] Default FontSize__
 {{region cs-styling-appearance-Office2019-theme-2}}

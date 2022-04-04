@@ -24,7 +24,7 @@ article table
 
 # Office2013 Theme
 
-The official Q3 2013 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new __external__ theme with a flat modern UI and three color variations – `White`, `Light Gray`, `Dark Gray`.             
+The official Q3 2013 release of UI for {{ site.framework_name }} brought a brand new __external__ theme with a flat modern UI and three color variations – `White`, `Light Gray`, `Dark Gray`.             
 
 The following topic explains the specifics of the theme's color variations and the available font options.      
 
@@ -194,7 +194,9 @@ If you need to change the opacity of the disabled elements, you can now easily d
 	Office2013Palette.Palette.DisabledOpacity = 0.5
 {{endregion}}
 
->important When modifying fonts, colors, or other resources from the `Office2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `Office2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
 {{region styling-appearance-office2013-theme-7}}

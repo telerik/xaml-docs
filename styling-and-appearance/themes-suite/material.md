@@ -222,7 +222,7 @@ Below you can find more details about each brush and where it is usually applied
 * [Special Brushes](#special-brushes)
 * [Other Properties](#other-properties)
 
-### __Neutral Brushes__
+### Neutral Brushes
 White, Gray, Black 
 
 >They are used for backgrounds, non-intrusive interaction states, glyphs and icons, borders and separators, text.
@@ -240,7 +240,7 @@ White, Gray, Black
 
 >important The `DialogBackgroundBrush` is __not__ available with versions prior to the __R2 2021__ release of the __UI for WPF__ suite.
 
-### __Primary brushes__
+### Primary brushes
 Indigo
 
 * `PrimaryNormalBrush`&mdash;By default, it is blue (indigo) and is used for coloring the primary accent elements - headers, important, selected or checked elements (RadListBoxItem, RadToggleButton, checked CheckBox background), slider thumbs etc.
@@ -248,14 +248,14 @@ Indigo
 * `PrimaryPressedBrush`&mdash;Darker blue than the previous two brushes for pressed states of primary accent elements – pressed RadToggleButton/RadRadioButton, pressed state of raised/flat buttons.
 * `PrimaryFocusBrush`&mdash;Light variation of the indigo color scheme which is used as a main brush for backgrounds and underlines, indicating focused states, as well as selection and dragging layovers – underlines for the input controls in focused states (TextBox, RadNumericUpDown, RadWatermarkTextBox etc.), backgrounds in normal states of buttons, RadListBoxItems and similar, focus halos for CheckBox and RadioButton.
 
-### __Accent brushes__
+### Accent brushes
 Amber
 
 * `AccentNormalBrush`&mdash;Bright amber-orange brush used as a background for the secondary accent element (RadScheduleView’s Appointments, RadGanttView Summary containers), hover state for checked/selected elements (selected RadListBoxItem hover, checked RadToggleButton hover), tab items focus underline (focused RadTabItem, focused LayoutControlTabGroupItem, selected docked RadDocumentPane), RadDiagramShape fill, RadDocking’s selected docked/undocked pinned RadPane/ToolWindow.
 * `AccentHoverBrush`&mdash;Lighter variation of the amber color for the elements that have AccentNormalBrush as a background in their default state (RadScheduleView’s Appointments, header buttons in selected RadPane/ToolWindow in RadDocking), RadGridView frozen columns splitter, checked CheckBox and RadioButton, RadDiagramShade stroke.
 * `AccentPressedBrush`&mdash;Darker amber color for the pressed/selected states of secondary accent controls - RadScheduleView’s Appointments, pressed or checked CheckBox and RadioButton, pressed states for header buttons in RadDocking’s RadDocking’s selected docked/undocked pinned RadPane/ToolWindow.
 
-### __Special brushes__
+### Special brushes
 
 * `ValidationBrush`&mdash;A bright red brush used for indicating validation errors - for the underline of the invalid control and as a background for the error tooltip, background for invalid rows and cells as well as for clear buttons' mouse over states.
 * `RippleBrush`&mdash;A white by default brush which is used for the ripple effect of the MaterialControl. By itself it is a solid color, the opacity of the ripple comes from the MaterialControl’s RippleOpacity property.

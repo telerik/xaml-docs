@@ -78,7 +78,7 @@ The `Style` property can be used also to customize the appearance of the series 
 
 ### Using the TypePath property of the descriptor
 
-The `TypePath` property provides some more flexibility for setting the series type because allows you to define the type per item in the `Source` collection. In this case, you can have multiple series with different types. The property accepts a value of type `string` that points to the name of a property in the series business model. The property can be of any data type, but the most common scenarios are - `Type` and `string`. 
+The `TypePath` allows you to define a chart series type that will be used when creating a chart series instance for each item in the `Source` collection. In this case, you can have multiple series with different types. The property accepts a value of type `string` that points to the name of a property in the series business model. The property can be of any data type, but the most common scenarios are - `Type` and `string`. 
 
 If you provide a `Type` value to the `TypePath`, the `ChartSeriesDescriptor3D` will be able to automatically determine the type of the series that should be created.
 

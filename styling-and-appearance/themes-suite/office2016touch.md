@@ -253,7 +253,9 @@ __Setting the disabled opacity__
 
 ![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
 
->important When modifying fonts, colors, or other resources from the `Office2016TouchPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `Office2016TouchPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
 {{region styling-appearance-office2016touch-8}}

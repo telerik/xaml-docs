@@ -168,7 +168,7 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 
 >important For complex scenarios we strongly recommend setting the FontSize property only initially before the application is initialized. Also, we recommend values between __11px__ and __19px__ for it.
 
-__Example 1__ shows the default font sizes and families.
+The following example shows the default font sizes and families.
 
 #### __[C#] Default FontSize and FontFamily__
 {{region styling-appearance-office2016-0}}

@@ -24,7 +24,7 @@ article table
 
 # VisualStudio2013 Theme
 
-The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – `Light`, `Dark` and `Blue`.        
+The official Q2 2014 release of UI for {{ site.framework_name }} brought a brand new theme inspired by the Visual Studio design with three color variations – `Light`, `Dark` and `Blue`.        
 
 The following topic explains the specifics of the theme's color variations.      
 
@@ -215,7 +215,9 @@ __Setting the disabled opacity__
 
 ![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
 
->important When modifying fonts, colors, or other resources from the `VisualStudio2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `VisualStudio2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
 {{region common-styling-appearance-visualstudio2013-theme-4}}

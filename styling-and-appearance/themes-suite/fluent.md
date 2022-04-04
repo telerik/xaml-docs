@@ -159,7 +159,7 @@ __Theme colors represented in RadOutlookBar__
 
 ## FluentPalette Brushes
 
-### __Transparent Brushes__ 
+### Transparent Brushes
 
 * `PrimaryBrush`&mdash;Used in backgrounds of inputs.
 * `MouseOver`&mdash;Used for an interaction of buttons.
@@ -169,7 +169,7 @@ __Theme colors represented in RadOutlookBar__
 * `MainBrush`&mdash;Used for backgrounds of buttons, headers and footers.
 * `IconBrush`&mdash;Used for glyph and path icons, which should be 80% of black/white and for the light/dark variation respectfully.
 
-### __Opaque Brushes__
+### Opaque Brushes
 
 * `PrimaryBackgroundBrush`&mdash;Used when backgrounds need to be solid white/black
 * `AlternativeBrush`&mdash;Used for backgrounds of popups, windows, listboxes etc and is slightly darker/lighter.
@@ -397,7 +397,7 @@ __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__
 
 ![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/fluent-light-scrollbarmode.gif)
 
-#### __[C#] Setting the __ScrollBarsMode__ property of the palette to Compact__
+#### __[C#] Setting the ScrollBarsMode property of the palette to Compact__
 {{region styling-appearance-fluent-theme-12}}	
 	FluentPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
 {{endregion}}

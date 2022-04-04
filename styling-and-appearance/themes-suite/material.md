@@ -160,7 +160,7 @@ article table
 
 # Material Theme
 
-With the **R2 2017** release of the **UI for WPF** suite we have introduced the brand new `Material Theme`. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Material design drop shadows with beautiful and smooth transitions between the states.
+With the __R2 2017__ release of the __UI for WPF__ suite we have introduced the brand new `Material Theme`. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Material design drop shadows with beautiful and smooth transitions between the states.
 
 With the __R2 2021__ release of the __UI for WPF__ suite, we have designed and delivered a brand new color variation of the Material theme - the `Dark` one. In addition to it, the theme palette expanded its brushes collection with the `DialogBackgroundBrush` and the `SelectedUnfocusedBrush`, which are available for both color variations and are described below.
 
@@ -512,7 +512,9 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 	MaterialPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
 
->important When modifying fonts, colors, or other resources from the `MaterialPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `MaterialPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
 {{region styling-appearance-material-theme-16}}

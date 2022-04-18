@@ -10,7 +10,7 @@ position: 1
 
 # Pinned Rows and Columns
 
-VirtualGrid provides pinning mechanism for both its rows and columns. Through it a given row can be pinned to the top or bottom of the grid. Respectively, a column can be pinned to the left or right side of VirtualGrid. Thus, they will not take part in the vertical or horizontal scrolling. 
+VirtualGrid provides a pinning mechanism for both its rows and columns. Through it, a given row can be pinned to the top or bottom of the grid. Respectively, a column can be pinned to the left or right side of VirtualGrid. Thus, they will not take part in the vertical or horizontal scrolling. 
 
 ## Pin Rows and Columns 
 

@@ -10,7 +10,7 @@ position: 5
 
 ## Https Support
 
-All built-in providers like Bing and ArcGIS are using the HTTP protocol when constructing the web urls used to download the map tile images.
+All built-in providers like Bing and ArcGIS are using the HTTP protocol when constructing the web URLs used to download the map tile images.
 
 The protocol can be changed to HTTPS by setting the static `ProtocolHelper.UseHttpsScheme` property to `true`. This will redirect the built-in provider's tile downloading links to use HTTPS.
 

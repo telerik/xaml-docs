@@ -12,11 +12,11 @@ position: 5
 
 The chart axis range is moving from left to right when horizontal and from bottom to top when vertical.
 
-The axis range direction can be changed by setting the `IsInverse` property the corresponding chart axis.
+The axis range direction can be changed by setting the `IsInverse` property of the corresponding chart axis.
 
 #### __[XAML]__
-{{region radchart-axes-invert-axis-0}}
-	<telerik:RadCartesianChart x:Name="telerik">
+{{region xaml-radchart-axes-invert-axis-0}}
+	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis IsInverse="True"/>
 		</telerik:RadCartesianChart.HorizontalAxis>	
@@ -39,4 +39,4 @@ The axis range direction can be changed by setting the `IsInverse` property the 
 
 The following picture shows two charts - one with the default range direction (on the top) and another with inverted axes ranges (on the bottom).
 
-![](images/radchartview-axes-invert-axis-0.png)
+![Inverted Axis Range](images/radchartview-axes-invert-axis-0.png)

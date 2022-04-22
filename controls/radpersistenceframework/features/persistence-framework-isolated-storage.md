@@ -16,11 +16,11 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 {{region persistence-framework-isolated-storage_0}}
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="*" />
-	        <ColumnDefinition Width="*" />
+	        <ColumnDefinition Width="\*" />
+	        <ColumnDefinition Width="\*" />
 	    </Grid.ColumnDefinitions>
 	    <Grid.RowDefinitions>
-	        <RowDefinition Height="*" />
+	        <RowDefinition Height="\*" />
 	        <RowDefinition Height="Auto" />
 	    </Grid.RowDefinitions>
 	    <telerik:RadTreeView x:Name="treeView" telerik:PersistenceManager.StorageId="treeView">
@@ -56,7 +56,7 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 	            <Grid>
 	                <Grid.ColumnDefinitions>
 	                    <ColumnDefinition Width="Auto" />
-	                    <ColumnDefinition Width="*" />
+	                    <ColumnDefinition Width="\*" />
 	                </Grid.ColumnDefinitions>
 	                <Grid.RowDefinitions>
 	                    <RowDefinition Height="Auto" />

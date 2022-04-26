@@ -20,7 +20,7 @@ To use __RadBadge__, add references to the following assemblies:
 
 ## Defining the RadBadge
 
-#### __[C#] Defining RadBage in XAMl __
+#### __[C#] Defining RadBage in XAML__
 {{region radbadge-getting-started-0}}
 	<telerik:RadButton Content="Notifications" VerticalAlignment="Center" HorizontalAlignment="Center">
 		<telerik:RadBadge.Badge>

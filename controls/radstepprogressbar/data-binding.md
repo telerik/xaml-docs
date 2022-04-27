@@ -10,12 +10,18 @@ position: 4
 
 # Data Binding (MVVM)
 
-The RadStepProgressBar control can be used in a data binding scenario. 
+The `RadStepProgressBar` control can be used in a data binding scenario. 
 
-The component's __ItemsSource__ property can be assigned to a collection of any objects. A RadStepProgressBarItem will be auto generated for each item in the ItemsSource. The following example shows how to setup the control in this scenario.
+The component's `ItemsSource` property can be assigned to a collection of any objects. A `RadStepProgressBarItem` will be auto generated for each item in the ItemsSource. The following example shows how to setup the control in this scenario.
 
-#### __[XAML] Defining the models__
+#### __[C#] Defining the models__
 {{region stepprogressbar-data-binding-0}}
+	public class StepInfo
+	{
+		public string Text { get; set; }
+        public string AdditionalText { get; set; }		
+	}
+
 	public class MainViewModel : ViewModelBase
 	{
 		private StepInfo selectedStep;
@@ -57,8 +63,64 @@ The component's __ItemsSource__ property can be assigned to a collection of any 
 	}
 {{endregion}}
 
-#### __[XAML] Initializing the view model__
+#### __[VB.NET] Defining the models__
 {{region stepprogressbar-data-binding-1}}
+	Public Class StepInfo
+	    Public Property Text As String
+	    Public Property AdditionalText As String
+	End Class
+
+	Public Class MainViewModel
+	    Inherits ViewModelBase
+
+	    Private selectedStep As StepInfo
+	    Private stepShapeGeometry As Geometry
+
+	    Public Property StepShapeGeometry As Geometry
+	        Get
+	            Return stepShapeGeometry
+	        End Get
+	        Set(ByVal value As Geometry)
+	            stepShapeGeometry = value
+	            OnPropertyChanged("StepShapeGeometry")
+	        End Set
+	    End Property
+
+	    Public Property Steps As ObservableCollection(Of StepInfo)
+
+	    Public Property SelectedStep As StepInfo
+	        Get
+	            Return selectedStep
+	        End Get
+	        Set(ByVal value As StepInfo)
+	            selectedStep = value
+	            OnPropertyChanged("SelectedStep")
+	        End Set
+	    End Property
+
+	    Public Sub New()
+	        Steps = New ObservableCollection(Of StepInfo)()
+	        Steps.Add(New StepInfo() With {
+	            .Text = "Your Cart",
+	            .AdditionalText = "Step 1"
+	        })
+	        Steps.Add(New StepInfo() With {
+	            .Text = "Cart",
+	            .AdditionalText = "Step 2"
+	        })
+	        Steps.Add(New StepInfo() With {
+	            .Text = "Payment",
+	            .AdditionalText = "Step 3"
+	        })
+	        Dim geometry = New RectangleGeometry(New Rect(0, 0, 1, 1))
+	        geometry.Transform = New RotateTransform(45)
+	        StepShapeGeometry = geometry
+	    End Sub
+	End Class
+{{endregion}}
+
+#### __[C#] Initializing the view model__
+{{region stepprogressbar-data-binding-2}}
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -66,8 +128,16 @@ The component's __ItemsSource__ property can be assigned to a collection of any 
 	}
 {{endregion}}
 
+#### __[VB.NET] Initializing the view model__
+{{region stepprogressbar-data-binding-3}}
+	Public Sub New()
+	    InitializeComponent()
+	    DataContext = New MainViewModel()
+	End Sub
+{{endregion}}
+
 #### __[XAML] Setting up the XAML__
-{{region stepprogressbar-data-binding-2}}
+{{region stepprogressbar-data-binding-4}}
 	<telerik:RadStepProgressBar ItemsSource="{Binding Steps}"
 								SelectedItem="{Binding SelectedStep, Mode=TwoWay}">
 		<telerik:RadStepProgressBar.ItemContainerStyle>
@@ -95,9 +165,9 @@ __Data bound StepProgressBar control__
 
 The previous example shows how to data bind the ItemsSource and SelectedItem of the control. This will populate it with data. The SelectedItem binding can be used in a separate visual element if you need to connect the selected step with a separate view.
 
-The visualization of the text at the bottom and top is customized via the ItemTemplate and ItemAdditionalContentTemplate properties. Alternative of the ItemTemplate setting is the __DisplayMemberPath__ that can point to a property from the model of the step.
+The visualization of the text at the bottom and top is customized via the `ItemTemplate` and `ItemAdditionalContentTemplate` properties. Alternative of the ItemTemplate setting is the `DisplayMemberPath` that can point to a property from the model of the step.
 
-The __ItemContainerStyle__ property is used to customize the RadStepProgressBarItem elements created for each object in the ItemsSource. 
+The `ItemContainerStyle` property is used to customize the RadStepProgressBarItem elements created for each object in the ItemsSource. 
 
 ## See Also
 * [Getting Started]({%slug stepprogressbar-getting-started%})

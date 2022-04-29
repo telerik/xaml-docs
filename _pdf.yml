@@ -105,6 +105,7 @@ intro_columns:
       "StepProgressBar": "stepprogressbar-overview"
       "ToolTip": "radtooltip-overview"
       "TouchManager": "touchmanager-overview"
+      "VirtualKeyboard": "radvirtualkeyboard-overview"
   -
     title: "File Upload & Management"
     items:

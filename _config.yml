@@ -94,6 +94,11 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radvirtualkeyboard:
+        title: RadVirtualKeyboard
+    controls/radvirtualkeyboard/appearance:
+        title: Appearance
+        position: 7
     controls/radautocompletebox:
         title: RadAutoCompleteBox		
     controls/radautosuggestbox:
@@ -3889,6 +3894,7 @@ intro_columns:
       "StepProgressBar": "stepprogressbar-overview"
       "ToolTip": "radtooltip-overview"
       "TouchManager": "touchmanager-overview"
+      "VirtualKeyboard": "radvirtualkeyboard-overview"
 -
   categories:
   -

@@ -34,8 +34,8 @@ As you can see in the above image, the Comments group allows you to perform the 
 * __New Comment:__ Adds new comment to the selected cell.
 * __Reply Comment:__ Adds a reply to an existing comment. This option is only available when the selected cell already contains a comment.
 * __Delete:__ Deletes the comment in the selected cell, including all of its replies. Only available when the selected cell already contains a comment.
-* __Previous Comment:__ Selects the previous Comment in the current spreadsheet. 
-* __Next Comment:__ Selects the next Comment in the current spreadsheet.
+* __Previous Comment:__ Selects the previous Comment in the current worksheet. 
+* __Next Comment:__ Selects the next Comment in the current worksheet.
 * __Show Comments:__ Shows or hides the Comment pane of the current spreadsheet. The pane updates its content upon changing the selected sheet accordingly.
 
 ### Editing Comments

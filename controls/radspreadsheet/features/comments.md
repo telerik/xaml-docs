@@ -9,7 +9,7 @@ position: 13
 
 # Comments
 
-Since R1 2022 the Spreadsheet control supports working with comments.
+Since R2 2022 the Spreadsheet control supports working with comments.
 
 Comments are used for leaving information about a cell's data, where each comment can be replied to, thus creating a thread. All Comments can be found in the __Comments__ collection of the worksheet. More information about using Comments in code is available here: [SpreadProcessing Comments](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/comments). 
 
@@ -32,8 +32,8 @@ RadSpreadsheet enables working with Comments through its UI. There are two ways 
 As you can see in the above image, the Comments group allows you to perform the following actions:
 
 * __New Comment:__ Adds new comment to the selected cell.
-* __Reply Comment:__ Adds a reply to an existing comment to the selected cell. (only available when selected cell already contains a comment)
-* __Delete:__ Deletes the comment in the selected cell, including all of its replies. (only available when selected cell already contains a comment)
+* __Reply Comment:__ Adds a reply to an existing comment. This option is only available when the selected cell already contains a comment.
+* __Delete:__ Deletes the comment in the selected cell, including all of its replies. Only available when the selected cell already contains a comment.
 * __Previous Comment:__ Selects the previous Comment in the current spreadsheet. 
 * __Next Comment:__ Selects the next Comment in the current spreadsheet.
 * __Show Comments:__ Shows or hides the Comment pane of the current spreadsheet. The pane updates its content upon changing the selected sheet accordingly.

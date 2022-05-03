@@ -61,7 +61,7 @@ The visibility and appearance of the minor ticks can be controlled via the follo
 
 ## Stripes
 
-In addition to the new minor tick functionality, both the [CartesianChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgridl%}#cartesianchartgrid) and [PolarChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}#polarchartgrid) now expose properties to control the visibility and appearance of the minor grid and strip lines.
+In addition to the new minor tick functionality, both the [CartesianChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}#cartesianchartgrid) and [PolarChartGrid]({%slug radchartview-cartesianchartgrid-and-polarchartgrid%}#polarchartgrid) now expose properties to control the visibility and appearance of the minor grid and strip lines.
 
 ### CartesianChartGrid
 

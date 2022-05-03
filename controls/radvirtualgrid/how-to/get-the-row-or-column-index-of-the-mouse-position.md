@@ -12,13 +12,32 @@ position: 0
 
 In a scenario when the row/column index for the mouse position is needed, the __GetRowIndexAtMousePosition__ and __GetColumnIndexAtMousePosition__ methods come in handy. In order to return the needed index, they accept a parameter of type __CanvasInputBorder__. This __Border__ is used internally by __RadVirtualGrid__ to enable mouse interaction with the control. For example, if the row and column indexes for the __MouseRightButtonDown__ event of __RadVirtualGrid__ are needed, its event handler would be similar to the following one.
 
-#### __[C#] Example 1: Getting the Row and Column Index on MouseRightButtonDown event__
+#### __[C#] Getting the Row and Column Index on MouseRightButtonDown event__
 {{region radvirtualgrid-selection_programmatic-selection_0}}
 	private void VirtualGrid_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             var border = e.OriginalSource as Telerik.Windows.Controls.VirtualGrid.CanvasInputBorder;
             var columnIndex = this.VirtualGrid.GetColumnIndexAtMousePosition(border);
             var rowIndex = this.VirtualGrid.GetRowIndexAtMousePosition(border);
+        }
+{{endregion}}
+
+If you have defined a [custom CellTemplate]({%slug radvirtualgrid-custom-cell-content%}), you would need to add additional logic to get ahold of the CanvasInputBorder.
+
+#### __[C#] Getting the Row and Column Index when using a custom CellTemplate__
+{{region radvirtualgrid-selection_programmatic-selection_1}}
+	private void VirtualGrid_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {	
+	    var border = e.OriginalSource as Telerik.Windows.Controls.VirtualGrid.CanvasInputBorder;
+	    if (border == null)
+	    {
+	        var element = e.OriginalSource as FrameworkElement;
+	        var panel = element.ParentOfType<VirtualizingCanvasBase>();
+	        border = panel.ChildrenOfType<CanvasInputBorder>().FirstOrDefault();
+	    }
+	
+	    var columnIndex = this.VirtualGrid.GetColumnIndexAtMousePosition(border);
+	    var rowIndex = this.VirtualGrid.GetRowIndexAtMousePosition(border);
         }
 {{endregion}}
 

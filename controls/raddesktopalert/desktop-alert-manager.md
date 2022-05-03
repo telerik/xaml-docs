@@ -5,7 +5,7 @@ description: Check our &quot;DesktopAlertManager&quot; documentation article for
 slug: raddesktopalert-desktop-alert-manager
 tags: desktopalertmanager,alert
 published: True
-position: 5
+position: 6
 ---
 
 # DesktopAlertManager

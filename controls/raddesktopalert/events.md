@@ -5,7 +5,7 @@ description: Check our &quot;Events&quot; documentation article for the RadDeskt
 slug: raddesktopalert-events-overview
 tags: Events
 published: True
-position: 4
+position: 5
 ---
 
 # Events

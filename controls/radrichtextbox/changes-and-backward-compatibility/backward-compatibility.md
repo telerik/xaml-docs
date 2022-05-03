@@ -14,6 +14,16 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+## What's Different in 2022 R2
+
+### Changed
+
+ShowFloatingBlockPropertiesDialogCommand now inherits from **DrawingContextCommandBase** instead of **ImageContextCommandBase**.
+
+### What to do now
+
+No action is needed.
+
 ## What's Different in 2018 R3
 
 ### Changed

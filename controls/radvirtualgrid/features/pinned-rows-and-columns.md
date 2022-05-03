@@ -10,66 +10,84 @@ position: 1
 
 # Pinned Rows and Columns
 
-__RadVirtualGrid__ provides pinning mechanism for both its rows and columns. Through it a given row can be pinned to the top or bottom of the grid. Respectively, a column can be pinned to the left or right side of __RadVirtualGrid__. Thus, they will not take part in the vertical or horizontal scrolling. This functionality can be controlled through the following methods exposed by the API of the control.
+VirtualGrid provides a pinning mechanism for both its rows and columns. Through it, a given row can be pinned to the top or bottom of the grid. Respectively, a column can be pinned to the left or right side of VirtualGrid. Thus, they will not take part in the vertical or horizontal scrolling. 
 
-> __RadVirtualGrid__ exposes built-in commands for its pinning functionality. More information can be found in the [Commands Overview]({%slug virtualgrid-commands-overview%}).
+## Pin Rows and Columns 
 
-* __PinRowTop(int index)__: Pins a row at a given index on the top.
+The pin functionality can be controlled using the following methods exposed by the API of the control.
 
-#### __[C#] Example 1: Calling the PinRowTop method__
+* `PinRowTop(int index)`&mdash;Pins a row at a given index on the top.
 
-{{region radvirtualgrid-features_pinnedrowsandcolumns_0}}
-	virtualGrid.PinRowTop(1);
+	#### __[C#] Example 1: Calling the PinRowTop method__
+
+	{{region radvirtualgrid-features_pinnedrowsandcolumns_0}}
+		virtualGrid.PinRowTop(1);
+	{{endregion}}
+
+	#### __Figure 1: RadVirtualGrid with pinned row at the top__
+
+	![RadVirtualGrid with pinned row on the top](images/RadVirtualGrid_Features_PinnedRowsColumns_01.png)
+
+* `PinRowBotton(int index)`&mdash;Pins a row at a given index to the bottom.
+
+	#### __[C#] Example 2: Calling the PinRowBottom method__
+
+	{{region radvirtualgrid-features_pinnedrowsandcolumns_1}}
+		virtualGrid.PinRowBottom(1);
+	{{endregion}}
+
+	#### __Figure 2: RadVirtualGrid with pinned row at the bottom__
+
+	![RadVirtualGrid with pinned row at the bottom](images/RadVirtualGrid_Features_PinnedRowsColumns_02.png)
+
+* `PinColumnLeft(int index)`&mdash;Pins a column at a given index to the left.
+
+	#### __[C#] Example 3: Calling the PinColumnLeft method__
+
+	{{region radvirtualgrid-features_pinnedrowsandcolumns_2}}
+		virtualGrid.PinColumnLeft(1);
+	{{endregion}}
+
+	#### __Figure 3: RadVirtualGrid with pinned column on the left__
+
+	![ RadVirtualGrid with pinned column on the left](images/RadVirtualGrid_Features_PinnedRowsColumns_03.png)
+
+* `PinColumnRight(int index)`&mdash;Pins a column at a given index to the right.
+
+	#### __[C#] Example 4: Calling the PinColumnRight method__
+
+	{{region radvirtualgrid-features_pinnedrowsandcolumns_3}}
+		virtualGrid.PinColumnRight(1);
+	{{endregion}}
+
+	#### __Figure 4: RadVirtualGrid with pinned column on the right__
+
+	![RadVirtualGrid with pinned column on the right](images/RadVirtualGrid_Features_PinnedRowsColumns_04.png)
+
+## Unpin Rows and Columns
+
+Unpinning an already pinned row or column can be achieved through the `UnpinRow` and `UnpinColumn` methods.
+
+* `UnpinRow(int index)`&mdash;Unpins a row at a given index.
+
+* `UnpinColumn(int index)`&mdash;Unpins a column at a given index.
+
+#### __[C#] Example 5: Unpin methods usage__  
+{{region radvirtualgrid-features_pinnedrowsandcolumns_4}}
+	virtualGrid.UnpinRow(1);
+	virtualGrid.UnpinColumn(1);
 {{endregion}}
 
-#### __Figure 1: RadVirtualGrid with pinned row at the top__
+## Commands Support
 
-![RadVirtualGrid with pinned row on the top](images/RadVirtualGrid_Features_PinnedRowsColumns_01.png)
+VirtualGrid exposes built-in commands for its pinning functionality. They can be accessed via the `RadVirtualGridCommands` and executed using the `PendingCommands` collection property of the VirtualGrid and its `ExecutePendingCommand` method. 
 
-* __PinRowBotton(int index)__: Pins a row at a given index to the bottom.
+The available commands are `PinRowTop`, `PinRowBottom`, `PinColumnLeft`, `PinColumnRight`, `UnpinRow` and `UnpinColumn`. Read more about the commanding support in the [Commands Overview]({%slug virtualgrid-commands-overview%}) article.
 
-#### __[C#] Example 2: Calling the PinRowBottom method__
+## Usage with Filtering and Sorting
 
-{{region radvirtualgrid-features_pinnedrowsandcolumns_1}}
-	virtualGrid.PinRowBottom(1);
-{{endregion}}
+The pinned rows feature is not supported when filtering or sorting is applied. In case you already have pinned rows and then apply filtering or sorting, the rows will get unpinned. After, the filtering and sorting is cleared, the previously pinned rows will be restored.
 
-#### __Figure 2: RadVirtualGrid with pinned row at the bottom__
-
-![RadVirtualGrid with pinned row at the bottom](images/RadVirtualGrid_Features_PinnedRowsColumns_02.png)
-
-* __PinColumnLeft(int index)__: Pins a column at a given index to the left.
-
-#### __[C#] Example 3: Calling the PinColumnLeft method__
-
-{{region radvirtualgrid-features_pinnedrowsandcolumns_2}}
-	virtualGrid.PinColumnLeft(1);
-{{endregion}}
-
-#### __Figure 3: RadVirtualGrid with pinned column on the left__
-
-![ RadVirtualGrid with pinned column on the left](images/RadVirtualGrid_Features_PinnedRowsColumns_03.png)
-
-* __PinColumnRight(int index)__: Pins a column at a given index to the right.
-
-#### __[C#] Example 4: Calling the PinColumnRight method__
-
-{{region radvirtualgrid-features_pinnedrowsandcolumns_3}}
-	virtualGrid.PinColumnRight(1);
-{{endregion}}
-
-#### __Figure 4: RadVirtualGrid with pinned column on the right__
-
-![RadVirtualGrid with pinned column on the right](images/RadVirtualGrid_Features_PinnedRowsColumns_04.png)
-
-Unpinning an already pinned row or column can be achieved through the __UnpinRow__ and __UnpinColumn__ methods:
-
-* __UnpinRow(int index)__: Unpins a row at a given index.
-
-* __UnpinColumn(int index)__: Unpins a column at a given index.
-
-## See also
-
-* [Editing]({%slug virtualgrid-editing%})
-
+## See also  
+* [Editing]({%slug virtualgrid-editing%})  
 * [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%})

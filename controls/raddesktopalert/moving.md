@@ -5,7 +5,7 @@ description: Check our &quot;Moving&quot; documentation article for the RadDeskt
 slug: raddesktopalert-moving
 tags: moving
 published: True
-position: 10
+position: 8
 ---
 
 # Moving

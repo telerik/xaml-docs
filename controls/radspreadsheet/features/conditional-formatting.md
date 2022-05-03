@@ -34,7 +34,7 @@ RadSpreadsheet supports many different types of formatting rules. All of them ar
 | Rule | Description |
 |---|---|
 | **ColorScaleRule** | Specificies a gradient range of colors that is used to give additional meaning to data by assigning certain values to colors in the gradient spectrum. |
-| **DataBarRule** | A graphical representation of the cells’ content. |
+| **DataBarRule** | A graphical representation of the cells' content. |
 | **IconSetRule** | Specifies a collection of icons that can be used to comment and classify data into categories. |
 | **BetweenRule** | This conditional formatting rule determines whether a cell value is inside a specified range. |
 | **NotBetweenRule** | This conditional formatting rule determines whether a cell value is outside a specified range. |
@@ -56,8 +56,8 @@ RadSpreadsheet supports many different types of formatting rules. All of them ar
 | **BottomRule** | This conditional formatting rule highlights cells whose values fall in the bottom N bracket. It can also work for N % instead of N items. It has two Boolean configuration properties: Items and Percent, which act like switches for these behaviors. |
 | **DuplicateValuesRule** | Matches values that are duplicate inside a specified range. |
 | **UniqueValuesRule** | Matches values that are unique inside a specified range. |
-| **ValueDistributionRule** | This conditional formatting rule highlights cells that are above or below the average for all values in the range. It has four Boolean configuration properties – `AboveAverage`, `AboveOrEqualToAverage`, `BelowAverage`, `BelowOrEqualToAverage`. |
-| **DateOccurringRule** | This conditional formatting rule compares the values entered in date format in the cells. It has four Boolean configuration properties – `AboveAverage`, `AboveOrEqualToAverage`, `BelowAverage`, `BelowOrEqualToAverage`. |
+| **ValueDistributionRule** | This conditional formatting rule highlights cells that are above or below the average for all values in the range. It has four Boolean configuration properties â€“ `AboveAverage`, `AboveOrEqualToAverage`, `BelowAverage`, `BelowOrEqualToAverage`. |
+| **DateOccurringRule** | This conditional formatting rule compares the values entered in date format in the cells. It has four Boolean configuration properties â€“ `AboveAverage`, `AboveOrEqualToAverage`, `BelowAverage`, `BelowOrEqualToAverage`. |
 
 
 ## Working with Conditional Formatting

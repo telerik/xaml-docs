@@ -12,21 +12,35 @@ position: 14
 
 This tutorial describes the Diagramming framework printing functionality.
 
-The __RadDiagram__ exposes a method and command that allow you to print its content.	  
+The `RadDiagram` exposes a method and command that allow you to print its content.	  
 
 ## RadDiagram Print Support
 
 ###  RadDiagram.Print() method		  
 
-The __RadDiagram.Print()__ method allows you to print the content of the Diagramming canvas. The __Print()__ method has one optional argument of type __RadDiagramPrintSettings__, which exposes the following members:			
+The `RadDiagram.Print()` method allows you to print the content of the Diagramming canvas. The `Print()` method has one optional argument of type `RadDiagramPrintSettings`, which exposes the following members:			
 
-* __Title__ - this property is of type __string__ and it determines the name of the printing job in the print queue of a printer				
+* `Title`&mdash;this property is of type `string` and it determines the name of the printing job in the print queue of a printer				
 
-* __PageMargin__ - this property is of type __Thickness__ and it provides control over the size of the document's page margins when printed.
+* `PageMargin`&mdash;this property is of type `Thickness` and it provides control over the size of the document's page margins when printed.
 	{% if site.site_name == 'WPF' %}
-	>You can take advantage of the __RadDiagramPrintPreview__ to see the __RadDiagram__ print document's page margins before printing.
+	>You can take advantage of the `RadDiagramPrintPreview` to see the RadDiagram print document's page margins before printing.
 	{% endif %}
-	
+
+* `DiagramPosition`&mdash;this property allows to customize the position of the RadDiagram over the print pages. The property is of type `DiagramPrintPosition`, which is enumeration with the following values:
+	* `Default`
+	* `TopLeft`
+	* `BottomLeft`
+	* `Center`
+	* `TopRight`
+	* `BottomRight`
+
+* `ScaleFactor`&mdash;this property gets the value that indicates the scale that is applied to the printed RadDiagram element.
+
+* `PageHorizontalCount`&mdash;this property gets the value that indicates the columns' count of the printed pages.
+
+* `PageVerticalCount`&mdash;this property gets the value that indicates the rows' count of the printed pages.
+
 #### __C#__
 {{region raddiagram-features-printing-2}}
     xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15)));		  
@@ -37,9 +51,9 @@ The __RadDiagram.Print()__ method allows you to print the content of the Diagram
     xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15)))		  
 {{endregion}}
 
-If you don't define any __RadDiagramPrintSettings__ when invoking the __Print()__ method, by default the Diagramming framework will name your printing job *"RadDiagram Print Document"* and it will set the __PageMargin__ to *15*.	
+If you don't define any `RadDiagramPrintSettings` when invoking the `Print()` method, by default the Diagramming framework will name your printing job __"RadDiagram Print Document"__ and it will set the `PageMargin` to `15`.	
 
-The __RadDiagramPrintSettings__'s constructor have an optional parameter that defines the resolution (__DPI__) used during printing. The default DPI is 96. If you need better quality of the print result you can pass bigger value in the settings' constructor.
+The `RadDiagramPrintSettings`'s constructor have an optional parameter that defines the resolution (`DPI`) used during printing. The default DPI is 96. If you need better quality of the print result you can pass bigger value in the settings' constructor.
 
 #### __C#__
 {{region raddiagram-features-printing-00}}
@@ -59,7 +73,7 @@ For the purpose of this tutorial we will try to print the sample Diagramming sol
 
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.			  
 
-Now let's add a Print __RadButton__ in our layout and handle its __Click__ event to invoke the __RadDiagram.Print()__ method:
+Now let's add a Print `RadButton` in our layout and handle its `Click` event to invoke the RadDiagram.Print() method:
 			
 #### __XAML__
 {{region raddiagram-features-printing-4}}
@@ -93,7 +107,7 @@ Now let's add a Print __RadButton__ in our layout and handle its __Click__ event
     End Sub
 {{endregion}}
 
-Now if you run your solution and hit the *Print* button:
+Now if you run your solution and hit the __Print__ button:
 ![Rad Diagram Features Printing Print](images/RadDiagram_Features_Printing_Print.png)
 
 A PrintDialog will be opened, allowing you to set up the printing operation:
@@ -102,7 +116,7 @@ A PrintDialog will be opened, allowing you to set up the printing operation:
 
 ### Print Command
 
-Telerik Diagramming Framework provides a __Print__ command as well. It is part of the __DiagramExtensionCommands__ class implementation defined in the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace and  you can apply it on your buttons and use it to invoke the print dialog:			
+Telerik Diagramming Framework provides a `Print` command as well. It is part of the `DiagramExtensionCommands` class implementation defined in the `Telerik.Windows.Controls.Diagrams.Extensions` namespace and  you can apply it on your buttons and use it to invoke the print dialog:			
 
 #### __XAML__
 {{region raddiagram-features-printing-7}}
@@ -114,23 +128,23 @@ Telerik Diagramming Framework provides a __Print__ command as well. It is part o
 					VerticalAlignment="Center"/>			  
 {{endregion}}
 
->You need to keep in mind that the __Print__ command can only be executed on a __RadDiagram__, populated with __DiagramItems__.			
+>You need to keep in mind that the Print command can only be executed on a `RadDiagram`, populated with `DiagramItems`.			
 
 ## Pages Preview Canvas
 
-With the Q1 2013 release, __RadDiagram__ supports pages preview canvas. The pages background is enabled by default but you can control its visibility and appearance through the following set of attached properties:		
+The RadDiagram supports pages preview canvas. The pages background is enabled by default but you can control its visibility and appearance through the following set of attached properties:		
 
-* __BackgroundPageGrid.IsGridVisible__ - this is a __Boolean__ property that controls the visibility of the page preview canvas. Its default value is __True__.			
+* `BackgroundPageGrid.IsGridVisible`&mdash;this is a `Boolean` property that controls the visibility of the page preview canvas. Its default value is `True`.			
 
-* __BackgroundPageGrid.PageSize__ - this property is of type __Size__ and it determines the size that describes a single page in the __RadDiagram__ surface. The default value of the property is a size of 1092x763 units - the size of an A4 page format.			
+* `BackgroundPageGrid.PageSize`&mdash;this property is of type `Size` and it determines the size that describes a single page in the `RadDiagram` surface. The default value of the property is a size of 1092x763 units - the size of an A4 page format.			
 
-* __BackgroundPageGrid.LineStroke__ - this property is of type __Brush__ and it specifies how the pages outline is painted.			
+* `BackgroundPageGrid.LineStroke`&mdash;this property is of type `Brush` and it specifies how the pages outline is painted.			
 
-* __BackgroundPageGrid.LineStrokeDashArray__ - this property gets or sets a collection of __Double__ values that indicate the pattern of dashes and gaps that is used to outline the pages.			
+* `BackgroundPageGrid.LineStrokeDashArray`&mdash;this property gets or sets a collection of `double` values that indicate the pattern of dashes and gaps that is used to outline the pages.			
 
-* __BackgroundPageGrid.LineStrokeThickness__ - this property is of type __double__ and it gets or sets the thickness of the lines that visualize the pages.			
+* `BackgroundPageGrid.LineStrokeThickness`&mdash;this property is of type `double` and it gets or sets the thickness of the lines that visualize the pages.			
 
->tip The __BackgroundPageGrid__ attached properties are defined in the __Telerik.Windows.Controls.Diagrams.Primitives__ namespace. This is why in order to use them you need to add a using statement for that namespace in code-behind or define an alias in XAML: `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"`
+>tip The `BackgroundPageGrid` attached properties are defined in the `Telerik.Windows.Controls.Diagrams.Primitives` namespace. This is why in order to use them you need to add a using statement for that namespace in code-behind or define an alias in XAML: `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"`
 
 The default look and size of the page preview canvas is demonstrated in the next snapshot:		
 
@@ -151,18 +165,18 @@ Customized PagesPreview canvas
 
 ![Rad Diagram Features Custom Pages](images/RadDiagram_Features_CustomPages.png)
 
->tip The __RadDiagram__ exposes an __IsBackgroundSurfaceVisible__ property that determines the visibility of the background surface and the pages preview canvas at the same time. It is important to have this in mind when considering whether to set the __IsBackgroundSurfaceVisible__ to __False__.
+>tip The `RadDiagram` exposes an `IsBackgroundSurfaceVisible` property that determines the visibility of the background surface and the pages preview canvas at the same time. It is important to have this in mind when considering whether to set the `IsBackgroundSurfaceVisible` to `False`.
 
 {% if site.site_name == 'WPF' %}
 ## RadDiagramPrintPreview
 
-With the official release of the __RadDiagrams__, Telerik an Extensions assembly to the diagrams assembly. The purpose of this assembly is to provide predefined Diagramming tools and controls to facilitate your efforts when creating Diagramming solution. One of the controls provided by the __Telerik.Windows.Controls.Diagrams.Extensions__ assembly is the __RadDiagramPrintPreview__ control.
+With the official release of the `RadDiagrams`, Telerik an Extensions assembly to the diagrams assembly. The purpose of this assembly is to provide predefined Diagramming tools and controls to facilitate your efforts when creating Diagramming solution. One of the controls provided by the `Telerik.Windows.Controls.Diagrams.Extensions` assembly is the `RadDiagramPrintPreview` control.
 
-> You can find more information about the __Extensions__ provided by __Telerik RadDiagrams__ [here]({%slug raddiagram-extensions%}). Also, please keep in mind that in order to take advantage of the controls provided in the assembly, you have to reference the following dlls in your project as well:
+> You can find more information about the `Extensions` provided by `Telerik RadDiagrams` [here]({%slug raddiagram-extensions%}). Also, please keep in mind that in order to take advantage of the controls provided in the assembly, you have to reference the following dlls in your project as well:
 >	- Telerik.Windows.Controls.Navigation
 >	- Telerik.Windows.Controls.Input
 
-The __RadDiagramPrintPreview__ is a stand-alone control which you can use to preview your __RadDiagram__ print document before printing it. You can also use it to choose the printer and the settings of the pages. Usually the control is used in a __Window__ dialog and this is why the next example illustrates how to wrap the control in a __RadWindow__ dialog.
+The `RadDiagramPrintPreview` is a stand-alone control which you can use to preview your `RadDiagram` print document before printing it. You can also use it to choose the printer and the settings of the pages. Usually the control is used in a `Window` dialog and this is why the next example illustrates how to wrap the control in a `RadWindow` dialog.
 
 #### __XAML__
 {{region raddiagram-features-printing-9}}
@@ -213,24 +227,27 @@ The __RadDiagramPrintPreview__ is a stand-alone control which you can use to pre
 	End Sub
 {{endregion}}
 	
-If you run this sample and hit the *PrintPreview* button, the following PrintPreview dialog will open:
+If you run this sample and hit the __PrintPreview__ button, the following PrintPreview dialog will open:
 ![Rad Diagram Features Printing PrintPreview](images/RadDiagram_Features_Printing_PrintPreview.png)
 
-__RadDiagramPrintPreview Properties__
+### RadDiagramPrintPreview Properties
 
-The __RadDiagramPrintPreview__ control exposes the following properties:
-* __Diagram__ - this property is of type __RadDiagram__ and it determines the Diagramming object that should be printed
+The `RadDiagramPrintPreview` control exposes the following properties:
+* `Diagram`&mdash;this property is of type `RadDiagram` and it determines the Diagramming object that should be printed
 
-* __ItemStyle__ - this property allows you to create a custom style for the __RadDiagramPrintPreviewItem__ which basically represents a page of the diagram print document.	
-	You can edit its default settings in Blend, if you select the RadDiagramPrintPreview object in the *Objects and Timeline* pane and then choose from the Object menu *Edit AdditionalStyles->Edit ItemStyle->Eit a Copy.... * The default structure of the __RadDiagramPrintPreviewItem ControlTemplate__ is as follows:  
+* `ItemStyle`&mdash;this property allows you to create a custom style for the `RadDiagramPrintPreviewItem` which basically represents a page of the diagram print document.	
+	You can edit its default settings in Blend, if you select the RadDiagramPrintPreview object in the __Objects and Timeline__ pane and then choose from the Object menu *Edit AdditionalStyles->Edit ItemStyle->Eit a Copy.... * The default structure of the `RadDiagramPrintPreviewItem ControlTemplate` is as follows:  
 	
 	![Rad Diagram Features Printing ItemStyle](images/RadDiagram_Features_Printing_PrintPreview_ItemStyle.png)
 
-__RadDiagramPrintPreview Methods and Events__
+* `PrintScaleFactor`&mdash;this property allows you to get or set the scale factor. The default value of this property is `1`.
+
+### RadDiagramPrintPreview Methods and Events
 
 The RadDiagramPrintPreview control exposes the following events:
-* __PreviewPrint__ - occurs when a print operation is about to begin
-* __Printed__ - occurs when the print operation is over
+* `PreviewPrint`&mdash;occurs when a print operation is about to begin
 
-The control also exposes a __Print(string title)__ method which has one required attribute - the name of the printing job.
+* `Printed`&mdash;occurs when the print operation is over
+
+The control also exposes a `Print(string title)` method which has one required attribute - the name of the printing job.
 {% endif %}

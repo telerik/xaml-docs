@@ -33,7 +33,7 @@ RadSpreadsheet supports many different types of formatting rules. All of them ar
 
 | Rule | Description |
 |---|---|
-| **ColorScaleRule** | Specificies a gradient range of colors that is used to give additional meaning to data by assigning certain values to colors in the gradient spectrum. |
+| **ColorScaleRule** | Specifies a gradient range of colors that is used to give additional meaning to data by assigning certain values to colors in the gradient spectrum. |
 | **DataBarRule** | A graphical representation of the cells' content. |
 | **IconSetRule** | Specifies a collection of icons that can be used to comment and classify data into categories. |
 | **BetweenRule** | This conditional formatting rule determines whether a cell value is inside a specified range. |

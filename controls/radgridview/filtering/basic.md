@@ -110,7 +110,11 @@ By default, a condition of the form `'Member IsEqualTo Value'` is generated for 
 
 ## Distinct Values Filtering
 
-The `GridViewColumn` base class exposes the `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` properties, which allow you to filter the column's distinct values. By setting the EnableDistinctValuesFiltering property to `True`, a `RadWatermarkTextBox` element will appear inside the FilteringControl. Through this element, the user can filter the distinct values of the column. The DistinctValuesSearchMode property allows you to change the criteria, by which the user input will filter the values. The exposed values of this property are `Contains`, `ContainsCaseSensitive`, `StartsWith`, and `StartsWithCaseSensitive`.
+The `GridViewColumn` base class exposes the `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` properties, which allow you to filter the column's distinct values.
+
+By setting the EnableDistinctValuesFiltering property to `True`, a `RadWatermarkTextBox` element will appear inside the FilteringControl. Through this element, the user can filter the distinct values of the column.
+
+The DistinctValuesSearchMode property allows you to change the criteria, by which the user input will filter the values. The exposed values of this property are `Contains`, `ContainsCaseSensitive`, `StartsWith`, and `StartsWithCaseSensitive`.
 
 >tip The `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` properties are meant to be used when the `FilteringMode` property of the RadGridView is set to `Popup`.
 
@@ -131,7 +135,7 @@ The following example shows how to utilize these properties.
 
 __Filtering the StadiumCapacity column's distinct values__
 
-![](images/gridview_filtering_basic_03.gif)
+![Filtering the StadiumCapacity column's distinct values](images/gridview_filtering_basic_03.gif)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 ---
 title: Language Culture Support
-page_title: Language Culture Support | RadVirtualKeyboard WPF
+page_title: Language Culture Support
 description: Check our &quot;Language Culture Support&quot; documentation article for the on-screen RadVirtualKeyboard WPF control.
 slug: radvirtualkeyboard-culture-support
 tags: culture,localization,language

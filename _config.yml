@@ -3761,6 +3761,11 @@ defaults:
         path: "controls/touchmanager"
     values:
         title_prefix: "WPF TouchManager"
+        
+    scope:
+        path: "controls/radvirtualkeyboard"
+    values:
+        title_prefix: "WPF VirtualKeyboard"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

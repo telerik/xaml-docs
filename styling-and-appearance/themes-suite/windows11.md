@@ -298,7 +298,7 @@ article table
 
 # Windows11 Theme
 
-With the __R2 202__ release of the __UI for WPF__ suite we have introduced the brand new `Windows 11 Theme`.
+With the __R2 2022__ release of the __UI for WPF__ suite we have introduced the brand new `Windows 11 Theme`.
 
 Inspired by the new refreshed Windows 11 operating system, the Windows 11 theme delivers a lot cleaner and smoother look and feel to your WPF apps. The team at Microsoft are well known for their eagerness to deliver the best possible user experience that we encounter every day and with the Windows 11 theme you will be able to easily bring it to your own apps.
 

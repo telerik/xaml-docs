@@ -57,12 +57,14 @@ The following list provides examples that demonstrate how to use glyphs:
 
 	#### __[XAML] Example 1: Using glyphs__
 	{{region common-styling-appearance-glyphs-overview-0}}
-		<TextBlock FontFamily=”{StaticResource TelerikWebUI}” 
+		<TextBlock FontFamily=”{x:Static telerik:RadGlyph.TelerikFontFamily}” 
 				FontSize=”16” 
 				Text=”{StaticResource GlyphHeart}” 
 				FontWeight=”Normal” 
 				Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”/>
 	{{endregion}}
+
+	>Prior to the **R2 2022** release you would use the **TelerikWebUI StaticResource** to set the FontFamily, but we now recommend using the **static TelerikFontFamily property**. The former font family is still available but provides a smaller set of available glyphs.
 
 * Set the content of the text-hosting element.
 
@@ -98,7 +100,7 @@ The following list provides examples that demonstrate how to use glyphs:
 	{{region common-styling-appearance-glyphs-overview-3}}
 		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10">
 			<TextBlock Text="{StaticResource GlyphLock}" 
-					FontFamily="{StaticResource TelerikWebUI}" 
+					FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" 
 					FontSize="16" 
 					Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, 
 					Path=(TextElement.Foreground)}" />
@@ -115,7 +117,7 @@ The following list provides examples that demonstrate how to use glyphs:
 	#### __[XAML] Example 5: Dynamic glyph change__
 	{{region common-styling-appearance-glyphs-overview-4}}
 		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
-			<TextBlock FontFamily="{StaticResource TelerikWebUI}" FontSize="16"
+			<TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" FontSize="16"
 				Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Path=(TextElement.Foreground)}" />
 			<telerik:RadToggleButton.Resources>
 				<Style TargetType="TextBlock">
@@ -167,7 +169,7 @@ If, for example, you have a **Glyph** property in your viewmodel which is of typ
 
 #### __[XAML] Example 7: Use the StringToGlyphConverter for the binding__
 {{region xaml-common-styling-appearance-glyphs-overview-7}}
-	<TextBlock FontFamily="{StaticResource TelerikWebUI}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
+	<TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
 {{endregion}}
 
 >tip Since R1 2019 the **StringToGlyphConverter** is built-in the UI for WPF suite so you can access it via the `telerik` namespace in xaml or code-behind. Read more about this in the [Converters]({%slug common-converters%}#stringtoglyphconverter) article.

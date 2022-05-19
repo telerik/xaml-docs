@@ -50,7 +50,7 @@ Attach to the scroll bar's ValueChanged event once the PdfViewer control is load
 	{
 		if (e.NewValue >= this.pdfViewer.VerticalScrollBar.Maximum)
 		{
-			// The user scrolled to the end of the document. Load the next one.
+			// The user scrolled to the end of the document. 
 		}
 	}
 

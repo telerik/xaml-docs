@@ -1,7 +1,7 @@
 ---
 title: Controls Documentation
 page_title: Controls Documentation
-description: Easily build next-generation applications with {% if site.site_name == 'Silverlight' %}100+ Silverlight{% else %}140+ WPF{% endif %} controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
+description: Easily build next-generation applications with {% if site.site_name == 'Silverlight' %}110+ Silverlight{% else %}150+ WPF{% endif %} controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True
@@ -19,7 +19,7 @@ position: 0
 Thank you for choosing {% if site.site_name == 'Silverlight' %}[Telerik UI for Silverlight](https://www.telerik.com/products/silverlight/overview.aspx){% else %}[Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx){% endif %}.
 
 {% if site.site_name == 'Silverlight' %}
-Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 100 UI controls for building rich line-of-business Silverlight applications.
+Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 110+ UI controls for building rich line-of-business Silverlight applications.
 
 Sharing the same codebase with Telerik WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development. 
 

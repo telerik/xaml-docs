@@ -39,8 +39,6 @@ Attach to the scroll bar's ValueChanged event once the PdfViewer control is load
 
 #### #### __[C#]__
 {{region kb-pdfviewer-scroll-to-last-page}}
-   
-
 	private void PdfViewer_Loaded(object sender, RoutedEventArgs e)
 	{
 		this.pdfViewer.VerticalScrollBar.ValueChanged += this.VerticalScrollBar_ValueChanged;
@@ -53,6 +51,7 @@ Attach to the scroll bar's ValueChanged event once the PdfViewer control is load
 			// The user scrolled to the end of the document. 
 		}
 	}
+{{endregion}}
 
 ## See Also
 

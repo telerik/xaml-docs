@@ -94,7 +94,7 @@ You could download the complete source code of the Silverlight Demos as well as 
 
 From the __Versions__ dropdown you can select an older version to download:
 
-![](images/Download_product_files_3.png)
+![](images/Download_product_files_31.png)
 
 >important Please note that if you do not see the desired version you can contact our [sales team](mailto:sales@telerik.com) and they will enable the version for download.
 

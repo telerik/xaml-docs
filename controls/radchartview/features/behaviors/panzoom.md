@@ -325,7 +325,7 @@ The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `M
 	</telerik:RadCartesianChart>   
 {{endregion}}
 
-#### __Figure 6: Stylized Drag Zoom Border__
+#### __Figure 6: Series axes with individual PanZoomBars__
 ![](images/radchart-features-scrollandzoom-individual-zoom-6.png)
 
 ## See Also  

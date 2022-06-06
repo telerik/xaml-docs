@@ -10,13 +10,11 @@ position: 3
 
 # Map Shape Data
 
-The previous visualization engine based on the InformationLayer class provides you with a set of shape objects, which are specifically designed to work with the RadMap:  MapEllipse, MapLine, MapPolygon, MapPolyline, MapRectangle and MapPath. All these classes are combination of the geographical data and visualization objects. This approach has several problems. For example, it makes impossible to create map shapes in a background thread and has limited support for input events.      
-
 The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.      
 
 You will be able to find equivalents to most of the Shapes available in {{ site.framework_name }}.      
 
->To learn more about the different ways of customizing the shape apperance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.        
+>To learn more about the different ways of customizing the shape appearance, please check the [Shape Appearance]({%slug radmap-visualization-layer-shape-appearance%}) topic.        
 
 The map shape data can be used identically to their visual element counterparts. This topic will focus briefly on showing you how to use the most important of them:      
 
@@ -31,13 +29,15 @@ The map shape data can be used identically to their visual element counterparts.
 
 ## EllipseData
 
-In contrast with MapEllipse which is used with InformationLayer, the Width and Height of the EllipseData are given in the spatial reference units (degrees by default) instead of the current distance unit (mile or kilometer).          
+The EllipseData class represents an ellipse given in geographical coordinates.
+
+In contrast with MapEllipse which is used with InformationLayer, the `Width` and `Height` of the `EllipseData` are given in the spatial reference units (degrees by default) instead of the current distance unit (mile or kilometer).          
 
 To use the EllipseData in your visualization layer you have to set the following of its properties:
         
-* Location - represents the location on the map on which the ellipse will be displayed.
+* **Location**: Represents the location on the map on which the ellipse will be displayed.
             
-* Width / Height - represent the width / height of the ellipse in spatial reference units (degrees by default).
+* **Width / Height**: Represent the width / height of the ellipse in spatial reference units (degrees by default).
             
 >Note that the top left corner coincides with the given location.
           
@@ -103,7 +103,9 @@ Here it is an example:
 
 ## LineData
 
-The most important properties of the LineData class are the __Point1__ and __Point2__ properties, which are of type Location. They define the start and the end points of the line. Here is an example:        
+The `LineData` class represents a line given in geographical coordinates.
+
+The most important properties of the `LineData` class are the `Point1` and `Point2` properties, which are of type `Location`. They define the start and the end points of the line. Here is an example:        
 
 #### __XAML__
 {{region radmap_visualization_layer_map_shape_data_1}}
@@ -159,7 +161,9 @@ The most important properties of the LineData class are the __Point1__ and __Poi
 
 ## PathData
 
-The PathData provides equivalents of the standard Geometry and Segment classes in WPF/Silverlight. Here is an example that uses LineSegmentData:        
+The `PathData` provides equivalents of the standard `Geometry` and `Segment` classes in {{ site.framework_name }}. It exposes a `Data` property of type `GeometryData` which can be set to an instance of the `PathGeometryData` which specifies the shape to be drawn.
+
+Here is an example that uses a `PathGeometryData` which in turn holds a `PathFigureData` figure composed of `LineSegmentData` segments:
 
 #### __XAML__
 {{region radmap_visualization_layer_map_shape_data_2}}
@@ -300,9 +304,105 @@ The PathData provides equivalents of the standard Geometry and Segment classes i
 
 ![radmap-visualization-layer-map-shape-data-path](images/radmap-visualization-layer-map-shape-data-path.png)
 
+As of **R2 2022 SP1** you can also use an instance of `CombinedGeometryData` as the Data of the `PathGeometryData`. The CombinedGeometryData represents a composite geometry which is a combination of two GeometryData objects. They can be combined via 4 `GeometryCombineMode` types:
+
+* **Union**: The two regions are combined by taking the union of both. The resulting geometry is geometry A + geometry B.
+* **Intersect**: The two regions are combined by taking their intersection. The new area consists of the overlapping region between the two geometries.
+* **Xor**: The two regions are combined by taking the area that exists in the first region but not the second and the area that exists in the second region but not the first. The new region consists of (A-B) + (B-A), where A and B are geometries.
+* **Exclude**: The second region is excluded from the first. Given two geometries, A and B, the area of geometry B is removed from the area of geometry A, producing a region that is A-B.
+
+#### __XAML__
+{{region xaml-radmap_visualization_layer_map_shape_data_6}}
+	<telerik:RadMap x:Name="radMap"
+	                ZoomLevel="7"
+	                Center="42.6957539183824, 24.8327663758679">
+		<telerik:RadMap.Provider>
+			<telerik:OpenStreetMapProvider />
+		</telerik:RadMap.Provider>
+		<telerik:VisualizationLayer x:Name="visualizationLayer">
+			<telerik:PathData>
+				<telerik:PathData.Data>
+					<telerik:CombinedGeometryData CombineMode="Intersect">
+						<telerik:CombinedGeometryData.Geometry1>
+							<telerik:EllipseGeometryData Center="42.6957539183824,23.3327663758679" RadiusX="0.4" RadiusY="0.4" />
+						</telerik:CombinedGeometryData.Geometry1>
+						<telerik:CombinedGeometryData.Geometry2>
+							<telerik:EllipseGeometryData Center="43.1957539183824,23.5427663758679" RadiusX="0.4" RadiusY="0.4" />
+						</telerik:CombinedGeometryData.Geometry2>
+					</telerik:CombinedGeometryData>
+				</telerik:PathData.Data>
+				<telerik:PathData.ShapeFill>
+					<telerik:MapShapeFill Fill="#6F3170ED" 
+									Stroke="Blue" 
+									StrokeThickness="2" />
+				</telerik:PathData.ShapeFill>
+			</telerik:PathData>
+		</telerik:VisualizationLayer>
+	</telerik:RadMap>
+{{endregion}}
+
+#### __C#__
+{{region cs-radmap_visualization_layer_map_shape_data_6}}
+	CombinedGeometryData combinedData = new CombinedGeometryData() { CombineMode = GeometryCombineMode.Xor };
+	combinedData.Geometry1 = new EllipseGeometryData()
+	{
+		Center = new Location(43.1957539183824, 23.5427663758679),
+		RadiusX = 0.4,
+		RadiusY = 0.4,
+	};
+
+	combinedData.Geometry2 = new EllipseGeometryData()
+	{
+		Center = new Location(42.6957539183824, 23.3327663758679),
+		RadiusX = 0.4,
+		RadiusY = 0.4,
+	};
+
+	PathData path = new PathData();
+	path.ShapeFill = new MapShapeFill()
+	{
+		Fill = new SolidColorBrush(Color.FromArgb(127, 0, 240, 255)),
+		Stroke = new SolidColorBrush(Colors.Red),
+		StrokeThickness = 1
+	};
+	path.Data = combinedData;
+
+	this.visualizationLayer.Items.Add(path);
+{{endregion}}
+
+#### __VB.NET__
+{{region vb-radmap_visualization_layer_map_shape_data_6}}
+	Dim combinedData As New CombinedGeometryData() With {.CombineMode = GeometryCombineMode.Xor}
+	combinedData.Geometry1 = New EllipseGeometryData() With {
+		.Center = New Location(43.1957539183824, 23.5427663758679),
+		.RadiusX = 0.4,
+		.RadiusY = 0.4
+	}
+
+	combinedData.Geometry2 = New EllipseGeometryData() With {
+		.Center = New Location(42.6957539183824, 23.3327663758679),
+		.RadiusX = 0.4,
+		.RadiusY = 0.4
+	}
+
+	Dim path As New PathData()
+	path.ShapeFill = New MapShapeFill() With {
+		.Fill = New SolidColorBrush(Color.FromArgb(127, 0, 240, 255)),
+		.Stroke = New SolidColorBrush(Colors.Red),
+		.StrokeThickness = 1
+	}
+	path.Data = combinedData
+
+	Me.visualizationLayer.Items.Add(path)
+{{endregion}}
+
+![RadMap Visualization Layer CombinedGeometryData](images/radmap-visualization-layer-map-shape-data-combined.png)
+
 ## PolygonData
 
-The difference between the standard Polygon and the PolygonData is that the Points property of the PolygonData is a set of Locations. Here is an example:        
+The `PolygonData` class represents polygon data in geographical coordinates.
+
+The difference between the standard Polygon and the PolygonData is that the `Points` property of the `PolygonData` is a set of Locations. Here is an example:        
 
 #### __XAML__
 {{region radmap_visualization_layer_map_shape_data_3}}
@@ -372,7 +472,9 @@ The difference between the standard Polygon and the PolygonData is that the Poin
 
 ## PolylineData
 
-The difference between the standard Polyline and the PolylineData is that the Points property of the PolylineData is a set of Locations. Here is an example:        
+The `PolylineData` class represents polyline data in geographical coordinates.
+
+The difference between the standard Polyline and the PolylineData is that the `Points` property of the `PolylineData` is a set of Locations. Here is an example:        
 
 #### __XAML__
 {{region radmap_visualization_layer_map_shape_data_4}}
@@ -439,13 +541,15 @@ The difference between the standard Polyline and the PolylineData is that the Po
 
 ## RectangleData
 
+The `RectangleData` class represents a rectangle given in geographical coordinates.
+
 To use the RectangleData in your visualization layer you have to set the following properties:       
 
-* Location - represents the location on the map, to which the ellipse is bound.            
+* **Location**: Represents the location on the map, to which the ellipse is bound.            
 
-* Width / Height - represent the width / height of the ellipse. Just like the Width and Height properties of the EllipseData class, they are specified in spatial reference units (degrees by default).            
+* **Width / Height**: Represent the width / height of the ellipse. Just like the Width and Height properties of the EllipseData class, they are specified in spatial reference units (degrees by default).            
 
-* RadiusX / RadiusY - represent the radius of the rectangle corners. Measured in spatial reference units.            
+* **RadiusX / RadiusY**: Represent the radius of the rectangle corners. Measured in spatial reference units.            
 
 >Note that the top left corner coincides with the given location.          
 
@@ -514,3 +618,9 @@ Here it is an example:
 {{endregion}}
 
 ![radmap-visualization-layer-map-shape-data-rectangle](images/radmap-visualization-layer-map-shape-data-rectangle.png)
+
+## See Also
+
+ * [Visualization Layer ]({%slug radmap-visualization-layer-introduction%})
+ * [Information Layer]({%slug radmap-features-information-layer%})
+ * [Map Shapes]({%slug radmap-features-map-shapes%})

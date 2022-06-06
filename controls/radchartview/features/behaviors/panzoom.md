@@ -274,10 +274,61 @@ You can use the DragZoomBorderStyle property of the RadCartesianChart in order t
 {{endregion}}
 
 #### __Figure 5: Stylized Drag Zoom Border__
-![](images/radchart-features-scrollandzoom-dragzoomborder-5.png)
+![](images/radchart-features-scrollandzoom-dragzoomborder-5.jpg)
 
-## See Also 
+## Separate Axis Zooming and Panning
 
+The Cartesian chart allows you to define separate axis for each chart series, thus displaying [multiple axes]({%slug radchartview-axes-multipleaxes%}). The pan/zoom related properties of the chart and the ChartPanAndZoomBehavior are zooming all axes simultaneously. To enable individual zooming/panning per axis, you can use the `AxisPanAndZoomExtensions` static class and its attached properties. The properties are used with a chart axis instance (like `LinearAxis`, `CategoricalAxis`, etc.).
+
+To display a PanZoomBar for a series axis, set the `AxisPanAndZoomExtensions.EnablePanAndZoom` attached property. 
+
+The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `MaxZoom`, `ZoomRangeStart` and `ZoomRangeEnd` properties of the `AxisPanAndZoomExtensions` class. These work the same as the chart zoom/pan properties described [previously in this article](#manual-scroll-and-zoom).
+
+#### __[XAML] Example 15: Showing pan zoom bar for the separate series axes__
+{{region radchart-features-scrollandzoom-14}}
+	<telerik:RadCartesianChart>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis />
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:LineSeries Stroke="#E84033">
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="10" />
+					<telerik:CategoricalDataPoint Category="B" Value="5" />
+					<telerik:CategoricalDataPoint Category="C" Value="10" />
+					<telerik:CategoricalDataPoint Category="D" Value="5" />
+					<telerik:CategoricalDataPoint Category="E" Value="10" />
+				</telerik:LineSeries.DataPoints>
+				<telerik:LineSeries.VerticalAxis>
+					<telerik:LinearAxis ElementBrush="#E84033" 
+										telerik:AxisPanAndZoomExtensions.EnablePanAndZoom="True"
+										telerik:AxisPanAndZoomExtensions.ZoomRangeStart="0.2"
+										telerik:AxisPanAndZoomExtensions.ZoomRangeEnd="0.8"/>
+				</telerik:LineSeries.VerticalAxis>
+			</telerik:LineSeries>
+			<telerik:LineSeries Stroke="#299B48">
+				<telerik:LineSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="A" Value="5" />
+					<telerik:CategoricalDataPoint Category="B" Value="10" />
+					<telerik:CategoricalDataPoint Category="C" Value="5" />
+					<telerik:CategoricalDataPoint Category="D" Value="10" />
+					<telerik:CategoricalDataPoint Category="E" Value="5" />
+				</telerik:LineSeries.DataPoints>
+				<telerik:LineSeries.VerticalAxis>
+					<telerik:LinearAxis ElementBrush="#299B48" HorizontalLocation="Right"
+										telerik:AxisPanAndZoomExtensions.EnablePanAndZoom="True"
+										telerik:AxisPanAndZoomExtensions.ZoomRangeStart="0.4"
+										telerik:AxisPanAndZoomExtensions.ZoomRangeEnd="1"/>
+				</telerik:LineSeries.VerticalAxis>
+			</telerik:LineSeries>
+		</telerik:RadCartesianChart.Series>
+	</telerik:RadCartesianChart>   
+{{endregion}}
+
+#### __Figure 6: Stylized Drag Zoom Border__
+![](images/radchart-features-scrollandzoom-individual-zoom-6.png)
+
+## See Also  
 * [Getting Started]({%slug radchartview-introduction%})
 * [Series and Axes]({%slug radchartview-series-and-axes%})
 * [Selection Behavior]({%slug radchartview-features-selection%})

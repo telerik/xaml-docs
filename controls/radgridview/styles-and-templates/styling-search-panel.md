@@ -26,6 +26,7 @@ You can apply a style to the Search Panel, similar to Example 1:
 
 #### __[XAML] Applying a style to the search panel of RadGridView__
 {{region gridview-styling-search-panel-0}}
+    <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewSearchPanelStyle}" -->
 	<Style TargetType="telerik:GridViewSearchPanel">
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="FontWeight" Value="Bold"></Setter>
@@ -57,7 +58,7 @@ __Appearance of the highlighted text after the style is applied__
 
 ## Change the Background Color of the Highlighted Cell
 
-Through the `HighlightedBackground` property you can modify the background color of the matched `GridViewCell` element when a search is performed. This property is exposed by the GridViewCell class and it is of type `Brush`.
+Through the `HighlightedBackground` property you can modify the background color of the matched `GridViewCell` element when a search as you type is performed. This property is exposed by the GridViewCell class and it is of type `Brush`.
 
 #### __[XAML] Set the HighlightedBackground property of the GridViewCell__
 {{region gridview-styling-search-panel-1}}

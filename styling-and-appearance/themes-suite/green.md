@@ -156,7 +156,7 @@ There are two palettes of colors which can be easily set by choosing one of the 
 	}
 {{endregion}}
 
->The `Dark` color variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it. 
+>important The `Dark` color variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it. 
 
 __Light and Dark color variations demonstrated with RadCalendar__
 

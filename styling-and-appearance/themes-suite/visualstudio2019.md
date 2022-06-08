@@ -269,6 +269,8 @@ __VisualStudio2019 theme color variations__
 
 ![VisualStudio2019 theme colors represented in RadTaskBoard](images/VisualStudio2019-theme-variations.PNG)
 
+>important The `Dark` variation of the theme is designed with dark background in mind. It is recommended to use such a background in your application when working with it. 
+
 ## Font Family and Font Size
 
 When using the `VisualStudio2019 Theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, Office2016, Green, Material, Fluent and Crystal themes.

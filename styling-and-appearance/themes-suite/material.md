@@ -287,6 +287,8 @@ __Material theme color variations__
 
 ![Material theme colors represented in RadCardView](images/Material-theme-variations.PNG)
 
+>important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when working with it.
+
 ## Font Family and Font Size
 
 When using the `Material theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.

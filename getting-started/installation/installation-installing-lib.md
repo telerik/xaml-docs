@@ -30,17 +30,23 @@ Alternatively you can __download the LIB assemblies__ from [your telerik.com acc
 
 1. Open the Download page of your telerik.com account.
 2. Find the Telerik UI for {{ site.framework_name }} product and open its download page.
-
-	![](images/installation-installing-lib-0.png)
-	
+{% if site.framework_name == 'WPF' %}
+![](images/installation-installing-lib-0.png)
+{% else %}
+![](images/installation-installing-lib-sl-0.png)
+{% endif %}
 3. Click on the __Latest Internal Build__ button. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
-	
-	![](images/installation-installing-lib-1.png)
-	
+{% if site.framework_name == 'WPF' %}
+![](images/installation-installing-lib-1.png)
+{% else %}
+![](images/installation-installing-lib-sl-1.png)
+{% endif %}
 To get a specific version of the LIB, open the __Internal Bulds tab__ on the download page. And select a version from the list.
-
+{% if site.framework_name == 'WPF' %}
 ![](images/installation-installing-lib-2.png)
-
+{% else %}
+![](images/installation-installing-lib-sl-2.png)
+{% endif %}
 ## Version Number Breakdown
 
 The numbers in the name of the dlls are determined by the source code build date. In other words, the version number corresponds to the date when the dlls were built.

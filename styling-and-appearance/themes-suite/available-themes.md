@@ -30,7 +30,8 @@ table th:nth-of-type(4) {
 
 Theme name | Appearance | Theme Palette | Variations 
 ---|---|---|---{% if site.site_name == 'WPF' %}
-**[Office 2019]({%slug common-styling-appearance-Office2019-theme%})** | ![Visual Studio 2019](images/Office2019Theme.png) | Yes | Light, Gray, Dark
+**[Windows 11]({%slug common-styling-appearance-windows11-theme%})** | ![Windows 11](images/Windows11Theme.png) | Yes | System, Light, Dark
+**[Office 2019]({%slug common-styling-appearance-Office2019-theme%})** | ![Office 2019](images/Office2019Theme.png) | Yes | Light, Gray, Dark
 **[Visual Studio 2019]({%slug common-styling-appearance-visualstudio2019-theme%})** | ![Visual Studio 2019](images/VisualStudio2019Theme.png) | Yes | Blue, Dark
 **[Crystal]({%slug common-styling-appearance-crystal-theme%})** | ![Crystal](images/CrystalTheme.png) | Yes | Light, Dark
 **[Fluent]({%slug common-styling-appearance-fluent-theme%})** | ![Fluent](images/FluentTheme.png) | Yes | Light, Dark

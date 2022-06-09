@@ -14,6 +14,12 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
+## What's Different in 2022 R2 SP1
+
+### Changed
+
+The obsoleted method __GetCurrentSelectedInline__ in the __ImageContextCommandBase__ class is now removed.
+
 ## What's Different in 2022 R2
 
 ### Changed

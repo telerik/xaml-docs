@@ -12,11 +12,9 @@ position: 4
 
 `RadWindow` allows you to display a custom icon in its top-left corner. To specify the icon you can use either the `Icon` or the `IconTemplate` properties.
 
-## Icon Property
+## Setting the Icon Property
 
-If you have a window-specific icon, use the `Icon` property.
-
->tip As the Icon property is of type `object` you can set it to any control that you like. If you want to have a more complex icon content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.
+You can display an icon in the RadWindow control's title bar, through its `Icon` property. This property is of type `object` and it allows you to set a value of any type.
 
 >important `RadWindow` is declared and opened from the code behind by default. The only way to use the RadWindow as a visual element in XAML is when it represents the entire UserControl. To learn more about that read [Use RadWindow as User Control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) article.
 
@@ -43,9 +41,9 @@ This will be the final result:
 
 ![Rad Window Features Window Icon 01](images/RadWindow_Features_Window_Icon_01.png)
 
-## IconTemplate Property
+## Setting the IconTemplate Property
 
-If you want to share a common icon layout structure for the content of multiple windows, define an appropriate `DataTemplate` and set it to the `IconTemplate` property of the RadWindow.
+You can define a custom `DataTemplate` for the `IconTemplate` property that will be displayed as a title bar icon.
 
 #### __[XAML] Setting the IconTemplate property in XAML__
 
@@ -71,9 +69,9 @@ If you want to share a common icon layout structure for the content of multiple 
 	radWindow.IconTemplate = TryCast(Me.Resources("WindowIconTemplate"), DataTemplate)
 {{endregion}}
 
-## IconMargin Property
+## Setting the IconMargin Property
 
-Through the `IconMargin` property of the `RadWindow`, you can control the `Margin` that is applied to the chosen `Icon`.
+You can control the `Margin` that is applied to the chosen `Icon`, through the `IconMargin` property of the `RadWindow`.
 
 #### __[XAML] Setting the IconMargin property in XAML__
 

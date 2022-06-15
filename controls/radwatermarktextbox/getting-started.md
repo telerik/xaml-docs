@@ -17,7 +17,9 @@ This tutorial will walk you through the required steps for using __RadWatermarkT
 
 ## Assembly References
 
-In order to use __RadWatermarkTextBox__ in your application, you need to add reference to the * __Telerik.Windows.Controls__ assembly.
+In order to use __RadWatermarkTextBox__ in your application, you need to add reference to the following assembly.
+
+* __Telerik.Windows.Controls__
 
 ## Adding RadWatermarkTextBox to the Project 
 

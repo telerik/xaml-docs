@@ -12,11 +12,11 @@ position: 6
 
 RadPropertyGrid now supports editing bit flag enum by exposing a new editor – __FlagEnumEditor__. It enables the user to store any combination of the values that are defined in the enumerator list:
 
-![Rad Property Grid Flag Enum Editor 5](images/RadPropertyGrid_FlagEnumEditor_5.png)
+![FlagEnumEditor Overview](images/RadPropertyGrid_FlagEnumEditor_5.png)
 
 You can define flag enum by setting __FlagsAttribute__ as follows:
 
-#### __[C#] Example 1: Defining flag enum__
+#### __[C#] Defining flag enum__
 
 	{{region cs-radpropertygrid-flagenumeditor_0}}
 	[Flags]
@@ -28,7 +28,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 1: Defining flag enum__
+#### __[VB.NET] Defining flag enum__
 
 	{{region vb-radpropertygrid-flagenumeditor_0}}
 	<Flags()>
@@ -45,11 +45,11 @@ Each element should contain name and a value (which should be degree of 2 – 1,
 
 Once you define your flag enum, you can edit it in RadPropertyGrid as follows:    
 
-![Rad Property Grid Flag Enum Editor 2](images/RadPropertyGrid_FlagEnumEditor_2.png)
+![FlagEnumEditor displaying enumeration values](images/RadPropertyGrid_FlagEnumEditor_2.png)
 
 Furthermore, if you define zero and -1 values in your flag enum (meaning no flags are set and all flags are set correspondingly), you can benefit from the built-in functionality for selecting and unselecting the elements of the enum:
 
-#### __[C#] Example 2: Defining flag enum__
+#### __[C#] Defining the flag enum__
 
 	{{region cs-radpropertygrid-flagenumeditor_1}}
 	[Flags]
@@ -63,7 +63,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: Defining flag enum__
+#### __[VB.NET] Defining the flag enum__
 
 	{{region vb-radpropertygrid-flagenumeditor_1}}
 	<Flags()>
@@ -80,7 +80,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 
-#### __[XAML] Example 4: Defining FlagEnumEditor__
+#### __[XAML] Defining the FlagEnumEditor__
 
 	{{region xaml-radpropertygrid-flagenumeditor_2}}
 	<telerik:PropertyDefinition Binding="{Binding Permission}">
@@ -92,8 +92,55 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 	</telerik:PropertyDefinition>
 {{endregion}}
 
-Thus your __FlagEnumEditor__ will look like:
+Thus the __FlagEnumEditor__ will look like this:
 
-![Rad Property Grid Flag Enum Editor 3](images/RadPropertyGrid_FlagEnumEditor_3.png)
+![FlagEnumEditor with None selected](images/RadPropertyGrid_FlagEnumEditor_3.png)
 
-![Rad Property Grid Flag Enum Editor 4](images/RadPropertyGrid_FlagEnumEditor_4.png)
+![FlagEnumEditor with All selected](images/RadPropertyGrid_FlagEnumEditor_4.png)
+
+## Display and Description Attributes
+
+As of **R2 2022 SP1**, the `FlagEnumEditor` control supports the `Display` and `Description` attributes which let you specify user-friendly and/or localizable strings for the enum values used in the user interface.
+
+#### __[C#] Using the Display and Description attributes__
+
+{{region cs-radpropertygrid-flagenumeditor_3}}
+    [Flags]
+    public enum Permissions
+    {
+        All = -1,
+        None = 0,
+        [Display(Name = "Reading")]
+        Read = 1,
+        [Description("Writing")]
+        Write = 2,
+        [Display(Name = "Executing")]
+        [Description("Exe")]
+        Execute = 4
+    }
+{{endregion}}
+
+#### __[VB.NET] Using the Display and Description attributes__
+
+{{region vb-radpropertygrid-flagenumeditor_3}}
+	<Flags>
+	Public Enum Permissions
+		All = -1
+		None = 0
+		<Display(Name := "Reading")>
+		Read = 1
+		<Description("Writing")>
+		Write = 2
+		<Display(Name := "Executing")><Description("Exe")>
+		Execute = 4
+	End Enum
+{{endregion}}
+
+![Enum Values from the Display and Description attributes](images/RadPropertyGrid_FlagEnumEditor_6.png)
+
+>The `Display` attribute takes precedence over the `Description` attribute.
+
+## See Also
+
+* [Data Annotations]({%slug radpropertygrid-data-annotations%})
+* [Collection Editors]({%slug radpropertygrid-collectioneditor%})

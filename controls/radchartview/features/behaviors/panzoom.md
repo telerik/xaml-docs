@@ -327,7 +327,7 @@ The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `M
 #### __Figure 6: Series axes with individual PanZoomBars__
 ![](images/radchart-features-scrollandzoom-individual-zoom-6.png)
 
-In case the `ChartPanAndZoomBehavior` is enabled the zooming/pan is applied to the main axes of the chart (assigned to the VerticalAxis and HorizontalAxis of RadCartesianChart. When you scroll the mouse wheel or use PanZoomBars of the main axes, the new zoom range is synchronized with the other (series) axes.
+In case the `ChartPanAndZoomBehavior` is enabled the zooming/pan is applied to the main axes of the chart (assigned to the VerticalAxis and HorizontalAxis of RadCartesianChart). When you scroll the mouse wheel or use PanZoomBars of the main axes, the new zoom range is synchronized with the other (series) axes.
 
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})

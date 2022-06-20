@@ -12,7 +12,7 @@ position: 4
 
 `RadWindow` allows you to display a custom icon in its top-left corner. To specify the icon you can use either the `Icon` or the `IconTemplate` properties.
 
-## Setting the Icon Property
+## Setting the Icon
 
 You can display an icon in the RadWindow control's title bar, through its `Icon` property. This property is of type `object` and it allows you to set a value of any type.
 
@@ -41,7 +41,7 @@ This will be the final result:
 
 ![Rad Window Features Window Icon 01](images/RadWindow_Features_Window_Icon_01.png)
 
-## Setting the IconTemplate Property
+## Setting the IconTemplate
 
 You can define a custom `DataTemplate` for the `IconTemplate` property that will be displayed as a title bar icon.
 
@@ -69,9 +69,9 @@ You can define a custom `DataTemplate` for the `IconTemplate` property that will
 	radWindow.IconTemplate = TryCast(Me.Resources("WindowIconTemplate"), DataTemplate)
 {{endregion}}
 
-## Setting the IconMargin Property
+## Setting the IconMargin
 
-You can control the `Margin` that is applied to the chosen `Icon`, through the `IconMargin` property of the `RadWindow`.
+You can control the margin that is applied to the chosen icon, through the `IconMargin` property of `RadWindow`.
 
 #### __[XAML] Setting the IconMargin property in XAML__
 

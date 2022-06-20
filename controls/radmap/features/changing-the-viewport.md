@@ -10,7 +10,7 @@ position: 0
 
 # Changing the Viewport
 
-The current viewport of the `RadMap` control translates to the currently visible area of the control's content. This area can be controlled by utilizing its `ZoomLevel`, `Zoom`, and `Center` properties.
+The viewport of the __Map__ control is the area currently visible within the map's bounds. This area can be controlled by utilizing the `ZoomLevel`, `Zoom`, and `Center` properties of `RadMap`.
 
 #### __[C#] Changing the current viewport__
 {{region changing-the-viewport-0}}
@@ -26,9 +26,9 @@ The current viewport of the `RadMap` control translates to the currently visible
 
 >tip To learn more about these properties, you can refer to the [Zooming](%slug radmap-features-zoom-modes%) and [Navigation](%slug radmap-features-navigation%) articles.
 
-In addition, you can utilize the `SetView` method of the RadMap control. This method exposes two overloads that will allow you to change the currently viewable area. 
+In addition, you can utilize the `SetView` method of the RadMap control. This method exposes two overloads that will allow you to change the currently visible area. 
 
-The first overload will change the viewport, by modifying the ZoomLevel and Center properties, so that the passed `LocationRect` object is completely visible. The second parameter is of the type `bool` and it indicates whether the zooming should use the fractional part of the calculated zoom level.
+The first overload will change the viewport, by modifying the `ZoomLevel` and `Center` properties, so that the area provided by the `LocationRect` object is completely visible. The second parameter is of the type `bool` and it indicates whether the zooming should use the fractional part of the calculated zoom level.
 
 #### __[C#] Using the first overload of the SetView method in a Click event__
 {{region changing-the-viewport-2}}
@@ -78,15 +78,15 @@ The second overload of the method allows you to specify a minimum padding that w
     End Sub
 {{endregion}}
 
-## Setting the Best View for the VisualizationLayer
+## Setting the Best View
 
-If you have a set of elements displayed by the `VisualizationLayer`, you might want to display all of them in the visible area of the map and to set the optimal zoom for them. This can be done by using the `Best View` feature of the `RadMap` control. To use it you have to call the `GetBestView` method of the VisualizationLayer and pass its items to it. This method will return a `LocationRect` object which represents the best view for the items. You can use it in order to adjust the RadMap center and zoom level.
+If you have a set of elements displayed by the `VisualizationLayer`, you might want to display all of them in the visible area of the map and to set the optimal zoom for them. This can be done by using the best view feature of the `RadMap` control. To use it, call the `GetBestView` method of the `VisualizationLayer` and pass its items to it. This method will return a `LocationRect` object which represents the best view for the items. You can use it in order to adjust the `RadMap` center and zoom level.
 
 ## __[C#] Setting the Best View of the RadMap control__
 {{region changing-the-viewport-6}}
     private void SetBestView()
 	{
-	    LocationRect rect = this.informationLayer.GetBestView(this.informationLayer.Items.Cast<object>());
+	    LocationRect rect = this.visualizationLayer.GetBestView(this.informationLayer.Items.Cast<object>());
 	    
         this.RadMap.SetView(rect, 300);
 	}
@@ -95,7 +95,7 @@ If you have a set of elements displayed by the `VisualizationLayer`, you might w
 ## __[VB.NET] Setting the Best View of the RadMap control__
 {{region changing-the-viewport-7}}
     Private Sub SetBestView()
-        Dim rect As LocationRect = Me.informationLayer.GetBestView(Me.informationLayer.Items.Cast(Of Object)())
+        Dim rect As LocationRect = Me.visualizationLayer.GetBestView(Me.informationLayer.Items.Cast(Of Object)())
 
         Me.RadMap.SetView(rect, 300)
     End Sub

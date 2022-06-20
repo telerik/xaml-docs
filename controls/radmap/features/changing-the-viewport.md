@@ -86,7 +86,7 @@ If you have a set of elements displayed by the `VisualizationLayer`, you might w
 {{region changing-the-viewport-6}}
     private void SetBestView()
 	{
-	    LocationRect rect = this.visualizationLayer.GetBestView(this.informationLayer.Items.Cast<object>());
+	    LocationRect rect = this.visualizationLayer.GetBestView(this.visualizationLayer.Items.Cast<object>());
 	    
         this.RadMap.SetView(rect, 300);
 	}
@@ -95,7 +95,7 @@ If you have a set of elements displayed by the `VisualizationLayer`, you might w
 ## __[VB.NET] Setting the Best View of the RadMap control__
 {{region changing-the-viewport-7}}
     Private Sub SetBestView()
-        Dim rect As LocationRect = Me.visualizationLayer.GetBestView(Me.informationLayer.Items.Cast(Of Object)())
+        Dim rect As LocationRect = Me.visualizationLayer.GetBestView(Me.visualizationLayer.Items.Cast(Of Object)())
 
         Me.RadMap.SetView(rect, 300)
     End Sub

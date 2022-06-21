@@ -83,7 +83,7 @@ The second overload of the method allows you to specify a minimum padding that w
 If you have a set of elements displayed by the `VisualizationLayer`, you might want to display all of them in the visible area of the map and to set the optimal zoom for them. This can be done by using the best view feature of the `RadMap` control. To use it, call the `GetBestView` method of the `VisualizationLayer` and pass its items to it. This method will return a `LocationRect` object which represents the best view for the items. You can use it in order to adjust the `RadMap` center and zoom level.
 
 #### __[C#] Setting the Best View of the RadMap control__  
-{{region changing-the-viewport-6}}  
+{{region changing-the-viewport-6}}
     private void SetBestView()
 	{
 	    LocationRect rect = this.visualizationLayer.GetBestView(this.visualizationLayer.Items.Cast<object>());
@@ -93,7 +93,7 @@ If you have a set of elements displayed by the `VisualizationLayer`, you might w
 {{endregion}}
 
 #### __[VB.NET] Setting the Best View of the RadMap control__  
-{{region changing-the-viewport-7}}  
+{{region changing-the-viewport-7}}
     Private Sub SetBestView()
         Dim rect As LocationRect = Me.visualizationLayer.GetBestView(Me.visualizationLayer.Items.Cast(Of Object)())
 

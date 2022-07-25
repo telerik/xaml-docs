@@ -39,13 +39,13 @@ To define custom keys layout you will need to create a special XML file and then
 	<RadVirtualKeyboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<Grid>
 			<Grid.RowDefinitions>
-				<RowDefinition Height="1*" />
-				<RowDefinition Height="5*" />
+				<RowDefinition Height="1\*" />
+				<RowDefinition Height="5\*" />
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="15*" />
-				<ColumnDefinition Width="3*" />
-				<ColumnDefinition Width="4*" />
+				<ColumnDefinition Width="15\*" />
+				<ColumnDefinition Width="3\*" />
+				<ColumnDefinition Width="4\*" />
 			</Grid.ColumnDefinitions>
 			<KeysLayout KeySpacing="0.1" Grid.Row="0" Grid.Column="0">
 				<Rows>

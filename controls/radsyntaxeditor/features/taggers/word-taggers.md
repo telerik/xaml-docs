@@ -27,7 +27,18 @@ The **WordTaggerBase** class works with the **ClassificationTag** and can be use
 * **ExcludedCode**
 * **WhiteSpace**
 
-Each of these types has a specified **TextFormatDefinition** which is used to display the matched words with a certain highlighting - foreground, background, border or underline.
+## TextFormatDefinition
+
+Each of these types has a specified **TextFormatDefinition** which is used to display the matched words with a certain highlighting - foreground, background, border, underline, font style or font weight.
+
+For example, you can highlight keywords in red and have the text appear bold and italic by adding the following definition:
+
+#### __[C#] Custom TextFormatDefinition__
+{{region cs-radsyntaxeditor-features-word-taggers-1}}
+    this.syntaxEditor.TextFormatDefinitions.AddLast(ClassificationTypes.Keyword, new TextFormatDefinition(new SolidColorBrush(Colors.Red), FontWeights.Bold, FontStyle = FontStyles.Italic));
+{{endregion}}
+
+## WordTaggerBase API
 
 The WordTaggerBase class exposes the following virtual methods:
 

@@ -5,7 +5,7 @@ description: Check our Green Theme for Telerik UI for {{ site.framework_name }}.
 slug: common-styling-appearance-green-theme
 tags: green,theme,dynamic,fontsize,fontfamily
 published: True
-position: 5
+position: 10
 ---
 
 <style>
@@ -121,24 +121,98 @@ article table
 
 # Green Theme
 
-The official Q1 2016 release of __UI for WPF__ brought a brand new `Green Theme` with two color variations – `Light` and `Dark`.
+The `Green` theme delivers a flat modern UI represented by two color variations – `Light` and `Dark` which are based on green accents.
 
-The following topic explains the specifics of the theme's color variations.
+Jump to the following topics to learn about the specifics of the theme's palette and features.
 
-* [Theme Color Variations](#theme-color-variations)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Green Palette Brushes](#green-palette-brushes)
-* [Theme Palette Brushes Description](#theme-palette-brushes-description)
-* [Changing Fonts](#changing-fonts)
-* [Changing CornerRadius](#changing-cornerradius)
+* [Default Theme Colors](#default-theme-colors)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Changing Font Properties](#changing-font-properties)
+* [Changing Corner Radius](#changing-corner-radius)
 * [Changing Opacity](#changing-opacity)
 
-## Theme Color Variations
+## Default Theme Colors
 
-There are two palettes of colors which can be easily set by choosing one of the two default color variations:
+Below you can find the differences between the two color variations. Every brush has relevant HEX value in the corresponding color variation.
+
+| Color name | Light | | Dark (default) | |
+| ---------- | ----- | --- | -------------- | --- |
+| __Colors, which are same in the two palettes__ |  |  |		
+| StrongColor | #FF646464 | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF646464 | <div class="theme-palette-color green-strongbrush-dark"></div> |
+| ValidationColor |	 #FFE60000 | <div class="theme-palette-color green-validationbrush-ligth"></div> | #FFE60000 | <div class="theme-palette-color green-validationbrush-dark"></div> |
+| FixedColor | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
+| ReadOnlyBackgroundColor | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
+| __Colors, which are different in the two palettes__ |  |  |
+| AccentHighColor | #FF4FA520 | <div class="theme-palette-color green-accenthighbrush-ligth"></div> | #FF2B7402 | <div class="theme-palette-color green-accenthighbrush-dark"></div> |
+| AccentLowColor | #FF008406 | <div class="theme-palette-color green-accentlowbrush-ligth"></div> | #FF86B90E | <div class="theme-palette-color green-accentlowbrush-dark"></div> |
+| SemiAccentLowColor | #59008406 | <div class="theme-palette-color green-semiaccentlowbrush-ligth"></div> | #5986B90E | <div class="theme-palette-color green-semiaccentlowbrush-dark"></div> |
+| MouseOverColor | #FF8EBC00 | <div class="theme-palette-color green-mouseoverbrush-ligth"></div> | #FF669933 | <div class="theme-palette-color green-mouseoverbrush-dark"></div> |
+| MainColor | #FFF1F1F1 | <div class="theme-palette-color green-mainbrush-ligth"></div> | #FF1B1B1F | <div class="theme-palette-color green-mainbrush-dark"></div> |
+| PrimaryColor | #FFE8E8E8 | <div class="theme-palette-color green-primarybrush-ligth"></div> | #FF2B2C2E | <div class="theme-palette-color green-primarybrush-dark"></div> |
+| AlternativeColor | #FFE0E0E0 | <div class="theme-palette-color green-alternativebrush-ligth"></div> | #FF1D1E21 | <div class="theme-palette-color green-alternativebrush-dark"></div> |
+| MarkerColor | #FF000000 | <div class="theme-palette-color green-markerbrush-ligth"></div> | #FFF1F1F1 | <div class="theme-palette-color green-markerbrush-dark"></div> |
+| BasicColor | #FF999999 | <div class="theme-palette-color green-basicbrush-ligth"></div> | #FF474747 | <div class="theme-palette-color green-basicbrush-dark"></div> |
+| SelectedColor | #FF353535	| <div class="theme-palette-color green-selectedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-selectedbrush-dark"></div> |
+| LowColor | #FF8D8D8D | <div class="theme-palette-color green-lowbrush-ligth"></div> | #FF343434 | <div class="theme-palette-color green-lowbrush-dark"></div> |
+| HighColor | #FFECECEC | <div class="theme-palette-color green-highbrush-ligth"></div> | #FF131313 | <div class="theme-palette-color green-highbrush-dark"></div> |
+| ComplementaryColor | #FFCACACA | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF444446 | <div class="theme-palette-color green-strongbrush-dark"></div> |
+
+## Default Theme Brushes
+
+Below you can find more details about each brush and where it is usually applied.
+
+### Common Brushes
+* `StrongBrush`&mdash;Gray by default and it is mainly used for filling paths in elements when they are in Normal state.
+* `ValidatonBrush`&mdash;Red by default and it is used for validation where such is applicable in our controls.
+* `FixedBrush`&mdash;White by default and it is the main color for text or paths which are over elements with validation background.
+
+### Accent Brushes
+* `AccentHighBrush`&mdash;A green brush.
+* `AccentLowBrush`&mdash;A slightly darker/lighter (depends on color variation) than the previous green brush. 
+* `SemiAccentLowBrush`&mdash;The same as AccentLowBrush but with 35% opacity.
+* `MouseOverBrush`&mdash;Used as a background or border brush of controls or elements when they are in MouseOver state.
+
+### Foreground Brushes
+* `MarkerBrush`&mdash;The default brush used as foreground color.
+* `SelectedBrush`&mdash;Used for paths’ fill in elements that are in MouseOver, Pressed or Selected state.
+
+### Background Brushes
+* `MainBrush`&mdash;Used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
+* `PrimaryBrush`&mdash;Used as a background of controls when in their Normal state, excluding controls with direct input.
+* `AlternativeBrush`&mdash;Used as an alternative background – i.e. for popups or where we want to distinguish one element from another.
+* `HighBrush`&mdash;Used as a background in RadMenu and RadTimeline.
+* `ComplementaryBrush`&mdash;Used as a background in RadRadialMenu and RadScheduleView.
+* `ReadOnlyBackgroundBrush`&mdash;Used as a background of controls in their ReadOnly state. Its default value is Transparent.
+
+### Border Brushes
+* `BasicBrush`&mdash;Used as a border brush of controls in their Normal state.
+* `LowBrush`&mdash;Used as a border brush of controls in their ReadOnly state.
+
+__Theme brushes preview__
+
+![Green Theme Image 02](../images/Common_Styling_Appearance_Green_Theme_02.png)
+
+## Changing Palette Colors
+
+The Green theme provides dynamic change of the palette colors responsible for the brushes used in the controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `GreenPalette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `GreenPalette.Palette.AccentHighColor` sets the color for `telerik:GreenResource ResourceKey=AccentHighBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-green-theme-0}}
+	GreenPalette.Palette.AccentHighColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Theme Variation
+
+The Green theme comes with two built-in colro variations:
 
 #### __[C#] The ColorVariation enumeration that determines which color variation should be used__
-{{region styling-appearance-green-theme-18}}
+{{region cs-styling-appearance-green-theme-1}}
 	/// <summary>
 	/// Represents theme color variations.
 	/// </summary>
@@ -162,12 +236,10 @@ __Light and Dark color variations demonstrated with RadCalendar__
 
 ![Green Theme Image 01](../images/Common_Styling_Appearance_Green_Theme_01.png)
 
-## Theme Variation Changing
+You can switch between the color variations by calling the `LoadPreset` method as shown below:
 
-You can switch between the color palettes by calling the `LoadPreset` method as shown below:
-
-#### __[C#] Changing the color variantion of the theme__
-{{region styling-appearance-green-theme-0}}
+#### __[C#] Changing the color variation of the theme__
+{{region cs-styling-appearance-green-theme-2}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);	
 
@@ -175,8 +247,8 @@ You can switch between the color palettes by calling the `LoadPreset` method as 
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
 {{endregion}}
 	
-#### __[VB.NET] Changing the color variantion of the theme__
-{{region styling-appearance-green-theme-1}}
+#### __[VB.NET] Changing the color variation of the theme__
+{{region vb-styling-appearance-green-theme-0}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
 
@@ -184,83 +256,18 @@ You can switch between the color palettes by calling the `LoadPreset` method as 
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light)
 {{endregion}}
 
-## Green Palette Brushes
+## Changing Font Properties
 
-Below you can find the differences between the two color variations. Every brush has relevant HEX value in the corresponding color variation.
-
-| Brush name | Light | | Dark (default) | |
-| ---------- | ----- | --- | -------------- | --- |
-| __Brushes, which are same in the two palettes__ |  |  |		
-| StrongBrush | #FF646464 | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF646464 | <div class="theme-palette-color green-strongbrush-dark"></div> |
-| ValidationBrush |	 #FFE60000 | <div class="theme-palette-color green-validationbrush-ligth"></div> | #FFE60000 | <div class="theme-palette-color green-validationbrush-dark"></div> |
-| FixedBrush | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
-| ReadOnlyBackgroundBrush | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-ligth"></div> | #00FFFFFF | <div class="theme-palette-color green-fixedbrush-dark"></div> |
-| __Brushes, which are different in the two palettes__ |  |  |
-| AccentHighBrush | #FF4FA520 | <div class="theme-palette-color green-accenthighbrush-ligth"></div> | #FF2B7402 | <div class="theme-palette-color green-accenthighbrush-dark"></div> |
-| AccentLowBrush | #FF008406 | <div class="theme-palette-color green-accentlowbrush-ligth"></div> | #FF86B90E | <div class="theme-palette-color green-accentlowbrush-dark"></div> |
-| SemiAccentLowBrush | #59008406 | <div class="theme-palette-color green-semiaccentlowbrush-ligth"></div> | #5986B90E | <div class="theme-palette-color green-semiaccentlowbrush-dark"></div> |
-| MouseOverBrush | #FF8EBC00 | <div class="theme-palette-color green-mouseoverbrush-ligth"></div> | #FF669933 | <div class="theme-palette-color green-mouseoverbrush-dark"></div> |
-| MainBrush | #FFF1F1F1 | <div class="theme-palette-color green-mainbrush-ligth"></div> | #FF1B1B1F | <div class="theme-palette-color green-mainbrush-dark"></div> |
-| PrimaryBrush | #FFE8E8E8 | <div class="theme-palette-color green-primarybrush-ligth"></div> | #FF2B2C2E | <div class="theme-palette-color green-primarybrush-dark"></div> |
-| AlternativeBrush | #FFE0E0E0 | <div class="theme-palette-color green-alternativebrush-ligth"></div> | #FF1D1E21 | <div class="theme-palette-color green-alternativebrush-dark"></div> |
-| MarkerBrush | #FF000000 | <div class="theme-palette-color green-markerbrush-ligth"></div> | #FFF1F1F1 | <div class="theme-palette-color green-markerbrush-dark"></div> |
-| BasicBrush | #FF999999 | <div class="theme-palette-color green-basicbrush-ligth"></div> | #FF474747 | <div class="theme-palette-color green-basicbrush-dark"></div> |
-| SelectedBrush | #FF353535	| <div class="theme-palette-color green-selectedbrush-ligth"></div> | #FFFFFFFF | <div class="theme-palette-color green-selectedbrush-dark"></div> |
-| LowBrush | #FF8D8D8D | <div class="theme-palette-color green-lowbrush-ligth"></div> | #FF343434 | <div class="theme-palette-color green-lowbrush-dark"></div> |
-| HighBrush | #FFECECEC | <div class="theme-palette-color green-highbrush-ligth"></div> | #FF131313 | <div class="theme-palette-color green-highbrush-dark"></div> |
-| ComplementaryBrush | #FFCACACA | <div class="theme-palette-color green-strongbrush-ligth"></div> | #FF444446 | <div class="theme-palette-color green-strongbrush-dark"></div> |
-
-## Theme Palette Brushes Description
-
-Below you can find more details about each brush and where it is usually applied.
-
-The first three colors have the same value in both color variations and are commonly used among all controls: 
-* `StrongBrush`&mdash;Gray by default and it is mainly used for filling paths in elements when they are in Normal state.
-* `ValidatonBrush`&mdash;Red by default and it is used for validation where such is applicable in our controls.
-* `FixedBrush`&mdash;White by default and it is the main color for text or paths which are over elements with validation background.
-
-The colors that have different HEX value can be ordered by purpose.
-
-First, we use four accent brushes which are green by default:
-* `AccentHighBrush`
-* `AccentLowBrush`
-* `SemiAccentLowBrush`&mdash;A Brush which has the same value as AccentLowBrush but with 35% alpha opacity.
-* `MouseOverBrush`&mdash;A Brush used as a background or border brush of controls or elements when they are in MouseOver state.
-
-The default brush used as foreground color is:
-* `MarkerBrush`
-
-Brush used for paths’ fill in elements that are in MouseOver, Pressed or Selected state:
-* `SelectedBrush`
-
-There are several brushes usually used as background color:
-* `MainBrush`&mdash;A Brush used as background of controls with direct input such as TextBox, PasswordBox, RadMaskedInput, Editable RadComboBox, RadAutoCompleteBox. Also, used as main background of elements that has different content with unpredictable background.
-* `PrimaryBrush`&mdash;A Brush used as a background of controls when in their Normal state, excluding controls with direct input.
-* `AlternativeBrush`&mdash;A Brush used as an alternative background – i.e. for popups or where we want to distinguish one element from another.
-* `HighBrush`&mdash;A Brush rarely used as a background. For example, in RadMenu and RadTimeline.
-* `ComplementaryBrush`&mdash;A Brush very rarely used as a background. For example, in RadRadialMenu and RadScheduleView.
-* `ReadOnlyBackgroundBrush`&mdash;A Brush used as a background brush of controls in their ReadOnly state. Its default value is Transparent.
-
-There are two brushes usually used as border brush:
-* `BasicBrush`&mdash;A Brush used as a border brush of controls in their Normal state.
-* `LowBrush`&mdash;A Brush used as a border brush of controls in their ReadOnly state.
-
-__The theme brushes demonstration__
-
-![Green Theme Image 02](../images/Common_Styling_Appearance_Green_Theme_02.png)
-
-## Changing Fonts 
-
-When using the `Green Theme` you can dynamically change the `FontSize` and `FontFamily_` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013 and VisualStudio2013 themes.
+When using the `Green Theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application.
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at one single point. The most commonly used font size in the theme is named FontSize and its default value is __12__. Bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily resource - its default value is `Segoe UI`.
 
 > Please note that for complex scenarios we strongly recommend setting the FontSize property only initially before the application is initialized. Also, we recommend values between 11px and 19px for it.
 
-All available FontSizes and FontFamily as well as their default values are:
+A list with all the available FontSize and FontFamily options with their default values follows:
 
 #### __[C#] Default FontFamily and FontSize values__
-{{region styling-appearance-green-theme-2}}
+{{region cs-styling-appearance-green-theme-3}}
 	GreenPalette.Palette.FontSizeXS = 10;
 	GreenPalette.Palette.FontSizeS = 11; 
 	GreenPalette.Palette.FontSize = 12;
@@ -270,7 +277,7 @@ All available FontSizes and FontFamily as well as their default values are:
 {{endregion}}
 	
 #### __[VB.NET] Default FontFamily and FontSize values__
-{{region styling-appearance-green-theme-3}}
+{{region vb-styling-appearance-green-theme-1}}
 	GreenPalette.Palette.FontSizeXS = 10
 	GreenPalette.Palette.FontSizeS = 11
 	GreenPalette.Palette.FontSize = 12
@@ -281,13 +288,11 @@ All available FontSizes and FontFamily as well as their default values are:
 
 More details regarding the rarely used font sizes can be found below:  
 * `GreenPalette.Palette.FontSizeXS` is used in: 
-
 	* TimeBar's SelectionRangeStyle in Telerik.Windows.Controls.DataVisualization
 	* Map’s Scale and MouseLocationIndicator in Telerik.Windows.Controls.DataVisualization
 	* AggregateResultsList, GridViewHeaderCell and GridViewGroupPanel in Telerik.Windows.Controls.GridView
-	
-* `GreenPalette.Palette.FontSizeS` is used in: 
 
+* `GreenPalette.Palette.FontSizeS` is used in: 
 	* ChartBaseStyle and TrackBallInfoControlStyle in Telerik.Windows.Controls.Chart.xaml
 	* HorizontalBulletGraphStyle and VerticalBullerGraphStyle in Telerik.Windows.Controls.DataVisualization	
 	* TimeBar's ItemControlStyle in Telerik.Windows.Controls.DataVisualization
@@ -297,18 +302,16 @@ More details regarding the rarely used font sizes can be found below:
 	* DiagramRulerStyle in Telerik.Windows.Controls.Diagrams.Extensions.xaml
 	
 * `GreenPalette.Palette.FontSizeL` is used in: 
-
 	* GanttView's GanttDragResizeVisualCueTemplate in Telerik.Windows.Controls.GanntView 
 	* ScheduleView TimeRulerGroupItems' and TimeRulerMonthViewGroupItem’s styles in Telerik.Windows.Controls.ScheduleView 
-	
-* `GreenPalette.Palette.FontSizeXL` is used in: 
 
+* `GreenPalette.Palette.FontSizeXL` is used in: 
 	* ScheduleView TimeRulerMonthViewItem’s styles in Telerik.Windows.Controls.ScheduleView 
 
 As the following example shows, you can change the default FontFamily from "Segoe UI" to "Comic Sans MS" and the FontSize from __12__ to __14__ on a click of a button:
 
 #### __[XAML] The view of the example__
-{{region styling-appearance-green-theme-4}}
+{{region xaml-styling-appearance-green-theme-0}}
 	<StackPanel> 
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/> 
 		 <telerik:RadButton x:Name="BtnChangeFontSize"
@@ -319,7 +322,7 @@ As the following example shows, you can change the default FontFamily from "Sego
 {{endregion}}
 
 #### __[C#] Changing the FontSize and the FontFamily__
-{{region styling-appearance-green-theme-5}}
+{{region cs-styling-appearance-green-theme-4}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		GreenPalette.Palette.FontSize = 14;
@@ -328,7 +331,7 @@ As the following example shows, you can change the default FontFamily from "Sego
 {{endregion}}
 
 #### __[VB.NET] Changing the FontSize and the FontFamily__	
-{{region styling-appearance-green-theme-6}}
+{{region vb-styling-appearance-green-theme-2}}
 	Private Sub OnButtonChangeFontSizeClick(sender As Object, e As RoutedEventArgs)
 		GreenPalette.Palette.FontSize = 14
 		GreenPalette.Palette.FontFamily = New FontFamily("Comic Sans MS")
@@ -339,12 +342,12 @@ __Change in theme fonts__
 
 ![Green Theme Image 03](../images/Common_Styling_Appearance_Green_Theme_03.png)
 	
-## Changing CornerRadius 
+## Changing Corner Radius 
 
-A new feature of the Green theme is exposing an easy way to modify the corner radius of many elements in your application. You can use the five new palette properties with default values as shown below:
+The Green theme also exposes an easy way to modify the corner radius of many elements in your application. You can use the following properties which are shown below with their default values:
 
 #### __[C#] Default CornerRadius values__	
-{{region styling-appearance-green-theme-7}}
+{{region cs-styling-appearance-green-theme-5}}
 	GreenPalette.Palette.CornerRadius = new CornerRadius(1, 1, 1, 1);
 	GreenPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 1, 1);
 	GreenPalette.Palette.CornerRadiusLeft = new CornerRadius(1, 0, 0, 1);
@@ -353,7 +356,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 {{endregion}}
 
 #### __[VB.NET] Default CornerRadius values__	
-{{region styling-appearance-green-theme-8}}
+{{region vb-styling-appearance-green-theme-3}}
 	GreenPalette.Palette.CornerRadius = New CornerRadius(1, 1, 1, 1)
 	GreenPalette.Palette.CornerRadiusBottom = New CornerRadius(0, 0, 1, 1)
 	GreenPalette.Palette.CornerRadiusLeft = New CornerRadius(1, 0, 0, 1)
@@ -362,7 +365,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 {{endregion}}
 
 #### __[XAML] The view of the example__	
-{{region styling-appearance-green-theme-9}}
+{{region xaml-styling-appearance-green-theme-1}}
 	<StackPanel>
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
 		 <telerik:RadComboBox x:Name="ComboBoxChangeCornerRadius"
@@ -374,7 +377,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 {{endregion}}
 
 #### __[C#] Changing the CornerRadius__	
-{{region styling-appearance-green-theme-10}}
+{{region cs-styling-appearance-green-theme-6}}
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -397,7 +400,7 @@ A new feature of the Green theme is exposing an easy way to modify the corner ra
 {{endregion}}
 	
 #### __[VB.NET] Changing the CornerRadius__	
-{{region styling-appearance-green-theme-11}}
+{{region vb-styling-appearance-green-theme-4}}
 	Public Sub New()
 		InitializeComponent()
 		Me.CornerRadiusComboBox.ItemsSource = Enumerable.Range(0, 10)
@@ -422,20 +425,20 @@ __Changes in corner radius__
 
 ## Changing Opacity 
 
-If you need to change the opacity of disabled elements, you can now easily do it by using the `DisabledOpacity` property of GreenPalette as follows: 
+If you need to change the opacity of disabled elements, you can easily do it by using the `DisabledOpacity` property of the GreenPalette as follows: 
 
 #### __[XAML] The view of the opacity__	
-{{region styling-appearance-green-theme-12}}
+{{region xaml-styling-appearance-green-theme-2}}
 	<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10" IsEnabled="False"/>
 {{endregion}}
 
 #### __[C#] Changing the DisabledOpacity__	
-{{region styling-appearance-green-theme-13}}
+{{region cs-styling-appearance-green-theme-7}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 {{endregion}}
 	
 #### __[VB.NET] Changing the DisabledOpacity__	
-{{region styling-appearance-green-theme-14}}
+{{region vb-styling-appearance-green-theme-5}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
 {{endregion}}
 	
@@ -446,7 +449,7 @@ __Changes in the disabled elements opacity__
 The same is applicable for the ReadOnly state of controls by using the exposed `ReadOnlyOpacity` property of GreenPalette. The default values are __0.2__ for the `DisabledOpacity` and __1__ for the `ReadOnlyOpacity` property. 
 
 #### __[XAML] The view of the example__		
-{{region styling-appearance-green-theme-15}}
+{{region xaml-styling-appearance-green-theme-3}}
 	<StackPanel Width="200" HorizontalAlignment="Center">
 		<TextBox Text="TextBox" Margin="5" />
 		<TextBox Text="Disabled TextBox" Margin="5" IsEnabled="False" />
@@ -455,13 +458,13 @@ The same is applicable for the ReadOnly state of controls by using the exposed `
 {{endregion}}
 
 #### __[C#] Changing the opacity__		
-{{region styling-appearance-green-theme-16}}
+{{region cs-styling-appearance-green-theme-8}}
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
 #### __[VB.NET] Changing the opacity__		
-{{region styling-appearance-green-theme-17}}
+{{region vb-styling-appearance-green-theme-6}}
 	GreenPalette.Palette.DisabledOpacity = 0.5
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
@@ -475,7 +478,7 @@ __Changes in the readonly elements opacity__
 When modifying fonts, colors, or other resources from the `GreenPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-green-theme-18}}
+{{region xaml-styling-appearance-green-theme-4}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

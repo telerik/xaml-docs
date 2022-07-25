@@ -1,11 +1,11 @@
 ---
-title: Windows8 and Windows8Touch Colors and Fonts
+title: Windows8 and Windows8Touch Themes
 page_title: Windows8 and Windows8Touch Colors and Fonts
 description: Check our Windows8 and Windows8Touch themes for Telerik UI for {{ site.framework_name }} and how to change their Colors and Fonts.
 slug: common-styles-appearance-colorizing-metro-theme
 tags: windows8,and,windows8touch,colors,and,fonts
 published: True
-position: 2
+position: 13
 ---
 
 <style>
@@ -17,15 +17,22 @@ position: 2
 }
 </style>
 
-# Windows8 and Windows8Touch Colors and Fonts
+# Windows8 and Windows8Touch Themes
 
 This article will show you how to easily modify `Windows8` and `Windows8Touch` themes and how to change the font of your application at runtime.
-      
-## Default Windows8 and Windows8Touch theme colors
+
+Jump to the following topics to learn about the specifics of the theme's palette and features.
+
+* [Windows8 and Windows8Touch Default Theme Colors](#windows8-and-windows8touch-default-theme-colors)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Font Properties](#changing-font-properties)
+* [Changing Opacity](#changing-opacity)
+
+## Windows8 and Windows8Touch Default Theme Colors
 
 The Windows8 has one color variation, but it is designed to be easily modified via the exposed colors in the theme palette. The default values of the brushes in the theme are listed below:
 
-|Brush name|Brush value||
+|Color name|Hex code||
 |----------|-----------|---|
 |MainColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
 |BasicColor|#FFD6D4D4|<div class="theme-palette-color" style="background: #D6D4D4"></div>|
@@ -36,7 +43,7 @@ The Windows8 has one color variation, but it is designed to be easily modified v
 
 The same is with Windows8Touch:
 
-|Brush name|Brush value||
+|Color name|Hex code||
 |----------|-----------|---|
 |MainColor|#FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
 |ValidationColor|#FFE23907|<div class="theme-palette-color" style="background: #E23907"></div>|
@@ -50,23 +57,17 @@ The same is with Windows8Touch:
 |MainForegroundColor|#FF000000|<div class="theme-palette-color" style="background: #000000"></div>|
 |MediumColor|#FFCCCCCC|<div class="theme-palette-color" style="background: #CCCCCC"></div>|
 
-## Colorizing the Windows8 and Windows8Touch Themes
+## Changing Palette Colors
 
-When Telerik developed the *Windows8* theme, we needed as little as 6 brushes for our controls. Exceptions are the Charts, ScheduleView, etc., which use some additional colors for their chart series, time markers and categories.
-        
+The Windows8 and Windows8Touch themes provide dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
 
-All Telerik controls use brushes that are linked to one major singleton object that contains the colors to be used for the Windows8 / Windows8Touch themes. They are public so you can easily modify the colors of the theme at one single point.
-       
+The general naming convention is: `Windows8Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `Windows8Palette.Palette.AccentColor` sets the color for `telerik:Windows8Resource ResourceKey=AccentBrush`. The same is applicable for the Windows8Touch theme as well.
 
-You can change the Windows8 / Windows8Touch colors by setting properties as shown in the following example.
-        
+Changing the colors can be achieved in code behind.
 
-__Example 1__: You can change colors in the Windows8 and Windows8Touch themes by setting the properties of the Palette object.
-        
+#### __[C#] Changing the palette's default colors in code-behind__
 
-#### __[C#] Changing the palette's default colors__
-
-{{region common-styles-appearance-colorizing-metro-theme_0}}
+{{region cs-styles-appearance-windows8-and-windows8touch-themes-0}}
 	Windows8Palette.Palette.MainColor = Colors.Black;
 	Windows8Palette.Palette.AccentColor = Colors.Orange;
 	Windows8Palette.Palette.BasicColor = Colors.DarkGray;
@@ -83,81 +84,12 @@ __Example 1__: You can change colors in the Windows8 and Windows8Touch themes by
 	...
 	{{endregion}}
 
-
-
-The most important brush, `AccentColor`, controls the colors of headers and selected items. The `MainColor` brush controls the backgrounds. Other brushes are used at various places but as long as you do not pick the same colors for different brushes, your design will be alright.
-        
-
-Since the PaletteInstance is a DependencyObject, you can also animate the colors at runtime.
-
 Figure 1: Some of the possible looks you will be able to easily achieve.
 ![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
 
-You can use the following brushes in your application to style your own interface using colors consistent with the `Windows8` theme:
-        
+#### __[XAML] Using the brush resources in XAML__
 
-* `AccentBrush`
-            
-
-* `BasicBrush`
-            
-
-* `StrongBrush`
-            
-
-* `MainBrush`
-            
-
-* `MarkerBrush`
-            
-
-* `ValidationBrush`
-            
-
-You can also use the following brushes in your application to style your own interface using colors consistent with the Windows8Touch theme:
-        
-
-* `AccentBrush`
-            
-
-* `EffectHighBrush`
-            
-
-* `EffectLowBrush`
-            
-
-* `HighBrush`
-            
-
-* `InvertedBrush`
-            
-
-* `InvertedForegroundBrush`
-            
-
-* `InvertedGradientBrush`
-            
-
-* `LowBrush`
-            
-
-* `MainBrush`
-            
-
-* `MainForegroundBrush`
-            
-
-* `MainGradientBrush`
-            
-
-* `MediumBrush`
-            
-
-* `ValidationBrush`
-
-#### __[XAML] Using the resources in XAML__
-
-{{region common-styles-appearance-colorizing-metro-theme_1}}
+{{region xaml-styles-appearance-windows8-and-windows8touch-themes-0}}
 	<UserControl x:Class="Windows8ThemeColors.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"		
@@ -185,18 +117,19 @@ __Result of the used resources__
 
 ![Common Windows 8 Colors 01](../images/Common_Windows8_Colors_01.png)
 
-## Changing Fonts
+## Changing Font Properties
 
-All Telerik controls use resources that are linked to one major singleton object that contains the `FontSize` and `FontFamily` properties used for both themes. Those properties are public so you can easily modify those theme resources at one single point. The property for the most commonly used FontSize in both themes is named FontSize and the property for most commonly used FontFamily resource is named FontFamily and it is set to `Segoe UI`. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as RibbonView, Gauge, etc. 
+When using any of these themes you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
+
+Those properties are public so you can easily modify them at one single point. The property for the most commonly used FontSize in both themes is named FontSize and the property for most commonly used FontFamily resource is named FontFamily and it is set to `Segoe UI`. Bigger FontSizes are used for headers and footers while smaller FontSizes are used for complex controls such as RibbonView, Gauge, etc. 
 
 The following example, shown after the note below, shows these resources and their default values for the  __Windows8Theme__. You can modify each of them based on your needs.
 {% if site.site_name == 'WPF' %}
 >important When you change these resources, you should ensure that the __Windows8ResourceDictionary__ / __Windows8TouchResourceDictionary__ is merged to App.xaml in the following way:
-             
 
 #### __[XAML]__
 
-{{region common-styles-appearance-colorizing-metro-theme_3}}
+{{region xaml-styles-appearance-windows8-and-windows8touch-themes-1}}
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -211,7 +144,7 @@ The following example, shown after the note below, shows these resources and the
 
 #### __[C#] Setting the FontSize and FontFamily properties of the themes' palettes__
 
-{{region common-styles-appearance-colorizing-metro-theme_4}}
+{{region cs-styles-appearance-windows8-and-windows8touch-themes-1}}
 	//Windows8 Resources
 	Windows8Palette.Palette.FontSizeXS = 10;
 	Windows8Palette.Palette.FontSizeS = 11;
@@ -235,13 +168,11 @@ The following example, shown after the note below, shows these resources and the
 	Windows8TouchPalette.Palette.FontFamilyStrong = new FontFamily("Segoe UI Semibold");
 {{endregion}}
 
-The Q1 2013 release of __Telerik UI {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}__ introduced features that allow you to dynamically change the FontSize and FontFamily properties of all components for Windows8 and Windows8Touch themes.     
-
 This example shows how you can increase the __FontSize__ of a __RadCalendar__ with the click of a button.        
 
 #### __[XAML]__
 
-{{region common-styles-appearance-colorizing-metro-theme_5}}
+{{region xaml-styles-appearance-windows8-and-windows8touch-themes-2}}
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*"/>
@@ -254,7 +185,7 @@ This example shows how you can increase the __FontSize__ of a __RadCalendar__ wi
 
 #### __[C#]__
 
-{{region common-styles-appearance-colorizing-metro-theme_6}}
+{{region cs-styles-appearance-windows8-and-windows8touch-themes-2}}
 	public MainPage()
 	{
 	    StyleManager.ApplicationTheme = new Windows8Theme();
@@ -277,12 +208,12 @@ __Result of clicking the button__
 If you need to change the opacity of the disabled elements, you can now easily do so by using the `DisabledOpacity` property of the `Windows8Palette`. Its default value is __0.5__. 
 
 #### __[C#] Changing the opacity__		
-{{region cs-common-styles-appearance-colorizing-metro-theme-7}}
+{{region cs-styles-appearance-windows8-and-windows8touch-themes-3}}
 	Windows8Palette.Palette.DisabledOpacity = 0.2;
 {{endregion}}
 	
 #### __[VB.NET] Changing the opacity__		
-{{region vb-common-styles-appearance-colorizing-metro-theme-8}}
+{{region vb-styles-appearance-windows8-and-windows8touch-themes-0}}
 	Windows8Palette.Palette.DisabledOpacity = 0.2
 {{endregion}}
 

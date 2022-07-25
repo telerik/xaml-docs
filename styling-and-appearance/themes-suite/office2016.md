@@ -2,10 +2,10 @@
 title: Office2016 Theme
 page_title: Office2016 Theme
 description: Achieve an appearance similar to the Microsoft Office 2016 productivity suite by using the Office2016 theme.
-slug: common-styling-appearance-office2016-theme
+slug: common-styling-appearance-office2016-theme-theme
 tags: office2016,theme,dynamic,fontsize,fontfamily
 published: True
-position: 6
+position: 9
 ---
 
 <style>
@@ -16,58 +16,58 @@ position: 6
 	border: 1px solid black;
 }
 
-.office2016-mainbrush {	
+.office2016-theme-mainbrush {	
 	background: #FFFFFF;
 }
-.office2016-primarybrush {	
+.office2016-theme-primarybrush {	
 	background: #E6E6E6;
 }
-.office2016-complementarybrush {	
+.office2016-theme-complementarybrush {	
 	background: #E1E1E1;
 }
-.office2016-alternativebrush {	
+.office2016-theme-alternativebrush {	
 	background: #F1F1F1;
 }
-.office2016-basicbrush {	
+.office2016-theme-basicbrush {	
 	background: #ABABAB;
 }
-.office2016-markerbrush {	
+.office2016-theme-markerbrush {	
 	background: #444444;
 }
-.office2016-markerinvertedbrush {	
+.office2016-theme-markerinvertedbrush {	
 	background: #F9F9F9;
 }
-.office2016-iconbrush {	
+.office2016-theme-iconbrush {	
 	background: #444444;
 }
-.office2016-validationbrush {	
+.office2016-theme-validationbrush {	
 	background: #E81123;
 }
-.office2016-accentbrush {	
+.office2016-theme-accentbrush {	
 	background: #2A579A;
 }
-.office2016-accentmouseoverbrush {	
+.office2016-theme-accentmouseoverbrush {	
 	background: #3E6DB6;
 }
-.office2016-accentpressedbrush {	
+.office2016-theme-accentpressedbrush {	
 	background: #19478A;
 }
-.office2016-accentfocusedbrush {	
+.office2016-theme-accentfocusedbrush {	
 	background: #88C3FF;
 }
-.office2016-mouseoverbrush {	
+.office2016-theme-mouseoverbrush {	
 	background: #C5C5C5;
 }
-.office2016-pressedbrush {	
+.office2016-theme-pressedbrush {	
 	background: #AEAEAE;
 }
-.office2016-selectedbrush {	
+.office2016-theme-selectedbrush {	
 	background: #EBEBEB;
 }
-.office2016-readonlybackgroundbrush {	
+.office2016-theme-readonlybackgroundbrush {	
 	background: #FFFFFF;
 }
-.office2016-readonlyborderbrush {	
+.office2016-theme-readonlyborderbrush {	
 	background: #ABABAB;
 }
 
@@ -79,45 +79,45 @@ article table
 
 # Office2016 Theme
 
-The official __R3 2016__ release of UI for WPF includes a brand new `Office2016 Theme`. 
+The `Office2016 Theme` delivers a flat modern UI represented by a single color variation, designed to be easily customized.
 
-The following topic explains the specifics of the theme's palette and features.
+Jump to the following topics to learn about the specifics of the theme's palette and features.
 
-* [Default theme colors](#default-theme-colors)
-* [Office2016 Palette Brushes](#office2016-palette-brushes)
-* [Changing Fonts](#changing-fonts)
-* [Glyphs](#glyphs)
+* [Default Theme Colors](#default-theme-colors)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Font Properties](#changing-font-properties)
 * [Changing FocusThickness](#changing-focusthickness)
-* [Changing CornerRadius](#changing-cornerradius)
-* [ReadOnlyBackgroundBrush and ReadOnlyBorderBrush](#readonlybackgroundbrush-and-readonlyborderbrush)
-* [Changing DisabledOpacity](#changing-disabledopacity)
+* [Changing Corner Radius](#changing-corner-radius)
+* [Using Glyphs](#using-glyphs)
+* [Changing Opacity](#changing-opacity)
 
-## Default theme colors
+## Default Theme Colors
 
 The Office2016 has one color variation, but it is designed to be easily modified via the exposed colors in the theme palette. The default values of the brushes in the theme are listed below:
 
-|Brush name|Brush value||
+|Color name|Hex code||
 |----------|-----------|---|
-|MainBrush|#FFFFFFFF|<div class="theme-palette-color office2016-mainbrush"></div>|
-|PrimaryBrush|#FFE6E6E6|<div class="theme-palette-color office2016-primarybrush"></div>|
-|ComplementaryBrush|#FFE1E1E1|<div class="theme-palette-color office2016-complementarybrush"></div>|
-|AlternativeBrush|#FFF1F1F1|<div class="theme-palette-color office2016-alternativebrush"></div>|
-|BasicBrush|#FFABABAB|<div class="theme-palette-color office2016-basicbrush"></div>|
-|MarkerBrush|#FF444444|<div class="theme-palette-color office2016-markerbrush"></div>|
-|MarkerInvertedBrush|#FFF9F9F9|<div class="theme-palette-color office2016-markerinvertedbrush"></div>|
-|IconBrush|#FF444444|<div class="theme-palette-color office2016-iconbrush"></div>|
-|ValidationBrush|#FFE81123|<div class="theme-palette-color office2016-validationbrush"></div>|
-|AccentBrush|#FF2A579A|<div class="theme-palette-color office2016-accentbrush"></div>|
-|AccentMouseOverBrush|#FF3E6DB6|<div class="theme-palette-color office2016-accentmouseoverbrush"></div>|
-|AccentPressedBrush|#FF19478A|<div class="theme-palette-color office2016-accentpressedbrush"></div>|
-|AccentFocusedBrush|#FF88C3FF|<div class="theme-palette-color office2016-accentfocusedbrush"></div>|
-|MouseOverBrush|#FFC5C5C5|<div class="theme-palette-color office2016-mouseoverbrush"></div>|
-|PressedBrush|#FFAEAEAE|<div class="theme-palette-color office2016-pressedbrush"></div>|
-|SelectedBrush|#FFEBEBEB|<div class="theme-palette-color office2016-selectedbrush"></div>|
-|ReadOnlyBackgroundBrush|#FFFFFFFF|<div class="theme-palette-color office2016-readonlybackgroundbrush"></div>|
-|ReadOnlyBorderBrush|#FFABABAB|<div class="theme-palette-color office2016-readonlyborderbrush"></div>|
+|MainColor|#FFFFFFFF|<div class="theme-palette-color office2016-theme-mainbrush"></div>|
+|PrimaryColor|#FFE6E6E6|<div class="theme-palette-color office2016-theme-primarybrush"></div>|
+|ComplementaryColor|#FFE1E1E1|<div class="theme-palette-color office2016-theme-complementarybrush"></div>|
+|AlternativeColor|#FFF1F1F1|<div class="theme-palette-color office2016-theme-alternativebrush"></div>|
+|BasicColor|#FFABABAB|<div class="theme-palette-color office2016-theme-basicbrush"></div>|
+|MarkerColor|#FF444444|<div class="theme-palette-color office2016-theme-markerbrush"></div>|
+|MarkerInvertedColor|#FFF9F9F9|<div class="theme-palette-color office2016-theme-markerinvertedbrush"></div>|
+|IconColor|#FF444444|<div class="theme-palette-color office2016-theme-iconbrush"></div>|
+|ValidationColor|#FFE81123|<div class="theme-palette-color office2016-theme-validationbrush"></div>|
+|AccentColor|#FF2A579A|<div class="theme-palette-color office2016-theme-accentbrush"></div>|
+|AccentMouseOverColor|#FF3E6DB6|<div class="theme-palette-color office2016-theme-accentmouseoverbrush"></div>|
+|AccentPressedColor|#FF19478A|<div class="theme-palette-color office2016-theme-accentpressedbrush"></div>|
+|AccentFocusedColor|#FF88C3FF|<div class="theme-palette-color office2016-theme-accentfocusedbrush"></div>|
+|MouseOverColor|#FFC5C5C5|<div class="theme-palette-color office2016-theme-mouseoverbrush"></div>|
+|PressedColor|#FFAEAEAE|<div class="theme-palette-color office2016-theme-pressedbrush"></div>|
+|SelectedColor|#FFEBEBEB|<div class="theme-palette-color office2016-theme-selectedbrush"></div>|
+|ReadOnlyBackgroundColor|#FFFFFFFF|<div class="theme-palette-color office2016-theme-readonlybackgroundbrush"></div>|
+|ReadOnlyBorderColor|#FFABABAB|<div class="theme-palette-color office2016-theme-readonlyborderbrush"></div>|
 
-## Office2016 Palette Brushes
+## Default Theme Brushes
 
 Below you can find more details about each brush and where it is usually applied.
 
@@ -147,22 +147,45 @@ There are several brushes used as background color other than the MainBrush.
 * `AlternativeBrush`&mdash;This brush is used as an alternative background – i.e. for popups or if we want to distinguish one element from another and for more complex controls – RadRichTextBox, RadImageEditor, RadTabControlItem. 
 * `ComplementaryBrush`&mdash;This is used for background of components in more complex controls or their states. For example in RadOutlookBar, RadPanelBar, RadTreeView.
 
-There are two read-only brushes in the Office2016 palette:
+The default stroke / border brushes follow:
+
+* `BasicBrush`&mdash;This brush is grey and it is used as the default border brush of the controls while in normal state.
+* `IconBrush`&mdash;This brush is black by default and it is used for glyphs and paths.
+
+There are two read-only brushes as well:
 
 * `ReadOnlyBackgroundBrush`&mdash;This brush is white by default and it is used as a background brush of the controls while in read-only state.
 * `ReadOnlyBorderBrush`&mdash;This brush is light gray by default and it is used as a border brush of the controls while in read-only state.
 
-<!-- -->
-* `BasicBrush`&mdash;This brush is grey and it is used as the default border brush of the controls while in normal state.
-* `IconBrush`&mdash;This brush is black by default and it is used for glyphs and paths.
+And here is an example of how to change them:
+
+#### __[C#] Changing the read-only colors__
+{{region cs-styling-appearance-office2016-theme-0}}
+	Office2016Palette.Palette.ReadOnlyBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFBDD");
+	Office2016Palette.Palette.ReadOnlyBorderColor = (Color)ColorConverter.ConvertFromString("#5F5F5F");
+{{endregion}}
+
 
 __Theme colors__
 
 ![](../images/common-styling-appearance-office2016-theme-0.png)	
 
-## Changing Fonts
+## Changing Palette Colors
 
-When using the Office2016 theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, and Green themes.
+Office2016 provides dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `Office2016Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `Office2016Palette.Palette.AccentColor` sets the color for `telerik:Offie2016Resource ResourceKey=AccentBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-office2016-theme-1}}
+	Office2016Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Font Properties
+
+When using the Office2016 theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is named FontSize and its default value is __12__. 
 
@@ -171,7 +194,7 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 The following example shows the default font sizes and families.
 
 #### __[C#] Default FontSize and FontFamily__
-{{region styling-appearance-office2016-0}}
+{{region cs-styling-appearance-office2016-theme-2}}
 	Office2016Palette.Palette.FontSizeS = 10;
 	Office2016Palette.Palette.FontSize = 12;
 	Office2016Palette.Palette.FontSizeL = 14;
@@ -181,7 +204,7 @@ The following example shows the default font sizes and families.
 The following examples show how to change the default FontFamily from "Segoe UI" to "Times New Roman" and the FontSize from __12__ to __14__ on a click of a button.
 
 #### __[XAML] Example view definition__
-{{region styling-appearance-office2016-1}}
+{{region xaml-styling-appearance-office2016-theme-0}}
 	<StackPanel>
 		<telerik:RadCalendar HorizontalAlignment="Center" />
 		<telerik:RadButton Content="Change Font" Click=" OnButtonChangeFontSizeClick " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 5 0 0"/>
@@ -189,7 +212,7 @@ The following examples show how to change the default FontFamily from "Segoe UI"
 {{endregion}}
 	
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region styling-appearance-office2016-2}}
+{{region cs-styling-appearance-office2016-theme-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2016Palette.Palette.FontSize = 14;
@@ -201,28 +224,66 @@ __Setting FontSize and FontFamily__
 
 ![](../images/common-styling-appearance-office2016-theme-1.png)	
 
-## Glyphs
 
-With Office2016 theme we are introducing a new approach to add icons and icon-like images. Instead of images or paths we are using a font of glyphs by default. The `TelerikWebUI` font provides over 400 scalable vector glyphs that are available for use to our clients. We have chosen this approach because it provides a number of advantages and benefits.
+## Changing FocusThickness
+
+The `Office2016` theme palette includes a `FocusThickness` property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it is easily changeable in a similar way to the other palette properties.
+
+#### __[C#] Setting focus border thickness__
+{{region cs-styling-appearance-office2016-theme-4}}
+	Office2016Palette.Palette.FocusThickness = new Thickness(1);
+{{endregion}}
+	
+__Setting the focus border thickness__
+
+![](../images/common-styling-appearance-office2016-theme-3.png)	
+
+## Changing Corner Radius
+
+The Office2016 theme exposes an easy way to modify the corner radius of many elements in your application. You can use the corner radius properties of the palette. By default all radius values are 0.
+
+#### __[C#] Setting corner radius__
+{{region cs-styling-appearance-office2016-theme-5}}
+	Office2016Palette.Palette.CornerRadius = new CornerRadius(0,0,0,0);
+	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(0,0,0,0);
+	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0,0,0,0);
+	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(0,0,0,0);
+	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
+{{endregion}}
+
+The following example shows how to change the default corner radius from 0 to 2.
+
+#### __[C#] Changing the default corner radius__
+{{region cs-styling-appearance-office2016-theme-6}}
+	Office2016Palette.Palette.CornerRadius = new CornerRadius(2); 
+	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
+	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(2, 0, 0, 2);
+	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0, 2, 2, 0);
+	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
+{{endregion}}
+
+__Setting the corner radius__
+
+![](../images/common-styling-appearance-office2016-theme-4.png)	
+
+## Using Glyphs
+
+With Office2016 theme, an approach to add icons and icon-like images has been introduced to replace the images or paths that are used in themes introduced prior to this one. The `TelerikWebUI` font provides over 400 scalable vector glyphs that are available for use to our clients. This approach provides a number of advantages and benefits, including:
 * The glyphs are vector paths which are easily scalable without loss of quality.
-
 * There is a wide range of different beautiful built-in glyphs to choose from.
-
 * They are easily colored – since they are text shapes. It is achieved by setting a Foreground color, which allows their usage in scenarios where the background of the control changes between light and dark color in different interaction states – e.g. buttons.
-
 * They are all contained in the small font file and available for use with the inclusion of the Telerik.Windows.Controls assembly and merging the needed resource dictionary for easier referencing.
-
 * They are available for use in any of our themes, when the needed resources are included. They are not specific for the Office2016 theme.
 
 Since each glyph’s string value is ambiguous and not related to its shape, we are providing a resource dictionary with key-value pairs for easier usage and referencing in projects. It also provides compatibility for future inclusions of new glyphs as it is updated to any shifts in the string values of the existing glyphs with no need to change the references in the projects.
 
 #### __[XAML] Adding the ResourceDictionary with the glyphs__
-{{region styling-appearance-office2016-3}}
+{{region xaml-styling-appearance-office2016-theme-1}}
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
 {{endregion}}
 
 #### __[XAML] Using glyphs__
-{{region styling-appearance-office2016-4}}
+{{region xaml-styling-appearance-office2016-theme-2}}
 	<TextBlock FontFamily=”{StaticResource TelerikWebUI}”
 			   Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”
 			   Text=”{StaticResource GlyphHeart}” 			   			   
@@ -236,76 +297,25 @@ __Heart glyph__
 
 > You can read more about the usage of the new glyph's feature and see the available glyphs in [this article]({%slug common-styling-appearance-glyphs-overview%}).
 
-## Changing FocusThickness
+## Changing Opacity
 
-A new feature of the Office2016 theme’s palette is the `FocusThickness` property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it is easily changeable in a similar way to the other palette properties.
-
-#### __[C#] Setting focus border thickness__
-{{region styling-appearance-office2016-5}}
-	Office2016Palette.Palette.FocusThickness = new Thickness(1);
-{{endregion}}
-	
-__Setting the focus border thickness__
-
-![](../images/common-styling-appearance-office2016-theme-3.png)	
-
-## Changing CornerRadius
-
-The Office2016 theme exposes an easy way to modify the corner radius of many elements in your application. You can use the corner radius properties of the palette. By default all radius values are 0.
-
-#### __[C#] Setting corner radius__
-{{region styling-appearance-office2016-6}}
-	Office2016Palette.Palette.CornerRadius = new CornerRadius(0,0,0,0);
-	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(0,0,0,0);
-	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0,0,0,0);
-	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(0,0,0,0);
-	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
-{{endregion}}
-
-The following example shows how to change the default corner radius from 0 to 2.
-
-#### __[C#] Changing the default corner radius__
-{{region styling-appearance-office2016-7}}
-	Office2016Palette.Palette.CornerRadius = new CornerRadius(2); 
-	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
-	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(2, 0, 0, 2);
-	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0, 2, 2, 0);
-	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
-{{endregion}}
-
-__Setting the corner radius__
-
-![](../images/common-styling-appearance-office2016-theme-4.png)	
-
-## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
-
-You can now easily change the read-only background and border brush of all text input controls (Syste.Windows.TextBox, RadDateTimePicker, RadMaskedInput and RadWatermarkTextBox) using the `ReadOnlyBackgroundColor` and `ReadOnlyBorderColor` properties of `Office2016Palette`.
-
-#### __[C#] Setting the read-only colors__
-{{region styling-appearance-office2016-8}}
-	Office2016Palette.Palette.ReadOnlyBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFBDD");
-	Office2016Palette.Palette.ReadOnlyBorderColor = (Color)ColorConverter.ConvertFromString("#5F5F5F");
-{{endregion}}
-
-## Changing DisabledOpacity
-
-If you need to change the opacity of disabled elements, you can easily do it via the `DisabledOpacity` property of the `Office2016Palette`. The default value of the property is 0.5.
+You can easily change the opacity of any disabled element by using the `DisabledOpacity` property of the `Office2016Palette`. The default value of the property is __0.5__.
 
 #### __[C#] Setting the disabled opacity__
-{{region styling-appearance-office2016-9}}
+{{region cs-styling-appearance-office2016-theme-7}}
 	Office2016Palette.Palette.DisabledOpacity = 0.3;
 {{endregion}}
 
 __Setting the disabled opacity__
 
-![](../images/common-styling-appearance-office2016-theme-5.png)	
+![](../images/common-styling-appearance-office2016-theme-theme-5.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `Office2016Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-office2016-10}}
+{{region xaml-styling-appearance-office2016-theme-3}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

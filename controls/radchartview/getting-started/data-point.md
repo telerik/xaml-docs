@@ -147,6 +147,17 @@ The following table shows which data points are being used by the corresponding 
 			<td/>
 			<td/>
 		</tr>
+		<tr style="vertical-align:top;">
+			<td>
+				<strong>ErrorBarDataPoint</strong>
+				<ul>
+					<li>ErrorBarSeries</li>
+				</ul>
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
 	</tbody>
 </table>
 
@@ -178,6 +189,7 @@ Each different DataPoint inheritor implements properties that define the values 
 * [PolarDataPoint](#polardatapoint)
 * [FunnelDataPoint](#funneldatapoint)
 * [BoxPlotDataPoint](#boxplotdatapoint)
+* [ErrorBarDataPoint](#errorbardatapoint)
 
 ## CategoricalDataPoint
 
@@ -228,6 +240,10 @@ This data point model is used in funnel chart series. To define the value of the
 ## BoxPlotDataPoint
 
 The __BoxPlotDataPoint__ is a type of categorical data point, so it has a __Category__ property. But, instead of a single value it works with few additional values accessed via the following properties: __Minimum__, __Maximum__, __LowerQuartile__, __UpperQuartile__ and __Median__. This type of data point is used to describe a box plot element in the BoxPlotSeries.
+
+## ErrorBarDataPoint
+
+The __ErrorBarDataPoint__ is a type of categorical data point, so it has a __Category__ property. But, instead of a single value it works with few additional values accessed via the following properties: __Low__, __High__ and __Value__. This type of data point is used to describe an error bar visual in the ErrorBarSeries.
 
 ## Sampling and DataItem
 

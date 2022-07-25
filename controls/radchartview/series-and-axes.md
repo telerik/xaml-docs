@@ -23,6 +23,7 @@ If you use a combination of axes that is not supported by the specific series, t
 | Series | Horizontal Axis | Vertical Axis |
 |---------|---------|---------|
 | Area Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
+| Error Bar Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Bar Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Box Plot Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Bubble Series | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |

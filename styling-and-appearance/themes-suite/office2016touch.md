@@ -79,9 +79,9 @@ article table
 
 # Office2016Touch Theme
 
-The official **R1 2017** release of UI for WPF includes a brand new **Office2016Touch** theme.
+The official __R1 2017__ release of UI for WPF includes a brand new `Office2016Touch Theme`.
 
-__Office2016Touch__ is a variation of the [Office2016 theme]({%slug common-styling-appearance-office2016-theme%}), especially created to be suitable for touch interfaces and to provide larger and more easily accessible components. Part of the controls are simply larger, but some of them are redesigned for easier touch manipulation.
+Office2016Touch theme is a variation of the [Office2016 theme]({%slug common-styling-appearance-office2016-theme%}), especially created to be suitable for touch interfaces and to provide larger and more easily accessible components. Part of the controls are simply larger, but some of them are redesigned for easier touch manipulation.
 
 The following topic explains the specifics of the theme's palette and features.
 
@@ -98,20 +98,23 @@ The following topic explains the specifics of the theme's palette and features.
 
 ## Differences from Office2016 theme
 
-The __Office2016Touch__ theme is, as the name suggests, very similar to the __Office2016__ theme but with larger controls and wider spaces for easier interaction. There are several controls that differ significantly and the following figures shows some of them.
+The Office2016Touch theme is, as the name suggests, very similar to the Office2016 theme but with larger controls and wider spaces for easier interaction. There are several controls that differ significantly and the following figures shows some of them.
 
-#### __Figure 1: RadNumericUpDown__ 
+__RadNumericUpDown__ 
+
 ![RadNumericUpDown with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-0.png)
 
-#### __Figure 2: RadOutlookBar__ 
+__RadOutlookBar__
+
 ![RadOutlookBar with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-1.png)
 
-#### __Figure 3: RadRibbonView__ 
+__RadRibbonView__ 
+
 ![RadRibbonView with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
 
 ## Default theme colors
 
-__Office2016Touch__ has one color variation, designed to be easily modified via the exposed colors in the theme palette. The default values of the brushes in the theme are the same as in the Office2016 theme.
+Office2016Touch has one color variation, designed to be easily modified via the exposed colors in the theme palette. The default values of the brushes in the theme are the same as in the Office2016 theme.
 
 |Brush name|Brush value||
 |----------|-----------|---|
@@ -140,32 +143,30 @@ The usage of the theme palette’s brushes is the same as in the [Office2016 the
 
 ## Glyphs
 
-The font glyphs we have introduced with the Office2016 theme are built-in the Office2016Touch theme as well. They provide a number of ready-to-use vector icons from the TelerikWebUI font. You can learn more about them and the usage from the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) article.
+The font glyphs we have introduced with the Office2016 theme are built-in the Office2016Touch theme as well. They provide a number of ready-to-use vector icons from the `TelerikWebUI` font. You can learn more about them and the usage from the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) article.
 
 ## Changing Palette Brushes
 
 Office2016Touch provides as well, what is now standard for our themes, dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
 
-The general naming convention is: __Office2016TouchPalette.Palette.[name]Color__ is responsible for __[name]Brush__ – e.g. __Office2016TouchPalette.Palette.BasicColor__ sets the color for __telerik:Offie2016TouchResource ResourceName=AccentBrush__
+The general naming convention is: `Office2016TouchPalette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `Office2016TouchPalette.Palette.BasicColor` sets the color for `telerik:Offie2016TouchResource ResourceName=AccentBrush`
 
 Changing the colors can be achieved in code behind.
 
-#### __[XAML] Example 1: Setting palette colors__
+#### __[XAML] Setting palette colors__
 {{region styling-appearance-office2016touch-0}}
 	Office2016TouchPalette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
 {{endregion}}
 
 ## Changing Fonts
 
-When using the Office2016Touch theme you can dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application the same way as you do in **Windows8**, **Windows8Touch**, **Office2013**, **VisualStudio2013**, and **Green** themes.
+When using the Office2016Touch theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, and Green themes.
 	
-The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is named FontSize and its default value is **12**.
+The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is named FontSize and its default value is __12__.
  
-> For complex scenarios we strongly recommend setting the __FontSize__ property only initially before the application is initialized. Also, we recommend values between __11px__ and __19px__ for it.
- 
-__Example 2__ shows the default font sizes and families.
+> For complex scenarios we strongly recommend setting the `FontSize` property only initially before the application is initialized. Also, we recommend values between __11px__ and __19px__ for it.
 
-#### __[C#] Example 2: Default FontSize and FontFamily__
+#### __[C#] Default FontSize and FontFamily__
 {{region styling-appearance-office2016touch-1}}
 	Office2016TouchPalette.Palette.FontSizeS = 12;
 	Office2016TouchPalette.Palette.FontSize = 14;
@@ -173,9 +174,9 @@ __Example 2__ shows the default font sizes and families.
 	Office2016TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 {{endregion}}
 
-__Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI"** to **"Calibri"** and the FontSize from **14** to **16** on a click of a button:
+The following examples show how to change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from __14__ to __16__ on a click of a button:
 
-#### __[XAML] Example 3: Example view definition__
+#### __[XAML] Example view definition__
 {{region styling-appearance-office2016touch-2}}
 	<StackPanel>
 		<telerik:RadCalendar HorizontalAlignment="Center" />
@@ -183,7 +184,7 @@ __Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI
 	</StackPanel>
 {{endregion}}
 
-#### __[C#] Example 4: Changing the theme's FontSize and FontFamily__
+#### __[C#] Changing the theme's FontSize and FontFamily__
 {{region styling-appearance-office2016touch-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -192,26 +193,28 @@ __Examples 3 and 4__ shows how to change the default FontFamily from **"Segoe UI
 	}
 {{endregion}}
 
-#### __Figure 4: Setting FontSize and FontFamily__ 
+__Setting FontSize and FontFamily__
+
 ![Setting FontSize and FontFamily](images/common-styling-appearance-office2016touch-theme-3.png)	
 
 ## Changing FocusThickness
 
-A new feature of the Office2016Touch theme’s palette is the __FocusThickness__ property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it can be easily changed in a similar way as the other palette properties.
+A new feature of the Office2016Touch theme’s palette is the `FocusThickness` property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it can be easily changed in a similar way as the other palette properties.
 
-#### __[C#] Example 5: Changing the theme's FocusThickness__
+#### __[C#] Changing the theme's FocusThickness__
 {{region styling-appearance-office2016touch-4}}
 	Office2016TouchPalette.Palette.FocusThickness = new Thickness(1);
 {{endregion}}
 
-#### __Figure 5: Setting FocusThickness__ 
+__Setting FocusThickness__ 
+
 ![Setting FocusThickness](images/common-styling-appearance-office2016touch-theme-4.png)	
 
 ## Changing CornerRadius
 
 The Office2016Touch theme exposes an easy way to modify the corner radius of many elements in your application. You can use corner radius properties of the palette. Their default values are __0__.
 
-#### __[C#] Example 6: Setting corner radius__
+#### __[C#] Setting corner radius__
 {{region styling-appearance-office2016touch-5}}
 	Office2016TouchPalette.Palette.CornerRadius = new CornerRadius(0,0,0,0);
 	Office2016TouchPalette.Palette.CornerRadiusTop = new CornerRadius(0,0,0,0);
@@ -220,9 +223,7 @@ The Office2016Touch theme exposes an easy way to modify the corner radius of man
 	Office2016TouchPalette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
 {{endregion}}
 
-__Example 7__ shows how to change the default corner radius from **0** to **3**:
-
-#### __[C#] Example 7: Changing the default corner radius__
+#### __[C#] Changing the default corner radius__
 {{region styling-appearance-office2016touch-6}}
 	Office2016TouchPalette.Palette.CornerRadius = new CornerRadius(3); 
 	Office2016TouchPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 3, 3);
@@ -231,24 +232,41 @@ __Example 7__ shows how to change the default corner radius from **0** to **3**:
 	Office2016TouchPalette.Palette.CornerRadiusTop = new CornerRadius(3, 3, 0, 0);
 {{endregion}}
 
-#### __Figure 6: Setting corner radius__ 
+__Setting corner radius__ 
+
 ![Setting corner radius](images/common-styling-appearance-office2016touch-theme-5.png)	
 
 ## ReadOnlyBackgroundBrush and ReadOnlyBorderBrush
 
-In the Office2016Touch theme there are two brushes that define background and border brush for the read-only states of the input controls (RadMaskedInput and TextBox). You can do that via the __ReadOnlyBackgroundBrush__ (default value: **#FFFFFFFF**) and __ReadOnlyBorderBrush__ (default value: **#FFABABAB**) properties. They are changed in the same manner as the rest of the palette colors.
+In the Office2016Touch theme there are two brushes that define background and border brush for the read-only states of the input controls (RadMaskedInput and TextBox). You can do that via the `ReadOnlyBackgroundBrush` (default value: __#FFFFFFFF__) and `ReadOnlyBorderBrush` (default value: __#FFABABAB__) properties. They are changed in the same manner as the rest of the palette colors.
 
 ## Changing DisbledOpacity
 
-If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of the __Office2016TouchPalette__. The default value of the property is 0.5.
+If you need to change the opacity of disabled elements, you can easily do it by using the `DisabledOpacity` property of the `Office2016TouchPalette`. The default value of the property is __0.5__.
 
-#### __[XAML] Example 8: Changing the disabled opacity__
+#### __[XAML] Changing the disabled opacity__
 {{region styling-appearance-office2016touch-7}}
 	Office2016TouchPalette.Palette.DisabledOpacity = 0.3;
 {{endregion}}
 
-#### __Figure 7: Setting the disabled opacity__ 
+__Setting the disabled opacity__ 
+
 ![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
+
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `Office2016TouchPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+
+#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
+{{region styling-appearance-office2016touch-8}}
+	<Application.Resources> 
+	    <ResourceDictionary> 
+	        <ResourceDictionary.MergedDictionaries> 
+	            <telerik:Office2016TouchResourceDictionary/> 
+	        </ResourceDictionary.MergedDictionaries> 
+	    </ResourceDictionary> 
+	</Application.Resources>
+{{endregion}}
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

@@ -268,7 +268,7 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
 	        for (int i = 0; i < count; i++)
 	        {
 	            Location baseLocation = new Location(
-	                    region.North - rnd.NextDouble() * egion.GeoSize.Height,
+	                    region.North - rnd.NextDouble() * region.GeoSize.Height,
 	                    region.West + rnd.NextDouble() * region.GeoSize.Width);
 	            this.GenerateMapItem(data, baseLocation, i);
 	        }

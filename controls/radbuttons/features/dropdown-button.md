@@ -10,37 +10,38 @@ position: 1
 
 # DropDown Button
 
-The __RadDropDownButton__ control derives from __[RadButton]({%slug radbuttons-features-button%})__. Therefore it has all of the features that the __RadButton__ control provides.
+The `RadDropDownButton` control derives from __[RadButton]({%slug radbuttons-features-button%})__. Therefore it has all of the features that the `RadButton` control provides.
 
 ## Defining RadDropDownButton
 
-You can instantiate your __RadDropDownButton__ in both XAML and code as shown in __Example 1__ and __Example 2__.
+You can instantiate your `RadDropDownButton` in both XAML and code as shown in the following examples.
 
-#### __[XAML] Example 1: Defining a button in XAML__  
+#### __[XAML] Defining a button in XAML__  
 {{region xaml-radbuttons-features-dropdown-button_0}}
 	<telerik:RadDropDownButton Content="Click Me!" />
 {{endregion}}
 
-#### __[C#] Example 2: Defining a button in code__  
+#### __[C#] Defining a button in code__  
 {{region cs-radbuttons-features-dropdown-button_1}}
 	RadDropDownButton radDropDownButton = new RadDropDownButton() { Content = "Click Me!" };
 {{endregion}}
 
-#### __[VB.NET] Example 2: Defining a button in code__
+#### __[VB.NET] Defining a button in code__
 {{region vb-radbuttons-features-dropdown-button_2}}
 	Dim radDropDownButton As New RadDropDownButton() With { _
 	    .Content = "Click Me!" _
 	}
 {{endregion}}
 
-#### __Figure 1: Drop down button__
+__Drop-down button__
+
 ![](images/radbuttons-features-dropdown-button-0.png)
 
 ## Adding DropDown Content
 
-In order to add content to the drop down area of the __RadDropDownButton__ you have to use its __DropDownContent__ property. It is of type __object__ so you can add any control as content of the drop down. __Example 3__ shows how to add a ListBox control in the drop down content of the button.
+In order to add content to the drop-down area of the RadDropDownButton you have to use its `DropDownContent` property. It is of type `object` so you can add any control as content of the drop-down. The next example shows how to add a `ListBox` control in the drop-down content of the button.
 
-#### __[XAML] Example 3: Adding dropdown content to the button__ 
+#### __[XAML] Adding dropdown content to the button__ 
 {{region xaml-radbuttons-features-dropdown-button_3}}
 	<telerik:RadDropDownButton AutoOpenDelay="0:0:0.0"
 	                           Content="Choose an Item">
@@ -54,54 +55,57 @@ In order to add content to the drop down area of the __RadDropDownButton__ you h
 	</telerik:RadDropDownButton>
 {{endregion}}
 
-#### __Figure 2: Drop down content__
+__Drop-down content__
+
 ![](images/radbuttons-features-dropdown-button-1.png)
 
->tip If you want to display dynamic content inside the drop down area, you can use the __DropDownContentTemplate__ and the __DropDownContentTemplateSelector__ properties. You can read about [TemplateSelectors](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector%28v=vs.110%29.aspx) in MSDN.
+>tip If you want to display dynamic content inside the drop-down area, you can use the `DropDownContentTemplate` and the `DropDownContentTemplateSelector` properties. You can read about [TemplateSelectors](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector%28v=vs.110%29.aspx) in MSDN.
 
 ## Auto Opening
 
-You can allow the RadDropDownButton to automatically display its __DropDownContent__, when the mouse hovers over it. This behaviour is controlled via the __AutoOpenDelay__ property of the RadDropDownButton, that specifies the time, after which you want to display the RadDropDownButton.DropDownContent. In order to disable the auto opening feature of the control, you can set the __AutoOpenDelay__ to __"0"__.
+You can allow the RadDropDownButton to automatically display its `DropDownContent`, when the mouse hovers over it. This behaviour is controlled via the `AutoOpenDelay` property of the RadDropDownButton, that specifies the time, after which you want to display the RadDropDownButton.DropDownContent. In order to disable the auto opening feature of the control, you can set the AutoOpenDelay to `0`.
 
-#### __[XAML] Example 4: Setting the AutoOpenDelay__ 
+#### __[XAML] Setting the AutoOpenDelay__ 
 {{region xaml-radbuttons-features-dropdown-button_4}}
 	<telerik:RadDropDownButton AutoOpenDelay="0:0:0.5" />
 {{endregion}}
 
 ## Customizing the RadDropDownButton
 
-You can easily customize the __RadDropDownButton__ by using the following properties:
+You can easily customize the `RadDropDownButton` by using the following properties:
 
-* __CloseOnEscape__: Specifies whether the drop down should be closed when the __ESC__ key gets pressed. The default value is __True__.		  
+* `CloseOnEscape`&mdash;Specifies whether the drop-down should be closed when the `ESC` key gets pressed. The default value is `True`.		  
 
-* __IsOpen__: Specifies whether the __DropDownContent__ of the button is opened.		  
+* `IsOpen`&mdash;Specifies whether the DropDownContent of the button is opened.		  
 
-* __KeepOpen__: Specifies whether the __DropDownContent__ should remain open while clicking outside it.		  
+* `KeepOpen`&mdash;Specifies whether the DropDownContent should remain open while clicking outside it.		  
 
-* __PopupPlacementTarget__: Specifies the placement of the popup element that displays the drop down content.
+* `PopupPlacementTarget`&mdash;Specifies the placement of the popup element that displays the drop-down content.
 
-* __DropDownButtonPosition__: Specifies the position of the drop down arrow. The possible values are __Bottom__, __Left__, __Right__ (default), __Top__.		  
+* `DropDownButtonPosition`&mdash;Specifies the position of the drop-down arrow. The possible values are `Bottom`, `Left`, `Right` (default), `Top`.		  
 
-* __DropDownWidth__ - specifies the width of the drop down area.
+* `DropDownWidth`&mdash;specifies the width of the drop-down area.
 
-* __DropDownHeight__: Specifies the height of the drop down area.
+* `DropDownHeight`&mdash;Specifies the height of the drop-down area.
 
-* __DropDownIndicatorVisibility__: Specifies whether the drop down arrow should be visible. The default value is __Visible__.
+* `DropDownIndicatorVisibility`&mdash;Specifies whether the drop-down arrow should be visible. The default value is `Visible`.
 
-* __DropDownMaxHeight__: Specifies the maximal height of the drop down area.
+* `DropDownMaxHeight`&mdash;Specifies the maximal height of the drop-down area.
 
-* __DropDownMaxWidth__: Specifies the maximal width of the drop down area.  
+* `DropDownMaxWidth`&mdash;Specifies the maximal width of the drop-down area.  
 
-* __DropDownMinHeight__: Specifies the minimal height of the drop down area.
+* `DropDownMinHeight`&mdash;Specifies the minimal height of the drop-down area.
 
-* __DropDownMinWidth__: Specifies the minimal width of the drop down area.  
+* `DropDownMinWidth`&mdash;Specifies the minimal width of the drop-down area.  
 
-* __DropDownPlacement__: Specifies where the drop down area should be placed - __Absolute__, __Bottom__, __Center__, __Left__, __Right__, __Top__.
+* `DropDownPlacement`&mdash;Specifies where the drop-down area should be placed - `Absolute`, `Bottom`, `Center`, `Left`, `Right`, `Top`.
+
+* `CloseOnPopupMouseLeftButtonUp`&mdash;Specifies whether the drop-down area should be closed when the user clicks on the `DropDownContent` of the control. The closing of the drop-down is executed on the `MouseLeftButtonUp` event of the `Popup` control. The default value is `False`.
 
 {% if site.site_name == 'WPF' %}
 ## Popup Animations
 
-The drop down button supports popup animations which are triggered when the drop down content opens. The animation is set via the PopupAnimation property of the button. Read more about this in the [Popup Animation]({%slug radbuttons-features-popup-animation%}) article.
+The drop-down button supports popup animations which are triggered when the drop-down content opens. The animation is set via the PopupAnimation property of the button. Read more about this in the [Popup Animation]({%slug radbuttons-features-popup-animation%}) article.
 {% endif %}
 
 ## See Also

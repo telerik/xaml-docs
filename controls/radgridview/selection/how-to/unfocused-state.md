@@ -10,12 +10,15 @@ position: 1
 
 # Stop Showing the Unfocused State
 
-With Q2 2012 we have introduced a new __Unfocused__ state for the selected __GridViewRow/TreeListViewRow__. It will be shown when the GridView is out of focus.![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 01](images/RadGridView_Selection_UnfocusedState_01.PNG)
+When the `RadGridView` and `RadTreeListView` controls lost the focus, their selected visual items (`GridViewRow` and `TreeListViewRow`) enter an __unfocused__ state which tones down their color (usually the color is changed to light gray). This makes it more clear that the control doesn't have the focus.
 
-If you want to __revert to the previous behavior__ you should set GridView's property - __EnableLostFocusSelectedState__ to __False__.
+![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 01](images/RadGridView_Selection_UnfocusedState_01.PNG)
 
->This property is available with our internal build (version - 2013.1.0311).
+To disable this and keep the selection color that is displayed when the control is focused, set the `EnableLostFocusSelectedState` property to `False`.
 
-Here is the result: 
+#### __[XAML]__
+{{region gridview-selection-unfocused-state-0}}
+    <telerik:RadGridView EnableLostFocusSelectedState="False"/>
+{{endregion}}
 
 ![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 02](images/RadGridView_Selection_UnfocusedState_02.PNG)

@@ -215,7 +215,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 Here is how the result XML will look like for the above example:
 
-#### __XAML__
+#### __XML__
 
 {{region xaml-raddocking-features-save-load-layout_4}}
 	<RadDocking>

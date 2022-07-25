@@ -10,7 +10,7 @@ position: 0
 
 # RadGlyph
 
-With the **R1 2018** release, the Telerik UI for {{ site.framework_name }} suite provides the **RadGlyph** which is a **FrameworkElement** that enables seemless visualization of font glyphs.
+With the **R1 2018** release, the Telerik UI for {{ site.framework_name }} suite provides the **RadGlyph** which is a **FrameworkElement** that enables seamless visualization of font glyphs.
 
 ## Benefits
 
@@ -22,7 +22,7 @@ The RadGlyph can be used both standalone and as a markup extension. **Examples 1
 
 #### __[XAML] Example 1: Define a RadGlyph in XAML__
 
-{{region xaml-common-styling-appearance-glyphs-overview-1}}
+{{region xaml-common-styling-appearance-radglyph-1}}
 	<Label x:Name="label">
 		<telerik:RadGlyph Glyph="&#xe91e;" Foreground="Black" FontSize="100" />
 	</Label>
@@ -30,14 +30,14 @@ The RadGlyph can be used both standalone and as a markup extension. **Examples 1
 
 #### __[C#] Example 1: Define a RadGlyph in code-behind__
 
-{{region cs-common-styling-appearance-glyphs-overview-1}}
+{{region cs-common-styling-appearance-radglyph-1}}
 	var glyph = new RadGlyph() { Glyph = "\uE91E", Foreground = Brushes.Black, FontSize = 100 };
 	this.label.Content = glyph;
 {{endregion}}
 
 #### __[XAML] Example 2: Use the RadGlyph markup extension__
 
-{{region xaml-common-styling-appearance-glyphs-overview-2}}
+{{region xaml-common-styling-appearance-radglyph-2}}
 	<Image Source="{telerik:RadGlyph Glyph={StaticResource GlyphCs}, Foreground=Black}" />
 {{endregion}}
 
@@ -48,7 +48,7 @@ The RadGlyph can be used both standalone and as a markup extension. **Examples 1
 > In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
 #### __[XAML] Example 3: Adding the FontResources.xaml dictionary__
-{{region xaml-common-styling-appearance-glyphs-overview-3}}
+{{region xaml-common-styling-appearance-radglyph-3}}
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
 {{endregion}}
 
@@ -78,7 +78,7 @@ The **RadGlyphExtension** cannot be set inline to the **Value** property of a St
 
 #### **[XAML] Example 4: Set Setter.Value XAML tag**
 
-{{region xaml-common-styling-appearance-glyphs-overview-4}}
+{{region xaml-common-styling-appearance-radglyph-4}}
 	<Style TargetType="telerik:RadButton">
     	<Setter Property="Content">
         	<Setter.Value>
@@ -88,9 +88,32 @@ The **RadGlyphExtension** cannot be set inline to the **Value** property of a St
 	</Style>
 {{endregion}}
 
-## Register Fonts
+## Fonts
 
 The default font family used by the glyphs is the **TelerikWebUI**. A list of the available glyphs can be found in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
+
+Another font that comes out of the box **since the R2 2022 release** is the **TelerikFluentIcons** which contains a similar set of icons as the **TelerikWebUI** but with different visual appearance.
+
+**Example 5** demonstrates the difference in appearance between the two fonts.
+
+#### **[XAML] Example 5: Calendar glyph in TelerikFluentIcons and TelerikWebUI fonts respectively**
+
+{{region xaml-common-styling-appearance-radglyph-5}}
+    <StackPanel Orientation="Horizontal">
+        <Label>
+            <telerik:RadGlyph Font="TelerikFluentIcons" Glyph="&#xe108;" Foreground="Black" FontSize="40"/>
+        </Label>
+        <Label>
+            <telerik:RadGlyph Glyph="&#xe108;" Foreground="Black" FontSize="40"/>
+        </Label>
+    </StackPanel>
+{{endregion}}
+
+#### Figure 2: The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively
+
+![The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively](images/radglyph-5.png)
+
+## Register Fonts
 
 If you wish to use a custom font in your project, you first have to register it by calling the static **RadGlyph.RegisterFont** method. It has the following 4 overloads:
 
@@ -101,9 +124,9 @@ If you wish to use a custom font in your project, you first have to register it 
 
 **Example 3** shows how to register the **Webdings** typeface, which is included in all versions of Microsoft Windows **since Windows 98**.
 
-#### __[C#] Example 5: Register the Webdings typeface__
+#### __[C#] Example 6: Register the Webdings typeface__
 
-{{region cs-common-styling-appearance-glyphs-overview-5}}
+{{region cs-common-styling-appearance-radglyph-6}}
 	static MainWindow()
 	{
 		RadGlyph.RegisterFont("Webdings");
@@ -112,9 +135,9 @@ If you wish to use a custom font in your project, you first have to register it 
 
 Please note that the RegisterFont overload which only accepts a string will only work if the font is **installed** on the client's machine. Otherwise you need to also pass the **FontFamily** as demonstrated in Example 5.
 
-#### __[C#] Example 6: Register the Webdings typeface__
+#### __[C#] Example 7: Register the Webdings typeface__
 
-{{region cs-common-styling-appearance-glyphs-overview-6}}
+{{region cs-common-styling-appearance-radglyph-7}}
 	static MainWindow()
 	{            
 		var font = new FontFamily(new Uri("pack://application:,,,/"), "./Fonts/#Webdings");
@@ -124,33 +147,33 @@ Please note that the RegisterFont overload which only accepts a string will only
 
 You can then use the glyphs as follows:
 
-#### __[XAML] Example 7: Use the Webdings glyphs__
+#### __[XAML] Example 8: Use the Webdings glyphs__
 
-{{region xaml-common-styling-appearance-glyphs-overview-7}}
+{{region xaml-common-styling-appearance-radglyph-8}}
 	<Path Data="{telerik:RadGlyph Font=Webdings, Glyph=&#x00fc;}" Fill="{telerik:Office2016Resource ResourceKey=IconBrush}" Width="50" Height="50" Stretch="Uniform" />
 {{endregion}}
 
-#### Figure 2: The resulting Webdings glyph
+#### Figure 3: The resulting Webdings glyph
 
 ![Webdings Globe Glyph](images/radglyph-2.png)
 
 ## Use Glyphs as Geometry
 
-#### __[XAML] Example 8: Set a RadPathButton's PathGeometry in XAML__
+#### __[XAML] Example 9: Set a RadPathButton's PathGeometry in XAML__
 
-{{region xaml-common-styling-appearance-glyphs-overview-8}}
+{{region xaml-common-styling-appearance-radglyph-9}}
 	<telerik:RadPathButton Width="50" Height="50" PathGeometry="{telerik:RadGlyph Glyph={StaticResource GlyphButton}}" />
 {{endregion}}
 
-#### Figure 3: The RadPathButton in normal and hovered states in the Office2016 theme
+#### Figure 4: The RadPathButton in normal and hovered states in the Office2016 theme
 
 ![RadPathButton in normal and hovered states](images/radglyph-3.png)
 
 The same result can be achieved in code behind as demonstrated in **Example 6**. Note that it uses the static **RadGlyph.GetGeometry** method which takes two parameters - a glyph string and a font family.
 
-#### __[C#] Example 9: Set a RadPathButton's PathGeometry in code-behind__
+#### __[C#] Example 10: Set a RadPathButton's PathGeometry in code-behind__
 
-{{region cs-common-styling-appearance-glyphs-overview-9}}
+{{region cs-common-styling-appearance-radglyph-10}}
 	private RadPathButton CreateButton()
 	{
 		var button = new RadPathButton();
@@ -172,9 +195,9 @@ The same result can be achieved in code behind as demonstrated in **Example 6**.
 
 ## Use Glyphs as ImageSource
 
-#### __[XAML] Example 10: Provide ImageSource for RadTreeView items__
+#### __[XAML] Example 11: Provide ImageSource for RadTreeView items__
 
-{{region xaml-common-styling-appearance-glyphs-overview-10}}
+{{region xaml-common-styling-appearance-radglyph-11}}
 	<telerik:RadTreeView>
 		<telerik:RadTreeViewItem Header="Desktop"
 										DefaultImageSrc="{telerik:RadGlyph Type=Image, Glyph={StaticResource GlyphToggleFullScreenMode}}" />
@@ -192,7 +215,7 @@ The same result can be achieved in code behind as demonstrated in **Example 6**.
 	</telerik:RadTreeView>
 {{endregion}}
 
-#### Figure 4: The resulting RadTreeView in the Office2016 theme
+#### Figure 5: The resulting RadTreeView in the Office2016 theme
 
 ![RadTreeView with glyphs as item icons](images/radglyph-4.png)
 

@@ -42,7 +42,15 @@ To work with the Telerik `.NET 6` DLLs you will need to have the following insta
 
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update.
 
->important Read more about the .NET 6 requirements in the [Install .NET on Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net50#dependencies) MSDN article.
+>important Read more about the .NET 6 requirements in the [Install .NET on Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60) MSDN article.
+
+## .NET 7 Requirements
+
+To work with the Telerik `.NET 7 Preview` DLLs you will need to have the following installed.
+
+* The latest [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2022 (v17.2 latest preview or newer).
 
 ## Design-Time Support
 

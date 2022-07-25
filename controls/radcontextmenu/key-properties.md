@@ -10,62 +10,64 @@ position: 4
 
 # Key Properties
 
-This topic goes through the key properties of the __RadContextMenu__.
+This topic goes through the key properties of the `RadContextMenu` control.
 
 ## IconColumnWidth
 
-By default __RadContextMenu__ displays a column used for visualizing the icons of the menu items. 
+By default, the RadContextMenu element displays a column used for visualizing the icons of the menu items. 
 ![RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_01.png)
 
-Its width can be controlled through the __IconColumnWidth__ property. For example, it can be entirely hidden by setting the property value to 0.
+Its width can be controlled through the `IconColumnWidth` property. For example, it can be entirely hidden by setting the property value to 0.
 
-#### __[XAML] Example 1: Setting the IconColumnWidth property__
+#### __[XAML] Setting the IconColumnWidth property__
 {{region radcontextmenu-key-properties_0}}
 	 <telerik:RadContextMenu IconColumnWidth="0"/>
 {{endregion}}
 
-#### __Figure 1: RadContextMenu with hidden icon column__
+__RadContextMenu with hidden icon column__
+
 ![RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_02.png)
 
 ## StaysOpen
 
-Setting this property manipulates whether __RadContextMenu__ will close automatically or not. Its default value is __False__. By setting it to __True RadContextMenu__ will stay open when the user clicks the menu items.
+Setting this property manipulates whether RadContextMenu will close automatically or not. Its default value is `False`. By setting it to `True`, the RadContextMenu control will stay open when the user clicks the menu items.
 
 ## HorizontalOffset
 
-__RadContextMenu__ provides a mechanism for controlling the horizontal distance between the target origin and the popup alignment point through the __HorizontalOffset__ property.
+RadContextMenu provides a mechanism for controlling the horizontal distance between the target origin and the popup alignment point through the `HorizontalOffset` property.
 
-#### __[XAML] Example 2: Setting the HorizontalOffset property__
+#### __[XAML] Setting the HorizontalOffset property__
 {{region radcontextmenu-key-properties_1}}
 	<telerik:RadContextMenu HorizontalOffset="150"/>
 {{endregion}}
 
-#### __Figure 2: RadContextMenu with its HorizontalOffset property set__
+__RadContextMenu with its HorizontalOffset property set__
+
 ![RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_03.png)
  
 ## EventName
 
-__RadContextMenu__ can be opened only when a specific event is raised. __EventName__ is the property through which the given event can be pointed to.
+RadContextMenu can be opened only when a specific event is raised. `EventName` is the property through which the given event can be pointed to.
 
 ## ModifierKey
 
-The __ModifierKey__ property is used in conjunction with the __EventName__ one. It is used when opening __RadContextMenu__ only for a specific event is needed, but with a specified modifier key pressed as well. It is an enumeration type and has the following values.
+The `ModifierKey` property is used in conjunction with the `EventName` one. It is used when opening RadContextMenu only for a specific event is needed, but with a specified modifier key pressed as well. It is an enumeration type and has the following values.
 
 ## MousePosition
 
-The __MousePosition__ property provides information regarding the position of the mouse at the moment when the menu was opened relative to the element that caused its opening. It returns a __Point__ value.
+The `MousePosition` property provides information regarding the position of the mouse at the moment when the menu was opened relative to the element that caused its opening. It returns a `Point` value.
 
 ## UIElement
 
-Returns the instance of the element to which __RadContextMenu__ is attached.
+Returns the instance of the element to which RadContextMenu is attached.
 
 ## VerticalOffset
 
-Similarly to the __HorizontalOffset__ property, the __VerticalOffset__ one provides a mechanism for setting the vertical distance between the target origin and the popup alignment point. 
+Similarly to the `HorizontalOffset` property, the `VerticalOffset` one provides a mechanism for setting the vertical distance between the target origin and the popup alignment point. 
 
 ## InheritDataContext
 
-By default, the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the __InheritDataContext__ property to __False__.
+By default, the RadContextMenu inherits the DataContext of its parent element. If you want to avoid that, you can set the `InheritDataContext` property to `False`.
 
 ## RestoreFocusToTargetElement
 
@@ -75,6 +77,12 @@ When opened the RadContextMenu automatically gets the focus. To automatically re
 {{region radcontextmenu-key-properties_1}}
 	<telerik:RadContextMenu RestoreFocusToTargetElement="True"/>
 {{endregion}}
+
+## ShowKeyboardCuesOnOpen
+
+The `ShowKeyboardCuesOnOpen` property allows you to control the visibility of the keyboard cues, when the RadContextMenu element is opened. The default value of this property is `null`. This means that the set access keys will automatically show when the menu is opened through the keyboard. Setting this property to `true` will always visualize the modifier keys when the RadContextMenu is opened through the keyboard or via a mouse. If the property is set to `false` the keyboard cues will not be shown.
+
+>tip By setting the `ShowKeyboardCuesOnOpen` property to `true`, there will be no need to hold the `Alt` key when the RadContextMenu is opened via a mouse.
 
 ## See Also  
  * [Key Modifiers]({%slug radcontextmenu-key-modifiers%})

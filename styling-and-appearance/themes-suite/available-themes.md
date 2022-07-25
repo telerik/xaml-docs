@@ -30,7 +30,8 @@ table th:nth-of-type(4) {
 
 Theme name | Appearance | Theme Palette | Variations 
 ---|---|---|---{% if site.site_name == 'WPF' %}
-**[Office 2019]({%slug common-styling-appearance-Office2019-theme%})** | ![Visual Studio 2019](images/Office2019Theme.png) | Yes | Light, Gray, Dark
+**[Windows 11]({%slug common-styling-appearance-windows11-theme%})** | ![Windows 11](images/Windows11Theme.png) | Yes | System, Light, Dark
+**[Office 2019]({%slug common-styling-appearance-Office2019-theme%})** | ![Office 2019](images/Office2019Theme.png) | Yes | Light, Gray, Dark
 **[Visual Studio 2019]({%slug common-styling-appearance-visualstudio2019-theme%})** | ![Visual Studio 2019](images/VisualStudio2019Theme.png) | Yes | Blue, Dark
 **[Crystal]({%slug common-styling-appearance-crystal-theme%})** | ![Crystal](images/CrystalTheme.png) | Yes | Light, Dark
 **[Fluent]({%slug common-styling-appearance-fluent-theme%})** | ![Fluent](images/FluentTheme.png) | Yes | Light, Dark
@@ -38,7 +39,7 @@ Theme name | Appearance | Theme Palette | Variations
 **[Office 2016 Touch]({%slug common-styling-appearance-office2016touch-theme%})** | ![Office 2016 Touch](images/Office2016TouchTheme.png) | Yes | -
 **[Office 2016]({%slug common-styling-appearance-office2016-theme%})** | ![Office 2016](images/Office2016Theme.png) | Yes | -
 **[Green]({%slug common-styling-appearance-green-theme%})** | ![Green](images/GreenTheme.png)| Yes | Light, Dark{% endif %}
-**[Visual Studio 2013*]({%slug common-styling-appearance-visualstudio2013-theme%})** | ![Visual Studio 2013](images/VisualStudio2013Theme.png) | Yes | Light, Blue, Dark
+**[Visual Studio 2013]({%slug common-styling-appearance-visualstudio2013-theme%})** | ![Visual Studio 2013](images/VisualStudio2013Theme.png) | Yes | Light, Blue, Dark
 **[Office 2013]({%slug common-styling-appearance-office2013-theme%})** | ![Office 2013](images/Office2013Theme.png) | Yes | White, LightGray, DarkGray
 **[Windows 8]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8](images/Windows8Theme.png) | Yes | -
 **[Windows 8 Touch]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8 Touch](images/Windows8TouchTheme.png) | Yes | -

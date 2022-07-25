@@ -1,6 +1,6 @@
 ---
 title: Click Sound
-page_title: Key Press Sound | RadVirtualKeyboard WPF
+page_title: Key Press Sound
 description: Check our &quot;Click Sound&quot; documentation article for the on-screen RadVirtualKeyboard WPF control.
 slug: radvirtualkeyboard-sound
 tags: sound,click

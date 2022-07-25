@@ -22,6 +22,8 @@ In order to use the file dialog controls, you will need to add references to the
 * __Telerik.Windows.Controls.FileDialogs__
 * __Telerik.Windows.Data__
 
+>When referencing the assemblies directly in a .NET Core application, users need to explicitly add a package reference to the respective `Microsoft.Windows.Compatibility` package. For example - 6.0.0 when targeting .NET 6. This is not required when using the Telerik UI for WPF NuGet packages.
+
 You can find the required assemblies for each control from the Telerik UI for WPF suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ## Using the dialogs

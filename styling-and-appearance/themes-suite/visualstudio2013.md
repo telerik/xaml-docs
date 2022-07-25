@@ -24,7 +24,7 @@ article table
 
 # VisualStudio2013 Theme
 
-The official Q2 2014 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} brought a brand new theme inspired by the Visual Studio design with three color variations – Light, Dark and Blue.        
+The official Q2 2014 release of UI for {{ site.framework_name }} brought a brand new theme inspired by the Visual Studio design with three color variations – `Light`, `Dark` and `Blue`.        
 
 The following topic explains the specifics of the theme's color variations.      
 
@@ -37,9 +37,9 @@ The next screenshot display RadCalendar in the three color variations:
 
 ## Theme Variation Changing
 
-You can switch the three color palettes by calling the __LoadPreset__ method as shown below:        
+You can switch the three color palettes by calling the `LoadPreset` method as shown below:        
 
-#### __C#__
+#### __[C#]__
 
 {{region common-styling-appearance-visualstudio2013-theme_0}}	
 	//default color variation
@@ -52,7 +52,7 @@ You can switch the three color palettes by calling the __LoadPreset__ method as 
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); 
 {{endregion}}
 
->The **Dark** variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
+>important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it.
 
 ## VisualStudio2013 Palette brushes and colors
 
@@ -79,58 +79,58 @@ Below you can find the differences between the three color variations. Every bru
 |ComplementaryBrush|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
 |ReadOnlyBackgroundBrush|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
 |ReadOnlyBorderBrush|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|__Additional color__| | | | | | |		
-|DefaultForegroundColor*|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
+|Additional color| | | | | | |		
+|DefaultForegroundColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
 
-\* __DefaultForegroundColor__ is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
+\* `DefaultForegroundColor` is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
 
 ## Theme Palette brushes description
 
 Here you can find more details about each brush and where it is usually applied.
 
 The first four colors have the same value in the three color variations and they are commonly used among all controls:  
-* __AccentMainBrush__ is blue by default and it is the main accent brush for the theme
-* __AccentDarkBrush__ is blue by default and it is the darker accent brush for the theme
-* __SelectedBrush__ is white by default and is the main color for text or paths which are over elements with accent background
-* __ValidatonBrush__ is red by default and it is the brush used for validation where such is applicable in our controls
+* `AccentMainBrush`&mdash;Blue by default and it is the main accent brush for the theme
+* `AccentDarkBrush`&mdash;Blue by default and it is the darker accent brush for the theme
+* `SelectedBrush`&mdash;White by default and is the main color for text or paths which are over elements with accent background
+* `ValidatonBrush`&mdash;Red by default and it is the brush used for validation where such is applicable in our controls
 
 The colors that have different HEX value can be ordered by purpose.
 
 First we needed another accent brush which has the same value as AccentDarkBrush for the Light and Dark color variations of VisualStudio2013 theme, but orange in the Blue color variation. This was necessary due to our aim to be as much closer as possible to the Visual Studio's product design.  
-* __AccentBrush__ - another accent brush, usually used for border of elements in their MouseOver, Active, Toggled or Focused state. 
+* `AccentBrush`&mdash;another accent brush, usually used for border of elements in their MouseOver, Active, Toggled or Focused state. 
 
 There are two brushes usually used for foregrounds: 
-* __MarkerBrush__ - the main brush used for text color, also path's fill in MouseOver state
-* __StrongBrush__ - paths' and ticks' fill in Normal state, also ReadOnly text
+* `MarkerBrush`&mdash;the main brush used for text color, also path's fill in MouseOver state
+* `StrongBrush`&mdash;paths' and ticks' fill in Normal state, also ReadOnly text
 
 There are six brushes usually used for background and border color:  
-* __MainBrush__ - brush used for background of controls with direct input such as TextBox, MaskedInput, Editable ComboBox, AutoCompleteBox, PasswordBox. Also used as main background of elements that has different content with unpredictable background (PrimaryBrush or AlternativeBrush).
-* __PrimaryBrush__ - brush used for background of most of the controls that have no direct input in their normal state.
-* __AlternativeBrush__ - brush used as alternative background of PrimaryBrush. Also used as background of Popups and DropDowns.
-* __MouseOverBrush__ - brush used for background of elements that are in MouseOver state.
-* __BasicBrush__ - brush widely used for border color of controls in their Normal state.
-* __SemiBasicBrush__ - the same brush as BasicBrush with 40% opacity, used for background of elements that are in MouseOver state.
+* `MainBrush`&mdash;brush used for background of controls with direct input such as TextBox, MaskedInput, Editable ComboBox, AutoCompleteBox, PasswordBox. Also used as main background of elements that has different content with unpredictable background (PrimaryBrush or AlternativeBrush).
+* `PrimaryBrush`&mdash;brush used for background of most of the controls that have no direct input in their normal state.
+* `AlternativeBrush`&mdash;brush used as alternative background of PrimaryBrush. Also used as background of Popups and DropDowns.
+* `MouseOverBrush`&mdash;brush used for background of elements that are in MouseOver state.
+* `BasicBrush`&mdash;brush widely used for border color of controls in their Normal state.
+* `SemiBasicBrush`&mdash;the same brush as BasicBrush with 40% opacity, used for background of elements that are in MouseOver state.
 
 Some controls such as Window, RibbonView, ScheduleView, Docking Pane, Docking ToolWindow, TileView have headers with a specific brush for background:  
-* __HeaderBrush__ - brush used for background of headers
+* `HeaderBrush`&mdash;brush used for background of headers
 
 Additional brush is introduced rarely used for elements in Disabled state:
-* __ComplementaryBrush__
+* `ComplementaryBrush`
 
 The following screenshot shows the usage of some of the brushes:
 ![Common Styling Appearance VS 2013 Theme 01](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
 
 ## Changing Fonts
 
-The official Q1 2015 release of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} introduced features that allow you to dynamically change the __FontSize__ and __FontFamily__ properties of all components in the application for the __VisualStudio2013__ theme. 
+The official Q1 2015 release of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} introduced features that allow you to dynamically change the `FontSize` and `FontFamily` properties of all components in the application for the VisualStudio2013 theme. 
 
-All Telerik controls use resources that are linked to one major singleton object that contains the __FontSize__ and __FontFamily__ properties used for the __VisualStudio2013__ theme. These properties are public so you can easily modify the theme resources at one single point. The most commonly used __FontSize__ in the theme is named __FontSize__ and its default value is *12*. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as __RadRibbonView__, __RadGauge__, __RadGanttView__, etc. As for the __FontFamily__ - there is only one __FontFamily__ resource which is named __FontFamily__ and it is set to *Segoe UI*.
+All Telerik controls use resources that are linked to one major singleton object that contains the FontSize and FontFamily properties used for the VisualStudio2013 theme. These properties are public so you can easily modify the theme resources at one single point. The most commonly used FontSize in the theme is named FontSize and its default value is __12__. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily - there is only one FontFamily resource which is named FontFamily and it is set to `Segoe UI`.
 
->Please note that for complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the __FontSize__ property.
+>Please note that for complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the FontSize property.
 
-All the available __FontSizes__ and __FontFamily__ as well as their __default values__:
+All the available `FontSizes` and `FontFamily` as well as their __default values__:
 
-#### __C#__
+#### __[C#]__
 {{region common-styling-appearance-visualstudio2013-theme_1}}
 	VisualStudio2013Palette.Palette.FontSizeXXS = 9; 
 	VisualStudio2013Palette.Palette.FontSizeXS = 10;
@@ -144,30 +144,30 @@ All the available __FontSizes__ and __FontFamily__ as well as their __default va
 
 More details regarding the usage of the rarely used font sizes inside the different controls can be found below:
 
-* VisualStudio2013Palette.Palette.FontSizeXXS is used only in:
+* `VisualStudio2013Palette.Palette.FontSizeXXS` is used only in:
 	* HorizontalBulletGraphStyle and VerticalBullerGraphStyle in Telerik.Windows.Controls.DataVisualization
   
-* VisualStudio2013Palette.Palette.FontSizeXS is used in: 
+* `VisualStudio2013Palette.Palette.FontSizeXS` is used in: 
 	* TimeBar's SelectionRangeStyle in Telerik.Windows.Controls.DataVisualization
 	* ExpressionEditor in Telerik.Windows.Controls.Expressions
 	* GridViewGroupPanel in Telerik.Windows.Controls.GridView
   
-* VisualStudio2013Palette.Palette.FontSizeS is used in: 
+* `VisualStudio2013Palette.Palette.FontSizeS` is used in: 
 	* TimeBar's ItemControlStyle in Telerik.Windows.Controls.DataVisualization
 	* GanttView's EventContainerStyle in Telerik.Windows.Controls.GanntView
 	* ScheduleView TimeRulerItems' styles in Telerik.Windows.Controls.ScheduleView 
   
-* VisualStudio2013Palette.Palette.FontSizeL is used in: 		
+* `VisualStudio2013Palette.Palette.FontSizeL` is used in: 		
 	* TimeBar's GroupControlStyle in Telerik.Windows.Controls.DataVisualization		
 	* Docking's Headers in Telerik.Windows.Controls.Docking 
 	* ScheduleView TimeRulerGroupItems' styles in Telerik.Windows.Controls.ScheduleView 
 	
-* VisualStudio2013Palette.Palette.FontSizeXXL is used in: 
+* `VisualStudio2013Palette.Palette.FontSizeXXL` is used in: 
 	* ScheduleView warnings
 	
-As the following example shows, you can change the default __FontFamily__ from "Segoe UI" to "Calibri" and the __FontSize__ from 12 to 16 on a click of a button:
+As the following example shows, you can change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from __12__ to __16__ on a click of a button:
 
-#### __XAML__
+#### __[XAML]__
 {{region common-styling-appearance-visualstudio2013-theme_0}}
 	<StackPanel>
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -181,7 +181,7 @@ As the following example shows, you can change the default __FontFamily__ from "
 </StackPanel>
 {{endregion}}
 
-#### __C#__
+#### __[C#]__
 {{region common-styling-appearance-visualstudio2013-theme_2}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
@@ -196,23 +196,39 @@ This will be the final result:
 
 ## ReadOnly Properties
 
-In the __R2 2019__ version, the following properties were introduced in the __VisualStudio2013Palette__ to control the look and feel of elements in their readonly state:
+In the __R2 2019__ version, the following properties were introduced in the `VisualStudio2013Palette` to control the look and feel of elements in their readonly state:
 
-* __ReadOnlyBackgroundBrush__: Used as a background of elements that are in a read-only state.
-* __ReadOnlyBorderBrush__:  Used in borders inside elements that are in a read-only state.
-* __ReadOnlyOpacity__: Used for text in inputs when they are in a read-only state.
+* `ReadOnlyBackgroundBrush`&mdash;Used as a background of elements that are in a read-only state.
+* `ReadOnlyBorderBrush`&mdash;Used in borders inside elements that are in a read-only state.
+* `ReadOnlyOpacity`&mdash;Used for text in inputs when they are in a read-only state.
 
 ## Changing DisbledOpacity
 
-If you need to change the opacity of disabled elements, you can easily do it by using the __DisabledOpacity__ property of the __VisualStudio2013Palette__. The default value of the property is 0.2.
+If you need to change the opacity of disabled elements, you can easily do it by using the `DisabledOpacity` property of the `VisualStudio2013Palette`. The default value of the property is __0.2__.
 
-#### __[XAML] Example 8: Changing the disabled opacity__
+#### __[XAML] Changing the disabled opacity__
 {{region common-styling-appearance-visualstudio2013-theme-3}}
 	VisualStudio2013Palette.Palette.DisabledOpacity = 0.4;
 {{endregion}}
 
-#### __Figure 7: Setting the disabled opacity__ 
+__Setting the disabled opacity__
+
 ![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
- 
+
+## Merging Modified Palette Resources With StyleManager Theming Approach
+
+When modifying fonts, colors, or other resources from the `VisualStudio2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
+
+#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
+{{region common-styling-appearance-visualstudio2013-theme-4}}
+	<Application.Resources> 
+	    <ResourceDictionary> 
+	        <ResourceDictionary.MergedDictionaries> 
+	            <telerik:VisualStudio2013ResourceDictionary/> 
+	        </ResourceDictionary.MergedDictionaries> 
+	    </ResourceDictionary> 
+	</Application.Resources>
+{{endregion}}
+
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

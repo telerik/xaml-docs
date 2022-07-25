@@ -1,6 +1,6 @@
 ---
 title: Customizing Keys
-page_title: Customizing Keys | RadVirtualKeyboard WPF
+page_title: Customizing Keys
 description: Check our &quot;Customizing Keys&quot; documentation article for the on-screen RadVirtualKeyboard WPF control.
 slug: radvirtualkeyboard-customize-keys
 tags: customize,keys,buttons,styles,templates

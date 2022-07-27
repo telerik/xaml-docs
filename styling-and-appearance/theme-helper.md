@@ -5,7 +5,7 @@ description: The UI for {{ site.framework_name }} suite comes with a theming hel
 slug: styling-appearance-theme-helper
 tags: theming,theme,helper
 published: True
-position: 6
+position: 5
 ---
 
 # Theme Helper

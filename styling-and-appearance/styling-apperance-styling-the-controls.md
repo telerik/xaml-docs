@@ -5,7 +5,7 @@ description: This article shows how to customize the Telerik controls in NoXaml 
 slug: implicit-styles-styling-the-controls
 tags: setting,a,theme,(using,,implicit,styles)
 published: True
-position: 1
+position: 2
 ---
 
 # Styling the Controls 

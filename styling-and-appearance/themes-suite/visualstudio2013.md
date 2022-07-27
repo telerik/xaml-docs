@@ -5,7 +5,7 @@ description: This article provides an overview of the VisualStudio2013 theme fro
 slug: common-styling-appearance-visualstudio2013-theme
 tags: visualstudio2013,theme,dynamic,fontsize,fontfamily
 published: True
-position: 4
+position: 11
 ---
 
 <style>
@@ -24,24 +24,103 @@ article table
 
 # VisualStudio2013 Theme
 
-The official Q2 2014 release of UI for {{ site.framework_name }} brought a brand new theme inspired by the Visual Studio design with three color variations – `Light`, `Dark` and `Blue`.        
+Inspired by the Visual Studio design, the `VisualStudio2013` theme comes with three built-in color variations – `Light`, `Dark` and `Blue`.        
 
-The following topic explains the specifics of the theme's color variations.      
+Jump to the following topics to learn about the specifics of the theme's palette and features.
 
-## Theme Color Variations
+* [Default Theme Colors](#default-theme-colors)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Changing Font Properties](#changing-font-properties)
+* [Changing Opacity](#changing-opacity)
+
+## Default Theme Colors
+
+Below you can find the differences between the three color variations. Each brush has relevant HEX value in the corresponding color variation.
+
+|Color name|Light (default)| |Dark| |Blue| |
+|----------|---------------|---|----|---|----|---|
+|__Colors, which are same in the three palettes__| | | | | | |
+|AccentMainColor|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|
+|AccentDarkColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|
+|SelectedColor|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|ValidationColor|FFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|
+|__Color, which are different in the three palettes__| | | | | | |
+|AccentColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FFE5C365|<div class="theme-palette-color" style="background: #E5C365"></div>|
+|MarkerColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
+|StrongColor|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|FF999999|<div class="theme-palette-color" style="background: #999999"></div>|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|
+|MainColor|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
+|PrimaryColor|FFEEEEF2|<div class="theme-palette-color" style="background: #EEEEF2"></div>|FF2D2D30|<div class="theme-palette-color" style="background: #2D2D30"></div>|FFE6EBF5|<div class="theme-palette-color" style="background: #E6EBF5"></div>|
+|AlternativeColor|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
+|MouseOverColor|FFC9DEF5|<div class="theme-palette-color" style="background: #C9DEF5"></div>|FF3E3E40|<div class="theme-palette-color" style="background: #3E3E40"></div>|FFFDF4BF|<div class="theme-palette-color" style="background: #FDF4BF"></div>|
+|BasicColor|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
+|SemiBasicColor|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46|<div class="theme-palette-color" style="background: #"></div>|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
+|HeaderColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF35496A|<div class="theme-palette-color" style="background: #35496A"></div>|
+|ComplementaryColor|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
+|ReadOnlyBackgroundColor|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
+|ReadOnlyBorderColor|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
+|__Additional color__| | | | | | |		
+|DefaultForegroundColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
+
+## Default Theme Brushes
+
+Here you can find more details about each brush and where it is usually applied.
+
+### Common Brushes (same for all variations)
+* `AccentMainBrush`&mdash;Blue by default and it is the main accent brush for the theme
+* `AccentDarkBrush`&mdash;Blue by default and it is the darker accent brush for the theme
+* `SelectedBrush`&mdash;White by default and is the main color for text or paths which are over elements with accent background
+* `ValidatonBrush`&mdash;Red by default and it is the brush used for validation where such is applicable in our controls
+
+### Foreground Brushes
+* `MarkerBrush`&mdash;the main brush used for text color, also path's fill in MouseOver state
+* `StrongBrush`&mdash;paths' and ticks' fill in Normal state, also ReadOnly text
+
+### Background and Border Brushes
+* `AccentBrush`&mdash;another accent brush, usually used for the border of elements in their MouseOver, Active, Toggled or Focused state. 
+* `MainBrush`&mdash;used for background of controls with direct input such as TextBox, MaskedInput, Editable ComboBox, AutoCompleteBox, PasswordBox. Also used as main background of elements that has different content with unpredictable background (PrimaryBrush or AlternativeBrush).
+* `PrimaryBrush`&mdash;used for background of most of the controls that have no direct input in their normal state.
+* `AlternativeBrush`&mdash;used as alternative background of PrimaryBrush. Also used as background of Popups and DropDowns.
+* `MouseOverBrush`&mdash;used for background of elements that are in MouseOver state.
+* `BasicBrush`&mdash;widely used for border color of controls in their Normal state.
+* `SemiBasicBrush`&mdash;the same brush as BasicBrush with 40% opacity, used for background of elements that are in MouseOver state.
+
+### Special State/Elements Brushes
+* `HeaderBrush`&mdash;used for the background of headers in controls such as Window, RibbonView, ScheduleView, Docking Pane, Docking ToolWindow, TileView.
+* `ComplementaryBrush`&mdash;used for elements in Disabled state.
+
+The only resource that is of type Color and does not have a respective SolidColorBrush is the \* `DefaultForegroundColor`. It is currently used only in the ExpressionEditor.
+
+The following screenshot shows the usage of some of the brushes:
+
+![Common Styling Appearance VS 2013 Theme 01](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
+
+## Changing Palette Colors
+
+The VisualStudio2013 theme provides dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `VisualStudio2013Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `VisualStudio2013Palette.Palette.AccentColor` sets the color for `telerik:VisualStudio2013Resource ResourceKey=AccentBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-visualstudio2013-0}}
+	VisualStudio2013Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Theme Variation
 
 There are three palettes of colors which can be easily set by choosing one of the three default color variations:
 
-The next screenshot display RadCalendar in the three color variations:
-![Common Styling Appearance VS 2013 Theme 02](../images/Common_Styling_Appearance_VS2013_Theme_02.png)
+The next screenshot displays RadCalendar in the three color variations:
 
-## Theme Variation Changing
+![Common Styling Appearance VS 2013 Theme 02](../images/Common_Styling_Appearance_VS2013_Theme_02.png)
 
 You can switch the three color palettes by calling the `LoadPreset` method as shown below:        
 
 #### __[C#]__
-
-{{region common-styling-appearance-visualstudio2013-theme_0}}	
+{{region cs-styling-appearance-visualstudio2013-theme-1}}	
 	//default color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Light);
 	
@@ -54,84 +133,18 @@ You can switch the three color palettes by calling the `LoadPreset` method as sh
 
 >important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it.
 
-## VisualStudio2013 Palette brushes and colors
+## Changing Font Properties
 
-Below you can find the differences between the three color variations. Every brush has relevant HEX value in the corresponding color variation.
+The `FontSize` and `FontFamily` properties of all components in the application can be dynamically changed for the VisualStudio2013 theme the same way as in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
-|Brush name|Light (default)| |Dark| |Blue| |
-|----------|---------------|---|----|---|----|---|
-|__Brushes, which are same in the three palettes__| | | | | | |
-|AccentMainBrush|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|
-|AccentDarkBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|
-|SelectedBrush|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
-|ValidationBrush|FFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|
-|__Brushes, which are different in the three palettes__| | | | | | |
-|AccentBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FFE5C365|<div class="theme-palette-color" style="background: #E5C365"></div>|
-|MarkerBrush|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
-|StrongBrush|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|FF999999|<div class="theme-palette-color" style="background: #999999"></div>|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|
-|MainBrush|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
-|PrimaryBrush|FFEEEEF2|<div class="theme-palette-color" style="background: #EEEEF2"></div>|FF2D2D30|<div class="theme-palette-color" style="background: #2D2D30"></div>|FFE6EBF5|<div class="theme-palette-color" style="background: #E6EBF5"></div>|
-|AlternativeBrush|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
-|MouseOverBrush|FFC9DEF5|<div class="theme-palette-color" style="background: #C9DEF5"></div>|FF3E3E40|<div class="theme-palette-color" style="background: #3E3E40"></div>|FFFDF4BF|<div class="theme-palette-color" style="background: #FDF4BF"></div>|
-|BasicBrush|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|SemiBasicBrush|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46|<div class="theme-palette-color" style="background: #"></div>|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|HeaderBrush|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF35496A|<div class="theme-palette-color" style="background: #35496A"></div>|
-|ComplementaryBrush|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
-|ReadOnlyBackgroundBrush|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
-|ReadOnlyBorderBrush|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|Additional color| | | | | | |		
-|DefaultForegroundColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
-
-\* `DefaultForegroundColor` is the only resource of type Color and not a SolidColorBrush in VisualStudio2013 palette. Currently it is used only in the ExpressionEditor.
-
-## Theme Palette brushes description
-
-Here you can find more details about each brush and where it is usually applied.
-
-The first four colors have the same value in the three color variations and they are commonly used among all controls:  
-* `AccentMainBrush`&mdash;Blue by default and it is the main accent brush for the theme
-* `AccentDarkBrush`&mdash;Blue by default and it is the darker accent brush for the theme
-* `SelectedBrush`&mdash;White by default and is the main color for text or paths which are over elements with accent background
-* `ValidatonBrush`&mdash;Red by default and it is the brush used for validation where such is applicable in our controls
-
-The colors that have different HEX value can be ordered by purpose.
-
-First we needed another accent brush which has the same value as AccentDarkBrush for the Light and Dark color variations of VisualStudio2013 theme, but orange in the Blue color variation. This was necessary due to our aim to be as much closer as possible to the Visual Studio's product design.  
-* `AccentBrush`&mdash;another accent brush, usually used for border of elements in their MouseOver, Active, Toggled or Focused state. 
-
-There are two brushes usually used for foregrounds: 
-* `MarkerBrush`&mdash;the main brush used for text color, also path's fill in MouseOver state
-* `StrongBrush`&mdash;paths' and ticks' fill in Normal state, also ReadOnly text
-
-There are six brushes usually used for background and border color:  
-* `MainBrush`&mdash;brush used for background of controls with direct input such as TextBox, MaskedInput, Editable ComboBox, AutoCompleteBox, PasswordBox. Also used as main background of elements that has different content with unpredictable background (PrimaryBrush or AlternativeBrush).
-* `PrimaryBrush`&mdash;brush used for background of most of the controls that have no direct input in their normal state.
-* `AlternativeBrush`&mdash;brush used as alternative background of PrimaryBrush. Also used as background of Popups and DropDowns.
-* `MouseOverBrush`&mdash;brush used for background of elements that are in MouseOver state.
-* `BasicBrush`&mdash;brush widely used for border color of controls in their Normal state.
-* `SemiBasicBrush`&mdash;the same brush as BasicBrush with 40% opacity, used for background of elements that are in MouseOver state.
-
-Some controls such as Window, RibbonView, ScheduleView, Docking Pane, Docking ToolWindow, TileView have headers with a specific brush for background:  
-* `HeaderBrush`&mdash;brush used for background of headers
-
-Additional brush is introduced rarely used for elements in Disabled state:
-* `ComplementaryBrush`
-
-The following screenshot shows the usage of some of the brushes:
-![Common Styling Appearance VS 2013 Theme 01](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
-
-## Changing Fonts
-
-The official Q1 2015 release of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} introduced features that allow you to dynamically change the `FontSize` and `FontFamily` properties of all components in the application for the VisualStudio2013 theme. 
-
-All Telerik controls use resources that are linked to one major singleton object that contains the FontSize and FontFamily properties used for the VisualStudio2013 theme. These properties are public so you can easily modify the theme resources at one single point. The most commonly used FontSize in the theme is named FontSize and its default value is __12__. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily - there is only one FontFamily resource which is named FontFamily and it is set to `Segoe UI`.
+These properties are public so you can easily modify the theme resources at one single point. The most commonly used FontSize in the theme is named FontSize and its default value is __12__. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily - there is only one FontFamily resource which is named FontFamily and it is set to `Segoe UI`.
 
 >Please note that for complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the FontSize property.
 
 All the available `FontSizes` and `FontFamily` as well as their __default values__:
 
 #### __[C#]__
-{{region common-styling-appearance-visualstudio2013-theme_1}}
+{{region cs-styling-appearance-visualstudio2013-theme-2}}
 	VisualStudio2013Palette.Palette.FontSizeXXS = 9; 
 	VisualStudio2013Palette.Palette.FontSizeXS = 10;
 	VisualStudio2013Palette.Palette.FontSizeS = 11; 
@@ -168,7 +181,7 @@ More details regarding the usage of the rarely used font sizes inside the differ
 As the following example shows, you can change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from __12__ to __16__ on a click of a button:
 
 #### __[XAML]__
-{{region common-styling-appearance-visualstudio2013-theme_0}}
+{{region xaml-styling-appearance-visualstudio2013-theme-0}}
 	<StackPanel>
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 			<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
@@ -182,7 +195,7 @@ As the following example shows, you can change the default FontFamily from "Sego
 {{endregion}}
 
 #### __[C#]__
-{{region common-styling-appearance-visualstudio2013-theme_2}}
+{{region cs-styling-appearance-visualstudio2013-theme-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 	   VisualStudio2013Palette.Palette.FontSize = 16;
@@ -194,33 +207,26 @@ This will be the final result:
 
 ![Common Styling Appearance VS 2013 Theme](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
-## ReadOnly Properties
+## Changing Opacity
 
-In the __R2 2019__ version, the following properties were introduced in the `VisualStudio2013Palette` to control the look and feel of elements in their readonly state:
+Since the __R2 2019__ version, you can easily change the opacity of the disabled and read-only elements by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the `VisualStudio2013Palette`. The default values are __0.2__ and __0.4__ respectively. 
+Also, to control the background and border color in the read-only state, you can use the following brushes:
 
 * `ReadOnlyBackgroundBrush`&mdash;Used as a background of elements that are in a read-only state.
 * `ReadOnlyBorderBrush`&mdash;Used in borders inside elements that are in a read-only state.
-* `ReadOnlyOpacity`&mdash;Used for text in inputs when they are in a read-only state.
 
-## Changing DisbledOpacity
-
-If you need to change the opacity of disabled elements, you can easily do it by using the `DisabledOpacity` property of the `VisualStudio2013Palette`. The default value of the property is __0.2__.
-
-#### __[XAML] Changing the disabled opacity__
-{{region common-styling-appearance-visualstudio2013-theme-3}}
-	VisualStudio2013Palette.Palette.DisabledOpacity = 0.4;
+#### __[C#] Changing the read-only and disabled opacity__
+{{region cs-styling-appearance-visualstudio2013-theme-4}}
+	VisualStudio2013Palette.Palette.ReadOnlyOpacity = 0.5;
+	VisualStudio2013Palette.Palette.DisabledOpacity = 0.5;
 {{endregion}}
-
-__Setting the disabled opacity__
-
-![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `VisualStudio2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region common-styling-appearance-visualstudio2013-theme-4}}
+{{region xaml-styling-appearance-visualstudio2013-theme-1}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

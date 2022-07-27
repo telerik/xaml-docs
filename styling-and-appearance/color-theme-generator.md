@@ -5,7 +5,7 @@ description: Color Theme Generator application contains most Telerik controls an
 slug: common-styling-color-theme-generator
 tags: theme, color, generator
 published: True
-position: 5
+position: 6
 ---
 # Color Theme Generator
 

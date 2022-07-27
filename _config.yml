@@ -1095,16 +1095,19 @@ navigation:
         position: 7
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
+        position: 10
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
+        position: 11
     "styling-and-appearance/glyphs":
         title: "Font Glyphs"
-        position: 5
+        position: 8
     "styling-and-appearance/themes-suite":
         title: "Themes Suite"
-        position: 4
+        position: 7
     "styling-and-appearance/how-to":
         title: "How To"
+        position: 9
     "testing/justmock":
         title: "JustMock"
     "testing/appium":

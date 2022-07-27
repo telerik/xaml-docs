@@ -2,7 +2,7 @@
 title: Office2013 Theme
 page_title: Office2013 Theme
 description: This article provides an overview of the Office2013 theme from the UI for {{ site.framework_name }} suite.
-slug: styling-appearance-office2013-theme
+slug: common-styling-appearance-office2013-theme
 tags: office2013,theme,dynamic,fontsize,fontfamily
 published: True
 position: 12

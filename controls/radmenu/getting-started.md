@@ -59,9 +59,12 @@ You can populate the control by either adding the RadMenuItems to its `Items` co
 	        <telerik:RadMenuItem Header="SubItem 1" />
 	        <telerik:RadMenuItem Header="SubItem 2" />
 	    </telerik:RadMenuItem>
-	    <telerik:RadMenuItem Header="Item 2" />
 	</telerik:RadMenu>
 {{endregion}}
+
+__RadMenu with added items__
+
+![RadMenu example result](images/menu-getting-started-result.png)
 
 ## Populating the RadMenu with Data
 

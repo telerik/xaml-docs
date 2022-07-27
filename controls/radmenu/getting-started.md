@@ -35,7 +35,7 @@ In order to use the RadMenu control in your projects you have to add references 
 
 ## Adding RadMenu
 
-You can include the control in your application by either dragging it from the toolbox in Visual Studio, or by manually declare it. Below is an example of how to include the RadMenu control in XAML code:
+You can include the control in your application by either dragging it from the toolbox in Visual Studio, or by manually declaring it. Below is an example of how to include the RadMenu control in XAML code:
 
 #### __[XAML] Adding RadMenu__
 

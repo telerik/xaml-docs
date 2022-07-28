@@ -94,3 +94,5 @@ Through the Telerik NuGet Server users can easily include the Telerik UI for Sil
  * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
 
  * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
+
+ * [Restoring NuGet Packages in Your CI Workflow]({%slug installation-nuget-keys%})

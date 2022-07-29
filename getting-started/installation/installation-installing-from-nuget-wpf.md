@@ -216,3 +216,5 @@ After you enter your Telerik.com username and password, you should see an XML se
  * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
 
  * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
+
+ * [Restoring NuGet Packages in Your CI Workflow]({%slug installation-nuget-keys-wpf%})

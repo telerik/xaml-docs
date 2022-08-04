@@ -14,6 +14,8 @@ __Telerik UI for WPF__ comes with support for __.NET Core 3.1__, __.NET 5__ and 
 
 There is are sets of DLLs built against the mentioned .NET versions which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
+> The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for the .NET Core 3.1 and later is that the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package should be installed manually. This is not needed if you install the Telerik dlls using nuget packages.
+
 ## .NET Core 3.1 Requirements
 
 To work with the Telerik `.NET Core 3.1` DLLs you will need to have the following installed.

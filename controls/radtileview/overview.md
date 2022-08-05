@@ -21,6 +21,8 @@ Create flexible and interactive layouts for your {% if site.site_name == 'Silver
 {% include cta-panel-overview.html %}
 {% endif %}
 
+>tip Get started with the control with its [Getting Started]({%slug radtileview-getting-started%}) help article that shows how to use it in a basic scenario.
+
 ![Rad Tile View - overview](images/tileview_overview.png)
 
 ## See Also

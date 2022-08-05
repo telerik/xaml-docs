@@ -10,7 +10,7 @@ position: 1
 
 # Migrating to .NET Core
 
-This article shows how to migrate from an existing WPF .NET Framework project to a .NET Core one.
+This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET Core 3.1, .NET 5 or .NET 6).
 
 >tip Before proceeding with this topic you can check if your application's code is compatible with .NET Core using the [Microsoft Portability Analyzer](https://devblogs.microsoft.com/dotnet/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/) tool.
 
@@ -34,6 +34,8 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	
 	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1
 	![](images/netcore-support-migration-3.png)
+	
+4. If you are not using nuget packages to install the Telerik dlls, you will need to install the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually.
 
 ## Tips
 
@@ -45,10 +47,6 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	{{region netcore-support-migration-0}}
 		<generateassemblyinfo>false</generateassemblyinfo>
 	{{endregion}}
-	
-* If you have referred to some references which are still not available in .NET Core as Windows.Composition, you can Include the [Windows.Compatibility Pack](https://docs.microsoft.com/en-us/dotnet/core/porting/windows-compat-pack) with the command below executed via the Command Prompt from Visual Studio.
-	 
-	<div class='tabbedCode'><pre>dotnet add package Microsoft.Windows.Compatibility</pre></div>
 
 * The getting started experience in RadRichTextBox for .NET Core has been improved compared to its .NET Framework alternative. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
 

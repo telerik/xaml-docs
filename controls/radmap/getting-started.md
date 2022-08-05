@@ -14,10 +14,13 @@ The __RadMap__ control allows you to display rich geographical information from 
 
 ## Creating a RadMap
 
->In order to use __RadMap__ in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Data__
->	- __Telerik.Windows.Controls.DataVisualization__  
+In order to use __RadMap__ in your projects you have to add references to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Data__
+* __Telerik.Windows.Controls.DataVisualization__  
+
+>tip If you use a project that targets, .NET Core 3.1 or later .NET version, you will need to install also the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually. This happens automatically if you install the Telerik dlls using [nuget packages]({%slug installation-installing-from-nuget-wpf%}).
+
 >You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).            
 
 After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        

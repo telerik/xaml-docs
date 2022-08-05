@@ -129,6 +129,8 @@ If you use our [Implicit Themes]({%slug styling-apperance-implicit-styles-overvi
 	</Style>
 {{endregion}}
 
+>tip The __GridViewCellStyle__ resource is accessible when you use the NoXaml dlls and you merged the associated .xaml files. The Style is defined in the __Telerik.Windows.Controls.GridView.xaml__ file which is why you can access it using the `StaticResource` keyword.
+
 4. Finally, set the __CellStyleSelector__ property of the data column that represents the StadiumCapacity field:
 
 #### __[XAML] Example 4: Set CellStyleSelector for the column__

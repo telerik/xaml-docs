@@ -107,5 +107,6 @@ You can then set up your data controls in the same way you would if you were usi
 {{endregion}}
 
 ## See Also
+* [ViewModelBase class]({%slug common-viewmodelbase-class%})
 * [Creating the Client Application]({%slug raddataservicedatasource-getting-started-creating-the-client-application%})
 * [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})

@@ -38,6 +38,7 @@ This article demonstrates how you can change the default look of the __RadCartes
 	* [OhlcSeries](#ohlcseries)
 	* [CandlestickSeries](#candlestickseries)	
 * [BoxPlotSeries](#customizing-box-plot-series)	
+* [ErrorBarSeries](#customizing-error-bar-series)	
 	
 ## Customizing Data Points Using DefaultVisualStyle
 
@@ -554,6 +555,30 @@ The BoxPlotSeries exposes a __DefaultVisualStyle__ property that allows you to c
 {{endregion}}
 
 ![radchartview-styles-and-templates-boxplot Series-defaultvisualstyle](images/radchartview-styles-and-templates-boxplotseries-defaultvisualstyle.png)
+
+## Customizing Error Bar Series
+
+The ErrorBarSeries exposes a __DefaultVisualStyle__ property that allows you to customize the visual elements representing the data points. The property accepts a Style targeting the __ErrorBarShape__ element. The style can be used to change the colors of the visual and also its caps size, marker visibility, and marker size.
+
+#### __[XAML] Example 29: Setting ErrorBarSeries DefaultVisualStyle__   
+{{region radchartview-customizing-cartesianchart-series-26}}
+	<telerik:ErrorBarSeries.DefaultVisualStyle>
+		<Style TargetType="telerik:ErrorBarShape">
+			<Setter Property="Fill" Value="#2DA68D" />
+			<Setter Property="Stroke" Value="#2DA68D" />
+			<Setter Property="StrokeThickness" Value="2" />
+			<Setter Property="ShowMarker" Value="True"/>
+			<Setter Property="CapLength" Value="0.5" />
+			<Setter Property="MarkerSize" Value="25, 25"/>
+		</Style>
+	</telerik:ErrorBarSeries.DefaultVisualStyle>
+{{endregion}}
+
+The `CapLength` property controls the size of the caps shown at both ends of the error bar. The property works with relative units between 0 and 1. 
+
+The `MarkerSize` property determines the size of the marker. The property works with absolute value, which means that the marker has fixed size. If the `MarkerSize` is set to `null`, the marker will resize according to the cap length.
+
+![radchartview-styles-and-templates-errorbarseries Series-defaultvisualstyle](images/radchartview-styles-and-templates-errorbarseries-defaultvisualstyle.png)
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})

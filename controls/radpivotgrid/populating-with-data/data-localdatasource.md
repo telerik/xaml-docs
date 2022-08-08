@@ -308,6 +308,6 @@ Here is a list of the property descriptions that you can use:
 
  * [Populating with data]({%slug radpivotgrid-populating-with-data%})
 
- * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
+ * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist%})
 
  * [RadPivotGrid getting started]({%slug radpivotgrid-getting-started%})

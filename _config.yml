@@ -242,8 +242,6 @@ navigation:
         title: OLAP Providers
     controls/radpivotgrid/features/queryabledataprovider:
         title: QueryableDataProvider
-    controls/radpivotgrid/radpivotfieldlist:
-        title: RadPivotFieldList
         position: 3
     controls/radbadge:
         title: RadBadge

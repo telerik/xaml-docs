@@ -161,7 +161,7 @@ Read more about the data binding support in the [Create Data-Bound Chart]({%slug
 
 ## Customizing the Appearance
 
-The appearance of the error bar visual can be modified using the `DefaultVisualStyle` property of the series. The style should target the `ErrorBarShape` element. Read more in the [ErrorBar section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the Customizing CartesianChart Series help article.
+The appearance of the error bar visual can be modified using the `DefaultVisualStyle` property of the series. The style should target the `ErrorBarShape` element. Read more in the [ErrorBar section]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}#customizing-error-bar-series) of the Customizing CartesianChart Series help article.
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})

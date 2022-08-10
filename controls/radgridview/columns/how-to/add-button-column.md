@@ -34,16 +34,10 @@ This approach involves inheriting from __GridViewColumn__ and overriding the __C
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
 	    {
-	        RadButton button = cell.Content as RadButton;
-	        if (button == null)
-	        {
-	            button = new RadButton();
-	            button.Content = "Delete";
-	            button.Command = RadGridViewCommands.Delete;
-	        }
-	
-	        button.CommandParameter = dataItem;
-	
+	        RadButton button = new RadButton();
+	        button.Content = "Delete";
+	        button.Command = RadGridViewCommands.Delete;
+	        button.CommandParameter = dataItem;	
 	        return button;
 	    }
 	}

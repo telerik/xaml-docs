@@ -14,7 +14,33 @@ In RadScheduleView there are plugin selection behaviors that make it possible to
 
 AppointmentSelectionBehavior is responsible for executing the selection logic of appointments in the control. Its default behavior is for single, multiple and extended selection. It is possible to customize the behavior in order to restrict selecting appointments in different resources, selecting more than one appointment etc.
 
-## Disable multiple appointments selection based on ResourceName
+## Synchronize with CurrentAppointment
+
+The AppointmentSelectionBehavior exposes an `IsSynchronizedWithCurrentItem` property which determines whether the `CurrentAppointment` and `SelectedAppointment` properties will be synchronized (have the same value).
+
+The default AppointmentSelectionBehavior used by the RadScheduleView control has its IsSynchronizedWithCurrentItem set to `True`, but you can change this as demonstrated in the next examples.
+
+#### __[XAML] Set IsSynchronizedWithCurrentItem to False__
+
+{{region xaml-radscheduleview_features_appointment_selection_behavior_0}}
+	<telerik:RadScheduleView.AppointmentSelectionBehavior>
+		<telerik:AppointmentSelectionBehavior IsSynchronizedWithCurrentItem="False" />
+	</telerik:RadScheduleView.AppointmentSelectionBehavior>
+{{endregion}}
+
+#### __[C#] Set IsSynchronizedWithCurrentItem to False__
+
+{{region cs-radscheduleview_features_appointment_selection_behavior_0}}
+	this.scheduleView.AppointmentSelectionBehavior = new AppointmentSelectionBehavior() { IsSynchronizedWithCurrentItem = false };
+{{endregion}}
+
+#### __[VB.NET] Set IsSynchronizedWithCurrentItem to False__
+
+{{region vb-radscheduleview_features_appointment_selection_behavior_0}}
+	Me.scheduleView.AppointmentSelectionBehavior = New AppointmentSelectionBehavior() With {.IsSynchronizedWithCurrentItem = False}
+{{endregion}}
+
+## Disable Multiple Appointments Selection Based on ResourceName
 
 This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.
 
@@ -24,7 +50,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 #### __C#__
 
-{{region radscheduleview_features_appointment_selection_behavior_0}}
+{{region cs-radscheduleview_features_appointment_selection_behavior_1}}
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
 	{
 	}
@@ -34,7 +60,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 #### __C#__
 
-{{region radscheduleview_features_appointment_selection_behavior_1}}
+{{region cs-radscheduleview_features_appointment_selection_behavior_2}}
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
 	{
 		protected override IEnumerable<IOccurrence> GetSelectedAppointments(AppointmentSelectionState state, IOccurrence target)
@@ -63,13 +89,13 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 #### __XAML__
 
-{{region radscheduleview_features_appointment_selection_behavior_0}}
+{{region xaml-radscheduleview_features_appointment_selection_behavior_3}}
 	<telerik:RadScheduleView ...>
-		...
+		<!-- ... -->
 		<telerik:RadScheduleView.AppointmentSelectionBehavior>
 			<local:CustomAppointmentSelectionBehavior/>
 		</telerik:RadScheduleView.AppointmentSelectionBehavior>
-		...
+		<!-- ... -->
 	</telerik:RadScheduleView>
 {{endregion}}
 
@@ -77,9 +103,9 @@ Finally the ScheduleView control in the XAML should look like this:
 
 #### __XAML__
 
-{{region radscheduleview_features_appointment_selection_behavior_1}}
+{{region xaml-radscheduleview_features_appointment_selection_behavior_4}}
 	<telerik:RadScheduleView ...>
-		...
+		<!-- ... -->
 		<telerik:RadScheduleView.ResourceTypesSource>
 			<telerik:ResourceTypeCollection>
 				<telerik:ResourceType Name="Location">
@@ -97,7 +123,7 @@ Finally the ScheduleView control in the XAML should look like this:
 		<telerik:RadScheduleView.AppointmentSelectionBehavior>
 			<local:CustomAppointmentSelectionBehavior />
 		</telerik:RadScheduleView.AppointmentSelectionBehavior>
-		...
+		<!-- ... -->
 	</telerik:RadScheduleView>
 {{endregion}}
 

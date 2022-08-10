@@ -5,7 +5,7 @@ description: Check our &quot;Editing&quot; documentation article for the RadPivo
 slug: radpivotgrid-features-editing
 tags: editing
 published: True
-position: 7
+position: 11
 ---
 
 # Editing 

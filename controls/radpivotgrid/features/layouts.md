@@ -115,6 +115,6 @@ The show sub totals option is available also in the context menu of the group de
 
 ## See Also  
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
- * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
+ * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist%})
  * [Populating with Data]({%slug radpivotgrid-populating-with-data%})
  * [Features]({%slug radpivotgrid-features%})

@@ -5,7 +5,7 @@ description: Check our &quot;ChartView Integration&quot; documentation article f
 slug: radpivotgrid-features-radchartview-integration
 tags: chartview,integration
 published: True
-position: 6
+position: 9
 ---
 
 # ChartView Integration

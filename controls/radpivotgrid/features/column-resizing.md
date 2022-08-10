@@ -5,7 +5,7 @@ description: This article describes how users can change the widths of the colum
 slug: radpivotgrid-features-column-resizing
 tags: column,resizing
 published: True
-position: 8
+position: 12
 ---
 
 # Column Resizing 

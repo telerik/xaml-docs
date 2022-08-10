@@ -371,5 +371,5 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 
 ## See Also
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})
- * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
+ * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist%})
  * [Populating with Data]({%slug radpivotgrid-populating-with-data%})

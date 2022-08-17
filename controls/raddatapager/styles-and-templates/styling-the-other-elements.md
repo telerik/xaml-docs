@@ -15,7 +15,7 @@ As __RadDataPager__ doesn't expose __Style__ properties for its other elements, 
 
 After that bring the template for the __DataPagerPresenter__ in edit mode and manually create or generate the default style for the desired controls.
 
->tip You might find it useful to get familiar with the [Template Structure of the DataPagerPresenter](http://penev/devtools/wpf/controls/raddatapager/styles-and-templates/template-structure#datapagerpresenter).
+>tip You might find it useful to get familiar with the [Template Structure of the DataPagerPresenter](https://docs.telerik.com/devtools/wpf/controls/raddatapager/styles-and-templates/template-structure#datapagerpresenter).
 
 ## See Also
 

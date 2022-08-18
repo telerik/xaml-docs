@@ -94,6 +94,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radcircularprogressbar:
+        title: RadCircularProgressBar
     controls/radvirtualkeyboard:
         title: RadVirtualKeyboard
     controls/radvirtualkeyboard/appearance:

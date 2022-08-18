@@ -98,6 +98,7 @@ intro_columns:
     items:
       "BusyIndicator": "radbusyindicator-overview"
       "Chat (Conversational UI)": "chat-overview"
+      "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

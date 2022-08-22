@@ -14,10 +14,10 @@ This section defines terms and concepts used in the scope of the `RadCircularPro
 
 ![](images/radcircularprogressbar-visual-structure-0.png)
 
-* __Progress Indicator__&mdash;indicates the current status of the progress.
-* __Progress Track__&mdash;holder of the progress indicator used to hold and contract the progress.
-* __Segment__&mdash;indicates the segment of RadCircularProgressBar.
-* __Content__&mdash;represents the value set to the `Content` property.
+* __Progress Indicator__&mdash;Indicates the current status of the progress.
+* __Progress Track__&mdash;Holder of the progress indicator used to hold and contract the progress.
+* __Segment__&mdash;Indicates the segment of RadCircularProgressBar.
+* __Content__&mdash;Represents the value set to the `Content` property.
 
 >tip Get started with the control with its [Getting Started]({%slug radcircularprogressbar-getting-started%}) help article that shows how to use it in a basic scenario.
 

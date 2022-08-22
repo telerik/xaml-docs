@@ -27,7 +27,7 @@ CircularProgressBar is a component that allows you to convey the progress of dif
 
 * __Segments__&mdash;The CircularProgressBar can be split into numerous segments to indicate its progress.
 
-* __Color Ranges__&mdash;CircularProgressBar supports definding ranges with different colors. Each range allows you to specify a start and end position, as well as an option to make its fill gradient.
+* __Color Ranges__&mdash;CircularProgressBar supports defining ranges with different colors. Each range allows you to specify a start and end position, as well as an option to make its fill gradient.
 
 * __Determinate and indeterminate states__&mdash;The determinate state shows a specific amount of the progress. The indeterminate one plays an animation of the circular progress.
 

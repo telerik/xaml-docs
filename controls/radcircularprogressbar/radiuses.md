@@ -14,7 +14,7 @@ position: 8
 
 >important If you set the `IndicatorStartRadius` and `IndicatorEndRadius` properties, their values will modify the radius of both the primary and secondary progress indicator.
 
-#### __[XAML] Changing the track and progress indocators radiuses__
+#### __[XAML] Changing the track and progress indicators radiuses__
 {{region radcircularprogressbar-radiuses-0}}
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     Value="0.5"
@@ -26,7 +26,7 @@ position: 8
                                     TrackEndRadius="0.9"/>
 {{endregion}}
 
-#### __[C#] Changing the track and progress indocators radiuses in code__
+#### __[C#] Changing the track and progress indicators radiuses in code__
 {{region radcircularprogressbar-radiuses-1}}
     RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
     radCircularProgressBar.Value = 0.5;
@@ -41,7 +41,7 @@ position: 8
     radCircularProgressBar.TrackEndRadius = 0.9;
 {{endregion}}
 
-#### __[VB.NET] Changing the track and progress indocators radiuses in code__
+#### __[VB.NET] Changing the track and progress indicators radiuses in code__
 {{region radcircularprogressbar-radiuses-2}}
     Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
     radCircularProgressBar.Value = 0.5

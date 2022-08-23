@@ -19,11 +19,11 @@ The __RadDocument__ class can track the history of any actions taken against its
 
 This topic will explain you how to:
 
-* [Enable/Disable History](#enable/disable-history)
+* [Enable/Disable History](#enabledisable-history)
 
 * [Clear History](#clear-history)
 
-* [Undo/Redo Actions](#undo/redo-actions)
+* [Undo/Redo Actions](#undoredo-actions)
 
 * [Change History Depth](#change-history-depth)
 

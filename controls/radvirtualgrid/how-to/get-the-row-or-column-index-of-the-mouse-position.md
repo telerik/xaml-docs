@@ -41,6 +41,8 @@ If you have defined a [custom CellTemplate]({%slug radvirtualgrid-custom-cell-co
         }
 {{endregion}}
 
+> The previous examples show how to use the `MouseRightButtonDown` event. To subscribe to `MouseLeftButtonDown`, you will need to use the `AddHandler` method with its last parameter set to `true`. `this.virtualGrid.AddHandler(RadVirtualGrid.MouseLeftButtonDownEvent, new MouseButtonEventHandler(virtualGrid_MouseLeftButtonDown), true);`
+
 ## See Also
 
 * [Selection]({%slug virtualgrid-selection%})

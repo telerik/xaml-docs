@@ -18,6 +18,8 @@ There are small differences in the approaches used with the different series typ
 * [Scatter Point Series](#scatter-point-series)
 * [Pie Series](#pie-series)
 
+The color binding is done via the `DefaultVisualStyle` or `PointTemplate` properties of the series. In case you are using one of the [lightweight render options]({%slug radchartview-features-rendering%}) (Direct2D or Bitmap), keep in mind that bindings are not support in the `DefaultVisualStyle`. Instead, use only fixed values. Also setting the `PointTemplate` property will disable the lightweight render options and the chart will fallback to the default XAML rendering.
+
 ## Example Data Model Definition
 
 This section contains the data model used for the series examples in this article and also how to set it up.

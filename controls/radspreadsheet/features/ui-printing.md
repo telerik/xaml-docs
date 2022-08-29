@@ -83,7 +83,7 @@ Depending on whether you want to show a __PrintDialog__ before printing, you can
 
 ## Worksheet Page Setup
 
-When you need to set different print option such as page size, page orientation or when you want to print the spreadsheet grid lines, you can set this options using the worksheet's page setup. For more detailed information you can check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.        
+When you need to set different print option such as page size, print titles, page orientation, or when you want to print the spreadsheet grid lines, you can set this options using the worksheet's page setup. For more detailed information you can check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.        
 
 >You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers]({%slug radspreadsheet-ui-headers-and-footers%}) topic.
 
@@ -103,6 +103,14 @@ All the scaling options are available in the Print Preview as well as in the Pag
 #### Figure 2: Scaling options
 ![Scaling options in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_02.png)
 
+## Print Titles
+
+RadSpreadsheet comes with a built-in functionality to set rows and/or columns to be repeated on each printed page so that you can keep the titles for the data always visible. You can choose whether to set row(s) or column(s), or event both through the Page Setup dialog. This dialog is available under the Page Setup section of the Page Layout tab of RadSpreadsheet's ribbon:
+
+#### Figure 3: Print titles
+![Print titles in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_03.png)
+
+The WorksheetPageSetup class also enables you set the print titles in code. For more information, check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.
 
 ## Print Preview
 
@@ -125,7 +133,7 @@ The following code snippet shows how to integrate the print preview with RadRibb
 {{endregion}}
 
 
-#### Figure 3: Print preview
+#### Figure 4: Print preview
 ![Print preview in Radspreadsheet](images/RadSpreadsheet_UI_Printing_08.png)
 
 

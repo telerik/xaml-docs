@@ -1,5 +1,5 @@
 ---
-title: Disable Horizontal Scrollbar
+title: Disable the Horizontal Scrollbar of RadPropertyGrid
 page_title: How to Hide Horizontal Scrollbar
 description: This article will show you how to disable the horizontal scrollbar of RadPropertyGrid.
 type: how-to

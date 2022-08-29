@@ -13,11 +13,9 @@ RadRichTextBox enables you to display the appropriate number beside each line of
 
 ![Line Numbering in RadRichTextBox](images/RadRichTextBox_Features_LineNumbering_01.png)
 
-By default, each line in a document is numbered, excluding those in tables, footnotes, endnotes, text boxes, and headers and footers. However, you can choose which line numbers to display. For example, you can display line numbers in all or part of the document. Or you can display line numbers at intervals, such as every tenth line (10, 20, 30, and so on).
-      
-* [UI and Commands](#ui-and-commands)
-* [Using Format Painter Programmatically](#using-format-painter-programmatically)
+By default, each line in a document is numbered, excluding those in tables, footnotes, endnotes, text boxes, and headers and footers. However, you can choose which line numbers to display. For example, you can display line numbers in all or part of the document, or disable the numbering for some of the content. All options for customization are described below.
 
+>note The settings related to line numbering are preserved when working with the DOCX, RTF, and XAML formats. 
 
 ## UI and Commands
 
@@ -67,6 +65,7 @@ The line numbering functionality can be programmatically used through the follow
 	this.radRichTextBox.ChangeSectionLineNumbering(numbering);
 {{endregion}}
 
+You can also directly control the line numbering settings for a specific Section object through its **LineNumbering** property.
 
 ## See Also
 

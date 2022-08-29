@@ -47,3 +47,6 @@ The following sample extends the implementation of the above example:
 __RadCircularProgressBar with gradient color ranges__
 
 ![RadCircularProgressBar with gradient color ranges](images/radcircularprogressbar-color-ranges-1.png)
+
+## See Also
+* [Segments]({%slug radcircularprogressbar-segments%})

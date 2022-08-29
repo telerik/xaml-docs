@@ -3336,7 +3336,12 @@ defaults:
         path: "controls/radchat"
     values:
         title_prefix: "WPF Chat"
--
+-   
+    scope:
+        path: "controls/radcircularprogressbar"
+    values:
+        title_prefix: "WPF CircularProgressBar"
+
     scope:
         path: "controls/radcloudupload"
     values:
@@ -3892,6 +3897,7 @@ intro_columns:
       "BusyIndicator": "radbusyindicator-overview"
       "Callout": "radcallout-overview"
       "Chat (Conversational UI)": "chat-overview"
+      "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

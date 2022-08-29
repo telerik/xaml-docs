@@ -38,6 +38,6 @@ position: 9
 ![RadCircularProgressBar with modified angles](images/radcircularprogressbar-angles-0.png)
 
 ## See Also
-* [Secondary Progress Indicator]({%slug radcircularprogressbar-secondary-indicator%})
 * [Color Ranges]({%slug radcircularprogressbar-color-ranges%})
+* [Secondary Progress Indicator]({%slug radcircularprogressbar-secondary-indicator%})
 * [Radiuses]({%slug radcircularprogressbar-radiuses%})

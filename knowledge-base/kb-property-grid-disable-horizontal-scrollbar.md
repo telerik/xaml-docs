@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-Setting the `ScrollViewer.HorizontalScrollBarVisibility` directly onto the `RadPropertyGrid` control instance does not hide it.
+Setting the `ScrollViewer.HorizontalScrollBarVisibility` directly onto the `RadPropertyGrid` control instance does not hide the horizontal scrollbar.
 
 ## Solution
 

@@ -129,27 +129,29 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 
 The __Paragraph__ exposes several properties that allow you to customize the layout of the elements placed underneath it. Here is a list of them:
 
-* __FontSize__ - represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.
+* __FontSize__: Represents the font size of the text inside the __Paragraph__. If not explicitly set to its child elements, they inherit its value.
 
-* __LineSpacing__ - specifies the value for the space between the lines.
+* __LineSpacing__: Specifies the value for the space between the lines.
 
-* __LineSpacingType__ - specifies the type of spacing:
+* __LineSpacingType__: Specifies the type of spacing:
 
-	* __AtLeast -__ the space between the lines should equal or greater than the value of the __LineSpacing__ property.
+	* __AtLeast__: The space between the lines should equal or greater than the value of the __LineSpacing__ property.
 
-	* __Auto -__ the space between the lines is determined automatically.
+	* __Auto__: The space between the lines is determined automatically.
 
-	* __Exact -__ the space between the lines should equal to the value of the __LineSpacing__ property.
+	* __Exact__: The space between the lines should equal to the value of the __LineSpacing__ property.
 
-* __LeftIndent -__ represents the size of the indent to the left size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
+* __LeftIndent__: Represents the size of the indent to the left size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
 
-* __RightIndent__ - represents the size of the indent to the right size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
+* __RightIndent__: Represents the size of the indent to the right size of the __Paragraph__. The indent gets applied together with the respective margins to the layout.
 
-* __SpacingAfter__ - represents the size of the empty space after the __Paragraph__.
+* __SpacingAfter__: Represents the size of the empty space after the __Paragraph__.
 
-* __SpacingBefore__ - represents the size of the empty space before the __Paragraph__.
+* __SpacingBefore__: Represents the size of the empty space before the __Paragraph__.
 
-* __TextAlignment__ - represents the alignment of the text inside the __Paragraph__.
+* __TextAlignment__: Represents the alignment of the text inside the __Paragraph__.
+
+* __SuppressLineNumbers__: Gets or sets a boolean value indicating whether the line numbering for the current __Paragraph__ is suppressed.
 
 ## See Also
 

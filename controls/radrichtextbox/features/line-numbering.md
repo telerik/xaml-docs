@@ -65,7 +65,7 @@ The line numbering functionality can be programmatically used through the follow
 	this.radRichTextBox.ChangeSectionLineNumbering(numbering);
 {{endregion}}
 
-You can also directly control the line numbering settings for a specific Section object through its **LineNumbering** property.
+You can also directly control the line numbering settings for a specific Section object through its **LineNumbering** property and suppress the numbering for a specific Paragraph using **SuppressLineNumbers**.
 
 ## See Also
 

@@ -73,3 +73,6 @@ RadCircularProgressBar allows you to set a string format to the `ContentStringFo
 ![RadCircularProgressBar with applied ContentStringFormat](images/radcircularprogressbar-custom-content-2.png)
 
 >tip Check this [article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) for more information on the supported formats.
+
+## See Also
+* [Indeterminate State Animation Customization]({%slug radcircularprogressbar-animation-customization%})

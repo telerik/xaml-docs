@@ -32,8 +32,7 @@ The minimal set of references you need to have in your application in order to h
 
 * **Telerik.Windows.Controls**
 * **Telerik.Windows.Data**
-* **Telerik.Windows.Documents**
-* **Telerik.Windows.Documents.Core**
+* **Telerik.Windows.Documents** 
 * **System.ComponentModel.Composition**
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:

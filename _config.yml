@@ -95,6 +95,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radcircularprogressbar:
+        title: RadCircularProgressBar
     controls/radvirtualkeyboard:
         title: RadVirtualKeyboard
     controls/radvirtualkeyboard/appearance:
@@ -243,8 +245,6 @@ navigation:
         title: OLAP Providers
     controls/radpivotgrid/features/queryabledataprovider:
         title: QueryableDataProvider
-    controls/radpivotgrid/radpivotfieldlist:
-        title: RadPivotFieldList
         position: 3
     controls/radbadge:
         title: RadBadge
@@ -3340,7 +3340,12 @@ defaults:
         path: "controls/radchat"
     values:
         title_prefix: "WPF Chat"
--
+-   
+    scope:
+        path: "controls/radcircularprogressbar"
+    values:
+        title_prefix: "WPF CircularProgressBar"
+
     scope:
         path: "controls/radcloudupload"
     values:
@@ -3896,6 +3901,7 @@ intro_columns:
       "BusyIndicator": "radbusyindicator-overview"
       "Callout": "radcallout-overview"
       "Chat (Conversational UI)": "chat-overview"
+      "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
       "PersistenceFramework": "persistence-framework-overview"

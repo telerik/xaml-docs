@@ -5,7 +5,7 @@ description: Check our &quot;Localization&quot; documentation article for the Ra
 slug: radpivotgrid-features-localization
 tags: localization
 published: True
-position: 3
+position: 6
 ---
 
 # Localization
@@ -517,6 +517,17 @@ Pivot_CalculatedFields	|	Calculated Fields	|	Used as a DisplayName of the Calcul
 PivotFieldList_ItemFilterConditionCaption	|	Show items with value that	|	Used as caption of the label filter condition in the Label Filter dialog of a group description.
 PivotFieldList_None	|	Data source order	|	Used as a content of a RadioButton in the More Sorting Options dialog of a group description.
 PivotFieldList_Sort_BySortKeys	|	by Sort Keys	|	Used in the More Sorting Options dialog of a group description when data provider is OLAP Cube.
+PivotInlineFieldList_RowsEmptyText	|	Drag row items here	| Used in the inline RadPivotFieldList as a header of the area where RowGroupDescriptions can be added.
+PivotInlineFieldList_ColumnsEmptyText	|	Drag column items here	| Used in the inline RadPivotFieldList as a header of the area where ColumnGroupDescriptions can be added.
+PivotInlineFieldList_ValuesEmptyText	|	Drag data items here	| Used in the inline RadPivotFieldList as a header of the area where AggregateGroupDescriptions can be added.
+PivotInlineFieldList_FiltersEmptyText	|	Drag filter items here	| Used in the inline RadPivotFieldList as a header of the area where FilterDescriptions can be added.
+PivotInlineFieldList_FieldChooser	|	Field Chooser	| The title displayed for the field chooser dialog.
+PivotInlineFieldList_Fields	|	Drag fields in the inline field list:	| The label prompting the user to drag the fields displayed in the field chooser dialog.
+PivotInlineFieldList_Sort	|	Sort	| The header for the sort operation in the field context menu.
+PivotInlineFieldList_Remove	|	Remove	| The header for the remove operation in the field context menu.
+PivotInlineFieldList_ReloadData	|	Reload Data	| The header for the operation of reloading data in the field context menu.
+PivotInlineFieldList_ShowFieldList	|	Show Field List	| The header for the menu item responsible for showing the field chooser dialog.
+
 
 ## See Also
 

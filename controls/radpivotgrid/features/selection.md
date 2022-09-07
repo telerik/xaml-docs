@@ -5,7 +5,7 @@ description: Check our &quot;Selection&quot; documentation article for the RadPi
 slug: radpivotgrid-features-selection
 tags: selection, cells
 published: True
-position: 6
+position: 10
 ---
 
 # Selection

@@ -5,7 +5,7 @@ description: Check our &quot;ToolTips&quot; documentation article for the RadPiv
 slug: radpivotgrid-features-tooltips
 tags: tooltips
 published: True
-position: 1
+position: 5
 ---
 
 # ToolTips

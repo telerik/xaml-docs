@@ -78,6 +78,6 @@ The default value is true for the __LocalDataSourceProvider__ and false for __Xm
 
 ## See Also
 
- * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist-started%})
+ * [Adding RadPivotFieldList to your project]({%slug radpivotgrid-fieldlist%})
 
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})

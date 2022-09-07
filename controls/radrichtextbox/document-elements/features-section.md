@@ -114,7 +114,7 @@ Here is a list of these properties:
 	{{endregion}}
 
 
-
+* __LineNumbering__: Gets or sets the line numbering properties for the current Section object. For more information, check the [Line Numbering]({%slug radrichtextbox-features-line-numbering%}) topic.
 
 ### Add headers and footers to a Section
 

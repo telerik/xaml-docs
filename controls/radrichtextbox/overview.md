@@ -128,7 +128,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 
 {% if site.site_name == 'WPF' %}
 * __Line Numbering__:
-	Add or customize line numbering to create the document content easy to refer to. For more information, see the [Line Numbering]({%slug radrichtextbox-features-line-numberingk%}) article.
+	Add or customize line numbering to create the document content easy to refer to. For more information, see the [Line Numbering]({%slug radrichtextbox-features-line-numbering%}) article.
 {% endif %}
 	
 ## See Also

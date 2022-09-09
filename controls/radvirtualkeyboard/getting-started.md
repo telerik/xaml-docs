@@ -17,7 +17,7 @@ This tutorial will walk you through the creation of a sample application that co
 To use `RadVirtualKeyboard`, add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
-* __Telerik.Windows.Navigation__
+* __Telerik.Windows.Controls.Navigaion__
 
 ## Defining the RadVirtualKeyboard
 

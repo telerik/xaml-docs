@@ -30,7 +30,7 @@ The field filter controls (textboxes, comboboxes, etc.) of the FilteringControl 
 
 ## Solution
 
-Such an issue can occur if a custom FilteringControl is defined and its base constructor is not called. The default FilteringControl class initializes most of its logic (along with the filter editors) in its constructor.
+Such an issue can occur if a custom FilteringControl is defined and its base constructor is not called. This happens because the default FilteringControl class initializes most of its logic (along with the filter editors) in its constructor.
 
 To resolve this, ensure that the constructor of the base FilteringControl class is called:
 

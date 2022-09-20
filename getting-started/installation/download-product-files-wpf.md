@@ -51,7 +51,7 @@ Below you could find a list of the available files:
 ### Other Setup Files
 
 * Telerik_UI_for_WPF_[version]_[license]_Hotfix.zip – used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
-* Telerik_UI_for_WPF_[version]_Themes.zip
+* Telerik_UI_for_WPF_[version]_Themes.zip - contains two folders containing the default styles and templates for the controls when using the [Xaml and NoXaml]({%slug xaml-vs-noxaml%}) binaries. You need to use the resources from the `Themes.Xaml` folder when using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach for theming the controls and the ones from `Themes.NoXaml` when using [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles).
 * Telerik_UI_for_WPF_[version]_[license]_PDBs.zip
 * Telerik_UI_for_WPF_[version]\_NuGet_Xaml_[license].zip
 * Telerik_UI_for_WPF_[version]\_NuGet_NoXaml_[license].zip 

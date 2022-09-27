@@ -126,6 +126,19 @@ By default, when the file dialogs are shown, they will load all shared drives un
 	openFileDialog.ShowDialog();            
 {{endregion}}
 
+## Tooltips on Trimmed Text
+
+As of **SP R3 2022** the dialogs display a tooltip when the name of a file or folder is trimmed due to insufficient space. The tooltips close upon click.
+
+The tooltips show the full name of the file or folder which is hovered along with some additional information:
+
+* **For files**&mdash;The type, size and last modified date.
+* **For folders**&mdash;The size and creation date.
+
+#### Figure 6: Folder name tooltip
+
+![Folder name tooltip](images/radfiledialogs-features-common-tooltips.png)
+
 ## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})
 * [Filtering]({%slug radfiledialogs-features-filtering%})

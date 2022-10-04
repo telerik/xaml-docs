@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-How to select a cell region by dragging the mouse from one cell to another.
+How to select a RadVirtualGrid cell region by dragging the mouse from one cell to another.
 
 ## Solution
 
-To achieve this requirement, first set up handlers for the `MouseLeftButtonDown` and `MouseLeftButtonUp` events:
+To achieve this requirement, first set up handlers for the `MouseLeftButtonDown` and `MouseLeftButtonUp` events of RadVirtualGrid:
 
 #### __[C#] Adding the event handlers__ 
 {{region cs-kb-virtualgrid-mouse-drag-selection-0}}

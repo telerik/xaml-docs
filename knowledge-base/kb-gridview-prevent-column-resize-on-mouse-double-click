@@ -1,5 +1,5 @@
 ---
-title: Prevent Column Resize on Mouse Double-Click
+title: Prevent GridView Column Resize on Mouse Double-Click
 page_title: How to Prevent Resize of Column On Double-Click
 description: This article shows how to prevent the column from resizing when double clicking its header.
 type: how-to
@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The column resizes, when a double-click is performed between the header cells.
+RadGridView column resizes, when a double-click is performed between the header cells.
 
 ## Solution
 
@@ -42,7 +42,7 @@ The column resizes, when a double-click is performed between the header cells.
     Me.AddHandler(GridViewHeaderCell.PreviewMouseDoubleClickEvent, New MouseButtonEventHandler(OnPreviewMouseDoubleClick))
 {{endregion}}
 
-2. In the new event handler, set the `e.Handled` property to __true__, if the `e.OriginalSource` is of type` Border`.
+2. In the new event handler, set the `e.Handled` property to `true`, if the `e.OriginalSource` is of type` Border`.
 
 #### __[C#] Prevent the PreviewMouseDoubleClick event from bubbling if the OriginalSource is of type Border__
 {{region kb-gridview-prevent-column-resize-on-mouse-double-click-2}}

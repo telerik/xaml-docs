@@ -10,9 +10,11 @@ position: 3
 
 # HeaderButtonStyle
 
-The `RadExpander` control allows you to customize the style of its header, which is represented by a `RadToggleButton` element. To do so, you can set a new `Style` with `TargetType="RadToggleButton"` to the `HeaderButtonStyle` property of RadExpander. However, this action will override the default style of the RadToggleButton element. You can base the custom style on the __ExpanderHeaderButtonStyle__ style, to keep the default look of the RadToggleButton while applying the needed customizations. To do so, set the `BasedOn` property. Different logic would have to be introduced depending on the used theming approach.
+The `RadExpander` control allows you to customize the style of its header, which is represented by a `RadToggleButton` element. 
 
-If the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach is used, you can directly base the custom Style on the `ExpanderHeaderButtonStyle` style via the BasedOn property.
+To change the header button style, assign a new `Style` with `TargetType="RadToggleButton"` to the `HeaderButtonStyle` property of `RadExpander`. This action will override the default style of the `RadToggleButton` element. You can base the custom style on the __ExpanderHeaderButtonStyle__ style, to keep the default look of the `RadToggleButton` while applying the needed customizations. To do so, set the `BasedOn` property. Different logic would have to be introduced depending on the used theming approach.
+
+If the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach is used, you can directly base the custom Style on the `ExpanderHeaderButtonStyle` style via the `BasedOn` property.
 
 #### __[XAML] Approach when applying a theme via Implicit Styles__
 {{region radexpander-features-header-button-style-1}}

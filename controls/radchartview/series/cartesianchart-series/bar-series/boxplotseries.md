@@ -178,7 +178,7 @@ Additionally, the __Palette__ property of the chart to change the colors of the 
 
 To change the length of the lines representing the minimum and maximum values of the box plot visual, set the __LimitersLength__ property of the series. The property works with relative units between 0 and 1, where 1 means 100% of the layout slot's width. The __default value is 0.5__, which is 50% of the box plot's width.
 
-#### __[XAML] Example 3: Specify a BarSeries in XAML__
+#### __[XAML] Example 3: Setting LimitersLength__
 {{region radchartview-series-barseries_2}}		 
 	<telerik:BoxPlotSeries LimitersLength="1" />
 {{endregion}}

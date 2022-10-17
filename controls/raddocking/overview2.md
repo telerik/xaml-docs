@@ -11,13 +11,6 @@ CTAControlName: RadDocking
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![RadDocking for Silverlight](images/RadDocking_Overview_010.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![RadDocking for WPF](images/RadDocking_Overview_020_WPF.png)
-{% endif %}
-
 Thank you for choosing Telerik ® RadDocking!
 
 Are you comfortable handling multiple windows in your application? Save yourself the hassle with __RadDocking__ for {{ site.framework_name }} – a docking system like the one in Microsoft Visual Studio. You get the dockable ToolWindows, a hidden DockingManager control, and a designer to make the creation of attractive layouts easy.

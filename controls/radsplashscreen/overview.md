@@ -11,8 +11,6 @@ CTAControlName: RadSplashScreen
 
 # Overview
 
-![](images/radsplashscreen-overview-0.png)
-
 RadSplashScreen allows you to display a Telerik themed control that notifies the user that the program is loading. You can customize the image of the splash screen, its animations and loading process visualization.
 
 {% if site.has_cta_panels == true %}

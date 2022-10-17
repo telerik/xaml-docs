@@ -11,8 +11,6 @@ CTAControlName: RadRichTextBox
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadRichTextBox_overview_sl_01.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadRichTextBox_overview_wpf_01.png){% endif %}
-
 __RadRichTextBox__ is a control that can display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, images, etc.
 
 {% if site.has_cta_panels == true %}

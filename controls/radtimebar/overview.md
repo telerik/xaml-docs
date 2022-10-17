@@ -11,8 +11,6 @@ CTAControlName: RadTimeBar
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadTimeBar_Overview_01.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadTimeBar_Overview_01_WPF.png){% endif %}
-
 __RadTimeBar__ is a time bound DataVisualization control. Its chief purpose is to allow lightweight scrolling and navigation through large periods of time. Additionally, the control exposes intuitive API which allows for both declarative and programmatic manipulation of the control. The RadTimeBar control can host other controls; however its true power comes when combined with [RadSparklines]({%slug radsparkline_overview%}) or [RadChartView]({%slug radchartview-overview%}) to show trends in large data collections. The control can be easily combined with other controls such as RadScheduleView, RadGridView, RadBulletGraph, etc. to create rich and powerful dashboards.
 
 {% if site.has_cta_panels == true %}

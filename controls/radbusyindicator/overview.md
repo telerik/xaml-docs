@@ -11,13 +11,6 @@ CTAControlName: RadBusyIndicator
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/RadBusyIndicator_Overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![](images/RadBusyIndicator_Overview_01_WPF_.png)
-{% endif %}
-
 Thank you for choosing __RadBusyIndicator__!
 
 __RadBusyIndicator__ enables you to display a notification whenever a longer-running background process is being handled by the application. This makes the UI more informative and the user experience smoother.

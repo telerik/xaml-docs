@@ -11,9 +11,6 @@ CTAControlName: RadMaskedInput
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![RadMaskedInput for Silverlight Icon](images/maskedinput_sl_icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![RadMaskedInput for WPF Icon](images/maskedinput_wpf_icon.png){% endif %}
-
 __RadMaskedInput__ controls allow controlled data input in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} applications. They enhance the functionality of a TextBox by adding input validation and masks, such as date, IP Address, SSN, phone number, digits, currency and decimals.	
 
 {% if site.has_cta_panels == true %}

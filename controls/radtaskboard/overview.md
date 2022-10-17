@@ -11,8 +11,6 @@ CTAControlName: RadTaskBoard
 
 # Overview
 
-![TaskBoard for WPF icon](images/taskboard_wpf_46_text.png)
-
 Thank you for choosing __Telerik RadTaskBoard__ control!
 
 Telerik’s Task Board control for WPF (also known as Kanban Board) is a powerful new control designed to enable users to track their tasks in a simple, agile-style manner. The control provides a clean and user-friendly interface for a functional task management application. 

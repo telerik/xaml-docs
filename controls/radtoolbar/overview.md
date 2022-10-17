@@ -11,14 +11,6 @@ CTAControlName: RadToolBar
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![RadToolBar Silevrlight Icon](images/toolbar_sl_icon.png)
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
-![RadToolBar WPF Icon](images/toolbar_wpf_icon.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadToolBar__!
 
 __RadToolBar__ is an __ItemsControl__ that can contain a group of controls (items). The __RadToolBar__ can also display its items in accompanying (pop-up) overflow area if the available area is too small.

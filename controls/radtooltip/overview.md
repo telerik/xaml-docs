@@ -11,8 +11,6 @@ CTAControlName: RadToolTip
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![tooltip sl 46 text](images/tooltip_sl_46_text.png){% endif %}{% if site.site_name == 'WPF' %}![tooltip wpf 46 text](images/tooltip_wpf_46_text.png){% endif %}
-
 __RadToolTip__ is a set of controls that allows you to specify and show tooltips. It consists of:
 
 * __RadToolTip__ - the content control that creates a pop-up window that displays information for an element in the interface.

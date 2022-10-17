@@ -11,8 +11,6 @@ CTAControlName: RadSparkLine
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![sparklines wpf](images/sparklines_wpf.png){% endif %}{% if site.site_name == 'Silverlight' %}![sparklines sl](images/sparklines_sl.png){% endif %}
-
 __RadSparkline__ is a set of controls that show an information graphic. The controls are characterized by small size, excellent performance and lightweight. By definition, the sparkline is mainly used to outline trends. However, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.
 
 In terms of data visualization, RadSparkline is comparable to [RadCartesianChart]({%slug radchartview-overview%}). However, in order to maximize performance, the spark lines do not utilize this many visual indicators. They also don't use an x or y axis, or multiple axes.

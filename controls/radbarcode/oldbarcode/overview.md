@@ -11,9 +11,6 @@ CTAControlName: RadBarcode
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/radbarcode-overview-sl-0.png){% endif %}
-{% if site.site_name == 'WPF' %}![](images/radbarcode-overview-wpf-0.png){% endif %}
-
 __RadBarcode__ is a set of components that can be used to create, show and read barcodes. You can generate and visualize barcodes in a machine-readable format via the RadBarcode controls by providing numeric or character data. Additionally, you can read barcodes using the RadBarcodeReader component.
 
 {% if site.has_cta_panels == true %}

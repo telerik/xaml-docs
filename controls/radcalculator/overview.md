@@ -11,10 +11,6 @@ CTAControlName: RadCalculator
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![Rad Calculator Silverlight](images/RadCalculator_Silverlight.png){% else %}
-![Rad Calculator WPF](images/RadCalculator_WPF.png){% endif %}
-
 Thank you for choosing Telerik RadCalculator!
 
 __RadCalculator__ for {{ site.framework_name }} has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. The operations can be executed either by clicking the calculator buttons, or by using your keyboard. You can also use the numeric keypad to type numbers and operators by pressing Num Lock. Furthermore, all the Memory and Clear features are exposed as well.

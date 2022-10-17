@@ -11,12 +11,6 @@ CTAControlName: RadHeatMap
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/heatmap_sl_46_text.png)
-{% endif %}{% if site.site_name == 'WPF' %}
-![](images/heatmap_wpf_46_text.png)
-{% endif %}
-
 The __RadHeatMap__ control can be used to visualize numeric data in a matrix like representation along two axes. Its purpose is to present the data in colored rectangles where the color of each represents the rectangle's value and makes it quite easy to perceive and compare all values.
 
 {% if site.has_cta_panels == true %}

@@ -17,16 +17,16 @@ position: 2
 }
 
 /* Light color variation */
-.windows11theme-accentbrush{
+.windows11theme-accentcolor{
 	background: #005FB8;
 }
-.windows11theme-accentmouseoverbrush{
+.windows11theme-accentmouseovercolor{
 	background-color: rgba(0, 95, 184, 0.9);
 }
-.windows11theme-accentpressedbrush{
+.windows11theme-accentpressedcolor{
 	background-color: rgba(0, 95, 184, 0.8);
 }
-.windows11theme-accentselectedbrush{
+.windows11theme-accentselectedcolor{
 	background: #0078D4;
 }
 .windows11theme-accentcontrolbordergradientstop1color{
@@ -38,8 +38,8 @@ position: 2
 .windows11theme-accentcontrolforegroundcolor{
 	background: #FFFFFF;
 }
-.windows11theme-alternativebrush{
-	background: #202020;
+.windows11theme-alternativecolor{
+	background: #F3F3F3;
 }
 .windows11theme-buttonbordergradientstop1color{
 	background-color:rgba(0, 0, 0, 0.05);
@@ -154,16 +154,16 @@ position: 2
 }
 
 /* Dark color variation */
-.windows11theme-accentbrush-dark{
+.windows11theme-accentcolor-dark{
 	background: #60CDFF;
 }
-.windows11theme-accentmouseoverbrush-dark{
+.windows11theme-accentmouseovercolor-dark{
 	background-color: rgba(96, 205, 255, 0.9);
 }
-.windows11theme-accentpressedbrush-dark{
+.windows11theme-accentpressedcolor-dark{
 	background-color: rgba(96, 205, 255, 0.8);
 }
-.windows11theme-accentselectedbrush-dark{
+.windows11theme-accentselectedcolor-dark{
 	background: #0078D4;
 }
 .windows11theme-accentcontrolbordergradientstop1color{
@@ -175,7 +175,7 @@ position: 2
 .windows11theme-accentcontrolforegroundcolor-dark{
 	background: #FFFFFF;
 }
-.windows11theme-alternativebrush-dark{
+.windows11theme-alternativecolor-dark{
 	background: #202020;
 }
 .windows11theme-buttonbordergradientstop1color-dark{
@@ -324,14 +324,14 @@ The default values of the brushes in the theme are listed below.
 
 |Color name|   |Light|   |Dark|
 |----------|---|-----|---|----|
-|AccentColor|#FF005FB8|<div class="theme-palette-color windows11theme-accentbrush"></div>|#FF60CDFF|<div class="theme-palette-color windows11theme-accentbrush-dark"></div>|
-|AccentMouseOverColor|#E6005FB8|<div class="theme-palette-color windows11theme-accentmouseoverbrush"></div>|#E660CDFF|<div class="theme-palette-color windows11theme-accentmouseoverbrush-dark"></div>|
-|AccentPressedColor|#CC005FB8|<div class="theme-palette-color windows11theme-accentpressedbrush"></div>|#CC60CDFF|<div class="theme-palette-color windows11theme-accentpressedbrush-dark"></div>|
-|AccentSelectedColor|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedbrush"></div>|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedbrush-dark"></div>|
+|AccentColor|#FF005FB8|<div class="theme-palette-color windows11theme-accentcolor"></div>|#FF60CDFF|<div class="theme-palette-color windows11theme-accentcolor-dark"></div>|
+|AccentMouseOverColor|#E6005FB8|<div class="theme-palette-color windows11theme-accentmouseovercolor"></div>|#E660CDFF|<div class="theme-palette-color windows11theme-accentmouseovercolor-dark"></div>|
+|AccentPressedColor|#CC005FB8|<div class="theme-palette-color windows11theme-accentpressedcolor"></div>|#CC60CDFF|<div class="theme-palette-color windows11theme-accentpressedcolor-dark"></div>|
+|AccentSelectedColor|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedcolor"></div>|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedcolor-dark"></div>|
 |AccentControlBorderGradientStop1Color|#14FFFFFF|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop1color"></div>|#14FFFFFF|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop1color-dark"></div>|
 |AccentControlBorderGradientStop2Color|#66000000|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop2color"></div>|#23000000|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop2color-dark"></div>|
 |AccentControlForegroundColor|#FFFFFFFF|<div class="theme-palette-color windows11theme-accentcontrolforegroundcolor"></div>|#FFFFFFFF|<div class="theme-palette-color windows11theme-accentcontrolforegroundcolor-dark"></div>|
-|AlternativeColor|#FFF3F3F3|<div class="theme-palette-color windows11theme-alternativebrush"></div>|#FF202020|<div class="theme-palette-color windows11theme-alternativebrush-dark"></div>|
+|AlternativeColor|#FFF3F3F3|<div class="theme-palette-color windows11theme-alternativecolor"></div>|#FF202020|<div class="theme-palette-color windows11theme-alternativecolor-dark"></div>|
 |ButtonBorderGradientStop1Color|#0E000000|<div class="theme-palette-color windows11theme-buttonbordergradientstop1color"></div>|#17FFFFFF|<div class="theme-palette-color windows11theme-buttonbordergradientstop1color-dark"></div>|
 |ButtonBorderGradientStop2Color|#29000000|<div class="theme-palette-color windows11theme-buttonbordergradientstop2color"></div>|#17FFFFFF|<div class="theme-palette-color windows11theme-buttonbordergradientstop2color-dark"></div>|
 |DisabledBackgroundColor|#4DF9F9F9|<div class="theme-palette-color windows11theme-disabledbackgroundcolor"></div>|#0BFFFFFF|<div class="theme-palette-color windows11theme-disabledbackgroundcolor-dark"></div>|

@@ -45,6 +45,7 @@ FileDialogs_ConfirmSave | Confirm save as
 FileDialogs_Copy | Copy
 FileDialogs_CopyTo | Copy to
 FileDialogs_Cut | Cut
+FileDialogs_DateCreatedHeader | Date created
 FileDialogs_DateHeader | Date modified
 FileDialogs_Delete | Delete
 FileDialogs_Details | Details

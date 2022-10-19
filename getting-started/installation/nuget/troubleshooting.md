@@ -1,124 +1,52 @@
 ---
-title: Restoring NuGet Packages in CI
-page_title: Restoring NuGet Packages in CI
-description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore Silverlight packages in your CI or desktop environment."
-slug: installation-nuget-keys
-tags: restoring,ui,for,silverlight,from,a,nuget,package,ci
+title: Troubleshooting
+page_title: Troubleshooting | NuGet
+description: "Troubleshooting some of the common problems when installing NuGet packages."
+slug: nuget-troubleshooting
+tags: nuget,troubleshooting
 published: True
 position: 5
-site_name: Silverlight
 ---
 
-# Restoring NuGet Packages in Your CI Workflow
+# Troubleshooting
 
-This article provides an overview of the most popular approaches for using token-based authentication to restore Telerik NuGet packages in your CI (Continuous Integration) workflow.
+This article lists some of the common problems that are observed during NuGet installation.
 
-The Telerik NuGet server allows you to authenticate by using two methods:
+### '401 Logon failed' error
 
-* Basic authentication by providing your Telerik user name and password.
-* Token-based authentication by providing a NuGet Key.
+If you're receiving this error when connecting to Telerik NuGet Server, you could try to update your NuGet credentials through the __Windows Credential Manager__.
 
-When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
+1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped).
+2. Open the "Credential Manager" app on your PC.
+3. Scroll through all the entries until you find any that are for `nuget.telerik.com`.
+4. Once you find that entry, expand it and select "edit".
+5. Make sure the username and password are the same ones you use for your Telerik account:
+    1. Use the email address in the place of username
+    2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
+    3. Click "Save" 
+6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
+7. Reopen Visual Studio and access the Telerik NuGet server. 
 
-Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used only with the Telerik NuGet server. If any of your NuGet keys is compromised, you can quickly delete it and create a new one.
+#### Handling Special Characters in Password
 
-## Generating NuGet Keys
+If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
 
-1. Go to the [**Manage NuGet Keys**](https://www.telerik.com/account/downloads/nuget-keys) page in your Telerik account.
+* Change the password so that it only includes characters that do not need to be escaped.
+* HTML encode the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
 
-1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
+We **strongly** discourage entering your password into an online encoder utility, use Powershell instead.  
 
-    ![Manage NuGet Keys](images/installation-manage-nuget-keys.png)
+```
+Add-Type -AssemblyName System.Web
+[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
+```
 
-1. To create a new key, select the **Generate New Key** button.
+![Powershell Encoding](images/nuget-troubleshooting-powershell-encoding.png)
 
-1. Enter a name for the NuGet Key, and then select **Generate Key**.
+### Networking Problems
 
-1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
+Another common problem is that your machine (PC, GitHub Actions runner or Azure DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 
-    ![Copy Generated NuGet Key](images/installation-copy-nuget-key.png)
+* https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27WPF%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
 
-## Storing a NuGet Key
-
-> Never check in a NuGet Key with your source code or leave it publicly visible in plain text, for example, as a raw key value in a `nuget.config` file. A NuGet Key is valuable as bad actors can use it to access the NuGet packages that are licensed under your account. A potential key abuse could lead to a review of the affected account.
-
-To protect the NuGet Key, store it as a secret environment variable. The exact steps depend on your workflow:
-
-* In GitHub Actions, save the key as a GitHub Actions Secret. Go to **Settings** > **Security** > **Secrets** > **Actions** > **Add new secret**.
-
-* In Azure DevOps Classic, save the key as a secret pipeline variable. Go to the **Variables** tab and then select **Pipeline variables**.
-
-* In Azure DevOps YAML pipelines, save the key as a secret variable as well. Click the YAML editor's **Variables** button and complete the **New variable** form.
-
-If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the NuGet Key as the password in the **New NuGet service connection** form editor.
-
-For more details on storing and protecting your NuGet Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
-
-## Using a NuGet Key
-
-There are two popular ways to use the Telerik NuGet server in a build:
-
-* [Using a nuget.config file with your projects](#using-a-nugetconfig-file-with-your-projects)
-
-* [Using only CLI commands](#using-only-cli-commands)
-
-For more information on how to use NuGet keys in a build, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
-
-### Using a nuget.config File with Your Projects
-
-1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
-
-    #### __[XML]__
-    {{region installation-nuget-keys-0}}
-        <configuration>
-            <packageSources>
-                <clear/>
-                <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-                <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-            </packageSources>
-            <packageSourceCredentials>
-                <MyTelerikFeed>
-					<add key="Username" value="api-key" />
-					<add key="ClearTextPassword" value="%MY_API_KEY%" />
-                </MyTelerikFeed>
-            </packageSourceCredentials>
-            ...
-        </configuration>
-    {{endregion}}
-
-1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
-
-The exact steps to set the `MY_API_KEY` environment variable depend on your workflow. For more details, refer to the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
-
-### Using Only CLI Commands
-
-You can use the CLI `add source` (or `update source`) command to set the credentials of a package source. This CLI approach is applicable if your CI system doesn't support default environment variable secrets or if you do not use a custom `nuget.config`.
-
-* To set the credentials in Azure DevOps:
-
-    __Powershell__  
-		
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text    
-
-* To set the credentials in GitHub Actions:
-
-    __Powershell__  
-        
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-
-## Additional Resources
-
-If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
-
-* [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
-
-* [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
-
-## See Also
-
- * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
-
- * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
-
- * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
-
+After you enter your telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.WPF packages available with your license.

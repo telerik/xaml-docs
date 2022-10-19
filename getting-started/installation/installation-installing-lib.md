@@ -24,7 +24,7 @@ The purpose of the LIB is to allow the users to test the latest bug fixes. So, i
 
 ## How to Download it
 
-The LIB is __available as a NuGet__ package. Read how to get it in the {% if site.framework_name == 'WPF' %}[Installing Latest Internal Build NuGet Packages]({%slug installation-installing-from-nuget-wpf%}#installing-latest-internal-build-nuget-packages){% else %}[Installing Latest Internal Build NuGet Packages]({%slug installation-installing-from-nuget%}){% endif %} section of the documentation.
+The LIB is __available as a NuGet__ package. Read how to get it in the {% if site.framework_name == 'WPF' %}[Installing Latest Internal Build NuGet Packages]({%slug nuget-installation%}#installing-latest-internal-build-nuget-packages){% else %}[Installing Latest Internal Build NuGet Packages]({%slug nuget-installation%}){% endif %} section of the documentation.
 
 Alternatively you can __download the LIB assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
 

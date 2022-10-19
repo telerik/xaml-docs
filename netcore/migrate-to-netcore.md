@@ -30,7 +30,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
  
 3. Reference the Telerik assemblies built against .NET Core 3.1.
 	
-	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NetCore*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug installation-installing-from-nuget-wpf%}).
+	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NetCore*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
 	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1
 	![](images/netcore-support-migration-3.png)

@@ -1088,6 +1088,8 @@ navigation:
     "getting-started/installation":
         title: "Installation"
         position: 5
+    "getting-started/installation/nuget":
+        title: "NuGet Installation"        
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
         position: 6

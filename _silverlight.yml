@@ -166,7 +166,8 @@ controls/radstepprogressbar,
 controls/radwatermarktextbox/embedded-label.md,
 common-information/geometry_extension.md,
 controls/radvirtualkeyboard,
-controls/radpanelbar/features/resizeable_items.md]
+controls/radpanelbar/features/resizeable_items.md,
+getting-started/installation/nuget]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

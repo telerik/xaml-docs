@@ -1,124 +1,120 @@
 ---
-title: Restoring NuGet Packages in CI
-page_title: Restoring NuGet Packages in CI
-description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore Silverlight packages in your CI or desktop environment."
-slug: installation-nuget-keys
-tags: restoring,ui,for,silverlight,from,a,nuget,package,ci
-published: True
-position: 5
-site_name: Silverlight
+title: Available NuGet Packages
+page_title: Available NuGet Packages
+description: "Telerik UI for WPF provides a set of NuGet packages targeting different .NET versions."
+slug: nuget-available-packages
+tags: available,packages,noxaml,xaml
+position: 0
 ---
 
-# Restoring NuGet Packages in Your CI Workflow
+# Available NuGet Packages
 
-This article provides an overview of the most popular approaches for using token-based authentication to restore Telerik NuGet packages in your CI (Continuous Integration) workflow.
+Telerik UI for WPF comes with a several different packages that can be installed via the Telerik server or from a local package source.
 
-The Telerik NuGet server allows you to authenticate by using two methods:
+![](images/nuget-available-packages-0.png)
 
-* Basic authentication by providing your Telerik user name and password.
-* Token-based authentication by providing a NuGet Key.
+The Telerik dlls are built against different versions of .NET starting from .NET 4 to the latest official .NET. Additionally, the dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a big set of assemblies that can be downloaded which are also available as nuget packages. 
 
-When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
+The packages can be downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}) or alternatively the [online Telerik package source]({%slug nuget-package-source-setup%}) can be used. These two different options contain slightly different set of packages. This article targets to list and describe the packages.
 
-Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used only with the Telerik NuGet server. If any of your NuGet keys is compromised, you can quickly delete it and create a new one.
+## NuGet Local Packages
 
-## Generating NuGet Keys
+The Telerik UI for WPF product provides `.nupkg` files that can be downloaded from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWPF). The download page has the following .zip files.
 
-1. Go to the [**Manage NuGet Keys**](https://www.telerik.com/account/downloads/nuget-keys) page in your Telerik account.
+### Full Packages
 
-1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
+* `Telerik_UI_for_WPF_<version number>_NuGet_Xaml_Dev.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
+	* `Telerik.UI.for.Wpf.40.Xaml`
+	* `Telerik.UI.for.Wpf.45.Xaml`
+	* `Telerik.UI.for.Wpf.50.Xaml`
+	* `Telerik.UI.for.Wpf.60.Xaml`
+	* `Telerik.UI.for.Wpf.NetCore.Xaml`
+	
+	Each of these packages contains the all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. __.40__ means __.NET 4__, __.45__ means __.NET 4.5__ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
+	
+* `Telerik_UI_for_WPF_<version number>_NuGet_NoXaml_Dev.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
+	* `Telerik.UI.for.Wpf.40`
+	* `Telerik.UI.for.Wpf.45`
+	* `Telerik.UI.for.Wpf.50`
+	* `Telerik.UI.for.Wpf.60`
+	* `Telerik.UI.for.Wpf.NetCore`
+	
+	Each of these packages contains the all Telerik UI for WPF (NoXaml) dlls for the corresponding .NET framework. Compared to the previous set of packages, the names here don't end with __.Xaml__ which indicates that they contain the [NoXaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
+	
+### Separate Packages
 
-    ![Manage NuGet Keys](images/installation-manage-nuget-keys.png)
+* `Telerik_UI_for_WPF_<version number>_NuGet_Separate_Packages_Xaml_Dev.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
+	* `Telerik.Windows.Controls.for.Wpf.Xaml`
+	* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
+	* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
+	* `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml`
+	* etc.
+	
+	Each of these packages contain the corresponding Telerik ([Xaml]({%slug xaml-vs-noxaml%})) dll for all available .NET frameworks (.40, .45, .5, etc.). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
+	
+* `Telerik_UI_for_WPF_<version number>_NuGet_Separate_Packages_NoXaml_Dev.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
+	* `Telerik.Windows.Controls.for.Wpf`
+	* `Telerik.Windows.Controls.Navigation.for.Wpf`
+	* `Telerik.Windows.Controls.GridView.for.Wpf`
+	* `Telerik.Windows.Controls.RichTextBox.for.Wpf`
+	* `Telerik.Windows.Themes.Fluent.for.Wpf`
+	* `Telerik.Windows.Themes.Material.for.Wpf`
+	* etc.
+	
+	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET frameworks (.40, .45, .5, etc.). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
+	
+## Telerik NuGet Server Packages
 
-1. To create a new key, select the **Generate New Key** button.
+There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-package-files) ones. 
 
-1. Enter a name for the NuGet Key, and then select **Generate Key**.
+### Full Packages
 
-1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
+The onlie package source contains full packages only for the .NET Core and later assemblies.
 
-    ![Copy Generated NuGet Key](images/installation-copy-nuget-key.png)
+* `Telerik.UI.for.Wpf.NetCore`
+* `Telerik.UI.for.Wpf.NetCore.Xaml`
+* `Telerik.UI.for.Wpf.50`
+* `Telerik.UI.for.Wpf.50.Xaml`
+* `Telerik.UI.for.Wpf.60`
+* `Telerik.UI.for.Wpf.60.Xaml`
 
-## Storing a NuGet Key
+These packages contain all Telerik dlls for the corresponding .NET version. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
 
-> Never check in a NuGet Key with your source code or leave it publicly visible in plain text, for example, as a raw key value in a `nuget.config` file. A NuGet Key is valuable as bad actors can use it to access the NuGet packages that are licensed under your account. A potential key abuse could lead to a review of the affected account.
+### Separate Packages
 
-To protect the NuGet Key, store it as a secret environment variable. The exact steps depend on your workflow:
+* `Telerik.Windows.Controls.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.for.Wpf`
+* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.GridView.for.Wpf`
+* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.Navigation.for.Wpf`
+* `Telerik.Windows.Themes.Fluent.for.Wpf` (theme dll)
+* `Telerik.Windows.Themes.Material.for.Wpf` (theme dll)
+* `Telerik.Windows.Controls.for.Wpf.fr` (localization resource)
+* `Telerik.Windows.Controls.for.Wpf.de` (localization resource)
+* etc.
 
-* In GitHub Actions, save the key as a GitHub Actions Secret. Go to **Settings** > **Security** > **Secrets** > **Actions** > **Add new secret**.
+Each of these packages contain all .NET versions of the corresponding Telerik dll. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
+	
+## NuGet Packages and Controls Localization
 
-* In Azure DevOps Classic, save the key as a secret pipeline variable. Go to the **Variables** tab and then select **Pipeline variables**.
+The Telerik controls have a built-in [localization]({%slug common-localization%}) support. To enable this, the corresponding satellite assemblies should be presented in the folder where the Telerik assemblies are installed. These assemblies are available when you install the product using the __full NuGet packages__. The __separate packages__ don't include the satellite assemblies. To support localization properly, these dlls should be installed. To do so, use also the separate packages with the language resources.
 
-* In Azure DevOps YAML pipelines, save the key as a secret variable as well. Click the YAML editor's **Variables** button and complete the **New variable** form.
+The separate package with the language resources is named `Telerik.Windows.Controls.for.Wpf.<language code>`. For example, `Telerik.Windows.Controls.for.Wpf.fr` will include the French resources. `Telerik.Windows.Controls.for.Wpf.de` will include the German resources, and so on. 
 
-If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the NuGet Key as the password in the **New NuGet service connection** form editor.
+## Installing Latest Internal Build NuGet Packages
 
-For more details on storing and protecting your NuGet Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
+You can install and test the [Latest Internal Build]({%slug installation-installing-lib%}) (LIB) dlls provided on a weekly basis, via the NuGet Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source]({%slug nuget-package-source-setup%}) and copy the files there. You __cannot__ download LIB dlls via the online Telerik nuget server (https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json, because they are not available there.
 
-## Using a NuGet Key
+When you set up the package source and place the NuGet files there, you can find them in the NuGet Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 
-There are two popular ways to use the Telerik NuGet server in a build:
+![](images/Common_InstallingFromNuGet_10_wpf.png)
+	
+	
 
-* [Using a nuget.config file with your projects](#using-a-nugetconfig-file-with-your-projects)
 
-* [Using only CLI commands](#using-only-cli-commands)
 
-For more information on how to use NuGet keys in a build, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 
-### Using a nuget.config File with Your Projects
 
-1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-    #### __[XML]__
-    {{region installation-nuget-keys-0}}
-        <configuration>
-            <packageSources>
-                <clear/>
-                <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-                <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-            </packageSources>
-            <packageSourceCredentials>
-                <MyTelerikFeed>
-					<add key="Username" value="api-key" />
-					<add key="ClearTextPassword" value="%MY_API_KEY%" />
-                </MyTelerikFeed>
-            </packageSourceCredentials>
-            ...
-        </configuration>
-    {{endregion}}
-
-1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
-
-The exact steps to set the `MY_API_KEY` environment variable depend on your workflow. For more details, refer to the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
-
-### Using Only CLI Commands
-
-You can use the CLI `add source` (or `update source`) command to set the credentials of a package source. This CLI approach is applicable if your CI system doesn't support default environment variable secrets or if you do not use a custom `nuget.config`.
-
-* To set the credentials in Azure DevOps:
-
-    __Powershell__  
-		
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text    
-
-* To set the credentials in GitHub Actions:
-
-    __Powershell__  
-        
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-
-## Additional Resources
-
-If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
-
-* [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
-
-* [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
-
-## See Also
-
- * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
-
- * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
-
- * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
 

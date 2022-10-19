@@ -1,12 +1,11 @@
 ---
 title: Restoring NuGet Packages in CI
 page_title: Restoring NuGet Packages in CI
-description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore Silverlight packages in your CI or desktop environment."
-slug: installation-nuget-keys
-tags: restoring,ui,for,silverlight,from,a,nuget,package,ci
+description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore WPF packages in your CI or desktop environment."
+slug: nuget-keys
+tags: restore,nuget,keys,packages,ci
 published: True
-position: 5
-site_name: Silverlight
+position: 3
 ---
 
 # Restoring NuGet Packages in Your CI Workflow
@@ -114,11 +113,7 @@ If you just start using the Telerik NuGet server in your CI or inter-department 
 
 * [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
 
-## See Also
-
+## See Also  
  * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
-
- * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
-
- * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
-
+ * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi-wpf%})
+ * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip-wpf%})

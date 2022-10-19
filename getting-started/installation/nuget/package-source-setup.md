@@ -77,5 +77,13 @@ Once you created the package source as described in the previous sections of thi
 
 Selecting the Telerik's source as the __Package source__ in Visual Studio will prompt you to enter your __telerik.com credentials__ (email and password).
 
+## Additional Resources
+
+* The following blog shows how to create a private NuGet Feed and deploy the Telerik NuGet packages there: http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget.
+
+* The following video demonstrates how to add the Telerik NuGet Feed to your NuGet Package Sources:
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+
 ## See Also  
 * [Available NuGet Packages]({%slug nuget-available-packages%})

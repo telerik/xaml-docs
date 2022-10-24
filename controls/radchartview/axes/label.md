@@ -61,6 +61,8 @@ __Vertical axis labels formatted using the currency format C__
 
 To rotate the axis labels, set the `LabelFitMode` property to `Rotate`. This will rotate to labels to a predefined angle. To change the angle, set the `LabelRotationAngle` property. 
 
+In order for the `LabelRotationAngle` property to take effect, the `LabelFitMode` should be set to `Rotate`.
+
 #### __[XAML] Setting LabelFitMode to Rotate__
 {{region radchartview-axes-labels-3}}
 	<telerik:RadCartesianChart.HorizontalAxis>

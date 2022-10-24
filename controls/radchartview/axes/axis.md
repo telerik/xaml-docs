@@ -33,7 +33,7 @@ Here are the __common properties__ for all kinds of axes:
 * __MajorTickOffset__: As its name implies, __MajorTickOffset__ offsets the major ticks with n where n is the value of the property. For example, a LinearAxis with MajorStep="2" and MajorTickOffset="3" will have its values start at 6. (6, 8, 10 ... etc.)        
 
 * __MajorTickInterval__ (available for CategoricalAxis and DateTimeCategoricalAxis): Defines a value indicating that one axis label will be common for n number of Ticks where n is the value of the property.        
-* __LabelRotationAngle__: Specifies the value indicating the rotation angle for the axis labels. Use when label texts are long and are overlapping each other.        
+* __LabelRotationAngle__: Specifies the value indicating the rotation angle for the axis labels. Use when label texts are long and are overlapping each other. In order for the `LabelRotationAngle` property to take effect, the `LabelFitMode` should be set to `Rotate`.        
 
 * __LastLabelVisibility__: Specifies whether the last label should be Clipped, Visible or Hidden.        
 

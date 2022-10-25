@@ -154,10 +154,6 @@ By default, the file dialogs allow you to rename the files and folders. To preve
 	openFileDialog.ShowDialog();
 {{endregion}}
 
-__RadOpenFileDialog without the Rename option__
-
-![RadOpenFileDialog without Rename option](images/radfiledialogs-features-common-contextmenu.png)
-
 ## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})
 * [Filtering]({%slug radfiledialogs-features-filtering%})

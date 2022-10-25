@@ -98,12 +98,12 @@ This article lists the events specific to all of the RadFileDialog controls.
 		}
 	{{endregion}}	
 
-* __Renaming__: This event occurs when a file or a folder is about to be renamed. You can use it to prevent certain files or folders from being edited. 
+* __Renaming__: This event occurs when a file or a folder is about to be renamed. You can use it to prevent certain files or folders from having their name changed. 
 	
 	The event arguments will be of the type __RenamingEventArgs__ that exposes the following properties:
 
-	* __Cancel__: boolean property that will indicate if a renaming operation will be performed or not.
-	* __FileInfo__: property of the type __FileSystemInfoWrapper__. This property contains the __FileSystemInfoWrapper__ object for the file system information that will be renamed.
+	* __Cancel__: Boolean property that will indicate if a renaming operation will be performed or not.
+	* __FileInfo__: Property of the type __FileSystemInfoWrapper__. This property contains the __FileSystemInfoWrapper__ object for the file system information that will be renamed.
 
 	>important This event will occur only when the __CanUserRename__ property is set to __True__.
 

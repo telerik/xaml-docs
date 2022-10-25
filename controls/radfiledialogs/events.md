@@ -111,24 +111,9 @@ This article lists the events specific to all of the RadFileDialog controls.
 	{{region cs-radfiledialogs-events-6}}
 		private void OpenFileDialog_Renaming(object sender, Telerik.Windows.Controls.FileDialogs.RenamingEventArgs e)
 		{
-		    FileInfoWrapper fileInfoWrapper = e.FileInfo as FileInfoWrapper;
-		    DirectoryInfoWrapper directoryInfoWrapper = e.FileInfo as DirectoryInfoWrapper;
-
-		    //if the fileInfoWrapper is not null it would mean that a file is going to be renamed
-		    if (fileInfoWrapper != null)
+		    if (e.FileInfo.Path.StartsWith("C:\\Windows")
 		    {
-		        if (fileInfoWrapper.Label == "FileThatShouldNotBeRenamed")
-		        {
-		            e.Cancel = true;
-		        }
-		    }
-		    //if the directoryInfoWrapper is not null it would mean that a directory is going to be renamed
-		    else if (directoryInfoWrapper != null)
-		    {
-		        if (directoryInfoWrapper.Label == "DirectoryThatShouldNotBeRenamed")
-		        {
-		            e.Cancel = true;
-		        }
+		    	e.Cancel = true;
 		    }
 		}
 	{{endregion}}

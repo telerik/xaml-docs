@@ -148,7 +148,13 @@ You can read some more about the Filter and FilterIndex properties in the [Filte
 
 ## Events
 
-The control exposes the following events&mdash;`DirectoryRequesting` and `ExceptionRaised`. Read more about the events and their arguments in the [Events]({%slug radfiledialogs-events%}) article.
+The control exposes the following events:
+
+* `DirectoryRequesting` 
+* `ExceptionRaised`
+* `Renaming`
+
+Read more about these events and their arguments in the [Events]({%slug radfiledialogs-events%}) article.
 
 ## See Also
 * [Getting Started]({%slug radfiledialogs-getting-started%})

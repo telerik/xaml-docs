@@ -140,6 +140,24 @@ The tooltips show the full name of the file or folder which is hovered along wit
 
 ![Folder name tooltip](images/radfiledialogs-features-common-tooltips.png)
 
+## Renaming Files and Folders
+
+By default, the file dialogs allow you to rename the files and folders. To prevent the user from renaming them, set the __CanUserRename__ property to __False__. 
+
+>important When the __CanUserRename__ property is set to __False__ the __Rename__ option from the context menu will be omitted.
+
+#### __[C#] Set CanUserRename to False__
+{{region radfiledialogs-features-common-5}}
+	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+	openFileDialog.Owner = this;
+	openFileDialog.CanUserRename = false;
+	openFileDialog.ShowDialog();
+{{endregion}}
+
+__RadOpenFileDialog without the Rename option__
+
+![RadOpenFileDialog without Rename option](images/radfiledialogs-features-common-contextmenu.png)
+
 ## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})
 * [Filtering]({%slug radfiledialogs-features-filtering%})

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: WPF Barcode Documentation | Data Matrix Overview
+page_title: WPF Barcode Documentation - Data Matrix Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 published: True

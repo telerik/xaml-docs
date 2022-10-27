@@ -1,6 +1,6 @@
 ---
 title: Requirements
-page_title: Requirements | Appium
+page_title: Requirements - Appium
 description: This article lists the requirements needed to use Appium, the Microsoft recommended open source test automation framework, with Telerik UI for {{ site.framework_name }}.  
 slug: appium-requirements
 tags: appium

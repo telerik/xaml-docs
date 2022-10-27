@@ -1,6 +1,6 @@
 ---
 title: ValidationErrorTemplateHelper
-page_title: ValidationErrorTemplateHelper | WPF WatermarkTextBox
+page_title: ValidationErrorTemplateHelper - WPF WatermarkTextBox
 description: Check our &quot;ValidationErrorTemplateHelper&quot; documentation article for the RadWatermarkTextBox {{ site.framework_name }} control.
 slug: radwatermarktextbox-validation-helper
 tags: validationerrortemplatehselper

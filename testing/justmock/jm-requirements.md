@@ -1,6 +1,6 @@
 ---
 title: Requirements
-page_title: Requirements | JustMock
+page_title: Requirements - JustMock
 description: System requirements for writing unit tests with JustMock for your WPF application. 
 slug: justmock-requirements
 tags: System requirements, requirements, JustMock, unit testing, mock, mocking, mocking tool, mocking software, mocking solution, mocking framework, wpf, desktop, windows, presentation, foundation

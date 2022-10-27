@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | JustMock
+page_title: Overview - JustMock
 description: JustMock is a fast, easy to use, feature-rich C# mocking tool for isolating dependencies from your code when unit testing your WPF application. 
 slug: justmock-overview
 tags: unit testing, JustMock, mock, mocking, mocking tool, mocking solution, mocking software, wpf

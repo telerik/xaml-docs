@@ -214,7 +214,7 @@ __Tree layout settings__
 * __UnderneathVerticalTopOffset__: (applies only to the TipOverTree type) the offset from the parent of the first child.			  
 * __UnderneathHorizontalOffset__: (applies only to the TipOverTree type) the horizontal offset between parent and child.			  
 * __UnderneathVerticalSeparation__: (applies only to the TipOverTree type) the vertical offset between subsequent children.			  
-* __Roots__: The Roots of the components. Use this collection of IShapes to set the roots of the trees in your diagram before layout.			  
+* __Roots__: The Roots of the components. Use this collection of IShapes to set the roots of the trees in your diagram before layout. If no shape is specified as a root element, the diagram will automatically analyze the most probable tree, which will be based on the longest path in the graph. In an MVVM scenario, the RadDiagram will have to be loaded and its shapes to be generated before specifing the root elements.	  
 * __TipOverTreeStartLevel__: this property applies only to the TipOverTree type and gets or sets the level from which a tip-over tree arrangement should be applied. A value of zero means that the children underneath the root will have a tip-over arrangement, a value of one means the grand-children of the root will have this applied and so on.			  
 * __RadialSeparation__: (applies only to the RadialTree type) the radial distance between levels.			  
 * __RadialFirstLevelSeparation__: (applies only to the RadialTree type) the radial distance between the root and the first level.			  

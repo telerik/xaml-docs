@@ -12,13 +12,6 @@ previous_url: http://www.telerik.com/help/wpf/radwindow-overview.html
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![RadWindow for Silverlight Icon](images/RadWindow_Overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![RadWindow for WPF Icon](images/RadWindow_Overview_01_WPF.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadWindow__!
 
 With Telerik __RadWindow__ you can easily add modal popups to your application.  Draw attention to important information or receive user input. __RadWindow__ lets you create child and dialog Windows, which can have their appearance and content customized. The control provides a flexible API to easily control its behavior and makes possible the implementation of complex logic for a wide range of scenarios.

@@ -11,13 +11,6 @@ CTAControlName: RadDateTimePicker
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![RadDateTimePicker for Silverlight Icon](images/RadDateTimePicker_Overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![RadDateTimePicker for WPF Icon](images/RadDateTimePicker_Overview_01_WPF.png)
-{% endif %}
-
 Thank you for choosing __Telerik RadDateTimePicker__!        
 
 __RadDateTimePicker__ is a convenient way to get rid of the boring date and time parsing and data validation. __RadDateTimePicker__ is an easy and simple, but yet essential way to improve end-user experience. By setting the **InputMode** property you can use __RadDateTimePicker__ as a __DatePicker__, __TimePicker__ or __both__. Moreover, you can control the layout of the popups that show time and/or date values as well as use the rich data model in {{ site.framework_name }} to populate content dynamically.

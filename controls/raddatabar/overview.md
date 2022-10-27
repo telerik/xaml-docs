@@ -11,12 +11,6 @@ CTAControlName: RadDataBar
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/RadDataBar_overview_01.png)
-{% else %}
-![](images/RadDataBar_overview_01wpf.png)
-{% endif %}
-
 The __RadDataBar__ control is an information graphic, which is characterized by small size, excellent performance and lightweight. By definition, the RadDataBar is designed to visually represent numeric values. Unlike RadSparkLine its main power is to compare the data cell-by-cell when integrated in grid.
 
 {% if site.has_cta_panels == true %}

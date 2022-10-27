@@ -10,8 +10,6 @@ CTAControlName: RadTreeListView
 ---
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadTreeListViewSl.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadTreeListViewWPF.png){% endif %}
-
 Thank you for choosing Telerik __RadTreeListView__! 
 
 Telerik __RadTreeListView__ combines the powerful data-driven features from __RadGridView__ with the capabilities of showing a hierarchical data in a __TreeView__ manner. Native UI virtualization, LINQ-based data engine, filtering, sorting and built-in data validation are just a few of the features the control provides.

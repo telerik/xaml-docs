@@ -11,12 +11,6 @@ CTAControlName: RadCollectionNavigator
 
 # Overview
 
-{% if site.site_name == 'WPF' %}
-
-![RadCollectionNavigator icon](images/collectionsnavigator_wpf_46_text.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-![RadCollectionNavigator icon](images/collectionsnavigator_sl_46_text.png){% endif %}
-
 Thank you for choosing __RadCollectionNavigator__!				
 
 __RadCollectionNavigator__ provides UI for seemless editing and navigation of а given data collection.

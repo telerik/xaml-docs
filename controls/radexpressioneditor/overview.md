@@ -11,8 +11,6 @@ CTAControlName: RadExpressionEditor
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadExpressionEditor_LogoSL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadExpressionEditor_LogoWPF.png){% endif %}
-
 Thank you for choosing **RadExpressionEditor**!
 
 __RadExpressionEditor__ allows your users to build powerful LINQ expressions using a simple Domain Specific Language, reminiscent of formulas in many popular spreadsheet applications.

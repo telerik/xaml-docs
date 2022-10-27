@@ -11,9 +11,6 @@ CTAControlName: RadBreadcrumb
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![breadcrumb sl icon](images/breadcrumb_sl_icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![breadcrumb wpf icon](images/breadcrumb_wpf_icon.png){% endif %}
-
 Thank you for choosing Telerik __RadBreadcrumb__ !
 
 Do you need to build complicated navigation systems that allow you to track the navigation history? With __RadBreadcrumb__ you can achieve all of this and much more. With its powerful databinding mechanism, the control lets you display hierarchical structures, such as directories and relational data. With its auto-complete functionality and other advanced capabilities, the __RadBreadcrumb__ significantly improves the navigation and performance of your application. 

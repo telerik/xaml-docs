@@ -11,8 +11,6 @@ CTAControlName: RadDiagram
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![diagram sl 46 text](images/diagram_sl_46_text.png){% endif %}{% if site.site_name == 'WPF' %}![diagram wpf 46 text](images/diagram_wpf_46_text.png){% endif %}
-
 Thank you for choosing __RadDiagram__!		
 
 The __RadDiagram__ control and its components allow you to create flexible and interactive diagramming layouts for your rich data-visualization application. The diagram toolset enables you to:

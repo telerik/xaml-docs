@@ -11,8 +11,6 @@ CTAControlName: RadNumericUpDown
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadNumericUpDown_Overview.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadNumericUpDown_Overview_WPF.png){% endif %}
-
 __RadNumericUpDown__ provides a rich user experience by allowing users to define various value formats, as well as additionally customize them to meet the customers' business requirements. Besides the predefined numeric, percentage and currency formats, developers can also create their custom formats. Additionally, the control allows you to define minimum and maximum values to which the user can increment/decrement the input’s value. 
 
 {% if site.has_cta_panels == true %}

@@ -11,8 +11,6 @@ CTAControlName: RadPivotGrid
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![Rad Pivot Grid Overview SL 01](images/RadPivotGrid_Overview_SL01.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Pivot Grid Overview WPF 01](images/RadPivotGrid_Overview_WPF01.png){% endif %}
-
 Thank you for choosing __RadPivotGrid__!	
 
 RadPivotGrid is a control used to aggregate millions of records in a concise tabular format. The data can be easily grouped, filtered, sorted and manipulated to create different reports.

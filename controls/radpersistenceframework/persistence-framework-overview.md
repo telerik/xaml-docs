@@ -11,8 +11,6 @@ CTAControlName: RadPersistenceFramework
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![Rad Persistence Framework-WPF-Icon](images/RadPersistenceFramework-WPF-Icon.png){% else %}![Rad Persistence Framework-SL-Icon](images/RadPersistenceFramework-SL-Icon.png){% endif %}
-
 __PersistenceFramework__ allows you to easily save and restore your UI. The framework persists the properties of any {{ site.framework_name }} control in a memory stream or directly into a file, so that you can retrieve their values later. This way you can easily store the layout of your application thus keeping your users' preferences.
 
 {% if site.has_cta_panels == true %}

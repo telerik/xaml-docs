@@ -11,9 +11,6 @@ CTAControlName: RadOutlookBar
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![outlookbar wpf icon](images/outlookbar_wpf_icon.png){% endif %}
-{% if site.site_name == 'Silverlight' %}![outlookbar sl icon](images/outlookbar_sl_icon.png){% endif %}
-
 Thank you for choosing Telerik __RadOutlookBar__!				
 
 Telerik __RadOutlookBar__ control lets you deliver Outlook's navigational bar to your applications just as easy as adding a single control. You can take advantage of the group data templates, overflow menu, defining items position (define whether the items will appear in the main navigation bar or in the overflow menu by simply dragging the main navigation bars horizontal splitter).		

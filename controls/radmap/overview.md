@@ -11,8 +11,6 @@ CTAControlName: RadMap
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![](images/RadMap_Overview_01.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadMap_Overview_01_WPF.png){% endif %}
-
 Thank you for choosing Telerik __RadMap__!        
 
 Visualize rich geographical information with Telerik __RadMap__, zoom and pan smoothly to any corner of the earth. If you want to give geographical context to your data – that’s easy. __RadMap__ allows adding any elements or shapes to it. The control supports items virtualization through web services to guarantee blazing fast performance.        

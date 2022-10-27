@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: WPF Barcode Documentation | SwissQRCode Overview
+page_title: WPF Barcode Documentation - SwissQRCode Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik SwissQRCode for WPF control.
 position: 0
 slug: barcode-swissqrcode-overview

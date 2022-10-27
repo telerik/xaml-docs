@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadBadge WPF
+page_title: Overview - RadBadge WPF
 description: Check our &quot;Overview&quot; documentation article for the RadBadge WPF control.
 slug: radbadge-overview
 tags: overview

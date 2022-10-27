@@ -1,6 +1,6 @@
 ---
 title: Overview 
-page_title: Overview | Cloud Services
+page_title: Overview - Cloud Services
 description:  Overview.
 slug: cloud-services/aws/overview
 tags: aws,cloud

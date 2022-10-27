@@ -16,7 +16,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 1: Cancel dialog closing__
 	{{region cs-radfiledialogs-events-0}}
-		private void FileDialog_PreviewClosed(object sender, WindowPreviewClosedEventArgs e)
+		private void OnFileDialogPreviewClosed(object sender, WindowPreviewClosedEventArgs e)
         {
 			e.Cancel = true;
         }
@@ -28,7 +28,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	#### __[C#] Example 2: Showing an alert when an error appears__
 	{{region cs-radfiledialogs-events-1}}
-		private void openDialog_ExceptionRaised(object sender, FileBrowserExceptionRaisedEventArgs e)
+		private void OnFileDialogExceptionRaised(object sender, FileBrowserExceptionRaisedEventArgs e)
         {
             MessageBox.Show(e.Exception.Message);
         }
@@ -38,7 +38,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	#### __[C#] Example 3: Filtering the D and K directories__
 	{{region cs-radfiledialogs-events-2}}
-		private void OpenFileDialog_DirectoryRequesting(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryRequestingEventArgs e)
+		private void OnFileDialogDirectoryRequesting(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryRequestingEventArgs e)
         {
             if (e.Directory.FullName.StartsWith("D:\\\\") || e.Directory.FullName.StartsWith("K:\\\\"))
             {
@@ -59,7 +59,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 4: Disable navigation to the Program Files folder__
 	{{region cs-radfiledialogs-events-3}}
-		private void OpenFileDialog_DirectoryNavigating(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryNavigatingEventArgs e)
+		private void OnFileDialogDirectoryNavigating(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryNavigatingEventArgs e)
 		{
 			if (e.DirectoryPath == "C:\\\\Program Files")
             {
@@ -72,7 +72,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 5: Canceling context menu opening and adding only New Folder and Paste options in the short menu__
 	{{region cs-radfiledialogs-events-4}}
-		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		private void OnFileDialogShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
 		{
 			if (e.SelectedFiles.Count > 0 && e.SelectedFiles[0].Path == "C:\\\\Program Files")
             {
@@ -89,7 +89,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 6: Checking if the click was on an empty space__
 	{{region cs-radfiledialogs-events-5}}
-		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		private void OnFileDialogShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
 		{
 			if (e.IsOpeningOnEmptySpace)
            		{
@@ -109,7 +109,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	#### __[C#] Example 7: Cancel the renaming operation for certain a file/directory__
 	{{region cs-radfiledialogs-events-6}}
-		private void OpenFileDialog_Renaming(object sender, Telerik.Windows.Controls.FileDialogs.RenamingEventArgs e)
+		private void OnFileDialogRenaming(object sender, Telerik.Windows.Controls.FileDialogs.RenamingEventArgs e)
 		{
 		    if (e.FileInfo.Path.StartsWith("C:\\Windows")
 		    {

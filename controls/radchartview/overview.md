@@ -11,13 +11,6 @@ CTAControlName: RadChartView
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![radchartview sl](images/radchartview_sl.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![radchartview wpf](images/radchartview_wpf.png)
-{% endif %}
-
 RadChartView is a set of versatile charting components that offer unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have RadCartesianChart (using Cartesian coordinate system) and RadPieChart (using radial coordinate system).
 
 {% if site.has_cta_panels == true %}

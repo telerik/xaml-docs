@@ -11,12 +11,6 @@ CTAControlName: RadTimeline
 
 # Overview
 
-## {% if site.site_name == 'Silverlight' %}
-
-![](images/RadTimeLine_overview_01.png){% endif %}{% if site.site_name == 'WPF' %}
-
-![](images/RadTimeLine_overview_01wpf.png){% endif %}
-
 Thank you for choosing __RadTimeline__!
         
 The RadTimeline control is used to visualize a sequence of events over a specified period of time. Its main purpose is to allow intuitive visualization of the events, lightweight scrolling and navigating through the period.

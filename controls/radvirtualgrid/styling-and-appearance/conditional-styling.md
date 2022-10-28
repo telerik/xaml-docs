@@ -10,13 +10,13 @@ position: 1
 
 # Conditional Styling
 
-This topic will demonstrate how the cells of __RadVirtualGrid__ can be styled conditionally.
+This topic will demonstrate how the cells of `RadVirtualGrid` can be styled conditionally.
 
 This is achieved through the usage of the following three events in conjunction.
 
-* __OverlayBrushesNeeded__: The event arguments expose a __Brushes__ collection which can be populated with the Brushes that will be conditionally applied further. When they are preliminarily known, the respective Geometry can be easily drawn at once, instead of applying a style for each cell individually. Thus, the rendering performance of the control is kept unaffected.
+* `OverlayBrushesNeeded`&mdash;The event arguments expose a `Brushes` collection which can be populated with the Brushes that will be conditionally applied further. When they are preliminarily known, the respective Geometry can be easily drawn at once, instead of applying a style for each cell individually. Thus, the rendering performance of the control is kept unaffected.
 
-#### __[C#] Example 1: Adding Brushes through the OverlayBrushesNeeded event__
+#### __[C#] Adding Brushes through the OverlayBrushesNeeded event__
 
 {{region cs-radvirtualgrid-styling_conditionalstyling_0}}
 	private void VirtualGrid_OverlayBrushesNeeded(object sender, 
@@ -27,15 +27,17 @@ This is achieved through the usage of the following three events in conjunction.
         }
 {{endregion}}
 
-* __CellDecorationsNeeded__: This is the event through which the actual styling of the cells can be applied. The event arguments expose the following properties:
+* `CellDecorationsNeeded`&mdash;This is the event through which the actual styling of the cells can be applied. The event arguments expose the following properties:
 
-	- __Background__: Its value must be set to be one of the Brushes provided by the __Brushes__ collection populated through the __OverlayBrushesNeeded__ event.
-	- __ColumnIndex__: The column the given cell corresponds to.
-	- __RowIndex__: The row the given cell corresponds to.
-	- __FontFamily__: Sets the FontFamily of the cell.
-	- __FontSize__: Sets the FontSize of the cell.
-	- __Foreground__: Sets the Brush for the Foreground of the cell.
-	- __CellTextAlignment__: Sets the cell's text alignment.
+	- `Background`&mdash;Its value must be set to be one of the Brushes provided by the `Brushes` collection populated through the `OverlayBrushesNeeded` event.
+	- `ColumnIndex`&mdash;The column the given cell corresponds to.
+	- `RowIndex`&mdash;The row the given cell corresponds to.
+	- `FontFamily`&mdash;Sets the FontFamily of the cell.
+	- `FontSize`&mdash;Sets the FontSize of the cell.
+    - `FontStyle`&mdash;Sets the FontStyle of the cell.
+    - `FontWeight`&mdash;Sets the FontWeight of the cell.
+	- `Foreground`&mdash;Sets the Brush for the Foreground of the cell.
+	- `CellTextAlignment`&mdash;Sets the cell's text alignment.
 
 #### __[C#] Applying conditional styling through the CellDecorationsNeeded event__
 
@@ -56,13 +58,13 @@ This is achieved through the usage of the following three events in conjunction.
         }
 {{endregion}}
 
->For the effects of the **CellTextAlignment** property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to **True**.
+>For the effects of the `CellTextAlignment` property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to `True`.
 
-#### __Figure 1: RadVirtualGrid with conditional styling applied__
+__RadVirtualGrid with conditional styling applied__
 
 ![RadVirtualGrid with conditional styling applied](images/RadVirtualGrid_Styling_02.png)
 
-* __HeaderCellDecorationsNeeded__: This event was exposed in the __R3 2019__ version of the control. It allows for the styling of the header cells. Its event arguments are the same as the ones for the __CellDecorationsNeeded__ event.
+* `HeaderCellDecorationsNeeded`&mdash;This event allows for the styling of the header cells. Its event arguments are the same as the ones for the `CellDecorationsNeeded` event.
 
 ## See also
 

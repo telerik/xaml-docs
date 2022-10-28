@@ -11,19 +11,6 @@ CTAControlName: RadPropertyGrid
 
 # Overview
 
-
-
-## 
-
-{% if site.site_name == 'WPF' %}
-
-
-![](images/RadPropertyGrid_LogoWPF.png){% endif %}{% if site.site_name == 'Silverlight' %}
-
-![](images/RadPropertyGrid_LogoSL.png){% endif %}
-
-
-
 Thank you for choosing Telerik RadPropertyGrid !
 
 RadPropertyGrid provides an easy and versatile approach to processing data objects' properties. Utilizing its autogeneration features and the intuitive custom editors capabilities, users would be able either to display data in a way that best fits their needs or modify it with minimal effort.

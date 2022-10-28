@@ -11,9 +11,6 @@ CTAControlName: RadProgressBar
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![progressbar sl icon](images/progressbar_sl_icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![progressbar wpf icon](images/progressbar_wpf_icon.png){% endif %}
-
 Telerik __RadProgressBar__ is an advanced component allowing you to completely convey the progress of various tasks. The control ships with several pre-defined themes and animations.
 
 {% if site.has_cta_panels == true %}

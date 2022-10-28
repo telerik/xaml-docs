@@ -1,6 +1,6 @@
 ---
 title: GestureManager
-page_title:  GestureManager | Gestures | TouchManager
+page_title:  GestureManager - Gestures - TouchManager
 description: Check our &quot;GestureManager&quot; documentation article for the TouchManager {{ site.framework_name }} control.
 slug: touchmanager-gesturemanager
 tags: gestures,touch,manager,touchmanager,gesturemanager

@@ -14,8 +14,6 @@ RadNumericUpDown inherits several common events that can be used to customize th
 
 Here is a brief list of all events exposed by __RadNumericUpDown__.
 
-* __BindingValidationError__: Occurs when a data validation error is reported by a binding source. Inherited from **FrameworkElement**.
-
 * __GotFocus__: Occurs when the control receives focus. Inherited from **UIElement**.
 
 * __KeyDown__: Occurs when a key is pressed while the focus is on this element. Inherited from **UIElement**.

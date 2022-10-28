@@ -11,8 +11,6 @@ CTAControlName: RadCardView
 
 # Overview
 
-![](images/radcardview-overview-0.png)
-
 __RadCardView__ allows you to display data in a card-like layout where you can sort, group and edit each card.
 
 {% if site.has_cta_panels == true %}

@@ -11,13 +11,6 @@ CTAControlName: RadExpander
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![RadExpander Silverlight Icon](images/expander_sl_icon.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![RadExpander WPF Icon](images/expander_wpf_icon.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadExpander__!				
 
 __RadExpander__ is a flexible control that helps you save space and achieve easier navigation through your site. You can place the expander anywhere on your page and embed any content inside its drop-down area.

@@ -11,13 +11,6 @@ CTAControlName: RadBook
 
 # Overview
 
-{% if site.site_name == 'WPF' %}
-![book wpf icon](images/book_wpf_icon.png)
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-![book sl icon](images/book_sl_icon.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadBook__!
 
 {% if site.has_cta_panels == true %}

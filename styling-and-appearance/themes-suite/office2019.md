@@ -5,7 +5,7 @@ description: Familiarize yourself with the Office2019 theme, inspired by the wel
 slug: common-styling-appearance-Office2019-theme
 tags: Office2019,theme,glyphs,fontsize,fontfamily
 published: True
-position: 12
+position: 3
 ---
 
 <style>
@@ -407,76 +407,73 @@ article table
 
 # Office2019 Theme
 
-With the __R3 2020__ release of the __UI for WPF__ suite we have introduced the brand new `Office2019 Theme`. Inspired by the well-known Microsoft Office productivity suite and its latest version, the Office2019 theme is here to help re-creating and delivering that fresh and smooth look and feel to your WPF apps. Explore the `Light`, `Gray` and `Dark` built-in color variations of the Office2019 theme and get off to a flying start with your WPF applications.
+Inspired by the well-known Microsoft Office productivity suite and its latest version, the `Office2019` theme is here to help re-creating and delivering that fresh and smooth look and feel to your WPF apps. Explore the `Light`, `Gray` and `Dark` built-in color variations of the Office2019 theme and get off to a flying start with your WPF applications.
 
 > With the __R3 2021__ release, we have expanded the built-in color variations with a brand-new one - the `HighContrast`. In addition to it, we extended the theme palette with several brushes. Read more in the [Default Theme Colors](#default-theme-colors) topic.
 
 Jump to the following topics to learn about the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
-* [Office2019Palette Properties](#office2019palette-properties)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Font Family and Font Size](#font-family-and-font-size)
-* [Glyphs](#glyphs)
-* [Theme Helper](#theme-helper)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Changing Font Properties](#changing-font-properties)
+* [Using Glyphs](#using-glyphs)
+* [Using Theme Helper](#using-theme-helper)
+* [Setting White Color Variation](#setting-white-color-variation)
+* [Changing Opacity](#changing-opacity)
 
 ## Default Theme Colors
 
-The `Office2019 Theme` is designed to be easily modified via the exposed colors in the theme palette.
+The `Office2019` theme is designed to be easily modified via the exposed colors in the theme palette.
 The default values of the brushes in the theme are listed below.
 
-|Brush name|   |Light|   |Gray|   |Dark|   |HighContrast|
+|Color name|   |Light|   |Gray|   |Dark|   |HighContrast|
 |----------|---|-----|---|----|---|----|---|----|
-|AccentBackgroundBrush|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-highcontrast"></div>|
-|AccentBorderBrush|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentborderbrush-highcontrast"></div>|
-|AccentMouseOverBackgroundBrush|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-gray"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-dark"></div>|#FFFF00|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-highcontrast"></div>|
-|AccentMouseOverBorderBrush|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-gray"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-highcontrast"></div>|
-|AccentPressedBackgroundBrush|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush"></div>|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-gray"></div>|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-highcontrast"></div>|
-|AlternativeBackgroundBrush|#F1F1F1|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-gray"></div>|#3C3C3C|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-highcontrast"></div>|
-|BaseBackgroundBrush|#DFDFDF|<div class="theme-palette-color Office2019theme-basebackgroundbrush"></div>|#767272|<div class="theme-palette-color Office2019theme-basebackgroundbrush-gray"></div>|#151515|<div class="theme-palette-color Office2019theme-basebackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-basebackgroundbrush-highcontrast"></div>|
-|ButtonBackgroundBrush|#E5E5E5|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush"></div>|#BFBFBF|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-gray"></div>|#3D3D3D|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-highcontrast"></div>|
-|CheckedForegroundBrush|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-highcontrast"></div>|
-|DisabledBackgroundBrush|#F1F1F1|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-gray"></div>|#3F3E3C|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-highcontrast"></div>|
-|DisabledBorderBrush|#D6D6D6|<div class="theme-palette-color Office2019theme-disabledborderbrush"></div>|#BEBEBE|<div class="theme-palette-color Office2019theme-disabledborderbrush-gray"></div>|#4F4F4F|<div class="theme-palette-color Office2019theme-disabledborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledborderbrush-highcontrast"></div>|
-|HeaderBackgroundBrush|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-highcontrast"></div>|
-|HeaderForegroundBrush|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-highcontrast"></div>|
-|HighlightedForegroundBrush|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-highcontrast"></div>|
-|IconBrush|#606060|<div class="theme-palette-color Office2019theme-iconbrush"></div>|#333333|<div class="theme-palette-color Office2019theme-iconbrush-gray"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-iconbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-iconbrush-highcontrast"></div>|
-|MainBackgroundBrush|#FFFFFF|<div class="theme-palette-color Office2019theme-mainbackgroundbrush"></div>|#E2E2E2|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-highcontrast"></div>|
-|MainBorderBrush|#ACACAC|<div class="theme-palette-color Office2019theme-mainborderbrush"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-mainborderbrush-gray"></div>|#606060|<div class="theme-palette-color Office2019theme-mainborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-mainborderbrush-highcontrast"></div>|
-|MainForegroundBrush|#000000|<div class="theme-palette-color Office2019theme-mainforegroundbrush"></div>|#000000|<div class="theme-palette-color Office2019theme-mainforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-mainforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-mainforegroundbrush-highcontrast"></div>|
-|MouseOverBackgroundBrush|#C8C7C4|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush"></div>|#ACACAC|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-gray"></div>|#B3AFAD|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-highcontrast"></div>|
-|PressedBackgroundBrush|#B3AFAD|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush"></div>|#918E8D|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-gray"></div>|#767676|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-highcontrast"></div>|
-|ReadOnlyBackgroundBrush|#FFFFFF|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush"></div>|#E2E2E2|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-dark"></div>|#008000|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-highcontrast"></div>|
-|ReadOnlyBorderBrush|#ACACAC|<div class="theme-palette-color Office2019theme-readonlyborderbrush"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-readonlyborderbrush-gray"></div>|#606060|<div class="theme-palette-color Office2019theme-readonlyborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-readonlyborderbrush-highcontrast"></div>|
-|SecondaryBackgroundBrush|#D6D5D5|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush"></div>|#B6B3B1|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-gray"></div>|#2B2B2B|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-highcontrast"></div>|
-|SecondaryForegroundBrush|#000000|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-highcontrast"></div>|
-|ValidationBrush|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush"></div>|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush-gray"></div>|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush-dark"></div>|#EB0300|<div class="theme-palette-color Office2019theme-validationbrush-highcontrast"></div>|
+|AccentBackgroundColor|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentbackgroundbrush-highcontrast"></div>|
+|AccentBorderColor|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-accentborderbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentborderbrush-highcontrast"></div>|
+|AccentMouseOverBackgroundColor|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-gray"></div>|#D4E8F8|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-dark"></div>|#FFFF00|<div class="theme-palette-color Office2019theme-accentmouseoverbackgroundbrush-highcontrast"></div>|
+|AccentMouseOverBorderColor|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-gray"></div>|#2F96ED|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentmouseoverborderbrush-highcontrast"></div>|
+|AccentPressedBackgroundColor|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush"></div>|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-gray"></div>|#A1CDED|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-accentpressedbackgroundbrush-highcontrast"></div>|
+|AlternativeBackgroundColor|#F1F1F1|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-gray"></div>|#3C3C3C|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-alternativebackgroundbrush-highcontrast"></div>|
+|BaseBackgroundColor|#DFDFDF|<div class="theme-palette-color Office2019theme-basebackgroundbrush"></div>|#767272|<div class="theme-palette-color Office2019theme-basebackgroundbrush-gray"></div>|#151515|<div class="theme-palette-color Office2019theme-basebackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-basebackgroundbrush-highcontrast"></div>|
+|ButtonBackgroundColor|#E5E5E5|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush"></div>|#BFBFBF|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-gray"></div>|#3D3D3D|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-buttonbackgroundbrush-highcontrast"></div>|
+|CheckedForegroundColor|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-checkedforegroundbrush-highcontrast"></div>|
+|DisabledBackgroundColor|#F1F1F1|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-gray"></div>|#3F3E3C|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-disabledbackgroundbrush-highcontrast"></div>|
+|DisabledBorderColor|#D6D6D6|<div class="theme-palette-color Office2019theme-disabledborderbrush"></div>|#BEBEBE|<div class="theme-palette-color Office2019theme-disabledborderbrush-gray"></div>|#4F4F4F|<div class="theme-palette-color Office2019theme-disabledborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledborderbrush-highcontrast"></div>|
+|HeaderBackgroundColor|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush"></div>|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-gray"></div>|#106EBE|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-headerbackgroundbrush-highcontrast"></div>|
+|HeaderForegroundColor|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-headerforegroundbrush-highcontrast"></div>|
+|HighlightedForegroundColor|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-highlightedforegroundbrush-highcontrast"></div>|
+|IconColor|#606060|<div class="theme-palette-color Office2019theme-iconbrush"></div>|#333333|<div class="theme-palette-color Office2019theme-iconbrush-gray"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-iconbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-iconbrush-highcontrast"></div>|
+|MainBackgroundColor|#FFFFFF|<div class="theme-palette-color Office2019theme-mainbackgroundbrush"></div>|#E2E2E2|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-mainbackgroundbrush-highcontrast"></div>|
+|MainBorderColor|#ACACAC|<div class="theme-palette-color Office2019theme-mainborderbrush"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-mainborderbrush-gray"></div>|#606060|<div class="theme-palette-color Office2019theme-mainborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-mainborderbrush-highcontrast"></div>|
+|MainForegroundColor|#000000|<div class="theme-palette-color Office2019theme-mainforegroundbrush"></div>|#000000|<div class="theme-palette-color Office2019theme-mainforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-mainforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-mainforegroundbrush-highcontrast"></div>|
+|MouseOverBackgroundColor|#C8C7C4|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush"></div>|#ACACAC|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-gray"></div>|#B3AFAD|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-mouseoverbackgroundbrush-highcontrast"></div>|
+|PressedBackgroundColor|#B3AFAD|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush"></div>|#918E8D|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-gray"></div>|#767676|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-dark"></div>|#1AEBFF|<div class="theme-palette-color Office2019theme-pressedbackgroundbrush-highcontrast"></div>|
+|ReadOnlyBackgroundColor|#FFFFFF|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush"></div>|#E2E2E2|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-gray"></div>|#2F2F2F|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-dark"></div>|#008000|<div class="theme-palette-color Office2019theme-readonlybackgroundbrush-highcontrast"></div>|
+|ReadOnlyBorderColor|#ACACAC|<div class="theme-palette-color Office2019theme-readonlyborderbrush"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-readonlyborderbrush-gray"></div>|#606060|<div class="theme-palette-color Office2019theme-readonlyborderbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-readonlyborderbrush-highcontrast"></div>|
+|SecondaryBackgroundColor|#D6D5D5|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush"></div>|#B6B3B1|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-gray"></div>|#2B2B2B|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-secondarybackgroundbrush-highcontrast"></div>|
+|SecondaryForegroundColor|#000000|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-dark"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-secondaryforegroundbrush-highcontrast"></div>|
+|ValidationColor|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush"></div>|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush-gray"></div>|#E43E00|<div class="theme-palette-color Office2019theme-validationbrush-dark"></div>|#EB0300|<div class="theme-palette-color Office2019theme-validationbrush-highcontrast"></div>|
 
-> The newly introduced brushes and their colors for each variation follow. They are available after the __R3 2021__.
+> Additionally introduced brushes follow, which are available after the __R3 2021__.
 
-|Brush name|   |Light|   |Gray|   |Dark|   |HighContrast|
+|Color name|   |Light|   |Gray|   |Dark|   |HighContrast|
 |----------|---|-----|---|----|---|----|---|----|
-|DisabledCheckedForegroundBrush|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-highcontrast"></div>|
-|DisabledForegroundBrush|#000000|<div class="theme-palette-color Office2019theme-disabledforegroundbrush"></div>|#000000|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-dark"></div>|#00FF00|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-highcontrast"></div>|
-|DisabledIconBrush|#606060|<div class="theme-palette-color Office2019theme-disablediconbrush"></div>|#333333|<div class="theme-palette-color Office2019theme-disablediconbrush-gray"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-disablediconbrush-dark"></div>|#00FF00|<div class="theme-palette-color Office2019theme-disablediconbrush-highcontrast"></div>|
-|IconWrapperBrush|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush"></div>|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush-gray"></div>|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-iconwrapperbrush-highcontrast"></div>|
-|SelectedUnfocusedBackgroundBrush|#E5E5E5|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush"></div>|#BFBFBF|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-gray"></div>|#3D3D3D|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-highcontrast"></div>|
-|TertiaryBackgroundBrush|#F1F1F1|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-gray"></div>|#3C3C3C|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-highcontrast"></div>|
+|DisabledCheckedForegroundColor|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-gray"></div>|#FFFFFF|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-disabledcheckedforegroundbrush-highcontrast"></div>|
+|DisabledForegroundColor|#000000|<div class="theme-palette-color Office2019theme-disabledforegroundbrush"></div>|#000000|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-gray"></div>|#F1F1F1|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-dark"></div>|#00FF00|<div class="theme-palette-color Office2019theme-disabledforegroundbrush-highcontrast"></div>|
+|DisabledIconColor|#606060|<div class="theme-palette-color Office2019theme-disablediconbrush"></div>|#333333|<div class="theme-palette-color Office2019theme-disablediconbrush-gray"></div>|#A6A6A6|<div class="theme-palette-color Office2019theme-disablediconbrush-dark"></div>|#00FF00|<div class="theme-palette-color Office2019theme-disablediconbrush-highcontrast"></div>|
+|IconWrapperColor|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush"></div>|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush-gray"></div>|transparent|<div class="theme-palette-color Office2019theme-iconwrapperbrush-dark"></div>|#000000|<div class="theme-palette-color Office2019theme-iconwrapperbrush-highcontrast"></div>|
+|SelectedUnfocusedBackgroundColor|#E5E5E5|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush"></div>|#BFBFBF|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-gray"></div>|#3D3D3D|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-dark"></div>|#808080|<div class="theme-palette-color Office2019theme-selectedunfocusedbackgroundbrush-highcontrast"></div>|
+|TertiaryBackgroundColor|#F1F1F1|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush"></div>|#CBCBCB|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-gray"></div>|#3C3C3C|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-dark"></div>|#37006E|<div class="theme-palette-color Office2019theme-tertiarybackgroundbrush-highcontrast"></div>|
 
-We have also introduced some control-specific brushes for the:
-* RadBulletGraph&mdash;`ComparativeMeasureBrush`, `QualityGoodBrush`, `QualityPoorBrush` and `QualitySatisfactoryBrush`
-* RadTimeBar&mdash;`TimeBarSelectionBorderBrush`
-* RadTimeline&mdash;`TimelineInstantItemBrush` and `TimelineItemBrush`
-
-More information about each brush follows in the next topic.
-
+More information about each color and the respective brush that is created from it follows in the next topic.
 
 __Theme colors represented in RadOutlookBar__
 
 ![Office2019 theme colors represented in RadOutlookBar](images/Office2019-theme-outlook.PNG)	
 
-## Office2019Palette Properties
+## Default Theme Brushes
 
 ### Accent Brushes
 
@@ -546,12 +543,25 @@ __Theme colors represented in RadOutlookBar__
 
 > The `HeaderBorderThickness` is not available with versions prior to the __R3 2021__ release of the UI for WPF suite.
 
-## Theme Variation Changing
+## Changing Palette Colors
+
+The Office2019 theme provides dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `Office2019Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `Office2019Palette.Palette.AccentBackgroundColor` sets the color for `telerik:Office2019Resource ResourceKey=AccentBackgroundBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-office2019-theme-0}}
+	Office2019Palette.Palette.AccentBackgroundColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Theme Variation
 
 The Office2019 theme comes with three color variations, inspired by the colors used in MS Office. The Light variation corresponds to Microsoft's Colorful Office theme, the Gray - to the Dark Gray Office2019 theme and the Dark - to the Black Office2019 theme. The following example demonstrates the ability to switch between the supported `Light`, `Gray`, `Dark` and `HighContrast` color palettes by calling the `LoadPreset()` method as shown below:
 
 #### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-Office2019-theme-1}}
+{{region cs-styling-appearance-office2019-theme-1}}
 	//default color variation 
 	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Light);   
 	
@@ -571,11 +581,11 @@ __Office2019 theme color variations__
 
 >important All variations of the theme are designed with a specific background in mind and it is recommended to use such a background in your application when working with it - it is represented by the theme palette's `BaseBackgroundBrush`.
 
-## Font Family and Font Size
+## Changing Font Properties
 
-When using the `Office2019 Theme`, the `FontSize` and `FontFamily` properties of all components in the application can be dynamically changed the same way as in the Windows8, Windows8Touch, Office2013, VisualStudio2013, Office2016, Green, Material, Fluent, Crystal and VisualStudio2019 themes.
+When using the `Office2019` theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
-The FontSize and FontFamily properties are public - they can easily be modified at a single point. The most commonly used font size in the theme is with value __12__ and can be modified through the `Office2019Palette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
+The FontSize and FontFamily properties are public and can be easily modified at a single point. The most commonly used font size in the theme is with value __12__ and can be modified through the `Office2019Palette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
 
 The default font used in the theme is `Segoe UI`.
 
@@ -584,7 +594,7 @@ The default font used in the theme is `Segoe UI`.
 The following example shows the default font sizes and families.
 
 #### __[C#] Default FontSize__
-{{region cs-styling-appearance-Office2019-theme-2}}
+{{region cs-styling-appearance-office2019-theme-2}}
 	Office2019Palette.Palette.FontSize = 12;
 	Office2019Palette.Palette.FontSizeS = 13;
 	Office2019Palette.Palette.FontSizeM = 14;
@@ -594,7 +604,7 @@ The following example shows the default font sizes and families.
 The following example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __12__ to __18__.
 
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-Office2019-theme-2}}
+{{region cs-styling-appearance-office2019-theme-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2019Palette.Palette.FontSize = 18;
@@ -606,20 +616,20 @@ __Setting FontSize and FontFamily__
 
 ![RadCalendar with modified FontSize and FontFamily](images/Office2019-theme-calendar-font-change.png)	
 
-## Glyphs
+## Using Glyphs
 
-The `Office2019 Theme` also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
+The `Office2019` theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-## Theme Helper
+## Using Theme Helper
 
-The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the __R3 2019__ release is used in the Office2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
+The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the Office2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
 #### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-Office2019-theme-3}}
+{{region xaml-styling-appearance-office2019-theme-0}}
 	<telerik:RadToggleButton Content="RadToggleButton" 
 							 Margin="10"
 							 xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
@@ -634,12 +644,12 @@ __Appearance of the RadToggleButton in the different states__
 
 ## Setting White Color Variation
 
-The theme has a few built-in [color variations](#theme-variation-changing) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing several color properties of the [theme palette](#office2019palette-properties).
+The theme has a few built-in [color variations](#changing-theme-variation) - Light, Gray and Dark. You can customize the Light variation and make it look like Microsoft's White Office Theme by changing several color properties of the [theme palette](#changing-palette-colors).
 
-To achieve this, first ensure that the Light [variation](#theme-variation-changing) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
+To achieve this, first ensure that the Light [variation](#changing-theme-variation) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
 
 #### __[C#] Applying palette colors__		
-{{region cs-styling-appearance-Office2019-theme-4}}
+{{region cs-styling-appearance-office2019-theme-4}}
 	Office2019Palette.Palette.ButtonBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
 	Office2019Palette.Palette.BaseBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
 	Office2019Palette.Palette.AlternativeBackgroundColor = (Color)ColorConverter.ConvertFromString("#FAFAFA");
@@ -651,7 +661,7 @@ To achieve this, first ensure that the Light [variation](#theme-variation-changi
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the Office2019Palette. The default values are __0.3__ and __0.6__ respectively. 
 
 #### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-Office2019-theme-5}}
+{{region cs-styling-appearance-office2019-theme-5}}
 	Office2019Palette.Palette.DisabledOpacity = 0.5;
 	Office2019Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
@@ -661,7 +671,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 When modifying fonts, colors, or other resources from the `Office2019Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-Office2019-theme-6}}
+{{region xaml-styling-appearance-office2019-theme-1}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

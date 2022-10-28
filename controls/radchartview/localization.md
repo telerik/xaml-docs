@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | WPF ChartView
+page_title: Localization - WPF ChartView
 description: The article describes the localization feature of RadChartView.
 slug: radchartview-localization
 tags: globalization,chartview,localization

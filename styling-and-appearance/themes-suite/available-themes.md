@@ -41,8 +41,8 @@ Theme name | Appearance | Theme Palette | Variations
 **[Green]({%slug common-styling-appearance-green-theme%})** | ![Green](images/GreenTheme.png)| Yes | Light, Dark{% endif %}
 **[Visual Studio 2013]({%slug common-styling-appearance-visualstudio2013-theme%})** | ![Visual Studio 2013](images/VisualStudio2013Theme.png) | Yes | Light, Blue, Dark
 **[Office 2013]({%slug common-styling-appearance-office2013-theme%})** | ![Office 2013](images/Office2013Theme.png) | Yes | White, LightGray, DarkGray
-**[Windows 8]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8](images/Windows8Theme.png) | Yes | -
 **[Windows 8 Touch]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8 Touch](images/Windows8TouchTheme.png) | Yes | -
+**[Windows 8]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8](images/Windows8Theme.png) | Yes | -
 **Expression Dark** | ![Expression Dark](images/ExpressionDarkTheme.png) | No | -
 **Windows 7** | ![Windows 7](images/Windows7Theme.png) | No | -
 **Transparent** | ![Transparent](images/TransparentTheme.png) | No | -

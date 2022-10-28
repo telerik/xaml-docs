@@ -39,6 +39,17 @@ To customize the colors of the DockResizer's normal and preview states add the f
 
     <Style x:Key="ResizerPreviewStyle" TargetType="Control">
         <Setter Property="Background" Value="#4A1B7E"/>
+	<!--The template can be omitted for the NoXaml as it will come from the base Style.
+	    Omitting it for StyleManager will lead to empty template and no visual change.-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Control">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Background="{TemplateBinding Background}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <!--If the NoXaml binaries are used, the following style needs to be based on the default one, like so:--> 

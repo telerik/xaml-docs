@@ -23,9 +23,10 @@ res_type: kb
 The selection boxes of the RadMultiColumnComboBox is visible by default.
 
 ## Solution
+
 To hide the selection boxes, the SelectionBoxesVisibility property can be set to Collapsed.
 
-	#### __[C#]__
-	{{region kb-multicolumncombobox-howto-remove-selection-box-0}}
-		<telerik:RadMultiColumnComboBox SelectionBoxesVisibility="Collapsed"/>
-	{{endregion}}
+#### __[C#]__
+{{region kb-multicolumncombobox-howto-remove-selection-box-0}}
+	<telerik:RadMultiColumnComboBox SelectionBoxesVisibility="Collapsed"/>
+{{endregion}}

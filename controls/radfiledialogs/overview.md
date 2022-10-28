@@ -11,8 +11,6 @@ CTAControlName: RadFileDialogs
 
 # Overview
 
-![FileDialogs WPF Icon](images/FileDialogs_WPF_Icon.png)
-
 Whenever you open or save a file in almost any Windows application, you will see roughly the same dialogs for doing so. As of **R3 2017** you can keep the UI appearance throughout your application consistent with the new file dialogs provided by the **Telerik UI for WPF** suite.
 
 Apart from support of all predefined themes of the suite, the controls provide most of the functionality of the standard MS dialogs while leaving room for further customization.

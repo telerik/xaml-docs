@@ -50,15 +50,14 @@ The following example shows how to setup a basic card model and populate the Ite
 {{region radcardview-getting-started-2}}
 	public MainWindow()
 	{
-            InitializeComponent();          
-            var source = new ObservableCollection<CardInfo>();
-            for (int i = 0; i < 6; i++)
-            {
-                source.Add(new CardInfo() { Header = "Card " + i, Name = "Name " + i, Number = i });
-            }
-            this.cardView.ItemsSource = source;
-        }
-    }
+	    InitializeComponent();          
+	    var source = new ObservableCollection<CardInfo>();
+	    for (int i = 0; i < 6; i++)
+	    {
+	        source.Add(new CardInfo() { Header = "Card " + i, Name = "Name " + i, Number = i });
+	    }
+	    this.cardView.ItemsSource = source;
+	}
 {{endregion}}
 
 #### Figure 1: RadCardView example

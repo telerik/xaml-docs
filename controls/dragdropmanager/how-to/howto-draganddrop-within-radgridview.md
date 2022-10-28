@@ -648,7 +648,7 @@ The final result should look like the one on the snapshot below:
     }
 {{endregion}}
 
-Finally, you should populate your __RadGridView__ with sample data and attach the attached behavior:
+Finally, you should populate your  __RadGridView__ with sample data and attach the attached behavior:
 
 #### __C#__
 

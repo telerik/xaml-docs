@@ -5,7 +5,7 @@ description: The article shows the Telerik WPF Material theme and its features a
 slug: common-styling-appearance-material-theme
 tags: material,theme,glyphs,fontsize,fontfamily,shadow
 published: True
-position: 8
+position: 7
 ---
 
 <style>
@@ -160,21 +160,22 @@ article table
 
 # Material Theme
 
-With the __R2 2017__ release of the __UI for WPF__ suite we have introduced the brand new `Material Theme`. It comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Material design drop shadows with beautiful and smooth transitions between the states.
+The `Material Theme` comes with built-in elements that provide interaction feedback, with easy-to-customize colors and Material design drop shadows with beautiful and smooth transitions between the states.
 
 With the __R2 2021__ release of the __UI for WPF__ suite, we have designed and delivered a brand new color variation of the Material theme - the `Dark` one. In addition to it, the theme palette expanded its brushes collection with the `DialogBackgroundBrush` and the `SelectedUnfocusedBrush`, which are available for both color variations and are described below.
 
-The following topic explains the specifics of the theme's palette and features.
+Jump to the following topics to learn about the specifics of the theme's palette and features.
 
-* [Default theme colors](#default-theme-colors)
-* [Material Palette Brushes](#materialpalette-brushes)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Changing Fonts](#font-family-and-font-size)
-* [Glyphs](#glyphs)
-* [Changing Corner Radius](#set-corner-radius)
-* [Material Assist](#material-assist)
-* [Shadow](#shadow)
+* [Default Theme Colors](#default-theme-colors)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Changing Font Properties](#changing-font-properties)
+* [Using Glyphs](#using-glyphs)
+* [Changing Corner Radius](#changing-corner-radius)
+* [Visual Helpers](#visual-helpers)
 * [Material Control](#material-control)
+* [Changing Opacity](#changing-opacity)
 
 ## Default Theme Colors
 
@@ -182,39 +183,39 @@ Since the __R2 2021__ release of the __UI for WPF__ suite, the Material Theme ha
 
 The default values of the brushes in the theme are listed below:
 
-|Brush name|   |Light|   |Dark|
+|Color name|   |Light|   |Dark|
 |----------|---|-----|---|----|
-|MainBrush|#FFFFFFFF|<div class="theme-palette-color materialtheme-mainbrush"></div>|#FF303030|<div class="theme-palette-color materialtheme-mainbrush-dark"></div>|
-|PrimaryBrush|#FFFAFAFA|<div class="theme-palette-color materialtheme-primarybrush"></div>|#FF424242|<div class="theme-palette-color materialtheme-primarybrush-dark"></div>|
-|ComplementaryBrush|#FFE0E0E0|<div class="theme-palette-color materialtheme-complementarybrush"></div>|#FF171717|<div class="theme-palette-color materialtheme-complementarybrush-dark"></div>|
-|AlternativeBrush|#FFF5F5F5|<div class="theme-palette-color materialtheme-alternativebrush"></div>|#FF212121|<div class="theme-palette-color materialtheme-alternativebrush-dark"></div>|
-|DividerBrush|#1E000000|<div class="theme-palette-color materialtheme-dividerbrush"></div>|#1FFFFFFF|<div class="theme-palette-color materialtheme-dividerbrush-dark"></div>|
-|MarkerBrush|#FF000000|<div class="theme-palette-color materialtheme-markerbrush"></div>|#FFF1F1F1|<div class="theme-palette-color materialtheme-markerbrush-dark"></div>|
-|MarkerInvertedBrush|#FFFFFFFF|<div class="theme-palette-color materialtheme-markerinvertedbrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-markerinvertedbrush-dark"></div>|
-|IconBrush|#FF000000|<div class="theme-palette-color materialtheme-iconbrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-iconbrush-dark"></div>|
-|ValidationBrush|#FFD50000|<div class="theme-palette-color materialtheme-validationbrush"></div>|#FFCF6679|<div class="theme-palette-color materialtheme-validationbrush-dark"></div>|
-|AccentNormalBrush|#FFFFAB40|<div class="theme-palette-color materialtheme-accentnormalbrush"></div>|#FF00ACC1|<div class="theme-palette-color materialtheme-accentnormalbrush-dark"></div>|
-|AccentHoverBrush|#FFFFD180|<div class="theme-palette-color materialtheme-accenthoverbrush"></div>|#FF26C6DA|<div class="theme-palette-color materialtheme-accenthoverbrush-dark"></div>|
-|AccentPressedBrush|#FFFF9100|<div class="theme-palette-color materialtheme-accentpressedbrush"></div>|#FF0097A7|<div class="theme-palette-color materialtheme-accentpressedbrush-dark"></div>|
-|PrimaryNormalBrush|#FF3F51B5|<div class="theme-palette-color materialtheme-primarynormalbrush"></div>|#FF7986CB|<div class="theme-palette-color materialtheme-primarynormalbrush-dark"></div>|
-|PrimaryHoverBrush|#FF303F9F|<div class="theme-palette-color materialtheme-primaryhoverbrush"></div>|#FF5C6BC0|<div class="theme-palette-color materialtheme-primaryhoverbrush-dark"></div>|
-|PrimaryPressedBrush|#FF1A237E|<div class="theme-palette-color materialtheme-primarypressedbrush"></div>|#FF3F51B5|<div class="theme-palette-color materialtheme-primarypressedbrush-dark"></div>|
-|PrimaryFocusBrush|#FF9FA8DA|<div class="theme-palette-color materialtheme-primaryfocusbrush"></div>|#FF536DFE|<div class="theme-palette-color materialtheme-primaryfocusbrush-dark"></div>|
-|RippleBrush|#FFFFFFFF|<div class="theme-palette-color materialtheme-ripplebrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-ripplebrush-dark"></div>|
-|DividerSolidBrush|#FFE1E1E1|<div class="theme-palette-color materialtheme-dividersolidbrush"></div>|#FF474747|<div class="theme-palette-color materialtheme-dividersolidbrush-dark"></div>|
-|ReadOnlyBackgroundBrush|#00FFFFFF|<div class="theme-palette-color materialtheme-readonlybackgroundbrush"></div>|#00FFFFFF|<div class="theme-palette-color materialtheme-readonlybackgroundbrush-dark"></div>|
-|ReadOnlyBorderBrush|#FFABABAB|<div class="theme-palette-color materialtheme-readonlyborderbrush"></div>|#FFABABAB|<div class="theme-palette-color materialtheme-readonlyborderbrush-dark"></div>|
-|DialogBackgroundBrush|#FFFFFFFF|<div class="theme-palette-color materialtheme-dialogbackgroundbrush"></div>|#FF262626|<div class="theme-palette-color materialtheme-dialogbackgroundbrush-dark"></div>|
-|SelectedUnfocusedBrush|#FFEEEEEE|<div class="theme-palette-color materialtheme-selectedunfocusedbrush"></div>|#FF262626|<div class="theme-palette-color materialtheme-selectedunfocusedbrush-dark"></div>|
+|MainColor|#FFFFFFFF|<div class="theme-palette-color materialtheme-mainbrush"></div>|#FF303030|<div class="theme-palette-color materialtheme-mainbrush-dark"></div>|
+|PrimaryColor|#FFFAFAFA|<div class="theme-palette-color materialtheme-primarybrush"></div>|#FF424242|<div class="theme-palette-color materialtheme-primarybrush-dark"></div>|
+|ComplementaryColor|#FFE0E0E0|<div class="theme-palette-color materialtheme-complementarybrush"></div>|#FF171717|<div class="theme-palette-color materialtheme-complementarybrush-dark"></div>|
+|AlternativeColor|#FFF5F5F5|<div class="theme-palette-color materialtheme-alternativebrush"></div>|#FF212121|<div class="theme-palette-color materialtheme-alternativebrush-dark"></div>|
+|DividerColor|#1E000000|<div class="theme-palette-color materialtheme-dividerbrush"></div>|#1FFFFFFF|<div class="theme-palette-color materialtheme-dividerbrush-dark"></div>|
+|MarkerColor|#FF000000|<div class="theme-palette-color materialtheme-markerbrush"></div>|#FFF1F1F1|<div class="theme-palette-color materialtheme-markerbrush-dark"></div>|
+|MarkerInvertedColor|#FFFFFFFF|<div class="theme-palette-color materialtheme-markerinvertedbrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-markerinvertedbrush-dark"></div>|
+|IconColor|#FF000000|<div class="theme-palette-color materialtheme-iconbrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-iconbrush-dark"></div>|
+|ValidationColor|#FFD50000|<div class="theme-palette-color materialtheme-validationbrush"></div>|#FFCF6679|<div class="theme-palette-color materialtheme-validationbrush-dark"></div>|
+|AccentNormalColor|#FFFFAB40|<div class="theme-palette-color materialtheme-accentnormalbrush"></div>|#FF00ACC1|<div class="theme-palette-color materialtheme-accentnormalbrush-dark"></div>|
+|AccentHoverColor|#FFFFD180|<div class="theme-palette-color materialtheme-accenthoverbrush"></div>|#FF26C6DA|<div class="theme-palette-color materialtheme-accenthoverbrush-dark"></div>|
+|AccentPressedColor|#FFFF9100|<div class="theme-palette-color materialtheme-accentpressedbrush"></div>|#FF0097A7|<div class="theme-palette-color materialtheme-accentpressedbrush-dark"></div>|
+|PrimaryNormalColor|#FF3F51B5|<div class="theme-palette-color materialtheme-primarynormalbrush"></div>|#FF7986CB|<div class="theme-palette-color materialtheme-primarynormalbrush-dark"></div>|
+|PrimaryHoverColor|#FF303F9F|<div class="theme-palette-color materialtheme-primaryhoverbrush"></div>|#FF5C6BC0|<div class="theme-palette-color materialtheme-primaryhoverbrush-dark"></div>|
+|PrimaryPressedColor|#FF1A237E|<div class="theme-palette-color materialtheme-primarypressedbrush"></div>|#FF3F51B5|<div class="theme-palette-color materialtheme-primarypressedbrush-dark"></div>|
+|PrimaryFocusColor|#FF9FA8DA|<div class="theme-palette-color materialtheme-primaryfocusbrush"></div>|#FF536DFE|<div class="theme-palette-color materialtheme-primaryfocusbrush-dark"></div>|
+|RippleColor|#FFFFFFFF|<div class="theme-palette-color materialtheme-ripplebrush"></div>|#FFFFFFFF|<div class="theme-palette-color materialtheme-ripplebrush-dark"></div>|
+|DividerSolidColor|#FFE1E1E1|<div class="theme-palette-color materialtheme-dividersolidbrush"></div>|#FF474747|<div class="theme-palette-color materialtheme-dividersolidbrush-dark"></div>|
+|ReadOnlyBackgroundColor|#00FFFFFF|<div class="theme-palette-color materialtheme-readonlybackgroundbrush"></div>|#00FFFFFF|<div class="theme-palette-color materialtheme-readonlybackgroundbrush-dark"></div>|
+|ReadOnlyBorderColor|#FFABABAB|<div class="theme-palette-color materialtheme-readonlyborderbrush"></div>|#FFABABAB|<div class="theme-palette-color materialtheme-readonlyborderbrush-dark"></div>|
+|DialogBackgroundColor|#FFFFFFFF|<div class="theme-palette-color materialtheme-dialogbackgroundbrush"></div>|#FF262626|<div class="theme-palette-color materialtheme-dialogbackgroundbrush-dark"></div>|
+|SelectedUnfocusedColor|#FFEEEEEE|<div class="theme-palette-color materialtheme-selectedunfocusedbrush"></div>|#FF262626|<div class="theme-palette-color materialtheme-selectedunfocusedbrush-dark"></div>|
 
 
 __Theme colors represented in RadOutlookBar__
 
 ![material theme colors](images/materialOutlook.PNG)	
 
-## MaterialPalette Properties
+## Default Theme Brushes
 
-Below you can find more details about each brush and where it is usually applied. They can be divided in 4 groups based on their color:
+Below you can find more details about each brush and where it is usually applied. The brushes can be divided in 4 groups based on their color:
 
 * [Neutral Brushes](#neutral-brushes)
 * [Primary Brushes](#primary-brushes)
@@ -267,10 +268,23 @@ Amber
 
 ## Other Properties
 
-* `DisabledOpacity`&mdash;Used for text when they are disabled. Backgrounds usually use the  `AlternativeBrush` when disabled.
+* `DisabledOpacity`&mdash;Used for disabled text. Backgrounds usually use the  `AlternativeBrush` when disabled.
 * `ReadOnlyOpacity`&mdash;Used for text in inputs when they are in a __read-only__ state.
 
-## Theme Variation Changing
+## Changing Palette Colors
+
+The Material theme provides dynamic change of the palette colors responsible for the brushes used in the controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `MaterialPalette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `MaterialPalette.Palette.AccentNormalColor` sets the color for `telerik:MaterialResource ResourceKey=AccentNormalBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-material-theme-0}}
+	MaterialPalette.Palette.AccentNormalColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Theme Variation
 
 Since the __R2 2021__ release of the __UI for WPF__ suite the Material theme offers two color variations. Both variations correspond to the [Material Design color palettes](https://material.io/design/color/the-color-system.html#tools-for-picking-colors). The `Light` variation is the default one and is based on the Indigo and Amber colors, and the `Dark` - based on the Indigo and Cyan colors. The following example demonstrates the ability to switch between the supported Light and Dark color palettes by calling the `LoadPreset` method as shown below:
 
@@ -289,9 +303,9 @@ __Material theme color variations__
 
 >important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when working with it.
 
-## Font Family and Font Size
+## Changing Font Properties
 
-When using the `Material theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
+When using the `Material` theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __14__ and can be modified through the `MaterialPalette.Palette.FontSize` property. 
 
@@ -302,7 +316,7 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 __Example 2__ shows the default font sizes and families.
 
 #### __[C#] Default FontSize and FontFamily properties:__
-{{region styling-appearance-material-theme-2}}
+{{region cs-styling-appearance-material-theme-2}}
 	MaterialPalette.Palette.FontSizeS = 12;
 	MaterialPalette.Palette.FontSize = 14;
 	MaterialPalette.Palette.FontSizeL = 18;
@@ -310,14 +324,14 @@ __Example 2__ shows the default font sizes and families.
 {{endregion}}
 
 #### __[XAML] Example view definition__
-{{region styling-appearance-material-theme-3}}
+{{region xaml-styling-appearance-material-theme-0}}
 	<telerik:RadCalendar HorizontalAlignment="Center" />
 	<telerik:RadButton Content="Change Font" Click="OnButtonChangeFontSizeClick" 
 		     HorizontalAlignment="Center" VerticalAlignment="Center"/>
 {{endregion}}
 	
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region styling-appearance-material-theme-4}}
+{{region cs-styling-appearance-material-theme-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		MaterialPalette.Palette.FontSize = 12;
@@ -329,23 +343,23 @@ __Setting FontSize and FontFamily__
 
 ![font changed](images/MaterialThemeFontChange.png)	
 
-## Glyphs
+## Using Glyphs
 
 The Material Theme uses and supports the same approach for adding icons and icon-like images introduced with the `Office2016 Theme`. Instead of images or paths we are using a font of glyphs by default. The `TelerikWebUI` font provides over 400 scalable vector glyphs that are available for use to our clients.
 
 > You can read more about the usage and range of the new glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-overview%}).
 
 #### __[XAML] Adding the ResourceDictionary with the glyphs__
-{{region styling-appearance-material-theme-5}}
+{{region xaml-styling-appearance-material-theme-1}}
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
 {{endregion}}
  
-## Set Corner Radius
+## Changing Corner Radius
 
 The Material Theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __2__. 
 
 #### __[C#] Default corner radius values__
-{{region styling-appearance-material-theme-6}}
+{{region cs-styling-appearance-material-theme-4}}
 	  MaterialPalette.Palette.CornerRadius = new CornerRadius(2);
       MaterialPalette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
       MaterialPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
@@ -354,7 +368,7 @@ The Material Theme exposes an easy way to modify the corner radius of many eleme
 {{endregion}}
 
 #### __[C#] Changing the default corner radius__
-{{region styling-appearance-material-theme-7}}
+{{region cs-styling-appearance-material-theme-5}}
 	MaterialPalette.Palette.CornerRadius = new CornerRadius(10); 	
 {{endregion}}
 
@@ -362,40 +376,40 @@ __Appearance of a RadButton control after changing the default corner radius__
 
 ![corner radius](images/materialtheme-corner-radius.png)	
 
-## Material Assist
+### Material Assist
 
-The `Material Assist` static class exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. Below is a list of the dependency properties which can be set directly in XAML:
+The `MaterialAssist` static class comes from the Material theme and it is reused in the Fluent theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template. You can use the following dependency properties directly in XAML:
 
-* `CheckedBrush`&mdash;Sets the value of the background Brush applied when the element is in Checked state. It will have effect when used on elements that expose a "checked" state(ToggleButton, RadListBoxItem, etc.)  
-* `FocusBrush`&mdash;Sets the value of the background Brush applied when the element is focused.
-* `IsShadowDisabled`&mdash;The property is used to control the visibility of the shadow effect.
-* `MouseOverBrush`&mdash;Sets the value of the background Brush applied when the mouse is over the control. 
-* `PressedBrush`&mdash;Sets the value of the background Brush applied when the control is pressed.
 * `ShadowDepth`&mdash;Enum property that indicates the depth of the shadow effect over the control. There are 5 values that can be selected.
-* `CornerRadius`&mdash;Used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.).
+* `IsShadowDisabled`&mdash;The property is used to control the visibility of the shadow effect.
 
-The following examples show a `RadToggleButton` control with modified brushes for its different states through the `MaterialAssist` class:
+### Theme Helper
 
-#### __[XAML] Declare the namespace for the Material components__
-{{region styling-appearance-material-theme-8}}
+The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the Windows11 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
+
+The following examples show a `RadToggleButton` control with modified brushes for its different states through the above helper classes:
+
+#### __[XAML] Declare the namespace for the helpers__
+{{region xaml-styling-appearance-material-theme-2}}
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
+	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 {{endregion}}
 
-#### __[XAML] Set RadToggleButton's visual appearance through the MaterialAssist class__
-{{region styling-appearance-material-theme-9}}
+#### __[XAML] Set RadToggleButton's visual appearance through the helpers__
+{{region xaml-styling-appearance-material-theme-3}}
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
-                               mat:MaterialAssist.MouseOverBrush="{telerik:MaterialResource ResourceKey=AccentHoverBrush}"
-                               mat:MaterialAssist.PressedBrush="{telerik:MaterialResource ResourceKey=AccentPressedBrush}"
-							   mat:MaterialAssist.CheckedBrush="{telerik:MaterialResource ResourceKey=ValidationBrush}" 
-							   mat:MaterialAssist.FocusBrush="{telerik:MaterialResource ResourceKey=PrimaryNormalBrush}"/>
+                               helpers:ThemeHelper.MouseOverBrush="{telerik:MaterialResource ResourceKey=AccentHoverBrush}"
+                               helpers:ThemeHelper.PressedBrush="{telerik:MaterialResource ResourceKey=AccentPressedBrush}"
+							   helpers:ThemeHelper.CheckedBrush="{telerik:MaterialResource ResourceKey=ValidationBrush}" 
+							   helpers:ThemeHelper.FocusBrush="{telerik:MaterialResource ResourceKey=PrimaryNormalBrush}"/>
 {{endregion}}
 
 __Appearance of the RadToggleButton in the different states__
 
 ![pressed brush](images/materialtheme-pressed-brush.png)![mouseover brush](images/materialtheme-mouseover-brush.png)![checked brush](images/materialtheme-checked-brush.png) ![focusedbrush](images/materialtheme-modifiedfocused-brush.png)
 
-## Shadow 
+### Shadow 
 
 The `Shadow` is one of the newly introduced elements designed specifically for the needs of the Material Theme. It is used to add a shadow effect around another control or element.
 
@@ -404,7 +418,7 @@ The `Shadow` is one of the newly introduced elements designed specifically for t
 If you would like to use it separately in your application, you should work with its Width/Height properties so that it appears around the desired element as shown in the following example.
 
 #### __[XAML] Using a Shadow component separately__
-{{region styling-appearance-material-theme-10}}
+{{region xaml-styling-appearance-material-theme-4}}
 	 <Grid>
                 <mat:Shadow Background="White" Width="150" Height="30" ShadowDepth="Depth5"/>
                 <TextBlock Text="Some Text"
@@ -436,7 +450,7 @@ __Ripple effect on RadDropDownButton__
 ![ripple effect](images/RadDropDownButton.gif)
 
 #### __[XAML] Declaration of the Button element with a glyph as text__
-{{region styling-appearance-material-theme-11}}
+{{region xaml-styling-appearance-material-theme-5}}
 		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
                 <TextBlock FontFamily="{StaticResource TelerikWebUI}"
                            FontSize="32" FontWeight="Normal" FontStyle="Normal"
@@ -445,7 +459,7 @@ __Ripple effect on RadDropDownButton__
 {{endregion}}
   					
 #### __[XAML] Button's Style declaration__
-{{region styling-appearance-material-theme-12}}
+{{region xaml-styling-appearance-material-theme-6}}
 	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FF2196F3" />
             <Setter Property="Foreground" Value="{telerik:MaterialResource ResourceKey=MarkerInvertedBrush}" />
@@ -483,12 +497,12 @@ __Material Control used within a custom template applied to a Button__
 
 ![custom button](images/custombtngif.gif)
 
-> Note that the `MaterialAssist.MouseOverBrush` and `MaterialAssist.PressedBrush` properties, which are responsible for the mouse over and pressed animations, are automatically bound to the templated parent.
+> Note that for this button the `MouseOverBrush` and the `PressedBrush` properties from the above listed helpers are modified. They are are responsible for the mouse over and pressed animations and are automatically bound to the templated parent.
 
 It is possible to disable the ripple effect of the MaterialControl through a style. The following example demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
 
 #### __[XAML] Disabling the Ripple effect__
-{{region styling-appearance-material-theme-13}}
+{{region xaml-styling-appearance-material-theme-7}}
 	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
         <Style TargetType="mat:MaterialControl" BasedOn="{StaticResource MaterialControlStyle}" > 
         -->
@@ -503,13 +517,13 @@ It is possible to disable the ripple effect of the MaterialControl through a sty
 If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the `MaterialPalette`. The default values are __0.26__ and __1__ respectively. 
 
 #### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-material-theme-14}}
+{{region cs-styling-appearance-material-theme-8}}
 	MaterialPalette.Palette.DisabledOpacity = 0.5;
 	MaterialPalette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
 	
 #### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-material-theme-15}}
+{{region vb-styling-appearance-material-theme-0}}
 	MaterialPalette.Palette.DisabledOpacity = 0.5
 	MaterialPalette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
@@ -519,7 +533,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 When modifying fonts, colors, or other resources from the `MaterialPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-material-theme-16}}
+{{region xaml-styling-appearance-material-theme-8}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

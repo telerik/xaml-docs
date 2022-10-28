@@ -1,6 +1,6 @@
 ---
 title: Settings
-page_title: WPF Barcode Documentation | Data Matrix Settings
+page_title: WPF Barcode Documentation - Data Matrix Settings
 description: Check our &quot;Settings&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 published: True

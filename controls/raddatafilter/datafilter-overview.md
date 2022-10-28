@@ -11,9 +11,6 @@ CTAControlName: RadDataFilter
 
 # Overview
 
-
-## {% if site.site_name == 'Silverlight' %}![](images/RadDataFilter_SL.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadDataFilter_WPF.png){% endif %}
-
 Thank you for choosing __RadDataFilter__!        
 
 Build complex filter expressions in a breeze with Telerik __DataFilter__. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.

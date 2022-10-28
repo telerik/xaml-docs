@@ -10,8 +10,6 @@ CTAControlName: RadAutoSuggestBox
 
 # Overview
 
-![RadAutoSuggestBox](images/radautosuggestbox-overview-0.png)
-
 __RadAutoSuggestBox__ is a text control that makes suggestions to the users as they type text in. When the text updates an event is fired where you can load suggestions into the drop down of the control.
 
 {% if site.has_cta_panels == true %}

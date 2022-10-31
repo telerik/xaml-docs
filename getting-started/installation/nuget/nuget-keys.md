@@ -2,11 +2,10 @@
 title: Restoring NuGet Packages in CI
 page_title: Restoring NuGet Packages in CI
 description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore WPF packages in your CI or desktop environment."
-slug: installation-nuget-keys-wpf
-tags: restoring,ui,for,wpf,from,a,nuget,package,ci
+slug: nuget-keys
+tags: restore,nuget,keys,packages,ci
 published: True
-position: 5
-site_name: WPF
+position: 3
 ---
 
 # Restoring NuGet Packages in Your CI Workflow
@@ -69,7 +68,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
     #### __[XML]__
-    {{region installation-nuget-keys-wpf-0}}
+    {{region installation-nuget-keys-0}}
         <configuration>
             <packageSources>
                 <clear/>
@@ -78,8 +77,8 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
             </packageSources>
             <packageSourceCredentials>
                 <MyTelerikFeed>
-                <add key="Username" value="api-key" />
-                <add key="ClearTextPassword" value="%MY_API_KEY%" />
+					<add key="Username" value="api-key" />
+					<add key="ClearTextPassword" value="%MY_API_KEY%" />
                 </MyTelerikFeed>
             </packageSourceCredentials>
             ...
@@ -97,8 +96,8 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 * To set the credentials in Azure DevOps:
 
     __Powershell__  
-        
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text	
+		
+		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text    
 
 * To set the credentials in GitHub Actions:
 
@@ -114,11 +113,7 @@ If you just start using the Telerik NuGet server in your CI or inter-department 
 
 * [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
 
-## See Also
-
+## See Also  
  * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
-
- * [Installing UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
-
- * [Installing UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
-
+ * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi-wpf%})
+ * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip-wpf%})

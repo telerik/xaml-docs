@@ -109,12 +109,3 @@ You can install and test the [Latest Internal Build]({%slug installation-install
 When you set up the package source and place the NuGet files there, you can find them in the NuGet Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 
 ![](images/Common_InstallingFromNuGet_10_wpf.png)
-	
-	
-
-
-
-
-
-
-

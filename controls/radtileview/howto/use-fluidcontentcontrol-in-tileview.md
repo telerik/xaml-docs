@@ -455,5 +455,3 @@ Populate the __RadTileView ItemsSource__ collection using the __MyViewModel.Gene
 	</Grid>
 	</Window>
 {{endregion}}
-
-You can find a project demonstrating the described approach [here]({%slug radtileview-howto-use-fluidcontentcontrol-in-tileview%}).

@@ -1,5 +1,5 @@
 ---
-title: Use RadFluidContentControl in RadTileView
+title: Use RadFluidContentControl with MVVM
 page_title: Use RadFluidContentControl in RadTileView
 description: Check our &quot;Use RadFluidContentControl in RadTileView&quot; documentation article for the RadTileView {{ site.framework_name }} control.
 slug: radtileview-howto-use-fluidcontentcontrol-in-tileview

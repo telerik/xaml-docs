@@ -42,11 +42,11 @@ RadImageEditor is a complex control with numerous strings for localization. In o
 
 The three files should keep the same resource keys, whereas the values must be the translated ones.        
 
->tipIt is easiest to copy the default __RadImageEditorResources.resx__ file and rename it. Afterwards, go through all string and change only the values for the strings that will be used in your application.          
+>tip It is easiest to copy the default __RadImageEditorResources.resx__ file and rename it. Afterwards, go through all string and change only the values for the strings that will be used in your application.          
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
-#### __[C#] Example 1: Create LocalizationManager__  
+#### __[C#] Create LocalizationManager__  
 {{region cs-radimageeditor-localization_0}}
 	LocalizationManager.Manager = new LocalizationManager()
 	{
@@ -60,7 +60,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
-#### __[C#] Example 2: Create custom LocalizationManager__  
+#### __[C#] Create custom LocalizationManager__  
 {{region cs-radimageeditor-localization_1}}
 	LocalizationManager.Manager = new CustomLocalizationManager();
 {{endregion}}
@@ -69,7 +69,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 What is left in order to fulfill the localization, is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the two SpellCheckingDialogs:        
 
-#### __[C#] Example 3: Localize strings__  
+#### __[C#] Localize strings__  
 {{region cs-radimageeditor-localization_2}}
 	public class CustomLocalizationManager : LocalizationManager
 	{
@@ -104,7 +104,7 @@ What is left in order to fulfill the localization, is to override the method __G
 
 Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files.        
 
-#### __[C#] Example 4: Localization using resource files__  
+#### __[C#] Localization using resource files__  
 {{region cs-radimageeditor-localization_3}}
 	public override string GetStringOverride(string key)
 	{

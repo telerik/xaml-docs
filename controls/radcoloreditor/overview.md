@@ -11,9 +11,6 @@ CTAControlName: RadColorEditor
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![coloreditor-sl-icon](images/coloreditor-sl-icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![coloreditor-wpf-icon](images/coloreditor-wpf-icon.png){% endif %}
-
 Thank you for choosing Telerik's __RadColorEditor__ control! 
 
 __RadColorEditor__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} is a lightweight UI component that allows users to select a color from a custom palette of colors.

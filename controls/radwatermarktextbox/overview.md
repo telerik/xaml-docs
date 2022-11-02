@@ -11,8 +11,6 @@ CTAControlName: RadWatermarkTextBox
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![radwatermarktextbox SL](images/radwatermarktextbox_SL.png){% endif %}{% if site.site_name == 'WPF' %}![radwatermarktextbox WPF](images/radwatermarktextbox_WPF.png){% endif %}
-
 __RadWatermarkTextBox__ control represents a TextBox that allows you to define a placeholder to be displayed when the content is empty and the control is not focused. This is useful when you want to display additional information when having an empty text input control.
 
 {% if site.has_cta_panels == true %}

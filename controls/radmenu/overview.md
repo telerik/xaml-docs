@@ -11,13 +11,6 @@ CTAControlName: RadMenu
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/RadMenu_Overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![](images/RadMenu_Overview_01_WPF.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadMenu__!        
 
 Telerik __RadMenu__ for {{ site.framework_name }} provides the power to build the entire navigation of your web application. Combining the ability to display hierarchical views and the advanced styling mechanism, RadMenu lets you build even the most complicated site-menu systems. The control provides a number of advanced features like hierarchical data binding, different opening modes, integration with commands and different type of items, as well as full layout and appearance customization capabilities.  

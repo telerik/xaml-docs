@@ -11,12 +11,6 @@ CTAControlName: RadSpellChecker
 
 # Overview
 
-
-
-## 
-
-{% if site.site_name == 'Silverlight' %}![](images/RadSpellChecker_Overview_sl.png){% endif %}{% if site.site_name == 'WPF' %}![](images/RadSpellChecker_Overview_wpf.png){% endif %}
-
 Thank you for choosing Telerik __RadSpellChecker__!
 
 __RadSpellChecker__ provides you with the ability to spell check different types of controls. By default (included in Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}) you can use it with TextBox, RichTextBox, RadRichTextBox, RadGridView and DataGrid.

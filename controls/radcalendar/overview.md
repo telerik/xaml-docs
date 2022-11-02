@@ -12,13 +12,6 @@ CTAControlName: RadCalendar
 # Overview
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RadCalendar_Logo.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![](images/RadCalendar_Logo_WPF.png)
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
 RadCalendar is a fully featured data-input control providing the ability to display different views such as months, years, decades, centuries, multiple months view, etc. Additionally, you can select several dates at a time and define selection ranges.
 {% endif %}
 {% if site.site_name == 'WPF' %}

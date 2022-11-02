@@ -11,12 +11,6 @@ CTAControlName: RadDataPager
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/RadDataPager_SL.png)
-{% else %}
-![](images/RadDataPager_WPF.png)
-{% endif %}
-
 Telerik DataPager provides the user with a navigation interface to page through any collection of data. The control provides paged data source to any data-bound controls. RadDataPager is extremely helpful when working with large collections of data.
 
 {% if site.has_cta_panels == true %}

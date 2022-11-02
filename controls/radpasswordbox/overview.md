@@ -11,8 +11,6 @@ CTAControlName: RadPasswordBox
 
 # Overview
 
-![RadPasswordBox Overview](images/RadPasswordBox_Overview_0.png)
-
 Thank you for choosing Telerik __RadPasswordBox__!
 
 __RadPasswordBox__ is a control used for easily entering and handling passwords. It is essential to use this control whenever a user is prompted to enter a password.

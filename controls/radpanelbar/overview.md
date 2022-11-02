@@ -11,9 +11,6 @@ CTAControlName: RadPanelBar
 
 # Overview
 
-{% if site.site_name == 'WPF' %}![RadPanelBar for WPF icon](images/panelbar_wpf_icon.png){% endif %}
-{% if site.site_name == 'Silverlight' %}![RadPanelBar for Silverlight icon](images/panelbar_sl_icon.png){% endif %}
-
 Thank you for choosing Telerik __RadPanelBar__!  
 
 __RadPanelBar__ is a versatile component allowing you to build different navigation systems such as left/right side menus and Outlook style panels. The templating mechanism of the control provides the ability to customize it so that it can represent a site navigation system.

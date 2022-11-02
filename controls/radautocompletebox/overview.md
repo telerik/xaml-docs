@@ -11,14 +11,6 @@ CTAControlName: RadAutoCompleteBox
 
 # Overview
 
-{% if site.site_name == 'WPF' %}
-![RadAutoCompleteBox for WPF](images/radautocompletebox-overview-WPF.png)
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
-![RadAutoCompleteBox for SL](images/radautocompletebox-overview-SL.png)
-{% endif %}
-
 Thank you for choosing Progress® Telerik® __RadAutoCompleteBox__!
 
 __RadAutoCompleteBox__ is a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control that provides a textbox for the user's input and suggests possible matches based on that input. The control has a number of advanced features such as support for different autocomplete modes, keyboard navigation, virtualization for working with thousands of items in its ItemsSource, as well as full customization capabilities.

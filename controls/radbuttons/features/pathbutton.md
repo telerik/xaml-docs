@@ -94,11 +94,11 @@ In addition to all customizing options that are inherited from the __RadButton__
 #### __[XAML] Example 5: Setting the content position in XAML__
 {{region xaml-radbuttons-features-path-button-10}}
 	<telerik:RadPathButton.PathStyle>
-			<Style TargetType="Path">
-				<Setter Property="Fill" Value="Red" />
-				<Setter Property="Stretch" Value="Fill" />
-			</Style>
-		</telerik:RadPathButton.PathStyle>
+		<Style TargetType="Path">
+			<Setter Property="Fill" Value="Red" />
+			<Setter Property="Stretch" Value="Fill" />
+		</Style>
+	</telerik:RadPathButton.PathStyle>
 {{endregion}}
 
 #### __Figure 4: RadPathButton with custom PathStyle__
@@ -116,7 +116,8 @@ With the **R1 2021 SP** release you can now more intuitively place the path elem
 {{region xaml-radbuttons-features-path-button-12}}
 	<telerik:RadPathButton.PathStyle>
 			<Style TargetType="Path">
-				<Setter Property="Stretch" Value="None" />                            <Setter Property="HorizontalAlignment" Value="Right" />
+				<Setter Property="Stretch" Value="None" />                            
+				<Setter Property="HorizontalAlignment" Value="Right" />
 				<Setter Property="VerticalAlignment" Value="Bottom" />
 			</Style>
 		</telerik:RadPathButton.PathStyle>

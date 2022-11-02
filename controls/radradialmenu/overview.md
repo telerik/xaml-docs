@@ -11,12 +11,6 @@ CTAControlName: RadRadialMenu
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![Rad Radial Menu Overview 01](images/RadRadialMenu_Overview_01.png)
-{% endif %}{% if site.site_name == 'WPF' %}
-![Rad Radial Menu Overview 02](images/RadRadialMenu_Overview_02.png)
-{% endif %}
-
 Thank you for choosing Telerik __RadRadialMenu__!
 
 __RadRadialMenu__ is a circular menu that comes with support for selection, commands, events and many customization options. Using __RadRadialMenu__ the end-user can drill-down into different levels of items that provide variety of options to choose from.

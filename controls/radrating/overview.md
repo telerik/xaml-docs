@@ -11,9 +11,6 @@ CTAControlName: RadRating
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![rating sl icon](images/rating_sl_icon.png){% endif %}
-{% if site.site_name == 'WPF' %}![rating wpf icon](images/rating_wpf_icon.png){% endif %}
-
 Thank you for choosing Telerik __RadRating__!	
 
 __RadRating__ is a flexible UI component that allows users to intuitively rate by selecting number of items [stars] from a predefined number of items.		

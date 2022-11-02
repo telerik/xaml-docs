@@ -61,7 +61,7 @@ Below you could find a list of the available files:
 
 >Check [Setting a theme]({%slug styling-apperance-implicit-styles-overview%}) topic for more information on the Xaml and NoXaml binaries.
 
->tip Check [Installing UI from a Nuget package]({%slug installation-installing-from-nuget-wpf%}) for more details on using the provided packages.
+>tip Check [Installing UI from a Nuget package]({%slug nuget-installation%}) for more details on using the provided packages.
 
 ### Documentation
 
@@ -106,4 +106,4 @@ From the __Versions__ dropdown you can select an older version to download:
 
  * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 
- * [Installing Telerik UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%})
+ * [Installing Telerik UI for WPF from a NuGet package]({%slug nuget-installation%})

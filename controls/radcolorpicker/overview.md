@@ -11,8 +11,6 @@ CTAControlName: AutoComplete
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![colorpicker sl icon](images/colorpicker_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![colorpicker wpf icon](images/colorpicker_wpf_icon.png){% endif %}
-
 Thank you for choosing __RadColorPicker!__
 
 {% if site.site_name == 'Silverlight' %}![Color PickerSL](images/ColorPickerSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color PickerWPF](images/ColorPickerWPF.png){% endif %}

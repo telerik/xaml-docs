@@ -5,15 +5,12 @@ description: Check our &quot;Localization&quot; documentation article for the Ra
 slug: radimageeditor-localization
 tags: localization
 published: True
-position: 8
+position: 6
 ---
 
 # Localization
 
-
-
-The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadImageEditor__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information on the localization of the Telerik UI suite [here]({%slug common-localization%}).
-      
+The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadImageEditor__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information on the localization of the Telerik UI suite [here]({%slug common-localization%}).      
 
 There are two ways to implement the localization - using Resource files or a custom localization manager.
 
@@ -33,32 +30,23 @@ More information on how to achieve this you can find in the [Localization Using 
 
 ## Localization Using Resource Files
 
-You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .Resx file for each one of the languages that your application will support. Imagine that you want to translate your application into English, German and Dutch. In that regard, you will have to add three new resource files to your project:
-        
+You can base your localization on the standard resource files provided by the .NET framework. For that purpose you will have to create a separate .Resx file for each one of the languages that your application will support. Imagine that you want to translate your application into English, German and Dutch. In that regard, you will have to add three new resource files to your project:        
 
-* RadImageEditorResources.resx - this resource file will store the English (default) resources for the image editor control. Set the __AccessModifier__ property to __Public__.
-            
+* RadImageEditorResources.resx - this resource file will store the English (default) resources for the image editor control. Set the __AccessModifier__ property to __Public__.            
 
-* RadImageEditorResources.de.resx - this resource file will store the German resources for the image editor control. Set the __AccessModifier__ property to __No code generation__.
-            
+* RadImageEditorResources.de.resx - this resource file will store the German resources for the image editor control. Set the __AccessModifier__ property to __No code generation__.            
 
 * RadImageEditorResources.nl.resx - this resource file will store the Dutch resources for the image editor control. Set the __AccessModifier__ property to __No code generation__.
             
+RadImageEditor is a complex control with numerous strings for localization. In order to be able to distinguish these resources, a unique identifier, called resource key is assigned to each localizable string. A resource file which includes the complete list of the RadImageEditor-related __Resource Keys__ along with the strings they are associated with by default can be downloaded at our SDK repository: [Localization](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization).        
 
-RadImageEditor is a complex control with numerous strings for localization. In order to be able to distinguish these resources, a unique identifier, called resource key is assigned to each localizable string. A resource file which includes the complete list of the RadImageEditor-related __Resource Keys__ along with the strings they are associated with by default can be downloaded at our SDK repository: [Localization](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization).
-        
+The three files should keep the same resource keys, whereas the values must be the translated ones.        
 
-The three files should keep the same resource keys, whereas the values must be the translated ones.
-        
+>tip It is easiest to copy the default __RadImageEditorResources.resx__ file and rename it. Afterwards, go through all string and change only the values for the strings that will be used in your application.          
 
->tipIt is easiest to copy the default __RadImageEditorResources.resx__ file and rename it. Afterwards, go through all string and change only the values for the strings that will be used in your application.
-          
+The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
-The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
-        
-
-#### __[C#] Example 1: Create LocalizationManager__
-
+#### __[C#] Create LocalizationManager__  
 {{region cs-radimageeditor-localization_0}}
 	LocalizationManager.Manager = new LocalizationManager()
 	{
@@ -66,31 +54,22 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	};
 {{endregion}}
 
-
-
->tipYou can download a runnable project of the previous example from our online SDK repository: [Localization](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization).
-          
+>tip You can download a runnable project of the previous example from our online SDK repository: [Localization](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization).          
 
 ## Localization Using Custom Localization Manager
 
-__Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.
-        
+__Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
-#### __[C#] Example 2: Create custom LocalizationManager__
-
+#### __[C#] Create custom LocalizationManager__  
 {{region cs-radimageeditor-localization_1}}
 	LocalizationManager.Manager = new CustomLocalizationManager();
 {{endregion}}
 
-
-
 >Note that if you set the localization manager after the creation of the UI, some parts might remain not-localized.
 
-What is left in order to fulfill the localization, is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the two SpellCheckingDialogs:
-        
+What is left in order to fulfill the localization, is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the two SpellCheckingDialogs:        
 
-#### __[C#] Example 3: Localize strings__
-
+#### __[C#] Localize strings__  
 {{region cs-radimageeditor-localization_2}}
 	public class CustomLocalizationManager : LocalizationManager
 	{
@@ -123,13 +102,9 @@ What is left in order to fulfill the localization, is to override the method __G
 	}
 {{endregion}}
 
+Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files.        
 
-
-Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files.
-        
-
-#### __[C#] Example 4: Localization using resource files__
-
+#### __[C#] Localization using resource files__  
 {{region cs-radimageeditor-localization_3}}
 	public override string GetStringOverride(string key)
 	{
@@ -144,9 +119,6 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	}
 {{endregion}}
 
-
-
-## See Also
-
+## See Also  
 * [Localization SDK Example](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization)
 * [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%})

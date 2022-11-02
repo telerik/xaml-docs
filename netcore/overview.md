@@ -48,7 +48,7 @@ To work with the Telerik `.NET 6` DLLs you will need to have the following insta
 
 ## .NET 7 Requirements
 
-To work with the Telerik `.NET 7 Preview` DLLs you will need to have the following installed.
+To work with the Telerik `.NET 7` DLLs you will need to have the following installed.
 
 * The latest [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
 

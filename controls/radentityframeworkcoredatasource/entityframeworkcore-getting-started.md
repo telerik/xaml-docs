@@ -29,9 +29,15 @@ Before we get started, we will add the following NuGet packages.
 * __Microsoft.EntityFrameworkCore.SqlServer__
 * __Microsoft.EntityFrameworkCore.Tools__
 
+	The required __Microsoft.EntityFrameworkCore__ version varies based on the target .NET version of the Telerik dlls.
+	
+	* __.NET Core__&mdash;EFCore version __3.1.5__
+	* __.NET 6__&mdash;EFCore version __6.0.9__
+	* __.NET 7__&mdash;EFCore version __7.0.0__
+	
 	#### __Figure 2: NuGet Packages__
 	![NuGet Packages](images/entityframeworkcoredatasource-nugets.png)
-
+	
 We will also add the needed Telerik references.
 
 * __Telerik.Windows.Controls__

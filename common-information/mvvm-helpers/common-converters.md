@@ -10,12 +10,12 @@ position: 2
 
 # Converters
 
-The Telerik suite provides a set of built-in __IValueConverters__ which can be used to perform conversion between different types.
+The Telerik suite provides a set of built-in `IValueConverters` which can be used to perform conversion between different types.
 
 The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 
-#### __[XAML] Example 1: Specifying converters in XAML__
-{{region xaml-common-converters_0}}
+#### __[XAML] Specifying converters in XAML__
+{{region common-converters-0}}
 	<FrameworkElement>
 	  <FrameworkElement.Resources>
 		  <telerik:BooleanToOpacityConverter x:Key="BooleanToOpacityConverter"/>
@@ -23,6 +23,7 @@ The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 		  <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 		  <telerik:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter"/>
 		  <telerik:VisibilityToBooleanConverter x:Key="VisibilityToBooleanConverter"/>
+		  <telerik:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
 		  <telerik:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter"/>
 		  <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
 		  <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
@@ -49,31 +50,48 @@ This converter converts __Boolean__ values to 1 or 0 opacity. If the __Boolean__
 
 ## BooleanToVisibilityConverter
 
-This converter converts __Boolean__ values to __Visibility__ enumeration values. If the __Boolean__ value is __false__ the __Convert()__ method will return __Visibility.Collapsed__.
+This converter converts __Boolean__ values to __Visibility__ enumeration values. If the __Boolean__ value is __false__ the `Convert()` method will return __Visibility.Collapsed__.
 
 ## InvertedBooleanToVisibilityConverter
 
-This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the __Convert()__ method will return __Visibility.Collapsed__.
+This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the `Convert()` method will return __Visibility.Collapsed__.
 
 ## VisibilityToBooleanConverter
 
-This converter converts values from the __Visibility__ enumeration to __Boolean__ values. The __Convert()__ method returns __true__ if the passed value is __Visibility.Visible__ and __false__ otherwise.
+This converter converts values from the __Visibility__ enumeration to __Boolean__ values. The `Convert()` method returns __true__ if the passed value is __Visibility.Visible__ and __false__ otherwise.
 
-To invert the results of the converter, set the __IsInverted__ property. This way, __Visibility.Visible__ will be converted to __false__ and __Visibility.Collapsed__ to __true__.
+To invert the results of the converter, set the `IsInverted` property. This way, __Visibility.Visible__ will be converted to __false__ and __Visibility.Collapsed__ to __true__.
 
-#### __[C#] Example 2: Setting the view model__
-{{region xaml-common-converters_1}}
+#### __[C#] Setting the IsInverted property__
+{{region common-converters-1}}
 	<FrameworkElement.Resources>
 		<telerik:VisibilityToBooleanConverter x:Key="InvertedVisibilityToBooleanConverter" IsInverted="True"/>
 	</FrameworkElement.Resources>
 {{endregion}}
 
+## EnumToBooleanConverter
+
+The `EnumToBooleanConverter` converts an __Enum__ to a __Boolean__ value. The `Convert()` method return __true__ if the provided value matches the __Enum__ value that is provided in the `CommandParameter` property. If the values do not match, the method will return __false__.
+
+#### __[C#] Setting the view model__
+{{region common-converters-2}}
+	public class MainViewModel
+	{
+    	public Visibility Visibility { get; set; }
+	}
+{{endregion}}
+
+#### __[XAML] Setting the converter to the IsChecked property__
+{{region common-converters-3}}
+	<CheckBox IsChecked="{Binding Visibility, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Visible}"/>
+{{endregion}}
+
 ## EnumToVisibilityConverter
 
-Converts an __Enum__ value to __Visibility__ enumeration values. If the enum value is one of the values specified in the converter parameter, the __Convert()__ method will return __Visibility.Visible__, otherwise it will return __Visibility.Collapsed__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.
+Converts an __Enum__ value to __Visibility__ enumeration values. If the enum value is one of the values specified in the converter parameter, the `Convert()` method will return __Visibility.Visible__, otherwise it will return __Visibility.Collapsed__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.
 
-#### __[C#] Example 3: Setting the view model__
-{{region cs-common-converters_2}}
+#### __[C#] Setting the view model__
+{{region common-converters-4}}
 	public class MainViewModel
 	{
 		public Gender Gender { get; set; }
@@ -86,8 +104,8 @@ Converts an __Enum__ value to __Visibility__ enumeration values. If the enum val
 	}
 {{endregion}}
 
-#### __[XAML] Example 4: Setting the converter to the Visibility property__
-	{{region xaml-common-converters_3}}
+#### __[XAML] Setting the converter to the Visibility property__
+	{{region common-converters-5}}
 		<telerik:RadRadioButton Visibility="{Binding MyGender, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Male}"/>
 	{{endregion}}
 
@@ -119,16 +137,16 @@ The converter converts __byte array__ to __System.Windows.Media.Imaging.BitmapIm
 
 The converter converts __numeric__ value to __Thickness__ based on the parameter.
 
-#### __[C#] Example 5: Setting the view model__
-{{region cs-common-converters_4}}
+#### __[C#] Setting the view model__
+{{region common-converters-6}}
 	public class MainViewModel
 	{
 		public double Thickness { get; set; }
 	}
 {{endregion}}
 
-#### __[XAML] Example 6: Setting the converter to the BorderThickness property__
-{{region xaml-common-converters_5}}
+#### __[XAML] Setting the converter to the BorderThickness property__
+{{region common-converters-7}}
 	 <Border Background="Green" BorderThickness="{Binding Thickness,Converter={StaticResource DoubleToThicknessConverter},ConverterParameter=LeftRight}" BorderBrush="Black"/>
 {{endregion}}
 
@@ -136,8 +154,8 @@ The converter converts __numeric__ value to __Thickness__ based on the parameter
 
 The converter applies opacity to a __Color__ or __Brush__ value based on the parameter.
 
-#### __[C#] Example 7: Setting the view model__
-{{region cs-common-converters_6}}
+#### __[C#] Setting the view model__
+{{region common-converters-8}}
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -148,17 +166,17 @@ The converter applies opacity to a __Color__ or __Brush__ value based on the par
 	}
 {{endregion}}
 
-#### __[XAML] Example 8: Setting the converter to the Background property__
-{{region xaml-common-converters_7}}
+#### __[XAML] Setting the converter to the Background property__
+{{region common-converters-9}}
 	<Border Background="{Binding Color, Converter={StaticResource OpacityConverter},ConverterParameter=8}"  />
 {{endregion}}
 
 ## ThicknessToOrientedThicknessConverter
 
-The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
+The converter applies __Thickness__ to a property of type `Thickness` based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
 
-#### __[C#] Example 9: Setting the ViewModel__
-	{{region cs-common-converters_8}}
+#### __[C#] Setting the ViewModel__
+	{{region common-converters-10}}
 		public class MainWindow
 		{
 			 public MainWindow()
@@ -172,8 +190,8 @@ The converter applies __Thickness__ to a property of type __Thickness__ based on
 		}
 	{{endregion}}
 
-#### __[XAML] Example 10: Setting the converter to the BorderThickness property__
-	{{region xaml-common-converters_9}}
+#### __[XAML] Setting the converter to the BorderThickness property__
+	{{region common-converters-11}}
 		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
 	{{endregion}}	
 
@@ -184,8 +202,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 
 > See all available glyphs in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
-#### __[C#] Example 11: Setting the view model__
-{{region cs-common-converters_10}}
+#### __[C#] Setting the view model__
+{{region common-converters-12}}
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -196,8 +214,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 	}
 {{endregion}}
 
-#### __[XAML] Example 12: Using the StringToGlyphConverter converter__
-{{region xaml-common-converters_11}}
+#### __[XAML] Using the StringToGlyphConverter converter__
+{{region common-converters-13}}
 	<telerik:RadGlyph Glyph="{Binding GlyphString, Converter={StaticResource StringToGlyphConverter}}" />	
 {{endregion}}
 
@@ -211,7 +229,7 @@ The BrushToColorConverter converts a [SolidColorBrush object](https://docs.micro
 ## ColorToBrushWithOpacityConverter
 
 The ColorToBrushWithOpacityConverter converts a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1) with opacity to 
-[SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1). The opacity need to be pass as a parameter. This converter require the __Value__ parameter to by of type __Color__ and the __Parameter__ to be different from null.
+[SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1). The opacity need to be pass as a parameter. This converter require the __Value__ parameter to be of type `Color` and the __Parameter__ to be different from null.
 
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

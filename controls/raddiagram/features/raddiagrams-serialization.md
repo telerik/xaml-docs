@@ -282,7 +282,7 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 
 For every other property that you need to be part of the Serialization/Deserialization process, you have to use the `RadDiagram.ShapeDeserialized` and `RadDiagram.ShapeSerialized` or `RadDiagram.ConnectionDeserialized` and `RadDiagram.ConnectionSerialized` events. Below is shown how you can serialize the `Opacity` property of the shapes:			
 
-## Manual Serialization/Deserialization
+## Manual Shape Serialization/Deserialization
 
 >If you are using MVVM approach and need to serialize databound properties you can take a look at our [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%}) article.
 
@@ -318,7 +318,7 @@ For every other property that you need to be part of the Serialization/Deseriali
 
 >tip If you decide to manually save one of the [properties](#extending-raddiagram-serialization) automatically saved by the diagram, make sure to give it a custom key (different from the default one used for saving). Also, implement both, the saving and loading logic in the ShapeSerialize and ShapeDeserialized event handlers. For example, if you want to manually save the FontWeight property of a RadDiagramShape, you can use a key different than "FontWeight" in the SerializationInfo (example: "MyFontWeight"). We recommend this as a precaution, because internally the diagram parses the value given in the SerializationInfo and if it doesn't match a specific format an exception will be thrown. 
 
-## Metadata Manual Serialization/Deserialization
+## Serialize/Deserialize RadDiagram Properties
 
 To include additional information in the generated XML when the RadDiagram control is being serialized, you can handle its `MetadataSerialized` event.
 
@@ -358,7 +358,7 @@ To load the serialized property of the RadDiagram control, handle its `MetadataD
     End Sub
 {{endregion}}
 
-## Preserve bindings to the automatically serialized properties
+## Preserve Bindings to the Automatically Serialized Properties
 
 If you have a binding between a RadDiagramItem property that is [automatically serialized](#extending-raddiagram-serialization) and a property from the item’s view model the binding won’t work after the deserialization. This is because the serialization/deserialization logic of the diagram sets those properties locally which has bigger priority than a binding. You can read more about the value setting precedence in the [Dependency Property Value Precedence](https://msdn.microsoft.com/en-us/library/vstudio/ms743230(v=vs.100).aspx) MSDN article.
 

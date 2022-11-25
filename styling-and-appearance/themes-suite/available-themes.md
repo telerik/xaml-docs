@@ -13,6 +13,8 @@ The __UI for {{ site.framework_name }}__ suite comes with a variety of predefine
 
 >You can check the appearance of a specific control in a certain theme by viewing its "Theming" demo in our {% if site.site_name == 'WPF' %}[WPF Controls Examples application](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples application](https://demos.telerik.com/silverlight/){% endif %}.
 
+The table is ordered chronologically, where the first theme in the list is the latest released.
+
 <style>
 table th:first-of-type {
     width: 20%;

@@ -92,7 +92,7 @@ When creating a custom map provider, you can choose one of these sources and ove
 	       public override void Initialize()
 	       {
 	             // Raise provider initialized event.
-	             this.RaiseIntializeCompleted();
+	             this.RaiseInitializeCompleted();
 	       }
 
 	       /// <summary>

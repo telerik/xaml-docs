@@ -22,7 +22,7 @@ The *Today* button is hidden by default. To show it in the [navigation header]({
 {{endregion}}
 
 #### Figure 1: Today button
-![](images/radscheduleview-viewdefinition-set-today-0.png)
+![WPF RadScheduleView Today button](images/radscheduleview-viewdefinition-set-today-0.png)
 
 ## Set Today in Code
 

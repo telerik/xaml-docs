@@ -31,8 +31,7 @@ The following example demonstrates how to set the __StringFormat__ property.
 {{endregion}}
 
 #### __Figure 1: The new StringFormat representation of the TimeSpan__
-
-![](images/RadTimeSpanPicker_Key_Properties_01.png)
+![WPF RadTimeSpanPicker The new StringFormat representation of the TimeSpan](images/RadTimeSpanPicker_Key_Properties_01.png)
 
 >You can find detailed inforamation about the supported formats of the TimeSpan [here](https://msdn.microsoft.com/en-us/library/ee372287%28v=vs.110%29.aspx).
 

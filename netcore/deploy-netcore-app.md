@@ -27,7 +27,7 @@ This article shows how to deploy a WPF .NET Core Application using Visual Studio
 	![](images/netcore-support-deploy-using-visual-studio-1.png)
 	
 #### __Figure 1: Calendar application created with the New Project Wizard__
-![](images/netcore-support-deploy-using-visual-studio-2.png)
+![WPF Calendar application created with the New Project Wizard](images/netcore-support-deploy-using-visual-studio-2.png)
 
 ## Deploy the Application
 

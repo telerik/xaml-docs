@@ -108,7 +108,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 {{endregion}}
 
 #### Figure 1: RadNavigationView with sub items
-![](images/radnavigationview-populating-with-data-hierarchical-databinding-0.png)
+![WPF RadNavigationView RadNavigationView with sub items](images/radnavigationview-populating-with-data-hierarchical-databinding-0.png)
 
 Note that for every business object from the data bound collection, RadNavigationView will generate a RadNavigationViewItem container representing this object.
 

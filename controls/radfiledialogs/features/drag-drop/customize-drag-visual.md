@@ -13,7 +13,7 @@ position: 2
 The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or [extract its template]({%slug styling-apperance-editing-control-templates%}) and modify it.
 
 #### __Figure 1: Default drag visual__
-![](images/filedialogs-drag-drop-customize-drag-visual-0.png)
+![WPF RadFileDialogs Default drag visual](images/filedialogs-drag-drop-customize-drag-visual-0.png)
 
 ## Setting the Drag Visual Appearance
 
@@ -40,7 +40,7 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 You can use the __DragVisualOffset__ property of the FileBrowserDragVisual control to offset it from the mouse cursor position. The previous example (Example 1) shows how to set the property.
 
 #### __Figure 2: Setting the drag visual offset__
-![](images/filedialogs-drag-drop-customize-drag-visual-1.png)
+![WPF RadFileDialogs Setting the drag visual offset](images/filedialogs-drag-drop-customize-drag-visual-1.png)
 
 ## Setting Icon Template
 
@@ -70,7 +70,7 @@ The following example shows how to define a custom template containing an image 
 {{endregion}}
 
 #### __Figure 3: Custom icon template__
-![](images/filedialogs-drag-drop-customize-drag-visual-2.png)
+![WPF RadFileDialogs Custom icon template](images/filedialogs-drag-drop-customize-drag-visual-2.png)
 
 ## Setting Content Template
 
@@ -108,7 +108,7 @@ The following example shows how to define a custom template containing a list of
 {{endregion}}
 
 #### __Figure 4: Custom content template__
-![](images/filedialogs-drag-drop-customize-drag-visual-3.png)
+![WPF RadFileDialogs Custom content template](images/filedialogs-drag-drop-customize-drag-visual-3.png)
 
 ## See Also  
 * [Getting Started]({%slug radfiledialogs-getting-started%})

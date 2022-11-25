@@ -13,7 +13,7 @@ position: 5
 RadCardView supports grouping via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 
 #### Figure 1: RadCardView groups
-![](images/radcardview-features-grouping-0.png)
+![WPF RadCardView RadCardView groups](images/radcardview-features-grouping-0.png)
 
 The control internally works with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. If you set the ItemsSource of the RadCardView that is not a QueryableCollectionView, then the original collection is wrapped in a QueryableCollectionView instance. This way grouping is supported even if you use a more basic IEnumerable implementation, like `List<T>` or `ObservableCollection<T>`.
  
@@ -22,10 +22,10 @@ The control internally works with a [QueryableCollectionView]({%slug consuming-d
 The data items can be grouped by dragging a data field descriptor from the [data field descriptors list]({%slug radcardview-visual-structure%}) to the group panel area.
 
 #### Figure 2: Dragging data field descriptor
-![](images/radcardview-features-grouping-1.png)
+![WPF RadCardView Dragging data field descriptor](images/radcardview-features-grouping-1.png)
 
 #### Figure 3: Grouped RadCardView
-![](images/radcardview-features-grouping-2.png)
+![WPF RadCardView Grouped RadCardView](images/radcardview-features-grouping-2.png)
 
 The RadCardView groups support sorting by clicking onto the associated [group member button]({%slug radcardview-visual-structure%}). To disable this, set the __CanUserSortGroups__ property to __False__.
 

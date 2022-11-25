@@ -34,14 +34,14 @@ The __LayoutControlSplitter__ component allows you to resize the elements in the
 {{endregion}}
 
 #### __Figure 1: LayoutControlSplitter__  
-![](images/layoutcontrol-features-layout-splitter-01.png)
+![WPF RadLayoutControl LayoutControlSplitter](images/layoutcontrol-features-layout-splitter-01.png)
 
 >important The element that will be resized with the splitter is determined by the Orientation of its parent group. When the orientation is Horizontal, the splitter will resize its left sibling element and when Vertical - the top sibling will be resized.
 
 As any other UIElement the __LayoutControlSplitter__ element can be moved around in the layout control when in edit mode.
 
 #### __Figure 2: Dragging the layout splitter while the layout control is in edit mode__  
-![](images/layoutcontrol-features-layout-splitter-02.png)
+![WPF RadLayoutControl Dragging the layout splitter while the layout control is in edit mode](images/layoutcontrol-features-layout-splitter-02.png)
 	
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

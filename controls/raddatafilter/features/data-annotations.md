@@ -90,8 +90,7 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 If you filter a collection of __Person__ objects via the __RadDataFilter__ control, in the DropDown for the Data Members you should see the following:
 
 Figure 1: RadDataFilter displaying all the members to filter on.
-
-![](images/RadDataFilter_Features_DataAnnotations_01.png)
+![WPF RadDataFilter RadDataFilter displaying all the members to filter on.](images/RadDataFilter_Features_DataAnnotations_01.png)
 
 You can customize Members shown in the ComboBox with available members to filter on (PART_SimpleFilterMemberComboBox) by specifying whether a property should be displayed or not via __BrowsableAttribute__.
 

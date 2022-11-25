@@ -306,7 +306,7 @@ To use the custom definition you can create a multidimensional array of CustomHe
 {{endregion}}
 
 #### __Figure 1: HeatMap with 4 million cells__
-![](images/radheatmap-how-to-custom-heatmap-source-0.png)
+![WPF RadHeatMap HeatMap with 4 million cells](images/radheatmap-how-to-custom-heatmap-source-0.png)
 
 > The implementation shown in this example is merely a proof of concept. The main idea of the article is to show you the entry point that you can use in order to create a custom source and use it with the RadHeatMap control.
 <!-- -->

@@ -47,7 +47,7 @@ The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __Is
 {{endregion}}
 
 #### __Figure 1: Result of Example 2__
-![](images/RadComboBox_HowTo_EnableDisableItems_010.png)
+![WPF RadComboBox Result of Example 2](images/RadComboBox_HowTo_EnableDisableItems_010.png)
 
 ## Enable\Disable Items Using ItemContainerStyle
 
@@ -110,7 +110,7 @@ Using __RadComboBox__ with static data is the simplest scenario. However, in mos
 Note that in this case all __RadComboBoxItems__ will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#enabledisable-items-using-itemcontainerstyleselector) the next section to see the solution.
 
 #### __Figure 2: Result of Example 5__
-![](images/RadComboBox_HowTo_EnableDisableItems_020.png)
+![WPF RadComboBox Result of Example 5](images/RadComboBox_HowTo_EnableDisableItems_020.png)
 
 ## Enable\Disable Items Using ItemContainerStyleSelector
 
@@ -160,8 +160,7 @@ The next example demonstrates you how to achieve this.
 {{endregion}}
 
 #### __Figure 3: The result is that every odd item is disabled__
-
-![](images/RadComboBox_HowTo_EnableDisableItems_030.png)
+![WPF RadComboBox The result is that every odd item is disabled](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
 ## Using Style Binding
 

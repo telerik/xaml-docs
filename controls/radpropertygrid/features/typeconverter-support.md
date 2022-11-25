@@ -250,8 +250,7 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 > If __EditorAttribute__ is set to a specific property with a set __TypeConverter__ the __EditorAttribute__ is with lower priority - a default set of values will be visualized if the __GetStandardValuesSupported__ is overridden instead of an editor.
 
 #### __Figure 1: TypeConverter providing a default set of values__
-
-![](images/RadPropertyGrid_TypeConverter_Predefined_List.png)
+![WPF RadPropertyGrid TypeConverter providing a default set of values](images/RadPropertyGrid_TypeConverter_Predefined_List.png)
 {% endif %}
 
 ## Culture-aware TypeConverter

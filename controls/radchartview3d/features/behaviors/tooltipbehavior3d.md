@@ -24,7 +24,7 @@ To enable the tooltip behavior you can add a __Chart3DTooltipBehavior__ object i
 {{endregion}}
 	
 #### __Figure 1: Tooltip__
-![](images/radchartview-3d-behaviors-tooltip-0.png)
+![WPF RadChartView3D Tooltip](images/radchartview-3d-behaviors-tooltip-0.png)
 
 ## Customizing the tooltip
 
@@ -61,7 +61,7 @@ You can use the ToolTipTemplate property of the chart to define a global templat
 {{endregion}}
 
 #### __Figure 2: Tooltip template__
-![](images/radchartview-3d-behaviors-tooltip-1.png)
+![WPF RadChartView3D Tooltip template](images/radchartview-3d-behaviors-tooltip-1.png)
 	
 The data context passed in the template is an object of type __XyzDataPoint3D__. The object contains information about the data point positioned under the mouse. You can use the XyzDataPoint3D's __DataItem__ property to get the view model of the data point and display custom information about it. 
 	

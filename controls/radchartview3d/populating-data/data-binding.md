@@ -104,7 +104,7 @@ This section contains a complete data binding example.
 {{endregion}}
 	
 #### __Figure 1: Data bound BarSeris3D__
-![](images/radchartview3d-populating-data-databinding-0.png)
+![WPF RadChartView3D Data bound BarSeris3D](images/radchartview3d-populating-data-databinding-0.png)
 	
 ## See Also
 

@@ -33,7 +33,7 @@ Additionally, you can control the camera manually through the properties of the 
 The camera is rotated when you mouse down on the chart and move the mouse. You can use the behavior's __FirstAngle__ and __SecondAngle__ properties to rotate the camera manually.
 
 #### __Figure 1: Rotating the camera__
-![](images/radchartview-3d-behaviors-camera-0.png)
+![WPF RadChartView3D Rotating the camera](images/radchartview-3d-behaviors-camera-0.png)
 
 #### __[XAML] Example 2: Setting the camera angles__
 {{region radchartview3d-behaviors-camera-1}}
@@ -43,12 +43,12 @@ The camera is rotated when you mouse down on the chart and move the mouse. You c
 __FirstAngle__ is the angle between the axis to the right and the projection of the line between the camera position and the plot area center onto the horizontal plane. The axis to the right is considered to be the one that goes to the right when one axis goes up and another goes toward the viewer. The horizontal plane is considered to be the plane that is defined by the right axis and the axis that goes towards the viewer.
 
 #### __Figure 2: FirstAngle example__
-![](images/radchartview-3d-behaviors-camera-1.png)
+![WPF RadChartView3D FirstAngle example](images/radchartview-3d-behaviors-camera-1.png)
 
 __SecondAngle__ is the angle between the __UpDirection__ axis and the line between the camera position and plot area center.
 
 #### __Figure 3: SecondAngle example__
-![](images/radchartview-3d-behaviors-camera-2.png)
+![WPF RadChartView3D SecondAngle example](images/radchartview-3d-behaviors-camera-2.png)
 
 The camera behavior allows you to define custom key combinations that activate the rotation while dragging. You can do that via the __DragToRotateKeyCombinations__ collection.
 
@@ -67,7 +67,7 @@ __Example 3__ shows how to set the LeftCtrl and the right mouse button as the ke
 To change the distance you can use the mouse wheel. You can use the __Distance__ property to control it manually. 
 
 #### __Figure 4: Changing the camera distance__
-![](images/radchartview-3d-behaviors-camera-3.png)
+![WPF RadChartView3D Changing the camera distance](images/radchartview-3d-behaviors-camera-3.png)
 
 #### __[XAML] Example 4: Changing the distance__
 {{region radchartview3d-behaviors-camera-3}}
@@ -83,7 +83,7 @@ To change the field of view you can use the combination between the __Shift__ ke
 >The field of view angle is available only with a __PerspectiveCamera__.
 
 #### __Figure 5: Changing the camera distance__
-![](images/radchartview-3d-behaviors-camera-4.png)
+![WPF RadChartView3D Changing the camera distance](images/radchartview-3d-behaviors-camera-4.png)
 
 #### __[XAML] Example 5: Manually setting the field of view__
 {{region radchartview3d-behaviors-camera-4}}

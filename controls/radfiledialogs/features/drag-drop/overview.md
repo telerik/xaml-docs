@@ -13,7 +13,7 @@ position: 0
 The drag and drop feature of the file dialogs allows you to grab items (file and folders) and move them to a different location. The feature supports copy and move operations and it is enabled by default. 
 
 #### __Figure 1: Drag drop files__
-![](images/filedialogs-drag-drop-overview-0.png)
+![WPF RadFileDialogs Drag drop files](images/filedialogs-drag-drop-overview-0.png)
 
 The dialog gives you the ability to drag and drop in the main pane and the tree navigation pane, and also between them.
 

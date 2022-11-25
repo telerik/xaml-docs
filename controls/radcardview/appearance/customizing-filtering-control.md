@@ -22,7 +22,7 @@ To hide the button that opens the [filtering control popup]({%slug radcardview-v
 {{endregion}}
 
 #### Figure 1: Hidden filtering control icon
-![](images/radcardview-appearance-customizing-filtering-control-0.png)
+![WPF RadCardView Hidden filtering control icon](images/radcardview-appearance-customizing-filtering-control-0.png)
 
 To keep the filtering control popup open when you click outside of it, set the __FilteringDropDownStaysOpen__ property to __True__.
 
@@ -41,7 +41,7 @@ To change the visibility of the __Filter__ button in the popup, set the __ShowFi
 {{endregion}}
 
 #### Figure 2: Hidden filtering button
-![](images/radcardview-appearance-customizing-filtering-control-1.png)
+![WPF RadCardView Hidden filtering button](images/radcardview-appearance-customizing-filtering-control-1.png)
 
 To change the visibility of the distinct values list from the popup, set the __ShowDistinctFilters__ property of the associated CardDataFieldDescriptor.
 
@@ -53,7 +53,7 @@ To change the visibility of the distinct values list from the popup, set the __S
 {{endregion}}
 
 #### Figure 3: Hidden the distinct values list
-![](images/radcardview-appearance-customizing-filtering-control-2.png)
+![WPF RadCardView Hidden the distinct values list](images/radcardview-appearance-customizing-filtering-control-2.png)
 
 To change the visibility of the field filters in the popup, set the __ShowFieldFilters__ property of the associated CardDataFieldDescriptor.
 
@@ -65,7 +65,7 @@ To change the visibility of the field filters in the popup, set the __ShowFieldF
 {{endregion}}
 
 #### Figure 4: Hidden the field filters
-![](images/radcardview-appearance-customizing-filtering-control-3.png)
+![WPF RadCardView Hidden the field filters](images/radcardview-appearance-customizing-filtering-control-3.png)
 
 ## Custom Filtering Control
 
@@ -104,7 +104,7 @@ The UI filters are hosted in a __FilteringControl__ element. To get or replace t
 {{endregion}}
 
 #### Figure 5: Customized FiltertingControl
-![](images/radcardview-appearance-customizing-filtering-control-4.png)
+![WPF RadCardView Customized FiltertingControl](images/radcardview-appearance-customizing-filtering-control-4.png)
 
 The UI of the __FilteringControl__ can be customized using the __FilteringControlStyle__ property of the CardDataFieldDescriptor.
 
@@ -120,7 +120,7 @@ The UI of the __FilteringControl__ can be customized using the __FilteringContro
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 
 #### Figure 6: Customized FiltertingControlStyle
-![](images/radcardview-appearance-customizing-filtering-control-5.png)
+![WPF RadCardView Customized FiltertingControlStyle](images/radcardview-appearance-customizing-filtering-control-5.png)
 
 ## See Also  
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})

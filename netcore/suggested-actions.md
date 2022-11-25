@@ -17,7 +17,7 @@ The new WPF XAML Designer includes a **Suggested Actions** menu that is similar 
 Suggested Actions give you access to common properties of a control selected within the new WPF XAML Designer. To use this feature, first enable it through **Tools > Options > Preview Features > XAML Suggested Actions**. Once enabled, click on a supported control and use the lightbulb to expand and interact with the Suggested Actions UI.
 
 #### Figure 1: Suggested actions menu displayed on RadCallout control
-![](images/netcore-suggested-actions-0.png)
+![WPF Suggested actions menu displayed on RadCallout control](images/netcore-suggested-actions-0.png)
 
 ## See Also
 

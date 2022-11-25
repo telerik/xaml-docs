@@ -57,7 +57,7 @@ To enable the selection, add a __ChartSelectionBehavior__ element in the __Behav
 {{endregion}}
 
 #### Figure 1: Selected data point
-![](images/radchartview-features-selection-0.png)
+![WPF RadChartView Selected data point](images/radchartview-features-selection-0.png)
 
 The selected data points can be accessed using the __Selected
 
@@ -76,7 +76,7 @@ By default selecting a data point doesn't highlight it on the plot area. To enab
 {{endregion}}
 
 #### Figure 2: Palette based selection coloring
-![](images/radchartview-features-selection-1.png)
+![WPF RadChartView Palette based selection coloring](images/radchartview-features-selection-1.png)
 
 To define selection colors different than the ones provided by the predefined palettes, you can create a [custom palette]({%slug radchartview-features-palettes-custom-palettes%}) and assign it to the SelectionPalette property of the chart. Or alternatively, use the [DefaultVisualStyle or PointTemplate]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the chart series. 
 
@@ -118,7 +118,7 @@ The following example shows one way to change the selected point's background us
 The __data context__ of the element in the __PointTemplate__ is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%})
 
 #### Figure 3: PointTemplate based selection coloring
-![](images/radchartview-features-selection-2.png)
+![WPF RadChartView PointTemplate based selection coloring](images/radchartview-features-selection-2.png)
 
 An additional way of customizing the selection's visual feedback is to data bind the color property of the default visual element (via DefaultVisualStyle) or the element in the PointTemplate. Then update the underlying property in case the selection changes, using the [SelectionChanged](#events) event of the ChartSelectionBehavior.
 
@@ -140,7 +140,7 @@ The selection mode is controlled with the __DataPointSelectionMode__ property of
 {{endregion}}
 
 #### Figure 4: Multiple selection
-![](images/radchartview-features-selection-3.png)
+![WPF RadChartView Multiple selection](images/radchartview-features-selection-3.png)
 
 ## Hit Test Area
 

@@ -28,7 +28,7 @@ When the __Value__ of a __RadMaskedInput__ control contains underscore character
 {{endregion}}
 
 #### __Figure 2: Custom placeholder__
-![](images/RadMaskedTextBox_Features_Placeholder_Custom.png)
+![WPF RadMaskedInput Custom placeholder](images/RadMaskedTextBox_Features_Placeholder_Custom.png)
 
 >tip You can set a watermark content to the __RadMaskedInput__ controls by using the __EmptyContent__ and __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedInput__ control is null or empty the __EmptyContent__ will be displayed. For more information, read [Watermark]({%slug radmaskedinput-features-watermark%}).
 

@@ -17,7 +17,7 @@ Telerik DataPager provides the user with a navigation interface to page through 
 {% include cta-panel-overview.html %}
 {% endif %} 
 
-![](images/datapager-overview-0.png)
+![WPF RadDataPager ](images/datapager-overview-0.png)
 
 ## Key Features
 

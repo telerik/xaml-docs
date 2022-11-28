@@ -255,7 +255,7 @@ The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ contro
 {{endregion}}
 
 #### __Figure  8: QuickAccessToolBar visualization with one of its buttons hovered__  
-![](images/ribbonview-getting-started-08.png)
+![WPF RadRibbonView ](images/ribbonview-getting-started-08.png)
 
 > For more information and a practical example you can see the [Quick Access Toolbar]({%slug radribbonview-qat%}) topic.  
 

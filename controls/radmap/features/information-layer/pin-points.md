@@ -106,7 +106,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_PinPoints_01.png)
+![WPF RadMap ](images/RadMap_Features_PinPoints_01.png)
 
 ## Modifying the MapPinPoint's appearance
 
@@ -146,7 +146,7 @@ Here is an example:
 
 Here is a snapshot of the final result:
 
-![](images/RadMap_Features_PinPoints_02.png)
+![WPF RadMap ](images/RadMap_Features_PinPoints_02.png)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

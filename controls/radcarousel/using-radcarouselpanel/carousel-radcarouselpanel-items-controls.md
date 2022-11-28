@@ -55,6 +55,6 @@ RadCarouselPanel, being a normal Panel can be used in a similar fashion thus all
 
 The end result is displayed below:
 
- ![](images/RadCarouselPanel_ItemsPanel.png)
+ ![WPF RadCarousel ](images/RadCarouselPanel_ItemsPanel.png)
 
 >Notice the scrollbars above __RadCarouselPanel__ implements the WPF standard __IScrollInfo__ interface that allows you to place the panel inside a ScrollViewer control, and navigate the items using the scrollbars. The ListView default control template contains a ScrollViewer that automatically scrolls the carousel items.

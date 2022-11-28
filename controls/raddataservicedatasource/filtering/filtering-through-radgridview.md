@@ -36,7 +36,7 @@ If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__
 
 Performing the filtering operation from the UI of the __RadGridView__ should be as follows:
 
-![](images/RadDataServiceDataSource_FiteringThroughRadGridView.png)
+![WPF RadDataServiceDataSource ](images/RadDataServiceDataSource_FiteringThroughRadGridView.png)
 
 
 

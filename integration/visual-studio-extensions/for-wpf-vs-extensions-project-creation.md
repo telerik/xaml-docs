@@ -19,7 +19,7 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 
 	#### Figure 1: Telerik Visual Studio Extensions menu location in Visual Studio 2017 and 2019	![WPF Telerik Visual Studio Extensions menu location in Visual Studio 2017 and 2019](images/radcontrols-for-wpf-vs-extensions-project-creation-0.png)  	
 	
-	![](images/radcontrols-for-wpf-vs-extensions-project-creation-1.png)
+	![WPF ](images/radcontrols-for-wpf-vs-extensions-project-creation-1.png)
 	
 2. Click on the __Create New Telerik Project__ option and configure the project. 
 

@@ -103,7 +103,7 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 
 As a result you should be able to see the markers on your __RadMap__.
 
-![](images/RadMap_Features_DataBinding_01.png)
+![WPF RadMap ](images/RadMap_Features_DataBinding_01.png)
 
 ## Using DataMappings
 

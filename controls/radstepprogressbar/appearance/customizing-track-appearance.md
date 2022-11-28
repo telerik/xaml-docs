@@ -25,7 +25,7 @@ To change the thickness of the track, set the __TrackThickness__ property of Rad
 	</telerik:RadStepProgressBar>
 {{endregion}}
 
-![](images/stepprogressbar-appearance-track-0.png)
+![WPF RadStepProgressBar ](images/stepprogressbar-appearance-track-0.png)
 
 ## See Also
 * [Getting Started]({%slug stepprogressbar-getting-started%})

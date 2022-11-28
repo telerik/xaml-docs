@@ -19,7 +19,7 @@ Telerik __RadMenu__ for {{ site.framework_name }} provides the power to build th
 {% include cta-panel-overview.html %}
 {% endif %}      
 
-![](images/radmenu-overview-0.png)
+![WPF RadMenu ](images/radmenu-overview-0.png)
 
 ## Key Features
 

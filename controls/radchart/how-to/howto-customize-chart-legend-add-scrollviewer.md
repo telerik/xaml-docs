@@ -155,4 +155,4 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 
 
 The result can be seen on the following picture:
-![](images/RadChart_HowTo_ScrollViewer.PNG)
+![WPF RadChart ](images/RadChart_HowTo_ScrollViewer.PNG)

@@ -16,7 +16,7 @@ position: 22
 
 The __RadChart__ control supports displaying of negative values on both X and Y Axes.
 
-![](images/RadChart_Features_NegativeValues_01.png)
+![WPF RadChart ](images/RadChart_Features_NegativeValues_01.png)
 
 You can see that in this type of scenarios the main X and Y Axes don't get translated. Instead of that, additional axes are drawn, which adjust the coordinate system to the negative data. These additional axes are handled by the __PlotArea__ control and it exposes two style properties - __PlotAreaAxisXStyle__ and __PlotAreaAxisYStyle__, so you can easily modify the appearance of the additional axes.
 
@@ -48,4 +48,4 @@ Here is an example with hiding the y-axis of the plot area.
 
 Here is a snapshot of the result.
 
-![](images/RadChart_Features_NegativeValues_02.png)
+![WPF RadChart ](images/RadChart_Features_NegativeValues_02.png)

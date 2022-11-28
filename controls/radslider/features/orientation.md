@@ -22,7 +22,7 @@ __RadSlider's__ __Orientation__ property can be set to either __Horizontal__ or 
 	<telerik:RadSlider Orientation="Horizontal" />
 {{endregion}}
 
-![](images/radslider_features_horizontal.png)
+![WPF RadSlider ](images/radslider_features_horizontal.png)
 
 #### __XAML__
 
@@ -30,4 +30,4 @@ __RadSlider's__ __Orientation__ property can be set to either __Horizontal__ or 
 	<telerik:RadSlider Orientation="Vertical" />
 {{endregion}}
 
-![](images/radslider_features_vertical.png)
+![WPF RadSlider ](images/radslider_features_vertical.png)

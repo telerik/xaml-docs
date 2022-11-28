@@ -32,7 +32,7 @@ To limit the size of a single file, you have to set the __MaxFileSize__ property
 
 If the selected file is larger than 1 MB, it won't be added to the list and the __RadUpload__ will display a notification icon and a tooltip with an error message.
 
-![](images/RadUpload_Features_File_Size_And_Count_01.png)
+![WPF RadUpload ](images/RadUpload_Features_File_Size_And_Count_01.png)
 
 >tip You can see the size of each file in the list on the right side of its container.
 
@@ -49,7 +49,7 @@ To limit the total size of the files, you have to set the __MaxUploadSize__ prop
 
 If the selected files make the total upload size larger than 2 MB, the files, that are over the limit, won't be added to the list and the __RadUpload__ will display a notification icon and a tooltip with an error message.
 
-![](images/RadUpload_Features_File_Size_And_Count_02.png)
+![WPF RadUpload ](images/RadUpload_Features_File_Size_And_Count_02.png)
 
 >tip You can see the total size of the files in the list on the right side of the total details container.
 
@@ -66,7 +66,7 @@ To limit the count of the files that can be uploaded at a time, you have to set 
 
 If the count of the files in the list becomes greater than the allowed one, the files that are over the count, won't be added to the list and the __RadUpload__ will display a notification icon and a tooltip with an error message.
 
-![](images/RadUpload_Features_File_Size_And_Count_03.png)
+![WPF RadUpload ](images/RadUpload_Features_File_Size_And_Count_03.png)
 
 ## See Also  
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})

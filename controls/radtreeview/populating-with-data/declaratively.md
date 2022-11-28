@@ -38,7 +38,7 @@ In order to add treeview items you need to use the __Items__ property. The __Ite
 	{{endregion}}
 
 Here is the result: 
-![](images/RadTreeView_PopulatingWithDataDeclaratively_010.PNG)
+![WPF RadTreeView ](images/RadTreeView_PopulatingWithDataDeclaratively_010.PNG)
 
 >Consider adding __RadTreeViewItems__ directly, without specifying __<telerik:RadTreeView.Items>__
 explicitly. The effect will be the same, but your XAML will be more readable:
@@ -74,7 +74,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![](images/RadTreeView_PopulatingWithDataDeclaratively_020.PNG)
+![WPF RadTreeView ](images/RadTreeView_PopulatingWithDataDeclaratively_020.PNG)
 
 >tip Consider declaring treeview items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

@@ -22,7 +22,7 @@ __RadSlider's__ properties - __LargeChange__ and __SmallChange__ allow you to de
 	<telerik:RadSlider LargeChange="2" Maximum="10" />
 {{endregion}}
 
-![](images/largeChange.png)
+![WPF RadSlider ](images/largeChange.png)
 
 __SmallChange__ on the other hand is used when __RadSlider__ has its handles visible. Clicking any of the handles will increase/decrease the value by the amount specified in __SmallChange__.
 
@@ -32,7 +32,7 @@ __SmallChange__ on the other hand is used when __RadSlider__ has its handles vis
 	<telerik:RadSlider SmallChange="1" HandlesVisibility="Visible" Maximum="10" />
 {{endregion}}
 
-![](images/smallChange.png)
+![WPF RadSlider ](images/smallChange.png)
 
 The same applies for the thumbs when the __RadSlider__ is in selection range mode.
         

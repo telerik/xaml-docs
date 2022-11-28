@@ -34,7 +34,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadContextMenu__. Their names indicate to which part of the __RadContextMenu__ appearance they are assigned.
 
-![](images/RadContextMenu_Styling_RadContextMenu_01.png)
+![WPF RadContextMenu ](images/RadContextMenu_Styling_RadContextMenu_01.png)
 
 * __PanelBackground__ - a brush that represents the background of the main content area.
 
@@ -48,11 +48,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 Modify the resource to bring the desired appearance to the __RadContextMenu__. 
 
-![](images/RadContextMenu_Styling_RadContextMenu_02.png)
+![WPF RadContextMenu ](images/RadContextMenu_Styling_RadContextMenu_02.png)
 
 Here is a snapshot of the result.
 
-![](images/RadContextMenu_Styling_RadContextMenu_03.png)
+![WPF RadContextMenu ](images/RadContextMenu_Styling_RadContextMenu_03.png)
 
 ## See Also
 

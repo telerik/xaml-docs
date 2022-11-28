@@ -35,7 +35,7 @@ Here is an ordinary treeview declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![](images/RadTreeView_HowToCreateHorizontalTreeView_001.PNG)
+![WPF RadTreeView ](images/RadTreeView_HowToCreateHorizontalTreeView_001.PNG)
 
 In order to create a horizontal treeview you need to set the __ItemContainerStyle__ property of the __RadTreeView__ and the __RadTreeViewItem__.
 
@@ -79,7 +79,7 @@ Apply this style to the __ItemContainerStyle__ of the treeview and each treeview
 {{endregion}}
 
 Here is the result:
-![](images/RadTreeView_HowToCreateHorizontalTreeView_010.PNG)
+![WPF RadTreeView ](images/RadTreeView_HowToCreateHorizontalTreeView_010.PNG)
 
 ## See Also
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

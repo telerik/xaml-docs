@@ -43,7 +43,7 @@ Here is a simple definition of a __RadMaskedNumericInput__ control:
 								   Value="12345" />
 {{endregion}}
 
-![](images/radmaskedinput_numericinput_default.png)
+![WPF RadMaskedInput ](images/radmaskedinput_numericinput_default.png)
 
 ## Data Binding
 
@@ -116,7 +116,7 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 	</StackPanel>
 {{endregion}}
 
-![](images/radmaskedinput_numericinput_formatted_mask.png)
+![WPF RadMaskedInput ](images/radmaskedinput_numericinput_formatted_mask.png)
 
 ### In No-Mask scenario
 
@@ -132,7 +132,7 @@ In __No-Mask__ scenario the __FormatString__ property will be applied to the __V
 								   Value="0" />
 {{endregion}}
 
-![](images/radmaskedinput_numericinput_formatted_no_mask.png)
+![WPF RadMaskedInput ](images/radmaskedinput_numericinput_formatted_no_mask.png)
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

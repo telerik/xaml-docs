@@ -24,14 +24,14 @@ This topic will show you how to perform the second one.
 In order to copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonGroup__ you want to style.				
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_RibbonGroup_Locate.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_RibbonGroup_LocateWPF.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_RibbonGroup_CreateStyle.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_CreateStyle.png)
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -40,7 +40,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonGroup__. Their names indicate to which part of the __RadRibbonGroup's__ appearance they are assigned.
-![](images/RibbonView_Styling_RibbonGroup_Resources.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_Resources.png)
 
 * __RibbonForegroundBrush__- a brush that represents the foreground color of the __RadRibbonGroup__.				
 
@@ -110,13 +110,13 @@ You can modify these properties to achieve the desired appearance. However the m
 
 {% endif %}
 
-![](images/RibbonView_Styling_RibbonGroup_ControlTemplate.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_ControlTemplate.png)
 
 {% if site.site_name == 'WPF' %}
 Change the elements' properties until you get the desired look.
 
 >You can also modify the triggers defined for the __RadRibbonGroup__. They are located in the 'Triggers' pane.
->![](images/RibbonView_Styling_RibbonGroup_Triggers.png)
+>![WPF RadRibbonView ](images/RibbonView_Styling_RibbonGroup_Triggers.png)
 {% endif %}
 
 ## See Also

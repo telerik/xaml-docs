@@ -15,7 +15,7 @@ This topic will explain you the structure of the __RadDocking__ template and des
 
 Except the standard layout controls like __Grid__ and __Border__, the template contains one specific control - RootDockPanel of type __DockPanel__. They handle all of the functionality around the docking.
 
-![](images/RadDocking_Structure_01.png)
+![WPF RadDocking ](images/RadDocking_Structure_01.png)
 
 Take a look at the child elements of the __RootDockPanel__:
 
@@ -31,7 +31,7 @@ Take a look at the child elements of the __RootDockPanel__:
 
 1. __DocumentHost__- represents the central content area of the __RadDocking__ control. [Read more here.]({%slug raddocking-features-document-host%})
 
-![](images/RadDocking_Structure_02.png)
+![WPF RadDocking ](images/RadDocking_Structure_02.png)
 
 ## See Also
 

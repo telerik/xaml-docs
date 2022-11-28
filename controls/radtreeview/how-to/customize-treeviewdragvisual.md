@@ -12,11 +12,11 @@ position: 14
 
 When you use the __RadTreeView's__ [DragDrop]({%slug radtreeview-features-drag-and-drop%}) feature, the control internally creates and uses a __TreeViewDragVisual__ object. The drag visual has the following visual structure:  
 
-![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_01.png)
+![WPF RadTreeView ](images/RadTreeView_HowToCustomizeTreeViewDragVisual_01.png)
 
 When you drag an item or multiple items, the RadTreeView will internally create a vertical StackPanel containing snapshots of the dragged RadTreeViewItems' Headers. This StackPanel is set as Content of the TreeViewDragVisual object.  
 
-![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_02.png)
+![WPF RadTreeView ](images/RadTreeView_HowToCustomizeTreeViewDragVisual_02.png)
 
 The RadTreeView class allows you to change this default behavior by overriding its __CreateDragVisualContent()__ method. This method receives a list with the dragged items as an argument.
 
@@ -36,7 +36,7 @@ The following code snippet demonstrates how to override the method and replace t
 
 Here is a sample visual that demonstrates the end result.  
 	
-![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_03.png)
+![WPF RadTreeView ](images/RadTreeView_HowToCustomizeTreeViewDragVisual_03.png)
 
 The DragPreview of the drag visual is presented by a ContentControl which gets the result returned by the CreateDragVisualContent() method as its Content. This ContentControl uses the ContentTemplate property of the TreeViewDragVisual which means that you can use it in combination with the method to customize the drag visual element. 
 
@@ -95,7 +95,7 @@ You can set the ContentTemplate of the __TreeViewDragVisual__ with Style like so
 
 Below you can find a possible visual result of a drag drop operation in such custom RadTreeView:  
 	
-![](images/RadTreeView_HowToCustomizeTreeViewDragVisual_04.png)
+![WPF RadTreeView ](images/RadTreeView_HowToCustomizeTreeViewDragVisual_04.png)
 
 ## See Also
 * [Overview]({%slug radtreeview-overview2 %})

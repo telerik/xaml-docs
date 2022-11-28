@@ -25,7 +25,7 @@ By default the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls
 								   Value="12345" />
 {{endregion}}
 
-![](images/radmaskedinput_howto_thousands_separator.png)
+![WPF RadMaskedInput ](images/radmaskedinput_howto_thousands_separator.png)
 
 If you need to remove the thousands separator, you can set the __AutoFillNumberGroupSeparator__ property to __False__:
 
@@ -43,4 +43,4 @@ If you need to remove the thousands separator, you can set the __AutoFillNumberG
 								   Value="12345" />
 {{endregion}}
 
-![](images/radmaskedinput_howto_remove_thousands_separator.png)
+![WPF RadMaskedInput ](images/radmaskedinput_howto_remove_thousands_separator.png)

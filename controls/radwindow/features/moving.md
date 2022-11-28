@@ -12,7 +12,7 @@ position: 9
 
 The user can move the window by clicking on the __RadWindow__'s header and then drag it around the screen.
 
-![](images/RadWindow_Features_Moving_01.png)
+![WPF RadWindow ](images/RadWindow_Features_Moving_01.png)
 
 >tipWhen the __RadWindow__ gets moved, the __LayoutChangeStarted__ and the __LayoutChangeEnded__ events are raised. More about the events can be found [here]({%slug radwindow-events-overview%}).
 

@@ -101,7 +101,7 @@ We'll add two Custom Items (for the thermometer bulb) that should give our gauge
 
 Now our scale looks as following:
 
-![](images/CelsiusAndFahrenheit.png)
+![WPF RadGauge ](images/CelsiusAndFahrenheit.png)
 
 The next step is to add the second Fahrenheit linear scale and a linear bar indicator. 
 
@@ -271,7 +271,7 @@ The final step is to combine the two __VerticalLinearScale (Celsius and Fahrenhe
 
 Voilà! The thermometer gauge with all styles applied should look like the following: 
 
-![](images/Thermometer.png)
+![WPF RadGauge ](images/Thermometer.png)
 
 ## See also
 * [Create Compass]({%slug chart-customize-radialgauge-layout%})

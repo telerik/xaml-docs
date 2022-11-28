@@ -52,7 +52,7 @@ To take the snapshot press the "Take snapshot" button. Or call the `TakeSnapshot
 
 __Take snapshot button__
 
-![](images/radwebcam-save-snapshot-to-file-0.png)
+![WPF RadWebCam ](images/radwebcam-save-snapshot-to-file-0.png)
 
 #### __[C#] Take Snapshot__
 {{region radwebcam-save-snapshot-to-file-2}}

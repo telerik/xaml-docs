@@ -63,7 +63,7 @@ Now let's add a sample TimeBar:
 
 
 
-![](images/radtimebar_hide_selection_range_title.PNG)
+![WPF RadTimeBar ](images/radtimebar_hide_selection_range_title.PNG)
 
 To hide the range selection title you'll need to remove it from the SelectionRange Style, which can be found in *Telerik.Windows.Controls.DataVisualization.xaml*:
 

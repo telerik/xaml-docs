@@ -22,7 +22,7 @@ The __RadComboBox__ offers an additional button displayed in the drop-down part,
 	<telerik:RadComboBox ClearSelectionButtonVisibility="Visible" ClearSelectionButtonContent="Clear Selection"/>
 {{endregion}}
 
-![](images/RadComboBox_Features_Selection_010.png)
+![WPF RadComboBox ](images/RadComboBox_Features_Selection_010.png)
 
 ## See Also
 

@@ -58,7 +58,7 @@ The following example demonstrates how we can modify the default cell tooltip of
 	}
 {{endregion}}
 
-![](images/radvirtualgrid-features-celltooltip-customtooltip.PNG)
+![WPF RadVirtualGrid ](images/radvirtualgrid-features-celltooltip-customtooltip.PNG)
 
 ## Setting the CellToolTip while RadVirtualGrid is populated with data manually
 
@@ -113,7 +113,7 @@ You can customize the CellToolTip through the CellToolTipTemplate property of th
 		</Grid>
 	{{endregion}}
 
-![](images/radvirtualgrid-features-celltooltip-customtooltiptemplate.PNG)	
+![WPF RadVirtualGrid ](images/radvirtualgrid-features-celltooltip-customtooltiptemplate.PNG)	
 	
 ## See Also
 

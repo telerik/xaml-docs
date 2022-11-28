@@ -56,7 +56,7 @@ After finishing with the changes, it is time to set the style to the __MinorTick
 >tipSetting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
 
 >tipTo learn how to style the primary ticks take a look at the [Styling the Axis Tick]({%slug radchart-styling-and-appearance-styling-axis-tick%}) topic.
-![](images/RadChart_StylingAxisMinorTickLines_03.png)
+![WPF RadChart ](images/RadChart_StylingAxisMinorTickLines_03.png)
 
 Here is the final XAML for the __Styles:__
 

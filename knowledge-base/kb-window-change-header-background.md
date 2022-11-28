@@ -354,4 +354,4 @@ To change the background [extract the ControlTemplate]({%slug styling-apperance-
 	<!-- other XAML -->
 {{endregion}}
 
-![](images/kb-window-change-header-background-0.png)
+![WPF ](images/kb-window-change-header-background-0.png)

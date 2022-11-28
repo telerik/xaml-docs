@@ -40,7 +40,7 @@ Here is demonstrated how to change these properties in XAML:
 
 Here is the result:
          
-![](images/dateTimePicker_features_clock_items_010.png)
+![WPF RadDateTimePicker ](images/dateTimePicker_features_clock_items_010.png)
 
 ## Setting a custom ClockItemsSource for the clock view
 
@@ -92,7 +92,7 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 
 Here is the result:
          
-![](images/dateTimePicker_features_clock_items_020.png)
+![WPF RadDateTimePicker ](images/dateTimePicker_features_clock_items_020.png)
 
 ## See Also
 

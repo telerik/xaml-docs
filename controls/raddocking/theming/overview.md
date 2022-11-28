@@ -20,13 +20,13 @@ The __RadDocking__ uses controls such as __PaneHeader__, [RadPaneGroup]({%slug r
 
 Before theming the controls involved with the __RadDocking__ control, you have to create a __ResourceDictionary__ that will represent your theme. For example, create the following structure in your project.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-![](images/RadDocking_ThemingOverview_01.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![WPF RadDocking ](images/RadDocking_ThemingOverview_01.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 In the __RadDockingTheme.xaml__ you will place the styles and the resources for your theme.{% endif %}{% if site.site_name == 'WPF' %}
 
 Before theming the controls involved with the __RadDocking__ control, you have to create a Class Library project that will represent your theme. For example create a project with the following name.{% endif %}{% if site.site_name == 'WPF' %}
 
-![](images/RadDocking_ThemingOverview_02.png){% endif %}{% if site.site_name == 'WPF' %}
+![WPF RadDocking ](images/RadDocking_ThemingOverview_02.png){% endif %}{% if site.site_name == 'WPF' %}
 
 In the __Generic.xaml__ you should place the styles and the resources for your theme.{% endif %}
 

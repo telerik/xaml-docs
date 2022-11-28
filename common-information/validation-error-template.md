@@ -14,7 +14,7 @@ The Telerik controls that support text input provide a validation error visual t
 
 When the control has validation errors, the border around the control turns red and an error message is visualized. 
 
-![](images/validaton-error-template-0.png)
+![WPF ](images/validaton-error-template-0.png)
 
 The message visualization can vary based on the applied display mode.
 

@@ -12,7 +12,7 @@ position: 5
 
 The `DocumentHost` is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the `RadDocking` control and each newly added pane is docked as a new tab page inside of it.
 
-![](images/RadDocking_Features_DocumentHost_010.png)
+![WPF RadDocking ](images/RadDocking_Features_DocumentHost_010.png)
 
 Here is the XAML declaration of the above structure.
 

@@ -26,7 +26,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
 
 ## RadDataFilter
 
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
+![WPF RadDataFilter ](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
 
 * __[ScrollViewer]__ - wraps the elements of the __RadDataFilter's__ template and enables scrolling, when the __RadDataFilter__ exceeds the available space. It is of type __ScrollViewer__.
             
@@ -35,7 +35,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
             
 
 ## DataFilterPresenter
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
+![WPF RadDataFilter ](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
 
 * __[Border]__
 
@@ -49,7 +49,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
             
 
 ## FilterControl
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
+![WPF RadDataFilter ](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
 
 * __OuterBorder__ - represents the color of the outer border of the __FilterControl__ and is of type __Border__.
             

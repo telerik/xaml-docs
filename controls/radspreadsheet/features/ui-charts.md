@@ -33,7 +33,7 @@ Column/bar charts are used to display values as sets of vertical columns, groupe
 
 | Clustered column        | Stacked column | 100% stacked column |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_1.png) | ![](images/Features-Charts_2.png) | ![](images/Features-Charts_3.png)| 
+| ![WPF RadSpreadsheet ](images/Features-Charts_1.png) | ![WPF RadSpreadsheet ](images/Features-Charts_2.png) | ![WPF RadSpreadsheet ](images/Features-Charts_3.png)| 
 
 
 ### Bar Charts
@@ -43,7 +43,7 @@ Bar charts are analogical to the column charts, except the orientation of the ba
 
 | Clustered bar           | Stacked bar    | 100% stacked bar    |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_4.png) | ![](images/Features-Charts_5.png) | ![](images/Features-Charts_6.png)|
+| ![WPF RadSpreadsheet ](images/Features-Charts_4.png) | ![WPF RadSpreadsheet ](images/Features-Charts_5.png) | ![WPF RadSpreadsheet ](images/Features-Charts_6.png)|
 
 
 
@@ -54,11 +54,11 @@ The line chart shows the category data distributed on the horizontal axis and al
 
 | Line                    | Stacked line   | 100% stacked line   |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_7.png) | ![](images/Features-Charts_8.png) | ![](images/Features-Charts_9.png)|
+| ![WPF RadSpreadsheet ](images/Features-Charts_7.png) | ![WPF RadSpreadsheet ](images/Features-Charts_8.png) | ![WPF RadSpreadsheet ](images/Features-Charts_9.png)|
 
 | Line with Markers       | Stacked line with Markers| 100% stacked line with Markers|
 | ----------------------- |:------------------------:| :----------------------------:
-| ![](images/Features-Charts_16.png) | ![](images/Features-Charts_17.png) | ![](images/Features-Charts_18.png)|
+| ![WPF RadSpreadsheet ](images/Features-Charts_16.png) | ![WPF RadSpreadsheet ](images/Features-Charts_17.png) | ![WPF RadSpreadsheet ](images/Features-Charts_18.png)|
 
 ### Scatter and Bubble Charts
 
@@ -68,9 +68,9 @@ In a bubble chart, a third numeric field determines the size of the data points 
 
 | Scatter     |Scatter with Smooth Lines | Scatter with Smooth Lines and Markers | 
 | ----------- |:------------------------ |:--------------------------------------| 
-| ![](images/Features-Charts_20.png) | ![](images/Features-Charts_22.png) | ![](images/Features-Charts_21.png) |
+| ![WPF RadSpreadsheet ](images/Features-Charts_20.png) | ![WPF RadSpreadsheet ](images/Features-Charts_22.png) | ![WPF RadSpreadsheet ](images/Features-Charts_21.png) |
 | Scatter with Straight Lines     |Scatter with Straight Lines and Markers | Bubble | 
-| ![](images/Features-Charts_24.png) | ![](images/Features-Charts_23.png) | ![](images/Features-Charts_19.png) |
+| ![WPF RadSpreadsheet ](images/Features-Charts_24.png) | ![WPF RadSpreadsheet ](images/Features-Charts_23.png) | ![WPF RadSpreadsheet ](images/Features-Charts_19.png) |
 
 
 
@@ -82,7 +82,7 @@ Pie charts are useful for comparing the values of different points in a single s
 
 | Pie         | Doughnut  | 
 | ----------- |:----------| 
-| ![](images/Features-Charts_10.png) | ![](images/Features-Charts_11.png) |
+| ![WPF RadSpreadsheet ](images/Features-Charts_10.png) | ![WPF RadSpreadsheet ](images/Features-Charts_11.png) |
 
 
 
@@ -92,7 +92,7 @@ Area charts can be used to plot change over time and draw attention to the total
 
 | Clustered area          | Stacked area   | 100% stacked area   |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_12.png) | ![](images/Features-Charts_13.png) | ![](images/Features-Charts_14.png)|
+| ![WPF RadSpreadsheet ](images/Features-Charts_12.png) | ![WPF RadSpreadsheet ](images/Features-Charts_13.png) | ![WPF RadSpreadsheet ](images/Features-Charts_14.png)|
 
 
 ## Manipulating Charts in Code

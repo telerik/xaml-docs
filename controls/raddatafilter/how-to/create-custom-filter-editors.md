@@ -136,7 +136,7 @@ As you can see by using the switch statement you can extend the logic for additi
 
 Here is a snapshot of the final result:
 
-![](images/RadDataFilter_How_To_CreateCustomFilterEditors_01.png)
+![WPF RadDataFilter ](images/RadDataFilter_How_To_CreateCustomFilterEditors_01.png)
 
 Here is the code for the Employee object and the sample data.
 

@@ -56,4 +56,4 @@ The DragVisualOffset property can be used in combination with the __RelativeStar
     End Sub
 {{endregion}}
 
-![](images/dragdropmanager-howto-set-dragvisualoffset-0.png)
+![WPF ](images/dragdropmanager-howto-set-dragvisualoffset-0.png)

@@ -60,11 +60,11 @@ The several templates of the __RadMenuItem__ don't handle all of the states, but
 
 Templates\States	|	Normal	|	Highlighted	|	Disabled	|	Focused	|	Checked	|	HideIcon	|	Unchecked	|	Unfocused
 ---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---
-Top-Level Header	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/no_icon.png)
-Top-level Item	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/no_icon.png)
-Submenu Header	|	![](images/yes_icon.png)	|	![](images/no_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/no_icon.png)
-Submenu Item	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/no_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/yes_icon.png)	|	![](images/no_icon.png)
-Separator	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)	|	![](images/no_icon.png)
+Top-Level Header	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)
+Top-level Item	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)
+Submenu Header	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)
+Submenu Item	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/yes_icon.png)	|	![WPF RadMenu ](images/no_icon.png)
+Separator	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)	|	![WPF RadMenu ](images/no_icon.png)
 
 Note that, when using the __Submenu Header Template__ the item indicates when the mouse is over it via the __Focused__ state. On the other hand, the __Submenu Item Template__ uses the __Highlighted__ state.        
 

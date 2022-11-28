@@ -159,7 +159,7 @@ The next and final step in the example is to define the actual __CellTemplate__ 
 
 Here is the result:
 
-![](images/dateTimePicker_how_to_use_in_grid_010.png)
+![WPF RadDateTimePicker ](images/dateTimePicker_how_to_use_in_grid_010.png)
 
 ## See Also
 

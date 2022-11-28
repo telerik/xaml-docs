@@ -18,15 +18,15 @@ The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file t
 
 To use the Telerik dlls, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
-![](images/msi-or-zip-setup-lifecyle-0.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-0.png)
 
 Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
 
-![](images/msi-or-zip-setup-lifecyle-1.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-1.png)
 
 This will create an empty WPF project where you can reference the Telerik dlls.
 
-![](images/msi-or-zip-setup-lifecyle-2.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-2.png)
 
 ## Referencing Telerik Assemblies
 
@@ -34,9 +34,9 @@ This will create an empty WPF project where you can reference the Telerik dlls.
 
 Use the Visual Studio's Reference Manager to browse and reference the Telerik dlls. 
 
-![](images/msi-or-zip-setup-lifecyle-3.png)
-![](images/msi-or-zip-setup-lifecyle-4.png)
-![](images/msi-or-zip-setup-lifecyle-5.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-3.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-4.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-5.png)
 
 If you need to set a [Telerik theme]({%slug common-styling-appearance-available-themes%}) different than the default one check the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) and the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) articles.
 
@@ -64,7 +64,7 @@ After you create the WPF project and reference the Telerik assemblies, add any U
 	</Window>
 {{endregion}}
 
-![](images/msi-or-zip-setup-lifecyle-6.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-6.png)
 
 ## Deploying the Application
 
@@ -78,13 +78,13 @@ Several rules should be kept in mind when redistributing an application with Tel
 
 To upgrade the project, download the new version of the .msi or the .zip file and install it accordingly. Then remove the old Telerik references from the WPF project and [include the new ones](#referencing-telerik-assemblies). At this point, double-check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right-click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
 
-![](images/msi-or-zip-setup-lifecyle-8.png)
-![](images/msi-or-zip-setup-lifecyle-9.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-8.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-9.png)
 
 Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
 
-![](images/msi-or-zip-setup-lifecyle-7.png)
-![](images/msi-or-zip-setup-lifecyle-10.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-7.png)
+![WPF ](images/msi-or-zip-setup-lifecyle-10.png)
 
 ## See Also  
 * [System Requirements]({%slug installation-system-requirements-wpf%})

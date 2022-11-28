@@ -17,7 +17,7 @@ VirtualKeyboard is a visual keyboard component rendered on the screen that mimic
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radvirtualkeyboard-overview-1.png)
+![WPF RadVirtualKeyboard ](images/radvirtualkeyboard-overview-1.png)
 
 >tip Get started with the control with its [Getting Started]({%slug radvirtualkeyboard-getting-started%}) help article that shows how to use it in a basic scenario.
 

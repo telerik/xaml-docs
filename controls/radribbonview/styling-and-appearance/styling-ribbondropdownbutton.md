@@ -25,14 +25,14 @@ In order to copy the default style, load your project in Expression Blend and op
 				
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_DDButton_Locate.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_DDButton_LocateWPF.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_DDButton_CreateStyle.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -67,7 +67,7 @@ Change the elements' properties until you get the desired look.
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonDropDownButton__. Their names indicate to which part of the __RadRibbonDropDownButton's__ appearance they are assigned.
-![](images/RibbonView_Styling_DDButton_Resources.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_Resources.png)
 
 * __RadRibbonBarDropDownButtonPressedBorder__ - a brush that represents the color of the __RadRibbonDropDownButton's__ border, when the button gets pressed.              
 
@@ -98,13 +98,13 @@ Modify the resource to bring the desired appearance to the __RadRibbonDropDownBu
 ## Example
 
 Here is an example of the above resources modified:
-![](images/RibbonView_Styling_DDButton_ResourcesModified.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_ResourcesModified.png)
 
 Here is a snapshot of the result, when the mouse is over the button:
-![](images/RibbonView_Styling_DDButton_ExampleMouseOver.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_ExampleMouseOver.png)
 
 when the button is pressed:
-![](images/RibbonView_Styling_DDButton_Example.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_DDButton_Example.png)
 
 {% endif %}
 

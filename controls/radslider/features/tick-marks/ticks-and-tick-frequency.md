@@ -55,7 +55,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 	LayoutRoot.Children.Add(radSlider1)
 {{endregion}}
 
-![](images/radslider_features_ticks_custom.png)
+![WPF RadSlider ](images/radslider_features_ticks_custom.png)
 
 The __TickFrequency__ property on the other hand allows you to place marks(ticks) along the track in a __uniform__ manner. On the example bellow, since the __Maximum__ is 10 and the __TickFrequency__ is 2, this means that there will be tick marks at 0, 2, 4, 6, 8 and 10.
 
@@ -65,4 +65,4 @@ The __TickFrequency__ property on the other hand allows you to place marks(ticks
 	<telerik:RadSlider Maximum="10" TickFrequency="2" TickPlacement="BottomRight" />
 {{endregion}}
 
-![](images/radslider_features_ticks_default.png)
+![WPF RadSlider ](images/radslider_features_ticks_default.png)

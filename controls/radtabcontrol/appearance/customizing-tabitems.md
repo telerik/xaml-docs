@@ -26,7 +26,7 @@ The orientation of the tab items can be switched using the __TabOrientation__ pr
 	</telerik:RadTabControl>
 {{endregion}}
 
-![](images/radtabcontrol-appearance-customizing-tab-items-0.png)
+![WPF RadTabControl ](images/radtabcontrol-appearance-customizing-tab-items-0.png)
 
 ## Items Size
 
@@ -44,7 +44,7 @@ The size and spacing of the RadTabItem elements can be modified using the __Widt
 
 >The Height setting of the RadTabItem will stretch the entire tabstrip area.
 
-![](images/radtabcontrol-appearance-customizing-tab-items-1.png)
+![WPF RadTabControl ](images/radtabcontrol-appearance-customizing-tab-items-1.png)
 
 ## Item Container Style
 
@@ -67,7 +67,7 @@ The RadTabItem elements can be customized using a single Style object. The Style
 	</telerik:RadTabControl>
 {{endregion}}
 
-![](images/radtabcontrol-appearance-customizing-tab-items-2.png)
+![WPF RadTabControl ](images/radtabcontrol-appearance-customizing-tab-items-2.png)
 
 The control also provides style selector support via the __ItemContainerStyleSelector__ property of RadTabControl. Read how to implement a `StyleSelector` in the corresponding [MSDN article](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.styleselector?view=netframework-4.5).
 
@@ -119,7 +119,7 @@ The following example shows how to setup a basic model, populate RadTabControl w
 	</telerik:RadTabControl>
 {{endregion}}
 
-![](images/radtabcontrol-appearance-customizing-tab-items-3.png)
+![WPF RadTabControl ](images/radtabcontrol-appearance-customizing-tab-items-3.png)
 
 The ItemTemplate is inherited by the __HeaderTemplate__ property of each RadTabItem. The HeaderTemplate property can be used as an alternative of the ItemTemplate.
 
@@ -153,4 +153,4 @@ To change the background of the area behind the tab items (the [tabstrip]({%slug
 	<telerik:RadTabControl HeaderBackground="#F6DC9D" />
 {{endregion}} 
 
-![](images/radtabcontrol-appearance-customizing-tab-items-4.png)
+![WPF RadTabControl ](images/radtabcontrol-appearance-customizing-tab-items-4.png)

@@ -32,7 +32,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 Here are some of the generated resources:
 
-![](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_010.png)
+![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_010.png)
 
 * __BusyIndicatorBorderBrush__ -  represents the brush applied to the indicator's busy content border.
 
@@ -44,11 +44,11 @@ Here are some of the generated resources:
 
 Here is an example of the above resources modified:
 
-![](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_020.png)
+![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_020.png)
 
 Here is the result:
 
-![](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_030.png)
+![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radbusyindicator_030.png)
 
 ## See Also
 

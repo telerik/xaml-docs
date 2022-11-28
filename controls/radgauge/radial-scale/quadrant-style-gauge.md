@@ -28,7 +28,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadQuadrantNWGauge>
 	{{endregion}}
 
-	![](images/QuadrantNWGauge.png)
+	![WPF RadGauge ](images/QuadrantNWGauge.png)
 
 * __North-East__ - the RadRadialGauge control has a template which represents north-east oriented quadrant circle.          
 
@@ -44,7 +44,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadQuadrantNEGauge>
 	{{endregion}}
 
-	![](images/QuadrantNEGauge.png)
+	![WPF RadGauge ](images/QuadrantNEGauge.png)
 
 * __South-East__ - the RadRadialGauge control has a template which represents south-east oriented quadrant circle.
 
@@ -60,7 +60,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadQuadrantSEGauge>
 	{{endregion}}
 
-	![](images/QuadrantSEGauge.png)
+	![WPF RadGauge ](images/QuadrantSEGauge.png)
 
 * __South-West__ - the RadRadialGauge control has a template which represents south-west oriented quadrant circle.          
 
@@ -76,4 +76,4 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadQuadrantSWGauge>
 	{{endregion}}
 
-	![](images/QuadrantSWGauge.png)
+	![WPF RadGauge ](images/QuadrantSWGauge.png)

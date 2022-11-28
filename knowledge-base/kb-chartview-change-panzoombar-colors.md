@@ -113,4 +113,4 @@ This example shows how to change the colors of the scroll to match the Expressio
 		</telerik:RadCartesianChart.HorizontalAxis>  
 	{{endregion}}
 
-![](images/kb-chartview-change-panzoombar-colors-0.png)
+![WPF ](images/kb-chartview-change-panzoombar-colors-0.png)

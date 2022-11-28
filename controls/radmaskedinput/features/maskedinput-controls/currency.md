@@ -47,7 +47,7 @@ Here is a simple definition of a __RadMaskedCurrencyInput__ control:
 	                                Value="12345.67" />
 {{endregion}}
 
-![](images/radmaskedinput_currencyinput_default.png)
+![WPF RadMaskedInput ](images/radmaskedinput_currencyinput_default.png)
 
 You can further customize the __RadMaskedCurrencyInput__ control's behavior by setting the IsCurrencySymbolVisible property to False thus hiding the culture specific currency symbol. By default this property is set to True.
 
@@ -132,7 +132,7 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 	</StackPanel>
 {{endregion}}
 
-![](images/radmaskedinput_currencyinput_format_string_withMask.png)
+![WPF RadMaskedInput ](images/radmaskedinput_currencyinput_format_string_withMask.png)
 
 ### FormatString with No-Mask
 
@@ -149,7 +149,7 @@ In __No-Mask__ scenario the __FormatString__ property will be applied to the __V
 	                                Value="123456"/>
 {{endregion}}
 
-![](images/radmaskedinput_currencyinput_format_string.png)
+![WPF RadMaskedInput ](images/radmaskedinput_currencyinput_format_string.png)
 
 
 ## See Also

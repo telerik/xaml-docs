@@ -89,7 +89,7 @@ If, for example, you want to show the monthly sales of cars for the year 2009 on
 
 In the image bellow you can see how the custom layout chart looks like:
 
-![](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_030.png)
+![WPF RadChart ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_030.png)
 
 ## See Also
 

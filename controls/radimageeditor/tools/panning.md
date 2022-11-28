@@ -31,7 +31,7 @@ The panning feature can be enabled also by setting the __IsPanningEnabled__ prop
 {{endregion}}
 
 The following image demonstrates the panning feature.  
-![](images/radimageeditor-tool-panning-0.gif)
+![WPF RadImageEditor ](images/radimageeditor-tool-panning-0.gif)
 
 ## See Also  
 * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

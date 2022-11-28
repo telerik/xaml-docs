@@ -18,9 +18,9 @@ A class that derives from the __DataServiceContext__ class will be automatically
 
 {% if site.site_name == 'WPF' %}
 
-![](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![WPF RadDataServiceDataSource ](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
-![](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
+![WPF RadDataServiceDataSource ](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
 
 A typical auto-generated __DataServiceContext__ class will look like this:
 

@@ -33,7 +33,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __M
 {% if site.site_name == 'Silverlight' %}
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __MapMouseLocationIndicator__. Their names indicate to which part of the __MapMouseLocationIndicator__ appearance they are assigned.
 
-![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_01.png)
+![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_01.png)
 {% endif %}
 
 * __MapScaleForeground__ - a brush that represents the foreground color of the control.
@@ -55,11 +55,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 {% if site.site_name == 'Silverlight' %}
 Here is an example of these resources modified:
 
-![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_02.png)
+![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_02.png)
 
 And here is a snapshot of the result:
 
-![](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_03.png)
+![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapMouseLocationIndicator_03.png)
 {% endif %}
 
 ## See Also

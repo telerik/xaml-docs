@@ -12,7 +12,7 @@ position: 8
 
 The __RadWindow__ can be closed by either clicking on its 'Close' button at the top-right corner or by calling the __Close()__ method of the __RadWindow__ instance.
 
-![](images/RadWindow_Features_Closing_01.png)
+![WPF RadWindow ](images/RadWindow_Features_Closing_01.png)
 
 #### __[C#] Example 1: Closing a RadWindow__
 
@@ -52,7 +52,7 @@ To disable the closing of the __RadWindow__ via the UI you can set the __CanClos
 	radWindow.CanClose = False
 {{endregion}}
 
-![](images/RadWindow_Features_Closing_02.png)
+![WPF RadWindow ](images/RadWindow_Features_Closing_02.png)
 
 Alternatively, you can also handle the __PreviewClosed__ event and set the __Cancel__ property of the event arguments to True. 
 

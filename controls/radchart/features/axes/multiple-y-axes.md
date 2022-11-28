@@ -143,7 +143,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 As you can see on the snapshot below, the chart contains two series - one for the energy consumption for the northern part of a country and another one for the southern part. The first one is bound to the default __Y-Axis__ and its scale is in Megawatt. The second one is linked to the additionally added __Y-axis__ and the data is in Kilowatts:
 
-![](images/RadChart_Features_Axes_MultipleYAxes_20.png)
+![WPF RadChart ](images/RadChart_Features_Axes_MultipleYAxes_20.png)
 
 ## See Also
 

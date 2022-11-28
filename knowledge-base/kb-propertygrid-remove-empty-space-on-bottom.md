@@ -40,4 +40,4 @@ To remove the gray space, set the __DescriptionPanelVisibility__ property to __C
 	<telerik:RadPropertyGrid DescriptionPanelVisibility="Collapsed"  VerticalAlignment="Top" />
 {{endregion}}
 
-![](images/kb-propertygrid-remove-empty-space-on-bottom-0.png)
+![WPF ](images/kb-propertygrid-remove-empty-space-on-bottom-0.png)

@@ -23,17 +23,17 @@ This topic will show you how to perform the second one.
 ## Modifying the Default Style
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonView__ you want to style.
-![](images/RibbonView_Styling_RibbonView_LocateControl.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_LocateControl.png)
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_RibbonView_EditStyle.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_EditStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadRibbonView__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values.{% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonView.__ Their names indicate to which part of the __RadRibbonView's__ appearance they are assigned.
-![](images/RibbonView_Styling_RibbonView_Resources.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_Resources.png)
 
 * __RibbonBackgroundBrush__ - a brush, that represents the background color of the __RadRibbonView__ control.					
 
@@ -72,22 +72,22 @@ To learn how to style the different visual elements you can read the following t
 
 {% if site.site_name == 'Silverlight' %}
 For example, select the __RibbonBackgroundBrush__ brush resource and modify it in order to change the background of the __RadRibbonView's__ background.
-![](images/RibbonView_Styling_RibbonView_Background.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_Background.png)
 
 Modify the __RibbonTitleBarBackgroundBrush__ too, in order to make the background consistent.
-![](images/RibbonView_Styling_RibbonView_TitleBarBackground.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_TitleBarBackground.png)
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 For example, select the __Background__ brush resource and modify it in order to change the background of the __RadRibbonView's__ background.
-![](images/RibbonView_Styling_RibbonView_BackgroundWPF.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_BackgroundWPF.png)
 
 Modify the __TitleBarBackground__ too, in order to make the background consistent.
-![](images/RibbonView_Styling_RibbonView_TitleBarBackgroundWPF.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_TitleBarBackgroundWPF.png)
 {% endif %}
 
 Here is a snapshot of the result.
-![](images/RibbonView_Styling_RibbonView_Example.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_RibbonView_Example.png)
 
 ## See Also
  * [RadRibbonView Template Structure]({%slug radribbonview-styling-templatestructure%})

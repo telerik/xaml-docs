@@ -20,7 +20,7 @@ The __CameraViewPoint__ property allows you to adjust angle from which you are v
     <telerik:RadCoverFlow CameraViewpoint="Bottom"/>
 {{endregion}}
 
-![](images/RadCoverFlow_Features2.gif)
+![WPF RadCoverflow ](images/RadCoverFlow_Features2.gif)
 
 #### __XAML__
 
@@ -28,4 +28,4 @@ The __CameraViewPoint__ property allows you to adjust angle from which you are v
     <telerik:RadCoverFlow CameraViewpoint="Top"/>
 {{endregion}}
 
-![](images/RadCoverFlow_Features3.gif)
+![WPF RadCoverflow ](images/RadCoverFlow_Features3.gif)

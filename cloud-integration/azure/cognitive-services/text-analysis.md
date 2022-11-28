@@ -16,7 +16,7 @@ This article will guide you through the process of integrating Azure's [Text Ana
 
 Before you start, you need to create a new Text Analytics API account through the Azure portal. This has been explained in great detail in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
-![](images/create-text-analytics-resource.png)
+![WPF ](images/create-text-analytics-resource.png)
 
 Once you've created the account, you have to obtain the subscription keys that have been generated for you. You will require them later on in order to make API calls from your application.
 

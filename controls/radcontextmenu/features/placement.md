@@ -53,7 +53,7 @@ Here is an example:
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_01.png)
+![WPF RadContextMenu ](images/RadContextMenu_Features_Placement_01.png)
 
 ## PlacementRectangle
 
@@ -77,7 +77,7 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_02.png)
+![WPF RadContextMenu ](images/RadContextMenu_Features_Placement_02.png)
 
 ## PlacementTarget
 
@@ -96,7 +96,7 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 	}
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_01.png)
+![WPF RadContextMenu ](images/RadContextMenu_Features_Placement_01.png)
 
 Placement	|	Placement Target	|	Target Area	|	Context Menu Target Point	|	Context Menu Alignment Point
 ---	|	---	|	---	|	---	|	---
@@ -147,7 +147,7 @@ Here is an example:
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_03.png)
+![WPF RadContextMenu ](images/RadContextMenu_Features_Placement_03.png)
 
 ## See Also
 

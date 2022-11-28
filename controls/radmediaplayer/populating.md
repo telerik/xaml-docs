@@ -30,7 +30,7 @@ You can find more info [here](http://www.telerik.com/help/silverlight/installati
 
 1. Drag and Drop the MediaPlayer control from the toolbox. 
 
-	![](images/RadMedia1.gif)
+	![WPF RadMediaPlayer ](images/RadMedia1.gif)
 
 2. After you have dropped the control onto the design surface, you can modify it by setting various properties:
 	#### __XAML__

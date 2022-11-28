@@ -59,7 +59,7 @@ Here is an example of a toggle button that upon checking should make the selecti
     End Sub
 {{endregion}}
 
-![](images/RadRichTextBox_Formatting_01.png)
+![WPF RadRichTextBox ](images/RadRichTextBox_Formatting_01.png)
 
 ## Using the active editor
 

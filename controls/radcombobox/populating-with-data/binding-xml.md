@@ -14,7 +14,7 @@ The purpose of this tutorial is to show you how to bind a __RadComboBox__ contro
 
 The final result should look like the snapshot below:
 
-![](images/RadComboBox_PopulatingWithData_BindingToXML_010.png)
+![WPF RadComboBox ](images/RadComboBox_PopulatingWithData_BindingToXML_010.png)
 
 The next code snippet shows the XML declaration, used in this tutorial:
 
@@ -232,7 +232,7 @@ Create a new class named __RadComboBoxXmlDataSource__, which derives from __XmlN
 
 The result is shown on the snapshot below.
 
-![](images/RadComboBox_PopulatingWithData_BindingToXML_020.png)
+![WPF RadComboBox ](images/RadComboBox_PopulatingWithData_BindingToXML_020.png)
 
 ## See Also
 

@@ -21,7 +21,7 @@ When there are files with the same name as the uploaded ones, the __RadUpload__ 
 
 When the overwriting is disabled and there are files with matching names, an error message is displayed.
 
-![](images/RadUpload_Features_Overwriting_Existing_Files_01.png)
+![WPF RadUpload ](images/RadUpload_Features_Overwriting_Existing_Files_01.png)
 
 ## See Also  
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})

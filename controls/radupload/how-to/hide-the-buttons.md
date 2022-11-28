@@ -52,7 +52,7 @@ If you want to implement your custom command UI outside of the __RadUpload__, yo
 
 Here is a snapshot of the result.  
 
-![](images/RadUpload_How_To_Hide_Buttons_01.png)
+![WPF RadUpload ](images/RadUpload_How_To_Hide_Buttons_01.png)
 
 ## See Also
  * [Change the Size of the RadUpload]({%slug radupload-how-to-change-the-size-of-the-radupload%})

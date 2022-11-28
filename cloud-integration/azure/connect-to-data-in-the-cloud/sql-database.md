@@ -41,11 +41,11 @@ Start by setting up the **AdventureWorksLT** database from the [Create an Azure 
 
 2. Give it a suitable name such as **AdventureWorksEntities** and click **Add**.
 
-![](images/ado-net-entities.png)
+![WPF ](images/ado-net-entities.png)
 
 3. Choose **Code First from database** from the **Choose Model Contents** dialog.
 
-![](images/ef-designer.png)
+![WPF ](images/ef-designer.png)
 
 4. Click on **New Connection...** and input the server name and credentials which you can obtain from the Azure portal. Choose the **SQL Server Authentication** option to log on to the server.
 
@@ -53,7 +53,7 @@ Start by setting up the **AdventureWorksLT** database from the [Create an Azure 
 
 6. Pick the database object you wish to include and click **Finish**.
 
-![](images/choose-database-models.png)
+![WPF ](images/choose-database-models.png)
 
 You are now able to work with the entities you chose through the created **DbContext** - AdventureWorksEntities in our case.
 

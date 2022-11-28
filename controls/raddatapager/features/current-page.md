@@ -94,7 +94,7 @@ Here is the XAML for the example.
 	</Grid>
 {{endregion}}
 
-![](images/RadDataPager_Features_CurrentPage_01.png)
+![WPF RadDataPager ](images/RadDataPager_Features_CurrentPage_01.png)
 
 ## See Also
 

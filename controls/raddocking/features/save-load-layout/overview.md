@@ -91,7 +91,7 @@ Create a new application and add the following initial __RadDocking__ declaratio
 	</telerik:RadDocking>
 {{endregion}}
 
-![](images/RadDocking_Features_SaveLoadLayout_010.png)
+![WPF RadDocking ](images/RadDocking_Features_SaveLoadLayout_010.png)
 
 ## Saving Layout
 

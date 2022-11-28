@@ -39,7 +39,7 @@ __Example 1__ demonstrates that setting the __GapLength__ to __0.90__ value tell
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![](images/radchartview-axes-gap-length.png)
+![WPF RadChartView ](images/radchartview-axes-gap-length.png)
 	
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

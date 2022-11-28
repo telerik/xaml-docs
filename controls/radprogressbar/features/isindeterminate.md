@@ -35,7 +35,7 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 	progressBar.IsIndeterminate = False
 {{endregion}}
 
-![](images/progress_horizontal.jpg)
+![WPF RadProgressBar ](images/progress_horizontal.jpg)
 
 #### __XAML__		
 {{region xaml-IsIndeterminate_3}}
@@ -55,4 +55,4 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 {{endregion}}
 
 	
-![](images/progress_indeterminate.jpg)
+![WPF RadProgressBar ](images/progress_indeterminate.jpg)

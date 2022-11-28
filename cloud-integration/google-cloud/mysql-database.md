@@ -29,11 +29,11 @@ As we are going to work with a MySQL database, you need to install some **MySQL 
 
 You can install the **MySQL.Data** NuGet package as shown in the image below:
 
-![](../images/mysql_nuget_package.png)
+![WPF ](../images/mysql_nuget_package.png)
 
 Next, you need to initialize a connection to your database. You can directly add the database server IP. For the purpose of the demo, we have added a test user in your MySQL instance through the GCP console:
 
-![](../images/cloud_sql_user.png)
+![WPF ](../images/cloud_sql_user.png)
 
 The IP address of your SQL instance can be found in the Overview tab of the instance in the GCP console. The following method initializes the connection:
 	

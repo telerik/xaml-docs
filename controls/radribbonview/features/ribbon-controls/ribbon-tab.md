@@ -18,7 +18,7 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 
 The __RadRibbonView__ helps end-users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in [logical groups]({%slug radribbonview-ribbon-group%}) that are collected together under specific __tabs__. Or in other words - the __Ribbon Tab__ lets you categorize the commands to be displayed for the end-users.
 
-![](images/RibbonView_Tab_Overview.png)
+![WPF RadRibbonView ](images/RibbonView_Tab_Overview.png)
 
 >The class that represents the ribbon tab is __Telerik.Windows.Controls.RadRibbonTab__.		  
 
@@ -52,7 +52,7 @@ The next example demonstrates how to add several __RadRibbonTab__ to your ribbon
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RibbonView_Tab_EmtpyTabs.png)
+![WPF RadRibbonView ](images/RibbonView_Tab_EmtpyTabs.png)
 
 >tip Use the __RadRibbonTab__'s __HeaderVisibility__ property, when you want to change the visibility of the TabItem's header.		  
 

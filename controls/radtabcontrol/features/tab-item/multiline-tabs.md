@@ -12,7 +12,7 @@ position: 1
 
 Multi-line tabs can be created using the __IsBreak__ property of the __RadTabItem__. The property is of __Boolean__ type and the possible values are __True__ or __False__. If it’s __True__, then the next tab items you add will be placed on a new line inserted right above the item which property __IsBreak__ is set to __True__; if it’s __False__, no break is inserted.
 
-![](images/RadTabControl_Figure_00650.png)
+![WPF RadTabControl ](images/RadTabControl_Figure_00650.png)
 
 #### __[XAML] Example 1: Set an item's IsBreak property__
 

@@ -16,7 +16,7 @@ To learn more about __RadDocumentPane__ take a look at the __RadPane__'s [Overvi
 
 >tipUse __RadDocumentPane__ to host any kind of documents that are editable by your application, while the utility panels can be hosted in the standard __RadPane__ control.
 
-![](images/RadDocking_Features_Panes_RadDocumentPane_010.png)
+![WPF RadDocking ](images/RadDocking_Features_Panes_RadDocumentPane_010.png)
 
 ## See Also
 

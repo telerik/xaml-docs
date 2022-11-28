@@ -16,7 +16,7 @@ RadCalendar is a control that displays a calendar representation from which the 
 
 There are four __Calendar modes__ that specify what is visible in the Calendar views : a __month__, a __year__, a __decade__ or a __century__. The calendar modes can be switched by clicking the calendar header button. Or setting the __DisplayMode__ property: 
 
-![](images/calendar_displayModes.png)
+![WPF RadCalendar ](images/calendar_displayModes.png)
 
 #### __XAML__
 

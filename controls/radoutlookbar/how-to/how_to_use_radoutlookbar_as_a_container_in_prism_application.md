@@ -14,11 +14,11 @@ This help article will show you how to use __RadOutlookBar__ as a container for 
 
 Start off by creating an __empty Visual Studio solution__. Call this solution __OutlookBarAndPrism__.
 
-![](images/RadOutlookBar_Prism_01.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_01.png)
 
 Then, __add a Silverlight project__ and call it __Shell__.
 
-![](images/RadOutlookBar_Prism_02.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_02.png)
 
 Add references to:
 
@@ -29,18 +29,18 @@ Add references to:
 
 >You can download the latest binaries from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=387c7a59-b217-4318-ad1b-cbc2ea453f40&displaylang=en). Further information on how to download and build prism can be found [here](http://www.sparklingclient.com/downloading-and-building-prism/).
 				
-![](images/RadOutlookBar_Prism_03.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_03.png)
 
 Then, add references to:
 
 * __Telerik.Windows.Controls.dll__
 * __Telerik.Windows.Controls.Navigation.dll__
 
-![](images/RadOutlookBar_Prism_04.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_04.png)
 
 __Delete MainPage.xaml__(*along with MainPage.xaml.cs*), add a __new folder__ called __Views__ and add a __UserControl__ called __ShellView__ to the	__Views__ folder.
 				
-![](images/RadOutlookBar_Prism_05.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_05.png)
 
 Open __ShellView.xaml__ and __add__ a __RadOutlookBar__ control. __Register__ the __RadOutlookBar__ control with __Prism’s RegionManager__ by giving it a __RegionName__. In this case, registration can happen in XAML by annotating a UIElement with a RegionName attached property.
 
@@ -60,7 +60,7 @@ Once a region has been defined via XAML, it will automatically be registered at 
 
 Next, we need to add a bootstrapper class to the Shell project.
 
-![](images/RadOutlookBar_Prism_06.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_06.png)
 
 The __Bootstrapper__ inherits __UnityBootstrapper__ and is the __starting point__ of every Prism application. Two common tasks need to be done every time a Bootstrapper is used:
 
@@ -112,13 +112,13 @@ Now we have to actually run the bootstrapper. Go to __App.xaml.cs__ and modify t
 
 Now if you run the application in this state, you will get the following error.
 
-![](images/RadOutlookBar_Prism_07.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_07.png)
 
 This error is caused by the fact that currently there are no modules to display, so let’s add one.
 
 Add a new Silverlight Class Library to the OutlookBarAndPrism solution and called it ModuleA.
 
-![](images/RadOutlookBar_Prism_09.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_09.png)
 
 __Remove__ the __Class1.cs__ file that is added by default.Add reference to __Microsoft.Practices.Composite.dll__ and __Microsoft.Practices.Unity.dll.__ Add a __new class__ to the __ModuleA__ class library and call it __ModuleA__.
 
@@ -126,7 +126,7 @@ __Remove__ the __Class1.cs__ file that is added by default.Add reference to __Mi
 
 Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ interface contains a method, void Initialize, which we will have to implement.
 
-![](images/RadOutlookBar_Prism_08.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_08.png)
 
 #### __C#__
 {{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_3}}
@@ -221,7 +221,7 @@ Now let’s leave __ModuleA__ for a bit and go back to the __Bootstrapper__ clas
 
 Since we have added a module, let’s create a module catalog. First of all, add a reference to the ModuleA class library.				
 
-![](images/RadOutlookBar_Prism_10.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_10.png)
 
 Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog()__ method.				
 
@@ -246,7 +246,7 @@ Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog
 
 So far, if you run the project you should get result similar to the one bellow:
 
-![](images/RadOutlookBar_Prism_11.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_11.png)
 
 Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString() representation of the __ModuleAView__ class. To fix that we can add an __ItemHeader__ property to the __ModuleAView__ user control.				
 
@@ -288,7 +288,7 @@ Then, go to the __RadOutlookBar__’s definition in __ShellView.xaml__ and add a
 
 Now, if you run the project, you will see that the __RadOutlookBarItem__ has a header.
 
-![](images/RadOutlookBar_Prism_12.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_12.png)
 
 The last thing that needs to be done is to make the __Title__ area display __ModuleA__ as well. The fastest way to do this is to use the __TextSearch__ class that is located in the __Telerik.Windows.Controls__ namespace in __Telerik.Windows.Controls.dll__.
 
@@ -313,7 +313,7 @@ The last thing that needs to be done is to make the __Title__ area display __Mod
 
 Now if you run the project, the output should be similar to the one bellow.
 
-![](images/RadOutlookBar_Prism_13.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_13.png)
 
 Another approach to this scenario is to insert an actual __RadOutlookBarItem__. What I mean by that is instead of having in __ModuleAView.xaml__:				
 
@@ -405,7 +405,7 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 
 Remove __DisplayMemeberPath__ from __RadOutlookBar’s__ definition in __ShellView.xaml__ and run the project. If you get the following error, then we are on the right track.
 
-![](images/RadOutlookBar_Prism_14.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_14.png)
 
 The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView.xaml__ is a child of __ModuleAView__, but we are adding it to __RadOutlookBar__ as well. Thus the problem, one and the same visual element cannot appear on more than one place in the visual tree of the application. To overcome this issue, in the constructor of __ModuleAView__ we need to remove whatever is in __LayoutRoot__.				
 
@@ -442,4 +442,4 @@ The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView
 
 Now if you run the project, everything should be fine.
 
-![](images/RadOutlookBar_Prism_15.png)
+![WPF RadOutlookBar ](images/RadOutlookBar_Prism_15.png)

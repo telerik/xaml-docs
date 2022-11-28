@@ -47,9 +47,9 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	 </Grid>
 {{endregion}}
 
-![](images/book_hardPaper.png)
+![WPF RadBook ](images/book_hardPaper.png)
 
-![](images/book_softPaper.png)
+![WPF RadBook ](images/book_softPaper.png)
 
 #### __[XAML] Example 2: Setting the hard pages mode to Custom__  
 {{region xaml-book-hard-pages_1}}
@@ -88,8 +88,8 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	</telerik:RadBook>
 {{endregion}}
 
-![](images/book_hardPaperCustom1.png)
+![WPF RadBook ](images/book_hardPaperCustom1.png)
 
-![](images/book_hardPaperCustom2.png)
+![WPF RadBook ](images/book_hardPaperCustom2.png)
 
-![](images/book_hardPaperCustom3.png)
+![WPF RadBook ](images/book_hardPaperCustom3.png)

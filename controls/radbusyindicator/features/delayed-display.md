@@ -48,7 +48,7 @@ Finally, in the code-behind you have to handle the click event for the button an
 
 As a result when the user clicks on a button after a delay of five seconds, the __RadBusyIndicator__ will be displayed:
 
-![](images/radbusyindicator_features_delayed_display_010.png)
+![WPF RadBusyIndicator ](images/radbusyindicator_features_delayed_display_010.png)
 
 >tip __RadBusyIndicator__ also gives you a read-only boolean property - __IsBusyIndicationVisible__. Its value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and visualized.To check whether the __RadBusyIndicator__ is enabled, you can observe its __IsBusy__ boolean property.
 

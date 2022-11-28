@@ -60,7 +60,7 @@ After finishing with the changes, it is time to set the style. It can be set onl
 
 Here is a snapshot of the sample result.
 
-![](images/RadChart_StylingAxisGridLines_04.png)
+![WPF RadChart ](images/RadChart_StylingAxisGridLines_04.png)
 
 Here is the final XAML for the __Style__:
 

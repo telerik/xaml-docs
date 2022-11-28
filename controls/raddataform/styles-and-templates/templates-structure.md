@@ -77,7 +77,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 
 
-![](images/RadDataForm_DataFormDataField.png)
+![WPF RadDataForm ](images/RadDataForm_DataFormDataField.png)
 
 ## CollectionNavigator Template
 
@@ -127,4 +127,4 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 
 
-![](images/RadDataForm_CollectionNavigatorTemplate.png)
+![WPF RadDataForm ](images/RadDataForm_CollectionNavigatorTemplate.png)

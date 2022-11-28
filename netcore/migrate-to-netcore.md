@@ -24,7 +24,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	
 	#### Figure 2: Linking files from the original project	![WPF Linking files from the original project](images/netcore-support-migration-1.png)
 	
-	![](images/netcore-support-migration-2.png)
+	![WPF ](images/netcore-support-migration-2.png)
  
 3. Reference the Telerik assemblies built against .NET Core 3.1.
 	

@@ -62,7 +62,7 @@ The event arguments are of type `CameraErrorEventArgs` and they expose an `Error
 
 __Customized error message__
 
-![](features/images/radwebcam-features-errors-3.png)
+![WPF RadWebCam ](features/images/radwebcam-features-errors-3.png)
 
 ## RecordingStarted/Ended
 

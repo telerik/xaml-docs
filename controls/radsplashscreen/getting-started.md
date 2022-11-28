@@ -51,7 +51,7 @@ You can start the splash screen anytime you need to indicate that some work is p
 	}	
 {{endregion}}
 
-![](images/radsplashscreen-getting-started-0.png)
+![WPF RadSplashScreen ](images/radsplashscreen-getting-started-0.png)
 
 The splash screen is setup via the __RadSplashScreenManager.SplashScreenDataContext__ object which by default holds an object of type __SplashScreenDataContext__. Read more about the data context in the [Splash Screen Manager]({%slug radsplashscreen-features-splashscreenmanager%}) article.
 
@@ -96,7 +96,7 @@ RadSplashScreenManager can be used to display any UI element. This means that yo
 	RadSplashScreenManager.Show<MyUserControl>();
 {{endregion}}
 
-![](images/radsplashscreen-getting-started-1.png)
+![WPF RadSplashScreen ](images/radsplashscreen-getting-started-1.png)
 
 ## Setting a Theme
 

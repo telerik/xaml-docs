@@ -28,7 +28,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadSemicircleNorthGauge>
 	{{endregion}}
 
-	![](images/SemicircleNGauge.png)
+	![WPF RadGauge ](images/SemicircleNGauge.png)
 
 * __South__ - the RadRadialGauge control has a template which represents south-oriented semi-circle.          
 
@@ -44,7 +44,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadSemicircleSouthGauge>
 	{{endregion}}
 
-	![](images/SemicircleSGauge.png)
+	![WPF RadGauge ](images/SemicircleSGauge.png)
 
 * __East__ - the RadRadialGauge control has a template which represents east-oriented semi-circle.          
 
@@ -60,7 +60,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadSemicircleEastGauge>
 	{{endregion}}
 
-	![](images/SemicircleEGauge.png)
+	![WPF RadGauge ](images/SemicircleEGauge.png)
 
 * __West__ - the RadRadialGauge control has a template which represents west-oriented semi-circle.          
 
@@ -76,4 +76,4 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 		</telerik:RadSemicircleWestGauge>
 	{{endregion}}
 
-	![](images/SemicircleWGauge.png)
+	![WPF RadGauge ](images/SemicircleWGauge.png)

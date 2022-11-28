@@ -46,7 +46,7 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 	                                UpdateValueEvent="LostFocus" />
 {{endregion}}
 
-![](images/radmaskedinput_datetimeinput_default.png)
+![WPF RadMaskedInput ](images/radmaskedinput_datetimeinput_default.png)
 
 ## Data Binding
 

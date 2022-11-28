@@ -19,7 +19,7 @@ __RadRating__ is a flexible UI component that allows users to intuitively rate b
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/rating_default.png)
+![WPF RadRating ](images/rating_default.png)
 
 ## Key Features
 

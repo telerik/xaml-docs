@@ -19,7 +19,7 @@ The RadTimeline control is used to visualize a sequence of events over a specifi
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadTimeLine_overview.jpg)
+![WPF RadTimeline ](images/RadTimeLine_overview.jpg)
 
 __RadTimeline's__ key features list:
 

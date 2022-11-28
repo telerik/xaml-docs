@@ -168,7 +168,7 @@ And here is an example of how to change them:
 
 __Theme colors__
 
-![](../images/common-styling-appearance-office2016-theme-0.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-0.png)	
 
 ## Changing Palette Colors
 
@@ -222,7 +222,7 @@ The following examples show how to change the default FontFamily from "Segoe UI"
 
 __Setting FontSize and FontFamily__
 
-![](../images/common-styling-appearance-office2016-theme-1.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-1.png)	
 
 
 ## Changing FocusThickness
@@ -236,7 +236,7 @@ The `Office2016` theme palette includes a `FocusThickness` property. It defines 
 	
 __Setting the focus border thickness__
 
-![](../images/common-styling-appearance-office2016-theme-3.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-3.png)	
 
 ## Changing Corner Radius
 
@@ -264,7 +264,7 @@ The following example shows how to change the default corner radius from 0 to 2.
 
 __Setting the corner radius__
 
-![](../images/common-styling-appearance-office2016-theme-4.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-4.png)	
 
 ## Using Glyphs
 
@@ -293,7 +293,7 @@ Since each glyph’s string value is ambiguous and not related to its shape, we 
 
 __Heart glyph__
 
-![](../images/common-styling-appearance-office2016-theme-2.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-2.png)	
 
 > You can read more about the usage of the new glyph's feature and see the available glyphs in [this article]({%slug common-styling-appearance-glyphs-overview%}).
 
@@ -308,7 +308,7 @@ You can easily change the opacity of any disabled element by using the `Disabled
 
 __Setting the disabled opacity__
 
-![](../images/common-styling-appearance-office2016-theme-theme-5.png)	
+![WPF ](../images/common-styling-appearance-office2016-theme-theme-5.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 

@@ -55,7 +55,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	</telerik:RadDocking>
 {{endregion}}
 
-![](images/RadDocking_HowTo_FreezeLayout_010.png)
+![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_010.png)
 
 ## Disable the Close ("X") Button
 
@@ -76,7 +76,7 @@ In order to disable the close button, you need to set the __CanUserClose__ prope
 
 Here is the result:
 
-![](images/RadDocking_HowTo_FreezeLayout_020.png)
+![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_020.png)
 
 ## Disable the Pin/Unpin Button
 
@@ -97,7 +97,7 @@ In order to disable the pin/unpin button, you need to set the __CanUserPin__ pro
 
 Here is the result:
 
-![](images/RadDocking_HowTo_FreezeLayout_030.png)
+![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_030.png)
 
 ## Disable the Float Behavior
 
@@ -147,7 +147,7 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 
 Here is the result:
 
-![](images/RadDocking_HowTo_FreezeLayout_040.png)
+![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_040.png)
 
 ## Disable Resizing of the Panes
 

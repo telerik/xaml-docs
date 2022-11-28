@@ -22,7 +22,7 @@ Imagine that you want to translate your ribbon bar into English, German and Dutc
 
 * __RibbonResources.nl.resx__ - this resource file will store the __Dutch__ resources for the ribbon bar control. Set the __AccessModifier__ property to __No code generation__.
 
-![](images/RibbonView_Localization_Files.png)
+![WPF RadRibbonView ](images/RibbonView_Localization_Files.png)
 
 Now, having the needed files, it's time to illustrate the idea and localize for example the 'Minimize the Ribbon', 'Customize Quick Access Tool bar' and 'Show below the Ribbon' strings. For that purpose you need to create three resource strings in each one of the three resource files and translate them to the appropriate language.
 

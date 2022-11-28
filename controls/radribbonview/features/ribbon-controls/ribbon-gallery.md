@@ -21,10 +21,10 @@ __Galleries__ are simple, but a very powerful and flexible user interface concep
 The gallery is always rendered in two ways:
 
 * As a popup inside a __RadRibbonDropDownButton__ or in __RadRibbonSplitButton__.
-![](images/RibbonView_Gallery_popup.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_popup.png)
 
 * Directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}).
-![](images/RibbonView_Gallery_group.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_group.png)
 
 >tip The classes that represent the ribbon gallery are __Telerik.Windows.Controls.RadRibbonGallery__ and __Telerik.Windows.Controls.RadGallery__.		  
 
@@ -39,7 +39,7 @@ The __RadRibbonGallery__ is a special type of gallery (it derives from __RadGall
 >tip When you use the __RadRibbonGallery__ class, __do not specify__ the __ViewportWidth__ and __ViewportHeight__ properties.		  
 
 The __RadRibbonGallery__ always should have a popup associated with it, otherwise the user won't be able to drop down the ribbon gallery. In the popup you may want to include a __RadMenu__ that has other additional options regarding the gallery. However, when you drop down a __RadRibbonGallery__ the items are automatically moved into the popup. So even if you specify a menu, the first item in the popup will be a gallery. On the other hand, while the items are hosted in the ribbon you can page up/down smoothly using the buttons inside the gallery.
-![](images/RibbonView_Gallery_elements.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_elements.png)
 
 >tip When you want to declare a ribbon gallery directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}) use the __RadRibbonGallery__ class.		  
 
@@ -80,10 +80,10 @@ When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDo
 {{endregion}}
 
 Note that when you use the __RadGallery__, you should specify the __ViewportWidth__ and __ViewportHeight__ properties. These two properties control the horizontal and vertical size of the content's viewport. On the other hand, the size of the items themselves is controlled by the __ItemWidth__ and __ItemHeight__ properties. The result from the example is shown on the next two snapshots.
-![](images/RibbonView_Gallery_splitBtn.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_splitBtn.png)
 
 When you press the popup launch button, the gallery is shown.
-![](images/RibbonView_Gallery_SplitBtn_Popup.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_SplitBtn_Popup.png)
 
 ### Adding Ribbon Gallery Directly Into a Ribbon Group
 
@@ -155,10 +155,10 @@ When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%s
 {{endregion}}
 
 The result is shown on the image below.
-![](images/RibbonView_Gallery_ribbongallery.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_ribbongallery.png)
 
 When you press the popup launch button, the gallery is shown. 
-![](images/RibbonView_Gallery_ribbongallery_popup.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_ribbongallery_popup.png)
 
 >tip While the items are hosted in the ribbon, you could __page up/down__ smoothly using the buttons beside the gallery.			  
 
@@ -205,7 +205,7 @@ The next code snippet demonstrates how to add additional menu items.
 {{endregion}}
 
 And the result is shown on the next image.
-![](images/RibbonView_Gallery_group_contextMenu.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_group_contextMenu.png)
 
 ## Adding Additional Menu Items to a RadRibbonGallery
 
@@ -250,7 +250,7 @@ In the next example several __RadMenuItem__ objects are added to the __RadRibbon
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RibbonView_Gallery_ribbongallery_contextMenu.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_ribbongallery_contextMenu.png)
 
 ## Adding Header RadRibbonGalleryItems
 
@@ -296,7 +296,7 @@ The __RadRibbonGallery__ class allows you to set the visibility of the launch po
 	</telerik:RadRibbonGallery>
 {{endregion}}
 
-![](images/RibbonView_Gallery_disable_popup.png)
+![WPF RadRibbonView ](images/RibbonView_Gallery_disable_popup.png)
 
 {% if site.site_name == 'WPF' %}
 

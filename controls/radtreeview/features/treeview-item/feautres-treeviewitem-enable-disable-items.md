@@ -21,7 +21,7 @@ This tutorial will walk you through the common tasks of __enabling__ and __disab
 
 This is a snapshot of a regular __RadTreeView__ with a couple of items.
 
-![](images/RadTreeView_TreeViewItemEnableDisableItems_001.png)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemEnableDisableItems_001.png)
 
 And here is the XAML declaration:
 
@@ -51,7 +51,7 @@ By default all items in the treeview are enabled (their __IsEnabled__ property i
 
 If you want to disable the whole treeview then add the same attribute to the treeview declaration. On the next snapshot the whole treeview is disabled. 
 
-![](images/RadTreeView_TreeViewItemEnableDisableItems_010.png)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemEnableDisableItems_010.png)
 
 Here is the XAML declaration. Note that if you set the __IsEnabled__ property to __False__ for the __RadTreeView__ object then all treeview items will be disabled. 
 

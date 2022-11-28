@@ -18,7 +18,7 @@ You can find more info [here](http://www.telerik.com/help/silverlight/installati
 
 Before you create a __RadCoverFlow__ control, you have to make sure that you have added some images to display. You can also load the images on the fly using WCF or RIA service. Here is an example of images added in a project and declaration of the control:
 
-![](images/RadCoverFlow_Basics.gif)
+![WPF RadCoverflow ](images/RadCoverFlow_Basics.gif)
 
 Once you have your images added, creating a RadCoverFlow is straight-forward. Here is a XAML declaration of the control.
 
@@ -35,7 +35,7 @@ Once you have your images added, creating a RadCoverFlow is straight-forward. He
 	</telerik:RadCoverFlow>
 {{endregion}}
 
-![](images/RadCoverFlow.png)
+![WPF RadCoverflow ](images/RadCoverFlow.png)
 
 ## See Also
 

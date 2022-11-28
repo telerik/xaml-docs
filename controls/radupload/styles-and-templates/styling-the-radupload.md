@@ -35,7 +35,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadUpload__. Their names indicate to which part of the __RadUpload__ appearance they are assigned.
 
-![](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_01.png)
+![WPF RadUpload ](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_01.png)
 
 * __ControlBackground__ - a brush that represents the background of the __RadUpload__ control.
 
@@ -73,11 +73,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 Modify the resource to bring the desired appearance of the __RadUpload__. 
 
-![](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_02.png)
+![WPF RadUpload ](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_02.png)
 
 Here is a snapshot of the result.
 
-![](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_03.png)
+![WPF RadUpload ](images/RadUpload_Styles_and_Templates_Styling_the_RadUpload_03.png)
 
 ## See Also
 

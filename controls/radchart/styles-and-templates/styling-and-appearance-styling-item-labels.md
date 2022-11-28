@@ -44,7 +44,7 @@ You can modify every one of the properties available for the styles. After that 
 
 Here is a snapshot of the result.
 
-![](images/RadChart_StylingItemLabels_08.png)
+![WPF RadChart ](images/RadChart_StylingItemLabels_08.png)
 
 Here is the final XAML for the __Style__:
 

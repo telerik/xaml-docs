@@ -75,4 +75,4 @@ When end-user click on the scale or drag indicator along the scale values the va
 
 >You should add reference to __Telerik.Windows.Controls.Input.dll__ in order to use the RadNumericIndicator control
 
-![](images/RadialGaugeInteractiveClickBinding.PNG)
+![WPF RadGauge ](images/RadialGaugeInteractiveClickBinding.PNG)

@@ -113,4 +113,4 @@ How to show the total count of all items in the RadDataPager control in a RadGri
 
 __RadDataPager displaying the total items count__
 
-![](images/kb-datapager-show-total-entries-count.png)
+![WPF ](images/kb-datapager-show-total-entries-count.png)

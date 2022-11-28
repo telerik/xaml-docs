@@ -28,7 +28,7 @@ Basically the sorting in the context of the __RadChart__ represents the way in w
 
 Here is an example of a chart without sorting descriptors.
 
-![](images/RadChart_Features_Sorting_01.png)
+![WPF RadChart ](images/RadChart_Features_Sorting_01.png)
 
 Here is an example of implementing sorting.
 
@@ -76,6 +76,6 @@ Here is an example of implementing sorting.
 
     
 Here is a snapshot of the result.
-    ![](images/RadChart_Features_Sorting_02.png)
+    ![WPF RadChart ](images/RadChart_Features_Sorting_02.png)
 
 

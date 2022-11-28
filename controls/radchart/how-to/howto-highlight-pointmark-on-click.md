@@ -182,4 +182,4 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 
 The snapshot below shows the result:
-![](images/RadChart_HowToHighlightedPointMark_01.png)
+![WPF RadChart ](images/RadChart_HowToHighlightedPointMark_01.png)

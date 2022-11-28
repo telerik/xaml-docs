@@ -17,7 +17,7 @@ __RadTimeBar__ is a time bound DataVisualization control. Its chief purpose is t
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radtimebar-overview-0.png)
+![WPF RadTimeBar ](images/radtimebar-overview-0.png)
 
 ## Key Features
 

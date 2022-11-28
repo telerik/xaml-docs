@@ -16,7 +16,7 @@ Like most controls, the __RadChart__ also allow you to template it in order to c
 
 ## RadChart
 
-![](images/RadChart_TemplateStructure_01.png)
+![WPF RadChart ](images/RadChart_TemplateStructure_01.png)
 
 * __[Border]__ - represents the border around the __RadChart__ and is of type __Border__.
 
@@ -34,7 +34,7 @@ Like most controls, the __RadChart__ also allow you to template it in order to c
 
 ## Chart Area
 
-![](images/RadChart_TemplateStructure_02.png)
+![WPF RadChart ](images/RadChart_TemplateStructure_02.png)
 
 * __[Grid]__ - hosts the elements of the __ChartArea's__ template and is of type __Grid__.
 

@@ -20,7 +20,7 @@ With __RadUpload__ you will save the end-user’s time and efforts, utilizing it
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadUpload_Overview_02.png)
+![WPF RadUpload ](images/RadUpload_Overview_02.png)
 
 __RadUpload__ is a dedicated file-upload control. It allocates a minimum amount of server memory, while enabling optimized and fully configurable single and multi-file uploads.
 		

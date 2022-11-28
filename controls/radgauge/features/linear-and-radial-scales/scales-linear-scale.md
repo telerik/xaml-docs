@@ -106,4 +106,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_LinearScale_03.png)
+![WPF RadGauge ](images/RadGauge_Features_LinearScale_03.png)

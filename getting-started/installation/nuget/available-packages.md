@@ -11,7 +11,7 @@ position: 0
 
 Telerik UI for WPF comes with a several different packages that can be installed via the Telerik server or from a local package source.
 
-![](images/nuget-available-packages-0.png)
+![WPF ](images/nuget-available-packages-0.png)
 
 The Telerik dlls are built against different versions of .NET starting from .NET 4 to the latest official .NET. Additionally, the dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a big set of assemblies that can be downloaded which are also available as nuget packages. 
 
@@ -108,4 +108,4 @@ You can install and test the [Latest Internal Build]({%slug installation-install
 
 When you set up the package source and place the NuGet files there, you can find them in the NuGet Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 
-![](images/Common_InstallingFromNuGet_10_wpf.png)
+![WPF ](images/Common_InstallingFromNuGet_10_wpf.png)

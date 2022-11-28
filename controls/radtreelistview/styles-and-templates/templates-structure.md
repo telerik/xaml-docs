@@ -28,7 +28,7 @@ As the __RadTreeListView__ inherits __RadGridView__, it uses the same styling me
 
 ## RadTreeListView
 
-![](images/TreeLisView_TreeListViewStructure.png)
+![WPF RadTreeListView ](images/TreeLisView_TreeListViewStructure.png)
 
 * **PART_MasterGridContainer** - hosts the elements of the template. It is of type Border and represents the border of the __RadGridView__.
 
@@ -48,7 +48,7 @@ As the __RadTreeListView__ inherits __RadGridView__, it uses the same styling me
 
 ## TreeListViewRow
 
-![](images/TreeLisView_TreeListViewRowStructure.png)
+![WPF RadTreeListView ](images/TreeLisView_TreeListViewRowStructure.png)
 
 
 

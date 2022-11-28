@@ -18,7 +18,7 @@ With this feature, the enabled X axis can be used to plot not only values (e.g. 
 {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
 {% if site.site_name == 'WPF' %}WPF{% endif %} Chart treats data as a sequence of non-numerical text labels. The marker is placed according to the position of the category in the sequence. Data is provided per category.
  
-      ![](images/RadChart_Features_CategoricalCharts_01.PNG)
+      ![WPF RadChart ](images/RadChart_Features_CategoricalCharts_01.PNG)
 
 As you can see from the image above, __RadChart__ automatically set __X-Axis__ labels to the categories they represent and each numeric value is shown in the corresponding category. Note that the numeric values are from two data series and they share the same category.
 

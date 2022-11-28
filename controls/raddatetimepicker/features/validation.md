@@ -84,7 +84,7 @@ To show the data error, set the __ValidatesOnDataErrors__ property of the Bindin
 	}
 {{endregion}}
 
-![](images/raddatetimepicker-features-validation-0.png)
+![WPF RadDateTimePicker ](images/raddatetimepicker-features-validation-0.png)
 
 ## See Also  
  * [Overview]({%slug raddatetimepicker-overview%})

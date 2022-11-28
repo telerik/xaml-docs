@@ -17,7 +17,7 @@ For seamless color customization and faster palette creation that looks great an
 
 The **Color Theme Generator** enables you to tweak theme colors and immediately see the results. The tool contains a few predefined palettes for each of the themes, making it easier to choose the right colors for your application.
 
-![](images/common-styling-color-theme-generator-0.png)
+![WPF ](images/common-styling-color-theme-generator-0.png)
 
 It only takes a few simple steps to use the tool.
 

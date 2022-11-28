@@ -89,7 +89,7 @@ Using the third overload of the __BingRestMapProvider's__ constructor, allows yo
 
 After specifying the provider, you should be able to see the respective map appear in the __RadMap__ control.
 
-![](images/RadMap_GettingStarted_01.png)
+![WPF RadMap ](images/RadMap_GettingStarted_01.png)
 
 ## Displaying Data
 

@@ -27,7 +27,7 @@ There are 2 alternative ways to set number of the major ticks along the scale. T
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScale10MajorTicks.png)
+![WPF RadGauge ](images/LinearScale10MajorTicks.png)
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
@@ -38,11 +38,11 @@ The second one uses MajorTickStep property. It sets length of the single tick in
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScale20MajorTickStep.png)
+![WPF RadGauge ](images/LinearScale20MajorTickStep.png)
 
 Sometimes desirable length of the major tick (MajorTickStep) creates situations when major tick mark at the end point of scale is shown very close to the last regular one:
 
-![](images/LinearScaleCloseTickMarks.png)
+![WPF RadGauge ](images/LinearScaleCloseTickMarks.png)
 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
@@ -53,7 +53,7 @@ In this situation we can use ShowLastLabel property to indicate whether the tick
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScaleNoEndTickMark.png)
+![WPF RadGauge ](images/LinearScaleNoEndTickMark.png)
 
 By default, the major tick marks start from the minimum scale value and move to the maximum value. But you can shift first and last major tick marks along scale using StartTickOffset and EndTickOffset properties:
 
@@ -64,7 +64,7 @@ By default, the major tick marks start from the minimum scale value and move to 
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScaleTickMarkOffset.png)
+![WPF RadGauge ](images/LinearScaleTickMarkOffset.png)
 
 To change properties of the tick mark (Major, Middle or Minor) you should set the correspondent property to the scale element in XAML:
 
@@ -93,7 +93,7 @@ Then you have to define tick mark properties using MajorTickProperties, MiddleTi
 
 The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it is True, then each tick mark within the range uses a color according to the specified range's TickBackground property:
 
-![](images/LinearScaleTickRangeColor.png)
+![WPF RadGauge ](images/LinearScaleTickRangeColor.png)
 
 ## Custom Tick Marks
 
@@ -144,7 +144,7 @@ The RadGauge control provides very flexible standard tick marks and labels, but 
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScaleCustomTickMark.png)
+![WPF RadGauge ](images/LinearScaleCustomTickMark.png)
 
 ## Off position
 

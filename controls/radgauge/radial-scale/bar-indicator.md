@@ -39,15 +39,15 @@ The Bar indicator supports the following features:
 2. You can set location of the Bar indicator relative to a scale bar using telerik:ScaleObject.Location property.
 	For example, "Outside" 
 
-	![](images/RadialBarOutside.png)
+	![WPF RadGauge ](images/RadialBarOutside.png)
 
 	"Inside"  
 
-	![](images/RadialBarInside.png)
+	![WPF RadGauge ](images/RadialBarInside.png)
 
 	or "OverCenter" 
 
-	![](images/RadialBarOverCenter.png)
+	![WPF RadGauge ](images/RadialBarOverCenter.png)
 
 3. telerik:ScaleObject.Offset relative to a scale bar.
 
@@ -69,11 +69,11 @@ The Bar indicator supports the following features:
 
 There are several ways how you can change color of the bar indicator. By default you set it using "Background" property. But sometimes it is useful to change color of the bar indicator according to the value it points to. RadGauge supports this feature for the bar indicators. You can configure bar indicator to use the color of the range which contains indicator's value. For example:
 
-![](images/RadialBarRange2550.png) 
+![WPF RadGauge ](images/RadialBarRange2550.png) 
 
 or 
 
-![](images/RadialBarRange5075.png)
+![WPF RadGauge ](images/RadialBarRange5075.png)
 
 To do it you need add few ranges to your scale and specify background of the indicator for every range. Then you should set UseRangeColor property of the bar indicator to true:
 
@@ -133,4 +133,4 @@ There several modes which can be used to colorize bar indicator. Example above u
 	 </telerik:RadialScale.Indicators>
 {{endregion}}
 
-![](images/RadialBarProportionalBrush.png)
+![WPF RadGauge ](images/RadialBarProportionalBrush.png)

@@ -131,7 +131,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Indicators_Basics_01.png)
+![WPF RadGauge ](images/RadGauge_Features_Indicators_Basics_01.png)
 
 ## Indicator's Value
 
@@ -177,7 +177,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-![](images/RadGauge_Features_Indicators_Basics_02.png)
+![WPF RadGauge ](images/RadGauge_Features_Indicators_Basics_02.png)
 
 ## Value's Source
 

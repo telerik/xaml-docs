@@ -45,7 +45,7 @@ Here is the XAML code:
 
 Our gauge looks like this:
 
-![](images/gauge_customize_radialgauge.png)
+![WPF RadGauge ](images/gauge_customize_radialgauge.png)
 
 To make it look more like compass we'll need to customize the labels so that they are the four cardinal directions - N(North), E(east), S(south) and W(west). To remove the default gauge labels we'll use *LabelTemplate*. We'll also need to customize the needle. All this will be done via Styles:
 

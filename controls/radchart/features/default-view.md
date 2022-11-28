@@ -16,7 +16,7 @@ position: 17
 
 Usually, when you have a chart to display, it contains title, chart and legend. For this common case, __RadChart__ provides you with __DefaultView__. RadChart.DefaultView is of type __ChartDefaultView__ and contains [ChartTitle]({%slug radchart-features-chart-title%}), [ChartArea]({%slug radchart-features-chart-area%}) and [ChartLegend]({%slug radchart-features-chart-legend%}).
 
-![](images/RadChart_GeneralInformation_VisualStructure_01.png)
+![WPF RadChart ](images/RadChart_GeneralInformation_VisualStructure_01.png)
 
 When you create your chart declaratively or from the code behind, with static data or using data binding, the chart is displayed using the default view. However, if you need to customize the layout, use __RadChart.UseDefaultLayout__ property and set it to __False__. In this case, you have to build the layout you need and set it to the __RadChar.Content__ property as it is shown in [Creating Chart with Custom Layout]({%slug radchart-populating-with-data-creating-a-chart-with-custom-layout%}).
         

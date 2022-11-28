@@ -198,7 +198,7 @@ Additionally the __TextWrapping__ property of the MarkedZone's Text Block is set
 
 
 The result image shows the tooltip and the label:
-![](images/RadChart_HowToAnnotation_tooltip_and_label.png)
+![WPF RadChart ](images/RadChart_HowToAnnotation_tooltip_and_label.png)
 
 The same can be achieved with __CustomGridLines__ like this:
 
@@ -236,4 +236,4 @@ The same can be achieved with __CustomGridLines__ like this:
 
 
 Note that the position of the TextBlock is controlled via X1 and Y1 properties (the starting point of the GridLine) as taken using TemplateBinding. The result can be seen below:
-![](images/RadChart_HowToAnnotation_customGridline_label.PNG)
+![WPF RadChart ](images/RadChart_HowToAnnotation_customGridline_label.PNG)

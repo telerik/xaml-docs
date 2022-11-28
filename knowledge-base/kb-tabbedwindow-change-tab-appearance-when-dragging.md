@@ -53,7 +53,7 @@ How to add a border around the drag visual of the tab item dragged out of RadTab
 	}
 {{endregion}}
 
-![](images/kb-tabbedwindow-change-tab-appearance-when-dragging-0.png)
+![WPF ](images/kb-tabbedwindow-change-tab-appearance-when-dragging-0.png)
 
 ## See Also
 * [DragDropManager]({%slug dragdropmanager-overview%})

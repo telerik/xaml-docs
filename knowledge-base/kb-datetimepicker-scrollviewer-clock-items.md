@@ -80,4 +80,4 @@ How to show a vertical scrollbar in the time section of the drop down.
 
 > This template is extracted from the OfficeBlack [theme]({%slug common-styling-appearance-available-themes%}).
 
-![](images/kb-datetimepicker-show-scrollviewer-for-the-clock-items-0.png)
+![WPF ](images/kb-datetimepicker-show-scrollviewer-for-the-clock-items-0.png)

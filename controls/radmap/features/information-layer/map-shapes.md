@@ -50,7 +50,7 @@ The most important things when using the __MapLine__ object are the __Point1__ a
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_01.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_01.png)
 
 ## MapRectangle
 
@@ -90,7 +90,7 @@ Here is an example:
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_02.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_02.png)
 
 ## MapEllipse
 
@@ -124,7 +124,7 @@ Here is an example:
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_03.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_03.png)
 
 ## MapPolyline
 
@@ -143,7 +143,7 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_04.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_04.png)
 
 ## MapPolygon
 
@@ -168,7 +168,7 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_05.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_05.png)
 
 ## MapPath
 
@@ -210,7 +210,7 @@ Except the __MapPath__ class you also have an analog for each standard __Geometr
 	</telerik:RadMap>
 {{endregion}}
 
-![](images/RadMap_Features_MapShapes_06.png)
+![WPF RadMap ](images/RadMap_Features_MapShapes_06.png)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

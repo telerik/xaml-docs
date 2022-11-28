@@ -41,7 +41,7 @@ For the purpose of this tutorial, the treeview defined in the next XAML snippet 
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![](images/RadTreeView_TreeViewItemImages_001.PNG)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemImages_001.PNG)
 
 ## Using the ImagesBaseDir, DefaultImagesSrc, ExpandedImageSrc and SelectedImageSrc Properties
 
@@ -79,15 +79,15 @@ When you store all your images for the TreeView into a single folder you can use
 
 The result is: 
 
-![](images/RadTreeView_TreeViewItemImages_010.PNG)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemImages_010.PNG)
 
 When you select the treeview item with __Header__ "Indoor Cycling" the default image will be changed: 
 
-![](images/RadTreeView_TreeViewItemImages_020.PNG)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemImages_020.PNG)
 
 When you collapse the treeview item "Cycling", then its default image will also be changed: 
 
-![](images/RadTreeView_TreeViewItemImages_030.PNG)
+![WPF RadTreeView ](images/RadTreeView_TreeViewItemImages_030.PNG)
 
 ## Setting DefaultImagesSrc, ExpandedImageSrc and SelectedImageSrc Properties from Code Behind
 

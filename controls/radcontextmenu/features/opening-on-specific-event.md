@@ -30,7 +30,7 @@ Setting the __EventName__ property will make __RadContextMenu__ to listen for a 
 
 As you can see in this particular example, __RadContextMenu__ is listening for the __Click__ event of its host. So when you click the button, a context menu will appear.
 
-![](images/RadContextMenu_Features_EventName_01.png)
+![WPF RadContextMenu ](images/RadContextMenu_Features_EventName_01.png)
 
 ## See Also
 

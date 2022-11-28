@@ -50,7 +50,7 @@ The State Indicator is a shape with arbitrary size located anywhere in the scale
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
 
-![](images/LinearScaleStateIndicator.png)
+![WPF RadGauge ](images/LinearScaleStateIndicator.png)
 
 The State indicator supports the following features:
 

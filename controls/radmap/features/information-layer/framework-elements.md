@@ -52,7 +52,7 @@ Here is an example of a __Border__ that holds a __TextBlock__ with some informat
 
 Here is a snapshot of the result: 
 
-![](images/RadMap_Features_FrameworkElement_01.png)
+![WPF RadMap ](images/RadMap_Features_FrameworkElement_01.png)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

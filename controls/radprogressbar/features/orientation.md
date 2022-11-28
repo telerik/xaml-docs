@@ -29,7 +29,7 @@ __RadProgressBar__ has an __Orientation__ property which can be set to either *H
 	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
 {{endregion}}
 
-![](images/progress_horizontal.jpg)
+![WPF RadProgressBar ](images/progress_horizontal.jpg)
 
 
 #### __XAML__
@@ -49,6 +49,6 @@ __RadProgressBar__ has an __Orientation__ property which can be set to either *H
 	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
 {{endregion}}	
 
-![](images/progress_vertical.jpg)
+![WPF RadProgressBar ](images/progress_vertical.jpg)
 
 >Whenever you change the __Orientation__ property, it will make sense to also change the height and width of the control since the property only changes the direction in which __RadProgressBar__ is filled.

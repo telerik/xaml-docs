@@ -30,7 +30,7 @@ You can change the value of this property in XAML as shown in this snippet:
 
 Here is the result:
 
-![](images/dateTimePicker_features___input_modes_010.png)
+![WPF RadDateTimePicker ](images/dateTimePicker_features___input_modes_010.png)
 
 Similarly if you decide to have only the time picker you can choose the TimePicker input mode:
 
@@ -42,7 +42,7 @@ Similarly if you decide to have only the time picker you can choose the TimePick
 
 This leads to the following result:
 
-![](images/dateTimePicker_features___input_modes_020.png)
+![WPF RadDateTimePicker ](images/dateTimePicker_features___input_modes_020.png)
 
 ## See Also
 

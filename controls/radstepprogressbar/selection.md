@@ -25,7 +25,7 @@ The selection is changed when you click on a step in the UI, or set the __Select
 		
 __StepProgressBar selection__  
 
-![](images/stepprogressbar-selection-0.png)		
+![WPF RadStepProgressBar ](images/stepprogressbar-selection-0.png)		
 
 Selecting a step will update the __OverallProgress__ property of RadStepProgressBar which can be used to get the numeric progress value. The OverallProgress ranges between 0 and 100.
 
@@ -35,7 +35,7 @@ The RadStepProgressBarItem has three states that can enter - __NotStarted__, __I
 
 __Step item statuses__  
 
-![](images/stepprogressbar-selection-1.png)
+![WPF RadStepProgressBar ](images/stepprogressbar-selection-1.png)
 
 To change the status that is applied to the selected item from Complete to another value - like NotStarted or Indeterminate - set the __SelectedItemStatus__ property of RadStepProgressBar.
 
@@ -46,7 +46,7 @@ To change the status that is applied to the selected item from Complete to anoth
 
 __Selected item status set to Indeterminate__  
 
-![](images/stepprogressbar-selection-2.png)
+![WPF RadStepProgressBar ](images/stepprogressbar-selection-2.png)
 
 To prevent changing the status of the previous steps to Complete, set the __CompleteAllPreviousStepsOnSelection__ property of RadStepProgressBar to __False__.
 
@@ -57,7 +57,7 @@ To prevent changing the status of the previous steps to Complete, set the __Comp
 
 __Disabled previous steps auto completion__  
 
-![](images/stepprogressbar-selection-3.png)
+![WPF RadStepProgressBar ](images/stepprogressbar-selection-3.png)
 
 The current state of a RadStepProgressBarItem can be got via its __Status__ property.
 

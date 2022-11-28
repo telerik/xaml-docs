@@ -98,4 +98,4 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		{{endregion}}
 
 The result:         
-![](images/radtimeBar_create_programmatically.PNG)
+![WPF RadTimeBar ](images/radtimeBar_create_programmatically.PNG)

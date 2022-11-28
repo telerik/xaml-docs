@@ -49,16 +49,16 @@ The sample pictures show these properties in action:
 
 *ItemOverlapPercent* = 0 and *ItemWidthPercent* = 50
 
-![](images/RadChart_Features_Capture2.PNG)
+![WPF RadChart ](images/RadChart_Features_Capture2.PNG)
 
 
 
 *ItemOverlapPercent* = -20 and *ItemWidthPercent* = 50
 
-![](images/RadChart_Features_Capture3.PNG)
+![WPF RadChart ](images/RadChart_Features_Capture3.PNG)
 
 
 
 *ItemOverlapPercent* = 50 and *ItemWidthPercent* = 50
 
-![](images/RadChart_Features_Capture4.PNG)
+![WPF RadChart ](images/RadChart_Features_Capture4.PNG)

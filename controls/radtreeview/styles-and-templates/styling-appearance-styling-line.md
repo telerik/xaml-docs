@@ -12,7 +12,7 @@ position: 4
 
 The purpose of this tutorial is to show you how to __change the color__ of the __connected lines__ between the nodes of a __RadTreeView__. The final result should look like the one on the snapshot below:
 
-![](images/RadTreeView_StylingAndAppearance_StylingLines_010.png)
+![WPF RadTreeView ](images/RadTreeView_StylingAndAppearance_StylingLines_010.png)
 
 In order to style the lines, you should edit the __RadTreeViewItem__'s __Template__ and change the __TreeView_LineColor__ resource. This tutorial illustrates you a step by step example on how to do that.
 
@@ -25,11 +25,11 @@ In order to style the lines, you should edit the __RadTreeViewItem__'s __Templat
 
 After clicking OK, a style for your __RadTreeViewItem__ control will be created. Go to the *Resources* pane and see all of the resources generated for your style.
 
-![](images/RadTreeView_StylingAndAppearance_StylingLines_040.png)
+![WPF RadTreeView ](images/RadTreeView_StylingAndAppearance_StylingLines_040.png)
 
 * Modify the __TreeView_LineColor__ resource, which represents the __Stroke__ of the horizontal and vertical lines connecting the nodes. For example, change the color to __Red__. 
 
-	![](images/RadTreeView_StylingAndAppearance_StylingLines_050.png)
+	![WPF RadTreeView ](images/RadTreeView_StylingAndAppearance_StylingLines_050.png)
 
 * Finally, go back to your XAML and set the __ItemContainerStyle__ property to the just created style. 
 

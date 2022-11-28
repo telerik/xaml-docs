@@ -49,11 +49,11 @@ At this point you are ready to connect to the instance using **Microsoft SQL Ser
 
 **2.** Give it a suitable name such as **MovieEntities** and click **Add**.
 
-![](images/ado-net-entities-rds.png)
+![WPF ](images/ado-net-entities-rds.png)
 
 **3.** Choose **Empty Code First model** from the **Choose Model Contents** dialog.
 
-![](images/ef-designer-rds.png)
+![WPF ](images/ef-designer-rds.png)
 
 This will generate the MovieEntities class for you which inherits from **DbContext** and will be used by Entity Framework to communicate with the database.
 

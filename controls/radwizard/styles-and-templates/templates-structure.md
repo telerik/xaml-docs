@@ -21,7 +21,7 @@ Like most WPF controls, __RadWizard__ also allows you to template it in order to
 
 ## RadWizard ##
 
-![](images/RadWizardTemplate_Img.png)
+![WPF RadWizard ](images/RadWizardTemplate_Img.png)
 
 * __Border__ - represents the border and the background of RadWizard and is of type Border.
 
@@ -29,7 +29,7 @@ Like most WPF controls, __RadWizard__ also allows you to template it in order to
 
 ## RadWizardPage ##
 
-![](images/WizardPageTemplate_Img.png)
+![WPF RadWizard ](images/WizardPageTemplate_Img.png)
 
 * __Border__ - represents the border and the background of __WizardPage__ and is of type __Border__.
 

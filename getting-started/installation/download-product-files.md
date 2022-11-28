@@ -28,15 +28,15 @@ In order to download these you need to take the following steps:
 
 2. Click on the __Downloads__ tab:
 
-	![](images/Download_product_files_0.png)
+	![WPF ](images/Download_product_files_0.png)
 
 3. Select __Telerik UI for Silverlight__ product title:
 	
-	![](images/Download_product_files_11.png)
+	![WPF ](images/Download_product_files_11.png)
 
 4. The next page allows you to download the Automatic Installation msi file, DLLs and themes, PDB files, NuGet Packages, documentation files, and Source code. 
 
-	![](images/Download_product_files_21.png)
+	![WPF ](images/Download_product_files_21.png)
 
 Below you could find a list of the available files:
 
@@ -94,7 +94,7 @@ You could download the complete source code of the Silverlight Demos as well as 
 
 From the __Versions__ dropdown you can select an older version to download:
 
-![](images/Download_product_files_31.png)
+![WPF ](images/Download_product_files_31.png)
 
 >important Please note that if you do not see the desired version you can contact our [sales team](mailto:sales@telerik.com) and they will enable the version for download.
 

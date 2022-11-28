@@ -39,7 +39,7 @@ The __Extended__ selection on the other hand, allows users to select multiple re
 
 >tipPressing __Ctrl+A__ will select all items.
 
-![Telerik {{ site.framework_name }} DataGrid cell selection](images/RadGridView_MultipleSelection_1.png)![](images/gridview_cell_selection.png)
+![Telerik {{ site.framework_name }} DataGrid cell selection](images/RadGridView_MultipleSelection_1.png)![WPF RadGridView ](images/gridview_cell_selection.png)
 
 You can access all selected rows (or data items) through the __SelectedItems__ collection and all the selected cells through the __SelectedCells__ collection. The following example demonstrates how to bind a __ListBox__ to the selected items of a grid:
 

@@ -72,7 +72,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __OverlayStyle__
 
 Here is the result:
 
-![](images/radbusyindicator_styles_and_templates_overlay_style_010.png)
+![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_overlay_style_010.png)
 
 ## See Also
 

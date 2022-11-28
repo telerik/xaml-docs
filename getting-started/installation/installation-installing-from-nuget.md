@@ -61,7 +61,7 @@ You can install and test the Latest Internal Build (LIB) dlls provided on a week
 
 When you set up the package source and place the nuget files there, you can find them in the Nuget Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
 
-![](images/Common_InstallingFromNuGet_10_sl.png)
+![WPF ](images/Common_InstallingFromNuGet_10_sl.png)
 
 ## Add the Telerik NuGet Server
 
@@ -69,23 +69,23 @@ Through the Telerik NuGet Server users can easily include the Telerik UI for Sil
 
 1.Navigate to the Package Manager Settings menu.
 
-![](images/Common_InstallingFromNuGet_05.png)
+![WPF ](images/Common_InstallingFromNuGet_05.png)
 
 2.Add new source in the Package Sources section.
 
-![](images/Common_InstallingFromNuGet_06.png)
+![WPF ](images/Common_InstallingFromNuGet_06.png)
 
 3.In the Source field fill the address of the Telerik NuGet Server and click Update
 
-![](images/Common_InstallingFromNuGet_07.png)
+![WPF ](images/Common_InstallingFromNuGet_07.png)
 
 4.The Telerik Server is added and ready to use. Click on the Manage NuGet Packages menu.
 
-![](images/Common_InstallingFromNuGet_08.png)
+![WPF ](images/Common_InstallingFromNuGet_08.png)
 
 5.Set the Telerik Server as a package source. Enter user credentials when prompted and search for the needed package.
 
-![](images/Common_InstallingFromNuGet_09.png)
+![WPF ](images/Common_InstallingFromNuGet_09.png)
 
 ## See Also
 

@@ -110,7 +110,7 @@ Here is an examples for different __ToolTipFormat__ values.
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Shapefiles_01.png)
+![WPF RadMap ](images/RadMap_Shapefiles_01.png)
 
 ## Formatted property value
 
@@ -141,7 +141,7 @@ Here is a snapshot of the result:
     
 Here is a snapshot of the result:
 
-![](images/RadMap_Shapefiles_02.png)
+![WPF RadMap ](images/RadMap_Shapefiles_02.png)
 
 ## Multiple formatted property values
 
@@ -172,7 +172,7 @@ Here is a snapshot of the result:
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Shapefiles_03.png)
+![WPF RadMap ](images/RadMap_Shapefiles_03.png)
 
 ## ToolTipStyle
 
@@ -206,7 +206,7 @@ The __ToolTipStyle__ property allows you to specify a Style of the tooltip that 
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Shapefiles_04.png)
+![WPF RadMap ](images/RadMap_Shapefiles_04.png)
 
 ## ToolTipTemplate
 
@@ -243,7 +243,7 @@ In this case the __DataTemplate__ takes as __DataContext__ the entire Extended D
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Shapefiles_05.png)
+![WPF RadMap ](images/RadMap_Shapefiles_05.png)
 
 ## Clearing the Layer
 

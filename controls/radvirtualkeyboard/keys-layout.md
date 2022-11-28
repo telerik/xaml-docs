@@ -28,7 +28,7 @@ To change the layout using one of the predefined schemes, set the `DefaultKeyboa
 {{endregion}}
 
 __Predefined key layouts in the following order - Numpad, Compact and Extended__
-![](image/radvirtualkeyboard-keys-layout-0.png)
+![WPF RadVirtualKeyboard ](image/radvirtualkeyboard-keys-layout-0.png)
 
 ## Creating Custom Key Layouts
 

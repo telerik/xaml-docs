@@ -28,7 +28,7 @@ Now, having the needed files, it's time to illustrate the idea and localize for 
 
 The snapshot below shows the content of the __RadTimeBarResources.de.resx__ file. The Value column will contain the translation for the appropriate language:
 
-![](images/radtimebar_resourcekeysTranslation.PNG)
+![WPF RadTimeBar ](images/radtimebar_resourcekeysTranslation.PNG)
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
 
@@ -71,7 +71,7 @@ To see the __RadTimeBar__ localized in German for example you should set the *Cu
 
 Here is how the localized *RadTimeBar* will look like:
 
-![](images/radtimebar_localized.PNG)
+![WPF RadTimeBar ](images/radtimebar_localized.PNG)
 
 __Localization Using Custom Localization Manager__
 

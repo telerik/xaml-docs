@@ -18,7 +18,7 @@ Tick marks allow displaying value intervals along the gauge scale. There are 3 t
 
 3. __Minor__ - specify third level of the value intervals. MinorTicks scale's property specifies number of the third level value intervals inside the secondary value interval. Minor tick marks can't have labels. You can specify common properties and appearance of the minor tick mark using MinorTick property of the scale.
 
-![](images/RadialScaleTickMarks_Desc.png)
+![WPF RadGauge ](images/RadialScaleTickMarks_Desc.png)
 
 There are 2 alternative ways to set number of the major ticks along the scale. This first one is using MajorTicks property. It sets number of the of the value intervals along the entire length of the scale bar:
 
@@ -34,7 +34,7 @@ There are 2 alternative ways to set number of the major ticks along the scale. T
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![](images/RadialScale10MajorTicks.png)
+![WPF RadGauge ](images/RadialScale10MajorTicks.png)
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
@@ -49,11 +49,11 @@ The second one uses MajorTickStep property. It sets length of the single tick in
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![](images/RadialScale20MajorTickStep.png)
+![WPF RadGauge ](images/RadialScale20MajorTickStep.png)
 
 Sometimes desirable length of the major tick (MajorTickStep) creates situations when major tick mark at the end point of scale is shown very close to the last regular one:
 
-![](images/RadialScaleCloseTickMarks.png)
+![WPF RadGauge ](images/RadialScaleCloseTickMarks.png)
 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
@@ -69,7 +69,7 @@ In this situation we can use ShowLastLabel property to indicate whether the tick
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![](images/RadialScaleNoEndTickMark.png)
+![WPF RadGauge ](images/RadialScaleNoEndTickMark.png)
 
 By default, the major tick marks start from the minimum scale value and move clock-wise to the maximum value. But you can shift first and last major tick marks along scale using StartTickOffset and EndTickOffset properties:
 
@@ -91,11 +91,11 @@ To change the layout of the tick marks you may use their correspondent propertie
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![](images/RadiaScaleTickMarkOffset.png)
+![WPF RadGauge ](images/RadiaScaleTickMarkOffset.png)
 
 The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it is True, then each tick mark within the specified range uses a color according to the range's TickBackground property:
 
-![](images/RadialScaleTickRangeColor.png)
+![WPF RadGauge ](images/RadialScaleTickRangeColor.png)
 
 #### __XAML__
 {{region radial-scale-tick-marks_4}}

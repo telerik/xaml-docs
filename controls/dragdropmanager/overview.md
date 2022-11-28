@@ -17,7 +17,7 @@ __DragDropManager__ offers intuitive API similar to the WPF native drag and drop
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/DragDropManager_DragBetweenListBoxes.png)
+![WPF ](images/DragDropManager_DragBetweenListBoxes.png)
 
 ## Features:
 

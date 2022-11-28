@@ -85,4 +85,4 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 {{endregion}}
 
 ## Preview
-![](images/RadToolBar_orientation.png)
+![WPF RadToolBar ](images/RadToolBar_orientation.png)

@@ -17,7 +17,7 @@ RadSplashScreen allows you to display a Telerik themed control that notifies the
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radsplashscreen-overview-1.png)
+![WPF RadSplashScreen ](images/radsplashscreen-overview-1.png)
 
 ## Key Features
 

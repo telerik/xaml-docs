@@ -26,7 +26,7 @@ The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__
 {{endregion}}
 
 This button has its initial size set to __Large__ and its text label set to __"Symbol"__. As the __IsAutoSize__ property is set to __True__ the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its __Small__ size when the __RadRibbonGroup__ collapses to __Medium__.
-![](images/RibbonView_Buttons_ToggleButton.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_ToggleButton.png)
 
 ## Handling Changes in the the Button's Checked State
 

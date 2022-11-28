@@ -152,7 +152,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(greenZone)
 	{{endregion}}
-![](images/RadChart_Features_Annotations_MarkedZone_01.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_MarkedZone_01.png)
 
 Here is an example of a marked zone that is limited in both directions.
 
@@ -183,7 +183,7 @@ Here is an example of a marked zone that is limited in both directions.
 
 >tipThis can be done in code behind too!
 
-![](images/RadChart_Features_Annotations_MarkedZone_02.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_MarkedZone_02.png)
 
 The Marked Zones can overlap each other. In such case their __Z-Index__ will be used to determine which will appear above. Here is an example.
 
@@ -218,7 +218,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 
 >tipThis can be done in code behind too!
 
-![](images/RadChart_Features_Annotations_MarkedZone_03.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_MarkedZone_03.png)
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Rectangle__ element that visually represents the __MarkedZone__. Via this style you can set the __StrokeDashArray__ property for example.
 
@@ -257,4 +257,4 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 
 >tipThis can be done in code behind too!
-![](images/RadChart_Features_Annotations_MarkedZone_04.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_MarkedZone_04.png)

@@ -71,7 +71,7 @@ Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPla
 	End Namespace
 {{endregion}}
 
-![](images/image3.png)
+![WPF RadHtmlPlaceholder ](images/image3.png)
 
 ## See Also 
  * [Integrating RadHtmlPlaceholder and RadWindow]({%slug radhtmlplaceholder-howto-radwindowintegration%})

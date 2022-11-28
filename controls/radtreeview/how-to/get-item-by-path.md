@@ -38,7 +38,7 @@ Here is an ordinary treeview declaration:
 	        </telerik:RadTreeView>
 	{{endregion}}
 
-![](images/RadTreeView_HowToGetItemByPath_001.PNG)
+![WPF RadTreeView ](images/RadTreeView_HowToGetItemByPath_001.PNG)
 
 For example, see the following situation - you want to retrieve the treeview item with __Header__ Soccer. In order to do that you need to perform the following steps:
 

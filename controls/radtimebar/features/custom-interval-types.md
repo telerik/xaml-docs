@@ -146,7 +146,7 @@ Below you can find a sample custom interval implementation:
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TimeBar/WPF/CustomIntervalTypes).
 
 Using the sample custom interval above, you will get the following result:
-![](images/radtimebar-features-custom-interval-types_01.jpg)
+![WPF RadTimeBar ](images/radtimebar-features-custom-interval-types_01.jpg)
 
 ## See Also
  * [Intervals Formatters]({%slug radtimebar-intervals-formatters%})

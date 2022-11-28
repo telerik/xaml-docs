@@ -249,7 +249,7 @@ In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMen
 	radPane.ContextMenuTemplate = Nothing
 {{endregion}}
 
-![](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
+![WPF RadDocking ](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
 
 ## See Also
 

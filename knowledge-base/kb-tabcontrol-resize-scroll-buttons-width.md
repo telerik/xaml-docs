@@ -46,4 +46,4 @@ Get the RepeatButton controls representing the scroll buttons. Then set their Wi
 	}
 {{endregion}}
 
-![](images/kb-tabcontrol-resize-scroll-buttons-width-0.png)
+![WPF ](images/kb-tabcontrol-resize-scroll-buttons-width-0.png)

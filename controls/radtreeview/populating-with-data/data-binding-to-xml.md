@@ -13,7 +13,7 @@ position: 4
 To bind the __RadTreeView__ to a XML you will need to convert the XML to a collection and then to bind that collection using the __ItemsSource__ property of the __RadTreeView__. This tutorial will show you how to do this.
 
 The final result should look like the snapshot below:
-![](images/RadTreeView_PopulatingWithDataBindingToXML_001.PNG)
+![WPF RadTreeView ](images/RadTreeView_PopulatingWithDataBindingToXML_001.PNG)
 
 * The first step is to add references to the following assemblies:
 	* __Telerik.Windows.Controls.Navigation__
@@ -241,7 +241,7 @@ The final result should look like the snapshot below:
 		{{endregion}}
 
 * Here is the final result.
-![](images/RadTreeView_PopulatingWithDataBindingToXML_010.PNG)
+![WPF RadTreeView ](images/RadTreeView_PopulatingWithDataBindingToXML_010.PNG)
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

@@ -18,15 +18,15 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 
 The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ controls that are most commonly used in the application. It is rendered above  the __ApplicationButton__ to make it easily accessible to end-users.
 
-![](images/RibbonView_QAT_Overview.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_Overview.png)
 
 This is the __default__ position of the __Quick Access Toolbar__. However, it is also possible to position the Quick Access Toolbar __below__ the Ribbon control.
 
-![](images/RibbonView_QAT_Bellow.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_Bellow.png)
 
 An integral part of the Quick Access Toolbar is the __Quick Access Menu__, which is rendered right next to the Quick Access Toolbar.
 
-![](images/RibbonView_QAT_Menu.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_Menu.png)
 
 The Quick Access Menu can be used by the end-user to choose the place of the Quick Access Toolbar - __above__ or __below__ the ribbon, or to __hide__ the entire ribbon control.        
 
@@ -87,7 +87,7 @@ The next example demonstrates how to add several buttons as toolbar items to you
 {{endregion}}
 
 The result can be seen on the snapshot below.
-![](images/RibbonView_QAT_Sample.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_Sample.png)
 
 ## Changing the QuickAccessToolbar Position 
 
@@ -118,13 +118,13 @@ The next example demonstrates how to set the __QuickAccessToolBarPosition__ prop
 
 The result from the previous example is that when you run your application, the __QuickAccessToolbar__ will be positioned below the ribbon.
 
-![](images/RibbonView_QAT_BellowSample.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_BellowSample.png)
 
 >tip The default value of the __RadRibbonView__'s __QuickAccessToolBarPosition__ property is __QuickAccessToolBarPosition.AboveRibbon__.          
 
 __RadRibbonView__ has a built-in feature, which allows you to change the __QuickAccessToolbar__ position run-time. Suffice it to execute the QuickAccessMenu's "Show below/above the Ribbon" command.
 
-![](images/RibbonView_QAT_ShowBellow.png)
+![WPF RadRibbonView ](images/RibbonView_QAT_ShowBellow.png)
 
 ## Hiding the QuickAccessToolbar
 

@@ -24,4 +24,4 @@ Displaying ticks along the track can be done by setting the __TickPlacement__ pr
 
 * __Both__ - ticks appear above and below the track bar for a horizontal __RadSlider__, or to the left and right of the track for a vertical __RadSlider__. 
 
-![](images/radslider_features_tickplacement.png)
+![WPF RadSlider ](images/radslider_features_tickplacement.png)

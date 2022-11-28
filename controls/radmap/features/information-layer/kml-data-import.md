@@ -97,7 +97,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
     
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_KMLDataImport_01.png)
+![WPF RadMap ](images/RadMap_Features_KMLDataImport_01.png)
 
 ## See Also
  * [Dynamic Layer]({%slug radmap-features-dynamic-layer%})

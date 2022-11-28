@@ -32,7 +32,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 * Open the __Asset Library__ (*Window->Assets*) in Expression Blend and start writing the name of the __RadChart__ in the search box. 
  
-![](images/RadChart_GettingStarted_01.png)
+![WPF RadChart ](images/RadChart_GettingStarted_01.png)
 
 * Drag a __RadChart__ on the artboard.
 
@@ -191,7 +191,7 @@ The source code above does several things but the most important of them are:
 
 And here is how your first line chart should look like.
  
-      ![](images/RadChart_GettingStarted_03.png)
+      ![WPF RadChart ](images/RadChart_GettingStarted_03.png)
 
 The X-__axis__ can be further customized by replacing the month numbers (1, 2, 3...) with the respective month names (January, February, March...). To find out how to do it read [Categorical Charts]({%slug radchart-features-categorical-charts%}) topic.
 

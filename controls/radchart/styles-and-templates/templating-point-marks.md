@@ -92,7 +92,7 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 
 Here is a snapshot of the result.
 
-![](images/RadChart_TemplatingPointMarks_06.png)
+![WPF RadChart ](images/RadChart_TemplatingPointMarks_06.png)
 
 Here is the resulting XAML for the __PointMarkItem's Style__:
 

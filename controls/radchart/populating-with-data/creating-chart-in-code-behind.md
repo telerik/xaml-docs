@@ -377,7 +377,7 @@ The code bellow defines __LineSeriesDefinition__, that represents the line chart
 
 The result is [categorical chart]({%slug radchart-features-categorical-charts%}), where on __X-Axis__ you can see the months: 
 
-![](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_020.png)
+![WPF RadChart ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_020.png)
 
 ## See Also
 

@@ -38,7 +38,7 @@ Here is an example of a __RadDataPager__ control with an __AutoEllipsisMode__ se
 {{endregion}}
 
 
-![](images/RadDataPager_Features_AutoEllipsis_01.png)
+![WPF RadDataPager ](images/RadDataPager_Features_AutoEllipsis_01.png)
 
 ## See Also
 

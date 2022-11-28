@@ -71,7 +71,7 @@ Here is an example:
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(gridline)
 {{endregion}}
 
-![](images/RadChart_Features_Annotations_CustomGridLine_01.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_CustomGridLine_01.png)
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Line__ element that visually represents the __CustomGridLine__. Via this style you can set the __StrokeDashArray__ property for example.
 
@@ -108,4 +108,4 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 
 >tipThis can be done in code behind too.
-![](images/RadChart_Features_Annotations_CustomGridLine_02.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_CustomGridLine_02.png)

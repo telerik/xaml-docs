@@ -21,7 +21,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section will explain the structure of the __RadTreeView__ 's template. Here is a snapshot of the template generated in Expression Blend.
 
-![](images/RadTreeView_StylesAnTemplates_Templates_Structure_01.png)
+![WPF RadTreeView ](images/RadTreeView_StylesAnTemplates_Templates_Structure_01.png)
 
 It contains the following parts:
 
@@ -43,7 +43,7 @@ It contains the following parts:
 
 ## RadTreeViewItem Template Structure
 
-![](images/RadTreeView_StylesAnTemplates_Templates_Structure_02.png)
+![WPF RadTreeView ](images/RadTreeView_StylesAnTemplates_Templates_Structure_02.png)
 
 * __Root Element__ - is of type __Grid__ and represents the layout root for the template. 
 

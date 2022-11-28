@@ -74,7 +74,7 @@ The __RadMaskedInput__ controls expose a __Text__ property that gets the value d
 	</StackPanel>
 {{endregion}}
 
-![](images/radmaskedinput_features_text_mode.png)
+![WPF RadMaskedInput ](images/radmaskedinput_features_text_mode.png)
 
 ## ValueToTextConverter
 
@@ -158,7 +158,7 @@ Now we can define the __NumericValueToTextConverter__ as a resource in our appli
 	</StackPanel>
 {{endregion}}
 
-![](images/radmaskedinput_features_converter.png)
+![WPF RadMaskedInput ](images/radmaskedinput_features_converter.png)
 
 ## Add/Remove the ClearButton
 
@@ -179,7 +179,7 @@ The default __Template__ of the __RadMaskedInput__ controls defines a __ClearBut
 	</StackPanel>
 {{endregion}}
 
-![](images/radmaskedinput_features_clear_button.png)
+![WPF RadMaskedInput ](images/radmaskedinput_features_clear_button.png)
 
 ## IsLastPositionEditable
 

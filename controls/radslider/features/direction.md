@@ -33,7 +33,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	</telerik:RadSlider>
 {{endregion}}
 
-![](images/radslider_features_normal_horizontal.png)
+![WPF RadSlider ](images/radslider_features_normal_horizontal.png)
 
 #### __XAML__
 
@@ -49,7 +49,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	</telerik:RadSlider>
 {{endregion}}
 
-![](images/radslider_features_reversed_horizontal.png)
+![WPF RadSlider ](images/radslider_features_reversed_horizontal.png)
 
 #### __XAML__
 
@@ -71,7 +71,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	</telerik:RadSlider>
 {{endregion}}
 
-![](images/radslider_features_normal_vertical.png)
+![WPF RadSlider ](images/radslider_features_normal_vertical.png)
 
 #### __XAML__
 
@@ -93,4 +93,4 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	</telerik:RadSlider>
 {{endregion}}
 
-![](images/radslider_features_reversed_vertical.png)
+![WPF RadSlider ](images/radslider_features_reversed_vertical.png)

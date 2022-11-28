@@ -17,7 +17,7 @@ CircularProgressBar is a component that allows you to convey the progress of dif
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radcircularprogressbar-overview-1.png)
+![WPF RadCircularProgressBar ](images/radcircularprogressbar-overview-1.png)
 
 >tip Get started with the control with its [Getting Started]({%slug radcircularprogressbar-getting-started%}) help article that shows how to use it in a basic scenario.
 

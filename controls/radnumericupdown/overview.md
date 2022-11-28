@@ -17,7 +17,7 @@ __RadNumericUpDown__ provides a rich user experience by allowing users to define
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadNumericUpDown_General.png)
+![WPF RadNumericUpDown ](images/RadNumericUpDown_General.png)
 
 ## Key Features
 

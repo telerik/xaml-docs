@@ -22,7 +22,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section will explain the structure of the __RadMenu__'s template. Here is a snapshot of the template generated in Expression Blend.        
 
-![](images/RadMenu_Styles_and_Templates_Structure_01.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_01.png)
 
 It contains the following parts:
 
@@ -74,7 +74,7 @@ For details about the template parts of the different templates read the followi
 
 This section will explain the structure of the __RadMenuItem__'s Top-Level Header template. Here is a snapshot of the template generated in Expression Blend.
 
-![](images/RadMenu_Styles_and_Templates_Structure_02.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_02.png)
 
 It contains the following parts:
 
@@ -114,7 +114,7 @@ It contains the following parts:
 
 This section will explain the structure of the __RadMenuItem__'s Top-Level Item template. Here is a snapshot of the template generated in Expression Blend.
 
-![](images/RadMenu_Styles_and_Templates_Structure_03.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_03.png)
 
 It contains the following parts:
 
@@ -140,7 +140,7 @@ It contains the following parts:
 
 This section will explain the structure of the __RadMenuItem__'s Submenu Header template. Here is a snapshot of the template generated in Expression Blend.
 
-![](images/RadMenu_Styles_and_Templates_Structure_04.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_04.png)
 
 It contains the following parts:
 
@@ -180,7 +180,7 @@ It contains the following parts:
 
 This section will explain the structure of the __RadMenuItem's__ Submenu Item template. Here is a snapshot of the template generated in Expression Blend.        
 
-![](images/RadMenu_Styles_and_Templates_Structure_05.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_05.png)
 
 It contains the following parts:
 
@@ -206,7 +206,7 @@ It contains the following parts:
 
 This section will explain the structure of the __RadMenuItem's__ Separator template. Here is a snapshot of the template generated in Expression Blend.
 
-![](images/RadMenu_Styles_and_Templates_Structure_06.png)
+![WPF RadMenu ](images/RadMenu_Styles_and_Templates_Structure_06.png)
 
 It contains the following parts:
 

@@ -452,7 +452,7 @@ This mode of the selection can be also used when entering the arguments of a fun
  {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_10.png)
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}![](images/RadSpreadsheet_UI_Selection_11.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet ](images/RadSpreadsheet_UI_Selection_11.png){% endif %}
 
 If a formula is already entered and you would like to see the references used in it, enter edit mode and they will be selected automatically.
 
@@ -460,4 +460,4 @@ If a formula is already entered and you would like to see the references used in
  {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_12.png)
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}![](images/RadSpreadsheet_UI_Selection_13.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet ](images/RadSpreadsheet_UI_Selection_13.png){% endif %}

@@ -16,7 +16,7 @@ This article will show you how to style RadPropertyGrid's group rows conditional
 
 Assume we have a RadPropertyGrid bound to an Employee object. You can view the initial setup in the [Styling Groups]({%slug radpropertygrid-groupstyle%}) article. At first the appearance of the control looks like this:
 
-![](images/RadPropertyGrid_groupstyle1.png)
+![WPF RadPropertyGrid ](images/RadPropertyGrid_groupstyle1.png)
 
 What we would like to achieve is to apply one style to the Group Name row and different style to the other groups. In order to achieve the desired behavior, you need to follow these steps:
 
@@ -137,7 +137,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 The RadPropertyGrid should have the following appearance after the applied changes:
 
-![](images/RadPropertyGrid-group-style-selector.png)
+![WPF RadPropertyGrid ](images/RadPropertyGrid-group-style-selector.png)
 
 >tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 

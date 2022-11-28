@@ -21,7 +21,7 @@ __FilterControl__ exposes a __Style__ property which allows you to apply a style
 
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow the article on [different approaches on how to extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
 
-![](images/RadDataFilter_StylesAndTemplates_StylingTheFilterControl_01.png)
+![WPF RadDataFilter ](images/RadDataFilter_StylesAndTemplates_StylingTheFilterControl_01.png)
 
 
 * **FilterControl_InnerBorder** a brush, that represents the color of the inner border of __FilterControl__.

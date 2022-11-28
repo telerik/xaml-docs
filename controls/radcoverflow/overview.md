@@ -17,11 +17,11 @@ __RadCoverFlow__ is a useful tool that can be used to navigate through a collect
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadCoverFlow.png)
+![WPF RadCoverflow ](images/RadCoverFlow.png)
 
 {% if site.site_name == 'Silverlight' %}
 In this video, we will look at some of the features and functionality in Telerik RadCoverFlow for Silverlight and how you can start using it in your rich internet applications today.(Runtime: 03:01)
-[![](images/CoverFlow_Getting_Started.png)](http://tv.telerik.com/watch/silverlight/video/introduction-radcoverflow-silverlight)	
+[![WPF RadCoverflow ](images/CoverFlow_Getting_Started.png)](http://tv.telerik.com/watch/silverlight/video/introduction-radcoverflow-silverlight)	
 {% endif %}
 
 ## See Also

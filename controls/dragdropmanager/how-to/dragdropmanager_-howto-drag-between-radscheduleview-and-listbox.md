@@ -172,4 +172,4 @@ Finally, we add a ScheduleView and bind it to a sample data:
 
 The resultant application should look as follows:
 
-![](images/DragDropManager_ScheduleViewToListBox.png)
+![WPF ](images/DragDropManager_ScheduleViewToListBox.png)

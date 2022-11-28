@@ -11,7 +11,7 @@ position: 3
 # Selection
 
 __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it either run-time by clicking with your mouse on the appropriate tab header or programmatically via the properties described below.
-![](images/RibbonView_Selection_Overview.png)
+![WPF RadRibbonView ](images/RibbonView_Selection_Overview.png)
 
 ## Properties
 

@@ -94,7 +94,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 
 Here is a snapshot of the final result.
-![](images/RadChart_Features_Annotations_CustomLine_01.png)
+![WPF RadChart ](images/RadChart_Features_Annotations_CustomLine_01.png)
 
 ##  How to draw a Custom Line Parallel to one of the Axes
 
@@ -111,6 +111,6 @@ To make your custom line parallel to one of the two Axes you should set the *Slo
 
 
 The result can be seen below:
-![](images/RadChart_Features_Annotations_CustomLine_02.PNG)
+![WPF RadChart ](images/RadChart_Features_Annotations_CustomLine_02.PNG)
 
 >When the Custom Line should be parallel to the XAxis, its Slope should be set to __0__

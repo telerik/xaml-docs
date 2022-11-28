@@ -163,4 +163,4 @@ __Code:__
 {{endregion}}
 
 __Preview:__
-![](images/RadToolBar_bands.png)
+![WPF RadToolBar ](images/RadToolBar_bands.png)

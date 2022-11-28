@@ -19,7 +19,7 @@ __RadRibbonView__ is an easy-to-use implementation of the MS Office “ribbon”
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/ribbonview-overview-0.png)
+![WPF RadRibbonView ](images/ribbonview-overview-0.png)
 
 ## Key Features	
 

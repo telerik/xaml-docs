@@ -75,7 +75,7 @@ The __SelectionStart__ property gets or sets the starting point of the selected 
 	End Sub
 {{endregion}}
 
-![](images/RadMaskedTextBox_Features_Selection_010.png)
+![WPF RadMaskedInput ](images/RadMaskedTextBox_Features_Selection_010.png)
 
 ## See Also
  * [UpdateValueEvent]({%slug radmaskedinput-features-update-value%})

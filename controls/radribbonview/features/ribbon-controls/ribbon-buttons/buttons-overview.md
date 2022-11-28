@@ -26,13 +26,13 @@ The following Ribbon buttons are available:
 There are three button states:
 
 * __Large__ - displays the large image and the text label defined for the button.
-![](images/RibbonView_Buttons_Overview_Large.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_Large.png)
 
 * __Medium__ - displays the small image and the text label defined for the button.
-![](images/RibbonView_Buttons_Overview_Medium.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_Medium.png)
 
 * __Small__ - displays the small image defined for the button.
-![](images/RibbonView_Buttons_Overview_Small.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_Small.png)
 
 The state of the button depends on the state of the __RadRibbonGroup__ and can be controlled via the __CollapseToSmall__, __CollapseToMedium__ and the __IsAutoSize__ properties of the ribbon buttons. To learn more about that take a look at the [Common Functionality](#Common_Functionality) section of this topic.		
 
@@ -83,11 +83,11 @@ Here is an example of a __RadRibbonButton__ with the following properties set.
 {{endregion}}
 
 This button has its initial size set to __Large__ and its text label set to __"Equation"__. As the __IsAutoSize__ property is set to __True__, the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its Small size when the __RadRibbonGroup__ collapses to __Medium__. 
-![](images/RibbonView_Buttons_Overview_LargeGroup.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_LargeGroup.png)
 
 and
 
-![](images/RibbonView_Buttons_Overview_CollapseGroup.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_CollapseGroup.png)
 
 ## Handling the Button Clicks
 
@@ -184,7 +184,7 @@ After that set the __Command__ property of the __RadRibbonButton__ to the {% if 
 {% endif %}
 
 And now if you run your application and hit the 'Equation' button, the background of the user control will be changed to Blue as it is shown on the snapshot below.
-![](images/RibbonView_Buttons_Overview_Command.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_Command.png)
 
 ## ButtonGroup
 
@@ -217,7 +217,7 @@ The next example shows you how to use __RadButtonGroup__.
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RibbonView_Buttons_Overview_ButtonGroup.png)
+![WPF RadRibbonView ](images/RibbonView_Buttons_Overview_ButtonGroup.png)
 
 ## See Also
  * [Ribbon Group]({%slug radribbonview-ribbon-group%})

@@ -307,7 +307,7 @@ Different approaches have been adopted when it comes to exporting inline UI cont
 
 * __HtmlFormatProvider__: The inline UI containers are serialized as XAML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The __CommentContent__ contains the XAML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside __RadRichTextBox__. The UI element can also be omitted from the document altogether.
 
-![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_01.png)
+![WPF RadRichTextBox ](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_01.png)
 
 * __DocxFormatProvider__: All __InlineUIContainers__ are ignored as the Microsoft Word concept of controls is quite different.
             
@@ -316,7 +316,7 @@ Different approaches have been adopted when it comes to exporting inline UI cont
 
 
 * __PdfFormatProvider__: The __InlineUIContainers__ are taken a snapshot of and included in the export. If you like, you can prevent that by setting the __InlineUIContainersExportMode__ property of the provider to __None__.
-	![](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
+	![WPF RadRichTextBox ](images/RadRichTextBox_Features_LayoutElements_InlineUIContainer_02.png)
 
 ### Importing InlineUIContainers
 

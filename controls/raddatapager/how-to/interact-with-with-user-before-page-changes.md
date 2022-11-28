@@ -57,7 +57,7 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 	End Sub
 {{endregion}}
 
-![](images/RadDataPager_How_To_Interact_With_The_User_01.png)
+![WPF RadDataPager ](images/RadDataPager_How_To_Interact_With_The_User_01.png)
 
 ## See Also
 

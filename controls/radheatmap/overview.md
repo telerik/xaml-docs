@@ -17,7 +17,7 @@ The __RadHeatMap__ control can be used to visualize numeric data in a matrix lik
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radheatmap-overview-0.png)
+![WPF RadHeatMap ](images/radheatmap-overview-0.png)
 
 ## Key Features
 

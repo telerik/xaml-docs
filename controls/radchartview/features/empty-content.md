@@ -39,7 +39,7 @@ When the axes are properly set but there is no series defined all charting compo
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![](images/radchartview-features-empty-content-0.png)
+![WPF RadChartView ](images/radchartview-features-empty-content-0.png)
 
 ## Customizing the Content
 
@@ -61,7 +61,7 @@ The `EmptyContent` property is of type `object` and it allows to set the content
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![](images/radchartview-features-empty-content-1.png)
+![WPF RadChartView ](images/radchartview-features-empty-content-1.png)
 
 The `EmptyContentTemplate` property is of type `DataTemplate` and it allows setting a template that will be applied to the empty content presenter. The data context in the template is the object assigned to the `EmptyContent` property.
 
@@ -86,7 +86,7 @@ The `EmptyContentTemplate` property is of type `DataTemplate` and it allows sett
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![](images/radchartview-features-empty-content-2.png)
+![WPF RadChartView ](images/radchartview-features-empty-content-2.png)
 
 ## Hiding the Empty Content Message
 
@@ -107,4 +107,4 @@ To hide the empty content message, set the `ShowEmptyContent` property of the ch
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![](images/radchartview-features-empty-content-3.png)
+![WPF RadChartView ](images/radchartview-features-empty-content-3.png)

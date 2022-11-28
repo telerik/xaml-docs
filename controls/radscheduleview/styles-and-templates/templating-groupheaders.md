@@ -227,6 +227,6 @@ Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView
 
 Here is the result:
 
-![](images/radscheduleview_groupheadercontenttemplate.png)
+![WPF RadScheduleView ](images/radscheduleview_groupheadercontenttemplate.png)
 
 >tip Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate){% else %}GroupHeaderTemplate Example at [WPF demos](https://demos.telerik.com/wpf/){% endif %} to see the GroupHeaderContentTemplateSelector in action.

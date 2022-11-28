@@ -24,14 +24,14 @@ This topic will show you how to perform the second one.
 In order to copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonComboBox__ you want to style.				
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_ComboBox_Locate.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_ComboBox_LocateWPF.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_ComboBox_CreateStyle.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -50,21 +50,21 @@ You can modify these properties to achieve the desired appearance. However the m
 {% endif %}
 
 >The __RadRibbonComboBox__ has two templates - __Editable__ and __NonEditable__. As default the __NonEditable__ is used. To modify the __Editable__ template you have to right-click on the style and select *Edit Additional Templates -> Edit EditalbeTemplate -> Edit Current*.
->![](images/RibbonView_Styling_ComboBox_ControlTemplate.png)
+>![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_ControlTemplate.png)
 
 {% if site.site_name == 'WPF' %}
 
 Change the elements' properties untill you get the desired look.
 
 >You can also modify the triggers defined for the __RadRibbonComboBox__. They are located in the 'Triggers' pane.
->![](images/RibbonView_Styling_ComboBox_Triggers.png)
+>![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_Triggers.png)
 
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonComboBox__. Their names indicate to which part of the __RadRibbonComboBox's__ appearance they are assigned.
-![](images/RibbonView_Styling_ComboBox_Resources.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_Resources.png)
 
 * __RibbonComboBoxBackgroundBrush__ - a brush that represents the background color of the __RadRibbonComboBox__.						
 
@@ -119,13 +119,13 @@ Modify the resource to bring the desired appearance to the __RadRibbonComboBox__
 ## Example
 
 Here is an example of the above resources modified:
-![](images/RibbonView_Styling_ComboBox_ResourcesModified.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_ResourcesModified.png)
 
 Here is a snapshot of the result, when the RadRibbonComboBox is not editable:
-![](images/RibbonView_Styling_ComboBox_Example.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_Example.png)
 
 and when it is editable:
-![](images/RibbonView_Styling_ComboBox_ExampleEditable.png)
+![WPF RadRibbonView ](images/RibbonView_Styling_ComboBox_ExampleEditable.png)
 
 {% endif %}
 

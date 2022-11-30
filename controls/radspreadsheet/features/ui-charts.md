@@ -22,7 +22,7 @@ RadSpreadsheet enables you working with charts through its UI. You can add a cha
 >noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case the selected cells don't contain any values, the charts will be shown empty. 
 
 #### Figure 1: Insert Chart dialog
-![](images/Features-Charts_15.png)
+![WPF RadSpreadsheet Insert Chart dialog](images/Features-Charts_15.png)
 
 ## Supported Chart Types
 

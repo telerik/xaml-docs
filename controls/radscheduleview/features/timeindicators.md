@@ -46,7 +46,7 @@ The TimeIndicator class allows you to set __Offset__ and __Location__.
 {{endregion}}
 
 #### Figure 1: RadScheduleView with two time indicators
-![](images/radscheduleview-features-timeindicator-0.png)
+![WPF RadScheduleView RadScheduleView with two time indicators](images/radscheduleview-features-timeindicator-0.png)
 
 ## TimeIndicatorStyleSelector
 

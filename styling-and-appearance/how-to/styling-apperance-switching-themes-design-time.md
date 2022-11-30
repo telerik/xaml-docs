@@ -27,7 +27,7 @@ The following example demonstrates how the feature works in few easy steps.
 This will automatically add the new theme dll in the references of the project and merge the required resource dictionaries in the __App.xaml resources__.
 
 #### __Figure 1: The added theme assembly reference__
-![](images/styling-apperance-switching-themes-design-time-03.png)
+![WPF The added theme assembly reference](images/styling-apperance-switching-themes-design-time-03.png)
 
 #### __[XAML] Example 1: The merged theme resources__
 {{region styling-apperance-swiching-themes-design-time-0}}

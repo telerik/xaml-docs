@@ -88,7 +88,7 @@ By default the RadCollapsiblePanel does not apply additional vertical spacing be
 {{endregion}}
 
 #### Figure 3: Collapsible panel with a vertical spacing of 10 between the buttons
-![](images/radribbonview-collapsible-panel-2.png)
+![WPF RadRibbonView Collapsible panel with a vertical spacing of 10 between the buttons](images/radribbonview-collapsible-panel-2.png)
 
 > This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.
 

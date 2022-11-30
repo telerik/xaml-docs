@@ -15,7 +15,7 @@ The data fields in RadCardView's cards can be edited via the UI.
 Clicking onto a card will select it and start the edit mode of the first data field. This displays an editor for the data bound value. The editing is started also by clicking on the corresponding data field in the card.
 
 #### Figure 1: Data field in edit mode
-![](images/radcardview-features-editing-0.png)
+![WPF RadCardView Data field in edit mode](images/radcardview-features-editing-0.png)
 
 The editing action fires several events that can be used to interfere with the process. Read more in the [Events]({%slug radcardview-events%}#editing) article.
 

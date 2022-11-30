@@ -27,7 +27,7 @@ With the __R2 2018__ version of our controls, you can now animate RadChartView s
 * [Notes](#notes)
 
 #### __Figure 1: Chart Animations__
-![](images/radchartview-features-animations-main-animations.gif)
+![WPF RadChartView Chart Animations](images/radchartview-features-animations-main-animations.gif)
 
 ## Animation Types
 
@@ -87,7 +87,7 @@ The __ChartMoveAnimation__ animates the sliding effect of the series/point from 
 {{endregion}}
 
 #### __Figure 2: This animation look as follows__
-![](images/radchartview-features-animations-MoveAnimation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-MoveAnimation.gif)
 
 ### Reveal Animation
 
@@ -133,7 +133,7 @@ The __ChartRevealAnimation__  animation animates the clipping of the series and 
 {{endregion}}
 
 #### __Figure 3: This animation look as follows__
-![](images/radchartview-features-animations-reveal-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-reveal-animation.gif)
 
 ### Fade Animation
 
@@ -169,7 +169,7 @@ The __ChartFadeAnimation__ fades in the series and their points. The fade effect
 {{endregion}}
 
 #### __Figure 4: This animation look as follows__
-![](images/radchartview-features-animations-fade-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-fade-animation.gif)
 
 ### Drop and Fade Animation
 
@@ -232,7 +232,7 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 {{endregion}}
 
 #### __Figure 5: This animation look as follows__
-![](images/radchartview-features-animations-drop-fade-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-drop-fade-animation.gif)
 
 ### Scale Animation
 
@@ -303,7 +303,7 @@ The __ChartScaleAnimation__ animates the size of the series and their points. Yo
 {{endregion}}
 
 #### __Figure 6: This animation look as follows__
-![](images/radchartview-features-animations-scale-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-scale-animation.gif)
 
 ### Pie Chart Angle Range Animation
 
@@ -335,7 +335,7 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 {{endregion}}
 
 #### __Figure 7: This animation look as follows__
-![](images/radchartview-features-animations-pie-angle-range-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-pie-angle-range-animation.gif)
 
 ### Pie Chart Radius Factor Animation
 
@@ -364,7 +364,7 @@ The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of 
 {{endregion}}
 
 #### __Figure 8: This animation look as follows__
-![](images/radchartview-features-animations-pie-radius-factor-animation.gif)
+![WPF RadChartView This animation look as follows](images/radchartview-features-animations-pie-radius-factor-animation.gif)
 
 ## Custom Animation
 
@@ -426,7 +426,7 @@ All built-in animation of the chart derives from __ChartAnimationBase__. In orde
 {{endregion}}
 
 #### __Figure 9: This custom animation look as follows__
-![](images/radchartview-features-animations-custom-animation.gif)
+![WPF RadChartView This custom animation look as follows](images/radchartview-features-animations-custom-animation.gif)
 
 ## Events
 

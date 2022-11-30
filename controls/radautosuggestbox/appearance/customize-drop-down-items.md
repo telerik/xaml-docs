@@ -33,7 +33,7 @@ The __ItemTemplate__ allows you to define a DataTemplate with any UIElements, wh
 {{endregion}}
 
 #### Figure 1: Custom ItemTemplate
-![](images/radautosuggestbox-appearance-customize-drop-down-items-0.png)
+![WPF RadAutoSuggestBox Custom ItemTemplate](images/radautosuggestbox-appearance-customize-drop-down-items-0.png)
 
 The __ItemTemplateSelector__ allows you to choose a different DataTemplate for each item in the ItemsSource, based on a condition. 
 
@@ -79,7 +79,7 @@ The __ItemTemplateSelector__ allows you to choose a different DataTemplate for e
 {{endregion}}
 
 #### Figure 2: Custom ItemTemplateSelector
-![](images/radautosuggestbox-appearance-customize-drop-down-items-1.png)
+![WPF RadAutoSuggestBox Custom ItemTemplateSelector](images/radautosuggestbox-appearance-customize-drop-down-items-1.png)
 
 The following example shows how to setup a basic RadAutoSuggestBox in order to test the ItemTemplate features.
 
@@ -129,7 +129,7 @@ The RadAutoSuggestBox control provides few properties to change the drop down de
 {{endregion}}
 
 #### Figure 3: Custom drop down sizes
-![](images/radautosuggestbox-appearance-customize-drop-down-items-2.png)
+![WPF RadAutoSuggestBox Custom drop down sizes](images/radautosuggestbox-appearance-customize-drop-down-items-2.png)
 
 Additionally, you can manually open or close the drop down via the __IsDropDownOpen__ property of RadAutoSuggestBox.
 

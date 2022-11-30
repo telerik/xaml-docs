@@ -15,7 +15,7 @@ RadCardView provides you with the ability to collapse and expand cards and group
 A card or a group can be expanded/collapsed via the expander button in the UI of the control.
 
 #### Figure 1: RadCardView group and card expander
-![](images/radcardview-features-expand-collapse-0.png)
+![WPF RadCardView RadCardView group and card expander](images/radcardview-features-expand-collapse-0.png)
 
 To expand/collapse an item in code use the __Collapse__ and __Expand__ methods of RadCardView. The methods will toggle the expand state of a card if you provide a data item as an argument, or a group if you provide an `IGroup` object.
 

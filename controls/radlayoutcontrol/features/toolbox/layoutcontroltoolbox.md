@@ -52,14 +52,14 @@ The toolbox can be associated with RadLayoutControl through its __LayoutControl_
 Initially, the __LayoutControlToolBox__ displays a single toggle button (see __Figure 1__).
 	
 #### __Figure 1: Closed toolbox__  
-![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-01.png)
+![WPF RadLayoutControl Closed toolbox](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-01.png)
 
 >important The toggle button will be displayed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
 
 When the button is clicked the toolbox view will be opened in a popup.
 
 #### __Figure 2: Toolbox view__  
-![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-02.png)
+![WPF RadLayoutControl Toolbox view](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-02.png)
 
 ## Manually control the toolbox view visibility
 
@@ -98,7 +98,7 @@ The popup of the LayoutControlToolBox component contains a __LayoutControlToolBo
 {{endregion}}
 	
 #### __Figure 3: Modified toolbox view__
-![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-03.png)
+![WPF RadLayoutControl Modified toolbox view](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-03.png)
 	
 ## Style the toolbox view host window
 
@@ -124,7 +124,7 @@ The toolbox view is displayed in a __RadWindow__ element which can be customized
 > The __BasedOn__ setting is applicable only in a scenario with [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). This attribute is set so that the custom style inherits the default toolbox window style. The __LayoutControlToolBoxWindowStyle__ is located in the __Telerik.Windows.Controls.Navigation.xaml__ ResourceDictionary.
 	
 #### __Figure 4: Custom window style__
-![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-04.png)
+![WPF RadLayoutControl Custom window style](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-04.png)
 
 ## Position the toolbox button
 
@@ -141,7 +141,7 @@ The button that opens the toolbox can be re-positioned in the additional items c
 {{endregion}}
 
 #### __Figure 5: Bottom-right positioned button__
-![](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-05.png)
+![WPF RadLayoutControl Bottom-right positioned button](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-05.png)
 
 ## See Also  
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

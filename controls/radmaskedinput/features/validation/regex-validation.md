@@ -71,7 +71,7 @@ You can set the error that will be shown in the validation tooltip via the __Err
 {{endregion}}
 
 #### __Figure 1: Custom error message__
-![](images/radmaskedinput-features-regex-validation-0.png)
+![WPF RadMaskedInput Custom error message](images/radmaskedinput-features-regex-validation-0.png)
 
 {% if site.site_name == 'WPF' %}
 ## Display Validation Errors

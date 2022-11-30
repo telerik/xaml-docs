@@ -30,7 +30,7 @@ To use __RadBadge__, add references to the following assemblies:
 {{endregion}}
 
 #### Figure 1: RadBadge Example
-![](images/radbadge-getting-started-0.PNG)
+![WPF RadBadge RadBadge Example](images/radbadge-getting-started-0.PNG)
 
 ## See Also  
 * [Key Properties]({%slug radbadge-key-properties%})

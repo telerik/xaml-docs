@@ -67,7 +67,7 @@ This example will achieve the following:
 Here is the result:
 
 #### __Figure 1: DateTimePicker with selection mode set to Month__
-![](images/dateTimePicker_features_date_selection_modes_010.png)
+![WPF RadDateTimePicker DateTimePicker with selection mode set to Month](images/dateTimePicker_features_date_selection_modes_010.png)
 
 ## See Also
 

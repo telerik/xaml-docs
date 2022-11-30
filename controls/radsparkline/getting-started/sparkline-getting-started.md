@@ -63,7 +63,7 @@ The __XValuePath__ and __YValuePath__ properties should be set to the names of t
 {{endregion}}
 
 #### Figure 1: RadLinearSparkline
-![](images/radsparkline-getting-started-0.png)
+![WPF RadSparkLine RadLinearSparkline](images/radsparkline-getting-started-0.png)
 
 ## Showing Axis
 
@@ -72,7 +72,7 @@ You can show the axis of the sparkline control by setting its __ShowAxis__ prope
 > By default the axis will be shown on value 0. This means that if the axis' range doesn't contain the 0 value, the axis won't be displayed. In this case you can set the __AxisOriginValue__ property of the sparkline control manually.
 
 #### Figure 2: Sparkline axis
-![](images/radsparkline-getting-started-1.png)
+![WPF RadSparkLine Sparkline axis](images/radsparkline-getting-started-1.png)
 
 ## Setting a Theme
 

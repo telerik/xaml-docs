@@ -44,8 +44,7 @@ __Password__ property returns the current password as a string representation. I
 __Figure 1__ illustates __RadPasswordBox__ when loaded.
 
 #### __Figure 1: RadPasswordBox with Password set__
-
-![](images/RadPasswordBox_KeyProperties_4.png)
+![WPF RadPasswordBox RadPasswordBox with Password set](images/RadPasswordBox_KeyProperties_4.png)
 
 >__Password__ is **not a dependency property** (it is not bindable) as dependency properties keep their values unencrypted in memory.
 
@@ -67,8 +66,7 @@ __PasswordChar__ property defines the masking character used to hide the actual 
 {{endregion}}
 
 #### __Figure 2: RadPasswordBox with PasswordChar set__
-
-![](images/RadPasswordBox_KeyProperties_0.png)
+![WPF RadPasswordBox RadPasswordBox with PasswordChar set](images/RadPasswordBox_KeyProperties_0.png)
 
 ## ShowPasswordButton Settings
 
@@ -93,8 +91,7 @@ To completely remove the __ShowPasswordButton__, you could set this property to 
 {{endregion}}
 
 #### __Figure 3: RadPasswordBox with ShowPasswordButtonVisibility set__
-
-![](images/RadPasswordBox_KeyProperties_1.png)
+![WPF RadPasswordBox RadPasswordBox with ShowPasswordButtonVisibility set](images/RadPasswordBox_KeyProperties_1.png)
 
 ### ShowPasswordButtonContent / ShowPasswordButtonContentTemplate
 
@@ -117,8 +114,7 @@ __Example 5__ illustates how to set the ImageTemplate to the __ShowPasswordButto
 {{endregion}}
 
 #### __Figure 4: RadPasswordBox with ShowPasswordButton content properties applied__
-
-![](images/RadPasswordBox_KeyProperties_2.png)
+![WPF RadPasswordBox RadPasswordBox with ShowPasswordButton content properties applied](images/RadPasswordBox_KeyProperties_2.png)
 
 ## Watermark Settings
 
@@ -148,8 +144,7 @@ Then, set the defined WatermarkWithImageTemplate to the __WatermarkTemplate__ of
 __Figure 5__ shows the result.
 
 #### __Figure 5: RadPasswordBox with WatermarkTemplate applied__
-
-![](images/RadPasswordBox_KeyProperties_3.png)
+![WPF RadPasswordBox RadPasswordBox with WatermarkTemplate applied](images/RadPasswordBox_KeyProperties_3.png)
 
 ### WatermarkBehavior
 

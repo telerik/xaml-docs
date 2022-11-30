@@ -105,7 +105,7 @@ The __RadTreeView__ API allows you to change the selection mode. You can do that
 As you can see in __Figure 1__, when the SelectionMode is set to Multiple you are able to select more than one item.
 
 #### __Figure 1: Multiple selection enabled__  
-![](images/RadTreeView_TreeViewItemSelection_020.png)
+![WPF RadTreeView Multiple selection enabled](images/RadTreeView_TreeViewItemSelection_020.png)
 
 >tip The default selection mode of the RadTreeView is __Single__.
 

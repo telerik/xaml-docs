@@ -91,7 +91,7 @@ After adding references to the aforementioned assemblies, you can declare __RadR
 When you run the application, you will see an empty **RadRichTextBox** as the one in **Figure 1**.
 
 #### Figure 1: Empty RadRichTextBox
-![](images/RadRichTextBox_GettingStarted_01.png)
+![WPF RadRichTextBox Empty RadRichTextBox](images/RadRichTextBox_GettingStarted_01.png)
 
 
 >tip**RadRichTextBox** uses **UI Virtualization** by creating UI elements only for the parts of the document currently visible in the viewport. For this purpose, the control **should not be measured in infinity**, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
@@ -115,7 +115,7 @@ These commands can also be used with the predefined UI that comes with __RadRich
 **Figure 2** shows what the predefined UI looks like.
 
 #### Figure 2: RadRichTextBoxRibbonUI
-![](images/RadRichTextBox_GettingStarted_02.png)
+![WPF RadRichTextBox RadRichTextBoxRibbonUI](images/RadRichTextBox_GettingStarted_02.png)
 
 >tipYou can read more about the predefined UI by following these links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%}).
 

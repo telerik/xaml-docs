@@ -342,8 +342,7 @@ In order to display your data, you need to bind the __ItemsSource__ property of 
 At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
 __Figure 1: RadTreeListView bound to collection of WarehouseItems__
-
-![](images/RadTreeListViewPopulated.png)
+![WPF RadTreeListView RadTreeListView bound to collection of WarehouseItems](images/RadTreeListViewPopulated.png)
 
 In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__ and set its __ItemsSource__ property to the respective member of the business object. Then you need to set the table definition to the __ChildTableDefinition__ property of __RadTreeListView__. 
 
@@ -391,8 +390,7 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 __Figure 2__ shows a snapshot of the result.
 
 __Figure 2: RadTreeListView with manually defined columns__
-
-![](images/RadTreeListView_GettingStarted_01.png)
+![WPF RadTreeListView RadTreeListView with manually defined columns](images/RadTreeListView_GettingStarted_01.png)
 
 ## Setting a Theme
 

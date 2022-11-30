@@ -32,8 +32,7 @@ In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgra
 Running the __Telerik Upgrade API Analyzer__ opens the screen shown in __Figure 1__.
 
 #### __Figure 1: Initial screen of Telerik Upgrade API Analyzer__
-
-![](images/upgrade-api-analyzer_0.png)
+![WPF Initial screen of Telerik Upgrade API Analyzer](images/upgrade-api-analyzer_0.png)
 
 All you need to do is:
 
@@ -51,12 +50,10 @@ All you need to do is:
 The tool starts automatically analyzing the code, as shown in __Figure 2__, and lists all the changes found between both versions, as demonstrated in __Figure 3__. 
 
 #### __Figure 2: The tool starts analyzing as soon as you open a solution__
-
-![](images/upgrade-api-analyzer_1.png)
+![WPF The tool starts analyzing as soon as you open a solution](images/upgrade-api-analyzer_1.png)
 
 #### __Figure 3: Upgrade API Analyzer lists the found differences__
-
-![](images/upgrade-api-analyzer_2.png)
+![WPF Upgrade API Analyzer lists the found differences](images/upgrade-api-analyzer_2.png)
  
 __Telerik Upgrade API Analyzer__ provides a detailed list of the found differences between both versions in a convenient way for reviewing.  The tool uses [RadGridView for WPF](https://docs.telerik.com/devtools/wpf/controls/radgridview/overview2.html) to present the results, so you can benefit from its features such as sorting, filtering and resizing columns. 
 
@@ -67,8 +64,7 @@ For each of the changes, you can see the following information:
 By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 4__.
 
 #### __Figure 4: Displaying all the changes found including the Modified ones.__
-
-![](images/upgrade-api-analyzer_3.png)
+![WPF Displaying all the changes found including the Modified ones.](images/upgrade-api-analyzer_3.png)
 
 * __Kind__: It could be Type, Property, Method, and Field.
 * __Node__: The name of the Type/Property/Method/Field.
@@ -82,8 +78,7 @@ By default, the Modified changes are not shown as they actually indicate that th
 Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 5__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
 
 #### __Figure 6: API Analyzer provides export to a HTML document__
-
-![](images/upgrade-api-analyzer_4.png)
+![WPF API Analyzer provides export to a HTML document](images/upgrade-api-analyzer_4.png)
 
 ## Do You Have a Question?
 

@@ -39,7 +39,7 @@ Similarly to the other commands of **RadPdfViewer**, the **SaveAsCommand** can b
 {{endregion}}
 
 #### Figure 1: Save As button in RadPdfViewer's toolbar
-![](images/PdfViewer_SaveAs_2.png)
+![WPF RadPdfViewer Save As button in RadPdfViewer's toolbar](images/PdfViewer_SaveAs_2.png)
 
 {% if site.site_name == 'WPF' %}
 ### Invoking in Code-Behind

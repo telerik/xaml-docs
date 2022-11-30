@@ -41,14 +41,14 @@ You can include the control in your page by either dragging it from the toolbox 
 {{endregion}}
 
 #### __Figure 1: RadTimeline visualization__
-![](images/RadTimeline_Getting_Started_0.png)
+![WPF RadTimeline RadTimeline visualization](images/RadTimeline_Getting_Started_0.png)
 
 ## RadTimeline items
 
 The RadTimeline control presents its data in two types of occurrences(events). The first one is a one-time occurrence which happens once in a time. The second type represents periodical occurrence. It requires a strict __Start__ and __End__ time to be presented.
 
 #### __Figure 2: RadTimeline items visualization__
-![](images/RadTimeline_Getting_Started_1.PNG)
+![WPF RadTimeline RadTimeline items visualization](images/RadTimeline_Getting_Started_1.PNG)
 
 >tip More information about how to populate the control with __TimelineItems__ and __TimelineInstantItems__ can be found in the [DataBinding help article]({%slug radtimeline-databinding%}) in our documentation.
 

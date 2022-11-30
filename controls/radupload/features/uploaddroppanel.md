@@ -36,7 +36,7 @@ The drop panel have the following properties:
 {{endregion}}
 
 #### __Figure 1: RadUploadDropPanel example__
-![](images/radupload-features-uploaddroppanel-0.png)
+![WPF RadUpload RadUploadDropPanel example](images/radupload-features-uploaddroppanel-0.png)
 
 ## See Also
  * [Getting Started]({%slug radupload-getting-started%})

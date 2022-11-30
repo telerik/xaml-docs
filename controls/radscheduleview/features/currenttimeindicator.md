@@ -36,8 +36,7 @@ In order to display the current time indicator, you must set the __ShowCurrentTi
 Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown in __Figure 1__.
 
 #### __Figure 1: Enable CurrentTimeIndicator__
-
-![](images/radscheduleview_currenttimeindicator_0.png)
+![WPF RadScheduleView Enable CurrentTimeIndicator](images/radscheduleview_currenttimeindicator_0.png)
 
 ## Setting CurrentTimeIndicator Location
 
@@ -62,8 +61,7 @@ As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 __Figure 2__ shows current time marked across the whole area of RadScheduleView.
 
 #### __Figure 2: Set CurrentTimeIndicatorLocation__
-
-![](images/radscheduleview_currenttimeindicator_1.png)
+![WPF RadScheduleView Set CurrentTimeIndicatorLocation](images/radscheduleview_currenttimeindicator_1.png)
 
 ## Styling CurrentTimeIndicator
 
@@ -115,8 +113,7 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors as shown in __Figure 3__.
 
 #### __Figure 3: Custom CurrentTimeIndicator Styles__
-
-![](images/radscheduleview_currenttimeindicator_2.png)
+![WPF RadScheduleView Custom CurrentTimeIndicator Styles](images/radscheduleview_currenttimeindicator_2.png)
 
 Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. 
 
@@ -139,8 +136,7 @@ Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeI
 Running the application will lead to the result shown in __Figure 4__.
 
 #### __Figure 4: CurrentTimeIndicator with AllowCustomSize set__
-
-![](images/radscheduleview_currenttimeindicator_3.png)
+![WPF RadScheduleView CurrentTimeIndicator with AllowCustomSize set](images/radscheduleview_currenttimeindicator_3.png)
 
 >tip For more advanced customizations, see the ScheduleView [Custom CurrentTimeIndicator Style](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomCurrentTimeIndicatorStyle) example in our XAML SDK Repository.
 

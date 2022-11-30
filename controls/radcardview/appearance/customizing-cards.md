@@ -178,11 +178,11 @@ Read more about RadCardView's commanding support in the [Commands]({%slug radcar
 {{endregion}}
 
 #### Figure 4: Custom card contents in read-only state
-![](images/radcardview-appearance-customizing-cards-3.png)
+![WPF RadCardView Custom card contents in read-only state](images/radcardview-appearance-customizing-cards-3.png)
 
 
 #### Figure 5: Custom card contents in edit state
-![](images/radcardview-appearance-customizing-cards-4.png)
+![WPF RadCardView Custom card contents in edit state](images/radcardview-appearance-customizing-cards-4.png)
 
 > Always use both CardReadOnlyTemplate and CardEditTemplate properties together. 
 

@@ -17,7 +17,7 @@ The layout control toolbox allows you to add items in the layout control at runt
 ## Structure
 
 #### __Figure 1: LayoutControlToolBoxView__
-![](images/radlayoutcontrol-features-toolbox-overview-01.png)
+![WPF RadLayoutControl LayoutControlToolBoxView](images/radlayoutcontrol-features-toolbox-overview-01.png)
 
 The toolbox has a few sections containing information about the available items (__New Items__), the deleted items (__Deleted Items__) and the structure of the elements in the layout.
 

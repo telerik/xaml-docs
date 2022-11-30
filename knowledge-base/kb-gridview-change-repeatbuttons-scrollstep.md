@@ -30,7 +30,7 @@ res_type: kb
 How to change the default scroll step applied when you click on an empty space on the ScrollBar's track area (the RepeatButtons).
 
 #### Figure 1: ScrollBar empty track area
-![](images/kb-gridview-change-repeatbuttons-scrollstep-0.png)
+![WPF ScrollBar empty track area](images/kb-gridview-change-repeatbuttons-scrollstep-0.png)
 
 ## Solution
 

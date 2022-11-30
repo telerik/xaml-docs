@@ -45,7 +45,7 @@ The following example shows how to define the control and set few of its propert
 {{endregion}}
 
 #### Figure 2: RadMaskedTextInput example
-![](images/radmaskedinput_textinput_default.png)
+![WPF RadMaskedInput RadMaskedTextInput example](images/radmaskedinput_textinput_default.png)
 
 ## Data Binding
 
@@ -108,10 +108,10 @@ You can format the entered value using the __FormatString__ property of the RadM
 {{endregion}}
 
 #### Figure 2: Showing the text value when the control is focused
-![](images/radmaskedinput_textinput_format_string_focused.png)
+![WPF RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_textinput_format_string_focused.png)
 
 #### Figure 3: Showing the text value when the control is unfocused
-![](images/radmaskedinput_textinput_format_string.png)
+![WPF RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_textinput_format_string.png)
 
 
 ## See Also

@@ -40,7 +40,7 @@ You can add __RadTabControl__ manually in XAML as demonstrated in __Example 1__.
 At this point, the control is empty and only its tab items panel and content container are displayed.
 
 #### __Figure 1: An empty RadTabControl__
-![](images/radtabcontrol-getting-started-01.png)
+![WPF RadTabControl An empty RadTabControl](images/radtabcontrol-getting-started-01.png)
 
 ## Adding Tabs
 
@@ -85,7 +85,7 @@ __RadTabControl__ works with __RadTabItem__ elements, which are added in the __I
 {{endregion}}
 
 #### __Figure 2: RadTabControl with several RadTabItems defined in its Items collection__
-![](images/radtabcontrol-getting-started-02.png)
+![WPF RadTabControl RadTabControl with several RadTabItems defined in its Items collection](images/radtabcontrol-getting-started-02.png)
 
 > The __Items__ collection of RadTabControl can contain any UIElement. However, if you do not wrap it manually into a RadTabItem control, the tab control will do it automatically. In this case, the UIElement will be set as a content of the tab item and its header will be empty.
 
@@ -109,7 +109,7 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 {{endregion}}
 
 #### __Figure 3: RadTabItem with a string set as its content__
-![](images/radtabcontrol-getting-started-03.png)
+![WPF RadTabControl RadTabItem with a string set as its content](images/radtabcontrol-getting-started-03.png)
 
 #### __[XAML] Example 5: Setting a UIElement as the value of the RadTabItem's Content property__
 {{region radtabcontrol-gettingstarted-06}}
@@ -130,7 +130,7 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 {{endregion}}
 
 #### __Figure 4: RadTabItem with a UIElement set as its content__
-![](images/radtabcontrol-getting-started-04.png)
+![WPF RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-04.png)
 
 ## Data Binding
 
@@ -239,7 +239,7 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 {{endregion}}
 
 #### __Figure 5: Data binding a RadTabControl__
-![](images/radtabcontrol-getting-started-05.png)
+![WPF RadTabControl Data binding a RadTabControl](images/radtabcontrol-getting-started-05.png)
 
 ## Setting the Tabs Orientation
 
@@ -256,7 +256,7 @@ RadTabControl allows you to control whether to display the tabs horizontally or 
 {{endregion}}
 
 #### __Figure 6: RadTabItem with a UIElement set as its content__
-![](images/radtabcontrol-getting-started-06.png)
+![WPF RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-06.png)
 
 ## Setting a Theme
 

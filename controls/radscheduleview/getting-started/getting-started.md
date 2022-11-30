@@ -186,8 +186,7 @@ __Example 5__ demonstrates how you can add a DayViewDefinition to the __RadSched
 Running the application containing the code from Examples 1 - 5 will result in a populated __RadScheduleView__, similar to __Figure 3__.
 
 __Figure 3: RadScheduleView bound to a collection of Appointments__
-
-![](images/RadScheduleView_GettingStarted_2.png)
+![WPF RadScheduleView RadScheduleView bound to a collection of Appointments](images/RadScheduleView_GettingStarted_2.png)
 
 ## Resources, Grouping
 

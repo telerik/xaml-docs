@@ -24,10 +24,10 @@ The tiles in a group can be arranged horizontally or vertically. This is control
 {{endregion}}
 
 #### Figure 1: Vertically arranged tiles
-![](images/radtilelist-tiles-arrangement-0.png)
+![WPF RadTileList Vertically arranged tiles](images/radtilelist-tiles-arrangement-0.png)
 
 #### Figure 2: Horizontally arranged tiles
-![](images/radtilelist-tiles-arrangement-1.png)
+![WPF RadTileList Horizontally arranged tiles](images/radtilelist-tiles-arrangement-1.png)
 
 To control the alignment of the tiles in the different orientations, use the __VerticalTilesAlignment__ and __HorizontalTilesAlignment__ properties. The properties are applicable only for the currently applied orientation. When the Orientation property is set to Horizontal, the VerticalTilesAlignment won't work. When the Orientation is set to Vertical, the HorizontalTilesAlignment won't work. The available alignments are __Stretch, Top, Bottom, Left, Right, Center__.
 

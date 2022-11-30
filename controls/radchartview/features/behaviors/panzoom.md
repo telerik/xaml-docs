@@ -48,7 +48,7 @@ The __ZoomMode__ and __PanMode__ properties can be used to restrict zooming/pann
 The pan and zoom behavior enables drag-to-zoom and drag-to-pan functionalities. By default, when the ChartPanAndZoomBehavior is activated and you start dragging on the plot area, a zoom rectangle will be created and when the mouse is released the visible area will fit into the rectangle. 
 
 #### __Figure 1: Drag to zoom__
-![](images/radchart-features-scrollandzoom-1.png)
+![WPF RadChartView Drag to zoom](images/radchart-features-scrollandzoom-1.png)
 
 You can alter the drag action using the __DragMode__ property of the behavior. Setting it to __Pan__ will start panning, instead of zooming when you drag the mouse over the plot area. To forbid any drag actions you can set the DragMode to __None__.
 
@@ -133,7 +133,7 @@ With the __PanOffset__ you can specify the visible area of the chart. Note that 
 {{endregion}}
 
 #### __Figure 2: Zoom-in chart__
-![](images/radchart-features-scrollandzoom-2.png)
+![WPF RadChartView Zoom-in chart](images/radchart-features-scrollandzoom-2.png)
 
 Note that the setting the __PanOffset__ in XAML or the constructor of the view that holds the chart won't be respected. This is because the property uses the chart's size which is not yet calculated at this point. In order to apply the offset you can set it after the chart is loaded.
 
@@ -147,7 +147,7 @@ Note that the setting the __PanOffset__ in XAML or the constructor of the view t
 {{endregion}}
    
 #### __Figure 3: Offset visible area__
-![](images/radchart-features-scrollandzoom-3.png)
+![WPF RadChartView Offset visible area](images/radchart-features-scrollandzoom-3.png)
 
 The chart also provides few properties that combines the behaviors of Zoom and PanOffset.
 
@@ -256,7 +256,7 @@ You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBa
 {{endregion}}
 
 #### __Figure 4: Stylized PanZoomBar on the VerticalAxis__
-![](images/radchart-features-scrollandzoom-4.png)
+![WPF RadChartView Stylized PanZoomBar on the VerticalAxis](images/radchart-features-scrollandzoom-4.png)
 
 ## Style Drag Zoom Border
 
@@ -273,7 +273,7 @@ You can use the DragZoomBorderStyle property of the RadCartesianChart in order t
 {{endregion}}
 
 #### __Figure 5: Stylized Drag Zoom Border__
-![](images/radchart-features-scrollandzoom-dragzoomborder-5.jpg)
+![WPF RadChartView Stylized Drag Zoom Border](images/radchart-features-scrollandzoom-dragzoomborder-5.jpg)
 
 ## Separate Axis Zooming and Panning
 
@@ -325,7 +325,7 @@ The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `M
 {{endregion}}
 
 #### __Figure 6: Series axes with individual PanZoomBars__
-![](images/radchart-features-scrollandzoom-individual-zoom-6.png)
+![WPF RadChartView Series axes with individual PanZoomBars](images/radchart-features-scrollandzoom-individual-zoom-6.png)
 
 In case the `ChartPanAndZoomBehavior` is enabled the zooming/pan is applied to the main axes of the chart (assigned to the VerticalAxis and HorizontalAxis of RadCartesianChart). When you scroll the mouse wheel or use PanZoomBars of the main axes, the new zoom range is synchronized with the other (series) axes.
 

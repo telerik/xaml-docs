@@ -108,7 +108,7 @@ Consider the following example. A __RadTreeView__ is data bound to a collection 
 {{endregion}}
 
 #### __Figure 1: The tree view after being populated with business objects__
-![](images/RadTreeView_TreeViewBringIntoViewSupport_010.png)
+![WPF RadTreeView The tree view after being populated with business objects](images/RadTreeView_TreeViewBringIntoViewSupport_010.png)
 
 If you want to programmatically scroll to "Item 20" (thus bringing this item into view), you could try scenario in __Example 3__.
 
@@ -128,7 +128,7 @@ If you want to programmatically scroll to "Item 20" (thus bringing this item int
 {{endregion}}
 
 #### __Figure 2: The result of RadTreeViewItem into view by its index__
-![](images/RadTreeView_TreeViewBringIntoViewSupport_020.png)
+![WPF RadTreeView The result of RadTreeViewItem into view by its index](images/RadTreeView_TreeViewBringIntoViewSupport_020.png)
 
 ## BringItemIntoView()
 
@@ -252,7 +252,7 @@ The business items displayed in the __RadTreeView__ are described with the class
 	{{endregion}}
 	
 #### __Figure 3: Default positioned of the brought item__
-![](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
+![WPF RadTreeView Default positioned of the brought item](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
 
 ## __BringPathIntoView() Overloads__ 
 
@@ -275,7 +275,8 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	{{endregion}}
 
 	#### __Figure 4: Default positioned of the brought item__
-	![](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
+	
+	![WPF RadTreeView Default positioned of the brought item](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
 	
 * __BringPathIntoView(string path, Point offset)__: The *offset* parameter is of type __Point__ and specifies the offset from the top left corner of the tree where the item will be scrolled to. 
 
@@ -294,7 +295,8 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	{{endregion}}
 	
 	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
-	![](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
+	
+	![WPF RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
 
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 

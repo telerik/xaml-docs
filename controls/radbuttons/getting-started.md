@@ -208,7 +208,7 @@ __Example 10__ demonstrates how to merge the ResourceDictionaries so that they a
 __Figure 1__ shows a __RadButtons__ with the **Fluent** theme applied.
 	
 #### __Figure 1: RadButtons with the Fluent theme__
-![RadButtons with Fluent theme](images/radbuttons-setting-theme.png)
+![WPF RadButtons RadButtons with the Fluent theme](images/radbuttons-setting-theme.png)
 
 ## See Also  
  * [Visual Structure]({%slug radbuttons-visual-structure%})

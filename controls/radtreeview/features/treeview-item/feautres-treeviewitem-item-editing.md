@@ -17,7 +17,7 @@ __RadTreeView__ supports editing the displayed text of the item. The purpose of 
 * What kind of events the treeview API offers you for managing the edit process.
 
 #### Figure 1: RadTreeView with several items 
-![](images/RadTreeView_TreeViewItemEditing_001.png)
+![WPF RadTreeView RadTreeView with several items](images/RadTreeView_TreeViewItemEditing_001.png)
 
 #### __[XAML] Example 1: RadTreeView populate with several items__  
 {{region radtreeview-feautres-treeviewitem-item-editing_0}}
@@ -74,7 +74,7 @@ You can manually enter or exit the edit mode of RadTreeViewItem by setting its _
 {{endregion}}
 
 #### Figure 2: RadTreeViewItem in edit mode 
-![](images/RadTreeView_TreeViewItemEditing_010.png)
+![WPF RadTreeView RadTreeViewItem in edit mode](images/RadTreeView_TreeViewItemEditing_010.png)
 
 #### __[C#] Example 5: Exit editing via code__
 {{region radtreeview-feautres-treeviewitem-item-editing_6}}
@@ -154,7 +154,8 @@ The __PreviewEditStarted__ event occurs when the treeview item is about to be ed
 The __PreviewEdited__ event is fired just before the new __Header__ text of the item is applied. If the treeview is data bound you can update the data source with the new value. The __Edited__ event is fired once the new __Header__ text for the item is applied. You can get access to the new text of the __Header__ property, as well as to the old one, via the __RadTreeViewItemEditedEventArgs__ of the __PreviewEdited__ and __Edited__ events.
 
 #### Figure 3: Getting the header text
-![](images/RadTreeView_TreeViewItemEditing_020.png)
+
+![WPF RadTreeView Getting the header text](images/RadTreeView_TreeViewItemEditing_020.png)
 
 >If the the __ItemEditTemplate__ property is set and it does not contain a __TextBox__, then the __NewText__ and __OldText__ properties will not be used.
 
@@ -176,7 +177,8 @@ In the event handler you can place some code that has to be executed when the it
 {{endregion}}
 
 #### Figure 4: RadTreeViewItem with its background changed on edit
-![](images/RadTreeView_TreeViewItemEditing_030.png)
+
+![WPF RadTreeView RadTreeViewItem with its background changed on edit](images/RadTreeView_TreeViewItemEditing_030.png)
 
 ## ItemEditTemplate and ItemEditTemplateSelector
 

@@ -13,7 +13,7 @@ position: 0
 __CartesianChart3DGrid__ is used to decorate the 3D Cartesian chart with grid lines and strip lines placed over the planes (sides) of the plot area.
 
 #### __Figure 1: CartesianChart3DGrid__
-![](images/radchartview-3d-chartgrid-0.png)
+![WPF RadChartView3D CartesianChart3DGrid](images/radchartview-3d-chartgrid-0.png)
 
 ## Setting up the grid
 
@@ -27,7 +27,7 @@ To enable the grid, set the __Grid__ property of the __RadCartesianChart3D__ con
 {{endregion}}
 
 #### __Figure 2: Grid lines__
-![](images/radchartview-3d-chartgrid-1.png)
+![WPF RadChartView3D Grid lines](images/radchartview-3d-chartgrid-1.png)
 
 > By default only the grid lines of the plot area planes are displayed. The strip lines are not shown. 
 
@@ -36,7 +36,7 @@ To enable the grid, set the __Grid__ property of the __RadCartesianChart3D__ con
 __CartesianChart3DGrid__ allows you to specify the visibility of the grid lines and strip lines of each plane. You can also set their materials and the stroke thickness of the grid lines.
 
 #### __Figure 3: Plot area planes__
-![](images/radchartview-3d-chartgrid-2.png)
+![WPF RadChartView3D Plot area planes](images/radchartview-3d-chartgrid-2.png)
 
 To set the visibility of the grid and strip lines you can use the following properties.
 
@@ -83,7 +83,7 @@ You can set the material (brush) of the the lines using the following properties
 {{endregion}}
 
 #### __Figure 4: Colored grid lines__
-![](images/radchartview-3d-chartgrid-3.png)
+![WPF RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-3.png)
 
 #### __[XAML] Example 5: Setting Y grid lines material__
 {{region xaml-radchartview-3d-chartgrid-3}}
@@ -97,7 +97,7 @@ You can set the material (brush) of the the lines using the following properties
 {{endregion}}
 
 #### __Figure 5: Colored grid lines__
-![](images/radchartview-3d-chartgrid-4.png)
+![WPF RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-4.png)
 
 #### __[XAML] Example 6: Setting Z grid lines material__
 {{region xaml-radchartview-3d-chartgrid-4}}
@@ -111,7 +111,7 @@ You can set the material (brush) of the the lines using the following properties
 {{endregion}}
 
 #### __Figure 6: Colored grid lines__
-![](images/radchartview-3d-chartgrid-5.png)
+![WPF RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-5.png)
 
 > The strip lines materials are set up using the same manner as in __Examples from 4 to 6__.
 

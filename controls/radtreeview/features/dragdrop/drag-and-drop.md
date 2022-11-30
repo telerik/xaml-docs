@@ -35,7 +35,7 @@ The following example shows a basic RadTreeView definition and enabled drag/drop
 {{endregion}}
 
 #### Figure 1: Drag drop in action
-![](images/RadTreeView-DragDrop-PreviewLine.png)
+![WPF RadTreeView Drag drop in action](images/RadTreeView-DragDrop-PreviewLine.png)
 
 #### __[C#] Example 2: Enabling the Drag/Drop functionality in code-behind__  
 {{region radtreeview-features-drag-and-drop-1}}

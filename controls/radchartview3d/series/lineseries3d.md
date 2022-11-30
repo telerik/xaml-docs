@@ -54,7 +54,7 @@ You can use the code from __Example 1__ to create a __LineSeries3D__.
 {{endregion}}
 	
 #### __Figure 1: LineSeries3D__
-![](images/radchartview-3d-lineseries3d-0.png)
+![WPF RadChartView3D LineSeries3D](images/radchartview-3d-lineseries3d-0.png)
 
 ## Data bound series
 
@@ -97,7 +97,7 @@ To show the data point visual, set the __PointSize__ property of the series.
 {{endregion}}
 
 #### __Figure 2: Point visuals shown__
-![](images/radchartview-3d-lineseries3d-1.png)
+![WPF RadChartView3D Point visuals shown](images/radchartview-3d-lineseries3d-1.png)
 
 ## Setting the line size
 
@@ -109,7 +109,7 @@ You can change the line size by setting the __DefaultLineVisualDiameter__ proper
 {{endregion}}
 
 #### __Figure 3: Line diameter set to 25__
-![](images/radchartview-3d-lineseries3d-2.png)
+![WPF RadChartView3D Line diameter set to 25](images/radchartview-3d-lineseries3d-2.png)
 
 ## Customizing the data point visuals
 
@@ -142,8 +142,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 		</telerik:RadCartesianChart3D>
 	{{endregion}}
 	
-	#### __Figure 4: Custom line visual material__
-	![](images/radchartview-3d-lineseries3d-3.png)
+	#### __Figure 4: Custom line visual material__	![WPF RadChartView3D Custom line visual material](images/radchartview-3d-lineseries3d-3.png)
 	
 * __Setting the geometry of the line segments__
 
@@ -166,8 +165,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 		</telerik:RadCartesianChart3D>
 	{{endregion}}
 	
-	#### __Figure 5: Custom line visual geometry__
-	![](images/radchartview-3d-lineseries3d-4.png)	
+	#### __Figure 5: Custom line visual geometry__	![WPF RadChartView3D Custom line visual geometry](images/radchartview-3d-lineseries3d-4.png)	
 	
 * __Select a color using the material selector__
 
@@ -206,8 +204,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 		</telerik:RadCartesianChart3D>
 	{{endregion}}
 	
-	#### __Figure 6: Line with random colors__
-	![](images/radchartview-3d-lineseries3d-5.png)
+	#### __Figure 6: Line with random colors__	![WPF RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-5.png)
 
 * __Select a geometry using the geometry selector__
 
@@ -264,8 +261,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 		</telerik:RadCartesianChart3D>
 	{{endregion}}
 	
-	#### __Figure 7: Line with random colors__
-	![](images/radchartview-3d-lineseries3d-6.png)
+	#### __Figure 7: Line with random colors__	![WPF RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-6.png)
 
 ## See Also
 

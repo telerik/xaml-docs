@@ -94,29 +94,25 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 
 #### __C#__
 {{region radchartview-populating-with-data-binding-to-data-table_2}}
-	this.barSeries1.ValueBinding = 
-	    new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>() 
-	    {
-	        ValueSelector = row => (double)row["Actual"]
-	    };
+	this.barSeries1.ValueBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>() 
+	{
+	    ValueSelector = row => (double)row["Actual"]
+	};
 	
-	this.barSeries1.CategoryBinding = 
-	    new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, DateTime>()
-	    {
-	        ValueSelector = row => (DateTime)row["Month"]
-	    };
+	this.barSeries1.CategoryBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, DateTime>()
+	{
+	    ValueSelector = row => (DateTime)row["Month"]
+	};
 	
-	this.barSeries2.ValueBinding = 
-	    new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>()
-	    {
-	        ValueSelector = row => (double)row["Expected"]
-	    };
+	this.barSeries2.ValueBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>()
+	{
+	    ValueSelector = row => (double)row["Expected"]
+	};
 	
-	this.barSeries2.CategoryBinding = 
-	    new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, DateTime>()
-	    {
-	        ValueSelector = row => (DateTime)row["Month"]
-	    };
+	this.barSeries2.CategoryBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, DateTime>()
+	{
+	    ValueSelector = row => (DateTime)row["Month"]
+	};
 {{endregion}}
 
 #### __VB.NET__

@@ -16,13 +16,17 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 
 1. Create a new __.NET Core 3.1__ application using Visual Studio. 
 	
-	#### Figure 1: Creating new project	![WPF Creating new project](images/netcore-support-migration-0.png)	
+	#### Figure 1: Creating new project
+	
+	![WPF Creating new project](images/netcore-support-migration-0.png)	
 	
 	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) section of the documentation.
 	
 2. Add the existing files from the original project as linked files to the .NET Core project.
 	
-	#### Figure 2: Linking files from the original project	![WPF Linking files from the original project](images/netcore-support-migration-1.png)
+	#### Figure 2: Linking files from the original project
+	
+	![WPF Linking files from the original project](images/netcore-support-migration-1.png)
 	
 	![](images/netcore-support-migration-2.png)
  
@@ -30,7 +34,9 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	
 	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NetCore*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
-	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1	![WPF Checking if a Telerik assembly is built against .NET Core 3.1](images/netcore-support-migration-3.png)
+	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1
+	
+	![WPF Checking if a Telerik assembly is built against .NET Core 3.1](images/netcore-support-migration-3.png)
 	
 4. If you are not using nuget packages to install the Telerik dlls, you will need to install the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually.
 

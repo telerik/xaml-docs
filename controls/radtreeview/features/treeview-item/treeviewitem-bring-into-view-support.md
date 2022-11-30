@@ -274,7 +274,9 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 		myTreeView.BringPathIntoView(path)
 	{{endregion}}
 
-	#### __Figure 4: Default positioned of the brought item__	![WPF RadTreeView Default positioned of the brought item](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
+	#### __Figure 4: Default positioned of the brought item__
+	
+	![WPF RadTreeView Default positioned of the brought item](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
 	
 * __BringPathIntoView(string path, Point offset)__: The *offset* parameter is of type __Point__ and specifies the offset from the top left corner of the tree where the item will be scrolled to. 
 
@@ -292,7 +294,9 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 		myTreeView.BringPathIntoView(path,New Point(0,100))
 	{{endregion}}
 	
-	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__	![WPF RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
+	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
+	
+	![WPF RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
 
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 

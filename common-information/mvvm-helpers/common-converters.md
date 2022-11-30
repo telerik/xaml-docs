@@ -50,11 +50,11 @@ The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 
 #### __[XAML] Merge the created ResourceDictionary that contains the declared converters__
 {{region common-converters-1}}
-	<FrameworkElement> 
-		<FrameworkElement.Resources>
+	<Application> 
+		<Application.Resources>
 			<ResourceDictionary Source="MyConvertersResourceDictionary.xaml"/> 
-		</FrameworkElement.Resources> 
-	</FrameworkElement> 
+		</Application.Resources> 
+	</Application> 
 {{endregion}}
 
 ## BooleanToOpacityConverter

@@ -39,13 +39,13 @@ To define custom keys layout you will need to create a special XML file and then
 	<RadVirtualKeyboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<Grid>
 			<Grid.RowDefinitions>
-				<RowDefinition Height="1*" />
-				<RowDefinition Height="5*" />
+				<RowDefinition Height="1\*" />
+				<RowDefinition Height="5\*" />
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="15*" />
-				<ColumnDefinition Width="3*" />
-				<ColumnDefinition Width="4*" />
+				<ColumnDefinition Width="15\*" />
+				<ColumnDefinition Width="3\*" />
+				<ColumnDefinition Width="4\*" />
 			</Grid.ColumnDefinitions>
 			<KeysLayout KeySpacing="0.1" Grid.Row="0" Grid.Column="0">
 				<Rows>
@@ -249,9 +249,11 @@ The following list describes the tags used in the XML file:
 	* __SecondaryDisplayText__&mdash;The alternative text displayed in the key button when the NumLock key is toggled.
 	* __SecondaryVirtualKey__&mdash;The alternative key code on the keyboard that is activated when the NumLock button is toggled.
 	* __KeyType__&mdash;Defines the type of the defined key. This determines the visuals appearance and the behavior of the key in the UI. The KeyType can be `Normal`, `Special`, `Modifier`, `Lock` and `Numpad`.
-	* __Width__&mdash;The width of the key in relative units. A value of `1` means 1 time the width a key. The width of a key is calculated at runtime based on the available space and the keys count. A value of 0.5 means a half button size.
+	* __Width__&mdash;The width of the key in relative units. A value of `1` means 1 time the width a key. The width of a key is calculated at runtime based on the available space and the keys count. A value of `0.5` means a half button size.
 	* __Height__&mdash;The height of the key in relative units.
 	* __ShowSecondaryText__&mdash;Determines if the secondary text (based on the VirtualKey value) should be displayed. An example for secondary text is the *!* character on the key for number *1*, or the *@* character in the key *2*.
+
+>important The parsing of `double` values in the XML is performed with [CultureInfo.InvariantCulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture) meaning that a dot (`.`) needs to be used as the decimal separator.
 	
 #### Loading Key Layout XML Files
 

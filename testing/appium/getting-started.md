@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | Appium
+page_title: Getting Started - Appium
 description: We will explore how to use Appium, the Microsoft recommended open source test automation framework, with Telerik UI for {{ site.framework_name }}.  
 slug: appium-getting-started
 tags: appium

@@ -337,7 +337,7 @@ You can access the predefined palettes in code using the __Chart3DPalettes__ sta
 Each series added in the chart will use different entry from the MaterialCollection (the palette). If you have a single series, only the first material from the collection is used.
 
 #### __Figure 2: Chart with 3 BarSeries3D colored using the Windows8 palette__
-![](images/radchartview-3d-features-palettes-1.png)
+![WPF RadChartView3D Chart with 3 BarSeries3D colored using the Windows8 palette](images/radchartview-3d-features-palettes-1.png)
 
 > The __DefaultVisualMaterial__ property of the series has a higher precedence than the palette materials. 
 
@@ -412,7 +412,7 @@ The chart allows you to create a custom palette by defining a __MaterialCollecti
 {{endregion}}
 
 #### __Figure 3: Chart with custom palette__
-![](images/radchartview-3d-features-palettes-2.png)
+![WPF RadChartView3D Chart with custom palette](images/radchartview-3d-features-palettes-2.png)
 
 ## See Also
 

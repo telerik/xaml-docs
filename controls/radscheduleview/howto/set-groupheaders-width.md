@@ -69,8 +69,7 @@ Additionally, we will change the format of the dates inside the GroupHeaders as 
 __Figure 1__ shows the RadScheduleView before and after applying the previously explained properties.
 
 #### __Figure 1: Default and customized WeekViewDefinitions__
-
-![](images/radscheduleview_howto_setgroupheaderswidth_0.png)
+![WPF RadScheduleView Default and customized WeekViewDefinitions](images/radscheduleview_howto_setgroupheaderswidth_0.png)
 
 ## See Also
 

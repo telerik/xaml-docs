@@ -50,19 +50,18 @@ The following example shows how to setup a basic card model and populate the Ite
 {{region radcardview-getting-started-2}}
 	public MainWindow()
 	{
-            InitializeComponent();          
-            var source = new ObservableCollection<CardInfo>();
-            for (int i = 0; i < 6; i++)
-            {
-                source.Add(new CardInfo() { Header = "Card " + i, Name = "Name " + i, Number = i });
-            }
-            this.cardView.ItemsSource = source;
-        }
-    }
+	    InitializeComponent();          
+	    var source = new ObservableCollection<CardInfo>();
+	    for (int i = 0; i < 6; i++)
+	    {
+	        source.Add(new CardInfo() { Header = "Card " + i, Name = "Name " + i, Number = i });
+	    }
+	    this.cardView.ItemsSource = source;
+	}
 {{endregion}}
 
 #### Figure 1: RadCardView example
-![](images/radcardview-getting-started-0.png)
+![WPF RadCardView RadCardView example](images/radcardview-getting-started-0.png)
 
 The example shows also how to tell what is the property displaying the card headers (via the __CardHeaderBinding__ property) and the height of the cards (via the __MinorLength__ property). The MinorLength will apply to the height or the width of the cards based on the [CardLayout]({%slug radcardview-features-layout%}) property value.
 

@@ -84,7 +84,7 @@ To use the control separately with __RadImageEditor__, you can define the __Zoom
 {{endregion}}
 
 #### Figure 3: ZoomController
-![](images/radimageeditor-features-zooming-0.png)
+![WPF RadImageEditor ZoomController](images/radimageeditor-features-zooming-0.png)
 
 ## See Also  
  * [History]({%slug radimageeditor-features-history%})

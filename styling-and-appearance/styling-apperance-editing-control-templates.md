@@ -5,7 +5,7 @@ description: Check out how you can extract the default template of Telerik UI fo
 slug: styling-apperance-editing-control-templates
 tags: editing,control,templates
 published: True
-position: 2
+position: 3
 ---
 
 # Editing Control Templates

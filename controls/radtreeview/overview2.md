@@ -11,8 +11,6 @@ CTAControlName: RadTreeView
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![treeview sl icon](images/treeview_sl_icon.png){% endif %}{% if site.site_name == 'WPF' %}![treeview wpf icon](images/treeview_wpf_icon.png){% endif %}
-
 Thank you for choosing Telerik __RadTreeView__!		
 
 Do you have need of building complicated navigation systems which perform with the speed of light? With __RadTreeView__ you can achieve all of this and much more. With its powerful databinding and load on demand mechanism, the control lets you display hierarchical structures, such as directories and relational data. With its drag and drop functionality and other advanced capabilities, __RadTreeView__ significantly improves the navigation and performance of your application.

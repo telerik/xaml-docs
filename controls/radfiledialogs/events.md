@@ -16,7 +16,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 1: Cancel dialog closing__
 	{{region cs-radfiledialogs-events-0}}
-		private void FileDialog_PreviewClosed(object sender, WindowPreviewClosedEventArgs e)
+		private void OnFileDialogPreviewClosed(object sender, WindowPreviewClosedEventArgs e)
         {
 			e.Cancel = true;
         }
@@ -28,7 +28,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	#### __[C#] Example 2: Showing an alert when an error appears__
 	{{region cs-radfiledialogs-events-1}}
-		private void openDialog_ExceptionRaised(object sender, FileBrowserExceptionRaisedEventArgs e)
+		private void OnFileDialogExceptionRaised(object sender, FileBrowserExceptionRaisedEventArgs e)
         {
             MessageBox.Show(e.Exception.Message);
         }
@@ -38,7 +38,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	#### __[C#] Example 3: Filtering the D and K directories__
 	{{region cs-radfiledialogs-events-2}}
-		private void OpenFileDialog_DirectoryRequesting(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryRequestingEventArgs e)
+		private void OnFileDialogDirectoryRequesting(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryRequestingEventArgs e)
         {
             if (e.Directory.FullName.StartsWith("D:\\\\") || e.Directory.FullName.StartsWith("K:\\\\"))
             {
@@ -49,17 +49,15 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	> If the __InitialDirectory__ of the RadFileDialog is filtered out as in __Example 3__, the current directory on load will be the default one. 
 
-	#### Figure 1: Unfiltered Directories
-	![](images/radfiledialogs-directories.png)
+	#### Figure 1: Unfiltered Directories	![WPF RadFileDialogs Unfiltered Directories](images/radfiledialogs-directories.png)
 	
-	#### Figure 2: Filtered Directories Based on Example 3
-	![](images/radfiledialogs-filtereddirectories.png)
+	#### Figure 2: Filtered Directories Based on Example 3	![WPF RadFileDialogs Filtered Directories Based on Example 3](images/radfiledialogs-filtereddirectories.png)
 	
 * __DirectoryNavigating__: This event occurs when the current folder is about to change. You can use it to execute an additional action or to cancel the navigation. 
 	
 	#### __[C#] Example 4: Disable navigation to the Program Files folder__
 	{{region cs-radfiledialogs-events-3}}
-		private void OpenFileDialog_DirectoryNavigating(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryNavigatingEventArgs e)
+		private void OnFileDialogDirectoryNavigating(object sender, Telerik.Windows.Controls.FileDialogs.DirectoryNavigatingEventArgs e)
 		{
 			if (e.DirectoryPath == "C:\\\\Program Files")
             {
@@ -72,7 +70,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 5: Canceling context menu opening and adding only New Folder and Paste options in the short menu__
 	{{region cs-radfiledialogs-events-4}}
-		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		private void OnFileDialogShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
 		{
 			if (e.SelectedFiles.Count > 0 && e.SelectedFiles[0].Path == "C:\\\\Program Files")
             {
@@ -89,7 +87,7 @@ This article lists the events specific to all of the RadFileDialog controls.
 	
 	#### __[C#] Example 6: Checking if the click was on an empty space__
 	{{region cs-radfiledialogs-events-5}}
-		private void OpenFileDialog_ShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
+		private void OnFileDialogShellContextMenuOpening(object sender, Telerik.Windows.Controls.FileDialogs.ContextMenuOpeningEventArgs e)
 		{
 			if (e.IsOpeningOnEmptySpace)
            		{
@@ -97,6 +95,26 @@ This article lists the events specific to all of the RadFileDialog controls.
             		}
 		}
 	{{endregion}}	
+
+* __Renaming__: This event occurs when a file or a folder is about to be renamed. You can use it to prevent certain files or folders from having their name changed. 
+	
+	The event arguments will be of the type __RenamingEventArgs__ that exposes the following properties:
+
+	* __Cancel__: Boolean property that will indicate if a renaming operation will be performed or not.
+	* __FileInfo__: Property of the type __FileSystemInfoWrapper__. This property contains the __FileSystemInfoWrapper__ object for the file system information that will be renamed.
+
+	>important This event will occur only when the __CanUserRename__ property is set to __True__.
+
+	#### __[C#] Example 7: Cancel the renaming operation for certain a file/directory__
+	{{region cs-radfiledialogs-events-6}}
+		private void OnFileDialogRenaming(object sender, Telerik.Windows.Controls.FileDialogs.RenamingEventArgs e)
+		{
+		    if (e.FileInfo.Path.StartsWith("C:\\Windows")
+		    {
+		    	e.Cancel = true;
+		    }
+		}
+	{{endregion}}
 
 ## See Also
 * [Getting Started]({%slug radfiledialogs-getting-started%})

@@ -11,9 +11,6 @@ CTAControlName: RadPdfViewer
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![RadPdfViewer Silverlight Icon](images/RadPdfViewer_Overview_sl.png){% endif %}
-{% if site.site_name == 'WPF' %}![RadPdfViewer WPF Icon](images/RadPdfViewer_Overview_wpf.png){% endif %}
-
 Thank you for choosing Telerik __RadPdfViewer__!
 
 __RadPdfViewer__ is a control that can display PDF files natively in {{ site.framework_name }}. 

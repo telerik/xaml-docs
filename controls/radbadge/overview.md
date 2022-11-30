@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadBadge WPF
+page_title: Overview - RadBadge WPF
 description: Check our &quot;Overview&quot; documentation article for the RadBadge WPF control.
 slug: radbadge-overview
 tags: overview
@@ -10,8 +10,6 @@ CTAControlName: RadBadge
 ---
 
 # Overview
-
-![](images/radbadge-overview-0.png)
 
 The __RadBadge__ component is a visual indicator for UI elements. It enables you to easily show statuses, notifications and short messages in your app. Badges provide additional contextual information for other elements on the page.
 

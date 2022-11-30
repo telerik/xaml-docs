@@ -54,7 +54,7 @@ The following example is an extended version of the sample from the [Getting Sta
 >tip `cardView:` points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`. 
 
 #### Figure 1: CardView Control Panel
-![](images/radcardview-features-control-panel-0.png)
+![WPF RadCardView CardView Control Panel](images/radcardview-features-control-panel-0.png)
 
 The control panel item visual element is a [RadDropDownButton]({%slug radbuttons-features-dropdown-button%}).
 
@@ -103,7 +103,7 @@ The following example is an extended version of the sample from the [Getting Sta
 {{endregion}}
 
 #### Figure 2: CardView Control Panel with Data Templates
-![](images/radcardview-features-control-panel-1.png)
+![WPF RadCardView CardView Control Panel with Data Templates](images/radcardview-features-control-panel-1.png)
 
 ## See Also
 * [Getting Started]({%slug radcardview-getting-started%})

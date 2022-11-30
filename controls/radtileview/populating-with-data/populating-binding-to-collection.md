@@ -160,7 +160,8 @@ This article describes how to data bind business objects to __RadTileView__.
 * The result should be similar to Figure 1.
 			
 	#### __Figure 1: RadTileView after binding its ItemSource property__	
-	![](images/RadTileView_Populating_BindingToCollection_010.PNG)
+	
+	![WPF RadTileView RadTileView after binding its ItemSource property__	](images/RadTileView_Populating_BindingToCollection_010.PNG)
 
 Notice that the __RadTileViewitems__ displays the name of the view model. This is because by default, the RadTileView will display the result returned from the ToString() method of the model. To change the appearance of the items you can explicitly define what to display in the header and the content of the items. You can see how to do that in the next section.
 
@@ -206,7 +207,7 @@ You can modify the visual appearance of the item's header using either the __Ite
 Figure 2 shows the end result.
 
 #### __Figure 2: RadTileView after using DisplayMemberPath property.__
-![](images/RadTileView_Populating_BindingToCollection_020.png)
+![WPF RadTileView RadTileView after using DisplayMemberPath property.](images/RadTileView_Populating_BindingToCollection_020.png)
 
 You can modify the visual appearance of the item's content using the __ContentTemplate__ property of RadTileView.
 
@@ -232,7 +233,7 @@ Update your __RadTileView__'s declaration and set its __ContentTemplate__ proper
 The final result is shown on the next image:
 
 #### __Figure 3: Final result__
-![](images/RadTileView_Populating_BindingToCollection_030.png)
+![WPF RadTileView Final result](images/RadTileView_Populating_BindingToCollection_030.png)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TileView/DataBinding).
 

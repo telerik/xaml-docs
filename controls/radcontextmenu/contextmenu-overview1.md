@@ -11,14 +11,6 @@ CTAControlName: RadContextMenu
 
 # Overview
 
-
-## {% if site.site_name == 'Silverlight' %}
-![](images/RadContextMenu_Overview_01.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![](images/RadContextMenu_Overview_01_WPF.png)
-{% endif %}
-
 Thank you for choosing __RadContextMenu__!        
 
 Have you ever encountered the need of building a very complicated custom menu system, while still keeping it simple for the end user? It’s easy to save space and provide additional commands or features with the __RadContextMenu__.        

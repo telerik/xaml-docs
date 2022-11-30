@@ -60,7 +60,7 @@ And finally, pass the customized __RadAlertStyle__ to the predefined dialog via 
 {{endregion}}
 
 #### __Figure 1: RadAlert with custom Style__
-![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
+![WPF RadWindow RadAlert with custom Style](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
 
 ## Applying IconTemplate
 
@@ -94,7 +94,7 @@ Basically, a valid DataTemplate needs to be created and that Template should be 
 {{endregion}}
 
 #### __Figure 2: RadAlert with set IconTemplate__
-![](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
+![WPF RadWindow RadAlert with set IconTemplate](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
 
 ## Modify WindowStyle
 

@@ -1,37 +1,32 @@
 ---
-title: Export Paged Data
-page_title: Export Paged Data
-description: Read this article to learn how to export paged data to Excel from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+title: Format String Values as Numbers in HTML Export
+page_title: Format String Values as Numbers in HTML Export
+description: Read this article to learn how to format string values as numbers in HTML export - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-export-troubleshooting-export-paged-data
 tags: export,paged,data
 published: True
 position: 5
 ---
 
-# Export Paged Data
+# Format String Values as Numbers in HTML Export
 
 __PROBLEM__
 
 When exporting a RadGridView to Excel using __ExportFormat.HTML__, the string values that can be converted to numbers, are opened in Excel as numbers.
-        
 
->tipThis behavior does not occur when exporting using __ExportFormat.ExcelML__.
-
+>tip This behavior does not occur when exporting using __ExportFormat.ExcelML__.
 
 __CAUSE__
 
 When using the HTML format, the RadGridView actually saves data in an Excel readable html format.
 
-
 __SOLUTION__
 
 You will need to format the exported string column appropriately so that the Excel file interprets it as a string.
 
-Here is a small sample code:
-        
+Here is a small sample code:        
 
-#### __[C#]Example 1: Handling the ElementExporting event:__
-
+#### __[C#]Example 1: Handling the ElementExporting event:__  
 {{region cs-gridview-export-troubleshooting-export-string_0}}
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
@@ -46,8 +41,7 @@ Here is a small sample code:
 	}
 {{endregion}}
 
-#### __[VB.NET]Example 2: Handling the ElementExporting event:__
-
+#### __[VB.NET]Example 2: Handling the ElementExporting event:__  
 {{region vb-gridview-export-troubleshooting-export-string_1}}
 	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
 	    Dim column = TryCast(e.Context, GridViewDataColumn)
@@ -58,7 +52,3 @@ Here is a small sample code:
 	    End If
 	End Sub
 {{endregion}}
-
-
-
-

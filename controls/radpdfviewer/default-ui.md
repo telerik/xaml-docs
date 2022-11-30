@@ -13,8 +13,7 @@ position: 2
 RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, [zoom]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}) and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose. **RadPdfViewerNavigationPane** takes care of visualizing different navigation panels, including the [Bookmarks]({%slug radpdfviewer-features-bookmarks%}) of the PDF document.
 
 #### Figure 1: RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu
- 
-![](images/RadPdfViewer_defaultUI_00.png)
+![WPF RadPdfViewer RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu](images/RadPdfViewer_defaultUI_00.png)
 
 ## Add RadPdfViewer with Predefined UI to Your Application
 
@@ -37,8 +36,7 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 * **Add Navigation Pane**: Determines whether the RadPdfViewerNavigationPane should be added to the UI to show  the bookmarks of a PDF document. 
 
 #### Figure 2: Choose the components you would like to use
- 
-![](images/RadPdfViewer_defaultUI_01.png)
+![WPF RadPdfViewer Choose the components you would like to use](images/RadPdfViewer_defaultUI_01.png)
 
 **Example 1** shows how the XAML generated after enabling all options looks like.
 
@@ -72,8 +70,7 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 **RadPdfViewerToolBar** exposes several properties that enable you to add or remove parts of the UI with a single click. A list of all the available properties and their values you can find in the **Properties** window of Visual Studio.
 
 #### Figure 3: Choose the components you would like to use
- 
-![](images/RadPdfViewer_defaultUI_02.png)
+![WPF RadPdfViewer Choose the components you would like to use](images/RadPdfViewer_defaultUI_02.png)
 
 The default value for all of the ToolBar Customization options is `true`. Unchecking an option results in setting the corresponding property in XAML to `false`. **Example 2** shows how these properties look like in XAML.
 
@@ -95,8 +92,7 @@ The default value for all of the ToolBar Customization options is `true`. Unchec
 When you need to make a more complicated change to the toolbar besides adding and removing buttons, for example, adding a new button with custom functionality, you can extract the template of **RadPdfViewerToolBar**. This can be achieved through the **Replace RadPdfViewerToolBar with Editable XAML** option of the Visual Studio Designer's context menu.
 
 #### Figure 4: Replace RadPdfViewerToolBar with Editable XAML option of the Visual Studio Designer's context menu
-
-![](images/RadPdfViewer_defaultUI_03.png)
+![WPF RadPdfViewer Replace RadPdfViewerToolBar with Editable XAML option of the Visual Studio Designer's context menu](images/RadPdfViewer_defaultUI_03.png)
 
 > Note that in this scenario, the RadPdfViewerToolBar is replaced by its XAML code. Doing this, you will not be able to receive updates for the control and will not be able to take advantage of the styling functionalities. 
 

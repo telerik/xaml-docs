@@ -5,7 +5,7 @@ description: How to modify default Telerik styles and create custom ones.
 slug: styling-apperance-modifying-default-styles
 tags: modifying,default,styles
 published: True
-position: 3
+position: 4
 ---
 
 # Modifying Default Styles

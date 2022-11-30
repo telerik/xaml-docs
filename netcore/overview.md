@@ -14,6 +14,8 @@ __Telerik UI for WPF__ comes with support for __.NET Core 3.1__, __.NET 5__ and 
 
 There is are sets of DLLs built against the mentioned .NET versions which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
+> The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for the .NET Core 3.1 and later is that the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package should be installed manually. This is not needed if you install the Telerik dlls using nuget packages.
+
 ## .NET Core 3.1 Requirements
 
 To work with the Telerik `.NET Core 3.1` DLLs you will need to have the following installed.
@@ -46,7 +48,7 @@ To work with the Telerik `.NET 6` DLLs you will need to have the following insta
 
 ## .NET 7 Requirements
 
-To work with the Telerik `.NET 7 Preview` DLLs you will need to have the following installed.
+To work with the Telerik `.NET 7` DLLs you will need to have the following installed.
 
 * The latest [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
 
@@ -54,7 +56,7 @@ To work with the Telerik `.NET 7 Preview` DLLs you will need to have the followi
 
 ## Design-Time Support
 
-The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET you will need to [reference the Telerik dlls via nuget]({%slug installation-installing-from-nuget-wpf%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
+The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET you will need to [reference the Telerik dlls via nuget]({%slug nuget-installation%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
 
 Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
 

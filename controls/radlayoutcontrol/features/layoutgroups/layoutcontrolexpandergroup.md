@@ -25,7 +25,7 @@ __LayoutControlExpanderGroup__ is one of the few layout groups supported by the 
 {{endregion}}
 
 #### __Figure 1: LayoutControlExpanderGroup__
-![](images/layoutcontrol-features-layoutcontrolexpandergroup-01.png)
+![WPF RadLayoutControl LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-01.png)
 
 The header of the expander group can be set through its __Header__ property. The property is of type __Object__ which allows you to place any visual (or not) element in it.
 
@@ -46,7 +46,7 @@ The header of the expander group can be set through its __Header__ property. The
 {{endregion}}	
 
 #### __Figure 2: LayoutControlExpanderGroup with UIElements in its header__
-![](images/layoutcontrol-features-layoutcontrolexpandergroup-02.png)
+![WPF RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontrolexpandergroup-02.png)
 
 The group’s content state (collapsed/expanded) can be manually controlled via the __IsExpanded__ property. 
 
@@ -56,7 +56,7 @@ The group’s content state (collapsed/expanded) can be manually controlled via 
 {{endregion}}
 	
 #### __Figure 3: Collapsed LayoutControlExpanderGroup__
-![](images/layoutcontrol-features-layoutcontrolexpandergroup-03.png)
+![WPF RadLayoutControl Collapsed LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-03.png)
 
 > You can notice that the size of the group demonstrated in __Figure 3__ and __Example 3__ doesn't collapse, but only its children are hidden (collapsed). This is because the group's __VerticalAlignment__ is set to __Stretch__ by default. In this example, if you want to collapse also the size of the group itself you can set the __VerticalAlignment__ to __Top__.
 
@@ -68,7 +68,7 @@ The __IsExpandable__ property of LayoutControlExpanderGroup controls whether the
 {{endregion}}
 
 #### __Figure 4: LayoutControlExpanderGroup with disabled collapse/expand interactions__
-![](images/layoutcontrol-features-layoutcontrolexpandergroup-04.png)
+![WPF RadLayoutControl LayoutControlExpanderGroup with disabled collapse/expand interactions](images/layoutcontrol-features-layoutcontrolexpandergroup-04.png)
 
 > When the __IsExpandable__ property is set to __False__ the content of the group can still be collapsed and expanded via the __IsExpanded__ property.
 

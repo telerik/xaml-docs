@@ -19,7 +19,7 @@ In order to use RadPivotMap, you will need to add references to the following as
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
 
-You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
 ## Setting up the Data Source
 
@@ -27,7 +27,7 @@ To populate the control with tiles you will need to provide a collection of item
 
 For this example we will use a simple flat structure consisting of movies gross sales information.
 
-#### __[C#] Example 1: Defining the models__
+#### __[C#] Defining the models__
 {{region radtreemap-getting-started-pivotmap-0}}
 	public class MovieInfo
     {
@@ -37,7 +37,7 @@ For this example we will use a simple flat structure consisting of movies gross 
     }
 {{endregion}}
 
-#### __[C#] Example 2: Populating a collection with the data__
+#### __[C#] Populating a collection with the data__
 {{region radtreemap-getting-started-pivotmap-1}}
 	public ObservableCollection<MovieInfo> GetData()
 	{
@@ -71,7 +71,7 @@ The __Member__ determines the name of the corresponding group.
 
 The __LabelPath__ determines the label that will be displayed over the tile.
 
-#### __[XAML] Example 3: Defining RadPivotMap__
+#### __[XAML] Defining RadPivotMap__
 {{region radtreemap-getting-started-pivotmap-2}}
 	<telerik:RadPivotMap x:Name="radPivotMap" 
 						 ValuePath="GrossSales"
@@ -84,18 +84,21 @@ The __LabelPath__ determines the label that will be displayed over the tile.
         </telerik:RadPivotMap>
 {{endregion}}
 
-#### __[XAML] Example 4: Setting the ItemsSource in XAML__
+#### __[XAML] Setting the ItemsSource in XAML__
 {{region radtreemap-getting-started-pivotmap-3}}
 	<telerik:RadPivotMap ItemsSource="{Binding MyDataSourceProperty}" />
 {{endregion}}
 
-#### __[XAML] Example 4: Setting the ItemsSource in code (see Example 2)__
+#### __[XAML] Setting the ItemsSource in code (see Example 2)__
 {{region radtreemap-getting-started-pivotmap-4}}
 	this.radPivotMap.ItemsSource = GetData();
 {{endregion}}
 
-#### Figure 1: RadPivotMap
+__RadPivotMap__  
+
 ![](images/radtreemap-getting-started-pivotmap-0.png)
+
+>tip Avoid inserting RadPivotMap in panels that measure its children with Infinity. In this case, the control cannot properly measure and arrange its child visuals. Examples for panels that measure the control with Inifinity size are StackPanel, ScrollViewer or a Grid's Row/ColumnDefinition with its size (Width or Height) set to Auto. Instead, use panels that measure its children with the available space.
 
 ## See Also  
 * [Mappings]({%slug radtreemap-mappings%})

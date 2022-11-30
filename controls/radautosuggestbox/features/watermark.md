@@ -20,7 +20,7 @@ The default watermark is empty. To change this, set the __WatermarkContent__ pro
 {{endregion}}
 
 #### Figure 1: Watermark content
-![](images/radautosuggestbox-features-watermark-0.png)
+![WPF RadAutoSuggestBox Watermark content](images/radautosuggestbox-features-watermark-0.png)
 
 ## Customize the Watermark Behavior
 
@@ -48,7 +48,7 @@ The default UI of the watermark is a simple content presenter that shows the val
 {{endregion}}
 
 #### Figure 2: Watermark content template
-![](images/radautosuggestbox-features-watermark-1.png)
+![WPF RadAutoSuggestBox Watermark content template](images/radautosuggestbox-features-watermark-1.png)
 
 ## See Also  
  * [Getting Started]({%slug radautosuggestbox-getting-started%})

@@ -49,8 +49,7 @@ This method is used to scroll the view horizontally and vertically so that a par
 __Figure 1__ illustrates how the view is scrolled vertically and TimeRuler part - horizontally when the code from __Example 1__ is executed for “task 4”. 
 
 #### __Figure 1: GanttView before and after calling ScrollIntoView for “task 4"__
-
-![](images/ganttview_scrolling_01.png)
+![WPF RadGanttView GanttView before and after calling ScrollIntoView for “task 4"](images/ganttview_scrolling_01.png)
 
 ### ScrollIntoView (object item, ScrollSettings settings)
 
@@ -75,8 +74,7 @@ __Example 2__ demonstrates how the ScrollIntoView method could be used with __Sc
 __Figure 2__ shows the result.
 
 #### __Figure 2: GanttView before and after calling ScrollIntoView for “task 4” with ScrollingSettings applied__
-
-![](images/ganttview_scrolling_02.png)
+![WPF RadGanttView GanttView before and after calling ScrollIntoView for “task 4” with ScrollingSettings applied](images/ganttview_scrolling_02.png)
 
 ### ScrollToDateTime(DateTime dateTime)
 
@@ -91,8 +89,7 @@ You can use the ScrollToDateTime method to horizontally scroll the TimeRuler par
 You can see the result in __Figure 3__.
 
 #### __Figure 3: GanttView before and after calling ScrollToDateTime method__
-
-![](images/ganttview_scrolling_03.png)
+![WPF RadGanttView GanttView before and after calling ScrollToDateTime method](images/ganttview_scrolling_03.png)
 
 ### ScrollToColumn(int columnIndex) / ScrollToColumn(ColumnDefinitionBase columnDefinition)
 
@@ -105,8 +102,7 @@ Both methods are used to scroll the Grid part of RadGanttView horizontally so th
 {{endregion}}
 
 #### __Figure 4: GanttView before and after calling ScrollToColumn method__
-
-![](images/ganttview_scrolling_04.png)
+![WPF RadGanttView GanttView before and after calling ScrollToColumn method](images/ganttview_scrolling_04.png)
 
 ### ScrollToRow(int rowIndex)
 
@@ -119,8 +115,7 @@ Use the ScrollToRow method to scroll the view vertically so that the specified R
 {{endregion}}
 
 #### __Figure 5: GanttView before and after calling ScrollToRow method__
-
-![](images/ganttview_scrolling_05.png)
+![WPF RadGanttView GanttView before and after calling ScrollToRow method](images/ganttview_scrolling_05.png)
 
 ### ScrollHorizontalTo (double offset, GanttScrollArea ganttArea)
 
@@ -133,8 +128,7 @@ This method is used to scroll either the Grid or TimeLine area (set as a second 
 {{endregion}}
 
 #### __Figure 6: GanttView before and after calling ScrollHorizontalTo method__
-
-![](images/ganttview_scrolling_06.png)
+![WPF RadGanttView GanttView before and after calling ScrollHorizontalTo method](images/ganttview_scrolling_06.png)
 
 ### ScrollVerticalTo(double offset) / ScrollVerticalWith(double offset)
 
@@ -147,8 +141,7 @@ Both methods are used to vertically scroll the view with the specified offset (i
 {{endregion}}
 
 #### __Figure 7: GanttView before and after calling ScrollVerticalTo method__
-
-![](images/ganttview_scrolling_07.png)
+![WPF RadGanttView GanttView before and after calling ScrollVerticalTo method](images/ganttview_scrolling_07.png)
 
 ## Customizing Auto-scrolling Functionality
 
@@ -164,8 +157,7 @@ By default, when a GanttTask is selected inside the Grid part of the GanttView, 
 __Figure 8__ shows the result when selecting “task 4”.
 
 #### __Figure 8: Default and customized auto-scrolling behavior__ 
-
-![](images/ganttview_scrolling_08.png)
+![WPF RadGanttView Default and customized auto-scrolling behavior](images/ganttview_scrolling_08.png)
 
 >tip In order to disable the auto-scrolling behavior, you will need to set the HorizontalScrollPosition and VerticalScrollPosition properties of the ScrollSettings to “None” as shown in __Example 9__.
 

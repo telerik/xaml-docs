@@ -10,33 +10,51 @@ position: 2
 
 # Converters
 
-The Telerik suite provides a set of built-in __IValueConverters__ which can be used to perform conversion between different types.
+The Telerik suite provides a set of built-in `IValueConverters` which can be used to perform conversion between different types. Some of the converters will have to be defined as resources, in order to be used. 
 
 The converters are located in the __Telerik.Windows.Controls.dll__ assembly.
 
-#### __[XAML] Example 1: Specifying converters in XAML__
-{{region xaml-common-converters_0}}
-	<FrameworkElement>
-	  <FrameworkElement.Resources>
-		  <telerik:BooleanToOpacityConverter x:Key="BooleanToOpacityConverter"/>
-		  <telerik:InvertedBooleanToOpacityConverter x:Key="InvertedBooleanToOpacityConverter"/>
-		  <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-		  <telerik:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter"/>
-		  <telerik:VisibilityToBooleanConverter x:Key="VisibilityToBooleanConverter"/>
-		  <telerik:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter"/>
-		  <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
-		  <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
-		  <telerik:DateTimeTypeConverter x:Key="DateTimeTypeConverter"/>
-		  <telerik:UppercaseConverter x:Key="UppercaseConverter"/>
-		  <telerik:BinaryImageConverter x:Key="BinaryImageConverter"/>
-		  <telerik:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter"/>
-		  <telerik:OpacityConverter x:Key="OpacityConverter"/>
-		  <telerik:ThicknessToOrientedThicknessConverter x:Key="ThicknessToOrientedThicknessConverter"/>
-		  <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter"/>
-		  <telerik:BrushToColorConverter x:Key="BrushToColorConverter"/>
-		  <telerik:ColorToBrushWithOpacityConverter x:Key="ColorToBrushWithOpacityConverter"/>
-	  </FrameworkElement.Resources>
-	</FrameworkElement>
+>important To use the `CultureToLocalizationStringConverter` converter, include the following namespace `xmlns:telerikLocalization="clr-namespace:Telerik.Windows.Controls.Localization;assembly=Telerik.Windows.Controls"`.
+
+#### __[XAML] Declare the converters as resources__
+{{region common-converters-0}}
+	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	                    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+	                    xmlns:telerikLocalization="clr-namespace:Telerik.Windows.Controls.Localization;assembly=Telerik.Windows.Controls">
+	    <telerik:BooleanToOpacityConverter x:Key="BooleanToOpacityConverter"/>
+	    <telerik:InvertedBooleanToOpacityConverter x:Key="InvertedBooleanToOpacityConverter"/>
+	    <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+	    <telerik:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter"/>
+	    <telerik:VisibilityToBooleanConverter x:Key="VisibilityToBooleanConverter"/>
+	    <telerik:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
+	    <telerik:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter"/>
+	    <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
+	    <telerik:CornerRadiusConverter x:Key="CornerRadiusConverter"/>
+	    <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+	    <telerik:DateTimeTypeConverter x:Key="DateTimeTypeConverter"/>
+	    <telerik:UppercaseConverter x:Key="UppercaseConverter"/>
+	    <telerik:LinearGradientToSolidColorBrushConverter x:Key="LinearGradientToSolidColorBrushConverter"/>
+	    <telerik:BinaryImageConverter x:Key="BinaryImageConverter"/>
+	    <telerik:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter"/>
+	    <telerik:OpacityConverter x:Key="OpacityConverter"/>
+	    <telerik:ThicknessToOrientedThicknessConverter x:Key="ThicknessToOrientedThicknessConverter"/>
+	    <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter"/>
+	    <telerik:BrushToColorConverter x:Key="BrushToColorConverter"/>
+	    <telerik:MultiBindingBooleanOrConverter x:Key="MultiBindingBooleanOrConverter"/>
+	    <telerik:NumberToVisibilityConverter x:Key="NumberToVisibilityConverter"/>
+	    <telerik:ColorToBrushWithOpacityConverter x:Key="ColorToBrushWithOpacityConverter"/>
+	    <telerikLocalization:CultureToLocalizationStringConverter x:Key="CultureToLocalizationStringConverter"/>
+	</ResourceDictionary>
+{{endregion}}
+
+#### __[XAML] Merge the created ResourceDictionary that contains the declared converters__
+{{region common-converters-1}}
+	<Application> 
+		<Application.Resources>
+			<ResourceDictionary Source="MyConvertersResourceDictionary.xaml"/> 
+		</Application.Resources> 
+	</Application> 
 {{endregion}}
 
 ## BooleanToOpacityConverter
@@ -49,31 +67,48 @@ This converter converts __Boolean__ values to 1 or 0 opacity. If the __Boolean__
 
 ## BooleanToVisibilityConverter
 
-This converter converts __Boolean__ values to __Visibility__ enumeration values. If the __Boolean__ value is __false__ the __Convert()__ method will return __Visibility.Collapsed__.
+This converter converts __Boolean__ values to __Visibility__ enumeration values. If the __Boolean__ value is __false__ the `Convert()` method will return __Visibility.Collapsed__.
 
 ## InvertedBooleanToVisibilityConverter
 
-This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the __Convert()__ method will return __Visibility.Collapsed__.
+This converter converts __Boolean__ values to __Visibility__ enumeration values. If the Boolean value is __true__ the `Convert()` method will return __Visibility.Collapsed__.
 
 ## VisibilityToBooleanConverter
 
-This converter converts values from the __Visibility__ enumeration to __Boolean__ values. The __Convert()__ method returns __true__ if the passed value is __Visibility.Visible__ and __false__ otherwise.
+This converter converts values from the __Visibility__ enumeration to __Boolean__ values. The `Convert()` method returns __true__ if the passed value is __Visibility.Visible__ and __false__ otherwise.
 
-To invert the results of the converter, set the __IsInverted__ property. This way, __Visibility.Visible__ will be converted to __false__ and __Visibility.Collapsed__ to __true__.
+To invert the results of the converter, set the `IsInverted` property. This way, __Visibility.Visible__ will be converted to __false__ and __Visibility.Collapsed__ to __true__.
 
-#### __[C#] Example 2: Setting the view model__
-{{region xaml-common-converters_1}}
+#### __[C#] Setting the IsInverted property__
+{{region common-converters-2}}
 	<FrameworkElement.Resources>
 		<telerik:VisibilityToBooleanConverter x:Key="InvertedVisibilityToBooleanConverter" IsInverted="True"/>
 	</FrameworkElement.Resources>
 {{endregion}}
 
+## EnumToBooleanConverter
+
+The `EnumToBooleanConverter` converts an __Enum__ to a __Boolean__ value. The `Convert()` method returns __true__ if the provided value matches the __Enum__ value that is provided in the `CommandParameter` property. If the values do not match, the method will return __false__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.
+
+#### __[C#] Setting the view model__
+{{region common-converters-3}}
+	public class MainViewModel
+	{
+    	public Visibility Visibility { get; set; }
+	}
+{{endregion}}
+
+#### __[XAML] Setting the converter to the IsChecked property__
+{{region common-converters-4}}
+	<CheckBox IsChecked="{Binding Visibility, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Visible}"/>
+{{endregion}}
+
 ## EnumToVisibilityConverter
 
-Converts an __Enum__ value to __Visibility__ enumeration values. If the enum value is one of the values specified in the converter parameter, the __Convert()__ method will return __Visibility.Visible__, otherwise it will return __Visibility.Collapsed__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.
+Converts an __Enum__ value to __Visibility__ enumeration values. If the enum value is one of the values specified in the converter parameter, the `Convert()` method will return __Visibility.Visible__, otherwise it will return __Visibility.Collapsed__. Multiple enum values could be specified in the converter parameter, separated using `,` or `;`.
 
-#### __[C#] Example 3: Setting the view model__
-{{region cs-common-converters_2}}
+#### __[C#] Setting the view model__
+{{region common-converters-5}}
 	public class MainViewModel
 	{
 		public Gender Gender { get; set; }
@@ -86,8 +121,8 @@ Converts an __Enum__ value to __Visibility__ enumeration values. If the enum val
 	}
 {{endregion}}
 
-#### __[XAML] Example 4: Setting the converter to the Visibility property__
-	{{region xaml-common-converters_3}}
+#### __[XAML] Setting the converter to the Visibility property__
+	{{region common-converters-6}}
 		<telerik:RadRadioButton Visibility="{Binding MyGender, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Male}"/>
 	{{endregion}}
 
@@ -119,16 +154,16 @@ The converter converts __byte array__ to __System.Windows.Media.Imaging.BitmapIm
 
 The converter converts __numeric__ value to __Thickness__ based on the parameter.
 
-#### __[C#] Example 5: Setting the view model__
-{{region cs-common-converters_4}}
+#### __[C#] Setting the view model__
+{{region common-converters-7}}
 	public class MainViewModel
 	{
 		public double Thickness { get; set; }
 	}
 {{endregion}}
 
-#### __[XAML] Example 6: Setting the converter to the BorderThickness property__
-{{region xaml-common-converters_5}}
+#### __[XAML] Setting the converter to the BorderThickness property__
+{{region common-converters-8}}
 	 <Border Background="Green" BorderThickness="{Binding Thickness,Converter={StaticResource DoubleToThicknessConverter},ConverterParameter=LeftRight}" BorderBrush="Black"/>
 {{endregion}}
 
@@ -136,8 +171,8 @@ The converter converts __numeric__ value to __Thickness__ based on the parameter
 
 The converter applies opacity to a __Color__ or __Brush__ value based on the parameter.
 
-#### __[C#] Example 7: Setting the view model__
-{{region cs-common-converters_6}}
+#### __[C#] Setting the view model__
+{{region common-converters-9}}
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -148,17 +183,17 @@ The converter applies opacity to a __Color__ or __Brush__ value based on the par
 	}
 {{endregion}}
 
-#### __[XAML] Example 8: Setting the converter to the Background property__
-{{region xaml-common-converters_7}}
+#### __[XAML] Setting the converter to the Background property__
+{{region common-converters-10}}
 	<Border Background="{Binding Color, Converter={StaticResource OpacityConverter},ConverterParameter=8}"  />
 {{endregion}}
 
 ## ThicknessToOrientedThicknessConverter
 
-The converter applies __Thickness__ to a property of type __Thickness__ based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
+The converter applies __Thickness__ to a property of type `Thickness` based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
 
-#### __[C#] Example 9: Setting the ViewModel__
-	{{region cs-common-converters_8}}
+#### __[C#] Setting the ViewModel__
+	{{region common-converters-11}}
 		public class MainWindow
 		{
 			 public MainWindow()
@@ -172,8 +207,8 @@ The converter applies __Thickness__ to a property of type __Thickness__ based on
 		}
 	{{endregion}}
 
-#### __[XAML] Example 10: Setting the converter to the BorderThickness property__
-	{{region xaml-common-converters_9}}
+#### __[XAML] Setting the converter to the BorderThickness property__
+	{{region common-converters-12}}
 		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
 	{{endregion}}	
 
@@ -184,8 +219,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 
 > See all available glyphs in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
-#### __[C#] Example 11: Setting the view model__
-{{region cs-common-converters_10}}
+#### __[C#] Setting the view model__
+{{region common-converters-13}}
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -196,8 +231,8 @@ The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts i
 	}
 {{endregion}}
 
-#### __[XAML] Example 12: Using the StringToGlyphConverter converter__
-{{region xaml-common-converters_11}}
+#### __[XAML] Using the StringToGlyphConverter converter__
+{{region common-converters-14}}
 	<telerik:RadGlyph Glyph="{Binding GlyphString, Converter={StaticResource StringToGlyphConverter}}" />	
 {{endregion}}
 
@@ -211,7 +246,53 @@ The BrushToColorConverter converts a [SolidColorBrush object](https://docs.micro
 ## ColorToBrushWithOpacityConverter
 
 The ColorToBrushWithOpacityConverter converts a [Color object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netcore-3.1) with opacity to 
-[SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1). The opacity need to be pass as a parameter. This converter require the __Value__ parameter to by of type __Color__ and the __Parameter__ to be different from null.
+[SolidColorBrush object](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netcore-3.1). The opacity need to be pass as a parameter. This converter require the __Value__ parameter to be of type `Color` and the __Parameter__ to be different from null.
+
+## LinearGradientToSolidColorBrushConverter
+
+The LinearGradientToSolidColorBrushConverter converts a `LinearGradientBrush` object to `SolidColorBrush` object. If the `GradientStops` collection of the LinearGradientBrush contains entries, the first one will be set to the `Color` property of the returned SolidColorBrush instance. The converter will return a different gradient stop if the index passed to the ConverterParameter is a valid one.
+
+#### __[XAML] Using the LinearGradientToSolidColorBrushConverter converter__
+{{region common-converters-15}}
+	<Grid>
+		<Grid.Resources>
+		    <telerik:LinearGradientToSolidColorBrushConverter x:Key="LinearGradientToSolidColorBrushConverter"/>
+
+		    <LinearGradientBrush x:Key="LinearGradientBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+		        <GradientStop Color="White" Offset="0"/>
+		        <GradientStop Color="Orange" Offset="0.375"/>
+		        <GradientStop Color="DarkOrange" Offset="0.375"/>
+		        <GradientStop Color="Red" Offset="1"/>
+		    </LinearGradientBrush>
+		</Grid.Resources>
+
+		<Button Background="{Binding Source={StaticResource LinearGradientBrush}, Converter={StaticResource LinearGradientToSolidColorBrushConverter}, ConverterParameter=1}"/>
+	</Grid>
+{{endregion}}
+
+## CultureToLocalizationStringConverter
+
+The CultureToLocalizationStringConverter will return the related localization string by providing its key.
+
+## MultiBindingBooleanOrConverter
+
+The MultiBindingBooleanOrConverter expects boolean values and it will return __true__ if at least one of the bindings evaluates to __true__. This converter implements the `IMultiValueConverter` interface.
+
+## CornerRadiusConverter
+
+The CornerRadiusConverter expects a CornerRadius value and returns a new CornerRadius instance with the desired directions. To specify the directions that will retain their values, use the `ConverterParameter` property.
+
+#### __[XAML] Using the CornerRadiusConverter converter__
+{{region common-conveters-16}}
+	<Grid>
+	    <Grid.Resources>
+	        <telerik:CornerRadiusConverter x:Key="CornerRadiusConverter"/>
+
+	        <CornerRadius x:Key="CornerRadius" TopLeft="10" TopRight="10" BottomLeft="10" BottomRight="10"/>
+	    </Grid.Resources>
+	    <Border Background="Red" CornerRadius="{Binding Source={StaticResource CornerRadius}, Converter={StaticResource CornerRadiusConverter}, ConverterParameter=TopLeft}"/>
+	</Grid>
+{{endregion}}
 
 ## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

@@ -34,7 +34,7 @@ The material of a 3D object specifies the brush or the texture that will be appl
 {{endregion}}
 
 #### __Figure 1: BarSeries3D and PointSeries3D with custom material__
-![](images/radchartview-3d-cutomizing-cartesian-series-0.png)
+![WPF RadChartView3D BarSeries3D and PointSeries3D with custom material](images/radchartview-3d-cutomizing-cartesian-series-0.png)
 
 ## Defining a custom geometry
 
@@ -69,7 +69,7 @@ The geometry of a 3D object describes its shape. You can define a geometry for t
 > The __Positions__ are defined in relative units between 0 and 1, according to the bounds of the data point visual.
 
 #### __Figure 2: BarSeries3D and PointSeries3D with custom geometries__
-![](images/radchartview-3d-cutomizing-cartesian-series-1.png)
+![WPF RadChartView3D BarSeries3D and PointSeries3D with custom geometries](images/radchartview-3d-cutomizing-cartesian-series-1.png)
 	
 ## Geometry and material selectors
 

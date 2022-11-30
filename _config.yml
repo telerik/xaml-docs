@@ -14,6 +14,7 @@ getting-started/installation/for-silverlight-vs-extensions-releases.md,
 getting-started/installation/installation-installing-hotfix.md,
 getting-started/installation/installation-installing-license-limitations.md,
 getting-started/installation/installation-installing-from-nuget.md,
+getting-started/installation/installation-nuget-keys.md,
 integration/installation-adding-to-vs-toolbox-silverlight.md,
 upgrade/installation-upgrading-from-trial-to-developer-license.md,
 common-information/installation-installing-dependencies.md,
@@ -1087,6 +1088,8 @@ navigation:
     "getting-started/installation":
         title: "Installation"
         position: 5
+    "getting-started/installation/nuget":
+        title: "NuGet Installation"        
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
         position: 6
@@ -1095,16 +1098,19 @@ navigation:
         position: 7
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
+        position: 10
     "styling-and-appearance/troubleshooting":
         title: "Troubleshooting"
+        position: 11
     "styling-and-appearance/glyphs":
         title: "Font Glyphs"
-        position: 5
+        position: 8
     "styling-and-appearance/themes-suite":
         title: "Themes Suite"
-        position: 4
+        position: 7
     "styling-and-appearance/how-to":
         title: "How To"
+        position: 9
     "testing/justmock":
         title: "JustMock"
     "testing/appium":

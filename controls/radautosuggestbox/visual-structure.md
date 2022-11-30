@@ -13,7 +13,7 @@ position: 1
 This topic defines terms and concepts related to __RadAutoSuggestBox__ that you have to get familiar with before you continue reading this help.
 
 #### __Figure 1: RadAutoSuggestBox in the Fluent theme__
-![](images/radautosuggestbox-visual-structure-0.png)  
+![WPF RadAutoSuggestBox RadAutoSuggestBox in the Fluent theme](images/radautosuggestbox-visual-structure-0.png)  
 ![](images/radautosuggestbox-visual-structure-1.png)  
 ![](images/radautosuggestbox-visual-structure-2.png)
 

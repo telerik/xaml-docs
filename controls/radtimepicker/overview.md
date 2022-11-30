@@ -11,13 +11,6 @@ CTAControlName: RadTimePicker
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![](images/RadTimePicker_Overview.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![](images/RadTimePicker_Overview_WPF.png)
-{% endif %}
-
 Thank you for choosing __Telerik RadTimePicker__! 
 
 __RadTimePicker__ is a convenient way to get rid of boring time parsing and data validation. RadTimePicker is an easy and simple, but yet essential control to improve end-user experience. Moreover, you can control the layout of the popup that shows time values as well as to use the rich data model in {% if site.site_name == 'Silverlight' %} Silverlight {% endif %} {% if site.site_name == 'WPF' %} WPF

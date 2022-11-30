@@ -24,7 +24,7 @@ __ExportToWorkbook__ uses additional libraries so you need to add references to 
 
 ## Usage
 
-This method exports the associated RadGridView to a [Workbook](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/working-wtih-workbooks-what-is-workbook) object. **Examples 1 and 2** show how you can modify that object before exporting.
+This method exports the associated RadGridView to a [Workbook](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/working-with-workbooks-what-is-workbook) object. **Examples 1 and 2** show how you can modify that object before exporting.
 
 #### __[C#] Example 1: Export RadGridView to a Workbook and modify cell style:__
 {{region cs-gridview-export-workbook-0}}

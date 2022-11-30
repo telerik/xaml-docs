@@ -11,13 +11,6 @@ CTAControlName: RadGanttView
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![Rad Gantt View Overview 010 SL](images/RadGanttView_Overview_010_SL.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![Rad Gantt View Overview 010 WPF](images/RadGanttView_Overview_010_WPF.png)
-{% endif %}
-
 Telerik __RadGanttView__ is a control used for managing and visualization project planning data in a MVVM friendly way.
 
 {% if site.has_cta_panels == true %}

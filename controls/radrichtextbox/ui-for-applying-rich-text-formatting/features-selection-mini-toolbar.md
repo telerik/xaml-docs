@@ -24,7 +24,7 @@ As __RadRichTextBox__ loads the default __SelectionMiniToolBar__ using [MEF](htt
 
 And of course, for those of you who don't need additional UI pop-ups, these can be disabled by setting the __IsSelectionMiniToolBarEnabled__ property of __RadRichTextBox__ to __False__.
         
-By default the __SelectionMiniToolBar__ has a transpareny effect. This effect can be disabled with the __IsTransparencyEnabled__ property.
+By default, the __SelectionMiniToolBar__ has a transparency effect. This effect can be disabled with the __IsTransparencyEnabled__ property.
         
 #### __[C#] Example 1:  Disable the transparensy effect of the SelectionMiniToolBar__
 

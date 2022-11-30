@@ -25,7 +25,7 @@ The default content template of the buttons contains a [RadGlyph]({%slug common-
 {{endregion}}
 
 #### Figure 1: Query and clear buttons with changed glyph icons
-![](images/radautosuggestbox-appearance-customize-buttons-0.png)
+![WPF RadAutoSuggestBox Query and clear buttons with changed glyph icons](images/radautosuggestbox-appearance-customize-buttons-0.png)
 
 ## Customizing the Buttons UI
 
@@ -48,7 +48,7 @@ To replace the default RadGlyph element used to display the buttons' content, se
 {{endregion}}
 
 #### Figure 2: Query and clear buttons with changed content template
-![](images/radautosuggestbox-appearance-customize-buttons-1.png)
+![WPF RadAutoSuggestBox Query and clear buttons with changed content template](images/radautosuggestbox-appearance-customize-buttons-1.png)
 
 ## Hiding the Buttons
 
@@ -60,7 +60,7 @@ To control the visibility of the query and clear buttons, set the __QueryButtonV
 {{endregion}}
 
 #### Figure 3: Hidden query button
-![](images/radautosuggestbox-appearance-customize-buttons-2.png)
+![WPF RadAutoSuggestBox Hidden query button](images/radautosuggestbox-appearance-customize-buttons-2.png)
 
 When the __ClearButtonVisibility__ property is set to __Auto__, the button shows only when the control is focused and the TextBox is not empty. This is the default behavior.
 

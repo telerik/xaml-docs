@@ -11,13 +11,6 @@ CTAControlName: DragDropManager
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![Drag Drop Manger SL](images/DragDropManger_SL.png)
-{% endif %}
-{% if site.site_name == 'WPF' %}
-![Drag Drop Manger WPF](images/DragDropManger_WPF.png)
-{% endif %}
-
 __DragDropManager__ offers intuitive API similar to the WPF native drag and drop behavior. The APi allows you to enable drag-drop in multiple scenarios.
 
 {% if site.has_cta_panels == true %}

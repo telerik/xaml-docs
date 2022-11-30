@@ -345,7 +345,7 @@ To apply the custom template use the __EditAppointmentDialogStyle__ property of 
 {{endregion}}
 
 #### Figure 1: Edit appointment dialog with an additional combobox for the Location of the appointment.
-![](images/scheduleview-howto-add-radcombobox-to-editappointmentdialog-0.png)
+![WPF RadScheduleView Edit appointment dialog with an additional combobox for the Location of the appointment.](images/scheduleview-howto-add-radcombobox-to-editappointmentdialog-0.png)
 
 ## See Also
 * [Getting Started]({%slug radscheduleview-getting-started%})

@@ -5,7 +5,7 @@ description: Telerik UI for {{ site.framework_name }} comes with two types of as
 slug: xaml-vs-noxaml
 tags: xaml,noxaml
 published: True
-position: 0
+position: 1
 ---
 
 # Xaml vs. NoXaml

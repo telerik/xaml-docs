@@ -120,7 +120,7 @@ The __MaskedInputExtensions.AllowMinusOnNullValue__ property allows you to displ
 When the property is set to __True__ and the __Value__ is set to __null__, the minus symbol will be included in the Text property, however, the value will remain null. You can see the example in *Figure 2*.
 
 #### __Figure 2: MaskedInputExtensions.AllowMinusOnNullValue attached property example__
-![](images/radmaskedinput_features_extensions_01.png)
+![WPF RadMaskedInput MaskedInputExtensions.AllowMinusOnNullValue attached property example](images/radmaskedinput_features_extensions_01.png)
 
 By default, the minus sign cannot be deleted on press of the __Delete__ or the __Backspace__ key. To change this behavior, you will need to create a custom masked input class that derives from either the RadMaskedNumeric or RadMaskedCurrencyInput control and override its CanModifyChar, HandleDeleteKeyNoMask and HandleBackKeyNoMask methods. This approach is demonstrated in the [MinusKeyCustomizations](https://github.com/telerik/xaml-sdk/tree/master/MaskedInput/MinusKeyCustomizations) SDK example.
 

@@ -13,6 +13,8 @@ The __UI for {{ site.framework_name }}__ suite comes with a variety of predefine
 
 >You can check the appearance of a specific control in a certain theme by viewing its "Theming" demo in our {% if site.site_name == 'WPF' %}[WPF Controls Examples application](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples application](https://demos.telerik.com/silverlight/){% endif %}.
 
+The table is ordered chronologically, where the first theme in the list is the latest released.
+
 <style>
 table th:first-of-type {
     width: 20%;
@@ -41,8 +43,8 @@ Theme name | Appearance | Theme Palette | Variations
 **[Green]({%slug common-styling-appearance-green-theme%})** | ![Green](images/GreenTheme.png)| Yes | Light, Dark{% endif %}
 **[Visual Studio 2013]({%slug common-styling-appearance-visualstudio2013-theme%})** | ![Visual Studio 2013](images/VisualStudio2013Theme.png) | Yes | Light, Blue, Dark
 **[Office 2013]({%slug common-styling-appearance-office2013-theme%})** | ![Office 2013](images/Office2013Theme.png) | Yes | White, LightGray, DarkGray
-**[Windows 8]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8](images/Windows8Theme.png) | Yes | -
 **[Windows 8 Touch]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8 Touch](images/Windows8TouchTheme.png) | Yes | -
+**[Windows 8]({%slug common-styles-appearance-colorizing-metro-theme%})** | ![Windows 8](images/Windows8Theme.png) | Yes | -
 **Expression Dark** | ![Expression Dark](images/ExpressionDarkTheme.png) | No | -
 **Windows 7** | ![Windows 7](images/Windows7Theme.png) | No | -
 **Transparent** | ![Transparent](images/TransparentTheme.png) | No | -

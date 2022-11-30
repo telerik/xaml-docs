@@ -1,53 +1,66 @@
 ---
 title: Events
 page_title: Events
-description: Check our &quot;Events&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+description: Check our &quot;Events&quot; documentation article for the RadImageEditor and RadImageEditorUI {{ site.framework_name }} control.
 slug: radimageeditor-events
 tags: events
 published: True
-position: 7
+position: 5
 ---
 
 # Events
 
-This topic covers the specific events exposed by the RadImageEditor control.
+This topic covers the specific events exposed by the `RadImageEditor` and `RadImageEditorUI` controls.
 
-RadImageEditor raises the following events:
+## RadImageEditor Events
 
-* __CommandError__: Occurs when an error gets thrown while executing a command. Through the __CommandErrorEventArgs__, you can access the following property:
+The ImageEditor raises the following events:
 
-	* **Exception**: Gets the currently thrown exception.               
+* `CommandError`&mdash;Occurs when an error gets thrown while executing a command. Through the `CommandErrorEventArgs`, you can access the following property:
 
-* __CommandExecuted__: Occurs when a command gets executed. Through the __ImageCommandExecutedEventArgs__, you can access the following properties:
+	* `Exception`&mdash;Gets the currently thrown exception.               
+
+* `CommandExecuted`&mdash;Occurs when a command gets executed. Through the `ImageCommandExecutedEventArgs`, you can access the following properties:
            
-	* **Command**: Gets the current executed command.         
-	* **CommandParameter**: Gets the current executed command parameter.  	
+	* `Command`&mdash;Gets the current executed command.         
+	* `CommandParameter`&mdash;Gets the current executed command parameter.  	
 		   
-* __CommandExecuting__: Occurs before a command gets executed. Through the __ImageCommandExecutingEventArgs__, you can access the following properties:
+* `CommandExecuting`&mdash;Occurs before a command gets executed. Through the `ImageCommandExecutingEventArgs`, you can access the following properties:
            
-	* **Command**: Gets the current executed command.         
-	* **CommandParameter**: Gets the current executed command parameter.  		                
+	* `Command`&mdash;Gets the current executed command.         
+	* `CommandParameter`&mdash;Gets the current executed command parameter.  		                
 
-* __ImageViewSizeChanged__: Occurs when the __ImageViewSize__ property changes.
+* `ImageViewSizeChanged`&mdash;Occurs when the `ImageViewSize` property changes.
             
-> __ImageViewSize__ property of the RadImageEditor's holds the actual image size (with scaling) set to the control.                
+	> `ImageViewSize` property of RadImageEditor holds the actual image size (with scaling) set to the control.                
 
-* __IsReadOnlyChanged__: Occurs when the IsReadOnly property changes.                
+* `IsReadOnlyChanged`&mdash;Occurs when the `IsReadOnly` property changes.                
 
-* __ScaleFactorChanged__: Occurs when the ScaleFactor value has changed.                 
+* `ScaleFactorChanged`&mdash;Occurs when the `ScaleFactor` value has changed.                 
 
-* __ToolCommitted__: Occurs when a tool is committed. Through the __ToolCommittedEventArgs__, you can access the following properties:      
+* `ToolCommitted`&mdash;Occurs when a tool is committed. Through the `ToolCommittedEventArgs`, you can access the following properties:      
       
-	* **Tool**: Gets the current executed tool.
-	* **ExecuteSameToolAfterCommit**: Gets or sets a value indicating whether the tool is preserved as a current executing tool. If set to false, the current executing tool will be deactivated.
+	* `Tool`&mdash;Gets the current executed tool.
+	* `ExecuteSameToolAfterCommit`&mdash;Gets or sets a value indicating whether the tool is preserved as a current executing tool. If set to false, the current executing tool will be deactivated.
 
-* __ToolCommitting__: Occurs before a tool is committed. Through the __ToolCommittingEventArgs__, you can access the following property:      
+* `ToolCommitting`&mdash;Occurs before a tool is committed. Through the `ToolCommittingEventArgs`, you can access the following property:      
       
-	* **Tool**: Gets the current executed tool.              
+	* `Tool`&mdash;Gets the current executed tool.
 
->tipWhen a tool is executed, the CommandExecuting/ CommandExecuted events are raised for the ExecuteToolCommand. The specific tool is available from the CommandParameter, however you cannot control its behavior (for example, cancel it). For this purpose the ToolCommitting/ToolCommitted events are raised. You can find a working example of their use in our online SDK reporitory: [Handle Tool Commit](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/HandleToolCommit).
-          
+>tip When a tool is executed, the `CommandExecuting`/`CommandExecuted` events are raised for the `ExecuteToolCommand`. The specific tool is available from the `CommandParameter`, however you cannot control its behavior (for example, cancel it). For this purpose the `ToolCommitting`/`ToolCommitted` events are raised. Find a working example of their usage in our online SDK reporitory: [Handle Tool Commit](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/HandleToolCommit).          
 
-## See Also
+## RadImageEditorUI Events
 
+The `RadImageEditorUI` component exposes the `ImageEditorLoaded` event, that occurs when the underlying `RadImageEditor` control is loaded. The image editor can be accessed using the `ImageEditor` property of `RadImageEditorUI`.
+
+#### __[C#] ImageEditorLoaded event handler__
+{{region radimageeditor-events-0}}
+	private void RadImageEditorUI_ImageEditorLoaded(object? sender, EventArgs e)
+	{
+		RadImageEditorUI ui = (RadImageEditorUI)sender;
+		RadImageEditor imageEditor = ui.ImageEditor;
+	}
+{{endregion}}
+
+## See Also  
  * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

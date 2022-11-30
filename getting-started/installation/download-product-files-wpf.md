@@ -46,12 +46,12 @@ Below you could find a list of the available files:
 
 ### Installation
 
-* Telerik_UI_for_WPF_[version]_[license].msi – automatic installation, check [Installing Telerik UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
+* Telerik_UI_for_WPF_[version]_[license].msi&mdash;Automatic installation, check [Installing Telerik UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
 
 ### Other Setup Files
 
-* Telerik_UI_for_WPF_[version]_[license]_Hotfix.zip – used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
-* Telerik_UI_for_WPF_[version]_Themes.zip
+* Telerik_UI_for_WPF_[version]_[license]_Hotfix.zip&mdash;Used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
+* Telerik_UI_for_WPF_[version]_Themes.zip&mdash;Contains two folders containing the default styles and templates for the controls when using the [Xaml and NoXaml]({%slug xaml-vs-noxaml%}) binaries. You need to use the resources from the `Themes.Xaml` folder when using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach for theming the controls and the ones from `Themes.NoXaml` when using [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles).
 * Telerik_UI_for_WPF_[version]_[license]_PDBs.zip
 * Telerik_UI_for_WPF_[version]\_NuGet_Xaml_[license].zip
 * Telerik_UI_for_WPF_[version]\_NuGet_NoXaml_[license].zip 
@@ -61,7 +61,7 @@ Below you could find a list of the available files:
 
 >Check [Setting a theme]({%slug styling-apperance-implicit-styles-overview%}) topic for more information on the Xaml and NoXaml binaries.
 
->tip Check [Installing UI from a Nuget package]({%slug installation-installing-from-nuget-wpf%}) for more details on using the provided packages.
+>tip Check [Installing UI from a Nuget package]({%slug nuget-installation%}) for more details on using the provided packages.
 
 ### Documentation
 
@@ -90,7 +90,7 @@ You could download the complete source code of the [WPF Demos application]({%slu
 
 ### Source Code
 
-* Telerik_UI_for_WPF_Source_[version].zip – complete source code of the Telerik UI for WPF product, available only with Developer license.
+* Telerik_UI_for_WPF_Source_[version].zip&mdash;Complete source code of the Telerik UI for WPF product, available only with Developer license.
 
 ## Available versions
 
@@ -106,4 +106,4 @@ From the __Versions__ dropdown you can select an older version to download:
 
  * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
 
- * [Installing Telerik UI for WPF from a NuGet package]({%slug installation-installing-from-nuget-wpf%})
+ * [Installing Telerik UI for WPF from a NuGet package]({%slug nuget-installation%})

@@ -20,6 +20,10 @@ This article will list the breaking changes and how they can be fixed when upgra
 
 The obsoleted method __GetCurrentSelectedInline__ in the __ImageContextCommandBase__ class is now removed.
 
+### What to do now
+
+Use __RichTextBoxCommandBase.GetSelectedInlineOrSelectCurrent__ instead.
+
 ## What's Different in 2022 R2
 
 ### Changed

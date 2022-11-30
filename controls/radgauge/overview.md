@@ -11,8 +11,6 @@ CTAControlName: RadGauge
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}![Rad Gauge overview 01](images/RadGauge_overview_01.png){% endif %}{% if site.site_name == 'WPF' %}![Rad Gauge overview 01 wpf](images/RadGauge_overview_01_wpf.png){% endif %}
-
 Thank you for choosing __RadGauge__!
 
 If you are building business dashboards or you just need graphical indicators, you will find the new __RadGauge__ control indispensable. With the rich assortment of circular, linear and numeric gauge types and the powerful customization capabilities of the control you are free to build the exact dynamic data visualization tool that you need.

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: WPF Barcode Documentation | Supported Types Overview
+page_title: WPF Barcode Documentation - Supported Types Overview
 description: Check our &quot;Supported Types&quot; documentation article for Telerik Barcode for WPF control.
 position: 0
 slug: barcode-supported-types-overview

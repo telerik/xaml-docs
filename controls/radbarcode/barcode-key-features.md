@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: WPF Barcode Documentation | Key Features
+page_title: WPF Barcode Documentation - Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Barcode for WPF control.
 position: 2
 slug: barcode-key-features

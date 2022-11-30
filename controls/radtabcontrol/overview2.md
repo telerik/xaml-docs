@@ -11,12 +11,6 @@ CTAControlName: RadTabControl
 
 # Overview
 
-{% if site.site_name == 'Silverlight' %}
-![tabcontrol sl icon](images/tabcontrol_sl_icon.png)
-{% else %}
-![tabcontrol wpf icon](images/tabcontrol_wpf_icon.png)
-{% endif %}
-
 Thank you for choosing __RadTabControl__!				
 
 __RadTabControl__ is a flexible navigation component, used to build tabbed interfaces in {{ site.framework_name }} applications. Thanks to the related __RadTabItem__ control, you can organize your controls into different content pages, thus improving the overall user experience (UX) of your applications.				

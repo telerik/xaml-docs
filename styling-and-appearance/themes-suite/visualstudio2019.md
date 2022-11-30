@@ -5,7 +5,7 @@ description: Bring the Visual Studio 2019 appearance to your desktop application
 slug: common-styling-appearance-visualstudio2019-theme
 tags: visualstudio2019,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True
-position: 11
+position: 4
 ---
 
 <style>
@@ -166,58 +166,59 @@ article table
 
 # VisualStudio2019 Theme
 
-With the __R3 2019__ release of the __UI for WPF__ suite we have introduced the brand new `VisualStudio2019 Theme`. Inspired by the new refreshed Visual Studio 2019 IDE, the VisualStudio2019 theme delivers a lot cleaner and smoother look and feel to your WPF apps. The team at Microsoft are well known for their eagerness to deliver the best possible user experience that we encounter every day and with the VisualStudio2019 theme you will be able to easily bring it to your own apps.
+Inspired by the refreshed Visual Studio 2019 IDE, the VisualStudio2019 theme delivers a lot cleaner and smoother look and feel to your WPF apps. The team at Microsoft are well known for their eagerness to deliver the best possible user experience that we encounter every day and with the VisualStudio2019 theme you will be able to easily bring it to your own apps.
 
 With the __R2 2021__ release of the __UI for WPF__ suite, we have designed and delivered a brand new color variation of the VisualStudio2019 theme - the `Dark` one. In addition to it, the theme palette expanded its brushes collection with the `AccentForegroundBrush` and the `DockingBackgroundBrush`, which are available for both color variations.
 
-The following topic explains the specifics of the theme's palette and features.
+Jump to the following topics to learn about the specifics of the theme's palette and features.
 
 * [Default Theme Colors](#default-theme-colors)
-* [VisualStudio2019Palette Properties](#visualstudio2019palette-properties)
-* [Theme Variation Changing](#theme-variation-changing)
-* [Changing Fonts](#font-family-and-font-size)
-* [Glyphs](#glyphs)
-* [Theme Helper](#theme-helper)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Changing Font Properties](#changing-font-properties)
+* [Using Glyphs](#using-glyphs)
+* [Using Theme Helper](#using-theme-helper)
+* [Changing Opacity](#changing-opacity)
 
 ## Default Theme Colors
 
 The **VisualStudio2019 Theme** is designed to be easily modified via the exposed colors in the theme palette.
 The default values of the brushes in the theme are listed below.
 
-|Brush name|   |Light|   |Dark|
+|Color name|   |Light|   |Dark|
 |----------|---|-----|---|----|
-|AccentBrush|#F5CC84|<div class="theme-palette-color visualstudio2019theme-accentbrush"></div>|#007ACC|<div class="theme-palette-color visualstudio2019theme-accentbrush-dark"></div>|
-|AccentDarkBrush|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-accentdarkbrush"></div>|#006EB8|<div class="theme-palette-color visualstudio2019theme-accentdarkbrush-dark"></div>|
-|AccentFocusedBrush|#D2A85E|<div class="theme-palette-color visualstudio2019theme-accentfocusedbrush"></div>|#33BBFF|<div class="theme-palette-color visualstudio2019theme-accentfocusedbrush-dark"></div>|
-|AccentForegroundBrush|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-accentforegroundbrush"></div>|#98C5E3|<div class="theme-palette-color visualstudio2019theme-accentforegroundbrush-dark"></div>|
-|AccentMainBrush|#AAC0FF|<div class="theme-palette-color visualstudio2019theme-accentmainbrush"></div>|#3399FF|<div class="theme-palette-color visualstudio2019theme-accentmainbrush-dark"></div>|
-|AccentMouseOverBrush|#C4D5FF|<div class="theme-palette-color visualstudio2019theme-accentmouseoverbrush"></div>|#40AFFF|<div class="theme-palette-color visualstudio2019theme-accentmouseoverbrush-dark"></div>|
-|AccentSecondaryDarkBrush|#40508D|<div class="theme-palette-color visualstudio2019theme-accentsecondarydarkbrush"></div>|#005791|<div class="theme-palette-color visualstudio2019theme-accentsecondarydarkbrush-dark"></div>|
-|AlternativeBrush|#F7F9FE|<div class="theme-palette-color visualstudio2019theme-alternativebrush"></div>|#1B1B1C|<div class="theme-palette-color visualstudio2019theme-alternativebrush-dark"></div>|
-|BasicBrush|#94A6CA|<div class="theme-palette-color visualstudio2019theme-basicbrush"></div>|#555555|<div class="theme-palette-color visualstudio2019theme-basicbrush-dark"></div>|
-|ComplementaryBrush|#D9E0F8|<div class="theme-palette-color visualstudio2019theme-complementarybrush"></div>|#434346|<div class="theme-palette-color visualstudio2019theme-complementarybrush-dark"></div>|
-|DockingBackgroundBrush|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-headerbrush"></div>|#111112|<div class="theme-palette-color visualstudio2019theme-headerbrush-dark"></div>|
-|HeaderBrush|#40568D|<div class="theme-palette-color visualstudio2019theme-headerbrush"></div>|#2B71A0|<div class="theme-palette-color visualstudio2019theme-headerbrush-dark"></div>|
-|IconBrush|#414141|<div class="theme-palette-color visualstudio2019theme-iconbrush"></div>|#F1F1F1|<div class="theme-palette-color visualstudio2019theme-iconbrush-dark"></div>|
-|MainBrush|#FCFCFC|<div class="theme-palette-color visualstudio2019theme-mainbrush"></div>|#252526|<div class="theme-palette-color visualstudio2019theme-mainbrush-dark"></div>|
-|MarkerBrush|#1E1E1E|<div class="theme-palette-color visualstudio2019theme-markerbrush"></div>|#F1F1F1|<div class="theme-palette-color visualstudio2019theme-markerbrush-dark"></div>|
-|MarkerInvertedBrush|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-markerinvertedbrush"></div>|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-markerinvertedbrush-dark"></div>|
-|MouseOverBrush|#FFF8DF|<div class="theme-palette-color visualstudio2019theme-mouseoverbrush"></div>|#3E3E40|<div class="theme-palette-color visualstudio2019theme-mouseoverbrush-dark"></div>|
-|PrimaryBrush|#F2F5FC|<div class="theme-palette-color visualstudio2019theme-primarybrush"></div>|#2D2D30|<div class="theme-palette-color visualstudio2019theme-primarybrush-dark"></div>|
-|ReadOnlyBackgroundBrush|#FCFCFC|<div class="theme-palette-color visualstudio2019theme-readonlybackgroundbrush"></div>|#252526|<div class="theme-palette-color visualstudio2019theme-readonlybackgroundbrush-dark"></div>|
-|ReadOnlyBorderBrush|#94A6CA|<div class="theme-palette-color visualstudio2019theme-readonlyborderbrush"></div>|#555555|<div class="theme-palette-color visualstudio2019theme-readonlyborderbrush-dark"></div>|
-|SecondaryBrush|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-secondarybrush"></div>|#3F3F46|<div class="theme-palette-color visualstudio2019theme-secondarybrush-dark"></div>|
-|SemiBasicBrush|#C0CAE9|<div class="theme-palette-color visualstudio2019theme-semibasicbrush"></div>|#656565|<div class="theme-palette-color visualstudio2019theme-semibasicbrush-dark"></div>|
-|ValidationBrush|#FF3333|<div class="theme-palette-color visualstudio2019theme-validationbrush"></div>|#E51400|<div class="theme-palette-color visualstudio2019theme-validationbrush-dark"></div>|
+|AccentColor|#F5CC84|<div class="theme-palette-color visualstudio2019theme-accentbrush"></div>|#007ACC|<div class="theme-palette-color visualstudio2019theme-accentbrush-dark"></div>|
+|AccentDarkColor|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-accentdarkbrush"></div>|#006EB8|<div class="theme-palette-color visualstudio2019theme-accentdarkbrush-dark"></div>|
+|AccentFocusedColor|#D2A85E|<div class="theme-palette-color visualstudio2019theme-accentfocusedbrush"></div>|#33BBFF|<div class="theme-palette-color visualstudio2019theme-accentfocusedbrush-dark"></div>|
+|AccentForegroundColor|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-accentforegroundbrush"></div>|#98C5E3|<div class="theme-palette-color visualstudio2019theme-accentforegroundbrush-dark"></div>|
+|AccentMainColor|#AAC0FF|<div class="theme-palette-color visualstudio2019theme-accentmainbrush"></div>|#3399FF|<div class="theme-palette-color visualstudio2019theme-accentmainbrush-dark"></div>|
+|AccentMouseOverColor|#C4D5FF|<div class="theme-palette-color visualstudio2019theme-accentmouseoverbrush"></div>|#40AFFF|<div class="theme-palette-color visualstudio2019theme-accentmouseoverbrush-dark"></div>|
+|AccentSecondaryDarkColor|#40508D|<div class="theme-palette-color visualstudio2019theme-accentsecondarydarkbrush"></div>|#005791|<div class="theme-palette-color visualstudio2019theme-accentsecondarydarkbrush-dark"></div>|
+|AlternativeColor|#F7F9FE|<div class="theme-palette-color visualstudio2019theme-alternativebrush"></div>|#1B1B1C|<div class="theme-palette-color visualstudio2019theme-alternativebrush-dark"></div>|
+|BasicColor|#94A6CA|<div class="theme-palette-color visualstudio2019theme-basicbrush"></div>|#555555|<div class="theme-palette-color visualstudio2019theme-basicbrush-dark"></div>|
+|ComplementaryColor|#D9E0F8|<div class="theme-palette-color visualstudio2019theme-complementarybrush"></div>|#434346|<div class="theme-palette-color visualstudio2019theme-complementarybrush-dark"></div>|
+|DockingBackgroundColor|#5F6FA4|<div class="theme-palette-color visualstudio2019theme-headerbrush"></div>|#111112|<div class="theme-palette-color visualstudio2019theme-headerbrush-dark"></div>|
+|HeaderColor|#40568D|<div class="theme-palette-color visualstudio2019theme-headerbrush"></div>|#2B71A0|<div class="theme-palette-color visualstudio2019theme-headerbrush-dark"></div>|
+|IconColor|#414141|<div class="theme-palette-color visualstudio2019theme-iconbrush"></div>|#F1F1F1|<div class="theme-palette-color visualstudio2019theme-iconbrush-dark"></div>|
+|MainColor|#FCFCFC|<div class="theme-palette-color visualstudio2019theme-mainbrush"></div>|#252526|<div class="theme-palette-color visualstudio2019theme-mainbrush-dark"></div>|
+|MarkerColor|#1E1E1E|<div class="theme-palette-color visualstudio2019theme-markerbrush"></div>|#F1F1F1|<div class="theme-palette-color visualstudio2019theme-markerbrush-dark"></div>|
+|MarkerInvertedColor|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-markerinvertedbrush"></div>|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-markerinvertedbrush-dark"></div>|
+|MouseOverColor|#FFF8DF|<div class="theme-palette-color visualstudio2019theme-mouseoverbrush"></div>|#3E3E40|<div class="theme-palette-color visualstudio2019theme-mouseoverbrush-dark"></div>|
+|PrimaryColor|#F2F5FC|<div class="theme-palette-color visualstudio2019theme-primarybrush"></div>|#2D2D30|<div class="theme-palette-color visualstudio2019theme-primarybrush-dark"></div>|
+|ReadOnlyBackgroundColor|#FCFCFC|<div class="theme-palette-color visualstudio2019theme-readonlybackgroundbrush"></div>|#252526|<div class="theme-palette-color visualstudio2019theme-readonlybackgroundbrush-dark"></div>|
+|ReadOnlyBorderColor|#94A6CA|<div class="theme-palette-color visualstudio2019theme-readonlyborderbrush"></div>|#555555|<div class="theme-palette-color visualstudio2019theme-readonlyborderbrush-dark"></div>|
+|SecondaryColor|#FFFFFF|<div class="theme-palette-color visualstudio2019theme-secondarybrush"></div>|#3F3F46|<div class="theme-palette-color visualstudio2019theme-secondarybrush-dark"></div>|
+|SemiBasicColor|#C0CAE9|<div class="theme-palette-color visualstudio2019theme-semibasicbrush"></div>|#656565|<div class="theme-palette-color visualstudio2019theme-semibasicbrush-dark"></div>|
+|ValidationColor|#FF3333|<div class="theme-palette-color visualstudio2019theme-validationbrush"></div>|#E51400|<div class="theme-palette-color visualstudio2019theme-validationbrush-dark"></div>|
 
 __Theme colors represented in RadOutlookBar__
 
 ![VisualStudio2019 theme colors represented in RadOutlookBar](images/visualstudio2019-theme-outlook.PNG)	
 
-## VisualStudio2019Palette Properties
+## Default Theme Brushes
 
 ### Primary Brushes 
-
 * `PrimaryBrush`&mdash;Used for background of inputs. 
 * `MainBrush`&mdash;Used for background of buttons. 
 * `AlternativeBrush`&mdash;Used for background of popups, windows, list boxes etc. 
@@ -238,7 +239,6 @@ __Theme colors represented in RadOutlookBar__
 * `MouseOverBrush`&mdash;Used for background of the hovered states of non-accent elements.
 
 ### Special Brushes
-
 * `DockingBackgroundBrush`&mdash;A special brush used for the background of the Docking control - one of the most specific UI controls for the look and feel of the VisualStudio2019 theme. 
 * `HeaderBrush`&mdash;A dark blue brush that is used for the background of the header elements. 
 * `ReadOnlyBackgroundBrush`&mdash;A white brush that is used for the background of the read only state of the elements.
@@ -247,17 +247,30 @@ __Theme colors represented in RadOutlookBar__
 
 >important The `AccentFocusedBrush` and the `DockingBackgroundBrush` are __not__ available with versions prior to the __R2 2021__ release of the __UI for WPF__ suite.
 
+## Changing Palette Colors
+
+The VisualStudio2019 theme provides dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `VisualStudio2019Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `VisualStudio2019Palette.Palette.AccentColor` sets the color for `telerik:VisualStudio2019Resource ResourceKey=AccentBrush`
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-visualstudio2019-theme-0}}
+	VisualStudio2019Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
 ## Other Properties
 
 * `DisabledOpacity`&mdash;Used for controls when they are in a disabled state. Backgrounds usually use the  `ComplementaryBrush` when disabled.
 * `ReadOnlyOpacity`&mdash;Used for controls when they are in a __read-only__ state.
 
-## Theme Variation Changing
+## Changing Theme Variation
 
 Since the __R2 2021__ release of the __UI for WPF__ suite the VisualStudio2019 theme offers two color variations. The `Blue` variation corresponds to the Visual Studio 2019 IDE's Blue theme, and the `Dark` - to the Dark theme. The following example demonstrates the ability to switch between the supported Blue and Dark color palettes by calling the `LoadPreset` method as shown below:
 
 #### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-VisualStudio2019-theme-1}}
+{{region cs-styling-appearance-visualstudio2019-theme-1}}
 	//default color variation 
 	VisualStudio2019Palette.LoadPreset(VisualStudio2019Palette.ColorVariation.Blue);   
 
@@ -271,9 +284,9 @@ __VisualStudio2019 theme color variations__
 
 >important The `Dark` variation of the theme is designed with dark background in mind. It is recommended to use such a background in your application when working with it. 
 
-## Font Family and Font Size
+## Changing Font Properties
 
-When using the `VisualStudio2019 Theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, Office2016, Green, Material, Fluent and Crystal themes.
+When using the `VisualStudio2019` theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __12__ and can be modified through the `VisualStudio2019Palette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
 
@@ -284,7 +297,7 @@ The default font used in the theme is `Segoe UI`.
 The following shows the default font sizes and families.
 
 #### __[C#] Default FontSize__
-{{region cs-styling-appearance-visualstudio2019-theme-1}}
+{{region cs-styling-appearance-visualstudio2019-theme-2}}
 	VisualStudio2019Palette.Palette.FontSizeXS = 10;
 	VisualStudio2019Palette.Palette.FontSizeS = 11;
 	VisualStudio2019Palette.Palette.FontSize = 12;
@@ -295,7 +308,7 @@ The following shows the default font sizes and families.
 This example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __12__ to __16__.
 
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-visualstudio2019-theme-2}}
+{{region cs-styling-appearance-visualstudio2019-theme-3}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		VisualStudio2019Palette.Palette.FontSize = 16;
@@ -307,20 +320,20 @@ __Setting FontSize and FontFamily__
 
 ![RadCalendar with modified FontSize and FontFamiliy](images/visualstudio2019-theme-calendar-font-change.png)	
 
-## Glyphs
+## Using Glyphs
 
-The VisualStudio2019 Theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
+The VisualStudio2019 theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-## Theme Helper
+## Using Theme Helper
 
-The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the __R3 2019__ release is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
+The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the VisualStudio2019 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
 #### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-visualstudio2019-theme-3}}
+{{region xaml-styling-appearance-visualstudio2019-theme-0}}
 	<telerik:RadToggleButton Content="RadButton" 
 							 Margin="10"
 							 xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
@@ -343,7 +356,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 {{endregion}}
 	
 #### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-visualstudio2019-theme-4}}
+{{region vb-styling-appearance-visualstudio2019-theme-0}}
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5
 {{endregion}}
@@ -353,7 +366,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 When modifying fonts, colors, or other resources from the `VisualStudio2019Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-visualstudio2019-theme-5}}
+{{region xaml-styling-appearance-visualstudio2019-theme-1}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

@@ -26,25 +26,25 @@ You can use the definition from __Example 1__ to display a BarSeries.
 #### __[XAML] Example 1: Declaring a BarSeries in XAML__
 {{region radchartview-series-barseries_0}}
 	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:CategoricalAxis/>
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:BarSeries>
-			<telerik:BarSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="January" Value="2" />
-				<telerik:CategoricalDataPoint Category="February" Value="5" />
-				<telerik:CategoricalDataPoint Category="March" Value="3" />
-				<telerik:CategoricalDataPoint Category="April" Value="10" />
-				<telerik:CategoricalDataPoint Category="May" Value="9" />
-				<telerik:CategoricalDataPoint Category="June" Value="7" />
-				<telerik:CategoricalDataPoint Category="July" Value="1" />
-			</telerik:BarSeries.DataPoints>
-		</telerik:BarSeries>
-	</telerik:RadCartesianChart.Series>
+		<telerik:RadCartesianChart.HorizontalAxis>
+			<telerik:CategoricalAxis/>
+		</telerik:RadCartesianChart.HorizontalAxis>
+		<telerik:RadCartesianChart.VerticalAxis>
+			<telerik:LinearAxis />
+		</telerik:RadCartesianChart.VerticalAxis>
+		<telerik:RadCartesianChart.Series>
+			<telerik:BarSeries>
+				<telerik:BarSeries.DataPoints>
+					<telerik:CategoricalDataPoint Category="January" Value="2" />
+					<telerik:CategoricalDataPoint Category="February" Value="5" />
+					<telerik:CategoricalDataPoint Category="March" Value="3" />
+					<telerik:CategoricalDataPoint Category="April" Value="10" />
+					<telerik:CategoricalDataPoint Category="May" Value="9" />
+					<telerik:CategoricalDataPoint Category="June" Value="7" />
+					<telerik:CategoricalDataPoint Category="July" Value="1" />
+				</telerik:BarSeries.DataPoints>
+			</telerik:BarSeries>
+		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
 {{endregion}}
 

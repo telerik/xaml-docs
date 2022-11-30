@@ -1,11 +1,11 @@
 ---
-title: Windows 11 Theme
+title: Windows11 Theme
 page_title: Windows 11 Theme
 description: Bring the Windows 11 appearance to your desktop applications by using the Windows11 theme.
 slug: common-styling-appearance-windows11-theme
 tags: windows11,theme,glyphs,fontsize,fontfamily,cornerradius,mica,effect,material
 published: True
-position: 11
+position: 2
 ---
 
 <style>
@@ -17,16 +17,16 @@ position: 11
 }
 
 /* Light color variation */
-.windows11theme-accentbrush{
+.windows11theme-accentcolor{
 	background: #005FB8;
 }
-.windows11theme-accentmouseoverbrush{
+.windows11theme-accentmouseovercolor{
 	background-color: rgba(0, 95, 184, 0.9);
 }
-.windows11theme-accentpressedbrush{
+.windows11theme-accentpressedcolor{
 	background-color: rgba(0, 95, 184, 0.8);
 }
-.windows11theme-accentselectedbrush{
+.windows11theme-accentselectedcolor{
 	background: #0078D4;
 }
 .windows11theme-accentcontrolbordergradientstop1color{
@@ -38,8 +38,8 @@ position: 11
 .windows11theme-accentcontrolforegroundcolor{
 	background: #FFFFFF;
 }
-.windows11theme-alternativebrush{
-	background: #202020;
+.windows11theme-alternativecolor{
+	background: #F3F3F3;
 }
 .windows11theme-buttonbordergradientstop1color{
 	background-color:rgba(0, 0, 0, 0.05);
@@ -154,16 +154,16 @@ position: 11
 }
 
 /* Dark color variation */
-.windows11theme-accentbrush-dark{
+.windows11theme-accentcolor-dark{
 	background: #60CDFF;
 }
-.windows11theme-accentmouseoverbrush-dark{
+.windows11theme-accentmouseovercolor-dark{
 	background-color: rgba(96, 205, 255, 0.9);
 }
-.windows11theme-accentpressedbrush-dark{
+.windows11theme-accentpressedcolor-dark{
 	background-color: rgba(96, 205, 255, 0.8);
 }
-.windows11theme-accentselectedbrush-dark{
+.windows11theme-accentselectedcolor-dark{
 	background: #0078D4;
 }
 .windows11theme-accentcontrolbordergradientstop1color{
@@ -175,7 +175,7 @@ position: 11
 .windows11theme-accentcontrolforegroundcolor-dark{
 	background: #FFFFFF;
 }
-.windows11theme-alternativebrush-dark{
+.windows11theme-alternativecolor-dark{
 	background: #202020;
 }
 .windows11theme-buttonbordergradientstop1color-dark{
@@ -300,7 +300,22 @@ article table
 
 With the __R2 2022__ release of the __UI for WPF__ suite we have introduced the brand new `Windows 11 Theme`.
 
-Inspired by the new refreshed Windows 11 operating system, the Windows 11 theme delivers a lot cleaner and smoother look and feel to your WPF apps. The team at Microsoft are well known for their eagerness to deliver the best possible user experience that we encounter every day and with the Windows 11 theme you will be able to easily bring it to your own apps.
+Inspired by the refreshed Windows 11 OS, the Windows 11 theme delivers a lot cleaner and smoother look and feel to your WPF apps. The team at Microsoft are well known for their eagerness to deliver the best possible user experience that we encounter every day and with the Windows 11 theme you will be able to easily bring it to your own apps.
+
+Jump to the following topics to learn about the specifics of the theme's palette and features.
+
+* [Default Theme Colors](#default-theme-colors)
+* [Default Theme Brushes](#default-theme-brushes)
+* [Changing Palette Colors](#changing-palette-colors)
+* [Changing Theme Variation](#changing-theme-variation)
+* [Acrylic and Mica Effects](#acrylic-and-mica-effects)
+* [Setting the Material](#setting-the-material)
+* [Using System Accent Color](#using-system-accent-color)
+* [Changing Font Properties](#changing-font-properties)
+* [Using Glyphs](#using-glyphs)
+* [Using Theme Helper](#using-theme-helper)
+* [Changing Corner Radius](#changing-corner-radius)
+* [Changing Opacity](#changing-opacity)
 
 ## Default Theme Colors
 
@@ -309,14 +324,14 @@ The default values of the brushes in the theme are listed below.
 
 |Color name|   |Light|   |Dark|
 |----------|---|-----|---|----|
-|AccentColor|#FF005FB8|<div class="theme-palette-color windows11theme-accentbrush"></div>|#FF60CDFF|<div class="theme-palette-color windows11theme-accentbrush-dark"></div>|
-|AccentMouseOverColor|#E6005FB8|<div class="theme-palette-color windows11theme-accentmouseoverbrush"></div>|#E660CDFF|<div class="theme-palette-color windows11theme-accentmouseoverbrush-dark"></div>|
-|AccentPressedColor|#CC005FB8|<div class="theme-palette-color windows11theme-accentpressedbrush"></div>|#CC60CDFF|<div class="theme-palette-color windows11theme-accentpressedbrush-dark"></div>|
-|AccentSelectedColor|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedbrush"></div>|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedbrush-dark"></div>|
+|AccentColor|#FF005FB8|<div class="theme-palette-color windows11theme-accentcolor"></div>|#FF60CDFF|<div class="theme-palette-color windows11theme-accentcolor-dark"></div>|
+|AccentMouseOverColor|#E6005FB8|<div class="theme-palette-color windows11theme-accentmouseovercolor"></div>|#E660CDFF|<div class="theme-palette-color windows11theme-accentmouseovercolor-dark"></div>|
+|AccentPressedColor|#CC005FB8|<div class="theme-palette-color windows11theme-accentpressedcolor"></div>|#CC60CDFF|<div class="theme-palette-color windows11theme-accentpressedcolor-dark"></div>|
+|AccentSelectedColor|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedcolor"></div>|#FF0078D4|<div class="theme-palette-color windows11theme-accentselectedcolor-dark"></div>|
 |AccentControlBorderGradientStop1Color|#14FFFFFF|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop1color"></div>|#14FFFFFF|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop1color-dark"></div>|
 |AccentControlBorderGradientStop2Color|#66000000|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop2color"></div>|#23000000|<div class="theme-palette-color windows11theme-accentcontrolbordergradientstop2color-dark"></div>|
 |AccentControlForegroundColor|#FFFFFFFF|<div class="theme-palette-color windows11theme-accentcontrolforegroundcolor"></div>|#FFFFFFFF|<div class="theme-palette-color windows11theme-accentcontrolforegroundcolor-dark"></div>|
-|AlternativeColor|#FFF3F3F3|<div class="theme-palette-color windows11theme-alternativebrush"></div>|#FF202020|<div class="theme-palette-color windows11theme-alternativebrush-dark"></div>|
+|AlternativeColor|#FFF3F3F3|<div class="theme-palette-color windows11theme-alternativecolor"></div>|#FF202020|<div class="theme-palette-color windows11theme-alternativecolor-dark"></div>|
 |ButtonBorderGradientStop1Color|#0E000000|<div class="theme-palette-color windows11theme-buttonbordergradientstop1color"></div>|#17FFFFFF|<div class="theme-palette-color windows11theme-buttonbordergradientstop1color-dark"></div>|
 |ButtonBorderGradientStop2Color|#29000000|<div class="theme-palette-color windows11theme-buttonbordergradientstop2color"></div>|#17FFFFFF|<div class="theme-palette-color windows11theme-buttonbordergradientstop2color-dark"></div>|
 |DisabledBackgroundColor|#4DF9F9F9|<div class="theme-palette-color windows11theme-disabledbackgroundcolor"></div>|#0BFFFFFF|<div class="theme-palette-color windows11theme-disabledbackgroundcolor-dark"></div>|
@@ -359,69 +374,79 @@ __Theme colors represented in RadOutlookBar__
 
 ![Windows11 theme colors represented in RadOutlookBar](images/windows11-theme-outlook.PNG)	
 
-## Windows11Palette Properties
+## Default Theme Brushes
 
-### Foreground Colors
+### Foreground Brushes
 
-* `PrimaryForegroundColor`&mdash;This is the default foreground of the theme.
-* `SecondaryForegroundColor`&mdash;Used for the foreground of the buttons in their pressed state. It is also used as a default foreground to input/editor controls like the MS TextBox, WatermarkTextBox, PasswordBox. This is the default foreground of a GridView's header cell, as well as the TabControl's tab item.
-* `TertiaryForegroundColor`&mdash;Used for the foreground of the buttons' glyph elements in their pressed state. This is the default border color of the MS CheckBox, RadioButton and the ScrollViewer's RepeatButtons and Thumbs. Also used for the ticks color of the data visualization components.
-* `DisabledForegroundColor`&mdash;Used for the foreground of the elements in their disabled state.
-* `AccentControlForegroundColor`&mdash;Used for the foreground of the elements over an accent background (e.g.,when their parent is in its selected/checked state).
-* `IconColor`&mdash;This is the default fill of the theme's glyph icons.
-* `IconSecondaryColor`&mdash;Used as the default fill of the glyph icons when they are nested in an input/editor element - e.g., the ComboBox's button part, NumericUpDown's increase and decrease buttons, etc. 
+* `PrimaryForegroundBrush`&mdash;This is the default foreground of the theme.
+* `SecondaryForegroundBrush`&mdash;Used for the foreground of the buttons in their pressed state. It is also used as a default foreground to input/editor controls like the MS TextBox, WatermarkTextBox, PasswordBox. This is the default foreground of a GridView's header cell, as well as the TabControl's tab item.
+* `TertiaryForegroundBrush`&mdash;Used for the foreground of the buttons' glyph elements in their pressed state. This is the default border color of the MS CheckBox, RadioButton and the ScrollViewer's RepeatButtons and Thumbs. Also used for the ticks color of the data visualization components.
+* `DisabledForegroundBrush`&mdash;Used for the foreground of the elements in their disabled state.
+* `AccentControlForegroundBrush`&mdash;Used for the foreground of the elements over an accent background (e.g.,when their parent is in its selected/checked state).
+* `IconBrush`&mdash;This is the default fill of the theme's glyph icons.
+* `IconSecondaryBrush`&mdash;Used as the default fill of the glyph icons when they are nested in an input/editor element - e.g., the ComboBox's button part, NumericUpDown's increase and decrease buttons, etc. 
 
-### Background Colors
+### Background Brushes
 
-* `PrimaryBackgroundColor`&mdash;Used for the background the inputs and other editable elements such as ComboBox, AutoCompleteBox, NumericUpDown, etc. Also used as the default background of the buttons.
-* `PrimarySolidBackgroundColor`&mdash;A completely solid variation of the **PrimaryBackgroundColor** used for elements which require a non-transparent background for optimum readability.
-* `SecondaryBackgroundColor`&mdash;Used for the background of non-editable, secondary elements - e.g. the Ribbon's gallery buttons, Chat's cards, GridView pinned rows, etc. Also used for the default background of the RichTextBox component. 
-* `TertiaryBackgroundColor`&mdash;Used for the background of the popup/overlay elements like ToolTip. 
-* `TertiarySmokeBackgroundColor`&mdash;Used for the background of the ChatOverlay's header and footer and the RichTextBox's ruler tab stop elements.
-* `SubtleColor`&mdash;Used for the background of nested/secondary buttons and list items in their mouse over state.
-* `SubtleSecondaryColor`&mdash;Used for the background of nested/secondary buttons in their pressed state.
-* `AlternativeColor`&mdash;Used for the background of the toolbar-like components - e.g., StatusBar, DataPager, Grid's FilteringControl and panels - group, search, footer, etc. This is the default background of some controls like the ToolBar, Panelbar, Chat. Also used as a header background.
-* `OverlayColor`&mdash;Used for the background of the Window-based controls (e.g. RadWindow, RadTabbedWindow, FileDialogs, etc.).
+* `PrimaryBackgroundBrush`&mdash;Used for the background the inputs and other editable elements such as ComboBox, AutoCompleteBox, NumericUpDown, etc. Also used as the default background of the buttons.
+* `PrimarySolidBackgroundBrush`&mdash;A completely solid variation of the **PrimaryBackgroundBrush** used for elements which require a non-transparent background for optimum readability.
+* `SecondaryBackgroundBrush`&mdash;Used for the background of non-editable, secondary elements - e.g. the Ribbon's gallery buttons, Chat's cards, GridView pinned rows, etc. Also used for the default background of the RichTextBox component. 
+* `TertiaryBackgroundBrush`&mdash;Used for the background of the popup/overlay elements like ToolTip. 
+* `TertiarySmokeBackgroundBrush`&mdash;Used for the background of the ChatOverlay's header and footer and the RichTextBox's ruler tab stop elements.
+* `SubtleBrush`&mdash;Used for the background of nested/secondary buttons and list items in their mouse over state.
+* `SubtleSecondaryBrush`&mdash;Used for the background of nested/secondary buttons in their pressed state.
+* `AlternativeBrush`&mdash;Used for the background of the toolbar-like components - e.g., StatusBar, DataPager, Grid's FilteringControl and panels - group, search, footer, etc. This is the default background of some controls like the ToolBar, Panelbar, Chat. Also used as a header background.
+* `OverlayBrush`&mdash;Used for the background of the Window-based controls (e.g. RadWindow, RadTabbedWindow, FileDialogs, etc.).
 
-### Border Colors
+### Border Brushes
 
-* `PrimaryBorderColor`&mdash;This is the default border color of the majority of controls.
-* `PrimarySolidBorderColor`&mdash;A completely solid variation of the **PrimaryBorderColor** used for elements which require a non-transparent border color for optimum readability or in case of overlapping borders.
-* `SecondaryBorderColor`&mdash;Used for the border color of the divider/separator-like elements.
-* `TertiaryBorderColor`&mdash;This is the default border color of the Slider's thumbs.
-* `ButtonBorderGradientStop1Color`&mdash;One of the stops of the ButtonBorderBrush, which is a gradient brush, used as the default border color of buttons.
-* `ButtonBorderGradientStop2Color`&mdash;One of the stops of the ButtonBorderBrush, which is a gradient brush, used as the default border color of buttons.
-* `InputBorderGradientStop1Color`&mdash;One of the stops of the InputBorderBrush, which is a gradient brush, used as the default border color of inputs.
-* `InputBorderGradientStop2Color`&mdash;One of the stops of the InputBorderBrush, which is a gradient brush, used as the default border color of inputs.
-* `AccentControlBorderGradientStop1Color`&mdash;One of the stops of the AccentControlBorderBrush, which is a gradient brush, used as the border color of accent buttons in their mouse over, pressed, checked states.
-* `AccentControlBorderGradientStop2Color`&mdash;One of the stops of the AccentControlBorderBrush, which is a gradient brush, used as the border color of accent buttons in their mouse over, pressed, checked states.
-* `StrokeColor`&mdash;This is the default border color of the TimeBar and Timeline controls. It is also used as the color of the TreeListView's lines and Diagram's selection, resizing rectangles and manipulation adorners. Used as a background for the GridViewMergedCells.
+* `PrimaryBorderBrush`&mdash;This is the default border color of the majority of controls.
+* `PrimarySolidBorderBrush`&mdash;A completely solid variation of the **PrimaryBorderBrush** used for elements which require a non-transparent border color for optimum readability or in case of overlapping borders.
+* `SecondaryBorderBrush`&mdash;Used for the border color of the divider/separator-like elements.
+* `TertiaryBorderBrush`&mdash;This is the default border color of the Slider's thumbs.
+* `ButtonBorderBrush`&mdash;A gradient brush, used as the default border color of buttons.
+* `InputBorderBrush`&mdash;A gradient brush, used as the default border color of inputs.
+* `AccentControlBorderBrush`&mdash;A gradient brush, used as the border color of accent buttons in their mouse over, pressed, checked states.
+* `StrokeBrush`&mdash;This is the default border color of the TimeBar and Timeline controls. It is also used as the color of the TreeListView's lines and Diagram's selection, resizing rectangles and manipulation adorners. Used as a background for the GridViewMergedCells.
 
-### Special State Colors
+### Special State Brushes
 
-* `FocusColor`&mdash;Used for the border color of the elements in their focused state. 
-* `FocusInnerColor`&mdash;Used as the fill color of the gap between an element and its focus border.
-* `MouseOverBackgroundColor`&mdash;Used for the background of the non-accent elements in their mouse over state - e.g. buttons.
-* `MouseOverBorderGradientStop1Color`&mdash;One of the stops of the MouseOverBorderBrush, which is a gradient brush, used as the border color of non-accent buttons in their mouse over state.
-* `MouseOverBorderGradientStop2Color`&mdash;One of the stops of the MouseOverBorderBrush, which is a gradient brush, used as the border color of non-accent buttons in their mouse over state.
-* `PressedBackgroundColor`&mdash;Used for the background of the non-accent elements in their pressed state - e.g. buttons.
-* `SelectedColor`&mdash;Used for the background of the elements in their selected state (e.g., the ListBoxItem, ComboBoxItem, PanelBarItem, etc.). Also used as the default value of the GridView's row and cell SelectedBackground properties.
-* `SelectedMouseOverColor`&mdash;Used for the background of the elements in their selected and mouse over state (e.g., the ListBoxItem, ComboBoxItem, PanelBarItem, etc.).
-* `SelectedUnfocusedColor`&mdash;Used for the background of the elements in their selected and not focused state (e.g., the GridViewRow, TreeListViewRow and the TreeViewItem).
-* `ReadOnlyBackgroundColor`&mdash;Used for the background of the controls in a read-only state.
-* `ReadOnlyBorderColor`&mdash;Used for the border color of the controls in a read-only state.
-* `DisabledBackgroundColor`&mdash;Used for the background of the controls in a disabled state.
-* `DisabledBorderColor`&mdash;Used for the border color of the controls in a disabled state.
-* `ValidationColor`&mdash;Used for the background/border color of the controls to indicate the validation errors - for the foreground of the invalid control, or as a border for the error tooltip, border for invalid rows and cells.
+* `FocusBrush`&mdash;Used for the border color of the elements in their focused state. 
+* `FocusInnerBrush`&mdash;Used as the fill color of the gap between an element and its focus border.
+* `MouseOverBackgroundBrush`&mdash;Used for the background of the non-accent elements in their mouse over state - e.g. buttons.
+* `MouseOverBorderBrush`&mdash;A gradient brush, used as the border color of non-accent buttons in their mouse over state.
+* `PressedBackgroundBrush`&mdash;Used for the background of the non-accent elements in their pressed state - e.g. buttons.
+* `SelectedBrush`&mdash;Used for the background of the elements in their selected state (e.g., the ListBoxItem, ComboBoxItem, PanelBarItem, etc.). Also used as the default value of the GridView's row and cell SelectedBackground properties.
+* `SelectedMouseOverBrush`&mdash;Used for the background of the elements in their selected and mouse over state (e.g., the ListBoxItem, ComboBoxItem, PanelBarItem, etc.).
+* `SelectedUnfocusedBrush`&mdash;Used for the background of the elements in their selected and not focused state (e.g., the GridViewRow, TreeListViewRow and the TreeViewItem).
+* `ReadOnlyBackgroundBrush`&mdash;Used for the background of the controls in a read-only state.
+* `ReadOnlyBorderBrush`&mdash;Used for the border color of the controls in a read-only state.
+* `DisabledBackgroundBrush`&mdash;Used for the background of the controls in a disabled state.
+* `DisabledBorderBrush`&mdash;Used for the border color of the controls in a disabled state.
+* `ValidationBrush`&mdash;Used for the background/border color of the controls to indicate the validation errors - for the foreground of the invalid control, or as a border for the error tooltip, border for invalid rows and cells.
 
-### Accent Colors
+### Accent Brushes
 
-* `AccentColor`&mdash;Used for the background/border color of the elements that should have accent - e.g., the background of the toggle button in its checked state.
-* `AccentMouseOverColor`&mdash;Used for the background of the accent elements in their mouse over state (e.g., all buttons).
-* `AccentPressedColor`&mdash;Used for the background of the accent elements in their pressed state (e.g., all buttons).
-* `AccentSelectedColor`&mdash;This is the default background and border color of the drag-drop visuals and the fill of the pill displayed in some items as an addition to its selection background. Also used as the default background of the ScheduleView's AppointmentItem and the foreground of some headers.
+* `AccentBrush`&mdash;Used for the background/border color of the elements that should have accent - e.g., the background of the toggle button in its checked state.
+* `AccentMouseOverBrush`&mdash;Used for the background of the accent elements in their mouse over state (e.g., all buttons).
+* `AccentPressedBrush`&mdash;Used for the background of the accent elements in their pressed state (e.g., all buttons).
+* `AccentSelectedBrush`&mdash;This is the default background and border color of the drag-drop visuals and the fill of the pill displayed in some items as an addition to its selection background. Also used as the default background of the ScheduleView's AppointmentItem and the foreground of some headers.
 
-## Theme Variation Changing
+## Changing Palette Colors
+
+The Windows11 theme provides dynamic change of the palette colors responsible for the brushes used in our controls. Their defaults are stated above. This mechanism is used to modify the color variation of the theme. 
+
+The general naming convention is: `Windows11Palette.Palette.[name]Color` is responsible for `[name]Brush` – e.g. `Windows11Palette.Palette.AccentColor` sets the color for `telerik:Windows11Resource ResourceKey=AccentBrush`
+The colors containing GradientStop in their names set the respective gradient stop color of a LinearGradientBrush.
+
+Changing the colors can be achieved in code behind.
+
+#### __[C#] Setting palette colors__
+{{region cs-styling-appearance-windows11-theme-0}}
+	Windows11Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
+{{endregion}}
+
+## Changing Theme Variation
 
 The Windows11 theme offers three color variations. The `System` variation corresponds to the default theme (Light or Dark) of the operation system the application is running on. You can also explicitly choose either the `Light` or `Dark` variation. The `Light` variation is used by default.
 
@@ -442,6 +467,8 @@ The following example demonstrates the ability to switch between the supported v
 __Windows11 theme color variations__
 
 ![Windows11 theme colors represented in RadCardView](images/windows11-theme-variations.PNG)
+
+>important The `Dark` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
 
 ## Acrylic and Mica Effects
 
@@ -472,7 +499,7 @@ __RadWindow with Mica Effect__
 To change the occluding material, you can set the attached `BackdropMaterial` property of the `WindowEffectsHelper` class, located in the `Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls` namespace.
 
 #### __[XAML] Set Material__
-{{region xaml-styling-appearance-windows11-theme-2}}
+{{region xaml-styling-appearance-windows11-theme-0}}
 	<telerik:RadWindow x:Class="Example.MainWindow"
 					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -482,7 +509,7 @@ To change the occluding material, you can set the attached `BackdropMaterial` pr
 					Header="RadWindow">
 {{endregion}}
 
-## System Accent Color
+## Using System Accent Color
 
 The Windows 11 theme provides you with the ability to apply dynamic accent colors based on the OS accent color. This feature is supported only on Windows 10 and above.
 
@@ -491,13 +518,13 @@ This is controlled via the `UseSystemAccentColor` property. Its default value is
 When set to `true`, the `AccentColor` of the theme will be the selected one in the System Color Settings of the OS, the `AccentMouseOverColor` will apply **90% opacity** to it and the `AccentPressedColor` - **80% opacity**. The `AccentSelectedColor` will also be changed with respect to the AccentColor.
 
 #### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-windows11-theme-3}}
+{{region cs-styling-appearance-windows11-theme-2}}
 	Windows11Palette.Palette.UseSystemAccentColor = true;
 {{endregion}}
 
-## Font Family and Font Size
+## Changing Font Properties
 
-When using the `Windows11 Theme` you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in Windows8, Windows8Touch, Office2013, VisualStudio2013, Office2016, Green, Material, Fluent, Crystal and Office2019 themes.
+When using the `Windows11` theme you can dynamically change the `FontSize` and `FontFamily` properties of all components in the application the same way as you do in all other [Available Themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette.
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __14__ and can be modified through the `Windows11Palette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
 
@@ -508,7 +535,7 @@ The default font used in the theme is `Segoe UI`.
 The following shows the default font sizes and families.
 
 #### __[C#] Default FontSizes__
-{{region cs-styling-appearance-windows11-theme-4}}
+{{region cs-styling-appearance-windows11-theme-3}}
 	Windows11Palette.Palette.FontSizeS = 12;
 	Windows11Palette.Palette.FontSize = 14;
 	Windows11Palette.Palette.FontSizeM = 18;
@@ -519,7 +546,7 @@ The following shows the default font sizes and families.
 This example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __14__ to __18__.
 
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-windows11-theme-5}}
+{{region cs-styling-appearance-windows11-theme-4}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Windows11Palette.Palette.FontSize = 18;
@@ -531,20 +558,20 @@ __Setting FontSize and FontFamily__
 
 ![RadCalendar with modified FontSize and FontFamily](images/windows11-theme-calendar-font-change.png)	
 
-## Glyphs
+## Using Glyphs
 
-The Windows11 Theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
+The Windows11 Theme also uses the [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-## Theme Helper
+## Using Theme Helper
 
-The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class that comes with the __R3 2019__ release is used in the Windows11 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
+The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the Windows11 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
 #### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-windows11-theme-6}}
+{{region xaml-styling-appearance-windows11-theme-1}}
 	<telerik:RadToggleButton Content="RadButton"  
 						Margin="10" 
 						xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls" 
@@ -552,15 +579,23 @@ This example shows a `RadToggleButton` control with modified brushes for its dif
 {{endregion}}
 
 __Appearance of the RadToggleButton in the different states__
+
 ![RadToggleButton States](images/windows11-theme-togglebutton-states.png)
 
-## Set Corner Radius
+## Changing Corner Radius
 
-The Windows 11 Theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __4__.
+The Windows 11 theme exposes an easy way to modify the corner radius of many elements in your application. It uses three levels of rounding depending on what UI component is being rounded and how that component is arranged relative to neighboring elements:
+* Top-level containers such as app windows, popups and dialogs are rounded using an `8px` corner radius.
+* In-page elements such as buttons and list backplates are rounded using a `4px` corner radius.
+* Straight edges that intersect with other straight edges are `not` rounded.
+
+The `Windows11Palette` features two corner radius properties based on the first two points from the above list.
+The CornerRadius property of the palette is the default one and defaults to `4`.
+The OverlayCornerRadius property corresponds to the first point of the list and defaults to `8`.
 
 #### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-windows11-theme-7}}
-	Windows11Palette.Palette.CornerRadius = new CornerRadius(0); 	
+{{region cs-styling-appearance-windows11-theme-5}}
+	Windows11Palette.Palette.CornerRadius = new CornerRadius(0);
 {{endregion}}
 
 __Appearance of a RadButton control after changing the default corner radius__
@@ -572,7 +607,7 @@ __Appearance of a RadButton control after changing the default corner radius__
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the Windows11Palette. The default values are __0.36__ and __1.0__ respectively. 
 
 #### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-windows11-theme-8}}
+{{region cs-styling-appearance-windows11-theme-6}}
 	Windows11Palette.Palette.DisabledOpacity = 0.5;
 	Windows11Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
@@ -582,7 +617,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 When modifying fonts, colors, or other resources from the `Windows11Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-windows11-theme-9}}
+{{region xaml-styling-appearance-windows11-theme-2}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

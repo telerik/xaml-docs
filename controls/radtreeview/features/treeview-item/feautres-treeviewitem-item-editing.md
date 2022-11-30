@@ -154,6 +154,7 @@ The __PreviewEditStarted__ event occurs when the treeview item is about to be ed
 The __PreviewEdited__ event is fired just before the new __Header__ text of the item is applied. If the treeview is data bound you can update the data source with the new value. The __Edited__ event is fired once the new __Header__ text for the item is applied. You can get access to the new text of the __Header__ property, as well as to the old one, via the __RadTreeViewItemEditedEventArgs__ of the __PreviewEdited__ and __Edited__ events.
 
 #### Figure 3: Getting the header text
+
 ![WPF RadTreeView Getting the header text](images/RadTreeView_TreeViewItemEditing_020.png)
 
 >If the the __ItemEditTemplate__ property is set and it does not contain a __TextBox__, then the __NewText__ and __OldText__ properties will not be used.
@@ -176,6 +177,7 @@ In the event handler you can place some code that has to be executed when the it
 {{endregion}}
 
 #### Figure 4: RadTreeViewItem with its background changed on edit
+
 ![WPF RadTreeView RadTreeViewItem with its background changed on edit](images/RadTreeView_TreeViewItemEditing_030.png)
 
 ## ItemEditTemplate and ItemEditTemplateSelector

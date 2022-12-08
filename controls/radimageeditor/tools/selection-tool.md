@@ -44,15 +44,18 @@ There are several predefined shapes that are used for selection.
 
 * __FreeformShape__: Allows to draw a freeform selection region. The edge of the selected region will follow the mouse cursor as it is dragged around the canvas. The shape will automatically be closed with a straight line from the current cursor location back to the start point.
 
-	#### Figure 2: Free form shape selection	![{{ site.framework_name }} RadImageEditor Free form shape selection](images/radimageeditor-tools-selection-tool-1.png)
+	#### Figure 2: Free form shape selection
+	![{{ site.framework_name }} RadImageEditor Free form shape selection](images/radimageeditor-tools-selection-tool-1.png)
 
 * __RectangleShape__: Draws rectangles or square selection region (when the LockRatio property is set to true).
 	
-	#### Figure 3: Rectangle shape selection	![{{ site.framework_name }} RadImageEditor Rectangle shape selection](images/radimageeditor-tools-selection-tool-2.png)
+	#### Figure 3: Rectangle shape selection
+	![{{ site.framework_name }} RadImageEditor Rectangle shape selection](images/radimageeditor-tools-selection-tool-2.png)
 	
 * __EllipseShape__: Allows you to create ellipse or circle selection region (when the LockRatio property is set to true).
 	
-	#### Figure 4: Ellipse shape selection	![{{ site.framework_name }} RadImageEditor Ellipse shape selection](images/radimageeditor-tools-selection-tool-3.png)
+	#### Figure 4: Ellipse shape selection
+	![{{ site.framework_name }} RadImageEditor Ellipse shape selection](images/radimageeditor-tools-selection-tool-3.png)
 
 	
 ## Custom Selection Area Shapes

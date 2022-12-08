@@ -61,7 +61,7 @@ To enable the trackball visualization, add a new __ChartTrackBallBehavior__ inst
 
 ## Snap Mode
 
-The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball line will be snapped to the chart's data points. The property is enum accepting the following values:
+The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball __line__ will be snapped to the data points found by the trackball behavior. The property is enum accepting the following values:
 
 * __None__: This mode disables the snapping of the line.
 	

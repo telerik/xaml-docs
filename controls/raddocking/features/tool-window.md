@@ -10,9 +10,9 @@ position: 3
 
 # Tool Window
 
-__ToolWindow__ is the container control that hosts all panes that are in a floating state. Every time you drag a pane and undock it, a new instance of the class __Telerik.Windows.Controls.Docking.ToolWindow__ is created to host that pane for you.
+`ToolWindow` is the container control that hosts all panes that are in a floating state. Every time you drag a pane and undock it, a new instance of the class `Telerik.Windows.Controls.Docking.ToolWindow` is created to host that pane for you.
 
->The implementation of the __RadDocking__ never requires you to work with __ToolWindows__ directly, but with the Pane hosted inside it. For example, to make a __ToolWindow__ not closable, just set the property __CanUserClose__ of the hosted RadPane to __False__.
+>The implementation of the `RadDocking` never requires you to work with ToolWindows directly, but with the Pane hosted inside it. For example, to make a ToolWindow not closable, just set the property `CanUserClose` of the hosted RadPane to __False__.
 
 In the figure below you can see two ToolWindows with a floating pane inside of each one.
 
@@ -22,11 +22,10 @@ You can learn how to declare such a floating structure in the [Floating Panes](#
 
 ## Setting FloatingSize and FloatingLocation
 
-__RadDocking__ provides the ability to easily set the initial floating size and location of the __ToolWindows__. To do that, use the __RadDocking.FloatingSize__ and __RadDocking.FloatingLocation__ attached properties, as shown in Example 1:
+RadDocking provides the ability to easily set the initial floating size and location of the ToolWindows. To do that, use the `RadDocking.FloatingSize` and `RadDocking.FloatingLocation` attached properties, as shown in the following example:
 
-#### __[XAML] Example 1: Setting RadDocking.FloatingSize and RadDocking.FloatingLocation__
-
-{{region xaml-raddocking-features-tool-window_0}}
+#### __[XAML] Setting RadDocking.FloatingSize and RadDocking.FloatingLocation__
+{{region raddocking-features-tool-window_0}}
 	<telerik:RadDocking>
 	    <telerik:RadSplitContainer InitialPosition="FloatingOnly">
 	        <telerik:RadPaneGroup>
@@ -35,6 +34,20 @@ __RadDocking__ provides the ability to easily set the initial floating size and 
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
 {{endregion}}
+
+## Setting the Draggable Area
+
+The ToolWindow element allows you to change the threshold of its titlebar's draggable area. To do that, set the `CaptionHeight` property. 
+
+#### __[XAML] Setting the CaptionHeight property via a Style__
+{{region raddocking-features-tool-window-1}}
+	<!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource ToolWindowStyle}"-->
+	<Style TargetType="telerik:ToolWindow">
+	    <Setter Property="CaptionHeight" Value="50"/>
+	</Style>
+{{endregion}}
+
+>important Changing the height of the titlebar will not automatically update the CaptionHeight property's value. 
 
 ## Styling ToolWindow
 

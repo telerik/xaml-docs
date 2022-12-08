@@ -44,7 +44,8 @@ The following actions can be executed through the pane:
 
 * __Select Parent__: The selection is changed to the parent layout group__. If there is no parent group, the selection won't be changed.
 	
-	#### __Figure 2: Selecting the parent group__	![{{ site.framework_name }} RadLayoutControl Selecting the parent group](images/layoutcontrol-features-edit-the-layout-02.png)
+	#### __Figure 2: Selecting the parent group__
+	![{{ site.framework_name }} RadLayoutControl Selecting the parent group](images/layoutcontrol-features-edit-the-layout-02.png)
 	
 * You can define the __horizontal alignment__ of the selected element. There are the following options:
 	* __Stretch__ (the default value): The element is horizontally stretched in the available space. __Example 1__ demonstrates stretch alignment.
@@ -52,7 +53,8 @@ The following actions can be executed through the pane:
 	* __Left__: The element is horizontally left aligned in the available space.
 	* __Right__: The element is horizontally right aligned in the available space.
 
-	#### __Figure 3: The horizontal alignment options__	![{{ site.framework_name }} RadLayoutControl The horizontal alignment options](images/layoutcontrol-features-edit-the-layout-03.png)
+	#### __Figure 3: The horizontal alignment options__
+	![{{ site.framework_name }} RadLayoutControl The horizontal alignment options](images/layoutcontrol-features-edit-the-layout-03.png)
 		
 * You can define the __vertical alignment__ of the selected element. There are the following options:
 	* __Stretch__ (the default value): The element is vertically stretched in the available space. __Example 1__ demonstrates stretch alignment.
@@ -60,7 +62,8 @@ The following actions can be executed through the pane:
 	* __Top__: The element is vertically left aligned in the available space.
 	* __Bottom__: The element is vertically right aligned in the available space.
 
-	#### __Figure 4: The vertical alignment options__	![{{ site.framework_name }} RadLayoutControl The vertical alignment options](images/layoutcontrol-features-edit-the-layout-04.png)
+	#### __Figure 4: The vertical alignment options__
+	![{{ site.framework_name }} RadLayoutControl The vertical alignment options](images/layoutcontrol-features-edit-the-layout-04.png)
 
 > The alignment options work with the __VerticalAlignment__ and __HorizontalAlignment__ properties of the selected component. By default the elements are vertically and horizontally stretched. Setting the alignment properties manually will affect the selected option in the manipulation pane.
 
